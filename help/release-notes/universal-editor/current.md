@@ -1,20 +1,20 @@
 ---
-title: Notes de mise à jour de l’éditeur universel version 2025.11.20
-description: Il s’agit des notes de mise à jour de la version 2025.11.20 de l’éditeur universel.
+title: Notes de mise à jour de l’éditeur universel version 2025.12.04
+description: Il s’agit des notes de mise à jour de la version 2025.12.04 de l’éditeur universel.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: e36ff1c7c3f03124941c464cc340deef0cdd403b
+source-git-commit: e500b971e36fdb3d867e2d6b2a21eced66005182
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 73%
+source-wordcount: '166'
+ht-degree: 57%
 
 ---
 
 
-# Notes de mise à jour de l’éditeur universel version 2025.11.20 {#release-notes}
+# Notes de mise à jour de l’éditeur universel version 2025.12.04 {#release-notes}
 
-Voici les notes de mise à jour de la version du 20 novembre 2025 de l’éditeur universel.
+Voici les notes de mise à jour de la version du 4 décembre 2025 de l’éditeur universel.
 
 >[!TIP]
 >
@@ -26,11 +26,9 @@ Voici les notes de mise à jour de la version du 20 novembre 2025 de l’éditeu
 
 ## Nouveautés {#what-is-new}
 
-* Les toasts ont été migrés vers une nouvelle interface utilisateur.
-
-## Fonctionnalités d’adoption précoce {#early-adopter}
-
-Si vous souhaitez tester ces nouvelles fonctionnalités à venir et partager vos commentaires, envoyez un e-mail à la personne responsable du succès client d’Adobe de votre équipe à partir de l’adresse e-mail associée à votre Adobe ID.
+* Les en-têtes d’autorisation ont été désactivés au profit du [nom d’utilisateur du développeur local](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login).
+* Un menu contextuel est désormais disponible dans l’arborescence [structurée en cas de clic droit](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode).
+* Ajout d’une touche de raccourci pour [dupliquer les composants.](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)
 
 ### Nouvel éditeur de texte enrichi {#new-rte}
 
@@ -38,7 +36,6 @@ Le nouvel éditeur de texte enrichi ProseMirror, qui présente un sélecteur de 
 
 ## Autres améliorations {#other-improvements}
 
-* La gestion des valeurs de l’éditeur de texte enrichi a été simplifiée.
-* Une rare condition de concurrence de barre d’outils a été résolue.
-* Les bascules de fonctionnalités non utilisées ont été supprimées.
-* Dépendances mises à jour.
+* Un problème en raison duquel l’éditeur de texte enrichi n’enregistrait pas correctement sur la zone de travail a été résolu.
+* Correction de l’écrêtage de l’arborescence du dossier du sélecteur de contenu.
+* `componentId` est désormais fourni pendant l’action d’ajout.

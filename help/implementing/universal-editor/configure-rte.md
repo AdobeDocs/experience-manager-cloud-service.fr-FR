@@ -4,9 +4,9 @@ description: Découvrez comment configurer l’éditeur de texte enrichi dans l�
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: 0557379b8d70205043ed87e104d9576ed40a13ce
+source-git-commit: edcba16831a40bd03c1413b33794268b6466d822
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '462'
 ht-degree: 1%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 1%
 # Configuration de l’éditeur de texte enrichi pour l’éditeur universel {#configure-rte}
 
 Découvrez comment configurer l’éditeur de texte enrichi dans l’éditeur universel.
-
->[!NOTE]
->
->Cette documentation s’applique au nouvel éditeur de texte enrichi pour l’éditeur universel, disponible en tant que fonctionnalité destinée aux utilisateurs et utilisatrices précoces. Si vous souhaitez tester cette nouvelle fonctionnalité, [consultez les notes de mise à jour pour plus d’informations.](/help/release-notes/universal-editor/current.md#new-rte)
 
 ## Vue d’ensemble {#overview}
 

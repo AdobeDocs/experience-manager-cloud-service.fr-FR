@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: d938abce2b46786343b19113454da1738a824ed0
+source-git-commit: 6efb04369109fcae638b699e1daff09624224098
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '1853'
 ht-degree: 10%
 
 ---
@@ -43,7 +43,7 @@ Une fois que l’application est instrumentée pour fonctionner avec l’éditeu
 ### Accès à dans AEM as a Cloud Service {#accessing-aem}
 
 1. Connectez-vous à votre instance de création AEM as a Cloud Service.
-1. Utilisez la console [**Sites** &#x200B;](/help/sites-cloud/authoring/sites-console/introduction.md) pour accéder à la page créée pour être utilisée avec l’éditeur universel que vous souhaitez modifier.
+1. Utilisez la console [**Sites** ](/help/sites-cloud/authoring/sites-console/introduction.md) pour accéder à la page créée pour être utilisée avec l’éditeur universel que vous souhaitez modifier.
 1. Modifiez la page.
 1. L’éditeur universel s’ouvre pour modifier la page sélectionnée.
 
@@ -53,7 +53,7 @@ Une fois que l’application est instrumentée pour fonctionner avec l’éditeu
 
 ### Accès direct {#accessing-directly}
 
-1. Connectez-vous à l’éditeur universel. Vous avez besoin d’une Adobe ID pour vous connecter et d’avoir accès [&#x200B; l’éditeur universel](/help/implementing/universal-editor/getting-started.md#request-access).
+1. Connectez-vous à l’éditeur universel. Vous avez besoin d’une Adobe ID pour vous connecter et d’avoir accès [ l’éditeur universel](/help/implementing/universal-editor/getting-started.md#request-access).
 
 1. Une fois connecté, saisissez l’URL de la page à modifier dans la [barre d’emplacement](#location-bar) afin de commencer à modifier du contenu tel que du contenu texte ou multimédia.
 
@@ -78,13 +78,13 @@ La barre de navigation supérieure d’Experience Platform est toujours présent
 
 ![En-tête Experience Cloud](assets/experience-cloud-header.png)
 
-Pour plus d’informations sur la barre de navigation supérieure d’Experience Platform, consultez le guide de l’interface utilisateur de Adobe Experience Platform [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+Pour plus d’informations sur la barre de navigation supérieure d’Experience Platform, consultez le guide de l’interface utilisateur de Adobe Experience Platform [](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Compte {#user-properties}
 
 Appuyez ou cliquez sur l’icône de compte pour ouvrir un menu contenant vos paramètres utilisateur.
 
-![&#x200B; Sélecteur d’environnement &#x200B;](assets/environment-switcher.png)
+![ Sélecteur d’environnement ](assets/environment-switcher.png)
 
 Pour l’éditeur universel, sous l’en-tête **Paramètres du produit**, il existe une option pour basculer entre la version de production actuelle de l’éditeur universel et la version d’aperçu à venir.
 
@@ -94,7 +94,7 @@ La barre d’outils de l’éditeur universel est toujours présente en haut de 
 
 Selon la configuration de votre programme, il peut également présenter des [fonctionnalités supplémentaires qui ont été activées en tant qu’extensions par votre administrateur.](#additional-toolbar-buttons)
 
-![&#x200B; Barre d’outils de l’éditeur universel &#x200B;](assets/universal-editor-toolbar.png)
+![ Barre d’outils de l’éditeur universel ](assets/universal-editor-toolbar.png)
 
 #### Le Bouton Accueil {#home-button}
 
@@ -130,18 +130,12 @@ La barre d’emplacement affiche l’adresse de la page que vous modifiez. Séle
 
 Sélectionnez les boutons Annuler ou Rétablir pour annuler ou rétablir la dernière modification dans l’éditeur. Consultez le document [Création de contenu avec l’éditeur universel](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) pour plus d’informations.
 
-![&#x200B; Icône Annuler &#x200B;](assets/undo.png)
-![&#x200B; Icône Rétablir &#x200B;](assets/redo.png)
+![ Icône Annuler ](assets/undo.png)
+![ Icône Rétablir ](assets/redo.png)
 
 >[!TIP]
 >
 >Utilisez la touche de raccourci `Command-Z` ou `Shift-Command-Z` pour annuler ou rétablir, respectivement.
-
-#### En-têtes d’authentification {#authentication-settings}
-
-Sélectionnez l’icône en-têtes d’authentification si vous devez [définir un en-tête d’authentification personnalisé à des fins de développement local](/help/implementing/universal-editor/developer-overview.md#auth-header).
-
-![Bouton Paramètres d’en-tête d’authentification](assets/authentication-header-settings.png)
 
 #### Connexion développeur local {#local-developer-login}
 
@@ -265,6 +259,7 @@ En mode d’arborescence de contenu, le panneau affiche la hiérarchie du conten
 
 * Lorsque vous sélectionnez un élément dans l’arborescence de contenu, l’éditeur fait défiler l’écran jusqu’à ce contenu et le sélectionne.
 * Lorsque vous double-cliquez sur un élément dans l’arborescence de contenu, l’éditeur fait défiler l’écran jusqu’à ce contenu et le sélectionne, puis ouvre les propriétés associées en mode [propriétés](#properties-mode).
+* Lorsque vous cliquez avec le bouton droit de la souris sur un élément de l’arborescence, un menu contextuel s’ouvre avec les actions appropriées pour l’élément.
 
 ![Arborescence de contenu](assets/content-tree.png)
 
@@ -308,6 +303,10 @@ Si vous sélectionnez un composant dans un composant de conteneur dans l’arbor
 
 Appuyez ou cliquez sur le bouton Dupliquer [duplique le composant sélectionné](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components).
 
+>[!TIP]
+>
+>Utilisez le raccourci `Command+d` pour supprimer un composant sélectionné d’un conteneur.
+
 ##### Supprimer {#delete}
 
 Si vous sélectionnez un composant dans un composant de conteneur dans l’arborescence de contenu ou dans l’éditeur, l’option de suppression s’affiche dans le panneau Propriétés.
@@ -324,7 +323,7 @@ Appuyez ou cliquez sur le bouton Supprimer [supprime le composant](/help/sites-c
 
 Vous pouvez copier et coller des composants qui se trouvent dans des [conteneurs.](/help/implementing/universal-editor/field-types.md#container)
 
-![&#x200B; Icône Copier &#x200B;](assets/copy.png)
+![ Icône Copier ](assets/copy.png)
 ![Icône Coller](assets/paste.png)
 
 >[!TIP]
