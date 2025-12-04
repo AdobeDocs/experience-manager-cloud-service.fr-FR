@@ -163,7 +163,7 @@ Ce processus permet de vérifier des détails tels que les valeurs de l’hôte,
 >Vous pouvez utiliser un environnement de développement rapide (RDE) pour déployer et tester votre configuration :
 >
 >* [Environnements de développement rapide](/help/implementing/developing/introduction/rapid-development-environments.md)
->* [Utilisation d’un environnement de développement rapide](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+>* [Utilisation d’un environnement de développement rapide](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### Exemples de configurations de fournisseur de réseau CDN {#sample-configurations}
 
