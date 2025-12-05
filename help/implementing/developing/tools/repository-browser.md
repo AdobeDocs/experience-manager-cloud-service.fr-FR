@@ -6,10 +6,10 @@ seo-description: The repository browser provides a read-only view into the repos
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 414608955bce3feebd1249a91e4f77161144e51e
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 78%
+source-wordcount: '710'
+ht-degree: 70%
 
 ---
 
@@ -33,7 +33,7 @@ Accessible à partir du [Developer Console AEM as a Cloud Service](/help/impleme
 
 Ces conditions suivantes doivent être remplies pour accéder au Developer Console AEM as a Cloud Service ou au navigateur de référentiel
 
-Pour accéder au Developer Console AEM as a Cloud Service, voir Accès à [Developer Console](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
+Pour accéder au Developer Console AEM as a Cloud Service, voir Accès à [Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
 
 Pour accéder au navigateur de référentiel, les conditions requises sont les mêmes que pour AEM as a Cloud Service Developer Console (spécifié ci-dessus). Pour afficher le contenu du navigateur de référentiel pour une instance particulière :
 
@@ -76,38 +76,42 @@ De plus, lorsque vous cliquez sur un dossier, l’URL est modifiée dynamiquemen
 
 Pour la publication, par défaut, le navigateur de référentiel affiche uniquement le contenu public, de sorte que certains dossiers comme `/conf` ou `/home` ne sont pas visibles.
 
-Pour rendre ces emplacements visibles, procédez comme suit.
+Pour rendre ces emplacements visibles, utilisez le profil de produit Publication des administrateurs et administratrices AEM. Pour plus d’informations, consultez la documentation [Profils d’équipe et de produit](/help/onboarding/aem-cs-team-product-profiles.md).
 
-1. Cliquez sur les trois points de l’environnement de votre choix et sélectionnez **Gérer l’accès**.
+<!-- Drafting because of CQDOC-23204
+
+1. Click the three dots next to the environment of your choice and select **Manage Access**
 
    ![repobrowser7](/help/implementing/developing/tools/assets/repobrowser7.png)
 
-1. Recherchez votre instance de publication, puis cliquez dessus
+1. Find your publish instance, then click it
 
    ![repobrowser8](/help/implementing/developing/tools/assets/repobrowser8.png)
 
-1. Créez un profil de produit pour les administrateurs et les administratrices de publication. Dans l’exemple ci-dessous, il s’appelle **DEV - AEM Administrators Publish**.
+1. Create a product profile for publish administrators. In the example below, it is called **DEV - AEM Administrators Publish**
 
    ![repobrowser9](/help/implementing/developing/tools/assets/repobrowser9.png)
 
-1. Ajoutez les utilisateurs appropriés, correspondant à ceux qui doivent pouvoir naviguer dans le navigateur de référentiel de publication avec un accès complet, au nouveau profil de produit.
+1. Add the appropriate users, corresponding to who should be able to navigate the publish repository browser with full access, to the new product profile
 
    ![repobrowser10](/help/implementing/developing/tools/assets/repobrowser10.png)
 
-1. Patientez quelques minutes, puis ouvrez la console **Création AEM**.
-1. Ajoutez le groupe correspondant au nouveau profil de produit en tant que membre du groupe d’administration en cliquant sur **Outils - Sécurité - Groupes en mode de création**, puis cliquez sur le groupe **administration**. Ajoutez ensuite le groupe comme illustré ci-dessous.
+1. Wait for a few minutes, then open the **AEM author** console
+1. Add the group corresponding to the new product profile as a member of the administrator's group by clicking **Tools - Security - Groups on author**, then clicking the **administrators** group. Then, add the group as shown below
 
    ![repobrowser11](/help/implementing/developing/tools/assets/repobrowser11.png)
 
-1. Activez le groupe **Administrateurs** et le nouveau groupe **DEV - AEM Administrators Publish** afin qu’ils soient disponibles pour la publication.
+1. Activate the **administrators** and the new **DEV - AEM Administrators Publish** group so that they become available on publish
 
    ![repobrowser12](/help/implementing/developing/tools/assets/repobrowser12.png)
 
-1. De bonnes pratiques de sécurité demandent que vous supprimiez le nouveau groupe **DEV - AEM Administrators Publish** du groupe d’administration en mode de **création** afin que le nouveau groupe reste isolé pour la publication
+1. As a good security practice, remove the new **DEV - AEM Administrators Publish** group from the administrator's group on **author** so the new group is isolated to publish 
 
    ![repobrowser13](/help/implementing/developing/tools/assets/repobrowser13.png)
 
-1. Lors de l’accès au navigateur de référentiel pour une instance de publication, tous les dossiers sont visibles, y compris `/home` et `/conf`.
+1. Upon accessing repository browser for a publish instance, all folders are visible, including `/home` and `/conf`.
+
+-->
 
 ### Affichage des propriétés JCR {#view-jcr-properties}
 
