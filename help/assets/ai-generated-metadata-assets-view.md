@@ -1,9 +1,9 @@
 ---
 title: Améliorez la découverte de contenu avec les métadonnées générées par l’IA
 description: Découvrez comment améliorer la découverte de contenu avec les métadonnées générées par l’IA
-source-git-commit: e5b4d7692c9c57ba3e9c76940f28d72ad14d9fc0
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '357'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,6 @@ Pour activer les métadonnées générées par l’IA :
 
 * La version minimale requise d’AEM est `20626`.
 
-* Vous devez signer un contrat GenAI Rider. Pour plus d’informations, contactez votre représentant Adobe.
 
 ## Utilisation de métadonnées générées par l’IA {#using-ai-generated-smart-tags}
 

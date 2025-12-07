@@ -4,9 +4,9 @@ description: Découvrez la fonctionnalité d’extensibilité de l’interface u
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Dans [!DNL Assets View], accédez à la page **[!UICONTROL Détails]** d’une r
 
 Remplissez les conditions requises suivantes pour commencer à ajouter le composant d’extensibilité à votre [!DNL Assets View UI] :
 
-* [&#x200B; Accès à  [!DNL Assets View]](#1).
+* [ Accès à  [!DNL Assets View]](#1).
 * Accès à la [[!DNL Adobe app builder]](https://developer.adobe.com/app-builder/docs/overview/).
 * Autorisation de développer le rôle d’administrateur système au sein de l’organisation. Voir [cette documentation](https://developer.adobe.com/uix/docs/guides/get-access/) pour plus d’informations.
 * [!DNL Adobe IO command line tool (AIO CLI)] est installé sur vos ordinateurs locaux. Cet outil est essentiel pour la création et le déploiement de projets d’extension. Voir [Création de votre première application App Builder](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app#local-environment-set-up) (nécessite une authentification pour l’accès) pour plus d’informations.
@@ -52,9 +52,17 @@ Remplissez les conditions requises suivantes pour commencer à ajouter le compos
 1. Configurez votre application à l’aide de l’interface de ligne de commande AIO pour générer la structure d’extension de base et le code requis. Pour plus d’informations, voir [génération du code pour [!DNL AEM Assets View]](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/).
 1. Testez vos extensions localement pour vous assurer qu’elles fonctionnent comme prévu avant le déploiement. Exécutez votre extension dans un environnement entièrement isolé ou partiellement isolé et connectez-la au [!DNL AEM Assets View] de production à des fins de test. Voir [Dépannage - [!DNL AEM Assets View] extensibilité](https://developer.adobe.com/uix/docs/services/aem-assets-view/debug/) pour plus d’informations.
 
-## Personnalisation des actions rapides et de la barre d’actions dans la vue Assets {#customize-quick-actions-and-actions-bar}
+## Personnalisation des actions dans la vue Assets {#customize-actions-assets-view}
 
-Vous pouvez personnaliser les actions qui s’affichent lorsque vous sélectionnez une ou plusieurs ressources (barre d’actions) dans la vue Assets. La vue Assets vous permet également de personnaliser les actions qui s’affichent lorsque vous cliquez sur Plus d’options (...) dans la carte de la ressource. Pour plus d’informations, voir [Vue Parcourir](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/).
+La vue AEM Assets permet de personnaliser les actions suivantes dans la vue Parcourir :
+
+* Personnalisez les actions qui s’affichent lorsque vous sélectionnez une ou plusieurs ressources dans la barre d’actions.
+
+* Personnalisez les actions qui s’affichent lorsque vous cliquez sur Autres options (...) dans la carte de la ressource.
+
+* Personnalisez les actions disponibles dans le menu En-tête .
+
+Pour plus d’informations, voir [Vue Parcourir](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/).
 
 ## Ouvrir les boîtes de dialogue personnalisées dans la vue Assets {#open-custom-dialogs-assets-view}
 

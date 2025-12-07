@@ -4,10 +4,10 @@ description: Découvrez comment rechercher et trouver des ressources dans la vue
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 32bc8ba2a7e7a783b3e816c78873c6a8c559c1a1
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '1938'
-ht-degree: 78%
+source-wordcount: '1621'
+ht-degree: 75%
 
 ---
 
@@ -50,73 +50,77 @@ Vous pouvez filtrer les résultats de la recherche en fonction des paramètres s
 
 Vous pouvez trier les ressources recherchées par ordre croissant ou décroissant de `Name`, `Relevance`, `Size`, `Modified` et `Created`. Les ressources recherchées sont triées en fonction de la `Relevance`, par défaut.
 
-## Gestion des filtres personnalisés {#custom-filters}
+<!--
+  
+## Manage custom filters {#custom-filters}
 
-**Autorisations requises :**  `Can Edit`, `Owner` ou administrateur.
+**Permissions required:**  `Can Edit`, `Owner`, or Administrator.
 
-La vue Assets permet également d’ajouter des filtres personnalisés à l’interface utilisateur. Vous pouvez ensuite appliquer ces filtres personnalisés en plus des [filtres standard](#refine-search-results) pour affiner vos résultats de recherche.
+Assets view also enable you to add custom filters to the user interface. You can then apply those custom filters in addition to the [standard filters](#refine-search-results) to refine your search results.
 
-La vue Assets fournit les filtres personnalisés suivants :
+Assets view provides the following custom filters:
 
 <table>
     <tbody>
      <tr>
-      <th><strong>Nom de filtre personnalisé</strong></th>
+      <th><strong>Custom filter name</strong></th>
       <th><strong>Description</strong></th>
      </tr>
      <tr>
-      <td>Titre</td>
-      <td>Filtrage des ressources à l’aide du titre de la ressource. Le titre que vous indiquez dans les critères de recherche sensibles à la casse doit correspondre au titre exact de la ressource à afficher dans les résultats.</td>
+      <td>Title</td>
+      <td>Filter assets using the asset title. The title that you specify in the case-sensitive search criteria must match the exact title of the asset to display in the results.</td>
      </tr>
      <tr>
-      <td>Nom</td>
-      <td>Filtrez les ressources à l’aide du nom de fichier de la ressource. Le nom que vous indiquez dans les critères de recherche sensibles à la casse doit correspondre au nom de fichier exact de la ressource à afficher dans les résultats.</td>
+      <td>Name</td>
+      <td>Filter assets using the asset file name. The name that you specify in the case-sensitive search criteria must match the exact file name of the asset to display in the results.</td>
      </tr>
      <tr>
-      <td>Taille de ressource</td>
-      <td>Filtrez les ressources en définissant une plage de taille de fichier, en octets, dans les critères de recherche pour afficher une ressource dans les résultats.</td>
+      <td>Asset Size</td>
+      <td>Filter assets by defining a size range, in bytes, in the search criteria for an asset to display in the results.</td>
      </tr>
      <tr>
-      <td>Balises prédites</td>
-      <td>Filtrage des ressources à l’aide de la balise intelligente de ressource. Le nom de balise intelligente que vous indiquez dans les critères de recherche avec respect de la casse doit correspondre exactement au nom de balise intelligente de la ressource à afficher dans les résultats. Vous ne pouvez pas spécifier plusieurs balises intelligentes dans les critères de recherche.</td>
+      <td>Predicted Tags</td>
+      <td>Filter assets using the asset smart tag. The smart tag name that you specify in the case-sensitive search criteria must match the exact smart tag name of the asset to display in the results. You cannot specify multiple smart tags in search criteria.</td>
      </tr>    
     </tbody>
    </table>
 
-<!--
+   <!--
    You can use a wildcard operator (*) to enable Assets view to display assets in the results that partially match the search criteria. For example, if you define <b>ma*</b> as the search criteria, Assets view displays assets with title, such as, market, marketing, man, manchester, and so on in the results.
 
    You can use a wildcard operator (*) to enable Assets view to display assets in the results that partially match the search criteria.
 
    You can use a wildcard operator (*) to enable Assets view to display assets in the results that partially match the search criteria. You can specify multiple smart tags separated by a comma in the search criteria.
 
-   -->
+   
 
-### Ajout de filtres personnalisés {#add-custom-filters}
+### Add custom filters {#add-custom-filters}
 
-Pour ajouter des filtres personnalisés :
+To add custom filters:
 
-1. Cliquez sur **[!UICONTROL Filtres]**.
+1. Click **[!UICONTROL Filters]**. 
 
-1. Dans la section **[!UICONTROL Filtres personnalisés]**, cliquez sur **[!UICONTROL Modifier]** ou **[!UICONTROL Ajouter des filtres]**.
+1. In the **[!UICONTROL Custom Filters]** section, click **[!UICONTROL Edit]** or **[!UICONTROL Add Filters]**.
 
-   ![Ajout de filtres personnalisés](assets/add-custom-filters.png)
+   ![Add custom filters](assets/add-custom-filters.png)
 
-1. Dans la boîte de dialogue **[!UICONTROL Gestion des filtres personnalisés]**, sélectionnez les filtres à ajouter à la liste de filtres existants. Sélectionnez **[!UICONTROL Filtres personnalisés]** pour sélectionner tous les filtres.
+1. On the **[!UICONTROL Custom filters management]** dialog box, select the filters that you need to add to the existing list of filters. Select **[!UICONTROL Custom Filters]** to select all filters.
 
-1. Cliquez sur **[!UICONTROL Confirmer]** pour ajouter les filtres à l’interface utilisateur.
+1. Click **[!UICONTROL Confirm]** to add the filters to the user interface.
 
-### Suppression de filtres personnalisés {#remove-custom-filters}
+### Remove custom filters {#remove-custom-filters}
 
-Pour supprimer des filtres personnalisés :
+To remove custom filters:
 
-1. Cliquez sur **[!UICONTROL Filtres]**.
+1. Click **[!UICONTROL Filters]**. 
 
-1. Dans la section **[!UICONTROL Filtres personnalisés]**, cliquez sur **[!UICONTROL Modifier]**.
+1. In the **[!UICONTROL Custom Filters]** section, click **[!UICONTROL Edit]**.
 
-1. Sans la boîte de dialogue **[!UICONTROL Gestion des filtres personnalisés]**, désélectionnez les filtres que vous devez supprimer de la liste des filtres existants.
+1. On the **[!UICONTROL Custom filters management]** dialog box, deselect the filters that you need to remove from the existing list of filters.
 
-1. Cliquez sur **[!UICONTROL Confirmer]** pour supprimer les filtres de l’interface utilisateur.
+1. Click **[!UICONTROL Confirm]** to remove the filters from the user interface.
+
+-->
 
 ## Recherche IA {#ai-search}
 
@@ -193,13 +197,17 @@ Pour générer de nouvelles ressources en utilisant [!DNL Adobe Firefly] :
 
 1. Cliquez sur **Enregistrer comme nouvelle ressource** pour enregistrer la ou les ressources.
 
-### Chargement de ressources {#upload-assets-firefly}
+<!--
 
-Pour télécharger la ressource générée dans le référentiel de ressources :
+### Upload assets {#upload-assets-firefly}
 
-1. Cliquez sur **[!UICONTROL Charger]**.
-1. Sélectionnez le dossier de ressources dans lequel vous devez télécharger la ressource et cliquez sur **[!UICONTROL Sélectionner le dossier]**.
-   ![Charger la ressource](assets/upload-asset-firefly.jpg)
+To upload the generated asset to the assets repository:
+
+1. Click **[!UICONTROL Upload]**.
+1. Select the asset folder to which you need to upload the asset and click **[!UICONTROL Select Folder]**.
+ ![Upload asset](assets/upload-asset-firefly.jpg)
+
+ -->
 
 ## Recherches enregistrées {#saved-search}
 
@@ -386,7 +394,7 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 
 * Faites des commentaires sur la documentation en utilisant les options [!UICONTROL Modifier cette page] ![Modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![Créer un problème GitHub](assets/do-not-localize/github-issue.png) disponibles dans la barre latérale de droite.
 
-* Contacter l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr#support)
+* Contacter l’[assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&lang=fr#support)
 
 
 

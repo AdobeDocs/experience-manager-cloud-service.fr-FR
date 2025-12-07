@@ -3,10 +3,10 @@ title: Améliorez la découverte de contenu avec les métadonnées générées p
 description: Découvrez comment améliorer la découverte de contenu avec les métadonnées générées par l’IA dans la vue Administration
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: 5dbad509f5a5a9addfe6b52c3c3dd7ce5fa3229d
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 15%
+source-wordcount: '594'
+ht-degree: 10%
 
 ---
 
@@ -28,15 +28,13 @@ Pour activer les métadonnées générées par l’IA :
 
 * La version minimale requise d’AEM est `20626`.
 
-* Vous devez signer un contrat GenAI Rider. Pour plus d’informations, contactez votre représentant Adobe.
-
 ## Configurer les titres générés par l’IA {#configure-ai-generated-titles}
 
 AEM vous permet de configurer l’affichage des titres des ressources en mode Carte ou Liste sur la page de navigation des ressources. Vous pouvez choisir d’afficher le titre de la ressource que vous avez défini, le titre généré à l’aide de l’IA ou le titre généré par l’IA uniquement s’il n’existe aucun titre pour la ressource.
 
 Pour configurer les titres générés par l’IA :
 
-1. Accédez à **[!UICONTROL Outils > Assets > Configuration Assets > Configuration de l’amélioration des balises intelligentes]**.
+1. Accédez à **[!UICONTROL Outils > Assets > Configurations d’Assets > Configuration de l’amélioration des balises intelligentes]**.
 
 1. Sélectionnez l’une des options suivantes :
 
@@ -71,20 +69,12 @@ Pour utiliser la fonctionnalité de balises intelligentes améliorée, procédez
 
 ## Désactiver les métadonnées générées par l’IA {#disable-ai-generated-metadata}
 
-Vous pouvez désactiver les métadonnées générées par l’IA au niveau du dossier. Tous les dossiers enfants héritent des propriétés du dossier parent.
+Pour désactiver les métadonnées générées par l’IA :
 
-Pour désactiver les métadonnées générées par l’IA au niveau du dossier :
+1. Accédez à **[!UICONTROL Outils > Assets > Configurations d’Assets > Configuration de l’amélioration des balises intelligentes]**.
 
-1. Accédez à **[!UICONTROL Adobe Experience Manager > Ressources > Fichiers]**.
+1. Sélectionnez **[!UICONTROL Désactiver les améliorations apportées aux balises intelligentes]**.
 
-1. Sélectionnez le dossier et cliquez sur **[!UICONTROL Propriétés]**.
+1. Cliquez sur **[!UICONTROL Enregistrer]** .
 
-1. Dans l’onglet **[!UICONTROL Traitement des ressources]**, accédez au dossier **[!UICONTROL Améliorations apportées aux balises intelligentes pour les images]**. Sélectionnez l’une des valeurs suivantes dans la liste déroulante :
-
-   * Hérité : le dossier hérite des options d’activation ou de désactivation du dossier parent.
-
-   * Activer : active les métadonnées générées par l’IA pour le dossier sélectionné.
-
-   * Désactiver - Désactive les métadonnées générées par l’IA pour le dossier sélectionné.
-
-     ![Désactiver les métadonnées générées par l’IA](assets/disable-ai-generated-metadata.png)
+Les métadonnées générées par l’IA sont désactivées pour les nouvelles ressources ou les nouveaux dossiers que vous chargez vers AEM Assets. Les ressources ou dossiers existants pour lesquels des champs de métadonnées générés par l’IA sont déjà générés continuent d’afficher ces champs.
