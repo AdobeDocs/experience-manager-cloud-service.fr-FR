@@ -2,10 +2,10 @@
 title: Approuver des ressources pour le hub de contenus
 description: Découvrez comment approuver des ressources dans Assets as a Cloud Service pour les rendre disponibles dans Content Hub.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: aec2bd06ad498e92ce1e69ac587ee7fcd5106268
 workflow-type: tm+mt
-source-wordcount: '1230'
-ht-degree: 16%
+source-wordcount: '1194'
+ht-degree: 17%
 
 ---
 
@@ -83,10 +83,6 @@ Pour définir la cible de validation :
 
    Pour plus d’informations sur les options disponibles, consultez [Cible d’approbation par défaut et destinations de publication pour les ressources approuvées](#default-approval-target-options-publish-destinations).
 
-   >[!NOTE]
-   >
-   >La définition d’une cible de validation est une fonctionnalité à disponibilité limitée. Vous pouvez l’activer ou la désactiver en créant un ticket d’assistance. Si Dynamic Media est activé avec OpenAPI, il l’est par défaut.
-
    ![Statut d&#39;approbation](/help/assets/assets/approval-status-delivery.png)
 
 1. Spécifiez d’autres propriétés de ressource et cliquez sur **[!UICONTROL Enregistrer]**.
@@ -101,10 +97,10 @@ Voici quelques autres points à noter :
 
 Le tableau suivant illustre les conditions préalables à l’affichage de `Approval Target` liste déroulante et de la cible d’approbation par défaut en fonction de l’activation de DM avec OpenAPI et Content Hub dans votre environnement AEM as a Cloud Service :
 
-| Dynamic Media avec OpenAPI | Content Hub | La liste déroulante Cible d&#39;approbation s&#39;affiche ? | Cible d’approbation par défaut des ressources approuvées | Destination de publication |
+| Dynamic Media avec OpenAPI | Content Hub | La liste déroulante Cible d&#39;approbation s&#39;affiche ? | Cible d’approbation par défaut des ressources approuvées | Destination de publication |
 | --- | --- | --- | --- |---|
 | Activé | Activé | Oui | Diffusion | Dynamic Media avec OpenAPI et Content Hub |
-| Pas activé | Activé | Oui | Content Hub | Content Hub |
+| Pas activé | Activé | Oui | Content Hub | Content Hub |
 | Activé | Pas activé | Oui | Diffusion | Dynamic Media avec OpenAPI |
 | Pas activé | Pas activé | Non | N/A | S/O |
 
@@ -121,17 +117,17 @@ Pour automatiser l’approbation des ressources nouvellement ingérées dans [!D
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Assets]** > **[!UICONTROL Profils de métadonnées]**.
 1. Cliquez sur **[!UICONTROL Créer]** en haut à droite de la page.
 1. Ajoutez un titre de profil et cliquez sur **[!UICONTROL Créer]**. Le profil de métadonnées a été créé.
-1. Sélectionnez le profil de métadonnées que vous venez de créer et cliquez sur **[!UICONTROL Modifier le(s) _(s)_]**. <br>Le formulaire **[!UICONTROL Modifier le profil de métadonnées]**&#x200B;s’ouvre avec l’onglet **[!UICONTROL De base]**&#x200B;en surbrillance.
+1. Sélectionnez le profil de métadonnées que vous venez de créer et cliquez sur **[!UICONTROL Modifier le(s) _(s)_]**. <br>Le formulaire **[!UICONTROL Modifier le profil de métadonnées]**s’ouvre avec l’onglet **[!UICONTROL De base]**en surbrillance.
 1. Effectuez un glisser-déposer d’un **[!UICONTROL champ de texte monoligne]** de la section **[!UICONTROL Créer un formulaire]** sur le côté droit de la section Métadonnées du formulaire.
 1. Cliquez sur le champ nouvellement ajouté, puis effectuez les mises à jour suivantes dans le panneau **[!UICONTROL Paramètres]** :
    1. Remplacez **[!UICONTROL Libellé du champ]** par _Assets approuvé_.
-   1. Mettez à jour **[!UICONTROL Mappez à la propriété]** sur _./jcr:content/metadata/dam:status_.
+   1. Mettez à jour le **[!UICONTROL Mapper à la propriété]** sur _./jcr:content/metadata/dam :status_.
    1. Remplacez la valeur Par défaut par _approuvé_.
 
 1. Comme à l’étape 6, faites glisser un **[!UICONTROL champ de texte monoligne]** de la section **[!UICONTROL Créer un formulaire]** sur le côté droit vers la section Métadonnées du formulaire.
 1. Cliquez sur le champ nouvellement ajouté, puis effectuez les mises à jour suivantes dans le panneau **[!UICONTROL Paramètres]** :
    1. Remplacez **[!UICONTROL Libellé du champ]** par _Cible d’activation_.
-   1. Mettez à jour **[!UICONTROL Mappez à la propriété]** sur _./jcr:content/metadata/dam:activationTarget_.
+   1. Mettez à jour le **[!UICONTROL Mapper à la propriété]** sur _./jcr:content/metadata/dam :activationTarget_.
    1. Remplacez la Valeur par défaut par _contenthub_.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
