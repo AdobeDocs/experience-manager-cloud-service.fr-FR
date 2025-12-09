@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
-source-wordcount: '2390'
+source-git-commit: 0f372f4ddc0ff323a3beedacc84a8a59de8e6d2a
+workflow-type: tm+mt
+source-wordcount: '2376'
 ht-degree: 100%
 
 ---
@@ -246,8 +246,6 @@ Le panneau Propriétés du formulaire comprend les sections suivantes :
 ![Éditeur de règles](/help/edge/docs/forms/universal-editor/assets/ue-ruleeditor.png)
 
 >[!IMPORTANT]
->
-> **Fonctionnalité d’accès anticipé :** l’éditeur de règles nécessite un accès spécial. Pour activer cette fonctionnalité, contactez [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
 >
 > **En savoir plus:** consultez le [Guide de l’éditeur de règles](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) pour obtenir des instructions détaillées.
 
