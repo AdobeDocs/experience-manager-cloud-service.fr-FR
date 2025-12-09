@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: d1c62f32-372b-475a-9258-67c2276e79f3
-source-git-commit: 8f25010ed57bd76acac7c56533ba8e37913511b7
+source-git-commit: d24e88b545a17e50c1e80e1aedbb1d0adf55f609
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '291'
 ht-degree: 18%
 
 ---
@@ -25,9 +25,9 @@ ht-degree: 18%
 
 Un fragment de communication interactive permet aux utilisateurs et utilisatrices de créer des blocs de contenu modulaires réutilisables, tels que des en-têtes, des pieds de page ou des clauses de non-responsabilité standard, qui peuvent être utilisés dans plusieurs documents de communication. Ces fragments permettent de maintenir la cohérence, de réduire le travail répétitif et d’accélérer le processus de conception lors de la création de communications personnalisées intégrées aux données.
 
-## Prérequis
-
-* [Assurez-vous que l’auteur est membre du groupe forms-users](/help/forms/setup-forms-cloud-service.md#configure-users)
+>[!NOTE]
+>
+> [L’auteur doit être membre du groupe « forms-users »](/help/forms/setup-forms-cloud-service.md#configure-users)
 
 ## Créer un fragment de communication interactive
 
@@ -41,7 +41,7 @@ Pour créer un fragment de communication interactive, procédez comme suit :
 
 1. Lorsque vous sélectionnez le fragment de communication interactive, un écran s’affiche où vous définissez les détails du fragment clé tels que le titre, le nom, la description, le modèle de données (une représentation structurée des données du serveur principal) et les balises.
 
-   Pour en savoir plus, consultez le [Guide de configuration du modèle de données](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
+   Pour en savoir plus, consultez le [Guide de configuration du modèle de données](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
 
    ![Rechercher un document IC](/help/forms/interactive-communication/assets/createfrgmnt.png)
 

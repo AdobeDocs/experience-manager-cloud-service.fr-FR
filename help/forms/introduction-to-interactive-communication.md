@@ -7,12 +7,13 @@ hide: true
 index: false
 hidefromtoc: true
 exl-id: 4f28c260-9842-467e-8abb-bcca224280b8
-source-git-commit: aa8f6e129febaf246b70da43dd1d34b6caaf066d
+source-git-commit: 3a4119cfddda5d2d55f9a74848afe59eb0c1b709
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%
 
 ---
+
 
 # Communications interactives
 
@@ -25,7 +26,6 @@ Contrairement à AEM Forms Desktop Designer qui ne peut être installé que sur 
 ![Éditeur de communication interactive](/help/forms/assets/ic-editor.png)
 
 Des institutions financières qui génèrent des relevés de compte aux organismes gouvernementaux qui rationalisent les avis de prestations, les communications interactives sont l&#39;outil par excellence pour rédiger facilement et efficacement une correspondance de haute qualité, sécurisée et conforme à la loi.
-
 
 ## Fonctionnalités principales
 
