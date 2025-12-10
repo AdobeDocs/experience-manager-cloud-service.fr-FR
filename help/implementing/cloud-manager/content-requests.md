@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 83ab0fb97b233828fe43c1b53e649c918ce7b100
+source-git-commit: c5f4a3502153ff3c7e9fbce164a9c9b63196b547
 workflow-type: tm+mt
-source-wordcount: '1976'
+source-wordcount: '1968'
 ht-degree: 2%
 
 ---
@@ -76,7 +76,7 @@ Les tableaux suivants répertorient les types de demandes de contenu incluses et
 
 | Type de demande | Demande de contenu | Description |
 | --- | --- | --- |
-| Code HTTP 100-299 | Inclus | Inclut les requêtes réussies qui renvoient un contenu HTML ou JSON complet ou partiel.<br>Code HTTP 206 : ces requêtes ne diffusent qu’une partie du contenu complet. Par exemple, une vidéo ou une image volumineuse. Les requêtes de contenu partielles sont incluses lorsqu’elles diffusent une partie d’une réponse HTML ou JSON utilisée dans le rendu du contenu de la page. |
+| Code HTTP 100-299 | Inclus | Inclut les requêtes réussies qui renvoient un contenu HTML ou JSON complet ou partiel.<br>Code HTTP 206 : ces requêtes ne diffusent qu’une partie du contenu complet. Les requêtes partielles sont incluses lorsqu’elles diffusent une partie d’une réponse HTML ou JSON utilisée dans le rendu du contenu de la page. |
 | Bibliothèques HTTP à automatiser | Inclus | Les requêtes effectuées par les outils ou les bibliothèques qui récupèrent le contenu des pages. Par exemple : <br>· Amazon CloudFront<br>· Client Apache Http<br>· Client HTTP asynchrone<br>· Axios<br>· Azureus<br>· Curl<br>· Récupération de nœud GitHub<br>· Guzzle<br>· Go-http-client<br>· Chrome découplé· Java™ Client<br>· Jersey<br>· Nœud Oembed<br>· okhttp<br>· Requêtes Python<br>· Reactor Netty<br>· WinHTTP<br>· HTTP<br> rapide· Nœud GitHub Fetch<br> <br> <br>· Reactor |
 | Outils de surveillance et de contrôle de l’intégrité | Inclus | Demandes utilisées pour surveiller l’intégrité ou la disponibilité des pages.<br>Voir [Types de demandes de contenu exclues](#excluded-content-request).<br>Par exemple :<br>· `Amazon-Route53-Health-Check-Service`<br>· EyeMonIT_bot_version_0.1_[(https://eyemonit.com/)](https://eyemonit.com/)<br>· Investis-Site24x7<br>· Mozilla/5.0+(compatible ; UptimeRobot/2.0 ; [https://uptimerobot.com/](https://uptimerobot.com/))<br>· ThousandEyes-Dragonfly-x1<br>· OmtrBot/1.0<br>· WebMon/2.0.0 |
 | `<link rel="prefetch">` requêtes | Inclus | Lorsque les clients préchargent ou prérécupèrent du contenu (par exemple, avec `<link rel="prefetch">`), le système comptabilise ces requêtes côté serveur. Gardez à l’esprit que cette approche peut augmenter le trafic, selon le nombre de pages prérécupérées. |
@@ -104,7 +104,7 @@ Voir aussi [Tableau de bord des licences](/help/implementing/cloud-manager/licen
 
 ## Gestion des demandes de contenu {#managing-content-requests}
 
-Comme mentionné dans la section ci-dessus [Variances des requêtes de contenu Cloud Service](#content-requests-variances), les requêtes de contenu peuvent être plus élevées que prévu pour plusieurs raisons, un thread commun étant le trafic atteignant le réseau CDN.  En tant que client AEM, il est à votre avantage de surveiller et de gérer vos demandes de contenu pour respecter votre budget de licence.  La gestion des requêtes de contenu est généralement une combinaison de techniques d’implémentation et de [&#x200B; règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md).
+Comme mentionné dans la section ci-dessus [Variances des requêtes de contenu Cloud Service](#content-requests-variances), les requêtes de contenu peuvent être plus élevées que prévu pour plusieurs raisons, un thread commun étant le trafic atteignant le réseau CDN.  En tant que client AEM, il est à votre avantage de surveiller et de gérer vos demandes de contenu pour respecter votre budget de licence.  La gestion des requêtes de contenu est généralement une combinaison de techniques d’implémentation et de [ règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Techniques d’implémentation pour gérer les demandes de contenu {#implementation-techniques-to-manage-crs}
 
@@ -130,4 +130,4 @@ trafficFilters:
       action: block
 ```
 
-* Certains robots ont frappé un site très lourdement un jour et disparaissent le lendemain.  Cela peut empêcher toute tentative de blocage d’une adresse IP ou d’un agent utilisateur spécifique.  Une approche générique consiste à introduire une [&#x200B; règle de limitation des taux](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules).  Examinez les [exemples](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) et créez une règle qui correspond à votre tolérance pour un taux rapide de requêtes.  Consultez la syntaxe [Structure de condition](/help/security/traffic-filter-rules-including-waf.md#condition-structure) pour connaître les exceptions que vous souhaitez peut-être autoriser à une limite de taux générique.
+* Certains robots ont frappé un site très lourdement un jour et disparaissent le lendemain.  Cela peut empêcher toute tentative de blocage d’une adresse IP ou d’un agent utilisateur spécifique.  Une approche générique consiste à introduire une [ règle de limitation des taux](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules).  Examinez les [exemples](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) et créez une règle qui correspond à votre tolérance pour un taux rapide de requêtes.  Consultez la syntaxe [Structure de condition](/help/security/traffic-filter-rules-including-waf.md#condition-structure) pour connaître les exceptions que vous souhaitez peut-être autoriser à une limite de taux générique.
