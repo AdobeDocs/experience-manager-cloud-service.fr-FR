@@ -4,9 +4,9 @@ description: Découvrez l’interface utilisateur associée dans l’éditeur de
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 56e4195016c06177822ea31aa87ed4dfa24dc748
+source-git-commit: 19270498fa60f860b31400ad40705ecd2f821cf8
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '594'
 ht-degree: 3%
 
 ---
@@ -97,7 +97,7 @@ L’auteur peut suivre les étapes ci-dessous pour configurer et publier une com
 
 >[!NOTE]
 >
-> Composants pris en charge pour l’association.
+> Composants pris en charge pour les associés : champ de date, champ numérique, champ de texte.
 
 ### Création de l’ID
 
