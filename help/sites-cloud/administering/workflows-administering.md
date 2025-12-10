@@ -1,14 +1,14 @@
 ---
 title: Administration d’instances de workflow
-description: Découvrez comment gérer les instances de workflow à l’aide de la console de workflow
+description: Découvrez comment administrer des instances de processus à l’aide de la console de processus.
 feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 372d8969b1939e9a24d7910a1678a17c0dc9f9fd
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 98%
+source-wordcount: '1282'
+ht-degree: 90%
 
 ---
 
@@ -33,26 +33,22 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 1. **Workflows en cours d’exécution** indique le nombre de workflows en cours d’exécution et leur statut. Par exemple, dans les images données, le nombre de **workflows en cours d’exécution** et le **statut** de l’instance AEM sont affichés :
 
    * **Statut : sain**
-
      ![status-healthy](/help/sites-cloud/administering/assets/status-healthy.png)
 
    * **Statut : non sain**
-
      ![status-unhealthy](/help/sites-cloud/administering/assets/status-unhealthy.png)
 
 1. Si vous souhaitez avoir des **détails sur le statut** des instances de workflow, cliquez sur **Détails** pour afficher le **nombre d’instances de workflows en cours d’exécution**, les **instances de workflow terminées**, les **instances de workflow abandonnées**, **instances de workflow en échec**, etc. Par exemple, ci-dessous, les images données qui affichent les **détails sur le statut** avec :
 
    * **Détails sur le statut : sain**
-
      ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
    * **Détails sur le statut : non sain**
-
      ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
    >
-   > Pour maintenir une instance de workflow saine, consultez les rubriques [Purge régulière des instances de workflow](#regular-purging-of-workflow-instances) ou [Bonnes pratiques en matière de workflows](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=fr).
+   > Pour maintenir une instance de workflow saine, consultez les rubriques [Purge régulière des instances de workflow](#regular-purging-of-workflow-instances) ou [Bonnes pratiques en matière de workflows](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html).
 
 ## Rechercher des instances de workflow {#search-workflow-instances}
 
@@ -116,7 +112,7 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 Lorsqu’un workflow échoue, AEM fournit la console **Échecs** pour vous permettre d’enquêter et de prendre la mesure appropriée une fois la cause d’origine traitée :
 
 * **Détails de l’échec**
-Ouvre une fenêtre pour afficher le **message d’échec**, **étape et la &#x200B;** pile d’échec**.
+Ouvre une fenêtre pour afficher les **Message d’échec**, ** Étape et **Pile des échecs**.
 
 * **Ouvrir l’historique**
 Affiche des détails sur l’historique des workflows.
@@ -150,39 +146,14 @@ Pour configurer le service, vous pouvez configurer les fichiers de configuration
 >Le service étant un service d’usine, le nom du nœud `sling:OsgiConfig` nécessite un suffixe d’identifiant, tel que :
 >`com.adobe.granite.workflow.purge.Scheduler-myidentifier`
 
-<table>
- <tbody>
-  <tr>
-   <th>Nom de propriété (console web)</th>
-   <th>Nom de propriété OSGi</th>
-   <th>Description</th>
-  </tr>
-  <tr>
-   <td>Nom du traitement</td>
-   <td>scheduledpurge.name</td>
-   <td>Nom explicite de la purge planifiée.</td>
-  </tr>
-  <tr>
-   <td>Statut du workflow</td>
-   <td>scheduledpurge.workflowStatus</td>
-   <td><p>Statut des instances de workflow à purger. Les valeurs suivantes sont valides :</p>
-    <ul>
-     <li>TERMINÉ : les instances de workflow terminées sont purgées.</li>
-     <li>EN COURS : les instances de workflow en cours d’exécution sont purgées.</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>Modèles à purger</td>
-   <td>scheduledpurge.modelIds</td>
-   <td><p>ID des modèles de workflows à purger. L’ID est le chemin d’accès au nœud de modèle, par exemple :<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br /> Pour purger les instances de tous les modèles de workflows, ne spécifiez aucune valeur.</p> <p>Pour spécifier plusieurs modèles, cliquez sur le bouton + dans la console web. </p> </td>
-  </tr>
-  <tr>
-   <td>Âge du workflow</td>
-   <td>scheduledpurge.daysell</td>
-   <td>L’âge des instances de workflow à purger, exprimé en jours.</td>
-  </tr>
- </tbody>
-</table>
+| Nom de propriété (console web) | Nom de propriété OSGi | Description |
+|--- |--- |--- |
+| Nom du traitement  | `scheduledpurge.name` | Nom explicite de la purge planifiée. |
+| Statut du workflow | `scheduledpurge.workflowStatus` | Statut des instances de workflow à purger. Les valeurs suivantes sont valides :<br><br>- COMPLETED : les instances de workflow terminées sont purgées.<br>- EN COURS : les instances de workflow en cours d’exécution sont purgées. |
+| Modèles à purger | `scheduledpurge.modelIds` | Identifiant des modèles de workflow à purger.<br> L’ID correspond au chemin d’accès au nœud de modèle, par exemple :<br> `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model` <br><br> Ne spécifiez aucune valeur pour purger les instances de tous les modèles de workflows.<br>Pour spécifier plusieurs modèles, cliquez sur le bouton `+` dans la console web. |
+| Âge du workflow | `scheduledpurge.daysold` | L’âge des instances de workflow à purger, exprimé en jours. |
+| Package de payload de workflow | `scheduledpurge.purgePackagePayload` | Indique si le package de payload doit être purgé (`true` ou `false`). |
+
 
 ## Définition de la taille maximale de la boîte de réception {#setting-the-maximum-size-of-the-inbox}
 
@@ -204,7 +175,7 @@ Les données traitées par les workflows sont stockées dans l’enregistrement 
 
 Au niveau du modèle de workflow, un indicateur est fourni pour indiquer que le modèle (et ses instances d’exécution) dispose d’un enregistrement externe des métadonnées. Les variables de workflow ne seront pas conservées dans le JCR pour les instances de workflow des modèles marqués pour l’enregistrement externe.
 
-La propriété *userMetadataPersistenceEnabled* sera stockée dans le *nœud jcr:content* du modèle de workflow. Cet indicateur sera conservé dans les métadonnées de workflow sous le nom *cq:userMetaDataCustomPersistenceEnabled*.
+La propriété *userMetadataPersistenceEnabled* est stockée sur le nœud *jcr:content* du modèle de workflow. Cet indicateur est conservé dans les métadonnées de workflow sous la forme *cq:userMetaDataCustomPersistenceEnabled*.
 
 L’illustration ci-dessous montre comment définir l’indicateur dans un workflow.
 
