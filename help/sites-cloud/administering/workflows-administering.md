@@ -112,7 +112,7 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 Lorsqu’un workflow échoue, AEM fournit la console **Échecs** pour vous permettre d’enquêter et de prendre la mesure appropriée une fois la cause d’origine traitée :
 
 * **Détails de l’échec**
-Ouvre une fenêtre pour afficher les **Message d’échec**, ** Étape et **Pile des échecs**.
+Ouvre une fenêtre pour afficher les **Message d’échec**, **&#x200B; Étape et &#x200B;** Pile des échecs**.
 
 * **Ouvrir l’historique**
 Affiche des détails sur l’historique des workflows.
