@@ -4,10 +4,10 @@ description: Découvrez les tâches de maintenance dans AEM as a Cloud Service e
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: f6e8066ecdfdbd0c7e79c2557dc19eec81657047
+source-git-commit: 5de6ff7e6ac777c90b41bfeb9a56b909c83ed7d3
 workflow-type: tm+mt
-source-wordcount: '2042'
-ht-degree: 40%
+source-wordcount: '2054'
+ht-degree: 39%
 
 ---
 
@@ -29,6 +29,8 @@ Dans les versions précédentes d’AEM, vous pouviez configurer les tâches de 
 >
 >Adobe se réserve le droit de remplacer les paramètres de configuration de la tâche de maintenance d’un client ou d’une cliente afin d’atténuer des problèmes tels que la dégradation des performances.
 
+### Tâches de maintenance {#maintenance-tasks}
+
 Le tableau suivant illustre les tâches de maintenance disponibles.
 
 <table style="table-layout:auto">
@@ -47,14 +49,14 @@ Le tableau suivant illustre les tâches de maintenance disponibles.
   <tr>
     <td>Purge de version</td>
     <td>Client</td>
-    <td>La purge de version est actuellement désactivée par défaut, mais la politique peut être configurée, comme décrit dans la section <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks"> Tâches de maintenance de purge de version et de journal d’audit </a>.<br/><br/>La purge sera bientôt activée par défaut et ces valeurs pourront être remplacées.<br>
+    <td>La purge de version est actuellement désactivée par défaut, mais la politique peut être configurée, comme décrit dans la section <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks"> Tâches de maintenance de purge de version et de journal d’audit </a>.<br/><br/>La purge sera bientôt activée par défaut et ces valeurs pourront être remplacées.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>Purge du journal d’audit</td>
     <td>Client</td>
-    <td>La purge du journal d’audit est actuellement désactivée par défaut, mais la politique peut être configurée, comme décrit dans la section <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tâches de maintenance de purge de version et de purge du journal d’audit</a>.<br/><br/>La purge sera bientôt activée par défaut et ces valeurs pourront être remplacées.<br>
+    <td>La purge du journal d’audit est actuellement désactivée par défaut, mais la politique peut être configurée, comme décrit dans la section <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tâches de maintenance de purge de version et de purge du journal d’audit</a>.<br/><br/>La purge sera bientôt activée par défaut et ces valeurs pourront être remplacées.<br>
    </td>
    </td>
   </tr>
@@ -85,11 +87,15 @@ Le tableau suivant illustre les tâches de maintenance disponibles.
     <td>Client</td>
     <td>
     <p>Doit s’effectuer dans git. Remplacez le nœud de configuration de fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> ou <code>granite_monthly</code>. Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration.</p>
-    <p>Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus (nommez-le <code>granite_ProjectPurgeTask</code>) avec les propriétés adéquates. Consultez la liste des <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">propriétés OSGi</a> pour la configuration de purge des projets Adobe <b></b> .</p>
+    <p>Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus (nommez-le <code>granite_ProjectPurgeTask</code>) avec les propriétés adéquates. Consultez la liste des <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">propriétés OSGi</a> pour la configuration de purge des projets Adobe <b></b> .</p>
   </td>
   </tr>
   </tbody>
 </table>
+
+### Configurations de la fenêtre de maintenance {#maintenance-window-configurations}
+
+Le tableau suivant illustre les configurations de fenêtre de maintenance disponibles.
 
 <table style="table-layout:auto">
  <tbody>
@@ -138,15 +144,15 @@ Le tableau suivant illustre les tâches de maintenance disponibles.
     </tbody>
 </table>
 
-**Emplacements** :
+### Emplacements {#locations}
 
 * Quotidien – /apps/settings/granite/operations/maintenance/granite_daily
 * Hebdomadaire – /apps/settings/granite/operations/maintenance/granite_weekly
 * Mensuel – /apps/settings/granite/operations/maintenance/granite_monthly
 
-**Exemples de code** :
+### Exemples de code {#code-samples}
 
-Exemple de code 1 (quotidien)
+**Exemple de code 1 (quotidien)**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -161,7 +167,7 @@ Exemple de code 1 (quotidien)
  />
 ```
 
-Exemple de code 2 (hebdomadaire)
+**Exemple de code 2 (hebdomadaire)**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -176,7 +182,7 @@ Exemple de code 2 (hebdomadaire)
    windowStartTime="14:30"/>
 ```
 
-Exemple de code 3 (mensuel)
+**Exemple de code 3 (mensuel)**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -220,54 +226,54 @@ Déclarez un fichier de configuration et déployez-le comme décrit dans les ét
 > 
 >De même, une fois que vous avez déployé le nœud de purge du journal d’audit dans le fichier de configuration, vous devez le conserver déclaré et ne pas le supprimer.
 
-**1** Créez un fichier nommé `mt.yaml` ou similaire.
+1. Créez un fichier nommé `mt.yaml` ou similaire.
 
-**2** Placez le fichier quelque part sous un dossier de niveau supérieur nommé `config` ou similaire, comme décrit sous [Utilisation de pipelines de configuration](/help/operations/config-pipeline.md#folder-structure).
+1. Placez le fichier quelque part sous un dossier de niveau supérieur nommé `config` ou similaire, comme décrit sous [Utilisation des pipelines de configuration](/help/operations/config-pipeline.md#folder-structure).
 
-**3** - Déclarez les propriétés dans le fichier de configuration, parmi lesquelles :
+1. Déclarez les propriétés dans le fichier de configuration, notamment :
 
-* quelques propriétés au-dessus du nœud de données ; voir [Utilisation des pipelines de configuration](/help/operations/config-pipeline.md#common-syntax) pour une description. La valeur de la propriété `kind` doit être *MaintenanceTasks* et la version doit être définie sur *1*.
+   * quelques propriétés au-dessus du nœud de données ; voir [Utilisation des pipelines de configuration](/help/operations/config-pipeline.md#common-syntax) pour une description. La valeur de la propriété `kind` doit être *MaintenanceTasks* et la version doit être définie sur *1*.
 
-* un objet de données avec des objets `versionPurge` et `auditLogPurge`.
+   * un objet de données avec des objets `versionPurge` et `auditLogPurge`.
 
-Consultez les définitions et la syntaxe des objets `versionPurge` et `auditLogPurge` ci-dessous.
+   Consultez les définitions et la syntaxe des objets `versionPurge` et `auditLogPurge` ci-dessous.
 
-Structurez la configuration comme dans l’exemple suivant :
+   Structurez la configuration comme dans l’exemple suivant :
 
-```
-kind: "MaintenanceTasks"
-version: "1"
-metadata:
-  envTypes: ["dev"]
-data:
-  versionPurge:
-    maximumVersions: 15
-    maximumAgeDays: 20
-    paths: ["/content"]
-    minimumVersions: 1
-    retainLabelledVersions: false
-  auditLogPurge:
-    rules:
-      - replication:
-          maximumAgeDays: 15
-          contentPath: "/content"
-          types: ["Activate", "Deactivate", "Delete", "Test", "Reverse", "Internal Poll"]
-      - pages:
-          maximumAgeDays: 15
-          contentPath: "/content"
-          types: ["PageCreated", "PageModified", "PageMoved", "PageDeleted", "VersionCreated", "PageRestored", "PageValid", "PageInvalid"]
-      - dam:
-          maximumAgeDays: 15
-          contentPath: "/content"
-          types: ["ASSET_EXPIRING", "METADATA_UPDATED", "ASSET_EXPIRED", "ASSET_REMOVED", "RESTORED", "ASSET_MOVED", "ASSET_VIEWED", "PROJECT_VIEWED", "PUBLISHED_EXTERNAL", "COLLECTION_VIEWED", "VERSIONED", "ADDED_COMMENT", "RENDITION_UPDATED", "ACCEPTED", "DOWNLOADED", "SUBASSET_UPDATED", "SUBASSET_REMOVED", "ASSET_CREATED", "ASSET_SHARED", "RENDITION_REMOVED", "ASSET_PUBLISHED", "ORIGINAL_UPDATED", "RENDITION_DOWNLOADED", "REJECTED"]
-```
+   ```
+   kind: "MaintenanceTasks"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     versionPurge:
+       maximumVersions: 15
+       maximumAgeDays: 20
+       paths: ["/content"]
+       minimumVersions: 1
+       retainLabelledVersions: false
+     auditLogPurge:
+       rules:
+         - replication:
+             maximumAgeDays: 15
+             contentPath: "/content"
+             types: ["Activate", "Deactivate", "Delete", "Test", "Reverse", "Internal Poll"]
+         - pages:
+             maximumAgeDays: 15
+             contentPath: "/content"
+             types: ["PageCreated", "PageModified", "PageMoved", "PageDeleted", "VersionCreated", "PageRestored", "PageValid", "PageInvalid"]
+         - dam:
+             maximumAgeDays: 15
+             contentPath: "/content"
+             types: ["ASSET_EXPIRING", "METADATA_UPDATED", "ASSET_EXPIRED", "ASSET_REMOVED", "RESTORED", "ASSET_MOVED", "ASSET_VIEWED", "PROJECT_VIEWED", "PUBLISHED_EXTERNAL", "COLLECTION_VIEWED", "VERSIONED", "ADDED_COMMENT", "RENDITION_UPDATED", "ACCEPTED", "DOWNLOADED", "SUBASSET_UPDATED", "SUBASSET_REMOVED", "ASSET_CREATED", "ASSET_SHARED", "RENDITION_REMOVED", "ASSET_PUBLISHED", "ORIGINAL_UPDATED", "RENDITION_DOWNLOADED", "REJECTED"]
+   ```
 
-Gardez à l’esprit que pour que la configuration soit valide :
+   Gardez à l’esprit que pour que la configuration soit valide :
 
-* toutes les propriétés doivent être définies. Il n’existe aucune valeur par défaut héritée.
-* les types (entiers, chaînes, booléens, etc.) dans les tableaux de propriétés ci-dessous doivent être respectés.
+   * toutes les propriétés doivent être définies. Il n’existe aucune valeur par défaut héritée.
+   * les types (entiers, chaînes, booléens, etc.) dans les tableaux de propriétés ci-dessous doivent être respectés.
 
-**4** - Créez un pipeline de configuration dans Cloud Manager, comme décrit dans l’article [pipeline de configuration](/help/operations/config-pipeline.md#managing-in-cloud-manager).
+1. Créez un pipeline de configuration dans Cloud Manager, comme décrit dans l’article [configuration du pipeline](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 ### Purge de version {#version-purge}
 
@@ -303,12 +309,11 @@ Les colonnes indiquant *par défaut* indiquent les valeurs par défaut dans le f
 
 | Propriétés | future valeur par défaut pour env>à déterminer | future valeur par défaut pour env&lt;=à déterminer | obligatoire | Type | Valeurs |
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
-| chemin(s) d’accès | [« /content »] | [« /content »] | Oui | séquence de chaînes de caractères | Indique sous quels chemins d’accès purger les versions lorsque de nouvelles versions sont créées.  Les clients doivent déclarer cette propriété, mais la seule valeur autorisée est « /content ». |
+| chemins d’accès | [« /content »] | [« /content »] | Oui | séquence de chaînes de caractères | Indique sous quels chemins d’accès purger les versions lorsque de nouvelles versions sont créées.  Les clients doivent déclarer cette propriété, mais la seule valeur autorisée est « /content ». |
 | maximumAgeDays | 30 | 2557 (7 ans + 2 jours bissextiles) | Oui | Entier | Toute version antérieure à la valeur configurée est supprimée. Si la valeur est 0, la purge n’est pas effectuée en fonction de l’âge de la version. |
 | maximumVersions | 5 | 0 (pas de limite) | Oui | Entier | Toute version antérieure à la nième version la plus récente est supprimée. Si la valeur est 0, la purge n’est pas effectuée en fonction du nombre de versions. |
 | minimumVersion | 1 | 1 | Oui | Entier | Nombre minimum de versions à conserver, quel que soit l’âge. Notez qu’au moins 1 version est toujours conservée ; sa valeur doit être égale ou supérieure à 1. |
 | retainLabellingVersioned | false | false | Oui | booléen | Détermine si les versions explicitement étiquetées seront exclues de la purge. Pour une meilleure optimisation du référentiel, il est recommandé de définir cette valeur sur false. |
-
 
 **Interactions de propriétés**
 
@@ -366,7 +371,6 @@ Les valeurs par défaut des environnements créés avant l’activation de la pu
 Les propriétés autorisées sont répertoriées ci-dessous.
 
 Les colonnes indiquant *par défaut* indiquent les valeurs par défaut dans le futur, lorsque les valeurs par défaut sont appliquées ; *à déterminer* reflète un identifiant d’environnement qui n’est toujours pas déterminé.
-
 
 | Propriétés | future valeur par défaut pour env>à déterminer | future valeur par défaut pour env&lt;=à déterminer | obligatoire | Type | Valeurs |
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
