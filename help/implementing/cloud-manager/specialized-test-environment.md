@@ -79,6 +79,6 @@ Si l’option **Ajouter un environnement** est grisée (désactivée), cela peut
 
 ## Ressources supplémentaires {#additional-resources}
 
-* Vidéo : [Présentation des types d’environnements dans AEM Cloud Manager](https://experienceleague.adobe.com/en/perspectives/cloud-manager-environment-types)
+* Vidéo : [Présentation des types d’environnements dans AEM Cloud Manager](https://experienceleague.adobe.com/fr/perspectives/cloud-manager-environment-types)
 * [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md)
 
