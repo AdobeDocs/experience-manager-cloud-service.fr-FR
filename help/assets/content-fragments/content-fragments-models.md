@@ -5,9 +5,9 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Developer
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
 workflow-type: tm+mt
-source-wordcount: '3588'
+source-wordcount: '3604'
 ht-degree: 72%
 
 ---
@@ -22,6 +22,10 @@ Pour utiliser des modèles de fragments de contenu, procédez comme suit :
 1. [Créez](#creating-a-content-fragment-model) et [configurez](#defining-your-content-fragment-model) vos modèles de fragments de contenu.
 1. [Activez vos modèles de fragment de contenu](#enabling-disabling-a-content-fragment-model) à utiliser lors de la création de fragments de contenu.
 1. [Autorisez vos modèles de fragments de contenu sur les dossiers de ressources requis](#allowing-content-fragment-models-assets-folder) en configurant des **politiques**.
+
+>[!NOTE]
+>
+>Tenez compte des [ Bonnes pratiques ](/help/assets/content-fragments/content-fragments.md) lorsque vous utilisez vos modèles de fragment de contenu et vos fragments de contenu.
 
 >[!NOTE]
 >
@@ -52,7 +56,7 @@ Vous pouvez également définir différentes propriétés ; par exemple, ajouter
 
    >[!NOTE]
    >
-   >Pour plus d’informations sur le **Modèle d’URL d’aperçu par défaut** voir [&#x200B; Modèle de fragment de contenu - Propriétés](#content-fragment-model-properties).
+   >Pour plus d’informations sur le **Modèle d’URL d’aperçu par défaut** voir [ Modèle de fragment de contenu - Propriétés](#content-fragment-model-properties).
 
    ![titre et description](assets/cfm-models-02.png)
 

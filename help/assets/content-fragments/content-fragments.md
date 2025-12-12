@@ -5,10 +5,10 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2449bc380268ed42b6c8d23ae4a4fecaf1736889
 workflow-type: tm+mt
-source-wordcount: '2247'
-ht-degree: 72%
+source-wordcount: '2576'
+ht-degree: 63%
 
 ---
 
@@ -62,7 +62,7 @@ Cette page et les suivantes portent sur les tâches de création, de configurati
 >* [Création de page à partir de fragments de contenu](/help/sites-cloud/authoring/fragments/content-fragments.md).
 >* [Personnalisation et extensions de fragments de contenu](/help/implementing/developing/extending/content-fragments-customizing.md)
 >* [Fragments de contenu – Configuration des composants pour le rendu](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
->* [Prise en charge des fragments de contenu dans l’API HTTP AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
+>* [Prise en charge des fragments de contenu dans l’API HTTP AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [API AEM GraphQL à utiliser avec les fragments de contenu](/help/headless/graphql-api/content-fragments.md)
 >* [API ouvertes de fragment de contenu et de modèle de fragment de contenu](/help/headless/content-fragment-openapis.md)
 
@@ -95,7 +95,7 @@ Ces fragments de contenu peuvent ensuite être assemblés pour offrir diverses e
 >
 >Pour plus d’informations, voir également [Présentation des fragments de contenu et d’expérience dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=fr#content-fragments).
 
-## Fragments de contenu et services de contenu {#content-fragments-and-content-services}
+## Fragments de contenu et Content Services {#content-fragments-and-content-services}
 
 AEM Content Services est conçu pour généraliser la description et la diffusion de contenu dans/à partir d’AEM à des canaux autres que des pages web.
 
@@ -150,7 +150,7 @@ Les ressources peuvent être utilisées avec un fragment de contenu de plusieurs
 
 * **Insérer une ressource** dans un fragment (fragments de médias variés)
 
-   * Ils font partie du fragment (voir [&#x200B; Parties constituantes d’un fragment de contenu &#x200B;](#constituent-parts-of-a-content-fragment)).
+   * Ils font partie du fragment (voir [ Parties constituantes d’un fragment de contenu ](#constituent-parts-of-a-content-fragment)).
    * Définissent la position de la ressource.
    * Reportez-vous à la section [Insertion de ressources dans votre fragment](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) dans l’éditeur de fragments pour plus d’informations.
 
@@ -160,7 +160,7 @@ Les ressources peuvent être utilisées avec un fragment de contenu de plusieurs
 
 * **Contenu associé**
 
-   * Connecté à un fragment ; mais pas une partie fixe du fragment (voir [&#x200B; Parties constituantes d’un fragment de contenu &#x200B;](#constituent-parts-of-a-content-fragment)).
+   * Connecté à un fragment ; mais pas une partie fixe du fragment (voir [ Parties constituantes d’un fragment de contenu ](#constituent-parts-of-a-content-fragment)).
    * Dispose d’une certaine flexibilité pour le positionnement.
    * Facilement disponible pour utilisation (comme contenu intermédiaire) lors de l’utilisation du fragment sur une page.
 
@@ -323,3 +323,47 @@ Le projet WKND comprend :
 
 * les fragments de contenu (et autres contenus) disponibles sous :
   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
+
+## Bonnes pratiques {#best-practices}
+
+Les fragments de contenu peuvent être utilisés pour former des structures complexes. Adobe fournit des recommandations relatives aux bonnes pratiques à appliquer lors de la définition et de l’utilisation de modèles et de fragments.
+
+### Restez simple {#keep-it-simple}
+
+Lors de la modélisation de contenu structuré dans AEM, simplifiez au maximum les structures de contenu afin d’assurer des performances système solides et une gouvernance rationalisée.
+
+### Nombre de modèles {#number-of-models}
+
+Créez autant de modèles de contenu que nécessaire, mais pas plus.
+
+Un nombre trop élevé de modèles complique la gouvernance et peut ralentir les requêtes GraphQL. Un petit ensemble de modèles, maximum de dizaines faibles, est généralement suffisant. Si vous approchez des dizaines élevées ou plus, reconsidérez votre stratégie de modélisation.
+
+### Imbrication de modèles et de fragments (très important) {#nesting-models-and-fragments}
+
+Évitez l’imbrication profonde ou excessive de fragments de contenu à l’aide des références de fragments de contenu, qui permettent aux fragments de référencer d’autres fragments, parfois sur plusieurs niveaux.
+
+L’utilisation intensive des références de fragments de contenu peut avoir un impact significatif sur les performances du système, la réactivité de l’interface utilisateur et l’exécution des requêtes GraphQL. Visez à ne pas imbriquer plus de dix niveaux.
+
+### Nombre de champs de données et de types par modèle {#number-of-data-fields-and-types-per-model}
+
+Incluez uniquement les champs de données et les types dont un modèle a vraiment besoin.
+
+Les modèles trop complexes génèrent des fragments trop complexes qui peuvent rendre la création difficile et réduire les performances de l’éditeur.
+
+### Champs de texte enrichi {#rich-text-fields}
+
+Utilisez les champs de texte enrichi (le **texte multiligne** type de données) avec précaution.
+
+Limitez le nombre de champs de texte enrichi par modèle. La quantité de texte stockée dans chaque fragment et la quantité de mise en forme HTML. Un contenu de texte enrichi très volumineux peut nuire aux performances du système.
+
+### Nombre de variations {#number-of-variations}
+
+Créez autant de variations de fragment que nécessaire, mais pas plus.
+
+Les variations ajoutent un temps de traitement à un fragment de contenu, dans l’environnement de création et lors de la diffusion également. Il est recommandé de maintenir le nombre de variations à un niveau minimal gérable.
+
+Une bonne pratique consiste à ne pas dépasser dix variations par fragment de contenu.
+
+### Test Avant Production {#test-before-production}
+
+En cas de doute, prototypez les structures de contenu prévues avant de les déployer en production. Des preuves de concept précoces, associées à des tests adéquats, tant sur le plan technique que sur celui de l’acceptation par les utilisateurs, peuvent contribuer à éviter des problèmes ultérieurement, lorsque la production est soumise à des délais.

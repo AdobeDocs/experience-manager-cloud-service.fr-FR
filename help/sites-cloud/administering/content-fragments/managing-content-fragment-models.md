@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
 workflow-type: tm+mt
-source-wordcount: '2459'
+source-wordcount: '2475'
 ht-degree: 35%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 35%
 Dans la console Fragments de contenu , vous pouvez gérer vos modèles de fragment de contenu, puis [ouvrir l’éditeur](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) pour définir la structure.
 
 Les modèles de fragment de contenu dans Adobe Experience Manager (AEM) as a Cloud Service définissent la structure du contenu de vos [fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md). Ces fragments peuvent ensuite être utilisés comme base pour votre contenu découplé ou pour la création de pages.
+
+>[!NOTE]
+>
+>Tenez compte des [ Bonnes pratiques ](/help/sites-cloud/administering/content-fragments/overview.md) lorsque vous utilisez vos modèles de fragment de contenu et vos fragments de contenu.
 
 >[!NOTE]
 >
@@ -222,7 +226,7 @@ Sélectionnez par exemple **Activé** dans la colonne **Statut**. Une fois cette
    >
    >L&#39;option **Créer** ne sera disponible que dans les cas suivants :
    >
-   >* Si l[utilisation des modèles de fragment de contenu a été activée &#x200B;](/help/sites-cloud/administering/content-fragments/setup.md)
+   >* Si l[utilisation des modèles de fragment de contenu a été activée ](/help/sites-cloud/administering/content-fragments/setup.md)
    >* lorsque vous avez sélectionné le dossier dans lequel vous souhaitez créer le modèle.
 
 1. Sélectionnez le **Chemin** de la configuration et spécifiez le **Nom**.
@@ -242,7 +246,7 @@ Si vous saisissez d’abord le **Titre**, le **Nom** est généré à partir de 
 
    >[!NOTE]
    >
-   >Voir [&#x200B; Modèle de fragment de contenu - Propriétés &#x200B;](#model-properties) pour plus d’informations.
+   >Voir [ Modèle de fragment de contenu - Propriétés ](#model-properties) pour plus d’informations.
 
    ![Titre et description](assets/cf-managing-content-fragment-models-create.png)
 

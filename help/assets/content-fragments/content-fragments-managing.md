@@ -5,9 +5,9 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: 8a3ee333a0bd5904c43c424967a7b9c752fd38c2
+source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1941'
 ht-degree: 81%
 
 ---
@@ -27,6 +27,9 @@ L’[éditeur de fragment de contenu](#opening-the-fragment-editor) fournit diff
 * [d’affcher l’arborescence de la structure ;](/help/assets/content-fragments/content-fragments-structure-tree.md)
 * [de générer un aperçu de la représentation JSON.](/help/assets/content-fragments/content-fragments-json-preview.md)
 
+>[!NOTE]
+>
+>Tenez compte des [ Bonnes pratiques ](/help/assets/content-fragments/content-fragments.md) lorsque vous utilisez vos modèles de fragment de contenu et vos fragments de contenu.
 
 >[!NOTE]
 >
@@ -51,7 +54,7 @@ L’[éditeur de fragment de contenu](#opening-the-fragment-editor) fournit diff
 >
 >Les deux éditeurs comportent un bouton bascule dans la barre d’outils supérieure pour fournir un accès rapide à l’autre éditeur.
 
-## Créer des fragments de contenu {#creating-content-fragments}
+## Création de fragments de contenu {#creating-content-fragments}
 
 ### Création d’un modèle de contenu {#creating-a-content-model}
 
@@ -93,7 +96,7 @@ La méthode de création d’un fragment de contenu est la suivante :
 
         Nom utilisé pour former l’URL.
 
-        Obligatoire, il est dérivé automatiquement du titre, mais il peut être modifié.
+        Obligatoire, il est dérivé automatiquement du titre, mais il peut être mis à jour.
 
 1. Sélectionnez **Créer** pour terminer l’action, puis **ouvrez** le fragment en mode d’édition ou revenez à la console en sélectionnant **Terminé**.
 
@@ -136,7 +139,7 @@ Sélectionnez le fragment pour afficher la barre d’outils avec les actions app
 
 >[!NOTE]
 >
->La plupart de ces actions sont [standard pour Assets](/help/assets/manage-digital-assets.md) et/ou l’[application de bureau AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html?lang=fr).
+>La plupart de ces actions sont [standard pour Assets](/help/assets/manage-digital-assets.md) et/ou l’[application de bureau AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html).
 
 ## Ouverture de l’éditeur de fragments {#opening-the-fragment-editor}
 
