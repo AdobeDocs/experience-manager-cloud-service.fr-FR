@@ -1,20 +1,20 @@
 ---
-title: Notes de mise à jour de l’éditeur universel version 2025.12.04
-description: Il s’agit des notes de mise à jour de la version 2025.12.04 de l’éditeur universel.
+title: Notes de mise à jour de l’éditeur universel version 2025.12.12
+description: Il s’agit des notes de mise à jour de la version 2025.12.11 de l’éditeur universel.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: e500b971e36fdb3d867e2d6b2a21eced66005182
+source-git-commit: 577bc81c35ad052a96b85ed4de13b21f06e385aa
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 57%
+source-wordcount: '323'
+ht-degree: 21%
 
 ---
 
 
-# Notes de mise à jour de l’éditeur universel version 2025.12.04 {#release-notes}
+# Notes de mise à jour de l’éditeur universel version 2025.12.12 {#release-notes}
 
-Voici les notes de mise à jour de la version du 4 décembre 2025 de l’éditeur universel.
+Voici les notes de mise à jour de la version du 12 décembre 2025 de l’éditeur universel.
 
 >[!TIP]
 >
@@ -26,16 +26,27 @@ Voici les notes de mise à jour de la version du 4 décembre 2025 de l’éditeu
 
 ## Nouveautés {#what-is-new}
 
-* Les en-têtes d’autorisation ont été désactivés au profit du [nom d’utilisateur du développeur local](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login).
-* Un menu contextuel est désormais disponible dans l’arborescence [structurée en cas de clic droit](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode).
-* Ajout d’une touche de raccourci pour [dupliquer les composants.](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)
+* La prise en charge a été ajoutée aux tableaux existants dans l’[éditeur de texte enrichi.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options).
+* La touche de tabulation a été activée pour l’imbrication de listes dans l’[éditeur de texte enrichi.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options).
+* La fonction de connexion des développeurs peut désormais être désactivée via l’[ de balise `dev-login`meta.](/help/implementing/universal-editor/customizing.md#meta-tags)
+* Un clic droit dans la section de recouvrement affiche désormais un [menu d’options contextuelles](/help/sites-cloud/authoring/universal-editor/authoring.md#context-options).
+* La [mise en retrait de l’étendue](/help/implementing/universal-editor/configure-rte.md#indentation) est désormais prise en charge dans l’[éditeur de texte enrichi.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
 
-### Nouvel éditeur de texte enrichi {#new-rte}
+## Fonctionnalités d’adoption précoce {#early-adopter}
 
-Le nouvel éditeur de texte enrichi ProseMirror, qui présente un sélecteur de page dans la boîte de dialogue du lien, est désormais disponible dans le panneau de droite. [Cet éditeur de texte enrichi offre des options de configuration flexibles.](/help/implementing/universal-editor/configure-rte.md)
+Si vous souhaitez tester les prochaines fonctionnalités répertoriées ci-dessous et partager vos commentaires, envoyez un e-mail à votre responsable du succès client Adobe à partir de l’adresse e-mail associée à votre Adobe ID.
+
+* Une copie superficielle a été implémentée pour les fragments de contenu.
 
 ## Autres améliorations {#other-improvements}
 
-* Un problème en raison duquel l’éditeur de texte enrichi n’enregistrait pas correctement sur la zone de travail a été résolu.
-* Correction de l’écrêtage de l’arborescence du dossier du sélecteur de contenu.
-* `componentId` est désormais fourni pendant l’action d’ajout.
+* Le rail des propriétés est désormais synchronisé lorsque plusieurs champs changent en contexte.
+* Le sélecteur de fragment de contenu s’ouvre désormais comme prévu sur les instances AEM 6.5.
+* La touche Échap ferme désormais les boîtes de dialogue dans l’éditeur de texte enrichi.
+* L’action **Supprimer un composant** n’est désormais disponible que lorsqu’un composant est sélectionné.
+* L’éditeur de fragment de contenu correct (ancien ou nouveau) est désormais ouvert en fonction de l’instance utilisée (si le nom d’hôte est le modèle AEM as a Cloud Service, utilisez le nouvel éditeur, sinon utilisez l’éditeur hérité).
+* La validation du filtre est ajoutée à l’action en double.
+* Les titres longs sont désormais tronqués dans le rail des propriétés.
+* Les tableaux de Multi-site Manager avec plus de 10 valeurs sont désormais correctement gérés.
+* Les erreurs de conflit survenant lors de la création de plusieurs composants portant le même nom sont désormais correctement gérées.
+* Ajout de la gestion des tableaux de Multi-site Manager avec des valeurs >10.

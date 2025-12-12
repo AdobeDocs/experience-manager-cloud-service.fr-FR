@@ -4,9 +4,9 @@ description: Découvrez comment configurer l’éditeur de texte enrichi dans l�
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: edcba16831a40bd03c1413b33794268b6466d822
+source-git-commit: 482c9604bf4dd5e576b560d350361cdc598930e3
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '718'
 ht-degree: 1%
 
 ---
@@ -176,6 +176,44 @@ Les actions d’image prennent en charge le renvoi à la ligne des éléments d�
 * `wrapInPicture` : `false` (par défaut) - Génération d’éléments de `<img>` simples
 * `wrapInPicture` : `true` - Envelopper des images dans des éléments `<picture>` pour un design réactif
 
+### Configuration de la mise en retrait {#indentation}
+
+La mise en retrait possède une configuration au niveau des fonctionnalités qui contrôle la portée du comportement de mise en retrait, ainsi que des configurations d’action individuelles pour les raccourcis et les libellés.
+
+```json
+{
+  "actions": {
+    // Feature-level configuration
+    "indentation": {
+      "scope": "all"  // Controls what content can be indented (default: "all")
+    },
+
+    // Individual action configurations
+    "indent": {
+      "shortcut": "Tab",           // Custom keyboard shortcut
+      "label": "Increase Indent"   // Custom button label
+    },
+    "outdent": {
+      "shortcut": "Shift-Tab",     // Custom keyboard shortcut
+      "label": "Decrease Indent"   // Custom button label
+    }
+  }
+}
+```
+
+#### Options d’étendue de la mise en retrait {#indentation-options}
+
+* `scope` : `all` (par défaut) - Le retrait/retrait négatif s’applique à tout le contenu :
+   * Listes : imbriquer/désimbriquer des éléments de liste
+   * Paragraphes et titres : Augmenter/diminuer le niveau général de retrait
+* `scope` : `lists` - Le retrait/retrait négatif s’applique uniquement aux éléments de liste :
+   * Listes : imbriquer/désimbriquer des éléments de liste
+   * Paragraphes et en-têtes : pas de retrait (boutons désactivés pour ces paragraphes)
+
+>[!NOTE]
+>
+>L’imbrication de listes à l’aide des touches Tab/Maj+Tab fonctionne indépendamment des paramètres de mise en retrait généraux.
+
 ### Autres actions {#other}
 
 Toutes les autres actions prennent en charge la personnalisation de base. Les sections suivantes sont disponibles.
@@ -307,6 +345,35 @@ Utilisez `wrapInParagraphs: true` lorsque vous avez besoin de :
 * Plusieurs paragraphes par élément de liste
 * Style cohérent au niveau du bloc
 
+### `wrapInPicture`{#wrapinpicture}
+
+L’option `wrapInPicture` pour les images contrôle la structure HTML générée pour le contenu de l’image.
+
+#### wrapInPicture : false (par défaut) {#wrapinpicture-false}
+
+```html
+<img src="image.jpg" alt="Description" />
+```
+
+#### wrapInPicture : true {#wrapinpicture-true}
+
+```html
+<picture>
+  <img src="image.jpg" alt="Description" />
+</picture>
+```
+
+Utilisez `wrapInPicture: true` lorsque vous avez besoin de :
+
+* Prise en charge des images réactives avec des éléments `<source>`.
+* Fonctionnalités de direction artistique.
+* La pérennisation des fonctionnalités d’image avancées.
+* Structure cohérente d’un élément image.
+
+>[!NOTE]
+>
+>Lorsque `wrapInPicture: true` est activé, les images peuvent être améliorées avec des éléments `<source>` supplémentaires pour différents formats et requêtes de média, ce qui les rend plus flexibles pour le responsive design.
+
 ### Options de la cible du lien {#link-target}
 
 L’option `hideTarget` pour les liens contrôle si l’attribut `target` est inclus dans les liens générés et si la boîte de dialogue de création de lien inclut un champ pour la sélection de la cible.
@@ -318,11 +385,60 @@ L’option `hideTarget` pour les liens contrôle si l’attribut `target` est in
 <a href="https://example.com" target="_blank">External link</a>
 ```
 
-### `hideTarget: true` {#hideTarget-true}
+#### `hideTarget: true` {#hideTarget-true}
 
 ```html
 <a href="https://example.com">Link text</a>
 ```
+
+### Désactivation des liens sur les images {#disableforimages}
+
+L’option `disableForImages` pour les liens contrôle si les utilisateurs peuvent créer des liens sur des images et des éléments d’image. Cela s’applique à la fois aux éléments de `<img>` intégrés et aux éléments de `<picture>` au niveau du bloc.
+
+#### `disableForImages: false` (par défaut) {#disableforimages-false}
+
+Les utilisateurs peuvent sélectionner des images et les encapsuler dans des liens.
+
+```html
+<!-- Inline image with link -->
+<a href="https://example.com">
+  <img src="image.jpg" alt="Description" />
+</a>
+
+<!-- Block-level picture with link -->
+<a href="https://example.com">
+  <picture>
+    <img src="image.jpg" alt="Description" />
+  </picture>
+</a>
+```
+
+#### disableForImages : true {#disableforimages-true}
+
+Le bouton Lien est désactivé lorsqu’une image ou une image est sélectionnée. Les utilisateurs peuvent uniquement créer des liens sur du contenu texte.
+
+```html
+<!-- Images remain standalone without links -->
+<img src="image.jpg" alt="Description" />
+
+<picture>
+  <img src="image.jpg" alt="Description" />
+</picture>
+
+<!-- Links work normally on text -->
+<a href="https://example.com">Link text</a>
+```
+
+Utilisez `disableForImages: true` lorsque vous souhaitez :
+
+* Maintenez la cohérence visuelle en empêchant les images liées.
+* Simplifiez la structure de contenu en séparant les images de la navigation.
+* Appliquez des politiques de contenu qui limitent la liaison d’images.
+* Réduisez la complexité de l’accessibilité dans votre contenu.
+
+>[!NOTE]
+>
+>Ce paramètre affecte uniquement la possibilité de créer des liens sur les images. Elle ne supprime pas les liens existants des images dans le contenu.
 
 ### Options de balises {#tag}
 
