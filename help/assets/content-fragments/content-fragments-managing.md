@@ -139,7 +139,7 @@ Sélectionnez le fragment pour afficher la barre d’outils avec les actions app
 
 >[!NOTE]
 >
->La plupart de ces actions sont [standard pour Assets](/help/assets/manage-digital-assets.md) et/ou l’[application de bureau AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html).
+>La plupart de ces actions sont [standard pour Assets](/help/assets/manage-digital-assets.md) et/ou l’[application de bureau AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html?lang=fr).
 
 ## Ouverture de l’éditeur de fragments {#opening-the-fragment-editor}
 
