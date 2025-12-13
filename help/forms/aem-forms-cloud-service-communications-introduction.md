@@ -274,7 +274,7 @@ Après l’intégration, pour activer la fonctionnalité Communications pour vot
 
 >[!NOTE]
 >
-> Pour activer et configurer les API de manipulation de documents, ajoutez la règle suivante à la configuration [Dispatcher ](setup-local-development-environment.md#forms-specific-rules-to-dispatcher) :
+> Pour activer et configurer les API de manipulation de documents, ajoutez la règle suivante à la configuration [Dispatcher &#x200B;](setup-local-development-environment.md#forms-specific-rules-to-dispatcher) :
 >
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`

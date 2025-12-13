@@ -139,7 +139,7 @@ Cet exemple crée un modèle de workflow pour une demande de prêt immobilier à
 
    ![OU Exemple de fractionnement](assets/orsplit_branch2_active_new.png)
 
-   Pour plus d’informations sur la création d’expressions de routage à l’aide de variables, consultez [Variables dans les processus [!DNL AEM Forms] ](variable-in-aem-workflows.md).
+   Pour plus d’informations sur la création d’expressions de routage à l’aide de variables, consultez [Variables dans les processus [!DNL AEM Forms] &#x200B;](variable-in-aem-workflows.md).
 
 1. Ajoutez d’autres étapes de processus pour créer une logique d’entreprise.
 
@@ -216,7 +216,7 @@ La demande est le formulaire adaptatif associé au processus. Lorsqu’une deman
 Vous pouvez lancer ou de déclencher un processus basé sur l’utilisation de Forms en :
 
 * [Envoyer une demande depuis la boîte de réception AEM](#inbox)
-* [Envoi d’une demande depuis l’application [!DNL AEM Forms] ](#afa)
+* [Envoi d’une demande depuis l’application [!DNL AEM Forms] &#x200B;](#afa)
 
 * [Envoi d’un formulaire adaptatif](#af)
 * [Utilisant le dossier de contrôle](#watched)

@@ -407,7 +407,7 @@ Ces étapes vous guident tout au long de la prévisualisation d’un formulaire 
 
 * Gestion des nouveaux champs :
 
-   * **Traduction automatique** : si vous utilisez la traduction automatique, vous devez recréer le dictionnaire et [ le projet de traduction](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md) après avoir ajouté de nouveaux champs à un formulaire adaptatif existant. Les nouveaux champs ajoutés après le projet de traduction initial ne sont toujours pas traduits.
+   * **Traduction automatique** : si vous utilisez la traduction automatique, vous devez recréer le dictionnaire et [&#x200B; le projet de traduction](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md) après avoir ajouté de nouveaux champs à un formulaire adaptatif existant. Les nouveaux champs ajoutés après le projet de traduction initial ne sont toujours pas traduits.
 
    * **Traduction humaine** : pour les workflows de traduction humaine, exportez le dictionnaire à l’aide de l’interface utilisateur à l’adresse `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. Mettez à jour le dictionnaire pour les nouveaux champs et chargez la version révisée.
 
