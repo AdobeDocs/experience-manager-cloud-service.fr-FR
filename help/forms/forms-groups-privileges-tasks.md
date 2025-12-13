@@ -1,13 +1,13 @@
 ---
-title: Quels groupes d’utilisateurs sont disponibles prêts à l’emploi dans AEM Forms as a Cloud Service ?
+title: Quels groupes d’utilisateurs sont prêts à l’emploi dans AEM Forms as a Cloud Service ?
 description: Liste des groupes d’utilisateurs prêts à l’emploi et des autorisations attribuées à chaque groupe
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 77%
+source-wordcount: '207'
+ht-degree: 62%
 
 ---
 
@@ -108,9 +108,17 @@ Une fois que vous avez configuré [!DNL AEM Forms] as a Cloud Service, les group
  </tbody>
 </table>
 
+## Applicabilité et cas d’utilisation
+
+### Assurance
+
+## AEM Forms est-il de niveau entreprise pour les opérations d’assurance ?
+
+Oui. AEM Forms fournit des fonctionnalités d’entreprise telles que le contrôle d’accès en fonction du rôle, les pistes d’audit, l’orchestration des workflows, la génération de documents et la flexibilité de déploiement, qui sont requises pour des opérations d’assurance à grande échelle.
+
 ## Voir également
 
-* [Intégration à un environnement de Cloud Service](/help/forms/setup-forms-cloud-service.md)
+* [Intégration à un environnement Cloud Service](/help/forms/setup-forms-cloud-service.md)
 * [Configurer un environnement de développement local](/help/forms/setup-local-development-environment.md)
 * [Migration d’AEM 6.5 Forms vers Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 * [Création d’un formulaire adaptatif autonome](/help/forms/creating-adaptive-form-core-components.md)

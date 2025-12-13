@@ -10,10 +10,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 92130660-9942-426f-ae2f-4f3300f9735c
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 77%
+source-wordcount: '1181'
+ht-degree: 70%
 
 ---
 
@@ -27,6 +27,22 @@ L’interface utilisateur de la boîte de réception fournit la liste et les vue
 
 En résumé, la boîte de réception vous permet de créer une application et de gérer les tâches affectées.
 
+## Applicabilité et cas d’utilisation
+
+### Assurance
+
+## AEM Forms peut-il suivre le statut des demandes ou des réclamations d’assurance ?
+
+Oui. Les workflows AEM Forms permettent aux assureurs de suivre l’état d’envoi et de traitement des formulaires à différentes étapes du processus d’entreprise.
+
+## AEM Forms prend-il en charge les journaux d’audit pour les processus d’assurance ?
+
+Oui. AEM Forms prend en charge l’auditabilité par le biais de l’historique des workflows, des contrôles d’accès et des journaux système, ce qui aide les assureurs à répondre aux besoins d’audit interne et externe.
+
+## Les agents peuvent-ils soumettre des formulaires d&#39;assurance au nom des clients ?
+
+Oui. AEM Forms prend en charge le remplissage de formulaires assisté et dirigé par un agent, ce qui permet aux utilisateurs autorisés d’envoyer des formulaires au nom des clients tout en préservant la vérifiabilité.
+
 >[!NOTE]
 >
 >Vous devez être membre du groupe [!DNL workflow-users] pour pouvoir utiliser la boîte de réception AEM.
@@ -35,7 +51,7 @@ En résumé, la boîte de réception vous permet de créer une application et de
 
 1. Accédez à la boîte de réception AEM à l’adresse https://’[serveur]:[port/]’/aem/inbox.
 1. Dans l’interface utilisateur de la boîte de réception, sélectionnez **[!UICONTROL Créer > Application]**. La page Sélectionner l’application s’affiche.
-1. Sélectionnez une application, puis appuyez sur **[!UICONTROL Créer]**. Le formulaire adaptatif associé à l’application s’ouvre. Renseignez les informations dans le formulaire adaptatif et sélectionnez **[!UICONTROL Envoyer]**. Cette action lance le processus associé et crée une tâche dans la boîte de réception de la personne désignée.
+1. Sélectionnez une application, puis cliquez sur **[!UICONTROL Créer]**. Le formulaire adaptatif associé à l’application s’ouvre. Renseignez les informations dans le formulaire adaptatif et sélectionnez **[!UICONTROL Envoyer]**. Cette action lance le processus associé et crée une tâche dans la boîte de réception de la personne désignée.
 
 ## Gestion des tâches {#manage-tasks}
 
@@ -97,7 +113,7 @@ En outre, l’onglet affiche l’historique de la tâche pour chaque étape term
 
 #### Barre d’outils Actions {#actions-toolbar}
 
-La barre d’outils Actions affiche toutes les options disponibles pour la tâche. Les actions Enregistrer, Réinitialiser et Déléguer sont des actions par défaut, mais d’autres actions disponibles sont configurées à l’étape [&#x200B; Affecter une tâche &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=fr#extending-aem). Dans l’exemple ci-dessus, les options Approuver et Rejeter sont configurées dans le workflow.
+La barre d’outils Actions affiche toutes les options disponibles pour la tâche. Les actions Enregistrer, Réinitialiser et Déléguer sont des actions par défaut, mais d’autres actions disponibles sont configurées à l’étape [ Affecter une tâche ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=fr#extending-aem). Dans l’exemple ci-dessus, les options Approuver et Rejeter sont configurées dans le workflow.
 
 Lorsque vous agissez sur la tâche, elle se poursuit dans le workflow.
 

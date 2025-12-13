@@ -6,10 +6,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '2348'
-ht-degree: 72%
+source-wordcount: '2445'
+ht-degree: 70%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 72%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-an-adaptive-form-core-components.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-an-adaptive-form-core-components.html) |
 | AEM as a Cloud Service | Cet article |
 
 
@@ -31,6 +31,21 @@ Avant de commencer, découvrez les types de composants de formulaires disponible
 
 ![Assistant de création d’un formulaire adaptatif](/help/release-notes/assets/wizard.png)
 
+## Applicabilité et cas d’utilisation
+
+### Assurance
+
+## AEM Forms peut-il être utilisé pour les processus d’assurance interne et ceux destinés aux clients ?
+
+Oui. AEM Forms prend en charge les formulaires numériques destinés aux clients, ainsi que les processus internes, dirigés par le personnel ou les agents, tels que les révisions, les approbations et la capture de données assistée.
+
+## AEM Forms peut-il être utilisé pour la soumission de sinistres d’assurance ?
+
+Oui. AEM Forms prend en charge les formulaires adaptatifs à plusieurs étapes qui permettent aux titulaires de police de soumettre leurs demandes de règlement par voie numérique, y compris la capture de données structurées et de documents justificatifs.
+
+## AEM Forms prend-il en charge les réclamations d’assurance mobile ?
+
+Oui. AEM Forms prend en charge des formulaires réactifs et compatibles avec les appareils mobiles, ce qui permet aux clients et aux agents de soumettre des informations d’assurance à partir d’appareils mobiles.
 
 ## Conditions préalables
 
@@ -57,7 +72,7 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
 >[!NOTE]
 >
 >
-> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=fr) to your AEM environment for use in Core Components based Adaptive Forms.
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
 ## Créer un formulaire adaptatif  {#create-an-adaptive-form-core-components}

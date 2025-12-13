@@ -5,10 +5,10 @@ Keywords: document generation, PDF manipulation, document security, batch proces
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 8803896bf728524833a0dde004ddaa2e8b6bb103
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '2663'
-ht-degree: 34%
+source-wordcount: '2720'
+ht-degree: 33%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 34%
 
 > **Disponibilité de la version**
 >
-> * **AEM 6.5** : [Présentation d’AEM Document Services](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=fr)
+> * **AEM 6.5** : [Présentation d’AEM Document Services](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
 > * **AEM as a Cloud Service** : cet article
 
 ## Présentation
@@ -41,6 +41,18 @@ Les API Communications fournissent un ensemble complet de fonctionnalités de tr
 | Générez des documents personnalisés en fusionnant des modèles avec des données dans divers formats, y compris les formats PDF et d’impression. | Combinez, réorganisez et validez des documents PDF par programmation pour créer de nouveaux packages de documents. | Extrayez des propriétés, des métadonnées et du contenu des documents PDF pour un traitement ultérieur. | convertir des documents entre différents formats, y compris la validation de conformité PDF/A pour les besoins d’archivage ; | Appliquez les signatures numériques, la certification et le chiffrement pour sécuriser et protéger les documents. |
 
 La [documentation de référence sur les API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) fournit des informations détaillées sur tous les paramètres, les méthodes d’authentification et les différents services fournis par les API. La documentation de référence de l’API est également disponible au format .yaml. Vous pouvez télécharger le fichier .yaml et le charger dans Postman pour vérifier les fonctionnalités des API.
+
+## Applicabilité et cas d’utilisation
+
+### Assurance
+
+## AEM Forms peut-il générer des documents de police d’assurance ?
+
+Oui. AEM Forms peut générer des documents liés aux politiques à l’aide de modèles et de données structurées capturés par le biais de formulaires.
+
+## AEM Forms peut-il gérer les opérations d’assurance à grande échelle ?
+
+Oui. Lorsqu’il est déployé à l’aide d’architectures recommandées sur Adobe Managed Services ou un cloud privé, AEM Forms prend en charge les envois de formulaires volumineux et les charges de travail à l’échelle de l’entreprise.
 
 ## Génération de documents
 
@@ -262,7 +274,7 @@ Après l’intégration, pour activer la fonctionnalité Communications pour vot
 
 >[!NOTE]
 >
-> Pour activer et configurer les API de manipulation de documents, ajoutez la règle suivante à la configuration [Dispatcher &#x200B;](setup-local-development-environment.md#forms-specific-rules-to-dispatcher) :
+> Pour activer et configurer les API de manipulation de documents, ajoutez la règle suivante à la configuration [Dispatcher ](setup-local-development-environment.md#forms-specific-rules-to-dispatcher) :
 >
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`

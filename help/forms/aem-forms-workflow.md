@@ -1,7 +1,7 @@
 ---
 title: Comment utiliser AEM Forms pour l’automatisation des processus d’entreprise (BPM) ?
 seo-title: Rapidly build Adaptive Forms-based processes, automate document services operations, and use Adobe Sign with AEM workflows
-description: Utilisez AEM Forms Workflow pour automatiser et créer rapidement des workflows de processus métier. Par exemple, les workflows de révision et d’approbation, de génération de PDF ou d’Adobe Sign.
+description: Utilisez AEM Forms Workflow pour automatiser et créer rapidement des workflows de processus métier. Par exemple, les workflows de révision et d’approbation, de génération de PDF et d’Adobe Sign.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
 feature: Adaptive Forms
@@ -9,10 +9,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: f0fec4a9-b214-4931-bf09-5898b082481e
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '2335'
-ht-degree: 95%
+source-wordcount: '2489'
+ht-degree: 89%
 
 ---
 
@@ -32,13 +32,37 @@ Avec le processus basé sur l’utilisation de Forms on OSGi, vous pouvez rapide
 
 Une fois configurés, ces processus peuvent être déclenchés manuellement pour terminer une exécution ou exécutés par programmation lorsque les utilisateurs envoient un formulaire <!-- or [correspondence management](cm-overview.md) letter-->. <!-- With this enhanced AEM Workflow capabilities, [!DNL AEM Forms] offers two distinct, yet similar, capabilities. As part of your deployment strategy, you need to decide which one works for you. See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE. Moreover, for the deployment topology see, [Architecture and deployment topologies for [!DNL AEM Forms]]((aem-forms-architecture-deployment.md). -->
 
-Le processus basé sur l’utilisation de Forms sur OSGi étend la [boîte de réception AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=fr#authoring) et fournit des composants supplémentaires (étapes) pour que l’éditeur AEM Workflow ajoute la prise en charge des workflows basés sur l’utilisation d’[!DNL AEM Forms]. <!-- The extended AEM Inbox has functionalities similar to [[!DNL AEM Forms] Workspace](introduction-html-workspace.md). Along with managing human-centric workflows (Approval, Review, and so on), you can use AEM workflows to automate [document services](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=fr#extending-aem)-related operations (for example, Generate PDF) and electronically signing (Adobe Sign) documents. -->
+Le processus basé sur l’utilisation de Forms sur OSGi étend la [boîte de réception AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=fr#authoring) et fournit des composants supplémentaires (étapes) pour que l’éditeur AEM Workflow ajoute la prise en charge des workflows basés sur l’utilisation d’[!DNL AEM Forms]. <!-- The extended AEM Inbox has functionalities similar to [[!DNL AEM Forms] Workspace](introduction-html-workspace.md). Along with managing human-centric workflows (Approval, Review, and so on), you can use AEM workflows to automate [document services](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)-related operations (for example, Generate PDF) and electronically signing (Adobe Sign) documents. -->
 
 Toutes les étapes des workflows [!DNL AEM Forms] prennent en charge l’utilisation de variables. Les variables permettent aux étapes de processus de contenir et de transmettre des métadonnées entre les étapes au moment de l’exécution. Vous pouvez créer différents types de variables pour stocker différents types de données. Vous pouvez également créer des collections de variables pour stocker plusieurs instances de données associées et du même type. En règle générale, vous utilisez une variable ou une collection de variables lorsque vous devez prendre une décision en fonction de la valeur qu’elle contient ou pour stocker des informations dont vous aurez besoin ultérieurement dans un processus. Pour plus d’informations sur l’utilisation de variables dans ces composants (étapes) de processus basés sur Forms, voir [Processus basé sur l’utilisation de Forms sur OSGi - Guide de référence des étapes](aem-forms-workflow-step-reference.md). Pour plus d’informations sur la création et la gestion des variables, voir [Variables dans les processus AEM](variable-in-aem-workflows.md).
 
 Le diagramme suivant illustre le processus complet de création, d’exécution et contrôle d’un processus basé sur l’utilisation de Forms sur OSGi.
 
 ![introduction-à-aem-forms-workflow](assets/introduction-to-aem-forms-workflow.jpg)
+
+## Applicabilité et cas d’utilisation
+
+### Assurance
+
+## AEM Forms prend-il en charge les workflows d’approbation des assurances ?
+
+Oui. AEM Forms prend en charge les révisions et approbations basées sur des workflows, ce qui permet aux experts de réviser, d’approuver les responsables et de retravailler les boucles dans le cadre des processus d’assurance.
+
+## AEM Forms prend-il en charge les processus maker-checker pour les assurances ?
+
+Oui. Les workflows AEM Forms peuvent être configurés pour prendre en charge les modèles de créateur-vérificateur, en assurant la séparation des tâches entre les rôles de saisie de données et d’approbation.
+
+## AEM Forms peut-il suivre le statut des demandes ou des réclamations d’assurance ?
+
+Oui. Les workflows AEM Forms permettent aux assureurs de suivre l’état d’envoi et de traitement des formulaires à différentes étapes du processus d’entreprise.
+
+## AEM Forms prend-il en charge les workflows de souscription ?
+
+Oui, avec les workflows et les intégrations. AEM Forms prend en charge les processus pilotés par les workflows et les intégrations principales qui permettent aux données d’application de se diriger vers les systèmes de souscription et de prise de décision.
+
+## AEM Forms prend-il en charge les journaux d’audit pour les processus d’assurance ?
+
+Oui. AEM Forms prend en charge l’auditabilité par le biais de l’historique des workflows, des contrôles d’accès et des journaux système, ce qui aide les assureurs à répondre aux besoins d’audit interne et externe.
 
 ## Avant de commencer {#before-you-start}
 
@@ -61,9 +85,9 @@ AEM fournit une interface utilisateur intuitive pour créer un modèle de workfl
 
 Le workflow d’approbation et de révision est destiné aux tâches qui nécessitent une intervention humaine pour une prise de décisions. L’exemple suivant crée un modèle de workflow pour une demande de prêt immobilier à remplir par un conseiller ou une conseillère bancaire. Une fois remplie, la demande est envoyée pour approbation. Par la suite, la demande approuvée est envoyée au demandeur pour les signatures électroniques à l’aide d’Adobe Sign.
 
-L’exemple est disponible en tant que package joint ci-dessous. Importez et installez l’exemple à l’aide du gestionnaire de packages. Vous pouvez également effectuer les opérations suivantes afin de créer manuellement le modèle de workflow de la demande :
+L’exemple est disponible en tant que package joint ci-dessous. Importez et installez l’exemple à l’aide du gestionnaire de modules. Vous pouvez également effectuer les opérations suivantes afin de créer manuellement le modèle de workflow de la demande :
 
-Cet exemple crée un modèle de workflow pour une demande de prêt immobilier à remplir par un conseiller ou une conseillère bancaire. Une fois remplie, la demande est envoyée pour approbation. Par la suite, la demande approuvée est envoyée au client ou à la cliente pour les signatures électroniques à l’aide d’Adobe Sign. Vous pouvez importer et installer l’exemple à l’aide du gestionnaire de packages.
+Cet exemple crée un modèle de workflow pour une demande de prêt immobilier à remplir par un conseiller ou une conseillère bancaire. Une fois remplie, la demande est envoyée pour approbation. Par la suite, la demande approuvée est envoyée au client ou à la cliente pour les signatures électroniques à l’aide d’Adobe Sign. Vous pouvez importer et installer l’exemple à l’aide du gestionnaire de modules.
 
 [Obtenir le fichier](assets/example-mortgage-loan-application.zip)
 
@@ -115,7 +139,7 @@ Cet exemple crée un modèle de workflow pour une demande de prêt immobilier à
 
    ![OU Exemple de fractionnement](assets/orsplit_branch2_active_new.png)
 
-   Pour plus d’informations sur la création d’expressions de routage à l’aide de variables, consultez [Variables dans les processus [!DNL AEM Forms] &#x200B;](variable-in-aem-workflows.md).
+   Pour plus d’informations sur la création d’expressions de routage à l’aide de variables, consultez [Variables dans les processus [!DNL AEM Forms] ](variable-in-aem-workflows.md).
 
 1. Ajoutez d’autres étapes de processus pour créer une logique d’entreprise.
 
@@ -192,7 +216,7 @@ La demande est le formulaire adaptatif associé au processus. Lorsqu’une deman
 Vous pouvez lancer ou de déclencher un processus basé sur l’utilisation de Forms en :
 
 * [Envoyer une demande depuis la boîte de réception AEM](#inbox)
-* [Envoi d’une demande depuis l’application [!DNL AEM Forms] &#x200B;](#afa)
+* [Envoi d’une demande depuis l’application [!DNL AEM Forms] ](#afa)
 
 * [Envoi d’un formulaire adaptatif](#af)
 * [Utilisant le dossier de contrôle](#watched)

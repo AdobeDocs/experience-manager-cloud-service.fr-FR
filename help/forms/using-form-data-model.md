@@ -1,14 +1,14 @@
 ---
 title: Comment créer un modèle de données de formulaire (FDM) pour un formulaire adaptatif ?
-description: Découvrez comment créer des Forms et des fragments adaptatifs basés sur un modèle de données de formulaire (FDM). Générez et modifiez des données d’exemples pour les objets de modèle de données dans FDM.
+description: Découvrez comment créer des Forms et des fragments adaptatifs basés sur un modèle de données de formulaire (FDM). Générer et modifiez des données d’exemple pour les objets de modèle de données dans FDM.
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 42%
+source-wordcount: '1417'
+ht-degree: 40%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 42%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html) |
 | AEM as a Cloud Service | Cet article |
 
 
@@ -37,6 +37,22 @@ Un modèle de données de formulaire (FDM) est une extension du schéma JSON que
 * [Utilisation du service de modèle de données de formulaire](#prefill)
 * [écrire les données de formulaires adaptatifs envoyés dans les sources de données ;](#write-af)
 * [appeler les services à l’aide des règles de formulaire adaptatif.](#invoke-services)
+
+## Applicabilité et cas d’utilisation
+
+### Assurance
+
+## AEM Forms peut-il s’intégrer aux systèmes principaux d’assurance ?
+
+Oui. AEM Forms prend en charge l’intégration à l’aide des API REST et SOAP, ce qui lui permet de se connecter aux systèmes d’administration des politiques, de gestion des réclamations et de gestion de la relation client (CRM).
+
+## AEM Forms peut-il écrire des données de formulaire dans les systèmes d’assurance ?
+
+Oui. AEM Forms prend en charge l’écriture différée des données sur les systèmes principaux dans le cadre de l’envoi de formulaires et de l’exécution de workflows.
+
+## Les clients peuvent-ils charger des documents de réclamation en toute sécurité à l’aide d’AEM Forms ?
+
+Oui. AEM Forms prend en charge le chargement sécurisé de documents dans le cadre des envois de formulaires, avec des contrôles d’accès et une gestion sécurisée des données conformes aux exigences de sécurité de l’entreprise.
 
 ## Création de formulaires adaptatifs et de fragments {#create-af}
 
@@ -153,7 +169,7 @@ Vous pouvez également envoyer des pièces jointes de formulaire à une source d
 
 ## Appel des services dans des formulaires adaptatifs à l’aide de règles {#invoke-services}
 
-Dans un formulaire adaptatif basé sur un modèle de données de formulaire (FDM), vous pouvez [&#x200B; créer des règles &#x200B;](rule-editor.md) pour appeler les services configurés dans le modèle de données de formulaire (FDM). L’opération **[!UICONTROL Appeler des services]** d’une règle répertorie tous les services disponibles dans le modèle de données de formulaire (FDM) et vous permet de sélectionner des champs d’entrée et de sortie pour le service. Vous pouvez également utiliser le type de règle **[!UICONTROL Définir la valeur]** pour appeler un service de modèle de données de formulaire et définir la valeur d’un champ sur la sortie renvoyée par le service.
+Dans un formulaire adaptatif basé sur un modèle de données de formulaire (FDM), vous pouvez [ créer des règles ](rule-editor.md) pour appeler les services configurés dans le modèle de données de formulaire (FDM). L’opération **[!UICONTROL Appeler des services]** d’une règle répertorie tous les services disponibles dans le modèle de données de formulaire (FDM) et vous permet de sélectionner des champs d’entrée et de sortie pour le service. Vous pouvez également utiliser le type de règle **[!UICONTROL Définir la valeur]** pour appeler un service de modèle de données de formulaire et définir la valeur d’un champ sur la sortie renvoyée par le service.
 
 Par exemple, la règle suivante appelle un service get qui utilise l’ID d’employé comme entrée et les valeurs renvoyées sont renseignées dans les champs ID, Nom, Prénom et Sexe correspondants du formulaire.
 

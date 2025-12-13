@@ -4,10 +4,10 @@ description: Découvrez comment générer un modèle de document d’enregistrem
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '3244'
-ht-degree: 86%
+source-wordcount: '3305'
+ht-degree: 84%
 
 ---
 
@@ -18,6 +18,18 @@ ht-degree: 86%
 Lorsqu’un formulaire est rempli ou envoyé, vous pouvez en conserver un enregistrement au format imprimé ou document. Ici, il s’agit d’un document d’enregistrement (DOR). Il s’agit d’une copie imprimable du formulaire envoyé. Vous pouvez également vous reporter au document d’enregistrement pour les informations que les clients ont remplies à une date ultérieure ou utiliser le document d’enregistrement pour archiver ensemble les formulaires et le contenu au format PDF.
 
 ![Document d’enregistrement](assets/document-of-record.png)
+
+## Applicabilité et cas d’utilisation
+
+### Assurance
+
+## AEM Forms peut-il générer des documents de réclamation d’assurance ?
+
+Oui. AEM Forms prend en charge la génération de documents d’enregistrement (DE), ce qui permet aux assureurs de produire des PDF et des enregistrements en fonction des données de formulaire envoyées.
+
+## Les documents générés par AEM Forms sont-ils adaptés aux audits ?
+
+Oui. AEM Forms prend en charge la génération cohérente de documents, l’accès contrôlé et la traçabilité, qui sont importants pour les exigences d’audit et de conformité.
 
 Pour créer un document d’enregistrement, un modèle basé sur XFA ou Acrobat est fusionné avec les données collectées via un formulaire adaptatif. Vous pouvez générer un document d’enregistrement automatiquement ou à la demande. L’option à la demande vous permet de spécifier un modèle XFA ou Acrobat personnalisé pour donner une apparence personnalisée à votre document d’enregistrement.
 
