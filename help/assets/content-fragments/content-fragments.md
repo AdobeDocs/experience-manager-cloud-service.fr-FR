@@ -5,7 +5,7 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: bd7b822262e0e7994fe5140f3786c1b7ab96e7a1
+source-git-commit: 2815d75cd2ec7df47e53ab5c648e2de026702074
 workflow-type: tm+mt
 source-wordcount: '2610'
 ht-degree: 62%
@@ -150,7 +150,7 @@ Les ressources peuvent être utilisées avec un fragment de contenu de plusieurs
 
 * **Insérer une ressource** dans un fragment (fragments de médias variés)
 
-   * Ils font partie du fragment (voir [&#x200B; Parties constituantes d’un fragment de contenu &#x200B;](#constituent-parts-of-a-content-fragment)).
+   * Ils font partie du fragment (voir [ Parties constituantes d’un fragment de contenu ](#constituent-parts-of-a-content-fragment)).
    * Définissent la position de la ressource.
    * Reportez-vous à la section [Insertion de ressources dans votre fragment](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) dans l’éditeur de fragments pour plus d’informations.
 
@@ -160,7 +160,7 @@ Les ressources peuvent être utilisées avec un fragment de contenu de plusieurs
 
 * **Contenu associé**
 
-   * Connecté à un fragment ; mais pas une partie fixe du fragment (voir [&#x200B; Parties constituantes d’un fragment de contenu &#x200B;](#constituent-parts-of-a-content-fragment)).
+   * Connecté à un fragment ; mais pas une partie fixe du fragment (voir [ Parties constituantes d’un fragment de contenu ](#constituent-parts-of-a-content-fragment)).
    * Dispose d’une certaine flexibilité pour le positionnement.
    * Facilement disponible pour utilisation (comme contenu intermédiaire) lors de l’utilisation du fragment sur une page.
 
@@ -344,7 +344,7 @@ Un nombre trop élevé de modèles complique la gouvernance et peut ralentir les
 
 L’utilisation intensive des références de fragments de contenu peut avoir un impact significatif sur les performances du système, la réactivité de l’interface utilisateur et l’exécution des requêtes GraphQL. Visez à ne pas imbriquer plus de dix niveaux.
 
-### Nombre de champs de données et de types par modèle {#number-of-data-fields-and-types-per-model}
+### Nombre de champs de données et de types de données par modèle {#number-of-data-fields-and-types-per-model}
 
 Incluez uniquement les champs de données et les types dont un modèle a vraiment besoin.
 
