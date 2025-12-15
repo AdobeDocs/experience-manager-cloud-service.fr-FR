@@ -310,7 +310,7 @@ Générez manuellement les jetons d’accès dans Adobe Developer Console :
    1. Cliquez sur le bouton **Générer un jeton d’accès »** dans la section API de votre projet
    2. Copier le jeton d’accès généré
 
-   ![ Générer un jeton d’accès ](/help/forms/assets/adc-access-token.png)
+   ![&#x200B; Générer un jeton d’accès &#x200B;](/help/forms/assets/adc-access-token.png)
 
    >[!NOTE]
    >
@@ -526,7 +526,7 @@ L’interface utilisateur Swagger fournit une interface interactive pour tester 
    - API Forms : [Référence de l’API Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
    - Document Services : [Référence de l’API des services de document](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
 Ouvrez la documentation des [API des services de document](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document) dans votre navigateur.
-2. Développez la section **Génération de documents** et sélectionnez [ Génère un formulaire PDF à remplir à partir d’un modèle XDP ou PDF, éventuellement avec fusion des données](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm).
+2. Développez la section **Génération de documents** et sélectionnez [&#x200B; Génère un formulaire PDF à remplir à partir d’un modèle XDP ou PDF, éventuellement avec fusion des données](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm).
 3. Dans le volet de droite, cliquez sur **Essayer**.
 
    ![Test Swagger pour l’API](/help/forms/assets/api-doc-generation.png)
