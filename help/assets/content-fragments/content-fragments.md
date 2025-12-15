@@ -5,10 +5,10 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 2449bc380268ed42b6c8d23ae4a4fecaf1736889
+source-git-commit: bd7b822262e0e7994fe5140f3786c1b7ab96e7a1
 workflow-type: tm+mt
-source-wordcount: '2576'
-ht-degree: 63%
+source-wordcount: '2610'
+ht-degree: 62%
 
 ---
 
@@ -150,7 +150,7 @@ Les ressources peuvent être utilisées avec un fragment de contenu de plusieurs
 
 * **Insérer une ressource** dans un fragment (fragments de médias variés)
 
-   * Ils font partie du fragment (voir [&#x200B; Parties constituantes d’un fragment de contenu &#x200B;](#constituent-parts-of-a-content-fragment)).
+   * Ils font partie du fragment (voir [ Parties constituantes d’un fragment de contenu ](#constituent-parts-of-a-content-fragment)).
    * Définissent la position de la ressource.
    * Reportez-vous à la section [Insertion de ressources dans votre fragment](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) dans l’éditeur de fragments pour plus d’informations.
 
@@ -160,7 +160,7 @@ Les ressources peuvent être utilisées avec un fragment de contenu de plusieurs
 
 * **Contenu associé**
 
-   * Connecté à un fragment ; mais pas une partie fixe du fragment (voir [&#x200B; Parties constituantes d’un fragment de contenu &#x200B;](#constituent-parts-of-a-content-fragment)).
+   * Connecté à un fragment ; mais pas une partie fixe du fragment (voir [ Parties constituantes d’un fragment de contenu ](#constituent-parts-of-a-content-fragment)).
    * Dispose d’une certaine flexibilité pour le positionnement.
    * Facilement disponible pour utilisation (comme contenu intermédiaire) lors de l’utilisation du fragment sur une page.
 
@@ -352,9 +352,15 @@ Les modèles trop complexes génèrent des fragments trop complexes qui peuvent 
 
 ### Champs de texte enrichi {#rich-text-fields}
 
-Utilisez les champs de texte enrichi (le **texte multiligne** type de données) avec précaution.
+Utilisez les champs de texte enrichi (le type de données **texte multiligne**) avec précaution :
 
-Limitez le nombre de champs de texte enrichi par modèle. La quantité de texte stockée dans chaque fragment et la quantité de mise en forme HTML. Un contenu de texte enrichi très volumineux peut nuire aux performances du système.
+* Champs
+
+  Limitez le nombre de champs de texte enrichi par modèle. Pour des raisons de performances, il n’est pas recommandé d’avoir plus de dix champs de texte enrichi dans un modèle. Si nécessaire, il est recommandé d’utiliser des [fragments de contenu imbriqués](/help/assets/content-fragments/content-fragments-models.md#using-references-to-form-nested-content).
+
+* Contenu
+
+  Vous devez également limiter la quantité de texte stockée dans chaque fragment, ainsi que la quantité de mise en forme HTML. Un contenu de texte enrichi très volumineux peut nuire aux performances du système.
 
 ### Nombre de variations {#number-of-variations}
 

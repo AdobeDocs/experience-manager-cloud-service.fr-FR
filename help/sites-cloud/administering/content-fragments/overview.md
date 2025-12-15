@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 2449bc380268ed42b6c8d23ae4a4fecaf1736889
+source-git-commit: bd7b822262e0e7994fe5140f3786c1b7ab96e7a1
 workflow-type: tm+mt
-source-wordcount: '2357'
+source-wordcount: '2391'
 ht-degree: 31%
 
 ---
@@ -18,7 +18,7 @@ Avec Adobe Experience Manager (AEM) as a Cloud Service, les fragments de contenu
 
 >[!IMPORTANT]
 >
->De nombreuses fonctionnalités décrites dans cette section sont *uniquement* disponibles dans l’as a Cloud Service [&#x200B; Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) ; *en ligne* Adobe Experience Manager (AEM), et non dans une instance locale.
+>De nombreuses fonctionnalités décrites dans cette section sont *uniquement* disponibles dans l’as a Cloud Service [ Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) ; *en ligne* Adobe Experience Manager (AEM), et non dans une instance locale.
 
 >[!IMPORTANT]
 >
@@ -37,8 +37,8 @@ Avec Adobe Experience Manager (AEM) as a Cloud Service, les fragments de contenu
 
 Les fragments de contenu contiennent du contenu structuré :
 
-* Chaque fragment est basé sur un [&#x200B; modèle de fragment de contenu &#x200B;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md).
-   * Le [&#x200B; modèle de fragment de contenu définit la structure &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) fragment obtenu.
+* Chaque fragment est basé sur un [ modèle de fragment de contenu ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md).
+   * Le [ modèle de fragment de contenu définit la structure ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) fragment obtenu.
 * Chaque fragment comprend :
    * **[Principal](#main-and-variations)** - Partie intégrante du fragment qui contient le contenu principal ; existe toujours et ne peut pas être supprimé
    * **[Variations](#main-and-variations)** - une ou plusieurs permutations du contenu, créées par l’auteur ou l’autrice
@@ -181,9 +181,9 @@ Les fragments de contenu sont :
 * Stockés en tant que **ressources** :
 
    * Les fragments de contenu (et leurs variantes) peuvent être créés et conservés à partir de la [console Fragments de contenu](#content-fragments-console).
-   * Créés et modifiés dans l’[&#x200B; Éditeur de fragment de contenu &#x200B;](/help/sites-cloud/administering/content-fragments/authoring.md).
+   * Créés et modifiés dans l’[ Éditeur de fragment de contenu ](/help/sites-cloud/administering/content-fragments/authoring.md).
 
-* Accessible pour la diffusion de contenu à l’aide de l’API AEM GraphQL [&#128279;](/help/headless/graphql-api/content-fragments.md).
+* Accessible pour la diffusion de contenu à l’aide de l’API AEM GraphQL [](/help/headless/graphql-api/content-fragments.md).
 
 * Disponible dans l’[éditeur de page à l’aide du composant Fragment de contenu](/help/sites-cloud/authoring/fragments/content-fragments.md) (composant référençant) :
 
@@ -346,7 +346,7 @@ Un nombre trop élevé de modèles complique la gouvernance et peut ralentir les
 
 L’utilisation intensive des références de fragments de contenu peut avoir un impact significatif sur les performances du système, la réactivité de l’interface utilisateur et l’exécution des requêtes GraphQL. Visez à ne pas imbriquer plus de dix niveaux.
 
-### Nombre de champs de données et de types par modèle {#number-of-data-fields-and-types-per-model}
+### Nombre de champs de données et de types de données par modèle {#number-of-data-fields-and-types-per-model}
 
 Incluez uniquement les champs de données et les types dont un modèle a vraiment besoin.
 
@@ -354,9 +354,15 @@ Les modèles trop complexes génèrent des fragments trop complexes qui peuvent 
 
 ### Champs de texte enrichi {#rich-text-fields}
 
-Utilisez les champs de texte enrichi (le **texte multiligne** type de données) avec précaution.
+Utilisez les champs de texte enrichi (le type de données **texte multiligne**) avec précaution :
 
-Limitez le nombre de champs de texte enrichi par modèle. La quantité de texte stockée dans chaque fragment et la quantité de mise en forme HTML. Un contenu de texte enrichi très volumineux peut nuire aux performances du système.
+* Champs
+
+  Limitez le nombre de champs de texte enrichi par modèle. Pour des raisons de performances, il n’est pas recommandé d’avoir plus de dix champs de texte enrichi dans un modèle. Si nécessaire, il est recommandé d’utiliser des [fragments de contenu imbriqués](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#using-references-to-form-nested-content).
+
+* Contenu
+
+  Vous devez également limiter la quantité de texte stockée dans chaque fragment, ainsi que la quantité de mise en forme HTML. Un contenu de texte enrichi très volumineux peut nuire aux performances du système.
 
 ### Nombre de variations {#number-of-variations}
 
