@@ -150,7 +150,7 @@ Les ressources peuvent être utilisées avec un fragment de contenu de plusieurs
 
 * **Insérer une ressource** dans un fragment (fragments de médias variés)
 
-   * Ils font partie du fragment (voir [ Parties constituantes d’un fragment de contenu ](#constituent-parts-of-a-content-fragment)).
+   * Ils font partie du fragment (voir [&#x200B; Parties constituantes d’un fragment de contenu &#x200B;](#constituent-parts-of-a-content-fragment)).
    * Définissent la position de la ressource.
    * Reportez-vous à la section [Insertion de ressources dans votre fragment](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) dans l’éditeur de fragments pour plus d’informations.
 
@@ -160,7 +160,7 @@ Les ressources peuvent être utilisées avec un fragment de contenu de plusieurs
 
 * **Contenu associé**
 
-   * Connecté à un fragment ; mais pas une partie fixe du fragment (voir [ Parties constituantes d’un fragment de contenu ](#constituent-parts-of-a-content-fragment)).
+   * Connecté à un fragment ; mais pas une partie fixe du fragment (voir [&#x200B; Parties constituantes d’un fragment de contenu &#x200B;](#constituent-parts-of-a-content-fragment)).
    * Dispose d’une certaine flexibilité pour le positionnement.
    * Facilement disponible pour utilisation (comme contenu intermédiaire) lors de l’utilisation du fragment sur une page.
 
