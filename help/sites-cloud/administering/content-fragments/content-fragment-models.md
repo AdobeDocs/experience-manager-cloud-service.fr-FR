@@ -16,11 +16,11 @@ ht-degree: 35%
 
 Les modèles de fragment de contenu dans Adobe Experience Manager (AEM) as a Cloud Service définissent la structure du contenu de vos [fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md). Ces fragments peuvent ensuite être utilisés pour la création de pages ou comme base pour votre contenu découplé.
 
-Cette page explique comment définir votre modèle de fragment de contenu à l’aide de l’éditeur dédié. Voir [ Gestion de vos modèles de fragment de contenu ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) pour accéder à d’autres tâches et options disponibles une fois vos fragments créés, y compris [les actions disponibles à partir de la console Fragments de contenu](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#actions), [l’autorisation du modèle sur votre dossier](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder) et [la publication de votre modèle](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model).
+Cette page explique comment définir votre modèle de fragment de contenu à l’aide de l’éditeur dédié. Voir [&#x200B; Gestion de vos modèles de fragment de contenu &#x200B;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) pour accéder à d’autres tâches et options disponibles une fois vos fragments créés, y compris [les actions disponibles à partir de la console Fragments de contenu](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#actions), [l’autorisation du modèle sur votre dossier](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder) et [la publication de votre modèle](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model).
 
 >[!NOTE]
 >
->Tenez compte des [ Bonnes pratiques ](/help/sites-cloud/administering/content-fragments/overview.md#best-practices) lorsque vous utilisez vos modèles de fragment de contenu et vos fragments de contenu.
+>Tenez compte des [&#x200B; Bonnes pratiques &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md#best-practices) lorsque vous utilisez vos modèles de fragment de contenu et vos fragments de contenu.
 
 >[!CAUTION]
 >
@@ -86,7 +86,7 @@ Le modèle de fragment de contenu définit efficacement la structure des fragmen
 
    * Vous pouvez repositionner un champ en formant des points à gauche de la zone de champ :
 
-     ![ Déplacer le champ ](assets/cf-cfmodels-move-field-icon.png)
+     ![&#x200B; Déplacer le champ &#x200B;](assets/cf-cfmodels-move-field-icon.png)
 
    * Une fois qu’un champ a été ajouté au modèle (et est sélectionné), le panneau de droite affiche les **Propriétés** qui peuvent être définies pour ce type de données particulier. Vous pouvez définir ici ce qui est requis pour le spécifique
 champ .
