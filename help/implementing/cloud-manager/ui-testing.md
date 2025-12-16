@@ -274,7 +274,7 @@ Si l’image Docker est implémentée avec d’autres langages de programmation 
 | Durée recommandée | 15m | Adobe recommande de conserver les tests dans cette limite de temps. |
 
 * Si l’auteur/la publication cible est protégé par la liste autorisée IP, l’infrastructure de test de l’interface utilisateur du pipeline doit être placée sur la liste autorisée ou les tests de l’interface utilisateur peuvent échouer avec la mention 403 Interdit.
-Consultez également la section [&#x200B; Échec du test de l’interface utilisateur dans AEMaaCS en raison de la Liste autorisée d’adresses IP &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#) et [Présentation des Places sur la liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+Consultez également la section [&#x200B; Échec du test de l’interface utilisateur dans AEMaaCS en raison de la Liste autorisée d’adresses IP &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26654#) et [Présentation des Places sur la liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 >[!NOTE]
 >
