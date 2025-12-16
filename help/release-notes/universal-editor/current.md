@@ -4,7 +4,7 @@ description: Il s’agit des notes de mise à jour de la version 2025.12.11 de 
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 577bc81c35ad052a96b85ed4de13b21f06e385aa
+source-git-commit: b7b89587a81d0cadc81d4b2a486c022557c4a9fb
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 21%
@@ -28,7 +28,7 @@ Voici les notes de mise à jour de la version du 12 décembre 2025 de l’édite
 
 * La prise en charge a été ajoutée aux tableaux existants dans l’[éditeur de texte enrichi.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options).
 * La touche de tabulation a été activée pour l’imbrication de listes dans l’[éditeur de texte enrichi.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options).
-* La fonction de connexion des développeurs peut désormais être désactivée via l’[&#x200B; de balise `dev-login`meta.](/help/implementing/universal-editor/customizing.md#meta-tags)
+* La fonction de connexion des développeurs peut désormais être désactivée via l’[ de balise `aem-dev-login`meta.](/help/implementing/universal-editor/customizing.md#meta-tags)
 * Un clic droit dans la section de recouvrement affiche désormais un [menu d’options contextuelles](/help/sites-cloud/authoring/universal-editor/authoring.md#context-options).
 * La [mise en retrait de l’étendue](/help/implementing/universal-editor/configure-rte.md#indentation) est désormais prise en charge dans l’[éditeur de texte enrichi.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
 
