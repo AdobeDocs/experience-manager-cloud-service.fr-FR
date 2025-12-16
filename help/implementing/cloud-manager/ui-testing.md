@@ -5,15 +5,15 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 7d86ec9cd7cc283082da44111ad897a5aa548f58
 workflow-type: tm+mt
-source-wordcount: '2601'
-ht-degree: 56%
+source-wordcount: '2664'
+ht-degree: 53%
 
 ---
 
 
-# Tests de l’interface utilisateur {#ui-testing}
+# Test de l’interface utilisateur {#ui-testing}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
@@ -32,7 +32,7 @@ Adobe encourage l’utilisation de Cypress, car il propose un rechargement en te
 
 Les tests de l’interface utilisateur s’exécutent en tant que point de contrôle qualité à l’étape [**Tests personnalisés de l’interface utilisateur**](/help/implementing/cloud-manager/deploy-code.md), obligatoire dans les [pipelines de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) et facultatif dans les [pipelines hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Tous les tests de l’interface utilisateur, y compris les régressions et les nouvelles fonctionnalités, permettent de détecter et de signaler des erreurs.
 
-Contrairement aux tests fonctionnels personnalisés qui sont des tests HTTP écrits en Java, les tests de l’interface utilisateur peuvent être une image Docker. Les tests peuvent être écrits dans n’importe quelle langue, à condition qu’ils respectent les conventions définies dans la section [&#x200B; Création de tests d’interface utilisateur](#building-ui-tests).
+Contrairement aux tests fonctionnels personnalisés qui sont des tests HTTP écrits en Java, les tests de l’interface utilisateur peuvent être une image Docker. Les tests peuvent être écrits dans n’importe quelle langue, à condition qu’ils respectent les conventions définies dans la section [ Création de tests d’interface utilisateur](#building-ui-tests).
 
 >[!TIP]
 >
@@ -62,7 +62,7 @@ Cette section décrit les étapes requises pour configurer des tests d’interfa
 
 1. Validez votre code dans le référentiel Cloud Manager et exécutez un pipeline Cloud Manager.
 
-## Création de tests de l’interface utilisateur {#building-ui-tests}
+## Création de tests d’interface utilisateur {#building-ui-tests}
 
 Un projet Maven génère un contexte de build Docker. Ce contexte de build Docker décrit comment créer une image Docker contenant les tests de l’interface utilisateur que les utilisateurs et utilisatrices de Cloud Manager utilisent pour générer une image Docker contenant les tests de l’interface utilisateur réels.
 
@@ -72,7 +72,7 @@ Cette section décrit les étapes à suivre pour ajouter un projet de tests de l
 >
 >L’[archétype de projet AEM](https://github.com/adobe/aem-project-archetype) peut générer pour vous un projet de tests de l’interface utilisateur, conforme à la description suivante, si vous n’avez pas d’exigences spéciales pour le langage de programmation.
 
-### Générer un contexte Docker Build {#generate-docker-build-context}
+### Générer un contexte de build Docker {#generate-docker-build-context}
 
 Pour générer un contexte Docker Build, vous avez besoin d’un module Maven qui :
 
@@ -159,7 +159,7 @@ Cloud Manager récupère automatiquement l’archive de contexte de création Do
 
 Le build doit produire zéro ou une archive. S’il ne produit aucune archive, l’étape de test est effectuée par défaut. Si le build produit plusieurs archives, celle qui est sélectionnée est non déterministe.
 
-### Accord préalable client {#customer-opt-in}
+### Souscription client {#customer-opt-in}
 
 Pour que Cloud Manager puisse créer et exécuter vos tests d’interface utilisateur, vous devez souscrire à cette fonctionnalité en ajoutant un fichier à votre référentiel.
 
@@ -182,11 +182,11 @@ Pour inclure un fichier `testing.properties` dans l’artefact de build, ajoutez
 [...]
 ```
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Si votre projet n’inclut pas cette ligne, modifiez le fichier pour souscrire au test de l’interface utilisateur.
 >
->Il se peut que ce fichier contienne une ligne vous conseillant de ne pas le modifier. En effet, il est introduit dans votre projet avant la souscription au test de l’interface utilisateur et les clients n’étaient pas destinés à modifier le fichier. Vous pouvez ignorer ce conseil en toute sécurité.
+>Le fichier peut contenir une ligne indiquant *NE PAS MODIFIER*. Il s’agit simplement d’un avertissement hérité de modèles/exemples plus anciens qui ne vous empêche *pas* d’effectuer les modifications de souscription requises pour les tests de l’interface utilisateur de Cloud Manager. Vous pouvez ignorer ce conseil en toute sécurité. En d’autres termes, vous pouvez modifier des `assembly-ui-test-docker-context.xml` et des `pom.xml` dans *votre projet* lorsque vous suivez les étapes d’accord préalable (par exemple, pour inclure des `testing.properties`).
 
 Si vous utilisez les exemples fournis par Adobe :
 
@@ -270,8 +270,11 @@ Si l’image Docker est implémentée avec d’autres langages de programmation 
 |----------------------|-------|-----------------------------------------------------------------------|
 | Processeur | 2.0 | Quantité de temps réservé CPU par exécution de test. |
 | Mémoire | 1Gi | Quantité de mémoire allouée au test. La valeur est exprimée en gibioctets. |
-| Expiration | 30m | Durée d’exécution du test. |
+| Délai d’expiration | 30m | Durée d’exécution du test. |
 | Durée recommandée | 15m | Adobe recommande de conserver les tests dans cette limite de temps. |
+
+* Si l’auteur/la publication cible est protégé par la liste autorisée IP, l’infrastructure de test de l’interface utilisateur du pipeline doit être placée sur la liste autorisée ou les tests de l’interface utilisateur peuvent échouer avec la mention 403 Interdit.
+Consultez également la section [ Échec du test de l’interface utilisateur dans AEMaaCS en raison de la Liste autorisée d’adresses IP ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#) et [Présentation des Places sur la liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 >[!NOTE]
 >
@@ -283,7 +286,7 @@ Si l’image Docker est implémentée avec d’autres langages de programmation 
 >
 >Cette section s’applique uniquement lorsque Selenium est l’infrastructure de test choisie.
 
-### Attendre la préparation de Selenium {#waiting-for-selenium}
+### Attendre que Selenium soit prêt {#waiting-for-selenium}
 
 Avant le début des tests, l’image Docker doit garantir que le serveur Selenium est opérationnel. L’attente du service de Selenium est un processus en deux étapes.
 
@@ -307,7 +310,7 @@ Vous pouvez utiliser les fonctions d’assistance pour créer des captures d’�
 * JavaScript: [takeScreenshot command](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
 * Java: [Commands](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java) -->
 
-Si une archive de résultats de test est créée lors de l’exécution d’un test de l’interface utilisateur, vous pouvez la télécharger depuis Cloud Manager en cliquant sur le bouton `Download Details` sous l’étape [**Test personnalisé de l’interface utilisateur** &#x200B;](/help/implementing/cloud-manager/deploy-code.md).
+Si une archive de résultats de test est créée lors de l’exécution d’un test de l’interface utilisateur, vous pouvez la télécharger depuis Cloud Manager en cliquant sur le bouton `Download Details` sous l’étape [**Test personnalisé de l’interface utilisateur** ](/help/implementing/cloud-manager/deploy-code.md).
 
 ### Charger des fichiers {#upload-files}
 
@@ -444,7 +447,7 @@ if (proxyServer !== '') {
 
 Avant d’activer les tests de l’interface utilisateur dans un pipeline Cloud Manager, Adobe vous recommande d’exécuter localement les tests de l’interface utilisateur sur le [SDK AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md). Vous pouvez également l’exécuter sur une instance AEM as a Cloud Service réelle.
 
-### Exemple de test Cypress {#cypress-sample}
+### échantillon de test Cypress {#cypress-sample}
 
 1. Ouvrez une interface shell et accédez au dossier `ui.tests/test-module` dans votre référentiel
 
