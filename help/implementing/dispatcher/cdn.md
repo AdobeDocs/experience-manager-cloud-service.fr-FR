@@ -4,10 +4,10 @@ description: Découvrez comment utiliser le réseau CDN géré par AEM et commen
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 7f00e68eac0b1e0090bdb57a8188af7bbe21ad1b
+source-git-commit: 29aded35239bb8c9a5cf71f9b9dd036c4c32f026
 workflow-type: tm+mt
-source-wordcount: '1768'
-ht-degree: 35%
+source-wordcount: '1772'
+ht-degree: 34%
 
 ---
 
@@ -132,7 +132,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 Le passage du réseau CDN client au réseau CDN géré par AEM n’est nécessaire que dans le cas d’une interruption du cache. En utilisant les stratégies d’optimisation du cache décrites dans cet article, l’ajout d’un réseau CDN client ne doit introduire qu’une latence négligeable.
 
-Cette configuration de réseau CDN client est prise en charge pour le niveau de publication, mais pas au niveau de la création.
+Cette configuration de réseau CDN client est prise en charge pour le niveau de publication et le niveau d’aperçu, mais pas au niveau de la création.
 
 ### Configuration du débogage
 
@@ -163,7 +163,7 @@ Ce processus permet de vérifier des détails tels que les valeurs de l’hôte,
 >Vous pouvez utiliser un environnement de développement rapide (RDE) pour déployer et tester votre configuration :
 >
 >* [Environnements de développement rapide](/help/implementing/developing/introduction/rapid-development-environments.md)
->* [Utilisation d’un environnement de développement rapide](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+>* [Utilisation d’un environnement de développement rapide](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### Exemples de configurations de fournisseur de réseau CDN {#sample-configurations}
 
