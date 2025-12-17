@@ -67,6 +67,7 @@ Pour vous inscrire à ce programme, envoyez un e-mail à l’adresse [aemagentst
     * Noms et Adobe ID des membres de l’équipe qui utiliseront activement des agents.
     * Répertoriez les agents spécifiques que vous ou votre équipe souhaitez utiliser. Ou simplement dire « Tous les agents »
 .
+
 ### AEM Foundation (programmes Beta)
 
     Voir [Programmes bêta AEM Foundation](#foundation-early-adopter).
