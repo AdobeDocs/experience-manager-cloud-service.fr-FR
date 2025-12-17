@@ -5,9 +5,9 @@ role: User, Leader, Admin, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
+source-git-commit: 67f9ec20667639458d8a6b142df3fc76ff574f26
 workflow-type: tm+mt
-source-wordcount: '2235'
+source-wordcount: '2236'
 ht-degree: 86%
 
 ---
@@ -118,7 +118,7 @@ Pour réutiliser un formulaire existant afin d’en créer un nouveau, sélectio
 
 >[!IMPORTANT]
 >
->Le formulaire de métadonnées par défaut comporte également un onglet **[!UICONTROL Campagne]**, qui comprend **[!UICONTROL Nom de la campagne]**, **[!UICONTROL Canaux]** et **[!UICONTROL Région]** des champs à plusieurs valeurs en lecture seule. est une fonctionnalité à disponibilité limitée. Vous pouvez l’activer en créant un ticket d’assistance.
+>Le formulaire de métadonnées par défaut comporte également un onglet **[!UICONTROL Campagne]**, qui comprend **[!UICONTROL Nom de la campagne]**, **[!UICONTROL Canaux]** et **[!UICONTROL Région]** des champs à plusieurs valeurs en lecture seule. Il s’agit d’une fonctionnalité à disponibilité limitée. Vous pouvez l’activer en créant un ticket d’assistance.
 
 ### Composants de propriété {#property-components}
 
@@ -237,7 +237,7 @@ Pour modifier un formulaire de métadonnées, procédez comme suit :
 
 * Faites des commentaires sur la documentation en utilisant l’option [!UICONTROL Modifier cette page] ![modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![créer un problème GitHub](assets/do-not-localize/github-issue.png) disponible dans la barre latérale droite.
 
-* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr#support).
+* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&lang=fr#support).
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
