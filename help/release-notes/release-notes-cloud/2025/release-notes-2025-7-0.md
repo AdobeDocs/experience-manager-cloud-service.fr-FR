@@ -3,10 +3,11 @@ title: Notes de mise à jour de la version 2025.7.0 d’ [!DNL Adobe Experience
 description: Notes de mise à jour de la version 2025.7.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 7787a195cc9ae39f8ac759da03c88a9f1e61226d
+exl-id: b1d25db0-d4a8-4663-b7fe-2d7381e12567
+source-git-commit: 76ccdf13f56d7020ef266bc54bebbcc6eff1067d
 workflow-type: tm+mt
-source-wordcount: '2276'
-ht-degree: 98%
+source-wordcount: '2273'
+ht-degree: 96%
 
 ---
 
@@ -38,7 +39,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -177,9 +178,9 @@ L’outil d’intégration d’API permet aux créateurs et créatrices de formu
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Mode Nœud pour la gestion des autorisations {#node-view}
+### Vue Nœud pour la gestion des autorisations {#node-view}
 
-AEM introduit la gestion des autorisations pour Node View. La fonctionnalité principale reste la même que celle de l’interface utilisateur classique, mais elle est plus conviviale et plus efficace. Voir l’article [&#x200B; dédié](/help/security/touch-ui-principal-view.md) pour plus d’informations.
+AEM assure désormais la gestion des autorisations pour la vue Nœud. La fonctionnalité principale reste la même que celle de l’UI classique, mais celle-ci est plus efficace et conviviale. Pour plus d’informations, consultez l’[article dédié](/help/security/touch-ui-principal-view.md).
 
 ### Processus d’obsolescence mis à jour {#updated-deprecation-process}
 
@@ -222,7 +223,7 @@ Propriétés OSGi :
 
 ### Obsolescence de l’exécution Java 11 {#java11-runtime-deprecation}
 
-L’*exécution Java 11 **&#x200B; est désormais obsolète et la plupart des environnements ont déjà été mis à niveau vers l’**&#x200B;exécution Java 21** plus performante.
+L’*exécution Java 11** est désormais obsolète et la plupart des environnements ont déjà été mis à niveau vers l’**exécution Java 21** plus performante.
 
 Si votre environnement n’a pas pu être mis à niveau en raison de dépendances non prises en charge (voir les [Exigences d’exécution Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), vous avez dû recevoir un e-mail d’Adobe contenant les étapes spécifiques à réaliser. Veillez à ce que toutes les mises à jour requises soient terminées d’ici le **28 août 2025**, afin que votre environnement puisse être mis à niveau sans interruption.
 
@@ -239,20 +240,22 @@ Passez en revue et mettez à jour tous les processus en aval qui reposent sur un
 * Si votre système de transfert de journal attend un format de journal personnalisé, vous devrez peut-être adapter vos règles d’ingestion.
 * Si vous avez précédemment réduit le niveau de détail du journal en modifiant les niveaux de journal, sachez que le retour aux niveaux par défaut peut augmenter le volume du journal.
 
-### Purge par défaut des anciennes versions et des journaux d’audit {#mt-defaults}
+### Purge par défaut des versions et journaux d’audit plus anciens {#mt-defaults}
 
-Actuellement, les tâches de maintenance de purge* des versions de contenu et des journaux d’audit sont désactivées par défaut. Par conséquent, les données ne sont supprimées que si elles sont configurées explicitement.
+Actuellement, les *tâches de maintenance de purge* des versions de contenu et des journaux d’audit sont désactivées par défaut. Par conséquent, les données ne sont supprimées que si cela est configuré explicitement.
 
-Toutefois, pour optimiser les performances du référentiel, la purge sera activée par défaut à une date annoncée ultérieurement, conformément à ces instructions :
+Toutefois, pour optimiser les performances du référentiel, la purge sera activée par défaut à une date annoncée ultérieure.
+
+Pour plus d’informations, voir l’[article Tâches de maintenance](/help/operations/maintenance.md#defaults).
 
 #### Versions du contenu {#mt-content}
 
-* *Nouveaux environnements** (créés après une date à venir, qui sera communiquée ultérieurement)
-   * Les versions de plus de *30 jours** seront régulièrement supprimées.
-   * Les cinq versions les plus récentes des 30 derniers jours sont conservées, tout comme la version la plus récente et la version actuelle, quelle que soit leur ancienneté.
+* **Nouveaux environnements** (créés après une date à venir, à communiquer ultérieurement) :
+   * Les versions de plus de 30 jours seront régulièrement supprimées.
+   * Les cinq versions les plus récentes des 30 derniers jours sont conservées, tout comme la version la plus récente et la version actuelle, quel que soit leur ancienneté.
 
-* *Environnements existants** (créés avant cette date à venir) :
-   * Les versions antérieures à *7 ans** seront régulièrement supprimées.
+* **Environnements existants** (créés avant cette date à venir) :
+   * Les versions de plus de 7 ans seront régulièrement supprimées.
    * Toutes les versions des 7 dernières années sont conservées.
    * Ce seuil élevé par défaut empêche la suppression involontaire de données récentes. Cependant, il est recommandé de configurer des valeurs plus faibles pour optimiser les performances du référentiel.
 
@@ -260,18 +263,16 @@ Toutefois, pour optimiser les performances du référentiel, la purge sera activ
 
 #### Journal d’audit {#mt-auditlogs}
 
-* *Nouveaux environnements** (créés après une date à venir, qui sera communiquée séparément) :
-   * Les journaux d’audit de réplication, de gestion des ressources numériques et de page datant de plus de *7 jours** seront régulièrement supprimés.
+* **Nouveaux environnements** (créés après une date à venir, qui sera communiquée séparément) :
+   * Les journaux d’audit de réplication, de gestion des ressources numériques et de page datant de plus de 7 jours seront régulièrement supprimés.
    * Tous les événements sont consignés par défaut.
 
-* *Environnements existants** (créés avant cette date à venir) :
-   * Les journaux d’audit de réplication, de gestion des ressources numériques et de page datant de plus de *7 ans** seront régulièrement supprimés.
+* **Environnements existants** (créés avant cette date à venir) :
+   * Les journaux d’audit de réplication, de gestion des ressources numériques et de pages de plus de 7 ans seront régulièrement supprimés.
    * Tous les événements sont consignés par défaut.
    * Ce seuil élevé par défaut empêche la suppression involontaire de données récentes. Cependant, il est recommandé de configurer des valeurs plus faibles pour optimiser les performances du référentiel.
 
 * Vous pouvez modifier ces valeurs par défaut via la configuration YAML, déployée à l’aide du pipeline de configuration.
-
-Pour plus d’informations, voir l’[article Tâches de maintenance](/help/operations/maintenance.md#defaults).
 
 ### Informatique de périphérie (programme Alpha) {#edge-computing}
 
