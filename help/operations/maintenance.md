@@ -4,10 +4,10 @@ description: Découvrez les tâches de maintenance dans AEM as a Cloud Service e
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 5de6ff7e6ac777c90b41bfeb9a56b909c83ed7d3
+source-git-commit: d5addc40eb48000c515b670ef5f7c7a7e8b79928
 workflow-type: tm+mt
-source-wordcount: '2054'
-ht-degree: 39%
+source-wordcount: '2057'
+ht-degree: 38%
 
 ---
 
@@ -49,14 +49,14 @@ Le tableau suivant illustre les tâches de maintenance disponibles.
   <tr>
     <td>Purge de version</td>
     <td>Client</td>
-    <td>La purge de version est actuellement désactivée par défaut, mais la politique peut être configurée, comme décrit dans la section <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks"> Tâches de maintenance de purge de version et de journal d’audit </a>.<br/><br/>La purge sera bientôt activée par défaut et ces valeurs pourront être remplacées.<br>
+    <td>La purge de version est actuellement désactivée par défaut, mais la politique peut être configurée, comme décrit dans la section <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks"> Tâches de maintenance de purge de version et de journal d’audit </a>.<br/><br/>La purge sera bientôt activée par défaut et ces valeurs pourront être remplacées.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>Purge du journal d’audit</td>
     <td>Client</td>
-    <td>La purge du journal d’audit est actuellement désactivée par défaut, mais la politique peut être configurée, comme décrit dans la section <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tâches de maintenance de purge de version et de purge du journal d’audit</a>.<br/><br/>La purge sera bientôt activée par défaut et ces valeurs pourront être remplacées.<br>
+    <td>La purge du journal d’audit est actuellement désactivée par défaut, mais la politique peut être configurée, comme décrit dans la section <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tâches de maintenance de purge de version et de purge du journal d’audit</a>.<br/><br/>La purge sera bientôt activée par défaut et ces valeurs pourront être remplacées.<br>
    </td>
    </td>
   </tr>
@@ -70,7 +70,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles.
     <td>Purge des tâches ad hoc</td>
     <td>Client</td>
     <td>
-    <p>Doit s’effectuer dans git. Remplacez le nœud de configuration de fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> ou <code>granite_monthly</code>.</p>
+    <p>Doit s’effectuer dans git. Remplacez le nœud de configuration de fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/conf/global/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> ou <code>granite_monthly</code>.</p>
     <p>Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration. Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus. Nommez-le <code>granite_TaskPurgeTask</code>, avec l’attribut <code>sling:resourceType</code> défini sur <code>granite/operations/components/maintenance/task</code> et l’attribut <code>granite.maintenance.name</code> défini sur <code>TaskPurge</code>. Configurez les propriétés OSGI. Voir <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> pour la liste des propriétés.</p>
   </td>
   </tr>
@@ -78,7 +78,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles.
     <td>Purge du workflow</td>
     <td>Client</td>
     <td>
-    <p>Doit s’effectuer dans git. Remplacez le nœud de configuration de fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> ou <code>granite_monthly</code>. Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration.</p>
+    <p>Doit s’effectuer dans git. Remplacez le nœud de configuration de fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/conf/global/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> ou <code>granite_monthly</code>. Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration.</p>
     <p>Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus (nommez-le <code>granite_WorkflowPurgeTask</code>) avec les propriétés adéquates. Configurez les propriétés OSGI. Voir <a href="/help/sites-cloud/administering/workflows-administering.md#regular-purging-of-workflow-instances">Purge régulière des instances de processus</a>.</p>
   </td>
   </tr>
@@ -86,8 +86,8 @@ Le tableau suivant illustre les tâches de maintenance disponibles.
     <td>Purge du projet</td>
     <td>Client</td>
     <td>
-    <p>Doit s’effectuer dans git. Remplacez le nœud de configuration de fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> ou <code>granite_monthly</code>. Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration.</p>
-    <p>Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus (nommez-le <code>granite_ProjectPurgeTask</code>) avec les propriétés adéquates. Consultez la liste des <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">propriétés OSGi</a> pour la configuration de purge des projets Adobe <b></b> .</p>
+    <p>Doit s’effectuer dans git. Remplacez le nœud de configuration de fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/conf/global/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> ou <code>granite_monthly</code>. Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration.</p>
+    <p>Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus (nommez-le <code>granite_ProjectPurgeTask</code>) avec les propriétés adéquates. Consultez la liste des <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">propriétés OSGi</a> pour la configuration de purge des projets Adobe <b></b> .</p>
   </td>
   </tr>
   </tbody>
@@ -146,9 +146,9 @@ Le tableau suivant illustre les configurations de fenêtre de maintenance dispon
 
 ### Emplacements {#locations}
 
-* Quotidien – /apps/settings/granite/operations/maintenance/granite_daily
-* Hebdomadaire – /apps/settings/granite/operations/maintenance/granite_weekly
-* Mensuel – /apps/settings/granite/operations/maintenance/granite_monthly
+* Quotidien - /conf/global/settings/granite/operations/maintenance/granite_daily
+* Hebdomadaire - /conf/global/settings/granite/operations/maintenance/granite_weekly
+* Mensuel - /conf/global/settings/granite/operations/maintenance/granite_monthly
 
 ### Exemples de code {#code-samples}
 
