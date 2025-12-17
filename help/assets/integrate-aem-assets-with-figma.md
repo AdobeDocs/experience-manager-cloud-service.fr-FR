@@ -34,7 +34,7 @@ Exécutez les étapes suivantes pour accéder au connecteur Assets [!UICONTROL A
 
 1. Sur votre page d’accueil [!DNL Figma], cliquez sur **[!UICONTROL Actions]** dans la barre d’outils située au bas de la zone de travail et recherchez [!DNL Adobe Experience Manager (AEM) Assets Connector] dans la barre de recherche disponible dans la boîte de dialogue.
 1. Sélectionnez [!DNL Adobe Experience Manager (AEM) Assets Connector] pour afficher le panneau [!DNL Adobe Experience Manager (AEM) Assets Connector]. [Importez  [!DNL AEM]  ressources dans la zone  [!DNL Figma]  travail](#import-aem-assets-into-figma-workflow) à l’aide de ce panneau.
-   ![actions ](/help/assets/assets/actions-on-figma.png)
+   ![actions &#x200B;](/help/assets/assets/actions-on-figma.png)
 Vous pouvez également accéder aux [[!DNL Adobe Experience Manager (AEM) Assets Connector]](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector) disponibles sur [!DNL Figma] communauté, cliquer sur **[!UICONTROL Ouvrir dans...]**, sélectionner un fichier récent ou créer un fichier et cliquer sur **[!UICONTROL Exécuter]** pour accéder au panneau [!DNL Adobe Experience Manager (AEM) Assets Connector].
    ![plugin-page-on-figma-community](/help/assets/assets/plugin-page-on-figma-community.png)
 
@@ -44,9 +44,9 @@ Vous pouvez également accéder aux [[!DNL Adobe Experience Manager (AEM) Assets
 
 ## Importation de ressources [!DNL AEM] dans [!DNL Figma] zone de travail{#import-aem-assets-into-figma-workflow}
 
-[Accédez au panneau Connecteur Assets [!UICONTROL Adobe Experience Manager (AEM)] ](#access-aem-assets-connector) dans l’interface de conception de [!DNL Figma] et procédez comme suit :
+[Accédez au panneau Connecteur Assets [!UICONTROL Adobe Experience Manager (AEM)] &#x200B;](#access-aem-assets-connector) dans l’interface de conception de [!DNL Figma] et procédez comme suit :
 
-1. Recherchez des ressources dans le panneau Connecteur Assets [!UICONTROL Adobe Experience Manager (AEM)]. Pour plus d’informations, voir [ Utilisation du sélecteur de ressources ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
+1. Recherchez des ressources dans le panneau Connecteur Assets [!UICONTROL Adobe Experience Manager (AEM)]. Pour plus d’informations, voir [&#x200B; Utilisation du sélecteur de ressources &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
 
 1. Faites glisser et déposez la ressource sur la zone de travail ou sélectionnez la ressource et cliquez sur **[!UICONTROL Sélectionner]** pour apporter la ressource sur la zone de travail.
 
@@ -59,7 +59,7 @@ Une fois votre conception Figma prête, vous pouvez [exporter la ressource vers 
 
 ## Exporter des ressources vers [!DNL AEM Assets] référentiel{#export-figma-design-to-aem-assets-folder}
 
-[Accédez au panneau Connecteur Assets [!UICONTROL Adobe Experience Manager (AEM)] ](#access-aem-assets-connector) dans l’interface de conception [!DNL Figma] et suivez les étapes ci-après pour exporter votre conception vers le référentiel [!DNL AEM Assets] :
+[Accédez au panneau Connecteur Assets [!UICONTROL Adobe Experience Manager (AEM)] &#x200B;](#access-aem-assets-connector) dans l’interface de conception [!DNL Figma] et suivez les étapes ci-après pour exporter votre conception vers le référentiel [!DNL AEM Assets] :
 
 1. Accédez au dossier de destination dans lequel vous souhaitez enregistrer votre conception de [!DNL Figma]. Si vous vous trouvez déjà dans un dossier, cliquez sur Autres options (![points de suspension](/help/assets/assets/three-dots.svg)) dans le chemin du dossier pour sélectionner un autre dossier de destination.
 1. Facultatif : regroupez les ressources sur la zone de travail pour les sélectionner en tant qu’unité unique à charger dans votre dossier.
