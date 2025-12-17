@@ -1,7 +1,7 @@
 ---
 title: Améliorez la découverte de contenu avec les métadonnées générées par l’IA
 description: Découvrez comment améliorer la découverte de contenu avec les métadonnées générées par l’IA
-source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 4%
@@ -43,4 +43,4 @@ Pour utiliser la fonctionnalité de balises intelligentes améliorée, procédez
 
 1. [Facultatif] Vous pouvez ajouter des balises supplémentaires ou créer les vôtres si vous pensez qu’il manque des balises pertinentes. Pour ce faire, écrivez vos balises dans le champ **[!UICONTROL Mots-clés générés]** et cliquez sur **[!UICONTROL Enregistrer]**.
 
-Pour plus d’informations sur la désactivation des métadonnées générées par l’IA, voir [Désactiver les métadonnées générées par l’IA](/help/assets/smart-tags.md#disable-ai-generated-metadata).
+Pour plus d’informations sur la désactivation des métadonnées générées par l’IA, voir [Désactiver les métadonnées générées par l’IA](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md#disable-ai-generated-metadata).

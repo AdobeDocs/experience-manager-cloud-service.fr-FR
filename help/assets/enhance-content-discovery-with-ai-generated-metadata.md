@@ -3,9 +3,9 @@ title: Améliorez la découverte de contenu avec les métadonnées générées p
 description: Découvrez comment améliorer la découverte de contenu avec les métadonnées générées par l’IA dans la vue Administration
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '669'
 ht-degree: 10%
 
 ---
@@ -69,7 +69,9 @@ Pour utiliser la fonctionnalité de balises intelligentes améliorée, procédez
 
 ## Désactiver les métadonnées générées par l’IA {#disable-ai-generated-metadata}
 
-Pour désactiver les métadonnées générées par l’IA :
+Vous pouvez désactiver les métadonnées générées par l’IA pour votre environnement AEM as a Cloud Service ou les désactiver au niveau du dossier.
+
+Pour désactiver les métadonnées générées par l’IA pour l’environnement AEM as a Cloud Service :
 
 1. Accédez à **[!UICONTROL Outils > Assets > Configurations d’Assets > Configuration de l’amélioration des balises intelligentes]**.
 
@@ -78,3 +80,15 @@ Pour désactiver les métadonnées générées par l’IA :
 1. Cliquez sur **[!UICONTROL Enregistrer]** .
 
 Les métadonnées générées par l’IA sont désactivées pour les nouvelles ressources ou les nouveaux dossiers que vous chargez vers AEM Assets. Les ressources ou dossiers existants pour lesquels des champs de métadonnées générés par l’IA sont déjà générés continuent d’afficher ces champs.
+
+### Désactiver les métadonnées générées par l’IA pour les dossiers {#disable-ai-generated-metadata-folder-level}
+
+Pour désactiver les métadonnées générées par l’IA au niveau du dossier :
+
+1. Sélectionnez le dossier et cliquez sur **[!UICONTROL Propriétés]**.
+
+1. Sélectionnez l’onglet **[!UICONTROL Traitement des ressources]**.
+
+1. Dans la section **[!UICONTROL Améliorations apportées aux balises intelligentes pour les images]**, sélectionnez **[!UICONTROL Désactiver]** dans le menu déroulant.
+
+1. Cliquez sur **[!UICONTROL Enregistrer et fermer]** pour désactiver les métadonnées générées par l’IA pour le dossier sélectionné.
