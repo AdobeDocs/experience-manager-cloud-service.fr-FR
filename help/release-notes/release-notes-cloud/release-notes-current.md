@@ -1,18 +1,18 @@
 ---
-title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 6d86413449dbde8566f0f653071a2f29ab9c13ab
+source-git-commit: bdc4b266e2d5725674d00a24fbb1d2cbaac4a53f
 workflow-type: tm+mt
-source-wordcount: '1459'
-ht-degree: 64%
+source-wordcount: '1704'
+ht-degree: 54%
 
 ---
 
-# Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour actuelles d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La section suivante concerne les notes de mise à jour techniques de la version actuelle (la plus récente) d’[!DNL Experience Manager] as a Cloud Service.
 
@@ -30,7 +30,7 @@ La section suivante concerne les notes de mise à jour techniques de la version 
 
 La date de publication de la version actuelle (2025.12.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le vendredi 11 décembre 2025. La prochaine version des fonctionnalités (2026.1.0) est prévue pour le vendredi 29 janvier 2026.
 
-## Notes de mise à jour de la maintenance {#maintenance}
+## Notes de mise à jour de maintenance {#maintenance}
 
 Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/release-notes/maintenance/latest.md).
 
@@ -40,13 +40,41 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
-## Agents dans AEM {#agents-in-aem}
+## Programmes AEM en version bêta {#aem-beta-programs}
 
-AEM propose toute une gamme d’agents qui vous permettent d’accélérer la création de votre contenu et d’orchestrer automatiquement les modifications. Pour plus d’informations, voir [Présentation des agents dans AEM](/help/ai-in-aem/agents/overview.md).
+Les programmes bêta Adobe Experience Manager (AEM) permettent aux clients d’accéder aux fonctionnalités et au code de version préliminaire, de faire part de leurs commentaires et de guider l’avenir d’AEM.
+
+>[!IMPORTANT]
+>
+>Les versions de Beta peuvent contenir des défauts et sont fournies « EN L’ÉTAT » sans garantie d’aucune sorte. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, remplacer ou prendre en charge (par le biais des services d’assistance Adobe ou d’une autre manière) les versions bêta. Adobe conseille aux clients d’être prudent et de ne pas se fier au bon fonctionnement ou aux performances des versions bêta, ni à la documentation ou aux documents d’accompagnement. Les fonctionnalités et API de la version bêta peuvent être modifiées sans préavis. Par conséquent, toute utilisation des versions bêta s’effectue entièrement aux risques et périls du client.
+
+**Avantages de la participation**
+L’accès anticipé aux fonctionnalités développées par Adobe permet aux clients et aux partenaires de faire part de leurs commentaires et de façonner le développement des produits. Cela les aide également à se préparer à adopter de nouvelles fonctionnalités avant leur disponibilité générale.
+
+**Programmes bêta actuels**
+Les sections suivantes répertorient les programmes bêta actifs.
+
+### Agents dans AEM (programme Beta)
+
+Bénéficiez d’un accès anticipé aux nouvelles et puissantes fonctionnalités d’AEM en matière de production, de gouvernance, d’optimisation, de découverte et de développement. Vos commentaires façonnent directement la feuille de route et les fonctionnalités finales d’Adobe. Voir [Présentation des agents dans AEM](/help/ai-in-aem/agents/overview.md) pour en savoir plus.
+
+Pour vous inscrire à ce programme, envoyez un e-mail à l’adresse [aemagentsteam@adobe.com](mailto:aemagentsteam@adobe.com) et incluez les détails suivants dans la mesure du possible :
+
+    * Noms et Adobe ID des membres de l’équipe qui utiliseront activement des agents.
+    * Répertoriez les agents spécifiques que vous ou votre équipe souhaitez utiliser. Ou simplement dire « Tous les agents »
+.
+### AEM Foundation (programmes Beta)
+
+    Voir [Programmes bêta AEM Foundation](#foundation-early-adopter).
+
+### Cloud Manager (programmes Beta)
+
+    Voir [Programmes bêta Cloud Manager](/help/implementing/cloud-manager/release-notes/current.md).
+
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
