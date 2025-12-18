@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 50c3f49a6a629301076edac3c2462e1f220055dd
+source-git-commit: d1b3753261bd103fff5267a95db90a88f6749e59
 workflow-type: tm+mt
-source-wordcount: '1698'
-ht-degree: 54%
+source-wordcount: '1718'
+ht-degree: 53%
 
 ---
 
@@ -40,7 +40,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -61,6 +61,8 @@ Les sections suivantes répertorient les programmes bêta actifs.
 ### Agents dans AEM (programme Beta) {#agents-in-aem-beta-program}
 
 Bénéficiez d’un accès anticipé aux nouvelles et puissantes fonctionnalités d’AEM en matière de production, de gouvernance, d’optimisation, de découverte et de développement. Vos commentaires façonnent directement la feuille de route et les fonctionnalités finales d’Adobe. Voir [Présentation des agents dans AEM](/help/ai-in-aem/agents/overview.md) pour en savoir plus.
+
+Ce programme dure généralement 4 à 6 semaines, mais peut être adapté pour être flexible quant à votre capacité à participer activement.
 
 Pour vous inscrire à ce programme, envoyez un e-mail à l’adresse [aemagentsteam@adobe.com](mailto:aemagentsteam@adobe.com) et incluez les détails suivants dans la mesure du possible :
 
