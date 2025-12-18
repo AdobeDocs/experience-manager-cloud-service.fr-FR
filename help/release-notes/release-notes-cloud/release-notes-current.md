@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 582faf38a341ecfe9f4e7d338a451e314924abb3
+source-git-commit: 50c3f49a6a629301076edac3c2462e1f220055dd
 workflow-type: tm+mt
 source-wordcount: '1698'
 ht-degree: 54%
@@ -40,7 +40,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -58,7 +58,7 @@ L’accès anticipé aux fonctionnalités développées par Adobe permet aux cli
 **Programmes bêta actuels**
 Les sections suivantes répertorient les programmes bêta actifs.
 
-### Agents dans AEM (programme Beta)
+### Agents dans AEM (programme Beta) {#agents-in-aem-beta-program}
 
 Bénéficiez d’un accès anticipé aux nouvelles et puissantes fonctionnalités d’AEM en matière de production, de gouvernance, d’optimisation, de découverte et de développement. Vos commentaires façonnent directement la feuille de route et les fonctionnalités finales d’Adobe. Voir [Présentation des agents dans AEM](/help/ai-in-aem/agents/overview.md) pour en savoir plus.
 
@@ -67,11 +67,11 @@ Pour vous inscrire à ce programme, envoyez un e-mail à l’adresse [aemagentst
 * Noms et Adobe ID des membres de l’équipe qui utiliseront activement des agents.
 * Liste des agents spécifiques que vous ou votre équipe souhaitez utiliser. Ou simplement dire « Tous les agents ».
 
-### AEM Foundation (programmes Beta)
+### AEM Foundation (programmes Beta) {#aem-foundation-beta-programs}
 
 Voir [Programmes bêta AEM Foundation](#foundation-early-adopter).
 
-### Cloud Manager (programmes Beta)
+### Cloud Manager (programmes Beta) {#cloud-manager-beta-programs}
 
 Voir [Programmes bêta Cloud Manager](/help/implementing/cloud-manager/release-notes/current.md).
 
@@ -206,7 +206,7 @@ Journées de mise en production, événements en direct, pic de ventes : pas d�
 >Envoyez un e-mail à [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) pour l’activer dans vos programmes.
 >
 
-#### Informatique de périphérie (programme Beta) {#edge-computing}
+#### Informatique de périphérie (programme Beta)
 
 L’informatique de périphérie permet d’exécuter JavaScript sur la couche de réseau CDN, ce qui rapproche le traitement des données de l’utilisateur final ou l’utilisatrice finale. Cela réduit la latence et permet d’obtenir des expériences réactives et dynamiques en périphérie.
 
