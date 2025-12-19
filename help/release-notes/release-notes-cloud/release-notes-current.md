@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: d1b3753261bd103fff5267a95db90a88f6749e59
+source-git-commit: ed358f58ba0dd4d5a9b283291702f867774515e4
 workflow-type: tm+mt
-source-wordcount: '1718'
-ht-degree: 53%
+source-wordcount: '1857'
+ht-degree: 49%
 
 ---
 
@@ -40,7 +40,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -76,6 +76,24 @@ Voir [Programmes bêta AEM Foundation](#foundation-early-adopter).
 ### Cloud Manager (programmes Beta) {#cloud-manager-beta-programs}
 
 Voir [Programmes bêta Cloud Manager](/help/implementing/cloud-manager/release-notes/current.md).
+
+
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+
+**Nouvelle version du plug-in Figma pour l’intégration à AEM Assets disponible**
+
+* Prise en charge des fichiers vidéo (MP4, MOV, WebM), des fichiers animés (GIF) et des fichiers vectoriels (SVG) lors de l’importation de ressources du référentiel AEM vers le document Figma.
+
+* Prise en charge de la vérification de l’existence de mises à jour des ressources utilisées dans le document Figma par rapport aux ressources existant dans le référentiel AEM et de l’obtention de la dernière version des ressources en cas de mises à jour.
+
+* Prise en charge des configurations d’exportation lors de l’exportation de formats de fichiers PNG (échelle) et JPG (échelle d’image et qualité).
+
+  ![Plug-in Figma](/help/assets/assets/figma-v2-plugin.png)
+
+**Détection des programmes malveillants pour les ressources chargées**
+
+AEM Assets inclut désormais l’analyse automatique des programmes malveillants des fichiers chargés, garantissant que les ressources suspectes sont mises en quarantaine avant d’accéder à la gestion des ressources numériques (DAM) pour protéger votre référentiel des menaces. Les administrateurs peuvent configurer les paramètres d’analyse et les stratégies de rétention des quarantaines pour des contrôles de sécurité rationalisés.
+
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
