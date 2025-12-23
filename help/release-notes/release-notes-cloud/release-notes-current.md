@@ -5,14 +5,14 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: ed358f58ba0dd4d5a9b283291702f867774515e4
+source-git-commit: d2e36674f6052d73c418a428e11e3c29075ab24c
 workflow-type: tm+mt
 source-wordcount: '1857'
-ht-degree: 49%
+ht-degree: 50%
 
 ---
 
-# Notes de mise à jour actuelles d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La section suivante concerne les notes de mise à jour techniques de la version actuelle (la plus récente) d’[!DNL Experience Manager] as a Cloud Service.
 
@@ -30,7 +30,7 @@ La section suivante concerne les notes de mise à jour techniques de la version 
 
 La date de publication de la version actuelle (2025.12.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le vendredi 11 décembre 2025. La prochaine version des fonctionnalités (2026.1.0) est prévue pour le vendredi 29 janvier 2026.
 
-## Notes de mise à jour de maintenance {#maintenance}
+## Notes de mise à jour de la maintenance {#maintenance}
 
 Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/release-notes/maintenance/latest.md).
 
@@ -40,11 +40,11 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
-## Programmes AEM en version bêta {#aem-beta-programs}
+## Programmes AEM Beta {#aem-beta-programs}
 
 Les programmes bêta Adobe Experience Manager (AEM) permettent aux clients d’accéder aux fonctionnalités et au code de version préliminaire, de faire part de leurs commentaires et de guider l’avenir d’AEM.
 
@@ -93,7 +93,6 @@ Voir [Programmes bêta Cloud Manager](/help/implementing/cloud-manager/release-n
 **Détection des programmes malveillants pour les ressources chargées**
 
 AEM Assets inclut désormais l’analyse automatique des programmes malveillants des fichiers chargés, garantissant que les ressources suspectes sont mises en quarantaine avant d’accéder à la gestion des ressources numériques (DAM) pour protéger votre référentiel des menaces. Les administrateurs peuvent configurer les paramètres d’analyse et les stratégies de rétention des quarantaines pour des contrôles de sécurité rationalisés.
-
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
