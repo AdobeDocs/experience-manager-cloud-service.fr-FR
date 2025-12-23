@@ -4,9 +4,9 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 5e01d1674134db73fc0f5c0013e10170ad6747f7
+source-git-commit: c5cdcccdb3ac16c5088e46e3f64e8cfc4139e0e4
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1076'
 ht-degree: 19%
 
 ---
@@ -75,7 +75,7 @@ L’activation des fonctionnalités de la version 2026.1.0 fournit l’ensemble
 * SITES-36570 : la création de Live Copies échoue une fois que le bouton Créer une Live Copy en bloc est activé.
 * SITES-36158 : le déploiement échoue avec l’échec de la tâche en raison d’une exception.
 * SITES-35655 : le nouvel éditeur CF affiche l’héritage actif après sa rupture.
-* SITES-31425 : message d’erreur non localisé « Erreur : {} champ est obligatoire » affiché dans Démarrer le workflow dans les sites.
+* SITES-31425 : un message d’erreur non localisé `Error: {} field is required`’affiche dans le workflow Démarrer dans les sites.
 * SITES-19802 : les info-bulles ne sont pas localisées dans Site des composants principaux > Table des matières.
 * SITES-36543 : correction d’un problème en raison duquel l’administrateur pouvait modifier les fragments de contenu extraits.
 * SITES-36967 : correction des exceptions NullPointerExceptions qui se produisent lors de la tentative de génération de données de miniature pour des fragments de contenu rompus.
