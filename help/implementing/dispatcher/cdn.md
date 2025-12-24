@@ -4,7 +4,7 @@ description: Découvrez comment utiliser le réseau CDN géré par AEM et commen
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: afe526e72ac2116cd2e7da73d73f62a15f011e70
+source-git-commit: a36eae0f32b36224c53f756238ba2f5f90699e6c
 workflow-type: tm+mt
 source-wordcount: '1772'
 ht-degree: 34%
@@ -39,7 +39,7 @@ Pour préparer la diffusion de contenu à l’aide du réseau CDN intégré d’
 * [Introduction à la gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
 * [Configuration d’un réseau CDN](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)
 
-**Limitation du trafic**
+### Limitation du trafic {#restricting-traffic}
 
 Par défaut, dans le cas d’une configuration de réseau CDN géré par AEM, tout le trafic public peut se diriger vers le service de publication, tant pour les environnements de production que les environnements de non-production (de développement et d’évaluation). Vous pouvez limiter le trafic vers le service de publication pour un environnement donné (par exemple, en limitant l’évaluation par une plage d’adresses IP) au moyen de l’interface utilisateur de Cloud Manager.
 
@@ -74,7 +74,7 @@ Découvrez [configuration d’un jeton API de purge](/help/implementing/dispatch
 
 Pour les cas d’utilisation d’authentification légers, notamment les parties prenantes de l’entreprise qui examinent le contenu, protégez le contenu en affichant une boîte de dialogue d’authentification de base nécessitant un nom d’utilisateur et un mot de passe. [En savoir plus](/help/implementing/dispatcher/cdn-credentials-authentication.md).
 
-## Le réseau CDN du client ou de la cliente pointe vers le réseau CDN géré par AEM {#point-to-point-CDN}
+## Le réseau CDN du client ou de la cliente pointe vers le réseau CDN géré par AEM {#point-to-point-cdn}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
@@ -106,7 +106,7 @@ Avant d’accepter le trafic en direct, vous devez vérifier auprès du service 
 
 Après avoir défini la `X-AEM-Edge-Key`, vous pouvez tester la requête afin de déterminer si elle est correctement acheminée comme suit.
 
-Sous Linux® :
+Sous Linux :
 
 ```
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>"
@@ -138,7 +138,7 @@ Cette configuration de réseau CDN client est prise en charge pour le niveau de 
 
 Pour déboguer une configuration BYOCDN, utilisez l’en-tête `x-aem-debug` avec une valeur de `edge=true`. Par exemple :
 
-Sous Linux® :
+Sous Linux :
 
 ```
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" -H "x-aem-debug: edge=true"
@@ -163,23 +163,23 @@ Ce processus permet de vérifier des détails tels que les valeurs de l’hôte,
 >Vous pouvez utiliser un environnement de développement rapide (RDE) pour déployer et tester votre configuration :
 >
 >* [Environnements de développement rapide](/help/implementing/developing/introduction/rapid-development-environments.md)
->* [Utilisation d’un environnement de développement rapide](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+>* [Utilisation d’un environnement de développement rapide](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### Exemples de configurations de fournisseur de réseau CDN {#sample-configurations}
 
 Vous trouverez ci-dessous plusieurs exemples de configuration de plusieurs grands fournisseurs de réseau CDN.
 
-#### **Akamai** {#byocdn-akamai}
+#### Akamai {#byocdn-akamai}
 
 ![Akamai1](assets/akamai1.png "Akamai")
 ![Akamai2](assets/akamai2.png "Akamai")
 
-#### **Amazon CloudFront** {#byocdn-cloudfront}
+#### Amazon CloudFront {#byocdn-cloudfront}
 
 ![CloudFront1](assets/cloudfront1.png "Amazon CloudFront")
 ![CloudFront2](assets/cloudfront2.png "Amazon CloudFront")
 
-#### **Cloudflare** {#byocdn-cloudflare}
+#### Cloudflare {#byocdn-cloudflare}
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
@@ -188,15 +188,15 @@ Vous trouverez ci-dessous plusieurs exemples de configuration de plusieurs grand
 
 Les exemples de configurations fournis montrent les paramètres de base nécessaires. Cependant, une configuration client peut avoir d’autres règles d’impact qui suppriment, modifient ou réorganisent les en-têtes nécessaires pour qu’AEM as a Cloud Service diffuse le trafic. Vous trouverez ci-dessous les erreurs courantes qui se produisent lors de la configuration d’un réseau CDN géré par le client pour pointer vers AEM as a Cloud Service.
 
-**Redirection vers le point d’entrée du service de publication**
+#### Redirection vers le point d’entrée du service de publication {#redirect-publish}
 
 Lorsqu’une requête reçoit une réponse 403 interdit, cela signifie qu’il manque certains en-têtes requis dans la requête. Une cause courante est que le réseau CDN gère le trafic des domaines apex et `www`, mais n’ajoute pas l’en-tête correct pour le domaine `www`. Ce problème peut être trié en vérifiant vos journaux CDN AEM as a Cloud Service et les en-têtes de requête nécessaires.
 
-**Erreur 421 : redirection mal dirigée**
+#### Erreur 421 - Redirection mal dirigée {#error-421}
 
 Une erreur 421 avec le message `Requested host does not match any Subject Alternative Names (SANs) on TLS certificate` indique que le `Host` HTTP ne correspond à aucun hôte répertorié sur le certificat. Ce problème indique généralement que le paramètre `Host` ou SNI est incorrect. Assurez-vous que les paramètres `Host` et SNI pointent vers l’hôte publish-p&lt;PROGRAM_ID>-e.adobeaemcloud.com.
 
-**Trop de boucles de redirection**
+#### Trop de boucles de redirections {#redirect-loop}
 
 Lorsqu’une page reçoit une boucle « Trop de redirections », un en-tête de requête est ajouté au réseau CDN qui correspond à une redirection qui la force à se rétablir. Par exemple :
 
