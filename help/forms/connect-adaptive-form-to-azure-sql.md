@@ -40,7 +40,7 @@ L’intégration de Forms adaptatif à Azure SQL offre plusieurs avantages :
 
   ![Créer Azure Db](/help/forms/assets/create-azure-db.png)
 
-* Activez [la mise en réseau avancée configurée à l’aide d’une adresse IP de sortie dédiée](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) pour la base de données Azure créée.
+* Activez [la mise en réseau avancée configurée à l’aide d’une adresse IP de sortie dédiée](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) pour la base de données Azure créée.
 
   >[!NOTE]
   >
@@ -72,7 +72,7 @@ Par exemple : `portOrigin: 30433 → portDest: 1433`
 
    **Où trouver ces informations ?**
 
-   Pour obtenir des instructions détaillées sur la localisation de ces détails, reportez-vous à l’article Adobe Experience League « [Accès à Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) ».
+   Pour obtenir des instructions détaillées sur la localisation de ces détails, reportez-vous à l’article Adobe Experience League « [Accès à Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git) ».
 
    Une fois la commande terminée, un nouveau dossier est créé dans votre répertoire local. Ce dossier porte le nom de votre application.
 
@@ -84,7 +84,7 @@ Incluez la dépendance [pilote SQL](https://central.sonatype.com/artifact/com.mi
 
 >[!NOTE]
 >
-> Pour inclure la dépendance SQL dans votre projet, reportez-vous à la section [Dépendances des pilotes SQL](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies).
+> Pour inclure la dépendance SQL dans votre projet, reportez-vous à la section [Dépendances des pilotes SQL](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies).
 
 **Étape 3 : ajouter une configuration JDBC**
 
