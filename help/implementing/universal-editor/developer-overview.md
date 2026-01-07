@@ -4,7 +4,7 @@ description: Si vous êtes en charge du développement d’AEM et que le fonctio
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 392fdb0a0c1982f9be59cb530e86f13aeea3316b
 workflow-type: tm+mt
 source-wordcount: '3179'
 ht-degree: 100%
@@ -118,7 +118,7 @@ Le cookie du jeton de connexion doit être envoyé à AEM en tant que domaine ti
 
    ![Propriété OSGi pour les cookies du même site](assets/dev-cross-origin-osgi.png)
 
-1. Définissez la propriété **Attribut SameSite pour le cookie du jeton de connexion** sur `None`.
+1. Définissez la propriété **Attribut SameSite pour le cookie du jeton de connexion** sur `Partitioned`.
 
 1. Enregistrez les modifications.
 
@@ -318,7 +318,7 @@ Lorsque vous développez en local, vous ne pouvez pas utiliser le fournisseur d�
 
 1. Copiez l’en-tête nécessaire pour vous authentifier sur votre instance AEM locale et cliquez sur **Enregistrer**.
 
-   ![Configuration des fournisseurs d’authentification](assets/dev-authentication-headers.png)
+   ![Configuration des en-têtes d’authentification](assets/dev-authentication-headers.png)
 
 1. Chargez à nouveau l’éditeur universel et modifiez le titre du teaser.
 
