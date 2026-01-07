@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: Améliorations du service d’appel dans VRE, remplissage des options de liste déroulante à l’aide du service d’appel, Définition du panneau répétable à l’aide de la sortie du service d’appel, Définition du panneau à l’aide de la sortie du service d’appel, Utilisation du paramètre de sortie du service d’appel pour valider d’autres champs.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 43535e52fd749cc599a4e30be25bcc0dbf20eaef
 workflow-type: tm+mt
-source-wordcount: '1800'
+source-wordcount: '1860'
 ht-degree: 1%
 
 ---
@@ -39,6 +39,8 @@ L’utilisation de l’opération Invoke Service dans l’éditeur de règles d�
 L’éditeur visuel de règles vous permet de créer des règles pour les gestionnaires de succès et d’échec des opérations **Invoke Service** en fonction de ses réponses de sortie. L’image ci-dessous illustre le **service Invoke** dans l’éditeur visuel de règles pour un formulaire adaptatif :
 
 ![Appeler des gestionnaires de services](/help/forms/assets/invoke-service-rule-editor.png)
+
+### Ajout d’un gestionnaire de succès et d’un gestionnaire d’échec
 
 Pour ajouter un gestionnaire de succès ou d’échec, cliquez respectivement sur **[!UICONTROL Ajouter un gestionnaire de succès]** ou **[!UICONTROL Ajouter un gestionnaire d’échec]**.
 
@@ -160,6 +162,10 @@ Pour ce faire, créez une règle dans la zone de texte `Pet ID` pour appeler le 
 
 ![Définir la valeur de la liste déroulante](/help/forms/assets/set-dropdownoption.png)
 
+>[!NOTE]
+>
+> Consultez la section [Ajout d’un gestionnaire de succès et d’un gestionnaire d’échec](#adding-success-handler-and-failure-handler) pour savoir comment définir des gestionnaires de succès et d’échec.
+
 #### Sortie
 
 Saisissez `101` dans la zone de texte `Pet ID` pour renseigner dynamiquement les options de liste déroulante en fonction de la valeur saisie.
@@ -181,6 +187,10 @@ Créez une règle dans la zone de texte `Pet ID` pour appeler le service `getPet
 
 ![Créer une règle pour le panneau répétable](/help/forms/assets/create-rule-repeatable-panel.png)
 
+>[!NOTE]
+>
+> Consultez la section [Ajout d’un gestionnaire de succès et d’un gestionnaire d’échec](#adding-success-handler-and-failure-handler) pour savoir comment définir des gestionnaires de succès et d’échec.
+
 #### Sortie
 
 Saisissez `101` dans la zone de texte `Pet ID` pour remplir dynamiquement le panneau répétable en fonction de la valeur d’entrée.
@@ -199,6 +209,10 @@ Ce cas d’utilisation montre comment définir dynamiquement la valeur d’un pa
 #### Implémentation
 
 Créez une règle dans la zone de texte `Pet ID` pour appeler le service `getPetById`. Dans **[!UICONTROL Ajouter un gestionnaire de succès]**, ajoutez une autre réponse de gestionnaire de succès. Définissez la valeur de la zone de texte `categoryname` à `category.name` dans la règle.
+
+>[!NOTE]
+>
+> Consultez la section [Ajout d’un gestionnaire de succès et d’un gestionnaire d’échec](#adding-success-handler-and-failure-handler) pour savoir comment définir des gestionnaires de succès et d’échec.
 
 ![Créer une règle pour le panneau répétable](/help/forms/assets/set-panel-values.png)
 
