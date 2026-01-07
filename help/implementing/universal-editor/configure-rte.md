@@ -4,9 +4,9 @@ description: Découvrez comment configurer l’éditeur de texte enrichi dans l�
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: 482c9604bf4dd5e576b560d350361cdc598930e3
+source-git-commit: af63b3ff705954fe2145303ea0dc80720ad9e552
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '765'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,13 @@ Découvrez comment configurer l’éditeur de texte enrichi dans l’éditeur un
 L’éditeur universel fournit un éditeur de texte enrichi (RTE) à la fois sur place et dans le panneau des propriétés pour permettre aux créateurs et aux créatrices d’appliquer des modifications de mise en forme lorsqu’ils modifient leur texte.
 
 Cet éditeur de texte enrichi peut être configuré à l’aide de filtres de composant [.](/help/implementing/universal-editor/filtering.md) Ce document décrit les options de configuration disponibles, ainsi que des exemples.
+
+>[!NOTE]
+>
+>Lorsque vous démarrez un projet d’éditeur universel, toutes les fonctionnalités de texte enrichi prises en charge par votre serveur principal (AEM avec une implémentation Edge Delivery ou découplée) sont automatiquement actives.
+>
+>* Vous pouvez désactiver les options dont vous n’avez pas besoin.
+>* L’activation d’options non compatibles avec votre type de projet n’est pas prise en charge.
 
 ## Structure de configuration {#structure}
 
