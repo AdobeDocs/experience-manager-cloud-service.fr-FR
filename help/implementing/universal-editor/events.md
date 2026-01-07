@@ -4,10 +4,10 @@ description: Découvrez les événements envoyés par l’éditeur universel que
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: ac361c31b116466cc9a718640c1de4e4ef396fba
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 100%
+source-wordcount: '530'
+ht-degree: 94%
 
 ---
 
@@ -31,7 +31,7 @@ Les événements incluent la payload de la requête et de la réponse et sont d�
 
 ## Événements de mise à jour du contenu {#content-events}
 
-### aue:content-add {#content-add}
+### aue&amp;deux-points;content-add {#content-add}
 
 L’événement `aue:content-add` est déclenché lorsqu’un nouveau composant est ajouté à un conteneur.
 
@@ -53,7 +53,7 @@ La payload correspond au contenu du service d’éditeur universel, avec le cont
 }
 ```
 
-### aue:content-details {#content-details}
+### aue&amp;deux-points;content-details {#content-details}
 
 L’événement `aue:content-details` est déclenché lorsqu’un composant est chargé dans le panneau des propriétés.
 
@@ -70,7 +70,7 @@ La payload correspond au contenu du composant et, éventuellement, à son schém
 }
 ```
 
-### aue:content-move {#content-move}
+### aue&amp;deux-points;content-move {#content-move}
 
 L’événement `aue:content-move` est déclenché lorsqu’un composant est déplacé.
 
@@ -89,7 +89,7 @@ La payload correspond au composant, au conteneur source et au conteneur cible.
 }
 ```
 
-### aue:content-patch {#content-patch}
+### aue&amp;deux-points;content-patch {#content-patch}
 
 L’événement `aue:content-patch` est déclenché lorsque les données d’un composant sont mises à jour dans le panneau des propriétés.
 
@@ -108,7 +108,7 @@ La payload est un correctif JSON des propriétés mises à jour.
 }
 ```
 
-### aue:content-remove {#content-remove}
+### aue&amp;deux-points;suppression de contenu {#content-remove}
 
 L’événement `aue:content-remove` est déclenché lorsqu’un composant est supprimé d’un conteneur.
 
@@ -124,7 +124,7 @@ La payload correspond à l’identifiant d’élément du composant supprimé.
 }
 ```
 
-### aue:content-update {#content-update}
+### aue&amp;deux-points;content-update {#content-update}
 
 L’événement `aue:content-update` est déclenché lorsque les propriétés d’un composant sont mises à jour en contexte.
 
@@ -180,7 +180,7 @@ Payload de réponse
 
 ## Événements d’interface d’utilisation {#ui-events}
 
-### aue:ui-preview {#ui-preview}
+### aue&amp;deux-points;prévisualisation de l’interface utilisateur {#ui-preview}
 
 L’événement `aue:ui-preview` est déclenché lorsque le mode de modification de la page est remplacé par **Aperçu**.
 
@@ -192,7 +192,7 @@ La payload est vide pour cet événement.
 }
 ```
 
-### aue:ui-edit {#ui-edit}
+### aue&amp;deux-points;ui-edit {#ui-edit}
 
 L’événement `aue:ui-edit` est déclenché lorsque le mode de modification de la page est remplacé par **Modifier**.
 
@@ -204,7 +204,7 @@ La payload est vide pour cet événement.
 }
 ```
 
-### aue:ui-viewport-change {#ui-viewport-change}
+### aue&amp;deux-points;ui-viewport-change {#ui-viewport-change}
 
 L’événement `aue:ui-viewport-change` est déclenché lorsque la taille de la fenêtre d’affichage est modifiée.
 
@@ -219,7 +219,7 @@ La payload correspond aux dimensions de la fenêtre d’affichage.
 }
 ```
 
-### aue:initialized {#initialized}
+### aue&amp;deux-points;initialisé {#initialized}
 
 L’événement `aue:initialized` est déclenché pour informer la page distante qu’elle a bien été chargée dans l’éditeur universel.
 
@@ -257,4 +257,3 @@ La payload est vide pour cet événement.
 ## Ressources supplémentaires {#additional-resources}
 
 * [Appels de l’éditeur universel](/help/implementing/universal-editor/calls.md)
-
