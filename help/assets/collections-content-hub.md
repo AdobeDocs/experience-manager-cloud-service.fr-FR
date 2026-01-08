@@ -3,7 +3,7 @@ title: Gestion des collections dans Content Hub
 description: Découvrez comment gérer les collections dans Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 676edf3638ebf660aeb8204dc527d9066d2a731e
+source-git-commit: 69140e717ebc25284f715f73a3abb0b36b66deb2
 workflow-type: tm+mt
 source-wordcount: '1325'
 ht-degree: 2%
@@ -136,7 +136,7 @@ Découvrez comment [télécharger une ressource à partir du  [!DNL Content Hub]
 
 ## Partage des ressources disponibles dans une collection {#share-assets-available-within-collection}
 
-Vous pouvez également partager les ressources disponibles dans une collection. Veillez à [activer le partage de liens public dans Content Hub](configure-content-hub-ui-options.md#enable-public-link-sharing). Accédez à l’onglet **[!UICONTROL Collections]**. Sélectionnez l’icône ![icône de partage](assets/share.svg) sur la vignette de collection. Le lien de partage est copié. Vous pouvez partager le lien copié avec le destinataire. En savoir plus sur le [partage de ressources dans la  [!DNL Content Hub]](share-assets-content-hub.md).
+Vous pouvez également partager les ressources disponibles dans une collection. Veillez à [activer le partage de liens public dans Content Hub](configure-content-hub-ui-options.md#configure-collections-content-hub). Accédez à l’onglet **[!UICONTROL Collections]**. Sélectionnez l’icône ![icône de partage](assets/share.svg) sur la carte de la ressource. Le lien de partage est copié. Vous pouvez partager le lien copié avec le destinataire. En savoir plus sur le [partage de ressources dans la  [!DNL Content Hub]](share-assets-content-hub.md).
 
 Les collections Content Hub fournissent des outils de gouvernance complets pour une gestion efficace des ressources, y compris des autorisations de partage personnalisables et des fonctionnalités de collaboration. De l’accès en lecture seule au contrôle administratif complet, ces paramètres prennent en charge une gouvernance fine de la distribution des ressources. Lors du partage d’une ressource, que ce soit individuellement ou dans le cadre d’une collection, la portée de l’accès est déterminée par le niveau d’accès actuel de la collection attribué à l’utilisateur. Vous ne pouvez pas non plus partager une collection privée.
 
