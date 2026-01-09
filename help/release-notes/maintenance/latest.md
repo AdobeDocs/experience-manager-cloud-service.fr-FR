@@ -4,9 +4,9 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c5cdcccdb3ac16c5088e46e3f64e8cfc4139e0e4
+source-git-commit: b4df0abb43d69f629d2c643c408cb77af697b942
 workflow-type: tm+mt
-source-wordcount: '1076'
+source-wordcount: '1090'
 ht-degree: 19%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 19%
 La section suivante décrit les notes de mise jour techniques de maintenance actuelle d’Experience Manager as a Cloud Service.
 
 ## Version 23862 {#23862}
+
+>[!CAUTION]
+>
+> La version 23862 a été rendue privée. Une nouvelle version de maintenance sera bientôt fournie.
 
 Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 23862, publiée le mercredi 23 décembre 2025. La version de maintenance précédente était la version 23482.
 
