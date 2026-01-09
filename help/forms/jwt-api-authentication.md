@@ -6,31 +6,24 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: a9ef6553a7f480895f53f1240cd454c6f4fc7d24
+source-git-commit: e2f57a32fcc098a2331ad74540a3d48832c2b3c3
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '393'
 ht-degree: 5%
 
 ---
 
 
-# Authentification JWT (JSON Web Token) - Obsolète
+# Authentification de serveur à serveur JWT (JSON Web Token)
 
-L’authentification JWT dans AEM Forms, en particulier pour les intégrations côté serveur avec AEM as a Cloud Service, implique un processus spécifique pour interagir en toute sécurité avec les services AEM.
-
-## Remarque
-
-Le jeton d’accès généré par JWT ne fonctionnera pas après l’expiration des certificats actuels ou le 1er mars 2026, la date la plus proche étant retenue. Par conséquent, vous devez migrer votre intégration pour utiliser les nouvelles informations d’identification de serveur à serveur [OAuth](/help/forms/oauth-api-authetication.md).
-
-La migration de vos projets vers les informations d’identification de serveur à serveur OAuth est un processus simple en deux étapes qui permet une migration sans interruption de service pour vos applications et intégrations. Veuillez lire le [guide de migration](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration) pour migrer vers les informations d’identification de serveur à serveur OAuth.
-
+L’authentification serveur à serveur JWT dans AEM Forms, en particulier pour les intégrations côté serveur avec AEM as a Cloud Service, implique un processus spécifique pour interagir en toute sécurité avec les services AEM. L’authentification serveur à serveur JWT est prise en charge par AEM Developer Console.
 
 ## Conditions préalables
 
 Avant de commencer, vérifiez que les conditions préalables suivantes sont remplies :
 
 * Assurez-vous d’avoir accès au [Cloud Manager Adobe](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html) spécifique à l’environnement que vous utilisez.
-* Affectez le rôle d’administrateur système ou de développeur pour accéder à Adobe Cloud Manager.
+* Attribuez le rôle [Administrateur système ou Développeur pour accéder à Adobe Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights).
 
 ## Comment générer un jeton d’accès à l’aide des informations d’identification JWT ?
 
@@ -59,10 +52,10 @@ Suivez les étapes ci-dessous qui vous montrent comment générer un jeton d’a
 
    Une fois que vous avez cliqué sur Créer un compte technique, les informations requises pour générer un jeton d’accès tel que l’identifiant client et le secret client, ainsi que d’autres informations de compte techniques, y compris la clé privée, la clé publique et la date d’expiration, sont générées.
 
-   ![&#x200B; Informations d’identification JWT &#x200B;](/help/forms/assets/jwt-credentials.png)
+   ![ Informations d’identification JWT ](/help/forms/assets/jwt-credentials.png)
 
 
-3. Générer et enregistrer des informations d’identification
+3. **Générer et enregistrer des informations d’identification**
 
    1. Enregistrer les informations d’identification d’API
 
@@ -76,7 +69,7 @@ Suivez les étapes ci-dessous qui vous montrent comment générer un jeton d’a
       Scopes: AdobeID,openid,read_organizations
       ```
 
-4. Génération de jeton d’accès
+4. **Génération de jeton d’accès**
 
    Générez des jetons par programmation à l’aide de la commande cURL :
 
@@ -120,7 +113,7 @@ Suivez les étapes ci-dessous qui vous montrent comment générer un jeton d’a
 
 Vous pouvez désormais utiliser le jeton d’accès généré pour effectuer un appel API pour les environnements de développement, d’évaluation ou de production.
 
-## Étapes suivantes
+## Articles connexes
 
 Découvrez comment définir un environnement pour les API de communication Forms synchrones (à la demande) et asynchrones (par lots) :
 
