@@ -6,9 +6,9 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: e2f57a32fcc098a2331ad74540a3d48832c2b3c3
+source-git-commit: 77da2f4ddcd9074a79883f18a33b6fe50e32b266
 workflow-type: tm+mt
-source-wordcount: '2380'
+source-wordcount: '2396'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ Assurez-vous de disposer des droits d’accès et des autorisations requis avant
 
 >[!NOTE]
 >
-> Pour en savoir plus sur l’attribution de rôles et l’octroi de l’accès aux utilisateurs, consultez l’article [Ajouter des utilisateurs et des rôles](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
+> Pour en savoir plus sur l’attribution de rôles et l’octroi de l’accès aux utilisateurs, consultez l’article [Ajouter des utilisateurs et des rôles](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
 
 **Accès au référentiel Git**
 
@@ -112,7 +112,7 @@ Vous pouvez afficher les détails de l’environnement AEM Cloud Service ou y ac
 
 >[!ENDTABS]
 
-#### &#x200B;4. Rechercher Le Point D’Entrée AEM Forms
+#### 1.4. Rechercher Le Point D’Entrée AEM Forms
 
 Sur la page de détails **Environnement**, notez votre instance d’URL AEM.
 
@@ -132,7 +132,7 @@ Clonez le référentiel Git de Cloud Manager pour gérer vos fichiers de configu
 2. Recherchez le nom du référentiel et cliquez sur le menu représentant des points de suspension (...)
 3. Copiez l’URL du référentiel.
 
-   ![&#x200B; Copier l’URL du référentiel &#x200B;](/help/forms/assets/copy-repo-url.png)
+   ![ Copier l’URL du référentiel ](/help/forms/assets/copy-repo-url.png)
 
 >[!NOTE]
 >
@@ -251,7 +251,7 @@ Générez manuellement les jetons d’accès dans Adobe Developer Console :
 1. Cliquez sur le bouton **Générer un jeton d’accès »** dans la section API de votre projet
 2. Copier le jeton d’accès généré
 
-   ![&#x200B; Générer un jeton d’accès &#x200B;](/help/forms/assets/adc-access-token.png)
+   ![ Générer un jeton d’accès ](/help/forms/assets/adc-access-token.png)
 
 >[!NOTE]
 >
@@ -300,7 +300,7 @@ Vous pouvez désormais utiliser le jeton d’accès généré pour effectuer un 
 
 >[!NOTE]
 >
-> Pour en savoir plus sur l’authentification de serveur à serveur OAuth via Adobe Developer Console, reportez-vous à l’article [&#x200B; Authentification de serveur à serveur OAuth &#x200B;](/help/forms/oauth-api-authetication.md).
+> Pour en savoir plus sur l’authentification de serveur à serveur OAuth via Adobe Developer Console, reportez-vous à l’article [ Authentification de serveur à serveur OAuth ](/help/forms/oauth-api-authetication.md).
 
 ### Étape 4 : enregistrement de l’ID client avec l’environnement AEM
 
@@ -368,6 +368,11 @@ Les paramètres de configuration sont expliqués ci-dessous :
 
 
 ### Étape 5 : Configurer le pipeline de configuration
+
+#### 5.1 Connexion à Adobe Cloud Manager
+
+1. Accédez à [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
+2. Connexion avec votre Adobe ID
 
 #### 5.1 Localiser la carte Pipelines
 
@@ -441,7 +446,7 @@ e. Cliquez sur **« Enregistrer »** pour créer le pipeline
 
 ### Étape 6 : déploiement de la configuration
 
-Maintenant que le pipeline est créé, déployez votre configuration `api.yaml` :
+Maintenant que le pipeline est créé, déployez votre configuration `api.yaml`
 
 #### 6.1 Dans la présentation des pipelines
 
@@ -476,7 +481,7 @@ Maintenant que votre environnement est configuré, vous pouvez commencer à test
 L’interface utilisateur Swagger fournit une interface interactive pour tester les API sans écrire de code. Utilisez la fonctionnalité **Essayer** pour appeler et tester l’API de communication Forms [générer PDF](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm).
 
 1. Accédez à [Référence de l’API de communication Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/) puis ouvrez la documentation de l’[API de communication Forms](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document) dans votre navigateur.
-2. Développez la section **Génération de documents** et sélectionnez [&#x200B; Génère un formulaire PDF à remplir à partir d’un modèle XDP ou PDF, éventuellement avec fusion des données](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm).
+2. Développez la section **Génération de documents** et sélectionnez [ Génère un formulaire PDF à remplir à partir d’un modèle XDP ou PDF, éventuellement avec fusion des données](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm).
 3. Dans le volet de droite, cliquez sur **Essayer**.
 
    ![Test Swagger pour l’API](/help/forms/assets/api-doc-generation.png)
@@ -485,7 +490,7 @@ L’interface utilisateur Swagger fournit une interface interactive pour tester 
    | **Section** | **Paramètre** | **Valeur**. |
    |--------------|---------------|------------|
    | compartiment | Instance AEM | Nom de l’instance AEM sans le nom de domaine Adobe (`.adobeaemcloud.com`) Par exemple, utilisez `pXXXXX-eYYYYY` comme compartiment. |
-   | Sécurité | Jeton porteur | Utilisez le jeton d’accès [&#x200B; à partir des informations d’identification OAuth de serveur à serveur du projet Adobe Developer Console](/help/forms/oauth-api-authetication.md#how-to-generate-an-access-token-using-oauth-server-to-server-authentication) |
+   | Sécurité | Jeton porteur | Utilisez le jeton d’accès [ à partir des informations d’identification OAuth de serveur à serveur du projet Adobe Developer Console](/help/forms/oauth-api-authetication.md#how-to-generate-an-access-token-using-oauth-server-to-server-authentication) |
    | Corps | template | Chargez un fichier XDP pour générer le formulaire PDF. Par exemple, vous pouvez utiliser [ce XDP](/help/forms/assets/ClosingForm.xdp) pour générer un PDF. |
    | Corps | data | Fichier XML facultatif contenant les données à fusionner avec le modèle pour générer un formulaire PDF prérempli. Par exemple, vous pouvez utiliser [ce XML](/help/forms/assets/ClosingForm.xml) pour générer un PDF. |
    | Paramètres | X-Adobe-Accept-Experimental | 1 |

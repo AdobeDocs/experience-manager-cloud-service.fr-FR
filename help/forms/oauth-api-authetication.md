@@ -6,9 +6,9 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: e2f57a32fcc098a2331ad74540a3d48832c2b3c3
+source-git-commit: 6bd2e1698cceaf8fe47e19e0645d0782c916644a
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '817'
 ht-degree: 4%
 
 ---
@@ -22,14 +22,14 @@ L’authentification de serveur à serveur OAuth permet un accès sécurisé par
 
 Avant de commencer, vérifiez que les conditions préalables suivantes sont remplies :
 
-* Assurez-vous d’avoir [accès au Adobe Developer Console](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/requirements/access-rights) spécifique à l’environnement que vous utilisez.
+* Assurez-vous d’avoir [accès au Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights) spécifique à l’environnement que vous utilisez.
 * [Attribuez le rôle d’administrateur système ou de développeur dans le Adobe Admin Console](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions) pour activer l’accès au Adobe Developer Console.
 
 ## Comment générer un jeton d’accès à l’aide de l’authentification de serveur à serveur OAuth ?
 
 Suivez les étapes ci-dessous pour générer un jeton d’accès à partir de la console Adobe Developer et effectuez votre premier appel API via l’authentification de serveur à serveur OAuth.
 
-### Configuration du projet Adobe Developer Console
+### &#x200B;1. Configuration du projet Adobe Developer Console
 
 1. Accéder à [Adobe Developer Console](https://developer.adobe.com/console)
 2. Connexion avec votre Adobe ID
@@ -66,7 +66,7 @@ Suivez les étapes ci-dessous pour générer un jeton d’accès à partir de la
 
 >[!ENDTABS]
 
-### Ajout des API Forms
+### &#x200B;2. Ajouter des API Forms
 
 Ajoutez des API Forms en fonction de vos besoins :
 
@@ -109,12 +109,10 @@ Ajoutez des API Forms en fonction de vos besoins :
 
 >[!ENDTABS]
 
->[!NOTE]
->
-> Vous pouvez également ajouter l’API et la méthode d’authentification à votre projet existant en cliquant sur **Ajouter au projet** > **API**\
-> ![Ajouter une API à un projet existant](/help/forms/assets/add-api-existing-project.png)
+Vous pouvez également ajouter l’API et la méthode d’authentification à votre projet existant en cliquant sur **Ajouter au projet** > **API**\
+![Ajouter une API à un projet existant](/help/forms/assets/add-api-existing-project.png)
 
-### Ajouter un profil de produit
+### &#x200B;3. Ajouter un profil de produit
 
 Le profil de produit fournit des autorisations (ou autorisations) pour que les informations d’identification puissent accéder aux ressources AEM.
 
@@ -128,7 +126,7 @@ Le profil de produit fournit des autorisations (ou autorisations) pour que les i
 
    * **Environnement XXX** - identifie l’identifiant d’environnement spécifique au sein de ce programme.
 
-   >
+   >[!NOTE]
    >
    > Les profils de produit sont liés à une instance AEM spécifique (programme + environnement). Sélectionnez toujours le profil qui correspond à l’URL de votre instance.
 
@@ -136,7 +134,7 @@ Le profil de produit fournit des autorisations (ou autorisations) pour que les i
 
    ![Sélectionner la configuration du projet](/help/forms/assets/adc-add-product-profile.png)
 
-### Générer et enregistrer des informations d’identification
+### &#x200B;4. Générer et enregistrer des informations d’identification
 
 1. Accédez à votre projet dans Adobe Developer Console
 2. Cliquez sur les informations d’identification **OAuth de serveur à serveur**
@@ -156,7 +154,7 @@ Le profil de produit fournit des autorisations (ou autorisations) pour que les i
     Scopes: AdobeID,openid,read_organizations
 ```
 
-### Génération de jeton d’accès
+### &#x200B;5. Génération de jetons d’accès
 
 Générez le jeton d’accès manuellement ou par programmation :
 
@@ -174,7 +172,7 @@ Générez manuellement les jetons d’accès dans Adobe Developer Console :
    1. Cliquez sur le bouton **Générer un jeton d’accès »** dans la section API de votre projet
    2. Copier le jeton d’accès généré
 
-   ![&#x200B; Générer un jeton d’accès &#x200B;](/help/forms/assets/adc-access-token.png)
+   ![ Générer un jeton d’accès ](/help/forms/assets/adc-access-token.png)
 
    >[!NOTE]
    >
@@ -221,7 +219,7 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
 
 Vous pouvez désormais utiliser le jeton d’accès généré pour effectuer un appel API pour les environnements de développement, d’évaluation ou de production.
 
->[!NOTE]
+>
 >
 > Pour en savoir plus sur l’implémentation serveur à serveur d’OAuth afin de générer un jeton d’accès et d’effectuer des appels API, [cliquez ici](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation).
 
