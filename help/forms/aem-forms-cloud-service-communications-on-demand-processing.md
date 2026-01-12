@@ -3,18 +3,15 @@ title: Comment configurer les API synchrones des communications Forms ?
 description: Configuration de l’environnement de développement pour les API synchrones de communications interactives pour Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms,APIs & Integrations
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 77da2f4ddcd9074a79883f18a33b6fe50e32b266
+source-git-commit: a0db7a0a2dc82c9857b34b79fe3b3b6f3e179372
 workflow-type: tm+mt
-source-wordcount: '2396'
+source-wordcount: '2417'
 ht-degree: 2%
 
 ---
 
 
-# Configuration de l’accès serveur à serveur OAuth pour les API synchrones de communications AEM Forms
+# Configuration de l’accès serveur à serveur OAuth pour les API de communication AEM Forms
 
 Ce guide fournit des instructions pour configurer et appeler les API synchrones de communications AEM Forms accessibles via Adobe Developer Console à l’aide de l’authentification de serveur à serveur OAuth.
 
@@ -22,23 +19,28 @@ Ce guide fournit des instructions pour configurer et appeler les API synchrones 
 
 Pour configurer un environnement afin d’exécuter et de tester les API AEM Forms Communications, vérifiez que vous disposez des éléments suivants :
 
+### Mise à jour de l’environnement AEM as a Cloud Service
+
+* [AEM version 2024.10.18459.20241031T210302Z ou ultérieure](#update-aem-instance)
+* Mettre à jour les profils de produit si l’environnement a été créé avant novembre 2024
+
 ### Accès et autorisations
 
 Assurez-vous de disposer des droits d’accès et des autorisations requis avant de commencer à configurer les API Communications.
 
 **Autorisations des utilisateurs et des rôles**
 
-- Rôle de développeur affecté dans Adobe Admin Console
-- Autorisation de création de projets dans le Adobe Developer Console
+* Rôle de développeur affecté dans Adobe Admin Console
+* Autorisation de création de projets dans le Adobe Developer Console
 
 >[!NOTE]
 >
-> Pour en savoir plus sur l’attribution de rôles et l’octroi de l’accès aux utilisateurs, consultez l’article [Ajouter des utilisateurs et des rôles](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
+> Pour en savoir plus sur l’attribution de rôles et l’octroi de l’accès aux utilisateurs, consultez l’article [Ajouter des utilisateurs et des rôles](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
 
 **Accès au référentiel Git**
 
-- Accès au référentiel Git de Cloud Manager
-- Informations d’identification Git pour le clonage et l’envoi de modifications
+* Accès au référentiel Git de Cloud Manager
+* Informations d’identification Git pour le clonage et l’envoi de modifications
 
 >[!NOTE]
 >
@@ -46,8 +48,8 @@ Assurez-vous de disposer des droits d’accès et des autorisations requis avant
 
 ### Générer un jeton d’accès à l’aide de Adobe Developer Console (ADC)
 
-- Générez un jeton d’accès via Adobe Developer Console à l’aide de l’authentification de serveur à serveur OAuth.
-- Récupérer l’ID client à partir du Adobe Developer Console
+* Générez un jeton d’accès via Adobe Developer Console à l’aide de l’authentification de serveur à serveur OAuth.
+* Récupérer l’ID client à partir du Adobe Developer Console
 
 >[!NOTE]
 >
@@ -55,11 +57,11 @@ Assurez-vous de disposer des droits d’accès et des autorisations requis avant
 
 ### Outils de développement
 
-- **Node.js** pour exécuter des exemples d’applications
-- Dernière version de **Git**
-- Accès à **Terminal/Ligne de commande**
-- **Éditeur de texte ou IDE** pour modifier les fichiers de configuration (VS Code, IntelliJ, etc.)
-- **Postman** ou outil similaire pour les tests d’API
+* **Node.js** pour exécuter des exemples d’applications
+* Dernière version de **Git**
+* Accès à **Terminal/Ligne de commande**
+* **Éditeur de texte ou IDE** pour modifier les fichiers de configuration (VS Code, IntelliJ, etc.)
+* **Postman** ou outil similaire pour les tests d’API
 
 >[!NOTE]
 >
@@ -132,7 +134,7 @@ Clonez le référentiel Git de Cloud Manager pour gérer vos fichiers de configu
 2. Recherchez le nom du référentiel et cliquez sur le menu représentant des points de suspension (...)
 3. Copiez l’URL du référentiel.
 
-   ![&#x200B; Copier l’URL du référentiel &#x200B;](/help/forms/assets/copy-repo-url.png)
+   ![ Copier l’URL du référentiel ](/help/forms/assets/copy-repo-url.png)
 
 >[!NOTE]
 >
@@ -251,7 +253,7 @@ Générez manuellement les jetons d’accès dans Adobe Developer Console :
 1. Cliquez sur le bouton **Générer un jeton d’accès »** dans la section API de votre projet
 2. Copier le jeton d’accès généré
 
-   ![&#x200B; Générer un jeton d’accès &#x200B;](/help/forms/assets/adc-access-token.png)
+   ![ Générer un jeton d’accès ](/help/forms/assets/adc-access-token.png)
 
 >[!NOTE]
 >
@@ -263,9 +265,9 @@ Générez des jetons par programmation à l’aide de l’API [Adobe IMS](https:
 
 **Informations d’identification requises :**
 
-- ID client
-- Secret client
-- Portées (généralement : `openid, AdobeID, read_organizations, additional_info.projectedProductContext, read_pc.dma_aem_cloud, aem.document`)
+* ID client
+* Secret client
+* Portées (généralement : `openid, AdobeID, read_organizations, additional_info.projectedProductContext, read_pc.dma_aem_cloud, aem.document`)
 
 **Point d’entrée du jeton :**
 
@@ -300,7 +302,7 @@ Vous pouvez désormais utiliser le jeton d’accès généré pour effectuer un 
 
 >[!NOTE]
 >
-> Pour en savoir plus sur l’authentification de serveur à serveur OAuth via Adobe Developer Console, reportez-vous à l’article [&#x200B; Authentification de serveur à serveur OAuth &#x200B;](/help/forms/oauth-api-authetication.md).
+> Pour en savoir plus sur l’authentification de serveur à serveur OAuth via Adobe Developer Console, reportez-vous à l’article [ Authentification de serveur à serveur OAuth ](/help/forms/oauth-api-authetication.md).
 
 ### Étape 4 : enregistrement de l’ID client avec l’environnement AEM
 
@@ -340,16 +342,16 @@ Pour permettre à l’ID client de votre projet ADC de communiquer avec l’inst
 
 Les paramètres de configuration sont expliqués ci-dessous :
 
-- **kind** : toujours définie sur `"API"` (identifie cela comme une configuration d&#39;API)
-- **version** : version de l’API, généralement `"1"` ou `"1.0"`
-- **envTypes** : tableau des types d’environnements auxquels s’applique cette configuration.
-   - `["dev"]` - Environnements de développement uniquement
-   - `["stage"]` - Environnements d’évaluation uniquement
-   - `["prod"]` - Environnements de production uniquement
-- **allowedClientIDs** : ID de client autorisés à accéder à votre instance AEM
-   - **author** : ID de client pour le niveau de création
-   - **publish** : ID de client pour le niveau de publication
-   - **preview** : ID de client pour le niveau d’aperçu
+* **kind** : toujours définie sur `"API"` (identifie cela comme une configuration d&#39;API)
+* **version** : version de l’API, généralement `"1"` ou `"1.0"`
+* **envTypes** : tableau des types d’environnements auxquels s’applique cette configuration.
+   * `["dev"]` - Environnements de développement uniquement
+   * `["stage"]` - Environnements d’évaluation uniquement
+   * `["prod"]` - Environnements de production uniquement
+* **allowedClientIDs** : ID de client autorisés à accéder à votre instance AEM
+   * **author** : ID de client pour le niveau de création
+   * **publish** : ID de client pour le niveau de publication
+   * **preview** : ID de client pour le niveau d’aperçu
 
 ![Ajout d’un fichier de configuration](/help/forms/assets/create-api-yaml-file.png)
 
@@ -383,9 +385,9 @@ Les paramètres de configuration sont expliqués ci-dessous :
 
 #### 5.2 Sélectionner le type de pipeline
 
-- **Pour Les Environnements De Développement** : Sélectionnez **« Ajouter Un Pipeline Hors Production »**. Les pipelines hors production sont destinés aux environnements de développement et intermédiaires
+* **Pour Les Environnements De Développement** : Sélectionnez **« Ajouter Un Pipeline Hors Production »**. Les pipelines hors production sont destinés aux environnements de développement et intermédiaires
 
-- **Pour Les Environnements De Production** : Sélectionnez **« Ajouter Un Pipeline De Production »**. Les pipelines de production nécessitent des approbations supplémentaires
+* **Pour Les Environnements De Production** : Sélectionnez **« Ajouter Un Pipeline De Production »**. Les pipelines de production nécessitent des approbations supplémentaires
 
 >[!NOTE]
 >
@@ -397,22 +399,22 @@ Dans l’onglet **Configuration** :
 
 a. **Type de pipeline**
 
-- Sélectionnez **Pipeline de déploiement**
+* Sélectionnez **Pipeline de déploiement**
 
 b. **Nom du pipeline**
 
-- Attribuez un nom explicite, par exemple, « `api-config-pipieline` » au pipeline.
+* Attribuez un nom explicite, par exemple, « `api-config-pipieline` » au pipeline.
 
 c. **Déclencheur de déploiement**
 
-- **Manuel** : le déploiement n’est effectué que lorsqu’il est déclenché manuellement (recommandé pour la configuration initiale)
-- **Lors des modifications Git** : déploiement automatique lorsque les modifications sont transmises à la branche
+* **Manuel** : le déploiement n’est effectué que lorsqu’il est déclenché manuellement (recommandé pour la configuration initiale)
+* **Lors des modifications Git** : déploiement automatique lorsque les modifications sont transmises à la branche
 
 d. **Comportement en cas d’échecs de mesures importants**
 
-- **Demander à chaque fois** : demande d’action en cas d’échec (par défaut)
-- **Échec immédiat** : échec automatique du pipeline en cas d’échec des mesures
-- **Continuer immédiatement** : continuer malgré les échecs
+* **Demander à chaque fois** : demande d’action en cas d’échec (par défaut)
+* **Échec immédiat** : échec automatique du pipeline en cas d’échec des mesures
+* **Continuer immédiatement** : continuer malgré les échecs
 
 e. Cliquez sur **« Continuer »** pour accéder à l’onglet **Code Source**
 
@@ -424,21 +426,21 @@ Dans l&#39;onglet **Code Source** :
 
 a. **Type de déploiement**
 
-- Sélectionnez **« Déploiement ciblé »**
+* Sélectionnez **« Déploiement ciblé »**
 
 b. **Options de déploiement**
 
-- Sélectionnez **« Config »** (déployer les fichiers de configuration uniquement). Il indique à Cloud Manager qu’il s’agit d’un déploiement de configuration.
+* Sélectionnez **« Config »** (déployer les fichiers de configuration uniquement). Il indique à Cloud Manager qu’il s’agit d’un déploiement de configuration.
 
 c. **Sélectionner un environnement de déploiement éligible**
 
-- Choisissez l’environnement dans lequel vous souhaitez déployer la configuration. Dans ce cas, il s’agit d’un environnement `dev`.
+* Choisissez l’environnement dans lequel vous souhaitez déployer la configuration. Dans ce cas, il s’agit d’un environnement `dev`.
 
 d. **Définition des détails du code Source**
 
-- **Référentiel** : sélectionnez le référentiel contenant votre fichier `api.yaml`. Par exemple, sélectionnez le référentiel `AEMFormsInternal-ReleaseSanity-pXXXXX-ukYYYYY`.
-- **Branche Git** : sélectionnez votre branche. Par exemple, dans ce cas, notre code est déployé au niveau de la branche `main`.
-- **Emplacement du code** : saisissez le chemin d’accès au répertoire `config`. Comme le `api.yaml` se trouve dans `config` dossier racine, saisissez `/config`
+* **Référentiel** : sélectionnez le référentiel contenant votre fichier `api.yaml`. Par exemple, sélectionnez le référentiel `AEMFormsInternal-ReleaseSanity-pXXXXX-ukYYYYY`.
+* **Branche Git** : sélectionnez votre branche. Par exemple, dans ce cas, notre code est déployé au niveau de la branche `main`.
+* **Emplacement du code** : saisissez le chemin d’accès au répertoire `config`. Comme le `api.yaml` se trouve dans `config` dossier racine, saisissez `/config`
 
 e. Cliquez sur **« Enregistrer »** pour créer le pipeline
 
@@ -462,9 +464,9 @@ Maintenant que le pipeline est créé, déployez votre configuration `api.yaml`
 
 #### 6.3 Vérification de la réussite du déploiement
 
-- Attendez que le pipeline soit terminé.
-   - S’il réussit, le statut passe à « Succès » (coche verte ✓).
-   - En cas d’échec, le statut est remplacé par « Échec » (✗ croix rouge). Cliquez sur **Télécharger les journaux** pour afficher les détails de l’erreur.
+* Attendez que le pipeline soit terminé.
+   * S’il réussit, le statut passe à « Succès » (coche verte ✓).
+   * En cas d’échec, le statut est remplacé par « Échec » (✗ croix rouge). Cliquez sur **Télécharger les journaux** pour afficher les détails de l’erreur.
 
      ![Succès du pipeline](/help/forms/assets/pipeline-suceess.png)
 
@@ -481,7 +483,7 @@ Maintenant que votre environnement est configuré, vous pouvez commencer à test
 L’interface utilisateur Swagger fournit une interface interactive pour tester les API sans écrire de code. Utilisez la fonctionnalité **Essayer** pour appeler et tester l’API de communication Forms [générer PDF](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm).
 
 1. Accédez à [Référence de l’API de communication Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/) puis ouvrez la documentation de l’[API de communication Forms](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document) dans votre navigateur.
-2. Développez la section **Génération de documents** et sélectionnez [&#x200B; Génère un formulaire PDF à remplir à partir d’un modèle XDP ou PDF, éventuellement avec fusion des données](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm).
+2. Développez la section **Génération de documents** et sélectionnez [ Génère un formulaire PDF à remplir à partir d’un modèle XDP ou PDF, éventuellement avec fusion des données](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm).
 3. Dans le volet de droite, cliquez sur **Essayer**.
 
    ![Test Swagger pour l’API](/help/forms/assets/api-doc-generation.png)
@@ -490,7 +492,7 @@ L’interface utilisateur Swagger fournit une interface interactive pour tester 
    | **Section** | **Paramètre** | **Valeur**. |
    |--------------|---------------|------------|
    | compartiment | Instance AEM | Nom de l’instance AEM sans le nom de domaine Adobe (`.adobeaemcloud.com`) Par exemple, utilisez `pXXXXX-eYYYYY` comme compartiment. |
-   | Sécurité | Jeton porteur | Utilisez le jeton d’accès [&#x200B; à partir des informations d’identification OAuth de serveur à serveur du projet Adobe Developer Console](/help/forms/oauth-api-authetication.md#how-to-generate-an-access-token-using-oauth-server-to-server-authentication) |
+   | Sécurité | Jeton porteur | Utilisez le jeton d’accès [ à partir des informations d’identification OAuth de serveur à serveur du projet Adobe Developer Console](/help/forms/oauth-api-authetication.md#how-to-generate-an-access-token-using-oauth-server-to-server-authentication) |
    | Corps | template | Chargez un fichier XDP pour générer le formulaire PDF. Par exemple, vous pouvez utiliser [ce XDP](/help/forms/assets/ClosingForm.xdp) pour générer un PDF. |
    | Corps | data | Fichier XML facultatif contenant les données à fusionner avec le modèle pour générer un formulaire PDF prérempli. Par exemple, vous pouvez utiliser [ce XML](/help/forms/assets/ClosingForm.xml) pour générer un PDF. |
    | Paramètres | X-Adobe-Accept-Experimental | 1 |
@@ -500,10 +502,10 @@ L’interface utilisateur Swagger fournit une interface interactive pour tester 
    ![API d’envoi](/help/forms/assets/api-send.png)
 
 6. Vérifiez la réponse dans l’onglet **Réponse** :
-   - Si le code de réponse est `200`, cela signifie que le PDF a été créé avec succès.
-   - Si le code de réponse est `400`, cela signifie que les paramètres de requête sont non valides ou incorrects.
-   - Si le code de réponse est `500`, cela signifie qu’il existe une erreur de serveur interne.
-   - Si le code de réponse est `403`, cela signifie qu’il existe une erreur d’autorisation.
+   * Si le code de réponse est `200`, cela signifie que le PDF a été créé avec succès.
+   * Si le code de réponse est `400`, cela signifie que les paramètres de requête sont non valides ou incorrects.
+   * Si le code de réponse est `500`, cela signifie qu’il existe une erreur de serveur interne.
+   * Si le code de réponse est `403`, cela signifie qu’il existe une erreur d’autorisation.
 
    Dans ce cas, le code de réponse est `200`, ce qui signifie que le PDF a bien été généré :
 
@@ -523,11 +525,11 @@ Développez une application Node.js pour générer un formulaire PDF à remplir 
 
 **Conditions préalables**
 
-- Node.js installé sur votre système
-- Instance AEM as a Cloud Service active
-- Jeton porteur pour l’authentification de l’API à partir de Adobe Developer Console
-- Exemple de fichier XDP : [ClosingForm.xdp](/help/forms/assets/ClosingForm.xdp)
-- Exemple de fichier XML : [ClosingForm.xml](/help/forms/assets/ClosingForm.xml)
+* Node.js installé sur votre système
+* Instance AEM as a Cloud Service active
+* Jeton porteur pour l’authentification de l’API à partir de Adobe Developer Console
+* Exemple de fichier XDP : [ClosingForm.xdp](/help/forms/assets/ClosingForm.xdp)
+* Exemple de fichier XML : [ClosingForm.xml](/help/forms/assets/ClosingForm.xml)
 
 Pour développer l’application Node.js, procédez comme suit :
 
@@ -721,57 +723,57 @@ Vous pouvez ouvrir le [PDF généré](/help/forms/assets/create-pdf.png) pour l�
 
 **Symptômes :**
 
-- `403 Forbidden` de retour des requêtes API
-- Message d’erreur : *Accès non autorisé*
+* `403 Forbidden` de retour des requêtes API
+* Message d’erreur : *Accès non autorisé*
 
 **Cause possible :**
 
-- Identifiant client non inscrit dans la configuration `api.yaml` de l’instance AEM
+* Identifiant client non inscrit dans la configuration `api.yaml` de l’instance AEM
 
 #### Problème 2 : Erreur 401 Non Autorisée
 
 **Symptômes :**
 
-- `401 Unauthorized` de retour des requêtes API
-- Message d’erreur : *jeton non valide ou expiré*
+* `401 Unauthorized` de retour des requêtes API
+* Message d’erreur : *jeton non valide ou expiré*
 
 **Causes possibles :**
 
-- Jeton d’accès expiré (valide pendant 24 heures uniquement)
-- Identifiant client et secret client incorrects ou incompatibles
+* Jeton d’accès expiré (valide pendant 24 heures uniquement)
+* Identifiant client et secret client incorrects ou incompatibles
 
 #### Problème 3 : Erreur 404 Introuvable
 
 **Symptômes :**
 
-- `404 Not Found` de retour des requêtes API
-- Message d’erreur : *Ressource introuvable* ou point d’entrée *API introuvable*
+* `404 Not Found` de retour des requêtes API
+* Message d’erreur : *Ressource introuvable* ou point d’entrée *API introuvable*
 
 **Cause possible :**
 
-- Paramètre de compartiment incorrect (ne correspond pas à l’identifiant de l’instance AEM)
+* Paramètre de compartiment incorrect (ne correspond pas à l’identifiant de l’instance AEM)
 
 #### Problème 4 : Échec Du Déploiement Du Pipeline
 
 **Symptômes :**
 
-- Échec de l’exécution de la configuration du pipeline
-- Les journaux de déploiement affichent les erreurs liées aux `api.yaml`
+* Échec de l’exécution de la configuration du pipeline
+* Les journaux de déploiement affichent les erreurs liées aux `api.yaml`
 
 **Causes possibles :**
 
-- Syntaxe YAML non valide (problèmes de mise en retrait, de guillemets ou de format de tableau)
-- `api.yaml` placé dans un répertoire incorrect
-- Identifiant client incorrect ou mal formé dans la configuration
-- Secret client non valide
+* Syntaxe YAML non valide (problèmes de mise en retrait, de guillemets ou de format de tableau)
+* `api.yaml` placé dans un répertoire incorrect
+* Identifiant client incorrect ou mal formé dans la configuration
+* Secret client non valide
 
 #### Problème 5 : échec de l’exécution des API de communication Forms
 
 **Symptômes :**
 
-- Les requêtes d’API renvoient des erreurs indiquant des fonctionnalités non prises en charge ou indisponibles.
-- La génération de PDF à l’aide de XDP et XML ne fonctionne pas.
-- Le déploiement du pipeline s’est terminé avec succès, mais les appels de l’API d’exécution échouent.
+* Les requêtes d’API renvoient des erreurs indiquant des fonctionnalités non prises en charge ou indisponibles.
+* La génération de PDF à l’aide de XDP et XML ne fonctionne pas.
+* Le déploiement du pipeline s’est terminé avec succès, mais les appels de l’API d’exécution échouent.
 
 **Cause possible :**
 
@@ -789,4 +791,4 @@ Pour mettre à jour l’instance AEM afin de localiser les détails de l’envir
 
 ## Articles connexes
 
-- Pour savoir comment configurer un environnement pour le traitement par lots (API asynchrones), consultez [Traitement par lots des communications AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-communications-batch-processing.md).
+* Pour savoir comment configurer un environnement pour le traitement par lots (API asynchrones), consultez [Traitement par lots des communications AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-communications-batch-processing.md).

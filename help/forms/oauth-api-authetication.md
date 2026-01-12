@@ -3,12 +3,9 @@ title: Comment configurer l’authentification de serveur à serveur OAuth ?
 description: Découvrez comment configurer l’authentification de serveur à serveur OAuth pour Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 6bd2e1698cceaf8fe47e19e0645d0782c916644a
+source-git-commit: d9eb9a93aba71a5ef5940c9d1d75cfd4e738c26b
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '799'
 ht-degree: 4%
 
 ---
@@ -22,7 +19,7 @@ L’authentification de serveur à serveur OAuth permet un accès sécurisé par
 
 Avant de commencer, vérifiez que les conditions préalables suivantes sont remplies :
 
-* Assurez-vous d’avoir [accès au Adobe Developer Console](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/requirements/access-rights) spécifique à l’environnement que vous utilisez.
+* Assurez-vous d’avoir [accès au Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights) spécifique à l’environnement que vous utilisez.
 * [Attribuez le rôle d’administrateur système ou de développeur dans le Adobe Admin Console](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions) pour activer l’accès au Adobe Developer Console.
 
 ## Comment générer un jeton d’accès à l’aide de l’authentification de serveur à serveur OAuth ?
@@ -172,7 +169,7 @@ Générez manuellement les jetons d’accès dans Adobe Developer Console :
    1. Cliquez sur le bouton **Générer un jeton d’accès »** dans la section API de votre projet
    2. Copier le jeton d’accès généré
 
-   ![&#x200B; Générer un jeton d’accès &#x200B;](/help/forms/assets/adc-access-token.png)
+   ![ Générer un jeton d’accès ](/help/forms/assets/adc-access-token.png)
 
    >[!NOTE]
    >
@@ -218,10 +215,6 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
 >[!ENDTABS]
 
 Vous pouvez désormais utiliser le jeton d’accès généré pour effectuer un appel API pour les environnements de développement, d’évaluation ou de production.
-
->
->
-> Pour en savoir plus sur l’implémentation serveur à serveur d’OAuth afin de générer un jeton d’accès et d’effectuer des appels API, [cliquez ici](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation).
 
 ## Bonnes pratiques : gestion des informations d’identification pour le développement, l’évaluation et la production
 
