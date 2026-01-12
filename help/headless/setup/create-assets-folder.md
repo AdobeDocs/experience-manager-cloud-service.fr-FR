@@ -4,10 +4,10 @@ description: Utilisez des modèles de fragment de contenu AEM pour définir la s
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 38a4bf89e099432163163e90e08aa0f47407724f
+source-git-commit: 95624ebf1a77dac1f535e199b660096c8efdfa76
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 81%
+source-wordcount: '267'
+ht-degree: 76%
 
 ---
 
@@ -19,7 +19,7 @@ Utilisez des modèles de fragment de contenu AEM pour définir la structure des 
 
 [Maintenant que vous avez créé des modèles de fragments de contenu](create-content-model.md) qui définissent la structure souhaitée pour vos futurs fragments de contenu, vous êtes probablement enthousiaste à l’idée d’en créer.
 
-Cependant, vous devez d’abord créer un dossier de ressources pour les stocker.
+Toutefois, vous devez d’abord créer un dossier de ressources dans lequel vous les stockerez.
 
 Les dossiers de ressources sont utilisés pour [organiser des ressources de contenu traditionnelles](/help/assets/manage-digital-assets.md) tels que des images et des vidéos, ainsi que des fragments de contenu.
 

@@ -4,9 +4,9 @@ description: Définissez la structure du contenu que vous allez créer et diffus
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 95624ebf1a77dac1f535e199b660096c8efdfa76
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '230'
 ht-degree: 50%
 
 ---
@@ -19,7 +19,7 @@ Définissez la structure du contenu que vous allez créer et diffuser à l’aid
 
 [Maintenant que vous avez créé une configuration](create-configuration.md) vous pouvez l’utiliser pour créer des modèles de fragment de contenu.
 
-Les modèles de fragment de contenu définissent la structure des données et du contenu que vous allez créer et gérer dans AEM. Il s’agit en quelque sorte du squelette de votre contenu. Lorsque vous choisissez de créer du contenu, vos auteurs choisissent parmi les modèles de fragment de contenu que vous définissez, ce qui les guide dans la création de contenu.
+Les modèles de fragment de contenu définissent la structure des données et du contenu que vous créez et gérez dans AEM. Il s’agit en quelque sorte du squelette de votre contenu. Lorsque vous choisissez de créer du contenu, vos auteurs choisissent parmi les modèles de fragment de contenu que vous définissez, ce qui les guide dans la création de contenu.
 
 ## Création d’un modèle de fragment de contenu {#how-to-create-a-content-fragment-model}
 
