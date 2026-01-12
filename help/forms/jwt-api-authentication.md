@@ -20,7 +20,7 @@ L’authentification serveur à serveur JWT dans AEM Forms, en particulier pour 
 Avant de commencer, vérifiez que les conditions préalables suivantes sont remplies :
 
 * Assurez-vous d’avoir accès au [Cloud Manager Adobe](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html) spécifique à l’environnement que vous utilisez.
-* Attribuez le rôle [Administrateur système ou Développeur pour accéder à Adobe Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights).
+* Attribuez le rôle [Administrateur système ou Développeur pour accéder à Adobe Cloud Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/requirements/access-rights).
 
 ## Comment générer un jeton d’accès à l’aide des informations d’identification JWT ?
 
