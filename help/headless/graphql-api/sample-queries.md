@@ -4,7 +4,7 @@ description: Apprenez à utiliser GraphQL avec AEM pour pourvoir diffuser du con
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 6f90bfebf2c9898bf8c1ad2643f8edc4ff4dda53
 workflow-type: tm+mt
 source-wordcount: '1927'
 ht-degree: 90%
@@ -374,7 +374,7 @@ vous pouvez alors utiliser une requête pour renvoyer les détails de `name` et 
 
 **Exemple de requête**
 
-```xml
+```graphql
 query {
   cityList(
     includeVariations: true,
@@ -390,7 +390,7 @@ query {
 
 **Exemples de résultats**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -1662,7 +1662,7 @@ Cette requête interroge :
 
 **Exemple de requête**
 
-```xml
+```graphql
 query {
   articleList(
     includeVariations: true  ){
@@ -1689,7 +1689,7 @@ Cette requête interroge :
 
 **Exemple de requête**
 
-```xml
+```graphql
 {
   articleList(
     includeVariations: true,
