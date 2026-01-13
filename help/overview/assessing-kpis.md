@@ -1,13 +1,13 @@
 ---
-title: Accéder aux indicateurs de performance clés (KPI)
-description: Découvrez comment accéder à vos indicateurs clés de performance et définir le processus de création de rapports
+title: Évaluer les KPI
+description: Découvrez comment évaluer vos KPI et définir le processus de création de rapports
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 2a3c93d1a2e214a584fca5ede9a9189143d04889
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Dans une étude de 2018, IDC a analysé la valeur commerciale que plusieurs gran
 
 Pour obtenir les mêmes bénéfices spectaculaires, votre entreprise doit définir des objectifs clairs pour la mise en œuvre de votre Experience Manager. Vous devez également définir des indicateurs de performance clés qui aident tous vos collaborateurs à garder le cap sur ces objectifs.
 
-## Accès aux indicateurs de performance clés
+## Évaluer les KPI
 
 Lors de l’évaluation de vos indicateurs de performance clés, assurez-vous des points suivants :
 
