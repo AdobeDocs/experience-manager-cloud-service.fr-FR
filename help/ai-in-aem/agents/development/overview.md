@@ -3,7 +3,7 @@ title: Présentation de l’agent de développement
 description: Découvrez comment l’agent de développement dans AEM analyse les pipelines ayant échoué dans Cloud Manager et crée des journaux pour suggérer des correctifs de code et accélérer le débogage.
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-source-git-commit: 3e565ba0cd53d9064a9aed20f4d6663781759b63
+source-git-commit: b206c73853e2f81a1bd5a15bb1e0d5d7658f70a5
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 1%
@@ -17,7 +17,7 @@ L’agent de développement permet aux développeurs et aux administrateurs d’
 
 Actuellement, l’agent peut récupérer les statuts de pipeline et vous aider à résoudre les problèmes d’échec des étapes de création en suggérant des correctifs, ce qui vous permet de gagner du temps lors du débogage des déploiements d’AEM as a Cloud Service dans les environnements de développement, d’évaluation et de production. Il examine les journaux de génération et le code associé pour vous recommander un correctif que vous pouvez appliquer manuellement.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478009?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
@@ -51,7 +51,7 @@ Vous accédez à l’agent de développement par le biais de l’assistant d’I
 
 1. Sur la page **Aperçu du programme**, dans la vignette **Pipelines**, cliquez sur un pipeline.
 
-   ![&#x200B; Pipeline sélectionné &#x200B;](/help/ai-in-aem/agents/development/assets/dev-agent-pipeline-select.png)
+   ![ Pipeline sélectionné ](/help/ai-in-aem/agents/development/assets/dev-agent-pipeline-select.png)
 
 1. Sur la page **Génération et analyse du code**, notez l’échec du pipeline.
 
@@ -77,8 +77,6 @@ Vous accédez à l’agent de développement par le biais de l’assistant d’I
 
 La tâche de dépannage du pipeline de l’agent de développement nécessite le rôle Cloud Manager - Développeur ou Cloud Manager - Gestionnaire de programme .
 
-
-
 ## Exemples d’invites {#sample-prompts}
 
 | Prompt | Résultat |
@@ -93,4 +91,3 @@ Le dépannage du pipeline fonctionne à l’étape de création du pipeline full
 Voir [Journaux d’accès et de téléchargement](/help/implementing/cloud-manager/manage-logs.md).
 
 La résolution des problèmes de pipeline n’est pas prise en charge pour les programmes utilisant BYOGIT (apportez votre propre Git).
-
