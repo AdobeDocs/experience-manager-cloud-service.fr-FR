@@ -3,15 +3,15 @@ title: Comment configurer les API synchrones des communications Forms ?
 description: Configuration de l’environnement de développement pour les API synchrones de communications interactives pour Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms,APIs & Integrations
-source-git-commit: a0db7a0a2dc82c9857b34b79fe3b3b6f3e179372
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
-source-wordcount: '2417'
+source-wordcount: '2428'
 ht-degree: 2%
 
 ---
 
 
-# Configuration de l’accès serveur à serveur OAuth pour les API de communication AEM Forms
+# Appeler les API AEM Forms Communications à l’aide de l’authentification de serveur à serveur OAuth
 
 Ce guide fournit des instructions pour configurer et appeler les API synchrones de communications AEM Forms accessibles via Adobe Developer Console à l’aide de l’authentification de serveur à serveur OAuth.
 
@@ -35,7 +35,7 @@ Assurez-vous de disposer des droits d’accès et des autorisations requis avant
 
 >[!NOTE]
 >
-> Pour en savoir plus sur l’attribution de rôles et l’octroi de l’accès aux utilisateurs, consultez l’article [Ajouter des utilisateurs et des rôles](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
+> Pour en savoir plus sur l’attribution de rôles et l’octroi de l’accès aux utilisateurs, consultez l’article [Ajouter des utilisateurs et des rôles](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
 
 **Accès au référentiel Git**
 
@@ -134,7 +134,7 @@ Clonez le référentiel Git de Cloud Manager pour gérer vos fichiers de configu
 2. Recherchez le nom du référentiel et cliquez sur le menu représentant des points de suspension (...)
 3. Copiez l’URL du référentiel.
 
-   ![&#x200B; Copier l’URL du référentiel &#x200B;](/help/forms/assets/copy-repo-url.png)
+   ![ Copier l’URL du référentiel ](/help/forms/assets/copy-repo-url.png)
 
 >[!NOTE]
 >
@@ -253,7 +253,7 @@ Générez manuellement les jetons d’accès dans Adobe Developer Console :
 1. Cliquez sur le bouton **Générer un jeton d’accès »** dans la section API de votre projet
 2. Copier le jeton d’accès généré
 
-   ![&#x200B; Générer un jeton d’accès &#x200B;](/help/forms/assets/adc-access-token.png)
+   ![ Générer un jeton d’accès ](/help/forms/assets/adc-access-token.png)
 
 >[!NOTE]
 >
@@ -302,7 +302,7 @@ Vous pouvez désormais utiliser le jeton d’accès généré pour effectuer un 
 
 >[!NOTE]
 >
-> Pour en savoir plus sur l’authentification de serveur à serveur OAuth via Adobe Developer Console, reportez-vous à l’article [&#x200B; Authentification de serveur à serveur OAuth &#x200B;](/help/forms/oauth-api-authetication.md).
+> Pour en savoir plus sur l’authentification de serveur à serveur OAuth via Adobe Developer Console, reportez-vous à l’article [ Authentification de serveur à serveur OAuth ](/help/forms/oauth-api-authetication.md).
 
 ### Étape 4 : enregistrement de l’ID client avec l’environnement AEM
 
@@ -483,7 +483,7 @@ Maintenant que votre environnement est configuré, vous pouvez commencer à test
 L’interface utilisateur Swagger fournit une interface interactive pour tester les API sans écrire de code. Utilisez la fonctionnalité **Essayer** pour appeler et tester l’API de communication Forms [générer PDF](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm).
 
 1. Accédez à [Référence de l’API de communication Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/) puis ouvrez la documentation de l’[API de communication Forms](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document) dans votre navigateur.
-2. Développez la section **Génération de documents** et sélectionnez [&#x200B; Génère un formulaire PDF à remplir à partir d’un modèle XDP ou PDF, éventuellement avec fusion des données](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm).
+2. Développez la section **Génération de documents** et sélectionnez [ Génère un formulaire PDF à remplir à partir d’un modèle XDP ou PDF, éventuellement avec fusion des données](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm).
 3. Dans le volet de droite, cliquez sur **Essayer**.
 
    ![Test Swagger pour l’API](/help/forms/assets/api-doc-generation.png)
@@ -492,7 +492,7 @@ L’interface utilisateur Swagger fournit une interface interactive pour tester 
    | **Section** | **Paramètre** | **Valeur**. |
    |--------------|---------------|------------|
    | compartiment | Instance AEM | Nom de l’instance AEM sans le nom de domaine Adobe (`.adobeaemcloud.com`) Par exemple, utilisez `pXXXXX-eYYYYY` comme compartiment. |
-   | Sécurité | Jeton porteur | Utilisez le jeton d’accès [&#x200B; à partir des informations d’identification OAuth de serveur à serveur du projet Adobe Developer Console](/help/forms/oauth-api-authetication.md#how-to-generate-an-access-token-using-oauth-server-to-server-authentication) |
+   | Sécurité | Jeton porteur | Utilisez le jeton d’accès [ à partir des informations d’identification OAuth de serveur à serveur du projet Adobe Developer Console](/help/forms/oauth-api-authetication.md#how-to-generate-an-access-token-using-oauth-server-to-server-authentication) |
    | Corps | template | Chargez un fichier XDP pour générer le formulaire PDF. Par exemple, vous pouvez utiliser [ce XDP](/help/forms/assets/ClosingForm.xdp) pour générer un PDF. |
    | Corps | data | Fichier XML facultatif contenant les données à fusionner avec le modèle pour générer un formulaire PDF prérempli. Par exemple, vous pouvez utiliser [ce XML](/help/forms/assets/ClosingForm.xml) pour générer un PDF. |
    | Paramètres | X-Adobe-Accept-Experimental | 1 |
@@ -789,6 +789,10 @@ Pour mettre à jour l’instance AEM afin de localiser les détails de l’envir
 
    ![Mettre à jour l’environnement](/help/forms/assets/update-env.png)
 
-## Articles connexes
-
-* Pour savoir comment configurer un environnement pour le traitement par lots (API asynchrones), consultez [Traitement par lots des communications AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-communications-batch-processing.md).
+>[!MORELIKETHIS]
+>
+>* [Présentation des communications AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [Architecture AEM Forms as a Cloud Service pour les API Adaptive Forms et Communication](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Traitement des communications - API synchrones](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Traitement des communications - API par lots](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [API Forms Communications - Tutoriel](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)

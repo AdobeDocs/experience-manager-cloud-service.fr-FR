@@ -3,7 +3,7 @@ title: API AEM Forms Communications - Présentation
 description: Présentation des API Communications d’AEM Forms, y compris les méthodes d’authentification et la référence API complète
 role: Developer, User
 feature: Adaptive Forms, APIs & Integrations
-source-git-commit: d9eb9a93aba71a5ef5940c9d1d75cfd4e738c26b
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 6%
@@ -21,7 +21,7 @@ Les API d’AEM Forms sont structurées et accessibles via deux consoles princip
 
 * [AEM Developer Console](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console permet d’accéder aux détails, aux configurations, aux comptes techniques et aux informations d’identification de service au niveau de l’environnement, afin de prendre en charge les tâches opérationnelles et d’intégration.
 
-Différentes API prennent en charge différentes [&#x200B; méthodes d’authentification &#x200B;](#authentication-methods).
+Différentes API prennent en charge différentes [ méthodes d’authentification ](#authentication-methods).
 
 ## Méthodes d’authentification
 
@@ -62,15 +62,15 @@ Le tableau ci-dessous répertorie toutes les [API AEM Forms Communications](http
 
 | Point d’entrée de l’API | Description | Modèle d’exécution | Méthode d&#39;authentification |
 | ----- | ------ |------- | ------ |
-| [/adobe/forms/batch/output/config](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Configuration/operation/CreateBatchConfig) | Crée une configuration de lot pour les traitements de génération de documents. | Asynchrone/par lot | [&#x200B; JWT &#x200B;](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/batch/output/config/{configName}](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Configuration/operation/GetBatchConfigbyName) | Récupère les détails d’une configuration de lot spécifique. | Asynchrone/par lot | [&#x200B; JWT &#x200B;](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/batch/output/config/configs](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Configuration/operation/GetAllBatchConfigs) | Renvoie une liste de toutes les configurations de lot disponibles. | Asynchrone/par lot | [&#x200B; JWT &#x200B;](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/batch/output/config/{configName}/execution](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/StartBatchRun) | Démarre une exécution de génération de sortie par lots à l’aide d’une configuration . | Asynchrone/par lot | [&#x200B; JWT &#x200B;](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/batch/output/config/{configName}/execution/{executionId}](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/GetBatchRunInstanceState) | Récupère le statut d’exécution d’un traitement par lots. | Asynchrone/par lot | [&#x200B; JWT &#x200B;](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/batch/output/config/{configName}/exécutions](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/GetAllRunningInstancesForBatch) | Répertorie toutes les instances en cours d’exécution pour une configuration de lot spécifique. | Asynchrone/par lot | [&#x200B; JWT &#x200B;](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/doc/v1/generatePDFOutput](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generatePDFOutput/post) | Génère une sortie PDF de manière synchrone en fonction de modèles et de données. | Synchrone | [&#x200B; JWT &#x200B;](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/doc/v1/generatePrintedOutput](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Batch-Execution/operation/GetAllRunningInstancesForBatch) | Génère des formats de sortie prêts à l’impression (par exemple, PCL, PostScript). | Synchrone | [&#x200B; JWT &#x200B;](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/doc/v1/generate/afp](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generate~1afp/post) | Génère une sortie AFP pour l&#39;impression de gros volumes. | Synchrone | [&#x200B; JWT &#x200B;](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/batch/output/config](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Configuration/operation/CreateBatchConfig) | Crée une configuration de lot pour les traitements de génération de documents. | Asynchrone/par lot | [ JWT ](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/batch/output/config/{configName}](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Configuration/operation/GetBatchConfigbyName) | Récupère les détails d’une configuration de lot spécifique. | Asynchrone/par lot | [ JWT ](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/batch/output/config/configs](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Configuration/operation/GetAllBatchConfigs) | Renvoie une liste de toutes les configurations de lot disponibles. | Asynchrone/par lot | [ JWT ](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/batch/output/config/{configName}/execution](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/StartBatchRun) | Démarre une exécution de génération de sortie par lots à l’aide d’une configuration . | Asynchrone/par lot | [ JWT ](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/batch/output/config/{configName}/execution/{executionId}](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/GetBatchRunInstanceState) | Récupère le statut d’exécution d’un traitement par lots. | Asynchrone/par lot | [ JWT ](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/batch/output/config/{configName}/exécutions](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/GetAllRunningInstancesForBatch) | Répertorie toutes les instances en cours d’exécution pour une configuration de lot spécifique. | Asynchrone/par lot | [ JWT ](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/doc/v1/generatePDFOutput](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generatePDFOutput/post) | Génère une sortie PDF de manière synchrone en fonction de modèles et de données. | Synchrone | [ JWT ](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/doc/v1/generatePrintedOutput](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Batch-Execution/operation/GetAllRunningInstancesForBatch) | Génère des formats de sortie prêts à l’impression (par exemple, PCL, PostScript). | Synchrone | [ JWT ](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/doc/v1/generate/afp](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generate~1afp/post) | Génère une sortie AFP pour l&#39;impression de gros volumes. | Synchrone | [ JWT ](/help/forms/jwt-api-authentication.md) |
 | [/adobe/document/generate/pdfform](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm) | Rend un formulaire PDF (XFA/XDP) avec des données fusionnées. | Synchrone | [Oauth](/help/forms/oauth-api-authetication.md) |
 | [/adobe/document/generate/pdfform/jobs/{id}/status](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFFormJobStatus) | Récupère le statut d’une tâche de génération de formulaire PDF. | Synchrone | [Oauth](/help/forms/oauth-api-authetication.md) |
 | [/adobe/document/generate/pdfform/jobs/{id}/result](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFFormJobResult) | Récupère la sortie/le résultat d’une tâche de formulaire PDF terminée. | Synchrone | [Oauth](/help/forms/oauth-api-authetication.md) |
@@ -80,9 +80,9 @@ Le tableau ci-dessous répertorie toutes les [API AEM Forms Communications](http
 
 | Point d’entrée de l’API | Description | Modèle d’exécution | Méthode d&#39;authentification |
 | ------------------ | ---------------- | ----------| ---------- |
-| [/adobe/forms/assembler/ddx/invoke](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/assembler-sync/#tag/DDX-execution/operation/InvokeDDX) | Exécute les instructions DDX pour combiner, fractionner ou manipuler des fichiers PDF. | Synchrone | [&#x200B; JWT &#x200B;](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/assembler/pdfa/convert](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/assembler-sync/#tag/Document-conversion/operation/ConvertToPDFA) | Convertit un document PDF au format PDF/A. | Synchrone | [&#x200B; JWT &#x200B;](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/assembler/pdfa/validate](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/assembler-sync/#tag/Document-validation/operation/CheckIsPDFA) | Valide si un PDF est conforme à la norme PDF/A | Synchrone | [&#x200B; JWT &#x200B;](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/assembler/ddx/invoke](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/assembler-sync/#tag/DDX-execution/operation/InvokeDDX) | Exécute les instructions DDX pour combiner, fractionner ou manipuler des fichiers PDF. | Synchrone | [ JWT ](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/assembler/pdfa/convert](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/assembler-sync/#tag/Document-conversion/operation/ConvertToPDFA) | Convertit un document PDF au format PDF/A. | Synchrone | [ JWT ](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/assembler/pdfa/validate](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/assembler-sync/#tag/Document-validation/operation/CheckIsPDFA) | Valide si un PDF est conforme à la norme PDF/A | Synchrone | [ JWT ](/help/forms/jwt-api-authentication.md) |
 
 #### API de conversion de documents
 
@@ -185,4 +185,4 @@ Découvrez comment définir un environnement pour les API de communication Forms
 >* [Architecture AEM Forms as a Cloud Service pour les API Adaptive Forms et Communication](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [Traitement des communications - API synchrones](/help/forms/aem-forms-cloud-service-communications.md)
 >* [Traitement des communications - API par lots](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
->* [Traitement des communications - API à la demande](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
+>* [API Forms Communications - Tutoriel](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)

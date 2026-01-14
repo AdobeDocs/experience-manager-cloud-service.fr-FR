@@ -4,17 +4,17 @@ description: Fusionner automatiquement les données avec des modèles XDP et PDF
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
 feature: Adaptive Forms,APIs & Integrations
 role: Admin, Developer, User
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 86%
+source-wordcount: '725'
+ht-degree: 79%
 
 ---
 
 
 # Utilisation du traitement synchrone {#sync-processing-introduction}
 
-Forms as a Cloud Service - Les API de communications vous permettent de créer, assembler et diffuser des communications personnalisées et orientées sur la marque, telles que des correspondances commerciales, des documents, des récapitulatifs, des lettres de traitement des demandes, des avis de prestations, des lettres de traitement des demandes, des factures mensuelles et des kits de bienvenue. Vous pouvez utiliser les API de communication pour combiner un modèle (XFA ou PDF) avec des données client afin de générer des documents aux formats PDF, PS, PCL, DPL, IPL et ZPL.
+Les API de communication de Forms as a Cloud Service vous permettent de créer, d’assembler et de diffuser des communications personnalisées et axées sur la marque. Il peut notamment s’agir de correspondances commerciales, de documents, de relevés, de courriers de traitement des réclamations, d’avis de prestations, de factures mensuelles ou de kits de bienvenue. Vous pouvez utiliser les API de communication pour combiner un modèle (XFA ou PDF) avec des données client afin de générer des documents aux formats PDF, PS, PCL, DPL, IPL et ZPL.
 
 Supposons que vous ayez un ou plusieurs modèles et plusieurs enregistrements de données XML pour chaque modèle. Vous pouvez utiliser les API Communications pour générer un document d’impression pour chaque enregistrement. <!-- You can also combine the records into a single document. --> Le résultat est un document PDF non interactif. Dans ce type de document, les utilisateurs n’ont pas la possibilité de saisir des données dans les champs.
 
@@ -43,7 +43,7 @@ Une opération synchrone est un processus de génération de documents de maniè
 
 Les opérations des API à client unique prennent en charge deux types d’authentification :
 
-* **Authentification de base** : l’authentification de base est un schéma d’authentification simple intégré au protocole HTTP. Le client envoie des requêtes HTTP avec l’en-tête Autorisation qui contient le mot Base suivi d’un espace et d’une chaîne codée en base64 - nom d’utilisateur : mot de passe. Par exemple, pour autoriser en tant qu’administrateur / admin, le client envoie Base [chaîne codée en base64 - nom d’utilisateur] : [chaîne codée en base64 - mot de passe].
+* **Authentification de base** : l’authentification de base est un schéma d’authentification simple intégré au protocole HTTP. Le client envoie des requêtes HTTP avec l’en-tête Autorisation qui contient le mot De base suivi d’un espace et d’un nom d’utilisateur de chaîne codé en base64:password. Par exemple, pour autoriser en tant qu’administrateur / admin, le client envoie Base [chaîne codée en base64 - nom d’utilisateur] : [chaîne codée en base64 - mot de passe].
 
 * **Authentification basée sur les jetons :** l’authentification basée sur les jetons utilise un jeton d’accès (jeton d’authentification du porteur) pour envoyer des requêtes à Experience Manager as a Cloud Service. AEM Forms as a Cloud Service fournit des API pour récupérer en toute sécurité le jeton d’accès. Pour récupérer et utiliser le jeton afin d’authentifier une requête :
 
@@ -57,6 +57,9 @@ Les opérations des API à client unique prennent en charge deux types d’authe
   >
   >Adobe recommande d’utiliser l’authentification basée sur les jetons sur un environnement de production.
 
+  >[!IMPORTANT]
+  >
+  > Pour plus d’informations, consultez les sections [Authentification serveur à serveur OAuth](/help/forms/oauth-api-authetication.md) et [Authentification serveur à serveur JWT](/help/forms/jwt-api-authentication.md).
 <!-- 
 
 ### Authenticate a multi-tenant API
@@ -143,11 +146,12 @@ La [documentation de référence sur les API](https://developer.adobe.com/experi
 
 >[!NOTE]
 >
->Seuls les membres du groupe des utilisateurs et utilisatrices de formulaires peuvent accéder aux API de communication.
+> Pour connaître les étapes détaillées afin d’appeler les API de communication AEM Forms, consultez l’article [Appeler les API de communication AEM Forms à l’aide de l’authentification de serveur à serveur OAuth](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md).
 
 >[!MORELIKETHIS]
 >
->* [Présentation des communications as a Cloud Service AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [&#x200B; Architecture as a Cloud Service AEM Forms pour les API de communication et de Forms adaptatifs](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Présentation des communications AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [Architecture AEM Forms as a Cloud Service pour les API Adaptive Forms et Communication](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [Traitement des communications - API synchrones](/help/forms/aem-forms-cloud-service-communications.md)
->* [Traitement des communications - API de lot](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Traitement des communications - API par lots](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [API Forms Communications - Tutoriel](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
