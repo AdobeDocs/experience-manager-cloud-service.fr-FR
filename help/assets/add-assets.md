@@ -4,7 +4,7 @@ description: Ajoutez vos ressources numériques à [!DNL Adobe Experience Manage
 feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 967923c621774bcbda65bac9428eaaf18a99a9cc
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '3177'
 ht-degree: 96%
@@ -13,7 +13,7 @@ ht-degree: 96%
 
 # Ajoutez vos ressources numériques à [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}
 
-[!DNL Adobe Experience Manager Assets] accepte différents types de ressources numériques provenant de nombreuses sources. Il stocke les binaires et les rendus créés. Il peut aussi effectuer le traitement des ressources à l’aide de divers services de workflow et [!DNL Adobe Sensei], ce qui permet la distribution via de nombreux canaux sur différentes surfaces.
+[!DNL Adobe Experience Manager Assets] accepte différents types de ressources numériques provenant de nombreuses sources. Il stocke les binaires et les rendus créés. Il peut aussi effectuer le traitement des ressources à l’aide de divers services de workflow et [!DNL Adobe AI], ce qui permet la distribution via de nombreux canaux sur différentes surfaces.
 
 [!DNL Adobe Experience Manager] enrichit le contenu binaire des fichiers numériques chargés avec des métadonnées enrichies, des balises intelligentes, des rendus et autres services de gestion des ressources numériques (DAM). Vous pouvez charger divers types de fichiers, tels que des images, des documents et des fichiers d’images brutes, depuis votre dossier local ou un lecteur réseau vers [!DNL Experience Manager Assets].
 
@@ -29,7 +29,7 @@ Vous pouvez également choisir d’effectuer un traitement supplémentaire sur l
 |---------------------|----------------|-----------------|
 | [Interface utilisateur de la console de ressources](#upload-assets) | Chargement occasionnel, facilité de pression et déplacement, chargement à partir du Finder. À ne pas utiliser pour charger de nombreuses ressources. | Tous les utilisateurs |
 | [API de chargement](#upload-using-apis) | Pour les décisions dynamiques pendant le chargement. | Développeur |
-| Application de bureau [[!DNL Experience Manager] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr) | Ingestion de ressources en faible volume, mais pas pour la migration. | Administrateur, spécialiste marketing |
+| Application de bureau [[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr) | Ingestion de ressources en faible volume, mais pas pour la migration. | Administrateur, spécialiste marketing |
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) | Utile lorsque les créatifs et les spécialistes marketing travaillent sur des ressources à partir des applications de bureau [!DNL Creative Cloud] prises en charge. | Créatif, spécialiste marketing |
 | [Outil d’ingestion en masse de ressources](#asset-bulk-ingestor) | Recommandé pour les migrations à grande échelle et les ingestions en masse occasionnelles. Uniquement pour les magasins de données pris en charge. | Administrateur, développeur |
 
@@ -141,14 +141,14 @@ L’outil d’ingestion en masse de ressources peut traiter efficacement de nomb
 Pour charger un plus grand nombre de fichiers, utilisez l’une des méthodes suivantes. Voir aussi les [cas d’utilisation et méthodes](#upload-methods-comparison)
 
 * [API de chargement de ressources](developer-reference-material-apis.md#asset-upload) : utilisez un script ou un outil de chargement personnalisé qui utilise les API pour ajouter un traitement supplémentaire des ressources (par exemple, traduire des métadonnées ou renommer des fichiers), si nécessaire.
-* Application de bureau [[!DNL Experience Manager] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr) : utile pour les professionnels de la création et les spécialistes marketing qui chargent des ressources depuis leur système de fichiers local. Utilisez-la pour charger des dossiers imbriqués disponibles en local.
+* Application de bureau [[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr) : utile pour les professionnels de la création et les spécialistes marketing qui chargent des ressources depuis leur système de fichiers local. Utilisez-la pour charger des dossiers imbriqués disponibles en local.
 * [Outil d’ingestion en masse](#asset-bulk-ingestor) : utilisez-le pour l’ingestion de grandes quantités de ressources, occasionnellement ou au départ, lors du déploiement de [!DNL Experience Manager].
 
 ### Outil d’importation en bloc de ressources {#asset-bulk-ingestor}
 
 Cet outil est fourni uniquement au groupe des administrateurs et administratrices pour l’ingestion à grande échelle de ressources à partir de magasins de données Azure ou S3. Consultez la vidéo présentant la configuration et l’ingestion.
 
->[!VIDEO](https://video.tv.adobe.com/v/341383/?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
 L’image suivante illustre les différentes étapes de l’ingestion de ressources dans Experience Manager à partir d’un magasin de données :
 
@@ -219,9 +219,9 @@ Pour valider la connexion à la source de données, sélectionnez la configurati
 
 ![Message de réussite de lʼimportation en bloc](assets/bulk-import-success-message.png)
 
-### Appeler une exécution test pour la tâche d’importation en bloc {#invoke-test-run-bulk-import}
+### Appeler une exécution test pour la tâche d’importation en masse {#invoke-test-run-bulk-import}
 
-Sélectionnez la configuration et cliquez sur **[!UICONTROL Exécution dʼessai]** pour lancer une exécution test pour la tâche d’importation en bloc. Experience Manager affiche les informations suivantes sur la tâche d’importation en bloc :
+Sélectionnez la configuration et cliquez sur **[!UICONTROL Exécution dʼessai]** pour lancer une exécution test pour la tâche d’import en masse. Experience Manager affiche les informations suivantes sur la tâche d’importation en masse :
 
 ![Résultat de l’exécution d’essai](assets/dry-assets-result.png)
 
@@ -270,7 +270,7 @@ Pour les noms de fichiers de dossiers, le nom et le chemin JCR sont assainis à 
 
 * Les caractères majuscules sont convertis en minuscules.
 * Les caractères Unicode ne sont pas modifiés.
-* Remplacez les caractères spéciaux par un tiret (’-’), par exemple, `new folder` est remplacé par `new-folder` :
+* Remplacez les caractères spéciaux par un tiret (« - »), par exemple, `new folder` est remplacé par `new-folder` :
 
   ```
   "                           
@@ -319,7 +319,7 @@ Pour planifier une importation en bloc ponctuelle ou récurrente, procédez comm
 1. Sélectionnez la configuration et sélectionnez **[!UICONTROL Planification]** dans la barre d’outils.
 1. Définissez une ingestion ponctuelle ou planifiez une planification horaire, quotidienne ou hebdomadaire. Cliquez sur **[!UICONTROL Envoyer]**.
 
-   ![Planification d’une tâche d’ingestion en bloc](assets/bulk-ingest-schedule1.png)
+   ![Planification d’une tâche d’ingestion en masse](assets/bulk-ingest-schedule1.png)
 
 
 #### Affichage du dossier cible des ressources {#view-assets-target-folder}
@@ -328,23 +328,23 @@ Pour afficher l’emplacement cible Ressources où les ressources sont importée
 
 #### Exécution de l’outil d’importation en bloc {#run-bulk-import-tool}
 
-Une fois la [configuration de l’outil d’importation en bloc](#configure-bulk-ingestor-tool) et éventuellement la [gestion de la configuration de l’outil d’importation en bloc](#manage-bulk-import-configuration) terminées, vous pouvez exécuter la tâche de configuration pour démarrer l’ingestion en masse des ressources.
+Une fois la [configuration de l’outil d’importation en masse](#configure-bulk-ingestor-tool) et éventuellement la [gestion de la configuration de l’outil d’importation en masse](#manage-bulk-import-configuration) terminées, vous pouvez exécuter la tâche de configuration pour démarrer l’ingestion en masse des ressources.
 
 Pour démarrer le processus d’importation en masse, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Importation en masse]**, sélectionnez [Configuration de l’importation en masse](#configure-bulk-ingestor-tool), puis cliquez sur **[!UICONTROL Exécuter]**. Cliquez à nouveau sur **[!UICONTROL Exécuter]** pour confirmer.
 
 Experience Manager met à jour le statut de la tâche à **Traitement** et à **Réussi** lors de la réussite de la tâche. Pour afficher les ressources importées dans Experience Manager, cliquez sur **Afficher les ressources**.
 
-Lorsque la tâche est en cours, vous pouvez également sélectionner la configuration et cliquer sur **Arrêter** pour arrêter le processus d’ingestion en bloc. Cliquez sur **Exécuter** pour reprendre le processus dʼingestion. Vous pouvez également cliquer sur **Exécution d’essai** pour connaître les détails des ressources qui sont toujours en attente d’importation.
+Lorsque la tâche est en cours, vous pouvez également sélectionner la configuration et cliquer sur **Arrêter** pour arrêter le processus d’ingestion en masse. Cliquez sur **Exécuter** pour reprendre le processus dʼingestion. Vous pouvez également cliquer sur **Exécution d’essai** pour connaître les détails des ressources qui sont toujours en attente d’importation.
 
 #### Gestion des tâches après lʼexécution {#manage-jobs-after-execution}
 
-Experience Manager vous permet de consulter l’historique des tâches d’importation en bloc. Lʼhistorique de la tâche comprend le statut de la tâche, le créateur ou la créatrice de la tâche, les journaux, ainsi que dʼautres détails tels que la date et lʼheure de début, la date et lʼheure de création et la date et lʼheure de fin.
+Experience Manager vous permet de consulter l’historique des tâches d’importation en masse. Lʼhistorique de la tâche comprend le statut de la tâche, le créateur ou la créatrice de la tâche, les journaux, ainsi que dʼautres détails tels que la date et lʼheure de début, la date et lʼheure de création et la date et lʼheure de fin.
 
 Pour accéder à l’historique des tâches d’une configuration, sélectionnez la configuration, puis cliquez sur **[!UICONTROL Historique des tâches]**. Sélectionnez une tâche, puis cliquez sur **Ouvrir**.
 
-![Planification d’une tâche d’ingestion en bloc](assets/job-history-bulk-import.png)
+![Planification d’une tâche d’ingestion en masse](assets/job-history-bulk-import.png)
 
-Experience Manager affiche l’historique des tâches. Sur la page Historique des tâches d’importation en bloc, vous pouvez également cliquer sur **Supprimer** afin de supprimer cette tâche de la configuration d’importation en bloc.
+Experience Manager affiche l’historique des tâches. Sur la page Historique des tâches d’importation en masse, vous pouvez également cliquer sur **Supprimer** afin de supprimer cette tâche de la configuration d’importation en masse.
 
 
 ## Chargement de ressources à l’aide de clients pour ordinateur de bureau {#upload-assets-desktop-clients}
@@ -416,7 +416,7 @@ Les détails techniques du protocole et des API de chargement, ainsi que les lie
 
 >[!MORELIKETHIS]
 >
->* Application de bureau [[!DNL Adobe Experience Manager] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=fr)
+>* Application de bureau [[!DNL Adobe Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=fr)
 >* [À propos d’ [!DNL Adobe Asset Link]](https://www.adobe.com/fr/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] documentation](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html)
 >* [Référence technique pour le chargement de ressources](developer-reference-material-apis.md#asset-upload)

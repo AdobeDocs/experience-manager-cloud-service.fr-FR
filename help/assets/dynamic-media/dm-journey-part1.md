@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '3615'
-ht-degree: 90%
+source-wordcount: '3614'
+ht-degree: 89%
 
 ---
 
@@ -201,7 +201,7 @@ Voici plusieurs autres cas d’utilisation à prendre en compte.
 
 | **Problème** | **Solution Dynamic Media** |
 |---|---|
-| La création, la mesure et le découpage manuels d’images ou de vidéos pour mettre en évidence le point focal et les afficher de manière appropriée sur toutes les tailles d’écran et tous les appareils demandent beaucoup de temps et de main d’œuvre. | Utilisez le recadrage intelligent dans Dynamic Media, une fonctionnalité d’IA d’Adobe Sensei, pour détecter automatiquement le point focal d’une image ou d’une vidéo et le recadrer pour pouvoir le gérer. |
+| La création, la mesure et le découpage manuels d’images ou de vidéos pour mettre en évidence le point focal et les afficher de manière appropriée sur toutes les tailles d’écran et tous les appareils demandent beaucoup de temps et de main d’œuvre. | Utilise le recadrage intelligent dans Dynamic Media, une fonctionnalité d’IA d’Adobe, pour détecter automatiquement le point focal d’une image ou d’une vidéo et le recadrer pour le gérer. |
 | Temps perdu qui pourrait être mieux investi pour créer des expériences à fort impact. | Capture le point ciblé prévu, quelle que soit la taille de l’écran. |
 | Des ressources à usage unique créées pour chaque expérience et appareil. | Élimine les tâches manuelles fastidieuses et fournit des images et des vidéos à chargement rapide de haute qualité qui s’affichent correctement sur n’importe quel appareil ou écran. |
 
@@ -285,7 +285,7 @@ _Dynamic Media Help topics_
 _Tutoriels Dynamic Media_
 
 * [Utilisation de Dynamic Media avec Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=fr)
-* [Bibliothèque de contenu Adobe Experience Manager](https://experienceleague.adobe.com/fr?lang=fr#recommended/solutions/experience-manager) (recherchez _Dynamic Media_)
+* [Bibliothèque de contenu Adobe Experience Manager](https://experienceleague.adobe.com/?lang=fr#recommended/solutions/experience-manager) (recherchez _Dynamic Media_)
 
 _Visionneuses Dynamic Media_
 

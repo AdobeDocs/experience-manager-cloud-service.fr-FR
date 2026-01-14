@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '3694'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -94,7 +94,7 @@ Le tableau suivant identifie les bonnes pratiques à appliquer lors du codage de
 
 ## À propos de l’utilisation du recadrage intelligent dans les profils vidéo {#about-smart-crop-video}
 
-Le recadrage intelligent de vidéo est une fonctionnalité en option disponible dans les profils vidéo. Cet outil utilise Adobe Sensei pour détecter et recadrer automatiquement le point focal dans toute vidéo adaptative ou progressive que vous avez chargée, quelle que soit sa taille.
+Le recadrage intelligent de vidéo est une fonctionnalité en option disponible dans les profils vidéo. Il s’agit d’un outil qui utilise l’IA d’Adobe pour détecter et recadrer automatiquement le point focal dans toute vidéo adaptative ou progressive que vous avez chargée, quelle que soit sa taille.
 
 Les formats vidéo pris en charge par le recadrage intelligent sont MP4, MKV, MOV, AVI, FLV et WMV.
 
@@ -104,7 +104,7 @@ La taille maximale de fichier vidéo prise en charge par le recadrage intelligen
 * 30 images par seconde (i/s)
 * Taille de fichier de 300 Mo.
 
-Adobe Sensei est limité à 9 000 images. C’est-à-dire cinq minutes à 30 i/s. Si votre vidéo présente une fréquence d’images (IPS) supérieure, la durée de vidéo maximale prise en charge diminue. Par exemple, une vidéo de 60 i/s doit durer deux minutes et demie pour être prise en charge par Adobe Sensei et par le recadrage intelligent.
+L’IA d’Adobe est limitée à 9 000 images. C’est-à-dire cinq minutes à 30 i/s. Si votre vidéo présente une fréquence d’images (IPS) supérieure, la durée de vidéo maximale prise en charge diminue. Par exemple, une vidéo de 60 i/s doit durer deux minutes et demie pour être prise en charge par l’IA d’Adobe et le recadrage intelligent.
 
 ![Recadrage intelligent de vidéo](assets/smart-crop-video.png)
 
@@ -112,11 +112,11 @@ Adobe Sensei est limité à 9 000 images. C’est-à-dire cinq minutes à 30 
 >
 >Pour que le recadrage intelligent de vidéo fonctionne, vous devez inclure au moins un paramètre prédéfini de codage vidéo dans votre profil vidéo.
 
-Pour utiliser le recadrage intelligent de vidéo, vous créez un profil de codage de vidéo adaptative ou progressive. Dans votre profil, utilisez l’outil **[!UICONTROL Smart Crop Ratio]** pour sélectionner des proportions prédéfinies. Par exemple, après avoir défini vos paramètres prédéfinis de codage vidéo, vous pouvez ajouter une définition Paysage mobile avec des proportions de 16x9 et une définition Portrait mobile avec des proportions de 9x16. Les autres proportions ou rapports de recadrage que vous pouvez choisir sont 1x1, 4x3 et 4x5.
+Pour utiliser le recadrage intelligent de vidéo, vous créez un profil de codage de vidéo adaptative ou progressive. Dans votre profil, utilisez l’outil **[!UICONTROL Ratio de recadrage intelligent]** pour sélectionner des proportions prédéfinies. Par exemple, après avoir défini vos paramètres prédéfinis de codage vidéo, vous pouvez ajouter une définition Paysage mobile avec des proportions de 16x9 et une définition Portrait mobile avec des proportions de 9x16. Les autres proportions ou rapports de recadrage que vous pouvez choisir sont 1x1, 4x3 et 4x5.
 
 ![Modification d’un profil de codage vidéo avec le recadrage intelligent](assets/edit-smart-crop-video2.png)
 
-Vous pouvez activer ou désactiver le recadrage intelligent de vidéo dans le profil vidéo à l’aide du curseur à l’extrémité droite de **[!UICONTROL Smart Crop Ratio]** dans l’interface utilisateur.
+Vous pouvez activer ou désactiver le recadrage intelligent de vidéo dans le profil vidéo à l’aide du curseur à l’extrémité droite de **[!UICONTROL Ratio de recadrage intelligent]** dans l’interface d’utilisation.
 
 Après avoir créé et enregistré votre profil vidéo, vous pouvez l’appliquer aux dossiers de votre choix.
 
@@ -175,7 +175,7 @@ Sélectionnez l’icône d’information en regard de chaque option pour accéde
    * Passez à l’étape suivante.
 
 1. (Facultatif) Pour ajouter un recadrage intelligent aux vidéos auxquelles ce profil est appliqué, procédez comme suit :
-   * Sur la page Modifier le profil vidéo, à droite de l’en-tête Smart Crop Ratio, sélectionnez **[!UICONTROL Ajouter]**.
+   * Sur la page Modifier le profil vidéo, à droite de l’en-tête Ratio de recadrage intelligent, sélectionnez **[!UICONTROL Ajouter]**.
    * Dans le champ Nom, entrez un nom qui vous aide à identifier facilement le rapport de recadrage.
    * Dans la liste déroulante **[!UICONTROL Rapport de recadrage]**, sélectionnez le rapport à utiliser.
 
@@ -228,7 +228,7 @@ Sélectionnez l’icône d’information en regard de chaque option pour accéde
 
 1. (Facultatif) Pour ajouter un recadrage intelligent aux vidéos auxquelles ce profil est appliqué, procédez comme suit :
 
-   * Sur la page Modifier le profil vidéo, à droite de l’en-tête Smart Crop Ratio, sélectionnez **[!UICONTROL Ajouter]**.
+   * Sur la page Modifier le profil vidéo, à droite de l’en-tête Ratio de recadrage intelligent, sélectionnez **[!UICONTROL Ajouter]**.
    * Dans le champ Nom, entrez un nom qui vous aidera à identifier facilement le rapport de recadrage.
    * Dans la liste déroulante **[!UICONTROL Rapport de recadrage]**, sélectionnez le rapport à utiliser.
 
@@ -355,7 +355,7 @@ Sélectionnez l’icône d’information pour obtenir une description de la diff
 
 ## Application d’un profil vidéo à des dossiers {#applying-a-video-profile-to-folders}
 
-Lorsque vous affectez un profil de vidéo à un dossier, tous les sous-dossiers héritent automatiquement du profil de son dossier parent. Ainsi, vous ne pouvez affecter qu’un seul profil de vidéo à un dossier. Ainsi, réfléchissez soigneusement à la structure de dossiers de l’emplacement où vous téléchargez, stockez, utilisez et archivez les ressources.
+Lorsque vous affectez un profil vidéo à un dossier, tous les sous-dossiers héritent automatiquement du profil de son dossier parent. Ainsi, vous ne pouvez affecter qu’un seul profil de vidéo à un dossier. Ainsi, réfléchissez soigneusement à la structure de dossiers de l’emplacement où vous téléchargez, stockez, utilisez et archivez les ressources.
 
 Si vous avez affecté un profil vidéo différent à un dossier, le nouveau profil remplace le précédent. Les ressources du dossier précédent restent inchangées. Le nouveau profil sera appliqué aux ressources ajoutées ultérieurement au dossier.
 
@@ -406,7 +406,7 @@ Voir aussi [Retraiter des ressources dans un dossier](/help/assets/dynamic-media
 
 ## Surveillance de la progression d’une tâche de traitement de profil vidéo {#monitoring-the-progress-of-an-encoding-job}
 
-Un indicateur (ou une barre) de progression s’affiche afin que vous puissiez surveiller visuellement la progression d’une tâche de codage vidéo.
+Un indicateur (ou une barre) de progression s’affiche afin que vous puissiez surveiller visuellement la progression d’une tâche de traitement d’un profil vidéo.
 
 Vous pouvez également consulter le fichier `error.log` pour contrôler la progression d’une tâche de codage, voir si le codage est terminé ou afficher les erreurs d’une tâche. Le fichier `error.log` se trouve dans le dossier `logs` où vous avez installé votre instance d’Experience Manager.
 

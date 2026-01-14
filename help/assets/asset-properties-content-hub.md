@@ -3,9 +3,9 @@ title: Aperçu de la ressource et de ses propriétés dans  [!DNL the Content Hu
 description: Découvrez comment prévisualiser des ressources et des propriétés dans  [!DNL Content Hub]
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: 45e731d2286b07db5852138ae1ac914a56b13a6a
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '635'
 ht-degree: 11%
 
 ---
@@ -22,7 +22,7 @@ L’affichage de l’aperçu des ressources et de ses propriétés vous permet d
 * Action plus facile : vous disposez d’informations complètes sur les visuels des ressources et les informations connexes, afin d’agir plus rapidement et avec plus de confiance.
 * Terminé : la ressource apporte plus d’informations et de contexte.
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 [Les utilisateurs de Content Hub](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
 
@@ -109,9 +109,9 @@ Certaines propriétés des ressources affichées dans [!DNL Content Hub] sont d�
 
 <!--* **Tags:** Tags help you categorize assets that can be browsed and searched more efficiently. Tagging helps in propagating the appropriate taxonomy to other users and workflows. -->
 
-* **Balises intelligentes :** [!DNL The Content Hub] utilise les services de contenu dynamique d’Adobe Sensei pour entraîner des ressources à l’aide de l’algorithme de reconnaissance sur la structure basée sur les balises. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes. Les balises intelligentes augmentent la vitesse du contenu de vos projets en vous permettant de trouver rapidement les ressources appropriées. Les balises intelligentes sont un exemple d’informations de ressource qui ne sont pas contenues dans l’image. [!DNL Experience Manager Assets] applique automatiquement les balises intelligentes aux ressources, par défaut.
+* **Balises intelligentes :** [!DNL The Content Hub] utilise les services de contenu dynamique de l’IA dédiée à Adobe pour entraîner des ressources à l’aide de l’algorithme de reconnaissance sur la structure basée sur les balises. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes. Les balises intelligentes augmentent la vitesse du contenu de vos projets en vous permettant de trouver rapidement les ressources appropriées. Les balises intelligentes sont un exemple d’informations de ressource qui ne sont pas contenues dans l’image. [!DNL Experience Manager Assets] applique automatiquement les balises intelligentes aux ressources, par défaut.
 
-* **Balises de couleurs :** [Balises de couleurs](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=fr) permet de reconnaître une ressource à l’aide de couleurs automatiquement identifiées dans une ressource à l’aide des fonctionnalités d’IA d’Adobe Sensei.
+* **Balises de couleurs :** [Balises de couleurs](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) permet de reconnaître une ressource à l’aide de couleurs automatiquement identifiées dans une ressource à l’aide des fonctionnalités de l’IA d’Adobe.
 
 * Date du chargement
 

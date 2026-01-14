@@ -1,10 +1,10 @@
 ---
 title: Balisage intelligent de vos ressources vidéo
-description: Experience Manager ajoute automatiquement des balises intelligentes contextuelles et descriptives aux vidéos en utilisant [!DNL Adobe Sensei].
+description: Experience Manager ajoute automatiquement des balises intelligentes contextuelles et descriptives aux vidéos en utilisant [!DNL Adobe AI].
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: 87d0eea2-83a1-4cfa-a4a5-425d0e8abba6
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 100%
@@ -13,13 +13,13 @@ ht-degree: 100%
 
 # Balisage intelligent de vos ressources vidéo {#video-smart-tags}
 
-Le besoin croissant de nouveaux contenus impose de recourir à des opérations manuelles réduites pour obtenir en un rien de temps des expériences digitales attrayantes. [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] prend en charge le balisage automatique des ressources vidéo à l’aide de l’intelligence artificielle. Le balisage manuel des vidéos peut prendre beaucoup de temps. Cependant, la fonctionnalité de balisage intelligent des vidéos optimisée à l’aide d’[!DNL Adobe Sensei] s’appuie sur des modèles d’intelligence artificielle pour analyser le contenu vidéo et ajouter des balises aux ressources concernées. Ainsi, les utilisateurs des systèmes de gestion des ressources numériques (DAM) peuvent réduire le temps consacré à mettre des expériences enrichissantes à la disposition de leurs clients. Le service de machine learning d’Adobe génère deux jeux de balises pour une vidéo. Le premier ensemble correspond aux objets, scènes et attributs de cette vidéo ; l’autre jeu concerne des actions comme boire, courir et faire du jogging.
+Le besoin croissant de nouveaux contenus impose de recourir à des opérations manuelles réduites pour obtenir en un rien de temps des expériences digitales attrayantes. [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] prend en charge le balisage automatique des ressources vidéo à l’aide de l’intelligence artificielle. Le balisage manuel des vidéos peut prendre beaucoup de temps. Cependant, la fonctionnalité de balisage intelligent des vidéos optimisée à l’aide d’[!DNL Adobe AI] s’appuie sur des modèles d’intelligence artificielle pour analyser le contenu vidéo et ajouter des balises aux ressources concernées. Ainsi, les utilisateurs des systèmes de gestion des ressources numériques (DAM) peuvent réduire le temps consacré à mettre des expériences enrichissantes à la disposition de leurs clients. Le service de machine learning d’Adobe génère deux jeux de balises pour une vidéo. Le premier ensemble correspond aux objets, scènes et attributs de cette vidéo ; l’autre jeu concerne des actions comme boire, courir et faire du jogging.
 
-Le balisage vidéo est activé par défaut dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. Cependant, vous pouvez [exclure le balisage intelligent de vidéos](#opt-out-video-smart-tagging) pour un dossier. Les vidéos sont automatiquement balisées lorsque vous en chargez de nouvelles ou que vous retraitez des vidéos existantes. [!DNL Experience Manager] crée également les miniatures et extrait les métadonnées des fichiers vidéo. Les balises intelligentes s’affichent dans l’ordre décroissant de leur [score de confiance](#confidence-score-video-tag) dans les [!UICONTROL Propriétés] de la ressource.
+Le balisage vidéo est activé par défaut dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. Cependant, vous pouvez exclure le balisage intelligent de vidéos pour un dossier.[](#opt-out-video-smart-tagging) Les vidéos sont automatiquement balisées lorsque vous en chargez de nouvelles ou que vous retraitez des vidéos existantes. [!DNL Experience Manager] crée également les miniatures et extrait les métadonnées des fichiers vidéo. Les balises intelligentes s’affichent dans l’ordre décroissant de leur [score de confiance](#confidence-score-video-tag) dans les [!UICONTROL Propriétés] de la ressource.
 
 ## Balisage intelligent des vidéos lors du chargement {#smart-tag-assets-on-ingestion}
 
-Lorsque vous [chargez des ressources vidéo](add-assets.md#upload-assets) vers [!DNL Adobe Experience Manager] as a [!DNL Cloud Service], les vidéos font l’objet d’un traitement. Une fois le traitement terminé, observez l’onglet [!UICONTROL Simple] de la page [!UICONTROL Propriétés] de la ressource. Les balises intelligentes sont automatiquement ajoutées à la vidéo sous [!UICONTROL Balises intelligentes]. Les microservices de ressources utilisent [!DNL Adobe Sensei] pour créer ces balises intelligentes.
+Lorsque vous [chargez des ressources vidéo](add-assets.md#upload-assets) vers [!DNL Adobe Experience Manager] as a [!DNL Cloud Service], les vidéos font l’objet d’un traitement. Une fois le traitement terminé, observez l’onglet [!UICONTROL Simple] de la page [!UICONTROL Propriétés] de la ressource. Les balises intelligentes sont automatiquement ajoutées à la vidéo sous [!UICONTROL Balises intelligentes]. Les microservices de ressources utilisent [!DNL Adobe AI] pour créer ces balises intelligentes.
 
 ![Elles sont ajoutées aux vidéos et affichées dans l’onglet Simple des propriétés de la ressource.](assets/smart-tags-added-to-videos.png)
 
@@ -29,11 +29,11 @@ Les balises intelligentes appliquées sont triées par ordre décroissant de [sc
 >
 >Il est conseillé de revoir ces balises générées automatiquement pour vous assurer qu’elles sont conformes à votre marque et à ses valeurs.
 
-## Balisage intelligent des vidéos existantes dans la gestion des ressources numériques (DAM)  {#smart-tag-existing-videos}
+## Balisage intelligent des vidéos existantes dans la gestion des ressources numériques (DAM) {#smart-tag-existing-videos}
 
 Les ressources vidéo présentes dans la gestion des ressources numériques (DAM) ne sont pas balisées automatiquement. Vous devez [!UICONTROL retraiter les ressources] manuellement pour générer leurs balises intelligentes.
 
-Pour baliser de manière dynamique des ressources vidéo ou des dossiers (y compris des sous-dossiers) de ressources qui existent déjà dans le référentiel, procédez comme suit :
+Pour appliquer des balises intelligentes à des ressources vidéo, ou des dossiers (y compris des sous-dossiers) de ressources qui existent déjà dans le référentiel, procédez comme suit :
 
 1. Sélectionnez le logo [!DNL Adobe Experience Manager], puis les ressources dans la page [!UICONTROL Navigation].
 
@@ -63,7 +63,7 @@ Pour rechercher des ressources vidéo en fonction des balises intelligentes gén
 
 Les résultats de la recherche affichent les ressources vidéo en fonction de la balise spécifiée.
 
-Les résultats de la recherche conjuguent les ressources vidéo avec des mots-clés recherchés dans les métadonnées et les ressources vidéo associées à des balises intelligentes avec les mots-clés recherchés. Cependant, les résultats de recherche qui correspondent à tous les termes de recherche dans les champs de métadonnées s’affichent en premier, suivis des résultats correspondant à l’un des termes de recherche des balises intelligentes. Pour plus d’informations, voir [Comprendre les résultats de recherches [!DNL Experience Manager] avec des balises intelligentes](smart-tags.md#understand-search).
+Les résultats de la recherche conjuguent les ressources vidéo avec des mots-clés recherchés dans les métadonnées et les ressources vidéo associées à des balises intelligentes avec les mots-clés recherchés. Cependant, les résultats de recherche qui correspondent à tous les termes de recherche dans les champs de métadonnées s’affichent en premier, suivis des résultats correspondant à l’un des termes de recherche des balises intelligentes. Pour plus d’informations, voir [Comprendre les résultats de recherche  [!DNL Experience Manager]  avec des balises intelligentes](smart-tags.md#understand-search).
 
 ## Modération des balises intelligentes des vidéos {#moderate-video-smart-tags}
 
@@ -105,13 +105,13 @@ Pour exclure (opt-out) la génération automatique de balises intelligentes des 
 
 ## Score de confiance {#confidence-score-video-tag}
 
-[!DNL Adobe Experience Manager] applique un seuil minimal de confiance aux balises intelligentes d’objet et d’action pour éviter toute surcharge en balises, ce qui pourrait ralentir l’indexation. Les résultats de la recherche de ressources sont classés en fonction des scores de confiance, ce qui améliore généralement ces résultats au-delà de ce qu’une inspection des balises affectées aux ressources vidéo suggérerait. Les balises inexactes présentent souvent des scores de confiance faibles, de sorte qu’elles apparaissent rarement en haut de la liste des balises intelligentes des ressources.
+[!DNL Adobe Experience Manager] applique un seuil minimal de confiance aux balises intelligentes d’objet et d’action pour éviter toute surcharge en balises, ce qui pourrait ralentir l’indexation. Les résultats de la recherche de ressources sont classés en fonction des scores de confiance, ce qui améliore généralement ces résultats au-delà de ce qu’une inspection des balises affectées aux ressources vidéo suggérerait. Les balises inexactes présentent souvent des scores de confiance faibles, de sorte qu’elles apparaissent rarement en haut de la liste des balises intelligentes pour les ressources.
 
 Le seuil par défaut pour les balises d’action et d’objet dans [!DNL Adobe Experience Manager] est de 0,7 (il doit être compris entre 0 et 1). Si certaines ressources vidéo ne sont pas munies d’une balise spécifique, c’est que l’algorithme donne un score de confiance inférieur à 70 % d’assurance pour les balises possédant une prédiction. Le seuil par défaut n’est pas systématiquement optimal pour tous les utilisateurs. Vous pouvez donc modifier la valeur du score de confiance dans la configuration OSGI.
 
 Pour ajouter la configuration OSGI du score de confiance au projet déployé dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] à l’aide de [!DNL Cloud Manager] :
 
-* Dans le projet [!DNL Adobe Experience Manager] (`ui.config` depuis Archetype 24, ou précédemment `ui.apps`), la configuration OSGi`config.author`, incluez un fichier de configuration nommé `com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json` avec le contenu suivant :
+* Dans le projet [!DNL Adobe Experience Manager] (`ui.config` depuis Archetype 24, ou précédemment `ui.apps`), la configuration OSGi`config.author`, incluez un fichier de configuration nommé `com.adobe.cq.assetcompute.impl.aisdk.AISdkImpl.cfg.json` avec le contenu suivant :
 
 ```json
 {
@@ -126,13 +126,13 @@ Pour ajouter la configuration OSGI du score de confiance au projet déployé dan
 
 ## Restrictions {#video-smart-tagging-limitations}
 
-* Vous ne pouvez pas entraîner le service qui applique les balises intelligentes aux vidéos en utilisant des vidéos spécifiques. Le processus fonctionne avec les paramètres [!DNL Adobe Sensei] par défaut.
+* Vous ne pouvez pas entraîner le service qui applique les balises intelligentes aux vidéos en utilisant des vidéos spécifiques. Le processus fonctionne avec les paramètres [!DNL Adobe AI] par défaut.
 
 * La progression du balisage n’est pas affichée.
 
-* Seules les vidéos d’une taille de fichier de moins de 300 Mo sont balisées automatiquement. Le service [!DNL Adobe Sensei] ignore les fichiers vidéo de plus grande taille.
+* Seules les vidéos d’une taille de fichier de moins de 300 Mo sont balisées automatiquement. Le service [!DNL Adobe AI] ignore les fichiers vidéo de plus grande taille.
 
-* Seules sont balisées les vidéos dans les formats de fichier et les codecs pris en charge mentionnés dans [Balises intelligentes](/help/assets/smart-tags.md#smart-tags-supported-file-formats).
+* Seules sont balisées les vidéos dans les formats de fichiers et les codecs pris en charge mentionnés dans [Balises intelligentes](/help/assets/smart-tags.md#smart-tags-supported-file-formats).
 
 >[!MORELIKETHIS]
 >

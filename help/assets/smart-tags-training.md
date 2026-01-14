@@ -1,9 +1,9 @@
 ---
-title: 'Balisage automatique des ressources avec le service dynamique [!DNL Adobe Sensei] '
+title: 'Balisage automatique des ressources avec le service dynamique [!DNL Adobe AI] '
 description: Balisez les ressources à l’aide d’un service d’intelligence artificielle qui applique des balises commerciales contextuelles et descriptives.
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: a579e2e25ecff93f6f1487ec0bcd317df09751cf
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 66%
@@ -13,7 +13,7 @@ ht-degree: 66%
 
 # Entraînement des balises intelligentes
 
-L’entraînement des balises intelligentes vous permet d’entraîner vos balises afin que vous puissiez spécifier les informations si les balises appropriées ne sont pas présentes. Il utilise un cadre d’intelligence artificielle de [Adobe Sensei](https://business.adobe.com/fr/why-adobe/experience-cloud-artificial-intelligence.html) pour entraîner son algorithme de reconnaissance d’images par rapport à votre structure de balises et de votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes. [!DNL Experience Manager Assets] applique automatiquement les balises intelligentes aux ressources chargées, par défaut.
+L’entraînement des balises intelligentes vous permet d’entraîner vos balises afin que vous puissiez spécifier les informations si les balises appropriées ne sont pas présentes. Il utilise un cadre d’intelligence artificielle de l’[IA d’Adobe](https://business.adobe.com/ai/adobe-genai.html) pour entraîner son algorithme de reconnaissance d’images par rapport à votre structure de balises et de votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes. [!DNL Experience Manager Assets] applique automatiquement les balises intelligentes aux ressources chargées, par défaut.
 
 ## Détermination des exigences de l’entraînement sur les balises intelligentes {#smart-tag-training-requirement}
 
@@ -118,14 +118,14 @@ Vérifiez que les images figurant dans la série de formation sont conformes aux
 >[!NOTE]
 >
 >Vous pouvez utiliser les mêmes images pour entraîner différents modèles de balises. Cependant, ces modèles n’associent pas une image à plus d’une balise dans un modèle donné. Il est donc possible de baliser la même image avec des balises différentes appartenant à différents modèles.
->&#x200B;>Vous ne pouvez pas annuler l’entraînement. Les instructions ci-dessus doivent vous aider à choisir les bonnes images pour l’entraînement.
+>Vous ne pouvez pas annuler l’entraînement. Les instructions ci-dessus doivent vous aider à choisir les bonnes images pour l’entraînement.
 
 ## Entraînement du modèle pour vos balises personnalisées {#train-model}
 
 Pour créer et entraîner un modèle pour vos balises spécifiques à votre entreprise, procédez comme suit :
 
 1. Créez les balises nécessaires et la structure de balise appropriée. Chargez les images appropriées dans le référentiel de gestion des ressources numériques (DAM).
-1. Dans l’interface utilisateur d’[!DNL Experience Manager Cloud Service], accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Entraînement des balises intelligentes]**.
+1. Dans l’interface utilisation d’[!DNL Experience Manager Cloud Service], accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Entraînement des balises intelligentes]**.
 1. Cliquez sur **[!UICONTROL Créer]**. Indiquez un **[!UICONTROL titre]** et une **[!UICONTROL description]**.
 1. Cliquez sur l’icône de dossier dans le champ **[!UICONTROL Balises]**. Une fenêtre contextuelle s’ouvre.
 1. Recherchez ou sélectionnez les balises appropriées parmi les balises existantes dans `cq-tags` que vous souhaitez ajouter au modèle. Cliquez sur **[!UICONTROL Suivant]**.
@@ -142,7 +142,7 @@ Pour créer et entraîner un modèle pour vos balises spécifiques à votre entr
 1. Pour avoir un aperçu des miniatures des images sélectionnées, cliquez sur l’accordéon situé face à une balise. Vous pouvez modifier votre sélection en cliquant sur **[!UICONTROL Ajouter les ressources]**. Une fois la sélection effectuée, cliquez sur **[!UICONTROL Envoyer]**. L’interface utilisateur affiche une notification au bas de la page indiquant que l’entraînement est lancé.
 1. Vérifiez le statut de l’entraînement dans la colonne **[!UICONTROL Statut]** pour chaque modèle de balise. Les statuts possibles sont [!UICONTROL En Attente], [!UICONTROL Entraîné(s)] et [!UICONTROL Échec].
 
-![Workflow d’entraînement du modèle de balisage pour le balisage intelligent](assets/smart-tag-model-training-flow.png)
+![Workflow d’entraînement du modèle de balisage pour les balises intelligentes](assets/smart-tag-model-training-flow.png)
 
 *Figure : Étapes du workflow d’entraînement du modèle de balisage.*
 
@@ -155,21 +155,21 @@ Pour vérifier que le service de balises intelligentes est entraîné sur vos ba
 1. Sélectionnez le rapport **[!UICONTROL Entraînement des balises intelligentes]**, puis cliquez sur **[!UICONTROL Suivant]** dans la barre d’outils.
 1. Indiquez un titre et une description pour le rapport. Sous **[!UICONTROL Planifier le rapport]**, laissez l’option **[!UICONTROL Maintenant]** sélectionnée. Si vous souhaitez planifier le rapport pour une date ultérieure, sélectionnez **[!UICONTROL Plus tard]** et spécifiez une date et une heure. Ensuite, cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
 1. Dans la page **[!UICONTROL Rapports de ressources]**, sélectionnez le rapport que vous avez généré. Pour afficher le rapport, cliquez sur **[!UICONTROL Afficher]** dans la barre d’outils.
-1. Passez en revue les détails du rapport. Le rapport affiche le statut d’identification des balises que vous avez entraînées. La couleur verte de la colonne **[!UICONTROL Statut de l’entraînement]** indique que le service de balises intelligentes est entraîné pour la balise. La couleur jaune indique que le service n’est que partiellement entraîné pour une balise particulière. Pour entraîner complètement le service pour une balise, ajoutez d’autres images avec cette balise particulière et exécutez le workflow d’entraînement. Si vous ne voyez pas vos balises dans ce rapport, exécutez à nouveau le workflow d’entraînement pour ces balises.
+1. Passez en revue les détails du rapport. Le rapport affiche le statut d’identification des balises que vous avez entraînées. La couleur verte de la colonne **[!UICONTROL Statut de l’entraînement]** indique que le service Balises intelligentes est entraîné pour la balise. La couleur jaune indique que le service n’est que partiellement entraîné pour une balise particulière. Pour entraîner complètement le service pour une balise, ajoutez d’autres images avec cette balise particulière et exécutez le workflow d’entraînement. Si vous ne voyez pas vos balises dans ce rapport, exécutez à nouveau le workflow d’entraînement pour ces balises.
 1. Pour télécharger le rapport, sélectionnez-le dans la liste, puis cliquez sur **[!UICONTROL Télécharger]** dans la barre d’outils. Le rapport est téléchargé sous la forme d’une feuille de calcul.
 
 >[!NOTE]
 >
 >Que se passe-t-il si je souhaite transférer l’entraînement aux balises intelligentes d’une instance à une autre via une exportation ?
->&#x200B;>Vous n’avez pas besoin d’exporter l’entraînement aux balises intelligentes si l’environnement appartient à la même organisation IMS. Il est automatiquement partagé. Si l’environnement se trouve dans plusieurs organisations IMS, il n’est alors pas possible de partager ou d’exporter l’entraînement sur les balises intelligentes.
+>Vous n’avez pas besoin d’exporter l’entraînement aux balises intelligentes si l’environnement appartient à la même organisation IMS. Il est automatiquement partagé. Si l’environnement se trouve dans plusieurs organisations IMS, il n’est alors pas possible de partager ou d’exporter l’entraînement sur les balises intelligentes.
 
 ## Restrictions et bonnes pratiques relatives aux balises intelligentes {#limitations-smart-tags-training}
 
 * Pour entraîner le modèle, utilisez les images les plus appropriées. L’entraînement ne peut pas être annulé ou le modèle d’entraînement ne peut pas être supprimé. La précision de votre balisage dépend de l’entraînement en cours. Il doit donc être effectué soigneusement.
-* Vous ne pouvez pas entraîner le service qui applique les balises intelligentes aux vidéos en utilisant des vidéos spécifiques. Le processus fonctionne avec les paramètres [!DNL Adobe Sensei] par défaut.
+* Vous ne pouvez pas entraîner le service qui applique les balises intelligentes aux vidéos en utilisant des vidéos spécifiques. Le processus fonctionne avec les paramètres [!DNL Adobe AI] par défaut.
 
 
 >[!NOTE]
 >
 >La capacité des balises intelligentes à s’entraîner à partir de vos balises et à les appliquer à d’autres images dépend de la qualité des images que vous utilisez pour l’entraînement.
->&#x200B;>Pour obtenir des résultats optimaux, Adobe recommande d’utiliser des images visuellement similaires afin d’entraîner le service pour chaque balise.
+>Pour obtenir des résultats optimaux, Adobe recommande d’utiliser des images visuellement similaires afin d’entraîner le service pour chaque balise.

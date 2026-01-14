@@ -4,10 +4,10 @@ description: Présentation de l’architecture d’Adobe Experience Manager as a
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: ht
-source-wordcount: '2711'
-ht-degree: 100%
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+workflow-type: tm+mt
+source-wordcount: '2710'
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 >id="intro_aem_cloudservice_architecture"
 >title="Présentation de l’architecture d’AEM as a Cloud Service"
 >abstract="Dans cet onglet, vous pouvez afficher la nouvelle architecture d’AEM as a Cloud Service et comprendre les modifications. AEM a généré une architecture dynamique avec un nombre variable d’images. Il est donc important de prendre le temps de comprendre l’architecture cloud."
->additional-url="https://video.tv.adobe.com/v/346181?captions=fre_fr" text="Aperçu de l’architecture"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="Aperçu de l’architecture"
 
 Adobe Experience Manager (AEM) as a Cloud Service propose un ensemble de services composables pour la création et la gestion d’expériences à fort impact.
 
@@ -141,7 +141,7 @@ Il existe d’autres services connexes :
 * Le service de télémétrie opérationnelle :
    * est chargé de collecter les mesures clés d’une expérience client (telles que les pages vues, les principaux éléments web vitaux, les événements de conversion) et de répondre aux requêtes associées (par exemple, les principales pages vues d’un domaine donné au cours des 7 derniers jours).
 * Le service Asset Compute :
-   * est responsable du traitement des images, vidéos et documents chargés. Par exemple, des fichiers PDF et Adobe Photoshop. Le traitement peut utiliser Adobe Sensei pour extraire des métadonnées image et vidéo (telles que des balises descriptives ou des tons de couleur primaires), puis générer des rendus (tels que des tailles ou des formats différents), en accédant aux API telles que les API Adobe Photoshop et Adobe Lightroom.
+   * est responsable du traitement des images, vidéos et documents chargés. Par exemple, des fichiers PDF et Adobe Photoshop. Le traitement peut utiliser l’IA d’Adobe pour extraire des métadonnées d’image et de vidéo (telles que des balises descriptives ou des tons de couleurs primaires), puis générer des rendus (tels que différentes tailles ou formats), avec un accès aux API telles que les API Adobe Photoshop et Adobe Lightroom.
 * Le service Identity Management (IMS) :
    * est l’emplacement central responsable de la gestion et de l’authentification des personnes et des groupes de personnes pour une application Adobe Experience Cloud donnée (par exemple, Cloud Manager ou le niveau de création AEM) ;
    * est accessible via l’Adobe Admin Console.

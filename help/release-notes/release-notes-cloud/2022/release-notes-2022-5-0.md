@@ -4,16 +4,16 @@ description: Notes de mise à jour de la version 2022.5.0 d’ [!DNL Adobe Expe
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 67%
+source-wordcount: '799'
+ht-degree: 64%
 
 ---
 
 # Notes de mise à jour de la version 2022.5.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La section suivante décrit les notes de mise à jour des fonctionnalités de la version 2022.5.0 de [!DNL Experience Manager] as a Cloud Service.
+La section ci-dessous présente les notes de mise à jour des fonctionnalités de la version 2022.5.0 d’[!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -47,11 +47,11 @@ Consultez la vidéo Aperçu de la version de mai 2022 pour obtenir un résumé 
 
 * L’[imagerie dynamique Dynamic Media](https://medium.com/adobetech/one-solution-fits-all-smart-imaging-with-aem-dynamic-media-be690b62df9f) prend désormais en charge le format de fichier AVIF. Améliorez davantage les Signaux Web essentiels de Google (Largest Contentful Paint) avec l’AVIF, qui offre une réduction de taille supplémentaire de 20 % par rapport à WebP. Au total, l’AVIF offre une réduction de taille moyenne de 41 % sur le JPEG (pouvant aller jusqu’à 76 % dans certaines images).
 
-* [!UICONTROL Experience Manager Assets Brand Portal] exécute désormais des tâches automatiques toutes les 12 heures pour supprimer toutes les ressources Brand Portal publiées sur AEM. Par conséquent, vous n’avez pas besoin de supprimer manuellement les ressources du dossier Contribution pour que la taille du dossier reste inférieure à la limite de seuil. [Nouveautés d’Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=fr).
+* [!UICONTROL Experience Manager Assets Brand Portal] exécute désormais des tâches automatiques toutes les 12 heures afin de supprimer toutes les ressources Brand Portal publiées sur AEM. Par conséquent, vous n’avez pas besoin de supprimer manuellement les ressources du dossier Contribution pour que la taille du dossier reste inférieure à la limite de seuil. [Nouveautés d’Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=fr).
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Assets] {#prerelease-features-assets}
 
-Experience Manager Assets utilise désormais les fonctionnalités d’IA d’Adobe Sensei pour [faire la distinction entre les couleurs d’une image et les appliquer automatiquement sous forme de balises lors de l’ingestion](/help/assets/color-tag-images.md). Ces balises permettent d’améliorer l’expérience de recherche en fonction de la composition des couleurs de l’image. Vous pouvez configurer le nombre de couleurs balisées vers une image dans une plage comprise entre 1 et 40 afin de pouvoir rechercher ultérieurement des images en fonction de ces couleurs.
+Experience Manager Assets utilise désormais les fonctionnalités de l’IA d’Adobe pour [faire la distinction entre les couleurs d’une image et les appliquer automatiquement sous forme de balises lors de l’ingestion](/help/assets/color-tag-images.md). Ces balises permettent d’améliorer l’expérience de recherche en fonction de la composition des couleurs de l’image. Vous pouvez configurer le nombre de couleurs, comprises entre 1 et 40, qui sont balisées vers une image afin de pouvoir rechercher ultérieurement des images en fonction de ces couleurs.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -60,7 +60,7 @@ Experience Manager Assets utilise désormais les fonctionnalités d’IA d’Ado
 
 * **Intégrer des formulaires adaptatifs à Microsoft® Power Automate** : vous pouvez désormais configurer un formulaire adaptatif pour exécuter un flux cloud Microsoft® Power Automate lors de l’envoi. Le formulaire adaptatif configuré envoie les données capturées, les pièces jointes et le document d’enregistrement au flux Cloud Power Automate pour traitement. Il vous permet de créer une expérience de capture de données personnalisée tout en tirant parti de la puissance de Microsoft® Power Automate pour élaborer des logiques commerciales autour des données capturées et automatiser les workflows client.
 
-* **Assistant de création d’un formulaire adaptatif** : vous pouvez utiliser un assistant convivial pour créer rapidement un Forms adaptatif. L’assistant fournit une navigation rapide par onglets pour sélectionner facilement un modèle, un style, des champs et des options d’envoi préconfigurés afin de créer un formulaire adaptatif.
+* **Assistant de création d’un formulaire adaptatif** : vous pouvez utiliser un assistant convivial destiné aux utilisateurs professionnels pour créer rapidement un Forms adaptatif. L’assistant fournit une navigation rapide par onglets pour sélectionner facilement un modèle, un style, des champs et des options d’envoi préconfigurés afin de créer un formulaire adaptatif.
 
   ![Assistant de création d’un formulaire adaptatif](/help/release-notes/assets/wizard.png)
 
@@ -72,7 +72,7 @@ Experience Manager Assets utilise désormais les fonctionnalités d’IA d’Ado
 
 <!-- Image was not found during PR validation despite correct path   ![Enable wantlist](/help/assets/CIF/enable-wishlist.png) -->
 
-* Prise en charge d’autres composants commerciaux marketing : les composants peuvent être configurés pour afficher un appel à l’action de type &quot;ajouter au panier&quot; et &quot;ajouter à la liste de contrôle&quot;.
+* Prise en charge de composants commerciaux marketing supplémentaires : les composants peuvent être configurés pour afficher un call-to-action de type « ajouter au panier » et « ajouter à une liste de souhaits ».
 
   ![Raccourci de l’éditeur de sites vers le cockpit du produit](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
@@ -81,19 +81,19 @@ Experience Manager Assets utilise désormais les fonctionnalités d’IA d’Ado
 
 ### Nouveautés {#what-is-new-foundation}
 
-* L’option &quot;Ajouter une arborescence&quot; sous l’écran de l’administrateur de l’agent de réplication **Distribute tab**, précédemment annoncé comme obsolète, a été supprimée le 20 juin 2022 ou peu de temps après. Les packages avec arborescence de contenu doivent plutôt être répliqués à l’aide des workflows [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Publier l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow).
+* L’option « Ajouter une arborescence » sous l’onglet **Distribuer** de l’écran d’administration de l’agent de réplication, précédemment annoncée comme obsolète, a été supprimée le 20 juin 2022 ou peu de temps après. Les packages avec arborescence de contenu doivent plutôt être répliqués à l’aide des workflows [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Publier l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow).
 
-* L’utilisation de l’écran d’administration de l’agent de réplication ou de l’API de réplication pour distribuer des modules de contenu de plus de 10 Mo (noeuds avec des propriétés, sans inclure les fichiers binaires) est obsolète et appliquée le 12 septembre 2022 ou peu de temps après. À la place, les workflows [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Publier l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) seront utilisés pour répliquer ces packages de contenu volumineux. En juillet, un message d’avertissement s’affiche dans l’écran **Distribute tab** de l’agent de réplication si vous tentez de répliquer ces packages de contenu volumineux, ainsi que dans le journal des erreurs AEM chaque fois que l’API de réplication est utilisée pour répliquer ces packages de contenu volumineux. En septembre, les avertissements ont été remplacés par des erreurs. Ajustez vos processus en conséquence.
+* L’utilisation de l’écran d’administration de l’agent de réplication ou de l’API de réplication pour distribuer des packages de contenu de plus de 10 Mo (nœuds avec des propriétés, sans inclure les fichiers binaires) est obsolète et mise en œuvre le 12 septembre 2022 ou peu de temps après. À la place, les workflows [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Publier l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) seront utilisés pour répliquer ces modules de contenu volumineux. En juillet, un message d’avertissement s’affichera dans l’écran de l’administrateur de l’agent de réplication **onglet Distribution** si vous tentez de répliquer ces packages de contenu volumineux, ainsi que dans le journal d’erreurs AEM chaque fois que l’API de réplication est utilisée pour répliquer ces packages de contenu volumineux. En septembre, les avertissements ont été remplacés par des erreurs. Ajustez vos processus en conséquence.
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Experience Manager] {#prerelease-features-foundation}
 
-* AEM as a Cloud Service est désormais intégré à Unified Shell pour améliorer l’expérience utilisateur et l’unifier avec toutes les autres applications Experience Cloud. Voir [AEM as a Cloud Service sur Shell unifié](/help/overview/aem-cloud-service-on-unified-shell.md) pour plus d’informations.
+* AEM as a Cloud Service est désormais intégré à Unified Shell pour améliorer l’expérience utilisateur et l’unifier avec toutes les autres applications Experience Cloud. Voir [AEM as a Cloud Service sur Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) pour plus d’informations.
 
 ## Couche de sécurité [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation-security}
 
 ### Dépréciation de TLS 1.0 et 1.1
 
-À compter du 30 juin 2022, l’as a Cloud Service Experience Manager aura besoin d’un exchange de données et de communication réseau plus sécurisé avec les systèmes des utilisateurs. AEM utilisera exclusivement le protocole TLS (Transport Layer Security), version 1.2. Les anciennes versions de TLS 1.0 et 1.1 sont désormais obsolètes.
+À compter du 30 juin 2022, Experience Manager as a Cloud Service aura besoin d’une communication réseau plus sécurisée et d’un échange de données avec les systèmes utilisateurs. AEM utilisera exclusivement le protocole TLS (Transport Layer Security), version 1.2. Les anciennes versions de TLS 1.0 et 1.1 sont désormais obsolètes.
 
 Si vous continuez à utiliser des versions antérieures à TLS 1.0 et 1.1, vous risquez de perdre l’accès à Experience Manager as a Cloud Service.
 

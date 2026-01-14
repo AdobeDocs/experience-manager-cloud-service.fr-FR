@@ -4,10 +4,10 @@ description: Notes de mise à jour de la version 2021.10.0 d’ [!DNL Adobe Exp
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '1436'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -46,7 +46,7 @@ Regardez la vidéo [Aperçu de la mise à jour d’octobre 2021](https://video.
 
 ### Nouvelle fonctionnalité dans le canal de version préliminaire [!DNL Assets] {#assets-prerelease-features}
 
-* Le recadrage intelligent et l’échantillon d’images de [!DNL Dynamic Media] sont désormais optimisés par les derniers services Sensei, qui génèrent des recadrages et des échantillons améliorés. Une amélioration a également été lancée afin de générer un contenu de recadrage différent, pour les mêmes proportions mais avec des résolutions différentes. En outre, les modifications manuelles sont conservées lors du retraitement, si la largeur et la hauteur du profil d’image ne changent pas.
+* Le recadrage intelligent et l’échantillon d’images [!DNL Dynamic Media] sont désormais optimisés par les derniers services d’IA, qui génèrent des recadrages et des échantillons améliorés. Une amélioration a également été lancée afin de générer un contenu de recadrage différent, pour les mêmes proportions mais avec des résolutions différentes. En outre, les modifications manuelles sont conservées lors du retraitement, si la largeur et la hauteur du profil d’image ne changent pas.
 
 * Les balises intelligentes sont automatiquement appliquées aux ressources à l’aide des microservices de ressources, au lieu des services de contenu dynamique. Le modèle sous-jacent est mis à jour afin d’améliorer les résultats du balisage et de réduire les biais. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
@@ -60,20 +60,20 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### Nouveautés de [!DNL Forms] {#what-is-new-forms-oct-2021}
 
-* **Analytics for Adaptive Forms** : vous pouvez désormais capturer et suivre le comportement des utilisateurs connectés et non connectés (anonymes) par le biais d’Adobe Analytics pour Adaptive Forms afin de collecter les informations sur les utilisateurs. Il permet de prendre des décisions éclairées basées sur les données afin d’améliorer l’expérience client.
+* **Analytics pour Forms adaptative** : vous pouvez désormais capturer et suivre le comportement des utilisateurs connectés et non connectés (anonymes) au moyen d’Adobe Analytics pour Forms adaptatif en vue de recueillir des informations sur les utilisateurs. Il permet de prendre des décisions éclairées basées sur les données afin d’améliorer l’expérience client.
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Forms] {#prerelease-features-forms-oct-2021}
 
 * **Externaliser les données des workflows AEM pour un traitement sécurisé** : vous pouvez stocker les données de workflows AEM (données de variables de workflows AEM) qui contiennent des éléments de données à caractère personnel dans un référentiel géré par le client pour un traitement sécurisé. Les éléments de données et les variables de workflows ne sont pas stockés dans le référentiel AEM et sont récupérés à la demande à partir d’un référentiel géré par le client lors du traitement du workflow.
 
-### Fonctionnalités bêta de [!DNL Forms] {#what-is-new-forms-oct2021-beta}
+### Fonctionnalités Beta de [!DNL Forms]  {#what-is-new-forms-oct2021-beta}
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API Communications](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=fr) vous permettent de combiner un modèle et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents dans les modes synchrone et par lots. Les API vous permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
 
    * Générer des documents en renseignant les fichiers de modèle (PDF et XDP) avec des données XML
    * Générer des formulaires de sortie dans divers formats, y compris les flux d’impression PDF non interactifs
 
-Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au programme bêta.
+Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au programme Beta.
 
 ## Module complémentaire CIF {#cloud-services-cif}
 
@@ -115,7 +115,7 @@ La prochaine version est prévue pour le 09 décembre 2021.
 
 * L’en-tête de réponse `x-request-id` est désormais visible dans le laboratoire de l’API sur [www.adobe.io](https://www.adobe.io/). Cet en-tête est utile pour signaler des problèmes à l’assistance clientèle à des fins de dépannage.
 
-* En tant qu’utilisateur, je vois une vignette Pipeline sans pipeline. Pouvez-vous me fournir des conseils appropriés ?
+* La carte de pipeline affichée dans l’interface ne comporte aucune pipeline. Est-il possible d’obtenir des conseils appropriés ?
 
 * Une nouvelle page d’activité est désormais disponible. Vous pouvez y afficher des activités telles que les exécutions de pipeline et de code, ainsi que les détails associés. Au fil du temps, les activités répertoriées dans cette page s’étendront, de même que les détails fournis.
 
@@ -148,7 +148,7 @@ La date de publication de Cloud Manager dans la version 2021.10.0 d’AEM as a 
 
 * En vue de certaines modifications à venir, les pipelines de déploiement existants seront désormais référencés et étiquetés dans l’interface utilisateur en tant que pipelines **Full Stack**.
 
-* La carte du pipeline a été actualisée afin d’afficher désormais une seule face intégrée qui affiche les pipelines de production et hors production. L’utilisateur peut sélectionner Exécuter/Arrêter/Reprendre directement dans le menu d’actions associé à chaque pipeline.
+* La carte de pipeline a été actualisée afin d’afficher désormais une seule face intégrée qui affiche les pipelines de production et hors production. Vous pouvez sélectionner Exécuter/Arrêter/Reprendre directement dans le menu d’actions associé à chaque pipeline.
 
 * Un utilisateur disposant du rôle Gestionnaire de déploiement peut désormais supprimer le pipeline de production en libre-service dans l’interface utilisateur.
 

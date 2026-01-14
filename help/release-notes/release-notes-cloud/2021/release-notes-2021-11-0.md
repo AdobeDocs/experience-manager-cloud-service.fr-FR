@@ -4,10 +4,10 @@ description: Notes de mise à jour de la version 2021.11.0 d’ [!DNL Adobe Exp
 exl-id: 86f8ddd1-af51-4874-9111-0935b5a162c1
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 96%
+source-wordcount: '1059'
+ht-degree: 94%
 
 ---
 
@@ -36,7 +36,7 @@ Consultez la vidéo [Présentation de la version de décembre 2021](https://vide
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#assets-features}
 
-* Le recadrage et l’échantillon de l’image intelligente de Dynamic Media est désormais optimisé par les derniers services Sensei, qui génèrent des recadrages et des échantillons améliorés. Une amélioration a également été lancée afin de générer un contenu de recadrage différent, pour les mêmes proportions mais avec des résolutions différentes. En outre, les modifications manuelles sont conservées lors du retraitement, si la largeur et la hauteur du profil d’image ne changent pas.
+* Le recadrage et l’échantillon intelligents d’images Dynamic Media s’appuient désormais sur les derniers services d’IA d’Adobe, qui génèrent des recadrages et des échantillons améliorés. Une amélioration a également été lancée afin de générer un contenu de recadrage différent, pour les mêmes proportions mais avec des résolutions différentes. En outre, les modifications manuelles sont conservées lors du retraitement, si la largeur et la hauteur du profil d’image ne changent pas.
 
 ### Nouvelles fonctionnalités dans le [!DNL Assets] canal de version préliminaire {#assets-prerelease-features}
 
@@ -73,7 +73,7 @@ Consultez la vidéo [Présentation de la version de décembre 2021](https://vide
 
 * Les auteurs peuvent créer des recommandations de produits Commerce ad hoc à l’aide de types de recommandations supplémentaires.
 
-* Prise en charge des cartes-cadeaux dans la vitrine AEM
+* Prise en charge des cartes-cadeaux dans le point de vente digital AEM
 
 ## Cloud Manager {#cloud-manager}
 
@@ -89,7 +89,7 @@ La prochaine version est prévue pour le 09 décembre 2021.
 * Les utilisateurs et utilisatrices peuvent désormais exploiter les nouveaux pipelines front-end pour déployer exclusivement le code front-end de manière accélérée. Voir [Pipelines frontaux de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) pour en savoir plus.
 
   >[!IMPORTANT]
-  >Vous devez être sur AEM version `2021.10.5933.20211012T154732Z` ou supérieure pour utiliser de nouveaux pipelines front-end.
+  >Vous devez disposer de la version `2021.10.5933.20211012T154732Z` ou ultérieure d’AEM pour utiliser les nouveaux pipelines frontaux.
 
 * La durée du pipeline de qualité du code est considérablement réduite en exécutant l’analyse du code de manière plus efficace sans avoir à créer une image AEM entière. Cette modification sera déployée progressivement au cours des semaines qui suivront la publication de la version.
 
@@ -101,7 +101,7 @@ La prochaine version est prévue pour le 09 décembre 2021.
 
 * L’en-tête de réponse `x-request-id` est désormais visible dans le laboratoire de l’API sur [www.adobe.io](https://www.adobe.io/). Cet en-tête est utile pour signaler des problèmes à l’assistance clientèle à des fins de dépannage.
 
-* En tant qu’utilisateur, je vois une vignette Pipeline sans pipeline. Pouvez-vous me fournir des conseils appropriés ?
+* La carte de pipeline affichée dans l’interface ne comporte aucune pipeline. Est-il possible d’obtenir des conseils appropriés ?
 
 * Une nouvelle page d’activité est désormais disponible. Vous pouvez y afficher des activités telles que les exécutions de pipeline et de code, ainsi que les détails associés. Au fil du temps, les activités répertoriées dans cette page s’étendront, de même que les détails fournis.
 

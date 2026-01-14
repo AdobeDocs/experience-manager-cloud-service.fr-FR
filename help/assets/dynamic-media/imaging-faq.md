@@ -1,26 +1,26 @@
 ---
 title: Imagerie dynamique
-description: Découvrez comment l’imagerie dynamique avec l’IA Adobe Sensei applique les caractéristiques de visualisation uniques de chaque utilisateur pour diffuser automatiquement les images optimisées pour leur expérience, ce qui se traduit par des performances accrues et une meilleure interaction.
+description: Découvrez comment l’imagerie dynamique avec l’IA Adobe applique les caractéristiques de visualisation uniques de chaque utilisateur pour diffuser automatiquement les images optimisées pour leur expérience, ce qui se traduit par des performances accrues et une meilleure interaction.
 contentOwner: Rick Brough
 feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '3221'
-ht-degree: 95%
+source-wordcount: '3218'
+ht-degree: 94%
 
 ---
 
 # Imagerie dynamique {#smart-imaging}
 
-Découvrez comment l’imagerie dynamique avec l’IA Adobe Sensei applique les caractéristiques de visualisation uniques de chaque utilisateur pour diffuser automatiquement les images optimisées pour leur expérience, ce qui se traduit par des performances accrues et une meilleure interaction.
+Découvrez comment l’imagerie dynamique avec l’IA Adobe applique les caractéristiques de visualisation uniques de chaque utilisateur pour diffuser automatiquement les images optimisées pour leur expérience, ce qui se traduit par des performances accrues et une meilleure interaction.
 
 
 ## À propos de l’imagerie dynamique {#about-smart-imaging}
 
-La technologie d’imagerie dynamique applique les fonctionnalités d’IA d’Adobe Sensei et fonctionne avec les « paramètres d’image prédéfinis » existants. Elle permet d’améliorer les performances de la diffusion d’images en optimisant automatiquement le format, la taille et la qualité des images en fonction des fonctionnalités du navigateur client.
+La technologie d’imagerie dynamique applique les fonctionnalités de l’IA d’Adobe et fonctionne avec les « paramètres d’image prédéfinis » existants. Elle permet d’améliorer les performances de la diffusion d’images en optimisant automatiquement le format, la taille et la qualité des images en fonction des fonctionnalités du navigateur client.
 
 De plus, obtenez désormais un meilleur score Google Core Web Vital pour LCP (Large Contentful Paint) grâce à l’amélioration de l’imagerie dynamique, qui s’accompagne désormais de la prise en charge d’AVIF et de WebP.
 
@@ -129,7 +129,7 @@ Les valeurs DPR et de bande passante réseau sont basées sur les valeurs côté
 
 * Amélioration du classement d’optimisation du référencement Google pour les pages web qui utilisent la technologie d’imagerie dynamique la plus récente.
 * Diffusion immédiate de contenus optimisés (au moment de l’exécution).
-* Mise en œuvre de la technologie Adobe Sensei pour effectuer la conversion en fonction de la qualité (`qlt`) spécifiée dans la demande d’image.
+* Utilise la technologie d’IA d’Adobe pour effectuer la conversion en fonction de la qualité (`qlt`) spécifiée dans la demande d’image.
 * Indépendance vis-à-vis du temps de vie (TTL). Auparavant, un TTL minimal de 12 heures était obligatoire pour le fonctionnement de l’imagerie dynamique.
 * Auparavant également, les images d’origine et dérivées étaient mises en cache et un processus en deux étapes était nécessaire pour invalider le cache. Avec la technologie d’imagerie dynamique la plus récente, seules les images dérivées sont mises en cache, ce qui rend possible un processus d’invalidation du cache en une seule étape.
 * Les clientes et les clients qui utilisent des en-têtes personnalisés dans leur ensemble de règles bénéficient de la version de l’imagerie intelligente la plus récente, car ces en-têtes ne sont pas bloqués, contrairement à la version précédente.

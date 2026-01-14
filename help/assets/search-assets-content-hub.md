@@ -3,7 +3,7 @@ title: Rechercher des ressources dans le hub de contenus
 description: Découvrez comment rechercher des ressources dans  [!DNL Content Hub]
 role: User
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: 46c127fd56949281da7211225d25a40c6a867bbb
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '825'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 Lorsque vous disposez d’un grand nombre de ressources dans votre référentiel, la recherche de la bonne ressource prend du temps. [!DNL The Content Hub] recherche vous permet de rechercher les ressources approuvées afin d’effectuer des actions supplémentaires sur celles-ci, telles que le téléchargement, le partage ou la création de collections. Vous pouvez utiliser différentes fonctionnalités pour affiner les résultats de votre recherche, telles que l’exécution d’une recherche textuelle, l’utilisation de filtres, l’exécution de balises ou d’une recherche spécifique aux balises intelligentes, la recherche d’un format de fichier particulier, etc.
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 [Les utilisateurs de Content Hub](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
 
@@ -140,7 +140,7 @@ Les filtres par défaut incluent le format de fichier, approuvé par, la date d�
      </tr>
      <tr>
       <td> Colors </td>
-      <td> Helps you search assets using colors that are automatically identified in an asset using Adobe's Sensei AI capabilities.</td>
+      <td> Helps you search assets using colors that are automatically identified in an asset using Adobe's AI capabilities.</td>
       <td>NA</td>
      </tr>  
     </tbody>

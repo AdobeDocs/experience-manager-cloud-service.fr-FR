@@ -4,10 +4,10 @@ description: Notes de mise à jour de la version 2021.6.0 d’ [!DNL Adobe Expe
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '1432'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -90,7 +90,7 @@ La prochaine version est prévue pour le 15 juillet 2021.
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#ga-features-assets}
 
-* La fonctionnalité d’automatisation du contenu permet à [!DNL Experience Manager Assets] d’utiliser les API [!DNL Adobe Creative Cloud] pour automatiser la production de ressources à grande échelle. Elle améliore la vitesse du contenu en réduisant considérablement le temps nécessaire et les itérations pour créer des variantes d’une même ressource. La fonctionnalité ne nécessite aucun code et fonctionne depuis la gestion des ressources numériques.
+* La fonctionnalité d’automatisation du contenu [!DNL Experience Manager Assets] permet d’utiliser les API [!DNL Adobe Creative Cloud] pour automatiser la production de ressources à grande échelle. Elle améliore la vitesse du contenu en réduisant considérablement le temps nécessaire et les itérations pour créer des variantes d’une même ressource. La fonctionnalité ne nécessite aucun code et fonctionne depuis la gestion des ressources numériques.
 * La version [!DNL Adobe Asset Link] v3.0 pour [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], [!DNL Adobe InDesign] et [!DNL Adobe Asset Link] v2.0 pour [!DNL Adobe XD] est publiée. Elle fournit les éléments suivants :
 
    * Prise en charge de [!DNL Assets Essentials].
@@ -104,7 +104,7 @@ La prochaine version est prévue pour le 15 juillet 2021.
 * Les paramètres d’affichage sont améliorés pour permettre aux utilisateurs de choisir une vue par défaut et un paramètre de tri par défaut.
 * La fonctionnalité de téléchargement de Linkshare utilise des téléchargements asynchrones qui augmentent la vitesse de téléchargement.
 * Les utilisateurs peuvent rechercher et filtrer les dossiers en fonction des prédicats de propriété.
-* [!DNL Experience Manager Assets] incorpore la visionneuse de PDF optimisée par [!DNL Adobe Document Cloud] pour prévisualiser les documents pris en charge. Cette fonctionnalité permet aux utilisateurs de prévisualiser des fichiers PDF et d’autres fichiers multi-pages sans traitement complexe. Cela améliore la parité des fonctionnalités avec [!DNL Experience Manager] 6.5.
+* [!DNL Experience Manager Assets] incorpore la visionneuse PDF optimisée par [!DNL Adobe Document Cloud] pour prévisualiser les documents pris en charge. Cette fonctionnalité permet aux utilisateurs de prévisualiser des fichiers PDF et d’autres fichiers multi-pages sans traitement complexe. Cela améliore la parité des fonctionnalités avec [!DNL Experience Manager] 6.5.
 
 ### Correctifs d’[!DNL Assets]  {#bugs-fixed-assets}
 
@@ -128,7 +128,7 @@ La prochaine version est prévue pour le 15 juillet 2021.
 * Amélioration de la vitesse et de la précision de la détection automatique des sections logiques dans les formulaires PDF sources et de leur conversion en panneaux de formulaires adaptatifs correspondants.
 * Ajout d’une action de déplacement pour déplacer un fichier PDF ou XDP d’un dossier à un autre.
 
-### Fonction bêta de [!DNL Forms] {#what-is-new-forms-prerelease}
+### Fonctionnalité Beta de [!DNL Forms]  {#what-is-new-forms-prerelease}
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]** : les API de communication vous permettent de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode synchrone. Les API vous permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
    * Générer des documents de formulaire définitifs en complétant des fichiers de modèle avec des données XML.
@@ -137,7 +137,7 @@ La prochaine version est prévue pour le 15 juillet 2021.
 
 * **Externalisateur de données variables** : vous pouvez enregistrer les données variables des workflows AEM sur un système de stockage externe géré par votre entreprise.
 
-Vous pouvez écrire sur [!DNL formscsbeta@adobe.com] pour vous inscrire au programme bêta.
+Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au programme Beta.
 
 ### Correctifs de [!DNL Forms] {#forms-bugs-fixed}
 
@@ -172,7 +172,7 @@ La date de publication d’AEM Screens as a Cloud Service est le 24 juin 2021
 * Nouveaux types de données de référence de catégorie et de produit CIF pour les fragments de contenu (y compris prise en charge de l’interface utilisateur du sélecteur de produits/catégories)
 * Nouveau composant principal de fragment de contenu Commerce
 * Recherche commerciale en texte intégral prise en charge dans AEM serveur principal
-* Les composants principaux de Commerce prennent en charge la collecte de données de recommandations Adobe Commerce
+* Les composants principaux de Commerce prennent en charge la collecte de données des recommandations de l’IA Adobe Commerce
 * Amélioration des URL compatibles avec les moteurs de recherche pour les pages de catégorie
 * Prise en charge des en-têtes HTTP personnalisés par site/configuration
 
@@ -184,7 +184,7 @@ La date de publication de l’outil de transfert de contenu version v1.5.4 est 
 
 ### Nouveautés {#what-is-new-ctt-latest}
 
-* Prise en charge d’une étape facultative [pré-copie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=fr) ajoutée à l’utilisation avec le CTT. L’étape de pré-copie peut être utilisée pour accélérer considérablement les phases d’extraction et d’ingestion de l’activité de transfert de contenu lorsque l’instance d’AEM source est configurée pour utiliser un entrepôt de données Amazon S3 ou Azure Blob Storage.
+* Prise en charge d’une étape facultative [pré-copie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) ajoutée à l’utilisation avec le CTT. L’étape de pré-copie peut être utilisée pour accélérer considérablement les phases d’extraction et d’ingestion de l’activité de transfert de contenu lorsque l’instance d’AEM source est configurée pour utiliser un entrepôt de données Amazon S3 ou Azure Blob Storage.
 
 * Une barrière de sécurité a été ajoutée au CTT pour empêcher les utilisateurs d’arrêter une ingestion et de potentiellement corrompre les données une fois qu’elles ont atteint le point critique pendant la phase d’ingestion.
 
@@ -194,7 +194,7 @@ La date de publication de l’outil de transfert de contenu version v1.5.4 est 
 
 ### Correctifs {#bug-fixes-ctt-latest}
 
-* Lors de l’arrêt d’une ingestion sur l’instance d’auteur, l’interface utilisateur a remplacé une ingestion précédemment terminée sur l’instance de publication sur `STOPPED` à partir de `FINISHED`. Ce problème a été résolu.
+* Lors de l’arrêt d’une ingestion sur l’instance de création, l’interface d’utilisation a remplacé une ingestion précédemment terminée sur l’instance de publication sur `STOPPED` à partir de `FINISHED`. Ce problème a été résolu.
 
 ## Analyseur des bonnes pratiques {#best-practices-analyzer}
 

@@ -4,9 +4,9 @@ description: Adobe Experience Manager Assets vous permet de faire la distinction
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
 feature: Smart Imaging, Interactive Images, Asset Management
 role: User, Admin
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1243'
 ht-degree: 73%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 73%
 
 ![Bannière de balisage des couleurs](assets/banner-image.png)
 
-Adobe Experience Manager (AEM) Assets utilise les fonctionnalités de l’IA d’Adobe Sensei pour faire la distinction entre les couleurs d’une image et les appliquer automatiquement sous forme de balises lors de l’ingestion. Ces balises permettent d’améliorer l’expérience de recherche en fonction de la composition des couleurs de l’image.
+Adobe Experience Manager (AEM) Assets utilise les fonctionnalités de l’IA d’Adobe pour faire la distinction entre les couleurs d’une image et les appliquer automatiquement sous forme de balises lors de l’ingestion. Ces balises permettent d’améliorer l’expérience de recherche en fonction de la composition des couleurs de l’image.
 
 Vous pouvez configurer le nombre de couleurs, comprises entre un et 40, qui sont balisées vers une image afin de pouvoir rechercher ultérieurement des images en fonction de ces couleurs. Experience Manager Assets applique les balises en fonction de la couverture colorimétrique d’une image. Vous pouvez également configurer le format d’affichage d’une balise de couleur.
 
@@ -112,7 +112,7 @@ Pour appliquer des balises de couleurs aux images ou aux dossiers (y compris les
 
 1. Sélectionnez le logo [!DNL Adobe Experience Manager], puis les ressources dans la page [!UICONTROL Navigation].
 
-1. Sélectionnez [!UICONTROL &#x200B; Fichiers &#x200B;].
+1. Sélectionnez [!UICONTROL  Fichiers ].
 
 1. Dans l’interface d’Assets, accédez au dossier auquel vous souhaitez appliquer des balises de couleurs.
 
@@ -120,7 +120,7 @@ Pour appliquer des balises de couleurs aux images ou aux dossiers (y compris les
 
 1. Sélectionnez l’icône [!UICONTROL Retraiter les ressources] ![icône Retraiter les ressources](assets/do-not-localize/reprocess-assets-icon.png) et sélectionnez l’option [!UICONTROL Processus complet].
 
-Une fois le processus terminé, accédez à la page [!UICONTROL Propriétés] de n’importe quelle image dans le dossier. Les balises ajoutées automatiquement sont affichées dans la section [!UICONTROL &#x200B; Balises de couleurs intelligentes &#x200B;] de l’onglet [!UICONTROL De base].
+Une fois le processus terminé, accédez à la page [!UICONTROL Propriétés] de n’importe quelle image dans le dossier. Les balises ajoutées automatiquement sont affichées dans la section [!UICONTROL  Balises de couleurs intelligentes ] de l’onglet [!UICONTROL De base].
 
 
 ## Afficher les balises de couleurs intelligentes des images {#view-color-tags}

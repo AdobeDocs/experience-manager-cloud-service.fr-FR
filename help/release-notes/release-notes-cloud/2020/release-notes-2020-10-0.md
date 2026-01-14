@@ -4,7 +4,7 @@ description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Clou
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
 feature: Release Information
 role: Admin
-source-git-commit: 9af552b17421e320b6139d6bd6ecaa42428de397
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 90%
@@ -32,14 +32,14 @@ La version suivante (2020.11.0) sera publiée le 1er décembre 2020.
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-* **[!DNL Adobe Sensei]Balisage intelligent de vidéo optimisé par**: en appliquant des modèles d’IA pour analyser le contenu vidéo pour les balises d’objet et d’action spécifiques, les utilisateurs de la gestion des actifs numériques peuvent passer moins de temps à ajouter des balises et plus de temps à utiliser les informations riches et exposées. Vous pouvez ainsi fournir aux clients l’expérience qu’il leur faut. Voir [Balisage intelligent des ressources vidéo](/help/assets/smart-tags-for-videos.md).
+* Balisage intelligent de vidéo optimisé par **[!DNL Adobe AI]** : en appliquant des modèles d’IA pour analyser le contenu vidéo pour les balises d’objet et d’action spécifiques, les personnes qui utilisent la gestion des actifs numériques peuvent passer moins de temps à ajouter des balises et plus de temps à utiliser les informations riches et exposées. Vous pouvez ainsi fournir aux clients l’expérience qu’il leur faut. Voir [Balisage intelligent des ressources vidéo](/help/assets/smart-tags-for-videos.md).
 
 * **Améliorations apportées à Brand Portal** : les nouvelles fonctionnalités suivantes et bien d’autres sont disponibles dans [!DNL Brand Portal]. Pour plus d’informations, voir [[!DNL Brand Portal] Notes de mise à jour](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html?lang=fr).
 
    * [Expérience de téléchargement améliorée](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html?lang=fr) pour des téléchargements rapides et simplifiés. D’autres configurations de téléchargement peuvent être établies par les administrateurs en vue d’offrir une expérience adaptée aux besoins des utilisateurs et des entreprises.
    * La navigation en un clic vers les fichiers, [Collections](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/share/brand-portal-share-collection.html?lang=fr) et Liens partagés est désormais possible à partir de n’importe quelle page.
    * Les utilisateurs peuvent désormais [sélectionner et télécharger des rendus spécifiques](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html?lang=fr#download-assets-from-asset-details-page). La nouvelle option de téléchargement de rendu est disponible dans le panneau Rendus de la page Détails de la ressource.
-   * Un délai de 15 minutes pour les sessions d’utilisateurs invités garantit une meilleure expérience à tous les utilisateurs simultanés.
+   * Un délai d’expiration de 15 minutes pour les sessions d’utilisateurs invités garantit une meilleure expérience à tous les utilisateurs simultanés.
 
 * **[!DNL Adobe Asset Link]version 2.1** : une nouvelle version de l’extension [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html) pour [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] et [!DNL Adobe InDesign] est disponible. Elle ajoute la compatibilité avec les dernières applications [!DNL Adobe Creative Cloud] dans la version 2021, publiée en octobre 2020.
 
@@ -55,11 +55,11 @@ La version suivante (2020.11.0) sera publiée le 1er décembre 2020.
 
 * **Externaliser les données des workflows AEM pour un traitement sécurisé** : vous pouvez stocker les données de variables de workflow AEM en cours de traitement qui contiennent des éléments de données personnelles sensibles (DPS) dans un référentiel géré par le client pour un traitement sécurisé. Lors du traitement du workflow, les données stockées dans les variables du workflow ne sont pas conservées dans le référentiel AEM. Ils sont récupérés à la demande à partir du référentiel géré par le client.
 
-### Fonctionnalités bêta de [!DNL Forms]  {#sep-what-is-new-forms-oct-prerelease}
+### Fonctionnalités Beta de [!DNL Forms]  {#sep-what-is-new-forms-oct-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API de communication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html?lang=fr) vous aident à combiner un modèle et des données XML pour générer des documents dans divers formats. Le service vous permet de générer des documents en mode synchrone et en mode batch.
+* **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API de communication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) vous aident à combiner un modèle et des données XML pour générer des documents dans divers formats. Le service vous permet de générer des documents en mode synchrone et en mode batch.
 
-Vous pouvez écrire à l’adresse [!DNL formscsbeta@adobe.com] pour vous inscrire au programme bêta.
+Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au programme Beta.
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -124,8 +124,8 @@ En savoir plus sur les nouveautés et les mises à jour de l’[outil de transfe
 
 ### Nouveautés {#what-is-new-ctt}
 
-* Amélioration de l’expérience utilisateur des journaux. Horodatages ajoutés aux journaux d’extraction et d’importation. Message ajouté pour indiquer si les journaux sont vides.
+* Amélioration de l’expérience utilisateur des journaux. Dates et heures ajoutées aux journaux d’extraction et d’ingestion. Message ajouté pour indiquer si les journaux sont vides.
 
 ### Correctifs {#ctt-bug-fixes}
 
-* L’outil de transfert de contenu ignorait les fichiers de contenu si le jeu de migration contenait des chemins dont les noms de fichiers étaient partiellement similaires.
+* L’outil de transfert de contenu ignorait les fichiers de contenu si l’ensemble de migration contenait des chemins dont les noms de fichiers étaient partiellement similaires.

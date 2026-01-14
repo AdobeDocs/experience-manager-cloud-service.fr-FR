@@ -1,13 +1,13 @@
 ---
 title: Notes de mise à jour d’Adobe Experience Manager as a Cloud Service version 2020.6.0
-description: « Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.6.0. »
+description: '[!DNL Adobe Experience Manager] les notes de mise à jour de la version 2020.6.0 d’as a Cloud Service.'
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 95%
+source-wordcount: '1938'
+ht-degree: 94%
 
 ---
 
@@ -50,9 +50,9 @@ La version 2.9.0 des [composants principaux](https://experienceleague.adobe.com
 
 ## Nouveautés de Foundations dans AEM as a Cloud Service {#foundations}
 
-Les délais de création AEM projet s’améliorent en supprimant toutes les références du fichier pom.xml du projet AEM dans le référentiel distant `https://downloads.experiencecloud.adobe.com/content/maven/public`.
+les délais de création des projets AEM s’améliorent en supprimant toutes les références dans le fichier pom.xml du projet AEM vers le référentiel distant `https://downloads.experiencecloud.adobe.com/content/maven/public`.
 
-Le fichier Jar de l’API SDK AEM as a Cloud Service, qui était auparavant hébergé à cet emplacement, se trouve désormais dans Maven Central, qui est le référentiel d’artefacts par défaut de Maven.
+Le fichier Jar de l’API SDK d’AEM as a Cloud Service, qui était auparavant hébergé à cet emplacement, se trouve désormais dans Maven Central, qui est le référentiel d’artefacts par défaut de Maven.
 
 ## Nouveautés de Cloud Manager {#cloud-manager}
 
@@ -84,11 +84,11 @@ Consultez cette section pour en savoir plus sur les nouveautés et les mises à 
 
   Pour plus d’informations, voir [Gestion de l’accès à l’instance de création](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=fr#manage-access-aem).
 
-* Le journal de génération inclut désormais la liste des artefacts détectés, y compris les packages de contenu ignorés.
+* Le journal de génération inclut désormais la liste des artefacts détectés, y compris les modules de contenu ignorés.
 
-* L’étape Créer valide désormais que tous les packages de contenu générés incluent toutes les propriétés obligatoires : nom, groupe et version.
+* L’étape de création confirme désormais que tous les packages de contenu générés incluent toutes les propriétés obligatoires - nom, groupe et version.
 
-* L’étape de génération confirme désormais qu’elle a produit au moins un package de contenu.
+* L’étape de génération confirme désormais qu’elle a produit au moins un module de contenu.
 
 ### Correctifs {#bug-fixes-cm}
 
@@ -106,11 +106,11 @@ Consultez cette section pour en savoir plus sur les nouveautés et les mises à 
 
 ## Nouveautés de la version [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-**Expérience utilisateur assistée pour les balises intelligentes améliorées, optimisée par Adobe Sensei**
+**Expérience utilisateur guidée pour les balises intelligentes améliorées, optimisée par l’IA dédiée à Adobe**
 
-Les balises intelligentes améliorées permettent aux entreprises d’entraîner des modèles de balisage intelligent pour reconnaître les images en fonction de balises commerciales spécifiques aux clients, en plus des balises intelligentes génériques.
+Les balises intelligentes améliorées permettent aux entreprises d’entraîner des modèles de balisage intelligent pour reconnaître les images en fonction de balises commerciales spécifiques à la clientèle, en plus des balises intelligentes génériques.
 
-Cette version apporte une nouvelle expérience utilisateur assistée qui permet de configurer l’entraînement des balises intelligentes pour des ensembles de balises spécifiques au client, mais aussi de les entraîner sur des ressources qui devront être reconnues et balisées plus tard. L’expérience est désormais plus intuitive.
+Cette version apporte une nouvelle expérience client assistée qui permet de configurer l’entraînement des balises intelligentes pour des ensembles de balises spécifiques à la clientèle, mais aussi de les entraîner sur des ressources qui devront être reconnues et balisées plus tard. L’expérience est désormais plus intuitive.
 Entraînez des balises intelligentes améliorées pour un entraînement plus intuitif. Voir la section [Comment ajouter des balises intelligentes aux ressources](/help/assets/smart-tags.md).
 
 **Prise en charge de l’ingestion, de la prévisualisation et de la diffusion des contenus 3D**
@@ -143,7 +143,7 @@ Les éléments de l’interface utilisateur sont compatibles avec les lecteurs d
 
 * Dans l’interface utilisateur Assets, les paramètres d’affichage ne sont pas accessibles au clavier. (CQ-4289038)
 
-* Le rapport de luminosité est inférieur à 3:1 pour les icônes de classement de couleur jaune. La fonction n’est pas utile pour les utilisateurs dont la vision est limitée ou ne percevant pas les couleurs. Les étoiles d’évaluation s’affichent dans l’onglet en mode Carte ou Ressource.
+* Le rapport de luminosité est inférieur à 3 :1 pour les icônes d’évaluation de couleur jaune. La fonction n’est pas utile pour les utilisateurs dont la vision est limitée ou ne percevant pas les couleurs. Les étoiles d’évaluation s’affichent dans l’onglet en mode Carte ou Ressource.
 
 * La couleur et le contraste de certains éléments de l’interface utilisateur ont été mis à jour afin que les utilisateurs disposant d’une vision limitée ou qui ne perçoivent pas les couleurs puissent distinguer ces éléments de l’interface utilisateur. Par exemple, la couleur des icônes d’évaluation par étoiles dans la section [!UICONTROL Notation] de l’onglet [!UICONTROL Avancé] des [!UICONTROL Propriétés] dans les modes Ressource et Carte a été redéfinie sur un contraste approprié. (CQ-4295106)
 
@@ -178,7 +178,7 @@ Cette version comprend les autres améliorations suivantes :
 * Possibilité de retraiter des ressources avec des profils de traitement des ressources. Les utilisateurs peuvent ainsi contrôler entièrement le processus (effectuer le traitement complet des ressources, appliquer simplement un profil de traitement spécifique et décider si le workflow de post-traitement doit être exécuté).
 * Les requêtes de recherche renvoient maintenant les résultats plus rapidement, car l’instance de grappe associée a été redémarrée en arrière-plan (auparavant, l’exécution de la recherche initiale pouvait durer plus longtemps).
 * Tri par nom lorsque vous affichez des ressources dans la vue Liste de l’interface Assets et dans les résultats de recherche. Voir [Rechercher des ressources](/help/assets/search-assets.md#sort).
-* Tri sur &quot;Créé&quot; (Date) lors de l’affichage de ressources en mode Liste dans l’interface Assets et dans les résultats de recherche. Voir [Rechercher des ressources](/help/assets/search-assets.md#sort).
+* Effectuez un tri sur « Créé » (date) lors de l’affichage de ressources dans la vue Liste de l’interface d’Assets et dans les résultats de recherche. Voir [Rechercher des ressources](/help/assets/search-assets.md#sort).
 * Prise en charge de la conversion de fichiers EPS en images à l’aide des microservices de ressources.
 
 ### Correctifs {#assets-bug-fixes}

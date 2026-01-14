@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management, Best Practices
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '929'
-ht-degree: 94%
+ht-degree: 87%
 
 ---
 
@@ -79,9 +79,9 @@ La méthode la plus simple pour organiser les ressources consiste à les enregis
 
 ## Organisation de ressources à l’aide de balises {#use-tags-to-organize-assets}
 
-L’ajout de balises à des ressources permet de les récupérer plus facilement au cours d’une recherche, de créer des collections à l’aide des résultats de recherche, d’améliorer le classement de certaines ressources et d’appliquer des algorithmes d’IA d’Adobe Sensei pour la découverte de ressources.
+L’ajout de balises à des ressources facilite leur récupération au cours d’une recherche, la création de collections à l’aide des résultats de recherche, l’amélioration du classement de certaines ressources et l’application d’algorithmes d’IA d’Adobe pour la découverte de ressources.
 
-[!DNL Adobe Experience Manager Assets] utilise un algorithme d’auto-apprentissage pour créer des balises hautement descriptives qui vous permettent de trouver la ressource appropriée en quelques clics seulement. Le balisage intelligent utilise Adobe Sensei, l’intelligence artificielle et la structure de machine learning, qui peuvent être entraînés pour reconnaître et appliquer des balises standard et commerciales à l’imagerie. Les balises intelligentes peuvent également identifier le contenu, les mots ou les expressions et appliquer automatiquement des balises descriptives aux ressources.
+[!DNL Adobe Experience Manager Assets] utilise un algorithme d’auto-apprentissage pour créer des balises hautement descriptives qui vous permettent de trouver la ressource appropriée en quelques clics seulement. Le balisage intelligent utilise l’IA d’Adobe, l’intelligence artificielle et la structure de machine learning, qui peuvent être entraînés pour reconnaître et appliquer des balises standard et commerciales à l’imagerie. Les balises intelligentes peuvent également identifier le contenu, les mots ou les expressions et appliquer automatiquement des balises descriptives aux ressources.
 
 Vous trouverez ci-dessous la procédure à suivre pour ajouter des balises à une ressource :
 

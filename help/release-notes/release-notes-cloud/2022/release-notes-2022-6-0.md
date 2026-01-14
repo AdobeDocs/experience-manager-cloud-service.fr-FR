@@ -4,16 +4,16 @@ description: Notes de mise à jour de la version 2022.6.0 d’ [!DNL Adobe Expe
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 81%
+source-wordcount: '632'
+ht-degree: 77%
 
 ---
 
 # Notes de mise à jour de la version 2022.6.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La section suivante décrit les notes de mise à jour des fonctionnalités de la version 2022.6.0 de [!DNL Experience Manager] as a Cloud Service.
+La section ci-dessous présente les notes de mise à jour des fonctionnalités de la version 2022.6.0 d’[!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -39,17 +39,17 @@ Consultez la vidéo Aperçu de la version de juin 2022 pour obtenir un résumé 
 
 ### Nouvelles fonctionnalités de [!DNL Sites] {#sites-features}
 
-* Une nouvelle [interface utilisateur](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) est désormais disponible pour les administrateurs et les auteurs de contenu afin de permettre une gestion efficace (par exemple, publier, annuler la publication, copier, déplacer, etc.), rechercher/filtrer et créer des fragments de contenu pour des cas d’utilisation sans affichage.
+* Une nouvelle [interface utilisateur](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) est désormais disponible pour que les administrateurs et les auteurs de contenu puissent gérer efficacement (comme publier, dépublier, copier, déplacer, etc.), rechercher/filtrer et créer des fragments de contenu pour des cas d’utilisation découplés.
 
   ![Console Fragments de contenu](/help/release-notes/assets/cf-ui.png)
 
-* Le nouveau [Composant Table des matières](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html?lang=fr) fonctionne non seulement avec les composants principaux, mais avec tous les composants. Il effectue automatiquement le rendu des tables des matières sur les pages de contenu. Et comme il est rendu côté serveur et entièrement mis en cache par le Dispatcher, il est également efficace à charger.
+* Le nouveau [Composant Table des matières](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html?lang=fr) fonctionne non seulement avec les composants principaux, mais aussi avec tous les composants. Il effectue automatiquement le rendu des tables des matières sur les pages de contenu. Et comme il est rendu côté serveur et entièrement mis en cache par le Dispatcher, il est également efficace à charger.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#assets-features}
 
-Experience Manager Assets utilise désormais les fonctionnalités d’Adobe Sensei AI pour [faire la distinction entre les couleurs d’une image et les appliquer automatiquement sous forme de balises lors de l’ingestion](/help/assets/color-tag-images.md). Ces balises permettent d’améliorer l’expérience de recherche en fonction de la composition des couleurs de l’image. Vous pouvez configurer le nombre de couleurs balisées vers une image dans une plage comprise entre 1 et 40 afin de pouvoir rechercher ultérieurement des images en fonction de ces couleurs.
+Experience Manager Assets utilise désormais les fonctionnalités de l’IA d’Adobe pour [faire la distinction entre les couleurs d’une image et les appliquer automatiquement sous forme de balises lors de l’ingestion](/help/assets/color-tag-images.md). Ces balises permettent d’améliorer l’expérience de recherche en fonction de la composition des couleurs de l’image. Vous pouvez configurer le nombre de couleurs, comprises entre 1 et 40, qui sont balisées vers une image afin de pouvoir rechercher ultérieurement des images en fonction de ces couleurs.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -71,7 +71,7 @@ Experience Manager Assets utilise désormais les fonctionnalités d’Adobe Sens
 
 * Amélioration de la compatibilité et de la robustesse pour les connecteurs tiers sur I/O Runtime
 
-* Amélioration de la prise en charge des remplacements de la configuration du client GQL (par exemple, définir le comportement de mise en cache personnalisée)
+* Amélioration de la prise en charge des remplacements de la configuration du client GQL (par exemple, définition du comportement de mise en cache personnalisée)
 
 * Plusieurs points d’entrée commerciaux sont désormais pris en charge par défaut et peuvent être configurés via Cloud Manager. Vous trouverez des informations détaillées sur le blog CIF [ici](https://medium.com/adobetech/use-aem-as-a-cloud-service-with-multiple-adobe-commerce-systems-9295612a9554).
 
@@ -96,7 +96,7 @@ Experience Manager Assets utilise désormais les fonctionnalités d’Adobe Sens
 
 ### Nouveautés {#what-is-new-foundation}
 
-* Comme mentionné dans les notes de mise à jour de mai (2022.5.0), l’option &quot;Ajouter une arborescence&quot; sous l’onglet **Distribute** de l’écran d’administration de l’agent de réplication a été supprimée. Les packages avec une arborescence de contenu doivent plutôt être répliqués à l’aide de [Gérer la publication](/help/operations/replication.md#manage-publication) ou du workflow [Publier l’arborescence de contenu](/help/operations/replication.md#manage-publication#publish-content-tree-workflow).
+* Comme indiqué dans les notes de mise à jour de mai (2022.5.0), l’option « Ajouter une arborescence » sous l’onglet **Distribuer** de l’écran d’administration de l’agent de réplication a été supprimée. Les packages avec une arborescence de contenu doivent plutôt être répliqués à l’aide de [Gérer la publication](/help/operations/replication.md#manage-publication) ou du workflow [Publier l’arborescence de contenu](/help/operations/replication.md#manage-publication#publish-content-tree-workflow).
 
 ## Cloud Manager {#cloud-manager}
 
