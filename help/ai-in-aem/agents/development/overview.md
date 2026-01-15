@@ -3,9 +3,9 @@ title: Présentation de l’agent de développement
 description: Découvrez comment l’agent de développement dans AEM analyse les pipelines ayant échoué dans Cloud Manager et crée des journaux pour suggérer des correctifs de code et accélérer le débogage.
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-source-git-commit: b206c73853e2f81a1bd5a15bb1e0d5d7658f70a5
+source-git-commit: d10eb260195e402a6347ad40ddb851baf5949c83
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '532'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ L’agent de développement permet aux développeurs et aux administrateurs d’
 
 Actuellement, l’agent peut récupérer les statuts de pipeline et vous aider à résoudre les problèmes d’échec des étapes de création en suggérant des correctifs, ce qui vous permet de gagner du temps lors du débogage des déploiements d’AEM as a Cloud Service dans les environnements de développement, d’évaluation et de production. Il examine les journaux de génération et le code associé pour vous recommander un correctif que vous pouvez appliquer manuellement.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478009?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
@@ -28,6 +28,8 @@ Actuellement, l’agent peut récupérer les statuts de pipeline et vous aider �
 <!-- 
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
 -->
+
+Envoyez un courrier électronique à l&#39;adresse [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com) avec des commentaires ou des demandes d&#39;accès à cet agent.
 
 ## Accès à l’agent de développement via Cloud Manager {#how-to-access-the-agent}
 
@@ -51,7 +53,7 @@ Vous accédez à l’agent de développement par le biais de l’assistant d’I
 
 1. Sur la page **Aperçu du programme**, dans la vignette **Pipelines**, cliquez sur un pipeline.
 
-   ![&#x200B; Pipeline sélectionné &#x200B;](/help/ai-in-aem/agents/development/assets/dev-agent-pipeline-select.png)
+   ![ Pipeline sélectionné ](/help/ai-in-aem/agents/development/assets/dev-agent-pipeline-select.png)
 
 1. Sur la page **Génération et analyse du code**, notez l’échec du pipeline.
 
@@ -81,13 +83,13 @@ La tâche de dépannage du pipeline de l’agent de développement nécessite le
 
 | Prompt | Résultat |
 | --- | --- |
+| *Résolution des problèmes liés à mon pipeline en échec* | Effectue une analyse des raisons de l’échec d’un pipeline ; si le pipeline auquel il est fait référence n’est pas clair, des questions supplémentaires sont posées à l’utilisateur ou l’utilisatrice. |
 | *Répertorier mes pipelines ayant échoué pour le programme Programme principal.* | Bien que les résultats puissent varier, cette invite génère un tableau des pipelines ayant échoué, avec une suggestion de suivi pour référencer un pipeline spécifique à analyser. |
-| *Analysez mon pipeline en échec appelé « Pipeline de développement ».* | Cette invite génère une analyse du pipeline ayant échoué avec des suggestions pour corriger le problème. |
+| *Analysez mon pipeline en échec appelé « Pipeline de développement ».* | Cette invite génère une analyse du pipeline ayant échoué avec des suggestions pour corriger le problème. S’il y a plusieurs échecs, des questions supplémentaires seront posées à l’utilisateur. |
+| *Résolution des problèmes liés aux 1234567* d’exécution du pipeline | En fournissant un identifiant d’exécution de pipeline exact, une analyse du pipeline est effectuée. |
 
 ## Fonctionnalités hors de portée {#out-of-scope-features}
 
 Le dépannage du pipeline fonctionne à l’étape de création du pipeline full-stack. Pour les autres types de pipeline et étapes, déboguez les échecs en téléchargeant et en examinant les journaux.
 
 Voir [Journaux d’accès et de téléchargement](/help/implementing/cloud-manager/manage-logs.md).
-
-La résolution des problèmes de pipeline n’est pas prise en charge pour les programmes utilisant BYOGIT (apportez votre propre Git).
