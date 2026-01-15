@@ -4,7 +4,7 @@ description: Découvrez les différents types d’appels effectués sur votre ap
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 9adf2bc4f9f25ee7fc0a39b0f1a3ae9e45fce7d2
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 100%
@@ -27,7 +27,7 @@ Pour le développeur ou la développeuse, en revanche, comprendre ces appels et 
 * La **payload** de l’appel contient des informations sur les éléments mis à jour par l’éditeur, notamment l’identification de ce qui doit être mis à jour et la façon de le faire.
 * La **réponse** comprend des informations précises sur les éléments mis à jour par le service d’éditeur. Cela permet de faciliter l’actualisation du contenu dans l’éditeur. Dans certains cas, comme lors d’un appel `move`, l’ensemble de la page doit être actualisé.
 
-Une fois l’appel terminé avec succès, des événements sont déclenchés et incluent la payload de la requête et de la réponse, qui peut être personnalisée pour l’application. Pour plus d’informations, consultez le document [Événements de l’éditeur universel](/help/implementing/universal-editor/events.md).
+Une fois l’appel terminé avec succès, des événements sont déclenchés et incluent la payload de la requête et de la réponse, qui peut être personnalisée pour l’application. Pour plus d’informations, consultez le document [Événements de l’éditeur universel](/help/implementing/universal-editor/events-universal-editor.md).
 
 Vous trouverez ci-dessous une liste des types d’appels effectués par l’éditeur vers l’application, accompagnée d’exemples de payloads et de réponses.
 
@@ -384,5 +384,5 @@ L’éditeur universel effectue une itération sur le contenu et génère une li
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Événements de l’éditeur universel](/help/implementing/universal-editor/events.md)
+* [Événements de l’éditeur universel](/help/implementing/universal-editor/events-universal-editor.md)
 
