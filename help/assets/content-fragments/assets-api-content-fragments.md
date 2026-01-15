@@ -4,10 +4,10 @@ description: Découvrez la prise en charge des fragments de contenu dans l’API
 feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 role: User, Admin
-source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
+source-git-commit: f55299d7054a9e1f8e1356cb975dfeee162ec202
 workflow-type: tm+mt
-source-wordcount: '1857'
-ht-degree: 59%
+source-wordcount: '1856'
+ht-degree: 57%
 
 ---
 
@@ -87,6 +87,7 @@ Elle utilise le point d’entrée `/api/assets` et requiert le chemin d’accès
 Par exemple, pour accéder à `/content/dam/wknd/en/adventures/cycling-tuscany`, demandez `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
 >[!NOTE]
+>
 >Accès via :
 >
 >* `/api/assets` **ne nécessite pas** l’utilisation du sélecteur `.model`.
@@ -282,7 +283,7 @@ L’utilisation peut varier selon que vous utilisez un environnement de créatio
 
 >[!NOTE]
 >
->Voir la section [&#x200B; Référence d’API &#x200B;](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). En particulier, [API Adobe Experience Manager Assets – Fragments de contenu](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
+>Voir la section [ Référence d’API ](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). En particulier, [API Adobe Experience Manager Assets – Fragments de contenu](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
 >
 >Les [OpenAPI de modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) sont également disponibles.
 
@@ -329,7 +330,7 @@ Les codes d’état suivants s’affichent dans les circonstances pertinentes :
   L’exemple suivant répertorie les scénarios courants lorsque cet état d’erreur est renvoyé, ainsi que le message d’erreur (à espacement fixe) généré :
 
    * Le dossier parent n’existe pas (lors de la création d’un fragment de contenu par le biais du `POST`).
-   * Aucun modèle de fragment de contenu n’est fourni (cq:model est manquant) ou ne peut être lu (en raison d’un chemin d’accès non valide ou d’un problème d’autorisation) ou il n’existe aucun modèle de fragment valide :
+   * Aucun modèle de fragment de contenu n’est fourni (cq:model est manquant), ne peut pas être lu (en raison d’un chemin d’accès non valide ou d’un problème d’autorisation) ou il n’existe aucun modèle de fragment valide :
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
@@ -383,4 +384,4 @@ Pour accéder aux références d’API détaillées :
 Pour en savoir plus, voir :
 
 * [Documentation de l’API HTTP Assets](/help/assets/mac-api-assets.md)
-* [Session AEM Gem : OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html?lang=fr)
+* [Session AEM Gem : OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html)
