@@ -3,9 +3,9 @@ title: Notes de mise à jour de l’aperçu de l’éditeur universel
 description: Voici les notes de mise à jour de la version préliminaire de l’éditeur universel.
 feature: Release Information
 role: Admin
-source-git-commit: 57b8a38219431ff7f264ef1f64de5506e283a650
+source-git-commit: 31429cfce9f38a3f492f3852fcfa88a38f9de7dd
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Notes de mise à jour de l’aperçu de l’éditeur universel {#preview}
 
-Voici les notes de mise à jour de la **version d’aperçu** de l’éditeur universel. Ces fonctionnalités sont actuellement disponibles dans l’environnement d’aperçu **de votre éditeur universel**. La mise à disposition de ces fonctionnalités est prévue pour le 15 janvier 2026.
+Voici les notes de mise à jour de la **version d’aperçu** de l’éditeur universel. Ces fonctionnalités sont actuellement disponibles dans l’environnement d’aperçu **de votre éditeur universel**. La mise à disposition de ces fonctionnalités est prévue pour le 21 janvier 2026.
 
 Ces notes de mise à jour **aperçu** sont fournies à titre indicatif pour que vous sachiez quelles modifications seront apportées à l’éditeur universel et que vous puissiez les tester en [passant à votre environnement d’aperçu.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -27,10 +27,13 @@ Ces notes de mise à jour **aperçu** sont fournies à titre indicatif pour que 
 
 ## Nouvelles fonctionnalités à venir {#what-is-new}
 
-* Ajout de la prise en charge de la définition et de la conservation des valeurs par défaut des champs de modèle.
+* Les blocs de texte dans l’arborescence de contenu affichent de courts aperçus de texte.
+* Les champs de texte brut prennent en charge les zones de texte multiligne.
+* Les extensions peuvent utiliser l’API Toast pour afficher des notifications intégrées au produit.
 
 ## Améliorations à venir {#other-improvements}
 
-* Le nettoyage des données est désormais correctement effectué sur le commutateur de contenu.
-* Plusieurs opérations sont désormais prises en charge dans la mise à jour des extensions.
-* Le bouton Fermer pour la connexion du développeur se comporte désormais comme prévu.
+* L’espace blanc de tête dans l’éditeur de texte enrichi est correctement assaini, ce qui permet d’éviter les astuces de mise en page et de mise en forme.
+* Appuyez sur Entrée pour déclencher à nouveau la modification sur la ligne et restaurer le comportement de modification attendu.
+* Plusieurs problèmes d’accessibilité du navigateur ont été résolus.
+* Le formatage des raccourcis clavier a été unifié et les icônes de la palette de commandes ont été ajustées pour offrir une expérience plus claire et plus cohérente.

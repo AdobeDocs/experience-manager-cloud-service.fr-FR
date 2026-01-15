@@ -1,20 +1,20 @@
 ---
-title: Notes de mise à jour de l’éditeur universel version 2025.12.12
-description: Il s’agit des notes de mise à jour de la version 2025.12.11 de l’éditeur universel.
+title: Notes de mise à jour de l’éditeur universel version 2026.01.15
+description: Il s’agit des notes de mise à jour de la version 2026.01.15 de l’éditeur universel.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: b7b89587a81d0cadc81d4b2a486c022557c4a9fb
+source-git-commit: 08e495b0859e9f0a0378a0fb8bd565bc76c777da
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 21%
+source-wordcount: '204'
+ht-degree: 34%
 
 ---
 
 
-# Notes de mise à jour de l’éditeur universel version 2025.12.12 {#release-notes}
+# Notes de mise à jour de l’éditeur universel version 2026.01.15 {#release-notes}
 
-Voici les notes de mise à jour de la version du 12 décembre 2025 de l’éditeur universel.
+Voici les notes de mise à jour de la version du 15 janvier 2026 de l’éditeur universel.
 
 >[!TIP]
 >
@@ -26,11 +26,10 @@ Voici les notes de mise à jour de la version du 12 décembre 2025 de l’édite
 
 ## Nouveautés {#what-is-new}
 
-* La prise en charge a été ajoutée aux tableaux existants dans l’[éditeur de texte enrichi.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options).
-* La touche de tabulation a été activée pour l’imbrication de listes dans l’[éditeur de texte enrichi.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options).
-* La fonction de connexion des développeurs peut désormais être désactivée via l’[&#x200B; de balise `aem-dev-login`meta.](/help/implementing/universal-editor/customizing.md#meta-tags)
-* Un clic droit dans la section de recouvrement affiche désormais un [menu d’options contextuelles](/help/sites-cloud/authoring/universal-editor/authoring.md#context-options).
-* La [mise en retrait de l’étendue](/help/implementing/universal-editor/configure-rte.md#indentation) est désormais prise en charge dans l’[éditeur de texte enrichi.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
+* La prise en charge de la définition et de la conservation [valeurs par défaut des champs de modèle a été ajoutée.](/help/implementing/universal-editor/field-types.md)
+   * Si aucune valeur n’est définie, l’éditeur universel conserve ce qui est défini comme `value` dans la définition du modèle.
+   * Cela permet de s’assurer que ce que vous voyez correspond à ce qui est conservé dans le serveur principal.
+   * C&#39;est un changement radical.
 
 ## Fonctionnalités d’adoption précoce {#early-adopter}
 
@@ -40,13 +39,6 @@ Si vous souhaitez tester les prochaines fonctionnalités répertoriées ci-desso
 
 ## Autres améliorations {#other-improvements}
 
-* Le rail des propriétés est désormais synchronisé lorsque plusieurs champs changent en contexte.
-* Le sélecteur de fragment de contenu s’ouvre désormais comme prévu sur les instances AEM 6.5.
-* La touche Échap ferme désormais les boîtes de dialogue dans l’éditeur de texte enrichi.
-* L’action **Supprimer un composant** n’est désormais disponible que lorsqu’un composant est sélectionné.
-* L’éditeur de fragment de contenu correct (ancien ou nouveau) est désormais ouvert en fonction de l’instance utilisée (si le nom d’hôte est le modèle AEM as a Cloud Service, utilisez le nouvel éditeur, sinon utilisez l’éditeur hérité).
-* La validation du filtre est ajoutée à l’action en double.
-* Les titres longs sont désormais tronqués dans le rail des propriétés.
-* Les tableaux de Multi-site Manager avec plus de 10 valeurs sont désormais correctement gérés.
-* Les erreurs de conflit survenant lors de la création de plusieurs composants portant le même nom sont désormais correctement gérées.
-* Ajout de la gestion des tableaux de Multi-site Manager avec des valeurs >10.
+* Le nettoyage des données est désormais correctement effectué sur le commutateur de contenu.
+* Plusieurs opérations sont désormais prises en charge dans la mise à jour des extensions.
+* Le bouton Fermer pour la connexion du développeur se comporte désormais comme prévu.
