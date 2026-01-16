@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 0411792d22efa70f98777971eb4f16700820abe5
+source-git-commit: a1b860b4d691515f7f868e4e7e1a70bac0c20cbe
 workflow-type: tm+mt
-source-wordcount: '1857'
-ht-degree: 50%
+source-wordcount: '1944'
+ht-degree: 48%
 
 ---
 
@@ -40,7 +40,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -93,6 +93,10 @@ Voir [Programmes bêta Cloud Manager](/help/implementing/cloud-manager/release-n
 **Détection des programmes malveillants pour les ressources chargées**
 
 AEM Assets inclut désormais l’analyse automatique des programmes malveillants des fichiers chargés, garantissant que les ressources suspectes sont mises en quarantaine avant d’accéder à la gestion des ressources numériques (DAM) pour protéger votre référentiel des menaces. Les administrateurs peuvent configurer les paramètres d’analyse et les stratégies de rétention des quarantaines pour des contrôles de sécurité rationalisés.
+
+**Métadonnées générées par l’IA - Mise à jour de l’éligibilité**
+
+Les métadonnées générées par l’IA dans AEM Assets n’ont plus besoin que le curseur GenAI soit signé pour être activé. La fonctionnalité est désormais disponible à la fois pour les clients qui ont signé l’avenant GenAI et pour les clients qui n’ont pas encore été validés. Les clients qui se sont explicitement opposés à l’utilisation de GenAI continueront à voir la fonctionnalité désactivée. Pour gérer l’activation de la fonctionnalité au niveau de l’environnement, consultez la section [Désactiver les métadonnées générées par l’IA](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md#disable-ai-generated-metadata). Cette modification sera apportée aux clients dans la version 23482 ou ultérieure.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
