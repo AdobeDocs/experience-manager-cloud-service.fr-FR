@@ -4,9 +4,9 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: b4df0abb43d69f629d2c643c408cb77af697b942
+source-git-commit: be61c21e111e1655921325a35da6fa88545fb39f
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1095'
 ht-degree: 19%
 
 ---
@@ -16,17 +16,17 @@ ht-degree: 19%
 
 La section suivante décrit les notes de mise jour techniques de maintenance actuelle d’Experience Manager as a Cloud Service.
 
-## Version 23862 {#23862}
+## Version 23963 {#23963}
 
->[!CAUTION]
+Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 23963, publiée le mardi 19 janvier 2026. La version de maintenance précédente était la version 23482.
+
+L’activation des fonctionnalités de la version 2026.1.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Consultez [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
+
+>[!NOTE]
 >
-> La version 23862 a été rendue privée. Une nouvelle version de maintenance sera bientôt fournie.
+>La version 23862 a été rendue privée.
 
-Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 23862, publiée le mercredi 23 décembre 2025. La version de maintenance précédente était la version 23482.
-
-L’activation des fonctionnalités de la version 2026.1.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
-
-### Améliorations {#enhancements-23862}
+### Améliorations {#enhancements-23963}
 
 * CQ-4361812 : ajout de la prise en charge du paramètre facultatif folderPath dans l’api REST. Description : un nouveau projet de traduction est créé par l’API et sera placé dans le chemin d’accès spécifié par le paramètre `folderPath` facultatif. Sinon, il est défini par défaut sur le chemin d’accès racine du projet `/content/projects`.
 * FORMS-21960 : ajout de la prise en charge de l’édition de la zone de travail en local pour les communications interactives, similaire à forms-spa.
@@ -50,13 +50,14 @@ L’activation des fonctionnalités de la version 2026.1.0 fournit l’ensemble
 * SITES-37794 : Edge Delivery avec éditeur universel : assistant de création de page simplifiée.
 * SITES-36963 : migrez le point d’entrée Audience/Segment vers l’API Target v3 pour la prise en charge de Workspace.
 
-### Problèmes résolus {#fixed-issues-23862}
+### Problèmes résolus {#fixed-issues-23963}
 
 * CQ-4361831 : correction d’un problème en raison duquel genai_dropdown_span n’était pas défini.
 * CQ-4360895 : correction d’un nombre inexact de statuts de tâche de traduction dans le projet lors de mises à jour simultanées.
 * CQ-4361599 : Correction d’un saut de fragments de contenu des tâches de traduction après la mise à niveau de 2025.7.
 * CQ-4360747 : correction des tâches de traduction répétables qui créent des payloads vides et se déclenchent trop souvent (NullPointerException dans ScheduleRepeatTranslationProject).
 * CQ-4359994 : correction d’une incohérence du type de champ destinationLanguage pour les projets unilingues et multilingues.
+* FORMS-23557 : la mise à jour de Rhino entraîne `*.js` l’instanciation correcte par l’API Use.
 * SITES-38153 : correction du fournisseur de référence de publication cf pour les références basées sur l’uuid.
 * SITES-37594 : améliorations des performances de la fonctionnalité de modèle par balises.
 * SITES-37337 : FragmentCreateProcessor : fournissez des détails d’erreur supplémentaires dans les journaux.
@@ -93,19 +94,19 @@ L’activation des fonctionnalités de la version 2026.1.0 fournit l’ensemble
 * SITES-37349 : Edge Delivery avec éditeur universel : effectue le rendu de plusieurs champs avec des entrées uniques en tant que liste avec un seul élément de liste.
 * SITES-36148 : Edge Delivery avec éditeur universel : correction de data-aue-label pour les champs multiples composites.
 
-### Problèmes connus {#known-issues-23862}
+### Problèmes connus {#known-issues-23963}
 
 Aucun.
 
-### Fonctionnalités et API obsolètes {#deprecated-23862}
+### Fonctionnalités et API obsolètes {#deprecated-23963}
 
 Les fonctionnalités et API obsolètes et supprimées dans AEM as a Cloud Service sont présentées dans le document [Fonctionnalités et API obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md).
 
-### Correctifs de sécurité {#security-23862}
+### Correctifs de sécurité {#security-23963}
 
 AEM as a Cloud Service est dédié à l’optimisation de la sécurité et des performances de votre plateforme. Cette version de maintenance corrige 23 vulnérabilités identifiées, renforçant ainsi notre engagement envers une protection robuste des systèmes.
 
-### Technologies intégrées {#embedded-tech-23862}
+### Technologies intégrées {#embedded-tech-23963}
 
 | Technologie | Version | Lien |
 |---|---|---|
