@@ -194,7 +194,7 @@ Pour convertir un formulaire adaptatif dans une page AEM Sites en fragment d’
 
 1. Ouvrez la page AEM Sites contenant le formulaire adaptatif (dans le composant de conteneur de formulaires adaptatifs) en mode d’édition.
 1. Ouvrez l’arborescence de contenu, puis sélectionnez le **[!UICONTROL conteneur de formulaires adaptatifs]** qui héberge votre formulaire adaptatif. Une page AEM Sites peut héberger plusieurs formulaires adaptatifs. Sélectionnez donc avec soin le conteneur de formulaires adaptatifs approprié.
-1. Dans la barre de menus, sélectionnez l’icône ![ Convertir en fragment d’expérience ](/help/forms/assets/Smock_FilingCabinet_18_N.svg) Convertir en variation de fragment d’expérience .
+1. Dans la barre de menus, sélectionnez l’icône ![&#x200B; Convertir en fragment d’expérience &#x200B;](/help/forms/assets/Smock_FilingCabinet_18_N.svg) Convertir en variation de fragment d’expérience .
    ![Cliquez sur le logo de l’armoire à fichiers pour convertir un formulaire adaptatif dans la page AEM Sites en fragment d’expérience](/help/forms/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
 
    Une boîte de dialogue pour convertir le conteneur de formulaires adaptatifs en un nouveau fragment d’expérience ou l’ajouter à un fragment d’expérience existant s’affiche
