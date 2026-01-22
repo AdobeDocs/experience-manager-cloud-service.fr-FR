@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 87368be0b4c934bb4d4799833a90edfee72348e6
+source-git-commit: bb946f28a3d1a1d64c564029d9903c315bb9ffbb
 workflow-type: tm+mt
-source-wordcount: '2625'
+source-wordcount: '2657'
 ht-degree: 12%
 
 ---
@@ -25,11 +25,11 @@ Pour ce faire, l’éditeur universel fournit aux personnes en charge de la cré
 
 >[!NOTE]
 >
->Ce document suppose que vous connaissez déjà la procédure d’accès et de navigation dans l’éditeur universel. Si ce n’est pas le cas, consultez [Accès à l’éditeur universel et navigation dans cet éditeur](/help/sites-cloud/authoring/universal-editor/navigation.md).
+>Ce document suppose que vous connaissez déjà la procédure d’accès et de navigation dans l’éditeur universel. Si ce n’est pas le cas, consultez [Accès à l’éditeur universel et navigation dans cet éditeur.](/help/sites-cloud/authoring/universal-editor/navigation.md)
 
 >[!TIP]
 >
->Pour une présentation plus détaillée de l’éditeur universel, voir [Présentation de l’éditeur universel](/help/implementing/universal-editor/introduction.md).
+>Pour une présentation plus détaillée de l’éditeur universel, voir [Présentation de l’éditeur universel.](/help/implementing/universal-editor/introduction.md)
 
 ## Modification du contenu {#editing-content}
 
@@ -43,6 +43,10 @@ La modification du contenu est simple et intuitive. Lorsque vous placez le point
 
 Selon le contenu que vous sélectionnez, vous pouvez disposer de différentes options de modification statique et d’informations et d’options supplémentaires pour le contenu dans le panneau [propriétés](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
 
+Chaque élément de contenu modifiable porte un badge indiquant le type de contenu dont il s’agit. Selon le contenu, vous pouvez cliquer sur ce badge pour accéder rapidement aux actions de modification.
+
+![Options de badge modifiables](assets/editable-badge.png)
+
 ### Modification de texte brut {#edit-plain-text}
 
 Vous pouvez modifier le texte en place en double-cliquant ou en appuyant deux fois sur le composant.
@@ -51,7 +55,7 @@ Vous pouvez modifier le texte en place en double-cliquant ou en appuyant deux fo
 
 Le contour bleu fin se transforme en contour bleu foncé pour indiquer la sélection et un curseur s’affiche. Apportez vos modifications, puis appuyez sur Entrée/Retour ou sélectionnez en dehors de la zone de texte pour les enregistrer.
 
-Lorsque vous sélectionnez le composant de texte, ses détails s’affichent dans le panneau [Propriétés](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail). Vous pouvez également modifier le texte dans le panneau.
+Lorsque vous sélectionnez le composant de texte, ses détails s’affichent dans le panneau [Propriétés).](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) Vous pouvez également modifier le texte dans le panneau.
 
 ![Modification de texte dans le panneau des propriétés](assets/ue-editing-text-component-rail.png)
 
@@ -110,7 +114,7 @@ L’éditeur de texte enrichi peut être configuré pour masquer des options ou 
 
 ### Modification de médias {#edit-media}
 
-Vous pouvez afficher les détails dans le panneau [Propriétés](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
+Vous pouvez en afficher les détails dans le panneau [propriétés](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
 
 ![Modification de médias](assets/ue-edit-media.png)
 
@@ -123,7 +127,7 @@ Les modifications sont automatiquement enregistrées dans votre contenu.
 
 ### Modification de fragments de contenu {#edit-content-fragment}
 
-Si vous sélectionnez un [fragment de contenu](/help/sites-cloud/administering/content-fragments/overview.md), vous pouvez modifier ses détails dans le panneau [propriétés](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
+Si vous sélectionnez un [fragment de contenu](/help/sites-cloud/administering/content-fragments/overview.md), vous pouvez modifier ses détails dans le panneau [propriétés.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![Modification d’un fragment de contenu](assets/ue-edit-cf.png)
 
@@ -133,7 +137,7 @@ Si vous sélectionnez un champ associé à un fragment de contenu, le fragment d
 
 Les modifications sont automatiquement enregistrées une fois que le focus quitte le champ modifié dans le panneau des propriétés.
 
-Si vous souhaitez plutôt modifier votre fragment de contenu dans l’[éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md), appuyez ou cliquez sur le bouton [**Ouvrir dans l’éditeur de fragment de contenu** &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) dans le panneau des propriétés.
+Si vous souhaitez plutôt modifier votre fragment de contenu dans l’[éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md), appuyez ou cliquez sur le bouton [**Ouvrir dans l’éditeur de fragment de contenu** ](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) dans le panneau des propriétés.
 
 >[!TIP]
 >
@@ -143,7 +147,7 @@ Selon les besoins de votre workflow, vous pouvez modifier le fragment de contenu
 
 >[!NOTE]
 >
->L’éditeur universel[&#x200B; valide les champs des fragments de contenu en fonction de leurs modèles](/help/assets/content-fragments/content-fragments-models.md#validation), ce qui permet d’appliquer des règles d’intégrité des données telles que des modèles regex et des contraintes d’unicité.
+>L’éditeur universel[ valide les champs des fragments de contenu en fonction de leurs modèles](/help/assets/content-fragments/content-fragments-models.md#validation), ce qui permet d’appliquer des règles d’intégrité des données telles que des modèles regex et des contraintes d’unicité.
 >
 >Cela garantit que le contenu répond aux exigences métier spécifiques avant sa publication.
 
@@ -211,8 +215,8 @@ Les composants sont réorganisés dans l’arborescence de contenu et dans l’�
 
 Sélectionnez les boutons Annuler ou Rétablir pour annuler ou rétablir la dernière modification dans l’éditeur.
 
-![&#x200B; Icône Annuler &#x200B;](assets/undo.png)
-![&#x200B; Icône Rétablir &#x200B;](assets/redo.png)
+![ Icône Annuler ](assets/undo.png)
+![ Icône Rétablir ](assets/redo.png)
 
 * Ces fonctions Annuler et Rétablir sont possibles pour les modifications effectuées en contexte, celles effectuées via le panneau Propriétés, ainsi que pour l’ajout, la duplication, le déplacement et la suppression de blocs.
 * Les fonctions Annuler et Rétablir sont limitées à la session de navigateur en cours.
@@ -227,7 +231,7 @@ Vous pouvez copier et coller des composants qui se trouvent dans des conteneurs 
 
 Les opérations copier-coller peuvent être effectuées sur le même onglet du navigateur ou entre des onglets du navigateur, à condition que ceux-ci soient déjà ouverts. Vous ne pouvez pas copier un élément, puis ouvrir un nouvel onglet du navigateur pour le coller.
 
-![&#x200B; Icône Copier &#x200B;](assets/copy.png)
+![ Icône Copier ](assets/copy.png)
 ![Icône Coller](assets/paste.png)
 
 1. Sélectionnez un composant dans l’éditeur ou dans l’arborescence de contenu.
@@ -343,7 +347,7 @@ Pour plus d’informations sur la manière d’activer cette extension, [consult
 
 L’extension **AEM Workflows** vous permet de [démarrer un workflow](/help/sites-cloud/authoring/workflows/overview.md) sur la page qui se trouve actuellement dans l’éditeur.
 
-![&#x200B; Icône Workflows &#x200B;](assets/workflows-icon.png)
+![ Icône Workflows ](assets/workflows-icon.png)
 
 Appuyez ou cliquez sur l’icône **Workflows** dans la barre d’outils de l’éditeur universel pour ouvrir la fenêtre modale **Démarrer un workflow**. La fenêtre répertorie le contenu possible auquel vous pouvez appliquer un workflow.
 

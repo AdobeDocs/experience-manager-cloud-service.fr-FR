@@ -1,20 +1,20 @@
 ---
-title: Notes de mise à jour de l’éditeur universel version 2026.01.15
-description: Il s’agit des notes de mise à jour de la version 2026.01.15 de l’éditeur universel.
+title: Notes de mise à jour de l’éditeur universel version 2026.01.22
+description: Il s’agit des notes de mise à jour de la version 2026.01.22 de l’éditeur universel.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 08e495b0859e9f0a0378a0fb8bd565bc76c777da
+source-git-commit: 83653ef9938e02b58d3c82ebd6395773f293f1a4
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 34%
+source-wordcount: '243'
+ht-degree: 29%
 
 ---
 
 
-# Notes de mise à jour de l’éditeur universel version 2026.01.15 {#release-notes}
+# Notes de mise à jour de l’éditeur universel version 2026.01.22 {#release-notes}
 
-Voici les notes de mise à jour de la version du 15 janvier 2026 de l’éditeur universel.
+Voici les notes de mise à jour de la version du 22 janvier 2026 de l’éditeur universel.
 
 >[!TIP]
 >
@@ -26,10 +26,11 @@ Voici les notes de mise à jour de la version du 15 janvier 2026 de l’éditeur
 
 ## Nouveautés {#what-is-new}
 
-* La prise en charge de la définition et de la conservation [valeurs par défaut des champs de modèle a été ajoutée.](/help/implementing/universal-editor/field-types.md)
-   * Si aucune valeur n’est définie, l’éditeur universel conserve ce qui est défini comme `value` dans la définition du modèle.
-   * Cela permet de s’assurer que ce que vous voyez correspond à ce qui est conservé dans le serveur principal.
-   * C&#39;est un changement radical.
+* Des libellés (comme des aperçus de texte court) ont été ajoutés aux blocs de texte dans [l’arborescence de contenu](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode).
+* TextArea est désormais prise en charge pour les champs de texte brut.
+* Le point d’entrée de configuration est désormais utilisé pour les fonctionnalités de l’interface utilisateur.
+* La zone de texte des fragments de contenu est désormais prise en charge.
+* L’API Toast est désormais exposée aux extensions.
 
 ## Fonctionnalités d’adoption précoce {#early-adopter}
 
@@ -39,6 +40,12 @@ Si vous souhaitez tester les prochaines fonctionnalités répertoriées ci-desso
 
 ## Autres améliorations {#other-improvements}
 
-* Le nettoyage des données est désormais correctement effectué sur le commutateur de contenu.
-* Plusieurs opérations sont désormais prises en charge dans la mise à jour des extensions.
-* Le bouton Fermer pour la connexion du développeur se comporte désormais comme prévu.
+* Correction d’un problème lié à la disposition de la zone de travail lors de la navigation via la barre d’emplacement.
+* L’espace blanc de tête a été assaini dans l’éditeur de texte enrichi.
+* La modification en ligne a été restaurée sur Entrée.
+* Le libellé de glisser-déplacer a été rétabli pour ne pas afficher tout le contenu.
+* Les problèmes d’accessibilité du navigateur ont été résolus.
+* `selectEditables([])` est désormais utilisé pour désélectionner tous les composants via l’extensibilité.
+* Le tableau des métadonnées est maintenant créé au bon emplacement.
+* Correction d’un problème en raison duquel les ressources de fragment de contenu copiées pointaient vers `/data/undefined`.
+
