@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: b3e1d3a3770531728d696be125f074881f179573
 workflow-type: tm+mt
-source-wordcount: '2927'
+source-wordcount: '2937'
 ht-degree: 34%
 
 ---
@@ -143,7 +143,7 @@ Placez le pointeur de la souris sur le nom du dossier pour afficher le chemin d�
 
    * Sélectionnez l’icône d’un fragment spécifique :
 
-     ![&#x200B; Console Fragments de contenu - Icône Workflows &#x200B;](assets/cf-managing-console-workflows-icon.png)
+     ![ Console Fragments de contenu - Icône Workflows ](assets/cf-managing-console-workflows-icon.png)
 
      Pour ouvrir une boîte de dialogue contenant des informations détaillées sur les workflows (passés et actuels) du fragment.:
 
@@ -197,7 +197,7 @@ La sélection d’un fragment spécifique ouvre une barre d’outils axée sur l
 >
 >Des actions telles que Publier, Dépublier, Supprimer, Déplacer, Renommer et Copier déclenchent chacune une tâche asynchrone. Il est possible de surveiller la progression de ce traitement via l’interface utilisateur des traitements asynchrones AEM.
 
-## Créer des fragments de contenu {#creating-content-fragments}
+## Création de fragments de contenu {#creating-content-fragments}
 
 Avant de créer votre fragment de contenu, vous devez créer le modèle de fragment de contenu sous-jacent.
 
@@ -267,7 +267,7 @@ Pour ouvrir votre fragment à des fins de modification :
    * Crée une copie du fragment de contenu sélectionné à son emplacement.
    * Crée des copies de tous les fragments référencés par le fragment sélectionné.
 
-     Les [&#x200B; emplacements vers lesquels les fragments référencés sont copiés](#locations-that-the-referenced-fragments-are-copied-to) dépendent de l’option sélectionnée :
+     Les [ emplacements vers lesquels les fragments référencés sont copiés](#locations-that-the-referenced-fragments-are-copied-to) dépendent de l’option sélectionnée :
 
       * **Copier dans le dossier sélectionné**
 Lorsque cette option est sélectionnée, les fragments référencés sont copiés au même emplacement que le fragment sélectionné d’origine.
@@ -404,11 +404,15 @@ Vous pouvez publier vos fragments de contenu dans :
 >
 >Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection indique cela, ainsi que le fait que le modèle sera publié avec le fragment.
 
+>[!TIP]
+>
+>Les fragments de contenu peuvent être [publiés sur Edge Delivery Services.](https://www.aem.live/developer/content-fragment-overlay)
+
 ### Publication {#publishing}
 
 Vous pouvez publier vos fragments de contenu à l’aide de l’option **Publier** à partir de :
 
-* la barre d’outils de la console [&#x200B; Fragments de contenu &#x200B;](#actions-selected-content-fragment)
+* la barre d’outils de la console [ Fragments de contenu ](#actions-selected-content-fragment)
 
    * Sélectionnez un ou plusieurs fragments dans la liste.
 
@@ -441,7 +445,7 @@ Après publication, le statut du fragment est mis à jour et visible dans l’é
 
 Vous pouvez dépublier des fragments de contenu :
 
-* la barre d’outils de la console [&#x200B; Fragments de contenu &#x200B;](#actions-selected-content-fragment)
+* la barre d’outils de la console [ Fragments de contenu ](#actions-selected-content-fragment)
 
    * Sélectionnez un ou plusieurs fragments dans la liste.
 
@@ -508,7 +512,7 @@ Par exemple :
 Les détails des copies de langue sont accessibles à partir de :
 
 * la colonne **Langue** de la [Console Fragments de contenu](#information-content-fragments)
-* l’onglet [&#x200B; Copies de langue de l’éditeur de fragments de contenu](/help/sites-cloud/administering/content-fragments/authoring.md#view-language-copies)
+* l’onglet [ Copies de langue de l’éditeur de fragments de contenu](/help/sites-cloud/administering/content-fragments/authoring.md#view-language-copies)
 
 L’icône indique les paramètres régionaux du fragment de contenu, ainsi que le nombre total de copies de langue/paramètres régionaux associées au fragment de contenu. Par exemple, à partir de la console :
 

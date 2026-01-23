@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: bd7b822262e0e7994fe5140f3786c1b7ab96e7a1
+source-git-commit: b3e1d3a3770531728d696be125f074881f179573
 workflow-type: tm+mt
-source-wordcount: '2391'
+source-wordcount: '2401'
 ht-degree: 31%
 
 ---
@@ -16,9 +16,13 @@ ht-degree: 31%
 
 Avec Adobe Experience Manager (AEM) as a Cloud Service, les fragments de contenu vous permettent de concevoir, créer, organiser et publier du contenu indépendant des pages. Ils vous permettent de préparer du contenu prêt à être utilisé à plusieurs emplacements et sur plusieurs canaux, idéal pour la [diffusion découplée](/help/headless/what-is-headless.md) et la [création de pages](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
+>[!TIP]
+>
+>Les fragments de contenu peuvent être [publiés sur Edge Delivery Services.](https://www.aem.live/developer/content-fragment-overlay)
+
 >[!IMPORTANT]
 >
->De nombreuses fonctionnalités décrites dans cette section sont *uniquement* disponibles dans l’as a Cloud Service [&#x200B; Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) ; *en ligne* Adobe Experience Manager (AEM), et non dans une instance locale.
+>De nombreuses fonctionnalités décrites dans cette section sont *uniquement* disponibles dans l’as a Cloud Service [ Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) ; *en ligne* Adobe Experience Manager (AEM), et non dans une instance locale.
 
 >[!IMPORTANT]
 >
@@ -37,8 +41,8 @@ Avec Adobe Experience Manager (AEM) as a Cloud Service, les fragments de contenu
 
 Les fragments de contenu contiennent du contenu structuré :
 
-* Chaque fragment est basé sur un [&#x200B; modèle de fragment de contenu &#x200B;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md).
-   * Le [&#x200B; modèle de fragment de contenu définit la structure &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) fragment obtenu.
+* Chaque fragment est basé sur un [ modèle de fragment de contenu ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md).
+   * Le [ modèle de fragment de contenu définit la structure ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) fragment obtenu.
 * Chaque fragment comprend :
    * **[Principal](#main-and-variations)** - Partie intégrante du fragment qui contient le contenu principal ; existe toujours et ne peut pas être supprimé
    * **[Variations](#main-and-variations)** - une ou plusieurs permutations du contenu, créées par l’auteur ou l’autrice
@@ -181,9 +185,9 @@ Les fragments de contenu sont :
 * Stockés en tant que **ressources** :
 
    * Les fragments de contenu (et leurs variantes) peuvent être créés et conservés à partir de la [console Fragments de contenu](#content-fragments-console).
-   * Créés et modifiés dans l’[&#x200B; Éditeur de fragment de contenu &#x200B;](/help/sites-cloud/administering/content-fragments/authoring.md).
+   * Créés et modifiés dans l’[ Éditeur de fragment de contenu ](/help/sites-cloud/administering/content-fragments/authoring.md).
 
-* Accessible pour la diffusion de contenu à l’aide de l’API AEM GraphQL [&#128279;](/help/headless/graphql-api/content-fragments.md).
+* Accessible pour la diffusion de contenu à l’aide de l’API AEM GraphQL [](/help/headless/graphql-api/content-fragments.md).
 
 * Disponible dans l’[éditeur de page à l’aide du composant Fragment de contenu](/help/sites-cloud/authoring/fragments/content-fragments.md) (composant référençant) :
 
