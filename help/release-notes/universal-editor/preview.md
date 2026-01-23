@@ -3,9 +3,9 @@ title: Notes de mise à jour de l’aperçu de l’éditeur universel
 description: Voici les notes de mise à jour de la version préliminaire de l’éditeur universel.
 feature: Release Information
 role: Admin
-source-git-commit: bb946f28a3d1a1d64c564029d9903c315bb9ffbb
+source-git-commit: cb8f4911b5285b92894ab1d4458561c6607a2d9c
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Ces notes de mise à jour **aperçu** sont fournies à titre indicatif pour que 
 * Les définitions étaient exposées à l’extensibilité.
 * La méthode du composant Déplacer a été exposée à `editorActions`.
 * La méthode Ajouter un composant a été exposée à `editorActions`.
-* Bloquez les détails implémentés pour V2.
+* La version 2.0 de l’API de création de documents est publiée.
 
 ## Améliorations à venir {#other-improvements}
 
