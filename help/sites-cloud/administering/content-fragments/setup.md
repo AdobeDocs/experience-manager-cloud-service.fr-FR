@@ -32,7 +32,7 @@ Pour activer votre instance pour la fonctionnalité de fragment de contenu, vous
 La configuration de votre instance est terminée :
 
 * en [activant la fonctionnalité dans l’explorateur de configurations](#enable-content-fragment-functionality-configuration-browser)
-* puis [ application de la configuration à vos dossiers Assets individuels ](#apply-the-configuration-to-your-folder)
+* puis [&#x200B; application de la configuration à vos dossiers Assets individuels &#x200B;](#apply-the-configuration-to-your-folder)
 
 >[!TIP]
 >
