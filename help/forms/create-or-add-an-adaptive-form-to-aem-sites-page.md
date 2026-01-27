@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
 role: User, Developer
-source-git-commit: bc9fa030aeab4f2dddafc2241fade7b5d0689926
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '3312'
+source-wordcount: '3306'
 ht-degree: 78%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 78%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html) |
 | AEM as a Cloud Service | Cet article |
 
 ## Vue d’ensemble {#overview}
@@ -70,11 +70,8 @@ Vous pouvez tirer pleinement parti de cette fonctionnalité en utilisant les opt
 
 ## Conditions de création ou d’ajout d’un formulaire adaptatif dans une page AEM Sites ou un fragment d’expérience AEM {#before-you-start-creating-an-adaptive-form}
 
-Avant de commencer la création d’un formulaire adaptatif, activez les composants principaux de formulaires adaptatifs et ajoutez les bibliothèques clientes de formulaires adaptatifs à votre page AEM Sites :
+Avant de commencer à créer ou un formulaire adaptatif, ajoutez les bibliothèques clientes Forms adaptatives à votre page AEM Sites :
 
-<!--### Enable Adaptive Forms Core Components for your AEM Cloud Service environment
-
-Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment. -->
 
 ### Ajout de bibliothèques clientes de Forms adaptatif à une page ou une expérience AEM Sites
 
@@ -194,7 +191,7 @@ Pour convertir un formulaire adaptatif dans une page AEM Sites en fragment d’
 
 1. Ouvrez la page AEM Sites contenant le formulaire adaptatif (dans le composant de conteneur de formulaires adaptatifs) en mode d’édition.
 1. Ouvrez l’arborescence de contenu, puis sélectionnez le **[!UICONTROL conteneur de formulaires adaptatifs]** qui héberge votre formulaire adaptatif. Une page AEM Sites peut héberger plusieurs formulaires adaptatifs. Sélectionnez donc avec soin le conteneur de formulaires adaptatifs approprié.
-1. Dans la barre de menus, sélectionnez l’icône ![&#x200B; Convertir en fragment d’expérience &#x200B;](/help/forms/assets/Smock_FilingCabinet_18_N.svg) Convertir en variation de fragment d’expérience .
+1. Dans la barre de menus, sélectionnez l’icône ![ Convertir en fragment d’expérience ](/help/forms/assets/Smock_FilingCabinet_18_N.svg) Convertir en variation de fragment d’expérience .
    ![Cliquez sur le logo de l’armoire à fichiers pour convertir un formulaire adaptatif dans la page AEM Sites en fragment d’expérience](/help/forms/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
 
    Une boîte de dialogue pour convertir le conteneur de formulaires adaptatifs en un nouveau fragment d’expérience ou l’ajouter à un fragment d’expérience existant s’affiche

@@ -5,14 +5,14 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: f3c9b798-8b20-4674-9b96-a3a0b143d947
-source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 19%
+source-wordcount: '683'
+ht-degree: 20%
 
 ---
 
-# Créer un formulaire adaptatif (composants principaux) basé sur des modèles de formulaire XFA
+# Créer un formulaire adaptatif (composants principaux) basé sur des modèles de formulaires XFA
 
 <span class="preview"> Cette fonctionnalité est disponible par le biais d’un programme d’adoption précoce. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
 
@@ -31,9 +31,7 @@ Voici quelques-uns des avantages de la création de formulaires basés sur des m
 
 ## Conditions préalables
 
-Vous avez besoin des éléments suivants pour créer un formulaire adaptatif basé sur les composants principaux à l’aide de modèles de formulaire XFA ou de fichiers XDP :
 
-* Installez la dernière version de pour activer les composants principaux de Forms adaptatif pour votre environnement AEM Cloud Service.
 * Il est recommandé de connaître les domaines suivants :
    * Création d’un formulaire adaptatif
    * XFA (XML Forms Architecture)

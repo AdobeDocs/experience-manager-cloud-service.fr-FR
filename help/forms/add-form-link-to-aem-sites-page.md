@@ -4,10 +4,10 @@ description: Découvrez comment ajouter des liens de formulaires à la page AEM 
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
 exl-id: a55d0776-8827-46cc-9625-5d6f5f6bda3b
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 14%
+source-wordcount: '481'
+ht-degree: 16%
 
 ---
 
@@ -17,11 +17,6 @@ Dans le scénario d’un site web de banque, le composant **Link** du portail Fo
 
 ![Icône Lien](/help/forms/assets/link-forms.png)
 
-## Condition préalable
-
-Avant d’explorer les différentes fonctionnalités d’un composant du portail Forms, assurez-vous que les composants principaux sont activés pour votre environnement. Installez la dernière version de pour activer les composants principaux de Forms adaptatif pour votre environnement AEM Cloud Service.
-
-Après le déploiement des derniers composants principaux dans votre environnement, les composants du portail Forms deviennent accessibles dans votre environnement de création.
 
 ## Ajoutez le composant Lien à votre page Sites
 

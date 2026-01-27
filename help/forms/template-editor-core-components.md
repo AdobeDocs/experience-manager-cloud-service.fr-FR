@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 Keywords: form builder, build adaptive form template, adaptive form template core components, form template builder, build form template.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
 role: User, Developer
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '1949'
-ht-degree: 57%
+source-wordcount: '1904'
+ht-degree: 58%
 
 ---
 
@@ -28,11 +28,7 @@ You can download and install [!DNL AEM Forms] reference content package from [So
 
 ## Condition préalable
 
-**Activer les composants principaux de Forms adaptative pour votre environnement** : lorsque vous créez un programme, les composants principaux de Forms adaptatif sont déjà activés pour votre environnement. Installez la dernière version de FAR pour activer les composants principaux de Forms adaptative pour votre environnement AEM Cloud Service.
-
->[!NOTE]
->
-> Lors du déploiement de l’environnement Forms as a Cloud Service basé sur l’archétype 45, les modèles **Adaptive Forms (composant principal)** et les thèmes basés sur les composants principaux sont ajoutés à votre environnement.
+Lors du déploiement de l’environnement Forms as a Cloud Service basé sur l’archétype 45, les thèmes basés sur les composants principaux sont ajoutés à votre environnement.
 
 ## Utiliser un modèle {#working-with-templates}
 
@@ -139,7 +135,7 @@ Lorsque vous modifiez un modèle, vous pouvez définir la mise en page et utilis
 
 ![Conteneur de dispositions dans le calque de structure](/help/forms/assets/layout-template-core-component.png)
 
-Reportez-vous à l’article [présentation de la mise en page réactive](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=fr) pour plus d’informations.
+Reportez-vous à l’article [présentation de la mise en page réactive](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=en) pour plus d’informations.
 
 ## Activation du modèle {#enabling-the-template}
 
@@ -239,7 +235,7 @@ Lorsque vous ajoutez au moins un groupe de propriétés personnalisé à l’aid
 
 ## Création d’un formulaire adaptatif à l’aide du modèle {#creating-an-adaptive-form-using-the-template}
 
-Une fois que vous avez créé et activé un modèle, il est disponible dans le gestionnaire de formulaires lorsque vous créez un formulaire adaptatif. Pour utiliser un modèle et créer un formulaire adaptatif, voir [&#x200B; Création d’un formulaire adaptatif basé sur les composants principaux &#x200B;](/help/forms/creating-adaptive-form-core-components.md).
+Une fois que vous avez créé et activé un modèle, il est disponible dans le gestionnaire de formulaires lorsque vous créez un formulaire adaptatif. Pour utiliser un modèle et créer un formulaire adaptatif, voir [ Création d’un formulaire adaptatif basé sur les composants principaux ](/help/forms/creating-adaptive-form-core-components.md).
 <!--
 ## Change display option of out of the box templates  {#change-display-option-of-out-of-the-box-templates}
 
