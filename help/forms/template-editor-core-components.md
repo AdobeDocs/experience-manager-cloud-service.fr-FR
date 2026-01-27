@@ -235,7 +235,7 @@ Lorsque vous ajoutez au moins un groupe de propriétés personnalisé à l’aid
 
 ## Création d’un formulaire adaptatif à l’aide du modèle {#creating-an-adaptive-form-using-the-template}
 
-Une fois que vous avez créé et activé un modèle, il est disponible dans le gestionnaire de formulaires lorsque vous créez un formulaire adaptatif. Pour utiliser un modèle et créer un formulaire adaptatif, voir [ Création d’un formulaire adaptatif basé sur les composants principaux ](/help/forms/creating-adaptive-form-core-components.md).
+Une fois que vous avez créé et activé un modèle, il est disponible dans le gestionnaire de formulaires lorsque vous créez un formulaire adaptatif. Pour utiliser un modèle et créer un formulaire adaptatif, voir [&#x200B; Création d’un formulaire adaptatif basé sur les composants principaux &#x200B;](/help/forms/creating-adaptive-form-core-components.md).
 <!--
 ## Change display option of out of the box templates  {#change-display-option-of-out-of-the-box-templates}
 
