@@ -62,7 +62,7 @@ CIF vous aide à créer des modèles d’intégration normalisés et basés sur 
    * Pas d’accès aux données intermédiaires
    * Besoin de données et d’expériences produit en temps réel
 * Une maturité numérique croissante nécessite une gestion de l’expérience
-* 
+* &#x200B;
    * CIF s’accompagne de fonctionnalités de gestion de l’expérience produit qui peuvent être intégrées de manière incrémentielle sans effort informatique supplémentaire.
 * Prêt pour l’omnicanal
    * CIF prend en charge diverses technologies de point de contact (côté serveur, hybride, côté client) avec des modèles, des accélérateurs et des composants principaux.
