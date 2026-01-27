@@ -4,10 +4,10 @@ description: Comprenez en détail le contrat JSON entre la définition du compos
 feature: Developing
 role: Admin, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 022dea38f8597226c644fcdd8c2197a2299a1dfb
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 100%
+source-wordcount: '614'
+ht-degree: 97%
 
 ---
 
@@ -94,9 +94,9 @@ Voici un exemple complet, mais simple de `component-definition.json`.
 
 `plugins` définit le plug-in responsable de la conservation du composant. Les plug-ins courants incluent :
 
-* `aem` pour [AEM as a Cloud Service.](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service)
-* `aem65` pour [AEM 6.5.](https://experienceleague.adobe.com/fr/docs/experience-manager-65) et [AEM 6.5 LTS](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts)
+* `aem` pour [AEM as a Cloud Service,](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service) [AEM 6.5.,](https://experienceleague.adobe.com/fr/docs/experience-manager-65) et [AEM 6.5 LTS](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts)
 * `xwalk` pour [Création avec AEM Sites pour Edge Delivery Services.](https://www.aem.live/developer/ue-tutorial)
+* `da` pour la [création de documents](https://docs.da.live/developers/reference/universal-editor)
 
 ## `page` ou `cf` {#page-cf}
 
