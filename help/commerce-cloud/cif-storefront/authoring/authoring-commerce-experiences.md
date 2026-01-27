@@ -4,10 +4,10 @@ description: Découvrez comment créer et créer efficacement des expériences l
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
 source-wordcount: '719'
-ht-degree: 86%
+ht-degree: 83%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 86%
 
 ## Vue d’ensemble {#overview}
 
-Le module complémentaire CIF étend la création d’AEM avec des fonctionnalités spécifiques au commerce. Cela permet aux auteurs de créer et de gérer efficacement des expériences liées au commerce en accédant aux données et au contenu des produits sans quitter le contexte.
+Le module complémentaire CIF étend la création d’AEM avec des fonctionnalités spécifiques au commerce. Cela permet aux créateurs et créatrices de créer et de gérer efficacement des expériences liées au commerce en accédant aux données et au contenu des produits sans quitter le contexte.
 
 ## Sélecteurs {#pickers}
 

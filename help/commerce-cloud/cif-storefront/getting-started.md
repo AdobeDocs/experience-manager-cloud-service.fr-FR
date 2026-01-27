@@ -9,7 +9,7 @@ kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 role: Admin
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 80%
@@ -36,7 +36,7 @@ L’intégration à AEM Commerce as a Cloud Service est un processus à deux é
 
 La première étape d’intégration est effectuée par Adobe. Pour plus d’informations sur la tarification et l’approvisionnement, rapprochez-vous de votre contact commercial.
 
-Une fois que vous avez reçu le module complémentaire CIF, il est appliqué à tous les programmes Cloud Manager existants. Si vous ne disposez pas d’un programme Cloud Manager, vous devez en créer un. Pour plus d’informations, voir [&#x200B; Configuration de votre programme &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html?lang=fr).
+Une fois que vous avez reçu le module complémentaire CIF, il est appliqué à tous les programmes Cloud Manager existants. Si vous ne disposez pas d’un programme Cloud Manager, vous devez en créer un. Pour plus d’informations, voir [ Configuration de votre programme ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html?lang=fr).
 
 La deuxième étape s’effectue en libre-service pour chaque environnement AEM as a Cloud Service. Il existe d’autres configurations que vous devrez effectuer après l’approvisionnement initial du module complémentaire CIF.
 
@@ -57,7 +57,7 @@ Il existe deux options pour configurer le point d’entrée :
 
 ### Par le biais de l’interface utilisateur de Cloud Manager (par défaut) {#cm-ui}
 
->[!VIDEO](https://video.tv.adobe.com/v/343271?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
 Vous pouvez effectuez cette configuration à l’aide d’une boîte de dialogue sur la page Détails de l’environnement. Lorsque vous affichez cette page pour un programme compatible avec Commerce, un bouton s’affiche si le point d’entrée n’est pas actuellement configuré :
 

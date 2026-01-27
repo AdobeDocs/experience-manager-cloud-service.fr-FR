@@ -5,7 +5,7 @@ thumbnail: introducing-aem-commerce.jpg
 feature: Commerce Integration Framework
 role: Admin
 exl-id: 3f18f976-ff8a-4726-b4c5-db4e19ae7cee
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 61%
@@ -29,7 +29,7 @@ Cette complexité ouvre la porte à de potentielles défaillances, à une augmen
 
 ## Avantages de CIF {#cif-benefits}
 
-CIF fournit des composants principaux commerciaux prêts à l’emploi qui réduisent le besoin de code personnalisé et accélèrent le délai de mise sur le marché des marques. Tous les composants principaux sont prêts à l’emploi et intégrés à la couche de données côté client d’Adobe pour nourrir les profils clients, comme par exemple le profil unifié. Ce profil capture en détail le comportement d’un visiteur ou d’une visiteuse et peut être utilisé pour prédire le parcours client et le personnaliser en temps réel.
+CIF fournit des composants principaux commerciaux prêts à l’emploi qui réduisent le besoin de code personnalisé et accélèrent le délai de mise sur le marché des marques. Tous les composants principaux sont prêts à l’emploi et intégrés à la couche de données côté client d’Adobe pour nourrir les profils clients, comme le profil unifié. Ce profil capture en détail le comportement d’un visiteur ou d’une visiteuse et peut être utilisé pour prédire le parcours client et le personnaliser en temps réel.
 
 Le module complémentaire CIF apporte du contexte de produit à Experience Manager et fournit des outils de création tels qu’une console de produits et des sélecteurs de produits ou de catégories qui permettent au spécialiste marketing de créer et de diffuser des expériences Shoppable dans Experience Manager sans faire appel au développeur. Voici ses avantages :
 
@@ -62,7 +62,7 @@ CIF vous aide à créer des modèles d’intégration normalisés et basés sur 
    * Pas d’accès aux données intermédiaires
    * Besoin de données et d’expériences produit en temps réel
 * Une maturité numérique croissante nécessite une gestion de l’expérience
-* &#x200B;
+* 
    * CIF s’accompagne de fonctionnalités de gestion de l’expérience produit qui peuvent être intégrées de manière incrémentielle sans effort informatique supplémentaire.
 * Prêt pour l’omnicanal
    * CIF prend en charge diverses technologies de point de contact (côté serveur, hybride, côté client) avec des modèles, des accélérateurs et des composants principaux.
