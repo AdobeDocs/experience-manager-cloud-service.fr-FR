@@ -25,7 +25,7 @@ Le fichier `component-definition.json` définit les composants disponibles pour 
 
 >[!TIP]
 >
->Il n’est pas nécessaire de créer un fichier `component-definition.json` à partir de zéro. Le projet modèle utilisé pour [ amorcer votre projet](https://www.aem.live/developer/ue-tutorial) contient un [fichier `component-definition.json` entièrement fonctionnel](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) que vous pouvez adapter à vos besoins.
+>Il n’est pas nécessaire de créer un fichier `component-definition.json` à partir de zéro. Le projet modèle utilisé pour [&#x200B; amorcer votre projet](https://www.aem.live/developer/ue-tutorial) contient un [fichier `component-definition.json` entièrement fonctionnel](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) que vous pouvez adapter à vos besoins.
 
 ## Définition d’exemple de composant {#example}
 
@@ -88,7 +88,7 @@ Voici un exemple complet, mais simple de `component-definition.json`.
 * `model` définit le [modèle](/help/implementing/universal-editor/field-types.md#model-structure) utilisé avec le composant.
    * Le modèle est ainsi maintenu de manière centralisée dans la définition du composant et n’a pas besoin d’être [spécifié](/help/implementing/universal-editor/field-types.md#instrumentation) pour l’instrumentation.
    * Vous pouvez ainsi déplacer des composants entre des conteneurs.
-* `filter` définit quel [ filtre](/help/implementing/universal-editor/filtering.md) doit être utilisé avec le composant.
+* `filter` définit quel [&#x200B; filtre](/help/implementing/universal-editor/filtering.md) doit être utilisé avec le composant.
 
 ## `plugins` {#plugins}
 
@@ -123,7 +123,7 @@ Si le composant est associé au contenu dans un fragment de contenu, les informa
 
 * `name` définit un nom facultatif enregistré dans le JCR pour le composant nouvellement créé.
    * Purement informatif et généralement non affiché dans l’interface utilisateur, contrairement au `title`.
-* `cfModel` définit le modèle [ de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md) pour le composant nouvellement créé.
+* `cfModel` définit le modèle [&#x200B; de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md) pour le composant nouvellement créé.
 * `cfFolder` définit dans quel dossier le fragment de contenu doit être créé.
 * `title` définit le titre du nouveau fragment de contenu.
 * `description` définit une description du nouveau fragment de contenu.
