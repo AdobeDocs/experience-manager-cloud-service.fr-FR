@@ -5,16 +5,16 @@ feature: Content Fragments
 role: User
 exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 278242e0be1da5c64abfa5d9ac174013688ff422
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 88%
+source-wordcount: '559'
+ht-degree: 79%
 
 ---
 
 # Markdown {#markdown}
 
-Lorsque vous [créez](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) vos fragments de contenu, des [champs de texte multiligne](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) peuvent être définis avec le **type par défaut** de **Markdown**. L’éditeur de fragment de contenu utilise la syntaxe *markdown* pour vous permettre d’écrire facilement du contenu pour la création de pages et la diffusion sans interface utilisateur :
+Lors de la [création](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) de fragments de contenu, des [champs de texte multiligne](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) peuvent être définis avec le **Type par défaut** de **Markdown**. L’éditeur de fragment de contenu utilise la syntaxe *markdown* pour vous permettre d’écrire facilement du contenu pour la création de pages et la diffusion headless :
 
 ![Champ de texte multiligne Markdown dans l’éditeur](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
 
@@ -32,7 +32,7 @@ Vous pouvez définir :
 
 ## Notation d’en-tête {#heading-notation}
 
-Pour créer un en-tête en plaçant un hashtag (#) devant le titre, Une balise de hachage (#) est utilisée pour un H1, deux balises de hachage (##) pour un H2, etc. Vous pouvez utiliser jusqu’à six hashtags. Par exemple :
+Pour créer un en-tête en plaçant un hashtag (#) devant le titre, Une balise de hachage (#) indique un H1, deux balises de hachage (##) pour un H2, etc. Vous pouvez utiliser jusqu’à six hashtags. Par exemple :
 
     `## This is an H2`
 
@@ -66,7 +66,7 @@ Voici des exemples de liens intégrés :
 
     `This is [an example](https://example.com/ "Title") inline link.`
 
-    `This is [an example of an email link](emailto:myaddress@mydomain.info)`
+    `This is [an example (non-standard) of an email link](emailto:myaddress@mydomain.info)`
 
     `[This link](https://example.net/) has no title attribute.`
 
@@ -150,7 +150,7 @@ Pour créer une liste ordonnée, ajoutez les nombres, suivis d’un point, avant
 
 Vous pouvez ajouter un style italique ou gras à votre texte.
 
-Vous pouvez ajouter des italiques comme suit :
+Vous pouvez ajouter l’italique comme suit :
 
     `*single asterisks*`
 
@@ -182,7 +182,7 @@ Les blocs de code sont généralement utilisés pour illustrer le code source. V
 
 ## Échappements par barre oblique inverse {#backslash-escapes}
 
-Vous pouvez utiliser des caractères d’échappement par barre oblique inverse pour générer des caractères littéraux ayant une signification spéciale dans la syntaxe de formatage. Par exemple, pour entourer un mot par des astérisques littéraux (au lieu d’une balise &lt;em> HTML), vous pouvez utiliser des barres obliques inverses avant les astérisques, comme suit :
+Vous pouvez utiliser des barres obliques inverses pour générer des caractères littéraux qui ont également une signification spéciale dans la syntaxe de mise en forme. Par exemple, si vous souhaitez entourer un mot d’astérisques littéraux (au lieu d’une balise HTML &lt;em>), vous pouvez utiliser des barres obliques inverses avant les astérisques, comme suit :
 
     `\\*literal asterisks\\*`
 
