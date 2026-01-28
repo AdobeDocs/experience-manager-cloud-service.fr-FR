@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 solution: Experience Manager Sites
-source-git-commit: ea85381d63954af3093c34f612babd953c466e1e
+source-git-commit: 6173fc8a42525dcde435289da8ef8a533ea96de6
 workflow-type: tm+mt
 source-wordcount: '595'
-ht-degree: 82%
+ht-degree: 83%
 
 ---
 
@@ -44,7 +44,7 @@ Pour créer un en-tête en plaçant un hashtag (#) devant le titre, Une balise d
 
     `### This is an H3`
 
-    `###### This is a H6`
+    `###### This is an H6`
 
 Si vous le souhaitez, vous pouvez créer une balise H1 en soulignant le texte par des signes égal et créer une balise H2 en soulignant le texte par des signes moins. Par exemple :
 
@@ -72,7 +72,7 @@ Voici des exemples de liens intégrés :
 
     `This is [an example](https://example.com/ "Title") inline link.`
 
-    `This is [an example of an email link](emailto:myaddress@mydomain.info)`
+    `This is [an example (non-standard) of an email link](emailto:myaddress@mydomain.info)`
 
     `[This link](https://example.net/) has no title attribute.`
 
@@ -156,7 +156,7 @@ Pour créer une liste ordonnée, ajoutez les nombres, suivis d’un point, avant
 
 Vous pouvez ajouter un style italique ou gras à votre texte.
 
-Vous pouvez ajouter des italiques comme suit :
+Vous pouvez ajouter l’italique comme suit :
 
     `*single asterisks*`
 
@@ -172,7 +172,7 @@ Vous pouvez mettre du texte en gras comme suit :
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Pour indiquer une plage de code, entourez-la de guillemets obliques (`` ` ``). Contrairement à un bloc de code préformaté, une plage de code indique du code dans un paragraphe normal.
+Pour désigner une plage de code, entourez-la de guillemets obliques (`` ` ``). Contrairement à un bloc de code préformaté, une plage de code indique du code dans un paragraphe normal.
 
 Par exemple :
 
