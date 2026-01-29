@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: Améliorations du service d’appel dans VRE, remplissage des options de liste déroulante à l’aide du service d’appel, Définition du panneau répétable à l’aide de la sortie du service d’appel, Définition du panneau à l’aide de la sortie du service d’appel, Utilisation du paramètre de sortie du service d’appel pour valider d’autres champs.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+source-git-commit: 07f1b64753387d9ee47b26d65955e41cd961f1a5
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '2150'
 ht-degree: 1%
 
 ---
@@ -171,6 +171,10 @@ Saisissez `101` dans la zone de texte `Pet ID` pour renseigner dynamiquement les
 
 ![Résultat](/help/forms/assets/output1.png)
 
+> 
+>
+> Les options de liste déroulante peuvent également être renseignées dynamiquement en appelant un service, en analysant la réponse JSON et en appliquant des fonctions personnalisées. Pour plus d’informations, voir [cette section](#retrieve-property-values-from-a-json-array).
+
 ### Cas d’utilisation 2 : définition du panneau répétable à l’aide de la sortie du service d’appel
 
 Ce cas d’utilisation montre comment remplir dynamiquement les panneaux répétables en fonction de la sortie d’un **Invoke Service**.
@@ -269,6 +273,123 @@ Vous pouvez éventuellement configurer un gestionnaire d’erreurs pour afficher
 Lorsque l’utilisateur clique sur le bouton **Envoyer**, le service d’API `redirect-api` est appelé. En cas de réussite, l’utilisateur est redirigé vers la page **Nous contacter**.
 
 ![Sortie de payload d’événement](/help/forms/assets/output5.gif)
+
+## Récupération des valeurs de propriété d’un tableau JSON
+
+Le Forms adaptatif prend en charge l’appel d’un service, le traitement des réponses JSON et le remplissage dynamique des champs de formulaire. Cette section décrit comment extraire des valeurs de propriété d’un tableau JSON et les lier à des champs de formulaire.
+
+### Exemple de réponse JSON
+
+L’exemple suivant représente les régions commerciales des États-Unis et la liste des représentants :
+
+
+```json
+[
+  {
+    "region": "East",
+    "salesPerson": "Emily Carter"
+  },
+  {
+    "region": "South",
+    "salesPerson": "Michael Brown"
+  },
+  {
+    "region": "Midwest",
+    "salesPerson": "Sophia Martinez"
+  },
+  {
+    "region": "Southwest",
+    "salesPerson": "David Johnson"
+  },
+  {
+    "region": "West",
+    "salesPerson": "Linda Walker"
+  }
+]
+```
+
+### Fonction personnalisée pour extraire des valeurs de propriété
+
+<span class="preview"> Il s’agit d’une fonctionnalité adoptée rapidement. Si vous êtes intéressé, envoyez un e-mail rapide à partir de votre adresse professionnelle à mailto:aem-forms-ea@adobe.com pour demander l&#39;accès à la fonctionnalité</a>. </span>
+
+Utilisez la fonction personnalisée suivante pour extraire des valeurs de propriété du tableau JSON.
+
+```js
+/**
+ * Returns an array of values for a specific property from an array of objects.
+ *
+ * @name getPropertyValues
+ * @param {Object[]} jsonArray An array of objects
+ * @param {string} propertyName The property whose values should be extracted
+ * @returns {Array} An array containing the values of the specified property
+ *
+ */
+
+function getPropertyValues(jsonArray, propertyName)
+{
+    return jsonArray.map((obj) => obj[propertyName]);
+
+}
+```
+
+La fonction personnalisée accepte :
+
+* **jsonArray** : tableau JSON renvoyé par le service
+* **propertyName** : propriété pour extraire une valeur
+
+La fonction personnalisée renvoie un simple tableau de valeurs.
+
+>[!NOTE]
+>
+> Pour obtenir des instructions détaillées sur l’ajout de fonctions personnalisées, reportez-vous à l’article [Présentation des fonctions personnalisées pour le Forms adaptatif basé sur les composants principaux](/help/forms/create-and-use-custom-functions.md).
+
+
+### Utilisation de la fonction dans l’éditeur de règles
+
+Pour récupérer la valeur spécifique du tableau JSON :
+
+```
+event.payload.invokeServiceResponse.rawPayloadBody
+```
+
+L’exemple suivant montre comment remplir un formulaire `Sales Department` à l’aide de cette réponse.
+
+Par exemple, nous allons créer un formulaire `Sales Department` qui comprend les listes déroulantes `Select Region` et `Select Sales Representative` .
+
+**Étape 1 : appeler le service à l’initialisation du formulaire**
+
+```
+WHEN
+    Form is initialized
+THEN
+    Invoke Service → salesdeptinfo
+```
+
+>[!NOTE]
+>
+> Pour savoir comment intégrer l’API sans créer de modèle de données de formulaire dans l’éditeur visuel de règles, [cliquez ici](/help/forms/api-integration-in-rule-editor.md).
+
+**Étape 2 : remplir la liste déroulante Région**
+
+Ajoutez un gestionnaire de réussite pour l’appel de service et configurez l’action suivante :
+
+```
+Set enum → Region dropdown
+getPropertyValues(
+    event.payload.invokeServiceResponse.rawPayloadBody,
+    "region"
+)
+```
+
+Cette règle lit le tableau JSON, extrait les valeurs de propriété `region` et affecte les valeurs à la liste déroulante `Select Region` .
+
+De même, configurez l’action de la liste déroulante `Select Sales Representative` dans le gestionnaire de réussite.
+
+![Payload d’événement pour le tableau JSON ](/help/forms/assets/event-payload.png)
+
+Lorsque le formulaire charge, les données JSON sont renvoyées et la fonction personnalisée extrait les valeurs de propriété. La liste déroulante est automatiquement renseignée :
+
+![Formulaire de payload d’événement](/help/forms/assets/event-payload-form.png)
 
 ## Questions fréquentes
 

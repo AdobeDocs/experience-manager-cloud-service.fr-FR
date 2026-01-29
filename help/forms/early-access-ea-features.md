@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a2f686e7917d47138bdb9dcd4b5245732635bed7
 workflow-type: tm+mt
-source-wordcount: '3068'
+source-wordcount: '3096'
 ht-degree: 21%
 
 ---
@@ -312,6 +312,8 @@ Le stockage de PDF dans le stockage Blob Azure permet une gestion centralisée d
 * [Navigation améliorée avec prise en charge de la payload d’événement](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service) : l’action **Accéder à** des gestionnaires de service d’appel prend en charge les `EVENT_PAYLOAD`, ce qui permet aux auteurs de formulaires de configurer des actions de suivi en fonction des réponses d’événement.
 
 * [Prise en charge des fonctions et des expressions mathématiques dans les paramètres d’entrée](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters) : les paramètres d’entrée prennent désormais en charge les appels de fonction et les expressions mathématiques, ce qui permet aux auteurs de formulaires de transmettre directement des valeurs calculées dynamiquement.
+
+* [Récupérer les valeurs de propriété d’un tableau JSON](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array) : appelez une API avec une fonction personnalisée pour extraire les valeurs d’un tableau JSON et les lier directement aux champs de formulaire.
 
 ## Voir également
 

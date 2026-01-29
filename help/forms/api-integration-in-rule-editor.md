@@ -4,12 +4,12 @@ description: Découvrez les dernières améliorations apportées au service Invo
 feature: Adaptive Forms, Core Components, Edge Delivery Services
 role: User, Developer
 level: Beginner, Intermediate
-keywords: intégration de l’API dans l’éditeur de règles, appeler les améliorations du service
+keywords: intégration d’API dans l’éditeur de règles, améliorations du service d’appel
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 0dba0003d8b13631e91147fa08c3b986c11b61d3
+source-git-commit: 478b9c21e5b96dc31f5926a49864ea867e1ae86c
 workflow-type: tm+mt
-source-wordcount: '1027'
-ht-degree: 3%
+source-wordcount: '1034'
+ht-degree: 4%
 
 ---
 
@@ -36,7 +36,7 @@ En outre, l’éditeur visuel de règles vous permet de définir des gestionnair
 | **Complexité** | Effort de configuration plus élevé (nécessite le mappage et la configuration) | Simple et léger |
 | **Le Mieux Adapté À** | Cas d’utilisation d’entreprise ou à grande échelle avec plusieurs formulaires | Petits formulaires, prototypes ou appels d’API uniques |
 
-## Configuration de l’intégration de l’API
+## Configuration d’intégration d’API
 
 La capture d’écran ci-dessous affiche la fenêtre de configuration de l’intégration API :
 
@@ -103,7 +103,7 @@ Vous pouvez intégrer une API sans créer de modèle de données de formulaire e
 
 Un service d’API nommé **getcontendname** est configuré sous **Configuration de l’intégration de l’API** dans l’éditeur de règles :
 
-![&#x200B; Configuration du point d’entrée REST de l’API &#x200B;](/help/forms/assets/api-restendpoint.png)
+![ Configuration du point d’entrée REST de l’API ](/help/forms/assets/api-restendpoint.png)
 
 * **URL du point d’entrée de l’API** → `https://secure.geonames.org/countryInfoJSON?username=aemforms`
 * **Méthode HTTP** → GET
@@ -122,6 +122,10 @@ Par exemple, lorsque l’utilisateur ouvre **Pays de citoyenneté**, la liste de
 ![Sortie d’intégration d’API](/help/forms/assets/api-integration-output.png)
 
 De même, les **Pays d’émission du passeport** et **Pays de destination** utilisent le même appel API, ce qui garantit des données cohérentes et à jour dans les trois champs.
+
+>
+>
+> Vous pouvez [récupérer les valeurs de propriété d’un tableau JSON en appelant une API et en utilisant une fonction personnalisée](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array). Cette approche vous permet d’extraire des valeurs et de les lier directement aux champs du formulaire.
 
 ## Mise en œuvre du mécanisme de reprise en cas d’échec de l’API
 
@@ -195,10 +199,6 @@ function retryHandler(requestFn) {
 ```
 
 Dans le code ci-dessus, la fonction **retryHandler** gère les requêtes d’API avec des reprises automatiques en cas d’échec. Il prend une fonction de requête (requestFn) et tente de soumettre la requête jusqu’à deux fois, en ajoutant des métadonnées pour chaque nouvelle tentative.
-
->[!NOTE]
->
-> Pour obtenir des instructions détaillées sur l’ajout de fonctions personnalisées, reportez-vous à l’article [Présentation des fonctions personnalisées pour le Forms adaptatif basé sur les composants principaux](/help/forms/create-and-use-custom-functions.md).
 
 ## Questions fréquentes
 

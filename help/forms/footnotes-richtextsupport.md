@@ -4,18 +4,16 @@ description: Utilisez l’éditeur de texte enrichi (RTE) pour les notes de bas 
 feature: Adaptive Forms, Foundation Components
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
 role: User, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a7265b4f8df34efc09076c03d1433f9aae542e76
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 80%
+source-wordcount: '450'
+ht-degree: 72%
 
 ---
 
 # Composant de note de bas de page. {#footnotecomponent}
 
->[!NOTE]
->
-> Adobe recommande d’utiliser la capture de données moderne et extensible [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [créer un nouveau Forms adaptatif](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter un Forms adaptatif aux pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit une ancienne approche de création de Forms adaptatif à l’aide de composants de base.
+Adobe recommande d’utiliser la capture de données moderne et extensible [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [créer un nouveau Forms adaptatif](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter un Forms adaptatif aux pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit une ancienne approche de création de Forms adaptatif à l’aide de composants de base.
 
 La **[!UICONTROL Note de bas de page]** est le texte d’informations ou les notes supplémentaires qui apparaissent à la fin de la page. La [!UICONTROL Note de bas de page] comprend les notes qui sont indiquées dans votre texte avec des nombres sous forme d’exposant.
 
@@ -53,14 +51,15 @@ Pour ajouter une note de bas de page dans les formulaires adaptatifs, procédez 
 
 1. À partir de l’explorateur des composants, glissez-déposez le composant **[!UICONTROL Espace réservé pour la note de bas de page]** sur le formulaire adaptatif.
 
-   >[!NOTE]
-   >
-   >* Sur l’instance de publication, les notes de bas de page s’affichent à l’emplacement où le composant **[!UICONTROL Espace réservé de la note de bas de page]** est placé sur le formulaire adaptatif.
-   >* Lorsque vous naviguez entre différents panneaux, seules les notes de bas de page visibles apparaissent dans l’**[!UICONTROL Espace réservé de la note de bas de page]** présent dans le panneau de navigation.
-
 1. Enregistrez les propriétés.
 
 Au moment de l’exécution, le nombre apparaît sur le texte sous forme d’exposant et sa description correspondante apparaît dans le composant **[!UICONTROL Note de bas de page]** à l’emplacement où l’[!UICONTROL Espace réservé de la note de bas de page] est placé sur le formulaire adaptatif. Vous pouvez accéder directement à la note de bas de page descriptive en cliquant sur son numéro correspondant dans la [!UICONTROL Note de bas de page].
+
+## Comportement de l’espace réservé de note de bas de page dans le Forms adaptatif
+
+* Sur l’instance de publication, les notes de bas de page s’affichent à l’emplacement où le composant **[!UICONTROL Espace réservé de la note de bas de page]** est placé sur le formulaire adaptatif.
+* Les notes de bas de page prennent en charge les sauts de ligne, ce qui permet aux auteurs du formulaire de mettre en forme le contenu sur plusieurs lignes dans le composant **[!UICONTROL Espace réservé de note de bas de page]**.
+* Les notes de bas de page restent visibles à tout moment dans l’**[!UICONTROL Espace réservé de la note de bas de page]** quelle que soit la visibilité des panneaux associés.
 
 
 ## Voir également {#see-also}
