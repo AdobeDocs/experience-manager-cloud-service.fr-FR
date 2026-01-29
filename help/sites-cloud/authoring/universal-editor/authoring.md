@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: bb946f28a3d1a1d64c564029d9903c315bb9ffbb
+source-git-commit: 519319f137065c1ccc8778e42c7de8f23fb5c104
 workflow-type: tm+mt
-source-wordcount: '2657'
-ht-degree: 12%
+source-wordcount: '2710'
+ht-degree: 11%
 
 ---
 
@@ -33,17 +33,25 @@ Pour ce faire, l’éditeur universel fournit aux personnes en charge de la cré
 
 ## Modification du contenu {#editing-content}
 
-La modification du contenu est simple et intuitive. Lorsque vous placez le pointeur de la souris sur le contenu de l’éditeur, le contenu modifiable se met en surbrillance dans un fin contour bleu.
+La modification du contenu est simple et intuitive. Lorsque vous placez le pointeur de la souris sur le contenu de l’éditeur, le contenu modifiable est mis en surbrillance avec un contour fin bleu clair et un badge.
 
-![Le contenu modifiable est mis en surbrillance dans une case bleue.](assets/editable-content.png)
+![Le contenu modifiable est mis en surbrillance dans une case bleu clair](assets/editable-content.png)
+
+Appuyez ou cliquez sur le contenu en surbrillance et le contour fin bleu clair se transforme en contour bleu foncé avec un badge.
+
+![Le contenu sélectionné est mis en surbrillance dans une case bleu foncé](assets/selected-content.png)
 
 >[!TIP]
 >
 >Par défaut, appuyer ou cliquer sur du contenu le sélectionne pour le modifier. Si vous souhaitez parcourir votre contenu en suivant les liens, passez en [mode Aperçu](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode).
 
-Selon le contenu que vous sélectionnez, vous pouvez disposer de différentes options de modification statique et d’informations et d’options supplémentaires pour le contenu dans le panneau [propriétés](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
+Selon le contenu que vous sélectionnez, vous pouvez disposer de différentes options de modification statique, ainsi que d’informations et d’options supplémentaires pour le contenu dans le panneau [propriétés](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
 
-Chaque élément de contenu modifiable porte un badge indiquant le type de contenu dont il s’agit. Selon le contenu, vous pouvez cliquer sur ce badge pour accéder rapidement aux actions de modification.
+### Menu contextuel {#context-menu}
+
+Chaque élément de contenu modifiable porte un badge indiquant le type de contenu dont il s’agit.
+
+Vous pouvez cliquer sur ce badge pour accéder rapidement à un menu contextuel avec des actions d’édition. Un clic droit sur un élément modifiable non sélectionné le sélectionne automatiquement et ouvre également le menu contextuel.
 
 ![Options de badge modifiables](assets/editable-badge.png)
 
@@ -53,7 +61,7 @@ Vous pouvez modifier le texte en place en double-cliquant ou en appuyant deux fo
 
 ![Modification du contenu](assets/editing-content.png)
 
-Le contour bleu fin se transforme en contour bleu foncé pour indiquer la sélection et un curseur s’affiche. Apportez vos modifications, puis appuyez sur Entrée/Retour ou sélectionnez en dehors de la zone de texte pour les enregistrer.
+Le contour fin bleu clair se transforme en contour bleu foncé pour indiquer la sélection et un curseur s’affiche. Apportez vos modifications, puis appuyez sur Entrée/Retour ou sélectionnez en dehors de la zone de texte pour les enregistrer.
 
 Lorsque vous sélectionnez le composant de texte, ses détails s’affichent dans le panneau [Propriétés).](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) Vous pouvez également modifier le texte dans le panneau.
 
@@ -69,9 +77,9 @@ Vous pouvez modifier le texte en place en double-cliquant ou en appuyant deux fo
 
 Pour votre commodité, les options de mise en forme et les détails de votre texte sont disponibles à deux endroits.
 
-#### Le menu contextuel {#context-menu}
+#### Menu Contextuel Texte Enrichi {#rich-text-context-menu}
 
-Le menu contextuel s’ouvre au-dessus du bloc de texte enrichi et offre des options de mise en forme de base en contexte. En raison des limitations d’espace, certaines options peuvent être masquées derrière le bouton représentant des points de suspension.
+Un menu contextuel s’ouvre au-dessus du bloc de texte enrichi et offre des options de mise en forme de base en contexte. En raison des limitations d’espace, certaines options peuvent être masquées derrière le bouton représentant des points de suspension.
 
 ![Menu contextuel Texte enrichi](assets/rich-text-context-menu.png)
 
@@ -137,7 +145,7 @@ Si vous sélectionnez un champ associé à un fragment de contenu, le fragment d
 
 Les modifications sont automatiquement enregistrées une fois que le focus quitte le champ modifié dans le panneau des propriétés.
 
-Si vous souhaitez plutôt modifier votre fragment de contenu dans l’[éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md), appuyez ou cliquez sur le bouton [**Ouvrir dans l’éditeur de fragment de contenu** &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) dans le panneau des propriétés.
+Si vous souhaitez plutôt modifier votre fragment de contenu dans l’[éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md), appuyez ou cliquez sur le bouton [**Ouvrir dans l’éditeur de fragment de contenu** ](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) dans le panneau des propriétés.
 
 >[!TIP]
 >
@@ -147,7 +155,7 @@ Selon les besoins de votre workflow, vous pouvez modifier le fragment de contenu
 
 >[!NOTE]
 >
->L’éditeur universel[&#x200B; valide les champs des fragments de contenu en fonction de leurs modèles](/help/assets/content-fragments/content-fragments-models.md#validation), ce qui permet d’appliquer des règles d’intégrité des données telles que des modèles regex et des contraintes d’unicité.
+>L’éditeur universel[ valide les champs des fragments de contenu en fonction de leurs modèles](/help/assets/content-fragments/content-fragments-models.md#validation), ce qui permet d’appliquer des règles d’intégrité des données telles que des modèles regex et des contraintes d’unicité.
 >
 >Cela garantit que le contenu répond aux exigences métier spécifiques avant sa publication.
 
@@ -215,8 +223,8 @@ Les composants sont réorganisés dans l’arborescence de contenu et dans l’�
 
 Sélectionnez les boutons Annuler ou Rétablir pour annuler ou rétablir la dernière modification dans l’éditeur.
 
-![&#x200B; Icône Annuler &#x200B;](assets/undo.png)
-![&#x200B; Icône Rétablir &#x200B;](assets/redo.png)
+![ Icône Annuler ](assets/undo.png)
+![ Icône Rétablir ](assets/redo.png)
 
 * Ces fonctions Annuler et Rétablir sont possibles pour les modifications effectuées en contexte, celles effectuées via le panneau Propriétés, ainsi que pour l’ajout, la duplication, le déplacement et la suppression de blocs.
 * Les fonctions Annuler et Rétablir sont limitées à la session de navigateur en cours.
@@ -231,7 +239,7 @@ Vous pouvez copier et coller des composants qui se trouvent dans des conteneurs 
 
 Les opérations copier-coller peuvent être effectuées sur le même onglet du navigateur ou entre des onglets du navigateur, à condition que ceux-ci soient déjà ouverts. Vous ne pouvez pas copier un élément, puis ouvrir un nouvel onglet du navigateur pour le coller.
 
-![&#x200B; Icône Copier &#x200B;](assets/copy.png)
+![ Icône Copier ](assets/copy.png)
 ![Icône Coller](assets/paste.png)
 
 1. Sélectionnez un composant dans l’éditeur ou dans l’arborescence de contenu.
@@ -347,7 +355,7 @@ Pour plus d’informations sur la manière d’activer cette extension, [consult
 
 L’extension **AEM Workflows** vous permet de [démarrer un workflow](/help/sites-cloud/authoring/workflows/overview.md) sur la page qui se trouve actuellement dans l’éditeur.
 
-![&#x200B; Icône Workflows &#x200B;](assets/workflows-icon.png)
+![ Icône Workflows ](assets/workflows-icon.png)
 
 Appuyez ou cliquez sur l’icône **Workflows** dans la barre d’outils de l’éditeur universel pour ouvrir la fenêtre modale **Démarrer un workflow**. La fenêtre répertorie le contenu possible auquel vous pouvez appliquer un workflow.
 
