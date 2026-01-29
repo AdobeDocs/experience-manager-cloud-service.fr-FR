@@ -3,9 +3,9 @@ title: Présentation de l’agent Discovery
 description: Découvrez comment utiliser l’agent Discovery pour diffuser du contenu AEM pertinent à la demande par le biais d’invites naturelles et conversationnelles pour une expérience de découverte rationalisée et sans clic.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+source-git-commit: d0c683d20f8932683d3d0aa11a67be92d35b725c
 workflow-type: tm+mt
-source-wordcount: '1265'
+source-wordcount: '1280'
 ht-degree: 1%
 
 ---
@@ -152,7 +152,7 @@ Vous pouvez utiliser ces détails de ressource pour évaluer rapidement si une r
 
 >[!NOTE]
 >
->Le champ [&#x200B; URL Dynamic Media &#x200B;](/help/assets/dynamic-media/dynamic-media.md) s’affiche dans les résultats de recherche uniquement si la ressource est publiée et que vous disposez d’une licence Dynamic Media valide. De même, le champ [Dynamic Media avec URL OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) s’affiche uniquement si vous disposez d’une licence Dynamic Media valide et que Dynamic Media avec OpenAPI est activé pour votre instance AEM as a Cloud Service.
+>Le champ [ URL Dynamic Media ](/help/assets/dynamic-media/dynamic-media.md) s’affiche dans les résultats de recherche uniquement si la ressource est publiée et que vous disposez d’une licence Dynamic Media valide. De même, le champ [Dynamic Media avec URL OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) s’affiche uniquement si vous disposez d’une licence Dynamic Media valide et que Dynamic Media avec OpenAPI est activé pour votre instance AEM as a Cloud Service.
 
 ### Fragments de contenu {#discovery-agent-search-results-content-fragments}
 
@@ -170,3 +170,6 @@ Spécifiez des détails concis dans vos invites en langage naturel afin que l&#3
 
 * Utilisez des métadonnées spécifiques à votre entreprise, telles que les catégories (chaussures de course, appareils électroniques), les saisons (automne, printemps), les événements (vendredi noir, lancement de produit) et les canaux (web, e-mail, impression) pour filtrer davantage le contenu.
 
+## Limites {#limitations-discovery-agent}
+
+Discovery Agent prend uniquement en charge les invites basées sur les dimensions pour les types de format image et SVG. Par exemple, `Find images wider than 1080px`.
