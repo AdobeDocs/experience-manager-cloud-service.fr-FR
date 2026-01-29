@@ -34,7 +34,7 @@ Pendant la période d’obsolescence, Adobe rappelle à ses clientes et clients 
 >
 > * **À compter du 26 janvier 2026** : les e-mails de notification du Centre d’actions sont envoyés **chaque semaine par environnement** comme rappel pour supprimer l’utilisation de ces API.
 > * **26 février 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API seront **mis en pause** pendant l’étape **Qualité du code**. Un responsable de déploiement, un chef de projet ou un propriétaire d’entreprise peut contourner le problème pour autoriser le pipeline à continuer.
-> * **26 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **** pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
+> * **26 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **&#x200B;**&#x200B;pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
 > * **30 avril 2026** : les environnements qui utilisent toujours ces API peuvent **ne plus recevoir de mises à jour critiques de versions d’Adobe**.
 >
 > Pour empêcher les blocs de déploiement, supprimez l’utilisation de l’API avant le 26 mars 2026.
@@ -89,7 +89,7 @@ Les API du tableau ci-dessous (cliquez pour développer) ont été annoncées c
 >
 > * **À compter du 26 janvier 2026** : les e-mails de notification du Centre d’actions sont envoyés **chaque semaine par environnement** comme rappel pour supprimer l’utilisation de ces API.
 > * **26 février 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API seront **mis en pause** pendant l’étape **Qualité du code**. Un responsable de déploiement, un chef de projet ou un propriétaire d’entreprise peut contourner le problème pour autoriser le pipeline à continuer.
-> * **26 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **** pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
+> * **26 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **&#x200B;**&#x200B;pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
 > * **30 avril 2026** : les environnements qui utilisent toujours ces API peuvent **ne plus recevoir de mises à jour critiques de versions d’Adobe**.
 >
 > Pour empêcher les blocs de déploiement, supprimez l’utilisation de l’API avant le 26 mars 2026.
