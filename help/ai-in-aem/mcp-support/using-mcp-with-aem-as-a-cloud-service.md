@@ -3,9 +3,9 @@ title: Utilisation de MCP avec AEM as a Cloud Service
 description: Découvrez comment utiliser le protocole Model Context avec AEM as a Cloud Service
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 03ce511a28cf0fbbdd6e49d63736107720ef017b
+source-git-commit: 3ff5ef0be78f5f5a61c81c8ab0388b56fa134047
 workflow-type: tm+mt
-source-wordcount: '2034'
+source-wordcount: '2016'
 ht-degree: 0%
 
 ---
@@ -74,9 +74,8 @@ Chaque application fournit sa propre expérience de configuration, mais les éta
 
 ## Présentation de la configuration {#setup-overview}
 
-La configuration de MCP pour AEM comprend trois parties principales :
+La configuration de MCP pour AEM comprend deux parties principales :
 
-1. **Configuration ponctuelle dans AEM par un administrateur** qui permet à des applications clientes MCP spécifiques d’accéder aux serveurs MCP d’AEM
 1. **Configuration dans chaque application cliente MCP** de sorte que l’application sache comment se connecter aux serveurs MCP AEM et se connecter à OAuth.
 1. **Sélectionnez le serveur MCP** avant de démarrer l&#39;invite, de sorte que le client MCP sache l&#39;utiliser.
 
@@ -217,7 +216,7 @@ Les serveurs MCP hébergés par Adobe mettent en œuvre OAuth et sont intégrés
 * Lorsqu’une application cliente MCP se connecte à un serveur MCP AEM, les utilisateurs voient une boîte de dialogue de connexion Adobe et s’authentifient avec leur **Adobe ID**
 * Une fois la connexion établie, le système vérifie que l’application cliente MCP est autorisée dans votre organisation et que le serveur MCP demandé est autorisé. Si l’une de ces vérifications échoue, un message d’erreur s’affiche.
 
-![Erreur Client MCP non autorisé &#x200B;](assets/MCP-Client-not-permitted.png)
+![Erreur Client MCP non autorisé ](assets/MCP-Client-not-permitted.png)
 
 * Une fois la vérification effectuée, le serveur MCP émet des jetons que l’application utilise pour les appels d’outil suivants
 * Les outils MCP respectent les autorisations AEM de l’utilisateur. Un utilisateur non autorisé à modifier un fragment de contenu dans AEM ne pourra pas le modifier non plus via MCP.
