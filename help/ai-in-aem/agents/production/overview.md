@@ -3,9 +3,9 @@ title: Présentation de l’agent de production d’expérience
 description: Découvrez comment l’agent de production Experience dans AEM vous permet d’accélérer la création de votre contenu et d’orchestrer automatiquement les modifications.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 229c91706cec0a2689d9449549a1e2b2e236b87d
+source-git-commit: a0a6c14da73ba6881e55aa5089fbde13880f9ec5
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '311'
 ht-degree: 3%
 
 ---
@@ -22,17 +22,16 @@ L’agent effectue les tâches suivantes :
 * [Mise à jour du contenu](#content-update)
 * [Création du formulaire](#form-creation)
 * [Création de communications](#communications-creation)
-* [Migration du site](#site-migration)
 
 >[!IMPORTANT]
 >
 >Les réponses générées par l&#39;IA peuvent être inexactes ou trompeuses. Assurez-vous de vérifier les correctifs et les réponses suggérés.
 >
->Consultez également les [Directives d’utilisation de l’IA générative de Adobe Experience Cloud](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+>Consultez également les [instructions d’utilisation de l’IA générative de Adobe Experience Cloud](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 
 ### Mise à jour du contenu {#content-update}
 
-La [&#x200B; Mise à jour de contenu &#x200B;](/help/ai-in-aem/agents/production/content-update.md) met à jour facilement du contenu existant, y compris des fragments de contenu, des pages, des formulaires et des ressources. L’agent peut effectuer des actions telles que la mise à jour, la suppression, le remplacement ou l’ajout d’éléments de contenu pour que les expériences restent exactes et à jour. Les entrées peuvent être des descriptions en langage naturel et, lorsqu’elles sont utilisées avec des PDF et des captures d’écran Jira, elles peuvent également fournir des entrées.
+La [ Mise à jour de contenu ](/help/ai-in-aem/agents/production/content-update.md) met à jour facilement du contenu existant, y compris des fragments de contenu, des pages, des formulaires et des ressources. L’agent peut effectuer des actions telles que la mise à jour, la suppression, le remplacement ou l’ajout d’éléments de contenu pour que les expériences restent exactes et à jour. Les entrées peuvent être des descriptions en langage naturel et, lorsqu’elles sont utilisées avec des PDF et des captures d’écran Jira, elles peuvent également fournir des entrées.
 
 ### Création du formulaire {#form-creation}
 
@@ -44,15 +43,11 @@ La compétence [Création de communication](/help/ai-in-aem/agents/production/co
 
 >[!NOTE]
 >
-> La compétence Création de communications est actuellement en version Alpha. Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
-
-### Migration du site {#site-migration}
-
-Le service [&#x200B; Migration de sites &#x200B;](/help/ai-in-aem/agents/production/site-migration.md) migre en toute simplicité des sites non AEM vers des environnements AEM (services de diffusion d’expérience), en s’assurant qu’ils sont performants, conformes et prêts pour les agents. L’agent simplifie l’installation et la transformation, ce qui réduit les efforts manuels et le délai de rentabilisation.
-
-L’agent doit être en mesure de travailler avec d’autres compétences d’agent, par exemple :
+> La compétence Création de communications est actuellement en version Alpha. Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [aem-forms-ea@adobe.com.](mailto:aem-forms-ea@adobe.com)
 
 ## Utilisation avec d’autres agents {#use-with-other-agents}
+
+L’agent peut utiliser d’autres compétences d’agent, par exemple :
 
 * Obtenir des ressources sources à partir de l’agent Experience Advisory
 
