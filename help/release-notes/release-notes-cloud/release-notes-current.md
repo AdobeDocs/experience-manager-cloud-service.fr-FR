@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: e4bab603da7022d868ce729309945649aa44d0fb
+source-git-commit: 46a5a8f48a139ca1be13b400552569dc40fedcdd
 workflow-type: tm+mt
-source-wordcount: '2195'
-ht-degree: 38%
+source-wordcount: '2161'
+ht-degree: 39%
 
 ---
 
@@ -40,7 +40,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -83,21 +83,26 @@ Voir [Programmes bêta Cloud Manager](/help/implementing/cloud-manager/release-n
 
 ### Serveur MCP de contenu {#content-MCP}
 
-Les applications de conversation (par exemple, ChatGPT) et les IDE modernes (par exemple, Cursor) peuvent utiliser le protocole MCP (Model Context Protocol) pour permettre à un modèle de langage de grande taille (LLM) d’appeler les outils exposés par un serveur MCP. Au lieu d’écrire du code par rapport aux spécifications d’API de bas niveau, vous pouvez décrire ce que vous souhaitez en langage naturel et demander au LLM de traduire cette intention dans les appels d’API appropriés. Dans certains cas, une invite peut s’avérer plus pratique que la navigation dans une interface utilisateur.
+Le Cloud Service AEM comprend désormais des **serveurs Content MCP**, offrant un moyen normalisé pour les expériences optimisées par l’IA de travailler avec le contenu AEM via des outils compatibles avec MCP.
 
-Par exemple, vous pouvez inviter ChatGPT : *Edit /en/coffee.html dans AEM : modifiez le texte Frescopa Coffee dans le contenu pour qu’il corresponde à ce qu’un(e) jeune de 20 ans souhaiterait.*
+Les développeurs et les utilisateurs expérimentés travaillant dans les applications de chat et les plateformes d’agent peuvent connecter AEM à des copilotes et des automatisations personnalisés, de sorte que le travail de contenu fasse partie des workflows commerciaux de bout en bout.
 
-AEM fournit deux serveurs de MCP de contenu (**lecture seule** et **lecture/écriture**) avec des outils permettant d’utiliser **Pages**, **Fragments de contenu** et **Assets**. Ces serveurs peuvent être utilisés à partir des clients MCP suivants : **ChatGPT**, **Claude**, **Cursor** et **Microsoft Copilot Studio**.
+AEM propose deux serveurs :
+
+1. **Serveur MCP de contenu en lecture seule** pour récupérer du contenu en toute sécurité
+1. **Serveur MCP de contenu en lecture/écriture** - pour apporter des modifications au contenu
+
+Ces serveurs MCP comprennent des outils permettant d’utiliser **Pages**, **Fragments de contenu** et **Assets** et peuvent être utilisés à partir des clients MCP suivants : **ChatGPT**, **Claude**, **Cursor** et **Microsoft Copilot Studio**.
 
 En savoir plus dans [Utilisation de MCP avec AEM Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md). Pour toute question ou commentaire, envoyez un e-mail à l’adresse [aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com).
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Recherche IA**
+**Recherche optimisée par l&#39;IA**
 
-La recherche par IA offre une expérience de recherche intelligente et contextuelle qui va au-delà de la correspondance de mots-clés traditionnelle en comprenant le sens et l’intention derrière les requêtes des utilisateurs et utilisatrices. Optimisé par l’IA et le machine learning, il fournit des résultats plus précis même lorsque les requêtes sont formulées différemment, contiennent des fautes d’orthographe, utilisent des synonymes ou sont envoyées dans différentes langues, ce qui permet aux utilisateurs et aux utilisatrices de trouver plus rapidement et avec moins d’efforts du contenu pertinent.
+Recherche optimisée par l&#39;IA offre une expérience de recherche intelligente et contextuelle qui va au-delà de la correspondance de mots-clés traditionnelle en comprenant la signification et l’intention derrière les requêtes des utilisateurs. Optimisé par l’IA et le machine learning, il fournit des résultats plus précis même lorsque les requêtes sont formulées différemment, contiennent des fautes d’orthographe, utilisent des synonymes ou sont envoyées dans différentes langues, ce qui permet aux utilisateurs et aux utilisatrices de trouver plus rapidement et avec moins d’efforts du contenu pertinent.
 
-Pour plus d’informations, consultez Recherche par l’IA dans la vue Assets [&#128279;](/help/assets/search-assets-view.md#ai-search) et [vue Admin](/help/assets/search-assets.md#ai-search).
+Pour plus d’informations, voir Recherche optimisée par l&#39;IA dans la vue Assets [](/help/assets/search-assets-view.md#ai-search) et [vue Admin](/help/assets/search-assets.md#ai-search).
 
 **Application de bureau version 3.0.1**
 
@@ -175,7 +180,7 @@ Les API obsolètes ciblant la suppression du 2/26/2026 ne doivent plus être uti
 
 * **À compter du 26 janvier 2026** : les e-mails de notification du Centre d’actions sont envoyés **chaque semaine par environnement** comme rappel pour supprimer l’utilisation de ces API.
 * **26 février 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API seront **mis en pause** pendant l’étape **Qualité du code**. Un responsable de déploiement, un chef de projet ou un propriétaire d’entreprise peut contourner le problème pour autoriser le pipeline à continuer.
-* **26 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **&#x200B;**&#x200B;pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
+* **26 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **** pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
 * **30 avril 2026** : les environnements qui utilisent toujours ces API peuvent **ne plus recevoir de mises à jour critiques de versions d’Adobe**.
 
 Pour plus d’informations, consultez l’[article sur l’obsolescence](/help/release-notes/deprecated-removed-features.md#aem-apis), mais pour plus de commodité, ces API sont répertoriées ci-dessous :
