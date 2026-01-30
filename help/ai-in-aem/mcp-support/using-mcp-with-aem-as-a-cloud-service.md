@@ -3,9 +3,9 @@ title: Utilisation de MCP avec AEM as a Cloud Service
 description: Découvrez comment utiliser le protocole Model Context avec AEM as a Cloud Service
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 96ce03c86d0406320223f3fae87beed3552d479f
+source-git-commit: 03ce511a28cf0fbbdd6e49d63736107720ef017b
 workflow-type: tm+mt
-source-wordcount: '2003'
+source-wordcount: '2034'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,11 @@ Grâce à l’intégration d’AEM MCP, différentes personnes peuvent collabore
 
 * **Les développeurs** peuvent orchestrer les opérations et les workflows de contenu à partir de leur application IDE ou de chat
 * **Les spécialistes et** architectes de contenu peuvent gérer des sites, des fragments de contenu et des ressources avec l’aide de l’IA, tout en restant dans le modèle d’autorisation existant d’AEM.
+
+>[!IMPORTANT]
+>
+> Pour les scénarios qui modifient ou suppriment du contenu, les utilisateurs doivent utiliser l’interface de l’assistant AI plutôt que d’appeler directement les outils MCP, car les agents AEM exécutés par l’assistant AI incluent des mesures de protection intégrées.
+>
 
 Cet article explique ce que fournit la fonctionnalité MCP d’AEM, quelles applications MCP sont prises en charge, comment la configurer et comment l’utiliser en pratique.
 
@@ -212,7 +217,7 @@ Les serveurs MCP hébergés par Adobe mettent en œuvre OAuth et sont intégrés
 * Lorsqu’une application cliente MCP se connecte à un serveur MCP AEM, les utilisateurs voient une boîte de dialogue de connexion Adobe et s’authentifient avec leur **Adobe ID**
 * Une fois la connexion établie, le système vérifie que l’application cliente MCP est autorisée dans votre organisation et que le serveur MCP demandé est autorisé. Si l’une de ces vérifications échoue, un message d’erreur s’affiche.
 
-![Erreur Client MCP non autorisé &#x200B;](assets/MCP-Client-not-permitted.png)
+![Erreur Client MCP non autorisé ](assets/MCP-Client-not-permitted.png)
 
 * Une fois la vérification effectuée, le serveur MCP émet des jetons que l’application utilise pour les appels d’outil suivants
 * Les outils MCP respectent les autorisations AEM de l’utilisateur. Un utilisateur non autorisé à modifier un fragment de contenu dans AEM ne pourra pas le modifier non plus via MCP.
