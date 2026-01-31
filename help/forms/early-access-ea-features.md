@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: a2f686e7917d47138bdb9dcd4b5245732635bed7
+source-git-commit: c5c63e4ecfa099f953c1cf01861c0342ba4bae18
 workflow-type: tm+mt
-source-wordcount: '3096'
-ht-degree: 21%
+source-wordcount: '3133'
+ht-degree: 20%
 
 ---
 
@@ -127,6 +127,8 @@ Les communications interactives sur le cloud constituent une solution puissante 
 * **Débordement de contenu** : l’option « Autoriser les sauts de page dans le contenu » pour les dispositions fluides permet une modification fluide de plusieurs pages et une meilleure gestion du texte pour les documents complexes.
 
 * **Modification de fichiers XDP** : vous pouvez désormais modifier les fichiers XDP dans un navigateur au lieu de Forms Designer qui s’exécute uniquement sur l’ordinateur de bureau Microsoft Windows.
+
+* **Appeler l’interface utilisateur associée sur une instance de publication** : vous pouvez désormais appeler l’interface utilisateur associée directement sur les instances de publication. Cette fonctionnalité définit la configuration, la structure de payload et le flux d’appel requis, en simplifiant l’intégration et en accélérant le déploiement dans les environnements.
 
 ##### Numérotation dynamique de page
 
