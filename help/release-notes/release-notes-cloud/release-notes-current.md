@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: c5c63e4ecfa099f953c1cf01861c0342ba4bae18
+source-git-commit: 6dfc3fe7e939794a7881a5c24c51ccc43f9af348
 workflow-type: tm+mt
-source-wordcount: '2145'
+source-wordcount: '2126'
 ht-degree: 37%
 
 ---
@@ -40,7 +40,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -102,7 +102,7 @@ En savoir plus dans [Utilisation de MCP avec AEM Cloud Service](/help/ai-in-aem/
 
 Recherche optimisée par l&#39;IA offre une expérience de recherche intelligente et contextuelle qui va au-delà de la correspondance de mots-clés traditionnelle en comprenant la signification et l’intention derrière les requêtes des utilisateurs. Optimisé par l’IA et le machine learning, il fournit des résultats plus précis même lorsque les requêtes sont formulées différemment, contiennent des fautes d’orthographe, utilisent des synonymes ou sont envoyées dans différentes langues, ce qui permet aux utilisateurs et aux utilisatrices de trouver plus rapidement et avec moins d’efforts du contenu pertinent.
 
-Pour plus d’informations, voir Recherche optimisée par l&#39;IA dans la vue Assets [&#128279;](/help/assets/search-assets-view.md#ai-search) et [vue Admin](/help/assets/search-assets.md#ai-search).
+Pour plus d’informations, voir Recherche optimisée par l&#39;IA dans la vue Assets [](/help/assets/search-assets-view.md#ai-search) et [vue Admin](/help/assets/search-assets.md#ai-search).
 
 **Application de bureau version 3.0.1**
 
@@ -115,16 +115,20 @@ Pour plus d’informations, voir Recherche optimisée par l&#39;IA dans la vue A
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-* [Améliorations apportées à l’espace réservé de la note de bas de page dans le Forms adaptatif (composants de base)](/help/forms/footnotes-richtextsupport.md) :
-   * Le rendu des notes de bas de page a été affiné pour prendre en charge le formatage multiligne par le biais de sauts de ligne, ce qui permet une présentation plus claire et plus expressive du contenu des notes de bas de page.
-   * Les notes de bas de page restent désormais visibles de manière permanente dans l’espace réservé de note de bas de page, quelle que soit la visibilité des panneaux associés, ce qui garantit un accès cohérent aux informations essentielles.
+**Améliorations apportées à l’espace réservé de la note de bas de page dans le Forms adaptatif (composants de base)**
 
+* Ajout de la fonction [prise en charge multiligne avec sauts de ligne](/help/forms/footnotes-richtextsupport.md), qui permet une présentation plus claire et plus expressive du contenu de la note de bas de page.
+* Les notes de bas de page restent désormais visibles de manière permanente dans l’espace réservé de note de bas de page, quelle que soit la visibilité des panneaux associés, ce qui garantit un accès cohérent aux informations essentielles.
 
 ### Nouvelles fonctionnalités d’accès anticipé d’AEM Forms {#forms-new-early-access-features}
 
-* [Récupérer les valeurs d’un tableau JSON](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array) : les fonctionnalités étendues d’intégration des données permettent désormais d’appeler les API par le biais de fonctions personnalisées afin d’extraire efficacement les valeurs des tableaux JSON et de les lier directement aux champs de formulaire adaptatif. Cette amélioration rationalise la consommation des données, réduit le mappage manuel et prend en charge des expériences de formulaire plus dynamiques et pilotées par les données.
+**Récupérer des valeurs d’un tableau JSON**
 
-* **Appeler l’interface utilisateur associée sur une instance de publication** : la prise en charge étendue est désormais disponible pour appeler l’interface utilisateur associée directement sur les instances de publication. Cette fonctionnalité définit la configuration, la structure de payload et le flux d’appel requis, en simplifiant l’intégration et en accélérant le déploiement dans les environnements.
+Fonctionnalités étendues des fonctions personnalisées pour [extraire des valeurs des tableaux JSON](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array), reçues via un appel API, et les lier directement aux champs de formulaire adaptatif. Vous pouvez désormais développer une logique commerciale et des règles avec un mappage de données manuel minimal.
+
+**Exécutez l’interface utilisateur associée sur une instance de publication**
+
+Vous pouvez désormais exécuter l’[interface utilisateur associée](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md) directement sur les instances de publication. Cela permet à vos agents d’accéder à l’interface utilisateur associée et de personnaliser facilement les communications de vos clients.
 
 <!--
 **Forms Optimization opportunities**
@@ -153,7 +157,7 @@ Les API obsolètes ciblant la suppression du 2/26/2026 ne doivent plus être uti
 
 * **À compter du 26 janvier 2026** : les e-mails de notification du Centre d’actions sont envoyés **chaque semaine par environnement** comme rappel pour supprimer l’utilisation de ces API.
 * **26 février 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API seront **mis en pause** pendant l’étape **Qualité du code**. Un responsable de déploiement, un chef de projet ou un propriétaire d’entreprise peut contourner le problème pour autoriser le pipeline à continuer.
-* **26 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **&#x200B;**&#x200B;pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
+* **26 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **** pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
 * **30 avril 2026** : les environnements qui utilisent toujours ces API peuvent **ne plus recevoir de mises à jour critiques de versions d’Adobe**.
 
 Pour plus d’informations, consultez l’[article sur l’obsolescence](/help/release-notes/deprecated-removed-features.md#aem-apis), mais pour plus de commodité, ces API sont répertoriées ci-dessous :
