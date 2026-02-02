@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: Améliorations du service d’appel dans VRE, remplissage des options de liste déroulante à l’aide du service d’appel, Définition du panneau répétable à l’aide de la sortie du service d’appel, Définition du panneau à l’aide de la sortie du service d’appel, Utilisation du paramètre de sortie du service d’appel pour valider d’autres champs.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 07f1b64753387d9ee47b26d65955e41cd961f1a5
+source-git-commit: 17dfa6e28d2510484731a736c1cf7fda22961e66
 workflow-type: tm+mt
 source-wordcount: '2150'
 ht-degree: 1%
@@ -276,6 +276,8 @@ Lorsque l’utilisateur clique sur le bouton **Envoyer**, le service d’API `re
 
 ## Récupération des valeurs de propriété d’un tableau JSON
 
+<span class="preview"> Il s’agit d’une fonctionnalité adoptée rapidement. Si vous êtes intéressé, envoyez un e-mail rapide à partir de votre adresse professionnelle à mailto:aem-forms-ea@adobe.com pour demander l&#39;accès à la fonctionnalité</a>. </span>
+
 Le Forms adaptatif prend en charge l’appel d’un service, le traitement des réponses JSON et le remplissage dynamique des champs de formulaire. Cette section décrit comment extraire des valeurs de propriété d’un tableau JSON et les lier à des champs de formulaire.
 
 ### Exemple de réponse JSON
@@ -309,8 +311,6 @@ L’exemple suivant représente les régions commerciales des États-Unis et la 
 ```
 
 ### Fonction personnalisée pour extraire des valeurs de propriété
-
-<span class="preview"> Il s’agit d’une fonctionnalité adoptée rapidement. Si vous êtes intéressé, envoyez un e-mail rapide à partir de votre adresse professionnelle à mailto:aem-forms-ea@adobe.com pour demander l&#39;accès à la fonctionnalité</a>. </span>
 
 Utilisez la fonction personnalisée suivante pour extraire des valeurs de propriété du tableau JSON.
 
@@ -385,7 +385,7 @@ Cette règle lit le tableau JSON, extrait les valeurs de propriété `region` et
 
 De même, configurez l’action de la liste déroulante `Select Sales Representative` dans le gestionnaire de réussite.
 
-![Payload d’événement pour le tableau JSON &#x200B;](/help/forms/assets/event-payload.png)
+![Payload d’événement pour le tableau JSON ](/help/forms/assets/event-payload.png)
 
 Lorsque le formulaire charge, les données JSON sont renvoyées et la fonction personnalisée extrait les valeurs de propriété. La liste déroulante est automatiquement renseignée :
 
