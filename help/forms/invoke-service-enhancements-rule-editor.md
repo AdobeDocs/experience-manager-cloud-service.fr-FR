@@ -385,7 +385,7 @@ Cette règle lit le tableau JSON, extrait les valeurs de propriété `region` et
 
 De même, configurez l’action de la liste déroulante `Select Sales Representative` dans le gestionnaire de réussite.
 
-![Payload d’événement pour le tableau JSON ](/help/forms/assets/event-payload.png)
+![Payload d’événement pour le tableau JSON &#x200B;](/help/forms/assets/event-payload.png)
 
 Lorsque le formulaire charge, les données JSON sont renvoyées et la fonction personnalisée extrait les valeurs de propriété. La liste déroulante est automatiquement renseignée :
 
