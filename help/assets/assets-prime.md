@@ -4,9 +4,9 @@ description: Découvrez les principaux aspects d’Assets Prime, tels que les pr
 feature: Asset Management
 role: User, Admin
 exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 504464ed1277c1d9629ae1f96892ebaa5ef701c8
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1100'
 ht-degree: 15%
 
 ---
@@ -36,8 +36,6 @@ Assets as a Cloud Service Prime comprend une gestion des ressources numériques 
   >[!NOTE]
   >
   >Dynamic Media avec des fonctionnalités OpenAPI, qui permet d’accéder aux modificateurs d’image de base tels que rotation, recadrage (manuel uniquement, pas de recadrage intelligent), retournement, hauteur, largeur, qualité, format et diffusion en continu de vidéo adaptative, est également disponible avec Assets Prime. Contactez l’équipe du compte Adobe pour en savoir plus.
-
-1. [Créer un nouveau programme](/help/journey-onboarding/create-program.md).
 
 Cependant, à mesure que vos besoins en gestion des ressources numériques augmentent et que vous avez besoin de davantage de fonctionnalités, telles que l’extensibilité de l’interface utilisateur, l’automatisation pilotée par les API et le déploiement de code personnalisé, vous devez envisager une mise à niveau vers [Assets Ultimate](/help/assets/assets-ultimate-overview.md).
 
@@ -96,7 +94,7 @@ Vous pouvez commencer à ajouter des utilisateurs ou des groupes d’utilisateur
 
 Si vous avez activé Content Hub pour Assets as a Cloud Service, une nouvelle instance est créée dans AEM Assets as a Cloud Service sur Admin Console avec `delivery` comme suffixe :
 
-![Nouvelle instance pour Content Hub &#x200B;](assets/new-instance-content-hub.png)
+![Nouvelle instance pour Content Hub ](assets/new-instance-content-hub.png)
 
 >[!NOTE]
 >
