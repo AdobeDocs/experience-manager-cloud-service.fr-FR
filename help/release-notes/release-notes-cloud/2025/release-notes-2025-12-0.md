@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 2025.12.0 d’ [!DNL Adobe Experienc
 description: Notes de mise à jour de la version 2025.12.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 9e81e0f3ed4b3e4ac02655cf4203191c61007b1d
+source-git-commit: 552d967edb81a8c586dc0a6a8a9bc9902342014c
 workflow-type: tm+mt
-source-wordcount: '1951'
-ht-degree: 48%
+source-wordcount: '1832'
+ht-degree: 51%
 
 ---
 
@@ -38,7 +38,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -254,14 +254,6 @@ Déployez vos versions de code en production, mais limitez-les au trafic de test
 
 Envoyez un e-mail à [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) pour demander l’accès et partager vos commentaires.
 
-
-#### Réponses de l’IA - Réponses plus intelligentes et contextuelles pour AEM Sites (programme Beta) {#ai-answers-beta}
-
-AI Answers offre une nouvelle manière à vos visiteurs d’interagir avec votre contenu. Optimisée par la technologie RAG (Retrieval-Augmentated Generation), elle utilise vos données gérées par AEM pour fournir des réponses précises et cohérentes avec la marque directement dans vos expériences digitales.
-
-Nous nous préparons à lancer le programme Beta des réponses de l’IA et nous invitons désormais les clients à manifester leur intérêt. Étant donné que la version bêta disposera d’une capacité très limitée, les inscriptions précoces seront prises en compte en priorité. En participant à la version bêta, vous pourrez explorer les réponses de l’IA dans votre environnement AEM Cloud Service, valider les performances et la précision, et contribuer à façonner l’expérience future avant qu’elle ne soit disponible au public.
-
-Pour demander une participation ou recevoir des mises à jour, veuillez contacter [feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com).
 
 #### Instantanés pour les RDE (programme Beta) {#rde-snapshot-program}
 
