@@ -6,9 +6,9 @@ feature: Interactive Communication
 role: User, Developer, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 6b90e8f2d26d6bfd22fbd94af0d6c68466c69bbb
+source-git-commit: 2f3badafddfdfe1dd21eb74be7189102aa0474bc
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '831'
 ht-degree: 3%
 
 ---
@@ -33,15 +33,14 @@ Le tableau ci-dessous décrit les différents scénarios réels dans lesquels l�
 
 Avant d’intégrer l’interface utilisateur associée à votre application, vérifiez les points suivants :
 
-- Instance de publication AEM Forms Cloud Service
-- Communication interactive créée et publiée dans AEM
+- Communication interactive créée et publiée
 - Navigateur avec prise en charge des fenêtres contextuelles activée
-- Les utilisateurs associés doivent faire partie du groupe **forms-associates**
-- Authentification configurée - [SAML 2.0](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)
+- Associer [les utilisateurs doivent faire partie du groupe forms-associates](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
+- Authentification configurée - [SAML 2.0](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)
 
 >[!NOTE]
 >
-> Pour l’interface utilisateur associée, des configurations SAML supplémentaires sont requises en plus de la configuration standard expliquée dans l’article [&#x200B; Authentification SAML 2.0 &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/authentication/saml-2-0). Consultez la section [Configurations SAML supplémentaires pour l’interface utilisateur associée](#additional-saml-configurations-for-associate-ui) pour plus d’informations.
+> Pour l’interface utilisateur associée, des configurations SAML supplémentaires sont requises en plus de la configuration standard expliquée dans l’article [ Authentification SAML 2.0 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0). Consultez la section [Configurations SAML supplémentaires pour l’interface utilisateur associée](#additional-saml-configurations-for-associate-ui) pour plus d’informations.
 
 ### Configurations SAML supplémentaires pour l’interface utilisateur associée
 
@@ -144,10 +143,10 @@ const data = {
 | Composant | Requis | Description |
 |-----------|----------|-------------|
 | `id` | Oui | Identifiant de la communication interactive (IC) à charger |
-| `prefill` | Non | Contient la configuration du service pour le préremplissage des données. |
-| `prefill.serviceName` | Non | Nom du service de modèle de données de formulaire à appeler pour le préremplissage des données |
-| `prefill.serviceParams` | Non | Paires clé-valeur transmises au service de préremplissage |
-| `options` | Non | Propriétés supplémentaires prises en charge pour le rendu PDF : paramètres régionaux, includeAttachments, embedFonts, makeAccessible |
+| `prefill` | Facultatif | Contient la configuration du service pour le préremplissage des données. |
+| `prefill.serviceName` | Facultatif | Nom du service de modèle de données de formulaire à appeler pour le préremplissage des données |
+| `prefill.serviceParams` | Facultatif | Paires clé-valeur transmises au service de préremplissage |
+| `options` | Facultatif | Propriétés supplémentaires prises en charge pour le rendu PDF : paramètres régionaux, includeAttachments, embedFonts, makeAccessible |
 
 ### Étape 3 : implémentation de la fonction d’intégration
 
@@ -409,7 +408,7 @@ Utilisez ceci pour remplir dynamiquement l’IC avec des données client :
 {
   "id": "12345",
   "prefill": {
-    "serviceName": "FdmTestData",
+    "serviceName": "IC_FDM",
     "serviceParams": {
       "customerId": "101",
       "accountNumber": "ACC-98765"
@@ -425,11 +424,12 @@ Utilisez cette option pour spécifier des options de rendu supplémentaires :
 
 ```json
 {
-  "id": "12345ß",
+  "id": "12345",
   "prefill": {
-    "serviceName": "FdmTestData",
-    "serviceParams": { 
-      "policyNumber": "POL-123" 
+    "serviceName": "IC_FDM",
+    "serviceParams": {
+      "customerId": "101",
+      "accountNumber": "ACC-98765"
     }
   },
   "options": { 
@@ -481,16 +481,16 @@ Utilisez cette option pour spécifier des options de rendu supplémentaires :
 - Pour la production : spécifiez l’URL d’origine exacte de votre application
 - Vérifiez que les paramètres CORS de l’instance de publication autorisent votre domaine d’application
 
-## Bonnes pratiques
+<!--## Best Practices
 
-Lors de l’implémentation de l’intégration de l’interface utilisateur associée, suivez ces bonnes pratiques :
+When implementing the Associate UI integration, follow these best practices:
 
-1. **Validation** : toujours valider l’ID IC et la payload JSON avant l’envoi
-2. **Gestion des erreurs** : implémentez une gestion appropriée des erreurs pour les échecs de `window.open()`.
-3. **Expérience utilisateur** : affichez un indicateur de chargement lors de l’initialisation de l’interface utilisateur associée
-4. **Gestion de la mémoire** : supprimez les écouteurs d’événement après l’initialisation pour éviter les fuites de mémoire
-5. **Test** : testez l’intégration avec les bloqueurs de fenêtres contextuelles activés pour garantir une gestion satisfaisante.
-6. **Autorisations utilisateur** : vérifiez que les utilisateurs disposent des accès appropriés au groupe forms-associates
+1. **Validation**: Always validate the IC ID and JSON payload before sending
+2. **Error Handling**: Implement proper error handling for `window.open()` failures
+3. **User Experience**: Display a loading indicator while the Associate UI initializes
+4. **Memory Management**: Remove event listeners after initialization to prevent memory leaks
+5. **Testing**: Test the integration with popup blockers enabled to ensure graceful handling
+6. **User Permissions**: Verify users have appropriate access to the forms-associates group-->
 
 ## Voir également
 
