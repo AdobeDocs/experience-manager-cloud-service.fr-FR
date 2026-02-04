@@ -4,10 +4,10 @@ description: Découvrez comment importer des ressources en bloc à l’aide de l
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
-source-wordcount: '1881'
-ht-degree: 87%
+source-wordcount: '1874'
+ht-degree: 88%
 
 ---
 
@@ -26,6 +26,8 @@ Vous pouvez importer des ressources à partir des sources de données suivantes�
 * Google Cloud
 * Dropbox
 * OneDrive
+
+>[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on){transcript=true}
 
 ## Conditions préalables requises {#prerequisites}
 
@@ -225,7 +227,3 @@ Cliquez sur l’![icône Plus](assets/do-not-localize/more-icon.svg) corresponda
 ## Accéder aux ressources après l’exécution de l’import en bloc {#view-assets-after-bulk-import}
 
 Pour afficher l’emplacement cible des ressources où les ressources sont importées après l’exécution de la tâche d’import en bloc, cliquez sur l’![icône Plus](assets/do-not-localize/more-icon.svg) correspondant au nom de la configuration, puis sur **[!UICONTROL Afficher les ressources]**.
-
-## Vidéo : importation en bloc de ressources à l’aide de la vue Assets
-
->[!VIDEO](https://video.tv.adobe.com/v/3428012)

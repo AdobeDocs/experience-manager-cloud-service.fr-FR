@@ -3,10 +3,10 @@ title: Partagez Assets dans  [!DNL the Content Hub]
 description: Partagez Assets dans  [!DNL the Content Hub]
 role: User
 exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
-source-git-commit: a6d995eddd714c356eadc6c1b668887bdfd011cd
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '409'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -14,7 +14,9 @@ ht-degree: 2%
 
 Créez un lien vers les ressources sélectionnées pour les partager facilement avec d’autres personnes. En tant qu’utilisateur [!DNL Content Hub] autorisé, sélectionnez une ou plusieurs ressources disponibles dans votre environnement [!DNL Content Hub], générez un lien et envoyez-le à d’autres utilisateurs privés ou publics.
 
-## Prérequis {#prerequisites}
+>[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on){transcript=true}
+
+## Conditions préalables {#prerequisites}
 
 [Les utilisateurs de Content Hub](deploy-content-hub.md#onboard-content-hub-users) peuvent créer un lien vers les ressources sélectionnées et le partager avec d’autres utilisateurs.
 

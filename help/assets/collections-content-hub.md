@@ -3,7 +3,7 @@ title: Gestion des collections dans Content Hub
 description: Découvrez comment gérer les collections dans Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 91d8df7e002c899c3c4cfda0f10bb42af4423ca6
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '1295'
 ht-degree: 2%
@@ -29,6 +29,8 @@ Une collection fait référence à un ensemble de ressources pouvant être parta
 * **Favori** : marquer la collection comme favori.
 
 Il permet aux utilisateurs et utilisatrices d’accéder facilement aux différentes ressources disponibles dans [!DNL Content Hub] et de les gérer.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on){transcript=true}
 
 ## Conditions préalables {#prerequisites}
 

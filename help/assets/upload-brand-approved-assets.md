@@ -3,7 +3,7 @@ title: Chargez les ressources approuvées par la marque vers  [!DNL Content Hub]
 description: Découvrez comment télécharger vos ressources approuvées par la marque vers Content Hub
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 17%
@@ -19,6 +19,8 @@ ht-degree: 17%
 
 [Les utilisateurs de Content Hub autorisés à ajouter des ressources](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) peuvent ajouter des ressources à Content Hub à partir du système de fichiers local ou importer des ressources à partir de sources de données OneDrive ou Dropbox. Toutes les ressources s’affichent au niveau supérieur dans Content Hub, quelle que soit la structure de dossiers disponible sur votre système de fichiers local ou les sources de données OneDrive et Dropbox afin d’améliorer les fonctionnalités de recherche.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3432980/?learn=on){transcript=true}
+
 Les ressources marquées comme `Approved` dans Assets as a Cloud Service sont automatiquement disponibles dans Content Hub. Pour plus d’informations, voir [Approbation de ressources pour Content Hub](/help/assets/approve-assets-content-hub.md).
 
 Pour améliorer davantage la recherche de ressources, Content Hub vous permet d’effectuer les opérations suivantes :
@@ -27,9 +29,9 @@ Pour améliorer davantage la recherche de ressources, Content Hub vous permet d�
 
 * Générez automatiquement d’autres propriétés pour chaque ressource lors d’un chargement réussi, telles que la taille du fichier, le format, la résolution et d’autres propriétés.
 
-* Utilisez l’intelligence artificielle fournie par l’[Adobe AI](https://business.adobe.com/ai/adobe-genai.html) pour appliquer automatiquement les balises pertinentes à toutes les ressources que vous avez chargées. Ces balises, bien nommées Balises intelligentes, augmentent la vitesse du contenu de vos projets en vous aidant à trouver rapidement les ressources appropriées.
+* Utilisez l’intelligence artificielle fournie par [Adobe AI](https://business.adobe.com/ai/adobe-genai.html) pour appliquer automatiquement les balises pertinentes à toutes les ressources que vous avez chargées. Ces balises, bien nommées Balises intelligentes, augmentent la vitesse du contenu de vos projets en vous aidant à trouver rapidement les ressources appropriées.
 
-Veillez à ne charger que vos [&#x200B; ressources approuvées par la marque dans Content Hub](/help/assets/approve-assets.md).
+Veillez à ne charger que vos [ ressources approuvées par la marque dans Content Hub](/help/assets/approve-assets.md).
 
 ![Chargement de ressources approuvées par la marque](assets/upload-brand-approved-assets.png)
 

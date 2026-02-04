@@ -3,7 +3,7 @@ title: Déployer [!DNL Content Hub]
 description: Découvrez comment déployer et activer Content Hub et accorder l’accès à des personnes disposant de différents types de privilèges (chargement de ressources, utilisateurs et utilisatrices d’Adobe Express) et comment accorder des privilèges d’administration aux utilisateurs et utilisatrices.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '1874'
 ht-degree: 8%
@@ -20,19 +20,23 @@ Cet article fournit un workflow de bout en bout pour fournir aux utilisateurs un
 
 Regardez cette vidéo pour savoir comment activer Content Hub pour Experience Manager Assets :
 
->[!VIDEO](https://video.tv.adobe.com/v/3469851)
+>[!VIDEO](https://video.tv.adobe.com/v/3472918/?learn=on){transcript=true}
 
 Les variantes des privilèges sur Content Hub incluent :
 
-* [Utilisateurs de Content Hub &#x200B;](#onboard-content-hub-users) : accédez aux ressources approuvées par la marque sur le portail Content Hub.
+* [Utilisateurs de Content Hub ](#onboard-content-hub-users) : accédez aux ressources approuvées par la marque sur le portail Content Hub.
 
-* [Administrateurs Content Hub &#x200B;](#onboard-content-hub-administrator) : accès à l’[interface utilisateur de configuration](/help/assets/configure-content-hub-ui-options.md) sur Content Hub, en plus d’accéder aux ressources approuvées par la marque, de charger des ressources vers Content Hub et d’intégrer Adobe Express pour modifier les images (si vous disposez de droits Adobe Express).
+* [Administrateurs Content Hub ](#onboard-content-hub-administrator) : accès à l’[interface utilisateur de configuration](/help/assets/configure-content-hub-ui-options.md) sur Content Hub, en plus d’accéder aux ressources approuvées par la marque, de charger des ressources vers Content Hub et d’intégrer Adobe Express pour modifier les images (si vous disposez de droits Adobe Express).
 
-* [Utilisateurs de Content Hub avec des droits d’ajout de ressources &#x200B;](#onboard-content-hub-users-add-assets) : possibilité de [charger des ressources vers Content Hub](/help/assets/upload-brand-approved-assets.md) en plus d’accéder aux ressources approuvées par la marque sur le portail Content Hub.
+* [Utilisateurs de Content Hub avec des droits d’ajout de ressources ](#onboard-content-hub-users-add-assets) : possibilité de [charger des ressources vers Content Hub](/help/assets/upload-brand-approved-assets.md) en plus d’accéder aux ressources approuvées par la marque sur le portail Content Hub.
 
-* [Les utilisateurs de Content Hub disposant de droits pour remixer les ressources dans de nouvelles variantes &#x200B;](#onboard-content-hub-users-remix-assets) : [Intégration d’Adobe Express](/help/assets/edit-images-content-hub.md) (si vous disposez de droits Adobe Express) en plus d’accéder aux ressources approuvées par la marque sur le portail Content Hub.
+* [Les utilisateurs de Content Hub disposant de droits pour remixer les ressources dans de nouvelles variantes ](#onboard-content-hub-users-remix-assets) : [Intégration d’Adobe Express](/help/assets/edit-images-content-hub.md) (si vous disposez de droits Adobe Express) en plus d’accéder aux ressources approuvées par la marque sur le portail Content Hub.
 
-* [Utilisateurs Experience Manager Assets &#x200B;](#experience-manager-assets-users) : possibilité d’approuver des ressources sur Experience Manager Assets as a Cloud Service pour les rendre disponibles sur Content Hub.
+* [Utilisateurs Experience Manager Assets ](#experience-manager-assets-users) : possibilité d’approuver des ressources sur Experience Manager Assets as a Cloud Service pour les rendre disponibles sur Content Hub.
+
+>[!NOTE]
+>
+>Vous pouvez accéder à Content Hub et l’utiliser avec un maximum de 250 utilisateurs Content Hub Limited pour Assets Ultimate et 50 utilisateurs Content Hub pour Assets Prime. Contactez votre représentant Adobe si vous avez des questions supplémentaires.
 
 Le tableau suivant résume les types d’utilisateurs Content Hub disponibles, les privilèges dont ils disposent et les profils de produit requis pour obtenir ces privilèges :
 
@@ -84,11 +88,6 @@ Pour activer Content Hub pour Experience Manager Assets :
 
 Content Hub est désormais activé pour Experience Manager Assets as a Cloud Service. Après l’activation de Content Hub dans un environnement de production, vous ne pouvez pas le désactiver en libre-service.
 
->[!NOTE]
->
->Vous pouvez accéder à Content Hub et l’utiliser avec un maximum de 250 utilisateurs Content Hub Limited pour Assets Ultimate et 50 utilisateurs Content Hub pour Assets Prime. Contactez votre représentant Adobe si vous avez des questions supplémentaires.
-
-
 Si vous découvrez Experience Manager Assets, cliquez sur **[!UICONTROL Ajouter un programme]** puis fournissez les détails du programme (Nom du programme, Configuration pour la production) et cliquez sur **[!UICONTROL Continuer]**. Vous pouvez ensuite sélectionner **[!UICONTROL Assets]** et **[!UICONTROL Content Hub]** dans l’onglet **[!UICONTROL Solutions et modules complémentaires]**.
 
 ### Activation de Content Hub pour les environnements inférieurs {#enable-content-hub-lower-environments}
@@ -123,7 +122,7 @@ Pour activer Content Hub pour les environnements inférieurs :
 
 Après [activation de Content Hub pour Assets as a Cloud Service à l’aide de Cloud Manager](#enable-content-hub), une nouvelle instance est créée dans AEM Assets as a Cloud Service sur Admin Console avec `delivery` comme suffixe :
 
-![Nouvelle instance pour Content Hub &#x200B;](assets/new-instance-content-hub.png)
+![Nouvelle instance pour Content Hub ](assets/new-instance-content-hub.png)
 
 >[!NOTE]
 >

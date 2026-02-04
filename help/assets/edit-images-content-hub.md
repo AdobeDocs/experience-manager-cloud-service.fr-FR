@@ -2,7 +2,7 @@
 title: Modification d’images dans Content Hub à l’aide d’Adobe Express
 description: Modification d’images dans Content Hub à l’aide d’Adobe Express
 exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 10%
@@ -11,9 +11,11 @@ ht-degree: 10%
 
 # Modification d’images dans Content Hub {#edit-images-content-hub}
 
-Content Hub vous permet de créer du contenu avec Adobe Express. Vous pouvez modifier du contenu existant à l’aide d’outils simples d’utilisation, produire des variations de marque avec des modèles et des éléments de marque et créer du contenu avec les dernières fonctionnalités GenAI d’Adobe Firefly.
+Content Hub vous permet de créer du contenu avec Adobe Express. Vous pouvez modifier du contenu existant à l’aide d’outils simples d’utilisation, produire des variations de marque avec des modèles et des éléments de marque et créer du contenu avec les dernières fonctionnalités d’IA générative d’Adobe Firefly.
 
-## Prérequis {#prereqs-edit-image-content-hub}
+>[!VIDEO](https://video.tv.adobe.com/v/3435003/?learn=on){transcript=true}
+
+## Conditions préalables {#prereqs-edit-image-content-hub}
 
 Les utilisateurs Adobe Express et [Content Hub autorisés à remixer les ressources vers de nouvelles variations](/help/assets/deploy-content-hub.md#onboard-content-hub-users-remix-assets) peuvent modifier les images à l’aide de Content Hub.
 
@@ -27,7 +29,7 @@ Pour modifier des images à l’aide de Content Hub :
 
 1. Cliquez sur **[!DNL Open in Adobe Express]** disponible sur la carte de l’image à modifier. Vous pouvez également cliquer sur l’image pour en afficher les détails, puis cliquer sur le logo [!DNL Adobe Express]. L’éditeur incorporé pour Adobe Express se charge ensuite sans jamais quitter Content Hub.
 
-   Vous pouvez tirer parti de la fonctionnalité [!DNL Adobe Express] pour effectuer toutes les actions liées à la modification d’images, telles que [redimensionner l’image](https://helpx.adobe.com/fr/express/using/resize-image.html), [supprimer ou modifier la couleur d’arrière-plan](https://helpx.adobe.com/fr/express/using/remove-background.html), [recadrer l’image](https://helpx.adobe.com/fr/express/using/crop-image.html), combiner l’image à une image ou un texte généré par l’IA, etc.
+   Vous pouvez tirer parti de la fonctionnalité [!DNL Adobe Express] pour effectuer toutes les actions liées à la modification d’images, telles que [redimensionner l’image](https://helpx.adobe.com/express/using/resize-image.html), [supprimer ou modifier la couleur d’arrière-plan](https://helpx.adobe.com/express/using/remove-background.html), [recadrer l’image](https://helpx.adobe.com/express/using/crop-image.html), combiner l’image à une image ou un texte généré par l’IA, etc.
 
 1. Effectuez vos modifications et cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer la ressource modifiée dans l’un des formats suivants :
 
