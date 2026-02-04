@@ -70,11 +70,11 @@ Utilisez ces liens pour accéder à la documentation détaillée sur ces outils 
    </p>
 </td>
 <td>
-   <a href="https://helpx.adobe.com/enterprise/using/adobe-asset-link.html">
+   <a href="https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html">
    <img alt="Utiliser Adobe Asset Link" src="./assets/adobe-asset-link.jpeg" />
    </a>
    <div>
-      <a href="https://helpx.adobe.com/enterprise/using/adobe-asset-link.html">
+      <a href="https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html">
       <strong>Utiliser Adobe Asset Link</strong>
       </a>
    </div>
@@ -269,11 +269,11 @@ AEM Assets offre des fonctionnalités qui vous aident à trouver rapidement la 
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=fr">
    <img alt="Bonnes pratiques de gestion des métadonnées" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=fr">
       <strong>Bonnes pratiques de gestion des métadonnées</strong>
       </a>
    </div>
@@ -597,11 +597,11 @@ Si vous disposez déjà d’un site web [!DNL Edge Delivery Services], consultez
    </p>
 </td>
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview">
+   <a href="https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/overview">
    <img alt="Intégration à Commerce" src="./assets/integration-ajo.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview">
+      <a href="https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/overview">
       <strong>Intégration à Commerce</strong>
       </a>
    </div>
@@ -697,11 +697,11 @@ Voici quelques-uns des principaux avantages de l’agent de gouvernance :
 
 <table>
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+   <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
    <img alt="Présentation de l’agent Discovery" src="./assets/discovery-agent.jpg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+      <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
       <strong>Présentation de l’agent Discovery</strong>
       </a>
    </div>
@@ -711,11 +711,11 @@ Voici quelques-uns des principaux avantages de l’agent de gouvernance :
 </td>
 
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+   <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
    <img alt="Aperçu de l’optimisation du contenu" src="./assets/content-optimization-agent.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+      <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
       <strong>Présentation de l’agent d’optimisation de contenu</strong>
       </a>
    </div>
@@ -725,11 +725,11 @@ Voici quelques-uns des principaux avantages de l’agent de gouvernance :
 </td>
 
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+   <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
    <img alt="Présentation de l’agent de gouvernance" src="./assets/governance-agent-overview.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+      <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
       <strong>Présentation de l’agent de gouvernance</strong>
       </a>
    </div>
