@@ -2,10 +2,10 @@
 title: Présentation d’Assets as a Cloud Service pour la gestion des ressources numériques dans AEM
 description: Présentation d’Assets as a Cloud Service pour la gestion des ressources numériques dans AEM
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: d49bfaf7ca028b2386342d33fd68e566b8a2be1f
 workflow-type: tm+mt
-source-wordcount: '5075'
-ht-degree: 97%
+source-wordcount: '5626'
+ht-degree: 88%
 
 ---
 
@@ -70,11 +70,11 @@ Utilisez ces liens pour accéder à la documentation détaillée sur ces outils 
    </p>
 </td>
 <td>
-   <a href="https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html">
+   <a href="https://helpx.adobe.com/enterprise/using/adobe-asset-link.html">
    <img alt="Utiliser Adobe Asset Link" src="./assets/adobe-asset-link.jpeg" />
    </a>
    <div>
-      <a href="https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html">
+      <a href="https://helpx.adobe.com/enterprise/using/adobe-asset-link.html">
       <strong>Utiliser Adobe Asset Link</strong>
       </a>
    </div>
@@ -86,9 +86,9 @@ Utilisez ces liens pour accéder à la documentation détaillée sur ces outils 
 
 >[!TAB Fonctionnalités basées sur l’IA]
 
-**Balises intelligentes** : les balises intelligentes utilisent le cadre d’intelligence artificielle de l’IA d’Adobe pour entraîner son algorithme de reconnaissance d’images par rapport à votre structure de balises et de votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes. Par défaut, AEM applique automatiquement les balises intelligentes aux ressources chargées.
+**Balises intelligentes** : les balises intelligentes utilisent le cadre d’intelligence artificielle d’Adobe AI pour entraîner son algorithme de reconnaissance d’images par rapport à votre structure de balises et de votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes. Par défaut, AEM applique automatiquement les balises intelligentes aux ressources chargées.
 
-**Balisage et recherche intelligents basés sur les couleurs** : AEM Assets utilise les fonctionnalités de l’IA d’Adobe pour faire la distinction entre les couleurs d’une image et appliquer automatiquement ces caractéristiques sous forme de balises lors de l’ingestion. Ces balises permettent d’améliorer l’expérience de recherche en fonction de la composition des couleurs de l’image.
+**Balisage et recherche intelligents basés sur les couleurs** : AEM Assets utilise les fonctionnalités d’Adobe AI pour faire la distinction entre les couleurs d’une image et appliquer automatiquement ces caractéristiques sous forme de balises lors de l’ingestion. Ces balises permettent d’améliorer l’expérience de recherche en fonction de la composition des couleurs de l’image.
 
 **Métadonnées générées par l’IA** : AEM Assets utilise l’IA pour générer automatiquement des métadonnées, y compris le titre, la description et les mots-clés. Ces champs générés par l’IA améliorent la précision des métadonnées, ce qui facilite la recherche, la classification et la recommandation des ressources. Non seulement cette approche améliore l’efficacité en éliminant le balisage manuel, mais elle garantit également la cohérence et l’évolutivité sur de gros volumes de contenu numérique.
 
@@ -108,7 +108,6 @@ Utilisez ces liens pour accéder à la documentation détaillée sur ces outils 
       <em>Découvrez comment appliquer automatiquement des balises intelligentes aux ressources chargées.</em>
    </p>
 </td>
-
 
 <td>
    <a href="/help/assets/color-tag-images.md">
@@ -193,7 +192,7 @@ Utilisez ces liens pour accéder à la documentation détaillée sur ces outils 
 
 **Imagerie intelligente** : l’imagerie intelligente offre de meilleures performances de diffusion des ressources d’image en optimisant automatiquement le format et la taille de fichier d’une image en fonction des fonctionnalités du navigateur d’un client ou d’une cliente. Elle fonctionne avec vos paramètres d’image prédéfinis existants et utilise des informations lors de la diffusion. Ces informations permettent de réduire davantage la taille du fichier image en fonction du navigateur et de la vitesse de connexion du réseau.
 
-**Recadrage intelligent** : une fonctionnalité d’IA d’Adobe permettant de détecter automatiquement le point focal d’une image ou d’une vidéo et de le recadrer pour le gérer. Il capture le point ciblé prévu, quelle que soit la taille de l’écran, élimine ainsi les tâches manuelles fastidieuses et fournit des images et des vidéos à chargement rapide et de haute qualité qui s’affichent correctement sur n’importe quel appareil ou écran.
+**Recadrage intelligent** : une fonctionnalité d’Adobe AI permettant de détecter automatiquement le point focal d’une image ou d’une vidéo et de le recadrer pour le gérer. Il capture le point ciblé prévu, quelle que soit la taille de l’écran, élimine ainsi les tâches manuelles fastidieuses et fournit des images et des vidéos à chargement rapide et de haute qualité qui s’affichent correctement sur n’importe quel appareil ou écran.
 
 **Sous-titres vidéo générés par l’IA** : les sous-titres vidéo générés par l’IA dans Adobe Dynamic Media utilisent l’intelligence artificielle pour générer automatiquement des sous-titres pour le contenu vidéo. Cette fonctionnalité est conçue pour améliorer l’accessibilité et l’expérience d’utilisation en fournissant des sous-titres précis. Les sous-titres sont générés à partir de l’audio original, de pistes audio supplémentaires ou de sous-titres supplémentaires fournis dans l’onglet `Captions and Audio` de la page des propriétés vidéo. Avec une prise en charge de plus de 60 langues, les sous-titres peuvent être examinés et prévisualisés avant de publier la vidéo.
 <table>
@@ -270,11 +269,11 @@ AEM Assets offre des fonctionnalités qui vous aident à trouver rapidement la 
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=fr">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
    <img alt="Bonnes pratiques de gestion des métadonnées" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=fr">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
       <strong>Bonnes pratiques de gestion des métadonnées</strong>
       </a>
    </div>
@@ -297,7 +296,7 @@ AEM Assets offre des fonctionnalités qui vous aident à trouver rapidement la 
 </td>
 </table>
 
-**Balises intelligentes** : les balises intelligentes utilisent le cadre d’intelligence artificielle de l’IA d’Adobe pour entraîner son algorithme de reconnaissance d’images par rapport à votre structure de balises et de votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes. Par défaut, AEM applique automatiquement les balises intelligentes aux ressources chargées.
+**Balises intelligentes** : les balises intelligentes utilisent le cadre d’intelligence artificielle d’Adobe AI pour entraîner son algorithme de reconnaissance d’images par rapport à votre structure de balises et de votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes. Par défaut, AEM applique automatiquement les balises intelligentes aux ressources chargées.
 
 **Recherche de ressources** : une fois les métadonnées appropriées en place, AEM Assets vous permet d’effectuer une recherche à l’aide de divers opérateurs, caractères génériques, requêtes avancées et filtres personnalisés.
 
@@ -375,7 +374,6 @@ Vous pouvez également gérer les versions des ressources et définir leur statu
       <em>Découvrez comment effectuer certaines tâches de gestion des ressources de base et avancées.</em>
    </p>
 </td>
-
 
 <td>
    <a href="/help/assets/my-workspace-assets-view.md">
@@ -599,11 +597,11 @@ Si vous disposez déjà d’un site web [!DNL Edge Delivery Services], consultez
    </p>
 </td>
 <td>
-   <a href="https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/overview">
+   <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview">
    <img alt="Intégration à Commerce" src="./assets/integration-ajo.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview">
       <strong>Intégration à Commerce</strong>
       </a>
    </div>
@@ -627,6 +625,123 @@ Si vous disposez déjà d’un site web [!DNL Edge Delivery Services], consultez
 </table>
 
 +++
+
+>[!TAB Agents AI]
+
+## Agents d’IA {#ai-agents}
+
+AEM as a Cloud Service fournit des **agents** intelligents pour améliorer la gestion, l’optimisation et la gouvernance du contenu. Ces agents permettent aux utilisateurs de découvrir du contenu rapidement, d’optimiser les campagnes et de garantir la conformité sur l’ensemble des ressources numériques.
+
+**Agent de découverte**
+
+Discovery Agent diffuse du contenu AEM à la demande par le biais d’invites de conversation naturelles pour une expérience de découverte rationalisée et sans clic. Il effectue des recherches intelligentes dans **Assets, les fragments de contenu et le Forms adaptatif** pour fournir du contenu pertinent tel que des images, des vidéos, des fichiers PDF, des articles et des modèles de formulaire. Le langage naturel vous permet d’effectuer des recherches sans créer de requêtes complexes ni appliquer de filtres dans l’interface d’AEM Assets. En fonction de votre invite, l’agent renvoie les résultats traités, ainsi que les métadonnées de ressource et les URL de diffusion, prêts à être incorporés dans d’autres applications.
+
+Voici quelques-uns des principaux avantages de Discovery Agent :
+
+* **Découverte de contenu unifié :** accédez à tous les types de contenu AEM, tels que les images, les vidéos, les documents, les articles et les formulaires PDF, à partir d’une seule interface de conversation.
+* **Planification rapide des campagnes :** rassemblez rapidement des visuels et des formulaires pour les campagnes marketing sur les canaux e-mail, web et sociaux.
+* **Productivité améliorée :** réduisez le temps passé à parcourir les référentiels ou à filtrer les métadonnées par le biais d’une recherche automatisée basée sur l’intention.
+* **Utilisation cohérente du contenu :** garantit la réutilisation des ressources et des fragments approuvés, tout en maintenant la cohérence de la marque sur l’ensemble des canaux.
+
+**Compétences :** découverte de contenu en langage naturel, découverte de ressources basée sur les balises, découverte de contenu basé sur les dossiers, découverte de ressources basée sur le format et l’orientation\
+**Personnes :** responsables de campagne, spécialistes du marketing des canaux, bibliothécaires de la gestion des ressources numériques, agences et partenaires\
+**Accès :** via l’assistant AI dans AEM
+
+**Cas d’utilisation courants/exemples d’invites :**
+
+* Affichez les images balisées « office » dans le dossier WKND.
+* Répertoriez tous les fragments de contenu publiés pour les boissons WKND.
+* Recherchez les formulaires à remplir pour postuler à un emploi.
+* Afficher les ressources avec une personne en orientation paysage
+
+**Agent d’optimisation de contenu**
+
+L’**agent d’optimisation de contenu** permet d’affiner et d’adapter les ressources à l’aide d’invites en langage naturel. Il peut générer de nouveaux rendus, ajuster les visuels, modifier les arrière-plans et créer automatiquement des variations prêtes pour le canal. Fonctionne avec l’agent Discovery et **Dynamic Media avec OpenAPI** pour une optimisation transparente.
+
+**Principaux avantages :**
+
+* **Transformation de ressources sans effort :** redimensionner, accentuer, recolorer ou mettre en miroir des images.
+* **Sorties optimisées pour les canaux :** générez des rendus pour Instagram, les bannières web et d’autres canaux marketing.
+* **Améliorations de Creative à grande échelle :** appliquer des modifications en arrière-plan ou des recouvrements pour les workflows de gros volume.
+
+**Accès :** via l’assistant AI dans AEM.
+
+**Exemples d’invites :**
+
+* `Create a 2000px JPEG rendition.`
+* `Sharpen the image.`
+* `Change background color to #ff8932.`
+* `Create a rendition for an Instagram story.`
+
+**Limites :** certaines optimisations ne sont pas prises en charge pour les ressources PNG.
+
+**Agent de gouvernance**
+
+L’agent de gouvernance permet d’assurer la conformité, la cohérence de la marque et l’application des politiques sur tout le contenu AEM. Il identifie le contenu qui ne respecte pas les directives en matière de métadonnées, d’accessibilité ou d’entreprise.
+
+Voici quelques-uns des principaux avantages de l’agent de gouvernance :
+
+* **Surveillance de la conformité :** détecte les violations de politique dans le contenu.
+* **Application des métadonnées :** garantit que les ressources disposent des métadonnées requises pour la gouvernance.
+* **Cohérence de la marque :** signale le contenu qui ne répond pas aux normes de l’entreprise.
+
+**Compétences :** contrôles de conformité aux politiques, validation des métadonnées, contrôle de l’accessibilité, alertes automatisées en cas de violation\
+**Rôles :** administrateurs de gestion des ressources numériques, responsables de la conformité, chefs de marque\
+**Accès :** via l’assistant AEM AI
+
+**Cas d’utilisation courants/exemples d’invites :**
+
+* Validez les métadonnées de toutes les ressources du dossier WKND.
+* Identifier les ressources sans directives de marque.
+* Audit du contenu publié pour la conformité en matière d’accessibilité.
+
+<table>
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+   <img alt="Présentation de l’agent Discovery" src="./assets/discovery-agent-overview.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+      <strong>Présentation de l’agent Discovery</strong>
+      </a>
+   </div>
+   <p>
+      <em>Présentation de Discovery Agent et de ses fonctionnalités de découverte de contenu conversationnel.</em>
+   </p>
+</td>
+
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+   <img alt="Aperçu de l’optimisation du contenu" src="./assets/content-optimization-agent.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+      <strong>Présentation de l’agent d’optimisation de contenu</strong>
+      </a>
+   </div>
+   <p>
+      <em>Présentation de l’agent d’optimisation de contenu et des workflows d’optimisation pris en charge.</em>
+   </p>
+</td>
+
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+   <img alt="Présentation de l’agent de gouvernance" src="./assets/governance-agent-overview.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+      <strong>Présentation de l’agent de gouvernance</strong>
+      </a>
+   </div>
+   <p>
+      <em>Présentation de l’agent de gouvernance pour la conformité et l’application des politiques.</em>
+   </p>
+</td>
+</table>
+
+### **Accès aux agents dans AEM**
+
+Les agents sont accessibles via l’**assistant AI** dans AEM Cloud Service. Connectez-vous à [experience.adobe.com](https://experience.adobe.com/) et interagissez avec l’assistant AI à l’aide d’invites en langage naturel.
 
 >[!TAB Activation des ressources]
 
@@ -704,7 +819,7 @@ Dynamic Media propose les principales fonctionnalités suivantes :
 
 * **Visionneuses de vidéos adaptatives** : une visionneuse de vidéos adaptative regroupe les versions d’une même vidéo codées à des débits et des formats différents. Vous commencez avec votre vidéo principale originale que vous chargez dans le système. Dynamic Media mesure automatiquement, ou transcode, cette vidéo en plusieurs vidéos. Ensuite, au moment de la diffusion, il est intelligemment déterminé quel écran vidéo, quelle qualité et quel format utiliser et la vidéo est diffusée sur le téléphone, la tablette ou l’ordinateur de bureau.
 
-* **Recadrage intelligent** : une fonctionnalité d’IA d’Adobe permettant de détecter automatiquement le point focal d’une image ou d’une vidéo et de le recadrer pour le gérer. Il capture le point ciblé prévu, quelle que soit la taille de l’écran, élimine ainsi les tâches manuelles fastidieuses et fournit des images et des vidéos à chargement rapide et de haute qualité qui s’affichent correctement sur n’importe quel appareil ou écran.
+* **Recadrage intelligent** : une fonctionnalité d’Adobe AI permettant de détecter automatiquement le point focal d’une image ou d’une vidéo et de le recadrer pour le gérer. Il capture le point ciblé prévu, quelle que soit la taille de l’écran, élimine ainsi les tâches manuelles fastidieuses et fournit des images et des vidéos à chargement rapide et de haute qualité qui s’affichent correctement sur n’importe quel appareil ou écran.
 
 * **Modèles Dynamic Media** : créez des modèles personnalisables en temps réel pour vos bannières et prospectus à l’aide des modèles Dynamic Media, un éditeur de modèles WYSIWYG. Publiez votre modèle Dynamic Media et utilisez-le dans les applications en aval. Un modèle Dynamic Media comprend des calques d’image et de texte. Ajoutez des paramètres aux calques d’image et de texte du modèle et utilisez les URL de Dynamic Media pour repositionner et redimensionner le calque et mettre à jour son contenu en temps réel.
 
@@ -772,7 +887,7 @@ Dynamic Media avec fonctionnalités OpenAPI place la gestion des ressources num�
 
 Dynamic Media avec fonctionnalités OpenAPI offre les avantages clés suivants :
 
-* **Intégrations fluides** : Dynamic Media avec fonctionnalités OpenAPI offre un ensemble complet d’API de recherche et de diffusion. Cela permet à votre équipe de développement d’[&#x200B; intégrer facilement la diffusion des ressources à leurs applications](/help/assets/integrate-dynamic-media-open-apis.md). Les applications comprennent les applications d’Adobe et tierces. Il fournit une [interface de sélecteur de ressources micro frontend](/help/assets/overview-asset-selector.md) pour rechercher et sélectionner des ressources approuvées. Vous pouvez facilement intégrer le sélecteur à n’importe quelle application basée sur des frameworks JavaScript telles que React JS, Angular JS et Vanilla JS.
+* **Intégrations fluides** : Dynamic Media avec fonctionnalités OpenAPI offre un ensemble complet d’API de recherche et de diffusion. Cela permet à votre équipe de développement d’[ intégrer facilement la diffusion des ressources à leurs applications](/help/assets/integrate-dynamic-media-open-apis.md). Les applications comprennent les applications d’Adobe et tierces. Il fournit une [interface de sélecteur de ressources micro frontend](/help/assets/overview-asset-selector.md) pour rechercher et sélectionner des ressources approuvées. Vous pouvez facilement intégrer le sélecteur à n’importe quelle application basée sur des frameworks JavaScript telles que React JS, Angular JS et Vanilla JS.
 
 * **Gestion centralisée des ressources numériques** : la DAM est la source unique de vérité pour toutes les ressources numériques. Vos ressources numériques sont gérées de manière centralisée dans AEM Assets et diffusées vers les applications consommatrices par référence à l’aide d’URL de diffusion, sans copier de fichiers binaires de ressources.
 
