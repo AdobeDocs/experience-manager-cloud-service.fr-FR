@@ -35,7 +35,7 @@ Experience Manager Assets permet à l’équipe d’aministration de configurer 
 
 * Tous les liens personnalisés que vous devez inclure sur Content Hub en plus des ressources, des collections et des informations.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472948/?captions=fre_fr&learn=on&enablevpops){transcript=true}
 
 ## Conditions préalables {#prerequisites-configuration-ui}
 
