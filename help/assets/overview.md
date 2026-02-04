@@ -2,10 +2,10 @@
 title: Présentation d’Assets as a Cloud Service pour la gestion des ressources numériques dans AEM
 description: Présentation d’Assets as a Cloud Service pour la gestion des ressources numériques dans AEM
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: d49bfaf7ca028b2386342d33fd68e566b8a2be1f
+source-git-commit: 5606d66dfa9c7d11063eea495088e1263a2cc5fb
 workflow-type: tm+mt
-source-wordcount: '5626'
-ht-degree: 88%
+source-wordcount: '5642'
+ht-degree: 87%
 
 ---
 
@@ -24,7 +24,7 @@ Voici quelques-unes des principales fonctionnalités de la gestion des ressource
 
 >[!BEGINTABS]
 
->[!TAB Ingestion de ressources]
+>[!TAB Ingestion]
 
 ## Ingestion de ressources {#asset-ingestion}
 
@@ -70,11 +70,11 @@ Utilisez ces liens pour accéder à la documentation détaillée sur ces outils 
    </p>
 </td>
 <td>
-   <a href="https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html">
+   <a href="https://helpx.adobe.com/enterprise/using/adobe-asset-link.html">
    <img alt="Utiliser Adobe Asset Link" src="./assets/adobe-asset-link.jpeg" />
    </a>
    <div>
-      <a href="https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html">
+      <a href="https://helpx.adobe.com/enterprise/using/adobe-asset-link.html">
       <strong>Utiliser Adobe Asset Link</strong>
       </a>
    </div>
@@ -239,7 +239,7 @@ Utilisez ces liens pour accéder à la documentation détaillée sur ces outils 
 </td>
 </table>
 
->[!TAB Visibilité des ressources]
+>[!TAB Découverte]
 
 ## Visibilité des ressources {#asset-discovery}
 
@@ -269,11 +269,11 @@ AEM Assets offre des fonctionnalités qui vous aident à trouver rapidement la 
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=fr">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
    <img alt="Bonnes pratiques de gestion des métadonnées" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=fr">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
       <strong>Bonnes pratiques de gestion des métadonnées</strong>
       </a>
    </div>
@@ -346,7 +346,7 @@ AEM Assets offre des fonctionnalités qui vous aident à trouver rapidement la 
 </td>
 </table>
 
->[!TAB Gouvernance des ressources]
+>[!TAB  Gouvernance ]
 
 ## Gestion et gouvernance des ressources {#asset-management-governance}
 
@@ -597,11 +597,11 @@ Si vous disposez déjà d’un site web [!DNL Edge Delivery Services], consultez
    </p>
 </td>
 <td>
-   <a href="https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/overview">
+   <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview">
    <img alt="Intégration à Commerce" src="./assets/integration-ajo.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview">
       <strong>Intégration à Commerce</strong>
       </a>
    </div>
@@ -668,10 +668,10 @@ L’**agent d’optimisation de contenu** permet d’affiner et d’adapter les 
 
 **Exemples d’invites :**
 
-* `Create a 2000px JPEG rendition.`
-* `Sharpen the image.`
-* `Change background color to #ff8932.`
-* `Create a rendition for an Instagram story.`
+* Créez un rendu JPEG de 2 000 pixels.
+* Accentuez l’image.
+* Remplacez la couleur d’arrière-plan par #ff8932.
+* Créez un rendu pour une histoire Instagram.
 
 **Limites :** certaines optimisations ne sont pas prises en charge pour les ressources PNG.
 
@@ -697,11 +697,11 @@ Voici quelques-uns des principaux avantages de l’agent de gouvernance :
 
 <table>
 <td>
-   <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
-   <img alt="Présentation de l’agent Discovery" src="./assets/discovery-agent-overview.jpeg" />
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+   <img alt="Présentation de l’agent Discovery" src="./assets/discovery-agent.jpg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
       <strong>Présentation de l’agent Discovery</strong>
       </a>
    </div>
@@ -711,11 +711,11 @@ Voici quelques-uns des principaux avantages de l’agent de gouvernance :
 </td>
 
 <td>
-   <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
    <img alt="Aperçu de l’optimisation du contenu" src="./assets/content-optimization-agent.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
       <strong>Présentation de l’agent d’optimisation de contenu</strong>
       </a>
    </div>
@@ -725,11 +725,11 @@ Voici quelques-uns des principaux avantages de l’agent de gouvernance :
 </td>
 
 <td>
-   <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
    <img alt="Présentation de l’agent de gouvernance" src="./assets/governance-agent-overview.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
       <strong>Présentation de l’agent de gouvernance</strong>
       </a>
    </div>
@@ -743,7 +743,7 @@ Voici quelques-uns des principaux avantages de l’agent de gouvernance :
 
 Les agents sont accessibles via l’**assistant AI** dans AEM Cloud Service. Connectez-vous à [experience.adobe.com](https://experience.adobe.com/) et interagissez avec l’assistant AI à l’aide d’invites en langage naturel.
 
->[!TAB Activation des ressources]
+>[!TAB Activation]
 
 ## Activation des ressources {#asset-activation}
 
@@ -887,7 +887,7 @@ Dynamic Media avec fonctionnalités OpenAPI place la gestion des ressources num�
 
 Dynamic Media avec fonctionnalités OpenAPI offre les avantages clés suivants :
 
-* **Intégrations fluides** : Dynamic Media avec fonctionnalités OpenAPI offre un ensemble complet d’API de recherche et de diffusion. Cela permet à votre équipe de développement d’[&#x200B; intégrer facilement la diffusion des ressources à leurs applications](/help/assets/integrate-dynamic-media-open-apis.md). Les applications comprennent les applications d’Adobe et tierces. Il fournit une [interface de sélecteur de ressources micro frontend](/help/assets/overview-asset-selector.md) pour rechercher et sélectionner des ressources approuvées. Vous pouvez facilement intégrer le sélecteur à n’importe quelle application basée sur des frameworks JavaScript telles que React JS, Angular JS et Vanilla JS.
+* **Intégrations fluides** : Dynamic Media avec fonctionnalités OpenAPI offre un ensemble complet d’API de recherche et de diffusion. Cela permet à votre équipe de développement d’[ intégrer facilement la diffusion des ressources à leurs applications](/help/assets/integrate-dynamic-media-open-apis.md). Les applications comprennent les applications d’Adobe et tierces. Il fournit une [interface de sélecteur de ressources micro frontend](/help/assets/overview-asset-selector.md) pour rechercher et sélectionner des ressources approuvées. Vous pouvez facilement intégrer le sélecteur à n’importe quelle application basée sur des frameworks JavaScript telles que React JS, Angular JS et Vanilla JS.
 
 * **Gestion centralisée des ressources numériques** : la DAM est la source unique de vérité pour toutes les ressources numériques. Vos ressources numériques sont gérées de manière centralisée dans AEM Assets et diffusées vers les applications consommatrices par référence à l’aide d’URL de diffusion, sans copier de fichiers binaires de ressources.
 
