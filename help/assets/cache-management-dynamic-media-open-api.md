@@ -17,7 +17,7 @@ La mise en cache prolongée dans Dynamic Media avec les API ouvertes se compose 
 
 ## Mise en cache de la couche CDN {#cdn-layer-caching}
 
-Les réponses de diffusion des ressources sont mises en cache sur le [réseau CDN géré par Adobe](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn#aem-managed-cdn) pendant une période prolongée afin d’optimiser les performances et de minimiser la charge sur l’origine. Cette mise en cache est entièrement gérée par Adobe afin d’assurer une expérience de haute qualité cohérente pour les utilisateurs finaux et utilisatrices finales. La durée de mise en cache est intentionnellement optimisée pour les performances et ne peut pas être personnalisée par les utilisateurs pour maintenir la fiabilité et l’efficacité de la diffusion du contenu à tous les clients.
+Les réponses de diffusion des ressources sont mises en cache sur le [réseau CDN géré par Adobe](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn#aem-managed-cdn) pendant une période prolongée afin d’optimiser les performances et de minimiser la charge sur l’origine. Cette mise en cache est entièrement gérée par Adobe afin d’assurer une expérience de haute qualité cohérente pour les utilisateurs finaux et utilisatrices finales. La durée de mise en cache est intentionnellement optimisée pour les performances et ne peut pas être personnalisée par les utilisateurs pour maintenir la fiabilité et l’efficacité de la diffusion du contenu à tous les clients.
 
 Toutes les URL de diffusion sont mises en cache à la périphérie (rapidement) pendant une durée prolongée afin d’assurer des performances optimales. Les objets de diffusion mis en cache comprennent les rendus statiques, les vidéos, les fichiers binaires d’image d’origine et les images transformées dynamiquement, telles que les ressources redimensionnées ou reformatées générées par le biais de paramètres d’URL. <!--The CDN is designed to serve these assets directly from the cache without revalidating them, unless an explicit purge is performed.-->
 
@@ -27,7 +27,7 @@ Les réponses de diffusion des ressources incluent un en-tête `Cache-Control` a
 
 ### Personnalisation des en-têtes de contrôle du cache {#customizing-cache-control-headers}
 
-L’augmentation du temps d’expiration du cache au-delà de la configuration par défaut augmente la probabilité de diffuser du contenu obsolète, ce qui peut retarder la visibilité des mises à jour de contenu dans l’expérience de l’utilisateur final. Si vous devez modifier le comportement du contrôle du cache pour votre cas d’utilisation spécifique, vous pouvez configurer des règles CDN personnalisées pour ajuster les en-têtes de réponse. Vous pouvez ainsi définir différentes durées de mise en cache en fonction de vos besoins. Reportez-vous à [Règles de réseau CDN personnalisé AEM pour les en-têtes de réponse](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic).
+L’augmentation du temps d’expiration du cache au-delà de la configuration par défaut augmente la probabilité de diffuser du contenu obsolète, ce qui peut retarder la visibilité des mises à jour de contenu dans l’expérience de l’utilisateur final. Si vous devez modifier le comportement du contrôle du cache pour votre cas d’utilisation spécifique, vous pouvez configurer des règles CDN personnalisées pour ajuster les en-têtes de réponse. Vous pouvez ainsi définir différentes durées de mise en cache en fonction de vos besoins. Reportez-vous à [Règles de réseau CDN personnalisé AEM pour les en-têtes de réponse](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic).
 
 ```
 responseTransformations:
@@ -53,7 +53,7 @@ Chaque fois qu’une ressource est mise à jour, supprimée ou modifiée (tout c
 
 ### Purge manuelle du cache {#manual-cache-purging}
 
-Lorsqu’il est nécessaire de purger manuellement le contenu mis en cache, vous pouvez utiliser les fonctionnalités d’invalidation du cache d’AEM. Pour obtenir des instructions détaillées sur la purge d’URL de cache spécifiques, consultez la section [Invalidation du cache du réseau CDN AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-cache-purge#single-purge).
+Lorsqu’il est nécessaire de purger manuellement le contenu mis en cache, vous pouvez utiliser les fonctionnalités d’invalidation du cache d’AEM. Pour obtenir des instructions détaillées sur la purge d’URL de cache spécifiques, consultez la section [Invalidation du cache du réseau CDN AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-cache-purge#single-purge).
 
 ## Questions fréquemment posées{#faq-cache-management}
 
