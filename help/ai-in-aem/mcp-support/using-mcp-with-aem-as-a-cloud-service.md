@@ -3,7 +3,7 @@ title: Utilisation de MCP avec AEM as a Cloud Service
 description: Découvrez comment utiliser le protocole Model Context avec AEM as a Cloud Service
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 243fbd007235949fc03852658f606d483ef9ce4d
+source-git-commit: a5eeb2cedb16f7d0ba0b31e838b3b9fa27b0bf3f
 workflow-type: tm+mt
 source-wordcount: '2064'
 ht-degree: 0%
@@ -117,7 +117,7 @@ Cette étape est effectuée par chaque utilisateur (ou par un administrateur de 
 
 Vous trouverez ci-dessous des exemples détaillés de la façon dont cela se présente dans chaque application prise en charge.
 
-**ChatGPT**
+### ChatGPT {#chatgpt}
 
 ![Configurer ChatGPT - Paramètres](assets/chatgpt-1.png)
 
@@ -139,7 +139,7 @@ Vous trouverez ci-dessous des exemples détaillés de la façon dont cela se pr�
 
   *« À l’aide des outils AEM MCP configurés, répertoriez tous les sites de votre environnement de création. »*
 
-**Claude**
+### Claude {#claude}
 
 ![Configurer Claude - Paramètres](assets/claude-1.png)
 
@@ -161,7 +161,7 @@ Vous trouverez ci-dessous des exemples détaillés de la façon dont cela se pr�
 * Assurez-vous que le serveur MCP est sélectionné avant de commencer votre conversation
 * Demandez à Claude d’effectuer des tâches liées à AEM ; Claude sélectionnera les outils AEM exposés par le serveur MCP en fonction de votre invite.
 
-**Curseur**
+### Curseur {#cursor}
 
 ![Configurer le curseur - Paramètres](assets/cursor-1.png)
 
@@ -178,7 +178,7 @@ Vous trouverez ci-dessous des exemples détaillés de la façon dont cela se pr�
 * Vous pouvez éventuellement activer ou désactiver des outils individuels en cliquant sur leur nom. Tous les outils sont activés par défaut.
 * Utilisez l’éditeur de curseur ou la conversation pour appeler les outils AEM dans le cadre des workflows de développement ou de contenu.
 
-**Microsoft Copilot Studio**
+### Microsoft Copilot Studio {#microsoft-copilot-studio}
 
 ![Configuration du copilote - Agents](assets/copilot-1.png)
 
@@ -216,7 +216,7 @@ Les serveurs MCP hébergés par Adobe mettent en œuvre OAuth et sont intégrés
 * Lorsqu’une application cliente MCP se connecte à un serveur MCP AEM, les utilisateurs voient une boîte de dialogue de connexion Adobe et s’authentifient avec leur **Adobe ID**
 * Une fois la connexion établie, le système vérifie que l’application cliente MCP est autorisée dans votre organisation et que le serveur MCP demandé est autorisé. Si l’une de ces vérifications échoue, un message d’erreur s’affiche.
 
-![Erreur Client MCP non autorisé &#x200B;](assets/MCP-Client-not-permitted.png)
+![Erreur Client MCP non autorisé ](assets/MCP-Client-not-permitted.png)
 
 * Une fois la vérification effectuée, le serveur MCP émet des jetons que l’application utilise pour les appels d’outil suivants
 * Les outils MCP respectent les autorisations AEM de l’utilisateur. Un utilisateur non autorisé à modifier un fragment de contenu dans AEM ne pourra pas le modifier non plus via MCP.
