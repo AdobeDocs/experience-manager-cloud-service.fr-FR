@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 7ee534546cc8b9afd865b41f223caf9fd86ea45a
+source-git-commit: 90b1730522494cda0e777ecc0171703c2b2eff5b
 workflow-type: tm+mt
-source-wordcount: '3548'
-ht-degree: 89%
+source-wordcount: '3697'
+ht-degree: 85%
 
 ---
 
@@ -34,7 +34,7 @@ Pendant la période d’obsolescence, Adobe rappelle à ses clientes et clients 
 >
 > * **À compter du 26 janvier 2026** : les e-mails de notification du Centre d’actions sont envoyés **chaque semaine par environnement** comme rappel pour supprimer l’utilisation de ces API.
 > * **26 février 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API seront **mis en pause** pendant l’étape **Qualité du code**. Un responsable de déploiement, un chef de projet ou un propriétaire d’entreprise peut contourner le problème pour autoriser le pipeline à continuer.
-> * **26 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **&#x200B;**&#x200B;pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
+> * **26 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **** pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
 > * **30 avril 2026** : les environnements qui utilisent toujours ces API peuvent **ne plus recevoir de mises à jour critiques de versions d’Adobe**.
 >
 > Pour empêcher les blocs de déploiement, supprimez l’utilisation de l’API avant le 26 mars 2026.
@@ -89,7 +89,7 @@ Les API du tableau ci-dessous (cliquez pour développer) ont été annoncées c
 >
 > * **À compter du 26 janvier 2026** : les e-mails de notification du Centre d’actions sont envoyés **chaque semaine par environnement** comme rappel pour supprimer l’utilisation de ces API.
 > * **26 février 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API seront **mis en pause** pendant l’étape **Qualité du code**. Un responsable de déploiement, un chef de projet ou un propriétaire d’entreprise peut contourner le problème pour autoriser le pipeline à continuer.
-> * **26 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **&#x200B;**&#x200B;pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
+> * **26 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **** pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
 > * **30 avril 2026** : les environnements qui utilisent toujours ces API peuvent **ne plus recevoir de mises à jour critiques de versions d’Adobe**.
 >
 > Pour empêcher les blocs de déploiement, supprimez l’utilisation de l’API avant le 26 mars 2026.
@@ -174,7 +174,7 @@ Les API du tableau ci-dessous (cliquez pour développer) ont été annoncées c
     <td>AEM as a Cloud Service ne prend pas en charge cette API slf4j interne. <a href="#org.slf4j">Consultez les notes de suppression ci-dessous.</a></td>
     <td>11/04/2022</td>
     <td>2/26/2026</td>
-  </tr> 
+  </tr>
     <tr>
     <td>com.drew.*</td>
     <td>L’extraction des métadonnées des images et des vidéos doit s’effectuer via Asset Compute dans Cloud Service ou via Apache POI ou Apache Tika.</td>
@@ -203,7 +203,7 @@ Les API du tableau ci-dessous (cliquez pour développer) ont été annoncées c
     <td>L’utilisation de cette API n’est pas prise en charge dans AEM as a Cloud Service.</td>
     <td>31/10/2022</td>
     <td>2/26/2026</td>
-  </tr>  
+  </tr>
   <tr>
     <td>org.apache.sling.runmode</td>
     <td></td>
@@ -348,6 +348,14 @@ Bien que vous deviez remédier à toutes les API obsolètes au fil du temps, don
 
 Après avoir mis à jour votre code, vérifiez qu’aucune utilisation obsolète de l’API ne reste dans Cloud Manager en vérifiant les résultats de l’étape de qualité du code.
 
+### Directives générales
+
+Si vous utilisez une bibliothèque tierce qui nécessite actuellement une API obsolète, essayez d’effectuer une mise à jour vers une version plus récente de cette bibliothèque tierce.
+
+Si vous utilisez ACS AEM Commons, utilisez au moins la version 6.11.0 (la dernière version est recommandée) et assurez-vous d’[inclure la version pour Cloud Service](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html) en spécifiant le `cloud` de classificateur du package de contenu.
+
+Si l’importation d’une API obsolète est marquée comme `optional`, vous devez tout de même essayer de la supprimer. Toutefois, cette utilisation facultative ne bloque pas les déploiements. Cependant, votre déploiement peut être affecté, une fois que l’importation facultative n’est plus satisfaite.
+
 ### Suppression de `org.apache.sling.commons.auth*` {#org.apache.sling.commons.auth}
 
 Si vous utilisez `org.apache.sling.commons.auth` et/ou `org.apache.sling.commons.auth.spi`, l’utilisation peut être remplacée par la migration du code vers `org.apache.sling.auth`. `org.apache.sling.auth.spi`. Si vous utilisez une ancienne version de [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), veillez à effectuer la mise à jour vers la dernière version.
@@ -447,6 +455,7 @@ Liste d’actions :
 
 * Mettre à jour ACS AEM Commons vers la dernière version (au moins 6.11.0)
 * Supprimer le code à l’aide de `org.slf4j.event` et `org.slf4j.spi`
+* Si vous utilisez le client Apache Kafka et incluez le bundle de wrapper OSGi d’Apache ServiceMix (`org.apache.servicemix.bundles.kafka-clients`), remplacez-le par le [wrapper client Apache Kafka d’AEM](https://repo.maven.apache.org/maven2/com/adobe/aem/osgi/com.adobe.aem.osgi.kafka-clients/4.0.0_1.0/). Il s’agit de la même version que celle d’Apache ServiceMix, avec seulement l’utilisation de ces deux packages supprimée.
 
 ### Utilisation d’`org.apache.log4j` {#org.apache.log4j}
 
