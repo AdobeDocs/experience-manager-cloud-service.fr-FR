@@ -4,9 +4,9 @@ description: Découvrez comment configurer l’éditeur de texte enrichi dans l�
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: af63b3ff705954fe2145303ea0dc80720ad9e552
+source-git-commit: e1773cbc2293cd8afe29c3624b29d1e011ea7e10
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '806'
 ht-degree: 1%
 
 ---
@@ -220,6 +220,28 @@ La mise en retrait possède une configuration au niveau des fonctionnalités qui
 >[!NOTE]
 >
 >L’imbrication de listes à l’aide des touches Tab/Maj+Tab fonctionne indépendamment des paramètres de mise en retrait généraux.
+
+### Coller en tant que texte {#paste-as-text}
+
+L’action de l’éditeur de `paste_text` active un workflow standard de collage en tant que texte brut.
+
+* **Raccourci par défaut :** Mod-Shift-v (Cmd+Maj+V sous macOS, Ctrl+Maj+V sous Windows/Linux)
+* **Comportement :** Colle à partir de texte/brut (la mise en forme source est ignorée)
+   * Dans les listes, les nouvelles lignes créent des éléments de liste.
+
+```json
+{
+  "toolbar": {
+    "editor": ["removeformat", "paste_text"]
+  },
+  "actions": {
+    "paste_text": {
+      "shortcut": "Mod-Shift-v",
+      "label": "Paste as Text"
+    }
+  }
+}
+```
 
 ### Autres actions {#other}
 
