@@ -26,7 +26,7 @@ Bien que l’éditeur universel puisse modifier du contenu provenant de n’impo
 
 L’éditeur universel nécessite une bibliothèque JavaScript pour afficher et modifier la page dans l’éditeur.
 
-En outre, le service de l’éditeur universel nécessite un [nom uniforme de ressource (URN) ](https://fr.wikipedia.org/wiki/Uniform_Resource_Name) pour identifier et utiliser le système principal approprié pour le contenu en cours de modification dans l’application. Par conséquent, un schéma URN est nécessaire pour mapper le contenu aux ressources de contenu.
+En outre, le service de l’éditeur universel nécessite un [nom uniforme de ressource (URN) &#x200B;](https://fr.wikipedia.org/wiki/Uniform_Resource_Name) pour identifier et utiliser le système principal approprié pour le contenu en cours de modification dans l’application. Par conséquent, un schéma URN est nécessaire pour mapper le contenu aux ressources de contenu.
 
 ### Inclure la bibliothèque principale de l’éditeur universel {#cors-library}
 
@@ -46,7 +46,7 @@ Les connexions utilisées dans l’application sont stockées sous la forme de b
 
 * `<category>` - Il s’agit d’une classification de la connexion avec deux options.
    * `system` - Pour les points d’entrée de connexion
-   * `config` - Pour [ définir des paramètres de configuration facultatifs ](#configuration-settings)
+   * `config` - Pour [&#x200B; définir des paramètres de configuration facultatifs &#x200B;](#configuration-settings)
 * `<referenceName>` : il s’agit d’un nom court réutilisé dans le document pour identifier la connexion. Par exemple, `aemconnection`
 * `<protocol>` : indique le plug-in de persistance du service de persistance de l’éditeur universel à utiliser. Par ex. `aem`
 * `<url>` : il s’agit de l’URL vers le système où les modifications doivent être conservées. Par ex. `http://localhost:4502`

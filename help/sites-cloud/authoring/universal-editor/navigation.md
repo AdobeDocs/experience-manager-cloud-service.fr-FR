@@ -43,7 +43,7 @@ Une fois que l’application est instrumentée pour fonctionner avec l’éditeu
 ### Accès à dans AEM as a Cloud Service {#accessing-aem}
 
 1. Connectez-vous à votre instance de création AEM as a Cloud Service.
-1. Utilisez la console [**Sites** ](/help/sites-cloud/authoring/sites-console/introduction.md) pour accéder à la page créée pour être utilisée avec l’éditeur universel que vous souhaitez modifier.
+1. Utilisez la console [**Sites** &#x200B;](/help/sites-cloud/authoring/sites-console/introduction.md) pour accéder à la page créée pour être utilisée avec l’éditeur universel que vous souhaitez modifier.
 1. Modifiez la page.
 1. L’éditeur universel s’ouvre pour modifier la page sélectionnée.
 
@@ -53,7 +53,7 @@ Une fois que l’application est instrumentée pour fonctionner avec l’éditeu
 
 ### Accès direct {#accessing-directly}
 
-1. Connectez-vous à l’éditeur universel. Vous avez besoin d’une Adobe ID pour vous connecter et d’avoir accès [ l’éditeur universel](/help/implementing/universal-editor/getting-started.md#request-access).
+1. Connectez-vous à l’éditeur universel. Vous avez besoin d’une Adobe ID pour vous connecter et d’avoir accès [&#x200B; l’éditeur universel](/help/implementing/universal-editor/getting-started.md#request-access).
 
 1. Une fois connecté, saisissez l’URL de la page à modifier dans la [barre d’emplacement](#location-bar) afin de commencer à modifier du contenu tel que du contenu texte ou multimédia.
 
@@ -78,13 +78,13 @@ La barre de navigation supérieure d’Experience Platform est toujours présent
 
 ![En-tête Experience Cloud](assets/experience-cloud-header.png)
 
-Pour plus d’informations sur la barre de navigation supérieure d’Experience Platform, consultez le guide de l’interface utilisateur de Adobe Experience Platform [](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+Pour plus d’informations sur la barre de navigation supérieure d’Experience Platform, consultez le guide de l’interface utilisateur de Adobe Experience Platform [&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Compte {#user-properties}
 
 Appuyez ou cliquez sur l’icône de compte pour ouvrir un menu contenant vos paramètres utilisateur.
 
-![ Sélecteur d’environnement ](assets/environment-switcher.png)
+![&#x200B; Sélecteur d’environnement &#x200B;](assets/environment-switcher.png)
 
 Pour l’éditeur universel, sous l’en-tête **Paramètres du produit**, utilisez l’option **Basculer vers l’environnement de prévisualisation** pour basculer entre la version de production actuelle de l’éditeur universel et la [version de prévisualisation à venir.](/help/release-notes/universal-editor/preview.md)
 
@@ -94,7 +94,7 @@ La barre d’outils de l’éditeur universel est toujours présente en haut de 
 
 Selon la configuration de votre programme, il peut également présenter des [fonctionnalités supplémentaires qui ont été activées en tant qu’extensions par votre administrateur.](#additional-toolbar-buttons)
 
-![ Barre d’outils de l’éditeur universel ](assets/universal-editor-toolbar.png)
+![&#x200B; Barre d’outils de l’éditeur universel &#x200B;](assets/universal-editor-toolbar.png)
 
 #### Le Bouton Accueil {#home-button}
 
@@ -130,8 +130,8 @@ La barre d’emplacement affiche l’adresse de la page que vous modifiez. Séle
 
 Sélectionnez les boutons Annuler ou Rétablir pour annuler ou rétablir la dernière modification dans l’éditeur. Consultez le document [Création de contenu avec l’éditeur universel](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) pour plus d’informations.
 
-![ Icône Annuler ](assets/undo.png)
-![ Icône Rétablir ](assets/redo.png)
+![&#x200B; Icône Annuler &#x200B;](assets/undo.png)
+![&#x200B; Icône Rétablir &#x200B;](assets/redo.png)
 
 >[!TIP]
 >
@@ -325,7 +325,7 @@ Appuyez ou cliquez sur le bouton Supprimer [supprime le composant](/help/sites-c
 
 Vous pouvez copier et coller des composants qui se trouvent dans des [conteneurs.](/help/implementing/universal-editor/field-types.md#container)
 
-![ Icône Copier ](assets/copy.png)
+![&#x200B; Icône Copier &#x200B;](assets/copy.png)
 ![Icône Coller](assets/paste.png)
 
 >[!TIP]
