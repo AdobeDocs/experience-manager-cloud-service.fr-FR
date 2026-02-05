@@ -3,10 +3,10 @@ title: Notes de mise à jour de l’aperçu de l’éditeur universel
 description: Voici les notes de mise à jour de la version préliminaire de l’éditeur universel.
 feature: Release Information
 role: Admin
-source-git-commit: 722ab0a32947ff3386d4bd6d2d78a8dc457aa06c
+source-git-commit: b03ad4a29c55e6789b82d2da76708c6e31613c5e
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 1%
+source-wordcount: '170'
+ht-degree: 0%
 
 ---
 
@@ -27,8 +27,10 @@ Ces notes de mise à jour **aperçu** sont fournies à titre indicatif pour que 
 
 ## Nouvelles fonctionnalités à venir {#what-is-new}
 
-* À déterminer
+* Les liens Dynamic Media sont désormais pris en charge.
 
 ## Améliorations à venir {#other-improvements}
 
-* À déterminer
+* Correction d’un problème lié à des URL incorrectes pour les vidéos.
+* La création de plusieurs composants portant le même nom ne renvoie plus de 409.
+* La zone de travail découplée conserve désormais les mises à jour ultérieures d’un champ dans le conteneur.
