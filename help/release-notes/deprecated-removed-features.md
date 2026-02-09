@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 90b1730522494cda0e777ecc0171703c2b2eff5b
+source-git-commit: 5b049c6502cddf7009cf5c81b033e290216eb847
 workflow-type: tm+mt
-source-wordcount: '3697'
+source-wordcount: '3695'
 ht-degree: 85%
 
 ---
@@ -34,7 +34,7 @@ Pendant la période d’obsolescence, Adobe rappelle à ses clientes et clients 
 >
 > * **À compter du 26 janvier 2026** : les e-mails de notification du Centre d’actions sont envoyés **chaque semaine par environnement** comme rappel pour supprimer l’utilisation de ces API.
 > * **26 février 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API seront **mis en pause** pendant l’étape **Qualité du code**. Un responsable de déploiement, un chef de projet ou un propriétaire d’entreprise peut contourner le problème pour autoriser le pipeline à continuer.
-> * **26 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **&#x200B;**&#x200B;pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
+> * **26 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **** pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
 > * **30 avril 2026** : les environnements qui utilisent toujours ces API peuvent **ne plus recevoir de mises à jour critiques de versions d’Adobe**.
 >
 > Pour empêcher les blocs de déploiement, supprimez l’utilisation de l’API avant le 26 mars 2026.
@@ -61,6 +61,7 @@ La fonctionnalité du tableau ci-dessous a été annoncée comme obsolète, mais
 | [!DNL Foundation] | Les intégrations qui utilisent des informations d’identification générées à partir des projets Adobe Developer Console perdent progressivement la prise en charge des informations d’identification du compte de service (JWT). Depuis le 1er mai 2024, les nouvelles informations d’identification du compte de service (JWT) ne peuvent plus être créées dans Adobe Developer Console. Les informations d’identification de compte de service (JWT) existantes restent utilisables pour les intégrations configurées jusqu’au 1er janvier 2025, après quoi elles cesseront de fonctionner, ce qui nécessitera que les clientes et clients et clientes migrent vers les informations d’identification OAuth de serveur à serveur. [En savoir plus](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migrez](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview) vers les informations d’identification OAuth serveur à serveur. |
 | [!DNL Foundation] | Workflow de publication d’arborescence de contenu et étape de workflow de publication d’arborescence de contenu associée, qui a été utilisée pour les réplications de hiérarchies de contenu. | Utilisez l’[étape de workflow d’activation d’arborescence](/help/operations/replication.md#tree-activation), qui est plus performante. |
 | [!DNL Foundation] | Utilisation de YUI pour compresser/réduire les bibliothèques clientes JavaScript. Adobe ne prévoit pas de mettre à jour la bibliothèque YUI. | Adobe recommande aux clientes et clients de passer à Google Closure Compiler (GCC) pour leur implémentation. |
+| [!DNL Foundation] | Prise en charge de com.adobe.granite.oauth.server | Intégration Adobe IMS |
 
 ## Fonctionnalité supprimée {#removed-features}
 
@@ -76,7 +77,6 @@ Cette section répertorie les fonctionnalités qui ont été supprimées.
 | [!DNL Foundation] | Prise en charge des sources de données Apache Sling (offre spéciale OSGi org.apache.sling.datasource) | S/O | Supprimé |
 | [!DNL Foundation] | Prise en charge des modèles de script JST (lot OSGi org.apache.sling.scripting.jst) | S/O | Supprimé |
 | [!DNL Foundation] | Prise en charge d’Apache Felix Http Whiteboard | OSGi Http Whiteboard | Mars 2022 |
-| [!DNL Foundation] | Prise en charge de com.adobe.granite.oauth.server | Intégration Adobe IMS | Mars 2023 |
 | [!DNL Foundation] | Prise en charge de la fonctionnalité org.apache.sling.serviceusermapping pour [obtenir l’ID d’utilisateur ou d’utilisatrice du service](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | S/O | 30/08/24 |
 | [!DNL Foundation] | L’exécution de Java 11 est obsolète et Adobe l’a remplacée par l’exécution de Java 21. Cependant, un code créé avec Java 11 reste acceptable (Java 17 et 21 sont les autres options). | L’exécution de Java 21 est appliquée. Pour garantir la compatibilité, il est essentiel de mettre à jour les versions de bibliothèque comme indiqué dans la section [Exigences d’exécution](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements). | 5/29/25 mars |
 
@@ -89,7 +89,7 @@ Les API du tableau ci-dessous (cliquez pour développer) ont été annoncées c
 >
 > * **À compter du 26 janvier 2026** : les e-mails de notification du Centre d’actions sont envoyés **chaque semaine par environnement** comme rappel pour supprimer l’utilisation de ces API.
 > * **26 février 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API seront **mis en pause** pendant l’étape **Qualité du code**. Un responsable de déploiement, un chef de projet ou un propriétaire d’entreprise peut contourner le problème pour autoriser le pipeline à continuer.
-> * **26 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **&#x200B;**&#x200B;pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
+> * **26 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **** pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
 > * **30 avril 2026** : les environnements qui utilisent toujours ces API peuvent **ne plus recevoir de mises à jour critiques de versions d’Adobe**.
 >
 > Pour empêcher les blocs de déploiement, supprimez l’utilisation de l’API avant le 26 mars 2026.
