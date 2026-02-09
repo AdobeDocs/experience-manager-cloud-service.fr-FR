@@ -4,10 +4,10 @@ description: Découvrez comment faciliter la communication entre un serveur tier
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 886c87b2408776e6ea877d835c81e574e5000acd
 workflow-type: tm+mt
-source-wordcount: '2112'
-ht-degree: 94%
+source-wordcount: '2229'
+ht-degree: 88%
 
 ---
 
@@ -21,11 +21,11 @@ Le flux de serveur à serveur est décrit ci-dessous, ainsi qu’un flux simplif
 
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=fr#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
 
 ## Flux de serveur à serveur {#the-server-to-server-flow}
 
-Les personnes utilisatrices disposant d’un rôle d’administration d’organisation IMS et qui sont membres du profil produit d’utilisation ou d’administration AEM sur l’instance de création AEM peuvent générer un ensemble d’informations d’identification provenant d’AEM as a Cloud Service. Chaque information d’identification est une payload JSON qui comprend un certificat (la clé publique), une clé privée et un compte technique constitué d’un `clientId` et d’un `clientSecret`. Ces informations d’identification peuvent ensuite être récupérées par une personne disposant du rôle d’administration de l’environnement AEM as a Cloud Service. Elles doivent être installées sur un serveur non AEM et traitées avec précaution comme une clé secrète. Ce fichier de format JSON contient toutes les données requises pour l’intégration à une API AEM as a Cloud Service. Les données sont utilisées pour créer un jeton JWT signé, qui est échangé avec les services Identity Management (IMS) d’Adobe contre un jeton d’accès IMS. Ce jeton d’accès peut ensuite être utilisé comme jeton d’authentification du porteur pour adresser des requêtes à AEM as a Cloud Service. Par défaut, le certificat des informations d’identification expire après un an, mais celles-ci peuvent être actualisées si nécessaire. Voir [&#x200B; Actualiser les informations d’identification &#x200B;](#refresh-credentials).
+Les personnes utilisatrices disposant d’un rôle d’administration d’organisation IMS et qui sont membres du profil produit d’utilisation ou d’administration AEM sur l’instance de création AEM peuvent générer un ensemble d’informations d’identification provenant d’AEM as a Cloud Service. Chaque information d’identification est une payload JSON qui comprend un certificat (la clé publique), une clé privée et un compte technique constitué d’un `clientId` et d’un `clientSecret`. Ces informations d’identification peuvent ensuite être récupérées par une personne disposant du rôle d’administration de l’environnement AEM as a Cloud Service. Elles doivent être installées sur un serveur non AEM et traitées avec précaution comme une clé secrète. Ce fichier de format JSON contient toutes les données requises pour l’intégration à une API AEM as a Cloud Service. Les données sont utilisées pour créer un jeton JWT signé, qui est échangé avec les services Identity Management (IMS) d’Adobe contre un jeton d’accès IMS. Ce jeton d’accès peut ensuite être utilisé comme jeton d’authentification du porteur pour adresser des requêtes à AEM as a Cloud Service. Par défaut, le certificat des informations d’identification expire après un an, mais celles-ci peuvent être actualisées si nécessaire. Voir [ Actualiser les informations d’identification ](#refresh-credentials).
 
 Le flux de serveur à serveur comprend les étapes suivantes :
 
@@ -71,7 +71,7 @@ L’application qui appelle AEM doit pouvoir accéder aux informations d’ident
 
 Utilisez les informations d’identification pour créer un jeton JWT lors d’un appel au service IMS d’Adobe afin de récupérer un jeton d’accès valide pendant 24 heures.
 
-Les informations d’identification de service AEM CS peuvent être échangées contre un jeton d’accès à l’aide d’exemples de code conçus à cet effet. L’exemple de code est disponible à partir du référentiel GitHub public d’Adobe [&#128279;](https://github.com/adobe/aemcs-api-client-lib), qui contient des exemples de code que vous pouvez copier et adapter à vos propres projets. Notez que ce référentiel contient un exemple de code à titre de référence et n’est pas conservé en tant que dépendance de bibliothèque prête pour la production.
+Les informations d’identification de service AEM CS peuvent être échangées contre un jeton d’accès à l’aide d’exemples de code conçus à cet effet. L’exemple de code est disponible à partir du référentiel GitHub public d’Adobe [](https://github.com/adobe/aemcs-api-client-lib), qui contient des exemples de code que vous pouvez copier et adapter à vos propres projets. Notez que ce référentiel contient un exemple de code à titre de référence et n’est pas conservé en tant que dépendance de bibliothèque prête pour la production.
 
 ```
 /*jshint node:true */
@@ -224,7 +224,6 @@ Pour obtenir cette extension d’actualisation, procédez comme suit :
 
 * Une fois que vous avez appuyé sur le bouton, un ensemble d’informations d’identification avec un nouveau certificat est généré. Installez les nouvelles informations d’identification sur votre serveur hors AEM et assurez-vous que la connectivité est correcte, sans supprimer les anciennes informations d’identification.
 * Assurez-vous que les nouvelles informations d’identification sont utilisées à la place des anciennes lors de la génération du jeton d’accès.
-* Vous pouvez éventuellement révoquer (puis supprimer) le certificat précédent afin qu’il ne puisse plus être utilisé pour s’authentifier avec AEM as a Cloud Service.
 
 ## Révocation des informations d’identification {#credentials-revocation}
 
@@ -252,3 +251,15 @@ Si la clé privée est compromise, vous devez créer des informations d’identi
    ![Confirmation de révocation du certificat](/help/implementing/developing/introduction/assets/s2s-revokecertificateconfirmation.png)
 
 1. Pour finir, supprimez le certificat compromis.
+
+### Remarque sur la révocation des certificats individuels {#note-on-recovacting-individual-certificates}
+
+Pour l’établissement de liaison JWT (utilisé pour récupérer un jeton du porteur), il suffit de que :
+
+1. Vous disposez de la clé privée
+1. Un ou plusieurs certificats actifs sont présents sous la clé privée correspondante dans le Developer Console
+1. Lors de la récupération du jeton (liaison JWT), IMS vérifie que la signature JWT correspond à tout certificat lié et actif (non expiré) enregistré dans notre système, que vous pouvez voir dans la console.
+
+L’ajout d’un nouveau certificat sous un PK peut donner l’impression que les certificats révoqués sont toujours utilisables. En effet, tous les certificats sous un PK sont équivalents. Si l’un d’eux est actif, tous sont considérés comme actifs.
+
+Si vous considérez qu’il s’agit d’un problème de sécurité, vous devez créer une clé privée distincte et révoquer tous les certificats de l’ancienne clé privée.
