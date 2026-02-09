@@ -92,7 +92,7 @@ L’interface `com.adobe.granite.auth.oauth.provider` peut être implémentée a
 
 **Condition préalable requise :**
 
-En règle générale, il est recommandé de toujours se fier à l’idP (fournisseur d’identité) comme point unique de vérité lors du stockage des données spécifiques à l’utilisateur. Si les informations utilisateur supplémentaires sont stockées dans le référentiel local, qui ne fait pas partie de l’idP, activez la [synchronisation des données](#data-synchronization-data-synchronization) en envoyant une demande au service clientèle indiquant le programme et les environnements appropriés. Outre la [synchronisation des données](#data-synchronization-data-synchronization), dans le cas du fournisseur d’authentification SAML, assurez-vous que l’option [appartenance à un groupe dynamique](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) est activée.
+En règle générale, il est recommandé de toujours se fier à l’idP (fournisseur d’identité) comme point unique de vérité lors du stockage des données spécifiques à l’utilisateur. Si les informations utilisateur supplémentaires sont stockées dans le référentiel local, qui ne fait pas partie de l’idP, activez la [synchronisation des données](#data-synchronization-data-synchronization) en envoyant une demande au service clientèle indiquant le programme et les environnements appropriés. Outre la [synchronisation des données](#data-synchronization-data-synchronization), dans le cas du fournisseur d’authentification SAML, assurez-vous que l’option [appartenance à un groupe dynamique](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) est activée.
 
 ### Sessions réactives et jetons encapsulés {#sticky-sessions-and-encapsulated-tokens}
 
@@ -109,7 +109,7 @@ Il existe différentes approches pour conserver les données, selon la nature de
 Les informations de profil utilisateur peuvent être écrites et lues de deux manières :
 
 * Utilisation côté serveur avec l’interface `com.adobe.granite.security.user` UserPropertiesManager, qui place les données sous le nœud de l’utilisateur dans `/home/users`. Assurez-vous que les pages uniques par utilisateur ne soient pas mises en cache.
-* Utilisation côté client avec ContextHub, comme décrit dans [la documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html#personalization).
+* Utilisation côté client avec ContextHub, comme décrit dans [la documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html?lang=fr#personalization).
 
 **Condition préalable requise :**
 
@@ -129,7 +129,7 @@ une demande au service clientèle indiquant le programme et les environnements a
 
 ## Autorisations (groupes d’utilisateurs fermés) {#permissions-closed-user-groups}
 
-Les politiques d’accès de niveau publication, également appelées groupes d’utilisateurs fermés, sont définies dans l’auteur AEM. Voir [Création d’un groupe d’utilisateurs fermé](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html#applying-your-closed-user-group-to-content-pages). Pour limiter certaines sections ou pages d’un site web à certains utilisateurs ou certaines utilisatrices, appliquez les CUG selon les besoins à l’aide de l’instance de création AEM, comme décrit ici, et dupliquez-les au niveau Publication.
+Les politiques d’accès de niveau publication, également appelées groupes d’utilisateurs fermés, sont définies dans l’auteur AEM. Voir [Création d’un groupe d’utilisateurs fermé](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=fr#applying-your-closed-user-group-to-content-pages). Pour limiter certaines sections ou pages d’un site web à certains utilisateurs ou certaines utilisatrices, appliquez les CUG selon les besoins à l’aide de l’instance de création AEM, comme décrit ici, et dupliquez-les au niveau Publication.
 
 * Si les utilisateurs se connectent en s’authentifiant auprès d’un fournisseur d’identités (IdP) à l’aide de SAML, le gestionnaire d’authentification identifie les appartenances aux groupes (qui doivent correspondre aux CUG pour le niveau Publication) et maintient l’association entre l’utilisateur et le groupe par le biais d’un enregistrement de référentiel.
 * Si la connexion est établie sans intégration IdP, le code personnalisé peut appliquer les mêmes relations de structure de référentiel.
