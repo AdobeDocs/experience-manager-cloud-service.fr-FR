@@ -4,7 +4,7 @@ description: Guide technique pour la migration des utilisateurs et des groupes l
 solution: Experience Manager Sites
 feature: Security
 role: Developer, Admin
-source-git-commit: bb4b60523f60b1285c5f2fd2e49f6cc8cff24324
+source-git-commit: 1f8bd9eea249e0b2242f3fbe1490b3d51052f546
 workflow-type: tm+mt
 source-wordcount: '2232'
 ht-degree: 1%
@@ -576,14 +576,14 @@ curl -X POST "http://localhost:4503/bin/migration/step3?groupPath=/home/groups/c
 
 ### Liste de contrôle préalable à la migration {#pre-migration-checklist}
 
-* [ ] **Configurer l’utilisateur du service** : créez et configurez l’utilisateur du service (par exemple, `group-provisioner`) avec les autorisations appropriées
-* [ ] **Vérifier la configuration ExternalPrincipal** : Assurez-vous que l’utilisateur du service est configuré pour contourner la protection sur `rep:externalId` et `rep:externalPrincipalNames`
-* [ ] **Tester les autorisations utilisateur du service** : vérifiez que l’utilisateur du service peut définir des propriétés d’identité externes en cours de développement
-* [ ] Identifier tout le code personnalisé qui crée des utilisateurs ou des groupes
-* [ ] Vérifier et mettre à jour le code personnalisé pour utiliser le modèle d’identité externe
-* [ ] Tester le code mis à jour dans l’environnement de développement
-* [ ] Inventaire de tous les utilisateurs et groupes locaux existants à migrer
-* [ ] Test du processus de migration dans les environnements inférieurs
+* **Configurer l’utilisateur du service** : créez et configurez l’utilisateur du service (par exemple, `group-provisioner`) avec les autorisations appropriées
+* **Vérifier la configuration ExternalPrincipal** : Assurez-vous que l’utilisateur du service est configuré pour contourner la protection sur `rep:externalId` et `rep:externalPrincipalNames`
+* **Tester les autorisations d’utilisateur de service** : vérifiez que l’utilisateur de service peut définir des propriétés d’identité externes dans le développement
+* Identifier tout le code personnalisé qui crée des utilisateurs ou des groupes
+* Vérifier et mettre à jour le code personnalisé pour utiliser le modèle d’identité externe
+* Test du code mis à jour dans l’environnement de développement
+* Inventaire de tous les utilisateurs et groupes locaux existants à migrer
+* Test du processus de migration dans les environnements inférieurs
 
 ### Étapes d’exécution {#execution-steps}
 
@@ -773,12 +773,12 @@ Comme couche de sécurité supplémentaire, vous pouvez configurer des règles d
 
 Avant de déployer les servlets de migration vers la production :
 
-* [ ] Créer une intégration IMS dans AEM Developer Console
-* [ ] Configurer des servlets pour valider l’identifiant de compte technique
-* [ Flux d’authentification ] Test dans les environnements de développement/d’évaluation
-* [ ] Envisager des restrictions supplémentaires basées sur les adresses IP au niveau du réseau CDN
-* [ ] Planifier la désactivation ou la suppression des servlets de migration une fois la migration terminée
-* [ ] l’audit et consignez tous les accès aux points d’entrée de migration.
+* Création de l’intégration IMS dans AEM Developer Console
+* Configuration des servlets pour valider l’identifiant de compte technique
+* Test du flux d’authentification dans les environnements de développement/d’évaluation
+* Tenir compte des restrictions supplémentaires basées sur les adresses IP au niveau du réseau CDN
+* Planifiez la désactivation ou la suppression des servlets de migration une fois la migration terminée.
+* Contrôler et consigner tous les accès aux points d’entrée de migration
 
 >[!IMPORTANT]
 >
