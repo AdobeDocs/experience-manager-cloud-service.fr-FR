@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 64b6ce166baa892fcddd13c2e9c8b5e7e0053815
 workflow-type: tm+mt
-source-wordcount: '6649'
+source-wordcount: '6682'
 ht-degree: 95%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 95%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service (Composants de base) | Cet article |
 | AEM as a Cloud Service (Composants principaux) | [Cliquer ici](/help/forms/rule-editor-core-components.md) |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
 
 ## Vue d’ensemble {#overview}
 
@@ -530,7 +530,7 @@ Pour créer des règles :
 >
 >Vous pouvez également utiliser la règle Définir la valeur de pour calculer l’éligibilité de prêt dans la règle Lorsque que vous avez créée pour afficher ou masquer le champ Salaire du conjoint. La règle combinée résultante, lorsque l’état civil est Célibataire, s’affiche comme suit dans l’éditeur de règles.
 >
->De même, vous pouvez entrer une règle combinée pour contrôler la visibilité du champ Salaire de l’époux ou de l’épouse lorsque la valeur d&#39;état civil est Marié ou Mariée.
+>De même, vous pouvez créer une règle combinée pour contrôler la visibilité du champ Salaire de l’époux ou de l’épouse et calculer l’éligibilité au prêt lorsque la valeur d’état civil est Marié ou Mariée.
 
 ![write-rules-visual-editor-18](assets/write-rules-visual-editor-18.png)
 
@@ -538,7 +538,7 @@ Pour créer des règles :
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -556,6 +556,10 @@ While writing JavaScript code in the rule editor, the following visual cues help
 -->
 
 #### Fonctions personnalisées dans l’éditeur de règles {#custom-functions}
+
+>[!NOTE]
+>
+> Les fonctions personnalisées doivent être compatibles avec ECMAScript 5 (ES5). Foundation Forms prend uniquement en charge ES5. L’utilisation de versions ECMAScript plus récentes (ES6 et ultérieures) n’est pas prise en charge et peut entraîner des erreurs ou un comportement inattendu.
 
 Outre les fonctionnalités prêtes à l’emploi, comme *Somme de*, qui sont répertoriées sous Fonctions, vous pouvez créer des fonctions personnalisées dont vous avez besoin fréquemment. Assurez-vous de la présence de la balise `jsdoc` au-dessus de la fonction que vous créez.
 
@@ -765,7 +769,7 @@ Vous pouvez modifier l’ordre d’une règle en appuyant sur ![sort-rules](asse
 
 * **Supprimer** : pour supprimer une règle, sélectionnez-la puis choisissez **[!UICONTROL Supprimer]**.
 
-* **Activer/désactiver** : lorsque vous devez suspendre temporairement l’utilisation d’une règle, vous pouvez sélectionner une ou plusieurs règles et appuyer sur **[!UICONTROL Désactiver]** dans la barre d’outils Actions pour les désactiver. Si une règle est désactivée, elle ne s’exécute pas lors de l’exécution. Pour activer une règle désactivée, vous pouvez la sélectionner puis choisir Activer dans la barre d’outils Actions. La colonne de statut de la règle indique si la règle est activée ou désactivée.
+* **Activer/désactiver** : lorsque vous devez suspendre temporairement l’utilisation d’une règle, vous pouvez sélectionner une ou plusieurs règles et appuyer sur **[!UICONTROL Désactiver]** dans la barre d’outils Actions pour les désactiver. Si une règle est désactivée, elle ne s’exécute pas lors de l’exécution. Pour activer une règle désactivée, vous pouvez la sélectionner puis choisir Activer dans la barre d’outils Actions. La colonne Statut de la règle indique si la règle est activée ou désactivée.
 
 ![Désactiver la règle](assets/disablerule.png)
 
