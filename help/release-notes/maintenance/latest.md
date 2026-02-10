@@ -4,10 +4,10 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: f01a98604e045c48ab7167122aee3b2468db6d52
+source-git-commit: 18f270e92bcf41b45946491dbbbde306c2352416
 workflow-type: tm+mt
-source-wordcount: '988'
-ht-degree: 24%
+source-wordcount: '999'
+ht-degree: 23%
 
 ---
 
@@ -95,7 +95,7 @@ Pour plus d’informations sur les fonctionnalités nouvelles et améliorées, a
 
 ### Problèmes connus {#known-issues-24288}
 
-Aucun.
+* SITES-40408 : le point d’entrée GraphQL renvoie la valeur 404 en raison des règles de réécriture du Dispatcher personnalisé.
 
 ### Fonctionnalités et API obsolètes {#deprecated-24288}
 
