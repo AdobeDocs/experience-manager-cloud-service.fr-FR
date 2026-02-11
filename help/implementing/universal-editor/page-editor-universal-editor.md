@@ -4,10 +4,10 @@ description: L’éditeur de page continue d’être pris en charge par Adobe, m
 feature: Developing
 role: Admin, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 1a04bebf073ac10100dede9b5e9f835665588cf3
 workflow-type: tm+mt
-source-wordcount: '1067'
-ht-degree: 100%
+source-wordcount: '1085'
+ht-degree: 98%
 
 ---
 
@@ -74,10 +74,11 @@ L’écart de fonctionnalités entre les deux éditeurs se réduisant constammen
 | Simulation d’appareil | [!BADGE Disponible]{type=Positive} | [Les appareils configurés peuvent être simulés](/help/sites-cloud/administering/responsive-layout.md) mais l’utilisateur ou l’utilisatrice ne peut pas saisir manuellement d’autres dimensions d’écran à simuler. | [!BADGE Disponible]{type=Positive} | [Il est possible de saisir manuellement toutes les dimensions d’écran à simuler](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator) mais les points d’arrêt par défaut ne peuvent pas être configurés. |
 | [Verrouillage de page](/help/sites-cloud/authoring/sites-console/managing-pages.md) | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} | Respecte le statut de verrouillage défini dans la console Sites avec l’extension disponible pour verrouiller/déverrouiller des pages à partir de l’éditeur. |
 | [Propriétés de la page](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} | Disponible auprès de l’administrateur ou l’administratrice du site, avec l’extension pour accéder également aux propriétés des pages à partir de l’éditeur. |
-| Propriétés des champs multiples | [!BADGE Disponible]{type=Positive} |  | [!BADGE Non disponible]{type=Negative} | Prévu |
+| Propriétés des champs multiples | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} |  |
 | [DAM à distance](/help/assets/dynamic-media-open-apis-overview.md) | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} |  |
 | [Contrôle de version de la page](/help/sites-cloud/authoring/sites-console/page-versions.md) | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} |  |
-| [Distorsion du temps](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) et [Affichage des différences](/help/sites-cloud/authoring/sites-console/page-diff.md) | [!BADGE Disponible]{type=Positive} |  | [!BADGE Non disponible]{type=Negative} | Prévu |
+| [Diff View](/help/sites-cloud/authoring/sites-console/page-diff.md) | [!BADGE Disponible]{type=Positive} |  | [!BADGE Partiellement disponible]{type=Caution} | Disponible pour les cas d’utilisation de Edge Delivery Services, mais pas en mode découplé |
+| [TimeWarp](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) | [!BADGE Disponible]{type=Positive} |  | [!BADGE Non disponible]{type=Negative} | Prévu, versions toujours disponibles dans la console Sites |
 | Afficher en administrateur ou administratrice | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} | Disponible en tant qu’extension pour les pages |
 | Afficher le statut de la page | [!BADGE Disponible]{type=Positive} |  | [!BADGE Non disponible]{type=Negative} | Disponible dans la console Sites |
 | Extensibilité | [!BADGE Disponible]{type=Positive} | En tant que recouvrements AEM | [!BADGE Disponible]{type=Positive} | En tant que points d’extension clairement définis utilisant App Builder et très peu de connaissances spécifiques à AEM. |
