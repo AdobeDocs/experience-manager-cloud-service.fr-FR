@@ -4,9 +4,9 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 18f270e92bcf41b45946491dbbbde306c2352416
+source-git-commit: e58e1355b923e1da447e3dbcfd0a81086aee3e66
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '1018'
 ht-degree: 23%
 
 ---
@@ -40,7 +40,7 @@ L’activation des fonctionnalités de la version 2026.2.0 fournit l’ensemble
 * GRANITE-62763 : met à jour la liste des exceptions d’obsolescence de Guava en fonction de l’outil rotatif ASSETS.
 * GRANITE-62771 : échec des builds de démarrage rapide lorsque de nouvelles dépendances Commons-Lang obsolètes sont introduites.
 * GRANITE-62987 : mettez à jour la console web Felix vers la version 5.0.18.
-* GRANITE-63339 : amélioration du mécanisme de bail pour l’objet Blob Azure Migration-State.
+* GRANITE-63339 : amélioration du mécanisme d’ouverture pour l’objet Blob d’état de migration Azure.
 * GRANITE-63343 : ajoutez la prise en charge de la dernière version du lot d’API Sling dans workflow.core.
 * GRANITE-63799 : version groupée d’authentification OIDC par lot.
 * GRANITE-63821 : mise à jour de la version Quickstart vers filevault fixant JCRVLT-831/JCRVLT-839.
@@ -90,6 +90,10 @@ L’activation des fonctionnalités de la version 2026.2.0 fournit l’ensemble
 * GUIDES-36641 : lors de la génération de la sortie AEM Sites, les titres de mappage contenant des mots-clés et des titres de rubrique avec `<ph>` élément ne sont pas inclus dans la sortie publiée.
 * GUIDES-37837 : lors de la tentative d’enregistrement d’une rubrique ou d’un mappage, l’opération peut échouer par intermittence avec une erreur Échec d’enregistrement de fichier, en particulier lors de tâches de traitement intensif des ressources ou de workflows de traduction exécutés en arrière-plan.
 * GUIDES-27774 : le rapport Liste interrompue inclut incorrectement des liens externes, des `keyrefs` valides et des mots-clés qui sont correctement résolus dans la portée du mappage actuel.
+
+>[!NOTE]
+>
+> AEM Guides doit tenir compte d’un changement majeur : [Amélioration de la gestion des fichiers en lecture seule](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2026-releases/2601-release/whats-new-2026-01-0#improved-handling-for-read-only-files).
 
 Pour plus d’informations sur les fonctionnalités nouvelles et améliorées, ainsi que sur les problèmes résolus dans la version, consultez la [Feuille de route de publication d’Experience Manager Guides](https://experienceleague.adobe.com/fr/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
