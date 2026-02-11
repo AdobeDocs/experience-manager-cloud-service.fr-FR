@@ -4,9 +4,9 @@ description: Découvrez comment transférer des journaux à des fournisseurs de 
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Developer
-source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+source-git-commit: 41605c0feb5b8cf651ecb2971a05fde12bcb86d8
 workflow-type: tm+mt
-source-wordcount: '2478'
+source-wordcount: '2482'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Le transfert de journal est désormais configuré en libre-service, différent de la méthode héritée qui nécessitait l’envoi d’un ticket d’assistance pour Adobe. Pour plus d&#39;informations, consultez la section [&#x200B; Migration &#x200B;](#legacy-migration) si le transfert du journal a été configuré par Adobe.
+>Le transfert de journal est désormais configuré en libre-service, différent de la méthode héritée qui nécessitait l’envoi d’un ticket d’assistance pour Adobe. Pour plus d&#39;informations, consultez la section [ Migration ](#legacy-migration) si le transfert du journal a été configuré par Adobe.
 
 Les clients disposant d’une licence auprès d’un fournisseur de journalisation ou qui hébergent un produit de journalisation peuvent transférer les journaux AEM (y compris Apache/Dispatcher) et les journaux CDN vers la destination de journalisation associée. AEM as a Cloud Service prend en charge les destinations de journalisation suivantes :
 
@@ -34,7 +34,7 @@ Les clients disposant d’une licence auprès d’un fournisseur de journalisati
       <td style="background-color: #ffb3b3;">Futur</td>
     </tr>
     <tr>
-      <td>Stockage Azure Blob</td>
+      <td>Stockage d’objets blob Azure</td>
       <td>Oui</td>
       <td>Oui</td>
       <td>Oui</td>
@@ -120,7 +120,7 @@ L’organisation de cet article est la suivante :
          index: "AEMaaCS"
    ```
 
-1. Placez le fichier quelque part sous un dossier de niveau supérieur nommé *config* ou similaire, comme décrit dans la section [&#x200B; Utilisation des pipelines de configuration](/help/operations/config-pipeline.md#folder-structure).
+1. Placez le fichier quelque part sous un dossier de niveau supérieur nommé *config* ou similaire, comme décrit dans la section [ Utilisation des pipelines de configuration](/help/operations/config-pipeline.md#folder-structure).
 
 1. Pour les types d’environnement autres que le RDE (qui utilise l’outil de ligne de commande), créez un pipeline de configuration de déploiement ciblé dans Cloud Manager, comme indiqué dans [cette section](/help/operations/config-pipeline.md#creating-and-managing) ; notez que les pipelines de pile complète et de niveau web ne déploient pas le fichier de configuration.
 
@@ -203,7 +203,7 @@ Utilisez le tableau ci-dessous pour connaître les exigences relatives à la con
 >[!NOTE]
 >Le fait que vos journaux s’affichent à partir d’une seule adresse IP dépend de la configuration de mise en réseau avancée que vous avez choisie.  Une sortie dédiée doit être utilisée pour faciliter cette opération.
 >
-> La configuration réseau avancée est un [&#x200B; processus en deux étapes](/help/security/configuring-advanced-networking.md#configuring-and-enabling-advanced-networking-configuring-enabling) qui nécessite une activation au niveau du programme et de l’environnement.
+> La configuration réseau avancée est un [ processus en deux étapes](/help/security/configuring-advanced-networking.md#configuring-and-enabling-advanced-networking-configuring-enabling) qui nécessite une activation au niveau du programme et de l’environnement.
 
 Pour les journaux AEM (y compris Apache/Dispatcher), si vous avez configuré [Mise en réseau avancée](/help/security/configuring-advanced-networking.md), vous pouvez utiliser la propriété `aem.advancedNetworking` pour les transférer à partir d’une adresse IP sortante dédiée ou via un VPN.
 
@@ -224,7 +224,7 @@ data:
       advancedNetworking: true
 ```
 
-Pour les journaux CDN, vous pouvez placer les adresses IP sur la liste autorisée, comme décrit dans la section [Documentation Fastly - Liste publique d’adresses IP](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Si cette liste d’adresses IP partagées est trop volumineuse, pensez à envoyer le trafic vers un serveur https ou un Azure Blob Store (autre qu’Adobe) où une logique peut être écrite pour envoyer les journaux d’une adresse IP connue vers leur destination finale.
+Pour les journaux CDN, vous pouvez placer les adresses IP sur la liste autorisée, comme décrit dans la section [Documentation Fastly - Liste publique d’adresses IP](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Si cette liste d’adresses IP partagées est trop volumineuse, pensez à envoyer le trafic vers un serveur https ou un magasin d’objets blob Azure (autre qu’Adobe) où une logique peut être écrite pour envoyer les journaux d’une adresse IP connue vers leur destination finale.
 
 >[!NOTE]
 >
@@ -279,7 +279,7 @@ Consultez la [documentation de la politique de compartiment AWS](https://docs.aw
 >[!NOTE]
 >La prise en charge du journal CDN pour AWS S3 est prévue pour les années à venir. Veuillez envoyer un e-mail à [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour enregistrer vos intérêts.
 
-### Stockage Azure Blob {#azureblob}
+### Stockage d’objets blob Azure {#azureblob}
 
 ```yaml
 kind: "LogForwarding"
@@ -297,13 +297,13 @@ data:
 Un jeton SAS doit être utilisé pour l’authentification. Il doit être créé à partir de la page de signature d’accès partagé, plutôt que sur la page Jeton d’accès partagé , et doit être configuré avec les paramètres suivants :
 
 * Services autorisés : l’objet Blob doit être sélectionné.
-* Ressources autorisées : l’objet doit être sélectionné.
-* Autorisations autorisées : écriture, ajout, création doivent être sélectionnés.
+* Ressources autorisées : l’objet et le conteneur doivent être sélectionnés.
+* Les autorisations autorisées : lecture, écriture, ajout, liste, création doivent être sélectionnées.
 * Une date/heure de début et d’expiration valide.
 
 Voici une capture d’écran d’un exemple de configuration de jeton SAS :
 
-![&#x200B; Configuration du jeton SAS Azure Blob &#x200B;](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
+![Configuration du jeton SAS Azure Blob](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
 
 Si la diffusion des journaux a cessé après un fonctionnement correct, vérifiez si le jeton SAS que vous avez configuré est toujours valide, car il a peut-être expiré.
 
@@ -345,7 +345,7 @@ Les journaux AEM (y compris Apache/Dispatcher) s’affichent sous un dossier ave
 
 Sous chaque dossier, un seul fichier est créé et ajouté. Les clients sont chargés de traiter et de gérer ce fichier afin qu’il ne s’étende pas trop.
 
-Consultez les formats d’entrée de journal sous [&#x200B; Journalisation pour AEM as a Cloud Service &#x200B;](/help/implementing/developing/introduction/logging.md). Les entrées de journal incluent également les propriétés supplémentaires mentionnées dans la section [Formats d’entrée de journal](#log-formats) ci-dessous.
+Consultez les formats d’entrée de journal sous [ Journalisation pour AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md). Les entrées de journal incluent également les propriétés supplémentaires mentionnées dans la section [Formats d’entrée de journal](#log-formats) ci-dessous.
 
 ### Datadog {#datadog}
 
@@ -468,7 +468,7 @@ Le transfert du journal vers New Relic utilise l’API HTTPS New Relic pour l’
 >
 >La prise en charge du journal CDN pour l’API de journal New Relic est prévue pour l’avenir. Veuillez envoyer un e-mail à [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour enregistrer vos intérêts.
 >
->New Relic fournit des points d’entrée spécifiques à une région en fonction de l’emplacement où votre compte New Relic est configuré.  Pour plus d’informations, consultez la documentation de New Relic [&#128279;](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint).
+>New Relic fournit des points d’entrée spécifiques à une région en fonction de l’emplacement où votre compte New Relic est configuré.  Pour plus d’informations, consultez la documentation de New Relic [](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint).
 
 ### API du journal Dynatrace {#dynatrace-https}
 
