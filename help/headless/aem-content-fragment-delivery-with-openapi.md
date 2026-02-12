@@ -4,7 +4,7 @@ description: En savoir plus sur la diffusion de fragments de contenu AEM avec Op
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: de161d6707dcb8cedf032ee1f286d79e733be94d
+source-git-commit: 73bfeb19eebe104a772d1c420fe6471fea3e1225
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 2%
@@ -23,7 +23,7 @@ Dans Adobe Experience Manager (AEM) as a Cloud Service, l’OpenAPI AEM pour la 
 
 Cette API :
 
-* est le successeur de [&#x200B; Prise en charge des fragments de contenu dans l’API HTTP AEM Assets &#x200B;](/help/assets/content-fragments/assets-api-content-fragments.md)
+* est le successeur de [ Prise en charge des fragments de contenu dans l’API HTTP AEM Assets ](/help/assets/content-fragments/assets-api-content-fragments.md)
 
 * complète les [API ouvertes de fragments de contenu et de modèles de fragments de contenu](/help/headless/content-fragment-openapis.md), qui vous permettent de gérer les fragments de contenu et les modèles de fragment de contenu (CRUD)
 
