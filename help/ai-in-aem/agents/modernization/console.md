@@ -45,7 +45,7 @@ Les développeurs gardent le contrôle total sur les navires. Toutes les modific
 
 Après vous être connecté à la console à l’adresse [`aemcoder.adobe.io`,](https://aemcoder.adobe.io) vous accédez à l’écran d’accueil de la console.
 
-![Écran d’accueil de la console ](assets/console-home.png)
+![Écran d’accueil de la console &#x200B;](assets/console-home.png)
 
 ### Barre de menus {#menu-bar}
 
