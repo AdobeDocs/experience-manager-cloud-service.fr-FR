@@ -99,7 +99,7 @@ En savoir plus dans [Utilisation de MCP avec AEM Cloud Service](/help/ai-in-aem/
 
 Recherche optimisée par l&#39;IA offre une expérience de recherche intelligente et contextuelle qui va au-delà de la correspondance de mots-clés traditionnelle en comprenant la signification et l’intention derrière les requêtes des utilisateurs. Optimisé par l’IA et le machine learning, il fournit des résultats plus précis même lorsque les requêtes sont formulées différemment, contiennent des fautes d’orthographe, utilisent des synonymes ou sont envoyées dans différentes langues, ce qui permet aux utilisateurs et aux utilisatrices de trouver plus rapidement et avec moins d’efforts du contenu pertinent.
 
-Pour plus d’informations, voir Recherche optimisée par l&#39;IA dans la vue Assets [](/help/assets/search-assets-view.md#ai-search) et [vue Admin](/help/assets/search-assets.md#ai-search).
+Pour plus d’informations, voir Recherche optimisée par l&#39;IA dans la vue Assets [&#128279;](/help/assets/search-assets-view.md#ai-search) et [vue Admin](/help/assets/search-assets.md#ai-search).
 
 **Application de bureau version 3.0.1**
 
@@ -155,7 +155,7 @@ Les API obsolètes ciblant la suppression du 2/26/2026 ne doivent plus être uti
 
 * **À compter du 26 janvier 2026** : les e-mails de notification du Centre d’actions sont envoyés **chaque semaine par environnement** comme rappel pour supprimer l’utilisation de ces API.
 * **26 février 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API seront **mis en pause** pendant l’étape **Qualité du code**. Un responsable de déploiement, un chef de projet ou un propriétaire d’entreprise peut contourner le problème pour autoriser le pipeline à continuer.
-* **26 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **** pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
+* **26 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **&#x200B;**&#x200B;pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
 * **30 avril 2026** : les environnements qui utilisent toujours ces API peuvent **ne plus recevoir de mises à jour critiques de versions d’Adobe**.
 
 Pour plus d’informations, consultez l’[article sur l’obsolescence](/help/release-notes/deprecated-removed-features.md#aem-apis), mais pour plus de commodité, ces API sont répertoriées ci-dessous :
