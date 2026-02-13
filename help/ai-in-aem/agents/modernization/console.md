@@ -3,7 +3,8 @@ title: Console de modernisation de l’expérience
 description: Guide de référence de l’interface et des fonctionnalités de la console de modernisation de l’expérience
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: c2f258bfcfff8392af2863d874d4a4235f042193
+exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
+source-git-commit: 76c0f41acb5c2e4e0f0a292f8205b0b9de5cda81
 workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 0%
@@ -44,7 +45,7 @@ Les développeurs gardent le contrôle total sur les navires. Toutes les modific
 
 Après vous être connecté à la console à l’adresse [`aemcoder.adobe.io`,](https://aemcoder.adobe.io) vous accédez à l’écran d’accueil de la console.
 
-![Écran d’accueil de la console &#x200B;](assets/console-home.png)
+![Écran d’accueil de la console ](assets/console-home.png)
 
 ### Barre de menus {#menu-bar}
 
