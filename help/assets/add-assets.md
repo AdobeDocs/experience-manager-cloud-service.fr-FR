@@ -4,9 +4,9 @@ description: Ajoutez vos ressources numériques à [!DNL Adobe Experience Manage
 feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: d2dd076d93981b1d44f39adc5880220445494e71
 workflow-type: tm+mt
-source-wordcount: '3177'
+source-wordcount: '3189'
 ht-degree: 96%
 
 ---
@@ -29,7 +29,7 @@ Vous pouvez également choisir d’effectuer un traitement supplémentaire sur l
 |---------------------|----------------|-----------------|
 | [Interface utilisateur de la console de ressources](#upload-assets) | Chargement occasionnel, facilité de pression et déplacement, chargement à partir du Finder. À ne pas utiliser pour charger de nombreuses ressources. | Tous les utilisateurs |
 | [API de chargement](#upload-using-apis) | Pour les décisions dynamiques pendant le chargement. | Développeur |
-| Application de bureau [[!DNL Experience Manager] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr) | Ingestion de ressources en faible volume, mais pas pour la migration. | Administrateur, spécialiste marketing |
+| Application de bureau [[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr) | Ingestion de ressources en faible volume, mais pas pour la migration. | Administrateur, spécialiste marketing |
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) | Utile lorsque les créatifs et les spécialistes marketing travaillent sur des ressources à partir des applications de bureau [!DNL Creative Cloud] prises en charge. | Créatif, spécialiste marketing |
 | [Outil d’ingestion en masse de ressources](#asset-bulk-ingestor) | Recommandé pour les migrations à grande échelle et les ingestions en masse occasionnelles. Uniquement pour les magasins de données pris en charge. | Administrateur, développeur |
 
@@ -127,8 +127,13 @@ Pour conserver le duplicata de ressource dans [!DNL Assets], cliquez sur **[!UIC
 
 Pour prendre en compte les conventions de dénomination de fichiers en vigueur dans votre entreprise, la boîte de dialogue [!UICONTROL Charger des ressources] vous permet de spécifier des noms longs pour les fichiers chargés. Les caractères suivants ne sont pas pris en charge (ils sont répertoriés ici et séparés par des espaces) :
 
-* Caractères non valides pour le nom de dossier de la ressource : `* / : [ \\ ] | # % { } ? &`
+* Caractères non valides pour le nom de la ressource : `* / : [ \\ ] | # % { } ? &` ou `;=` (un point-virgule suivi d’un signe égal)
 * Caractères non valides pour le nom de dossier de la ressource : `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+
+Exemples de noms de fichier non valides :
+
+* `JPG_JD_small file ~!)$@;(-_=+^',..jpg`
+* `JPG_JD_small file ~!)$@;=(-_+^',..jpg`
 
 ## Chargement massif de ressources {#bulk-upload}
 
@@ -141,14 +146,14 @@ L’outil d’ingestion en masse de ressources peut traiter efficacement de nomb
 Pour charger un plus grand nombre de fichiers, utilisez l’une des méthodes suivantes. Voir aussi les [cas d’utilisation et méthodes](#upload-methods-comparison)
 
 * [API de chargement de ressources](developer-reference-material-apis.md#asset-upload) : utilisez un script ou un outil de chargement personnalisé qui utilise les API pour ajouter un traitement supplémentaire des ressources (par exemple, traduire des métadonnées ou renommer des fichiers), si nécessaire.
-* Application de bureau [[!DNL Experience Manager] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr) : utile pour les professionnels de la création et les spécialistes marketing qui chargent des ressources depuis leur système de fichiers local. Utilisez-la pour charger des dossiers imbriqués disponibles en local.
+* Application de bureau [[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr) : utile pour les professionnels de la création et les spécialistes marketing qui chargent des ressources depuis leur système de fichiers local. Utilisez-la pour charger des dossiers imbriqués disponibles en local.
 * [Outil d’ingestion en masse](#asset-bulk-ingestor) : utilisez-le pour l’ingestion de grandes quantités de ressources, occasionnellement ou au départ, lors du déploiement de [!DNL Experience Manager].
 
 ### Outil d’importation en bloc de ressources {#asset-bulk-ingestor}
 
 Cet outil est fourni uniquement au groupe des administrateurs et administratrices pour l’ingestion à grande échelle de ressources à partir de magasins de données Azure ou S3. Consultez la vidéo présentant la configuration et l’ingestion.
 
->[!VIDEO](https://video.tv.adobe.com/v/341383/?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
 L’image suivante illustre les différentes étapes de l’ingestion de ressources dans Experience Manager à partir d’un magasin de données :
 
@@ -416,7 +421,7 @@ Les détails techniques du protocole et des API de chargement, ainsi que les lie
 
 >[!MORELIKETHIS]
 >
->* Application de bureau [[!DNL Adobe Experience Manager] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=fr)
+>* Application de bureau [[!DNL Adobe Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=fr)
 >* [À propos d’ [!DNL Adobe Asset Link]](https://www.adobe.com/fr/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] documentation](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html)
 >* [Référence technique pour le chargement de ressources](developer-reference-material-apis.md#asset-upload)
