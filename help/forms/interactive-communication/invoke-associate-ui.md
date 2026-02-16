@@ -4,15 +4,13 @@ description: Découvrez comment intégrer l’interface utilisateur d’AEM Form
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-hidefromtoc: true
-source-git-commit: b76f6dfe2462cec187d549234e9050f8ca9a8cdf
+exl-id: f946ccea-86d0-4086-8208-9583b8206244
+source-git-commit: 749ad181c7e9e59a0601e0eddd85b0bd0e761f08
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1074'
 ht-degree: 2%
 
 ---
-
 
 # Intégrer l’interface utilisateur associée à votre application
 
@@ -26,13 +24,13 @@ Avant d’intégrer l’interface utilisateur associée à votre application, v�
 
 - Communication interactive créée et publiée
 - Navigateur avec prise en charge des fenêtres contextuelles activée
-- Associer [les utilisateurs doivent faire partie du groupe forms-associates](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
-- Authentification configurée à l’aide de n’importe quel [mécanisme d’authentification pris en charge par AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/authentication/authentication) (par exemple, SAML 2.0, OAuth ou gestionnaires d’authentification personnalisés)
+- Associer [les utilisateurs doivent faire partie du groupe forms-associates](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
+- Authentification configurée à l’aide de n’importe quel [mécanisme d’authentification pris en charge par AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication) (par exemple, SAML 2.0, OAuth ou gestionnaires d’authentification personnalisés)
 
 >[!NOTE]
 >
 >- Cet article illustre la configuration de l’authentification à l’aide de SAML 2.0 avec [Microsoft Entra ID (Azure AD) comme fournisseur d’identité](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings).
->- Pour l’interface utilisateur associée, des configurations SAML supplémentaires sont requises en plus de la configuration standard expliquée dans l’article [&#x200B; Authentification SAML 2.0 &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/authentication/saml-2-0). Consultez la section [Configurations SAML supplémentaires pour l’interface utilisateur associée](#additional-saml-configurations-for-associate-ui) pour plus d’informations.
+>- Pour l’interface utilisateur associée, des configurations SAML supplémentaires sont requises en plus de la configuration standard expliquée dans l’article [ Authentification SAML 2.0 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0). Consultez la section [Configurations SAML supplémentaires pour l’interface utilisateur associée](#additional-saml-configurations-for-associate-ui) pour plus d’informations.
 
 ### Configurations SAML supplémentaires pour l’interface utilisateur associée
 
@@ -115,7 +113,11 @@ Cette section vous guide tout au long du lancement de l’interface utilisateur 
 
 Pour tester rapidement et comprendre le fonctionnement de l’intégration de l’interface utilisateur associée, utilisez l’exemple de page HTML suivant. Copiez ce code dans un fichier HTML et ouvrez-le dans votre navigateur.
 
-Cet exemple fournit une interface de formulaire simple où vous pouvez saisir les détails de votre communication interactive et lancer l’interface utilisateur associée en un seul clic.
+>[!NOTE]
+>
+> Cet exemple d’HTML nécessite un ID IC et un service de préremplissage. Vous pouvez le tester à l’aide de votre ID IC et de l’exemple de service de préremplissage « FdmTestData ».
+
+L’exemple d’HTML fournit une interface de formulaire simple où vous pouvez saisir les détails de votre communication interactive et lancer l’interface utilisateur associée en un seul clic.
 
 ```html
 <!DOCTYPE html>
@@ -438,21 +440,28 @@ Vous êtes maintenant prêt à lancer l’interface utilisateur associée à l�
 
 1. **Saisissez l’ID IC** : dans le champ **ID IC**, saisissez l’identifiant de votre communication interactive publiée. Il s’agit du seul champ obligatoire.
 
-2. **Configuration du service de préremplissage** (facultatif) : si vous souhaitez préremplir l’IC avec des données dynamiques, saisissez le nom du service de modèle de données de formulaire dans le champ **Service de préremplissage**. Par exemple, utilisez `FdmTestData` pour les données d’exemple ou `IC-FDM` pour les données de test.
+1. **Configurer le service de préremplissage** : si vous souhaitez préremplir l’IC avec des données dynamiques, saisissez le nom du service de modèle de données de formulaire dans le champ **Service de préremplissage**. Par exemple, utilisez `FdmTestData` pour les exemples de données.
 
-3. **Ajouter des paramètres de service** (facultatif) : dans le champ **Paramètres de service (JSON)**, saisissez un objet JSON avec les paramètres requis par votre service de préremplissage. Par exemple :
+   ![Exemple d’interface utilisateur HTML](/help/forms/assets/samplehtmlui.png)
+
+1. **Cliquez sur Launch Associate UI** : cliquez sur le bouton **Launch Associate UI**. Une nouvelle fenêtre de navigateur s’ouvre avec l’interface utilisateur associée, préchargée avec votre communication interactive.
+
+Saisissez les données pour que l’interface utilisateur associée apparaisse comme illustré ci-dessous :
+
+![Associer l’interface utilisateur](/help/forms/assets/associateui.png)
+
+>[!NOTE]
+>
+> Si la fenêtre ne s’ouvre pas, vérifiez que votre navigateur autorise les fenêtres pop-up pour ce site.
+
+
+<!--**Add Service Parameters**: In the **Service Parameters (JSON)** field, enter a JSON object with the parameters your prefill service requires. For example:
 
    ```json
    {"customerId": "101", "accountNumber": "ACC-98765"}
    ```
 
-4. **Définir les options de PDF** (facultatif) : dans le champ **Options (JSON)**, configurez les options de rendu telles que les paramètres régionaux, les pièces jointes ou les paramètres d’accessibilité.
-
-5. **Cliquez sur Launch Associate UI** : cliquez sur le bouton **Launch Associate UI**. Une nouvelle fenêtre de navigateur s’ouvre avec l’interface utilisateur associée, préchargée avec votre communication interactive.
-
->[!NOTE]
->
-> Si la fenêtre ne s’ouvre pas, vérifiez que votre navigateur autorise les fenêtres pop-up pour ce site.
+  **Set PDF Options** (optional): In the **Options (JSON)** field, configure rendering options such as locale, attachments, or accessibility settings.-->
 
 ## Résolution des problèmes
 
