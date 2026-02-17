@@ -5,10 +5,10 @@ role: User, Leader, Admin, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: 8819dc84887f79e047b4beffd18e03dee3ee45a3
 workflow-type: tm+mt
-source-wordcount: '2236'
-ht-degree: 85%
+source-wordcount: '2268'
+ht-degree: 83%
 
 ---
 
@@ -43,7 +43,7 @@ Une fois que la personne administratrice configure le formulaire de métadonnée
 
 ## Balises intelligentes {#smart-tags}
 
-[!DNL Experience Manager Assets] utilise l’intelligence artificielle fournie par l’[Adobe AI](https://business.adobe.com/ai/adobe-genai.html) pour appliquer automatiquement les balises pertinentes à toutes les ressources que vous avez chargées. Ces balises, judicieusement appelées balises intelligentes, augmentent la vitesse du contenu de vos projets en vous aidant à trouver rapidement les ressources appropriées. Les balises intelligentes sont un exemple de métadonnées qui ne sont pas contenues dans l’image.
+[!DNL Experience Manager Assets] utilise l’intelligence artificielle fournie par [Adobe AI](https://business.adobe.com/ai/adobe-genai.html) pour appliquer automatiquement les balises pertinentes à toutes les ressources que vous avez chargées. Ces balises, judicieusement appelées balises intelligentes, augmentent la vitesse du contenu de vos projets en vous aidant à trouver rapidement les ressources appropriées. Les balises intelligentes sont un exemple de métadonnées qui ne sont pas contenues dans l’image.
 
 Les balises intelligentes sont appliquées en temps quasi réel et sont générées en fonction du contenu de l’image. Lorsque vous chargez une ressource, l’interface utilisateur affiche [!UICONTROL Traitement] sur la miniature de la ressource pendant un certain temps. Une fois le traitement terminé, vous pouvez [afficher les métadonnées](#view-metadata) et les balises intelligentes.
 
@@ -100,7 +100,9 @@ Pour créer un formulaire de métadonnées, procédez comme suit :
 
    ![option de formulaires de métadonnées dans la barre latérale gauche](assets/metadata-form-new.png)
 
-   *Figure : interface de création de formulaire de métadonnées comprenant des options permettant d’ajouter des composants et une option pour prévisualiser le formulaire.*
+   Comprendre l’[interface utilisateur d’un formulaire de métadonnées](cascading-metadata-assets-view.md#build-metadata-forms).
+
+   <!--*Figure: Metadata form creation interface with options to add components and option to preview the form.*-->
 
 1. Pour chaque composant, indiquez un nom dans la section **[!UICONTROL Paramètres]** du rail de droite, ainsi qu’un mappage avec les propriétés prises en charge.
 1. Si vous le souhaitez, pour un composant, vous pouvez sélectionner **[!UICONTROL Obligatoire]** pour rendre le champ de métadonnées obligatoire et sélectionner **[!UICONTROL Lecture seule]** pour rendre le champ non modifiable dans la page [!UICONTROL Détails] de la ressource.
@@ -140,6 +142,9 @@ Vous trouverez ci-dessous un aperçu de chaque type de propriété et de leur mo
 | Balises | Ajoutez une balise à partir des valeurs stockées dans la gestion de la taxonomie (mappée sur xcm:tags). |
 | Mots-clés | Ajoutez des mots-clés de forme libre (mappés à dc:subject). |
 | Balises intelligentes | Ajoutez ce composant pour augmenter les capacités de recherche en ajoutant automatiquement des balises de métadonnées. |
+| Publication | Ajoute le statut de publication de la ressource. |
+| Lien | Il stocke une adresse web qui pointe vers une ressource en ligne, telle qu’une page web, une image ou une référence externe. |
+| Évaluation | Il ajoute une valeur catégorielle qui indique la qualité d’une ressource. |
 
 ### Attribuer un formulaire de métadonnées à un dossier {#assign-metadata-form-folder}
 
@@ -237,7 +242,7 @@ Pour modifier un formulaire de métadonnées, procédez comme suit :
 
 * Faites des commentaires sur la documentation en utilisant l’option [!UICONTROL Modifier cette page] ![modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![créer un problème GitHub](assets/do-not-localize/github-issue.png) disponible dans la barre latérale droite.
 
-* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr#support).
+* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&lang=fr#support).
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
