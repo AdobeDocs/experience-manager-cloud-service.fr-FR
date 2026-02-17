@@ -5,10 +5,10 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 2815d75cd2ec7df47e53ab5c648e2de026702074
+source-git-commit: 8d8e45126a27b9ad5fdbc2276f08c28e4240c830
 workflow-type: tm+mt
-source-wordcount: '2610'
-ht-degree: 62%
+source-wordcount: '2627'
+ht-degree: 58%
 
 ---
 
@@ -21,7 +21,7 @@ Les fragments de contenu contiennent du contenu structuré :
 * Ils sont basés sur un [modèle de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md), servant à prédéfinir une structure pour le fragment résultant.
 * La structure peut varier entre :
    * De base
-      * Par exemple, un seul champ de texte multilignes.
+      * Par exemple, un champ de texte multiligne unique.
       * Il peut être utilisé pour préparer du contenu simple à utiliser dans la création de pages.
    * Complexe
       * Combinaison de nombreux champs de divers types de données, y compris texte, nombre, booléen, données et temps.
@@ -103,7 +103,7 @@ Il assure la diffusion du contenu aux canaux autres que les pages web AEM class
 
 * des applications sur une seule page ;
 * des applications mobiles natives ;
-* d’autres canaux et points de contact externes à AEM.
+* autres canaux et points de contact externes à AEM
 
 La diffusion est effectuée au format JSON à l’aide de l’outil d’exportation JSON.
 
@@ -134,13 +134,13 @@ Les fragments de contenu sont :
 
 * Accessible à l’aide de l’[API AEM GraphQL](/help/headless/graphql-api/content-fragments.md).
 
-Les fragments de contenu sont une structure de contenu qui :
+Les fragments de contenu sont des structures de contenu qui :
 
 * Ne comportent pas de disposition ou de conception (certaines mises en forme de texte sont possibles en mode Texte enrichi).
 * Contiennent une ou plusieurs [parties constituantes](#constituent-parts-of-a-content-fragment).
 * [contiennent des images ou peuvent être connectés à celles-ci](#fragments-with-visual-assets) ;
-* Utilisé [contenu intermédiaire](#in-between-content-when-page-authoring-with-content-fragments) lorsqu’il est référencé sur une page.
-* Ils sont indépendants du mécanisme de diffusion (c’est-à-dire de la page, du canal).
+* Ils sont utilisés comme [contenu intermédiaire](#in-between-content-when-page-authoring-with-content-fragments) lorsqu’ils sont référencés sur une page.
+* Sont indépendants du mécanisme de diffusion (c’est-à-dire de la page ou du canal).
 
 ### Fragments avec des ressources visuelles {#fragments-with-visual-assets}
 
@@ -150,7 +150,7 @@ Les ressources peuvent être utilisées avec un fragment de contenu de plusieurs
 
 * **Insérer une ressource** dans un fragment (fragments de médias variés)
 
-   * Ils font partie du fragment (voir [&#x200B; Parties constituantes d’un fragment de contenu &#x200B;](#constituent-parts-of-a-content-fragment)).
+   * Ils font partie du fragment (voir [ Parties constituantes d’un fragment de contenu ](#constituent-parts-of-a-content-fragment)).
    * Définissent la position de la ressource.
    * Reportez-vous à la section [Insertion de ressources dans votre fragment](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) dans l’éditeur de fragments pour plus d’informations.
 
@@ -160,7 +160,7 @@ Les ressources peuvent être utilisées avec un fragment de contenu de plusieurs
 
 * **Contenu associé**
 
-   * Connecté à un fragment ; mais pas une partie fixe du fragment (voir [&#x200B; Parties constituantes d’un fragment de contenu &#x200B;](#constituent-parts-of-a-content-fragment)).
+   * Connecté à un fragment ; mais pas une partie fixe du fragment (voir [ Parties constituantes d’un fragment de contenu ](#constituent-parts-of-a-content-fragment)).
    * Dispose d’une certaine flexibilité pour le positionnement.
    * Facilement disponible pour utilisation (comme contenu intermédiaire) lors de l’utilisation du fragment sur une page.
 
@@ -198,7 +198,7 @@ Les ressources de fragment de contenu se composent des parties suivantes (direct
    * Peuvent être formatées lorsque le [fragment est utilisé/référencé sur une page](/help/sites-cloud/authoring/fragments/content-fragments.md).
    * Peuvent uniquement être ajoutées, supprimées ou déplacées dans un fragment à l’aide de l’éditeur de fragment. Ces actions ne peuvent pas être effectuées dans l’éditeur de page.
    * Peuvent uniquement être ajoutées, supprimées ou déplacées dans un fragment à l’aide du [Format Texte enrichi dans l’éditeur de fragments](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
-   * Peuvent uniquement être ajoutées aux éléments de texte multiligne (tout type de fragment).
+   * Ne peut être ajouté qu’aux éléments de texte multiligne (tout type de fragment).
    * Sont liées au texte précédent (paragraphe).
 
      >[!CAUTION]
@@ -246,7 +246,7 @@ Les ressources de fragment de contenu se composent des parties suivantes (direct
 
 * **Variations**
 
-   * Il s’agit de rendus de texte de fragment spécifiques à une fin éditoriale. Les variations peuvent être associées au canal, sans que cela soit obligatoire, et elles peuvent également servir à des modifications locales ad hoc.
+   * Rendus de texte de fragment spécifiques à un objectif éditorial. Ils peuvent être associés à un canal, mais cela n’est pas obligatoire. Il peut également s’agir de modifications locales ad hoc.
    * Ils sont créés en tant que copies de **Principal**, mais peuvent ensuite être modifiés selon les besoins. Il existe un chevauchement de contenu entre les variations elles-mêmes.
    * Peuvent être définies lors de la création de fragments.
    * Stockées dans le fragment, afin d’éviter l’éparpillement des copies de contenu.
@@ -270,22 +270,22 @@ Contenu intermédiaire :
 
 ### Conditions requises pour utiliser des fragments {#required-by-fragments}
 
-Pour créer des fragments de contenu, vous avez besoin des éléments suivants :
+Pour créer un fragment de contenu, vous avez besoin des éléments suivants :
 
-* **Modèles de contenu**
+* un **Modèle de fragment de contenu**
 
-   * Sont [activés à l’aide de l’explorateur de configurations](/help/assets/content-fragments/content-fragments-configuration-browser.md).
-   * Sont [créés à l’aide d’outils](/help/assets/content-fragments/content-fragments-models.md).
+   * Est activé [à l’aide de l’explorateur de configurations](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+   * est [créé à l’aide d’Outils](/help/assets/content-fragments/content-fragments-models.md).
    * Obligatoires pour [créer un fragment](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
    * Définissent la structure d’un fragment (titre, éléments de contenu et définitions de balise).
-   * Les définitions de modèles de contenu requièrent un titre et un élément de données ; tous les autres attributs sont facultatifs.
+   * La définition du modèle nécessite un titre et un élément de données ; tout le reste est facultatif.
    * Le modèle peut définir le contenu par défaut, le cas échéant.
-   * Les auteurs ne peuvent pas modifier la structure définie lors de la création du contenu d’un fragment.
+   * Les auteurs ne peuvent pas modifier la structure définie lors de la création de contenu de fragment ; ils peuvent toutefois ouvrir l’éditeur de modèles à partir de l’éditeur de fragments.
    * Les modifications apportées à un modèle après la création de fragments de contenu dépendants peuvent avoir un impact sur ces fragments de contenu.
 
 Pour utiliser vos fragments de contenu pour la création de pages, vous avez également besoin des éléments suivants :
 
-* **Composant Fragment de contenu**
+* le **composant de fragment de contenu**
 
    * Utilitaire de diffusion du fragment au format HTML ou JSON, ou les deux.
    * Obligatoire pour [référencer le fragment sur une page](/help/sites-cloud/authoring/fragments/content-fragments.md).
@@ -366,9 +366,12 @@ Utilisez les champs de texte enrichi (le type de données **texte multiligne**) 
 
 Créez autant de variations de fragment que nécessaire, mais pas plus.
 
-Les variations ajoutent un temps de traitement à un fragment de contenu, dans l’environnement de création et lors de la diffusion également. Il est recommandé de maintenir le nombre de variations à un niveau minimal gérable.
+Les variations ajoutent un temps de traitement à un fragment de contenu, dans l’environnement de création et lors de la diffusion également.
 
-Une bonne pratique consiste à ne pas dépasser dix variations par fragment de contenu.
+Il est recommandé de :
+
+* limitez le nombre de variations à un minimum gérable
+* ne pas dépasser dix variations par fragment de contenu
 
 ### Test Avant Production {#test-before-production}
 

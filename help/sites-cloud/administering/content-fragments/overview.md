@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: b3e1d3a3770531728d696be125f074881f179573
+source-git-commit: 8d8e45126a27b9ad5fdbc2276f08c28e4240c830
 workflow-type: tm+mt
-source-wordcount: '2401'
-ht-degree: 31%
+source-wordcount: '2402'
+ht-degree: 29%
 
 ---
 
@@ -22,7 +22,7 @@ Avec Adobe Experience Manager (AEM) as a Cloud Service, les fragments de contenu
 
 >[!IMPORTANT]
 >
->De nombreuses fonctionnalités décrites dans cette section sont *uniquement* disponibles dans l’as a Cloud Service [&#x200B; Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) ; *en ligne* Adobe Experience Manager (AEM), et non dans une instance locale.
+>De nombreuses fonctionnalités décrites dans cette section sont *uniquement* disponibles dans l’as a Cloud Service [ Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) ; *en ligne* Adobe Experience Manager (AEM), et non dans une instance locale.
 
 >[!IMPORTANT]
 >
@@ -41,8 +41,8 @@ Avec Adobe Experience Manager (AEM) as a Cloud Service, les fragments de contenu
 
 Les fragments de contenu contiennent du contenu structuré :
 
-* Chaque fragment est basé sur un [&#x200B; modèle de fragment de contenu &#x200B;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md).
-   * Le [&#x200B; modèle de fragment de contenu définit la structure &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) fragment obtenu.
+* Chaque fragment est basé sur un [ modèle de fragment de contenu ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md).
+   * Le [ modèle de fragment de contenu définit la structure ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) fragment obtenu.
 * Chaque fragment comprend :
    * **[Principal](#main-and-variations)** - Partie intégrante du fragment qui contient le contenu principal ; existe toujours et ne peut pas être supprimé
    * **[Variations](#main-and-variations)** - une ou plusieurs permutations du contenu, créées par l’auteur ou l’autrice
@@ -122,7 +122,6 @@ Une fois les fragments créés, vous pouvez :
 >* [Création de page à partir de fragments de contenu](/help/sites-cloud/authoring/fragments/content-fragments.md).
 >* Les [OpenAPI de modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) sont également disponibles.
 
-
 ## Principaux et variations {#main-and-variations}
 
 Les variations sont une fonction importante des fragments de contenu AEM. Ils vous permettent de créer et de modifier des copies du contenu **Principal** à utiliser sur des canaux et scénarios spécifiques, ce qui rend la diffusion de contenu découplé et la création de pages encore plus flexibles.
@@ -143,7 +142,7 @@ Les variations sont une fonction importante des fragments de contenu AEM. Ils vo
 
 * **Variations**
 
-   * Il s’agit de rendus de texte de fragment spécifiques à fin éditoriale. Les variations peuvent être associées au canal, sans que cela soit obligatoire, et elles peuvent également servir à des modifications locales ad hoc.
+   * Rendus de texte de fragment spécifiques à un objectif éditorial. Ils peuvent être associés à un canal, mais cela n’est pas obligatoire. Il peut également s’agir de modifications locales ad hoc.
    * sont créées en tant que copies de **Principal**, mais peuvent ensuite être modifiées selon les besoins ; il existe souvent un chevauchement de contenu entre les variations elles-mêmes ;
    * Peut être défini lors de la création de fragments dans le panneau de gauche.
    * Stockées dans le fragment, afin d’éviter l’éparpillement des copies de contenu.
@@ -160,7 +159,7 @@ Il assure la diffusion du contenu aux canaux autres que les pages web AEM class
 
 * des applications sur une seule page ;
 * des applications mobiles natives ;
-* d’autres canaux et points de contact externes à AEM.
+* autres canaux et points de contact externes à AEM
 
 La diffusion est effectuée au format JSON à l’aide de l’outil d’exportation JSON.
 
@@ -185,15 +184,15 @@ Les fragments de contenu sont :
 * Stockés en tant que **ressources** :
 
    * Les fragments de contenu (et leurs variantes) peuvent être créés et conservés à partir de la [console Fragments de contenu](#content-fragments-console).
-   * Créés et modifiés dans l’[&#x200B; Éditeur de fragment de contenu &#x200B;](/help/sites-cloud/administering/content-fragments/authoring.md).
+   * Créés et modifiés dans l’[ Éditeur de fragment de contenu ](/help/sites-cloud/administering/content-fragments/authoring.md).
 
-* Accessible pour la diffusion de contenu à l’aide de l’API AEM GraphQL [&#128279;](/help/headless/graphql-api/content-fragments.md).
+* Accessible pour la diffusion de contenu à l’aide de l’API AEM GraphQL [](/help/headless/graphql-api/content-fragments.md).
 
 * Disponible dans l’[éditeur de page à l’aide du composant Fragment de contenu](/help/sites-cloud/authoring/fragments/content-fragments.md) (composant référençant) :
 
    * Le [composant principal Fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=fr) est disponible pour les auteurs de pages. Il leur permet de référencer et de diffuser le fragment de contenu requis au format HTML ou JSON.
 
-Les fragments de contenu sont une structure de contenu qui :
+Les fragments de contenu sont des structures de contenu qui :
 
 * Ne comportent pas de disposition ou de conception (la mise en forme du texte est possible pour les champs de texte).
 * sont indépendants du mécanisme de diffusion (tel que la page ou le canal) ;
@@ -249,10 +248,10 @@ Les ressources Fragment de contenu sont composées des parties suivantes (direct
 
 Pour créer des fragments de contenu, vous avez besoin des éléments suivants :
 
-* **Modèles de contenu**
+* un **Modèle de fragment de contenu**
 
-   * Sont [activés à l’aide de l’explorateur de configurations](/help/sites-cloud/administering/content-fragments/setup.md).
-   * Ils sont [créés à l’aide de la console Fragments de contenu](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model).
+   * Est activé [à l’aide de l’explorateur de configurations](/help/sites-cloud/administering/content-fragments/setup.md).
+   * Est [créé à l’aide de la console Fragments de contenu](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model).
    * Obligatoires pour [créer un fragment](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments).
    * Définissent la structure d’un fragment (titre, éléments de contenu et définitions de balise).
    * Les définitions de modèle de fragment de contenu nécessitent un titre et un élément de données ; tout le reste est facultatif.
@@ -271,7 +270,7 @@ Pour utiliser vos fragments de contenu pour une diffusion de contenu découplé,
 
 Pour utiliser vos fragments de contenu pour la création de pages, vous avez également besoin des éléments suivants :
 
-* Un **composant de fragment de contenu**
+* un **composant de fragment de contenu**
 
    * Utilitaire de diffusion du fragment au format HTML et/ou JSON.
    * Obligatoire pour [référencer le fragment sur une page](/help/sites-cloud/authoring/fragments/content-fragments.md).
@@ -372,9 +371,12 @@ Utilisez les champs de texte enrichi (le type de données **texte multiligne**) 
 
 Créez autant de variations de fragment que nécessaire, mais pas plus.
 
-Les variations ajoutent un temps de traitement à un fragment de contenu, dans l’environnement de création et lors de la diffusion également. Il est recommandé de maintenir le nombre de variations à un niveau minimal gérable.
+Les variations ajoutent un temps de traitement à un fragment de contenu, dans l’environnement de création et lors de la diffusion également.
 
-Une bonne pratique consiste à ne pas dépasser dix variations par fragment de contenu.
+Il est recommandé de :
+
+* limitez le nombre de variations à un minimum gérable
+* ne pas dépasser dix variations par fragment de contenu
 
 ### Test Avant Production {#test-before-production}
 
