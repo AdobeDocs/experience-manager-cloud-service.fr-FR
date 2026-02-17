@@ -1,11 +1,12 @@
 ---
 title: Configuration de Dynamic Media
 description: Pour installer Dynamic Media, vous devez configurer Dynamic Media et gérer les paramètres prédéfinis d’image et de visionneuse.
+mini-toc-levels: 3
 contentOwner: Rick Brough
 feature: Configuration,Viewer Presets,Image Presets,Dynamic Media
 role: Admin,User
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
-source-git-commit: 8a8f3d7b17d79791a3ebf6b583ffcccfcf214470
+source-git-commit: bd43f86c9d3ad017a5e963800938e3ead98b7441
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 60%
