@@ -4,10 +4,10 @@ description: Découvrez comment générer un PDF d’envoi à partir des envois 
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: ab11addd98629499726c011cc0faca5666de26fb
+source-git-commit: 24068cb5219b81dc85769137e985cfa60486dd9e
 workflow-type: tm+mt
-source-wordcount: '3233'
-ht-degree: 38%
+source-wordcount: '3208'
+ht-degree: 40%
 
 ---
 
@@ -166,12 +166,10 @@ While creating an adaptive form, in the Form Model tab of Adaptive Form properti
   Select the option to create an Adaptive Form without a form model. When the option is selected, the Document of Record is automatically generated for your Adaptive Form.
 
 * **[Associate form template as a Document of Record template](creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)**
-  
   Select the option to use an XFA Form as a template for Document of Record. 
 
 * **[Generate Document of Record](creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)**
   Select the option to use an XFA Form as a template. When the option is selected, the Document of Record is automatically generated for your Adaptive Form. When you use an XML schema as a template for an Adaptive Form, ensure that the adaptive form and associated XFA Form use the same XML schema as your Adaptive Form
-  
 
 When you select a form model, configure Document of Record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration). -->
 
@@ -354,8 +352,6 @@ Pour localiser les informations de branding que vous saisissez dans l’onglet D
 
       * **Masquer la description des panneaux** : la définition de la propriété exclut la description du panneau/tableau de la PDF d’envoi. Applicable au panneau et au tableau.
 
-
-
    1. **Propriétés des champs de formulaire** :
 
       * **Pour les composants Case à cocher et Bouton radio, afficher uniquement les valeurs sélectionnées** : la définition de la propriété affiche uniquement les valeurs sélectionnées de la case à cocher et du bouton radio dans [!UICONTROL document d’enregistrement].
@@ -363,35 +359,33 @@ Pour localiser les informations de branding que vous saisissez dans l’onglet D
       * **Alignement des options** : vous pouvez sélectionner l’alignement de votre choix (horizontal, vertical, identique au formulaire adaptatif) pour définir l’alignement des champs (case à cocher ou bouton radio, par exemple) à afficher sur le [!UICONTROL document d’enregistrement]. Par défaut, l’alignement vertical est défini pour les champs du [!UICONTROL document d’enregistrement]. La définition des propriétés à partir des [!UICONTROL Propriétés des champs de formulaire] du document d’enregistrement remplace les propriétés définies dans la variable [!UICONTROL Alignement des éléments] pour les champs d’un formulaire adaptatif. Si vous sélectionnez l’option [!UICONTROL Identique au formulaire adaptatif], l’alignement tel que configuré dans une instance de création de formulaire adaptatif est utilisé pour les champs du [!UICONTROL document d’enregistrement].
       * **Nombre d’options d’alignement horizontal**:You peut définir le nombre d’options à afficher dans le PDF d’envoi pour l’alignement horizontal.
 
-
-
    1. **Propriétés du gabarit de page** :
 
       * **Image du logo** : vous pouvez choisir d’utiliser l’image du logo à partir du formulaire adaptatif, sélectionner une image dans le gestionnaire des ressources numériques (DAM) ou en charger une à partir de votre ordinateur.
       * **Titre du formulaire** : titre du document d’enregistrement.
-* **Texte d’en-tête** : texte qui apparaît dans la section d’en-tête du PDF d’envoi.
-* **Libellé clause de non-responsabilité** : libellé de la clause de non-responsabilité.
-* **Clause de non-responsabilité** : texte spécifiant la portée des droits et des obligations sur le PDF de soumission.
-* **Texte de clause de non-responsabilité** : texte de la clause de non-responsabilité.
+      * **Texte d’en-tête** : texte qui apparaît dans la section d’en-tête du PDF d’envoi.
+      * **Libellé clause de non-responsabilité** : libellé de la clause de non-responsabilité.
+      * **Clause de non-responsabilité** : texte spécifiant la portée des droits et des obligations sur le PDF de soumission.
+      * **Texte de clause de non-responsabilité** : texte de la clause de non-responsabilité.
 
-      &lt;!— ![Propriétés de la page de Principal](/help/forms/assets/dorpropertiesimg.png)—>
-     
-     >[ !REMARQUE]
-     >
-     >Si vous utilisez un modèle de formulaire adaptatif créé avec une version de Designer antérieure à la version 6.3, pour que les propriétés Couleur d’accentuation et Famille de polices fonctionnent, assurez-vous que les éléments suivants sont présents dans votre modèle de formulaire adaptatif sous le sous-formulaire racine :
-     
-     «xml
-&lt;proto>    &lt;font typeface=« Arial »/>
-&lt;fill>    &lt;color value=« 4,166,203 »/>
-&lt;/fill>    &lt;edge>
-&lt;color value=« 4,166,203 »/>    &lt;/edge>
-&lt;/proto>     »
-      
-      
-      
-      
-      
-  
+      <!--![Master Page Properties](/help/forms/assets/dorpropertiesimg.png)-->
+
+      >[!NOTE]
+      >
+      >Si vous utilisez un modèle de formulaire adaptatif créé avec une version de Designer antérieure à la version 6.3, pour que les propriétés Couleur d’accentuation et Famille de polices fonctionnent, assurez-vous de la présence des éléments suivants dans votre modèle de formulaire adaptatif sous le sous-formulaire racine :
+
+      ```xml
+      <proto>
+      <font typeface="Arial"/>
+      <fill>
+      <color value="4,166,203"/>
+      </fill>
+      <edge>
+      <color value="4,166,203"/>
+      </edge>
+      </proto>
+      ```
+
 1. Pour enregistrer les modifications d’identité graphique, sélectionnez **[!UICONTROL Terminé]**.
 
 >[!NOTE]
@@ -444,4 +438,5 @@ Les paramètres du composant Document d’enregistrement sont disponible sous se
 
 **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.
 
-!->>
+-->
+
