@@ -376,7 +376,7 @@ Pour localiser les informations de branding que vous saisissez dans l’onglet D
 
       &lt;!— ![Propriétés de la page de Principal](/help/forms/assets/dorpropertiesimg.png)—>
      
-     >[!REMARQUE]
+     >[ !REMARQUE]
      >
      >Si vous utilisez un modèle de formulaire adaptatif créé avec une version de Designer antérieure à la version 6.3, pour que les propriétés Couleur d’accentuation et Famille de polices fonctionnent, assurez-vous que les éléments suivants sont présents dans votre modèle de formulaire adaptatif sous le sous-formulaire racine :
      
