@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
 solution: Experience Manager Sites
-source-git-commit: 278242e0be1da5c64abfa5d9ac174013688ff422
+source-git-commit: be60f0371e652549cec6e57d1449b6e07b996514
 workflow-type: tm+mt
 source-wordcount: '559'
-ht-degree: 79%
+ht-degree: 72%
 
 ---
 
@@ -32,7 +32,7 @@ Vous pouvez définir :
 
 ## Notation d’en-tête {#heading-notation}
 
-Pour créer un en-tête en plaçant un hashtag (#) devant le titre, Une balise de hachage (#) indique un H1, deux balises de hachage (##) pour un H2, etc. Vous pouvez utiliser jusqu’à six hashtags. Par exemple :
+Pour créer un en-tête, placez un symbole de hachage (#) devant l’en-tête. Un symbole de hachage (#) indique un H1, deux symboles de hachage (##) pour un H2, etc. Vous pouvez utiliser jusqu’à six symboles de hachage. Par exemple :
 
     `## This is an H2`
 
@@ -110,17 +110,13 @@ Vous pouvez transformer un texte en citation en ajoutant le symbole > avant le t
 
     `>This is block quotes`
 
-    `>asdhfjlkasdhlf`
-
-    `>asdfahsdlfasdfj`
-
 Vous pouvez avoir des blocs de citation imbriqués. Par exemple :
 
     `> This is the first level of quoting.`
 
     `>`
 
-        `>> This is nested blockquote.`
+        `>> This is a nested blockquote.`
 
     `>`
 
@@ -130,7 +126,7 @@ Vous pouvez avoir des blocs de citation imbriqués. Par exemple :
 
 Vous pouvez créer des listes ordonnées et non ordonnées.
 
-Pour créer une liste non ordonnée, insérez le symbole * avant les éléments de la liste. Par exemple :
+Pour créer une liste non triée, utilisez le symbole &amp;ast; (astérisque) devant les éléments de la liste. Par exemple :
 
     `* item in list`
 
