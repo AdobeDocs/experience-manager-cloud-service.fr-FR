@@ -1,24 +1,24 @@
 ---
-title: Balises de balisage HTML prises en charge dans le document d’enregistrement
-description: Guide de référence pour les balises de balisage HTML désormais prises en charge dans la génération de document d’enregistrement, y compris le comportement de rendu et les considérations d’accessibilité
+title: Balises de balisage HTML prises en charge dans Submission PDF (anciennement Document d’enregistrement)
+description: Guide de référence pour les balises de balisage HTML prises en charge lors de la génération d’une PDF de soumission (anciennement Document d’enregistrement), y compris le comportement de rendu et les considérations d’accessibilité.
 feature: Adaptive Forms
 role: Developer, User
 exl-id: 8481b0dc-aae7-4bd2-acfe-1f1b6d747683
-source-git-commit: 1794ed6cac612ee4600c2f8e1ced18c6130b64a2
+source-git-commit: 0b112a5a1830fac9d0170771e052bbb2ef3cadbf
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 9%
+source-wordcount: '454'
+ht-degree: 7%
 
 ---
 
 
-# Balises de balisage HTML prises en charge dans le document d’enregistrement
+# Balises de balisage HTML prises en charge dans Submission PDF (anciennement Document d’enregistrement)
 
 ## Qu’est-ce que cette référence couvre ?
 
-AEM Forms prend désormais en charge les balises de balisage HTML dans les champs de texte enrichi lors de la génération de PDF de document d’enregistrement (DE). Ce guide explique quelles balises de balisage HTML vous pouvez utiliser en toute sécurité dans le Forms adaptatif et comment elles s’affichent dans les documents générés.
+AEM Forms prend désormais en charge les balises de balisage HTML dans les champs de texte enrichi lors de la génération d’un PDF de PDF d’envoi (anciennement Document d’enregistrement). Ce guide explique quelles balises de balisage HTML vous pouvez utiliser en toute sécurité dans le Forms adaptatif et comment elles s’affichent dans le PDF d’envoi généré.
 
-Si vous ajoutez du contenu de texte enrichi (mise en forme en gras, listes ou liens) à vos formulaires, il est important de comprendre quelles balises sont prises en charge et quelles restrictions elles peuvent comporter. Cette référence vous aide à choisir les balises appropriées pour vous assurer que votre contenu s’affiche correctement et reste accessible dans le document d’enregistrement.
+Si vous ajoutez du contenu de texte enrichi (mise en forme en gras, listes ou liens) à vos formulaires, il est important de comprendre quelles balises sont prises en charge et quelles restrictions elles peuvent comporter. Cette référence vous aide à choisir les balises appropriées pour vous assurer que votre contenu s’affiche correctement et reste accessible dans le PDF d’envoi.
 
 ## Avant de commencer
 
@@ -27,18 +27,18 @@ Si vous ajoutez du contenu de texte enrichi (mise en forme en gras, listes ou li
 Vous devez connaître :
 
 - Syntaxe de base des balises HTML
-- [Principes fondamentaux des documents d’enregistrement](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+- [Principes de base de Submission PDF (anciennement Document d’enregistrement)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 - Principes d’accessibilité et directives WCAG
 - Exigences d’accessibilité de PDF
 - Composants de formulaire adaptatif qui acceptent le balisage HTML
 
 ### Considérations
 
-Le document d’enregistrement peut être un PDF balisé, ce qui permet d’assurer l’accessibilité et une structure appropriée pour les technologies d’assistance. Pour activer la sortie PDF balisée, [définissez le `config/present/pdf/tagged` de propriété XCI sur `true`](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). Après avoir généré votre PDF, il est important de vérifier que les balises d’accessibilité sont correctement appliquées. Vous pouvez utiliser [Adobe Acrobat pour vérifier les balises d’accessibilité](https://helpx.adobe.com/in/acrobat/using/create-verify-pdf-accessibility.html) et vous assurer que votre document répond aux normes d’accessibilité.
+Le PDF de soumission (anciennement Document d’enregistrement) peut être un PDF balisé, ce qui permet d’assurer l’accessibilité et une structure appropriée pour les technologies d’assistance. Pour activer la sortie PDF balisée, [définissez le `config/present/pdf/tagged` de propriété XCI sur `true`](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). Après avoir généré votre PDF, il est important de vérifier que les balises d’accessibilité sont correctement appliquées. Vous pouvez utiliser [Adobe Acrobat pour vérifier les balises d’accessibilité](https://helpx.adobe.com/in/acrobat/using/create-verify-pdf-accessibility.html) et vous assurer que votre document répond aux normes d’accessibilité.
 
 ### Nouveautés
 
-La prise en charge du texte enrichi dans les documents d’enregistrement est une amélioration récente. Auparavant, le contenu de texte enrichi s’affichait en tant que texte brut dans les documents générés. Cette nouvelle fonctionnalité permet au contenu formaté de s’afficher correctement dans les sorties PDF.
+La prise en charge du texte enrichi dans Submission PDF est une amélioration récente. Auparavant, le contenu de texte enrichi s’affichait en tant que texte brut dans les documents générés. Cette nouvelle fonctionnalité permet au contenu formaté de s’afficher correctement dans les sorties PDF.
 
 ## Référence de prise en charge des balises HTML
 
@@ -46,7 +46,7 @@ La prise en charge du texte enrichi dans les documents d’enregistrement est un
 
 Ces balises sont entièrement prises en charge avec une création de nœud d’accessibilité appropriée :
 
-| HTML Tag | Description | Prise en charge des documents d’enregistrement | Accessibilité | Exemple |
+| HTML Tag | Description | Prise en charge de Submission PDF | Accessibilité | Exemple |
 |----------|-------------|-------------|---------------|---------|
 | `<p>` | Paragraphe | Oui | Prise en charge complète - Nœud de `<P>` correct | `<p>This is a paragraph.</p>` |
 | `<br/>` | Saut de ligne | Oui | Prise en charge complète - dans `<P>` nœud | `<p>Line 1<br/>Line 2</p>` |
@@ -135,7 +135,7 @@ Ces balises ne sont pas prises en charge et ne s’affichent pas correctement :
 ## Contenu connexe
 
 
-- [Générer un document d’enregistrement pour les formulaires adaptatifs](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-- [Générer un document d’enregistrement pour les composants principaux](/help/forms/generate-document-of-record-core-components.md)
-- [Personnalisation du modèle de document d’enregistrement](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)
+- [Générer un PDF d’envoi (anciennement Document d’enregistrement) pour le Forms adaptatif](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+- [Générer une PDF d’envoi pour les composants principaux](/help/forms/generate-document-of-record-core-components.md)
+- [Personnalisation du modèle de PDF d’envoi](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)
 
