@@ -118,7 +118,7 @@ Pour vérifier que le modèle personnalisé est correctement appliqué :
 |---|---|
 | Le modèle personnalisé ne se charge pas. | Assurez-vous que le fichier XDP est valide et n’est pas corrompu. Vérifiez que vous disposez des autorisations requises pour charger des fichiers vers AEM Forms. |
 | Les personnalisations n’apparaissent pas dans le document d’enregistrement généré. | Vérifiez que vous avez sélectionné le modèle personnalisé correct dans la section **[!UICONTROL Configuration du modèle de document d’enregistrement]** des propriétés du formulaire. |
-| Problèmes de mise en page ou de mise en forme dans le PDF généré. | Vérifiez que les personnalisations dans Adobe Forms Designer respectent les [ conventions relatives aux modèles de base ](/help/forms/generate-document-of-record-core-components.md#base-template-conventions). Assurez-vous que tous les éléments sont correctement positionnés dans la structure du modèle. |
+| Problèmes de mise en page ou de mise en forme dans le PDF généré. | Vérifiez que les personnalisations dans Adobe Forms Designer respectent les [&#x200B; conventions relatives aux modèles de base &#x200B;](/help/forms/generate-document-of-record-core-components.md#base-template-conventions). Assurez-vous que tous les éléments sont correctement positionnés dans la structure du modèle. |
 
 ## Voir également {#see-also}
 
