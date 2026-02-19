@@ -4,7 +4,7 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: a58225edb8ca49db9743db6c9c5b08c786fa0144
+source-git-commit: c1e175128ab6e4b483e3940d9bd86a06540ef40f
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 27%
@@ -18,7 +18,7 @@ La section suivante décrit les notes de mise jour techniques de maintenance act
 
 ## Version 24464 {#release-24464}
 
-Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 24464, rendue publique le mercredi 17 février 2026. La version de maintenance précédente était la version 24288.
+Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 24464, rendue publique le jeudi 18 février 2026. La version de maintenance précédente était la version 24288.
 
 L’activation des fonctionnalités de la version 2026.2.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
 
