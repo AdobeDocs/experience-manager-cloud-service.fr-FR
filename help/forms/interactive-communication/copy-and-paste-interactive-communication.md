@@ -7,23 +7,19 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: fe99fc4ddc1e2b3bdd1b2a5b583f2b4cb681dee9
+exl-id: 127abe2a-d8cf-4488-959f-f7316a8ddc3e
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 12%
+source-wordcount: '384'
+ht-degree: 3%
 
 ---
-
 
 # Copier et coller dans l’éditeur de communication interactive
 
 >[!NOTE]
 >
 > La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
-
->[!IMPORTANT]
->
-> **Documentation sujette à modification** : cette bibliothèque de prompts est en cours de test produit. Elle est sujette à des mises à jour et des révisions. Les prompts, les exemples et les bonnes pratiques peuvent changer à mesure que Forms Experience Builder continue d’évoluer dans le cadre du programme des utilisateurs et utilisatrices initiaux.
 
 La fonctionnalité Copier et coller de l’éditeur de communication interactive (IC) permet aux auteurs de dupliquer une communication interactive existante et de la réutiliser dans un autre dossier ou emplacement. Cette fonctionnalité permet aux équipes de travailler efficacement en activant plusieurs variantes d’un CI sans modifier la version d’origine.
 
@@ -88,4 +84,3 @@ Après avoir collé la communication interactive :
 - Vérifiez les liaisons de données et les canaux de sortie après les avoir copiés pour vous assurer qu’ils sont corrects.
 
 La fonctionnalité Copier et coller de la communication interactive simplifie la réutilisation et la personnalisation en permettant aux auteurs de dupliquer les IC existants et de les modifier indépendamment. Il permet un développement plus rapide, une expérimentation plus sûre et une diffusion de communication cohérente, sans risquer de modifier la communication interactive d’origine.
-

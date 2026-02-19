@@ -4,23 +4,19 @@ description: La numérotation dynamique de page dans l’éditeur de communicati
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 9adc7a5669d8bf1e64cc93998cb2f91ffa9d3dd6
+exl-id: 9f29da7d-72ad-4737-9ae3-d5cdc4f5ed25
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 13%
+source-wordcount: '364'
+ht-degree: 4%
 
 ---
-
 
 # Numérotation dynamique de page dans l’éditeur de communication interactive
 
 >[!NOTE]
 >
 > La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
-
->[!IMPORTANT]
->
-> **Documentation sujette à modification** : cette bibliothèque de prompts est en cours de test produit. Elle est sujette à des mises à jour et des révisions. Les prompts, les exemples et les bonnes pratiques peuvent changer à mesure que Forms Experience Builder continue d’évoluer dans le cadre du programme des utilisateurs et utilisatrices initiaux.
 
 ## Présentation
 
@@ -47,7 +43,7 @@ Les numéros de page s’affichent uniquement lors de l’aperçu PDF et affiche
 
 ## Fonctionnalités essentielles
 
-- Configuration De La Page De Principal **&#x200B;**
+- Configuration De La Page De Principal ****
 La numérotation de page peut être activée au niveau du gabarit de page. Le composant peut être placé n’importe où sur la zone de travail après avoir été déposé et personnalisé librement, car il prend en charge toutes les propriétés disponibles dans le composant de texte.
 
 - **Emplacement automatique :**

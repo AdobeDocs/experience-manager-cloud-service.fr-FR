@@ -7,23 +7,19 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 7f366823e1baeda8eacd8c92fe23300d10ec828a
+exl-id: ca9917c0-d8bb-4381-afab-7ab888d992e8
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 8%
+source-wordcount: '557'
+ht-degree: 1%
 
 ---
-
 
 # Contrôle de version et commentaires dans l’éditeur de communication interactive
 
 >[!NOTE]
 >
 > La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
-
->[!IMPORTANT]
->
-> **Documentation sujette à modification** : cette bibliothèque de prompts est en cours de test produit. Elle est sujette à des mises à jour et des révisions. Les prompts, les exemples et les bonnes pratiques peuvent changer à mesure que Forms Experience Builder continue d’évoluer dans le cadre du programme des utilisateurs et utilisatrices initiaux.
 
 Les communications interactives (CI) permettent aux entreprises de créer des documents dynamiques pilotés par les données pour une communication personnalisée avec les clients. Pour prendre en charge une meilleure collaboration, gouvernance et publication contrôlée, l’éditeur de communication interactive fournit des fonctionnalités de contrôle de version, de révision et de commentaires.
 

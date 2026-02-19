@@ -4,23 +4,19 @@ description: Le composant Bouton radio de l’éditeur de communication interact
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: fe1608f0-8d93-4b89-9dd9-849339b0a175
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 9%
+source-wordcount: '571'
+ht-degree: 2%
 
 ---
-
 
 # Composant Bouton radio dans l’éditeur de communication interactive
 
 >[!NOTE]
 >
 > La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
-
->[!IMPORTANT]
->
-> **Documentation sujette à modification** : cette bibliothèque de prompts est en cours de test produit. Elle est sujette à des mises à jour et des révisions. Les prompts, les exemples et les bonnes pratiques peuvent changer à mesure que Forms Experience Builder continue d’évoluer dans le cadre du programme des utilisateurs et utilisatrices initiaux.
 
 ## &#x200B;1. Présentation
 
@@ -118,5 +114,3 @@ Les créateurs et créatrices peuvent regrouper les boutons radio associés et l
 - Appliquez un espacement et un alignement cohérents pour une meilleure clarté visuelle, en particulier dans les dispositions compatibles avec les appareils mobiles.
 
 Le composant Bouton radio de l’éditeur de communication interactive est un composant d’entrée fondamental qui permet aux utilisateurs finaux de prendre des décisions propres et structurées. Lorsqu’elle est configurée avec des libellés clairs, un espacement réfléchi et une liaison de données, elle garantit une collecte de données fiable et une expérience utilisateur fluide pour les formulaires, les questionnaires et les workflows d’intégration.
-
-

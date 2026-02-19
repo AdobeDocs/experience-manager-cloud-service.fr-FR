@@ -4,23 +4,19 @@ description: Composant de champ numérique dans l’éditeur de communication in
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 1f6bda20-7bce-4cfd-9985-f8b49d6e50e0
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 7%
+source-wordcount: '698'
+ht-degree: 2%
 
 ---
-
 
 # Composant de champ numérique dans l’éditeur de communication interactive
 
 >[!NOTE]
 >
 > La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
-
->[!IMPORTANT]
->
-> **Documentation sujette à modification** : cette bibliothèque de prompts est en cours de test produit. Elle est sujette à des mises à jour et des révisions. Les prompts, les exemples et les bonnes pratiques peuvent changer à mesure que Forms Experience Builder continue d’évoluer dans le cadre du programme des utilisateurs et utilisatrices initiaux.
 
 ## &#x200B;1. Présentation
 
@@ -131,5 +127,3 @@ Les auteurs peuvent placer des champs numériques dans des conteneurs de disposi
 - Conservez une apparence et une typographie cohérentes pour correspondre aux directives de la marque.
 
 Le composant **Champ numérique** de l’éditeur de communication interactive est un outil précis et fiable pour la collecte de données numériques. Grâce à une mise en forme robuste, des contrôles de visibilité et des options de liaison de données, il garantit que les entrées numériques sont capturées de manière claire et intégrées de manière transparente dans les formulaires numériques. Lorsqu’elle est stylisée et configurée correctement, elle améliore considérablement la convivialité des formulaires et la précision globale des données.
-
-

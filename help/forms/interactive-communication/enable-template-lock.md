@@ -4,23 +4,19 @@ description: Le verrouillage de modèle dans l’éditeur de communication inter
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 9adc7a5669d8bf1e64cc93998cb2f91ffa9d3dd6
+exl-id: 7c7461fe-a5d7-481e-b5f5-27fd5bcde2d0
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 10%
+source-wordcount: '465'
+ht-degree: 2%
 
 ---
-
 
 # Verrouillage de modèle dans l’éditeur de communication interactive
 
 >[!NOTE]
 >
 > La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
-
->[!IMPORTANT]
->
-> **Documentation sujette à modification** : cette bibliothèque de prompts est en cours de test produit. Elle est sujette à des mises à jour et des révisions. Les prompts, les exemples et les bonnes pratiques peuvent changer à mesure que Forms Experience Builder continue d’évoluer dans le cadre du programme des utilisateurs et utilisatrices initiaux.
 
 ## &#x200B;1. Présentation
 
@@ -63,7 +59,7 @@ Lorsqu’elles sont appliquées, les auteurs ne peuvent pas :
 Pour appliquer des verrous de contenu ou de disposition à votre modèle de communication interactive (IC), procédez comme suit :
 
 1. Ouvrez Votre Modèle
-Ouvrez ou créez un modèle, suivez le guide [Créer un modèle de communication interactive](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
+Ouvrez ou créez un modèle, suivez le guide [Créer un modèle de communication interactive](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
 
 1. Sélection du composant
 Cliquez sur le composant (zone de texte, image ou sous-formulaire) que vous souhaitez restreindre.

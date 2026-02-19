@@ -4,23 +4,19 @@ description: Ajoutez des polices personnalisées dans l’éditeur de communicat
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 0b41fd1a-737f-495f-89da-6cc2e002b424
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 24%
+source-wordcount: '168'
+ht-degree: 6%
 
 ---
-
 
 # Ajouter des polices personnalisées à l’éditeur de communication interactive
 
 >[!NOTE]
 >
 > La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
-
->[!IMPORTANT]
->
-> **Documentation sujette à modification** : cette bibliothèque de prompts est en cours de test produit. Elle est sujette à des mises à jour et des révisions. Les prompts, les exemples et les bonnes pratiques peuvent changer à mesure que Forms Experience Builder continue d’évoluer dans le cadre du programme des utilisateurs et utilisatrices initiaux.
 
 La fonction de police personnalisée vous permet d’améliorer l’aspect de vos communications interactives en activant l’utilisation de polices personnalisées ou approuvées par l’organisation. Grâce à cette fonctionnalité, vous pouvez regrouper et incorporer des polices dans votre environnement AEM Forms as a Cloud Service, assurant ainsi un rendu PDF cohérent sur tous les appareils et plateformes.
 
@@ -36,5 +32,5 @@ La fonction de police personnalisée vous permet d’améliorer l’aspect de vo
 
 >[!NOTE]
 >
-> Pour obtenir des étapes de configuration détaillées, les utilisateurs peuvent suivre le guide [Utiliser des polices personnalisées](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts)
+> Pour obtenir des étapes de configuration détaillées, les utilisateurs peuvent suivre le guide [Utiliser des polices personnalisées](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts)
 >Une fois les étapes terminées et le pipeline exécuté, les polices personnalisées peuvent être utilisées directement dans l’éditeur de communication interactive.

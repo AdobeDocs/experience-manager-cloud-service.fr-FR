@@ -4,23 +4,19 @@ description: Composant de champ date/heure dans l’éditeur de communication in
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 7ac93d8c-5454-4789-a7cd-438571a9ff28
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 8%
+source-wordcount: '676'
+ht-degree: 2%
 
 ---
-
 
 # Composant de champ Date/heure dans l’éditeur de communication interactive
 
 >[!NOTE]
 >
 > La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
-
->[!IMPORTANT]
->
-> **Documentation sujette à modification** : cette bibliothèque de prompts est en cours de test produit. Elle est sujette à des mises à jour et des révisions. Les prompts, les exemples et les bonnes pratiques peuvent changer à mesure que Forms Experience Builder continue d’évoluer dans le cadre du programme des utilisateurs et utilisatrices initiaux.
 
 ## &#x200B;1. Présentation
 
@@ -141,4 +137,3 @@ Les auteurs peuvent combiner le champ avec des conteneurs de disposition, des va
 - Liez le champ à un chemin de schéma valide pour garantir une capture et un traitement corrects des données.
 
 Le composant Champ de date et d’heure de l’éditeur de communication interactive est un composant puissant et convivial qui simplifie les entrées temporelles. Avec la configuration appropriée de style, de gestion des données et de contrôles de mise en page, il offre des expériences de formulaire claires, fiables et intuitives pour les utilisateurs et les systèmes principaux.
-

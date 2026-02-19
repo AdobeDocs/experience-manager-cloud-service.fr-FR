@@ -4,23 +4,19 @@ description: Le composant Ligne dans l’éditeur de communication interactive d
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 1ff5ac22-d8c8-4109-8334-217dbc239f1f
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 11%
+source-wordcount: '459'
+ht-degree: 3%
 
 ---
-
 
 # Composant Line dans l’éditeur de communication interactive
 
 >[!NOTE]
 >
 > La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
-
->[!IMPORTANT]
->
-> **Documentation sujette à modification** : cette bibliothèque de prompts est en cours de test produit. Elle est sujette à des mises à jour et des révisions. Les prompts, les exemples et les bonnes pratiques peuvent changer à mesure que Forms Experience Builder continue d’évoluer dans le cadre du programme des utilisateurs et utilisatrices initiaux.
 
 ## &#x200B;1. Présentation
 
@@ -113,5 +109,3 @@ Le composant Ligne est souvent utilisé pour :
 - Masquez les lignes inutiles pour éviter les distractions tout en préservant l’espacement des mises en page.
 
 Le composant Line de l’éditeur de communication interactive est un élément de conception simple mais puissant. Utilisé stratégiquement, il améliore la structure visuelle des documents de communication, aidant ainsi les utilisateurs à mieux naviguer dans le contenu et assurant une mise en page plus épurée et plus soignée.
-
-

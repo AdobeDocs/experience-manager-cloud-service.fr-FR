@@ -4,23 +4,19 @@ description: Aperçu PDF dans l’éditeur de communication interactive avec dif
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 9adc7a5669d8bf1e64cc93998cb2f91ffa9d3dd6
+exl-id: 17b3fe2b-6a1d-4fe2-9a92-a55a50400824
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 13%
+source-wordcount: '327'
+ht-degree: 3%
 
 ---
-
 
 # Aperçu de PDF dans l’éditeur de communication interactive
 
 >[!NOTE]
 >
 > La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
-
->[!IMPORTANT]
->
-> **Documentation sujette à modification** : cette bibliothèque de prompts est en cours de test produit. Elle est sujette à des mises à jour et des révisions. Les prompts, les exemples et les bonnes pratiques peuvent changer à mesure que Forms Experience Builder continue d’évoluer dans le cadre du programme des utilisateurs et utilisatrices initiaux.
 
 La fonction d’aperçu PDF permet aux utilisateurs de prévisualiser les communications interactives de trois manières différentes : sans données, avec des données locales basées sur JSON ou avec des exemples de données provenant du modèle de données configuré.
 
@@ -50,7 +46,7 @@ Prévisualisez les communications interactives en n’utilisant aucune donnée, 
 
 +++&#x200B;2. Aperçu avec des données JSON locales
 
-2.1. Préparez un fichier JSON structuré. À titre de référence, vous pouvez copier les données d’exemple du [&#x200B; de schéma JSON (FDM)](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) utilisé pour la communication.
+2.1. Préparez un fichier JSON structuré. À titre de référence, vous pouvez copier les données d’exemple du [ de schéma JSON (FDM)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) utilisé pour la communication.
 
 2.2. Dans l’éditeur IC, accédez à **Aperçu PDF** > Utilisation des données locales.
 
@@ -69,4 +65,3 @@ Prévisualisez les communications interactives en n’utilisant aucune donnée, 
 ![Rechercher un document IC](/help/forms/interactive-communication/assets/datamodel.png)
 
 +++
-

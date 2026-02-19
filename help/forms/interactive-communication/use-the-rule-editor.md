@@ -4,13 +4,13 @@ description: Créer des règles dans l’éditeur de communication interactive p
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: b2b85d1e802c7f287b875d53a9347ca07ea2b806
+exl-id: 9538ae2e-e0f5-4e85-943e-00fe99a64725
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 10%
+source-wordcount: '449'
+ht-degree: 2%
 
 ---
-
 
 # Éditeur de règles dans l’éditeur de communication interactive
 
@@ -18,11 +18,6 @@ ht-degree: 10%
 >[!NOTE]
 >
 > La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
-
-
->[!IMPORTANT]
->
-> **Documentation sujette à modification** : cette bibliothèque de prompts est en cours de test produit. Elle est sujette à des mises à jour et des révisions. Les prompts, les exemples et les bonnes pratiques peuvent changer à mesure que Forms Experience Builder continue d’évoluer dans le cadre du programme des utilisateurs et utilisatrices initiaux.
 
 
 ## &#x200B;1. Présentation
@@ -110,6 +105,3 @@ L’éditeur de règles est largement utilisé pour s’assurer que les formulai
 
 
 En configurant les règles de manière réfléchie, les auteurs peuvent créer des communications qui répondent intelligemment aux données et aux actions des utilisateurs, en rationalisant les processus, en réduisant les erreurs et en offrant une expérience personnalisée et transparente.
-
-
-

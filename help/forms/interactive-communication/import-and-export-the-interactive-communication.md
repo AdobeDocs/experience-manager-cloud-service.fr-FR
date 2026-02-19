@@ -4,23 +4,19 @@ description: La communication interactive d’import et d’export permet aux ut
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 9adc7a5669d8bf1e64cc93998cb2f91ffa9d3dd6
+exl-id: 7e328932-070d-4eb3-8176-500ef31581be
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 14%
+source-wordcount: '312'
+ht-degree: 3%
 
 ---
-
 
 # Importer et exporter une communication interactive
 
 >[!NOTE]
 >
 > La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
-
->[!IMPORTANT]
->
-> **Documentation sujette à modification** : cette bibliothèque de prompts est en cours de test produit. Elle est sujette à des mises à jour et des révisions. Les prompts, les exemples et les bonnes pratiques peuvent changer à mesure que Forms Experience Builder continue d’évoluer dans le cadre du programme des utilisateurs et utilisatrices initiaux.
 
 La fonctionnalité d’importation et d’exportation de la communication interactive permet aux utilisateurs de migrer, de réutiliser et de gérer facilement les communications entre les environnements. Il vous permet d’exporter une communication interactive (IC) ainsi que ses fragments et modèles de données associés d’un environnement et de l’importer dans un autre, ce qui garantit la cohérence et réduit la duplication des efforts pendant le déploiement.
 

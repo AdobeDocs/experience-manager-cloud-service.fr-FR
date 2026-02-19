@@ -4,23 +4,19 @@ description: L’objet de champ de date dans l’éditeur de communication inter
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: f8cc1dd1-3b55-4cd9-b051-959c88195eb4
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 8%
+source-wordcount: '643'
+ht-degree: 2%
 
 ---
-
 
 # Objet de champ de date dans l’éditeur de communication interactive
 
 >[!NOTE]
 >
 > La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
-
->[!IMPORTANT]
->
-> **Documentation sujette à modification** : cette bibliothèque de prompts est en cours de test produit. Elle est sujette à des mises à jour et des révisions. Les prompts, les exemples et les bonnes pratiques peuvent changer à mesure que Forms Experience Builder continue d’évoluer dans le cadre du programme des utilisateurs et utilisatrices initiaux.
 
 ## &#x200B;1. Présentation
 
@@ -139,5 +135,3 @@ Les auteurs peuvent placer le champ de date dans des conteneurs de disposition o
 - Masquez dynamiquement les champs de date non pertinents à l’aide des règles de visibilité.
 
 L’objet **Champ de date** dans l’éditeur de communication interactive est un outil puissant permettant de capturer facilement et avec précision des données sensibles à l’heure. Lorsqu’il est stylisé de manière réfléchie et connecté à des chemins de données significatifs, il prend en charge une expérience utilisateur transparente et un traitement efficace des entrées temporelles.
-
-

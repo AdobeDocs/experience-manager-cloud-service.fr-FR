@@ -4,23 +4,19 @@ description: Le composant de case à cocher dans l’éditeur de communication i
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 636e9699-a8db-4cb0-aa9f-0602939006df
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 8%
+source-wordcount: '619'
+ht-degree: 2%
 
 ---
-
 
 # Composant de case à cocher dans l’éditeur de communication interactive
 
 >[!NOTE]
 >
 > La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
-
->[!IMPORTANT]
->
-> **Documentation sujette à modification** : cette bibliothèque de prompts est en cours de test produit. Elle est sujette à des mises à jour et des révisions. Les prompts, les exemples et les bonnes pratiques peuvent changer à mesure que Forms Experience Builder continue d’évoluer dans le cadre du programme des utilisateurs et utilisatrices initiaux.
 
 ## &#x200B;1. Introduction
 
@@ -123,5 +119,3 @@ Les cases à cocher peuvent être placées dans des grilles ou des panneaux de d
 - Utilisez des règles de visibilité lorsque les cases à cocher dépendent d’entrées ou de conditions antérieures.
 
 Le composant Case à cocher dans l’éditeur de communication interactive est un composant simple mais essentiel pour les entrées binaires. Avec la prise en charge du style, de la présence conditionnelle et de la liaison de données flexible, il joue un rôle clé dans l’amélioration de l’interactivité et du contrôle utilisateur dans les formulaires numériques intelligents. Lorsqu’elles sont mises en œuvre avec des libellés réfléchis, un style cohérent et une intégration significative des données, les cases à cocher contribuent de manière significative à une expérience de formulaire fluide et intuitive.
-
-

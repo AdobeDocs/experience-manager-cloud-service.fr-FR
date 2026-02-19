@@ -4,23 +4,19 @@ description: Composant Champ de texte dans l’éditeur de communication interac
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 6bb41cf2-8a9d-499c-979b-b0ee7d092e11
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 7%
+source-wordcount: '671'
+ht-degree: 2%
 
 ---
-
 
 # Composant Champ de texte dans l’éditeur de communication interactive
 
 >[!NOTE]
 >
 > La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
-
->[!IMPORTANT]
->
-> **Documentation sujette à modification** : cette bibliothèque de prompts est en cours de test produit. Elle est sujette à des mises à jour et des révisions. Les prompts, les exemples et les bonnes pratiques peuvent changer à mesure que Forms Experience Builder continue d’évoluer dans le cadre du programme des utilisateurs et utilisatrices initiaux.
 
 ## &#x200B;1. Introduction
 
@@ -133,5 +129,3 @@ Les auteurs peuvent placer le champ dans des sous-formulaires ou des grilles de 
 - Liez directement au modèle de données chaque fois que cela est possible pour une maintenance plus simple.
 
 Le composant Champ de texte de l’éditeur IC est un bloc de création polyvalent qui simplifie la capture de données. Lorsqu’elle est configurée de manière réfléchie, avec une typographie bien choisie, des libellés clairs, une validation appropriée et une liaison de données solide, elle offre une expérience transparente et conviviale, ainsi que des données fiables pour le traitement en aval.
-
-

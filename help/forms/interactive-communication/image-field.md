@@ -4,23 +4,19 @@ description: Composant Champ d’image dans l’éditeur de communication intera
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 0af73ae2-fe1d-4763-ad4d-2934691cb9e1
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 10%
+source-wordcount: '558'
+ht-degree: 3%
 
 ---
-
 
 # Composant Champ d’image dans l’éditeur de communication interactive
 
 >[!NOTE]
 >
 > La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
-
->[!IMPORTANT]
->
-> **Documentation sujette à modification** : cette bibliothèque de prompts est en cours de test produit. Elle est sujette à des mises à jour et des révisions. Les prompts, les exemples et les bonnes pratiques peuvent changer à mesure que Forms Experience Builder continue d’évoluer dans le cadre du programme des utilisateurs et utilisatrices initiaux.
 
 ## &#x200B;1. Présentation
 
@@ -111,7 +107,3 @@ Les auteurs peuvent placer le champ dans des sous-formulaires ou des conteneurs 
 - Lier le champ à un chemin d’accès au schéma significatif en cas d’intégration au serveur principal
 
 Le composant Champ d’image de l’éditeur de communication interactive est un composant polyvalent qui améliore l’interactivité du formulaire en activant les chargements de contenu visuel. Lorsqu’elle est conçue avec un style, une validation et une liaison de données, elle prend en charge une expérience utilisateur transparente et une capture de données efficace pour les envois d’images.
-
-
-
-
