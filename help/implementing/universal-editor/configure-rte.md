@@ -4,9 +4,9 @@ description: Découvrez comment configurer l’éditeur de texte enrichi dans l�
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: e1773cbc2293cd8afe29c3624b29d1e011ea7e10
+source-git-commit: 39137052e9fa409f7f5494be53fa7693aaa60b17
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '994'
 ht-degree: 1%
 
 ---
@@ -87,9 +87,29 @@ La configuration de la barre d’outils contrôle les options de modification di
 }
 ```
 
-## Configuration des actions {#actions}
+## Configuration d’action {#action}
 
 La configuration des actions vous permet de personnaliser le comportement et l’apparence des actions de modification individuelles. Voici les sections disponibles.
+
+### Options d’action courantes {#common-action-options}
+
+La plupart des actions prennent en charge les options courantes suivantes :
+
+* `shortcut?` : chaîne - remplace le raccourci clavier par défaut de l’action (le cas échéant)
+* `label?` : chaîne - remplace le libellé utilisé pour l’action dans l’interface utilisateur
+* `hideInline?` : booléen. Lorsqu’elle est `true`, cette action est masquée dans la barre d’outils de l’éditeur de texte enrichi contextuel (intégré)
+
+```json
+{
+  "actions": {
+    "bold": {
+      "label": "Bold",
+      "shortcut": "Mod-B",
+      "hideInline": true
+    }
+  }
+}
+```
 
 ### Formater les actions {#format}
 
@@ -134,6 +154,56 @@ Les actions de liste prennent en charge le wrapping de contenu pour contrôler l
   }
 }
 ```
+
+### Actions du tableau {#table-actions}
+
+Les actions de tableau prennent en charge le renvoi à la ligne du contenu pour contrôler la structure HTML dans les cellules du tableau :
+
+```json
+{
+  "actions": {
+    "table": {
+      "wrapInParagraphs": false, // <td>content</td> (default)
+      "shortcut": "Mod-Alt-T",   // Custom shortcut
+      "label": "Insert Table"    // Custom label
+    }
+  }
+}
+```
+
+#### Options de configuration du tableau {#table-configuration-options}
+
+* `wrapInParagraphs` : `false` (par défaut) - Les cellules du tableau contiennent du contenu de texte non enveloppé
+* `wrapInParagraphs` : `true` - Les cellules de tableau encapsulent le contenu dans des balises de paragraphe
+
+Exemples :
+
+Si `wrapInParagraphs` : `false` :
+
+```html
+<!-- Single line -->
+<td>Cell content</td>
+
+<!-- Multiple paragraphs get <br> separation -->
+<td>Line 1<br />Line 2</td>
+```
+
+Si `wrapInParagraphs` : `true` :
+
+```html
+<!-- Single paragraph -->
+<td><p>Cell content</p></td>
+
+<!-- Multiple paragraphs preserved -->
+<td>
+  <p>Line 1</p>
+  <p>Line 2</p>
+</td>
+```
+
+>[!NOTE]
+>
+>Lorsque vous extrayez des paragraphes (`wrapInParagraphs` : `false`), le désinfectant insère automatiquement des balises `<br>` entre plusieurs paragraphes afin de conserver les sauts de ligne visuels. Cela respecte les normes HTML et les pratiques courantes des principaux éditeurs de texte enrichi.
 
 ### Actions de lien {#link}
 
@@ -487,3 +557,20 @@ Les raccourcis utilisent le ou les `Mod-Key` de format où :
 
 * `Mod` = `Cmd` sous Mac, `Ctrl` sous Windows/Linux
 * Exemples : `Mod-B`, `Mod-Shift-8`, `Mod-Alt-1`
+
+## HTML non pris en charge {#unsupported-html}
+
+Par défaut, les balises HTML inconnues sont supprimées lorsqu’elles sont analysées par l’éditeur. Pour les conserver, vous devez activer l&#39;option de configuration `unsupportedHtml` :
+
+```javascript
+const rteConfig = {
+  unsupportedHtml: true, // preserve unknown HTML tags (default: false)
+};
+```
+
+| Valeur | Comportement |
+|---|---|
+| `false` (par défaut) | Les balises HTML inconnues sont ignorées lors de l’analyse. |
+| `true` | Les balises HTML inconnues sont enveloppées dans un nœud de bloc personnalisé non pris en charge afin que le contenu puisse faire l’objet d’un aller-retour en toute sécurité. |
+
+Lorsqu’il est activé, l’éditeur effectue le rendu des nœuds non pris en charge avec une classe `rte-unsupported-block`. Les applications clientes doivent fournir le style de cette classe (par exemple, bordure, marge intérieure, arrière-plan). Le libellé de balise à l’intérieur du bloc utilise `rte-unsupported-label`, qui peut également être personnalisé.
