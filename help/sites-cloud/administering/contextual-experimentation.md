@@ -3,9 +3,11 @@ title: Expérimentation contextuelle dans AEM as a Cloud Service
 description: Découvrez comment utiliser le plug-in d’expérimentation pour ajouter des fonctionnalités d’expérimentation à votre site.
 feature: Administering
 role: Admin
-source-git-commit: 66ee08babae1f6640158260af051f8ad5f9bde85
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
+exl-id: 420f8d5e-27f9-4081-b174-b2d7752779f7
+source-git-commit: eed3a4866e3018b2ff6bc6e5c201523ab271c35f
 workflow-type: tm+mt
-source-wordcount: '1799'
+source-wordcount: '1805'
 ht-degree: 0%
 
 ---
@@ -33,7 +35,7 @@ Pour les sites s’exécutant sur Adobe Experience Manager, il existe un **plug-
 
 Le plug-in d’expérimentation est utilisé dans le cadre de [Edge Delivery Services](/help/edge/overview.md) vous aurez donc besoin d’un compte Github, d’un référentiel de contenu tel que SharePoint ou Google Drive, ainsi que de [AEM Sidekick](https://www.aem.live/docs/sidekick). Consultez également les pages [Prise en main - Tutoriel de développement de l’éditeur universel](https://www.aem.live/developer/tutorial) et [Prise en main - Tutoriel de développement](https://www.aem.live/developer/tutorial).
 
-Une fois que vous avez tout configuré, **regardez cette vidéo** intitulée [Expérimentation instantanée](https://business.adobe.com/fr/products/experience-manager/sites/testing-optimization.html) pour une courte démonstration sur le fonctionnement du plug-in d’expérimentation.
+Une fois que vous avez tout configuré, **regardez cette vidéo** intitulée [Expérimentation instantanée](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html) pour une courte démonstration sur le fonctionnement du plug-in d’expérimentation.
 
 ## Termes fréquemment utilisés {#frequently-used-terms}
 
@@ -91,7 +93,7 @@ Voir l’exemple ci-dessous :
 
 Pour chaque expérience, le trafic est réparti entre toutes les variantes (contrôle et challengers) et est automatiquement défini sur une distribution égale. Ainsi, si vous avez un challenger, il y aura automatiquement une répartition égale de 50/50 entre le contrôle et le challenger. Si vous avez deux concurrents, vous verrez automatiquement un tiers du trafic alloué au contrôle et chaque concurrent et ainsi de suite.
 
-Vous pouvez remplacer la répartition du trafic en configurant les métadonnées. Pour plus d’informations sur la personnalisation des métadonnées utilisées dans vos expériences, consultez la [&#x200B; page suivante &#x200B;](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring).
+Vous pouvez remplacer la répartition du trafic en configurant les métadonnées. Pour plus d’informations sur la personnalisation des métadonnées utilisées dans vos expériences, consultez la [ page suivante ](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring).
 
 ### Prévisualiser et préparer vos variantes d’expérience {#preview-stage-experiment}
 
