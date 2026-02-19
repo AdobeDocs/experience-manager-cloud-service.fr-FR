@@ -25,7 +25,7 @@ Les modèles de communication interactive d’AEM permettent aux utilisateurs de
 
 * [Assurez-vous que l’auteur est membre des groupes forms-users et template-authors .](/help/forms/setup-forms-cloud-service.md#configure-users)
 
-* Assurez-vous que la version 55[ ou ultérieure de l’archétype AEM ](https://github.com/adobe/aem-project-archetype) est installée.
+* Assurez-vous que la version 55[&#x200B; ou ultérieure de l’archétype AEM &#x200B;](https://github.com/adobe/aem-project-archetype) est installée.
 
 ## Créer un modèle de communication interactive
 
