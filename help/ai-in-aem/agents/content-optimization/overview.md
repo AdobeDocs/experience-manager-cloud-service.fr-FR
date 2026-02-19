@@ -4,7 +4,7 @@ description: Découvrez comment utiliser l’agent d’optimisation de contenu p
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 896fc25b-7f60-47b8-9264-2ef6b85d954c
-source-git-commit: 36cc0cd44a77554c58cec13d6478271d5ee4165c
+source-git-commit: af85d06d95cf2676cc558071ac8dfe54b67dc8f1
 workflow-type: tm+mt
 source-wordcount: '914'
 ht-degree: 0%
@@ -30,6 +30,8 @@ Voici quelques-uns des principaux avantages de l’optimisation du contenu :
 >Les réponses générées par l&#39;IA peuvent être inexactes ou trompeuses. Assurez-vous de vérifier les correctifs et les réponses suggérés.
 >
 >Consultez également les [Directives d’utilisation de l’IA générative de Adobe Experience Cloud](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+
+>[!VIDEO](https://video.tv.adobe.com/v/3480078)
 
 ## Conditions préalables {#prerequisites-content-optimization-agent}
 
