@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 629cf9d88531b2e95627917ca139eed1fbddf09d
 workflow-type: tm+mt
-source-wordcount: '4349'
-ht-degree: 64%
+source-wordcount: '4427'
+ht-degree: 63%
 
 ---
 
@@ -49,16 +49,16 @@ Les méthodes `Thread.stop()` et `Thread.interrupt()` peuvent générer des prob
 ```java
 public class DontDoThis implements Runnable {
   private Thread thread;
- 
+
   public void start() {
     thread = new Thread(this);
     thread.start();
   }
- 
+
   public void stop() {
     thread.stop();  // UNSAFE!
   }
- 
+
   public void run() {
     while (true) {
         somethingWhichTakesAWhileToDo();
@@ -73,16 +73,16 @@ public class DontDoThis implements Runnable {
 public class DoThis implements Runnable {
   private Thread thread;
   private boolean keepGoing = true;
- 
+
   public void start() {
     thread = new Thread(this);
     thread.start();
   }
- 
+
   public void stop() {
     keepGoing = false;
   }
- 
+
   public void run() {
     while (this.keepGoing) {
         somethingWhichTakesAWhileToDo();
@@ -110,7 +110,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 }
 ```
 
-### Les requêtes HTTP doivent toujours avoir des délais de socket et de connexion {#http-requests-should-always-have-socket-and-connect-timeouts}
+### Les requêtes HTTP doivent toujours comporter des délais d’expiration de socket et de connexion {#http-requests-should-always-have-socket-and-connect-timeouts}
 
 * **Clé** : CQRules:ConnectionTimeoutMechanism
 * **Type** : bogue
@@ -125,7 +125,7 @@ Par défaut, le client HTTP Java™ (java.net.HttpUrlConnection) et le client de
 ```java
 @Reference
 private HttpClientBuilderFactory httpClientBuilderFactory;
- 
+
 public void dontDoThis() {
   HttpClientBuilder builder = httpClientBuilderFactory.newBuilder();
   HttpClient httpClient = builder.build();
@@ -136,15 +136,15 @@ public void dontDoThis() {
 public void dontDoThisEither() {
   URL url = new URL("http://www.google.com");
   URLConnection urlConnection = url.openConnection();
- 
+
   BufferedReader in = new BufferedReader(new InputStreamReader(
     urlConnection.getInputStream()));
- 
+
   String inputLine;
   while ((inputLine = in.readLine()) != null) {
     logger.info(inputLine);
   }
- 
+
   in.close();
 }
 ```
@@ -154,7 +154,7 @@ public void dontDoThisEither() {
 ```java
 @Reference
 private HttpClientBuilderFactory httpClientBuilderFactory;
- 
+
 public void doThis() {
   HttpClientBuilder builder = httpClientBuilderFactory.newBuilder();
   RequestConfig requestConfig = RequestConfig.custom()
@@ -162,9 +162,9 @@ public void doThis() {
     .setSocketTimeout(5000)
     .build();
   builder.setDefaultRequestConfig(requestConfig);
- 
+
   HttpClient httpClient = builder.build();
-   
+
   // do something with the client
 }
 
@@ -173,15 +173,15 @@ public void orDoThis () {
   URLConnection urlConnection = url.openConnection();
   urlConnection.setConnectTimeout(5000);
   urlConnection.setReadTimeout(5000);
- 
+
   BufferedReader in = new BufferedReader(new InputStreamReader(
     urlConnection.getInputStream()));
- 
+
   String inputLine;
   while ((inputLine = in.readLine()) != null) {
     logger.info(inputLine);
   }
- 
+
   in.close();
 }
 ```
@@ -508,9 +508,20 @@ public void doThis(Resource resource) {
 * **Gravité** : mineure
 * **Depuis** : version 2020.5.0
 
-N’utilisez pas le planificateur de `Sling` pour les tâches qui nécessitent une exécution garantie. Les tâches planifiées Sling garantissent l’exécution et conviennent mieux aux environnements organisés avec ou sans grappes.
+N’utilisez pas le planificateur de `Sling` pour les tâches qui nécessitent une exécution garantie. Les tâches planifiées Sling garantissent l’exécution et conviennent mieux aux environnements organisés avec ou sans cluster.
 
 Voir Gestion des tâches et des événements [`Apache Sling`](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) pour en savoir plus sur la manière dont les tâches Sling sont gérées dans des environnements en cluster.
+
+### N’utilisez pas d’API obsolètes d’Experience Manager. {#sonarqube-aem-api-deprecated}
+
+* **Clé** : java:S1874
+* **Type** : compatibilité `Vulnerability` ou `Bug`/Cloud Service
+* **Gravité** : Info, Mineur ou Majeur
+* **Depuis** : version 2026.1.0
+
+La surface de l’API Experience Manager est en constante évolution afin d’identifier les API dont l’utilisation doit être arrêtée. Cette API est obsolète et est marquée d’une date de suppression.
+
+Plus la date de suppression est proche, plus la gravité de la violation de cette règle est élevée. L’utilisation de cette API doit être remplacée par une alternative sûre.
 
 ### N’utilisez pas d’API obsolètes d’Experience Manager. {#sonarqube-aem-deprecated}
 
@@ -548,7 +559,7 @@ Les applications AEM atteignent souvent d’autres applications à l’aide du p
 
 Cette règle vérifie qu’un tel objet HttpClient n’est pas privé dans une méthode, mais global au niveau de la classe, afin qu’il puisse être réutilisé. Dans ce cas, le champ HttpClient doit être défini dans le constructeur de la classe ou de la méthode `activate()` (si cette classe est un composant/service OSGi).
 
-Consultez le [&#x200B; Guide d’optimisation &#x200B;](https://hc.apache.org/httpclient-legacy/performance.html) du HttpClient pour connaître quelques bonnes pratiques concernant l’utilisation du HttpClient.
+Consultez le [ Guide d’optimisation ](https://hc.apache.org/httpclient-legacy/performance.html) du HttpClient pour connaître quelques bonnes pratiques concernant l’utilisation du HttpClient.
 
 #### Code non conforme {#non-compliant-code-14}
 
@@ -737,7 +748,7 @@ Le fait qu’un même composant OSGi soit configuré plusieurs fois est un probl
 >
 >Par exemple, si la création génère des packages nommés `com.myco:com.myco.ui.apps` et `com.myco:com.myco.all`, où `com.myco:com.myco.all` incorpore `com.myco:com.myco.ui.apps`, toutes les configurations dans `com.myco:com.myco.ui.apps` seront signalées comme doublons.
 >
->En règle générale, cette situation est un cas de non-respect des [&#x200B; directives relatives à la structure du package de contenu &#x200B;](/help/implementing/developing/introduction/aem-project-content-package-structure.md). Dans cet exemple, la propriété `com.myco:com.myco.ui.apps` est absente de la `<cloudManagerTarget>none</cloudManagerTarget>` du package .
+>En règle générale, cette situation est un cas de non-respect des [ directives relatives à la structure du package de contenu ](/help/implementing/developing/introduction/aem-project-content-package-structure.md). Dans cet exemple, la propriété `com.myco:com.myco.ui.apps` est absente de la `<cloudManagerTarget>none</cloudManagerTarget>` du package .
 
 #### Code non conforme {#non-compliant-code-osgi}
 
@@ -797,7 +808,7 @@ Un problème courant est l’utilisation de nœuds nommés `config` dans les bo�
 * **Gravité** : majeure
 * **Depuis** : version 2019.6.0
 
-Tout comme la règle [&#x200B; Les packages ne doivent pas contenir de configurations OSGi en double &#x200B;](#oakpal-package-osgi), cette situation est un problème courant sur les projets complexes où le même chemin de nœud est écrit par plusieurs packages de contenu distincts. Bien que l’utilisation des dépendances des modules de contenu puisse servir à garantir un résultat cohérent, il est préférable d’éviter tout chevauchement.
+Tout comme la règle [ Les packages ne doivent pas contenir de configurations OSGi en double ](#oakpal-package-osgi), cette situation est un problème courant sur les projets complexes où le même chemin de nœud est écrit par plusieurs packages de contenu distincts. Bien que l’utilisation des dépendances des modules de contenu puisse servir à garantir un résultat cohérent, il est préférable d’éviter tout chevauchement.
 
 ### Le mode de création par défaut ne doit pas être défini sur l’interface utilisateur classique {#oakpal-default-authoring}
 
@@ -1082,7 +1093,7 @@ Le type de nœud `nt:base` peut être considéré comme « générique », car t
   - evaluatePathRestrictions: true
   - tags: [visualSimilaritySearch]
   - type: lucene
-  - includedPaths: ["/content/dam/"] 
+  - includedPaths: ["/content/dam/"]
   - queryPaths: ["/content/dam/"]
     + indexRules
       - jcr:primaryType: nt:unstructured
