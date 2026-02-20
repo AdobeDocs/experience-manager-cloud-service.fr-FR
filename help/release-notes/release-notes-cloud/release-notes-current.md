@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 087c29ddd1dcfe0fc4bda7428d71a5e6157e1325
+source-git-commit: b42a713bb66d55c991dc1a341987d79b083c6ccd
 workflow-type: tm+mt
-source-wordcount: '2035'
-ht-degree: 40%
+source-wordcount: '1888'
+ht-degree: 43%
 
 ---
 
@@ -38,7 +38,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Consultez la vidéo Vue d’ensemble de la version de janvier 2026 pour un résumé des fonctionnalités ajoutées dans la version 2026.1.0 :
 
->[!VIDEO](https://video.tv.adobe.com/v/3479791/?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3479789/?quality=12)
 
 
 ## Programmes AEM Beta {#aem-beta-programs}
@@ -55,18 +55,20 @@ L’accès anticipé aux fonctionnalités développées par Adobe permet aux cli
 **Programmes bêta actuels**
 Les sections suivantes répertorient les programmes bêta et Explorateur actifs.
 
-### Agents dans AEM (programme Explorateur) {#agents-in-aem-beta-program}
+<!--
+### Agents in AEM (Explorer program) {#agents-in-aem-beta-program}
 
-Bénéficiez d’un accès anticipé aux nouvelles et puissantes fonctionnalités d’AEM en matière de production, de gouvernance, d’optimisation, de découverte et de développement. Vos commentaires façonnent directement la feuille de route et les fonctionnalités finales d’Adobe. Voir [Présentation des agents dans AEM](/help/ai-in-aem/agents/overview.md) pour en savoir plus.
+Gain early access to powerful, new AEM agentic capabilities across production, governance, optimization, discovery, and development. Your feedback directly shapes Adobe's roadmap and final features. See [Overview of Agents in AEM](/help/ai-in-aem/agents/overview.md) to learn more.
 
-Ce programme dure généralement 4 à 6 semaines, mais peut être adapté pour être flexible quant à votre capacité à participer activement.
+This program typically lasts 4-6 weeks, but can be tailored to be flexible around your ability to actively participate. 
 
-Pour vous inscrire à ce programme, envoyez un e-mail à l’adresse [aemagentsteam@adobe.com](mailto:aemagentsteam@adobe.com) et incluez les détails suivants dans la mesure du possible :
+To opt in to participate in this program, email [aemagentsteam@adobe.com](mailto:aemagentsteam@adobe.com) and include the following details to the extent possible:
 
-* Noms et Adobe ID des membres de l’équipe qui utiliseront activement des agents.
-* Liste des agents spécifiques que vous ou votre équipe souhaitez utiliser. Ou simplement dire « Tous les agents ».
+* Names and Adobe ID's of team members who will actively use agents.
+* List Specific agents that you or your team will want to use. Or simply say "All Agents."
 
-Les clients sélectionnés pour la participation seront avertis directement par Adobe. La participation est assujettie à des considérations d&#39;admissibilité, notamment la licence du client et la capacité limitée du programme. Bien que toutes les requêtes ne puissent pas être satisfaites au départ, il est possible que d’autres clients soient pris en compte lors des prochaines vagues bêta.
+Customers selected for participation will be notified directly by Adobe. Participation is subject to eligibility considerations, including customer licensing and limited program capacity. While not all requests can be accommodated initially, additional customers may be considered in future beta waves.
+-->
 
 ### AEM Foundation (programmes Beta) {#aem-foundation-beta-programs}
 
@@ -99,7 +101,7 @@ En savoir plus dans [Utilisation de MCP avec AEM Cloud Service](/help/ai-in-aem/
 
 Recherche optimisée par l&#39;IA offre une expérience de recherche intelligente et contextuelle qui va au-delà de la correspondance de mots-clés traditionnelle en comprenant la signification et l’intention derrière les requêtes des utilisateurs. Optimisé par l’IA et le machine learning, il fournit des résultats plus précis même lorsque les requêtes sont formulées différemment, contiennent des fautes d’orthographe, utilisent des synonymes ou sont envoyées dans différentes langues, ce qui permet aux utilisateurs et aux utilisatrices de trouver plus rapidement et avec moins d’efforts du contenu pertinent.
 
-Pour plus d’informations, voir Recherche optimisée par l&#39;IA dans la vue Assets [&#128279;](/help/assets/search-assets-view.md#ai-search) et [vue Admin](/help/assets/search-assets.md#ai-search).
+Pour plus d’informations, voir Recherche optimisée par l&#39;IA dans la vue Assets [](/help/assets/search-assets-view.md#ai-search) et [vue Admin](/help/assets/search-assets.md#ai-search).
 
 **Application de bureau version 3.0.1**
 
@@ -155,7 +157,7 @@ Les API obsolètes ciblant la suppression du 2/26/2026 ne doivent plus être uti
 
 * **À compter du 26 janvier 2026** : les e-mails de notification du Centre d’actions sont envoyés **chaque semaine par environnement** comme rappel pour supprimer l’utilisation de ces API.
 * **26 février 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API seront **mis en pause** pendant l’étape **Qualité du code**. Un responsable de déploiement, un chef de projet ou un propriétaire d’entreprise peut contourner le problème pour autoriser le pipeline à continuer.
-* **26 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **&#x200B;**&#x200B;pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
+* **26 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **** pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
 * **30 avril 2026** : les environnements qui utilisent toujours ces API peuvent **ne plus recevoir de mises à jour critiques de versions d’Adobe**.
 
 Pour plus d’informations, consultez l’[article sur l’obsolescence](/help/release-notes/deprecated-removed-features.md#aem-apis), mais pour plus de commodité, ces API sont répertoriées ci-dessous :
