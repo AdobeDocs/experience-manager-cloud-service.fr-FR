@@ -4,10 +4,10 @@ description: Découvrez comment configurer Cloud Manager pour utiliser vos prop
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 892339482c009edf9f73560f2a4b66f4317843fe
+source-git-commit: 2ea076c42a6406548bf48cd246227fc8ddb3a080
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 34%
+source-wordcount: '998'
+ht-degree: 35%
 
 ---
 
@@ -22,9 +22,9 @@ En configurant Cloud Manager pour l’intégration à votre cloud GitHub privé 
 >* Référentiels GitHub Enterprise Server (version auto-hébergée de GitHub) .
 >* Référentiels GitLab (versions `gitlab.com` et auto-hébergées de GitLab).
 >* Référentiels Bitbucket (`bitbucket.org` et Bitbucket Server, la version auto-hébergée de BitBucket).
->* Référentiels Azure DevOps ([dev.azure.com](https://azure.microsoft.com/en-us/products/devops/?nav=min) et versions auto-hébergées d’Azure DevOps).
+>* Référentiels DevOps d’Azure ([dev.azure.com](https://azure.microsoft.com/en-us/products/devops/?nav=min) et versions auto-hébergées d’Azure DevOps).
 >
->Voir [Ajout de référentiels externes dans Cloud Manager - version bêta privée](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+>Voir [Ajouter des référentiels externes dans Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
 <!-- CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
 

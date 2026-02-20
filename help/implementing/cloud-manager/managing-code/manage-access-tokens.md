@@ -4,9 +4,9 @@ description: Découvrez comment afficher, modifier et supprimer les jetons d’a
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2ea076c42a6406548bf48cd246227fc8ddb3a080
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '360'
 ht-degree: 3%
 
 ---
@@ -17,15 +17,9 @@ ht-degree: 3%
 
 Cloud Manager utilise des jetons d’accès pour gérer les référentiels hébergés sur des plateformes Git externes. Auparavant, si un jeton expirait, le référentiel associé devait être réintégré pour rester opérationnel.
 
-Désormais, la fonctionnalité **Gérer les jetons d’accès** vous permet de gérer les jetons plus efficacement. Vous pouvez afficher, renommer ou supprimer des jetons connectés aux fournisseurs Git externes pris en charge, notamment GitHub Enterprise, GitLab, Bitbucket et Azure DevOps.
+Désormais, la fonctionnalité **`Manage Access Tokens`** vous permet de gérer les jetons plus efficacement. Vous pouvez afficher, renommer ou supprimer des jetons connectés aux fournisseurs Git externes pris en charge, notamment GitHub Enterprise, GitLab, Bitbucket et Azure DevOps.
 
 Voir aussi [Ajouter des référentiels externes dans Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
-
-<!--
->[!NOTE]
->
->The features described in this article are only available through the private beta program. For more details and to sign up for the private beta, see [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
--->
 
 ## Afficher les jetons d’accès {#view-access-tokens}
 
@@ -60,4 +54,4 @@ Voir aussi [Ajouter des référentiels externes dans Cloud Manager](/help/implem
 
    L’icône est désactivée (![icône Supprimer la composition](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg)) pour les jetons en cours d’utilisation.
 
-1. Dans la boîte de dialogue **Supprimer le jeton d’accès**, cliquez sur **Supprimer** pour supprimer définitivement le jeton.
+1. Dans la boîte de dialogue **`Delete Access Token`**, cliquez sur **Supprimer** pour supprimer définitivement le jeton.
