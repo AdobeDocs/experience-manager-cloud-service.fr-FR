@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 45bdc9afeb43e9b9cc2e190d459819f65f091020
+source-git-commit: 998615f7ba20fb77e05f8aa9a58bc1b61500cc3e
 workflow-type: tm+mt
-source-wordcount: '3707'
-ht-degree: 85%
+source-wordcount: '3842'
+ht-degree: 80%
 
 ---
 
@@ -35,7 +35,7 @@ Pendant la période d’obsolescence, Adobe rappelle à ses clientes et clients 
 >
 >* **À compter du 26 janvier 2026** : les e-mails de notification du Centre d’actions sont envoyés **chaque semaine par environnement** comme rappel pour supprimer l’utilisation de ces API.
 >* **26 février 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API seront **mis en pause** pendant l’étape **Qualité du code**. Un responsable de déploiement, un chef de projet ou un propriétaire d’entreprise peut contourner le problème pour autoriser le pipeline à continuer.
->* **26 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **&#x200B;**&#x200B;pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
+>* **26 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **** pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
 >* **30 avril 2026** : les environnements qui utilisent toujours ces API peuvent **ne plus recevoir de mises à jour critiques de versions d’Adobe**.
 >
 >Pour empêcher les blocs de déploiement, supprimez l’utilisation de l’API avant le 26 mars 2026.
@@ -90,7 +90,7 @@ Les API du tableau ci-dessous (cliquez pour développer) ont été annoncées c
 >
 > * **À compter du 26 janvier 2026** : les e-mails de notification du Centre d’actions sont envoyés **chaque semaine par environnement** comme rappel pour supprimer l’utilisation de ces API.
 > * **26 février 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API seront **mis en pause** pendant l’étape **Qualité du code**. Un responsable de déploiement, un chef de projet ou un propriétaire d’entreprise peut contourner le problème pour autoriser le pipeline à continuer.
-> * **26 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **&#x200B;**&#x200B;pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
+> * **26 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **** pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
 > * **30 avril 2026** : les environnements qui utilisent toujours ces API peuvent **ne plus recevoir de mises à jour critiques de versions d’Adobe**.
 >
 > Pour empêcher les blocs de déploiement, supprimez l’utilisation de l’API avant le 26 mars 2026.
@@ -343,7 +343,7 @@ Cette section répertorie les API obsolètes et supprimées. Certaines API fon
 
 Cette section contient des conseils de suppression pour diverses API dans les tableaux ci-dessus.
 
-Pour identifier les API Java obsolètes que votre code utilise, intégrez le plug-in Maven [AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) dans votre projet Maven et exécutez-le localement. Le rapport répertorie toutes les utilisations obsolètes détectées de l’API et indique quel lot OSGi fait référence à chaque API. Référencez [ce tutoriel](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) pour savoir comment utiliser le plug-in Maven.
+Pour identifier les API Java obsolètes que votre code utilise, intégrez le plug-in Maven [AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) dans votre projet Maven et exécutez-le localement. Le rapport répertorie toutes les utilisations obsolètes détectées de l’API et indique quel lot OSGi fait référence à chaque API. Référencez [ce tutoriel](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) pour savoir comment utiliser le plug-in Maven.
 
 Bien que vous deviez remédier à toutes les API obsolètes au fil du temps, donnez la priorité à toutes les API répertoriées dans le tableau API obsolètes avec une date de suppression cible fixée au 26 février 2026 (ou avant). Dans le rapport AEM Analyzer, ces API peuvent apparaître avec une date de suppression effective du 8/31/2025.
 
@@ -363,7 +363,7 @@ Si vous utilisez `org.apache.sling.commons.auth` et/ou `org.apache.sling.commons
 
 Liste d’actions :
 
-* Mettre à jour ACS AEM Commons vers la dernière version (au moins 6.11.0)
+* Si vous utilisez ACS AEM Commons mettre à jour vers la dernière version (au moins 6.11.0) et veillez à utiliser le classificateur `cloud`.
 * Migrez d’`org.apache.sling.commons.auth` et/ou `org.apache.sling.commons.auth.spi` vers `org.apache.sling.auth`, soit `org.apache.sling.auth.spi`.
 
 ### Suppression de `org.apache.felix.webconsole*` {#org.apache.felix.webconsole}
@@ -381,7 +381,7 @@ Si vous utilisez un package `org.eclipse.jetty` ou l’un de ses sous-packages, 
 Liste d’actions :
 
 * Remplacez l’utilisation des packages `org.eclipse.jetty` par d’autres bibliothèques tierces/un autre code propre ou
-* Sélectionnez les lots requis dans cette liste et ajoutez-les à votre projet :
+* Sélectionnez les lots requis dans cette liste et ajoutez-les à votre projet. Si vous en ajoutez un, veillez à vérifier les importations de package de ce lot, car vous devrez peut-être ajouter d’autres packages de cette liste pour effectuer ces importations. Si vous souhaitez utiliser la version 9.x de ces lots, veillez à déployer exactement la version ci-dessous et à ne pas incorporer *et* exporter ces packages.
    * `org.eclipse.jetty:jetty-client:9.4.54.v20240208`
    * `org.eclipse.jetty:jetty-http:9.4.54.v20240208`
    * `org.eclipse.jetty:jetty-io:9.4.54.v20240208`
@@ -408,7 +408,8 @@ Supprimez l’utilisation des bibliothèques principales Google Guava ou incluez
 
 Liste d’actions :
 
-* Mettre à jour ACS AEM Commons vers la dernière version (au moins 6.11.0)
+* Si vous utilisez ACS AEM Commons mettre à jour vers la dernière version (au moins 6.11.0) et veillez à utiliser le classificateur `cloud`.
+* Si vous utilisez `io.wcm:io.wcm.caconfig.extensions`, mettez à jour ceci vers la version 1.9.2 au moins
 * Remplacez l’utilisation de la bibliothèque principale Guava Google par des collections 4 JDK ou Apache Commons.
 * Si nécessaire, ajoutez ce lot à votre projet (remplacez la version par la dernière disponible) :
    * `com.google.guava:guava:33.4.8-jre`
@@ -419,7 +420,7 @@ Supprimez l’utilisation des bibliothèques Apache Commons non gérées et rem
 
 Liste d’actions :
 
-* Mettre à jour ACS AEM Commons vers la dernière version (au moins 6.11.0)
+* Si vous utilisez ACS AEM Commons mettre à jour vers la dernière version (au moins 6.11.0) et veillez à utiliser le classificateur `cloud`.
 * Remplacer les imports de `org.apache.commons.lang*` par `org.apache.commons.lang3`
 * Remplacer les imports de `org.apache.commons.collections*` par `org.apache.commons.collecitons4`
 
@@ -445,7 +446,7 @@ La journalisation arrière n’est pas prise en charge dans Cloud Service. Supp
 
 Liste d’actions :
 
-* Mettre à jour ACS AEM Commons vers la dernière version (au moins 6.11.0)
+* Si vous utilisez ACS AEM Commons mettre à jour vers la dernière version (au moins 6.11.0) et veillez à utiliser le classificateur `cloud`.
 * Supprimer le code à l’aide de packages de `ch.qos.logback`
 
 ### Utilisation de `org.slf4j.event and org.slf4j.spi` {#org.slf4j}
@@ -454,9 +455,10 @@ Si vous utilisez `org.slf4j.event` ou `org.slf4j.spi`, supprimez toutes les util
 
 Liste d’actions :
 
-* Mettre à jour ACS AEM Commons vers la dernière version (au moins 6.11.0)
-* Supprimer le code à l’aide de `org.slf4j.event` et `org.slf4j.spi`
+* Si vous utilisez ACS AEM Commons mettre à jour vers la dernière version (au moins 6.11.0) et veillez à utiliser le classificateur `cloud`.
 * Si vous utilisez le client Apache Kafka et incluez le bundle de wrapper OSGi d’Apache ServiceMix (`org.apache.servicemix.bundles.kafka-clients`), remplacez-le par le [wrapper client Apache Kafka d’AEM](https://repo.maven.apache.org/maven2/com/adobe/aem/osgi/com.adobe.aem.osgi.kafka-clients/4.0.0_1.0/). Il s’agit de la même version que celle d’Apache ServiceMix, avec seulement l’utilisation de ces deux packages supprimée.
+* Si vous utilisez `com.adobe.aio.aem:aio-lib-osgi` mise à jour vers la dernière version (au moins 2.0.12).
+* Supprimer le code à l’aide de `org.slf4j.event` et `org.slf4j.spi`
 
 ### Utilisation d’`org.apache.log4j` {#org.apache.log4j}
 
