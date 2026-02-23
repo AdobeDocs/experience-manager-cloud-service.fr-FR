@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 998615f7ba20fb77e05f8aa9a58bc1b61500cc3e
+source-git-commit: f2e707b9689eb99b4b91eae705d7daa8449a9d44
 workflow-type: tm+mt
 source-wordcount: '3842'
 ht-degree: 80%
@@ -35,10 +35,10 @@ Pendant la période d’obsolescence, Adobe rappelle à ses clientes et clients 
 >
 >* **À compter du 26 janvier 2026** : les e-mails de notification du Centre d’actions sont envoyés **chaque semaine par environnement** comme rappel pour supprimer l’utilisation de ces API.
 >* **26 février 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API seront **mis en pause** pendant l’étape **Qualité du code**. Un responsable de déploiement, un chef de projet ou un propriétaire d’entreprise peut contourner le problème pour autoriser le pipeline à continuer.
->* **26 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **&#x200B;**&#x200B;pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
+>* **30 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **** pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
 >* **30 avril 2026** : les environnements qui utilisent toujours ces API peuvent **ne plus recevoir de mises à jour critiques de versions d’Adobe**.
 >
->Pour empêcher les blocs de déploiement, supprimez l’utilisation de l’API avant le 26 mars 2026.
+>Pour empêcher les blocs de déploiement, supprimez l’utilisation de l’API avant le 30 mars 2026.
 
 ## Fonctionnalité obsolète {#deprecated-features}
 
@@ -90,10 +90,10 @@ Les API du tableau ci-dessous (cliquez pour développer) ont été annoncées c
 >
 > * **À compter du 26 janvier 2026** : les e-mails de notification du Centre d’actions sont envoyés **chaque semaine par environnement** comme rappel pour supprimer l’utilisation de ces API.
 > * **26 février 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API seront **mis en pause** pendant l’étape **Qualité du code**. Un responsable de déploiement, un chef de projet ou un propriétaire d’entreprise peut contourner le problème pour autoriser le pipeline à continuer.
-> * **26 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **&#x200B;**&#x200B;pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
-> * **30 avril 2026** : les environnements qui utilisent toujours ces API peuvent **ne plus recevoir de mises à jour critiques de versions d’Adobe**.
+> * **30 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **** pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
+> * **4 mai 2026** : les environnements qui utilisent toujours ces API peuvent **ne plus recevoir de mises à jour critiques de versions d’Adobe**.
 >
-> Pour empêcher les blocs de déploiement, supprimez l’utilisation de l’API avant le 26 mars 2026.
+> Pour empêcher les blocs de déploiement, supprimez l’utilisation de l’API avant le 30 mars 2026.
 
 
 <details>
@@ -343,7 +343,7 @@ Cette section répertorie les API obsolètes et supprimées. Certaines API fon
 
 Cette section contient des conseils de suppression pour diverses API dans les tableaux ci-dessus.
 
-Pour identifier les API Java obsolètes que votre code utilise, intégrez le plug-in Maven [AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) dans votre projet Maven et exécutez-le localement. Le rapport répertorie toutes les utilisations obsolètes détectées de l’API et indique quel lot OSGi fait référence à chaque API. Référencez [ce tutoriel](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) pour savoir comment utiliser le plug-in Maven.
+Pour identifier les API Java obsolètes que votre code utilise, intégrez le plug-in Maven [AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) dans votre projet Maven et exécutez-le localement. Le rapport répertorie toutes les utilisations obsolètes détectées de l’API et indique quel lot OSGi fait référence à chaque API. Référencez [ce tutoriel](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) pour savoir comment utiliser le plug-in Maven.
 
 Bien que vous deviez remédier à toutes les API obsolètes au fil du temps, donnez la priorité à toutes les API répertoriées dans le tableau API obsolètes avec une date de suppression cible fixée au 26 février 2026 (ou avant). Dans le rapport AEM Analyzer, ces API peuvent apparaître avec une date de suppression effective du 8/31/2025.
 
