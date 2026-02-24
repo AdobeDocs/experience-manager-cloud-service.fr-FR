@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: 5bccf61158c40f9c6dd84ea91d005da370686781
 workflow-type: tm+mt
-source-wordcount: '3550'
-ht-degree: 72%
+source-wordcount: '2596'
+ht-degree: 63%
 
 ---
 
@@ -20,15 +20,15 @@ Les administrateurs peuvent créer des paramètres prédéfinis pour l’exporta
 
 Vous pouvez également créer des paramètres d’image prédéfinis réactifs. Si vous appliquez un paramètre prédéfini réactif d’image à vos ressources, il varie en fonction de l’appareil ou de la taille d’écran sur lequel elles sont affichées. Vous pouvez configurer les paramètres d’image prédéfinis de manière à utiliser CMJN dans l’espace colorimétrique, en plus de RGB ou de Gris.
 
-Cette section décrit comment créer, modifier et généralement gérer les paramètres d’image prédéfinis. Vous pouvez appliquer un paramètre d’image prédéfini à une image à chaque fois que vous la prévisualisez. Voir [Application de paramètres prédéfinis d’image](/help/assets/dynamic-media/image-presets.md).
+Cette section décrit comment créer, modifier et généralement gérer les paramètres d’image prédéfinis. Vous pouvez appliquer un paramètre d’image prédéfini à une image à chaque fois que vous la prévisualisez. Voir [Application de paramètres d’image prédéfinis](/help/assets/dynamic-media/image-presets.md).
 
 >[!NOTE]
 >
 >L’imagerie dynamique fonctionne avec vos paramètres d’image prédéfinis existants et utilise les informations disponibles à la dernière milliseconde de diffusion pour réduire davantage la taille du fichier image en fonction de la vitesse de connexion du navigateur ou du réseau. Voir [Imagerie numérique](/help/assets/dynamic-media/imaging-faq.md) pour plus d’informations.
 
-## En savoir plus sur les paramètres prédéfinis d’image {#understanding-image-presets}
+## En savoir plus sur les paramètres d’image prédéfinis {#understanding-image-presets}
 
-Tout comme une macro, un paramètre d’image prédéfini est un ensemble prédéfini de commandes de dimensionnement et de formatage enregistrées sous un nom. Pour comprendre le fonctionnement des paramètres d’image prédéfinis, supposons que votre site web exige que chaque image du produit s’affiche dans des tailles différentes, des formats différents et des taux de compression différents pour diffusion sur les ordinateurs de bureau et les appareils mobiles.
+Tout comme une macro, un paramètre d’image prédéfini est un ensemble prédéfini de commandes de dimensionnement et de formatage enregistrées sous un nom. Pour comprendre le fonctionnement des paramètres d’image prédéfinis, supposons que votre site web exige que chaque image du produit s’affiche dans des tailles, des formats et des taux de compression différents pour une diffusion sur les ordinateurs de bureau et les appareils mobiles.
 
 Vous pouvez créer deux paramètres d’image prédéfinis : 500 x 500 pixels pour le bureau et 150 x 150 pixels pour le mobile. Vous créez deux paramètres d’image prédéfinis, l’un appelé `Enlarge` pour afficher des images à 500 x 500 pixels et l’autre appelé `Thumbnail` pour afficher des images à 150 x 150 pixels. Pour diffuser des images au format `Enlarge` et `Thumbnail`, Experience Manager trouve la définition des `Enlarge Image Preset` et des `Thumbnail Image Preset`. Ensuite, Experience Manager génère de manière dynamique une image dont la taille et le format correspondent à chaque paramètre d’image prédéfini.
 
@@ -52,123 +52,152 @@ La gestion des paramètres d’image prédéfinis dans Experience Manager s’ef
 
 >[!NOTE]
 >
->Le système affiche différents rendus lorsque vous sélectionnez **[!UICONTROL Rendus]** dans l’affichage des détails d’une ressource. Vous pouvez augmenter ou réduire le nombre de paramètres d’image prédéfinis affichés. Voir [Augmentation du nombre de paramètres prédéfinis d’image affichés](#increasing-or-decreasing-the-number-of-image-presets-that-display).
+>Le système affiche différents rendus lorsque vous sélectionnez **[!UICONTROL Rendus]** dans l’affichage des détails d’une ressource. Vous pouvez augmenter ou réduire le nombre de paramètres d’image prédéfinis affichés. Voir [Augmentation du nombre de paramètres d’image prédéfinis affichés](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
-### Formats de fichiers Adobe Illustrator (AI), PostScript® (EPS) et PDF {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+## Association des paramètres d’image prédéfinis aux rendus {#how-image-presets-relate-to-renditions}
 
-Si vous avez l’intention de prendre en charge l’assimilation de fichiers AI, EPS et PDF afin de générer des rendus dynamiques de ces formats de fichiers, consultez les informations suivantes avant de créer des paramètres d’image prédéfinis.
+Les paramètres d’image prédéfinis définissent la manière dont Dynamic Media diffuse les images, notamment le dimensionnement, la mise en forme, la compression et d’autres paramètres d’affichage. Les paramètres prédéfinis ne génèrent pas de rendus eux-mêmes. Au lieu de cela, ils s’appuient sur des rendus créés lors du traitement des ressources.
 
-Le format de fichier d’Adobe Illustrator est une variante du format PDF. Les principales différences, dans le cadre de Experience Manager Assets, sont les suivantes :
+### Génération de rendu dans AEM as a Cloud Service{#rendition-generation-in-aemaacs}
 
-* Les documents Adobe Illustrator se composent d’une seule page avec plusieurs calques. Chaque calque est extrait sous la forme d’une sous-ressource PNG sous la ressource Illustrator principale.
-* Les documents PDF se composent d’une ou de plusieurs pages. Chaque page est extraite sous la forme d’une sous-ressource PDF d’une seule page sous le document PDF multi-pages principal.
+Dans AEM as a Cloud Service, les rendus sont générés à l’aide des **microservices de ressources**. Le workflow Ressource de mise à jour de la gestion des ressources numériques ne peut pas être personnalisé dans Cloud Service.
 
-Le composant `Create Sub Asset process` crée les sous-ressources dans le workflow `DAM Update Asset` global. Pour voir ce composant de processus dans le processus, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Modèles]** > **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]** > **[!UICONTROL Modifier]**.
+Les points importants à prendre en compte sont les suivants :
 
-<!-- See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file). -->
+* Les rendus sont générés au moment du chargement.
+* Les modifications apportées à un profil de traitement affectent les ressources nouvellement chargées. Les ressources existantes doivent être retraitées si de nouveaux rendus sont requis.
+* La personnalisation du modèle de workflow n’est pas prise en charge dans AEM as a Cloud Service pour la génération du rendu.
 
-Vous pouvez afficher les sous-ressources ou les pages lorsque vous ouvrez la ressource, sélectionnez le menu Contenu et sélectionnez **[!UICONTROL Sous-ressources]** ou **[!UICONTROL Pages]**. Les sous-ressources sont des ressources à part entière. Le composant de workflow `Create Sub Asset` extrait les pages PDF. Elles sont ensuite stockées sous les noms `page1.pdf`, `page2.pdf`, etc. sous la ressource principale. Une fois qu’elles sont stockées, le workflow `DAM Update Asset` les traite.
+Les paramètres d’image prédéfinis font référence aux rendus disponibles au moment de la diffusion. Assurez-vous que les rendus requis existent avant de configurer ou d’utiliser des paramètres d’image prédéfinis.
 
-Pour utiliser Dynamic Media afin de prévisualiser et de générer des rendus dynamiques pour des fichiers AI, EPS ou PDF, les étapes de traitement suivantes doivent être exécutées :
+**Pour contrôler les rendus générés, procédez comme suit**
 
-1. Dans le workflow `DAM Update Asset`, le composant de processus `Rasterize PDF/AI Image Preview Rendition` pixellise la première page de la ressource d’origine (à l’aide de la résolution configurée) en un rendu `cqdam.preview.png`.
+1. Créer ou modifier un [profil de traitement](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#).
+2. Configurez les définitions de rendu requises.
+3. Appliquez le profil de traitement au dossier approprié.
 
-1. Le composant de processus `Dynamic Media Process Image Assets` du workflow optimise le rendu `cqdam.preview.png` en PTIFF.
+Lorsque des ressources sont chargées dans un dossier auquel un profil de traitement est appliqué, les microservices de ressources génèrent automatiquement les rendus définis.
+
+<!--
+### Adobe Illustrator (AI), PostScript&reg; (EPS), and PDF file formats {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+
+If you intend to support the ingestion of AI, EPS, and PDF files so that you can generate dynamic renditions of these file formats, review the following information before you create Image Presets.
+
+Adobe Illustrator's file format is a variant of PDF. The main differences, in the context of Experience Manager Assets, are the following:
+
+* Adobe Illustrator documents consist of a single page with multiple layers. Each layer is extracted as a PNG subasset under the main Illustrator asset.
+* PDF documents consist of one or more pages. Each page is extracted as a single page PDF subasset under the main multi-page PDF document.
+
+The `Create Sub Asset process` component creates the subassets within the overall `DAM Update Asset` workflow. To see this process component within the workflow, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL DAM Update Asset]** > **[!UICONTROL Edit]**.
+
+See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file).
+
+You can view the subassets or the pages when you open the asset, select the Content menu, and select **[!UICONTROL Subassets]** or **[!UICONTROL Pages]**. The subassets are real assets. The `Create Sub Asset` workflow component extracts the PDF pages. They are then stored as `page1.pdf`, `page2.pdf`, and so on, below the main asset. After they are stored, the `DAM Update Asset` workflow processes them.
+
+To use Dynamic Media to preview and generate dynamic renditions for AI, EPS or PDF files, the following processing steps are required:
+
+1. In the `DAM Update Asset` workflow, the `Rasterize PDF/AI Image Preview Rendition` process component rasterizes the first page of the original asset &ndash; using the configured resolution &ndash; into a `cqdam.preview.png` rendition.
+
+1. The `Dynamic Media Process Image Assets` process component within the workflow optimizes the `cqdam.preview.png` rendition into a PTIFF.
 
 >[!NOTE]
 >
->L’étape **[!UICONTROL Miniatures EPS]** du workflow Ressource de mise à jour de gestion des actifs numériques (DAM) génère des miniatures pour les fichiers EPS.
+>In the DAM Update Asset workflow, the **[!UICONTROL EPS thumbnails]** step generates thumbnails for EPS files.
 
-#### Propriétés des métadonnées de ressource PDF/AI/EPS {#pdf-ai-eps-asset-metadata-properties}
+#### PDF/AI/EPS asset metadata properties {#pdf-ai-eps-asset-metadata-properties}
 
-| **Propriété de métadonnées** | **Description** |
+| **Metadata property** |**Description** |
 |---|---|
-| `dam:Physicalwidthininches` | Largeur du document en pouces. |
-| `dam:Physicalheightininches` | Hauteur du document en pouces. |
+| `dam:Physicalwidthininches` |Document width in inches. |
+| `dam:Physicalheightininches` |Document height in inches. |
 
-Vous accédez aux options des composants de processus `Rasterize PDF/AI Image Preview Rendition` par le biais du workflow `DAM Update Asset`.
+You access `Rasterize PDF/AI Image Preview Rendition` process component options by way of the `DAM Update Asset` workflow.
 
-Sélectionnez Adobe Experience Manager dans le coin supérieur gauche, puis cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**. Dans la page Modèles de workflow, sélectionnez **[!UICONTROL Ressource de mise à jour DAM]** puis, dans la barre d’outils, sélectionnez **[!UICONTROL Modifier]**. Sur la page du workflow Ressource de mise à jour de gestion des ressources numériques , double-sélectionnez le composant de processus `Rasterize PDF/AI Image Preview Rendition` pour ouvrir sa boîte de dialogue Propriétés de l’étape .
+Select Adobe Experience Manager in the upper left, the click **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**. On the Workflow Models page, select **[!UICONTROL DAM Update Asset]**, then on the toolbar select **[!UICONTROL Edit]**. On the DAM Update Asset workflow page, double-select the `Rasterize PDF/AI Image Preview Rendition` process component to open its Step Properties dialog box.
 
-#### Options Pixelliser le rendu d’aperçus d’image PDF/AI {#rasterize-pdf-ai-image-preview-rendition-options}
+#### Rasterize PDF/AI Image Preview Rendition options {#rasterize-pdf-ai-image-preview-rendition-options}
 
-![Arguments pour pixelliser le workflow PDF ou AI](assets/rasterize_pdf_ai_image_preview.png)
+![Arguments to rasterize PDF or AI workflow](assets/rasterize_pdf_ai_image_preview.png)
 
-Arguments pour pixelliser le workflow PDF ou AI
+Arguments to rasterize PDF or AI workflow
 
-| Argument de processus | Paramètre par défaut | Description |
+|Process Argument | Default setting | Description |
 |---|---|---|
-| Types MIME | application/pdf<br>application/postscript<br>application/illustrator | Liste des types MIME de documents considérés comme des documents PDF ou Illustrator. |
-| Largeur max. | 2048 | Largeur maximale du rendu d’aperçu généré, en pixels. |
-| Hauteur max. | 2048 | Hauteur maximale du rendu d’aperçu généré, en pixels. |
-| Résolution | 72 | Résolution de pixellisation de la première page, en ppp (pixels par pouce). |
+| Mime Types | application/pdf<br>application/postscript<br>application/illustrator| List of document mime-types that are considered to be PDF or Illustrator documents. |
+| Max Width | 2048 | Maximum width of the generated preview rendition, in pixels.|
+| Max Height | 2048| Maximum height of the generated preview rendition, in pixels. |
+| Resolution | 72 | Resolution to rasterize the first page, in ppi (pixels per inch). |
 
-À l’aide des arguments de processus par défaut, la première page d’un document PDF/AI est pixellisée à 72 ppp et l’image de prévisualisation générée est dimensionnée à 2 048 x 2 048 pixels. Pour un déploiement standard, vous pouvez augmenter la résolution sur une valeur minimale de 150 ppp ou plus. Par exemple, un document de format Lettre US à 300 ppp doit avoir une largeur et une hauteur maximales de 2 550 x 3 300 pixels, respectivement.
+Using the default process arguments, the first page of a PDF/AI document is rasterized at 72 ppi and the generated preview image is sized at 2048 x 2048 pixels. For a typical deployment, you can increase the resolution to a minimum of 150 ppi or more. For example, a US letter size document at 300 ppi requires a maximum width and height of 2550 x 3300 pixels, respectively.
 
-Largeur max. et Hauteur max. limitent la résolution à laquelle la pixellisation doit être effectuée. Par exemple, si vous ne modifiez pas les valeurs maximales et que la résolution est définie sur 300 ppi, un document de lettre américaine est pixellisé à 186 ppi. En d’autres termes, le document fait 1 581 x 2 046 pixels.
+Max Width and Max Height limit the resolution at which to rasterize. For example, if the maximums are unchanged, and Resolution is set to 300 ppi, a US Letter document is rasterized at 186 ppi. That is, the document is 1581 x 2046 pixels.
 
-Une valeur maximale est définie pour le composant de processus `Rasterize PDF/AI Image Preview Rendition`, afin de s’assurer qu’il ne crée pas d’images exagérément grandes en mémoire. Ces images volumineuses peuvent, en effet, dépasser la capacité de mémoire allouée à la machine virtuelle Java™ (JVM). Il faut veiller à fournir suffisamment de mémoire à la machine virtuelle Java pour gérer le nombre configuré de workflows parallèles, de sorte que chacun d’eux soit en mesure de créer une image à la taille maximale configurée.
+The `Rasterize PDF/AI Image Preview Rendition` process component has a maximum defined to ensure that it does not create overly large images in memory. Such large images can overflow the memory provided to the JVM (Java&trade; Virtual Machine). Care must be taken to provide the JVM with enough memory to manage the configured number of parallel workflows, with each having the potential to create an image at the maximum configured size. -->
 
-### Format de fichier InDesign (INDD) {#indesign-indd-file-format}
+<!--
+### InDesign (INDD) file format {#indesign-indd-file-format}
 
-Si vous envisagez de prendre en charge l’assimilation de fichiers INDD de manière à pouvoir générer un rendu dynamique de ce format de fichier, consultez les informations suivantes avant de créer des paramètres d’image prédéfinis.
+If you intend to support the ingestion of INDD files so that you can generate dynamic rendition of this file format, review the following information before you create Image Presets.
 
-Dans le cas des fichiers InDesign, les sous-ressources ne sont extraites que si Adobe InDesign Server est intégré à Experience Manager. Les ressources référencées sont liées en fonction de leurs métadonnées. InDesign Server n’est pas nécessaire pour la liaison. Cependant, les ressources référencées doivent être présentes dans Experience Manager avant que les fichiers InDesign soient traités, pour que les liens soient créés entre les fichiers InDesign et les ressources référencées.
+For InDesign files, sub assets are extracted only if the Adobe InDesign Server is integrated with Experience Manager. Referenced assets are linked based on their metadata. InDesign Server is not required for linking. However, the referenced assets must be present within Experience Manager before the InDesign files are processed for the links to be created between the InDesign files and the referenced assets.
 
-<!-- See [Integrate Experience Manager Assets with InDesign Server](/help/assets/indesign.md). -->
+See [Integrate Experience Manager Assets with InDesign Server](/help/assets/indesign.md).
 
-Le composant Extraction de médias du workflow `DAM Update Asset` exécute plusieurs scripts d’extension préconfigurés pour traiter des fichiers InDesign.
+The Media Extraction process component in the `DAM Update Asset` workflow runs several pre-configured Extend Scripts to process InDesign files.
 
-![Chemins ExtendScript dans les arguments du processus Extraction de médias](/help/assets/dynamic-media/assets/6_5_mediaextractionprocess.png)
+![The ExtendScript paths in the arguments of Media Extraction process](/help/assets/dynamic-media/assets/6_5_mediaextractionprocess.png)
 
-Les chemins ExtendScript dans les arguments du composant de processus Extraction de médias du workflow Ressource de mise à jour de la gestion des ressources numériques .
+The ExtendScript paths in the arguments of the Media Extraction process component in the DAM Update Asset workflow.
 
-Les scripts suivants sont utilisés par l’intégration Dynamic Media :
+The following scripts are used by Dynamic Media integration:
 
 
-| Nom ExtendScript | Valeur par défaut | Description |
+|ExtendScript name | Default | Description |
 |---|---|---|
-| ThumbnailExport.jsx | Oui | Génère un rendu `thumbnail.jpg` de 300 PPP optimisé et transformé en rendu PTIFF par le composant de processus `Dynamic Media Process Image Assets`. |
-| JPEGPagesExport.jsx | Oui | Génère une sous-ressource JPEG de 300 PPP pour chaque page. Une sous-ressource JPEG est une véritable ressource stockée sous la ressource InDesign. Le workflow `DAM Update Asset` l’optimise et la convertit en PTIFF. |
-| PDFPagesExport.jsx | Non | Génère une sous-ressource PDF pour chaque page. La sous-ressource PDF est traitée comme indiqué précédemment. Étant donné que le PDF ne contient qu’une seule page, aucune sous-ressource n’est générée. |
+| ThumbnailExport.jsx | Yes  | Generates a 300 PPI `thumbnail.jpg` rendition that is optimized and turned into a PTIFF rendition by `Dynamic Media Process Image Assets` process component.  |
+| JPEGPagesExport.jsx | Yes | Generates a 300 PPI JPEG subasset for each page. The JPEG subasset is a real asset stored under the InDesign asset. The `DAM Update Asset` workflow optimizes and converts it into a PTIFF. |
+| PDFPagesExport.jsx | No | Generates a PDF subasset for each page. The PDF subasset gets processed as described earlier. Because the PDF contains a single page only, no subassets are generated. |
+-->
 
-### Configuration de la taille de la miniature de l’image {#configuring-image-thumbnail-size}
+<!--
+### Configure the image thumbnail size {#configuring-image-thumbnail-size}
 
-Vous pouvez définir la taille des miniatures en configurant ces paramètres dans le workflow **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques (DAM)]**. Le workflow comprend deux étapes au cours desquelles vous pouvez configurer la taille de miniature des ressources d’images. Un fichier (**[!UICONTROL Ressources d’image du processus de média dynamique]**) est utilisé pour les ressources d’images dynamiques. L’autre (**[!UICONTROL Miniatures des processus]**) est utilisé pour la génération de miniatures statiques ou lorsque tous les autres processus ne génèrent pas de miniatures. Quoi qu’il en soit, *les deux* doivent avoir les mêmes paramètres.
+You can configure the size of thumbnails by configuring those settings in the **[!UICONTROL DAM Update Asset]** workflow. There are two steps in the workflow where you can configure the thumbnail size of image assets. One (**[!UICONTROL Dynamic Media Process Image Assets]**) is used for dynamic image assets. The other (**[!UICONTROL Process Thumbnails]**) is used for static thumbnail generation or when all other processes fail to generate thumbnails. Regardless, *both* must have the same settings.
 
-L’étape **[!UICONTROL Dynamic Media Process Image Assets]** utilise le serveur d’images pour générer des miniatures, indépendamment de la configuration appliquée à l’étape **[!UICONTROL Process Thumbnails]**. La génération de miniatures en passant par l’étape **[!UICONTROL Miniatures des processus]** constitue la méthode la plus lente et la plus gourmande en mémoire.
+The **[!UICONTROL Dynamic Media Process Image Assets]** step uses the image server to generate thumbnails, independently of the configuration applied to the **[!UICONTROL Process Thumbnails]** step. Generating thumbnails through the **[!UICONTROL Process Thumbnails]** step is the slowest and most memory intensive way to create thumbnails.
 
-Le dimensionnement des miniatures est défini au format suivant :**[!UICONTROL largeur:height:centrer]**, par exemple `80:80:false`. La largeur et la hauteur déterminent la taille en pixels de la miniature. La valeur « centrer » est soit false soit true. Si elle est définie sur true, elle indique que la miniature a exactement la taille spécifiée dans la configuration. Si l’image redimensionnée est plus petite, elle est centrée dans la miniature.
+Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:center]**, for example, `80:80:false`. The width and height determine the size in pixels of the thumbnail. The center value is either false or true. If set to true, it indicates that the thumbnail image has exactly the size given in the configuration. If the resized image is smaller, it is centered within the thumbnail.
 
 >[!NOTE]
 >
->* La taille des miniatures pour les fichiers EPS est configurée à l’étape **[!UICONTROL Miniatures EPS]**, dans l’onglet **[!UICONTROL Arguments]** sous Miniatures.
+>* Thumbnail sizes for EPS files are configured in the **[!UICONTROL EPS thumbnails]** step, in the **[!UICONTROL Arguments]** tab under Thumbnails.
 >
->* Les tailles des miniatures pour les vidéos sont configurées à l’étape **[!UICONTROL Miniatures FFmpeg]**, dans l’onglet **[!UICONTROL Processus]** sous **[!UICONTROL Arguments]**.
+>* Thumbnail sizes for videos are configured in the **[!UICONTROL FFmpeg thumbnails]** step, in the **[!UICONTROL Process]** tab under **[!UICONTROL Arguments]**.
 >
 
-**Pour configurer la taille de la miniature de l’image :**
+**To configure the image thumbnail size:**
 
-1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]** > **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]** > **[!UICONTROL Modifier]**.
-1. Sélectionnez l’étape **[!UICONTROL Ressources d’image du processus de média dynamique]**, puis sélectionnez l’onglet **[!UICONTROL Miniatures]**. Modifiez la taille de la miniature, si nécessaire, puis sélectionnez **[!UICONTROL OK]**.
+1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL DAM Update Asset]** > **[!UICONTROL Edit]**.
+1. Select the **[!UICONTROL Dynamic Media Process Image Assets]** step and select the **[!UICONTROL Thumbnails]** tab. Change the thumbnail size, as needed, then select **[!UICONTROL OK]**.
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
-1. Sélectionnez l’étape **[!UICONTROL Miniatures des processus]**, puis sélectionnez l’onglet **[!UICONTROL Miniatures]**. Modifiez la taille de la miniature, si nécessaire, puis sélectionnez **[!UICONTROL OK]**.
+1. Select the **[!UICONTROL Process Thumbnails]** step, then select the **[!UICONTROL Thumbnails]** tab. Change the thumbnail size, as needed, then select **[!UICONTROL OK]**.
 
    >[!NOTE]
    >
-   >Les valeurs de l’argument des miniatures de l’étape **[!UICONTROL Miniatures des processus]** doivent correspondre à l’argument des miniatures de l’étape **[!UICONTROL Ressources d’image du processus Dynamic Media]**.
+   >The values in the thumbnails argument in the **[!UICONTROL Process Thumbnails]** step must match the thumbnails argument in the **[!UICONTROL Dynamic Media Process Image Assets]** step.
 
-1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les modifications apportées au workflow.
+1. Select **[!UICONTROL Save]** to save the changes to the workflow.
+-->
 
-### Augmentation du nombre de paramètres prédéfinis d’image affichés {#increasing-or-decreasing-the-number-of-image-presets-that-display}
+### Augmentation du nombre de paramètres d’image prédéfinis affichés {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
 Les paramètres d’image prédéfinis que vous créez sont disponibles sous la forme de rendus dynamiques lorsque vous prévisualisez des ressources. Experience Manager affiche différents rendus dynamiques lors de l’affichage d’un fichier à partir de **[!UICONTROL Affichage des détails > Rendus]**. Vous pouvez augmenter ou diminuer la limite des rendus affichés.
 
-**Pour augmenter ou diminuer le nombre de paramètres prédéfinis d’image affichés :**
+**Pour augmenter ou diminuer le nombre de paramètres d’image prédéfinis affichés :**
 
-1. Accédez à CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
+1. Accédez à CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Accédez au nœud de liste des paramètres d’image prédéfinis à l’adresse `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`
 
    ![increase_decreasethenumberofimagepresetsthatdisplay](assets/increase_decreasethenumberofimagepresetsthatdisplay.png)
@@ -226,9 +255,9 @@ Si vous ne les renseignez pas, Experience Manager reçoit un message indiquant q
 >
 >![chlimage_1-79](assets/chlimage_1-498.png)
 >
->Les paramètres d’image prédéfinis et les ressources images sont automatiquement publiés.
+>Les paramètres d’image prédéfinis et les ressources d’images sont automatiquement publiés.
 
-### Options des paramètres prédéfinis d’image {#image-preset-options}
+### Options des paramètres d’image prédéfinis {#image-preset-options}
 
 Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous disposez des options décrites dans cette section. En outre, Adobe recommande les options suivantes (correspondant aux « bonnes pratiques ») pour commencer :
 
@@ -297,7 +326,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
     </ul>
     <div>
       L’accentuation est décrite dans la vidéo
-     <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Utilisation de l’accentuation des images avec Experience Manager Dynamic Media</a>, dans la rubrique d’aide en ligne <a href="https://experienceleague.adobe.com/fr/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">Accentuation d’une image</a> et dans le fichier téléchargeable au format PDF <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf?lang=fr">Bonnes pratiques pour l’accentuation des images dans Dynamic Media Classic</a>.
+     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Utilisation de l’accentuation des images avec Experience Manager Dynamic Media</a>, dans la rubrique d’aide en ligne <a href="https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">Accentuation d’une image</a> et dans le fichier téléchargeable au format PDF <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Bonnes pratiques pour l’accentuation des images dans Dynamic Media Classic</a>.
     </div> </td>
   </tr>
   <tr>
@@ -317,7 +346,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
   </tr>
   <tr>
    <td><strong>Modificateur d’image</strong></td>
-   <td><p>Au-delà des paramètres d’image courants disponibles dans l’IU, Dynamic Media prend en charge de nombreuses modifications d’image avancées que vous pouvez spécifier dans le champ <strong>Modificateurs d’images</strong>. Ces paramètres sont définis dans la <a href="https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview">référence des commandes du protocole de serveur d’images</a>.</p> <p>Important : La fonctionnalité suivante répertoriée dans l’API n’est pas prise en charge :</p>
+   <td><p>Au-delà des paramètres d’image courants disponibles dans l’UI, Dynamic Media prend en charge de nombreuses modifications d’image avancées que vous pouvez spécifier dans le champ <strong>Modificateurs d’images</strong>. Ces paramètres sont définis dans la <a href="https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview">référence des commandes du protocole de serveur d’images</a>.</p> <p>Important : La fonctionnalité suivante répertoriée dans l’API n’est pas prise en charge :</p>
     <ul>
      <li>Commandes de base de création de modèles et de rendu de texte : <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> et <code>textPs=</code></li>
      <li>Commandes de localisation : <code>locale=</code> et <code>req=xlate</code></li>
@@ -334,7 +363,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
 
 ### Définir des options de paramètre prédéfini d’image à l’aide de modificateurs d’image {#defining-image-preset-options-with-image-modifiers}
 
-Outre les options disponibles dans les onglets Simple et Avancé, vous pouvez définir des modificateurs d’image afin de disposer d’un plus grand nombre d’options lors de la définition de paramètres d’image prédéfinis. Le rendu des images repose sur l’API de rendu d’images de Dynamic Media et est défini en détail dans la [Référence du protocole HTTP](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api).
+Outre les options disponibles dans les onglets Simple et Avancé, vous pouvez définir des modificateurs d’image afin de disposer d’un plus grand nombre d’options lors de la définition de paramètres d’image prédéfinis. Le rendu des images repose sur l’API de rendu d’images de Dynamic Media et est défini en détail dans la [Référence du protocole HTTP](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api).
 
 Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l’aide des modificateurs d’image.
 
@@ -342,7 +371,7 @@ Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l
 >
 >Certains modificateurs d’image [ne peuvent pas être utilisés dans Experience Manager](#advanced-tab-options).
 
-* [op_invert](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert) : inverse chaque composant de couleur pour générer un effet d’image négative.
+* [op_invert](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert) : inverse chaque composant de couleur pour générer un effet d’image négative.
 
   ```xml {.line-numbers}
   &op_invert=1
@@ -350,7 +379,7 @@ Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l
 
   ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur) : applique un effet de flou à l’image.
+* [op_blur](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur) : applique un effet de flou à l’image.
 
   ```xml {.line-numbers}
   &op_blur=7
@@ -366,7 +395,7 @@ Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l
 
   ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [op_brightness](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness) : augmente ou diminue la luminosité.
+* [op_brightness](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness) : augmente ou diminue la luminosité.
 
   ```xml {.line-numbers}
   &op_brightness=58
@@ -374,7 +403,7 @@ Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l
 
   ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opac](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac) : permet de régler l’opacité de l’image. Cet attribut vous permet de diminuer l’opacité du premier plan.
+* [opac](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac) : permet de régler l’opacité de l’image. Cet attribut vous permet de diminuer l’opacité du premier plan.
 
   ```xml {.line-numbers}
   opac=29
