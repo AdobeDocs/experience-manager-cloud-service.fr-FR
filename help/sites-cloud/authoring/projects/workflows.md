@@ -31,12 +31,12 @@ Selon le modèle de projet que vous sélectionnez, certains workflows sont dispo
 | Demander le lancement | x |  |
 | Demander une page de destination | x |  |
 | Demander un e-mail | x | |
-| DAM Créer copie linguistique&amp;ast; |  | x |
-| DAM Créer et traduire copie linguistique&amp;ast; |   | x |
+| DAM Créer copie linguistique&ast; |  | x |
+| DAM Créer et traduire copie linguistique&ast; |   | x |
 
 >[!NOTE]
 >
->&amp;ast; Ces workflows ne sont pas lancés via la mosaïque **Workflow** dans les projets. Reportez-vous à la section [Création de copies de langue pour les ressources](/help/sites-cloud/administering/translation/managing-projects.md).
+>&ast; Ces workflows ne sont pas lancés via la mosaïque **Workflow** dans les projets. Reportez-vous à la section [Création de copies de langue pour les ressources](/help/sites-cloud/administering/translation/managing-projects.md).
 
 Les étapes de démarrage et d’achèvement des workflows sont les mêmes, quel que soit le workflow choisi. Seules les étapes changent.
 

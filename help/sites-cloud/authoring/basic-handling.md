@@ -91,13 +91,13 @@ L’en-tête est toujours présent en haut de l’écran. Bien que la plupart de
 
 ![En-tête de navigation](/help/sites-cloud/authoring/assets/basic-handling-navigation-bar.png)
 
-* [ Navigation globale ](#global-navigation) - Sélectionnez le lien **Adobe Experience Manager** pour naviguer entre les consoles.
+* [&#x200B; Navigation globale &#x200B;](#global-navigation) - Sélectionnez le lien **Adobe Experience Manager** pour naviguer entre les consoles.
 
   ![Navigation globale](/help/sites-cloud/authoring/assets/basic-handling-global-navigation.png)
 
 * Commentaires
 
-  ![Bouton Commentaires ](/help/sites-cloud/authoring/assets/basic-handling-feedback.png)
+  ![Bouton Commentaires &#x200B;](/help/sites-cloud/authoring/assets/basic-handling-feedback.png)
 
 * Votre organisation IMS : sélectionnez cette option pour la modifier si nécessaire.
 
@@ -105,7 +105,7 @@ L’en-tête est toujours présent en haut de l’écran. Bien que la plupart de
 
   ![Bouton Solutions](/help/sites-cloud/authoring/assets/basic-handling-solutions.png)
 
-* [Recherche](/help/sites-cloud/authoring/search.md) - Vous pouvez également utiliser la [ ](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)touche de raccourci`/` (barre oblique) pour appeler la recherche à partir de n’importe quelle console.
+* [Recherche](/help/sites-cloud/authoring/search.md) - Vous pouvez également utiliser la [&#x200B; &#x200B;](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)touche de raccourci`/` (barre oblique) pour appeler la recherche à partir de n’importe quelle console.
 
   ![Icône Rechercher](/help/sites-cloud/authoring/assets/basic-handling-search-icon.png)
 
@@ -113,7 +113,7 @@ L’en-tête est toujours présent en haut de l’écran. Bien que la plupart de
 
   ![Bouton Aide](/help/sites-cloud/authoring/assets/basic-handling-help-icon.png)
 
-* [ Notifications ](/help/sites-cloud/authoring/inbox.md) -   Cette icône porte un badge indiquant le nombre de notifications incomplètes actuellement attribuées.
+* [&#x200B; Notifications &#x200B;](/help/sites-cloud/authoring/inbox.md) -   Cette icône porte un badge indiquant le nombre de notifications incomplètes actuellement attribuées.
 
   ![Bouton Notifications](/help/sites-cloud/authoring/assets/basic-handling-notifications.png)
 
