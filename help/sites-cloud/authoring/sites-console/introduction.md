@@ -1,14 +1,15 @@
 ---
 title: Console Sites
 description: Découvrez comment utiliser la console Sites pour gérer et organiser vos pages AEM.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1653'
-ht-degree: 46%
+source-wordcount: '1659'
+ht-degree: 48%
 
 ---
 
@@ -85,7 +86,7 @@ Une fois que vous cliquez dessus, les options affichées sont appropriées à la
 * [Site](/help/sites-cloud/administering/site-creation/create-site.md)
 * [Live Copy](/help/sites-cloud/administering/msm/overview.md)
 * [Launch](/help/sites-cloud/authoring/launches/overview.md)
-* [Copie de langue](/help/sites-cloud/administering/translation/overview.md)
+* [Copie linguistique](/help/sites-cloud/administering/translation/overview.md)
 * [Rapport CSV](/help/sites-cloud/authoring/sites-console/csv-export.md)
 
 Consultez les liens vers ces fonctionnalités pour plus d’informations sur leur fonctionnement.
@@ -230,7 +231,7 @@ Sélectionnez la barre de sélection verticale et faites glisser l’élément v
 
 Chaque fois qu’une ressource est sélectionnée, vous pouvez effectuer différentes actions sur l’élément sélectionné. Ces actions s’affichent dans la barre d’outils d’actions.
 
-![&#x200B; Barre d’outils Actions &#x200B;](assets/introduction-actions-toolbar.png)
+![ Barre d’outils Actions ](assets/introduction-actions-toolbar.png)
 
 La barre d’outils des actions ne s’affiche que lorsqu’une ressource est sélectionnée dans la console. L’action disponible dans la barre d’outils d’actions change pour refléter les actions que vous pouvez effectuer sur les éléments spécifiques sélectionnés. Les actions les plus courantes sont les suivantes :
 
@@ -264,7 +265,7 @@ En outre, il offre la possibilité de créer des actions liées à la page.
 
 Vous pouvez déterminer facilement le modèle sur lequel la page est basée en sélectionnant cette dernière dans la vue [**Colonnes**](/help/sites-cloud/authoring/basic-handling.md#column-view) ou [**Liste**](/help/sites-cloud/authoring/basic-handling.md#list-view).
 
-## Assistant AI dans AEM
+## Assistant IA dans AEM
 
-Pour les clients qui ont [rempli les critères prérequis](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), l’assistant AI dans AEM est disponible pour les utilisateurs de leur entreprise. Voir [Assistant AI dans AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
+Pour les clients et clientes qui ont [rempli les conditions préalables](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), l’assistant IA dans AEM est disponible pour les utilisateurs et utilisatrices de leur entreprise. Voir [Assistant IA dans AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
 

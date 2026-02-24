@@ -1,20 +1,21 @@
 ---
 title: Utilisation des workflows
 description: Les workflows d’AEM vous permettent d’automatiser une série d’étapes exécutées sur une page ou une ressource.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: ed157646-abb3-45c6-bafd-7889bd93fdf3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 88%
+source-wordcount: '183'
+ht-degree: 86%
 
 ---
 
 # Utilisation des workflows {#working-with-workflows}
 
-AEM Workflows vous permet d’automatiser une série d’étapes effectuées sur (une ou plusieurs) pages et/ou ressources.
+Les workflows AEM vous permettent d’automatiser une série d’étapes exécutées sur une ou plusieurs pages et/ou ressources.
 
 Par exemple, lors de la publication, un éditeur doit réviser le contenu, avant qu’un administrateur du site active la page. Un workflow qui automatise cet exemple avertit chaque participant lorsqu’il est temps qu’il effectue sa tâche :
 

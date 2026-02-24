@@ -1,13 +1,14 @@
 ---
 title: Fragments de contenu
 description: Les fragments de contenu Adobe Experience Manager as a Cloud Service vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant du canal, qui peut également être utilisé lors de la création de vos pages.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1272'
+source-wordcount: '1278'
 ht-degree: 84%
 
 ---

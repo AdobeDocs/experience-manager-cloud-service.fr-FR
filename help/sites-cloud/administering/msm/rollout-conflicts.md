@@ -1,14 +1,15 @@
 ---
 title: Conflits de déploiement
-description: Découvrez comment gérer et résoudre les conflits de déploiement en cas de gestion de plusieurs sites.
+description: Découvrez comment gérer et résoudre les conflits de déploiement de Multi-Site Manager.
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 64%
+source-wordcount: '925'
+ht-degree: 63%
 
 ---
 
@@ -26,7 +27,7 @@ Pour vous assurer que le déploiement n’est pas bloqué, les définitions poss
 * Quelles pages sont renommées et comment
 * Impact sur le contenu publié
 
-Le comportement par défaut d’AEM (Adobe Experience Manager) prêt à l’emploi est que le contenu publié n’est pas affecté. Ainsi, si une page créée manuellement dans la branche Live Copy a été publiée, ce contenu est toujours publié après la gestion du conflit et le déploiement.
+Le comportement par défaut de la version commerciale de Adobe Experience Manager (AEM) est que le contenu publié n’est pas affecté. Ainsi, si une page créée manuellement dans la branche Live Copy a été publiée, ce contenu est toujours publié après la gestion du conflit et le déploiement.
 
 Outre les fonctionnalités standard, des gestionnaires de conflit personnalisés peuvent être ajoutés pour mettre en œuvre différentes règles. Ils peuvent également permettre des actions de publication sous la forme d’un processus individuel.
 

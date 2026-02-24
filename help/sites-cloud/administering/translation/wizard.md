@@ -1,24 +1,25 @@
 ---
-title: Assistant Copie de la langue
-description: Découvrez comment utiliser l’Assistant Copie de la langue dans AEM.
+title: Assistant Copie linguistique
+description: Découvrez comment utiliser l’Assistant Copie linguistique dans AEM.
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '276'
 ht-degree: 46%
 
 ---
 
-# Assistant Copie de la langue {#language-copy-wizard}
+# Assistant Copie linguistique {#language-copy-wizard}
 
-L’assistant Copie de la langue est une expérience guidée pour créer et gérer la structure du contenu multilingue. L’assistant facilite et accélère la création d’une copie de langue.
+L’assistant Copie linguistique est une expérience guidée pour créer et gérer la structure du contenu multilingue. L’assistant facilite et accélère la création d’une copie linguistique.
 
 >[!TIP]
 >
->Si vous êtes un débutant dans la traduction de contenu, reportez-vous à la section [Parcours de traduction de sites](/help/journey-sites/translation/overview.md), qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide d’AEM de puissants outils de traduction, idéaux pour ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
+>Si vous êtes un débutant dans la traduction de contenu, consultez [Parcours de traduction de sites](/help/journey-sites/translation/overview.md), qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide d’outils de traduction puissants d’AEM, idéaux pour ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
 
 >[!NOTE]
 >
@@ -28,7 +29,7 @@ Pour accéder à cet assistant :
 
 1. Dans la console Sites, sélectionnez une page, puis sélectionnez **Créer** et **Copier la langue**.
 
-   ![Création d’une copie de langue à partir de l’assistant](../assets/language-copy-wizard.png)
+   ![Création d’une copie linguistique à partir de l’assistant](../assets/language-copy-wizard.png)
 
 1. L’assistant s’ouvre à l’étape **Sélectionner le Source** qui vous permet d’ajouter ou de supprimer des pages. Vous avez également la possibilité d’inclure ou d’exclure les sous-pages. Sélectionnez les pages à inclure et sélectionnez **Suivant**.
 

@@ -1,14 +1,15 @@
 ---
 title: Disposition réactive
 description: AEM vous permet de créer une mise en page réactive pour vos pages à l’aide du composant Conteneur de mises en page .
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1789'
-ht-degree: 81%
+source-wordcount: '1795'
+ht-degree: 82%
 
 ---
 
@@ -26,7 +27,7 @@ AEM vous propose une disposition réactive des pages à l’aide du composant **
 
 ## Vue d’ensemble {#overview}
 
-Le composant **conteneur de disposition** fournit un système de paragraphes qui permet de positionner des composants sur une grille réactive. Cette grille peut réorganiser la disposition en fonction de la taille et du format de la fenêtre/l’appareil. Le composant est utilisé avec le [**mode Disposition**](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector), ce qui permet de créer et de modifier votre disposition réactive en fonction de l’appareil.
+Le composant **Conteneur de mise en page** offre un système de paragraphe qui permet de positionner des composants sur une grille réactive. Cette grille peut réorganiser la disposition en fonction de la taille et du format de la fenêtre/l’appareil. Le composant est utilisé avec le [**mode Disposition**](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector), ce qui permet de créer et de modifier votre disposition réactive en fonction de l’appareil.
 
 Le conteneur de mise en page :
 

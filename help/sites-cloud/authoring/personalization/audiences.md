@@ -1,13 +1,14 @@
 ---
 title: Gestion des audiences
-description: La console Audiences vous permet de créer, d’organiser et de gérer les audiences associées à votre compte Adobe Target ou de gérer des segments pour ContextHub.
+description: 'La console Audiences vous permet de créer, d’organiser et de gérer les audiences associées à votre compte Adobe Target ou de gérer des segments pour ContextHub.  '
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '891'
 ht-degree: 86%
 
 ---
@@ -36,7 +37,7 @@ Vous pouvez créer un segment ContextHub dans la console Audiences ou durant le 
 
 Pour créer un segment ContextHub dans la console Audiences :
 
-1. Dans la console Navigation, sélectionnez **Personalization**. Sélectionnez **Audiences**.
+1. Dans la console de navigation, sélectionnez **Personalization**. Sélectionnez **Audiences**.
 1. Sélectionnez **Créer un segment ContextHub**.
 
    ![Création d’un segment](/help/sites-cloud/authoring/assets/audiences-create-segment.png)
@@ -45,7 +46,7 @@ Pour créer un segment ContextHub dans la console Audiences :
 
    >[!NOTE]
    >
-   >Vous pouvez trier la liste modifiée en appuyant ou en cliquant sur **Modified** pour la trier par ordre décroissant afin d’afficher toutes les audiences créées.
+   >Vous pouvez trier la liste modifiée en appuyant ou en cliquant sur **Modifié** afin de trier par ordre décroissant pour afficher les audiences créées.
 
 Pour plus d’informations sur la création de segments à l’aide de ContextHub, voir la documentation Configuration de la segmentation avec ContextHub. <!--For further detail about creating segments using ContextHub, see [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md).-->
 
@@ -63,19 +64,19 @@ Lorsque vous utilisez plusieurs règles, celles-ci sont combinées par l’opér
 
 Pour créer une audience Adobe Target :
 
-1. Dans la console Navigation, sélectionnez **Personalization**. Sélectionnez **Audiences**.
+1. Dans la console de navigation, sélectionnez **Personalization**. Sélectionnez **Audiences**.
 
    ![Accès aux audiences](/help/sites-cloud/authoring/assets/audiences-navigation.png)
 
-1. Dans la console Audiences, sélectionnez **Créer**, puis **Créer une audience cible**.
+1. Dans la console Audiences, sélectionnez **Créer** puis **Créer l’audience cible**.
 
-   ![Création d’un public cible](/help/sites-cloud/authoring/assets/audiences-create-target.png)
+   ![Création d’une audience cible](/help/sites-cloud/authoring/assets/audiences-create-target.png)
 
-1. Dans la boîte de dialogue **Configuration Adobe Target**, sélectionnez la configuration cible et sélectionnez **OK**.
+1. Dans la boîte de dialogue **Configuration d’Adobe Target**, sélectionnez la configuration cible et sélectionnez **OK**.
 1. Dans la zone Règle#1, sélectionnez le type d’attribut et saisissez toutes les informations d’attribut dans les champs disponibles. Lorsque vous avez terminé, cochez la case située à droite de l’attribut pour l’enregistrer. Voir [Attributs et leurs options](#attributes-and-their-options) pour plus d’informations sur tous les attributs.
 1. Cliquez sur **Ajouter une règle** pour ajouter une autre règle. Entrez autant de règles que nécessaire. Les règles sont combinées avec l’opérateur booléen ET, ce qui signifie que l’audience doit répondre à toutes les exigences de chaque règle pour être éligible à une activité.
 1. Sélectionnez **Suivant**.
-1. Saisissez un nom pour l’audience et sélectionnez **Enregistrer**.
+1. Saisissez le nom de l’audience et sélectionnez **Enregistrer**.
 1. Sélectionnez **Enregistrer**. Votre audience est répertoriée dans la liste des audiences.
 
 ### Attributs et leurs options {#attributes-and-their-options}
@@ -100,6 +101,6 @@ Vous pouvez créer des règles de ciblage pour chacun des attributs suivants :
 
 Vous pouvez modifier n’importe quelle audience ContextHub à partir de la console Audiences. Vous pouvez également modifier des audiences Adobe Target à condition qu’elles aient été créées dans AEM :
 
-1. Dans la console Navigation, sélectionnez **Personalization**. Sélectionnez **Audiences**.
-1. Sélectionnez l’icône en regard du segment ContextHub que vous souhaitez modifier, puis sélectionnez **Modifier**.
+1. Dans la console de navigation, sélectionnez **Personalization**. Sélectionnez **Audiences**.
+1. Sélectionnez l’icône en regard du segment ContextHub à modifier, puis sélectionnez **Modifier**.
 1. Apportez toutes les modifications dans l’éditeur de segment. Pour plus d’informations, voir la documentation de ContextHub. <!--See the [ContextHub](/help/sites-administering/contexthub-config.md) documentation for more information.-->

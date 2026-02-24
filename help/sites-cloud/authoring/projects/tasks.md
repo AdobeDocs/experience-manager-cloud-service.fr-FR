@@ -1,14 +1,15 @@
 ---
 title: Utilisation de tâches
 description: Les tâches représentent des éléments de travail à effectuer sur le contenu et sont utilisées dans les projets pour déterminer le niveau d’achèvement des tâches en cours
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 95%
+source-wordcount: '579'
+ht-degree: 94%
 
 ---
 
@@ -50,7 +51,7 @@ Cliquez sur les points de suspension (...) dans la mosaïque Tâches pour affich
 
 #### Détails de la tâche {#task-details}
 
-Pour plus d’informations sur une tâche particulière, dans la liste des tâches, sélectionnez la tâche et **Ouvrir**.
+Pour plus d’informations sur une tâche particulière, sélectionnez la tâche dans la Liste des tâches, puis **Ouvrir**.
 
 ![Détails de la tâche](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
@@ -66,7 +67,7 @@ Vous pouvez ajouter de nouvelles tâches aux projets. Ces tâches apparaissent e
 
 Pour ajouter une tâche, procédez comme suit :
 
-1. Dans le projet, dans la mosaïque **Tâches**, sélectionnez l’icône + . La fenêtre **Ajouter une tâche** s’affiche.
+1. Dans le projet, dans la mosaïque **Tâches**, sélectionnez l’icône +. La fenêtre **Ajouter une tâche** s’affiche.
 1. Saisissez des informations sur la tâche. Le titre de la tâche et le groupe auquel elle est affectée sont obligatoires. Des informations supplémentaires telles que le chemin d’accès au contenu, la description, la priorité de la tâche et la date d’échéance sont facultatives. En outre, vous pouvez sélectionner l’onglet **Avancé** pour saisir le nom de la tâche, qui est utilisé pour nommer l’URL.
 
    ![Ajouter une tâche](/help/sites-cloud/authoring/assets/projects-add-task.png)

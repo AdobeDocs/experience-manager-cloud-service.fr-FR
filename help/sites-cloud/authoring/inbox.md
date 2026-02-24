@@ -1,14 +1,15 @@
 ---
 title: Votre boîte de réception
 description: Découvrez comment utiliser les notifications qui arrivent dans votre boîte de réception pour gérer vos tâches.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 89%
+source-wordcount: '916'
+ht-degree: 88%
 
 ---
 
@@ -24,7 +25,7 @@ Vous pouvez recevoir des notifications de diverses sections d’AEM, y compris d
       * Ils sont générés par l’étape **Participant** du workflow.
    * Éléments d’échec, pour permettre aux administrateurs de relancer l’étape qui a échoué.
 
-Vous recevez ces notifications dans votre propre boîte de réception, où vous pouvez les afficher et agir sur la base de celles-ci.
+Vous recevez ces notifications dans votre propre boîte de réception où vous pouvez les afficher et agir dessus.
 
 >[!NOTE]
 >
@@ -36,7 +37,7 @@ Vous recevez ces notifications dans votre propre boîte de réception, où vous 
 
 ## Boîte de réception dans l’en-tête {#inbox-in-the-header}
 
-Dans les deux consoles, le nombre actuel d’éléments présents dans votre boîte de réception est indiqué dans l’en-tête. L’indicateur peut également être ouvert pour permettre un accès rapide aux pages nécessitant une ou plusieurs actions ou un accès à la boîte de réception :
+Dans les deux consoles, le nombre actuel d’éléments présents dans votre boîte de réception est indiqué dans l’en-tête. L’indicateur peut également être ouvert pour permettre un accès rapide aux pages nécessitant des actions ou un accès à la boîte de réception :
 
 ![Aperçu de la boîte de réception dans l’en-tête](/help/sites-cloud/authoring/assets/inbox-header.png)
 
@@ -145,15 +146,15 @@ Pour les deux vues (Liste et Calendrier), vous pouvez définir des paramètres 
    * Un assistant d&#39;action démarre ;
    * Une page de documentation s’ouvre
 
-   Par exemple, **Déléguer** ouvre une boîte de dialogue :
+   Par exemple, la mention **Déléguer** ouvre une boîte de dialogue :
 
    ![Déléguer la tâche de boîte de réception](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
 
    Selon qu’une boîte de dialogue, une page de documentation ou un assistant a été ouvert, vous pouvez :
 
-   * Confirmez l’action appropriée, par exemple en la réaffectant.
+   * Confirmez l’action appropriée, par exemple réaffecter.
    * Annuler l’action
-   * Sélectionnez la flèche Précédent pour revenir à la boîte de réception. Par exemple, si un assistant d’action ou une page de documentation a été ouvert, vous pouvez revenir à la boîte de réception.
+   * Sélectionnez la flèche vers l’arrière pour revenir à la boîte de réception. Par exemple, si une page de documentation ou un assistant d’action a été ouvert, vous pouvez revenir à la boîte de réception.
 
 ## Création d’une tâche {#creating-a-task}
 

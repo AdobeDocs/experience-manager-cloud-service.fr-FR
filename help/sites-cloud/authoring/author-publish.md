@@ -1,13 +1,14 @@
 ---
 title: Création et publication de concepts
-description: Découvrez les concepts de création dans AEM, à l’aide des environnements de création, de prévisualisation et de publication.
+description: Découvrez les concepts de création dans AEM à l’aide des environnements de création, de prévisualisation et de publication.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '444'
 ht-degree: 30%
 
 ---

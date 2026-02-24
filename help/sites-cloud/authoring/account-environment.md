@@ -1,14 +1,15 @@
 ---
 title: Configuration de votre environnement de compte
 description: Adobe Experience Manager (AEM) vous procure les outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 86%
+source-wordcount: '507'
+ht-degree: 85%
 
 ---
 
@@ -35,9 +36,9 @@ La boîte de dialogue des paramètres **Utilisateur** vous donne accès aux opti
 
 ### Mes préférences {#my-preferences}
 
-La boîte de dialogue **Mes préférences** est accessible par le biais de l’option [Utilisateur](#user-settings) de l’en-tête.
+La boîte de dialogue **Mes préférences** est accessible par le biais de l’option [Utilisateur](#user-settings) dans l’en-tête.
 
-Chaque utilisateur peut définir ses propriétés préférées.
+Chaque utilisateur peut définir ses propres propriétés préférées.
 
 ![Mes préférences](/help/sites-cloud/authoring/assets/user-preferences.png)
 
@@ -59,13 +60,13 @@ Chaque utilisateur peut définir ses propriétés préférées.
 
 * **Afficher les actions de bureau pour Assets**
 
-  Cette option nécessite l’utilisation de l’appli de bureau AEM.
+  Cette option nécessite l’utilisation de l’application de bureau AEM.
 
 * **Couleur de l’annotation**
 
   Cette option définit la couleur par défaut utilisée lors de la création d’annotations.
 
-   * Cliquez sur le bloc de couleur pour ouvrir le sélecteur d’échantillon afin de sélectionner une couleur.
+   * Cliquez sur le bloc de couleurs pour ouvrir le sélecteur d’échantillons et sélectionner une couleur.
    * Vous pouvez également saisir le code hexadécimal de la couleur désirée dans le champ.
 
 * **Présentation de la date relative**

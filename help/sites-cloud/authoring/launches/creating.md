@@ -1,14 +1,15 @@
 ---
 title: Création de lancements
 description: Vous pouvez créer un lancement pour permettre la mise à jour d’une nouvelle version des pages web existantes en vue d’une activation future.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: c30ec18858c977f0701fef9bb2a7d3320e67dcba
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1100'
-ht-degree: 94%
+source-wordcount: '1106'
+ht-degree: 98%
 
 ---
 
@@ -28,9 +29,9 @@ Vous pouvez éventuellement indiquer la **date de lancement** (et l’heure) pou
 >
 >* `/libs/launches/templates/outofscope`
 >
->Ces pages ne peuvent pas être modifiées. Le message s’affiche :
+>Ces pages ne peuvent pas être modifiées. Le message suivant s’affiche :
 >
->* **Cette page ne fait pas partie du lancement. Accéder à la page de production**
+>* **Cette page ne fait pas partie du lancement. Accédez à la page de production**
 
 ## Création d’un lancement {#creating-a-launch}
 
@@ -155,18 +156,18 @@ Si vous sélectionnez **Terminé**, vous revenez au rail **Références** de la 
 
 ### Clonage d’un lancement {#cloning-a-launch}
 
-Vous pouvez cloner un lancement à partir de la [console de lancements](/help/sites-cloud/authoring/launches/overview.md#the-launches-console) :
+Vous pouvez supprimer un lancement à partir de la [console des lancements](/help/sites-cloud/authoring/launches/overview.md#the-launches-console) :
 
-* Sélectionnez le lancement en appuyant/cliquant sur la miniature.
+* Sélectionnez le lancement en appuyant ou cliquant sur la miniature.
 * La barre d’outils s’affiche. Sélectionnez Cloner.
    * Le clone sera créé et affiché dans la console.
-   * Le **Titre du lancement** indique qu’il s’agit d’un clone. Vous pouvez mettre à jour le titre en modifiant la [configuration de lancement](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration) (**Propriétés**).
+   * Le **titre du lancement** indique qu’il s’agit d’un clone. Vous pouvez mettre à jour le titre en modifiant la [configuration de lancement](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration) (**Propriétés**).
 
 ## Suppression d’un lancement {#deleting-a-launch}
 
 Vous pouvez supprimer un lancement à partir de la [console des lancements](/help/sites-cloud/authoring/launches/overview.md#the-launches-console) :
 
-* Sélectionnez le lancement en appuyant/cliquant sur la miniature.
+* Sélectionnez le lancement en appuyant ou cliquant sur la miniature.
 * La barre d’outils s’affiche. Sélectionnez Supprimer.
 * Confirmez l’action.
 

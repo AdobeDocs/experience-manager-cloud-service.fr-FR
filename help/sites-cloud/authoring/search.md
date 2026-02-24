@@ -1,13 +1,14 @@
 ---
 title: Rechercher
 description: Trouvez votre contenu plus rapidement grâce à une recherche complète
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '498'
 ht-degree: 97%
 
 ---
@@ -36,9 +37,9 @@ Avec le rail de recherche, vous pouvez accomplir ce qui suit :
 
 Pour rechercher et filtrer vos ressources :
 
-1. Ouvrez **Rechercher** (avec la loupe dans la barre d’outils) et saisissez le terme à rechercher. Des suggestions sont faites et peuvent être sélectionnées :
+1. Ouvrez **Rechercher** (avec la loupe dans la barre d’outils) et saisissez le terme de recherche. Des suggestions sont faites et peuvent être sélectionnées :
 
-   ![Terme recherché](/help/sites-cloud/authoring/assets/search-term.png)
+   ![Terme de recherche](/help/sites-cloud/authoring/assets/search-term.png)
 
    Par défaut, les résultats de la recherche sont limités à votre emplacement actuel (c’est-à-dire la console et le type de ressource associé) :
 
@@ -62,7 +63,7 @@ Pour rechercher et filtrer vos ressources :
    * Recherches enregistrées
    * Répertoire de recherche
    * Balises
-   * Critères de recherche, par exemple, dates de modification, état Publish, état LiveCopy
+   * Critères de recherche, par exemple, les dates de modification, le statut de publication, le statut de Live Copy
 
    >[!NOTE]
    >

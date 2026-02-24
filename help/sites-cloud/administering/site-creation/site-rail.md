@@ -3,12 +3,13 @@ title: Utilisation du panneau Site pour gérer le thème de votre site
 description: Découvrez les puissantes fonctionnalités du panneau Site pour vous aider à personnaliser et gérer facilement le thème de votre site pour les projets de création AEM traditionnels avec une diffusion de publication.
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 solution: Experience Manager Sites
 recommendations: noDisplay, noCatalog
-source-git-commit: 8c4b34a77ef85869048fae254728c58cf0d99b66
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '613'
 ht-degree: 36%
 
 ---

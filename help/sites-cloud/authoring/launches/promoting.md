@@ -1,14 +1,15 @@
 ---
 title: Conversion de lancements
 description: Vous devez convertir des pages de lancement afin de renvoyer le contenu dans la source (production) avant de le publier.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: b5ded40d1cb8b8fab28583467b68c4586eecf1a0
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 99%
+source-wordcount: '818'
+ht-degree: 98%
 
 ---
 
@@ -135,8 +136,8 @@ Utilisez des modèles de processus pour effectuer le traitement en bloc des page
 1. Lorsque les personnes créant du contenu convertissent des pages de lancement, elles les stockent dans le package de workflow.
 1. Démarrez un modèle de workflow en utilisant le package comme payload.
 
-Pour lancer automatiquement un workflow lors de la conversion de pages, configurez un lanceur de workflow pour le nœud du package. <!--To start a workflow automatically when pages are promoted, [configure a workflow launcher](/help/sites-administering/workflows-starting.md#workflows-launchers) for the package node.-->
+Pour lancer automatiquement un workflow lors de la conversion de pages, configurez un lanceur de workflows pour le nœud du package. <!--To start a workflow automatically when pages are promoted, [configure a workflow launcher](/help/sites-administering/workflows-starting.md#workflows-launchers) for the package node.-->
 
-Par exemple, vous pouvez générer automatiquement des requêtes d’activation de page lorsque les personnes créant du contenu convertissent des pages de lancement. Configurez un lanceur de workflow pour démarrer le workflow Demander l’activation lorsque le nœud du package est modifié.
+Par exemple, vous pouvez générer automatiquement des requêtes d’activation de page lorsque les personnes créant du contenu convertissent des pages de lancement. Configurez un lanceur de workflows pour démarrer le workflow Demander l’activation lorsque le nœud du package est modifié.
 
 ![Workflow de conversion](/help/sites-cloud/authoring/assets/launches-create-workflow.png)

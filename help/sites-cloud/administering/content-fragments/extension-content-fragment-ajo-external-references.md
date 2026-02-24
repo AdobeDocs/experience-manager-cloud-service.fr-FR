@@ -4,10 +4,11 @@ description: En savoir plus sur l’extension Références externes AJO de fragm
 feature: Content Fragments
 role: User, Developer
 solution: Experience Manager Sites
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 79c90e6b-91da-4f5a-ac96-a98ef7f8d4cd
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '295'
 ht-degree: 1%
 
 ---
@@ -30,9 +31,9 @@ Par exemple, pour utiliser l’extension avec AJO :
 
 >[!NOTE]
 >
->Voir aussi [Intégration d’AJO](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/integrations/aem-fragments).
+>Voir aussi [Intégration d’AJO](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/integrations/aem-fragments).
 
-1. Ouvrez la [&#x200B; Console Fragments de contenu &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
+1. Ouvrez la [ Console Fragments de contenu ](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
 
 1. Accédez à votre fragment de contenu : fragment qui a été créé et utilisé sur différents canaux AJO.
 

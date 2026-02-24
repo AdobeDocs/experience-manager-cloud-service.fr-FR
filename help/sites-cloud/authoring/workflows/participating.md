@@ -1,13 +1,14 @@
 ---
 title: Participation aux workflows
 description: Les workflows incluent généralement des étapes qui nécessitent qu’une personne effectue une activité sur une page ou une ressource.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1507'
+source-wordcount: '1513'
 ht-degree: 87%
 
 ---
@@ -40,7 +41,7 @@ Lorsqu’une tâche vous est attribuée (par exemple, **Approuver le contenu**),
    * Toute action disponible pour l’utilisateur actuel ou l’utilisatrice actuelle à l’étape du workflow en cours. Par exemple, Terminer, Déléguer, Afficher les détails.
    * Le nombre de workflows auxquels la page est soumise. Vous pouvez effectuer les actions suivantes :
       * utiliser les flèches gauche/droite pour parcourir les informations sur le statut des différents workflows ;
-      * sélectionnez sur le nombre réel pour ouvrir une liste déroulante de tous les workflows applicables, puis sélectionnez le workflow à afficher dans la barre d&#39;état.
+      * sélectionnez sur le nombre réel pour ouvrir une liste déroulante de tous les workflows applicables, puis sélectionnez le workflow à afficher dans la barre d’état.
 
   ![Page avec plusieurs workflows](/help/sites-cloud/authoring/assets/workflows-multiple.png)
 
@@ -110,7 +111,7 @@ Vous pouvez également utiliser la chronologie pour terminer et avancer d’une 
 
 ### Délégation d’une étape de participant {#delegating-a-participant-step}
 
-Si une étape vous a été assignée, mais que vous ne pouvez pas agir pour une raison quelconque, vous pouvez la déléguer à un autre utilisateur ou groupe.
+Si une étape vous a été affectée, mais que vous ne pouvez pas agir pour une raison quelconque, vous pouvez la déléguer à un autre utilisateur, une autre utilisatrice ou à un autre groupe.
 
 Les utilisateurs et les utilisatrices pouvant faire l’objet d’une délégation dépendent de la personne à qui l’élément de travail a été affecté :
 
@@ -166,7 +167,7 @@ Vous pouvez également utiliser la chronologie pour déléguer et/ou attribuer u
 
 ### Revenir d’une étape de participant en arrière {#performing-step-back-on-a-participant-step}
 
-Si vous découvrez qu’une étape, ou une série d’étapes, doit être répétée, vous pouvez revenir en arrière. Cela vous permet de sélectionner une étape qui s’est produite plus tôt dans le workflow pour la traiter à nouveau. Le workflow revient à l’étape que vous spécifiez, puis continue à partir de là.
+Si vous constatez qu’une étape, ou une série d’étapes, doit être répétée, vous pouvez revenir en arrière. Cela vous permet de sélectionner une étape qui s’est produite plus tôt dans le workflow pour la traiter à nouveau. Le workflow revient à l’étape que vous spécifiez, puis continue à partir de là.
 
 Sur cette action, vous pouvez indiquer :
 

@@ -1,14 +1,15 @@
 ---
 title: Publication de pages à partir de la console Sites
 description: Découvrez comment publier et dépublier vos pages à l’aide de la console Sites.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 5ad91a32d705ef61e8b9799bf7fb1e136bb8bfa0
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1635'
-ht-degree: 76%
+source-wordcount: '1641'
+ht-degree: 78%
 
 ---
 
@@ -107,7 +108,7 @@ Pour publier ou dépublier une page à l’aide de l’option Gérer la publicat
 
    * **Destination**
 
-     Choisissez si vous souhaitez effectuer une publication sur votre service de publication (par défaut) ou votre service d’aperçu. Disponible uniquement si un service d’aperçu [&#x200B; est configuré.](/help/sites-cloud/authoring/sites-console/previewing-content.md)
+     Choisissez si vous souhaitez effectuer une publication sur votre service de publication (par défaut) ou votre service d’aperçu. Disponible uniquement si un service d’aperçu [ est configuré.](/help/sites-cloud/authoring/sites-console/previewing-content.md)
 
    * **Planification**
 
@@ -121,7 +122,7 @@ Pour publier ou dépublier une page à l’aide de l’option Gérer la publicat
 
      >[!TIP]
      >
-     >La planification de la publication de contenu reproduit le contenu et respecte les workflows de publication. Si vous souhaitez masquer temporairement le contenu déjà publié sans dépublier, pensez à [**Heure d’activation** et **Heure de désactivation** disponibles dans les propriétés de la page.](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)
+     >La planification du contenu pour la publication réplique le contenu et respecte les workflows de publication. Si vous souhaitez masquer temporairement le contenu déjà publié sans le dépublier, envisagez d&#39;utiliser les options [**Heure d’activation** et **Heure de désactivation** disponibles dans les propriétés de la page.](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)
 
    ![Options de gestion de la publication](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 

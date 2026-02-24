@@ -1,14 +1,15 @@
 ---
 title: Raccourcis clavier pour la modification de pages
 description: Plusieurs raccourcis clavier sont disponibles dans AEM, notamment pour la modification de pages
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 93%
+source-wordcount: '244'
+ht-degree: 92%
 
 ---
 
@@ -24,7 +25,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains raccourcis clav
 
 | Emplacement | Raccourci | Description |
 |---|---|---|
-| N’importe quel mode de fenêtre d’édition | `Ctrl-Shift-m` | Basculez entre **Aperçu** et le [mode](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) actuellement sélectionné (par exemple, **Modifier**, **Disposition**, etc.)* |
+| N’importe quel mode de fenêtre d’édition | `Ctrl-Shift-m` | Permet de basculer entre **Aperçu** et le [mode](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) actuellement sélectionné (par exemple, **Modifier**, **Mise en page**, etc.)* |
 | Mode d’**édition** | `Ctrl-z` | [Annuler la dernière modification](/help/sites-cloud/authoring/page-editor/edit-content.md) |
 |  | `Ctrl-y` | [Rétablir la dernière modification](/help/sites-cloud/authoring/page-editor/edit-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Sélectionner plusieurs paragraphes |

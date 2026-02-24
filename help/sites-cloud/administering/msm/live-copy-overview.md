@@ -3,12 +3,13 @@ title: Console Aperçu de Live Copy
 description: Découvrez les principes de base de la console Aperçu de Live Copy pour comprendre rapidement le statut des Live Copies afin de synchroniser le contenu.
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 97%
+source-wordcount: '735'
+ht-degree: 96%
 
 ---
 
@@ -95,7 +96,7 @@ Lorsque vous sélectionnez une page de Live Copy, les actions suivantes sont di
 * **[Synchroniser](overview.md#rollout-and-synchronize)** – Synchronisez une Live Copy pour extraire des modifications de la source vers la Live Copy.
 * **[Réinitialiser](creating-live-copies.md#resetting-a-live-copy-page)** – Réinitialisez une page Live Copy pour supprimer toutes les annulations d’héritage et restaurer la page au même statut que la page source.
 * **[Suspendre](overview.md#suspending-and-cancelling-inheritance-and-synchronization)** – Désactive temporairement les relations directes entre une Live Copy et sa page de plan directeur.
-* **[Reprendre](creating-live-copies.md#resuming-inheritance-for-a-page)** - Reprendre vous permet de rétablir une relation suspendue.
+* **[Reprendre](creating-live-copies.md#resuming-inheritance-for-a-page)** - La reprise vous permet de rétablir une relation suspendue.
 * **[Désolidariser](overview.md#detaching-a-live-copy)** – Supprime définitivement la relation directe entre une Live Copy et sa page de plan directeur.
 
 ## État de la relation {#relationship-status}

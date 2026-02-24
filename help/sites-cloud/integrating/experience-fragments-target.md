@@ -1,14 +1,15 @@
 ---
 title: Exportation de fragments d’expérience vers Adobe Target
-description: Découvrez comment exporter vos fragments d’expérience vers Adobe Target pour tester et personnaliser des expériences.
+description: Découvrez comment exporter vos fragments d’expérience vers Adobe Target, pour tester et personnaliser des expériences.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
 solution: Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2184'
-ht-degree: 96%
+source-wordcount: '2198'
+ht-degree: 94%
 
 ---
 
@@ -64,7 +65,7 @@ Plusieurs actions sont requises :
 
 1. Vous devez [intégrer AEM à Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
-1. Les fragments d’expérience sont exportés à partir de l’instance d’auteur AEM. Vous devez donc [Configurer l’externaliseur de liens d’AEM](/help/implementing/developing/extending/experience-fragments.md#configuring-the-aem-link-externalizer) sur l’instance d’auteur pour vous assurer que toutes les références contenues dans le fragment d’expérience sont externalisées pour la diffusion web.
+1. Les fragments d’expérience sont exportés à partir de l’instance de création AEM. Vous devez donc [Configurer l’externaliseur de liens d’AEM](/help/implementing/developing/extending/experience-fragments.md#configuring-the-aem-link-externalizer) sur l’instance de création pour vous assurer que toutes les références contenues dans le fragment d’expérience sont externalisées pour la diffusion web.
 
    >[!NOTE]
    >
@@ -105,7 +106,7 @@ Vous pouvez sélectionner les options obligatoires dans les **propriétés de pa
    * la configuration appropriée ;
    * l’option de format requise ;
    * un espace de travail Adobe Target ;
-   * si nécessaire - domaine de l’externaliseur
+   * si nécessaire : le domaine de l’externaliseur.
 
    >[!CAUTION]
    >
@@ -142,7 +143,7 @@ Vous pouvez configurer la configuration de cloud pour synchroniser les segments 
 Procédez comme suit pour créer une configuration du cloud Target dans AEM :
 
 1. Accédez aux **Services cloud hérités** via le **logo AEM** > **Outils** > **Cloud Services** > **Services cloud hérités**.
-Par exemple : ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+Par exemple : ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 
    La page d’aperçu d’**Adobe Experience Cloud** s’ouvre.
 
@@ -192,7 +193,7 @@ Vous pouvez maintenant sélectionner la nouvelle configuration à modifier.
 
    * **Utiliser le ciblage précis** : par défaut, cette case est cochée. Si cette option est sélectionnée, la configuration du service cloud attend le chargement du contexte avant de charger le contenu. Lisez la remarque suivante.
 
-   * **Synchroniser les segments à partir d’Adobe Target** : sélectionnez cette option pour télécharger les segments définis dans Target pour les utiliser dans AEM. Sélectionnez cette option lorsque la propriété Type d’API est REST, car les segments incorporés ne sont pas pris en charge et vous devez toujours utiliser les segments de Target. (Le terme AEM « segment » est l’équivalent d’« audience » dans Target.)
+   * **Synchroniser les segments à partir d’Adobe Target** : sélectionnez cette option pour télécharger les segments définis dans Target pour les utiliser dans AEM. Sélectionnez cette option lorsque la propriété Type d’API est REST, car les segments intégrés ne sont pas pris en charge, et vous devez toujours utiliser les segments de Target. (Le terme AEM « segment » est l’équivalent d’« audience » dans Target.)
 
    * **Bibliothèque cliente** : par défaut, cette valeur est définie sur AT.js (mbox.js est obsolète).
 
@@ -223,7 +224,7 @@ Vous pouvez maintenant sélectionner la nouvelle configuration à modifier.
      >
      >Le ciblage précis implique que cette configuration du service cloud attend le chargement du contexte avant de charger le contenu. Par conséquent, en termes de performances, un ciblage précis peut créer un délai de quelques millisecondes avant le chargement du contenu.
      >
-     >Le ciblage précis est toujours activé sur l’instance de création. Toutefois, sur l’instance de publication, vous pouvez choisir de le désactiver en désactivant la coche en regard de Ciblage précis dans la configuration du service cloud (**http://localhost:4502/etc/cloudservices.html**). Vous pouvez également activer et désactiver le ciblage précis pour chaque composant, quel que soit votre paramètre dans la configuration du service cloud.
+     >Le ciblage précis est toujours activé sur l’instance de création. Cependant, sur l’instance de publication, vous pouvez choisir de le désactiver en désactivant la coche en regard de Ciblage précis dans la configuration du service cloud (**http://localhost:4502/etc/cloudservices.html**). Vous pouvez également activer et désactiver le ciblage précis pour chaque composant, quel que soit votre paramètre dans la configuration du service cloud.
      >
      >Si vous avez ***déjà*** créé les composants ciblés et si vous modifiez ce paramètre, vos modifications n’affectent pas ces composants. Vous devez apporter des modifications directement à ces composants.
 
@@ -270,7 +271,7 @@ La structure est créée. Pour répliquer le framework sur l’instance de publi
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=fr).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 >
@@ -318,7 +319,7 @@ When you associate a page with the framework, the child pages inherit the associ
 >
 >Pour les contenus multimédias, comme les images, une seule référence est exportée vers Target. La ressource elle-même reste stockée dans AEM Assets et est diffusée à partir de l’instance de publication AEM.
 >
->En conséquence, le fragment d’expérience, avec toutes les ressources associées, doit être publié avant l’exportation vers Target.
+>Pour cette raison, le fragment d’expérience, avec toutes les ressources associées, doit être publié avant l’exportation vers Target.
 
 Pour exporter un fragment d’expérience d’AEM vers Target (après avoir spécifié la configuration cloud) :
 
@@ -335,7 +336,7 @@ Pour exporter un fragment d’expérience d’AEM vers Target (après avoir spé
    >
    >Si le fragment d’expérience a déjà été exporté, sélectionnez **Mettre à jour dans Adobe Target**.
 
-1. Sélectionnez **Exporter sans publier** ou **Publish** selon les besoins.
+1. Sélectionnez **Exporter sans publication** ou **Publier** selon les besoins.
 
    >[!NOTE]
    >

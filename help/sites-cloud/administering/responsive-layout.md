@@ -1,13 +1,14 @@
 ---
 title: Configuration du conteneur et du mode de disposition
 description: Découvrez comment configurer le conteneur et le mode de disposition pour activer les dispositions réactives pour les auteurs de contenu.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1383'
 ht-degree: 46%
 
 ---
@@ -62,7 +63,7 @@ Le mode **Disposition** permet d’utiliser l’émulateur pour ajuster la dispo
 
 ### Configurer les points d’arrêt {#configure-breakpoints}
 
-Les points d’arrêt sont essentiels au Responsive Design et définissent comment et quand le contenu est ajusté sur l’appareil cible. Toutefois, faites attention, car chaque point d’arrêt que vous introduisez génère du travail supplémentaire pour que vos auteurs puissent s’adapter au contenu. Souvent, deux points d’arrêt peuvent suffire, y compris le point d’arrêt par défaut qui est toujours présent. Adobe recommande de ne pas créer plus de trois points d’arrêt, y compris la valeur par défaut, c’est-à-dire de ne pas créer plus de deux nœuds sous `cq:responsive/breakpoint`.
+Les points d’arrêt sont essentiels au Responsive Design et définissent comment et quand le contenu est ajusté sur l’appareil cible. Toutefois, faites attention, car chaque point d’arrêt que vous introduisez génère du travail supplémentaire pour que vos auteurs puissent s’adapter au contenu. Souvent, deux points d’arrêt peuvent suffire, y compris le point d’arrêt par défaut qui est toujours présent. Adobe recommande de ne pas créer plus de trois points d’arrêt, y compris le point d’arrêt par défaut, c’est-à-dire de ne pas créer plus de deux nœuds sous `cq:responsive/breakpoint`.
 
 * Les points d’arrêt ont un titre et une largeur :
    * Le titre décrit le regroupement de périphériques génériques, avec orientation si nécessaire.
@@ -75,7 +76,7 @@ Les points d’arrêt sont essentiels au Responsive Design et définissent comme
 * Les points d’arrêt sont visibles en tant que marqueurs en haut de l’éditeur de page lorsque vous utilisez l’émulateur.
 * Les points d’arrêt sont hérités de la hiérarchie de nœud parent et peuvent être remplacés à volonté.
 * Il existe un point d’arrêt par défaut (prêt à l’emploi) qui couvre tout ce qui se trouve au-dessus du dernier point d’arrêt configuré.
-* Les points d’arrêt peuvent être définis au moyen de CRXDE Lite ou de code XML.
+* Les points d’arrêt peuvent être définis à l’aide de CRXDE Lite ou de code XML.
 
 Des points d’arrêt doivent être pris en compte pour les projets nouveaux et existants.
 

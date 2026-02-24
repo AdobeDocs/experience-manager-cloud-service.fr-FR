@@ -1,13 +1,14 @@
 ---
 title: Gestion de projets
 description: La console Projets vous permet d’organiser un projet en regroupant les ressources dans une seule entité à laquelle vous pouvez accéder et que vous pouvez gérer.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '882'
 ht-degree: 82%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 82%
 
 Les projets vous permettent d’organiser votre projet en regroupant les ressources dans une seule entité.
 
-Dans la console **Projets**, vous accédez à vos projets et agissez en conséquence :
+Dans la console **Projets**, vous pouvez accéder à vos projets et agir sur ceux-ci :
 
 ![Console Projets](/help/sites-cloud/authoring/assets/projects-console.png)
 
@@ -36,7 +37,7 @@ AEM fournit les modèles prêts à l’emploi suivants à utiliser lors de la cr
 
 Les étapes de création d’un projet sont identiques d’un projet à l’autre. La différence entre les types de projets porte sur les [rôles utilisateur](/help/sites-cloud/authoring/projects/overview.md) et les [workflows](/help/sites-cloud/authoring/projects/workflows.md) disponibles. Pour créer un projet :
 
-1. Dans **Projects**, sélectionnez **Create** pour ouvrir l’assistant **Create Project** :
+1. Dans **Projets**, sélectionnez **Créer** pour ouvrir l’assistant **Créer un projet** :
 1. Sélectionnez le modèle, puis cliquez sur **Suivant**.
 
    ![Création d’un projet](/help/sites-cloud/authoring/assets/projects-create.png)
@@ -54,7 +55,7 @@ Comme les projets vous permettent de regrouper des ressources dans une seule ent
 Pour associer des ressources à votre projet :
 
 1. Ouvrez votre projet à partir de la console **Projets**.
-1. Sélectionnez **Ajouter une mosaïque** et sélectionnez la mosaïque à lier à votre projet. Vous pouvez sélectionner plusieurs types de mosaïque.
+1. Sélectionnez **Ajouter une mosaïque** et sélectionnez la mosaïque que vous souhaitez lier à votre projet. Vous pouvez sélectionner plusieurs types de mosaïque.
 
    ![Ajout d’une mosaïque à un projet](/help/sites-cloud/authoring/assets/projects-add-tile.png)
 
@@ -88,11 +89,11 @@ Dans certaines mosaïques, vous pouvez ajouter plusieurs éléments. Par exemple
 
 Pour ajouter des éléments à une mosaïque, procédez comme suit :
 
-1. Dans **Projects**, accédez au projet et sélectionnez le chevron inférieur sur la mosaïque à laquelle vous souhaitez ajouter un élément.
+1. Dans **Projets**, accédez au projet et sélectionnez le chevron de la mosaïque à laquelle vous souhaitez ajouter un élément.
 
    ![Ajout d’un élément à une mosaïque](/help/sites-cloud/authoring/assets/project-workflows.png)
 
-1. Ajoutez un élément à la mosaïque comme vous le feriez lors de la création d’une mosaïque. Pour plus d’informations, voir [Mosaïques de projet](/help/sites-cloud/authoring/projects/overview.md#project-tiles) . Dans cet exemple, un autre workflow a été ajouté.
+1. Ajoutez un élément à la mosaïque comme vous le feriez pour créer une mosaïque. Voir [Mosaïques de projets](/help/sites-cloud/authoring/projects/overview.md#project-tiles) pour plus d’informations. Dans cet exemple, un autre workflow a été ajouté.
 
 ### Ouverture d’une mosaïque {#opening-a-tile}
 
@@ -100,7 +101,7 @@ Vous pouvez afficher les éléments inclus dans une mosaïque actuelle ou modifi
 
 Pour ouvrir une mosaïque afin d’afficher ou de modifier des éléments :
 
-1. Dans la console Projets, sélectionnez l’icône représentant des points de suspension (..) au bas de la carte.
+1. Dans la console Projets , sélectionnez l’icône représentant des points de suspension (...) en bas de la carte.
 
    ![Ouverture d’une mosaïque](/help/sites-cloud/authoring/assets/project-links.png)
 
@@ -130,9 +131,9 @@ Si l’icône est accompagnée d’une croix (x), elle affiche les projets inact
 
 ## Activation/désactivation de projets {#making-projects-inactive-or-active}
 
-Vous pouvez désactiver un projet que vous avez terminé, mais dont vous souhaitez conserver les informations.
+Vous pouvez rendre inactif un projet si vous l’avez terminé, mais que vous souhaitez conserver les informations le concernant.
 
-Pour activer/désactiver un projet :
+Pour rendre un projet inactif (ou actif) :
 
 1. Dans la console **Projets**, ouvrez votre projet, puis recherchez la mosaïque **Informations sur le projet**.
 

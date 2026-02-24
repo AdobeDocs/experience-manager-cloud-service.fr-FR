@@ -1,13 +1,14 @@
 ---
 title: Utilisation de contenu ciblé sur plusieurs sites
 description: Si vous devez gérer du contenu ciblé, tel que des activités, des expériences et des offres sur vos différents sites, vous pouvez profiter de la prise en charge de sites multiples intégrée à AEM pour le contenu ciblé
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2844'
+source-wordcount: '2850'
 ht-degree: 92%
 
 ---
@@ -29,7 +30,7 @@ Ce document contient les informations suivantes :
 
 Pour configurer la manière dont vos sites partagent du contenu personnalisé, vous devez effectuer les étapes suivantes :
 
-1. [Créez une zone](#creating-new-areas) ou [créez une zone comme Live Copy](#creating-new-areas). Une zone comprend toutes les activités disponibles pour une *zone* de la page, c’est-à-dire l’emplacement sur la page où le composant est ciblé. La création d’une zone crée une zone vide, tandis que la création d’une zone en tant que Live Copy vous permet d’hériter du contenu entre les structures du site.
+1. [Créez une zone](#creating-new-areas) ou [créez une zone comme Live Copy](#creating-new-areas). Une zone comprend toutes les activités disponibles pour une *zone* de la page, c’est-à-dire l’emplacement sur la page où le composant est ciblé. La création d’une zone crée une zone vide, tandis que la création d’une zone en tant que Live Copy permet d’hériter du contenu sur l’ensemble des structures du site.
 
 1. [Lier votre site ou votre page](#linking-sites-to-an-area) à une zone.
 
@@ -98,7 +99,7 @@ Chaque site partage du contenu personnalisé dans des régions géographiques :
 
 ![Diagramme de sites multiples](/help/sites-cloud/authoring/assets/multisite-diagram.png)
 
-Pour l’hémisphère nord, une activité d’hiver a été créée, mais le spécialiste marketing en Amérique du Nord souhaiterait une image différente pour l’hiver pour le public masculin et il la modifie donc sur le site des États-Unis.
+Pour l’hémisphère nord, une activité d’hiver a été créée, mais le spécialiste marketing en Amérique du Nord souhaiterait une image différente pour l’hiver pour l’audience masculine et il la modifie donc sur le site des États-Unis.
 
 ![Version américaine](/help/sites-cloud/authoring/assets/multisite-us.png)
 
@@ -147,7 +148,7 @@ Les zones peuvent couvrir des activités et des offres. Après avoir créé une 
 
 >[!NOTE]
 >
->La zone par défaut appelée Zone de Principal est réduite par défaut lorsque vous sélectionnez le nom d’une marque **jusqu’à** où vous créez une autre zone. Ensuite, lorsque vous sélectionnez une marque dans la console **Activité** ou **Offres**, la console **Zone** s’affiche.
+>La zone par défaut appelée Zone de Principal est réduite par défaut lorsque vous sélectionnez le nom d&#39;une marque **jusqu&#39;à ce que** vous créiez une autre zone. Ensuite, lorsque vous sélectionnez une marque dans la console **Activité** ou **Offres**, la console **Zone** s’affiche.
 
 Pour créer une zone :
 
@@ -212,8 +213,8 @@ Lorsque vous liez, seules les activités, expériences et offres de la zone sél
 Pour lier un site à une zone :
 
 1. Accédez au site (ou à la page) que vous souhaitez lier à une zone.
-1. Sélectionnez le site ou la page, puis **Afficher les propriétés**.
-1. Sélectionnez l’onglet **Personalization** .
+1. Sélectionnez le site ou la page, puis sélectionnez **Afficher les propriétés**.
+1. Sélectionnez l’onglet **Personalization**.
 1. Dans le menu **Marque**, sélectionnez la marque à laquelle vous souhaitez lier votre zone. Une fois la marque sélectionnée, les zones disponibles sont disponibles dans le menu **Référence de zone**. 
 
    ![Liaison de sites](/help/sites-cloud/authoring/assets/multisite-english.png)
@@ -242,7 +243,7 @@ Une activité qui hérite d’un autre site comporte une marque verte en regard 
 
 Pour suspendre ou désolidariser l’héritage du contenu ciblé dans une activité :
 
-1. Accédez à la page sur laquelle vous souhaitez désolidariser ou suspendre l’héritage et sélectionnez **Ciblage** dans le menu déroulant du mode.
+1. Accédez à la page sur laquelle vous souhaitez désolidariser ou suspendre l’héritage et sélectionnez **Ciblage** dans le menu déroulant Mode.
 1. Si votre page est liée à une zone qui est une Live Copy, vous pouvez voir le statut d’héritage. Sélectionnez **Commencer le ciblage**.
 1. Pour suspendre une activité, effectuez l’une des opérations suivantes :
 
@@ -259,10 +260,10 @@ Pour suspendre ou désolidariser l’héritage du contenu ciblé dans une activi
 
 Pour rompre l’héritage du contenu ciblé dans une activité :
 
-1. Accédez à la page où vous souhaitez désolidariser la Live Copy du gabarit et sélectionnez **Ciblage** dans le menu déroulant du mode.
+1. Accédez à la page sur laquelle vous souhaitez désolidariser la Live Copy du gabarit et sélectionnez **Ciblage** dans le menu déroulant Mode.
 1. Si votre page est liée à une zone qui est une Live Copy, vous pouvez voir le statut d’héritage. Sélectionnez **Commencer le ciblage**.
 1. Sélectionnez **Désolidariser une Live Copy** dans le menu déroulant de la barre d’outils. AEM confirme que vous souhaitez détacher la Live Copy.
-1. Sélectionnez **Désolidariser** pour désolidariser la Live Copy de l’activité. Une fois la désolidarisation effectuée, le menu déroulant relatif à l’héritage disparaît. L’activité est désormais locale.
+1. Sélectionnez **Désolidariser** pour désolidariser la Live Copy de l’activité. Une fois la dissociation effectuée, le menu déroulant relatif à l’héritage disparaît. L’activité est désormais locale.
 
    ![Activité locale](/help/sites-cloud/authoring/assets/multisite-winter.png)
 
@@ -272,13 +273,13 @@ Si vous avez suspendu l’héritage du contenu ciblé dans une activité, vous p
 
 Pour restaurer l’héritage du contenu ciblé dans une activité :
 
-1. Accédez à la page sur laquelle vous souhaitez restaurer l’héritage et sélectionnez **Ciblage** dans le menu déroulant du mode.
+1. Accédez à la page sur laquelle vous souhaitez restaurer l’héritage et sélectionnez **Ciblage** dans le menu déroulant Mode.
 1. Sélectionnez **Commencer le ciblage**.
 1. Sélectionnez **Reprendre la Live Copy** dans le menu déroulant de la barre d’outils.
 
    ![Reprise de la Live Copy](/help/sites-cloud/authoring/assets/multisite-resume.png)
 
-1. Sélectionnez **Reprendre** pour confirmer que vous souhaitez reprendre l’héritage de la Live Copy. Toute modification apportée à l’activité actuelle est perdue si vous reprenez l’héritage.
+1. Sélectionnez **Reprendre** pour confirmer que vous souhaitez reprendre l’héritage de Live Copy. Toute modification apportée à l’activité actuelle est perdue si vous reprenez l’héritage.
 
 ## Suppression de zones {#deleting-areas}
 
@@ -287,5 +288,5 @@ Lorsque vous supprimez une zone, vous supprimez toutes les activités qu’elle 
 Pour supprimer une zone :
 
 1. Accédez à **Personnalisation** > **Activités** ou **Offres** et sélectionnez ensuite votre marque.
-1. Sélectionnez l’icône située en regard de la zone à supprimer.
+1. Sélectionnez l’icône en regard de la zone à supprimer.
 1. Sélectionnez **Supprimer** et confirmez que vous souhaitez supprimer la zone.

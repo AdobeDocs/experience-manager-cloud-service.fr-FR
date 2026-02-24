@@ -3,12 +3,13 @@ title: Création d’un site
 description: Découvrez comment utiliser AEM pour créer un site à l’aide de modèles de site afin de définir le style et la structure de votre site.
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
 solution: Experience Manager Sites
-source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 55%
+source-wordcount: '732'
+ht-degree: 56%
 
 ---
 
@@ -39,7 +40,7 @@ Les modèles de site contiennent généralement le contenu et la structure du si
 >
 >Le modèle de site ne doit pas être confondu avec les modèles de [page).](/help/sites-cloud/authoring/page-editor/templates.md) Les modèles de site définissent la structure globale d’un site. Un modèle de page définit la structure et le contenu initial d’une page individuelle.
 
-### Modèles De Site Fournis Par Adobe {#adobe-templates}
+### Modèles de site fournis par Adobe {#adobe-templates}
 
 {{adobe-templates}}
 
@@ -97,7 +98,7 @@ Les auteurs de contenu peuvent maintenant commencer la création !
 Les modèles sont utiles pour configurer rapidement la structure et le style de base d’un site. Cependant, la plupart des projets nécessitent un style et une personnalisation supplémentaires. Les modèles de site permettent de découpler la mise en forme du site, de sorte que les développeurs front-end n’ont pas besoin de connaître AEM pour mettre en forme le site et peuvent
 travailler séparément et parallèlement aux créateurs et créatrices de contenu ; Selon le type de projet, il peut prendre deux formes.
 
-* Pour les projets avec création de pages AEM à l’aide de l’éditeur universel et diffusion via la diffusion [&#x200B; Edge](/help/edge/overview.md), toute la mise en forme est effectuée dans le projet GitHub.
+* Pour les projets avec création de pages AEM à l’aide de l’éditeur universel et diffusion via la diffusion [ Edge](/help/edge/overview.md), toute la mise en forme est effectuée dans le projet GitHub.
    * Consultez le document [Prise en main - Tutoriel de développement de l’éditeur universel](https://www.aem.live/developer/ue-tutorial) pour plus d’informations.
 * Pour les projets avec la création et la diffusion de pages AEM traditionnelles par le biais de la diffusion [publication](/help/sites-cloud/authoring/author-publish.md) l’administrateur AEM télécharge simplement le thème du site et le fournit au développeur front-end, qui le personnalise à l’aide de ses outils préférés, puis valide les modifications dans le référentiel de code AEM, qui est ensuite déployé.
    * Consultez le document [Parcours de création rapide de site AEM](/help/journey-sites/quick-site/overview.md) pour plus d’informations.

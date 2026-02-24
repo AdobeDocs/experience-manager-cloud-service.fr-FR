@@ -1,14 +1,15 @@
 ---
 title: Raccourcis clavier pour les consoles
 description: Gagnez du temps lors de la création grâce à ces raccourcis clavier
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 91%
+source-wordcount: '384'
+ht-degree: 90%
 
 ---
 
@@ -68,7 +69,7 @@ En outre, les raccourcis clavier sont les mêmes pour tous les paramètres régi
 
 ## Désactivation des raccourcis clavier {#deactivating-keyboard-shortcuts}
 
-AEM fournit des raccourcis clavier pour certaines des fonctionnalités les plus utilisées (modification, propriétés, copier/coller, affichage de divers menus de rail latéral, etc.).
+AEM fournit des raccourcis clavier pour certaines des fonctionnalités courantes (modification, propriétés, copier/coller, affichage de divers menus de rail latéral, etc.).
 
 Pour les utilisateurs et utilisatrices qui n’utilisent pas de raccourcis clavier ou qui ont certaines exigences d’accessibilité, tous les raccourcis clavier peuvent être désactivés.
 
@@ -83,7 +84,7 @@ Vous pouvez désactiver les raccourcis clavier à deux emplacements :
 
 ## Raccourcis clavier pour l’éditeur de page {#keyboard-shortcuts-for-the-page-editor}
 
-Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent à l’utilisation de consoles, d’autres à la [modification de page](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md).
+Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent à l’utilisation de consoles et d’autres à la [modification de pages](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md).
 
 ## Raccourcis clavier de la console Fragments de contenu {#keyboard-shortcuts-for-the-content-fragments-console}
 

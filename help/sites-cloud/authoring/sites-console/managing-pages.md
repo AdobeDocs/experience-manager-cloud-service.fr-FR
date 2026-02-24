@@ -1,14 +1,15 @@
 ---
 title: Gérer des pages
 description: Découvrez comment gérer les pages de votre site web dans AEM, notamment en déplaçant, copiant et supprimant.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 355b60c5-a82e-4bbb-98ea-bfcc0126b7fd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 45805d4baa8b93df2225b44152fee1457b421150
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1329'
-ht-degree: 67%
+source-wordcount: '1335'
+ht-degree: 72%
 
 ---
 
@@ -106,7 +107,7 @@ AEM vous offre la possibilité de mettre à jour les liens internes qui font ré
 
    ![Bouton Déplacer](/help/sites-cloud/authoring/assets/move.png)
 
-1. L’étape **Renommer** de l’assistant vous fournit **Informations** à propos de la page, y compris la date de création, le chemin d’accès et le nombre de références directes. À partir de là, vous pouvez :
+1. L’étape **Renommer** de l’assistant vous fournit des **informations** à propos de la page, y compris la date de création, le chemin d’accès et le nombre de références directes. À partir de là, vous pouvez :
 
    * Indiquez le nom que vous souhaitez donner à la page après l’avoir déplacée, puis sélectionnez **Suivant** pour continuer.
    * Cliquez/appuyez sur **Annuler** pour interrompre le processus.
@@ -145,7 +146,7 @@ AEM vous offre la possibilité de mettre à jour les liens internes qui font ré
    >[!NOTE]
    >
    >* Si la page n’est ni liée ni référencée, cette étape ne sera pas disponible.
-   >* Cette étape répertorie les références directes et indirectes. Cette valeur peut être différente de la valeur indiquée à l’étape **Renommer** de l’assistant, ainsi que des références indiquées par le rail Références, qui indiquent toutes deux des références directes uniquement pour des raisons de performances.
+   >* Cette étape répertorie les références directes et indirectes. Cette valeur peut être différente de la valeur indiquée à l’étape **Renommer** de l’assistant, ainsi que des références indiquées par le rail Références, qui constituent toutes deux des références directes uniquement pour des raisons de performances.
 
    ![Republier la page lors du déplacement](/help/sites-cloud/authoring/assets/move-page-republish.png)
 

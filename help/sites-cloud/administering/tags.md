@@ -1,13 +1,14 @@
 ---
 title: Administration des balises
 description: Découvrez comment administrer les balises dans AEM pour organiser votre contenu.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
 solution: Experience Manager Sites
 feature: Workflow
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2200'
+source-wordcount: '2206'
 ht-degree: 6%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 6%
 
 Les balises sont une méthode intuitive de classification de votre contenu. Ils peuvent être considérés comme des mots-clés ou des libellés (métadonnées) qui permettent de trouver plus rapidement du contenu.
 
-Dans Adobe Experience Manager (AEM), une balise peut être une propriété de l’un des éléments suivants :
+Dans Adobe Experience Manager (AEM), une balise peut être la propriété :
 
 * Nœud de contenu pour une page
    * Consultez le document [Utilisation des balises](/help/sites-cloud/authoring/sites-console/tags.md) pour plus d’informations.
@@ -76,7 +77,7 @@ Il existe plusieurs étapes pour créer et utiliser des balises afin d’organis
 
 1. [Créer un espace de noms pour vos balises](#creating-namespaces) (ou en choisir un existant à réutiliser).
 1. [Créer une balise](#creating-tags).
-1. [Publish la balise](#publishing-tags).
+1. [Publiez la balise](#publishing-tags).
 
 ### Création d’espaces de noms {#creating-namespaces}
 
@@ -84,7 +85,7 @@ Un espace de noms est utilisé pour organiser d’autres balises. Elle peut êtr
 
 1. Pour créer un espace de noms, ouvrez la console [balisage](#tagging-console) et cliquez sur le bouton **Créer** de la barre d’outils, puis sur **Créer un espace de noms**.
 
-   ![&#x200B; Boîte de dialogue Ajouter un espace de noms &#x200B;](/help/sites-cloud/administering/assets/add-namespace.png)
+   ![ Boîte de dialogue Ajouter un espace de noms ](/help/sites-cloud/administering/assets/add-namespace.png)
 
 1. Fournissez les informations requises.
 
@@ -134,21 +135,21 @@ Comme pour la création de tout autre contenu dans AEM, après avoir créé une 
 
 1. Pour publier une balise, ouvrez la [console de balisage](#tagging-console).
 
-1. Sélectionnez la ou les balises à publier, puis, dans la barre d’outils, sélectionnez **Publish**.
+1. Sélectionnez la ou les balises à publier, puis, dans la barre d’outils, sélectionnez **Publier**.
 
-   ![&#x200B; Sélection de balises dans la console &#x200B;](assets/select-tags.png)
+   ![ Sélection de balises dans la console ](assets/select-tags.png)
 
-1. La boîte de dialogue **Publish Tag** vous invite à confirmer la publication des balises sélectionnées. Sélectionnez **Publier**.
+1. La boîte de dialogue **Publier la balise** vous invite à confirmer la publication des balises sélectionnées. Sélectionnez **Publier**.
 
-   ![Boîte de dialogue modale de confirmation de balise Publish](assets/publish-tag.png)
+   ![Boîte de dialogue modale de confirmation de publication de balise](assets/publish-tag.png)
 
 1. L’action de publication est confirmée par une boîte de dialogue **Succès**.
 
-   Boîte de dialogue de réussite de la balise Publish ![](assets/publish-tag-success.png)
+   ![Boîte de dialogue de réussite de la publication de la balise](assets/publish-tag-success.png)
 
 La ou les balises sélectionnées sont mises en file d’attente pour publication. De même que pour le contenu d’une page, seule la ou les balises sélectionnées sont publiées, qu’elle contienne ou non des balises secondaires.
 
-Pour publier une taxonomie entière (un espace de noms et des balises secondaires), il est recommandé de créer un [&#x200B; package &#x200B;](/help/implementing/developing/tools/package-manager.md) de l’espace de noms (voir [Nœud racine de taxonomie](/help/implementing/developing/introduction/tagging-framework.md#taxonomy-root-node)).
+Pour publier une taxonomie entière (un espace de noms et des balises secondaires), il est recommandé de créer un [ package ](/help/implementing/developing/tools/package-manager.md) de l’espace de noms (voir [Nœud racine de taxonomie](/help/implementing/developing/introduction/tagging-framework.md#taxonomy-root-node)).
 
 <!--
 Be sure to [apply permissions](#setting-tag-permissions) to the namespace before creating the package.
@@ -186,7 +187,7 @@ Vous pouvez afficher plus de détails sur la balise, y compris qui l’a publié
 
    ![Affichage des propriétés de balise](assets/tag-properties.png)
 
-Pour plus d’informations sur la sélection des modes d’affichage et du rail, voir [&#x200B; Manipulation de base &#x200B;](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
+Pour plus d’informations sur la sélection des modes d’affichage et du rail, voir [ Manipulation de base ](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
 ### Modification des balises {#editing-tags}
 
@@ -200,7 +201,7 @@ Les balises et les espaces de noms peuvent être modifiés après leur création
 
    * **Titre**
    * **Description**
-   * [**Localisation &#x200B;**](#managing-tags-in-different-languages)
+   * [**Localisation **](#managing-tags-in-different-languages)
 
 1. Une fois les modifications apportées, sélectionnez **Envoyer**.
 
@@ -216,15 +217,15 @@ Pour désactiver la balise sur votre instance de création et la supprimer de vo
 
 1. Sélectionnez la ou les balises dont vous souhaitez annuler la publication, puis, dans la barre d’outils, sélectionnez **Dépublier**.
 
-   ![&#x200B; Sélection de balises dans la console &#x200B;](assets/select-tags.png)
+   ![ Sélection de balises dans la console ](assets/select-tags.png)
 
 1. La boîte de dialogue **Dépublier la balise** vous invite à confirmer la publication des balises sélectionnées. Sélectionnez **Publier**.
 
-   ![Boîte de dialogue modale de confirmation de balise Publish](assets/unpublish-tag.png)
+   ![Boîte de dialogue modale de confirmation de publication de balise](assets/unpublish-tag.png)
 
 1. L’action de dépublication est confirmée par une boîte de dialogue **Succès**.
 
-   Boîte de dialogue de réussite de la balise Publish ![](assets/unpublish-tag-success.png)
+   ![Boîte de dialogue de réussite de la publication de la balise](assets/unpublish-tag-success.png)
 
 La ou les balises sélectionnées sont placées en file d’attente pour dépublication. Si la balise sélectionnée est une balise conteneur, toutes les balises enfants sont désactivées dans l’environnement de création et supprimées dans l’environnement de publication.
 
@@ -248,7 +249,7 @@ Il peut s’avérer utile de déterminer à quel contenu une balise particulièr
 
 Passez la souris ou sélectionnez un contenu de référence dans la liste pour afficher le chemin d’accès complet du contenu.
 
-Pour plus d’informations sur la sélection des modes d’affichage et du rail, voir [&#x200B; Manipulation de base &#x200B;](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
+Pour plus d’informations sur la sélection des modes d’affichage et du rail, voir [ Manipulation de base ](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
 ### Déplacement des balises {#moving-tags}
 
@@ -258,7 +259,7 @@ Il peut s’avérer nécessaire de nettoyer ou de réorganiser votre taxonomie d
 >
 >Il est recommandé de n’autoriser que les administrateurs à déplacer et renommer les balises.
 
-1. Pour déplacer ou renommer une balise, ouvrez la [&#x200B; console de balisage &#x200B;](#tagging-console).
+1. Pour déplacer ou renommer une balise, ouvrez la [ console de balisage ](#tagging-console).
 
 1. Sélectionnez la balise à déplacer ou à renommer, puis sélectionnez **Déplacer** dans la barre d’outils.
 
@@ -271,7 +272,7 @@ Il peut s’avérer nécessaire de nettoyer ou de réorganiser votre taxonomie d
       * Ce champ est prérempli avec l’emplacement actuel de la balise.
       * Ne modifiez pas ce paramètre si vous souhaitez uniquement renommer la balise et ne pas la déplacer.
 
-   ![&#x200B; Déplacer la balise &#x200B;](assets/move-tag.png)
+   ![ Déplacer la balise ](assets/move-tag.png)
 
 1. Sélectionnez **Envoyer**.
 
@@ -281,17 +282,17 @@ La balise est renommée et/ou déplacée vers son nouvel emplacement. Si la bali
 
 Si votre taxonomie de balisage comporte des doublons ou des balises similaires, il peut être utile de fusionner ces balises. Lorsque l’`A` de balises est fusionnée dans l’`B` de balises, toutes les pages balisées avec des `A` de balises sont balisées avec des `B` de balises et l’`A` de balises n’est plus disponible pour les auteurs.
 
-1. Pour fusionner deux balises, ouvrez la [&#x200B; console de balisage &#x200B;](#tagging-console).
+1. Pour fusionner deux balises, ouvrez la [ console de balisage ](#tagging-console).
 
 1. Sélectionnez la balise que vous souhaitez fusionner dans une autre balise, puis sélectionnez **Fusionner** dans la barre d’outils.
 
 1. Dans la boîte de dialogue **Fusionner la balise**, sélectionnez l’icône **Parcourir** du champ **Fusionner dans** pour spécifier dans quelle balise vous souhaitez fusionner la balise sélectionnée.
 
-   ![&#x200B; Boîte de dialogue Fusionner la balise &#x200B;](assets/merge-tag.png)
+   ![ Boîte de dialogue Fusionner la balise ](assets/merge-tag.png)
 
 1. Sélectionnez **Envoyer**.
 
-La balise sélectionnée dans la console est fusionnée dans la balise spécifiée dans la boîte de dialogue. Lorsqu’une balise référencée est déplacée ou fusionnée, elle n’est pas physiquement supprimée, de sorte qu’il est possible de conserver les références. Consultez [Framework de balisage AEM](/help/implementing/developing/introduction/tagging-framework.md#moving-and-merging-tags) pour plus d’informations.
+La balise sélectionnée dans la console est fusionnée dans la balise spécifiée dans la boîte de dialogue. Lorsqu’une balise référencée est déplacée ou fusionnée, elle n’est pas physiquement supprimée, de sorte qu’il est possible de conserver les références. Voir [Framework de balisage AEM](/help/implementing/developing/introduction/tagging-framework.md#moving-and-merging-tags) pour plus d’informations.
 
 ### Suppression des balises {#deleting-tags}
 
@@ -358,7 +359,7 @@ La propriété `title` d’une balise peut être traduite en plusieurs langues. 
 
 Supposons que nous ayons une balise appelée `Animals` que nous voulons traduire en allemand et en français.
 
-1. Ouvrez la [&#x200B; console de balisage &#x200B;](#tagging-console).
+1. Ouvrez la [ console de balisage ](#tagging-console).
 
 1. Sélectionnez la balise à traduire, puis sélectionnez **Modifier** dans la barre d’outils.
 
@@ -376,8 +377,8 @@ Pour les pages de contenu, la langue choisie pour la balise est celle de la page
 
 Toutefois, dans l’environnement de création, AEM utilise le paramètre de langue de l’utilisateur. Ainsi, dans la console de balisage, pour la balise `Animals`, `Animaux` s’affiche pour un utilisateur qui définit la langue sur Français dans ses propriétés d’utilisateur.
 
-Pour ajouter une nouvelle langue dans la boîte de dialogue, consultez le document [Génération du balisage dans des applications AEM](/help/implementing/developing/introduction/tagging-applications.md#adding-a-new-language-to-the-edit-tag-dialog)
+Pour ajouter une nouvelle langue dans la boîte de dialogue, consultez le document [Création de balisage dans des applications AEM](/help/implementing/developing/introduction/tagging-applications.md#adding-a-new-language-to-the-edit-tag-dialog)
 
 >[!TIP]
 >
->Pour en savoir plus sur les fonctions de localisation d’AEM, consultez [Traduction de contenu pour des sites multilingues](/help/sites-cloud/administering/translation/overview.md).
+>Si vous souhaitez en savoir plus sur les fonctionnalités de localisation d’AEM, voir [ Traduction de contenu pour des sites multilingues ](/help/sites-cloud/administering/translation/overview.md).

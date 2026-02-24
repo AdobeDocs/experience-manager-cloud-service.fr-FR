@@ -4,10 +4,11 @@ description: Découvrez comment l’éditeur universel prend en charge l’héri
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
-source-git-commit: 2099a1aecd30eaa2ca3ca33a13729817a30b6c3f
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '530'
 ht-degree: 4%
 
 ---
@@ -42,7 +43,7 @@ Pour modifier le contenu de certaines copies, les auteurs rompent l’héritage 
 
 Lorsqu’une page fait partie de MSM ou d’un lancement et que le contenu est modifié à l’aide de l’éditeur universel, l’éditeur désactive automatiquement l’héritage pour toutes les modifications apportées par les auteurs sur cette page, s’assurant que le contenu modifié est conservé lorsque les mises à jour sont synchronisées à partir du plan directeur.
 
-L’auteur n’a pas besoin de cliquer sur un bouton ni de prendre d’autres mesures pour désactiver l’héritage avant d’apporter des modifications locales. Dès qu’une modification est apportée, l’héritage est implicitement annulé. Ce workflow est différent de l’[&#x200B; Éditeur de page &#x200B;](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components).
+L’auteur n’a pas besoin de cliquer sur un bouton ni de prendre d’autres mesures pour désactiver l’héritage avant d’apporter des modifications locales. Dès qu’une modification est apportée, l’héritage est implicitement annulé. Ce workflow est différent de l’[ Éditeur de page ](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components).
 
 L’héritage peut être rétabli pour la page entière via :
 
@@ -59,7 +60,7 @@ L’éditeur universel n’affecte pas le mécanisme sous-jacent de l’héritag
 
 S’il est installé, l’extension **AEM Multi-Site-Management (MSM)** affiche le statut d’héritage actuel du composant sélectionné et vous permet de rompre ou de rétablir l’héritage au niveau du composant.
 
-Pour plus d’informations sur l’utilisation de cette extension, consultez la documentation de création [&#128279;](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance).
+Pour plus d’informations sur l’utilisation de cette extension, consultez la documentation de création [](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance).
 
 Pour plus d’informations sur la manière d’activer cette extension, [consultez la documentation d’Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 

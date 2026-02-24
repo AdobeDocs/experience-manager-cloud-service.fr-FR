@@ -3,11 +3,12 @@ title: Fragments de contenu - Configuration
 description: Découvrez comment activer la fonctionnalité Fragment de contenu et GraphQL, à utiliser avec les fonctionnalités de diffusion découplée d’AEM et la création de pages.
 feature: Content Fragments
 role: Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 3974d698-1e7d-4a5f-a6d5-cbf8d96b4095
 solution: Experience Manager Sites
-source-git-commit: b3e1d3a3770531728d696be125f074881f179573
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '408'
 ht-degree: 38%
 
 ---
@@ -32,7 +33,7 @@ Pour activer votre instance pour la fonctionnalité de fragment de contenu, vous
 La configuration de votre instance est terminée :
 
 * en [activant la fonctionnalité dans l’explorateur de configurations](#enable-content-fragment-functionality-configuration-browser)
-* puis [&#x200B; application de la configuration à vos dossiers Assets individuels &#x200B;](#apply-the-configuration-to-your-folder)
+* puis [ application de la configuration à vos dossiers Assets individuels ](#apply-the-configuration-to-your-folder)
 
 >[!TIP]
 >

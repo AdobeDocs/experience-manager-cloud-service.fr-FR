@@ -1,21 +1,22 @@
 ---
 title: Personnalisation et ciblage de contenu
 description: Découvrez comment créer du contenu personnalisé et ciblé avec AEM
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 89%
+source-wordcount: '1060'
+ht-degree: 88%
 
 ---
 
 
 # Personnalisation et ciblage de contenu {#personalization-and-content-targeting}
 
-La personnalisation du contenu web que vous fournissez aux client(e)s implique de personnaliser ces expériences en fonction de leurs intérêts et besoins. Vous pouvez faire ceci en fonction des informations que vous avez à leur sujet ; par exemple, le résumé des achats, l’âge, le sexe, la zone géographique, etc.
+La personnalisation du contenu web que vous fournissez aux client(e)s implique de personnaliser ces expériences en fonction de leurs intérêts et besoins. Vous pouvez faire ceci en fonction des informations que vous avez à leur sujet ; par exemple, le résumé des achats, l’âge, le genre, la zone géographique, etc.
 
 Avec Adobe Experience Manager as a Cloud Service (AEM), vous pouvez créer une sélection de contenu, puis spécifier les audiences (groupes d’utilisateurs finaux) qui voient chaque expérience individuelle. Cela signifie que vous ciblez vos expériences personnalisées vers des audiences spécifiques.
 
@@ -27,7 +28,7 @@ AEM fournit un framework d’outils pour :
 * La définition de règles utilisées pour résoudre les informations utilisateur connues par rapport à une définition d’audience.
 * La configuration de vos pages pour présenter des expériences personnalisées ciblées ; pour rendre le contenu spécifique applicable à l’utilisateur final actuel.
 
-L’aperçu suivant présente certains des termes utilisés pour la personnalisation dans AEM as a Cloud Service, suivis d’un ordre d’action recommandé.
+La présentation suivante présente certains termes utilisés pour la personnalisation dans AEM as a Cloud Service, suivis d’un ordre d’action recommandé.
 
 ## Expérience {#experience}
 
@@ -43,7 +44,7 @@ Lors de la création de pages, vous définissez plusieurs expériences, chaque e
 
 Une offre est une expérience personnalisée, souvent disponible pendant une période limitée.
 
-Par exemple, une page d’un exemple de site web peut utiliser des offres comme image de teaser qui apparaît en haut de la page. Une personne de plus de 30 ans et une personne de moins de 30 ans peuvent voir différentes offres comme teaser d’expérience.
+Par exemple, une page d’un exemple de site web peut utiliser des offres comme image de teaser qui s’affiche en haut de la page. Une personne de plus de 30 ans et une personne de moins de 30 ans peuvent voir différentes offres comme teaser d’expérience.
 
 ## Audience {#audience}
 
@@ -91,7 +92,7 @@ Vous pouvez [créer du contenu ciblé](/help/sites-cloud/authoring/personalizati
 
 Un ensemble groupé de composants qui constituent une expérience.
 
-Les [fragments d’expérience](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment) sont constitués de contenu et d’informations (mise en forme, etc.) pour créer une expérience ; ils peuvent être utilisés directement lors de la création de pages. Ils peuvent être considérés comme un sous-ensemble d’une page AEM. Ils permettent aux auteurs et aux autrices de contenu de réutiliser du contenu sur plusieurs canaux, y compris les pages Sites et les systèmes tiers.
+Les [fragments d’expérience](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment) sont constitués de contenu et d’informations (style, etc.) permettant de créer une expérience ; ils peuvent être utilisés directement lors de la création de pages. Ils peuvent être considérés comme un sous-ensemble d’une page AEM. Ils permettent aux auteurs et aux autrices de contenu de réutiliser du contenu sur plusieurs canaux, y compris les pages Sites et les systèmes tiers.
 
 À titre d’exemple de personnalisation, un titre, une image, une description et un bouton d’appel à l’action peuvent être combinés pour former une expérience de teaser. L’utilisation des Fragments d’expérience est un élément clé de l’utilisation de la personnalisation d’Adobe Target.
 
@@ -132,7 +133,7 @@ Plusieurs étapes et définitions sont nécessaires pour diffuser votre contenu 
 1. Configurez votre moteur de ciblage en effectuant l’une des opérations suivantes :
 
    1. Configuration de [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md)
-   1. Intégration avec [Adobe Target &#x200B;](/help/sites-cloud/integrating/integrating-adobe-target.md)
+   1. Intégration avec [Adobe Target ](/help/sites-cloud/integrating/integrating-adobe-target.md)
 
 1. Configurer les audiences.
 
@@ -142,4 +143,4 @@ Plusieurs étapes et définitions sont nécessaires pour diffuser votre contenu 
 
 1. Créez la gamme d’expériences que vous souhaitez afficher aux différentes audiences.
 
-1. Personnalisez ces expériences en les [ciblant](/help/sites-cloud/authoring/personalization/targeted-content.md) à des audiences spécifiques (segments).
+1. Personnalisez ces expériences en les [ciblant](/help/sites-cloud/authoring/personalization/targeted-content.md) sur des audiences spécifiques (segments).

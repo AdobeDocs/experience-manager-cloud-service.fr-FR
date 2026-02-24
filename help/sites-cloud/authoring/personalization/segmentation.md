@@ -1,20 +1,21 @@
 ---
 title: Compréhension de la segmentation
 description: La segmentation est un élément clé de la création d’une campagne
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 36a9623a-bb19-498a-a0e9-ef80582b1fcf
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 97%
+source-wordcount: '542'
+ht-degree: 96%
 
 ---
 
 # Compréhension de la segmentation {#understanding-segmentation}
 
-La segmentation est un élément clé de la création d’une campagne. Dans la plupart des cas, les segments doivent être déjà définis avant de démarrer votre campagne.
+La segmentation est un élément clé de la création d’une campagne. Dans la plupart des cas, les segments doivent être déjà définis avant le démarrage de votre campagne.
 
 Les visiteurs et visiteuses de site se rendent sur un site en fonction d’intérêts et d’objectifs divers. La compréhension des objectifs et la satisfaction des attentes des visiteurs et visiteuses est un important facteur de réussite en matière de marketing en ligne.
 
@@ -36,7 +37,7 @@ Lors de la discussion de la segmentation, la terminologie suivante est utilisée
 
 * **Visiteur** : un visiteur est une personne qui visite un site web. La visite de cette personne commence généralement à partir d’une page de référence, puis passe à une ou plusieurs vues de pages sur votre propre site web. Un profil comportemental peut être créé à partir des détails de la visite de cette personne.
 * **Utilisateur** : un utilisateur est un visiteur qui s’inscrit auprès du site web pour recevoir un profil de compte. Pour générer leur profil, ils fournissent une identification supplémentaire, telle qu’une adresse e-mail et un genre, entre autres. Des informations supplémentaires peuvent également être collectées, notamment l’activité de la communauté et les modèles d’achat, entre autres. En fonction des informations fournies dans le profil, un profil démographique peut être créé.
-* **Caractéristique** : une caractéristique est une particularité ou une propriété d’un visiteur qui peut être utilisée pour déterminer son appartenance à un segment spécifique.
+* **Caractéristique** : une caractéristique est une particularité ou une propriété d’un visiteur ou d’une visiteuse qui peut être utilisée pour déterminer son appartenance à un segment spécifique.
 * **Segment** : un segment est un groupe de visiteurs qui partagent certaines caractéristiques. Les segments doivent être distincts, avec un minimum de chevauchement avec les autres segments.
 * **Caractéristiques comportementales** : les caractéristiques comportementales sont liées au comportement d’un visiteur sur le site web. Celles-ci comprennent :
    * L’intérêt au sein de votre site web ; notamment les pages visitées et les produits achetés

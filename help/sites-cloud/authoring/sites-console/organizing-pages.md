@@ -1,13 +1,14 @@
 ---
 title: Organiser des pages
 description: Découvrez comment organiser votre site web avec AEM.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '805'
 ht-degree: 73%
 
 ---
@@ -118,7 +119,7 @@ Si vous indiquez un **nom** de page lors de la création d’une page, AEM [vali
 
 Dans AEM, un [modèle](/help/sites-cloud/authoring/page-editor/templates.md) est un type de page spécialisé utilisé comme base pour toute nouvelle page en cours de création.
 
-Le modèle définit la structure d’une page, y compris une miniature et d’autres propriétés. Par exemple, vous pouvez avoir des modèles distincts pour les pages de produits, les plans de site et les coordonnées. Les modèles sont constitués de [composants](#components).
+Le modèle définit la structure d’une page, y compris une miniature et d’autres propriétés. Par exemple, vous pouvez avoir des modèles distincts pour les pages produits, les plans de site et les coordonnées. Les modèles sont constitués de [composants](#components).
 
 AEM comporte plusieurs modèles prêts à l’emploi. Les modèles disponibles dépendent du site web individuel. Les champs clés sont les suivants :
 

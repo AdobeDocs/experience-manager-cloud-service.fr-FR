@@ -1,13 +1,14 @@
 ---
 title: Projets
 description: Les projets vous permettent de regrouper des ressources dans une seule entité dont l’environnement commun et partagé facilite la gestion de vos projets
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1259'
 ht-degree: 96%
 
 ---
@@ -68,9 +69,9 @@ Dans la mosaïque **Ressources**, vous pouvez regrouper tous les éléments dont
 
 ![Mosaïque Ressources](/help/sites-cloud/authoring/assets/projects-assets-tile.png)
 
-Vous chargez des ressources directement dans la mosaïque. En outre, vous pouvez créer des visionneuses d’images, des visionneuses à 360° ou des visionneuses de médias mixtes si vous avez installé le complément Dynamic Media.
+Vous chargez des ressources directement dans la mosaïque. En outre, vous pouvez créer des ensembles d’images, des visionneuses à 360° ou des visionneuses de supports variés si vous avez installé le module complémentaire Dynamic Media.
 
-![Visionneuse d’images](/help/sites-cloud/authoring/assets/projects-image-sets.png)
+![Ensemble d’images](/help/sites-cloud/authoring/assets/projects-image-sets.png)
 
 ### Collections de ressources {#asset-collections}
 
@@ -114,7 +115,7 @@ Des membres d’équipe peuvent être attribués et supprimés de cette mosaïqu
 
 ### Tâche de traduction {#translation-job}
 
-La mosaïque Tâche de traduction est l’endroit où vous commencez une traduction et où vous pouvez voir le statut de toutes vos traductions. Pour configurer votre traduction, voir [Création de projets de traduction](/help/assets/translate-assets.md).
+La vignette Tâche de traduction est l’endroit où vous commencez une traduction et où vous pouvez voir le statut de toutes vos traductions. Pour configurer votre traduction, voir [Création de projets de traduction](/help/assets/translate-assets.md).
 
 ![Tâche de traduction](/help/sites-cloud/authoring/assets/projects-translation-job.png)
 

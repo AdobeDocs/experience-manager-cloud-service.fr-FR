@@ -3,11 +3,12 @@ title: Affichage et gestion d’Assets dans la console Fragments de contenu
 description: Découvrez comment afficher et gérer Assets dans la console Fragments de contenu d’Adobe Experience Manager as a Cloud Service.
 feature: Content Fragments
 role: User, Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 865e1fa8-2956-45cf-9dd7-034d491808fe
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '253'
 ht-degree: 7%
 
 ---
@@ -45,7 +46,7 @@ Dans la vue **Assets** de la console Fragments de contenu, vous pouvez :
 
 ![Console Fragments de contenu - Parcourir les ressources](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-browse.png)
 
-* Parcourez la structure et parcourez votre Assets, [&#x200B; similaire à la fonctionnalité de la console Assets](/help/assets/navigate-assets-view.md)
+* Parcourez la structure et parcourez votre Assets, [ similaire à la fonctionnalité de la console Assets](/help/assets/navigate-assets-view.md)
 * [Créer un dossier](/help/assets/manage-digital-assets.md#creating-folders)
 * [Chargement des ressources](/help/assets/add-delete-assets-view.md)
 * Configurez le type d’affichage (Liste, Grille, Galerie, Cascade) et, le cas échéant, les colonnes visibles

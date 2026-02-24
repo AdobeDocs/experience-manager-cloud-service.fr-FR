@@ -1,14 +1,15 @@
 ---
 title: Activation des fonctionnalités d’application web progressive
 description: AEM Sites permet à l’auteur du contenu d’activer des fonctionnalités d’application web progressive sur n’importe quel site par le biais d’une configuration simple plutôt que par un codage.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 solution: Experience Manager Sites
 feature: Authoring
 role: User
 index: false
-source-git-commit: 19a16bbfc23806f8bc655c0d19713df500e3b12b
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1896'
+source-wordcount: '1902'
 ht-degree: 61%
 
 ---
@@ -105,7 +106,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 ## Activation de fonctionnalités PWA pour votre site {#enabling-pwa-for-your-site}
 
-Une fois [&#x200B; conditions préalables remplies](#prerequisites) il est facile pour un créateur ou une créatrice de contenu d’activer les fonctionnalités de PWA sur un site. Vous trouverez ci-dessous un aperçu basique de la procédure. Les différentes options sont présentées dans la section [Options détaillées](#detailed-options).
+Une fois [ conditions préalables remplies](#prerequisites) il est facile pour un créateur ou une créatrice de contenu d’activer les fonctionnalités de PWA sur un site. Vous trouverez ci-dessous un aperçu basique de la procédure. Les différentes options sont présentées dans la section [Options détaillées](#detailed-options).
 
 1. Connectez-vous à AEM.
 1. Dans le menu principal, sélectionnez **Navigation** > **Sites**.

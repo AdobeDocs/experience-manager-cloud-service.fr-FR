@@ -1,14 +1,15 @@
 ---
 title: Utilisation de l’éditeur de texte enrichi dans [!DNL Adobe Experience Manager] pour créer du contenu.
 description: Utilisation de l’éditeur de texte enrichi [!DNL Experience Manager] pour créer du contenu.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 15c175f8-11de-4475-87a9-920219a4c004
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 96%
+source-wordcount: '292'
+ht-degree: 95%
 
 ---
 

@@ -3,11 +3,12 @@ title: Intégration d’Adobe Analytics à l’automatisation de la configurati
 description: L’automatisation de la configuration d’Experience Cloud offre un moyen simple et automatisé d’intégrer et d’utiliser Experience Manager Sites avec les balises Experience Platform et Adobe Analytics à l’aide d’une interface simple d’assistant de l’interface utilisateur. Découvrez comment utiliser la configuration automatisée avec votre propre site.
 feature: Integration
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
 solution: Experience Manager Sites
-source-git-commit: 4a3e65ef6a8aa08c8bc78db31f94272334994ac5
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '733'
 ht-degree: 86%
 
 ---
@@ -61,7 +62,7 @@ L’environnement doit maintenant être prêt pour l’automatisation de la conf
 
    La configuration de l’automatisation se produit de manière asynchrone. La **Vérification de l’état d’intégration** affiche l’état actuel de l’intégration.
 
-   * **En cours** - indique que la tâche est en cours d’exécution.
+   * **En cours** : indique que la tâche est en cours d’exécution.
    * **Intégration terminée** : indique que la tâche a terminé l’intégration d’Analytics et des balises, la configuration des extensions de balises et des règles de balises, ainsi que la création d’une suite de rapports dans Adobe Analytics.
    * **Échec** : indique que la tâche automatisée n’a pas pu se terminer correctement. Vérifiez les fichiers journaux de cette tâche en cliquant sur le lien Journaux.
 

@@ -3,11 +3,12 @@ title: Intégration d’AEM as a Cloud Service à Adobe Campaign
 description: Découvrez la prise en charge par AEM as a Cloud Service des intégrations à Adobe Campaign.
 feature: Integration
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
 solution: Experience Manager Sites
-source-git-commit: d62ac2e60062d3559d6a877dc830b8106f4bd0f6
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '154'
 ht-degree: 66%
 
 ---
@@ -31,7 +32,7 @@ La prise en charge de l’intégration à AEM as a Cloud Service dépend de la v
 |---|---|
 | [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=fr) | Non pris en charge |
 | [Campaign v8 (console cliente)](https://experienceleague.adobe.com/fr/docs/campaign-v8) | Non pris en charge |
-| Interface utilisateur web de Campaign | Pris en charge. [&#x200B; En savoir plus &#x200B;](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/connect/ac-aem) |
+| Interface utilisateur web de Campaign | Pris en charge. [En savoir plus](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aem) |
 
 ## Intégrer à Adobe Campaign Standard {#acs}
 

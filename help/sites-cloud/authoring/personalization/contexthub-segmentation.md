@@ -1,13 +1,14 @@
 ---
 title: Configuration de la segmentation avec ContextHub
 description: Découvrez comment configurer la segmentation à l’aide de ContextHub.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1653'
+source-wordcount: '1659'
 ht-degree: 88%
 
 ---
@@ -16,11 +17,11 @@ ht-degree: 88%
 
 La segmentation est un élément clé de la création d’une campagne. Voir [Compréhension de la segmentation](segmentation.md) pour plus d’informations sur le fonctionnement de la segmentation et en connaître les termes clés.
 
-Selon les informations que vous avez déjà collectées sur les visiteurs de votre site et les objectifs que vous souhaitez atteindre, définissez les segments et les stratégies nécessaires au contenu ciblé.
+Selon les informations que vous avez déjà collectées sur les visiteurs de votre site et les objectifs que vous souhaitez atteindre, définissez les segments et les stratégies nécessaires pour votre contenu ciblé.
 
 Ces segments sont ensuite utilisés pour fournir aux visiteurs du contenu spécifiquement ciblé. Les [activités](activities.md) définies ici peuvent être ajoutées à n’importe quelle page et définissent à quel segment de visiteurs le contenu spécialisé s’applique.
 
-AEM vous permet de personnaliser facilement l’expérience de vos utilisateurs. Il vous permet également de vérifier les résultats de vos définitions de segment.
+AEM vous permet de personnaliser facilement les expériences de vos utilisateurs. Il vous permet également de vérifier les résultats de vos définitions de segment.
 
 ## Accès aux segments {#accessing-segments}
 
@@ -95,7 +96,7 @@ Pour définir votre nouveau segment, procédez comme suit :
 
    ![Ajouter un segment](../assets/contexthub-create-segment.png)
 
-1. Dans le **Nouveau segment ContextHub**, saisissez un titre pour le segment et une valeur d’amplification si nécessaire, puis sélectionnez **Créer**.
+1. Dans la section **Nouveau segment ContextHub**, saisissez un titre pour le segment et une valeur d’amplification si nécessaire, puis sélectionnez **Créer**.
 
    ![Nouveau segment](../assets/contexthub-new-segment.png)
 
@@ -104,9 +105,9 @@ Pour définir votre nouveau segment, procédez comme suit :
    * Valeur minimale : `0`
    * Valeur maximale : `1000000`
 
-1. Dans la console des segments, modifiez le segment créé pour l’ouvrir dans l’éditeur de segments.
+1. Dans la console Segments , modifiez le segment créé pour l’ouvrir dans l’éditeur de segments.
 1. Faites glisser une comparaison ou une référence vers l’Éditeur de segments qui apparaîtra dans le conteneur ET par défaut.
-1. Double-sélectionnez l’option de configuration de la nouvelle référence ou du nouveau segment pour éditer les paramètres spécifiques. Dans cet exemple, des personnes situées à Bâle font l’objet d’un test.
+1. Sélectionnez deux fois l’option de configuration de la nouvelle référence ou du nouveau segment pour modifier les paramètres spécifiques. Dans cet exemple, des personnes situées à Bâle font l’objet d’un test.
 
    ![Test de personnes à Bâle](../assets/contexthub-comparing-property-value.png)
 
@@ -196,7 +197,7 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 
 ### Créer un dossier {#create-folder}
 
-1. Après [&#x200B; avoir accédé aux segments](#accessing-segments), cliquez sur le bouton **Créer** et sélectionnez **Dossier**.
+1. Après avoir [accédé aux segments](#accessing-segments), cliquez sur le bouton **Créer** et sélectionnez **Dossier**.
 
    ![Ajouter un dossier](../assets/contexthub-create-segment.png)
 
@@ -215,12 +216,11 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 1. Le dossier s’affiche dans la liste des segments.
    * La manière dont vous triez vos colonnes aura une incidence sur l’emplacement d’affichage du nouveau dossier dans la liste.
    * Vous pouvez sélectionner les en-têtes de colonne pour ajuster votre tri.
-
      ![Le nouveau dossier](../assets/contexthub-folder.png)
 
 ### Modifier les dossiers existants {#modify-folders}
 
-1. Après avoir [&#x200B; accédé aux segments](#accessing-segments), sélectionnez le dossier à modifier pour le sélectionner.
+1. Après avoir [accédé aux segments](#accessing-segments), sélectionnez le dossier à modifier pour le sélectionner.
 
    ![Sélectionner un dossier](../assets/contexthub-select-folder.png)
 
@@ -236,7 +236,7 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 
 ### Supprimer un dossier
 
-1. Après avoir [&#x200B; accédé aux segments](#accessing-segments), sélectionnez le dossier à modifier pour le sélectionner.
+1. Après avoir [accédé aux segments](#accessing-segments), sélectionnez le dossier à modifier pour le sélectionner.
 
    ![Sélectionner un dossier](../assets/contexthub-select-folder.png)
 

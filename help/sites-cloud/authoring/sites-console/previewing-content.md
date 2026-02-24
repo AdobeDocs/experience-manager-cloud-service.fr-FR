@@ -1,14 +1,15 @@
 ---
 title: Prévisualisation du contenu
 description: Découvrez comment utiliser le service d’aperçu AEM pour prévisualiser le contenu avant sa mise en ligne.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: b93bcb5d26a63babf0b81c92a4fd85d358bfbea7
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 65%
+source-wordcount: '312'
+ht-degree: 64%
 
 ---
 
@@ -52,7 +53,7 @@ Vous pouvez également utiliser les URL affichées dans l’assistant pour affic
 https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.html
 ```
 
-Voir [&#x200B; Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md) pour plus d’informations sur la manière de récupérer les URL de vos environnements.
+Voir [ Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md) pour plus d’informations sur la manière de récupérer les URL de vos environnements.
 
 Le contenu peut également être publié pour la prévisualisation à l’aide d’un [workflow de publication de l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) avec le paramètre `agentId` défini sur `preview` ou à l’aide de l’[API de réplication](/help/operations/replication.md#replication-api) avec un `AgentFilter` configuré pour la prévisualisation.
 

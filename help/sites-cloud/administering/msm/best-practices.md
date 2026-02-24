@@ -3,11 +3,12 @@ title: Bonnes pratiques MSM
 description: Découvrez les bonnes pratiques compilées par les équipes d’ingénierie et de recherche d’Adobe pour vous aider à maîtriser AEM Multi Site Manager (MSM).
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1420'
 ht-degree: 93%
 
 ---
@@ -141,7 +142,7 @@ Par conséquent, il est recommandé d’utiliser uniquement les déclencheurs `o
 
 ### Types/propriétés de nœuds {#node-types-properties}
 
-En plus de personnaliser les actions de déploiement, MSM vous permet de personnaliser les propriétés des nœuds qui sont déployés. La configuration OSGi [MSM vous permet d’exclure des types &#x200B;](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) nœuds de la copie de la source vers la Live Copy.
+En plus de personnaliser les actions de déploiement, MSM vous permet de personnaliser les propriétés des nœuds qui sont déployés. La configuration OSGi [MSM vous permet d’exclure des types ](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) nœuds de la copie de la source vers la Live Copy.
 
 ## Informations supplémentaires {#further-information}
 

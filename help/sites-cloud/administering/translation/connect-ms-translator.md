@@ -3,12 +3,13 @@ title: Connexion à Microsoft Translator
 description: Découvrez comment connecter AEM à Microsoft Translator pour automatiser votre processus de traduction.
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 79%
+source-wordcount: '299'
+ht-degree: 78%
 
 ---
 
@@ -18,7 +19,7 @@ AEM fournit un connecteur intégré pour [Microsoft Translator](https://www.mic
 
 >[!TIP]
 >
->Si vous êtes un débutant dans la traduction de contenu, reportez-vous à la section [Parcours de traduction de sites](/help/journey-sites/translation/overview.md), qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide d’AEM de puissants outils de traduction, idéaux pour ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
+>Si vous êtes un débutant dans la traduction de contenu, consultez [Parcours de traduction de sites](/help/journey-sites/translation/overview.md), qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide d’outils de traduction puissants d’AEM, idéaux pour ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
 
 | Propriété | Description |
 |---|---|
@@ -29,7 +30,7 @@ AEM fournit un connecteur intégré pour [Microsoft Translator](https://www.mic
 
 La procédure suivante crée une configuration Microsoft Translator.
 
-1. Dans le [panneau de navigation](/help/sites-cloud/authoring/basic-handling.md#first-steps), sélectionnez **Outils** > **Cloud Service** > **Cloud Service de traduction**.
+1. Dans le [panneau de navigation](/help/sites-cloud/authoring/basic-handling.md#first-steps), sélectionnez **Outils** > **Services cloud** > **Services cloud de traduction**.
 1. Accédez à l’emplacement où vous souhaitez créer la configuration. Normalement, il s’agit de la racine de votre site, mais il peut s’agir aussi d’une configuration globale par défaut.
 1. Cliquez sur le bouton **Créer**.
 1. Définissez votre configuration.

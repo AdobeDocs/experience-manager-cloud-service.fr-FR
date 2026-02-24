@@ -3,12 +3,13 @@ title: Identification du contenu à traduire
 description: Découvrez comment les règles de traduction identifient le contenu à traduire.
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1288'
-ht-degree: 89%
+source-wordcount: '1294'
+ht-degree: 88%
 
 ---
 
@@ -18,7 +19,7 @@ Les règles de traduction identifient le contenu à traduire pour les pages, les
 
 >[!TIP]
 >
->Si vous êtes un débutant dans la traduction de contenu, reportez-vous à la section [Parcours de traduction de sites](/help/journey-sites/translation/overview.md), qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide d’AEM de puissants outils de traduction, idéaux pour ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
+>Si vous êtes un débutant dans la traduction de contenu, consultez [Parcours de traduction de sites](/help/journey-sites/translation/overview.md), qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide d’outils de traduction puissants d’AEM, idéaux pour ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
 
 ## Fragments de contenu et règles de traduction {#content-fragments}
 
@@ -215,7 +216,7 @@ Dans l’interface utilisateur, vous pouvez cocher/décocher **Traduire** dans
 
 ### updateDestinationLanguage {#updatedestinationlanguage}
 
-**`updateDestinationLanguage`** est utilisé pour les propriétés qui n’ont pas de texte, mais comportent des codes de langue, par exemple `jcr:language`. L’utilisateur ne traduit pas le texte, mais le paramètre régional de langue de la source vers la cible. Ces propriétés ne sont pas envoyées pour traduction.
+**`updateDestinationLanguage`** est utilisé pour les propriétés qui n’ont pas de texte, mais comportent des codes de langue, par exemple `jcr:language`. L’utilisateur ou l’utilisatrice ne traduit pas le texte, mais les paramètres régionaux de langue de la source vers la cible. Ces propriétés ne sont pas envoyées pour traduction.
 
 Dans l’interface utilisateur, vous pouvez cocher/décocher **Traduire** dans l’onglet **Propriétés** pour modifier cette valeur, mais pour les propriétés spécifiques ayant comme valeur des codes de langue.
 
@@ -234,11 +235,11 @@ Le résultat dans le fichier xml ressemble à ce qui suit :
 
 Le fichier `translation_rules.xml` qui est installé avec AEM contient un ensemble par défaut de règles de traduction. Vous pouvez modifier le fichier pour prendre en charge les exigences de vos projets de traduction. Par exemple, vous pouvez ajouter des règles afin que le contenu de vos composants personnalisés soit traduit.
 
-Si vous modifiez le fichier `translation_rules.xml`, conservez une copie de sauvegarde dans un package de contenu. La réinstallation de certains packages AEM peut remplacer le fichier `translation_rules.xml` actuel par le fichier d’origine. Pour restaurer vos règles dans ce cas, vous pouvez installer le package contenant votre copie de sauvegarde.
+Si vous modifiez le fichier `translation_rules.xml`, conservez une copie de sauvegarde dans un module de contenu. La réinstallation de certains packages AEM peut remplacer le fichier `translation_rules.xml` actuel par le fichier d’origine. Pour restaurer vos règles dans ce cas, vous pouvez installer le package contenant votre copie de sauvegarde.
 
 >[!NOTE]
 >
->Après avoir créé le package de contenu, recréez-le chaque fois que vous modifiez le fichier.
+>Après avoir créé le module de contenu, recréez-le chaque fois que vous modifiez le fichier.
 
 ## Exemple de fichier de règles de traduction {#example-translation-rules-file}
 

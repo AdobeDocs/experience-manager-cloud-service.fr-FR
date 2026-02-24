@@ -1,14 +1,15 @@
 ---
 title: Appliquer des workflows aux pages
 description: Lors de la création, vous pouvez appeler des workflows pour agir sur vos pages. Il est également possible d’appliquer plusieurs workflows.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 83%
+source-wordcount: '660'
+ht-degree: 82%
 
 ---
 
@@ -55,7 +56,7 @@ Vous pouvez démarrer un workflow des deux manières suivantes :
 * [Utiliser l’option Créer de la barre d’outils Sites](#starting-a-workflow-from-the-sites-toolbar).
 * [Utiliser le rail Chronologie de la console Sites](#starting-a-workflow-from-the-timeline).
 
-Dans les deux cas, vous devez [spécifier les détails du workflow dans l’assistant Créer un workflow](#specifying-workflow-details-in-the-create-workflow-wizard).
+Dans les deux cas, vous devez [Spécifier les détails du workflow dans l’assistant Créer un workflow](#specifying-workflow-details-in-the-create-workflow-wizard).
 
 ### Démarrage d’un workflow à partir de la barre d’outils Sites {#starting-a-workflow-from-the-sites-toolbar}
 
@@ -119,7 +120,7 @@ Indiquez les détails suivants :
 
 1. À l’étape **Domaine**, vous pouvez sélectionner :
 
-   * **Ajoutez du contenu** pour ouvrir le [navigateur de chemins d’accès](/help/sites-cloud/authoring/path-selection.md) et sélectionner des ressources supplémentaires. Lorsque vous êtes dans le navigateur, sélectionnez **Sélectionner** pour ajouter le contenu à l’instance de workflow.
+   * **Ajouter du contenu** pour ouvrir l’explorateur de [chemins d’accès](/help/sites-cloud/authoring/path-selection.md) et sélectionner des ressources supplémentaires ; dans l’explorateur, sélectionnez **Sélectionner** pour ajouter le contenu à l’instance de workflow.
 
    * Une ressource existante pour afficher d’autres actions :
 

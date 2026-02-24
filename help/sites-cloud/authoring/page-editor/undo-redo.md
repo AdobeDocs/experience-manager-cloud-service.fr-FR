@@ -1,18 +1,19 @@
 ---
-title: Annulation et rétablissement des limites
-description: Découvrez les limites des options d’annulation et de rétablissement dans l’éditeur de page d’AEM.
+title: Limites d’annulation et de restauration
+description: Découvrez les limites des options Annuler et Rétablir dans l’éditeur de page d’AEM.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 87773f47-5116-4966-9ba4-5deedb7c4fa6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 92%
+source-wordcount: '313'
+ht-degree: 91%
 
 ---
 
-# Annulation et rétablissement des limites {#undo-redo}
+# Limites d’annulation et de restauration {#undo-redo}
 
 AEM stocke un historique des actions que vous réalisez, ainsi que la séquence selon laquelle vous les réalisez, de sorte que vous puissiez annuler plusieurs actions dans l’ordre dans lequel vous les avez réalisées. Vous pouvez également les rétablir pour appliquer à nouveau une ou plusieurs de ces actions.
 

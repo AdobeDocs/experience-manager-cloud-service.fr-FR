@@ -1,13 +1,14 @@
 ---
 title: Modèles pour créer des pages modifiables avec l’éditeur de page
 description: Vous pouvez utiliser l’éditeur de modèles pour créer des modèles que les auteurs de contenu peuvent utiliser pour créer des pages modifiables avec l’éditeur de page.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '4415'
+source-wordcount: '4421'
 ht-degree: 80%
 
 ---
@@ -95,7 +96,7 @@ Lors de la création d’un modèle modifiable :
 >
 >Ne saisissez jamais d’informations qui doivent être [internationalisées](/help/implementing/developing/extending/i18n/dev.md) dans un modèle.
 >
->Pour les éléments de modèle tels que les en-têtes et pieds de page qui doivent être localisés, utilisez les fonctions de localisation [&#x200B; des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=fr).
+>Pour les éléments de modèle tels que les en-têtes et pieds de page qui doivent être localisés, utilisez les fonctions de localisation [ des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=fr).
 
 ### Création d’un dossier de modèles - Administrateur {#creating-a-template-folder-admin}
 
@@ -210,7 +211,7 @@ Un modèle peut être rendu disponible ou indisponible pour certaines branches d
 
 Comme le modèle est référencé lors du rendu d’une page, le modèle entièrement configuré doit être publié afin d’être disponible dans l’environnement de publication.
 
-les modèles Publish à l’aide de la **[console de modèles](/help/sites-cloud/administering/templates-console.md)**.
+Publiez des modèles à l’aide de la **[console de modèles](/help/sites-cloud/administering/templates-console.md)**.
 
 ## Modification de modèles - Créateurs et créatrices de modèles {#editing-templates-template-authors}
 
@@ -647,4 +648,4 @@ Lors de la création de modèles, tenez compte des points suivants :
    >AEM affiche des avertissements explicites lorsque vous modifiez le statut de verrouillage des composants sur les modèles qui ne sont plus des brouillons.
 
 1. [Créer vos propres dossiers](#creating-a-template-folder-admin) pour les modèles spécifiques à votre site.
-1. [Publish vos modèles](#publishing-a-template-template-author) à partir de la console **[Modèles]**(/help/sites-cloud/administering/templates-console.md).
+1. [Publiez vos modèles](#publishing-a-template-template-author) à partir de la **[console Modèles]**(/help/sites-cloud/administering/templates-console.md).

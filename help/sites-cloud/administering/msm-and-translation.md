@@ -1,24 +1,25 @@
 ---
-title: Multi Site Manager et traduction
+title: Multi-Site Manager et traduction
 description: Découvrez comment réutiliser votre contenu dans tout votre projet et comment gérer des sites web multilingues dans AEM.
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 96%
+source-wordcount: '415'
+ht-degree: 95%
 
 ---
 
-# Multi Site Manager et traduction {#msm-and-translation}
+# Multi-Site Manager et traduction {#msm-and-translation}
 
-L’intégration de Multi Site Manager et d’outils de traduction à Adobe Experience Manager simplifie la localisation de votre contenu.
+L’intégration de Multi-Site Manager et d’outils de traduction à Adobe Experience Manager simplifie la localisation de votre contenu.
 
 * Multi Site Manager (MSM) et ses fonctionnalités Live Copy vous permettent d’utiliser le même contenu de site à plusieurs emplacements, tout en permettant des variations :
-   * [Réutilisation de contenu : Multi Site Manager et Live Copy](msm/overview.md)
-* La traduction permet d&#39;automatiser la traduction du contenu des pages afin de créer et gérer des sites web multilingues :
+   * [Réutilisation de contenu : Multi-Site Manager et Live Copy](msm/overview.md)
+* La traduction vous permet d’automatiser la traduction du contenu des pages pour créer et gérer des sites web multilingues :
    * [Traduction de contenu pour les sites multilingues](translation/overview.md)
 
 Ces deux fonctions peuvent être combinées pour gérer les sites web qui sont à la fois [internationaux et multilingues](#multinational-and-multilingual-sites).
@@ -29,7 +30,7 @@ Ces deux fonctions peuvent être combinées pour gérer les sites web qui sont �
 
 ## Sites internationaux et multilingues {#multinational-and-multilingual-sites}
 
-Vous pouvez créer efficacement du contenu pour les sites internationaux et multilingues par l’utilisation conjointe de Multi Site Manager et du workflow de traduction.
+Vous pouvez créer efficacement du contenu pour les sites internationaux et multilingues en utilisant conjointement Multi-Site Manager et le workflow de traduction.
 
 Vous pouvez généralement créer un site principal dans une langue, pour un pays spécifique, puis utiliser ce contenu comme base des autres sites, à l’aide de la traduction si nécessaire.
 
@@ -40,7 +41,7 @@ Vous pouvez généralement créer un site principal dans une langue, pour un pay
 
 >[!TIP]
 >
->Limitez l’utilisation de Multi Site Manager au contenu d’une seule langue.
+>Limitez l’utilisation de Multi-Site Manager au contenu d’une seule langue.
 >
 >Par exemple, utilisez le gabarit anglais pour créer la version anglaise des pages pour les États-Unis, le Canada et le Royaume-Uni. Ensuite, utilisez le gabarit français pour créer la version française des pages pour la France, la Suisse, le Canada, etc.
 

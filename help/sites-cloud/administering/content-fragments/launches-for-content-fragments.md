@@ -4,10 +4,11 @@ description: Découvrez comment utiliser les lancements pour les fragments de co
 feature: Content Fragments
 role: User, Developer
 solution: Experience Manager Sites
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1588'
 ht-degree: 2%
 
 ---
@@ -89,7 +90,7 @@ Alors que le panneau de droite vous permet d’effectuer les opérations suivant
 
 * Définissez également les éléments suivants :
 
-   * Une **Date et heure de promotion** : si le lancement [&#x200B; doit être automatiquement promu](#promote-automatically)
+   * Une **Date et heure de promotion** : si le lancement [ doit être automatiquement promu](#promote-automatically)
 
 ## Création d’un lancement {#create-a-launch}
 
@@ -132,7 +133,7 @@ Pour créer votre lancement :
 
 1. Sélectionnez **Afficher**, dans la zone de message, pour afficher plus de détails dans la console AEM pour [Opérations en arrière-plan](/help/operations/asynchronous-jobs.md).
 
-   ![&#x200B; Nouveau lancement dans la console &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-launches-new-launch-in-console.png)
+   ![ Nouveau lancement dans la console ](/help/sites-cloud/administering/content-fragments/assets/cf-launches-new-launch-in-console.png)
 
 ## Modifier le contenu de Launch {#edit-launch-content}
 

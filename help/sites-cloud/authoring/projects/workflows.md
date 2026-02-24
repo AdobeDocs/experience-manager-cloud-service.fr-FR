@@ -1,14 +1,15 @@
 ---
 title: Utilisation des workflows de projet
 description: Plusieurs workflows de projet sont proposés prêts à l’emploi.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 100%
+source-wordcount: '455'
+ht-degree: 99%
 
 ---
 
@@ -20,7 +21,7 @@ Les workflows de projet disponibles et prêts à l’emploi sont les suivants :
 * **Demander le lancement** : ce workflow demande un lancement.
 * **Demander la page de destination** : ce workflow demande une page de destination.
 * **Demander l’adresse électronique** : ce workflow demande une adresse électronique.
-* **Gestion des actifs numériques (DAM) – Créer et traduire la copie et Gestion des actifs numériques (DAM) – Créer une copie de langue** : crée des fichiers binaires, des métadonnées et des balises traduits pour les ressources et les dossiers.
+* **Gestion des actifs numériques (DAM) – Créer et traduire la copie et Gestion des actifs numériques (DAM) – Créer une copie linguistique** : crée des fichiers binaires, des métadonnées et des balises traduits pour les ressources et les dossiers.
 
 Selon le modèle de projet que vous sélectionnez, certains workflows sont disponibles :
 
@@ -30,8 +31,8 @@ Selon le modèle de projet que vous sélectionnez, certains workflows sont dispo
 | Demander le lancement | x |  |
 | Demander une page de destination | x |  |
 | Demander un e-mail | x | |
-| DAM Créer copie de langue&amp;ast; |  | x |
-| DAM Créer et traduire copie de langue&amp;ast; |   | x |
+| DAM Créer copie linguistique&amp;ast; |  | x |
+| DAM Créer et traduire copie linguistique&amp;ast; |   | x |
 
 >[!NOTE]
 >
@@ -39,7 +40,7 @@ Selon le modèle de projet que vous sélectionnez, certains workflows sont dispo
 
 Les étapes de démarrage et d’achèvement des workflows sont les mêmes, quel que soit le workflow choisi. Seules les étapes changent.
 
-Vous commencez un workflow directement dans les projets (à l’exception de Gestion des actifs numériques (DAM) – Créer une copie de langue ou Gestion des actifs numériques (DAM) – Créer et traduire la copie de langue). Les informations sur les tâches en attente d’un projet sont répertoriées dans la vignette **Tâches**. Les notifications relatives aux tâches à effectuer s’affichent en regard de l’icône de l’utilisateur ou de l’utilisatrice.
+Vous commencez un workflow directement dans les projets (à l’exception de Gestion des actifs numériques (DAM) – Créer une copie linguistique ou Gestion des actifs numériques (DAM) – Créer et traduire la copie linguistique). Les informations sur les tâches en attente d’un projet sont répertoriées dans la vignette **Tâches**. Les notifications relatives aux tâches à effectuer s’affichent en regard de l’icône de l’utilisateur ou de l’utilisatrice.
 
 Pour plus d’informations sur l’utilisation des workflows dans AEM, reportez-vous aux sections suivantes :
 
@@ -71,6 +72,6 @@ Ce workflow vous permet de demander un lancement.
 
 1. Cliquez sur **Créer**. Le workflow commence. Le workflow apparaît dans la liste **Workflows** (cliquez sur les points de suspension **...** de la mosaïque **Workflows** pour accéder à cette liste).
 
-## Workflow Créer (et traduire) la copie de la langue pour les ressources {#create-and-translate-language-copy-workflow-for-assets}
+## Workflow Créer (et traduire) la copie linguistique pour les ressources {#create-and-translate-language-copy-workflow-for-assets}
 
-Les workflows **Créer une copie de langue** et **Créer et traduire la copie de langue** sont présentés en détail dans la section [Création de copies de langue pour les ressources](/help/assets/translate-assets.md).
+Les workflows **Créer une copie linguistique** et **Créer et traduire la copie linguistique** sont présentés en détail dans la section [Création de copies linguistiques pour les ressources](/help/assets/translate-assets.md).

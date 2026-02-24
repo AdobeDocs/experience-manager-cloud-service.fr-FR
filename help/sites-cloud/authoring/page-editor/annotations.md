@@ -1,13 +1,14 @@
 ---
 title: Ajout d’annotations de page
 description: Utilisez le mode d’annotation pour laisser des annotations et des schémas sur les pages, car vous utiliserez des pense-bêtes pour faciliter le processus de révision du contenu.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '682'
 ht-degree: 74%
 
 ---
@@ -114,7 +115,7 @@ Les annotations et leurs schémas associés peuvent être supprimés.
 
 >[!NOTE]
 >
->Si vous supprimez un composant, par exemple, toutes les annotations et tous les schémas associés sont également supprimés, quelle que soit leur position sur la page dans son ensemble.
+>Si vous supprimez un composant, par exemple, toutes les annotations et tous les schémas associés à cette ressource sont également supprimés, quelle que soit leur position sur la page dans son ensemble.
 
 ## Suppression des schémas uniquement {#deleting-sketches}
 

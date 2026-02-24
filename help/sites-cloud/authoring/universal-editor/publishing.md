@@ -1,13 +1,14 @@
 ---
 title: Publication de contenu avec l’éditeur universel
 description: Découvrez comment l’éditeur universel publie du contenu et comment vos applications peuvent gérer le contenu publié.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '569'
 ht-degree: 33%
 
 ---
@@ -52,7 +53,7 @@ Lorsque vous, en tant qu’auteur de contenu, êtes prêt à publier votre conte
 
 La dépublication de contenu fonctionne de la même manière que la publication de contenu. Lorsque vous êtes en tant que créateur de contenu et que vous êtes prêt à supprimer du contenu de la publication, appuyez ou cliquez sur l’icône représentant des points de suspension dans la barre d’outils de l’éditeur universel, puis sur **Dépublier**.
 
-Vous disposez alors des mêmes options de dépublication du contenu que lors de la [&#x200B; publication du contenu.](#publishing-content) d’inclure la dépublication à partir d’une instance d’aperçu si disponible et les éléments à inclure dans la dépublication.
+Vous disposez alors des mêmes options de dépublication du contenu que lors de la [ publication du contenu.](#publishing-content) d’inclure la dépublication à partir d’une instance d’aperçu si disponible et les éléments à inclure dans la dépublication.
 
 ## Publication et dépublication à partir de la console Sites {#publishing-sites-console}
 

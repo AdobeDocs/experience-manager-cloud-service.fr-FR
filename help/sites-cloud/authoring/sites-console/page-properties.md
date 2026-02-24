@@ -1,14 +1,15 @@
 ---
 title: Propriétés de page
 description: Découvrez les différentes propriétés qu’une page peut avoir, comment elles contrôlent le comportement de la page et comment elle est gérée.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
 mini-toc-levels: 2
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2138'
+source-wordcount: '2144'
 ht-degree: 61%
 
 ---
@@ -20,11 +21,11 @@ Découvrez les différentes propriétés qu’une page peut avoir, comment elles
 
 >[!TIP]
 >
->Pour plus d’informations sur la modification des propriétés d’une page, consultez le document [&#x200B; Modification des propriétés de page &#x200B;](/help/sites-cloud/authoring/sites-console/edit-page-properties.md).
+>Pour plus d’informations sur la modification des propriétés d’une page, consultez le document [ Modification des propriétés de page ](/help/sites-cloud/authoring/sites-console/edit-page-properties.md).
 
 ## Présentation et disponibilité des propriétés {#overview}
 
-Les propriétés de page peuvent contrôler de nombreux aspects d’une page, depuis le titre jusqu’aux autorisations, en passant par le branding. Les propriétés sont réparties sur plusieurs onglets, dont certains peuvent être masqués selon le type de page. Comme la plupart des propriétés dans AEM, [&#x200B; propriétés de page peuvent être héritées.](/help/sites-cloud/authoring/sites-console/edit-page-properties.md#inheritance)
+Les propriétés de page peuvent contrôler de nombreux aspects d’une page, depuis le titre jusqu’aux autorisations, en passant par le branding. Les propriétés sont réparties sur plusieurs onglets, dont certains peuvent être masqués selon le type de page. Comme la plupart des propriétés dans AEM, [ propriétés de page peuvent être héritées.](/help/sites-cloud/authoring/sites-console/edit-page-properties.md#inheritance)
 
 >[!NOTE]
 >

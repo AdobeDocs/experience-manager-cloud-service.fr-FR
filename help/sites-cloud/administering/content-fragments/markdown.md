@@ -3,16 +3,17 @@ title: Markdown
 description: Découvrez comment l’éditeur de fragment de contenu utilise la syntaxe Markdown pour vous permettre de créer facilement du contenu pour la création de pages et la diffusion headless.
 feature: Content Fragments
 role: User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
 solution: Experience Manager Sites
-source-git-commit: be60f0371e652549cec6e57d1449b6e07b996514
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '565'
 ht-degree: 72%
 
 ---
 
-# Markdown {#markdown}
+# Texte (Markdown) {#markdown}
 
 Lors de la [création](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) de fragments de contenu, des [champs de texte multiligne](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) peuvent être définis avec le **Type par défaut** de **Markdown**. L’éditeur de fragment de contenu utilise la syntaxe *markdown* pour vous permettre d’écrire facilement du contenu pour la création de pages et la diffusion headless :
 
@@ -126,7 +127,7 @@ Vous pouvez avoir des blocs de citation imbriqués. Par exemple :
 
 Vous pouvez créer des listes ordonnées et non ordonnées.
 
-Pour créer une liste non triée, utilisez le symbole &ast; (astérisque) devant les éléments de la liste. Par exemple :
+Pour créer une liste non triée, utilisez le symbole &amp;ast; (astérisque) devant les éléments de la liste. Par exemple :
 
     `* item in list`
 

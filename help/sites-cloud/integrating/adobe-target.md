@@ -1,17 +1,18 @@
 ---
 title: Intégration à Adobe Target
 description: Intégration à Adobe Target
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
-source-git-commit: 0af1f7dcc330a2ee5300088f274150a3ea79efe8
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '613'
-ht-degree: 94%
+source-wordcount: '619'
+ht-degree: 93%
 
 ---
 
-# Intégration à Adobe Target{#integrating-with-adobe-target}
+# Intégrer à Adobe Target{#integrating-with-adobe-target}
 
-Dans le cadre d’Adobe Experience Cloud, [Adobe Target](https://business.adobe.com/fr/products/target/adobe-target.html) vous permet d’améliorer la pertinence du contenu en effectuant un ciblage et des mesures sur tous les canaux. Adobe Target est utilisé par les spécialistes marketing pour concevoir et exécuter des tests en ligne, créer des segments ciblés à la volée (en fonction du comportement) et automatiser le ciblage du contenu et les expériences en ligne. AEM as a Cloud Service a adopté le workflow de ciblage qui est utilisé dans Adobe Target Standard. Si vous utilisez Target, vous connaissez l’environnement d’édition de ciblage d’AEM as a Cloud Service.
+Dans le cadre d’Adobe Experience Cloud, [Adobe Target](https://business.adobe.com/fr/products/target/adobe-target.html) vous permet d’améliorer la pertinence du contenu en effectuant un ciblage et des mesures sur tous les canaux. Adobe Target est utilisé par les spécialistes marketing pour concevoir et exécuter des tests en ligne, créer des segments d’audience à la volée (en fonction du comportement) et automatiser le ciblage du contenu et les expériences en ligne. AEM as a Cloud Service a adopté le workflow de ciblage qui est utilisé dans Adobe Target Standard. Si vous utilisez Target, vous connaissez l’environnement d’édition de ciblage d’AEM as a Cloud Service.
 
 Intégrez vos sites AEM à Adobe Target pour personnaliser le contenu dans vos pages :
 
@@ -42,7 +43,7 @@ Pour assurer l’intégration à Target, effectuez les tâches suivantes :
 
 >[!CAUTION]
 >
->Dans AEM as a Cloud Service, l’agent de réplication qui synchronise les offres et les activités d’AEM vers Adobe Target est désactivé par défaut. Contactez l’[assitance technique d’Adobe](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr#support) si vous devez réactiver l’agent de réplication.
+>Dans AEM as a Cloud Service, l’agent de réplication qui synchronise les offres et les activités d’AEM vers Adobe Target est désactivé par défaut. Contactez l’[assitance technique d’Adobe](https://experienceleague.adobe.com/?support-solution=General&lang=fr#support) si vous devez réactiver l’agent de réplication.
 
 >[!NOTE]
 >

@@ -1,18 +1,19 @@
 ---
 title: Gestion des pages dans votre lancement
 description: Vous pouvez créer des pages dans votre lancement. Vous pouvez également supprimer des pages indésirables.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: cc007536d14bd0464879b30d6303c24ccf15d2d0
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 82%
+source-wordcount: '294'
+ht-degree: 81%
 
 ---
 
-# Gestion des pages dans votre lancement {#managing-pages-in-launch}
+# Gestion des pages dans Launch {#managing-pages-in-launch}
 
 Les lancements vous permettent de :
 
@@ -21,14 +22,13 @@ Les lancements vous permettent de :
 * à partir de la console [Ajouter de nouvelles pages à](#add-pages-to-launch), ou [supprimer des pages non souhaitées](#remove-pages-from-launch) d’un lancement ;
 * effectuer d’autres actions standard sur les pages du lancement.
 
-## Exploration de la structure de votre lancement {#navigate-structure-of-launch}
+## Navigation dans la structure de votre lancement {#navigate-structure-of-launch}
 
 Vous pouvez naviguer parmi la structure de votre lancement depuis :
 
 * L’éditeur de page :
 
    * Sélectionnez **Naviguer** pour ouvrir la structure de lancement dans la console :
-
      ![Navigation dans le lancement à partir de l’éditeur de page](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
 
      >[!NOTE]
@@ -54,12 +54,12 @@ Tous ces points d’entrée ouvrent le lancement dans la console Sites , où vou
 
 * Naviguer
 * **Créer** des pages
-* Sélectionnez les pages existantes et agissez. Par exemple, **Modifier**, ouvrez **Propriétés**, **Verrouiller**, **Copier**, **Coller** et **Supprimer**
+* Sélectionnez des pages existantes et agissez ; par exemple, **Modifier**, ouvrez **Propriétés**, **Verrouiller**, **Copier**, **Coller** et **Supprimer**.
   ![Accéder au lancement dans la console Sites à partir de Gérer le contenu](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
 * Utiliser le rail **Références** pour revenir aux pages **Source de lancement** :
   ![Console Sites – Source de lancement](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
 
-## Ajout de pages à votre lancement {#add-pages-to-launch}
+## Ajouter des pages à votre lancement {#add-pages-to-launch}
 
 Pour ajouter de nouvelles pages à votre lancement :
 
@@ -67,7 +67,7 @@ Pour ajouter de nouvelles pages à votre lancement :
 
 1. Sélectionnez **Créer** pour [créer une page](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) comme d’habitude.
 
-## Suppression de pages de votre lancement {#remove-pages-from-launch}
+## Supprimer des pages de votre lancement {#remove-pages-from-launch}
 
 Pour supprimer des pages de votre lancement :
 

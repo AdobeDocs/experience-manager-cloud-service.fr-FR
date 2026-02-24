@@ -1,13 +1,14 @@
 ---
 title: Manipulation de base
 description: Familiarisez-vous avec la navigation dans AEM et l’utilisation des fonctionnalités de base.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '960'
 ht-degree: 62%
 
 ---
@@ -75,7 +76,7 @@ Les consoles suivantes sont disponibles à partir du panneau de navigation :
 | Fragments d’expérience | Un [fragment d’expérience](/help/sites-cloud/authoring/fragments/content-fragments.md) est une expérience autonome qui peut être réutilisée sur l’ensemble des canaux et qui présente des variations, ce qui vous évite de devoir copier et coller à plusieurs reprises des expériences ou des parties d’expériences. |
 | Assets | La console Ressources vous permet d’importer et de gérer des [ressources numériques telles que des images, des vidéos, des documents et des fichiers audio](/help/assets/overview.md). Ces ressources peuvent ensuite être utilisées par n’importe quel site s’exécutant sur la même instance AEM. Vous pouvez également créer et gérer des [fragments de contenu](/help/assets/content-fragments/content-fragments.md) à partir de la console Ressources. |
 | Personnalisation  | Cette console propose un ensemble d’outils de [création de contenu ciblé et de présentation d’expériences personnalisées](/help/sites-cloud/authoring/personalization/overview.md). |
-| Fragments de contenu | Les [Fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md) vous permettent de concevoir, créer, organiser et publier du contenu indépendant des pages. Ils vous permettent de préparer du contenu structuré prêt à être utilisé à plusieurs emplacements/sur plusieurs canaux, idéal pour la création de pages et la diffusion headless. |
+| Fragments de contenu | Les [Fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md) vous permettent de concevoir, de créer, d’organiser et de publier du contenu indépendant des pages. Ils vous permettent de préparer du contenu structuré prêt à être utilisé à plusieurs emplacements/sur plusieurs canaux, idéal pour la création de pages et la diffusion headless. |
 | Générer des variations | [Générer des variations](/help/generative-ai/generate-variations.md) utilise l’intelligence artificielle (IA) générative pour créer des variations de contenu en fonction d’invites ; ces invites sont fournies par Adobe ou créées et gérées par les utilisateurs. |
 
 ## Panneau Outils {#tools-panel}
@@ -90,13 +91,13 @@ L’en-tête est toujours présent en haut de l’écran. Bien que la plupart de
 
 ![En-tête de navigation](/help/sites-cloud/authoring/assets/basic-handling-navigation-bar.png)
 
-* [&#x200B; Navigation globale &#x200B;](#global-navigation) - Sélectionnez le lien **Adobe Experience Manager** pour naviguer entre les consoles.
+* [ Navigation globale ](#global-navigation) - Sélectionnez le lien **Adobe Experience Manager** pour naviguer entre les consoles.
 
   ![Navigation globale](/help/sites-cloud/authoring/assets/basic-handling-global-navigation.png)
 
 * Commentaires
 
-  ![Bouton Commentaires &#x200B;](/help/sites-cloud/authoring/assets/basic-handling-feedback.png)
+  ![Bouton Commentaires ](/help/sites-cloud/authoring/assets/basic-handling-feedback.png)
 
 * Votre organisation IMS : sélectionnez cette option pour la modifier si nécessaire.
 
@@ -104,7 +105,7 @@ L’en-tête est toujours présent en haut de l’écran. Bien que la plupart de
 
   ![Bouton Solutions](/help/sites-cloud/authoring/assets/basic-handling-solutions.png)
 
-* [Recherche](/help/sites-cloud/authoring/search.md) - Vous pouvez également utiliser la `/` [touche de raccourci](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) (barre oblique) pour appeler la recherche à partir de n’importe quelle console.
+* [Recherche](/help/sites-cloud/authoring/search.md) - Vous pouvez également utiliser la [ ](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)touche de raccourci`/` (barre oblique) pour appeler la recherche à partir de n’importe quelle console.
 
   ![Icône Rechercher](/help/sites-cloud/authoring/assets/basic-handling-search-icon.png)
 
@@ -112,7 +113,7 @@ L’en-tête est toujours présent en haut de l’écran. Bien que la plupart de
 
   ![Bouton Aide](/help/sites-cloud/authoring/assets/basic-handling-help-icon.png)
 
-* [&#x200B; Notifications &#x200B;](/help/sites-cloud/authoring/inbox.md) -   Cette icône porte un badge indiquant le nombre de notifications incomplètes actuellement attribuées.
+* [ Notifications ](/help/sites-cloud/authoring/inbox.md) -   Cette icône porte un badge indiquant le nombre de notifications incomplètes actuellement attribuées.
 
   ![Bouton Notifications](/help/sites-cloud/authoring/assets/basic-handling-notifications.png)
 

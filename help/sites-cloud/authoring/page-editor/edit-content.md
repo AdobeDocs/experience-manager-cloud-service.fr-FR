@@ -1,13 +1,14 @@
 ---
 title: Modifier le contenu d’une page à l’aide de l’éditeur de page AEM
 description: L’éditeur de page d’AEM est un outil puissant pour créer votre contenu.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: eacfda02-ff53-42ed-b5b2-88be3879a5e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 9a798be41cb3bcf08b6841d236379bf861ff5510
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1628'
+source-wordcount: '1634'
 ht-degree: 35%
 
 ---

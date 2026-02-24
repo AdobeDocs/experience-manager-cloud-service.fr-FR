@@ -3,11 +3,12 @@ title: Modèles de site
 description: Découvrez comment les modèles de site AEM peuvent être utilisés pour prédéfinir la structure du site et le contenu initial afin de vous permettre de créer rapidement des sites.
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
-source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '493'
 ht-degree: 82%
 
 ---
@@ -31,7 +32,7 @@ Les modèles, réutilisables et personnalisables, sont d’une grande efficacit�
 >
 >Les modèles de site AEM ne doivent pas être confondus avec les [thèmes de site AEM.](site-themes.md) Les thèmes de site AEM contiennent uniquement les informations de style d’un site AEM. Les modèles de site AEM définissent la structure du site et le contenu initial et contiennent un thème de site AEM pour permettre [création rapide de site.](create-site.md)
 
-### Modèles De Site Fournis Par Adobe {#adobe-templates}
+### Modèles de site fournis par Adobe {#adobe-templates}
 
 {{adobe-templates}}
 
@@ -67,7 +68,7 @@ Les modèles de site sont simplement des packages avec une structure logique qui
 
 * `files` : dossier contenant le kit d’interface utilisateur, le fichier XD et éventuellement d’autres fichiers.
 * `previews` : dossier contenant des captures d’écran du modèle de site.
-* `site` : package de contenu du contenu copié pour chaque site créé à partir de ce modèle, tel que des modèles de page, des pages, etc.
+* `site` : module du contenu copié pour chaque site créé à partir de ce modèle, tel que des modèles de page, des pages, etc.
 * `theme` : sources du [thème du site](site-themes.md) pour modifier l’aspect du site, y compris CSS, JavaScript, etc.
 
 ## Développement de modèles de site {#developing-templates}

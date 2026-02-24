@@ -1,20 +1,21 @@
 ---
 title: Panneau latéral de l’éditeur de page
-description: Découvrez comment utiliser le panneau latéral dans l’éditeur d’AEM Sites pour ajouter des composants et des ressources à votre page.
+description: Découvrez comment utiliser le panneau latéral dans l’éditeur de sites d’AEM pour ajouter des composants et des ressources à votre page.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 5f025828-f2ca-4cbb-9cdf-a199e9e90cc7
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1128'
 ht-degree: 41%
 
 ---
 
 # Panneau latéral de l’éditeur de page {#side-panel}
 
-Découvrez comment utiliser le panneau latéral dans l’éditeur d’AEM Sites pour ajouter des composants et des ressources à votre page.
+Découvrez comment utiliser le panneau latéral dans l’éditeur de sites d’AEM pour ajouter des composants et des ressources à votre page.
 
 ## Modes du panneau latéral {#modes}
 

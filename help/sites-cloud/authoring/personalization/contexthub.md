@@ -1,20 +1,21 @@
 ---
 title: Aperçu des pages à l’aide des données ContextHub
 description: La barre d’outils ContextHub affiche les données ContextHub, vous permet de modifier les données de la boutique, et se révèle utile pour prévisualiser le contenu.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 9c0536c5-900e-4814-9e31-f9fee5adc17c
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 68%
+source-wordcount: '366'
+ht-degree: 67%
 
 ---
 
 # Aperçu des pages à l’aide des données ContextHub  {#previewing-pages-using-contexthub-data}
 
-La barre d’outils ContextHub affiche les données des magasins ContextHub et vous permet de modifier les données du magasin. La barre d’outils ContextHub est utile pour prévisualiser le contenu déterminé par les données d’un magasin ContextHub.
+La barre d’outils ContextHub affiche les données ContextHub et vous permet de modifier les données de la boutique. La barre d’outils ContextHub est utile pour prévisualiser le contenu déterminé par les données d’un magasin ContextHub.
 
 La barre d’outils se compose d’une série de modes d’UI qui contiennent un ou plusieurs modules d’UI.
 
@@ -25,15 +26,15 @@ ContextHub installe plusieurs modes d’IU et modules d’IU. Votre administrate
 
 ## Affichage de la barre d’outils ContextHub {#revealing-the-contexthub-toolbar}
 
-La barre d’outils ContextHub est disponible en mode Aperçu. La barre d’outils est disponible uniquement sur les instances d’auteur et uniquement si l’administrateur l’a activée.
+La barre d’outils ContextHub est disponible en mode Aperçu. La barre d’outils est disponible uniquement sur les instances de création et uniquement si l’administrateur l’a activée.
 
 ![Barre d’outils ContextHub](/help/sites-cloud/authoring/assets/contexthub-toolbar.png)
 
-1. Lorsque la page est ouverte pour modification, sélectionnez Aperçu dans la barre d’outils.
+1. Une fois la page ouverte pour modification, sélectionnez Aperçu dans la barre d’outils.
 
    ![Bouton Prévisualiser](/help/sites-cloud/authoring/assets/contexthub-preview-button.png)
 
-1. Pour afficher la barre d’outils, sélectionnez l’icône ContextHub .
+1. Pour afficher la barre d’outils, sélectionnez l’icône ContextHub.
 
    ![Bouton ContextHub](/help/sites-cloud/authoring/assets/contexthub-button.png)
 
@@ -49,16 +50,16 @@ Les modules d’IU peuvent afficher des données d’une ou de plusieurs boutiqu
 
 ### Contenu de la fenêtre contextuelle {#popup-content}
 
-Certains modules d’IU affichent une fenêtre contextuelle lorsque vous cliquez ou appuyez dessus. En règle générale, la fenêtre contextuelle contient des informations supplémentaires par rapport à celles qui s’affichent dans la barre d’outils.
+Certains modules d’interface utilisateur affichent une incrustation pop-up lorsque vous cliquez ou appuyez dessus. En règle générale, le pop-up contient des informations supplémentaires par rapport à celles qui s’affichent dans la barre d’outils.
 
 ![Informations sur le profil ContextHub](/help/sites-cloud/authoring/assets/contexthub-profile.png)
 
 ### Formulaires dans une fenêtre contextuelle {#popup-forms}
 
-La superposition contextuelle d’un module peut inclure des éléments de formulaire qui vous permettent de modifier les données dans le magasin ContextHub. Si le contenu de la page est déterminé par les données du magasin, vous pouvez utiliser le formulaire et observer les modifications apportées au contenu de la page.
+La superposition pop-up d’un module peut inclure des éléments de formulaire qui vous permettent de modifier les données dans le magasin ContextHub. Si le contenu de la page est déterminé par les données du magasin, vous pouvez utiliser le formulaire et observer les modifications apportées au contenu de la page.
 
 ### Mode Plein écran {#fullscreen-mode}
 
-Les fenêtres contextuelles peuvent inclure une icône que vous choisissez pour développer le contenu de la fenêtre contextuelle afin de couvrir l’ensemble de la fenêtre ou de l’écran du navigateur.
+Les fenêtres contextuelles peuvent inclure une icône que vous sélectionnez pour développer le contenu de la fenêtre contextuelle afin qu’il couvre toute la fenêtre du navigateur.
 
 ![Bouton Plein écran](/help/sites-cloud/authoring/assets/contexthub-fullscreen.png)

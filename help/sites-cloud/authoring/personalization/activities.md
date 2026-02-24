@@ -1,13 +1,14 @@
 ---
 title: Gestion des activités
 description: La console Activités vous permet de créer, d’organiser et de gérer les activités marketing de vos marques.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1964'
 ht-degree: 86%
 
 ---
@@ -61,12 +62,12 @@ Créez une marque pour laquelle vous souhaitez gérer les activités marketing.
 
 Quand vous créez une marque avec la console Activités, elle apparaît également dans la [console Offres](/help/sites-cloud/authoring/personalization/offers.md) où vous pouvez créer des offres pour les expériences de vos activités.
 
-1. Dans la console Navigation, sélectionnez **Personalization**. Sélectionnez **Activités**.
+1. Dans la console de navigation, sélectionnez **Personalization**. Sélectionnez **Activités**.
 
    ![Accès aux activités](/help/sites-cloud/authoring/assets/activities-navigation.png)
 
 1. Dans la console Activités, sélectionnez **Créer** puis **Créer une marque**.
-1. Sélectionnez le modèle de marque et choisissez **Suivant**.
+1. Sélectionnez le modèle de marque, puis sélectionnez **Suivant**.
 1. Saisissez le titre de la marque qui apparaîtra dans les consoles Activités et Offres. Vous pouvez également saisir ou sélectionner une ou plusieurs balises à associer à la marque.
 1. Sélectionnez **Créer**. Votre marque apparaît dans la console Activités.
 
@@ -97,8 +98,8 @@ Ajoutez une activité ou modifiez une activité existante pour concentrer vos ef
 
 Pour ajouter une activité :
 
-1. Sélectionnez la marque pour laquelle vous créez l’activité, puis **Créer** et **Créer l’activité**. Si vous modifiez une activité, sélectionnez-la dans l’écran Zone maître et cliquez ou appuyez sur **Modifier l’activité**.
-1. Indiquez les informations suivantes, puis sélectionnez **Suivant** :
+1. Sélectionnez la marque pour laquelle vous créez l’activité, puis sélectionnez **Créer** et **Créer une activité**. Si vous modifiez une activité, sélectionnez-la dans l’écran Zone maître et cliquez ou appuyez sur **Modifier l’activité**.
+1. Fournissez les informations suivantes, puis sélectionnez **Suivant** :
    * Un nom pour l’activité.
    * Le moteur de ciblage à utiliser. ContextHub (AEM) est sélectionné par défaut. Si vous devez utiliser Adobe Target, créez l’activité dans l’éditeur de contenu ciblé.
    * Si vous avez sélectionné Adobe Target comme moteur de ciblage, sélectionnez/modifiez la configuration cloud à utiliser pour vous connecter à Adobe Target. (Veillez à ne pas sélectionner un framework que vous avez créé pour votre configuration cloud.)
@@ -106,17 +107,17 @@ Pour ajouter une activité :
    * Sélectionnez le type d’activité.
 1. Ajoutez une ou plusieurs expériences à l’activité. Sélectionnez **Ajouter une expérience**.
 1. Si vous utilisez le ciblage AEM ou le ciblage d’expérience Adobe Target :
-   1. Sélectionnez **Sélectionner l’audience** et sélectionnez le segment ciblé par votre expérience.
-   1. Sélectionnez **Ajouter une expérience**, saisissez un nom, puis **OK**.
+   1. Sélectionnez **Sélectionner une audience** et sélectionnez le segment ciblé par votre expérience.
+   1. Sélectionnez **Ajouter une expérience**, saisissez un nom, puis sélectionnez **OK**.
    1. Sélectionnez **Suivant**.
 Si vous utilisez des tests A/B Adobe Target :
-   1. Sélectionnez le crayon dans la zone audiences pour sélectionner une audience.
-   1. Sélectionnez **Ajouter une expérience**, saisissez un nom, puis **OK**.
+   1. Sélectionnez le crayon dans la zone des audiences pour sélectionner une audience.
+   1. Sélectionnez **Ajouter une expérience**, saisissez un nom, puis sélectionnez **OK**.
    1. Saisissez le pourcentage du trafic qui affiche chaque expérience.
    1. Sélectionnez **Suivant**.
 1. Pour spécifier le moment où l’activité commence, utilisez le menu déroulant **Démarrer** pour sélectionner l’une des valeurs suivantes :
    * **Après activation :** l’activité commence lorsque la page contenant le contenu ciblé est activée.
-   * **Date et heure spécifiées :** heure spécifique. Lorsque vous sélectionnez cette option, sélectionnez l’icône du calendrier, sélectionnez une date et indiquez l’heure de début de l’activité.
+   * **Date et heure spécifiées :** heure spécifique. Lorsque vous sélectionnez cette option, cliquez sur l’icône de calendrier, sélectionnez une date et indiquez l’heure de début de l’activité.
 1. Pour spécifier le moment où l’activité se termine, utilisez le menu déroulant Fin pour sélectionner l’une des valeurs suivantes :
    * **Lorsqu’elle est désactivée** : l’activité se termine lorsque la page qui contient le contenu ciblé est désactivée.
    * **Date et heure spécifiées :** heure spécifique. Lorsque vous sélectionnez cette option, cliquez sur l’icône de calendrier, sélectionnez une date et indiquez l’heure de fin de l’activité.
@@ -138,12 +139,12 @@ Vous devez publier les activités pour les rendre disponibles. À l’inverse, v
 
 Pour publier ou dépublier une activité :
 
-1. Sélectionnez la marque, puis la zone contenant l’activité que vous souhaitez publier ou dont vous souhaitez annuler la publication.
-1. Sélectionnez l’icône en regard de l’activité ou des activités que vous souhaitez publier ou dont vous souhaitez annuler la publication.
+1. Sélectionnez la marque, puis la zone contenant l’activité que vous souhaitez publier ou dépublier.
+1. Sélectionnez l’icône en regard de l’activité ou des activités que vous souhaitez publier ou dépublier.
 
    ![Publication à partir de la console Activités](/help/sites-cloud/authoring/assets/activities-console.png)
 
-1. Pour publier, sélectionnez **Publish**. Pour annuler la publication, sélectionnez **Annuler la publication**. Votre activité ou vos activités sont publiées ou dépubliées et leur statut change dans la console Activités (une actualisation peut s’avérer nécessaire).
+1. Pour publier, sélectionnez **Publier**. Pour dépublier, sélectionnez **Dépublier**. Votre activité ou vos activités sont publiées ou dépubliées et leur statut change dans la console Activités (une actualisation peut s’avérer nécessaire).
 
 ## Activités sur les instances de création et de publication {#activities-on-author-and-publish-instances}
 
@@ -160,11 +161,11 @@ Pour afficher les performances des activités et convertir les expériences gagn
 
 1. Dans **Personalization**, sélectionnez **Activités** pour accéder à la console **Activités**.
 1. Sélectionnez la marque pour laquelle vous souhaitez afficher les activités.
-1. Sélectionnez l’activité et sélectionnez **Afficher les propriétés**, cliquez sur l’onglet **Rapports** et sélectionnez l’activité pour laquelle vous souhaitez afficher les performances/convertir des expériences gagnantes. Les données de performances sont affichées.
+1. Sélectionnez l’activité, sélectionnez **Afficher les propriétés**, cliquez sur l’onglet **Rapports** et sélectionnez l’activité pour laquelle vous souhaitez afficher les performances ou convertir les expériences gagnantes. Les données de performances sont affichées.
 
    ![Consultation des performances d’une activité](/help/sites-cloud/authoring/assets/activities-performance.png)
 
-1. Sélectionnez le lien **Pousser l’expérience gagnante** pour pousser cette expérience comme expérience par défaut.
+1. Sélectionnez le lien **Push gagnant** pour pousser cette expérience en tant qu’expérience par défaut.
 
    La conversion de l’expérience gagnante effectue les opérations suivantes :
 
@@ -175,7 +176,7 @@ Pour afficher les performances des activités et convertir les expériences gagn
 
    Une expérience gagnante est l’expérience qui génère le plus d’effet élévateur dans les rapports, en fonction du taux de conversion.
 
-1. Sélectionnez **Oui** pour confirmer que vous souhaitez convertir le gagnant, désactiver l’expérience actuelle et la remplacer par le contenu de l’expérience gagnante.
+1. Sélectionnez **Oui** pour confirmer que vous souhaitez convertir l’expérience gagnante, en désactivant l’expérience actuelle et en la remplaçant par le contenu de l’expérience gagnante.
 
 ## Synchronisation des activités avec Adobe Target {#synchronizing-activities-with-adobe-target}
 

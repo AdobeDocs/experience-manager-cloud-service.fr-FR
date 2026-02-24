@@ -1,13 +1,14 @@
 ---
 title: Système de style
 description: Le système de style permet à un auteur de modèles de définir des classes de style dans la politique de contenu d’un composant, de façon à pouvoir sélectionner ces classes lors de la modification du composant sur une page. Ces styles peuvent être des variantes visuelles d’un composant, le rendant ainsi plus flexible.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: d2cd112de034ca6ea22590245fb480622acf258a
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1344'
 ht-degree: 88%
 
 ---
@@ -73,7 +74,7 @@ Les sections suivantes, [En tant qu’auteur de contenu](#as-a-content-author) e
 Si vous souhaitez utiliser le système de style pour vos propres composants, procédez comme suit :
 
 1. Installez le CSS en tant que bibliothèques clientes, comme décrit dans la section [Vue d’ensemble](#overview).
-1. Configurez les classes CSS que vous souhaitez mettre à la disposition des auteurs de contenu, comme décrit dans la section [&#x200B; En tant qu’auteur de modèle &#x200B;](#as-a-template-author).
+1. Configurez les classes CSS que vous souhaitez mettre à la disposition des auteurs de contenu, comme décrit dans la section [ En tant qu’auteur de modèle ](#as-a-template-author).
 1. Les créateurs et créatrices de contenu peuvent alors utiliser les styles comme décrit dans la section [En tant que créateur ou créatrice de contenu](#as-a-content-author).
 
 ### En tant qu’auteur de contenu {#as-a-content-author}
