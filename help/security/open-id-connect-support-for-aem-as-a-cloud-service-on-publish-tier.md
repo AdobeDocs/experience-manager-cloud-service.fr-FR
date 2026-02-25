@@ -4,10 +4,10 @@ description: Découvrez comment configurer Open ID Connect (OIDC) pour AEM a
 feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
-source-git-commit: 75c2dbc4f1d77de48764e5548637f95bee9264dd
+source-git-commit: c9b0f68751bbec69ff0d2a09aa3b7df31d35de3a
 workflow-type: tm+mt
-source-wordcount: '1986'
-ht-degree: 71%
+source-wordcount: '2153'
+ht-degree: 66%
 
 ---
 
@@ -115,7 +115,7 @@ Configurez maintenant le gestionnaire d’authentification OIDC. Il est possibl
 
 ### Configurer SlingUserInfoProcessor {#configure-slinguserinfoprocessor}
 
-1. Créez le fichier de configuration. Pour cet exemple, nous utiliserons `org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessor~azure.cfg.json`. Le suffixe `azure` doit être un identifiant unique. Consultez un exemple du fichier de configuration ci-dessous :
+1. Créez le fichier de configuration. Pour cet exemple, nous utiliserons `org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessorImpl~azure.cfg.json`. Le suffixe `azure` doit être un identifiant unique. Consultez un exemple du fichier de configuration ci-dessous :
 
    ```
    {
@@ -208,12 +208,14 @@ Deux approches principales sont disponibles.
 ### Option 1 — Groupes Locaux
 
 Le groupe externe peut être ajouté en tant que membre d’un groupe local qui possède déjà les listes de contrôle d’accès requises.
+
 * Le groupe externe doit exister dans le référentiel, ce qui se produit automatiquement lorsqu’un utilisateur appartenant à ce groupe se connecte pour la première fois.
 * Cette option est généralement préférable lorsque des groupes d’utilisateurs fermés sont en cours d’utilisation, car le groupe local existe dans les environnements de création et de publication.
 
 ### Option 2 — Listes de contrôle d’accès directes sur des groupes externes via RepoInit
 
 Les listes de contrôle d’accès peuvent être appliquées directement à des groupes externes à l’aide de scripts RepoInit.
+
 * Cette approche est plus efficace et est recommandée lorsque les CUG ne sont pas utilisés.
 * L’exemple suivant illustre une configuration RepoInit qui attribue des autorisations de lecture à un groupe externe. L’option `ignoreMissingPrincipal` permet la création de la liste de contrôle d’accès même si le groupe n’existe pas encore dans le référentiel :
 
@@ -352,14 +354,58 @@ Le nom de fichier qui doit être modifié est `org.apache.sling.auth.oauth_clien
 }
 ```
 
+## Redirection personnalisée après l’authentification {#custom-redirect-after-authentication}
+
+Par défaut, après une authentification OIDC réussie, les utilisateurs sont redirigés vers l’URL demandée à l’origine. Vous pouvez toutefois personnaliser ce comportement à l’aide du paramètre de requête `redirect`.
+
+### Utilisation du paramètre de redirection
+
+Lors du lancement de l’authentification, vous pouvez spécifier une URL de redirection personnalisée en ajoutant le paramètre `redirect` à votre requête d’authentification :
+
+```
+/content/wknd/us/en/adventures?redirect=/content/wknd/us/en/welcome
+```
+
+Dans cet exemple, après une authentification réussie, l’utilisateur est redirigé vers `/content/wknd/us/en/welcome` au lieu de la page demandée d’origine.
+
+### Contraintes de sécurité
+
+Pour des raisons de sécurité, le paramètre `redirect` présente les restrictions suivantes :
+
+* **Doit être un chemin relatif** : l’URL de redirection doit commencer par `/` (par exemple, `/content/mysite/dashboard`).
+* **Pas de redirections intersites** : les URL absolues (par exemple, `https://external-site.com`) ne sont pas autorisées
+* **Aucune URL relative au protocole** : les URL commençant par `//` sont rejetées pour empêcher les redirections relatives au protocole
+
+Si une URL de redirection non valide est fournie, l’authentification échoue avec une erreur.
+
+### Exemples de cas d’utilisation
+
+1. **Page d’accueil après la connexion** : redirigez les utilisateurs vers une page d’accueil personnalisée après leur première connexion
+
+   ```
+   /content/mysite/secure-area?redirect=/content/mysite/welcome
+   ```
+
+2. **Redirection de tableau de bord** : redirigez les utilisateurs vers un tableau de bord spécifique après l’authentification
+
+   ```
+   /content/mysite/login?redirect=/content/mysite/user/dashboard
+   ```
+
+3. **Liaison profonde** : permet aux utilisateurs de s’authentifier, puis d’accéder à une ressource spécifique
+
+   ```
+   /content/mysite/protected?redirect=/content/mysite/protected/specific-document
+   ```
+
 ## Comment migrer du gestionnaire d’authentification SAML vers le gestionnaire d’authentification OID
 
-Lorsqu’AEM est déjà configuré avec un gestionnaire d’authentification SAML et que les utilisateurs sont présents dans le référentiel avec la [synchronisation des données](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) activée, des conflits peuvent se produire entre les utilisateurs SAML d’origine et les nouveaux utilisateurs OIDC.
+Lorsqu’AEM est déjà configuré avec un gestionnaire d’authentification SAML et que les utilisateurs sont présents dans le référentiel avec la [synchronisation des données](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) activée, des conflits peuvent se produire entre les utilisateurs SAML d’origine et les nouveaux utilisateurs OIDC.
 
 1. Configurez le [OidcAuthenticationHandler](#configure-oidc-authentication-handler) et activez le `idpNameInPrincipals` dans la configuration [SlingUserInfoProcessor](#configure-slinguserinfoprocessor)
 1. Configuration [ACL pour les groupes externes](#configure-acl-for-external-groups).
 1. Après la connexion des utilisateurs, les anciens utilisateurs créés par le gestionnaire d’authentification SAML peuvent être supprimés.
 
 >[!NOTE]
->Une fois que le gestionnaire d’authentification SAML est désactivé et que le gestionnaire d’authentification OIDC est activé, si la [synchronisation des données](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) n’est pas activée, les sessions existantes ne sont plus valides. Les utilisateurs devront s’authentifier à nouveau, ce qui entraîne la création de nœuds d’utilisateur OIDC dans le référentiel.
+>Une fois que le gestionnaire d’authentification SAML est désactivé et que le gestionnaire d’authentification OIDC est activé, si la [synchronisation des données](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) n’est pas activée, les sessions existantes ne sont plus valides. Les utilisateurs devront s’authentifier à nouveau, ce qui entraîne la création de nœuds d’utilisateur OIDC dans le référentiel.
 
