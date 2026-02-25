@@ -4,9 +4,9 @@ description: Découvrez la tâche de création de formulaires de Brand Experienc
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
-source-git-commit: 71e3770a7a26b8d3144717513f3ec1c997b3b435
+source-git-commit: 36f4ba8207da67b8e68c9c9851311defc909b495
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
@@ -54,15 +54,9 @@ Après avoir créé votre structure de formulaire initiale à l’aide de l’as
 
 Pour plus d’informations, voir la [documentation de Forms Experience Builder.](/help/forms/experience-builder/product-overview.md)
 
-
 ## Activation {#activation}
 
-Pour activer la tâche de création de formulaire pour votre organisation, l’activation doit être lancée via Adobe. Commencez le processus en contactant par le biais de :
-
-* E-mail : `experience-production-agent@adobe.com`
-* Vous pouvez également contacter l’équipe de compte Adobe désignée.
-
-Lorsque vous contactez des personnes, veillez à fournir votre identifiant d’organisation AEM as a Cloud Service.
+Vous pouvez explorer les agents AEM via l’[aire de jeu](https://www.aem.live/developer/aem-playground) ou vous connecter à votre CSM ou à votre TAM pour discuter de l’accès via le SKU de l’agent.
 
 <!-- 
 #### Import and convert {#import-and-convert}

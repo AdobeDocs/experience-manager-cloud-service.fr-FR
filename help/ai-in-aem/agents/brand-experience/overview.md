@@ -3,13 +3,13 @@ title: Brand Experience Agent
 description: Découvrez comment Brand Experience Agent élimine les frictions liées à l’évolution des expériences digitales en absorbant le travail opérationnel lourd derrière les mises à jour, la création de communications et le dépannage, ce qui permet aux équipes de fournir des modifications plus rapidement et en toute confiance à l’ère de l’IA d’aujourd’hui.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 722be0dda9eebe7337eee6b01a428e788fd5a0a7
+exl-id: e6cd421a-8791-4fe3-b284-9b3beae996fd
+source-git-commit: 4ad099edc7d580148a401f9a61c9536c1cb88346
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '380'
 ht-degree: 1%
 
 ---
-
 
 # Brand Experience Agent {#brand-experience-agent}
 
@@ -50,7 +50,7 @@ les communications.
 
 ### Tâche d’assistance de développement {#development-support}
 
-La tâche [&#x200B; d’assistance au développement &#x200B;](/help/ai-in-aem/agents/brand-experience/development/development.md) accélère la résolution des problèmes techniques qui bloquent la diffusion de l’expérience en diagnostiquant les problèmes et en fournissant des correctifs. Cela permet aux équipes de maintenir la fiabilité et l’élan sans se concentrer sur les travaux de développement à forte valeur ajoutée.
+La tâche [ d’assistance au développement ](/help/ai-in-aem/agents/brand-experience/development/development.md) accélère la résolution des problèmes techniques qui bloquent la diffusion de l’expérience en diagnostiquant les problèmes et en fournissant des correctifs. Cela permet aux équipes de maintenir la fiabilité et l’élan sans se concentrer sur les travaux de développement à forte valeur ajoutée.
 
 ## Utilisation avec d’autres agents {#other-agents}
 
@@ -60,7 +60,5 @@ L’agent peut utiliser d’autres compétences d’agent, par exemple :
 
 ## Activation {#activation}
 
-Pour activer Brand Experience Agent et y accéder, vous devez contacter Adobe en effectuant l’une des opérations suivantes :
+Vous pouvez explorer les agents AEM via l’[aire de jeu](https://www.aem.live/developer/aem-playground) ou vous connecter à votre CSM ou à votre TAM pour discuter de l’accès via le SKU de l’agent.
 
-* `experience-production-agent@adobe.com` d’e-mail
-* Ou contacter votre équipe de compte

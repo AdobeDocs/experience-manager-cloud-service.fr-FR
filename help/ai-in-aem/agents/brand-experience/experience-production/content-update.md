@@ -4,9 +4,9 @@ description: Découvrez la tâche de mise à jour de contenu de Brand Experience
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: e2d1dae8-38de-4357-bb14-ad35acb71aee
-source-git-commit: 71e3770a7a26b8d3144717513f3ec1c997b3b435
+source-git-commit: 36f4ba8207da67b8e68c9c9851311defc909b495
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '810'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ La tâche de mise à jour de contenu de [Brand Experience Agent](/help/ai-in-aem
 
 La tâche de mise à jour du contenu met à jour le contenu existant, y compris les fragments de contenu, les pages, les formulaires et les ressources. La tâche peut effectuer des actions telles que la mise à jour, la suppression, le remplacement ou l’ajout d’éléments de contenu pour que les expériences restent exactes et à jour. Les entrées peuvent être des descriptions en langage naturel et, lorsqu’elles sont utilisées avec des PDF et des captures d’écran Jira, elles peuvent également fournir des entrées.
 
-La tâche de mise à jour de contenu transforme les détails que vous fournissez, en langage naturel ou visuel, en mises à jour de contenu sur votre page. Vous fournissez l’URL d’une page qui doit être mise à jour, ainsi que des détails sur ce qui doit être mis à jour et les compétences de l’agent terminent votre tâche.
+La tâche de mise à jour de contenu transforme les détails que vous fournissez, en langage naturel ou visuel, en mises à jour de contenu sur votre page. Vous fournissez l’URL d’une page qui doit être mise à jour, ainsi que des détails sur ce qui doit être mis à jour et les compétences de l’agent terminent votre tâche. Utilisée avec Adobe Experience Manager (AEM) as a Cloud Service, la tâche crée un [launch](/help/sites-cloud/authoring/launches/overview.md) afin que vous puissiez consulter les mises à jour avant l’application. Lorsqu’elle est utilisée avec la création de documents, la tâche crée une [version](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#).
 
 ## Fonctionnalités {#capabilities}
 
@@ -37,21 +37,40 @@ Ouvrez l’assistant d’IA depuis [`experience.adobe.com`,](https://experience.
 
 ![Tâche de mise à jour du contenu](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-ai-assistant-example.png)
 
-### Exemples d’invites {#sample-prompts}
+### Configuration de l’URL de publication {#configuring-the-publish-url}
 
-Pour lancer les mises à jour de contenu, vous pouvez donner un large éventail d’invites en langage naturel. Vous devez également spécifier l’URL publique de la page que vous souhaitez mettre à jour. Par exemple :
+Pour utiliser une URL de publication (publique), une configuration unique doit être effectuée :
 
-* Modifiez la page suivante `https://www.your-url.com/sale` Mettez à jour l’en-tête du héros principal vers « Vente de méga du vendredi noir - jusqu’à 70 % de réduction », modifiez le compte à rebours pour afficher « Se termine dans 48 heures », supprimez « S’inscrire aux mises à jour », modifiez tous les boutons « Acheter maintenant » pour « Saisir l’offre ».
+* Conditions préalables :
 
-* `https://www.your-url.com/laptops/your-laptop-model` Mettre à jour la copie de bannière vers « Economisez 300 USD aujourd&#39;hui seulement », Mettre à jour le prix de 1 299 USD à 999 USD, Supprimer la bannière d&#39;option de financement
+   * Pour effectuer la configuration, l’utilisateur doit disposer des droits d’administrateur système ou d’administrateur de produit.
 
-* `https://www.your-url.com/your-sneaker` Mettre à jour le statut du stock de « Stock faible » à « Stock de retour - Quantités limitées », Modifier le sélecteur de taille pour mettre en surbrillance les tailles disponibles en vert, Supprimer le badge « Bientôt disponible »
+* Configuration :
 
-* `https://www.your-url.com/your-sneaker` Mettre à jour les images du produit pour afficher de nouvelles couleurs
+   1. Appelez la compétence Mise à jour de contenu en demandant une mise à jour de contenu pour l’URL.
+   1. L’assistant vous guidera à travers la configuration, en vous posant un certain nombre de questions.
+   1. Une fois l’opération terminée, l’URL de publication est configurée et peut être utilisée.
+
+Par exemple :
+
+![Compétences de mise à jour de contenu - Configuration de l’URL de publication](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-publish-url-configuration.png)
+
+### Invites {#prompts}
+
+Pour lancer les mises à jour de contenu, vous pouvez donner un large éventail d’invites en langage naturel. Vous devez spécifier l’URL publique (publication) ou l’URL de l’environnement de création de la page que vous souhaitez mettre à jour. Certains des verbes pris en charge, mais pas tous ; remplacez, mettez à jour, supprimez, modifiez, modifiez, modifiez, ajustez, supprimez.
 
 >[!NOTE]
 >
 >Les chargements de fichiers peuvent être utilisés lors de l’interaction à l’aide de [Jira](#jira), mais ne sont pas pris en charge avec l’assistant AI.
+
+### Exemples d’invites {#sample-prompts}
+
+Voici quelques exemples d’invites :
+
+* lors de `<your-publish-URL>` mise à jour : « Votre café parfait est à quatre questions ! » à « Ton café, ton chemin ! »
+* sur `<your-author-env-URL>`, remplacez l’image de « holdingcup.png » par « stairhead.png »
+* sur `<your-publish-URL>`, remplacez le bouton « Take our Coffee Quiz » (Prendre notre café quiz) par une version plus attrayante. »
+* sur `<your-author-env-URL>` supprimer la section « Récompenses non réclamées est un cadeau manqué ! »
 
 ## Jira {#jira}
 
@@ -79,17 +98,11 @@ Créez un ticket Jira (de n’importe quel type). Deux informations essentielles
 
 ### Appeler le traitement à partir de votre ticket {#invoke-the-job-from-your-ticket}
 
-Pour utiliser le traitement, ajoutez un commentaire à votre ticket. Dans le commentaire, mentionnez la tâche avec le symbole `@`, ainsi que la commande qu’elle doit exécuter ; par exemple :
+Pour utiliser le traitement, ajoutez un commentaire à votre ticket. Dans le commentaire, mentionnez la tâche avec le symbole `@`, ainsi que les instructions.
 
-* `@aemagent@adobe.com process`
+Par exemple :
 
-Actuellement, la tâche comprend les commandes :
-
-* `process` - traiter la demande
-* `cancel` - annuler une demande de traitement
-* `retry` - retraiter une demande
-* `feedback` - appliquer le retour d’informations à une génération précédente
-* `reprocess` - retraiter la demande d’origine
+* `@aemagent@adobe.com process this ticket`
 
 ### Interaction de la tâche {#how-the-agent-interacts}
 
@@ -109,34 +122,7 @@ Dans le cas d&#39;une commande `process` pour déclencher des mises à jour, les
 
 ## Activation {#activation}
 
-Pour activer et accéder à la tâche de création de communication, vous devez contacter Adobe. Pour commencer, vous pouvez effectuer l’une des opérations suivantes :
-
-* `experience-production-agent@adobe.com` de contact
-* Ou contactez votre équipe de compte
-
-Pour accélérer le processus, il est utile de fournir les informations suivantes :
-
-* Pour AEM as a Cloud Service, vous devez fournir vos éléments suivants :
-   * Identifiant d&#39;organisation
-   * `product_id`
-   * `profile_id`
-
-   * Ces valeurs se présentent comme suit :
-      1. Votre administrateur doit visiter [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)
-      1. Sélectionner **Adobe Experience Manager as a Cloud Service**
-      1. Sélectionnez l’instance AEM appropriée
-      1. Sélectionnez le profil qui autorise les opérations de lecture et d’écriture pour le contenu en question
-      1. Récupérer l’URL du navigateur
-      1. Extrayez les `product_id` et les `profile_id` de l’URL.
-Par exemple, `https://adminconsole.adobe.com/products/profiles/users`.
-
-* Création de documents Edge Delivery
-   * Fournissez les informations suivantes à votre équipe Adobe :
-      * Domaines pertinents
-      * Informations Github pertinentes :
-         * Org
-         * Référentiel
-         * Branche
+Vous pouvez explorer les agents AEM via l’[aire de jeu](https://www.aem.live/developer/aem-playground) ou vous connecter à votre CSM ou à votre TAM pour discuter de l’accès via le SKU de l’agent.
 
 ## Limites {#limitations}
 
