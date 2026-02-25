@@ -32,7 +32,7 @@ La tâche peut récupérer les statuts du pipeline et vous aider à résoudre le
 
 Pour accéder à cette tâche, reportez-vous aux [notes de mise à jour](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) pour obtenir des instructions sur la façon de s’inscrire au programme bêta, en veillant à indiquer votre intérêt pour la tâche de développement. Vous pouvez également envoyer par e-mail les commentaires spécifiques à une tâche de développement à [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com)
 
-[Suivez un tutoriel](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) pour savoir comment utiliser l’agent de développement afin de résoudre les problèmes liés aux pipelines.
+[Suivez un tutoriel](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) pour savoir comment utiliser l’agent de développement afin de résoudre les problèmes liés aux pipelines.
 
 ## Accès à la tâche de développement via Cloud Manager {#how-to-access-the-job}
 
