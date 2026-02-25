@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: c07c1f7e412e0c68338121d49781e33356f6c640
+source-git-commit: 012ce93f65d26d7f59fc874d1b225fbd458cf098
 workflow-type: tm+mt
-source-wordcount: '2597'
+source-wordcount: '2598'
 ht-degree: 63%
 
 ---
@@ -60,7 +60,7 @@ Les paramètres d’image prédéfinis définissent la manière dont Dynamic Med
 
 ### Génération de rendu dans AEM as a Cloud Service{#rendition-generation-in-aemaacs}
 
-Dans AEM as a Cloud Service, les rendus sont générés à l’aide des [microservices de ressources](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#). Le workflow Ressource de mise à jour de la gestion des ressources numériques ne peut pas être personnalisé dans Cloud Service.
+Dans AEM as a Cloud Service, les rendus sont générés à l’aide des [microservices de ressources](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#). Le workflow Ressource de mise à jour de la gestion des ressources numériques ne peut pas être personnalisé dans Cloud Service.
 
 Les points importants à prendre en compte sont les suivants :
 
@@ -68,11 +68,11 @@ Les points importants à prendre en compte sont les suivants :
 * Les modifications apportées à un profil de traitement affectent les ressources nouvellement chargées. Les ressources existantes doivent être retraitées si de nouveaux rendus sont requis.
 * La personnalisation du modèle de workflow n’est pas prise en charge dans AEM as a Cloud Service pour la génération du rendu.
 
-Les paramètres d’image prédéfinis font référence aux rendus disponibles au moment de la diffusion. Assurez-vous que les rendus requis existent avant de configurer ou d’utiliser des paramètres d’image prédéfinis.
+Les paramètres d’image prédéfinis font référence aux rendus disponibles au moment de la diffusion. Assurez-vous que les rendus requis existent avant de configurer ou d’utiliser les paramètres d’image prédéfinis.
 
 **Pour contrôler les rendus générés, procédez comme suit**
 
-1. Créer ou modifier un [profil de traitement](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#).
+1. Créer ou modifier un [profil de traitement](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#).
 2. Configurez les définitions de rendu requises.
 3. Appliquez le profil de traitement au dossier approprié.
 
@@ -191,7 +191,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 1. Select **[!UICONTROL Save]** to save the changes to the workflow.
 -->
 
-### Augmentation du nombre de paramètres d’image prédéfinis affichés {#increasing-or-decreasing-the-number-of-image-presets-that-display}
+## Augmentation du nombre de paramètres d’image prédéfinis affichés {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
 Les paramètres d’image prédéfinis que vous créez sont disponibles sous la forme de rendus dynamiques lorsque vous prévisualisez des ressources. Experience Manager affiche différents rendus dynamiques lors de l’affichage d’un fichier à partir de **[!UICONTROL Affichage des détails > Rendus]**. Vous pouvez augmenter ou diminuer la limite des rendus affichés.
 
@@ -210,7 +210,7 @@ Les paramètres d’image prédéfinis que vous créez sont disponibles sous la 
 1. Dans la propriété de limite, remplacez le nombre par le nombre souhaité, par exemple, `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`.
 1. Sélectionnez **[!UICONTROL Enregistrer tout]**.
 
-### Création de paramètres d’image prédéfinis {#creating-image-presets}
+## Création de paramètres d’image prédéfinis {#creating-image-presets}
 
 Créez des paramètres d’image prédéfinis afin de pouvoir appliquer les paramètres de manière cohérente sur les images lorsque vous prévisualisez ou publiez.
 
@@ -243,7 +243,7 @@ Voir [Format de fichier InDesign (INDD)](#indesign-indd-file-format).
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
-### Création d’un paramètre d’image prédéfini réactif {#creating-a-responsive-image-preset}
+## Création d’un paramètre d’image prédéfini réactif {#creating-a-responsive-image-preset}
 
 Pour créer un paramètre prédéfini réactif d’image, suivez la procédure décrite dans la section [Création de paramètres prédéfinis d’image](#creating-image-presets). Lorsque vous saisissez la hauteur et la largeur dans la fenêtre **[!UICONTROL Modifier le paramètre d’image prédéfini]**, effacez les valeurs et laissez-les vides.
 
@@ -267,7 +267,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
 
 * **[!UICONTROL Accentuation : Mode Rééchantillonnage]** : sélectionnez l’option **[!UICONTROL Sharp2]**.
 
-#### Options de l’onglet De base {#basic-tab-options}
+### Options de l’onglet De base {#basic-tab-options}
 
 | Champ | Description |
 | --- | --- |
@@ -276,7 +276,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
 | **Format** | Sélectionnez un format dans le menu.<br>Choisir **JPEG** offre les autres options suivantes :<br>• **Qualité** - L’échelle de qualité JPEG s’étend de 1 à 100. L’échelle est visible lorsque vous faites glisser le curseur.<br>· **Activer le sous-échantillonnage de la chrominance JPG** - L’œil étant moins sensible aux informations de couleur haute fréquence que la luminance haute fréquence, les images JPEG divisent les informations d’image en luminance et en composants de couleur. Lorsqu’une image JPEG est compressée, la composante de luminance est laissée à la résolution maximale, tandis que les composantes de couleur sont sous-échantillonnées en calculant la moyenne de groupes de pixels. Le sous-échantillonnage réduit le volume de données à la moitié ou au tiers, avec un impact minimal sur la qualité perçue. Le sous-échantillonnage ne s’applique pas aux images en niveaux de gris. Cette technique réduit le taux de compression utile pour les images à fort contraste (par exemple, les images avec texte superposé).<br><br>Choisir **GIF** ou **GIF avec couche alpha** offre les options supplémentaires de **Quantification de couleurs GIF** suivantes :<br>• **Type** : Sélectionnez **Adaptatif** (par défaut), **Web** ou **Macintosh**. Si vous sélectionnez **GIF avec couche alpha**, l’option Macintosh n’est pas disponible.<br>• **Juxtaposition** : sélectionnez **Diffus** ou **Désactivé**.<br>• **Nombre de couleurs** : saisissez un nombre compris entre 2 et 256.<br>· **Liste de couleurs** - Saisissez une liste séparée par des virgules. Par exemple, pour blanc, gris et noir, saisissez `000000,888888,ffffff`.<br><br>Si vous sélectionnez **PDF**, **TIFF** ou **TIFF avec couche alpha**, cette option supplémentaire est proposée :<br>• **Compression** : Sélectionnez un algorithme de compression. Les options d’algorithme pour le format PDF sont **Aucun**, **Zip** et **Jpeg**. Les options pour le format TIFF sont **Aucun**, **LZW**, **Jpeg** et **Zip**. Les options pour le format TIFF avec couche alpha sont **Aucun**, **LZW** et **Zip**.<br><br>Aucune option supplémentaire n’est fournie si vous sélectionnez **PNG**, **PNG avec couche alpha** ou **EPS**. |
 | **Accentuation** | Sélectionnez l’option **Activer l’accentuation simple** pour appliquer un filtre d’accentuation de base à l’image à l’issue des opérations de mise à l’échelle. L’accentuation peut compenser le flou produit lors de l’affichage d’une image à une taille différente. |
 
-#### Options de l’onglet Avancé {#advanced-tab-options}
+### Options de l’onglet Avancé {#advanced-tab-options}
 
 <table>
  <tbody>
@@ -326,7 +326,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
     </ul>
     <div>
       L’accentuation est décrite dans la vidéo
-     <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Utilisation de l’accentuation des images avec Experience Manager Dynamic Media</a>, dans la rubrique d’aide en ligne <a href="https://experienceleague.adobe.com/fr/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">Accentuation d’une image</a> et dans le fichier téléchargeable au format PDF <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf?lang=fr">Bonnes pratiques pour l’accentuation des images dans Dynamic Media Classic</a>.
+     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Utilisation de l’accentuation des images avec Experience Manager Dynamic Media</a>, dans la rubrique d’aide en ligne <a href="https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">Accentuation d’une image</a> et dans le fichier téléchargeable au format PDF <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Bonnes pratiques pour l’accentuation des images dans Dynamic Media Classic</a>.
     </div> </td>
   </tr>
   <tr>
@@ -346,7 +346,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
   </tr>
   <tr>
    <td><strong>Modificateur d’image</strong></td>
-   <td><p>Au-delà des paramètres d’image courants disponibles dans l’UI, Dynamic Media prend en charge de nombreuses modifications d’image avancées que vous pouvez spécifier dans le champ <strong>Modificateurs d’images</strong>. Ces paramètres sont définis dans la <a href="https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview">référence des commandes du protocole de serveur d’images</a>.</p> <p>Important : La fonctionnalité suivante répertoriée dans l’API n’est pas prise en charge :</p>
+   <td><p>Au-delà des paramètres d’image courants disponibles dans l’UI, Dynamic Media prend en charge de nombreuses modifications d’image avancées que vous pouvez spécifier dans le champ <strong>Modificateurs d’images</strong>. Ces paramètres sont définis dans la <a href="https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview">référence des commandes du protocole de serveur d’images</a>.</p> <p>Important : La fonctionnalité suivante répertoriée dans l’API n’est pas prise en charge :</p>
     <ul>
      <li>Commandes de base de création de modèles et de rendu de texte : <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> et <code>textPs=</code></li>
      <li>Commandes de localisation : <code>locale=</code> et <code>req=xlate</code></li>
@@ -361,9 +361,9 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
  </tbody>
 </table>
 
-### Définir des options de paramètre prédéfini d’image à l’aide de modificateurs d’image {#defining-image-preset-options-with-image-modifiers}
+## Définir des options de paramètre prédéfini d’image à l’aide de modificateurs d’image {#defining-image-preset-options-with-image-modifiers}
 
-Outre les options disponibles dans les onglets Simple et Avancé, vous pouvez définir des modificateurs d’image afin de disposer d’un plus grand nombre d’options lors de la définition de paramètres d’image prédéfinis. Le rendu des images repose sur l’API de rendu d’images de Dynamic Media et est défini en détail dans la [Référence du protocole HTTP](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api).
+Outre les options disponibles dans les onglets Simple et Avancé, vous pouvez définir des modificateurs d’image afin de disposer d’un plus grand nombre d’options lors de la définition de paramètres d’image prédéfinis. Le rendu des images repose sur l’API de rendu d’images de Dynamic Media et est défini en détail dans la [Référence du protocole HTTP](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api).
 
 Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l’aide des modificateurs d’image.
 
@@ -371,7 +371,7 @@ Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l
 >
 >Certains modificateurs d’image [ne peuvent pas être utilisés dans Experience Manager](#advanced-tab-options).
 
-* [op_invert](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert) : inverse chaque composant de couleur pour générer un effet d’image négative.
+* [op_invert](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert) : inverse chaque composant de couleur pour générer un effet d’image négative.
 
   ```xml {.line-numbers}
   &op_invert=1
@@ -379,7 +379,7 @@ Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l
 
   ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur) : applique un effet de flou à l’image.
+* [op_blur](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur) : applique un effet de flou à l’image.
 
   ```xml {.line-numbers}
   &op_blur=7
@@ -395,7 +395,7 @@ Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l
 
   ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [op_brightness](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness) : augmente ou diminue la luminosité.
+* [op_brightness](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness) : augmente ou diminue la luminosité.
 
   ```xml {.line-numbers}
   &op_brightness=58
@@ -403,7 +403,7 @@ Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l
 
   ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opac](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac) : permet de régler l’opacité de l’image. Cet attribut vous permet de diminuer l’opacité du premier plan.
+* [opac](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac) : permet de régler l’opacité de l’image. Cet attribut vous permet de diminuer l’opacité du premier plan.
 
   ```xml {.line-numbers}
   opac=29
@@ -411,7 +411,7 @@ Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l
 
   ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
 
-### Modification des paramètres d’image prédéfinis {#modifying-image-presets}
+## Modification des paramètres d’image prédéfinis {#modifying-image-presets}
 
 1. Dans Experience Manager, sélectionnez le logo Experience Manager pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres d’image prédéfinis]**.
 
@@ -420,11 +420,11 @@ Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l
 1. Sélectionnez un paramètre prédéfini, puis **[!UICONTROL Modifier]**. La fenêtre **[!UICONTROL Modifier le paramètre d’image prédéfini]** s’ouvre.
 1. Apportez des modifications, puis sélectionnez **[!UICONTROL Enregistrer]** pour les enregistrer ou sur **[!UICONTROL Annuler]** pour les annuler.
 
-### Publication de paramètres d’image prédéfinis {#publishing-image-presets}
+## Publication de paramètres d’image prédéfinis {#publishing-image-presets}
 
 Les paramètres d’image prédéfinis sont automatiquement publiés.
 
-### Suppression de paramètres d’image prédéfinis {#deleting-image-presets}
+## Suppression de paramètres d’image prédéfinis {#deleting-image-presets}
 
 1. Dans Experience Manager, sélectionnez le logo Experience Manager pour accéder à la console de navigation globale, puis sélectionnez l’icône Outils.
 1. Accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres d’image prédéfinis]**.
