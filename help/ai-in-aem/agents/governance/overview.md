@@ -3,7 +3,8 @@ title: Présentation de l’agent de gouvernance
 description: Découvrez comment l’agent de gouvernance AEM protège l’intégrité et la conformité de la marque dans AEM
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 9b26cd1f30ad6fa23e28c9f36fe48091e069962e
+exl-id: 2c73c578-6655-43bf-b03a-cb3eb2284d07
+source-git-commit: 568fd17353da93df0fa20e0c10e48d35890e7ed6
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
@@ -72,4 +73,3 @@ Dans Content Hub, l’agent de gouvernance s’assure que seules les bonnes pers
 * *Quelles ressources ont récemment expiré ?*
 * *Rechercher des ressources sans date d’expiration*
 * *Afficher toutes les ressources dans /content/dam/products qui vont expirer dans les 14 prochains jours*
-

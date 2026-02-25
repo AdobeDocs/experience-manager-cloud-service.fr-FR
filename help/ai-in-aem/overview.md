@@ -4,9 +4,9 @@ description: Découvrir l’IA dans Adobe Experience Manager as a Cloud Se
 feature: Generative AI, AI Assistant, AI Tools, Agentic AI
 role: Admin, Developer, User
 exl-id: 60fd4c57-53ed-4b4a-aea1-1c132184916f
-source-git-commit: 34469549451106c28fc3f95c90a8759b356bdd16
+source-git-commit: 92941c325f7702be8cf5f7f5b2ef3f9bd32c6354
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '439'
 ht-degree: 50%
 
 ---
@@ -24,10 +24,9 @@ L’[assistant AI dans Adobe Experience Manager](/help/implementing/cloud-manage
 
 AEM fournit toute une gamme d’[agents](/help/ai-in-aem/agents/overview.md) pour accélérer la création de votre contenu et orchestrer automatiquement les modifications :
 
-* [Agent de production Experience](/help/ai-in-aem/agents/production/overview.md)
-* [Agent d’optimisation de contenu](/help/ai-in-aem/agents/content-optimization/overview.md)
-* [Agent de découverte](/help/ai-in-aem/agents/discovery/overview.md)
-* [Agent de développement](/help/ai-in-aem/agents/development/overview.md)
+* [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md)
+* [Agent du gestionnaire de contenu](/help/ai-in-aem/agents/content-advisor/overview.md)
+* [Agent de modernisation de l’expérience](/help/ai-in-aem/agents/modernization/overview.md)
 * [Agent de gouvernance](/help/ai-in-aem/agents/governance/overview.md)
 
 ## IA générative dans AEM {#generative-ai-in-aem}

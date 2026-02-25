@@ -4,7 +4,7 @@ description: Découvrez comment l’agent de modernisation de l’expérience in
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: 76c0f41acb5c2e4e0f0a292f8205b0b9de5cda81
+source-git-commit: f286215d7094bffbec732c9ba6149d6bab168fc7
 workflow-type: tm+mt
 source-wordcount: '891'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Découvrez comment l’agent de modernisation de l’expérience intègre des si
 
 >[!NOTE]
 >
->L’agent de modernisation d’Experience remplace l’ancienne compétence de migration de l’[agent de production Experience.](/help/ai-in-aem/agents/production/overview.md)
+>L’agent de modernisation de l’expérience remplace l’ancienne compétence de migration de [Brand Experience Agent.](/help/ai-in-aem/agents/brand-experience/overview.md).
 
 ## Présentation {#introduction}
 
