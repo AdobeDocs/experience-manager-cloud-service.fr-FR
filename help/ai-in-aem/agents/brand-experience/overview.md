@@ -50,7 +50,7 @@ les communications.
 
 ### Tâche d’assistance de développement {#development-support}
 
-La tâche [ d’assistance au développement ](/help/ai-in-aem/agents/brand-experience/development/development.md) accélère la résolution des problèmes techniques qui bloquent la diffusion de l’expérience en diagnostiquant les problèmes et en fournissant des correctifs. Cela permet aux équipes de maintenir la fiabilité et l’élan sans se concentrer sur les travaux de développement à forte valeur ajoutée.
+La tâche [&#x200B; d’assistance au développement &#x200B;](/help/ai-in-aem/agents/brand-experience/development/development.md) accélère la résolution des problèmes techniques qui bloquent la diffusion de l’expérience en diagnostiquant les problèmes et en fournissant des correctifs. Cela permet aux équipes de maintenir la fiabilité et l’élan sans se concentrer sur les travaux de développement à forte valeur ajoutée.
 
 ## Utilisation avec d’autres agents {#other-agents}
 
