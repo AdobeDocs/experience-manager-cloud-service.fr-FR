@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: f2e707b9689eb99b4b91eae705d7daa8449a9d44
+source-git-commit: 0f244af47acf84814969094c6e6075169e5b83c1
 workflow-type: tm+mt
-source-wordcount: '3842'
-ht-degree: 80%
+source-wordcount: '3912'
+ht-degree: 79%
 
 ---
 
@@ -35,7 +35,7 @@ Pendant la période d’obsolescence, Adobe rappelle à ses clientes et clients 
 >
 >* **À compter du 26 janvier 2026** : les e-mails de notification du Centre d’actions sont envoyés **chaque semaine par environnement** comme rappel pour supprimer l’utilisation de ces API.
 >* **26 février 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API seront **mis en pause** pendant l’étape **Qualité du code**. Un responsable de déploiement, un chef de projet ou un propriétaire d’entreprise peut contourner le problème pour autoriser le pipeline à continuer.
->* **30 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **&#x200B;**&#x200B;pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
+>* **30 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **** pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
 >* **30 avril 2026** : les environnements qui utilisent toujours ces API peuvent **ne plus recevoir de mises à jour critiques de versions d’Adobe**.
 >
 >Pour empêcher les blocs de déploiement, supprimez l’utilisation de l’API avant le 30 mars 2026.
@@ -90,7 +90,7 @@ Les API du tableau ci-dessous (cliquez pour développer) ont été annoncées c
 >
 > * **À compter du 26 janvier 2026** : les e-mails de notification du Centre d’actions sont envoyés **chaque semaine par environnement** comme rappel pour supprimer l’utilisation de ces API.
 > * **26 février 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API seront **mis en pause** pendant l’étape **Qualité du code**. Un responsable de déploiement, un chef de projet ou un propriétaire d’entreprise peut contourner le problème pour autoriser le pipeline à continuer.
-> * **30 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **&#x200B;**&#x200B;pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
+> * **30 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **** pendant l’étape **Qualité du code**, **blocage des déploiements** du nouveau code jusqu’à ce que l’utilisation soit supprimée.
 > * **4 mai 2026** : les environnements qui utilisent toujours ces API peuvent **ne plus recevoir de mises à jour critiques de versions d’Adobe**.
 >
 > Pour empêcher les blocs de déploiement, supprimez l’utilisation de l’API avant le 30 mars 2026.
@@ -160,6 +160,12 @@ Les API du tableau ci-dessous (cliquez pour développer) ont été annoncées c
     <td>2/26/2026</td>
   </tr>
   <tr>
+    <td>org.slf4j.event</td>
+    <td>AEM as a Cloud Service ne prend pas en charge cette API slf4j interne. <a href="#org.slf4j">Consultez les notes de suppression ci-dessous.</a></td>
+    <td>11/04/2022</td>
+    <td>2/26/2026</td>
+  </tr>
+  <tr>
     <td>org.apache.log4j<br>org.apache.log4j.helpers<br>org.apache.log4j.spi<br>org.apache.log4j.xml</td>
     <td>Apache Log4j 1 a atteint sa fin de vie en 2015 et n’est plus pris en charge. <a href="#org.apache.log4j">Voir les notes de suppression ci-dessous.</a></td>
     <td>27/01/2022</td>
@@ -170,22 +176,10 @@ Les API du tableau ci-dessous (cliquez pour développer) ont été annoncées c
     <td>15/05/2023</td>
     <td>2/26/2026</td>
   </tr>
-  <tr>
-    <td>org.slf4j.event</td>
-    <td>AEM as a Cloud Service ne prend pas en charge cette API slf4j interne. <a href="#org.slf4j">Consultez les notes de suppression ci-dessous.</a></td>
-    <td>11/04/2022</td>
-    <td>2/26/2026</td>
-  </tr>
     <tr>
     <td>com.drew.*</td>
     <td>L’extraction des métadonnées des images et des vidéos doit s’effectuer via Asset Compute dans Cloud Service ou via Apache POI ou Apache Tika.</td>
     <td>17/09/2024</td>
-    <td>2/26/2026</td>
-  </tr>
-  <tr>
-    <td>org.apache.jackrabbit.oak.plugins.blob.*</td>
-    <td>Cette API est réservée à un usage interne.</td>
-    <td>23/09/2024</td>
     <td>2/26/2026</td>
   </tr>
   <tr>
@@ -200,10 +194,17 @@ Les API du tableau ci-dessous (cliquez pour développer) ont été annoncées c
     <td>30/04/2021</td>
     <td>2/26/2026</td>
   </tr>
-<td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
+  <tr>
+    <td>org.apache.jackrabbit.oak.plugins.blob<br>org.apache.jackrabbit.oak.plugins.blob.datastore</td>
+    <td>Cette API est réservée à un usage interne.</td>
+    <td>23/09/2024</td>
+    <td>À déterminer</td>
+  </tr>
+  <tr>
+    <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
     <td>L’utilisation de cette API n’est pas prise en charge dans AEM as a Cloud Service.</td>
     <td>31/10/2022</td>
-    <td>2/26/2026</td>
+    <td>À déterminer</td>
   </tr>
   <tr>
     <td>org.apache.sling.runmode</td>
@@ -247,9 +248,39 @@ Les API du tableau ci-dessous (cliquez pour développer) ont été annoncées c
     <td>À déterminer</td>
   </tr>
   <tr>
-    <td>com.adobe.granite.xss<br>com.adobe.granite.xss.impl</td>
+    <td>com.adobe.granite.xss</td>
     <td>Utilisez org.apache.sling.xss à la place.</td>
     <td>12/12/2023</td>
+    <td>À déterminer</td>
+  </tr>
+  <tr>
+    <td>com.github.jknack.handlebars<br>com.github.jknack.handlebars.cache<br>com.github.jknack.handlebars.context<br>com.github.jknack.handlebars.helper<br>com.github.jknack.handlebars.io</td>
+    <td>Cette API est obsolète.</td>
+    <td>07/10/2024</td>
+    <td>À déterminer</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.mailer.commons</td>
+    <td>Cette API est obsolète, car elle dépend de commons-lang (obsolète depuis 2021).</td>
+    <td>11/30/2025</td>
+    <td>À déterminer</td>
+  </tr>
+  <tr>
+    <td>com.adobe.granite.httpcache.api</td>
+    <td>Cette API n’est plus prise en charge.</td>
+    <td>01/01/2026</td>
+    <td>À déterminer</td>
+  </tr>
+  <tr>
+    <td>org.apache.jackrabbit.webdav.client.methods</td>
+    <td>L’utilisation de cette API n’est pas prise en charge dans AEM as a Cloud Service.</td>
+    <td>2/13/2026</td>
+    <td>À déterminer</td>
+  </tr>
+  <tr>
+    <td>org.osgi.service.http</td>
+    <td>L’API HTTP du service OSGi est obsolète. Utilisez le tableau blanc du servlet OSGi à la place.</td>
+    <td>5/1/2024</td>
     <td>À déterminer</td>
   </tr>
   </tbody>
@@ -343,7 +374,7 @@ Cette section répertorie les API obsolètes et supprimées. Certaines API fon
 
 Cette section contient des conseils de suppression pour diverses API dans les tableaux ci-dessus.
 
-Pour identifier les API Java obsolètes que votre code utilise, intégrez le plug-in Maven [AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) dans votre projet Maven et exécutez-le localement. Le rapport répertorie toutes les utilisations obsolètes détectées de l’API et indique quel lot OSGi fait référence à chaque API. Référencez [ce tutoriel](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) pour savoir comment utiliser le plug-in Maven.
+Pour identifier les API Java obsolètes que votre code utilise, intégrez le plug-in Maven [AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) dans votre projet Maven et exécutez-le localement. Le rapport répertorie toutes les utilisations obsolètes détectées de l’API et indique quel lot OSGi fait référence à chaque API. Référencez [ce tutoriel](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) pour savoir comment utiliser le plug-in Maven.
 
 Bien que vous deviez remédier à toutes les API obsolètes au fil du temps, donnez la priorité à toutes les API répertoriées dans le tableau API obsolètes avec une date de suppression cible fixée au 26 février 2026 (ou avant). Dans le rapport AEM Analyzer, ces API peuvent apparaître avec une date de suppression effective du 8/31/2025.
 
