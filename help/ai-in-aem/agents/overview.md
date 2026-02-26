@@ -4,9 +4,9 @@ description: Découvrez les agents disponibles dans AEM pour accélérer la cré
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: f0b82ecf-0f5c-432f-9944-f99597aacd6a
-source-git-commit: 71e3770a7a26b8d3144717513f3ec1c997b3b435
+source-git-commit: 4070808ad3ac99f6112cb748a1f4288ffa974915
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '520'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,15 @@ Ces agents sont disponibles dans Adobe Experience Manager (AEM) as a Cloud Servi
 >* Ils ne sont actuellement pas disponibles pour AEM 6.5 ni pour AEM 6.5 LTS.
 >* Ils ne sont pas disponibles sur AEM On-prem ni Managed Services.
 
->[!IMPORTANT]
->
->Pour utiliser les agents, vous devez vous inscrire au programme Explorateur. Vous trouverez plus d’informations sur le programme Explorateur des agents AEM [ici.](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)
+## Accès aux agents {#accessing-agents}
+
+Vous disposez de trois options pour accéder aux agents.
+
+1. Vous avez peut-être la possibilité d’accéder aux agents AEM par le biais du programme [Essayer avant d’acheter](http://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) qui est déployé par phases. Votre CSM ou votre TAM peut vous aider à confirmer la disponibilité de votre entreprise.
+1. Explorez les agents AEM [via une version d’évaluation](https://www.aem.live/developer/aem-playground).
+1. Contactez votre CSM ou votre TAM pour discuter de l’accès via le SKU de l’agence si cela correspond à votre feuille de route et à vos plans d’évaluation.
+
+À mesure que de nouvelles compétences seront disponibles dans le cadre de la version préliminaire, nous aurons d’autres occasions de participer et de partager nos commentaires. Nous vous encourageons à regarder [cette page](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) pour les mises à jour.
 
 ## Brand Experience Agent {#brand-experience-agent}
 
