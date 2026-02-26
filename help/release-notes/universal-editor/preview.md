@@ -4,12 +4,13 @@ description: Voici les notes de mise à jour de la version préliminaire de l’
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: 39137052e9fa409f7f5494be53fa7693aaa60b17
+source-git-commit: 8ebc8184e642f26c004df88a16eece2563780437
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
+
 
 # Notes de mise à jour de l’aperçu de l’éditeur universel {#preview}
 
@@ -25,12 +26,11 @@ Ces notes de mise à jour **aperçu** sont fournies à titre indicatif pour que 
 >
 >Le contenu de la version actuelle ainsi que la date de publication peuvent changer.
 
-## Améliorations à venir {#other-improvements}
+## Fonctionnalités à venir {#upcoming-features}
 
-* L’éditeur ne définit plus le contenu par défaut sur `{}` avant la réception du contenu, ce qui empêche la perte de données dans certains cas.
-* Les modifications ne sont plus perdues lors de la modification dans le panneau de gauche, puis de la sélection d’un autre élément dans la fenêtre de l’éditeur.
-* L’importation manuelle de fichiers CSS n’est plus nécessaire lors de l’utilisation de `headless-canvas`.
-* Pour des raisons CORS, les points d’entrée corrects sont utilisés pour l’évaluation, la prévisualisation et la production.
-* La description a été ajoutée à tous les champs de schéma.
-* Les mises à jour multichamps des fragments de contenu sont désormais prises en charge pour les modifications contextuelles.
-* La persistance des données lorsque le champ est ciblé a été rendue plus robuste.
+* Un sélecteur de composant est désormais disponible dans le menu contextuel.
+* Un sélecteur de couleurs pour l’éditeur de texte enrichi est désormais disponible.
+
+## Améliorations à venir {#upcoming-improvements}
+
+* Les options d’alignement, d’orientation du texte et de mise en retrait sont désormais [activées par défaut dans l’éditeur de texte enrichi](/help/implementing/universal-editor/configure-rte.md) à condition que votre serveur principal les prenne en charge.

@@ -1,20 +1,20 @@
 ---
-title: Notes de mise à jour de l’éditeur universel version 2026.02.19
-description: Il s’agit des notes de mise à jour de la version 2026.02.19 de l’éditeur universel.
+title: Notes de mise à jour de l’éditeur universel version 2026.02.26
+description: Il s’agit des notes de mise à jour de la version 2026.02.26 de l’éditeur universel.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 39137052e9fa409f7f5494be53fa7693aaa60b17
+source-git-commit: 53f77d76fc43932e16cd36e47435499f33513b18
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 28%
+source-wordcount: '221'
+ht-degree: 32%
 
 ---
 
 
-# Notes de mise à jour de l’éditeur universel version 2026.02.19 {#release-notes}
+# Notes de mise à jour de l’éditeur universel version 2026.02.26 {#release-notes}
 
-Voici les notes de mise à jour de la version du 19 février 2026 de l’éditeur universel.
+Voici les notes de mise à jour de la version du 26 février 2026 de l’éditeur universel.
 
 >[!TIP]
 >
@@ -26,14 +26,9 @@ Voici les notes de mise à jour de la version du 19 février 2026 de l’éditeu
 
 ## Nouveautés {#what-is-new}
 
-* Des améliorations ont été apportées à l’éditeur de texte enrichi.
-   * Le [masquage des éléments de barre d’outils dans l’éditeur de texte enrichi en contexte](/help/implementing/universal-editor/configure-rte.md#common-action-options) est désormais pris en charge.
-   * Le [renvoi à la ligne de texte à l’intérieur de tableaux avec des paragraphes](/help/implementing/universal-editor/configure-rte.md#table-actions) est désormais pris en charge.
-   * [Balises HTML non prises en charge](/help/implementing/universal-editor/configure-rte.md#unsupported-html) les balises peuvent désormais être conservées par l’éditeur de texte enrichi.
-   * La logique de l’éditeur de texte enrichi est désormais diffusée à partir d’un fichier distinct.
-   * [Les tableaux peuvent désormais être créés](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) ainsi que modifiés à l’aide de l’éditeur de texte enrichi.
-* Si aucun libellé n’est défini, le titre du composant de la définition du composant est désormais utilisé.
-* `setEditorMode` est désormais disponible via les extensions.
+* Des descriptions ont été ajoutées à tous les champs de schéma pour aider les développeurs à générer des fichiers de définition de modèle/filtre/composant.
+* Les mises à jour multichamps des fragments de contenu sont désormais prises en charge pour les modifications contextuelles.
+
 
 ## Fonctionnalités d’adoption précoce {#early-adopter}
 
@@ -43,7 +38,7 @@ Si vous souhaitez tester les prochaines fonctionnalités répertoriées ci-desso
 
 ## Autres améliorations {#other-improvements}
 
-* Les points d’entrée de l’éditeur de texte enrichi sont désormais servis pour l’éditeur statique.
-* La modification des champs imbriqués n’entraîne plus le remplacement des entrées d’homologue de ces structures.
-* Les champs obligatoires de l’éditeur de texte enrichi ne peuvent plus être enregistrés comme vides.
-* La mise en forme statique n’est plus appliquée de manière incorrecte lors de l’ajout de liens après la mise en forme.
+* L’éditeur ne définit plus le contenu par défaut sur `{}` avant la réception du contenu, ce qui empêche la perte de données dans certains cas.
+* La persistance des données lorsque le champ est ciblé a été rendue plus robuste.
+* Dans certains cas, les modifications ne sont plus perdues lors de la modification dans le panneau de gauche, puis de la sélection d’un autre élément dans la fenêtre de l’éditeur.
+* Correction d’un problème de persistance des champs de l’éditeur de texte enrichi pour les fragments de contenu lors de l’utilisation des points d’entrée OpenAPI.
