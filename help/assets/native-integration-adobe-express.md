@@ -154,7 +154,7 @@ Cliquez sur l’icône ![icône d’aperçu](assets/do-not-localize/preview-icon
 
 ![Prévisualisation des rendus Dynamic Media](assets/native-express-dynamic-media-preview.png)
 
-Cliquez sur **[!UICONTROL Ajouter des modificateurs]**, spécifiez un modificateur dans la zone de texte, puis appuyez sur Entrée pour appliquer la transformation aux rendus en temps réel. De même, vous pouvez ajouter plusieurs modificateurs à un rendu et prévisualiser ces transformations. Effectuez un glisser-déposer de la ressource de l’aperçu dans la zone de travail. Le rendu après l’application de ces modificateurs n’est pas enregistré. Consultez la liste des modificateurs pris en charge pour [Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) et [Dynamic Media avec OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
+Cliquez sur **[!UICONTROL Ajouter des modificateurs]**, spécifiez un modificateur dans la zone de texte, puis appuyez sur Entrée pour appliquer la transformation aux rendus en temps réel. De même, vous pouvez ajouter plusieurs modificateurs à un rendu et prévisualiser ces transformations. Effectuez un glisser-déposer de la ressource de l’aperçu dans la zone de travail. Le rendu après l’application de ces modificateurs n’est pas enregistré. Consultez la liste des modificateurs pris en charge pour [Dynamic Media Scene7](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) et [Dynamic Media avec OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
 >[!IMPORTANT]
 > 
@@ -250,7 +250,7 @@ Adobe recommande, en règle générale, de spécifier des valeurs dans le reste 
 
 ## Formats de fichiers pris en charge {#supported-file-formats-import-assets}
 
-Adobe Express prend en charge de manière native les formats disponibles à l’adresse [Consultez les exigences minimales en matière d’image](https://helpx.adobe.com/express/web/image-creation-and-editing/change-file-formats/image-requirements.html). Toutefois, AEM Assets prend en charge les types de formats suivants :
+Adobe Express prend en charge de manière native les formats disponibles à l’adresse [Consultez les exigences minimales en matière d’image](https://helpx.adobe.com/fr/express/web/image-creation-and-editing/change-file-formats/image-requirements.html). Toutefois, AEM Assets prend en charge les types de formats suivants :
 
 | Format pris en charge | Dimensions/résolution max. | Taille de fichier max |
 |------------------|---------------------------------------------|---------------|
