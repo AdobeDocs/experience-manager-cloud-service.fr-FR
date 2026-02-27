@@ -4,9 +4,9 @@ description: Utilisez le gestionnaire de contenu pour découvrir AEM Assets et y
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 54e66597d60621743cb39ef0b8edb21b6eea6c8d
+source-git-commit: 6d80567106fe7c32d8073ca093f895ff28500413
 workflow-type: tm+mt
-source-wordcount: '2514'
+source-wordcount: '2581'
 ht-degree: 0%
 
 ---
@@ -154,7 +154,7 @@ Cliquez sur l’icône ![icône d’aperçu](assets/do-not-localize/preview-icon
 
 ![Prévisualisation des rendus Dynamic Media](assets/native-express-dynamic-media-preview.png)
 
-Cliquez sur **[!UICONTROL Ajouter des modificateurs]**, spécifiez un modificateur dans la zone de texte, puis appuyez sur Entrée pour appliquer la transformation aux rendus en temps réel. De même, vous pouvez ajouter plusieurs modificateurs à un rendu et prévisualiser ces transformations. Effectuez un glisser-déposer de la ressource de l’aperçu dans la zone de travail. Le rendu après l’application de ces modificateurs n’est pas enregistré. Consultez la liste des modificateurs pris en charge pour [Dynamic Media Scene7](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) et [Dynamic Media avec OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
+Cliquez sur **[!UICONTROL Ajouter des modificateurs]**, spécifiez un modificateur dans la zone de texte, puis appuyez sur Entrée pour appliquer la transformation aux rendus en temps réel. De même, vous pouvez ajouter plusieurs modificateurs à un rendu et prévisualiser ces transformations. Effectuez un glisser-déposer de la ressource de l’aperçu dans la zone de travail. Le rendu après l’application de ces modificateurs n’est pas enregistré. Consultez la liste des modificateurs pris en charge pour [Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) et [Dynamic Media avec OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
 >[!IMPORTANT]
 > 
@@ -244,34 +244,23 @@ Adobe recommande, en règle générale, de spécifier des valeurs dans le reste 
 
 7. Cliquez sur **[!UICONTROL Charger]** pour charger la ou les ressources dans AEM Assets.
 
-   <table> 
-    <tbody>
-     <tr>
-      <th><strong>Formats pris en charge</strong></th>
-      <th><strong>Taille</strong></th>
-     </tr>
-    </tr>
-    <tr>
-        <td>[!UICONTROL JPEG]</td>
-        <td> 65 Mpx (par exemple, 8K x 8K ou 16K x 4K) </td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL PNG]</td>
-        <td> 65 Mpx (par exemple, 8K x 8K ou 16K x 4K) </td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL SVG]</td>
-        <td> Maximum 250 Ko</td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL MP4]</td>
-        <td> 3 840 x 3 840 pixels, 200 Mo maximum</td>
-    </tr>
-    <tr>
-      <td colspan="2"> <i> La taille de la ressource doit être inférieure à 80 Mo pour les ordinateurs de bureau et à 40 Mo pour les appareils mobiles. </i></td>
-   </tr>
-    </tbody>
-   </table>
+   >[!NOTE]
+   >
+   > Si vous enregistrez une ou plusieurs ressources dans le référentiel de diffusion Content Hub, le nom du projet ou de la campagne est un champ obligatoire. Dans ce cas, il n’est pas non plus nécessaire de sélectionner un dossier de destination, car il est automatiquement dérivé des métadonnées.
+
+## Formats de fichiers pris en charge {#supported-file-formats-import-assets}
+
+Adobe Express prend en charge de manière native les formats disponibles à l’adresse [Consultez les exigences minimales en matière d’image](https://helpx.adobe.com/express/web/image-creation-and-editing/change-file-formats/image-requirements.html). Toutefois, AEM Assets prend en charge les types de formats suivants :
+
+| Format pris en charge | Dimensions/résolution max. | Taille de fichier max |
+|------------------|---------------------------------------------|---------------|
+| JPEG | 65 MP (par exemple, 8 K × 8 K ou 16 K × 4 K) | Ordinateur de bureau de 80 Mo, mobile de 40 Mo |
+| PNG | 65 MP (par exemple, 8 K × 8 K ou 16 K × 4 K) | Ordinateur de bureau de 80 Mo, mobile de 40 Mo |
+| SVG | — | 250 KO |
+| MP4 | 3 840 × 3 840 pixels | 200 MO |
+| PSD | 65 MP (par exemple, 8 K × 8 K ou 16 K × 4 K) | Ordinateur de bureau de 80 Mo, mobile de 40 Mo |
+| PDF | — | — |
+
 
 ## Limites {#limitations}
 
