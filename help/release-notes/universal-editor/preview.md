@@ -4,9 +4,9 @@ description: Voici les notes de mise à jour de la version préliminaire de l’
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: 8ebc8184e642f26c004df88a16eece2563780437
+source-git-commit: 6b4c4b92bb726da2f7222dfa0e223aa3d0309c8f
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '164'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Ces notes de mise à jour **aperçu** sont fournies à titre indicatif pour que 
 
 ## Fonctionnalités à venir {#upcoming-features}
 
-* Un sélecteur de composant est désormais disponible dans le menu contextuel.
+* Le sélecteur de composants a une nouvelle conception.
 * Un sélecteur de couleurs pour l’éditeur de texte enrichi est désormais disponible.
 
 ## Améliorations à venir {#upcoming-improvements}
