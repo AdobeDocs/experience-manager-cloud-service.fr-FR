@@ -96,7 +96,7 @@ Le contrôle d’accès basé sur les attributs (ABAC) permet aux administrateur
 
 >[!NOTE]
 >
->Le contrôle d’accès basé sur les attributs (ABAC) pour Dynamic Media avec OpenAPI est une fonctionnalité à disponibilité limitée. Vous pouvez l’activer en créant un [ ticket d’assistance ](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
+>Le contrôle d’accès basé sur les attributs (ABAC) pour Dynamic Media avec OpenAPI est une fonctionnalité à disponibilité limitée. Vous pouvez l’activer en créant un [&#x200B; ticket d’assistance &#x200B;](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -137,7 +137,7 @@ Les API obsolètes ciblant la suppression du 2/26/2026 ne doivent plus être uti
 
 * **À compter du 26 janvier 2026** : les e-mails de notification du Centre de maintenance sont envoyés comme rappel pour supprimer l’utilisation de ces API.
 * **26 février 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API seront **mis en pause** pendant l’étape **Qualité du code**. Un responsable de déploiement, un chef de projet ou un propriétaire d’entreprise peut contourner le problème pour autoriser le pipeline à continuer. *Cela peut ralentir votre capacité à valider et à publier les modifications de code.*
-* **30 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **** lors de l’étape **Qualité du code**. Les déploiements seront bloqués jusqu’à ce que l’utilisation obsolète de l’API soit supprimée. *Cela peut vous empêcher de publier des mises à jour urgentes et peut avoir un impact sur vos opérations commerciales.*
+* **30 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **&#x200B;**&#x200B;lors de l’étape **Qualité du code**. Les déploiements seront bloqués jusqu’à ce que l’utilisation obsolète de l’API soit supprimée. *Cela peut vous empêcher de publier des mises à jour urgentes et peut avoir un impact sur vos opérations commerciales.*
 * **4 mai 2026** : les environnements qui utilisent toujours des API obsolètes **ne recevront pas de mises à jour de versions Adobe critiques** et ne sont pas soumis aux engagements standard d’Adobe en matière de performances et de disponibilité. Par conséquent, vous ne recevrez pas de nouvelles fonctionnalités ou de nouveaux correctifs, la stabilité et la disponibilité des applications peuvent être affectées négativement et l&#39;exposition aux risques de sécurité peut encore augmenter.
 
 Pour plus d’informations, consultez l’[article sur l’obsolescence](/help/release-notes/deprecated-removed-features.md#aem-apis), mais pour plus de commodité, ces API sont répertoriées ci-dessous :
