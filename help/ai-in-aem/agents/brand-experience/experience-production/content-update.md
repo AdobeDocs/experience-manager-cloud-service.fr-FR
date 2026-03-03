@@ -4,7 +4,7 @@ description: Découvrez la tâche de mise à jour de contenu de Brand Experience
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: e2d1dae8-38de-4357-bb14-ad35acb71aee
-source-git-commit: 36f4ba8207da67b8e68c9c9851311defc909b495
+source-git-commit: a3b00916c0d949fe9fac50bc0c3056b0a1b05358
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 2%
@@ -20,7 +20,7 @@ La tâche de mise à jour de contenu de [Brand Experience Agent](/help/ai-in-aem
 
 La tâche de mise à jour du contenu met à jour le contenu existant, y compris les fragments de contenu, les pages, les formulaires et les ressources. La tâche peut effectuer des actions telles que la mise à jour, la suppression, le remplacement ou l’ajout d’éléments de contenu pour que les expériences restent exactes et à jour. Les entrées peuvent être des descriptions en langage naturel et, lorsqu’elles sont utilisées avec des PDF et des captures d’écran Jira, elles peuvent également fournir des entrées.
 
-La tâche de mise à jour de contenu transforme les détails que vous fournissez, en langage naturel ou visuel, en mises à jour de contenu sur votre page. Vous fournissez l’URL d’une page qui doit être mise à jour, ainsi que des détails sur ce qui doit être mis à jour et les compétences de l’agent terminent votre tâche. Utilisée avec Adobe Experience Manager (AEM) as a Cloud Service, la tâche crée un [launch](/help/sites-cloud/authoring/launches/overview.md) afin que vous puissiez consulter les mises à jour avant l’application. Lorsqu’elle est utilisée avec la création de documents, la tâche crée une [version](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#).
+La tâche de mise à jour de contenu transforme les détails que vous fournissez, en langage naturel ou visuel, en mises à jour de contenu sur votre page. Vous fournissez l’URL d’une page qui doit être mise à jour, ainsi que des détails sur ce qui doit être mis à jour et les compétences de l’agent terminent votre tâche. Utilisée avec Adobe Experience Manager (AEM) as a Cloud Service, la tâche crée un [launch](/help/sites-cloud/authoring/launches/overview.md) afin que vous puissiez consulter les mises à jour avant l’application. Lorsqu’elle est utilisée avec la création de documents, la tâche crée une [version](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#).
 
 ## Fonctionnalités {#capabilities}
 
@@ -69,7 +69,7 @@ Voici quelques exemples d’invites :
 
 * lors de `<your-publish-URL>` mise à jour : « Votre café parfait est à quatre questions ! » à « Ton café, ton chemin ! »
 * sur `<your-author-env-URL>`, remplacez l’image de « holdingcup.png » par « stairhead.png »
-* sur `<your-publish-URL>`, remplacez le bouton « Take our Coffee Quiz » (Prendre notre café quiz) par une version plus attrayante. »
+* En `<your-publish-URL>`, remplacez le bouton « Choisir notre quiz pour le café » par une version plus attrayante.
 * sur `<your-author-env-URL>` supprimer la section « Récompenses non réclamées est un cadeau manqué ! »
 
 ## Jira {#jira}
@@ -118,7 +118,7 @@ Dans le cas d&#39;une commande `process` pour déclencher des mises à jour, les
 
 * L’image suivante présente un exemple de Jira qui déclenche la commande `process` pour la tâche de mise à jour du contenu :
 
-  ![Exemple de Jira utilisant la tâche de mise à jour de contenu de l’agent de production Experience](assets/content-update-jira-example.png)
+  ![Exemple de Jira utilisant la tâche de mise à jour de contenu de Brand Experience Agent](assets/content-update-jira-example.png)
 
 ## Activation {#activation}
 
