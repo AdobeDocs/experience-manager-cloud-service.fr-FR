@@ -4,10 +4,10 @@ description: Découvrez comment la tâche de développement dans AEM analyse les
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
 exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
-source-git-commit: 71e3770a7a26b8d3144717513f3ec1c997b3b435
+source-git-commit: a38d153194f977cf305bece1d9cae676800f52d6
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 1%
+source-wordcount: '625'
+ht-degree: 0%
 
 ---
 
@@ -18,13 +18,17 @@ ht-degree: 1%
 
 La tâche peut récupérer les statuts du pipeline et vous aider à résoudre les problèmes liés aux étapes de création échouées en suggérant des correctifs, ce qui vous permet de gagner du temps lors du débogage des déploiements d’AEM as a Cloud Service dans les environnements de développement, d’évaluation et de production. Il examine les journaux de génération et le code associé pour vous recommander un correctif que vous pouvez appliquer manuellement.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478009?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
 >Les réponses générées par l&#39;IA peuvent être inexactes ou trompeuses. Assurez-vous de vérifier les correctifs et les réponses suggérés.
 >
->Consultez également les [instructions d’utilisation de l’IA générative de Adobe Experience Cloud.](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
+>Consultez également les [Directives d’utilisation de l’IA générative de Adobe Experience Cloud](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+
+>[!NOTE]
+>
+>Le dépannage des pipelines se limite aux pipelines de pile complète (déploiement et qualité du code), mais la prise en charge du **Pipeline de configuration de niveau web** est désormais disponible en version bêta. Pour demander l’accès, envoyez un e-mail à [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com). Un accès préexistant aux agents dans AEM est requis.
 
 <!-- 
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
@@ -32,7 +36,7 @@ La tâche peut récupérer les statuts du pipeline et vous aider à résoudre le
 
 Pour accéder à cette tâche, reportez-vous aux [notes de mise à jour](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) pour obtenir des instructions sur la façon de s’inscrire au programme bêta, en veillant à indiquer votre intérêt pour la tâche de développement. Vous pouvez également envoyer par e-mail les commentaires spécifiques à une tâche de développement à [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com)
 
-[Suivez un tutoriel](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) pour savoir comment utiliser l’agent de développement afin de résoudre les problèmes liés aux pipelines.
+[Suivez un tutoriel](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) pour savoir comment utiliser l’agent de développement afin de résoudre les problèmes liés aux pipelines.
 
 ## Accès à la tâche de développement via Cloud Manager {#how-to-access-the-job}
 
@@ -54,7 +58,7 @@ Vous accédez à la tâche de développement par le biais de l’assistant d’I
 
 1. Sur la page **Aperçu du programme**, dans la vignette **Pipelines**, cliquez sur un pipeline.
 
-   ![&#x200B; Pipeline sélectionné &#x200B;](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-pipeline-select.png)
+   ![ Pipeline sélectionné ](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-pipeline-select.png)
 
 1. Sur la page **Génération et analyse du code**, notez l’échec du pipeline.
 
@@ -91,6 +95,6 @@ La tâche de développement requiert le rôle Cloud Manager - Développeur ou Cl
 
 ## Fonctionnalités hors de portée {#out-of-scope-features}
 
-Le dépannage du pipeline fonctionne à l’étape de création du pipeline full stack. Pour les autres types de pipeline et étapes, déboguez les échecs en téléchargeant et en examinant les journaux.
+Le dépannage du pipeline fonctionne sur les étapes de test unitaire et de création et d’analyse de code dans les pipelines Déploiement de pile complète et Qualité du code . Pour les autres types de pipeline et étapes, déboguez les échecs en téléchargeant et en examinant les journaux.
 
 Voir [Journaux d’accès et de téléchargement](/help/implementing/cloud-manager/manage-logs.md) pour plus d’informations.

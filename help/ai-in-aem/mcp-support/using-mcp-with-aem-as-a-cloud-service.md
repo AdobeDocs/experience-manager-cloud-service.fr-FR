@@ -3,13 +3,13 @@ title: Utilisation de MCP avec AEM as a Cloud Service
 description: Découvrez comment utiliser le protocole Model Context avec AEM as a Cloud Service
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: a5eeb2cedb16f7d0ba0b31e838b3b9fa27b0bf3f
+exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
+source-git-commit: 5cbe2ae5afd6b6052f486cccc245fbc14e9569aa
 workflow-type: tm+mt
-source-wordcount: '2064'
+source-wordcount: '2100'
 ht-degree: 0%
 
 ---
-
 
 # Utilisation de MCP avec AEM as a Cloud Service {#using-mcp-with-aem-as-a-cloud-service}
 
@@ -54,6 +54,7 @@ AEM expose les serveurs MCP en tant que points d’entrée HTTP. Les points d’
 |---|---|----------------------------------------------------------------------------------------------------------------------|
 | **Contenu** | `/content` | Toutes les opérations de contenu de bas niveau, y compris la création, la lecture, la mise à jour et la suppression (CRUD) des pages, des fragments et des ressources. |
 | **Contenu (lecture seule)** | `/content-readonly` | Opérations de contenu en lecture seule (Get, List/Search) pour des pages, des fragments et des ressources. |
+| **Cloud Manager** | `/cloudmanager` | Gérez les entités Cloud Manager, notamment les programmes, les environnements, les référentiels et les pipelines, qui peuvent également être déclenchés. <br><br>*Ce serveur MCP est désormais en version **bêta**; pour demander l’accès, envoyez un e-mail à [aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com) avec une description de votre cas d’utilisation.* |
 
 Les outils spécifiques exposés par chaque serveur MCP peuvent évoluer au fil du temps. En pratique, vous pouvez demander à votre application compatible avec les MCP de découvrir les outils par le biais d’une invite telle que :
 
@@ -216,7 +217,7 @@ Les serveurs MCP hébergés par Adobe mettent en œuvre OAuth et sont intégrés
 * Lorsqu’une application cliente MCP se connecte à un serveur MCP AEM, les utilisateurs voient une boîte de dialogue de connexion Adobe et s’authentifient avec leur **Adobe ID**
 * Une fois la connexion établie, le système vérifie que l’application cliente MCP est autorisée dans votre organisation et que le serveur MCP demandé est autorisé. Si l’une de ces vérifications échoue, un message d’erreur s’affiche.
 
-![Erreur Client MCP non autorisé &#x200B;](assets/MCP-Client-not-permitted.png)
+![Erreur Client MCP non autorisé ](assets/MCP-Client-not-permitted.png)
 
 * Une fois la vérification effectuée, le serveur MCP émet des jetons que l’application utilise pour les appels d’outil suivants
 * Les outils MCP respectent les autorisations AEM de l’utilisateur. Un utilisateur non autorisé à modifier un fragment de contenu dans AEM ne pourra pas le modifier non plus via MCP.

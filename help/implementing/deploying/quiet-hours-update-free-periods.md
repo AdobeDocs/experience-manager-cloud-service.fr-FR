@@ -3,11 +3,10 @@ title: Heures calmes et mettre à jour les périodes libres
 description: Découvrez comment minimiser l’impact opérationnel des mises à jour automatiques d’AEM as a Cloud Service en utilisant les heures creuses et les périodes sans mise à jour.
 feature: Deploying
 role: Admin
-badge: label="Disponibilité limitée" type="Positive"
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: 19ef83258bf2cf8fa69411977d40ebbb8ac6432b
+source-git-commit: 09dec0a073b3e97d5c796f490ccdf88fcd7e1c72
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '720'
 ht-degree: 0%
 
 ---
@@ -15,10 +14,7 @@ ht-degree: 0%
 # Heures calmes et Mettre à jour les périodes libres {#quiet-hours-update-free-periods}
 
 >[!NOTE]
->Cette fonctionnalité sera disponible en tant que fonctionnalité **à disponibilité limitée** à partir du 25 septembre. Envoyez un e-mail à [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) pour activer la fonctionnalité dans vos programmes.
-
->[!WARNING]
->Vous ne pouvez utiliser les fonctions Heures calmes et Mettre à jour les périodes libres qu’après avoir intégré les [&#x200B; Mises à jour de maintenance automatiques &#x200B;](/help/implementing/deploying/aem-version-updates.md).
+>Vous ne pouvez utiliser les fonctions Heures calmes et Mettre à jour les périodes libres qu’après avoir intégré les [ Mises à jour de maintenance automatiques ](/help/implementing/deploying/aem-version-updates.md).
 
 Les [mises à jour de maintenance automatique](/help/implementing/deploying/aem-version-updates.md) d’AEM as a Cloud Service garantissent la sécurité de vos instances et les mettent à jour avec les dernières versions de maintenance. Cela dit, dans certains cas (comme les événements de mise en production), vous devrez peut-être « protéger » ces heures de travail critiques contre d’éventuelles perturbations. Ainsi, AEM as a Cloud Service offre la possibilité de définir une période pendant laquelle les mises à jour automatiques ne se produisent pas pour vos programmes en cours.
 
