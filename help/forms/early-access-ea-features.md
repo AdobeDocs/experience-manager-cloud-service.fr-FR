@@ -323,7 +323,7 @@ Forms Manager prend désormais en charge le contrôle de version pour les Forms 
 
 ### Amélioration de l’accessibilité des composants de formulaire
 
-Les composants principaux de Forms adaptatifs introduisent un balisage sémantique compatible WCAG pour les groupes de cases à cocher, les groupes de boutons radio et les panneaux. Ces composants exploitent désormais les éléments `<fieldset>` et `<legend>` pour établir des relations significatives entre les libellés de groupe et leurs options pour les technologies d’assistance. Voir [ Prise en charge des jeux de champs et des légendes dans le Forms adaptatif](/help/forms/creating-accessible-adaptive-forms.md#fieldset-legend-accessibility).
+Les composants principaux de Forms adaptatifs introduisent un balisage sémantique compatible WCAG pour les groupes de cases à cocher, les groupes de boutons radio et les panneaux. Ces composants exploitent désormais les éléments `<fieldset>` et `<legend>` pour établir des relations significatives entre les libellés de groupe et leurs options pour les technologies d’assistance. Voir [&#x200B; Prise en charge des jeux de champs et des légendes dans le Forms adaptatif](/help/forms/creating-accessible-adaptive-forms.md#fieldset-legend-accessibility).
 
 ## Voir également
 
