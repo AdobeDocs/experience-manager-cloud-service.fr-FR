@@ -4,14 +4,14 @@ description: Découvrez comment générer un PDF d’envoi à partir des envois 
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 24068cb5219b81dc85769137e985cfa60486dd9e
+source-git-commit: 7a033951bdf94e5b9d7553be77697d47121eb826
 workflow-type: tm+mt
-source-wordcount: '3208'
-ht-degree: 40%
+source-wordcount: '3314'
+ht-degree: 38%
 
 ---
 
-# Générer un PDF d’envoi (anciennement Document d’enregistrement) pour le Forms adaptatif (composants principaux)
+# Générer un PDF d’envoi (document d’enregistrement) pour le Forms adaptatif (composants principaux)
 
 ## Présentation {#overview}
 
@@ -359,6 +359,12 @@ Pour localiser les informations de branding que vous saisissez dans l’onglet D
       * **Alignement des options** : vous pouvez sélectionner l’alignement de votre choix (horizontal, vertical, identique au formulaire adaptatif) pour définir l’alignement des champs (case à cocher ou bouton radio, par exemple) à afficher sur le [!UICONTROL document d’enregistrement]. Par défaut, l’alignement vertical est défini pour les champs du [!UICONTROL document d’enregistrement]. La définition des propriétés à partir des [!UICONTROL Propriétés des champs de formulaire] du document d’enregistrement remplace les propriétés définies dans la variable [!UICONTROL Alignement des éléments] pour les champs d’un formulaire adaptatif. Si vous sélectionnez l’option [!UICONTROL Identique au formulaire adaptatif], l’alignement tel que configuré dans une instance de création de formulaire adaptatif est utilisé pour les champs du [!UICONTROL document d’enregistrement].
       * **Nombre d’options d’alignement horizontal**:You peut définir le nombre d’options à afficher dans le PDF d’envoi pour l’alignement horizontal.
 
+      **Afficher les libellés pour la liste déroulante à sélection multiple**
+
+      <span class="preview"> Cette fonctionnalité est disponible via le programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail à partir de votre adresse officielle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com). </span>
+
+      Le PDF Envoi affiche désormais les libellés d’affichage sélectionnés pour les composants déroulants à sélection multiple au lieu des valeurs stockées internes. Par exemple, si un utilisateur sélectionne « California » et « New York » dans une liste déroulante, le PDF d’envoi affiche les libellés sélectionnés au lieu des valeurs internes telles que `CA` et `NY`. Chaque option sélectionnée s’affiche sur une ligne distincte au lieu de prendre la forme de valeurs séparées par des virgules, ce qui est cohérent avec le comportement dans [Forms adaptative basée sur les composants de base](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+
    1. **Propriétés du gabarit de page** :
 
       * **Image du logo** : vous pouvez choisir d’utiliser l’image du logo à partir du formulaire adaptatif, sélectionner une image dans le gestionnaire des ressources numériques (DAM) ou en charger une à partir de votre ordinateur.
@@ -367,24 +373,6 @@ Pour localiser les informations de branding que vous saisissez dans l’onglet D
       * **Libellé clause de non-responsabilité** : libellé de la clause de non-responsabilité.
       * **Clause de non-responsabilité** : texte spécifiant la portée des droits et des obligations sur le PDF de soumission.
       * **Texte de clause de non-responsabilité** : texte de la clause de non-responsabilité.
-
-      <!--![Master Page Properties](/help/forms/assets/dorpropertiesimg.png)-->
-
-      >[!NOTE]
-      >
-      >Si vous utilisez un modèle de formulaire adaptatif créé avec une version de Designer antérieure à la version 6.3, pour que les propriétés Couleur d’accentuation et Famille de polices fonctionnent, assurez-vous de la présence des éléments suivants dans votre modèle de formulaire adaptatif sous le sous-formulaire racine :
-
-      ```xml
-      <proto>
-      <font typeface="Arial"/>
-      <fill>
-      <color value="4,166,203"/>
-      </fill>
-      <edge>
-      <color value="4,166,203"/>
-      </edge>
-      </proto>
-      ```
 
 1. Pour enregistrer les modifications d’identité graphique, sélectionnez **[!UICONTROL Terminé]**.
 
@@ -428,6 +416,11 @@ Les paramètres du composant Document d’enregistrement sont disponible sous se
 **Paramètres des niveaux de formulaires**
 
 * **Inclure les champs non liés dans le document d’enregistrement :** la définition de la propriété inclut les champs non liés du schéma basé sur le formulaire adaptatif dans le PDF d’envoi. Par défaut, le paramètre est true.
+
+## Questions fréquentes {#faq}
+
+**Q : Les modifications n’apparaissent pas dans le PDF d’envoi.**
+**Réponse :** ouvrez le formulaire dans l’éditeur de Forms adaptatif, apportez une modification mineure (par exemple, ajustez le libellé d’un champ ou réorganisez un champ) et enregistrez le formulaire. Le modèle PDF d’envoi est ainsi régénéré et les modifications apparaissent dans le PDF généré suivant.
 
 ## Voir également {#see-also}
 

@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: c5c63e4ecfa099f953c1cf01861c0342ba4bae18
+source-git-commit: 800bbd2adf423b4eb00e91b7bb4dd26a37a2e032
 workflow-type: tm+mt
-source-wordcount: '3133'
+source-wordcount: '3229'
 ht-degree: 20%
 
 ---
@@ -295,15 +295,15 @@ Le service Forms génère des formulaires PDF interactifs pour la capture de don
 
 ### API de génération de documents
 
-L’API de génération de documents comprend une fonctionnalité facultative permettant le chargement direct des PDF générés vers Azure Blob Storage. Voici quelques avantages clés du chargement direct de PDF vers Azure Blob Storage à l’aide de l’API de génération de documents :
+L’API de génération de documents comprend une fonctionnalité facultative permettant le chargement direct des PDF générés vers le stockage Blob d’Azure. Voici quelques avantages clés du chargement direct de PDF vers Azure Blob Storage à l’aide de l’API de génération de documents :
 
 * **Intégration transparente au stockage dans le cloud** :
 Le chargement direct des PDF générés vers Azure Blob Storage élimine le besoin d’étapes manuelles ou programmatiques supplémentaires pour transférer les fichiers, ce qui simplifie les workflows et améliore l’efficacité.
 
 * **Gestion centralisée des documents**
-Le stockage de PDF dans le stockage Blob Azure permet une gestion centralisée des documents, ce qui facilite l’organisation, la récupération et la gestion des fichiers générés dans divers cas d’utilisation.
+Le stockage des PDF dans le stockage Blob d’Azure permet une gestion centralisée des documents, ce qui facilite l’organisation, la récupération et la gestion des fichiers générés dans divers cas d’utilisation.
 
-* **Sécurité améliorée** : en tirant parti des fonctionnalités de sécurité intégrées d’Azure, telles que le chiffrement au repos et le contrôle d’accès en fonction du rôle (RBAC), les documents sensibles restent protégés pendant le stockage.
+* **Sécurité améliorée** : grâce aux fonctionnalités de sécurité intégrées d’Azure, telles que le chiffrement au repos et le contrôle d’accès en fonction du rôle (RBAC), les documents sensibles restent protégés pendant le stockage.
 
 * **Chemins de stockage personnalisables** : la possibilité de définir des chemins de répertoire personnalisés garantit que les PDF générés sont stockés dans des emplacements organisés et spécifiques à l’application, améliorant ainsi la gestion des fichiers.
 
@@ -316,6 +316,14 @@ Le stockage de PDF dans le stockage Blob Azure permet une gestion centralisée d
 * [Prise en charge des fonctions et des expressions mathématiques dans les paramètres d’entrée](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters) : les paramètres d’entrée prennent désormais en charge les appels de fonction et les expressions mathématiques, ce qui permet aux auteurs de formulaires de transmettre directement des valeurs calculées dynamiquement.
 
 * [Récupérer les valeurs de propriété d’un tableau JSON](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array) : appelez une API avec une fonction personnalisée pour extraire les valeurs d’un tableau JSON et les lier directement aux champs de formulaire.
+
+### Prise en charge des versions dans Forms Manager
+
+Forms Manager prend désormais en charge le contrôle de version pour les Forms adaptatifs (composants principaux et composants de base), les fragments de formulaire, les thèmes, les modèles XDP et les ressources binaires. Vous pouvez créer des versions, afficher l’historique et restaurer des états antérieurs à partir de la console Forms et documents . Voir [Gestion des versions de formulaire dans Forms Manager](/help/forms/manage-form-versions-forms-manager.md).
+
+### Amélioration de l’accessibilité des composants de formulaire
+
+Les composants principaux de Forms adaptatifs introduisent un balisage sémantique compatible WCAG pour les groupes de cases à cocher, les groupes de boutons radio et les panneaux. Ces composants exploitent désormais les éléments `<fieldset>` et `<legend>` pour établir des relations significatives entre les libellés de groupe et leurs options pour les technologies d’assistance. Voir [ Prise en charge des jeux de champs et des légendes dans le Forms adaptatif](/help/forms/creating-accessible-adaptive-forms.md#fieldset-legend-accessibility).
 
 ## Voir également
 
