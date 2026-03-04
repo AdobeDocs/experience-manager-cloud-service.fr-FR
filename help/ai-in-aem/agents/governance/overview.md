@@ -4,9 +4,9 @@ description: Découvrez comment l’agent de gouvernance AEM protège l’intég
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 2c73c578-6655-43bf-b03a-cb3eb2284d07
-source-git-commit: 568fd17353da93df0fa20e0c10e48d35890e7ed6
+source-git-commit: 1f40d8201456f5c1a735e2d92988607c25d34a09
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,8 @@ L’agent de gouvernance peut valider le contenu par rapport aux directives de l
 * *Ce `https://www.website/en.html` suit-il les directives relatives aux messages de marque ?*
 * *Vérifiez si `https://www.website/homepage` suit les directives de la marque*
 * *Afficher mes directives de marque*
+
+L’agent de gouvernance comprend également une fonctionnalité d’importation de politique de marque optimisée par l’IA qui utilise l’IA pour transformer les documents de référence de marque existants des clients en contrôles de politique structurés et applicables qui régissent, valident et guident automatiquement la création de contenu conforme. Pour plus d’informations, voir [Importer une politique de marque](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md).
 
 ### Autorisation et Digital Rights Management {#permission-and-digital-rights-management}
 
