@@ -84,7 +84,7 @@ Pour importer une marque dans l’agent de gouvernance :
 
 1. Une fois votre marque créée et votre document de politique téléchargé, vous pouvez obtenir une vue détaillée par marque en accédant à l&#39;onglet **Marques** et en cliquant sur la vignette d&#39;une marque. Il s’agit de la vue que vous souhaitez utiliser pour créer des catégories de chèques, en appuyant sur les trois points en regard d’une catégorie existante, puis en sélectionnant **+ Ajouter une catégorie**, comme illustré dans la capture d’écran ci-dessous :
 
-   ![Ajouter une catégorie ](/help/ai-in-aem/agents/governance/assets/add_category.png)
+   ![Ajouter une catégorie &#x200B;](/help/ai-in-aem/agents/governance/assets/add_category.png)
 
    Vous pouvez également utiliser cette vue pour créer, modifier et supprimer des contrôles. Les étapes ci-dessous vous donneront des détails à ce sujet.
 
