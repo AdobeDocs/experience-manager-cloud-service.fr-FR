@@ -4,9 +4,9 @@ description: Découvrez la tâche de création de formulaires de Brand Experienc
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
-source-git-commit: 36f4ba8207da67b8e68c9c9851311defc909b495
+source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Tâche de création de formulaire {#form-creation-job}
 
-La tâche de création de formulaire est une fonctionnalité de [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) conçue pour développer des formulaires à l’aide d’invites en langage naturel. Cette tâche génère automatiquement la structure de formulaire et les types de champ appropriés. La tâche est surfacée via l’assistant AI.
+La tâche de création de formulaire fait partie de l’[agent de production Experience](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) conçu pour développer des formulaires à l’aide d’invites en langage naturel. Cette tâche génère automatiquement la structure de formulaire et les types de champ appropriés. La tâche est surfacée via l’assistant AI.
 
 Voici quelques-uns des principaux avantages des tâches de création de formulaire :
 

@@ -1,18 +1,18 @@
 ---
 title: Tâche de création de communication
-description: Découvrez la tâche de création de communication de Brand Experience Agents et comment utiliser le langage naturel pour créer des communications interactives.
+description: Découvrez la tâche de création de communication des agents Experience Production et comment utiliser le langage naturel pour créer des communications interactives.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 49111cdb-e714-4590-8b81-382377083d6e
-source-git-commit: 9be60c79ef001edf7590a8fd3fd64c1a9a1ab9f9
+source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
 
 
-# Compétence de création de communication {#ic-creation-skill}
+# Tâche de création de communication {#ic-creation-skill}
 
 <!-- UNCOMMENT ACTIVATION SECTION AT THE BOTTOM ONCE THIS IS NO LONGER ALPHA -->
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Les [communications interactives](/help/forms/introduction-to-interactive-communication.md) sont des documents personnalisés, pilotés par les données, conçus pour la correspondance commerciale, telle que les relevés de compte, les documents de politique, les factures, les kits de bienvenue et les avis de prestations. Contrairement aux formulaires qui collectent les entrées des utilisateurs, les communications interactives génèrent des documents de sortie avec un contenu dynamique spécifique au destinataire.
 
-La tâche de création de communication est une fonctionnalité de [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) conçue pour développer des communications interactives à l’aide d’invites en langage naturel. Cette tâche génère automatiquement une correspondance personnalisée et pilotée par les données à imprimer (au format PDF). La tâche est surfacée via l’assistant AI.
+La tâche de création de communication fait partie de l’[agent de production Experience](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) qui est conçu pour développer des communications interactives à l’aide d’invites en langage naturel. Cette tâche génère automatiquement une correspondance personnalisée et pilotée par les données à imprimer (au format PDF). La tâche est surfacée via l’assistant AI.
 
 Voici quelques-uns des principaux avantages des emplois de création de communication :
 

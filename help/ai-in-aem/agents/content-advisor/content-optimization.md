@@ -1,10 +1,10 @@
 ---
-title: Traitement d’optimisation du contenu
-description: Découvrez comment utiliser la tâche d’optimisation du contenu pour transformer la manière dont les utilisateurs affinent et adaptent les ressources en appliquant des instructions en langage naturel pour créer des variations prêtes pour le canal.
+title: Agent d’optimisation de contenu
+description: Découvrez comment utiliser l’agent d’optimisation de contenu pour transformer la manière dont les utilisateurs affinent et adaptent les ressources en appliquant des instructions en langage naturel pour créer des variations prêtes pour le canal.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 896fc25b-7f60-47b8-9264-2ef6b85d954c
-source-git-commit: a31cd8ea0ae02a51efb748097c195d68dc8b554d
+source-git-commit: a9f1ed92e3ca05be6f4db578a814330004100b3e
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 0%
@@ -12,11 +12,11 @@ ht-degree: 0%
 ---
 
 
-# Traitement d’optimisation du contenu {#content-optimization-job}
+# Agent d’optimisation de contenu {#content-optimization-agent}
 
-Dans le cadre de l’[agent de gestion de contenu AEM](/help/ai-in-aem/agents/content-advisor/overview.md) la tâche d’optimisation de contenu transforme la manière dont les utilisateurs affinent et adaptent les ressources en appliquant des instructions en langage naturel pour créer des variations prêtes pour le canal. Qu’il s’agisse de générer de nouveaux rendus, d’ajuster les propriétés visuelles, de modifier les arrière-plans ou de préparer des ressources pour des canaux numériques spécifiques, la tâche interprète les intentions des utilisateurs et exécute automatiquement des tâches de modification complexes. Il fonctionne de manière transparente avec [la tâche de découverte de contenu](/help/ai-in-aem/agents/content-advisor/discovery.md) en prenant les ressources qu’il trouve et en produisant des variations optimisées à l’aide des principales [Dynamic Media avec des fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) qui répondent aux exigences de la marque, du canal et de la campagne sans effort de conception manuel.
+Dans le cadre de l’[Agent de conseil en contenu d’AEM](/help/ai-in-aem/agents/content-advisor/overview.md) l’agent d’optimisation de contenu transforme la manière dont les utilisateurs affinent et adaptent les ressources en appliquant des instructions en langage naturel pour créer des variations prêtes pour le canal. Qu’il s’agisse de générer de nouveaux rendus, d’ajuster les propriétés visuelles, de modifier les arrière-plans ou de préparer des ressources pour des canaux numériques spécifiques, l’agent interprète les intentions de l’utilisateur et effectue automatiquement des tâches de modification complexes. Il fonctionne de manière transparente avec [l’agent de découverte de contenu](/help/ai-in-aem/agents/content-advisor/discovery.md) en prenant les ressources qu’il trouve et en produisant des variations optimisées à l’aide des principales [Dynamic Media avec des fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) qui répondent aux exigences de la marque, du canal et de la campagne sans effort de conception manuel.
 
-Voici quelques-uns des principaux avantages de la tâche d’optimisation de contenu :
+Voici quelques-uns des principaux avantages de l’agent d’optimisation de contenu :
 
 * **Transformation simple des ressources** : permet de convertir des invites simples et conversationnelles en opérations d’image précises, telles que le redimensionnement, l’accentuation, la mise en miroir ou le recoloriage, en éliminant le besoin d’outils d’édition spécialisés.
 
@@ -24,7 +24,7 @@ Voici quelques-uns des principaux avantages de la tâche d’optimisation de con
 
 * **Amélioration de Creative à grande échelle** : applique des ajustements et des améliorations visuels, tels que des modifications en arrière-plan ou des superpositions de graphiques, pour prendre en charge les workflows créatifs volumineux sans ralentir les équipes.
 
-* **[Collaboration transparente avec la tâche de découverte de contenu](/help/ai-in-aem/agents/content-advisor/discovery.md)** : s’appuie sur les ressources identifiées par la tâche de découverte de contenu, permettant la récupération et l’optimisation des ressources de bout en bout par le biais d’une conversation naturelle.
+* **[Collaboration transparente avec l’agent de découverte de contenu](/help/ai-in-aem/agents/content-advisor/discovery.md)** : s’appuie sur les ressources identifiées par l’agent de découverte de contenu, permettant la récupération et l’optimisation des ressources de bout en bout par le biais d’une conversation naturelle.
 
 >[!IMPORTANT]
 >
@@ -34,7 +34,7 @@ Voici quelques-uns des principaux avantages de la tâche d’optimisation de con
 
 >[!VIDEO](https://video.tv.adobe.com/v/3480078)
 
-## Conditions préalables {#prerequisites-content-optimization-job}
+## Conditions préalables {#prerequisites-content-optimization-agent}
 
 Pour générer des variations ou des optimisations pour les ressources d’image. Vous devez avoir :
 
@@ -44,52 +44,52 @@ Pour générer des variations ou des optimisations pour les ressources d’image
 
 * Les ressources à l’[état approuvé](/help/assets/manage-organize-assets-view.md#manage-asset-status) dans votre environnement AEM as a Cloud Service.
 
-## Compétences {#skills-content-optimization-job}
+## Compétences {#skills-content-optimization-agent}
 
-La tâche d’optimisation du contenu fournit les compétences suivantes :
+L’agent d’optimisation de contenu fournit les compétences suivantes :
 
 * **Comprendre l’intention grâce au langage naturel**
 
-  La tâche d’optimisation du contenu interprète l’intention de l’utilisateur à partir d’invites en langage naturel, en tenant compte du contexte du canal, de la campagne et de l’audience pour déterminer les actions d’optimisation les plus pertinentes.
+  L’agent d’optimisation de contenu interprète l’intention de l’utilisateur à partir d’invites en langage naturel, en tenant compte du canal, de la campagne et du contexte d’audience pour déterminer les actions d’optimisation les plus pertinentes.
 
 * **Génère des variantes de contenu dynamique**
 
-  La tâche d’optimisation du contenu crée des variantes optimisées sous la forme d’URL dynamiques personnalisées pour différents canaux et types de format.
+  L’agent d’optimisation de contenu crée des variantes optimisées sous la forme d’URL dynamiques personnalisées pour différents canaux et types de format.
 
 * **Optimise le contenu des images**
 
-  La tâche d’optimisation du contenu apporte des améliorations telles que la conversion de format, les ajustements de résolution, le recadrage et l’accentuation pour améliorer la qualité de l’image.
+  L’agent d’optimisation du contenu apporte des améliorations telles que la conversion de format, les ajustements de résolution, le recadrage et l’accentuation pour améliorer la qualité de l’image.
 
 * **Optimisation de ressources à plusieurs variantes**
 
-  La tâche d’optimisation du contenu peut générer plusieurs variations d’images optimisées à partir des ressources renvoyées par la tâche de découverte de contenu à l’aide d’une seule invite en langage naturel, ce qui permet aux utilisateurs et utilisatrices de produire rapidement et efficacement des rendus prêts pour le canal.
+  L’agent d’optimisation de contenu peut générer plusieurs variations d’image optimisées à partir des ressources renvoyées par l’agent de découverte de contenu à l’aide d’une seule invite en langage naturel, ce qui permet aux utilisateurs de produire rapidement et efficacement des rendus prêts pour le canal.
 
-## Personnes {#personas-content-optimization-job}
+## Personnes {#personas-content-optimization-agent}
 
-Les spécialistes du marketing des canaux, personnage clé de la tâche d’optimisation du contenu, peuvent sélectionner le contenu source haute résolution approprié et demander des formats optimisés adaptés à leurs canaux et segments d’audience.
+Les spécialistes du marketing des canaux, personnage clé de l’agent d’optimisation du contenu, peuvent sélectionner le contenu source haute résolution approprié et demander des formats optimisés adaptés à leurs canaux et segments d’audience.
 
-Les spécialistes du marketing régional et les employés d’agence peuvent également utiliser la tâche d’optimisation du contenu pour générer rapidement des variations d’image prêtes pour le canal, qui prennent en charge une production de contenu plus rapide et plus cohérente.
+Les spécialistes du marketing régional et les employés d’agence peuvent également utiliser l’agent d’optimisation de contenu pour générer rapidement des variations d’image adaptées aux canaux qui prennent en charge une production de contenu plus rapide et plus cohérente.
 
-## Accès {#access-content-optimization-job}
+## Accès {#access-content-optimization-agent}
 
-Vous pouvez accéder à la tâche d’optimisation du contenu dans AEM via l’assistant AI. Connectez-vous à [`experience.adobe.com`](https://experience.adobe.com) et commencez à interagir avec l’assistant AI en spécifiant votre invite en langage naturel à l’aide du champ `Ask AI Assistant anything` :
+Vous pouvez accéder à l’agent d’optimisation de contenu dans AEM via l’assistant AI. Connectez-vous à [`experience.adobe.com`](https://experience.adobe.com) et commencez à interagir avec l’assistant AI en spécifiant votre invite en langage naturel à l’aide du champ `Ask AI Assistant anything` :
 
-![Accéder à la tâche d’optimisation de contenu](/help/ai-in-aem/agents/content-advisor/assets/access-discovery-agent.png)
+![Accéder à l’agent d’optimisation de contenu](/help/ai-in-aem/agents/content-advisor/assets/access-discovery-agent.png)
 
 ## Cas d’utilisation courants et exemples d’invites {#use-cases-prompts}
 
-Utilisez la tâche d’optimisation de contenu en recherchant les ressources appropriées via la tâche de découverte de contenu [.](/help/ai-in-aem/agents/content-advisor/discovery.md) Une fois les images appropriées affichées, les utilisateurs peuvent générer des variantes optimisées ou spécifiques à un canal pour une ou plusieurs ressources directement à partir des résultats de la recherche. Ce workflow garantit des entrées de haute qualité et de meilleurs résultats d’optimisation de manière cohérente. [Pour plus d’informations](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/) consultez la liste complète des optimisations disponibles.
+Utilisez l’agent d’optimisation de contenu en recherchant les ressources appropriées par le biais de l’agent de découverte de contenu [.](/help/ai-in-aem/agents/content-advisor/discovery.md) Une fois les images appropriées affichées, les utilisateurs peuvent générer des variantes optimisées ou spécifiques à un canal pour une ou plusieurs ressources directement à partir des résultats de la recherche. Ce workflow garantit des entrées de haute qualité et de meilleurs résultats d’optimisation de manière cohérente. [Pour plus d’informations](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/) consultez la liste complète des optimisations disponibles.
 
 * **Création de rendu haute résolution**
 
-  La tâche peut générer de nouveaux rendus d’une ressource à une résolution et un niveau de qualité spécifiés, ce qui facilite la préparation de variations prêtes pour le canal sans modification manuelle.
+  L’agent peut générer de nouveaux rendus d’une ressource à une résolution et un niveau de qualité spécifiés, ce qui facilite la préparation de variations prêtes pour le canal sans modification manuelle.
 
 
   Exemple d’invite :
 
   Créez un rendu `2000px` en tant que `JPEG` avec la qualité de `80%`.
 
-  Recherchez la ressource appropriée à l’aide de la tâche de découverte de contenu [content discovery](/help/ai-in-aem/agents/content-advisor/discovery.md), puis utilisez les invites suivantes en cas de résultats de recherche multiples :
+  Recherchez la ressource appropriée à l’aide de l’[agent de découverte de contenu](/help/ai-in-aem/agents/content-advisor/discovery.md) puis utilisez les invites suivantes en cas de résultats de recherche multiples :
 
   Pour le 3e résultat de recherche, créez un rendu `2000px` en tant que `JPEG` avec une qualité `80%`.
 
@@ -99,7 +99,7 @@ Utilisez la tâche d’optimisation de contenu en recherchant les ressources app
 
 * **Amélioration des images**
 
-  Cette tâche peut apporter des améliorations visuelles, telles qu’un accentuation, pour s’assurer que les ressources ont l’air nettes et bien définies avant d’être utilisées dans plusieurs campagnes.
+  L’agent peut appliquer des améliorations visuelles, telles que l’accentuation, pour s’assurer que les ressources ont l’air nettes et bien définies avant d’être utilisées dans les campagnes.
 
   Exemple d’invite :
 
@@ -108,7 +108,7 @@ Utilisez la tâche d’optimisation de contenu en recherchant les ressources app
 
 * **Réglages des couleurs de fond**
 
-  La tâche peut mettre à jour ou remplacer des couleurs de fond dans des ressources transparentes, prendre en charge des modèles de couleurs spécifiques à la marque ou des thèmes visuels pilotés par les campagnes.
+  L’agent peut mettre à jour ou remplacer les couleurs de fond dans les ressources transparentes, en prenant en charge des modèles de couleurs spécifiques à la marque ou des thèmes visuels pilotés par les campagnes.
 
   Exemple d’invite :
 
@@ -116,7 +116,7 @@ Utilisez la tâche d’optimisation de contenu en recherchant les ressources app
 
 * **Transformations d’orientation**
 
-  La tâche peut retourner ou refléter des visuels pour s’aligner sur les besoins de mise en page ou le sens de la création, sans nécessiter d’outils de modification externes.
+  L’agent peut inverser ou refléter les visuels pour s’aligner sur les besoins de mise en page ou le sens créatif, sans avoir besoin d’outils de modification externes.
 
   Exemple d’invite :
 
@@ -124,7 +124,7 @@ Utilisez la tâche d’optimisation de contenu en recherchant les ressources app
 
 * **Rendus optimisés pour les canaux**
 
-  La tâche peut produire des rendus adaptés aux exigences spécifiques de la plateforme, telles que les histoires sur Instagram, ce qui garantit que les ressources respectent automatiquement les directives de format, de ratio et de qualité.
+  L’agent peut produire des rendus adaptés aux exigences spécifiques de la plateforme, telles que les histoires sur Instagram, ce qui garantit que les ressources respectent automatiquement les directives en matière de format, de ratio et de qualité.
 
   Exemple d&#39;invite :
 
@@ -132,7 +132,7 @@ Utilisez la tâche d’optimisation de contenu en recherchant les ressources app
 
 * **Recouvrements de marque et génération composite**
 
-  La tâche peut appliquer des graphiques promotionnels, des superpositions ou des badges à des ressources existantes avec un emplacement précis, ce qui permet de créer rapidement des composites prêts pour la campagne.
+  L’agent peut appliquer des graphiques promotionnels, des recouvrements ou des badges aux ressources existantes avec un emplacement précis, ce qui permet de créer rapidement des composites prêts pour la campagne.
 
   Exemple d&#39;invite :
 
@@ -143,9 +143,9 @@ Utilisez la tâche d’optimisation de contenu en recherchant les ressources app
   >Les positions de recouvrement peuvent ne pas être exactes.
 
 
-## Résultats de l’optimisation {#content-optimization-job-results}
+## Résultats de l’optimisation {#content-optimization-agent-results}
 
-Lorsque vous spécifiez une invite d’optimisation, la tâche d’optimisation de contenu renvoie la ressource améliorée avec des options d’accès pratiques en fonction du type de ressource :
+Lorsque vous spécifiez une invite d’optimisation, l’agent d’optimisation de contenu renvoie la ressource améliorée avec des options d’accès pratiques en fonction du type de ressource :
 
 * **Images** : la réponse comprend un aperçu miniature et des options pour ouvrir l’URL Dynamic Media ou télécharger l’image optimisée.
 
@@ -165,11 +165,11 @@ Ces résultats facilitent la révision de la sortie optimisée et son utilisatio
 <!--
 
 
-## Prompting best Practices {#prompting-best-practices-content-optimization-job}
+## Prompting best Practices {#prompting-best-practices-content-optimization-agent}
 
 The following are some prompting best practices:
 
-* Be explicit about the enhancement you want the content optimization job to apply. Clearly state the transformation or adjustment you expect. Precise instructions help the agent produce accurate and predictable results. For example, Instead of `Make it good quality`, specify `Create a JPEG image with 90% quality`.
+* Be explicit about the enhancement you want the content optimization agent to apply. Clearly state the transformation or adjustment you expect. Precise instructions help the agent produce accurate and predictable results. For example, Instead of `Make it good quality`, specify `Create a JPEG image with 90% quality`.
 
 * Provide detailed parameters whenever possible. The more context you give, such as dimensions, format, quality, placement, or color values, the more tailored the output is.
 
