@@ -5,10 +5,10 @@ keywords: Guide d’envoi et d’envoi de formulaire adaptatif, Comment envoyer 
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
 role: User, Developer
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: 79046330f5c3fe3b19ac35200ef0750f28ba31c4
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 17%
+source-wordcount: '953'
+ht-degree: 20%
 
 ---
 
@@ -56,6 +56,11 @@ Pour configurer une action Envoyer un e-mail pour le composant de base :
 1. Ajoutez un modèle d’e-mail pour configurer l’action d’envoi d’e-mail.
    * Vous pouvez spécifier le chemin d’accès au modèle d’e-mail externe enregistré dans vos ressources AEM à l’aide de l’option **[!UICONTROL Chemin d’accès au modèle externe]**.
    * Vous pouvez également ajouter un modèle d’e-mail personnalisé pour l’envoi du formulaire dans la zone de texte **[!UICONTROL Modèle d’e-mail]**.
+
+   >[!NOTE]
+   >
+   > Vous pouvez également activer l’option **[!UICONTROL Utiliser le modèle HTML]** pour envoyer des e-mails à l’aide d’une disposition HTML personnalisée au lieu du modèle par défaut. Lorsque cette option est activée, spécifiez le fichier HTML dans le champ **Chemin d’accès au modèle externe**. Cette fonctionnalité est disponible via le programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail à partir de votre adresse officielle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
+
 1. [Facultatif] L’action d’envoi **[!UICONTROL Envoyer un e-mail]** permet d’inclure des pièces jointes et un [document d’enregistrement)](generate-document-of-record-core-components.md) dans l’e-mail.
 1. Cliquez sur **[!UICONTROL Terminé]**.
 
@@ -76,6 +81,11 @@ Pour configurer l’action d’envoi Envoyer un e-mail pour le composant princip
 1. Ajoutez un modèle d’e-mail pour configurer l’action d’envoi d’e-mail.
    * Vous pouvez spécifier le chemin d’accès au modèle d’e-mail externe enregistré dans vos ressources AEM à l’aide de l’option **[!UICONTROL Chemin d’accès au modèle externe]**.
    * Vous pouvez également ajouter un modèle d’e-mail personnalisé pour l’envoi du formulaire dans la zone de texte **[!UICONTROL Modèle d’e-mail]**.
+
+   >[!NOTE]
+   >
+   > Vous pouvez également activer l’option **[!UICONTROL Utiliser le modèle HTML]** pour envoyer des e-mails à l’aide d’une disposition HTML personnalisée au lieu du modèle par défaut. Lorsque cette option est activée, spécifiez le fichier HTML dans le champ **Chemin d’accès au modèle externe**. Cette fonctionnalité est disponible via le programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail à partir de votre adresse officielle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
+
 1. [Facultatif] L’action d’envoi **[!UICONTROL Envoyer un e-mail]** permet d’inclure des pièces jointes et un [document d’enregistrement)](generate-document-of-record-core-components.md) dans l’e-mail.
 1. Cliquez sur **[!UICONTROL Terminé]**.
 
@@ -89,8 +99,8 @@ La boîte de dialogue **Propriétés du formulaire** s’affiche.
 
    >[!NOTE]
    >
-   > * Si l’icône **Modifier les propriétés de formulaire** ne s’affiche pas dans l’interface de l’éditeur universel, activez l’extension **Modifier les propriétés de formulaire** dans Extension Manager.
-   > * Consultez l’article [Caractéristiques des fonctionnalités d’Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) pour savoir comment activer ou désactiver les extensions dans l’éditeur universel.
+   > * Si l’icône **Modifier les propriétés du formulaire** ne s’affiche pas dans l’interface de l’éditeur universel, activez l’extension **Modifier les propriétés du formulaire** dans Extension Manager.
+   > * Consultez l’article [Principales fonctionnalités d’Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) pour savoir comment activer et désactiver les extensions dans l’éditeur universel.
 
 
 1. Cliquez sur l’onglet **Envoi** et sélectionnez l’action d’envoi **[!UICONTROL Envoyer un e-mail]**.
@@ -104,6 +114,7 @@ La boîte de dialogue **Propriétés du formulaire** s’affiche.
 1. Ajoutez un modèle d’e-mail pour configurer l’action d’envoi d’e-mail.
    * Vous pouvez spécifier le chemin d’accès au modèle d’e-mail externe enregistré dans vos ressources AEM à l’aide de l’option **[!UICONTROL Chemin d’accès au modèle externe]**.
    * Vous pouvez également ajouter un modèle d’e-mail personnalisé pour l’envoi du formulaire dans la zone de texte **[!UICONTROL Modèle d’e-mail]**.
+
 1. [Facultatif] L’action d’envoi **[!UICONTROL Envoyer un e-mail]** permet d’inclure des pièces jointes et un [document d’enregistrement)](generate-document-of-record-core-components.md) dans l’e-mail.
 1. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 

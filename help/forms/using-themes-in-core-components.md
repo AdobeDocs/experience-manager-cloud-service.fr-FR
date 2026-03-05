@@ -5,10 +5,10 @@ keywords: thèmes de form builder, composants principaux de style des formulaire
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 38ccd7f624867cef324c7934647e147532271c0d
+source-git-commit: 105f68be315e527c513c923e23d8415a49fe8e88
 workflow-type: tm+mt
-source-wordcount: '2889'
-ht-degree: 29%
+source-wordcount: '3011'
+ht-degree: 28%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 29%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html) |
 | AEM as a Cloud Service | Cet article |
 
 Vous pouvez créer et appliquer des thèmes pour appliquer un style à un formulaire adaptatif. Un thème contient des détails de style pour les composants et les panneaux. Ces styles incluent des propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème, le style spécifié se reflète sur les composants correspondants. Un thème est géré indépendamment sans référence à un formulaire adaptatif et peut être réutilisé dans plusieurs formulaires adaptatifs.
@@ -55,6 +55,10 @@ Forms as a Cloud Service fournit, les thèmes de style de formulaire adaptatif r
 
 Vous pouvez [personnaliser l’un de ces thèmes pour créer un thème](#customize-a-theme-core-components).
 
+>[!NOTE]
+>
+>Si vos Forms adaptatives sont incorporées dans des pages AEM Sites, vous pouvez utiliser un seul thème pour le site et les formulaires en incorporant un thème de Forms adaptatif dans le thème de votre site. Voir [Incorporer un thème Forms adaptatif dans un thème AEM Sites](/help/forms/embed-adaptive-forms-theme-in-site-theme.md).
+
 ![Workflow de personnalisation du thème](/help/forms/assets/workflow-of-customization-of-theme.png)
 
 ## Personnaliser un thème {#customize-a-theme-core-components}
@@ -70,7 +74,7 @@ La personnalisation d’un thème fait référence au processus de modification,
 
 ### Configuration de votre environnement
 
-* Configurez un [pipeline de déploiement front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=fr) pour votre environnement Cloud Service. Vous pouvez également configurer le pipeline ultérieurement, ce qui vous offre la possibilité de hiérarchiser les tests et d’affiner le thème avant de configurer le pipeline de déploiement.
+* Configurez un [pipeline de déploiement front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html) pour votre environnement Cloud Service. Vous pouvez également configurer le pipeline ultérieurement, ce qui vous offre la possibilité de hiérarchiser les tests et d’affiner le thème avant de configurer le pipeline de déploiement.
 
 <!-- 
 To deploy your themes to a Forms as a Cloud Service environment, first test theme on a local development environment to address any issues. Once the theme is tested, configure the front-end deployment pipeline, which is responsible for deploying the themes.
@@ -125,6 +129,10 @@ Pour cloner un thème, effectuez les instructions suivantes :
 
 
 #### &#x200B;2. Définir le nom d’un thème {#set-name-of-theme}
+
+>[!NOTE]
+>
+>Cette étape s’applique lorsque vous déployez le thème sous la forme d’un package **autonome** via le pipeline front-end (par exemple, un référentiel de thème Forms dédié). Si vous **incorporer** le thème Forms dans votre thème AEM Sites à la place, vous n’avez pas besoin de définir un nom de thème ou une version distincts pour le thème du formulaire ; le nom du thème du site est utilisé. Voir [Incorporer un thème Forms adaptatif dans un thème AEM Sites](/help/forms/embed-adaptive-forms-theme-in-site-theme.md).
 
 1. Ouvrez le dossier du thème dans votre IDE. Par exemple, pour ouvrir le dossier `aem-forms-theme-canvas` dans l’éditeur de code Visual Studio.
 
@@ -321,7 +329,7 @@ Pour déployer le thème dans votre environnement Cloud Service à l’aide du p
 
 ##### 5.1 Création d’un référentiel pour le thème{#create-a-new-theme-repo}
 
-Vous avez besoin d’un référentiel pour déployer le thème. Connectez-vous à votre référentiel [AEM Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git) et ajoutez un nouveau référentiel pour votre thème.
+Vous avez besoin d’un référentiel pour déployer le thème. Connectez-vous à votre référentiel [AEM Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) et ajoutez un nouveau référentiel pour votre thème.
 
 1. Créez un référentiel pour un thème en cliquant sur le **[!UICONTROL Référentiels]** > **[!UICONTROL Ajouter un référentiel]**.
 
@@ -387,7 +395,7 @@ Pour définir la version de Node.js sur 20 à l’aide de la configuration de pi
 
 ##### 5.4 Exécution du pipeline front-end {#run-a-frontend-pipeline}
 
-Le thème est déployé à l’aide du [pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=fr). Pour déployer le thème, effectuez les étapes suivantes :
+Le thème est déployé à l’aide du [pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html). Pour déployer le thème, effectuez les étapes suivantes :
 
 1. Connectez-vous à votre référentiel AEM Cloud Manager.
 1. Cliquez sur le bouton **[!UICONTROL Ajouter]** dans la section **[!UICONTROL Pipelines]**.
@@ -458,6 +466,7 @@ Les thèmes de formulaire adaptatif sont utilisés dans le cadre d’un modèle 
 
 {{see-also}}
 
+* [Incorporer un thème Forms adaptatif dans un thème AEM Sites](/help/forms/embed-adaptive-forms-theme-in-site-theme.md)
 * [Définir la disposition des formulaires pour différentes tailles d’écran et différents types d’appareils](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Génération d’un document d’enregistrement pour le Forms adaptatif (composants principaux)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Création d’un Forms adaptatif avec des sections répétables](/help/forms/create-forms-repeatable-sections.md)
