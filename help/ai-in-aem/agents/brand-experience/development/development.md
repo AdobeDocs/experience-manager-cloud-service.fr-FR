@@ -4,7 +4,7 @@ description: Découvrez comment l’agent de développement dans AEM analyse les
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
 exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
-source-git-commit: 95b54c3c90a4fd221a91e538b6c5c43e03b74b14
+source-git-commit: 778c65a65e246c9cc3fc5e8b233edcd07c876261
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 L’agent peut récupérer les statuts de pipeline et vous aider à résoudre les problèmes liés aux étapes de création échouées en suggérant des correctifs, ce qui vous permet de gagner du temps lors du débogage des déploiements d’AEM as a Cloud Service dans les environnements de développement, d’évaluation et de production. Il examine les journaux de génération et le code associé pour vous recommander un correctif que vous pouvez appliquer manuellement.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478009?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
@@ -36,7 +36,7 @@ L’agent peut récupérer les statuts de pipeline et vous aider à résoudre le
 
 Pour accéder à cet agent, reportez-vous aux [notes de mise à jour](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) pour obtenir des instructions sur la façon de s’inscrire au programme bêta, en veillant à indiquer votre intérêt pour l’agent de développement. Vous pouvez également envoyer par e-mail les commentaires spécifiques à l’agent de développement à [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com)
 
-[Suivez un tutoriel](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) pour savoir comment utiliser l’agent de développement afin de résoudre les problèmes liés aux pipelines.
+[Suivez un tutoriel](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/agents/development-agent-troubleshoot-ci-cd-pipeline) pour savoir comment utiliser l’agent de développement afin de résoudre les problèmes liés aux pipelines.
 
 ## Accès à l’agent de développement via Cloud Manager {#how-to-access-the-agent}
 
@@ -58,7 +58,7 @@ Vous accédez à l’agent de développement par le biais de l’assistant d’I
 
 1. Sur la page **Aperçu du programme**, dans la vignette **Pipelines**, cliquez sur un pipeline.
 
-   ![&#x200B; Pipeline sélectionné &#x200B;](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-pipeline-select.png)
+   ![ Pipeline sélectionné ](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-pipeline-select.png)
 
 1. Sur la page **Génération et analyse du code**, notez l’échec du pipeline.
 
