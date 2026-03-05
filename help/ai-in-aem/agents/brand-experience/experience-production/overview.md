@@ -32,7 +32,7 @@ L’agent effectue les tâches suivantes :
 
 ### Tâche de mise à jour du contenu {#content-update}
 
-La tâche [ Mise à jour de contenu ](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) met à jour facilement le contenu existant, y compris les fragments de contenu, les pages, les formulaires et les ressources. L’agent peut effectuer des actions telles que la mise à jour, la suppression, le remplacement ou l’ajout d’éléments de contenu pour que les expériences restent exactes et à jour. Les entrées peuvent être des descriptions en langage naturel et, lorsqu’elles sont utilisées avec des PDF et des captures d’écran Jira, elles peuvent également fournir des entrées.
+La tâche [&#x200B; Mise à jour de contenu &#x200B;](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) met à jour facilement le contenu existant, y compris les fragments de contenu, les pages, les formulaires et les ressources. L’agent peut effectuer des actions telles que la mise à jour, la suppression, le remplacement ou l’ajout d’éléments de contenu pour que les expériences restent exactes et à jour. Les entrées peuvent être des descriptions en langage naturel et, lorsqu’elles sont utilisées avec des PDF et des captures d’écran Jira, elles peuvent également fournir des entrées.
 
 ### Tâche de création de formulaire {#form-creation}
 

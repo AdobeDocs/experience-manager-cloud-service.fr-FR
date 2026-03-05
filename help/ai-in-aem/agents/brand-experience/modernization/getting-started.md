@@ -64,11 +64,11 @@ Maintenant que votre console peut accéder à votre code, vous êtes prêt à d�
    * La console vous présente des commentaires au fur et à mesure qu’elle commence son travail, y compris un aperçu de ses étapes planifiées.
      ![Import de contenu](assets/content-import.png)
 1. Une fois le site importé, le panneau **Workspace** affiche les pages. Sélectionnez une page pour la prévisualiser dans le panneau de droite.
-   ![ Contenu importé ](assets/content-imported.png)
+   ![&#x200B; Contenu importé &#x200B;](assets/content-imported.png)
 1. Maintenant que vous disposez de contenu, vous pouvez demander à importer les styles à partir de la même source.
    * « Importez les styles généraux à partir de `https://wknd-trendsetters.site`. »
 1. Comme pour l’importation de contenu initiale, l’importation peut prendre plusieurs minutes et la console fournit des commentaires pendant le traitement de votre demande et l’importation des styles. Une fois la tâche terminée, cliquez sur **Actualiser l’aperçu** dans le panneau de droite pour afficher le contenu stylisé.
-   ![ Styles importés ](assets/styles-imported.png)
+   ![&#x200B; Styles importés &#x200B;](assets/styles-imported.png)
 
 Le contenu et les styles sont maintenant importés dans la console.
 
@@ -136,5 +136,5 @@ Si vous avez poussé votre code vers une branche autre que `main`, l’aperçu o
 Les documents suivants peuvent s’avérer utiles lorsque vous continuez à explorer l’agent de modernisation d’expérience et sa console.
 
 * [Console de modernisation de l’expérience](/help/ai-in-aem/agents/brand-experience/modernization/console.md) - Détails sur la console, ses vues, options et fonctionnalités
-* [Tutoriel de développement Edge Delivery Services ](https://www.aem.live/developer/tutorial) - Utile si vous êtes un débutant dans les projets AEM et Edge Delivery Services
+* [Tutoriel de développement Edge Delivery Services &#x200B;](https://www.aem.live/developer/tutorial) - Utile si vous êtes un débutant dans les projets AEM et Edge Delivery Services
 * [Création de documents](https://da.live) - Utile si vous êtes un débutant dans la création de documents pour la gestion de contenu
