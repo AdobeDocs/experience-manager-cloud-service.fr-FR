@@ -1,20 +1,20 @@
 ---
-title: Notes de mise à jour de l’éditeur universel version 2026.02.26
-description: Il s’agit des notes de mise à jour de la version 2026.02.26 de l’éditeur universel.
+title: Notes de mise à jour de l’éditeur universel version 2026.03.05
+description: Il s’agit des notes de mise à jour de la version 2026.03.05 de l’éditeur universel.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 53f77d76fc43932e16cd36e47435499f33513b18
+source-git-commit: 2148c2399c1d5121de155d512dba7eeed3315a31
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 32%
+source-wordcount: '178'
+ht-degree: 39%
 
 ---
 
 
-# Notes de mise à jour de l’éditeur universel version 2026.02.26 {#release-notes}
+# Notes de mise à jour de l’éditeur universel version 2026.03.05 {#release-notes}
 
-Voici les notes de mise à jour de la version du 26 février 2026 de l’éditeur universel.
+Voici les notes de mise à jour de la version du 5 mars 2026 de l’éditeur universel.
 
 >[!TIP]
 >
@@ -26,9 +26,8 @@ Voici les notes de mise à jour de la version du 26 février 2026 de l’éditeu
 
 ## Nouveautés {#what-is-new}
 
-* Des descriptions ont été ajoutées à tous les champs de schéma pour aider les développeurs à générer des fichiers de définition de modèle/filtre/composant.
-* Les mises à jour multichamps des fragments de contenu sont désormais prises en charge pour les modifications contextuelles.
-
+* [Le sélecteur de composants](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) a une nouvelle conception.
+* [Un sélecteur de couleurs](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) pour l’éditeur de texte enrichi est désormais disponible.
 
 ## Fonctionnalités d’adoption précoce {#early-adopter}
 
@@ -38,7 +37,5 @@ Si vous souhaitez tester les prochaines fonctionnalités répertoriées ci-desso
 
 ## Autres améliorations {#other-improvements}
 
-* L’éditeur ne définit plus le contenu par défaut sur `{}` avant la réception du contenu, ce qui empêche la perte de données dans certains cas.
-* La persistance des données lorsque le champ est ciblé a été rendue plus robuste.
-* Dans certains cas, les modifications ne sont plus perdues lors de la modification dans le panneau de gauche, puis de la sélection d’un autre élément dans la fenêtre de l’éditeur.
-* Correction d’un problème de persistance des champs de l’éditeur de texte enrichi pour les fragments de contenu lors de l’utilisation des points d’entrée OpenAPI.
+* Les options d’alignement, d’orientation du texte et de mise en retrait sont désormais [activées par défaut dans l’éditeur de texte enrichi](/help/implementing/universal-editor/configure-rte.md) à condition que votre serveur principal les prenne en charge.
+* Les onglets sont désormais rendus lors de l’utilisation d’un fragment de contenu avec API ouverte et schéma d’interface utilisateur.

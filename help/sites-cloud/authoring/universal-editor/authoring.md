@@ -6,10 +6,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 1de2a860d96397863312f62b3c3c73e6deddd9d8
 workflow-type: tm+mt
-source-wordcount: '2908'
-ht-degree: 11%
+source-wordcount: '2990'
+ht-degree: 10%
 
 ---
 
@@ -100,14 +100,17 @@ Appuyez ou cliquez sur **Annuler** ou **Terminé** pour ignorer ou enregistrer l
 
 #### Options de formatage de texte enrichi {#formatting-options}
 
-L’éditeur de texte enrichi (RTE) de l’éditeur universel permet à l’auteur d’appliquer une mise en forme de texte standard. Par défaut, les options suivantes sont disponibles.
+L’éditeur de texte enrichi (RTE) de l’éditeur universel permet à l’auteur d’appliquer une mise en forme de texte standard. Les options suivantes sont disponibles.
 
 * **Style de paragraphe**
-   * Paragramme, h1-h6, code
+   * Paragraphe, h1-h6, code
 * **Gras**
 * **Italique**
 * **Souligné**
 * **Barré**
+* **Couleur du texte**
+   * Ouvre une palette de couleurs dans laquelle vous pouvez sélectionner une couleur ou spécifier une valeur hexadécimale
+   * Disponible uniquement dans l’éditeur modal, et non dans le contexte
 * **Exposant**
 * **Indice**
 * **Liste à puces**
@@ -122,12 +125,21 @@ L’éditeur de texte enrichi (RTE) de l’éditeur universel permet à l’aute
    * Spécifiez une URL ou utilisez le [sélecteur de ressources](/help/assets/overview-asset-selector.md#using-asset-selector) pour sélectionner une ressource dans AEM.
 * **Tableau**
    * Utilisez la liste déroulante pour insérer un nouveau tableau du nombre de colonnes et de lignes sélectionné ou insérez et supprimez de nouvelles colonnes/lignes.
+* **Alignement**
+   * **Aligner à gauche**
+   * **Aligner au centre**
+   * **Aligner à droite**
+   * **Aligner la justification**
+* **De droite à gauche**
+* **De gauche à droite**
+* **Retrait**
+* **Ajouter un retrait négatif**
 * **Coller comme texte**
    * Supprimez la mise en forme du texte du presse-papiers avant de le coller dans l’éditeur universel.
 * **Supprimer toute mise en forme**
    * Supprimez toutes les options de mise en forme du texte sélectionné.
 
-L’éditeur de texte enrichi peut être configuré pour masquer des options ou afficher des options supplémentaires en fonction des besoins des auteurs. Consultez le document [Configuration de l’éditeur de texte enrichi pour l’éditeur universel](/help/implementing/universal-editor/configure-rte.md) pour plus d’informations.
+Selon votre serveur principal, les options disponibles par défaut peuvent varier. L’éditeur de texte enrichi peut être configuré pour masquer des options ou afficher des options supplémentaires en fonction des besoins des auteurs. Consultez le document [Configuration de l’éditeur de texte enrichi pour l’éditeur universel](/help/implementing/universal-editor/configure-rte.md) pour plus d’informations.
 
 ### Modification de médias {#edit-media}
 
@@ -154,7 +166,7 @@ Si vous sélectionnez un champ associé à un fragment de contenu, le fragment d
 
 Les modifications sont automatiquement enregistrées une fois que le focus quitte le champ modifié dans le panneau des propriétés.
 
-Si vous souhaitez plutôt modifier votre fragment de contenu dans l’[éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md), appuyez ou cliquez sur le bouton [**Ouvrir dans l’éditeur de fragment de contenu** &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) dans le panneau des propriétés.
+Si vous souhaitez plutôt modifier votre fragment de contenu dans l’[éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md), appuyez ou cliquez sur le bouton [**Ouvrir dans l’éditeur de fragment de contenu** ](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) dans le panneau des propriétés.
 
 >[!TIP]
 >
@@ -164,7 +176,7 @@ Selon les besoins de votre workflow, vous pouvez modifier le fragment de contenu
 
 >[!NOTE]
 >
->L’éditeur universel[&#x200B; valide les champs des fragments de contenu en fonction de leurs modèles](/help/assets/content-fragments/content-fragments-models.md#validation), ce qui permet d’appliquer des règles d’intégrité des données telles que des modèles regex et des contraintes d’unicité.
+>L’éditeur universel[ valide les champs des fragments de contenu en fonction de leurs modèles](/help/assets/content-fragments/content-fragments-models.md#validation), ce qui permet d’appliquer des règles d’intégrité des données telles que des modèles regex et des contraintes d’unicité.
 >
 >Cela garantit que le contenu répond aux exigences métier spécifiques avant sa publication.
 
@@ -178,7 +190,13 @@ Selon les besoins de votre workflow, vous pouvez modifier le fragment de contenu
 
    ![Sélectionner l’icône d’ajout](assets/add-icon.png)
 
-1. Si plusieurs composants sont autorisés pour le conteneur, sélectionnez celui que vous souhaitez insérer dans la liste déroulante. Si un seul composant est autorisé, il est inséré automatiquement.
+1. La boîte de dialogue du sélecteur de composants s’ouvre.
+   * Utilisez la colonne de gauche pour filtrer les composants par catégorie ou utilisez la recherche pour filtrer par nom.
+   * Cliquez sur le nom du composant dans la colonne de droite pour l’insérer dans le conteneur.
+   * Si un seul composant est autorisé dans le conteneur, il est inséré automatiquement.
+   * Cliquez en dehors du sélecteur pour annuler l’insertion du composant.
+
+   ![Sélecteur de composant](assets/component-picker.png)
 
 Le composant est inséré dans le conteneur et peut être modifié dans l’éditeur.
 
@@ -223,7 +241,7 @@ Vous pouvez déplacer et réorganiser les composants à l’aide du menu context
    * Monter
    * Descendre
    * Descendre tout en bas
-     ![&#x200B; Déplacer les options dans le menu contextuel &#x200B;](assets/move-options-in-conext-menu.png)
+     ![ Déplacer les options dans le menu contextuel ](assets/move-options-in-conext-menu.png)
 
 Le composant est déplacé dans l’éditeur et dans l’arborescence de contenu.
 
@@ -257,8 +275,8 @@ Les composants sont réorganisés dans l’arborescence de contenu et dans l’�
 
 Sélectionnez les boutons Annuler ou Rétablir pour annuler ou rétablir la dernière modification dans l’éditeur.
 
-![&#x200B; Icône Annuler &#x200B;](assets/undo.png)
-![&#x200B; Icône Rétablir &#x200B;](assets/redo.png)
+![ Icône Annuler ](assets/undo.png)
+![ Icône Rétablir ](assets/redo.png)
 
 * Ces fonctions Annuler et Rétablir sont possibles pour les modifications effectuées en contexte, celles effectuées via le panneau Propriétés, ainsi que pour l’ajout, la duplication, le déplacement et la suppression de blocs.
 * Les fonctions Annuler et Rétablir sont limitées à la session de navigateur en cours.
@@ -273,7 +291,7 @@ Vous pouvez copier et coller des composants qui se trouvent dans des conteneurs 
 
 Les opérations copier-coller peuvent être effectuées sur le même onglet du navigateur ou entre des onglets du navigateur, à condition que ceux-ci soient déjà ouverts. Vous ne pouvez pas copier un élément, puis ouvrir un nouvel onglet du navigateur pour le coller.
 
-![&#x200B; Icône Copier &#x200B;](assets/copy.png)
+![ Icône Copier ](assets/copy.png)
 ![Icône Coller](assets/paste.png)
 
 1. Sélectionnez un composant dans l’éditeur ou dans l’arborescence de contenu.
@@ -389,7 +407,7 @@ Pour plus d’informations sur la manière d’activer cette extension, [consult
 
 L’extension **AEM Workflows** vous permet de [démarrer un workflow](/help/sites-cloud/authoring/workflows/overview.md) sur la page qui se trouve actuellement dans l’éditeur.
 
-![&#x200B; Icône Workflows &#x200B;](assets/workflows-icon.png)
+![ Icône Workflows ](assets/workflows-icon.png)
 
 Appuyez ou cliquez sur l’icône **Workflows** dans la barre d’outils de l’éditeur universel pour ouvrir la fenêtre modale **Démarrer un workflow**. La fenêtre répertorie le contenu possible auquel vous pouvez appliquer un workflow.
 
