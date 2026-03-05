@@ -1,11 +1,11 @@
 ---
 title: Propriétés du sélecteur de fragment de contenu micro front-end pour Adobe Experience Manager as a Cloud Service
 description: Propriétés pour configurer le sélecteur de fragments de contenu micro front-end afin de rechercher, rechercher et récupérer des fragments de contenu de votre application.
-role: Admin, User
+role: Admin, User, Developer
 exl-id: c81b5256-09fb-41ce-9581-f6d1ad316ca4
-source-git-commit: 74b9493fc3cdba4a1fc64d1137f5c50c6bebca0a
+source-git-commit: 86be8e53b77e8c7771f5a60b711a045128899acd
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1122'
 ht-degree: 4%
 
 ---
@@ -20,18 +20,19 @@ Vous pouvez utiliser les propriétés suivantes pour personnaliser le rendu du s
 
 | Propriété | Type | Requis | Valeur par défaut | Description |
 |--- |--- |--- |--- |--- |
-| `ref` | FragmentSelectorRef | | | Référence à l’instance `ContentFragmentSelector`, permettant l’accès aux fonctionnalités fournies telles que `reload`. |
+| `ref` | FragmentSelectorRef | Non | | Référence à l’instance `ContentFragmentSelector`, permettant l’accès aux fonctionnalités fournies telles que `reload`. |
 | `imsToken` | chaîne | Non | | Jeton IMS utilisé pour l’authentification. S’il n’est pas fourni, le flux de connexion IMS est lancé. |
 | `repoId` | chaîne | Non | | ID de référentiel utilisé pour le sélecteur de fragments. Lorsqu’il est fourni, le sélecteur se connecte automatiquement au référentiel spécifié et la liste déroulante du référentiel est masquée. S’il n’est pas fourni, l’utilisateur peut sélectionner un référentiel dans la liste des référentiels auxquels il a accès. |
+| `allowedRepositoryIds` | chaîne[] | Non | | Liste des identifiants de référentiel pour filtrer les référentiels et les fragments de contenu dans le sélecteur de fragments de contenu. Lorsqu’ils sont fournis avec des identifiants de référentiel, seuls ces référentiels sont visibles dans le sélecteur de référentiel. Si ce paramètre n’est pas fourni ou si le tableau est vide, tous les référentiels auxquels l’utilisateur a accès sont disponibles. |
 | `defaultRepoId` | chaîne | Non | | Identifiant du référentiel qui sera sélectionné par défaut lorsque le sélecteur de référentiel s’affiche. Utilisé uniquement lorsque `repoId` n’est pas fourni. Si `repoId` est défini, le sélecteur de référentiel est masqué et cette valeur est ignorée. |
-| `orgId` | chaîne | Non | | Identifiant de l’organisation utilisé pour l’authentification. S’il n’est pas fourni, l’utilisateur peut sélectionner un référentiel parmi les différentes organisations auxquelles il a accès. Si l’utilisateur n’a accès à aucun référentiel ou organisation, le contenu n’est pas chargé. |
-| `locale` | chaîne | Non | `en-US` | Paramètre régional. |
+| `orgId` | chaîne | Non | | Identifiant de l’organisation utilisé pour l’authentification. S’il n’est pas fourni, l’utilisateur peut sélectionner un référentiel parmi les différentes organisations auxquelles il a accès. Si l’utilisateur ou l’utilisatrice n’a accès à aucun référentiel ou organisation, le contenu n’est pas chargé. |
+| `locale` | chaîne | Non | « en-US » | Paramètre régional. |
 | `env` | chaîne | Non | | Environnement de déploiement. Voir le type de `Env` pour les noms d’environnement autorisés. |
 | `filters` | FragmentFilter | Non | `{ folder: "/content/dam" }` | Filtres à appliquer sur la liste des fragments de contenu. Par défaut, les fragments situés sous `/content/dam` s’affichent. |
 | `isOpen` | booléen | Non | `false` | Indicateur utilisé pour spécifier si le sélecteur est ouvert ou fermé. |
 | `noWrap` | booléen | Non | `false` | Détermine si le sélecteur de fragments est rendu sans boîte de dialogue d’encapsulation. Lorsqu’il est défini sur `true`, le sélecteur de fragments est directement incorporé au conteneur parent. Utile pour intégrer le sélecteur dans des mises en page ou des workflows personnalisés. |
 | `onSelectionChange` | ({ contentFragments : `ContentFragmentSelection`, domainName ? : `string`, tenantInfo ? : `string`, repoId ? : `string`, deliveryRepos ? : `DeliveryRepository[]` }) => void | Non | | Fonction de rappel déclenchée à chaque modification de la sélection de fragments de contenu. Fournit les fragments actuellement sélectionnés, le nom de domaine, les informations du client, l’identifiant de référentiel et les référentiels de diffusion. |
-| `onDismiss` | () => void | Non | | Fonction de rappel déclenchée lorsque l’action d’ignorance est effectuée ; par exemple, la fermeture du sélecteur. |
+| `onDismiss` | () => void | Non | | Fonction de rappel déclenchée lorsque l’action d’ignorance est effectuée (par exemple, fermeture du sélecteur). |
 | `onSubmit` | ({ contentFragments : `ContentFragmentSelection`, domainName ? : `string`, tenantInfo ? : `string`, repoId ? : `string`, deliveryRepos ? : `DeliveryRepository[]` }) => void | Non | | Fonction de rappel déclenchée lorsque l’utilisateur confirme sa sélection. Reçoit les fragments de contenu sélectionnés, le nom de domaine, les informations du client, l’identifiant de référentiel et les référentiels de diffusion. |
 | `theme` | « clair » ou « sombre » | Non | | Thème du sélecteur de fragments. Par défaut, il est défini sur le thème de l’environnement unifiedShell. |
 | `selectionType` | « single » ou « multiple » | Non | `single` | Le type de sélection peut être utilisé pour restreindre la sélection du sélecteur de fragments. |
@@ -52,7 +53,7 @@ Les propriétés `ImsAuthProps` définissent les informations d’authentificati
 | `imsClientId` | Valeur de chaîne représentant l’identifiant client IMS utilisé à des fins d’authentification. Cette valeur est fournie par Adobe et est spécifique à votre organisation Adobe AEM CS. |
 | `imsScope` | Décrit les portées utilisées dans l’authentification. Les portées déterminent le niveau d’accès de l’application aux ressources de votre organisation. Plusieurs portées peuvent être séparées par des virgules. |
 | `redirectUrl` | Représente l’URL de redirection de l’utilisateur après l’authentification. Cette valeur est généralement définie sur l’URL actuelle de l’application. Si un `redirectUrl` n’est pas fourni, `ImsAuthService` utilisera l’URL de redirection utilisée pour enregistrer le `imsClientId` |
-| `modalMode` | Valeur booléenne indiquant si le flux d’authentification doit être affiché dans une fenêtre modale (pop-up) ou non. S’il est défini sur `true`, le flux d’authentification s’affiche dans un pop-up. S’il est défini sur `false`, le flux d’authentification s’affiche lors d’un rechargement complet de la page.<br>**Remarque :** pour une meilleure expérience utilisateur, vous pouvez contrôler dynamiquement cette valeur si le pop-up du navigateur est désactivé. |
+| `modalMode` | Valeur booléenne indiquant si le flux d’authentification doit être affiché dans une fenêtre modale (pop-up) ou non. S’il est défini sur `true`, le flux d’authentification s’affiche dans un pop-up. S’il est défini sur `false`, le flux d’authentification s’affiche lors d’un rechargement complet de la page. _Remarque :_pour une meilleure expérience utilisateur, vous pouvez contrôler dynamiquement cette valeur si le pop-up du navigateur est désactivé. |
 | `onImsServiceInitialized` | Une fonction de rappel appelée lors de l’initialisation du service d’authentification Adobe IMS. Cette fonction accepte un paramètre, `service`, qui est un objet représentant le service Adobe IMS. Voir [`ImsAuthService`](#imsauthservice-ims-auth-service) pour plus d’informations. |
 | `onAccessTokenReceived` | Une fonction de rappel appelée lorsqu’un `imsToken` est reçu du service d’authentification Adobe IMS. Cette fonction accepte un paramètre, `imsToken`, qui est une chaîne représentant le jeton d’accès. |
 | `onAccessTokenExpired` | Fonction de rappel appelée lorsqu’un jeton d’accès a expiré. Cette fonction est généralement utilisée pour déclencher un nouveau flux d’authentification afin d’obtenir un nouveau jeton d’accès. |
@@ -65,7 +66,7 @@ La classe `ImsAuthService` gère le flux d’authentification pour le sélecteur
 | Nom de la fonction | Description |
 |--- |--- |
 | `isSignedInUser` | Détermine si l’utilisateur est actuellement connecté au service et renvoie une valeur booléenne en conséquence. |
-| `getImsToken` | Récupère les `imsToken` d’authentification de l’utilisateur actuellement connecté, qui peuvent être utilisées pour authentifier les requêtes adressées à d’autres services, tels que la génération de ressources _rendu._ |
+| `getImsToken` | Récupère les `imsToken` d’authentification de l’utilisateur actuellement connecté, qui peuvent être utilisées pour authentifier les requêtes adressées à d’autres services, tels que la génération du rendu de ressource. |
 | `signIn` | Lance le processus de connexion de l’utilisateur. Cette fonction utilise le `ImsAuthProps` pour afficher l’authentification dans un pop-up ou un rechargement complet de la page. |
 | `signOut` | Déconnecte l’utilisateur du service, invalide son jeton d’authentification et exige qu’il se reconnecte pour accéder aux ressources protégées. Appeler cette fonction recharge la page active. |
 | `refreshToken` | Actualise le jeton d’authentification de l’utilisateur actuellement connecté, ce qui empêche son expiration et garantit un accès ininterrompu aux ressources protégées. Renvoie un nouveau jeton d’authentification pouvant être utilisé pour les requêtes suivantes. |
