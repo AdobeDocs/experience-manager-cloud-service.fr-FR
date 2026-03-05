@@ -28,7 +28,7 @@ La prochaine version est prévue le vendredi 2 avril 2026.
 
 ## Nouveautés - Cloud Manager {#cloud-manager-whats-new}
 
-* **Cloud Manager prend désormais en charge une option** Effacer **pour les importations** Copie de contenu ****
+* **Cloud Manager prend désormais en charge une option** Effacer **pour les importations** Copie de contenu **&#x200B;**
 
   Lorsque vous activez **Effacer**, Cloud Manager supprime le contenu existant à la destination avant de démarrer l’importation, ce qui vous permet de repartir de zéro et d’éviter les conflits avec le contenu préexistant. Si vous laissez l’option **Effacer** désactivée, Cloud Manager importe le nouveau contenu en plus du contenu de destination existant. Une invite de confirmation s’affiche avant le début de l’effacement. Cloud Manager consigne l’action d’effacement et importe les détails pour en assurer la traçabilité.
 
