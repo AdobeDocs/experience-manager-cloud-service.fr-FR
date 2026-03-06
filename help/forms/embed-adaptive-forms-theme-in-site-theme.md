@@ -4,17 +4,17 @@ description: Découvrez comment intégrer un thème Forms adaptatif (par exemple
 keywords: thème de formulaires adaptatifs, thème de site, thème AEM Sites, intégration du thème forms, pipeline front-end, incorporation du thème
 feature: Adaptive Forms, Core Components
 role: Developer
-exl-id: a1f8c4d2-3e5b-4a2f-9b7e-2d4f6a8c1b0e
-source-git-commit: 2aa13887949507ab74c45b4b6f3135aebd59c6ea
+exl-id: 0607e11c-84d2-42cb-be9f-acd7c328a342
+source-git-commit: 343fc4fdc9b2947ff7771e3b74e77c679cf5c204
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '939'
 ht-degree: 1%
 
 ---
 
 # Incorporer un thème Forms adaptatif dans un thème AEM Sites
 
-Vous pouvez incorporer un thème Forms adaptatif (tel que le thème [Zone de travail AEM Forms](https://github.com/adobe/aem-forms-theme-canvas)) dans votre thème AEM Sites. Ainsi, un seul thème oriente à la fois les pages de votre site et tout Forms adaptatif incorporé dans ces pages, avec une version et un déploiement via le pipeline front-end [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html?lang=fr).
+Vous pouvez incorporer un thème Forms adaptatif (tel que le thème [Zone de travail AEM Forms](https://github.com/adobe/aem-forms-theme-canvas)) dans votre thème AEM Sites. Ainsi, un seul thème oriente à la fois les pages de votre site et tout Forms adaptatif incorporé dans ces pages, avec une version et un déploiement via le pipeline front-end [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html).
 
 Cet article est destiné aux développeurs qui gèrent ou personnalisent le thème AEM Sites standard (ou personnalisé) et qui souhaitent inclure le style de formulaire adaptatif sans gérer de déploiement de thème Forms distinct.
 
@@ -22,11 +22,15 @@ Cet article est destiné aux développeurs qui gèrent ou personnalisent le thè
 
 Avant de commencer, vérifiez que vous disposez des éléments suivants :
 
-* **AEM as a Cloud Service** avec le [pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html?lang=fr) configuré pour le thème de votre site.
+* **AEM as a Cloud Service** avec le [pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html) configuré pour le thème de votre site.
 * **Sources de thème du site** par exemple, le [thème standard du modèle de site](https://github.com/adobe/aem-site-template-standard) (le référentiel qui contient des `theme/` avec `src/theme.scss`, `src/components/`, etc.).
 * **Sources de thème Forms** - le [thème de la zone de travail AEM Forms](https://github.com/adobe/aem-forms-theme-canvas) (ou un autre thème de Forms adaptatif compatible) cloné ou téléchargé localement.
 * **Node.js et npm** - pour créer le thème du site (consultez la section « LISEZ-MOI le thème » pour les versions prises en charge).
 * **Maven** - si vous créez le package de modèle de site complet (facultatif pour le travail sur le thème uniquement).
+
+>[!NOTE]
+>
+>**Nom du thème :** lorsque vous incorporez un thème Forms dans le thème de votre site et que vous le déployez via le pipeline front-end, vous n’avez **besoin de modifier aucun nom de thème**. Les styles de formulaire font partie du thème de votre site existant, qui est créé et déployé avec son nom actuel. La modification du nom du thème (par exemple, dans `package.json`) n’est nécessaire que lorsque vous déployez un thème Forms **autonome** à partir d’un référentiel de thèmes dédié ; ce scénario est décrit dans [Utilisation des thèmes pour appliquer un style au Forms adaptatif basé sur les composants principaux](/help/forms/using-themes-in-core-components.md).
 
 ## Étape 1 : créer le dossier de composants de formulaire adaptatif {#step-1-create-folder}
 
@@ -58,6 +62,8 @@ En utilisant votre thème **Forms** (par exemple, `aem-forms-theme-canvas`) et v
    … (one folder per component)
    ```
 
+   ![ajouter des composants de formulaire adaptatif](/help/forms/assets/theme-add-adaptiveform-component.png)
+
 2. **Copier les images**\
    Copiez les images du thème Forms dans le thème du site :
 
@@ -67,6 +73,8 @@ En utilisant votre thème **Forms** (par exemple, `aem-forms-theme-canvas`) et v
    ```
 
    Créez des `theme/src/components/adaptiveform/resources/images/` s’ils n’existent pas, puis copiez toutes les ressources d’image (par exemple, `question.svg`, `Chevron-Left.svg`, `busy-state.gif`, etc.).
+
+   ![ajouter des images](/help/forms/assets/theme-add-images.png)
 
 ## Étape 3 : copie de variables et de mixins {#step-3-copy-variables-and-mixins}
 
@@ -79,17 +87,22 @@ Le thème Forms utilise des variables partagées et des mixins sous `src/site/`.
 
 Ne copiez **pas** le reste du dossier `src/site/` du thème Forms ; seuls ces deux fichiers sont nécessaires pour les styles de formulaires incorporés.
 
+![ajouter des variables et des mixins](/help/forms/assets/theme-add-mixin-variable.png)
+
 ## Étape 4 : correction des chemins d’accès aux images dans SCSS {#step-4-fix-image-paths}
 
-Dans le thème Forms, les fichiers SCSS de composant référencent souvent des images avec des chemins d’accès tels que `./resources/` ou `url(resources/`. Une fois déplacés dans `theme/src/components/adaptiveform/<component>/`, ces chemins doivent pointer d’un niveau vers `adaptiveform/resources/`.
+Dans le thème Forms, les fichiers SCSS de composant référencent souvent des images avec des chemins d’accès tels que `./resources/` ou `url(resources/`. Après avoir été copiés dans le thème du site, ces chemins doivent pointer vers `theme/src/components/adaptiveform/resources/images/`.
+
+Le **thème de modèle de site standard** utilise Parcel qui résout les chemins d’accès `url()` à partir de `theme/src/`. Ainsi, lorsque les images sont en `theme/src/components/adaptiveform/resources/images/`, utilisez le chemin **`components/adaptiveform/resources/images/`** (relatif à `theme/src/`).
 
 **Rechercher et remplacer** dans chaque `.scss` sous `theme/src/components/adaptiveform/` :
 
 | Rechercher | Remplacer par |
 |------|------------------|
-| `./resources/` | `../resources/` |
-| `url(resources/` | `url(../resources/` |
-| `url('resources/` | `url('../resources/` |
+| `./resources/` | `components/adaptiveform/resources/` |
+| `url(resources/` | `url(components/adaptiveform/resources/` |
+| `url('resources/` | `url('components/adaptiveform/resources/` |
+| `url(../resources/` | `url(components/adaptiveform/resources/` |
 
 **Exemple** - avant (thème Forms) :
 
@@ -99,15 +112,17 @@ Dans le thème Forms, les fichiers SCSS de composant référencent souvent des i
 }
 ```
 
-**Après** (thème du site) :
+**Après** (thème du site, images dans `adaptiveform/resources/images/`) :
 
 ```scss
 .cmp-adaptiveform-button__questionmark {
-  background: url(../resources/images/question.svg) center center / cover no-repeat, #969696;
+  background: url(components/adaptiveform/resources/images/question.svg) center center / cover no-repeat, #969696;
 }
 ```
 
-Après le remplacement, ceux-ci deviennent respectivement `url(../resources/images/...)` et `url('../resources/images/...')`. Répétez l’opération pour chaque fichier SCSS sous `adaptiveform/` qui référence des images (bouton, accordéon, assistant, conteneur, saisie tactile, etc.).
+![Modifier l’URL des images](/help/forms/assets/theme-change-url.png)
+
+Répétez l’opération pour chaque fichier SCSS sous `adaptiveform/` qui référence des images (bouton, accordéon, assistant, conteneur, saisie tactile, etc.). Il est recommandé de rechercher/remplacer dans votre IDE sur `theme/src/components/adaptiveform/` à l’échelle du projet.
 
 ## Étape 5 : créer le SCSS de point d’entrée du formulaire adaptatif {#step-5-create-adaptiveform-scss}
 
@@ -157,6 +172,8 @@ Utilisez les éléments suivants comme point d’entrée complet (correspond à 
 @import './datetime/_datetime.scss';
 ```
 
+![formulaire adaptatif scss](/help/forms/assets/theme-adaptive-form-scss.png)
+
 Si votre thème Forms omet certains composants (par exemple, aucune saisie tactile ou captcha), supprimez ou commentez les lignes de `@import` correspondantes pour éviter les erreurs de création. La liste ci-dessus correspond à la structure [Thème de la zone de travail](https://github.com/adobe/aem-forms-theme-canvas).
 
 ## Étape 6 : importer le thème du formulaire adaptatif dans le thème du site {#step-6-import-in-theme-scss}
@@ -180,6 +197,8 @@ Dans **`theme/src/theme.scss`**, ajoutez une seule importation à la **fin** du 
 @import './components/adaptiveform/_adaptiveform.scss';
 ```
 
+![ajouter un formulaire adaptatif scss](/help/forms/assets/theme-add-adaptive-form-scss-theme.png)
+
 Il s’agit de la seule modification requise dans la structure de thème de site existante ; tout le code spécifique au formulaire reste sous `src/components/adaptiveform/`.
 
 ## Étape 7 : créer et déployer {#step-7-build-and-deploy}
@@ -192,13 +211,15 @@ Il s’agit de la seule modification requise dans la structure de thème de site
    npm run build
    ```
 
-2. Effectuez le déploiement via votre [pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html?lang=fr) existant. Après le déploiement, le même thème CSS s’applique aux pages du site et au Forms adaptatif incorporé.
+   ![exécuter la version](/help/forms/assets/theme-mpm-run-build.png)
+
+2. Effectuez le déploiement via votre [pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html) existant. Après le déploiement, le même thème CSS s’applique aux pages du site et au Forms adaptatif incorporé.
 
 ## Résolution des problèmes {#troubleshooting}
 
 | Problème | Éléments à vérifier |
 |-------|-------------------------------|
-| Échec de la création : « fichier introuvable » pour une image | Placez toutes les images de formulaire dans `theme/src/components/adaptiveform/resources/images/`. Dans chaque `.scss` sous `adaptiveform/`, utilisez `../resources/` (et `url(../resources/`) pour les chemins d’accès aux images, et non `./resources/`. Si votre lot résout les chemins d’accès depuis `theme/src/`, placez les images dans `theme/src/resources/images/` et utilisez `resources/images/` (pas de `../`) dans SCSS. |
+| Échec de la création : « fichier introuvable » pour une image | Assurez-vous que toutes les images de formulaire sont `theme/src/components/adaptiveform/resources/images/`. Dans chaque `.scss` sous `adaptiveform/`, utilisez `url(components/adaptiveform/resources/images/...)` afin que le chemin d’accès soit résolu à partir de `theme/src/` (obligatoire pour la version de thème de site standard avec Parcel). N’utilisez pas `../resources/` ou `resources/` seul, sauf si votre bundler résout les chemins d’accès par fichier ; utilisez ensuite le chemin d’accès correspondant à votre dossier d’images. |
 | Échec de la création : « fichier introuvable » pour `_variables.scss` ou `_mixin.scss` | Copiez les deux fichiers du `src/site/` de thème Forms dans `theme/src/components/adaptiveform/` (racine du formulaire adaptatif), et non dans un sous-dossier `site`. |
 | Échec de la création : « fichier introuvable » pour un composant (par exemple, `_scribble.scss`) | Votre thème Forms peut ne pas inclure ce composant. Dans `theme/src/components/adaptiveform/_adaptiveform.scss`, supprimez ou mettez en commentaire la ligne de `@import` de ce composant. |
 | Le formulaire s’affiche, mais ne comporte aucun style. | Vérifiez que la page utilise la bibliothèque cliente qui inclut le thème créé CSS et que `theme.scss` contient la ligne de `@import './components/adaptiveform/_adaptiveform.scss';` et que le thème a été recréé et déployé. |
@@ -207,4 +228,4 @@ Il s’agit de la seule modification requise dans la structure de thème de site
 ## Voir également {#see-also}
 
 * [Utilisation des thèmes pour appliquer un style au Forms adaptatif basé sur les composants principaux](/help/forms/using-themes-in-core-components.md)
-* [Développement avec des pipelines front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html?lang=fr)
+* [Développement avec des pipelines front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html)
