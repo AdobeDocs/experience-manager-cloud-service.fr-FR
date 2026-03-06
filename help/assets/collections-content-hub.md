@@ -30,7 +30,7 @@ Une collection fait référence à un ensemble de ressources pouvant être parta
 
 Il permet aux utilisateurs et utilisatrices d’accéder facilement aux différentes ressources disponibles dans [!DNL Content Hub] et de les gérer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3445302/?captions=fre_fr&learn=on){transcript=true}
 
 ## Conditions préalables {#prerequisites}
 

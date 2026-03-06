@@ -28,7 +28,7 @@ Voici quelques-uns des principaux avantages du contrôle d’accès basé sur le
 
 * Réduit le nombre de doublons - améliore l’intégrité des ressources. Des doublons sont nécessaires dans les autorisations basées sur des dossiers lorsqu’une même ressource est partagée avec différents groupes.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3475416/?captions=fre_fr&learn=on&enablevpops){transcript=true}
 
 ## Comment activer le contrôle d’accès basé sur les attributs ? {#enable-attribute-based-access-control}
 
