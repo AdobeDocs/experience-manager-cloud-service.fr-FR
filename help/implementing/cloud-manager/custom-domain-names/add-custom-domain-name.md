@@ -5,9 +5,9 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 423901f8bac198e875d342d10a9b3b80c20b56c5
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1123'
 ht-degree: 16%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 16%
 
 # Ajouter un nom de domaine personnalisé {#adding-custom-domain-name}
 
-Découvrez comment ajouter un nom de domaine personnalisé à l’aide de **Paramètres de domaine** dans Cloud Manager.
+Vous pouvez ajouter un nom de domaine personnalisé à l’aide de **Paramètres du domaine** dans Cloud Manager.
 
 ## Exigences {#requirements}
 
@@ -35,9 +35,13 @@ Vous pouvez ajouter un nom de domaine personnalisé à partir de la page [Param�
 
 Lors de l’ajout d’un nom de domaine personnalisé, le domaine est diffusé en utilisant le certificat valide le plus spécifique. Si plusieurs certificats possèdent le même domaine, la mise à jour la plus récente est choisie. Adobe vous recommande de gérer les certificats de sorte qu’il n’y ait pas de domaines qui se chevauchent.
 
-Les étapes des deux méthodes décrites dans ce document sont basées sur Fastly. Si vous avez utilisé un autre réseau de diffusion de contenu (CDN), configurez votre domaine avec le CDN que vous avez choisi d’utiliser.
+Les étapes de chacune des méthodes décrites dans cet article sont basées sur Fastly. Si vous avez utilisé un autre réseau de diffusion de contenu (CDN), configurez votre domaine avec le CDN que vous avez choisi d’utiliser.
 
 ## Ajouter un nom de domaine personnalisé {#adding-custom-domain-name-settings}
+
+Voir aussi [Réseau CDN géré par Adobe](https://www.aem.live/docs/byo-cdn-adobe-managed) pour *Edge Delivery Services*.
+
+**Pour ajouter un nom de domaine personnalisé, procédez comme suit**
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
@@ -59,9 +63,11 @@ Lors de la saisie du nom de domaine, n’incluez pas de `http://`, de `https://`
 
 1. Cliquez sur **Créer**.
 
+1. Sur la page **Paramètres du domaine**, à droite du nom de domaine, cliquez sur ![Ellipse - icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), puis sur **Vérifier**.
+
 1. Dans la boîte de dialogue **Vérifier le domaine**, dans la zone **Quel type de certificat prévoyez-vous d’utiliser avec ce domaine ?** la liste déroulante, sélectionnez l’une des options suivantes :
 
-   | Option de type de certificat | Description |
+   | Type de certificat | Description |
    | --- | --- |
    | Certificat SSL géré par Adobe (DV) | Sélectionnez ce type de certificat si vous souhaitez utiliser un certificat DV (Validation de domaine). Cette option est idéale dans la plupart des cas, car elle fournit une validation de domaine de base. Adobe gère et renouvelle automatiquement le certificat. |
    | Certificat SSL géré par le client (OV/EV) | Sélectionnez ce type de certificat si vous envisagez d’utiliser un certificat SSL EV/OV pour sécuriser le domaine. Cette option offre une sécurité renforcée avec OV (validation de l’organisation) ou EV (validation étendue). Utilisez si une vérification plus stricte, des niveaux de confiance plus élevés ou un contrôle personnalisé des certificats est requis. |
