@@ -3,9 +3,9 @@ title: Rechercher des ressources dans le hub de contenus
 description: Découvrez comment rechercher des ressources dans  [!DNL Content Hub]
 role: User
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: 95d7935142e26b717e2c33a2bd0e8e2c2f52a623
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '1010'
 ht-degree: 1%
 
 ---
@@ -167,5 +167,20 @@ Pour effectuer une recherche en bloc dans le [!DNL Content Hub], procédez comme
 [!DNL The Content Hub] ne se limite pas à la recherche. Il vous permet plutôt d’effectuer des actions supplémentaires, telles que [télécharger](download-assets-content-hub.md), [partager](share-assets-content-hub.md) et [ajouter des ressources à la collection](collections-content-hub.md), directement à partir de l’interface de recherche ou de prévisualisation. Sélectionnez les ressources sur la page des résultats de la recherche pour afficher ces options.
 
 En savoir plus sur la [configuration des ressources dans la  [!DNL Content Hub]](configure-content-hub-ui-options.md).
+
+## Questions fréquemment posées {#faqs-deploy-content-hub}
+
+### Comment puis-je affiner mes résultats de recherche dans AEM Assets Content Hub ?
+
+Vous pouvez affiner les résultats de la recherche dans Content Hub à l’aide d’une recherche textuelle, en appliquant divers filtres (tels que le format de fichier, le statut d’approbation, la date de modification, etc.), en effectuant une recherche par balises ou balises intelligentes, et en utilisant le panneau Filtres. La combinaison de plusieurs prédicats ou options de filtre vous permet de cibler précisément les ressources dont vous avez besoin.
+
+### Puis-je effectuer une recherche en bloc de plusieurs ressources à la fois dans AEM Assets Content Hub ?
+
+Oui, vous pouvez effectuer une recherche en bloc dans Content Hub en saisissant plusieurs valeurs (telles que des noms, des formats de fichiers, des balises) séparées par des délimiteurs spécifiés. La fonctionnalité de recherche en bloc vous permet de trouver rapidement plusieurs ressources dans une seule requête, ce qui la rend plus efficace que la recherche de ressources une par une.
+
+
+### Les administrateurs peuvent-ils personnaliser les filtres disponibles dans la recherche AEM Assets Content Hub ?
+
+Oui, les administrateurs peuvent utiliser l’interface utilisateur de configuration d’AEM Assets Content Hub pour configurer les filtres disponibles dans l’interface de recherche. Bien que les filtres par défaut incluent le format de fichier, le statut d’approbation, la date d’expiration, etc., les administrateurs et administratrices peuvent adapter ces options aux besoins de l’entreprise.
 
 

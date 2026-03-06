@@ -3,10 +3,10 @@ title: Gestion des collections dans Content Hub
 description: Découvrez comment gérer les collections dans Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+source-git-commit: 12bb550ff275c84bc60869e91e953993aab57aa5
 workflow-type: tm+mt
-source-wordcount: '1295'
-ht-degree: 2%
+source-wordcount: '1914'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ Une collection fait référence à un ensemble de ressources pouvant être parta
 
 Il permet aux utilisateurs et utilisatrices d’accéder facilement aux différentes ressources disponibles dans [!DNL Content Hub] et de les gérer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3445302/?captions=fre_fr&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on){transcript=true}
 
 ## Conditions préalables {#prerequisites}
 
@@ -198,3 +198,54 @@ Vous pouvez marquer les collections comme Favoris dans Content Hub, ce qui facil
    Les collections marquées comme Favoris s’affichent désormais sous l’onglet **[!UICONTROL Mes favoris]**. Vous pouvez également supprimer les collections de **[!UICONTROL Mes favoris]**. Pour ce faire, cliquez sur **[!UICONTROL Autres actions]** ![Icône Autres actions](assets/do-not-localize/more-actions.png) et sélectionnez **[!UICONTROL Supprimer des favoris]**.
 
    ![Supprimer la collection des favoris](assets/remove-favorite-collection.png)
+
+## Questions fréquemment posées {#faqs-manage-collections-content-hub}
+
+### Comment appelle-t-on les collections dans AEM Assets Content Hub ?
+
+Une collection dans AEM Assets Content Hub fait référence à un ensemble de ressources qui peuvent être partagées entre les utilisateurs. Les collections peuvent inclure des ressources provenant de différents emplacements tout en conservant leur intégrité référentielle. Ils créent un espace partagé permettant aux utilisateurs et utilisatrices d’accéder efficacement au contenu et de l’utiliser.
+
+### Comment créer une nouvelle collection dans AEM Assets Content Hub ?
+
+Pour créer une nouvelle collection dans AEM Assets Content Hub, accédez à l&#39;onglet Collections et cliquez sur **Créer une collection**. Dans la nouvelle fenêtre Collection , ajoutez un Titre et une Description, sélectionnez le type de contrôle d’accès sous la liste déroulante **Qui peut accéder**, puis cliquez sur **Créer**. Vous pouvez ensuite ajouter des ressources à la collection.
+
+### Quels types de contrôle d’accès sont disponibles lors de la création d’une collection ?
+
+Il existe trois types de contrôle d’accès : **Privé** - Seul le créateur et les administrateurs peuvent modifier et accéder, **Public** - Affichage uniquement - Tout le monde peut afficher, mais seuls le créateur et les administrateurs peuvent modifier, et **Public** - Affichage et modification - Tout le monde peut accéder à la collection et la modifier sans restriction.
+
+### Qui peut effectuer des actions sur les collections dans Content Hub ?
+
+Les utilisateurs de Content Hub peuvent effectuer des actions telles que la création, l’affichage, le partage, le téléchargement, la suppression, l’épinglage de collections et leur marquage en tant que favoris. Les administrateurs disposent de droits supplémentaires, tels que l’affichage de toutes les options d’accès et la suppression de collections.
+
+### Comment ajouter des ressources à une collection existante dans AEM Assets Content Hub ?
+
+Sélectionnez les ressources à ajouter, cliquez sur **Ajouter à la collection**, puis sélectionnez la collection dans la liste. Vous pouvez également rechercher des collections à l’aide de la barre de recherche. Cliquez sur **Ajouter à la collection** pour confirmer l’action.
+
+### Les collections peuvent-elles être filtrées et recherchées dans AEM Assets Content Hub ?
+
+Oui, les collections peuvent être filtrées et recherchées dans AEM Assets Content Hub par nom, autorisation d’accès ou créateur ou créatrice. Les filtres incluent des options telles que **Toutes les collections**, **Moi seul**, **Tout le monde peut afficher**, **Tout le monde peut modifier**, **Créé par tout le monde** et **Créé par moi**.
+
+### Comment télécharger des ressources d’une collection dans AEM Assets Content Hub ?
+
+Pour télécharger des ressources à partir d’une collection dans AEM Assets Content Hub, accédez à l’onglet **Collections** et cliquez sur l’icône de téléchargement sur la carte de collection pour télécharger toutes les ressources. Vous pouvez également ouvrir la collection, sélectionner des ressources individuelles, puis cliquer sur **Télécharger** pour les télécharger séparément.
+
+### Comment les ressources peuvent-elles être partagées à partir d’une collection dans AEM Assets Content Hub ?
+
+Assets peut être partagé en activant le partage de liens public dans Content Hub. Sélectionnez l’icône de partage sur la carte de la ressource pour copier le lien de partage, qui peut ensuite être envoyé aux destinataires. Les collections privées ne peuvent pas être partagées.
+
+### Qui peut supprimer des ressources d’une collection dans AEM Assets Content Hub ?
+
+Un propriétaire de la collection, un administrateur ou un utilisateur non administrateur disposant de droits de modification peut supprimer une ou plusieurs ressources d’une collection. Pour supprimer, sélectionnez les ressources, cliquez sur **Supprimer de la collection**, puis confirmez la suppression.
+
+### Qui est autorisé à supprimer une collection d’AEM Assets Content Hub et comment s’y prend-il ?
+
+Seuls les administrateurs et le créateur d’une collection peuvent la supprimer. Pour supprimer, accédez à l’onglet Collections , sélectionnez la collection, puis cliquez sur l’icône de suppression. La collection est supprimée d’AEM Assets Content Hub.
+
+### Quelles sont les options qu’un administrateur peut configurer pour les collections dans AEM Assets Content Hub ?
+
+L’administrateur peut activer ou désactiver les options suivantes pour les collections dans AEM Assets Content Hub :
+
+* Activez le bouton (bascule) **Afficher uniquement les collections** pour autoriser les collections accessibles à tous, mais modifiables uniquement par le créateur et l’administrateur.
+
+* Activez le bouton (bascule) **Collections publiques** pour autoriser les collections qui sont à la fois accessibles et modifiables par tout le monde. Si les bascules **Afficher uniquement les collections** et **Collections publiques** sont désactivées, alors par défaut, les utilisateurs non-administrateurs peuvent créer uniquement des collections privées.
+

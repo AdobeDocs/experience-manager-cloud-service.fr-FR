@@ -3,10 +3,10 @@ title: Aperçu de la ressource et de ses propriétés dans  [!DNL the Content Hu
 description: Découvrez comment prévisualiser des ressources et des propriétés dans  [!DNL Content Hub]
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: 44e9c1f016bfdad909d9e2aa1c9a301dcecd763b
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 11%
+source-wordcount: '971'
+ht-degree: 7%
 
 ---
 
@@ -109,9 +109,9 @@ Certaines propriétés des ressources affichées dans [!DNL Content Hub] sont d�
 
 <!--* **Tags:** Tags help you categorize assets that can be browsed and searched more efficiently. Tagging helps in propagating the appropriate taxonomy to other users and workflows. -->
 
-* **Balises intelligentes :** [!DNL The Content Hub] utilise les services de contenu dynamique de l’IA dédiée à Adobe pour entraîner des ressources à l’aide de l’algorithme de reconnaissance sur la structure basée sur les balises. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes. Les balises intelligentes augmentent la vitesse du contenu de vos projets en vous permettant de trouver rapidement les ressources appropriées. Les balises intelligentes sont un exemple d’informations de ressource qui ne sont pas contenues dans l’image. [!DNL Experience Manager Assets] applique automatiquement les balises intelligentes aux ressources, par défaut.
+* **Balises intelligentes :** [!DNL The Content Hub] utilise les services de contenu dynamique d’Adobe AI pour entraîner des ressources à l’aide de l’algorithme de reconnaissance sur la structure basée sur les balises. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes. Les balises intelligentes augmentent la vitesse du contenu de vos projets en vous permettant de trouver rapidement les ressources appropriées. Les balises intelligentes sont un exemple d’informations de ressource qui ne sont pas contenues dans l’image. [!DNL Experience Manager Assets] applique automatiquement les balises intelligentes aux ressources, par défaut.
 
-* **Balises de couleurs :** [Balises de couleurs](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=fr) permet de reconnaître une ressource à l’aide de couleurs automatiquement identifiées dans une ressource à l’aide des fonctionnalités de l’IA d’Adobe.
+* **Balises de couleurs :** [Balises de couleurs](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) permet de reconnaître une ressource à l’aide de couleurs automatiquement identifiées dans une ressource à l’aide des fonctionnalités de l’IA d’Adobe.
 
 * Date du chargement
 
@@ -135,3 +135,27 @@ L’administration peut également configurer les propriétés affichées pour c
 The date range allows you to select dates you want to see the assets. You can customize date range by choosing the start and end dates. 
 
 -->
+
+## Questions fréquemment posées {#faqs-asset-properties-content-hub}
+
+### Pourquoi prévisualiser des ressources et leurs propriétés dans AEM Assets Content Hub ?
+
+L’aperçu des ressources et de leurs propriétés dans Content Hub permet aux utilisateurs d’afficher en détail les détails des ressources, qui sont essentiels pour une distribution et une gestion efficaces des ressources. À mesure que les informations numériques se développent, le simple fait de dépendre des noms de fichier et des miniatures devient inévolutif. L’affichage des propriétés détaillées permet de classer les ressources, de les rendre plus accessibles, plus faciles à utiliser et de s’assurer que les informations sont complètes pour tous les utilisateurs et utilisatrices.
+
+### Comment puis-je afficher les propriétés d’une ressource dans AEM Assets Content Hub et interagir avec elles ?
+
+Pour afficher les propriétés d’une ressource dans Content Hub, accédez à la ressource ou recherchez-la, puis cliquez dessus pour afficher sa page de propriétés. Ici, vous pouvez effectuer un zoom avant ou arrière sur l’aperçu, annuler le zoom, déplacer vers les ressources précédentes ou suivantes, télécharger la ressource, la modifier avec Adobe Express, l’ajouter à une collection ou fermer l’aperçu. La page de propriétés affiche des informations détaillées telles que le titre, le format, la taille, la résolution, les balises, les balises de couleur et les balises intelligentes.
+
+### Que sont les propriétés dérivées dans AEM Assets Content Hub et comment sont-elles générées ?
+
+Les propriétés dérivées dans Content Hub sont automatiquement générées lorsque des ressources sont chargées et approuvées. Il s’agit par exemple de la taille de la ressource, des balises intelligentes et des balises de couleur. Les balises intelligentes utilisent les services de contenu dynamique d’Adobe AI pour reconnaître et appliquer automatiquement les balises pertinentes, ce qui améliore la visibilité des ressources. Les balises de couleurs sont également automatiquement identifiées à l’aide de l’IA, ce qui permet aux utilisateurs de reconnaître les ressources en fonction de leurs couleurs proéminentes.
+
+### Les administrateurs peuvent-ils personnaliser les propriétés des ressources visibles dans Content Hub ?
+
+Oui, les administrateurs ont la possibilité de configurer les propriétés affichées pour chaque ressource dans le Content Hub. Vous pouvez le faire pour l’interface utilisateur d’aperçu de ressources et pour les cartes de ressources dans les résultats de recherche ou les collections, en veillant à ce que les utilisateurs voient les informations les plus pertinentes en fonction des besoins.
+
+### Quels sont les formats de fichiers pris en charge pour la prévisualisation des ressources ?
+
+Les formats de fichiers pris en charge sont les suivants : JPEG et PNG pour les images, Quicktime, MP4 et MPEG pour les vidéos, TXT, DOC/DOCX et XML pour les documents et PDF pour les médias imprimés.
+
+

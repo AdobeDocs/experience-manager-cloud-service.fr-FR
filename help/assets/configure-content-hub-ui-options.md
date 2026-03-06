@@ -2,10 +2,10 @@
 title: Configurer l’interface d’utilisation du hub de contenus
 description: Configurer l’interface d’utilisation du hub de contenus
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+source-git-commit: 30dc2465aacf9d586755a1aa69cc473f237d0103
 workflow-type: tm+mt
-source-wordcount: '2265'
-ht-degree: 10%
+source-wordcount: '2815'
+ht-degree: 9%
 
 ---
 
@@ -35,7 +35,7 @@ Experience Manager Assets permet à l’équipe d’aministration de configurer 
 
 * Tous les liens personnalisés que vous devez inclure sur Content Hub en plus des ressources, des collections et des informations.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472948/?captions=fre_fr&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
 
 ## Conditions préalables {#prerequisites-configuration-ui}
 
@@ -193,8 +193,8 @@ En tant qu’administrateur, personnalisez votre portail [!DNL Content Hub] pour
 ![réinitialiser la valeur par défaut](/help/assets/assets/reset-default-content-hub.png)
 Sur la page ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]**, utilisez les sections **[!UICONTROL Bannière]**, **[!UICONTROL Couleurs]** et **[!UICONTROL Image de bannière]** pour exécuter les personnalisations suivantes :
 
-1. [Modifiez l’image du logo à partir de la section [!UICONTROL &#x200B; Image du logo &#x200B;]](#Change-the-logo-image)
-1. [Modifiez l’image de bannière à partir de la section [!UICONTROL &#x200B; Image de bannière &#x200B;]](#Change-the-banner-image)
+1. [Modifiez l’image du logo à partir de la section [!UICONTROL  Image du logo ]](#Change-the-logo-image)
+1. [Modifiez l’image de bannière à partir de la section [!UICONTROL  Image de bannière ]](#Change-the-banner-image)
 1. [Mettez à jour le titre et le texte du corps de la bannière et modifiez la couleur du texte dans la section [!UICONTROL Bannière]](#Add-title-and-body-text-to-your-banner-and-change-the-text-color)
 1. [Modifiez la couleur principale et secondaire de la section [!UICONTROL Couleurs] pour appliquer un jeu de couleurs qui s’aligne sur le thème de votre marque](#Change-the-primary-and-secondary-color)
 
@@ -232,9 +232,9 @@ Cliquez sur la zone carrée en regard de la **[!UICONTROL Couleur du texte de ba
 
 Sur la page ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]**, utilisez la section **[!UICONTROL Couleurs]** pour définir les couleurs primaires et secondaires en les sélectionnant à l’aide du sélecteur de couleurs ou en définissant le code hexadécimal de la couleur. Ces couleurs définissent les couleurs d’arrière-plan, de texte et d’icône des éléments de l’interface utilisateur pour aligner votre interface utilisateur [!DNL Content Hub] avec le thème de votre marque.
 ![couleur primaire et secondaire](/help/assets/assets/primary-secondary-color-content-hub1.png)
-**[!UICONTROL Couleur du Principal &#x200B;]:** Le jeu de couleurs principal s’applique aux actions de sélection, aux éléments interactifs tels que les cases à cocher, les barres de recherche et les commutateurs à travers les [!DNL Content Hub], y compris [!DNL Content Hub] page d’accueil et la page [!UICONTROL Configuration]. Elle s’applique également aux options d’action disponibles sur les interfaces de [!DNL Content Hub] principales, telles que les options disponibles sur les pages **[!UICONTROL Toutes les Assets]** et **[!UICONTROL Collections]**.
+**[!UICONTROL Couleur du Principal ]:** Le jeu de couleurs principal s’applique aux actions de sélection, aux éléments interactifs tels que les cases à cocher, les barres de recherche et les commutateurs à travers les [!DNL Content Hub], y compris [!DNL Content Hub] page d’accueil et la page [!UICONTROL Configuration]. Elle s’applique également aux options d’action disponibles sur les interfaces de [!DNL Content Hub] principales, telles que les options disponibles sur les pages **[!UICONTROL Toutes les Assets]** et **[!UICONTROL Collections]**.
 
-**[!UICONTROL Couleur Secondaire &#x200B;]:** Sur la page d&#39;accueil [!DNL Content Hub], le jeu de couleurs secondaire s&#39;applique aux options de l&#39;interface utilisateur et aux champs de saisie disponibles dans les boîtes de dialogue. Elle s’applique à toutes les options de menu de configuration disponibles sur la page [!UICONTROL Configuration], à l’exception des actions de sélection, des cases à cocher, des barres de recherche et des commutateurs.
+**[!UICONTROL Couleur Secondaire ]:** Sur la page d&#39;accueil [!DNL Content Hub], le jeu de couleurs secondaire s&#39;applique aux options de l&#39;interface utilisateur et aux champs de saisie disponibles dans les boîtes de dialogue. Elle s’applique à toutes les options de menu de configuration disponibles sur la page [!UICONTROL Configuration], à l’exception des actions de sélection, des cases à cocher, des barres de recherche et des commutateurs.
 
 ### Visibilité des ressources{#asset-visibility-content-hub}
 
@@ -264,7 +264,7 @@ Si la visibilité des ressources arrivées à expiration est activée, Content H
 
 ### Rendus {#renditions-content-hub}
 
-Les rendus sont des versions personnalisées des ressources numériques, telles que les images, les documents, etc., conçues pour différents appareils et plateformes afin d’assurer des performances optimales. En savoir plus sur les [rendus dans Adobe Experience Manager Assets](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+Les rendus sont des versions personnalisées des ressources numériques, telles que les images, les documents, etc., conçues pour différents appareils et plateformes afin d’assurer des performances optimales. En savoir plus sur les [rendus dans Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Pour cela, procédez comme suit :
 
@@ -329,3 +329,59 @@ Enable the following setting on the Configurations user interface to allow Conte
 
 En savoir plus sur le [partage de ressources dans la  [!DNL Content Hub]](share-assets-content-hub.md).
 
+## Questions fréquemment posées {#faqs-content-hub-upload-assets}
+
+### Qui peut accéder aux paramètres de l’interface utilisateur d’AEM Assets Content Hub et les configurer ?
+
+Seuls les utilisateurs disposant de droits d’administrateur Content Hub peuvent accéder aux paramètres de l’interface utilisateur de Content Hub et les configurer. Les autorisations administratives doivent être accordées via le Adobe Admin Console avant d’accéder à l’interface de configuration.
+
+### Que peuvent configurer les administrateurs dans l’interface utilisateur d’AEM Assets Content Hub ?
+
+Les administrateurs peuvent configurer le paramètre suivant dans l’interface utilisateur de configuration d’AEM Assets Content Hub :
+
+* Importer des champs de métadonnées (y compris les champs obligatoires et les paramètres d’approbation automatique)
+
+* Filtres de recherche affichés sur la page de recherche
+
+* Champs de métadonnées pouvant faire l’objet d’une recherche utilisés pour l’indexation
+
+* Métadonnées de la carte des ressources (jusqu’à six champs affichés sur les cartes)
+
+* Propriétés de la vue des détails de la ressource
+
+* Éléments de branding (logo, texte de bannière, couleurs, image de bannière)
+
+* Règles de visibilité des ressources (y compris le comportement des ressources expirées)
+
+* Options de rendu et de téléchargement
+
+* Liens de navigation personnalisés (onglets externes)
+
+* Paramètres de collecte et de partage (liens et autorisations publics)
+
+Ces paramètres contrôlent à la fois l’expérience visuelle et le comportement fonctionnel de Content Hub pour les utilisateurs et utilisatrices finaux.
+
+
+### Comment l’administration peut-elle ajouter de nouveaux champs de métadonnées pour les chargements de ressources dans AEM Assets Content Hub ?
+
+Les administrateurs peuvent ajouter de nouveaux champs de métadonnées pour les chargements de ressources en cliquant sur **Ajouter des métadonnées** dans l’onglet **Importer**, en spécifiant le libellé, en le mappant à la propriété appropriée à partir du schéma de métadonnées, en sélectionnant le type d’entrée et en décidant si le champ est obligatoire ou facultatif. Après avoir confirmé et enregistré, le nouveau champ est disponible pour les utilisateurs et utilisatrices lors des chargements de ressources.
+
+### Quel est le paramètre d’approbation automatique des ressources dans AEM Assets Content Hub et comment fonctionne-t-il ?
+
+Lorsqu’il est activé, le paramètre Approbation automatique permet aux nouvelles ressources d’être immédiatement disponibles sur Content Hub lors du chargement. Par défaut, ce paramètre est désactivé, ce qui nécessite que les auteurs ou les administrateurs d’AEM approuvent manuellement les nouvelles ressources avant qu’elles ne s’affichent sur le portail Content Hub.
+
+### Comment les administrateurs configurent-ils les filtres pour la recherche de ressources dans AEM Assets Content Hub ?
+
+L’administration peut configurer des filtres pour les recherches de ressources en cliquant sur **Ajouter des filtres**, en spécifiant le libellé du filtre, en le mappant à la propriété de métadonnées appropriée, en sélectionnant le type de données et en confirmant l’ajout. Les filtres sont disponibles dans l’interface une fois qu’il existe au moins une ressource correspondant aux critères de filtre. Les modifications sont appliquées en cliquant sur **Enregistrer**.
+
+### Quelles propriétés de ressource peuvent être affichées dans la vue Détails de la ressource et comment sont-elles configurées dans AEM Assets Content Hub ?
+
+Les propriétés de la ressource telles que le nom du fichier, le titre, le format, la taille et les champs personnalisés tels que les catégories peuvent être affichées dans la vue Détails de la ressource. L’administration ajoute ces propriétés en cliquant sur **Ajouter des métadonnées**, en spécifiant le libellé, en le mappant au schéma de métadonnées, en sélectionnant le type de données, en confirmant et en enregistrant les modifications.
+
+### Comment l’administration peut-elle personnaliser les détails des métadonnées affichés sur les cartes de ressources dans AEM Assets Content Hub ?
+
+L’administration peut personnaliser les détails des métadonnées affichés sur les cartes de ressources en cliquant sur **Ajouter des métadonnées** dans les paramètres des cartes de ressources, en spécifiant le libellé (par exemple, le format de fichier), en le mappant à la propriété appropriée dans le schéma de métadonnées et en confirmant l’ajout. Vous pouvez afficher jusqu’à six champs de métadonnées sur les cartes de ressources.
+
+### Les administrateurs peuvent-ils personnaliser le portail AEM Assets Content Hub pour répondre aux exigences de marque de votre entreprise ?
+
+Oui. L’administration peut personnaliser l’aspect d’AEM Assets Content Hub en modifiant le titre et le corps du texte de la bannière principale, en sélectionnant les couleurs de texte à l’aide d’un sélecteur de couleurs ou d’un code hexadécimal et en définissant les couleurs secondaires et principales de l’arrière-plan, du texte et des icônes.
