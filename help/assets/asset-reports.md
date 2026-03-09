@@ -67,7 +67,7 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
 
    >[!NOTE]
    >
-   >Accédez à un **profil de produit Administrateur AEM** pour créer un rapport **Télécharger**. Voir [Attribuer des profils de produit AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) pour vous donner le droit d’accéder à un profil de produit Administrateur AEM.
+   >Accédez à un **profil de produit Administrateur AEM** pour créer un rapport **Télécharger**. Voir [Attribuer des profils de produit AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) pour vous donner le droit d’accéder à un profil de produit Administrateur AEM.
 
    ![Sélectionner le type de rapport](assets/choose_report.png)
 

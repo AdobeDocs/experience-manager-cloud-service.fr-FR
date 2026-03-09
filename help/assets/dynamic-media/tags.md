@@ -34,7 +34,7 @@ Pour en savoir plus sur les extensions d’Adobe ou les extensions tierces, voir
 * L’intégration Experience Platform Tags pour les visionneuses Dynamic Media ne fonctionne pas dans le nœud d’auteur d’Experience Manager. Vous ne pouvez pas afficher de suivi à partir d’une page WCM tant qu’elle n’est pas publiée.
 * L’intégration des balises Experience Platform pour les visionneuses Dynamic Media n’est pas prise en charge en mode d’exploitation « pop-up », lorsque l’URL de la visionneuse est obtenue à l’aide du bouton « URL » depuis la page Détails de la ressource.
 * L’intégration Experience Platform Tags ne peut pas être utilisée simultanément avec l’intégration des visionneuses Analytics héritées (via le paramètre `config2=`).
-* La prise en charge du suivi vidéo se limite au suivi de la lecture principale uniquement, comme décrit dans [Présentation du suivi](https://experienceleague.adobe.com/en/docs/media-analytics/using/tracking/track-core-overview#player-events). En particulier, le suivi de la qualité de service, des publicités, des chapitres/segments ou des erreurs n’est pas pris en charge.
+* La prise en charge du suivi vidéo se limite au suivi de la lecture principale uniquement, comme décrit dans [Présentation du suivi](https://experienceleague.adobe.com/fr/docs/media-analytics/using/tracking/track-core-overview#player-events). En particulier, le suivi de la qualité de service, des publicités, des chapitres/segments ou des erreurs n’est pas pris en charge.
 * La configuration de la durée de stockage n’est pas prise en charge pour les éléments de données à l’aide de l’extension *Visionneuses Dynamic Media*. La durée de stockage doit être définie sur **[!UICONTROL Aucune]**.
 
 ### Cas d’utilisation de l’intégration {#use-cases-for-the-integration}
@@ -129,7 +129,7 @@ Lorsqu’un compte Experience Cloud est abonné pour utiliser Adobe Analytics 
 
 Voir [Installation et configuration des extensions](#installing-and-setup-of-extensions).
 
-À l’heure actuelle, la prise en charge du suivi vidéo se limite au suivi de la lecture principale uniquement, comme décrit dans [Présentation du suivi](https://experienceleague.adobe.com/en/docs/media-analytics/using/tracking/track-core-overview#player-events). En particulier, le suivi de la qualité de service, des publicités, des chapitres/segments ou des erreurs n’est pas pris en charge.
+À l’heure actuelle, la prise en charge du suivi vidéo se limite au suivi de la lecture principale uniquement, comme décrit dans [Présentation du suivi](https://experienceleague.adobe.com/fr/docs/media-analytics/using/tracking/track-core-overview#player-events). En particulier, le suivi de la qualité de service, des publicités, des chapitres/segments ou des erreurs n’est pas pris en charge.
 
 ## Utilisation de l’extension Visionneuses Dynamic Media {#using-the-dynamic-media-viewers-extension}
 
@@ -197,7 +197,7 @@ Lorsqu’il est sélectionné, l’éditeur d’éléments de données génère 
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-Pour obtenir la liste des événements pris en charge par chaque type de visionneuse, consultez le [Guide de référence des visionneuses Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers), accédez à la section spécifique à la visionneuse, puis sélectionnez la sous-section Prise en charge du suivi d’Adobe Analytics. À l’heure actuelle, le guide de référence des visionneuses Dynamic Media ne documente pas les arguments d’événement.
+Pour obtenir la liste des événements pris en charge par chaque type de visionneuse, consultez le [Guide de référence des visionneuses Dynamic Media](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers), accédez à la section spécifique à la visionneuse, puis sélectionnez la sous-section Prise en charge du suivi d’Adobe Analytics. À l’heure actuelle, le guide de référence des visionneuses Dynamic Media ne documente pas les arguments d’événement.
 
 Examinons à présent le cycle de vie de l’*élément de données* Visionneuses Dynamic Media. La valeur de cet élément de données est renseignée après que l’événement de visionneuse Dynamic Media correspondant a lieu sur la page. Par exemple, supposons que l’élément de données pointe vers l’événement **[!UICONTROL LOAD]** et son argument « asset ». La valeur d’un tel élément de données reçoit des données valides après la première exécution de l’événement LOAD par la visionneuse. Si l’élément de données pointe vers l’événement **[!UICONTROL ZOOM]** et son argument « scale », la valeur de cet élément de données reste vide jusqu’à ce que la visionneuse envoie un événement **[!UICONTROL ZOOM]** pour la première fois.
 
@@ -846,4 +846,4 @@ Elle est toutefois prise en charge dans le nœud de publication Experience Mana
 
 Il est possible de contourner cette limitation. Spécifiez l’URL de développement ou d’évaluation de la bibliothèque Experience Platform Tags dans la Configuration cloud Experience Platform Tags pour la publication Experience Manager ci-dessus. Cela permet au nœud de publication d’Experience Manager d’utiliser la version de développement ou de préproduction de la bibliothèque de balises Experience Platform.
 
-Consultez [Intégration d’Experience Platform Tags et d’Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview#integrations) pour plus d’informations sur la configuration du Cloud Experience Platform Tags.
+Consultez [Intégration d’Experience Platform Tags et d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview#integrations) pour plus d’informations sur la configuration du Cloud Experience Platform Tags.

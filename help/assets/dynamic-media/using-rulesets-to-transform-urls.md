@@ -45,7 +45,7 @@ A l’instar de la création de tous les ensembles de règles, assurez-vous que 
 En outre, assurez-vous d’abord de tester votre ensemble de règles dans un environnement intermédiaire qui n’affecte pas votre environnement de production.
 Les environnements de production et les environnements d’évaluation nécessitent en général des identifiants différents.
 
-Consultez l’[application de bureau Adobe Dynamic Media Classic pour obtenir des informations de connexion](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out).
+Consultez l’[application de bureau Adobe Dynamic Media Classic pour obtenir des informations de connexion](https://experienceleague.adobe.com/fr/docs/dynamic-media-classic/using/getting-started/signing-out).
 
 <!-- OBSOLETE CONTENT * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
@@ -55,7 +55,7 @@ Consultez l’[application de bureau Adobe Dynamic Media Classic pour obtenir
 
 ## Déploiement d’ensembles de règles XML {#deploy-xml-rule-sets}
 
-1. Ouvrez [l’application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out) puis connectez-vous à votre compte.
+1. Ouvrez [l’application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/fr/docs/dynamic-media-classic/using/getting-started/signing-out) puis connectez-vous à votre compte.
 
    Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne disposez pas de ces informations, contactez le service clientèle.
 
