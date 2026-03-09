@@ -4,7 +4,7 @@ description: Découvrez comment utiliser le protocole Model Context avec AEM as 
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: 8b77b992171623dcf7b065079d72992a5da3a01d
+source-git-commit: 2cbbb53c1bf5277ab54e6731152c0400b4e67aba
 workflow-type: tm+mt
 source-wordcount: '1757'
 ht-degree: 1%
@@ -146,8 +146,8 @@ Vous trouverez ci-dessous des guides détaillés pour chaque application prise e
 
 #### Applications De Chat (Web Et Bureau) {#setup-chat-applications}
 
-* [Claude Anthropique](setup-claude.md)
-* [OpenAI ChatGPT](setup-chatgpt.md)
+* [Claude Anthropique](/help/ai-in-aem/mcp-support/setup-claude.md)
+* [OpenAI ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
 
 #### Outils de développement (extensions IDE, applications de bureau, interfaces de ligne de commande) {#setup-developer-tools}
 
@@ -155,7 +155,7 @@ Vous trouverez ci-dessous des guides détaillés pour chaque application prise e
 * Code d&#39;augmentation (CLI, JetBrains, VS Code, Cursor)
 * Augmenter le retrait de l’application de bureau
 * Cline (JetBrains, VS Code, Cursor)
-* [Curseur](setup-cursor.md)
+* [Curseur](/help/ai-in-aem/mcp-support/setup-cursor.md)
 * Copilote GitHub (code VS)
 * Kiro (application de bureau, interface de ligne de commande)
 * Codex OpenAI (application de bureau)
@@ -164,7 +164,7 @@ Vous trouverez ci-dessous des guides détaillés pour chaque application prise e
 
 #### Plateformes d’entreprise {#setup-enterprise-platforms}
 
-* [Microsoft Copilot Studio](setup-microsoft-copilot-studio.md)
+* [Microsoft Copilot Studio](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
 
 ## Authentification {#authentication}
 
@@ -173,7 +173,7 @@ Les serveurs MCP hébergés par Adobe mettent en œuvre OAuth et sont intégrés
 * Lorsqu’une application cliente MCP se connecte à un serveur MCP AEM, les utilisateurs voient une boîte de dialogue de connexion Adobe et s’authentifient avec leur **Adobe ID**
 * Une fois la connexion établie, le système vérifie que l’application cliente MCP est autorisée dans votre organisation et que le serveur MCP demandé est autorisé. Si l’une de ces vérifications échoue, un message d’erreur s’affiche.
 
-![Erreur Client MCP non autorisé &#x200B;](assets/MCP-Client-not-permitted.png)
+![Erreur Client MCP non autorisé ](assets/MCP-Client-not-permitted.png)
 
 * Une fois la vérification effectuée, le serveur MCP émet des jetons que l’application utilise pour les appels d’outil suivants
 * Les outils MCP respectent les autorisations AEM de l’utilisateur. Seuls les utilisateurs autorisés à modifier un fragment de contenu dans AEM peuvent le modifier via MCP.
@@ -252,6 +252,6 @@ Certaines applications clientes MCP, telles que Claude, offrent la possibilité 
 
 ## Limites {#limitations}
 
-AEM prend actuellement en charge la configuration des serveurs MCP dans les applications répertoriées sous [&#x200B; Applications MCP prises en charge &#x200B;](#supported-mcp-applications).
+AEM prend actuellement en charge la configuration des serveurs MCP dans les applications répertoriées sous [ Applications MCP prises en charge ](#supported-mcp-applications).
 
 Si vous souhaitez utiliser une autre application cliente MCP, n’hésitez pas à contacter **aemcs-mcp-feedback@adobe.com** pour demander de l’aide pour d’autres clients ou pour en placer sur la liste autorisée une personnalisée.
