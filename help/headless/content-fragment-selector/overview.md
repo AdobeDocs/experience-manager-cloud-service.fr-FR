@@ -1,14 +1,14 @@
 ---
 title: Sélecteur de fragment de contenu micro front-end pour Adobe Experience Manager as a Cloud Service
 description: Utilisez le sélecteur de fragment de contenu micro front-end pour rechercher, rechercher et récupérer des fragments de contenu de votre application.
-role: Admin, User
-source-git-commit: 32e1b3cef768b420f32b70202ddadc80db2b74e8
+role: Admin, User, Developer
+exl-id: 5b18fb2c-26c8-4d9d-ba2e-9e53c09f5022
+source-git-commit: 006bfe9067267da1524ab456605a956162c889e3
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 11%
+source-wordcount: '833'
+ht-degree: 10%
 
 ---
-
 
 # Sélecteur de fragment de contenu micro front-end {#micro-frontend-content-fragment-selector}
 
@@ -27,7 +27,7 @@ Le sélecteur de fragment de contenu offre de nombreux avantages, notamment :
 * Possibilité de changer de référentiels au sein d’une organisation IMS pour la sélection de fragments de contenu.
 * Possibilité de trier les fragments de contenu et de les afficher dans l’affichage sélectionné.
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 ### Authentification IMS {#ims-authentication}
 
@@ -69,9 +69,11 @@ Utilisez le composant `ContentFragmentSelector` . Il existe plusieurs options d&
 
 Une fois que le sélecteur de fragments de contenu est configuré et authentifié pour l’utiliser avec votre application AEM as a Cloud Service, vous pouvez sélectionner des fragments de contenu ou effectuer d’autres opérations pour rechercher vos fragments dans le référentiel :
 
-![&#x200B; Sélecteur de fragment de contenu &#x200B;](/help/headless/assets/content-fragment-selector-using.png)
+![ Sélecteur de fragment de contenu ](/help/headless/assets/content-fragment-selector-unwrapped.png)
 
-* Le sélecteur **Référentiel** en haut à droite permet de sélectionner le référentiel à utiliser
+* Dans la barre d’outils supérieure, vous pouvez :
+   * Utilisez le sélecteur **Référentiel** en haut à droite pour sélectionner le référentiel à utiliser
+   * Sélectionnez le format, liste ou grille.
 * Dans le panneau tout à gauche, vous pouvez :
    * Masquer ou afficher les dossiers du référentiel sélectionné
    * Sélectionnez un dossier spécifique pour afficher les fragments de contenu dans ce dossier.
@@ -81,6 +83,9 @@ Une fois que le sélecteur de fragments de contenu est configuré et authentifi�
    * Trie la liste en cours en fonction de différentes colonnes, à la fois ascendante et descendante
    * Afficher l’indicateur de format
    * Afficher, masquer et spécifier des filtres
+* Dans le panneau tout à droite, vous pouvez :
+   * Affichage des propriétés
+   * Afficher les références
 
 ### Masquer/Afficher le panneau {#hide-show-panel}
 
@@ -92,7 +97,7 @@ Le sélecteur de fragment de contenu vous permet de sélectionner un référenti
 
 Vous pouvez sélectionner le référentiel de votre choix dans le menu déroulant **Référentiel** disponible dans la partie supérieure du panneau principal.
 
-![&#x200B; Sélecteur de fragment de contenu &#x200B;](/help/headless/assets/content-fragment-repository-selector.png)
+![ Sélecteur de fragment de contenu ](/help/headless/assets/content-fragment-repository-selector.png)
 
 Les options de référentiel disponibles dans la liste déroulante reposent sur la propriété `repositoryId` définie dans le fichier `index.html`. Cette propriété est basée sur l’environnement de l’organisation IMS sélectionnée accessible par l’utilisateur actuellement connecté.
 
@@ -130,3 +135,16 @@ Vous pouvez trier les fragments dans le sélecteur de fragments de contenu selon
 Le sélecteur de fragment de contenu vous permet d’afficher le fragment dans :
 
 * **Vue Tableau**
+* **Vue Grille**
+
+La vue requise peut être sélectionnée à partir des icônes de la barre d’outils supérieure :
+
+![Sélecteur de fragment de contenu - Type d’affichage](/help/headless/assets/content-fragment-selector-view-type.png)
+
+## Intégration du sélecteur de fragments de contenu aux applications {#integrate-the-content-fragment-selector-with-applications}
+
+Vous pouvez intégrer le sélecteur de fragments de contenu à diverses applications, telles que :
+
+* [Intégration du sélecteur de fragments de contenu à une application Adobe](/help/headless/content-fragment-selector/integrate-adobe-application.md)
+* [Intégrer le sélecteur de fragments de contenu à une application non Adobe ou tierce](/help/headless/content-fragment-selector/integrate-non-adobe-application.md)
+* [Intégrer le sélecteur de fragments de contenu à l’aide de Vanilla JS](/help/headless/content-fragment-selector/integrate-using-vanilla-js.md)
