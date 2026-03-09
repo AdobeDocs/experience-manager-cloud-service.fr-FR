@@ -153,7 +153,7 @@ Une fois la configuration appropriée effectuée, vous pouvez ajouter la prise e
 
 Consultez [Ajout du code intégré Experience Platform Tags](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-in-websites/configure-tags/add-embed-code) pour en savoir plus sur l’utilisation du code intégré de la bibliothèque Experience Platform Tags.
 
-Pour en savoir plus sur l’utilisation de la fonction de code incorporé d’Experience Manager Dynamic Media, voir [ Incorporation de la visionneuse de vidéos ou d’images dans une page web ](/help/assets/dynamic-media/embed-code.md).
+Pour en savoir plus sur l’utilisation de la fonction de code incorporé d’Experience Manager Dynamic Media, voir [&#x200B; Incorporation de la visionneuse de vidéos ou d’images dans une page web &#x200B;](/help/assets/dynamic-media/embed-code.md).
 
 **Suivi des visionneuses Dynamic Media à l’aide du code incorporé :**
 

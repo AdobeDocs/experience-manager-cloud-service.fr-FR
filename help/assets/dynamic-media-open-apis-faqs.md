@@ -148,4 +148,4 @@ Pour activer l’utilisation en production de [modificateurs en disponibilité l
 ## Comment tester des modificateurs expérimentaux ? {#modifiers-not-generally-available}
 
 Vous pouvez tester n’importe quel modificateur, qui n’est généralement pas disponible via les API expérimentales. Par exemple, &lt;/adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>
-Cliquez ici pour en savoir plus sur l’utilisation des [API expérimentales](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) et la [ liste complète des modificateurs](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+Cliquez ici pour en savoir plus sur l’utilisation des [API expérimentales](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) et la [&#x200B; liste complète des modificateurs](https://developer.adobe.com/experience-cloud/experience-manager-apis/).

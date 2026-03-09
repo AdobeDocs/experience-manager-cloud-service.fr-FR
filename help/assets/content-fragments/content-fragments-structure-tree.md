@@ -33,4 +33,4 @@ Cette opération ouvre une représentation de la structure du fragment dans le v
 >
 >À l’aide des chemins de navigation du panneau principal, vous pouvez revenir à votre point de départ.
 
-![ Exemple d’arborescence de structure de fragment de contenu ](assets/cfm-structuretree-02.png)
+![&#x200B; Exemple d’arborescence de structure de fragment de contenu &#x200B;](assets/cfm-structuretree-02.png)

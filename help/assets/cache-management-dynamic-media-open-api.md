@@ -103,7 +103,7 @@ La mise en cache prolongée avec invalidation de cache active pilotée par les �
 
 +++ **Puis-je me désinscrire de la mise en cache de longue durée pour mon référentiel ?**
 
-Pour vous exclure de la mise en cache prolongée, contactez l’assistance technique d’Adobe [](https://helpx.adobe.com/in/contact.html) et justifiez votre demande.
+Pour vous exclure de la mise en cache prolongée, contactez l’assistance technique d’Adobe [&#128279;](https://helpx.adobe.com/in/contact.html) et justifiez votre demande.
 
 +++
 

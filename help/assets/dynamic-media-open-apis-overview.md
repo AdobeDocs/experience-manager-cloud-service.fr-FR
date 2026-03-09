@@ -21,7 +21,7 @@ Dynamic Media avec fonctionnalités OpenAPI place la gestion des ressources num�
 
 Dynamic Media avec fonctionnalités OpenAPI offre les avantages clés suivants :
 
-* **Intégrations fluides** : Dynamic Media avec fonctionnalités OpenAPI offre un ensemble complet d’API de recherche et de diffusion. Cela permet à votre équipe de développement d’[ intégrer facilement la diffusion des ressources à leurs applications ](/help/assets/integrate-dynamic-media-open-apis.md). Les applications comprennent les applications d’Adobe et tierces. Il fournit une [interface de sélecteur de ressources micro frontend](/help/assets/overview-asset-selector.md) pour rechercher et sélectionner des ressources approuvées. Vous pouvez facilement intégrer le sélecteur à n’importe quelle application basée sur des frameworks JavaScript telles que React JS, Angular JS et Vanilla JS.
+* **Intégrations fluides** : Dynamic Media avec fonctionnalités OpenAPI offre un ensemble complet d’API de recherche et de diffusion. Cela permet à votre équipe de développement d’[&#x200B; intégrer facilement la diffusion des ressources à leurs applications &#x200B;](/help/assets/integrate-dynamic-media-open-apis.md). Les applications comprennent les applications d’Adobe et tierces. Il fournit une [interface de sélecteur de ressources micro frontend](/help/assets/overview-asset-selector.md) pour rechercher et sélectionner des ressources approuvées. Vous pouvez facilement intégrer le sélecteur à n’importe quelle application basée sur des frameworks JavaScript telles que React JS, Angular JS et Vanilla JS.
 
 * **Gestion centralisée des ressources numériques** : la DAM est la source unique de vérité pour toutes les ressources numériques. Vos ressources numériques sont gérées de manière centralisée dans AEM Assets et diffusées vers les applications consommatrices par référence à l’aide d’URL de diffusion, sans copier de fichiers binaires de ressources.
 
@@ -37,7 +37,7 @@ Dynamic Media avec fonctionnalités OpenAPI offre les avantages clés suivants 
 
 * **Informations sur les données pour prendre des décisions éclairées (à venir)** : au-delà de la gestion et de la diffusion des ressources, il capture les informations sur les données de diffusion dans les diffusions de ressources sur le CDN, ce qui permet aux responsables de marque de suivre les mesures de diffusion sur l’ensemble des canaux. Cela leur permet de prendre des décisions à partir des données pour optimiser continuellement la gouvernance des ressources et les stratégies de diffusion.
 
-![ Diagramme de flux de données Dynamic Media OpenAPI](assets/dm-openapi-dfd.png)
+![&#x200B; Diagramme de flux de données Dynamic Media OpenAPI](assets/dm-openapi-dfd.png)
 
 Pour plus d’informations sur les offres Dynamic Media disponibles et leurs fonctionnalités, consultez [Dynamic Media Prime et Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md).
 

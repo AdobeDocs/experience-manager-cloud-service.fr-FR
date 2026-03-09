@@ -48,7 +48,7 @@ Pour effectuer l’association, vous devez d’abord [ajouter les ressources mul
 
 1. Confirmez (avec **Sélectionner**). La collection est répertoriée comme associée.
 
-   ![Association confirmée ](assets/cfm-assoc-content-03.png)
+   ![Association confirmée &#x200B;](assets/cfm-assoc-content-03.png)
 
 ## Modification du contenu associé {#editing-associated-content}
 

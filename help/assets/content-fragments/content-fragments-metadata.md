@@ -33,7 +33,7 @@ Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments 
    * Sélectionnez [**Afficher les propriétés** pour ouvrir les boîtes de dialogue](/help/assets/manage-digital-assets.md#editing-properties). Une fois la collection ouverte pour consultation, vous pouvez également la modifier.
    * Ouvrez le fragment de contenu à modifier, puis sélectionnez **Métadonnées** dans le panneau latéral.
 
-   ![ Métadonnées dans le panneau latéral ](assets/cfm-metadata-01.png)
+   ![&#x200B; Métadonnées dans le panneau latéral &#x200B;](assets/cfm-metadata-01.png)
 
 3. L’onglet **De base** fournit des options que vous pouvez afficher ou modifier :
 
@@ -52,4 +52,4 @@ Par exemple, vous pouvez baliser les fragments pertinents en tant que « lancem
    * **Créé** (affichage uniquement).
 
    Par exemple :
-   ![ Exemple de métadonnées ](assets/cfm-metadata-02.png)
+   ![&#x200B; Exemple de métadonnées &#x200B;](assets/cfm-metadata-02.png)

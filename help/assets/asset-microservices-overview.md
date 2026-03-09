@@ -98,5 +98,5 @@ Adobe Experience Manager peut être configuré de manière à déclencher automa
 >* [Prise en main des microservices de ressources](asset-microservices-configure-and-use.md)
 >* [Formats de fichiers pris en charge](file-format-support.md)
 >* [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html)
->* Appli de bureau [[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=fr)
+>* Appli de bureau [[!DNL Experience Manager] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=fr)
 >* [Documentation Apache Oak sur l’accès binaire direct](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
