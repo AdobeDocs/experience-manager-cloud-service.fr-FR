@@ -52,7 +52,7 @@ Suivez ces étapes à partir du guide standard.
 1. [Connexion de votre référentiel GitHub](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md#connect-repo)
 1. [Démarrer l&#39;invite](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md#start-prompting)
 
-![ Contenu importé ](assets/content-imported-aem-authoring.png)
+![&#x200B; Contenu importé &#x200B;](assets/content-imported-aem-authoring.png)
 
 Une fois ces étapes effectuées pour migrer le contenu, procédez comme suit.
 
