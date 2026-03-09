@@ -4,9 +4,9 @@ description: Découvrez comment l’agent de modernisation de l’expérience in
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: 7e5450f853e04f12e3a25e4a996aa8c3afe383ca
+source-git-commit: 0bef673daf2030ce2418d0d3a0560a8476868657
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
@@ -101,3 +101,7 @@ Les exigences suivantes ne sont pas couvertes par des compétences d’automatis
 * Héritage multisite (MSM)
 * Fonctionnalités personnalisées (par exemple, calculatrices, configurateurs)
 * Logique commerciale personnalisée
+
+## Étapes suivantes {#next-steps}
+
+Commencez par migrer un site à l’aide du document [Prise en main de l’agent de modernisation d’Experience Platform](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md).

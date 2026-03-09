@@ -4,9 +4,9 @@ description: Guide de référence de l’interface et des fonctionnalités de la
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
-source-git-commit: 51127359588edce96b87fc13447370063e9ca93b
+source-git-commit: e2a9c55644c0d9542f6a299f0df30a3dfd4a55de
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Les développeurs gardent le contrôle total sur les navires. Toutes les modific
 
 Après vous être connecté à la console à l’adresse [`aemcoder.adobe.io`,](https://aemcoder.adobe.io) vous accédez à l’écran d’accueil de la console.
 
-![Écran d’accueil de la console &#x200B;](assets/console-home.png)
+![Écran d’accueil de la console ](assets/console-home.png)
 
 ### Barre de menus {#menu-bar}
 
@@ -145,5 +145,14 @@ La vue Paramètres permet de gérer les paramètres de base de la console.
 
 ![Vue Paramètres](assets/settings-view.png)
 
-* **Informations d’identification** vous permet de spécifier un jeton d’accès personnel pour Figma afin que la console puisse accéder aux blocs de conception de votre projet.
+* **Informations d’identification** vous permet de spécifier un jeton d’accès personnel pour Figma afin que la console [ puisse accéder aux blocs de conception de votre projet](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration).
+   * Le jeton nécessite les portées en lecture seule suivantes :
+      * `file_content:read`
+      * `file_metadata:read`
+      * `library_assets:read`
+      * `library_content:read`
+      * `team_library_content:read`
+      * `file_dev_resources:read`
+      * `projects:read`
+   * [Voir la documentation Figma](https://help.figma.com/hc/en-us/articles/8085703771159-Manage-personal-access-tokens) pour plus d’informations sur la configuration des jetons d’accès personnels.
 * **Réinitialiser l’espace de travail** rétablit l’état de départ de la console et toutes les modifications annulées ou annulées seront perdues.
