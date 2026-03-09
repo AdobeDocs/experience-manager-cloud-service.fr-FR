@@ -4,9 +4,9 @@ description: Découvrez comment l’agent de modernisation de l’expérience in
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
+source-git-commit: 7e5450f853e04f12e3a25e4a996aa8c3afe383ca
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '851'
 ht-degree: 0%
 
 ---
@@ -66,13 +66,9 @@ La console de modernisation de l’expérience en libre-service est généraleme
 
 ## Modèle de diffusion {#delivery-model}
 
-Pour les migrations complexes ou les résultats accélérés, Adobe propose le modèle de diffusion Ingénieur de résultat agent (AOE) . Il s’agit d’un service facultatif où les ingénieurs Adobe exploitent les outils d’IA en votre nom.
+Pour les migrations complexes ou les résultats accélérés, Adobe propose le modèle de diffusion Ingénieur de résultat agent (AOE) . Il s’agit d’un service facultatif où les ingénieurs Adobe exploitent les outils d’IA en votre nom. Pour plus d’informations sur ce modèle de diffusion, consultez le document [Modèle de diffusion de l’agent de modernisation de l’expérience.](/help/ai-in-aem/agents/brand-experience/modernization/delivery-model.md)
 
-* Les AOE d’Adobe exploitent l’agent à vos côtés, associant l’automatisation de l’IA à des conseils d’experts pour fournir des résultats prêts pour la production à grande échelle.
-* Cela offre une option de réinitialisation stratégique pour les entreprises confrontées à des implémentations bloquées ou à des défis de modernisation hérités.
-* Le modèle AOE propose une approche plus rapide et à moindre risque, qui tire parti de l’automatisation de l’IA tout en assurant la gouvernance, la qualité et des résultats positifs.
-
-Pour explorer davantage le modèle de diffusion AOE :
+Si le modèle AOE vous intéresse pour votre prochaine migration :
 
 * Contactez votre représentant Adobe ou l’équipe de votre compte pour lancer la définition de la portée et la planification.
 * Adobe confirmera l’éligibilité, évaluera l’engagement et proposera un plan d’engagement.
@@ -94,7 +90,7 @@ L&#39;agent ne prend pas en charge les cibles suivantes.
    * Les compétences ciblent Edge Delivery Services uniquement.
 * Modèles de diffusion découplée tels que la diffusion basée sur une API uniquement ou une SPA (par exemple, Next.js)
 
-Les exigences suivantes ne sont pas encore couvertes par des compétences d’automatisation dédiées et nécessitent un effort manuel.
+Les exigences suivantes ne sont pas couvertes par des compétences d’automatisation dédiées et nécessitent un effort manuel.
 
 * Perfection stricte des pixels
    * Seule la fidélité de conception pratique est automatisée
