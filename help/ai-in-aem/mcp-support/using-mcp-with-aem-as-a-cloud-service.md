@@ -4,10 +4,10 @@ description: Découvrez comment utiliser le protocole Model Context avec AEM as 
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: 5cbe2ae5afd6b6052f486cccc245fbc14e9569aa
+source-git-commit: 8b77b992171623dcf7b065079d72992a5da3a01d
 workflow-type: tm+mt
-source-wordcount: '2100'
-ht-degree: 0%
+source-wordcount: '1757'
+ht-degree: 1%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Présentation {#introduction}
 
-De nombreuses équipes Adobe Experience Manager (AEM) travaillent désormais dans des environnements de développement intégré (IDE) et des applications de chat telles que Cursor, ChatGPT, Anthropic Claude et Microsoft Copilot Studio. Ces applications prennent en charge le protocole MCP (Model Context Protocol), qui permet aux applications d’exposer les outils principaux à des modèles de langage (LLM) volumineux de manière normalisée.
+De nombreuses équipes Adobe Experience Manager (AEM) travaillent désormais dans des environnements de développement intégré (IDE) et des applications de chat telles que Cursor, OpenAI ChatGPT, Anthropic Claude et Microsoft Copilot Studio. Ces applications prennent en charge le protocole MCP (Model Context Protocol), qui permet aux applications d’exposer les outils principaux à des modèles de langage (LLM) volumineux de manière normalisée.
 
 Grâce à l’intégration d’AEM MCP, différentes personnes peuvent collaborer sur le même contenu :
 
@@ -24,14 +24,14 @@ Grâce à l’intégration d’AEM MCP, différentes personnes peuvent collabore
 
 >[!IMPORTANT]
 >
-> Pour les scénarios qui modifient ou suppriment du contenu, les utilisateurs doivent utiliser l’interface de l’assistant AI plutôt que d’appeler directement les outils MCP, car les agents AEM exécutés par l’assistant AI incluent des mesures de protection intégrées.
+> Pour les scénarios qui modifient ou suppriment du contenu, les utilisateurs doivent utiliser l’interface de l’assistant d’IA plutôt que d’appeler directement les outils MCP. Les agents AEM exécutés par l’assistant AI incluent des mesures de sécurité intégrées.
 >
 
 Cet article explique ce que fournit la fonctionnalité MCP d’AEM, quelles applications MCP sont prises en charge, comment la configurer et comment l’utiliser en pratique.
 
 ## Pourquoi MCP est-il utile pour les clients AEM ? {#why-mcp-is-useful-for-aem-customers}
 
-Les applications modernes d’IDE et de chat utilisent MCP comme moyen pour un LLM d’appeler les outils exposés derrière les serveurs MCP. Au lieu d’écrire du code par rapport aux spécifications d’API de bas niveau, les clients peuvent décrire leur intention en langage naturel (*« mettre à jour la bannière principale de cette campagne sur toutes les pages »*) et laisser le LLM appeler les outils de MCP appropriés, qui interagissent à leur tour avec les API d’AEM.
+Les applications modernes d’IDE et de chat utilisent MCP comme moyen pour un LLM d’appeler les outils exposés derrière les serveurs MCP. Les clients peuvent décrire leur intention en langage naturel au lieu d’écrire du code par rapport aux spécifications d’API de bas niveau. Par exemple, une invite telle que *« mettre à jour la bannière principale de cette campagne sur toutes les pages »* permet au LLM d’appeler les outils de MCP appropriés, qui interagissent ensuite avec les API d’AEM.
 
 Les principaux bénéfices sont les suivants :
 
@@ -58,20 +58,37 @@ AEM expose les serveurs MCP en tant que points d’entrée HTTP. Les points d’
 
 Les outils spécifiques exposés par chaque serveur MCP peuvent évoluer au fil du temps. En pratique, vous pouvez demander à votre application compatible avec les MCP de découvrir les outils par le biais d’une invite telle que :
 
-*« Répertoriez tous les outils AEM MCP disponibles sur ce serveur et décrivez leur fonctionnement. »*
+```
+"List all AEM MCP tools available from this server and describe what they do."
+```
 
-Le client MCP utilisera le protocole MCP pour récupérer la liste d’outils et les schémas, que le LLM peut ensuite utiliser.
+Le client MCP utilise le protocole MCP pour récupérer la liste d’outils et les schémas, que le LLM peut ensuite utiliser.
 
 ## Applications MCP prises en charge {#supported-mcp-applications}
 
-Les serveurs MCP AEM sont conçus pour fonctionner avec un ensemble défini d’applications compatibles avec MCP. Les applications supportées sont les suivantes :
+Les serveurs MCP AEM sont conçus pour fonctionner avec un ensemble défini d’applications compatibles avec MCP. Chaque application fournit sa propre expérience de configuration, mais les étapes de haut niveau sont similaires.
+
+### Applications De Chat (Web Et Bureau) {#chat-applications}
 
 * Claude Anthropique
-* Curseur
 * OpenAI ChatGPT
-* Microsoft Copilot Studio
 
-Chaque application fournit sa propre expérience de configuration, mais les étapes de haut niveau sont similaires.
+### Outils de développement (extensions IDE, applications de bureau, interfaces de ligne de commande) {#developer-tools}
+
+* Code Claude Anthropique (CLI, JetBrains, VS Code, Cursor)
+* Code d&#39;augmentation (CLI, JetBrains, VS Code, Cursor)
+* Augmenter le retrait de l’application de bureau
+* Cline (JetBrains, VS Code, Cursor)
+* Curseur
+* Copilote GitHub (code VS)
+* Kiro (application de bureau, interface de ligne de commande)
+* Codex OpenAI (application de bureau)
+* Interface de ligne de commande du Codex OpenAI
+* Planche à voile
+
+### Plateformes d’entreprise {#enterprise-platforms}
+
+* Microsoft Copilot Studio
 
 ## Présentation de la configuration {#setup-overview}
 
@@ -82,20 +99,29 @@ La configuration de MCP pour AEM comprend deux parties principales :
 
 ### Configuration AEM {#aem-configuration}
 
-Par défaut, l’accès aux serveurs MCP d’AEM est régi par les autorisations dont disposent les utilisateurs individuels dans AEM. Lorsqu’un utilisateur s’authentifie via une application cliente MCP, les outils MCP appliquent les mêmes règles d’accès que les opérations manuelles dans AEM. Un utilisateur ne peut effectuer que les actions qu’il est déjà autorisé à effectuer.
+Par défaut, les autorisations dont disposent les utilisateurs individuels dans AEM régissent l’accès aux serveurs MCP d’AEM. Lorsqu’un utilisateur s’authentifie via une application cliente MCP, les outils MCP appliquent les mêmes règles d’accès que les opérations manuelles dans AEM. Un utilisateur ne peut effectuer que les actions qu’il est déjà autorisé à effectuer.
 
 #### Applications clientes MCP autorisées {#permitted-mcp-client-applications}
 
 Les applications clientes MCP suivantes sont autorisées par défaut :
 
-* ChatGPT
-* Claude
-* MS Copilot Studio
+* Claude Anthropique
+* Code Claude Anthropique
+* Code d’augmentation
+* Augmenter le retrait
+* Cline
 * Curseur
+* Copilote GitHub
+* Kiro
+* Microsoft Copilot Studio
+* OpenAI ChatGPT
+* Codex OpenAI
+* Interface de ligne de commande du Codex OpenAI
+* Planche à voile
 
 #### Restreindre les serveurs MCP {#restricting-mcp-servers}
 
-Placer sur la liste autorisée Tous les serveurs MCP sont traités par défaut. En tant qu’administrateur, vous avez la possibilité de restreindre l’accès à des serveurs MCP spécifiques au niveau de l’organisation, du programme ou de l’environnement. Vous pouvez ainsi contrôler de manière granulaire les fonctionnalités de MCP disponibles pour les utilisateurs de votre entreprise.
+Placer sur la liste autorisée Tous les serveurs MCP sont traités par défaut. En tant qu’administrateur, vous avez la possibilité de restreindre l’accès à des serveurs MCP spécifiques au niveau de l’organisation, du programme ou de l’environnement. Cette restriction vous donne un contrôle granulaire sur les fonctionnalités MCP disponibles pour les utilisateurs de votre entreprise.
 
 #### Gestion de l’accès client MCP {#managing-mcp-client-access}
 
@@ -105,10 +131,10 @@ Pour toutes les demandes liées au serveur MCP, n&#39;hésitez pas à nous conta
 
 ### Configuration de l’application cliente MCP {#mcp-client-application-configuration}
 
-Cette étape est effectuée par chaque utilisateur (ou par un administrateur de l’application cliente MCP, lorsque cela est pris en charge). Les détails de configuration varient légèrement selon les applications. Les clients MCP évoluent rapidement et la prise en charge des serveurs MCP distants est activement développée. Vous devrez peut-être activer le mode Développeur pour accéder à la fonctionnalité d’ajout de serveurs distants, mais le processus général est le suivant :
+Chaque utilisateur effectue cette étape ou un administrateur de l’application cliente MCP peut l’effectuer lorsqu’elle est prise en charge. Les détails de configuration varient légèrement selon les applications. Les clients MCP évoluent rapidement et la prise en charge des serveurs MCP distants est activement développée. Vous devrez peut-être activer le mode Développeur pour accéder à la fonctionnalité d’ajout de serveurs distants, mais le processus général est le suivant :
 
-1. Ajouter les URL du serveur MCP AEM
-   * Configurez le ou les points d’entrée MCP à partir du tableau ci-dessus. Par exemple :`https://mcp.adobeaemcloud.com/adobe/mcp/content-readonly`
+1. Ajouter une ou plusieurs URL de serveur AEM MCP
+   * Configurez un ou plusieurs points d’entrée MCP à partir du tableau ci-dessus. Par exemple :`https://mcp.adobeaemcloud.com/adobe/mcp/content-readonly`
 1. Déclencher la connexion
    * Enregistrez ou activez la configuration afin que l’application cliente MCP tente de se connecter au serveur MCP AEM
 1. Se connecter avec Adobe ID
@@ -116,99 +142,29 @@ Cette étape est effectuée par chaque utilisateur (ou par un administrateur de 
 1. Vérification des outils découverts
    * Une fois authentifiée, l’application détecte les outils MCP à partir du serveur. Vous pouvez ensuite commencer à demander au LLM d’effectuer des opérations AEM.
 
-Vous trouverez ci-dessous des exemples détaillés de la façon dont cela se présente dans chaque application prise en charge.
+Vous trouverez ci-dessous des guides détaillés pour chaque application prise en charge :
 
-### ChatGPT {#chatgpt}
+#### Applications De Chat (Web Et Bureau) {#setup-chat-applications}
 
-![Configurer ChatGPT - Paramètres](assets/chatgpt-1.png)
+* [Claude Anthropique](setup-claude.md)
+* [OpenAI ChatGPT](setup-chatgpt.md)
 
-![Configurer ChatGPT - Applications et connecteurs - Paramètres avancés](assets/chatgpt-2.png)
+#### Outils de développement (extensions IDE, applications de bureau, interfaces de ligne de commande) {#setup-developer-tools}
 
-![Configurer ChatGPT - Applications et connecteurs - Mode Développeur](assets/chatgpt-3.png)
+* Code Claude Anthropique (CLI, JetBrains, VS Code, Cursor)
+* Code d&#39;augmentation (CLI, JetBrains, VS Code, Cursor)
+* Augmenter le retrait de l’application de bureau
+* Cline (JetBrains, VS Code, Cursor)
+* [Curseur](setup-cursor.md)
+* Copilote GitHub (code VS)
+* Kiro (application de bureau, interface de ligne de commande)
+* Codex OpenAI (application de bureau)
+* Interface de ligne de commande du Codex OpenAI
+* Planche à voile
 
-![Configurer ChatGPT - Applications et connecteurs - Créer une application](assets/chatgpt-4.png)
+#### Plateformes d’entreprise {#setup-enterprise-platforms}
 
-![Configurer ChatGPT - Applications et connecteurs - Nouvelle application](assets/chatgpt-5.png)
-
-![Configurer ChatGPT - Applications et connecteurs - Service AEM Content MCP](assets/chatgpt-6.png)
-
-![Configurer le ChatGPT - Demandez au service AEM Content MCP](assets/chatgpt-7.png)
-
-* Ajoutez les URL du serveur MCP AEM dans la zone où les connexions ou outils MCP sont configurés
-* Déclenchez la connexion et connectez-vous avec votre Adobe ID en cas de redirection
-* Dans une conversation, référencez les outils AEM configurés dans vos invites, par exemple :
-
-  *« À l’aide des outils AEM MCP configurés, répertoriez tous les sites de votre environnement de création. »*
-
-### Claude {#claude}
-
-![Configurer Claude - Paramètres](assets/claude-1.png)
-
-![Configurer Claude - Connecteurs](assets/claude-2.png)
-
-![Configurer Claude - Connecteurs - Ajouter un connecteur personnalisé](assets/claude-3.png)
-
-![Configurer Claude - Connecteurs - Connecter un connecteur personnalisé](assets/claude-4.png)
-
-![Configurer Claude - Connecteurs - Configurer le connecteur personnalisé](assets/claude-5.png)
-
-![Configuration de Claude - Connecteurs - Autorisations de l’outil de connecteur personnalisé](assets/claude-6.png)
-
-![Configurer Claude - Demander au service AEM Content MCP](assets/claude-7.png)
-
-* Dans la configuration MCP de Claude, enregistrez les URL du serveur MCP AEM
-* Terminer le flux de connexion à Adobe
-* Vous pouvez éventuellement activer la confirmation automatique pour certains outils dans la zone de configuration. Ceci est recommandé pour les opérations de recherche ou de lecture seule.
-* Assurez-vous que le serveur MCP est sélectionné avant de commencer votre conversation
-* Demandez à Claude d’effectuer des tâches liées à AEM ; Claude sélectionnera les outils AEM exposés par le serveur MCP en fonction de votre invite.
-
-### Curseur {#cursor}
-
-![Configurer le curseur - Paramètres](assets/cursor-1.png)
-
-![Configurer le curseur - Outils et MCP - Ajouter un MCP personnalisé](assets/cursor-2.png)
-
-![Configurer le curseur - Ajouter des paramètres MCP personnalisés](assets/cursor-3.png)
-
-![Configurer le curseur - Se connecter](assets/cursor-4.png)
-
-![Configurer le curseur - Demander le nouveau service](assets/cursor-5.png)
-
-* Dans les paramètres MCP du curseur, créez une entrée de serveur MCP avec la ou les URL MCP AEM
-* S’authentifier auprès de votre Adobe ID lorsque vous y êtes invité
-* Vous pouvez éventuellement activer ou désactiver des outils individuels en cliquant sur leur nom. Tous les outils sont activés par défaut.
-* Utilisez l’éditeur de curseur ou la conversation pour appeler les outils AEM dans le cadre des workflows de développement ou de contenu.
-
-### Microsoft Copilot Studio {#microsoft-copilot-studio}
-
-![Configuration du copilote - Agents](assets/copilot-1.png)
-
-![Configurer Copilot - Ajouter un outil](assets/copilot-2.png)
-
-![Configuration de Copilot - Ajout d’outil - Modèle de protocole de contexte](assets/copilot-3.png)
-
-![Configuration de Copilot - Ajout d’un serveur Model Context Protocol (aperçu)](assets/copilot-4.png)
-
-![Configuration de Copilot - Ajout d’un outil - Création d’une connexion](assets/copilot-5.png)
-
-![Configurer Copilot - Ajouter un outil - Ajouter et configurer](assets/copilot-6.png)
-
-![Configurer Copilot - Ajouter un outil - Configurer](assets/copilot-7.png)
-
-![Configurer Copilot - Tester la connexion](assets/copilot-8.png)
-
-![Configurer Copilot - Gérer les connexions](assets/copilot-9.png)
-
-![Configuration de Copilot - Agent de test](assets/copilot-10.png)
-
-* Créer un agent
-* Accédez à la section Outil et cliquez sur **Ajouter un outil**
-* Sélectionner un outil existant ou en créer un nouveau
-* Configurez un nouvel outil MCP pointant vers les URL du serveur MCP AEM
-* Établir une connexion qui peut être partagée ou dédiée entre les agents
-* Se connecter à l’aide de votre Adobe ID en cas de redirection
-* Vous pouvez éventuellement activer le mode de confirmation automatique ou exiger une confirmation de l’utilisateur final pour toutes les interactions de l’outil
-* Lors du test de l’agent, ouvrez d’abord le gestionnaire de connexions pour attribuer une connexion à votre session, puis appuyez sur **Réessayer**.
+* [Microsoft Copilot Studio](setup-microsoft-copilot-studio.md)
 
 ## Authentification {#authentication}
 
@@ -217,12 +173,12 @@ Les serveurs MCP hébergés par Adobe mettent en œuvre OAuth et sont intégrés
 * Lorsqu’une application cliente MCP se connecte à un serveur MCP AEM, les utilisateurs voient une boîte de dialogue de connexion Adobe et s’authentifient avec leur **Adobe ID**
 * Une fois la connexion établie, le système vérifie que l’application cliente MCP est autorisée dans votre organisation et que le serveur MCP demandé est autorisé. Si l’une de ces vérifications échoue, un message d’erreur s’affiche.
 
-![Erreur Client MCP non autorisé &#x200B;](assets/MCP-Client-not-permitted.png)
+![Erreur Client MCP non autorisé ](assets/MCP-Client-not-permitted.png)
 
 * Une fois la vérification effectuée, le serveur MCP émet des jetons que l’application utilise pour les appels d’outil suivants
-* Les outils MCP respectent les autorisations AEM de l’utilisateur. Un utilisateur non autorisé à modifier un fragment de contenu dans AEM ne pourra pas le modifier non plus via MCP.
+* Les outils MCP respectent les autorisations AEM de l’utilisateur. Seuls les utilisateurs autorisés à modifier un fragment de contenu dans AEM peuvent le modifier via MCP.
 
-Cela garantit que les opérations assistées par l’IA sont conformes à votre modèle de sécurité et de gouvernance AEM existant.
+Cette approche garantit que les opérations assistées par l’IA sont conformes à votre modèle de sécurité et de gouvernance AEM existant.
 
 ## Utilisation de MCP avec AEM {#using-mcp-with-aem}
 
@@ -230,7 +186,7 @@ Une fois AEM et vos applications clientes MCP configurées, vous pouvez travaill
 
 >[!IMPORTANT]
 >
->Pour de meilleurs résultats, en particulier avec les invites qui contiennent plusieurs étapes ou qui ciblent différents types de contenu tels que des images et du texte, activez un modèle de réflexion ou sélectionnez l&#39;option Réflexion dans votre client MCP plutôt que de compter sur le mode automatique.
+>Les invites qui contiennent plusieurs étapes ou ciblent différents types de contenu, tels que des images et du texte, fonctionnent mieux avec un modèle de pensée. Activez un modèle de réflexion ou sélectionnez l’option Réflexion dans votre client MCP au lieu de vous reposer sur le mode automatique.
 
 ### Exemples de cas d’utilisation {#example-usecases}
 
@@ -272,7 +228,9 @@ Les exemples suivants illustrent comment un LLM peut enchaîner des outils MCP.
 
 Du point de vue de l’utilisateur, ces workflows peuvent être lancés à l’aide d’invites telles que :
 
-*« Créez un fragment de contenu pour la campagne de printemps en vous basant sur notre modèle de bannière principale et renseignez ses champs à partir de ce brief. »*
+```
+"Create a new content fragment for the spring campaign based on our hero banner model and fill in its fields from this brief."
+```
 
 Le LLM choisit et coordonne automatiquement les outils MCP nécessaires.
 
@@ -286,14 +244,14 @@ Les LLM peuvent accomplir des tâches complexes, mais sont sujets à des erreurs
 * **Évolution des capacités**
 Les modèles LLM s&#39;améliorent continuellement. Au fil du temps, ils deviennent plus intelligents et découvrent de nouvelles façons de combiner les outils MCP pour atteindre vos objectifs. Une tâche qui nécessitait plusieurs invites aujourd&#39;hui peut fonctionner de manière transparente avec une seule invite demain.
 
-* **La surveillance humaine est essentielle**
+* **La surveillance humaine est essentielle :**
 Considérez le LLM comme un assistant compétent qui a besoin d&#39;être supervisé. Elle possède une connaissance étendue et peut concevoir des solutions créatives, mais elle bénéficie de vos conseils et de votre examen. Vérifiez les résultats, en particulier pour les opérations critiques, et envoyez des commentaires lorsque la sortie ne correspond pas à vos attentes.
 
 * **Faites attention avec les exécutions d’outils de reconnaissance automatique**
-Certaines applications clientes MCP, telles que Claude, offrent la possibilité d’acquitter automatiquement les exécutions d’outils demandées par le LLM. Cela peut s’avérer pratique pour les opérations en lecture seule telles que la recherche ou la récupération de contenu, mais soyez prudent avec les outils qui mettent à jour ou suppriment du contenu. Examinez chaque demande d’exécution d’outil avant de confirmer les actions qui modifient votre environnement AEM.
+Certaines applications clientes MCP, telles que Claude, offrent la possibilité d’acquitter automatiquement les exécutions d’outils demandées par le LLM. Bien que cette option soit pratique pour les opérations en lecture seule telles que la recherche ou la récupération de contenu, soyez prudent avec les outils qui mettent à jour ou suppriment du contenu. Examinez chaque demande d’exécution d’outil avant de confirmer les actions qui modifient votre environnement AEM.
 
 ## Limites {#limitations}
 
-Les serveurs MCP AEM sont actuellement destinés à être configurés dans ChatGPT, Claude, Cursor et Microsoft Copilot Studio.
+AEM prend actuellement en charge la configuration des serveurs MCP dans les applications répertoriées sous [ Applications MCP prises en charge ](#supported-mcp-applications).
 
 Si vous souhaitez utiliser une autre application cliente MCP, n’hésitez pas à contacter **aemcs-mcp-feedback@adobe.com** pour demander de l’aide pour d’autres clients ou pour en placer sur la liste autorisée une personnalisée.
