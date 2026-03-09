@@ -78,7 +78,7 @@ Pour plus d’informations sur les propriétés, voir [Propriétés ImsAuthProps
 
 `ImsAuthService` classe gère le flux d’authentification pour le sélecteur de fragments. Il est chargé d’obtenir un `imsToken` du service d’authentification Adobe IMS. Le `imsToken` permet d’authentifier l’utilisateur et d’autoriser l’accès au référentiel AEM as a Cloud Service. `ImsAuthService` utilise les propriétés `ImsAuthProps` pour contrôler le flux d’authentification et enregistrer des écouteurs pour divers événements d’authentification. Vous pouvez utiliser la fonction `registerFragmentsSelectorsAuthService` pour enregistrer l’instance `ImsAuthService` avec le sélecteur de fragments. Les fonctions suivantes sont disponibles dans la classe `ImsAuthService`. Cependant, si vous utilisez la fonction `registerFragmentsSelectorsAuthService`, vous n’avez pas besoin d’appeler directement ces fonctions.
 
-Pour plus d’informations sur les propriétés, voir [ Propriétés ImsAuthService ](/help/headless/content-fragment-selector/properties.md#imsauthservice-properties)
+Pour plus d’informations sur les propriétés, voir [&#x200B; Propriétés ImsAuthService &#x200B;](/help/headless/content-fragment-selector/properties.md#imsauthservice-properties)
 
 ### Validation avec jeton IMS fourni {#validation-with-provided-ims-token}
 

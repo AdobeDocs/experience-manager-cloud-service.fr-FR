@@ -21,5 +21,5 @@ L’intégration est effectuée en important le package Sélecteur de fragment d
 
 Vous pouvez effectuer une authentification sans définir certaines des propriétés IMS, si vous :
 
-* intègrent une application Adobe sur [ Unified Shell ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell)
+* intègrent une application Adobe sur [&#x200B; Unified Shell &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell)
 * un jeton IMS est déjà généré pour l’authentification
