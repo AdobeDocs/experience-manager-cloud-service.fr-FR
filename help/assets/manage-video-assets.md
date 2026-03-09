@@ -4,11 +4,12 @@ description: Charger, prévisualiser, annoter et publier des ressources vidéo d
 contentOwner: AG
 feature: Asset Management, Publishing, Collaboration, Video
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '4983'
-ht-degree: 95%
+source-wordcount: '4995'
+ht-degree: 93%
 
 ---
 
@@ -43,7 +44,7 @@ En savoir plus sur le [chargement de ressources](manage-digital-assets.md#upload
 
 Vous pouvez prévisualiser les vidéos dans les rendus pris en charge dans l’interface utilisateur d’[!DNL Assets]. Pour prévisualiser une ressource vidéo, procédez comme suit :
 
-1. Chargez une ressource vidéo d’un format pris en charge dans [!DNL Experience Manager Assets]. En savoir plus sur les [&#x200B; formats vidéo pris en charge &#x200B;](file-format-support.md#video-formats). <br>Une fois le chargement effectué, la ressource vidéo est traitée et un rendu d’aperçu est généré.
+1. Chargez une ressource vidéo d’un format pris en charge dans [!DNL Experience Manager Assets]. En savoir plus sur les [ formats vidéo pris en charge ](file-format-support.md#video-formats). <br>Une fois le chargement effectué, la ressource vidéo est traitée et un rendu d’aperçu est généré.
 1. Cliquez sur la ressource, puis sélectionnez ![l’option Détails](assets/do-not-localize/details_icon.svg) **[!UICONTROL Détails]** dans la barre d’outils supérieure. La ressource vidéo s’ouvre dans la visionneuse de vidéos.
 1. Cliquez sur l’icône ![option de lecture](assets/do-not-localize/play.png) sur la miniature de la vidéo. <br>Vous pouvez lire, mettre en pause, contrôler le volume et zoomer sur la vidéo en plein écran.
 
@@ -179,7 +180,7 @@ Pour publier des vidéos sur YouTube, vous devez disposer d’une ou de plusieur
 
 >[!CAUTION]
 >
->Vous devez avoir configuré une ou plusieurs chaînes dans YouTube *avant* d’ajouter des chaînes sous Paramètres YouTube dans Experience Manager (voir la section [Configuration de YouTube dans Experience Manager](#setting-up-youtube-in-aem) ci-dessous). Si vous ne parvenez pas à configurer le canal, vous n’êtes pas averti qu’aucun canal n’existe. La vérification Google a lieu lorsque vous ajoutez une chaîne mais il n’existe pas d’option permettant de choisir la chaîne vers laquelle la vidéo est envoyée.
+>Vous devez avoir configuré une ou plusieurs chaînes dans YouTube *avant* d’ajouter des chaînes sous Paramètres YouTube dans Experience Manager (voir la section [Configuration de YouTube dans Experience Manager](#setting-up-youtube-in-aem) ci-dessous). Si vous ne parvenez pas à configurer le canal, vous n’êtes pas averti qu’aucun canal n’existe. La vérification Google a lieu lorsque vous ajoutez une chaîne, mais il n’existe pas d’option permettant de choisir la chaîne vers laquelle la vidéo est envoyée.
 
 **Pour créer une chaîne YouTube :**
 
@@ -495,11 +496,11 @@ Il est possible de surveiller la progression, notamment l’échec du codage ou 
 
    >[!NOTE]
    >
-   >L’enregistrement des messages d’erreur ou d’échec peut prendre un certain temps en raison des différentes configurations de workflows pour les **[!UICONTROL nouvelles tentatives]**, l’**[!UICONTROL intervalle entre deux tentatives]** et le **[!UICONTROL délai d’attente]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), par exemple :
+   >L’enregistrement des messages d’erreur ou d’échec peut prendre un certain temps en raison des différentes configurations de workflows pour **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** à partir de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), par exemple :
    >
    >* Configuration de la file d’attente des tâches Apache Sling
    >* Gestionnaire de tâches de processus externe du workflow Adobe Granite
-   >* File d’attente d’expiration du workflow Granite
+   >* File d’attente de temporisation du workflow Granite
    >
    >Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
 
@@ -527,11 +528,11 @@ Il est possible de surveiller la progression, notamment l’échec du codage ou 
 
    >[!NOTE]
    >
-   >L’enregistrement du message d’erreur peut prendre un certain temps en raison des différentes configurations de workflows pour les **[!UICONTROL nouvelles tentatives]**, l’**[!UICONTROL intervalle entre deux tentatives]** et le **[!UICONTROL délai d’attente]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), par exemple :
+   >L’enregistrement du message d’erreur peut prendre un certain temps en raison des différentes configurations de workflows pour **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL expiration]** à partir de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), par exemple :
    >
    >* Configuration de la file d’attente des tâches Apache Sling
    >* Gestionnaire de tâches de processus externe du workflow Adobe Granite
-   >* File d’attente d’expiration du workflow Granite
+   >* File d’attente de temporisation du workflow Granite
    >
    >Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
 
@@ -543,7 +544,7 @@ Il est possible de surveiller la progression, notamment l’échec du codage ou 
 
    ![chlimage_1-436](/help/assets/dynamic-media/assets/chlimage_1-436.png)
 
-1. Vous recevez des notifications par courrier électronique sur les tâches de processus annulées ou qui ont échoué. Ces notifications peuvent être configurées par un administrateur. Voir [Configuration des notifications par e-mail](#configuring-e-mail-notifications).
+1. Vous recevez des notifications par e-mail sur les tâches de processus annulées ou qui ont échoué. Ces notifications peuvent être configurées par un administrateur. Voir [Configuration des notifications par e-mail](#configuring-e-mail-notifications).
 
 <!-- EMAIL NOT AVAILABLE IN SKYLINE
 

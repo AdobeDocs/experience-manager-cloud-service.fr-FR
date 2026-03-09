@@ -2,10 +2,11 @@
 title: Aperçu de la ressource et de ses propriétés dans  [!DNL the Content Hub]
 description: Découvrez comment prévisualiser des ressources et des propriétés dans  [!DNL Content Hub]
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: 44e9c1f016bfdad909d9e2aa1c9a301dcecd763b
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '977'
 ht-degree: 7%
 
 ---
@@ -111,7 +112,7 @@ Certaines propriétés des ressources affichées dans [!DNL Content Hub] sont d�
 
 * **Balises intelligentes :** [!DNL The Content Hub] utilise les services de contenu dynamique d’Adobe AI pour entraîner des ressources à l’aide de l’algorithme de reconnaissance sur la structure basée sur les balises. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes. Les balises intelligentes augmentent la vitesse du contenu de vos projets en vous permettant de trouver rapidement les ressources appropriées. Les balises intelligentes sont un exemple d’informations de ressource qui ne sont pas contenues dans l’image. [!DNL Experience Manager Assets] applique automatiquement les balises intelligentes aux ressources, par défaut.
 
-* **Balises de couleurs :** [Balises de couleurs](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=fr) permet de reconnaître une ressource à l’aide de couleurs automatiquement identifiées dans une ressource à l’aide des fonctionnalités de l’IA d’Adobe.
+* **Balises de couleurs :** [Balises de couleurs](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) permet de reconnaître une ressource à l’aide de couleurs automatiquement identifiées dans une ressource à l’aide des fonctionnalités de l’IA d’Adobe.
 
 * Date du chargement
 

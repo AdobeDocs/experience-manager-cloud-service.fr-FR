@@ -4,10 +4,11 @@ description: Utilisez le sélecteur de ressources pour rechercher, trouver et r�
 contentOwner: KK
 feature: Selectors
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '5357'
+source-wordcount: '5363'
 ht-degree: 40%
 
 ---
@@ -89,7 +90,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 ## Intégration du sélecteur de ressources à l’aide de Vanilla JS {#integration-using-vanilla-js}
 
-Vous pouvez intégrer n’importe quelle application [!DNL Adobe] ou non Adobe à [!DNL Experience Manager Assets] référentiel et sélectionner des ressources dans l’application. Voir [&#x200B; Intégration du sélecteur de ressources à diverses applications &#x200B;](#asset-selector-integration-with-apps).
+Vous pouvez intégrer n’importe quelle application [!DNL Adobe] ou non Adobe à [!DNL Experience Manager Assets] référentiel et sélectionner des ressources dans l’application. Voir [ Intégration du sélecteur de ressources à diverses applications ](#asset-selector-integration-with-apps).
 
 L’intégration est effectuée en important le package Sélecteur de ressources et en se connectant à Assets as a Cloud Service à l’aide de la bibliothèque JavaScript Vanilla. Modifiez un `index.html` ou tout fichier approprié dans votre application pour :
 
@@ -106,7 +107,7 @@ Vous pouvez effectuer une authentification sans définir certaines des propriét
 
 Vous pouvez intégrer le sélecteur de ressources à diverses applications, telles que :
 
-* [Intégration du sélecteur de ressources à une application  [!DNL Adobe] &#x200B;](#adobe-app-integration-vanilla)
+* [Intégration du sélecteur de ressources à une application  [!DNL Adobe] ](#adobe-app-integration-vanilla)
 * [Intégrer le sélecteur de ressources à une application non Adobe](#adobe-non-app-integration)
 * [Intégration de Dynamic Media aux fonctionnalités OpenAPI](#adobe-app-integration-polaris)
 
@@ -402,7 +403,7 @@ Utilisez les conditions préalables suivantes si vous intégrez le sélecteur de
 * Pour accéder à Dynamic Media avec des fonctionnalités OpenAPI, vous devez disposer de licences pour :
    * Référentiel Assets (par exemple, Experience Manager Assets as a Cloud Service).
    * AEM Dynamic Media.
-* Seules les ressources [&#x200B; approuvées &#x200B;](#approved-assets.md) peuvent être utilisées pour garantir la cohérence de la marque.
+* Seules les ressources [ approuvées ](#approved-assets.md) peuvent être utilisées pour garantir la cohérence de la marque.
 
 ### Intégration de Dynamic Media aux fonctionnalités OpenAPI{#adobe-app-integration-polaris}
 
@@ -416,7 +417,7 @@ Les propriétés `rootPath` et `path` ne doivent pas faire partie de Dynamic Med
 aemTierType:[1: "delivery"]
 ```
 
-Cette configuration vous permet d’afficher toutes les ressources approuvées sans dossiers ou sous la forme d’une structure plate. Pour plus d’informations, accédez à `aemTierType` propriété sous [&#x200B; Propriétés du sélecteur de ressources &#x200B;](#asset-selector-properties)
+Cette configuration vous permet d’afficher toutes les ressources approuvées sans dossiers ou sous la forme d’une structure plate. Pour plus d’informations, accédez à `aemTierType` propriété sous [ Propriétés du sélecteur de ressources ](#asset-selector-properties)
 
 +++
 
@@ -591,7 +592,7 @@ Vous pouvez utiliser les propriétés du sélecteur de ressources pour personnal
 | *dialogSize* | prise de contrôle en petit, moyen, grand, plein écran ou plein écran | Chaîne | Facultatif | Vous pouvez contrôler la disposition en spécifiant sa taille à l’aide des options données. |
 | *colorScheme* | Clair ou foncé | Non | | Cette propriété est utilisée pour définir le thème d’une application du sélecteur de ressources. Vous pouvez choisir entre le thème clair ou sombre. |
 | *filterRepoList* | Fonction | Non |  | Vous pouvez utiliser `filterRepoList` fonction de rappel qui appelle le référentiel Experience Manager et renvoie une liste filtrée de référentiels. |
-| *expiryOptions* | Fonction | | | Vous pouvez utiliser entre les deux propriétés suivantes : **getExpiryStatus** qui fournit le statut d’une ressource arrivée à expiration. La fonction renvoie des `EXPIRED`, des `EXPIRING_SOON` ou des `NOT_EXPIRED` en fonction de la date d’expiration d’une ressource que vous fournissez. Voir [&#x200B; Personnalisation des ressources expirées &#x200B;](#customize-expired-assets). De plus, vous pouvez utiliser **allowSelectionAndDrag** dans lequel la valeur de la fonction peut être `true` ou `false`. Lorsque la valeur est définie sur `false`, la ressource expirée ne peut pas être sélectionnée ni glissée-déplacée sur la zone de travail. |
+| *expiryOptions* | Fonction | | | Vous pouvez utiliser entre les deux propriétés suivantes : **getExpiryStatus** qui fournit le statut d’une ressource arrivée à expiration. La fonction renvoie des `EXPIRED`, des `EXPIRING_SOON` ou des `NOT_EXPIRED` en fonction de la date d’expiration d’une ressource que vous fournissez. Voir [ Personnalisation des ressources expirées ](#customize-expired-assets). De plus, vous pouvez utiliser **allowSelectionAndDrag** dans lequel la valeur de la fonction peut être `true` ou `false`. Lorsque la valeur est définie sur `false`, la ressource expirée ne peut pas être sélectionnée ni glissée-déplacée sur la zone de travail. |
 | *showToast* | | Non | | Cela permet au sélecteur de ressources d’afficher un message toast personnalisé pour la ressource expirée. |
 
 <!--

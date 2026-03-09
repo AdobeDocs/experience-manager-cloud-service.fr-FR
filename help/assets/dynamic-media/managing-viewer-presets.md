@@ -4,10 +4,11 @@ description: Découvrez comment créer et gérer des paramètres prédéfinis de
 contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '4301'
+source-wordcount: '4309'
 ht-degree: 99%
 
 ---
@@ -51,9 +52,9 @@ Vous pouvez ajouter, modifier, supprimer, publier, dépublier et prévisualiser 
 
 ### Prise en charge des visionneuses pour les pages web en responsive design {#viewer-support-for-responsive-designed-web-pages}
 
-Chaque page web a des besoins différents. Par exemple, vous souhaitez parfois qu‘une page web fournisse un lien qui ouvre la visionneuse HTML5 dans une fenêtre de navigateur distincte. Dans d’autres cas, vous aurez besoin d’intégrer directement la visionneuse HTML5 sur la page d’hébergement. Si c’est le cas, la page web aura une mise en page statique. Autrement, elle est « réactive » et est affichée différemment en fonction de l’appareil ou de la taille de fenêtre du navigateur. Pour répondre à ces besoins, toutes les visionneuses prédéfinies et prêtes à l’emploi HTML5 fournies avec Dynamic Media sont compatibles tant avec les pages web statiques qu’avec les pages web en responsive design.
+Chaque page web a des besoins différents. Par exemple, vous souhaitez parfois qu‘une page web fournisse un lien qui ouvre la visionneuse HTML5 dans une fenêtre de navigateur distincte. Dans d’autres cas, vous aurez besoin d’incorporer directement la visionneuse HTML5 sur la page d’hébergement. Si c’est le cas, la page web aura une mise en page statique. Autrement, elle est « réactive » et est affichée différemment en fonction de l’appareil ou de la taille de fenêtre du navigateur. Pour répondre à ces besoins, toutes les visionneuses prédéfinies et prêtes à l’emploi HTML5 fournies avec Dynamic Media sont compatibles tant avec les pages web statiques qu’avec les pages web en responsive design.
 
-Voir [Bibliothèque d’images statiques et réactives](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html?lang=fr#about-responsive-image-library) dans l’*aide de l’API de rendu et de diffusion d’images Dynamic Media* afin d’en savoir plus sur l’intégration des visionneuses réactives à vos pages web.
+Voir [Bibliothèque d’images statiques et réactives](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html?lang=fr#about-responsive-image-library) dans l’*aide de l’API de rendu et de diffusion d’images Dynamic Media* afin d’en savoir plus sur l’incorporation des visionneuses réactives dans vos pages web.
 
 >[!NOTE]
 >
@@ -79,7 +80,7 @@ Les administrateurs peuvent ajouter et personnaliser les types de médias riches
  <tbody>
   <tr>
    <td><strong>Ensemble de carrousel</strong><br /> </td>
-   <td><p>Les zones sensibles ou cliquables, ou les deux, sont ajoutées à une série de deux images ou plus. Le client peut faire défiler les images vers la gauche ou la droite, puis sélectionner une zone réactive ou une image pour obtenir des informations supplémentaires ou réaliser un achat directement depuis une page d’accueil, de catégorie ou d’entrée d’un site web.</p> </td>
+   <td><p>Les zones réactives ou cliquables, ou les deux, sont ajoutées à une série de deux images ou plus. Le client peut faire défiler les images vers la gauche ou la droite, puis sélectionner une zone réactive ou une image pour obtenir des informations supplémentaires ou réaliser un achat directement depuis une page d’accueil, de catégorie ou d’entrée d’un site web.</p> </td>
   </tr>
     <tr>
    <td><strong>Dimensionnel</strong><br /> </td>
@@ -94,12 +95,12 @@ Les administrateurs peuvent ajouter et personnaliser les types de médias riches
    <td>Affiche une image de la zone agrandie dans la visionneuse d’origine. Aucune commande à utiliser. En d’autres termes, les utilisateurs et utilisatrices déplacent la sélection sur la zone à afficher.</td>
   </tr>
   <tr>
-   <td><strong>Visionneuse d’images</strong></td>
-   <td>Dans la visionneuse d’images, les utilisateurs peuvent voir différentes vues ou variantes de couleur d’un élément en sélectionnant une image miniature. Cette visionneuse propose également des outils de zoom pour examiner les images de plus près.</td>
+   <td><strong>Ensemble d’images</strong></td>
+   <td>Dans la visionneuse d’ensembles d’images, vous pouvez voir différentes vues ou variantes de couleur d’un élément en sélectionnant une image miniature. Cette visionneuse propose également des outils de zoom pour examiner les images de plus près.</td>
   </tr>
   <tr>
    <td><strong>Image interactive</strong></td>
-   <td>Des zones réactives sont ajoutées aux parties d’une image. Le client peut alors les sélectionner pour obtenir des détails supplémentaires ou pour réaliser directement un achat sur les pages d’accueil, de catégorie ou d’entrée d’un site web.</td>
+   <td>Des zones réactives sont ajoutées aux parties d’une image. Elles peuvent alors être sélectionnées pour obtenir des détails supplémentaires ou pour réaliser directement un achat sur les pages d’accueil, de catégorie ou d’entrée d’un site web.</td>
   </tr>
   <tr>
    <td><strong>Vidéo interactive</strong></td>
@@ -107,7 +108,7 @@ Les administrateurs peuvent ajouter et personnaliser les types de médias riches
   </tr>
   <tr>
    <td><strong>Supports variés</strong></td>
-   <td>Affiche différents types de médias dans une seule visionneuse. Vous pouvez inclure des visionneuses à 360°, des visionneuses d’images, des images et des vidéos.</td>
+   <td>Affiche différents types de médias dans une seule visionneuse. Vous pouvez inclure des visionneuses à 360°, des ensembles d’images, des images et des vidéos.</td>
   </tr>
   <tr>
    <td><strong>Image panoramique</strong></td>
@@ -200,12 +201,12 @@ Voir « Notes de mise à jour sur les visionneuses » dans la table des matiè
   </tr>
   <tr>
    <td>ImageSet_dark</td>
-   <td>Visionneuse d’images</td>
+   <td>Ensemble d’images</td>
    <td><code>html5_zoomviewer_dark.css</code></td>
   </tr>
   <tr>
    <td>ImageSet_light</td>
-   <td>Visionneuse d’images</td>
+   <td>Ensemble d’images</td>
    <td><code>html5_zoomviewer_light.css</code></td>
   </tr>
   <tr>
@@ -374,7 +375,7 @@ Experience Manager affiche une grande variété de paramètres prédéfinis de v
 
 **Pour augmenter le nombre de paramètres prédéfinis de visionneuse qui s’affichent :**
 
-1. Accédez à CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
+1. Accédez à CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Accédez au nœud de liste des paramètres prédéfinis de visionneuse à l’adresse `/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`
 
    ![chlimage_1-221](/help/assets/dynamic-media/assets/chlimage_1-221.png)
@@ -540,9 +541,9 @@ Les paramètres de visionneuse prédéfinis qui sont disponibles dans l’interf
 **Pour activer ou désactiver les paramètres prédéfinis de visionneuse :**
 
 1. Dans le coin supérieur gauche d’Experience Manager, sélectionnez le logo Experience Manager, puis, dans le rail de gauche, sélectionnez **[!UICONTROL Outils]** (icône Marteau) > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres prédéfinis de la visionneuse]**.
-1. Dans la page Paramètre prédéfini de la visionneuse, sous l’en-tête de colonne **[!UICONTROL État]**, sélectionnez le curseur pour activer ou désactiver un paramètre de visionneuse prédéfini.
+1. Dans la page Paramètre prédéfini de la visionneuse, sous l’en-tête de colonne **[!UICONTROL État]**, sélectionnez le bouton (bascule) pour activer ou désactiver un paramètre de visionneuse prédéfini.
 
-   Le curseur des paramètres de visionneuse prédéfinis activés se situe à droite, dans une boîte bleue ; le curseur des paramètres de visionneuse prédéfinis désactivés se situe à gauche, dans une boîte gris clair.
+   Le bouton (bascule) des paramètres de visionneuse prédéfinis activés se situe à droite, dans une boîte bleue ; le bouton (bascule) des paramètres de visionneuse prédéfinis désactivés se situe à gauche, dans une boîte gris clair.
 
 ## Publication de paramètres prédéfinis de visionneuse {#publishing-viewer-presets}
 
@@ -595,7 +596,7 @@ Vous pouvez supprimer les paramètres prédéfinis de visionneuse que vous avez 
 
 ## Application d’un paramètre prédéfini de visionneuse à une ressource {#applying-a-viewer-preset-to-an-asset}
 
-Si vous avez déjà publié la ressource et la visionneuse sélectionnée, l’**[!UICONTROL URL]** et les boutons d’**[!UICONTROL intégration]** s’affichent une fois que vous avez sélectionné un paramètre prédéfini de visionneuse.
+Si vous avez déjà publié la ressource et la visionneuse sélectionnée, les boutons **[!UICONTROL URL]** et **[!UICONTROL Incorporer]** s’affichent une fois que vous avez sélectionné un paramètre prédéfini de visionneuse.
 
 **Pour appliquer un paramètre prédéfini de visionneuse à une ressource :**
 
@@ -603,7 +604,7 @@ Si vous avez déjà publié la ressource et la visionneuse sélectionnée, l’*
 
    >[!NOTE]
    >
-   >Si vous avez déjà publié la ressource et la visionneuse sélectionnée, l’**[!UICONTROL URL]** et les boutons d’**[!UICONTROL intégration]** s’affichent une fois que vous avez sélectionné un paramètre prédéfini de visionneuse.
+   >Si vous avez déjà publié la ressource et la visionneuse sélectionnée, les boutons **[!UICONTROL URL]** et **[!UICONTROL Incorporer]** s’affichent une fois que vous avez sélectionné un paramètre prédéfini de visionneuse.
 
 1. Pour l’appliquer à la ressource, sélectionnez un paramètre prédéfini de visionneuse dans le volet de gauche.
 
@@ -611,6 +612,6 @@ Si vous avez déjà publié la ressource et la visionneuse sélectionnée, l’*
 
 ## Diffusion de ressources avec des paramètres prédéfinis de visionneuse {#delivering-assets-with-viewer-presets}
 
-Pour obtenir les URL des paramètres prédéfinis de visionneuse, voir [Lier des URL à une application web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Voir aussi [Intégration de la visionneuse de vidéos à une page web](/help/assets/dynamic-media/embed-code.md).
+Pour obtenir les URL des paramètres prédéfinis de visionneuse, voir [Lier des URL à une application web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Voir aussi [Incorporation de la visionneuse de vidéos dans une page web](/help/assets/dynamic-media/embed-code.md).
 
 Si vous utilisez Experience Manager pour la gestion de contenu web, vous pouvez ajouter des ressources en utilisant des paramètres de visionneuse prédéfinis directement sur la page. Voir [Ajout de ressources Dynamic Media à des pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).

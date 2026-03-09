@@ -1,14 +1,15 @@
 ---
 title: Aperçu - Représentation JSON (Ressources - Fragments de contenu)
 description: Découvrez comment prévisualiser facilement la représentation JSON de vos fragments de contenu lors de la mise en œuvre de votre solution AEM découplée.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 71%
+source-wordcount: '185'
+ht-degree: 70%
 
 ---
 
@@ -20,7 +21,7 @@ Au cours du développement de modèles pour les fragments de contenu dans le cad
 >
 >Les fragments de contenu sont une fonctionnalité de sites, mais sont stockés sous la forme **Ressources**.
 >
->Il existe deux éditeurs pour la création de fragments de contenu. Bien que la fonctionnalité de base soit la même, il existe des différences. Cette section décrit l’éditeur d’origine, principalement accessible à partir de la console **Assets**. Pour plus d’informations sur le nouvel éditeur, voir la documentation Sites, [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md), (principalement accessible à partir de la console **Fragments de contenu**).
+>Il existe deux éditeurs pour créer des fragments de contenu ; bien que la fonctionnalité de base soit la même, il existe quelques différences. Cette section couvre l’éditeur d’origine, accessible principalement à partir de la console **Assets**. Voir la documentation Sites, [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md), pour plus d’informations sur le nouvel éditeur (principalement accessible à partir de la console **Fragments de contenu**).
 
 Utilisation de l’icône **Aperçu** :
 

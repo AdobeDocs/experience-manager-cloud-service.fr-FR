@@ -4,11 +4,12 @@ description: Découvrez la norme de métadonnées XMP (Extensible Metadata Plat
 contentOwner: AG
 feature: Metadata
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 100%
+source-wordcount: '1039'
+ht-degree: 99%
 
 ---
 
@@ -112,7 +113,7 @@ Pour utiliser les lanceurs, procédez comme suit :
 
 Pour appliquer manuellement une seule fois ce workflow à une ressource, appliquez le workflow [!UICONTROL Écriture différée des métadonnées de gestion des actifs numériques (DAM)] à l’aide du rail de gauche.
 
-Pour appliquer le workflow à toutes les ressources téléchargées, ajoutez le workflow à un profil de post-traitement.
+Pour appliquer le workflow à toutes les ressources chargées, ajoutez le workflow à un profil de post-traitement.
 
 <!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 

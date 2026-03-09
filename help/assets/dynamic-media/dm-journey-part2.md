@@ -10,11 +10,12 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2621'
-ht-degree: 96%
+source-wordcount: '2629'
+ht-degree: 95%
 
 ---
 
@@ -61,7 +62,7 @@ Ajoutez maintenant un paramètre de traitement d’image à la fin de l’URL. D
 
 Notez qu’un nouveau rendu de la montre est généré. Il est essentiel de comprendre, à partir de cet exercice simple de modification de la largeur de l’image, que l’image vue est entièrement générée de manière dynamique.
 
-Maintenant, remplacez la valeur de largeur de `500` pixels par `1000` pixels, puis appuyez sur **[!UICONTROL Entrée]**. [Faites un essai](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target="_blank}.
+Maintenant, remplacez la valeur de largeur de `500` pixels par `1000` pixels, puis appuyez sur **[!UICONTROL Entrée]**. [Faites un essai](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=« _blank}.
 Dès que vous appuyez sur **[!UICONTROL Entrée]**, le navigateur revient au serveur d’images Dynamic Media. Il génère un nouveau rendu de la montre, en fonction de la nouvelle valeur de largeur que vous venez de saisir, puis renvoie la nouvelle image au navigateur et la met en cache.
 
 Dynamic Media propose de nombreux paramètres de traitement des images que vous pouvez utiliser pour affiner vos ressources d’image sur les pages web. Vous pouvez [consulter une liste d’entre eux ici](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=fr).
@@ -74,7 +75,7 @@ Encore une fois, au moment où vous appuyez **[!UICONTROL Entrée]**, un nouveau
 
 Bien qu’il soit possible de modifier les paramètres de traitement des images dans une URL image par image, cette méthode n’est pas efficace, en particulier si vous avez des dizaines de milliers d’images pour votre site web. Nous recommandons d’utiliser des paramètres d’image prédéfinis.
 
-## Les principes de base de la création de paramètres d’image prédéfinis pour le rendu des ressources {#dm-journey-e}
+## Principes de base de la création de paramètres d’image prédéfinis pour le rendu des ressources {#dm-journey-e}
 
 Il existe plusieurs façons et de nombreux emplacements pour créer une image ou rendre disponible une image. Traditionnellement, un créatif accède à Adobe Photoshop et enregistre chacun de ces différents rendus sous forme d’images statiques.
 
@@ -103,7 +104,7 @@ Pour chaque emplacement pour lequel vous avez besoin d’un type d’image parti
 * une grille de recherche,
 * une miniature,
 * une carte d’achat ou encore
-* une image à forte identification.
+* image principale
 
 Vous souhaitez que cette image soit diffusée avec les mêmes paramètres partout où elle sera utilisée.
 
@@ -114,7 +115,7 @@ _Création d’un paramètre d’image prédéfini à partir de l’onglet De ba
 
 Dans l’exemple ci-dessus, vous pouvez constater qu’un nouveau paramètre d’image prédéfini a été créé avec le nom _Medium_. Dynamic Media utilise un exemple d’image d’usine, un sac à dos, pour vous aider à voir les caractéristiques du paramètre d’image prédéfini au fur et à mesure de sa création.
 
-Le paramètre prédéfini de l’image _Medium_ est de 500 pixels de large et de 800 pixels de haut. Dans la première partie de ce Parcours, vous avez appris comment diffuser des ressources dans différents formats. Dans le menu déroulant **[!UICONTROL Format]**, vous pouvez choisir de diffuser des ressources sous la forme de JPEG, PNG, TIFF ou de plusieurs autres formats. Vous avez une certaine marge de manœuvre.
+Le paramètre d’image prédéfini _Medium_ est de 500 pixels de large et de 800 pixels de haut. Dans la première partie de ce Parcours, vous avez appris comment diffuser des ressources dans différents formats. Dans le menu déroulant **[!UICONTROL Format]**, vous pouvez choisir de diffuser des ressources sous la forme de JPEG, PNG, TIFF ou de plusieurs autres formats. Vous avez une certaine marge de manœuvre.
 
 Sélectionnez l’onglet **[!UICONTROL Avancé]** pour accéder aux options relatives à l’espace colorimétrique de la ressource. En fonction du format que vous avez sélectionné dans l’onglet **[!UICONTROL De base]** (dans l’exemple ci-dessus, JPEG a été sélectionné), vous pouvez diffuser des ressources en RVB, niveaux de gris ou CMJN. Dans le menu déroulant **[!UICONTROL Profil colorimétrique]**, vous pouvez sélectionner comment diffuser une ressource image CMJN pour l’utiliser pour l’impression. Notez également que vous pouvez appliquer d’autres paramètres pour accentuer vos images. Dans ce cas, le paramètre **[!UICONTROL Accentuation]** a été appliqué.
 
@@ -150,36 +151,36 @@ _Modification de la largeur et de la hauteur du paramètre d’image prédéfini
 
 Après avoir modifié votre paramètre d’image prédéfini et vidé le cache, toutes les images sont mises à jour et _sans changer_ les URL utilisées avec ce paramètre prédéfini, quelles qu’elles soient. Cela signifie que vous n’aurez pas à gérer de lien rompu et ou de redirection de page web.
 
-## Les visionneuses d’images, à 360° et de supports variés {#dm-journey-f}
+## Les ensembles d’images, visionneuses à 360° et visionneuses de supports variés {#dm-journey-f}
 
-Parmi les utilisations les plus courantes de Dynamic Media figure la possibilité de créer des visionneuses d’images, à 360° et de supports variés.
+Parmi les utilisations les plus courantes de Dynamic Media figure la possibilité de créer des ensemble d’images, des visionneuses à 360° et des visionneuses de supports variés.
 
-Les visionneuses d’images sont généralement composées d’une série de ressources d’image présentées comme une seule entité. Ces ensembles offrent aux utilisateurs une expérience de visionnage intégrée en leur permettant d’afficher différentes vues d’un élément en cliquant sur une miniature. Les visionneuses d’images permettent de présenter différentes vues d’un élément et offrent des outils pour zoomer et examiner les images de plus près. [Afficher une visionneuse d’images appelée « Running » utilisant la visionneuse Fenêtre déroulante](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running)
+Les ensemble d’images sont généralement composés d’une série de ressources d’image présentées comme une seule entité. Ces ensembles offrent aux utilisateurs une expérience de visionnage intégrée en leur permettant d’afficher différentes vues d’un élément en cliquant sur une miniature. Les ensembles d’images permettent de présenter différentes vues d’un élément et offrent des outils pour zoomer et examiner les images de plus près. [Afficher un ensemble d’images appelée « Running » utilisant la visionneuse Fenêtre déroulante](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running)
 
 Dans Dynamic Media, vous pouvez voir plusieurs images de chaussures de course. Il s’agit d’une gamme de produits que les ventes et le marketing souhaitent que les clients voient dans une seule présentation, c’est-à-dire une visionneuse d’images.
 
 ![Création d’une visionneuse d’images](/help/assets/dynamic-media/assets/dm-create-image-set.png)
 _Début de la création d’une visionneuse d’images_
 
-Pour créer la visionneuse d’images, choisissez **[!UICONTROL Visionneuse d’images]** dans le menu déroulant **[!UICONTROL Créer]**. Notez que le menu contient également des options pour créer une **[!UICONTROL visionneuse de supports variés]**, une **[!UICONTROL visionneuse à 360°]** et une **[!UICONTROL visionneuse de carrousel]**. Vous créez ces visionneuses de la même manière qu’une visionneuse d’images.
+Pour créer l’ensemble d’images, choisissez **[!UICONTROL Ensemble d’images]** dans le menu déroulant **[!UICONTROL Créer]**. Notez que le menu contient également des options pour créer une **[!UICONTROL visionneuse de supports variés]**, une **[!UICONTROL visionneuse à 360°]** et un **[!UICONTROL ensemble de carrousel]**. Vous créez ces ensembles de la même manière qu’un ensemble d’images.
 
 Une visionneuse de supports variés peut contenir des images, des visionneuses d’échantillons, des visionneuses à 360°, et des visionneuses des vidéos et de vidéos adaptatives. [Faites un essai](https://s7d9.scene7.com/s7viewers/html5/MixedMediaViewer.html?asset=Scene7SharedAssets/Mixed_Media_Set_Sample). Une visionneuse à 360° simule l’action consistant à faire pivoter un objet pour l’examiner. Les visionneuses à 360° permettent d’afficher des détails visuels importants sous n’importe quel angle. [Faites un essai](https://s7d9.scene7.com/s7viewers/html5/SpinViewer.html?asset=Scene7SharedAssets/SpinSet_Sample&stagesize=500,400){target="_blank"}.
 
-La création d’une visionneuse d’images est simple. Il vous suffit d’ajouter les ressources d’image que vous souhaitez inclure dans la visionneuse.
+La création d’un ensemble d’images est simple. Il vous suffit d’ajouter les ressources d’image que vous souhaitez inclure dans la visionneuse.
 
 ![Création d’une visionneuse d’images](/help/assets/dynamic-media/assets/dm-create-image-set-add-assets.png)
 _L’éditeur de visionneuse d’images vous permet d’ajouter des ressources d’image et de réorganiser leur aspect dans la visionneuse._
 
 Vous devez donner un nom à la visionneuse. Choisissez le nom avec soin, car vous ne pourrez pas le modifier plus tard ! Dans l’exemple ci-dessus, la visionneuse est appelée `Running`. Lorsque vous avez terminé, vous enregistrez la visionneuse.
 
-Et voici la visionneuse d’images `Running` dans Experience Manager Assets.
+Et voici l’ensemble d’images `Running` dans Experience Manager Assets.
 
 ![La visionneuse d’images Running dans Experience Manager Assets, en mode Carte](/help/assets/dynamic-media/assets/dm-image-set.png)
 _La visionneuse d’images `Running` dans Experience Manager Assets, en mode Carte._
 
-Après avoir créé une visionneuse d’images, de supports variés, à 360° ou de tout autre média interactif, vous voudrez voir comment elle s’affiche et se comporte pour un client. Dynamic Media dispose de nombreuses visionneuses intégrées qui vous permettent de le faire.
+Après avoir créé un ensemble d’images, une visionneuse de supports variés, une visionneuse à 360° ou tout autre média interactif, vous voudrez voir comment il s’affiche et se comporte pour les clientes et clients. Dynamic Media dispose de nombreuses visionneuses intégrées qui vous permettent de le faire.
 
-Vous commencez en sélectionnant la visionneuse d’images créée pour l’ouvrir dans un aperçu, comme illustré dans l’exemple suivant.
+Vous commencez en sélectionnant l’ensemble d’images créé pour l’ouvrir dans un aperçu, comme illustré dans l’exemple suivant.
 
 ![La visionneuse d’images Running dans l’aperçu, avec l’option Visionneuses sélectionnée](/help/assets/dynamic-media/assets/dm-image-set-viewer.png)
 _La visionneuse d’images `Running` d’images dans l’aperçu, avec l’option Visionneuses sélectionnée._
@@ -189,19 +190,19 @@ Dans l’aperçu, vous pouvez sélectionner les échantillons de chaussures de c
 ![La visionneuse d’images Running utilisant la visionneuse Fenêtre déroulante](/help/assets/dynamic-media/assets/dm-image-set-flyout-viewer.png)
 _La visionneuse d’images `Running` utilisant la visionneuse Fenêtre déroulante._
 
-Dans ce cas, l’observateur `Flyout` a été sélectionné. À ce stade, vous pouvez prévisualiser la visionneuse d’images dans l’observateur. Mais il est préférable de l’afficher dans votre navigateur, de la même manière que le verrait un client. Vous pouvez sélectionner **[!UICONTROL URL]** dans le coin inférieur gauche, puis copier l’URL et la coller dans votre navigateur. [Faites un essai](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&config=jpearldemo/Flyout){target="_blank"}.
+Dans ce cas, l’observateur `Flyout` a été sélectionné. À ce stade, vous pouvez prévisualiser l’ensemble d’images dans la visionneuse. Mais il est préférable de l’afficher dans votre navigateur, de la même manière que le verrait un client. Vous pouvez sélectionner **[!UICONTROL URL]** dans le coin inférieur gauche, puis copier l’URL et la coller dans votre navigateur. [Faites un essai](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&config=jpearldemo/Flyout){target="_blank"}.
 
-L’URL unique vous permet d’utiliser la visionneuse d’images et l’observateur in situ sur votre site web. Vous avez peut-être remarqué dans l’exemple précédent la mention **[!UICONTROL Incorporer]** à droite du bouton URL. En sélectionnant **[!UICONTROL Incorporer]**, vous pouvez copier le code de cette visionneuse d’images ou cet observateur et l’ajouter à une page web ou à un composant Experience Manager Sites.
+L’URL unique vous permet d’utiliser l’ensemble d’images et la visionneuse où cela s’avère nécessaire sur votre site web. Vous avez peut-être remarqué dans l’exemple précédent la mention **[!UICONTROL Incorporer]** à droite du bouton URL. En sélectionnant **[!UICONTROL Incorporer]**, vous pouvez copier le code de cet ensemble d’images ou de cette visionneuse et l’ajouter à une page web ou à un composant Experience Manager Sites.
 
 La visionneuse Fenêtre déroulante est une visionneuse prête à l’emploi par défaut dont vous pouvez modifier les propriétés. Vous pouvez également, de la même manière que vous créez un paramètre d’image prédéfini, créer votre propre observateur personnalisé.
 
-Maintenant, supposons que votre équipe de vente et de marketing n’aime pas la visionneuse Fenêtre déroulante. Ils aiment la fonction de zoom, mais souhaitent que les clients voient l’effet de zoom directement sur les chaussures. Dans ce cas, il vous suffit d’appliquer la visionneuse Zoom intégré à la visionneuse d’images, puis de copier et coller son URL dans votre navigateur pour voir comment elle se comporte. [Faites un essai](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&config=jpearldemo/InlineZoom){target="_blank"}.
+Maintenant, supposons que votre équipe de vente et de marketing n’aime pas la visionneuse Fenêtre déroulante. Ils aiment la fonction de zoom, mais souhaitent que les clients voient l’effet de zoom directement sur les chaussures. Dans ce cas, il vous suffit d’appliquer la visionneuse Zoom intégré à l’ensemble d’images, puis de copier et coller son URL dans votre navigateur pour voir comment il se comporte. [Faites un essai](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&config=jpearldemo/InlineZoom){target="_blank"}.
 
 Lorsque vous déplacez le pointeur de la souris sur la chaussure, vous effectuez un zoom avant sur cette image, et vous pouvez voir plus de détails en déplaçant le pointeur. Ce niveau de détail est proportionnel à la taille de l’image qui a été initialement téléchargée dans Dynamic Media.
 
 Que ce soit en tant que consommateur ou dans votre vie professionnelle, vous verrez des exemples de ce type sur différents sites web. Maintenant que vous connaissez l’envers du décor, vous savez comment tirer parti de la puissance de Dynamic Media pour votre travail et le site web de votre entreprise.
 
-Vous venez de lire des articles sur les visionneuses d’images et les visionneuses. Penchons-nous sur deux autres visionneuses et essayons-les sur des ressources uniques. Pour réinitialiser la visionneuse, cliquez sur le bouton **[!UICONTROL Actualiser]** dans le coin inférieur gauche.
+Vous venez de lire des articles sur les ensembles d’images et les visionneuses. Penchons-nous sur deux autres visionneuses et essayons-les sur des ressources uniques. Pour réinitialiser la visionneuse, cliquez sur le bouton **[!UICONTROL Actualiser]** dans le coin inférieur gauche.
 
 <!-- LEAVE THIS HIDDEN PATH IN THE DOCUMENTATION FOR DEMO PURPOSES [Flyout viewer with image set](http://www.partycity.com/girls-little-old-lady-costume-P750948.html) -->
 
@@ -216,7 +217,7 @@ Si vous souhaitez en savoir plus, lisez les documents ci-dessous pour explorer c
 _Dynamic Media Help topics_
 
 * [How to create image presets](/help/assets/dynamic-media/image-presets.md)
-* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=fr) that you can use in the Image Modifier field when you create an image preset
+* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) that you can use in the Image Modifier field when you create an image preset
 * [How to preview assets](/help/assets/dynamic-media/previewing-assets.md)
 * [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
 * [How to create Image sets](/help/assets/dynamic-media/image-sets.md)
@@ -226,7 +227,7 @@ _Dynamic Media Help topics_
 _Tutoriels Dynamic Media_
 
 * [Utilisation de Dynamic Media avec Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=fr)
-* [Bibliothèque de contenu Adobe Experience Manager](https://experienceleague.adobe.com/fr?lang=fr#recommended/solutions/experience-manager) (recherchez _Dynamic Media_)
+* [Bibliothèque de contenu Adobe Experience Manager](https://experienceleague.adobe.com/?lang=fr#recommended/solutions/experience-manager) (recherchez _Dynamic Media_)
 
 _Visionneuses Dynamic Media_
 

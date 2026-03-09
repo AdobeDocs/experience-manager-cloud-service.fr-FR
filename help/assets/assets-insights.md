@@ -4,11 +4,12 @@ description: Effectuez le suivi des évaluations des utilisateurs et des statist
 contentOwner: AG
 feature: Asset Insights, Asset Reports
 role: User, Leader
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 100%
+source-wordcount: '907'
+ht-degree: 99%
 
 ---
 
@@ -35,7 +36,7 @@ Pour afficher les statistiques d’utilisation des ressources, commencez par con
 
 Vous pouvez afficher les scores de statistiques sur les ressources à partir de la page des métadonnées.
 
-1. Dans l’interface utilisateur d’Assets, sélectionnez l’image, puis appuyez sur **[!UICONTROL Propriétés]** dans la barre d’outils.
+1. Dans l’interface d’utilisation d’Assets, sélectionnez l’image, puis cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils.
 1. Sur la page Propriétés, appuyez sur **[!UICONTROL Insights]**.
 1. Consultez les détails d’utilisation de la ressource dans l’onglet **[!UICONTROL Insights]**. La section **[!UICONTROL Score]** indique les scores totaux d’utilisation et de performances d’une ressource.
 
@@ -116,7 +117,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
 1. Une fois l’authentification réussie, les suites de rapports sont répertoriées dans la liste déroulante. Sélectionnez la **[!UICONTROL suite de rapports]** Adobe Analytics à partir de l’emplacement où vous souhaitez que les statistiques sur les ressources récupèrent les données. Cliquez sur **[!UICONTROL Ajouter]**.
 
-1. Une fois qu’[!DNL Experience Manager] a configuré votre suite de rapports, appuyez sur **[!UICONTROL Terminé]**.
+1. Une fois qu’[!DNL Experience Manager] a configuré votre suite de rapports, cliquez sur **[!UICONTROL Terminé]**.
 
 Pour plus d’informations, voir [Adobe Analytics Web Services](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html?lang=fr).
 

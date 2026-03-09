@@ -4,11 +4,12 @@ description: Découvrez comment créer des schémas de métadonnées pour des do
 contentOwner: AG
 feature: Metadata
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 78%
+source-wordcount: '1071'
+ht-degree: 77%
 
 ---
 

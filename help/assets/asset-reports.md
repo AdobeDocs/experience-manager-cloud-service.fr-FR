@@ -4,11 +4,12 @@ description: Des rapports sur vos ressources dans vous aident  [!DNL Adobe Exper
 contentOwner: AG
 feature: Asset Reports, Asset Management
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '973'
-ht-degree: 89%
+source-wordcount: '978'
+ht-degree: 88%
 
 ---
 
@@ -66,7 +67,7 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
 
    >[!NOTE]
    >
-   >Accédez à un **profil de produit Administrateur AEM** pour créer un rapport **Télécharger**. Voir [Attribuer des profils de produit AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) pour vous donner le droit d’accéder à un profil de produit Administrateur AEM.
+   >Accédez à un **profil de produit Administrateur AEM** pour créer un rapport **Télécharger**. Voir [Attribuer des profils de produit AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) pour vous donner le droit d’accéder à un profil de produit Administrateur AEM.
 
    ![Sélectionner le type de rapport](assets/choose_report.png)
 
@@ -156,7 +157,7 @@ Pour ajouter des colonnes personnalisées à ces rapports, procédez comme suit�
 
 1. Ajoutez le chemin de la propriété sous le nœud `jcr:content` dans CRXDE à l’aide du sélecteur de chemin de propriété. Vous pouvez également saisir le chemin d’accès dans le champ de chemin d’accès à la propriété.
 
-   ![Faites correspondre le chemin de la propriété des chemins dans jcr:content](assets/property_picker.png)
+   ![Mappez le chemin de propriété à partir des chemins dans jcr:content](assets/property_picker.png)
 
    Pour ajouter d’autres colonnes personnalisées, cliquez sur **[!UICONTROL Ajouter]** et répétez les étapes ci-dessus.
 

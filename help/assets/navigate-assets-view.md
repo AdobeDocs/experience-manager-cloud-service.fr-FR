@@ -2,11 +2,12 @@
 title: Interface utilisateur d’[!DNL Assets view]
 description: Comprendre l’interface utilisateur et de la navigation dans [!DNL Assets view].
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 8aae8b2219e60f0a9220aa34b53bb3c8e19232c1
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '986'
 ht-degree: 77%
 
 ---
@@ -77,7 +78,7 @@ Pour prévisualiser une ressource, sélectionnez-la et cliquez sur ![icône de d
 
 ![Aperçu d’une ressource](/help/assets/assets/navigate-file-folder-dm.png)
 
-**A** : revenez au dossier actuel ou au résultat de la recherche actuel dans le référentiel **B** : nom et format du fichier que vous prévisualisez **C** : affecter des tâches **D** : métadonnées avancées **E** : mots-clés et balises intelligentes **F** : commentaires et annotations **G** : afficher les tâches liées à la ressource sélectionnée **H** : [afficher et gérer les versions](/help/assets/manage-organize-assets-view.md#versions-of-assets)I **: afficher les rendus de l’image** J **: modifier l’image** K **&#x200B;**&#x200B;: afficher les rendus Dynamic Media, y compris le recadrage intelligent et les rendus avec fonctionnalités OpenAPI. **L** : métadonnées de base **M** : métadonnées avancées **N** : mots-clés et balises intelligentes **O** : passez à la ressource précédente ou suivante dans le dossier actif sans revenir au dossier **P** : aperçu plus détaillé. Zoom, plein écran et d’autres options.
+**A** : revenez au dossier actuel ou au résultat de la recherche actuel dans le référentiel **B** : nom et format du fichier que vous prévisualisez **C** : affecter des tâches **D** : métadonnées avancées **E** : mots-clés et balises intelligentes **F** : commentaires et annotations **G** : afficher les tâches liées à la ressource sélectionnée **H** : [afficher et gérer les versions](/help/assets/manage-organize-assets-view.md#versions-of-assets)I **: afficher les rendus de l’image** J **: modifier l’image** K **** : afficher les rendus Dynamic Media, y compris le recadrage intelligent et les rendus avec fonctionnalités OpenAPI. **L** : métadonnées de base **M** : métadonnées avancées **N** : mots-clés et balises intelligentes **O** : passez à la ressource précédente ou suivante dans le dossier actif sans revenir au dossier **P** : aperçu plus détaillé. Zoom, plein écran et d’autres options.
 
 Vous pouvez également prévisualiser des vidéos.
 

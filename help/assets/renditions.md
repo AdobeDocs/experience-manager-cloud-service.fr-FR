@@ -1,13 +1,14 @@
 ---
 title: Affichage et gestion des rendus dans Experience Manager Assets
 description: Découvrez comment AEM Assets et Dynamic Media simplifient la gestion efficace des images avec des rendus d’image statiques et dynamiques.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 1%
+source-wordcount: '652'
+ht-degree: 2%
 
 ---
 
@@ -22,7 +23,7 @@ Les rendus sont classés comme statiques et dynamiques, chaque type présentant 
 ## Rendus statiques {#static-renditions}
 
 Les rendus statiques sont des versions prégénérées de ressources numériques, généralement créées lors de l’ingestion ou de la modification de ressources. Ces rendus sont optimisés pour des objectifs et des plateformes spécifiques, tels que des miniatures web, des formats compatibles avec les appareils mobiles pour le responsive design ou des versions haute résolution pour l’impression, afin d’assurer une expérience efficace et cohérente.
-Découvrez comment [&#x200B; afficher et télécharger des rendus statiques &#x200B;](#view-and-download-static-renditions) dans Experience Manager Assets.
+Découvrez comment [ afficher et télécharger des rendus statiques ](#view-and-download-static-renditions) dans Experience Manager Assets.
 
 ### Affichage et téléchargement des rendus statiques{#view-and-download-static-renditions}
 
@@ -49,7 +50,7 @@ Ces rendus permettent aux entreprises de fournir des expériences personnalisée
    * [Paramètres d’image prédéfinis](/help/assets/dynamic-media/managing-image-presets.md)
 
   Vous pouvez [changer de vue](/help/assets/assets-view-introduction.md#how-to-access-assets-view) ultérieurement pour prévisualiser les rendus dynamiques dans la vue Assets.
-* Publiez des ressources dans Dynamic Media pour rendre les rendus Dynamic Media disponibles dans la vue Assets. Pour plus d’informations, voir [Publication d’Assets dans AEM et Dynamic Media](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm).
+* Publiez des ressources dans Dynamic Media pour rendre les rendus Dynamic Media disponibles dans la vue Assets. Pour plus d’informations, voir [Publication d’Assets dans AEM et Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm).
 
 
 ### Affichage et téléchargement des rendus Dynamic Media {#view-download-dm-renditions}

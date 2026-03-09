@@ -3,13 +3,14 @@ title: Métadonnées en cascade
 description: Cet article décrit comment définir des métadonnées en cascade pour des ressources en mode Ressources.
 feature: Metadata
 role: Admin, User
-source-git-commit: 2bb309afc372fe18ce274a2813ed25cba22eb4de
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
+exl-id: e7c80792-f4db-4604-a51f-b20f066b2c1b
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1214'
+source-wordcount: '1220'
 ht-degree: 29%
 
 ---
-
 
 # Vue Assets des métadonnées en cascade{#cascading-metadata-assets-view}
 
@@ -156,5 +157,4 @@ Pour modifier un formulaire de métadonnées existant, procédez comme suit :
 
 * Faites des commentaires sur la documentation en utilisant l’option [!UICONTROL Modifier cette page] ![modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![créer un problème GitHub](assets/do-not-localize/github-issue.png) disponible dans la barre latérale droite.
 
-* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr#support).
-
+* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&lang=fr#support).

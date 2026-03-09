@@ -4,11 +4,12 @@ description: Découvrez comment ajouter un filigrane numérique à vos ressource
 contentOwner: AG
 feature: Asset Management,Publishing
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 87%
+source-wordcount: '331'
+ht-degree: 86%
 
 ---
 
@@ -48,7 +49,7 @@ Pour configurer [!DNL Experience Manager] de façon à appliquer un filigrane à
 
    Assurez-vous que vous activez le bouton (bascule) **[!UICONTROL Filigrane]** lors de la création du profil de traitement.
 
-1. [Appliquez les profils de traitement à un dossier](/help/assets/asset-microservices-configure-and-use.md#use-profiles) pour créer des ressources en filigrane.
+1. [Appliquez les profils de traitement à un dossier](/help/assets/asset-microservices-configure-and-use.md#use-profiles) pour créer des ressources avec filigrane.
 
 ## Conseils et restrictions {#tips-limitations-bestpractices}
 

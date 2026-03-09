@@ -3,13 +3,14 @@ title: Améliorez la découverte de contenu avec les métadonnées générées p
 description: Découvrez comment améliorer la découverte de contenu avec les métadonnées générées par l’IA dans la vue Administration
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
+exl-id: c76379e3-6bdf-4dba-9d2b-f2120f85052f
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '675'
 ht-degree: 10%
 
 ---
-
 
 # Amélioration de la découverte de contenu avec les métadonnées générées par l’IA {#ai-smart-tags}
 

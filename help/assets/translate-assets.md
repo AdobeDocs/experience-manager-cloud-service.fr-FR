@@ -4,10 +4,11 @@ description: Découvrez comment automatiser les workflows de traduction des ress
 contentOwner: AG
 feature: Asset Management, Translation
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2615'
+source-wordcount: '2621'
 ht-degree: 84%
 
 ---
@@ -30,11 +31,11 @@ Traduction automatique des ressources dans AEM : le service de traduction autom
 <!--
 We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only ONE UBER article.
 
-https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/translation-projects.html?lang=fr
-https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/preparing-assets-for-translation.html?lang=fr
-[Apply translation cloud services to folders](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/transition-cloud-services.html?lang=fr)
+https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/translation-projects.html
+https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/preparing-assets-for-translation.html
+[Apply translation cloud services to folders](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/transition-cloud-services.html)
 
-One of these articles is a copy of [Preparing Content for Translation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-prep.html?lang=fr
+One of these articles is a copy of [Preparing Content for Translation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-prep.html
 
 -->
 
@@ -115,7 +116,7 @@ Si vous utilisez cette option, les ressources à traduire sont copiées dans la 
 1. Accédez à la console Projets. Le dossier de traduction est copié dans la console Projets.
 1. Ouvrez le dossier pour afficher le projet de traduction.
 1. Sélectionnez le projet pour ouvrir la page de détails.
-1. Pour afficher l’état de la tâche de traduction, cliquez sur les points de suspension en bas de la mosaïque **[!UICONTROL Tâche de traduction]**. <!-- For more details around job statuses, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job). -->
+1. Pour afficher le statut de la tâche de traduction, cliquez sur les points de suspension en bas de la vignette **[!UICONTROL Tâche de traduction]**. <!-- For more details around job statuses, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job). -->
 1. Accédez à l’interface utilisateur d’Assets et ouvrez la page Propriétés de chacune des ressources traduites afin d’afficher les métadonnées traduites.
 
 >[!NOTE]
@@ -127,7 +128,7 @@ Si vous utilisez cette option, les ressources à traduire sont copiées dans la 
 Si vous utilisez cette option, le workflow de traduction s’exécute pour les ressources que vous ajoutez au dossier source après l’exécution d’un précédent workflow de traduction. Seules les ressources nouvellement ajoutées sont copiées dans le dossier cible contenant les ressources précédemment traduites. Dans ce cas, aucun nouveau projet de traduction n’est créé.
 
 1. Dans l’interface utilisateur d’Assets, accédez au dossier source qui contient des ressources non traduites.
-1. Sélectionnez une ressource à traduire, puis ouvrez le **[!UICONTROL volet Référence]**. La section **[!UICONTROL Copies de langue]** indique le nombre de copies de traduction actuellement disponibles.
+1. Sélectionnez une ressource à traduire, puis ouvrez le **[!UICONTROL volet Référence]**. La section **[!UICONTROL Copies linguistiques]** indique le nombre de copies de traduction actuellement disponibles.
 1. Sélectionnez **[!UICONTROL Copies de langue]** sous **[!UICONTROL Copies]**. La liste des copies de traduction disponibles s’affiche.
 1. Sélectionnez **[!UICONTROL Créer et traduire]** en bas de la page.
 1. Dans la liste **[!UICONTROL Langues cibles]**, choisissez les langues pour lesquelles vous souhaitez créer une structure de dossiers.
@@ -155,7 +156,7 @@ Si vous utilisez cette option, le workflow de traduction s’exécute pour les r
 
 ### Mise à jour des copies de langue {#update-language-copies}
 
-Exécutez ce workflow afin de traduire un ensemble de ressources supplémentaire et de l’intégrer à une copie linguistique pour un ensemble de paramètres régionaux en particulier. Dans ce cas, les ressources traduites sont ajoutées au dossier cible qui contient des ressources précédemment traduites. Selon le choix des options, un projet de traduction est créé ou un projet de traduction existant est mis à jour pour les nouvelles ressources. Le workflow Màj des copies de langue comprend les options suivantes :
+Exécutez ce workflow afin de traduire un ensemble de ressources supplémentaire et de l’intégrer à une copie linguistique pour un ensemble de paramètres régionaux en particulier. Dans ce cas, les ressources traduites sont ajoutées au dossier cible qui contient des ressources précédemment traduites. Selon le choix des options, un projet de traduction est créé ou un projet de traduction existant est mis à jour pour les nouvelles ressources. Le workflow Mettre à jour des copies linguistiques comprend les options suivantes :
 
 * Créer un projet de traduction
 * Ajouter à un projet de traduction existant

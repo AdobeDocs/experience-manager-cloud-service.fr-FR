@@ -3,10 +3,11 @@ title: Activer Assets Ultimate
 description: Découvrez comment activer Assets Ultimate pour les nouveaux clients et les clients existants.
 feature: Asset Management
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 45cd8ccd-e5cf-42cd-aa7f-4ae59d0587f7
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1408'
 ht-degree: 3%
 
 ---
@@ -53,7 +54,7 @@ Votre instance AEM as a Cloud Service sur Admin Console comprend les profils de 
 
 Si vous avez activé Content Hub pour Assets as a Cloud Service, une nouvelle instance est créée dans AEM Assets as a Cloud Service sur Admin Console avec `delivery` comme suffixe :
 
-![Nouvelle instance pour Content Hub &#x200B;](assets/new-instance-content-hub.png)
+![Nouvelle instance pour Content Hub ](assets/new-instance-content-hub.png)
 
 >[!NOTE]
 >
@@ -131,7 +132,7 @@ Votre instance AEM as a Cloud Service sur Admin Console comprend maintenant les 
 
 Si Content Hub doit être activé, cliquez sur l’icône Autres options (...) sur le nom du programme dans Cloud Manager et sélectionnez **[!UICONTROL Modifier le programme]**. Développez **[!UICONTROL Assets Ultimate]** puis cliquez sur **[!UICONTROL Content Hub]**. Cette étape active Content Hub pour Assets Ultimate. Une nouvelle instance a été créée dans AEM Assets as a Cloud Service sur Admin Console avec `delivery` comme suffixe :
 
-![Nouvelle instance pour Content Hub &#x200B;](assets/new-instance-content-hub.png)
+![Nouvelle instance pour Content Hub ](assets/new-instance-content-hub.png)
 
 >[!NOTE]
 >

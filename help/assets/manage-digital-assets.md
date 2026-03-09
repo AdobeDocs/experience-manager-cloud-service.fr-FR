@@ -5,10 +5,11 @@ contentOwner: AG
 mini-toc-levels: 3
 feature: Asset Management, Publishing,Collaboration, Asset Processing
 role: User, Developer, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '4277'
+source-wordcount: '4283'
 ht-degree: 82%
 
 ---

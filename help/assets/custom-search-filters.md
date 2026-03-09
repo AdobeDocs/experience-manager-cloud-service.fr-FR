@@ -2,10 +2,11 @@
 title: Filtres de recherche personnalisés
 description: En savoir plus sur la personnalisation du formulaire des filtres de recherche
 role: User, Leader, Developer
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 383e8165-439e-447b-a19d-d5446238a13f
-source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1431'
 ht-degree: 12%
 
 ---
@@ -42,7 +43,7 @@ Personnalisation des filtres de recherche AEM Assets ne peut être mappé qu’a
 
 Vous pouvez utiliser les actions suivantes sur un formulaire de filtres configuré :
 
-* **[!UICONTROL Personnaliser] :** cliquez sur cette option pour ajouter ou modifier le formulaire. Vous pouvez déposer des éléments de filtre depuis les [&#x200B; filtres personnalisés &#x200B;](#available-custom-filters) sur la zone de travail ou les réorganiser si nécessaire.
+* **[!UICONTROL Personnaliser] :** cliquez sur cette option pour ajouter ou modifier le formulaire. Vous pouvez déposer des éléments de filtre depuis les [ filtres personnalisés ](#available-custom-filters) sur la zone de travail ou les réorganiser si nécessaire.
 
 * **[!UICONTROL Aperçu] :** cliquez pour passer en revue les modifications.
 
@@ -435,7 +436,7 @@ Pour supprimer un filtre de recherche, procédez comme suit :
 
 1. Accédez à **[!UICONTROL Paramètres]** > **[!UICONTROL Paramètres généraux]**.
 1. Accédez à l’onglet **[!UICONTROL Rechercher]**. Cliquez sur **[!UICONTROL Personnaliser]** pour configurer votre formulaire de recherche.
-1. Le formulaire [!UICONTROL &#x200B; Configurer les filtres &#x200B;] s’affiche. Assurez-vous d’être en mode d’édition afin de pouvoir apporter des modifications au modèle.
+1. Le formulaire [!UICONTROL  Configurer les filtres ] s’affiche. Assurez-vous d’être en mode d’édition afin de pouvoir apporter des modifications au modèle.
 1. Sélectionnez l’élément de filtre à supprimer. Sélectionnez par exemple **[!UICONTROL Hauteur de l’image]**.
 1. Cliquez sur **[!UICONTROL Supprimer une catégorie]** pour supprimer l’élément de filtre. L’élément **[!UICONTROL Hauteur de l’image]** est supprimé de la zone de travail.
 1. Cliquez sur **[!UICONTROL Confirmer]** pour enregistrer le formulaire.

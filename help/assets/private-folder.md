@@ -4,11 +4,12 @@ description: Apprenez à créer un dossier privé dans [!DNL Adobe Experience Ma
 contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: d48f6daf-af81-4024-bff2-e8bf6d683b0c
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 97%
+source-wordcount: '627'
+ht-degree: 96%
 
 ---
 

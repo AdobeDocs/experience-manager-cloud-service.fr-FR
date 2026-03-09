@@ -4,11 +4,12 @@ description: '[!DNL Experience Manager Assets] et Media Library pour la gestion 
 contentOwner: AG
 feature: Asset Management, Publishing
 role: User, Developer, Leader
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 95%
+source-wordcount: '591'
+ht-degree: 94%
 
 ---
 

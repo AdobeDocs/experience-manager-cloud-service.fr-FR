@@ -2,10 +2,11 @@
 title: Gestion des collections dans Content Hub
 description: Découvrez comment gérer les collections dans Content Hub
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 12bb550ff275c84bc60869e91e953993aab57aa5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1914'
+source-wordcount: '1920'
 ht-degree: 1%
 
 ---
@@ -30,7 +31,7 @@ Une collection fait référence à un ensemble de ressources pouvant être parta
 
 Il permet aux utilisateurs et utilisatrices d’accéder facilement aux différentes ressources disponibles dans [!DNL Content Hub] et de les gérer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3445302/?captions=fre_fr&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on){transcript=true}
 
 ## Conditions préalables {#prerequisites}
 

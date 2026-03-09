@@ -4,21 +4,22 @@ description: Découvrez comment appliquer des paramètres d’image prédéfinis
 contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 100%
+source-wordcount: '309'
+ht-degree: 98%
 
 ---
 
 # Application de paramètres d’image prédéfinis Dynamic Media {#applying-image-presets}
 
-Les préréglages d’image permettent aux ressources de fournir dynamiquement des images de différentes tailles, dans différents formats ou avec d’autres propriétés d’image qui sont générées dynamiquement. Vous pouvez choisir un paramètre prédéfini lors de l’exportation afin de reformater les images selon les spécifications définies par votre administrateur.
+Les paramètres d’image prédéfinis permettent aux ressources de fournir dynamiquement des images de différentes tailles, dans différents formats ou avec d’autres propriétés d’image qui sont générées dynamiquement. Vous pouvez choisir un paramètre prédéfini lors de l’exportation afin de reformater les images selon les spécifications définies par votre administrateur.
 
 Vous pouvez en outre sélectionner un paramètre d’image prédéfini qui est réactif (désigné par le bouton **[!UICONTROL RESS]** une fois que vous l’avez sélectionné).
 
-[Les administrateurs peuvent créer et configurer des paramètres d’image prédéfinis](managing-image-presets.md).
+[L’administration peut créer et configurer des paramètres d’image prédéfinis](managing-image-presets.md).
 
 >[!NOTE]
 >
@@ -47,4 +48,4 @@ Vous pouvez appliquer un paramètre d’image prédéfini à une image lorsque v
    >
    >Si la ressource *et* le paramètre d’image prédéfini ne sont pas encore publiés, le bouton **[!UICONTROL URL]** (ou les boutons URL et RESS, le cas échéant) n’est pas disponible.
    >
-   >Notez également que les paramètres prédéfinis de l’image sont automatiquement publiés sur un serveur Dynamic Media S7.
+   >Notez également que les paramètres d’image prédéfinis sont automatiquement publiés sur un serveur Dynamic Media S7.

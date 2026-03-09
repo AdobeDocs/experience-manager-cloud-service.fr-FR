@@ -4,11 +4,12 @@ description: Apprenez comment lier des URL à votre application web dans Dynamic
 contentOwner: Rick Brough
 feature: Publishing,Upload,Viewer Presets,Image Presets,Video
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1281'
-ht-degree: 100%
+source-wordcount: '1287'
+ht-degree: 99%
 
 ---
 
@@ -24,7 +25,7 @@ Pour placer ces chaînes URL dans vos pages et applications web, copiez-les depu
 >
 >Les chaînes URL ne sont disponibles que pour les rendus dynamiques de ressources. Elles ne sont actuellement pas disponibles pour les ressources statiques qui se trouvent dans DAM et non sur le serveur Dynamic Media. Le bouton URL ne s’affiche pas pour les rendus statiques.
 
-Voir aussi [Intégration de la visionneuse de vidéos ou d’images dans une page web](embed-code.md).
+Voir aussi [Incorporation de la visionneuse de vidéos ou d’images dans une page web](embed-code.md).
 
 Voir aussi [Liaison d’URL YouTube à une application web](video.md).
 
@@ -34,7 +35,7 @@ Voir aussi [Chargement de ressources](/help/assets/manage-digital-assets.md#uplo
 
 ## Obtention d’une URL pour une ressource {#obtaining-a-url-for-an-asset}
 
-Vous pouvez obtenir une chaîne d’URL générée par un paramètre prédéfini d’image ou de visionneuse. Une fois que vous avez copié l’URL, elle se trouve dans le presse-papiers ce qui vous permet de la coller dans les pages de votre site web ou de votre application.
+Vous pouvez obtenir une chaîne d’URL générée par un paramètre d’image ou de visionneuse prédéfini. Une fois que vous avez copié l’URL, elle se trouve dans le presse-papiers ce qui vous permet de la coller dans les pages de votre site web ou de votre application.
 
 >[!NOTE]
 >
@@ -70,7 +71,7 @@ Il existe plusieurs manières d’obtenir une chaîne d’URL. Toutefois, les é
 
      ![chlimage_1-270](assets/chlimage_1-270.png)
 
-   * Si vous avez sélectionné une visionneuse à 360°, une visionneuse d’images, un ensemble de carrousel ou une vidéo, dans le menu déroulant, sélectionnez **[!UICONTROL Visionneuses]**.
+   * Si vous avez sélectionné une visionneuse à 360°, un ensemble d’images, un ensemble de carrousel ou une vidéo, dans le menu déroulant, sélectionnez **[!UICONTROL Visionneuses]**.
 
      Dans le rail de gauche, sélectionnez un nom de paramètre prédéfini de la visionneuse. Un aperçu de la visionneuse ou de la vidéo s’ouvre dans une page distincte.
 

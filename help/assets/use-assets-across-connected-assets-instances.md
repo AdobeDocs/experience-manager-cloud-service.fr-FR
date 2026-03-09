@@ -5,10 +5,11 @@ contentOwner: AK
 mini-toc-levels: 2
 feature: Asset Management, Connected Assets, Asset Distribution
 role: Admin, User, Developer
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '3869'
+source-wordcount: '3875'
 ht-degree: 98%
 
 ---
@@ -25,7 +26,7 @@ Dans les grandes entreprises, l’infrastructure requise pour créer des sites w
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser Dynamic Media avec des fonctionnalités OpenAPI pour connecter AEM Assets as a Cloud Service et AEM Sites. Voir [&#x200B; Intégration d’AEM Assets distant à AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md).
+>Adobe recommande d’utiliser Dynamic Media avec des fonctionnalités OpenAPI pour connecter AEM Assets as a Cloud Service et AEM Sites. Voir [ Intégration d’AEM Assets distant à AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md).
 
 La fonctionnalité Ressources connectées prend en charge le cas d’utilisation ci-dessus en intégrant [!DNL Experience Manager Sites] et [!DNL Experience Manager Assets]. Les utilisateurs peuvent créer dans [!DNL Sites] des pages web qui utilisent les ressources numériques à partir de déploiements [!DNL Assets] distincts.
 
@@ -213,7 +214,7 @@ Utilisez la configuration ci-dessus pour découvrir l’expérience de création
 
    *Figure : Notification concernant la récupération asynchrone en arrière-plan des ressources.*
 
-1. [!DNL Experience Manager] affiche la liste complète des ressources utilisées sur une page lorsqu’elle est publiée. Veillez à bien récupérer les ressources distantes au moment de la publication. Pour vérifier le statut de chaque ressource récupérée, reportez-vous à l’interface utilisateur des [tâches asynchrones](/help/operations/asynchronous-jobs.md).
+1. [!DNL Experience Manager] affiche la liste complète des ressources utilisées sur une page lorsqu’elle est publiée. Veillez à bien récupérer les ressources distantes au moment de la publication. Pour vérifier le statut de chaque ressource récupérée, reportez-vous à l’interface d’utilisation des [tâches asynchrones](/help/operations/asynchronous-jobs.md).
 
    >[!NOTE]
    >
@@ -366,7 +367,7 @@ Pour résoudre les erreurs courantes, procédez comme suit :
 
 * Si les références distantes ne sont pas récupérées et génèrent un message d’erreur, vérifiez si le déploiement de [!DNL Sites] est disponible et recherchez les problèmes de connectivité réseau. Réessayez ultérieurement pour vérifier si l’erreur est toujours générée. Le déploiement [!DNL Assets] tente à deux reprises d’établir une connexion avec le déploiement [!DNL Sites], puis signale un échec.
 
-  ![Échec de l’extraction des références distantes de la ressource](assets/reference-report-failure.png)
+  ![Échec de la récupération des références distantes de la ressource](assets/reference-report-failure.png)
 
 **Voir également**
 

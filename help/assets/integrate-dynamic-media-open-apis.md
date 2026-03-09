@@ -2,11 +2,12 @@
 title: Intégrer AEM Assets à des applications en aval
 description: Intégrer AEM Assets à des applications en aval
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: abd48b5d-2b43-453c-8eb6-31ff509245ca
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 17%
+source-wordcount: '161'
+ht-degree: 18%
 
 ---
 

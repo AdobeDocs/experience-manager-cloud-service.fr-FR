@@ -4,10 +4,11 @@ description: Dynamic Media est fourni avec un profil prédéfini de codage vid�
 contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '3694'
+source-wordcount: '3700'
 ht-degree: 97%
 
 ---
@@ -94,7 +95,7 @@ Le tableau suivant identifie les bonnes pratiques à appliquer lors du codage de
 
 ## À propos de l’utilisation du recadrage intelligent dans les profils vidéo {#about-smart-crop-video}
 
-Le recadrage intelligent de vidéo est une fonctionnalité en option disponible dans les profils vidéo. Il s’agit d’un outil qui utilise l’IA d’Adobe pour détecter et recadrer automatiquement le point focal dans toute vidéo adaptative ou progressive que vous avez chargée, quelle que soit sa taille.
+Le recadrage intelligent de vidéo est une fonctionnalité en option disponible dans les profils vidéo. Il s’agit d’un outil qui utilise Adobe AI pour détecter et recadrer automatiquement le point focal dans toute vidéo adaptative ou progressive que vous avez chargée, quelle que soit sa taille.
 
 Les formats vidéo pris en charge par le recadrage intelligent sont MP4, MKV, MOV, AVI, FLV et WMV.
 
@@ -104,7 +105,7 @@ La taille maximale de fichier vidéo prise en charge par le recadrage intelligen
 * 30 images par seconde (i/s)
 * Taille de fichier de 300 Mo.
 
-L’IA d’Adobe est limitée à 9 000 images. C’est-à-dire cinq minutes à 30 i/s. Si votre vidéo présente une fréquence d’images (IPS) supérieure, la durée de vidéo maximale prise en charge diminue. Par exemple, une vidéo de 60 i/s doit durer deux minutes et demie pour être prise en charge par l’IA d’Adobe et le recadrage intelligent.
+Adobe AI est limité à 9 000 images. C’est-à-dire cinq minutes à 30 i/s. Si votre vidéo présente une fréquence d’images (IPS) supérieure, la durée de vidéo maximale prise en charge diminue. Par exemple, une vidéo de 60 i/s doit durer deux minutes et demie pour être prise en charge par Adobe AI et le recadrage intelligent.
 
 ![Recadrage intelligent de vidéo](assets/smart-crop-video.png)
 

@@ -4,10 +4,11 @@ description: Mettez en place des workflows de révision pour les ressources dans
 contentOwner: AG
 feature: Collections, Collaboration
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '826'
 ht-degree: 73%
 
 ---

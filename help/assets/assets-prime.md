@@ -3,10 +3,11 @@ title: Assets Prime
 description: Découvrez les principaux aspects d’Assets Prime, tels que les principaux avantages, les types d’utilisateurs et leurs privilèges.
 feature: Asset Management
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
-source-git-commit: 504464ed1277c1d9629ae1f96892ebaa5ef701c8
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1106'
 ht-degree: 15%
 
 ---
@@ -94,7 +95,7 @@ Vous pouvez commencer à ajouter des utilisateurs ou des groupes d’utilisateur
 
 Si vous avez activé Content Hub pour Assets as a Cloud Service, une nouvelle instance est créée dans AEM Assets as a Cloud Service sur Admin Console avec `delivery` comme suffixe :
 
-![Nouvelle instance pour Content Hub &#x200B;](assets/new-instance-content-hub.png)
+![Nouvelle instance pour Content Hub ](assets/new-instance-content-hub.png)
 
 >[!NOTE]
 >

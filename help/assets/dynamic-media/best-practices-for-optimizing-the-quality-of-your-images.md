@@ -4,11 +4,12 @@ description: Découvrez les bonnes pratiques qui vous permettent d’optimiser l
 contentOwner: Rick Brough
 feature: Asset Management, Best Practices
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1648'
-ht-degree: 72%
+source-wordcount: '1654'
+ht-degree: 71%
 
 ---
 
@@ -27,7 +28,7 @@ Adobe Experience Manager inclut plus de 100 commandes de diffusion d’images D
 **Imagerie dynamique :**
 
 * L’activation de l’imagerie dynamique dans Dynamic Media permet d’optimiser automatiquement le format, la taille et la qualité des images en fonction des fonctionnalités du navigateur client.
-Vous souhaitez en savoir plus ? Accédez à [&#x200B; Imagerie dynamique &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq).
+Vous souhaitez en savoir plus ? Accédez à [ Imagerie dynamique ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq).
 * Il améliore les performances de diffusion des images en ajustant dynamiquement ces paramètres.
 * Vous pouvez évaluer l’imagerie dynamique à l’aide de l’outil d’auto-évaluation [Instantané](https://snapshot.scene7.com/).
 
@@ -87,7 +88,7 @@ L’accentuation des images est l’aspect le plus complexe du contrôle des ima
 
 * L’article technique [Bonnes pratiques concernant la qualité d’image et l’accentuation de la netteté avec Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) s’applique également à Experience Manager.
 
-* Regarder la vidéo [Utilisation de l’accentuation d’image avec Experience Manager – Dynamic Media](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
+* Regarder la vidéo [Utilisation de l’accentuation d’image avec Experience Manager – Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
 
 Avec Experience Manager, vous pouvez accentuer les images lors de l’ingestion, lors de la diffusion, ou les deux. En général, cependant, il est préférable d’accentuer les images en utilisant une seule méthode ou l’autre, mais pas les deux. L’accentuation des images lors de la diffusion, sur une URL, vous donne généralement les meilleurs résultats.
 
@@ -111,7 +112,7 @@ Vous pouvez utiliser deux méthodes d’accentuation d’image :
 
       * L’article technique [Bonnes pratiques concernant la qualité d’image et l’accentuation de la netteté avec Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) s’applique également à Experience Manager.
 
-      * Regarder la vidéo [Utilisation de l’accentuation d’image avec Experience Manager – Dynamic Media](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
+      * Regarder la vidéo [Utilisation de l’accentuation d’image avec Experience Manager – Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
 
       * Experience Manager permet également de contrôler un quatrième paramètre : monochrome (0,1). Ce paramètre détermine si le masquage flou est appliqué séparément à chaque composante de couleur en utilisant la valeur 0, ou à la luminosité/l’intensité de l’image en utilisant la valeur 1.
 
@@ -126,7 +127,7 @@ Augmentez graduellement la valeur de 1,75 à 4. Si l’accentuation ne vous conv
 
 Laissez le paramètre monochrome sur 0.
 
-### Bonnes pratiques relatives à la compression JPEG (`&qlt=`) {#best-practices-for-jpef-compression-qlt}
+### Recommandations relatives à la compression JPEF (`&qlt=`) {#best-practices-for-jpef-compression-qlt}
 
 * Ce paramètre contrôle la qualité du codage des JPG. Une valeur élevée produit une image de meilleure qualité, mais un fichier plus volumineux ; en revanche, une valeur faible signifie une image de qualité inférieure mais un fichier plus petit. La plage de ce paramètre est 0 à 100.
 * Pour optimiser la qualité, ne définissez pas la valeur du paramètre sur 100. La différence entre un réglage de 90 ou 95 et 100 est presque imperceptible. Et pourtant, 100 augmente inutilement la taille du fichier image. En conséquence, pour optimiser la qualité, mais éviter que les fichiers image deviennent trop volumineux, définissez `qlt= value` sur 90 ou 95.
@@ -139,7 +140,7 @@ Laissez le paramètre monochrome sur 0.
 
 La bonne pratique pour la compression JPG consiste à utiliser `&qlt=85,0`.
 
-## Bonnes pratiques relatives au dimensionnement JPEG (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
+## Bonnes pratiques relatives au dimensionnement de JPEG (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
 
 Le paramètre `jpegSize` est utile pour garantir qu’une image n’excède pas une certaine taille pour sa diffusion sur les appareils dont la mémoire est limitée.
 
@@ -158,10 +159,10 @@ Cette combinaison de paramètres produit d’excellents résultats dans la plupa
 
 Si l’image nécessite davantage d’optimisation, ajustez progressivement les paramètres d’accentuation (masquage flou) en commençant par un rayon défini sur 0,2 ou 0,3. Ensuite, augmentez graduellement la quantité de 1,75 à un maximum de 4 (équivalent à 400 % dans Photoshop). Vérifiez que le résultat souhaité est obtenu.
 
-Si les résultats de l’accentuation ne sont toujours pas satisfaisants, augmentez le rayon par incréments décimaux. Pour chaque incrément décimal, relancez la quantité à 1,75 et augmentez-la progressivement à 4. Répétez cette procédure jusqu’à obtenir le résultat souhaité. Bien que les valeurs ci-dessus soient une approche validée par les studios de création, n’oubliez pas que vous pouvez commencer par d’autres valeurs et suivre d’autres stratégies. Que les résultats vous conviennent ou non est une question subjective, par conséquent l&#39;expérimentation structurée est la clé.
+Si les résultats de l’accentuation ne sont toujours pas satisfaisants, augmentez le rayon par incréments décimaux. Pour chaque incrément décimal, redémarrez la quantité à 1,75 et augmentez-la progressivement à 4. Répétez cette procédure jusqu’à obtenir le résultat souhaité. Bien que les valeurs ci-dessus soient une approche validée par les studios de création, n’oubliez pas que vous pouvez commencer par d’autres valeurs et suivre d’autres stratégies. Que les résultats vous conviennent ou non est une question subjective, par conséquent l&#39;expérimentation structurée est la clé.
 
 Au fur et à mesure que vous testez, les suggestions générales suivantes sont utiles pour optimiser votre workflow :
 
 * Testez différents paramètres en temps réel, directement sur une URL.
 * Gardez à l’esprit que vous pouvez regrouper les commandes de diffusion d’images Dynamic Media dans un paramètre d’image prédéfini. Il s’agit en outre d’une bonne pratique. Un paramètre d’image prédéfini est, en fait, constitué de macros de commande d’URL avec des noms de paramètres prédéfinis personnalisés tels que `$thumb_low$` et `&product_high$`. Le nom du paramètre prédéfini personnalisé dans un chemin URL appelle ces paramètres prédéfinis. Cette fonctionnalité vous aide à gérer les commandes et les paramètres de qualité pour différents modèles d’utilisation des images sur vos sites web et raccourcit la longueur globale des URL.
-* Experience Manager propose également des méthodes plus élaborées permettant d’optimiser la qualité des images, par exemple en accentuant les images lors de l’ingestion. Pour affiner et optimiser les résultats de rendu, [les services de consulting d’Adobe](https://business.adobe.com/fr/customers/consulting-services/main.html) peuvent vous aider à personnaliser vos informations et les bonnes pratiques.
+* Experience Manager propose également des méthodes plus élaborées permettant d’optimiser la qualité des images, par exemple en accentuant les images lors de l’ingestion. Pour affiner et optimiser les résultats de rendu, [les services de consulting d’Adobe](https://business.adobe.com/customers/consulting-services/main.html) peuvent vous aider à personnaliser vos informations et les bonnes pratiques.

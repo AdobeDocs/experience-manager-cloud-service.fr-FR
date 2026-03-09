@@ -2,17 +2,18 @@
 title: Intégration de Content Credentials
 description: Content Credentials, intégré à AEM Assets et présenté dans la vue Assets, peut fournir un contexte dans l’historique d’une ressource, y compris la manière dont elle a été créée et les personnes impliquées dans sa création. Tout comme une étiquette nutritionnelle pour le contenu numérique, Content Credentials peut contribuer à accroître la transparence et à établir la confiance du public.
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 27c25ae0-4477-40c3-85c8-3e0aa725aba7
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 0%
+source-wordcount: '468'
+ht-degree: 14%
 
 ---
 
-# Content Credentials {#content-credentials}
+# Content Credentials {#content-credentials}
 
-Les marques sont plus préoccupées que jamais par la transparence du contenu, la divulgation de l&#39;IA et la prévention de l&#39;altération des ressources. Le Content Authenticity Initiative (CAI) d’Adobe crée des outils conformes à la norme technique C2PA ([&#x200B; Coalition for Content Provenance and Authenticity](https://c2pa.org/specifications/specifications/1.1/specs/C2PA_Specification.html#_trust_model). Content Credentials, qui est un nouveau type de métadonnées chiffrées et infalsifiables, peut aider les visiteurs à comprendre la traçabilité du contenu et à assurer l’intégrité des ressources de la marque. Ils peuvent inclure un large éventail de données de provenance qui offrent insight dans l’historique d’une ressource numérique.
+Les marques sont plus préoccupées que jamais par la transparence du contenu, la déclaration d’utilisation de l’IA et la prévention de l’altération des ressources. Le Content Authenticity Initiative (CAI) d’Adobe crée des outils conformes à la norme technique C2PA ([ Coalition for Content Provenance and Authenticity](https://c2pa.org/specifications/specifications/1.1/specs/C2PA_Specification.html#_trust_model). Les identifiants de contenu, qui sont un nouveau type de métadonnées chiffrées et inviolables, peuvent aider les visiteurs à comprendre la traçabilité du contenu et garantir l’intégrité des ressources de la marque. Ils peuvent inclure un large éventail de données de provenance qui fournissent des informations dans l’historique d’une ressource numérique.
 
 Ces informations peuvent inclure :
 
@@ -37,11 +38,8 @@ Adobe Experience Manager Assets prend désormais en charge Content Credentials, 
 1. Cliquez sur **Détails** et sélectionnez `Cr pin` dans le volet le plus à droite. L’onglet Content Credentials affiche les informations suivantes sur la ressource.
    1. **Image générée :** date et heure d’application de Content Credentials.
    1. **Résumé du contenu :** indique si la ressource est partiellement ou entièrement générée par l’IA, ou comment elle a été modifiée.
-
       ![informations d’identification du contenu](/help/assets/assets/content-credentials1.png)
    1. **Processus :** décrit l’application, l’appareil et l’outil d’IA (comme Adobe Firefly) utilisés pour générer la ressource, ainsi que les modifications apportées ultérieurement.
-
       ![processus](/help/assets/assets/CR-Process.png)
    1. **À propos de ce Content Credentials :** nom de l’émetteur, ainsi que la date et l’heure d’émission.
-
       ![émetteur](/help/assets/assets/CR-issuer.png)

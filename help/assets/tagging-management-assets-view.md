@@ -1,12 +1,13 @@
 ---
 title: Comment gérer les balises dans la vue Assets ?
 description: Découvrez comment gérer les balises dans la vue Assets. Les balises permettent de classer les ressources pour une navigation et une recherche plus efficaces.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
 feature: Smart Tags
 role: User, Admin, Developer
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1745'
 ht-degree: 98%
 
 ---
@@ -157,7 +158,7 @@ Les balises modifiées dans Assets Essentials sont également appliquées dans 
 
 ### Bloquer les balises intelligentes pour toutes les ressources {#block-smart-tags-for-all-assets}
 
-[!DNL Assets view] permet à un administrateur ou à une administratrice de bloquer les balises intelligentes pour les ressources existantes et nouvellement ajoutées. Pour bloquer des balises, procédez comme suit :
+[!DNL Assets view] permet à un administrateur ou une administratrice de bloquer les balises intelligentes pour les ressources existantes et nouvellement ajoutées. Pour bloquer des balises, procédez comme suit :
 
 1. Accédez à **[!UICONTROL Balises bloquées]** sous **[!UICONTROL Paramètres]**.
 1. Cliquez sur **[!UICONTROL Ajouter une balise bloquée]**.

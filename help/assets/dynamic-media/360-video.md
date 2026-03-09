@@ -4,17 +4,18 @@ description: Découvrez comment utiliser les vidéos 360 et de réalité virtue
 contentOwner: Rick Brough
 feature: 360 VR Video
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1013'
 ht-degree: 98%
 
 ---
 
 # Vidéo 360/VR {#vr-video}
 
-Les vidéos à 360° enregistrent une vue dans toutes les directions au même moment. Elles sont tournées à l’aide d’une caméra omnidirectionnelle ou d’un ensemble de caméras. Lors de la lecture sur un écran plat, l’utilisateur contrôle l’angle de vue ; la lecture sur les appareils mobiles applique généralement les commandes gyroscopiques intégrées.
+Les vidéos à 360° enregistrent une vue dans toutes les directions au même moment. Elles sont tournées à l’aide d’une caméra omnidirectionnelle ou d’un ensemble de caméras. Lors de la lecture sur un écran plat, l’angle de vue est contrôlé par l’utilisateur ou l’utilisatrice ; la lecture sur les appareils mobiles applique généralement les commandes gyroscopiques intégrées.
 
 Dynamic Media inclut une prise en charge native de la diffusion de ressources vidéo 360. Par défaut, aucune configuration supplémentaire n’est nécessaire pour l’affichage ou la lecture. Vous diffusez une vidéo 360 avec des extensions vidéo standard telles que .mp4, .mkv et .mov. Le codec le plus courant est H.264.
 

@@ -2,11 +2,12 @@
 title: Dynamic Media Prime et Ultimate
 description: Découvrez Dynamic Media Prime et Ultimate, leurs avantages et les différences entre les deux.
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
-source-git-commit: 73b1b7f2133a751ea2494d66960a7d225798d1dd
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 12%
+source-wordcount: '427'
+ht-degree: 18%
 
 ---
 
@@ -32,9 +33,9 @@ Voici quelques-uns des autres principaux avantages de Dynamic Media Prime :
 
 >[!NOTE]
 >
->Les clients DM Prime peuvent utiliser des modificateurs d’image de base, notamment la rotation, le recadrage, le retournement, la hauteur, la largeur et la qualité. L’imagerie dynamique ne prend pas en charge AVIF pour les clients DM Prime.
+>Les clientes et clients DM Prime peuvent utiliser des modificateurs d’image de base, notamment la rotation, le recadrage, la symétrie, la hauteur, la largeur et la qualité. L’imagerie dynamique ne prend pas en charge AVIF pour les clientes et clients DM Prime.
 
-### Prérequis {#pre-requisites-dm-prime}
+### Conditions préalables {#pre-requisites-dm-prime}
 
 * [AEM Sites as a Cloud Service](/help/sites-cloud/authoring/quick-start.md)
 * [AEM Assets as a Cloud Service](/help/assets/overview.md)
@@ -49,15 +50,15 @@ Outre les fonctionnalités de Dynamic Media Prime, telles que l’intégration d
 * [Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) offre des fonctionnalités avancées telles que :
 
    * la livraison sécurisée des ressources,
-   * [&#x200B; Recadrage intelligent, imagerie dynamique, paramètres d’image prédéfinis et autres modificateurs d’image](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
+   * [ Recadrage intelligent, imagerie dynamique, paramètres d’image prédéfinis et autres modificateurs d’image](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
 * [Solution Dynamic Media dans AEM as a Cloud Service](/help/assets/dynamic-media/dynamic-media.md), qui comprend également les fonctionnalités clés suivantes :
 
    * [Modèles Dynamic Media](/help/assets/dynamic-media/dynamic-media-templates.md)
-   * [Principes de base des modèles](https://experienceleague.adobe.com/fr/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
-   * [Configuration visuelle](https://experienceleague.adobe.com/fr/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
+   * [Principes de base des modèles](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
+   * [Configuration visuelle](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
 
-### Prérequis {#pre-requisites-dm-ultimate}
+### Conditions préalables {#pre-requisites-dm-ultimate}
 
 * [AEM Sites as a Cloud Service](/help/sites-cloud/authoring/quick-start.md)
 * [AEM Assets as a Cloud Service](/help/assets/overview.md)

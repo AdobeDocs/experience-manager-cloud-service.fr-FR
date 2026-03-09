@@ -2,10 +2,11 @@
 title: Intégration du sélecteur de ressources à l’API ouverte Dynamic Media
 description: Intégrer le sélecteur de ressources à diverses applications Adobe, non Adobe et tierces.
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '942'
 ht-degree: 3%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 3%
 
 Le sélecteur de ressources vous permet de les intégrer à l’aide de diverses applications Adobe afin de leur permettre de travailler ensemble en toute transparence.
 
-## Prérequis {#prereqs-polaris}
+## Conditions préalables {#prereqs-polaris}
 
 Utilisez les conditions préalables suivantes si vous intégrez le sélecteur de ressources à Dynamic Media avec des fonctionnalités OpenAPI :
 
@@ -22,7 +23,7 @@ Utilisez les conditions préalables suivantes si vous intégrez le sélecteur de
 * Pour accéder à Dynamic Media avec des fonctionnalités OpenAPI, vous devez disposer de licences pour :
    * Référentiel Assets (par exemple, Experience Manager Assets as a Cloud Service).
    * AEM Dynamic Media.
-* Seules les ressources [&#x200B; approuvées &#x200B;](/help/assets/approve-assets.md) peuvent être utilisées pour garantir la cohérence de la marque.
+* Seules les ressources [ approuvées ](/help/assets/approve-assets.md) peuvent être utilisées pour garantir la cohérence de la marque.
 
 ## Intégration de Dynamic Media aux fonctionnalités OpenAPI {#adobe-app-integration-polaris}
 

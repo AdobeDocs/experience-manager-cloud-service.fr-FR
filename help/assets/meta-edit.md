@@ -4,11 +4,12 @@ description: Découvrez les métadonnées des ressources dans [!DNL Experience M
 contentOwner: AG
 feature: Metadata
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 66%
+source-wordcount: '456'
+ht-degree: 65%
 
 ---
 

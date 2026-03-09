@@ -3,11 +3,12 @@ title: Intégration d’[!DNL Experience Manager Assets] à  [!DNL Adobe Workfro
 description: Présentation de l’intégration entre [!DNL Assets] et [!DNL Workfront]
 role: Admin, Leader, Developer
 feature: Workfront Integrations and Apps
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 87%
+source-wordcount: '396'
+ht-degree: 86%
 
 ---
 

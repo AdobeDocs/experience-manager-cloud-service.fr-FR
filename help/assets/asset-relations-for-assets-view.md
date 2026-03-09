@@ -4,10 +4,12 @@ description: Découvrez comment mettre en relation des ressources numériques qu
 role: User
 feature: Collaboration,Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 77dab2731f8d442bf999bf1614ef060944794574
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
+exl-id: 89149283-bbf2-40d3-9a4c-5b27ff5f944e
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 59%
+source-wordcount: '538'
+ht-degree: 60%
 
 ---
 
@@ -48,7 +50,7 @@ Grâce à cette fonctionnalité, vous avez la possibilité de partager un fichie
 
 La création de relations source/dérivés entre des ressources à l’aide de la fonctionnalité Ressources mises en relation est également utile dans les workflows de traduction. Lorsque vous exécutez un workflow de traduction sur une ressource dérivée, [!DNL Experience Manager Assets] récupère automatiquement toute ressource référencée par le fichier source et la soumet pour traduction. Ainsi, la ressource référencée par la ressource source est traduite avec les ressources source et dérivées. Si le fichier source est mis en relation avec une autre ressource, [!DNL Experience Manager Assets] récupère la ressource référencée et la soumet pour traduction.
 
-Voir [&#x200B; Traduction des ressources dans AEM](/help/assets/translate-assets.md).
+Voir [ Traduction des ressources dans AEM](/help/assets/translate-assets.md).
 
 ## Étapes suivantes {#next-steps}
 

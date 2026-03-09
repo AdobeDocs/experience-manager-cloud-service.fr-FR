@@ -2,10 +2,11 @@
 title: Approbation de ressources dans Experience Manager
 description: Découvrez comment approuver des ressources dans  [!DNL Experience Manager].
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1066'
 ht-degree: 7%
 
 ---
@@ -33,7 +34,7 @@ Si vous devez afficher la propriété à laquelle le champ **[!UICONTROL Statut 
 1. Faites glisser et déposez un champ **[!UICONTROL Liste déroulante]** de la section **[!UICONTROL Créer le formulaire]** sur le côté droit vers la section Métadonnées du formulaire.
 1. Cliquez sur le champ nouvellement ajouté, puis effectuez les mises à jour suivantes dans le panneau **[!UICONTROL Paramètres]** :
    1. Remplacez **[!UICONTROL Libellé du champ]** par _Cible d&#39;approbation_.
-   1. Mettez à jour **[!UICONTROL Mappez à la propriété]** sur _./jcr:content/metadata/dam:activationTarget_.
+   1. Mettez à jour le **[!UICONTROL Mapper à la propriété]** sur _./jcr:content/metadata/dam :activationTarget_.
    1. Ajoutez les choix avec `contenthub` et `delivery` comme valeurs d’option.
 
    >[!NOTE]
@@ -58,7 +59,7 @@ Pour approuver des ressources dans [!DNL Experience Manager Admin view], procéd
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427430)
 
-   De même, vous pouvez approuver des ressources à l’aide de la [&#x200B; nouvelle vue Assets &#x200B;](/help/assets/manage-organize-assets-view.md).
+   De même, vous pouvez approuver des ressources à l’aide de la [ nouvelle vue Assets ](/help/assets/manage-organize-assets-view.md).
 
 ## Approbation en bloc de ressources {#bulk-approve-assets}
 
@@ -69,17 +70,17 @@ Simplifiez votre workflow en approuvant rapidement plusieurs ressources à la fo
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Assets]** > **[!UICONTROL Profils de métadonnées]**.
 1. Cliquez sur **[!UICONTROL Créer]** en haut à droite de la page.
 1. Ajoutez un titre de profil et cliquez sur **[!UICONTROL Créer]**. Le profil de métadonnées a été créé.
-1. Sélectionnez le profil de métadonnées que vous venez de créer et cliquez sur **[!UICONTROL Modifier le(s) _(s)_]**. <br>Le formulaire **[!UICONTROL Modifier le profil de métadonnées]**&#x200B;s’ouvre avec l’onglet **[!UICONTROL De base]**&#x200B;en surbrillance.
+1. Sélectionnez le profil de métadonnées que vous venez de créer et cliquez sur **[!UICONTROL Modifier le(s) _(s)_]**. <br>Le formulaire **[!UICONTROL Modifier le profil de métadonnées]**s’ouvre avec l’onglet **[!UICONTROL De base]**en surbrillance.
 1. Effectuez un glisser-déposer d’un **[!UICONTROL champ de texte monoligne]** de la section **[!UICONTROL Créer un formulaire]** sur le côté droit de la section Métadonnées du formulaire.
 1. Cliquez sur le champ nouvellement ajouté, puis effectuez les mises à jour suivantes dans le panneau **[!UICONTROL Paramètres]** :
    1. Remplacez **[!UICONTROL Libellé du champ]** par _Assets approuvé_.
-   1. Mettez à jour **[!UICONTROL Mappez à la propriété]** sur _./jcr:content/metadata/dam:status_.
+   1. Mettez à jour le **[!UICONTROL Mapper à la propriété]** sur _./jcr:content/metadata/dam :status_.
    1. Remplacez la valeur Par défaut par _approuvé_.
 
 1. Faites glisser et déposez un champ **[!UICONTROL Liste déroulante]** de la section **[!UICONTROL Créer le formulaire]** sur le côté droit vers la section Métadonnées du formulaire.
 1. Cliquez sur le champ nouvellement ajouté, puis effectuez les mises à jour suivantes dans le panneau **[!UICONTROL Paramètres]** :
    1. Remplacez **[!UICONTROL Libellé du champ]** par _Cible d&#39;approbation_.
-   1. Mettez à jour **[!UICONTROL Mappez à la propriété]** sur _./jcr:content/metadata/dam:activationTarget_.
+   1. Mettez à jour le **[!UICONTROL Mapper à la propriété]** sur _./jcr:content/metadata/dam :activationTarget_.
    1. Ajoutez les choix avec `contenthub` et `delivery` comme valeurs d’option.
 
    >[!NOTE]

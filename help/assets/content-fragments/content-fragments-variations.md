@@ -1,13 +1,14 @@
 ---
 title: Variations - Créer du contenu de fragment (Assets - Fragments de contenu)
 description: Découvrez comment les variations du fragment de contenu vous permettent de créer du contenu pour le fragment, puis de créer des variations de ce contenu selon l’objectif recherché, ce qui accroît la flexibilité.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2530'
+source-wordcount: '2536'
 ht-degree: 69%
 
 ---
@@ -453,7 +454,7 @@ Les variations vous permettent de prendre le contenu **principal** et le varier 
 
    >[!NOTE]
    >
-   >Lors de la création d’une variation, c’est toujours le Principal **&#x200B;**&#x200B;qui est copié, et non la variation qui est ouverte.
+   >Lors de la création d’une variation, c’est toujours le Principal **** qui est copié, et non la variation qui est ouverte.
 
    >[!NOTE]
    >
@@ -502,7 +503,7 @@ Lors de la modification d’une variation, vous avez accès à l’action de syn
 
 >[!CAUTION]
 >
->La synchronisation n’est disponible que pour copier les modifications *du **Maître**&#x200B;dans la variation*.
+>La synchronisation n’est disponible que pour copier les modifications *du **Maître**dans la variation*.
 >
 >Seul l’élément actif de la variation est synchronisé.
 >

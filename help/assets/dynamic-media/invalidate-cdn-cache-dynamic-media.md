@@ -4,11 +4,12 @@ description: Découvrez comment l’invalidation du contenu de réseau de diffus
 contentOwner: Rick Brough
 feature: Asset Management
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1397'
-ht-degree: 100%
+source-wordcount: '1403'
+ht-degree: 99%
 
 ---
 

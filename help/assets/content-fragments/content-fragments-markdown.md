@@ -3,11 +3,12 @@ title: Markdown (Assets - Fragments de contenu)
 description: Découvrez comment l’éditeur de fragment de contenu utilise la syntaxe Markdown pour vous permettre de créer facilement du contenu découplé.
 feature: Content Fragments
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 solution: Experience Manager Sites
-source-git-commit: be60f0371e652549cec6e57d1449b6e07b996514
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '601'
 ht-degree: 76%
 
 ---
@@ -132,7 +133,7 @@ Vous pouvez avoir des blocs de citation imbriqués. Par exemple :
 
 Vous pouvez créer des listes ordonnées et non ordonnées.
 
-Pour créer une liste non triée, utilisez le symbole &ast; (astérisque) devant les éléments de la liste. Par exemple :
+Pour créer une liste non triée, utilisez le symbole &amp;ast; (astérisque) devant les éléments de la liste. Par exemple :
 
     `* item in list`
 

@@ -4,10 +4,11 @@ description: Découvrez comment prévisualiser des ressources dans Dynamic Media
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1234'
 ht-degree: 96%
 
 ---
@@ -18,7 +19,7 @@ Vous pouvez utiliser la fonction Aperçu pour afficher une ressource numérique 
 
 Une visionneuse est un ensemble de différents paramètres, ou « paramètres prédéfinis ». Par exemple, la taille d’affichage de la visionneuse, le comportement du zoom, les modèles de couleurs, les bordures et les polices, qui déterminent la manière dont les utilisateurs voient les ressources multimédias enrichies sur leurs écrans d’ordinateur et appareils mobiles.
 
-Outre l’utilisation de la fonction d’aperçu dédiée pour la vidéo, les visionneuses à 360° et les visionneuses d’images, vous pouvez prévisualiser une ressource à l’aide des paramètres prédéfinis de visionneuse que vous avez créés. Vous pouvez également utiliser des paramètres d’image prédéfinis pour prévisualiser les rendus des images.
+Outre l’utilisation de la fonction d’aperçu dédiée pour la vidéo, les visionneuses à 360° et les ensembles d’images, vous pouvez prévisualiser une ressource à l’aide des paramètres prédéfinis de visionneuse que vous avez créés. Vous pouvez également utiliser des paramètres d’image prédéfinis pour prévisualiser les rendus des images.
 
 * [Application de paramètres d’image prédéfinis](/help/assets/dynamic-media/image-presets.md)
 * [Application de paramètres prédéfinis de visionneuse](/help/assets/dynamic-media/viewer-presets.md)
@@ -86,7 +87,7 @@ Pour activer ou désactiver les paramètres prédéfinis de visionneuse dans l�
         </ul> </td>
       </tr>
       <tr>
-      <td>Visionneuse d’images</td>
+      <td>Ensemble d’images</td>
       <td>Non</td>
       <td>Oui</td>
       <td><p><strong>Pour prévisualiser une ressource dans une visionneuse particulière</strong></p>

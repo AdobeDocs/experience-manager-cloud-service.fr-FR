@@ -3,17 +3,18 @@ title: 'Balisage automatique des ressources avec le service dynamique [!DNL Adob
 description: Balisez les ressources à l’aide d’un service d’intelligence artificielle qui applique des balises commerciales contextuelles et descriptives.
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
+exl-id: 05304c5e-f620-4cca-8cfe-76a6fa2e3f4a
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1516'
 ht-degree: 66%
 
 ---
 
-
 # Entraînement des balises intelligentes
 
-L’entraînement des balises intelligentes vous permet d’entraîner vos balises afin que vous puissiez spécifier les informations si les balises appropriées ne sont pas présentes. Il utilise un cadre d’intelligence artificielle de l’[IA d’Adobe](https://business.adobe.com/ai/adobe-genai.html) pour entraîner son algorithme de reconnaissance d’images par rapport à votre structure de balises et de votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes. [!DNL Experience Manager Assets] applique automatiquement les balises intelligentes aux ressources chargées, par défaut.
+L’entraînement des balises intelligentes vous permet d’entraîner vos balises afin que vous puissiez spécifier les informations si les balises appropriées ne sont pas présentes. Il utilise un cadre d’intelligence artificielle de [Adobe AI](https://business.adobe.com/ai/adobe-genai.html) pour entraîner son algorithme de reconnaissance d’images par rapport à votre structure de balises et de votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes. [!DNL Experience Manager Assets] applique automatiquement les balises intelligentes aux ressources chargées, par défaut.
 
 ## Détermination des exigences de l’entraînement sur les balises intelligentes {#smart-tag-training-requirement}
 

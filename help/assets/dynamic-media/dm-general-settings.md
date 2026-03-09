@@ -8,10 +8,11 @@ content-type: reference
 feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2506'
+source-wordcount: '2512'
 ht-degree: 83%
 
 ---
@@ -55,7 +56,7 @@ Voir aussi [Facultatif - Installer et configurer des paramètres de Dynamic Medi
    * Onglet [Illustrator](#illustrator-tab)
 
    ![Page des paramètres généraux de Dynamic Media](/help/assets/assets-dm/dm-general-settings.png)
-   *Page des paramètres généraux de Dynamic Media, avec l’onglet **[!UICONTROL Modification d’images]**&#x200B;sélectionné.*<br><br>
+   *Page des paramètres généraux de Dynamic Media, avec l’onglet **[!UICONTROL Modification d’images]**sélectionné.*<br><br>
 
 1. Lorsque vous avez terminé, près du coin supérieur droit de la page, cliquez sur **[!UICONTROL Enregistrer]**.
 
@@ -89,7 +90,7 @@ Lors de la création du compte, Adobe Dynamic Media fournit automatiquement les
 
   Contrôle la conservation de toute définition de recadrage manuel existante.
 
-  Voir aussi `preserveCrop` dans [UploadPostJob](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job) et [ReprocessAssetsJob](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job), tous deux dans le Guide de référence des visionneuses Dynamic Media.
+  Voir aussi `preserveCrop` dans [UploadPostJob](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job) et [ReprocessAssetsJob](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job), tous deux dans le Guide de référence des visionneuses Dynamic Media.
 
 ## Options de chargement par défaut {#default-upload-options}
 

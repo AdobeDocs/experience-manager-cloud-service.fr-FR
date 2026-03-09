@@ -2,11 +2,12 @@
 title: Intégration lors  [!DNL AEM Assets]  la création de contenu pour  [!DNL Edge Delivery Services]
 description: Découvrez comment intégrer le [!DNL AEM Assets] avec [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets]  [!DNL Microsoft Word]  et [!DNL Google Docs], integrate [!DNL AEM Assets] avec [!DNL Universal Editor], integrate [!DNL Dynamic Media] avec [!DNL Edge Delivery Services], integrate [!DNL Dynamic Media with OpenAPI capabilities] avec [!DNL Universal Editor] et l’intégrer [!DNL Dynamic Media with OpenAPI capabilities] avec [!DNL Microsoft Word] et [!DNL Google Docs].
 tags: AEM Assets, Edge Delivery Services, Dynamic Media, Dynamic Media with OpenAPI capabilities, Universal Editor, Edge Delivery Services with Universal Editor
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 79213bcfe5c5ccf7c60a31e6cb757f60a0ba87a7
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 0%
+source-wordcount: '634'
+ht-degree: 12%
 
 ---
 
@@ -26,11 +27,11 @@ Après avoir modifié le contenu, vous pouvez le publier dans Edge Delivery Serv
 
 ## Intégration de [!DNL AEM Assets] aux flux de création basés sur des documents pour [!DNL Edge Delivery Services] {#integrate-dynamic-media-with-edge-delivery-services}
 
-Lorsque [!DNL AEM Assets] s’intègre à vos outils de création basés sur des documents, tels que [!DNL Microsoft Word] ou [!DNL Google Docs], il fournit un sélecteur de ressources dans votre outil de création. Utilisez ce sélecteur de ressources pour accéder aux [!DNL AEM Assets] et insérer des ressources approuvées dans votre contenu.
+Lorsque [!DNL AEM Assets] s’intègre à vos outils de création basés sur des documents, tels que [!DNL Microsoft Word] ou [!DNL Google Docs], il fournit un sélecteur de ressources dans votre outil de création. Utilisez ce sélecteur de ressources pour accéder à [!DNL AEM Assets] et insérer des ressources approuvées dans votre contenu.
 Si vous disposez déjà d’un site web [!DNL Edge Delivery Services], consultez la documentation du [[!DNL AEM Assets] plug-in](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) pour savoir comment l’intégrer [!DNL AEM Assets] votre projet [!DNL AEM] existant.
 Suivez les sections [Conditions préalables](#integrate-aem-assets-with-microsoft-word-and-google-docs) et [Intégration [!DNL AEM Assets] à l’environnement de création basé sur les documents](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs) ci-après si vous ne disposez pas d’un site web [!DNL Edge Delivery Services] pour publier votre [!DNL AEM Assets] contenu inclusif créé dans les outils de création basés sur les documents.
 
-### Prérequis{#integrate-aem-assets-with-microsoft-word-and-google-docs}
+### Conditions préalables{#integrate-aem-assets-with-microsoft-word-and-google-docs}
 
 Avant de commencer, assurez-vous que votre environnement de création basé sur les documents est prêt :
 
@@ -60,7 +61,7 @@ Vous pouvez également utiliser les ressources diffusées à l’aide de [!DNL D
 
 Pour plus d’informations sur ces fonctionnalités, consultez la documentation [[!DNL Dynamic Media with OpenAPI capabilities]](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview).
 
-### Prérequis {#dynamic-media-with-universal-editor-and-edge-delivery-services}
+### Conditions préalables {#dynamic-media-with-universal-editor-and-edge-delivery-services}
 
 Pour utiliser la référence de ressource, vous devez disposer des éléments suivants :
 
@@ -89,5 +90,5 @@ Consultez la section [Voyage WKND](https://aem-dynamicmedia-demo--dm--hlxsites.a
 
 Configurez le [!DNL Universal Editor] à intégrer à [!DNL AEM Assets]. Cette intégration vous permet d’utiliser [!DNL Dynamic Media with OpenAPI capabilities] pour diffuser des ressources.
 
-* Voir [Configuration dans le site [!DNL Edge Delivery]  &#x200B;](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site) pour savoir comment ajouter une fonction de sélecteur de ressources personnalisée dans [!DNL Universal Editor]. Le sélecteur de ressources personnalisé vous permet d’insérer directement des ressources dans votre contenu [!DNL Universal Editor].
-* Consultez [&#x200B; Présentation de l’extension &#x200B;](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) pour savoir comment accéder à [!DNL AEM Assets] et insérer les ressources lors de la création dans [!DNL Universal Editor].
+* Voir [Configuration dans  [!DNL Edge Delivery]  Site](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site) pour savoir comment ajouter une fonction de sélecteur de ressources personnalisé dans [!DNL Universal Editor]. Le sélecteur de ressources personnalisé vous permet d’insérer directement des ressources dans votre contenu [!DNL Universal Editor].
+* Voir [Vue d’ensemble de l’extension](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) pour savoir comment accéder à [!DNL AEM Assets] et insérer les ressources lors de la création dans [!DNL Universal Editor].

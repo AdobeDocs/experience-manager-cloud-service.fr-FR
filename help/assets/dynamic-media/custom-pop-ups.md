@@ -4,11 +4,12 @@ description: Découvrez comment l’aperçu rapide par défaut est utilisé dans
 contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '944'
-ht-degree: 99%
+source-wordcount: '950'
+ht-degree: 98%
 
 ---
 
@@ -20,7 +21,7 @@ L’aperçu rapide est pris en charge par les visionneuses suivantes dans Dynami
 
 * Images interactives (zones réactives sélectionnables)
 * Vidéo interactive (miniatures sélectionnables pendant la lecture vidéo)
-* Bannières carrousel (zones réactives sélectionnables ou zones cliquables)
+* Bannières carrousel (zones cliquables ou zones réactives sélectionnables)
 
 Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus de création d’un aperçu rapide est identique pour les trois visionneuses prises en charge.
 
@@ -78,7 +79,8 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
 
    Le lecteur utilise un gestionnaire appelé `QuickViewActive`.
 
-   **Exemple** Supposons que vous utilisiez le code d’intégration suivant dans votre page web pour une image interactive :
+   **Exemple**
+Supposons que vous utilisiez le code intégré suivant dans votre page web pour une image interactive :
 
    ![chlimage_1-291](assets/chlimage_1-291.png)
 
@@ -86,7 +88,7 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
 
    `*viewerInstance*.setHandlers({ *handler 1*, *handler 2*}, ...`
 
-   **En utilisant l’exemple de code d’intégration ci-dessus, vous obtenez le code suivant :**
+   **En utilisant l’exemple de code intégré ci-dessus, vous obtenez le code suivant :**
 
    ```xml {.line-numbers}
    s7interactiveimageviewer.setHandlers({
@@ -106,13 +108,13 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
 
 1. Configurez maintenant le gestionnaire `quickViewActivate`.
 
-   Le gestionnaire `quickViewActivate` contrôle les aperçus rapides dans la visionneuse. Le gestionnaire contient les appels de la liste de variables et de fonctions utilisables avec l’aperçu rapide. Le code incorporé fournit le mappage pour le jeu de variables SKU dans l’aperçu rapide. Il effectue également un exemple d’appel de fonction `loadQuickView`.
+   Le gestionnaire `quickViewActivate` contrôle les aperçus rapides dans la visionneuse. Le gestionnaire contient les appels de la liste de variables et de fonctions utilisables avec l’aperçu rapide. Le code intégré fournit le mappage pour le jeu de variables SKU dans l’aperçu rapide. Il effectue également un exemple d’appel de fonction `loadQuickView`.
 
    **Correspondance de variables** Mappez les variables utilisables dans votre page web avec la valeur de SKU et les variables génériques dans l’aperçu rapide :
 
    `var *variable1*= inData.*quickviewVariable*`
 
-   Le code d’intégration fourni comporte un exemple de mise en correspondance pour la variable SKU :
+   Le code intégré fourni comporte un exemple de mise en correspondance pour la variable SKU :
 
    `var sku=inData.sku`
 

@@ -4,10 +4,11 @@ description: Découvrez la diffusion de contenu HTTP2 et comment elle améliore 
 contentOwner: Rick Brough
 feature: Dynamic Media,Configuration,FAQ
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '804'
 ht-degree: 97%
 
 ---

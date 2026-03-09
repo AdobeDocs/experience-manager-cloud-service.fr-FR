@@ -1,12 +1,13 @@
 ---
 title: Création d’URL de redirection à l’aide de Dynamic Media avec les fonctionnalités OpenAPI
-description: Utilisez les fonctionnalités OpenAPI de Dynamic Media pour transformer vos URL de diffusion de ressources longues en URL de redirection courtes de marque. Une URL Vanity est une version courte, propre, facile à mémoriser et lisible de votre URL de diffusion complexe. Vous pouvez inclure le nom de votre marque, les noms de produits et les mots-clés pertinents dans l’URL Vanity pour améliorer la visibilité de votre marque et l’interaction client
+description: Utilisez les fonctionnalités OpenAPI de Dynamic Media pour transformer vos URL de diffusion de ressources longues en URL de redirection courtes de marque. Une URL Vanity est une version courte, propre, facile à mémoriser et lisible de votre URL de diffusion complexe. Vous pouvez inclure votre nom de marque, les noms de produits et les mots-clés pertinents dans l’URL Vanity pour améliorer votre visibilité des marques et l’interaction client
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 596136e9-7c2a-43a1-8091-2d8b6226b695
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1386'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ Consultez les formats d’URL suivants pour comprendre leur différence :
 
 Les URL de diffusion standard utilisent `aaid` suivi d’un UUID, tandis que les URL de redirection utilisent `avid` suivi d’un identifiant personnalisé (identifiant de redirection).
 
-Utilisez des identifiants de redirection courts et simples pour rendre votre URL de redirection rapide courte, propre, lisible, facile à retenir et à partager. Utilisez votre nom de marque, vos noms de produit et vos mots-clés pertinents comme ID de redirection pour améliorer la visibilité de votre marque et l’engagement des utilisateurs.
+Utilisez des identifiants de redirection courts et simples pour rendre votre URL de redirection rapide courte, propre, lisible, facile à retenir et à partager. Utilisez votre nom de marque, vos noms de produit et vos mots-clés pertinents comme ID de redirection pour améliorer votre visibilité des marques et l’interaction client.
 
 Lorsque l’utilisateur clique sur votre URL Vanity, [!DNL Dynamic Media with OpenAPI] mappe automatiquement à l’emplacement de la ressource d’origine au moment de l’ingestion et les résout correctement au moment de la diffusion afin de la diffuser à l’utilisateur.
 
@@ -70,7 +71,7 @@ L’utilisation d’identifiants Vanity significatifs pour personnaliser les URL
 
 * **Optimisation du référencement :** URL qui incluent des mots-clés pertinents améliorent les classements des moteurs de recherche et la capacité de découverte.
 
-* **Visibilité améliorée de la marque :** les URL spécifiques à la marque renforcent la présence de la marque sur tous les canaux marketing, y compris les e-mails, les médias sociaux et les campagnes publicitaires.
+* **visibilité des marques améliorée :** les URL spécifiques à une marque renforcent la présence des marques sur tous les canaux marketing, y compris les e-mails, les médias sociaux et les campagnes publicitaires.
 En outre, l’utilisation cohérente des URL de marque dans toutes les communications renforce l’identité et la reconnaissance de la marque.
 
 * **Suivi et analyse des campagnes :** utilisez des URL de redirection uniques pour différentes campagnes et différents canaux afin d’obtenir des informations détaillées sur les sources de trafic et les performances de conversion.
@@ -140,7 +141,7 @@ Lorsque l’utilisateur clique sur l’URL de redirection, [!DNL Dynamic Media w
 
 ## Mise à l’échelle à l’aide d’URL de redirection vers un microsite{#scale-using-vanity-url}
 
-AEM as a Cloud Service vous permet de [personnaliser les noms DNS et de réseau CDN](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) au sein de vos adresses web. Utilisez ces fonctionnalités AEMCS avec vos URL de redirection pour les transformer en adresses web uniques, propres, descriptives, de marque, intuitives et offrant les [avantages mentionnés ci-dessus](#key-benefits).
+AEM as a Cloud Service vous permet de [personnaliser les noms DNS et de réseau CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) au sein de vos adresses web. Utilisez ces fonctionnalités AEMCS avec vos URL de redirection pour les transformer en adresses web uniques, propres, descriptives, de marque, intuitives et offrant les [avantages mentionnés ci-dessus](#key-benefits).
 
 Consultez l’URL Vanity suivante et ses composants personnalisables :
 
@@ -190,7 +191,7 @@ Consultez l’URL Vanity suivante et ses composants personnalisables :
 Exécutez les étapes suivantes pour réécrire les règles de réseau CDN pour la diffusion :
 
 1. Accédez à votre référentiel AEM pour créer un fichier de configuration YAML.
-2. Exécutez les étapes de la section [configuration](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) pour configurer les règles du réseau CDN et déployer la configuration via votre pipeline de configuration Cloud Manager.
+2. Exécutez les étapes de la section [configuration](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) pour configurer les règles du réseau CDN et déployer la configuration via votre pipeline de configuration Cloud Manager.
 Suivez ces [bonnes pratiques](#best-practices) pour créer le chemin d’accès au domaine.
    [En savoir plus sur les règles de réécriture CDN](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
 
@@ -242,6 +243,6 @@ type: transform
 Suivez ces bonnes pratiques pour créer des [identifiants de redirection](#create-vanity-urls), [noms DNS personnalisés](#customize-dns) et [noms de réseau CDN](#rewrite-cdn-rules) :
 
 1. N’utilisez pas de caractères spéciaux dans les identifiants de redirection, tels que des espaces, des barres obliques, des tirets, etc. Le système remplace les caractères spéciaux dans les ID de redirection à l’aide d’un mappage prédéfini.
-1. Utilisez votre nom de marque, vos noms de produit et les mots-clés pertinents dans vos [identifiants de redirection](#create-vanity-urls), [noms DNS personnalisés](#customize-dns) et [noms de réseau de diffusion de contenu](#rewrite-cdn-rules) pour améliorer la visibilité de votre marque et l’engagement des utilisateurs.
+1. Utilisez votre nom de marque, vos noms de produit et les mots-clés pertinents dans vos [identifiants de redirection](#create-vanity-urls), [noms DNS personnalisés](#customize-dns) et [noms de réseau CDN](#rewrite-cdn-rules) pour améliorer votre visibilité des marques et l’engagement des utilisateurs.
 1. Utilisez des mots ou des chaînes courts et descriptifs qui véhiculent du sens.
 1. Utilisez des textes qui invitent les utilisateurs à cliquer.

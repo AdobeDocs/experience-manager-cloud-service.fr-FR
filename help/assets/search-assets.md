@@ -5,11 +5,12 @@ contentOwner: AG
 mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '5967'
-ht-degree: 85%
+source-wordcount: '5973'
+ht-degree: 84%
 
 ---
 
@@ -149,7 +150,7 @@ Vous pouvez améliorer la pertinence des mots-clés pour des ressources particul
 
 Vous pouvez l’utiliser à votre avantage en améliorant le classement de certaines ressources dans les résultats de recherche du mot-clé ciblé. Voir la vidéo d’exemple ci-dessous. Pour plus d’informations, voir [Recherche dans [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/3410336/?captions=fre_fr&quality=6)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *Vidéo : Découvrez comment les résultats de recherche sont classés et comment le classement peut être influencé.*
 
@@ -330,7 +331,7 @@ La fonctionnalité de recherche peut présenter des limitations de performances 
 * La recherche en texte intégral prend en charge les opérateurs tels que `-` et `^`. Pour rechercher des informations sous forme de chaînes littérales, indiquez la phrase de recherche entre guillemets. Par exemple, utilisez `"Notebook - Beauty"` au lieu de `Notebook - Beauty`.
 * Si les résultats de recherche sont trop nombreux, limitez la [portée de la recherche](#scope) pour trouver les ressources souhaitées. Cela fonctionne mieux lorsque vous avez une idée de la meilleure manière de rechercher les ressources que vous recherchez, par exemple un type de fichier, un emplacement ou des métadonnées spécifiques.
 
-* **Balisage** : les balises permettent de classer les ressources pour une navigation et une recherche plus efficaces. Le balisage permet de propager la taxonomie appropriée à d’autres utilisateurs et workflows. [!DNL Experience Manager] propose des méthodes pour baliser automatiquement les ressources à l’aide des services d’IA d’Adobe qui améliorent constamment le balisage de vos ressources avec l’utilisation et la formation. Lorsque vous recherchez des ressources, les balises intelligentes sont prises en compte. Cela fonctionne avec la fonctionnalité de recherche intégrée. Voir [Comportement de la recherche](#searchbehavior). Pour optimiser l’ordre d’affichage des résultats de recherche, vous pouvez [améliorer le classement](#searchrank) de quelques ressources sélectionnées.
+* **Balisage** : les balises permettent de classer les ressources pour une navigation et une recherche plus efficaces. Le balisage permet de propager la taxonomie appropriée à d’autres utilisateurs et workflows. [!DNL Experience Manager] propose des méthodes pour baliser automatiquement les ressources à l’aide des services Adobe AI qui améliorent constamment le balisage de vos ressources avec utilisation et formation. Lorsque vous recherchez des ressources, les balises intelligentes sont prises en compte. Cela fonctionne avec la fonctionnalité de recherche intégrée. Voir [Comportement de la recherche](#searchbehavior). Pour optimiser l’ordre d’affichage des résultats de recherche, vous pouvez [améliorer le classement](#searchrank) de quelques ressources sélectionnées.
 
 * **Indexation** : seules les métadonnées et les ressources indexées sont renvoyées dans les résultats de recherche. Pour une meilleure couverture et de meilleures performances, veillez à une indexation appropriée et suivez les bonnes pratiques. Voir [Indexation](#searchindex).
 
@@ -375,9 +376,9 @@ Utilisez des guillemets doubles autour des mots-clés pour rechercher des ressou
 
 ## Recherche IA {#ai-search}
 
-La recherche par IA est une fonctionnalité de recherche avancée qui comprend la signification et l’intention derrière la requête d’un utilisateur ou d’une utilisatrice plutôt que de s’appuyer sur des correspondances exactes de mots-clés. Il utilise l’intelligence artificielle (IA) et le machine learning pour fournir des résultats plus précis et contextuels.
+Recherche optimisée par l&#39;IA est une fonctionnalité de recherche avancée qui comprend la signification et l’intention derrière la requête d’un utilisateur ou d’une utilisatrice plutôt que de s’appuyer sur des correspondances exactes de mots-clés. Il utilise l’intelligence artificielle (IA) et le machine learning pour fournir des résultats plus précis et contextuels.
 
-Contrairement à la recherche traditionnelle par mot-clé, qui recherche des termes exacts, la recherche par IA interprète les relations entre les mots, les concepts et l’intention de l’utilisateur. Cela permet de s’assurer que les utilisateurs et les utilisatrices trouvent ce qu’ils recherchent, même si leur requête est formulée différemment, contient des fautes de frappe ou est dans une autre langue.
+Contrairement à la recherche traditionnelle par mot-clé, qui recherche des termes exacts, Recherche optimisée par l&#39;IA interprète les relations entre les mots, les concepts et l’intention de l’utilisateur. Cela permet de s’assurer que les utilisateurs et les utilisatrices trouvent ce qu’ils recherchent, même si leur requête est formulée différemment, contient des fautes de frappe ou est dans une autre langue.
 
 Voici quelques-uns de ses principaux avantages :
 
@@ -389,26 +390,26 @@ Voici quelques-uns de ses principaux avantages :
 
 * **Recherche contextuelle** : reconnaît l’intention derrière une requête, pas seulement les mots exacts.
 
-### Exemples de recherche dans l’IA {#examples-ai-search}
+### Exemples pour Recherche optimisée par l&#39;IA {#examples-ai-search}
 
 **Exemple d’invite** : *Femme buvant du café*
 
 La recherche traditionnelle par mot-clé recherche les correspondances exactes des métadonnées de ressource, telles que `Woman`, `drinking`, `Coffee`, et renvoie les ressources qui incluent tous ces termes dans les métadonnées.
 
-Cependant, la recherche par l’IA correspond à des mots similaires tels que `Girl`, `Lady` dans le cas de `Woman` et `Cappuccino` et `Latte` dans le cas de `Coffee`.
+Cependant, Recherche optimisée par l&#39;IA correspond à des mots similaires tels que `Girl`, `Lady` dans le cas de `Woman` et `Cappuccino` et `Latte` dans le cas de `Coffee`.
 
 De même, vous pouvez spécifier cette invite en espagnol ou mal orthographier `Woman` comme `Wman` et obtenir toujours les mêmes résultats.
 
 
-### Activer ou désactiver la recherche par l’IA dans la vue Administration {#enable-disable-ai-search}
+### Activer ou désactiver Recherche optimisée par l&#39;IA en vue Administration {#enable-disable-ai-search}
 
-Exécutez les étapes suivantes pour activer ou désactiver la recherche par l’IA dans la vue Administration :
+Exécutez les étapes suivantes pour activer ou désactiver Recherche optimisée par l&#39;IA dans la vue Administration :
 
 1. Accédez à **[!UICONTROL Outils]** >> **[!UICONTROL Assets]** >> **[!UICONTROL Configurations Assets]** >> **[!UICONTROL Configuration Assets Omnisearch]**.
 
-1. Dans la section **[!UICONTROL Recherche]**, sélectionnez **[!UICONTROL Recherche par l’IA]** pour activer la recherche par l’IA ou **[!UICONTROL Mot-clé]** pour la désactiver.
+1. Dans la section **[!UICONTROL Rechercher]**, sélectionnez **[!UICONTROL Recherche optimisée par l&#39;IA]** pour activer Recherche optimisée par l&#39;IA ou **[!UICONTROL Mot-clé]** pour le désactiver.
 
-   ![Activer ou désactiver la recherche IA](/help/assets/assets/enable-ai-search-admin-view.png)
+   ![Activer ou désactiver Recherche optimisée par l&#39;IA ](/help/assets/assets/enable-ai-search-admin-view.png)
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
@@ -557,5 +558,5 @@ Accédez à l’emplacement du dossier pour les ressources affichées dans les r
 
 >[!MORELIKETHIS]
 >
->* Guide de mise en œuvre des recherches[[!DNL Experience Manager] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=fr)
+>* Guide de mise en œuvre des recherches[[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=fr)
 >* [Configuration avancée pour améliorer les résultats de recherche](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=fr)

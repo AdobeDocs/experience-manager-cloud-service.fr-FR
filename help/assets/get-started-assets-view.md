@@ -2,12 +2,13 @@
 title: Prise en main d’ [!DNL Assets View]
 description: Accès, connexion, cas d’utilisation pris en charge et problèmes connus dans [!DNL Assets View].
 role: User, Leader
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 51ae6657-f6b5-44b0-a47f-451735ab0d01
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 89%
+source-wordcount: '364'
+ht-degree: 88%
 
 ---
 
@@ -66,7 +67,7 @@ Vous trouverez ci-dessous les différentes tâches de gestion des actifs numéri
 
 * Faites des commentaires sur la documentation en utilisant l’option [!UICONTROL Modifier cette page] ![modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![créer un problème GitHub](assets/do-not-localize/github-issue.png) disponible dans la barre latérale droite.
 
-* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr#support).
+* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&lang=fr#support).
 
 
 <!--TBD: Merge the below rows in the table when the use cases are documented/available.

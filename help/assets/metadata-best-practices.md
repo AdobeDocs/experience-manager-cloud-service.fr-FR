@@ -2,11 +2,12 @@
 title: Gestion des métadonnées et bonnes pratiques
 description: Découvrez les bonnes pratiques en matière de métadonnées pour gérer efficacement vos ressources numériques.
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1390'
 ht-degree: 1%
 
 ---
@@ -97,7 +98,7 @@ Déterminez d’où proviennent les informations et examinez les détails de la 
 
 >[!NOTE]
 >
->Découvrez comment [gérer les métadonnées de vos ressources numériques](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=fr).
+>Découvrez comment [gérer les métadonnées de vos ressources numériques](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html).
 
 ### Cohérence avec la stratégie de métadonnées
 
@@ -140,7 +141,7 @@ Recherchez la ressource à l’aide des mots-clés que vous avez ajoutés. La re
 
   Découvrez comment [booster la recherche dans Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=fr).
 
-* **Champs de métadonnées personnalisés :** personnalisez vos champs de métadonnées pour capturer des informations supplémentaires sur les ressources. Par exemple, ajoutez des champs spécifiques pour les détails du projet, des informations de copyright ou toute autre donnée pertinente qui améliore les fonctionnalités de recherche. Découvrez [&#x200B; modifier ou ajouter des métadonnées personnalisées &#x200B;](meta-edit.md) dans Experience Manager Assets.
+* **Champs de métadonnées personnalisés :** personnalisez vos champs de métadonnées pour capturer des informations supplémentaires sur les ressources. Par exemple, ajoutez des champs spécifiques pour les détails du projet, des informations de copyright ou toute autre donnée pertinente qui améliore les fonctionnalités de recherche. Découvrez [ modifier ou ajouter des métadonnées personnalisées ](meta-edit.md) dans Experience Manager Assets.
 
 
 * **Validation des métadonnées :** implémentez des contrôles de validation pour les entrées de métadonnées afin d’assurer la cohérence et la précision. L’utilisation de vocabulaires contrôlés rend le processus de validation plus fluide et réduit les risques d’entrées peu claires ou incohérentes. Cela peut impliquer de définir des instructions pour certaines propriétés de métadonnées afin d’éviter toute information ambiguë ou incohérente.
@@ -168,4 +169,4 @@ Examinez le supply chain de contenu pour trouver les sources de métadonnées et
 
 Communiquez rapidement les objectifs, les progrès, les jalons et les défis afin de recevoir les commentaires et la coopération de toutes les parties prenantes. Encouragez la collaboration à l’échelle de l’organisation pour créer des processus efficaces et des métadonnées précieuses.
 
-En savoir plus sur [les métadonnées et les concepts associés](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html?lang=fr) pour gérer efficacement les métadonnées Experience Manager.
+En savoir plus sur [les métadonnées et les concepts associés](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html) pour gérer efficacement les métadonnées Experience Manager.

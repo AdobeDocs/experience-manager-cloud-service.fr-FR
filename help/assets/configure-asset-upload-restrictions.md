@@ -1,13 +1,14 @@
 ---
 title: Configurer des restrictions de téléchargement des ressources
 description: Configurez Adobe Experience Manager Assets de façon à restreindre le type de ressources que les utilisateurs peuvent télécharger en fonction du type MIME. Cela permet d’éviter les téléchargements accidentels de fichiers à un format indésirable ou malveillants.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
 feature: Upload, Asset Ingestion
 role: User, Admin, Developer
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 100%
+source-wordcount: '378'
+ht-degree: 98%
 
 ---
 

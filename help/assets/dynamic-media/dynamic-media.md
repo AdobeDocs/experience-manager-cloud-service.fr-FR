@@ -4,10 +4,11 @@ description: Découvrez ce qu’est Dynamic Media et comment l’utiliser pour d
 contentOwner: Rick Brough
 feature: Dynamic Media,Asset Management
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '661'
 ht-degree: 52%
 
 ---
@@ -34,12 +35,12 @@ Dynamic Media s’intègre de manière transparente à votre système de gestion
 
 ## Tâches que vous pouvez effectuer avec Dynamic Media {#what-you-can-do-with-dynamic-media}
 
-Dynamic Media permet de gérer les ressources avant de les publier. L’utilisation générale des ressources est décrite en détail à la section [&#x200B; Utilisation de Digital Assets &#x200B;](/help/assets/manage-digital-assets.md). Les rubriques générales incluent le chargement, le téléchargement, la modification et la publication des ressources, l’affichage et la modification des propriétés et la recherche de ressources.
+Dynamic Media permet de gérer les ressources avant de les publier. L’utilisation générale des ressources est décrite en détail à la section [ Utilisation de Digital Assets ](/help/assets/manage-digital-assets.md). Les rubriques générales incluent le chargement, le téléchargement, la modification et la publication des ressources, l’affichage et la modification des propriétés et la recherche de ressources.
 
 Les fonctionnalités uniquement incluses dans Dynamic Media sont les suivantes :
 
 * [Bannières de carrousel](carousel-banners.md)
-* [Visionneuses d’images](image-sets.md)
+* [Ensembles d’images](image-sets.md)
 * [Images interactives](interactive-images.md)
 * [Vidéos interactives](interactive-videos.md)
 * [Visionneuses de médias mixtes](mixed-media-sets.md)
@@ -66,7 +67,7 @@ OBSOLETE UNTIL INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 Les caractéristiques suivantes permettent de déterminer si Dynamic Media est activé ou non :
 
 * Des rendus dynamiques sont disponibles lors du téléchargement ou de la prévisualisation des ressources.
-* Des visionneuses d’images, à 360° et de supports variés sont disponibles.
+* Des ensembles d’images, des visionneuses à 360° et des visionneuses de supports variés sont disponibles.
 * Des rendus PTIFF sont créés.
 
 Lorsque vous cliquez sur une ressource image, l’affichage de la ressource est différent avec Dynamic Media activé. Dynamic Media utilise les visionneuses HTML5 à la demande.
@@ -79,7 +80,7 @@ Des rendus dynamiques, tels que des paramètres d’image et de visionneuse pré
 
 ### Visionneuses d’images Dynamic Media, visionneuses à 360° et de supports variés {#image-sets-spins-sets-mixed-media-sets}
 
-Des visionneuses d’images, à 360° et de supports variés sont disponibles lorsque Dynamic Media est activé.
+Des ensembles d’images, des visionneuses à 360° et des visionneuses de supports variés sont disponibles lorsque Dynamic Media est activé.
 
 ![chlimage_1-359](assets/chlimage_1-359.png)
 

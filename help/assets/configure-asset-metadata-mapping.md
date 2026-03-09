@@ -1,12 +1,13 @@
 ---
 title: Configurer le mappage des métadonnées de ressources entre Workfront et Experience Manager Assets
 description: Mappez les champs de métadonnées des ressources entre les applications Adobe Workfront et Experience Manager as a Cloud Service. Suite au mappage des champs de métadonnées, lorsque vous envoyez une ressource de Workfront à Experience Manager Assets, vous pouvez afficher les métadonnées de ressource mappées dans Experience Manager Assets.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
 feature: Metadata, Workfront Integrations and Apps
 role: User, Admin
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '1018'
 ht-degree: 93%
 
 ---
@@ -91,7 +92,6 @@ Pour configurer le mappage des métadonnées à l’aide d’un nouveau formulai
    1. Spécifiez `Project Name` dans le champ **[!UICONTROL Libellé du champ]**.
 
    1. Spécifiez `./jcr:content/metadata/wm:projectName` dans le champ **[!UICONTROL Mapper à la propriété]**. Pour vous guider, utilisez le modèle suivant pour définir les mappages de champs dans Experience Manager Assets :
-
       `./jcr:content/metadata/<mapping defined for the field in workfront>`.
 
       Lors de la configuration des mappages dans Workfront, vous avez mappé le champ Experience Manager Assets `wm:projectName` au champ Workfront Projet > Nom.

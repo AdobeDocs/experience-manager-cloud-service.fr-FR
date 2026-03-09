@@ -4,13 +4,14 @@ description: Cet article décrit comment afficher les journaux d’activité pou
 contentOwner: AG
 feature: Asset Reports, Asset Management
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 8dd82c31-f88e-4407-9b6d-c87033d7a823
 hide: true
 hidefromtoc: true
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 100%
+source-wordcount: '241'
+ht-degree: 98%
 
 ---
 

@@ -4,11 +4,12 @@ description: Découvrez comment utiliser des visionneuses à 360° dans Dynamic�
 contentOwner: Rick Brough
 feature: Spin Sets
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1956'
-ht-degree: 99%
+source-wordcount: '1962'
+ht-degree: 98%
 
 ---
 
@@ -18,7 +19,7 @@ Une visionneuse à 360° simule l’action consistant à faire pivoter un objet 
 
 Une visionneuse à 360° simule une expérience de visionnage à 360°. Dynamic Media fournit des visionneuses à 360° à axe unique avec lesquelles il est possible de faire pivoter un élément. En outre, les utilisateurs et utilisatrices peuvent effectuer un zoom et un panoramique « libres » sur n’importe quelle vue en seulement quelques clics. Ainsi, les utilisateurs et utilisatrices peuvent examiner un élément de plus près d’un point de vue particulier.
 
-Les visionneuses à 360° sont désignées par une bannière contenant le mot **[!UICONTROL SPINSET]**. En outre, si la visionneuse à 360° est publiée, la date de publication, indiquée par l’icône représentant la **[!UICONTROL Terre]**, figure sur la bannière avec la date de la dernière modification, indiquée par l’icône représentant un **[!UICONTROL crayon]**.
+Les visionneuses à 360° sont désignées par une bannière contenant le mot **[!UICONTROL SPINSET]**. En outre, si la visionneuse à 360° est publiée, la date de publication, indiquée par l’icône représentant la **[!UICONTROL Terre]**, figure sur la bannière avec la date de la dernière modification, indiquée par l’icône représentant un **[!UICONTROL crayon]**.
 
 ![chlimage_1-](assets/chlimage_1-380.png)
 
@@ -44,7 +45,7 @@ Pour démarrer rapidement, procédez comme suit :
 
    >[!IMPORTANT]
    >
-   >Les ensembles par lots sont créés par IPS (Image Production System) dans le cadre de l’assimilation des ressources.
+   >Les ensembles par lots sont créés par IPS (Image Production System) dans le cadre de l’ingestion des ressources.
 
 1. [Chargez les images pour plusieurs vues](#uploading-assets-for-spin-sets).
 

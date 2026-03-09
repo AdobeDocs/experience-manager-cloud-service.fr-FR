@@ -1,14 +1,15 @@
 ---
 title: Fragments de contenu - Navigateur de configurations (Ressources - Fragments de contenu)
 description: Découvrez comment activer certaines fonctionnalités de fragments de contenu dans le navigateur de configurations.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 feature: Content Fragments
 role: User, Admin, Developer
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 99%
+source-wordcount: '361'
+ht-degree: 98%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 99%
 
 Découvrez comment activer certaines fonctionnalités de fragments de contenu dans l’explorateur de configurations afin d’utiliser les puissantes fonctionnalités de diffusion en mode découplé d’AEM.
 
-## Activer la fonctionnalité de fragments de contenu pour votre instance {#enable-content-fragment-functionality-instance}
+## Activation de la fonctionnalité de fragments de contenu pour votre instance {#enable-content-fragment-functionality-instance}
 
 Avant d’utiliser les fragments de contenu, vous devez utiliser l’**explorateur de configurations** pour activer les éléments suivants :
 
@@ -41,7 +42,7 @@ Pour utiliser certaines [fonctionnalités de fragments de contenu](#creating-a-c
 
 >[!NOTE]
 >
->Voir [Navigateur de configuration](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+>Voir [Explorateur de configurations](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
 >[!NOTE]
 >

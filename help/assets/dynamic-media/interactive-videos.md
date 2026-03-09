@@ -4,10 +4,11 @@ description: Découvrez comment utiliser des vidéos interactives et Shoppable d
 contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 3b1b2bbff6bb01b7efa27c887641a22b5493dc29
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '5743'
+source-wordcount: '5749'
 ht-degree: 82%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 82%
 
 Vous pouvez facilement créer des vidéos interactives, également appelées vidéos shoppable, qui génèrent des conversions directement à partir de la vidéo. Les visionneuses interagissent par le biais d’un panneau latéral en regard du lecteur vidéo. Lorsque la vidéo met en surbrillance un élément, le panneau fait défiler les miniatures des services, informations ou produits associés. Les clients peuvent sélectionner une miniature pour accéder directement au service ou à une page web détaillée. Il peut également ajouter l’article à son panier pour un achat immédiat.
 
-Une fois la vidéo terminée, un résumé visuel de toutes les offres s’affiche pour générer un appel à l’action. Les clients ont une autre occasion de sélectionner l’élément qu’ils souhaitent. Ces expériences concrètes et spécifiques augmentent les interactions et les conversions des clients.
+Une fois la vidéo terminée, un résumé visuel de toutes les offres s’affiche pour générer un appel à l’action. Les clients ont une autre occasion de sélectionner l’élément qu’ils souhaitent. Ces expériences concrètes et spécifiques augmentent l’engagement et la conversion des clientes et clients.
 
 Voir aussi [Images interactives](/help/assets/dynamic-media/interactive-images.md).
 
@@ -28,11 +29,11 @@ Pour voir une vidéo interactive Shoppable en action, sélectionnez [Live Demos]
 
 * Pour mettre la vidéo en pause et ouvrir l’aperçu rapide du produit, sélectionnez la miniature. Par exemple, sélectionnez la miniature du KitchenAid dans la vidéo pour afficher le mixeur avec une option de rotation à 360° ou utilisez le zoom pour afficher les détails du mixeur.
 
-Voir aussi [Utilisation de vidéos interactives avec Dynamic Media](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/dynamicmedia/interactive-videos#dynamic-media)
+Voir aussi [Utilisation de vidéos interactives avec Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/interactive-videos#dynamic-media)
 
 <!-- 
 
-There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html?lang=fr. This must now call a new interactive video
+There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This must now call a new interactive video
 
 -->
 
@@ -148,10 +149,10 @@ Consultez les exemples d’URL d’aperçu rapide et les variables de miniatures
     <td><p>SKU unique. Trouvé dans la chaîne de requête.</p> </td>
     <td><p>Les URL d’aperçu rapide enregistrées incluent ce qui suit :</p>
     <ul>
-      <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
     </ul> <p>La seule partie variable de l’URL est la valeur du paramètre de chaîne de requête <code>productId=</code>, et il s’agit clairement d’une valeur de SKU. Par conséquent, seuls les champs SKU des miniatures doivent être renseignés avec des valeurs comme <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong> et <strong><code>1898294</code></strong>.</p> </td>
   </tr>
   <tr>
@@ -167,9 +168,9 @@ Consultez les exemples d’URL d’aperçu rapide et les variables de miniatures
     <td><p>SKU et ID de catégorie dans la chaîne de requête.</p> </td>
     <td><p>Les URL d’aperçu rapide enregistrées incluent ce qui suit :</p>
     <ul>
-      <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
     </ul> <p>Dans ce cas, l’URL comporte deux parties différentes. Le SKU est stocké dans le paramètre <code>prodId</code> et l’ID de catégorie dans le paramètre <code>category=</code>.</p> <p>Par conséquent, les définitions des miniatures sont des paires. Autrement dit, une valeur de SKU et une variable supplémentaire appelée <code>categoryId</code>. Les paires obtenues sont les suivantes :</p>
     <ul>
       <li>Le SKU est <code>305466</code> et <code>categoryId</code> est <code>1100004</code></li>
@@ -658,27 +659,27 @@ La procédure de construction de l’URL de l’aperçu rapide est la procédure
   <tbody>
   <tr>
     <td><p>SKU unique, trouvé dans la chaîne de requête</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
     <td>SKU unique, trouvé dans le chemin d’accès à l’URL</td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/product/" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
     <td><p>SKU et ID de catégorie dans la chaîne de requête</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   </tbody>
 </table>

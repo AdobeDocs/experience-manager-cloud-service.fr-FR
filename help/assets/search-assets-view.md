@@ -2,11 +2,12 @@
 title: Découvrez comment rechercher et trouver des ressources dans  [!DNL Assets view] ?
 description: Découvrez comment rechercher et trouver des ressources dans la vue AEM Assets. Les puissantes fonctionnalités de recherche de vous permettent de découvrir rapidement la ressource appropriée et d’améliorer la vitesse de votre contenu.
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '1627'
 ht-degree: 75%
 
 ---
@@ -124,9 +125,9 @@ To remove custom filters:
 
 ## Recherche IA {#ai-search}
 
-La recherche par IA est une fonctionnalité de recherche avancée qui comprend la signification et l’intention derrière la requête d’un utilisateur ou d’une utilisatrice plutôt que de s’appuyer sur des correspondances exactes de mots-clés. Il utilise l’intelligence artificielle (IA) et le machine learning pour fournir des résultats plus précis et contextuels.
+Recherche optimisée par l&#39;IA est une fonctionnalité de recherche avancée qui comprend la signification et l’intention derrière la requête d’un utilisateur ou d’une utilisatrice plutôt que de s’appuyer sur des correspondances exactes de mots-clés. Il utilise l’intelligence artificielle (IA) et le machine learning pour fournir des résultats plus précis et contextuels.
 
-Contrairement à la recherche traditionnelle par mot-clé, qui recherche des termes exacts, la recherche par IA interprète les relations entre les mots, les concepts et l’intention de l’utilisateur. Cela permet de s’assurer que les utilisateurs et les utilisatrices trouvent ce qu’ils recherchent, même si leur requête est formulée différemment, contient des fautes de frappe ou est dans une autre langue.
+Contrairement à la recherche traditionnelle par mot-clé, qui recherche des termes exacts, Recherche optimisée par l&#39;IA interprète les relations entre les mots, les concepts et l’intention de l’utilisateur. Cela permet de s’assurer que les utilisateurs et les utilisatrices trouvent ce qu’ils recherchent, même si leur requête est formulée différemment, contient des fautes de frappe ou est dans une autre langue.
 
 Voici quelques-uns de ses principaux avantages :
 
@@ -138,25 +139,25 @@ Voici quelques-uns de ses principaux avantages :
 
 * **Recherche contextuelle** : reconnaît l’intention derrière une requête, pas seulement les mots exacts.
 
-### Exemples de recherche dans l’IA {#examples-ai-search}
+### Exemples pour Recherche optimisée par l&#39;IA {#examples-ai-search}
 
 **Exemple d’invite** : *Femme buvant du café*
 
 La recherche traditionnelle par mot-clé recherche les correspondances exactes des métadonnées de ressource, telles que `Woman`, `drinking`, `Coffee`, et renvoie les ressources qui incluent tous ces termes dans les métadonnées.
 
-Cependant, la recherche par l’IA correspond à des mots similaires tels que `Girl`, `Lady` dans le cas de `Woman` et `Cappuccino` et `Latte` dans le cas de `Coffee`.
+Cependant, Recherche optimisée par l&#39;IA correspond à des mots similaires tels que `Girl`, `Lady` dans le cas de `Woman` et `Cappuccino` et `Latte` dans le cas de `Coffee`.
 
 De même, vous pouvez spécifier cette invite en espagnol ou mal orthographier `Woman` comme `Wman` et obtenir toujours les mêmes résultats.
 
 ![Recherche sémantique dans la vue Assets](assets/semantic-search.png)
 
-### Activer ou désactiver la recherche par l’IA dans la vue Assets {#enable-disable-ai-search}
+### Activer ou désactiver Recherche optimisée par l&#39;IA dans la vue Assets {#enable-disable-ai-search}
 
-Pour activer ou désactiver la recherche par l’IA, procédez comme suit :
+Pour activer ou désactiver Recherche optimisée par l&#39;IA, procédez comme suit :
 
 1. Accédez à **[!UICONTROL Paramètres]** >> **[!UICONTROL Paramètres généraux]** et sélectionnez l’onglet **[!UICONTROL Rechercher]**.
 
-1. Dans la section **[!UICONTROL Recherche]**, sélectionnez **[!UICONTROL Recherche par l’IA]** pour activer la recherche par l’IA ou **[!UICONTROL Mot-clé]** pour la désactiver.
+1. Dans la section **[!UICONTROL Rechercher]**, sélectionnez **[!UICONTROL Recherche optimisée par l&#39;IA]** pour activer Recherche optimisée par l&#39;IA ou **[!UICONTROL Mot-clé]** pour le désactiver.
 
    ![Recherche sémantique dans la vue Assets](/help/assets/assets/enable-disable-ai-search.png)
 
@@ -394,7 +395,7 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 
 * Faites des commentaires sur la documentation en utilisant les options [!UICONTROL Modifier cette page] ![Modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![Créer un problème GitHub](assets/do-not-localize/github-issue.png) disponibles dans la barre latérale de droite.
 
-* Contacter l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr#support)
+* Contacter l’[assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&lang=fr#support)
 
 
 

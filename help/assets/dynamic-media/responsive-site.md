@@ -4,11 +4,12 @@ description: Découvrez comment utiliser la fonction de code réactif pour diffu
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 100%
+source-wordcount: '338'
+ht-degree: 98%
 
 ---
 
@@ -42,8 +43,8 @@ Voir aussi [Liaison d’URL à une application web](linking-urls-to-yourwebappli
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
-1. Dans la boîte de dialogue **[!UICONTROL Intégrer une image réactive]**, sélectionnez et copiez le texte du code réactif et collez-le dans votre site web pour accéder au fichier réactif.
-1. Modifiez les points d’arrêt par défaut dans le code incorporé pour qu’ils correspondent à ceux du site web réactif directement dans le code. Testez en outre les différentes résolutions d’image diffusées à différents points d’arrêt d’une page.
+1. Dans la boîte de dialogue **[!UICONTROL Incorporer une image réactive]**, sélectionnez et copiez le texte du code réactif et collez-le dans votre site web pour accéder au fichier réactif.
+1. Modifiez les points d’arrêt par défaut dans le code intégré pour qu’ils correspondent à ceux du site web réactif directement dans le code. Testez en outre les différentes résolutions d’image diffusées à différents points d’arrêt d’une page.
 
 ## Utilisation du protocole HTTP/2 pour diffuser vos ressources Dynamic Media {#using-http-to-delivery-your-dynamic-media-assets}
 

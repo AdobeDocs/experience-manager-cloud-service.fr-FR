@@ -7,11 +7,12 @@ content-type: reference
 feature: Image Profiles
 role: User,Admin
 mini-toc-levels: 4
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '671'
-ht-degree: 100%
+source-wordcount: '677'
+ht-degree: 99%
 
 ---
 
@@ -24,7 +25,7 @@ hidefromtoc: yes
 <!-- 
 >[!NOTE]
 >
->This feature to create a Dynamic Media company alias account is in the Prerelease Channel for January 2022. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#enable-prerelease) for information on how to enable the feature for your environment. The feature is generally available in the February 2022 release. 
+>This feature to create a Dynamic Media company alias account is in the Prerelease Channel for January 2022. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) for information on how to enable the feature for your environment. The feature is generally available in the February 2022 release. 
 -->
 
 Les URL Dynamic Media et le code intégré de la visionneuse contiennent le nom du compte de votre société. Ce nom de compte a été créé au moment de la mise en service de Dynamic Media. Il peut y avoir des scénarios où votre entreprise a fait l’objet d’une acquisition ou d’un changement de marque ou où vous souhaitez simplement utiliser un nom plus marquant. Dans ce cas de figure, il n’est pas facile de mettre à jour manuellement le nom de votre compte de société dans toutes les URL et dans le code intégré de la visionneuse prêt à l’emploi. En outre, il est possible que vous impactiez votre référentiel Dynamic Media existant ou que vous impactiez le contenu dynamique. Pour résoudre ce problème, vous pouvez configurer un compte d’alias de société Dynamic Media.
@@ -52,7 +53,7 @@ Vous commencez à configurer un compte d’alias de société Dynamic Media en s
    * Votre région.
    * Si des [ensembles de règles](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md) ont été utilisés précédemment pour obtenir la diffusion de contenu Dynamic Media par le biais d’un autre nom de compte de société Dynamic Media.
 
-1. Une fois le compte d’alias Dynamic Media créé par l’assistance, dans l’instance d’auteur as a Cloud Service Experience Manager, sélectionnez le logo Experience Manager as a Cloud Service pour accéder à la console de navigation globale.
+1. Une fois le compte d’alias Dynamic Media créé par l’assistance, dans l’instance de création d’Experience Manager as a Cloud Service, sélectionnez le logo Experience Manager as a Cloud Service pour accéder à la console de navigation globale.
 1. Sur le côté gauche de la console, sélectionnez l’icône Outils, puis **[!UICONTROL Cloud Services > Configuration Dynamic Media]**.
 1. Sur la page du navigateur de configuration Dynamic Media, dans le volet de gauche, sélectionnez **[!UICONTROL global]**. Ne sélectionnez pas l’icône de dossier située à gauche de **[!UICONTROL global]**. Sélectionnez ensuite **[!UICONTROL Modifier]**.
 

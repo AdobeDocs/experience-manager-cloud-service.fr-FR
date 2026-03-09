@@ -1,11 +1,12 @@
 ---
 title: Modification d’images dans Content Hub à l’aide d’Adobe Express
 description: Modification d’images dans Content Hub à l’aide d’Adobe Express
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
-source-git-commit: 12bb550ff275c84bc60869e91e953993aab57aa5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 5%
+source-wordcount: '716'
+ht-degree: 6%
 
 ---
 
@@ -29,7 +30,7 @@ Pour modifier des images à l’aide de Content Hub :
 
 1. Cliquez sur **[!DNL Open in Adobe Express]** disponible sur la carte de l’image à modifier. Vous pouvez également cliquer sur l’image pour en afficher les détails, puis cliquer sur le logo [!DNL Adobe Express]. L’éditeur incorporé pour Adobe Express se charge ensuite sans jamais quitter Content Hub.
 
-   Vous pouvez tirer parti de la fonctionnalité [!DNL Adobe Express] pour effectuer toutes les actions liées à la modification d’images, telles que [redimensionner l’image](https://helpx.adobe.com/fr/express/using/resize-image.html), [supprimer ou modifier la couleur d’arrière-plan](https://helpx.adobe.com/fr/express/using/remove-background.html), [recadrer l’image](https://helpx.adobe.com/fr/express/using/crop-image.html), combiner l’image à une image ou un texte généré par l’IA, etc.
+   Vous pouvez tirer parti de la fonctionnalité [!DNL Adobe Express] pour effectuer toutes les actions liées à la modification d’images, telles que [redimensionner l’image](https://helpx.adobe.com/express/using/resize-image.html), [supprimer ou modifier la couleur d’arrière-plan](https://helpx.adobe.com/express/using/remove-background.html), [recadrer l’image](https://helpx.adobe.com/express/using/crop-image.html), combiner l’image à une image ou un texte généré par l’IA, etc.
 
 1. Effectuez vos modifications et cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer la ressource modifiée dans l’un des formats suivants :
 

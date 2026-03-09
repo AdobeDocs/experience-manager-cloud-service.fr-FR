@@ -4,11 +4,12 @@ description: Génération de variantes des ressources à l’aide de l’intégr
 contentOwner: AG
 feature: Upload, Asset Processing, Publishing, Asset Compute Microservices
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '801'
-ht-degree: 96%
+source-wordcount: '807'
+ht-degree: 95%
 
 ---
 
@@ -18,7 +19,7 @@ Le module complémentaire d’automatisation du contenu intègre [!DNL Adobe Exp
 
 Pour modifier des ressources dans [!DNL Adobe Photoshop] et [!DNL Adobe Lightroom], il n’est pas nécessaire de télécharger des ressources à partir de [!DNL Experience Manager Assets], de les modifier et de les charger à nouveau. Vous créez et configurer un profil de traitement dans [!DNL Experience Manager], appliquer le profil à un dossier et charger les ressources dans le dossier. Les ressources chargées sont retraitées en fonction des profils de traitement et vous obtenez des variantes de ces ressources. Le traitement en masse constant et sans effort permet d’économiser les efforts manuels et d’accroître la vitesse du contenu, cela également sans avoir besoin de super compétences créatives. En outre, les développeurs et les partenaires peuvent étendre les microservices de ressources avec un accès direct à ces API et inclure une logique personnalisée.
 
-Les utilisateurs peuvent créer des profils de traitement afin d’automatiser les opérations de création suivantes sur leurs ressources :
+Les utilisateurs et utilisatrices peuvent créer des profils de traitement afin d’automatiser les opérations de création suivantes sur leurs ressources :
 
 * **Correction automatique de la hauteur de ton** : utilise l’intelligence artificielle pour analyser le contenu de l’image et corrige intelligemment la lumière et les couleurs en fonction des attributs uniques de l’image.
 
@@ -122,5 +123,5 @@ Pour traiter les ressources existantes, sélectionnez les ressources, sélection
 >[!MORELIKETHIS]
 >
 >* [Configuration et utilisation des microservices de ressources via des profils de traitement](/help/assets/asset-microservices-configure-and-use.md).
->* [&#x200B; [!DNL Experience Manager] Intégration avec [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md).
+>* [ [!DNL Experience Manager] Intégration avec [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md).
 >* [Ingestion et traitement de ressources à l’aide des microservices de ressources : Vue d’ensemble](/help/assets/asset-microservices-overview.md).

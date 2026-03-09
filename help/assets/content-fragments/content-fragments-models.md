@@ -1,13 +1,14 @@
 ---
 title: Modèles de fragment de contenu (ressources - fragments de contenu)
 description: Découvrez comment les modèles de fragment de contenu servent de base à votre contenu découplé dans AEM, ce qui vous permet de créer des fragments de contenu avec du contenu structuré.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Developer
 solution: Experience Manager Sites
-source-git-commit: ce807274d6138473ff9661897a0816e0feb99f15
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '3604'
+source-wordcount: '3610'
 ht-degree: 72%
 
 ---
@@ -25,7 +26,7 @@ Pour utiliser des modèles de fragments de contenu, procédez comme suit :
 
 >[!NOTE]
 >
->Tenez compte des [&#x200B; Bonnes pratiques &#x200B;](/help/assets/content-fragments/content-fragments.md#best-practices) lorsque vous utilisez vos modèles de fragment de contenu et vos fragments de contenu.
+>Tenez compte des [ Bonnes pratiques ](/help/assets/content-fragments/content-fragments.md#best-practices) lorsque vous utilisez vos modèles de fragment de contenu et vos fragments de contenu.
 
 >[!NOTE]
 >
@@ -56,7 +57,7 @@ Vous pouvez également définir différentes propriétés ; par exemple, ajouter
 
    >[!NOTE]
    >
-   >Pour plus d’informations sur le **Modèle d’URL d’aperçu par défaut** voir [&#x200B; Modèle de fragment de contenu - Propriétés](#content-fragment-model-properties).
+   >Pour plus d’informations sur le **Modèle d’URL d’aperçu par défaut** voir [ Modèle de fragment de contenu - Propriétés](#content-fragment-model-properties).
 
    ![titre et description](assets/cfm-models-02.png)
 

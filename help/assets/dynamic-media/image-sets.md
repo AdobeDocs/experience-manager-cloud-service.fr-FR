@@ -4,11 +4,12 @@ description: Découvrez comment utiliser des ensemble d’images dans Dynamic M
 contentOwner: Rick Brough
 feature: Image Sets
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2145'
-ht-degree: 97%
+source-wordcount: '2151'
+ht-degree: 96%
 
 ---
 
@@ -49,7 +50,7 @@ Pour démarrer rapidement :
 
    >[!IMPORTANT]
    >
-   >Les ensembles par lots sont créés par IPS (Image Production System) dans le cadre de l’assimilation des ressources.
+   >Les ensembles par lots sont créés par IPS (Image Production System) dans le cadre de l’ingestion des ressources.
 
 1. [Chargez les images sources originales pour plusieurs vues](#uploading-assets-in-image-sets).
 
@@ -198,7 +199,7 @@ Vous pouvez créer des ensembles d’images dans l’interface d’utilisation o
 
 >[!IMPORTANT]
 >
->Les ensembles par lots sont créés par IPS [Image Production System] dans le cadre de l’assimilation des ressources.
+>Les ensembles par lots sont créés par IPS [Image Production System] dans le cadre de l’ingestion des ressources.
 
 Notez toutefois que les visionneuses créées à l’aide de paramètres prédéfinis d’ensemble par lot *ne s’affichent pas* dans l’interface utilisateur. Vous pouvez afficher ces visionneuses de trois manières différentes. (Ces méthodes sont disponibles même si vous avez créé les ensembles d’images dans l’interface d’utilisation.)
 

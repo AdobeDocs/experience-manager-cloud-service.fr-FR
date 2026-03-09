@@ -1,21 +1,22 @@
 ---
 title: Gérer les rapports dans la vue Assets
 description: Accédez aux données de la section des rapports de la vue Assets pour évaluer l’utilisation des produits et des fonctionnalités et déduire des informations sur les mesures de succès clés.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 8aae8b2219e60f0a9220aa34b53bb3c8e19232c1
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1504'
-ht-degree: 86%
+source-wordcount: '1510'
+ht-degree: 87%
 
 ---
 
 # Gérer les rapports {#manage-reports}
 
-Les rapports de ressources offrent aux administrateurs et administratrices une visibilité sur l’activité de l’environnement Adobe Experience Manager Assets View. Ces données fournissent des informations utiles sur la façon dont les utilisateurs interagissent avec le contenu et le produit. Tous les utilisateurs et utilisatrices peuvent accéder au tableau de bord Insights et ceux qui sont affectés au profil de produit Administrateurs et administratrices peuvent créer des rapports définis par l’utilisateur ou l’utilisatrice.
+Les rapports de ressources offrent aux administrateurs et administratrices une visibilité sur l’activité de l’environnement de la vue Adobe Experience Manager Assets. Ces données fournissent des informations utiles sur la façon dont les utilisateurs et utilisatrices interagissent avec le contenu et le produit. Tous les utilisateurs et utilisatrices peuvent accéder au tableau de bord Insights et ceux qui sont affectés au profil de produit Administrateurs et administratrices peuvent créer des rapports définis par l’utilisateur ou l’utilisatrice.
 
 ## Accéder aux rapports {#access-reports}
 
@@ -52,7 +53,6 @@ L’environnement d’affichage AEM Assets offre des fonctionnalités de créati
    1. **Description :** ajoutez une description facultative au rapport.
    1. **Sélectionner le chemin d’accès au dossier :** sélectionnez un chemin d’accès au dossier pour générer le rapport des ressources chargées et téléchargées dans ce dossier spécifique. Par exemple, si vous avez besoin d’un rapport de ressources chargées dans un dossier, indiquez le chemin d’accès à ce dossier.
    1. **Sélectionner l’intervalle de dates :** sélectionnez la période pour afficher l’activité de chargement ou de téléchargement dans le dossier.
-
    <br>
 
    >[!NOTE]
@@ -143,7 +143,7 @@ Obtenez des informations de diffusion pour les ressources diffusées avec Dynami
 <!--
 >[!NOTE]
 > 
->To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 -->
 
 ### Conditions préalables {#prereqs-dynamic-media-delivery-reports}
@@ -204,8 +204,7 @@ Pour planifier un rapport, procédez comme suit :
    1. **Titre :** ajoutez un titre au rapport.
    1. **Description :** ajoutez une description facultative au rapport.
    1. **Sélectionner le chemin d’accès au dossier :** sélectionnez un chemin d’accès au dossier afin de générer un rapport pour les ressources qui seront chargées ou téléchargées à partir de ce dossier spécifique à l’avenir.
-   1. Activer **Planifier un rapport :** activez cette option pour planifier le rapport à une date ultérieure ou récurrente.
-
+   1. Bouton **Planifier un rapport** : bouton (bascule) permettant de planifier le rapport à une date ultérieure ou de le rendre récurrent.
       ![Planification d’un rapport](/help/assets/assets/schedule-reports1.svg)
 
    1. **Choisir la fréquence :** spécifiez l’intervalle de génération du rapport (par exemple, quotidien, hebdomadaire, mensuel, annuel ou ponctuel) et définissez la date et l’heure d’exécution du rapport ainsi que la date de fin de la périodicité. Pour un rapport ponctuel, sélectionnez la période du rapport sur le type d’activité sélectionné dans l’environnement AEM. Par exemple, si vous avez besoin d’un rapport sur les ressources téléchargées entre le 10 et le 29 (dates futures) d’un mois spécifique, sélectionnez ces dates dans le champ **Sélectionner l’intervalle de dates**.

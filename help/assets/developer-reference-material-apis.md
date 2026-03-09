@@ -4,10 +4,11 @@ description: '[!DNL Assets] Les API et le contenu de référence des développeu
 contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1876'
 ht-degree: 97%
 
 ---

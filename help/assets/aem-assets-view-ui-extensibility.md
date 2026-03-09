@@ -3,10 +3,11 @@ title: Activez l’extensibilité de l’interface utilisateur dans  [!DNL AEM A
 description: Découvrez la fonctionnalité d’extensibilité de l’interface utilisateur d [!DNL AEM Assets View]. [!DNL AEM Assets View] UI qui permet d’ajouter des composants d’interface utilisateur personnalisés pour répondre à des besoins professionnels spécifiques.
 feature: App Builder
 role: User, Developer
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
@@ -36,7 +37,7 @@ Dans [!DNL Assets View], accédez à la page **[!UICONTROL Détails]** d’une r
 
 Remplissez les conditions requises suivantes pour commencer à ajouter le composant d’extensibilité à votre [!DNL Assets View UI] :
 
-* [&#x200B; Accès à  [!DNL Assets View]](#1).
+* [ Accès à  [!DNL Assets View]](#1).
 * Accès à la [[!DNL Adobe app builder]](https://developer.adobe.com/app-builder/docs/overview/).
 * Autorisation de développer le rôle d’administrateur système au sein de l’organisation. Voir [cette documentation](https://developer.adobe.com/uix/docs/guides/get-access/) pour plus d’informations.
 * [!DNL Adobe IO command line tool (AIO CLI)] est installé sur vos ordinateurs locaux. Cet outil est essentiel pour la création et le déploiement de projets d’extension. Voir [Création de votre première application App Builder](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app#local-environment-set-up) (nécessite une authentification pour l’accès) pour plus d’informations.

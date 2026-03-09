@@ -1,12 +1,13 @@
 ---
 title: Importer des ressources en bloc à l’aide de la vue Assets
 description: Découvrez comment importer des ressources en bloc à l’aide de la nouvelle interface utilisateur d’Assets (vue Assets). Elle permet aux administrateurs et administratrices d’importer un grand nombre de ressources d’une source de données vers AEM Assets.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1874'
+source-wordcount: '1880'
 ht-degree: 88%
 
 ---
@@ -27,7 +28,7 @@ Vous pouvez importer des ressources à partir des sources de données suivantes�
 * Dropbox
 * OneDrive
 
->[!VIDEO](https://video.tv.adobe.com/v/3451958/?captions=fre_fr&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on){transcript=true}
 
 ## Conditions préalables requises {#prerequisites}
 

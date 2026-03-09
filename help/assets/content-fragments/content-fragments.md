@@ -1,13 +1,14 @@
 ---
 title: Utiliser des fragments de contenu (Assets - Fragments de contenu)
 description: Découvrez comment les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service vous permettent de concevoir, créer, organiser et utiliser du contenu, idéal pour la création de pages et la diffusion découplée.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 8d8e45126a27b9ad5fdbc2276f08c28e4240c830
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2627'
+source-wordcount: '2633'
 ht-degree: 58%
 
 ---
@@ -150,7 +151,7 @@ Les ressources peuvent être utilisées avec un fragment de contenu de plusieurs
 
 * **Insérer une ressource** dans un fragment (fragments de médias variés)
 
-   * Ils font partie du fragment (voir [&#x200B; Parties constituantes d’un fragment de contenu &#x200B;](#constituent-parts-of-a-content-fragment)).
+   * Ils font partie du fragment (voir [ Parties constituantes d’un fragment de contenu ](#constituent-parts-of-a-content-fragment)).
    * Définissent la position de la ressource.
    * Reportez-vous à la section [Insertion de ressources dans votre fragment](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) dans l’éditeur de fragments pour plus d’informations.
 
@@ -160,7 +161,7 @@ Les ressources peuvent être utilisées avec un fragment de contenu de plusieurs
 
 * **Contenu associé**
 
-   * Connecté à un fragment ; mais pas une partie fixe du fragment (voir [&#x200B; Parties constituantes d’un fragment de contenu &#x200B;](#constituent-parts-of-a-content-fragment)).
+   * Connecté à un fragment ; mais pas une partie fixe du fragment (voir [ Parties constituantes d’un fragment de contenu ](#constituent-parts-of-a-content-fragment)).
    * Dispose d’une certaine flexibilité pour le positionnement.
    * Facilement disponible pour utilisation (comme contenu intermédiaire) lors de l’utilisation du fragment sur une page.
 

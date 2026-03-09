@@ -5,10 +5,11 @@ contentOwner: AG
 mini-toc-levels: 1
 feature: Collections, Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2398'
+source-wordcount: '2404'
 ht-degree: 81%
 
 ---
@@ -44,7 +45,7 @@ Vous pouvez créer une collection contenant des [références statiques](#create
 
 ### Création d’une collection avec des références statiques {#create-a-collection-with-static-references}
 
-Vous pouvez créer une collection avec des références statiques, par exemple une collection avec des références à des ressources, des dossiers, des collections, des visionneuses à 360° et des visionneuses d’images.
+Vous pouvez créer une collection avec des références statiques, par exemple une collection avec des références à des ressources, des dossiers, des collections, des visionneuses à 360° et des ensembles d’images.
 
 1. Accédez à la console **[!UICONTROL Collections]**.
 1. Dans la barre d’outils, sélectionnez **[!UICONTROL Créer]**.

@@ -4,11 +4,12 @@ description: Découvrez comment extraire les ressources pour modification et les
 contentOwner: AG
 feature: Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: adb94a31-d949-4f4a-89bc-44f1b4f67e14
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 100%
+source-wordcount: '477'
+ht-degree: 99%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 100%
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/check-out-and-submit-assets.html?lang=fr) |
 | AEM as a Cloud Service | Cet article |
 
-[!DNL Adobe Experience Manager Assets] permet d’extraire des ressources pour les modifier et de les ré-archiver après y avoir apporté les modifications. Après avoir extrait une ressource, vous seul pouvez la modifier, l’annoter, la publier, la déplacer ou la supprimer. Le fait d’extraire une ressource entraîne son verrouillage. Les autres utilisateurs ne peuvent effectuer aucune de ces opérations sur la ressource tant que vous ne l’avez pas archivée dans [!DNL Assets]. Toutefois, ils peuvent modifier les métadonnées de la ressource verrouillée.
+[!DNL Adobe Experience Manager Assets] permet d’extraire des ressources pour les modifier et de les archiver à nouveau après y avoir apporté des modifications. Une fois la ressource extraite, vous êtes la seule personne à pouvoir la modifier, l’annoter, la publier, la déplacer ou la supprimer. Le fait d’extraire une ressource entraîne son verrouillage. Les autres utilisateurs ne peuvent effectuer aucune de ces opérations sur la ressource tant que vous ne l’avez pas archivée dans [!DNL Assets]. Toutefois, ils peuvent modifier les métadonnées de la ressource verrouillée.
 
 Vous avez besoin d’un accès en écriture à ces ressources pour être en mesure de les extraire ou de les archiver.
 
@@ -79,5 +80,5 @@ Les administrateurs peuvent archiver les ressources extraites par d’autres uti
 
 >[!MORELIKETHIS]
 >
->* [Présentation de l’archivage et de l’extraction dans l’appli de bureau [!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#how-app-works2)
+>* [Présentation de l’archivage et de l’extraction dans l’appli de bureau [!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#how-app-works2)
 >* [Tutoriel vidéo pour comprendre l’archivage et l’extraction [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html?lang=fr)

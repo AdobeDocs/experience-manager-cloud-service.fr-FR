@@ -2,11 +2,12 @@
 title: Prise en charge des fragments de contenu Adobe Experience Manager as a Cloud Service dans l’API HTTP Assets
 description: Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets, un élément important de la fonctionnalité de diffusion découplée de Adobe Experience Manager.
 feature: Content Fragments, Assets HTTP API
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 role: User, Admin
-source-git-commit: f55299d7054a9e1f8e1356cb975dfeee162ec202
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1856'
+source-wordcount: '1862'
 ht-degree: 57%
 
 ---
@@ -194,7 +195,7 @@ Pour plus d’informations sur les fonctionnalités disponibles via l’API, voi
 
 L’API REST Assets prend en charge la pagination (pour les requêtes GET) au moyen des paramètres d’URL :
 
-* `offset` : nombre de premières entités (enfants) à extraire
+* `offset` : nombre de premières entités (enfants) à récupérer
 * `limit` : nombre maximal d’entités renvoyées
 
 La réponse contient des informations de pagination dans le cadre de la section `properties` de la sortie SIREN. Cette propriété `srn:paging` contient le nombre total d’entités (enfants) ( `total`), le décalage et la limite ( `offset`, `limit`) tels que spécifiés dans la requête.
@@ -283,7 +284,7 @@ L’utilisation peut varier selon que vous utilisez un environnement de créatio
 
 >[!NOTE]
 >
->Voir la section [&#x200B; Référence d’API &#x200B;](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). En particulier, [API Adobe Experience Manager Assets – Fragments de contenu](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
+>Voir la section [ Référence d’API ](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). En particulier, [API Adobe Experience Manager Assets – Fragments de contenu](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
 >
 >Les [OpenAPI de modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) sont également disponibles.
 
@@ -384,4 +385,4 @@ Pour accéder aux références d’API détaillées :
 Pour en savoir plus, voir :
 
 * [Documentation de l’API HTTP Assets](/help/assets/mac-api-assets.md)
-* [Session AEM Gem : OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html?lang=fr)
+* [Session AEM Gem : OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html)

@@ -4,11 +4,12 @@ description: Cette newsletter est conçue pour vous aider à vous familiariser r
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 97%
+source-wordcount: '947'
+ht-degree: 96%
 
 ---
 
@@ -65,7 +66,7 @@ Dans cette newsletter unique archivée, vous trouverez des ressources précieuse
    * Explorez les puissantes fonctions de recadrage de Dynamic Media.
    * Profitez d’un audit gratuit d’Adobe pour vous aider à exploiter tout le potentiel de Dynamic Media Classic.
    * Découvrez la nouvelle interface utilisateur Dynamic Media Classic.
-   * Faites la connaissance de `Georgia Myers`, responsable de la réussite client pour Adobe Experience Cloud.
+   * Faites la connaissance de `Georgia Myers`, responsable du succès client pour Adobe Experience Cloud.
 
 * **[Janvier 2020, numéro 1](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_01_2020_Jan.html?lang=fr)**
 
@@ -138,7 +139,7 @@ Dans cette newsletter unique archivée, vous trouverez des ressources précieuse
    * Regardez des tutoriels vidéo importants dans Experience League.
    * Apprenez-en plus sur le prochain Adobe Insider Tour.
    * Découvrez comment vous pouvez protéger vos ressources numériques contre le piratage.
-   * Découvrez la fonction de recadrage dynamique pour les images, piloté par l’IA.
+   * Découvrez le recadrage intelligent des images piloté par l’IA.
    * Rencontre avec `Alex Thiers`, un des principaux acteurs à l’origine des nombreuses fonctionnalités et innovations de Dynamic Media et de Dynamic Media Classic.
 
 * **[Mai 2019, numéro 05](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_05_2019_May.html?lang=fr)**
@@ -149,7 +150,7 @@ Dans cette newsletter unique archivée, vous trouverez des ressources précieuse
    * Regardez des tutoriels vidéo importants dans Experience League.
    * Découvrez le prochain Adobe Insider Tour.
    * Pour mettre à jour votre stratégie de média enrichi, lisez cette série de blogs en trois parties.
-   * Découvrez le recadrage vidéo intelligent piloté par l’IA.
+   * Découvrez le recadrage intelligent des vidéos piloté par l’IA.
 
 * **[Avril 2019, numéro 04](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_04_2019_April.html?lang=fr)**
 

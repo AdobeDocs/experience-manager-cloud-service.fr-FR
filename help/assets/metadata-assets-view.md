@@ -3,11 +3,12 @@ title: Comment gérer les métadonnées dans la vue Assets ?
 description: Découvrez comment gérer les métadonnées dans la vue Assets. Une meilleure gestion des métadonnées rend une ressource plus accessible, plus facile à gérer et plus complète.
 role: User, Leader, Admin, Developer
 contentOwner: AG
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 8819dc84887f79e047b4beffd18e03dee3ee45a3
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2268'
+source-wordcount: '2274'
 ht-degree: 83%
 
 ---
@@ -242,7 +243,7 @@ Pour modifier un formulaire de métadonnées, procédez comme suit :
 
 * Faites des commentaires sur la documentation en utilisant l’option [!UICONTROL Modifier cette page] ![modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![créer un problème GitHub](assets/do-not-localize/github-issue.png) disponible dans la barre latérale droite.
 
-* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr#support).
+* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&lang=fr#support).
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:

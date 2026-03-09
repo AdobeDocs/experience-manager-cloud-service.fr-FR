@@ -8,10 +8,11 @@ contentOwner: Vishabh Gupta
 topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1668'
+source-wordcount: '1674'
 ht-degree: 89%
 
 ---

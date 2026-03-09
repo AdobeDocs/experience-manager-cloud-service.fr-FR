@@ -1,14 +1,15 @@
 ---
 title: Fragments de contenu - Considérations sur la suppression (Ressources - Fragments de contenu)
 description: Examinez ces points importants avant de définir vos politiques de suppression de fragments de contenu dans AEM. Les fragments de contenu forment un puissant outil de diffusion de contenu découplé. Les implications de leur suppression doivent être soigneusement examinées.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 69c08f2f-4d51-4aea-957e-ee81c4604377
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 92%
+source-wordcount: '476'
+ht-degree: 91%
 
 ---
 
@@ -24,14 +25,14 @@ En ce qui concerne les autorisations de suppression, les fragments de contenu do
 
 1. **Le fragment de contenu en tant qu’entité unique.**
 
-   * **Cas d’utilisation** : utilisateur qui doit modifier/mettre à jour un fragment de contenu - **et supprimer un fragment entier**.
+   * **Cas d’utilisation** : utilisateur qui doit modifier/mettre à jour un fragment de contenu **et supprimer un fragment entier**.
    * **Autorisations** : l’autorisation Supprimer peut être affectée via la gestion des utilisateurs et/ou des groupes. <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
 2. **Les multiples sous-entités qui constituent un fragment de contenu ; par exemple, les variations, les sous-nœuds.**
 
    Le fonctionnement de base de l’éditeur de fragment de contenu nécessite que ces sous-éléments transitoires puissent être supprimés. Par exemple, lors de la manipulation des variantes, mais également lors de la modification de métadonnées ou de la gestion du contenu associé.
 
-   * **Cas d’utilisation** : utilisateur qui doit modifier/mettre à jour un fragment de contenu - **sans être autorisé à supprimer un fragment entier**.
+   * **Cas d’utilisation** : utilisateur qui doit modifier/mettre à jour un fragment de contenu, **sans être autorisé à supprimer un fragment entier**.
    * **Autorisations** : voir [Autorisations requises pour la fonctionnalité d’éditeur uniquement](#permissions-required-for-editor-functionality-only).
 
 >[!NOTE]

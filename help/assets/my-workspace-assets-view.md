@@ -1,13 +1,14 @@
 ---
 title: Vue Mon espace de travail pour Assets
 description: La page Mon espace de travail est composée de modules visuels personnalisables permettant d’accéder facilement aux éléments clés de l’interface utilisateur d’Assets et aux informations les plus pertinentes pour l’utilisateur et l’utilisatrice.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 4ffba974-6e8e-48e2-aa57-7d4041032226
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 91%
+source-wordcount: '751'
+ht-degree: 90%
 
 ---
 

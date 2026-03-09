@@ -7,11 +7,12 @@ topic-tags: introduction
 content-type: reference
 feature: 3D Assets
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2252'
-ht-degree: 100%
+source-wordcount: '2258'
+ht-degree: 99%
 
 ---
 
@@ -280,4 +281,4 @@ Utilisez les deux méthodes suivantes pour publier des ressources 3D Dynamic Med
 
 * **[!UICONTROL Incorporer]** : utilisez l’option **[!UICONTROL Incorporer]** si vous souhaitez afficher une ressource 3D Dynamic Media incorporée dans une page web à l’aide de la visionneuse Dimensionnel. Vous copiez le code intégré dans le presse-papiers pour pouvoir le coller dans vos pages web. Vous ne pouvez pas modifier le code dans la boîte de dialogue **[!UICONTROL Incorporer]**.
 
-  Voir [Intégration de la visionneuse de vidéos ou d’images Dynamic Media, ou de la visionneuse Dimensionnel dans une page web](/help/assets/dynamic-media/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).
+  Voir [Incorporation de la visionneuse de vidéos ou d’images Dynamic Media, ou de la visionneuse dimensionnelle dans une page web](/help/assets/dynamic-media/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).

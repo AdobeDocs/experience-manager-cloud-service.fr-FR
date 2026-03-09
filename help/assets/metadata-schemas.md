@@ -4,11 +4,12 @@ description: Le schéma de métadonnées définit la disposition de la page des 
 contentOwner: AG
 feature: Metadata
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2634'
-ht-degree: 98%
+source-wordcount: '2640'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 98%
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-schemas.html?lang=fr) |
 | AEM as a Cloud Service | Cet article |
 
-Les entreprises disposent d’un modèle de métadonnées qui améliore la découverte, l’utilisation, l’interopérabilité des ressources, etc. L’application correcte des métadonnées est sacro-sainte pour gérer les workflows et les processus pilotés par les métadonnées. Pour respecter la stratégie et les normes de métadonnées à l’échelle de l’entreprise, vous pouvez utiliser des schémas de métadonnées qui aident les utilisateurs de la gestion des actifs numériques à s’aligner sur celles-ci. [!DNL Adobe Experience Manager] Met à disposition des méthodes simples et flexibles pour créer, gérer et appliquer des schémas de métadonnées.
+Les entreprises disposent d’un modèle de métadonnées qui améliore la découverte, l’utilisation, l’interopérabilité des ressources, etc. L’application correcte des métadonnées est sacro-sainte pour gérer les workflows et les processus pilotés par les métadonnées. Pour respecter la stratégie et les normes de métadonnées à l’échelle de l’entreprise, vous pouvez utiliser des schémas de métadonnées qui aident les utilisateurs et utilisatrices de la gestion des actifs numériques à s’aligner sur celles-ci. [!DNL Adobe Experience Manager] Met à disposition des méthodes simples et flexibles pour créer, gérer et appliquer des schémas de métadonnées.
 
 Dans [!DNL Adobe Experience Manager Assets], les schémas contiennent des champs spécifiques pour renseigner des informations spécifiques. Il contient également des informations de mise en page pour afficher les champs de métadonnées de manière conviviale. Les propriétés de métadonnées incluent le titre, la description, les types MIME, les balises, etc. Vous pouvez utiliser l’éditeur de [!UICONTROL formulaires de schéma de métadonnées] pour modifier des schémas existants ou ajouter des schémas de métadonnées personnalisés.
 
@@ -39,14 +40,14 @@ Pour afficher et modifier la page des propriétés d’une ressource, procédez 
 
 Pour afficher la liste des formulaires ou des modèles, dans l’interface [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées]**.
 
-[!DNL Experience Manager] fournit les modèles de formulaire de schéma de métadonnées suivants.
+[!DNL Experience Manager] fournit les modèles de formulaires de schéma de métadonnées suivants.
 
 | Modèles | | Description |
 |---|---|---|
 | [!UICONTROL default] | | Le formulaire de schéma de métadonnées de base pour les ressources |
 | | Les formulaires enfants suivants héritent des propriétés du formulaire par [!UICONTROL défaut] : | |
 | | <ul><li>[!UICONTROL dm_video]</li></ul> | Formulaire de schéma pour les vidéos Dynamic Media. |
-| | <ul><li>[!UICONTROL image]</li></ul> | Formulaire de schéma pour les images dotées d’un type MIME telles que `image/jpeg` et `image/png` <br>Le formulaire [!UICONTROL image] possède les modèles de formulaire enfant suivants : <ul><li> [!UICONTROL jpeg] : formulaire de schéma pour les ressources avec le sous-type [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff] : formulaire de schéma pour les ressources avec le sous-type TIFF.</li></ul> |
+| | <ul><li>[!UICONTROL image]</li></ul> | Formulaire de schéma pour les images dotées d’un type MIME telles que `image/jpeg` et `image/png` <br>Le formulaire [!UICONTROL image] possède les modèles de formulaires enfants suivants : <ul><li> [!UICONTROL jpeg] : formulaire de schéma pour les ressources avec le sous-type [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff] : formulaire de schéma pour les ressources avec le sous-type TIFF.</li></ul> |
 | | <ul><li>[!UICONTROL l’application ;]</li></ul> | Formulaire de schéma pour les ressources dotées du type MIME, par exemple `application/pdf` et `application/zip` <br>[!UICONTROL pdf] : formulaire de schéma pour les ressources avec le sous-type PDF. |
 | | <ul><li>[!UICONTROL vidéo]</li></ul> | Formulaire de schéma pour les ressources vidéo dotées d’un type MIME telles que `video/avi` et `video/mp4` |
 | [!UICONTROL collection] | | Formulaire de schéma pour les collections |

@@ -4,11 +4,12 @@ description: Découvrez comment publier des ressources d’images et des vidéos
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 93%
+source-wordcount: '496'
+ht-degree: 92%
 
 ---
 
@@ -28,19 +29,19 @@ Si vous envisagez de publier des ressources vidéo immédiatement après les avo
 
 Voir aussi [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md).
 
-Voir aussi [Intégration de la visionneuse de vidéos ou d’images Dynamic Media dans une page web](embed-code.md).
+Voir aussi [Incorporation de la visionneuse de vidéos ou d’images Dynamic Media dans une page web](embed-code.md).
 
 >[!NOTE]
 >
 >* Pour utiliser l’URL, les ressources doivent être publiées. Si les ressources ne sont pas publiées, la copie et le collage de l’URL ne fonctionnent pas dans un navigateur web.
->* Les paramètres d’image prédéfinis et les paramètres de visionneuse prédéfinis doivent être activés et publiés pour une diffusion en direct.
+>* Les paramètres d’image et de visionneuse prédéfinis doivent être activés et publiés pour une diffusion en direct.
 >
 
 Pour plus d’informations sur la publication d’une visionneuse ou d’une ressource, reportez-vous à la section [Publication de ressources](/help/assets/manage-digital-assets.md).
 
 ## Diffusion de ressources Dynamic Media via HTTP/2 {#http-delivery-of-dynamic-media-assets}
 
-Experience Manager prend à présent en charge la diffusion de tout le contenu Dynamic Media (images et vidéo) sur HTTP/2. En d’autres termes, une URL publiée ou un code incorporé pour l’image ou la vidéo peut être intégré à toute application qui accepte une ressource hébergée. Cette ressource publiée est ensuite diffusée au moyen du protocole HTTP/2. Cette méthode de distribution améliore la communication entre les navigateurs et les serveurs, ce qui permet d’améliorer les temps de réponse et de chargement de toutes vos ressources Dynamic Media.
+Experience Manager prend à présent en charge la diffusion de tout le contenu Dynamic Media (images et vidéo) sur HTTP/2. En d’autres termes, une URL publiée ou un code intégré pour l’image ou la vidéo peut être intégré à toute application qui accepte une ressource hébergée. Cette ressource publiée est ensuite diffusée au moyen du protocole HTTP/2. Cette méthode de distribution améliore la communication entre les navigateurs et les serveurs, ce qui permet d’améliorer les temps de réponse et de chargement de toutes vos ressources Dynamic Media.
 
 Consultez [Questions les plus fréquentes sur la diffusion en HTTP/2 des contenus](/help/assets/dynamic-media/http2faq.md).
 

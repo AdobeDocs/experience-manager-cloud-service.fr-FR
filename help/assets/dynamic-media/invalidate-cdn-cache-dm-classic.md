@@ -4,11 +4,12 @@ description: Découvrez comment l’invalidation du contenu de réseau de diffus
 contentOwner: Rick Brough
 feature: Asset Management,Dynamic Media Classic
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 7e488699-5633-437f-9e2e-58c98aa13145
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '671'
-ht-degree: 100%
+source-wordcount: '677'
+ht-degree: 99%
 
 ---
 
@@ -46,7 +47,7 @@ Les ressources Dynamic Media sont mises en cache par le réseau de diffusion de
 1. Dans le coin inférieur droit de la page, sélectionnez **[!UICONTROL Fermer]**.
 1. Dans l’interface utilisateur de Dynamic Media Classic (Scene7), sélectionnez une ou plusieurs ressources, puis accédez à **[!UICONTROL Fichier]** > **[!UICONTROL Invalider sur le réseau CDN]**. La liste qui s’affiche alors se compose d’une ou de plusieurs URL générées à partir du modèle que vous avez créé et des ressources que vous avez sélectionnées. Elle utilise l’URL du serveur répertoriée sous « Nom du serveur de publication » dans les paramètres généraux de l’application.
 
-   Par exemple, avec le modèle d’invalidation défini à l’étape précédente, supposons que vous sélectionniez une seule image de ressource nommée `Backpack_B`. Lorsque vous accédez à **[!UICONTROL Fichier]** > **[!UICONTROL Invalider sur le réseau CDN]**, l’URL suivante est générée dans l’interface utilisateur d’invalidation sur le réseau CDN :
+   Par exemple, avec le modèle d’invalidation de CDN défini à l’étape précédente, supposons que vous sélectionniez une seule image de ressource nommée `Backpack_B`. Lorsque vous accédez à **[!UICONTROL Fichier]** > **[!UICONTROL Invalider sur le réseau CDN]**, l’URL suivante est générée dans l’interface utilisateur d’invalidation sur le réseau CDN :
 
    `https://server.com/is/image/Company/Backpack_B?$product$`
 

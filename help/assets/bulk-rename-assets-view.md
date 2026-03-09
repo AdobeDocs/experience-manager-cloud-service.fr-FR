@@ -2,10 +2,11 @@
 title: Renommez et les ressources en bloc renomment dans  [!DNL Assets view]
 description: Découvrez comment renommer des ressources en bloc à l’aide de la nouvelle interface utilisateur d’Assets (vue Assets). Il permet de renommer plusieurs ressources à la fois.
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: e041811b-0246-408f-9246-248da55f66a1
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '446'
 ht-degree: 17%
 
 ---
@@ -67,4 +68,4 @@ Voici quelques exemples d’utilisation de l’IA pour renommer des ressources e
 
 * Faites des commentaires sur la documentation en utilisant l’option [!UICONTROL Modifier cette page] ![modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![créer un problème GitHub](assets/do-not-localize/github-issue.png) disponible dans la barre latérale droite.
 
-* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr#support).
+* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&lang=fr#support).

@@ -3,11 +3,12 @@ title: Gérer vos ressources numériques
 description: Déplacez, supprimez, copiez, renommez, mettez à jour et gérez la version de vos ressources dans [!DNL Assets view].
 role: User, Leader
 contentOwner: AG
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1654'
+source-wordcount: '1660'
 ht-degree: 66%
 
 ---
@@ -24,7 +25,7 @@ Utilisez [!DNL Assets view] pour accomplir les tâches de gestion des actifs sui
 
 * ![deselect icon](assets/do-not-localize/close-icon.png) Désélectionnez la sélection.
 
-* ![find similar icon](assets/do-not-localize/find-similar.svg) Recherchez une ressource d’image similaire dans l’interface utilisateur Assets en fonction des métadonnées et des balises intelligentes.
+* ![icône de recherche d’une image similaire](assets/do-not-localize/find-similar.svg) Recherchez une ressource d’image similaire dans l’interface d’utilisation d’Assets en fonction des métadonnées et des balises intelligentes.
 
 * ![Icône Détails](assets/do-not-localize/edit-in-icon.png) Cliquez pour prévisualiser une ressource et afficher le détail des métadonnées. Lors de la prévisualisation, vous pouvez afficher les versions et modifier une image.
 
@@ -192,10 +193,10 @@ Voici quelques autres points à noter :
 
 Le tableau suivant illustre les conditions préalables à l’affichage de `Approval Target` liste déroulante et de la cible d’approbation par défaut en fonction de l’activation de DM avec OpenAPI et Content Hub dans votre environnement AEM as a Cloud Service :
 
-| Dynamic Media avec OpenAPI | Content Hub | La liste déroulante Cible d&#39;approbation s&#39;affiche ? | Cible d’approbation par défaut des ressources approuvées | Destination de publication |
+| Dynamic Media avec OpenAPI | Content Hub | La liste déroulante Cible d&#39;approbation s&#39;affiche ? | Cible d’approbation par défaut des ressources approuvées | Destination de publication |
 | --- | --- | --- | --- |---|
 | Activé | Activé | Oui | Diffusion | Dynamic Media avec OpenAPI et Content Hub |
-| Pas activé | Activé | Oui | Content Hub | Content Hub |
+| Pas activé | Activé | Oui | Content Hub | Content Hub |
 | Activé | Pas activé | Oui | Diffusion | Dynamic Media avec OpenAPI |
 | Pas activé | Pas activé | Non | N/A | S/O |
 

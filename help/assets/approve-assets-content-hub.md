@@ -1,10 +1,11 @@
 ---
 title: Approuver des ressources pour le hub de contenus
 description: Découvrez comment approuver des ressources dans Assets as a Cloud Service pour les rendre disponibles dans Content Hub.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 282ab15d8c498b3c0ddba8165b1262bc20729b75
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1704'
 ht-degree: 12%
 
 ---
@@ -117,7 +118,7 @@ Pour automatiser l’approbation des ressources nouvellement ingérées dans [!D
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Assets]** > **[!UICONTROL Profils de métadonnées]**.
 1. Cliquez sur **[!UICONTROL Créer]** en haut à droite de la page.
 1. Ajoutez un titre de profil et cliquez sur **[!UICONTROL Créer]**. Le profil de métadonnées a été créé.
-1. Sélectionnez le profil de métadonnées que vous venez de créer et cliquez sur **[!UICONTROL Modifier le(s) _(s)_]**. <br>Le formulaire **[!UICONTROL Modifier le profil de métadonnées]**&#x200B;s’ouvre avec l’onglet **[!UICONTROL De base]**&#x200B;en surbrillance.
+1. Sélectionnez le profil de métadonnées que vous venez de créer et cliquez sur **[!UICONTROL Modifier le(s) _(s)_]**. <br>Le formulaire **[!UICONTROL Modifier le profil de métadonnées]**s’ouvre avec l’onglet **[!UICONTROL De base]**en surbrillance.
 1. Effectuez un glisser-déposer d’un **[!UICONTROL champ de texte monoligne]** de la section **[!UICONTROL Créer un formulaire]** sur le côté droit de la section Métadonnées du formulaire.
 1. Cliquez sur le champ nouvellement ajouté, puis effectuez les mises à jour suivantes dans le panneau **[!UICONTROL Paramètres]** :
    1. Remplacez **[!UICONTROL Libellé du champ]** par _Assets approuvé_.
@@ -178,7 +179,7 @@ Si le bouton d’approbation automatique est activé, les ressources chargées �
 
 ### Qu’est-ce que le champ Cible d’approbation et comment affecte-t-il la publication des ressources ?
 
-Le champ **Cible d’approbation** de la page Détails de la ressource vous permet de choisir l’emplacement de publication des ressources approuvées. Les options incluent **Delivery** (publication sur Dynamic Media avec OpenAPI et Content Hub) ou **Content Hub** uniquement. Si aucune option n’est sélectionnée, la valeur par défaut de votre environnement Assets as a Cloud Service est appliquée. Pour plus d’informations[&#x200B; voir &#x200B;](#default-approval-target-options-publish-destinations) Cible d’approbation par défaut et destinations de publication pour les ressources approuvées.
+Le champ **Cible d’approbation** de la page Détails de la ressource vous permet de choisir l’emplacement de publication des ressources approuvées. Les options incluent **Delivery** (publication sur Dynamic Media avec OpenAPI et Content Hub) ou **Content Hub** uniquement. Si aucune option n’est sélectionnée, la valeur par défaut de votre environnement Assets as a Cloud Service est appliquée. Pour plus d’informations[ voir ](#default-approval-target-options-publish-destinations) Cible d’approbation par défaut et destinations de publication pour les ressources approuvées.
 
 
 ### Que se passe-t-il si le champ Cible de validation n’apparaît pas sur la page Assets Afficher les détails de la ressource ?

@@ -5,10 +5,11 @@ mini-toc-levels: 3
 contentOwner: Rick Brough
 feature: Configuration,Viewer Presets,Image Presets,Dynamic Media
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
-source-git-commit: bd43f86c9d3ad017a5e963800938e3ead98b7441
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '290'
 ht-degree: 60%
 
 ---

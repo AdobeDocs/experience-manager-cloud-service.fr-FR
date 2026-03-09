@@ -2,10 +2,11 @@
 title: Intégration du sélecteur de ressources à une application non Adobe ou tierce
 description: Intégrer le sélecteur de ressources à diverses applications Adobe, non Adobe et tierces.
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 55848de0-aff2-42a0-b959-c771235d9425
-source-git-commit: 39b6bbc10507f0391583d9cdc054a1611b64326a
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '434'
 ht-degree: 9%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 9%
 
 Le sélecteur de ressources vous permet de l’intégrer à l’aide de diverses applications non Adobe ou tierces pour leur permettre de travailler ensemble en toute transparence.
 
-## Prérequis {#prereqs-non-adobe-app}
+## Conditions préalables {#prereqs-non-adobe-app}
 
 Utilisez les conditions préalables suivantes si vous intégrez le sélecteur de ressources à une application non Adobe :
 
