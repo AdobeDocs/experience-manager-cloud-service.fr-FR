@@ -4,9 +4,9 @@ description: Guide de référence de l’interface et des fonctionnalités de la
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
-source-git-commit: e2a9c55644c0d9542f6a299f0df30a3dfd4a55de
+source-git-commit: 0aaa9904b3011adc3f3e3b01bfee8ee3e96f12e2
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '1083'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Les développeurs gardent le contrôle total sur les navires. Toutes les modific
 
 Après vous être connecté à la console à l’adresse [`aemcoder.adobe.io`,](https://aemcoder.adobe.io) vous accédez à l’écran d’accueil de la console.
 
-![Écran d’accueil de la console &#x200B;](assets/console-home.png)
+![Écran d’accueil de la console ](assets/console-home.png)
 
 ### Barre de menus {#menu-bar}
 
@@ -67,19 +67,17 @@ La barre latérale gauche permet d’accéder rapidement aux vues importantes de
 
 La vue **Accueil** est le point de départ pour utiliser la console.
 
-* En haut se trouve un [panneau d’invite](#prompt-panel) permettant d’envoyer des requêtes à la console.
-* Sous le panneau d’invite se trouvent des invites à utiliser pour démarrer votre projet.
+* En haut se trouve une [entrée d’invite](#prompt-input) pour envoyer des requêtes à la console.
+* Sous le panneau d’invite se trouvent des invites pour commencer votre projet.
 
-### Panneau d’invite {#prompt-panel}
+### Invite de saisie {#prompt-input}
 
-Le panneau d’invite fournit des commandes permettant d’interagir avec l’IA.
+L’entrée rapide fournit des commandes pour interagir avec l’IA.
 
 * **Modes de planification/d’exécution** (icône d’ampoule et de baguette magique) : basculez entre les modes de planification et d’exécution, respectivement
    * **Mode Plan** : l’IA analyse les requêtes et décrit une approche sans apporter de modifications, ce qui est utile pour comprendre la stratégie avant la validation.
    * **Mode d’exécution** : l’IA exécute le plan et apporte des modifications réelles au fichier.
 * **Joindre les fichiers** (icône de trombone) : chargez et joignez des fichiers à l’invite pour obtenir un contexte supplémentaire (par exemple, conceptions de référence, captures d’écran, spécifications).
-* **Paramètres** (icône d’engrenage) : choisissez d’ignorer les questions de confirmation de l’IA.
-* **Effacer la conversation** : permet de réinitialiser la conversation et d’effacer la fenêtre contextuelle de l’IA. Utilisez cette option pour démarrer une nouvelle tâche sans rapport avec la conversation précédente.
 
 ## Mode Contenu {#content-view}
 
@@ -91,15 +89,32 @@ La **vue Contenu** fournit des outils pour parcourir et prévisualiser le conten
 
 ![Vue Contenu](assets/content-imported.png)
 
-Le panneau d’aperçu propose trois modes :
+### Panneau de conversation {#chat-panel}
+
+Le panneau de conversation vous permet d’afficher et de poursuivre votre conversation avec l’agent de modernisation de l’expérience. Le panneau de conversation comprend l’historique des messages de conversation et une [entrée d’invite](#prompt-input) pour envoyer des requêtes supplémentaires à la console.
+
+* **Actions de conversation**
+   * **Effacer la conversation** : permet de réinitialiser la conversation et d’effacer la fenêtre contextuelle de l’IA. Utilisez cette option pour démarrer une nouvelle tâche sans rapport avec la conversation précédente.
+   * **Télécharger le chat** : télécharge l’historique des conversations sous forme de fichier Markdown.
+
+### Panneau Aperçu {#preview-panel}
+
+Le panneau d’aperçu propose jusqu’à quatre modes :
 
 * **Aperçu** (document avec icône de loupe) pour visualiser le contenu HTML rendu
-* **vue HTML** (icône de document) pour afficher respectivement la structure de contenu de création de documents sous-jacente
-* **Mode de conception** (icône de pinceau) pour sélectionner des éléments de la page à des fins de contexte pour votre invite
+   * **Vue réactive** pour afficher le contenu HTML rendu dans une vue de bureau, tablette ou mobile
+   * **Mode de conception** (icône de pinceau) pour ajouter des éléments de la page à votre invite pour un contexte supplémentaire
+* **Vue Document** (icône de document) pour afficher la structure de contenu de création de documents sous-jacente, respectivement
+* **Vue Markdown (création AEM)** (icône de code) pour afficher la structure de contenu Markdown sous-jacente
+* **Vue XML JCR (création AEM)** (icône de données) pour afficher la structure de contenu XML JCR résultante
 
 Vous pouvez toujours cliquer sur l’icône **Actualiser l’aperçu** pour mettre à jour le panneau d’aperçu.
 
-Le bouton **Charger le contenu** ouvre une fenêtre modale pour charger des fichiers vers AEM Document Authoring.
+Le bouton **Supprimer** supprime la page sélectionnée de l’espace de travail. Le contenu prévisualisé ou publié ne sera pas supprimé.
+
+Le bouton **Erreurs** (création dans AEM) ouvre une fenêtre modale pour afficher les erreurs sur la page sélectionnée.
+
+Le bouton **Télécharger le contenu** ouvre une fenêtre modale pour télécharger des fichiers vers AEM.
 
 * Les champs **Organisation** et **Référentiel** sont préremplis si votre projet comporte un fichier `fstab.yaml`
 * La sélection de fichiers fournit des chemins d’accès cibles modifiables
@@ -111,15 +126,16 @@ Le bouton **Charger le contenu** ouvre une fenêtre modale pour charger des fich
 
 L’**affichage du code** fournit des outils pour parcourir le code et gérer les modifications de code. La vue est divisée en trois panneaux, de gauche à droite :
 
-* Panneau d’invite pour interagir avec la console et le projet
+* Panneau de conversation pour interagir avec la console et le projet
 * Explorateur de fichiers pour un aperçu de vos fichiers de code ou de vos modifications en tant que diffs
-* Panneau d&#39;aperçu pour visualiser un fichier de code ou une comparaison sélectionnée dans l&#39;explorateur de fichiers
+* Panneau d’aperçu pour afficher un fichier de code ou les modifications sélectionnées dans l’explorateur de fichiers
 
 ![Affichage du code](assets/code-view.png)
 
 Le panneau d’aperçu propose deux modes différents :
 
-* **fichiers Workspace** pour parcourir les fichiers de code dans l&#39;espace de travail actuel
+* **Fichiers Workspace** pour parcourir les fichiers de code dans l&#39;espace de travail actuel
+   * Utilisez le bouton **Ajouter au chat** pour ajouter le fichier au panneau de chat pour le contexte.
 * **Modifications Git** pour afficher les différences entre les modifications de fichiers créées par votre travail sur le projet
    * Cliquez sur l’icône `+` pour préparer le fichier modifié
    * Cliquez sur l’icône de flèche pour ignorer le fichier modifié
@@ -145,7 +161,9 @@ La vue Paramètres permet de gérer les paramètres de base de la console.
 
 ![Vue Paramètres](assets/settings-view.png)
 
-* **Informations d’identification** vous permet de spécifier un jeton d’accès personnel pour Figma afin que la console [&#x200B; puisse accéder aux blocs de conception de votre projet](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration).
+* **Projet** vous permet d’afficher et de modifier les paramètres du projet, tels que la personnalisation de l’URL de la bibliothèque.
+* **Assistance** vous permet de demander de l’aide à l’équipe d’assistance d’AEM.
+* **Informations d’identification** vous permet de spécifier un jeton d’accès personnel pour Figma afin que la console [ puisse accéder aux blocs de conception de votre projet](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration).
    * Le jeton nécessite les portées en lecture seule suivantes :
       * `file_content:read`
       * `file_metadata:read`
