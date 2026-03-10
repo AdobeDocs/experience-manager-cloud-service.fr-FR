@@ -4,10 +4,10 @@ description: Découvrez comment utiliser les pipelines de configuration pour dé
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: ac04829b63ca5e2fee71f6c71d0730f21c576382
+source-git-commit: 66ea803dbf8e8b12fecf6256a88c94c2ca6fa112
 workflow-type: tm+mt
-source-wordcount: '1405'
-ht-degree: 3%
+source-wordcount: '1445'
+ht-degree: 2%
 
 ---
 
@@ -19,9 +19,9 @@ Découvrez comment utiliser les pipelines de configuration pour déployer diffé
 
 Un pipeline de configuration Cloud Manager déploie des fichiers de configuration (créés au format YAML) dans un environnement cible. Plusieurs fonctionnalités d’AEM as a Cloud Service peuvent être configurées de cette manière, notamment le transfert de journal, les tâches de maintenance liées à la purge et plusieurs fonctionnalités de réseau CDN.
 
-Pour les projets **Publication de diffusion**, les pipelines de configuration peuvent être déployés via Cloud Manager vers les types d’environnements de développement, d’évaluation et de production. Les fichiers de configuration peuvent être déployés dans des environnements de développement rapide (RDE) à l’aide de [outil de ligne de commande](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline).
+Pour les projets **Publication de diffusion**, les pipelines de configuration peuvent être déployés via Cloud Manager vers les types d’environnements de développement, d’évaluation et de production. Les fichiers de configuration peuvent être déployés dans des environnements de développement rapide (RDE) à l’aide de [outil de ligne de commande](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline). Utilisez un déploiement ciblé [**Pipeline de diffusion de publication**](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment) ([de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment) ou [hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)) lorsque vous devez configurer le trafic pour un domaine associé à un environnement de diffusion de publication.
 
-Les pipelines de configuration peuvent également être déployés via Cloud Manager pour les projets **Edge Delivery**.
+Les pipelines de configuration peuvent également être déployés via Cloud Manager pour les projets **Edge Delivery**. Utilisez un [**pipeline Edge Delivery**](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) lorsque le domaine est joint à un **site Edge Delivery**.
 
 Les sections suivantes de ce document donnent un aperçu des informations importantes concernant la manière dont les pipelines de configuration peuvent être utilisés et la manière dont les configurations pour ces pipelines doivent être structurées. Il décrit les concepts généraux partagés entre toutes les fonctionnalités ou un sous-ensemble des fonctionnalités prises en charge par les pipelines de configuration.
 
@@ -40,15 +40,15 @@ Le tableau suivant propose une liste complète de ces configurations avec des li
 |---|---|---|---|---|
 | [Règles de filtrage du trafic, y compris WAF](/help/security/traffic-filter-rules-including-waf.md) | `CDN` | Déclarer les règles pour bloquer le trafic malveillant | X | X |
 | [Transformations de requête](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) | `CDN` | Déclaration des règles pour transformer la forme de la demande de trafic | X | X |
-| [&#x200B; Transformations de réponse &#x200B;](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) | `CDN` | Déclaration de règles pour transformer la forme de la réponse pour une requête donnée | X | X |
+| [ Transformations de réponse ](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) | `CDN` | Déclaration de règles pour transformer la forme de la réponse pour une requête donnée | X | X |
 | [Redirections côté serveur](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) | `CDN` | Déclarez les redirections côté serveur de type 301/302 | X | X |
 | [Sélecteurs d’origine](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | Déclarez des règles pour acheminer le trafic vers différents serveurs principaux, y compris les applications non Adobe | X | X |
 | [Pages d’erreur du réseau CDN](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | Remplacer la page d’erreur par défaut si l’origine AEM ne peut pas être atteinte, en référençant l’emplacement du contenu statique auto-hébergé dans le fichier de configuration | X |  |
 | [Purge CDN](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | Déclarez les clés API de purge utilisées pour purger le réseau CDN. | X |  |
 | [Jeton HTTP CDN géré par le client](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value) | `CDN` | Déclarez la valeur de X-AEM-Edge-Key nécessaire pour appeler le réseau CDN Adobe à partir d’un réseau CDN client | X |  |
 | [Authentification de base](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Déclarez les noms d’utilisateur et mots de passe d’une boîte de dialogue d’authentification de base protégeant certaines URL. | X | X |
-| [&#x200B; Tâche de maintenance de purge de version &#x200B;](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimisez le référentiel AEM en déclarant des règles relatives au moment où les versions de contenu doivent être purgées. | X |  |
-| [&#x200B; Tâche de maintenance de purge du journal d’audit &#x200B;](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimisez le journal d’audit AEM pour améliorer les performances en déclarant des règles concernant le moment où les journaux doivent être purgés. | X |  |
+| [ Tâche de maintenance de purge de version ](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimisez le référentiel AEM en déclarant des règles relatives au moment où les versions de contenu doivent être purgées. | X |  |
+| [ Tâche de maintenance de purge du journal d’audit ](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimisez le journal d’audit AEM pour améliorer les performances en déclarant des règles concernant le moment où les journaux doivent être purgés. | X |  |
 | [Tâche de maintenance de purge des workflows](/help/operations/maintenance.md) | `MaintenanceTasks` | Réduisez le nombre d’instances de workflow pour améliorer les performances du moteur de workflow.<br><br>Voir aussi [Purge régulière des instances de workflow](/help/sites-cloud/administering/workflows-administering.md#regular-purging-of-workflow-instances) | X |  |
 | [Transfert de journal](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configurez les points d’entrée et les informations d’identification pour le transfert des journaux vers diverses destinations, y compris Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk | X | X |
 | [Enregistrement d’un ID client](/help/implementing/developing/open-api-based-apis.md) | `API` | Définissez la portée des projets d’API Adobe Developer Console sur un environnement AEM spécifique en enregistrant l’identifiant client. Nécessaire pour l’utilisation des API basées sur OpenAPI qui nécessitent une authentification | X |  |
