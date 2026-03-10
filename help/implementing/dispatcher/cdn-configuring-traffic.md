@@ -4,9 +4,9 @@ description: Découvrez comment configurer le trafic CDN en déclarant des règl
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+source-git-commit: 15c49efa8ccb7d61fc506a0603b201c50a17edee
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1932'
 ht-degree: 1%
 
 ---
@@ -437,6 +437,10 @@ Les connexions aux origines sont SSL uniquement et utilisent le port 443.
 | **forwardAuthorization** (facultatif, la valeur par défaut est false) | Si la valeur est définie sur true , l’en-tête « Authorization » de la requête client est transmis au serveur principal. Dans le cas contraire, l’en-tête d’autorisation est supprimé. |
 | **timeout** (facultatif, en secondes, la valeur par défaut est de 60) | Nombre de secondes que le réseau CDN doit attendre pour qu’un serveur principal fournisse le premier octet d’un corps de réponse HTTP. Cette valeur est également utilisée comme délai d’expiration entre octets pour le serveur principal. |
 
+>[!IMPORTANT]
+>
+>La valeur **domain** ne doit pas contenir de `.adobeaemcloud.com`. Vous ne pouvez pas effectuer de proxy directement vers un domaine adobeaemcloud.com. Cette restriction protège contre les boucles de requête indésirables. Pour transférer le trafic en proxy vers votre environnement AEM as a Cloud Service, utilisez plutôt un [domaine personnalisé](#proxying-to-aemaacs) installé dans votre environnement AEMaaCS comme serveur principal d’origine.
+
 ### Proxy d’un domaine personnalisé vers le niveau statique AEM {#proxy-custom-domain-static}
 
 Les sélecteurs d’origine peuvent être utilisés pour acheminer le trafic de publication AEM vers le contenu statique d’AEM déployé à l’aide du [pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). Les cas d’utilisation incluent la diffusion de ressources statiques sur le même domaine que la page (par exemple, example.com/static) ou sur un domaine explicitement différent (par exemple, static.example.com).
@@ -493,7 +497,42 @@ data:
 
 >[!NOTE]
 >
->Étant donné que le réseau CDN géré par Adobe est utilisé, veillez à configurer l’invalidation des notifications push en mode **géré**, en suivant la documentation relative à l’[&#x200B; des notifications push de Edge Delivery Services &#x200B;](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+>Étant donné que le réseau CDN géré par Adobe est utilisé, veillez à configurer l’invalidation des notifications push en mode **géré**, en suivant la documentation relative à l’[ des notifications push de Edge Delivery Services ](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+
+
+### Proxy de l’environnement AEMaaCS {#proxying-to-aemaacs}
+
+Vous ne pouvez pas utiliser un domaine `adobeaemcloud.com` directement comme origine dans votre configuration de réseau CDN. Cette action est rejetée (le domaine ne doit pas contenir de `.adobeaemcloud.com`) pour se protéger contre les boucles de requête indésirables. Cela s’applique également au routage à partir d’un domaine installé pour un site Edge Delivery.
+
+Si votre domaine personnalisé (`www.example.com`) est déjà installé dans un environnement AEMaaCS, le routage par défaut sera acheminé vers le serveur principal AEM sans règle CDN. Utilisez des sélecteurs d’origine lorsque vous devez acheminer le contenu d’un environnement à l’autre (par exemple, de `pXXXX-eYYYY` à `pXXXX-eZZZZ`) ou d’un site Edge Delivery vers un environnement AEMaaCS.
+
+Dans ce cas, pour acheminer le trafic par proxy vers votre environnement AEM as a Cloud Service (par exemple, pour acheminer des chemins spécifiques tels que `/graphql` vers un serveur principal), installez un domaine personnalisé dans votre environnement AEMaaCS et utilisez ce domaine personnalisé comme origine dans votre configuration de réseau CDN.
+
+**Exemple :** si votre niveau de publication AEM est accessible à l’adresse `publish-pXXXXX-eYYYYY.adobeaemcloud.com`, n’utilisez pas ce domaine dans `originSelectors`. Au lieu de cela :
+
+1. Installez un domaine personnalisé dans votre environnement AEMaaCS (par exemple, `aem-publish-origin.example.com`) qui pointe vers votre service de publication.
+2. Dans votre configuration de réseau CDN, définissez une origine avec ce domaine personnalisé et acheminez les chemins d’accès souhaités (par exemple, `/graphql`) vers celui-ci.
+
+```
+kind: CDN
+version: '1'
+data:
+  originSelectors:
+    rules:
+      - name: graphql-to-aem-publish
+        when:
+          allOf:
+            - reqProperty: domain
+              equals: www.example.com
+            - reqProperty: path
+              like: /graphql*
+        action:
+          type: selectOrigin
+          originName: aem-publish-origin
+    origins:
+      - name: aem-publish-origin
+        domain: aem-publish-origin.example.com
+```
 
 
 ## Redirections côté serveur {#server-side-redirectors}
