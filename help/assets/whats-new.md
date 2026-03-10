@@ -4,10 +4,10 @@ description: Apprenez-en plus sur certaines des fonctionnalités de Content Hub
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 621ae9a93ee8bd7d5f1b35387d4022072bfc46c6
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 82%
+source-wordcount: '989'
+ht-degree: 74%
 
 ---
 
@@ -25,7 +25,18 @@ La vidéo suivante présente les principales fonctionnalités de Content Hub :
 
 ## Date de publication {#release-date}
 
-La date de publication de la version Content Hub (2025.10.0) est le vendredi 30 octobre 2025 (la même que celle de la version AEM as a Cloud Service). La prochaine version des fonctionnalités (2025.11.0) est prévue pour le vendredi 20 novembre 2025.
+La date de publication de la version Content Hub (2026.02.0) est le vendredi 26 février 2026 (la même que celle de la version AEM as a Cloud Service). La prochaine disponibilité des fonctionnalités (2026.03.0) est prévue pour le vendredi 26 mars 2026.
+
+## Fonctionnalités de la version de février 2026 {#february-release-features}
+
+**Gestion des autorisations dans Content Hub à l’aide de l’agent de gouvernance AEM**
+
+Dans Content Hub, l’agent de gouvernance AEM s’assure que seules les bonnes personnes accèdent aux bonnes ressources au bon moment. En appliquant des contrôles granulaires basés sur les attributs et les droits d’utilisation, il protège le contenu sensible tout en permettant une collaboration sécurisée. Cela signifie des risques de conformité réduits, une intégrité de marque renforcée et des workflows plus rapides. Les équipes peuvent ainsi partager et réutiliser des ressources en toute confiance, sans se soucier des risques d’accès non autorisé ou d’utilisation abusive. Cet équilibre entre sécurité et flexibilité se traduit par une efficacité opérationnelle et une confiance accrues dans l’ensemble de l’organisation.
+
+![Présentation de la gestion des autorisations](/help/ai-in-aem/agents/governance/assets/permission-management.png)
+
+[!BADGE Examiner en détail cette fonctionnalité]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
+
 
 ## Fonctionnalités de la version d’octobre {#october-release-features}
 
@@ -45,7 +56,7 @@ Vous pouvez désormais marquer les collections en tant que Favoris dans Content 
 
 Les administrateurs et administratrices de Content Hub peuvent désormais épingler des collections dans Content Hub pour un accès rapide. Les collections épinglées sont affichées dans une section **[!UICONTROL épinglées]** dédiée sur la page d’accueil Collections, ce qui facilite la conservation des collections importantes à portée de main.
 
-[!BADGE Examiner en détail cette fonctionnalité]{type=Informative url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
+[!BADGE Examiner en détail cette fonctionnalité]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
 >[!IMPORTANT]
 >
