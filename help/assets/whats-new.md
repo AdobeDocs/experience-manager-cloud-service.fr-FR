@@ -35,7 +35,7 @@ Dans Content Hub, l’agent de gouvernance AEM s’assure que seules les bonnes 
 
 ![Présentation de la gestion des autorisations](/help/ai-in-aem/agents/governance/assets/permission-management.png)
 
-[!BADGE Examiner en détail cette fonctionnalité]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
+[!BADGE Examiner en détail cette fonctionnalité]{type=Informative url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
 
 
 ## Fonctionnalités de la version d’octobre {#october-release-features}
@@ -56,7 +56,7 @@ Vous pouvez désormais marquer les collections en tant que Favoris dans Content 
 
 Les administrateurs et administratrices de Content Hub peuvent désormais épingler des collections dans Content Hub pour un accès rapide. Les collections épinglées sont affichées dans une section **[!UICONTROL épinglées]** dédiée sur la page d’accueil Collections, ce qui facilite la conservation des collections importantes à portée de main.
 
-[!BADGE Examiner en détail cette fonctionnalité]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
+[!BADGE Examiner en détail cette fonctionnalité]{type=Informative url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
 >[!IMPORTANT]
 >
