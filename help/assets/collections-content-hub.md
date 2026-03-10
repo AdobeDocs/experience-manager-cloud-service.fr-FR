@@ -4,9 +4,9 @@ description: Découvrez comment gérer les collections dans Content Hub
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '1920'
+source-wordcount: '1953'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Une collection fait référence à un ensemble de ressources pouvant être parta
 
 Il permet aux utilisateurs et utilisatrices d’accéder facilement aux différentes ressources disponibles dans [!DNL Content Hub] et de les gérer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3445302/?captions=fre_fr&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on){transcript=true}
 
 ## Conditions préalables {#prerequisites}
 
@@ -210,17 +210,17 @@ Une collection dans AEM Assets Content Hub fait référence à un ensemble de re
 
 Pour créer une nouvelle collection dans AEM Assets Content Hub, accédez à l&#39;onglet Collections et cliquez sur **Créer une collection**. Dans la nouvelle fenêtre Collection , ajoutez un Titre et une Description, sélectionnez le type de contrôle d’accès sous la liste déroulante **Qui peut accéder**, puis cliquez sur **Créer**. Vous pouvez ensuite ajouter des ressources à la collection.
 
-### Quels types de contrôle d’accès sont disponibles lors de la création d’une collection ?
+### Quels types de contrôle d’accès sont disponibles lors de la création d’une collection dans AEM Assets Content Hub ?
 
-Il existe trois types de contrôle d’accès : **Privé** - Seul le créateur et les administrateurs peuvent modifier et accéder, **Public** - Affichage uniquement - Tout le monde peut afficher, mais seuls le créateur et les administrateurs peuvent modifier, et **Public** - Affichage et modification - Tout le monde peut accéder à la collection et la modifier sans restriction.
+Il existe trois types de contrôle d’accès dans AEM Assets Content Hub : **Privé** - Seul le créateur et les administrateurs peuvent modifier et accéder, **Public** - Affichage uniquement - Tout le monde peut afficher, mais seuls le créateur et les administrateurs peuvent modifier, et **Public** - Affichage et modification - Tout le monde peut accéder à la collection et la modifier sans restriction.
 
-### Qui peut effectuer des actions sur les collections dans Content Hub ?
+### Qui peut effectuer des actions sur les collections dans AEM Assets Content Hub ?
 
-Les utilisateurs de Content Hub peuvent effectuer des actions telles que la création, l’affichage, le partage, le téléchargement, la suppression, l’épinglage de collections et leur marquage en tant que favoris. Les administrateurs disposent de droits supplémentaires, tels que l’affichage de toutes les options d’accès et la suppression de collections.
+Les utilisateurs d’AEM Assets Content Hub peuvent effectuer des actions telles que la création, l’affichage, le partage, le téléchargement, la suppression, l’épinglage de collections et leur marquage en tant que favoris. Les administrateurs disposent de droits supplémentaires, tels que l’affichage de toutes les options d’accès et la suppression de collections.
 
 ### Comment ajouter des ressources à une collection existante dans AEM Assets Content Hub ?
 
-Sélectionnez les ressources à ajouter, cliquez sur **Ajouter à la collection**, puis sélectionnez la collection dans la liste. Vous pouvez également rechercher des collections à l’aide de la barre de recherche. Cliquez sur **Ajouter à la collection** pour confirmer l’action.
+Pour ajouter des ressources à une collection existante dans AEM Assets Content Hub, sélectionnez les ressources à ajouter, cliquez sur **Ajouter à la collection** et sélectionnez la collection dans la liste. Vous pouvez également rechercher des collections à l’aide de la barre de recherche. Cliquez sur **Ajouter à la collection** pour confirmer l’action.
 
 ### Les collections peuvent-elles être filtrées et recherchées dans AEM Assets Content Hub ?
 
@@ -232,11 +232,11 @@ Pour télécharger des ressources à partir d’une collection dans AEM Assets C
 
 ### Comment les ressources peuvent-elles être partagées à partir d’une collection dans AEM Assets Content Hub ?
 
-Assets peut être partagé en activant le partage de liens public dans Content Hub. Sélectionnez l’icône de partage sur la carte de la ressource pour copier le lien de partage, qui peut ensuite être envoyé aux destinataires. Les collections privées ne peuvent pas être partagées.
+Assets peut être partagé en activant le partage de liens public dans AEM Assets Content Hub. Sélectionnez l’icône de partage sur la carte de la ressource pour copier le lien de partage, qui peut ensuite être envoyé aux destinataires. Les collections privées ne peuvent pas être partagées.
 
 ### Qui peut supprimer des ressources d’une collection dans AEM Assets Content Hub ?
 
-Un propriétaire de la collection, un administrateur ou un utilisateur non administrateur disposant de droits de modification peut supprimer une ou plusieurs ressources d’une collection. Pour supprimer, sélectionnez les ressources, cliquez sur **Supprimer de la collection**, puis confirmez la suppression.
+Un propriétaire de la collection, un administrateur ou un utilisateur non administrateur disposant de droits de modification peut supprimer une ou plusieurs ressources d’une collection dans AEM Assets Content Hub. Pour supprimer, sélectionnez les ressources, cliquez sur **Supprimer de la collection**, puis confirmez la suppression.
 
 ### Qui est autorisé à supprimer une collection d’AEM Assets Content Hub et comment s’y prend-il ?
 

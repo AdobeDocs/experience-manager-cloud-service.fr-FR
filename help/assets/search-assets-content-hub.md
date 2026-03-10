@@ -4,9 +4,9 @@ description: Découvrez comment rechercher des ressources dans  [!DNL Content Hu
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1020'
 ht-degree: 1%
 
 ---
@@ -173,11 +173,11 @@ En savoir plus sur la [configuration des ressources dans la  [!DNL Content Hub]]
 
 ### Comment puis-je affiner mes résultats de recherche dans AEM Assets Content Hub ?
 
-Vous pouvez affiner les résultats de la recherche dans Content Hub à l’aide d’une recherche textuelle, en appliquant divers filtres (tels que le format de fichier, le statut d’approbation, la date de modification, etc.), en effectuant une recherche par balises ou balises intelligentes, et en utilisant le panneau Filtres. La combinaison de plusieurs prédicats ou options de filtre vous permet de cibler précisément les ressources dont vous avez besoin.
+Vous pouvez affiner les résultats de la recherche dans AEM Assets Content Hub à l’aide de la recherche textuelle, en appliquant divers filtres (tels que le format de fichier, le statut d’approbation, la date de modification, etc.), en effectuant une recherche par balises ou balises intelligentes, et en utilisant le panneau Filtres. La combinaison de plusieurs prédicats ou options de filtre vous permet de cibler précisément les ressources dont vous avez besoin.
 
 ### Puis-je effectuer une recherche en bloc de plusieurs ressources à la fois dans AEM Assets Content Hub ?
 
-Oui, vous pouvez effectuer une recherche en bloc dans Content Hub en saisissant plusieurs valeurs (telles que des noms, des formats de fichiers, des balises) séparées par des délimiteurs spécifiés. La fonctionnalité de recherche en bloc vous permet de trouver rapidement plusieurs ressources dans une seule requête, ce qui la rend plus efficace que la recherche de ressources une par une.
+Oui, vous pouvez effectuer une recherche en bloc dans AEM Assets Content Hub en saisissant plusieurs valeurs (telles que des noms, des formats de fichiers, des balises) séparées par des délimiteurs spécifiés. La fonctionnalité de recherche en bloc vous permet de trouver rapidement plusieurs ressources dans une seule requête, ce qui la rend plus efficace que la recherche de ressources une par une.
 
 
 ### Les administrateurs peuvent-ils personnaliser les filtres disponibles dans la recherche AEM Assets Content Hub ?

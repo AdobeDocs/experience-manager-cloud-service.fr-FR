@@ -4,9 +4,9 @@ description: Partagez Assets dans  [!DNL the Content Hub]
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '931'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 Créez un lien vers les ressources sélectionnées pour les partager facilement avec d’autres personnes. En tant qu’utilisateur [!DNL Content Hub] autorisé, sélectionnez une ou plusieurs ressources disponibles dans votre environnement [!DNL Content Hub], générez un lien et envoyez-le à d’autres utilisateurs privés ou publics.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474921/?captions=fre_fr&learn=on&enablevpops=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on){transcript=true}
 
 ## Conditions préalables {#prerequisites}
 
@@ -74,7 +74,7 @@ Le partage de ressources dans AEM Assets Content Hub permet aux utilisateurs aut
 
 ### Comment partager des ressources ou des collections avec d’autres utilisateurs à l’aide d’AEM Assets Content Hub ?
 
-Pour partager des ressources ou des collections dans Content Hub, accédez à la page d’accueil de Content Hub, sélectionnez une ou plusieurs ressources (ou accédez à l’onglet Collections pour les collections), puis cliquez sur l’icône Partager . Dans la boîte de dialogue Partager, vous pouvez prévisualiser les ressources, en supprimer si nécessaire, ajouter un titre et une description, sélectionner les personnes pouvant accéder au lien (privé ou public), définir un délai d’expiration, puis cliquer sur Obtenir le lien pour générer et copier l’URL partageable. Le lien peut ensuite être envoyé aux membres de l’équipe ou aux parties prenantes.
+Pour partager des ressources ou des collections dans AEM Assets Content Hub, accédez à la page d’accueil de Content Hub, sélectionnez une ou plusieurs ressources (ou accédez à l’onglet Collections pour les collections), puis cliquez sur l’icône Partager . Dans la boîte de dialogue Partager, vous pouvez prévisualiser les ressources, en supprimer si nécessaire, ajouter un titre et une description, sélectionner les personnes pouvant accéder au lien (privé ou public), définir un délai d’expiration, puis cliquer sur Obtenir le lien pour générer et copier l’URL partageable. Le lien peut ensuite être envoyé aux membres de l’équipe ou aux parties prenantes.
 
 ### Quelles sont les options d’accès disponibles lors du partage de ressources dans AEM Assets Content Hub et en quoi diffèrent-elles ?
 
@@ -86,11 +86,11 @@ Oui, les administrateurs peuvent activer ou désactiver le bouton (bascule) **Ac
 
 ### Puis-je définir des dates d’expiration pour les liens de ressources partagées dans AEM Assets Content Hub et pourquoi est-ce important ?
 
-Oui, vous pouvez définir des dates d’expiration pour les liens partagés privés et publics dans Content Hub. Pour les liens publics, vous pouvez choisir parmi des paramètres prédéfinis, par exemple 24 heures jusqu’à une semaine, tandis que les liens privés vous permettent de choisir parmi des paramètres prédéfinis ou de définir une date d’expiration personnalisée. Les dates d’expiration sont importantes, car une fois le lien expiré, il ne peut plus être utilisé pour accéder aux ressources ou les télécharger, ce qui contribue à maintenir la sécurité et le contrôle de votre contenu.
+Oui, vous pouvez définir des dates d’expiration pour les liens partagés privés et publics dans AEM Assets Content Hub. Pour les liens publics, vous pouvez choisir parmi des paramètres prédéfinis, par exemple 24 heures jusqu’à une semaine, tandis que les liens privés vous permettent de choisir parmi des paramètres prédéfinis ou de définir une date d’expiration personnalisée. Les dates d’expiration sont importantes, car une fois le lien expiré, il ne peut plus être utilisé pour accéder aux ressources ou les télécharger, ce qui contribue à maintenir la sécurité et le contrôle de votre contenu.
 
 ### Que peuvent faire les destinataires avec le lien de ressource partagé créé à l’aide d’AEM Assets Content Hub et existe-t-il des options pour télécharger différents rendus ?
 
-Les destinataires qui reçoivent un lien de ressource partagé peuvent l’ouvrir dans leur navigateur pour prévisualiser, sélectionner et télécharger les ressources fournies. Si les rendus de ressources sont activés dans Content Hub, les destinataires peuvent choisir les rendus (tels que Original ou Statique) à télécharger. Les ressources et les rendus sont téléchargés sous la forme d’un fichier zip et les métadonnées peuvent être affichées en cliquant sur la miniature de la ressource. Le lien reste fonctionnel jusqu’à sa date d’expiration définie.
+Les destinataires qui reçoivent un lien de ressource partagé peuvent l’ouvrir dans leur navigateur pour prévisualiser, sélectionner et télécharger les ressources fournies. Si les rendus de ressources sont activés dans AEM Assets Content Hub, les destinataires peuvent choisir les rendus (tels que Original ou Statique) qu’ils souhaitent télécharger. Les ressources et les rendus sont téléchargés sous la forme d’un fichier zip et les métadonnées peuvent être affichées en cliquant sur la miniature de la ressource. Le lien reste fonctionnel jusqu’à sa date d’expiration définie.
 
 
 

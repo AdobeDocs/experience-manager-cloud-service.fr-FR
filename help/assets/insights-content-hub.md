@@ -4,10 +4,10 @@ description: Découvrez comment afficher les statistiques sur les ressources dan
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 11%
+source-wordcount: '500'
+ht-degree: 10%
 
 ---
 
@@ -58,18 +58,18 @@ Vous pouvez également afficher les éléments suivants :
 
 Assets Insights dans AEM Assets Content Hub fournit des données précieuses sur les statistiques d’utilisation des ressources sur les campagnes, les canaux et les régions, ce qui aide les parties prenantes du marketing à comprendre les performances des ressources et leur popularité pour une expérience utilisateur améliorée.
 
-### Qui peut accéder aux fonctionnalités décrites dans Assets Insights ?
+### Qui peut accéder aux fonctionnalités décrites dans Assets Insights dans AEM Assets Content Hub ?
 
-Les utilisateurs de Content Hub peuvent effectuer les actions et accéder aux fonctions mentionnées dans la section Assets Insights .
+Les utilisateurs d’AEM Assets Content Hub peuvent effectuer les actions et accéder aux fonctionnalités mentionnées dans la section Assets Insights .
 
-### Quelles informations sur les ressources sont disponibles dans l’onglet Informations ?
+### Quelles informations sur les ressources sont disponibles dans l’onglet Informations d’AEM Assets Content Hub ?
 
-Vous pouvez afficher le nombre de ressources dans le référentiel, le nombre de collections, les chargements Assets par année, mois ou jour, les utilisateurs actifs par jour ou mois et la classification des ressources en fonction des formats de fichier.
+Vous pouvez afficher le nombre de ressources dans le référentiel, le nombre de collections, les chargements Assets par année, mois ou jour, les utilisateurs actifs par jour ou mois et la classification des ressources en fonction des formats de fichiers dans AEM Assets Content Hub.
 
 ### Comment puis-je afficher les statistiques des ressources chargées dans AEM Assets Content Hub ?
 
-Vous pouvez afficher les statistiques des ressources et collections chargées en accédant à l’onglet Insights , où vous pouvez suivre l’historique de chargement par année, mois ou jour.
+Vous pouvez afficher les statistiques des ressources et collections chargées dans AEM Assets Content Hub en accédant à l’onglet Insights , où vous pouvez suivre l’historique de chargement par année, mois ou jour.
 
-### Quelles mesures puis-je analyser concernant l’activité des utilisateurs dans Content Hub ?
+### Quelles mesures puis-je analyser concernant l’activité des utilisateurs dans AEM Assets Content Hub ?
 
-Vous pouvez analyser le nombre d’utilisateurs et d’utilisatrices actifs par jour ou par mois, ce qui est représenté visuellement à l’aide d’un graphique linéaire.
+Vous pouvez analyser le nombre d’utilisateurs et d’utilisatrices actifs par jour ou par mois, ce qui est représenté visuellement à l’aide d’un graphique linéaire dans AEM Assets Content Hub.

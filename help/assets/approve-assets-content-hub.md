@@ -3,10 +3,10 @@ title: Approuver des ressources pour le hub de contenus
 description: Découvrez comment approuver des ressources dans Assets as a Cloud Service pour les rendre disponibles dans Content Hub.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '1704'
-ht-degree: 12%
+source-wordcount: '1741'
+ht-degree: 11%
 
 ---
 
@@ -118,7 +118,7 @@ Pour automatiser l’approbation des ressources nouvellement ingérées dans [!D
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Assets]** > **[!UICONTROL Profils de métadonnées]**.
 1. Cliquez sur **[!UICONTROL Créer]** en haut à droite de la page.
 1. Ajoutez un titre de profil et cliquez sur **[!UICONTROL Créer]**. Le profil de métadonnées a été créé.
-1. Sélectionnez le profil de métadonnées que vous venez de créer et cliquez sur **[!UICONTROL Modifier le(s) _(s)_]**. <br>Le formulaire **[!UICONTROL Modifier le profil de métadonnées]**&#x200B;s’ouvre avec l’onglet **[!UICONTROL De base]**&#x200B;en surbrillance.
+1. Sélectionnez le profil de métadonnées que vous venez de créer et cliquez sur **[!UICONTROL Modifier le(s) _(s)_]**. <br>Le formulaire **[!UICONTROL Modifier le profil de métadonnées]**s’ouvre avec l’onglet **[!UICONTROL De base]**en surbrillance.
 1. Effectuez un glisser-déposer d’un **[!UICONTROL champ de texte monoligne]** de la section **[!UICONTROL Créer un formulaire]** sur le côté droit de la section Métadonnées du formulaire.
 1. Cliquez sur le champ nouvellement ajouté, puis effectuez les mises à jour suivantes dans le panneau **[!UICONTROL Paramètres]** :
    1. Remplacez **[!UICONTROL Libellé du champ]** par _Assets approuvé_.
@@ -157,39 +157,39 @@ L’affichage des ressources chargées à l’aide de Content Hub dépend de l�
 
 ## Questions fréquemment posées {#faqs-content-hub-approved-assets}
 
-### Quel est l’objectif de l’approbation de ressources pour Content Hub dans Experience Manager as a Cloud Service ? {#approving-assets-content-hub}
+### Quel est l’objectif de l’approbation de ressources pour AEM Assets Content Hub dans Experience Manager as a Cloud Service ? {#approving-assets-content-hub}
 
-L’approbation des ressources permet de s’assurer que seules les versions les plus récentes et approuvées sont disponibles dans Content Hub, en maintenant une cohérence stricte de la marque sur tous les canaux et applications. Ce processus contrôlé simplifie la gestion des ressources numériques pour les chefs de marque et les spécialistes marketing.
+L’approbation des ressources permet de s’assurer que seules les versions les plus récentes et approuvées sont disponibles dans AEM Assets Content Hub, en maintenant une cohérence stricte de la marque sur tous les canaux et applications. Ce processus contrôlé simplifie la gestion des ressources numériques pour les chefs de marque et les spécialistes marketing.
 
-### Quelles sont les conditions préalables requises pour approuver des ressources pour Content Hub ?
+### Quelles sont les conditions préalables requises pour approuver des ressources pour AEM Assets Content Hub ?
 
 Vous devez avoir accès à AEM Assets as a Cloud Service et disposer d’autorisations en écriture pour modifier les métadonnées des ressources, en particulier le champ **Statut** dans les propriétés des ressources.
 
-### Comment approuver une ressource unique à l’aide de la vue Assets dans AEM as a Cloud Service ?
+### Comment approuver une ressource unique à l’aide de la vue Assets dans AEM as a Cloud Service afin qu’elle soit disponible dans AEM Assets Content Hub ?
 
-Sélectionnez la ressource, cliquez sur **Détails** dans la barre d’outils, accédez à l’onglet **De base**, choisissez **Approuvé** dans la liste déroulante **Statut**, puis cliquez sur **Enregistrer**. La ressource est disponible dans Content Hub.
+Sélectionnez la ressource, cliquez sur **Détails** dans la barre d’outils, accédez à l’onglet **De base**, choisissez **Approuvé** dans la liste déroulante **Statut**, puis cliquez sur **Enregistrer**. La ressource est disponible dans AEM Assets Content Hub.
 
-### Les ressources peuvent-elles être approuvées en bloc pour Content Hub et, le cas échéant, comment ?
+### Les ressources peuvent-elles être approuvées en bloc pour AEM Assets Content Hub et, le cas échéant, comment ?
 
-Oui, les ressources peuvent être approuvées en bloc. Dans la vue Assets, sélectionnez plusieurs ressources, cliquez sur **Modification des métadonnées en bloc**, sélectionnez **Approuvé** dans le champ **Statut** sous Propriétés, puis cliquez sur **Enregistrer**. Toutes les ressources sélectionnées sont disponibles dans Content Hub.
+Oui, les ressources peuvent être approuvées en bloc. Dans la vue Assets, sélectionnez plusieurs ressources, cliquez sur **Modification des métadonnées en bloc**, sélectionnez **Approuvé** dans le champ **Statut** sous Propriétés, puis cliquez sur **Enregistrer**. Toutes les ressources sélectionnées sont disponibles dans AEM Assets Content Hub.
 
-### Comment fonctionne le processus d’approbation des ressources dans Content Hub ? {#asset-approval-content-hub}
+### Comment fonctionne le processus d’approbation des ressources dans AEM Assets Content Hub ? {#asset-approval-content-hub}
 
-Si le bouton d’approbation automatique est activé, les ressources chargées à l’aide de Content Hub sont automatiquement disponibles. Si elle est désactivée, les ressources chargées sont placées dans le dossier **ressources-hydratées** d’Assets as a Cloud Service et vous devez modifier manuellement en bloc leur statut en **Approuvé** pour qu’elles s’affichent dans Content Hub.
+Si le bouton d’approbation automatique est activé, les ressources chargées à l’aide d’AEM Assets Content Hub sont automatiquement disponibles. Si elle est désactivée, les ressources chargées sont placées dans le dossier **ressources-hydratées** d’Assets as a Cloud Service et vous devez modifier manuellement en bloc leur statut en **Approuvé** pour qu’elles s’affichent dans Content Hub.
 
-### Qu’est-ce que le champ Cible d’approbation et comment affecte-t-il la publication des ressources ?
+### Qu’est-ce que le champ Cible d’approbation dans la vue AEM Assets et comment affecte-t-il la publication des ressources ?
 
-Le champ **Cible d’approbation** de la page Détails de la ressource vous permet de choisir l’emplacement de publication des ressources approuvées. Les options incluent **Delivery** (publication sur Dynamic Media avec OpenAPI et Content Hub) ou **Content Hub** uniquement. Si aucune option n’est sélectionnée, la valeur par défaut de votre environnement Assets as a Cloud Service est appliquée. Pour plus d’informations[&#x200B; voir &#x200B;](#default-approval-target-options-publish-destinations) Cible d’approbation par défaut et destinations de publication pour les ressources approuvées.
+Le champ **Cible d’approbation** de la page Détails de la ressource vous permet de choisir l’emplacement de publication des ressources approuvées. Les options incluent **Delivery** (publication sur Dynamic Media avec OpenAPI et Content Hub) ou **Content Hub** uniquement. Si aucune option n’est sélectionnée, la valeur par défaut de votre environnement Assets as a Cloud Service est appliquée. Pour plus d’informations[ voir ](#default-approval-target-options-publish-destinations) Cible d’approbation par défaut et destinations de publication pour les ressources approuvées.
 
 
-### Que se passe-t-il si le champ Cible de validation n’apparaît pas sur la page Assets Afficher les détails de la ressource ?
+### Que se passe-t-il si le champ Cible de validation n’apparaît pas sur la page AEM Assets Afficher les détails de la ressource ?
 
 Si le champ **Cible d’approbation** est manquant sur la page Assets Afficher les détails de la ressource, vous devez modifier votre formulaire de métadonnées, faire glisser le champ **Approbation de** des composants disponibles vers votre formulaire, puis cliquer sur **Enregistrer**. Vous pouvez ainsi définir des cibles de validation pour les ressources.
 
-### Comment pouvez-vous automatiser l’approbation des ressources nouvellement ingérées dans la vue Administration ?
+### Comment pouvez-vous automatiser l’approbation des ressources nouvellement ingérées dans la vue d’administration AEM Assets ?
 
 Créez un dossier dans l’environnement de création, accédez à **Outils** > **Assets** > **Profils de métadonnées**, puis créez et modifiez un profil de métadonnées. Ajoutez un champ de texte monoligne, libellez-le **Assets approuvé**, mappez-le à &#39;./jcr:content/metadata/dam:status&#39; et définissez sa valeur par défaut sur `approved`. Appliquez le profil de métadonnées au dossier . Les nouvelles ressources ajoutées au dossier sont automatiquement approuvées.
 
-### Qui peut accéder aux ressources approuvées dans Content Hub et quels contrôles sont en place ?
+### Qui peut accéder aux ressources approuvées dans AEM Assets Content Hub et quels contrôles sont en place ?
 
-Les ressources approuvées sont disponibles pour les utilisateurs qui font partie de la même organisation dans Content Hub. Des contrôles stricts garantissent que seules les dernières versions approuvées sont accessibles, ce qui contribue à maintenir la cohérence et la sécurité de la marque.
+Les ressources approuvées sont disponibles pour les utilisateurs qui font partie de la même organisation dans AEM Assets Content Hub. Des contrôles stricts garantissent que seules les dernières versions approuvées sont accessibles, ce qui contribue à maintenir la cohérence et la sécurité de la marque.

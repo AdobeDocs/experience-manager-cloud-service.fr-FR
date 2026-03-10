@@ -4,9 +4,9 @@ description: Découvrez comment télécharger une ou plusieurs ressources et leu
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '1373'
+source-wordcount: '1400'
 ht-degree: 1%
 
 ---
@@ -146,7 +146,7 @@ En savoir plus sur [affichage et gestion des rendus dans [!DNL Experience Manage
 
 * [Rendus statiques](/help/assets/renditions.md#static-renditions) : les rendus statiques sont des versions précréées des ressources numériques, généralement générées lors de l’ingestion ou de la modification des ressources. Ils sont optimisés pour des utilisations et des plateformes spécifiques, telles que les miniatures web, les formats compatibles avec les appareils mobiles pour les conceptions réactives ou les fichiers haute résolution pour l’impression, offrant ainsi une expérience rationalisée et cohérente.
 
-* [Rendus dynamiques](/help/assets/renditions.md#dynamic-renditions) : les rendus dynamiques sont des versions personnalisées en temps réel des ressources permettant d’effectuer diverses actions, telles que le redimensionnement des images pour différentes résolutions d’appareil ou le recadrage pour s’adapter à divers proportions. Ces rendus vous permettent d’offrir des expériences personnalisées et optimisées pour des besoins plus larges. Les rendus dynamiques des ressources sont créés dans [!DNL Adobe Experience Manager Assets] environnement de création. Pour plus d’informations sur les étapes requises pour activer les rendus dynamiques, voir [&#x200B; Activation des rendus dynamiques &#x200B;](#enable-dynamic-media-renditions).
+* [Rendus dynamiques](/help/assets/renditions.md#dynamic-renditions) : les rendus dynamiques sont des versions personnalisées en temps réel des ressources permettant d’effectuer diverses actions, telles que le redimensionnement des images pour différentes résolutions d’appareil ou le recadrage pour s’adapter à divers proportions. Ces rendus vous permettent d’offrir des expériences personnalisées et optimisées pour des besoins plus larges. Les rendus dynamiques des ressources sont créés dans [!DNL Adobe Experience Manager Assets] environnement de création. Pour plus d’informations sur les étapes requises pour activer les rendus dynamiques, voir [ Activation des rendus dynamiques ](#enable-dynamic-media-renditions).
 
 * [Recadrage intelligent](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles) : le recadrage intelligent se concentre uniquement sur la partie essentielle d’une ressource pendant le processus de recadrage. Le recadrage intelligent Dynamic Media tire parti de l’intelligence artificielle optimisée par Adobe AI pour effectuer le suivi du point ciblé, en s’assurant que nos ressources ont l’aspect le plus favorable quelle que soit la taille de l’écran. [!DNL Adobe Experience Manager] recadrage intelligent affiche la largeur et la hauteur des rendus d’une ressource avec le titre. Pour en savoir plus, consultez la section [Utilisation du recadrage intelligent avec AEM Assets Dynamic Media](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 
@@ -166,7 +166,7 @@ Pour activer les rendus dynamiques :
 
    Une fois que vous avez accès à Dynamic Media avec les fonctionnalités OpenAPI, toutes les ressources marquées comme `Approved` peuvent être diffusées au public à l’aide de Dynamic Media.
 
-1. Définissez la [&#x200B; cible d’approbation de la ressource &#x200B;](/help/assets/approve-assets-content-hub.md#set-approval-target) sur Content Hub afin d’approuver les ressources uniquement pour Content Hub.
+1. Définissez la [ cible d’approbation de la ressource ](/help/assets/approve-assets-content-hub.md#set-approval-target) sur Content Hub afin d’approuver les ressources uniquement pour Content Hub.
 
 1. Activez le bouton (bascule) **[!UICONTROL Activer la disponibilité des rendus]** disponible dans l’onglet **[!UICONTROL Rendus]** de l’interface utilisateur [Configuration](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub).
 
@@ -184,7 +184,7 @@ Pour activer les rendus dynamiques :
 
 ### Comment télécharger une ou plusieurs ressources à partir d’AEM Assets Content Hub ?
 
-Pour télécharger une seule ressource, cliquez sur l’icône de téléchargement sur la carte de la ressource. Pour plusieurs ressources, sélectionnez-les et cliquez sur Télécharger dans la barre d’actions. Content Hub commence à télécharger les ressources dans leur rendu d’origine si les téléchargements sont activés par votre administrateur. Si des rendus de ressources sont disponibles, vous pouvez sélectionner des rendus spécifiques avant de les télécharger.
+Pour télécharger une seule ressource dans AEM Assets Content Hub, cliquez sur l’icône de téléchargement sur la carte de la ressource. Pour plusieurs ressources, sélectionnez-les et cliquez sur Télécharger dans la barre d’actions. Content Hub commence à télécharger les ressources dans leur rendu d’origine si les téléchargements sont activés par votre administrateur. Si des rendus de ressources sont disponibles, vous pouvez sélectionner des rendus spécifiques avant de les télécharger.
 
 ### Existe-t-il une configuration gérée par l’administrateur dans AEM Assets Content Hub pour permettre aux utilisateurs de télécharger les ressources d’origine ou d’activer la disponibilité des rendus ?
 
@@ -192,15 +192,15 @@ Oui, les administrateurs peuvent activer ou désactiver les bascules **Activer l
 
 ### Que sont les rendus de ressources et quels types sont disponibles dans AEM Assets Content Hub ?
 
-Les rendus de ressources sont différentes représentations du fichier de ressource d’origine adaptées à divers cas d’utilisation. Les types de rendus incluent les rendus statiques (tels que les miniatures, les versions optimisées pour le web ou les appareils mobiles, ou les fichiers haute résolution pour l’impression), les rendus statiques personnalisés et les rendus dynamiques (y compris les versions de recadrage intelligent). Les rendus statiques sont prégénérés, tandis que les rendus dynamiques sont créés en temps réel sur demande.
+Les rendus de ressources dans AEM Assets Content Hub sont différentes représentations du fichier de ressource d’origine personnalisées pour divers cas d’utilisation. Les types de rendus incluent les rendus statiques (tels que les miniatures, les versions optimisées pour le web ou les appareils mobiles, ou les fichiers haute résolution pour l’impression), les rendus statiques personnalisés et les rendus dynamiques (y compris les versions de recadrage intelligent). Les rendus statiques sont prégénérés, tandis que les rendus dynamiques sont créés en temps réel sur demande.
 
 ### Comment le recadrage intelligent fonctionne-t-il avec les ressources dans AEM Assets Content Hub ?
 
-Le recadrage intelligent est une fonctionnalité optimisée par l’IA qui identifie la partie la plus importante d’une image et recadre intelligemment tout autour. Cela permet de s’assurer que les visuels s’affichent dans différents écrans et formats. Les rendus de recadrage intelligent sont disponibles pour les ressources d’image si votre entreprise prend en charge les fonctionnalités Dynamic Media.
+Le recadrage intelligent dans AEM Assets Content Hub est une fonctionnalité optimisée par l’IA qui identifie la partie la plus importante d’une image et effectue un recadrage intelligent autour de celle-ci. Cela permet de s’assurer que les visuels s’affichent dans différents écrans et formats. Les rendus de recadrage intelligent sont disponibles pour les ressources d’image si votre entreprise prend en charge les fonctionnalités Dynamic Media.
 
 ### Comment activer les rendus dynamiques dans AEM Assets Content Hub ?
 
-Pour activer les rendus dynamiques :
+Pour activer les rendus dynamiques dans AEM Assets Content Hub :
 
 * Assurez-vous que Dynamic Media avec les fonctionnalités OpenAPI est activé. Les ressources approuvées peuvent ensuite être diffusées au public.
 
@@ -212,9 +212,9 @@ Pour activer les rendus dynamiques :
 
 Les rendus dynamiques sont pris en charge uniquement pour les ressources d’image.
 
-### Comment télécharger des rendus de ressources dans Content Hub ?
+### Comment télécharger des rendus de ressources dans AEM Assets Content Hub ?
 
-Pour télécharger des rendus, sélectionnez la ressource et cliquez sur l’action de téléchargement. Si les rendus sont activés par l’administration, une boîte de dialogue s’affiche dans laquelle vous pouvez choisir les rendus à télécharger. Pour les ressources sous licence, acceptez les conditions de licence avant de télécharger. Pour plusieurs ressources, sélectionnez-les, choisissez des rendus et téléchargez-les sous la forme d’un fichier ZIP. Vous pouvez sélectionner tous les rendus disponibles ou des rendus spécifiques tels que les rendus statiques ou dynamiques.
+Pour télécharger des rendus dans AEM Assets Content Hub, sélectionnez la ressource et cliquez sur l’action de téléchargement. Si les rendus sont activés par l’administration, une boîte de dialogue s’affiche dans laquelle vous pouvez choisir les rendus à télécharger. Pour les ressources sous licence, acceptez les conditions de licence avant de télécharger. Pour plusieurs ressources, sélectionnez-les, choisissez des rendus et téléchargez-les sous la forme d’un fichier ZIP. Vous pouvez sélectionner tous les rendus disponibles ou des rendus spécifiques tels que les rendus statiques ou dynamiques.
 
 
 

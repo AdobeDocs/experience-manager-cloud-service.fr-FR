@@ -3,10 +3,10 @@ title: Modification d’images dans Content Hub à l’aide d’Adobe Express
 description: Modification d’images dans Content Hub à l’aide d’Adobe Express
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 6%
+source-wordcount: '744'
+ht-degree: 5%
 
 ---
 
@@ -30,7 +30,7 @@ Pour modifier des images à l’aide de Content Hub :
 
 1. Cliquez sur **[!DNL Open in Adobe Express]** disponible sur la carte de l’image à modifier. Vous pouvez également cliquer sur l’image pour en afficher les détails, puis cliquer sur le logo [!DNL Adobe Express]. L’éditeur incorporé pour Adobe Express se charge ensuite sans jamais quitter Content Hub.
 
-   Vous pouvez tirer parti de la fonctionnalité [!DNL Adobe Express] pour effectuer toutes les actions liées à la modification d’images, telles que [redimensionner l’image](https://helpx.adobe.com/fr/express/using/resize-image.html), [supprimer ou modifier la couleur d’arrière-plan](https://helpx.adobe.com/fr/express/using/remove-background.html), [recadrer l’image](https://helpx.adobe.com/fr/express/using/crop-image.html), combiner l’image à une image ou un texte généré par l’IA, etc.
+   Vous pouvez tirer parti de la fonctionnalité [!DNL Adobe Express] pour effectuer toutes les actions liées à la modification d’images, telles que [redimensionner l’image](https://helpx.adobe.com/express/using/resize-image.html), [supprimer ou modifier la couleur d’arrière-plan](https://helpx.adobe.com/express/using/remove-background.html), [recadrer l’image](https://helpx.adobe.com/express/using/crop-image.html), combiner l’image à une image ou un texte généré par l’IA, etc.
 
 1. Effectuez vos modifications et cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer la ressource modifiée dans l’un des formats suivants :
 
@@ -56,27 +56,27 @@ Les administrateurs peuvent également configurer les champs obligatoires et fac
 
 ### Qui peut modifier les images dans AEM Assets Content Hub ?
 
-Les utilisateurs disposant de droits d’accès à Adobe Express et AEM Assets Content Hub et qui disposent des droits de remixer les ressources vers de nouvelles variations peuvent modifier les images à l’aide de Content Hub.
+Les utilisateurs autorisés à accéder à Adobe Express et AEM Assets Content Hub et qui disposent des droits de remixer les ressources vers de nouvelles variations peuvent modifier les images à l’aide d’AEM Assets Content Hub.
 
 ### Comment modifier une image à l’aide d’Adobe Express dans AEM Assets Content Hub ?
 
-Pour modifier une image, cliquez sur **Ouvrir dans Adobe Express** sur la carte des ressources de l’image ou ouvrez les détails de l’image et cliquez sur le logo Adobe Express. L’éditeur Adobe Express intégré est alors chargé dans AEM Assets Content Hub, ce qui vous permet d’apporter des modifications sans quitter la plateforme.
+Pour modifier une image dans AEM Assets Content Hub, cliquez sur **Ouvrir dans Adobe Express** sur la carte de l’image ou affichez les détails de l’image et cliquez sur le logo Adobe Express. L’éditeur Adobe Express intégré est alors chargé dans AEM Assets Content Hub, ce qui vous permet d’apporter des modifications sans quitter la plateforme.
 
 ### Quelles fonctionnalités de modification Adobe Express fournit-il dans AEM Assets Content Hub ?
 
-Adobe Express offre diverses fonctionnalités d’édition d’images, notamment le redimensionnement des images, la suppression ou la modification de la couleur d’arrière-plan, le recadrage des images et leur combinaison avec des images ou du texte générés par l’IA, entre autres fonctionnalités.
+Adobe Express offre diverses fonctionnalités d’édition d’images dans AEM Assets Content Hub, notamment le redimensionnement des images, la suppression ou la modification de la couleur d’arrière-plan, le recadrage d’images et leur combinaison avec des images ou du texte générés par l’IA, entre autres fonctionnalités.
 
 ### Quels formats de fichier puis-je enregistrer mes images modifiées comme dans AEM Assets Content Hub ?
 
-Vous pouvez enregistrer vos images modifiées au format PNG (bonne qualité), JPG (adapté aux petits fichiers) ou PDF (adapté aux documents).
+Vous pouvez enregistrer vos images modifiées au format PNG (bonne qualité), JPG (adapté aux petits fichiers) ou PDF (adapté aux documents) dans AEM Assets Content Hub.
 
-### Quels champs dois-je remplir lors de l’enregistrement d’une image modifiée dans Content Hub ?
+### Quels champs dois-je remplir lors de l’enregistrement d’une image modifiée dans AEM Assets Content Hub ?
 
-Lors de l’enregistrement d’une image modifiée, vous devez spécifier un nom pour la ressource dans le champ **Enregistrer sous** et un nom de campagne dans le champ **Nom de la campagne**. Adobe recommande également de spécifier des valeurs dans des champs supplémentaires tels que Mots-clés, Canaux, Période et Région afin d’améliorer la recherche et l’organisation.
+Lors de l’enregistrement d’une image modifiée dans AEM Assets Content Hub, vous devez spécifier un nom pour la ressource dans le champ **Enregistrer sous** et un nom de campagne dans le champ **Nom de la campagne**. Adobe recommande également de spécifier des valeurs dans des champs supplémentaires tels que Mots-clés, Canaux, Période et Région afin d’améliorer la recherche et l’organisation.
 
-### Puis-je enregistrer mes modifications en tant que nouvelle ressource dans Content Hub ?
+### Puis-je enregistrer mes modifications en tant que nouvelle ressource dans AEM Assets Content Hub ?
 
-Oui, après modification, vous pouvez cliquer sur **Enregistrer en tant que nouvelle ressource** pour enregistrer vos modifications en tant que nouvelle ressource dans Content Hub.
+Oui, après modification, vous pouvez cliquer sur **Enregistrer en tant que nouvelle ressource** pour enregistrer vos modifications en tant que nouvelle ressource dans AEM Assets Content Hub.
 
 ### Les administrateurs peuvent-ils personnaliser les champs lors du chargement de ressources vers AEM Assets Content Hub ?
 
