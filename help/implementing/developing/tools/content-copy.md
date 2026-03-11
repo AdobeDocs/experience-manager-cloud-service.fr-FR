@@ -4,10 +4,10 @@ description: L’outil de copie de contenu permet aux utilisateurs de copier du 
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Developer
-source-git-commit: 86205946b7c4b7173448eca728f4495ab7e35064
+source-git-commit: bcd32fd359024abde5fb18ec4f3b8b3e2aa910cc
 workflow-type: tm+mt
-source-wordcount: '1502'
-ht-degree: 50%
+source-wordcount: '1574'
+ht-degree: 48%
 
 ---
 
@@ -144,6 +144,13 @@ Une fois qu’un ensemble de contenu a été créé, vous pouvez l’utiliser po
 
    * **Inclure les listes de contrôle d’accès** - Sélectionnez cette option si vous souhaitez copier les autorisations de contrôle d’accès du contenu avec le contenu.
    * **Effacer** - Sélectionnez cette option pour supprimer le contenu existant à la destination avant de commencer l’importation, afin de pouvoir repartir de zéro et d’éviter les conflits avec le contenu préexistant. Si vous laissez la case **Effacer** désélectionnée, Cloud Manager importe le nouveau contenu en plus du contenu de destination existant. Une invite de confirmation s’affiche avant le début de l’effacement. Cloud Manager consigne l’action d’effacement et importe les détails pour en assurer la traçabilité.
+     ![Copie de contenu](assets/content_copy_wipe-destination.png)
+      * Lorsque vous sélectionnez l’option **Effacer la destination avant l’importation** et que vous cliquez sur **Copier** une fenêtre contextuelle s’affiche avec un avertissement dans lequel vous avez les options suivantes :
+         * **Annuler** (dans ce cas, le flux **Copier le contenu** ne démarrera pas)
+         * **Confirmer** (le flux **Copier le contenu** démarre et le contenu de la destination est effacé)
+           ![Copie de contenu](assets/content-copy-wipe-destination-warning.png)
+
+      * Si vous ne choisissez pas **Effacer la destination avant l’importation** le flux **Copier le contenu** fonctionnera comme auparavant.
 
 1. Cliquez sur **Copier**.
 
@@ -214,4 +221,4 @@ L’outil de copie de contenu présente les limites suivantes.
 * L’outil de copie de contenu ne dispose d’aucune fonctionnalité de contrôle de version et ne peut pas détecter automatiquement le contenu modifié ou créé dans l’environnement source dans un jeu de contenu depuis la dernière opération de copie de contenu.
    * Si vous souhaitez mettre à jour votre environnement de destination avec des modifications de contenu depuis la dernière opération de copie de contenu uniquement, vous devez créer un jeu de contenu. Ensuite, spécifiez les chemins d’accès sur l’instance source où des modifications ont été apportées depuis la dernière opération de copie de contenu.
 * Les informations de version ne sont pas incluses dans une copie de contenu.
-* Les [&#x200B; Modèles de fragments de contenu &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) peuvent spécifier des champs de référence en fonction d’identifiants universels uniques (UUID). Ces UUID étant spécifiques au référentiel, l’outil de copie de contenu recalcule ces UUID dans l’environnement cible lors de la copie de fragments de contenu.
+* Les [ Modèles de fragments de contenu ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) peuvent spécifier des champs de référence en fonction d’identifiants universels uniques (UUID). Ces UUID étant spécifiques au référentiel, l’outil de copie de contenu recalcule ces UUID dans l’environnement cible lors de la copie de fragments de contenu.
