@@ -2,10 +2,10 @@
 title: Configurer l’interface d’utilisation du hub de contenus
 description: Configurer l’interface d’utilisation du hub de contenus
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 30dc2465aacf9d586755a1aa69cc473f237d0103
+source-git-commit: 1b7cbf4e66a57dd86b04122ecb6b79eb59b3f02a
 workflow-type: tm+mt
-source-wordcount: '2815'
-ht-degree: 9%
+source-wordcount: '2962'
+ht-degree: 8%
 
 ---
 
@@ -35,7 +35,7 @@ Experience Manager Assets permet à l’équipe d’aministration de configurer 
 
 * Tous les liens personnalisés que vous devez inclure sur Content Hub en plus des ressources, des collections et des informations.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472948/?captions=fre_fr&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
 
 ## Conditions préalables {#prerequisites-configuration-ui}
 
@@ -84,7 +84,7 @@ Vous pouvez configurer les champs de métadonnées qui s’affichent pour les ut
 
 1. Cliquez sur **[!UICONTROL Ajouter des métadonnées]**.
 
-1. Indiquez un libellé pour la propriété, mappez-le à une propriété à l’aide du champ **[!UICONTROL Métadonnées]** et sélectionnez le type d’entrée des nouvelles métadonnées de la ressource.
+1. Indiquez un libellé pour la propriété, mappez-le à une propriété à l’aide du champ **[!UICONTROL Métadonnées]** et sélectionnez le type d’entrée approprié pour les nouvelles métadonnées de la ressource. Les libellés de type d’entrée sont mis à jour pour s’aligner sur Adobe Experience Manager (AEM). Les types d’entrée disponibles sont les suivants : Texte, Balises, Date, Nombre, Liste déroulante, Texte à plusieurs valeurs, Balises intelligentes et Balises de couleurs intelligentes. Pour certains champs de métadonnées (xcm:colorDistribution, xcm:machineKeywords), le type d’entrée est automatiquement attribué et ne peut pas être modifié.
 
 1. Cliquez sur le bouton (bascule) **[!UICONTROL Champ obligatoire]** pour rendre le nouveau champ de métadonnées obligatoire à spécifier pour les utilisateurs lors du chargement de nouvelles ressources.
 
@@ -98,7 +98,7 @@ Cliquez sur le bouton (bascule) **[!UICONTROL Approbation automatique]** si vous
 
 Cliquez sur **[!UICONTROL Enregistrer]** après avoir effectué toutes les modifications pour appliquer les modifications.
 
-![Détails de chargement de l’interface utilisateur de configuration sur Content Hub](/help/assets/assets/import-content-hub1.png)
+![Détails de chargement de l’interface utilisateur de configuration sur Content Hub](assets/filter-new.png)
 
 Les métadonnées activées dans l’interface utilisateur de configuration s’affichent dans la page de chargement des ressources :
 ![Chargement de métadonnées sur Content Hub](assets/add-assets-for-approval1.png)
@@ -108,12 +108,9 @@ Les métadonnées activées dans l’interface utilisateur de configuration s’
 Content Hub permet aux administrateurs de configurer des filtres qui s’affichent lors de la recherche de ressources. Pour ajouter un nouveau filtre, procédez comme suit :
 
 1. Dans l’interface utilisateur [Configurations](#access-configuration-options-content-hub), cliquez sur **[!UICONTROL Filtres]**.
-
 1. Cliquez sur **[!UICONTROL Ajouter des filtres]**.
-
-1. Indiquez un libellé pour le filtre, mappez-le à une propriété à l’aide du champ **[!UICONTROL Métadonnées]** et sélectionnez le type d’entrée du nouveau filtre.
+1. Indiquez un libellé pour le filtre, mappez-le à une propriété à l’aide du champ **[!UICONTROL Métadonnées]** et sélectionnez le type d’entrée approprié pour le nouveau filtre. Les libellés de type d’entrée sont mis à jour pour s’aligner sur Adobe Experience Manager (AEM). Les types d’entrée disponibles sont les suivants : Texte, Balises, Date, Nombre, Liste déroulante, Texte à plusieurs valeurs, Balises intelligentes et Balises de couleurs intelligentes. Pour certains champs de métadonnées (xcm:colorDistribution, xcm:machineKeywords), le type d’entrée est automatiquement attribué et ne peut pas être modifié.
 1. Cliquez sur **[!UICONTROL Confirmer]**. Le nouveau filtre s’affiche dans la liste des filtres existants.
-
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour appliquer les modifications afin que le nouveau filtre s’affiche sur la page Rechercher lors du filtrage des ressources.
 
    >[!NOTE]
@@ -121,7 +118,7 @@ Content Hub permet aux administrateurs de configurer des filtres qui s’affiche
    >Le nouveau filtre ne s’affiche sur la page Rechercher que s’il existe au moins une ressource dans le référentiel correspondant aux critères de filtre.
 
 De même, vous pouvez cliquer sur ![icône Modifier](assets/do-not-localize/edit_icon.svg), disponible en regard de chaque filtre disponible, pour modifier les libellés ou cliquer sur l’icône de suppression pour supprimer un filtre existant. Cliquez sur **[!UICONTROL Enregistrer]** après avoir effectué toutes les modifications pour appliquer les modifications.
-![Filtres de l’interface utilisateur de configuration sur Content Hub](assets/configuration-filter1.png)
+![Filtres de l’interface utilisateur de configuration sur Content Hub](assets/add-filters.png)
 
 Les filtres activés dans l’interface utilisateur de configuration s’affichent dans la page Rechercher :
 ![Recherche sur Content Hub](assets/content-hub-filters1.png)
@@ -136,7 +133,7 @@ Pour activer la recherche de plusieurs ressources à la fois dans [!DNL Content 
 
 1. Activez le bouton (bascule) **[!UICONTROL Recherche en bloc]**. Les délimiteurs par défaut `[ , | \t | \r\n | \r | \n ]` s’affichent automatiquement. De plus, vous pouvez également ajouter des délimiteurs supplémentaires. Pour ce faire, spécifiez des délimiteurs dans la zone de saisie séparée par un `pipe symbol (|)`.
 
-   ![Configuration de la recherche en bloc](assets/bulk-search-configuration.png)
+   ![Configuration de la recherche en bloc](assets/edit-filter-new.png)
 
 1. Cliquez sur **[!UICONTROL Confirmer]** pour enregistrer les modifications. Voir [Recherche en bloc dans Content Hub](search-assets-content-hub.md#bulk-search) en action.
 
@@ -147,15 +144,14 @@ Vous pouvez également configurer les propriétés de la ressource qui s’affic
 1. Dans l’interface utilisateur [Configurations](#access-configuration-options-content-hub), cliquez sur **[!UICONTROL Détails de la ressource]**.
 
 1. Cliquez sur **[!UICONTROL Ajouter des métadonnées]**.
-
-1. Indiquez un libellé pour la propriété, mappez-le à une propriété à l’aide du champ **[!UICONTROL Métadonnées]** et sélectionnez le type d’entrée des nouvelles métadonnées de la ressource.
+1. Indiquez un libellé pour la propriété, mappez-le à une propriété à l’aide du champ **[!UICONTROL Métadonnées]** et sélectionnez le type d’entrée approprié pour les nouvelles métadonnées de la ressource. Les libellés de type d’entrée sont mis à jour pour s’aligner sur Adobe Experience Manager (AEM). Les types d’entrée disponibles sont les suivants : Texte, Balises, Date, Nombre, Liste déroulante, Texte à plusieurs valeurs, Balises intelligentes et Balises de couleurs intelligentes. Pour certains champs de métadonnées (xcm:colorDistribution, xcm:machineKeywords), le type d’entrée est automatiquement attribué et ne peut pas être modifié.
 1. Cliquez sur **[!UICONTROL Confirmer]**. Les nouvelles métadonnées s’affichent dans la liste des propriétés de la ressource existante.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour appliquer les modifications de sorte que la nouvelle propriété s’affiche sur la page des détails de la ressource.
 
 De même, vous pouvez cliquer sur ![icône Modifier](assets/do-not-localize/edit_icon.svg), disponible en regard de chaque propriété disponible, pour modifier les libellés ou cliquer sur l’icône de suppression pour supprimer tout détail de ressource existant. Cliquez sur **[!UICONTROL Enregistrer]** après avoir effectué toutes les modifications pour appliquer les modifications.
 
-![Détails de la ressource de l’interface utilisateur de configuration dans Content Hub](assets/configuration-asset-details.png)
+![Détails de la ressource de l’interface utilisateur de configuration dans Content Hub](assets/asset-detailsn.png)
 
 Les propriétés activées dans l’interface utilisateur de configuration s’affichent dans la page Détails de la ressource :
 
@@ -193,8 +189,8 @@ En tant qu’administrateur, personnalisez votre portail [!DNL Content Hub] pour
 ![réinitialiser la valeur par défaut](/help/assets/assets/reset-default-content-hub.png)
 Sur la page ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]**, utilisez les sections **[!UICONTROL Bannière]**, **[!UICONTROL Couleurs]** et **[!UICONTROL Image de bannière]** pour exécuter les personnalisations suivantes :
 
-1. [Modifiez l’image du logo à partir de la section [!UICONTROL &#x200B; Image du logo &#x200B;]](#Change-the-logo-image)
-1. [Modifiez l’image de bannière à partir de la section [!UICONTROL &#x200B; Image de bannière &#x200B;]](#Change-the-banner-image)
+1. [Modifiez l’image du logo à partir de la section [!UICONTROL  Image du logo ]](#Change-the-logo-image)
+1. [Modifiez l’image de bannière à partir de la section [!UICONTROL  Image de bannière ]](#Change-the-banner-image)
 1. [Mettez à jour le titre et le texte du corps de la bannière et modifiez la couleur du texte dans la section [!UICONTROL Bannière]](#Add-title-and-body-text-to-your-banner-and-change-the-text-color)
 1. [Modifiez la couleur principale et secondaire de la section [!UICONTROL Couleurs] pour appliquer un jeu de couleurs qui s’aligne sur le thème de votre marque](#Change-the-primary-and-secondary-color)
 
@@ -232,9 +228,9 @@ Cliquez sur la zone carrée en regard de la **[!UICONTROL Couleur du texte de ba
 
 Sur la page ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]**, utilisez la section **[!UICONTROL Couleurs]** pour définir les couleurs primaires et secondaires en les sélectionnant à l’aide du sélecteur de couleurs ou en définissant le code hexadécimal de la couleur. Ces couleurs définissent les couleurs d’arrière-plan, de texte et d’icône des éléments de l’interface utilisateur pour aligner votre interface utilisateur [!DNL Content Hub] avec le thème de votre marque.
 ![couleur primaire et secondaire](/help/assets/assets/primary-secondary-color-content-hub1.png)
-**[!UICONTROL Couleur du Principal &#x200B;]:** Le jeu de couleurs principal s’applique aux actions de sélection, aux éléments interactifs tels que les cases à cocher, les barres de recherche et les commutateurs à travers les [!DNL Content Hub], y compris [!DNL Content Hub] page d’accueil et la page [!UICONTROL Configuration]. Elle s’applique également aux options d’action disponibles sur les interfaces de [!DNL Content Hub] principales, telles que les options disponibles sur les pages **[!UICONTROL Toutes les Assets]** et **[!UICONTROL Collections]**.
+**[!UICONTROL Couleur du Principal ]:** Le jeu de couleurs principal s’applique aux actions de sélection, aux éléments interactifs tels que les cases à cocher, les barres de recherche et les commutateurs à travers les [!DNL Content Hub], y compris [!DNL Content Hub] page d’accueil et la page [!UICONTROL Configuration]. Elle s’applique également aux options d’action disponibles sur les interfaces de [!DNL Content Hub] principales, telles que les options disponibles sur les pages **[!UICONTROL Toutes les Assets]** et **[!UICONTROL Collections]**.
 
-**[!UICONTROL Couleur Secondaire &#x200B;]:** Sur la page d&#39;accueil [!DNL Content Hub], le jeu de couleurs secondaire s&#39;applique aux options de l&#39;interface utilisateur et aux champs de saisie disponibles dans les boîtes de dialogue. Elle s’applique à toutes les options de menu de configuration disponibles sur la page [!UICONTROL Configuration], à l’exception des actions de sélection, des cases à cocher, des barres de recherche et des commutateurs.
+**[!UICONTROL Couleur Secondaire ]:** Sur la page d&#39;accueil [!DNL Content Hub], le jeu de couleurs secondaire s&#39;applique aux options de l&#39;interface utilisateur et aux champs de saisie disponibles dans les boîtes de dialogue. Elle s’applique à toutes les options de menu de configuration disponibles sur la page [!UICONTROL Configuration], à l’exception des actions de sélection, des cases à cocher, des barres de recherche et des commutateurs.
 
 ### Visibilité des ressources{#asset-visibility-content-hub}
 
@@ -264,7 +260,7 @@ Si la visibilité des ressources arrivées à expiration est activée, Content H
 
 ### Rendus {#renditions-content-hub}
 
-Les rendus sont des versions personnalisées des ressources numériques, telles que les images, les documents, etc., conçues pour différents appareils et plateformes afin d’assurer des performances optimales. En savoir plus sur les [rendus dans Adobe Experience Manager Assets](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+Les rendus sont des versions personnalisées des ressources numériques, telles que les images, les documents, etc., conçues pour différents appareils et plateformes afin d’assurer des performances optimales. En savoir plus sur les [rendus dans Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Pour cela, procédez comme suit :
 
@@ -329,7 +325,7 @@ Enable the following setting on the Configurations user interface to allow Conte
 
 En savoir plus sur le [partage de ressources dans la  [!DNL Content Hub]](share-assets-content-hub.md).
 
-## Questions fréquemment posées {#faqs-content-hub-upload-assets}
+## Questions fréquentes {#faqs-content-hub-upload-assets}
 
 ### Qui peut accéder aux paramètres de l’interface utilisateur d’AEM Assets Content Hub et les configurer ?
 
