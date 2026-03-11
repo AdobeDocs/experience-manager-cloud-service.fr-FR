@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 49d29c468a2047e3026948030c3663db0beada53
+source-git-commit: eae7609f3f35f17a6c31cf242b6b0cc2d464a3fb
 workflow-type: tm+mt
-source-wordcount: '1944'
+source-wordcount: '1961'
 ht-degree: 35%
 
 ---
@@ -38,7 +38,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Consultez la vidéo Aperçu de la mise à jour de février 2026 pour un résumé des fonctionnalités ajoutées dans la version 2026.2.0 :
 
->[!VIDEO](https://video.tv.adobe.com/v/3480401/?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480399/?quality=12)
 
 
 ## Programmes AEM Beta {#aem-beta-programs}
@@ -96,9 +96,9 @@ Le contrôle d’accès basé sur les attributs (ABAC) permet aux administrateur
 
 >[!NOTE]
 >
->Le contrôle d’accès basé sur les attributs (ABAC) pour Dynamic Media avec OpenAPI est une fonctionnalité à disponibilité limitée. Vous pouvez l’activer en créant un [&#x200B; ticket d’assistance &#x200B;](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
+>Le contrôle d’accès basé sur les attributs (ABAC) pour Dynamic Media avec OpenAPI est une fonctionnalité à disponibilité limitée. Vous pouvez l’activer en créant un [ ticket d’assistance ](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
 
-## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Fonctionnalités d’accès anticipé d’AEM Forms {#forms-early-access-features}
 
@@ -106,7 +106,7 @@ Le contrôle d’accès basé sur les attributs (ABAC) permet aux administrateur
 Les composants de liste déroulante à sélection multiple dans le Forms adaptatif effectuent désormais le rendu de leurs libellés d’affichage sélectionnés dans la [PDF d’envoi générée](/help/forms/generate-document-of-record-core-components.md), en s’assurant que le document reflète précisément ce que les utilisateurs voient sur le formulaire.
 
 **Amélioration de l’accessibilité des composants de case à cocher, de bouton radio et de panneau**
-Les composants principaux de Forms adaptatifs introduisent le balisage sémantique compatible avec WCAG 2.2 pour les [groupes de cases à cocher (v2)](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [groupes de boutons radio (v2)](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) et le [composant de panneau](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). Ces composants exploitent les éléments HTML `<fieldset>` et `<legend>` pour établir des relations significatives entre les libellés de groupe et leurs options, ce qui permet une interprétation précise par les lecteurs d’écran et d’autres technologies d’assistance.
+Les composants principaux de Forms adaptatifs introduisent le balisage sémantique compatible avec WCAG 2.2 pour les [groupes de cases à cocher (v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [groupes de boutons radio (v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) et le [composant de panneau](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). Ces composants exploitent les éléments HTML `<fieldset>` et `<legend>` pour établir des relations significatives entre les libellés de groupe et leurs options, ce qui permet une interprétation précise par les lecteurs d’écran et d’autres technologies d’assistance.
 
 **Prise en charge des versions dans Forms Manager**
 Forms Manager [prend désormais en charge le contrôle de version pour les Forms adaptatifs (composants principaux et composants de base)](/help/forms/manage-form-versions-forms-manager.md), les fragments de formulaire, les thèmes, les modèles XDP et les ressources binaires. Créez des versions, affichez l’historique complet des versions et restaurez les états précédents de vos ressources de formulaire directement à partir de la console Forms et documents.
@@ -140,7 +140,7 @@ Les API obsolètes ciblant la suppression du 2/26/2026 ne doivent plus être uti
 
 * **À compter du 26 janvier 2026** : les e-mails de notification du Centre de maintenance sont envoyés comme rappel pour supprimer l’utilisation de ces API.
 * **26 février 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API seront **mis en pause** pendant l’étape **Qualité du code**. Un responsable de déploiement, un chef de projet ou un propriétaire d’entreprise peut contourner le problème pour autoriser le pipeline à continuer. *Cela peut ralentir votre capacité à valider et à publier les modifications de code.*
-* **30 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **&#x200B;**&#x200B;lors de l’étape **Qualité du code**. Les déploiements seront bloqués jusqu’à ce que l’utilisation obsolète de l’API soit supprimée. *Cela peut vous empêcher de publier des mises à jour urgentes et peut avoir un impact sur vos opérations commerciales.*
+* **30 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **** lors de l’étape **Qualité du code**. Les déploiements seront bloqués jusqu’à ce que l’utilisation obsolète de l’API soit supprimée. *Cela peut vous empêcher de publier des mises à jour urgentes et peut avoir un impact sur vos opérations commerciales.*
 * **4 mai 2026** : les environnements qui utilisent toujours des API obsolètes **ne recevront pas de mises à jour de versions Adobe critiques** et ne sont pas soumis aux engagements standard d’Adobe en matière de performances et de disponibilité. Par conséquent, vous ne recevrez pas de nouvelles fonctionnalités ou de nouveaux correctifs, la stabilité et la disponibilité des applications peuvent être affectées négativement et l&#39;exposition aux risques de sécurité peut encore augmenter.
 
 Pour plus d’informations, consultez l’[article sur l’obsolescence](/help/release-notes/deprecated-removed-features.md#aem-apis), mais pour plus de commodité, ces API sont répertoriées ci-dessous :
@@ -191,7 +191,7 @@ Nous disposons d’un nombre limité d’opportunités pour la diffusion de l’
 
 #### Serveur MCP Cloud Manager (programme Beta) {#cm-mcp-server}
 
->[!VIDEO](https://video.tv.adobe.com/v/3480344/?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480340/?quality=12)
 
 Les IDE modernes utilisent le protocole MCP (Model Context Protocol) pour permettre aux modèles de langage volumineux (LLM) d’appeler les outils exposés par les serveurs MCP. Au lieu d’intégrer directement les spécifications d’API de bas niveau, l’équipe de développement peut simplement décrire son intention en langage naturel.
 
@@ -204,6 +204,12 @@ En savoir plus sur les [serveurs AEM MCP](/help/ai-in-aem/mcp-support/using-mcp-
 Les fonctionnalités [dépannage de pipeline](/help/ai-in-aem/agents/brand-experience/development/development.md) de l’agent de développement aident les développeurs à diagnostiquer et à résoudre efficacement les problèmes dans les déploiements d’AEM as a Cloud Service. En plus de prendre en charge les pipelines Full Stack (déploiement et qualité du code), l’agent de développement prend désormais en charge le dépannage du **pipeline de configuration de niveau web** dans le cadre d’un programme bêta.
 
 Pour demander l’accès à la version bêta, envoyez un e-mail à l’adresse [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com). Un accès préexistant aux agents dans AEM est requis.
+
+>[!NOTE]
+>
+>Disponible en tant que fonctionnalité de responsabilité le 25 septembre.
+>Envoyez un e-mail à [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) pour l’activer dans vos programmes.
+>
 
 #### Outils d’IA dédiée à l’IDE pour le développement AEM Java et Dispatcher (programme Beta) {#ai-dev-beta}
 
