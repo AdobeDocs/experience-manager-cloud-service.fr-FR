@@ -236,7 +236,7 @@ Vous pouvez créer une règle combinée pour contrôler la visibilité du champ 
 
 Les paramètres d’entrée prennent désormais en charge les sorties de fonction (concat, trim et join, par exemple), ainsi que les expressions mathématiques. Cette amélioration permet aux auteurs de formulaires de transmettre directement des valeurs calculées dynamiquement, ce qui rationalise les configurations de règle, réduit le besoin de champs supplémentaires et rend les formulaires plus adaptables à des scénarios complexes logiques et pilotés par les calculs.
 
-![ Appel de fonction et prise en charge de l’expression mathématique ](/help/forms/assets/mathematical-function-support.png)
+![&#x200B; Appel de fonction et prise en charge de l’expression mathématique &#x200B;](/help/forms/assets/mathematical-function-support.png)
 
 ### Gestion des règles rompues
 

@@ -95,7 +95,7 @@ Le développement local avec AEM SDK vous fait gagner du temps et simplifie le p
 
 1. [Ajout de modèles de Forms adaptatifs](/help/forms/setup-local-development-environment.md#set-up-a-development-project-for-forms-based-on-experience-manager-archetype) : utilisez AEM Archetypes 48 ou une version ultérieure pour créer un projet AEM et le déployer sur votre SDK AEM. Le projet ajoute des modèles Forms adaptatifs à votre SDK AEM.
 
-   ![ Modèles de formulaire adaptatif ](/help/forms/assets/adaptive-forms-templates.png)
+   ![&#x200B; Modèles de formulaire adaptatif &#x200B;](/help/forms/assets/adaptive-forms-templates.png)
 
    +++Ajoutez des modèles Forms adaptatifs à votre SDK AEM :
 

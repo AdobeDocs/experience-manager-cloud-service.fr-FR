@@ -44,7 +44,7 @@ ht-degree: 45%
 
 ## Intégration du service {#onboarding}
 
-* [Intégrez](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=fr)[!DNL Adobe Experience Manager] as a Cloud Service.
+* [Intégrez](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=fr) [!DNL Adobe Experience Manager] as a Cloud Service.
 
 * (Pour les sandbox uniquement) Après l’intégration du service, [créez](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html?lang=en) et [exécutez](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=fr) les pipelines de production et hors production. Les dernières fonctionnalités d’[!DNL AEM Forms] as a Cloud Service sont ainsi activées et intégrées à votre environnement.
 
@@ -69,7 +69,7 @@ Vous pouvez utiliser Forms as a Cloud Service pour créer un formulaire adaptat
 
 >[!NOTE]
 >
-> Pour activer et configurer les API de manipulation de documents, ajoutez la règle suivante à la configuration [Dispatcher ](setup-local-development-environment.md#forms-specific-rules-to-dispatcher) :
+> Pour activer et configurer les API de manipulation de documents, ajoutez la règle suivante à la configuration [Dispatcher &#x200B;](setup-local-development-environment.md#forms-specific-rules-to-dispatcher) :
 >
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`

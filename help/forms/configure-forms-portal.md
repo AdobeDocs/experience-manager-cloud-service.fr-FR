@@ -33,7 +33,7 @@ Les composants du portail Formulaires offrent les fonctionnalités suivantes :
 
 ## Composants d’un portail Forms
 
-![ Composants du portail Forms ](/help/forms/assets/forms-portal.png)
+![&#x200B; Composants du portail Forms &#x200B;](/help/forms/assets/forms-portal.png)
 
 AEM Forms fournit les composants de portail suivants prêts à l’emploi :
 

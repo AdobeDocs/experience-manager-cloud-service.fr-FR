@@ -40,7 +40,7 @@ Voici quelques-unes des actions clés que vous pouvez effectuer sur des objets d
 
 Les utilisateurs ajoutés au groupe `forms-power-users` peuvent créer des scripts et modifier des scripts existants. Les utilisateurs appartenant au groupe [!DNL forms-users] peuvent utiliser les scripts, mais ne peuvent ni en créer ni en modifier.
 
-Reportez-vous à l’article [ Différence entre l’éditeur de règles de base et l’éditeur de règles des composants principaux ](/help/forms/rule-editor-core-components-difference-tables.md) pour une comparaison détaillée.
+Reportez-vous à l’article [&#x200B; Différence entre l’éditeur de règles de base et l’éditeur de règles des composants principaux &#x200B;](/help/forms/rule-editor-core-components-difference-tables.md) pour une comparaison détaillée.
 
 <!--
 ## Difference between Rule editor in Core Components and Rule Editor in Foundation Components

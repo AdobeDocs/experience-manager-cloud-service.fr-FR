@@ -37,7 +37,7 @@ ht-degree: 68%
 * MS Dynamics OData Cloud Service (OData Service)-->
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
-<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  Le Cloud Service OData de MS Dynamics (service OData) est disponible avec tous les modes d’exécution. Pour plus d’informations sur la configuration des modes d’exécution pour une instance [!DNL Experience Manager], voir [Modes d’exécution](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr#runmodes).
+&#x200B;<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  Le Cloud Service OData de MS Dynamics (service OData) est disponible avec tous les modes d’exécution. Pour plus d’informations sur la configuration des modes d’exécution pour une instance [!DNL Experience Manager], voir [Modes d’exécution](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr#runmodes).
 
 AEM as a Cloud Service propose différentes actions d’envoi prêtes à l’emploi pour gérer les envois de formulaires. Pour en savoir plus sur ces options, consultez l’article [Action d’envoi de formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md).
 

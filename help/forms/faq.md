@@ -40,7 +40,7 @@ Vous pouvez télécharger la documentation de référence API Java™ depuis [!
    1. Ouvrez le fichier index.html pour visualiser la documentation de référence API.
 
 * **Où puis-je obtenir une référence de l’API [!DNL JavaScript™] pour les formulaires adaptatifs ?**
-Vous pouvez télécharger la documentation de référence de l’API [!DNL JavaScript™] depuis [!DNL  Maven Central Repository]. Pour télécharger :
+Vous pouvez télécharger la documentation de référence de l’API [!DNL JavaScript™] depuis [!DNL &#x200B; Maven Central Repository]. Pour télécharger :
    1. Ouvrez [[!DNL Maven Central Repository]](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api).
    1. Recherchez et ouvrez la page contenant la dernière version de [!DNL Experience Manager Forms] SDK.
    1. Cliquez sur l’option Afficher tout pour vue tous les fichiers.
@@ -50,7 +50,7 @@ Vous pouvez télécharger la documentation de référence de l’API [!DNL JavaS
 * **Puis-je continuer à utiliser les thèmes et modèles existants ?**
 Oui, vous pouvez continuer à utiliser les thèmes créés avec des formulaires AEM 6.4 et des formulaires AEM 6.5 après avoir utilisé l’[Utilitaire de migration](migrate-to-forms-as-a-cloud-service.md) pour les déplacer vers [!DNL AEM Forms] as a Cloud Service.
 
-  Vous pouvez également créer un projet basé sur [Archetype](setup-local-development-environment.md#forms-cloud-service-local-development-environment)[!DNL AEM Forms] as a Cloud Service et utiliser les exemples de thèmes et de modèles inclus.
+  Vous pouvez également créer un projet basé sur [Archetype](setup-local-development-environment.md#forms-cloud-service-local-development-environment) [!DNL AEM Forms] as a Cloud Service et utiliser les exemples de thèmes et de modèles inclus.
 
 * **Puis-je produire des données conformes au schéma ?**
 Oui, vous pouvez créer un formulaire adaptatif pour produire des données conformes au schéma.
