@@ -5,10 +5,11 @@ keywords: créateur de formulaires, AEM forms, créateur de formulaires, créer 
 feature: Adaptive Forms, Core Components, Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: choose-form-builder-guide
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '954'
 ht-degree: 9%
 
 ---
@@ -104,7 +105,7 @@ L’éditeur universel offre deux approches de création puissantes pour Edge De
 | **Aspect** | **Foundation** | **Base** | **Éditeur universel** | **Basé sur les documents** |
 |------------|----------------|----------|---------------------|-------------------|
 | **Publication** | Seulement AEM | AEM + Edge Delivery + API découplées | Edge Delivery | Edge Delivery |
-| **Performances** | Standard | Amélioré | Scores Lighthouse élevés | Scores Lighthouse élevés |
+| **Performances** | Standard | Améliorés | Scores Lighthouse élevés | Scores Lighthouse élevés |
 | **Optimisation du référencement** | Réglages de base | Bon | Excellent | Excellent |
 | **Réactivité mobile** | Bon | Excellent | Excellent | Excellent |
 

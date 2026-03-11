@@ -5,11 +5,12 @@ contentOwner: khsingh
 role: User
 feature: Adaptive Forms
 index: false
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
-source-git-commit: 5ee37f59bb959e0549c0541c6568aa8c135c330e
-workflow-type: ht
-source-wordcount: '975'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '981'
+ht-degree: 99%
 
 ---
 
@@ -28,7 +29,7 @@ Oui, vous pouvez créer un formulaire adaptatif XFA sur une instance de Cloud Se
 * **Puis-je migrer du contenu d’un environnement On-Premise ou [!DNL Adobe-Managed Services] vers un environnement [!DNL Forms] as a Cloud Service ?**
 Oui, vous pouvez migrer votre code, votre contenu et vos ressources personnalisés depuis les environnements On-Premise ou [!DNL Adobe-Managed Services] vers un environnement [!DNL Forms] as a Cloud Service. Pour obtenir des instructions détaillées, voir [Migrer vers Forms as a Cloud Service](migrate-to-forms-as-a-cloud-service.md).
 
-<!-- You can use package manager or Experience Manager UI to [export and import Forms and related assets](import-export-forms-templates.md), use the migration utility to make your existing assets compatible with [!DNL Forms] as a Cloud Service, use the [Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=fr#best-practices-analyzer) tool to find the features and APIs that require changes and updated before migration, and use the [Content Transfer Tools](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/moving/home.html) to move your custom code without refactoring it. -->
+<!-- You can use package manager or Experience Manager UI to [export and import Forms and related assets](import-export-forms-templates.md), use the migration utility to make your existing assets compatible with [!DNL Forms] as a Cloud Service, use the [Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#best-practices-analyzer) tool to find the features and APIs that require changes and updated before migration, and use the [Content Transfer Tools](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/home.html) to move your custom code without refactoring it. -->
 
 * **Où puis-je obtenir la documentation de référence des API [!DNL Java™] d’AEM [!DNL Forms] as a Cloud Service ?**
 Vous pouvez télécharger la documentation de référence API Java™ depuis [!DNL Maven Central Repository]. Pour télécharger :
@@ -49,7 +50,7 @@ Vous pouvez télécharger la documentation de référence de l’API [!DNL JavaS
 * **Puis-je continuer à utiliser les thèmes et modèles existants ?**
 Oui, vous pouvez continuer à utiliser les thèmes créés avec des formulaires AEM 6.4 et des formulaires AEM 6.5 après avoir utilisé l’[Utilitaire de migration](migrate-to-forms-as-a-cloud-service.md) pour les déplacer vers [!DNL AEM Forms] as a Cloud Service.
 
-  Vous pouvez également créer un projet basé sur [Archetype](setup-local-development-environment.md#forms-cloud-service-local-development-environment) [!DNL AEM Forms] as a Cloud Service et utiliser les exemples de thèmes et de modèles inclus.
+  Vous pouvez également créer un projet basé sur [Archetype](setup-local-development-environment.md#forms-cloud-service-local-development-environment)[!DNL AEM Forms] as a Cloud Service et utiliser les exemples de thèmes et de modèles inclus.
 
 * **Puis-je produire des données conformes au schéma ?**
 Oui, vous pouvez créer un formulaire adaptatif pour produire des données conformes au schéma.
@@ -62,7 +63,7 @@ Par défaut, la mise en cache des fonctionnalités de contenu sécurisé est dé
 
 * **J’ai un formulaire adaptatif localisé ; il n’effectue pas de rendu de la version localisée ? Quelle pourrait en être la cause et comment la résoudre ?**
 
-  La convention d’URL des formulaires adaptatifs localisés prend désormais en charge la spécification d’un paramètre régional dans l’URL. La nouvelle convention d’URL permet de mettre en cache les formulaires localisés sur un Dispatcher ou un CDN. Sur l’environnement Cloud Service, utilisez le format d’URL `http://host:port/content/forms/af/<afName>.<locale>.html` pour demander une version localisée d’un formulaire adaptatif au lieu de `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`. Adobe recommande d’utiliser la mise en cache du Dispatcher ou du CDN. Cela permet d’améliorer la vitesse de rendu des formulaires préremplis.
+  La convention d’URL des formulaires adaptatifs localisés prend désormais en charge la spécification des paramètres régionaux dans l’URL. La nouvelle convention d’URL permet de mettre en cache les formulaires localisés sur un Dispatcher ou un CDN. Sur l’environnement Cloud Service, utilisez le format d’URL `http://host:port/content/forms/af/<afName>.<locale>.html` pour demander une version localisée d’un formulaire adaptatif au lieu de `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`. Adobe recommande d’utiliser la mise en cache du Dispatcher ou du CDN. Cela permet d’améliorer la vitesse de rendu des formulaires préremplis.
 
 * **J’ai mis à jour un formulaire ; la version mise à jour n’est pas disponible pour les clients ?**
 Par défaut, le CDN actualise le cache toutes les 5 minutes, patiente pendant 5 minutes, puis recherche la version mise à jour.
@@ -100,11 +101,11 @@ Créez le formulaire adaptatif basé sur le schéma JSON de l’environnement Ex
 
 * **Is there any AEM Forms as a Cloud Service connector for Microsoft Power Automate?**
 
-  Yes, Adobe provides an Adobe Experience Manager connector to access [Adobe Experience Manager Forms - Communication capabilities](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=fr) through Microsoft Power Automate. You can create a PDF document that is based on a form design and XML form data or create PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL) and other Printer Definition Language documents. 
+  Yes, Adobe provides an Adobe Experience Manager connector to access [Adobe Experience Manager Forms - Communication capabilities](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html) through Microsoft Power Automate. You can create a PDF document that is based on a form design and XML form data or create PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL) and other Printer Definition Language documents. 
 
   You can get started with Adobe Experience Manager easily with just a few steps:
 
-  1. Generate the Service credentials: Use Adobe Experience Manager Developer Console to [generate](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=fr&#generate-service-credentials) the service credentials.  
+  1. Generate the Service credentials: Use Adobe Experience Manager Developer Console to [generate](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?#generate-service-credentials) the service credentials.  
   
   1. Setup your connection: Add your service credentials to the Adobe Experience Manager Connector. You can get crdential from service credential JSON and copy these credential details to your one-time connection setup:
 

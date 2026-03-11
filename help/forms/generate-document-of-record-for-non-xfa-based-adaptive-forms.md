@@ -2,11 +2,12 @@
 title: Générer un PDF d’envoi (anciennement Document d’enregistrement) pour AEM Forms
 description: Découvrez comment générer un PDF d’envoi à partir des envois de formulaire pour le Forms adaptatif. Créez un PDF du formulaire envoyé à des fins d’archivage ou de référence.
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 7a033951bdf94e5b9d7553be77697d47121eb826
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '4202'
+source-wordcount: '4208'
 ht-degree: 51%
 
 ---
@@ -29,7 +30,7 @@ Lorsqu’un formulaire est rempli ou envoyé, vous pouvez conserver un enregistr
 
 ![Submission PDF (anciennement Document d’enregistrement)](assets/document-of-record.png)
 
-Pour créer un PDF de soumission, un modèle XFA ou Acroform est fusionné avec les données collectées via un formulaire adaptatif. Vous pouvez générer un PDF d’envoi automatiquement ou à la demande.
+Pour créer un PDF d’envoi, un modèle basé sur XFA ou Acrobat est fusionné avec les données collectées via un formulaire adaptatif. Vous pouvez générer un PDF d’envoi automatiquement ou à la demande.
 L’option à la demande vous permet de spécifier un modèle XFA ou Acrobat personnalisé pour donner une apparence personnalisée à votre PDF d’envoi.
 
 Vous pouvez :
@@ -93,7 +94,7 @@ Pour configurer un formulaire adaptatif afin de générer automatiquement un PDF
 
 ## Liaison des composants de formulaire adaptatif aux champs de modèle {#bind-adaptive-form-components-with-template-fields}
 
-Liez les champs de formulaire adaptatif aux champs de modèle pour afficher les données de formulaire capturées dans le champ de PDF d’envoi correspondant. Pour lier des composants de formulaire adaptatif aux champs de modèle de PDF d’envoi correspondants :
+Liez les champs de formulaire adaptatif aux champs de modèle pour afficher les données de formulaire capturées dans le champ PDF d’envoi correspondant. Pour lier les composants de formulaire adaptatif aux champs de modèle PDF d’envoi correspondants :
 
 1. Ouvrez le formulaire adaptatif, configuré pour utiliser un modèle de formulaire personnalisé, pour le modifier.
 
@@ -110,7 +111,7 @@ Liez les champs de formulaire adaptatif aux champs de modèle pour afficher les 
 In the following video, Adaptive Form components are bound with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
-Vous pouvez utiliser Envoyer un e-mail, l&#39;action d&#39;envoi du workflow de Experience Manager conjointement avec l&#39;étape [Document de référence et d&#39;autres actions d&#39;envoi](configuring-submit-actions.md) pour recevoir un PDF d&#39;envoi.
+Vous pouvez utiliser l’action de soumission de workflow Experience Manager Envoyer un e-mail conjointement avec l’étape [Document d’enregistrement) et d’autres actions de soumission](configuring-submit-actions.md) pour recevoir une PDF de soumission.
 
 ## Mises à jour incrémentielles du modèle de PDF d’envoi {#document-of-record-template-incremental-updates}
 
@@ -254,7 +255,7 @@ Le tableau suivant décrit les composants de formulaire adaptatif et les composa
    <td>Pièce jointe</td>
    <td> </td>
    <td>false</td>
-   <td>Non disponible dans le modèle de PDF de soumission. Disponible uniquement dans le PDF de soumission par le biais de pièces jointes.</td>
+   <td>Non disponible dans le modèle PDF d’envoi. Disponible uniquement dans Submission PDF par le biais de pièces jointes.</td>
   </tr>
  </tbody>
 </table>
@@ -321,10 +322,10 @@ Pour créer un modèle de base, procédez comme suit dans Forms Designer.
 1. Sélectionnez **[!UICONTROL Modèle de base de DE]**.
 1. Cliquez sur **[!UICONTROL Suivant]** et renseignez les informations nécessaires.
 
-1. (Facultatif) Modifiez le style et l’apparence des champs que vous souhaitez appliquer aux champs dans le PDF d’envoi.
+1. (Facultatif) Modifiez le style et l’aspect à appliquer aux champs du PDF d’envoi.
 1. Enregistrez le formulaire.
 
-Vous pouvez désormais utiliser le formulaire enregistré comme modèle de base pour le PDF de soumission. Ne modifiez ou ne supprimez aucun des scripts du modèle de base.
+Vous pouvez désormais utiliser le formulaire enregistré comme modèle de base pour Submission PDF. Ne modifiez ou ne supprimez aucun des scripts du modèle de base.
 
 **Modification du modèle de base**
 
@@ -346,12 +347,12 @@ Pour localiser les informations de branding que vous saisissez dans l’onglet D
 
    1. **Propriétés de base** :
       * **Modèle** : si vous choisissez de sélectionner un modèle personnalisé, recherchez et sélectionnez un fichier XDP sur votre serveur [!DNL AEM Forms]. Si vous souhaitez utiliser un modèle qui n’est pas sur votre serveur [!DNL AEM Forms], vous devriez au préalable charger le fichier XDP sur votre serveur [!DNL AEM Forms].
-      * **Couleur d&#39;accentuation** : couleur de rendu du texte d&#39;en-tête et des lignes de séparation dans le PDF d&#39;envoi.
-      * **Famille de polices** : famille de polices du texte dans le PDF d&#39;envoi.
+      * **Couleur d’accentuation** : la couleur dans laquelle le texte de l’en-tête et les lignes de séparation sont affichés dans le PDF d’envoi.
+      * **Famille de polices** : famille de polices du texte dans la PDF d’envoi.
 
         >[!NOTE]
         >
-        > AEM Forms offre une variété de polices intégrées qui s’intègrent facilement aux fichiers du PDF. Pour afficher la liste des polices prises en charge, [cliquez ici](/help/forms/supported-out-of-the-box-fonts.md).
+        > AEM Forms propose toute une gamme de polices intégrées qui s’intègrent de manière transparente aux fichiers PDF. Pour afficher la liste des polices prises en charge, [cliquez ici](/help/forms/supported-out-of-the-box-fonts.md).
 
       * **Inclure les objets de formulaire qui ne sont pas liés au modèle de données** : la définition de la propriété inclut des champs non liés du formulaire adaptatif basé sur un schéma dans le PDF d’envoi.
       * **Exclure les champs masqués du document d’enregistrement** : la définition de la propriété identifie les champs masqués à exclure du PDF d’envoi.
@@ -453,15 +454,15 @@ Les paramètres du composant Document d’enregistrement sont disponible sous se
 
 **Paramètres sur le terrain**
 
-* **Exclure du document d&#39;enregistrement** : la définition de la propriété true exclut le champ du PDF d&#39;envoi. Il s’agit d’une propriété pouvant faire l’objet d’un script appelée « `excludeFromDoR` ». Son comportement dépend de la propriété au niveau du formulaire **Exclure des champs du document d’enregistrement (DE) s’il est masqué**.
+* **Exclure du document d’enregistrement** : la définition de la propriété sur true exclut le champ du PDF d’envoi. Il s’agit d’une propriété pouvant faire l’objet d’un script appelée « `excludeFromDoR` ». Son comportement dépend de la propriété au niveau du formulaire **Exclure des champs du document d’enregistrement (DE) s’il est masqué**.
 
-* **Afficher le panneau comme table :** si le panneau contient moins de 6 champs, la propriété affiche le panneau comme table dans le PDF d&#39;envoi. Applicable au panneau uniquement.
+* **Afficher le panneau sous forme de tableau :** la définition de cette propriété affiche le panneau sous forme de tableau dans le PDF d’envoi s’il contient moins de 6 champs. Applicable au panneau uniquement.
 * **Exclure le titre du document d’enregistrement** : la définition de la propriété exclut le titre du panneau/tableau du PDF d’envoi. Applicable au panneau et à la table uniquement.
 * **Exclure la description du document d’enregistrement :** la définition de la propriété exclut la description du panneau/tableau de la PDF d’envoi. Applicable au panneau et à la table uniquement.
 
 **Paramètres des niveaux de formulaires**
 
-* **Inclure les champs non liés dans DoR:** La définition de la propriété inclut les champs non liés du formulaire adaptatif basé sur un schéma dans le PDF d&#39;envoi. Par défaut, le paramètre est true.
+* **Inclure les champs non liés dans le document d’enregistrement :** la définition de la propriété inclut les champs non liés du schéma basé sur le formulaire adaptatif dans le PDF d’envoi. Par défaut, le paramètre est true.
 * **Exclure les champs du document d’enregistrement s’ils sont masqués :** définissez la propriété pour exclure les champs masqués du PDF d’envoi lors de l’envoi du formulaire. Lorsque vous activez [Revalider sur le serveur](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), le serveur recalcule les champs masqués avant d’exclure ces champs du PDF d’envoi.
 
 ## Utiliser un fichier XCI personnalisé

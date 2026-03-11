@@ -4,10 +4,11 @@ description: La communication interactive permet aux entreprises de concevoir et
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: b30b3634-0457-4c29-84d3-78f1429b98d1
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '707'
 ht-degree: 7%
 
 ---
@@ -29,7 +30,7 @@ Pour utiliser la communication interactive, assurez-vous que votre environnement
 
 ### Vérification du navigateur
 
-Pour connaître les navigateurs et les plateformes clientes pris en charge, consultez l’article associé [Plateformes clientes prises en charge](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/overview/supported-platforms)
+Pour connaître les navigateurs et les plateformes clientes pris en charge, consultez l’article associé [Plateformes clientes prises en charge](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/supported-platforms)
 
 >[!NOTE]
 >
@@ -45,7 +46,7 @@ L’accès aux fonctionnalités de l’éditeur IC est régi par [rôles utilisa
 | **Auteur du formulaire** | Crée et modifie des communications interactives. | Créer, modifier, prévisualiser et publier des CI. |
 | **Créateur de modèles** | Conçoit des modèles réutilisables pour les communications interactives. | Créer et verrouiller des modèles, définir des mises en page. |
 | **Administrateur** | Gère l’accès utilisateur, les autorisations et les configurations. | Attribuez des rôles, gérez des modèles et publiez des ID. |
-| **Auteur FDM** | [Crée et gère des modèles de données de formulaire (FDM)](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models) pour l’intégration de données. | Créer, modifier et configurer des sources de données et des modèles. |
+| **Auteur FDM** | [Crée et gère des modèles de données de formulaire (FDM)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models) pour l’intégration de données. | Créer, modifier et configurer des sources de données et des modèles. |
 
 >[!NOTE]
 >

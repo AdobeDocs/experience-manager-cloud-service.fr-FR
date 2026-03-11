@@ -4,11 +4,12 @@ description: Définissez la position des composants AEM Forms, apprenez à accé
 role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 89%
+source-wordcount: '1144'
+ht-degree: 88%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 89%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/resize-using-layout-mode.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/resize-using-layout-mode.html) |
 | AEM as a Cloud Service | Cet article |
 
 L’interface de création de formulaires adaptatifs vous permet de redimensionner des composants en mode Mise en page. Faites glisser les points bleus dans les colonnes pour définir les points de départ et de fin afin de positionner les composants. Les points bleus s’affichent après avoir appuyé sur le composant dans la grille réactive. La grille réactive est composée de 12 colonnes égales. L’ombrage blanc et bleu différencie une colonne d’une l’autre.
@@ -31,7 +32,7 @@ Vous pouvez utiliser le mode Mise en page afin de redimensionner les composants 
 
 Sélectionnez **[!UICONTROL Mise en page]** dans la liste déroulante qui s’affiche en haut de l’interface de création de formulaires adaptatifs à côté de l’option **[!UICONTROL Prévisualiser]**. Le formulaire s’affiche en mode Mise en page.
 
-1. Connectez-vous à l’instance d’auteur [!DNL Adobe Experience Manager] et accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
+1. Connectez-vous à l’instance de création [!DNL Adobe Experience Manager] et accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
 1. Créez un formulaire ou ouvrez un [formulaire adaptatif](creating-adaptive-form.md) existant.
 1. Sélectionnez **[!UICONTROL Mise en page]** dans la liste déroulante qui s’affiche en haut à côté de l’option **[!UICONTROL Prévisualiser]**. Le formulaire s’affiche en mode Mise en page.
 

@@ -4,11 +4,12 @@ description: Résolution des problèmes d’installation et de configuration de 
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 69%
+source-wordcount: '219'
+ht-degree: 68%
 
 ---
 

@@ -1,12 +1,13 @@
 ---
-title: Quelles sont les considérations, les problèmes connus et les bonnes pratiques dans AEM Forms ?
-description: Considérations sur les problèmes connus et les bonnes pratiques pour les API de communication AEM Forms.
+title: Quels sont les points à prendre en compte, les problèmes connus et les bonnes pratiques dans AEM Forms ?
+description: Considérations, problèmes connus et bonnes pratiques relatives aux API de communication d’AEM Forms.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1733'
+source-wordcount: '1739'
 ht-degree: 94%
 
 ---
@@ -71,7 +72,7 @@ La marge non imprimable de 0,25 pouces par défaut n’est pas exacte pour les 
 
 Assurez-vous toujours d’utiliser le fichier XDC approprié pour l’imprimante. Par exemple, évitez de choisir un fichier XDC pour une imprimante 300 dpi et d’envoyer le document vers une imprimante 200 dpi.
 
-### Scripts pour les formulaires XFA (XDP/PDF uniquement) {#scripts}
+### Scripts pour les formulaires XFA (XDP/PDF) uniquement {#scripts}
 
 Un design de formulaire utilisé avec les API Communications peut contenir des scripts qui s’exécutent sur le serveur. Assurez-vous qu’un design de formulaire ne contient pas de scripts exécutés sur le client. Pour plus d’informations sur la création de scripts de design de formulaire, voir l’[aide de Designer](use-forms-designer.md).
 
@@ -82,7 +83,7 @@ Un design de formulaire utilisé avec les API Communications peut contenir des s
 
 Pour concevoir un formulaire qui utilise des polices installées sur l’imprimante, choisissez dans Designer un nom de police correspondant aux polices disponibles sur l’imprimante. La liste des polices prises en charge pour PCL ou PostScript se trouve dans les profils d’appareils correspondants (fichiers XDC). Vous pouvez également créer un mappage des polices pour mapper les polices non installées sur l’imprimante aux polices installées sur l’imprimante d’un autre nom de police. Par exemple, dans un scénario PostScript, les références à la police Arial® peuvent être mappées à la police Helvetica® installée sur l’imprimante.
 
-Si une police est installée sur un ordinateur client, elle est disponible dans la liste déroulante de Designer. Si la police n’est pas installée, il est nécessaire de la spécifier manuellement. L’option &quot;Remplacer définitivement les polices non disponibles&quot; dans Designer peut être désactivée. Dans le cas contraire, lorsque le fichier XDP est enregistré dans Designer, le nom de la police de substitution est écrit dans le fichier XDP. Cela signifie que la police installée sur l’imprimante n’est pas utilisée.
+Si une police est installée sur un ordinateur client, elle est disponible dans la liste déroulante de Designer. Si la police n’est pas installée, il est nécessaire de la spécifier manuellement. L’option « Remplacer définitivement les polices non disponibles » dans Designer peut être désactivée. Dans le cas contraire, lorsque le fichier XDP est enregistré dans Designer, le nom de la police de substitution est écrit dans le fichier XDP. Cela signifie que la police installée sur l’imprimante n’est pas utilisée.
 
 Il existe deux types de polices OpenType®. Un type est une police OpenType® TrueType prise en charge par PCL. L’autre est l’OpenType CFF®. Les sorties PDF et PostScript prennent en charge les polices Type-1, TrueType et OpenType® incorporées. La sortie PCL prend en charge les polices TrueType incorporées.
 
@@ -144,7 +145,7 @@ Le tableau suivant indique les options XCI.
 | config/present/pdf/scriptModel | Contrôle si des informations spécifiques à XFA sont incluses dans le document PDF de sortie. |
 | config/present/common/data/adjustData | Contrôle si l’application XFA ajuste les données après la fusion. |
 | config/present/pdf/renderPolicy | Contrôle si la génération du contenu de la page est effectuée sur le serveur ou différée au client. |
-| config/present/common/locale | Spécifie le paramètre régional par défaut utilisé dans le document de sortie. |
+| config/present/common/locale | Spécifie les paramètres régionaux par défaut utilisés dans le document de sortie. |
 | config/present/destination | Lorsque contenu par un élément présent, indique le format de sortie. Lorsqu’il est contenu par un élément openAction, spécifie l’action à effectuer lors de l’ouverture du document dans un client interactif. |
 | config/present/output/type | Spécifie le type de compression à appliquer à un fichier ou le type de sortie à produire. |
 | config/present/common/temp/uri | Spécifie l’URI du formulaire. |
@@ -208,8 +209,8 @@ Oui, vous pouvez exécuter plusieurs opérations par lots simultanément. Pour �
 
 >[!MORELIKETHIS]
 >
->* [Présentation des communications as a Cloud Service AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [&#x200B; Architecture as a Cloud Service AEM Forms pour les API de communication et de Forms adaptatifs](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Présentation des communications AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [Architecture AEM Forms as a Cloud Service pour les API Adaptive Forms et Communication](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [Traitement des communications - API synchrones](/help/forms/aem-forms-cloud-service-communications.md)
->* [Traitement des communications - API de lot](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Traitement des communications - API par lots](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
 

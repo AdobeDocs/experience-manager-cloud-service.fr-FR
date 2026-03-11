@@ -1,13 +1,14 @@
 ---
 title: Comment utiliser Forms as a Cloud Service pour fusionner des données avec des modèles XDP et PDF ou générer une sortie aux formats PCL, ZPL et PostScript ?
 description: Fusionner automatiquement les données avec des modèles XDP et PDF ou générer une sortie aux formats PCL, ZPL et PostScript
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
 feature: Adaptive Forms,APIs & Integrations
 role: Admin, Developer, User
-source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 79%
+source-wordcount: '731'
+ht-degree: 78%
 
 ---
 

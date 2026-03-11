@@ -6,11 +6,12 @@ role: User, Developer, Admin
 features: core components
 hide: true
 hidefromtoc: true
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1074'
 ht-degree: 8%
 
 ---
@@ -106,7 +107,7 @@ Une fois l’installation terminée, les outils de modernisation d’AEM sont di
 Pour activer et utiliser les outils de modernisation AEM pour votre environnement AEM, il est important de mapper les règles de migration des composants de base aux composants principaux :
 
 1. Connectez-vous à votre instance de création.
-1. Accédez à `http://[host]:[port]/system/console/configMgr`.
+1. Accéder à `http://[host]:[port]/system/console/configMgr`
 1. Recherchez et modifiez le `AEM Modernize Tools - Component Rewrite Rule Service`.
 1. Ajoutez le `Component Rule Paths` en tant que `/apps/forms-modernizer/rules`.
 1. Cliquez sur **Enregistrer** pour enregistrer les modifications.
@@ -121,7 +122,7 @@ Pour activer et utiliser les outils de modernisation AEM pour votre environnemen
 
 1. Sélectionnez l’option **[!UICONTROL Conversion Forms]**.
 
-   ![Sélectionnez l’option Conversion Forms &#x200B;](/help/forms/assets/aem-modernize-forms-conversion.png)
+   ![Sélectionnez l’option Conversion Forms ](/help/forms/assets/aem-modernize-forms-conversion.png)
 
 1. Cliquez sur **Créer** pour créer une tâche.
 
@@ -165,5 +166,5 @@ Vous pouvez maintenant voir que le formulaire adaptatif créé sur les composant
 
 ## Bonnes pratiques {#best-practices}
 
-* Assurez-vous que vos formulaires basés sur les composants de base utilisent uniquement les composants disposant d’un [Composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) équivalent. Si vous utilisez des composants de base qui n’ont pas de composant principal équivalent, le composant de base n’est pas converti. Par conséquent, il ne fonctionne pas correctement lors de la création d’un formulaire
+* Assurez-vous que vos formulaires basés sur les composants de base utilisent uniquement les composants disposant d’un [Composants principaux](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) équivalent. Si vous utilisez des composants de base qui n’ont pas de composant principal équivalent, le composant de base n’est pas converti. Par conséquent, il ne fonctionne pas correctement lors de la création d’un formulaire
 * Assurez-vous que les règles de conversion des composants de base en composants principaux sont au format XML.

@@ -1,42 +1,43 @@
 ---
 title: Comment télécharger et installer Forms Designer pour créer des modèles de documents d’enregistrement ?
-description: Utilisez Forms Designer pour créer des modèles XDP et de PDF Form qui servent de modèle pour un document d’enregistrement.
-keywords: Installation de Designer, installation de Forms Designer, configuration requise pour l’installation de Forms Designer
+description: Utilisez Forms Designer pour créer des modèles de formulaires XDP et PDF qui servent de modèle pour un document d’enregistrement.
+keywords: Installation de Designer, Installation de Forms Designer, Conditions requises pour installer Forms Designer
 feature: Adaptive Forms, Forms Designer
 role: Admin, Developer, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 68%
+source-wordcount: '415'
+ht-degree: 67%
 
 ---
 
-# Téléchargement et installation de Forms Designer {#installing-and-configuring-designer}
+# Télécharger et installer Forms Designer {#installing-and-configuring-designer}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | Cet article |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/installing-configuring-designer.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/installing-configuring-designer.html) |
 
-Designer est un outil de conception de formulaires graphiques de type pointer-cliquer qui simplifie la création de modèles de formulaires XDP et PDF. Vous pouvez concevoir un modèle de formulaire, définir sa logique et respecter des exigences légales strictes. Un formulaire XDP et PDF servent de modèle de document d’enregistrement dans un formulaire adaptatif. Ces modèles de formulaires sont différents des [modèles de formulaire adaptatif](template-editor.md).
+Designer est un outil de conception de formulaires graphiques de type pointer-cliquer qui simplifie la création de modèles de formulaires XDP et PDF. Vous pouvez concevoir un modèle de formulaire, définir sa logique et respecter des exigences légales strictes. Un formulaire XDP et PDF servent de modèle de document d’enregistrement dans un formulaire adaptatif. Ils diffèrent des [modèles de formulaires adaptatifs](template-editor.md).
 
 ## Conditions préalables {#pre-requisites}
 
-Pour installer la dernière version d’AEM Forms Designer 64 bits ou 32 bits, vous avez besoin des logiciels et du matériel minimal suivants pour installer et configurer Designer :
+Pour installer la dernière version d’AEM Forms Designer 64 bits ou 32 bits, vous avez besoin des logiciels et du matériel minimum suivants pour installer et configurer Designer :
 
 +++ Designer 64 bits (recommandé)
 
 * [!DNL Microsoft® Windows® 2016 Server] ou [!DNL Microsoft® Windows® 2019 Server], et [!DNL Microsoft® Windows® 10]
-* 2 Go de RAM au minimum
+* 2 Go minimum de RAM
 * 20 Go d’espace disque
-* Mémoire graphique - 128 Mo de GPU (256 Mo est recommandé)
+* Mémoire graphique - 128 Mo de GPU (256 Mo recommandés)
 * 2,35 Go d’espace disponible sur le disque dur
 * Résolution d’écran de 1 024 x 768 pixels ou plus
 * Accélération matérielle de la vidéo (facultatif)
 * Acrobat Pro DC, Acrobat Standard DC ou Adobe Acrobat Reader DC.
 * Droits d’administrateur pour l’installation de Designer.
-* [!DNL Microsoft® Visual C++ 2019] (VC 14.28 ou version ultérieure) Exécution 64 bits
+* Exécution [!DNL Microsoft® Visual C++ 2019] (VC 14.28 ou supérieur) 64 bits
 
 +++
 
@@ -44,7 +45,7 @@ Pour installer la dernière version d’AEM Forms Designer 64 bits ou 32 bits, v
 
 * [!DNL Microsoft® Windows® 2016 Server], [!DNL Microsoft® Windows® 2019 Server] ou [!DNL Microsoft® Windows® 10]
 * 1 Go de RAM pour un système d’exploitation 32 bits ou 2 Go de RAM pour un système d’exploitation 64 bits
-* 16 Go d’espace disque pour un système d’exploitation 32 bits ou 20 Go d’espace disque pour un système d’exploitation 64 bits
+* Espace disque de 16 Go pour le système d’exploitation 32 bits ou espace disque de 20 Go pour le système d’exploitation 64 bits
 * Mémoire graphique – 128 Mo de GPU (256 Mo recommandé)
 * 2,35 Go d’espace disponible sur le disque dur
 * Résolution d’écran de 1 024 x 768 pixels ou plus
@@ -66,7 +67,7 @@ Pour installer Designer, procédez comme suit :
 1. Téléchargez Designer à partir de [Distribution logicielle](https://experience.adobe.com/downloads).
 1. Double-cliquez sur setup.exe pour exécuter le programme d’installation.
 1. Continuez et fournissez vos détails sur l’écran Personnalisation.
-1. Si vous acceptez les termes du contrat de licence, appuyez sur **[!UICONTROL Suivant]** pour continuer.
+1. Si vous acceptez les termes du contrat de licence, cliquez sur **[!UICONTROL Suivant]** pour continuer.
 1. (Facultatif) Modifiez le chemin d’installation par défaut, si vous voulez installer Designer à l’emplacement de votre choix. Cliquez sur **[!UICONTROL Suivant]**.
 1. Cliquez sur **[!UICONTROL Précédent]** pour modifier les préférences. Pour installer Designer, cliquez sur **[!UICONTROL Installer]**.
 1. Cliquez sur **[!UICONTROL Terminer]** à la fin de l’installation.

@@ -1,12 +1,13 @@
 ---
-title: Comment ajouter des variables aux étapes AEM workflow ?
-description: Découvrez comment créer une variable, définir une valeur pour la variable et l’utiliser dans les étapes de processus [!DNL AEM Forms]
+title: Comment ajouter des variables aux étapes de processus AEM ?
+description: 'Découvrez comment créer une variable, définir une valeur pour la variable et l’utiliser dans les étapes de processus [!DNL AEM Forms] '
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1930'
+source-wordcount: '1936'
 ht-degree: 98%
 
 ---
@@ -15,16 +16,16 @@ ht-degree: 98%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/variable-in-aem-workflows.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/variable-in-aem-workflows.html) |
 | AEM as a Cloud Service | Cet article |
 
-Une variable dans un modèle de processus permet de stocker une valeur en fonction de son type de données. Vous pouvez utiliser le nom de la variable dans n’importe quelle étape de processus pour extraire la valeur stockée dans la variable. Vous pouvez également utiliser des noms de variable pour définir des expressions afin de prendre des décisions de routage.
+Une variable dans un modèle de processus permet de stocker une valeur en fonction de son type de données. Vous pouvez utiliser le nom de la variable dans n’importe quelle étape de processus pour récupérer la valeur stockée dans la variable. Vous pouvez également utiliser des noms de variable pour définir des expressions afin de prendre des décisions de routage.
 
 Dans des modèles de processus AEM, vous pouvez :
 
 * [Créer une variable](variable-in-aem-workflows.md#create-a-variable) d’un type de données en fonction du type d’informations que vous souhaitez y stocker.
 * [Définir une valeur pour la variable](variable-in-aem-workflows.md#set-a-variable) à l’aide de l’étape de processus Définir la variable.
-* [Utiliser la variable](variable-in-aem-workflows.md#use-a-variable) dans toutes les étapes de processus [!DNL AEM Forms] pour extraire la valeur stockée et dans les étapes de division OU ou d’accès pour définir une expression de routage.
+* [Utiliser la variable](variable-in-aem-workflows.md#use-a-variable) dans toutes les étapes de processus [!DNL AEM Forms] pour récupérer la valeur stockée et dans les étapes de division OU ou d’accès pour définir une expression de routage.
 
 La vidéo ci-dessous indique comment créer, définir et utiliser des variables dans des modèles de processus AEM :
 
@@ -36,8 +37,8 @@ Les variables sont une extension de l’interface [MetaDataMap](https://helpx.ad
 
 Vous pouvez créer des variables à l’aide de la section Variables disponible dans le sidekick du modèle de processus. Les variables de processus AEM prennent en charge les types de données suivants :
 
-* **Types de données primitifs** : Long, Doublon, Boolean, Date et String
-* **Types de données complexes** : [Document](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), instance [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html) et modèle de données de formulaire.
+* **Types de données primitifs** : Long, Double, Booléen, Date et Chaîne
+* **Types de données complexes** : [Document](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), instance [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html) et modèle de données de formulaire.
 
 >[!NOTE]
 >
@@ -81,8 +82,8 @@ En fonction du type de données de la variable, vous pouvez définir la valeur d
 
 * **Expression** : utilisez l’option lorsque la valeur à utiliser est calculée en fonction d’une expression. L’expression est créée dans l’éditeur d’expressions fourni.
 
-* **Notation de point JSON** : l’option permet d’extraire une valeur d’une variable de type JSON ou FDM.
-* **XPATH** : l’option permet d’extraire une valeur d’une variable de type XML.
+* **Notation de point JSON** : l’option permet de récupérer une valeur d’une variable de type JSON ou FDM.
+* **XPATH** : l’option permet de récupérer une valeur d’une variable de type XML.
 
 * **Relatif à la charge** : utilisez l’option lorsque la valeur à enregistrer dans la variable est disponible à un chemin d’accès relatif à la charge utile.
 
@@ -142,7 +143,7 @@ Pour plus d’informations, voir [Éditeur de règles de formulaire adaptatif](r
 
 ## Utiliser une variable {#use-a-variable}
 
-Vous pouvez utiliser des variables pour extraire des entrées et des sorties ou enregistrer le résultat d’une étape. L’éditeur de processus fournit deux types d’étapes de processus :
+Vous pouvez utiliser des variables pour récupérer des entrées et des sorties ou enregistrer le résultat d’une étape. L’éditeur de processus fournit deux types d’étapes de processus :
 
 * Étapes de workflow avec prise en charge des variables
 * Étapes de workflow sans prise en charge des variables
@@ -189,9 +190,9 @@ Toutes les étapes de processus [!DNL AEM Forms] prennent en charge les variable
 
 Vous pouvez utiliser l’interface [MetaDataMap](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) pour accéder à des variables dans des étapes de processus qui ne prennent pas en charge les variables.
 
-#### Extraction de la valeur d’une variable {#retrieve-the-variable-value}
+#### Récupération de la valeur d’une variable {#retrieve-the-variable-value}
 
-Les API suivantes dans le script ECMA permettent d’extraire des valeurs de variables existantes en fonction du type de données :
+Les API suivantes dans le script ECMA permettent de récupérer des valeurs de variables existantes en fonction du type de données :
 
 | Type de données de la variable | API |
 |---|---|
@@ -204,7 +205,7 @@ Les API suivantes dans le script ECMA permettent d’extraire des valeurs de var
 
 **Exemple**
 
-Extrayez la valeur du type de données de chaîne à l’aide de l’API suivante :
+Récupérez la valeur du type de données de chaîne à l’aide de l’API suivante :
 
 ```javascript
 workItem.getWorkflowData().getMetaDataMap().get(accname, Packages.java.lang.String)

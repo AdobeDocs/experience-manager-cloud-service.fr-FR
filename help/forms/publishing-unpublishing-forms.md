@@ -1,5 +1,5 @@
 ---
-title: Comment publier et dépublier des formulaires et des documents dans AEM forms ?
+title: Comment publier et dépublier des formulaires et des documents dans AEM Forms ?
 description: Planifiez la publication et la dépublication de votre Forms adaptative. Les formulaires publiés sont répliqués sur l’instance de publication.
 content-type: reference
 topic-tags: publish
@@ -8,17 +8,18 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 9496e4f5-ed74-4b40-b8f9-17153170af66
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: '1334'
 ht-degree: 95%
 
 ---
 
 # Publication et dépublication de formulaires et documents{#publishing-and-unpublishing-forms-and-documents}
 
-[!DNL AEM Forms] vous permet de créer, de publier et de dépublier facilement des formulaires. Le serveur [!DNL AEM Forms] propose deux instances : auteur et publication. L’instance Auteur est destinée à la création et la gestion d’éléments et de ressources de formulaire. L’instance de Publish permet de conserver les ressources et les ressources associées qui sont disponibles pour les utilisateurs finaux.
+[!DNL AEM Forms] vous permet de créer, de publier et de dépublier facilement des formulaires. Le serveur [!DNL AEM Forms] propose deux instances : auteur et publication. L’instance de création est destinée à la création et la gestion d’éléments et de ressources de formulaire. L’instance de publication permet de conserver les ressources et les ressources connexes disponibles pour les utilisateurs finaux.
 
 ## Ressources prises en charge  {#supported-assets-nbsp}
 
@@ -28,7 +29,7 @@ ht-degree: 95%
 * Documents adaptatifs
 * Fragments de formulaire adaptatif
 * Thèmes
-* Modèles de formulaire <!-- (XFA forms) -->
+* Modèles de formulaires <!-- (XFA forms) -->
 * Formulaires PDF
 * Document (documents PDF plats)
 * Ensembles de formulaires
@@ -40,8 +41,8 @@ Lorsque vous sélectionnez un formulaire et que vous le publiez, ses éléments 
 
 Vos formulaires adaptatifs peuvent utiliser certaines configurations ou des paramètres et personnalisations qui ne sont pas publiés automatiquement. Il est recommandé de publier ou d’activer ces ressources avant de publier un formulaire adaptatif.
 
-* Modèles de formulaire adaptatif modifiable
-* Configurations de Cloud Service pour Adobe Sign, Typekit, reCAPTCHA et Form Data Model (FDM)
+* Modèles de formulaires adaptatifs modifiables
+* Configurations Cloud Service pour Adobe Sign, Typekit, reCAPTCHA et Form Data Model (FDM)
 * Les autres configurations de service cloud ne sont activées que si l’utilisateur ou l’utilisatrice dispose d’autorisations d’administration.
 * Personnalisations. Il s’agit notamment des éléments suivants, mais sans s’y limiter :
 

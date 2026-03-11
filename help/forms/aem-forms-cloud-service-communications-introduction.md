@@ -4,10 +4,11 @@ description: Générer, manipuler et sécuriser des documents avec les API de co
 Keywords: document generation, PDF manipulation, document security, batch processing, document conversion, PDF/A compliance
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2789'
+source-wordcount: '2795'
 ht-degree: 32%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 32%
 
 > **Disponibilité de la version**
 >
-> * **AEM 6.5** : [Présentation d’AEM Document Services](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=fr)
+> * **AEM 6.5** : [Présentation d’AEM Document Services](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
 > * **AEM as a Cloud Service** : cet article
 
 ## Présentation
@@ -87,9 +88,9 @@ Le tableau ci-dessous indique la différence entre les formats AFP et PDF :
 | **Contrôle de sortie** | Contrôle affiné de la mise en page des imprimantes | Mise en page visuelle optimisée pour l’écran et l’impression |
 | **Polices et graphiques** | Utilise les références de police et de ressource ; nécessite des outils de rendu pour l’interprétation. | Incorpore des polices et des images directement dans le fichier |
 
-L’API de génération de documents renvoie le document PDF ou le document AFP généré. Vous pouvez également charger les PDF générés dans Azure Blob Storage.
+L’API de génération de documents renvoie le document PDF ou le document AFP généré. Vous pouvez également charger les PDF générés dans le stockage Blob d’Azure.
 
-<span class="preview"> Le téléchargement des PDF générés à l’aide de l’API de génération de documents vers la fonctionnalité de stockage Blob Azure se trouve sous [Programme des utilisateurs précoces](/help/forms/early-access-ea-features.md). Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
+<span class="preview"> Le téléchargement des PDF générés à l’aide de l’API de génération de documents vers la fonctionnalité de stockage Blob d’Azure est effectué sous [Programme des utilisateurs précoces](/help/forms/early-access-ea-features.md). Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
 
 >
 >
@@ -293,7 +294,7 @@ Après l’intégration, pour activer la fonctionnalité Communications pour vot
 
 >[!NOTE]
 >
-> Pour activer et configurer les API de manipulation de documents, ajoutez la règle suivante à la configuration [Dispatcher &#x200B;](setup-local-development-environment.md#forms-specific-rules-to-dispatcher) :
+> Pour activer et configurer les API de manipulation de documents, ajoutez la règle suivante à la configuration [Dispatcher ](setup-local-development-environment.md#forms-specific-rules-to-dispatcher) :
 >
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`

@@ -4,10 +4,11 @@ description: La numérotation dynamique de page dans l’éditeur de communicati
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 9f29da7d-72ad-4737-9ae3-d5cdc4f5ed25
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '370'
 ht-degree: 4%
 
 ---
@@ -43,7 +44,7 @@ Les numéros de page s’affichent uniquement lors de l’aperçu PDF et affiche
 
 ## Fonctionnalités essentielles
 
-- Configuration De La Page De Principal **&#x200B;**
+- Configuration De La Page De Principal ****
 La numérotation de page peut être activée au niveau du gabarit de page. Le composant peut être placé n’importe où sur la zone de travail après avoir été déposé et personnalisé librement, car il prend en charge toutes les propriétés disponibles dans le composant de texte.
 
 - **Emplacement automatique :**

@@ -1,15 +1,16 @@
 ---
-title: Comment utiliser les expressions SOM dans les Forms adaptatives ?
-description: Découvrez comment extraire les expressions SOM d’un panneau dans Adaptive Forms.
+title: Comment utiliser les expressions SOM dans le Forms adaptatif ?
+description: Découvrez comment extraire des expressions SOM d’un panneau dans le Forms adaptatif.
 feature: Adaptive Forms, Foundation Components
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
+exl-id: 5c30d5ca-12b8-4cc6-aa95-bde562419827
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 93%
+source-wordcount: '350'
+ht-degree: 92%
 
 ---
-
 
 # Utiliser des expressions SOM dans des formulaires adaptatifs {#using-som-expressions-in-adaptive-forms}
 

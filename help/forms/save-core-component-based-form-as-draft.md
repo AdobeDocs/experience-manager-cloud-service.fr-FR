@@ -3,10 +3,11 @@ title: Comment enregistrer le formulaire adaptatif basé sur les composants prin
 description: Découvrez comment enregistrer le formulaire adaptatif basé sur les composants principaux en tant que brouillon. Comprendre également comment utiliser le composant Brouillons et envois pour répertorier les brouillons et les envois pour les utilisateurs connectés ?
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 role: User, Developer
-source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1357'
 ht-degree: 7%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 7%
 
 # Enregistrer des formulaires en tant que brouillons et les répertorier sur la page Sites
 
-<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
+<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
 
 Prenons le cas d’un utilisateur qui commence à remplir un formulaire, mais qui doit se suspendre et revenir ultérieurement. AEM propose une option `save-as-draft`, qui permet à l’utilisateur ou à l’utilisatrice d’enregistrer le formulaire en tant que brouillon en vue d’un remplissage ultérieur. Pour faciliter la tâche, AEM fournit le composant du portail Forms **Brouillons et envois** prêt à l’emploi, qui affiche les brouillons et les envois sur les pages AEM Sites. Le composant répertorie les formulaires qui ont été enregistrés en tant que brouillons en vue d’une finalisation ultérieure, ainsi que ceux qui ont été envoyés. Seuls les utilisateurs connectés peuvent modifier leurs brouillons ou afficher les formulaires qu’ils ont envoyés. Cependant, si un utilisateur anonyme parcourt la liste des formulaires à l’aide du composant **Search &amp; Lister** et enregistre un formulaire en tant que brouillon, ce dernier n’est pas répertorié par le composant **Drafts &amp; Submissions**. Pour afficher les brouillons et les envois, les utilisateurs doivent être connectés au moment de l’envoi du formulaire.
 
@@ -22,11 +23,11 @@ Prenons le cas d’un utilisateur qui commence à remplir un formulaire, mais qu
 
 ## Conditions préalables
 
-* [Configurer le stockage Azure et le connecteur de stockage unifié pour le composant du portail Forms Drafts &amp; Submissions](#configure-azure-storage-and-unified-storage-connector-for-drafts--submissions-forms-portal-component)
+* [Configuration du connecteur de stockage unifié et de stockage Azure pour le composant du portail Forms Drafts &amp; Submissions](#configure-azure-storage-and-unified-storage-connector-for-drafts--submissions-forms-portal-component)
 
-### Configuration du connecteur de stockage unifié et du stockage Azure pour le composant du portail Forms Drafts &amp; Submissions
+### Configuration du connecteur de stockage unifié et de stockage Azure pour le composant du portail Forms Drafts &amp; Submissions
 
-Le composant **Brouillons et envois** a besoin d’une configuration de stockage pour enregistrer et répertorier les brouillons sur la page AEM Sites. Le connecteur de stockage unifié offre une structure pour lier AEM au stockage externe. Pour enregistrer le formulaire en tant que brouillon, vérifiez que vous disposez d’un compte de stockage Azure et d’une clé d’accès pour autoriser l’accès au compte de stockage [!DNL Azure]. Une fois que vous disposez du compte de stockage Azure et de la clé d’accès, effectuez les étapes suivantes pour créer une configuration de stockage Azure :
+Le composant **Brouillons et envois** a besoin d’une configuration de stockage pour enregistrer et répertorier les brouillons sur la page AEM Sites. Le connecteur de stockage unifié offre une structure pour lier AEM au stockage externe. Pour enregistrer le formulaire en tant que brouillon, vérifiez que vous disposez d’un compte de stockage Azure et d’une clé d’accès pour autoriser l’accès au compte de stockage [!DNL Azure]. Une fois que vous disposez du compte de stockage Azure et de la clé d’accès, procédez comme suit pour créer une configuration de stockage Azure :
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Stockage Azure]**.
 
@@ -34,7 +35,7 @@ Le composant **Brouillons et envois** a besoin d’une configuration de stockage
 
 1. Sélectionnez un dossier de configuration pour créer la configuration, puis sélectionnez **[!UICONTROL Créer]**.
 
-   ![Sélectionnez le dossier de configuration du stockage Azure](/help/forms/assets/save-form-as-draft-select-config-folder.png)
+   ![Sélectionnez le dossier de configuration de stockage Azure](/help/forms/assets/save-form-as-draft-select-config-folder.png)
 
 1. Indiquez un titre pour la configuration dans le champ **[!UICONTROL Titre]**.
 1. Indiquez le nom du compte de stockage [!DNL Azure] dans les champs **[!UICONTROL Compte de stockage Azure]** et **[!UICONTROL Clé d’accès Azure]**.
@@ -47,7 +48,7 @@ Le composant **Brouillons et envois** a besoin d’une configuration de stockage
 
    >[!NOTE]
    >
-   > Vous pouvez récupérer le **[!UICONTROL Compte de stockage Azure]** et la **[!UICONTROL Clé d’accès Azure]** à partir du portail Azure [Microsoft](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
+   > Vous pouvez récupérer le **[!UICONTROL compte de stockage Azure]** et la **[!UICONTROL clé d’accès Azure]** à partir du [portail Microsoft Azure](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
 
    Une fois la configuration de stockage Azure créée, configurez le connecteur de stockage unifié pour le portail Forms en procédant comme suit :
 
@@ -56,7 +57,7 @@ Le composant **Brouillons et envois** a besoin d’une configuration de stockage
    ![Stockage de connecteur unifié](/help/forms/assets/save-form-as-draft-unified-connector.png)
 
 1. Dans la section **[!UICONTROL Portail Formulaires]**, sélectionnez **[!UICONTROL Azure]** dans la liste déroulante **[!UICONTROL Stockage]**.
-1. Spécifiez le chemin de configuration de la configuration de stockage Azure dans le champ **[!UICONTROL Chemin de configuration de stockage]**.
+1. Indiquez le chemin de configuration de la configuration de stockage Azure dans le champ **[!UICONTROL Chemin de configuration de stockage]**.
 
    ![Paramètre de stockage du connecteur unifié](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
 
@@ -64,7 +65,7 @@ Le composant **Brouillons et envois** a besoin d’une configuration de stockage
 
 >[!NOTE]
 >
-> Si vous devez configurer une option de stockage autre qu’Azure, écrivez à <aem-forms-ea@adobe.com> à partir de votre adresse e-mail officielle en précisant vos besoins.
+> Si vous devez configurer une option de stockage autre qu’Azure, écrivez à <aem-forms-ea@adobe.com> depuis votre adresse e-mail officielle en précisant vos besoins.
 
 Une fois que vous avez correctement configuré le stockage Azure et le connecteur de stockage unifié pour stocker les brouillons et les formulaires envoyés, ajoutez le composant **Brouillons et envois** sur la page AEM Sites.
 
@@ -148,7 +149,7 @@ Vous pouvez également configurer un formulaire adaptatif pour qu’il soit enre
 1. Ouvrez l’explorateur de contenu, puis sélectionnez le composant **[!UICONTROL Conteneur de guide]** de votre formulaire adaptatif.
 1. Cliquez sur l’icône Propriétés du conteneur de guide ![Propriétés du guide](/help/forms/assets/configure-icon.svg) et ouvrez l’onglet **[!UICONTROL Brouillons]**.
 
-   ![&#x200B; Enregistrement automatique &#x200B;](/help/forms/assets/auto-save.png)
+   ![ Enregistrement automatique ](/help/forms/assets/auto-save.png)
 
 1. Cochez la case **[!UICONTROL Enregistrer automatiquement les brouillons]** pour activer l’enregistrement automatique du formulaire en tant que brouillons.
 1. Configurez **[!UICONTROL Enregistrer la préférence]** comme **Enregistrer les brouillons à intervalles réguliers** pour enregistrer automatiquement le <!--based on the occurrence of an event or--> de formulaire après un intervalle de temps spécifique.
@@ -174,7 +175,7 @@ Vous pouvez également ignorer les formulaires en cliquant sur les points de sus
 
 ## Étapes suivantes
 
-Dans l’article suivant, découvrez [&#x200B; comment ajouter des références à des formulaires sur la page Sites à l’aide du composant Lien du portail Forms &#x200B;](/help/forms/add-form-link-to-aem-sites-page.md).
+Dans l’article suivant, découvrez [ comment ajouter des références à des formulaires sur la page Sites à l’aide du composant Lien du portail Forms ](/help/forms/add-form-link-to-aem-sites-page.md).
 
 ## Articles connexes
 

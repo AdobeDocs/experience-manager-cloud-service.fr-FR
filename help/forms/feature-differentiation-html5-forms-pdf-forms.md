@@ -5,13 +5,14 @@ contentOwner: robhagat
 content-type: reference
 topic-tags: hTML5_forms
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 3150f95f-7150-4eee-b5a9-121422dec2a1
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 94%
+source-wordcount: '479'
+ht-degree: 93%
 
 ---
 
@@ -52,7 +53,7 @@ Le tableau suivant indique les fonctionnalités prises en charge par les formula
   <tr>
    <td>Pagination<br /> </td>
    <td><p>Un formulaire HTML5 est divisé en panneaux et en cadres pour lui donner une apparence similaire aux formulaires PDF. La taille de la page est calculée dynamiquement. Si vous supprimez ou marquez comme masqué tout le contenu d’une page dans un formulaire HTML5, la page vierge est masquée. Aucun espace vide (espace) n’est affiché entre les pages au-dessus et en dessous de la page vierge.</p> <p>Si la fusion de données ou les scripts ajoutent du contenu à une page, la longueur de la page s’agrandit pour s’adapter au nouveau contenu. Aucune nouvelle page n’est ajoutée au formulaire pour s’adapter au nouveau contenu. </p> <p><strong>Remarque :</strong> si vous supprimez ou marquez comme masqué tout le contenu d’une page de formulaire HTML5, la page vierge (espace) reste visible entre la première et la deuxième page mais pas entre les autres pages.</p> </td>
-   <td>La pagination des documents PDF dépend du contenu des données fusionnées ou du contenu de l’utilisateur : le nombre de pages est augmenté/réduit en conséquence.</td>
+   <td>La pagination des documents PDF dépend du contenu des données fusionnées ou du contenu utilisateur : le nombre de pages est augmenté/réduit en conséquence.</td>
   </tr>
   <tr>
    <td>En-têtes/pieds de page </td>

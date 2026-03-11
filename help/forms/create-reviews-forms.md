@@ -3,12 +3,13 @@ title: Comment créer et gérer des révisions dans les formulaires ?
 description: Utilisez le mécanisme de révision pour ajouter des réviseurs et permettre aux réviseurs de commenter un formulaire.
 topic-tags: forms-manager
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
 role: User, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 91%
+source-wordcount: '710'
+ht-degree: 90%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 91%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/create-reviews-forms.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/create-reviews-forms.html) |
 | AEM as a Cloud Service | Cet article |
 
 ## Révision {#review}
@@ -86,7 +87,7 @@ Cette section décrit ce qui se produit lorsqu’une révision est créée ou co
 
 ### Actions survenant lorsqu’une révision est modifiée {#actions-that-occur-when-a-review-is-modified}
 
-Cette section décrit ce qui se produit lorsque **vous modifiez ou mettez fin à une révision** :
+Cette section décrit ce qui se produit lors de la **mise à jour/fin de la révision** :
 
 1. Si la description de la révision est modifiée, la tâche correspondante des réviseurs/réviseuses et de l’initiateur ou l’initiatrice de la révision est mise à jour.
 1. Si l’échéance de la révision est modifiée, la nouvelle date est appliquée à la tâche correspondante pour les réviseurs et les réviseuses.

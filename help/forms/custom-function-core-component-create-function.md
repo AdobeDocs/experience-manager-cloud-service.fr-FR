@@ -4,10 +4,11 @@ description: AEM Forms prend en charge les fonctions personnalisées, qui permet
 keywords: Ajoutez une fonction personnalisée, utilisez une fonction personnalisée, créez une fonction personnalisée, utilisez une fonction personnalisée dans l’éditeur de règles.
 feature: Adaptive Forms, Core Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1366'
 ht-degree: 50%
 
 ---
@@ -57,7 +58,7 @@ Vous pouvez ajouter des fonctions personnalisées en ajoutant une bibliothèque 
 
 **Clonez le référentiel**
 
-Clonez votre référentiel AEM Forms as a Cloud Service [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git) :
+Clonez votre référentiel AEM Forms as a Cloud Service [](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git) :
 
 1. Ouvrez la ligne de commande ou la fenêtre du terminal.
 

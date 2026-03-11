@@ -2,12 +2,13 @@
 title: Comment gérer les métadonnées pour AEM Forms ?
 description: Les métadonnées permettent de catégoriser et d’organiser plus facilement les ressources. Les utilisateurs peuvent ainsi retrouver aisément une ressource spécifique.
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1735'
-ht-degree: 95%
+source-wordcount: '1738'
+ht-degree: 94%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 95%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/manage-form-metadata.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/manage-form-metadata.html) |
 | AEM as a Cloud Service | Cet article |
 
 Les métadonnées permettent de catégoriser et d’organiser plus facilement les ressources. Les utilisateurs peuvent ainsi retrouver aisément une ressource spécifique.
@@ -37,7 +38,7 @@ Dans [!DNL AEM Forms], la liste des propriétés de métadonnées associées à 
 
 Les types de ressources suivants sont pris en charge dans [!DNL AEM Forms] :
 
-* Modèles de formulaire (formulaires XFA)
+* Modèles de formulaires (formulaires XFA)
 * Formulaires PDF
 * Document (PDF plats)
 * Formulaires adaptatifs
@@ -298,7 +299,7 @@ Un outil (l’éditeur de schéma de métadonnées) est proposé pour définir l
 
       >[!NOTE]
       >
-      >Ne modifiez pas le préfixe &#39;./jcr:content/metadata/&#39; car il définit le chemin d’accès où la propriété est stockée.
+      >Ne modifiez pas le préfixe &#39;./jcr:content/metadata/&#39;, car il définit le chemin d’accès où la propriété est stockée.
       >
       >En outre, le nom de la propriété doit être unique pour éviter d’écrire des valeurs pour plusieurs propriétés au même emplacement dans le référentiel. Il est donc recommandé de modifier la valeur « default ».
 

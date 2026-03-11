@@ -1,17 +1,18 @@
 ---
-title: Résolution des erreurs 403 interdites lors de l’envoi du formulaire Edge Delivery Services
+title: Résolution des erreurs 403 lors de l’envoi de formulaires dans Edge Delivery Services
 description: Découvrez comment diagnostiquer et résoudre les erreurs 403 Interdit lors de l’envoi de formulaires de Edge Delivery Services au service de publication AEM. Ce guide couvre les causes courantes, notamment les problèmes de CORS, de règles Dispatcher et de filtre de référent.
 feature: Edge Delivery Services
 role: Admin, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: f397e059-f1b3-4afa-bd38-8f5fc591bb22
-source-git-commit: d457bf9af377176222c2b96816fbbc4265e6b167
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 3%
+source-wordcount: '1124'
+ht-degree: 11%
 
 ---
 
-# Résolution des erreurs 403 interdites lors de l’envoi du formulaire Edge Delivery Services {#troubleshooting-403-forbidden-edge-delivery}
+# Résolution des erreurs 403 lors de l’envoi de formulaires dans Edge Delivery Services {#troubleshooting-403-forbidden-edge-delivery}
 
 Lors de l’envoi de formulaires de Edge Delivery Services au service de publication AEM, vous pouvez rencontrer une erreur **403 Interdit**. Cette erreur indique que le serveur refuse de traiter la demande, généralement en raison de configurations de sécurité. Cet article vous aide à identifier et à résoudre les causes les plus courantes de ce problème.
 
@@ -41,9 +42,9 @@ Ce problème se produit généralement dans les intégrations Edge Delivery Serv
 
 Une erreur 403 Interdit lors de l’envoi d’un formulaire Edge Delivery Services peut avoir plusieurs causes. Procédez comme suit pour résoudre les problèmes :
 
-### &#x200B;1. Problèmes de partage des ressources entre origines multiples (CORS)
+### &#x200B;1. Problèmes liés à CORS (partage des ressources entre origines multiples)
 
-**Symptômes :**
+**Symptômes :**
 
 - La console du navigateur affiche les messages d’erreur CORS
 - L’onglet Réseau affiche la requête en cours de blocage avant d’atteindre le serveur
@@ -73,13 +74,13 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 >[!NOTE]
 >
->Remplacez `main--abc--adobe.aem.live` et `main--abc1--adobe.aem.live` par vos domaines de site réels. Chaque site hébergé à partir du même référentiel nécessite une entrée de configuration CORS distincte.
+>Remplacez `main--abc--adobe.aem.live` et `main--abc1--adobe.aem.live` par vos domaines de site réels. Chaque site hébergé à partir du même référentiel requiert une entrée de configuration CORS distincte.
 
-Pour la configuration CORS détaillée, reportez-vous au [Guide de configuration CORS](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
+Pour obtenir une configuration détaillée de CORS, consultez le [Guide de configuration de CORS](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
 
 ### &#x200B;2. Règles Dispatcher
 
-**Symptômes :**
+**Symptômes :**
 
 - Une erreur 403 se produit sans messages CORS dans la console du navigateur
 - La demande atteint le serveur mais est bloquée par Dispatcher
@@ -111,7 +112,7 @@ Exemple de configuration de filtre Dispatcher :
 
 ### &#x200B;3. Problèmes De Filtre Référent
 
-**Symptômes :**
+**Symptômes :**
 
 - Erreur 403 sans problème CORS dans la console du navigateur
 - La demande atteint AEM mais est rejetée par le filtre référent Sling.
@@ -135,9 +136,9 @@ Consultez les journaux d’erreurs AEM pour connaître les messages de rejet de 
 **Solution :**
 Configurez le filtrage des référents pour autoriser vos domaines de site Edge Delivery spécifiques :
 
-1. Créez ou mettez à jour le fichier de configuration OSGi : `org.apache.sling.security.impl.ReferrerFilter.cfg.json`
+1. Créez ou mettez à jour le fichier de configuration OSGi : `org.apache.sling.security.impl.ReferrerFilter.cfg.json`
 
-2. Ajoutez la configuration suivante à vos domaines de site spécifiques :
+2. Ajoutez la configuration suivante à vos domaines de site spécifiques :
 
    ```json
    {
@@ -165,7 +166,7 @@ Configurez le filtrage des référents pour autoriser vos domaines de site Edge 
    }
    ```
 
-3. Déploiement de la configuration via Cloud Manager
+3. Déployer la configuration via Cloud Manager
 
 >[!IMPORTANT]
 >
@@ -262,7 +263,7 @@ Avec les architectures Helix-5 et Repoless, suivez ces instructions :
 ## Ressources supplémentaires
 
 - [Configuration du filtre Référent avec AEM Headless](/help/headless/deployment/referrer-filter.md)
-- [&#x200B; Guide de configuration CORS &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
+- [Guide de configuration CORS](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
 - [Comprendre le partage de ressources entre origines multiples (CORS)](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
 - [Documentation de Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
 

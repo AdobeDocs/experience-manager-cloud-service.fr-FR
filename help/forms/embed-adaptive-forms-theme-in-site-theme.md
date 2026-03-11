@@ -4,17 +4,18 @@ description: Découvrez comment intégrer un thème Forms adaptatif (par exemple
 keywords: thème de formulaires adaptatifs, thème de site, thème AEM Sites, intégration du thème forms, pipeline front-end, incorporation du thème
 feature: Adaptive Forms, Core Components
 role: Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 0607e11c-84d2-42cb-be9f-acd7c328a342
-source-git-commit: e1593d26beea79ffd7d8c5075b99d84c6a98c3b0
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '864'
 ht-degree: 1%
 
 ---
 
 # Incorporer un thème Forms adaptatif dans un thème AEM Sites
 
-Vous pouvez incorporer un thème Forms adaptatif (tel que le thème [Zone de travail AEM Forms](https://github.com/adobe/aem-forms-theme-canvas)) dans votre thème AEM Sites. Ainsi, un seul thème oriente à la fois les pages de votre site et tout Forms adaptatif incorporé dans ces pages, avec une version et un déploiement via le pipeline front-end [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html?lang=fr).
+Vous pouvez incorporer un thème Forms adaptatif (tel que le thème [Zone de travail AEM Forms](https://github.com/adobe/aem-forms-theme-canvas)) dans votre thème AEM Sites. Ainsi, un seul thème oriente à la fois les pages de votre site et tout Forms adaptatif incorporé dans ces pages, avec une version et un déploiement via le pipeline front-end [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html).
 
 Cet article est destiné aux développeurs qui gèrent ou personnalisent le thème AEM Sites standard (ou personnalisé) et qui souhaitent inclure le style de formulaire adaptatif sans gérer de déploiement de thème Forms distinct.
 
@@ -22,7 +23,7 @@ Cet article est destiné aux développeurs qui gèrent ou personnalisent le thè
 
 Avant de commencer, vérifiez que vous disposez des éléments suivants :
 
-* **AEM as a Cloud Service** avec le [pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html?lang=fr) configuré pour le thème de votre site.
+* **AEM as a Cloud Service** avec le [pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html) configuré pour le thème de votre site.
 * **Sources de thème du site** par exemple, le [thème standard du modèle de site](https://github.com/adobe/aem-site-template-standard) (le référentiel qui contient des `theme/` avec `src/theme.scss`, `src/components/`, etc.).
 * **Sources de thème Forms** - le [thème de la zone de travail AEM Forms](https://github.com/adobe/aem-forms-theme-canvas) (ou un autre thème de Forms adaptatif compatible) cloné ou téléchargé localement.
 * **Node.js et npm** - pour créer le thème du site (consultez la section « LISEZ-MOI le thème » pour les versions prises en charge).
@@ -209,7 +210,7 @@ Il s’agit de la seule modification requise dans la structure de thème de site
 
    ![exécuter la version](/help/forms/assets/theme-mpm-run-build.png)
 
-2. Effectuez le déploiement via votre [pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html?lang=fr) existant. Après le déploiement, le même thème CSS s’applique aux pages du site et au Forms adaptatif incorporé.
+2. Effectuez le déploiement via votre [pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html) existant. Après le déploiement, le même thème CSS s’applique aux pages du site et au Forms adaptatif incorporé.
 
 ## Résolution des problèmes {#troubleshooting}
 
@@ -224,4 +225,4 @@ Il s’agit de la seule modification requise dans la structure de thème de site
 ## Voir également {#see-also}
 
 * [Utilisation des thèmes pour appliquer un style au Forms adaptatif basé sur les composants principaux](/help/forms/using-themes-in-core-components.md)
-* [Développement avec des pipelines front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html?lang=fr)
+* [Développement avec des pipelines front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html)

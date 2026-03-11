@@ -1,6 +1,6 @@
 ---
 title: Comment envoyer un formulaire adaptatif pour révision ?
-description: Partager un formulaire adaptatif pour révision avec un ou plusieurs réviseurs.
+description: Partagez un formulaire adaptatif à réviser avec une ou plusieurs personnes validantes.
 uuid: 58c8c8fb-9262-4c37-b9b2-e46fe21b77d9
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -9,13 +9,14 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
+exl-id: 27c52969-1213-4fd3-8e16-988caafb4ad6
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 91%
+source-wordcount: '499'
+ht-degree: 90%
 
 ---
-
 
 # Association de réviseurs d’envoi à un formulaire {#associating-submission-reviewers-with-a-form}
 
@@ -33,7 +34,7 @@ Pour associer un groupe de réviseurs à un formulaire, modifiez le schéma de m
 
 Pour modifier le schéma de métadonnées :
 
-1. En mode création, sous Experience Manager, cliquez sur **Outils** > **Ressources** > **Schémas de métadonnées**.
+1. En mode de création, sous Experience Manager, cliquez sur **Outils** > **Ressources** > **Schémas de métadonnées**.
 1. Dans la page Formulaires du schéma, accédez à **Formulaires** > **Formulaires créés dans AEM.**
 
    L’URL de la page est la suivante :
@@ -70,7 +71,7 @@ Pour associer des groupes d’utilisateurs à un formulaire adaptatif :
 1. Dans la fenêtre Propriétés du formulaire, cliquez sur **Modifier** puis sur **AVANCÉ**.
 1. Saisissez le groupe dans le champ de groupe de réviseurs d’envoi, puis cliquez sur **Terminé**.
 
-   Le champ de groupe de réviseurs d’envoi s’affiche avec le nom spécifié dans le schéma modifié de métadonnées des formulaires adaptatifs.
+   Le champ de groupe de réviseurs d’envoi s’affiche avec le nom spécifié dans le schéma de métadonnées modifié des formulaires adaptatifs.
 
 >[!NOTE]
 >
@@ -80,5 +81,5 @@ Pour associer des groupes d’utilisateurs à un formulaire adaptatif :
 
 >[!MORELIKETHIS]
 >
->* [Création et gestion de révisions des formulaires](/help/forms/create-reviews-forms.md)
+>* [Création et gestion de révisions dans des formulaires](/help/forms/create-reviews-forms.md)
 >* [Créer et gérer des révisions pour un formulaire adaptatif](/help/forms/review-adaptiveforms-in-sites-page.md)

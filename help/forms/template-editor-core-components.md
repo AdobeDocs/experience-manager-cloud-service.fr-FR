@@ -3,11 +3,12 @@ title: Comment créer un modèle de formulaire adaptatif avec des composants pri
 description: Créez des modèles de formulaire adaptatif basés sur les composants principaux pour définir la structure de base et le contenu initial à l’aide de l’éditeur de modèles.
 feature: Adaptive Forms, Core Components
 Keywords: form builder, build adaptive form template, adaptive form template core components, form template builder, build form template.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
 role: User, Developer
-source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: '1910'
 ht-degree: 58%
 
 ---
@@ -135,7 +136,7 @@ Lorsque vous modifiez un modèle, vous pouvez définir la mise en page et utilis
 
 ![Conteneur de dispositions dans le calque de structure](/help/forms/assets/layout-template-core-component.png)
 
-Reportez-vous à l’article [présentation de la mise en page réactive](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=fr) pour plus d’informations.
+Reportez-vous à l’article [présentation de la mise en page réactive](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=en) pour plus d’informations.
 
 ## Activation du modèle {#enabling-the-template}
 
@@ -235,7 +236,7 @@ Lorsque vous ajoutez au moins un groupe de propriétés personnalisé à l’aid
 
 ## Création d’un formulaire adaptatif à l’aide du modèle {#creating-an-adaptive-form-using-the-template}
 
-Une fois que vous avez créé et activé un modèle, il est disponible dans le gestionnaire de formulaires lorsque vous créez un formulaire adaptatif. Pour utiliser un modèle et créer un formulaire adaptatif, voir [&#x200B; Création d’un formulaire adaptatif basé sur les composants principaux &#x200B;](/help/forms/creating-adaptive-form-core-components.md).
+Une fois que vous avez créé et activé un modèle, il est disponible dans le gestionnaire de formulaires lorsque vous créez un formulaire adaptatif. Pour utiliser un modèle et créer un formulaire adaptatif, voir [ Création d’un formulaire adaptatif basé sur les composants principaux ](/help/forms/creating-adaptive-form-core-components.md).
 <!--
 ## Change display option of out of the box templates  {#change-display-option-of-out-of-the-box-templates}
 

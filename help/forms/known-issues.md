@@ -1,15 +1,16 @@
 ---
-title: Quels sont les problèmes connus et les limites de l’environnement as a Cloud Service d’AEM Forms ?
+title: Quels sont les problèmes connus et les limites de l’environnement AEM Forms as a Cloud Service ?
 description: Problèmes connus et limites de l’environnement  [!DNL AEM Forms] as a Cloud Service.
 contentOwner: khsingh
 role: Admin, Developer, User
 feature: Adaptive Forms
 topic: Administration
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 871f294d-f251-4966-a021-39df65b613f0
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 93%
+source-wordcount: '373'
+ht-degree: 92%
 
 ---
 
@@ -19,7 +20,7 @@ Avant de commencer à utiliser [!DNL AEM Forms] as a Cloud Service, passez en re
 
 ## Problèmes connus {#known-issues}
 
-* Vous ne devez pas ajouter ni exécuter un test qui envoie un formulaire adaptatif d’une instance de publication à un processus AEM s’exécutant sur une instance d’auteur jusqu’à nouvel ordre.
+* Vous ne devez pas ajouter ni exécuter un test qui envoie un formulaire adaptatif d’une instance de publication à un processus AEM s’exécutant sur une instance de création jusqu’à nouvel ordre.
 
 * Lorsque vous importez un formulaire adaptatif qui utilise un modèle contenant le bouton **[!UICONTROL Enregistrer]**, le bouton **[!UICONTROL Enregistrer]** continue à apparaître dans le formulaire adaptatif même après sa suppression du modèle correspondant. Supprimez le bouton **[!UICONTROL Enregistrer]** de votre formulaire adaptatif avant de le publier. Consultez les notes de mise à jour pour connaître la disponibilité de la fonctionnalité Portail Formulaires et Enregistrer en tant que brouillon pour restaurer le bouton et l’utiliser.
 

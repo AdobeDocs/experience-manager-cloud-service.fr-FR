@@ -3,11 +3,12 @@ title: Comment envoyer des données d’un formulaire adaptatif à Microsoft&reg
 description: Explorez le processus simplifié de connexion d’AEM Forms à Microsoft&reg; OneDrive à l’aide de l’action d’envoi Envoyer à OneDrive. Découvrez le guide détaillé pour configurer OneDrive et configurer des actions d’envoi pour un stockage et une récupération des données efficaces
 keywords: Intégration d’AEM Forms OneDrive, Connexion à Microsoft OneDrive, Configuration OneDrive avec AEM Forms
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
 role: User, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '927'
 ht-degree: 54%
 
 ---
@@ -120,7 +121,7 @@ La boîte de dialogue **Propriétés du formulaire** s’affiche.
    > * Consultez l’article [Principales fonctionnalités d’Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) pour savoir comment activer et désactiver les extensions dans l’éditeur universel.
 1. Cliquez sur l’onglet **Envoi** et sélectionnez **[!UICONTROL Envoyer à OneDrive]**.
    ![OneDrive GIF](/help/forms/assets/submit-to-onedrive-ue.png)
-Si vous sélectionnez **Enregistrer les pièces jointes avec le nom d’origine**, les pièces jointes sont stockées dans le dossier à l’aide de leurs noms de fichier d’origine. Vous pouvez également enregistrer un document d’enregistrement (DE) dans le stockage Blob Azure.
+Si vous sélectionnez **Enregistrer les pièces jointes avec le nom d’origine**, les pièces jointes sont stockées dans le dossier à l’aide de leurs noms de fichier d’origine. Vous pouvez également enregistrer un document d’enregistrement (DE) dans le stockage Blob d’Azure.
 1. Sélectionnez la **[!UICONTROL configuration de stockage]** où vous souhaitez enregistrer vos données.
 1. Cliquez sur **[!UICONTROL Enregistrer et fermer]**
 

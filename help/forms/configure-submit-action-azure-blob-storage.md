@@ -1,14 +1,15 @@
 ---
-title: Comment connecter AEM Adaptive Forms à Azure Blob Storage ?
+title: Comment connecter AEM Adaptive Forms au stockage Blob d’Azure ?
 description: Découvrez comment créer une configuration de stockage Blob Azure dans AEM Forms et l’utiliser dans votre Forms adaptatif pour un stockage de données efficace.
-keywords: Intégration du stockage Blob Azure à AEM Forms, envoi de données au stockage Azure, création d’une configuration de stockage Azure dans AEM Forms, utilisation du stockage Blob Azure dans l’action d’envoi de Forms adaptative
+keywords: Intégration du stockage Blob d’Azure à AEM Forms, envoi de données au stockage Azure, création d’une configuration de stockage Azure dans AEM Forms, utilisation du stockage Blob d’Azure dans l’action d’envoi Forms adaptative
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 0c9f8f85-c4e9-4c79-bd0b-abdcac99a2d4
 role: User, Developer
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 45%
+source-wordcount: '824'
+ht-degree: 51%
 
 ---
 
@@ -20,14 +21,14 @@ AEM as a Cloud Service propose différentes actions d’envoi prêtes à l’emp
 
 ## Avantages
 
-Voici quelques-uns des avantages de l’intégration du stockage Blob Azure à AEM Forms :
+Voici quelques-uns des avantages de l’intégration du stockage Blob d’Azure à AEM Forms :
 
 * Il permet de rationaliser le processus d’envoi des données de formulaire adaptatif, des fichiers, des pièces jointes et du document d’enregistrement aux conteneurs de stockage Azure.
-* Il utilise Azure Blob Storage pour le stockage centralisé et organisé des envois de formulaires adaptatifs.
+* Il utilise le stockage Blob d’Azure pour le stockage centralisé et organisé des envois de formulaires adaptatifs.
 
-## Connecter AEM Forms au stockage Blob Azure Microsoft®
+## Connexion d’AEM Forms au stockage d’objets blob Microsoft® Azure
 
-Pour utiliser le stockage Azure Blob dans l’action d’envoi Forms adaptative :
+Pour utiliser le stockage d’objets blob Azure dans l’action d’envoi Forms adaptative :
 
 1. [Créer un conteneur de stockage Azure Blob](#create-a-azure-blob-storage-container-create-azure-configuration) : connecte AEM Forms aux conteneurs de stockage Azure.
 2. [Utiliser la configuration de stockage Azure dans un formulaire adaptatif](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af) : connecte votre formulaire adaptatif aux conteneurs de stockage Azure configurés.
@@ -51,8 +52,8 @@ Pour connecter AEM Forms à vos conteneurs de stockage Azure :
     >[!NOTE]
     >
     > The URL for **[!UICONTROL Azure Blob Endpoint]** is automatically appended to the textbox when a value is entered for **[!UICONTROL Azure Storage Account]**. You can update the Azure Blob End Point URL with your custom domain. Steps to update URL for **[!UICONTROL Azure Blob End Point]**:
-    > 1. [Enable the AEM Advance Networking VPN support](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=fr)
-    > 1. [Enable dedicated egress IP link](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=fr)
+    > 1. [Enable the AEM Advance Networking VPN support](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)
+    > 1. [Enable dedicated egress IP link](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)
     > 1. [Map custom domain to azure blob storage](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-custom-domain-name?tabs=azure-portal)
 -->
 
@@ -73,14 +74,14 @@ Vous pouvez utiliser la configuration de conteneur de stockage Azure créée dan
 
 >[!TAB Composant de base]
 
-Suivez les étapes suivantes pour utiliser la configuration de conteneur de stockage Azure dans un formulaire adaptatif basé sur les composants de base comme suit :
+Pour utiliser la configuration de conteneur de stockage Azure dans un formulaire adaptatif basé sur les composants de base comme suit :
 
 1. Ouvrez le formulaire adaptatif pour le modifier et accéder à la section **[!UICONTROL Envoi]** des propriétés du Conteneur de formulaires adaptatifs.
-1. Dans la liste déroulante **[!UICONTROL Action d’envoi]**, sélectionnez **[!UICONTROL Envoyer au stockage Azure Blob]**.
+1. Dans la liste déroulante **[!UICONTROL Action Envoyer]**, sélectionnez **[!UICONTROL Envoyer au stockage d’objets blob Azure]**.
 
-   ![GIF de stockage Blob Azure](/help/forms/assets/submit-to-azure-blob-fc.png){width=50%,height=50%}
+   ![GIF de stockage d’objets blob Azure](/help/forms/assets/submit-to-azure-blob-fc.png){width=50%,height=50%}
 
-   Vous pouvez également enregistrer un document d’enregistrement (DE) dans le stockage Blob Azure.
+   Vous pouvez également enregistrer un document d’enregistrement (DE) dans le stockage Blob d’Azure.
 
 1. Sélectionnez la **[!UICONTROL configuration de stockage]** où vous souhaitez enregistrer vos données.
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer les paramètres d’envoi.
@@ -90,16 +91,16 @@ La structure du dossier pour l’enregistrement des données est `/configuration
 
 >[!TAB Composant principal]
 
-Pour utiliser la configuration de conteneur de stockage Azure dans un formulaire adaptatif basé sur les composants principaux en tant que :
+Suivez les étapes ci-après pour utiliser la configuration de conteneur de stockage Azure dans un formulaire adaptatif basé sur les composants principaux comme suit :
 
 1. Ouvrez l’explorateur de contenu, puis sélectionnez le composant **[!UICONTROL Conteneur de guide]** de votre formulaire adaptatif.
 1. Cliquez sur l’icône des propriétés du conteneur de guide ![Propriétés du guide](/help/forms/assets/configure-icon.svg). La fenêtre du conteneur de formulaires adaptatifs s’ouvre.
 1. Cliquez sur l’onglet **[!UICONTROL Envoi]**.
-1. Dans la liste déroulante **[!UICONTROL Action d’envoi]**, sélectionnez **[!UICONTROL Envoyer au stockage Azure Blob]**.
+1. Dans la liste déroulante **[!UICONTROL Action Envoyer]**, sélectionnez **[!UICONTROL Envoyer au stockage d’objets blob Azure]**.
 
    ![GIF de stockage Azure Blob](/help/forms/assets/azure-submit-video.gif)
 
-   Vous pouvez également enregistrer un document d’enregistrement (DE) dans le stockage Blob Azure.
+   Vous pouvez également enregistrer un document d’enregistrement (DE) dans le stockage Blob d’Azure.
 
 1. Sélectionnez la **[!UICONTROL configuration de stockage]** où vous souhaitez enregistrer vos données.
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer les paramètres d’envoi.
@@ -109,7 +110,7 @@ La structure du dossier pour l’enregistrement des données est `/configuration
 
 >[!TAB Éditeur universel]
 
-Pour utiliser la configuration de conteneur de stockage Azure dans un formulaire adaptatif créé dans l’éditeur universel, procédez comme suit :
+Pour utiliser la configuration du conteneur de stockage Azure dans un formulaire adaptatif créé dans l’éditeur universel, procédez comme suit :
 
 1. Ouvrez le formulaire adaptatif pour le modifier.
 1. Cliquez sur l’extension **Modifier les propriétés du formulaire** dans l’éditeur.
@@ -117,13 +118,13 @@ La boîte de dialogue **Propriétés du formulaire** s’affiche.
 
    >[!NOTE]
    >
-   > * Si l’icône **Modifier les propriétés de formulaire** ne s’affiche pas dans l’interface de l’éditeur universel, activez l’extension **Modifier les propriétés de formulaire** dans Extension Manager.
-   > * Consultez l’article [Caractéristiques des fonctionnalités d’Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) pour savoir comment activer ou désactiver les extensions dans l’éditeur universel.
+   > * Si l’icône **Modifier les propriétés du formulaire** ne s’affiche pas dans l’interface de l’éditeur universel, activez l’extension **Modifier les propriétés du formulaire** dans Extension Manager.
+   > * Consultez l’article [Principales fonctionnalités d’Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) pour savoir comment activer et désactiver les extensions dans l’éditeur universel.
 
-1. Cliquez sur l’onglet **Envoi** et sélectionnez l’action d’envoi **[!UICONTROL Envoyer au stockage Azure Blob]**.
+1. Cliquez sur l’onglet **Envoi** et sélectionnez l’action d’envoi **[!UICONTROL Envoyer au stockage Blob Azure]**.
    ![Stockage Blob Azure.](/help/forms/assets/azure-blob-storage-ue.png)
 
-   Si vous sélectionnez **Enregistrer les pièces jointes avec le nom d’origine**, les pièces jointes sont stockées dans le dossier à l’aide de leurs noms de fichier d’origine. Vous pouvez également enregistrer un document d’enregistrement (DE) dans le stockage Blob Azure.
+   Si vous sélectionnez **Enregistrer les pièces jointes avec le nom d’origine**, les pièces jointes sont stockées dans le dossier à l’aide de leurs noms de fichier d’origine. Vous pouvez également enregistrer un document d’enregistrement (DE) dans le stockage Blob d’Azure.
 
 1. Sélectionnez la **[!UICONTROL configuration de stockage]** où vous souhaitez enregistrer vos données.
 1. Cliquez sur **[!UICONTROL Enregistrer et fermer]** pour enregistrer les paramètres d’envoi.

@@ -3,17 +3,18 @@ title: Comment utiliser l’API de synchronisation de sortie AFP ?
 description: Découvrez comment utiliser l’API de synchronisation de sortie AFP pour récupérer et synchroniser les rendus de sortie.
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 5602fc63-ef74-44eb-b3be-61b8f8a2795a
-source-git-commit: cbf640e0c4643616638de96e9daa460cdcf2a4a5
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 13%
+source-wordcount: '259'
+ht-degree: 14%
 
 ---
 
 # Générer une sortie AFP à l’aide de l’API AEM Forms
 
-<span class="preview">Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features). </span>
+<span class="preview">Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 La présentation de fonctions avancées (AFP) est un format de document haute performance conçu principalement à des fins d&#39;impression.\
 Ce guide décrit toutes les étapes et configurations nécessaires pour générer une sortie AFP à l’aide d’AEM Forms.

@@ -5,13 +5,14 @@ content-type: reference
 topic-tags: hTML5_forms
 discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 68912260-179a-4d1b-b944-0a1777c021ac
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 92%
+source-wordcount: '371'
+ht-degree: 91%
 
 ---
 
@@ -29,7 +30,7 @@ Vous pouvez télécharger, prévisualiser, et envoyer des pièces jointes avec d
    | multiSelect | vrai ou faux (vrai par défaut) |
    | fileSizeLimit | Nombre en Mo (2 Mo par défaut). Par exemple, 5. |
    | buttonText | Texte des boutons de la fenêtre pop-up (« Joindre » par défaut). |
-   | d’accepter ; | liste séparée par des virgules des types de fichiers à accepter (« audio/&ast;, video/&ast;, image/&ast;, text/&ast;, .pdf » par défaut). |
+   | d’accepter ; | liste séparée par des virgules des types de fichiers à accepter (« audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf » par défaut). |
 
    Par exemple :
 

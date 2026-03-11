@@ -1,5 +1,5 @@
 ---
-title: Comment sélectionner des utilisateurs dans AEM Workflow ?
+title: Comment sélectionner des utilisateurs dans le workflow AEM ?
 description: Découvrez comment sélectionner un utilisateur ou un groupe pour un workflow [!DNL AEM Forms]  au moment de l’exécution.
 content-type: troubleshooting
 topic-tags: publish
@@ -7,15 +7,16 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
+exl-id: 597fa30c-6fb7-46c2-8ee1-2986c4860266
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '853'
-ht-degree: 97%
+source-wordcount: '856'
+ht-degree: 95%
 
 ---
 
-
-# Sélection dynamique d’utilisateurs ou de groupes dans AEM workflow {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
+# Sélection dynamique d’utilisateurs et d’utilisatrices ou de groupes dans le workflow AEM {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 
 Découvrez comment sélectionner un utilisateur ou un groupe pour un workflow [!DNL AEM Forms] au moment de l’exécution.
 
@@ -39,9 +40,9 @@ ECMAScript est un langage de script. Il est utilisé pour les applications de sc
 
 1. Ajoutez le nom d’affichage du script. Ce nom s’affiche dans les étapes du workflow. Pour spécifier le nom :
 
-   1. Développez le nœud du script, cliquez avec le bouton droit de la souris sur **[!UICONTROL jcr:content]**, puis cliquez sur **[!UICONTROL Mixins]**.
+   1. Développez le nœud du script, cliquez avec le bouton droit sur le nœud **[!UICONTROL jcr:content]**, puis cliquez sur **[!UICONTROL Mixins]**.
    1. Ajoutez la propriété `mix:title` dans la boîte de dialogue Modifier les mixins et cliquez sur **OK**.
-   1. Ajoutez la propriété suivante au nœud de script jcr:content :
+   1. Ajoutez la propriété suivante au nœud de script jcr:content :
 
       | Nom | Type | Valeur |
       |--- |--- |--- |
@@ -230,7 +231,7 @@ Vous avez besoin des fichiers jar [[!DNL AEM Forms] Client SDK](https://experien
 
    `mvn clean install`
 
-1. Chargez le bundle sur un serveur [!DNL AEM Forms]. Vous pouvez utiliser le gestionnaire de packages AEM pour importer le bundle sur le serveur [!DNL AEM Forms].
+1. Chargez le bundle sur un serveur [!DNL AEM Forms]. Vous pouvez utiliser le gestionnaire de modules AEM pour importer le bundle sur le serveur [!DNL AEM Forms].
 
 Une fois le bundle importé, l’option de sélection de l’interface Java pour sélectionner de manière dynamique un utilisateur ou un groupe devient disponible pour les étapes Adobe Sign et Affecter une tâche.
 

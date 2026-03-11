@@ -5,10 +5,11 @@ keywords: comparaison des formulaires adaptatifs, composants principaux, composa
 role: Architect, Developer, Admin
 level: Intermediate
 feature: Adaptive Forms, Core Components, Edge Delivery Services
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: adaptive-forms-comparison
-source-git-commit: 37799555babb15809409ec5cda8a1c46ceff24f2
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1959'
 ht-degree: 10%
 
 ---
@@ -177,7 +178,7 @@ EDS Forms prend en charge deux approches de création :
 - Modèle de données de formulaire
 - Processus AEM
 - SharePoint/OneDrive
-- Stockage Azure Blob
+- Stockage d’objets blob Azure
 - Microsoft Power Automate
 - Adobe Workfront Fusion
 - Adobe Marketo Engage

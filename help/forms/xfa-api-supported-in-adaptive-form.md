@@ -1,5 +1,5 @@
 ---
-title: Prise en charge de XFA dans les formulaires adaptatifs basés sur XDP
+title: 'Prise en charge de XFA dans les formulaires adaptatifs basés sur XDP '
 description: Répertorie les événements, les propriétés, les scripts et la validation XFA pris en charge dans les formulaires adaptatifs.
 uuid: 75d3c292-cfed-438f-afdb-4071d95a08b7
 topic-tags: develop
@@ -8,13 +8,14 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
+exl-id: 59ae0eed-d832-4f46-9f99-7bcca9f82306
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 100%
+source-wordcount: '689'
+ht-degree: 99%
 
 ---
-
 
 # Prise en charge de XFA dans les formulaires adaptatifs basés sur XDP {#xfa-support-in-xdp-based-adaptive-forms}
 
@@ -267,4 +268,3 @@ Le tableau suivant capture la manière dont les validations XFA sont associées 
 >[!NOTE]
 >
 >Vous ne pouvez pas remplacer la propriété obligatoire pour le groupe bouton radio et case à cocher du formulaire adaptatif qui est lié aux boutons de vérification XFA.
-

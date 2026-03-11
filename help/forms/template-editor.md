@@ -2,11 +2,12 @@
 title: Comment créer un modèle de formulaire adaptatif ?
 description: Créez des modèles de formulaires adaptatifs en définissant la structure de base et le contenu du formulaire initial à l’aide de l’éditeur de modèles.
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
 role: User, Developer, Admin
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2059'
+source-wordcount: '2065'
 ht-degree: 94%
 
 ---
@@ -30,7 +31,7 @@ Par exemple, vous souhaitez que tous les auteurs de formulaire disposent de cert
 * Fournissez le contenu initial pour le formulaire.
 * Spécifiez un thème, des actions Envoyer.
 
-Vous pouvez télécharger et installer le package de contenu de référence [!DNL AEM Forms] à partir du portail de [distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) pour importer des thèmes et modèles de référence dans votre environnement.
+Vous pouvez télécharger et installer le module de contenu de référence [!DNL AEM Forms] à partir du portail de [distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) pour importer des thèmes et modèles de référence dans votre environnement.
 
 ## Utilisation de modèles {#working-with-templates}
 

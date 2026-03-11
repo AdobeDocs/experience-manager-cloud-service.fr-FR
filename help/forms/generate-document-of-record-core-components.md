@@ -2,11 +2,12 @@
 title: Générer un PDF d’envoi (anciennement Document d’enregistrement) pour le Forms adaptatif
 description: Découvrez comment générer un PDF d’envoi à partir des envois de formulaire pour les composants principaux de Forms adaptatif. Créez un PDF du formulaire envoyé à des fins d’archivage ou de référence.
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 7a033951bdf94e5b9d7553be77697d47121eb826
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '3314'
+source-wordcount: '3320'
 ht-degree: 38%
 
 ---

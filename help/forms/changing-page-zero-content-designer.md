@@ -1,17 +1,18 @@
 ---
 title: Comment modifier le contenu de la page zéro dans Designer ?
-description: Modifiez le message affiché sur la page zéro d’un PDF XFA pour les visionneuses non Adobe PDF.
+description: Modifiez le message affiché sur la page zéro d’un PDF XFA pour les visionneuses autres qu’Adobe PDF.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 feature: Adaptive Forms
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
+exl-id: 726ba8a8-bfa4-44ac-8e74-e86a32505f36
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 80%
+source-wordcount: '252'
+ht-degree: 79%
 
 ---
-
 
 # Modifier le contenu de la page zéro dans Designer {#changing-page-zero-content-in-designer}
 
@@ -21,7 +22,7 @@ Le contenu de la page zéro s’affiche par défaut lorsqu’un programme de vis
 
 La version [!DNL AEM Forms] de Designer vous permet de modifier le message affiché sur la page zéro. Pour modifier le message de la page zéro, procédez comme suit :
 
-1. Assurez-vous que la version [!DNL AEM Forms] de Designer est installée. Vous pouvez vérifier la version dans l’écran A propos de Designer.
+1. Assurez-vous que la version [!DNL AEM Forms] de Designer est installée. Vous pouvez vérifier la version dans l’écran À propos de Designer.
 
 1. Ouvrez le formulaire dont vous souhaitez modifier le contenu de la page zéro.
 
@@ -33,7 +34,7 @@ La version [!DNL AEM Forms] de Designer vous permet de modifier le message affic
 1. Ajoutez le nouveau message de la page zéro, au format de texte enrichi, en tant que valeur. Par exemple :
 
 
-   `<body xmlns="https://www.w3.org/1999/xhtml" xmlns:xfa="https://www.xfa.org/schema/xfa-data/1.0/"><p style="font-family:'Times';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </code></p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in">You are seeing this message maybe because you are using a non Adobe PDF Viewer or an Old version of Adobe Reader. You can upgrade to the latest version of Adobe Reader for Windows, Mac, or Linux by visiting <span style="xfa-spacerun:yes"> </code>https://www.adobe.com/go/reader_download_fr.</p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </code></p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in">For more assistance with Adobe Reader visit <span style="xfa-spacerun:yes"> </code>https://www.adobe.com/go/acrreader_fr.</p></body>`
+   `<body xmlns="https://www.w3.org/1999/xhtml" xmlns:xfa="https://www.xfa.org/schema/xfa-data/1.0/"><p style="font-family:'Times';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </code></p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in">You are seeing this message maybe because you are using a non Adobe PDF Viewer or an Old version of Adobe Reader. You can upgrade to the latest version of Adobe Reader for Windows, Mac, or Linux by visiting <span style="xfa-spacerun:yes"> </code>https://www.adobe.com/go/reader_download.</p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </code></p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in">For more assistance with Adobe Reader visit <span style="xfa-spacerun:yes"> </code>https://www.adobe.com/go/acrreader.</p></body>`
 
 1. Enregistrez le formulaire au format PDF.
 
@@ -47,5 +48,5 @@ La version [!DNL AEM Forms] de Designer vous permet de modifier le message affic
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; Télécharger et installer Forms Designer pour créer des modèles de document d’enregistrement](/help/forms/installing-configuring-designer.md)
->* [Utilisez Forms Designer pour créer des modèles de document d’enregistrement et des fragments de formulaire ?](/help/forms/use-forms-designer.md)
+>* [Télécharger et installer Forms Designer pour créer des modèles de document d’enregistrement](/help/forms/installing-configuring-designer.md)
+>* [Utilisez Forms Designer pour créer des modèles de document d’enregistrement (DE) et des fragments de formulaire ?](/help/forms/use-forms-designer.md)

@@ -7,11 +7,12 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1742'
-ht-degree: 70%
+source-wordcount: '1748'
+ht-degree: 72%
 
 ---
 
@@ -24,7 +25,7 @@ ht-degree: 70%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html) |
 | AEM as a Cloud Service | Cet article |
 | Application | Formulaire adaptatif basé sur les composants de base. <br> Pour un formulaire adaptatif basé sur les composants principaux, [cliquez ici](/help/forms/captcha-adaptive-forms-core-components.md). |
 
@@ -33,8 +34,8 @@ CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Ap
 
 AEM Forms as a Cloud Service prend en charge les solutions CAPTCHA suivantes :
 
-* [reCAPTCHA de Google](#configure-recaptcha-service-by-google)
-* [Tourniquet Cloudflare](/help/forms/integrate-adaptive-forms-turnstile.md)
+* [Google reCAPTCHA](#configure-recaptcha-service-by-google)
+* [Cloudflare Turnstile](/help/forms/integrate-adaptive-forms-turnstile.md)
 * [hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha.md)
 
 ## Configurer le service reCAPTCHA de Google {#google-reCAPTCHA}
@@ -47,7 +48,7 @@ Les auteurs de formulaires peuvent utiliser le service reCAPTCHA de Google pour 
 * [reCAPTCHA v2 dans AEM Forms](#steps-to-implement-reCAPTCHA-v2-in-forms)
 
 
-### Configuration de reCAPTCHA Enterprise  {#steps-to-implement-reCAPTCHA-enterprise-in-forms}
+### Configurer reCAPTCHA Enterprise  {#steps-to-implement-reCAPTCHA-enterprise-in-forms}
 
 1. Créez ou sélectionnez un [projet Google Cloud](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin) puis activez l’API [reCAPTCHA Enterprise](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#enable-the-recaptcha-enterprise-api).
 1. Obtenez l’[ID de projet](https://support.google.com/googleapi/answer/7014113?hl=en#:~:text=To%20locate%20your%20project%20ID,a%20member%20of%20are%20displayed) et créez une [clé API](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#create_an_api_key) et une [clé de site pour les sites web](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key).
@@ -55,7 +56,7 @@ Les auteurs de formulaires peuvent utiliser le service reCAPTCHA de Google pour 
 
    1. Accédez à **[!UICONTROL Outils > Général > Navigateur de configuration]**.
    1. Sélectionnez un dossier ou créez-en un, puis activez-le pour les configurations cloud en procédant comme suit :
-      1. Dans l’explorateur de configurations, sélectionnez le dossier, puis sélectionnez **[!UICONTROL Propriétés]**.
+      1. Dans l’explorateur de configuration, sélectionnez le dossier et cliquez sur **[!UICONTROL Propriétés]**.
       1. Dans la boîte de dialogue Propriétés de configuration, activez **[!UICONTROL Configurations cloud]**.
       1. Sélectionnez **[!UICONTROL Enregistrer et fermer]** pour enregistrer la configuration et fermer la boîte de dialogue.
 
@@ -65,7 +66,7 @@ Les auteurs de formulaires peuvent utiliser le service reCAPTCHA de Google pour 
    1. Sélectionnez **[!UICONTROL reCAPTCHA]**. La page de configuration s’ouvre. Sélectionnez le conteneur de configurations que vous avez créé et sélectionnez **[!UICONTROL Créer]**.
    1. Sélectionnez la version comme [!DNL reCAPTCHA Enterprise] et spécifiez le nom, l’ID de projet, la clé de site et la clé API (obtenue à l’étape 2) pour le service reCAPTCHA Enterprise.
    1. Sélectionnez le type de clé. Le type de clé doit être identique à celui que vous avez configuré dans le projet [Google Cloud](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin) par exemple, **Clé de site de case à cocher** ou **Clé de site basée sur les scores**.
-   1. Spécifiez un score [seuil compris entre 0 et 1](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores). Les scores supérieurs ou égaux aux scores de seuil indiquent une interaction humaine, sinon il s’agit d’une interaction avec un robot.
+   1. Spécifiez un [score seuil compris entre 0 et 1](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores). Les scores supérieurs ou égaux aux scores de seuil indiquent une interaction humaine, sinon il s’agit d’une interaction avec un robot.
    1. Sélectionnez **[!UICONTROL Créer]** pour créer la configuration du service cloud.
 
 <!--
@@ -84,7 +85,7 @@ Une fois que le service reCAPTCHA Enterprise est activé, il peut être utilisé
 1. Créez un conteneur de configurations pour les services cloud.
    1. Accédez à **[!UICONTROL Outils > Général > Navigateur de configuration]**.
    1. Sélectionnez un dossier ou créez-en un, puis activez-le pour les configurations cloud en procédant comme suit :
-      1. Dans l’explorateur de configurations, sélectionnez le dossier, puis sélectionnez **[!UICONTROL Propriétés]**.
+      1. Dans l’explorateur de configuration, sélectionnez le dossier et cliquez sur **[!UICONTROL Propriétés]**.
       1. Dans la boîte de dialogue Propriétés de configuration, activez **[!UICONTROL Configurations cloud]**.
       1. Sélectionnez **[!UICONTROL Enregistrer et fermer]** pour enregistrer la configuration et fermer la boîte de dialogue.
 

@@ -7,13 +7,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 7330c03f-7102-43c0-aac6-825cce8a113d
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 100%
+source-wordcount: '817'
+ht-degree: 99%
 
 ---
 
@@ -62,7 +63,7 @@ Vérifiez les paramètres suivants :
    * adobe-lc-forms-content-pkg-&lt;version>.zip
    * adobe-lc-forms-runtime-pkg-&lt;version>.zip
 
-1. Connectez-vous à CQ Web Console (Console Felix) à l’adresse https://&lt;server>:&lt;port>/system/console/bundles.
+1. Connectez-vous à la console web CQ (Console Felix) à l’adresse https://&lt;server>:&lt;port>/system/console/bundles.
 
     Assurez-vous que l’état des bundles suivants est « actif » :
 
@@ -105,7 +106,7 @@ Vérifiez les paramètres suivants :
 
 ### Problème : erreur inattendue rencontrée {#problem-unexpected-error-encountered}
 
-1. Dans l’URL du formulaire, ajoutez un paramètre de demande debugClientLibs et définissez sa valeur sur true (par exemple : https://&lt;server>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;some path>&amp;template=&lt;name of xdp file>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true).
+1. Dans l’URL du formulaire, ajoutez un paramètre de requête debugClientLibs et définissez sa valeur sur true (par exemple : https://&lt;server>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;some path>&amp;template=&lt;name of xdp file>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true).
 1. Dans le navigateur de bureau tel que Chrome, accédez à Outils de développement > Console.
 1. Ouvrez les journaux pour identifier le type d’erreur. Pour plus d’informations sur les journaux, consultez [journaux des formulaires HTML5](/help/forms/enable-logs.md).
 1. Accédez à Outils de développement > Console. Utilisez la trace de la pile pour localiser le code qui déclenche l’erreur. Déboguez l’erreur pour résoudre le problème.
@@ -132,7 +133,7 @@ Vérifiez les paramètres suivants :
    * Dossiers de langues
 
 1. Si l’un des fichiers ou dossiers ci-dessus n’existe pas, réinstallez le package **adobe-lc-forms-runtime-pkg-&lt;version>.zip**.
-1. Accédez au dossier portant le même nom que le nom du paramètre régional et vérifiez son contenu. Le dossier doit contenir les fichiers suivants :
+1. Accédez au dossier portant le même nom que le nom des paramètres régionaux et vérifiez son contenu. Le dossier doit contenir les fichiers suivants :
 
    * I18N.js
    * js.txt

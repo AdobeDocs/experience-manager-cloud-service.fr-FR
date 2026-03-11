@@ -3,12 +3,13 @@ title: Form Analytics avec Adobe Analytics et AEM Forms - Guide complet
 seo-title: "Form Analytics: Track Performance, Boost Conversions with Adobe Analytics & AEM Forms"
 description: Guide complet pour l’analyse de formulaires avec Adobe Analytics et AEM Forms. Suivez les performances des formulaires, analysez le comportement des utilisateurs, réduisez les abandons et optimisez les conversions.
 keywords: analyse de formulaires, suivi des performances des formulaires, analyse d’abandon de formulaire, optimisation des conversions, analyse du comportement des utilisateurs, Adobe Analytics forms, AEM Forms analytics
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '7898'
+source-wordcount: '7904'
 ht-degree: 15%
 
 ---
@@ -70,7 +71,7 @@ Les analyses de formulaires efficaces se concentrent sur les mesures qui affecte
 
 **Mesures comportementales avancées**
 
-- **Analyse de l’entonnoir de conversion** : parcours des utilisateurs sur des formulaires à plusieurs étapes, présentant les schémas de progression et de déperdition
+- **Analyse du Funnel de conversion** : parcours des utilisateurs à l’aide de formulaires à plusieurs étapes, présentant les schémas de progression et de déperdition
 - **Performances des appareils et des navigateurs** : facteurs techniques affectant la réussite dans différents environnements utilisateur
 - **Profondeur de l’engagement des utilisateurs** : temps passé sur les formulaires, modèles d’interaction avec les champs et indicateurs d’attention des utilisateurs
 
@@ -353,7 +354,7 @@ Au-delà des événements de formulaire standard, Adobe Analytics permet un suiv
 
 - **Mesures spécifiques à l’entreprise** : définissez des événements personnalisés à l’aide de l’éditeur de règles pour effectuer le suivi des interactions de formulaires spécifiques à une organisation
 - **Mappage des Parcours utilisateur** : créez des événements personnalisés pour suivre les chemins d’accès utilisateur complexes à travers des formulaires à plusieurs étapes
-- **Analyse de l’entonnoir de conversion** : configurez des événements personnalisés pour mesurer des points de conversion et des étapes de dépôt spécifiques
+- **Analyse du Funnel de conversion** : configurez des événements personnalisés pour mesurer des points de conversion et des étapes de dépôt spécifiques
 - **Événements d’intégration** : suivez les interactions des formulaires avec les systèmes et API externes.
 
 ### Fonctionnalités de création de rapports avancées
@@ -362,7 +363,7 @@ Adobe Analytics fournit des fonctionnalités de création de rapports de niveau 
 
 - **Tableaux de bord en temps réel** : surveiller les performances des formulaires et les interactions utilisateur au fur et à mesure qu’elles se produisent
 - **Analyse de segmentation** : analysez les performances des formulaires sur différents groupes d’utilisateurs, sources de trafic et données démographiques
-- **Visualisation en entonnoir** : visualisez la progression des utilisateurs et utilisatrices au moyen de formulaires à plusieurs étapes et identifiez les opportunités d’optimisation
+- **Visualisation Funnel** : visualisez la progression de l’utilisateur à travers des formulaires à plusieurs étapes et identifiez les opportunités d’optimisation
 - **Analyse des cohortes** : suivez les améliorations des performances des formulaires au fil du temps et mesurez l’impact de l’optimisation.
 - **Suivi sur plusieurs appareils** : comprendre comment les utilisateurs interagissent avec les formulaires sur différents appareils et sessions
 
@@ -465,12 +466,12 @@ Les Forms qui se chargent en moins de 3 secondes ont des taux de remplissage 70 
 - **Analyse des types d’utilisateurs** : comparez les performances entre les nouveaux utilisateurs et les utilisateurs récurrents
 - **Informations démographiques** : comprendre comment différents groupes d’utilisateurs interagissent avec les formulaires.
 
-**Analyse de l’entonnoir de conversion**
+**Analyse du Funnel de conversion**
 
 - **Progression de formulaire à plusieurs étapes** : suivez l’avancement des utilisateurs via des formulaires complexes
 - **Conversion étape par étape** : mesurez les taux d’achèvement à chaque étape de formulaire
-- **Optimisation de l’entonnoir** : identifier et résoudre les goulots d’étranglement dans la progression du formulaire
-- **Intégration du test A/B** : comparaison des performances de l’entonnoir entre les variations de formulaire
+- **Optimisation de Funnel** : identifier et résoudre les goulets d’étranglement dans la progression du formulaire
+- **Intégration du test A/B** : comparaison des performances de funnel entre les variations de formulaire
 
 **Mesures de l’impact commercial**
 
@@ -850,7 +851,7 @@ Comprendre comment interpréter et agir sur les données d’analyse de formulai
 
 **Tableau de bord des indicateurs clés de performance (KPI)**
 
-- **Entonnoir de conversion de formulaire** : visualisez la progression de l’utilisateur tout au long du processus de remplissage du formulaire
+- **Funnel de conversion de formulaire** : visualisez la progression de l’utilisateur tout au long du processus de remplissage du formulaire
 - **Analyse des abandons** : identifier les points spécifiques où les utilisateurs laissent les formulaires incomplets
 - **Tendances des performances** : suivez les modifications des performances des formulaires au fil du temps et identifiez les modèles
 - **Analyse comparative** : comparez les performances sur différents formulaires, périodes et segments d’utilisateurs
@@ -916,7 +917,7 @@ Même avec une implémentation soigneuse, les configurations d’analyse de form
 
 >[!TIP]
 >
->Pour obtenir d’autres conseils de dépannage, consultez nos guides de dépannage de la collection [AEM Forms](/help/forms/troubleshooting-installation-and-configuration.md) et de dépannage de la création de formulaires [&#128279;](/help/forms/form-creation-failing.md).
+>Pour obtenir d’autres conseils de dépannage, consultez nos guides de dépannage de la collection [AEM Forms](/help/forms/troubleshooting-installation-and-configuration.md) et de dépannage de la création de formulaires [](/help/forms/form-creation-failing.md).
 
 **Problèmes de configuration**
 
@@ -1021,7 +1022,7 @@ Cette section FAQ complète aborde les questions courantes sur l’implémentati
 
 **Q : Quelle est la différence entre l’analyse des formulaires et l’analyse générale des sites web ?**
 
-R : L’analyse des formulaires se concentre spécifiquement sur les interactions utilisateur au sein des formulaires, fournissant des informations détaillées sur le comportement au niveau du champ, les modèles d’achèvement et les points d’abandon. Tandis que l’analyse générale des sites Web effectue le suivi des pages vues et des parcours utilisateur globaux, l’analyse des formulaires offre des données granulaires sur les expériences utilisateur spécifiques aux formulaires, les erreurs de validation, les délais d’achèvement des champs et l’analyse de l’entonnoir de conversion dans les formulaires eux-mêmes.
+R : L’analyse des formulaires se concentre spécifiquement sur les interactions utilisateur au sein des formulaires, fournissant des informations détaillées sur le comportement au niveau du champ, les modèles d’achèvement et les points d’abandon. Tandis que l’analyse générale des sites Web effectue le suivi des pages vues et des parcours utilisateur globaux, l’analyse des formulaires offre des données granulaires sur les expériences utilisateur spécifiques aux formulaires, les erreurs de validation, les délais d’achèvement des champs et l’analyse des funnel de conversion dans les formulaires eux-mêmes.
 
 **Q : Ai-je besoin d’une expertise technique pour implémenter l’analyse de formulaires avec Adobe Analytics ?**
 
@@ -1043,7 +1044,7 @@ R : Oui, Adobe Analytics prend en charge le suivi des formulaires inter-domaines
 
 **Q : Comment gérer l’analyse des formulaires pour les formulaires à plusieurs étapes ou de type assistant ?**
 
-R : Les formulaires à plusieurs étapes nécessitent une configuration spéciale pour suivre la progression de chaque étape. Mettez en œuvre des événements personnalisés pour l’achèvement de l’étape, configurez l’analyse de l’entonnoir pour visualiser les points de dépôt entre les étapes et utilisez des variables personnalisées pour suivre les chemins d’accès des utilisateurs via l’assistant de formulaire. Adobe Analytics fournit des conseils spécifiques pour le suivi des formulaires de plusieurs pages.
+R : Les formulaires à plusieurs étapes nécessitent une configuration spéciale pour suivre la progression de chaque étape. Mettez en œuvre des événements personnalisés pour l’achèvement de l’étape, configurez l’analyse funnel pour visualiser les points de dépôt entre les étapes et utilisez des variables personnalisées pour suivre les chemins d’accès des utilisateurs via l’assistant de formulaire. Adobe Analytics fournit des conseils spécifiques pour le suivi des formulaires de plusieurs pages.
 
 **Q : Qu’advient-il des données d’analyse si un utilisateur remplit un formulaire hors ligne ou avec JavaScript désactivé ?**
 
@@ -1083,7 +1084,7 @@ R : Les SPA nécessitent une configuration spéciale pour l’analyse de formula
 
 **Q : Que dois-je faire si l’analyse des formulaires a un impact sur les performances de chargement des pages ?**
 
-R : Optimisez l’implémentation d’Analytics en chargeant les scripts d’analyse de manière asynchrone, en implémentant le chargement différé pour le suivi non critique, en réduisant le nombre de variables et d’événements personnalisés, en utilisant des configurations de règle efficaces dans Adobe Launch et en surveillant les composants Web vitaux principaux pour vous assurer que l’analyse n’a pas d’impact négatif sur l’expérience utilisateur.
+R : Optimisez l’implémentation d’Analytics en chargeant les scripts d’analyse de manière asynchrone, en implémentant le chargement différé pour le suivi non critique, en réduisant le nombre de variables et d’événements personnalisés, en utilisant des configurations de règle efficaces dans Adobe Launch et en surveillant Core Web Vitals pour vous assurer que l’analyse n’a pas d’impact négatif sur l’expérience utilisateur.
 
 **Q : Comment puis-je m’assurer que les analyses de formulaires sont conformes aux réglementations de confidentialité ?**
 

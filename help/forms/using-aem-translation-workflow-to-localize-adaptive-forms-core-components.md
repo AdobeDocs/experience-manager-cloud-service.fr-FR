@@ -1,19 +1,20 @@
 ---
-title: Comment pouvons-nous traduire un formulaire adaptatif basé sur les composants principaux ?
+title: Comment traduire un formulaire adaptatif basé sur les composants principaux ?
 description: Découvrez comment créer un modèle de données de formulaire (FDM) dans AEM Forms, tester le modèle avec des exemples de données et de services et configurer diverses options pour un modèle.
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '891'
 ht-degree: 93%
 
 ---
 
 # Utiliser la traduction automatique ou humaine pour traduire un formulaire adaptatif basé sur des composants principaux {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
-Les formulaires localisés permettent de servir un public plus large dans plusieurs zones géographiques. Le processus de traduction Adobe Experience Manager vous aide à localiser des formulaires adaptatifs et leurs documents d’enregistrement. Vous pouvez faire appel à la **traduction automatique** ou à des **traducteurs humains** pour localiser un formulaire adaptatif.
+Les formulaires localisés permettent de servir une audience plus large dans plusieurs zones géographiques. Le processus de traduction Adobe Experience Manager vous aide à localiser des formulaires adaptatifs et leurs documents d’enregistrement. Vous pouvez faire appel à la **traduction automatique** ou à des **traducteurs humains** pour localiser un formulaire adaptatif.
 
 ## Traduire un formulaire adaptatif et un document d’enregistrement à l’aide de la traduction automatique {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
 
@@ -24,13 +25,13 @@ Le service de traduction automatique traduit directement le contenu de vos formu
 
    * Pour créer un projet de traduction, sélectionnez l’option **[!UICONTROL Créer un projet de traduction]**. Dans le champ **Titre du projet**, indiquez le titre. Par exemple, `Government Reference Site - German locale.`.
    * Pour ajouter un nouveau dictionnaire à un projet de traduction existant, sélectionnez l’option **[!UICONTROL Ajouter à un projet de traduction existant]** et sélectionnez un **[!UICONTROL Projet de traduction existant]**.
-1. Dans le champ **Langues cibles**, spécifiez un paramètre régional (par exemple `German(de)`). Vous pouvez spécifier plusieurs paramètres régionaux. Le formulaire est traduit dans tous les paramètres régionaux spécifiés dans le champ **Langues cibles**. Cliquez sur **Terminé**.
+1. Dans le champ **Langues cibles**, spécifiez des paramètres régionaux (par exemple `German(de)`). Vous pouvez spécifier plusieurs paramètres régionaux. Le formulaire est traduit dans tous les paramètres régionaux spécifiés dans le champ **Langues cibles**. Cliquez sur **Terminé**.
 1. Dans la boîte de dialogue Dictionnaire ajouté, cliquez sur **Ouvrir des projets**.
-1. Dans l’écran Projets , cliquez sur le projet créé. Par exemple, cliquez sur la mosaïque **Site de référence du gouvernement - langue allemande**.
+1. Dans l’écran Projets , cliquez sur le projet créé. Par exemple, cliquez sur la mosaïque **Site de référence du gouvernement - paramètres régionaux Allemand**.
 1. Dans le volet **Tâche de traduction**, cliquez sur l’icône ![aem62forms_downarrow](assets/aem62forms_downarrow.png), puis sur **Démarrer**. Le statut de la mosaïque passe à Brouillon. Une fois la traduction terminée, le statut passe à **Approuvé**. Actualisez la page après quelques minutes et vérifiez le statut.
 
    ![Début de la traduction](/help/forms/assets/adaptive-forms-core-components-start-translation.png)
-1. Une fois que le statut est défini sur **Approuvé** sur la mosaïque **Tâche de traduction**, cliquez sur l’icône ![aem62forms_downarrow](assets/aem62forms_downarrow.png), puis sur **Terminer**.
+1. Une fois que le statut est défini sur **Approuvé** sur la vignette **Tâche de traduction**, cliquez sur l’icône ![aem62forms_downarrow](assets/aem62forms_downarrow.png), puis sur **Terminer**.
 
 1. Pour prévisualiser le formulaire localisé, sélectionnez le formulaire localisé dans l’UI d’AEM Forms. Cliquez sur **[!UICONTROL Aperçu]** > **[!UICONTROL Aperçu au format HTML]**. Rouvrez le formulaire après avoir ajouté `afAcceptLang=<locale code>` à l’URL du formulaire. Par exemple, ajoutez `afAcceptLang=de` pour ouvrir la version allemande du formulaire.
 
@@ -58,7 +59,7 @@ Le service de traduction automatique traduit directement le contenu de vos formu
 
 Avec la traduction humaine, le contenu est envoyé à un prestataire de traduction et traduit par des traducteurs et des traductrices professionnels. Une fois la traduction terminée, le contenu traduit est renvoyé et importé dans AEM. Lorsque votre fournisseur de traduction est intégré à AEM, le contenu est automatiquement transféré entre AEM et le fournisseur de traduction.
 
-Pour la traduction, un dictionnaire contenant les fichiers au format XLIFF est partagé avec les traducteurs et les traductrices professionnels. Le dictionnaire contient un fichier XLIFF distinct pour chaque langue. Chaque fichier XLIFF contient du texte visible par les personnes utilisatrices finales, ainsi que des espaces réservés pour le texte localisé correspondant.
+Pour la traduction, un dictionnaire contenant les fichiers au format XLIFF est partagé avec les traducteurs et les traductrices professionnels. Le dictionnaire contient un fichier XLIFF distinct pour chaque ensemble de paramètres régionaux. Chaque fichier XLIFF contient du texte visible par les personnes utilisatrices finales, ainsi que des espaces réservés pour le texte localisé correspondant.
 
 Effectuez les étapes suivantes pour localiser un formulaire et son document d’enregistrement à l’aide de traducteurs et traductrices humains :
 
@@ -67,19 +68,19 @@ Effectuez les étapes suivantes pour localiser un formulaire et son document d�
 
    * Pour créer un projet de traduction, sélectionnez l’option **[!UICONTROL Créer un projet de traduction]**. Dans le champ **Titre du projet**, indiquez le titre. Par exemple, `Government Reference Site - German locale.`.
    * Pour ajouter un nouveau dictionnaire à un projet de traduction existant, sélectionnez l’option **[!UICONTROL Ajouter à un projet de traduction existant]** et sélectionnez un **[!UICONTROL Projet de traduction existant]**.
-1. Dans le champ **Langues cibles**, spécifiez un paramètre régional (par exemple `German(de)`). Vous pouvez spécifier plusieurs paramètres régionaux. Le formulaire est traduit dans tous les paramètres régionaux spécifiés dans le champ **Langues cibles**. Cliquez sur **Terminé**.
+1. Dans le champ **Langues cibles**, spécifiez des paramètres régionaux (par exemple `German(de)`). Vous pouvez spécifier plusieurs paramètres régionaux. Le formulaire est traduit dans tous les paramètres régionaux spécifiés dans le champ **Langues cibles**. Cliquez sur **Terminé**.
 1. Dans la boîte de dialogue Dictionnaire ajouté, cliquez sur **Ouvrir des projets**.
-1. Dans l’écran Projets , cliquez sur le projet créé. Par exemple, cliquez sur la mosaïque **Site de référence du gouvernement - langue allemande**.
+1. Dans l’écran Projets , cliquez sur le projet créé. Par exemple, cliquez sur la mosaïque **Site de référence du gouvernement - paramètres régionaux Allemand**.
 1. Au bas de la mosaïque **Résumé**, cliquez sur les **points de suspension**. L’écran Propriétés du projet de traduction s’affiche.
 1. Ouvrez l’onglet **[!UICONTROL Avancé]** dans la partie supérieure de l’écran **Propriétés du projet de traduction**. Pour le **[!UICONTROL champ Traduction]**, sélectionnez **[!UICONTROL Traduction humaine]**. Cliquez sur **Enregistrer et fermer** en haut de l’écran.
-1. Dans la mosaïque **Tâche de traduction**, cliquez sur l’icône ![aem62forms_downarrow](assets/aem62forms_downarrow.png), puis sur **Exporter**. Dans la boîte de dialogue Exporter, cliquez sur l’option Télécharger le fichier exporté. Un fichier ZIP est téléchargé.
-   ![Exporter le fichier de traduction](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
+1. Dans la vignette **Tâche de traduction**, cliquez sur l’icône ![aem62forms_downarrow](assets/aem62forms_downarrow.png), puis sur **Exporter**. Dans la boîte de dialogue Exporter, cliquez sur l’option Télécharger le fichier exporté. Un fichier ZIP est téléchargé.
+   ![Exporter un fichier de traduction](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
 1. Extrayez le fichier ZIP téléchargé. Le dossier extrait comporte deux fichiers :
    * translation_export_summary.xml
    * [form-fields-file].xml.
 1. Ouvrez le fichier [form-fields-file].xml pour modification. Ajoutez les chaînes et les messages localisés pour les champs de formulaire. Enregistrez et fermez le fichier.
 1. Compressez les fichiers translation_export_summary.xml et [form-fields-file].xml.
-1. Dans la mosaïque **Tâche de traduction**, cliquez sur l’icône ![aem62forms_downarrow](assets/aem62forms_downarrow.png), puis sur **Importer**. Sélectionnez l’archive contenant [form-fields-file].xml avec des chaînes et des messages localisés pour les champs de formulaire.
+1. Dans la vignette **Tâche de traduction**, cliquez sur l’icône ![aem62forms_downarrow](assets/aem62forms_downarrow.png), puis sur **Importer**. Sélectionnez l’archive contenant [form-fields-file].xml avec des chaînes et des messages localisés pour les champs de formulaire.
 
    ![Importer un fichier de traduction](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
 

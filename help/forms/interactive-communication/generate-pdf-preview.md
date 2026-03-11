@@ -4,10 +4,11 @@ description: Aperçu PDF dans l’éditeur de communication interactive avec dif
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 17b3fe2b-6a1d-4fe2-9a92-a55a50400824
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '333'
 ht-degree: 3%
 
 ---
@@ -46,7 +47,7 @@ Prévisualisez les communications interactives en n’utilisant aucune donnée, 
 
 +++&#x200B;2. Aperçu avec des données JSON locales
 
-2.1. Préparez un fichier JSON structuré. À titre de référence, vous pouvez copier les données d’exemple du [&#x200B; de schéma JSON (FDM)](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) utilisé pour la communication.
+2.1. Préparez un fichier JSON structuré. À titre de référence, vous pouvez copier les données d’exemple du [ de schéma JSON (FDM)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) utilisé pour la communication.
 
 2.2. Dans l’éditeur IC, accédez à **Aperçu PDF** > Utilisation des données locales.
 

@@ -4,10 +4,11 @@ description: Cet article décrit divers cas d’utilisation d’une fonction per
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2184'
+source-wordcount: '2190'
 ht-degree: 34%
 
 ---
@@ -527,7 +528,7 @@ Refactorisez les expressions régulières pour utiliser le constructeur RegExp a
 ## Résolution des problèmes
 
 * Si le gestionnaire d’envoi personnalisé ne s’exécute pas comme prévu dans les projets ou formulaires AEM existants, procédez comme suit :
-   * Assurez-vous que la version [&#x200B; des composants principaux est mise à jour vers la version 3.0.18 et les versions ultérieures](https://github.com/adobe/aem-core-forms-components). Toutefois, pour les formulaires et les projets AEM existants, il existe d’autres étapes à suivre :
+   * Assurez-vous que la version [ des composants principaux est mise à jour vers la version 3.0.18 et les versions ultérieures](https://github.com/adobe/aem-core-forms-components). Toutefois, pour les formulaires et les projets AEM existants, il existe d’autres étapes à suivre :
 
    * Pour le projet AEM, l’utilisateur ou l’utilisatrice doit remplacer toutes les instances de `submitForm('custom:submitSuccess', 'custom:submitError')` par `submitForm()` et déployer le projet via le pipeline Cloud Manager.
 

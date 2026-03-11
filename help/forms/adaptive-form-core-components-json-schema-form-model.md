@@ -4,10 +4,11 @@ description: Découvrez comment créer un schéma JSON pour les composants princ
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 185b12bc-cea9-45c8-9b57-dc313bd0cfaa
-source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1353'
 ht-degree: 82%
 
 ---
@@ -21,7 +22,7 @@ ht-degree: 82%
 | Composants principaux | Cet article |
 
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 La création d’un formulaire adaptatif basé sur des composants principaux à l’aide d’un schéma JSON comme modèle de formulaire nécessite une compréhension de base du schéma JSON. Il est recommandé de lire le contenu suivant avant cet article.
 
@@ -880,7 +881,7 @@ Les formulaires adaptatifs ne prennent pas en charge les éléments suivants de 
 * Seuls les tableaux homogènes sont pris en charge. Par conséquent, la contrainte d’éléments doit être un objet et ne doit pas être un tableau.
 * Références URI dans $ref
 
-## Questions fréquemment posées {#frequently-asked-questions}
+## Questions fréquentes {#frequently-asked-questions}
 
 **Pourquoi est-ce que je ne parviens pas à faire glisser des éléments individuels d’un sous-formulaire (structure générée à partir de n’importe quel type complexe) pour les sous-formulaires répétables (les valeurs minOccurs ou maxOccurs sont supérieures à 1) ?**
 

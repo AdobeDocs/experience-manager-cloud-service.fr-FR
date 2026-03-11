@@ -4,10 +4,11 @@ description: Découvrez comment créer un schéma JSON pour un formulaire adapta
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1394'
 ht-degree: 89%
 
 ---
@@ -905,7 +906,7 @@ Les formulaires adaptatifs ne prennent pas en charge les éléments suivants de 
 * Seuls les tableaux homogènes sont pris en charge. Par conséquent, la contrainte d’éléments doit être un objet et ne doit pas être un tableau.
 * Références URI dans $ref
 
-## Questions fréquemment posées {#frequently-asked-questions}
+## Questions fréquentes {#frequently-asked-questions}
 
 **Pourquoi est-ce que je ne parviens pas à faire glisser des éléments individuels d’un sous-formulaire (structure générée à partir de n’importe quel type complexe) pour les sous-formulaires répétables (les valeurs minOccurs ou maxOccurs sont supérieures à 1) ?**
 

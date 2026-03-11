@@ -3,10 +3,11 @@ title: Comment configurer des modèles de données de formulaires prêts à l’
 description: Découvrez comment intégrer Salesforce à Adaptive Forms.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 184db05b-7237-4dce-8059-03c39b93d7d7
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '495'
 ht-degree: 44%
 
 ---
@@ -63,10 +64,10 @@ Pour accéder au modèle de données de formulaire (FDM) :
 1. Accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Intégrations de données]**.
 1. Sélectionnez le nom du dossier, sélectionnez le **[!UICONTROL modèle de données de Salesforce]**, puis sélectionnez l’icône Modifier ![Modifier](assets/edit.png) pour afficher le modèle de données de formulaire (FDM).
 
-Après avoir configuré le service de configuration du cloud [[!DNL Salesforce] &#x200B;](#configure-salesforce-cloud-service), vous pouvez intégrer des formulaires adaptatifs avec le modèle de données [!DNL Salesforce] prêt à l’emploi.
+Après avoir configuré le service de configuration du cloud [[!DNL Salesforce] ](#configure-salesforce-cloud-service), vous pouvez intégrer des formulaires adaptatifs avec le modèle de données [!DNL Salesforce] prêt à l’emploi.
 
 >[!MORELIKETHIS]
 >
 >* [Configurer les sources de données pour AEM Forms](/help/forms/configure-data-sources.md)
->* [Configurer le stockage Azure pour AEM Forms](/help/forms/configure-azure-storage.md)
+>* [Configuration du stockage Azure pour AEM Forms](/help/forms/configure-azure-storage.md)
 >  [Ajoutez Forms Portal à une page AEM Sites](/help/forms/configure-forms-portal.md)

@@ -4,10 +4,11 @@ description: Découvrez comment intégrer l’interface utilisateur d’AEM Form
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: f946ccea-86d0-4086-8208-9583b8206244
-source-git-commit: 749ad181c7e9e59a0601e0eddd85b0bd0e761f08
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1080'
 ht-degree: 2%
 
 ---
@@ -24,13 +25,13 @@ Avant d’intégrer l’interface utilisateur associée à votre application, v�
 
 - Communication interactive créée et publiée
 - Navigateur avec prise en charge des fenêtres contextuelles activée
-- Associer [les utilisateurs doivent faire partie du groupe forms-associates](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
-- Authentification configurée à l’aide de n’importe quel [mécanisme d’authentification pris en charge par AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/authentication/authentication) (par exemple, SAML 2.0, OAuth ou gestionnaires d’authentification personnalisés)
+- Associer [les utilisateurs doivent faire partie du groupe forms-associates](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
+- Authentification configurée à l’aide de n’importe quel [mécanisme d’authentification pris en charge par AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication) (par exemple, SAML 2.0, OAuth ou gestionnaires d’authentification personnalisés)
 
 >[!NOTE]
 >
 >- Cet article illustre la configuration de l’authentification à l’aide de SAML 2.0 avec [Microsoft Entra ID (Azure AD) comme fournisseur d’identité](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings).
->- Pour l’interface utilisateur associée, des configurations SAML supplémentaires sont requises en plus de la configuration standard expliquée dans l’article [&#x200B; Authentification SAML 2.0 &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/authentication/saml-2-0). Consultez la section [Configurations SAML supplémentaires pour l’interface utilisateur associée](#additional-saml-configurations-for-associate-ui) pour plus d’informations.
+>- Pour l’interface utilisateur associée, des configurations SAML supplémentaires sont requises en plus de la configuration standard expliquée dans l’article [ Authentification SAML 2.0 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0). Consultez la section [Configurations SAML supplémentaires pour l’interface utilisateur associée](#additional-saml-configurations-for-associate-ui) pour plus d’informations.
 
 ### Configurations SAML supplémentaires pour l’interface utilisateur associée
 

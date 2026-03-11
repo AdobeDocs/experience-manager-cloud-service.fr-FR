@@ -4,10 +4,11 @@ description: Découvrez comment configurer le site SharePoint avec un accès lim
 keywords: Comment configurer le site SharePoint avec un accès limité ?, Configuration de SharePoint avec un accès limité, Utilisation de la portée d’autorisation pour limiter l’accès au site SharePoint.
 feature: Adaptive Forms, Core Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '848'
 ht-degree: 23%
 
 ---
@@ -36,12 +37,12 @@ Avantages pour fournir un accès limité au site SharePoint :
 
 Suivez les étapes ci-dessous pour configurer les sites SharePoint avec un accès limité à l’aide des portées d’autorisation :
 
-1. [Créez une application avec &#x200B;](#create-an-application-with-the-limited-permission-in-the-azure-portal)
+1. [Créez une application avec ](#create-an-application-with-the-limited-permission-in-the-azure-portal)
 1. [Définissez la portée de l’autorisation sur l’instance AEM](#set-the-authorization-scope-at-aem-instance)
 
-### Créez une application avec l’autorisation limitée dans le portail Azure
+### Création d’une application avec l’autorisation limitée dans le portail Azure
 
-Créez une application sur le portail Azure [Microsoft](https://portal.azure.com/#home) avec la portée d’autorisation `Sites.Selected` dans l’API Graph Microsoft.
+Créez une application sur le portail Microsoft Azure [](https://portal.azure.com/#home) avec la portée d’autorisation `Sites.Selected` dans l’API Graph Microsoft.
 
 ![Site SharePoint Sélectionné](/help/forms/assets/sharepoint-selected-site.png)
 
@@ -53,7 +54,7 @@ Pour plus d’informations sur la manière de récupérer `Client ID`, `Client S
 
 L’utilisation de l’autorisation API `Sites.Selected` nécessite une application enregistrée sur le portail Azure avec les autorisations appropriées définies pour SharePoint Online Sites. Cette configuration garantit que l’application dispose de l’autorisation nécessaire pour interagir avec le site SharePoint dans la portée définie, fournissant ainsi l’accès limité requis.
 
-Reportez-vous à l’article de blog [&#x200B; - Développement d’applications qui utilisent Sites.Autorisations sélectionnées pour les sites SPO](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476) pour obtenir des instructions sur le développement d’applications qui utilisent des autorisations `Sites.Selected` pour les sites SharePoint Online.
+Reportez-vous à l’article de blog [ - Développement d’applications qui utilisent Sites.Autorisations sélectionnées pour les sites SPO](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476) pour obtenir des instructions sur le développement d’applications qui utilisent des autorisations `Sites.Selected` pour les sites SharePoint Online.
 
 ### Définissez la portée de l’autorisation sur l’instance AEM
 

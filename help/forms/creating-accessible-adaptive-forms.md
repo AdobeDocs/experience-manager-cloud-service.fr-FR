@@ -1,15 +1,16 @@
 ---
 title: Comment créer un Forms adaptatif accessible ?
-description: AEM Forms vous fournit des outils pour créer un Forms adaptatif accessible et vous aide à vous conformer aux normes d’accessibilité.
+description: AEM Forms vous fournit des outils pour créer des Forms adaptatifs accessibles et vous aide à vous conformer aux normes d’accessibilité.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2018'
-ht-degree: 98%
+source-wordcount: '2024'
+ht-degree: 97%
 
 ---
 
@@ -54,7 +55,7 @@ Le thème Ultramarine-Accessible est un thème de référence. Il permet de mont
 
 Vous devez vous focaliser sur quatre aspects clés : navigation au clavier, contraste des couleurs, texte alternatif éloquent pour les images et libellés appropriés pour les contrôles de formulaires afin de rendre un formulaire adaptatif accessible. Pour rendre vos formulaires adaptatifs existants accessibles :
 
-### 1. Appliquez un thème accessible et effectuer des corrections supplémentaires.
+### &#x200B;1. Appliquez un thème accessible et effectuer des corrections supplémentaires.
 
 Appliquez le thème Ultramarine-Accessible à votre formulaire adaptatif existant. Pour appliquer le thème :
 
@@ -123,7 +124,7 @@ Pour utiliser l’option d’accessibilité, procédez comme suit :
 >* Dans le cas de la case d’option et de la case à cocher, deux options seulement sont possibles dans le cadre de l’accessibilité à savoir : Texte personnalisé et Titre.
 >* Pour les formulaires adaptatifs basés sur XFA, l’option d’accessibilité est héritée des options d’accessibilité définies dans le fichier XDP. Les info-bulles du fichier XDP sont associées au champ Brève description et Légende correspond à Titre. Les autres options fonctionnent normalement.
 
-### 3. Fournissez des équivalents textuels pour les images {#provide-text-equivalents-for-images}
+### &#x200B;3. Fournissez des équivalents textuels pour les images {#provide-text-equivalents-for-images}
 
 Les images peuvent aider à améliorer la compréhension pour certaines personnes utilisatrices. Cependant, lorsqu’un lecteur d’écran est utilisé, les images réduisent l’accessibilité du formulaire. Si vous optez pour l’utilisation d’images, veuillez fournir des descriptions textuelles pour l’ensemble des images.
 
@@ -133,7 +134,7 @@ Sélectionnez un composant d’image, puis ![cmppr](assets/cmppr.png). Dans la b
 
 ![Texte alternatif d’une image](assets/image-properties.png)
 
-### 4. Fournissez un contraste des couleurs suffisant {#provide-sufficient-color-contrast}
+### &#x200B;4. Fournissez un contraste des couleurs suffisant {#provide-sufficient-color-contrast}
 
 Dans le cadre des fonctions d’accessibilité, il convient de tenir compte de quelques points supplémentaires concernant l’utilisation des couleurs. Les créateurs et créatrices de formulaires peuvent utiliser des couleurs pour améliorer l’apparence des formulaires, en mettant en surbrillance différents composants. Cependant, une utilisation inappropriée des couleurs peut rendre le formulaire difficile à lire, voire totalement illisible, pour certaines personnes en situation de handicap.
 
@@ -143,7 +144,7 @@ Il est conseillé d’utiliser la police et les couleurs d’arrière-plan par d
 
 <!-- See [Creating custom themes for Adaptive Forms](creating-custom-adaptive-form-themes.md), for more information about changing the color contrast and theme for the Adaptive Forms. -->
 
-### 5. Assurez-vous que les commandes de formulaire sont accessibles au clavier {#ensure-that-form-controls-are-keyboard-accessible}
+### &#x200B;5. Assurez-vous que les commandes de formulaire sont accessibles au clavier {#ensure-that-form-controls-are-keyboard-accessible}
 
 Un formulaire accessible peut être rempli complètement en utilisant uniquement le clavier ou un périphérique de saisie équivalent. Certaines personnes ayant une mobilité réduite ou malvoyantes sont parfois contraintes de n’utiliser que le clavier. De plus, de nombreuses personnes préfèrent saisir leurs données au moyen du clavier plutôt que de la souris. En proposant différents modes de saisie des données, vous créez également des formulaires qui répondent aux préférences de l’ensemble des utilisateurs et utilisatrices.
 
@@ -158,7 +159,7 @@ Les raccourcis clavier suivants sont disponibles dans [!DNL AEM Forms].
 | Réinitialiser les données saisies dans un formulaire | Alt+R |
 | Envoyer un formulaire | Alt+S |
 
-En outre, plusieurs raccourcis clavier sont disponibles pour le composant **[!UICONTROL Sélecteur de date]** dans les formulaires adaptatifs. Pour activer les touches de raccourci, sélectionnez le composant **[!UICONTROL Sélecteur de date]**, puis ![Configurer](assets/configure-icon.svg) pour ouvrir les propriétés. Dans la section **[!UICONTROL Modèles]** , sélectionnez un modèle d’affichage à l’aide des listes déroulantes **[!UICONTROL Type]** et **[!UICONTROL Modèle]** . Enregistrez les propriétés pour activer l’utilisation de raccourcis clavier pour le composant **[!UICONTROL Sélecteur de date]**.
+En outre, plusieurs raccourcis clavier sont disponibles pour le composant **[!UICONTROL Sélecteur de date]** dans les formulaires adaptatifs. Pour activer les touches de raccourci, sélectionnez le composant **[!UICONTROL Sélecteur de date]**, puis ![Configurer](assets/configure-icon.svg) pour ouvrir les propriétés. Dans la section **[!UICONTROL Modèles]**, sélectionnez un modèle d’affichage à l’aide des listes déroulantes **[!UICONTROL Type]** et **[!UICONTROL Modèle]**. Enregistrez les propriétés pour activer l’utilisation de raccourcis clavier pour le composant **[!UICONTROL Sélecteur de date]**.
 
 Les touches de raccourci clavier suivantes sont disponibles pour le composant Sélecteur de date dans les formulaires adaptatifs :
 

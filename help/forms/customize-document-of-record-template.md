@@ -3,13 +3,14 @@ title: Comment personnaliser un modèle de document d’enregistrement généré
 description: Découvrez comment télécharger, personnaliser et charger à nouveau le modèle de document d’enregistrement (DE) généré automatiquement pour le Forms adaptatif à l’aide d’Adobe Forms Designer.
 feature: Adaptive Forms, Core Components, Foundation Components
 role: User, Developer
-source-git-commit: 51ec9ef76a8f3f9b7bf2cdc25b03f72e286f586f
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
+exl-id: 2416add3-0b9d-4a8d-a84d-d65c0762d8e8
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 3%
+source-wordcount: '852'
+ht-degree: 4%
 
 ---
-
 
 # Personnaliser le modèle de document d’enregistrement généré automatiquement
 
@@ -118,7 +119,7 @@ Pour vérifier que le modèle personnalisé est correctement appliqué :
 |---|---|
 | Le modèle personnalisé ne se charge pas. | Assurez-vous que le fichier XDP est valide et n’est pas corrompu. Vérifiez que vous disposez des autorisations requises pour charger des fichiers vers AEM Forms. |
 | Les personnalisations n’apparaissent pas dans le document d’enregistrement généré. | Vérifiez que vous avez sélectionné le modèle personnalisé correct dans la section **[!UICONTROL Configuration du modèle de document d’enregistrement]** des propriétés du formulaire. |
-| Problèmes de mise en page ou de mise en forme dans le PDF généré. | Vérifiez que les personnalisations dans Adobe Forms Designer respectent les [&#x200B; conventions relatives aux modèles de base &#x200B;](/help/forms/generate-document-of-record-core-components.md#base-template-conventions). Assurez-vous que tous les éléments sont correctement positionnés dans la structure du modèle. |
+| Problèmes de mise en page ou de mise en forme dans le PDF généré. | Vérifiez que les personnalisations dans Adobe Forms Designer respectent les [ conventions relatives aux modèles de base ](/help/forms/generate-document-of-record-core-components.md#base-template-conventions). Assurez-vous que tous les éléments sont correctement positionnés dans la structure du modèle. |
 
 ## Voir également {#see-also}
 
@@ -126,4 +127,3 @@ Pour vérifier que le modèle personnalisé est correctement appliqué :
 * [Générer un document d’enregistrement pour le Forms adaptatif (composants de base)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Modèle de base d’un document d’enregistrement](/help/forms/generate-document-of-record-core-components.md#base-template-of-a-document-of-record)
 * [Personnaliser les informations d’identité graphique d’un document d’enregistrement](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record)
-

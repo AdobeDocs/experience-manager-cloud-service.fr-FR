@@ -5,10 +5,11 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 keywords: Améliorations du service d’appel dans VRE, remplissage des options de liste déroulante à l’aide du service d’appel, Définition du panneau répétable à l’aide de la sortie du service d’appel, Définition du panneau à l’aide de la sortie du service d’appel, Utilisation du paramètre de sortie du service d’appel pour valider d’autres champs.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 17dfa6e28d2510484731a736c1cf7fda22961e66
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2150'
+source-wordcount: '2156'
 ht-degree: 1%
 
 ---
@@ -385,7 +386,7 @@ Cette règle lit le tableau JSON, extrait les valeurs de propriété `region` et
 
 De même, configurez l’action de la liste déroulante `Select Sales Representative` dans le gestionnaire de réussite.
 
-![Payload d’événement pour le tableau JSON &#x200B;](/help/forms/assets/event-payload.png)
+![Payload d’événement pour le tableau JSON ](/help/forms/assets/event-payload.png)
 
 Lorsque le formulaire charge, les données JSON sont renvoyées et la fonction personnalisée extrait les valeurs de propriété. La liste déroulante est automatiquement renseignée :
 

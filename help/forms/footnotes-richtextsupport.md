@@ -2,12 +2,13 @@
 title: Comment ajouter une note de bas de page à un formulaire adaptatif ?
 description: Utilisez l’éditeur de texte enrichi (RTE) pour les notes de bas de page dans un formulaire adaptatif.
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
 role: User, Developer
-source-git-commit: a7265b4f8df34efc09076c03d1433f9aae542e76
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 72%
+source-wordcount: '456'
+ht-degree: 71%
 
 ---
 

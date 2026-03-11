@@ -1,28 +1,29 @@
 ---
-title: Comparer deux formulaires adaptatifs distincts.
+title: Comparez deux formulaires adaptatifs distincts.
 description: Comparez deux formulaires distincts en fonction des champs, du contenu et des composants de formulaire.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: ce4ad231-a766-4ab0-8649-20cf16bf54ce
 role: User, Developer, Admin
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 3%
+source-wordcount: '159'
+ht-degree: 63%
 
 ---
 
 # Comparer des formulaires adaptatifs {#compare-two-forms}
 
-<span class="preview"> Il s’agit d’une fonctionnalité de préversion accessible par le biais de notre [canal de pré-version](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features). </span>
+<span class="preview">Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
-Lorsque les auteurs de formulaires doivent comparer deux formulaires distincts en fonction des champs, du contenu et des composants de formulaire, ils comparent les deux formulaires. L’auteur du formulaire doit s’assurer que les deux formulaires se trouvent dans le même répertoire ou dossier pour pouvoir les comparer. Pour comparer deux formulaires adaptatifs distincts, procédez comme suit :
+Lorsque les auteurs de formulaires doivent comparer deux formulaires distincts en fonction des composants de champs, de contenu et de formulaire, ils comparent les deux formulaires. L’auteur du formulaire doit s’assurer que les deux formulaires se trouvent dans le même répertoire ou dossier pour pouvoir les comparer. Pour comparer deux formulaires adaptatifs distincts, procédez comme suit :
 
-1. Sélectionnez les formulaires adaptatifs et cliquez sur **[!UICONTROL Comparer]**.
+1. Sélectionnez des formulaires adaptatifs et cliquez sur **[!UICONTROL Comparer]**.
 
-   ![Comparaison de formulaires adaptatifs](compare-two-forms.png)
+   ![Comparer des formulaires adaptatifs](compare-two-forms.png)
 
-1. Lorsque vous cliquez sur , deux formulaires s’affichent en mode Aperçu. Il sélectionne le premier formulaire comme formulaire de base à comparer au second formulaire et compare le contenu entre les deux formulaires, qui sont similaires et différenciés. Le contenu différencié du premier formulaire est marqué en vert comme illustré dans l’image.
+1. Après avoir cliqué, vous voyez deux formulaires dans le mode de prévisualisation. Le premier formulaire est sélectionné comme formulaire de base à comparer au second, puis le contenu est comparé entre les deux formulaires pour déterminer les éléments similaires et les différences. Le contenu présentant des différences par rapport au premier formulaire est marqué en vert, comme illustré dans l’image.
 
    ![Formulaires comparés](compared-forms.png)
 

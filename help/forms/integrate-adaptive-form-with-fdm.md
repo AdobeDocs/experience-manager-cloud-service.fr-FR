@@ -1,12 +1,14 @@
 ---
 title: Comment intégrer le modèle de données de formulaire (FDM) d’un formulaire à un formulaire adaptatif ?
-description: Découvrez comment créer des formulaires basés sur un modèle de données de formulaire (FDM). Générer et modifiez des données d’exemples pour les objets de modèle de données dans FDM.
+description: Découvrez comment créer des formulaires basés sur un modèle de données de formulaire (FDM). Générer et modifiez des données d’exemple pour les objets de modèle de données dans FDM.
 feature: Edge Delivery Services, Adaptive Forms, Form Data Model
 role: Admin, User
-source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
+exl-id: f08fb365-8750-4b81-9877-c382e7aebba0
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 31%
+source-wordcount: '670'
+ht-degree: 38%
 
 ---
 
@@ -72,13 +74,13 @@ Pour configurer le modèle de données de formulaire avec un formulaire adaptati
 
    >[!NOTE]
    >
-   > * Si l’icône **Modifier les propriétés de formulaire** ne s’affiche pas dans l’interface de l’éditeur universel, activez l’extension **Modifier les propriétés de formulaire** dans Extension Manager.
-   > * Consultez l’article [Caractéristiques des fonctionnalités d’Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) pour savoir comment activer ou désactiver les extensions dans l’éditeur universel.
+   > * Si l’icône **Modifier les propriétés du formulaire** ne s’affiche pas dans l’interface de l’éditeur universel, activez l’extension **Modifier les propriétés du formulaire** dans Extension Manager.
+   > * Consultez l’article [Principales fonctionnalités d’Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) pour savoir comment activer et désactiver les extensions dans l’éditeur universel.
 
 1. Cliquez sur l’onglet **Envoi** et sélectionnez **[!UICONTROL Envoyer à l’aide du modèle de données de formulaire]**.
 
    ![OneDrive GIF](/help/forms/assets/submit-uisng-fdm-ue.png)
-Si vous sélectionnez **Enregistrer les pièces jointes avec le nom d’origine**, les pièces jointes sont stockées dans le dossier à l’aide de leurs noms de fichier d’origine. Vous pouvez également enregistrer un document d’enregistrement (DE) dans le stockage Blob Azure.
+Si vous sélectionnez **Enregistrer les pièces jointes avec le nom d’origine**, les pièces jointes sont stockées dans le dossier à l’aide de leurs noms de fichier d’origine. Vous pouvez également enregistrer un document d’enregistrement (DE) dans le stockage Blob d’Azure.
 
 1. Sélectionnez la **[!UICONTROL configuration de stockage]** où vous souhaitez enregistrer vos données.
 1. Cliquez sur **[!UICONTROL Enregistrer et fermer]**

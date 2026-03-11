@@ -3,13 +3,14 @@ title: Comment configurer l’authentification JWT (JSON Web Token) ?
 description: Découvrez comment configurer l’authentification JWT (JSON Web Token) pour Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
-source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
+exl-id: e7747b21-f680-4b3a-bf05-d0fcf0af0999
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 4%
+source-wordcount: '433'
+ht-degree: 5%
 
 ---
-
 
 # Authentification de serveur à serveur JWT (JSON Web Token)
 
@@ -20,7 +21,7 @@ L’authentification serveur à serveur JWT dans AEM Forms, en particulier pour 
 Avant de commencer, vérifiez que les conditions préalables suivantes sont remplies :
 
 * Assurez-vous d’avoir accès au [Cloud Manager Adobe](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html) spécifique à l’environnement que vous utilisez.
-* Attribuez le rôle [Administrateur système ou Développeur pour accéder à Adobe Cloud Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/requirements/access-rights).
+* Attribuez le rôle [Administrateur système ou Développeur pour accéder à Adobe Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights).
 
 ## Comment générer un jeton d’accès à l’aide des informations d’identification JWT ?
 
@@ -49,7 +50,7 @@ Suivez les étapes ci-dessous qui vous montrent comment générer un jeton d’a
 
    Une fois que vous avez cliqué sur Créer un compte technique, les informations requises pour générer un jeton d’accès tel que l’identifiant client et le secret client, ainsi que d’autres informations de compte techniques, y compris la clé privée, la clé publique et la date d’expiration, sont générées.
 
-   ![&#x200B; Informations d’identification JWT &#x200B;](/help/forms/assets/jwt-credentials.png)
+   ![ Informations d’identification JWT ](/help/forms/assets/jwt-credentials.png)
 
 
 3. **Générer et enregistrer des informations d’identification**

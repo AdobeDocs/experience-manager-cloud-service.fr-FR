@@ -3,11 +3,12 @@ title: Comment ajouter la prise en charge de nouveaux paramètres régionaux à 
 description: Découvrez comment ajouter de nouveaux paramètres régionaux pour un formulaire adaptatif.
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 role: User, Developer
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2154'
+source-wordcount: '2160'
 ht-degree: 9%
 
 ---
@@ -125,7 +126,7 @@ Pour ajouter la prise en charge de nouveaux paramètres régionaux à un formula
 
    **Où trouver ces informations ?**
 
-   Pour obtenir des instructions détaillées sur la localisation de ces détails, reportez-vous à l’article Adobe Experience League « [Accès à Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git) ».
+   Pour obtenir des instructions détaillées sur la localisation de ces détails, reportez-vous à l’article Adobe Experience League « [Accès à Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) ».
 
    **Votre projet est prêt !**
 
@@ -402,12 +403,12 @@ Ces étapes vous guident tout au long de la prévisualisation d’un formulaire 
 ## Bonnes pratiques pour la prise en charge d’une nouvelle localisation {#best-practices}
 
 * Adobe recommande de créer un projet de traduction après la création d’un formulaire adaptatif. Cela simplifie le processus de localisation.
-* Lorsque les composants Zone numérique et Sélecteur de date sont traduits en paramètres régionaux spécifiques, des problèmes de mise en forme peuvent survenir. Pour atténuer ce problème, une option **Langue** a été intégrée dans la boîte de dialogue de configuration du composant [Sélecteur de date](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) et [Zone numérique](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
+* Lorsque les composants Zone numérique et Sélecteur de date sont traduits en paramètres régionaux spécifiques, des problèmes de mise en forme peuvent survenir. Pour atténuer ce problème, une option **Langue** a été intégrée dans la boîte de dialogue de configuration du composant [Sélecteur de date](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) et [Zone numérique](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
 
 
 * Gestion des nouveaux champs :
 
-   * **Traduction automatique** : si vous utilisez la traduction automatique, vous devez recréer le dictionnaire et [&#x200B; le projet de traduction](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md) après avoir ajouté de nouveaux champs à un formulaire adaptatif existant. Les nouveaux champs ajoutés après le projet de traduction initial ne sont toujours pas traduits.
+   * **Traduction automatique** : si vous utilisez la traduction automatique, vous devez recréer le dictionnaire et [ le projet de traduction](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md) après avoir ajouté de nouveaux champs à un formulaire adaptatif existant. Les nouveaux champs ajoutés après le projet de traduction initial ne sont toujours pas traduits.
 
    * **Traduction humaine** : pour les workflows de traduction humaine, exportez le dictionnaire à l’aide de l’interface utilisateur à l’adresse `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. Mettez à jour le dictionnaire pour les nouveaux champs et chargez la version révisée.
 

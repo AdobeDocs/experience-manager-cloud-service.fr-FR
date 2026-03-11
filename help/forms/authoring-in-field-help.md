@@ -1,19 +1,20 @@
 ---
-title: Comment ajouter du texte d’aide pour AEM champs de Forms adaptatif ?
-description: AEM Forms vous permet d’ajouter une aide contextuelle aux champs et aux panneaux de formulaire adaptatif sous forme de texte ou de contenu multimédia enrichi, y compris des vidéos.
+title: Comment ajouter du texte d’aide pour les champs de Forms adaptatif d’AEM ?
+description: AEM Forms vous permet d’ajouter une aide contextuelle aux champs et aux panneaux des formulaires adaptatifs sous forme de texte ou de contenu multimédia enrichi, comme des vidéos.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 feature: Adaptive Forms, Foundation Components
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: d661f869f1264e4a2317692ab6fd22263c89e072
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
+exl-id: 9abc6e42-3b53-4dca-bd6a-ced5cf6c6ac4
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 91%
+source-wordcount: '375'
+ht-degree: 90%
 
 ---
-
 
 # Création d’une aide contextuelle pour les champs de formulaire{#authoring-in-context-help-for-form-fields}
 

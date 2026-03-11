@@ -1,36 +1,37 @@
 ---
-title: Comment résoudre les problèmes de création de formulaires ?
-description: Résolution des problèmes liés à la création de formulaires dans l’environnement AEM Forms as a Cloud Service.
+title: Comment résoudre les problèmes liés à la création de formulaires ?
+description: Résolution des problèmes de création de formulaires dans l’environnement AEM Forms as a Cloud Service.
 feature: Adaptive Forms
 role: User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 169ea727-0941-4a1d-bc33-d9fe208b27ab
-source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 5%
+source-wordcount: '189'
+ht-degree: 6%
 
 ---
 
 # Problème lors de la publication de formulaires{#form-creation-fails}
 
-Après la mise à jour des utilisateurs vers AEM Forms as a Cloud Service `2024.5.16461` :
+Après la mise à jour des utilisateurs vers la version `2024.5.16461` d’AEM Forms as a Cloud Service :
 
-**Certains utilisateurs** peuvent rencontrer des problèmes lors de la création de formulaires. Le problème est tel que, lorsqu’un utilisateur crée un formulaire, le message d’erreur suivant s’affiche dans la boîte de dialogue de création :
+**Certains utilisateurs et utilisatrices peuvent rencontrer un problème lors de la création des formulaires. Lorsqu’un utilisateur ou une utilisatrice crée un formulaire** le message d’erreur suivant s’affiche dans la boîte de dialogue de création :
 
 `A server error occurred. Try again after sometime.`
 
 ## Cause {#cause-form-creation-fails}
 
-Le problème se produit car l’auteur publie le formulaire sans **publier au préalable le modèle** utilisé dans celui-ci. Cela entraîne l’ajout de `jcr:uuid` et d’autres propriétés protégées et générées par le système au noeud `<template-path>/initial/jcr:content`, ce qui entraîne des échecs lors de la création ultérieure du formulaire.
+Le problème se produit, car l’auteur publie le formulaire sans **publier d’abord le modèle** utilisé dans celui-ci. Cela entraîne l’ajout de la `jcr:uuid` et d’autres propriétés protégées et générées par le système au nœud `<template-path>/initial/jcr:content`, ce qui entraîne des échecs lors de la création ultérieure du formulaire.
 
 ## Solution {#resolution-form-creation-fails}
 
 Pour résoudre le problème, procédez comme suit :
 
-1. Assurez-vous que le modèle que vous utilisez dans votre formulaire ne comporte pas les propriétés protégées `jcr:uuid` et d’autres propriétés générées par le système sur le chemin `<template-path>/initial/jcr:content node`.
-1. Publish le modèle de manière explicite à l’aide de la console de modèles.
-1. Maintenant, lorsque votre modèle est publié, essayez de créer de nouveaux formulaires à l’aide de ce modèle.
-1. Si le modèle que vous avez utilisé est mis à jour dans les prochaines versions, Publish à nouveau le modèle (comme indiqué à l’étape 2) afin d’éviter des problèmes d’échec de création de formulaire.
+1. Assurez-vous que le modèle que vous utilisez dans votre formulaire ne comporte pas le `jcr:uuid` et d’autres propriétés protégées générées par le système au niveau du chemin d’accès `<template-path>/initial/jcr:content node`.
+1. Publiez le modèle explicitement à l’aide de la console de modèles.
+1. Maintenant, une fois votre modèle publié, essayez de créer de nouveaux formulaires à l’aide du modèle.
+1. Si le modèle que vous avez utilisé est mis à jour dans les prochaines versions, publiez-le à nouveau (comme indiqué à l’étape 2) pour éviter tout problème d’échec de création de formulaire.
 
 
 <!--

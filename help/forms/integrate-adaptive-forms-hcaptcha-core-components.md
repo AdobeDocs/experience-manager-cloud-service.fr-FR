@@ -4,11 +4,12 @@ description: Améliorez sans effort la sécurité des formulaires grâce au serv
 topic-tags: Adaptive Forms, author
 keywords: hCaptcha&reg; service, Forms adaptatif, défi CAPTCHA, prévention des robots, composants principaux, sécurité de l’envoi des formulaires, prévention des spams des formulaires
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 6c559df2-7b6a-42fe-b44c-29a782570a0c
 role: User, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '967'
 ht-degree: 53%
 
 ---

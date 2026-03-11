@@ -3,12 +3,13 @@ title: Fonctionnalités d’accès anticipé actuelles d’ [!DNL Adobe Experien
 description: Fonctionnalités d’accès anticipé actuelles d’ [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
 Role: developer, user, author
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 800bbd2adf423b4eb00e91b7bb4dd26a37a2e032
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '3229'
+source-wordcount: '3235'
 ht-degree: 20%
 
 ---
@@ -323,7 +324,7 @@ Forms Manager prend désormais en charge le contrôle de version pour les Forms 
 
 ### Amélioration de l’accessibilité des composants de formulaire
 
-Les composants principaux de Forms adaptatifs introduisent un balisage sémantique compatible WCAG pour les groupes de cases à cocher, les groupes de boutons radio et les panneaux. Ces composants exploitent désormais les éléments `<fieldset>` et `<legend>` pour établir des relations significatives entre les libellés de groupe et leurs options pour les technologies d’assistance. Voir [&#x200B; Prise en charge des jeux de champs et des légendes dans le Forms adaptatif](/help/forms/creating-accessible-adaptive-forms.md#fieldset-legend-accessibility).
+Les composants principaux de Forms adaptatifs introduisent un balisage sémantique compatible WCAG pour les groupes de cases à cocher, les groupes de boutons radio et les panneaux. Ces composants exploitent désormais les éléments `<fieldset>` et `<legend>` pour établir des relations significatives entre les libellés de groupe et leurs options pour les technologies d’assistance. Voir [ Prise en charge des jeux de champs et des légendes dans le Forms adaptatif](/help/forms/creating-accessible-adaptive-forms.md#fieldset-legend-accessibility).
 
 ## Voir également
 

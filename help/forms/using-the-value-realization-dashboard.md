@@ -1,21 +1,23 @@
 ---
-title: Utiliser le tableau de bord de réalisation des valeurs pour analyser les tendances d’utilisation des formulaires et documents
+title: Utilisation du tableau de bord de réalisation de valeurs pour analyser les tendances d’utilisation des formulaires et documents
 description: Découvrez comment utiliser le tableau de bord des informations d’utilisation de Forms pour surveiller et comprendre les performances de vos formulaires et de vos fragments de formulaire.
 role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: 09d383638d6caba596d22a7c6b544768de5245a0
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
+exl-id: f58aa2df-dfb6-4eb4-b20d-e81bb01be8a7
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 1%
+source-wordcount: '879'
+ht-degree: 6%
 
 ---
 
-# Utiliser le tableau de bord de réalisation des valeurs pour analyser les tendances d’utilisation des formulaires et documents
+# Utilisation du tableau de bord de réalisation de valeurs pour analyser les tendances d’utilisation des formulaires et documents
 
-<span class="preview"> Cette fonctionnalité est disponible via le programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail à l’adresse aem-forms-ea@adobe.com. <span>
+<span class="preview"> Cette fonctionnalité est disponible par le biais du programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail à l’adresse aem-forms-ea@adobe.com. <span>
 
 ![Tableau de bord de réalisation des valeurs](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
 
@@ -116,7 +118,7 @@ Cette section fournit des informations sur l’utilisation des fragments de form
 - **Informations à extraire :**
    - **Taux de réutilisation des fragments :** permet de surveiller le taux de réutilisation des fragments existants dans de nouveaux formulaires. Un nombre plus élevé indique une meilleure utilisation des composants réutilisables et une efficacité améliorée.
 
-## Exemples de scénarios
+## Exemples de scénario
 
 - **Scénario :** vous constatez une baisse soudaine des « envois de formulaire ».
    - **Action :** étudier les causes potentielles telles que le temps d’arrêt du formulaire, des problèmes de convivialité ou une baisse du trafic sur la page de destination du formulaire.
@@ -129,4 +131,4 @@ Cette section fournit des informations sur l’utilisation des fragments de form
 
 ## Voir également
 
-- [Présentation de votre tableau de bord de réalisation des valeurs](/help/forms/aem-forms-value-realization-dashboard.md)
+- [Comprendre votre tableau de bord de réalisation de valeurs](/help/forms/aem-forms-value-realization-dashboard.md)

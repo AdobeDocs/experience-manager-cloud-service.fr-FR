@@ -4,14 +4,16 @@ Description: Learn how to configure an Azure SQL Database connection in AEM Form
 Keywords: Azure SQL integration with AEM Forms, Connecting Adaptive Forms to Azure SQL Database, JDBC connection for Azure SQL in AEM Forms, Storing Adaptive Form data in Azure SQL
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: e29f70aa1a8164787c7d310a05c24d7e501803e5
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
+exl-id: 111accf7-bf34-499c-832e-c001ea68f6d3
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '607'
 ht-degree: 4%
 
 ---
 
-# Connecter un formulaire adaptatif au stockage Azure SQL
+# Connecter un formulaire adaptatif au stockage SQL Azure
 
 Le Forms adaptatif dans Adobe Experience Manager (AEM) peut s’intégrer à des bases de données externes pour stocker ou récupérer des données.
 Cet article explique comment connecter un formulaire adaptatif à une base de données SQL Azure à l’aide de JDBC via AEM as a Cloud Service.
@@ -22,25 +24,25 @@ Cet article explique comment connecter un formulaire adaptatif à une base de do
 
 ## Avantages
 
-L’intégration de Forms adaptatif à Azure SQL offre plusieurs avantages :
+L’intégration de Forms adaptatif à Azure SQL présente plusieurs avantages :
 
 * **Interaction des données en temps réel :** permet la lecture et l’écriture en direct de données entre les formulaires et la base de données Azure.
 * **Évolutivité :** Azure SQL offre des performances de base de données évolutives adaptées aux applications d’entreprise.
 * **Stockage centralisé des données :** permet de conserver en toute sécurité les envois de formulaires et les données récupérées dans un emplacement central.
-* **Conformité en matière de sécurité :** exploite le réseau intégré, le pare-feu et les options de chiffrement d’Azure pour garantir une communication sécurisée.
+* **Conformité en matière de sécurité :** exploite les options intégrées de réseau, de pare-feu et de chiffrement d’Azure pour garantir une communication sécurisée.
 * **Intégration native au cloud :** idéale pour les architectures modernes et primées sur le cloud utilisant AEM as a Cloud Service.
 
 ## Conditions préalables
 
-* Créez [Base de données SQL Azure](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&tabs=azure-portal) et assurez-vous que **connexion proxy** est activée.
+* Créez la [base de données SQL Azure](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&tabs=azure-portal) et assurez-vous que la **connexion proxy** est activée.
 
   >[!NOTE]
   >
   > Accédez à : `Azure Portal → SQL Server → Security → Networking → Connectivity` pour activer **connexion proxy**.
 
-  ![Créer Azure Db](/help/forms/assets/create-azure-db.png)
+  ![Créer Une Base De Données Azure](/help/forms/assets/create-azure-db.png)
 
-* Activez [la mise en réseau avancée configurée à l’aide d’une adresse IP de sortie dédiée](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) pour la base de données Azure créée.
+* Activez la [mise en réseau avancée configurée à l’aide d’une adresse IP de sortie dédiée](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) pour la base de données Azure créée.
 
   >[!NOTE]
   >
@@ -58,7 +60,7 @@ Par exemple : `portOrigin: 30433 → portDest: 1433`
      > Vous pouvez contacter l’assistance Cloud Manager d’Adobe pour configurer le transfert de port.
 
 
-## Étapes de connexion de Forms adaptatif à Azure SQL
+## Procédure de connexion de Forms adaptatif à Azure SQL
 
 **Étape 1 : clonage du référentiel Git AEM as a Cloud Service**
 
@@ -72,7 +74,7 @@ Par exemple : `portOrigin: 30433 → portDest: 1433`
 
    **Où trouver ces informations ?**
 
-   Pour obtenir des instructions détaillées sur la localisation de ces détails, reportez-vous à l’article Adobe Experience League « [Accès à Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git) ».
+   Pour obtenir des instructions détaillées sur la localisation de ces détails, reportez-vous à l’article Adobe Experience League « [Accès à Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) ».
 
    Une fois la commande terminée, un nouveau dossier est créé dans votre répertoire local. Ce dossier porte le nom de votre application.
 
@@ -84,7 +86,7 @@ Incluez la dépendance [pilote SQL](https://central.sonatype.com/artifact/com.mi
 
 >[!NOTE]
 >
-> Pour inclure la dépendance SQL dans votre projet, reportez-vous à la section [Dépendances des pilotes SQL](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies).
+> Pour inclure la dépendance SQL dans votre projet, reportez-vous à la section [Dépendances des pilotes SQL](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies).
 
 **Étape 3 : ajouter une configuration JDBC**
 
@@ -94,7 +96,7 @@ Incluez la dépendance [pilote SQL](https://central.sonatype.com/artifact/com.mi
    cd ui.config/src/jcr_root/apps/<application folder>/osgiconfig/config/
    ```
 
-**Étape 4 : créer le fichier de configuration de connexion SQL Azure**
+**Étape 4 : création du fichier de configuration de connexion SQL Azure**
 
 1. Créez le fichier :
 
@@ -150,7 +152,7 @@ Une fois la configuration d’AEM et d’Azure terminée et les modifications de
 
 1. Ouvrez un formulaire adaptatif en mode d’édition.
 1. Sélectionnez le FDM créé à l’étape précédente comme modèle de données.
-1. Utilisez des liaisons de données [&#x200B; pour connecter les champs de formulaire à la source de données SQL Azure](/help/forms/work-with-form-data-model.md#add-data-model-objects-and-services) et configurez l’action d’envoi.
+1. Utilisez des liaisons de données [ pour connecter les champs de formulaire à la source de données SQL Azure](/help/forms/work-with-form-data-model.md#add-data-model-objects-and-services) et configurez l’action d’envoi.
 
 ## Bonnes pratiques
 

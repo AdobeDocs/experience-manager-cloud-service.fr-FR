@@ -1,14 +1,15 @@
 ---
 title: Comment prévisualiser un formulaire adaptatif ?
-description: Les utilisateurs peuvent prévisualiser le formulaire avant de le publier ou de l’activer, afin de s’assurer qu’il répond aux attentes. Les options de prévisualisation peuvent varier selon les types de formulaire pris en charge.
+description: Les utilisateurs et utilisatrices peuvent prévisualiser le formulaire avant sa publication ou son activation pour s’assurer qu’il répond aux attentes. Les options de prévisualisation peuvent varier selon les types de formulaire pris en charge.
 topic-tags: author
 role: Admin, Developer, User
 feature: Adaptive Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 72235277-6c34-4341-9a10-02afa753e7f5
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 84%
+source-wordcount: '342'
+ht-degree: 83%
 
 ---
 
@@ -18,7 +19,7 @@ ht-degree: 84%
 
 Dans [!DNL AEM Forms], vous pouvez prévisualiser les formulaires et les documents figurant dans le référentiel. La prévisualisation permet de savoir exactement à quoi ressemblent les formulaires lorsqu’ils sont publiés pour les utilisatrices et utilisateurs finaux.
 
-Lors de la prévisualisation de formulaires, ils sont rendus dans l’interface interactive et l’utilisateur ou l’utilisatrice peut les remplir avec des données. Lors de la prévisualisation de documents, ils sont rendus en mode non interactif et l’utilisateur ou l’utilisatrice peut uniquement les afficher. Pour les formulaires, une option supplémentaire de prévisualisation personnalisée est disponible. Grâce à cette option, vous pouvez prévisualiser le formulaire à l’aide des données d’un fichier XML. Les données remplissent certains champs ou tous les champs du formulaire prévisualisé.
+Lors de la prévisualisation de formulaires, ils sont rendus dans l’interface interactive et l’utilisateur ou l’utilisatrice peut les remplir avec des données. Lors de la prévisualisation de documents, ils sont rendus en mode non interactif et l’utilisateur ou l’utilisatrice peut uniquement les afficher. Pour les formulaires, une option supplémentaire de prévisualisation personnalisée est disponible. Grâce à cette option, vous pouvez prévisualiser le formulaire à l’aide des données d’un fichier XML. Les données renseignent certains des champs, ou tous les champs, du formulaire en cours de prévisualisation.
 
 Le tableau ci-dessous répertorie les options d’aperçu disponibles pour les différents types de formulaire pris en charge :
 
@@ -49,7 +50,7 @@ Le tableau ci-dessous répertorie les options d’aperçu disponibles pour les d
 
 ## Prévisualiser un formulaire {#previewing-a-form-1}
 
-1. Sélectionnez une ressource à prévisualiser, puis cliquez sur Aperçu ![aem6forms_preview](assets/aem6forms_preview.png) dans la barre d’outils des actions.
+1. Sélectionnez une ressource à prévisualiser, puis cliquez sur Aperçu ![aem6forms_preview](assets/aem6forms_preview.png) dans la barre d’outils Actions.
 
    >[!NOTE]
    >

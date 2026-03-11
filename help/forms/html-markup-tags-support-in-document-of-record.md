@@ -3,10 +3,11 @@ title: Balises de balisage HTML prises en charge dans Submission PDF (ancienneme
 description: Guide de référence pour les balises de balisage HTML prises en charge lors de la génération d’une PDF de soumission (anciennement Document d’enregistrement), y compris le comportement de rendu et les considérations d’accessibilité.
 feature: Adaptive Forms
 role: Developer, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 8481b0dc-aae7-4bd2-acfe-1f1b6d747683
-source-git-commit: 0b112a5a1830fac9d0170771e052bbb2ef3cadbf
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '460'
 ht-degree: 7%
 
 ---

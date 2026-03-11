@@ -1,15 +1,16 @@
 ---
 title: Comment concevoir un schéma XML pour un formulaire adaptatif ?
-description: Découvrez comment créer un schéma XML pour un formulaire adaptatif et créer un formulaire adaptatif basé sur le schéma pour produire des données de réclamation de schéma.
+description: Découvrez comment créer un schéma XML pour un formulaire adaptatif et comment créer un formulaire adaptatif basé sur le schéma afin de produire des données conformes au schéma.
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '962'
 ht-degree: 96%
 
 ---

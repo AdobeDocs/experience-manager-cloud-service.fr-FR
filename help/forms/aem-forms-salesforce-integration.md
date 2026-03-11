@@ -1,25 +1,26 @@
 ---
-title: Comment intégrer Salesforce à l’aide du flux d’informations d’identification client OAuth 2.0 avec AEM Forms ?
-description: Découvrez comment intégrer Salesforce à AEM Forms à l’aide du flux d’informations d’identification client OAuth 2.0. Il affiche les étapes de l’intégration d’AEM Forms Salesforce.
+title: Comment intégrer Salesforce à l’aide du flux d’informations d’identification du client OAuth 2.0 avec AEM Forms ?
+description: Découvrez comment intégrer Salesforce à AEM Forms à l’aide du flux d’informations d’identification du client OAuth 2.0. Elle affiche les étapes d’intégration d’AEM Forms Salesforce.
 Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, salesforce integration with oauth2 using client credential flow, salesforce and client credential integration, AEM Forms Salesforce integration
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
-source-git-commit: 9eb15dda5f56938d686d0b863cb1ffa841f8228b
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '558'
 ht-degree: 55%
 
 ---
 
-# Intégrer le formulaire adaptatif à Salesforce {#configure-salesforce-with-ouath-2.0-client-credential}
+# Intégration d’un formulaire adaptatif à Salesforce {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html) |
 | AEM as a Cloud Service | Cet article |
 
-L’intégration de Adobe Experience Manager (AEM) Forms avec Salesforce permet aux entreprises de rationaliser les processus en connectant leurs fonctionnalités de création et de gestion de formulaires à la plateforme Salesforce. La connexion d’un formulaire adaptatif à Salesforce permet un exchange de données transparent entre les deux plateformes. Lorsque les utilisateurs envoient des formulaires, les données sont automatiquement synchronisées avec Salesforce. Elle garantit que toutes les informations sur les clients sont à jour et centralisées dans le système.
+L’intégration de Adobe Experience Manager (AEM) Forms à Salesforce permet aux entreprises de rationaliser les processus en connectant leurs fonctionnalités de création et de gestion de formulaires à la plateforme Salesforce. La connexion d’un formulaire adaptatif à Salesforce permet un échange de données transparent entre les deux plateformes. Lorsque les utilisateurs envoient des formulaires, les données sont automatiquement synchronisées avec Salesforce. Cela permet de s’assurer que toutes les informations du client sont à jour et centralisées au sein du système.
 
 Vous pouvez utiliser les informations d’identification du client OAuth 2.0 pour intégrer AEM Forms à l’application Salesforce. Les informations d’identification du client OAuth 2.0 consistent en une méthode standard et sécurisée de communication directe sans intervention utilisateur.
 
@@ -27,7 +28,7 @@ Vous pouvez utiliser les informations d’identification du client OAuth 2.0 po
 
 AEM Forms échange les informations d’identification du client (consumer key et secret du client), définies dans l’application connectée Salesforce, pour obtenir un jeton d’accès.
 
-AEM as a Cloud Service propose différentes actions d’envoi prêtes à l’emploi pour gérer les envois de formulaire. Vous pouvez en savoir plus sur ces options dans l’article [Action d’envoi de formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md) .
+AEM as a Cloud Service propose différentes actions d’envoi prêtes à l’emploi pour gérer les envois de formulaires. Pour en savoir plus sur ces options, consultez l’article [Action d’envoi de formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md).
 
 L’utilisation des informations d’identification du client OAuth 2.0 présente plusieurs avantages par rapport à l’authentification à l’aide du flux de code d’autorisation :
 
@@ -43,9 +44,9 @@ Avant de définir la communication entre une application Salesforce et un enviro
 * Assurez-vous que votre fichier Swagger est correctement configuré pour correspondre aux API de votre entreprise. Vous pouvez également choisir de [créer un fichier Swagger](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html?lang=fr) à partir de zéro, adapté à l’utilisation dans votre environnement AEM.
 
 
-## Configuration de l’application Salesforce à l’aide du flux d’informations d’identification client OAuth 2.0 {#steps-to-create-aem-datasource-configuration}
+## Configuration de l’application Salesforce à l’aide du flux d’informations d’identification du client OAuth 2.0 {#steps-to-create-aem-datasource-configuration}
 
-Pour connecter le formulaire adaptatif à l’application Salesforce à l’aide des paramètres d’authentification des informations d’identification client OAuth 2.0, procédez comme suit :
+Pour connecter un formulaire adaptatif à une application Salesforce à l’aide des paramètres d’authentification des informations d’identification du client OAuth 2.0, procédez comme suit :
 
 1. Connectez-vous à votre instance de création.
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Services cloud]** > **[!UICONTROL Sources de données]**.
@@ -57,11 +58,11 @@ Pour connecter le formulaire adaptatif à l’application Salesforce à l’aide
 
    >[!NOTE]
    >
-   > Lorsque le fichier swagger est sélectionné, le schéma, le nom de l’hôte et le chemin d’accès de base sont automatiquement renseignés.
+   > Lorsque le fichier Swagger est sélectionné, le schéma, le nom d’hôte et le chemin d’accès de base sont automatiquement renseignés.
 
 1. Chargez le fichier Swagger créé à partir de votre ordinateur local en cliquant sur **[!UICONTROL Parcourir]**.
 1. Sélectionnez le **[!UICONTROL Type d’authentification]** comme **[!UICONTROL OAuth 2.0]**. Le panneau **[!UICONTROL Paramètres d’authentification]** s’affiche.
-1. Sélectionnez le **[!UICONTROL Type d’octroi]** comme **[!UICONTROL Informations d’identification du client]**.
+1. Sélectionnez le **[!UICONTROL Type d’octroi]** comme **[!UICONTROL Informations d’identification client]**.
 1. Spécifiez l’**[!UICONTROL ID client]** et le **[!UICONTROL Secret du client]** obtenus à partir de l’application connectée à Salesforce.
 1. Spécifiez l’**[!UICONTROL URL du jeton d’accès]** au format
    `https://[MyDomainName].my.salesforce.com/services/oauth2/token`.
@@ -74,9 +75,9 @@ Pour connecter le formulaire adaptatif à l’application Salesforce à l’aide
 1. Si la connexion est établie, cliquez sur le bouton **[!UICONTROL Créer]**.
 
 
-Après avoir configuré l’application Salesforce, vous pouvez utiliser la configuration lors de la création d’un modèle de données de formulaire (FDM). Pour plus d’informations, voir [Création d’un modèle de données de formulaire (FDM)](create-form-data-models.md). [Configurez l’action d’envoi de modèle de données de formulaire](/help/forms/using-form-data-model.md) pour un formulaire adaptatif afin d’envoyer des données aux applications Salesforce.
+Après avoir configuré l’application Salesforce, vous pouvez utiliser la configuration lors de la création du modèle de données de formulaire (FDM). Pour plus d’informations, voir [Créer un modèle de données de formulaire (FDM)](create-form-data-models.md). [Configurez l’action d’envoi de modèle de données de formulaire](/help/forms/using-form-data-model.md) pour qu’un formulaire adaptatif envoie des données aux applications Salesforce.
 
-Pour plus d’informations sur la création et l’utilisation du modèle de données de formulaire (FDM) dans les processus d’entreprise, voir [Intégration de données](data-integration.md).
+Pour plus d’informations sur la création et l’utilisation d’un modèle de données de formulaire (FDM) dans les processus métier, voir [Intégration de données](data-integration.md).
 
 ## Articles connexes
 

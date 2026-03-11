@@ -4,10 +4,11 @@ description: Découvrez comment créer un modèle de données de formulaire (FDM
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1537'
+source-wordcount: '1543'
 ht-degree: 56%
 
 ---
@@ -36,7 +37,7 @@ L’intégration de données [!DNL Experience Manager Forms] fournit une interfa
 
 Assurez-vous d’avoir configuré les sources de données que vous avez l’intention d’utiliser dans le modèle de données de formulaire (FDM), comme décrit dans la section [Configurer les sources de données](configure-data-sources.md). Pour créer un modèle de données de formulaire (FDM) basé sur des sources de données configurées, procédez comme suit :
 
-1. Dans l’instance d’auteur [!DNL Experience Manager], accédez à **[!UICONTROL Formulaires > Intégrations de données]**.
+1. Dans l’instance de création [!DNL Experience Manager], accédez à **[!UICONTROL Formulaires > Intégrations de données]**.
 1. Sélectionner **[!UICONTROL Créer > Modèle de données de formulaire]**.
 1. Dans la boîte de dialogue Créer un modèle de données de formulaire :
 

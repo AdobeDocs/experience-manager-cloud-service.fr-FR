@@ -3,12 +3,13 @@ title: Générer l’aperçu HTML5 d’un formulaire XDP
 description: L’onglet Aperçu HTML dans LiveCycle Designer permet de prévisualiser les formulaires tels qu’ils apparaissent dans un navigateur.
 topic-tags: author
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '813'
 ht-degree: 96%
 
 ---
@@ -36,7 +37,7 @@ Pour permettre à Designer de générer l’aperçu HTML des formulaires XDP, ef
 
 1. Selon que vous exécutez AEM Forms sur OSGi ou JEE, ajoutez ce qui suit dans le **champ** Conditions d’authentification requises : 
 
-   * d’AEM Forms sur JEE
+   *  d’AEM Forms sur JEE
 
       * -/content/xfaforms
       * -/etc/clientlibs
@@ -88,7 +89,7 @@ Le **mode protégé** est activé par défaut. Laissez-le activé pour les envir
    >
    >Assurez-vous que le serveur AEM Forms est opérationnel. L’aperçu HTML se connecte au serveur CRX pour *générer* un aperçu.
 
-   ![Options d’AEM Forms Designer &#x200B;](assets/server_options.png)
+   ![Options d’AEM Forms Designer ](assets/server_options.png)
 
    Options d’AEM Forms Designer
 

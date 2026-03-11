@@ -1,15 +1,16 @@
 ---
 title: Comment personnaliser l’aspect des formulaires adaptatifs ?
-description: Utilisez la structure LESS pour le Forms adaptatif afin de personnaliser l’aspect du Forms adaptatif.
+description: Utilisez le framework LESS pour le Forms adaptatif afin de personnaliser l’apparence du Forms adaptatif.
 feature: Adaptive Forms, Foundation Components
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
+exl-id: efe59f3c-ca69-4bb5-a3ab-e7d8ea3c768e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2307'
+source-wordcount: '2313'
 ht-degree: 97%
 
 ---
-
 
 # Mise en forme des éléments pour les formulaires adaptatifs{#styling-constructs-for-adaptive-forms}
 
@@ -683,7 +684,7 @@ Navigateur d’onglets en haut :
 
 `}`
 
-Il existe également des classes pour mettre en forme les navigateurs d’onglets (gauche et haut) selon qu’ils disposent de navigateurs imbriqués/enfants/sous-navigateurs.
+Il existe également des classes pour définir le style des navigateurs d’onglets (gauche et haut) en fonction de la présence de navigateurs imbriqués ou enfants ou de sous-navigateurs.
 
 <table>
  <tbody>
@@ -1124,4 +1125,3 @@ Le thème **Simple enrollment** (inscription simple) dans /etc/clientlibs/fd/af/
   </tr>
  </tbody>
 </table>
-

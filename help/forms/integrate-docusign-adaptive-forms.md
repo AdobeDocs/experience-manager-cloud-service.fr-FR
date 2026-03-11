@@ -1,12 +1,13 @@
 ---
 title: Comment intégrer DocuSign à un formulaire adaptatif ?
 description: Découvrez comment utiliser DocuSign avec un formulaire adaptatif pour collecter des signatures électroniques.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1540'
 ht-degree: 88%
 
 ---
@@ -162,7 +163,7 @@ Désormais, votre environnement AEM Forms est configuré pour utiliser DocuSign.
 
 Vous pouvez activer [!DNL DocuSign] pour un formulaire adaptatif existant ou créer un formulaire adaptatif prenant en charge [!DNL DocuSign]. Choisissez l’une des méthodes suivantes :
 
-- [Création d’un formulaire adaptatif prenant en charge [!DNL DocuSign] &#x200B;](#create-an-adaptive-form-for-docusign)
+- [Création d’un formulaire adaptatif prenant en charge [!DNL DocuSign] ](#create-an-adaptive-form-for-docusign)
 - [Activation d’ [!DNL DocuSign]  pour un formulaire adaptatif existant](#editafsign)
 
 #### Création d’un formulaire adaptatif pour DocuSign {#create-an-adaptive-form-for-docusign}
@@ -175,7 +176,7 @@ Pour créer un formulaire adaptatif prenant en charge les signatures :
 
    1. Précisez les **[!UICONTROL Nom]** et **[!UICONTROL Titre]** pour le formulaire adaptatif.
 
-   1. Sélectionnez le [conteneur de configurations](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) créé lors de l’ [!DNL DocuSign] intégration d’[&#x200B; à [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
+   1. Sélectionnez le [conteneur de configurations](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) créé lors de l’ [!DNL DocuSign] intégration d’[ à [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
 
    Le conteneur de configurations contient les services [!DNL DocuSign] Cloud Services configurés pour votre environnement. Ces services peuvent être sélectionnés dans le créateur de formulaires adaptatifs.
 

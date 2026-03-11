@@ -4,11 +4,12 @@ Description: This article explains how to send data from your Adaptive Form to a
 keywords: Comment connecter la bibliothèque de documents SharePoint à un formulaire adaptatif, l’envoyer à SharePoint, créer une configuration de bibliothèque de documents SharePoint, utiliser l’action d’envoi Envoyer à SharePoint dans un formulaire adaptatif, utiliser la bibliothèque de documents SharePoint du modèle de données AEM Forms, la bibliothèque de documents SharePoint du modèle de données Forms, intégrer le modèle de données Forms à la bibliothèque de documents SharePoint
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '991'
-ht-degree: 39%
+source-wordcount: '997'
+ht-degree: 45%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 39%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3444368/formautomation-productivitytools-adaptiveforms--sharepointintegration-documentlibrary/?quality=12&learn=on)
 
-<span> Cette vidéo s’applique uniquement aux composants principaux. Pour les composants UE/Foundation, reportez-vous à l’article </span>.
+<span> Cette vidéo s’applique uniquement aux composants principaux. Pour les composants éditeur universel/de base, reportez-vous à l’article </span>.
 
 
 Pour utiliser l’action d’envoi **[!UICONTROL Envoyer à la bibliothèque de documents SharePoint]** dans un formulaire adaptatif :
@@ -115,8 +116,8 @@ La boîte de dialogue **Propriétés du formulaire** s’affiche.
 
    >[!NOTE]
    >
-   > * Si l’icône **Modifier les propriétés de formulaire** ne s’affiche pas dans l’interface de l’éditeur universel, activez l’extension **Modifier les propriétés de formulaire** dans Extension Manager.
-   > * Consultez l’article [Caractéristiques des fonctionnalités d’Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) pour savoir comment activer ou désactiver les extensions dans l’éditeur universel.
+   > * Si l’icône **Modifier les propriétés du formulaire** ne s’affiche pas dans l’interface de l’éditeur universel, activez l’extension **Modifier les propriétés du formulaire** dans Extension Manager.
+   > * Consultez l’article [Principales fonctionnalités d’Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) pour savoir comment activer et désactiver les extensions dans l’éditeur universel.
 
 1. Cliquez sur l’onglet **Envoi** et sélectionnez **[!UICONTROL Envoyer à SharePoint]** action d’envoi.
    ![GIF SharePoint](/help/forms/assets/submit-to-sharepoint-ue.png)

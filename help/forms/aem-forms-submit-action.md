@@ -3,15 +3,16 @@ title: Comment configurer une action Envoyer pour un formulaire adaptatif ?
 description: Un formulaire adaptatif fournit plusieurs actions Envoyer. Une action Envoyer définit le mode de traitement d’un formulaire adaptatif après l’envoi. Vous pouvez utiliser des actions Envoyer intégrées ou créer les vôtres.
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
+exl-id: f609566e-6210-4a66-adaf-1dac9e9cd6d7
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '667'
-ht-degree: 57%
+source-wordcount: '673'
+ht-degree: 60%
 
 ---
 
-
-# Actions Envoyer prises en charge par Adaptive Forms
+# Actions d’envoi prises en charge par les formulaires adaptatifs
 
 Les formulaires adaptatifs vous permettent de créer des formulaires attrayants, réactifs, dynamiques et adaptatifs. Ils fournissent une interface utilisateur intuitive et un ensemble de composants prêts à l’emploi pour une conception et une gestion efficaces des formulaires. Vous pouvez configurer différentes actions d’envoi pour envoyer des données de formulaire à des services tels que OneDrive, SharePoint, Workfront Fusion, etc.
 
@@ -23,7 +24,7 @@ Une action d’envoi est déclenchée lorsqu’un utilisateur clique sur le bout
 * Envoyez facilement les données à une source de données configurée à l’aide du modèle de données de formulaire (FDM).
 * Envoyez facilement les données à un point d’entrée REST.
 
-## Actions Envoyer prises en charge par Adaptive Forms
+## Actions d’envoi prises en charge par les formulaires adaptatifs
 
 AEM forms propose les actions d’envoi prêtes à l’emploi suivantes :
 
@@ -33,12 +34,12 @@ AEM forms propose les actions d’envoi prêtes à l’emploi suivantes :
 * [Appeler une Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Envoyer à l’aide du modèle de données de formulaire (FDM)](/help/forms/using-form-data-model.md)
 * [Envoyer au stockage Blob Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
-* [Envoyer vers le point d’entrée REST](/help/forms/configure-submit-action-restpoint.md)
+* [Envoyer au point d’entrée REST](/help/forms/configure-submit-action-restpoint.md)
 * [Envoyer à OneDrive](/help/forms/configure-submit-action-onedrive.md)
 * [Appeler un workflow AEM](/help/forms/configure-submit-action-workflow.md)
 * [Envoyer à Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 * [Envoyer à Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
-* [Envoyer à la feuille de calcul](/help/forms/forms-submission-service.md)
+* [Envoyer à une feuille de calcul](/help/forms/forms-submission-service.md)
 
 Vous pouvez également envoyer un formulaire adaptatif à d’autres configurations de stockage :
 
@@ -57,12 +58,12 @@ Le tableau ci-dessous indique les actions d’envoi prises en charge en fonction
 | Workfront Fusion | ✅ pris en charge | ✅ pris en charge | ✅ pris en charge |                        |
 | Envoyer à l’aide de FDM | ✅ pris en charge | ✅ pris en charge | ✅ pris en charge |                        |
 | Envoyer à AEP | ✅ pris en charge | ✅ pris en charge | ✅ pris en charge |                        |
-| Stockage Azure Blob | ✅ pris en charge | ✅ pris en charge | ✅ pris en charge |                        |
-| Envoyer vers le point d’entrée REST | ✅ pris en charge | ✅ pris en charge | ✅ pris en charge |                        |
+| Stockage d’objets blob Azure | ✅ pris en charge | ✅ pris en charge | ✅ pris en charge |                        |
+| Envoyer au point d’entrée REST | ✅ pris en charge | ✅ pris en charge | ✅ pris en charge |                        |
 | Envoyer à Marketo Engage | ✅ pris en charge | ✅ pris en charge | ✅ pris en charge |                        |
 | Envoyer à OneDrive | ✅ pris en charge | ✅ pris en charge | ✅ pris en charge |                        |
-| Appeler le processus AEM | ✅ pris en charge | ✅ pris en charge | ✅ pris en charge |                        |
-| Envoyer à la feuille de calcul |                        |                  | ✅ pris en charge | ✅ pris en charge |
+| Appeler le workflow AEM | ✅ pris en charge | ✅ pris en charge | ✅ pris en charge |                        |
+| Envoyer à une feuille de calcul |                        |                  | ✅ pris en charge | ✅ pris en charge |
 
 
 ## Revalidation côté serveur dans un formulaire adaptatif
@@ -118,4 +119,3 @@ When you prefill a form data model (FDM), or schema based Adaptive Form with XML
 ## Voir également
 
 {{af-submit-action}}
-

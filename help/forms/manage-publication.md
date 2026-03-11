@@ -6,10 +6,11 @@ feature: Adaptive Forms
 feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
 role: User, Developer
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 6ade40f1-bad5-4f5e-aa0e-84b7c6a82e02
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '951'
 ht-degree: 7%
 
 ---
@@ -103,11 +104,11 @@ Pour ajouter d’autres formulaires à publier :
 
 1. Cliquez sur le bouton **Ajouter du contenu** pour ajouter plus de contenu.
 
-   ![&#x200B; Ajouter du contenu &#x200B;](/help/forms/assets/add-content.png)
+   ![ Ajouter du contenu ](/help/forms/assets/add-content.png)
 
 2. Sélectionnez le formulaire dans l’écran **Sélectionner le chemin d’accès**.
 
-   ![&#x200B; Ajouter du contenu &#x200B;](/help/forms/assets/add-assets.png)
+   ![ Ajouter du contenu ](/help/forms/assets/add-assets.png)
 
    >[!NOTE]
    >
@@ -118,7 +119,7 @@ Pour ajouter d’autres formulaires à publier :
    ![références publiées](/help/forms/assets/published-references.png)
 
 4. Dans la boîte de dialogue **Références publiées**, désélectionnez les ressources que vous prévoyez de ne pas publier et cliquez sur **[!UICONTROL Terminé]**.
-   ![&#x200B; boîte de dialogue références publiées &#x200B;](/help/forms/assets/published-references-dialog.png)
+   ![ boîte de dialogue références publiées ](/help/forms/assets/published-references-dialog.png)
 
 <!--
 ### Include Folder Settings

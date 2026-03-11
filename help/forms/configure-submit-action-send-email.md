@@ -3,11 +3,12 @@ title: Comment envoyer un e-mail lors de l’envoi d’un formulaire adaptatif ?
 description: Découvrez le processus de configuration des notifications par e-mail lors de l’envoi d’un formulaire adaptatif.
 keywords: Guide d’envoi et d’envoi de formulaire adaptatif, Comment envoyer un e-mail pour un formulaire adaptatif, Action d’envoi d’e-mail, E-mail de formulaire adaptatif, Envoyer un e-mail
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
 role: User, Developer
-source-git-commit: 79046330f5c3fe3b19ac35200ef0750f28ba31c4
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '959'
 ht-degree: 20%
 
 ---

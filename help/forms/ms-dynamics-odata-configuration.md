@@ -4,12 +4,13 @@ description: Découvrez comment créer un modèle de données de formulaire (FDM
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 hide: true
 hidefromtoc: true
-source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '1018'
 ht-degree: 68%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 68%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html) |
 | AEM as a Cloud Service | Cet article |
 
 ![data-integeration](assets/data-integeration.png)
@@ -36,7 +37,7 @@ ht-degree: 68%
 * MS Dynamics OData Cloud Service (OData Service)-->
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
-&#x200B;<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  Le Cloud Service OData de MS Dynamics (service OData) est disponible avec tous les modes d’exécution. Pour plus d’informations sur la configuration des modes d’exécution pour une instance [!DNL Experience Manager], voir [Modes d’exécution](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr#runmodes).
+<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  Le Cloud Service OData de MS Dynamics (service OData) est disponible avec tous les modes d’exécution. Pour plus d’informations sur la configuration des modes d’exécution pour une instance [!DNL Experience Manager], voir [Modes d’exécution](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr#runmodes).
 
 AEM as a Cloud Service propose différentes actions d’envoi prêtes à l’emploi pour gérer les envois de formulaires. Pour en savoir plus sur ces options, consultez l’article [Action d’envoi de formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md).
 
@@ -105,7 +106,6 @@ Pour enregistrer un client OAuth sur l’ordinateur Active Directory Federatio
 
    * `Client-ID` est un ID client que vous pouvez générer à l’aide d’un générateur de GUID.
    * `redirect-uri` est l’URL du service cloud OData de [!DNL Microsoft Dynamics] dans [!DNL Experience Manager Forms]. Le service cloud par défaut installé avec [!DNL Experience Manager Forms] est déployé à l’adresse URL suivante :
-
      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. Exécutez la commande ci-dessous pour octroyer l’accès sur l’ordinateur AD FS :
@@ -168,7 +168,7 @@ Après avoir configuré le service cloud OData de MS Dynamics, vous pouvez utili
 
 Ensuite, vous pouvez créer un modèle de données de formulaire (FDM) basé sur un formulaire adaptatif et l’utiliser dans divers cas de formulaires adaptatifs, tels que :
 
-* Remplir le formulaire adaptatif en obtenant des informations des entités et des services [!DNL Microsoft Dynamics]
+* Remplir le formulaire adaptatif en demandant des informations aux entités et services [!DNL Microsoft Dynamics]
 * Appeler [!DNL Microsoft Dynamics] opérations du serveur définies dans un modèle de données de formulaire (FDM) à l’aide de règles de formulaire adaptatif
 * Écrire les données de formulaire envoyées dans les entités [!DNL Microsoft Dynamics]
 

@@ -3,11 +3,12 @@ title: Comment envoyer des données à un stockage SharePoint lors de l’envoi 
 description: Découvrez comment envoyer des données de votre formulaire adaptatif vers un stockage SharePoint tel qu’une liste SharePoint ou une bibliothèque de documents lorsque vous envoyez le formulaire.
 keywords: Comment connecter la liste SharePoint d’un formulaire adaptatif ?, Comment connecter la bibliothèque de documents SharePoint d’un formulaire adaptatif, Envoyer à SharePoint, Créer une configuration de bibliothèque de documents SharePoint, Utiliser l’action d’envoi Envoyer à SharePoint dans un formulaire adaptatif, Connecter un formulaire adaptatif à Microsoft&reg; Liste SharePoint.
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: e925a750-5fb5-4950-afd3-78551eec985d
 role: User, Developer
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '248'
 ht-degree: 4%
 
 ---

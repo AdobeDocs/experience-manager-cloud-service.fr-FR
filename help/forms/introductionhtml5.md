@@ -3,13 +3,14 @@ title: Présentation des formulaires HTML5
 description: HTML5 forms est une nouvelle fonctionnalité du logiciel Adobe Experience Manager qui permet d’effectuer le rendu des modèles de formulaire XFA au format HTML5.
 topic-tags: hTML5_forms
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 0facca18-ffa1-420c-859a-6f1f2c449d71
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 79%
+source-wordcount: '422'
+ht-degree: 78%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 79%
 
 HTML5 forms est une nouvelle fonctionnalité du logiciel Adobe Experience Manager qui permet d’effectuer le rendu des modèles de formulaire XFA au format HTML5. Cette fonctionnalité permet le rendu des formulaires sur les appareils mobiles et les navigateurs de bureau ne prenant pas en charge les documents XFA en PDF. Les formulaires HTML5 prennent en charge les fonctionnalités existantes des modèles de formulaires XFA, mais ajoutent également de nouvelles fonctionnalités, telles que la signature manuscrite, pour les appareils mobiles.
 
-Les formulaires HTML5 génèrent des documents basés sur des éléments HTML5 standards. Vous pouvez afficher les formulaires HTML5 dans tous les navigateurs récents prenant en charge le format HTML5. Il n’est pas nécessaire d’installer de plug-ins de navigateur supplémentaires pour les navigateurs. <!--For more information about supported browsers, see [Supported client platforms](https://adobe.com/go/learn_aemforms_supportedplatforms_63_fr).-->
+Les formulaires HTML5 génèrent des documents basés sur des éléments HTML5 standards. Vous pouvez afficher les formulaires HTML5 dans tous les navigateurs récents prenant en charge le format HTML5. Il n’est pas nécessaire d’installer de plug-ins de navigateur supplémentaires pour les navigateurs. <!--For more information about supported browsers, see [Supported client platforms](https://adobe.com/go/learn_aemforms_supportedplatforms_63).-->
 
 ![Aperçu du formulaire HTML5](assets/mobile_form_on_an_ipad_date_14.png)
 

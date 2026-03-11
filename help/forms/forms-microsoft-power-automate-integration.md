@@ -1,13 +1,14 @@
 ---
 title: Comment intégrer un formulaire adaptatif à Microsoft&reg; Power Automate ?
 description: Intégrer un formulaire adaptatif à Microsoft&reg; Power Automate.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: connecter AEM forms à Power Automate, Power Automate automation AEM Forms, Intégrer Power Automate à Adaptive Forms, envoyer des données de Adaptive Forms à Power Automate
 feature: Adaptive Forms, Foundation Components, Core Components, Edge Delivery Services
 role: Admin, User, Developer
-source-git-commit: 64b6ce166baa892fcddd13c2e9c8b5e7e0053815
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1641'
 ht-degree: 75%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 75%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
 | AEM as a Cloud Service | Cet article |
 
 <span class="preview"> Si vous êtes sur GovCloud et que vous devez vous connecter à un client GCC (Government Cloud Computing), envoyez un e-mail à partir de votre adresse officielle à l’adresse aem-forms-ea@adobe.com pour demander l’accès via le programme d’adoption précoce. </span>

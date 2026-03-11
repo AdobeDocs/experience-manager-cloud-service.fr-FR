@@ -1,16 +1,17 @@
 ---
 title: Comment créer et utiliser des fragments de formulaire adaptatif ?
-description: Le fragment de formulaire est un composant modulaire et réutilisable d’un formulaire. Découvrez comment créer des fragments de formulaire et les réutiliser dans les formulaires pour un assemblage efficace de formulaires.
+description: Un fragment de formulaire est un composant modulaire et réutilisable d’un formulaire. Découvrez comment créer des fragments de formulaire et les réutiliser dans les formulaires pour un assemblage de formulaire efficace.
 uuid: bb4830b5-82a0-4026-9dae-542daed10e6f
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 feature: Adaptive Forms, Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
 role: User, Developer
-source-git-commit: bcd3a2a813833d7c1705e45829bcf769645cd154
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2150'
+source-wordcount: '2156'
 ht-degree: 91%
 
 ---
@@ -20,9 +21,9 @@ ht-degree: 91%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service (composants de base) | Cet article |
-| AEM as a Cloud Service (composants principaux) | [Cliquez ici](/help/forms/adaptive-form-fragments-core-components.md) |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=fr) |
+| AEM as a Cloud Service (Composants de base) | Cet article |
+| AEM as a Cloud Service (Composants principaux) | [Cliquer ici](/help/forms/adaptive-form-fragments-core-components.md) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=en) |
 
 Bien que chaque formulaire soit conçu pour un rôle spécifique, certains segments sont communs à la plupart des formulaires, comme les informations personnels tels que le nom et l’adresse, les informations relatives à la famille et aux revenus, etc. Les développeurs de formulaires doivent créer ces segments communs chaque fois qu’un nouveau formulaire est créé. Les formulaires adaptatifs fournissent un mécanisme pratique pour créer un segment de formulaire, comme un panneau ou un groupe de champs, une seule fois et pour les réutiliser dans des formulaires adaptatifs. Ces segments réutilisables et autonomes s’appellent des fragments de formulaire adaptatif.
 
@@ -33,7 +34,7 @@ Vous pouvez créer un fragment de formulaire adaptatif à partir de zéro ou enr
 
 ### Création d’un fragment à partir de zéro {#create-fragment-from-scratch}
 
-1. Connectez-vous à l’instance d’auteur [!DNL AEM Forms] à l’adresse https://[*nom_hôte*]:[*port*]/aem/forms.html.
+1. Connectez-vous à l’instance de création [!DNL AEM Forms] à l’adresse https://[*nom_hôte*]:[*port*]/aem/forms.html.
 1. Cliquez sur **Créer > Fragment de formulaire adaptatif**.
 1. Indiquez le titre, le nom, la description et les balises du fragment.
 
@@ -47,7 +48,7 @@ Vous pouvez créer un fragment de formulaire adaptatif à partir de zéro ou enr
 
      >[!NOTE]
      >
-     > Dans Adaptive Forms, vous pouvez utiliser plusieurs fois un fragment de formulaire unique (basé sur les composants principaux) dans un formulaire. Il prend en charge les fragments de formulaire basés sur des schémas et sans modèle.
+     > Dans le Forms adaptatif, vous pouvez utiliser un fragment de formulaire unique (basé sur les composants principaux) plusieurs fois dans un formulaire. Il prend en charge les fragments de formulaire basés sur des schémas et sans modèle.
 
    * **Modèle de formulaire** : indique de créer le fragment à l’aide d’un modèle XDP téléchargé dans [!DNL AEM Forms]. Sélectionnez le modèle XDP correspondant en tant que modèle de formulaire pour le fragment.
 
@@ -151,9 +152,9 @@ Le fragment de formulaire adaptatif est inséré par référence dans le formula
 
 ### Incorporation d’un fragment dans un formulaire adaptatif {#embed-a-fragment-in-adaptive-form}
 
-Vous pouvez choisir d’inclure un fragment de formulaire adaptatif en cliquant sur le bouton **Inclure l’actif : &lt;*Nom du fragment*>** dans la barre d’outils du panneau du fragment ajouté, comme illustré dans l’exemple ci-dessous.
+Vous pouvez choisir d’incorporer un fragment de formulaire adaptatif en cliquant sur le bouton **Incorporer une ressource : &lt;*Nom du fragment*>** dans la barre d’outils du panneau du fragment ajouté, comme illustré dans l’exemple ci-dessous.
 
-![Inclusion d’un fragment dans un formulaire adaptatif](assets/embed-fragment.png)
+![Incorporation d’un fragment dans un formulaire adaptatif](assets/embed-fragment.png)
 
 >[!NOTE]
 >
@@ -175,7 +176,7 @@ Vous pouvez utiliser plusieurs fois un fragment de formulaire basé sur un sché
 
 >[!NOTE]
 >
-> Si vous utilisez plusieurs fois des fragments de formulaire sans base dans un formulaire adaptatif, un problème de synchronisation des données entre les champs des fragments se produit. Vous pouvez utiliser un [fragment de formulaire basé sur un composant principal](/help/forms/adaptive-form-fragments-core-components.md) qui n’est lié à aucun modèle de données de formulaire (FDM), plusieurs fois dans un formulaire sans rencontrer de problèmes de synchronisation des données.
+> Si vous utilisez plusieurs fois des fragments de formulaire basés sur aucun dans un formulaire adaptatif, un problème de synchronisation des données entre les champs des fragments se produit. Vous pouvez utiliser plusieurs fois un [fragment de formulaire basé sur des composants principaux](/help/forms/adaptive-form-fragments-core-components.md) qui n’est lié à aucun modèle de données de formulaire (FDM) dans un formulaire sans rencontrer de problèmes de synchronisation des données.
 
 ## Mappage automatique des fragments pour la liaison de données {#auto-mapping-of-fragments-for-data-binding}
 
@@ -246,17 +247,17 @@ Pour localiser un formulaire adaptatif contenant des fragments de formulaire ada
 
 >[!NOTE]
 >
->Les clés de localisation dans le fragment n’apparaîtront pas dans le fichier XLIFF d’un formulaire adaptatif.
+>Les touches de localisation dans le fragment n’apparaîtront pas dans le fichier XLIFF d’un formulaire adaptatif.
 
 ## Points essentiels à respecter lorsque vous utilisez des fragments {#key-points-to-remember-when-working-with-fragments}
 
 * Assurez-vous que le nom du fragment est unique. La création du fragment échoue si un fragment portant le même nom existe déjà.
 * Dans un formulaire adaptatif basé sur XDP, si vous enregistrez un panneau en tant que fragment contenant une autre partie du fragment XDP, le fragment obtenu est automatiquement lié au fragment XDP enfant. Dans le cas d’un formulaire adaptatif basé sur un schéma XSD, le fragment obtenu est associé à la racine de schéma.
 * Lorsque vous créez un fragment de formulaire adaptatif, un nœud de fragment est créé, similaire au nœud guideContainer pour un formulaire adaptatif, dans CRXDe Lite.
-* Un fragment d’un formulaire adaptatif qui utilise un modèle de données de formulaire (FDM) différent n’est pas pris en charge. Par exemple, un fragment basé sur XDP n’est pas pris en charge dans un formulaire adaptatif basé sur XSD et inversement.
+* Un fragment dans un formulaire adaptatif qui utilise un modèle de données de formulaire (FDM) différent n’est pas pris en charge. Par exemple, un fragment basé sur XDP n’est pas pris en charge dans un formulaire adaptatif basé sur XSD et inversement.
 * Les fragments de formulaire adaptatif sont disponibles par l’onglet Fragments de formulaire adaptatif dans l’outil de recherche de contenu AEM.
 * Toute expression, tout script ou tout style d’un fragment de formulaire adaptatif autonome est conservé lorsqu’il est inséré par référence ou inclus dans un formulaire adaptatif.
-* Vous ne pouvez pas modifier un fragment de formulaire adaptatif, inséré par référence, au sein même d’un formulaire adaptatif. Pour modifier, vous pouvez soit modifier le fragment de formulaire adaptatif autonome, soit intégrer le fragment dans le formulaire adaptatif.
+* Vous ne pouvez pas modifier un fragment de formulaire adaptatif, inséré par référence, au sein même d’un formulaire adaptatif. Pour modifier, vous pouvez soit modifier le fragment de formulaire adaptatif autonome, soit incorporer le fragment dans le formulaire adaptatif.
 * Lorsque vous publiez un formulaire adaptatif, vous devez publier le fragment de formulaire adaptatif autonome inséré par référence dans le formulaire adaptatif.
 * Lorsque vous publiez de nouveau un fragment de formulaire adaptatif mis à jour, les modifications sont répercutées dans les instances publiées du formulaire adaptatif dans lequel le fragment est utilisé.
 * Le formulaire adaptatif contenant le composant Vérifier ne prend pas en charge les utilisateurs anonymes. En outre, il n’est pas recommandé d’utiliser le composant Vérifier dans un fragment de formulaire adaptatif.

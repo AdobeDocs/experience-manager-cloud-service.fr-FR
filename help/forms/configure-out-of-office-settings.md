@@ -1,13 +1,14 @@
 ---
 title: Comment configurer les paramètres d’absence du bureau dans AEM Forms ?
-description: Déléguez des tâches pendant ou hors du bureau pour une exécution transparente des workflows.
+description: Déléguer des tâches en congé ou hors du bureau pour une exécution transparente des workflows.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 85%
+source-wordcount: '879'
+ht-degree: 84%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 85%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/configure-out-of-office-settings.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/configure-out-of-office-settings.html) |
 | AEM as a Cloud Service | Cet article |
 
 Si vous envisagez de vous absenter du bureau, vous pouvez spécifier les actions à entreprendre pour les tâches qui vous sont affectées pendant cette période.
@@ -30,10 +31,10 @@ Vous pouvez séparer la délégation de tâches en fonction des modèles de proc
 
 >[!NOTE]
 >
->* Lorsque vous activez le paramètre Absence du bureau , tous les éléments disponibles dans votre boîte de réception, avant d’activer le paramètre, restent dans votre boîte de réception. Seules les tâches reçues après l’activation du paramètre sont déléguées.
+>* Lorsque vous activez le paramètre Absence du bureau, toutes les tâches disponibles dans votre boîte de réception avant d’activer ce paramètre restent dans votre boîte de réception. Seules les tâches reçues après l’activation du paramètre sont déléguées.
 >* Lorsque vous désactivez le paramètre Absence du bureau, les tâches déléguées ne vous sont pas automatiquement réaffectées. Vous pouvez utiliser la fonctionnalité de revendication pour que ces tâches vous soient attribuées.
 >* Lorsque l’utilisateur A délègue des tâches à l’utilisateur B et que l’utilisateur B délègue des tâches à l’utilisateur C, les tâches sont affectées uniquement à l’utilisateur C et non à l’utilisateur B.
->* Lorsqu’une boucle est en cours d’attribution, les tâches restent réservées à l’utilisateur d’origine. Par exemple, lorsque l’utilisateur A délègue des tâches à l’utilisateur B, l’utilisateur C délègue des tâches à l’utilisateur C, l’utilisateur C délègue des tâches à l’utilisateur D et l’utilisateur D délègue des tâches à l’utilisateur B, une boucle est créée. Dans ce cas, l’élément reste avec l’utilisateur d’origine. L’utilisateur A est l’utilisateur d’origine dans l’exemple ci-dessus.
+>* Lorsqu’une boucle est présente dans l’affectation, les tâches restent chez l’utilisateur initial. Par exemple, lorsque l’utilisateur A délègue des tâches à l’utilisateur B, l’utilisateur C délègue des tâches à l’utilisateur C, l’utilisateur C délègue des tâches à l’utilisateur D et l’utilisateur D délègue des tâches à l’utilisateur B, une boucle est créée. Dans ce cas, l’élément reste avec l’utilisateur d’origine. L’utilisateur A est l’utilisateur initial dans l’exemple ci-dessus.
 
 ## Activez le paramètre Absence du bureau pour votre compte {#enable-out-of-office}
 
@@ -56,7 +57,7 @@ Effectuez les étapes suivantes pour activer le paramètre Absence du bureau pou
 
    >[!NOTE]
    >
-   >L’ordre des délégataires est important. Lorsqu’une tâche est affectée à un utilisateur qui a activé le paramètre Absence du bureau, la tâche est évaluée par rapport à la liste des délégataires dans leur ordre d’ajout. Lorsqu’un élément correspond aux critères, il est attribué à la personne désignée et la personne désignée suivante n’est pas cochée.
+   >L’ordre des délégataires est important. Lorsqu’une tâche est affectée à un utilisateur qui a activé le paramètre Absence du bureau, la tâche est évaluée par rapport à la liste des délégataires dans leur ordre d’ajout. Lorsqu’une tâche correspond aux critères, elle est affectée à la personne désignée, et la personne désignée suivante n’est pas cochée.
 
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**. Ce paramètre prend effet à la date et à l’heure de début spécifiées. Si vous vous connectez pendant que vous êtes absent du bureau, vous êtes toujours considéré comme absent du bureau jusqu’à ce que vous ayez modifié vos paramètres.
@@ -66,7 +67,7 @@ Désormais, les tâches qui vous sont affectées au cours de la période d’abs
 
 >[!NOTE]
 >
->(Pour les éléments de workflow basés sur Forms uniquement) Activez l’option **[!UICONTROL Autoriser la personne désignée à déléguer à l’aide de l’option &quot;Paramètres d’absence du bureau&quot;]** de l’étape **[!UICONTROL Affecter une tâche]** dans le workflow. Seules les tâches pour lesquelles l’option ci-dessus est activée sont déléguées à d’autres utilisateurs.
+>(Pour les éléments de processus orientés Forms uniquement) Activez l’option **[!UICONTROL Autoriser les délégataires à déléguer à l’aide des paramètres « Absence du bureau »]** de l’étape **[!UICONTROL Attribuer la tâche]** du processus. Seules les tâches pour lesquelles l’option ci-dessus est activée sont déléguées à d’autres utilisateurs.
 >(Pour les éléments de processus orientés formulaire uniquement) Activez l’option **[!UICONTROL Autoriser les délégataires à déléguer à l’aide des paramètres « Absence du bureau »]** de l’étape **[!UICONTROL Attribuer la tâche]** du processus. Seules les tâches pour lesquelles l’option ci-dessus est activée sont déléguées à d’autres utilisateurs ou utilisatrices.
 
 ## Limites {#limitations}

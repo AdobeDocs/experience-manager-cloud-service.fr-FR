@@ -8,10 +8,11 @@ feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
 index: false
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 50d7ce19-7d76-4ea1-a54c-8ca0e5379982
-source-git-commit: eca09e1bf2ba4466f54e915e01218cc89cf5b116
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2323'
+source-wordcount: '2329'
 ht-degree: 1%
 
 ---
@@ -169,7 +170,7 @@ Intégration native aux solutions [Salesforce](/help/forms/configure-salesforce.
 Connectez-vous à un service accessible sur le web via des API RESTful via des [actions d’envoi](/help/forms/configure-submit-action-restpoint.md) ou [intégration de données](/help/forms/data-integration.md). Le modèle de données de formulaire abstrait la complexité de l’intégration, fournissant une interface cohérente quelle que soit l’architecture du système sous-jacent.
 
 **Échange De Données En Temps Réel**
-Activez le flux de données bidirectionnel entre les formulaires et les systèmes d’entreprise. Préremplissez des formulaires à partir d’enregistrements existants, validez les données actives et mettez à jour plusieurs systèmes simultanément lors de leur envoi grâce à une [&#x200B; intégration de données](/help/forms/data-integration.md) complète.
+Activez le flux de données bidirectionnel entre les formulaires et les systèmes d’entreprise. Préremplissez des formulaires à partir d’enregistrements existants, validez les données actives et mettez à jour plusieurs systèmes simultanément lors de leur envoi grâce à une [ intégration de données](/help/forms/data-integration.md) complète.
 
 ### Suivi : analyses et surveillance des performances {#track}
 
@@ -192,7 +193,7 @@ Surveillez l’utilisation des API, les volumes de génération de documents et 
 Stockez et gérez en toute sécurité les envois de formulaires et les documents générés pour une conservation et une conformité à long terme.
 
 **Stockage de documents**
-Stockez les documents générés et les envois de formulaires dans le système de gestion des ressources numériques d’AEM ou intégrez-les à des référentiels de documents externes tels que [SharePoint](/help/forms/configure-submit-action-sharepoint.md), [OneDrive](/help/forms/configure-submit-action-onedrive.md) ou [Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md).
+Stockez les documents générés et les envois de formulaires dans le système de gestion des ressources numériques AEM ou intégrez-les à des référentiels de documents externes tels que [SharePoint](/help/forms/configure-submit-action-sharepoint.md), [OneDrive](/help/forms/configure-submit-action-onedrive.md) ou [Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md).
 
 **Conformité et conservation**
 Mettre en œuvre des politiques de conservation des données conformes aux exigences réglementaires, notamment le RGPD, le CCPA et la loi HIPAA. [Processus d’archivage automatisés](/help/forms/aem-forms-cloud-service-communications-batch-processing.md) assurez-vous que les documents sont conservés pendant les périodes requises et éliminés en toute sécurité le cas échéant.

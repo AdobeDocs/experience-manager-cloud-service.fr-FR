@@ -1,14 +1,15 @@
 ---
 title: Pour quelles étapes de workflow la création d’un workflow ou l’automatisation des processus métier (BPM) sont-elles disponibles sur AEM Forms Cloud Service ?
 description: Les processus orientés formulaire vous permettent de créer rapidement des processus basés sur des formulaires adaptatifs. Vous pouvez utiliser Adobe Sign pour signer de manière électronique des documents, créer des processus métier basés sur des formulaires, récupérer et envoyer des données à plusieurs sources de données, et envoyer des notifications par e-mail.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Utiliser des workflows AEM, à l’aide des étapes d’affectation de tâche, convertir en étape PDF/A, générer un document de l’étape enregistrée, utiliser des workflows, signer une étape de document, générer une étape de sortie imprimée, générer une sortie PDF non interactive
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '7409'
+source-wordcount: '7415'
 ht-degree: 76%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 76%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | Cet article |
 
 Vous utilisez des modèles de workflow . Un modèle permet de définir et d’exécuter une série d’étapes. Vous pouvez également définir des propriétés de modèle pour déterminer, par exemple, si le processus est transitoire ou s’il utilise plusieurs ressources. Vous pouvez [inclure diverses étapes d’un processus AEM dans un modèle pour appliquer la logique métier](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=fr#extending-aem).
@@ -59,8 +60,8 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 
 * **[!UICONTROL Jours :]** le nombre de jours restants pour terminer la tâche. Le nombre de jours est calculé à partir du jour de l’affectation de la tâche à un utilisateur. Si une tâche n’est pas terminée et dépasse le nombre de jours spécifié dans le champ Jours , alors si elle est sélectionnée, un gestionnaire de dépassement de délai est déclenché après la date d’échéance.
 * **[!UICONTROL Heures :]** le nombre d’heures restantes pour terminer la tâche. Le nombre d’heures est calculé à partir de l’heure de l’affectation de la tâche à un utilisateur. Si une tâche n’est pas terminée et dépasse le nombre d’heures spécifié dans le champ Heures, alors si elle est sélectionnée, un gestionnaire de dépassement de délai est déclenché après l’heure d’échéance.
-* **[!UICONTROL Expiration après l’échéance :]** sélectionnez cette option pour activer le champ Sélection du gestionnaire de dépassement de délai.
-* **[!UICONTROL Gestionnaire de dépassement de délai :]** sélectionnez le script à exécuter lorsque l’étape Affecter une tâche dépasse l’échéance. Les scripts placés dans le référentiel CRX à l’emplacement [apps]/fd/dashboard/scripts/timeoutHandler peuvent être sélectionnés. Le chemin d’accès spécifié n’existe pas dans le référentiel CRX. Un administrateur crée le chemin d’accès avant de l’utiliser.
+* **[!UICONTROL Expiration après l’échéance :]** sélectionnez cette option pour activer le champ Sélection du gestionnaire de délai d’expiration.
+* **[!UICONTROL Gestionnaire de délai d’expiration :]** sélectionnez le script à exécuter lorsque l’étape Affecter une tâche dépasse l’échéance. Les scripts placés dans le référentiel CRX à l’emplacement [apps]/fd/dashboard/scripts/timeoutHandler peuvent être sélectionnés. Le chemin d’accès spécifié n’existe pas dans le référentiel CRX. Un administrateur crée le chemin d’accès avant de l’utiliser.
 * **[!UICONTROL Sélectionner l’action et ajouter un commentaire depuis la dernière tâche dans Détails de la tâche :]** sélectionnez cette option pour afficher la dernière action qui a été effectuée et le dernier commentaire reçu dans la section Détails de la tâche.
 * **[!UICONTROL Type :]** sélectionnez le type de document à remplir lors du lancement du processus. Vous pouvez sélectionner un formulaire adaptatif, un formulaire adaptatif en lecture seule, un document PDF non interactif.
 
@@ -239,7 +240,7 @@ Vous avez la possibilité d’associer plusieurs formulaires adaptatifs à un pr
 
 **[!UICONTROL Chemin d’accès du formulaire adaptatif]** : indiquez le chemin d’accès du formulaire adaptatif. Le champ est disponible lorsque vous sélectionnez l’option **[!UICONTROL Disponible à un chemin d’accès absolu]** dans le champ **[!UICONTROL Utiliser le formulaire adaptatif]**.
 
-**[!UICONTROL Sélectionnez le chemin d’accès des données d’entrée :]** chemin d’accès des données d’entrée pour le formulaire adaptatif. Vous pouvez conserver les données à un emplacement relatif à la charge utile, spécifier un chemin d’accès absolu aux données ou récupérer les données stockées dans une variable de type Document, JSON ou XML. Les données d’entrée sont fusionnées avec le formulaire adaptatif pour créer un document d’enregistrement.
+**[!UICONTROL Sélectionnez le chemin d’accès des données d’entrée :]** chemin d’accès des données d’entrée pour le formulaire adaptatif. Vous pouvez conserver les données à un emplacement relatif à la charge utile, spécifier un chemin d’accès absolu aux données ou récupérer les données stockées dans une variable dont le type de données est Document, JSON ou XML. Les données d’entrée sont fusionnées avec le formulaire adaptatif pour créer un document d’enregistrement.
 
 **[!UICONTROL Sélectionnez le chemin de pièce jointe d’entrée en utilisant]** : chemin des pièces jointes. Ces pièces jointes sont incluses dans le document d’enregistrement. Vous pouvez conserver les pièces jointes à un emplacement relatif à la charge utile, spécifier un chemin absolu pour les pièces jointes ou récupérer les pièces jointes stockées dans une variable de tableau de type de données Document.
 
@@ -380,7 +381,7 @@ L’étape Invoquer le service de modèle de données de formulaire (FDM) compor
 * **[!UICONTROL Sélectionnez le document JSON d’entrée en utilisant]** : fichier JSON contenant des valeurs pour tous les arguments de service. Le chemin d’accès du fichier JSON peut être **[!UICONTROL relatif à la charge utile]** ou un **[!UICONTROL chemin d’accès absolu]**. Vous pouvez également récupérer le document JSON d’entrée à l’aide d’une variable de type de données JSON ou Modèle de données de formulaire (FDM).
 
 * **[!UICONTROL JSON Dot Notation :]** laissez le champ vide pour utiliser tous les objets du fichier JSON spécifié en tant qu’entrée pour les arguments de service. Pour lire un objet JSON spécifique à partir du fichier JSON spécifié en tant qu’entrée pour des arguments de service, spécifiez la notation par point pour l’objet JSON. Par exemple, si vous avez un fichier JSON identique à l’un des fichiers indiqué au début de la section, spécifiez insurance.customerDetails pour fournir tous les détails d’un client en tant qu’entrée du service.
-* **[!UICONTROL Sortie de service]** > **[!UICONTROL Mapper et écrire les valeurs de sortie dans les métadonnées]** : sélectionnez cette option pour enregistrer les valeurs de sortie en tant que propriétés du nœud de métadonnées de l’instance de processus dans le référentiel CRX. Indiquez le nom de la propriété de métadonnées et sélectionnez l’attribut de sortie de service correspondant à mapper avec la propriété de métadonnées, par exemple, mappez la valeur numéro_de_téléphone renvoyé par le service de sortie avec la propriété numéro_de_téléphone des métadonnées du workflow. De même, vous pouvez stocker la sortie dans une variable de type Long. Lorsque vous sélectionnez une propriété pour l’**[!UICONTROL attribut de sortie de service à mapper]**, seules les variables capables de stocker les données de la propriété sélectionnée sont renseignées pour l’option **[!UICONTROL Enregistrer la sortie dans]**.
+* **[!UICONTROL Sortie de service]** > **[!UICONTROL Mapper et écrire les valeurs de sortie dans les métadonnées]** : sélectionnez cette option pour enregistrer les valeurs de sortie en tant que propriétés du nœud de métadonnées de l’instance de processus dans le référentiel CRX. Indiquez le nom de la propriété de métadonnées et sélectionnez l’attribut de sortie de service correspondant à mapper avec la propriété de métadonnées, par exemple, mappez la valeur numéro_de_téléphone renvoyé par le service de sortie avec la propriété numéro_de_téléphone des métadonnées du workflow. De même, vous pouvez stocker la sortie dans une variable ayant le type de données Long. Lorsque vous sélectionnez une propriété pour l’**[!UICONTROL attribut de sortie de service à mapper]**, seules les variables capables de stocker les données de la propriété sélectionnée sont renseignées pour l’option **[!UICONTROL Enregistrer la sortie dans]**.
 
 * **[!UICONTROL Sortie de service]** > **[!UICONTROL Enregistrer la sortie dans une variable ou un fichier JSON]** : sélectionnez cette option pour enregistrer les valeurs de sortie dans un fichier JSON à un chemin absolu, à un chemin relatif à la charge utile ou dans une variable.
 * **[!UICONTROL Enregistrez le document JSON de sortie à l’aide des options suivantes :]** enregistrez le fichier JSON de sortie. Le chemin d’accès du fichier JSON peut être relatif à la charge utile ou à un chemin d’accès absolu. Vous pouvez également enregistrer le fichier JSON de sortie à l’aide d’une variable de type de données JSON ou Modèle de données de formulaire (FDM).
@@ -416,7 +417,7 @@ L’étape Signer le document possède les propriétés suivantes :
   >* Si vous avez configuré une méthode d’authentification pour [!DNL Adobe Sign], en fonction de votre configuration, vous pouvez sélectionner une méthode d’authentification telle que l’authentification par téléphone, l’authentification basée sur les identités sociales ou gouvernementales et l’authentification basée sur les connaissances.
 
 * **[!UICONTROL Script ou service pour sélectionner les destinataires]** : cette option est disponible uniquement si vous sélectionnez l’option De manière dynamique dans le champ Sélectionner les destinataires . Vous pouvez spécifier un script ECMAScript ou un service pour sélectionner des signataires et des options de vérification pour un document.
-* **[!UICONTROL Détails du destinataire]** : cette option est disponible uniquement si l’option Manuellement est sélectionnée dans le champ Sélectionner les destinataires. Spécifiez une adresse e-mail et choisissez un mécanisme de vérification facultatif. Avant de sélectionner une méthode de vérification en 2 étapes, assurez-vous que l’option de vérification correspondante est activée pour le compte [!DNL Adobe Sign] configuré. Vous pouvez utiliser une variable de type Chaîne pour définir des valeurs pour les champs Courriel, Code de pays et Numéro de téléphone. Les champs Code pays et Numéro de téléphone s’affichent uniquement si vous sélectionnez Vérification téléphonique dans la liste déroulante de vérification en 2 étapes.
+* **[!UICONTROL Détails du destinataire]** : cette option est disponible uniquement si l’option Manuellement est sélectionnée dans le champ Sélectionner les destinataires. Spécifiez une adresse e-mail et choisissez un mécanisme de vérification facultatif. Avant de sélectionner une méthode de vérification en 2 étapes, assurez-vous que l’option de vérification correspondante est activée pour le compte [!DNL Adobe Sign] configuré. Vous pouvez utiliser une variable de type de données Chaîne pour définir des valeurs pour les champs E-mail, Code de pays et Numéro de téléphone. Les champs Code pays et Numéro de téléphone s’affichent uniquement si vous sélectionnez Vérification téléphonique dans la liste déroulante de vérification en 2 étapes.
 * **[!UICONTROL Document signé]** : vous pouvez enregistrer le statut du document signé dans la variable. Pour ajouter une piste d’audit de signature électronique à votre document signé, afin d’en améliorer la sécurité et la légalité, vous pouvez inclure un rapport d’audit. Vous pouvez enregistrer le document signé à l’aide de la variable ou du dossier Payload.
 
   >[!NOTE]

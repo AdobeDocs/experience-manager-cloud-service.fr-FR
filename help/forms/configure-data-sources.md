@@ -4,10 +4,11 @@ description: Découvrez comment configurer les services web RESTful, les service
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: f913871da16b44d7a465e0fa00608835524ba7e3
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2384'
+source-wordcount: '2390'
 ht-degree: 74%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 74%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html) |
 | AEM as a Cloud Service | Cet article |
 
 ![Intégration de données](do-not-localize/data-integeration.png)
@@ -40,7 +41,7 @@ L’intégration de données prend en charge l’authentification OAuth2.0, ([Co
 
 Avant de configurer des bases de données relationnelles à l’aide de la Configuration de la console web [!DNL Experience Manager], il est obligatoire d’effectuer les actions suivantes :
 
-* [Activez la mise en réseau avancée via l’API Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=fr), car les ports sont désactivés par défaut.
+* [Activez la mise en réseau avancée via l’API Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html), car les ports sont désactivés par défaut.
 * [Ajouter des dépendances de pilote JDBC dans Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=fr#mysql-driver-dependencies).
 
 
@@ -60,7 +61,7 @@ Vous pouvez configurer des bases de données relationnelles à l’aide de la co
 
    **Où trouver ces informations ?**
 
-   Pour obtenir des instructions détaillées sur la localisation de ces détails, reportez-vous à l’article Adobe Experience League « [Accès à Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git) ».
+   Pour obtenir des instructions détaillées sur la localisation de ces détails, reportez-vous à l’article Adobe Experience League « [Accès à Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) ».
 
    Une fois la commande terminée, un nouveau dossier est créé dans votre répertoire local. Ce dossier porte le nom de votre application.
 
@@ -116,7 +117,7 @@ git push
 
 >[!NOTE]
 >
-> Consultez [Connexions SQL à l’aide de JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=fr) pour plus d’informations.
+> Consultez [Connexions SQL à l’aide de JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) pour plus d’informations.
 
 <!--
 1. Go to [!DNL Experience Manager] web console at `https://server:host/system/console/configMgr`.
@@ -207,8 +208,8 @@ Les services web RESTful peuvent être décrits en utilisant les [spécification
 1. Sélectionnez **[!UICONTROL Créer]** pour ouvrir l’**[!UICONTROL Assistant de création d’une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, sélectionnez **[!UICONTROL Service RESTful]** dans la liste déroulante **[!UICONTROL Type de service]**, recherchez et sélectionnez éventuellement une image miniature pour la configuration, puis sélectionnez **[!UICONTROL Suivant]**.
 1. Spécifiez les informations suivantes pour le service RESTful :
 
-   * Sélectionnez une URL ou un fichier dans la liste déroulante [!UICONTROL Swagger Source], et spécifiez l’[!DNL Swagger URL] au fichier de définition [!DNL &#x200B; Swagger] ou chargez le fichier [!DNL Swagger] à partir de votre système de fichiers local.
-   * En fonction de l’entrée source [!DNL &#x200B; Swagger], les champs suivants sont préremplis avec des valeurs :
+   * Sélectionnez une URL ou un fichier dans la liste déroulante [!UICONTROL Swagger Source], et spécifiez l’[!DNL Swagger URL] au fichier de définition [!DNL  Swagger] ou chargez le fichier [!DNL Swagger] à partir de votre système de fichiers local.
+   * En fonction de l’entrée source [!DNL  Swagger], les champs suivants sont préremplis avec des valeurs :
 
       * Schéma : protocoles de transfert utilisés par l’API REST. Le nombre de types de schémas qui s’affichent dans la liste déroulante dépend des schémas définis dans la source [!DNL Swagger].
       * Hôte : nom de domaine ou adresse IP de l’hôte qui sert l’API REST. Ce champ est obligatoire.
@@ -232,8 +233,8 @@ Les services web RESTful peuvent être décrits en utilisant les [spécification
 1. Sélectionnez **[!UICONTROL Créer]** pour ouvrir l’**[!UICONTROL Assistant de création d’une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, sélectionnez **[!UICONTROL Service RESTful]** dans la liste déroulante **[!UICONTROL Type de service]**, recherchez et sélectionnez éventuellement une image miniature pour la configuration, puis sélectionnez **[!UICONTROL Suivant]**.
 1. Spécifiez les informations suivantes pour le service RESTful :
 
-   * Sélectionnez une URL ou un fichier dans la liste déroulante [!UICONTROL Swagger Source], et spécifiez l’[!DNL Swagger 3.0 URL] au fichier de définition [!DNL &#x200B; Swagger] ou chargez le fichier [!DNL Swagger] à partir de votre système de fichiers local.
-   * En fonction de l’entrée source [!DNL &#x200B; Swagger], les informations de connexion au serveur cible s’affichent.
+   * Sélectionnez une URL ou un fichier dans la liste déroulante [!UICONTROL Swagger Source], et spécifiez l’[!DNL Swagger 3.0 URL] au fichier de définition [!DNL  Swagger] ou chargez le fichier [!DNL Swagger] à partir de votre système de fichiers local.
+   * En fonction de l’entrée source [!DNL  Swagger], les informations de connexion au serveur cible s’affichent.
    * Sélectionnez le type d’authentification : aucune, OAuth2.0 ([code d’authentification](https://oauth.net/2/grant-types/authorization-code/), [informations d’identification client](https://oauth.net/2/grant-types/client-credentials/)), authentification de base, clé API ou authentification personnalisée pour accéder au service RESTful et spécifiez les détails de l’authentification.
 
    Si vous sélectionnez **[!UICONTROL Clé API]** comme type d’authentification, spécifiez la valeur de la clé API. La clé API peut être envoyée en tant qu’en-tête de requête ou en tant que paramètre de requête. Sélectionnez l’une de ces options dans la liste déroulante **[!UICONTROL Emplacement]** et indiquez le nom de l’en-tête ou du paramètre de requête dans le champ **[!UICONTROL Nom du paramètre]**.
@@ -389,7 +390,7 @@ Un service OData est identifié par son URL racine de service. Pour configurer u
 <!--
 ## Configure Microsoft&reg; SharePoint List {#config-sharepoint-list}
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features). </span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 To save data in a tabular form use, Microsoft&reg; SharePoint List. To configure a Microsoft SharePoint List in [!DNL Experience Manager] as a Cloud Service, do the following:
 

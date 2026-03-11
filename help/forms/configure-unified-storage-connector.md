@@ -3,10 +3,11 @@ title: Comment configurer le connecteur de stockage unifié (USC) pour AEM Forms
 description: Découvrez comment gérer le connecteur de stockage unifié (USC) pour AEM Forms. Utilisez le connecteur de stockage unifié (USC) pour connecter AEM Forms à des stockages de données externes.
 role: Admin, Developer, User
 feature: Adaptive Forms, Workflow
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: c17e4e70fa8cec176c908983230b03f2899bc1ca
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '643'
 ht-degree: 74%
 
 ---
@@ -19,7 +20,7 @@ Par exemple, vous pouvez remplir les valeurs des champs d’un formulaire adapta
 
 ## Connexion de workflows AEM à un serveur de stockage Microsoft Azure {#connect-workflows-with-azure}
 
-Créez une configuration de stockage Azure et référez-vous à cette configuration à l’aide du connecteur de stockage unifié (USC). Vous pouvez ensuite configurer les modèles de workflow AEM pour externaliser l’enregistrement des données afin de les connecter à un serveur de stockage Azure.
+Créez une configuration de stockage Azure et reportez-vous à cette configuration à l’aide du connecteur de stockage unifié (USC). Vous pouvez ensuite configurer les modèles de workflow AEM pour externaliser l’enregistrement des données afin de les connecter à un serveur de stockage Azure.
 
 ### Créer une configuration de stockage [!DNL Azure] {#create-azure-storage-configuration}
 
@@ -31,7 +32,7 @@ Pour créer une configuration de stockage [!DNL Azure], procédez comme suit :
 1. Sélectionnez un dossier pour créer la configuration et sélectionnez **[!UICONTROL Créer]**.
 1. Indiquez un titre pour la configuration dans le champ **[!UICONTROL Titre]**.
 1. Indiquez le nom du compte de stockage [!DNL Azure] dans le champ **[!UICONTROL Compte de stockage Azure]**.
-1. Indiquez la clé pour accéder au compte de stockage Azure dans le champ **[!UICONTROL Clé d’accès Azure]** et sélectionnez **[!UICONTROL Enregistrer]**.
+1. Indiquez la clé d’accès au compte de stockage Azure dans le champ **[!UICONTROL Clé d’accès Azure]** et sélectionnez **[!UICONTROL Enregistrer]**.
 
 ### Configuration du connecteur de stockage unifié (USC) pour les workflows AEM {#configure-unified-storage-connector-workflows}
 
@@ -72,6 +73,6 @@ Voici nos recommandations concernant l’utilisation des workflows AEM et le sto
 >[!MORELIKETHIS]
 >
 >* [Configurer les sources de données pour AEM Forms](/help/forms/configure-data-sources.md)
->* [Configurer le stockage Azure pour AEM Forms](/help/forms/configure-azure-storage.md)
+>* [Configuration du stockage Azure pour AEM Forms](/help/forms/configure-azure-storage.md)
 >* [Intégrer Microsoft Dynamics 365](/help/forms/configure-msdynamics.md)
 >  [Ajoutez Forms Portal à une page AEM Sites](/help/forms/configure-forms-portal.md)

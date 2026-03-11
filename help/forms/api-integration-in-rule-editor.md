@@ -5,10 +5,11 @@ feature: Adaptive Forms, Core Components, Edge Delivery Services
 role: User, Developer
 level: Beginner, Intermediate
 keywords: intégration d’API dans l’éditeur de règles, améliorations du service d’appel
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 478b9c21e5b96dc31f5926a49864ea867e1ae86c
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1040'
 ht-degree: 4%
 
 ---
@@ -103,7 +104,7 @@ Vous pouvez intégrer une API sans créer de modèle de données de formulaire e
 
 Un service d’API nommé **getcontendname** est configuré sous **Configuration de l’intégration de l’API** dans l’éditeur de règles :
 
-![&#x200B; Configuration du point d’entrée REST de l’API &#x200B;](/help/forms/assets/api-restendpoint.png)
+![ Configuration du point d’entrée REST de l’API ](/help/forms/assets/api-restendpoint.png)
 
 * **URL du point d’entrée de l’API** → `https://secure.geonames.org/countryInfoJSON?username=aemforms`
 * **Méthode HTTP** → GET

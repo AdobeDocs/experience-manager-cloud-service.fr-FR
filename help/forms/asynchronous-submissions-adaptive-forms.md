@@ -1,23 +1,24 @@
 ---
-title: Comment configurer l’envoi asynchrone pour AEM Forms adaptatif ?
+title: Comment configurer l’envoi asynchrone pour AEM Adaptive Forms ?
 description: Apprenez à configurer l’envoi asynchrone de formulaires adaptatifs. Découvrez comment fonctionne l’envoi asynchrone de formulaires adaptatifs.
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 026f4920-f8f9-4b08-b1b0-af50229633d7
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '752'
 ht-degree: 92%
 
 ---
 
-# Configuration de l’envoi asynchrone d’AEM Forms adaptatif {#asynchronous-submission-of-adaptive-forms}
+# Configuration de l’envoi asynchrone d’AEM Adaptive Forms {#asynchronous-submission-of-adaptive-forms}
 
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/asynchronous-submissions-adaptive-forms.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/asynchronous-submissions-adaptive-forms.html) |
 | AEM as a Cloud Service | Cet article |
 
 
@@ -108,7 +109,7 @@ Les développeurs et les auteurs de formulaires peuvent écrire des règles, au 
 
 Effectuez les étapes suivantes pour écrire des règles afin de gérer les événements de succès et d’erreur.
 
-1. Ouvrez le formulaire adaptatif en mode création, sélectionnez un objet de formulaire, puis ![edit-rules1](assets/edit-rules-icon.svg) pour ouvrir l’éditeur de règles.
+1. Ouvrez le formulaire adaptatif en mode création, sélectionnez n’importe quel objet de formulaire et sélectionnez ![edit-rules1](assets/edit-rules-icon.svg) pour ouvrir l’éditeur de règles.
 1. Sélectionnez **[!UICONTROL Formulaire]** dans l’arborescence des objets de formulaire, puis **[!UICONTROL Créer]**.
 1. Sélectionnez **[!UICONTROL est envoyé avec succès]** ou **[!UICONTROL l’envoi échoue]** dans la liste déroulante **[!UICONTROL Sélectionner l’état]**.
 1. Définissez une action **[!UICONTROL Ensuite]** pour l’état sélectionné. Par exemple, sélectionnez **[!UICONTROL Accéder à]**, puis tapez ou collez une URL. Vous pouvez également faire glisser n’importe quelle fonction à l’aide de l’onglet **[!UICONTROL Fonctions]** vers la règle.
