@@ -17,7 +17,7 @@ ht-degree: 13%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html) |
+| AEM 6.5 | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html?lang=fr) |
 | AEM as a Cloud Service (Composants principaux) | Cet article |
 
 Le portail Forms offre un moyen efficace d’afficher et de répertorier le Forms adaptatif sur une page AEM Sites. Il est utile pour les organisations qui ont besoin d’une plateforme de présenter systématiquement divers formulaires à leurs utilisateurs.
