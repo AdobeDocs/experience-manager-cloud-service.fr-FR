@@ -1,20 +1,20 @@
 ---
-title: Notes de mise à jour de l’éditeur universel version 2026.03.05
-description: Il s’agit des notes de mise à jour de la version 2026.03.05 de l’éditeur universel.
+title: Notes de mise à jour de l’éditeur universel version 2026.03.12
+description: Il s’agit des notes de mise à jour de la version 2026.03.12 de l’éditeur universel.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 2148c2399c1d5121de155d512dba7eeed3315a31
+source-git-commit: ef6e65a72eaa5e7e8b15f8ec096cd43351bc2674
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 39%
+source-wordcount: '151'
+ht-degree: 47%
 
 ---
 
 
-# Notes de mise à jour de l’éditeur universel version 2026.03.05 {#release-notes}
+# Notes de mise à jour de l’éditeur universel version 2026.03.12 {#release-notes}
 
-Voici les notes de mise à jour de la version du 5 mars 2026 de l’éditeur universel.
+Voici les notes de mise à jour de la version du 12 mars 2026 de l’éditeur universel.
 
 >[!TIP]
 >
@@ -26,8 +26,7 @@ Voici les notes de mise à jour de la version du 5 mars 2026 de l’éditeur uni
 
 ## Nouveautés {#what-is-new}
 
-* [Le sélecteur de composants](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) a une nouvelle conception.
-* [Un sélecteur de couleurs](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) pour l’éditeur de texte enrichi est désormais disponible.
+* Les composants peuvent désormais être ajoutés via le [menu contextuel](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) des conteneurs.
 
 ## Fonctionnalités d’adoption précoce {#early-adopter}
 
@@ -37,5 +36,4 @@ Si vous souhaitez tester les prochaines fonctionnalités répertoriées ci-desso
 
 ## Autres améliorations {#other-improvements}
 
-* Les options d’alignement, d’orientation du texte et de mise en retrait sont désormais [activées par défaut dans l’éditeur de texte enrichi](/help/implementing/universal-editor/configure-rte.md) à condition que votre serveur principal les prenne en charge.
-* Les onglets sont désormais rendus lors de l’utilisation d’un fragment de contenu avec API ouverte et schéma d’interface utilisateur.
+* Correction d’un problème en raison duquel les sous-éléments de création de documents ne respectaient pas les règles énième enfant.
