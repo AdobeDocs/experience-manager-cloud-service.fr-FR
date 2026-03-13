@@ -4,9 +4,9 @@ description: Découvrez les premières étapes pour devenir rapidement productif
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
-source-git-commit: 0aaa9904b3011adc3f3e3b01bfee8ee3e96f12e2
+source-git-commit: 283608acebab0704532ee2a2d856f248a818f671
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1070'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Prise en main de l’agent de modernisation de l’expérience {#getting-started}
 
-Découvrez les premières étapes pour devenir rapidement productif avec l’agent de modernisation de l’expérience à l’aide de la console de modernisation de l’expérience.
+Découvrez les premières étapes pour commencer à utiliser l’agent de modernisation d’expérience et la console de modernisation d’expérience.
 
 >[!NOTE]
 >
->Si vous souhaitez utiliser la console de modernisation de l’expérience, vous pouvez demander l’accès pour garantir une expérience d’intégration fluide.
+>Si vous souhaitez utiliser la console de modernisation de l’expérience, vous pouvez demander l’accès par l’intermédiaire de votre gestionnaire de compte pour garantir une expérience d’intégration fluide.
 
 ## Préparation d’un référentiel GitHub Edge Delivery {#prepare-repo}
 
@@ -68,11 +68,11 @@ Maintenant que votre console peut accéder à votre code, vous êtes prêt à d�
    * La console vous présente des commentaires au fur et à mesure qu’elle commence son travail, y compris un aperçu de ses étapes planifiées.
      ![Import de contenu](assets/content-import.png)
 1. Une fois le site importé, le panneau **Workspace** affiche les pages. Sélectionnez une page pour la prévisualiser dans le panneau de droite.
-   ![&#x200B; Contenu importé &#x200B;](assets/content-imported.png)
+   ![ Contenu importé ](assets/content-imported.png)
 1. Maintenant que vous disposez de contenu, vous pouvez demander à importer les styles à partir de la même source.
    * « Importez les styles généraux à partir de `https://wknd-trendsetters.site`. »
 1. Comme pour l’importation de contenu initiale, l’importation peut prendre plusieurs minutes et la console fournit des commentaires pendant le traitement de votre demande et l’importation des styles. Une fois la tâche terminée, cliquez sur **Actualiser l’aperçu** dans le panneau de droite pour afficher le contenu stylisé.
-   ![&#x200B; Styles importés &#x200B;](assets/styles-imported.png)
+   ![ Styles importés ](assets/styles-imported.png)
 
 Le contenu et les styles sont maintenant importés dans la console.
 
@@ -149,5 +149,5 @@ Les documents suivants peuvent s’avérer utiles lorsque vous continuez à expl
 
 * [Console de modernisation de l’expérience](/help/ai-in-aem/agents/brand-experience/modernization/console.md) - Détails sur la console, ses vues, options et fonctionnalités
 * [Guide d’invite pour l’agent de modernisation de l’expérience](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md) - Idées sur la manière d’inviter l’agent et sur ce que ses compétences peuvent faire
-* [Tutoriel de développement Edge Delivery Services &#x200B;](https://www.aem.live/developer/tutorial) - Utile si vous êtes un débutant dans les projets AEM et Edge Delivery Services
+* [Tutoriel de développement Edge Delivery Services ](https://www.aem.live/developer/tutorial) - Utile si vous êtes un débutant dans les projets AEM et Edge Delivery Services
 * [Création de documents](https://da.live) - Utile si vous êtes un débutant dans la création de documents pour la gestion de contenu
