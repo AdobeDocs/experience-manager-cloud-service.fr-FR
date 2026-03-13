@@ -64,7 +64,7 @@ Les outils spécifiques exposés par chaque serveur MCP peuvent évoluer au fil 
 
 Le client MCP utilise le protocole MCP pour récupérer la liste d’outils et les schémas, que le module LLM peut ensuite utiliser.
 
-Référez-vous au [tutoriel du serveur MCP de contenu](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) et à la [vidéo du serveur MCP Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) pour plus d&#39;informations sur leurs fonctionnalités et leur utilisation.
+Référez-vous au [tutoriel du serveur MCP de contenu](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) et à la [vidéo du serveur MCP Cloud Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) pour plus d&#39;informations sur leurs fonctionnalités et leur utilisation.
 
 ## Applications MCP prises en charge {#supported-mcp-applications}
 
