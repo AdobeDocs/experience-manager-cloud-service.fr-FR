@@ -7,10 +7,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 mini-toc-levels: 2
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 0c99c27e22fd14485b367fdda8dc76c03aff65dc
 workflow-type: tm+mt
-source-wordcount: '2144'
-ht-degree: 61%
+source-wordcount: '2211'
+ht-degree: 59%
 
 ---
 
@@ -21,11 +21,11 @@ Découvrez les différentes propriétés qu’une page peut avoir, comment elles
 
 >[!TIP]
 >
->Pour plus d’informations sur la modification des propriétés d’une page, consultez le document [&#x200B; Modification des propriétés de page &#x200B;](/help/sites-cloud/authoring/sites-console/edit-page-properties.md).
+>Pour plus d’informations sur la modification des propriétés d’une page, consultez le document [ Modification des propriétés de page ](/help/sites-cloud/authoring/sites-console/edit-page-properties.md).
 
 ## Présentation et disponibilité des propriétés {#overview}
 
-Les propriétés de page peuvent contrôler de nombreux aspects d’une page, depuis le titre jusqu’aux autorisations, en passant par le branding. Les propriétés sont réparties sur plusieurs onglets, dont certains peuvent être masqués selon le type de page. Comme la plupart des propriétés dans AEM, [&#x200B; propriétés de page peuvent être héritées.](/help/sites-cloud/authoring/sites-console/edit-page-properties.md#inheritance)
+Les propriétés de page peuvent contrôler de nombreux aspects d’une page, depuis le titre jusqu’aux autorisations, en passant par le branding. Les propriétés sont réparties sur plusieurs onglets, dont certains peuvent être masqués selon le type de page. Comme la plupart des propriétés dans AEM, [ propriétés de page peuvent être héritées.](/help/sites-cloud/authoring/sites-console/edit-page-properties.md#inheritance)
 
 >[!NOTE]
 >
@@ -161,11 +161,17 @@ Cette propriété vous permet de saisir une URL Vanity pour cette page, ce qui p
 
 * **Activer** - Active l’utilisation de l’authentification pour accéder à la page
 
->[!NOTE]
->
->Les groupes d’utilisateurs fermés pour la page sont définis dans l’onglet **[Autorisations](#permissions)**.
+  >[!NOTE]
+  >
+  >Les groupes d’utilisateurs fermés pour la page sont définis dans l’onglet **[Autorisations](#permissions)**.
 
 * **Page de connexion** – Page à utiliser pour la connexion
+
+  >[!WARNING]
+  >
+  >La page de connexion spécifiée **ne doit pas** pointe vers une page elle-même protégée par une **exigence d’authentification**. Vous devez vous assurer que la page de connexion est une page publique non protégée. Par exemple, une page dédiée telle que `/content/<mysite>/en/login` sans **Exigence d’authentification** activée.
+  >
+  >Si la page de connexion configurée comporte la case **Activer** cochée, l’exigence d’authentification sur cette page sera supprimée silencieusement au démarrage, ce qui la rendra accessible au public.
 
 ### Export {#export}
 
