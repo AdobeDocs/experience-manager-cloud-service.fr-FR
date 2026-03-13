@@ -175,7 +175,7 @@ Les serveurs MCP hébergés par Adobe mettent en œuvre OAuth et sont intégrés
 * Lorsqu’une application cliente MCP se connecte à un serveur MCP AEM, les utilisateurs voient une boîte de dialogue de connexion Adobe et s’authentifient avec leur **Adobe ID**
 * Une fois la connexion établie, le système vérifie que l’application cliente MCP est autorisée dans votre organisation et que le serveur MCP demandé est autorisé. Si l’une de ces vérifications échoue, un message d’erreur s’affiche.
 
-![Erreur Client MCP non autorisé ](assets/MCP-Client-not-permitted.png)
+![Erreur Client MCP non autorisé &#x200B;](assets/MCP-Client-not-permitted.png)
 
 * Une fois la vérification effectuée, le serveur MCP émet des jetons que l’application utilise pour les appels d’outil suivants
 * Les outils MCP respectent les autorisations AEM de l’utilisateur. Seuls les utilisateurs autorisés à modifier un fragment de contenu dans AEM peuvent le modifier via MCP.
@@ -254,6 +254,6 @@ Certaines applications clientes MCP, telles que Claude, offrent la possibilité 
 
 ## Limites {#limitations}
 
-AEM prend actuellement en charge la configuration des serveurs MCP dans les applications répertoriées sous [ Applications MCP prises en charge ](#supported-mcp-applications).
+AEM prend actuellement en charge la configuration des serveurs MCP dans les applications répertoriées sous [&#x200B; Applications MCP prises en charge &#x200B;](#supported-mcp-applications).
 
 Si vous souhaitez utiliser une autre application cliente MCP, n&#39;hésitez pas à contacter **aemcs-mcp-feedback@adobe.com** pour demander de l&#39;aide pour d&#39;autres clients ou pour en ajouter un personnalisé.
