@@ -4,7 +4,7 @@ description: Découvrez comment minimiser l’impact opérationnel des mises à 
 feature: Deploying
 role: Admin
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: 09dec0a073b3e97d5c796f490ccdf88fcd7e1c72
+source-git-commit: 64bedfde08d6e8569c51ff3d9a754da76de65704
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 0%
@@ -14,14 +14,14 @@ ht-degree: 0%
 # Heures calmes et Mettre à jour les périodes libres {#quiet-hours-update-free-periods}
 
 >[!NOTE]
->Vous ne pouvez utiliser les fonctions Heures calmes et Mettre à jour les périodes libres qu’après avoir intégré les [&#x200B; Mises à jour de maintenance automatiques &#x200B;](/help/implementing/deploying/aem-version-updates.md).
+>Vous ne pouvez utiliser les fonctions Heures calmes et Mettre à jour les périodes libres qu’après avoir intégré les [ Mises à jour de maintenance automatiques ](/help/implementing/deploying/aem-version-updates.md).
 
 Les [mises à jour de maintenance automatique](/help/implementing/deploying/aem-version-updates.md) d’AEM as a Cloud Service garantissent la sécurité de vos instances et les mettent à jour avec les dernières versions de maintenance. Cela dit, dans certains cas (comme les événements de mise en production), vous devrez peut-être « protéger » ces heures de travail critiques contre d’éventuelles perturbations. Ainsi, AEM as a Cloud Service offre la possibilité de définir une période pendant laquelle les mises à jour automatiques ne se produisent pas pour vos programmes en cours.
 
 Vous pouvez configurer ces périodes à l’aide de deux options de planification :
 
 * **Heures calmes** - Vous pouvez définir un intervalle de temps quotidien (jusqu’à 8 heures) où aucune mise à jour n’aura lieu.
-* **Mettre à jour les périodes libres** - Vous pouvez définir une période de 7 jours pendant laquelle aucune mise à jour n’aura lieu. Vous pouvez avoir jusqu’à trois périodes de mise à jour gratuite sur une période de 12 mois.
+* **Mettre à jour les périodes libres** - Vous pouvez définir une période de 7 jours pendant laquelle aucune mise à jour n’aura lieu. Vous pouvez avoir jusqu’à trois périodes de temps libre de mise à jour dans une fenêtre flottante de 365 jours.
 
 Les fonctionnalités de mise à jour des périodes libres et des heures creuses sont configurées « par programme ». Gardez à l’esprit que seuls les utilisateurs disposant du « rôle utilisateur » **Propriétaire de l’entreprise** et **Responsable de déploiement** peuvent afficher et utiliser ces fonctionnalités.
 
