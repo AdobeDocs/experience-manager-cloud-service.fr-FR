@@ -4,10 +4,10 @@ description: Découvrez les agents disponibles dans AEM pour accélérer la cré
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: f0b82ecf-0f5c-432f-9944-f99597aacd6a
-source-git-commit: 51127359588edce96b87fc13447370063e9ca93b
+source-git-commit: fc304f3e63c38006bf678abc797ccb17dcd8db39
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 0%
+source-wordcount: '495'
+ht-degree: 3%
 
 ---
 
@@ -27,21 +27,21 @@ Ces agents sont disponibles dans Adobe Experience Manager (AEM) as a Cloud Servi
 
 Vous disposez de trois options pour accéder aux agents.
 
-1. Vous avez peut-être la possibilité d’accéder aux agents AEM par le biais du programme [Essayer avant d’acheter](http://experienceleague.adobe.com/fr/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) qui est déployé par phases. Votre CSM ou votre TAM peut vous aider à confirmer la disponibilité de votre entreprise.
+1. Vous avez peut-être la possibilité d’accéder aux agents AEM par le biais du programme [Essayer avant d’acheter](http://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) qui est déployé par phases. Votre CSM ou votre TAM peut vous aider à confirmer la disponibilité de votre entreprise.
 1. Explorez les agents AEM [via une version d’évaluation](https://www.aem.live/developer/aem-playground).
 1. Contactez votre CSM ou votre TAM pour discuter de l’accès via le SKU de l’agence si cela correspond à votre feuille de route et à vos plans d’évaluation.
 
-À mesure que de nouvelles compétences seront disponibles dans le cadre de la version préliminaire, nous aurons d’autres occasions de participer et de partager nos commentaires. Nous vous encourageons à regarder [cette page](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) pour les mises à jour.
+À mesure que de nouvelles compétences seront disponibles dans le cadre de la version préliminaire, nous aurons d’autres occasions de participer et de partager nos commentaires. Nous vous encourageons à regarder [cette page](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) pour les mises à jour.
 
 ## Brand Experience Agent {#brand-experience-agent}
 
-Le [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) automatise les tâches à fort effort et à volume élevé.
+Le [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) automatise les tâches à fort effort et à volume élevé par le biais des agents suivants, chacun se spécialisant dans un ensemble spécifique de tâches.
 
-* **Mise à jour de contenu** - Mettre à jour une page ou un fragment de contenu
-* **Création de formulaire** - Créez un formulaire ou importez-en un
-* **Dépannage du développement** - Donnez aux rôles techniques (développeurs et administrateurs) les moyens de rationaliser la création, le débogage, le déploiement et l’optimisation du code.
+* **[Agent de modernisation Experience Cloud](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)** - Migre les sites web vers des formats prêts pour le cloud
+* **[Agent de production Experience](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)** - Réduit le délai de mise sur le marché avec les mises à jour de contenu, la création de formulaires et les communications
+* **[Agent de développement](/help/ai-in-aem/agents/brand-experience/development/development.md)** - Dépannage assisté par IA et automatisation des builds
 
-Brand Experience Agent permet aux équipes de transformer des processus manuels qui durent des semaines en workflows rapides et assistés par l’IA, qui maintiennent chaque expérience à jour et cohérents afin d’aider l’entreprise à atteindre ses objectifs.
+Grâce à ces agents, Brand Experience Agent absorbe le travail opérationnel lourd derrière les mises à jour et la modernisation, aidant les équipes à apporter des modifications plus rapidement et avec une plus grande confiance dans l’ère de l’IA d’aujourd’hui.
 
 ## Agent du gestionnaire de contenu {#content-advisor-agent}
 
