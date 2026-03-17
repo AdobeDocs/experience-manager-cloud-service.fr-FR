@@ -4,9 +4,9 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 2a7b83b99547637e02ec7cef9c92c5dd794a9adc
+source-git-commit: b83d8736d47778ed133e0cc07207e02e581bbc69
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '635'
 ht-degree: 36%
 
 ---
@@ -29,7 +29,7 @@ L’activation des fonctionnalités de la version 2026.3.0 fournit l’ensemble
 * GRANITE-57035 : utilisez Bouncy Castle comme fournisseur de sécurité par défaut.
 * GRANITE-59249 : évitez d’enregistrer un fournisseur de sécurité dans la JVM.
 * GRANITE-61564 : l’ouverture des paramètres d’affichage sur `/security/users.html` échoue pour les administrateurs.
-* GRANITE-64748 : OIDC : expiration du cookie configurable sling.oauth-request-key.
+* GRANITE-64748 : OIDC : configurable `sling.oauth-request-key` l’expiration du cookie.
 * SITES-39767 : prend en charge la valeur à usage unique via l’attribut de requête (CSP).
 * SKYOPS-129301 : définition du niveau de conformité jar javadoc des API sur 17.
 * GRANITE-64962 : mettre à jour Apache Jackrabbit Oak vers la version 1.92.0.
