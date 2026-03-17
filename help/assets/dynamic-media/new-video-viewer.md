@@ -1,14 +1,13 @@
 ---
 title: Nouvelle visionneuse de vidéos
-description: La nouvelle visionneuse de vidéos de Dynamic Media offre une expérience de lecture vidéo améliorée avec des performances, une accessibilité et une configurabilité améliorées.
+description: La nouvelle visionneuse de vidéos de Dynamic Media offre une expérience de lecture vidéo améliorée
 role: User
-source-git-commit: f069e2cfaaa3c82a1d2391403b23f1ccf1ec2866
+source-git-commit: 1ee4f1352a0fe1e8d1f2fd7b79555ad4144bb02c
 workflow-type: tm+mt
-source-wordcount: '1449'
+source-wordcount: '1443'
 ht-degree: 2%
 
 ---
-
 
 # Nouvelle visionneuse de vidéos dans Dynamic Media {#new-video-viewer-dynamic-media}
 
@@ -29,7 +28,7 @@ La nouvelle visionneuse de vidéos est destinée aux entreprises qui ont besoin 
 
 > **REMARQUE**
 >
-> La nouvelle visionneuse de vidéos est une fonctionnalité à disponibilité limitée. Vous pouvez l’activer en créant un [&#x200B; ticket d’assistance &#x200B;](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
+> La nouvelle visionneuse de vidéos est une fonctionnalité à disponibilité limitée. Vous pouvez l’activer en créant un [ ticket d’assistance ](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
 
 
 ## Fonctionnement de la nouvelle visionneuse de vidéos {#how-it-works}
@@ -61,7 +60,7 @@ Avant d’utiliser la nouvelle visionneuse de vidéos, assurez-vous que les cond
 | Profil vidéo | Un profil vidéo doit être appliqué au dossier. |
 | Contenu vidéo | Une vidéo doit être ingérée dans le dossier . |
 
-La nouvelle visionneuse de vidéos est disponible à partir de la version 2025.7.0 d’AEM as a Cloud Service **&#x200B;**.
+La nouvelle visionneuse de vidéos est disponible à partir de la version 2025.7.0 d’AEM as a Cloud Service ****.
 
 Pour activer ou désactiver la nouvelle visionneuse de vidéos, contactez l’assistance clientèle d’Adobe.
 
@@ -74,7 +73,7 @@ Pour prévisualiser la nouvelle visionneuse de vidéos à partir de la page des 
 3. Dans le panneau de gauche, cliquez sur **Visionneuses**.
 4. Dans le panneau **Visionneuses**, sélectionnez **Vidéo (nouvelle)**.
 5. Cliquez sur **URL** pour copier le lien d’aperçu.
-   ![Copier l’URL](/help/assets/assets/Copy-url1.jpg)
+   ![Copier l’URL](assets/Copy-url1.jpg)
 
 ## Utilisation de la nouvelle visionneuse de vidéos dans Sites {#use-in-sites}
 
@@ -90,7 +89,7 @@ Pour ajouter une vidéo à l’aide du composant Dynamic Media, procédez comme 
 4. Cliquez sur le composant pour ouvrir le sélecteur de ressources.
 5. Sélectionnez une ressource vidéo.
 
-![Faites glisser le composant Dynamic Media](/help/assets/assets/drag-component.jpeg)
+![Faites glisser le composant Dynamic Media](assets/drag-component.jpeg)
 
 ### Configuration de la visionneuse
 
@@ -98,13 +97,13 @@ Pour configurer le paramètre prédéfini de visionneuse, procédez comme suit :
 
 1. Sélectionnez le composant **Dynamic Media** sur la page.
 2. Cliquez sur **Configurer** dans la barre d’outils du composant.
-   ![Ouvrir les paramètres Dynamic Media](/help/assets/assets/configure-asset.png)
+   ![Ouvrir les paramètres Dynamic Media](assets/configure-asset.png)
 
 3. Dans la boîte de dialogue **Paramètres Dynamic Media**, sélectionnez **Vidéo (nouvelle)** dans la liste déroulante **Paramètre prédéfini de la visionneuse**.
-   ![Sélectionner le paramètre prédéfini de la visionneuse de vidéos (nouveau)](/help/assets/assets/viewer-preset.jpeg)
+   ![Sélectionner le paramètre prédéfini de la visionneuse de vidéos (nouveau)](assets/viewer-preset.jpeg)
 
 4. Saisissez les modificateurs requis dans le champ **Modificateurs de visionneuse** (par exemple, `autoplay=true&muted=true`).
-   ![Modificateurs de visionneuse](/help/assets/assets/additional-modifiers.jpeg)
+   ![Modificateurs de visionneuse](assets/additional-modifiers.jpeg)
 
 5. Enregistrez les modifications.
 
