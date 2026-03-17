@@ -4,9 +4,9 @@ description: Découvrez comment utiliser l’agent d’optimisation de contenu p
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 896fc25b-7f60-47b8-9264-2ef6b85d954c
-source-git-commit: a9f1ed92e3ca05be6f4db578a814330004100b3e
+source-git-commit: 45c547a0a7372e5ebe23bd6b816798cd3b225872
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Vous pouvez accéder à l’agent d’optimisation de contenu dans AEM via l’a
 
 ## Cas d’utilisation courants et exemples d’invites {#use-cases-prompts}
 
-Utilisez l’agent d’optimisation de contenu en recherchant les ressources appropriées par le biais de l’agent de découverte de contenu [.](/help/ai-in-aem/agents/content-advisor/discovery.md) Une fois les images appropriées affichées, les utilisateurs peuvent générer des variantes optimisées ou spécifiques à un canal pour une ou plusieurs ressources directement à partir des résultats de la recherche. Ce workflow garantit des entrées de haute qualité et de meilleurs résultats d’optimisation de manière cohérente. [Pour plus d’informations](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/) consultez la liste complète des optimisations disponibles.
+Utilisez l’agent d’optimisation de contenu en recherchant les ressources appropriées par le biais de l’agent de découverte de contenu [.](/help/ai-in-aem/agents/content-advisor/discovery.md) Une fois les images appropriées affichées, les utilisateurs peuvent générer des variantes optimisées ou spécifiques à un canal pour une ou plusieurs ressources directement à partir des résultats de la recherche. Les utilisateurs peuvent également générer des variantes en spécifiant l’UUID ou le chemin d’accès à la ressource dans l’invite, sans avoir à effectuer de recherche préalable. Ce workflow garantit des entrées de haute qualité et de meilleurs résultats d’optimisation de manière cohérente. [Pour plus d’informations](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/) consultez la liste complète des optimisations disponibles.
 
 * **Création de rendu haute résolution**
 

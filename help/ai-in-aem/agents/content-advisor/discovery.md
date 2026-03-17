@@ -4,21 +4,21 @@ description: Découvrez comment utiliser l’agent de découverte de contenu pou
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: a9f1ed92e3ca05be6f4db578a814330004100b3e
+source-git-commit: 45c547a0a7372e5ebe23bd6b816798cd3b225872
 workflow-type: tm+mt
-source-wordcount: '1313'
-ht-degree: 1%
+source-wordcount: '2066'
+ht-degree: 0%
 
 ---
 
 
 # Agent de découverte de contenu {#discovery-agent}
 
-Dans le cadre d’AEM [Agent du gestionnaire de contenu](/help/ai-in-aem/agents/content-advisor/overview.md) l’agent de découverte de contenu fournit du contenu AEM à la demande par le biais d’invites de conversation naturelles pour une expérience de découverte rationalisée et sans clic. Il effectue des recherches intelligentes dans Assets, les fragments de contenu et les Forms adaptatifs pour fournir des ressources pertinentes telles que des images, des vidéos, des documents PDF, des articles et des modèles de formulaire. Le langage naturel vous permet de rechercher du contenu sans créer de requêtes complexes ni appliquer de filtres dans l’interface d’AEM Assets. En fonction de votre invite, l’agent renvoie les résultats traités, ainsi que les métadonnées de ressource et les URL de diffusion, prêts à être incorporés dans d’autres applications.
+Dans le cadre d’AEM [Agent du gestionnaire de contenu](/help/ai-in-aem/agents/content-advisor/overview.md) l’agent de découverte de contenu fournit du contenu AEM à la demande par le biais d’invites de conversation naturelles pour une expérience de découverte rationalisée et sans clic. Il effectue des recherches intelligentes dans Assets, les fragments de contenu, les pages AEM Sites et les Forms adaptatifs pour fournir des ressources pertinentes telles que des images, des vidéos, des documents PDF, des articles et des modèles de formulaire. Le langage naturel vous permet de rechercher du contenu sans créer de requêtes complexes ni appliquer de filtres dans l’interface d’AEM Assets. En fonction de votre invite, l’agent renvoie les résultats traités, ainsi que les métadonnées de ressource et les URL de diffusion, prêts à être incorporés dans d’autres applications.
 
 Voici quelques-uns des principaux avantages de l’agent de découverte de contenu :
 
-* **Découverte de contenu unifié** : accédez à tous les types de contenu AEM, tels que les images, les vidéos, les documents, les articles et les formulaires PDF, à partir d’une seule interface de conversation.
+* **Découverte de contenu unifié** : accédez à tous les types de contenu AEM, tels que les images, les vidéos, les documents PDF, les articles, les pages et les formulaires, à partir d’une seule interface de conversation.
 
 * **Planification rapide des campagnes** : collectez rapidement des visuels et des formulaires pour les campagnes marketing sur les canaux e-mail, web et sociaux.
 
@@ -38,12 +38,15 @@ Voici quelques-uns des principaux avantages de l’agent de découverte de conte
 
 L’agent de découverte de contenu fournit les compétences suivantes :
 
-* **Découverte de contenu en langage naturel**\
-  L’agent de découverte de contenu permet aux utilisateurs et utilisatrices de rechercher des ressources, des fragments de contenu et des formulaires adaptatifs pertinents dans Adobe Experience Manager (AEM) à l’aide d’invites en langage naturel simple, sans nécessiter de requêtes de recherche complexes.
+* **Découverte de contenu en langage naturel**
 
-* **Découverte de ressources basée sur les balises**
+  L’agent de découverte de contenu permet aux utilisateurs et utilisatrices de rechercher des ressources, des fragments de contenu, des formulaires adaptatifs et des pages AEM Sites pertinents dans Adobe Experience Manager (AEM) à l’aide d’invites en langage naturel simple (aucune requête de recherche complexe requise).
 
-  L’agent de découverte de contenu utilise des invites en langage naturel pour rechercher les ressources associées à des balises spécifiques dans le référentiel AEM, ce qui permet aux utilisateurs d’accéder rapidement au contenu, organisé ou non selon la taxonomie de l’entreprise.
+* **Découverte de ressources basées sur des métadonnées**
+
+  L’agent de découverte de contenu utilise des invites en langage naturel pour rechercher des ressources en fonction des métadonnées disponibles pour les ressources dans AEM. Les utilisateurs peuvent découvrir des ressources à l’aide de métadonnées telles que les balises, les ID de messagerie de l’auteur ou de l’éditeur, les dates de publication ou de modification, le type MIME, le type de ressource, le statut, les propriétés de métadonnées personnalisées définies dans les formulaires de métadonnées dans la vue Assets ou la vue Administration, etc. Voir [Cas d’utilisation courants et exemples d’invites](#use-cases-prompts) pour en obtenir la liste complète.
+
+  Vous pouvez également combiner plusieurs filtres de métadonnées dans une seule invite pour affiner les résultats de recherche.
 
 * **Découverte de contenu basé sur des dossiers :**\
   L’agent de découverte de contenu peut identifier les ressources en interprétant les invites de langage naturel qui font référence aux noms de dossier dans AEM. Les utilisateurs peuvent simplement mentionner le dossier dans leur invite, sans avoir à parcourir manuellement le référentiel, ce qui réduit considérablement le nombre de clics nécessaires pour localiser le contenu approprié.
@@ -76,24 +79,53 @@ Pour plus d’informations sur le point d’entrée MCP permettant d’accéder 
 
 ## Cas d’utilisation courants et exemples d’invites {#use-cases-prompts}
 
-### Assets {#discovery-agent-use-cases-assets}
+### Ressources {#discovery-agent-use-cases-assets}
 
-**Découverte de ressources basée sur les balises**
+**Découverte de ressources basées sur des métadonnées**
 
-L’agent de découverte de contenu utilise des invites en langage naturel pour rechercher les ressources associées à des balises spécifiques dans le référentiel AEM, ce qui permet aux utilisateurs d’accéder rapidement au contenu organisé en fonction de la taxonomie de leur entreprise.
+L’agent de découverte de contenu utilise des invites en langage naturel pour rechercher des ressources en fonction des métadonnées disponibles pour les ressources dans AEM. Les utilisateurs peuvent découvrir des ressources à l’aide des propriétés de métadonnées suivantes : balises, créé par ID d’e-mail, modifié par ID d’e-mail, publié par ID d’e-mail, date de création, date de modification, date de publication, type MIME, type de ressource, statut, format de fichier, taille de fichier, largeur d’image, hauteur d’image et plusieurs filtres de métadonnées dans une seule invite.
 
-Exemple d’invite :
+L’agent de découverte de contenu recherche également les propriétés personnalisées disponibles dans les schémas de métadonnées dans la vue Administration et les formulaires de métadonnées dans la vue Assets. Vous pouvez modifier vos invites en conséquence pour rechercher des valeurs disponibles dans ces propriétés de ressource personnalisées.
 
-Afficher les images balisées `office` dans le dossier `WKND`.
+>[!NOTE]
+>
+>Pour améliorer les performances de découverte, indexez les propriétés de métadonnées personnalisées pertinentes. Les propriétés indexées permettent à l’agent de récupérer plus rapidement le contenu correspondant lorsque les utilisateurs incluent ces propriétés dans leurs invites.
+
+
+Exemples d’invites :
+
+* **Recherche basée sur les balises** : affiche les images balisées `office` dans le dossier `WKND`.
+* **Recherche en fonction du format de fichier, du type de ressource, de l’état de la ressource et de l’ID de publication par e-mail** : affiche les images au format `.PNG` qui sont `approved` et `published by <user email ID>`.
+* **Recherche en fonction du format de fichier, du type de ressource, de l’état de la ressource et de l’ID de ressource créé par e-mail** : afficher les vidéos au format `.mp4` qui sont approuvées et `created by <user email ID>`.
+* **Recherche en fonction du format de fichier, du type de ressource, du statut de la ressource et de la date de création** : affiche les images au format `.PNG` créées après le 1er janvier 2025 et `published by <user email ID>`
+* **Recherche basée sur le type MIME, la date de création et l’ID de publication par e-mail** : affiche les `image/jpeg` créées après `January 1, 2025` et `published by <user email ID>`.
+* **Recherche en fonction du format de fichier et des propriétés de métadonnées personnalisées** : permet d’afficher les images au format `.JPEG` comportant des `Product SKU ID as <SKU value>`.
+
+* **Rechercher des ressources présentant des métadonnées manquantes** : l’option Afficher les ressources créées au cours des 90 derniers jours avec des `<Name of metadata property including custom properties>` est vide.
+
+* **Rechercher des ressources en utilisant la taille de fichier, la largeur d’image et la hauteur d’image** : affichez les images de plus de 5 Mo avec une largeur supérieure à 2 000 pixels et une hauteur supérieure à 1 200 pixels.
+
 
 **Découverte de contenu basé sur des dossiers :**\
-L’agent de découverte de contenu peut identifier les ressources en interprétant les invites de langage naturel qui font référence aux noms de dossier dans AEM. Les utilisateurs peuvent simplement mentionner le dossier dans leur invite, sans avoir à parcourir manuellement le référentiel, ce qui réduit considérablement le nombre de clics nécessaires pour localiser le contenu approprié.
+L’agent de découverte de contenu peut identifier les ressources en interprétant les invites en langage naturel qui font référence aux noms de dossier dans AEM. Les utilisateurs peuvent simplement mentionner le dossier dans leur invite, sans avoir à parcourir manuellement le référentiel, ce qui réduit considérablement le nombre de clics nécessaires pour localiser le contenu approprié.
 
 Exemples d’invites :
 
 * Existe-t-il des fichiers svg dans le dossier `WKND` ?
 * Afficher les ressources modifiées après la `Nov 1 2025` dans le dossier `WKND`.
 * Répertorier `lifestyle` images dans le dossier `WKND`.
+
+**Questions supplémentaires pour permettre la découverte de contenu basé sur des dossiers**
+
+Lorsqu’un nom de dossier est inclus dans une invite (sans le chemin d’accès complet à la ressource), l’agent de découverte de contenu recherche d’abord un dossier correspondant au `/content/dam/<folder-name>` de chemin racine.
+
+Si aucun dossier correspondant n’est trouvé au niveau racine, l’agent suggère d’autres chemins de dossier où le nom de dossier spécifié existe dans le référentiel. Cela permet aux utilisateurs d’identifier rapidement l’emplacement correct sans avoir à parcourir manuellement la structure des dossiers.
+
+Par exemple, le chemin `/content/dam/<folder-name>` est introuvable. Tu voulais dire un de ceux-là ?
+
+* Option 1
+
+* Option 2
 
 **Découverte de ressources basée sur le format**
 
@@ -110,6 +142,34 @@ L’agent de découverte de contenu peut filtrer les ressources en reconnaissant
 Exemple d’invite :
 
 Afficher les ressources avec une personne en orientation paysage
+
+**Développement des résultats de recherche**
+
+L’agent de découverte de contenu renvoie les 20 résultats les plus pertinents par type de contenu pour une invite. Si d’autres résultats correspondants sont disponibles, les utilisateurs peuvent demander l’ensemble suivant en saisissant une invite de relance, telle que `show me more`. L’agent récupère ensuite le jeu de résultats suivant de la recherche d’origine, ce qui permet aux utilisateurs et utilisatrices d’explorer progressivement des jeux de résultats plus volumineux sans affiner l’invite.
+
+**Recherche de ressources similaires**
+
+L’agent de découverte de contenu permet aux utilisateurs de trouver des ressources similaires à un résultat spécifique renvoyé dans les résultats de recherche. Une fois que l’agent a affiché les meilleurs résultats pour une invite, vous pouvez demander des ressources similaires en référençant la position d’un élément dans la liste de résultats. Par exemple, une invite telle que `find assets similar to the 3rd result` demande à l’agent d’identifier et de renvoyer d’autres ressources pertinentes liées à cet élément. Cela permet aux utilisateurs de découvrir rapidement le contenu associé sans créer d’invite de recherche.
+
+**Tri des résultats de recherche**
+
+L’agent de découverte de contenu permet aux utilisateurs et utilisatrices de trier les résultats de recherche directement dans leurs invites de langage naturel. Les utilisateurs et utilisatrices peuvent spécifier des critères de tri tels que la date de modification, la date de création ou le nom de la ressource, et choisir un ordre croissant ou décroissant.
+
+Exemples d’invites :
+
+* Recherchez des images de montagne triées par date de modification dans l’ordre décroissant (affiche d’abord les ressources modifiées le plus récemment).
+
+* Afficher les images de montagne triées par nom dans l’ordre croissant (affiche les noms d’image commençant par la lettre A suivie de B, etc.).
+
+### Pages AEM Sites {#content-discovery-agent-aem-sites-pages}
+
+L’agent de découverte de contenu permet aux utilisateurs de localiser rapidement les pages AEM Sites appropriées en interprétant les invites en langage naturel qui font référence aux rubriques de la page, aux campagnes ou à d’autres mots-clés contextuels. L’agent effectue une recherche en texte intégral en fonction des mots-clés de l’invite pour identifier les pages correspondantes dans le référentiel AEM, ce qui élimine la nécessité de parcourir manuellement la structure Sites.
+
+Exemples d’invites :
+
+* Recherchez toutes les pages AEM Sites pour la campagne d’été.
+
+* Recherchez des pages AEM Sites avec un thème Café .
 
 ### Fragments de contenu {#discovery-agent-use-cases-content-fragments}
 
@@ -155,7 +215,7 @@ Vous pouvez utiliser ces détails de ressource pour évaluer rapidement si une r
 
 >[!NOTE]
 >
->Le champ [&#x200B; URL Dynamic Media &#x200B;](/help/assets/dynamic-media/dynamic-media.md) s’affiche dans les résultats de recherche uniquement si la ressource est publiée et que vous disposez d’une licence Dynamic Media valide. De même, le champ [Dynamic Media avec URL OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) s’affiche uniquement si vous disposez d’une licence Dynamic Media valide et que Dynamic Media avec OpenAPI est activé pour votre instance AEM as a Cloud Service.
+>Le champ [ URL Dynamic Media ](/help/assets/dynamic-media/dynamic-media.md) s’affiche dans les résultats de recherche uniquement si la ressource est publiée et que vous disposez d’une licence Dynamic Media valide. De même, le champ [Dynamic Media avec URL OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) s’affiche uniquement si vous disposez d’une licence Dynamic Media valide et que Dynamic Media avec OpenAPI est activé pour votre instance AEM as a Cloud Service.
 
 ### Fragments de contenu {#discovery-agent-search-results-content-fragments}
 
@@ -175,4 +235,8 @@ Spécifiez des détails concis dans vos invites en langage naturel afin que l&#3
 
 ## Limites {#limitations-discovery-agent}
 
-L’agent de découverte de contenu prend uniquement en charge les invites basées sur les dimensions pour les types d’image et de format SVG. Par exemple, `Find images wider than 1080px`.
+* Le Content Discovery Agent prend uniquement en charge les invites basées sur les dimensions pour les types de format image et SVG. Par exemple, `Find images wider than 1080px`.
+
+* Les administrateurs Content Hub peuvent accéder à l’agent de découverte de contenu à l’aide du portail Content Hub. Toutefois, les résultats sont récupérés uniquement à partir de l’instance d’auteur AEM. Les utilisateurs de Content Hub Limited ne peuvent actuellement pas bénéficier des avantages de l’agent de découverte de contenu (bientôt disponible).
+
+* La fonctionnalité Rechercher des similitudes fonctionne uniquement pour les images avec des améliorations de balises intelligentes [Smart Tags](/help/assets/ai-generated-metadata-assets-view.md).
