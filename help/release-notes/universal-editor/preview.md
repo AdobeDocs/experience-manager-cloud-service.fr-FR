@@ -4,9 +4,9 @@ description: Voici les notes de mise à jour de la version préliminaire de l’
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: 0abd8b05a5afdbcb2e90dcb36b3a77df71054ccc
+source-git-commit: bbf371dbf8102611345f2d289a3eaba56ee1d87c
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -38,3 +38,7 @@ Ces notes de mise à jour **aperçu** sont fournies à titre indicatif pour que 
 * La suppression d’une image ne laisse plus de balises d’image vides lors de l’utilisation de DA comme serveur principal.
 * Les classes dans les blocs sont désormais correctement gérées lors de l’utilisation de DA comme serveur principal.
 * L’API Open enregistre désormais correctement les ressources distantes en tant qu’objets .
+
+## Modification avec rupture à venir {#breaking-change}
+
+* Toutes les extensions doivent être mises à jour sur `@adobe/uix-guest` >= `1.1.7` pour améliorer la stabilité.
