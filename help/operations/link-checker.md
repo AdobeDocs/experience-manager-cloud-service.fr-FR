@@ -3,13 +3,13 @@ title: Outil de vérification de lien
 description: Découvrez comment le vérificateur de liens aide les auteurs et autrices en validant les liens lorsqu’ils sont ajoutés au contenu et les options de configuration qu’il propose.
 feature: Operations
 role: Admin
-source-git-commit: cc8e242715faaef5cda25b428c315947ec3d7e06
+exl-id: f5f71e2f-69e3-44f9-812d-71fe417896f8
+source-git-commit: 08771212329423a2bf182ff2cdaf63be8cc37f80
 workflow-type: tm+mt
 source-wordcount: '998'
-ht-degree: 48%
+ht-degree: 41%
 
 ---
-
 
 # Outil de vérification de lien {#link-checker}
 
@@ -69,10 +69,10 @@ Le Vérificateur de lien externe repose sur plusieurs services et comprendre leu
 
 1. Chaque fois qu’un auteur de contenu enregistre un lien vers une page, un gestionnaire d’événements est déclenché.
 1. Le gestionnaire d’événements parcourt tout le contenu sous `/content` et recherche les liens nouveaux ou mis à jour et les ajoute à un cache pour le vérificateur de liens.
-1. Le **Service de vérification de lien Day CQ** s’exécute ensuite selon un calendrier régulier afin de vérifier les entrées du cache et la validité de leur syntaxe.
-1. Les liens validés par la syntaxe s’affichent alors dans la fenêtre [&#x200B; Vérificateur de lien externe .](#external-using) Cependant, ils auront le statut **En attente**.
-1. La **Tâche de vérification de lien Day CQ** s’exécute ensuite régulièrement pour valider les liens en effectuant un appel GET.
-1. La **Tâche de vérification de lien Day CQ** met ensuite à jour les entrées de la [fenêtre du Vérificateur de lien externe](#external-using) avec les résultats des appels GET.
+1. Le service de vérification de lien Adobe AEM **** s’exécute ensuite selon un calendrier régulier afin de vérifier les entrées du cache et la validité de leur syntaxe.
+1. Les liens validés par la syntaxe s’affichent alors dans la fenêtre [ Vérificateur de lien externe .](#external-using) Cependant, ils auront le statut **En attente**.
+1. La **Tâche de vérification de lien Adobe AEM** s’exécute ensuite régulièrement pour valider les liens en effectuant un appel GET.
+1. La Tâche de vérification de lien Adobe AEM **** met ensuite à jour les entrées de la fenêtre [Vérificateur de lien externe](#external-using) avec les résultats des appels GET.
 
 ### Utilisation du Vérificateur de lien externe {#external-using}
 
@@ -81,7 +81,7 @@ Le Vérificateur de lien externe est une console qui fournit un aperçu de tous 
 1. Dans la navigation globale, sélectionnez **Outils** -> **Sites**.
 1. Sélectionnez **Vérificateur de lien externe** et une liste de tous les liens externes est affichée.
 
-![&#x200B; Vérificateur de lien externe &#x200B;](assets/external-link-checker.png)
+![ Vérificateur de lien externe ](assets/external-link-checker.png)
 
 Chaque entrée du tableau représente un lien externe détecté par le service Vérificateur de liens. Les colonnes affichées sont les suivantes :
 
@@ -109,12 +109,12 @@ Toutes les autres icônes de la fenêtre Vérificateur de lien externe sont inac
 
 Le Vérificateur de lien est automatiquement disponible dans AEM. Cependant, plusieurs configurations OSGi peuvent être modifiées pour modifier son comportement :
 
-* **Service de stockage d’informations du Vérificateur de lien Day CQ** - Ce service définit la taille du cache du Vérificateur de liens dans le référentiel.
-* **Service de vérification de lien Day CQ** - Ce service effectue une vérification asynchrone de la syntaxe des liens externes.
+* **Service de stockage d’informations du vérificateur de liens d’Adobe AEM** - Ce service définit la taille du cache du vérificateur de liens dans le référentiel.
+* **Service de vérification de lien Adobe AEM** - Ce service effectue une vérification asynchrone de la syntaxe des liens externes.
    * Vous pouvez définir la période de vérification et les types de liens qui sont ignorés par le Vérificateur, parmi d’autres options.
-* **Tâche de vérification de lien Day CQ** - Ce service effectue la validation GET des liens externes.
+* **Tâche de vérification de lien Adobe AEM** - Ce service effectue la validation GET des liens externes.
    * Il permet de définir des intervalles distincts pour vérifier les liens bons et mauvais, parmi d’autres options.
-* **Transformateur du Vérificateur de liens Day CQ** - Ce service convertit les liens en fonction d’un ensemble de règles défini par l’utilisateur.
+* **Transformateur du vérificateur de liens d’Adobe AEM** - Ce service convertit les liens en fonction d’un ensemble de règles défini par l’utilisateur.
 
 Consultez le document [Configuration d’OSGi](/help/implementing/deploying/configuring-osgi.md) pour plus d’informations sur la modification des paramètres OSGi.
 
@@ -123,7 +123,7 @@ Consultez le document [Configuration d’OSGi](/help/implementing/deploying/conf
 Vous pouvez choisir de désactiver entièrement le Vérificateur de liens. Pour ce faire :
 
 1. ouvrez la console OSGi ;
-1. modifiez le **Transformateur du Vérificateur de liens Day CQ** ;
+1. Modifiez le **transformateur du vérificateur de liens d’Adobe AEM**
 1. cochez la ou les options que vous souhaitez désactiver :
    * **Désactiver la vérification** - Pour désactiver la validation des liens
    * **Désactiver la réécriture** - Pour désactiver les transformations des liens
