@@ -4,9 +4,9 @@ description: Voici les notes de mise à jour de la version préliminaire de l’
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: bbf371dbf8102611345f2d289a3eaba56ee1d87c
+source-git-commit: e8231cd1c2d432e75268b1439fd585d19a406449
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '191'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Notes de mise à jour de l’aperçu de l’éditeur universel {#preview}
 
-Voici les notes de mise à jour de la **version d’aperçu** de l’éditeur universel. Ces fonctionnalités sont actuellement disponibles dans l’environnement d’aperçu **de votre éditeur universel**. La mise à disposition de ces fonctionnalités est prévue pour le 12 mars 2026.
+Voici les notes de mise à jour de la **version d’aperçu** de l’éditeur universel. Ces fonctionnalités sont actuellement disponibles dans l’environnement d’aperçu **de votre éditeur universel**. La mise à disposition de ces fonctionnalités est prévue pour le 26 mars 2026.
 
 Ces notes de mise à jour **aperçu** sont fournies à titre indicatif pour que vous sachiez quelles modifications seront apportées à l’éditeur universel et que vous puissiez les tester en [passant à votre version d’aperçu.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -28,17 +28,10 @@ Ces notes de mise à jour **aperçu** sont fournies à titre indicatif pour que 
 
 ## Fonctionnalités à venir {#upcoming-features}
 
-* Les éléments du rail de droite peuvent désormais être réduits sur l’écran d’accueil.
-* Le sélecteur de ressources prend désormais en charge les définitions de filtre.
-* Si aucune action n’est disponible pour l’élément sélectionné, le menu contextuel n’affiche plus de chevron permettant d’accéder aux actions.
+* La configuration des ressources de création de documents est désormais exposée via un point d’entrée de configuration.
+* Un point d’extension a été ajouté au menu contextuel.
+* Une nouvelle icône de workflow personnalisé a été ajoutée au système Extensibilité DynamicIcon pour afficher un état d’annulation profond/superficiel dans l’interface utilisateur.
 
 ## Améliorations à venir {#upcoming-improvements}
 
-* S’il existe une définition de modèle/filtre/composant, elle est récupérée lors du passage d’une application à une autre dans l’éditeur.
-* La suppression d’une image ne laisse plus de balises d’image vides lors de l’utilisation de DA comme serveur principal.
-* Les classes dans les blocs sont désormais correctement gérées lors de l’utilisation de DA comme serveur principal.
-* L’API Open enregistre désormais correctement les ressources distantes en tant qu’objets .
-
-## Modification avec rupture à venir {#breaking-change}
-
-* Toutes les extensions doivent être mises à jour sur `@adobe/uix-guest` >= `1.1.7` pour améliorer la stabilité.
+* Un problème a été résolu avec les classes de création de documents qui ne fonctionnent pas avec plusieurs champs, car elles s’attendent à une chaîne.
