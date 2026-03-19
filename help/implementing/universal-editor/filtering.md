@@ -74,7 +74,7 @@ Pour utiliser le filtre, vous devez référencer la définition du filtre. Vous 
   data-aue-filter="container-filter"
   ```
 
-* Référençant le filtre à partir de votre définition de composant [](/help/implementing/universal-editor/component-definition.md) en transmettant l’identifiant du filtre.
+* Référençant le filtre à partir de votre définition de composant [&#128279;](/help/implementing/universal-editor/component-definition.md) en transmettant l’identifiant du filtre.
 
   ```json
   {
