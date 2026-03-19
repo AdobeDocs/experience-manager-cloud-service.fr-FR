@@ -4,9 +4,9 @@ description: Découvrez comment utiliser les pipelines de configuration pour dé
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 66ea803dbf8e8b12fecf6256a88c94c2ca6fa112
+source-git-commit: 882d7de9aeae22777e1e02cbf78438e95db11e9a
 workflow-type: tm+mt
-source-wordcount: '1445'
+source-wordcount: '1491'
 ht-degree: 2%
 
 ---
@@ -40,15 +40,15 @@ Le tableau suivant propose une liste complète de ces configurations avec des li
 |---|---|---|---|---|
 | [Règles de filtrage du trafic, y compris WAF](/help/security/traffic-filter-rules-including-waf.md) | `CDN` | Déclarer les règles pour bloquer le trafic malveillant | X | X |
 | [Transformations de requête](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) | `CDN` | Déclaration des règles pour transformer la forme de la demande de trafic | X | X |
-| [&#x200B; Transformations de réponse &#x200B;](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) | `CDN` | Déclaration de règles pour transformer la forme de la réponse pour une requête donnée | X | X |
+| [ Transformations de réponse ](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) | `CDN` | Déclaration de règles pour transformer la forme de la réponse pour une requête donnée | X | X |
 | [Redirections côté serveur](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) | `CDN` | Déclarez les redirections côté serveur de type 301/302 | X | X |
 | [Sélecteurs d’origine](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | Déclarez des règles pour acheminer le trafic vers différents serveurs principaux, y compris les applications non Adobe | X | X |
 | [Pages d’erreur du réseau CDN](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | Remplacer la page d’erreur par défaut si l’origine AEM ne peut pas être atteinte, en référençant l’emplacement du contenu statique auto-hébergé dans le fichier de configuration | X |  |
 | [Purge CDN](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | Déclarez les clés API de purge utilisées pour purger le réseau CDN. | X |  |
 | [Jeton HTTP CDN géré par le client](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value) | `CDN` | Déclarez la valeur de X-AEM-Edge-Key nécessaire pour appeler le réseau CDN Adobe à partir d’un réseau CDN client | X |  |
 | [Authentification de base](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Déclarez les noms d’utilisateur et mots de passe d’une boîte de dialogue d’authentification de base protégeant certaines URL. | X | X |
-| [&#x200B; Tâche de maintenance de purge de version &#x200B;](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimisez le référentiel AEM en déclarant des règles relatives au moment où les versions de contenu doivent être purgées. | X |  |
-| [&#x200B; Tâche de maintenance de purge du journal d’audit &#x200B;](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimisez le journal d’audit AEM pour améliorer les performances en déclarant des règles concernant le moment où les journaux doivent être purgés. | X |  |
+| [ Tâche de maintenance de purge de version ](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimisez le référentiel AEM en déclarant des règles relatives au moment où les versions de contenu doivent être purgées. | X |  |
+| [ Tâche de maintenance de purge du journal d’audit ](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimisez le journal d’audit AEM pour améliorer les performances en déclarant des règles concernant le moment où les journaux doivent être purgés. | X |  |
 | [Tâche de maintenance de purge des workflows](/help/operations/maintenance.md) | `MaintenanceTasks` | Réduisez le nombre d’instances de workflow pour améliorer les performances du moteur de workflow.<br><br>Voir aussi [Purge régulière des instances de workflow](/help/sites-cloud/administering/workflows-administering.md#regular-purging-of-workflow-instances) | X |  |
 | [Transfert de journal](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configurez les points d’entrée et les informations d’identification pour le transfert des journaux vers diverses destinations, y compris Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk | X | X |
 | [Enregistrement d’un ID client](/help/implementing/developing/open-api-based-apis.md) | `API` | Définissez la portée des projets d’API Adobe Developer Console sur un environnement AEM spécifique en enregistrant l’identifiant client. Nécessaire pour l’utilisation des API basées sur OpenAPI qui nécessitent une authentification | X |  |
@@ -221,13 +221,11 @@ data:
 
 Si vous incluez le champ de métadonnées *envTypes*, seule la valeur **prod** doit être utilisée (l’omission du champ de métadonnées envTypes est également acceptable). Pour la propriété *tier* reqProperty, seule la valeur **publish** doit être utilisée.
 
-## Variables d’environnement secrètes {#secret-env-vars}
+## Secrets de configuration  {#secret-in-configuration}
 
-Pour que le stockage des informations sensibles dans le contrôle de code source ne soit pas nécessaire, les fichiers de configuration prennent en charge les variables d’environnement Cloud Manager de type **secret**. Pour certaines configurations, y compris le transfert de journal, les variables d’environnement secrètes sont obligatoires pour certaines propriétés.
+Pour que les informations sensibles n&#39;aient pas besoin d&#39;être stockées dans le contrôle de code source, les fichiers de configuration prennent en charge le référencement des secrets des variables de pipeline Config ou des variables d&#39;environnement. Pour certaines configurations, y compris le transfert de journal, les variables secrètes sont obligatoires pour certaines propriétés. Consultez [Configuration des informations d’identification et d’authentification du réseau CDN](/help/implementing/dispatcher/cdn-credentials-authentication.md) pour plus d’informations sur l’utilisation des secrets dans la configuration du réseau CDN.
 
-Notez que les variables d’environnement secrètes sont utilisées pour les projets de diffusion de publication ; consultez la section Variables de pipeline secrètes pour les projets Edge Delivery Services.
-
-Le fragment de code suivant illustre la manière dont la variable d’environnement secrète `${{SPLUNK_TOKEN}}` est utilisée dans la configuration.
+Le fragment de code suivant illustre la manière dont la variable secrète `${{SPLUNK_TOKEN}}` est utilisée dans la configuration.
 
 ```
 kind: "LogForwarding"
@@ -241,12 +239,22 @@ data:
       index: "AEMaaCS"
 ```
 
-Pour plus d’informations sur l’utilisation des variables d’environnement, voir [Variables d’environnement Cloud Manager](/help/implementing/cloud-manager/environment-variables.md).
 
-## Variables de pipeline secrètes {#secret-pipeline-vars}
 
-Pour les projets Edge Delivery Services, utilisez des variables de pipeline Cloud Manager de type **secret** afin que les informations sensibles ne soient pas stockées dans le contrôle de code source. La zone de sélection *Étape appliquée* doit utiliser l’option **déployer**.
+### Variables de pipeline secrètes {#secret-pipeline-vars}
 
-La syntaxe est identique au fragment de code illustré dans la section précédente.
+La **méthode recommandée** consiste à utiliser des variables de pipeline Cloud Manager de type **secret** afin que les informations sensibles n’aient pas besoin d’être stockées dans le contrôle de code source. La zone de sélection **Étape appliquée** doit utiliser l’option **déployer**.
 
 Pour plus d’informations sur l’utilisation des variables de pipeline, voir [Variables de pipeline dans Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).
+
+
+### Variables d’environnement secrètes {#secret-env-vars}
+
+Utilisez des variables d’environnement secrètes lorsque vous souhaitez définir différentes valeurs secrètes par environnement.
+
+Pour plus d’informations sur l’utilisation des variables d’environnement, voir [Variables d’environnement Cloud Manager](/help/implementing/cloud-manager/environment-variables.md).
+
+>[!NOTE]
+>L’utilisation de variables d’environnement secrètes est plus difficile et implique une discipline stricte : les variables d’environnement ne sont pas déployées avec le pipeline de configuration. Vous devez les déployer avant d’exécuter le pipeline et vous ne devez pas les supprimer tant que la configuration du pipeline y fait toujours référence. C’est pourquoi les secrets de pipeline sont préférés.
+
+
