@@ -4,9 +4,9 @@ description: Découvrez comment utiliser l’agent de découverte de contenu pou
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: 45c547a0a7372e5ebe23bd6b816798cd3b225872
+source-git-commit: 10a4b44fde65ae865d2e6d908e9e442752326fcd
 workflow-type: tm+mt
-source-wordcount: '2066'
+source-wordcount: '2073'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ Exemples d’invites :
 * **Recherche en fonction du format de fichier, du type de ressource, de l’état de la ressource et de l’ID de ressource créé par e-mail** : afficher les vidéos au format `.mp4` qui sont approuvées et `created by <user email ID>`.
 * **Recherche en fonction du format de fichier, du type de ressource, du statut de la ressource et de la date de création** : affiche les images au format `.PNG` créées après le 1er janvier 2025 et `published by <user email ID>`
 * **Recherche basée sur le type MIME, la date de création et l’ID de publication par e-mail** : affiche les `image/jpeg` créées après `January 1, 2025` et `published by <user email ID>`.
-* **Recherche en fonction du format de fichier et des propriétés de métadonnées personnalisées** : permet d’afficher les images au format `.JPEG` comportant des `Product SKU ID as <SKU value>`.
+* **Recherche en fonction du format de fichier et des propriétés de métadonnées personnalisées** : permet d’afficher les images au format `.JPEG` comportant des `Product SKU ID = <SKU value>` (doit être au format propriété de métadonnées = format de valeur).
 
 * **Rechercher des ressources présentant des métadonnées manquantes** : l’option Afficher les ressources créées au cours des 90 derniers jours avec des `<Name of metadata property including custom properties>` est vide.
 
@@ -215,7 +215,7 @@ Vous pouvez utiliser ces détails de ressource pour évaluer rapidement si une r
 
 >[!NOTE]
 >
->Le champ [&#x200B; URL Dynamic Media &#x200B;](/help/assets/dynamic-media/dynamic-media.md) s’affiche dans les résultats de recherche uniquement si la ressource est publiée et que vous disposez d’une licence Dynamic Media valide. De même, le champ [Dynamic Media avec URL OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) s’affiche uniquement si vous disposez d’une licence Dynamic Media valide et que Dynamic Media avec OpenAPI est activé pour votre instance AEM as a Cloud Service.
+>Le champ [ URL Dynamic Media ](/help/assets/dynamic-media/dynamic-media.md) s’affiche dans les résultats de recherche uniquement si la ressource est publiée et que vous disposez d’une licence Dynamic Media valide. De même, le champ [Dynamic Media avec URL OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) s’affiche uniquement si vous disposez d’une licence Dynamic Media valide et que Dynamic Media avec OpenAPI est activé pour votre instance AEM as a Cloud Service.
 
 ### Fragments de contenu {#discovery-agent-search-results-content-fragments}
 
