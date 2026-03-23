@@ -4,9 +4,9 @@ description: Il s’agit des notes de mise à jour de la version 2026.03.19 de 
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 8d9d162ec5bba99afb1ae86252a49a9880be4e68
+source-git-commit: 048e86fe7930173bb33de9252607e2910520b575
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '195'
 ht-degree: 34%
 
 ---
@@ -28,7 +28,7 @@ Voici les notes de mise à jour de la version du 19 mars 2026 de l’éditeur un
 
 * Les éléments dans les propriétés sont maintenant réduits lors du retour à [l’écran d’accueil.](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button)
 * [Le sélecteur de ressources](/help/implementing/universal-editor/configure-assets-selector.md) prend désormais en charge les [définitions de filtre.](/help/implementing/universal-editor/filtering.md)
-* Si aucune action n’est disponible pour l’élément sélectionné, [le menu contextuel](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) n’affiche plus de chevron permettant d’accéder aux actions.
+* Si aucune action n’est disponible pour l’élément sélectionné, [le menu contextuel](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) affiche désormais un message à cet effet.
 
 ## Autres améliorations {#other-improvements}
 
