@@ -6,7 +6,7 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2556f606db8b74bce25cd504a183abdc43e31227
+source-git-commit: 8391980183b8c5a91046e01474200b9eaf8e0546
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 20%
@@ -210,7 +210,7 @@ Le gain de performances de l’utilisation de la création dynamique dépend de 
 * La fréquence et l’étendue des modifications de code.
 * La distribution des dépendances entre les modules.
 
-En règle générale, les projets comportant de nombreux modules indépendants présentent la plus grande amélioration.
+En règle générale, les projets comportant de nombreux modules indépendants peuvent bénéficier de la plus grande amélioration.
 
 ### Désinscription du cache par module{#smart-build-cache-optout}
 
