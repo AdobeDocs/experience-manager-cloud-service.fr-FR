@@ -5,16 +5,14 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms
 exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
 feature: Adaptive Forms
 role: Admin, User
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 0e2fbc2a20e5e482ced373176fdfbc890c54dfa6
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '466'
 ht-degree: 94%
 
 ---
 
 # Utiliser des polices personnalisées
-
-**La documentation de Cloud Service Communications est en version Beta.**
 
 Vous pouvez utiliser Forms as a Cloud Service Communications pour combiner un modèle XDP, un document PDF basé sur XDP ou un formulaire Acrobat (AcroForm) avec des données XML afin de générer des documents PDF. Vous pouvez également utiliser Communications pour combiner, réorganiser et étendre vos documents aux formats PDF et XDP et obtenir des informations sur les documents PDF.
 

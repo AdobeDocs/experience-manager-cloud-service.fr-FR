@@ -6,9 +6,9 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 0b41fd1a-737f-495f-89da-6cc2e002b424
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 66bd3730062284a9d155b89a3c653ed7ab86466b
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '173'
 ht-degree: 7%
 
 ---
@@ -33,5 +33,5 @@ La fonction de police personnalisée vous permet d’améliorer l’aspect de vo
 
 >[!NOTE]
 >
-> Pour obtenir des étapes de configuration détaillées, les utilisateurs peuvent suivre le guide [Utiliser des polices personnalisées](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts)
+> Pour obtenir des étapes de configuration détaillées, les utilisateurs peuvent suivre le guide [Utiliser des polices personnalisées](/help/forms/use-custom-fonts.md)
 >Une fois les étapes terminées et le pipeline exécuté, les polices personnalisées peuvent être utilisées directement dans l’éditeur de communication interactive.
