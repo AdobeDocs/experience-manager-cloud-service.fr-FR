@@ -4,10 +4,10 @@ description: En savoir plus sur la version 2026.3.0 de Cloud Manager dans Adob
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: eb3e826e27e14b8b1da534440f11d43e973130ec
+source-git-commit: 2556f606db8b74bce25cd504a183abdc43e31227
 workflow-type: tm+mt
-source-wordcount: '715'
-ht-degree: 23%
+source-wordcount: '731'
+ht-degree: 22%
 
 ---
 
@@ -28,7 +28,7 @@ La prochaine version est prévue le vendredi 2 avril 2026.
 
 ## Nouveautés - Cloud Manager {#cloud-manager-whats-new}
 
-* **Cloud Manager prend désormais en charge une option** Effacer **pour les importations** Copie de contenu **&#x200B;**
+* **Cloud Manager prend désormais en charge une option** Effacer **pour les importations** Copie de contenu ****
 
   Lorsque vous activez **Effacer**, Cloud Manager supprime le contenu existant à la destination avant de démarrer l’importation, ce qui vous permet de repartir de zéro et d’éviter les conflits avec le contenu préexistant. Si vous laissez l’option **Effacer** désactivée, Cloud Manager importe le nouveau contenu en plus du contenu de destination existant. Une invite de confirmation s’affiche avant le début de l’effacement. Cloud Manager consigne l’action d’effacement et importe les détails pour en assurer la traçabilité.
 
@@ -68,7 +68,7 @@ Consultez la documentation [Utilisation de MCP avec AEM as a Cloud Service](/hel
 
 Voir le tutoriel [Cloud Manager MCP Server](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-server/cloud-manager#).
 
-La version bêta vous intéresse ? Envoyez [GRP-AEM-CM-MCP-FEEDBACK@adobe.com](mailto:GRP-AEM-CM-MCP-FEEDBACK@adobe.com) par e-mail avec votre ID d’organisation et votre ID de programme Adobe.
+La version bêta vous intéresse ? Envoyez [](mailto:GRP-AEM-CM-MCP-FEEDBACK@adobe.com) par e-mail avec votre ID d’organisation et votre ID de programme Adobe.
 
 
 <!--
@@ -95,7 +95,9 @@ Dans la boîte de dialogue **Ajouter/Modifier un pipeline**, sous l’onglet **C
 * **Version complète** — crée tous les modules du référentiel à chaque exécution.
 * **Version intelligente** : crée uniquement les modules qui ont été modifiés depuis la dernière validation, ce qui réduit la durée globale de la création.
 
-Vous contrôlez les pipelines qui utilisent **génération intelligente**. Dans la version bêta, cette option s’affiche uniquement pour les pipelines **Qualité du code** et **Déploiement de développement**.
+Vous contrôlez les pipelines qui utilisent **génération intelligente**. Dans la version bêta, cette option s’affiche uniquement pour les pipelines **Qualité du code** et **Déploiement de pile complète de développement**.
+
+Voir [ À propos de l’utilisation de la création intelligente dans un pipeline hors production ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build) et [Ajouter un pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)
 
 Cela vous intéresse ? Envoyez un e-mail à l’adresse [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) avec votre ID d’organisation et votre ID de programme Adobe.
 
