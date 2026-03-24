@@ -40,9 +40,9 @@ Il existe trois types d’Adobe ID :
 
 * **Personal ID** : type par défaut d’Adobe ID, qui est créé sur adobe.com. Géré par Adobe et accessible à tous.
 
-* **** : les entreprises souhaitent généralement accroître le contrôle des comptes des utilisateurs. Seuls les administrateurs système peuvent créer des Enterprise ID. L’entreprise possède ces comptes, Adobe servant uniquement d’hôte.
+* **&#x200B;**&#x200B;: les entreprises souhaitent généralement accroître le contrôle des comptes des utilisateurs. Seuls les administrateurs système peuvent créer des Enterprise ID. L’entreprise possède ces comptes, Adobe servant uniquement d’hôte.
 
-* **** : avec les Federated ID, l’organisation prend pleinement possession et le contrôle des comptes. Votre entreprise doit intégrer Adobe Experience Cloud à votre système d’authentification unique (SSO) SAML2. Cela permet aux utilisateurs de s’authentifier sur le système d’authentification unique de leur entreprise plutôt que sur un compte hébergé par Adobe.
+* **&#x200B;**&#x200B;: avec les Federated ID, l’organisation prend pleinement possession et le contrôle des comptes. Votre entreprise doit intégrer Adobe Experience Cloud à votre système d’authentification unique (SSO) SAML2. Cela permet aux utilisateurs de s’authentifier sur le système d’authentification unique de leur entreprise plutôt que sur un compte hébergé par Adobe.
 
 En tant qu’administrateur système, vous pouvez intégrer votre équipe et vous-même à AEM as a Cloud Service avec des ID personnels. Effectuez cette tâche avant que les Enterprise ID ou les Federated ID ne soient en place. Une fois les Enterprise ID ou les Federated ID configurés, les membres peuvent être transférés à l’utilisation de ces ID.
 
@@ -80,13 +80,13 @@ Félicitations, vous êtes administrateur système !
 
 ## Accès à Admin Console via Experience Hub  {#access-admin-console-via-experience-hub}
 
-[](/help/experience-hub.md) est la page d’accueil personnalisée et unifiée d’AEM. AEM Tools et Admin Console sont ainsi réunis en un seul endroit.
+[&#128279;](/help/experience-hub.md) est la page d’accueil personnalisée et unifiée d’AEM. AEM Tools et Admin Console sont ainsi réunis en un seul endroit.
 
 ![Option Admin Console telle qu&#39;elle apparaît sur la page d&#39;accueil Experience Hub](/help/journey-onboarding/assets/experiencehub-adminconsole1.png)
 
 **Pour accéder à Admin Console via Experience Hub :**
 
-1. Cliquez sur [](https://experience.adobe.com/#/@foundationinternal/home) pour ouvrir la page d’accueil d’Experience Hub.
+1. Cliquez sur [&#128279;](https://experience.adobe.com/#/@foundationinternal/home) pour ouvrir la page d’accueil d’Experience Hub.
 
 1. Dans le regroupement **Accès rapide**, cliquez sur [**Admin Console**](https://experience.adobe.com).
 
