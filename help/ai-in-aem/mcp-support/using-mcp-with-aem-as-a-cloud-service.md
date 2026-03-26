@@ -64,7 +64,7 @@ Les outils spécifiques exposés par chaque serveur MCP peuvent évoluer au fil 
 
 Le client MCP utilise le protocole MCP pour récupérer la liste d’outils et les schémas, que le LLM peut ensuite utiliser.
 
-Pour plus d’informations sur leurs fonctionnalités et sur leur utilisation[ reportez-vous aux sections ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)Tutoriel sur le serveur de MCP de contenu et [Vidéo sur le serveur de MCP de Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager).
+Pour plus d’informations sur leurs fonctionnalités et sur leur utilisation[&#x200B; reportez-vous aux sections &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)Tutoriel sur le serveur de MCP de contenu et [Vidéo sur le serveur de MCP de Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager).
 
 ## Applications MCP prises en charge {#supported-mcp-applications}
 
@@ -113,7 +113,7 @@ Par défaut, les autorisations dont disposent les utilisateurs individuels dans 
 
 #### Applications clientes MCP autorisées {#permitted-mcp-client-applications}
 
-Toutes les applications répertoriées sous [ Applications MCP prises en charge ](#supported-mcp-applications) sont autorisées par défaut.
+Toutes les applications répertoriées sous [&#x200B; Applications MCP prises en charge &#x200B;](#supported-mcp-applications) sont autorisées par défaut.
 
 #### Restreindre les serveurs MCP {#restricting-mcp-servers}
 
@@ -123,7 +123,7 @@ Tous les serveurs MCP sont traités par défaut. En tant qu’administrateur, vo
 
 Les administrateurs peuvent également désactiver l’accès à des applications clientes MCP spécifiques si les politiques de votre entreprise l’exigent. Si vous souhaitez qu’Adobe active la prise en charge de produits clients MCP supplémentaires, envoyez un lien vers le site web du produit. Si vous devez placer sur la liste autorisée un client MCP personnalisé, contactez-le également.
 
-Pour toutes les demandes liées au serveur MCP, n&#39;hésitez pas à nous contacter à ****
+Pour toutes les demandes liées au serveur MCP, n&#39;hésitez pas à nous contacter à **&#x200B;**
 
 ### Configuration de l’application cliente MCP {#mcp-client-application-configuration}
 
@@ -138,7 +138,7 @@ Chaque utilisateur effectue cette étape ou un administrateur de l’application
 1. Vérification des outils découverts
    * Une fois authentifiée, l’application détecte les outils MCP à partir du serveur. Vous pouvez ensuite commencer à demander au LLM d’effectuer des opérations AEM.
 
-Pour obtenir la liste complète des applications prises en charge[ voir ](#supported-mcp-applications)Applications MCP prises en charge.
+Pour obtenir la liste complète des applications prises en charge[&#x200B; voir &#x200B;](#supported-mcp-applications)Applications MCP prises en charge.
 
 ## Authentification {#authentication}
 
@@ -147,7 +147,7 @@ Les serveurs MCP hébergés par Adobe mettent en œuvre OAuth et sont intégrés
 * Lorsqu’une application cliente MCP se connecte à un serveur MCP AEM, les utilisateurs voient une boîte de dialogue de connexion Adobe et s’authentifient avec leur **Adobe ID**
 * Une fois la connexion établie, le système vérifie que l’application cliente MCP est autorisée dans votre organisation et que le serveur MCP demandé est autorisé. Si l’une de ces vérifications échoue, un message d’erreur s’affiche.
 
-![Erreur Client MCP non autorisé ](assets/MCP-Client-not-permitted.png)
+![Erreur Client MCP non autorisé &#x200B;](assets/MCP-Client-not-permitted.png)
 
 * Une fois la vérification effectuée, le serveur MCP émet des jetons que l’application utilise pour les appels d’outil suivants
 * Les outils MCP respectent les autorisations AEM de l’utilisateur. Seuls les utilisateurs autorisés à modifier un fragment de contenu dans AEM peuvent le modifier via MCP.
@@ -224,6 +224,6 @@ Certaines applications clientes MCP, telles que Claude, offrent la possibilité 
 
 ## Limites {#limitations}
 
-AEM prend actuellement en charge la configuration des serveurs MCP dans les applications répertoriées sous [ Applications MCP prises en charge ](#supported-mcp-applications).
+AEM prend actuellement en charge la configuration des serveurs MCP dans les applications répertoriées sous [&#x200B; Applications MCP prises en charge &#x200B;](#supported-mcp-applications).
 
-Si vous souhaitez utiliser une autre application cliente MCP, n’hésitez pas à contacter **** pour demander de l’aide pour d’autres clients ou pour en placer sur la liste autorisée une personnalisée.
+Si vous souhaitez utiliser une autre application cliente MCP, n’hésitez pas à contacter **&#x200B;**&#x200B;pour demander de l’aide pour d’autres clients ou pour en placer sur la liste autorisée une personnalisée.
