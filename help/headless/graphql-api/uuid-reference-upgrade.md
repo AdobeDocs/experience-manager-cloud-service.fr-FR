@@ -91,7 +91,7 @@ Exécutez la mise à niveau du contenu en mode `dryRun` pour :
 * identifiez les références non valides en les répertoriant dans les fichiers journaux
 Vous pouvez ensuite corriger ces références avant d’exécuter la mise à niveau réelle du contenu.
 * identifiez les références de page, en les répertoriant dans les fichiers journaux
-Lorsque des références de page sont détectées, vous [ devez pas exécuter la mise à niveau du contenu](#when-you-should-not-upgrade).
+Lorsque des références de page sont détectées, vous [&#x200B; devez pas exécuter la mise à niveau du contenu](#when-you-should-not-upgrade).
 
 
 ### Application d’un gel du contenu {#enforce-a-content-freeze}
