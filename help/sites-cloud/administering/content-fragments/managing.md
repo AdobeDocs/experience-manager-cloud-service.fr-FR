@@ -6,10 +6,10 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: a3dd861d005cab9010a449ddcd8420ae043a4907
 workflow-type: tm+mt
-source-wordcount: '2943'
-ht-degree: 34%
+source-wordcount: '3342'
+ht-degree: 30%
 
 ---
 
@@ -93,17 +93,20 @@ Le tableau entier sera trié en fonction de cette colonne. Le tri n’est dispon
 
 Le panneau principal/droit (vue du tableau) de la console fournit diverses informations sur vos fragments de contenu. Certains éléments fournissent également des liens directs vers d’autres actions et/ou informations :
 
+* **Titre**
+   * Une icône de cadenas indique que le fragment est [extrait](#check-out-and-check-in) et verrouillé par un utilisateur ou une utilisatrice ; si vous sélectionnez l’icône de cadenas, les détails du compte qui a extrait le fragment s’affichent.
+   * L’icône d’information (i) permet d’accéder rapidement à des informations supplémentaires spécifiques au fragment dans le panneau de droite.
 * **Nom**
    * Fournit un lien pour ouvrir le fragment dans l’éditeur.
 * **Modèle**
    * Informations uniquement.
-   * Peut être utilisé pour le [filtrage rapide](#fast-filtering)
+   * Peut être utilisé pour le [filtrage rapide](#fast-filtering).
 * **Dossier**
    * Fournit un lien pour ouvrir le dossier dans la console.
 Placez le pointeur de la souris sur le nom du dossier pour afficher le chemin d’accès JCR.
 * **Statut**
    * Informations uniquement.
-   * Peut être utilisé pour le [filtrage rapide](#fast-filtering)
+   * Peut être utilisé pour le [filtrage rapide](#fast-filtering).
 * **Aperçu**
    * Informations uniquement :
       * **En synchronisation** : le fragment de contenu est synchronisé sur les servcies **Auteur** et **Aperçu**.
@@ -144,7 +147,7 @@ Placez le pointeur de la souris sur le nom du dossier pour afficher le chemin d�
 
    * Sélectionnez l’icône d’un fragment spécifique :
 
-     ![&#x200B; Console Fragments de contenu - Icône Workflows &#x200B;](assets/cf-managing-console-workflows-icon.png)
+     ![ Console Fragments de contenu - Icône Workflows ](assets/cf-managing-console-workflows-icon.png)
 
      Pour ouvrir une boîte de dialogue contenant des informations détaillées sur les workflows (passés et actuels) du fragment.:
 
@@ -169,7 +172,7 @@ Certaines actions sont disponibles à partir de la console, sans sélectionner d
 
   >[!NOTE]
   >
-  >La console **Assets** permet d’accéder aux ressources, telles que les images, les vidéos, etc.  Il est possible d’accéder à cette console :
+  >La console **** permet d’accéder aux ressources, telles que les images, les vidéos, etc.  Il est possible d’accéder à cette console :
   >
   >* en utilisant le lien **Ouvrir dans Assets** (dans la console Fragments de contenu) ;
   >* directement à partir du volet **Navigation** global
@@ -187,8 +190,8 @@ La sélection d’un fragment spécifique ouvre une barre d’outils axée sur l
 * **[Remplacer](#find-and-replace)**
 * **Déplacer**
 * **Renommer**
+* **[Extraire et enregistrer](#check-out-and-check-in)**
 * **[Supprimer](#deleting-a-fragment)** (disponible uniquement pour les fragments dépubliés)
-
 
 >[!NOTE]
 >
@@ -268,7 +271,7 @@ Pour ouvrir votre fragment à des fins de modification :
    * Crée une copie du fragment de contenu sélectionné à son emplacement.
    * Crée des copies de tous les fragments référencés par le fragment sélectionné.
 
-     Les [&#x200B; emplacements vers lesquels les fragments référencés sont copiés](#locations-that-the-referenced-fragments-are-copied-to) dépendent de l’option sélectionnée :
+     Les [ emplacements vers lesquels les fragments référencés sont copiés](#locations-that-the-referenced-fragments-are-copied-to) dépendent de l’option sélectionnée :
 
       * **Copier dans le dossier sélectionné**
 Lorsque cette option est sélectionnée, les fragments référencés sont copiés au même emplacement que le fragment sélectionné d’origine.
@@ -413,7 +416,7 @@ Vous pouvez publier vos fragments de contenu dans :
 
 Vous pouvez publier vos fragments de contenu à l’aide de l’option **Publier** à partir de :
 
-* la barre d’outils de la console [&#x200B; Fragments de contenu &#x200B;](#actions-selected-content-fragment)
+* la barre d’outils de la console [ Fragments de contenu ](#actions-selected-content-fragment)
 
    * Sélectionnez un ou plusieurs fragments dans la liste.
 
@@ -446,7 +449,7 @@ Après publication, le statut du fragment est mis à jour et visible dans l’é
 
 Vous pouvez dépublier des fragments de contenu :
 
-* la barre d’outils de la console [&#x200B; Fragments de contenu &#x200B;](#actions-selected-content-fragment)
+* la barre d’outils de la console [ Fragments de contenu ](#actions-selected-content-fragment)
 
    * Sélectionnez un ou plusieurs fragments dans la liste.
 
@@ -482,6 +485,64 @@ Avant le remplacement, les critères de validation sont vérifiés et vous êtes
 
 ![Confirmer le remplacement](assets/cf-managing-confirm-replace.png)
 
+## Extraire et archiver {#check-out-and-check-in}
+
+AEM permet :
+
+* [extraire](#check-out-a-content-fragment) un fragment de contenu, ce qui empêche d’autres utilisateurs de travailler sur le fragment ;
+* [archiver](#check-in-a-content-fragment) fragments de contenu, ce qui permet à d’autres utilisateurs de reprendre à travailler sur le fragment.
+
+Lorsque vous récupérez un fragment, il est verrouillé (`jcr:lock`). Une icône de cadenas dans la colonne **Titre** indique un fragment verrouillé. Sélectionnez l’icône en forme de cadenas pour afficher les détails du compte qui a extrait le fragment.
+
+Vous pouvez modifier, publier, dépublier, déplacer ou supprimer un fragment verrouillé. Les autres utilisateurs ne peuvent effectuer aucune de ces actions sur le fragment tant que vous ne l’avez pas archivé. Ils peuvent toutefois modifier les métadonnées du fragment verrouillé.
+
+Cette fonctionnalité permet d’éviter les conflits lorsque plusieurs utilisateurs collaborent à la modification de fragments.
+
+>[!NOTE]
+>
+>Pour pouvoir extraire/archiver un fragment de contenu, vous devez disposer d’un accès en écriture.
+
+>[!CAUTION]
+>
+>Il est possible de supprimer un dossier contenant un fragment de contenu extrait.
+>
+>Avant de supprimer un dossier, assurez-vous qu’il ne contient aucun fragment de contenu (ou autre ressource numérique) extrait par les utilisateurs.
+
+>[!NOTE]
+>
+>Comme les fragments de contenu sont stockés en interne sous Assets, cette fonctionnalité est étroitement liée à l’[archivage et extraction de fichiers dans la gestion des ressources numériques d’Experience Manager](/help/assets/check-out-and-submit-assets.md).
+
+### Extraire un fragment de contenu {#check-out-a-content-fragment}
+
+Pour extraire un fragment :
+
+1. Dans la console **Fragments de contenu** naviguez jusqu’à l’emplacement du fragment de contenu.
+1. Sélectionnez le fragment.
+1. Sélectionnez **Extraire** dans la barre d’outils.
+1. Confirmez l’action **Extraire**.
+
+   * Une icône de cadenas dans la colonne **Titre** indique que le fragment est verrouillé et ne peut être modifié que par vous.
+   * Si un autre utilisateur ouvre le fragment pour le modifier, un message lui indiquant qu’il est en mode lecture seule s’affiche.
+
+### Archiver un fragment de contenu {#check-in-a-content-fragment}
+
+Pour archiver un fragment :
+
+1. Dans la console **Fragments de contenu** naviguez jusqu’à l’emplacement du fragment de contenu.
+1. Sélectionnez le fragment.
+1. Sélectionnez **Archiver** dans la barre d’outils.
+1. Confirmez l’action **Archiver**.
+
+## Archivage forcé (administrateur) {#forced-adminstrator-check-in}
+
+Il se peut que l’utilisateur qui a extrait un fragment de contenu ne soit pas disponible pour l’archiver.
+
+Dans ce cas, un administrateur peut effectuer l’opération **Archiver**.
+
+>[!NOTE]
+>
+>Consultez également la section Assets [Archivage forcé](/help/assets/check-out-and-submit-assets.md#forced-check-in).
+
 ## Suppression d’un fragment {#deleting-a-fragment}
 
 Pour supprimer un fragment :
@@ -513,7 +574,7 @@ Par exemple :
 Les détails des copies de langue sont accessibles à partir de :
 
 * la colonne **Langue** de la [Console Fragments de contenu](#information-content-fragments)
-* l’onglet [&#x200B; Copies de langue de l’éditeur de fragments de contenu](/help/sites-cloud/administering/content-fragments/authoring.md#view-language-copies)
+* l’onglet [ Copies de langue de l’éditeur de fragments de contenu](/help/sites-cloud/administering/content-fragments/authoring.md#view-language-copies)
 
 L’icône indique les paramètres régionaux du fragment de contenu, ainsi que le nombre total de copies de langue/paramètres régionaux associées au fragment de contenu. Par exemple, à partir de la console :
 
