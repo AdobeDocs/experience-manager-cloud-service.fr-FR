@@ -86,7 +86,7 @@ Après avoir activé la vue Associé et éventuellement configuré le workflow :
 
 1. **Activer les champs modifiables :** dans les sections requises de la carte d’interface utilisateur, activez les champs que les associés sont autorisés à modifier. Définissez les validations et le comportement obligatoire/en lecture seule selon les besoins.
 1. **Publiez l’IC** afin qu’il soit disponible sur l’instance de publication pour les associés.
-1. Partagez le lien IC publié avec les associés. Ils s’authentifient (par exemple, via l’ID d’entrée Microsoft [](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id)) et ouvrent l’interface utilisateur associée, saisissent ou confirment les données client et génèrent la communication finale. Si vous avez configuré un workflow, il s’exécute lors de l’envoi. Pour connaître le fonctionnement de l’envoi et du workflow, voir [ Workflow d’envoi pour l’interface utilisateur associée ](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md#submission-and-workflow-behavior).
+1. Partagez le lien IC publié avec les associés. Ils s’authentifient (par exemple, via l’ID d’entrée Microsoft [&#128279;](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id)) et ouvrent l’interface utilisateur associée, saisissent ou confirment les données client et génèrent la communication finale. Si vous avez configuré un workflow, il s’exécute lors de l’envoi. Pour connaître le fonctionnement de l’envoi et du workflow, voir [&#x200B; Workflow d’envoi pour l’interface utilisateur associée &#x200B;](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md#submission-and-workflow-behavior).
 
 ## Voir également
 
