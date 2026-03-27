@@ -1,20 +1,20 @@
 ---
-title: Notes de mise à jour de l’éditeur universel version 2026.03.19
-description: Il s’agit des notes de mise à jour de la version 2026.03.19 de l’éditeur universel.
+title: Notes de mise à jour de l’éditeur universel version 2026.03.26
+description: Il s’agit des notes de mise à jour de la version 2026.03.26 de l’éditeur universel.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 048e86fe7930173bb33de9252607e2910520b575
+source-git-commit: abbc43adbe64149098c049810482d37f76034eab
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 34%
+source-wordcount: '146'
+ht-degree: 46%
 
 ---
 
 
-# Notes de mise à jour de l’éditeur universel version 2026.03.19 {#release-notes}
+# Notes de mise à jour de l’éditeur universel version 2026.03.26 {#release-notes}
 
-Voici les notes de mise à jour de la version du 19 mars 2026 de l’éditeur universel.
+Voici les notes de mise à jour de la version du 26 mars 2026 de l’éditeur universel.
 
 >[!TIP]
 >
@@ -22,21 +22,14 @@ Voici les notes de mise à jour de la version du 19 mars 2026 de l’éditeur un
 
 >[!TIP]
 >
->Consultez [cette page](/help/release-notes/release-notes-cloud/release-notes-current.md) pour obtenir les notes de mise à jour actuelles d’Adobe Experience Manager as a Cloud Service.
+>Consultez [cette page](/help/release-notes/release-notes-cloud/release-notes-current.md) pour obtenir les notes de mise à jour actuelle d’Adobe Experience Manager as a Cloud Service.
 
 ## Nouveautés {#what-is-new}
 
-* Les éléments dans les propriétés sont maintenant réduits lors du retour à [l’écran d’accueil.](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button)
-* [Le sélecteur de ressources](/help/implementing/universal-editor/configure-assets-selector.md) prend désormais en charge les [définitions de filtre.](/help/implementing/universal-editor/filtering.md)
-* Si aucune action n’est disponible pour l’élément sélectionné, [le menu contextuel](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) affiche désormais un message à cet effet.
+* La [configuration de ressources de création de documents](https://docs.da.live/administrators/guides/setup-aem-assets#setup-aem-assets) est désormais exposée via un point d’entrée de configuration.
+* [Un point d’extension](/help/implementing/universal-editor/extending.md#extending-ui) a été ajouté au menu contextuel.
+* Une nouvelle icône de workflow personnalisé a été ajoutée au système Extensibilité DynamicIcon pour afficher l’état d’annulation profonde/superficielle dans l’interface utilisateur.
 
 ## Autres améliorations {#other-improvements}
 
-* S’il existe une définition de modèle/filtre/composant, elle est récupérée lors du passage d’une application à une autre dans l’éditeur.
-* La suppression d’une image ne laisse plus de balises d’image vides lors de l’utilisation de DA comme serveur principal.
-* Les classes dans les blocs sont désormais correctement gérées lors de l’utilisation de DA comme serveur principal.
-* L’API Open enregistre désormais correctement les ressources distantes en tant qu’objets .
-
-## Rupture du changement {#breaking-change}
-
-* Toutes les extensions doivent être mises à jour sur `@adobe/uix-guest` >= `1.1.7` pour améliorer la stabilité.
+* Un problème a été résolu avec les classes de création de documents qui ne fonctionnent pas avec plusieurs champs, car elles s’attendent à une chaîne.

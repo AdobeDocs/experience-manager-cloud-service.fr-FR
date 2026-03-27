@@ -4,10 +4,10 @@ description: Découvrez les différentes options permettant d’étendre les fon
 feature: Developing
 role: Admin, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: 9adf2bc4f9f25ee7fc0a39b0f1a3ae9e45fce7d2
+source-git-commit: abbc43adbe64149098c049810482d37f76034eab
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 100%
+source-wordcount: '576'
+ht-degree: 92%
 
 ---
 
@@ -54,10 +54,13 @@ Pour explorer les possibilités de création de vos propres extensions, consulte
 
 [En utilisant Extension Manager dans AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/), vous pouvez activer ou désactiver vos extensions par instance, accéder aux extensions propriétaires d’Adobe, y compris celles de l’éditeur universel, et bien plus encore.
 
-## Points d’extension {#extension-points}
+### Points d’extension {#extension-points}
 
-En plus de l’extensibilité de l’interface utilisateur, l’éditeur universel offre de nombreux autres points d’extension flexibles pour permettre une intégration transparente des exigences commerciales personnalisées.
+Pour obtenir la liste complète des points d’extension disponibles dans l’interface utilisateur de l’éditeur universel, consultez la documentation d’Adobe Developer [The Universal Editor Extension Points.](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/)
+
+## Ressources supplémentaires {#additional-resources}
+
+Outre l’extensibilité de l’interface utilisateur, l’éditeur universel offre d’autres options de personnalisation pour permettre une intégration transparente des besoins personnalisés de l’entreprise.
 
 * **[Blocs](https://www.aem.live/developer/block-collection)** : au format JSON simple, les projets peuvent ajuster les blocs et les fonctionnalités d’interface utilisateur disponibles pour la création de contenu.
-* **[Interface utilisateur personnalisée](#extending-ui)** : les extensions peuvent afficher l’interface utilisateur nécessaire dans les panneaux latéraux ou les boîtes de dialogue modales.
 * **[Événements](/help/implementing/universal-editor/events-universal-editor.md)** : les extensions reçoivent des événements sur les actions et les sélections réalisées dans l’environnement auteur sur la page afin d’y répondre de manière appropriée.
