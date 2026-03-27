@@ -147,7 +147,7 @@ Placez le pointeur de la souris sur le nom du dossier pour afficher le chemin d�
 
    * Sélectionnez l’icône d’un fragment spécifique :
 
-     ![ Console Fragments de contenu - Icône Workflows ](assets/cf-managing-console-workflows-icon.png)
+     ![&#x200B; Console Fragments de contenu - Icône Workflows &#x200B;](assets/cf-managing-console-workflows-icon.png)
 
      Pour ouvrir une boîte de dialogue contenant des informations détaillées sur les workflows (passés et actuels) du fragment.:
 
@@ -172,7 +172,7 @@ Certaines actions sont disponibles à partir de la console, sans sélectionner d
 
   >[!NOTE]
   >
-  >La console **** permet d’accéder aux ressources, telles que les images, les vidéos, etc.  Il est possible d’accéder à cette console :
+  >La console **&#x200B;**&#x200B;permet d’accéder aux ressources, telles que les images, les vidéos, etc.  Il est possible d’accéder à cette console :
   >
   >* en utilisant le lien **Ouvrir dans Assets** (dans la console Fragments de contenu) ;
   >* directement à partir du volet **Navigation** global
@@ -271,7 +271,7 @@ Pour ouvrir votre fragment à des fins de modification :
    * Crée une copie du fragment de contenu sélectionné à son emplacement.
    * Crée des copies de tous les fragments référencés par le fragment sélectionné.
 
-     Les [ emplacements vers lesquels les fragments référencés sont copiés](#locations-that-the-referenced-fragments-are-copied-to) dépendent de l’option sélectionnée :
+     Les [&#x200B; emplacements vers lesquels les fragments référencés sont copiés](#locations-that-the-referenced-fragments-are-copied-to) dépendent de l’option sélectionnée :
 
       * **Copier dans le dossier sélectionné**
 Lorsque cette option est sélectionnée, les fragments référencés sont copiés au même emplacement que le fragment sélectionné d’origine.
@@ -416,7 +416,7 @@ Vous pouvez publier vos fragments de contenu dans :
 
 Vous pouvez publier vos fragments de contenu à l’aide de l’option **Publier** à partir de :
 
-* la barre d’outils de la console [ Fragments de contenu ](#actions-selected-content-fragment)
+* la barre d’outils de la console [&#x200B; Fragments de contenu &#x200B;](#actions-selected-content-fragment)
 
    * Sélectionnez un ou plusieurs fragments dans la liste.
 
@@ -449,7 +449,7 @@ Après publication, le statut du fragment est mis à jour et visible dans l’é
 
 Vous pouvez dépublier des fragments de contenu :
 
-* la barre d’outils de la console [ Fragments de contenu ](#actions-selected-content-fragment)
+* la barre d’outils de la console [&#x200B; Fragments de contenu &#x200B;](#actions-selected-content-fragment)
 
    * Sélectionnez un ou plusieurs fragments dans la liste.
 
@@ -574,7 +574,7 @@ Par exemple :
 Les détails des copies de langue sont accessibles à partir de :
 
 * la colonne **Langue** de la [Console Fragments de contenu](#information-content-fragments)
-* l’onglet [ Copies de langue de l’éditeur de fragments de contenu](/help/sites-cloud/administering/content-fragments/authoring.md#view-language-copies)
+* l’onglet [&#x200B; Copies de langue de l’éditeur de fragments de contenu](/help/sites-cloud/administering/content-fragments/authoring.md#view-language-copies)
 
 L’icône indique les paramètres régionaux du fragment de contenu, ainsi que le nombre total de copies de langue/paramètres régionaux associées au fragment de contenu. Par exemple, à partir de la console :
 
