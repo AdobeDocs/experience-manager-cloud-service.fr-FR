@@ -4,7 +4,7 @@ description: Découvrez comment mettre à niveau vos fragments de contenu pour o
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 exl-id: 004d1340-8e3a-4e9a-82dc-fa013cea45a7
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 8e962dc399f12277432243bda401f16eddad7087
 workflow-type: tm+mt
 source-wordcount: '1123'
 ht-degree: 3%
@@ -91,7 +91,7 @@ Exécutez la mise à niveau du contenu en mode `dryRun` pour :
 * identifiez les références non valides en les répertoriant dans les fichiers journaux
 Vous pouvez ensuite corriger ces références avant d’exécuter la mise à niveau réelle du contenu.
 * identifiez les références de page, en les répertoriant dans les fichiers journaux
-Lorsque des références de page sont détectées, vous [&#x200B; devez pas exécuter la mise à niveau du contenu](#when-you-should-not-upgrade).
+Lorsque des références de page sont détectées, vous [ devez pas exécuter la mise à niveau du contenu](#when-you-should-not-upgrade).
 
 
 ### Application d’un gel du contenu {#enforce-a-content-freeze}
@@ -121,7 +121,7 @@ La mise à niveau du contenu peut être gérée à l’aide du point d’entrée
 | intervalle | `10` | Intervalle en secondes, au delà duquel le segment suivant de fragments de contenu ou de modèles est mis à niveau. |
 | mode | `replicate`, `noReplicate` | <ul><li>`replicate` : reproduit le même traitement sur toutes les instances de publication AEM.</li><li>`noReplicate` : exécute le traitement uniquement sur les instances d’auteur AEM.</li></ul> |
 | dryRun |  `true`, `false` | <ul><li>`false` : simulez la mise à niveau du contenu, sans enregistrer les modifications du contenu</li><li>`true` : effectuez la mise à niveau du contenu et enregistrez les modifications du contenu</li></ul> |
-| **Détails de la réponse** | **Valeur**. | |
+| **Détails de la réponse** | **Valeur** | |
 | jobId | `UUID` |  Identifiant de la tâche qui exécute la mise à niveau du contenu.<ul><li>Cet identifiant est requis dans tous les appels suivants liés à cette exécution.</li><li>Si la valeur `mode` est définie sur `replicate`, l’exécution sur les instances de publication AEM doit également se faire sous la même `jobId`.</li></ul> |
 | Paramètres | Paramètres de mise à niveau du contenu | Il s’agit notamment des paramètres initiaux fournis pour démarrer la mise à niveau du contenu, et de certaines valeurs par défaut internes. |
 
@@ -313,7 +313,7 @@ com.adobe.cq.dam.cfm.impl.servicing.PhaseChainProcessor Phase phase-x, processed
 ```http
 POST http://localhost:4502/libs/dam/cfm/maintenance.json
 Content-Type: application/json
-Authorization: Basic YWRtaW46YWRtaW4=
+Authorization: Basic yourauthorizationcode
 Accept: application/json
  
 {
