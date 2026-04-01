@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 0c2d61f05d8a6adea1116406b18aa1245ff701d1
+source-git-commit: 9820b642af32960c532b238e00267cb4d880535f
 workflow-type: tm+mt
-source-wordcount: '2156'
-ht-degree: 28%
+source-wordcount: '2180'
+ht-degree: 29%
 
 ---
 
@@ -34,13 +34,11 @@ La date de publication de la version actuelle d’[!DNL Adobe Experience Manager
 
 Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/release-notes/maintenance/latest.md).
 
-<!--  ## Release Video {#release-video}
+&lt;## Vidéo de mise à jour {#release-video}
 
-Have a look at the March 2026 Release Overview video for a summary of the features added in the 2026.3.0 release:
+Regardez la vidéo de vue d’ensemble de la version de mars 2026 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2026.3.0 :
 
->[!VIDEO](https://video.tv.adobe.com/v/3480401/?captions=fre_fr&quality=12)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
 
 ## Programmes AEM Beta {#aem-beta-programs}
 
@@ -83,7 +81,7 @@ Voir [Programmes bêta AEM Foundation](#foundation-early-adopter).
 
 ### Cloud Manager (programmes Beta) {#cloud-manager-beta-programs}
 
-Voir [Programmes bêta &#x200B;](/help/implementing/cloud-manager/release-notes/current.md).
+Voir [Programmes bêta ](/help/implementing/cloud-manager/release-notes/current.md).
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -150,7 +148,7 @@ Prochainement : prise en charge des gestionnaires de contenu pour les applicatio
 Les composants de liste déroulante à sélection multiple dans le Forms adaptatif effectuent désormais le rendu de leurs libellés d’affichage sélectionnés dans la [PDF d’envoi générée](/help/forms/generate-document-of-record-core-components.md), en s’assurant que le document reflète précisément ce que les utilisateurs voient sur le formulaire.
 
 **Amélioration de l’accessibilité des composants de case à cocher, de bouton radio et de panneau**
-Les composants principaux de Forms adaptatifs introduisent le balisage sémantique compatible avec WCAG 2.2 pour les [groupes de cases à cocher (v2)](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [groupes de boutons radio (v2)](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) et le [composant de panneau](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). Ces composants exploitent les éléments HTML `<fieldset>` et `<legend>` pour établir des relations significatives entre les libellés de groupe et leurs options, ce qui permet une interprétation précise par les lecteurs d’écran et d’autres technologies d’assistance.
+Les composants principaux de Forms adaptatifs introduisent le balisage sémantique compatible avec WCAG 2.2 pour les [groupes de cases à cocher (v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [groupes de boutons radio (v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) et le [composant de panneau](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). Ces composants exploitent les éléments HTML `<fieldset>` et `<legend>` pour établir des relations significatives entre les libellés de groupe et leurs options, ce qui permet une interprétation précise par les lecteurs d’écran et d’autres technologies d’assistance.
 
 **Prise en charge des versions dans Forms Manager**
 Forms Manager [prend désormais en charge le contrôle de version pour les Forms adaptatifs (composants principaux et composants de base)](/help/forms/manage-form-versions-forms-manager.md), les fragments de formulaire, les thèmes, les modèles XDP et les ressources binaires. Créez des versions, affichez l’historique complet des versions et restaurez les états précédents de vos ressources de formulaire directement à partir de la console Forms et documents.
@@ -165,7 +163,7 @@ La [gestion simplifiée des index](https://oak-indexing.github.io/oakTools/simpl
 
 #### Serveur MCP Cloud Manager {#cm-mcp-server}
 
->[!VIDEO](https://video.tv.adobe.com/v/3480344/?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480340/?quality=12)
 
 Les IDE modernes utilisent le protocole MCP (Model Context Protocol) pour permettre aux modèles de langage volumineux (LLM) d’appeler les outils exposés par les serveurs MCP. Au lieu d’intégrer directement les spécifications d’API de bas niveau, l’équipe de développement peut simplement décrire son intention en langage naturel.
 
@@ -181,7 +179,7 @@ Les API obsolètes ciblant la suppression du 2/26/2026 ne doivent plus être uti
 
 * **À compter du 26 janvier 2026** : les e-mails de notification du Centre de maintenance sont envoyés comme rappel pour supprimer l’utilisation de ces API.
 * **26 février 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API seront **mis en pause** pendant l’étape **Qualité du code**. Un responsable de déploiement, un chef de projet ou un propriétaire d’entreprise peut contourner le problème pour autoriser le pipeline à continuer. *Cela peut ralentir votre capacité à valider et à publier les modifications de code.*
-* **30 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **&#x200B;**&#x200B;lors de l’étape **Qualité du code**. Les déploiements seront bloqués jusqu’à ce que l’utilisation obsolète de l’API soit supprimée. *Cela peut vous empêcher de publier des mises à jour urgentes et peut avoir un impact sur vos opérations commerciales.*
+* **30 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **** lors de l’étape **Qualité du code**. Les déploiements seront bloqués jusqu’à ce que l’utilisation obsolète de l’API soit supprimée. *Cela peut vous empêcher de publier des mises à jour urgentes et peut avoir un impact sur vos opérations commerciales.*
 * **4 mai 2026** : les environnements qui utilisent toujours des API obsolètes **ne recevront pas de mises à jour de versions Adobe critiques** et ne sont pas soumis aux engagements standard d’Adobe en matière de performances et de disponibilité. Par conséquent, vous ne recevrez pas de nouvelles fonctionnalités ou de nouveaux correctifs, la stabilité et la disponibilité des applications peuvent être affectées négativement et l&#39;exposition aux risques de sécurité peut encore augmenter.
 
 Pour plus d’informations, consultez l’[article sur l’obsolescence](/help/release-notes/deprecated-removed-features.md#aem-apis), mais pour plus de commodité, ces API sont répertoriées ci-dessous :
@@ -233,13 +231,13 @@ Nous disposons d’un nombre limité d’opportunités pour la diffusion de l’
 
 Les fonctionnalités [dépannage de pipeline](/help/ai-in-aem/agents/brand-experience/development/development.md) de l’agent de développement aident les développeurs à diagnostiquer et à résoudre efficacement les problèmes dans les déploiements d’AEM as a Cloud Service. En plus de prendre en charge les pipelines Full Stack (déploiement et qualité du code), l’agent de développement prend désormais en charge le dépannage du **pipeline de configuration de niveau web** dans le cadre d’un programme bêta.
 
-Pour demander l’accès à la version bêta, envoyez un e-mail à l’adresse [&#128279;](mailto:aem-devagent@adobe.com). Un accès préexistant aux agents dans AEM est requis.
+Pour demander l’accès à la version bêta, envoyez un e-mail à l’adresse [](mailto:aem-devagent@adobe.com). Un accès préexistant aux agents dans AEM est requis.
 
 #### Outils d’IA dédiée à l’IDE pour la migration d’AEM 6.5 vers AEM Cloud Service (programme Alpha) {#cm-ide-migration}
 
 Accélérez votre migration d’AEM 6.5 vers AEM as a Cloud Service (pile Java) en utilisant l’outil d’IA dédiée à l’environnement de développement intégré pour agir sur les recommandations du rapport [Analyseur des bonnes pratiques](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
 
-Envoyer un courrier électronique à l’adresse [&#128279;](mailto:aemcs-ai-ide-tools-feedback@adobe.com) pour plus d’informations.
+Envoyer un courrier électronique à l’adresse [](mailto:aemcs-ai-ide-tools-feedback@adobe.com) pour plus d’informations.
 
 #### Authentification Edge pour Edge Delivery Services (programme Beta) {#edge-authentication}
 
@@ -259,7 +257,7 @@ Envoyez un e-mail à [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-cana
 
 Dans la version bêta, les environnements de développement rapide (RDE) prennent désormais en charge une fonctionnalité permettant de prendre un instantané de l’état actuel du code et du contenu, qui peut être restauré ultérieurement. Cela peut s’avérer utile lors de la synchronisation du code qui peut devoir être restauré à un état précédent ou, lorsqu’au cours du développement, il est nécessaire d’alterner entre plusieurs fonctionnalités différentes. Il est également possible de restaurer uniquement le contenu modifiable en tant que point de départ connu pour les tests.
 
-Veuillez envoyer un e-mail à [&#128279;](mailto:aemcs-rde-support@adobe.com) si cette fonctionnalité vous intéresse et si vous souhaitez faire part de vos commentaires.
+Veuillez envoyer un e-mail à [](mailto:aemcs-rde-support@adobe.com) si cette fonctionnalité vous intéresse et si vous souhaitez faire part de vos commentaires.
 
 #### Surveillance étendue des performances des applications (APM) (programme Alpha) {#apm-alpha}
 
