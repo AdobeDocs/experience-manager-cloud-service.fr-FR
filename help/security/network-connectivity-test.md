@@ -17,7 +17,7 @@ Le **test de connectivité réseau** est un outil de diagnostic Cloud Manager qu
 
 Le test s’exécute à partir de l’**infrastructure de proxy de sortie** qui appartient à la configuration réseau avancée de votre programme, et non à partir d’un pod de création ou de publication. Il utilise le même chemin d’accès réseau sortant qu’AEM lorsque la mise en réseau avancée est active. Cette conception est particulièrement utile pour les scénarios **VPN** : vous pouvez confirmer la résolution DNS, le routage réseau, les règles de pare-feu et la disponibilité du service pour les systèmes privés ou locaux avant de passer en ligne.
 
-Pour plus d’informations sur la configuration d’un VPN, d’une adresse IP de sortie dédiée ou d’une sortie de port flexible, voir [ Configuration de la mise en réseau avancée pour AEM as a Cloud Service](/help/security/configuring-advanced-networking.md).
+Pour plus d’informations sur la configuration d’un VPN, d’une adresse IP de sortie dédiée ou d’une sortie de port flexible, voir [&#x200B; Configuration de la mise en réseau avancée pour AEM as a Cloud Service](/help/security/configuring-advanced-networking.md).
 
 >[!IMPORTANT]
 >
