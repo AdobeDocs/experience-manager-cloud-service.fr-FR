@@ -1,43 +1,52 @@
 ---
-title: Notes de mise à jour de la version 2026.3.0 de Cloud Manager
-description: En savoir plus sur la version 2026.3.0 de Cloud Manager dans Adobe Experience Manager as a Cloud Service.
+title: Notes de mise à jour de la version 2026.4.0 de Cloud Manager
+description: En savoir plus sur la version 2026.4.0 de Cloud Manager dans Adobe Experience Manager as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 2556f606db8b74bce25cd504a183abdc43e31227
+source-git-commit: 6c98a27889257a6d8befa04a2b2c4e5a7e6e49f2
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 22%
+source-wordcount: '634'
+ht-degree: 23%
 
 ---
 
-# Notes de mise à jour de Cloud Manager 2026.3.0 dans Adobe Experience Manager as a Cloud Service {#release-notes}
+# Notes de mise à jour de Cloud Manager 2026.4.0 dans Adobe Experience Manager as a Cloud Service {#release-notes}
 
 <!-- https://wiki.corp.adobe.com/display/DMSArchitecture/%5BKT%5D+Cloud+Manager+2025.08.0+Release -->
 
-En savoir plus sur la version 2026.3.0 de Cloud Manager dans AEM (Adobe Experience Manager) as a Cloud Service.
+En savoir plus sur la version 2026.4.0 de Cloud Manager dans AEM (Adobe Experience Manager) as a Cloud Service.
 
 Consultez également les [notes de mise à jour actuelles d’Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Dates de publication {#release-date}
 
-La date de publication de la version 2026.3.0 de Cloud Manager dans AEM as a Cloud Service est le vendredi 5 mars 2026.
+La date de publication de la version 2026.4.0 de Cloud Manager dans AEM as a Cloud Service est le vendredi 2 avril 2026.
 
-La prochaine version est prévue le vendredi 2 avril 2026.
+La prochaine version est prévue le vendredi 7 mai 2026.
 
 
 ## Nouveautés - Cloud Manager {#cloud-manager-whats-new}
 
-* **Cloud Manager prend désormais en charge une option** Effacer **pour les importations** Copie de contenu **&#x200B;**
+* **Serveur Cloud Manager MCP pour les IDE optimisés par l’IA**
 
-  Lorsque vous activez **Effacer**, Cloud Manager supprime le contenu existant à la destination avant de démarrer l’importation, ce qui vous permet de repartir de zéro et d’éviter les conflits avec le contenu préexistant. Si vous laissez l’option **Effacer** désactivée, Cloud Manager importe le nouveau contenu en plus du contenu de destination existant. Une invite de confirmation s’affiche avant le début de l’effacement. Cloud Manager consigne l’action d’effacement et importe les détails pour en assurer la traçabilité.
+  Vous pouvez désormais utiliser un serveur MCP (Model Context Protocol) qui expose les API publiques de Cloud Manager en tant qu’outils pour les IDE compatibles avec l’IA (tels que Cursor). Une fois connecté, vous pouvez utiliser des invites de conversation pour répertorier et gérer les programmes, les pipelines, les environnements et les référentiels, ce qui vous permet de vous déplacer plus rapidement sans quitter votre éditeur.
 
-  Voir aussi [Copier le contenu](/help/implementing/developing/tools/content-copy.md#copy-content).
+  Consultez la documentation [Utilisation de MCP avec AEM as a Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md).
 
-* **Prise en charge de l’extensibilité de l’interface utilisateur dans AEM Experience Hub**
-La prise en charge des extensions d’interface utilisateur dans [AEM Experience Hub](https://experience.adobe.com/experiencemanager) est désormais activée, ce qui permet aux développeurs d’étendre l’interface avec des fonctionnalités et des widgets personnalisés créés à l’aide d’Adobe App Builder.
+  Voir le tutoriel [Cloud Manager MCP Server](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager#).
 
-  Pour en savoir plus, voir [AEM Experience Hub](https://developer.adobe.com/uix/docs/services/aem-experience-hub/).
+* **Versions plus rapides avec mise en cache du module**
+
+  Un nouveau modèle de version compile uniquement les modules modifiés (plutôt que le référentiel entier) à l’aide de la mise en cache au niveau du module pour réduire les temps de création. Elle s’applique aux pipelines hors production de qualité du code et au développement de pipelines hors production de pile complète.
+
+  Voir [À propos de l’utilisation de la création intelligente dans un pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build) et [Ajouter un pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
+
+* **Vérification de la connectivité de l’hôte en libre-service**
+
+  Cloud Manager vous permet désormais d’exécuter des vérifications en libre-service à partir de votre environnement. Ces vérifications vérifient l’accessibilité de l’hôte et du port et confirment la résolution DNS à l’aide du chemin réseau configuré par votre programme, y compris la sortie. Cette fonctionnalité vous permet de valider les réseaux avancés et de résoudre les problèmes d’intégration plus rapidement sans ouvrir de dossiers d’assistance ni accéder aux capsules. <!-- SKYOPS-23640 -->
+
+  Voir [Test de connectivité réseau](/help/security/network-connectivity-test.md)
 
 * **Stabilité, performances et fiabilité améliorées**
 
@@ -55,23 +64,38 @@ Participez au programme bêta de Cloud Manager pour obtenir un accès exclusif
 Voir aussi [Programmes AEM Beta](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)
 
 Les opportunités suivantes sont actuellement disponibles :
-<!--
-### Support for Custom Author Domains in Cloud Service
 
-AEM Cloud Service is going to soon support one custom domain per Author environment.-->
+### Edge Delivery Services avec création AEM et configuration flexible du niveau de publication {#eds-with-aem-authoring}
 
-### Serveur Cloud Manager MCP pour les IDE optimisés par l’IA{#mcp-server-for-cm}
+Cloud Manager propose deux nouvelles fonctionnalités conçues pour prendre en charge les architectures de diffusion modernes.
 
-Vous pouvez désormais essayer un serveur MCP (Model Context Protocol) qui expose les API publiques de Cloud Manager en tant qu’outils pour les IDE compatibles avec l’IA (comme Cursor). Une fois connecté, vous pouvez utiliser des invites de conversation pour répertorier et gérer les programmes, les pipelines, les environnements et les référentiels, ce qui vous permet de vous déplacer plus rapidement sans quitter votre éditeur.
+* **Edge Delivery Services avec création AEM**
+Vous pouvez désormais diffuser des sites à l’aide de Edge Delivery Services tout en continuant à créer du contenu en mode de création AEM. Selon les préférences de votre workflow, vous pouvez choisir entre les approches de création suivantes :
 
-Consultez la documentation [Utilisation de MCP avec AEM as a Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md).
+   * Création basée sur des documents
+   * Création basée sur l’auteur AEM
 
-Voir le tutoriel [Cloud Manager MCP Server](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-server/cloud-manager#).
+Pour plus d’informations, voir [Création d’un site Edge Delivery dans Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md#one-click-edge-delivery-site).
 
-La version bêta vous intéresse ? Envoyez [&#128279;](mailto:GRP-AEM-CM-MCP-FEEDBACK@adobe.com) par e-mail avec votre ID d’organisation et votre ID de programme Adobe.
+* **Configuration flexible du niveau de publication**
+Cloud Manager vous permet désormais de configurer si un niveau de publication est requis pour votre programme. Cette flexibilité vous permet de configurer des environnements qui correspondent mieux à l’architecture de diffusion choisie.
 
+Pour plus d’informations, voir [Niveau de publication flexible (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
 
-<!--
+Pour rejoindre Beta, envoyez un e-mail à l’adresse [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-beta_xwalk-publish_config@adobe.com) avec votre ID d’organisation et votre ID de programme Adobe.
+
+### Versions plus rapides avec mise en cache du module {#quick-build-cm-pipelines}
+
+Un nouveau modèle de version compile uniquement les modules modifiés (plutôt que le référentiel entier) à l’aide de la mise en cache au niveau du module pour réduire les temps de création. Elle s’applique aux pipelines de production. Vous contrôlez les pipelines de production qui utilisent **Smart Build**.
+
+Pour plus d’informations, consultez les sections suivantes :
+
+* [Utilisation de la création intelligente dans un pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build).
+* [Ajouter un pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
+
+Pour rejoindre Beta, envoyez un e-mail à l’adresse [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) avec votre ID d’organisation et votre ID de programme Adobe.
+
+<!-- OLD
 ### Experience Hub Extensibility and Customization {#exp-hub-extensibility}
 
 [Experience Hub](/help/experience-hub.md) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI Extensions so they can help you enable them in Experience Hub with minimal effort.
@@ -83,33 +107,17 @@ Embed custom experiences in Experience Hub to extend and personalize your organi
 Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com) with your Adobe OrgID and a short description of the customization you intend to create.
 -->
 
-### Versions plus rapides avec mise en cache du module {#quick-build-cm-pipelines}
+<!-- OLD
+### Support for Custom Author Domains in Cloud Service
 
-Un nouveau modèle de version compile uniquement les modules modifiés (plutôt que le référentiel entier) à l’aide de la mise en cache au niveau du module pour réduire les temps de création. Elle s’applique aux pipelines de qualité de code, full stack et intermédiaires uniquement.
+AEM Cloud Service is going to soon support one custom domain per Author environment.
+-->
 
-![Boîte de dialogue Modifier le pipeline hors production présentant les deux options de stratégie de création qui sont Création complète et Création intelligente](/help/implementing/cloud-manager/release-notes/assets/non-production-pipeline-edit.png)
-*Boîte de dialogue Modifier le pipeline hors production présentant les deux options de stratégie de création qui sont Création complète et Création intelligente.*
 
-Dans la boîte de dialogue **Ajouter/Modifier un pipeline**, sous l’onglet **Code Source**, une nouvelle section **Stratégie de build** vous permet de choisir l’une des options de build suivantes :
-
-* **Version complète** — crée tous les modules du référentiel à chaque exécution.
-* **Version intelligente** : crée uniquement les modules qui ont été modifiés depuis la dernière validation, ce qui réduit la durée globale de la création.
-
-Vous contrôlez les pipelines qui utilisent **génération intelligente**. Dans la version bêta, cette option s’affiche uniquement pour les pipelines **Qualité du code** et **Déploiement de pile complète de développement**.
-
-Voir [&#x200B; À propos de l’utilisation de la création intelligente dans un pipeline hors production &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build) et [Ajouter un pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)
-
-Cela vous intéresse ? Envoyez un e-mail à l’adresse [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) avec votre ID d’organisation et votre ID de programme Adobe.
-
-<!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline Variables in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).-->
 
 ## Correctifs {#bug-fixes}
 
-* Correction d’un problème en raison duquel l’API Restore Points pouvait renvoyer une erreur 500 lors de la récupération de points de restauration. Le point d’entrée gère désormais correctement les valeurs nulles, ce qui garantit des réponses cohérentes et fiables. (CMGR-72963)
-* Cloud Manager accepte désormais les URL de référentiel GitHub avec ou sans suffixe `.git`, ce qui permet d’aligner le comportement de l’API avec l’interface utilisateur et de rendre l’intégration du référentiel plus flexible. (CMGR-73296)
-* La validation des noms de profil de produit ne respecte plus la casse, ce qui empêche les erreurs lors de la création de profils dont les noms ne diffèrent que par les majuscules. (CMGR-74075)
-* Vous pouvez désormais effectuer plusieurs opérations de restauration à partir de la même exécution de pipeline, ce qui permet des restaurations séquentielles pour des environnements tels que l’évaluation et la production sans avoir à exécuter un nouveau pipeline. (CMGR-73538)
-
+La version d’avril 2026 de Cloud Manager ne contient aucun correctif significatif.
 
 <!-- ## Known issues {#known-issues} -->
 
