@@ -6,10 +6,10 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fc9f7f10d1797bda5f31d82005b0afbb6ea1e644
 workflow-type: tm+mt
-source-wordcount: '1402'
-ht-degree: 35%
+source-wordcount: '1903'
+ht-degree: 26%
 
 ---
 
@@ -28,7 +28,7 @@ Un utilisateur doit disposer du rôle **[Responsable de déploiement](/help/onbo
 >* Le référentiel Git comporte au moins une branche.
 >* Les environnements de production et d’évaluation sont créés.
 
-Avant de commencer à déployer votre code, configurez les paramètres de votre pipeline à partir de [!UICONTROL Cloud Manager].
+Avant de commencer à déployer votre code, configurez les paramètres de votre pipeline à partir de .
 
 >[!NOTE]
 >
@@ -36,13 +36,13 @@ Avant de commencer à déployer votre code, configurez les paramètres de votre 
 
 ## Ajouter un nouveau pipeline de production {#adding-production-pipeline}
 
-Une fois que vous avez configuré votre programme et que vous disposez au moins d’un environnement basé sur l’interface utilisateur de [!UICONTROL Cloud Manager], vous êtes prêt à ajouter un pipeline de production en suivant ces étapes.
+Une fois que vous avez configuré votre programme et que vous disposez au moins d’un environnement basé sur l’interface utilisateur de , vous êtes prêt à ajouter un pipeline de production en suivant ces étapes.
 
 >[!TIP]
 >
 >Avant de configurer un pipeline front-end, consultez le [Parcours de création rapide de site d’AEM](/help/journey-sites/quick-site/overview.md) pour obtenir un guide complet à travers l’outil de création rapide de site d’AEM, facile à utiliser. Ce parcours peut vous aider à rationaliser le développement front-end de votre site AEM, ce qui vous permet de personnaliser rapidement votre site sans aucune connaissance du serveur principal AEM.
 
-1. Connectez-vous à Cloud Manager sur [experiece.adobe.com](https://experience.adobe.com).
+1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com).
 1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
 1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
 1. Sélectionnez l’organisation de votre choix.
@@ -69,16 +69,16 @@ Une fois que vous avez configuré votre programme et que vous disposez au moins 
 
    ![Configuration du pipeline de production](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
 
-1. Dans l’onglet **Code Source**, sélectionnez le type de code que le pipeline doit traiter.
+1. Dans l’onglet **Code**, sélectionnez le type de code que le pipeline doit traiter.
 
-   * **[Configurer un pipeline de code full stack](#full-stack-code)**
+   * **[J’utilise le code de pile complète](#full-stack-code)**
    * **[Configuration d’un pipeline de déploiement ciblé](#targeted-deployment)**
 
 Voir [Pipelines CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) pour plus d’informations sur les types de pipelines.
 
 Les étapes de création de votre pipeline de production varient en fonction du type de code source que vous avez sélectionné. Suivez les liens ci-dessus pour accéder à la section suivante de ce document afin de terminer la configuration de votre pipeline.
 
-### Configuration d’un pipeline de code full stack {#full-stack-code}
+### J’utilise un code de pile pleine {#full-stack-code}
 
 Un pipeline de code full stack déploie simultanément des versions de code front-end et back-end contenant une ou plusieurs applications de serveur AEM avec une configuration HTTPD/Dispatcher.
 
@@ -88,7 +88,7 @@ Un pipeline de code full stack déploie simultanément des versions de code fron
 
 **Pour configurer un pipeline de code de pile complète, procédez comme suit**
 
-1. Dans l&#39;onglet **Code Source**, définissez les options suivantes.
+1. Dans l&#39;onglet **Code**, définissez les options suivantes.
 
    * **Référentiel** - Définit à partir de quel référentiel Git le pipeline doit récupérer le code.
 
@@ -96,8 +96,14 @@ Un pipeline de code full stack déploie simultanément des versions de code fron
    > 
    >Voir [Ajouter et gérer des référentiels](/help/implementing/cloud-manager/managing-code/managing-repositories.md) pour savoir comment ajouter et gérer des référentiels dans Cloud Manager.
 
-   * **Branche Git** - Définit à partir de quelle branche le pipeline sélectionné doit récupérer le code.
-Saisissez les premiers caractères du nom de la branche et la fonction de saisie automatique de ce champ trouve les branches correspondantes pour vous aider à les sélectionner.
+   * **Branche Git** - Dans la liste déroulante, choisissez la branche du référentiel sélectionné à partir de laquelle le pipeline doit être créé. La valeur par défaut est `main`. Le pipeline utilise la branche choisie comme source pour la création et le déploiement. Si nécessaire, cliquez sur **Actualiser** pour mettre à jour la liste des branches disponibles pour le référentiel sélectionné. Utilisez cette option si une branche créée récemment n’apparaît pas dans la liste.
+   * **Créer une stratégie**
+      * **Version complète** - Génère tous les modules du référentiel à chaque fois
+      * BETA **Smart Build** - crée uniquement les modules qui ont été modifiés depuis la dernière validation.<br>En savoir plus sur [l’utilisation de la création intelligente dans un pipeline hors production](#about-smart-build-non-production-pipeline).
+
+        >[!IMPORTANT]
+        >
+        >Le build intelligent est disponible uniquement pour les pipelines de qualité du code et de déploiement de code de pile complète de développement.
    * **Ignorer la configuration de niveau Web** – Lorsque cette case est cochée, le pipeline ne déploie pas votre configuration de niveau web.
    * **Mettre en pause avant le déploiement en production** - Met le pipeline en pause avant son déploiement en production.
    * **Planifié** - Permet à l’utilisateur d’activer le déploiement en production planifié.
@@ -110,15 +116,15 @@ Saisissez les premiers caractères du nom de la branche et la fonction de saisie
 
 1. Indiquez les chemins à inclure dans le contrôle de l’expérience.
 
-   * Voir [&#x200B; Tests de contrôle de l’expérience](/help/implementing/cloud-manager/reports/report-experience-audit.md#configuration) pour plus d’informations.
+   * Voir [ Tests de contrôle de l’expérience](/help/implementing/cloud-manager/reports/report-experience-audit.md#configuration) pour plus d’informations.
 
 1. Cliquez sur **Enregistrer** pour enregistrer votre pipeline.
 
-Lorsque le pipeline s’exécute, les chemins configurés pour le contrôle de l’expérience sont envoyés et évalués en fonction des tests de performance, d’accessibilité, d’optimisation du moteur de recherche, des bonnes pratiques et de PWA. Pour plus d’informations, voir [&#x200B; Comprendre les résultats du contrôle de l’expérience &#x200B;](/help/implementing/cloud-manager/reports/report-experience-audit.md).
+Lorsque le pipeline s’exécute, les chemins configurés pour le contrôle de l’expérience sont envoyés et évalués en fonction des tests de performance, d’accessibilité, d’optimisation du moteur de recherche, des bonnes pratiques et de PWA. Pour plus d’informations, voir [ Comprendre les résultats du contrôle de l’expérience ](/help/implementing/cloud-manager/reports/report-experience-audit.md).
 
 Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](managing-pipelines.md) dans le carte **Pipelines** dans la page **Aperçu du programme**.
 
-### Configuration d’un pipeline de déploiement ciblé {#targeted-deployment}
+### J’utilise le déploiement ciblé {#targeted-deployment}
 
 Un déploiement ciblé déploie le code uniquement pour les parties sélectionnées de votre application AEM. Dans un tel déploiement, vous pouvez choisir d’**Inclure** l’un des types de code suivants :
 
@@ -149,7 +155,7 @@ Un déploiement ciblé déploie le code uniquement pour les parties sélectionn�
 
    * Si votre pipeline est un pipeline de déploiement, vous devez sélectionner les environnements à déployer.
 
-1. Sous **Code Source**, définissez les options suivantes :
+1. Sous **Code**, définissez les options suivantes :
 
    * **Référentiel** – Cette option définit à partir de quel référentiel Git le pipeline doit récupérer le code.
 
@@ -168,6 +174,80 @@ Un déploiement ciblé déploie le code uniquement pour les parties sélectionn�
 1. Cliquez sur **Enregistrer**.
 
 Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](managing-pipelines.md) sur la carte **Pipelines** sur la page **Aperçu du programme**.
+
+## BETA : à propos de l’utilisation de la création intelligente dans un pipeline de production{#about-smart-build-production-pipeline}
+
+La **version intelligente** dans Cloud Manager est une stratégie de création optimisée pour les pipelines de production. La génération intelligente réduit les temps de génération en mettant en cache les modules et en ne reconstruisant que les modules qui ont été modifiés depuis la dernière exécution réussie. Les modules inchangés sont réutilisés à partir du cache, tandis que seuls les modules modifiés et leurs dépendances sont reconstruits, ce qui améliore l’efficacité des workflows de développement itératifs.
+
+>[!NOTE]
+>
+>Cette version bêta vous intéresse ? Envoyez un e-mail à l’adresse [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) avec votre ID d’organisation et votre ID de programme Adobe.
+
+>[!IMPORTANT]
+>
+>La première exécution après l’activation de la création dynamique se comporte comme une création complète, car le cache est vide.
+
+Le build intelligent est recommandé lorsque vous disposez des éléments suivants :
+
+* Vous développez et validez activement des modifications incrémentielles fréquentes.
+* Votre projet contient plusieurs modules Maven.
+* Les versions complètes prennent beaucoup de temps.
+
+La création intelligente n’est pas toujours idéale lorsque vous disposez des éléments suivants :
+
+* Votre version repose principalement sur des modules externes qui effectuent des opérations en dehors du graphique de dépendance de Maven.
+* Vous avez besoin d’une validation de reconstruction complète à chaque exécution.
+
+### Présentation des performances de build{#smart-build-performance}
+
+Le gain de performances de l’utilisation de la création dynamique dépend de plusieurs facteurs, notamment des éléments suivants :
+
+* Nombre de modules dans le projet.
+* La fréquence et l’étendue des modifications de code.
+* La distribution des dépendances entre les modules.
+
+En règle générale, les projets comportant de nombreux modules indépendants peuvent bénéficier de la plus grande amélioration.
+
+### Désinscription du cache par module{#smart-build-cache-optout}
+
+Smart Build fournit un contrôle affiné qui vous permet de désactiver la mise en cache pour des modules spécifiques. Cette fonctionnalité est utile lorsque certains modules :
+
+* Utilisez des plug-ins, tels que `exec-maven-plugin` ou `maven-antrun-plugin`.
+* Effectuer des opérations de fichier non suivies par les dépendances Maven.
+* Le contenu mis en cache génère des résultats incohérents.
+
+### Désactiver la mise en cache pour un module{#smart-build-disable-caching}
+
+Vous pouvez ajouter la propriété suivante au `pom.xml` du module concerné :
+
+```xml
+<properties>
+  <maven.build.cache.enabled>false</maven.build.cache.enabled>
+</properties>
+```
+
+Cette syntaxe force le module à se recréer à chaque exécution de pipeline tandis que les autres modules continuent à bénéficier de la mise en cache.
+
+### Restrictions et considérations lors de l’utilisation de la création dynamique{#smart-build-limitations}
+
+Gardez les points suivants à l’esprit lorsque vous utilisez la création dynamique :
+
+* Smart Build repose sur l’analyse des dépendances Maven.
+* Les modifications en dehors du graphique de dépendance peuvent ne pas déclencher de reconstructions.
+* Certains plug-ins peuvent ne pas être entièrement compatibles avec la mise en cache.
+* Vous pouvez revenir à la **version complète** à tout moment en modifiant le pipeline de production.
+
+Si vous rencontrez un comportement de build inattendu, envisagez de désactiver la mise en cache de modules spécifiques ou de changer temporairement votre stratégie de build en **Version complète**.
+
+### Dépannage des problèmes de création dynamique{#smart-build-troubleshoot}
+
+| Problème | Solutions suggérées |
+| --- | --- |
+| Les résultats de build sont incohérents | · Désactivez la mise en cache pour les modules concernés.<br>· Vérification du comportement des plug-ins (en particulier des plug-ins `exec`/`antrun`). |
+| Aucune amélioration des performances | · Assurez-vous que plusieurs exécutions ont eu lieu (préchauffage du cache).<br>· Vérifiez si la plupart des modules changent fréquemment. |
+| Artefacts inattendus ou modifications manquantes | · Vérifier si les modifications se situent en dehors du suivi des dépendances Maven.<br>· Utilisez **Full Build** pour la vérification. |
+
+Voir [Ajouter un pipeline de production](#adding-production-pipeline) pour activer la création intelligente.
 
 ## Ignorer les packages Dispatcher {#skip-dispatcher-packages}
 

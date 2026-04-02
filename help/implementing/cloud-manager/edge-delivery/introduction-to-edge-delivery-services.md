@@ -4,10 +4,10 @@ description: Découvrez comment diffuser vos projets Cloud Manager à l’aide 
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 897f6376c594604527231f6f5a05a8b85d6858f3
+source-git-commit: fc9f7f10d1797bda5f31d82005b0afbb6ea1e644
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 93%
+source-wordcount: '1127'
+ht-degree: 68%
 
 ---
 
@@ -34,6 +34,41 @@ Si vous disposez d’Edge Delivery Services sous licence avec Adobe Experienc
 
 De plus, vous pouvez accéder à une expérience unifiée pour gérer toutes vos propriétés AEM tout en assurant la cohérence entre les workflows clés. Ces workflows comprennent notamment la gestion des noms de domaine, la gestion des certificats SSL et les mappages de réseau CDN.
 
+## À propos de Edge Delivery Services avec la création AEM (Beta) {#eds-aem-authoring}
+
+>[!NOTE]
+>
+>Les fonctionnalités flexibles de niveau publication et de croisement de création AEM décrites ici se trouvent dans Beta. Pour rejoindre Beta, envoyez un e-mail à l’adresse [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-beta_xwalk-publish_config@adobe.com) avec votre ID d’organisation et votre ID de programme Adobe.
+
+Les expériences web modernes nécessitent une diffusion hautement performante, mais de nombreuses entreprises s’appuient également sur des workflows de création AEM établis, la gouvernance et les modèles de réutilisation du contenu. Pour aider vos équipes à moderniser la diffusion sans interrompre la création, Cloud Manager propose des fonctionnalités qui vous permettent d’effectuer les opérations suivantes :
+
+* Diffuser des expériences à l’aide de Edge Delivery Services.
+* Continuez à utiliser l’instance de création AEM pour la création de contenu.
+* Configurez uniquement l’infrastructure requise pour votre architecture.
+
+Ces fonctionnalités permettent aux entreprises d’adopter une diffusion moderne de manière incrémentielle, sans sacrifier les workflows existants.
+
+### Options de création pour les sites Edge Delivery
+
+Lorsque vous créez un site Edge Delivery dans Cloud Manager, vous pouvez choisir l’approche de création souhaitée :
+
+* Création basée sur des documents : créez du contenu dans Google Drive ou SharePoint. Aucun environnement AEM n’est requis.
+* Création AEM : créez du contenu dans AEM à l’aide de l’éditeur universel. Cette méthode nécessite un environnement de création AEM. Avec cette option, aucun niveau de publication n’est requis lorsqu’Edge Delivery gère la diffusion de contenu.
+
+Les entreprises peuvent choisir entre ces approches ou les utiliser de manière incrémentielle, en fonction de leurs préférences de workflow. Voir [ Création de votre premier site Edge Delivery en un clic](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md).
+
+### Niveau de publication flexible
+
+Cloud Manager vous permet de configurer si un niveau de publication est configuré pour les environnements de votre programme. Toutes les architectures ne nécessitent pas de niveau de publication, comme illustré dans le tableau suivant :
+
+| Architecture | Niveau de publication |
+| --- | --- |
+| AEM Sites traditionnel | Requis |
+| Découplé / API-first | Requis |
+| Edge Delivery Services | Non nécessaires |
+
+En activant le niveau de publication uniquement lorsque cela est nécessaire, les équipes peuvent configurer des environnements plus rapidement, simplifier l’infrastructure et réduire les composants inutiles. Voir [Niveau de publication flexible (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
+
 ## Avantages de l’utilisation du chemin recommandé par Adobe pour Edge Delivery Services {#recommended-path-eds}
 
 Optimisez vos avantages grâce à Adobe en accédant à votre licence Edge Delivery Services via Cloud Manager et en l’utilisant. Cela vous permet de tirer parti de plusieurs avantages clés.
@@ -59,6 +94,7 @@ Vous pouvez ajouter Edge Delivery Services de différentes manières en fonction
 | Je veux ajouter un site Edge Delivery à Cloud Manager. | Voir [Ajout d’un site Edge Delivery](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md). |
 | Je souhaite créer un site Edge Delivery maintenant. | Consultez [Créer rapidement un site Edge Delivery dans Cloud Manager en un clic](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md). |
 | Je souhaite ajouter Edge Delivery Services à un nouveau programme sandbox ou à un programme sandbox existant. | Voir [Création de programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md).<br>Lorsque vous créez un programme sandbox, Edge Delivery Services est ajouté au programme par défaut ; vous n’avez pas besoin de le sélectionner.<br>Les programmes sandbox existants avant la disponibilité générale d’Edge Delivery héritent automatiquement d’Edge Delivery Services. |
+| Je souhaite créer un site Edge Delivery qui utilise la création AEM | Voir [Création d’un site Edge Delivery](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md#one-click-edge-delivery-site). Lors de l’utilisation de la création AEM avec Edge Delivery, un niveau de publication est facultatif. Voir [Niveau de publication flexible (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier). |
 
 >[!NOTE]
 >
@@ -87,7 +123,7 @@ La **liste de tâches Edge Delivery** est une liste de contrôle de tâches d’
 | 8 | Configuration de la validation push | Voir [Configuration de la validation push pour un site Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 9 | Mise en production | Voir [Liste de contrôle de mise en production](https://www.aem.live/docs/go-live-checklist). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441563?captions=fre_fr&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Soumettre un ticket d’assistance {#eds-support-ticket}
 

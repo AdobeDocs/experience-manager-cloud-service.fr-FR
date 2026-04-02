@@ -6,7 +6,7 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 8391980183b8c5a91046e01474200b9eaf8e0546
+source-git-commit: 7663af90b17e4b9d9567041c3bed8e20465c87d9
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 20%
@@ -92,7 +92,7 @@ Pour terminer la configuration du pipeline hors production de code full stack, p
    * **Branche Git** - Dans la liste déroulante, choisissez la branche du référentiel sélectionné à partir de laquelle le pipeline doit être créé. La valeur par défaut est `main`. Le pipeline utilise la branche choisie comme source pour la création et le déploiement. Si nécessaire, cliquez sur **Actualiser** pour mettre à jour la liste des branches disponibles pour le référentiel sélectionné. Utilisez cette option si une branche créée récemment n’apparaît pas dans la liste.
    * **Créer une stratégie**
       * **Version complète** - Génère tous les modules du référentiel à chaque fois
-      * BETA **Smart Build** - crée uniquement les modules qui ont été modifiés depuis la dernière validation.<br>En savoir plus sur [l’utilisation de la création intelligente dans un pipeline hors production](#about-smart-build).
+      * BETA **Smart Build** - crée uniquement les modules qui ont été modifiés depuis la dernière validation.<br>En savoir plus sur [l’utilisation de la création intelligente dans un pipeline hors production](#about-smart-build-non-production-pipeline).
 
         >[!IMPORTANT]
         >
@@ -180,7 +180,7 @@ The steps to complete the creation of your non-production, targeted deployment p
 Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](managing-pipelines.md) dans le carte **Pipelines** dans la page **Aperçu du programme**.
 
 
-## À propos de l’utilisation de la création dynamique dans un pipeline hors production{#about-smart-build}
+## À propos de l’utilisation de la création dynamique dans un pipeline hors production{#about-smart-build-non-production-pipeline}
 
 La **version intelligente** dans Cloud Manager est une stratégie de création optimisée pour les pipelines hors production. La génération intelligente réduit les temps de génération en mettant en cache les modules et en ne reconstruisant que les modules qui ont été modifiés depuis la dernière exécution réussie. Les modules inchangés sont réutilisés à partir du cache, tandis que seuls les modules modifiés et leurs dépendances sont reconstruits, ce qui améliore l’efficacité des workflows de développement itératifs.
 
@@ -194,11 +194,13 @@ La génération intelligente n&#39;est actuellement disponible que pour les él�
 >La première exécution après l’activation de la création dynamique se comporte comme une création complète, car le cache est vide.
 
 Le build intelligent est recommandé lorsque vous disposez des éléments suivants :
+
 * Vous développez et validez activement des modifications incrémentielles fréquentes.
 * Votre projet contient plusieurs modules Maven.
 * Les versions complètes prennent beaucoup de temps.
 
 La création intelligente n’est pas toujours idéale lorsque vous disposez des éléments suivants :
+
 * Votre version repose principalement sur des modules externes qui effectuent des opérations en dehors du graphique de dépendance de Maven.
 * Vous avez besoin d’une validation de reconstruction complète à chaque exécution.
 
@@ -251,7 +253,7 @@ Si vous rencontrez un comportement de build inattendu, envisagez de désactiver 
 | Aucune amélioration des performances | · Assurez-vous que plusieurs exécutions ont eu lieu (préchauffage du cache).<br>· Vérifiez si la plupart des modules changent fréquemment. |
 | Artefacts inattendus ou modifications manquantes | · Vérifier si les modifications se situent en dehors du suivi des dépendances Maven.<br>· Utilisez **Full Build** pour la vérification. |
 
-Voir [Ajouter un pipeline hors production](#adding-non-production-pipeline) la section Activation de la création dynamique.
+Voir [Ajouter un pipeline hors production](#adding-non-production-pipeline) pour activer la création intelligente.
 
 
 
