@@ -29,4 +29,4 @@ Ces notes de mise à jour **aperçu** sont fournies à titre indicatif pour que 
 ## Fonctionnalités à venir {#upcoming-features}
 
 * AgentBridge a été introduit pour l’intégration de l’assistant AI et de l’éditeur universel.
-* L’option [ Ajouter une image dans la barre d’outils de l’éditeur de texte enrichi (RTE)](/help/implementing/universal-editor/configure-rte.md#image) est désormais prise en charge pour les [projets de création et de conservation de contenu dans AEM as a Cloud Service.](https://www.aem.live/docs/aem-authoring)
+* L’option [&#x200B; Ajouter une image dans la barre d’outils de l’éditeur de texte enrichi (RTE)](/help/implementing/universal-editor/configure-rte.md#image) est désormais prise en charge pour les [projets de création et de conservation de contenu dans AEM as a Cloud Service.](https://www.aem.live/docs/aem-authoring)
