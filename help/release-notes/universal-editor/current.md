@@ -1,20 +1,20 @@
 ---
-title: Notes de mise à jour de l’éditeur universel version 2026.03.26
-description: Il s’agit des notes de mise à jour de la version 2026.03.26 de l’éditeur universel.
+title: Notes de mise à jour de l’éditeur universel version 2026.04.02
+description: Il s’agit des notes de mise à jour de la version 2026.04.02 de l’éditeur universel.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: abbc43adbe64149098c049810482d37f76034eab
+source-git-commit: f071d1c53f26429a791cc7a7f8f0aafa10f54e8d
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 46%
+source-wordcount: '113'
+ht-degree: 60%
 
 ---
 
 
-# Notes de mise à jour de l’éditeur universel version 2026.03.26 {#release-notes}
+# Notes de mise à jour de l’éditeur universel version 2026.04.02 {#release-notes}
 
-Voici les notes de mise à jour de la version du 26 mars 2026 de l’éditeur universel.
+Voici les notes de mise à jour de la version du 2 avril 2026 de l’éditeur universel.
 
 >[!TIP]
 >
@@ -26,10 +26,8 @@ Voici les notes de mise à jour de la version du 26 mars 2026 de l’éditeur un
 
 ## Nouveautés {#what-is-new}
 
-* La [configuration de ressources de création de documents](https://docs.da.live/administrators/guides/setup-aem-assets#setup-aem-assets) est désormais exposée via un point d’entrée de configuration.
-* [Un point d’extension](/help/implementing/universal-editor/extending.md#extending-ui) a été ajouté au menu contextuel.
-* Une nouvelle icône de workflow personnalisé a été ajoutée au système Extensibilité DynamicIcon pour afficher l’état d’annulation profonde/superficielle dans l’interface utilisateur.
+* [Une option configurable](/help/implementing/universal-editor/configure-rte.md#special-characters) permettant d’[ajouter des caractères spéciaux](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) a été ajoutée à la barre d’outils de l’éditeur de texte enrichi (RTE).
 
 ## Autres améliorations {#other-improvements}
 
-* Un problème a été résolu avec les classes de création de documents qui ne fonctionnent pas avec plusieurs champs, car elles s’attendent à une chaîne.
+* Les champs de balise ne sont plus renvoyés à tort en tant que champs multiples par l’adaptateur OpenAPI.
