@@ -38,7 +38,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Regardez la vidéo de vue d’ensemble de la version de mars 2026 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2026.3.0 :
 
->[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483062/?captions=fre_fr&quality=12)
 
 ## Programmes AEM Beta {#aem-beta-programs}
 
