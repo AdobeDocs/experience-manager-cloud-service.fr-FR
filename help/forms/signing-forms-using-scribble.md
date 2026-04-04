@@ -8,7 +8,7 @@ feature: Adaptive Forms, Foundation Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 64%
@@ -23,7 +23,7 @@ ht-degree: 64%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/signing-forms-using-scribble.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/signing-forms-using-scribble.html) |
 | AEM as a Cloud Service | Cet article |
 
 
@@ -68,7 +68,7 @@ Vous pouvez sélectionner l’icône **Configurer** ![configurer](assets/configu
 
 Vous pouvez facilement personnaliser votre composant Signature tactile pour les visiteurs et les visiteuses en utilisant la boîte de dialogue de configuration.
 
-### Onglet De base
+### Onglet de base
 
 ![Onglet De base](/help/forms/assets/scribblesig-basic.png)
 
@@ -138,7 +138,8 @@ Dans l’onglet **Accessibilité**, les valeurs peuvent être définies pour les
 
    ![Complete the signing process](assets/scribblecomplete.jpg)
 
-The signatures are added to the form and the form control moves to the next panel. -->
+The signatures are added to the form and the form control moves to the next panel.
+-->
 
 ## Voir également {#see-also}
 

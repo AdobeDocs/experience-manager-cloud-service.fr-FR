@@ -4,7 +4,7 @@ description: Notes de mise à jour de la version 2021.7.0 d’ [!DNL Adobe Expe
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
 feature: Release Information
 role: Admin
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1292'
 ht-degree: 58%
@@ -64,7 +64,8 @@ Regardez la vidéo [Aperçu de la version de juillet 2021](https://video.tv.ado
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Assets] {#assets-prerelease-features}
 
-<!-- TBD: Not sure about GA of these enh. Shall check with the team.
+<!--
+ TBD: Not sure about GA of these enh. Shall check with the team.
 
 * A user experience enhancements displays the number of assets present in a folder. For more than 1000 assets in a folder, [!DNL Assets] displays 1000+.
 
@@ -99,7 +100,7 @@ L’API `com.day.cq.dam.api.collection.SmartCollection` n’est pas disponible d
 
 * **Document d’enregistrement basé sur Acrobat** : vous pouvez également [utiliser Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms) comme modèle de document d’enregistrement en plus du modèle de formulaire basé sur XFA.
 
-* **Connecteur de magasin de données Azure Microsoft®** : vous pouvez désormais [connecter le modèle de données de formulaire au stockage Azure Microsoft®](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=fr). Il vous permet de récupérer et de stocker des données de formulaire adaptatif dans le stockage Azure Microsoft® en tant qu’objet BLOB.
+* **® connecteur de magasin de données Azure** : vous pouvez désormais [connecter le modèle de données de formulaire au stockage Microsoft® Azure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html). Il vous permet de récupérer et de stocker des données de formulaire adaptatif dans le stockage Azure Microsoft® en tant qu’objet BLOB.
 
 ## Module complémentaire CIF {#cloud-services-cif}
 
@@ -110,7 +111,7 @@ L’API `com.day.cq.dam.api.collection.SmartCollection` n’est pas disponible d
    * Indicateur visuel pour les données de produits évaluées en mode création pour une meilleure visibilité des modifications à venir
    * Nouveau composant sitemap pour pages de contenu et de commerce
 
-* Prise en charge de la recommandation de produit [Adobe Commerce AI, optimisée par l’IA d’Adobe](https://business.adobe.com/ai/adobe-genai.html) dans le storefront AEM à l’aide de recommandations prédéfinies ou créées à la volée
+* Prise en charge de la recommandation de produit [Adobe Commerce AI, optimisée par Adobe AI](https://business.adobe.com/ai/adobe-genai.html) dans le storefront AEM à l’aide de recommandations prédéfinies ou créées à la volée
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 
@@ -195,4 +196,4 @@ Cloud Acceleration Manager est une application cloud conçue pour guider vos éq
 
 >[!NOTE]
 >
-> Regardez cette vidéo de démonstration de [Cloud Acceleration Manager](https://video.tv.adobe.com/v/335547).
+> Regardez cette vidéo de démonstration de [](https://video.tv.adobe.com/v/335547).

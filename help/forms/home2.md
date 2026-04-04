@@ -10,7 +10,7 @@ hidefromtoc: true
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 50d7ce19-7d76-4ea1-a54c-8ca0e5379982
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '2329'
 ht-degree: 1%
@@ -68,10 +68,10 @@ AEM Forms prend en charge l’ensemble du parcours de formulaires numériques, d
 **Parcours De Workflow AEM Forms :**
 
     CRÉER → GOUVERNER → PUBLIER → PROCESSUS DE CAPTURE → D’INTÉGRATION → D’→ SUIVI → D’ARCHIVAGE → AMÉLIORER
-    ↓        ↓        ↓         ↓         ↓         ↓          ↓       ↓        ↓
-    Design   Révision   Déployer   Collecter   Poignée   Connexion   Magasin de moniteurs   Optimiser
-    ↑                                                                              ↓
+    ↓        ↓        ↓         ↓         ↓         ↓          ↓       ↓        
+    Design   Révision   Déployer   Collecter   Poignée   Connexion   Magasin de moniteurs   Optimiser↑                                                                              
     ←←←←←←←←←←←←←←← Continuous Improvement Loop ←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←
+    
 
 ### Créer : conception et développement de formulaire {#create}
 
@@ -116,15 +116,15 @@ Définissez des autorisations granulaires pour la création, la modification et 
 Déployez des formulaires sur plusieurs canaux et points de contact pour atteindre les utilisateurs où qu’ils se trouvent.
 
 **Publication omnicanale**
-Publiez des formulaires dans [AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md), des pages web autonomes, des applications mobiles ou [incorporés dans des systèmes tiers](/help/forms/embed-adaptive-form-core-components-external-web-page.md). La publication mono-source assure la cohérence tout en s’adaptant aux différentes exigences des canaux.
+Publiez des formulaires dans [](/help/forms/embed-adaptive-form-aem-sites.md), des pages web autonomes, des applications mobiles ou [incorporés dans des systèmes tiers](/help/forms/embed-adaptive-form-core-components-external-web-page.md). La publication mono-source assure la cohérence tout en s’adaptant aux différentes exigences des canaux.
 
 **Localisation et Personalization**
-Diffuser des formulaires dans plusieurs langues à l’aide de [workflows de traduction AEM](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md) avec prise en charge des langues [de gauche à droite et de droite à gauche](/help/forms/right-left-languages.md). Intégrez-la à Adobe Target pour personnaliser les expériences de formulaire en fonction des segments d’utilisateurs, du comportement ou des données contextuelles.
+Diffuser des formulaires dans plusieurs langues à l’aide de [workflows de traduction ](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md) avec prise en charge des langues [de gauche à droite et de droite à gauche](/help/forms/right-left-languages.md). Intégrez-la à Adobe Target pour personnaliser les expériences de formulaire en fonction des segments d’utilisateurs, du comportement ou des données contextuelles.
 
 **Optimisation des performances**
 Tirez parti de Edge Delivery Services pour un chargement de formulaire ultra-rapide et des performances SEO optimales. Les réseaux de diffusion de contenu garantissent une accessibilité globale avec une latence minimale.
 
-**Portail Forms**
+**Portail**
 Créez des référentiels de formulaires centralisés dans lesquels les utilisateurs peuvent découvrir des formulaires, y accéder et les gérer. [Forms Portal](/help/forms/configure-forms-portal.md) offre des fonctionnalités de recherche, de catégorisation des formulaires, de gestion des brouillons et de suivi des envois dans une interface unifiée pour une expérience utilisateur améliorée.
 
 ### Capture : expérience utilisateur et collecte de données {#capture}
@@ -164,25 +164,25 @@ Des mécanismes de reprise intégrés et un traitement de secours garantissent q
 Connectez les formulaires aux systèmes d’entreprise et aux sources de données existants pour un flux d’informations transparent.
 
 **Connecteurs Préconfigurés**
-Intégration native aux solutions [Salesforce](/help/forms/configure-salesforce.md), [Microsoft Dynamics](/help/forms/configure-msdynamics.md), [SharePoint](/help/forms/connect-forms-to-sharepoint-document-library.md) et Adobe Experience Cloud. Les connecteurs préconfigurés réduisent le temps de développement tout en assurant une synchronisation fiable des données.
+Intégration native aux solutions [](/help/forms/configure-salesforce.md), [Microsoft Dynamics](/help/forms/configure-msdynamics.md), [SharePoint](/help/forms/connect-forms-to-sharepoint-document-library.md) et Adobe Experience Cloud. Les connecteurs préconfigurés réduisent le temps de développement tout en assurant une synchronisation fiable des données.
 
 **Intégration de l’API RESTful**
 Connectez-vous à un service accessible sur le web via des API RESTful via des [actions d’envoi](/help/forms/configure-submit-action-restpoint.md) ou [intégration de données](/help/forms/data-integration.md). Le modèle de données de formulaire abstrait la complexité de l’intégration, fournissant une interface cohérente quelle que soit l’architecture du système sous-jacent.
 
 **Échange De Données En Temps Réel**
-Activez le flux de données bidirectionnel entre les formulaires et les systèmes d’entreprise. Préremplissez des formulaires à partir d’enregistrements existants, validez les données actives et mettez à jour plusieurs systèmes simultanément lors de leur envoi grâce à une [&#x200B; intégration de données](/help/forms/data-integration.md) complète.
+Activez le flux de données bidirectionnel entre les formulaires et les systèmes d’entreprise. Préremplissez des formulaires à partir d’enregistrements existants, validez les données actives et mettez à jour plusieurs systèmes simultanément lors de leur envoi grâce à une [ intégration de données](/help/forms/data-integration.md) complète.
 
 ### Suivi : analyses et surveillance des performances {#track}
 
 comprendre les performances des formulaires et le comportement des utilisateurs grâce à des analyses et une surveillance complètes ;
 
 **Form Analytics**
-Suivez les taux d’achèvement, les schémas d’abandon et les interactions au niveau du champ grâce à l’intégration [d’Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md). Identifiez les points de friction, mesurez les entonnoirs de conversion et comprenez le comportement des utilisateurs sur différents segments.
+Suivez les taux d’achèvement, les schémas d’abandon et les interactions au niveau du champ grâce à l’intégration [d’](/help/forms/integrate-aem-forms-with-adobe-analytics.md). Identifiez les points de friction, mesurez les entonnoirs de conversion et comprenez le comportement des utilisateurs sur différents segments.
 
 **Surveillance des performances**
 Surveillez les temps de chargement des formulaires, les taux de réussite des envois et les performances du système. Les tableaux de bord en temps réel fournissent des informations sur les mesures techniques d’intégrité et d’expérience utilisateur.
 
-**Business Intelligence**
+****
 Générer des rapports sur l’utilisation des formulaires, les volumes d’envoi et l’efficacité des processus. Analytics aide à la planification des capacités, à l’optimisation de l’expérience utilisateur et aux améliorations des processus métier.
 
 **Rapports de transaction**

@@ -6,7 +6,7 @@ feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 3f8950c3-9022-4e9f-b3ed-723245201e45
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 66%
@@ -24,7 +24,7 @@ ht-degree: 66%
 
 Les actions Envoyer définissent ce qui se produit lorsqu’un utilisateur envoie un formulaire, comme le stockage des données, le déclenchement de workflows ou l’intégration à des systèmes tiers. Le type d’actions d’envoi que vous pouvez configurer dépend de la méthode de création utilisée pour créer Edge Delivery Services Forms.
 
-Vous pouvez créer Edge Delivery Services Forms à l’aide de l’éditeur [&#x200B; universel &#x200B;](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) ou à l’aide de la création [Forms basé sur les documents](/help/edge/docs/forms/overview.md) et configurer les formulaires avec différentes actions d’envoi en conséquence.
+Vous pouvez créer Edge Delivery Services Forms à l’aide de l’éditeur [ universel ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) ou à l’aide de la création [Forms basé sur les documents](/help/edge/docs/forms/overview.md) et configurer les formulaires avec différentes actions d’envoi en conséquence.
 
 ## Actions Envoyer pour des formulaires créés dans l’éditeur universel
 
@@ -43,19 +43,23 @@ Les actions Envoyer suivantes sont prises en charge par les [Formulaires adaptat
 * [Envoyer à Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
 * [Envoyer à une feuille de calcul](/help/forms/forms-submission-service.md)
 
-<!--You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
+<!--
+You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
 
 * [Connect Adaptive Form to Salesforce](/help/forms/aem-forms-salesforce-integration.md)
-* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)-->
+* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+-->
 
 Vous pouvez configurer l’action Envoyer pour les formulaires créés dans l’éditeur universel à l’aide de l’onglet **Envoi** de l’extension **Modifier les propriétés du formulaire**.
 
-<!--**How to Configure Submit Action for Forms authored in Universal Editor?**
+<!--
+**How to Configure Submit Action for Forms authored in Universal Editor?**
 You can configure the submit action for forms created in the Universal Editor using the **Submission** tab of the **Edit Form Properties** extension.
 
 ![Form properties icon](/help/forms/assets/ue-form-properties-icon.png)
 
-![Universal Editor Form Properties](/help/forms/assets/ue-form-properties.png)-->
+![Universal Editor Form Properties](/help/forms/assets/ue-form-properties.png)
+-->
 
 >[!NOTE]
 >
@@ -64,7 +68,7 @@ You can configure the submit action for forms created in the Universal Editor us
 
 ## Actions Envoyer pour le Forms basé sur les documents
 
-Le Forms basé sur les documents prend en charge l’envoi uniquement aux feuilles de calcul. Pour savoir comment configurer votre feuille de calcul pour recevoir les données envoyées, reportez-vous aux instructions de l’article [&#x200B; Configurer vos feuilles de calcul Google ou fichiers Microsoft Excel pour commencer à accepter les données &#x200B;](/help/edge/docs/forms/submit-forms.md).
+Le Forms basé sur les documents prend en charge l’envoi uniquement aux feuilles de calcul. Pour savoir comment configurer votre feuille de calcul pour recevoir les données envoyées, reportez-vous aux instructions de l’article [ Configurer vos feuilles de calcul Google ou fichiers Microsoft Excel pour commencer à accepter les données ](/help/edge/docs/forms/submit-forms.md).
 
 ## Voir également {#see-also}
 

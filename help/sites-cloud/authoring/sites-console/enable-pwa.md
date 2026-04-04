@@ -7,7 +7,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 index: false
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 61%
@@ -89,7 +89,7 @@ The developer also adds the following link to the `customfooterlibs.html` file o
 
 ### Ajustement de votre Dispatcher {#adjust-dispatcher}
 
-La fonctionnalité PWA génère et utilise des fichiers `/content/<sitename>/manifest.webmanifest`. Par défaut, [Dispatcher](/help/implementing/dispatcher/overview.md) n’expose pas ces fichiers. Pour exposer ces fichiers, le développeur ou la développeuse doit ajouter la configuration suivante à votre projet de site.
+La fonctionnalité PWA génère et utilise des fichiers `/content/<sitename>/manifest.webmanifest`. Par défaut, Dispatcher[ n’expose pas ces fichiers. ](/help/implementing/dispatcher/overview.md) Pour exposer ces fichiers, le développeur ou la développeuse doit ajouter la configuration suivante à votre projet de site.
 
 ```text
 File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filters.any >
@@ -106,7 +106,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 ## Activation de fonctionnalités PWA pour votre site {#enabling-pwa-for-your-site}
 
-Une fois [&#x200B; conditions préalables remplies](#prerequisites) il est facile pour un créateur ou une créatrice de contenu d’activer les fonctionnalités de PWA sur un site. Vous trouverez ci-dessous un aperçu basique de la procédure. Les différentes options sont présentées dans la section [Options détaillées](#detailed-options).
+Une fois [ conditions préalables remplies](#prerequisites) il est facile pour un créateur ou une créatrice de contenu d’activer les fonctionnalités de PWA sur un site. Vous trouverez ci-dessous un aperçu basique de la procédure. Les différentes options sont présentées dans la section [Options détaillées](#detailed-options).
 
 1. Connectez-vous à AEM.
 1. Dans le menu principal, sélectionnez **Navigation** > **Sites**.

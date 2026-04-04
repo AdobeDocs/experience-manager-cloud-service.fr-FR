@@ -4,7 +4,7 @@ description: Découvrez comment ajouter un référentiel externe dans Cloud Man
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 2ea076c42a6406548bf48cd246227fc8ddb3a080
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2444'
 ht-degree: 26%
@@ -28,15 +28,19 @@ La configuration d’un référentiel externe dans Cloud Manager comprend les é
 
 1. [Ajouter un référentiel externe](#add-external-repo) à un programme sélectionné
 1. [Liaison d’un référentiel externe validé à un pipeline](#validate-ext-repo)
-   <!-- 1. Provide an access token to the external repository.
-    1. Validate ownership of the private GitHub repository. -->
+   <!--
+     1. Provide an access token to the external repository.
+    1. Validate ownership of the private GitHub repository.
+    -->
 1. [Configurez un webhook](#configure-webhook) dans un référentiel externe.
 
 
 ## Ajout d’un référentiel externe {#add-ext-repo}
 
-<!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
-* Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
+<!--
+ THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
+* Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started.
+-->
 
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
@@ -59,7 +63,7 @@ La configuration d’un référentiel externe dans Cloud Manager comprend les é
    | --- | --- |
    | **Nom du référentiel** | Obligatoire. Nom expressif pour votre nouveau référentiel. |
    | **URL du référentiel** | Obligatoire. URL du référentiel.<br><br>Si vous utilisez un référentiel hébergé sur GitHub, le chemin d’accès doit se terminer par `.git`.<br>Par exemple, *`https://github.com/org-name/repo-name.git`* (le chemin d’accès de l’URL est fourni à titre d’illustration uniquement).<br><br>Si vous utilisez un référentiel externe, il doit utiliser le format de chemin d’accès d’URL suivant :<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> ou <br>`https://self-hosted-domain/org-name/repo-name.git`<br> et correspondre à votre fournisseur Git. |
-   | **Sélection du type de référentiel** | Obligatoire. Sélectionnez le type de référentiel que vous utilisez. Si le chemin d’URL du référentiel inclut le nom du fournisseur Git, tel que GitLab ou Bitbucket, le type de référentiel est déjà présélectionné pour vous.:<ul><li>**GitHub** (GitHub Enterprise et la version auto-hébergée de GitHub)</li><li>**GitLab** (`gitlab.com` et la version auto-hébergée de GitLab) </li><li>**Bitbucket** (uniquement `bitbucket.org` - version cloud) est pris en charge. La version auto-hébergée de Bitbucket a été abandonnée à partir du 15 février 2024.</li><li>**Opérations de développement Azure** (`dev.azure.com`) </ul> |
+   | **Sélection du type de référentiel** | Obligatoire. Sélectionnez le type de référentiel que vous utilisez. Si le chemin d’URL du référentiel inclut le nom du fournisseur Git, tel que GitLab ou Bitbucket, le type de référentiel est déjà présélectionné pour vous.:<ul><li>**GitHub** (GitHub Enterprise et la version auto-hébergée de GitHub)</li><li>**GitLab** (`gitlab.com` et la version auto-hébergée de GitLab) </li><li>**Bitbucket** (uniquement `bitbucket.org` - version cloud) est pris en charge. La version auto-hébergée de Bitbucket a été abandonnée à partir du 15 février 2024.</li><li>**Opérations de développement** (`dev.azure.com`) </ul> |
    | **Description** | Facultatif. Description détaillée du référentiel. |
 
 1. Sélectionnez **Enregistrer** pour ajouter le référentiel.
@@ -112,7 +116,7 @@ Après validation, le référentiel externe est prêt à l’emploi et peut êtr
 
 Voir aussi [Gérer les jetons d’accès](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
 
->[!TAB Opérations de développement Azure]
+>[!TAB Opérations de développement ]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
@@ -154,7 +158,7 @@ Voir aussi [Gérer les jetons d’accès](/help/implementing/cloud-manager/manag
 
 ## Configuration d’un webhook pour un référentiel externe {#configure-webhook}
 
-Cloud Manager vous permet de configurer des webhooks pour les référentiels Git externes que vous avez ajoutés. Voir [&#x200B; Ajouter un référentiel externe &#x200B;](#add-ext-repo). Ces webhooks permettent à Cloud Manager de recevoir des événements liés à différentes actions dans votre solution de fournisseur Git.
+Cloud Manager vous permet de configurer des webhooks pour les référentiels Git externes que vous avez ajoutés. Voir [ Ajouter un référentiel externe ](#add-ext-repo). Ces webhooks permettent à Cloud Manager de recevoir des événements liés à différentes actions dans votre solution de fournisseur Git.
 
 Par exemple, les webhooks permettent à Cloud Manager de déclencher des actions en fonction d’événements tels que :
 
@@ -230,7 +234,7 @@ Collez le secret dans un fichier texte brut. Le secret copié est requis pour le
 | --- |
 | Ces événements permettent à Cloud Manager de valider les demandes d’extraction, de répondre aux publications de code et d’interagir avec les commentaires pour la coordination du pipeline.<br>Assurez-vous que le webhook est configuré pour se déclencher sur les événements webhook requis suivants<ul><li>Demande d’extraction : créée<li>Demande d’extraction : mise à jour<li>Demandes d’extraction : fusionnées<li>Demande d’extraction : commentaire<li>Référentiel : Push</li></li></li></ul></ul></ul> |
 
->[!TAB Opérations de développement Azure]
+>[!TAB Opérations de développement ]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
@@ -294,7 +298,7 @@ Utilise le statut de validation pour le suivi de la progression de la validation
 
 ![Statut de validation de la demande d’extraction pour Bitbucket](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-bitbucket2.png)
 
->[!TAB Opérations de développement Azure]
+>[!TAB Opérations de développement ]
 
 Les opérations de développement Azure effectuent le suivi de la validation des demandes d’extraction par le biais de contrôles de statut. Lorsque Cloud Manager exécute la validation de la demande d’extraction, il ajoute des vérifications de statut qui apparaissent dans l’interface de demande d’extraction d’Azure DevOps.
 

@@ -12,7 +12,7 @@ thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
 role: Admin
 index: false
-source-git-commit: 856442039fcd25ec675a6258d182f7a35f590c3c
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 50%
@@ -26,9 +26,9 @@ Les composants principaux CIF Adobe Experience Manager (AEM) peuvent être utili
 
 Présentation vidéo détaillant les options d’intégration de plusieurs vues de magasin Adobe Commerce à Adobe Experience Manager Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/32820/?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
-Les fonctionnalités de gestion multi-site AEM de Live Copy et Language Copy sont utilisées avec Commerce Integration Framework pour gérer globalement les sites dans les régions et les paramètres régionaux.
+Les fonctionnalités de gestion multisite AEM de Live Copy et Copie linguistique sont utilisées avec Commerce Integration Framework pour gérer globalement les sites dans les régions et les paramètres régionaux.
 
 La configuration recommandée consiste à utiliser une relation 1:1 entre le site AEM et la vue du magasin Adobe Commerce.
 
@@ -64,5 +64,5 @@ Pour connecter un site AEM et les composants principaux AEM CIF à une vue de ma
 
 * [Sites web, magasins et vues Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=fr)
 * [Composants principaux AEM CIF – Configuration multi-magasin/site](https://github.com/adobe/aem-core-cif-components/#multi-store--site-configuration?lang=fr)
-* [Utilisation de Multi Site Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html?lang=fr)
-* [Réutilisation de contenu : Multi Site Manager et Live Copy](/help/sites-cloud/administering/msm/overview.md)
+* [Utilisation de Multi-Site Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html?lang=fr)
+* [Réutilisation de contenu : Multi-Site Manager et Live Copy](/help/sites-cloud/administering/msm/overview.md)

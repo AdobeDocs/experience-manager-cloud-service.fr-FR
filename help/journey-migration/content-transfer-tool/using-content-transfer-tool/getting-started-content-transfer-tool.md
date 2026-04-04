@@ -4,7 +4,7 @@ description: Découvrez comment commencer à utiliser l’outil de transfert de 
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1653'
 ht-degree: 61%
@@ -65,7 +65,7 @@ Comprendre les problèmes de connexion SSL/TLS peut parfois être difficile. Pou
 >id="aemcloud_ctt_demo"
 >title="Exécution de l’outil de transfert de contenu"
 >abstract="Découvrez comment utiliser l’outil de transfert de contenu pour effectuer une migration du contenu vers AEM as a Cloud Service (auteur/publication) à l’aide de l’outil de transfert de contenu."
->additional-url="https://video.tv.adobe.com/v/327069/?captions=fre_fr&quality=12&learn=on" text=" Voir Démonstration"
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&learn=on" text=" Voir Démonstration"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=fr#migration" text="Tutoriel – Utilisation de l’outil de transfert de contenu"
 
 La section suivante s’applique à la nouvelle version de l’outil de transfert de contenu. Consultez cette section pour effectuer une migration du contenu vers AEM as a Cloud Service à l’aide de l’outil de transfert de contenu :
@@ -182,7 +182,8 @@ Pour renseigner le jeu de migration que vous avez créé dans Cloud Acceleration
 
 1. Cliquez sur **Enregistrer** après avoir rempli tous les champs de l’écran **Créer un ensemble de migration**.
 
-<!-- 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
+<!--
+ 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt07.png)
 
@@ -194,7 +195,8 @@ Pour renseigner le jeu de migration que vous avez créé dans Cloud Acceleration
 
 1. Select a migration set and click **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the **Migration Set name** or the **Service URL**. 
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png) -->
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png)
+   -->
 
 ### Vérification de la taille de l’ensemble de migration {#migration-set-size}
 
@@ -224,11 +226,13 @@ Pour exécuter une vérification de taille, procédez comme suit :
 
 1. Si les résultats du processus **Vérifier la taille** indiquent qu’il n’y a pas suffisamment d’espace disque et/ou que l’ensemble de migration dépasse les limites du produit, le statut **AVERTISSEMENT** s’affiche.
 
-<!--   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
+<!--
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
    
    Below is an example of **Check Size** results with warnings.
  
-   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png) -->
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png)
+   -->
 
 
 ## Prochaines étapes {#whats-next}

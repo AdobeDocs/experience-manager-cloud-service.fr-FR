@@ -10,7 +10,7 @@ hidefromtoc: true
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: e8c37209-4d8e-4eaf-9e29-ffe32b841eb1
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1938'
 ht-degree: 2%
@@ -57,7 +57,7 @@ Créez des formulaires en utilisant l’approche de création qui correspond le 
 
 ### Forms des composants principaux {#core-components}
 
-| **Forms des composants principaux** |
+| Forms des composants principaux **** |
 |---|
 | Création de formulaires modernes et réactifs avec les dernières normes web. Créez des formulaires adaptatifs qui fonctionnent automatiquement sur plusieurs appareils et produisent des formulaires découplés pour une diffusion pilotée par API. |
 | **Fonctions :** Créateur de formulaires visuel par glisser-déposer avec des composants modernes, un responsive design automatique et des fonctionnalités d’accessibilité intégrées. |
@@ -67,7 +67,7 @@ Créez des formulaires en utilisant l’approche de création qui correspond le 
 
 ### Forms des composants de base {#foundation-components}
 
-| **Forms des composants de base** |
+| Forms des composants de base **** |
 |---|
 | Approche de création de formulaires établie pour les projets existants et les intégrations héritées. Composants éprouvés avec de nombreuses options de personnalisation. |
 | **Fonctionnement :** création traditionnelle de formulaires adaptatifs avec une bibliothèque de composants complète et des fonctionnalités de personnalisation étendues. |
@@ -127,11 +127,11 @@ Connectez les formulaires aux systèmes principaux et aux sources de données po
 | **Fonctionnement :** activer les appels d’API directs depuis les formulaires par le biais d’actions d’envoi ou de l’intégration de données pour une connectivité en temps réel aux services web. |
 | **Utilisation :** intégration d’API personnalisée, connectivité de service web, échange de données en temps réel, intégration de service tiers. |
 | 🌐 appels d’API directs 🌐 connectivité en temps réel 🌐 Intégration flexible 🌐 prise en charge de services personnalisés |
-| [Configuration des points d’entrée REST →](/help/forms/configure-submit-action-restpoint.md) \| [→ de configuration de l’intégration de données](/help/forms/data-integration.md) |
+| [Configuration des points d’entrée REST →](/help/forms/configure-submit-action-restpoint.md) \| [Configuration de l’intégration des données →](/help/forms/data-integration.md) |
 
 ### Connecteur Salesforce {#salesforce-connector}
 
-| **Connecteur Salesforce** |
+| **Connecteur** |
 |---|
 | Intégration native à Salesforce CRM pour la gestion des prospects, la synchronisation des données client et l’automatisation des processus de vente. |
 | **Fonctionnement :** connecteur préconfiguré pour Salesforce avec synchronisation des données de formulaire, création de prospects et gestion des enregistrements des clients. |
@@ -141,7 +141,7 @@ Connectez les formulaires aux systèmes principaux et aux sources de données po
 
 ### Connecteur Microsoft Dynamics {#dynamics-connector}
 
-| **Connecteur Microsoft Dynamics** |
+| **Connecteur** |
 |---|
 | Intégration d’entreprise avec Microsoft Dynamics pour une connectivité ERP et CRM avec prise en charge complète des processus métier. |
 | **Fonctions :** connecter Forms à Microsoft Dynamics pour la gestion des clients, l’intégration des processus métier et les flux de données d’entreprise. |
@@ -151,7 +151,7 @@ Connectez les formulaires aux systèmes principaux et aux sources de données po
 
 ### SharePoint Connector {#sharepoint-connector}
 
-| **Connecteur SharePoint** |
+| **Connecteur** |
 |---|
 | Intégration de Document Management à SharePoint pour le stockage de fichiers, la collaboration et l’automatisation des workflows de documents. |
 | **Fonctions :** stockez les envois de formulaires et les documents générés dans SharePoint avec des fonctionnalités de gestion de documents et de collaboration automatisées. |
@@ -339,7 +339,7 @@ Choisissez votre point de départ en fonction de vos besoins immédiats et de vo
 
 ### Démarrage rapide de la gestion {#management-start}
 
-**Pour la découverte de formulaires :** Commencer par le portail Forms [&#128279;](/help/forms/configure-forms-portal.md)
+**Pour la découverte de formulaires :** Commencer par le portail Forms [](/help/forms/configure-forms-portal.md)
 
 **Pour le contrôle d’accès :** commencez par [User Management](/help/forms/forms-groups-privileges-tasks.md)
 

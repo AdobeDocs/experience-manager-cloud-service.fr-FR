@@ -7,7 +7,7 @@ feature: Asset Management, Publishing,Collaboration, Asset Processing
 role: User, Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '4283'
 ht-degree: 82%
@@ -109,7 +109,8 @@ Pour prévisualiser une ressource, procédez comme suit.
 1. Sélectionnez **[!UICONTROL Enregistrer et fermer]**.
 1. Accédez à l’interface utilisateur d’Assets. Les propriétés des métadonnées modifiées, notamment le titre, la description et les balises, sont affichées sur la carte des ressources dans la vue Carte et dans les colonnes pertinentes dans la vue Liste.
 
-<!-- TBD: Uncomment after verification for Dec release.
+<!--
+ TBD: Uncomment after verification for Dec release.
 
 ## View asset usage and references {#usage-and-references}
 
@@ -342,7 +343,8 @@ Les icônes d’action rapide sont disponibles pour une ressource à la fois. Se
 * Appareils tactiles : appuyez longuement. Par exemple, sur un iPad, vous pouvez appuyer longuement sur une ressource pour afficher les actions rapides.
 * Appareils non tactiles : survolez avec le pointeur. Par exemple, sur un poste de travail, la barre d’actions rapides s’affiche si vous survolez la miniature de la ressource avec le pointeur de la souris.
 
-<!-- Hiding this topic via cqdoc-18707
+<!--
+ Hiding this topic via cqdoc-18707
 
 ## Edit images {#editing-images}
 

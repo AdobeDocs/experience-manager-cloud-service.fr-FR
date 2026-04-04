@@ -2,9 +2,9 @@
 title: Diffusion AOE de l’agent de modernisation de l’expérience
 description: Découvrez les Ingénieurs d’analyse de résultat (AOE) d’Adobe et comment ils peuvent vous aider à utiliser avec succès l’agent de modernisation d’expérience.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 75f73bb8-4d97-4c8f-b364-374a2a026b19
-source-git-commit: 8c3d14fd29b289bbd8538fd5d81b75bddbfa9082
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 0%
@@ -52,7 +52,7 @@ Vous devez contacter votre équipe de compte Adobe pour connaître vos exigences
 Une réunion de lancement est organisée, ainsi qu’une analyse du site source, un audit de contenu, l’alignement de la conception, la révision de la bibliothèque de composants et la sélection de l’outil de création.
 
 * **Vous** fournissez toutes les ressources et instructions nécessaires.
-* **Adobe** crée un plan de migration détaillé avec chronologie et rôles.
+* **** crée un plan de migration détaillé avec chronologie et rôles.
 
 ### &#x200B;3. Exécution {#execution}
 

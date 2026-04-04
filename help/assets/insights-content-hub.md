@@ -4,7 +4,7 @@ description: Découvrez comment afficher les statistiques sur les ressources dan
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 10%
@@ -19,7 +19,7 @@ ht-degree: 10%
 
 ## Conditions préalables {#prerequisites}
 
-[Les utilisateurs de Content Hub](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
+[Les utilisateurs de ](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
 
 ## Affichage des statistiques sur les ressources chargées{#view-statistics-for-uploaded-assets}
 
@@ -29,11 +29,13 @@ Vous pouvez afficher les statistiques des ressources et des collections chargée
 
 <!-- You can track the upload history of your assets over the past 30 days or gain a more comprehensive view with data spanning the last 12 months. This feature enables you to evaluate the upload count of assets.  -->
 
-<!-- Go to the **[!UICONTROL [!DNL Insights]]** tab.
+<!--
+ Go to the **[!UICONTROL [!DNL Insights]]** tab.
 
 2. Select the desired time frame to view the statistics; you can opt for either last 30 days or last 12 months.
 
-Data for the selected time frame is displayed, including the upload count for the specified duration. -->
+Data for the selected time frame is displayed, including the upload count for the specified duration.
+-->
 
 ## Afficher l’analyse statistique détaillée{#view-detailed-statistical-analysis}
 
@@ -52,7 +54,7 @@ Vous pouvez également afficher les éléments suivants :
 * **[!UICONTROL Assets par canaux]** : nombre de ressources et pourcentage correspondant en fonction des canaux utilisés.
 * **[!UICONTROL Assets par régions]** : nombre de ressources et pourcentage correspondant en fonction des régions d’utilisation des ressources.
 
-## Questions fréquemment posées {#faqs-assets-insights-content-hub}
+## Questions fréquentes {#faqs-assets-insights-content-hub}
 
 ### De quoi avons-nous besoin Assets Insights dans AEM Assets Content Hub ?
 

@@ -5,7 +5,7 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 29ee324c-cd4c-403b-bb3d-b1eda8e8ad88
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '921'
 ht-degree: 9%
@@ -13,7 +13,7 @@ ht-degree: 9%
 ---
 
 
-# Configuration de Microsoft® Dynamics 365 for AEM Forms
+# Configuration de ® Dynamics 365 for AEM Forms
 
 L’intégration de données Adobe Experience Manager Forms fournit une configuration de service cloud pour intégrer des formulaires au serveur Microsoft Dynamics. Il permet de créer un modèle de données de formulaire (FDM) basé sur les entités, les attributs et les services définis dans le service Microsoft Dynamics. Le modèle de données de formulaire (FDM) peut être utilisé pour créer des Forms adaptatives qui interagissent avec un serveur Microsoft Dynamics pour activer les processus métier. Par exemple :
 
@@ -35,7 +35,8 @@ AEM as a Cloud Service propose différentes actions d’envoi prêtes à l’emp
 
 >[!NOTE]
 >
->Microsoft&reg; Dynamics 365 cloud services and Form Data Model (FDM) are available out of the box only if you set up an [!DNL Experience Manager Forms] as a [!DNL Cloud Service] project based on [AEM Archetype 30](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-30) or later.-->
+>Microsoft&reg; Dynamics 365 cloud services and Form Data Model (FDM) are available out of the box only if you set up an [!DNL Experience Manager Forms] as a [!DNL Cloud Service] project based on [AEM Archetype 30](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-30) or later.
+-->
 
 ## Conditions préalables
 
@@ -72,7 +73,7 @@ Avant d’intégrer [!DNL Microsoft® Dynamics 365] à AEM Forms as a Cloud Serv
 
 ## Connexion de Forms à Microsoft® Dynamics 365
 
-Une fois que vous avez configuré les conditions préalables ci-dessus, vous pouvez poursuivre l’intégration de Forms adaptatif à Microsoft® Dynamics 365. Pour envoyer des données à Microsoft® Dynamics 365 lors de l’envoi du formulaire, procédez comme suit :
+Une fois que vous avez configuré les conditions préalables ci-dessus, vous pouvez poursuivre l’intégration de Forms adaptatif à Microsoft® Dynamics 365. Pour envoyer des données à ® Dynamics 365 lors de l’envoi du formulaire, procédez comme suit :
 
 [&#x200B;1. Configuration du service cloud pour Microsoft Dynamics](#1-configure-cloud-service-configuration-for-microsoft-dynamics)
 
@@ -105,7 +106,7 @@ Pour configurer la configuration du service cloud [!DNL Microsoft® Dynamics 365
 
    Accédez à votre instance Dynamics dans le **Centre d’administration Power Platform** et accédez à [Ressources de développement](https://docs.microsoft.com/fr-fr/powerapps/developer/data-platform/view-download-developer-resources) pour afficher la valeur de la racine du **service**. Le point d’entrée **API Web** représente la valeur **racine du service** de l’instance Dynamics que vous souhaitez intégrer au Forms adaptatif. L’URL **Racine du service** est au format suivant : `https://<tenant-name>.dynamics.com/api/data/v9.1/`
 
-   ![&#x200B; Champ racine du service &#x200B;](/help/forms/assets/dynamics-service-root.png)
+   ![ Champ racine du service ](/help/forms/assets/dynamics-service-root.png)
 
 1. Sélectionnez le **[!UICONTROL Type d’authentification]** comme **OAuth2.0**.
 1. Spécifiez les valeurs **ID client** (appelé ID d’application) et **Secret client** pour l’application connectée.
@@ -116,7 +117,7 @@ Vous pouvez récupérer l’**ID client** et le **Secret client** à partir de l
 1. Spécifiez les éléments suivants dans les champs **[!UICONTROL URL OAuth]**, **[!UICONTROL URL du jeton d’actualisation]** et **[!UICONTROL URL du jeton d’accès]**.
 Vous pouvez récupérer les **[!UICONTROL URL OAuth]**, **[!UICONTROL URL du jeton d’actualisation]** et **[!UICONTROL URL du jeton d’accès]** dans la section **Points d’entrée** de votre application Azure Active Directory.
 
-   ![Points D’Entrée De L’Application Azure](/help/forms/assets/dynamics-azure-app-endpoints.png)
+   ![Points D’Entrée De L’Application ](/help/forms/assets/dynamics-azure-app-endpoints.png)
 
 1. Spécifiez `openid` dans le champ **[!UICONTROL Champ d’application de l’autorisation]** pour la procédure d’autorisation sur [!DNL Microsoft® Dynamics 365].
 1. Spécifiez l’URL de l’instance dynamique dans le champ **[!UICONTROL Ressource]** pour configurer des [!DNL Microsoft® Dynamics 365] avec un modèle de données de formulaire (FDM).
@@ -133,7 +134,7 @@ Vous pouvez copier l’**URL de l’environnement** à partir du **Centre d’ad
 
 Vous pouvez utiliser l’outil Créer le modèle de données de formulaire (FDM) à l’aide de la configuration cloud [!DNL Microsoft® Dynamics 365] créée. Pour créer un modèle de données de formulaire, procédez comme suit :
 
-1. Accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Intégrations de données]**.
+1. Accédez à **** > **[!UICONTROL Forms]** > **[!UICONTROL Intégrations de données]**.
    ![Création d’un modèle de données de formulaire](/help/forms/assets/dynamics-create-fdm.png)
 
 1. Cliquez sur **[!UICONTROL Créer]** et sélectionnez **[!UICONTROL Modèle de données de formulaire]**.

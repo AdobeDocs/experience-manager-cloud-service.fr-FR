@@ -6,8 +6,8 @@ index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 feature: Headless
 role: Admin, User, Developer
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
-workflow-type: ht
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+workflow-type: tm+mt
 source-wordcount: '1069'
 ht-degree: 100%
 
@@ -60,11 +60,11 @@ Ouvrez l’Explorateur GraphQL dans un nouvel onglet. Vous pouvez y créer et va
    }
    ```
 
-1. Remplacez le contenu existant dans l’éditeur de requêtes en collant le code copié.
+1. Remplacez le contenu existant dans le requêteur en collant le code copié.
 
-1. Cliquez ensuite sur le bouton **Lecture** en haut à gauche de l’éditeur de requêtes pour exécuter la requête.
+1. Cliquez ensuite sur le bouton **Lecture** en haut à gauche du requêteur pour exécuter la requête.
 
-1. Les résultats s’affichent dans le panneau droit, en regard de l’éditeur de requêtes. Si la requête est incorrecte, une erreur s’affiche dans le panneau droit.
+1. Les résultats s’affichent dans le panneau droit, en regard du requêteur. Si la requête est incorrecte, une erreur s’affiche dans le panneau droit.
 
    ![Requête de liste](assets/do-not-localize/list-query-1-3-4-5.png)
 
@@ -99,11 +99,11 @@ L’exécution d’une requête byPath vous permet de récupérer le contenu d�
    }
    ```
 
-1. Remplacez le contenu existant dans l’éditeur de requêtes en collant le code copié.
+1. Remplacez le contenu existant dans le requêteur en collant le code copié.
 
-1. Cliquez ensuite sur le bouton **Lecture** en haut à gauche de l’éditeur de requêtes pour exécuter la requête.
+1. Cliquez ensuite sur le bouton **Lecture** en haut à gauche du requêteur pour exécuter la requête.
 
-1. Les résultats s’affichent dans le panneau droit, en regard de l’éditeur de requêtes. Si la requête est incorrecte, une erreur s’affiche dans le panneau droit.
+1. Les résultats s’affichent dans le panneau droit, en regard du requêteur. Si la requête est incorrecte, une erreur s’affiche dans le panneau droit.
 
    ![Résultats de la requête byPath.](assets/do-not-localize/bypath-query-2-3-4.png)
 
@@ -115,7 +115,7 @@ Maintenant que vous avez exécuté les deux principaux types de requêtes, vous 
 
 1. Pour exécuter des requêtes sur vos propres fragments de contenu, remplacez le point d’entrée du dossier **Ressources de démonstration AEM** par le dossier **Votre projet**.
 
-1. Supprimez tout le contenu existant dans l’éditeur de requêtes. Saisissez ensuite le crochet ouvert `{` et appuyez sur Ctrl + Espace ou Option + Espace pour obtenir la liste de saisie automatique des modèles définis dans votre point d’entrée. Sélectionnez le modèle que vous avez créé et qui se termine par `List` dans les options. Si vous avez suivi les exemples des modules précédents, vous devriez trouver `adventureList` dans la liste de saisie automatique.
+1. Supprimez tout le contenu existant dans le requêteur. Saisissez ensuite le crochet ouvert `{` et appuyez sur Ctrl + Espace ou Option + Espace pour obtenir la liste de saisie automatique des modèles définis dans votre point d’entrée. Sélectionnez le modèle que vous avez créé et qui se termine par `List` dans les options. Si vous avez suivi les exemples des modules précédents, vous devriez trouver `adventureList` dans la liste de saisie automatique.
 
    ![Lancement d’une requête personnalisée.](assets/do-not-localize/custom-query-1.png)
 
@@ -125,7 +125,7 @@ Maintenant que vous avez exécuté les deux principaux types de requêtes, vous 
 
 1. Une fois l’opération terminée, cliquez sur le bouton **Lecture** en haut à gauche de l’éditeur pour exécuter la requête. L’éditeur complète automatiquement les `items`, qui sont brièvement surlignées en jaune, et la requête s’exécute.
 
-1. Les résultats s’affichent dans le panneau droit, en regard de l’éditeur de requêtes.
+1. Les résultats s’affichent dans le panneau droit, en regard du requêteur.
 
    ![Exécution d’une requête personnalisée.](assets/do-not-localize/custom-query-2.png)
 
@@ -161,7 +161,7 @@ Vous allez créer une requête persistante qui inclut les données que vous souh
    }
    ```
 
-1. Remplacez le contenu existant dans l’éditeur de requêtes en collant le code copié.
+1. Remplacez le contenu existant dans le requêteur en collant le code copié.
 
    >[!NOTE]
    >
@@ -169,13 +169,13 @@ Vous allez créer une requête persistante qui inclut les données que vous souh
    >
    >Utilisez la fonction de saisie automatique GraphQL (Ctrl+Espace ou Option+Espace) comme décrit précédemment pour identifier les propriétés disponibles.
 
-1. Cliquez ensuite sur le bouton **Lecture** en haut à gauche de l’éditeur de requêtes pour exécuter la requête.
+1. Cliquez ensuite sur le bouton **Lecture** en haut à gauche du requêteur pour exécuter la requête.
 
-1. Les résultats s’affichent dans le panneau droit, en regard de l’éditeur de requêtes. Si la requête est incorrecte, une erreur s’affiche dans le panneau droit.
+1. Les résultats s’affichent dans le panneau droit, en regard du requêteur. Si la requête est incorrecte, une erreur s’affiche dans le panneau droit.
 
    ![Créer une requête](assets/do-not-localize/own-query.png)
 
-1. Une fois la requête créée, cliquez sur le bouton **Enregistrer sous** dans la partie supérieure de l’éditeur de requêtes pour la conserver.
+1. Une fois la requête créée, cliquez sur le bouton **Enregistrer sous** dans la partie supérieure du requêteur pour la conserver.
 
 1. Dans le pop-up **Nom de la requête**, attribuez le nom `adventure-list` à votre requête.
 
@@ -185,7 +185,7 @@ Vous allez créer une requête persistante qui inclut les données que vous souh
 
 1. La persistance de la requête est confirmée par un message de bannière en bas de l’écran. La requête apparaît désormais également dans le panneau de gauche des requêtes persistantes dans la fenêtre.
 
-1. Pour que la requête persistante soit disponible publiquement, vous devez la publier, tout comme pour vos fragments de contenu. Cliquez sur le bouton **Publier** en haut à droite de l’éditeur de requêtes pour publier la requête.
+1. Pour que la requête persistante soit disponible publiquement, vous devez la publier, tout comme pour vos fragments de contenu. Cliquez sur le bouton **Publier** en haut à droite du requêteur pour publier la requête.
 
 1. La publication est confirmée par une notification de bannière.
 

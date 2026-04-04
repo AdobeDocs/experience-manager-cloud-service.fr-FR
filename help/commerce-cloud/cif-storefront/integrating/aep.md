@@ -12,7 +12,7 @@ kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
 index: false
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1866'
 ht-degree: 73%
@@ -22,7 +22,7 @@ ht-degree: 73%
 
 # Composants principaux AEM-CIF et intégration à Adobe Experience Platform {#aem-cif-aep-integration}
 
-Les composants principaux [Commerce Integration Framework (CIF)](https://github.com/adobe/aem-core-cif-components) fournissent une intégration transparente à [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=fr), ce qui permet de transférer les événements de storefront et leurs données à partir d’interactions côté client, telles que l’__ajout au panier__.
+Les composants principaux [Commerce Integration Framework (CIF)](https://github.com/adobe/aem-core-cif-components) fournissent une intégration transparente à [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html), ce qui permet de transférer les événements de storefront et leurs données à partir d’interactions côté client, telles que l’__ajout au panier__.
 
 Le projet de [Composants principaux AEM CIF](https://github.com/adobe/aem-core-cif-components) fournit une bibliothèque JavaScript appelée [Connecteur Adobe Experience Platform pour Adobe Commerce](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) afin de collecter des données d’événement à partir de votre storefront Commerce. Ces données d’événement sont envoyées à Experience Platform, où elles sont utilisées dans d’autres produits Adobe Experience Cloud, tels qu’Adobe Analytics et Adobe Target, pour créer un profil à 360 degrés couvrant un parcours client. En connectant les données de Commerce à d’autres produits dans Adobe Experience Cloud, vous pouvez exécuter des tâches comme analyser le comportement des utilisateurs et utilisatrices sur votre site, effectuer un AB Testing et créer des campagnes personnalisées.
 
@@ -50,7 +50,7 @@ Suivez les étapes [Configuration locale](/help/commerce-cloud/cif-storefront/de
 
 ### Configuration du projet
 
-Suivez les étapes de l’[Archétype de projet AEM](/help/commerce-cloud/cif-storefront/develop.md#project) pour créer un tout nouveau projet AEM Commerce (CIF).
+Suivez les étapes de l’[Archétype de projet ](/help/commerce-cloud/cif-storefront/develop.md#project) pour créer un tout nouveau projet AEM Commerce (CIF).
 
 >[!TIP]
 >
@@ -71,7 +71,7 @@ Le site Commerce `My Demo StoreFront` localement déployé avec le code et le co
 
 ### Installer des dépendances du connecteur CIF-AEP et de Peregrine
 
-Pour collecter et envoyer les données d’événement à partir des pages de catégorie et de produit de ce site AEM Commerce, installez les packages de `npm` clés dans le module `ui.frontend` du projet AEM Commerce.
+Pour collecter et envoyer les données d’événement à partir des pages de catégorie et de produit de ce site AEM Commerce, installez les packages de `npm` de clés dans le module `ui.frontend` du projet AEM Commerce.
 
 Accédez au module `ui.frontend` et installez les packages requis en exécutant les commandes suivantes à partir de la ligne de commande.
 
@@ -335,7 +335,7 @@ Pour initialiser les composants principaux de CIF et Peregrine basés sur React,
 
 ### Créez et déployez le projet AEM mis à jour. {#build-and-deploy}
 
-Pour vous assurer que les modifications de configuration, de code et d’installation du package ci-dessus sont correctes, recréez et déployez le projet AEM Commerce mis à jour à l’aide de la commande Maven suivante : `$ mvn clean install -PautoInstallSinglePackage`.
+Pour vous assurer que les modifications de configuration, de code et d’installation du package ci-dessus sont correctes, recréez et déployez le projet AEM Commerce mis à jour à l’aide de la commande Maven `$ mvn clean install -PautoInstallSinglePackage`.
 
 ## Configurer Experience Platform {#aep-setup}
 
@@ -458,7 +458,7 @@ Pour déclencher l’événement, vous pouvez utiliser le service de création o
 
 Le [connecteur Experience Platform CIF](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) repose sur la [connexion de données pour Adobe Commerce](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html), qui fait partie du projet [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/).
 
-Le projet PWA Studio vous permet de créer des storefronts de Progressive Web Application (PWA) alimentés par Adobe Commerce ou Magento Open Source. Le projet contient également une bibliothèque de composants appelée [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) pour ajouter une logique aux composants visuels. La bibliothèque [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) fournit également les crochets React personnalisés utilisés par le connecteur CIF Experience Platform [&#128279;](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) pour une intégration transparente à Experience Platform.
+Le projet PWA Studio vous permet de créer des storefronts de Progressive Web Application (PWA) alimentés par Adobe Commerce ou Magento Open Source. Le projet contient également une bibliothèque de composants appelée [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) pour ajouter une logique aux composants visuels. La bibliothèque [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) fournit également les crochets React personnalisés utilisés par le connecteur CIF Experience Platform [](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) pour une intégration transparente à Experience Platform.
 
 ## Événements pris en charge {#supported-events}
 
@@ -472,7 +472,7 @@ __Événements Experience XDM :__
 1. Requête de recherche envoyée (AEM)
 1. Réponse de recherche reçue (AEM)
 
-Quand les [composants Peregrine &#x200B;](https://developer.adobe.com/commerce/pwa-studio/guides/packages/peregrine/) sont réutilisés dans le projet AEM Commerce :
+Quand les [composants Peregrine ](https://developer.adobe.com/commerce/pwa-studio/guides/packages/peregrine/) sont réutilisés dans le projet AEM Commerce :
 
 __Événements Experience XDM :__
 
@@ -494,6 +494,6 @@ __Événements XDM de profil :__
 Pour plus d’informations, consultez les ressources suivantes :
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
-- [[!DNL Data Connection] présentation](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html?lang=fr)
-- [[!DNL Data Connection] Événements](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html?lang=fr)
+- [[!DNL Data Connection] présentation](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
+- [[!DNL Data Connection] Événements](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html)
 - [Vue d’ensemble d’Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=fr)

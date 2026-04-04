@@ -4,7 +4,7 @@ description: Utilisez des fonctions pour personnaliser le sélecteur de ressourc
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 25%
@@ -236,10 +236,12 @@ La syntaxe de la désactivation de la sélection est la suivante :
 
 Le sélecteur de ressources vous permet de contrôler l’utilisation d’une ressource arrivée à expiration. Vous pouvez personnaliser la ressource arrivée à expiration avec un badge **Expiration imminente** qui peut vous aider à connaître à l’avance les ressources qui arriveront à expiration dans les 30 jours suivant la date actuelle. De plus, cela peut être personnalisé en fonction des besoins. Vous pouvez également autoriser la sélection d’une ressource arrivée à expiration sur la zone de travail ou inversement. La personnalisation d’une ressource arrivée à expiration peut être effectuée à l’aide de certains fragments de code de différentes manières :
 
-<!--{
+<!--
+{
     getExpiryStatus: function, // to control Expired/Expiring soon badges of the asset
     allowSelectionAndDrag: boolean, // set true to allow the selection of expired assets on canvas, set false, otherwise.
-}-->
+}
+-->
 
 ```
 expiryOptions: {
@@ -260,7 +262,8 @@ expiryOptions:{
 <!--
 Additionally, To do this, navigate to **[!UICONTROL Disable default expiry behavior]** under the [!UICONTROL Controls] tab and set the boolean value to `true` or `false` as per the requirement. If `true` is selected, you can see the select box over the expired asset, otherwise it remains unselected. You can hover to the info icon of an asset to know the details of an expired asset. 
 
-![Disable default expiry behavior](assets/disable-default-expiry-behavior.png)-->
+![Disable default expiry behavior](assets/disable-default-expiry-behavior.png)
+-->
 
 ### Définition de la durée d’une ressource arrivée à expiration {#set-duration-of-expired-asset}
 

@@ -4,7 +4,7 @@ description: Extension des fragments d’expérience pour Adobe Experience Manag
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 feature: Developing, Experience Fragments
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1657'
 ht-degree: 97%
@@ -130,7 +130,8 @@ De tels groupes sont notamment utilisés pour incorporer du contenu dans des poi
 
 ### Réécriture de liens par défaut {#default-link-rewriting}
 
-<!--Using the [Export to Target](/help/sites-administering/experience-fragments-target.md) feature, you can:
+<!--
+Using the [Export to Target](/help/sites-administering/experience-fragments-target.md) feature, you can:
 -->
 
 La fonction Exporter vers Target vous permet :

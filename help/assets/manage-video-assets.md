@@ -6,7 +6,7 @@ feature: Asset Management, Publishing, Collaboration, Video
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '4995'
 ht-degree: 93%
@@ -37,14 +37,16 @@ Pour charger une ressource vidéo, procédez comme suit :
 1. Cliquez sur **[!UICONTROL Créer]** dans la barre d’outils et choisissez **[!UICONTROL Fichiers]**. <br>Vous pouvez également faire glisser un fichier sur l’interface utilisateur.
 En savoir plus sur le [chargement de ressources](manage-digital-assets.md#uploading-assets) dans [!DNL Experience Manager Assets].
 
-<!-- 1. To preview a video in the card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
-1. To preview the video in the asset details page, select **[!UICONTROL Edit]** on the card. The video plays in the native video player of the browser. You can play, pause, control the volume, and zoom the video to full screen. -->
+<!--
+ 1. To preview a video in the card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
+1. To preview the video in the asset details page, select **[!UICONTROL Edit]** on the card. The video plays in the native video player of the browser. You can play, pause, control the volume, and zoom the video to full screen.
+-->
 
 ### Prévisualisation de ressources vidéo
 
 Vous pouvez prévisualiser les vidéos dans les rendus pris en charge dans l’interface utilisateur d’[!DNL Assets]. Pour prévisualiser une ressource vidéo, procédez comme suit :
 
-1. Chargez une ressource vidéo d’un format pris en charge dans [!DNL Experience Manager Assets]. En savoir plus sur les [&#x200B; formats vidéo pris en charge &#x200B;](file-format-support.md#video-formats). <br>Une fois le chargement effectué, la ressource vidéo est traitée et un rendu d’aperçu est généré.
+1. Chargez une ressource vidéo d’un format pris en charge dans [!DNL Experience Manager Assets]. En savoir plus sur les [ formats vidéo pris en charge ](file-format-support.md#video-formats). <br>Une fois le chargement effectué, la ressource vidéo est traitée et un rendu d’aperçu est généré.
 1. Cliquez sur la ressource, puis sélectionnez ![l’option Détails](assets/do-not-localize/details_icon.svg) **[!UICONTROL Détails]** dans la barre d’outils supérieure. La ressource vidéo s’ouvre dans la visionneuse de vidéos.
 1. Cliquez sur l’icône ![option de lecture](assets/do-not-localize/play.png) sur la miniature de la vidéo. <br>Vous pouvez lire, mettre en pause, contrôler le volume et zoomer sur la vidéo en plein écran.
 
@@ -144,7 +146,7 @@ Google modifie régulièrement son interface utilisateur. De ce fait, les étape
 
    `https://<servername.domain>:<port_number>`
 
-   Par exemple, `https://1a2b3c.mycompany.com:4321`
+   Par exemple, `https://1a2b3c.mycompany.com:4321`.
 
    >[!NOTE]
    >
@@ -155,7 +157,7 @@ Google modifie régulièrement son interface utilisateur. De ce fait, les étape
 
    `https://<servername.domain>:<port_number>/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   Par exemple, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
+   Par exemple, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`.
 
    >[!NOTE]
    >
@@ -206,7 +208,8 @@ Ou, si vous prévoyez d’utiliser les balises par défaut dans Experience Manag
 >
 >Une fois le Cloud Service configuré, aucune configuration supplémentaire n’est nécessaire pour activer l’agent de réplication de publication YouTube à ce stade. La raison en est qu’elle a été activée lors de l’enregistrement de la configuration du Cloud Service.
 
-<!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
+<!--
+ ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
 After you enable the YouTube Publish replication agent, if you want to test the connection to the Google Cloud account, select **[!UICONTROL Test Connection]**. A browser tab displays the connection results. If you have added YouTube Channels, then a listing of those is displayed as part of the test.
 
@@ -214,7 +217,8 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. On the Agents of Author page, select **[!UICONTROL YouTube Publish (youtube)]**.
 1. On the toolbar, to the right of Settings, select **[!UICONTROL Edit]**.
 1. Select the **[!UICONTROL Enabled]** checkbox to turn on the replication agent.
-1. Select **[!UICONTROL OK]**. -->
+1. Select **[!UICONTROL OK]**.
+-->
 
 ### Configuration de YouTube dans Experience Manager {#setting-up-youtube-in-aem}
 
@@ -546,7 +550,8 @@ Il est possible de surveiller la progression, notamment l’échec du codage ou 
 
 1. Vous recevez des notifications par e-mail sur les tâches de processus annulées ou qui ont échoué. Ces notifications peuvent être configurées par un administrateur. Voir [Configuration des notifications par e-mail](#configuring-e-mail-notifications).
 
-<!-- EMAIL NOT AVAILABLE IN SKYLINE
+<!--
+ EMAIL NOT AVAILABLE IN SKYLINE
 
 #### Configuring e-mail notifications {#configuring-e-mail-notifications}
 

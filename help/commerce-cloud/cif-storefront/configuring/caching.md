@@ -5,7 +5,7 @@ exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '811'
 ht-degree: 96%
@@ -60,7 +60,7 @@ La mise en cache de pages ou de fragments AEM dans le [Dispatcher AEM](https://e
 
 Outre le CIF du contenu géré par AEM, une page peut généralement afficher des données commerciales récupérées dynamiquement à partir d’Adobe Commerce via GraphQL. Bien que la structure de la page elle-même puisse ne jamais changer, le contenu commercial peut changer. C’est notamment le cas si des données de produit, telles que le nom et le prix, changent dans Adobe Commerce.
 
-Afin de garantir que les pages CIF sont mises en cache pendant une durée limitée dans le Dispatcher AEM, Adobe recommande d’utiliser l’[Invalidation temporelle du cache](https://experienceleague.adobe.com/fr/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-time-based-cache-invalidation-enablettl) (mise en cache basée sur TTL) lors de la mise en cache de pages CIF dans le Dispatcher AEM. Cette fonctionnalité peut être configurée en AEM avec le package [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) supplémentaire.
+Afin de garantir que les pages CIF sont mises en cache pendant une durée limitée dans le Dispatcher AEM, Adobe recommande d’utiliser l’[Invalidation temporelle du cache](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-time-based-cache-invalidation-enablettl) (mise en cache basée sur TTL) lors de la mise en cache de pages CIF dans le Dispatcher AEM. Cette fonctionnalité peut être configurée en AEM avec le package [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) supplémentaire.
 
 Avec la mise en cache TTL, un développeur définit généralement une ou plusieurs durées de mise en cache pour les pages AEM sélectionnées. Cette durée garantit que les pages CIF ne sont mises en cache dans le Dispatcher AEM que pendant la durée configurée et que le contenu est fréquemment mis à jour.
 

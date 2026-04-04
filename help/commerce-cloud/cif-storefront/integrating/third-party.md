@@ -6,7 +6,7 @@ exl-id: 3ebdb8eb-65ba-46be-aca3-6c06c8d1600c
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 98%
@@ -52,7 +52,7 @@ Il est recommandé de communiquer directement avec la solution tierce afin d’�
 
 Adobe recommande d’utiliser [Adobe Developer Runtime](https://developer.adobe.com/runtime/) pour la couche d’intégration. Il est inclus dans le module complémentaire CIF pour les solutions tierces. Comme il fonctionne avec une approche de microservice, il est bien adapté pour intégrer facilement plusieurs solutions.
 
-La [mise en œuvre de référence](https://github.com/adobe/commerce-cif-graphql-integration-reference) est un excellent point de départ pour créer l’intégration à votre solution commerciale. Bien qu’il prenne en charge GraphQL, il peut également être intégré à tout autre type d’API comme REST.
+La [mise en œuvre de référence](https://github.com/adobe/commerce-cif-graphql-integration-reference) est un excellent point de départ pour créer l’intégration à votre solution de commerce. Bien qu’il prenne en charge GraphQL, il peut également être intégré à tout autre type d’API comme REST.
 
 Cette couche d’intégration n’est pas requise si une couche tierce est disponible (par exemple, Mulesoft) ou si l’intégration est créée sur la solution tierce.
 

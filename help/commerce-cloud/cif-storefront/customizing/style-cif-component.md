@@ -13,7 +13,7 @@ thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '2381'
 ht-degree: 85%
@@ -72,7 +72,7 @@ Vous allez cloner le projet [Venia](https://github.com/adobe/aem-cif-guides-veni
 
 Le code CSS et JavaScript responsable du rendu du thème/des styles du storefront est géré dans AEM par une [bibliothèque cliente](/help/implementing/developing/introduction/clientlibs.md) (ou clientlib). Les bibliothèques clientes offrent un mécanisme permettant d’organiser le code CSS et Javascript dans le code d’un projet, puis de le diffuser sur la page.
 
-Des styles spécifiques à la marque peuvent être appliqués aux composants principaux AEM CIF en ajoutant et en remplaçant le code CSS géré par ces bibliothèques clientes. Il est essentiel de comprendre comment les bibliothèques clientes sont structurées et incluses dans la page.
+Des styles spécifiques à la marque peuvent être appliqués aux composants principaux AEM CIF en ajoutant et en remplaçant le code CSS géré par ces bibliothèques clientes. Il est essentiel de comprendre comment les bibliothèques clientes sont structurées et incluses dans la page.
 
 Le module [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=fr) est un projet [webpack](https://webpack.js.org/) dédié à la gestion de toutes les ressources front-end d’un projet. Ce webpack permet aux développeurs et développeuses front-end d’utiliser un nombre quelconque de langages et de technologies tels que [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) et bien plus encore.
 
@@ -228,7 +228,7 @@ Vérifiez ensuite l’inclusion des bibliothèques clientes sur la page.
 
 1. Sélectionnez le menu **Informations sur la page**, puis cliquez sur **Afficher comme publié(e)** :
 
-   ![Afficher comme publié(e) &#x200B;](../assets/style-cif-component/view-as-published.png)
+   ![Afficher comme publié(e) ](../assets/style-cif-component/view-as-published.png)
 
    La page s’ouvre sans aucun code JavaScript AEM de création chargé, lequel apparaîtrait sur le site publié. Notez que le paramètre de requête `?wcmmode=disabled` est ajouté à l’URL. Lors du développement du code CSS et JavaScript, il est recommandé d’utiliser ce paramètre pour simplifier la page sans intervention sur l’environnement de création AEM.
 
@@ -295,7 +295,7 @@ Dans l’exercice précédent, nous avons apporté une mise à jour à un fichie
 
 Le serveur webpack-dev-server crée des proxys des images et d’une partie du code CSS/JavaScript provenant de l’instance locale d’AEM, mais permet au développeur de modifier les styles et le code JavaScript dans le module `ui.frontend`.
 
-1. Dans le navigateur, accédez à la page **Accueil** et à **Afficher comme publié(e)** : [http://localhost:4502/content/venia/us/en.html?wcmmode=disabled.](http://localhost:4502/content/venia/us/en.html?wcmmode=disabled)
+1. Dans le navigateur, accédez à la page **Accueil** et à **Afficher comme publié** : [http://localhost:4502/content/venia/us/en.html?wcmmode=disabled.](http://localhost:4502/content/venia/us/en.html?wcmmode=disabled)
 
 1. Affichez la source de la page et la **copie** du code HTML brut de la page.
 
@@ -329,13 +329,13 @@ Le serveur webpack-dev-server crée des proxys des images et d’une partie du c
    $ npm start
    ```
 
-   Cette commande démarre le webpack-dev-server sur [http://localhost:8080/.](http://localhost:8080/)
+   Cette commande démarre le webpack-dev-server sur [:8080/.](http://localhost:8080/)
 
    >[!CAUTION]
    >
    > Si vous obtenez une erreur liée à Sass, arrêtez le serveur, exécutez la commande `npm rebuild node-sass` et répétez les étapes ci-dessus. Cette erreur peut se produire si vous disposez d’une version de `npm` et de `node` différentes de celles spécifiées dans le projet `aem-cif-guides-venia/pom.xml`.
 
-1. Accédez à [http://localhost:8080/](http://localhost:8080/) dans un nouvel onglet avec le même navigateur qu’une instance AEM connectée. Vous devriez voir la page d’accueil Venia via le serveur webpack-dev-server :
+1. Accédez à [:8080/](http://localhost:8080/) dans un nouvel onglet avec le même navigateur qu’une instance AEM connectée. Vous devriez voir la page d’accueil Venia via le serveur webpack-dev-server :
 
    ![Serveur de développement webpack sur le port 80](../assets/style-cif-component/webpack-dev-server-port80.png)
 
@@ -468,7 +468,7 @@ Vous pouvez vérifier dans [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp) 
 
 Lors du déploiement de nouveaux fichiers CSS et/ou JavaScript, il est également important de s’assurer que le navigateur ne diffuse pas de fichiers obsolètes. Vous pouvez éliminer ce problème potentiel en vidant la mémoire cache du navigateur ou en lançant une nouvelle session du navigateur.
 
-AEM tente également de mettre en cache les bibliothèques clientes pour des raisons de performances. Il arrive qu’à la suite d’un déploiement de code les fichiers plus anciens soient diffusés. Vous pouvez invalider manuellement le cache des bibliothèques clientes d’AEM à l’aide de l’outil [&#x200B; Reconstruire les bibliothèques clientes .](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html) *Invalider les caches est la méthode recommandée si vous pensez qu’AEM a mis en cache une ancienne version d’une bibliothèque cliente. La reconstruction des bibliothèques est inefficace et prend du temps.*
+AEM tente également de mettre en cache les bibliothèques clientes pour des raisons de performances. Il arrive qu’à la suite d’un déploiement de code les fichiers plus anciens soient diffusés. Vous pouvez invalider manuellement le cache des bibliothèques clientes d’AEM à l’aide de l’outil [ Reconstruire les bibliothèques clientes .](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html) *Invalider les caches est la méthode recommandée si vous pensez qu’AEM a mis en cache une ancienne version d’une bibliothèque cliente. La reconstruction des bibliothèques est inefficace et prend du temps.*
 
 ## Félicitations {#congratulations}
 

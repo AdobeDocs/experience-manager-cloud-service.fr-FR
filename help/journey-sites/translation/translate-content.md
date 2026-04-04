@@ -8,8 +8,8 @@ exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+workflow-type: tm+mt
 source-wordcount: '2526'
 ht-degree: 100%
 
@@ -157,13 +157,13 @@ Pour afficher le détail du contenu inclus dans ce projet :
 
    ![Options de tâche de traduction](assets/translation-job-options.png)
 
-En règle générale, le contenu de la tâche de traduction commence en statut **Version préliminaire** comme indiqué par la colonne **Statut** dans la fenêtre **Tâche de traduction**.
+En règle générale, le contenu de la tâche de traduction commence dans le statut **Brouillon** comme indiqué par la colonne **État** dans la fenêtre **Tâche de traduction**.
 
 Pour démarrer la tâche de traduction, revenez à la présentation du projet de traduction et appuyez ou cliquez sur le bouton chevron en haut de la carte **Tâche de traduction** et sélectionnez **Démarrer**.
 
 ![Démarrer la tâche de traduction](assets/start-translation-job.png)
 
-AEM communique maintenant avec votre configuration de traduction et votre connecteur pour envoyer le contenu au service de traduction. Vous pouvez afficher la progression de la traduction en revenant à la fenêtre **Tâche de traduction** et en affichant la colonne **Statut** des entrées.
+AEM communique maintenant avec votre configuration de traduction et votre connecteur pour envoyer le contenu au service de traduction. Vous pouvez afficher la progression de la traduction en revenant à la fenêtre **Tâche de traduction** et en affichant la colonne **État** des entrées.
 
 ![Tâche de traduction approuvée](assets/translation-job-approved.png)
 
@@ -195,9 +195,9 @@ Pour ajouter du contenu à une tâche de traduction :
    ![Explorateur de chemins d’accès.](assets/path-browser.png)
 
 1. Appuyez ou cliquez sur **Sélectionner** pour ajouter le contenu sélectionné à la tâche.
-1. Dans la boîte de dialogue **Traduire**, indiquez que vous souhaitez **Créer une copie de langue**.
+1. Dans la boîte de dialogue **Traduire**, indiquez que vous souhaitez **Créer une copie linguistique**.
 
-   ![Créer une copie de langue](assets/translate-copy-master.png)
+   ![Créer une copie linguistique](assets/translate-copy-master.png)
 
 1. Le contenu est désormais inclus dans la tâche.
 
@@ -217,13 +217,13 @@ Pour ajouter du contenu à une tâche de traduction :
 
 Vous pouvez utiliser les étapes précédentes pour ajouter le contenu nécessaire à toutes les langues (tâches) du projet. Une fois que vous avez sélectionné tout le contenu, vous pouvez commencer la traduction.
 
-En règle générale, le contenu de la tâche de traduction commence en statut **Version préliminaire** comme indiqué par la colonne **Statut** dans la fenêtre **Tâche de traduction**.
+En règle générale, le contenu de la tâche de traduction commence dans le statut **Brouillon** comme indiqué par la colonne **État** dans la fenêtre **Tâche de traduction**.
 
 Pour démarrer la tâche de traduction, revenez à la présentation du projet de traduction et appuyez ou cliquez sur le bouton chevron en haut de la carte **Tâche de traduction** et sélectionnez **Démarrer**.
 
 ![Démarrer la tâche de traduction](assets/start-translation-job.png)
 
-AEM communique maintenant avec votre configuration de traduction et votre connecteur pour envoyer le contenu au service de traduction. Vous pouvez afficher la progression de la traduction en revenant à la fenêtre **Tâche de traduction** et en affichant la colonne **Statut** des entrées.
+AEM communique maintenant avec votre configuration de traduction et votre connecteur pour envoyer le contenu au service de traduction. Vous pouvez afficher la progression de la traduction en revenant à la fenêtre **Tâche de traduction** et en affichant la colonne **État** des entrées.
 
 ![Tâche de traduction approuvée](assets/translation-job-approved.png)
 

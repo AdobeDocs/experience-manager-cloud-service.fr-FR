@@ -5,10 +5,10 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 770318fd14e28c8406650eb563df36fe88227359
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2662'
-ht-degree: 53%
+ht-degree: 54%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 53%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
 >title="Tests de l’interface utilisateur"
->abstract="Le test d’interface utilisateur personnalisé est une fonctionnalité facultative qui vous permet de créer et d’exécuter automatiquement des tests d’interface utilisateur pour vos applications. Les tests de l’interface utilisateur sont basés sur Selenium et conditionnés dans une image Docker afin de permettre un large choix de langues et de structures. Comme Java et Maven, Node et WebDriver.io, ou tout autre framework et technologie reposant sur Selenium."
+>abstract="Le test d’interface utilisateur personnalisé est une fonctionnalité facultative qui vous permet de créer et d’exécuter automatiquement des tests d’interface utilisateur pour vos applications. Les tests de l’interface d’utilisation sont des tests basés sur Selenium conditionnés dans une image Docker afin de permettre un large choix de langages et de structures. Tels que Java et Maven, Node et WebDriver.io, ou tout autre cadre et technologie basés sur Selenium."
 
 Le test d’interface utilisateur personnalisé est une fonctionnalité facultative qui vous permet de créer et d’exécuter automatiquement des tests d’interface utilisateur pour vos applications.
 
@@ -32,7 +32,7 @@ Adobe encourage l’utilisation de Cypress, car il propose un rechargement en te
 
 Les tests de l’interface utilisateur s’exécutent en tant que point de contrôle qualité à l’étape [**Tests personnalisés de l’interface utilisateur**](/help/implementing/cloud-manager/deploy-code.md), obligatoire dans les [pipelines de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) et facultatif dans les [pipelines hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Tous les tests de l’interface utilisateur, y compris les régressions et les nouvelles fonctionnalités, permettent de détecter et de signaler des erreurs.
 
-Contrairement aux tests fonctionnels personnalisés qui sont des tests HTTP écrits en Java, les tests de l’interface utilisateur peuvent être une image Docker. Les tests peuvent être écrits dans n’importe quelle langue, à condition qu’ils respectent les conventions définies dans la section [&#x200B; Création de tests d’interface utilisateur](#building-ui-tests).
+Contrairement aux tests fonctionnels personnalisés qui sont des tests HTTP écrits en Java, les tests de l’interface utilisateur peuvent être une image Docker. Les tests peuvent être écrits dans n’importe quelle langue, à condition qu’ils respectent les conventions définies dans la section [ Création de tests d’interface utilisateur](#building-ui-tests).
 
 >[!TIP]
 >
@@ -46,13 +46,13 @@ Cette section décrit les étapes requises pour configurer des tests d’interfa
 
 1. Choisissez le framework de test à utiliser.
 
-   * Pour Cypress (par défaut), utilisez l’exemple de code du référentiel d’exemples de test [AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress) ou utilisez l’exemple de code généré automatiquement dans le dossier `ui.tests` de votre référentiel Cloud Manager.
+   * Pour Cypress (par défaut), utilisez l’exemple de code du référentiel d’exemples de test [](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress) ou utilisez l’exemple de code généré automatiquement dans le dossier `ui.tests` de votre référentiel Cloud Manager.
 
-   * Pour Playwright, utilisez l’exemple de code du [Référentiel d’exemples de test AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright).
+   * Pour Playwright, utilisez l’exemple de code du [Référentiel d’exemples de test ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright).
 
-   * Pour Webdriver.IO, utilisez l’exemple de code du [Référentiel d’exemples de test AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio).
+   * Pour Webdriver.IO, utilisez l’exemple de code du [Référentiel d’exemples de test ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio).
 
-   * Pour Selenium WebDriver, utilisez l’exemple de code du [Référentiel d’exemples de test AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
+   * Pour Selenium WebDriver, utilisez l’exemple de code du [Référentiel d’exemples de test ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
 
    * Pour les autres langages de programmation, reportez-vous à la section [Création de tests d’interface utilisateur](#building-ui-tests) dans ce document pour configurer le projet test.
 
@@ -239,8 +239,10 @@ Les variables d’environnement suivantes seront transmises à votre image Docke
 Les exemples de test d’Adobe fournissent des fonctions d’assistance pour accéder aux paramètres de configuration :
 
 Cypress : utiliser la fonction standard `Cypress.env('VARIABLE_NAME')`
-<!-- BOTH URLs are 404 JavaScript: See the [`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js) module
-* Java: See the [`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class -->
+<!--
+ BOTH URLs are 404 JavaScript: See the [`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js) module
+* Java: See the [`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class
+-->
 
 ### Générer des rapports de test {#generate-test-reports}
 
@@ -274,7 +276,7 @@ Si l’image Docker est implémentée avec d’autres langages de programmation 
 | Durée recommandée | 15m | Adobe recommande de conserver les tests dans cette limite de temps. |
 
 * Si l’auteur/la publication cible est protégé par la liste autorisée IP, l’infrastructure de test de l’interface utilisateur du pipeline doit être placée sur la liste autorisée ou les tests de l’interface utilisateur peuvent échouer avec la mention 403 Interdit.
-Consultez également la section [&#x200B; Échec du test de l’interface utilisateur dans AEMaaCS en raison de la Liste autorisée d’adresses IP &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26654#) et [Présentation des Places sur la liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+Consultez également la section [ Échec du test de l’interface utilisateur dans AEMaaCS en raison de la Liste autorisée d’adresses IP ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#) et [Présentation des Places sur la liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 >[!NOTE]
 >
@@ -306,11 +308,13 @@ Les exemples de test fournis par Adobe créent par défaut des captures d’écr
 
 Vous pouvez utiliser les fonctions d’assistance pour créer des captures d’écran durant vos tests.
 
-<!-- BOTH URLS ARE 404
+<!--
+  BOTH URLS ARE 404
 * JavaScript: [takeScreenshot command](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
-* Java: [Commands](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java) -->
+* Java: [Commands](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
+-->
 
-Si une archive de résultats de test est créée lors de l’exécution d’un test de l’interface utilisateur, vous pouvez la télécharger depuis Cloud Manager en cliquant sur le bouton `Download Details` sous l’étape [**Test personnalisé de l’interface utilisateur** &#x200B;](/help/implementing/cloud-manager/deploy-code.md).
+Si une archive de résultats de test est créée lors de l’exécution d’un test de l’interface utilisateur, vous pouvez la télécharger depuis Cloud Manager en cliquant sur le bouton `Download Details` sous l’étape [**Test personnalisé de l’interface utilisateur** ](/help/implementing/cloud-manager/deploy-code.md).
 
 ### Charger des fichiers {#upload-files}
 
@@ -322,10 +326,12 @@ Les tests doivent parfois charger des fichiers vers l’application en cours de 
    * Équivalent à `curl -X POST ${UPLOAD_URL} -F "data=@file.txt"`.
    * Consultez la documentation et les bibliothèques du langage de programmation utilisé dans l’image Docker pour savoir comment exécuter une telle requête HTTP.
 
-   <!-- BOTH URLS ARE 404
+   <!--
+    BOTH URLS ARE 404
    * The Adobe test samples provide helper functions for uploading files:
      * JavaScript: See the [getFileHandleForUpload](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/wdio.commands.js) command.
-     * Java: See the [FileHandler](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) class. -->
+     * Java: See the [FileHandler](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) class.
+     -->
 
 1. Si le chargement aboutit, la requête renvoie une réponse `200 OK` de type `text/plain`.
    * Le contenu de la réponse est une gestion de fichier opaque.
@@ -481,7 +487,7 @@ Avant d’activer les tests de l’interface utilisateur dans un pipeline Cloud 
 >
 >Les fichiers journaux sont stockés dans le dossier `target/` de votre référentiel.
 >
->Pour plus d’informations, consultez le [référentiel d’exemples de test AEM](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
+>Pour plus d’informations, consultez le [référentiel d’exemples de test ](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
 
 ### Exemple de test JavaScript WebdriverIO {#javascript-sample}
 
@@ -505,7 +511,7 @@ Avant d’activer les tests de l’interface utilisateur dans un pipeline Cloud 
 >* Les fichiers journaux sont stockés dans le dossier `target/reports` de votre référentiel
 >* Votre machine doit utiliser la dernière version de Chrome, car le test télécharge automatiquement la dernière version de ChromeDriver à des fins de test.
 >
->Pour plus d’informations, consultez le [référentiel d’exemples de test AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio).
+>Pour plus d’informations, consultez le [référentiel d’exemples de test ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio).
 
 ### Exemple de test Playwright {#playwright-sample}
 
@@ -533,7 +539,7 @@ Avant d’activer les tests de l’interface utilisateur dans un pipeline Cloud 
 >
 >Les fichiers journaux sont stockés dans le dossier `target/` de votre référentiel.
 >
->Pour plus d’informations, consultez le [référentiel d’exemples de test AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright).
+>Pour plus d’informations, consultez le [référentiel d’exemples de test ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright).
 
 
 ### Exemple de test Java Selenium WebDriver {#java-sample}
@@ -555,4 +561,4 @@ Avant d’activer les tests de l’interface utilisateur dans un pipeline Cloud 
 >
 >Les fichiers journaux sont stockés dans le dossier `target/reports` de votre référentiel.
 >
->Pour plus d’informations, consultez le [référentiel d’exemples de test AEM](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).
+>Pour plus d’informations, consultez le [référentiel d’exemples de test ](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).

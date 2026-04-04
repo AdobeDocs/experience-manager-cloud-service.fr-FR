@@ -8,8 +8,8 @@ exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+workflow-type: tm+mt
 source-wordcount: '1326'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ AEM est donc physiquement séparé en deux instances.
 1. L’instance **auteur** est le système sur lequel les auteurs et les administrateurs de contenu travaillent à créer et à gérer le contenu.
 1. L’instance de **publication** est le système qui diffuse le contenu aux consommateurs.
 
-Une fois le contenu créé sur l’instance d’auteur, il doit être transféré sur l’instance de publication pour qu’il puisse être utilisé. Le processus de transfert de l’auteur à la publication est appelé **publication**.
+Une fois le contenu créé sur l’instance de création, il doit être transféré sur l’instance de publication pour qu’il puisse être utilisé. Le processus de transfert de l’auteur à la publication est appelé **publication**.
 
 ## Publication de votre contenu traduit {#publishing}
 
@@ -129,9 +129,9 @@ Vous remarquerez peut-être que les statistiques répertoriées sur la nouvelle 
 Pour mettre à jour une traduction, vous pouvez ajouter à votre projet existant une nouvelle tâche chargée de traduire le contenu mis à jour.
 
 1. Accédez à **Navigation** -> **Projets**.
-1. Sélectionnez le projet que vous souhaitez supprimer.
+1. Sélectionnez le projet que vous souhaitez mettre à jour.
 1. Appuyez ou cliquez sur le bouton **Ajouter** en haut de la fenêtre.
-1. Dans la fenêtre **Ajouter une mosaïque**, appuyez ou cliquez sur **Tâche de traduction** puis sur **Envoyer**.
+1. Dans la fenêtre **Ajouter une vignette**, appuyez ou cliquez sur **Tâche de traduction**, puis sur **Envoyer**.
 
    ![Ajout d’une mosaïque.](assets/add-translation-job-tile.png)
 

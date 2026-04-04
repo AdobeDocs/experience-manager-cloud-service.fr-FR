@@ -5,7 +5,7 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 94%
@@ -76,8 +76,10 @@ Assurez-vous toujours d’utiliser le fichier XDC approprié pour l’imprimante
 
 Un design de formulaire utilisé avec les API Communications peut contenir des scripts qui s’exécutent sur le serveur. Assurez-vous qu’un design de formulaire ne contient pas de scripts exécutés sur le client. Pour plus d’informations sur la création de scripts de design de formulaire, voir l’[aide de Designer](use-forms-designer.md).
 
-<!-- #### Working with Fonts
- Document Considerations for Working with Fonts>> -->
+<!--
+ #### Working with Fonts
+ Document Considerations for Working with Fonts>>
+ -->
 
 ### Mappage de polices {#font-mapping}
 
@@ -196,13 +198,15 @@ Vous pouvez utiliser le service AEM Forms Output pour combiner un modèle (XFA o
 
 Par rapport à l’environnement On-Premise, le service cloud offre des avantages supplémentaires liés à la mise à l’échelle automatique et à la rentabilité.
 
-<!--**Where is data processed?**
+<!--
+**Where is data processed?**
 
 **Who has access to data?**
 
 **Is data encrypted?**
 
-**Where is data hosted?** -->
+**Where is data hosted?**
+-->
 
 **Puis-je exécuter plusieurs opérations par lots simultanément ?**
 Oui, vous pouvez exécuter plusieurs opérations par lots simultanément. Pour éviter tout conflit, utilisez toujours des dossiers source et de destination différents pour chaque opération.

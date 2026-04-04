@@ -5,7 +5,7 @@ feature: Commerce Integration Framework
 role: Admin
 exl-id: 2ce424a7-6bf4-4482-b5cb-5a7998a294e9
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 100%
@@ -15,9 +15,9 @@ ht-degree: 100%
 
 # Configuration du panier et du Dispatcher
 
-[AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) comporte un [panier](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/minicart/v1/minicart) intégré, qui inclut un panier et un formulaire de passage en caisse. Le panier nécessite une configuration de routage [Dispatcher AEM avec GraphQL](https://github.com/adobe/aem-core-cif-components/blob/master/dispatcher). La vidéo suivante présente une installation et une configuration locales à l’aide d’une image Docker.
+Les [composants principaux AEM CIF](https://github.com/adobe/aem-core-cif-components) comportent un [panier](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/minicart/v1/minicart) intégré, qui inclut un panier et un formulaire de passage en caisse. Le panier nécessite une configuration de routage [Dispatcher AEM avec GraphQL](https://github.com/adobe/aem-core-cif-components/blob/master/dispatcher). La vidéo suivante présente une installation et une configuration locales à l’aide d’une image Docker.
 
->[!VIDEO](https://video.tv.adobe.com/v/33204/?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/29656/?quality=12)
 
 Vous trouverez des informations supplémentaires à ce sujet dans les ressources suivantes :
 

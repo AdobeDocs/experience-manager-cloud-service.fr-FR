@@ -6,10 +6,10 @@ role: User, Developer
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '6688'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 95%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service (Composants de base) | Cet article |
 | AEM as a Cloud Service (Composants principaux) | [Cliquer ici](/help/forms/rule-editor-core-components.md) |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
 
 ## Vue d’ensemble {#overview}
 
@@ -203,7 +203,8 @@ La figure ci-dessous présente un exemple d’ajout dynamique de cases à cocher
 
 **[!UICONTROL Supprimer une instance]** : supprime une instance de la ligne de panneau ou de tableau répétable spécifiée.
 
-**[!UICONTROL Accéder à]** : accédez à d’autres <!--Interactive Communications,-->formulaires adaptatifs, d’autres ressources, comme des images ou des fragments de document ou une URL externe. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+**[!UICONTROL Accéder à]** Permet d’accéder à d’autres ressources <!--Interactive Communications,--> de Forms adaptatif, d’autres ressources telles que des images ou des fragments de document ou une URL externe.
+<!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
 ### [!UICONTROL Définir la valeur de] {#set-value-of}
 
@@ -535,11 +536,12 @@ Pour créer des règles :
 
 ![write-rules-visual-editor-18](assets/write-rules-visual-editor-18.png)
 
-<!-- ### Using code editor {#using-code-editor}
+<!--
+ ### Using code editor {#using-code-editor}
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -836,11 +838,13 @@ Lorsque l’utilisateur indique qu’il habite à l’adresse résidentielle act
 
 ![Plus de justificatif demandé](assets/additionalproofrequested.png)
 
-<!-- ## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
+<!--
+ ## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
 
 In [!DNL Experience Manager Forms] versions prior to [!DNL Experience Manager 6.1 Forms] feature pack 1, form authors and developers used to write expressions in the Scripts tab of the Edit component dialog to add dynamic behavior to Adaptive Forms. The Scripts tab is now replaced by the rule editor.
 
-Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor. -->
+Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor.
+-->
 
 ## Exemples de règles {#example}
 
@@ -872,11 +876,13 @@ Règle dans l’éditeur visuel
 
 Dans l’exemple de règle, l’instruction suivante dans la section Lorsque est la condition qui, si elle renvoie True, exécute les actions spécifiées dans la section Alors.
 
-<!-- The rule appears as follows in the code editor.
+<!--
+ The rule appears as follows in the code editor.
 
 ![when-rule-example-code](assets/when-rule-example-code.png) 
 
-Rule in the code editor -->
+Rule in the code editor
+-->
 
 ### Utilisation d’une sortie de fonction dans une règle {#using-a-function-output-in-a-rule}
 
@@ -896,11 +902,13 @@ Maintenant, vous souhaitez ajouter des quantités spécifiées dans la colonne Q
 
 Règle dans l’éditeur visuel
 
-<!-- he rule appears as follows in the code editor.
+<!--
+ he rule appears as follows in the code editor.
 
 ![example-function-output-code](assets/example-function-output-code.png)
 
-Rule in the code editor -->
+Rule in the code editor
+-->
 
 ### Validation d’une valeur de champ à l’aide d’une expression {#validating-a-field-value-using-expression}
 
@@ -910,8 +918,10 @@ Dans le formulaire de bon de commande décrit dans l’exemple précédent, vous
 
 Règle dans l’éditeur visuel
 
-<!-- The rule appears as follows in the code editor.
+<!--
+ The rule appears as follows in the code editor.
 
 ![example-validate-code](assets/example-validate-code.png)
 
-Rule in the code editor -->
+Rule in the code editor
+-->

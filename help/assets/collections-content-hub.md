@@ -4,7 +4,7 @@ description: Découvrez comment gérer les collections dans Content Hub
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1953'
 ht-degree: 1%
@@ -31,11 +31,11 @@ Une collection fait référence à un ensemble de ressources pouvant être parta
 
 Il permet aux utilisateurs et utilisatrices d’accéder facilement aux différentes ressources disponibles dans [!DNL Content Hub] et de les gérer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3445302/?captions=fre_fr&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on){transcript=true}
 
 ## Conditions préalables {#prerequisites}
 
-[Les utilisateurs de Content Hub](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
+[Les utilisateurs de ](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
 
 ## Créer des collections{#create-collections}
 
@@ -70,9 +70,11 @@ Pour contrôler l’accès lors de la création de collections, procédez comme 
 <!--
 >[!NOTE]
 >
->Collections governance is a limited availability feature. You can get it enabled  by creating a support ticket. Once enabled, you need to [Configure Collections in Content Hub](configure-content-hub-ui-options.md#configure-collections-content-hub).-->
+>Collections governance is a limited availability feature. You can get it enabled  by creating a support ticket. Once enabled, you need to [Configure Collections in Content Hub](configure-content-hub-ui-options.md#configure-collections-content-hub).
+-->
 
-<!--To create a new collection, navigate to the **[!UICONTROL Collections]** tab and click **[!UICONTROL Create new collection]**. Enter the **[!UICONTROL Title]** and provide an optional **[!UICONTROL Description]** for the assets. Click **[!UICONTROL Create]**.
+<!--
+To create a new collection, navigate to the **[!UICONTROL Collections]** tab and click **[!UICONTROL Create new collection]**. Enter the **[!UICONTROL Title]** and provide an optional **[!UICONTROL Description]** for the assets. Click **[!UICONTROL Create]**.
 ![Create collection](assets/add-assets-collection.jpg)          
 -->
 
@@ -200,7 +202,7 @@ Vous pouvez marquer les collections comme Favoris dans Content Hub, ce qui facil
 
    ![Supprimer la collection des favoris](assets/remove-favorite-collection.png)
 
-## Questions fréquemment posées {#faqs-manage-collections-content-hub}
+## Questions fréquentes {#faqs-manage-collections-content-hub}
 
 ### Comment appelle-t-on les collections dans AEM Assets Content Hub ?
 

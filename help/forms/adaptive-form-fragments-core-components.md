@@ -7,7 +7,7 @@ feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 77%
@@ -21,7 +21,7 @@ ht-degree: 77%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service (Composants principaux) | Cet article |
 | AEM as a Cloud Service (Composants de base) | [Cliquer ici](/help/forms/adaptive-form-fragments.md) |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) |
 
 Bien que chaque formulaire soit conçu pour un rôle spécifique, certains segments sont communs à la plupart des formulaires, comme les informations personnelles telles que le nom et l’adresse, les informations relatives à la famille et aux revenus. Les développeurs et développeuses de formulaires doivent créer ces segments communs chaque fois qu’un nouveau formulaire est créé.
 
@@ -33,7 +33,7 @@ Vous pouvez ajouter un fragment plusieurs fois à un document et utiliser les pr
 
 >[!NOTE]
 >
-> Vous pouvez facilement personnaliser votre expérience de fragment pour les personnes qui utilisent la [boîte de dialogue de configuration et la boîte de dialogue de conception d’un composant Fragment de formulaire](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
+> Vous pouvez facilement personnaliser votre expérience de fragment pour les personnes qui utilisent la [boîte de dialogue de configuration et la boîte de dialogue de conception d’un composant Fragment de formulaire](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
 
 ## Créer un fragment de formulaire adaptatif {#create-a-fragment}
 
@@ -66,7 +66,8 @@ Vous pouvez créer un fragment de formulaire adaptatif à partir de zéro ou enr
 
 1. Cliquez sur **Créer** puis sur **Ouvrir** pour ouvrir le fragment, avec un modèle par défaut, en mode d’édition. En mode d’édition, vous pouvez ajouter n’importe quel composant de formulaire adaptatif au fragment.
 
-<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> En outre, si vous avez sélectionné un schéma XML en tant que modèle de formulaire pour votre fragment, un nouvel onglet affichant la hiérarchie des modèles de formulaire s’affiche dans l’outil de recherche de contenu. Il permet de faire glisser des éléments du modèle de formulaire sur le fragment. <!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
+<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> En outre, si vous avez sélectionné un schéma XML en tant que modèle de formulaire pour votre fragment, un nouvel onglet affichant la hiérarchie des modèles de formulaire s’affiche dans l’outil de recherche de contenu. Il permet de faire glisser des éléments du modèle de formulaire sur le fragment.
+<!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
 
 Une fois le fragment de formulaire adaptatif basé sur un schéma ou un modèle de données de formulaire (FDM) créé, les éléments de modèle de données de formulaire (FDM) ou de schéma apparaissent dans l’onglet Sources de données de l’explorateur de contenu dans le créateur de formulaires adaptatifs. Vous pouvez glisser-déposer des éléments du modèle de formulaire sur le fragment. Les éléments de modèle de formulaire ajoutés sont convertis en composants de formulaire tout en conservant les propriétés d’origine du schéma associé.
 
@@ -92,11 +93,13 @@ Pour ajouter un fragment de formulaire adaptatif à un formulaire adaptatif, pro
 
 Le fragment de formulaire adaptatif est ajouté par référence au formulaire adaptatif et est synchronisé avec le fragment autonome du formulaire adaptatif. Cela signifie que toutes les modifications apportées au fragment de formulaire adaptatif sont répercutées dans toutes les instances où le fragment est incorporé dans les formulaires adaptatifs.
 
-<!--### Embed a fragment in Adaptive Form {#embed-a-fragment-in-adaptive-form}
+<!--
+### Embed a fragment in Adaptive Form {#embed-a-fragment-in-adaptive-form}
 
 You can choose to embed an Adaptive Form fragment in an Adaptive Form by clicking the ![Embed](assets/Smock_Import_18_N.svg) icon the panel toolbar of the added fragment
 
-The embedded fragment is no longer linked with the standalone fragment. You can edit the components in the embedded fragment from within the Adaptive Form.-->
+The embedded fragment is no longer linked with the standalone fragment. You can edit the components in the embedded fragment from within the Adaptive Form.
+-->
 
 <!-- 
 ## Configure fragment appearance {#configure-fragment-appearance}

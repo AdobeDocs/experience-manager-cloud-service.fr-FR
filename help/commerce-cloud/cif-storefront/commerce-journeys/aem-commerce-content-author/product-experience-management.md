@@ -5,7 +5,7 @@ exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1157'
 ht-degree: 58%
@@ -87,7 +87,7 @@ Maintenant, glissez-déposez le composant **Fragment de contenu de commerce** su
 
 Cette boîte de dialogue réutilise la boîte de dialogue Fragment de contenu des composants principaux. Pour plus d’informations, voir Ressources supplémentaires. La seule différence est la propriété **Élément Link** qui configure le champ d’identifiant (SKU du produit ou UID de la catégorie) dans le modèle de fragment de contenu.
 
-Prévisualisez maintenant une page de produit qui est associée à un fragment de contenu et/ou un fragment d’expérience. Lorsqu’AEM effectue le rendu d’une page, il recherche chaque espace réservé en fonction du type (Contenu ou Fragment d’expérience), de l’identifiant et du nom de l’espace réservé des fragments d’expérience. AEM utilise un résolveur d’URL pour obtenir l’identifiant (SKU pour les produits, UID pour les catégories). Si une expérience ou un fragment de contenu est renvoyé, il est rendu à l’emplacement de l’espace réservé, sinon l’espace réservé est ignoré.
+Prévisualisez maintenant une page produit qui est associée à un fragment de contenu et/ou un fragment d’expérience. Lorsqu’AEM effectue le rendu d’une page, il recherche chaque espace réservé en fonction du type (Contenu ou Fragment d’expérience), de l’identifiant et du nom de l’espace réservé des fragments d’expérience. AEM utilise un résolveur d’URL pour obtenir l’identifiant (SKU pour les produits, UID pour les catégories). Si une expérience ou un fragment de contenu est renvoyé, il est rendu à l’emplacement de l’espace réservé, sinon l’espace réservé est ignoré.
 
 ![résultat pem](assets/pem-result.png)
 

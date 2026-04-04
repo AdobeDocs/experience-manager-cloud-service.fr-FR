@@ -2,9 +2,9 @@
 title: Agent d’optimisation de contenu
 description: Découvrez comment utiliser l’agent d’optimisation de contenu pour transformer la manière dont les utilisateurs affinent et adaptent les ressources en appliquant des instructions en langage naturel pour créer des variations prêtes pour le canal.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 896fc25b-7f60-47b8-9264-2ef6b85d954c
-source-git-commit: 45c547a0a7372e5ebe23bd6b816798cd3b225872
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Agent d’optimisation de contenu {#content-optimization-agent}
 
-Dans le cadre de l’[Agent de conseil en contenu d’AEM](/help/ai-in-aem/agents/content-advisor/overview.md) l’agent d’optimisation de contenu transforme la manière dont les utilisateurs affinent et adaptent les ressources en appliquant des instructions en langage naturel pour créer des variations prêtes pour le canal. Qu’il s’agisse de générer de nouveaux rendus, d’ajuster les propriétés visuelles, de modifier les arrière-plans ou de préparer des ressources pour des canaux numériques spécifiques, l’agent interprète les intentions de l’utilisateur et effectue automatiquement des tâches de modification complexes. Il fonctionne de manière transparente avec [l’agent de découverte de contenu](/help/ai-in-aem/agents/content-advisor/discovery.md) en prenant les ressources qu’il trouve et en produisant des variations optimisées à l’aide des principales [Dynamic Media avec des fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) qui répondent aux exigences de la marque, du canal et de la campagne sans effort de conception manuel.
+Dans le cadre de l’[Agent de conseil en contenu d’](/help/ai-in-aem/agents/content-advisor/overview.md) l’agent d’optimisation de contenu transforme la manière dont les utilisateurs affinent et adaptent les ressources en appliquant des instructions en langage naturel pour créer des variations prêtes pour le canal. Qu’il s’agisse de générer de nouveaux rendus, d’ajuster les propriétés visuelles, de modifier les arrière-plans ou de préparer des ressources pour des canaux numériques spécifiques, l’agent interprète les intentions de l’utilisateur et effectue automatiquement des tâches de modification complexes. Il fonctionne de manière transparente avec [l’agent de découverte de contenu](/help/ai-in-aem/agents/content-advisor/discovery.md) en prenant les ressources qu’il trouve et en produisant des variations optimisées à l’aide des principales [Dynamic Media avec des fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) qui répondent aux exigences de la marque, du canal et de la campagne sans effort de conception manuel.
 
 Voici quelques-uns des principaux avantages de l’agent d’optimisation de contenu :
 

@@ -5,7 +5,7 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 99%
@@ -21,8 +21,10 @@ Vous pouvez utiliser les méthodes suivantes pour charger une ou plusieurs resso
 * Faites glisser des ressources ou des dossiers sur l’interface utilisateur et suivez les instructions à l’écran.
 * Cliquez sur l’option **[!UICONTROL Ajouter des ressources]** dans la barre d’outils et ajoutez des fichiers à la boîte de dialogue de chargement.
 
-<!-- TBD: Update this GIF
-![Asset and nested folder upload demo](assets/do-not-localize/upload-assets.gif) -->
+<!--
+ TBD: Update this GIF
+![Asset and nested folder upload demo](assets/do-not-localize/upload-assets.gif)
+-->
 
 Vous pouvez utiliser l’une de ces méthodes pour charger des ressources après avoir créé un dossier. Pour créer un dossier vide, cliquez sur **[!UICONTROL Créer un dossier]** dans la barre d’outils. [!DNL Assets view] offre de puissantes fonctionnalités de recherche plein texte, mais vous pouvez également utiliser des dossiers pour mieux organiser vos ressources.
 
@@ -85,7 +87,8 @@ Si vous tentez de charger des ressources en double, elles ne seront chargées qu
 >[!TIP]
 >
 >Vous pouvez charger des ressources vers le référentiel DAM directement depuis vos applications de bureau [!DNL Creative Cloud].
-<!--TBD
+<!--
+TBD
 See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/assets/integration-assets-view.md).
 -->
 
@@ -109,4 +112,4 @@ Les utilisateurs peuvent supprimer individuellement des ressources ou des dossie
 
 * Faites des commentaires sur la documentation en utilisant l’option [!UICONTROL Modifier cette page] ![modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![créer un problème GitHub](assets/do-not-localize/github-issue.png) disponible dans la barre latérale droite.
 
-* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr#support).
+* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&lang=fr#support).

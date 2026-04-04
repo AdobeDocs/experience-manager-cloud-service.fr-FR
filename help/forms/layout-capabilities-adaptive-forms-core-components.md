@@ -6,7 +6,7 @@ keywords: Disposition d’un formulaire adaptatif en fonction des composants pri
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2148'
 ht-degree: 18%
@@ -18,7 +18,7 @@ ht-degree: 18%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
 | AEM as a Cloud Service (Composants de base) | [Cliquer ici](/help/forms/layout-capabilities-adaptive-forms.md) |
 | AEM as a Cloud Service (Composants principaux) | Cet article |
 
@@ -59,7 +59,7 @@ La disposition de panneau est utile pour organiser les champs associés de mani�
 
 Mise en page Panneau
 
-Vous pouvez utiliser le [composant Panneau](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) pour ajouter la disposition de panneau dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Panneau, reportez-vous à l’article [composant Panneau](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
+Vous pouvez utiliser le [composant Panneau](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) pour ajouter la disposition de panneau dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Panneau, reportez-vous à l’article [composant Panneau](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
 
 >[!TAB Mise en page Assistant]
 
@@ -69,7 +69,7 @@ La disposition de l’Assistant permet de simplifier un formulaire complexe en l
 
 Mise en page Assistant
 
-Vous pouvez utiliser le [composant Assistant](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) pour ajouter la disposition de l’Assistant dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Assistant, reportez-vous à l’article [composant Assistant](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
+Vous pouvez utiliser le [composant Assistant](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) pour ajouter la disposition de l’Assistant dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Assistant, reportez-vous à l’article [composant Assistant](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
 
 >[!TAB Disposition d’onglets verticaux]
 
@@ -91,7 +91,7 @@ La disposition des onglets horizontaux est également appelée disposition Ongle
 
 Disposition des onglets horizontaux
 
-Vous pouvez utiliser le composant [onglets horizontaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) pour ajouter la disposition des onglets horizontaux dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Onglets horizontaux, reportez-vous à l’article [composant Onglets horizontaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs).
+Vous pouvez utiliser le composant [onglets horizontaux](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) pour ajouter la disposition des onglets horizontaux dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Onglets horizontaux, reportez-vous à l’article [composant Onglets horizontaux](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs).
 
 
 >[!TAB Mise en page Accordéon]
@@ -102,7 +102,7 @@ La disposition en accordéon affiche le contenu dans des sections ou des panneau
 
 Mise en page Accordéon
 
-Vous pouvez utiliser le [composant Accordéon](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) pour ajouter la disposition en accordéon dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Accordéon, reportez-vous à l’article [Composant Accordéon](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
+Vous pouvez utiliser le [composant Accordéon](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) pour ajouter la disposition en accordéon dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Accordéon, reportez-vous à l’article [Composant Accordéon](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
 
 >[!ENDTABS]
 
@@ -140,7 +140,7 @@ Examinons le processus détaillé d’insertion d’une disposition et d’ajout
 ### &#x200B;1. Insérer un composant de disposition dans un formulaire
 
 1. Connectez-vous à l’instance [!DNL Experience Manager Forms].
-1. Dans le coin supérieur gauche, sélectionnez **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms et documents]**.
+1. Dans le coin supérieur gauche, sélectionnez **** > **[!UICONTROL Forms]** > **[!UICONTROL Forms et documents]**.
 1. Ouvrez un formulaire adaptatif existant en mode d’édition s’il a déjà été créé.
 
    ![Ouvrir un formulaire adaptatif](/help/forms/assets/insert-layout.png)
@@ -229,9 +229,11 @@ De même, vous pouvez masquer les titres des deux autres panneaux. Une fois cett
 
 ### &#x200B;3. Ajouter des composants de formulaire au panneau
 
-<!-- You can employ one of the following method to add form components to the panel:
+<!--
+ You can employ one of the following method to add form components to the panel:
 * [Add components to a layout's panel using the Add icon](#add-components-to-a-layouts-panel-using-the-add-icon)
-* [Drag and drop components into a layout's panel](#drag-and-drop-components-into-a-layouts-panel) -->
+* [Drag and drop components into a layout's panel](#drag-and-drop-components-into-a-layouts-panel)
+-->
 
 1. Recherchez la section du panneau qui vous permet d’ajouter des composants.
 1. Cliquez sur l’icône **Ajouter**. L’icône est un signe plus (+) qui signifie que vous pouvez ajouter de nouveaux composants.
@@ -277,7 +279,8 @@ De même, vous pouvez masquer les titres des deux autres panneaux. Une fois cett
 Vous pouvez également [faire glisser et déposer les composants](#extra-bytes) pour ajouter les composants de formulaire à chaque panneau.
 
 
-<!-- #### Drag and drop components into a layout's panel 
+<!--
+ #### Drag and drop components into a layout's panel 
 
 1. Locate the section within the panel that allows you to add components. 
 2. Navigate to the left panel within your authoring environment and click **Components**.

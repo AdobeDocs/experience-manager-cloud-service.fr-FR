@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2333'
 ht-degree: 50%
@@ -47,7 +47,8 @@ L’éditeur de règles fournit les opérateurs logiques et les événements sui
 * **Navigation(event):** Returns true when the user clicks a navigation object. Navigation objects are used to move between panels. 
 * **Step Completion(event):** Returns true when a step of a rule completes.
 * **Successful Submission(event):** Returns true on successful submission of data to a form data model.
-* **Error in Submission(event):**  Returns true on unsuccessful submission of data to a form data model. -->
+* **Error in Submission(event):**  Returns true on unsuccessful submission of data to a form data model.
+-->
 
 ### Types de règle disponibles dans l’éditeur de règles {#available-rule-types-in-rule-editor}
 
@@ -136,7 +137,8 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 1. Add the **key** and **value** pair as follows:
    * key: fd:changeEventBehaviour
    * value: deps
-1. Click **[!UICONTROL Done]**. -->
+1. Click **[!UICONTROL Done]**.
+-->
 
 Si plusieurs champs autorisés de la fonctionnalité de condition Lorsque rencontrent des problèmes, suivez les étapes de dépannage comme suit :
 
@@ -351,9 +353,9 @@ De même, vous pouvez écrire **Naviguer parmi les panneaux** règle pour dépla
 
 Pour plus d’informations sur la création d’une règle pour naviguer dans un panneau, [cliquez ici](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons).
 
-#### [!UICONTROL &#x200B; Appel de fonction asynchrone &#x200B;]
+#### [!UICONTROL  Appel de fonction asynchrone ]
 
-<span class="preview">Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features). </span>
+<span class="preview">Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 Le type de règle **[!UICONTROL Appel de fonction asynchrone]** permet d’exécuter des fonctions asynchrones. Il vous permet de lancer un appel de fonction qui fonctionne indépendamment du thread d’exécution principal, ce qui permet à d’autres processus de continuer à s’exécuter sans attendre que la fonction asynchrone se termine.
 
@@ -367,7 +369,7 @@ Une règle d’appel de fonction asynchrone standard pour exécuter une fonction
 
 `[Callback Function];`
 
-Pour plus d’informations sur l’utilisation de l’appel de fonction asynchrone dans l’éditeur visuel de règles, reportez-vous à l’article [&#x200B; Utilisation d’appels de fonction asynchrones dans l’éditeur de règles &#x200B;](/help/forms/using-async-funct-in-rule-editor.md).
+Pour plus d’informations sur l’utilisation de l’appel de fonction asynchrone dans l’éditeur visuel de règles, reportez-vous à l’article [ Utilisation d’appels de fonction asynchrones dans l’éditeur de règles ](/help/forms/using-async-funct-in-rule-editor.md).
 
 <!--
 ### [!UICONTROL Set Options Of] {#setoptionsof}
@@ -387,7 +389,8 @@ To define a rule based on a form data model:
 1. Select a data model object property from the **[!UICONTROL Display Value]** drop-down list. The number of checkboxes in the Adaptive Form is derived from the number of instances defined for that property in the database.
 1. Select a data model object property from the **[!UICONTROL Save Value]** drop-down list.
 
-![FDM set options](assets/fdm_set_options_new.png) -->
+![FDM set options](assets/fdm_set_options_new.png)
+-->
 
 ## Étape suivante
 

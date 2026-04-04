@@ -6,7 +6,7 @@ feature: Adobe Stock
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2214'
 ht-degree: 98%
@@ -201,7 +201,7 @@ To configure the IMS account:
 -->
 
 1. [Configurer un programme dans la  [!DNL Developer Console]](#set-up-a-program-in-developer-console)
-1. [Ajouter la configuration dans l’instance de création  [!DNL AEM] &#x200B;](#add-configuration-in-the-aem-author-instance)
+1. [Ajouter la configuration dans l’instance de création  [!DNL AEM] ](#add-configuration-in-the-aem-author-instance)
 
 ### Configurer un programme dans la [!DNL Developer Console] {#set-up-a-program-in-developer-console}
 
@@ -225,7 +225,7 @@ Pour configurer un programme dans la [!DNL Developer Console], procédez comme s
 
 Exécutez les étapes suivantes pour ajouter une configuration à votre instance de création [!DNL AEM] :
 
-1. [Configurer une nouvelle  [!DNL Adobe Stock IMS configuration]  dans votre instance de création  [!DNL AEM] &#x200B;](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
+1. [Configurer une nouvelle  [!DNL Adobe Stock IMS configuration]  dans votre instance de création  [!DNL AEM] ](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
 1. [Ajouter la configuration cloud à laquelle connecter  [!DNL Adobe Stock]](#add-cloud-configuration-to-connect-adobe-stock)
 
 #### Configurer une nouvelle [!DNL Adobe Stock IMS configuration] dans votre instance [!DNL AEM author] {#set-up-adobe-stock-ims-configuration-in-aem-author-instance}
@@ -406,7 +406,7 @@ Vous pouvez également commencer à saisir `Location: Adobe Stock` dans la barre
 
 >[!NOTE]
 >
->Les ressources recherchées dans [!DNL Adobe Stock] s’affichent dans [!DNL Experience Manager]. Les ressources [!DNL Adobe Stock] ne sont pas récupérées ni stockées dans le référentiel [!DNL Experience Manager] tant qu’un utilisateur n’a pas [enregistré une ressource](/help/assets/aem-assets-adobe-stock.md#saveassets) ou [acquis sous licence et enregistré une ressource &#x200B;](/help/assets/aem-assets-adobe-stock.md#licenseassets). Les ressources déjà stockées dans [!DNL Experience Manager] sont affichées et mises en surbrillance pour simplifier leur référencement et leur accès. En outre, les ressources [!DNL Stock] sont enregistrées avec quelques métadonnées supplémentaires pour indiquer la source comme étant [!DNL Stock].
+>Les ressources recherchées dans [!DNL Adobe Stock] s’affichent dans [!DNL Experience Manager]. Les ressources [!DNL Adobe Stock] ne sont pas récupérées ni stockées dans le référentiel [!DNL Experience Manager] tant qu’un utilisateur n’a pas [enregistré une ressource](/help/assets/aem-assets-adobe-stock.md#saveassets) ou [acquis sous licence et enregistré une ressource ](/help/assets/aem-assets-adobe-stock.md#licenseassets). Les ressources déjà stockées dans [!DNL Experience Manager] sont affichées et mises en surbrillance pour simplifier leur référencement et leur accès. En outre, les ressources [!DNL Stock] sont enregistrées avec quelques métadonnées supplémentaires pour indiquer la source comme étant [!DNL Stock].
 
 ![Rechercher des filtres dans [!DNL Experience Manager] et ressources [!DNL Adobe Stock] mises en évidence dans les résultats de recherche](assets/aem-search-filters2.jpg)
 
@@ -456,11 +456,13 @@ Using this capability, organizations users can work using [!DNL Adobe Stock] ass
 Once an [!DNL Adobe Stock] asset is licensed in [!DNL Experience Manager], it can be used and managed like a typical asset. In [!DNL Experience Manager], the users can search and preview the assets; copy and publish the assets; share the assets on [!DNL Brand Portal]; access and use the assets via [!DNL Experience Manager] desktop app; and so on.
 -->
 
-<!--  ![Search for Adobe Stock assets and filter results from your Adobe Experience Manager workspace](assets/adobe-stock-search-results-workspace.png)
+<!--
+  ![Search for Adobe Stock assets and filter results from your Adobe Experience Manager workspace](assets/adobe-stock-search-results-workspace.png)
 
 *Figure: Search for [!DNL Adobe Stock] assets and filter results from your [!DNL Experience Manager] interface.*
 
-**A.** Search assets similar to the assets whose [!DNL Adobe Stock] ID is provided. **B.** Search assets that match your selection of shape or orientation. **C.** Search for one of more supported asset types **D.** Open or collapse the filters pane **E.** License and save the selected asset in [!DNL Experience Manager] **F.** Save the asset in [!DNL Experience Manager] with watermark **G.** Explore assets on [!DNL Adobe Stock] website that are similar to the selected asset **H.** View the selected assets on [!DNL Adobe Stock] website **I.** Number of selected assets from the search results **J.** Switch between Card view and List view -->
+**A.** Search assets similar to the assets whose [!DNL Adobe Stock] ID is provided. **B.** Search assets that match your selection of shape or orientation. **C.** Search for one of more supported asset types **D.** Open or collapse the filters pane **E.** License and save the selected asset in [!DNL Experience Manager] **F.** Save the asset in [!DNL Experience Manager] with watermark **G.** Explore assets on [!DNL Adobe Stock] website that are similar to the selected asset **H.** View the selected assets on [!DNL Adobe Stock] website **I.** Number of selected assets from the search results **J.** Switch between Card view and List view
+-->
 
 <!--
 ### Find assets {#find-assets}

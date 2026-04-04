@@ -6,10 +6,10 @@ role: Admin, User
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1423'
-ht-degree: 40%
+ht-degree: 38%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 40%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html) |
 | AEM as a Cloud Service | Cet article |
 
 
@@ -57,7 +57,7 @@ Oui. AEM Forms prend en charge le chargement sécurisé de documents dans le cad
 
 ## Création de formulaires adaptatifs et de fragments {#create-af}
 
-Vous pouvez créer des [Forms adaptatif](creating-adaptive-form.md) et des fragments de formulaire adaptatif <!-- [Adaptive Form Fragments](adaptive-form-fragments.md) --> basés sur un modèle de données de formulaire (FDM). Pour utiliser un modèle de données de formulaire (FDM) lors de la création d’un formulaire adaptatif ou d’un fragment de formulaire adaptatif, procédez comme suit :
+Vous pouvez créer des Forms adaptatif[ et des fragments de formulaire adaptatif ](creating-adaptive-form.md) basés sur un modèle de données de formulaire (FDM). <!-- [Adaptive Form Fragments](adaptive-form-fragments.md) --> Pour utiliser un modèle de données de formulaire (FDM) lors de la création d’un formulaire adaptatif ou d’un fragment de formulaire adaptatif, procédez comme suit :
 
 1. Dans l’onglet Modèle de formulaire de l’écran Ajouter des propriétés, sélectionnez **[!UICONTROL Modèle de données de formulaire]** dans la liste déroulante **[!UICONTROL Sélectionner à partir de]**.
 
@@ -83,7 +83,8 @@ Vous pouvez créer des [Forms adaptatif](creating-adaptive-form.md) et des fragm
 
    Vous pouvez effectuer un glisser-déposer des objets de modèle de données sur le formulaire adaptatif ou le fragment pour ajouter des champs de formulaire. Les champs de formulaire ajoutés conservent les propriétés des métadonnées et la liaison avec les propriétés de l’objet de modèle de données. La liaison garantit que les valeurs de champ sont mises à jour dans les sources de données correspondantes lors de l’envoi du formulaire et préremplies lorsque le formulaire est rendu.
 
-<!-- ## Create interactive communications {#create-ic}
+<!--
+ ## Create interactive communications {#create-ic}
 
 You can create an interactive communication based on a Form Data Model that you can use to prefill interactive communication with data from configured data sources. In addition, the building blocks of an interactive communication, such as text, list, and condition document fragments can be based on a form data model.
 
@@ -101,13 +102,15 @@ For more information, see:
 
 [Conditions in Interactive Communications](conditions-interactive-communications.md)
 
-[List fragments](lists.md) -->
+[List fragments](lists.md)
+-->
 
 ## Aperçu avec des données d’exemple {#preview-ic}
 
 L’éditeur de modèle de données de formulaire vous permet de générer et de modifier des exemples de données pour les objets de modèle de données dans le modèle de données de formulaire (FDM). Vous pouvez utiliser ces données pour prévisualiser et tester les formulaires adaptatifs <!--interactive communications and-->. Vous devez générer les données d’exemple avant la prévisualisation, comme décrit dans la section [Utilisation d’un modèle de données de formulaire](work-with-form-data-model.md#sample).
 
-<!--To preview an interactive communication with sample Form Data Model data:
+<!--
+To preview an interactive communication with sample Form Data Model data:
 
 1. On [!DNL  Experience Manager] author instance, navigate to **[!UICONTROL Forms > Forms & Documents]**.
 1. Select an interactive communication and select **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
@@ -115,23 +118,26 @@ L’éditeur de modèle de données de formulaire vous permet de générer et de
 
 The interactive communication opens with prefilled sample data.
 
-![web-preview](assets/web-preview.png)-->
+![web-preview](assets/web-preview.png)
+-->
 
 Pour prévisualiser un formulaire adaptatif avec des exemples de données, ouvrez le formulaire adaptatif en mode création et sélectionnez **[!UICONTROL Aperçu]**.
 
 ## Préremplissage à l’aide du service de modèle de données de formulaire {#prefill}
 
-[!DNL Experience Manager Forms] fournit un service de préremplissage de modèle de données de formulaire prêt à l’emploi que vous pouvez activer pour les <!--and interactive communications--> Forms adaptatifs basés sur un modèle de données de formulaire (FDM). Le service de préremplissage récupère les sources de données des objets de modèle de données dans le formulaire adaptatif <!--and interactive communication--> et préremplit les données en conséquence lors du rendu du formulaire ou de la communication.
+[!DNL Experience Manager Forms] fournit un service de préremplissage de modèle de données de formulaire prêt à l’emploi que vous pouvez activer pour les <!--and interactive communications--> Forms adaptatifs basés sur un modèle de données de formulaire (FDM). Le service de préremplissage récupère les sources de données des objets de modèle de données dans le formulaire adaptatif et préremplit les données en conséquence lors du rendu du formulaire ou de la communication.
 
 Pour activer le service de préremplissage de modèle de données de formulaire pour un formulaire adaptatif, ouvrez les propriétés du conteneur de formulaires adaptatifs et sélectionnez **[!UICONTROL Service de préremplissage de modèle de données de formulaire]** dans la liste déroulante **[!UICONTROL Service de préfiltrage]** de l’accordéon De base. Ensuite, enregistrez les propriétés.
 
 ![prefill-service](assets/prefill-service.png)
 
-<!--To configure Form Data Model prefill service in an interactive communication, you can select Form Data Model Prefill Service in the Prefill Service drop-down while creating it or later by modifying the properties.
+<!--
+To configure Form Data Model prefill service in an interactive communication, you can select Form Data Model Prefill Service in the Prefill Service drop-down while creating it or later by modifying the properties.
 
 ![edit-ic-props](assets/edit-ic-props.png)
 
-Edit Properties dialog for an interactive communication-->
+Edit Properties dialog for an interactive communication
+-->
 
 ## Écriture des données de formulaires adaptatifs envoyés dans les sources de données {#write-af}
 
@@ -170,7 +176,7 @@ Vous pouvez également envoyer des pièces jointes de formulaire à une source d
 
 ## Appel des services dans des formulaires adaptatifs à l’aide de règles {#invoke-services}
 
-Dans un formulaire adaptatif basé sur un modèle de données de formulaire (FDM), vous pouvez [&#x200B; créer des règles &#x200B;](rule-editor.md) pour appeler les services configurés dans le modèle de données de formulaire (FDM). L’opération **[!UICONTROL Appeler des services]** d’une règle répertorie tous les services disponibles dans le modèle de données de formulaire (FDM) et vous permet de sélectionner des champs d’entrée et de sortie pour le service. Vous pouvez également utiliser le type de règle **[!UICONTROL Définir la valeur]** pour appeler un service de modèle de données de formulaire et définir la valeur d’un champ sur la sortie renvoyée par le service.
+Dans un formulaire adaptatif basé sur un modèle de données de formulaire (FDM), vous pouvez [ créer des règles ](rule-editor.md) pour appeler les services configurés dans le modèle de données de formulaire (FDM). L’opération **[!UICONTROL Appeler des services]** d’une règle répertorie tous les services disponibles dans le modèle de données de formulaire (FDM) et vous permet de sélectionner des champs d’entrée et de sortie pour le service. Vous pouvez également utiliser le type de règle **[!UICONTROL Définir la valeur]** pour appeler un service de modèle de données de formulaire et définir la valeur d’un champ sur la sortie renvoyée par le service.
 
 Par exemple, la règle suivante appelle un service get qui utilise l’ID d’employé comme entrée et les valeurs renvoyées sont renseignées dans les champs ID, Nom, Prénom et Genre correspondants du formulaire.
 

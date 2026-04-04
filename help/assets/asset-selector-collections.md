@@ -4,7 +4,7 @@ description: Utilisation des collections de sélecteurs de ressources.
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 1687e7d5-eb7e-4eb7-8747-e5dc6afacd5b
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 7%
@@ -28,13 +28,14 @@ Vous pouvez afficher les collections dans le sélecteur de ressources en mode ra
 ![Collections en mode rail](assets/collections-rail-modal-view.png)
 
 <!--
-Additionally, you can [customize](/help/assets/asset-selector-customization.md) the `featureSet` property to enable or disable collections in Asset Selector. See [enable or disable Collections tab](#enable-disable-collections-tab).-->
+Additionally, you can [customize](/help/assets/asset-selector-customization.md) the `featureSet` property to enable or disable collections in Asset Selector. See [enable or disable Collections tab](#enable-disable-collections-tab).
+-->
 
 De plus, vous pouvez également personnaliser la sélection des ressources sous l’onglet Collections . Pour ce faire, vous pouvez le personnaliser à l’aide de `handleSelection`. Voir [Gestion de la sélection d’Assets à l’aide du schéma d’objet](/help/assets/asset-selector-customization.md#handling-selection).
 
 ## Affichage des collections {#view-collections}
 
-Le sélecteur de ressources vous permet d’afficher les collections dans une vue ![&#x200B; liste](assets/do-not-localize/list-view.png) liste ou ![&#x200B; grille](assets/do-not-localize/grid-view.png) grille. Voir [types de vue dans le sélecteur de ressources](overview-asset-selector.md#types-of-view).
+Le sélecteur de ressources vous permet d’afficher les collections dans une vue ![ liste](assets/do-not-localize/list-view.png) liste ou ![ grille](assets/do-not-localize/grid-view.png) grille. Voir [types de vue dans le sélecteur de ressources](overview-asset-selector.md#types-of-view).
 
 ## Glisser-déposer des ressources dans la collection {#collection-drag-and-drop}
 

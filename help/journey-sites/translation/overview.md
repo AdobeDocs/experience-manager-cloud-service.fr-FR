@@ -8,8 +8,8 @@ exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Les parcours de documentation sont conçus autour des principes de bonne pratiqu
 
 Si vous souhaitez savoir la manière dont Adobe recommande de résoudre des problèmes d’activité liés aux sites grâce à AEM, les parcours AEM Sites représentent un parfait point de départ.
 
-## Public {#audience}
+## Audience {#audience}
 
 Ce parcours est conçu pour le profil de spécialiste en traduction, souvent appelé gestionnaire de projet de traduction (TPM). Ce parcours présente les exigences, les étapes et les méthodes de traduction de contenu AEM Sites. Il définit les personnes supplémentaires avec lesquelles le spécialiste de la traduction doit interagir, mais le point de vue du parcours est celui du spécialiste de la traduction.
 

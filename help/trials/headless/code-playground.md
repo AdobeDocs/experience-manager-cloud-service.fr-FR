@@ -6,7 +6,7 @@ index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 feature: Headless
 role: Admin, User, Developer
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 100%
@@ -24,7 +24,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
 >title="Lancer l’exemple d’application CodePen"
->abstract="Ce guide explique en détail la façon dont interroger des données JSON de votre environnement d’évaluation dans une application web JavaScript de base. Vous utilisez les fragments de contenu que vous avez modélisés et créés dans les modules de formation précédents. Au besoin, consultez ces guides avant de passer à celui-ci."
+>abstract="Ce guide explique en détail comment interroger des données JSON de votre environnement d’évaluation dans une application web JavaScript de base. Vous utilisez les fragments de contenu que vous avez modélisés et créés dans les modules de formation précédents. Au besoin, consultez ces guides avant de passer à celui-ci."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"

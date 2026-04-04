@@ -4,8 +4,8 @@ description: Découvrez comment créer des fragments de formulaire dans l’édi
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+workflow-type: tm+mt
 source-wordcount: '1693'
 ht-degree: 100%
 
@@ -234,10 +234,12 @@ Vous pouvez effectuer plusieurs opérations sur des fragments de formulaire depu
    <td><p>Démarrer la révision/Gérer la révision</p> </td>
    <td><p>Permet de lancer et de gérer la révision du fragment sélectionné.<br /> <br /> </p> </td>
     </tr>
-    <!--<tr>
+    <!--
+    <tr>
    <td><p>Add Dictionary</p> </td>
    <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
-    </tr>-->
+    </tr>
+    -->
     <tr>
    <td><p>Publier/Dépublier</p> </td>
    <td><p>Publie/annule la publication du fragment sélectionné.<br /> <br /> </p> </td>

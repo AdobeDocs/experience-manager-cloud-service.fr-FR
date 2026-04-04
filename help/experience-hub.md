@@ -8,7 +8,7 @@ feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Developer, User
 badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 9%
@@ -23,16 +23,17 @@ Voir aussi [AEM Experience Hub](https://developer.adobe.com/uix/docs/services/ae
 
 Regardez une présentation rapide de l’espace de travail AEM Experience Hub repensé (2 minutes, 40 secondes).
 
->[!VIDEO](https://video.tv.adobe.com/v/3475194/?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475190/?learn=on&enablevpops)
 
 <!--
-Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
+Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community.
+-->
 
 ## Experience Hub de près {#aem-experience-hub-about}
 
-1. Pour commencer, cliquez sur [Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home) pour ouvrir sa page d&#39;accueil.
+1. Pour commencer, cliquez sur [](https://experience.adobe.com/#/@foundationinternal/home) pour ouvrir sa page d&#39;accueil.
 
-   ![Page d&#39;accueil de Adobe Experience Cloud](/help/implementing/cloud-manager/assets/experience-cloud-experiencemanager.png)
+   ![Page d&#39;accueil de ](/help/implementing/cloud-manager/assets/experience-cloud-experiencemanager.png)
 
 1. Dans le regroupement **Accès rapide**, cliquez sur [**Experience Manager**](https://experience.adobe.com).
 1. Lors du premier accès, le système vous affecte le paramètre prédéfini **Auteur de contenu** (affiché près du coin supérieur droit de la page). Il contrôle les widgets, les éléments de navigation et le contenu que vous voyez.
@@ -56,7 +57,7 @@ La page Adobe Experience Manager a été actualisée avec une navigation amélio
 
 Ces solutions sont désormais déplacées vers la navigation principale sous **Outils** ou **Services**. Les nouveaux éléments de navigation permettent d’accéder rapidement aux fonctionnalités d’AEM liées à vos solutions activées. Accédez à Assets, Sites, Forms, Fragments de contenu, Lancements, etc.
 
-![Environnements Experience Hub](/help/implementing/cloud-manager/assets/experience-hub-author-environments.png)
+![Environnements ](/help/implementing/cloud-manager/assets/experience-hub-author-environments.png)
 
 Utilisez ces fonctionnalités dans votre environnement de production principal. Si vous avez accès à plusieurs instances AEM, sélectionnez l’environnement à cibler.
 
@@ -68,7 +69,7 @@ Faisant office de hub central pour Adobe Experience Manager, la page Experience 
 
 Les widgets peuvent également être redimensionnés et repositionnés sur la page en fonction de vos besoins et préférences.
 
-![Widgets Experience Hub](/help/implementing/cloud-manager/assets/experience-hub-widgets.png)
+![Widgets ](/help/implementing/cloud-manager/assets/experience-hub-widgets.png)
 
 La section **Environnements de création** répertorie tous les environnements AEM auxquels vous pouvez accéder et inclut des raccourcis vers leurs solutions et pages. Vous pouvez épingler des environnements spécifiques pour les maintenir en haut de la liste.
 
@@ -78,7 +79,7 @@ La section **Récents**, illustrée dans l’image ci-dessous, répertorie les p
 
 ![Environnements de création](/help/implementing/cloud-manager/assets/experience-hub-recents.png)
 
-![Raccourcis Rapides D’Experience Hub](/help/implementing/cloud-manager/assets/experience-hub-quick-shortcuts.png)
+![Raccourcis Rapides D’](/help/implementing/cloud-manager/assets/experience-hub-quick-shortcuts.png)
 
 S’il n’existe aucun environnement de production AEM Cloud Service ou Managed Services, les options de sélection apparaissent grisées et indisponibles.
 

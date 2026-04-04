@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 role: User, Developer
-source-git-commit: 8e57406d97b3019a3c3530390d1fd52c836fcdeb
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2502'
 ht-degree: 93%
@@ -20,7 +20,7 @@ ht-degree: 93%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html) |
 | AEM as a Cloud Service | Cet article |
 
 ## Vue d’ensemble {#overview}
@@ -60,9 +60,11 @@ Lorsque vous créez ou modifiez un formulaire adaptatif existant, vous utilisez 
 * [Barre d’outils de composants](#component-toolbar)
 * [Page de formulaires adaptatifs](#af-page)
 
-<!-- ![Adaptive Form authoring UI](assets/formeditor.png)
+<!--
+ ![Adaptive Form authoring UI](assets/formeditor.png)
 
-**A.** Sidebar **B.** Page toolbar **C.** Adaptive Form page -->
+**A.** Sidebar **B.** Page toolbar **C.** Adaptive Form page
+-->
 
 ### Barre latérale {#sidebar}
 
@@ -77,9 +79,11 @@ La barre latérale vous permet de
 
 **A.** Explorateur de contenu **B.** Explorateur de propriétés **C.** Explorateur de ressources **D.** Explorateur de composants
 
-<!--Click to enlarge
+<!--
+Click to enlarge
 
-](assets/sidebar-comps-1.png) -->
+](assets/sidebar-comps-1.png)
+-->
 
 La barre latérale comprend les explorateurs suivants :
 

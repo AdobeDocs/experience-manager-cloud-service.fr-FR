@@ -2,12 +2,12 @@
 title: Composants principaux de Forms adaptatif par rapport aux composants de base de Edge Delivery Services Forms
 description: Comparaison technique des approches de création d’AEM Forms - Composants principaux, Edge Delivery Services Forms et Composants de base. Architecture, rendu, fonctionnalités et cas d’utilisation.
 keywords: comparaison des formulaires adaptatifs, composants principaux, composants de base, formulaires des services de diffusion edge, comparaison des formulaires AEM, comparaison du créateur de formulaires
-role: Architect, Developer, Admin
+role: Developer, Admin
 level: Intermediate
 feature: Adaptive Forms, Core Components, Edge Delivery Services
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: adaptive-forms-comparison
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1959'
 ht-degree: 10%
@@ -43,7 +43,7 @@ Les composants principaux utilisent une architecture de composants modulaire nor
 - **Méthodologie de style** : conventions CSS BEM (Block Element Modifier)
 - **Stockage de contenu** : référentiel JCR avec nœuds de contenu structuré
 - **Rendu** : rendu côté serveur dans AEM avec rendu côté client découplé en option
-- **Source** : open-source (disponible sur [GitHub](https://github.com/adobe/aem-core-forms-components))
+- **** : open-source (disponible sur [GitHub](https://github.com/adobe/aem-core-forms-components))
 
 ### Modèle de rendu
 
@@ -74,7 +74,7 @@ Les composants principaux prennent en charge plusieurs modèles de rendu :
 | **Localisation** | Prise en charge multilingue via le workflow de traduction d’AEM |
 | **Contrôle de version** | Contrôle de version du contenu hérité d’AEM Sites |
 
-### Prérequis
+### Conditions préalables
 
 - **AEM Forms as a Cloud Service** : composants principaux activés par défaut
 - **AEM 6.5 Forms** : nécessite une activation via l’archétype AEM
@@ -194,7 +194,7 @@ EDS Forms prend en charge deux approches de création :
 | **Sécurité** | reCAPTCHA Enterprise, hCaptcha, configuration CORS |
 | **Analytics** | Adobe Experience Platform Web SDK, vues de formulaires et suivi des envois |
 
-### Prérequis
+### Conditions préalables
 
 **Pour La Création Basée Sur Des Documents :**
 
@@ -303,7 +303,7 @@ Les composants suivants sont **disponibles uniquement** dans les composants de b
 - Étape de résumé
 - Captcha Turnstile
 
-### Prérequis
+### Conditions préalables
 
 - AEM Forms as a Cloud Service ou AEM 6.5 Forms
 - Modèle de formulaire adaptatif (Foundation)
@@ -356,9 +356,9 @@ Les composants suivants sont **disponibles uniquement** dans les composants de b
 | **Adobe Sign** | ❌ | Via l’intégration | ✅ (bloc natif) |
 | **Document d’enregistrement** | ✅ | ✅ | ✅ |
 | **Options CAPTCHA** | reCAPTCHA, hCaptcha | reCAPTCHA Enterprise, hCAPTCHA | reCAPTCHA, hCaptcha, tourniquet |
-| **Workflow AEM** | ✅ | ✅ (via l’instance de publication AEM) | ✅ |
+| **Workflow** | ✅ | ✅ (via l’instance de publication AEM) | ✅ |
 | **API Headless** | ✅ (automatique) | ❌ | ❌ |
-| **Accessibilité** | Conforme à WCAG | Conforme à WCAG | Éléments de base |
+| **Accessibilité** | Conforme à WCAG | Conforme à WCAG | De base |
 | **Vitesse de déploiement** | Basé sur un pipeline | Instantané (validation en direct) | Basé sur un pipeline |
 | **Style** | BEM CSS, Thèmes | CSS, thèmes au niveau du projet | CSS, thèmes |
 | **Contrôle de version** | ✅ (hérité de Sites) | Basé sur Git | ✅ |

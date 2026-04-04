@@ -4,7 +4,7 @@ description: Notes de mise à jour de la version 2024.3.0 d’ [!DNL Adobe Expe
 exl-id: b3816929-2c0a-4d6a-b583-c928d2182ecd
 feature: Release Information
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
 workflow-type: tm+mt
 source-wordcount: '2283'
 ht-degree: 93%
@@ -37,7 +37,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Regardez la vidéo de vue d’ensemble de la version de mars 2024 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2024.3.0 :
 
->[!VIDEO](https://video.tv.adobe.com/v/3450361?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3428342?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -45,11 +45,11 @@ Regardez la vidéo de vue d’ensemble de la version de mars 2024 pour obtenir 
 
 **Création AEM pour Edge Delivery Services**
 
-AEM Sites peut désormais être utilisé comme source de contenu pour Edge Delivery Services. Les auteurs et les autrices gèrent leurs sites web dans AEM à l’aide du nouvel éditeur universel avec création WYSIWYG en contexte. Cela permet aux entreprises de créer rapidement des pages web hautes performances avec Edge Delivery Services tout en tirant parti des fonctionnalités puissantes de gestion du contenu d’AEM.
+AEM Sites peut désormais être utilisé comme source de contenu pour Edge Delivery Services. Les auteurs et les autrices gèrent leurs sites web dans AEM à l’aide du nouvel éditeur universel avec création WYSIWYG en contexte. Cela permet aux entreprises de créer rapidement des pages web hautes performances avec Edge Delivery Services tout en tirant parti des puissantes fonctionnalités de gestion de contenu d’AEM.
 
 ![Création AEM](/help/edge/assets/universal_editor_edge_delivery_services.png)
 
-Pour plus d’informations, consultez la [documentation](/help/edge/overview.md) et regardez [AEM Gems - Commencer avec la création AEM et Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694?profile.language=fr#M43905)
+Pour plus d’informations, consultez la [documentation](/help/edge/overview.md) et regardez [AEM Gems - Commencer avec la création AEM et Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)
 
 **Éditeur universel pour des implémentations découplées**
 
@@ -59,9 +59,9 @@ Ce qui distingue l’éditeur universel, c’est son adaptabilité à différent
 
 L’éditeur universel assure ainsi une expérience de modification cohérente, quelle que soit la structure du contenu ou la pile technologique sous-jacente. Pour plus d’informations, voir la [Présentation de l’éditeur universel](/help/implementing/universal-editor/introduction.md).
 
-**API OpenAPI de gestion du contenu pour les fragments de contenu et les modèles**
+**API OpenAPI de gestion de contenu pour les fragments de contenu et les modèles**
 
-Les développeurs et les développeuses peuvent désormais interagir par programmation avec les fragments de contenu et les modèles de fragment de contenu et effectuer des opérations CruD sur ceux-ci à l’aide des API OpenAPI de gestion du contenu. Pour plus d’informations, voir la [documentation de l’API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/).
+Les développeurs et les développeuses peuvent désormais interagir par programmation avec les fragments de contenu et les modèles de fragment de contenu et effectuer des opérations CruD sur ceux-ci à l’aide des API OpenAPI de gestion de contenu. Pour plus d’informations, voir la [documentation de l’API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/).
 
 **Prise en charge de la gestion multisite pour les fragments d’expérience**
 
@@ -180,7 +180,7 @@ Cette mise à jour offre une expérience plus inclusive aux utilisateurs et util
 
 * **Reader Extension Service** : les API de communication d’AEM Forms ont introduit Reader Extension Service pour vous permettre d’ajouter des fonctionnalités telles que le remplissage de formulaires et les commentaires dans des PDF standard, ce qui les rend interactifs pour les utilisateurs et les utilisatrices disposant de la version gratuite d’Adobe Reader.
 
-* [Prise en charge des langues de droite à gauche](/help/forms/supporting-new-language-localization-core-components.md) : les formulaires adaptatifs reposant sur les composants principaux peuvent désormais être présentés dans une langue de droite à gauche telle que l’arabe, le persan et l’ourdou. Les langues s’écrivant de droite à gauche sont parlées par plus de 2 milliards de personnes dans le monde. L’utilisation d’un formulaire pour les langues s’écrivant de droite à gauche permet d’étendre la portée de vos formulaires adaptatifs pour répondre à ces diverses audiences et aux marchés correspondants. Dans certaines régions, il en va d’une obligation légale de fournir des formulaires dans la langue locale. En vous adaptant aux langues locales, vous vous ouvrez non seulement à un public plus large, mais vous garantissez aussi le respect des lois et réglementations pertinentes.
+* [Prise en charge des langues de droite à gauche](/help/forms/supporting-new-language-localization-core-components.md) : les formulaires adaptatifs reposant sur les composants principaux peuvent désormais être présentés dans une langue de droite à gauche telle que l’arabe, le persan et l’ourdou. Les langues s’écrivant de droite à gauche sont parlées par plus de 2 milliards de personnes dans le monde. L’utilisation d’un formulaire pour les langues s’écrivant de droite à gauche permet d’étendre la portée de vos formulaires adaptatifs pour répondre à ces diverses audiences et aux marchés correspondants. Dans certaines régions, il en va d’une obligation légale de fournir des formulaires dans la langue locale. En vous adaptant aux langues locales, vous vous ouvrez non seulement à une audience plus large, mais vous garantissez aussi le respect des lois et réglementations pertinentes.
 
 * **[Protégez vos documents avec les API DocAssurance (qui font partie des API de communication)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)** : les API DocAssurance vous permettent de protéger les informations sensibles en signant et en chiffrant les documents. Grâce au chiffrement, le contenu d’un document est transformé en un format illisible, ce qui garantit que seules les personnes autorisées peuvent y accéder. Cette couche renforcée de protection protège non seulement les données précieuses des yeux non autorisés, mais offre également une certaine tranquillité d’esprit. Les API Signature permettent à votre entreprise de garantir la sécurité et la confidentialité des documents Adobe PDF qu’elle diffuse et reçoit. Ce service utilise les signatures numériques et la certification pour s’assurer que seules les personnes destinataires prévues peuvent modifier les documents.
 
@@ -221,7 +221,7 @@ Le réseau CDN géré par Adobe prend désormais en charge Edge Side Includes 
 
 #### Prise en charge du RDE pour le code en front-end à l’aide des thèmes du site et des modèles de site (programme d’adoption précoce) {#rde-frontend-early-adopter}
 
-Les [environnements de développement rapide (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) prennent désormais en charge le code en front-end basé sur les [thèmes de site](/help/sites-cloud/administering/site-creation/site-themes.md) et les [modèles de site](/help/sites-cloud/administering/site-creation/site-templates.md), pour les utilisateurs et utilisatrices bénéficiant de l’adoption précoce. Avec les RDE, la prise en charge s’effectue à l’aide d’une directive de ligne de commande plutôt que d’un [pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Veuillez contacter **<aemcs-rde-support@adobe.com>** pour essayer cette fonctionnalité et fournir des commentaires.
+Les [environnements de développement rapide (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) prennent désormais en charge le code en front-end basé sur les [thèmes de site](/help/sites-cloud/administering/site-creation/site-themes.md) et les [modèles de site](/help/sites-cloud/administering/site-creation/site-templates.md), pour les personnes qui adoptent la solution en avant-première. Avec les RDE, la prise en charge s’effectue à l’aide d’une directive de ligne de commande plutôt que d’un [pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Veuillez contacter **<aemcs-rde-support@adobe.com>** pour essayer cette fonctionnalité et fournir des commentaires.
 
 #### Amélioration de la journalisation des RDE (programme d’adoption précoce) {#rde-logging-early-adopter}
 

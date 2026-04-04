@@ -5,7 +5,7 @@ feature: Asset Management, Collaboration, Asset Distribution
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1835'
 ht-degree: 80%
@@ -23,7 +23,7 @@ ht-degree: 80%
 
 * [Partager des ressources en tant que lien](#sharelink).
 * [Télécharger des ressources et les partager séparément.](/help/assets/download-assets-from-aem.md)
-* Partagez à l’aide de l’appli de bureau [[!DNL Experience Manager]  &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=fr).
+* Partagez à l’aide de l’appli de bureau [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=fr).
 * Partagez à l’aide d’[[!DNL Adobe Asset Link]](https://www.adobe.com/fr/creativecloud/business/enterprise/adobe-asset-link.html).
 * Partagez à l’aide de [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=fr).
 
@@ -280,7 +280,8 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
     * SMTP password: email server password
 -->
 
-<!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
+<!--
+ TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 ### Configure maximum data size {#maxdatasize}
 
 When you download assets from the link shared using the Link Sharing feature, Experience Manager compresses the asset hierarchy from the repository and then returns the asset in a ZIP file. However, in the absence of limits to the amount of data that can be compressed in a ZIP file, huge amounts of data is subjected to compression, which causes out of memory errors in JVM. To secure the system from a potential denial of service attack due to this situation, you can configure the maximum size of the downloaded files. If uncompressed size of the asset exceeds the configured value, asset download requests are rejected. The default value is 100 MB.
@@ -297,7 +298,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Activation des actions de bureau à utiliser avec l’application de bureau {#desktop-actions}
 
-À partir de l’interface utilisateur d’[!DNL Assets] ouverte dans un navigateur, vous pouvez explorer l’emplacement des ressources ou extraire et ouvrir une ressource pour la modifier dans votre appli de bureau. Ces options sont appelées actions de bureau ; pour les activer, voir [Activation des actions de bureau dans l’interface web [!DNL Assets] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#desktopactions-v2).
+À partir de l’interface utilisateur d’[!DNL Assets] ouverte dans un navigateur, vous pouvez explorer l’emplacement des ressources ou extraire et ouvrir une ressource pour la modifier dans votre appli de bureau. Ces options sont appelées actions de bureau ; pour les activer, voir [Activation des actions de bureau dans l’interface web [!DNL Assets] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#desktopactions-v2).
 
 ![Activation des actions de bureau à utiliser comme raccourci dans une application de bureau](assets/enable_desktop_actions.png)
 
@@ -319,7 +320,8 @@ Voir [comment configurer [!DNL Assets] pour l’utiliser avec [!DNL Adobe Asset 
 * If you cannot share assets using link sharing functionality, ensure that you have the appropriate permissions. See [share assets](#sharelink).
 -->
 
-<!-- TBD: Add content or link about how to share using Brand Portal when it is available on [!DNL Cloud Service].
+<!--
+ TBD: Add content or link about how to share using Brand Portal when it is available on [!DNL Cloud Service].
 -->
 
 **Voir également**

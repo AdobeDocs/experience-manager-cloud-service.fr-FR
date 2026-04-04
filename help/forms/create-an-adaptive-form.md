@@ -9,7 +9,7 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 6f1c3fe7-b61e-47ce-b565-15b4904db092
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2615'
 ht-degree: 71%
@@ -20,7 +20,7 @@ ht-degree: 71%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html) |
 | AEM as a Cloud Service | Cet article |
 
 Le créateur de formulaires d’AEM Forms vous permet de créer des formulaires attrayants, réactifs, dynamiques et adaptatifs. Que vous soyez un créateur de formulaires qui crée des formulaires professionnels ou que vous ayez besoin de créer rapidement des formulaires réactifs, AEM Forms fournit un assistant convivial. L’assistant offre une navigation rapide par onglets pour sélectionner facilement des modèles, un style, des champs et des options d’envoi préconfigurés.
@@ -48,8 +48,10 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
    * Vous pouvez également [créer un modèle de Forms adaptatif (composants principaux)](template-editor.md) à partir de zéro.
 
 * **Un thème de formulaire adaptatif** : un thème contient des détails de style pour les composants et les panneaux. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème, le style spécifié se reflète sur les composants correspondants.  Le modèle `Canvas` est inclus dans chaque nouveau programme AEM Forms as a Cloud Service.
-  <!-- * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
-    * You can also [create an Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program. -->
+  <!--
+     * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
+    * You can also [create an Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program.
+    -->
 
 * **Autorisations** : ajoutez vos utilisateurs et utilisatrices au groupe [!DNL forms-users]. Les membres du groupe [!DNL forms-users] ont les autorisations de créer un formulaire adaptatif. Pour obtenir une liste détaillée des groupes d’utilisateurs et d’utilisatrices spécifiques aux formulaires, voir [Groupes et autorisations](forms-groups-privileges-tasks.md).
 
@@ -118,7 +120,7 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
 
 * **Autorisations** : ajoutez vos utilisateurs et utilisatrices à [!DNL forms-users] pour leur fournir les autorisations de création d’un formulaire adaptatif. Pour obtenir une liste détaillée des groupes d’utilisateurs et d’utilisatrices spécifiques aux formulaires, voir [Groupes et autorisations](forms-groups-privileges-tasks.md).
 
-* **Un thème de formulaire adaptatif** : un thème contient des détails de style pour les composants et les panneaux. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème, le style spécifié se reflète sur les composants correspondants. Vous pouvez [&#x200B; créer un thème &#x200B;](themes.md) ou [&#x200B; importer un thème existant](import-export-forms-templates.md#uploading-a-theme). Vous pouvez également déployer l’[archétype le plus récent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=fr#create-project) pour obtenir des exemples de thèmes.
+* **Un thème de formulaire adaptatif** : un thème contient des détails de style pour les composants et les panneaux. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème, le style spécifié se reflète sur les composants correspondants. Vous pouvez [ créer un thème ](themes.md) ou [ importer un thème existant](import-export-forms-templates.md#uploading-a-theme). Vous pouvez également déployer l’[archétype le plus récent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=fr#create-project) pour obtenir des exemples de thèmes.
 
 * **Modèle de formulaire adaptatif** : un modèle fournit une structure de base et définit l’aspect, c’est-à-dire la mise en page et les styles, d’un formulaire adaptatif. Il comporte des composants pré-formatés contenant certaines propriétés et une certaine structure de contenu. Il fournit également les options permettant de définir un thème et une action d’envoi. Le thème définit l’aspect et l’action d’envoi définit l’action à entreprendre lors de l’envoi d’un formulaire adaptatif. Par exemple, l’envoi des données collectées à une source de données. Le service cloud prend en charge deux types de modèles :
 
@@ -183,7 +185,8 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
 
    En fonction du type de formulaire adaptatif, les éléments de formulaire présents dans le schéma JSON <!--XFA form template, XML schema or --> ou le modèle de données de formulaire (FDM) associé sont affichés dans l’onglet **[!UICONTROL Objets de modèle de données]** de l’**[!UICONTROL Explorateur de contenu]** dans la barre latérale. Vous pouvez également faire glisser ces éléments pour créer votre formulaire adaptatif.
 
-<!-- ## Create an Adaptive Form based on a Form Data Model {#fdm}
+<!--
+ ## Create an Adaptive Form based on a Form Data Model {#fdm}
 
 [Data integration](data-integration.md) lets you integrate multiple data sources and bring their entities and services together to create a form data model. It is an extension of JSON schema. You can use a Form Data Model to create an Adaptive Form. The entities or data model objects configured in a Form Data Model are available as data model objects for form authoring. They are bound to respective data sources and used to prefill a form and write submitted data back to the respective data sources. You can also call services configured in a Form Data Model using Adaptive Form rules.
 
@@ -230,7 +233,8 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 
 >[!NOTE]
 >
->You can also change the schema for an Adaptive Form. For detailed steps, see [Edit Form Model properties of an Adaptive Form](#edit-form-model2). -->
+>You can also change the schema for an Adaptive Form. For detailed steps, see [Edit Form Model properties of an Adaptive Form](#edit-form-model2).
+-->
 
 ## Modification des propriétés du modèle de formulaire d’un formulaire adaptatif {#edit-form-model-foundation-components}
 

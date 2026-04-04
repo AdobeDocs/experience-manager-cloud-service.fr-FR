@@ -5,7 +5,7 @@ exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 feature: Developing
 role: Admin, Developer
 index: false
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 95%
@@ -148,7 +148,7 @@ Expérimenter le comportement d’une SPA pour l’utilisateur, puis inspecter l
 
    ![Aperçu de la page d’accueil du projet SPA WKND](assets/wknd-preview.png)
 
-   Notez la structure des pages, y compris la navigation vers les pages enfants, le menu et les fiches d’article.
+   Notez la structure des pages, y compris la navigation vers les pages enfants, le menu et les cartes d’article.
 
 1. Accédez à une page enfant à l’aide du menu et observez que la page se charge immédiatement sans qu’il faille procéder à une actualisation.
 

@@ -6,7 +6,7 @@ feature: Metadata
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '745'
 ht-degree: 91%
@@ -44,7 +44,8 @@ L’importation de métadonnées est asynchrone et ne nuit pas aux performances 
    * Le format de la date dépend de lʼen-tête de la colonne et du format quʼelle contient. Par exemple, si la date est conforme au format `yyyy-MM-dd'T'HH:mm:ssXXX`, lʼen-tête de colonne correspondant doit être `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`.
    * Le format de date par défaut est `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`.
 
-<!-- Hidden via cqdoc-17869>
+<!--
+ Hidden via cqdoc-17869>
 
 >[!CAUTION]
 >

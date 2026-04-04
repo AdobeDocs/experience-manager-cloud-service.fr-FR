@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1567'
 ht-degree: 42%
@@ -20,7 +20,7 @@ Examinons à présent les différentes mises en œuvre d’un éditeur de règle
 
 ## Définir le focus sur un autre panneau sur le bouton cliquer si le premier panneau est valide
 
-<span class="preview">Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features). </span>
+<span class="preview">Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 L’éditeur de règles vous permet de valider des mises en page de panneau, telles que des onglets horizontaux, verticaux, des accordéons ou un clic sur un bouton de l’assistant, puis de définir la sélection sur un objet de formulaire dans un autre panneau. Vous pouvez utiliser cette fonctionnalité pour améliorer la navigation dans les formulaires et l’expérience utilisateur.
 
@@ -115,11 +115,13 @@ Lorsque l’utilisateur indique qu’il habite à l’adresse résidentielle act
 
 ![Plus de justificatif demandé](assets/additionalproofrequested.png)
 
-<!-- ## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
+<!--
+ ## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
 
 In [!DNL Experience Manager Forms] versions prior to [!DNL Experience Manager 6.1 Forms] feature pack 1, form authors and developers used to write expressions in the Scripts tab of the Edit component dialog to add dynamic behavior to Adaptive Forms. The Scripts tab is now replaced by the rule editor.
 
-Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor. -->
+Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor.
+-->
 
 ### Appeler service de modèle de données de formulaire {#invoke}
 
@@ -147,11 +149,13 @@ Lorsque vous entrez une règle Lorsque sur le bouton radio pour implémenter ce 
 
 Dans l’exemple de règle, l’instruction suivante dans la section Lorsque est la condition qui, si elle renvoie True, exécute les actions spécifiées dans la section Alors.
 
-<!-- The rule appears as follows in the code editor.
+<!--
+ The rule appears as follows in the code editor.
 
 ![when-rule-example-code](assets/when-rule-example-code.png) 
 
-Rule in the code editor -->
+Rule in the code editor
+-->
 
 ### Utilisation d’une sortie de fonction dans une règle {#using-a-function-output-in-a-rule}
 

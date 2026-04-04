@@ -4,7 +4,7 @@ description: Découvrez comment télécharger une ou plusieurs ressources et leu
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1400'
 ht-degree: 1%
@@ -102,15 +102,19 @@ To download multiple assets and their renditions, execute the following steps:
 
     If any of the selected asset is a licensed asset, click the license of the asset in left pane to see its preview, which enables you to select **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** and then click **[!UICONTROL Download]**. The preview of the license displays only if the asset is approved using Assets as a Cloud Service authoring environment. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
-    <!--![download-multiple-license](/help/assets/assets/download-multiple-license.png)-->
+    ![download-multiple-license](/help/assets/assets/download-multiple-license.png)
+-->
 
-<!--1. On the Content Hub homepage, select the asset and click **Download**. The **Download assets** dialog box displays a license or list of licenses associated with the selected assets in the left pane. 
+<!--
+1. On the Content Hub homepage, select the asset and click **Download**. The **Download assets** dialog box displays a license or list of licenses associated with the selected assets in the left pane. 
 1. Click a license in the left pane to see its PDF in the middle pane and the associated assets with it in the right pane. The license PDF preview is displayed only if the license is approved in your Assets as a Cloud Service environment. [Approve the license PDFs](/help/assets/approve-assets-content-hub.md) of the selected assets to see their previews.
 1. Optional: Click ![remove-icon](/help/assets/assets/remove-icon.svg) to remove a license from the dialog box.
 1. Select **I have read and accept all the terms and conditions mentioned above.** 
-1. Click **Download** to download the selected assets.-->
+1. Click **Download** to download the selected assets.
+-->
 
-<!---This dialog box displays the list of licenses associated with the selected assets in the left pane. Select a license to preview its terms and conditions (in pdf format) in the middle pane and the preview of the associated assets to the license in the right. Reviewed licenses are highlighted in light blue.
+<!--
+-This dialog box displays the list of licenses associated with the selected assets in the left pane. Select a license to preview its terms and conditions (in pdf format) in the middle pane and the preview of the associated assets to the license in the right. Reviewed licenses are highlighted in light blue.
 
 
 The dialog box that displays depends on whether the download list includes expired assets or only non-expired assets. <br/>
@@ -128,13 +132,16 @@ The dialog box that displays depends on whether the download list includes expir
 
 1. Click  ![remove-icon](/help/assets/assets/remove-icon.svg) to remove a license from the download dialog box. 
 
-1. Accept the terms and conditions and then click **Download** to download assets associated with the available licenses in the left pane.-->
+1. Accept the terms and conditions and then click **Download** to download assets associated with the available licenses in the left pane.
+-->
 <!--![download-multiple-license](/help/assets/assets/download-multiple-license.png)-->
 
-<!---
+<!--
+-
 ### Download non-licensed Assets {#download-non-licensed-assets}
 
- To download non-licensed assets, select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail.-->
+ To download non-licensed assets, select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail.
+-->
 
 ## Types de rendus {#types-of-renditions}
 
@@ -146,7 +153,7 @@ En savoir plus sur [affichage et gestion des rendus dans [!DNL Experience Manage
 
 * [Rendus statiques](/help/assets/renditions.md#static-renditions) : les rendus statiques sont des versions précréées des ressources numériques, généralement générées lors de l’ingestion ou de la modification des ressources. Ils sont optimisés pour des utilisations et des plateformes spécifiques, telles que les miniatures web, les formats compatibles avec les appareils mobiles pour les conceptions réactives ou les fichiers haute résolution pour l’impression, offrant ainsi une expérience rationalisée et cohérente.
 
-* [Rendus dynamiques](/help/assets/renditions.md#dynamic-renditions) : les rendus dynamiques sont des versions personnalisées en temps réel des ressources permettant d’effectuer diverses actions, telles que le redimensionnement des images pour différentes résolutions d’appareil ou le recadrage pour s’adapter à divers proportions. Ces rendus vous permettent d’offrir des expériences personnalisées et optimisées pour des besoins plus larges. Les rendus dynamiques des ressources sont créés dans [!DNL Adobe Experience Manager Assets] environnement de création. Pour plus d’informations sur les étapes requises pour activer les rendus dynamiques, voir [&#x200B; Activation des rendus dynamiques &#x200B;](#enable-dynamic-media-renditions).
+* [Rendus dynamiques](/help/assets/renditions.md#dynamic-renditions) : les rendus dynamiques sont des versions personnalisées en temps réel des ressources permettant d’effectuer diverses actions, telles que le redimensionnement des images pour différentes résolutions d’appareil ou le recadrage pour s’adapter à divers proportions. Ces rendus vous permettent d’offrir des expériences personnalisées et optimisées pour des besoins plus larges. Les rendus dynamiques des ressources sont créés dans [!DNL Adobe Experience Manager Assets] environnement de création. Pour plus d’informations sur les étapes requises pour activer les rendus dynamiques, voir [ Activation des rendus dynamiques ](#enable-dynamic-media-renditions).
 
 * [Recadrage intelligent](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles) : le recadrage intelligent se concentre uniquement sur la partie essentielle d’une ressource pendant le processus de recadrage. Le recadrage intelligent Dynamic Media tire parti de l’intelligence artificielle optimisée par Adobe AI pour effectuer le suivi du point ciblé, en s’assurant que nos ressources ont l’aspect le plus favorable quelle que soit la taille de l’écran. [!DNL Adobe Experience Manager] recadrage intelligent affiche la largeur et la hauteur des rendus d’une ressource avec le titre. Pour en savoir plus, consultez la section [Utilisation du recadrage intelligent avec AEM Assets Dynamic Media](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 
@@ -166,7 +173,7 @@ Pour activer les rendus dynamiques :
 
    Une fois que vous avez accès à Dynamic Media avec les fonctionnalités OpenAPI, toutes les ressources marquées comme `Approved` peuvent être diffusées au public à l’aide de Dynamic Media.
 
-1. Définissez la [&#x200B; cible d’approbation de la ressource &#x200B;](/help/assets/approve-assets-content-hub.md#set-approval-target) sur Content Hub afin d’approuver les ressources uniquement pour Content Hub.
+1. Définissez la [ cible d’approbation de la ressource ](/help/assets/approve-assets-content-hub.md#set-approval-target) sur Content Hub afin d’approuver les ressources uniquement pour Content Hub.
 
 1. Activez le bouton (bascule) **[!UICONTROL Activer la disponibilité des rendus]** disponible dans l’onglet **[!UICONTROL Rendus]** de l’interface utilisateur [Configuration](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub).
 
@@ -180,7 +187,7 @@ Pour activer les rendus dynamiques :
    > 
    > Les rendus dynamiques sont disponibles uniquement pour les ressources d’image.
 
-## Questions fréquemment posées {#faqs-download-assets-content-hub}
+## Questions fréquentes {#faqs-download-assets-content-hub}
 
 ### Comment télécharger une ou plusieurs ressources à partir d’AEM Assets Content Hub ?
 

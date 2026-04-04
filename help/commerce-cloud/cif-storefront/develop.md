@@ -10,7 +10,7 @@ thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
 role: Admin
 index: false
-source-git-commit: 856442039fcd25ec675a6258d182f7a35f590c3c
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '904'
 ht-degree: 74%
@@ -28,7 +28,7 @@ Le développement de projets AEM Commerce basés sur Commerce Integration Frame
 
 ## Développement local avec le SDK AEM as a Cloud Service {#local}
 
->[!VIDEO](https://video.tv.adobe.com/v/347036/?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
 
 Un environnement de développement local est recommandé pour travailler avec des projets CIF. Le module complémentaire CIF fourni pour AEM as a Cloud Service est également disponible pour le développement local. Il peut être téléchargé à partir du [portail de distribution de logiciels](/help/implementing/developing/tools/package-manager.md#software-distribution).
 
@@ -37,7 +37,7 @@ Le module complémentaire est fourni sous la forme d’une archive de fonctionna
 >[!TIP]
 >
 >**Vous découvrez AEM as a Cloud Service ?**
->&#x200B;>Consultez [un guide plus détaillé de configuration d’environnement de développement local à l’aide d’AEM as a Cloud Service SDK.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=fr)
+>Consultez [un guide plus détaillé de configuration d’environnement de développement local à l’aide d’AEM as a Cloud Service SDK.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=fr)
 
 ### Logiciels requis {#required-software}
 
@@ -52,7 +52,7 @@ Les logiciels suivants doivent être installés localement :
 
 ### Accès au module complémentaire CIF {#accessing-add-on}
 
-Le module complémentaire CIF peut être téléchargé sous la forme d’un fichier zip à partir du portail [&#x200B; Distribution de logiciels .](/help/implementing/developing/tools/package-manager.md) Le fichier zip contient le module complémentaire CIF en tant qu’**archive des fonctionnalités Sling**, il ne s’agit pas d’un package AEM. Les listes de SDK sont accessibles avec une licence AEM as a Cloud Service.
+Le module complémentaire CIF peut être téléchargé sous la forme d’un fichier zip à partir du portail [ Distribution de logiciels .](/help/implementing/developing/tools/package-manager.md) Le fichier zip contient le module complémentaire CIF en tant qu’**archive des fonctionnalités Sling**, il ne s’agit pas d’un package AEM. Les listes de SDK sont accessibles avec une licence AEM as a Cloud Service.
 
 >[!TIP]
 >
@@ -79,7 +79,7 @@ Pour le développement local du module complémentaire CIF à l’aide d’AEM a
 
    * Cette variable est utilisée par AEM pour se connecter à votre système commercial. Le module complémentaire CIF comprend un proxy inverse local pour rendre le point d’entrée Commerce GraphQL disponible localement. Ce proxy est utilisé par les outils de création CIF (console de produit et sélecteurs) et pour les composants CIF côté client effectuant des appels GraphQL directs.
 
-   * Cette variable doit également être configurée pour l’environnement AEM as a Cloud Service. Pour plus d’informations sur les variables, voir [Configuration d’OSGi pour AEM as a Cloud Service.](/help/implementing/deploying/configuring-osgi.md#local-development)
+   * Cette variable doit également être configurée pour l’environnement AEM as a Cloud Service. Pour plus d’informations sur les variables, voir [Configuration d’OSGi pour AEM as a Cloud Service.](/help/implementing/deploying/configuring-osgi.md#local-development)
 
    * Exemple sous macOS :
 

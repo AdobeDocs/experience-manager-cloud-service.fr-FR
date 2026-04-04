@@ -5,7 +5,7 @@ exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 90%
@@ -35,7 +35,7 @@ Les parcours de documentation sont conçus autour des principes de bonne pratiqu
 
 Si vous souhaitez savoir la manière dont Adobe recommande de résoudre des problèmes d’activité liés aux sites grâce à AEM, les parcours AEM Sites représentent un parfait point de départ.
 
-## Public {#audience}
+## Audience {#audience}
 
 Ce parcours est destiné à l’auteur de contenu AEM Commerce. Ce parcours présente les exigences, les étapes et l’approche à adopter pour démarrer et gérer les pages de catalogue, les modèles ainsi que les expériences produit complètes.
 

@@ -6,7 +6,7 @@ feature: Image Presets,Viewers,Renditions
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2604'
 ht-degree: 63%
@@ -61,7 +61,7 @@ Les paramètres d’image prédéfinis définissent la manière dont Dynamic Med
 
 ### Génération de rendu dans AEM as a Cloud Service{#rendition-generation-in-aemaacs}
 
-Dans AEM as a Cloud Service, les rendus sont générés à l’aide des [microservices de ressources](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#). Le workflow Ressource de mise à jour de la gestion des ressources numériques ne peut pas être personnalisé dans Cloud Service.
+Dans AEM as a Cloud Service, les rendus sont générés à l’aide des [microservices de ressources](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#). Le workflow Ressource de mise à jour de la gestion des ressources numériques ne peut pas être personnalisé dans Cloud Service.
 
 Les points importants à prendre en compte sont les suivants :
 
@@ -73,7 +73,7 @@ Les paramètres d’image prédéfinis font référence aux rendus disponibles a
 
 **Pour contrôler les rendus générés, procédez comme suit**
 
-1. Créer ou modifier un [profil de traitement](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#).
+1. Créer ou modifier un [profil de traitement](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#).
 2. Configurez les définitions de rendu requises.
 3. Appliquez le profil de traitement au dossier approprié.
 
@@ -133,7 +133,8 @@ Using the default process arguments, the first page of a PDF/AI document is rast
 
 Max Width and Max Height limit the resolution at which to rasterize. For example, if the maximums are unchanged, and Resolution is set to 300 ppi, a US Letter document is rasterized at 186 ppi. That is, the document is 1581 x 2046 pixels.
 
-The `Rasterize PDF/AI Image Preview Rendition` process component has a maximum defined to ensure that it does not create overly large images in memory. Such large images can overflow the memory provided to the JVM (Java&trade; Virtual Machine). Care must be taken to provide the JVM with enough memory to manage the configured number of parallel workflows, with each having the potential to create an image at the maximum configured size. -->
+The `Rasterize PDF/AI Image Preview Rendition` process component has a maximum defined to ensure that it does not create overly large images in memory. Such large images can overflow the memory provided to the JVM (Java&trade; Virtual Machine). Care must be taken to provide the JVM with enough memory to manage the configured number of parallel workflows, with each having the potential to create an image at the maximum configured size.
+-->
 
 <!--
 ### InDesign (INDD) file format {#indesign-indd-file-format}
@@ -327,7 +328,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
     </ul>
     <div>
       L’accentuation est décrite dans la vidéo
-     <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Utilisation de l’accentuation des images avec Experience Manager Dynamic Media</a>, dans la rubrique d’aide en ligne <a href="https://experienceleague.adobe.com/fr/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">Accentuation d’une image</a> et dans le fichier téléchargeable au format PDF <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf?lang=fr">Bonnes pratiques pour l’accentuation des images dans Dynamic Media Classic</a>.
+     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Utilisation de l’accentuation des images avec Experience Manager Dynamic Media</a>, dans la rubrique d’aide en ligne <a href="https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">Accentuation d’une image</a> et dans le fichier téléchargeable au format PDF <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Bonnes pratiques pour l’accentuation des images dans Dynamic Media Classic</a>.
     </div> </td>
   </tr>
   <tr>
@@ -347,7 +348,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
   </tr>
   <tr>
    <td><strong>Modificateur d’image</strong></td>
-   <td><p>Au-delà des paramètres d’image courants disponibles dans l’UI, Dynamic Media prend en charge de nombreuses modifications d’image avancées que vous pouvez spécifier dans le champ <strong>Modificateurs d’images</strong>. Ces paramètres sont définis dans la <a href="https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview">référence des commandes du protocole de serveur d’images</a>.</p> <p>Important : La fonctionnalité suivante répertoriée dans l’API n’est pas prise en charge :</p>
+   <td><p>Au-delà des paramètres d’image courants disponibles dans l’UI, Dynamic Media prend en charge de nombreuses modifications d’image avancées que vous pouvez spécifier dans le champ <strong>Modificateurs d’images</strong>. Ces paramètres sont définis dans la <a href="https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview">référence des commandes du protocole de serveur d’images</a>.</p> <p>Important : La fonctionnalité suivante répertoriée dans l’API n’est pas prise en charge :</p>
     <ul>
      <li>Commandes de base de création de modèles et de rendu de texte : <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> et <code>textPs=</code></li>
      <li>Commandes de localisation : <code>locale=</code> et <code>req=xlate</code></li>
@@ -364,7 +365,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
 
 ## Définir des options de paramètre prédéfini d’image à l’aide de modificateurs d’image {#defining-image-preset-options-with-image-modifiers}
 
-Outre les options disponibles dans les onglets Simple et Avancé, vous pouvez définir des modificateurs d’image afin de disposer d’un plus grand nombre d’options lors de la définition de paramètres d’image prédéfinis. Le rendu des images repose sur l’API de rendu d’images de Dynamic Media et est défini en détail dans la [Référence du protocole HTTP](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api).
+Outre les options disponibles dans les onglets Simple et Avancé, vous pouvez définir des modificateurs d’image afin de disposer d’un plus grand nombre d’options lors de la définition de paramètres d’image prédéfinis. Le rendu des images repose sur l’API de rendu d’images de Dynamic Media et est défini en détail dans la [Référence du protocole HTTP](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api).
 
 Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l’aide des modificateurs d’image.
 
@@ -372,7 +373,7 @@ Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l
 >
 >Certains modificateurs d’image [ne peuvent pas être utilisés dans Experience Manager](#advanced-tab-options).
 
-* [op_invert](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert) : inverse chaque composant de couleur pour générer un effet d’image négative.
+* [op_invert](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert) : inverse chaque composant de couleur pour générer un effet d’image négative.
 
   ```xml {.line-numbers}
   &op_invert=1
@@ -380,7 +381,7 @@ Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l
 
   ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur) : applique un effet de flou à l’image.
+* [op_blur](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur) : applique un effet de flou à l’image.
 
   ```xml {.line-numbers}
   &op_blur=7
@@ -396,7 +397,7 @@ Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l
 
   ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [op_brightness](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness) : augmente ou diminue la luminosité.
+* [op_brightness](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness) : augmente ou diminue la luminosité.
 
   ```xml {.line-numbers}
   &op_brightness=58
@@ -404,7 +405,7 @@ Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l
 
   ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opac](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac) : permet de régler l’opacité de l’image. Cet attribut vous permet de diminuer l’opacité du premier plan.
+* [opac](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac) : permet de régler l’opacité de l’image. Cet attribut vous permet de diminuer l’opacité du premier plan.
 
   ```xml {.line-numbers}
   opac=29

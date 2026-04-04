@@ -4,7 +4,7 @@ description: Ce tutoriel vous permet de prendre en main un nouveau projet Adobe�
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1921'
 ht-degree: 100%
@@ -72,9 +72,11 @@ Le modèle standard AEM Forms vous permet de prendre rapidement en main un proj
 
 ### Lier votre propre source de contenu
 
-<!--Your newly created GitHub repository points to [example content stored in a Google Drive folder](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). This read-only content provides a great starting point for your forms. Feel free to copy it into your own Google Drive and customize it to fit your needs.
+<!--
+Your newly created GitHub repository points to [example content stored in a Google Drive folder](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). This read-only content provides a great starting point for your forms. Feel free to copy it into your own Google Drive and customize it to fit your needs.
 
-![Sample Content on Google Drive](/help/edge/assets/folder-with-sample-content.png)-->
+![Sample Content on Google Drive](/help/edge/assets/folder-with-sample-content.png)
+-->
 
 Pour copier l’exemple de contenu dans votre propre dossier de contenu et pointer votre référentiel GitHub vers votre propre dossier de contenu :
 
@@ -266,7 +268,8 @@ Félicitations. Vous avez correctement configuré votre environnement de dévelo
 ## Ajouter un bloc de formulaires adaptatifs à votre projet AEM existant
 
 <!--
->[!VIDEO](https://video.tv.adobe.com/v/3427789)-->
+>[!VIDEO](https://video.tv.adobe.com/v/3427789)
+-->
 
 Si vous disposez déjà d’un projet AEM, vous pouvez intégrer le bloc de formulaires adaptatifs à votre projet actuel pour commencer à créer le formulaire.
 

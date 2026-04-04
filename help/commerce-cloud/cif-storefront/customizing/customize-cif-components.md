@@ -5,7 +5,7 @@ feature: Commerce Integration Framework
 role: Admin
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '2317'
 ht-degree: 85%
@@ -128,7 +128,7 @@ Les produits et les données de produit affichés dans AEM sont stockés dans Ad
 
    >[!TIP]
    >
-   > Pour plus d’informations sur la [&#x200B; gestion du cache, consultez le guide de l’utilisateur d’Adobe Commerce.](https://docs.magento.com/user-guide/system/cache-management.html)
+   > Pour plus d’informations sur la [ gestion du cache, consultez le guide de l’utilisateur d’Adobe Commerce.](https://docs.magento.com/user-guide/system/cache-management.html)
 
 ## Utilisation d’un IDE GraphQL pour vérifier l’attribut {#use-graphql-ide}
 

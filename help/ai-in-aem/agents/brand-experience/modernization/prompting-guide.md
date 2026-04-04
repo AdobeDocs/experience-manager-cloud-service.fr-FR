@@ -2,14 +2,14 @@
 title: Guide de l’invite pour l’agent de modernisation d’expérience
 description: Ce guide fournit des conseils pour une invite efficace de l’agent de modernisation de l’expérience et décrit ce que font ses compétences.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
-source-git-commit: e2a9c55644c0d9542f6a299f0df30a3dfd4a55de
+role: User, Admin, Developer
+exl-id: 4771606b-a327-48b3-b142-44e03e4dc41d
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '2696'
 ht-degree: 0%
 
 ---
-
 
 # Guide de l’invite pour l’agent de modernisation d’expérience {#prompting-guide}
 
@@ -403,7 +403,7 @@ Utilisez cette invite pour résoudre les problèmes liés aux blocs, aux images,
 #### Ce qu’il faut savoir {#wtk-debugging}
 
 * Les problèmes courants ont des schémas connus :
-   * **Images montrant « about:error »** : appel `createOptimizedPicture` généralement manquant dans le bloc JS, ou appelé avant la restructuration de DOM
+   * **Images montrant « about:error«** : appel `createOptimizedPicture` généralement manquant dans le bloc JS, ou appelé avant la restructuration de DOM
    * **Blocs non rendus** : vérifiez le format du nom du bloc dans Markdown et vérifiez que le bloc contient à la fois des fichiers `.js` et `.css` en `blocks/`.
    * **Le fichier CSS ne se charge pas** : vérifiez les chemins d’accès aux fichiers, l’existence du fichier CSS et l’onglet Réseau dans le navigateur.
    * **Les modifications n’apparaissent pas** : la synchronisation du code prend entre 3 et 5 secondes. Essayez une actualisation complète (Ctrl + Maj + R).

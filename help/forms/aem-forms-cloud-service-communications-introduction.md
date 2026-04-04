@@ -6,7 +6,7 @@ feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
 workflow-type: tm+mt
 source-wordcount: '2795'
 ht-degree: 32%
@@ -18,8 +18,8 @@ ht-degree: 32%
 
 > **Disponibilité de la version**
 >
-> * **AEM 6.5** : [Présentation d’AEM Document Services](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=fr)
-> * **AEM as a Cloud Service** : cet article
+> * **AEM 6.5** : [Présentation d’AEM Document Services](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
+> * **** : cet article
 
 ## Présentation
 
@@ -92,7 +92,7 @@ L’API de génération de documents renvoie le document PDF ou le document AFP 
 
 <span class="preview"> Le téléchargement des PDF générés à l’aide de l’API de génération de documents vers la fonctionnalité de stockage Blob d’Azure est effectué sous [Programme des utilisateurs précoces](/help/forms/early-access-ea-features.md). Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
 
->
+>[!NOTE]
 >
 > Les API de génération de documents incluent des points d’entrée de génération de sortie synchrones et par lots. Ces API prennent en charge l’authentification serveur à serveur à l’aide de JWT ou OAuth, selon le point d’entrée. Pour en savoir plus sur les API de génération de documents, [cliquez ici](/help/forms/aem-forms-communication-api-overview.md#document-generation-apis).
 
@@ -110,7 +110,7 @@ Vous pouvez utiliser des API de génération de documents pour créer des docume
 
 Les API de manipulation de documents Communications (transformation de documents) permettent d’associer et de réorganiser les documents PDF. En règle générale, vous créez un DDX et l’envoyez aux API de manipulation de document pour assembler ou réorganiser un document. Le [document DDX](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) décrit comment utiliser les documents source pour générer un ensemble de documents désirés. La documentation de référence DDX fournit des informations détaillées sur toutes les opérations prises en charge.
 
->
+>[!NOTE]
 >
 > Les API de manipulation de documents prennent en charge l’authentification serveur à serveur à l’aide de JWT. Pour en savoir plus sur les API de manipulation de documents, [cliquez ici](/help/forms/aem-forms-communication-api-overview.md#document-manipulation-apis).
 
@@ -153,7 +153,7 @@ Le service d’extraction de documents vous permet d’obtenir les propriétés 
 * Extrayez les droits d’utilisation activés dans un document PDF. Les utilisateurs récupèrent les droits d’utilisation activés ou désactivés dans un document PDF pour permettre l’extensibilité de Adobe Acrobat Reader.
 * Obtenez les informations de métadonnées présentes dans un document PDF. Les métadonnées sont des informations sur le document (à la différence du contenu du document, tel que le texte et les graphiques). La plateforme de métadonnées extensible Adobe (XMP) est un standard de gestion des métadonnées de document. Le service XMP Utilities peut récupérer des métadonnées XMP à partir de documents PDF et exporter des métadonnées XMP vers des documents PDF.
 
->
+>[!NOTE]
 >
 > Les API d’extraction de documents prennent en charge l’authentification serveur à serveur à l’aide d’OAuth. Pour en savoir plus sur les API d’extraction de documents, [cliquez ici](/help/forms/aem-forms-communication-api-overview.md#document-extraction-apis).
 >
@@ -170,7 +170,7 @@ Les API de conversion de documents Communications vous aident à convertir un do
 
 Convertit un document PDF en fichier XDP. Pour réussir la conversion d’un document PDF en fichier XDP, le document PDF doit contenir un flux XFA dans le dictionnaire.
 
->
+>[!NOTE]
 >
 > Les API de conversion de documents prennent en charge l’authentification serveur à serveur à l’aide d’OAuth. Pour en savoir plus sur les API de conversion de documents, [cliquez ici](/help/forms/aem-forms-communication-api-overview.md#document-conversion-apiss).
 
@@ -191,7 +191,7 @@ Les API Signature permettent à votre entreprise de garantir la sécurité et l
 
 <span class="preview"> Supprimer la signature du champ de signature spécifié et supprimer le champ de signature spécifié d’un document PDF sont disponibles sous le programme des utilisateurs et utilisatrices précoces. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
 
->
+>[!NOTE]
 >
 > Les API Document Assurance prennent en charge l’authentification serveur à serveur à l’aide d’OAuth. Pour en savoir plus sur les API Document Assurance, [cliquez ici](/help/forms/aem-forms-communication-api-overview.md#document-assurance-apis).
 
@@ -294,7 +294,7 @@ Après l’intégration, pour activer la fonctionnalité Communications pour vot
 
 >[!NOTE]
 >
-> Pour activer et configurer les API de manipulation de documents, ajoutez la règle suivante à la configuration [Dispatcher &#x200B;](setup-local-development-environment.md#forms-specific-rules-to-dispatcher) :
+> Pour activer et configurer les API de manipulation de documents, ajoutez la règle suivante à la configuration [Dispatcher ](setup-local-development-environment.md#forms-specific-rules-to-dispatcher) :
 >
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`

@@ -6,8 +6,8 @@ index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
 feature: Headless
 role: Admin, User, Developer
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
-workflow-type: ht
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 100%
 
@@ -75,7 +75,7 @@ L’image est remplacée par celle que vous avez sélectionnée.
 
 L’éditeur universel vous permet d’interagir avec votre contenu dans son contexte, en voyant le contenu tel qu’il est diffusé sur les appareils de vos utilisateurs.
 
-1. Par défaut, l’éditeur effectue le rendu de la version de bureau de votre contenu. Sélectionnez le bouton de l’émulateur en haut à droite de la barre d’outils de l’éditeur pour modifier l’appareil cible.
+1. Par défaut, l’éditeur effectue le rendu de la version de bureau de votre contenu. Sélectionnez le bouton de l’émulateur en haut à droite de la barre d’outils de l’éditeur universel pour modifier l’appareil cible.
 
    ![Élément de menu de l’émulateur](assets/do-not-localize/ue-emulator-1.png)
 

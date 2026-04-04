@@ -1,5 +1,5 @@
 ---
-title: Connexion d’AEM Forms à Adobe Experience Platform (AEP) | Guide d’intégration des données
+title: Connecter AEM Forms à Adobe Experience Platform (AEP) | Guide d’intégration des données
 description: Découvrez comment intégrer AEM Forms à Adobe Experience Platform pour exploiter les profils client, envoyer des données de formulaire et créer des expériences personnalisées. Guide détaillé.
 contentOwner: Khushwant Singh
 docset: CloudService
@@ -7,7 +7,7 @@ role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: b0eb19d3-0297-4583-8471-edbb7257ded4
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2053'
 ht-degree: 6%
@@ -16,7 +16,7 @@ ht-degree: 6%
 
 # Intégration d’AEM Forms à Adobe Experience Platform (AEP) {#aem-forms-aep-integration}
 
-<span class="preview"> La possibilité de connecter Adaptive Forms (AEM Forms) à Adobe Experience Platform (AEP) s’inscrit dans le cadre du programme d’accès anticipé. Pour demander l’accès à la fonctionnalité, envoyez simplement un e-mail à partir de votre adresse officielle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com?subject=Request%20for%20Early%20Access%20to%20AEP%20Connector%20\(AEM%20Forms%20Integration%20with%20Adobe%20Experience%20Platform\)&body=Dear%20AEM%20Forms%20Team%2C%0D%0A%0D%0AI%20hope%20this%20message%20finds%20you%20well.%0D%0A%0D%0AI%20am%20writing%20to%20request%20access%20to%20the%20Early%20Access%20Program%20for%20the%20AEP%20Connector%2C%20which%20enables%20integration%20between%20AEM%20Forms%20and%20Adobe%20Experience%20Platform.%0D%0A%0D%0AOrganization%20Name%3A%20%5BYour%20organization%20name%5D%0D%0AOrganization%20ID%3A%20%5BYour%20organization%20ID%2C%20if%20available%5D%0D%0AUse%20Case%3A%20%5BBriefly%20describe%20your%20intended%20use%20case%2C%20including%20goals%20or%20benefits%20you%20aim%20to%20achieve%20with%20the%20integration%5D%0D%0A%0D%0AThank%20you%20for%20your%20time%20and%20consideration.%0D%0A%0D%0ABest%20regards%2C%0D%0A%5BYour%20Full%20Name%5D%0D%0A%5BYour%20Job%20Title%2C%20if%20applicable%5D%0D%0A%5BYour%20Contact%20Information%2C%20if%20appropriate%5D). Vous pouvez également consulter la page <a href="/help/forms/early-access-ea-features.md">Programme d’accès anticipé</a> pour découvrir toutes les innovations et fonctionnalités disponibles. . </span>
+<span class="preview"> La possibilité de connecter Adaptive Forms (AEM Forms) à Adobe Experience Platform (AEP) s’inscrit dans le cadre du programme d’accès anticipé. Pour demander l’accès à la fonctionnalité, envoyez simplement un e-mail à partir de votre adresse officielle à [](mailto:aem-forms-ea@adobe.com?subject=Request%20for%20Early%20Access%20to%20AEP%20Connector%20\(AEM%20Forms%20Integration%20with%20Adobe%20Experience%20Platform\)&body=Dear%20AEM%20Forms%20Team%2C%0D%0A%0D%0AI%20hope%20this%20message%20finds%20you%20well.%0D%0A%0D%0AI%20am%20writing%20to%20request%20access%20to%20the%20Early%20Access%20Program%20for%20the%20AEP%20Connector%2C%20which%20enables%20integration%20between%20AEM%20Forms%20and%20Adobe%20Experience%20Platform.%0D%0A%0D%0AOrganization%20Name%3A%20%5BYour%20organization%20name%5D%0D%0AOrganization%20ID%3A%20%5BYour%20organization%20ID%2C%20if%20available%5D%0D%0AUse%20Case%3A%20%5BBriefly%20describe%20your%20intended%20use%20case%2C%20including%20goals%20or%20benefits%20you%20aim%20to%20achieve%20with%20the%20integration%5D%0D%0A%0D%0AThank%20you%20for%20your%20time%20and%20consideration.%0D%0A%0D%0ABest%20regards%2C%0D%0A%5BYour%20Full%20Name%5D%0D%0A%5BYour%20Job%20Title%2C%20if%20applicable%5D%0D%0A%5BYour%20Contact%20Information%2C%20if%20appropriate%5D). Vous pouvez également consulter la page <a href="/help/forms/early-access-ea-features.md">Programme d’accès anticipé</a> pour découvrir toutes les innovations et fonctionnalités disponibles. </span>
 
 ## Vue d’ensemble {#overview}
 
@@ -59,23 +59,23 @@ La vidéo ci-dessous présente un guide détaillé sur les conditions préalable
 Avant de configurer le connecteur AEP dans AEM Forms, vérifiez que vous avez effectué les opérations suivantes dans Adobe Experience Platform :
 
 1. Configuration du schéma
-   * [Créer un schéma XDM](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/tutorials/create-schema-ui)
-   * [Activer le schéma pour le profilage](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
-   * [Définir un champ d’identité](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
+   * [Créer un schéma XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui)
+   * [Activer le schéma pour le profilage](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
+   * [Définir un champ d’identité](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
 
 2. Configuration des données
-   * [Créer un jeu de données](https://experienceleague.adobe.com/fr/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets)
-   * [Configurer une connexion en continu](https://experienceleague.adobe.com/fr/docs/experience-platform/ingestion/tutorials/create-streaming-connection) (vous aurez besoin de l’URL du point d’entrée en continu ultérieurement, alors prenez-en note maintenant.)
+   * [Créer un jeu de données](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets)
+   * [Configurer une connexion en continu](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/create-streaming-connection) (vous aurez besoin de l’URL du point d’entrée en continu ultérieurement, alors prenez-en note maintenant.)
 
 3. Authentification
-   * [Générer des informations d’identification d’API](https://experienceleague.adobe.com/fr/docs/experience-platform/landing/platform-apis/api-authentication#generate-credentials) (identifiant client et secret client) à partir de Adobe Developer Console
+   * [Générer des informations d’identification d’API](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#generate-credentials) (identifiant client et secret client) à partir de Adobe Developer Console
 
 
 ## Étapes de mise en œuvre
 
 ### &#x200B;1. Création d’une configuration cloud AEP
 
-1. Accédez à votre **instance Adobe Experience Manager** > **Outils** > **Services cloud** > **Adobe Experience Platform**.
+1. Accédez à votre **instance** > **Outils** > **Services cloud** > **Adobe Experience Platform**.
 1. Sélectionnez un **Conteneur de configurations** pour stocker la configuration.
 1. Cliquez sur **Créer** pour lancer l’assistant de configuration AEP
 1. Saisissez les informations suivantes :
@@ -100,7 +100,7 @@ Avant de configurer le connecteur AEP dans AEM Forms, vérifiez que vous avez ef
 Pour créer un formulaire adaptatif basé sur des composants de base avec une intégration de schéma, procédez comme suit :
 
 1. Accédez à l’assistant de création de formulaire :
-   * Accédez à votre **instance Adobe Experience Manager** > **Forms** > **Forms et documents**.
+   * Accédez à votre **instance** > **Forms** > **Forms et documents**.
    * Cliquez sur **Créer** > **Formulaire adaptatif**.
 1. Dans l’onglet **source**, sélectionnez un modèle de base.
 1. Dans l’onglet **Données**, sélectionnez l’option **Adobe Experience Platform**.
@@ -134,7 +134,7 @@ Pour créer un formulaire adaptatif basé sur des composants de base avec une in
 Pour créer un formulaire adaptatif basé sur les composants principaux avec intégration de schéma, procédez comme suit :
 
 1. Accédez à l’assistant de création de formulaire :
-   * Accédez à votre **instance Adobe Experience Manager** > **Forms** > **Forms et documents**.
+   * Accédez à votre **instance** > **Forms** > **Forms et documents**.
    * Cliquez sur **Créer** > **Formulaire adaptatif**.
 1. Dans l’onglet **source**, sélectionnez un modèle basé sur les composants principaux.
 1. Dans l’onglet **Données**, sélectionnez l’option **Adobe Experience Platform**.
@@ -168,7 +168,7 @@ Pour créer un formulaire adaptatif basé sur les composants principaux avec int
 Pour créer un formulaire adaptatif à l’aide de l’éditeur universel avec l’intégration de schémas, procédez comme suit :
 
 1. Accédez à l’assistant de création de formulaire :
-   * Accédez à votre **instance Adobe Experience Manager** > **Forms** > **Forms et documents**.
+   * Accédez à votre **instance** > **Forms** > **Forms et documents**.
    * Cliquez sur **Créer** > **Formulaire adaptatif**.
 1. Dans l’onglet **source**, sélectionnez le modèle basé sur Edge Delivery.
 1. Dans l’onglet **Données**, sélectionnez l’option **Adobe Experience Platform**.
@@ -250,12 +250,13 @@ R : Ce connecteur fonctionne avec les composants principaux de Forms adaptatif e
 R : Actuellement, chaque formulaire ne peut envoyer qu’à un seul jeu de données.
 
 **Q : Existe-t-il une limite au nombre d’envois de formulaire pouvant être traités ?**
-R : Les envois de formulaires sont soumis à l’ingestion par flux d’AEP [quotas et limites de débit](https://experienceleague.adobe.com/fr/docs/experience-platform/data-lifecycle/api/quota).
+R : Les envois de formulaires sont soumis à l’ingestion par flux d’AEP [quotas et limites de débit](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/api/quota).
 
 <!-- 
 >
 **Q: Can form attachments be sent to AEP?**
-A: No, form attachments cannot be directly sent to AEP. You would need to store attachments separately and only send metadata to AEP. -->
+A: No, form attachments cannot be directly sent to AEP. You would need to store attachments separately and only send metadata to AEP.
+-->
 
 ### Questions relatives à la mise en œuvre {#implementation-questions}
 
@@ -289,10 +290,10 @@ Pour commencer à utiliser cette intégration :
 ## Ressources connexes {#related-resources}
 
 * [Documentation AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=fr)
-* [Documentation Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=fr)
-* [&#x200B; Présentation du système XDM &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr)
-* [Ingestion par flux dans Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=fr)
-* [Présentation du profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr)
+* [Documentation ](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=fr)
+* [ Présentation du système XDM ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr)
+* [Ingestion par flux dans Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html)
+* [Présentation du profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
 * [Fonctionnalités d’accès anticipé AEM Forms](/help/forms/early-access-ea-features.md)
 * [Création d’un Forms adaptatif avec des composants principaux](/help/forms/creating-adaptive-form-core-components.md)
 * [Utilisation de modèles de données de formulaire dans AEM Forms](/help/forms/using-form-data-model.md)

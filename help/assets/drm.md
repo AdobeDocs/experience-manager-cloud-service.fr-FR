@@ -6,7 +6,7 @@ feature: Asset Management,DRM
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1374'
 ht-degree: 99%
@@ -75,7 +75,8 @@ Vous pouvez configurer le planificateur à l’aide des propriétés suivantes 
 * Le nombre maximal de ressources expirées dans une seule itération du planificateur est la valeur de la propriété `asset_expired_limit`.
 * Pour exécuter la tâche de façon périodique, définissez la valeur de la propriété `cq.dam.expiry.notification.scheduler.istimebased` sur `false` et définissez la valeur de la propriété `cq.dam.expiry.notification.scheduler.period.rule` avec l’heure en secondes.
 
-<!-- TBD: Web Console not available in CS.
+<!--
+ TBD: Web Console not available in CS.
 
 1. Open [!DNL Experience Manager] Configuration Manager.
 1. Choose **[!UICONTROL Adobe CQ DAM Expiry Notification]**. By default, **[!UICONTROL Time-based Scheduler]** is selected, which 

@@ -5,7 +5,7 @@ exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 69%
@@ -20,7 +20,7 @@ Découvrez comment les projets AEM sont créés avec Maven et les normes que vou
 
 Pour créer et déployer avec succès avec Cloud Manager, les projets AEM doivent respecter les instructions suivantes :
 
-* Les projets doivent être créés à l’aide d’[&#x200B; Apache Maven &#x200B;](https://maven.apache.org).
+* Les projets doivent être créés à l’aide d’[ Apache Maven ](https://maven.apache.org).
 * Un fichier `pom.xml` doit se trouver à la racine du référentiel Git. Ce fichier `pom.xml` peut renvoyer à autant de sous-modules (qui à leur tour peuvent comporter d’autres sous-modules, et ainsi de suite) que nécessaire.
 * Vous pouvez ajouter des références à d’autres référentiels d’artefact Maven dans vos fichiers `pom.xml`. L’accès aux [référentiels d’artefacts protégés par mot de passe](#password-protected-maven-repositories) est pris en charge s’il est configuré. Cependant, l’accès aux référentiels d’artefacts protégés par réseau n’est pas pris en charge.
 * Les packages de contenu déployables sont découverts en analysant les fichiers `.zip` de packages de contenu qui se trouvent dans un répertoire nommé `target`. Un nombre illimité de sous-modules peut produire des modules de contenu.
@@ -79,7 +79,7 @@ Si vous souhaitez générer un message simple uniquement lorsque la version est 
             <id>notCMBuild</id>
             <activation>
                   <property>
-                        <name>!env.CM_BUILD</name>
+                        <name>[!NOTE]nv.CM_BUILD</name>
                   </property>
             </activation>
             <build>

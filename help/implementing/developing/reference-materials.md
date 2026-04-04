@@ -4,7 +4,7 @@ description: AEM dispose d’API complètes et puissantes que vous pouvez utilis
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 71%
@@ -25,9 +25,11 @@ Les API suivantes sont essentielles pour AEM.
 | [IU Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | la pile Open Web d’Adobe, qui fournit divers composants essentiels (les ressources Granite 6.5 s’appliquent à AEMaaCS) ; |
 | [IU Coral](https://opensource.adobe.com/coral-spectrum/documentation/) | Style visuel d’Adobe pour les interfaces utilisateur cloud, conçu pour garantir une expérience utilisateur cohérente |
 
-<!---
+<!--
+-
 |Editor core JavaScript API reference|Provides all the base objects and concepts to support authoring of content resources|
---->
+-
+-->
 
 >[!NOTE]
 >

@@ -5,7 +5,7 @@ badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1140'
 ht-degree: 1%
@@ -43,7 +43,7 @@ Le service de télémétrie opérationnelle est conçu pour minimiser la collect
 * Nom d’hôte du site visité, par exemple : `experienceleague.adobe.com`
 * Type d’agent utilisateur général et système d’exploitation utilisés pour afficher la page, par exemple : `desktop:windows` ou `mobile:ios`
 * Heure à laquelle les données ont été collectées, par exemple : `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
-* URL de la page visitée ; par exemple : `https://experienceleague.adobe.com/docs?lang=fr`
+* URL de la page visitée ; par exemple : `https://experienceleague.adobe.com/docs`
 * URL du référent (URL de la page qui a été liée à la page active, si l’utilisateur a suivi un lien)
 * Identifiant de la page vue généré de manière aléatoire, dans un format similaire à : `2Ac6`
 * Poids ou inverse du taux d’échantillonnage, tel que : `100`. Cela signifie que seule une page vue sur cent est enregistrée
@@ -56,9 +56,11 @@ Le service de télémétrie opérationnelle est conçu pour minimiser la collect
 
 La télémétrie opérationnelle surveille automatiquement le trafic côté client. En tant que client Adobe, vous n’avez pas besoin de prendre des mesures supplémentaires, car ce service est intégré de manière transparente à votre configuration existante. Le service de télémétrie opérationnelle étant généralement disponible , vous bénéficiez automatiquement de cette nouvelle fonctionnalité. Le service de télémétrie opérationnelle n’expose pas aujourd’hui de mesures destinées aux clients à surveiller. Nous nous efforçons de vous fournir cette fonctionnalité dès que possible.
 
-<!-- Alexandru: hiding temporarily, until we figure out where this needs to be linked to 
+<!--
+ Alexandru: hiding temporarily, until we figure out where this needs to be linked to 
 
-If you wish to leverage more insights with this new feature to optimize your digital experiences effortlessly, please see here (link to Row 99). -->
+If you wish to leverage more insights with this new feature to optimize your digital experiences effortlessly, please see here (link to Row 99).
+-->
 
 ## Utilisation de la télémétrie opérationnelle par Adobe {#how-operational-telemetry-data-is-being-used}
 
@@ -82,7 +84,8 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
 ## Questions fréquentes {#faq}
 
-<!-- REMOVED THIS FAQ AS PER EMAIL REQUEST FROM SHWETA DUA, SEPTEMBER 4, 2024 TO THE DL-AEM-DOCS GROUP 
+<!--
+ REMOVED THIS FAQ AS PER EMAIL REQUEST FROM SHWETA DUA, SEPTEMBER 4, 2024 TO THE DL-AEM-DOCS GROUP 
 1. **Can customers integrate the Operational Telemetry service scripts with third-party systems like Dynatrace?**
 
    Yes.

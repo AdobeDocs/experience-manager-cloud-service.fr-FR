@@ -4,10 +4,10 @@ description: Découvrez la recherche et l’indexation de contenu dans AEM as a 
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
-source-git-commit: 8d881caf5181e9c3cdc6dcb69f0deabc2d5eeed8
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '2918'
-ht-degree: 39%
+source-wordcount: '2906'
+ht-degree: 38%
 
 ---
 
@@ -41,7 +41,7 @@ Restrictions :
 >Pour plus d’informations sur l’indexation et les requêtes Oak, y compris une description détaillée des fonctionnalités avancées de recherche et d’indexation, consultez la [documentation d’Apache Oak](https://jackrabbit.apache.org/oak/docs/query/query.html).
 
 
-## Utilisation {#how-to-use}
+## Méthode d’utilisation {#how-to-use}
 
 Les définitions d’index peuvent être classées en trois cas d’utilisation principaux, comme suit :
 
@@ -59,7 +59,7 @@ Une définition d’index peut appartenir à l’une des catégories suivantes :
 
 2. Personnalisation d’un index prêt à l’emploi. Pour personnaliser un index prêt à l’emploi, ajoutez `-custom-` suivi d’un nombre. Par exemple, `/oak:index/damAssetLucene-8-custom-1` correspond à la personnalisation du `/oak:index/damAssetLucene-8` d’index prêt à l’emploi. Une personnalisation consiste généralement en une copie de l’index prêt à l’emploi, ainsi que des propriétés supplémentaires qui doivent être indexées.
 
-3. Index entièrement personnalisé : vous pouvez créer un index entièrement nouveau à partir de zéro. Ces index doivent également se terminer par `-custom-` et un numéro de version. En outre, pour éviter les conflits de noms, utilisez un préfixe dans le nom de l’index. Par exemple : `/oak:index/acme.product-1-custom-2`, où `acme.` est le préfixe.
+3. Index entièrement personnalisé : true pour créer un index entièrement nouveau à partir de zéro. Ces index doivent également se terminer par `-custom-` et un numéro de version. En outre, pour éviter les conflits de noms, utilisez un préfixe dans le nom de l’index. Par exemple : `/oak:index/acme.product-1-custom-2`, où `acme.` est le préfixe.
 
 >[!NOTE]
 >
@@ -82,9 +82,11 @@ Pour un index entièrement personnalisé, préparez un nouveau package de défin
 Comme indiqué dans les sections sur les limites , la `type` de la définition d’index personnalisée doit toujours être définie sur `lucene` même si la définition d’index extraite à l’aide du gestionnaire de packages est d’un type différent (par exemple, `elasticsearch`).
 La propriété `async` doit également être modifiée au cas où la définition d’index extraite est définie sur `elastic-async`. La propriété `async` doit être définie sur l’une des propriétés suivantes : `[async]`, `[async,nrt]` ou `[fulltext-async]` pour la définition d’index personnalisée.
 
-<!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
+<!--
+ Alexandru: temporarily drafting this statement due to CQDOC-17701
 
-The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`. -->
+The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
+-->
 
 >[!NOTE]
 >
@@ -242,7 +244,7 @@ Nous vous recommandons vivement d’utiliser la `1.3.2` version >= du Jackrabbit
    </filters>
    ```
 
-Après avoir ajouté la nouvelle définition d’index, déployez la nouvelle application à l’aide de Cloud Manager. Ce déploiement lance deux tâches, chargées d’ajouter (et de fusionner si nécessaire) les définitions d’index à MongoDB et Azure Segment Store pour la création et la publication, respectivement. Avant le changement, les référentiels sous-jacents sont réindexés avec les définitions d’index mises à jour.
+Après avoir ajouté la nouvelle définition d’index, déployez la nouvelle application à l’aide de Cloud Manager. Ce déploiement lance deux tâches, chargées d’ajouter (et de fusionner si nécessaire) les définitions d’index à MongoDB et à Azure Segment Store pour la création et la publication, respectivement. Avant le changement, les référentiels sous-jacents sont réindexés avec les définitions d’index mises à jour.
 
 >[!TIP]
 >

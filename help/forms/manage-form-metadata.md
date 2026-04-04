@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1738'
 ht-degree: 94%
@@ -21,7 +21,7 @@ ht-degree: 94%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/manage-form-metadata.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/manage-form-metadata.html) |
 | AEM as a Cloud Service | Cet article |
 
 Les métadonnées permettent de catégoriser et d’organiser plus facilement les ressources. Les utilisateurs peuvent ainsi retrouver aisément une ressource spécifique.
@@ -168,8 +168,10 @@ Vous trouverez ci-dessous une liste exhaustive des propriétés de métadonnées
     <ul> 
       <li>Modèle de données de formulaire (FDM)</li>
       <li>Schéma : un code XML du schéma JSON</li>
-     <!-- <li>Form template: A form template is selected from the ones existing in the repository. This value can be updated.</li> 
-     <li>XML schema: An XSD file is uploaded. This value can be updated.</li> -->
+     <!--
+      <li>Form template: A form template is selected from the ones existing in the repository. This value can be updated.</li> 
+     <li>XML schema: An XSD file is uploaded. This value can be updated.</li>
+     -->
      <li>Aucune</li> 
     </ul> 
     <div>
@@ -198,10 +200,12 @@ Les ressources ont des valeurs de propriété existantes, qui peuvent être affi
 
 1. La page de propriétés qui s’ouvre affiche un schéma contenant uniquement les propriétés de métadonnées comportant des valeurs.
 
-   <!-- The properties page has a toolbar containing two action icons:
+   <!--
+    The properties page has a toolbar containing two action icons:
 
     * Edit: ![Edit](assets/Smock_Edit_18_N.svg) Edit the metadata property values
-    * View: ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) Navigate to the form details page, which opens the form in the preview mode. -->
+    * View: ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) Navigate to the form details page, which opens the form in the preview mode.
+    -->
 
    La section du contenu est divisée en deux parties :
 
@@ -212,7 +216,8 @@ Les ressources ont des valeurs de propriété existantes, qui peuvent être affi
 
 Vous pouvez modifier les valeurs des propriétés de métadonnées existantes ou ajouter de nouvelles valeurs à un champ de propriété de métadonnées existant (par exemple, lorsqu’un champ de métadonnées est vide).
 
-<!-- ### Update metadata property values {#update-metadata-property-values}
+<!--
+ ### Update metadata property values {#update-metadata-property-values}
 
 1. Follow the steps mentioned in the previous section to open the properties page where existing metadata of the selected form can be viewed.  
 
@@ -229,7 +234,8 @@ Vous pouvez modifier les valeurs des propriétés de métadonnées existantes ou
     * Cancel: ![aem6forms_close](assets/aem6forms_close.svg_w24.png) Cancel any changes made to metadata property values so far
     * Done: ![aem6forms_check](assets/aem6forms_check.png) Save all the changes made to metadata property values so far
 
-   Both these actions direct the user back to read-only mode of the properties page containing the updated values.-->
+   Both these actions direct the user back to read-only mode of the properties page containing the updated values.
+   -->
 
 ### Mise à jour de la vignette du formulaire {#update-the-form-thumbnail}
 

@@ -4,7 +4,7 @@ description: Découvrez les principes de base et les bonnes pratiques de déploi
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '3440'
 ht-degree: 92%
@@ -41,7 +41,7 @@ Pour développer du code personnalisé pour une version interne, vous devez tél
 
 La vidéo suivante présente un aperçu général du déploiement du code vers AEM as a Cloud Service :
 
->[!VIDEO](https://video.tv.adobe.com/v/32993?quality=9&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 <!--
 >[!NOTE]
@@ -52,9 +52,11 @@ La vidéo suivante présente un aperçu général du déploiement du code vers A
 
 ### Déploiements par le biais de Cloud Manager {#deployments-via-cloud-manager}
 
-<!-- Alexandru: temporarily commenting this out, until I get some clarification from Brian 
+<!--
+ Alexandru: temporarily commenting this out, until I get some clarification from Brian 
 
-![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
+![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8)
+-->
 
 Les clients et clientes déploient le code personnalisé dans les environnements cloud via Cloud Manager. Il est à noter que Cloud Manager transforme des modules de contenu assemblés localement en artefact conforme au modèle de fonctionnalité Sling, qui décrit une application sur AEM as a Cloud Service lors de l’exécution dans un environnement cloud. Par conséquent, lorsque vous examinez les packages dans le [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md) sur les environnements cloud, le nom comprend « cp2fm » et toutes les métadonnées des packages transformés sont supprimées. Ils ne peuvent pas être interactifs, ce qui signifie qu’ils ne peuvent pas être téléchargés, répliqués, ni ouverts. Pour obtenir une documentation détaillée à propos du convertisseur, voir [sling-org-apache-sling-feature-cpconverter sur GitHub](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
@@ -72,7 +74,7 @@ Les modifications d’application dues au modèle de déploiement étant activé
 
 Pour les clients et clientes qui disposent de bases de code, il est essentiel de passer par l’exercice de restructuration du référentiel décrit dans la documentation d’AEM en vue de s’assurer que le contenu qui se trouvait auparavant sous /etc est déplacé vers le bon emplacement.
 
-Certaines restrictions supplémentaires s’appliquent à ces packages de code, par exemple, les [&#x200B; hooks d’installation &#x200B;](https://jackrabbit.apache.org/filevault/installhooks.html) ne sont pas pris en charge.
+Certaines restrictions supplémentaires s’appliquent à ces packages de code, par exemple, les [ hooks d’installation ](https://jackrabbit.apache.org/filevault/installhooks.html) ne sont pas pris en charge.
 
 ## Configuration OSGI {#osgi-configuration}
 
@@ -111,7 +113,7 @@ Après le basculement vers la nouvelle version de l’application :
    * Configuration tenant compte du contexte (tout sous `/conf`) (ajout, modification, suppression)
    * Scripts (les packages peuvent déclencher des hooks d’installation à différentes étapes du processus d’installation de l’installation de package. Consultez la [documentation Jackrabbit filevault](https://jackrabbit.apache.org/filevault/installhooks.html) sur les hooks d’installation. AEM CS utilise actuellement la version 3.4.0 de Filevault, qui limite les hooks d’installation aux administrateurs et administratrices, aux utilisateurs et utilisatrices système et aux membres du groupe administrateurs).
 
-Il est possible de limiter l’installation de contenu modifiable à la création ou à la publication en incorporant des packages dans un dossier install.author ou install.publish sous `/apps`. Une restructuration pour refléter cette séparation a été effectuée dans AEM 6.5 et les détails relatifs à la restructuration de projet recommandée sont disponibles dans la documentation d’[AEM 6.5 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=fr).
+Il est possible de limiter l’installation de contenu modifiable à la création ou à la publication en incorporant des packages dans un dossier install.author ou install.publish sous `/apps`. Une restructuration pour refléter cette séparation a été effectuée dans AEM 6.5 et les détails relatifs à la restructuration de projet recommandée sont disponibles dans la documentation d’[AEM 6.5 ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=fr).
 
 >[!NOTE]
 >Les modules de contenu sont déployés sur tous les types d’environnement (développement, évaluation et production). Il n’est pas possible de limiter le déploiement à un environnement spécifique. Cette limitation est en place pour garantir l’option d’une série de tests d’exécution automatisée. Le contenu spécifique à un environnement nécessite une installation manuelle via le [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md).
@@ -166,9 +168,11 @@ Pour créer des instructions `repoinit`, procédez comme suit :
 
 Pour plus d’informations sur `repoinit`, voir la [documentation Sling](https://sling.apache.org/documentation/bundles/repository-initialization.html)
 
-<!-- ### Packaging of Immutable and Mutable Packages {#packaging-of-immutable-and-mutable-packages}
+<!--
+ ### Packaging of Immutable and Mutable Packages {#packaging-of-immutable-and-mutable-packages}
 
-above appears to be internal, to confirm with Brian -->
+above appears to be internal, to confirm with Brian
+-->
 
 ### Utilisation ponctuelle du gestionnaire de modules pour les modules de contenu modifiables {#package-manager-oneoffs-for-mutable-content-packages}
 
@@ -286,7 +290,7 @@ Si un échec est signalé ou détecté après le déploiement, il est possible q
 
 ## Environnements de développement rapide (RDE) {#rde}
 
-Les [Environnements de développement rapide](/help/implementing/developing/introduction/rapid-development-environments.md) (RDE) permettent aux développeurs et aux développeuses de déployer et d’examiner rapidement les modifications afin de réduire la durée nécessaire aux tests des fonctionnalités ayant fait leurs preuves dans un environnement de développement local.
+Les [environnements de développement rapide](/help/implementing/developing/introduction/rapid-development-environments.md) (RDE) permettent aux développeurs et aux développeuses de déployer et d’examiner rapidement les modifications afin de réduire la durée nécessaire aux tests des fonctionnalités ayant fait leurs preuves dans un environnement de développement local.
 
 Contrairement aux environnements de développement standard qui déploient le code via le pipeline de Cloud Manager, les développeurs et les développeuses utilisent des outils de ligne de commande pour synchroniser le code d’un environnement de développement local avec le RDE. Une fois les modifications testées avec succès dans un RDE, déployez-les dans un environnement de développement Cloud standard via le pipeline de Cloud Manager, qui place le code par le biais des points de contrôle qualité appropriés.
 
@@ -327,10 +331,12 @@ Lors d’un développement local, un paramètre de démarrage en mode d’exécu
 $ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
 ```
 
-<!-- ### Performance Monitoring {#performance-monitoring}
+<!--
+ ### Performance Monitoring {#performance-monitoring}
 
-Developers want to ensure that their custom code is performing well. For Cloud environments, performance reports can be viewed on Cloud Manager. -->
+Developers want to ensure that their custom code is performing well. For Cloud environments, performance reports can be viewed on Cloud Manager.
+-->
 
 ## Configuration des tâches de maintenance dans le contrôle de code source {#maintenance-tasks-configuration-in-source-control}
 
-Les configurations de tâches de maintenance doivent être conservées dans le contrôle de la source, car l’écran **Outils > Opérations** n’est plus disponible dans les environnements cloud. Cet avantage permet de s’assurer que les modifications sont intentionnellement conservées, plutôt qu’appliquées de manière réactive et oubliées. Voir [&#x200B; Tâches de maintenance dans AEM as a Cloud Service](/help/operations/maintenance.md) pour plus d’informations.
+Les configurations de tâches de maintenance doivent être conservées dans le contrôle de la source, car l’écran **Outils > Opérations** n’est plus disponible dans les environnements cloud. Cet avantage permet de s’assurer que les modifications sont intentionnellement conservées, plutôt qu’appliquées de manière réactive et oubliées. Voir [ Tâches de maintenance dans AEM as a Cloud Service](/help/operations/maintenance.md) pour plus d’informations.

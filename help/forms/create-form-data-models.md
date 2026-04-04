@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1543'
 ht-degree: 56%
@@ -27,7 +27,8 @@ L’intégration de données [!DNL Experience Manager Forms] fournit une interfa
 
 * **Utilisation de sources de données préconfigurées** : si vous avez configuré les sources de données comme décrit dans [Configurer les sources de données](configure-data-sources.md), vous pouvez les sélectionner lors de la création d’un modèle de données de formulaire (FDM). Elle rassemble tous les objets, propriétés et services de modèle de données des sources de données sélectionnées disponibles pour une utilisation dans le modèle de données de formulaire (FDM).
 
-* **Sans sources de données** : si vous n’avez pas configuré de sources de données pour votre modèle de données de formulaire (FDM), vous pouvez toujours le créer sans sources de données. Vous pouvez utiliser le modèle de données de formulaire (FDM) pour créer des <!--and interactive communication--> Forms adaptatifs et les tester à l’aide de données d’exemple. Lorsque des sources de données sont disponibles, vous pouvez lier le modèle de données de formulaire (FDM) à des sources de données, ce qui se reflète automatiquement dans le Forms adaptatif associé<!--and interactive communications-->.
+* **Sans sources de données** : si vous n’avez pas configuré de sources de données pour votre modèle de données de formulaire (FDM), vous pouvez toujours le créer sans sources de données. Vous pouvez utiliser le modèle de données de formulaire (FDM) pour créer des <!--and interactive communication--> Forms adaptatifs et les tester à l’aide de données d’exemple. Lorsque des sources de données sont disponibles, vous pouvez lier le modèle de données de formulaire (FDM) à des sources de données, ce qui se reflète automatiquement dans le Forms adaptatif associé.
+  <!--and interactive communications-->
 
 >[!NOTE]
 >

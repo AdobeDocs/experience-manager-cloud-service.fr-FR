@@ -6,10 +6,10 @@ role: Admin, User
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '4152'
-ht-degree: 72%
+ht-degree: 71%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 72%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/work-with-form-data-model.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/work-with-form-data-model.html) |
 | AEM as a Cloud Service | Cet article |
 
 
@@ -110,7 +110,7 @@ Pour créer une propriété enfant :
 
 1. Sélectionnez **[!UICONTROL Terminé]** pour enregistrer la propriété enfant, puis sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le modèle de données de formulaire (FDM). La propriété enfant est maintenant ajoutée à l’objet de modèle de données.
 
-Après avoir créé des objets et des propriétés de modèle de données, vous pouvez continuer à créer des <!--and interactive communications--> Forms adaptatifs basés sur le modèle de données de formulaire (FDM). Ultérieurement, lorsque des sources de données sont disponibles et configurées, vous pouvez lier le modèle de données de formulaire (FDM) à des sources de données. La liaison est automatiquement mise à jour dans les formulaires adaptatifs <!--and interactive communications--> associés. Pour plus d’informations sur la création de <!--and interactive communications--> Forms adaptatifs à l’aide d’un modèle de données de formulaire (FDM), voir [Utiliser un modèle de données de formulaire](using-form-data-model.md).
+Après avoir créé des objets et des propriétés de modèle de données, vous pouvez continuer à créer des <!--and interactive communications--> Forms adaptatifs basés sur le modèle de données de formulaire (FDM). Ultérieurement, lorsque des sources de données sont disponibles et configurées, vous pouvez lier le modèle de données de formulaire (FDM) à des sources de données. La liaison est automatiquement mise à jour dans le Forms adaptatif associé. Pour plus d’informations sur la création d’un Forms adaptatif à l’aide d’un modèle de données de formulaire (FDM), voir [Utiliser un modèle de données de formulaire](using-form-data-model.md).
 
 ### Liaison des objets et des propriétés de modèle de données {#bind-data-model-objects-and-properties}
 

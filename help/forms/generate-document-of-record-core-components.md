@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '3320'
 ht-degree: 38%
@@ -159,7 +159,8 @@ Gardez à l’esprit les points et restrictions suivants lorsque vous utilisez S
 * La liaison de contenu dans le PDF d’envoi généré pour le formulaire adaptatif de schéma XML n’est pas prise en charge.
 * La version localisée de Submission PDF est créée à la demande pour un paramètre régional lorsque l’utilisateur demande le rendu de Submission PDF. La localisation de l’envoi PDF se produit avec la localisation du formulaire adaptatif. <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
 
-<!-- ## Configure an adaptive form to generate  Document of Record {#adaptive-form-types-and-their-documents-of-record}
+<!--
+ ## Configure an adaptive form to generate  Document of Record {#adaptive-form-types-and-their-documents-of-record}
 
 While creating an adaptive form, in the Form Model tab of Adaptive Form properties, select one the following option: 
 
@@ -172,7 +173,8 @@ While creating an adaptive form, in the Form Model tab of Adaptive Form properti
 * **[Generate Document of Record](creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)**
   Select the option to use an XFA Form as a template. When the option is selected, the Document of Record is automatically generated for your Adaptive Form. When you use an XML schema as a template for an Adaptive Form, ensure that the adaptive form and associated XFA Form use the same XML schema as your Adaptive Form
 
-When you select a form model, configure Document of Record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration). -->
+When you select a form model, configure Document of Record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration).
+-->
 
 ## Mappage des éléments d’un formulaire adaptatif {#mapping-of-adaptive-form-elements}
 
@@ -362,9 +364,9 @@ Pour localiser les informations de branding que vous saisissez dans l’onglet D
 
       **Afficher les libellés pour la liste déroulante à sélection multiple**
 
-      <span class="preview"> Cette fonctionnalité est disponible via le programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail à partir de votre adresse officielle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com). </span>
+      <span class="preview"> Cette fonctionnalité est disponible via le programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail à partir de votre adresse officielle à [](mailto:aem-forms-ea@adobe.com). </span>
 
-      Le PDF Envoi affiche désormais les libellés d’affichage sélectionnés pour les composants déroulants à sélection multiple au lieu des valeurs stockées internes. Par exemple, si un utilisateur sélectionne « California » et « New York » dans une liste déroulante, le PDF d’envoi affiche les libellés sélectionnés au lieu des valeurs internes telles que `CA` et `NY`. Chaque option sélectionnée s’affiche sur une ligne distincte au lieu de prendre la forme de valeurs séparées par des virgules, ce qui est cohérent avec le comportement dans [Forms adaptative basée sur les composants de base](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+      Le PDF Envoi affiche désormais les libellés d’affichage sélectionnés pour les composants déroulants à sélection multiple au lieu des valeurs stockées internes. Par exemple, si un utilisateur sélectionne « California » et « New York » dans une liste déroulante, le PDF d’envoi affiche les libellés sélectionnés au lieu des valeurs internes telles que `CA` et `NY`. Chaque option sélectionnée s’affiche sur une ligne distincte au lieu de prendre la forme de valeurs séparées par des virgules, ce qui est cohérent avec le comportement dans Forms adaptative basée sur les composants de base[.](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 
    1. **Propriétés du gabarit de page** :
 

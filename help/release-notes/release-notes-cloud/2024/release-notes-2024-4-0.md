@@ -4,7 +4,7 @@ description: Notes de mise à jour de la version 2024.4.0 d’ [!DNL Adobe Expe
 exl-id: 153a3172-676f-4434-94d4-12fab8e17734
 feature: Release Information
 role: Admin
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
 workflow-type: tm+mt
 source-wordcount: '2689'
 ht-degree: 95%
@@ -37,7 +37,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Consultez la vidéo de vue d’ensemble de la version d’avril 2024 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2024.4.0 :
 
->[!VIDEO](https://video.tv.adobe.com/v/3446306?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3429111?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -62,7 +62,7 @@ Vous souhaitez tester la fonctionnalité et partager vos commentaires ? Envoyez
 
 **Recherche contextuelle**
 
-Désormais, vous pouvez également [rechercher des ressources disponibles dans le référentiel en définissant des invites de texte](/help/assets/search-assets-view.md#contextual-search). Experience Manager Assets transforme automatiquement ces invites de texte en filtres de recherche et affiche les résultats de la recherche. Vous pouvez afficher et modifier des filtres automatiques à l’aide du volet Filtres pour affiner davantage les résultats de la recherche.
+Désormais, vous pouvez également [rechercher des ressources disponibles dans le référentiel en définissant des prompts de texte](/help/assets/search-assets-view.md#contextual-search). Experience Manager Assets transforme automatiquement ces prompts de texte en filtres de recherche et affiche les résultats de la recherche. Vous pouvez afficher et modifier des filtres automatiques à l’aide du volet Filtres pour affiner davantage les résultats de la recherche.
 
 ![Recherche contextuelle](/help/assets/assets/contextual-search-text-prompt1.png)
 
@@ -157,7 +157,7 @@ Cette mise à jour offre une expérience plus inclusive aux utilisateurs et util
 
 * **[Reader Extension Service](/help/forms/aem-forms-cloud-service-communications-introduction.md#reader-extension-service)** : les API de communication d’AEM Forms ont introduit Reader Extension Service pour vous permettre d’ajouter des fonctionnalités telles que le remplissage de formulaires et les commentaires dans des PDF standard, ce qui les rend interactifs pour les utilisateurs et les utilisatrices disposant de la version gratuite d’Adobe Reader.
 
-* [Prise en charge des langues de droite à gauche](/help/forms/supporting-new-language-localization-core-components.md) : les formulaires adaptatifs reposant sur les composants principaux peuvent désormais être présentés dans une langue de droite à gauche telle que l’arabe, le persan et l’ourdou. Les langues s’écrivant de droite à gauche sont parlées par plus de 2 milliards de personnes dans le monde. L’utilisation d’un formulaire pour les langues s’écrivant de droite à gauche permet d’étendre la portée de vos formulaires adaptatifs pour répondre à ces diverses audiences et aux marchés correspondants. Dans certaines régions, il en va d’une obligation légale de fournir des formulaires dans la langue locale. En vous adaptant aux langues locales, vous vous ouvrez non seulement à un public plus large, mais vous garantissez aussi le respect des lois et réglementations pertinentes.
+* [Prise en charge des langues de droite à gauche](/help/forms/supporting-new-language-localization-core-components.md) : les formulaires adaptatifs reposant sur les composants principaux peuvent désormais être présentés dans une langue de droite à gauche telle que l’arabe, le persan et l’ourdou. Les langues s’écrivant de droite à gauche sont parlées par plus de 2 milliards de personnes dans le monde. L’utilisation d’un formulaire pour les langues s’écrivant de droite à gauche permet d’étendre la portée de vos formulaires adaptatifs pour répondre à ces diverses audiences et aux marchés correspondants. Dans certaines régions, il en va d’une obligation légale de fournir des formulaires dans la langue locale. En vous adaptant aux langues locales, vous vous ouvrez non seulement à une audience plus large, mais vous garantissez aussi le respect des lois et réglementations pertinentes.
 
 * **[Protégez vos documents avec les API DocAssurance (qui font partie des API de communication)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)** : les API DocAssurance vous permettent de protéger les informations sensibles en signant et en chiffrant les documents. Grâce au chiffrement, le contenu d’un document est transformé en un format illisible, ce qui garantit que seules les personnes autorisées peuvent y accéder. Cette couche renforcée de protection protège non seulement les données précieuses des yeux non autorisés, mais offre également une certaine tranquillité d’esprit. Les API Signature permettent à votre entreprise de garantir la sécurité et la confidentialité des documents Adobe PDF qu’elle diffuse et reçoit. Ce service utilise les signatures numériques et la certification pour s’assurer que seules les personnes destinataires prévues peuvent modifier les documents.
 
@@ -206,7 +206,7 @@ Le réseau CDN géré par Adobe prend désormais en charge Edge Side Includes 
 
 #### Prise en charge du RDE pour le code en front-end à l’aide des thèmes du site et des modèles de site (programme d’adoption précoce) {#rde-frontend-early-adopter}
 
-Les [environnements de développement rapide (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) prennent désormais en charge le code en front-end basé sur les [thèmes de site](/help/sites-cloud/administering/site-creation/site-themes.md) et les [modèles de site](/help/sites-cloud/administering/site-creation/site-templates.md), pour les utilisateurs et utilisatrices bénéficiant de l’adoption précoce. Avec les RDE, la prise en charge s’effectue à l’aide d’une directive de ligne de commande plutôt que d’un [pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Veuillez contacter **<aemcs-rde-support@adobe.com>** pour essayer cette fonctionnalité et fournir des commentaires.
+Les [environnements de développement rapide (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) prennent désormais en charge le code en front-end basé sur les [thèmes de site](/help/sites-cloud/administering/site-creation/site-themes.md) et les [modèles de site](/help/sites-cloud/administering/site-creation/site-templates.md), pour les personnes qui adoptent la solution en avant-première. Avec les RDE, la prise en charge s’effectue à l’aide d’une directive de ligne de commande plutôt que d’un [pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Veuillez contacter **<aemcs-rde-support@adobe.com>** pour essayer cette fonctionnalité et fournir des commentaires.
 
 #### Amélioration de la journalisation des RDE (programme d’adoption précoce) {#rde-logging-early-adopter}
 
@@ -283,7 +283,7 @@ Cette fonctionnalité vous permet d’utiliser les données stockées dans vos f
 En tant qu’administrateur ou administratrice, vous pouvez configurer plusieurs URL de ressources pour certains connecteurs tels que Generic REST Client, Salsify, Akeneo et Microsoft Azure DevOps (ADO) Boards.
 Ensuite, en tant qu’auteur ou autrice, connectez-vous aux sources de données pour créer des extraits de contenu ou des rubriques à l’aide des générateurs. Cette fonctionnalité est pratique, car vous n’avez pas à créer de source de données pour chaque URL. Cela vous permet de récupérer rapidement des données à partir d’une ressource pour une source de données spécifique dans un extrait de contenu ou une rubrique unique. Consultez plus de détails sur les connecteurs de sources de données et sur la façon de [configurer un connecteur de source de données à partir de l’interface utilisateur](https://experienceleague.adobe.com/fr/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools). Découvrez comment [utiliser les données de votre source de données](https://experienceleague.adobe.com/fr/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet).
 
-Pour plus d’informations sur les nouvelles fonctionnalités et améliorations, consultez les informations sur les versions de [Experience Manager Guides](https://experienceleague.adobe.com/fr/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Pour plus d’informations sur les nouvelles fonctionnalités et améliorations, consultez les informations sur les versions de [](https://experienceleague.adobe.com/fr/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

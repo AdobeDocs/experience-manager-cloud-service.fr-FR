@@ -6,7 +6,7 @@ contentOwner: AG
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 5936ace2-318e-4888-9ad4-23e6f6bfb857
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 98%
@@ -37,7 +37,8 @@ Les différents types de fichiers ont différents degrés de prise en charge pou
 
 ## Ajout, chargement et affichage de ressources {#support-to-upload-view}
 
-<!-- TBD: For AEM, AI files require the PDF option to be selected when saving the AI file.
+<!--
+ TBD: For AEM, AI files require the PDF option to be selected when saving the AI file.
 -->
 
 | Type de ressource | [Parcourir](/help/assets/navigate-assets-view.md) | Copier | [Chargement](/help/assets/add-delete-assets-view.md) | Créer | [Supprimer](/help/assets/add-delete-assets-view.md#delete-assets) | Détails | Zoom sur l’image | [Récemment consultés](/help/assets/navigate-assets-view.md) |
@@ -50,7 +51,8 @@ Les différents types de fichiers ont différents degrés de prise en charge pou
 | PSD, PSB, AI et INDD | ✓ | ✓ | ✓ | − | ✓ | ✓ ‡ | − | ✓ |
 | Autres fichiers binaires. | ✓ | ✓ | ✓ | − | ✓ | ✓ | − | ✓ |
 
-<!-- Hiding CC Libraries (considered beta) as per PM feedback.
+<!--
+ Hiding CC Libraries (considered beta) as per PM feedback.
 | CC Libraries  | &#10003; | &minus;  | &#10003; | &#10003; | &#10003; | &#10003; | &minus;    | &minus;         |
 -->
 
@@ -108,7 +110,8 @@ Les différents types de fichiers ont différents degrés de prise en charge pou
 
 Les utilisateurs de [!DNL Adobe Asset Link] peuvent charger et enregistrer (charger une nouvelle version) des fichiers dans le référentiel [!DNL Assets view] des applications de bureau [!DNL Adobe Creative Cloud] prises en charge.
 
-<!-- TBD: Saving the template table separately for later use.
+<!--
+ TBD: Saving the template table separately for later use.
 | Asset type    | Features |
 |---------------|----------|
 | Raster images |          |

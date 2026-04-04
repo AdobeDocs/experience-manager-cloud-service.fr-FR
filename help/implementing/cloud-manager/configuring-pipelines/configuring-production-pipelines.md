@@ -6,7 +6,7 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fc9f7f10d1797bda5f31d82005b0afbb6ea1e644
+source-git-commit: aa8aba7f798e251c8a25ee247402e23517707e88
 workflow-type: tm+mt
 source-wordcount: '1903'
 ht-degree: 26%
@@ -116,11 +116,11 @@ Un pipeline de code full stack déploie simultanément des versions de code fron
 
 1. Indiquez les chemins à inclure dans le contrôle de l’expérience.
 
-   * Voir [&#x200B; Tests de contrôle de l’expérience](/help/implementing/cloud-manager/reports/report-experience-audit.md#configuration) pour plus d’informations.
+   * Voir [ Tests de contrôle de l’expérience](/help/implementing/cloud-manager/reports/report-experience-audit.md#configuration) pour plus d’informations.
 
 1. Cliquez sur **Enregistrer** pour enregistrer votre pipeline.
 
-Lorsque le pipeline s’exécute, les chemins configurés pour le contrôle de l’expérience sont envoyés et évalués en fonction des tests de performance, d’accessibilité, d’optimisation du moteur de recherche, des bonnes pratiques et de PWA. Pour plus d’informations, voir [&#x200B; Comprendre les résultats du contrôle de l’expérience &#x200B;](/help/implementing/cloud-manager/reports/report-experience-audit.md).
+Lorsque le pipeline s’exécute, les chemins configurés pour le contrôle de l’expérience sont envoyés et évalués en fonction des tests de performance, d’accessibilité, d’optimisation du moteur de recherche, des bonnes pratiques et de PWA. Pour plus d’informations, voir [ Comprendre les résultats du contrôle de l’expérience ](/help/implementing/cloud-manager/reports/report-experience-audit.md).
 
 Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](managing-pipelines.md) dans le carte **Pipelines** dans la page **Aperçu du programme**.
 
@@ -261,7 +261,7 @@ La configuration suivante permettant de désactiver la publication des packages 
   <activation>
     <property>
       <name>env.IGNORE_DISPATCHER_PACKAGES</name>
-      <value>!true</value>
+      <value>[!NOTE]rue</value>
     </property>
   </activation>
   <modules>

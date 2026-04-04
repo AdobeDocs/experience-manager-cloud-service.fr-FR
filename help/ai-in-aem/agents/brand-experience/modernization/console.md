@@ -2,9 +2,9 @@
 title: Console de modernisation de l’expérience
 description: Guide de référence de l’interface et des fonctionnalités de la console de modernisation de l’expérience
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
-source-git-commit: 0aaa9904b3011adc3f3e3b01bfee8ee3e96f12e2
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Les développeurs gardent le contrôle total sur les navires. Toutes les modific
 
 Après vous être connecté à la console à l’adresse [`aemcoder.adobe.io`,](https://aemcoder.adobe.io) vous accédez à l’écran d’accueil de la console.
 
-![Écran d’accueil de la console &#x200B;](assets/console-home.png)
+![Écran d’accueil de la console ](assets/console-home.png)
 
 ### Barre de menus {#menu-bar}
 
@@ -134,7 +134,7 @@ L’**affichage du code** fournit des outils pour parcourir le code et gérer le
 
 Le panneau d’aperçu propose deux modes différents :
 
-* **Fichiers Workspace** pour parcourir les fichiers de code dans l&#39;espace de travail actuel
+* **Fichiers** pour parcourir les fichiers de code dans l&#39;espace de travail actuel
    * Utilisez le bouton **Ajouter au chat** pour ajouter le fichier au panneau de chat pour le contexte.
 * **Modifications Git** pour afficher les différences entre les modifications de fichiers créées par votre travail sur le projet
    * Cliquez sur l’icône `+` pour préparer le fichier modifié
@@ -163,7 +163,7 @@ La vue Paramètres permet de gérer les paramètres de base de la console.
 
 * **Projet** vous permet d’afficher et de modifier les paramètres du projet, tels que la personnalisation de l’URL de la bibliothèque.
 * **Assistance** vous permet de demander de l’aide à l’équipe d’assistance d’AEM.
-* **Informations d’identification** vous permet de spécifier un jeton d’accès personnel pour Figma afin que la console [&#x200B; puisse accéder aux blocs de conception de votre projet](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration).
+* **Informations d’identification** vous permet de spécifier un jeton d’accès personnel pour Figma afin que la console [ puisse accéder aux blocs de conception de votre projet](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration).
    * Le jeton nécessite les portées en lecture seule suivantes :
       * `file_content:read`
       * `file_metadata:read`

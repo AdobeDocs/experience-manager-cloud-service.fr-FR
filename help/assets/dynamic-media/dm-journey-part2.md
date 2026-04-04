@@ -12,7 +12,7 @@ hide: false
 hidefromtoc: false
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2629'
 ht-degree: 95%
@@ -126,7 +126,7 @@ Vous vous rappelez que, dans le chapitre précédent [Anatomie d’une URL Dynam
 
 Vous pouvez considérer un paramètre d’image prédéfini comme une recette pour vos images. Il diffusera toutes les images qui utilisent le paramètre prédéfini de manière cohérente à chaque fois ; il sera le même. Le paramètre `&op_brightness=+10` a également été ajouté pour augmenter légèrement la luminosité.
 
-Lorsque vous avez terminé, vous enregistrez le paramètre prédéfini, qui est désormais disponible pour toutes les images dont vous disposez. Dans ce cas, vous souhaitez appliquer le paramètre d’image prédéfini _Medium_ à l’image d’une casserole de chocolat fondu.
+Lorsque vous avez terminé, vous enregistrez le paramètre prédéfini, qui est désormais disponible pour toutes les images dont vous disposez. Dans ce cas, vous souhaitez appliquer le paramètre d’image prédéfini __ à l’image d’une casserole de chocolat fondu.
 
 ![Application du paramètre d’image prédéfini *Medium* pour générer un rendu d’image](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _Application du paramètre d’image prédéfini Medium pour générer un rendu d’image_
@@ -217,17 +217,18 @@ Si vous souhaitez en savoir plus, lisez les documents ci-dessous pour explorer c
 _Dynamic Media Help topics_
 
 * [How to create image presets](/help/assets/dynamic-media/image-presets.md)
-* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=fr) that you can use in the Image Modifier field when you create an image preset
+* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) that you can use in the Image Modifier field when you create an image preset
 * [How to preview assets](/help/assets/dynamic-media/previewing-assets.md)
 * [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
 * [How to create Image sets](/help/assets/dynamic-media/image-sets.md)
 * [How to create Spin sets](/help/assets/dynamic-media/spin-sets.md)
-* [How to create Mixed Media sets](/help/assets/dynamic-media/mixed-media-sets.md) -->
+* [How to create Mixed Media sets](/help/assets/dynamic-media/mixed-media-sets.md)
+-->
 
 _Tutoriels Dynamic Media_
 
 * [Utilisation de Dynamic Media avec Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=fr)
-* [Bibliothèque de contenu Adobe Experience Manager](https://experienceleague.adobe.com/fr?lang=fr#recommended/solutions/experience-manager) (recherchez _Dynamic Media_)
+* [Bibliothèque de contenu Adobe Experience Manager](https://experienceleague.adobe.com/?lang=fr#recommended/solutions/experience-manager) (recherchez _Dynamic Media_)
 
 _Visionneuses Dynamic Media_
 

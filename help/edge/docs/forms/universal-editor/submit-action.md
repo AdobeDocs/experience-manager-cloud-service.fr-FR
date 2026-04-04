@@ -5,8 +5,8 @@ keywords: Comment sélectionner une action envoyer pour un formulaire adaptatif,
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 100%
 
@@ -60,10 +60,12 @@ Les actions Envoyer suivantes sont prises en charge par les [Formulaires adaptat
 - [Envoyer à Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
 - [Envoyer à une feuille de calcul](/help/forms/forms-submission-service.md)
 
-<!--You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
+<!--
+You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
 
 * [Connect Adaptive Form to Salesforce](/help/forms/aem-forms-salesforce-integration.md)
-* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)-->
+* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+-->
 
 Vous pouvez configurer l’action Envoyer pour les formulaires créés dans l’éditeur universel à l’aide de l’onglet **Envoi** de l’extension **Modifier les propriétés du formulaire**.
 

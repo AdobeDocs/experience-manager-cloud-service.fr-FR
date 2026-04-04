@@ -12,7 +12,7 @@ thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 96%
@@ -28,7 +28,7 @@ ht-degree: 96%
 
 Les [composants principaux AEM CIF](https://github.com/adobe/aem-core-cif-components) offrent des configurations avancées pour personnaliser les URL des pages de produits et de catégories. De nombreuses mises en œuvre personnalisent ces URL à des fins d’optimisation pour les moteurs de recherche (SEO). La vidéo suivante explique comment configurer le `UrlProvider` service et les fonctionnalités du [mappage Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) pour personnaliser les URL des pages de produits et de catégories.
 
->[!VIDEO](https://video.tv.adobe.com/v/38579/?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
 ## Configuration {#configuration}
 
@@ -38,9 +38,9 @@ Pour configurer le service `UrlProvider` en fonction des exigences et des besoin
 >
 > Depuis la version 2.0.0 des composants principaux CIF d’AEM, la configuration du fournisseur d’URL ne fournit que des formats d’URL prédéfinis, au lieu des formats configurables en texte libre connus des versions 1.x. De plus, l’utilisation de sélecteurs pour transmettre des données dans des URL a été remplacée par des suffixes.
 
-### Format d’URL de page de produits {#product}
+### Format d’URL des pages produits {#product}
 
-Celui-ci configure les URL des pages de produits et prend en charge les options suivantes :
+Celui-ci configure les URL des pages produits et prend en charge les options suivantes :
 
 * `{{page}}.html/{{sku}}.html#{{variant_sku}}` (par défaut)
 * `{{page}}.html/{{sku}}/{{url_key}}.html#{{variant_sku}}`
@@ -95,7 +95,7 @@ La modification du format de l’URL d’un site web actif peut avoir un impact 
 >
 > La configuration spécifique des formats d’URL pour les magasins nécessite les [composants principaux CIF 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) et la dernière version du module complémentaire Adobe Experience Manager Content and Commerce.
 
-## URL de pages de produits prenant en compte les catégories {#context-aware-pdps}
+## URL de pages produits prenant en compte les catégories {#context-aware-pdps}
 
 Comme il est possible d’encoder des informations sur les catégories dans l’URL d’un produit, les produits appartenant à plusieurs catégories peuvent également être adressés avec plusieurs URL de produit.
 
@@ -106,9 +106,9 @@ Les formats d’URL par défaut sélectionnent l’une des alternatives possible
 * parmi ces alternatives, utilisez celle qui a le plus de segments de chemin d’accès
 * s’il y en a plusieurs, prenez la première dans l’ordre indiqué par le serveur principal de commerce électronique.
 
-Ce schéma sélectionne l’`url_path` qui a le plus d’ancêtres, en partant du principe qu’une catégorie enfant est plus spécifique que sa catégorie parent. L’`url_path` sélectionnée est considérée comme _canonique_ et sera toujours utilisée comme lien canonique sur les pages de produits ou dans le plan du site du produit.
+Ce schéma sélectionne l’`url_path` qui a le plus d’ancêtres, en partant du principe qu’une catégorie enfant est plus spécifique que sa catégorie parent. L’`url_path` sélectionnée est considérée comme _canonique_ et sera toujours utilisée comme lien canonique sur les pages produits ou dans le plan du site du produit.
 
-Cependant, lorsqu’un acheteur ou une acheteuse navigue d’une page de catégorie à une page de produit, ou d’une page de produit à une autre page de produit associée dans la même catégorie, il est utile de conserver le contexte actuel de la catégorie. Dans ce cas, la sélection d’`url_path` doit préférer les alternatives qui se trouvent dans le contexte de la catégorie actuelle à la sélection _canonique_ décrite ci-dessus.
+Cependant, lorsqu’un acheteur ou une acheteuse navigue d’une page de catégorie à une page produit, ou d’une page produit à une autre page produit associée dans la même catégorie, il est utile de conserver le contexte actuel de la catégorie. Dans ce cas, la sélection d’`url_path` doit préférer les alternatives qui se trouvent dans le contexte de la catégorie actuelle à la sélection _canonique_ décrite ci-dessus.
 
 Cette fonctionnalité doit être activée dans la _configuration du fournisseur d’URL CIF_. Si elle est activée, la sélection donnera un score plus élevé aux alternatives, quand
 
@@ -156,9 +156,9 @@ L’alternative « nouveaux-produits/nouveautes-de-lete-2022/boucles-doreilles-
 
 >[!NOTE]
 >
-> Les URL de produits prenant en compte les catégories nécessitent les [composants principaux CIF 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) ou plus récents.
+> Les URL de produits prenant en compte les catégories nécessitent les [composants principaux CIF 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) ou plus récents.
 
-## Pages de catégories et de produits spécifiques {#specific-pages}
+## Pages de catégories et produits spécifiques {#specific-pages}
 
 Il est possible de créer des [pages multi-catégories et multi-produits](/help/commerce-cloud/cif-storefront/authoring/multi-template-usage.md) pour un sous-ensemble spécifique de catégories ou de produits d’un catalogue.
 
@@ -187,7 +187,7 @@ Les pages produits spécifiques sont sélectionnées soit par le SKU du produit,
 
 ### Lien profond {#specific-pages-deep-linking}
 
-Le `UrlProvider` est préconfiguré pour générer des liens profonds vers des pages de catégories et de produits spécifiques sur les instances dʼauteur. Cette fonctionnalité est utile pour les éditeurs et éditrices qui parcourent un site en mode Aperçu, se rendent sur une page produit ou de catégorie spécifique, puis repassent en mode Édition pour modifier la page.
+Le `UrlProvider` est préconfiguré pour générer des liens profonds vers des pages de catégories et produits spécifiques sur les instances de création. Cette fonctionnalité est utile pour les éditeurs et éditrices qui parcourent un site en mode Aperçu, se rendent sur une page produit ou de catégorie spécifique, puis repassent en mode Édition pour modifier la page.
 
 Dans les instances de publication, en revanche, les adresses URL des pages de catalogue doivent rester stables pour ne pas perdre les gains de classement dans les moteurs de recherche, par exemple. Pour cette raison, les instances de publication ne génèrent pas de liens profonds vers des pages de catalogue spécifiques par défaut. Pour modifier ce comportement, la _stratégie de page spécifique du fournisseur d’URL CIF_ peut être configurée pour générer toujours des adresses URL de page spécifiques.
 
@@ -258,5 +258,5 @@ Le projet de [magasin de référence Venia](https://github.com/adobe/aem-cif-gui
 ## Ressources supplémentaires {#additional}
 
 * [Magasin de référence Venia](https://github.com/adobe/aem-cif-guides-venia)
-* [Mappage des ressources AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/deploying/configuring/resource-mapping)
+* [Mappage des ressources AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/configuring/resource-mapping)
 * [Mappages Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)

@@ -7,7 +7,7 @@ feature: Adaptive Forms
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 99%
@@ -22,14 +22,16 @@ Vous pouvez utiliser l’éditeur visuel pour créer des règles. L’éditeur d
 * **Puis-je créer un formulaire adaptatif XFA sur des instances de Cloud Service ?**
 Oui, vous pouvez créer un formulaire adaptatif XFA sur une instance de Cloud Service. La prise en charge des formulaires adaptatifs XFA n’est toutefois pas disponible pour le SDK AEM Forms as a Cloud Service (environnement de développement local). Si vous envisagez d’utiliser un formulaire adaptatif XFA dans le SDK AEM Forms as a Cloud Service contactez l’assistance Adobe pour obtenir des détails sur votre cas d’utilisation et les exigences spécifiques.
 
-<!-- * **Can I use an XDP as a Document of Record (DoR) template? Is Forms Designer included in AEM Forms as a Cloud Service license?** 
+<!--
+ * **Can I use an XDP as a Document of Record (DoR) template? Is Forms Designer included in AEM Forms as a Cloud Service license?** 
 
-  Yes, you can use an XDP as a Document of Record template on Cloud Service instances. However, support to use XDP as a Document of Record template is not available for AEM Forms as a Cloud Service SDK (Local development environment). -->
+  Yes, you can use an XDP as a Document of Record template on Cloud Service instances. However, support to use XDP as a Document of Record template is not available for AEM Forms as a Cloud Service SDK (Local development environment).
+  -->
 
 * **Puis-je migrer du contenu d’un environnement On-Premise ou [!DNL Adobe-Managed Services] vers un environnement [!DNL Forms] as a Cloud Service ?**
 Oui, vous pouvez migrer votre code, votre contenu et vos ressources personnalisés depuis les environnements On-Premise ou [!DNL Adobe-Managed Services] vers un environnement [!DNL Forms] as a Cloud Service. Pour obtenir des instructions détaillées, voir [Migrer vers Forms as a Cloud Service](migrate-to-forms-as-a-cloud-service.md).
 
-<!-- You can use package manager or Experience Manager UI to [export and import Forms and related assets](import-export-forms-templates.md), use the migration utility to make your existing assets compatible with [!DNL Forms] as a Cloud Service, use the [Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=fr#best-practices-analyzer) tool to find the features and APIs that require changes and updated before migration, and use the [Content Transfer Tools](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/moving/home.html) to move your custom code without refactoring it. -->
+<!-- You can use package manager or Experience Manager UI to [export and import Forms and related assets](import-export-forms-templates.md), use the migration utility to make your existing assets compatible with [!DNL Forms] as a Cloud Service, use the [Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#best-practices-analyzer) tool to find the features and APIs that require changes and updated before migration, and use the [Content Transfer Tools](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/home.html) to move your custom code without refactoring it. -->
 
 * **Où puis-je obtenir la documentation de référence des API [!DNL Java™] d’AEM [!DNL Forms] as a Cloud Service ?**
 Vous pouvez télécharger la documentation de référence API Java™ depuis [!DNL Maven Central Repository]. Pour télécharger :
@@ -40,7 +42,7 @@ Vous pouvez télécharger la documentation de référence API Java™ depuis [!
    1. Ouvrez le fichier index.html pour visualiser la documentation de référence API.
 
 * **Où puis-je obtenir une référence de l’API [!DNL JavaScript™] pour les formulaires adaptatifs ?**
-Vous pouvez télécharger la documentation de référence de l’API [!DNL JavaScript™] depuis [!DNL &#x200B; Maven Central Repository]. Pour télécharger :
+Vous pouvez télécharger la documentation de référence de l’API [!DNL JavaScript™] depuis [!DNL  Maven Central Repository]. Pour télécharger :
    1. Ouvrez [[!DNL Maven Central Repository]](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api).
    1. Recherchez et ouvrez la page contenant la dernière version de [!DNL Experience Manager Forms] SDK.
    1. Cliquez sur l’option Afficher tout pour vue tous les fichiers.
@@ -50,13 +52,15 @@ Vous pouvez télécharger la documentation de référence de l’API [!DNL JavaS
 * **Puis-je continuer à utiliser les thèmes et modèles existants ?**
 Oui, vous pouvez continuer à utiliser les thèmes créés avec des formulaires AEM 6.4 et des formulaires AEM 6.5 après avoir utilisé l’[Utilitaire de migration](migrate-to-forms-as-a-cloud-service.md) pour les déplacer vers [!DNL AEM Forms] as a Cloud Service.
 
-  Vous pouvez également créer un projet basé sur [Archetype](setup-local-development-environment.md#forms-cloud-service-local-development-environment) [!DNL AEM Forms] as a Cloud Service et utiliser les exemples de thèmes et de modèles inclus.
+  Vous pouvez également créer un projet basé sur [Archetype](setup-local-development-environment.md#forms-cloud-service-local-development-environment)[!DNL AEM Forms] as a Cloud Service et utiliser les exemples de thèmes et de modèles inclus.
 
 * **Puis-je produire des données conformes au schéma ?**
 Oui, vous pouvez créer un formulaire adaptatif pour produire des données conformes au schéma.
 
-<!-- * **Can I pass custom parameters to the prefill service?**
-Custom parameters are planned for an upcoming release. -->
+<!--
+ * **Can I pass custom parameters to the prefill service?**
+Custom parameters are planned for an upcoming release.
+-->
 
 * **Puis-je mettre en cache du contenu sécurisé ?**
 Par défaut, la mise en cache des fonctionnalités de contenu sécurisé est désactivée. Pour activer cette fonction, vous pouvez exécuter les instructions fournies dans [Mise en cache du contenu sécurisé](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=fr).
@@ -105,7 +109,7 @@ Créez le formulaire adaptatif basé sur le schéma JSON de l’environnement Ex
 
   You can get started with Adobe Experience Manager easily with just a few steps:
 
-  1. Generate the Service credentials: Use Adobe Experience Manager Developer Console to [generate](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=fr&#generate-service-credentials) the service credentials.  
+  1. Generate the Service credentials: Use Adobe Experience Manager Developer Console to [generate](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?#generate-service-credentials) the service credentials.  
   
   1. Setup your connection: Add your service credentials to the Adobe Experience Manager Connector. You can get crdential from service credential JSON and copy these credential details to your one-time connection setup:
 

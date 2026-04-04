@@ -8,7 +8,7 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 183e999c-9896-49a2-b29b-7c77da380df9
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 32%
@@ -56,7 +56,7 @@ Transformer des documents existants en expériences digitales interactives. Form
 
 ## Intégration et conditions préalables
 
-Forms Experience Builder est actuellement disponible via un programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) à partir de votre ID d’e-mail officiel.
+Forms Experience Builder est actuellement disponible via un programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail à [](mailto:aem-forms-ea@adobe.com) à partir de votre ID d’e-mail officiel.
 
 Experience Builder nécessite un environnement de création de production AEM Forms as a Cloud Service avec des [composants principaux de Forms adaptatif](/help/forms/enable-adaptive-forms-core-components.md).
 
@@ -73,7 +73,8 @@ Experience Builder nécessite un environnement de création de production AEM Fo
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | *Éditeur de formulaires adaptatifs* | *Éditeur universel* |
 
-<!-- >
+<!--
+ >
 
 ## Learn more on key capabilities {#key-capabilities-forms-experience-builder}
 
@@ -163,7 +164,8 @@ Experience Builder nécessite un environnement de création de production AEM Fo
       <em>Get responses to common questions about Forms Experience Builder capabilities and usage.</em>
    </p>
 </td>
-</table> -->
+</table>
+-->
 
 
 
@@ -193,7 +195,8 @@ Voici quelques façons de commencer à explorer le créateur d’expérience For
 
 - **Intégration à vos systèmes** : configurez les envois de formulaire pour qu’ils se connectent à vos workflows métier existants, qu’il s’agisse d’envoyer des données à une API REST, de créer un nouveau prospect dans votre CRM ou d’enregistrer des documents dans le stockage cloud. [En savoir plus](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md#data-integration--submission).
 
-<!-- ## Onboarding
+<!--
+ ## Onboarding
 
 The Forms Experience Builder is currently available through an Early Access Program. To request access, follow these steps:
 

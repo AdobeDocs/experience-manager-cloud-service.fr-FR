@@ -2,15 +2,14 @@
 title: Prise en main de l’agent de modernisation de l’expérience pour les projets de création AEM
 description: Découvrez les étapes de configuration spécifiques requises pour les projets de création AEM lors de la prise en main de l’agent de modernisation à l’aide de la console de modernisation de l’expérience.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
-exl-id: a1b2c3d4-e5f6-4789-a012-3456789abcde
-source-git-commit: df23c3a4c497943135f8719425225526ae14aa92
+role: User, Admin, Developer
+exl-id: 94a5e40b-af4a-42ed-922b-b1ec9bb82e24
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 1%
 
 ---
-
 
 # Prise en main de l’agent de modernisation de l’expérience pour les projets de création AEM {#getting-started-aem-authoring}
 
@@ -52,7 +51,7 @@ Suivez ces étapes à partir du guide standard.
 1. [Connexion de votre référentiel GitHub](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md#connect-repo)
 1. [Démarrer l&#39;invite](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md#start-prompting)
 
-![&#x200B; Contenu importé &#x200B;](assets/content-imported-aem-authoring.png)
+![ Contenu importé ](assets/content-imported-aem-authoring.png)
 
 Une fois ces étapes effectuées pour migrer le contenu, procédez comme suit.
 

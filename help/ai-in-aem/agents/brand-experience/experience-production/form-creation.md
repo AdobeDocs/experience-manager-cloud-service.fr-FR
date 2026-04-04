@@ -1,10 +1,10 @@
 ---
 title: Tâche de création de formulaire
-description: Découvrez la tâche de création de formulaires de Brand Experience Agent et comment utiliser le langage naturel pour créer des formulaires en partant de zéro.
+description: Découvrez la tâche de création de formulaires de Brand Experience Agent et comment utiliser le langage naturel pour créer des formulaires à partir de zéro.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
-source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 0%

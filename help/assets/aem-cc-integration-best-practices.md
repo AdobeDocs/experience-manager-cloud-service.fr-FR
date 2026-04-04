@@ -7,7 +7,7 @@ feature: Collaboration, Adobe Asset Link, Desktop App
 role: User, Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '3444'
 ht-degree: 94%
@@ -45,7 +45,7 @@ Lisez ce qui suit pour savoir quelles intégrations choisir entre poste de trava
 | Proposition de valeur pour les oersonnes impliquées | Offre Adobe | Surfaces impliquées |
 |---|---|---|
 | Les personnes créatives découvrent des ressources à partir de [!DNL Experience Manager], les ouvrent et les utilisent, les modifient et chargent les modifications dans [!DNL Experience Manager], ou encore chargent les nouveaux fichiers dans [!DNL Experience Manager] sans quitter leur application [!DNL Creative Cloud]. | [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator et InDesign. |
-| Les utilisateurs professionnels simplifient l’ouverture et l’utilisation des ressources, la modification et le chargement des modifications dans [!DNL Experience Manager] et le chargement de nouveaux fichiers dans [!DNL Experience Manager] à partir de l’environnement de poste de travail. Ils utilisent une intégration générique pour ouvrir n’importe quel type de ressource dans l’application de bureau native, y compris les applications autres qu’Adobe. | Application de bureau [[!DNL Experience Manager] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr) | Application de bureau Experience Manager sous Windows et Mac |
+| Les utilisateurs professionnels simplifient l’ouverture et l’utilisation des ressources, la modification et le chargement des modifications dans [!DNL Experience Manager] et le chargement de nouveaux fichiers dans [!DNL Experience Manager] à partir de l’environnement de poste de travail. Ils utilisent une intégration générique pour ouvrir n’importe quel type de ressource dans l’application de bureau native, y compris les applications autres qu’Adobe. | Application de bureau [[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr) | Application de bureau Experience Manager sous Windows et Mac |
 | Les spécialistes marketing et les utilisateurs professionnels découvrent, prévisualisent, attribuent une licence et enregistrent les ressources Adobe Stock dans Experience Manager. Les ressources sous licence et enregistrées fournissent des métadonnées Adobe Stock pour une meilleure gouvernance. | [Intégration d’Experience Manager et d’Adobe Stock](aem-assets-adobe-stock.md) | Interface web [!DNL Experience Manager] |
 | Améliorez la collaboration entre les concepteurs de produits numériques et les spécialistes marketing. Permettez aux concepteurs d’utiliser les ressources numériques dans les modèles de conception et de structure filaire sur la zone de travail Adobe XD. | [[!DNL Adobe Asset Link] pour [!DNL Adobe XD]](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
 | Les spécialistes marketing peuvent créer automatiquement des variations et des dérivés en fonction des ressources chargées et des actions prédéfinies créées à l’aide de la personnalisation. Utilisez cette automatisation pour améliorer la vitesse du contenu et réduire les efforts manuels. | [Automatisation du contenu](/help/assets/cc-api-integration.md) | Interface Web [!DNL Experience Manager Assets] |
@@ -74,7 +74,8 @@ Choix de la fonctionnalité à utiliser
 | Divers – réseau et accès | Nécessite un accès depuis le poste de travail de l’utilisateur vers le déploiement d’Experience Manager sur le réseau | Nécessite un accès depuis le poste de travail de l’utilisateur vers le déploiement d’Experience Manager sur le réseau | Adobe Asset Link ne partage pas l’environnement du proxy réseau. |
 
 
-<!-- Removing this row from table as migration guide is not yet final.
+<!--
+ Removing this row from table as migration guide is not yet final.
 | Misc - Migrate large number of assets | No | No | [Migration Guide](/help/assets/assets-migration-guide.md) |
 -->
 
@@ -104,7 +105,8 @@ Pour prendre en charge les cas d’utilisation de la distribution des ressources
 
 ### Remarques concernant l’utilisation de l’intégration Experience Manager et Creative Cloud {#considerations-when-using-aem-and-creative-cloud-integration}
 
-<!--incomplete and TBD: 
+<!--
+incomplete and TBD: 
 
 * DA2.0 best practices: See troubleshooting.md
 * Stock integration: See ?

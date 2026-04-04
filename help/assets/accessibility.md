@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Accessibility, Asset Management
 role: User, Developer, Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1923'
 ht-degree: 99%
@@ -43,7 +43,8 @@ Possible topics to cover in this article are below.
 
 Pour lire un rapport contenant des détails sur le niveau de conformité, voir la page [Rapport de conformité pour l’accessibilité](https://www.adobe.com/accessibility/compliance.html) (ACR).
 
-<!-- TBD: Add link after release.
+<!--
+ TBD: Add link after release.
 To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dynamic Media]](). 
 -->
 
@@ -70,7 +71,8 @@ Les principales fonctionnalités d’[!DNL Assets] sont plus accessibles qu’au
 
 De nombreux éléments de l’interface utilisateur exploitables ou sur lesquels l’utilisateur peut cliquer peuvent également fonctionner avec un clavier. À l’aide du clavier, les utilisateurs peuvent se concentrer sur les éléments de l’interface et prendre les mesures appropriées. Les utilisateurs peuvent directement utiliser des raccourcis clavier pour déclencher une commande ou une action sans avoir à se concentrer sur les éléments de l’interface utilisateur et la déclencher via le clavier. Par exemple, les utilisateurs peuvent ouvrir la chronologie d’une ressource dans la partie gauche en accédant à la commande de l’interface utilisateur via un clavier et en sélectionnant `Return`, puis en sélectionnant le raccourci clavier `Alt + 2`.
 
-<!-- TBD items:
+<!--
+ TBD items:
 
 * The button/menu to toggle between list view and card view exposes relevant info to the screen readers. What about column view option? This info can go into 'basic handling' info aka article to 'understand and use the workspace'.
 * How to open and browse through the profile pop-up dialog in [!DNL Experience Manager] UI using a keyboard? The navigation does not match the order of visual display of options on the UI. This info can go into 'basic handling' info aka article to 'understand and use the workspace'. What about setting preferences and impersonating a user?
@@ -113,7 +115,8 @@ Une fois connectés, les utilisateurs de DAM peuvent accéder à l’interface u
 
 Si un utilisateur développe l’option d’aide ou de profil d’utilisateur à partir du menu, l’option ou l’état approprié est annoncé par le lecteur d’écran. Si un utilisateur développe l’option de profil utilisateur, les options disponibles peuvent être sélectionnées à l’aide du clavier. Par exemple, un utilisateur peut emprunter l’identité d’un autre utilisateur. Si un utilisateur recherche une chaîne à partir de l’option [!UICONTROL Aide], un narrateur annonce « Recherche de l’aide » pour indiquer qu’une recherche est en cours.
 
-<!-- TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
+<!--
+ TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
 
 ![Keyboard navigation of top options in [!DNL Experience Manager] user interface](assets/keyboard-navigation-in-aem.gif)
 
@@ -124,7 +127,8 @@ Si un utilisateur développe l’option d’aide ou de profil d’utilisateur à
 
 Dans l’interface utilisateur d’[!DNL Assets], les utilisateurs peuvent se servir du clavier pour parcourir la liste des ressources numériques existantes dans le référentiel DAM, prévisualiser ou télécharger une ressource, afficher les rendus générés, changer de vue, afficher la chronologie et l’historique des versions, afficher les commentaires et les références, et afficher et gérer les métadonnées.
 
-<!-- TBD: Not sure about the following list items mean:
+<!--
+ TBD: Not sure about the following list items mean:
 
 In [!DNL Experience Manager] header section, when navigating in browse mode, screen reader now announces,
   
@@ -150,7 +154,8 @@ Lors de la navigation dans le référentiel de ressources, les fonctionnalités 
 * Les commentaires relatifs à une ressource sont disponibles dans la chronologie de cette ressource, Elle est accessible grâce au rail gauche à l’aide d’un clavier ou d’un raccourci clavier.
 * Les [!UICONTROL Paramètres d’affichage] d’[!DNL Experience Manager] sont accessibles à l’aide du clavier. L’utilisateur peut parcourir les tailles de carte disponibles à l’aide des touches fléchées, naviguer parmi ces tailles via les touches de tabulation et définir d’autres éléments dans la vue Paramètres d’affichage existante.
 
-<!-- TBD: Gradually, as more enhancements are done in these categories, add more content.
+<!--
+ TBD: Gradually, as more enhancements are done in these categories, add more content.
 
 ## Add and upload digital assets {#upload}
 
@@ -195,7 +200,8 @@ Lors du filtrage des résultats de recherche :
 
 ## Partage de ressources {#share-assets}
 
-<!-- TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no content for AAL a11y on helpx.
+<!--
+ TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no content for AAL a11y on helpx.
 -->
 
 Lors du partage de ressources, les fonctionnalités suivantes améliorent l’accessibilité :
@@ -243,5 +249,5 @@ Pour rédiger des commentaires, poser des questions et demander des amélioratio
 >[!MORELIKETHIS]
 >
 >* [Notes de mise à jour des améliorations apportées à chaque version](/help/release-notes/release-notes-cloud/release-notes-current.md).
->* Conseils en matière d’accessibilité d’[[!DNL Adobe Experience Manager] &#x200B;](/help/compliance/accessibility/web-accessibility.md)
+>* Conseils en matière d’accessibilité d’[[!DNL Adobe Experience Manager] ](/help/compliance/accessibility/web-accessibility.md)
 >* [Rapports de conformité (ACR) et liste VPAT (Modèle volontaire d’accessibilité des produits) pour les solutions d’Adobe](https://www.adobe.com/accessibility/compliance.html).

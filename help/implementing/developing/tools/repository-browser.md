@@ -6,7 +6,7 @@ seo-description: The repository browser provides a read-only view into the repos
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 feature: Developing
 role: Admin, Developer
-source-git-commit: 414608955bce3feebd1249a91e4f77161144e51e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '710'
 ht-degree: 70%
@@ -33,7 +33,7 @@ Accessible à partir du [Developer Console AEM as a Cloud Service](/help/impleme
 
 Ces conditions suivantes doivent être remplies pour accéder au Developer Console AEM as a Cloud Service ou au navigateur de référentiel
 
-Pour accéder au Developer Console AEM as a Cloud Service, voir Accès à [Developer Console](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
+Pour accéder au Developer Console AEM as a Cloud Service, voir Accès à [Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
 
 Pour accéder au navigateur de référentiel, les conditions requises sont les mêmes que pour AEM as a Cloud Service Developer Console (spécifié ci-dessus). Pour afficher le contenu du navigateur de référentiel pour une instance particulière :
 
@@ -78,7 +78,8 @@ Pour la publication, par défaut, le navigateur de référentiel affiche uniquem
 
 Pour rendre ces emplacements visibles, utilisez le profil de produit Publication des administrateurs et administratrices AEM. Pour plus d’informations, consultez la documentation [Profils d’équipe et de produit](/help/onboarding/aem-cs-team-product-profiles.md).
 
-<!-- Drafting because of CQDOC-23204
+<!--
+ Drafting because of CQDOC-23204
 
 1. Click the three dots next to the environment of your choice and select **Manage Access**
 

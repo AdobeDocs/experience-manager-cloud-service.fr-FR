@@ -5,7 +5,7 @@ exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 76%
@@ -53,7 +53,7 @@ Vous pouvez désormais parcourir le catalogue avec les données échelonnées. S
 
 ## AEM Launches {#launches}
 
-Les lancements d’AEM vous permettent de créer du contenu pour des données de produits structurées. Si vous ne connaissez pas les lancements, suivez le lien de la documentation sous la section [&#x200B; Ressources supplémentaires .](#additional-resources) La date de lancement est ensuite utilisée pour accéder aux données de produits échelonnées.
+Les lancements d’AEM vous permettent de créer du contenu pour des données de produits structurées. Si vous ne connaissez pas les lancements, suivez le lien de la documentation sous la section [ Ressources supplémentaires .](#additional-resources) La date de lancement est ensuite utilisée pour accéder aux données de produits échelonnées.
 
 ![lancement de l’étape](assets/staged-launch.png)
 

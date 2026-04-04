@@ -6,7 +6,7 @@ feature: Selectors
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '5363'
 ht-degree: 40%
@@ -23,14 +23,15 @@ L’interface utilisateur micro front-end est mise à disposition dans votre exp
 
 Le sélecteur de ressources offre de nombreux avantages, notamment :
 
-* Facilité d’intégration à l’une des applications [Adobe](#asset-selector-ims) ou [non-Adobe](#asset-selector-non-ims) utilisant la bibliothèque JavaScript Vanilla.
+* Facilité d’intégration à l’une des applications [](#asset-selector-ims) ou [non-Adobe](#asset-selector-non-ims) utilisant la bibliothèque JavaScript Vanilla.
 * Facile à gérer, car les mises à jour du package Sélecteur de ressources sont automatiquement déployées vers le sélecteur de ressources disponible pour votre application. Aucune mise à jour n’est requise dans votre application pour télécharger les dernières modifications.
 * Facile à personnaliser, car il existe des propriétés qui contrôlent l’affichage du sélecteur de ressources dans votre application.
 * Recherche de texte intégral, filtres prêts à l’emploi et filtres personnalisés pour accéder rapidement aux ressources à utiliser dans l’expérience de création.
 * Possibilité de changer de référentiels au sein d’une organisation IMS pour la sélection de ressources.
 * Possibilité de trier les ressources par nom, dimension et taille, et de les afficher en mode Liste, Grille, Galerie ou Cascade.
 
-<!--Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets] repository:
+<!--
+Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets] repository:
 
 1. [Install Asset Selector](#installation)
 2. [Integrate Asset Selector using Vanilla JS](#integration-using-vanilla-js)
@@ -90,7 +91,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 ## Intégration du sélecteur de ressources à l’aide de Vanilla JS {#integration-using-vanilla-js}
 
-Vous pouvez intégrer n’importe quelle application [!DNL Adobe] ou non Adobe à [!DNL Experience Manager Assets] référentiel et sélectionner des ressources dans l’application. Voir [&#x200B; Intégration du sélecteur de ressources à diverses applications &#x200B;](#asset-selector-integration-with-apps).
+Vous pouvez intégrer n’importe quelle application [!DNL Adobe] ou non Adobe à [!DNL Experience Manager Assets] référentiel et sélectionner des ressources dans l’application. Voir [ Intégration du sélecteur de ressources à diverses applications ](#asset-selector-integration-with-apps).
 
 L’intégration est effectuée en important le package Sélecteur de ressources et en se connectant à Assets as a Cloud Service à l’aide de la bibliothèque JavaScript Vanilla. Modifiez un `index.html` ou tout fichier approprié dans votre application pour :
 
@@ -107,7 +108,7 @@ Vous pouvez effectuer une authentification sans définir certaines des propriét
 
 Vous pouvez intégrer le sélecteur de ressources à diverses applications, telles que :
 
-* [Intégration du sélecteur de ressources à une application  [!DNL Adobe] &#x200B;](#adobe-app-integration-vanilla)
+* [Intégration du sélecteur de ressources à une application  [!DNL Adobe] ](#adobe-app-integration-vanilla)
 * [Intégrer le sélecteur de ressources à une application non Adobe](#adobe-non-app-integration)
 * [Intégration de Dynamic Media aux fonctionnalités OpenAPI](#adobe-app-integration-polaris)
 
@@ -403,7 +404,7 @@ Utilisez les conditions préalables suivantes si vous intégrez le sélecteur de
 * Pour accéder à Dynamic Media avec des fonctionnalités OpenAPI, vous devez disposer de licences pour :
    * Référentiel Assets (par exemple, Experience Manager Assets as a Cloud Service).
    * AEM Dynamic Media.
-* Seules les ressources [&#x200B; approuvées &#x200B;](#approved-assets.md) peuvent être utilisées pour garantir la cohérence de la marque.
+* Seules les ressources [ approuvées ](#approved-assets.md) peuvent être utilisées pour garantir la cohérence de la marque.
 
 ### Intégration de Dynamic Media aux fonctionnalités OpenAPI{#adobe-app-integration-polaris}
 
@@ -417,7 +418,7 @@ Les propriétés `rootPath` et `path` ne doivent pas faire partie de Dynamic Med
 aemTierType:[1: "delivery"]
 ```
 
-Cette configuration vous permet d’afficher toutes les ressources approuvées sans dossiers ou sous la forme d’une structure plate. Pour plus d’informations, accédez à `aemTierType` propriété sous [&#x200B; Propriétés du sélecteur de ressources &#x200B;](#asset-selector-properties)
+Cette configuration vous permet d’afficher toutes les ressources approuvées sans dossiers ou sous la forme d’une structure plate. Pour plus d’informations, accédez à `aemTierType` propriété sous [ Propriétés du sélecteur de ressources ](#asset-selector-properties)
 
 +++
 
@@ -473,7 +474,7 @@ L’URL de diffusion dynamique possède la syntaxe suivante :
 
 +++
 
-+++**Prêt à sélectionner l’URL de diffusion dynamique**
++++ **Prêt à sélectionner l’URL de diffusion dynamique**
 Toutes les ressources sélectionnées sont transportées par `handleSelection` fonction qui agit comme un objet JSON. Par exemple, `JsonObj`. L’URL de diffusion dynamique est créée en combinant les opérateurs ci-dessous :
 
 | Objet | JSON |
@@ -523,6 +524,8 @@ Dans la capture d’écran ci-dessus, l’URL de diffusion du rendu original PDF
   L’extrait de code de la capture d’écran ci-dessus est un exemple de ressource vidéo. Il comprend un tableau de liens de rendus. La `selection[5]` dans l’extrait est l’exemple de miniature d’image qui peut être utilisée comme espace réservé de la miniature vidéo dans l’expérience cible. La `selection[5]` dans le tableau des rendus est pour le lecteur vidéo. Elle sert d’HTML et peut être définie comme `src` de l’iframe. Il prend en charge la diffusion en continu à débit adaptatif, qui est une diffusion de la vidéo optimisée pour le web.
 
   Dans l’exemple ci-dessus, l’URL du lecteur vidéo est `https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play`
+
++++
 
 +++**Interface utilisateur du sélecteur de ressources pour Dynamic Media avec les fonctionnalités OpenAPI**
 
@@ -585,14 +588,14 @@ Vous pouvez utiliser les propriétés du sélecteur de ressources pour personnal
 | *onClose* | Fonction | Non | | Appelée lorsque vous cliquez sur le bouton `Close` en mode modal. Cette fonction est uniquement appelée en mode `modal` et n’est pas prise en compte en mode `rail`. |
 | *onFilterSubmit* | Fonction | Non | | Appelée avec des éléments de filtre lorsque l’utilisateur ou l’utilisatrice modifie des critères de filtre. |
 | *selectionType* | Chaîne | Non | Célibataire | Configuration pour la sélection `single` ou `multiple` de ressources à la fois. |
-| placer sur la liste autorisée *dragOptions.* | booléen | Non | | La propriété permet d’autoriser ou de refuser le déplacement de ressources qui ne sont pas sélectionnables. |
+| *dragOptions.* | booléen | Non | | La propriété permet d’autoriser ou de refuser le déplacement de ressources qui ne sont pas sélectionnables. |
 | *aemTierType* | Chaîne | Non |  | Il vous permet de choisir si vous souhaitez afficher les ressources du niveau de diffusion, du niveau de création ou des deux. Syntaxe de <br><br> : `aemTierType:[0]: "author" 1: "delivery"` <br><br> Par exemple, si les deux `["author","delivery"]` sont utilisées, le sélecteur de référentiels affiche des options pour l’auteur et la diffusion. |
 | *handleNavigateToAsset* | Fonction | Non | | Il s’agit d’une fonction de rappel permettant de gérer la sélection d’une ressource. |
 | *noWrap* | Booléen | Non | | La propriété *noWrap* permet d’effectuer le rendu du sélecteur de ressources dans le panneau du rail latéral. Si cette propriété n’est pas mentionnée, elle affiche la *vue de boîte de dialogue* par défaut. |
 | *dialogSize* | prise de contrôle en petit, moyen, grand, plein écran ou plein écran | Chaîne | Facultatif | Vous pouvez contrôler la disposition en spécifiant sa taille à l’aide des options données. |
 | *colorScheme* | Clair ou foncé | Non | | Cette propriété est utilisée pour définir le thème d’une application du sélecteur de ressources. Vous pouvez choisir entre le thème clair ou sombre. |
 | *filterRepoList* | Fonction | Non |  | Vous pouvez utiliser `filterRepoList` fonction de rappel qui appelle le référentiel Experience Manager et renvoie une liste filtrée de référentiels. |
-| *expiryOptions* | Fonction | | | Vous pouvez utiliser entre les deux propriétés suivantes : **getExpiryStatus** qui fournit le statut d’une ressource arrivée à expiration. La fonction renvoie des `EXPIRED`, des `EXPIRING_SOON` ou des `NOT_EXPIRED` en fonction de la date d’expiration d’une ressource que vous fournissez. Voir [&#x200B; Personnalisation des ressources expirées &#x200B;](#customize-expired-assets). De plus, vous pouvez utiliser **allowSelectionAndDrag** dans lequel la valeur de la fonction peut être `true` ou `false`. Lorsque la valeur est définie sur `false`, la ressource expirée ne peut pas être sélectionnée ni glissée-déplacée sur la zone de travail. |
+| *expiryOptions* | Fonction | | | Vous pouvez utiliser entre les deux propriétés suivantes : **getExpiryStatus** qui fournit le statut d’une ressource arrivée à expiration. La fonction renvoie des `EXPIRED`, des `EXPIRING_SOON` ou des `NOT_EXPIRED` en fonction de la date d’expiration d’une ressource que vous fournissez. Voir [ Personnalisation des ressources expirées ](#customize-expired-assets). De plus, vous pouvez utiliser **allowSelectionAndDrag** dans lequel la valeur de la fonction peut être `true` ou `false`. Lorsque la valeur est définie sur `false`, la ressource expirée ne peut pas être sélectionnée ni glissée-déplacée sur la zone de travail. |
 | *showToast* | | Non | | Cela permet au sélecteur de ressources d’afficher un message toast personnalisé pour la ressource expirée. |
 
 <!--
@@ -821,10 +824,12 @@ Le tableau suivant décrit des propriétés importantes de l’objet Ressource s
 
 Le sélecteur de ressources vous permet de contrôler l’utilisation d’une ressource arrivée à expiration. Vous pouvez personnaliser la ressource arrivée à expiration avec un badge **Expiration imminente** qui peut vous aider à connaître à l’avance les ressources qui arriveront à expiration dans les 30 jours suivant la date actuelle. De plus, cela peut être personnalisé en fonction des besoins. Vous pouvez également autoriser la sélection d’une ressource arrivée à expiration sur la zone de travail ou inversement. La personnalisation d’une ressource arrivée à expiration peut être effectuée à l’aide de certains fragments de code de différentes manières :
 
-<!--{
+<!--
+{
     getExpiryStatus: function, // to control Expired/Expiring soon badges of the asset
     allowSelectionAndDrag: boolean, // set true to allow the selection of expired assets on canvas, set false, otherwise.
-}-->
+}
+-->
 
 ```
 expiryOptions: {
@@ -845,7 +850,8 @@ expiryOptions:{
 <!--
 Additionally, To do this, navigate to **[!UICONTROL Disable default expiry behavior]** under the [!UICONTROL Controls] tab and set the boolean value to `true` or `false` as per the requirement. If `true` is selected, you can see the select box over the expired asset, otherwise it remains unselected. You can hover to the info icon of an asset to know the details of an expired asset. 
 
-![Disable default expiry behavior](assets/disable-default-expiry-behavior.png)-->
+![Disable default expiry behavior](assets/disable-default-expiry-behavior.png)
+-->
 
 #### Définition de la durée d’une ressource arrivée à expiration {#set-duration-of-expired-asset}
 

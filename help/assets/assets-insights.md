@@ -6,7 +6,7 @@ feature: Asset Insights, Asset Reports
 role: User, Leader
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 99%
@@ -77,7 +77,8 @@ Vous pouvez afficher les scores de toutes les ressources d’un dossier simultan
 1. Cliquez sur l’option **[!UICONTROL Mise en page]** de la barre d’outils, puis sélectionnez **[!UICONTROL Mode Statistiques]**.
 1. La page affiche les scores d’utilisation des ressources. Comparez les évaluations des différentes ressources et tirez-en des enseignements.
 
-<!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
+<!--
+ TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 
 ## Schedule background job {#scheduling-background-job}
 

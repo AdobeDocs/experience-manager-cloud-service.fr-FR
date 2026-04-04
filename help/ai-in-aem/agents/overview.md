@@ -2,9 +2,9 @@
 title: Présentation des agents dans AEM
 description: Découvrez les agents disponibles dans AEM pour accélérer la création de votre contenu et orchestrer automatiquement les modifications.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: f0b82ecf-0f5c-432f-9944-f99597aacd6a
-source-git-commit: fc304f3e63c38006bf678abc797ccb17dcd8db39
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 3%
@@ -27,21 +27,21 @@ Ces agents sont disponibles dans Adobe Experience Manager (AEM) as a Cloud Servi
 
 Vous disposez de trois options pour accéder aux agents.
 
-1. Vous avez peut-être la possibilité d’accéder aux agents AEM par le biais du programme [Essayer avant d’acheter](http://experienceleague.adobe.com/fr/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) qui est déployé par phases. Votre CSM ou votre TAM peut vous aider à confirmer la disponibilité de votre entreprise.
+1. Vous avez peut-être la possibilité d’accéder aux agents AEM par le biais du programme [Essayer avant d’acheter](http://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) qui est déployé par phases. Votre CSM ou votre TAM peut vous aider à confirmer la disponibilité de votre entreprise.
 1. Explorez les agents AEM [via une version d’évaluation](https://www.aem.live/developer/aem-playground).
 1. Contactez votre CSM ou votre TAM pour discuter de l’accès via le SKU de l’agence si cela correspond à votre feuille de route et à vos plans d’évaluation.
 
-À mesure que de nouvelles compétences seront disponibles dans le cadre de la version préliminaire, nous aurons d’autres occasions de participer et de partager nos commentaires. Nous vous encourageons à regarder [cette page](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) pour les mises à jour.
+À mesure que de nouvelles compétences seront disponibles dans le cadre de la version préliminaire, nous aurons d’autres occasions de participer et de partager nos commentaires. Nous vous encourageons à regarder [cette page](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) pour les mises à jour.
 
 ## Brand Experience Agent {#brand-experience-agent}
 
-Le [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) automatise les tâches à fort effort et à volume élevé par le biais des agents suivants, chacun se spécialisant dans un ensemble spécifique de tâches.
+[](/help/ai-in-aem/agents/brand-experience/overview.md) automatise les tâches à fort effort et à volume élevé par le biais des agents suivants, chacun se spécialisant dans un ensemble spécifique de tâches.
 
 * **[Agent de modernisation Experience Cloud](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)** - Migre les sites web vers des formats prêts pour le cloud
 * **[Agent de production Experience](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)** - Réduit le délai de mise sur le marché avec les mises à jour de contenu, la création de formulaires et les communications
 * **[Agent de développement](/help/ai-in-aem/agents/brand-experience/development/development.md)** - Dépannage assisté par IA et automatisation des builds
 
-Grâce à ces agents, Brand Experience Agent absorbe le travail opérationnel lourd derrière les mises à jour et la modernisation, aidant les équipes à apporter des modifications plus rapidement et avec une plus grande confiance dans l’ère de l’IA d’aujourd’hui.
+Grâce à ces agents, le Brand Experience Agent absorbe le travail opérationnel lourd derrière les mises à jour et la modernisation, aidant les équipes à apporter des modifications plus rapidement et avec une plus grande confiance dans l&#39;ère de l&#39;IA d&#39;aujourd&#39;hui.
 
 ## Agent du gestionnaire de contenu {#content-advisor-agent}
 

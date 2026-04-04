@@ -6,7 +6,7 @@ badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites
 solution: Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2000'
 ht-degree: 92%
@@ -55,7 +55,8 @@ L’action suivante est requise :
 
 1. Vous devez [intégrer AEM à Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
-<!-- link rewriter - targets in content-fragments-customizing do not exist yet
+<!--
+ link rewriter - targets in content-fragments-customizing do not exist yet
 
 1. Content Fragments are exported from the AEM author instance, so you need to [Configure the AEM Link Externalizer](/help/implementing/developing/extending/content-fragments-customizing.md#configuring-the-aem-link-externalizer) on the author instance to ensure that any references within the Content Fragment are externalized for web delivery.
 
@@ -83,7 +84,7 @@ Les options requises peuvent être sélectionnées dans **Propriétés** du doss
 
 1. Sélectionnez l’onglet **Services cloud**.
 
-1. Sous **Configuration de Cloud Service**, sélectionnez votre configuration cible dans la liste déroulante.
+1. Sous **Configuration de**, sélectionnez votre configuration cible dans la liste déroulante.
 
 1. Sélectionnez votre espace de travail Adobe Target.
 
@@ -158,7 +159,8 @@ Can this still occur?
 
    * **Configuration d’A4T Analytics Cloud** : sélectionnez la configuration d’Analytics Cloud utilisée pour les objectifs et les mesures des activités de Target. Vous avez besoin de cette option si vous utilisez Adobe Analytics en tant que source de création de rapports lors du ciblage de contenu.
 
-<!-- Is this needed?
+<!--
+ Is this needed?
 If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
 -->
 
@@ -242,7 +244,7 @@ La structure est créée. Pour répliquer le framework sur l’instance de publi
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=fr).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 >

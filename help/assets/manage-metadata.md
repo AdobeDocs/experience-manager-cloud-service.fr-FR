@@ -7,7 +7,7 @@ feature: Asset Management, Metadata
 role: User, Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1950'
 ht-degree: 90%
@@ -96,7 +96,8 @@ Ce type de métadonnées assure une gestion efficace des ressources, un contrôl
 
 <!-- Learn more about [metadata best practices](metadata-best-practices.md) to manage your digital assets effectively. -->
 
-<!-- The two basic types of metadata are technical metadata and descriptive metadata.
+<!--
+ The two basic types of metadata are technical metadata and descriptive metadata.
 
 Technical metadata is useful for software applications that are dealing with digital assets and should not be maintained manually. [!DNL Experience Manager Assets] and other software automatically determine technical metadata and the metadata may change when the asset is modified. The available technical metadata of an asset depends largely on the file type of the asset. Some examples of technical metadata are:
 
@@ -107,7 +108,8 @@ Technical metadata is useful for software applications that are dealing with dig
 
 Descriptive metadata is metadata concerned with the application domain, for example, the business that an asset is coming from. Descriptive metadata cannot be determined automatically. It is created manually or semi-automatically. For example, a GPS-enabled camera can automatically track the latitude and longitude and add geotag the image.
 
-The cost of manually creating descriptive metadata information is high. So, standards are established to ease the exchange of metadata across software systems and organizations. [!DNL Experience Manager Assets] supports all relevant standards for metadata management. -->
+The cost of manually creating descriptive metadata information is high. So, standards are established to ease the exchange of metadata across software systems and organizations. [!DNL Experience Manager Assets] supports all relevant standards for metadata management.
+-->
 
 ## Métadonnées et dernière modification {#last-modification}
 
@@ -135,7 +137,7 @@ Il existe différentes manières d’incorporer des métadonnées dans des fichi
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP) est une norme ouverte utilisée par [!DNL Experience Manager Assets] pour la gestion des métadonnées. La norme permet le codage universel des métadonnées en l’incorporant dans tous les formats de fichier. Adobe et d’autres entreprises prennent en charge la norme XMP, car elle offre un modèle de contenu enrichi. Si vous utilisez la norme XMP et [!DNL Experience Manager Assets], vous disposez d’une plateforme puissante sur laquelle vous appuyer. Pour plus d’informations, voir la section [XMP](https://www.adobe.com/fr/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP) est une norme ouverte utilisée par [!DNL Experience Manager Assets] pour la gestion des métadonnées. La norme permet le codage universel des métadonnées en l’incorporant dans tous les formats de fichier. Adobe et d’autres entreprises prennent en charge la norme XMP, car elle offre un modèle de contenu enrichi. Si vous utilisez la norme XMP et [!DNL Experience Manager Assets], vous disposez d’une plateforme puissante sur laquelle vous appuyer. Pour plus d’informations, voir la section [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -202,7 +204,8 @@ Assets as a [!DNL Cloud Service] peut générer des métadonnées personnalisée
 >
 >Un seul profil de traitement peut être appliqué à un dossier. Pour appliquer plusieurs traitements aux ressources d’un dossier, ajoutez d’autres options à un seul profil de traitement. Par exemple, un seul profil peut générer des rendus, transcoder des ressources, générer des métadonnées personnalisées, etc. Vous pouvez appliquer des filtres de type MIME pour chaque tâche afin que la tâche appropriée soit déclenchée pour le format de fichier requis.
 
-<!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
+<!--
+ TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 
 ## Configure limit for bulk metadata update {#configlimit}
 

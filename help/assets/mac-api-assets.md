@@ -6,7 +6,7 @@ feature: Assets HTTP API
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1697'
 ht-degree: 76%
@@ -43,7 +43,7 @@ La réponse de l’API est un fichier JSON pour certains types MIME et un code d
 
 Un [fragment de contenu](/help/assets/content-fragments/content-fragments.md) est une ressource structurée qui stocke du texte, des nombres et des dates. Comme il existe plusieurs différences avec les ressources `standard` (telles que les images ou les documents), certaines règles supplémentaires s’appliquent pour gérer les fragments de contenu.
 
-Pour plus d’informations, consultez [Prise en charge de fragments de contenu dans l’API HTTP d’ [!DNL Experience Manager Assets] &#x200B;](/help/assets/content-fragments/assets-api-content-fragments.md).
+Pour plus d’informations, consultez [Prise en charge de fragments de contenu dans l’API HTTP d’ [!DNL Experience Manager Assets] ](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 >[!NOTE]
 >
@@ -121,7 +121,8 @@ L’API HTTP d’[!DNL Assets] offre les fonctionnalités suivantes :
 >
 >Pour faciliter la lecture, les notations cURL complètes ne sont pas utilisées dans les exemples suivants. La notation correspond à [Resty](https://github.com/micha/resty) qui est un wrapper de script pour cURL.
 
-<!-- TBD: The Console Manager is not available now. So how to configure the below? 
+<!--
+ TBD: The Console Manager is not available now. So how to configure the below? 
 
 **Prerequisites**
 
@@ -293,7 +294,7 @@ Supprime une ressource (arborescence) pour le chemin indiqué.
 
 ## Respect des bonnes pratiques et des limites de notes {#tips-limitations}
 
-* Assets et ses rendus ne sont plus disponibles via l’interface web [!DNL Assets] et l’API HTTP lorsque l’heure de [!UICONTROL &#x200B; est atteinte] L’API renvoie une erreur 404 si l’[!UICONTROL Heure d’activation] est dans le futur ou l’[!UICONTROL Heure de désactivation] est dans le passé.
+* Assets et ses rendus ne sont plus disponibles via l’interface web [!DNL Assets] et l’API HTTP lorsque l’heure de [!UICONTROL  est atteinte] L’API renvoie une erreur 404 si l’[!UICONTROL Heure d’activation] est dans le futur ou l’[!UICONTROL Heure de désactivation] est dans le passé.
 
 * L’API HTTP Assets renvoie uniquement un sous-ensemble de métadonnées. Les espaces de noms sont codés en dur et seuls ces espaces de noms sont renvoyés. Pour obtenir des métadonnées complètes, consultez le chemin d’accès à la ressource `/jcr_content/metadata.json`.
 

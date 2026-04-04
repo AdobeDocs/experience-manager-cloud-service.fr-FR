@@ -6,8 +6,8 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+workflow-type: tm+mt
 source-wordcount: '2443'
 ht-degree: 100%
 
@@ -47,7 +47,8 @@ La création de formulaires réactifs implique deux activités principales :
 - Higher form completion rates
 - Improved user satisfaction
 - Enhanced accessibility compliance
-- Lower development and maintenance costs-->
+- Lower development and maintenance costs
+-->
 
 >[!TIP]
 >
@@ -174,7 +175,7 @@ La mise en page Panneau organise le contenu associé en sections visuellement di
 
 **Implémentation**
 
-1. Ajoutez le [composant Panneau](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) au formulaire.
+1. Ajoutez le [composant Panneau](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) au formulaire.
 2. Regroupez les champs associés dans chaque panneau pour conserver une organisation logique.
 3. Attribuez des en-têtes explicites et clairs à chaque section de panneau.
 4. Assurez-vous que l’espacement entre les panneaux est suffisant pour éviter tout encombrement visuel.
@@ -207,7 +208,7 @@ La mise en page Assistant guide les utilisateurs et les utilisatrices tout au lo
 
 **Implémentation**
 
-1. Insérez le [composant Assistant](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) dans votre formulaire.
+1. Insérez le [composant Assistant](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) dans votre formulaire.
 2. Divisez le formulaire en étapes logiques, idéalement entre 3 et 7, pour que chaque étape reste ciblée et gérable.
 3. Ajoutez des indicateurs de progression pour aider les utilisateurs et les utilisatrices à comprendre leur position dans le processus.
 4. Fournissez des commandes de navigation claires, telles que les boutons Suivant, Précédent et Enregistrer.
@@ -247,7 +248,7 @@ La mise en page Accordéon permet de gagner de l’espace en organisant le conte
 
 **Implémentation**
 
-1. Ajoutez le [composant Accordéon](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) à votre formulaire.
+1. Ajoutez le [composant Accordéon](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) à votre formulaire.
 2. Regroupez les contenus secondaires ou facultatifs associés dans chaque section d’accordéon.
 3. Utilisez des en-têtes clairs et descriptifs pour chaque section afin d’aider les utilisateurs et les utilisatrices à comprendre les informations qu’elles contiennent.
 4. Définissez les états d’ouverture ou de fermeture par défaut appropriés pour chaque section en fonction de l’importance et des besoins de l’utilisateur et de l’utilisatrice.
@@ -451,7 +452,7 @@ Lors de la création de dispositions personnalisées pour les composants dans le
 
 **Expérience client :**
 
-- **Taux de remplissage des formulaires :** visez un taux de 85 % ou plus sur les appareils mobiles.
+- **Taux d’achèvement des formulaires** : visez un taux de 85 % ou plus sur les appareils mobiles.
 - **Délai d’exécution :** les utilisateurs et les utilisatrices d’appareils mobiles doivent remplir les formulaires dans un délai inférieur de 20 % à celui des ordinateurs de bureau.
 - **Taux d’erreur :** conserver les erreurs de validation en dessous de 5 %.
 - **Points d’abandon :** identifiez et corrigez les étapes où les utilisateurs et les utilisatrices quittent le processus.

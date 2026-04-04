@@ -4,7 +4,7 @@ description: Découvrez comment les environnements de test spécialisés dans Cl
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
-source-git-commit: 837f1d0eb0bd0f8cf8c0e283db823255f4e53ae1
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 13%
@@ -13,7 +13,8 @@ ht-degree: 13%
 
 # Ajout d’un environnement de test spécialisé{#add-special-test-enviro}
 
-<!-- badge: label="Private beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+<!--
+ badge: label="Private beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 -->
 
 >[!NOTE]
@@ -69,7 +70,7 @@ Si l’option **Ajouter un environnement** est grisée (désactivée), cela peut
    * Cliquez sur **Environnement de test spécialisé**.
    * Fournissez un environnement **Nom**. Le nom de l’environnement ne peut pas être modifié une fois l’environnement créé.
    * (Facultatif) Fournissez une **Description** pour l’environnement.
-   * Sélectionnez une région de Principal **&#x200B;**&#x200B;dans la liste déroulante. Une fois créée, la région principale de l’environnement de test spécialisé (par exemple, *Royaume-Uni (Sud)*) est verrouillée et ne peut pas être modifiée.
+   * Sélectionnez une région de Principal **** dans la liste déroulante. Une fois créée, la région principale de l’environnement de test spécialisé (par exemple, *Royaume-Uni (Sud)*) est verrouillée et ne peut pas être modifiée.
 
      ![Boîte de dialogue Ajouter un environnement avec le bouton radio Environnement de test spécialisé sélectionné](assets/specialized-test-environment.png)
 
@@ -79,6 +80,6 @@ Si l’option **Ajouter un environnement** est grisée (désactivée), cela peut
 
 ## Ressources supplémentaires {#additional-resources}
 
-* Vidéo : [Présentation des types d’environnements dans AEM Cloud Manager](https://experienceleague.adobe.com/fr/perspectives/cloud-manager-environment-types)
+* Vidéo : [Présentation des types d’environnements dans AEM Cloud Manager](https://experienceleague.adobe.com/en/perspectives/cloud-manager-environment-types)
 * [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md)
 

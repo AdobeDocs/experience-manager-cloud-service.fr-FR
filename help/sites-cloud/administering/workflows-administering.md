@@ -6,7 +6,7 @@ role: Admin
 badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
 workflow-type: tm+mt
 source-wordcount: '1288'
 ht-degree: 90%
@@ -49,7 +49,7 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 
    >[!NOTE]
    >
-   > Pour maintenir une instance de workflow saine, consultez les rubriques [Purge régulière des instances de workflow](#regular-purging-of-workflow-instances) ou [Bonnes pratiques en matière de workflows](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=fr).
+   > Pour maintenir une instance de workflow saine, consultez les rubriques [Purge régulière des instances de workflow](#regular-purging-of-workflow-instances) ou [Bonnes pratiques en matière de workflows](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html).
 
 ## Rechercher des instances de workflow {#search-workflow-instances}
 
@@ -113,7 +113,7 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 Lorsqu’un workflow échoue, AEM fournit la console **Échecs** pour vous permettre d’enquêter et de prendre la mesure appropriée une fois la cause d’origine traitée :
 
 * **Détails de l’échec**
-Ouvre une fenêtre pour afficher les **Message d’échec**, **&#x200B; Étape et &#x200B;** Pile des échecs**.
+Ouvre une fenêtre pour afficher les **Message d’échec**, ** Étape et **Pile des échecs**.
 
 * **Ouvrir l’historique**
 Affiche des détails sur l’historique des workflows.

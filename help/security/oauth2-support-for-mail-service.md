@@ -4,7 +4,7 @@ description: Prise en charge d’OAuth2 pour le service de messagerie dans Adobe
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 feature: Security
 role: Admin
-source-git-commit: 8ceca10cc581c4b8e577ddd0a964a707c226c7fc
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 100%
@@ -30,8 +30,10 @@ Pour plus d’informations sur le service de messagerie d’AEM as a Cloud Servi
 
 1. Renseignez les informations selon vos besoins puis cliquez sur **Enregistrement**.
 1. Accédez à l’application nouvellement créée, puis sélectionnez **Autorisations d’API**.
-<!-- Alexandru: removing as a result of CQDOC-20609 
-1. Click **Add Permission** > **Graph Permission** > **Delegated Permissions**. -->
+<!--
+ Alexandru: removing as a result of CQDOC-20609 
+1. Click **Add Permission** > **Graph Permission** > **Delegated Permissions**.
+-->
 1. Sélectionnez les autorisations ci-dessous pour votre application, puis cliquez sur **Ajouter une autorisation** :
 
    >[!NOTE]

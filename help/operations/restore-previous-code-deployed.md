@@ -4,7 +4,7 @@ description: Découvrez comment restaurer un environnement à sa dernière versi
 feature: Operations
 role: Admin
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 4008b2f81bbd81cef343c6d2b04ba536b66d7d89
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 3%
@@ -13,11 +13,13 @@ ht-degree: 3%
 
 # Restaurer le code source précédent déployé dans AEM as a Cloud Service {#restore-previous-code-deployed}
 
-<!-- BETA BADGE REMOVED FOR NOVEMBER 2025 CM RELEASE badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+<!--
+ BETA BADGE REMOVED FOR NOVEMBER 2025 CM RELEASE badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 
 >[!NOTE]
 >
->The feature described in this article is only available through the beta program. To sign up for the beta, see [One-click rollback for pipeline deployments](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback). -->
+>The feature described in this article is only available through the beta program. To sign up for the beta, see [One-click rollback for pipeline deployments](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
+-->
 
 Utilisez **Restaurer le code précédemment déployé** pour restaurer instantanément un environnement à sa dernière version réussie, aucune exécution de pipeline n’étant requise.
 
@@ -85,7 +87,7 @@ Si vous souhaitez simplement restaurer les données perdues, endommagées ou sup
 
    ![Restauration de l’activation](/help/operations/assets/restore-previous-code-deployed-restoring.png)
 
-1. Près du coin supérieur droit de la page, cliquez sur ![Icône cloche ou Icône de notifications &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) **Notifications** pour savoir quand votre restauration commence et se termine.
+1. Près du coin supérieur droit de la page, cliquez sur ![Icône cloche ou Icône de notifications ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) **Notifications** pour savoir quand votre restauration commence et se termine.
 
    ![Restaurez les notifications de code précédentes lors du démarrage de la restauration et lorsque la restauration est terminée](/help/operations/assets/restore-previous-code-notifications.png)
    *Notifications pour une tâche de restauration du code précédent.*

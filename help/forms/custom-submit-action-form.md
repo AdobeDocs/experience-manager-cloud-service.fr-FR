@@ -6,10 +6,10 @@ role: User, Developer
 level: Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1703'
-ht-degree: 90%
+ht-degree: 89%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 90%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html?lang=fr) |
-| AEM as a Cloud Service (Composants principaux) | [Cliquer ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components) |
+| AEM 6.5 | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html) |
+| AEM as a Cloud Service (Composants principaux) | [Cliquer ici](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components) |
 | AEM as a Cloud Service (Composants de base) | Cet article |
 
 Un formulaire adaptatif fournit plusieurs actions Envoyer prêtes à l’emploi. Une action Envoyer spécifie les détails des actions à effectuer sur les données collectées via le formulaire adaptatif, par exemple l’envoi de données sur un e-mail.
@@ -102,8 +102,11 @@ Une action Envoyer est un sling:Folder qui comprend les éléments suivants :
 * **post.POST.jsp** : la servlet Submit appelle ce script avec les données envoyées et les autres données des sections précédentes. Toute mention relative à l’exécution d’une action dans cette page implique l’exécution du script post.POST.jsp. Pour enregistrer l’action Envoyer avec le Forms adaptatif à afficher dans la boîte de dialogue Modifier le formulaire adaptatif, ajoutez les propriétés suivantes au `sling:Folder` :
 
    * **guideComponentType** de type chaîne et valeur **fd/af/components/guidesubmittype**
-   * **guideDataModel** de type chaîne qui spécifie le type de formulaire adaptatif auquel l’action Envoyer est applicable. <!--**xfa** is supported for XFA-based Adaptive Forms while -->**xsd** est pris en charge pour les formulaires adaptatifs basés sur XSD. **basic** est pris en charge pour les formulaires adaptatifs qui n’utilisent pas XDP ou XSD. Pour afficher l’action sur plusieurs types de formulaires adaptatifs, ajoutez les chaînes correspondantes. Séparez chaque chaîne par une virgule. Par exemple, pour rendre une action visible sur les <!--XFA- and -->formulaires adaptatifs basés sur XSD, spécifiez la valeur en tant que <!--**xfa** and--> **xsd**.
-
+   * **guideDataModel** de type chaîne qui spécifie le type de formulaire adaptatif auquel l’action Envoyer est applicable. **xsd** est pris en charge pour les formulaires adaptatifs basés sur XSD. **basic** est pris en charge pour les formulaires adaptatifs qui n’utilisent pas XDP ou XSD. Pour afficher l’action sur plusieurs types de formulaires adaptatifs, ajoutez les chaînes correspondantes. Séparez chaque chaîne par une virgule. Par exemple, pour rendre une action visible sur le Forms adaptatif basé sur XSD, spécifiez la valeur **xsd**.
+  <!--
+    Replace above?
+    * **guideDataModel** of type String that specifies the type of Adaptive Form for which the Submit Action is applicable. **xfa** is supported for XFA-based Adaptive Forms while **xsd** is supported for XSD-based Adaptive Forms. **basic** is supported for Adaptive Forms that do not use XDP or XSD. To display the action on multiple types of Adaptive Forms, add the corresponding strings. Separate each string by a comma. For example, to make an action visible on XFA- and XSD-based Adaptive Forms, specify the value as <**xfa** and **xsd**.
+    -->
    * **jcr:description** de type chaîne. La valeur de cette propriété est affichée dans la liste des actions Envoyer située sous l’onglet Actions Envoyer de la boîte de dialogue Modifier le formulaire adaptatif. Les actions prêtes à l’emploi figurent dans le référentiel CRX, à l’emplacement **/libs/fd/af/components/guidesubmittype**.
 
    * **submitService** de type chaîne. Pour plus d’informations, voir [Planification de l’envoi du formulaire adaptatif pour les actions personnalisées](#schedule-adaptive-form-submission).
@@ -112,7 +115,7 @@ Une action Envoyer est un sling:Folder qui comprend les éléments suivants :
 
 >[!NOTE]
 >
-> Pour savoir comment créer une action d’envoi personnalisée pour les composants principaux, consultez [Création d’une action d’envoi personnalisée pour le Forms adaptatif (composants principaux)](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components).
+> Pour savoir comment créer une action d’envoi personnalisée pour les composants principaux, consultez [Création d’une action d’envoi personnalisée pour le Forms adaptatif (composants principaux)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components).
 
 Pour créer une action Envoyer personnalisée qui enregistre les données dans le référentiel CRX et vous envoie ensuite un e-mail, suivez la procédure ci-après. Le formulaire adaptatif contient l’action Envoyer Stocker le contenu (obsolète) prête à l’emploi qui permet d’enregistrer les données dans le référentiel CRX. En outre, AEM fournit une API de [messagerie](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) qui peut être utilisée pour envoyer des e-mails. Avant d’utiliser l’API de messagerie, configurez le service de messagerie Day CQ via la console système. Vous pouvez réutiliser l’action Stocker le contenu (obsolète) pour stocker les données dans le référentiel. L’action Stocker le contenu (obsolète) se trouve à l’emplacement /libs/fd/af/components/guidesubmittype/store dans le référentiel CRX.
 

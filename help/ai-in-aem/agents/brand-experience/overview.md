@@ -2,9 +2,9 @@
 title: Brand Experience Agent
 description: Découvrez comment Brand Experience Agent accélère la modernisation et l’évolution des expériences digitales en automatisant les mises à jour de contenu, la transformation du site et le dépannage technique, ce qui permet aux marques de s’améliorer et de s’adapter en permanence à la vitesse de l’IA.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: e6cd421a-8791-4fe3-b284-9b3beae996fd
-source-git-commit: fc304f3e63c38006bf678abc797ccb17dcd8db39
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 0%
@@ -14,23 +14,23 @@ ht-degree: 0%
 
 # Brand Experience Agent {#brand-experience-agent}
 
-Brand Experience Agent accélère la modernisation et l’évolution des expériences digitales en automatisant les mises à jour de contenu, la transformation du site et le dépannage technique, ce qui permet aux marques de s’améliorer et de s’adapter en permanence à la vitesse de l’IA.
+Brand Experience Agent accélère la modernisation et l’évolution des expériences digitales en automatisant les mises à jour de contenu, la transformation des sites et le dépannage technique, ce qui permet aux marques de s’améliorer et de s’adapter en permanence à la vitesse de l’IA.
 
 ## Agents {#agents}
 
-Brand Experience Agent fournit ses résultats par le biais des agents suivants, chacun se spécialisant dans un ensemble spécifique de tâches :
+Le Brand Experience Agent produit ses résultats par le biais des agents suivants, chacun se spécialisant dans un ensemble spécifique de tâches :
 
 * [Agent de modernisation Experience Cloud](#experience-modernization) - Migre les sites web vers des formats prêts pour le cloud
 * [Agent de production Experience](#experience-production) - Réduit le délai de mise sur le marché avec les mises à jour de contenu, la création de formulaires et les communications
 * [Agent de développement](#development) - Dépannage assisté par IA et automatisation des builds
 
-Grâce à ces agents, Brand Experience Agent absorbe le travail opérationnel lourd derrière les mises à jour et la modernisation, aidant les équipes à apporter des modifications plus rapidement et avec une plus grande confiance dans l’ère de l’IA d’aujourd’hui.
+Grâce à ces agents, le Brand Experience Agent absorbe le travail opérationnel lourd derrière les mises à jour et la modernisation, aidant les équipes à apporter des modifications plus rapidement et avec une plus grande confiance dans l&#39;ère de l&#39;IA d&#39;aujourd&#39;hui.
 
 >[!IMPORTANT]
 >
 >Les réponses générées par l&#39;IA peuvent être inexactes ou trompeuses. Assurez-vous de vérifier les correctifs et les réponses suggérés.
 >
->Consultez également les [instructions d’utilisation de l’IA générative de Adobe Experience Cloud](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
+>Consultez également les [instructions d’utilisation de l’IA générative de ](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 
 ## Agent de modernisation de l’expérience {#experience-modernization}
 

@@ -4,7 +4,7 @@ description: Avant que le processus d’intégration ne commence, l’administra
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 7c79ad402826cd40a25560cdc169b31e95cda6bd
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '697'
 ht-degree: 69%
@@ -28,12 +28,13 @@ Après avoir lu ce document, vous comprendrez :
 
 Ne vous inquiétez pas si vous ne connaissez pas tous les termes utilisés sur cette page. Les termes sont expliqués dans la partie suivante du parcours.
 
-<!-- REMOVED VIDEO AS PER CQDOC-23130. VIDEO NEEDS TO BE RECREATED/UPDATED
+<!--
+  REMOVED VIDEO AS PER CQDOC-23130. VIDEO NEEDS TO BE RECREATED/UPDATED
 ## Video {#video}
 
 This video summarizes the onboarding process laid out in this journey and is intended as an option overview. All topics in the video are presented in detail within the journey.
 
->[!VIDEO](https://video.tv.adobe.com/v/3431499/?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336959/?quality=12&learn=on)
 
 -->
 

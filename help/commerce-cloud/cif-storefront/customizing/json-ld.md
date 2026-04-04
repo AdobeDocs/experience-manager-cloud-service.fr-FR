@@ -5,7 +5,7 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 547d3721-e094-4a42-8a7c-27e4ef97ea9c
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 5%
@@ -45,7 +45,7 @@ Pour illustrer les étapes de vérification de JSON+LD, le projet Venia est util
 1. Accédez à votre instance AEM locale et ouvrez la page des détails du produit (PDP) : `http://localhost:4502/editor.html/content/venia/us/en/products/product-page.html`
 1. Créez un produit sur la page Détails du produit (PDP).
 1. Basculez vers le mode **Afficher comme publication**.
-1. Ouvrez le **Source d’affichage de page** dans votre navigateur.
+1. Ouvrez le Source d’affichage de page **dans votre navigateur.**
 1. Recherchez JSON+ID dans la source de la page.
 
 Si elle est configurée correctement, le script JSON+LD associé au produit injecté dans la page s’affiche.

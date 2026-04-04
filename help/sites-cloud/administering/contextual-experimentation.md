@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 420f8d5e-27f9-4081-b174-b2d7752779f7
-source-git-commit: ef20e6df5e19596ea742e6ac267b1f37b7517cfa
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1805'
 ht-degree: 0%
@@ -33,9 +33,9 @@ Pour les sites s’exécutant sur Adobe Experience Manager, il existe un **plug-
 
 ## Avant de commencer {#before-start}
 
-Le plug-in d’expérimentation est utilisé dans le cadre de [Edge Delivery Services](/help/edge/overview.md) vous aurez donc besoin d’un compte Github, d’un référentiel de contenu tel que SharePoint ou Google Drive, ainsi que de [AEM Sidekick](https://www.aem.live/docs/sidekick). Consultez également les pages [Prise en main - Tutoriel de développement de l’éditeur universel](https://www.aem.live/developer/tutorial) et [Prise en main - Tutoriel de développement](https://www.aem.live/developer/tutorial).
+Le plug-in d’expérimentation est utilisé dans le cadre de [](/help/edge/overview.md) vous aurez donc besoin d’un compte Github, d’un référentiel de contenu tel que SharePoint ou Google Drive, ainsi que de [AEM Sidekick](https://www.aem.live/docs/sidekick). Consultez également les pages [Prise en main - Tutoriel de développement de l’éditeur universel](https://www.aem.live/developer/tutorial) et [Prise en main - Tutoriel de développement](https://www.aem.live/developer/tutorial).
 
-Une fois que vous avez tout configuré, **regardez cette vidéo** intitulée [Expérimentation instantanée](https://business.adobe.com/fr/products/experience-manager/sites/testing-optimization.html) pour une courte démonstration sur le fonctionnement du plug-in d’expérimentation.
+Une fois que vous avez tout configuré, **regardez cette vidéo** intitulée [Expérimentation instantanée](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html) pour une courte démonstration sur le fonctionnement du plug-in d’expérimentation.
 
 ## Termes fréquemment utilisés {#frequently-used-terms}
 
@@ -93,15 +93,17 @@ Voir l’exemple ci-dessous :
 
 Pour chaque expérience, le trafic est réparti entre toutes les variantes (contrôle et challengers) et est automatiquement défini sur une distribution égale. Ainsi, si vous avez un challenger, il y aura automatiquement une répartition égale de 50/50 entre le contrôle et le challenger. Si vous avez deux concurrents, vous verrez automatiquement un tiers du trafic alloué au contrôle et chaque concurrent et ainsi de suite.
 
-Vous pouvez remplacer la répartition du trafic en configurant les métadonnées. Pour plus d’informations sur la personnalisation des métadonnées utilisées dans vos expériences, consultez la [&#x200B; page suivante &#x200B;](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring).
+Vous pouvez remplacer la répartition du trafic en configurant les métadonnées. Pour plus d’informations sur la personnalisation des métadonnées utilisées dans vos expériences, consultez la [ page suivante ](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring).
 
 ### Prévisualiser et préparer vos variantes d’expérience {#preview-stage-experiment}
 
 Dès que vous êtes prêt(e) à prévisualiser et à organiser votre expérience, cliquez sur Aperçu dans le sidekick en haut à gauche. Chaque fois que vous prévisualisez une page qui comporte une expérience en cours d’exécution, la superposition de l’expérience s’affiche dans votre environnement d’aperçu `.aem.page`. Le recouvrement de l’expérience vous permet de basculer entre les variantes d’expérience et fournit également des données de trafic.
 
-<!--- ![experimentation-overlay](/help/sites-cloud/administering/assets/experimentation-overlay.png)
+<!--
+- ![experimentation-overlay](/help/sites-cloud/administering/assets/experimentation-overlay.png)
 
-By using the experimentation overlay, authors can get quick insights on the performance of experiments being run on the production site. These insights are helpful in making a decision about the duration of the experiment, but also about which variant is best suited for production.-->
+By using the experimentation overlay, authors can get quick insights on the performance of experiments being run on the production site. These insights are helpful in making a decision about the duration of the experiment, but also about which variant is best suited for production.
+-->
 
 La collecte des données permettant de mesurer l’efficacité de chaque variante repose sur le [service de télémétrie opérationnelle dans AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md).
 
@@ -117,7 +119,8 @@ Vous trouverez ci-dessous plusieurs exemples de cas d’utilisation de variantes
 
 Vous utilisez une expérience de page entière pour tester entre deux variantes d’une même page. Il s’agit d’une variante pleine page d’un test A/B où vous avez un contrôle et une page de défi. Vous remplacerez l’ensemble du contenu de la page de contrôle « originale » dans la variante challenger par un autre type de contenu. Gardez à l’esprit que, par défaut, le trafic client est divisé de manière égale (50/50), mais vous pouvez créer des divisions personnalisées si vous le souhaitez.
 
-<!--The metadata on the control page should look like this:
+<!--
+The metadata on the control page should look like this:
 
 METADATA SETUP
 
@@ -185,7 +188,8 @@ Audience: Chrome `https://{ref}--{repo}--{org}.hlx.page/page-for-chrome`
 
 After this configuration, the users will be triaged based on the browser they connect with and the appropriate challenger page will be served.
 
-Please keep in mind that the names above are only for illustration purposes. You can define the Audiences parameter and the challenger pages according to your needs, for example: Audience (Firefox) or Audience Firefox.-->
+Please keep in mind that the names above are only for illustration purposes. You can define the Audiences parameter and the challenger pages according to your needs, for example: Audience (Firefox) or Audience Firefox.
+-->
 
 ## Autres considérations {#other-considerations}
 

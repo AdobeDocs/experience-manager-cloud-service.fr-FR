@@ -8,7 +8,7 @@ hide: false
 hidefromtoc: false
 index: true
 exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 48%
@@ -17,8 +17,10 @@ ht-degree: 48%
 
 # Fractionner les pipelines d’évaluation uniquement et de production uniquement {#stage-prod-only}
 
-<!-- REMOVED AS PER CQDOC-23086 ON OCTOBER 3, 2025:
-badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#staging-production-only-pipelines" -->
+<!--
+ REMOVED AS PER CQDOC-23086 ON OCTOBER 3, 2025:
+badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#staging-production-only-pipelines"
+-->
 
 Vous pouvez diviser les déploiements d’évaluation et de production à l’aide de pipelines dédiés.
 
@@ -74,9 +76,9 @@ Les pipelines dédiés à la production uniquement et à l’évaluation uniquem
 1. Dans le champ Nom du pipeline hors production , saisissez un nom en texte libre.
 1. Sélectionnez les options de déploiement souhaitées, puis cliquez sur **Continuer**.
 
-   ![Onglet Configuration de la boîte de dialogue Ajouter un pipeline hors production &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-1.png)
+   ![Onglet Configuration de la boîte de dialogue Ajouter un pipeline hors production ](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-1.png)
 
-1. Dans l’onglet **Code Source**, sélectionnez **Code de pile complète**. Cette option crée et déploie l’ensemble de l’application AEM (back-end, configuration de niveau web Dispatcher et tout module front-end du référentiel).
+1. Dans l’onglet **Code**, sélectionnez **Code de pile complète**. Cette option crée et déploie l’ensemble de l’application AEM (back-end, configuration de niveau web Dispatcher et tout module front-end du référentiel).
 
 1. Dans la liste déroulante **Environnements de déploiement éligibles**, sélectionnez l’environnement **d’évaluation** comme environnement de déploiement pour votre pipeline. La sélection de l’étape crée un pipeline dédié à l’environnement intermédiaire (la promotion de la production se fait par le biais d’un pipeline distinct).
 
@@ -90,7 +92,7 @@ Les pipelines dédiés à la production uniquement et à l’évaluation uniquem
 
    Le contrôle de l’expérience analyse chaque chemin que vous ajoutez en termes de performances, d’accessibilité, d’applications web progressives, de bonnes pratiques, d’optimisation pour les moteurs de recherche et d’autres contrôles qualité. Vous pouvez ajouter plusieurs chemins d’accès et en supprimer en cliquant sur ![icône taille croisée 400](https://spectrum.adobe.com/static/icons/ui_18/CrossSize400.svg).
 
-   ![Onglet Contrôle de l’expérience dans la boîte de dialogue Ajouter un pipeline hors production &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-3.png)
+   ![Onglet Contrôle de l’expérience dans la boîte de dialogue Ajouter un pipeline hors production ](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-3.png)
 
 1. Cliquez sur **Enregistrer**.
 
@@ -113,7 +115,8 @@ Les pipelines dédiés à la production uniquement et à l’évaluation uniquem
 
 Vous pouvez démarrer les nouveaux pipelines [comme tout autre pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines). Vous pouvez également déclencher un pipeline de production uniquement directement à partir des détails d’exécution d’un pipeline d’évaluation uniquement.
 
-<!-- * Stage-only and prod-only pipelines offer a new [emergency mode](#emergency-mode) to skip testing.
+<!--
+ * Stage-only and prod-only pipelines offer a new [emergency mode](#emergency-mode) to skip testing.
 Prod-only pipeline run can be triggered directly from the execution details of a [stage-only pipeline](#stage-only-run).
 
 
@@ -124,7 +127,8 @@ When starting production-only and staging-online pipelines, you are prompted to 
 * **Normal Mode** is a standard run and includes stage testing steps.
 * **Emergency Mode** skips stage testing steps.
 
-![Emergency Mode](/help/assets/configure-pipelines/emergency-mode.png) -->
+![Emergency Mode](/help/assets/configure-pipelines/emergency-mode.png)
+-->
 
 ### Exécuter des pipelines d’évaluation uniquement {#stage-only-run}
 

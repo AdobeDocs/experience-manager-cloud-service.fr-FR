@@ -6,7 +6,7 @@ feature: Asset Management, Best Practices
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 87%
@@ -24,7 +24,8 @@ L’ensemble des ressources numériques, des métadonnées et du contenu des doc
 
 [!DNL Experience Manager Assets] prend en charge plusieurs manières d’organiser le contenu. Vous pouvez les organiser de manière hiérarchique à l’aide de dossiers ou de manière ad hoc et non classée à l’aide de balises. Les utilisateurs peuvent modifier les balises dans l’éditeur de ressources de gestion des actifs numériques où les sous-ressources, rendus et métadonnées sont affichés.
 
-<!-- Commenting to pull down the existing content before applying changes wrt CQDOC-15930
+<!--
+ Commenting to pull down the existing content before applying changes wrt CQDOC-15930
 ## Create folders {#create-folders}
 
 When organizing a collection of assets, for example, all *Nature* images, you can create folders to keep them together. You can use folders to categorize and organize your assets. [!DNL Assets] does not require you to organize assets in folders to work better.

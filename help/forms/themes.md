@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '5564'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 
@@ -20,10 +20,10 @@ ht-degree: 96%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
 | AEM as a Cloud Service | Cet article |
 
-Vous pouvez créer et appliquer des thèmes pour styliser un formulaire adaptatif<!-- or an interactive communication-->. Un thème contient des détails de style pour les composants et les panneaux. Ces styles incluent des propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème, le style spécifié se reflète sur les composants correspondants. Le thème est géré indépendamment sans référence à un formulaire adaptatif<!-- or interactive communication -->.
+Vous pouvez créer et appliquer des thèmes pour styliser un formulaire adaptatif<!-- or an interactive communication-->. Un thème contient des détails de style pour les composants et les panneaux. Ces styles incluent des propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème, le style spécifié se reflète sur les composants correspondants. Le thème est géré indépendamment sans référence à un formulaire adaptatif.
 
 Vous pouvez télécharger et installer le module de contenu de référence [!DNL AEM Forms] à partir du portail de [distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) pour importer des thèmes et modèles de référence dans votre environnement.
 
@@ -166,7 +166,8 @@ Liste de propriétés des métadonnées d’un thème (sur la page Propriétés 
    <td>Oui</td>
    <td>Libellé associé au thème pour l’identification utilisée pour améliorer la recherche.</td>
   </tr>
-  <!-- <tr>
+  <!--
+   <tr>
    <td>11.</td>
    <td>References</td>
    <td>Links</td>
@@ -199,19 +200,21 @@ Liste de propriétés des métadonnées d’un thème (sur la page Propriétés 
      <li>Default value - computed using theme location.</li>
      <li>When this value is changed, the category name is updated on the corresponding clientlib node. Updating Clientlib Category Name in the jsp files is not required because clientlib category name is used by reference.</li>
     </ul> </td>
-  </tr> -->
+  </tr>
+  -->
  </tbody>
 </table>
 
 ## À propos de l’éditeur de thèmes {#about-the-theme-editor}
 
-C’est une interface conviviale pour les utilisateurs professionnels et les concepteurs Web/développeurs qui fournit les fonctionnalités nécessaires pour spécifier le style de différents éléments <!-- and interactive communication --> des formulaires adaptatifs facilement. Lorsque vous créez un thème, il est stocké en tant qu’entité distincte comme les formulaires <!--  , interactive communications, letters, document fragments, and data dictionaries-->.
+C’est une interface conviviale pour les utilisateurs professionnels et les concepteurs Web/développeurs qui fournit les fonctionnalités nécessaires pour spécifier le style de différents éléments <!-- and interactive communication --> des formulaires adaptatifs facilement. Lorsque vous créez un thème, il est stocké en tant qu’entité distincte comme les formulaires.
+<!--  , interactive communications, letters, document fragments, and data dictionaries -->
 
 L’éditeur de thèmes vous permet de personnaliser les styles des composants mis en forme dans un thème. Vous pouvez personnaliser l’apparence d’un formulaire <!-- or interactive communication --> sur un appareil.
 
 L’éditeur de thèmes est divisé en deux panneaux :
 
-* **Zone de travail** : apparaît du côté droit. Elle montre un exemple de formulaire adaptatif <!--  or interactive communication --> dans lequel toutes les modifications de style sont immédiatement répercutées. Vous pouvez également sélectionner des objets directement à partir de la zone de travail pour consulter les styles qui y sont associés et les modifier. Une règle de résolution de l’appareil dans la partie supérieure régit la zone de travail. La sélection d’un point d’arrêt de résolution de la règle affiche l’aperçu de l’exemple de formulaire <!--  or interactive communication --> à la résolution appropriée. La zone de travail est expliquée en détails [ci-dessous](themes.md#using-canvas).
+* **Zone de travail** : apparaît du côté droit. Elle montre un exemple de formulaire adaptatif <!--  or interactive communication --> dans lequel toutes les modifications de style sont immédiatement répercutées. Vous pouvez également sélectionner des objets directement à partir de la zone de travail pour consulter les styles qui y sont associés et les modifier. Une règle de résolution de l’appareil dans la partie supérieure régit la zone de travail. La sélection d’un point d’arrêt de résolution de la règle affiche l’aperçu de l’exemple de formulaire à la résolution appropriée. La zone de travail est expliquée en détails [ci-dessous](themes.md#using-canvas).
 
 * **Barre latérale*** S’affiche sur le côté gauche. Elle comporte les éléments suivants :
 
@@ -259,7 +262,7 @@ Les panneaux prêts à l’emploi comprennent :
 * Onglets dans la partie supérieure
 * Accordéon
 * Assistant
-* réactif
+* Assistant
 * Mise en page mobile
 
    * Titres de panneau dans l’en-tête
@@ -280,7 +283,9 @@ Utilisez des points d’arrêt de l’éditeur de thèmes pour définir une autr
 
 >[!NOTE]
 >
-><!-- or interactive communication-->Le thème est d’abord créé à l’aide d’un formulaire, puis appliqué sur différents formulaires<!-- or interactive communications-->. Les points d’arrêt utilisés lors de la création du thème peuvent être différents du formulaire <!-- or interactive communication --> sur lequel le thème est appliqué. <!-- or interactive communication -->Les requêtes multimédias CSS sont basées sur le formulaire utilisé lors de la création du thème, et non sur le formulaire auquel le thème est appliqué.<!-- or interactive communication -->
+>Le thème est d’abord créé à l’aide d’un formulaire, puis appliqué sur différents formulaires. Les points d’arrêt utilisés lors de la création du thème peuvent être différents du formulaire sur lequel le thème est appliqué. Les requêtes multimédias CSS sont basées sur le formulaire utilisé lors de la création du thème, et non sur le formulaire auquel le thème est appliqué.
+
+<!-- ADD: or interactive communication above throughout? -->
 
 ### Mettre en forme des modifications en contexte des propriétés de la barre latérale lors de la sélection d’objets {#styling-properties-context-changes-in-sidebar-on-selecting-objects}
 
@@ -348,7 +353,7 @@ Personnalisation du style de réussite du composant Widget de zone de texte dans
 
 ### Utiliser la zone de travail {#using-canvas}
 
-Le thème est créé à l’aide du formulaire prêt à l’emploi ou du formulaire <!-- or interactive communication --> de votre choix. La zone de travail affiche un aperçu du formulaire ou de la <!-- interactive communication --> utilisé(e) pour créer le thème avec les personnalisations spécifiées dans le thème. La règle au-dessus du formulaire est utilisée pour déterminer la disposition selon la taille de l’affichage de votre appareil.
+Le thème est créé à l’aide du formulaire prêt à l’emploi ou du formulaire <!-- or interactive communication --> de votre choix. La zone de travail affiche un aperçu du formulaire ou de la utilisé(e) pour créer le thème avec les personnalisations spécifiées dans le thème. La règle au-dessus du formulaire est utilisée pour déterminer la disposition selon la taille de l’affichage de votre appareil.
 
 Dans la barre d’outils de la zone de travail se trouvent les éléments suivants :
 
@@ -486,7 +491,7 @@ Un point d’arrêt représente un appareil mobile et son format d’affichage.
 1. Utilisez la barre latérale pour personnaliser la mise en forme des composants <!-- or interactive communication --> de formulaire dans le thème pour le format d’affichage sélectionné.
 1. Vérifiez que la personnalisation est enregistrée.
 
-Vous pouvez mettre en forme des <!-- or interactive communication -->composants de formulaire pour plusieurs appareils. Les composants de <!-- and interactive communication -->formulaire pour les ordinateurs de bureau et les appareils mobiles ont parfois des styles totalement différents.
+Vous pouvez mettre en forme des <!-- or interactive communication -->composants de formulaire pour plusieurs appareils. Les composants de formulaire pour les ordinateurs de bureau et les appareils mobiles peuvent avoir des styles entièrement différents.
 
 ### Utiliser des polices web dans un thème {#using-web-fonts-in-a-theme}
 
@@ -494,7 +499,7 @@ Vous pouvez désormais utiliser les polices disponibles dans un service Web dans
 
 Pour configurer Adobe Fonts dans Experience Manager, effectuez les étapes suivantes :
 
-1. Dans l’instance d’auteur, cliquez sur ![Adobe Experience Manager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Outils]** ![marteau](assets/hammer.png) > **[!UICONTROL Déploiement]** > **[!UICONTROL Services cloud]**.
+1. Dans l’instance d’auteur, cliquez sur ![](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Outils]** ![marteau](assets/hammer.png) > **[!UICONTROL Déploiement]** > **[!UICONTROL Services cloud]**.
 1. Sur la page **[!UICONTROL Cloud Services]**, accédez à l’option **[!UICONTROL Adobe Fonts]** et ouvrez-la. Ouvrez le dossier de configuration, puis cliquez sur **[!UICONTROL Créer]**.
 1. Dans la boîte de dialogue **[!UICONTROL Créer une configuration]**, indiquez un titre pour la configuration et cliquez sur **[!UICONTROL Créer]**.
 
@@ -566,14 +571,16 @@ Pour appliquer un thème à un formulaire adaptatif :
 
 Vous pouvez également définir un thème pour un formulaire adaptatif lorsque vous le créez.
 
-<!-- To apply a theme to an interactive communication:
+<!--
+ To apply a theme to an interactive communication:
 
 1. Open your interactive communication in edit mode. To open a interactive communication in edit mode, select a form and click **Open**.
 1. In the edit mode, select a component, then click ![field-level](assets/field-level.png) &gt;**Document Container**, and then click ![cmppr](assets/cmppr.png).
 
    You can edit properties of your form in the sidebar.
 
-1. In the sidebar, under **Basic**, select your theme from the **Theme** drop-down and click **Done** ![check-button](assets/check-button.png) -->
+1. In the sidebar, under **Basic**, select your theme from the **Theme** drop-down and click **Done** ![check-button](assets/check-button.png)
+-->
 
 ### Modifier le thème d’un formulaire au moment de l’exécution {#change-theme-of-a-form-at-runtime}
 
@@ -640,7 +647,8 @@ Vous pouvez voir le fichier CSS généré à l’aide des options suivantes :
 
 * Vous pouvez rencontrer des problèmes avec votre thème actuel si un actif est ajouté à partir d’un autre thème et l’autre thème est déplacé ou supprimé. Nous vous recommandons d’éviter de parcourir les actifs d’autres thèmes et de les ajouter.
 
-<!-- * **Using base clientlib, theme editor, and inline styling**
+<!--
+ * **Using base clientlib, theme editor, and inline styling**
 
     * **Base clientlib**:
 
@@ -652,7 +660,8 @@ Vous pouvez voir le fichier CSS généré à l’aide des options suivantes :
         1. In the Advanced tab, in the Clientlib Location field, browse, and select the client-library you want to use.
         1. Click **[!UICONTROL Save]**.
 
-      The styling you specify in client library is imported in the theme that uses it. For example, you specify styling for text box, numeric box, and switch in the client library. When you import your client library in the theme, styling for text box, numeric box, and switch is imported. You can then style other components using theme editor. -->
+      The styling you specify in client library is imported in the theme that uses it. For example, you specify styling for text box, numeric box, and switch in the client library. When you import your client library in the theme, styling for text box, numeric box, and switch is imported. You can then style other components using theme editor.
+      -->
     Vous pouvez également créer un thème, créer des copies de ce thème, puis modifiez la mise en forme fournie dans les thèmes copiés pour des cas d’utilisation similaires.
     Voir [Obtention d’une apparence spécifique à l’aide de Thèmes](#specific-af-apparence)
     
@@ -664,9 +673,11 @@ Vous pouvez voir le fichier CSS généré à l’aide des options suivantes :
     
      vous pouvez mettre en forme des composants à l’aide du mode Style de l’éditeur de formulaires &lt;!-- ou de communications interactives --> multicanal lorsque vous utilisez un formulaire. L’utilisation du mode Style pour modifier la mise en forme d’un composant de formulaire remplace la mise en forme indiquée dans le thème. Si vous choisissez de modifier le style de certains composants d’un formulaire spécifique, voir [Style intégré de composants](inline-style-adaptive-forms.md)
 
-<!-- * **Using client-side libraries**
+<!--
+ * **Using client-side libraries**
 
-  If you want to create client libraries to import styling information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/clientlibs.html). After you create a client library, you can import it in your theme using the steps mentioned above. -->
+  If you want to create client libraries to import styling information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/clientlibs.html). After you create a client library, you can import it in your theme using the steps mentioned above.
+  -->
 
 * **Modification de la largeur de disposition du panneau conteneur**
 

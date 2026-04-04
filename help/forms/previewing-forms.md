@@ -6,7 +6,7 @@ role: Admin, Developer, User
 feature: Adaptive Forms
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 72235277-6c34-4341-9a10-02afa753e7f5
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 83%
@@ -29,10 +29,12 @@ Le tableau ci-dessous répertorie les options d’aperçu disponibles pour les d
    <td><strong>Type de ressource</strong><br /> </td>
    <td><strong>Options d’aperçu disponibles</strong><br /> </td>
   </tr>
-  <!--<tr>
+  <!--
+  <tr>
    <td>Document</td>
    <td>PDF preview</td>
-  </tr>-->
+  </tr>
+  -->
   <tr>
    <td>Formulaire PDF</td>
    <td>Aperçu au format PDF et aperçu avec des données<br /> </td>
@@ -41,10 +43,12 @@ Le tableau ci-dessous répertorie les options d’aperçu disponibles pour les d
    <td>Formulaire adaptatif</td>
    <td>Prévisualisation HTML et prévisualisation HTML avec des données</td>
   </tr>
-  <!--<tr>
+  <!--
+  <tr>
    <td>Form Template</td>
    <td>PDF preview, PDF preview with Data, HTML preview, HTML preview with Data<br /> </td>
-  </tr>-->
+  </tr>
+  -->
  </tbody>
 </table>
 

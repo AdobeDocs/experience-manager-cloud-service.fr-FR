@@ -7,7 +7,7 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: d481e705-62bf-47f7-a832-1a005ec5ec59
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 1%
@@ -101,7 +101,7 @@ Effacer la conversation en cours tout en conservant le thread de conversation :
 Pour une prise en charge supplémentaire de la configuration de l’interface utilisateur :
 
 - Consultez la [FAQ sur Forms Experience Builder](forms-experience-builder-frequently-asked-questions.md)
-- Consultez le [&#x200B; Guide de prise en main &#x200B;](forms-experience-builder-getting-started.md)
+- Consultez le [ Guide de prise en main ](forms-experience-builder-getting-started.md)
 - Contactez votre administrateur système pour obtenir une assistance technique
 
 ## Articles connexes

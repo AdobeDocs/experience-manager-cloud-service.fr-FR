@@ -2,9 +2,9 @@
 title: Présentation de l’agent de gouvernance
 description: Découvrez comment l’agent de gouvernance AEM protège l’intégrité et la conformité de la marque dans AEM
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 2c73c578-6655-43bf-b03a-cb3eb2284d07
-source-git-commit: 07bdd1add0129e0bccd7a67ccb4bbae18d1df607
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 0%
@@ -27,7 +27,7 @@ En combinant ces fonctionnalités, l’agent de gouvernance réduit les risques 
 >
 >Les réponses générées par l&#39;IA peuvent être inexactes ou trompeuses. Assurez-vous de vérifier les correctifs et les réponses suggérés.
 >
->Consultez également les [Directives d’utilisation de l’IA générative de Adobe Experience Cloud](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+>Consultez également les [Directives d’utilisation de l’IA générative de ](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
 
 ## Compétences en agent de gouvernance AEM {#skills-in-aem-governance-agent}
 

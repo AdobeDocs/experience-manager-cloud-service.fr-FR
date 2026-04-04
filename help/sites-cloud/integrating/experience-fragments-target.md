@@ -6,7 +6,7 @@ exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
 solution: Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2198'
 ht-degree: 94%
@@ -160,7 +160,8 @@ Vous pouvez maintenant sélectionner la nouvelle configuration à modifier.
 
    ![config-target-settings-dialog](assets/config-target-settings-dialog.png)
 
-   <!-- Can this still occur?
+   <!--
+    Can this still occur?
 
    >[!NOTE]
    >
@@ -187,7 +188,8 @@ Vous pouvez maintenant sélectionner la nouvelle configuration à modifier.
 
    * **Configuration d’A4T Analytics Cloud** : sélectionnez la configuration d’Analytics Cloud utilisée pour les objectifs et les mesures des activités de Target. Vous avez besoin de cette option si vous utilisez Adobe Analytics en tant que source de création de rapports lors du ciblage de contenu.
 
-     <!-- Is this needed?
+     <!--
+      Is this needed?
      If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
      -->
 
@@ -271,7 +273,7 @@ La structure est créée. Pour répliquer le framework sur l’instance de publi
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=fr).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 >

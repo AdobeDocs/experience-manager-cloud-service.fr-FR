@@ -5,7 +5,7 @@ exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 73%
@@ -52,7 +52,7 @@ L’importation de données de catalogue de produits n’est plus prise en charg
 
 ## Expériences de catalogue produits avec rendu AEM {#aem-rendering}
 
-Si vous utilisez le plan directeur de catalogue avec CIF classique, vous devez mettre à jour le workflow du catalogue de produits. Le module complémentaire CIF effectue désormais le rendu à la volée des expériences de catalogue de produits à l’aide de modèles de catalogue AEM. Aucune réplication des données de produit ou des pages de produit n’est désormais nécessaire.
+Si vous utilisez le plan directeur de catalogue avec CIF classique, vous devez mettre à jour le workflow du catalogue de produits. Le module complémentaire CIF effectue désormais le rendu à la volée des expériences de catalogue de produits à l’aide de modèles de catalogue AEM. Aucune réplication des données de produit ou des pages produits n’est désormais nécessaire.
 
 ## Données et interaction d’achat non mises en cache {#non-cacheable}
 

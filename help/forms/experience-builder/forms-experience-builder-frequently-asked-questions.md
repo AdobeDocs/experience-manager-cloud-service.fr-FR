@@ -8,7 +8,7 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: f43c2586-9075-47dc-aa45-5ed2d2979b6d
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1066'
 ht-degree: 1%
@@ -108,9 +108,9 @@ L’IA configure automatiquement la structure du formulaire avec une navigation 
 
 Ajoutez la validation à l’aide des commandes de langage naturel :
 
-    @email un champ obligatoire avec validation du format des e-mails
-    Ajoutez la validation du format des numéros de téléphone aux États-Unis à @phoneNumber
+@email un champ obligatoire avec validation du format des e-mails    Ajoutez la validation du format des numéros de téléphone aux États-Unis à @phoneNumber
     Définissez la validation de l’âge : doit être âgé de 18 ans ou plus pour la @dateOfBirth
+    
 
 ## Fonctionnalités avancées
 
@@ -126,7 +126,7 @@ Les champs intelligents optimisés pour LLM sont des champs de formulaire intell
 
 Vous pouvez importer différents types de documents :
 
-- **PDF forms** : chargement de PDF statiques ou interactifs
+- **** : chargement de PDF statiques ou interactifs
 - **Images** : téléchargez des photos de formulaires papier ou des captures d’écran
 - **Fichiers de conception** : importez des conceptions Figma ou d’autres formats de conception.
 
@@ -232,7 +232,7 @@ Oui, vous pouvez configurer différents aspects :
 
 Pour une prise en charge supplémentaire :
 
-- Consultez le [&#x200B; Guide de prise en main &#x200B;](forms-experience-builder-getting-started.md)
+- Consultez le [ Guide de prise en main ](forms-experience-builder-getting-started.md)
 - Consultez le [guide de déploiement et de configuration](deploy-forms-experience-builder.md)
 - Contactez votre administrateur système
 - Contactez l’assistance Adobe pour les problèmes techniques

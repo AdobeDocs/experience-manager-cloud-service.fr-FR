@@ -6,7 +6,7 @@ role: User, Developer
 level: Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: a369b585-d148-4b5a-8afe-d5673ea865d0
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1143'
 ht-degree: 10%
@@ -19,7 +19,8 @@ Une action d’envoi permet aux utilisateurs et utilisatrices de sélectionner l
 
 Vous pouvez également créer une action d’envoi personnalisée pour ajouter des fonctionnalités non incluses dans les [options prêtes à l’emploi](/help/forms/configure-submit-actions-core-components.md#select-and-configure-a-submit-action-for-an-adaptive-form-select-and-configure-submit-action). Par exemple, intégrez les données de formulaire à une application tierce ou déclenchez une notification SMS personnalisée en fonction des entrées de l’utilisateur.
 
-<!-- ![Custom Submit Image](/help/forms/assets/custom-submit-action-hero-image.png)
+<!--
+ ![Custom Submit Image](/help/forms/assets/custom-submit-action-hero-image.png)
 -->
 
 ## Conditions préalables
@@ -48,7 +49,7 @@ Le diagramme ci-dessous décrit les étapes de création d’une action d’envo
 
    **Où trouver ces informations ?**
 
-   Pour obtenir des instructions détaillées sur la localisation de ces détails, reportez-vous à l’article Adobe Experience League « [Accès à Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git) ».
+   Pour obtenir des instructions détaillées sur la localisation de ces détails, reportez-vous à l’article Adobe Experience League « [Accès à Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) ».
 
    **Votre projet est prêt !**
 
@@ -87,7 +88,7 @@ Le diagramme ci-dessous décrit les étapes de création d’une action d’envo
 1. Créez un fichier de configuration.
 Dans le dossier `customsubmitaction`, créez un fichier nommé `.content.xml`.
 
-   ![&#x200B; Créer un fichier de configuration &#x200B;](/help/forms/assets/custom-submit-action-create-config-folder.png)
+   ![ Créer un fichier de configuration ](/help/forms/assets/custom-submit-action-create-config-folder.png)
 
 1. Ouvrez ce fichier et collez le contenu suivant, en remplaçant `[customsubmitaction]` par le nom de votre action d’envoi
 
@@ -173,7 +174,9 @@ Dans le dossier `customsubmitaction`, créez un fichier nommé `.content.xml`.
        @Override
        public Map<String, Object> submit(FormSubmitInfo formSubmitInfo) {
        String data = formSubmitInfo.getData();
-       log.info("Using custom submit action service, [data] --> " + data);
+       log.info("Using custom submit action service, [data]
+       -->
+       " + data);
        Map<String, Object> result = new HashMap<>();
        result.put("status", "OK");
        return result;
@@ -253,12 +256,12 @@ Dans le dossier `customsubmitaction`, créez un fichier nommé `.content.xml`.
 
    ![Message de remerciement](/help/forms/assets/custom-submit-action-thankyou-msg.png)
 
-   Une fois le formulaire envoyé, vous pouvez vérifier la configuration de la console web de Adobe Experience Manager **&#x200B;**&#x200B;afin de vérifier l’action de l’action d’envoi personnalisée dans l’environnement de développement local.
+   Une fois le formulaire envoyé, vous pouvez vérifier la configuration de la console web de Adobe Experience Manager **** afin de vérifier l’action de l’action d’envoi personnalisée dans l’environnement de développement local.
 1. Accédez à `http://<host>:<port>/system/console/configMgr`.
 
-1. Accédez à la page Prise en charge du journal de la console web de Adobe Experience Manager **&#x200B;**&#x200B;à l’adresse `http://<host>:<port>/system/console/slinglog`.
+1. Accédez à la page Prise en charge du journal de la console web de Adobe Experience Manager **** à l’adresse `http://<host>:<port>/system/console/slinglog`.
 
-   ![ConfigMgr &#x200B;](/help/forms/assets/custom-submit-action-sling-log.png)
+   ![ConfigMgr ](/help/forms/assets/custom-submit-action-sling-log.png)
 
 1. Cliquez sur l’option `logs/error.log` .
    ![Ouvrez le fichier error.log](/help/forms/assets/custom-submit-action-error-log.png)

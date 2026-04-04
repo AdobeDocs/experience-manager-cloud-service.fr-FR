@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 keywords: intégration d’API dans l’éditeur de règles, améliorations du service d’appel
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 4%
@@ -104,7 +104,7 @@ Vous pouvez intégrer une API sans créer de modèle de données de formulaire e
 
 Un service d’API nommé **getcontendname** est configuré sous **Configuration de l’intégration de l’API** dans l’éditeur de règles :
 
-![&#x200B; Configuration du point d’entrée REST de l’API &#x200B;](/help/forms/assets/api-restendpoint.png)
+![ Configuration du point d’entrée REST de l’API ](/help/forms/assets/api-restendpoint.png)
 
 * **URL du point d’entrée de l’API** → `https://secure.geonames.org/countryInfoJSON?username=aemforms`
 * **Méthode HTTP** → GET
@@ -124,7 +124,7 @@ Par exemple, lorsque l’utilisateur ouvre **Pays de citoyenneté**, la liste de
 
 De même, les **Pays d’émission du passeport** et **Pays de destination** utilisent le même appel API, ce qui garantit des données cohérentes et à jour dans les trois champs.
 
->
+>[!NOTE]
 >
 > Vous pouvez [récupérer les valeurs de propriété d’un tableau JSON en appelant une API et en utilisant une fonction personnalisée](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array). Cette approche vous permet d’extraire des valeurs et de les lier directement aux champs du formulaire.
 

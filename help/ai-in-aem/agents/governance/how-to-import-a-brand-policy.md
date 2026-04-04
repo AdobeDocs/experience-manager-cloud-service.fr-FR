@@ -2,14 +2,14 @@
 title: Comment importer une politique de marque
 description: Utilisation de l’agent de gouvernance Adobe pour importer une politique de marque
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
-source-git-commit: 94d671ebbd5aeb5992fdbc9d779ffbca51f82585
+role: User, Admin, Developer
+exl-id: 8057e82b-36d4-4280-b433-f26cfcfe9fe6
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 0%
 
 ---
-
 
 # Comment importer une politique de marque {#how-to-import-a-brand-policy}
 
@@ -84,7 +84,7 @@ Pour importer une marque dans l’agent de gouvernance :
 
 1. Une fois votre marque créée et votre document de politique téléchargé, vous pouvez obtenir une vue détaillée par marque en accédant à l&#39;onglet **Marques** et en cliquant sur la vignette d&#39;une marque. Il s’agit de la vue que vous souhaitez utiliser pour créer des catégories de chèques, en appuyant sur les trois points en regard d’une catégorie existante, puis en sélectionnant **+ Ajouter une catégorie**, comme illustré dans la capture d’écran ci-dessous :
 
-   ![Ajouter une catégorie &#x200B;](/help/ai-in-aem/agents/governance/assets/add_category.png)
+   ![Ajouter une catégorie ](/help/ai-in-aem/agents/governance/assets/add_category.png)
 
    Vous pouvez également utiliser cette vue pour créer, modifier et supprimer des contrôles. Les étapes ci-dessous vous donneront des détails à ce sujet.
 
@@ -114,4 +114,3 @@ Pour importer une marque dans l’agent de gouvernance :
    ![Configuration des détails de vérification](/help/ai-in-aem/agents/governance/assets/add_check_window.png)
 
 1. Enfin, pour obtenir la liste des domaines et des marques auxquelles ils sont associés, vous pouvez appuyer sur l’onglet **Domaines**. Cette section vous permet d’ajouter, de supprimer ou de modifier des domaines dans votre liste.
-

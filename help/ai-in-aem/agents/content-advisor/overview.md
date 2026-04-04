@@ -2,9 +2,9 @@
 title: Agent du gestionnaire de contenu
 description: Découvrez comment l’agent de gestion de contenu supprime les frictions liées à l’évolution du contenu en absorbant le travail opérationnel lourd qui se cache derrière la découverte et l’optimisation du contenu, ce qui permet aux équipes de proposer des modifications plus rapidement et en toute confiance à l’ère de l’IA d’aujourd’hui.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 907c9558-0b59-453c-b710-40b095b19cf5
-source-git-commit: fc304f3e63c38006bf678abc797ccb17dcd8db39
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 1%
@@ -28,7 +28,7 @@ L’agent de gestion de contenu permet aux équipes de transformer des processus
 >
 >Les réponses générées par l&#39;IA peuvent être inexactes ou trompeuses. Assurez-vous de vérifier les correctifs et les réponses suggérés.
 >
->Consultez également les [instructions d’utilisation de l’IA générative de Adobe Experience Cloud](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
+>Consultez également les [instructions d’utilisation de l’IA générative de ](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 
 ### Agent de découverte de contenu {#discovery}
 

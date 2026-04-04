@@ -9,10 +9,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: f0fec4a9-b214-4931-bf09-5898b082481e
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2489'
-ht-degree: 89%
+ht-degree: 88%
 
 ---
 
@@ -30,9 +30,9 @@ Vous pouvez utiliser des processus AEM pour créer rapidement des processus bas�
 
 Avec le processus basé sur l’utilisation de Forms on OSGi, vous pouvez rapidement créer et déployer des processus pour différentes tâches sur la pile OSGi, sans avoir à installer la fonctionnalité Process Management complète sur la pile JEE. Le développement et la gestion des workflows utilisent les fonctionnalités de boîte de réception AEM et de workflows AEM habituelles. Les processus forment la base de l’automatisation des processus réels d’entreprise, qui s’étendent sur plusieurs systèmes logiciels, réseaux, services et même organisations.
 
-Une fois configurés, ces processus peuvent être déclenchés manuellement pour terminer une exécution ou exécutés par programmation lorsque les utilisateurs envoient un formulaire <!-- or [correspondence management](cm-overview.md) letter-->. <!-- With this enhanced AEM Workflow capabilities, [!DNL AEM Forms] offers two distinct, yet similar, capabilities. As part of your deployment strategy, you need to decide which one works for you. See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE. Moreover, for the deployment topology see, [Architecture and deployment topologies for [!DNL AEM Forms]]((aem-forms-architecture-deployment.md). -->
+Une fois configurés, ces workflows peuvent être déclenchés manuellement pour terminer un processus ou exécutés par programmation lorsque les utilisateurs envoient un formulaire. <!-- or [correspondence management](cm-overview.md) letter With this enhanced AEM Workflow capabilities, [!DNL AEM Forms] offers two distinct, yet similar, capabilities. As part of your deployment strategy, you need to decide which one works for you. See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE. Moreover, for the deployment topology see, [Architecture and deployment topologies for [!DNL AEM Forms]]((aem-forms-architecture-deployment.md). -->
 
-Le processus basé sur l’utilisation de Forms sur OSGi étend la [boîte de réception AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=fr#authoring) et fournit des composants supplémentaires (étapes) pour que l’éditeur AEM Workflow ajoute la prise en charge des workflows basés sur l’utilisation d’[!DNL AEM Forms]. <!-- The extended AEM Inbox has functionalities similar to [[!DNL AEM Forms] Workspace](introduction-html-workspace.md). Along with managing human-centric workflows (Approval, Review, and so on), you can use AEM workflows to automate [document services](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=fr#extending-aem)-related operations (for example, Generate PDF) and electronically signing (Adobe Sign) documents. -->
+Le processus basé sur l’utilisation de Forms sur OSGi étend la [boîte de réception AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=fr#authoring) et fournit des composants supplémentaires (étapes) pour que l’éditeur AEM Workflow ajoute la prise en charge des workflows basés sur l’utilisation d’[!DNL AEM Forms]. <!-- The extended AEM Inbox has functionalities similar to [[!DNL AEM Forms] Workspace](introduction-html-workspace.md). Along with managing human-centric workflows (Approval, Review, and so on), you can use AEM workflows to automate [document services](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)-related operations (for example, Generate PDF) and electronically signing (Adobe Sign) documents. -->
 
 Toutes les étapes des workflows [!DNL AEM Forms] prennent en charge l’utilisation de variables. Les variables permettent aux étapes de processus de contenir et de transmettre des métadonnées entre les étapes au moment de l’exécution. Vous pouvez créer différents types de variables pour stocker différents types de données. Vous pouvez également créer des collections de variables pour stocker plusieurs instances de données associées et du même type. En règle générale, vous utilisez une variable ou une collection de variables lorsque vous devez prendre une décision en fonction de la valeur qu’elle contient ou pour stocker des informations dont vous aurez besoin ultérieurement dans un processus. Pour plus d’informations sur l’utilisation de variables dans ces composants (étapes) de processus basés sur Forms, voir [Processus basé sur l’utilisation de Forms sur OSGi - Guide de référence des étapes](aem-forms-workflow-step-reference.md). Pour plus d’informations sur la création et la gestion des variables, voir [Variables dans les processus AEM](variable-in-aem-workflows.md).
 
@@ -131,15 +131,15 @@ Cet exemple crée un modèle de workflow pour une demande de prêt immobilier à
 
    Lorsqu’un utilisateur clique sur le bouton **Approuver** dans la boîte de réception AEM, la Branche 1 est activée.
 
-   ![OU Exemple de fractionnement](assets/orsplit_branch1_active_new.png)
+   ![Exemple de division OU](assets/orsplit_branch1_active_new.png)
 
    **Expression de routage pour la branche 2**
 
    Lorsqu’un utilisateur clique sur **Refuser** dans la boîte de réception AEM, la Branche 2 est activée.
 
-   ![OU Exemple de fractionnement](assets/orsplit_branch2_active_new.png)
+   ![Exemple de division OU](assets/orsplit_branch2_active_new.png)
 
-   Pour plus d’informations sur la création d’expressions de routage à l’aide de variables, consultez [Variables dans les processus [!DNL AEM Forms] &#x200B;](variable-in-aem-workflows.md).
+   Pour plus d’informations sur la création d’expressions de routage à l’aide de variables, consultez [Variables dans les processus [!DNL AEM Forms] ](variable-in-aem-workflows.md).
 
 1. Ajoutez d’autres étapes de processus pour créer une logique d’entreprise.
 
@@ -216,7 +216,7 @@ La demande est le formulaire adaptatif associé au processus. Lorsqu’une deman
 Vous pouvez lancer ou de déclencher un processus basé sur l’utilisation de Forms en :
 
 * [Envoyer une demande depuis la boîte de réception AEM](#inbox)
-* [Envoi d’une demande depuis l’application [!DNL AEM Forms] &#x200B;](#afa)
+* [Envoi d’une demande depuis l’application [!DNL AEM Forms] ](#afa)
 
 * [Envoi d’un formulaire adaptatif](#af)
 * [Utilisant le dossier de contrôle](#watched)
@@ -227,9 +227,11 @@ Vous pouvez lancer ou de déclencher un processus basé sur l’utilisation de F
 
 La demande de processus que vous avez créée est disponible en tant qu’application dans la boîte de réception. Les utilisateurs qui sont membres [!DNL workflow-users] groupe peuvent renseigner et envoyer la demande qui déclenche le processus associé.
 
-<!-- ### Submitting an application from [!DNL AEM Forms] App {#afa}
+<!--
+ ### Submitting an application from [!DNL AEM Forms] App {#afa}
 
-The [!DNL AEM Forms] app syncs with an [!DNL AEM Forms] server and lets you change the form data, tasks, workflow applications, and saved information (drafts/templates) in your account. For more information, see [[!DNL AEM Forms] app]((aem-forms-app.md) and related articles.-->
+The [!DNL AEM Forms] app syncs with an [!DNL AEM Forms] server and lets you change the form data, tasks, workflow applications, and saved information (drafts/templates) in your account. For more information, see [[!DNL AEM Forms] app]((aem-forms-app.md) and related articles.
+-->
 
 ### Envoi d’un formulaire adaptatif {#af}
 
@@ -237,7 +239,8 @@ Vous pouvez configurer des actions d’envoi d’un formulaire adaptatif pour d�
 
 <!-- You can configure an Adaptive Form to sync, submit, and trigger a workflow from [!DNL AEM Forms] app. For details, see [working with a form]((working-with-form.md). -->
 
-<!-- ### Using a watched folder {#watched}
+<!--
+ ### Using a watched folder {#watched}
 
 An administrator (a member of fd-administrators group) can configure a network folder to run a pre-configured workflow when a user places a file (such as a PDF file) in the folder. After the workflow completes, it can save the result file to a specified output folder. Such a folder is known as [Watched Folder](watched-folder-in-aem-forms.md). Perform the following procedure to configure a watched folder to launch a workflow:
 
@@ -279,9 +282,11 @@ An administrator (a member of fd-administrators group) can configure a network f
    |---|---|
    | Payload Mapper Filter |When you create a watched folder, it creates a folder structure in the crx-repository. The folder structure can serve as a payload to the workflow. You can write a script to map an AEM Workflow to accept inputs from the watched folder structure. An out of the box implementation is available and listed in the Payload Mapper Filter. If you do not have a custom implementation, select the default implementation. |
 
-   The Advanced tab contains more fields. Most of these fields contain a default value. To learn about all the fields, see the [Create or Configure a watched folder]((admin-help/configuring-watched-folder-endpoints.md) article. -->
+   The Advanced tab contains more fields. Most of these fields contain a default value. To learn about all the fields, see the [Create or Configure a watched folder]((admin-help/configuring-watched-folder-endpoints.md) article.
+   -->
 
-<!-- ### Submitting an interactive communication or a letter {#letter}
+<!--
+ ### Submitting an interactive communication or a letter {#letter}
 
 You can associate and execute a Forms-centric workflow on OSGi on submission of an interactive communication or a letter. In correspondence management workflows are used for post processing interactive communications and letters. For example, emailing, printing, faxing, or archiving final letters. For detailed steps, see [Post processing of interactive communications and letters](submit-letter-topostprocess.md).
 
@@ -293,7 +298,8 @@ You can use the Assign Task and Send Email steps of AEM Workflows to send an ema
 
 1. Go to AEM configuration manager at `https://[server]:[port]/system/console/configMgr`.
 1. Open the **[!UICONTROL Day CQ Mail Service]** configuration. Specify a value for the **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port]**, and **[!UICONTROL "From" address]** fields. Click **[!UICONTROL Save]**.
-1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual hostname/IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**. -->
+1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual hostname/IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**.
+-->
 
 ### Purge des instances de processus {#purge-workflow-instances}
 

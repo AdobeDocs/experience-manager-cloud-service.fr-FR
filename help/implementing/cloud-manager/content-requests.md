@@ -5,7 +5,7 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 4ddf90277a24e3ec30ebdd8a9c09b69f80825655
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2084'
 ht-degree: 2%
@@ -39,9 +39,11 @@ Les demandes de ressources statiques telles que des fichiers JavaScript, des feu
 
 Les requêtes de contenu sont mesurées que la réponse ait été diffusée à partir du cache du réseau CDN ou transférée vers l’environnement AEM d’origine.
 
-<!-- REMOVED AS PER EMAIL REQUEST FROM SHWETA DUA, JULY 30, 2024 TO RICK BROUGH AND ALEXANDRU SARCHIZ   For customers employing their own CDN, client-side collection offers a more precise reflection of interactions, ensuring a reliable measure of website engagement via the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) service. This gives customers advanced insights into their page traffic and performance. While it is beneficial for all customers, it offers a representative reflection of user interactions, ensuring a reliable measure of website engagement by capturing the number of page views from the client side. 
+<!--
+ REMOVED AS PER EMAIL REQUEST FROM SHWETA DUA, JULY 30, 2024 TO RICK BROUGH AND ALEXANDRU SARCHIZ   For customers employing their own CDN, client-side collection offers a more precise reflection of interactions, ensuring a reliable measure of website engagement via the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) service. This gives customers advanced insights into their page traffic and performance. While it is beneficial for all customers, it offers a representative reflection of user interactions, ensuring a reliable measure of website engagement by capturing the number of page views from the client side. 
 
-For customers that bring their own CDN on top of AEM as a Cloud Service, server-side reporting results in numbers that cannot be used to compare with the licensed content requests. With the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md), Adobe can reflect a reliable measure of website  engagement. -->
+For customers that bring their own CDN on top of AEM as a Cloud Service, server-side reporting results in numbers that cannot be used to compare with the licensed content requests. With the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md), Adobe can reflect a reliable measure of website  engagement.
+-->
 
 ### Variances des demandes de contenu Cloud Service {#content-requests-variances}
 
@@ -105,7 +107,7 @@ Voir aussi [Tableau de bord des licences](/help/implementing/cloud-manager/licen
 
 ## Gestion des demandes de contenu {#managing-content-requests}
 
-Comme mentionné dans la section ci-dessus [Variances des requêtes de contenu Cloud Service](#content-requests-variances), les requêtes de contenu peuvent être plus élevées que prévu pour plusieurs raisons, un thread commun étant le trafic atteignant le réseau CDN.  En tant que client AEM, il est à votre avantage de surveiller et de gérer vos demandes de contenu pour respecter votre budget de licence.  La gestion des requêtes de contenu est généralement une combinaison de techniques d’implémentation et de [&#x200B; règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md).
+Comme mentionné dans la section ci-dessus [Variances des requêtes de contenu Cloud Service](#content-requests-variances), les requêtes de contenu peuvent être plus élevées que prévu pour plusieurs raisons, un thread commun étant le trafic atteignant le réseau CDN.  En tant que client AEM, il est à votre avantage de surveiller et de gérer vos demandes de contenu pour respecter votre budget de licence.  La gestion des requêtes de contenu est généralement une combinaison de techniques d’implémentation et de [ règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Techniques d’implémentation pour gérer les demandes de contenu {#implementation-techniques-to-manage-crs}
 
@@ -131,4 +133,4 @@ trafficFilters:
       action: block
 ```
 
-* Certains robots ont frappé un site très lourdement un jour et disparaissent le lendemain. Cette fonctionnalité peut empêcher toute tentative de blocage d’une adresse IP ou d’un agent utilisateur spécifique.  Une approche générique consiste à introduire une [&#x200B; règle de limitation des taux](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules).  Examinez les [exemples](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) et créez une règle qui correspond à votre tolérance pour un taux rapide de requêtes.  Consultez la syntaxe [Structure de condition](/help/security/traffic-filter-rules-including-waf.md#condition-structure) pour connaître les exceptions que vous souhaitez autoriser à une limite de taux générique.
+* Certains robots ont frappé un site très lourdement un jour et disparaissent le lendemain. Cette fonctionnalité peut empêcher toute tentative de blocage d’une adresse IP ou d’un agent utilisateur spécifique.  Une approche générique consiste à introduire une [ règle de limitation des taux](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules).  Examinez les [exemples](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) et créez une règle qui correspond à votre tolérance pour un taux rapide de requêtes.  Consultez la syntaxe [Structure de condition](/help/security/traffic-filter-rules-including-waf.md#condition-structure) pour connaître les exceptions que vous souhaitez autoriser à une limite de taux générique.

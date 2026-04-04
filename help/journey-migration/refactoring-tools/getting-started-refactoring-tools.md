@@ -2,7 +2,7 @@
 title: Commencer avec les outils de refactorisation
 description: Découvrez comment commencer à utiliser les outils de refactorisation dans AEM as a Cloud Service
 exl-id: 84394bdd-2b92-4f5d-b08a-7dc2c681baa4
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 4%
@@ -13,12 +13,13 @@ ht-degree: 4%
 
 ## Disponibilité {#availability}
 
-<!-- Alexandru: duplicate contextualhelp id, drafting this for now
+<!--
+ Alexandru: duplicate contextualhelp id, drafting this for now
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_rs_upload"
 >title="Download"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=fr" text="Release Notes"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="Release Notes"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
 
 -->
@@ -32,7 +33,7 @@ Utilisez l’outil de refactorisation pour migrer votre code à des fins de comp
 
    ![Image](/help/journey-migration/refactoring-tools/assets/rscam1.png)
 
-1. Lorsque vous accédez pour la première fois à la vue de code **Source**, un état vide s’affiche vous invitant à charger votre code source.
+1. Lorsque vous accédez pour la première fois à la vue de code ****, un état vide s’affiche vous invitant à charger votre code source.
 
    ![Image](/help/journey-migration/refactoring-tools/assets/rscam2.png)
 
@@ -54,7 +55,7 @@ Lorsque les clients accèdent pour la première fois aux **outils de refactorisa
 
 1. **Processus d&#39;inspection**
    - Après le chargement, le **Processus d&#39;inspection** commence automatiquement en arrière-plan.
-   - L’affichage du code **Source** affiche désormais votre projet chargé et son statut d’inspection.
+   - L’affichage du code **** affiche désormais votre projet chargé et son statut d’inspection.
 
 1. **Statut du contrôle** Le processus de contrôle est conçu pour simplifier l&#39;exécution des outils de refactorisation en réduisant la surcharge des configurations manuelles.
 

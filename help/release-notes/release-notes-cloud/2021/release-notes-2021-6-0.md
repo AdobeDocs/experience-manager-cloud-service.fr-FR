@@ -4,7 +4,7 @@ description: Notes de mise à jour de la version 2021.6.0 d’ [!DNL Adobe Expe
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
 feature: Release Information
 role: Admin
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1432'
 ht-degree: 97%
@@ -66,7 +66,7 @@ La prochaine version est prévue pour le 15 juillet 2021.
 
 * Pour éviter toute confusion, les lignes de segment de l’instance de publication d’AEM et de l’instance de publication du Dispatcher sur la page Détails de l’environnement ont été consolidées.
 
-  ![Environnements Dispatcher](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
+  ![Environnements ](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
 
 * Une nouvelle règle de qualité du code a été ajoutée pour valider la structure des index `damAssetLucene`. Pour plus d’informations, voir [Index Lucene Oak des ressources DAM personnalisées](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check).
 
@@ -96,7 +96,8 @@ La prochaine version est prévue pour le 15 juillet 2021.
    * Prise en charge de [!DNL Assets Essentials].
    * Possibilité de se connecter automatiquement à [!DNL Experience Manager] en tant que [!DNL Cloud Service] ou [!DNL Assets Essentials].
 
-<!-- TBD: Checking with PMs if AAE release should be mentioned here.
+<!--
+ TBD: Checking with PMs if AAE release should be mentioned here.
 -->
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Assets] {#beta-features-assets}
@@ -184,7 +185,7 @@ La date de publication de l’outil de transfert de contenu version v1.5.4 est 
 
 ### Nouveautés {#what-is-new-ctt-latest}
 
-* Prise en charge d’une étape facultative [pré-copie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=fr) ajoutée à l’utilisation avec le CTT. L’étape de pré-copie peut être utilisée pour accélérer considérablement les phases d’extraction et d’ingestion de l’activité de transfert de contenu lorsque l’instance d’AEM source est configurée pour utiliser un entrepôt de données Amazon S3 ou Azure Blob Storage.
+* Prise en charge d’une étape facultative [pré-copie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) ajoutée à l’utilisation avec le CTT. L’étape de pré-copie peut être utilisée pour accélérer considérablement les phases d’extraction et d’ingestion de l’activité de transfert de contenu lorsque l’instance d’AEM source est configurée pour utiliser un entrepôt de données Amazon S3 ou Azure Blob Storage.
 
 * Une barrière de sécurité a été ajoutée au CTT pour empêcher les utilisateurs d’arrêter une ingestion et de potentiellement corrompre les données une fois qu’elles ont atteint le point critique pendant la phase d’ingestion.
 

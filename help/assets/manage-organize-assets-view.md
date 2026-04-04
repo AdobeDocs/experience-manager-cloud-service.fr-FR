@@ -6,7 +6,7 @@ contentOwner: AG
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1660'
 ht-degree: 66%
@@ -79,7 +79,8 @@ Vous pouvez sélectionner des ressources ou des dossiers, ou une combinaison des
 ## Contrôle de version des ressources {#versions-of-assets}
 
 <!-- 
-TBD: query for engineering: How many versions are maintained. What happens when we reach that limit? Are old versions automatically removed? -->
+TBD: query for engineering: How many versions are maintained. What happens when we reach that limit? Are old versions automatically removed?
+-->
 
 [!DNL Assets view] crée de nouvelles versions des ressources lorsque celles-ci sont à nouveau chargées et mises à jour ou modifiées. Vous pouvez afficher l’historique des versions et les versions antérieures, et restaurer une des versions antérieures de la ressource à la place de la dernière version, qui est quand à elle sauvegardée si nécessaire en tant que version précédente. De nouvelles versions des ressources sont créées dans les scénarios suivants :
 
@@ -117,13 +118,15 @@ Pour afficher et comparer des versions :
 
    ![Comparer des versions de ressources](/help/assets/assets/version-compare2.png)
 
-<!-- old content
+<!--
+ old content
 To view versions, open an asset's preview and click **[!UICONTROL Versions]** ![Versions icon](assets/do-not-localize/versions-clock-icon.png) from the right sidebar. To preview a specific version, select it. To revert to it, click **[!UICONTROL Make Latest]**. 
 -->
 
 Sélectionnez la dernière version et cliquez sur **[!UICONTROL Nouvelle version]** pour charger une nouvelle copie de la ressource à partir de votre système de fichiers local afin de créer une version de ressource.
 
-<!-- old content
+<!--
+ old content
 You can also create versions from the versions timeline. Select the latest version, click **[!UICONTROL New Version]**, and upload a new copy of the asset from your local file system.
 
 ![View versions of an asset](assets/view-asset-versions1.png)
@@ -172,7 +175,7 @@ Pour définir la cible de validation :
 
    * **Diffusion** est l’option par défaut sélectionnée dans le menu déroulant et elle publie la ressource dans [Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) et [Content Hub](/help/assets/product-overview.md), si les deux sont activés pour Experience Manager Assets.
 
-   * La sélection de **Content Hub** publie la ressource uniquement dans Content Hub. Content Hub s’affiche en tant qu’option uniquement s’il est activé pour Experience Manager Assets.
+   * La sélection de **** publie la ressource uniquement dans Content Hub. Content Hub s’affiche en tant qu’option uniquement s’il est activé pour Experience Manager Assets.
 
    * Si vous ne sélectionnez pas d’option dans la liste déroulante, l’option par défaut activée pour votre environnement AEM as a Cloud Service est automatiquement appliquée à la ressource.
 
