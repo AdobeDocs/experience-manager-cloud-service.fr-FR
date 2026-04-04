@@ -27,7 +27,7 @@ En combinant ces fonctionnalités, l’agent de gouvernance réduit les risques 
 >
 >Les réponses générées par l&#39;IA peuvent être inexactes ou trompeuses. Assurez-vous de vérifier les correctifs et les réponses suggérés.
 >
->Consultez également les [Directives d’utilisation de l’IA générative de ](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+>Consultez également les [Directives d’utilisation de l’IA générative de &#x200B;](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
 
 ## Compétences en agent de gouvernance AEM {#skills-in-aem-governance-agent}
 

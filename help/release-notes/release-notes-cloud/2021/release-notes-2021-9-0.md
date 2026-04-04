@@ -148,7 +148,7 @@ Lisez la [documentation](/help/security/configuring-advanced-networking.md) pour
 
 **Optimisations des index**
 
-Pour améliorer les performances des requêtes de recherche et de l’indexation, l’index de texte intégral lucene-2 n’est plus utilisé clé en main dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] à partir de cette version. Pour supprimer cet index de texte intégral dans les environnements AEM en accord avec les clients AEM, l’ingénierie Adobe travaille individuellement et de manière proactive avec les clients pour une suppression fluide et durable de l’index de texte intégral Lucene. Pour plus d’informations, consultez la [!DNL Adobe Experience Manager]documentation[!DNL Cloud Service] de [ as a ](/help/operations/indexing.md#index-optimizations) et contactez directement l’assistance Adobe si vous avez des questions.
+Pour améliorer les performances des requêtes de recherche et de l’indexation, l’index de texte intégral lucene-2 n’est plus utilisé clé en main dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] à partir de cette version. Pour supprimer cet index de texte intégral dans les environnements AEM en accord avec les clients AEM, l’ingénierie Adobe travaille individuellement et de manière proactive avec les clients pour une suppression fluide et durable de l’index de texte intégral Lucene. Pour plus d’informations, consultez la [!DNL Adobe Experience Manager]documentation[!DNL Cloud Service] de [&#x200B; as a &#x200B;](/help/operations/indexing.md#index-optimizations) et contactez directement l’assistance Adobe si vous avez des questions.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -185,7 +185,7 @@ La date de publication de la mise à jour de Cloud Acceleration Manager est le 4
 
 ### Nouveautés {#what-is-new-cam}
 
-* Cloud Acceleration Manager permet désormais aux utilisateurs d’afficher les rapports BPA dans un aperçu imprimable, ce qui permet d’exécuter simplement une impression ou une exportation PDF pour les partager facilement. Reportez-vous aux étapes 6 et 7 de la section [ Utilisation de la carte Analyse des bonnes pratiques ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#best-practices-analysis).
+* Cloud Acceleration Manager permet désormais aux utilisateurs d’afficher les rapports BPA dans un aperçu imprimable, ce qui permet d’exécuter simplement une impression ou une exportation PDF pour les partager facilement. Reportez-vous aux étapes 6 et 7 de la section [&#x200B; Utilisation de la carte Analyse des bonnes pratiques &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#best-practices-analysis).
 
 ## Outil de transfert de contenu {#content-transfer-tool}
 

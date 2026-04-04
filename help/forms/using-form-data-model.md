@@ -57,7 +57,7 @@ Oui. AEM Forms prend en charge le chargement sécurisé de documents dans le cad
 
 ## Création de formulaires adaptatifs et de fragments {#create-af}
 
-Vous pouvez créer des Forms adaptatif[ et des fragments de formulaire adaptatif ](creating-adaptive-form.md) basés sur un modèle de données de formulaire (FDM). <!-- [Adaptive Form Fragments](adaptive-form-fragments.md) --> Pour utiliser un modèle de données de formulaire (FDM) lors de la création d’un formulaire adaptatif ou d’un fragment de formulaire adaptatif, procédez comme suit :
+Vous pouvez créer des Forms adaptatif[&#x200B; et des fragments de formulaire adaptatif &#x200B;](creating-adaptive-form.md) basés sur un modèle de données de formulaire (FDM). <!-- [Adaptive Form Fragments](adaptive-form-fragments.md) --> Pour utiliser un modèle de données de formulaire (FDM) lors de la création d’un formulaire adaptatif ou d’un fragment de formulaire adaptatif, procédez comme suit :
 
 1. Dans l’onglet Modèle de formulaire de l’écran Ajouter des propriétés, sélectionnez **[!UICONTROL Modèle de données de formulaire]** dans la liste déroulante **[!UICONTROL Sélectionner à partir de]**.
 
@@ -176,7 +176,7 @@ Vous pouvez également envoyer des pièces jointes de formulaire à une source d
 
 ## Appel des services dans des formulaires adaptatifs à l’aide de règles {#invoke-services}
 
-Dans un formulaire adaptatif basé sur un modèle de données de formulaire (FDM), vous pouvez [ créer des règles ](rule-editor.md) pour appeler les services configurés dans le modèle de données de formulaire (FDM). L’opération **[!UICONTROL Appeler des services]** d’une règle répertorie tous les services disponibles dans le modèle de données de formulaire (FDM) et vous permet de sélectionner des champs d’entrée et de sortie pour le service. Vous pouvez également utiliser le type de règle **[!UICONTROL Définir la valeur]** pour appeler un service de modèle de données de formulaire et définir la valeur d’un champ sur la sortie renvoyée par le service.
+Dans un formulaire adaptatif basé sur un modèle de données de formulaire (FDM), vous pouvez [&#x200B; créer des règles &#x200B;](rule-editor.md) pour appeler les services configurés dans le modèle de données de formulaire (FDM). L’opération **[!UICONTROL Appeler des services]** d’une règle répertorie tous les services disponibles dans le modèle de données de formulaire (FDM) et vous permet de sélectionner des champs d’entrée et de sortie pour le service. Vous pouvez également utiliser le type de règle **[!UICONTROL Définir la valeur]** pour appeler un service de modèle de données de formulaire et définir la valeur d’un champ sur la sortie renvoyée par le service.
 
 Par exemple, la règle suivante appelle un service get qui utilise l’ID d’employé comme entrée et les valeurs renvoyées sont renseignées dans les champs ID, Nom, Prénom et Genre correspondants du formulaire.
 

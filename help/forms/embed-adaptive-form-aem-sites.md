@@ -212,7 +212,7 @@ Pour incorporer un formulaire adaptatif existant dans une page Sites :
 
 1. Ouvrez la page AEM Sites en mode d’édition.
 1. Faites glisser et déposez le composant Forms adaptatif - Incorporer (v2)**[!UICONTROL de l’explorateur de composants vers la page Sites.]**
-1. Sélectionnez le composant Forms adaptative - Incorporer **[!UICONTROL sur la page Sites et sélectionnez]** Propriétés du conteneur de formulaires adaptatifs![ sur la barre d’actions. ](/help/forms/assets/configure-icon.svg) La boîte de dialogue **[!UICONTROL Modifier le Forms adaptatif - Incorporer (v2)]** s’ouvre.
+1. Sélectionnez le composant Forms adaptative - Incorporer **[!UICONTROL sur la page Sites et sélectionnez]** Propriétés du conteneur de formulaires adaptatifs![&#x200B; sur la barre d’actions. &#x200B;](/help/forms/assets/configure-icon.svg) La boîte de dialogue **[!UICONTROL Modifier le Forms adaptatif - Incorporer (v2)]** s’ouvre.
 1. Recherchez et sélectionnez le formulaire adaptatif à incorporer dans le **[!UICONTROL chemin de la ressource]**.
 1. Enregistrez les paramètres. Le formulaire adaptatif est maintenant incorporé à la page.
 
@@ -226,7 +226,7 @@ Vous pouvez également améliorer l’accessibilité de vos formulaires en les i
 
 1. Ouvrez un fragment d’expérience en mode d’édition.
 1. Faites glisser le composant Forms adaptative - Incorporer (v2)**[!UICONTROL depuis l’explorateur de composants et déposez-le dans le fragment d’expérience.]**
-1. Sélectionnez le composant Forms adaptative - Incorporer **[!UICONTROL dans le fragment d’expérience et sélectionnez]** Propriétés du conteneur de formulaires adaptatifs![ dans la barre d’actions. ](/help/forms/assets/configure-icon.svg) La boîte de dialogue **[!UICONTROL Modifier le Forms adaptatif - Incorporer (v2)]** s’ouvre.
+1. Sélectionnez le composant Forms adaptative - Incorporer **[!UICONTROL dans le fragment d’expérience et sélectionnez]** Propriétés du conteneur de formulaires adaptatifs![&#x200B; dans la barre d’actions. &#x200B;](/help/forms/assets/configure-icon.svg) La boîte de dialogue **[!UICONTROL Modifier le Forms adaptatif - Incorporer (v2)]** s’ouvre.
 1. Recherchez et sélectionnez le formulaire adaptatif à incorporer dans le **[!UICONTROL chemin de la ressource]**.
 1. Enregistrez les paramètres. Le formulaire adaptatif est maintenant incorporé au fragment d’expérience.
 
@@ -279,13 +279,13 @@ Un cadre intégré (iframe) est un élément HTML qui charge un formulaire adapt
 
    * Si la case **[!UICONTROL Le formulaire couvre toute la largeur du cadre]** est cochée, un formulaire adaptatif occupe toute la largeur du conteneur dans lequel il est placé. Dans ce cas, un iframe n’est pas utilisé pour générer le formulaire. La disposition et la conception d’un formulaire adaptatif s’adaptent pour couvrir toute la largeur du conteneur, ce qui le rend réactif et capable de s’ajuster à différentes tailles d’écran. Cette option vous permet d’incorporer plusieurs Forms adaptatives dans une page AEM Sites.
 
-         >[!REMARQUE]
+         >[ !REMARQUE]
          >
          > Pour incorporer plusieurs formulaires dans une page AEM Sites, cochez la case **[!UICONTROL Le formulaire couvre toute la largeur du cadre]**.
      
    * Si la case **[!UICONTROL Le formulaire couvre toute la largeur du cadre]** n’est pas cochée, un formulaire adaptatif ne couvre pas toute la largeur du conteneur. À la place, un iframe est utilisé pour générer le formulaire, qui ne peut pas être étendu au-delà d’une largeur spécifique. Cette approche est utile lorsqu’un formulaire adaptatif a des limites définies et doit coexister avec d’autres composants AEM situés à côté dans le conteneur. Si cette option n’est pas cochée, elle permet à un seul Forms adaptatif de la page AEM Sites de s’incorporer sans iframe.
 
-         >[!REMARQUE]
+         >[ !REMARQUE]
          >
          > page AEM Sites ne prend en charge qu’un seul formulaire adaptatif pour exister sans iframe. Pour ajouter d’autres Forms adaptatives à l’aide du composant **[!UICONTROL Forms adaptatif - Incorporer]**, sélectionnez l’option **[!UICONTROL Le formulaire couvre toute la largeur du cadre]**.
      

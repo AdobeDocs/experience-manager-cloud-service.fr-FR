@@ -73,7 +73,7 @@ Vous pouvez exporter des thèmes dans [!DNL AEM Forms] que vous pouvez utiliser 
 Pour télécharger un thème :
 
 1. Connectez-vous à votre instance de création [!DNL Experience Manager Forms].
-1. Sélectionnez **** > **[!UICONTROL Thèmes]**.
+1. Sélectionnez **&#x200B;**&#x200B;> **[!UICONTROL Thèmes]**.
 
    ![Sélectionner un thème](/help/forms/assets/select-theme.png)
 

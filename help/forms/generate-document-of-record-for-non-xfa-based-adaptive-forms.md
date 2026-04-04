@@ -372,7 +372,7 @@ Pour localiser les informations de branding que vous saisissez dans l’onglet D
 
       **Afficher les libellés pour la liste déroulante à sélection multiple**
 
-      <span class="preview"> Cette fonctionnalité est disponible via le programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail à partir de votre adresse officielle à [](mailto:aem-forms-ea@adobe.com). </span>
+      <span class="preview"> Cette fonctionnalité est disponible via le programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail à partir de votre adresse officielle à [&#128279;](mailto:aem-forms-ea@adobe.com). </span>
 
       Le PDF Envoi affiche désormais les libellés d’affichage sélectionnés pour les composants déroulants à sélection multiple au lieu des valeurs stockées internes. Par exemple, si un utilisateur sélectionne « California » et « New York » dans une liste déroulante, le PDF d’envoi affiche les libellés sélectionnés au lieu des valeurs internes telles que `CA` et `NY`.
 

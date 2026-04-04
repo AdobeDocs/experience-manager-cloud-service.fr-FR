@@ -106,7 +106,7 @@ Pour configurer la configuration du service cloud [!DNL Microsoft® Dynamics 365
 
    Accédez à votre instance Dynamics dans le **Centre d’administration Power Platform** et accédez à [Ressources de développement](https://docs.microsoft.com/fr-fr/powerapps/developer/data-platform/view-download-developer-resources) pour afficher la valeur de la racine du **service**. Le point d’entrée **API Web** représente la valeur **racine du service** de l’instance Dynamics que vous souhaitez intégrer au Forms adaptatif. L’URL **Racine du service** est au format suivant : `https://<tenant-name>.dynamics.com/api/data/v9.1/`
 
-   ![ Champ racine du service ](/help/forms/assets/dynamics-service-root.png)
+   ![&#x200B; Champ racine du service &#x200B;](/help/forms/assets/dynamics-service-root.png)
 
 1. Sélectionnez le **[!UICONTROL Type d’authentification]** comme **OAuth2.0**.
 1. Spécifiez les valeurs **ID client** (appelé ID d’application) et **Secret client** pour l’application connectée.
@@ -117,7 +117,7 @@ Vous pouvez récupérer l’**ID client** et le **Secret client** à partir de l
 1. Spécifiez les éléments suivants dans les champs **[!UICONTROL URL OAuth]**, **[!UICONTROL URL du jeton d’actualisation]** et **[!UICONTROL URL du jeton d’accès]**.
 Vous pouvez récupérer les **[!UICONTROL URL OAuth]**, **[!UICONTROL URL du jeton d’actualisation]** et **[!UICONTROL URL du jeton d’accès]** dans la section **Points d’entrée** de votre application Azure Active Directory.
 
-   ![Points D’Entrée De L’Application ](/help/forms/assets/dynamics-azure-app-endpoints.png)
+   ![Points D’Entrée De L’Application &#x200B;](/help/forms/assets/dynamics-azure-app-endpoints.png)
 
 1. Spécifiez `openid` dans le champ **[!UICONTROL Champ d’application de l’autorisation]** pour la procédure d’autorisation sur [!DNL Microsoft® Dynamics 365].
 1. Spécifiez l’URL de l’instance dynamique dans le champ **[!UICONTROL Ressource]** pour configurer des [!DNL Microsoft® Dynamics 365] avec un modèle de données de formulaire (FDM).
@@ -134,7 +134,7 @@ Vous pouvez copier l’**URL de l’environnement** à partir du **Centre d’ad
 
 Vous pouvez utiliser l’outil Créer le modèle de données de formulaire (FDM) à l’aide de la configuration cloud [!DNL Microsoft® Dynamics 365] créée. Pour créer un modèle de données de formulaire, procédez comme suit :
 
-1. Accédez à **** > **[!UICONTROL Forms]** > **[!UICONTROL Intégrations de données]**.
+1. Accédez à **&#x200B;**&#x200B;> **[!UICONTROL Forms]** > **[!UICONTROL Intégrations de données]**.
    ![Création d’un modèle de données de formulaire](/help/forms/assets/dynamics-create-fdm.png)
 
 1. Cliquez sur **[!UICONTROL Créer]** et sélectionnez **[!UICONTROL Modèle de données de formulaire]**.

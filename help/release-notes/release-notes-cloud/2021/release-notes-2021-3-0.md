@@ -80,7 +80,7 @@ Vous pouvez contacter votre représentant Adobe pour une démonstration ou pour 
 
 * Publication du site de référence CIF Venia - 2021.03.25 qui comprend les derniers composants principaux de CIF version 1.9.0. Voir [Site de référence CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) pour plus d’informations.
 
-* Publication des composants principaux de CIF version 1.9.0. Voir [Composants principaux ](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) pour plus d’informations.
+* Publication des composants principaux de CIF version 1.9.0. Voir [Composants principaux &#x200B;](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) pour plus d’informations.
 
 
 ## Cloud Manager {#cloud-manager}
@@ -94,7 +94,7 @@ La prochaine version est prévue pour le 8 avril 2021.
 
 ### Nouveautés {#what-is-new-march}
 
-* Les clients disposant d’environnements avec des configurations de nom de domaine personnalisé préexistantes pour Listes autorisées IP[, ](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn)Certificats SSL[ et ](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn)Noms de domaine personnalisés[ voient un message sur leurs configurations existantes et peuvent se servir eux-mêmes via l’interface utilisateur.](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn)
+* Les clients disposant d’environnements avec des configurations de nom de domaine personnalisé préexistantes pour Listes autorisées IP[, &#x200B;](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn)Certificats SSL[&#x200B; et &#x200B;](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn)Noms de domaine personnalisés[&#x200B; voient un message sur leurs configurations existantes et peuvent se servir eux-mêmes via l’interface utilisateur.](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn)
 
 * Les utilisateurs et utilisatrices disposant des autorisations requises peuvent désormais modifier un programme, ce qui leur permet d’effectuer les opérations suivantes en libre-service :
 

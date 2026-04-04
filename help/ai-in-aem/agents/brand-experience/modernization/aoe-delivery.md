@@ -52,7 +52,7 @@ Vous devez contacter votre équipe de compte Adobe pour connaître vos exigences
 Une réunion de lancement est organisée, ainsi qu’une analyse du site source, un audit de contenu, l’alignement de la conception, la révision de la bibliothèque de composants et la sélection de l’outil de création.
 
 * **Vous** fournissez toutes les ressources et instructions nécessaires.
-* **** crée un plan de migration détaillé avec chronologie et rôles.
+* **&#x200B;**&#x200B;crée un plan de migration détaillé avec chronologie et rôles.
 
 ### &#x200B;3. Exécution {#execution}
 

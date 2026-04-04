@@ -24,11 +24,11 @@ L’agent peut récupérer les statuts de pipeline et vous aider à résoudre le
 >
 >Les réponses générées par l&#39;IA peuvent être inexactes ou trompeuses. Assurez-vous de vérifier les correctifs et les réponses suggérés.
 >
->Consultez également les [Directives d’utilisation de l’IA générative de ](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+>Consultez également les [Directives d’utilisation de l’IA générative de &#x200B;](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
 
 >[!NOTE]
 >
->Le dépannage des pipelines se limite aux pipelines de pile complète (déploiement et qualité du code), mais la prise en charge du **Pipeline de configuration de niveau web** est désormais disponible en version bêta. Pour demander l’accès, envoyez un e-mail à [](mailto:aem-devagent@adobe.com). Un accès préexistant aux agents dans AEM est requis.
+>Le dépannage des pipelines se limite aux pipelines de pile complète (déploiement et qualité du code), mais la prise en charge du **Pipeline de configuration de niveau web** est désormais disponible en version bêta. Pour demander l’accès, envoyez un e-mail à [&#128279;](mailto:aem-devagent@adobe.com). Un accès préexistant aux agents dans AEM est requis.
 
 <!-- 
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
@@ -42,9 +42,9 @@ Pour accéder à cet agent, reportez-vous aux [notes de mise à jour](/help/rele
 
 Vous accédez à l’agent de développement par le biais de l’assistant d’IA présent dans les interfaces utilisateur, notamment Cloud Manager ou Experience Hub.
 
-1. Pour commencer, cliquez sur [](https://experience.adobe.com/#/@foundationinternal/home) pour ouvrir sa page d&#39;accueil.
+1. Pour commencer, cliquez sur [&#128279;](https://experience.adobe.com/#/@foundationinternal/home) pour ouvrir sa page d&#39;accueil.
 
-   ![Page d&#39;accueil de ](/help/implementing/cloud-manager/assets/experience-cloud-experiencemanager.png)
+   ![Page d&#39;accueil de &#x200B;](/help/implementing/cloud-manager/assets/experience-cloud-experiencemanager.png)
 
 1. Dans le rail de gauche, sous l’en-tête **Services**, cliquez sur **Cloud Manager**.
 
@@ -58,7 +58,7 @@ Vous accédez à l’agent de développement par le biais de l’assistant d’I
 
 1. Sur la page **Aperçu du programme**, dans la vignette **Pipelines**, cliquez sur un pipeline.
 
-   ![ Pipeline sélectionné ](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-pipeline-select.png)
+   ![&#x200B; Pipeline sélectionné &#x200B;](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-pipeline-select.png)
 
 1. Sur la page **Génération et analyse du code**, notez l’échec du pipeline.
 

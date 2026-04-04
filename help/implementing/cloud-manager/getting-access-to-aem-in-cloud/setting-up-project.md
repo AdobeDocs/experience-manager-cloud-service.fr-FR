@@ -20,7 +20,7 @@ Découvrez comment les projets AEM sont créés avec Maven et les normes que vou
 
 Pour créer et déployer avec succès avec Cloud Manager, les projets AEM doivent respecter les instructions suivantes :
 
-* Les projets doivent être créés à l’aide d’[ Apache Maven ](https://maven.apache.org).
+* Les projets doivent être créés à l’aide d’[&#x200B; Apache Maven &#x200B;](https://maven.apache.org).
 * Un fichier `pom.xml` doit se trouver à la racine du référentiel Git. Ce fichier `pom.xml` peut renvoyer à autant de sous-modules (qui à leur tour peuvent comporter d’autres sous-modules, et ainsi de suite) que nécessaire.
 * Vous pouvez ajouter des références à d’autres référentiels d’artefact Maven dans vos fichiers `pom.xml`. L’accès aux [référentiels d’artefacts protégés par mot de passe](#password-protected-maven-repositories) est pris en charge s’il est configuré. Cependant, l’accès aux référentiels d’artefacts protégés par réseau n’est pas pris en charge.
 * Les packages de contenu déployables sont découverts en analysant les fichiers `.zip` de packages de contenu qui se trouvent dans un répertoire nommé `target`. Un nombre illimité de sous-modules peut produire des modules de contenu.

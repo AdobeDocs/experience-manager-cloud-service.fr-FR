@@ -33,7 +33,7 @@ Lorsque l’option `ModelRouter` est activée, les fonctions de l’API d’hist
 
 ## Routage manuel ou automatique {#manual-vs-automatic-model-routing}
 
-`ModelRouter` automatise la récupération des fragments du modèle. Cependant, comme tout outil automatisé, il comporte des restrictions. Si nécessaire, il est possible de désactiver ou de configurer `ModelRouter` pour ignorer les chemins d’accès à l’aide des propriétés des métadonnées (voir la section Propriétés des métadonnées dans le document [Composant de page SPA ](page-component.md)). Les développeurs front-end peuvent alors mettre en œuvre leur propre couche de routage de modèle en demandant à la fonction `PageModelManager` de charger tout fragment de modèle donné à l’aide de la fonction `getData()`.
+`ModelRouter` automatise la récupération des fragments du modèle. Cependant, comme tout outil automatisé, il comporte des restrictions. Si nécessaire, il est possible de désactiver ou de configurer `ModelRouter` pour ignorer les chemins d’accès à l’aide des propriétés des métadonnées (voir la section Propriétés des métadonnées dans le document [Composant de page SPA &#x200B;](page-component.md)). Les développeurs front-end peuvent alors mettre en œuvre leur propre couche de routage de modèle en demandant à la fonction `PageModelManager` de charger tout fragment de modèle donné à l’aide de la fonction `getData()`.
 
 >[!CAUTION]
 >

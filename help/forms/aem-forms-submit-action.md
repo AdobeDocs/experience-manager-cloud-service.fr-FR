@@ -50,7 +50,7 @@ Vous pouvez également envoyer un formulaire adaptatif à d’autres configurati
 
 Le tableau ci-dessous indique les actions d’envoi prises en charge en fonction de la méthode de création de formulaire utilisée dans AEM Forms :
 
-| Action Envoyer | [Composants de base](/help/forms/configuring-submit-actions.md) | [Composants principaux](/help/forms/configure-submit-actions-core-components.md) | [Éditeur universel](/help/forms/configure-submit-action-eds-forms.md#submit-actions-supported-by-adaptive-forms-created-in-universal-editor) | Forms basé sur les documents[](/help/forms/configure-submit-action-eds-forms.md#supported-submit-actions-for-document-based-forms) |
+| Action Envoyer | [Composants de base](/help/forms/configuring-submit-actions.md) | [Composants principaux](/help/forms/configure-submit-actions-core-components.md) | [Éditeur universel](/help/forms/configure-submit-action-eds-forms.md#submit-actions-supported-by-adaptive-forms-created-in-universal-editor) | Forms basé sur les documents[&#128279;](/help/forms/configure-submit-action-eds-forms.md#supported-submit-actions-for-document-based-forms) |
 |----------------------------|------------------------|------------------|------------------|------------------------|
 | Envoyer un e-mail | ✅ pris en charge | ✅ pris en charge | ✅ pris en charge |                        |
 | Flux Power Automate | ✅ pris en charge | ✅ pris en charge | ✅ pris en charge |                        |

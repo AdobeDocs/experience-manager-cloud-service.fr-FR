@@ -33,7 +33,7 @@ Pour les sites s’exécutant sur Adobe Experience Manager, il existe un **plug-
 
 ## Avant de commencer {#before-start}
 
-Le plug-in d’expérimentation est utilisé dans le cadre de [](/help/edge/overview.md) vous aurez donc besoin d’un compte Github, d’un référentiel de contenu tel que SharePoint ou Google Drive, ainsi que de [AEM Sidekick](https://www.aem.live/docs/sidekick). Consultez également les pages [Prise en main - Tutoriel de développement de l’éditeur universel](https://www.aem.live/developer/tutorial) et [Prise en main - Tutoriel de développement](https://www.aem.live/developer/tutorial).
+Le plug-in d’expérimentation est utilisé dans le cadre de [&#128279;](/help/edge/overview.md) vous aurez donc besoin d’un compte Github, d’un référentiel de contenu tel que SharePoint ou Google Drive, ainsi que de [AEM Sidekick](https://www.aem.live/docs/sidekick). Consultez également les pages [Prise en main - Tutoriel de développement de l’éditeur universel](https://www.aem.live/developer/tutorial) et [Prise en main - Tutoriel de développement](https://www.aem.live/developer/tutorial).
 
 Une fois que vous avez tout configuré, **regardez cette vidéo** intitulée [Expérimentation instantanée](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html) pour une courte démonstration sur le fonctionnement du plug-in d’expérimentation.
 
@@ -93,7 +93,7 @@ Voir l’exemple ci-dessous :
 
 Pour chaque expérience, le trafic est réparti entre toutes les variantes (contrôle et challengers) et est automatiquement défini sur une distribution égale. Ainsi, si vous avez un challenger, il y aura automatiquement une répartition égale de 50/50 entre le contrôle et le challenger. Si vous avez deux concurrents, vous verrez automatiquement un tiers du trafic alloué au contrôle et chaque concurrent et ainsi de suite.
 
-Vous pouvez remplacer la répartition du trafic en configurant les métadonnées. Pour plus d’informations sur la personnalisation des métadonnées utilisées dans vos expériences, consultez la [ page suivante ](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring).
+Vous pouvez remplacer la répartition du trafic en configurant les métadonnées. Pour plus d’informations sur la personnalisation des métadonnées utilisées dans vos expériences, consultez la [&#x200B; page suivante &#x200B;](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring).
 
 ### Prévisualiser et préparer vos variantes d’expérience {#preview-stage-experiment}
 

@@ -66,7 +66,7 @@ La prochaine version est prévue pour le 15 juillet 2021.
 
 * Pour éviter toute confusion, les lignes de segment de l’instance de publication d’AEM et de l’instance de publication du Dispatcher sur la page Détails de l’environnement ont été consolidées.
 
-  ![Environnements ](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
+  ![Environnements &#x200B;](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
 
 * Une nouvelle règle de qualité du code a été ajoutée pour valider la structure des index `damAssetLucene`. Pour plus d’informations, voir [Index Lucene Oak des ressources DAM personnalisées](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check).
 

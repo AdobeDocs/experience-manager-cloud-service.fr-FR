@@ -65,9 +65,9 @@ Analytics, Data Collection (Formerly Adobe Launch), and Experience Manager (expe
 
 L’automatisation de la configuration d’Experience Cloud nécessite une **licence Adobe Analytics**, **collecte de données (anciennement Adobe Launch)** pour gérer les scripts de suivi et **licence Experience Manager Forms** pour rationaliser l’agrégation des données et la génération d’insight.
 
-Si vous disposez d’une licence active pour **** et **Experience Manager Forms**, et que vous disposez d’une intégration à **Collecte de données (anciennement Adobe Launch)**, vous devez vérifier leur disponibilité dans votre console de développement.
+Si vous disposez d’une licence active pour **&#x200B;**&#x200B;et **Experience Manager Forms**, et que vous disposez d’une intégration à **Collecte de données (anciennement Adobe Launch)**, vous devez vérifier leur disponibilité dans votre console de développement.
 
-Pour vérifier que les éléments ci-dessus sont disponibles pour votre environnement Forms as a Cloud Service, accédez à la [ Developer Console ](https://developer.adobe.com/console/projects), accédez au projet et recherchez votre projet avec l’ID de programme - ID d’environnement, par exemple, pour l’environnement avec l’URL `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`, l’ID de programme - ID d’environnement est `p45913-e175111`. Vérifiez que les API Experience Cloud Setup Automation, Adobe Analytics et Experience Platform Launch sont répertoriées. S’ils sont répertoriés, vous pouvez activer Adobe Analytics pour une analyse accélérée de votre Forms adaptatif.
+Pour vérifier que les éléments ci-dessus sont disponibles pour votre environnement Forms as a Cloud Service, accédez à la [&#x200B; Developer Console &#x200B;](https://developer.adobe.com/console/projects), accédez au projet et recherchez votre projet avec l’ID de programme - ID d’environnement, par exemple, pour l’environnement avec l’URL `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`, l’ID de programme - ID d’environnement est `p45913-e175111`. Vérifiez que les API Experience Cloud Setup Automation, Adobe Analytics et Experience Platform Launch sont répertoriées. S’ils sont répertoriés, vous pouvez activer Adobe Analytics pour une analyse accélérée de votre Forms adaptatif.
 
 ![Intégration de Forms Analytics requise](assets/analytics-aem.png){width="100%"}
 
@@ -139,7 +139,7 @@ Suivez les étapes ci-dessous pour activer et configurer Adobe Analytics pour un
 
    ![Afficher rapport](assets/activ-aa.png){width="100%"}
 
-1. Cliquez sur **** pour afficher votre rapport et analyser les données de performances.
+1. Cliquez sur **&#x200B;**&#x200B;pour afficher votre rapport et analyser les données de performances.
 
 Pour connecter un formulaire adaptatif à Adobe Analytics à l’aide de la méthode manuelle, consultez [Intégration d’AEM Forms à Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md).
 

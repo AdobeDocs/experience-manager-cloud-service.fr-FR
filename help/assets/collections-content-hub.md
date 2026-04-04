@@ -35,7 +35,7 @@ Il permet aux utilisateurs et utilisatrices d’accéder facilement aux différe
 
 ## Conditions préalables {#prerequisites}
 
-[Les utilisateurs de ](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
+[Les utilisateurs de &#x200B;](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
 
 ## Créer des collections{#create-collections}
 

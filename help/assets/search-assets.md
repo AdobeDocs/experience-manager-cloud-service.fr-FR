@@ -279,7 +279,7 @@ La fonctionnalité de recherche [!DNL Experience Manager] prend en charge la rec
 
 ## Sélecteur de ressources {#asset-picker}
 
-[Le sélecteur de ressources ](/help/assets/overview-asset-selector.md) (appelé sélecteur de ressources dans les versions antérieures de [!DNL Adobe Experience Manager]) vous permet de rechercher, de filtrer et de parcourir les ressources DAM d’une manière spéciale. Le sélecteur de ressources est disponible à l’adresse `https://[aem_server]:[port]/aem/assetpicker.html`. Vous pouvez récupérer les métadonnées des ressources sélectionnées à l’aide du sélecteur de ressources. Vous pouvez le lancer avec les paramètres de requête pris en charge, tels que le type de ressource (image, vidéo, texte) et le mode de sélection (sélections simples ou multiples). Ces paramètres définissent le contexte du sélecteur de ressources pour une instance de recherche particulière et restent inchangés tout au long de la sélection.
+[Le sélecteur de ressources &#x200B;](/help/assets/overview-asset-selector.md) (appelé sélecteur de ressources dans les versions antérieures de [!DNL Adobe Experience Manager]) vous permet de rechercher, de filtrer et de parcourir les ressources DAM d’une manière spéciale. Le sélecteur de ressources est disponible à l’adresse `https://[aem_server]:[port]/aem/assetpicker.html`. Vous pouvez récupérer les métadonnées des ressources sélectionnées à l’aide du sélecteur de ressources. Vous pouvez le lancer avec les paramètres de requête pris en charge, tels que le type de ressource (image, vidéo, texte) et le mode de sélection (sélections simples ou multiples). Ces paramètres définissent le contexte du sélecteur de ressources pour une instance de recherche particulière et restent inchangés tout au long de la sélection.
 
 Le sélecteur de ressources utilise le message HTML5 `Window.postMessage` pour envoyer au destinataire les données correspondant à la ressource sélectionnée. Il fonctionne uniquement en mode navigation et exclusivement avec la page de résultats Omni-recherche.
 
@@ -410,7 +410,7 @@ Exécutez les étapes suivantes pour activer ou désactiver Recherche optimisée
 
 1. Dans la section **[!UICONTROL Rechercher]**, sélectionnez **[!UICONTROL Recherche optimisée par l&#39;IA]** pour activer Recherche optimisée par l&#39;IA ou **[!UICONTROL Mot-clé]** pour le désactiver.
 
-   ![Activer ou désactiver Recherche optimisée par l&#39;IA ](/help/assets/assets/enable-ai-search-admin-view.png)
+   ![Activer ou désactiver Recherche optimisée par l&#39;IA &#x200B;](/help/assets/assets/enable-ai-search-admin-view.png)
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
@@ -559,5 +559,5 @@ Accédez à l’emplacement du dossier pour les ressources affichées dans les r
 
 >[!MORELIKETHIS]
 >
->* Guide de mise en œuvre des recherches[[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=fr)
+>* Guide de mise en œuvre des recherches[[!DNL Experience Manager] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=fr)
 >* [Configuration avancée pour améliorer les résultats de recherche](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=fr)

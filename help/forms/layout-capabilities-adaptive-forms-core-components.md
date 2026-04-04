@@ -140,7 +140,7 @@ Examinons le processus détaillé d’insertion d’une disposition et d’ajout
 ### &#x200B;1. Insérer un composant de disposition dans un formulaire
 
 1. Connectez-vous à l’instance [!DNL Experience Manager Forms].
-1. Dans le coin supérieur gauche, sélectionnez **** > **[!UICONTROL Forms]** > **[!UICONTROL Forms et documents]**.
+1. Dans le coin supérieur gauche, sélectionnez **&#x200B;**&#x200B;> **[!UICONTROL Forms]** > **[!UICONTROL Forms et documents]**.
 1. Ouvrez un formulaire adaptatif existant en mode d’édition s’il a déjà été créé.
 
    ![Ouvrir un formulaire adaptatif](/help/forms/assets/insert-layout.png)

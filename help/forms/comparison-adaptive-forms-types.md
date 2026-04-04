@@ -43,7 +43,7 @@ Les composants principaux utilisent une architecture de composants modulaire nor
 - **Méthodologie de style** : conventions CSS BEM (Block Element Modifier)
 - **Stockage de contenu** : référentiel JCR avec nœuds de contenu structuré
 - **Rendu** : rendu côté serveur dans AEM avec rendu côté client découplé en option
-- **** : open-source (disponible sur [GitHub](https://github.com/adobe/aem-core-forms-components))
+- **&#x200B;**&#x200B;: open-source (disponible sur [GitHub](https://github.com/adobe/aem-core-forms-components))
 
 ### Modèle de rendu
 

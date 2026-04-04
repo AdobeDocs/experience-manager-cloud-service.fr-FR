@@ -53,7 +53,7 @@ Vous pouvez désormais parcourir le catalogue avec les données échelonnées. S
 
 ## AEM Launches {#launches}
 
-Les lancements d’AEM vous permettent de créer du contenu pour des données de produits structurées. Si vous ne connaissez pas les lancements, suivez le lien de la documentation sous la section [ Ressources supplémentaires .](#additional-resources) La date de lancement est ensuite utilisée pour accéder aux données de produits échelonnées.
+Les lancements d’AEM vous permettent de créer du contenu pour des données de produits structurées. Si vous ne connaissez pas les lancements, suivez le lien de la documentation sous la section [&#x200B; Ressources supplémentaires .](#additional-resources) La date de lancement est ensuite utilisée pour accéder aux données de produits échelonnées.
 
 ![lancement de l’étape](assets/staged-launch.png)
 

@@ -99,7 +99,7 @@ Les restrictions suivantes s’appliquent.
 * La personne utilisatrice doit être connectée en tant que **Gestionnaire de déploiement** pour configurer ou exécuter des pipelines.
 * À tout moment, il ne peut y avoir qu’un seul pipeline full stack par environnement.
 
-En outre, assurez-vous de savoir comment se comporte le pipeline full stack si vous choisissez d’introduire un [ pipeline de configuration de niveau web ](#web-tier-config-pipelines).
+En outre, assurez-vous de savoir comment se comporte le pipeline full stack si vous choisissez d’introduire un [&#x200B; pipeline de configuration de niveau web &#x200B;](#web-tier-config-pipelines).
 
 * Le pipeline full stack pour un environnement ignore la configuration Dispatcher si le pipeline de configuration de niveau web correspondant existe.
 * Si le pipeline de configuration de niveau web correspondant à l’environnement n’existe pas, l’utilisateur peut configurer le pipeline full stack pour inclure ou ignorer la configuration Dispatcher.

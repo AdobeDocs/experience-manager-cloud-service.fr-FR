@@ -54,7 +54,7 @@ De plus, vous pouvez [personnaliser les actions Envoyer par défaut](/help/forms
 
 Vous pouvez configurer une action d’envoi dans la section **[!UICONTROL Envoi]** des propriétés du conteneur de formulaire adaptatif, dans la barre latérale.
 
-![Action d’envoi ](/help/forms/assets/submit-form-foundation-component.png)
+![Action d’envoi &#x200B;](/help/forms/assets/submit-form-foundation-component.png)
 
 <!--
  [!NOTE]

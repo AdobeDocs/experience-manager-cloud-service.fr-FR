@@ -31,9 +31,9 @@ Available as a private beta, Experience Hub offers an optimized experience focus
 
 ## Experience Hub de près {#aem-experience-hub-about}
 
-1. Pour commencer, cliquez sur [](https://experience.adobe.com/#/@foundationinternal/home) pour ouvrir sa page d&#39;accueil.
+1. Pour commencer, cliquez sur [&#128279;](https://experience.adobe.com/#/@foundationinternal/home) pour ouvrir sa page d&#39;accueil.
 
-   ![Page d&#39;accueil de ](/help/implementing/cloud-manager/assets/experience-cloud-experiencemanager.png)
+   ![Page d&#39;accueil de &#x200B;](/help/implementing/cloud-manager/assets/experience-cloud-experiencemanager.png)
 
 1. Dans le regroupement **Accès rapide**, cliquez sur [**Experience Manager**](https://experience.adobe.com).
 1. Lors du premier accès, le système vous affecte le paramètre prédéfini **Auteur de contenu** (affiché près du coin supérieur droit de la page). Il contrôle les widgets, les éléments de navigation et le contenu que vous voyez.
@@ -57,7 +57,7 @@ La page Adobe Experience Manager a été actualisée avec une navigation amélio
 
 Ces solutions sont désormais déplacées vers la navigation principale sous **Outils** ou **Services**. Les nouveaux éléments de navigation permettent d’accéder rapidement aux fonctionnalités d’AEM liées à vos solutions activées. Accédez à Assets, Sites, Forms, Fragments de contenu, Lancements, etc.
 
-![Environnements ](/help/implementing/cloud-manager/assets/experience-hub-author-environments.png)
+![Environnements &#x200B;](/help/implementing/cloud-manager/assets/experience-hub-author-environments.png)
 
 Utilisez ces fonctionnalités dans votre environnement de production principal. Si vous avez accès à plusieurs instances AEM, sélectionnez l’environnement à cibler.
 
@@ -69,7 +69,7 @@ Faisant office de hub central pour Adobe Experience Manager, la page Experience 
 
 Les widgets peuvent également être redimensionnés et repositionnés sur la page en fonction de vos besoins et préférences.
 
-![Widgets ](/help/implementing/cloud-manager/assets/experience-hub-widgets.png)
+![Widgets &#x200B;](/help/implementing/cloud-manager/assets/experience-hub-widgets.png)
 
 La section **Environnements de création** répertorie tous les environnements AEM auxquels vous pouvez accéder et inclut des raccourcis vers leurs solutions et pages. Vous pouvez épingler des environnements spécifiques pour les maintenir en haut de la liste.
 

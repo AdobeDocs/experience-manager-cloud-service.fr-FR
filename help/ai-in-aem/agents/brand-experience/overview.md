@@ -30,7 +30,7 @@ Grâce à ces agents, le Brand Experience Agent absorbe le travail opérationnel
 >
 >Les réponses générées par l&#39;IA peuvent être inexactes ou trompeuses. Assurez-vous de vérifier les correctifs et les réponses suggérés.
 >
->Consultez également les [instructions d’utilisation de l’IA générative de ](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
+>Consultez également les [instructions d’utilisation de l’IA générative de &#x200B;](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 
 ## Agent de modernisation de l’expérience {#experience-modernization}
 
