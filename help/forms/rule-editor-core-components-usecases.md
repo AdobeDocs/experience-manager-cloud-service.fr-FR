@@ -20,7 +20,7 @@ Examinons à présent les différentes mises en œuvre d’un éditeur de règle
 
 ## Définir le focus sur un autre panneau sur le bouton cliquer si le premier panneau est valide
 
-<span class="preview">Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview">Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features). </span>
 
 L’éditeur de règles vous permet de valider des mises en page de panneau, telles que des onglets horizontaux, verticaux, des accordéons ou un clic sur un bouton de l’assistant, puis de définir la sélection sur un objet de formulaire dans un autre panneau. Vous pouvez utiliser cette fonctionnalité pour améliorer la navigation dans les formulaires et l’expérience utilisateur.
 
