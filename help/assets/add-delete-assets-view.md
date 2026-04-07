@@ -5,7 +5,7 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: eaaf86a24a83b6516959e66a010ca5df2e060123
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 99%
@@ -32,7 +32,7 @@ Une fois les fichiers sélectionnés, une boîte de dialogue de confirmation s�
 
 Une fois tous les fichiers placés en file d’attente, cliquez sur **[!UICONTROL Charger]**.
 
-![Chargement de fichiers et de dossiers](assets/upload-browse-files-folders.png)
+![Chargement de fichiers et de dossiers](assets/upload-files.png)
 
 *Image : avant de charger les ressources sélectionnées, vous pouvez ajouter ou supprimer des ressources de la file d’attente.*
 
@@ -48,13 +48,13 @@ Pour suivre la progression du chargement, cliquez sur l’option **[!UICONTROL P
 
 Pour afficher un sous-ensemble de ressources en fonction de la progression ou du statut du chargement, utilisez le filtre **[!UICONTROL Progression du chargement]** dans la barre latérale. Les différents filtres sont destinés à afficher toutes les ressources, les chargements terminés, les chargements en cours, les ressources mises en file d’attente à charger, les chargements suspendus, les ressources en double et les ressources dont le chargement a échoué.
 
-![Filtrage de la progression du chargement en fonction du statut du chargement](assets/filter-upload-progress.png)
+![Filtrage de la progression du chargement en fonction du statut du chargement](assets/filter-progress.png)
 
 *Image : filtrez les ressources que vous avez tenté de charger en fonction de leur statut de chargement ou de la progression du chargement.*
 
 Immédiatement après le chargement des ressources, [!DNL Assets view] les traite pour générer des miniatures et traiter les métadonnées. Le traitement de nombreuses ressources prend du temps. Si aucune miniature n’apparaît et qu’un message de traitement s’affiche sur la miniature de l’espace réservé, vérifiez à nouveau le dossier au bout de quelques minutes. Pendant le traitement, [!DNL Assets view] génère les rendus, ajoute des balises intelligentes et indexe les détails de la ressource pour la recherche.
 
-![Les ressources sont des processus au chargement et la mosaïque affiche le traitement](assets/upload-processing.png)
+![Les ressources sont des processus au chargement et la mosaïque affiche le traitement](assets/upload-process.png)
 
 *Image : les ressources chargées affichent le statut de traitement sur la mosaïque qui est traitée.*
 
@@ -70,17 +70,17 @@ Immédiatement après le chargement des ressources, [!DNL Assets view] les trait
 
 Si le chargement d’une ressource prise en charge échoue pour une raison quelconque, cliquez sur **[!UICONTROL Réessayer]** dans le volet [!UICONTROL Progression du chargement].
 
-![Reprise d’un chargement ayant échoué](assets/upload-retry.png)
+![Reprise d’un chargement ayant échoué](assets/upload-failed.png)
 
 *Image : réessayez si le chargement d’un fichier pris en charge échoue pour une raison quelconque.*
 
 Si vous tentez de charger des ressources en double, elles ne seront chargées que lorsque vous aurez explicitement confirmé le chargement. Dans un premier temps, le chargement de ressources en double s’affiche comme ayant échoué. Pour résoudre ce problème, vous pouvez simplement créer une nouvelle version, supprimer et remplacer les ressources existantes, ou créer un doublon en renommant la ressource. Vous pouvez résoudre ces échecs une ressource à la fois ou les résoudre ensemble pour tous les doublons ayant échoué.
 
-![Gestion des ressources en double une à la fois](assets/uploads-manage-duplicates.png)
+![Gestion des ressources en double une à la fois](assets/duplicate-new.png)
 
 *Image : pour les ressources en double dont le chargement échoue par défaut, gérez leurs chargements un par un.*
 
-![Gérer en une fois tous les chargements ayant échoué](assets/upload-progress-manage-failed-uploads.png)
+![Gérer en une fois tous les chargements ayant échoué](assets/manage-duplicate.png)
 
 *Image : pour les ressources en double qui ne parviennent pas à se charger par défaut, gérez en une fois le chargement de toutes les ressources.*
 
@@ -98,7 +98,7 @@ Les utilisateurs peuvent supprimer individuellement des ressources ou des dossie
 
 * Utilisez l’option disponible dans la miniature d’une ressource ou d’un dossier.
 
-  ![Options de gestion d’une ressource dans la miniature de la ressource](assets/options-on-thumbnail.png)
+  ![Options de gestion d’une ressource dans la miniature de la ressource](assets/delete-new.png)
 
   *Image : les actions relatives aux fichiers et aux dossiers sont disponibles sur la mosaïque de la ressource ou du dossier.*
 
@@ -112,4 +112,4 @@ Les utilisateurs peuvent supprimer individuellement des ressources ou des dossie
 
 * Faites des commentaires sur la documentation en utilisant l’option [!UICONTROL Modifier cette page] ![modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![créer un problème GitHub](assets/do-not-localize/github-issue.png) disponible dans la barre latérale droite.
 
-* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr#support).
+* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&lang=fr#support).
