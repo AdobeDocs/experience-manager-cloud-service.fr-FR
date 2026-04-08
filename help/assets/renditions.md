@@ -5,10 +5,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Asse
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: ae834c77b2f2a12cac3dde132a2357d72353cb55
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 2%
+source-wordcount: '707'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ Les rendus sont classés comme statiques et dynamiques, chaque type présentant 
 ## Rendus statiques {#static-renditions}
 
 Les rendus statiques sont des versions prégénérées de ressources numériques, généralement créées lors de l’ingestion ou de la modification de ressources. Ces rendus sont optimisés pour des objectifs et des plateformes spécifiques, tels que des miniatures web, des formats compatibles avec les appareils mobiles pour le responsive design ou des versions haute résolution pour l’impression, afin d’assurer une expérience efficace et cohérente.
-Découvrez comment [&#x200B; afficher et télécharger des rendus statiques &#x200B;](#view-and-download-static-renditions) dans Experience Manager Assets.
+Découvrez comment [ afficher et télécharger des rendus statiques ](#view-and-download-static-renditions) dans Experience Manager Assets.
 
 ### Affichage et téléchargement des rendus statiques{#view-and-download-static-renditions}
 
@@ -50,14 +50,14 @@ Ces rendus permettent aux entreprises de fournir des expériences personnalisée
    * [Paramètres d’image prédéfinis](/help/assets/dynamic-media/managing-image-presets.md)
 
   Vous pouvez [changer de vue](/help/assets/assets-view-introduction.md#how-to-access-assets-view) ultérieurement pour prévisualiser les rendus dynamiques dans la vue Assets.
-* Publiez des ressources dans Dynamic Media pour rendre les rendus Dynamic Media disponibles dans la vue Assets. Pour plus d’informations, voir [Publication d’Assets dans AEM et Dynamic Media](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm).
+* Publiez des ressources dans Dynamic Media pour rendre les rendus Dynamic Media disponibles dans la vue Assets. Pour plus d’informations, voir [Publication d’Assets dans AEM et Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm).
 
 
 ### Affichage et téléchargement des rendus Dynamic Media {#view-download-dm-renditions}
 
 Pour afficher ou télécharger des rendus dynamiques d’images dans Experience Manager Assets, procédez comme suit :
 
-1. Accédez à **[!UICONTROL Gestion Assets]** > **[!UICONTROL Assets]**.
+1. Accédez à **[!UICONTROL Gestion]** > **[!UICONTROL Assets]**.
 
 1. Accédez au dossier de ressources approprié.
 
@@ -71,25 +71,27 @@ Pour afficher ou télécharger des rendus dynamiques d’images dans Experience 
 1. Sélectionnez le rendu à prévisualiser et cliquez sur **Copier l’URL** pour copier l’URL du rendu sélectionné. Cliquez sur **Télécharger le rendu** pour télécharger les rendus des ressources d’image.
 1. Sélectionnez le rendu de recadrage intelligent à prévisualiser, puis cliquez sur **Copier l’URL** pour copier l’URL du rendu sélectionné.
 1. Cliquez sur ![icône de téléchargement](assets/do-not-localize/download-icon.png) pour télécharger tous les rendus de recadrage intelligent disponibles sous la forme d’un seul fichier zip.
-   ![icône de téléchargement](/help/assets/assets/smartcrop-rendition.png)
+   ![icône de téléchargement](/help/assets/assets/download-op.png)
 
    >[!NOTE]
    >
    >Ces rendus ne sont disponibles que pour les ressources d’image.
 
-## Rendus Dynamic Media avec les fonctionnalités OpenAPI {#dm-with-openapi-renditions}
+## Dynamic Media avec rendus des fonctionnalités OpenAPI {#dm-with-openapi-renditions}
 
 ### Avant de commencer {#prereqs-dm-with-openapi-renditions}
 
 * Vous devez être un utilisateur d’AEM Dynamic Media sous licence.
-* Assets doit être approuvé pour afficher Dynamic Media avec les rendus de fonctionnalités OpenAPI. Pour plus d’informations, voir [Approuver des ressources dans Experience Manager](/help/assets/approve-assets.md#copy-delivery-url-approved-assets)
+* Assets doit être approuvé pour une utilisation publique afin d’afficher Dynamic Media avec les rendus de fonctionnalités OpenAPI. Pour plus d’informations, voir [Approuver des ressources dans Experience Manager](/help/assets/approve-assets.md#copy-delivery-url-approved-assets)
 * Dynamic Media avec les fonctionnalités OpenAPI doit être activé sur votre instance AEM as a Cloud Service.
 
 ### Affichage des rendus Dynamic Media avec les fonctionnalités OpenAPI {#view-download-dm-with-openapi-renditions}
 
 1. Sélectionnez la ressource et cliquez sur **Détails**.
-1. Cliquez sur l’icône Dynamic Media disponible dans le volet de droite. Le panneau Dynamic Media affiche le rendu Dynamic Media avec les fonctionnalités OpenAPI pour tous les types de ressources.
-   ![icône de téléchargement](/help/assets/assets/dm-with-open-api-copy-url.png)
-1. Sélectionnez l’option **Dynamic Media avec OpenAPI**, puis cliquez sur **Copier l’URL** pour copier l’URL de diffusion de la ressource.
+1. Cliquez sur l’icône Dynamic Media disponible dans le panneau de droite. Le panneau Dynamic Media affiche les rendus de base, les rendus dynamiques et les rendus de recadrage intelligent pour les types de ressources pris en charge, le cas échéant.
+   ![icône de téléchargement](/help/assets/assets/new-new1.png)
+1. Sélectionnez **Rendu de base** et cliquez sur **Copier l’URL** pour copier l’URL de diffusion de la ressource ou cliquez sur **Télécharger le rendu** pour télécharger la ressource.
 
+Si les fonctionnalités Scene7 (Dynamic Media) et Dynamic Media avec OpenAPI sont activées pour le référentiel, une option de basculement est disponible dans l’interface utilisateur pour basculer entre les deux. Les rendus affichés et les URL générées sont mis à jour en fonction de la configuration sélectionnée.
 
+![option de basculement](/help/assets/assets/new-new2.png)
