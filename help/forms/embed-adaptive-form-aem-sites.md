@@ -212,7 +212,7 @@ Pour incorporer un formulaire adaptatif existant dans une page Sites :
 
 1. Ouvrez la page AEM Sites en mode d’édition.
 1. Faites glisser et déposez le composant Forms adaptatif - Incorporer (v2)**[!UICONTROL de l’explorateur de composants vers la page Sites.]**
-1. Sélectionnez le composant Forms adaptative - Incorporer **[!UICONTROL sur la page Sites et sélectionnez]** Propriétés du conteneur de formulaires adaptatifs![ sur la barre d’actions. ](/help/forms/assets/configure-icon.svg) La boîte de dialogue **[!UICONTROL Modifier le Forms adaptatif - Incorporer (v2)]** s’ouvre.
+1. Sélectionnez le composant Forms adaptative - Incorporer **[!UICONTROL sur la page Sites et sélectionnez]** Propriétés du conteneur de formulaires adaptatifs![&#x200B; sur la barre d’actions. &#x200B;](/help/forms/assets/configure-icon.svg) La boîte de dialogue **[!UICONTROL Modifier le Forms adaptatif - Incorporer (v2)]** s’ouvre.
 1. Recherchez et sélectionnez le formulaire adaptatif à incorporer dans le **[!UICONTROL chemin de la ressource]**.
 1. Enregistrez les paramètres. Le formulaire adaptatif est maintenant incorporé à la page.
 
@@ -226,7 +226,7 @@ Vous pouvez également améliorer l’accessibilité de vos formulaires en les i
 
 1. Ouvrez un fragment d’expérience en mode d’édition.
 1. Faites glisser le composant Forms adaptative - Incorporer (v2)**[!UICONTROL depuis l’explorateur de composants et déposez-le dans le fragment d’expérience.]**
-1. Sélectionnez le composant Forms adaptative - Incorporer **[!UICONTROL dans le fragment d’expérience et sélectionnez]** Propriétés du conteneur de formulaires adaptatifs![ dans la barre d’actions. ](/help/forms/assets/configure-icon.svg) La boîte de dialogue **[!UICONTROL Modifier le Forms adaptatif - Incorporer (v2)]** s’ouvre.
+1. Sélectionnez le composant Forms adaptative - Incorporer **[!UICONTROL dans le fragment d’expérience et sélectionnez]** Propriétés du conteneur de formulaires adaptatifs![&#x200B; dans la barre d’actions. &#x200B;](/help/forms/assets/configure-icon.svg) La boîte de dialogue **[!UICONTROL Modifier le Forms adaptatif - Incorporer (v2)]** s’ouvre.
 1. Recherchez et sélectionnez le formulaire adaptatif à incorporer dans le **[!UICONTROL chemin de la ressource]**.
 1. Enregistrez les paramètres. Le formulaire adaptatif est maintenant incorporé au fragment d’expérience.
 
