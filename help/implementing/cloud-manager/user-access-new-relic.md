@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 087285bf1023f844fe8d63817e0202276e01c411
+source-git-commit: 5f25d73203fea21122a8f77b82fcfa6383561001
 workflow-type: tm+mt
-source-wordcount: '2274'
-ht-degree: 27%
+source-wordcount: '2303'
+ht-degree: 23%
 
 ---
 
@@ -21,7 +21,7 @@ Découvrez le service de surveillance des performances de l’application New R
 
 Adobe accorde une importance considérable à la surveillance, la disponibilité et les performances de votre application. AEM as a Cloud Service permet d’accéder à la surveillance New Relic One, offrant ainsi aux équipes une visibilité complète sur les mesures de performances du système et de l’environnement dans le cadre de l’offre de produit standard.
 
-Ce document explique comment gérer l’accès aux fonctionnalités de surveillance des performances des applications (APM) New Relic One dans les environnements AEM as a Cloud Service. Une gestion efficace de ces fonctionnalités permet d’obtenir des performances optimales et d’optimiser les avantages d’AEM as a Cloud Service.
+Cet article explique comment gérer l’accès aux fonctionnalités de surveillance des performances des applications (APM) New Relic One dans les environnements AEM as a Cloud Service. Une gestion efficace de ces fonctionnalités permet d’obtenir des performances optimales et d’optimiser les avantages d’AEM as a Cloud Service.
 
 Lors de la création d’un programme de production, le sous-compte New Relic One associé à votre programme AEM as a Cloud Service est automatiquement créé. [Ce sous-compte doit être activé](#activate-sub-account) pour commencer l’ingestion de données.
 
@@ -45,15 +45,17 @@ Pour un programme nouvellement créé, un sous-compte New Relic One est créé p
 >
 >Un utilisateur doté du rôle **Propriétaire de l’entreprise** doit être connecté pour gérer le sous-compte New Relic One.
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
+**Pour activer votre sous-compte New Relic One :**
 
-1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, cliquez sur le programme pour lequel vous souhaitez gérer vos utilisateurs New Relic One.
+1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com).
+   1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
+   1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
+1. Sélectionnez l’organisation de votre choix.
+1. Sur la console **Mes programmes**, cliquez sur un programme pour lequel vous souhaitez gérer vos utilisateurs New Relic One.
+1. Dans le menu de gauche, sous **Services**, cliquez sur ![icône Données ou icône Environnements](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environnements**.
+1. Sur la page Environnements , près du coin supérieur droit, cliquez sur ![Icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), puis sur **Activer New Relic**.
 
-1. Au bas de la vignette **Environnements** sur la page de présentation du programme, cliquez sur ![Icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) et sélectionnez **Activer New Relic**.
-
-   ![Gérer les utilisateurs](assets/newrelic-activate-sub-account.png)
-
-   * Vous pouvez également accéder à l’option **Gérer les utilisateurs**. Dans la partie supérieure de l’écran **Environnements** de votre programme, cliquez sur ![Icône en forme d’icône en plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
+   ![Activer New Relic](/help/implementing/cloud-manager/assets/new-relic/new-relic-activate.png)
 
 1. [Exécutez un pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) pour le même environnement jusqu’à la fin réussie de l’activation du sous-compte.
 
@@ -61,31 +63,36 @@ Lorsque le sous-compte est désactivé, il n’y a aucune ingestion de données.
 
 ## Gestion des utilisateurs New Relic One {#manage-users}
 
-Suivez ces étapes pour définir les utilisateurs de votre sous-compte New Relic One relatifs à votre programme AEM as a Cloud Service.
+Vous pouvez définir les utilisateurs de votre sous-compte New Relic One associés à votre programme AEM as a Cloud Service.
 
 >[!NOTE]
 >
 >Un utilisateur doté du rôle **Propriétaire de l’entreprise** ou **Responsable de déploiement** doit être connecté pour gérer les utilisateurs New Relic One.
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
+**Pour gérer les utilisateurs de New Relic One, procédez comme suit**
 
-1. Cliquez sur le programme pour lequel vous souhaitez gérer vos utilisateurs New Relic One.
+1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com).
+   1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
+   1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
+1. Sélectionnez l’organisation de votre choix.
+1. Sur la console **Mes programmes**, cliquez sur un programme pour lequel vous souhaitez gérer vos utilisateurs New Relic One.
+1. Dans le menu de gauche, sous **Services**, cliquez sur ![icône Données ou icône Environnements](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environnements**.
+1. Sur la page Environnements , près du coin supérieur droit, cliquez sur ![Icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), puis sur **Gérer les utilisateurs**.
 
-1. Au bas de la vignette **Environnements** sur la page de présentation du programme, cliquez sur ![Icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) et sélectionnez **Gérer les utilisateurs**.
+   ![Gestion des utilisateurs New Relic](/help/implementing/cloud-manager/assets/new-relic/new-relic-manage-users.png)
 
-   ![Gérer les utilisateurs](assets/newrelic-manage-users.png)
+1. Dans la boîte de dialogue **Gérer les utilisateurs New Relic**, procédez comme suit :
 
-   * Vous pouvez également accéder à l’option **Gérer les utilisateurs**. Dans la partie supérieure de l’écran **Environnements** de votre programme, cliquez sur ![Icône en forme d’icône en plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
-
-1. Dans la boîte de dialogue **Gérer les utilisateurs New Relic**, saisissez le prénom et le nom de l’utilisateur que vous souhaitez ajouter, puis cliquez sur le bouton **Ajouter**. Répétez cette étape pour tous les utilisateurs que vous souhaitez ajouter.
+   * Saisissez le prénom et le nom de l’utilisateur que vous souhaitez ajouter
+   * Saisir l’adresse e-mail associée
+   * Cliquez sur ![Ajouter une icône](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **Ajouter**. Répétez cette étape pour chaque utilisateur que vous souhaitez ajouter.
+   * Cliquez sur ![Icône Supprimer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) pour supprimer un utilisateur.
 
    ![Ajouter des utilisateurs](assets/newrelic-add-users.png)
 
-1. Pour supprimer un utilisateur New Relic One, cliquez sur le bouton de suppression à l’extrémité droite de la ligne qui le représente.
+1. Cliquez sur **Enregistrer**.
 
-1. Cliquez sur **Enregistrer** pour créer les utilisateurs.
-
-Une fois les utilisateurs définis, New Relic envoie un e-mail de confirmation à chaque utilisateur auquel vous avez accordé l’accès afin que l’utilisateur puisse terminer le processus de configuration et se connecter.
+Une fois les utilisateurs définis, New Relic envoie un e-mail de confirmation à chacun d’eux. De là, ils peuvent terminer le processus d’activation et se connecter.
 
 >[!NOTE]
 >
@@ -111,27 +118,27 @@ Une fois qu’un compte utilisateur New Relic One est créé, comme décrit dans
 
 Si vous ne recevez pas d’e-mail de confirmation de la part de New Relic, consultez la [section de dépannage](#troubshooting).
 
-## Accéder à New Relic One {#accessing-new-relic}
+## Ouvrir New Relic One {#accessing-new-relic}
 
-Une fois que vous avez [activé votre compte New Relic](#activate-account), vous pouvez accéder à New Relic One par le biais de Cloud Manager ou directement.
+Une fois que vous avez [activé votre compte New Relic](#activate-account), vous pouvez ouvrir New Relic One par le biais de Cloud Manager ou directement.
 
-**Pour accéder à New Relic One par le biais de Cloud Manager :**
+**Pour ouvrir New Relic One au moyen de Cloud Manager :**
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
+1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com).
+   1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
+   1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
+1. Sélectionnez l’organisation de votre choix.
+1. Sur la console **Mes programmes**, cliquez sur un programme pour lequel vous souhaitez ouvrir New Relic One.
+1. Dans le menu de gauche, sous **Services**, cliquez sur ![icône Données ou icône Environnements](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environnements**.
+1. Sur la page Environnements , près du coin supérieur droit, cliquez sur ![Icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), puis sur **Ouvrir New Relic**.
 
-1. Cliquez sur le programme pour lequel vous souhaitez accéder à New Relic One.
-
-1. Au bas de la vignette **Environnements** sur la page de présentation du programme, cliquez sur ![Icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) et sélectionnez **Ouvrir New Relic**.
-
-   ![Gérer les utilisateurs](assets/newrelic-access.png)
-
-   * Vous pouvez également accéder à New Relic. Dans la partie supérieure de l’écran **Environnements** de votre programme, cliquez sur ![Icône en forme d’icône en plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
+   ![Ouvrir New Relic](/help/implementing/cloud-manager/assets/new-relic/new-relic-open-new-relic.png)
 
 1. Dans le nouvel onglet du navigateur qui s’ouvre, connectez-vous à New Relic One.
 
-**Pour accéder directement à New Relic One, procédez comme suit**
+**Pour ouvrir New Relic One directement, procédez comme suit :**
 
-1. Accédez à la page de connexion de [&#128279;](https://login.newrelic.com/login).
+1. Accédez à la page de connexion de [](https://login.newrelic.com/login).
 
 1. Connectez-vous à New Relic One.
 
@@ -149,11 +156,11 @@ Cloud Manager envoie automatiquement les dispositifs de suivi des modifications 
 
 <!-- See also [Introduction to change tracking](https://docs.newrelic.com/docs/change-tracking/overview/) and [Record and view deployments](https://docs.newrelic.com/docs/apm/apm-ui-pages/events/record-deployments/). -->
 
-### Pipelines et flux pris en charge {#supported-pipelines}
+### Pipelines et workflows pris en charge {#supported-pipelines}
 
-Les pipelines Cloud Manager ci-dessous et les deux derniers types de flux génèrent des dispositifs de suivi des modifications dans New Relic One :
+Les pipelines Cloud Manager ci-dessous et les deux derniers types de workflows génèrent des suivis de modifications dans New Relic One :
 
-| Type de pipeline/flux | Description |
+| Type de pipeline/workflow | Description |
 |---|---|
 | **Full stack (déploiement CI_CD)** | Exécutions de pipeline full stack. La trace inclut le nom du pipeline et l’ID d’exécution. |
 | **Configuration de niveau web** | Exécutions du pipeline de configuration de niveau web. La trace inclut le nom du pipeline et l’ID d’exécution. |
@@ -197,7 +204,7 @@ Une fois l’exécution d’un pipeline prise en charge terminée, vous pouvez a
 
    Le tableau **Modifier les événements** affiche chaque déploiement avec sa date et son heure, ainsi que sa description de version.
 
-   ![Option de suivi des modifications avec le tableau Modifier les événements qui affiche &#x200B;](/help/implementing/cloud-manager/assets/new-relic/new-relic-change-tracking.png)
+   ![Option de suivi des modifications avec le tableau Modifier les événements qui affiche ](/help/implementing/cloud-manager/assets/new-relic/new-relic-change-tracking.png)
 
 >[!TIP]
 >
@@ -221,7 +228,7 @@ Si vous avez été ajouté en tant qu’utilisateur New Relic One, comme décrit
 
 1. New Relic vous envoie un e-mail contenant un lien pour confirmer le compte.
 
-Si vous avez terminé le processus d’inscription et que vous ne parvenez pas à vous connecter à votre compte en raison de messages d’erreur relatifs à votre e-mail ou à votre mot de passe, enregistrez un ticket d’assistance par le biais de [&#128279;](https://adminconsole.adobe.com/).
+Si vous avez terminé le processus d’inscription et que vous ne parvenez pas à vous connecter à votre compte en raison de messages d’erreur relatifs à votre e-mail ou à votre mot de passe, enregistrez un ticket d’assistance par le biais de [](https://adminconsole.adobe.com/).
 
 Si vous ne recevez pas d’e-mail de New Relic, procédez comme suit :
 
@@ -239,9 +246,9 @@ Si vous ne recevez pas d’e-mail de New Relic, procédez comme suit :
 >
 >Si aucune activité **connexion utilisateur** n’est détectée dans votre sous-compte New Relic One pendant 30 jours ou plus, l’agent APM est arrêté. Les données ne sont pas envoyées d’AEM Cloud Service vers New Relic. *Les données ne sont pas envoyées à nouveau tant que votre sous-compte n’est pas réactivé.*
 >
->Suivez les mêmes étapes que celles de la section [&#x200B; Activer votre sous-compte New Relic One &#x200B;](#activate-sub-account) de ce document pour réactiver votre sous-compte New Relic One.
+>Suivez les mêmes étapes que celles de la section [ Activer votre sous-compte New Relic One ](#activate-sub-account) de ce document pour réactiver votre sous-compte New Relic One.
 
-Pour obtenir de l’aide ou des conseils supplémentaires sur les offres New Relic One pour votre programme AEM as a Cloud Service, ouvrez un ticket de support au moyen du Portail d’assistance AEM [&#128279;](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
+Pour obtenir de l’aide ou des conseils supplémentaires sur les offres New Relic One pour votre programme AEM as a Cloud Service, ouvrez un ticket de support au moyen du Portail d’assistance AEM [](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
 
 ## Questions fréquentes {#faqs}
 
@@ -263,9 +270,9 @@ Remarque :
 
 +++
 
-+++Adobe envoie-t-il des notifications d’alerte depuis New Relic One ?**&#x200B;**
++++Adobe envoie-t-il des notifications d’alerte depuis New Relic One ?****
 
-Adobe fournit un accès à New Relic One à des fins d’observabilité uniquement et ne l’utilise pas pour les alertes client ou opérationnelles internes. Les notifications relatives aux incidents sont envoyées à l’aide de [&#x200B; profils de notification utilisateur &#x200B;](/help/journey-onboarding/notification-profiles.md).
+Adobe fournit un accès à New Relic One à des fins d’observabilité uniquement et ne l’utilise pas pour les alertes client ou opérationnelles internes. Les notifications relatives aux incidents sont envoyées à l’aide de [ profils de notification utilisateur ](/help/journey-onboarding/notification-profiles.md).
 +++
 
 +++**Qui peut accéder aux données du service cloud New Relic One ?**
@@ -294,5 +301,5 @@ L’assistance Adobe surveille AEM as a Cloud Service avec New Relic One et d’
 
 +++**L&#39;agent APM pour mon compte New Relic One est arrêté. Que s&#39;est-il passé ?**
 
-[Les agents APM sont arrêtés](#limitations) si aucune activité n’est détectée pendant 30 jours ou plus. Suivez les mêmes étapes que celles de la section [&#x200B; Activer votre sous-compte New Relic One &#x200B;](#activate-sub-account) de ce document pour réactiver votre sous-compte New Relic One.
+[Les agents APM sont arrêtés](#limitations) si aucune activité n’est détectée pendant 30 jours ou plus. Suivez les mêmes étapes que celles de la section [ Activer votre sous-compte New Relic One ](#activate-sub-account) de ce document pour réactiver votre sous-compte New Relic One.
 +++
