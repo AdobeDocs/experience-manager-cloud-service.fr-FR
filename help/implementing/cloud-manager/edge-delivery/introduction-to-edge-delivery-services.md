@@ -4,7 +4,7 @@ description: Découvrez comment diffuser vos projets Cloud Manager à l’aide 
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fc9f7f10d1797bda5f31d82005b0afbb6ea1e644
+source-git-commit: 96e80f49c6e01a266aa5cf1a69cd67045277c8c6
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 68%
@@ -48,16 +48,16 @@ Les expériences web modernes nécessitent une diffusion hautement performante, 
 
 Ces fonctionnalités permettent aux entreprises d’adopter une diffusion moderne de manière incrémentielle, sans sacrifier les workflows existants.
 
-### Options de création pour les sites Edge Delivery
+### Options de création pour les sites Edge Delivery {#authoring-options-eds}
 
 Lorsque vous créez un site Edge Delivery dans Cloud Manager, vous pouvez choisir l’approche de création souhaitée :
 
 * Création basée sur des documents : créez du contenu dans Google Drive ou SharePoint. Aucun environnement AEM n’est requis.
 * Création AEM : créez du contenu dans AEM à l’aide de l’éditeur universel. Cette méthode nécessite un environnement de création AEM. Avec cette option, aucun niveau de publication n’est requis lorsqu’Edge Delivery gère la diffusion de contenu.
 
-Les entreprises peuvent choisir entre ces approches ou les utiliser de manière incrémentielle, en fonction de leurs préférences de workflow. Voir [&#x200B; Création de votre premier site Edge Delivery en un clic](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md).
+Les entreprises peuvent choisir entre ces approches ou les utiliser de manière incrémentielle, en fonction de leurs préférences de workflow. Voir [ Création de votre premier site Edge Delivery en un clic](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md).
 
-### Niveau de publication flexible
+### Niveau de publication flexible {#flexible-publish-tier}
 
 Cloud Manager vous permet de configurer si un niveau de publication est configuré pour les environnements de votre programme. Toutes les architectures ne nécessitent pas de niveau de publication, comme illustré dans le tableau suivant :
 
@@ -83,7 +83,7 @@ Si vous disposez d’une licence Edge Delivery Services (EDS), vous pouvez utili
 Si vous choisissez d’utiliser votre CDN (c’est-à-dire un CDN non géré par Adobe), indépendamment de votre licence Edge Delivery Services, vous devez le configurer sur la plateforme `aem.live`. Consultez [Configuration de CDN BYO](https://www.aem.live/docs/byo-cdn-setup).
 
 
-## À propos de l’ajout d’Edge Delivery Services à un programme de production ou à un programme sandbox
+## À propos de l’ajout d’Edge Delivery Services à un programme de production ou à un programme sandbox {#about-adding-eds-to-prod-sandbox}
 
 Vous pouvez ajouter Edge Delivery Services de différentes manières en fonction de la façon dont vous avez commencé votre projet ou de quand vous souhaitez créer le site.
 
@@ -123,7 +123,7 @@ La **liste de tâches Edge Delivery** est une liste de contrôle de tâches d’
 | 8 | Configuration de la validation push | Voir [Configuration de la validation push pour un site Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 9 | Mise en production | Voir [Liste de contrôle de mise en production](https://www.aem.live/docs/go-live-checklist). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441563?captions=fre_fr&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Soumettre un ticket d’assistance {#eds-support-ticket}
 
