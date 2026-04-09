@@ -4,10 +4,10 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: e035c1c27f652af231034588eb1359354182dcb0
+source-git-commit: 881e7788c2ae8fd01fbe2c0af08228fd96179733
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 62%
+source-wordcount: '562'
+ht-degree: 42%
 
 ---
 
@@ -41,6 +41,17 @@ L’activation des fonctionnalités de la version 2026.4.0 fournit l’ensemble
 * ASSETS-65187 : aperçu au format CSV dans le cloud lorsque les données de colonne contiennent des virgules d’échappement.
 * ASSETS-63441 : assurez-vous que tous les utilisateurs sont autorisés à lire la configuration Assets Omnisearch.
 * SITES-40095 : éditeur de métadonnées : références de fragment de contenu local au-delà de 10 entrées.
+
+#### AEM Guides {#guides-25194}
+
+* GUIDES-38412 : lors de la modification d’un fichier de `(*.sch)` Schematron et de l’utilisation de la fonction de recherche et de remplacement, le panneau de recherche et de remplacement s’affiche partiellement hors écran en bas, empêchant l’accès à ses champs et contrôles de saisie.
+* GUIDES-37806 : lorsque la même rubrique est réutilisée sur plusieurs mappages avec des paramètres prédéfinis conditionnels différents, la publication du dernier mappage sur Salesforce remplace le contenu de la rubrique, ce qui entraîne l&#39;affichage de données incorrectes aux utilisateurs de mappages précédemment publiés.
+* GUIDES-39394 : lorsqu’une image initialement gérée en tant que ressource spécifique à la langue avec une version spécifique (par exemple, sous `/en/`) est déplacée vers un dossier global avec une version mise à jour et que l’exportation de la ligne de base est effectuée, la nouvelle ligne de base continue à référencer des versions obsolètes spécifiques à la langue de cette image, ce qui entraîne l’échec de l’exportation de la ligne de base.
+* GUIDES-39054 : lors de la création d’une ligne de base dynamique, l’éditeur ne répond parfois plus en raison de plusieurs requêtes d’API simultanées, ce qui interrompt toutes les autres opérations.
+* GUIDES-37781 : lors de l’affectation d’un utilisateur à une tâche de révision, la liste déroulante répertorie tous les utilisateurs au lieu de seulement ceux associés aux projets sélectionnés, ce qui entraîne la non-validité des options utilisateur.
+* GUIDES-39385 : Lors de l’ouverture d’un rapport pour une carte, le chargement du panneau Filtres est retardé.
+
+Pour plus d’informations sur les fonctionnalités nouvelles et améliorées, ainsi que sur les problèmes résolus dans la version, consultez la [Feuille de route de publication d’Experience Manager Guides](https://experienceleague.adobe.com/fr/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ### Problèmes connus {#known-issues-25194}
 
