@@ -4,10 +4,10 @@ description: Découvrez les événements envoyés par l’éditeur universel que
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Developer
-source-git-commit: 9adf2bc4f9f25ee7fc0a39b0f1a3ae9e45fce7d2
+source-git-commit: 3e6487b6d37f698a91b07f1ca02aec140d14d1a2
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 94%
+source-wordcount: '580'
+ht-degree: 86%
 
 ---
 
@@ -229,6 +229,39 @@ La payload est vide pour cet événement.
 {
     details: {}
 }
+```
+
+### aue&amp;deux-points;parcourir {#navigate}
+
+La bibliothèque CORS de l’éditeur universel (`@aem-sites/universal-editor-cors`) distribue un événement `aue:navigate` annulable avant de relayer la navigation vers le shell de l’éditeur universel.
+
+La payload est l’URL de la cible de navigation.
+
+```json
+{
+      details: {
+          href: string;           // URL of the navigation target, modifiable by listeners
+      }
+  }
+```
+
+Cet événement permet aux scripts de page de :
+
+* **Modifiez** l’URL de navigation (par exemple, ajoutez `.html` extension) en modifiant `event.detail.href`.
+* **Annuler** navigation entièrement via `event.preventDefault()`.
+
+Exemple d’utilisation :
+
+```javascript
+// Transform the navigation URL
+document.addEventListener("aue:navigate", (e) => {
+  e.detail.href = e.detail.href + ".html";
+});
+
+// Cancel navigation entirely
+document.addEventListener("aue:navigate", (e) => {
+  e.preventDefault();
+});
 ```
 
 ## Écouteurs d’événements de secours {#fallback-listeners}
