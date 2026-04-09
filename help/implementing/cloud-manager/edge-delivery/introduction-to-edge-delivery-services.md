@@ -55,7 +55,7 @@ Lorsque vous créez un site Edge Delivery dans Cloud Manager, vous pouvez choisi
 * Création basée sur des documents : créez du contenu dans Google Drive ou SharePoint. Aucun environnement AEM n’est requis.
 * Création AEM : créez du contenu dans AEM à l’aide de l’éditeur universel. Cette méthode nécessite un environnement de création AEM. Avec cette option, aucun niveau de publication n’est requis lorsqu’Edge Delivery gère la diffusion de contenu.
 
-Les entreprises peuvent choisir entre ces approches ou les utiliser de manière incrémentielle, en fonction de leurs préférences de workflow. Voir [ Création de votre premier site Edge Delivery en un clic](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md).
+Les entreprises peuvent choisir entre ces approches ou les utiliser de manière incrémentielle, en fonction de leurs préférences de workflow. Voir [&#x200B; Création de votre premier site Edge Delivery en un clic](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md).
 
 ### Niveau de publication flexible {#flexible-publish-tier}
 
