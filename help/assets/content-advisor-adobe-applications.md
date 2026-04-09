@@ -4,9 +4,10 @@ description: Content Advisor offre une expérience de découverte de contenu uni
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 feature: Collaboration
 role: User
-source-git-commit: 76bdd819634e170a1012cea5ec9f480f17db5130
+exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
+source-git-commit: 0938d8170a4af2fc19c065c72c97d45080a215c8
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1892'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ Le gestionnaire de contenu permet une découverte intelligente et contextuelle d
 
 * Accès à un environnement AEM Assets as a Cloud Service.
 
-* Accès à un environnement AEM Sites dans lequel vous avez créé des fragments de contenu.
+* Accès à un environnement AEM Sites avec des fragments de contenu créés (requis uniquement pour l’utilisation de fragments de contenu). Cela n’est pas nécessaire pour accéder aux ressources binaires ou à AEM Assets.
 
 ## Détection intelligente des ressources avec le gestionnaire de contenu {#intelligent-asset-discovery-content-advisor}
 
@@ -127,7 +128,7 @@ Cliquez sur l’icône ![icône d’aperçu](assets/do-not-localize/preview-icon
 
 ![Prévisualisation des rendus Dynamic Media](assets/content-advisor-dm-preview.png)
 
-Cliquez sur **[!UICONTROL Ajouter des modificateurs]**, spécifiez un modificateur dans la zone de texte, puis appuyez sur Entrée pour appliquer la transformation à tous les rendus de ressources en temps réel. De même, vous pouvez ajouter plusieurs modificateurs aux rendus et prévisualiser ces transformations. Cliquez sur le nom du rendu, puis sur **[!UICONTROL Sélectionner]** pour rendre le rendu disponible dans votre application hôte. Le rendu après l’application de ces modificateurs n’est pas enregistré. Consultez la liste des modificateurs pris en charge pour [Dynamic Media Scene7](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) et [Dynamic Media avec OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
+Cliquez sur **[!UICONTROL Ajouter des modificateurs]**, spécifiez un modificateur dans la zone de texte, puis appuyez sur Entrée pour appliquer la transformation à tous les rendus de ressources en temps réel. De même, vous pouvez ajouter plusieurs modificateurs aux rendus et prévisualiser ces transformations. Cliquez sur le nom du rendu, puis sur **[!UICONTROL Sélectionner]** pour rendre le rendu disponible dans votre application hôte. Le rendu après l’application de ces modificateurs n’est pas enregistré. Consultez la liste des modificateurs pris en charge pour [Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) et [Dynamic Media avec OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
 ### Découverte de fragments de contenu {#content-fragments-discovery-content-advisor}
 
@@ -199,4 +200,3 @@ Le tableau suivant illustre la prise en charge des fonctionnalités de la foncti
 | AEM Sites (création de documents) | ✓ | ✓ | ✓ | − |
 | AEM Sites (éditeur de fragment de contenu) | ✓ | ✓ | ✓ | − |
 | AEM Sites (éditeur universel) | ✓ | ✓ | ✓ | − |
-

@@ -5,9 +5,9 @@ feature: Metadata
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: e7c80792-f4db-4604-a51f-b20f066b2c1b
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 0938d8170a4af2fc19c065c72c97d45080a215c8
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1198'
 ht-degree: 29%
 
 ---
@@ -145,9 +145,6 @@ Pour modifier un formulaire de métadonnées existant, procédez comme suit :
 
    ![Sortie de formulaire de métadonnées en cascade](assets/cascading-metadata-form-output.png)
 
->[!NOTE]
-> 
->Pour obtenir un accès anticipé aux métadonnées en cascade sur votre compte Assets View, [créez et envoyez un dossier de support client Adobe](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
 
 ## Étapes suivantes {#next-steps}
 
@@ -157,4 +154,4 @@ Pour modifier un formulaire de métadonnées existant, procédez comme suit :
 
 * Faites des commentaires sur la documentation en utilisant l’option [!UICONTROL Modifier cette page] ![modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![créer un problème GitHub](assets/do-not-localize/github-issue.png) disponible dans la barre latérale droite.
 
-* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr#support).
+* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&lang=fr#support).
