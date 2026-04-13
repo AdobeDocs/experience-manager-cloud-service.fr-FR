@@ -6,10 +6,10 @@ feature: Troubleshooting,Image Sets,Viewers
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 69f83da6eee02e0b1d116d71c5d0b022c91e3ba0
 workflow-type: tm+mt
-source-wordcount: '1150'
-ht-degree: 95%
+source-wordcount: '1260'
+ht-degree: 85%
 
 ---
 
@@ -200,7 +200,7 @@ Dans CRXDE Lite, procédez comme suit :
 1. Accédez au dossier `<sync-folder>/_CSS/_OOTB` dans votre dossier de synchronisation Dynamic Media (par exemple, `/content/dam/_CSS/_OOTB`).
 1. Recherchez le nœud de métadonnées de la ressource qui pose problème (par exemple, `<sync-folder>/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/`).
 1. Vérifiez que les propriétés `dam:scene7*` sont présentes. Si la ressource a été correctement synchronisée et publiée, `dam:scene7FileStatus` est défini sur **PublishComplete**.
-1. Essayez de demander l’illustration directement à partir de Dynamic Media en concaténant les valeurs des propriétés suivantes et des littéraux de chaîne :
+1. Essayez de demander l’illustration directement à partir de Dynamic Media en concaténant les valeurs des propriétés suivantes et des littéraux de chaîne :
 
    * `dam:scene7Domain`
    * `"is/content"`
@@ -220,6 +220,34 @@ Si les exemples de ressources ou l’illustration du paramètre prédéfini de l
 1. Sous Services cloud, accédez à la page Configuration de Dynamic Media, puis ouvrez la boîte de dialogue de configuration correspondant à la configuration S7 de Dynamic Media.
 1. N’effectuez aucune modification, sélectionnez **Enregistrer**.
 Cette sauvegarde a pour effet de déclencher à nouveau la logique pour créer et synchroniser les exemples de ressources, la feuille CSS du paramètre prédéfini de la visionneuse et l’illustration.
+
+### Problème : erreur #2046 lors de l’ouverture de l’onglet Bande passante et stockage {#error-2046-bandwidth-storage}
+
+**Débogage**
+
+![Erreur #2046 dans l’onglet Bande passante et stockage de Dynamic Media Classic](assets/2046-error.png)
+
+* Les utilisateurs rencontrent des #2046 d’erreur lors de l’ouverture de l’onglet Bande passante et stockage dans l’application de bureau Dynamic Media Classic (Scene7).
+* Le problème est dû à l’expiration d’un certificat de signature numérique dans un RSL (bibliothèque partagée d’exécution) mis en cache utilisé par le framework Adobe AIR.
+* L’échec se produit lors de la revalidation du certificat local.
+
+**Solution**
+
+Effacez le cache local pour forcer Adobe AIR à télécharger le RSL (bibliothèque partagée d’exécution) mis à jour.
+
+**macOS**
+
+1. Accédez à :
+   `~/Library/Caches/Adobe/Flash Player/AssetCache/<folder>/`
+2. Supprimez tous les fichiers `.swz` et `.heu`.
+
+**Windows**
+
+1. Accédez à :
+   `%APPDATA%\Adobe\Flash Player\AssetCache\<folder>\`
+2. Supprimez tous les fichiers à l’intérieur du dossier .
+
+Redémarrez l’application après avoir effacé le cache.
 
 ### Problème : l’aperçu de l’image ne se charge pas dans la création des paramètres prédéfinis de la visionneuse. {#image-preview-not-loading}
 
