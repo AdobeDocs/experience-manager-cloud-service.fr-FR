@@ -4,9 +4,9 @@ description: Guide de référence de l’interface et des fonctionnalités de la
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 95e3046fca3cc2ede57d9e1e9a4ff01a0ba566c3
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1220'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Les développeurs gardent le contrôle total sur les navires. Toutes les modific
 
 Après vous être connecté à la console à l’adresse [`aemcoder.adobe.io`,](https://aemcoder.adobe.io) vous accédez à l’écran d’accueil de la console.
 
-![Écran d’accueil de la console &#x200B;](assets/console-home.png)
+![Écran d’accueil de la console ](assets/console-home.png)
 
 ### Barre de menus {#menu-bar}
 
@@ -157,13 +157,19 @@ Lors de l’envoi des modifications, vous devez d’abord disposer de modificati
 
 ## Mode Paramètres {#settings-view}
 
-La vue Paramètres permet de gérer les paramètres de base de la console.
+La vue Paramètres permet de gérer les paramètres de base de la console. Elle est divisée en plusieurs sections.
 
 ![Vue Paramètres](assets/settings-view.png)
 
+Si vous apportez une modification à une valeur d’une section, cliquez sur **Enregistrer** pour enregistrer ces modifications dans la section concernée.
+
 * **Projet** vous permet d’afficher et de modifier les paramètres du projet, tels que la personnalisation de l’URL de la bibliothèque.
-* **Assistance** vous permet de demander de l’aide à l’équipe d’assistance d’AEM.
-* **Informations d’identification** vous permet de spécifier un jeton d’accès personnel pour Figma afin que la console [&#x200B; puisse accéder aux blocs de conception de votre projet](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration).
+   * **URL de bibliothèque** - Cette URL pointe vers un fichier library.json qui définit les blocs disponibles, leurs variantes et un exemple de contenu.
+   * **URL de base du site** - URL d’origine du site web en cours de migration
+* **Autorisations de l’agent** - Autoriser l’agent à accéder aux options de configuration
+   * **Autoriser LLM à accéder à admin.hlx.page en mon nom** - Lorsqu&#39;il est activé, l&#39;assistant d&#39;IA peut récupérer les configurations et les métadonnées du site à partir de Adobe Experience Manager à l&#39;aide de vos informations d&#39;identification IMS.
+   * **Jeton IMS personnalisé** - Vous pouvez fournir un jeton IMS personnalisé à utiliser à la place de votre jeton de session par défaut.
+* **Informations d’identification** vous permet de spécifier un jeton d’accès personnel pour Figma afin que la console [ puisse accéder aux blocs de conception de votre projet](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration).
    * Le jeton nécessite les portées en lecture seule suivantes :
       * `file_content:read`
       * `file_metadata:read`
@@ -173,4 +179,7 @@ La vue Paramètres permet de gérer les paramètres de base de la console.
       * `file_dev_resources:read`
       * `projects:read`
    * [Voir la documentation Figma](https://help.figma.com/hc/en-us/articles/8085703771159-Manage-personal-access-tokens) pour plus d’informations sur la configuration des jetons d’accès personnels.
-* **Réinitialiser l’espace de travail** rétablit l’état de départ de la console et toutes les modifications annulées ou annulées seront perdues.
+* **Assistance** résume les informations partagées avec l’équipe d’assistance d’Adobe lorsque vous effectuez une demande d’assistance.
+   * **Demande d’assistance** - Cliquez pour lancer une demande d’assistance auprès d’Adobe sans quitter la console.
+* **Zone dangereuse** contient des paramètres qui peuvent rétablir votre espace de travail.
+   * **Réinitialiser l’espace de travail** - Cliquez pour réinitialiser l’espace de travail à son état initial. Cette opération est irréversible.
