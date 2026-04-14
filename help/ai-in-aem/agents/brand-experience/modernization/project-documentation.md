@@ -51,11 +51,11 @@ Une fois les conditions préalables remplies, il vous suffit de demander à l’
 
 Vous pouvez enregistrer le PDF directement pour le fournir à vos équipes ou le charger dans le cadre du reste du contenu de la DA.
 
-![ Guide de l’administrateur ](assets/admin-guide.png)
+![&#x200B; Guide de l’administrateur &#x200B;](assets/admin-guide.png)
 
 >[!NOTE]
 >
->Si vous n’êtes pas autorisé à accéder à l’API d’administration Edge Delivery Services ou à l’option **Autoriser LLM à accéder à admin.hlx.page en mon nom** [ dans les paramètres de la console.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-view) n’est pas activé, l’agent génère la documentation en fonction de la base de code qui lui est accessible.
+>Si vous n’êtes pas autorisé à accéder à l’API d’administration Edge Delivery Services ou à l’option **Autoriser LLM à accéder à admin.hlx.page en mon nom** [&#x200B; dans les paramètres de la console.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-view) n’est pas activé, l’agent génère la documentation en fonction de la base de code qui lui est accessible.
 
 ## Résolution des problèmes {#troubleshooting}
 

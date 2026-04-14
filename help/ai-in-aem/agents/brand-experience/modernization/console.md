@@ -45,7 +45,7 @@ Les développeurs gardent le contrôle total sur les navires. Toutes les modific
 
 Après vous être connecté à la console à l’adresse [`aemcoder.adobe.io`,](https://aemcoder.adobe.io) vous accédez à l’écran d’accueil de la console.
 
-![Écran d’accueil de la console ](assets/console-home.png)
+![Écran d’accueil de la console &#x200B;](assets/console-home.png)
 
 ### Barre de menus {#menu-bar}
 
@@ -169,7 +169,7 @@ Si vous apportez une modification à une valeur d’une section, cliquez sur **E
 * **Autorisations de l’agent** - Autoriser l’agent à accéder aux options de configuration
    * **Autoriser LLM à accéder à admin.hlx.page en mon nom** - Lorsqu&#39;il est activé, l&#39;assistant d&#39;IA peut récupérer les configurations et les métadonnées du site à partir de Adobe Experience Manager à l&#39;aide de vos informations d&#39;identification IMS.
    * **Jeton IMS personnalisé** - Vous pouvez fournir un jeton IMS personnalisé à utiliser à la place de votre jeton de session par défaut.
-* **Informations d’identification** vous permet de spécifier un jeton d’accès personnel pour Figma afin que la console [ puisse accéder aux blocs de conception de votre projet](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration).
+* **Informations d’identification** vous permet de spécifier un jeton d’accès personnel pour Figma afin que la console [&#x200B; puisse accéder aux blocs de conception de votre projet](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration).
    * Le jeton nécessite les portées en lecture seule suivantes :
       * `file_content:read`
       * `file_metadata:read`
