@@ -4,9 +4,9 @@ description: Découvrez comment ajouter un référentiel externe dans Cloud Man
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: bf76cb67dea88b2412a10996cb077f5c884ec7bf
 workflow-type: tm+mt
-source-wordcount: '2444'
+source-wordcount: '2442'
 ht-degree: 26%
 
 ---
@@ -110,7 +110,7 @@ Voir aussi [Gérer les jetons d’accès](/help/implementing/cloud-manager/manag
 | Option de jeton d’accès | Description |
 | --- | --- |
 | **Utilisation d’un jeton d’accès existant** | Si vous avez déjà fourni un jeton d’accès au référentiel pour votre organisation et que vous avez accès à plusieurs référentiels, vous pouvez sélectionner un jeton existant. Utilisez la liste déroulante **Nom du jeton** pour choisir le jeton que vous souhaitez appliquer au référentiel. Sinon, ajoutez un nouveau jeton d’accès. |
-| **Ajout d’un nouveau jeton d’accès** | <ul><li>Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous êtes en train de créer.<li>Créez un jeton d’accès au référentiel à l’aide de la [documentation Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Autorisations requises pour le jeton d’accès personnel (PAT) Bitbucket <br>ces autorisations permettent à Cloud Manager d’accéder au contenu du référentiel, de gérer les demandes d’extraction et de configurer des événements webhook ou d’y réagir.<br>Lorsque vous créez le mot de passe de l’application dans Bitbucket, assurez-vous qu’il inclut les autorisations de mot de passe d’application requises suivantes :<ul><li>Référentiel (lecture seule)<li>Requêtes d’extraction (lecture et écriture)<li>Webhooks (lecture et écriture)</li></li></ul></li></li></ul></ul></ul><ul><li>Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
+| **Ajout d’un nouveau jeton d’accès** | <ul><li>Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous êtes en train de créer.<li>Créez un jeton d’accès au référentiel à l’aide de la [documentation Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Autorisations requises pour le jeton d’accès au référentiel Bitbucket.<br>Ces autorisations permettent à Cloud Manager d’accéder au contenu du référentiel, de gérer les demandes d’extraction et de configurer des événements webhook ou d’y réagir.<br>Lorsque vous créez le jeton d’accès au référentiel dans Bitbucket, assurez-vous qu’il inclut les autorisations requises suivantes :<ul><li>Référentiel (lecture seule)<li>Requêtes d’extraction (lecture et écriture)<li>Webhooks (lecture et écriture)</li></li></ul></li></li></ul></ul></ul><ul><li>Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
 
 Après validation, le référentiel externe est prêt à l’emploi et peut être connecté à un pipeline.
 
@@ -158,7 +158,7 @@ Voir aussi [Gérer les jetons d’accès](/help/implementing/cloud-manager/manag
 
 ## Configuration d’un webhook pour un référentiel externe {#configure-webhook}
 
-Cloud Manager vous permet de configurer des webhooks pour les référentiels Git externes que vous avez ajoutés. Voir [&#x200B; Ajouter un référentiel externe &#x200B;](#add-ext-repo). Ces webhooks permettent à Cloud Manager de recevoir des événements liés à différentes actions dans votre solution de fournisseur Git.
+Cloud Manager vous permet de configurer des webhooks pour les référentiels Git externes que vous avez ajoutés. Voir [ Ajouter un référentiel externe ](#add-ext-repo). Ces webhooks permettent à Cloud Manager de recevoir des événements liés à différentes actions dans votre solution de fournisseur Git.
 
 Par exemple, les webhooks permettent à Cloud Manager de déclencher des actions en fonction d’événements tels que :
 
@@ -195,7 +195,7 @@ Collez l’URL dans un fichier texte brut. L’URL copiée est requise pour les 
    1. En regard du champ **Secret Webhook** jeton/clé, cliquez sur **Générer**, puis sur ![Icône Copier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).
 Collez le secret dans un fichier texte brut. Le secret copié est requis pour les paramètres du Webhook de votre fournisseur Git.
 1. Cliquez sur **Fermer**.
-1. Accédez à la solution de votre fournisseur Git (GitHub Enterprise, GitLab, Bitbucket ou Azure DevOps).
+1. Accédez à votre solution de fournisseur Git (GitHub Enterprise, GitLab, Bitbucket ou Azure DevOps).
 
    Tous les détails sur la configuration webhook et les événements requis pour chaque fournisseur sont disponibles dans [Ajouter un référentiel externe](#add-ext-repo). Sous l’étape 8, consultez le tableau à onglets.
 
