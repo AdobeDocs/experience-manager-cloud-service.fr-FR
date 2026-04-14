@@ -4,9 +4,9 @@ description: Découvrez les étapes de configuration spécifiques requises pour 
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 94a5e40b-af4a-42ed-922b-b1ec9bb82e24
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 7b880e6d776e2eb9c53cef4552b876b051bdc7ba
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '630'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,8 @@ Pour les projets de création AEM à l’aide de l’éditeur universel, la pré
 ## Création De Votre Référentiel De Projet Edge Delivery Services {#create-repo}
 
 1. Utilisez le référentiel [`aem-block-collection-xwalk`](https://github.com/adobe-rnd/aem-block-collection-xwalk) comme modèle (et non comme modèle standard de Edge Delivery Services).
+1. Vérifiez que `fstab.yaml` pointe vers votre hôte AEM, le propriétaire Git et le référentiel Git, et validez toutes les modifications apportées à `main` avant de connecter les applications GitHub.
+   * Voir [Configurer la source de contenu](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md) pour obtenir des instructions.
 1. Suivez le [tutoriel de l’éditeur universel](https://www.aem.live/developer/ue-tutorial) pour configurer votre référentiel.
    * Arrêtez lorsque l’on vous demande de créer un site dans AEM.
 1. Supprimez `paths.json` et validez cette modification dans `main`.
@@ -35,8 +37,6 @@ Pour les projets de création AEM à l’aide de l’éditeur universel, la pré
 1. Cliquez sur **Créer**.
    * Vous êtes redirigé vers la page Sites.
    * Actualisez la page si le nouveau site n’apparaît pas immédiatement.
-1. Si vous ne l’avez pas déjà fait lors de la [configuration de votre référentiel](#create-repo) mettez à jour `fstab.yaml` afin qu’il pointe vers votre hôte AEM, le propriétaire Git et le référentiel Git et validez ces modifications dans `main`.
-   * Voir [Configurer la source de contenu](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md) pour obtenir des instructions.
 
 ## Continuez avec les étapes de prise en main standard {#continue}
 
@@ -51,7 +51,7 @@ Suivez ces étapes à partir du guide standard.
 1. [Connexion de votre référentiel GitHub](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md#connect-repo)
 1. [Démarrer l&#39;invite](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md#start-prompting)
 
-![&#x200B; Contenu importé &#x200B;](assets/content-imported-aem-authoring.png)
+![ Contenu importé ](assets/content-imported-aem-authoring.png)
 
 Une fois ces étapes effectuées pour migrer le contenu, procédez comme suit.
 
