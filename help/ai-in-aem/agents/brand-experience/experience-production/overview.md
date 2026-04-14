@@ -4,9 +4,9 @@ description: Découvrez comment l’agent de production Experience dans AEM vous
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 1dec50e6-d728-41d4-8868-5f9db568d15b
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 0666d9660d657876bca77835d333d9dfe536b374
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '287'
 ht-degree: 2%
 
 ---
@@ -28,11 +28,11 @@ L’agent effectue les tâches suivantes :
 >
 >Les réponses générées par l&#39;IA peuvent être inexactes ou trompeuses. Assurez-vous de vérifier les correctifs et les réponses suggérés.
 >
->Consultez également les [instructions d’utilisation de l’IA générative de &#x200B;](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
+>Consultez également les [instructions d’utilisation de l’IA générative de ](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 
 ### Tâche de mise à jour du contenu {#content-update}
 
-La tâche [&#x200B; Mise à jour de contenu &#x200B;](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) met à jour facilement le contenu existant, y compris les fragments de contenu, les pages, les formulaires et les ressources. L’agent peut effectuer des actions telles que la mise à jour, la suppression, le remplacement ou l’ajout d’éléments de contenu pour que les expériences restent exactes et à jour. Les entrées peuvent être des descriptions en langage naturel et, lorsqu’elles sont utilisées avec des PDF et des captures d’écran Jira, elles peuvent également fournir des entrées.
+La tâche [ Mise à jour de contenu ](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) met à jour facilement le contenu existant, y compris les fragments de contenu, les pages, les formulaires et les ressources. L’agent peut effectuer des actions telles que la mise à jour, la suppression, le remplacement ou l’ajout d’éléments de contenu pour que les expériences restent exactes et à jour. Les entrées peuvent être des descriptions en langage naturel et, lorsqu’elles sont utilisées avec des PDF et des captures d’écran Jira, elles peuvent également fournir des entrées.
 
 ### Tâche de création de formulaire {#form-creation}
 
@@ -51,10 +51,3 @@ Le traitement [Création de communication](/help/ai-in-aem/agents/brand-experien
 L’agent peut utiliser d’autres compétences d’agent, par exemple :
 
 * Obtenir des ressources sources à partir de l’agent Experience Advisory
-
-## Activation {#activation}
-
-Pour activer l’agent de production Experience et y accéder, vous devez contacter Adobe. Pour commencer, vous pouvez contacter :
-
-* `experience-production-agent@adobe.com`
-* ou contactez votre équipe de compte
