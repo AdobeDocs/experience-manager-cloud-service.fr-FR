@@ -23,7 +23,7 @@ ht-degree: 6%
 >Pour plus d’informations sur la réponse d’Adobe aux problèmes de confidentialité et sur ce que cela signifie pour vous en tant que client Adobe, consultez :
 >
 >* [Produits et services HIPAA et Adobe](https://www.adobe.com/trust/compliance/hipaa-hds/hipaa-ready.html) dans le Centre de gestion de la confidentialité Adobe
->* [Centre de traitement des données personnelles ](https://www.adobe.com/fr/privacy.html)
+>* [Centre de traitement des données personnelles &#x200B;](https://www.adobe.com/fr/privacy.html)
 
 Pour Adobe Experience Manager (AEM) as a Cloud Service, Adobe fournit de la documentation pour vous aider à comprendre la préparation au HIPAA. Cela peut vous aider à vous conformer à ces règlements.
 
@@ -37,7 +37,7 @@ En vertu de la loi HIPAA, une entité couverte est un prestataire de soins de sa
 
 ### Fournir des ISP à Adobe {#providing-phi-to-adobe}
 
-Adobe agit en tant qu’associé commercial pour ses services conformes à la loi HIPAA, répertoriés sous [ Préparation des services conforme à la loi HIPAA dans AEM as a Cloud Service](#hipaa-readiness-of-services-in-aem-as-a-cloud-service).
+Adobe agit en tant qu’associé commercial pour ses services conformes à la loi HIPAA, répertoriés sous [&#x200B; Préparation des services conforme à la loi HIPAA dans AEM as a Cloud Service](#hipaa-readiness-of-services-in-aem-as-a-cloud-service).
 
 Les clients qui disposent d’une licence pour un service conforme à la norme HIPAA d’Adobe pour traiter les ISP **doivent** disposer de la licence appropriée et d’un BAA signé avec Adobe.
 
@@ -138,4 +138,4 @@ Le tableau suivant indique où les types d’environnement peuvent être pris en
 
 ## Configuration {#setup}
 
-Lorsque vous [Créer des programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md), l’onglet [ Sécurité fournit les options permettant d’activer la protection HIPAA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security).
+Lorsque vous [Créer des programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md), l’onglet [&#x200B; Sécurité fournit les options permettant d’activer la protection HIPAA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security).

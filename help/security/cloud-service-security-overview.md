@@ -30,4 +30,4 @@ Reportez-vous à l’article technique [Sécurité dans Adobe Experience Manag
 
 >[!NOTE]
 >
->Consultez également la section [ Préparation du HIPAA pour Adobe Experience Manager as a Cloud Service ](/help/compliance/hipaa/hipaa-readiness.md) pour accéder à la documentation fournie par Adobe pour vous aider à comprendre la préparation du HIPAA et à vous conformer aux réglementations.
+>Consultez également la section [&#x200B; Préparation du HIPAA pour Adobe Experience Manager as a Cloud Service &#x200B;](/help/compliance/hipaa/hipaa-readiness.md) pour accéder à la documentation fournie par Adobe pour vous aider à comprendre la préparation du HIPAA et à vous conformer aux réglementations.
