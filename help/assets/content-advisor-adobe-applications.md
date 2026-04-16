@@ -5,16 +5,16 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Asse
 feature: Collaboration
 role: User
 exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
-source-git-commit: 0938d8170a4af2fc19c065c72c97d45080a215c8
+source-git-commit: 98ba709098bdf1c8a9f02b99e1e63ec97cb00ab4
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1901'
 ht-degree: 0%
 
 ---
 
 # Utiliser le gestionnaire de contenu pour accéder au contenu AEM dans les applications Adobe{#content-advisor-aem-assets-adobe-applications}
 
-Content Advisor offre une expérience de découverte de contenu unifiée dans les applications Adobe. Intégrée nativement à des applications telles qu’Adobe Workfront (bientôt disponible), AJO B2C (bientôt disponible), AEM Sites et d’autres, la fonction de conseil en contenu (ressources et fragments de contenu) rassemble le contenu dans une seule interface intelligente. Il vous permet de découvrir, parcourir et réutiliser facilement le contenu le plus pertinent, directement au sein de votre workflow, afin que vous puissiez vous déplacer plus rapidement sans rompre le contexte.
+Content Advisor offre une expérience de découverte de contenu unifiée dans les applications Adobe. Intégrés nativement à des applications telles qu’Adobe Workfront, AJO B2C (bientôt disponible), AEM Sites, etc., Content Advisor rassemble le contenu (ressources et fragments de contenu) dans une seule interface intelligente. Il vous permet de découvrir, parcourir et réutiliser facilement le contenu le plus pertinent, directement au sein de votre workflow, afin que vous puissiez vous déplacer plus rapidement sans rompre le contexte.
 
 >[!IMPORTANT]
 > 
@@ -128,7 +128,7 @@ Cliquez sur l’icône ![icône d’aperçu](assets/do-not-localize/preview-icon
 
 ![Prévisualisation des rendus Dynamic Media](assets/content-advisor-dm-preview.png)
 
-Cliquez sur **[!UICONTROL Ajouter des modificateurs]**, spécifiez un modificateur dans la zone de texte, puis appuyez sur Entrée pour appliquer la transformation à tous les rendus de ressources en temps réel. De même, vous pouvez ajouter plusieurs modificateurs aux rendus et prévisualiser ces transformations. Cliquez sur le nom du rendu, puis sur **[!UICONTROL Sélectionner]** pour rendre le rendu disponible dans votre application hôte. Le rendu après l’application de ces modificateurs n’est pas enregistré. Consultez la liste des modificateurs pris en charge pour [Dynamic Media Scene7](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) et [Dynamic Media avec OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
+Cliquez sur **[!UICONTROL Ajouter des modificateurs]**, spécifiez un modificateur dans la zone de texte, puis appuyez sur Entrée pour appliquer la transformation à tous les rendus de ressources en temps réel. De même, vous pouvez ajouter plusieurs modificateurs aux rendus et prévisualiser ces transformations. Cliquez sur le nom du rendu, puis sur **[!UICONTROL Sélectionner]** pour rendre le rendu disponible dans votre application hôte. Le rendu après l’application de ces modificateurs n’est pas enregistré. Consultez la liste des modificateurs pris en charge pour [Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) et [Dynamic Media avec OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
 ### Découverte de fragments de contenu {#content-fragments-discovery-content-advisor}
 
@@ -196,7 +196,9 @@ Le tableau suivant illustre la prise en charge des fonctionnalités de la foncti
 
 | Application | Prise en charge du chargement rapide pour la recherche dans Assets | Prise en charge du panneau de contenu suggéré lors de la recherche dans Assets | Prise en charge du panneau Dynamic Media lors de la recherche dans Assets | Prise en charge de la recherche de fragments de contenu |
 |--------------------------------------|----------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|------------------------------------------|
-| AEM Sites (Création basée sur des documents) | ✓ | − | ✓ | − |
-| AEM Sites (création de documents) | ✓ | ✓ | ✓ | − |
+| [AEM Sites - Création de documents](https://www.aem.live/docs/authoring-guide#document-authoring) | ✓ | ✓ | ✓ | − |
+| [AEM Sites - Éditeur universel](https://www.aem.live/docs/authoring-guide#universal-editor-in-aem-sites) | ✓ | ✓ | ✓ | − |
+| AEM Sites - [Création GoogleDrive](https://www.aem.live/docs/authoring-guide#google-drive)/[SharePoint](https://www.aem.live/docs/authoring-guide#microsoft-sharepoint) | ✓ | − | ✓ | − |
 | AEM Sites (éditeur de fragment de contenu) | ✓ | ✓ | ✓ | − |
-| AEM Sites (éditeur universel) | ✓ | ✓ | ✓ | − |
+| Workflow Adobe Workfront | ✓ | ✓ | − | ✓ |
+| Planification d’Adobe Workfront | ✓ | ✓ | − | ✓ |
