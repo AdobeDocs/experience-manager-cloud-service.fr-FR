@@ -4,9 +4,9 @@ description: Découvrez comment utiliser le réseau CDN géré par AEM et commen
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: a36eae0f32b36224c53f756238ba2f5f90699e6c
+source-git-commit: 355c0c9db126f17954e7f26953132b44b56bf653
 workflow-type: tm+mt
-source-wordcount: '1772'
+source-wordcount: '1786'
 ht-degree: 34%
 
 ---
@@ -23,7 +23,7 @@ AEM as a Cloud Service est fourni avec un réseau CDN intégré, conçu pour ré
 
 Le réseau CDN géré par AEM répond aux besoins de la plupart des clients en matière de performances et de sécurité. Pour le niveau de publication, les clients et clientes peuvent choisir d’acheminer le trafic via leur propre réseau CDN, qu’ils ou elles doivent gérer. Cette option est disponible au cas par cas, en particulier lorsque les clients disposent d’intégrations héritées existantes avec un fournisseur de réseau CDN, difficiles à remplacer.
 
-Les clients et clientes qui souhaitent effectuer une publication au niveau Edge Delivery Services peuvent tirer parti du réseau CDN géré par Adobe. Voir [Réseau CDN géré par Adobe](#aem-managed-cdn). <!-- CQDOC-21758, 5b -->
+Les clients et clientes qui souhaitent effectuer une publication au niveau Edge Delivery Services peuvent tirer parti du réseau CDN géré par Adobe. Voir [Réseau CDN géré par ](#aem-managed-cdn). <!-- CQDOC-21758, 5b -->
 
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
@@ -95,7 +95,7 @@ Instructions de configuration :
 1. Définissez le SNI sur l’entrée du réseau CDN d’Adobe.
 1. Définissez l’en-tête hôte sur le domaine d’origine. Par exemple : `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Définissez l’en-tête `X-Forwarded-Host` avec le nom de domaine afin qu’AEM puisse déterminer l’en-tête hôte. Par exemple : `X-Forwarded-Host:example.com`.
-1. Définir `X-AEM-Edge-Key`. La valeur doit être configurée à l’aide d’un pipeline de configuration Cloud Manager, comme décrit dans [cet article](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
+1. Définir `X-AEM-Edge-Key`. La valeur doit d’abord être configurée à l’aide d’un pipeline de configuration Cloud Manager, puis la même clé Edge doit être configurée dans le réseau CDN client, comme décrit dans [cet article](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
    * Ce paramétrage est nécessaire afin que le réseau CDN d’Adobe puisse valider la source des requêtes et transmettre les en-têtes `X-Forwarded-*` à l’application AEM. Par exemple,`X-Forwarded-For` est utilisé pour déterminer l’adresse IP du client. Il incombe donc à l’appelant approuvé (c’est-à-dire au réseau CDN géré par le client ou la cliente) de s’assurer que les en-têtes `X-Forwarded-*` sont corrects (voir la note ci-dessous).
    * L’accès à l’entrée du réseau CDN d’Adobe peut être aussi bloqué lorsqu’une balise `X-AEM-Edge-Key` n’est pas présente. Informez Adobe si vous avez besoin d’un accès direct à l’entrée du CDN d’Adobe (à bloquer).
@@ -163,7 +163,7 @@ Ce processus permet de vérifier des détails tels que les valeurs de l’hôte,
 >Vous pouvez utiliser un environnement de développement rapide (RDE) pour déployer et tester votre configuration :
 >
 >* [Environnements de développement rapide](/help/implementing/developing/introduction/rapid-development-environments.md)
->* [Utilisation d’un environnement de développement rapide](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+>* [Utilisation d’un environnement de développement rapide](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### Exemples de configurations de fournisseur de réseau CDN {#sample-configurations}
 
