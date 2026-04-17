@@ -5,9 +5,9 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Asse
 feature: Collaboration
 role: User
 exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
-source-git-commit: 98ba709098bdf1c8a9f02b99e1e63ec97cb00ab4
+source-git-commit: 2ae4533890cbf01183df8b5283109fff0b9eae60
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1945'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,8 @@ Content Advisor offre une expérience de découverte de contenu unifiée dans le
 Le gestionnaire de contenu permet une découverte intelligente et contextuelle directement dans l’expérience de création, ce qui vous permet de trouver rapidement du contenu pertinent et approuvé en fonction de votre intention. Grâce à des fonctionnalités telles que les suggestions intelligentes, les rendus Dynamic Media et les métadonnées de ressources détaillées, il vous permet d’évaluer et de réutiliser efficacement le contenu sans quitter l’interface de l’application, ce qui accélère la création de contenu tout en préservant la cohérence de la marque.
 
 ![Image de bannière du gestionnaire d’accès](assets/content-advisor-banner-image-updated.png)
+
+Adobe Experience Manager (AEM) Assets s’intègre également de manière native à Adobe Express, ce qui vous permet de découvrir, d’accéder et d’utiliser des ressources d’AEM Assets directement dans l’interface Express à l’aide de la fonction de conseil sur le contenu. Pour plus d’informations, voir [Utilisation de la fonction de conseil sur l’accès à AEM Assets dans Adobe Express](/help/assets/native-integration-adobe-express.md).
 
 
 ## Conditions préalables {#prerequisites}
@@ -128,7 +130,7 @@ Cliquez sur l’icône ![icône d’aperçu](assets/do-not-localize/preview-icon
 
 ![Prévisualisation des rendus Dynamic Media](assets/content-advisor-dm-preview.png)
 
-Cliquez sur **[!UICONTROL Ajouter des modificateurs]**, spécifiez un modificateur dans la zone de texte, puis appuyez sur Entrée pour appliquer la transformation à tous les rendus de ressources en temps réel. De même, vous pouvez ajouter plusieurs modificateurs aux rendus et prévisualiser ces transformations. Cliquez sur le nom du rendu, puis sur **[!UICONTROL Sélectionner]** pour rendre le rendu disponible dans votre application hôte. Le rendu après l’application de ces modificateurs n’est pas enregistré. Consultez la liste des modificateurs pris en charge pour [Dynamic Media Scene7](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) et [Dynamic Media avec OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
+Cliquez sur **[!UICONTROL Ajouter des modificateurs]**, spécifiez un modificateur dans la zone de texte, puis appuyez sur Entrée pour appliquer la transformation à tous les rendus de ressources en temps réel. De même, vous pouvez ajouter plusieurs modificateurs aux rendus et prévisualiser ces transformations. Cliquez sur le nom du rendu, puis sur **[!UICONTROL Sélectionner]** pour rendre le rendu disponible dans votre application hôte. Le rendu après l’application de ces modificateurs n’est pas enregistré. Consultez la liste des modificateurs pris en charge pour [Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) et [Dynamic Media avec OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
 ### Découverte de fragments de contenu {#content-fragments-discovery-content-advisor}
 
