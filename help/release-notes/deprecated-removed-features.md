@@ -31,11 +31,11 @@ Pendant la période d’obsolescence, Adobe rappelle à ses clientes et clients 
 
 >[!IMPORTANT]
 >
->Plusieurs [ API obsolètes ](#aem-apis) seront supprimées le **4 mai 2026**. Veuillez consulter ces dates et impacts clés :
+>Plusieurs [&#x200B; API obsolètes &#x200B;](#aem-apis) seront supprimées le **4 mai 2026**. Veuillez consulter ces dates et impacts clés :
 >
 >* **À compter du 26 janvier 2026** : les e-mails de notification du Centre de maintenance sont envoyés comme rappel pour supprimer l’utilisation de ces API.
 >* **26 février 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API seront **mis en pause** pendant l’étape **Qualité du code**. Un responsable de déploiement, un chef de projet ou un propriétaire d’entreprise peut contourner le problème pour autoriser le pipeline à continuer. *Cela peut ralentir votre capacité à valider et à publier les modifications de code.*
->* **30 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **** lors de l’étape **Qualité du code**. Les déploiements seront bloqués jusqu’à ce que l’utilisation obsolète de l’API soit supprimée. *Cela peut vous empêcher de publier des mises à jour urgentes et peut avoir un impact sur vos opérations commerciales.*
+>* **30 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **&#x200B;**&#x200B;lors de l’étape **Qualité du code**. Les déploiements seront bloqués jusqu’à ce que l’utilisation obsolète de l’API soit supprimée. *Cela peut vous empêcher de publier des mises à jour urgentes et peut avoir un impact sur vos opérations commerciales.*
 >* **4 mai 2026** : les environnements qui utilisent toujours des API obsolètes **ne recevront pas de mises à jour de versions Adobe critiques** et ne sont pas soumis aux engagements standard d’Adobe en matière de performances et de disponibilité. Par conséquent, vous ne recevrez pas de nouvelles fonctionnalités ou de nouveaux correctifs, la stabilité et la disponibilité des applications peuvent être affectées négativement, et l&#39;exposition aux risques de sécurité peut encore augmenter.
 >
 >Pour empêcher les blocs de déploiement, supprimez l’utilisation de l’API avant le 30 mars 2026.
@@ -87,11 +87,11 @@ Les API du tableau ci-dessous (cliquez pour développer) ont été annoncées c
 
 >[!IMPORTANT]
 >
->Plusieurs [ API obsolètes ](#aem-apis) seront supprimées le **4 mai 2026**. Veuillez consulter ces dates et impacts clés :
+>Plusieurs [&#x200B; API obsolètes &#x200B;](#aem-apis) seront supprimées le **4 mai 2026**. Veuillez consulter ces dates et impacts clés :
 >
 >* **À compter du 26 janvier 2026** : les e-mails de notification du Centre de maintenance sont envoyés comme rappel pour supprimer l’utilisation de ces API.
 >* **26 février 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API seront **mis en pause** pendant l’étape **Qualité du code**. Un responsable de déploiement, un chef de projet ou un propriétaire d’entreprise peut contourner le problème pour autoriser le pipeline à continuer. *Cela peut ralentir votre capacité à valider et à publier les modifications de code.*
->* **30 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **** lors de l’étape **Qualité du code**. Les déploiements seront bloqués jusqu’à ce que l’utilisation obsolète de l’API soit supprimée. *Cela peut vous empêcher de publier des mises à jour urgentes et peut avoir un impact sur vos opérations commerciales.*
+>* **30 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **&#x200B;**&#x200B;lors de l’étape **Qualité du code**. Les déploiements seront bloqués jusqu’à ce que l’utilisation obsolète de l’API soit supprimée. *Cela peut vous empêcher de publier des mises à jour urgentes et peut avoir un impact sur vos opérations commerciales.*
 >* **4 mai 2026** : les environnements qui utilisent toujours des API obsolètes **ne recevront pas de mises à jour de versions Adobe critiques** et ne sont pas soumis aux engagements standard d’Adobe en matière de performances et de disponibilité. Par conséquent, vous ne recevrez pas de nouvelles fonctionnalités ou de nouveaux correctifs, la stabilité et la disponibilité des applications peuvent être affectées négativement, et l&#39;exposition aux risques de sécurité peut encore augmenter.
 >
 >Pour empêcher les blocs de déploiement, supprimez l’utilisation de l’API avant le 30 mars 2026.
