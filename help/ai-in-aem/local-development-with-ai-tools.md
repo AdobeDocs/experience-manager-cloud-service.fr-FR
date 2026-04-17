@@ -3,13 +3,13 @@ title: Développement local avec les outils d’IA
 description: Découvrez comment configurer des outils de codage d’IA avec le contexte du projet, les compétences des agents et les serveurs MCP pour accélérer le développement d’AEM as a Cloud Service.
 feature: Developing
 role: Developer
-source-git-commit: 0bc00b6e14be6ba111ac26ce69f07e138ca400e4
+exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
+source-git-commit: f7a46a5b8c5bbe30ab5d6828ba99b2435b88dbeb
 workflow-type: tm+mt
-source-wordcount: '1428'
-ht-degree: 0%
+source-wordcount: '1438'
+ht-degree: 1%
 
 ---
-
 
 # Développement local avec les outils d’IA {#local-development-with-ai-tools}
 
@@ -36,7 +36,7 @@ Quatre composantes complémentaires abordent ce problème :
 
 >[!NOTE]
 >
-> Les serveurs MCP distants d’AEM Cloud Service sont également utiles au développement local, mais ne sont pas abordés dans cet article. Pour en savoir plus à ce sujet, consultez l’article [&#x200B; Utilisation de MCP avec Cloud Service &#x200B;](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md).
+> Les serveurs MCP distants d’AEM Cloud Service sont également utiles au développement local, mais ne sont pas abordés dans cet article. Pour en savoir plus à ce sujet, consultez l’article [ Utilisation de MCP avec Cloud Service ](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md).
 
 ## AGENTS.md {#agentsmd}
 
@@ -69,7 +69,7 @@ Sélectionnez la méthode qui correspond à votre outil de codage d’IA. L’in
 
 ```bash
 # Add the Adobe Skills marketplace (one-time setup)
-/plugin marketplace add adobe/skills#beta
+/plugin marketplace add adobe/skills
 
 # Install all available skills
 /plugin install aem-cloud-service@adobe-skills
@@ -79,17 +79,17 @@ Sélectionnez la méthode qui correspond à votre outil de codage d’IA. L’in
 
 ```bash
 # Install all available skills
-npx skills add https://github.com/adobe/skills/tree/beta/skills/aem/cloud-service --all
+npx skills add https://github.com/adobe/skills/tree/main/skills/aem/cloud-service --all
 ```
 
 #### Compétences supérieures (extension de ligne de commande GitHub) {#upskill-github-cli-extension}
 
 ```bash
 # Install the gh-upskill extension (one-time setup)
-gh extension install trieloff/gh-upskill
+gh extension install ai-ecoverse/gh-upskill
 
 # Install all available skills
-gh upskill adobe/skills --branch beta --path skills/aem/cloud-service --all
+gh upskill adobe/skills --path skills/aem/cloud-service --all
 ```
 
 ### Utiliser la compétence ensure-agents-md {#use-the-ensure-agents-md-skill}
@@ -150,7 +150,7 @@ Le protocole MCP (Model Context Protocol) est une norme ouverte qui permet aux o
 
 ### Installation du package de contenu {#install-the-content-package}
 
-Téléchargez le package de contenu à partir du [Portail de distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Abeta) et installez-`com.adobe.aem:com.adobe.aem.mcp-server-contribs-content` dans votre démarrage rapide local à l’aide du gestionnaire de packages sur `/crx/packmgr`.
+Téléchargez le package de contenu à partir du [Portail de distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3) et installez-`com.adobe.aem:com.adobe.aem.mcp-server-contribs-content` dans votre démarrage rapide local à l’aide du gestionnaire de packages sur `/crx/packmgr`.
 
 **Compatibilité :** validée avec AEM SDK `2026.2.24678.20260226T154829Z-260200` et version ultérieure.
 
@@ -210,7 +210,7 @@ Contrairement aux compétences du Dispatcher, le serveur MCP Dispatcher n’expo
 ### Conditions préalables {#prerequisites}
 
 - Docker Desktop 4.x ou version ultérieure, installé et en cours d’exécution
-- AEM Dispatcher SDK téléchargé à partir du [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Abeta)
+- AEM Dispatcher SDK téléchargé à partir du [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3)
 
 >[!NOTE]
 >
