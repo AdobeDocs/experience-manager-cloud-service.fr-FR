@@ -57,6 +57,6 @@ Pour configurer Claude pour AEM MCP, procédez comme suit :
 
 ## Connecteur Adobe Experience Manager Claude {#aem-claude-connector}
 
-Pour installer le **connecteur Claude**, ouvrez **Paramètres** > **Connecteurs** dans Claude. Vous pouvez également ouvrir la page Connecteurs directement sur [](https://claude.ai/settings/connectors). Le connecteur enregistre un serveur MCP qui expose un ensemble croissant d’outils pour les workflows AEM.
+Pour installer le **connecteur Claude**, ouvrez **Paramètres** > **Connecteurs** dans Claude. Vous pouvez également ouvrir la page Connecteurs directement sur [&#128279;](https://claude.ai/settings/connectors). Le connecteur enregistre un serveur MCP qui expose un ensemble croissant d’outils pour les workflows AEM.
 
 ![Installation du connecteur Adobe Experience Manager Claude à partir du répertoire des connecteurs.](assets/claude-connector.png)
