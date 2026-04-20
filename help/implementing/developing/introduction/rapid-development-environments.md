@@ -4,10 +4,10 @@ description: Découvrez comment utiliser les environnements de développement ra
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 161d6be186a6124840d93672470de91399481f20
 workflow-type: tm+mt
-source-wordcount: '5446'
-ht-degree: 24%
+source-wordcount: '5835'
+ht-degree: 22%
 
 ---
 
@@ -30,7 +30,7 @@ Les environnements de développement et de développement rapide doivent se limi
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-Vous pouvez visionner d’autres vidéos présentant [comment le configurer](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup), [comment l’utiliser](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use), et montrant [le cycle de vie du développement](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle) à l’aide du RDE.
+Vous pouvez visionner d’autres vidéos présentant [comment le configurer](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup), [comment l’utiliser](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use), et montrant [le cycle de vie du développement](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle) à l’aide du RDE.
 
 ## Présentation {#introduction}
 
@@ -184,7 +184,7 @@ Dans les environnements où aucun utilisateur ne peut exécuter de manière inte
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * Vous pouvez rechercher votre propre ID d’organisation à l’aide de la méthode décrite dans la section [Afficher votre ID d’organisation](https://experienceleague.adobe.com/fr/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
+   * Vous pouvez rechercher votre propre ID d’organisation à l’aide de la méthode décrite dans la section [Afficher votre ID d’organisation](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
 
 1. Configurez ensuite votre ID de programme :
 
@@ -198,9 +198,9 @@ Dans les environnements où aucun utilisateur ne peut exécuter de manière inte
 
    `aio login`
 
-   Ces étapes nécessitent que vous soyez membre du profil de produit Cloud Manager **Développeur - Cloud Service**. Voir [&#x200B; Affecter des membres de l’équipe à des profils de produit Cloud Manager - Attribuer le profil de produit Développeur &#x200B;](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) pour plus d’informations.
+   Ces étapes nécessitent que vous soyez membre du profil de produit Cloud Manager **Développeur - Cloud Service**. Voir [ Affecter des membres de l’équipe à des profils de produit Cloud Manager - Attribuer le profil de produit Développeur ](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) pour plus d’informations.
 
-Pour plus d’informations et des démonstrations, regardez le tutoriel vidéo [comment configurer un RDE (06:24)](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup).
+Pour plus d’informations et des démonstrations, regardez le tutoriel vidéo [comment configurer un RDE (06:24)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup).
 </details>
 
 ## Utilisation du RDE lors du développement d’une nouvelle fonctionnalité {#using-rde-while-developing-a-new-feature}
@@ -224,7 +224,7 @@ Pour développer une nouvelle fonctionnalité, Adobe recommande le workflow suiv
    * Fichiers de contenu
    * Fichiers ZIP contenant des configurations Apache/Dispatcher
 
-  Il est également possible de référencer un module de contenu distant. Voir [&#x200B; Outils de ligne de commande RDE](/help/implementing/developing/introduction/rapid-development-environments.md#rde-cli-commands) pour plus d’informations. Vous pouvez utiliser la commande Statut pour vérifier que le déploiement a réussi. Vous pouvez éventuellement utiliser le gestionnaire de modules pour installer des modules de contenu.
+  Il est également possible de référencer un module de contenu distant. Voir [ Outils de ligne de commande RDE](/help/implementing/developing/introduction/rapid-development-environments.md#rde-cli-commands) pour plus d’informations. Vous pouvez utiliser la commande Statut pour vérifier que le déploiement a réussi. Vous pouvez éventuellement utiliser le gestionnaire de modules pour installer des modules de contenu.
 
 * Testez le code dans l’outil RDE. Les URL de création et de publication sont disponibles dans Cloud Manager.
 
@@ -376,7 +376,7 @@ Déployez ensuite la configuration à l’aide de la commande suivante :
 
 >[!NOTE]
 >
->Le RDE prend en charge la configuration Dispatcher Dispatcher en « mode flexible », mais pas en « mode hérité ». Consultez la [documentation de Dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) pour plus d’informations sur ces deux modes. Vous pouvez également consulter la documentation relative à la [migration vers le mode flexible](/help/implementing/dispatcher/validation-debug.md#migrating), si vous ne l’avez pas déjà fait.
+>Le RDE prend en charge la configuration Dispatcher en « mode flexible », mais pas en « mode hérité ». Consultez la [documentation de ](/help/implementing/dispatcher/disp-overview.md#validation-debug) pour plus d’informations sur ces deux modes. Vous pouvez également consulter la documentation relative à la [migration vers le mode flexible](/help/implementing/dispatcher/validation-debug.md#migrating), si vous ne l’avez pas déjà fait.
 
 Un déploiement réussi génère une réponse qui ressemble à ce qui suit :
 
@@ -529,14 +529,14 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
 
-Pour plus d’informations et des démonstrations, consultez le tutoriel vidéo [utilisation des commandes RDE (10:01)](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use).
+Pour plus d’informations et des démonstrations, consultez le tutoriel vidéo [utilisation des commandes RDE (10:01)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use).
 
 
 ## Déploiement sur un RDE à partir de fournisseurs Git externes {#deploy-to-rde}
 
 >[!NOTE]
 >
->Cette fonctionnalité est disponible via le programme Beta. Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à [CloudManager_BYOG@adobe.com](mailto:cloudmanager_byog@adobe.com) à partir de l’adresse e-mail associée à votre Adobe ID. Veillez à inclure la plateforme Git à utiliser et indiquez si vous utilisez une structure de référentiel privée/publique ou d’entreprise.
+>Cette fonctionnalité est disponible via le programme Beta. Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à [](mailto:cloudmanager_byog@adobe.com) à partir de l’adresse e-mail associée à votre Adobe ID. Veillez à inclure la plateforme Git à utiliser et indiquez si vous utilisez une structure de référentiel privée/publique ou d’entreprise.
 
 Cloud Manager prend en charge le déploiement de code vers un RDE directement à partir de fournisseurs Git externes lors de l’utilisation de la configuration [Bring Your Own Git (BYOG)](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
@@ -562,10 +562,10 @@ Le déploiement des RDE à partir d’un référentiel Git externe nécessite le
    ![Message de validation de la qualité du code sur GitHub Enterprise](/help/implementing/developing/introduction/assets/rde-gitlab-code-quality-validation-message.png)
 
    Aspect sur GitLab :
-   ![&#x200B; Message de validation de la qualité du code sur GitLab](/help/implementing/developing/introduction/assets/rde-gitlab-code-quality-validation-message.png)
+   ![ Message de validation de la qualité du code sur GitLab](/help/implementing/developing/introduction/assets/rde-gitlab-code-quality-validation-message.png)
 
    Comment cela se présente-t-il sur Bitbucket :
-   ![&#x200B; Message de validation de la qualité du code sur Bitbucket &#x200B;](/help/implementing/developing/introduction/assets/rde-bitbucket-code-quality-validation-message.png)
+   ![ Message de validation de la qualité du code sur Bitbucket ](/help/implementing/developing/introduction/assets/rde-bitbucket-code-quality-validation-message.png)
 
 1. **Déclencher le déploiement à l’aide d’un commentaire.**
 
@@ -609,7 +609,7 @@ Le déploiement des RDE à partir d’un référentiel Git externe nécessite le
 
    Comment cela se présente-t-il sur Bitbucket :
 
-   ![&#x200B; Statut de déploiement de l’environnement sur Bitbucket &#x200B;](/help/implementing/developing/introduction/assets/rde-bitbucket-deployment-2.png)
+   ![ Statut de déploiement de l’environnement sur Bitbucket ](/help/implementing/developing/introduction/assets/rde-bitbucket-deployment-2.png)
 
 
 
@@ -650,7 +650,7 @@ La réinitialisation du RDE supprime tout le code personnalisé, les configurati
 
 Une réinitialisation définit le RDE sur la dernière version d’AEM disponible.
 
-Vous pouvez réinitialiser le RDE à l’aide de [Cloud Manager](#reset-the-rde-cloud-manager) ou de la [ligne de commande](#reset-the-rde-command-line). La réinitialisation prend quelques minutes et tout le contenu et le code existants sont supprimés du RDE.
+Vous pouvez réinitialiser le RDE à l’aide de [](#reset-the-rde-cloud-manager) ou de la [ligne de commande](#reset-the-rde-command-line). La réinitialisation prend quelques minutes et tout le contenu et le code existants sont supprimés du RDE.
 
 >[!NOTE]
 >
@@ -707,6 +707,74 @@ Vous pouvez également réinitialiser le RDE à l’aide du bouton représentant
 ![Réinitialiser le RDE à partir de la vignette Environnements](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
 Pour plus d’informations sur la gestion de vos environnements à l’aide de Cloud Manager, consultez [la documentation de Cloud Manager](/help/implementing/cloud-manager/manage-environments.md).
+
+## Instantanés {#snapshots}
+
+>[!NOTE]
+>
+>Cette fonctionnalité est disponible dans Beta. Si vous souhaitez utiliser cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à [](mailto:aemcs-rde-support@adobe.com) pour décrire votre cas d’utilisation.
+
+Les RDE prennent en charge la prise d’un instantané de l’état actuel du code et du contenu, qui peut être restauré ultérieurement. Les instantanés sont utiles lors de la synchronisation du code qui peut devoir être rétabli, ou lors du passage d’une fonctionnalité à l’autre. Il est également possible de restaurer uniquement le contenu modifiable à partir d’un instantané en tant que point de départ connu pour les tests.
+
+Chaque environnement de RDE comporte un maximum de sept instantanés. Les instantanés marqués pour suppression, mais toujours dans la période de conservation de sept jours, continuent à être comptabilisés dans cette limite jusqu’à ce qu’ils soient complètement supprimés. Si vous atteignez la limite et avez immédiatement besoin de capacité pour un nouvel instantané, utilisez la suppression forcée comme décrit dans la section [Supprimer un instantané](#delete-snapshot) au lieu d’une suppression standard.
+
+Les commandes prises en charge sont décrites ci-dessous. Pour obtenir la liste complète des indicateurs et des options, utilisez `aio aem rde snapshot --help`, ou pour obtenir de l’aide sur une sous-commande spécifique, utilisez `aio aem rde snapshot <subcommand> --help`.
+
+### Liste des instantanés {#list-snapshots}
+
+Vous pouvez répertorier tous les instantanés de votre organisation en exécutant :
+
+`aio aem rde snapshot`
+
+Cette opération renvoie un tableau des instantanés disponibles, qui peuvent être triés à l’aide de l’indicateur `-s` :
+
+`aio aem rde snapshot -s <column-header>`
+
+Préfixez l’en-tête de colonne avec un symbole moins pour le tri inverse. L’indicateur global `--json` est également pris en charge.
+
+### Création d’un instantané {#create-snapshot}
+
+Pour créer un instantané de l’état actuel du RDE, y compris le contenu et le déploiement, exécutez :
+
+`aio aem rde snapshot create <name>`
+
+Où `<name>` est le nom unique de l’instantané dans l’environnement. Vous pouvez éventuellement inclure une brève description avec l’indicateur `-d` :
+
+`aio aem rde snapshot create <name> -d "description of the snapshot"`
+
+### Restaurer un instantané {#restore-snapshot}
+
+Pour restaurer un instantané dans le RDE actuel, exécutez :
+
+`aio aem rde snapshot restore <name>`
+
+Pour restaurer uniquement le contenu modifiable à partir d’un instantané (sans restaurer le déploiement), utilisez l’indicateur `--only-mutable-content` :
+
+`aio aem rde snapshot restore <name> --only-mutable-content`
+
+### Suppression d’un instantané {#delete-snapshot}
+
+Le marquage d’un instantané en vue de sa suppression ne le supprime pas immédiatement. L’instantané est supprimé au bout de 7 jours, ce qui vous donne le temps de le supprimer à nouveau, si nécessaire.
+
+Pour marquer un instantané à supprimer, exécutez :
+
+`aio aem rde snapshot delete <name>`
+
+Pour marquer tous les instantanés comme supprimés en même temps, utilisez l’indicateur `-a` :
+
+`aio aem rde snapshot delete -a`
+
+Pour supprimer immédiatement un instantané (en ignorant la période de conservation afin qu&#39;il ne soit plus comptabilisé dans la limite d&#39;instantanés de l&#39;environnement), ajoutez l&#39;indicateur `-f` (ou `--force`) :
+
+`aio aem rde snapshot delete <name> -f`
+
+La suppression forcée ne peut pas être annulée avec `undelete`. Utilisez `aio aem rde snapshot delete --help` pour l’ensemble des options lors de la combinaison d’indicateurs (par exemple, la suppression forcée de tous les instantanés).
+
+### Annulation de la suppression d’un instantané {#undelete-snapshot}
+
+Pour annuler une suppression en attente et conserver un instantané, exécutez :
+
+`aio aem rde snapshot undelete <name>`
 
 ## Commandes qui prennent en charge la sortie JSON {#json-commands}
 
@@ -1170,7 +1238,7 @@ Lors de leur création, les RDE sont définis sur la dernière version de Adobe 
 
 #### Erreurs concernant les autorisations insuffisantes {#insufficient-permissions}
 
-Pour utiliser le plug-in RDE, vous devez être membre du profil de produit Cloud Manager **Développeur - Cloud Service**. Voir [&#x200B; Affecter des membres de l’équipe à des profils de produit Cloud Manager - Attribuer le profil de produit Développeur &#x200B;](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) pour plus d’informations.
+Pour utiliser le plug-in RDE, vous devez être membre du profil de produit Cloud Manager **Développeur - Cloud Service**. Voir [ Affecter des membres de l’équipe à des profils de produit Cloud Manager - Attribuer le profil de produit Développeur ](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) pour plus d’informations.
 
 Vous pouvez également vérifier que vous disposez de ce rôle de développeur si vous vous connectez à Developer Console à l’aide de la commande suivante :
 
