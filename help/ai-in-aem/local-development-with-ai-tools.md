@@ -4,20 +4,14 @@ description: Découvrez comment configurer des outils de codage d’IA avec le c
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: f7a46a5b8c5bbe30ab5d6828ba99b2435b88dbeb
+source-git-commit: 0fb601ee1479bdcbb4932592185c5984d56171ef
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1423'
 ht-degree: 1%
 
 ---
 
 # Développement local avec les outils d’IA {#local-development-with-ai-tools}
-
->[!IMPORTANT]
->
->Les fonctionnalités décrites dans cet article sont en version **bêta**. L’accès anticipé aux fonctionnalités développées par Adobe permet aux clients et aux partenaires de faire part de leurs commentaires (par e-mail [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)) et de façonner le développement des produits. Cela les aide également à se préparer à adopter de nouvelles fonctionnalités avant leur disponibilité générale.
->
->Les versions de Beta peuvent contenir des défauts et sont fournies « EN L’ÉTAT » sans garantie d’aucune sorte. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, remplacer ou prendre en charge (par le biais des services d’assistance Adobe ou d’une autre manière) les versions bêta. Adobe conseille aux clients d’être prudent et de ne pas se fier au bon fonctionnement ou aux performances des versions bêta, ni à la documentation ou aux documents d’accompagnement. Les fonctionnalités et API de la version bêta peuvent être modifiées sans préavis. Par conséquent, toute utilisation des versions bêta s’effectue entièrement aux risques et périls du client.
 
 >[!NOTE]
 >
@@ -36,7 +30,7 @@ Quatre composantes complémentaires abordent ce problème :
 
 >[!NOTE]
 >
-> Les serveurs MCP distants d’AEM Cloud Service sont également utiles au développement local, mais ne sont pas abordés dans cet article. Pour en savoir plus à ce sujet, consultez l’article [&#x200B; Utilisation de MCP avec Cloud Service &#x200B;](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md).
+> Les serveurs MCP distants d’AEM Cloud Service sont également utiles au développement local, mais ne sont pas abordés dans cet article. Pour en savoir plus à ce sujet, consultez l’article [ Utilisation de MCP avec Cloud Service ](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md).
 
 ## AGENTS.md {#agentsmd}
 
@@ -52,7 +46,7 @@ Quatre composantes complémentaires abordent ce problème :
 
 Les compétences sont des ensembles d’instructions qui codent des workflows de développement à plusieurs étapes. Lorsqu’elle est invoquée, l’IA suit la procédure de la compétence plutôt que de se fier uniquement aux connaissances générales, produisant des résultats cohérents et conformes à la convention.
 
-Adobe publie les compétences AEM as a Cloud Service dans le référentiel **[adobe/skills](https://github.com/adobe/skills/tree/beta/skills/aem/cloud-service/skills)** sur la branche `beta`, car cette fonctionnalité n’est pas encore disponible pour tous :
+Adobe publie les compétences AEM as a Cloud Service dans le référentiel **[adobe/skills](https://github.com/adobe/skills/tree/main/plugins/aem/cloud-service)** :
 
 | Compétence | Objectif |
 |---|---|
@@ -202,6 +196,12 @@ Tout client MCP peut se connecter en pointant vers `http://localhost:4502/bin/mc
 >La valeur `Basic YWRtaW46YWRtaW4=` est le codage Base64 de `admin:admin`, les informations d’identification par défaut pour un démarrage rapide local. Ne l’utilisez pas avec des environnements non locaux.
 
 ## Serveur MCP Dispatcher {#dispatcher-mcp-server}
+
+>[!IMPORTANT]
+>
+>Cette fonctionnalité est **version bêta**. L’accès anticipé aux fonctionnalités développées par Adobe permet aux clients et aux partenaires de faire part de leurs commentaires (par e-mail [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)) et de façonner le développement des produits. Cela les aide également à se préparer à adopter de nouvelles fonctionnalités avant leur disponibilité générale.
+>
+>Les versions de Beta peuvent contenir des défauts et sont fournies « EN L’ÉTAT » sans garantie d’aucune sorte. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, remplacer ou prendre en charge (par le biais des services d’assistance Adobe ou d’une autre manière) les versions bêta. Adobe conseille aux clients d’être prudent et de ne pas se fier au bon fonctionnement ou aux performances des versions bêta, ni à la documentation ou aux documents d’accompagnement. Les fonctionnalités et API de la version bêta peuvent être modifiées sans préavis. Par conséquent, toute utilisation des versions bêta s’effectue entièrement aux risques et périls du client.
 
 Le serveur Dispatcher MCP est fourni avec AEM Dispatcher SDK. Il permet aux outils d’IA de valider la configuration Dispatcher et Apache HTTPD, de suivre la gestion des requêtes et d’inspecter le comportement du cache par rapport à une instance Dispatcher s’exécutant localement dans Docker.
 
