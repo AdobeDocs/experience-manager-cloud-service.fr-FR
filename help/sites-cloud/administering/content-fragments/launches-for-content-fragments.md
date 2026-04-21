@@ -6,9 +6,9 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
-source-git-commit: 345f91b742813d81e3eb236eeb86c854d757bc4d
+source-git-commit: e59faf3943b18fac50d1d504f633ab2ff0236aee
 workflow-type: tm+mt
-source-wordcount: '1784'
+source-wordcount: '1851'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ Un *Launch* est créé pour vous permettre d’apporter des modifications en vue
 >
 >Pour plus d’informations, consultez [Lancements de pages](/help/sites-cloud/authoring/launches/overview.md).
 
-Vous créez un *Launch*, puis vous modifiez et mettez à jour vos fragments de contenu dans votre *Launch*. Si des modifications sont apportées aux fragments **&#x200B; au cours de cette phase, vous pouvez copier le *Source* (y compris les modifications) dans le *Launch* avec l’opération &#x200B;** [Rebase](#rebase-a-launch-from-source)**. Une fois prêt, *Promouvoir* duplique le contenu du lancement vers la source. Vous pouvez ensuite activer vos fragments source manuellement ou automatiquement (selon les champs définis lors de la création et de la modification du lancement). Vous pouvez également indiquer si les fragments référencés doivent être inclus dans ce processus.
+Vous créez un *Launch*, puis vous modifiez et mettez à jour vos fragments de contenu dans votre *Launch*. Si des modifications sont apportées aux fragments ** au cours de cette phase, vous pouvez copier le *Source* (y compris les modifications) dans le *Launch* avec l’opération **[Rebase](#rebase-a-launch-from-source)**. Une fois prêt, *Promouvoir* duplique le contenu du lancement vers la source. Vous pouvez ensuite activer vos fragments source manuellement ou automatiquement (selon les champs définis lors de la création et de la modification du lancement). Vous pouvez également indiquer si les fragments référencés doivent être inclus dans ce processus.
 
 Par exemple, les fragments de produits saisonniers de votre boutique en ligne sont mis à jour chaque trimestre, de sorte que les produits présentés correspondent à la saison en cours. Pour préparer la prochaine mise à jour trimestrielle, vous pouvez créer un lancement des fragments appropriés. Tout au long du trimestre, les modifications suivantes sont cumulées dans la copie de lancement :
 
@@ -133,7 +133,7 @@ Pour créer votre lancement :
 
 1. Sélectionnez **Afficher**, dans la zone de message, pour afficher plus de détails dans la console AEM pour [Opérations en arrière-plan](/help/operations/asynchronous-jobs.md).
 
-   ![&#x200B; Nouveau lancement dans la console &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-launches-new-launch-in-console.png)
+   ![ Nouveau lancement dans la console ](/help/sites-cloud/administering/content-fragments/assets/cf-launches-new-launch-in-console.png)
 
 ## Modifier le contenu de Launch {#edit-launch-content}
 
@@ -187,7 +187,7 @@ Pour gérer les fragments de contenu dans votre lancement et modifier leur conte
 
 ## Comparer le lancement à la source {#compare-launch-to-source}
 
-Il est recommandé, avant toute action Rebaser ou Promouvoir, de toujours comparer la source et le lancement afin de confirmer les modifications et leur impact sur votre contenu (les deux actions remplacent le contenu cible) :
+Il est recommandé, avant toute action **[Rebase](#rebase-a-launch-from-source)** ou **[Promouvoir](#promote-a-launch-to-source)**, de toujours comparer la source et le lancement afin de confirmer les modifications et leur impact sur votre contenu (les deux actions remplacent le contenu cible) :
 
 1. Accédez à la console Fragments de contenu .
 
@@ -261,9 +261,17 @@ Lorsque des mises à jour ont été apportées aux fragments source, vous pouvez
 >
 >Vous pouvez également **Rebaser** un lancement à partir de **[Comparer Launch à Source](#compare-launch-to-source)**.
 
+>[!NOTE]
+>
+>Avant toute action **Rebase** ou **Promouvoir**, il est recommandé de toujours [comparer la source et le lancement](#compare-launch-to-source) pour confirmer les modifications et leur impact sur votre contenu, car les deux actions remplacent le contenu cible.
+
 ## Promouvoir un lancement (vers Source) {#promote-a-launch-to-source}
 
 Lorsque votre lancement est prêt à être publié, il doit être copié dans la source. Vous pouvez le faire dans la console ou configurer les paramètres pour que cela se produise automatiquement à une date et une heure spécifiques.
+
+>[!NOTE]
+>
+>Avant toute action **Rebase** ou **Promouvoir**, il est recommandé de toujours [comparer la source et le lancement](#compare-launch-to-source) pour confirmer les modifications et leur impact sur votre contenu, car les deux actions remplacent le contenu cible.
 
 ### Promouvoir manuellement {#promote-manually}
 
