@@ -25,7 +25,7 @@ Un *Launch* est créé pour vous permettre d’apporter des modifications en vue
 >
 >Pour plus d’informations, consultez [Lancements de pages](/help/sites-cloud/authoring/launches/overview.md).
 
-Vous créez un *Launch*, puis vous modifiez et mettez à jour vos fragments de contenu dans votre *Launch*. Si des modifications sont apportées aux fragments ** au cours de cette phase, vous pouvez copier le *Source* (y compris les modifications) dans le *Launch* avec l’opération **[Rebase](#rebase-a-launch-from-source)**. Une fois prêt, *Promouvoir* duplique le contenu du lancement vers la source. Vous pouvez ensuite activer vos fragments source manuellement ou automatiquement (selon les champs définis lors de la création et de la modification du lancement). Vous pouvez également indiquer si les fragments référencés doivent être inclus dans ce processus.
+Vous créez un *Launch*, puis vous modifiez et mettez à jour vos fragments de contenu dans votre *Launch*. Si des modifications sont apportées aux fragments **&#x200B; au cours de cette phase, vous pouvez copier le *Source* (y compris les modifications) dans le *Launch* avec l’opération &#x200B;** [Rebase](#rebase-a-launch-from-source)**. Une fois prêt, *Promouvoir* duplique le contenu du lancement vers la source. Vous pouvez ensuite activer vos fragments source manuellement ou automatiquement (selon les champs définis lors de la création et de la modification du lancement). Vous pouvez également indiquer si les fragments référencés doivent être inclus dans ce processus.
 
 Par exemple, les fragments de produits saisonniers de votre boutique en ligne sont mis à jour chaque trimestre, de sorte que les produits présentés correspondent à la saison en cours. Pour préparer la prochaine mise à jour trimestrielle, vous pouvez créer un lancement des fragments appropriés. Tout au long du trimestre, les modifications suivantes sont cumulées dans la copie de lancement :
 
@@ -133,7 +133,7 @@ Pour créer votre lancement :
 
 1. Sélectionnez **Afficher**, dans la zone de message, pour afficher plus de détails dans la console AEM pour [Opérations en arrière-plan](/help/operations/asynchronous-jobs.md).
 
-   ![ Nouveau lancement dans la console ](/help/sites-cloud/administering/content-fragments/assets/cf-launches-new-launch-in-console.png)
+   ![&#x200B; Nouveau lancement dans la console &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-launches-new-launch-in-console.png)
 
 ## Modifier le contenu de Launch {#edit-launch-content}
 
