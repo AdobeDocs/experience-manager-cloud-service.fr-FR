@@ -6,10 +6,10 @@ feature: Assets HTTP API
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 17203fffbea1fcb7e4712041623275affab68f3c
 workflow-type: tm+mt
-source-wordcount: '1876'
-ht-degree: 97%
+source-wordcount: '1916'
+ht-degree: 95%
 
 ---
 
@@ -64,6 +64,10 @@ L’article contient des recommandations, des documents de référence et des re
 | Supprimer un dossier | ✓ | ✓ | - | ✓ | - | - |
 | Copier un dossier | ✓ | ✓ | - | ✓ | - | - |
 | Déplacer un dossier | ✓ | ✓ | - | ✓ | - | - |
+
+>[!NOTE]
+>
+> Adobe déconseille de charger des packages de ressources, car cela enfreint nos bonnes pratiques relatives à l’évitement de la gestion des fichiers binaires dans AEM. Le chargement de ressources via des packages JCR n’entraîne pas le déclenchement du traitement sur ces ressources dans AEM as a Cloud Service.
 
 ## Chargement de ressources {#asset-upload}
 

@@ -6,10 +6,10 @@ feature: Asset Management
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 17203fffbea1fcb7e4712041623275affab68f3c
 workflow-type: tm+mt
-source-wordcount: '1342'
-ht-degree: 86%
+source-wordcount: '1087'
+ht-degree: 83%
 
 ---
 
@@ -36,7 +36,7 @@ Vous pouvez télécharger des ressources à partir d’Experience Manager à l�
 
 * [Interface utilisateur d’Experience Manager](#download-assets)
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=fr)
+* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=fr)
 * [Appli de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#download-assets)
 
 ## Télécharger des ressources à l’aide de l’interface [!DNL Experience Manager]  {#download-assets}
@@ -106,32 +106,6 @@ Lorsque les utilisateurs téléchargent des ressources à partir de liens partag
 La [!UICONTROL boîte de réception de téléchargement] affiche l’état du traitement de chaque archive. Une fois le traitement terminé, vous pouvez télécharger les archives à partir de la boîte de réception.
 
 ![Boîte de réception de téléchargement](assets/link-sharing-download-inbox.png)
-
-## Activation du servlet de téléchargement de ressources {#enable-asset-download-servlet}
-
-Le servlet par défaut d’[!DNL Experience Manager] permet aux utilisateurs et utilisatrices authentifiés d’émettre arbitrairement des requêtes de téléchargement simultanées de grande taille afin de créer des fichiers ZIP de ressources. La préparation des téléchargements peut avoir des conséquences sur les performances ou peut même surcharger le serveur et le réseau. Pour atténuer ces risques potentiels de déni de service, le composant OSGi `AssetDownloadServlet` est désactivé par défaut pour les instances de publication. Si vous n’avez pas besoin de la fonction de téléchargement sur les instances de création, désactivez le servlet sur l’auteur.
-
-Pour autoriser le téléchargement de DAM à partir de votre gestion des ressources numériques (par exemple, lors de l’utilisation d’Asset Share Commons ou une autre mise en œuvre de type portail), activez manuellement la servlet via une configuration OSGi. Adobe recommande de définir la taille de téléchargement autorisée aussi basse que possible, sans pour autant affecter les exigences de téléchargement quotidiennes. Une valeur élevée peut avoir une incidence sur les performances.
-
-1. Créez un dossier avec une convention de nommage qui cible le mode d’exécution de publication, à savoir `config.publish` :
-
-   `/apps/<your-app-name>/config.publish`
-
-1. Dans le dossier de configuration, créez un fichier de type `nt:file` nommé `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
-1. Remplissez `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` avec les éléments suivants. Définit une taille maximale (en octets) pour le téléchargement en tant que valeur de `asset.download.prezip.maxcontentsize`. L’exemple ci-dessous configure la taille maximale du téléchargement ZIP pour qu’il ne dépasse pas 100 Ko.
-
-   ```java
-   enabled=B"true"
-   asset.download.prezip.maxcontentsize=I"102400"
-   ```
-
-## Désactivation du servlet de téléchargement de ressources {#disable-asset-download-servlet}
-
-Si vous n’avez pas besoin de la fonctionnalité de téléchargement, désactivez le servlet pour éviter tout risque de déni de service. Le `Asset Download Servlet` peut être désactivé sur les instances d’auteur et de publication d’[!DNL Experience Manager] en mettant à jour la configuration du Dispatcher afin de bloquer toute demande de téléchargement de ressources. Le servlet peut également être désactivé manuellement par l’intermédiaire de la console OSGi.
-
-1. Pour bloquer les requêtes de téléchargement de ressources via une configuration de Dispatcher, modifiez la configuration `dispatcher.any` et ajoutez une nouvelle règle à la [section /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#configuring).
-
-   `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
 ## Rendu OnTime ou OffTime {#on-off-time-rendition}
 
