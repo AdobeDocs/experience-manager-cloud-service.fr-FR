@@ -6,16 +6,16 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
-source-git-commit: e59faf3943b18fac50d1d504f633ab2ff0236aee
+source-git-commit: 29b646d024287bfbc0801c90843e5c36e5fd57ea
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1852'
 ht-degree: 2%
 
 ---
 
 # Lancements pour les fragments de contenu {#launches-for-content-fragments}
 
-Dans Adobe Experience Manager (AEM) as a Cloud Service, les lancements vous permettent de développer efficacement du contenu pour une version ultérieure.
+Dans Adobe Experience Manager (AEM) as a Cloud Service, un lancement vous permet de développer efficacement du contenu pour une version ultérieure.
 
 Un *Launch* est créé pour vous permettre d’apporter des modifications en vue d’une publication ultérieure, tout en conservant votre contenu actuel. Pour les fragments de contenu, cela signifie que vous modifiez deux versions simultanément : le contenu actuellement publié et une version de ce contenu, qui sera publiée à un moment donné dans le futur. Une fois ce délai écoulé, vous pouvez remplacer le contenu des fragments de contenu d’origine et publier les nouvelles versions.
 
@@ -25,7 +25,7 @@ Un *Launch* est créé pour vous permettre d’apporter des modifications en vue
 >
 >Pour plus d’informations, consultez [Lancements de pages](/help/sites-cloud/authoring/launches/overview.md).
 
-Vous créez un *Launch*, puis vous modifiez et mettez à jour vos fragments de contenu dans votre *Launch*. Si des modifications sont apportées aux fragments **&#x200B; au cours de cette phase, vous pouvez copier le *Source* (y compris les modifications) dans le *Launch* avec l’opération &#x200B;** [Rebase](#rebase-a-launch-from-source)**. Une fois prêt, *Promouvoir* duplique le contenu du lancement vers la source. Vous pouvez ensuite activer vos fragments source manuellement ou automatiquement (selon les champs définis lors de la création et de la modification du lancement). Vous pouvez également indiquer si les fragments référencés doivent être inclus dans ce processus.
+Vous créez un *Launch*, puis vous modifiez et mettez à jour vos fragments de contenu dans votre *Launch*. Si des modifications sont apportées aux fragments ** au cours de cette phase, vous pouvez copier le *Source* (y compris les modifications) dans le *Launch* avec l’opération **[Rebase](#rebase-a-launch-from-source)**. Une fois prêt, *Promouvoir* duplique le contenu du lancement vers la source. Vous pouvez ensuite activer vos fragments source manuellement ou automatiquement (selon les champs définis lors de la création et de la modification du lancement). Vous pouvez également indiquer si les fragments référencés doivent être inclus dans ce processus.
 
 Par exemple, les fragments de produits saisonniers de votre boutique en ligne sont mis à jour chaque trimestre, de sorte que les produits présentés correspondent à la saison en cours. Pour préparer la prochaine mise à jour trimestrielle, vous pouvez créer un lancement des fragments appropriés. Tout au long du trimestre, les modifications suivantes sont cumulées dans la copie de lancement :
 
@@ -133,7 +133,7 @@ Pour créer votre lancement :
 
 1. Sélectionnez **Afficher**, dans la zone de message, pour afficher plus de détails dans la console AEM pour [Opérations en arrière-plan](/help/operations/asynchronous-jobs.md).
 
-   ![&#x200B; Nouveau lancement dans la console &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-launches-new-launch-in-console.png)
+   ![ Nouveau lancement dans la console ](/help/sites-cloud/administering/content-fragments/assets/cf-launches-new-launch-in-console.png)
 
 ## Modifier le contenu de Launch {#edit-launch-content}
 
