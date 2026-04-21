@@ -6,9 +6,9 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 345f91b742813d81e3eb236eeb86c854d757bc4d
 workflow-type: tm+mt
-source-wordcount: '1588'
+source-wordcount: '1784'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ Un *Launch* est créé pour vous permettre d’apporter des modifications en vue
 >
 >Pour plus d’informations, consultez [Lancements de pages](/help/sites-cloud/authoring/launches/overview.md).
 
-Vous créez un *Launch*, puis vous modifiez et mettez à jour vos fragments de contenu dans votre *Launch*. Si des modifications sont apportées aux fragments *Source* au cours de cette phase, vous pouvez les copier dans *Launch* avec l’opération *Rebase*. Une fois prêt, *Promouvoir* duplique le contenu du lancement vers la source. Vous pouvez ensuite activer vos fragments source manuellement ou automatiquement (selon les champs définis lors de la création et de la modification du lancement). Vous pouvez également indiquer si les fragments référencés doivent être inclus dans ce processus.
+Vous créez un *Launch*, puis vous modifiez et mettez à jour vos fragments de contenu dans votre *Launch*. Si des modifications sont apportées aux fragments ** au cours de cette phase, vous pouvez copier le *Source* (y compris les modifications) dans le *Launch* avec l’opération **[Rebase](#rebase-a-launch-from-source)**. Une fois prêt, *Promouvoir* duplique le contenu du lancement vers la source. Vous pouvez ensuite activer vos fragments source manuellement ou automatiquement (selon les champs définis lors de la création et de la modification du lancement). Vous pouvez également indiquer si les fragments référencés doivent être inclus dans ce processus.
 
 Par exemple, les fragments de produits saisonniers de votre boutique en ligne sont mis à jour chaque trimestre, de sorte que les produits présentés correspondent à la saison en cours. Pour préparer la prochaine mise à jour trimestrielle, vous pouvez créer un lancement des fragments appropriés. Tout au long du trimestre, les modifications suivantes sont cumulées dans la copie de lancement :
 
@@ -88,9 +88,9 @@ Alors que le panneau de droite vous permet d’effectuer les opérations suivant
 
    * **Publication prête** ; l’activation de cette option publiera automatiquement les fragments lorsque le lancement sera promu à la source.
 
-* Définissez également les éléments suivants :
+* Définir une **Date et heure de promotion** : si le [lancement doit être automatiquement promu](#promote-automatically)
 
-   * Une **Date et heure de promotion** : si le lancement [&#x200B; doit être automatiquement promu](#promote-automatically)
+* Affichez les **[tâches](#jobs-history)** exécutées (**Comparer Launch à Source**) et effectuez d’autres actions sur celles-ci
 
 ## Création d’un lancement {#create-a-launch}
 
@@ -133,7 +133,7 @@ Pour créer votre lancement :
 
 1. Sélectionnez **Afficher**, dans la zone de message, pour afficher plus de détails dans la console AEM pour [Opérations en arrière-plan](/help/operations/asynchronous-jobs.md).
 
-   ![&#x200B; Nouveau lancement dans la console &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-launches-new-launch-in-console.png)
+   ![ Nouveau lancement dans la console ](/help/sites-cloud/administering/content-fragments/assets/cf-launches-new-launch-in-console.png)
 
 ## Modifier le contenu de Launch {#edit-launch-content}
 
@@ -203,7 +203,6 @@ Il est recommandé, avant toute action Rebaser ou Promouvoir, de toujours compar
          * Source : bleu
          * Lancement : rose
          * Conflits : jaune
-   * Les actions [Promouvoir](#promote-a-launch-to-source) et [Rebaser](#rebase-a-launch-from-source) sont disponibles dans le coin supérieur droit.
    * **Mises à jour trouvées** : un résumé de toutes les mises à jour s’affiche dans le coin supérieur gauche. Le nombre de mises à jour source en bleu, le nombre de mises à jour de lancement en rose et le nombre de mises à jour des deux (conflits) en jaune.
       * Les icônes représentant des yeux vous permettent d’afficher ou de masquer les mises à jour du contenu réel pour une vue d’ensemble plus claire.
    * Les curseurs **Inclure** vous permettent de définir les fragments de contenu à inclure dans l’opération de promotion ou de bascule suivante :
@@ -217,11 +216,38 @@ Il est recommandé, avant toute action Rebaser ou Promouvoir, de toujours compar
    * Le contenu du fragment est affiché au niveau du champ (élément de fragment de contenu/niveau de type de données) ; avec des mises en surbrillance indiquant les modifications.
    * Sélectionnez **Affichage** pour recalculer les différences.
 
+1. Les actions [Promouvoir](#promote-a-launch-to-source) et [Rebaser](#rebase-a-launch-from-source) sont disponibles dans le coin supérieur droit.
+
+1. **Précédent** vous renvoie à la console. Si vous souhaitez vérifier à nouveau ces différences spécifiques, vous pouvez afficher les entrées **[Tâches](#jobs-history)**.
+
    ![Comparer Source et Launch](/help/sites-cloud/administering/content-fragments/assets/cf-launches-compare.png)
+
+## Historique des traitements {#jobs-history}
+
+Pour afficher les détails des tâches antérieures **Comparer à Source** exécutées :
+
+1. Accédez à la console Fragments de contenu .
+
+1. Ouvrez l’onglet **Lancements**.
+
+1. Sélectionnez votre lancement, le panneau d’informations s’ouvre à droite.
+
+1. Dans la section **Tâches** se trouvent les entrées **launchDifferences** pour chacune des tâches **Comparer à Source** exécutées :
+
+   ![Historique des tâches](/help/sites-cloud/administering/content-fragments/assets/cf-launches-jobs.png)
+
+1. Sélectionnez :
+
+   * L’icône de loupe permet d’afficher tous les détails d’une tâche spécifique.
+Cela vous renvoie la vue **[Comparer Launch à Source](#compare-launch-to-source)**, avec les actions disponibles.
+   * **Afficher le journal** pour afficher un aperçu des détails de toutes les tâches.
+À partir de là, vous pouvez également sélectionner une tâche spécifique, puis afficher les **Résultats**. Vous revenez ainsi à la vue **[Comparer Launch à Source](#compare-launch-to-source)**, avec les actions disponibles.
+
+   Ces deux actions vous permettent d’accéder à la tâche **Comparer Launch à Source** appropriée. À partir de là, vous pouvez **[Rebaser](#rebase-a-launch-from-source)** ou **[Promouvoir](#promote-a-launch-to-source)** votre lancement tel qu’il était à ce stade.
 
 ## Rebaser un lancement (à partir de Source) {#rebase-a-launch-from-source}
 
-Lorsque des mises à jour ont été apportées aux fragments source et que vous souhaitez copier ces modifications dans votre lancement :
+Lorsque des mises à jour ont été apportées aux fragments source, vous pouvez copier la source (y compris les modifications) dans votre lancement à l’aide de l’action **Rebase** :
 
 1. Accédez à la console Fragments de contenu .
 
