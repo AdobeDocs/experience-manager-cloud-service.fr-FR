@@ -6,7 +6,7 @@ exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 7baad256dfbf978e294b0ca66f7cf9205ac8648f
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 98%
@@ -85,7 +85,7 @@ Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
    * **Titre du lancement** : nom du lancement. Le nom doit avoir un sens pour les personnes chargées de la création.
    * **avec le contenu existant** : le contenu d’origine sera utilisé pour créer le lancement.
    * **en utilisant un nouveau modèle pour remplacer la page** : voir [Création d’un lancement avec un nouveau modèle](#create-launch-with-new-template) pour plus de détails.
-   * **Hériter des données actives de la page source** : sélectionnez cette option pour mettre automatiquement à jour le contenu des pages de lancement lors de la modification des pages source. Cette option transforme le lancement en [Live Copy](/help/sites-cloud/administering/msm/overview.md). Par défaut, cette option est sélectionnée.-->
+   * **Hériter des données actives de la page source** : sélectionnez cette option pour mettre automatiquement à jour le contenu des pages de lancement lors de la modification des pages source. Cette option transforme le lancement en [Live Copy](/help/sites-cloud/administering/msm/overview.md). Par défaut, cette option est sélectionnée.
    * **Date de lancement** : date et heure d’activation de la copie de lancement (selon l’indicateur **Prêt pour la production**. Voir [Lancements – Ordre des événements](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)).
 
    ![Propriétés de lancement](/help/sites-cloud/authoring/assets/launches-properties.png)
