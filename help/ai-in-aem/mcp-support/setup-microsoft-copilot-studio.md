@@ -61,7 +61,7 @@ Pour connecter Microsoft Copilot Studio aux serveurs MCP AEM, procédez comme su
 
 1. Validez la connectivité avec le serveur MCP ; connectez-vous avec votre navigateur lorsque Copilot Studio vous redirige.
 
-   * Connectez-vous à l’aide de votre **** après redirection.
+   * Connectez-vous à l’aide de votre **&#x200B;**&#x200B;après redirection.
 
    ![Test de la connexion au serveur MCP AEM.](assets/copilot-8.png)
 
