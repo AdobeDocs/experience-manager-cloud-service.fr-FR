@@ -5,10 +5,13 @@ role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 24fa5751-c006-4c39-bdc3-b46a4974638e
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+hide: true
+hidefromToC: true
+index: false
+source-git-commit: 44d7e7357c86183d1ddfa8dce9c26b48448554f6
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 4%
+source-wordcount: '908'
+ht-degree: 7%
 
 ---
 
@@ -20,7 +23,7 @@ L’authentification de serveur à serveur OAuth permet un accès sécurisé par
 
 Avant de commencer, vérifiez que les conditions préalables suivantes sont remplies :
 
-* Assurez-vous d’avoir [accès au Adobe Developer Console](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/requirements/access-rights) spécifique à l’environnement que vous utilisez.
+* Assurez-vous d’avoir [accès au Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights) spécifique à l’environnement que vous utilisez.
 * [Attribuez le rôle d’administrateur système ou de développeur dans le Adobe Admin Console](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions) pour activer l’accès au Adobe Developer Console.
 
 ## Comment générer un jeton d’accès à l’aide de l’authentification de serveur à serveur OAuth ?
@@ -64,7 +67,7 @@ Suivez les étapes ci-dessous pour générer un jeton d’accès à partir de la
 
 >[!ENDTABS]
 
-### &#x200B;2. Ajouter des API Forms
+### &#x200B;2. Ajout des API Forms
 
 Ajoutez des API Forms en fonction de vos besoins :
 
@@ -98,7 +101,7 @@ Ajoutez des API Forms en fonction de vos besoins :
 
 2. **Sélectionnez l’API de diffusion et d’exécution AEM Forms**
    1. Dans la boîte de dialogue _Ajouter une API_, filtrez par **Experience Cloud**
-   2. Sélectionnez **« API de diffusion et d’exécution AEM Forms »**
+   2. Sélectionnez **« API de diffusion et d’exécution AEM Forms ».**
       ![Ajouter l’API de communication Forms](/help/forms/assets/adc-add-runtime-api.png)
 
    3. Cliquer sur **Suivant**
@@ -152,7 +155,7 @@ Le profil de produit fournit des autorisations (ou autorisations) pour que les i
     Scopes: AdobeID,openid,read_organizations
 ```
 
-### &#x200B;5. Génération de jetons d’accès
+### &#x200B;5. Génération de jeton d’accès
 
 Générez le jeton d’accès manuellement ou par programmation :
 
@@ -170,7 +173,7 @@ Générez manuellement les jetons d’accès dans Adobe Developer Console :
    1. Cliquez sur le bouton **Générer un jeton d’accès »** dans la section API de votre projet
    2. Copier le jeton d’accès généré
 
-   ![&#x200B; Générer un jeton d’accès &#x200B;](/help/forms/assets/adc-access-token.png)
+   ![ Générer un jeton d’accès ](/help/forms/assets/adc-access-token.png)
 
    >[!NOTE]
    >
@@ -257,8 +260,8 @@ Découvrez comment définir un environnement pour les API de communication Forms
                     <p class="is-size-6">Découvrez comment configurer un environnement pour les API de communications Forms synchrones (à la demande) qui génèrent ou traitent des documents instantanément. </p>
                 </div>
                 <a href="/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-<span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
-</a>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> En savoir plus </span>
+                </a>
             </div>
         </div>
     </div>
@@ -281,8 +284,8 @@ Découvrez comment définir un environnement pour les API de communication Forms
                     <p class="is-size-6">Découvrez comment configurer un environnement pour les API de communications Forms asynchrones (par lots) qui génèrent ou traitent plusieurs documents de manière planifiée.</p>
                 </div>
                 <a href="/help/forms/aem-forms-cloud-service-communications-batch-processing.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-<span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
-</a>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> En savoir plus </span>
+                </a>
             </div>
         </div>
     </div>
