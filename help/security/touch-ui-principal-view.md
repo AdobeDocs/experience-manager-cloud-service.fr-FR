@@ -4,10 +4,10 @@ description: Découvrez la nouvelle interface utilisateur tactile qui facilite l
 feature: Security
 role: Admin
 exl-id: 855e112a-39f7-4aee-9e29-ece1aa9acf0a
-source-git-commit: bdc5249a7a48224007c1ab697343245001e03168
-workflow-type: ht
-source-wordcount: '1111'
-ht-degree: 100%
+source-git-commit: 99632006310beebe13c5d5885a8e9e7937c8f627
+workflow-type: tm+mt
+source-wordcount: '1210'
+ht-degree: 86%
 
 ---
 
@@ -65,7 +65,7 @@ Vous pouvez ajouter des privilèges en effectuant une recherche à partir du cha
 >
 >Pour obtenir la liste complète des privilèges et descriptions, voir [Administration des utilisateurs et utilisatrices, des groupes et des droits d’accès](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/security/user-group-ac-admin#access-right-management).
 
-![Recherche d’autorisations d’un chemin donné.](assets/image2019-3-21_0-5-47.png) ![Ajoutez une nouvelle entrée pour « dam-users », comme illustré par un chemin sélectionné dans des colonnes verticales.](assets/image2019-3-21_0-6-53.png)
+![Search permission for a given path.](assets/image2019-3-21_0-5-47.png) ![Add New Entry for &#39;dam-users&#39; as shown by a path selected in vertical columns.](assets/image2019-3-21_0-6-53.png)
 
 Une fois la liste des privilèges sélectionnée, l’utilisateur ou utilisatrice peut choisir le Type d’autorisation : Deny (Refuser) ou Allow (Autoriser), comme illustré ci-dessous.
 
@@ -126,7 +126,7 @@ Vous pouvez accéder à la vue de l’interface d’utilisation tactile Autorisa
 
 Une fois que vous avez lancé l’affichage Autorisations, vous pouvez cliquer sur **Affichage des nœuds** ou **Affichage filtré** dans le coin supérieur droit de l’écran, en fonction de vos préférences d’affichage.
 
-#### Affichage des nœuds
+#### Affichage des nœuds {#node-view}
 
 Dans cette vue, les listes de contrôle d’accès sont présentées pour chaque nœud individuel (chemin d’accès). Cela fournit des informations sur les éléments suivants :
 
@@ -136,14 +136,17 @@ Les utilisateurs et utilisatrices ont la possibilité d’ajouter, de supprimer 
 
 ![Affichage des nœuds](assets/image-2025-2-5_15-26-2.png)
 
-#### Affichage filtré
+#### Vue d’audit {#audit-view}
 
-Cette vue permet aux utilisateurs et utilisatrices de rechercher efficacement des autorisations sur un chemin d’accès et des principaux spécifiés. Dans cette vue, les utilisateurs et utilisatrices peuvent facilement déterminer le type d’autorisations accordées à un groupe d’entités de sécurité pour le chemin d’accès sélectionné.
-En outre, la vue filtrée fournit des informations sur les listes de contrôle d’accès actuelles. Elle affiche les listes de contrôle d’accès associées au nœud parent du chemin d’accès sélectionné, en tenant compte du principal sélectionné et des principaux communs.
+This view allows users to efficiently search for applied permissions on a specified path and selected principals. In this view, users can clearly identify the type of permissions granted to one or more principals for the selected path.
 
-![Affichage Filtre](assets/FilteredView.png)
+Group membership can optionally be displayed by selecting the dedicated checkbox. When this option is enabled, the permission evaluation will consider all groups of the principal, not only the selected principal.
 
-### Affichage Autorisations du navigateur de référentiel {#the-repository-browser-permissions-view}
+Additionally, the Audit View provides insights into effective ACLs. It displays the ACLs associated with the parent node of the selected path, taking into account the selected principal as well as any common principals.
+
+![Affichage Filtre](assets/audit-view.png)
+
+### The Repository Browser Permissions and Audit view {#the-repository-browser-permissions-and-audit-view}
 
 L’affichage des autorisations est également accessible via le [navigateur de référentiel](/help/implementing/developing/tools/repository-browser.md).
 
@@ -155,7 +158,11 @@ Vous pouvez y accéder en procédant comme suit :
 
 1. Une fois dans le navigateur de référentiel, cliquez sur l’onglet **Autorisations**.
 
-   ![Onglet Autorisations](assets/image-2025-2-5_15-29-33.png)
+   ![Onglet Autorisations](/help/security/assets/permissions-tab.png)
+
+1. The audit view allows users efficiently search for applied permissions on a specified path and selected principals. Group membership can optionally be displayed by selecting the dedicated checkbox.
+
+   ![Audit tab](/help/security/assets/audit-tab.png)
 
 **Note** : pour afficher les autorisations, des droits d’administration sont requis. Suivez les étapes mentionnées [ici](/help/implementing/developing/tools/repository-browser.md#navigate-the-hierarchy-navigate-the-hierarchy) pour accéder aux autorisations.
 
@@ -176,7 +183,7 @@ Ceci entraînait une certaine confusion quant à la configuration exacte. Le tab
    <td><code>jcr:read</code></td>
   </tr>
   <tr>
-   <td>Modification</td>
+   <td>Modifier</td>
    <td><p><code>jcr:modifyProperties</code></p> <p><code>jcr:lockManagement</code></p> <p><code>jcr:versionManagement</code></p> </td>
   </tr>
   <tr>
@@ -188,11 +195,11 @@ Ceci entraînait une certaine confusion quant à la configuration exacte. Le tab
    <td><p><code>jcr:removeNode</code></p> <p><code>jcr:removeChildNodes</code></p> </td>
   </tr>
   <tr>
-   <td>Lecture de l’ACL</td>
+   <td>Lire l’ACL</td>
    <td><code>jcr:readAccessControl</code></td>
   </tr>
   <tr>
-   <td>Modification de l’ACL</td>
+   <td>Modifier l'ACL</td>
    <td><code>jcr:modifyAccessControl</code></td>
   </tr>
   <tr>
