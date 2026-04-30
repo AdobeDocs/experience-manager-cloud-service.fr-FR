@@ -57,7 +57,7 @@ Developer Console n’est accessible que par les utilisateurs et utilisatrices b
 
 Pour afficher les données des services de création et de publication, les utilisateurs doivent également être affectés au « Profil de produit Utilisateurs AEM » ou « Profil de produit Administrateurs AEM » sur les deux services.
 
-Pour plus d’informations sur la configuration des autorisations utilisateur, consultez la [Documentation de Cloud Manager.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)
+Pour plus d’informations sur la configuration des autorisations utilisateur, consultez la [Documentation de Cloud Manager.](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)
 
 ## Onglet Lots OSGi {#osgi-bundles}
 
