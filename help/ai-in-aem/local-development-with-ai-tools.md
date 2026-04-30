@@ -4,10 +4,10 @@ description: Découvrez comment configurer des outils de codage d’IA avec le c
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: 0fb601ee1479bdcbb4932592185c5984d56171ef
+source-git-commit: 827cf0dada4e624418dc967a9bce8ebf728f7ad7
 workflow-type: tm+mt
-source-wordcount: '1423'
-ht-degree: 1%
+source-wordcount: '1601'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Cet article se concentre sur le développement local avec les outils d’IA pour le **développement de la pile Java**. Pour Edge Delivery Services, voir [Développement à l’aide d’outils d’IA](https://www.aem.live/developer/ai-coding-agents).
+>Cet article se concentre sur le développement local avec les outils d’IA pour le développement de **pile Java**. Pour Edge Delivery Services, voir [Développement à l’aide d’outils d’IA](https://www.aem.live/developer/ai-coding-agents).
 
 Les agents de codage d’IA (Claude Code, Cursor, GitHub Copilot et outils similaires) disposent d’une connaissance approfondie des technologies sous-jacentes d’AEM (Java, OSGi, Sling, JCR, HTL), mais ne connaissent pas nécessairement les bonnes pratiques pour générer le code et la configuration, ni comment déboguer les problèmes de développement courants d’AEM.
 
@@ -28,9 +28,11 @@ Quatre composantes complémentaires abordent ce problème :
 | **Serveur MCP local Quickstart** | Expose les données d’exécution en direct d’une instance AEM SDK locale pour prendre en charge le dépannage |
 | **Serveur MCP local** | Permet la validation et le contrôle au moment de l’exécution d’une instance Dispatcher locale |
 
+Consultez les [tutoriels de développement assisté par l’IA](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview) pour obtenir des instructions pratiques supplémentaires.
+
 >[!NOTE]
 >
-> Les serveurs MCP distants d’AEM Cloud Service sont également utiles au développement local, mais ne sont pas abordés dans cet article. Pour en savoir plus à ce sujet, consultez l’article [&#x200B; Utilisation de MCP avec Cloud Service &#x200B;](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md).
+> Les serveurs MCP distants d’AEM Cloud Service sont également utiles au développement local, mais ne sont pas abordés dans cet article. Pour en savoir plus à ce sujet, consultez l’article [ Utilisation de MCP avec Cloud Service ](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md).
 
 ## AGENTS.md {#agentsmd}
 
@@ -57,7 +59,7 @@ Adobe publie les compétences AEM as a Cloud Service dans le référentiel **[ad
 
 ### Installation des compétences {#install-skills}
 
-Sélectionnez la méthode qui correspond à votre outil de codage d’IA. L’installation des compétences les rend disponibles pour tous les projets sur cette machine.
+Sélectionnez la méthode qui correspond à votre outil de codage d’IA. L’installation des compétences les rend disponibles pour tous les projets sur cette machine. Voir le [tutoriel Configuration des compétences de l’agent AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills) pour une présentation concrète.
 
 #### Claude Code {#claude-code}
 
@@ -120,6 +122,8 @@ CTA Link (ctaLink) - Pathfield
 ```
 
 L’agent fait écho à la spécification du champ pour confirmation, puis génère tous les fichiers de composant. Les modèles pris en charge comprennent les champs multiples avec des éléments imbriqués composites, la logique d’affichage/masquage conditionnel, l’extension des composants principaux via Sling Resource Merger et les tests JUnit 5 à l’aide de simulations AEM.
+
+Pour en savoir plus, suivez le tutoriel [ Développement de composants à l’aide des compétences de l’agent AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development).
 
 ### Utilisation des compétences Dispatcher {#use-the-dispatcher-skill}
 
