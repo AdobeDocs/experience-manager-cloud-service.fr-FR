@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: a10a4bf02d5e006e6c151b48606c4e9412193a14
+source-git-commit: d389f158ddd71f90b5ee9b707050f5b593ec595a
 workflow-type: tm+mt
-source-wordcount: '2180'
-ht-degree: 29%
+source-wordcount: '2030'
+ht-degree: 31%
 
 ---
 
@@ -28,17 +28,19 @@ La section suivante concerne les notes de mise à jour techniques de la version 
 
 ## Date de publication {#release-date}
 
-La date de publication de la version actuelle d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2026.3.0) est le vendredi 26 mars 2026. La prochaine disponibilité des fonctionnalités (2026.4.0) est prévue pour le vendredi 30 avril 2026.
+La date de publication de la version actuelle (2026.4.0) de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le 30 avril 2026. La prochaine version des fonctionnalités (2026.5.0) est prévue pour le 28 mai 2026.
 
 ## Notes de mise à jour de la maintenance {#maintenance}
 
 Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/release-notes/maintenance/latest.md).
 
-## Vidéo de mise à jour {#release-video}
+<!-- 
+## Release Video {#release-video}
 
-Regardez la vidéo de vue d’ensemble de la version de mars 2026 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2026.3.0 :
+Have a look at the April 2026 Release Overview video for a summary of the features added in the 2026.4.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483062/?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
+-->
 
 ## Programmes AEM Beta {#aem-beta-programs}
 
@@ -81,64 +83,21 @@ Voir [Programmes bêta AEM Foundation](#foundation-early-adopter).
 
 ### Cloud Manager (programmes Beta) {#cloud-manager-beta-programs}
 
-Voir [Programmes bêta &#x200B;](/help/implementing/cloud-manager/release-notes/current.md).
+Voir [Programmes bêta ](/help/implementing/cloud-manager/release-notes/current.md).
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Extraction/Archivage De Fragments De Contenu {#cf-checkout-in}
+### Intégration de la traduction dans l’IA {#ai-translation-integration}
 
-Pour améliorer la parité avec l’interface utilisateur tactile d’AEM, les fragments de contenu peuvent désormais être extraits et archivés à l’aide de la nouvelle interface utilisateur d’administration de fragments de contenu. La fonctionnalité d’extraction reste inchangée, ce qui verrouille un fragment de contenu extrait et l’empêche d’être modifié dans l’éditeur de fragment de contenu par d’autres utilisateurs. Les utilisateurs et utilisatrices qui possèdent un fragment de contenu et les administrateurs et administratrices peuvent extraire et archiver à nouveau le fragment. L’extraction d’un fragment n’a aucun effet sur les fragments ou ressources enfants référencés.
-
-### Panneau des tâches des lancements de fragments de contenu {#cf-launches-jobs}
-
-Vous pouvez désormais afficher les tâches asynchrones pour les lancements de fragments de contenu dans le panneau Propriétés de l’interface utilisateur d’administration des lancements de fragments de contenu pour observer leur statut : si une tâche est toujours en cours d’exécution, a été terminée ou abandonnée, ainsi que des informations détaillées pertinentes sur la tâche.
-
-### Mettre à jour vers l’éditeur de texte enrichi de l’éditeur de fragment de contenu {#cf-rte-update}
-
-L’éditeur de texte enrichi (RTE) de l’éditeur de fragment de contenu a été migré de TinyMCE vers TipTap. Ce changement comporte un certain nombre d&#39;avantages.
-
-* L’éditeur universel et l’éditeur de fragment de contenu utilisent désormais la même pile de technologie d’éditeur de texte enrichi.
-   * Cela signifie que les deux éditeurs produisent désormais le même HTML.
-   * Les extensions peuvent désormais être réutilisables.
-   * Les mêmes fonctions et méthodes sont désormais disponibles à l’aide des deux éditeurs (dans les cas d’utilisation découplée).
-   * L’objectif final est qu’une configuration mène à une expérience unifiée dans les deux éditeurs.
-* L’éditeur de contenu a désormais une nouvelle apparence dans le style Spectrum 2.
-* De nouvelles fonctionnalités sont disponibles dans l’éditeur de fragment de contenu, notamment la recherche et le remplacement, ainsi que la préparation du gestionnaire de contenu.
+Les utilisateurs d’AEM peuvent désormais tirer parti des grands modèles de langue (LLM) pour la traduction de contenu, offrant ainsi une qualité de traduction humaine à la vitesse de la traduction automatique. Tout comme les services de traduction tiers traditionnels, Azure OpenAI peut être configuré en tant que fournisseur de traduction dans AEM, avec la prise en charge de LLM supplémentaires prévue pour les prochaines versions. Les clients utilisent leurs propres licences LLM pour cette fonctionnalité. En outre, les guides de style de traduction d’entreprise peuvent être chargés vers AEM, ce qui permet d’extraire les règles de traduction pour assurer la cohérence de la marque et du style. Consultez [ Configuration de l’intégration de la traduction d’IA ](/help/sites-cloud/administering/translation/ai-translation-integration.md) pour plus d’informations.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Gestionnaire de contenu dans AEM Sites**
+**Le gestionnaire d’accès est désormais disponible pour les applications Adobe Workfront et non Adobe**
 
-Le gestionnaire d’accès est désormais disponible dans AEM Sites, permettant une découverte intelligente des ressources directement depuis AEM Assets. Il permet aux utilisateurs et utilisatrices de découvrir, parcourir et réutiliser facilement les ressources les plus pertinentes directement dans leur workflow, éliminant ainsi la nécessité de changer de contexte.
+Le gestionnaire de contenu est désormais disponible pour les applications Adobe Workfront et non Adobe (tierces), ce qui permet d’étendre la découverte intelligente des ressources et la réutilisation du contenu au-delà d’Adobe Express et d’AEM Sites. Cette version apporte aux workflows Adobe Workfront et aux applications externes l’expérience complète du gestionnaire de contenu, notamment la recherche optimisée par l’IA, les recommandations contextuelles, la découverte basée sur des résumés de campagne, l’accès aux rendus Dynamic Media, la découverte de fragments de contenu, les filtres et les métadonnées de ressources.
 
-Le gestionnaire d’accès de contenu fournit des fonctionnalités intelligentes pour les ressources, telles que des suggestions basées sur des résumés de campagne et des suggestions contextuelles, l’accès aux rendus Dynamic Media et des métadonnées de ressources détaillées.
-
-Prochainement : prise en charge des gestionnaires de contenu pour les applications Adobe Workfront et AJO B2C, y compris la possibilité de découvrir des fragments de contenu
-
-### Nouvelles fonctionnalités de Dynamic Media {#dynamic-media-new-features}
-
-#### Mises à jour de l’éditeur de modèles Dynamic Media {#dynamic-media-template-editor-updates}
-
-**Améliorations de la gestion des couches**
-
-* Réorganisation des calques par glisser-déposer : les calques peuvent désormais être réorganisés directement dans le panneau Calques par glisser-déposer, ce qui permet d’organiser plus rapidement et de manière plus intuitive l’ordre d’empilement des calques au-delà des actions Avancer ou Reculer d’un plan existantes.
-* Copier, coller et dupliquer : prise en charge complète de la copie, du collage et de la duplication de calques à l’aide des raccourcis clavier (Cmd/Ctrl+C, V, D) ou du menu contextuel, avec prise en charge des sélections multicouches.
-* Bouton Séparer les propriétés de calque : ajout du bouton Propriétés du calque dédié pour une navigation plus facile vers les paramètres de calque, avec prise en charge du double-clic sur les calques pour un accès rapide.
-
-**Fonctionnalités de formatage de texte**
-
-* Contrôle de l’espacement des lignes : le nouveau curseur d’espacement des lignes permet un contrôle précis de la hauteur des lignes dans les calques de texte, avec une prise en charge complète de bout en bout, y compris l’annulation/la restauration et l’enregistrement/le chargement des modèles.
-* Mise en forme Toutes les majuscules : les calques de texte prennent désormais en charge l’option de mise en forme Toutes les majuscules de la barre d’outils Style de police avec les options Gras, Italique et Souligné.
-* Options d’alignement vertical : ajout de contrôles d’alignement vertical pour les calques de texte, offrant ainsi un positionnement plus précis du texte dans les zones de texte.
-
-**Contrôles de taille et de Dimension**
-
-* Déverrouiller le rapport d’aspect : les utilisateurs peuvent désormais déverrouiller le rapport d’aspect lors de l’ajustement des propriétés de taille, ce qui permet des ajustements de largeur et de hauteur indépendants pour un dimensionnement de calque plus flexible.
-* Configuration des lignes d’ajustement : ajout de la prise en charge des paramètres `copyfitlines` et `copyfitmaxlines` dans les propriétés d’ajustement du texte, pour un contrôle plus fin du comportement d’ajustement du texte.
-
-**Visuel polonais**
-
-* Mise à jour des icônes pour les calques Timer et Shape avec des icônes système de conception Spectrum 2 (S2) affinées.
+Vous pouvez désormais découvrir, évaluer et réutiliser des ressources approuvées par AEM Assets directement dans vos applications préférées, ce qui permet une utilisation cohérente des ressources, une efficacité améliorée et une création de contenu rationalisée à la fois dans les applications Adobe et non Adobe.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -147,40 +106,65 @@ Prochainement : prise en charge des gestionnaires de contenu pour les applicatio
 **Afficher les libellés pour la liste déroulante à sélection multiple dans Submission PDF**
 Les composants de liste déroulante à sélection multiple dans le Forms adaptatif effectuent désormais le rendu de leurs libellés d’affichage sélectionnés dans la [PDF d’envoi générée](/help/forms/generate-document-of-record-core-components.md), en s’assurant que le document reflète précisément ce que les utilisateurs voient sur le formulaire.
 
-**Amélioration de l’accessibilité des composants de case à cocher, de bouton radio et de panneau**
-Les composants principaux de Forms adaptatifs introduisent le balisage sémantique compatible avec WCAG 2.2 pour les [groupes de cases à cocher (v2)](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [groupes de boutons radio (v2)](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) et le [composant de panneau](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). Ces composants exploitent les éléments HTML `<fieldset>` et `<legend>` pour établir des relations significatives entre les libellés de groupe et leurs options, ce qui permet une interprétation précise par les lecteurs d’écran et d’autres technologies d’assistance.
+**Amélioration de l’accessibilité des composants Case à cocher, Bouton radio et Panneau**
+Les composants principaux de Forms adaptatifs introduisent le balisage sémantique compatible avec WCAG 2.2 pour les [groupes de cases à cocher (v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [groupes de boutons radio (v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) et le [composant de panneau](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). Ces composants exploitent les éléments HTML `<fieldset>` et `<legend>` pour établir des relations significatives entre les libellés de groupe et leurs options, ce qui permet une interprétation précise par les lecteurs d’écran et d’autres technologies d’assistance.
 
-**Prise en charge des versions dans Forms Manager**
+**Prise en charge du contrôle de version dans Forms Manager**
 Forms Manager [prend désormais en charge le contrôle de version pour les Forms adaptatifs (composants principaux et composants de base)](/help/forms/manage-form-versions-forms-manager.md), les fragments de formulaire, les thèmes, les modèles XDP et les ressources binaires. Créez des versions, affichez l’historique complet des versions et restaurez les états précédents de vos ressources de formulaire directement à partir de la console Forms et documents.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Nouvelles fonctionnalités {#foundation-new}
 
-#### Gestion simplifiée des index {#simplified-index-management}
+#### Outils d’IA dédiée aux IDE pour le développement Java et Dispatcher d’AEM {#ai-dev}
 
-La [gestion simplifiée des index](https://oak-indexing.github.io/oakTools/simplified.html) offre un moyen plus simple de définir des index personnalisés et de personnaliser les index prêts à l’emploi à l’aide d’un fichier JSON, sans copier des définitions complètes ni gérer les versions manuellement. Les personnalisations fusionnent avec le dernier index prêt à l’emploi et une nouvelle version d’index est créée si nécessaire.
+Les équipes Java-stack utilisent de plus en plus le développement assisté par IA dans des outils tels que Cursor, Claude Code, Visual Studio et IntelliJ pour accélérer la diffusion des fonctionnalités et améliorer la qualité du code.
 
-#### Serveur MCP Cloud Manager {#cm-mcp-server}
+Les agents de codage peuvent utiliser l’outil IDE pour générer et déboguer le code AEM et la configuration du Dispatcher. À titre d’exemple, la présentation vidéo ci-dessous montre comment créer un composant AEM à l’aide des compétences de l’agent.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480344/?captions=fre_fr&quality=12)
+Apprenez-en davantage sur [le développement local avec les outils d’IA](/help/ai-in-aem/local-development-with-ai-tools.md) et n’hésitez pas à envoyer des questions ou des commentaires par e-mail à [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com).
 
-Les IDE modernes utilisent le protocole MCP (Model Context Protocol) pour permettre aux modèles de langage volumineux (LLM) d’appeler les outils exposés par les serveurs MCP. Au lieu d’intégrer directement les spécifications d’API de bas niveau, l’équipe de développement peut simplement décrire son intention en langage naturel.
 
-Le serveur Cloud Manager MCP vous permet d’interagir avec les API Cloud Manager directement depuis votre IDE à l’aide d’invites. Les scénarios pris en charge comprennent l’exécution des pipelines, la vérification du statut de l’environnement, etc.
+>[!VIDEO](https://video.tv.adobe.com/v/3484978/?learn=on&enablevpops)
 
-En savoir plus sur les [serveurs AEM MCP](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md).
+#### Serveur MCP de gouvernance d’expérience {#gov-mcp-server}
+
+Le serveur MCP d’Experience Governance est désormais disponible pour tous. Il s’intègre aux outils de développement et aux chatbots de l’IA qui prennent en charge le protocole MCP (Model Context Protocol), ce qui vous permet de protéger l’intégrité et la conformité de la marque à l’aide d’invites en langage naturel dans votre chatbot ou votre IDE. Vous pouvez évaluer le contenu (texte, images, pages) par rapport aux règles de gouvernance de marque, et récupérer les configurations de marque et les contrôles de gouvernance disponibles.
+
+En savoir plus sur les [serveurs AEM MCP](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) et l’[agent de gouvernance](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
+
+#### Claude Connector {#aem-claude-connector}
+
+Les utilisateurs Claude peuvent parcourir la [marketplace du connecteur](https://claude.ai/settings/connectors) d&#39;Anthropic pour installer en 1 clic le [connecteur Adobe Experience Manager](/help/ai-in-aem/mcp-support/setup-claude.md#aem-claude-connector). Ce serveur MCP expose un ensemble croissant d’outils permettant d’interagir avec AEM, notamment pour modifier le contenu à l’aide d’invites.
+
+#### OIDC AEM sur la publication de nouvelles fonctionnalités {#aem-oidc-on-publish-new-features}
+
+* Correction : les paramètres de requête de la requête originale sont perdus après l’authentification
+* Redirection personnalisée après l’authentification dans l’authentification OIDC [documentation](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md#custom-redirect-after-authentication)
+
+#### Prise en charge du service de messagerie pour l’API Microsoft Graph {#mail-service-graph-api}
+
+Le service de messagerie AEM prend désormais en charge Microsoft® Outlook (via Microsoft 365) à l’aide de l’API Microsoft Graph. Cela s’avère particulièrement utile pour les organisations qui n’autorisent pas le protocole SMTP, qui est déjà pris en charge par le service de messagerie. Authentification via OAuth 2.0. [Découvrez comment configurer](/help/security/oauth2-support-for-mail-service.md#microsoft-graph-api).
+
+#### Les journaux CDN peuvent être transférés à la logique Sumo {#sumo-cdn-logforwarding}
+
+La fonctionnalité [Transfert de journal](/help/implementing/developing/introduction/log-forwarding.md#sumologic) prend désormais en charge l’envoi de journaux CDN à Sumo Logic. Auparavant, le transfert des journaux vers Sumo Logic se limitait aux journaux AEM.
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Avis importants {#foundation-notices}
 
+#### Erreurs enrichies d’authentification IMS {#ims-auth-rich-errors}
+
+Pour faciliter le dépannage des intégrations IMS, `imsauth` a ajouté la prise en charge des *erreurs riches*.
+
+Au lieu de renvoyer uniquement un code d’état HTTP, ces erreurs fournissent un contexte supplémentaire pour aider à diagnostiquer et à résoudre les problèmes qui peuvent bloquer l’authentification et l’accès.
+
 #### Obsolescence des API Java {#java-api-deprecation}
 
-Les API obsolètes ciblant la suppression du 2/26/2026 ne doivent plus être utilisées dans le code. Pour empêcher les blocs de déploiement, supprimez l’utilisation de l’API avant le **30 mars 2026**. Dates importantes :
+Il est essentiel de supprimer l’utilisation des API obsolètes.
 
-* **À compter du 26 janvier 2026** : les e-mails de notification du Centre de maintenance sont envoyés comme rappel pour supprimer l’utilisation de ces API.
-* **26 février 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API seront **mis en pause** pendant l’étape **Qualité du code**. Un responsable de déploiement, un chef de projet ou un propriétaire d’entreprise peut contourner le problème pour autoriser le pipeline à continuer. *Cela peut ralentir votre capacité à valider et à publier les modifications de code.*
-* **30 mars 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **&#x200B;**&#x200B;lors de l’étape **Qualité du code**. Les déploiements seront bloqués jusqu’à ce que l’utilisation obsolète de l’API soit supprimée. *Cela peut vous empêcher de publier des mises à jour urgentes et peut avoir un impact sur vos opérations commerciales.*
-* **4 mai 2026** : les environnements qui utilisent toujours des API obsolètes **ne recevront pas de mises à jour de versions Adobe critiques** et ne sont pas soumis aux engagements standard d’Adobe en matière de performances et de disponibilité. Par conséquent, vous ne recevrez pas de nouvelles fonctionnalités ou de nouveaux correctifs, la stabilité et la disponibilité des applications peuvent être affectées négativement et l&#39;exposition aux risques de sécurité peut encore augmenter.
+Depuis le **14 avril**, les pipelines Cloud Manager qui contiennent du code à l’aide d’API ciblant la suppression du 2/26/2026 **échouent lors de l’étape Qualité du code**. Les déploiements seront bloqués jusqu’à ce que l’utilisation obsolète de l’API soit supprimée. *Cela peut vous empêcher de publier des mises à jour urgentes et peut avoir un impact sur vos opérations commerciales.*
+
+À compter du **11 juin 2026**, les environnements qui utilisent toujours ces API obsolètes **ne recevront pas de mises à jour de versions Adobe critiques** et ne seront pas soumis aux engagements standard d’Adobe en matière de performances et de disponibilité. Par conséquent, vous ne recevrez pas de nouvelles fonctionnalités ou de nouveaux correctifs, la stabilité et la disponibilité des applications peuvent être affectées négativement, et l&#39;exposition aux risques de sécurité peut encore augmenter.
 
 Pour plus d’informations, consultez l’[article sur l’obsolescence](/help/release-notes/deprecated-removed-features.md#aem-apis), mais pour plus de commodité, ces API sont répertoriées ci-dessous :
 
@@ -205,14 +189,6 @@ Pour plus d’informations, consultez l’[article sur l’obsolescence](/help/r
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Early Adopter Caractéristiques {#foundation-early-adopter}
 
-#### Outils d’IA dédiée à l’IDE pour le développement AEM Java et Dispatcher (programme Beta public) {#ai-dev-beta}
-
-Les équipes Java-stack utilisent de plus en plus le développement assisté par IA dans des outils tels que Cursor, Claude Code, Visual Studio et IntelliJ pour accélérer la diffusion des fonctionnalités et améliorer la qualité du code.
-
-Participez à la version Beta publique (aucune inscription nécessaire) pour tester les outils IDE qui peuvent être utilisés par les agents de codage pour générer et déboguer le code AEM et la configuration du Dispatcher.
-
-Pour en savoir plus, consultez la documentation bêta [Développement local avec des outils d’IA](/help/ai-in-aem/local-development-with-ai-tools.md) et envoyez un e-mail à l’adresse [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) pour toute question ou commentaire.
-
 #### Fonctions D’AEM Edge (Programme Beta) {#edge-functions}
 
 [Fonctions AEM Edge](/help/implementing/developing/introduction/edge-functions.md) vous permet d’exécuter JavaScript au niveau de la couche CDN, ce qui rapproche le traitement des données de l’utilisateur final. Cela réduit la latence et permet d’obtenir des expériences réactives et dynamiques en périphérie.
@@ -223,21 +199,25 @@ Cas d’utilisation courants :
 * Fonctionnement en tant que middleware entre le réseau CDN et votre origine
 * Remise en forme des réponses d’API tierces (et éventuellement agrégation de plusieurs réponses d’API) avant de les diffuser au navigateur
 * Composition et diffusion de HTML rendu sur le serveur Edge à l’aide de contenu assemblé à partir de divers serveurs principaux
-* Exposition d’un serveur MCP pour les LLM tels que ChatGPT et Claude pour accéder aux outils personnalisés
+* Exposer un serveur MCP pour les assistants d’IA tels que ChatGPT et Claude pour accéder aux outils personnalisés
 
 Nous disposons d’un nombre limité d’opportunités pour la diffusion de l’instance de publication AEM ou les projets Edge Delivery Services pour les sites de production en direct. Si vous souhaitez participer ou en savoir plus, adressez un e-mail à [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) avec une brève description de votre cas d’utilisation.
 
-#### Dépannage du pipeline de configuration de niveau web avec l’agent de développement (programme Beta) {#devagent-webtier}
+#### Dépannage du pipeline de configuration de niveau web (programme Beta) {#devagent-webtier}
 
 Les fonctionnalités [dépannage de pipeline](/help/ai-in-aem/agents/brand-experience/development/development.md) de l’agent de développement aident les développeurs à diagnostiquer et à résoudre efficacement les problèmes dans les déploiements d’AEM as a Cloud Service. En plus de prendre en charge les pipelines Full Stack (déploiement et qualité du code), l’agent de développement prend désormais en charge le dépannage du **pipeline de configuration de niveau web** dans le cadre d’un programme bêta.
 
-Pour demander l’accès à la version bêta, envoyez un e-mail à l’adresse [&#128279;](mailto:aem-devagent@adobe.com). Un accès préexistant aux agents dans AEM est requis.
+Pour demander l’accès à la version bêta, envoyez un e-mail à l’adresse [](mailto:aem-devagent@adobe.com). Un accès préexistant aux agents dans AEM est requis.
 
-#### Outils d’IA dédiée à l’IDE pour la migration d’AEM 6.5 vers AEM Cloud Service (programme Alpha) {#cm-ide-migration}
+#### Dépannage de l’IA dédiée à la réplication (programme Alpha) {#replication-ai-troubleshooting-alpha}
+
+À l’aide de l’assistant AI dans l’instance de création AEM et d’autres interfaces, vous pouvez résoudre les problèmes liés à la réplication, tels que les files d’attente bloquées. Pour rejoindre le programme Alpha, envoyez un e-mail à l’adresse [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com) pour décrire votre intérêt.
+
+#### Outils d’IA dédiée à l’IDE pour la migration d’AEM 6.5 vers AEM Cloud Service (programme Beta) {#cm-ide-migration}
 
 Accélérez votre migration d’AEM 6.5 vers AEM as a Cloud Service (pile Java) en utilisant l’outil d’IA dédiée à l’environnement de développement intégré pour agir sur les recommandations du rapport [Analyseur des bonnes pratiques](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
 
-Envoyer un courrier électronique à l’adresse [&#128279;](mailto:aemcs-ai-ide-tools-feedback@adobe.com) pour plus d’informations.
+Envoyer un e-mail à [](mailto:aemcs-ai-ide-tools-feedback@adobe.com) pour obtenir plus d’informations et demander l’accès à la fonctionnalité.
 
 #### Authentification Edge pour Edge Delivery Services (programme Beta) {#edge-authentication}
 
@@ -249,15 +229,13 @@ Si cela vous intéresse, envoyez un e-mail à [aemcs-edgecompute-feedback@adobe.
 
 Validez une build de production avec du trafic de test interne uniquement avant de l’exposer aux utilisateurs finaux. Déployez en production, acheminez uniquement le trafic Canary (à l’aide d’un en-tête spécial), surveillez le comportement, puis convertissez-le en trafic réel ou restaurez, sans affecter les clients et clientes.
 
-Déployez vos versions de code en production, mais limitez-les au trafic de test interne uniquement avant de décider d’accepter le trafic réel ou de restaurer.
-
 Envoyez un e-mail à [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) pour demander l’accès et partager vos commentaires.
 
 #### Instantanés pour les RDE (programme Beta) {#rde-snapshot-program}
 
-Dans la version bêta, les environnements de développement rapide (RDE) prennent désormais en charge une fonctionnalité permettant de prendre un instantané de l’état actuel du code et du contenu, qui peut être restauré ultérieurement. Cela peut s’avérer utile lors de la synchronisation du code qui peut devoir être restauré à un état précédent ou, lorsqu’au cours du développement, il est nécessaire d’alterner entre plusieurs fonctionnalités différentes. Il est également possible de restaurer uniquement le contenu modifiable en tant que point de départ connu pour les tests.
+Dans la version bêta, les environnements de développement rapide (RDE) prennent désormais en charge une fonctionnalité [pour prendre un instantané](/help/implementing/developing/introduction/rapid-development-environments.md#snapshots) de l’état actuel du code et du contenu, qui peut être restaurée ultérieurement. Cela peut s’avérer utile lors de la synchronisation du code qui peut devoir être restauré à un état précédent ou, lorsqu’au cours du développement, il est nécessaire d’alterner entre plusieurs fonctionnalités différentes. Il est également possible de restaurer uniquement le contenu modifiable en tant que point de départ connu pour les tests.
 
-Veuillez envoyer un e-mail à [&#128279;](mailto:aemcs-rde-support@adobe.com) si cette fonctionnalité vous intéresse et si vous souhaitez faire part de vos commentaires.
+Veuillez envoyer un e-mail à [](mailto:aemcs-rde-support@adobe.com) si cette fonctionnalité vous intéresse et si vous souhaitez faire part de vos commentaires.
 
 #### Surveillance étendue des performances des applications (APM) (programme Alpha) {#apm-alpha}
 
