@@ -1,20 +1,20 @@
 ---
-title: Notes de mise à jour de l’éditeur universel version 2026.04.09
-description: Il s’agit des notes de mise à jour de la version 2026.04.09 de l’éditeur universel.
+title: Notes De Mise À Jour De L’Éditeur Universel 2026.04.30
+description: Voici les notes de mise à jour de la version 2026.04.30 de l’éditeur universel.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: a5f3b703706beab106591477372328e45f881b44
+source-git-commit: a6293278e50507943cd3f1055bc7c7f8dc479613
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 48%
+source-wordcount: '97'
+ht-degree: 22%
 
 ---
 
 
-# Notes de mise à jour de l’éditeur universel version 2026.04.09 {#release-notes}
+# Notes De Mise À Jour De L’Éditeur Universel 2026.04.30 {#release-notes}
 
-Voici les notes de mise à jour de la version du 9 avril 2026 de l’éditeur universel.
+Voici les notes de mise à jour de la version du 30 avril 2026 de l’éditeur universel.
 
 >[!TIP]
 >
@@ -22,10 +22,8 @@ Voici les notes de mise à jour de la version du 9 avril 2026 de l’éditeur un
 
 >[!TIP]
 >
->Consultez [cette page](/help/release-notes/release-notes-cloud/release-notes-current.md) pour obtenir les notes de mise à jour actuelle d’Adobe Experience Manager as a Cloud Service.
+>Pour consulter les notes de mise à jour actuelles d’Adobe Experience Manager as a Cloud Service, voir [cette page.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-## Nouveautés {#what-is-new}
+## Améliorations {#other-improvements}
 
-* L’option [&#x200B; Ajouter une image dans la barre d’outils de l’éditeur de texte enrichi (RTE)](/help/implementing/universal-editor/configure-rte.md#image) est désormais prise en charge pour les [projets de création et de conservation de contenu dans AEM as a Cloud Service.](https://www.aem.live/docs/aem-authoring)
-* [Le panneau Propriétés](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) est désormais réductible lorsque vous revenez de l’éditeur à [l’écran d’accueil.](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button)
-   * Contactez l’assistance clientèle d’Adobe si vous souhaitez utiliser cette fonctionnalité.
+* Correction d’un problème en raison duquel [le badge d’un élément modifiable](/help/sites-cloud/authoring/universal-editor/authoring.md#editing-content) masquait l’élément derrière dans certains cas.
