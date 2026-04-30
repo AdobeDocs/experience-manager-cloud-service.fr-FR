@@ -7,10 +7,10 @@ feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Pro
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '5973'
-ht-degree: 84%
+source-wordcount: '6103'
+ht-degree: 81%
 
 ---
 
@@ -35,7 +35,7 @@ La recherche de ressources dans AEM prend en charge les cas d’utilisation suiv
 | [Classement et amplification des recherches](#searchrank) | [Prédicats personnalisés](#custompredicates) | [Collections dynamiques](#collections) |
 | [Recherche avancée : filtrage et portée de la recherche](#scope) | | [Explication et résolution des problèmes liés aux résultats inattendus](#unexpected-results) |
 | [Recherche à partir d’autres solutions et applications](#search-assets-other-surfaces) :<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Application de bureau Experience Manager](#desktop-app)</li><li>[Images Adobe Stock](#adobe-stock)</li><li>[Ressources Dynamic Media](#search-dynamic-media-assets)</li></ul> | | |
-| [Sélecteur de ressources](#asset-picker) | | |
+| [Gestionnaire de contenu](#asset-picker) | | |
 | [Limites](#limitations) et [conseils](#tips) | | |
 | [Exemples illustrés](#samples) | | |
 
@@ -55,8 +55,8 @@ Familiarisez-vous avec l’interface de recherche des ressources et les actions 
 *Image : présentation de [!DNL Experience Manager Assets]’interface des résultats de recherche.*
 
 **A.** Enregistrer la recherche en tant que collection dynamique.
-**B.** Filtre ou prédicat pour limiter les résultats de la recherche.
-**C.** Afficher des fichiers, des dossiers ou les deux.
+**B.** Filtres ou prédicats pour limiter les résultats de recherche.
+**C.** Afficher les fichiers, les dossiers ou les deux.
 **D.** L’emplacement de la recherche est DAM.
 **Par Exemple** Accéder Aux Recherches Enregistrées.
 **F.** Cliquez sur Filtres pour ouvrir ou fermer le rail de gauche.
@@ -150,7 +150,7 @@ Vous pouvez améliorer la pertinence des mots-clés pour des ressources particul
 
 Vous pouvez l’utiliser à votre avantage en améliorant le classement de certaines ressources dans les résultats de recherche du mot-clé ciblé. Voir la vidéo d’exemple ci-dessous. Pour plus d’informations, voir [Recherche dans [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/3410336/?captions=fre_fr&quality=6)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *Vidéo : Découvrez comment les résultats de recherche sont classés et comment le classement peut être influencé.*
 
@@ -217,13 +217,13 @@ Vous pouvez rechercher des ressources en fonction des valeurs exactes de champs 
 | Date d’expiration | expire:YYYY-MM-DDTHH |
 | Heure d’activation | ontime:YYYY-MM-DDTHH |
 | Heure de désactivation | hors temps:YYYY-MM-DDTHH |
-| Plage de temps (expiration : dateontime,offtime) | champ de facette : lowerbound..upperbound |
+| Plage de temps (expiration : dateontime,offtime) | champ de facette : lowerbound.upperbound |
 | Chemin | /content/dam/&lt;nom_dossier> |
 | Titre du PDF | pdftitle:&quot;Adobe Document&quot; |
 | Objet | subject:&quot;Training&quot; |
 | Balises | tags:&quot;Location And Travel&quot; |
 | Type | type:&quot;image\png&quot; |
-| Largeur de l’image | largeur:lowerbound..upperbound |
+| Largeur de l’image | width:lowerbound..upperbound |
 | Hauteur de l’image | hauteur:lowerbound..upperbound |
 | Personne | personne :John |
 
@@ -245,7 +245,7 @@ Voici quelques exemples de formats de recherche pour des requêtes complexes :
 * Pour afficher les ressources avec une valeur de propriété contenant une chaîne spécifique (par exemple : le titre est Basel Meeting Room) : `title:*Meeting*`
 * Pour afficher les ressources qui contiennent une chaîne spécifique et qui possèdent une valeur de propriété en particulier (par exemple : rechercher une chaîne Adobe parmi les ressources dont le titre est John Doe) : `*Adobe* title:"John Doe"`
 
-## Recherche de ressources à partir d’autres offres ou interfaces [!DNL Experience Manager]  {#search-assets-other-surfaces}
+## Recherche de ressources à partir d’autres offres ou interfaces [!DNL Experience Manager] {#search-assets-other-surfaces}
 
 [!DNL Adobe Experience Manager] connecte le référentiel de gestion des ressources numériques à d’autres solutions [!DNL Experience Manager] afin de fournir un accès plus rapide aux ressources numériques et de rationaliser les workflows de création. Toute découverte de ressources commence par la navigation ou la recherche. Le comportement de recherche reste largement le même sur les différentes surfaces et solutions. Certaines méthodes de recherche changent lorsque l’audience cible, les cas d’utilisation et l’interface utilisateur varient d’une solution [!DNL Experience Manager] à l’autre. Les méthodes spécifiques sont documentées pour les solutions individuelles dans les liens ci-dessous. Les conseils et comportements universellement applicables sont décrits dans cet article.
 
@@ -253,7 +253,7 @@ Voici quelques exemples de formats de recherche pour des requêtes complexes :
 
 Grâce à Adobe Asset Link, les professionnels de la création peuvent désormais accéder au contenu stocké dans [!DNL Experience Manager Assets], sans quitter les applications Adobe Creative Cloud prises en charge. Ils peuvent parcourir, rechercher, extraire et archiver des ressources de manière transparente à l’aide du panneau intégré à l’application dans les applications [!DNL Adobe Creative Cloud] : [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] et [!DNL Adobe InDesign]. Asset Link permet également aux utilisateurs de rechercher des résultats visuellement similaires. Les résultats de l’affichage de la recherche visuelle sont optimisés par les algorithmes de machine learning d’Adobe AI et aident les utilisateurs à trouver des images esthétiquement similaires. Voir [Rechercher et parcourir des ressources](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) à l’aide d’Adobe Asset Link.
 
-### Recherche de ressources dans l’application de bureau [!DNL Experience Manager]  {#desktop-app}
+### Recherche de ressources dans l’application de bureau [!DNL Experience Manager] {#desktop-app}
 
 Les professionnels de la création utilisent l’application de bureau pour rendre les [!DNL Experience Manager Assets] facilement consultables et disponibles sur leur bureau local (Windows ou Mac). Les créatifs peuvent facilement afficher les ressources souhaitées dans le Finder du Mac ou l’Explorateur Windows, ouvertes dans des applications de bureau et modifiées localement ; les modifications sont réenregistrées dans [!DNL Experience Manager] avec une nouvelle version créée dans le référentiel. L’application prend en charge les recherches de base à l’aide d’un ou de plusieurs mots-clés, des caractères génériques `*` et `?`, et de l’opérateur `AND`. Voir [Navigation, recherche et prévisualisation des ressources](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#browse-search-preview-assets) dans l’application de bureau.
 
@@ -261,7 +261,7 @@ Les professionnels de la création utilisent l’application de bureau pour rend
 
 Les utilisateurs métiers et les spécialistes marketing utilisent Brand Portal pour partager efficacement et en toute sécurité les ressources numériques approuvées avec leurs équipes internes étendues, partenaires et revendeurs. Voir [Recherche de ressources sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html?lang=fr).
 
-### Rechercher des images [!DNL Adobe Stock]  {#adobe-stock1}
+### Rechercher des images [!DNL Adobe Stock] {#adobe-stock1}
 
 Dans l’interface utilisateur d’[!DNL Experience Manager], les utilisateurs peuvent rechercher des ressources Adobe Stock et obtenir des licences pour les ressources requises. Ajoutez `Location: Adobe Stock` dans le champ OmniSearch. Vous pouvez également utiliser le panneau **[!UICONTROL Filtres]** pour trouver toutes les ressources qui sont ou non sous licence, ou effectuer des recherches dans une ressource spécifique à l’aide du numéro de fichier Adobe Stock. Consultez la section [Gestion des images  [!DNL Adobe Stock] dans  [!DNL Experience Manager]](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
@@ -277,31 +277,25 @@ Les auteurs peuvent utiliser l’outil de recherche de contenu pour rechercher l
 
 La fonctionnalité de recherche [!DNL Experience Manager] prend en charge la recherche de collections et la recherche de ressources dans une collection. Voir [Recherche de collections](/help/assets/manage-collections.md).
 
-## Sélecteur de ressources {#asset-picker}
+## Conseiller ou conseillère en contenu {#asset-picker}
 
-[Le sélecteur de ressources &#x200B;](/help/assets/overview-asset-selector.md) (appelé sélecteur de ressources dans les versions antérieures de [!DNL Adobe Experience Manager]) vous permet de rechercher, de filtrer et de parcourir les ressources DAM d’une manière spéciale. Le sélecteur de ressources est disponible à l’adresse `https://[aem_server]:[port]/aem/assetpicker.html`. Vous pouvez récupérer les métadonnées des ressources sélectionnées à l’aide du sélecteur de ressources. Vous pouvez le lancer avec les paramètres de requête pris en charge, tels que le type de ressource (image, vidéo, texte) et le mode de sélection (sélections simples ou multiples). Ces paramètres définissent le contexte du sélecteur de ressources pour une instance de recherche particulière et restent inchangés tout au long de la sélection.
+Le [gestionnaire d’accès](/help/assets/integrate-adobe-non-adobe-applications.md) (appelé sélecteur de ressources dans les versions antérieures de [!DNL Adobe Experience Manager]) vous permet de rechercher, de filtrer et de parcourir les ressources DAM d’une manière spéciale. Le gestionnaire d’accès est disponible à l’adresse `https://[aem_server]:[port]/aem/assetpicker.html`. Vous pouvez récupérer les métadonnées des ressources sélectionnées à l’aide du gestionnaire d’accès. Vous pouvez le lancer avec les paramètres de requête pris en charge, tels que le type de ressource (image, vidéo, texte) et le mode de sélection (sélections simples ou multiples). Ces paramètres définissent le contexte du gestionnaire d’accès pour une instance de recherche particulière et restent inchangés tout au long de la sélection.
 
-Le sélecteur de ressources utilise le message HTML5 `Window.postMessage` pour envoyer au destinataire les données correspondant à la ressource sélectionnée. Il fonctionne uniquement en mode navigation et exclusivement avec la page de résultats Omni-recherche.
+Le gestionnaire d’accès utilise le message `Window.postMessage` d’HTML5 pour envoyer au destinataire les données correspondant à la ressource sélectionnée. Il fonctionne uniquement en mode navigation et exclusivement avec la page de résultats Omni-recherche.
 
-Transmettez les paramètres de requête suivants dans une URL pour démarrer le sélecteur de ressources dans un contexte spécifique :
+Transmettez les paramètres de requête suivants dans une URL pour lancer le gestionnaire de contenu dans un contexte particulier :
 
 | Nom | Valeurs | Exemple | Objectif |
 |---|---|---|---|
-| suffixe de la ressource (B) | Chemin du dossier comme suffixe de la ressource dans l’URL : [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | Pour démarrer le sélecteur de ressources avec un dossier particulier sélectionné, par exemple, le dossier `/content/dam/we-retail/en/activities`, l’URL doit se présentée comme suit : `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | Si vous avez besoin de sélectionner un dossier en particulier au démarrage du sélecteur de ressources, vous pouvez l’indiquer comme suffixe de ressource. |
-| `mode` | single, multiple | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | En mode multiple, vous pouvez sélectionner plusieurs ressources simultanément à l’aide du sélecteur de ressources. |
-| `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Utilisez ces paramètres pour ouvrir le sélecteur de ressources en tant que boîte de dialogue Granite. Cette option ne peut être appliquée qu’au démarrage du sélecteur de ressources via le champ Chemin de Granite, en la configurant comme URL pickerSrc. |
-| `root` | &lt;chemin_dossier> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | Utilisez cette option pour spécifier le dossier racine du sélecteur de ressources. Dans ce cas, le sélecteur de ressources vous permet de sélectionner uniquement les ressources enfants (directes/indirectes) sous le dossier racine. |
-| `viewmode` | de recherches | | Pour lancer le sélecteur de ressources en mode recherche, avec les paramètres `assettype` et `mimetype`. |
+| suffixe de la ressource (B) | Chemin du dossier comme suffixe de la ressource dans l’URL : [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | Pour lancer le gestionnaire d&#39;accès avec un dossier particulier, par exemple avec le dossier `/content/dam/we-retail/en/activities`, l&#39;URL doit être de la forme suivante : `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | Si vous avez besoin de sélectionner un dossier particulier lors du lancement du gestionnaire d’accès, vous pouvez le transmettre comme suffixe de ressource. |
+| `mode` | single, multiple | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | En mode multiple, vous pouvez sélectionner plusieurs ressources simultanément à l’aide du gestionnaire d’accès. |
+| `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Utilisez ces paramètres pour ouvrir la boîte de dialogue Gestionnaire de contenu en tant que Granite. Cette option s’applique uniquement lorsque vous lancez le gestionnaire d’accès via le champ de chemin Granite et que vous le configurez comme une URL de source de sélecteur. |
+| `root` | &lt;chemin_dossier> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | Utilisez cette option pour spécifier le dossier racine du gestionnaire d&#39;accès. Dans ce cas, le gestionnaire d’accès vous permet de sélectionner uniquement les ressources enfants (directes/indirectes) sous le dossier racine. |
+| `viewmode` | de recherches | | Pour lancer le gestionnaire d&#39;accès en mode recherche, avec les paramètres `assettype` et `mimetype`. |
 | `assettype` | Images, documents, multimédia, archives. | <ul><li>`https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives` </li></ul> | Utilisez l’option pour filtrer les types de ressources en fonction de la valeur indiquée. |
 | `mimetype` | Type MIME (`/jcr:content/metadata/dc:format`) d’une ressource (le caractère générique est également pris en charge). | <ul><li>`https://localhost:4502/aem/assetpicker.html?mimetype=image/png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png`</li></ul> | Utilisez-le pour filtrer les ressources basées sur le() type(s) MIME |
 
-Pour accéder à l’interface du sélecteur de ressources, accédez à `https://[aem_server]:[port]/aem/assetpicker`. Recherchez le dossier souhaité, puis sélectionnez une ou plusieurs ressources. Vous pouvez également rechercher la ressource souhaitée dans la zone Omni-recherche, appliquer un filtre selon vos besoins, puis la sélectionner.
-
-![Parcourir et sélectionner une ressource dans le sélecteur de ressources](assets/select-asset.png)
-
-<!--![Browse and select asset in the asset selector](assets/assetpicker.png)-->
-
-*Figure : Parcourir et sélectionner une ressource dans le sélecteur de ressources.*
+Pour accéder à l&#39;interface du gestionnaire d&#39;accès, accédez à `https://[aem_server]:[port]/aem/assetpicker`. Recherchez le dossier souhaité, puis sélectionnez une ou plusieurs ressources. Vous pouvez également rechercher la ressource souhaitée dans la zone Omni-recherche, appliquer un filtre selon vos besoins, puis la sélectionner.
 
 ## Restrictions {#limitations}
 
@@ -357,7 +351,7 @@ Utilisez des guillemets doubles autour des mots-clés pour rechercher des ressou
 
 *Figure : Exemple d’utilisation d’un caractère générique (astérisque) dans la recherche de ressources.*
 
-**Recherche avec un caractère générique (point d’interrogation)** : pour élargir la recherche, utilisez un ou plusieurs caractères « ? ». pour correspondre au nombre exact de caractères. Par exemple, dans l’illustration suivante :
+**Recherche avec point d’interrogation générique** : pour élargir la recherche, utilisez un ou plusieurs caractères « ? » pour correspondre au nombre exact de caractères. Par exemple, dans l’illustration suivante :
 
 * la requête `run???` ne correspond à aucune ressource ;
 
@@ -410,7 +404,7 @@ Exécutez les étapes suivantes pour activer ou désactiver Recherche optimisée
 
 1. Dans la section **[!UICONTROL Rechercher]**, sélectionnez **[!UICONTROL Recherche optimisée par l&#39;IA]** pour activer Recherche optimisée par l&#39;IA ou **[!UICONTROL Mot-clé]** pour le désactiver.
 
-   ![Activer ou désactiver Recherche optimisée par l&#39;IA &#x200B;](/help/assets/assets/enable-ai-search-admin-view.png)
+   ![Activer ou désactiver Recherche optimisée par l&#39;IA ](/help/assets/assets/enable-ai-search-admin-view.png)
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
@@ -491,7 +485,7 @@ Pour consulter les commentaires sur une ressource ou son historique de versions,
 
 ### Téléchargement des ressources recherchées {#download}
 
-Vous pouvez télécharger les ressources recherchées et leurs rendus de la même façon que vous téléchargez des ressources ordinaires à partir de dossiers. Sélectionnez une ou plusieurs ressources dans les résultats de la recherche, puis cliquez sur **[!UICONTROL Télécharger]** dans la barre d’outils. Voir [Téléchargement de ressources](/help/assets/download-assets-from-aem.md)
+Vous pouvez télécharger les ressources recherchées et leurs rendus de la même façon que vous téléchargez des ressources ordinaires à partir de dossiers. Sélectionnez une ou plusieurs ressources dans les résultats de recherche, puis cliquez sur **[!UICONTROL Télécharger]** dans la barre d’outils. Voir [Téléchargement de ressources](/help/assets/download-assets-from-aem.md)
 
 ### Mise à jour des propriétés de métadonnées en masse {#metadata-updates}
 
@@ -559,5 +553,5 @@ Accédez à l’emplacement du dossier pour les ressources affichées dans les r
 
 >[!MORELIKETHIS]
 >
->* Guide de mise en œuvre des recherches[[!DNL Experience Manager] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=fr)
+>* Guide de mise en œuvre des recherches[[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=fr)
 >* [Configuration avancée pour améliorer les résultats de recherche](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=fr)

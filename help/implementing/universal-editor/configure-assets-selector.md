@@ -3,13 +3,13 @@ title: Configuration du sélecteur Assets pour l’éditeur universel
 description: Découvrez comment configurer le sélecteur de ressources à utiliser avec l’éditeur universel.
 feature: Developing
 role: Admin, Developer
-source-git-commit: 0ed57393afaf9af3258dacdcb043487f4a098e03
+exl-id: 0bf7b418-5ecd-454f-ac46-03792268c59c
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 1%
+source-wordcount: '315'
+ht-degree: 0%
 
 ---
-
 
 # Configuration du sélecteur Assets pour l’éditeur universel {#configure-assets-selector}
 
@@ -17,9 +17,9 @@ Découvrez comment configurer le sélecteur de ressources à utiliser avec l’�
 
 ## Vue d’ensemble {#overview}
 
-L’éditeur universel utilise [le sélecteur de ressources](/help/assets/overview-asset-selector.md#using-asset-selector) pour permettre aux auteurs de parcourir et de sélectionner des ressources à insérer dans leur contenu.
+L’éditeur universel utilise le sélecteur de ressources pour permettre aux auteurs de parcourir et de sélectionner des ressources à insérer dans leur contenu.
 
-Le sélecteur de ressources peut être configuré dans l’éditeur universel à l’aide de filtres de composant [.](/help/implementing/universal-editor/filtering.md) Ce document décrit les options de configuration disponibles.
+Le sélecteur de ressources peut être configuré dans l’éditeur universel à l’aide de [filtres de composant.](/help/implementing/universal-editor/filtering.md) Ce document décrit les options de configuration disponibles.
 
 >[!NOTE]
 >
@@ -93,6 +93,10 @@ L’exemple suivant contient la plupart des options à des fins d’illustration
 ]
 ```
 
-## Ressources supplémentaires {#additional-resources}
+<!--
 
-Pour plus d’informations sur le sélecteur de ressources, consultez le document [Sélecteur de ressources micro front-end](/help/assets/overview-asset-selector.md#using-asset-selector) dans la documentation des ressources.
+## Additional Resources {#additional-resources}
+
+For details on the assets selector, please see the document [Micro-Frontend Asset Selector](/help/assets/overview-asset-selector.md#using-asset-selector) in the assets documentation.
+
+-->

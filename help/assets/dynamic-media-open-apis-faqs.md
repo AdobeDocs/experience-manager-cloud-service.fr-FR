@@ -4,10 +4,10 @@ description: Questions fréquentes sur Dynamic Media avec fonctionnalités OpenA
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '1615'
-ht-degree: 99%
+source-wordcount: '1673'
+ht-degree: 96%
 
 ---
 
@@ -107,7 +107,7 @@ Voici quelques-unes des principales différences entre Dynamic Media avec les fo
 | [Disponible uniquement avec Assets as a Cloud Service](/help/assets/dynamic-media-open-apis-overview.md#prerequisites-dynaminc-media-open-apis) | Également disponible avec On-premise ou Adobe Managed Services avec des étapes de configuration et d’approvisionnement supplémentaires. |
 | [Ensemble limité de modificateurs d’image pris en charge, tels que la largeur, la hauteur, la rotation, le pivotement, la qualité et le format](/help/assets/deliver-assets-apis.md) | Riche ensemble de modificateurs d’image disponibles |
 | [Diffusion de ressources limitée basée sur les utilisateurs et utilisatrices, les rôles, la date et l’heure](/help/assets/restrict-assets-delivery.md) | Les ressources publiées sur Dynamic Media sont accessibles à tous les utilisateurs et utilisatrices. |
-| La plupart des développeurs et développeuses connaissent les spécifications d’OpenAPI. L’extensibilité d’AEM Assets devient très simple en utilisant le [sélecteur de ressources micro front-end](/help/assets/overview-asset-selector.md). | API SOAP, qui deviennent un obstacle lors du développement de personnalisations de l’intégration. |
+| La plupart des développeurs et développeuses connaissent les spécifications d’OpenAPI. L’extensibilité d’AEM Assets devient très simple avec [Content Advisor](/help/assets/integrate-adobe-non-adobe-applications.md). | API SOAP, qui deviennent un obstacle lors du développement de personnalisations de l’intégration. |
 | Toute modification apportée aux ressources approuvées dans la gestion des ressources numériques, y compris les mises à jour de version et les modifications de métadonnées, est automatiquement répercutée dans les URL de diffusion. Avec une durée de vie (Time To Live, TTL) de 10 minutes configurée pour Dynamic Media avec fonctionnalités OpenAPI via CDN, les mises à jour deviennent visibles dans toutes les interfaces de création et de publication en moins de 10 minutes. | La durée de vie (TTL) recommandée du réseau CDN est de 10 heures. Vous pouvez remplacer la valeur TTL à l’aide de l’action d’invalidation du cache. |
 | Seules les ressources approuvées sont disponibles pour la diffusion des ressources vers les applications en aval, ce qui permet d’activer les ressources approuvées par marque dans les expériences numériques. | Toutes les mises à jour apportées à une ressource publiée par Dynamic Media sont publiées automatiquement sans processus d’approbation, ce qui ne garantit pas l’utilisation de ressources approuvées par la marque dans les expériences numériques. |
 | Rapports d’utilisation basés sur le nombre de ressources diffusées. Cette fonctionnalité sera bientôt disponible. | Les rapports d’utilisation ne sont pas disponibles. Cette fonctionnalité sera bientôt disponible. |
@@ -128,7 +128,7 @@ Le tableau ci-dessous présente les principales différences entre les deux solu
 | Prise en charge de tous les types de format de ressource pris en charge par AEM Assets. | Pas de prise en charge pour les vidéos. |
 | Vous pouvez utiliser Dynamic Media sur le déploiement Sites local lors de la récupération de ressources à partir du déploiement DAM distant. | Dynamic Media sur le déploiement Sites local est en lecture seule. |
 | Aucune restriction sur le nombre d’instances AEM Sites connectées à un déploiement DAM distant. Vous pouvez [restreindre l’accès aux ressources sur l’instance Sites en configurant des rôles](/help/assets/restrict-assets-delivery.md) pour les ressources approuvées sur DAM distant. | Restriction afin de ne pas connecter plus de 4 instances AEM Sites au déploiement DAM distant. Un nombre accru nécessite des tests supplémentaires. |
-| Le sélecteur de ressources et Dynamic Media avec les fonctionnalités OpenAPI sont extensibles pour permettre des intégrations personnalisées. | Les API Assets connectées ne sont pas extensibles pour autoriser les intégrations personnalisées. |
+| Content Advisor et Dynamic Media avec des fonctionnalités OpenAPI sont extensibles pour permettre des intégrations personnalisées. | Les API Assets connectées ne sont pas extensibles pour autoriser les intégrations personnalisées. |
 | Toutes les modifications apportées aux ressources approuvées disponibles lors du déploiement DAM distant, y compris les mises à jour de version et les modifications de métadonnées, sont automatiquement répercutées sur l’instance Sites avec une valeur TTL (durée de vie) courte de 10 minutes. | Les mises à jour des ressources sur le déploiement DAM distant sont gérées automatiquement via les événements de cycle de vie, mais prennent beaucoup plus de temps que dans Dynamic Media avec les fonctionnalités OpenAPI. |
 | Les métadonnées des ressources sur DAM distant sont également disponibles sur l’instance AEM Sites. | Les métadonnées des ressources sur DAM distant ne sont pas disponibles sur l’instance AEM Sites. |
 
@@ -147,5 +147,5 @@ Pour activer l’utilisation en production de [modificateurs en disponibilité l
 
 ## Comment tester des modificateurs expérimentaux ? {#modifiers-not-generally-available}
 
-Vous pouvez tester n’importe quel modificateur, qui n’est généralement pas disponible via les API expérimentales. Par exemple, &lt;/adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>
-Cliquez ici pour en savoir plus sur l’utilisation des [API expérimentales](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) et la [&#x200B; liste complète des modificateurs](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+Vous pouvez tester n’importe quel modificateur, qui n’est généralement pas disponible via les API expérimentales. Par exemple, &lt;/adobe/experiment/advancemodifiers-expires-YYYYMMDD/assets>
+Cliquez ici pour en savoir plus sur l’utilisation des [API expérimentales](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) et la [ liste complète des modificateurs](https://developer.adobe.com/experience-cloud/experience-manager-apis/).

@@ -6,10 +6,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 769ba806fc4c663b993fbda14f18555103946e0b
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '3020'
-ht-degree: 10%
+source-wordcount: '3101'
+ht-degree: 12%
 
 ---
 
@@ -64,7 +64,7 @@ Vous pouvez modifier le texte en place en double-cliquant ou en appuyant deux fo
 
 Le contour fin bleu clair se transforme en contour bleu foncé pour indiquer la sélection et un curseur s’affiche. Apportez vos modifications, puis appuyez sur Entrée/Retour ou sélectionnez en dehors de la zone de texte pour les enregistrer.
 
-Lorsque vous sélectionnez le composant de texte, ses détails s’affichent dans le panneau [Propriétés).](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) Vous pouvez également modifier le texte dans le panneau.
+Lorsque vous sélectionnez le composant de texte, ses détails s’affichent dans le panneau [Propriétés](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail). Vous pouvez également modifier le texte dans le panneau.
 
 ![Modification de texte dans le panneau des propriétés](assets/ue-editing-text-component-rail.png)
 
@@ -124,7 +124,7 @@ L’éditeur de texte enrichi (RTE) de l’éditeur universel permet à l’aute
 * **Dissocier**
    * Supprimer le lien du texte sélectionné.
 * **Image**
-   * Spécifiez une URL ou utilisez le [sélecteur de ressources](/help/assets/overview-asset-selector.md#using-asset-selector) pour sélectionner une ressource dans AEM.
+   * Spécifiez une URL ou utilisez le [gestionnaire d’accès](/help/assets/integrate-adobe-non-adobe-applications.md) pour sélectionner une ressource dans AEM.
 * **Tableau**
    * Utilisez la liste déroulante pour insérer un nouveau tableau du nombre de colonnes et de lignes sélectionné ou insérez et supprimez de nouvelles colonnes/lignes.
 * **Alignement**
@@ -152,7 +152,7 @@ Vous pouvez en afficher les détails dans le panneau [propriétés](/help/sites-
 ![Modification de médias](assets/ue-edit-media.png)
 
 1. Appuyez ou cliquez sur l’aperçu de l’image sélectionnée dans le panneau Propriétés.
-1. La fenêtre [sélecteur de ressources](/help/assets/overview-asset-selector.md#using-asset-selector) s’ouvre pour vous permettre de sélectionner une ressource.
+1. La fenêtre [Gestionnaire d’accès](/help/assets/integrate-adobe-non-adobe-applications.md) s’ouvre pour vous permettre de sélectionner une ressource.
 1. Sélectionnez pour sélectionner une nouvelle ressource.
 1. Sélectionnez **Sélectionner** pour revenir au panneau des propriétés où la ressource a été remplacée.
 
@@ -170,7 +170,7 @@ Si vous sélectionnez un champ associé à un fragment de contenu, le fragment d
 
 Les modifications sont automatiquement enregistrées une fois que le focus quitte le champ modifié dans le panneau des propriétés.
 
-Si vous souhaitez plutôt modifier votre fragment de contenu dans l’[éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md), appuyez ou cliquez sur le bouton [**Ouvrir dans l’éditeur de fragment de contenu** &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) dans le panneau des propriétés.
+Si vous souhaitez plutôt modifier votre fragment de contenu dans l’[éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md), appuyez ou cliquez sur le bouton [**Ouvrir dans l’éditeur de fragment de contenu** ](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) dans le panneau des propriétés.
 
 >[!TIP]
 >
@@ -180,7 +180,7 @@ Selon les besoins de votre workflow, vous pouvez modifier le fragment de contenu
 
 >[!NOTE]
 >
->L’éditeur universel[&#x200B; valide les champs des fragments de contenu en fonction de leurs modèles](/help/assets/content-fragments/content-fragments-models.md#validation), ce qui permet d’appliquer des règles d’intégrité des données telles que des modèles regex et des contraintes d’unicité.
+>L’éditeur universel[ valide les champs des fragments de contenu en fonction de leurs modèles](/help/assets/content-fragments/content-fragments-models.md#validation), ce qui permet d’appliquer des règles d’intégrité des données telles que des modèles regex et des contraintes d’unicité.
 >
 >Cela garantit que le contenu répond aux exigences métier spécifiques avant sa publication.
 
@@ -258,7 +258,7 @@ Vous pouvez déplacer et réorganiser les composants à l’aide du menu context
    * Monter
    * Descendre
    * Déplacer tout en bas
-     ![&#x200B; Déplacer les options dans le menu contextuel &#x200B;](assets/move-options-in-conext-menu.png)
+     ![ Déplacer les options dans le menu contextuel ](assets/move-options-in-conext-menu.png)
 
 Le composant est déplacé dans l’éditeur et dans l’arborescence de contenu.
 
@@ -292,8 +292,8 @@ Les composants sont réorganisés dans l’arborescence de contenu et dans l’�
 
 Sélectionnez les boutons Annuler ou Rétablir pour annuler ou rétablir la dernière modification dans l’éditeur.
 
-![&#x200B; Icône Annuler &#x200B;](assets/undo.png)
-![&#x200B; Icône Rétablir &#x200B;](assets/redo.png)
+![Icône Annuler](assets/undo.png)
+![ Icône Rétablir ](assets/redo.png)
 
 * Ces fonctions Annuler et Rétablir sont possibles pour les modifications effectuées en contexte, celles effectuées via le panneau Propriétés, ainsi que pour l’ajout, la duplication, le déplacement et la suppression de blocs.
 * Les fonctions Annuler et Rétablir sont limitées à la session de navigateur en cours.
@@ -304,11 +304,11 @@ Sélectionnez les boutons Annuler ou Rétablir pour annuler ou rétablir la dern
 
 ### Copier/coller {#copy-paste}
 
-Vous pouvez copier et coller des composants qui se trouvent dans des conteneurs [.](/help/implementing/universal-editor/field-types.md#container) Cela est possible uniquement si le conteneur cible ne comporte aucun [filtre configuré](/help/implementing/universal-editor/filtering.md) ou s’il comporte des filtres permettant de coller le composant.
+Vous pouvez copier et coller des composants qui se trouvent dans des [conteneurs.](/help/implementing/universal-editor/field-types.md#container) Cela n’est possible que si le conteneur cible ne comporte aucun [filtre configuré](/help/implementing/universal-editor/filtering.md) ou s’il comporte des filtres permettant de coller le composant.
 
 Les opérations copier-coller peuvent être effectuées sur le même onglet du navigateur ou entre des onglets du navigateur, à condition que ceux-ci soient déjà ouverts. Vous ne pouvez pas copier un élément, puis ouvrir un nouvel onglet du navigateur pour le coller.
 
-![&#x200B; Icône Copier &#x200B;](assets/copy.png)
+Icône ![ Copier](assets/copy.png)
 ![Icône Coller](assets/paste.png)
 
 1. Sélectionnez un composant dans l’éditeur ou dans l’arborescence de contenu.
@@ -402,7 +402,7 @@ Pour plus d’informations sur la manière d’activer cette extension, [consult
 
 ### Verrouillage et déverrouillage de pages {#locking-pages}
 
-L’extension de verrouillage de page **&#x200B;**&#x200B;affiche le statut de verrouillage actuel de la page dans l’éditeur et vous permet de [verrouiller ou déverrouiller la page](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page).
+L’extension de verrouillage de page **** affiche le statut de verrouillage actuel de la page dans l’éditeur et vous permet de [verrouiller ou déverrouiller la page](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page).
 
 L’icône **Déverrouillé** de la barre d’outils de l’éditeur universel indique que la page qui se trouve actuellement dans l’éditeur n’est pas verrouillée.
 
@@ -420,13 +420,13 @@ Pour plus d’informations sur la manière d’activer cette extension, [consult
 
 >[!NOTE]
 >
->L’extension de verrouillage de page **&#x200B;**&#x200B;fonctionne uniquement pour les pages, et non pour les fragments de contenu.
+>L’extension de verrouillage de page **** fonctionne uniquement pour les pages, et non pour les fragments de contenu.
 
 ### Workflows {#workflows}
 
 L’extension **AEM Workflows** vous permet de [démarrer un workflow](/help/sites-cloud/authoring/workflows/overview.md) sur la page qui se trouve actuellement dans l’éditeur.
 
-![&#x200B; Icône Workflows &#x200B;](assets/workflows-icon.png)
+![ Icône Workflows ](assets/workflows-icon.png)
 
 Appuyez ou cliquez sur l’icône **Workflows** dans la barre d’outils de l’éditeur universel pour ouvrir la fenêtre modale **Démarrer un workflow**. La fenêtre répertorie le contenu possible auquel vous pouvez appliquer un workflow.
 
