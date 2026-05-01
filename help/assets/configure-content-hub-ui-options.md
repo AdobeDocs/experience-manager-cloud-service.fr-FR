@@ -2,10 +2,10 @@
 title: Configurer l’interface d’utilisation du hub de contenus
 description: Configurer l’interface d’utilisation du hub de contenus
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 1b7cbf4e66a57dd86b04122ecb6b79eb59b3f02a
+source-git-commit: 7e0c34627aa3ac873aa94f836fe1c30d70389e19
 workflow-type: tm+mt
-source-wordcount: '2962'
-ht-degree: 8%
+source-wordcount: '3050'
+ht-degree: 9%
 
 ---
 
@@ -35,11 +35,11 @@ Experience Manager Assets permet à l’équipe d’aministration de configurer 
 
 * Tous les liens personnalisés que vous devez inclure sur Content Hub en plus des ressources, des collections et des informations.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472948/?captions=fre_fr&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
 
 ## Conditions préalables {#prerequisites-configuration-ui}
 
-Les [administrateurs Content Hub](/help/assets/deploy-content-hub.md#step-3-onboard-content-hub-administrator) peuvent définir les options de configuration pour d&#39;autres utilisateurs de votre organisation.
+Les [administrateurs ](/help/assets/deploy-content-hub.md#step-3-onboard-content-hub-administrator) peuvent définir les options de configuration pour d&#39;autres utilisateurs de votre organisation.
 
 ## Accéder aux options de configuration sur Content Hub {#access-configuration-options-content-hub}
 
@@ -160,19 +160,23 @@ Les propriétés activées dans l’interface utilisateur de configuration s’a
 ### Carte de ressources {#asset-card}
 
 Vous pouvez également configurer les propriétés de métadonnées clés que vous devez afficher sur la **Carte de ressource** jusqu’à 6 champs maximum.
-![métadonnées clés sur la carte de la ressource](/help/assets/assets/asset-card-metadata.png)
+![métadonnées de clé sur la carte de la ressource](/help/assets/assets/asset-card-metadata.png)
 Pour configurer les propriétés de métadonnées afin de les afficher sur la carte **[!UICONTROL Ressource]**, procédez comme suit :
 
 1. Dans l’interface utilisateur [Configurations](#access-configuration-options-content-hub), cliquez sur **Carte des ressources**.
 2. Cliquez sur **Ajouter des métadonnées**. La boîte de dialogue **Ajouter des métadonnées de carte de ressources** s’affiche.
 3. Indiquez le nom des métadonnées dans le champ **Libellé** et sélectionnez une propriété de métadonnées dans le champ **Métadonnées**.
 4. Cliquez sur **Confirmer** puis sur **Enregistrer** pour appliquer les modifications afin que la nouvelle propriété s’affiche sur la page des détails de la ressource.
-   ![carte des ressources](/help/assets/assets/configuration-asset-card1.png)
+   ![carte de ressource](/help/assets/assets/configuration-asset-card1.png)
 De même, cliquez sur ![Modifier](/help/assets/assets/edit-content-hub.svg) disponible en regard de chaque propriété disponible pour apporter les modifications nécessaires ou cliquez sur ![Supprimer](/help/assets/assets/delete-content-hub.svg) pour supprimer une propriété de métadonnées existante. Cliquez sur **Enregistrer** après avoir effectué toutes les modifications pour appliquer les modifications.
 
 ### Recherche {#configure-metadata-search-content-hub}
 
 L’administration peut définir les champs de métadonnées qui font l’objet d’une recherche lorsqu’un utilisateur spécifie un critère de recherche dans Content Hub. Procédez comme suit :
+
+>[!CAUTION]
+>
+>Il est recommandé de sélectionner soigneusement les champs que vous marquez comme pouvant faire l’objet d’une recherche. N’incluez que les champs que les utilisateurs sont susceptibles de rechercher et qui permettent de renvoyer des résultats significatifs. Les champs tels que les dates et les nombres conviennent mieux au filtrage et au tri qu’au contenu consultable. Le marquage d’un trop grand nombre de champs comme pouvant faire l’objet de recherches peut affecter la qualité et les performances des résultats de recherche.
 
 1. Dans l’interface utilisateur [Configurations](#access-configuration-options-content-hub), cliquez sur **[!UICONTROL Ajouter des métadonnées]**.
 
@@ -186,11 +190,11 @@ De même, vous pouvez cliquer sur ![icône Modifier](assets/do-not-localize/edit
 ### Branding {#configure-branding-content-hub}
 
 En tant qu’administrateur, personnalisez votre portail [!DNL Content Hub] pour répondre à vos exigences en matière de marque.
-![réinitialiser la valeur par défaut](/help/assets/assets/reset-default-content-hub.png)
+![réinitialiser par défaut](/help/assets/assets/reset-default-content-hub.png)
 Sur la page ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]**, utilisez les sections **[!UICONTROL Bannière]**, **[!UICONTROL Couleurs]** et **[!UICONTROL Image de bannière]** pour exécuter les personnalisations suivantes :
 
-1. [Modifiez l’image du logo à partir de la section [!UICONTROL &#x200B; Image du logo &#x200B;]](#Change-the-logo-image)
-1. [Modifiez l’image de bannière à partir de la section [!UICONTROL &#x200B; Image de bannière &#x200B;]](#Change-the-banner-image)
+1. [Modifiez l’image du logo à partir de la section [!UICONTROL  Image du logo ]](#Change-the-logo-image)
+1. [Modifiez l’image de bannière à partir de la section [!UICONTROL  Image de bannière ]](#Change-the-banner-image)
 1. [Mettez à jour le titre et le texte du corps de la bannière et modifiez la couleur du texte dans la section [!UICONTROL Bannière]](#Add-title-and-body-text-to-your-banner-and-change-the-text-color)
 1. [Modifiez la couleur principale et secondaire de la section [!UICONTROL Couleurs] pour appliquer un jeu de couleurs qui s’aligne sur le thème de votre marque](#Change-the-primary-and-secondary-color)
 
@@ -228,9 +232,9 @@ Cliquez sur la zone carrée en regard de la **[!UICONTROL Couleur du texte de ba
 
 Sur la page ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]**, utilisez la section **[!UICONTROL Couleurs]** pour définir les couleurs primaires et secondaires en les sélectionnant à l’aide du sélecteur de couleurs ou en définissant le code hexadécimal de la couleur. Ces couleurs définissent les couleurs d’arrière-plan, de texte et d’icône des éléments de l’interface utilisateur pour aligner votre interface utilisateur [!DNL Content Hub] avec le thème de votre marque.
 ![couleur primaire et secondaire](/help/assets/assets/primary-secondary-color-content-hub1.png)
-**[!UICONTROL Couleur du Principal &#x200B;]:** Le jeu de couleurs principal s’applique aux actions de sélection, aux éléments interactifs tels que les cases à cocher, les barres de recherche et les commutateurs à travers les [!DNL Content Hub], y compris [!DNL Content Hub] page d’accueil et la page [!UICONTROL Configuration]. Elle s’applique également aux options d’action disponibles sur les interfaces de [!DNL Content Hub] principales, telles que les options disponibles sur les pages **[!UICONTROL Toutes les Assets]** et **[!UICONTROL Collections]**.
+**[!UICONTROL Couleur du Principal ] :** le jeu de couleurs principal s’applique aux actions de sélection, aux éléments interactifs tels que les cases à cocher, les barres de recherche et les commutateurs à travers les [!DNL Content Hub], y compris [!DNL Content Hub] page d’accueil et la page [!UICONTROL Configuration]. Elle s’applique également aux options d’action disponibles sur les interfaces de [!DNL Content Hub] principales, telles que les options disponibles sur les pages **[!UICONTROL Toutes les Assets]** et **[!UICONTROL Collections]**.
 
-**[!UICONTROL Couleur Secondaire &#x200B;]:** Sur la page d&#39;accueil [!DNL Content Hub], le jeu de couleurs secondaire s&#39;applique aux options de l&#39;interface utilisateur et aux champs de saisie disponibles dans les boîtes de dialogue. Elle s’applique à toutes les options de menu de configuration disponibles sur la page [!UICONTROL Configuration], à l’exception des actions de sélection, des cases à cocher, des barres de recherche et des commutateurs.
+**[!UICONTROL Couleur Secondaire ]:** Sur la page d&#39;accueil [!DNL Content Hub], le jeu de couleurs secondaire s&#39;applique aux options de l&#39;interface utilisateur et aux champs de saisie disponibles dans les boîtes de dialogue. Elle s’applique à toutes les options de menu de configuration disponibles sur la page [!UICONTROL Configuration], à l’exception des actions de sélection, des cases à cocher, des barres de recherche et des commutateurs.
 
 ### Visibilité des ressources{#asset-visibility-content-hub}
 
@@ -260,7 +264,7 @@ Si la visibilité des ressources arrivées à expiration est activée, Content H
 
 ### Rendus {#renditions-content-hub}
 
-Les rendus sont des versions personnalisées des ressources numériques, telles que les images, les documents, etc., conçues pour différents appareils et plateformes afin d’assurer des performances optimales. En savoir plus sur les [rendus dans Adobe Experience Manager Assets](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+Les rendus sont des versions personnalisées des ressources numériques, telles que les images, les documents, etc., conçues pour différents appareils et plateformes afin d’assurer des performances optimales. En savoir plus sur les [rendus dans Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Pour cela, procédez comme suit :
 
@@ -280,7 +284,7 @@ Vous pouvez également ajouter des onglets personnalisés en plus des onglets st
 
 1. Dans l’interface utilisateur [Configurations](#access-configuration-options-content-hub), cliquez sur **[!UICONTROL Liens personnalisés]**.
 
-1. Cliquez sur **[!UICONTROL Ajouter un lien]**.
+1. Cliquez sur **[!UICONTROL Ajouter un lien]**.
 
 1. Spécifiez du texte dans les champs **[!UICONTROL Libellé]** et **[!UICONTROL URL]**. Le libellé que vous définissez s’affiche sous la forme d’un onglet et, lorsque vous cliquez sur le libellé, vous accédez à l’URL définie dans le champ **[!UICONTROL URL]**.
 
@@ -325,7 +329,7 @@ Enable the following setting on the Configurations user interface to allow Conte
 
 En savoir plus sur le [partage de ressources dans la  [!DNL Content Hub]](share-assets-content-hub.md).
 
-## Questions fréquentes {#faqs-content-hub-upload-assets}
+## Questions fréquemment posées {#faqs-content-hub-upload-assets}
 
 ### Qui peut accéder aux paramètres de l’interface utilisateur d’AEM Assets Content Hub et les configurer ?
 
