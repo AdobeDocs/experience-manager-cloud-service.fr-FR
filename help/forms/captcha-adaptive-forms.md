@@ -9,10 +9,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 23a6c298df67355160d3ec4b2519f6d1bde2b254
 workflow-type: tm+mt
-source-wordcount: '1748'
-ht-degree: 72%
+source-wordcount: '2147'
+ht-degree: 67%
 
 ---
 
@@ -25,9 +25,9 @@ ht-degree: 72%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html) |
 | AEM as a Cloud Service | Cet article |
-| Application | Formulaire adaptatif basé sur les composants de base. <br> Pour un formulaire adaptatif basé sur les composants principaux, [cliquez ici](/help/forms/captcha-adaptive-forms-core-components.md). |
+| Application | Formulaire adaptatif basé sur les composants de base. <br> Pour un formulaire adaptatif basé sur des composants principaux, [cliquez ici](/help/forms/captcha-adaptive-forms-core-components.md). |
 
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart, Test public de Turing complètement automatisé ayant pour but de différencier les personnes humaines des ordinateurs) est un programme couramment utilisé dans les transactions en ligne pour différencier les personnes humaines des programmes automatisés ou des robots. Il présente un test et évalue la réponse de l’utilisateur ou de l’utilisatrice pour déterminer s’il s’agit d’une personne humaine ou d’un robot qui interagit avec le site. Cela empêche l’utilisateur ou l’utilisatrice de continuer si le test échoue et permet de sécuriser les transactions en ligne en empêchant les robots d’envoyer du spam ou des éléments malveillants.
@@ -40,7 +40,7 @@ AEM Forms as a Cloud Service prend en charge les solutions CAPTCHA suivantes :
 
 ## Configurer le service reCAPTCHA de Google {#google-reCAPTCHA}
 
-Les auteurs de formulaires peuvent utiliser le service reCAPTCHA de Google pour implémenter reCAPTCHA dans le Forms adaptatif. Il offre des fonctionnalités CAPTCHA avancées pour protéger votre site. Pour plus d’informations sur le fonctionnement de reCAPTCHA, consultez [Google reCAPTCHA](https://developers.google.com/recaptcha/). AEM Forms prend en charge [!DNL reCAPTCHA v2] et [!DNL reCAPTCHA Enterprise]. Aucune autre version n’est prise en charge. Notez également que reCAPTCHA dans le Forms adaptatif n’est pas pris en charge en mode hors ligne sur l’application [!DNL AEM Forms]. Selon vos besoins, vous pouvez configurer le service reCAPTCHA pour activer :
+Les auteurs de formulaires peuvent utiliser le service reCAPTCHA de Google pour implémenter reCAPTCHA dans le Forms adaptatif. Il offre des fonctionnalités CAPTCHA avancées pour protéger votre site. Pour plus d’informations sur le fonctionnement de reCAPTCHA, consultez [Google reCAPTCHA](https://developers.google.com/recaptcha/). AEM Forms prend en charge [!DNL reCAPTCHA v2] et [!DNL reCAPTCHA Enterprise]. Toute autre version n’est pas prise en charge. Notez également que reCAPTCHA dans le Forms adaptatif n’est pas pris en charge en mode hors ligne sur l’application [!DNL AEM Forms]. Selon vos besoins, vous pouvez configurer le service reCAPTCHA pour activer :
 
 ![reCAPTCHA](/help/forms/assets/recaptcha_new.png)
 
@@ -82,7 +82,7 @@ Une fois que le service reCAPTCHA Enterprise est activé, il peut être utilisé
 ### Configurer Google reCAPTCHA v2 {#steps-to-implement-reCAPTCHA-v2-in-forms}
 
 1. Obtenir la [paire de clés de l’API reCAPTCHA](https://www.google.com/recaptcha/admin) de Google. Elle comprend une **clé de site** et une **clé secrète**.
-1. Créez un conteneur de configurations pour les services cloud.
+1. Créez un conteneur de configuration pour les services cloud.
    1. Accédez à **[!UICONTROL Outils > Général > Navigateur de configuration]**.
    1. Sélectionnez un dossier ou créez-en un, puis activez-le pour les configurations cloud en procédant comme suit :
       1. Dans l’explorateur de configuration, sélectionnez le dossier et cliquez sur **[!UICONTROL Propriétés]**.
@@ -208,7 +208,7 @@ Pour utiliser Google reCAPTCHA dans un formulaire adaptatif :
    1. Vous pouvez sélectionner la taille **[!UICONTROL Normale]** ou **[!UICONTROL Compacte]** pour le widget reCAPTCHA.
    1. Vous pouvez sélectionner l’option **[!UICONTROL Invisible]** pour ne montrer le test CAPTCHA que dans le cas d’une activité suspecte.
 
-   Le service reCAPTCHA est activé sur le formulaire adaptatif. Vous pouvez prévisualiser le formulaire et voir le fonctionnement du CAPTCHA. Le badge **protégé par reCAPTCHA**, affiché ci-dessous, s’affiche sur les formulaires protégés.
+   Le service reCAPTCHA est activé sur le formulaire adaptatif. Vous pouvez prévisualiser le formulaire et voir le fonctionnement de CAPTCHA. Le badge **protégé par reCAPTCHA**, affiché ci-dessous, s’affiche sur les formulaires protégés.
    ![Badge protégé par reCAPTCHA de Google](/help/forms/assets/google-recaptcha-v2.png)
 
 1. Enregistrez les propriétés.
@@ -347,6 +347,64 @@ Définissez la propriété **[!UICONTROL af.cloudservices.recaptcha.domain]** de
 ```
 
 Pour définir les valeurs d’une configuration, [générez des configurations OSGi à l’aide du SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=fr#generating-osgi-configurations-using-the-aem-sdk-quickstart) et [déployez la configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=fr#deployment-process) sur votre instance de Cloud Service.
+
+## Remplacer la configuration cloud reCAPTCHA par OSGi {#override-recaptcha-osgi}
+
+Pour utiliser différents ID de projet, clés de site ou secrets par environnement, ajoutez une configuration OSGi pour **[!UICONTROL Fournisseur de remplacement de configuration prenant en compte le contexte Apache Sling : configuration OSGi]**.
+
+### Ajouter le remplacement OSGi dans votre projet {#override-recaptcha-steps}
+
+1. Clonez le référentiel Git Cloud Manager pour votre projet AEM.
+
+   ```shell
+   git clone <your-cloud-manager-repository-url>
+   ```
+
+1. Ouvrez le référentiel cloné dans un éditeur de texte.
+
+1. Accédez au dossier `ui.config` sous votre application (remplacez `<your-application-folder>` par le nom du dossier sous `/apps` dans votre projet) :
+
+   * **Pour l’auteur :** `ui.config/src/main/content/jcr_root/apps/<your-application-folder>/osgiconfig/config.author`
+   * **Pour publication :** `ui.config/src/main/content/jcr_root/apps/<your-application-folder>/osgiconfig/config.publish`
+
+   >[!NOTE]
+   >
+   > Créez les dossiers `osgiconfig`, `config.author` et `config.publish`, s’ils ne sont pas déjà présents.
+
+1. Créez le fichier de remplacement OSGi dans les deux dossiers du mode d’exécution, en utilisant le même nom de fichier dans chacun d’eux :
+
+   * **Pour l’auteur :** dans le dossier `config.author`, créez des `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider-integrationTest.cfg.json`.
+   * **Pour Publication :** dans le dossier `config.publish`, créez des `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider-integrationTest.cfg.json`.
+
+1. Collez le code JSON suivant dans chaque fichier (ou ajustez le contenu de création et de publication séparément, si nécessaire). Dans chaque chemin sous `overrides`, remplacez `<environment-name>` par le nom de votre configuration cloud reCAPTCHA Enterprise. Utilisez la [syntaxe de remplacement Sling](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax).
+
+   ```json
+   {
+     "enabled": true,
+     "description": "recaptchaITOverrideConfig",
+     "overrides": [
+       "cloudconfigs/recaptcha/<environment-name>/projectId=\"$[env:projectId]\"",
+       "cloudconfigs/recaptcha/<environment-name>/secretKey=\"$[secret:secretKey]\"",
+       "cloudconfigs/recaptcha/<environment-name>/siteKey=\"$[env:siteKey]\""
+     ]
+   }
+   ```
+
+   >[!NOTE]
+   >
+   >Ajoutez des `projectId`, des `siteKey` et des `secretKey` comme variables d’environnement et secrets dans Cloud Manager afin qu’ils s’appliquent à **Auteur**, **Aperçu** et **Publication** (utilisez **Étape Appliquée** dans la boîte de dialogue **Configuration de l’environnement**). Voir [Variables d’environnement dans Cloud Manager](/help/implementing/cloud-manager/environment-variables.md).
+
+   ![Remplacement de Recaptcha](/help/forms/assets/recaptcha-override.png)
+
+1. Validez et envoyez vos modifications :
+
+   ```shell
+   git add ui.config/src/main/content/jcr_root/apps/<your-application-folder>/osgiconfig/
+   git commit -m "Add reCAPTCHA context-aware configuration OSGi overrides"
+   git push origin <your-branch-name>
+   ```
+
+1. Exécutez le pipeline Cloud Manager qui déploie ce référentiel. Après le déploiement, le remplacement fournit des `projectId`, des `siteKey` et des `secretKey` à partir des variables et des secrets définis pour cet environnement.
 
 ## Voir également {#see-also}
 

@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: d389f158ddd71f90b5ee9b707050f5b593ec595a
+source-git-commit: 0ba0b95eac6b3a3ca0aa6ed0a816edcc63b9d50f
 workflow-type: tm+mt
-source-wordcount: '2030'
+source-wordcount: '2009'
 ht-degree: 31%
 
 ---
@@ -39,7 +39,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the April 2026 Release Overview video for a summary of the features added in the 2026.4.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483062/?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
 -->
 
 ## Programmes AEM Beta {#aem-beta-programs}
@@ -83,13 +83,13 @@ Voir [Programmes bêta AEM Foundation](#foundation-early-adopter).
 
 ### Cloud Manager (programmes Beta) {#cloud-manager-beta-programs}
 
-Voir [Programmes bêta &#x200B;](/help/implementing/cloud-manager/release-notes/current.md).
+Voir [Programmes bêta ](/help/implementing/cloud-manager/release-notes/current.md).
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Intégration de la traduction dans l’IA {#ai-translation-integration}
 
-Les utilisateurs d’AEM peuvent désormais tirer parti des grands modèles de langue (LLM) pour la traduction de contenu, offrant ainsi une qualité de traduction humaine à la vitesse de la traduction automatique. Tout comme les services de traduction tiers traditionnels, Azure OpenAI peut être configuré en tant que fournisseur de traduction dans AEM, avec la prise en charge de LLM supplémentaires prévue pour les prochaines versions. Les clients utilisent leurs propres licences LLM pour cette fonctionnalité. En outre, les guides de style de traduction d’entreprise peuvent être chargés vers AEM, ce qui permet d’extraire les règles de traduction pour assurer la cohérence de la marque et du style. Consultez [&#x200B; Configuration de l’intégration de la traduction d’IA &#x200B;](/help/sites-cloud/administering/translation/ai-translation-integration.md) pour plus d’informations.
+Les utilisateurs d’AEM peuvent désormais tirer parti des grands modèles de langue (LLM) pour la traduction de contenu, offrant ainsi une qualité de traduction humaine à la vitesse de la traduction automatique. Tout comme les services de traduction tiers traditionnels, Azure OpenAI peut être configuré en tant que fournisseur de traduction dans AEM, avec la prise en charge de LLM supplémentaires prévue pour les prochaines versions. Les clients utilisent leurs propres licences LLM pour cette fonctionnalité. En outre, les guides de style de traduction d’entreprise peuvent être chargés vers AEM, ce qui permet d’extraire les règles de traduction pour assurer la cohérence de la marque et du style. Consultez [ Configuration de l’intégration de la traduction d’IA ](/help/sites-cloud/administering/translation/ai-translation-integration.md) pour plus d’informations.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -101,16 +101,18 @@ Vous pouvez désormais découvrir, évaluer et réutiliser des ressources approu
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Fonctionnalités d’accès anticipé d’AEM Forms {#forms-early-access-features}
+### Nouvelles fonctionnalités d’AEM Forms
 
-**Afficher les libellés pour la liste déroulante à sélection multiple dans Submission PDF**
-Les composants de liste déroulante à sélection multiple dans le Forms adaptatif effectuent désormais le rendu de leurs libellés d’affichage sélectionnés dans la [PDF d’envoi générée](/help/forms/generate-document-of-record-core-components.md), en s’assurant que le document reflète précisément ce que les utilisateurs voient sur le formulaire.
+* **Remplacer la configuration cloud reCAPTCHA avec OSGi** 
+Les identifiants de projet d’entreprise reCAPTCHA, les clés de site et les secrets que vous conservez avec vos fichiers sources peuvent être résolus sur différentes valeurs dans chaque environnement Cloud Service après [ajout du remplacement de la configuration tenant compte du contexte et déploiement via Cloud Manager](/help/forms/captcha-adaptive-forms.md#override-recaptcha-osgi).
 
-**Amélioration de l’accessibilité des composants Case à cocher, Bouton radio et Panneau**
-Les composants principaux de Forms adaptatifs introduisent le balisage sémantique compatible avec WCAG 2.2 pour les [groupes de cases à cocher (v2)](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [groupes de boutons radio (v2)](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) et le [composant de panneau](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). Ces composants exploitent les éléments HTML `<fieldset>` et `<legend>` pour établir des relations significatives entre les libellés de groupe et leurs options, ce qui permet une interprétation précise par les lecteurs d’écran et d’autres technologies d’assistance.
+* **Authentification basée sur les certificats** 
+Les Forms adaptatives qui envoient une liste Microsoft SharePoint prennent désormais en charge l’[authentification par certificat](/help/forms/connect-forms-to-sharepoint-list.md#certificate-based-authentication) ainsi que l’authentification par URL OAuth. Pour la connexion avec certificat, enregistrez un alias de certificat et les détails du client dans AEM et Microsoft Azure.
 
-**Prise en charge du contrôle de version dans Forms Manager**
-Forms Manager [prend désormais en charge le contrôle de version pour les Forms adaptatifs (composants principaux et composants de base)](/help/forms/manage-form-versions-forms-manager.md), les fragments de formulaire, les thèmes, les modèles XDP et les ressources binaires. Créez des versions, affichez l’historique complet des versions et restaurez les états précédents de vos ressources de formulaire directement à partir de la console Forms et documents.
+* **Améliorations de l’éditeur de règles**
+
+   * L’éditeur de règles de Forms adaptatif prend désormais en charge la grammaire simplifiée pour les règles [Distribuer l’événement et Activer l’événement déclencheur) pour les déclencheurs prêts à l’emploi et pour les événements personnalisés](/help/forms/rule-editor-enhancements-use-cases.md#simplified-grammar-for-ootb-and-custom-events) afin que les auteurs ne soient pas limités à la grammaire sur les déclencheurs personnalisés uniquement.
+   * Lorsque les règles sur les Forms adaptatives basées sur les composants principaux incluent désormais le composant [Pièce jointe avec d’autres conditions à l’aide de la logique AND ou OR](/help/forms/rule-editor-enhancements-use-cases.md#combined-when-conditions-with-the-file-attachment-component), la règle exécute ses actions uniquement lorsque l’état de la pièce jointe et les autres vérifications sont tous évalués comme prévu.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -131,7 +133,7 @@ Apprenez-en davantage sur [le développement local avec les outils d’IA](/help
 
 Le serveur MCP d’Experience Governance est désormais disponible pour tous. Il s’intègre aux outils de développement et aux chatbots de l’IA qui prennent en charge le protocole MCP (Model Context Protocol), ce qui vous permet de protéger l’intégrité et la conformité de la marque à l’aide d’invites en langage naturel dans votre chatbot ou votre IDE. Vous pouvez évaluer le contenu (texte, images, pages) par rapport aux règles de gouvernance de marque, et récupérer les configurations de marque et les contrôles de gouvernance disponibles.
 
-En savoir plus sur les [serveurs AEM MCP](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) et l’[agent de gouvernance](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
+En savoir plus sur les [serveurs AEM MCP](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) et l’[agent de gouvernance](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
 
 #### Claude Connector {#aem-claude-connector}
 
@@ -207,7 +209,7 @@ Nous disposons d’un nombre limité d’opportunités pour la diffusion de l’
 
 Les fonctionnalités [dépannage de pipeline](/help/ai-in-aem/agents/brand-experience/development/development.md) de l’agent de développement aident les développeurs à diagnostiquer et à résoudre efficacement les problèmes dans les déploiements d’AEM as a Cloud Service. En plus de prendre en charge les pipelines Full Stack (déploiement et qualité du code), l’agent de développement prend désormais en charge le dépannage du **pipeline de configuration de niveau web** dans le cadre d’un programme bêta.
 
-Pour demander l’accès à la version bêta, envoyez un e-mail à l’adresse [&#128279;](mailto:aem-devagent@adobe.com). Un accès préexistant aux agents dans AEM est requis.
+Pour demander l’accès à la version bêta, envoyez un e-mail à l’adresse [](mailto:aem-devagent@adobe.com). Un accès préexistant aux agents dans AEM est requis.
 
 #### Dépannage de l’IA dédiée à la réplication (programme Alpha) {#replication-ai-troubleshooting-alpha}
 
@@ -217,7 +219,7 @@ Pour demander l’accès à la version bêta, envoyez un e-mail à l’adresse [
 
 Accélérez votre migration d’AEM 6.5 vers AEM as a Cloud Service (pile Java) en utilisant l’outil d’IA dédiée à l’environnement de développement intégré pour agir sur les recommandations du rapport [Analyseur des bonnes pratiques](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
 
-Envoyer un e-mail à [&#128279;](mailto:aemcs-ai-ide-tools-feedback@adobe.com) pour obtenir plus d’informations et demander l’accès à la fonctionnalité.
+Envoyer un e-mail à [](mailto:aemcs-ai-ide-tools-feedback@adobe.com) pour obtenir plus d’informations et demander l’accès à la fonctionnalité.
 
 #### Authentification Edge pour Edge Delivery Services (programme Beta) {#edge-authentication}
 
@@ -235,7 +237,7 @@ Envoyez un e-mail à [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-cana
 
 Dans la version bêta, les environnements de développement rapide (RDE) prennent désormais en charge une fonctionnalité [pour prendre un instantané](/help/implementing/developing/introduction/rapid-development-environments.md#snapshots) de l’état actuel du code et du contenu, qui peut être restaurée ultérieurement. Cela peut s’avérer utile lors de la synchronisation du code qui peut devoir être restauré à un état précédent ou, lorsqu’au cours du développement, il est nécessaire d’alterner entre plusieurs fonctionnalités différentes. Il est également possible de restaurer uniquement le contenu modifiable en tant que point de départ connu pour les tests.
 
-Veuillez envoyer un e-mail à [&#128279;](mailto:aemcs-rde-support@adobe.com) si cette fonctionnalité vous intéresse et si vous souhaitez faire part de vos commentaires.
+Veuillez envoyer un e-mail à [](mailto:aemcs-rde-support@adobe.com) si cette fonctionnalité vous intéresse et si vous souhaitez faire part de vos commentaires.
 
 #### Surveillance étendue des performances des applications (APM) (programme Alpha) {#apm-alpha}
 
