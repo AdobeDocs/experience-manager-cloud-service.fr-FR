@@ -53,7 +53,7 @@ Dans l’assistant de configuration Liste SharePoint :
 
 1. Définissez **[!UICONTROL Type d’authentification]** sur **Authentification basée sur certificat**.
 1. Spécifiez **[!UICONTROL Titre]**, **[!UICONTROL ID client]**, **[!UICONTROL Alias de certificat]**, **[!UICONTROL ID client]** et **[!UICONTROL Nom du client]**.
-1. Saisissez l’URL du site ****, vérifiez la connexion au site si nécessaire, puis sélectionnez la liste **[!UICONTROL SharePoint]**.
+1. Saisissez l’URL du site **&#x200B;**, vérifiez la connexion au site si nécessaire, puis sélectionnez la liste **[!UICONTROL SharePoint]**.
 1. Cliquez sur **[!UICONTROL Connexion]** pour vérifier la connexion, puis sur **[!UICONTROL Enregistrer et fermer]** pour enregistrer la configuration.
 
 La capture d’écran ci-dessous affiche la configuration de la liste SharePoint avec l’**authentification basée sur un certificat** :
@@ -81,7 +81,7 @@ La capture d’écran affiche le fichier de stockage des clés une fois le certi
 
 La capture d’écran affiche l’onglet **Certificats** sur le portail Azure, où vous téléchargez le certificat pour l’enregistrement de l’application :
 
-![Certificats et secrets d’enregistrement de l’application ](/help/forms/assets/azure-app-registration-sharepoint-certificates.png){width=50%, height=50%, align=center}
+![Certificats et secrets d’enregistrement de l’application &#x200B;](/help/forms/assets/azure-app-registration-sharepoint-certificates.png){width=50%, height=50%, align=center}
 
 ## &#x200B;2. Utiliser l’envoi à l’aide du modèle de données de formulaire (FDM) dans un formulaire adaptatif {#use-submit-using-fdm}
 
