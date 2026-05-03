@@ -6,10 +6,10 @@ role: Admin
 badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: a27d861061d4ee41bdfc080bc50a942de60f593b
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 81%
+source-wordcount: '340'
+ht-degree: 70%
 
 ---
 
@@ -19,10 +19,11 @@ Automatisez la traduction du contenu de pages et de ressources pour créer et te
 
 * **Traduction humaine :** le contenu est envoyé à votre fournisseur de traduction et traduit par des traducteurs professionnels. Une fois la traduction terminée, le contenu traduit est renvoyé et importé dans AEM. Lorsque votre fournisseur de traduction est intégré à AEM, le contenu est automatiquement transféré entre AEM et le fournisseur de traduction.
 * **Traduction automatique :** le service de traduction automatique traduit immédiatement votre contenu.
+* **Traduction automatique (intégration de la traduction dans l’IA) :** connectez AEM à un modèle de langue volumineux par le biais des services cloud de traduction et utilisez les mêmes projets et workflows de traduction qu’avec d’autres fournisseurs. Vous pouvez charger des guides de style afin qu’AEM génère des règles de traduction par paramètre régional. Voir [Configuration de l’intégration de la traduction dans l’IA](ai-translation-integration.md).
 
 >[!TIP]
 >
->Si vous êtes un débutant dans la traduction de contenu, consultez [Parcours de traduction de sites](/help/journey-sites/translation/overview.md), qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide d’outils de traduction puissants d’AEM, idéaux pour ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
+>Si vous êtes un débutant dans la traduction de contenu, consultez Parcours de traduction de sites](/help/journey-sites/translation/overview.md), qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide d’outils de traduction puissants d’AEM, idéaux pour ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.[
 
 La traduction du contenu implique les étapes suivantes :
 
