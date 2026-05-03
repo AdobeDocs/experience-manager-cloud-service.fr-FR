@@ -24,7 +24,7 @@ L’[assistant AI dans Adobe Experience Manager](/help/implementing/cloud-manage
 
 AEM fournit toute une gamme d’[agents](/help/ai-in-aem/agents/overview.md) pour accélérer la création de votre contenu et orchestrer automatiquement les modifications :
 
-* [](/help/ai-in-aem/agents/brand-experience/overview.md)
+* [&#128279;](/help/ai-in-aem/agents/brand-experience/overview.md)
 * [Agent du gestionnaire de contenu](/help/ai-in-aem/agents/content-advisor/overview.md)
 * [Agent de gouvernance](/help/ai-in-aem/agents/governance/overview.md)
 
