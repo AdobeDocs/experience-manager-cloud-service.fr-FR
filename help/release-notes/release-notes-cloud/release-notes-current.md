@@ -83,13 +83,13 @@ Voir [Programmes bêta AEM Foundation](#foundation-early-adopter).
 
 ### Cloud Manager (programmes Beta) {#cloud-manager-beta-programs}
 
-Voir [Programmes bêta ](/help/implementing/cloud-manager/release-notes/current.md).
+Voir [Programmes bêta &#x200B;](/help/implementing/cloud-manager/release-notes/current.md).
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Intégration de la traduction dans l’IA {#ai-translation-integration}
 
-Les utilisateurs d’AEM peuvent désormais tirer parti des grands modèles de langue (LLM) pour la traduction de contenu, offrant ainsi une qualité de traduction humaine à la vitesse de la traduction automatique. Tout comme les services de traduction tiers traditionnels, Azure OpenAI peut être configuré en tant que fournisseur de traduction dans AEM, avec la prise en charge de LLM supplémentaires prévue pour les prochaines versions. Les clients utilisent leurs propres licences LLM pour cette fonctionnalité. En outre, les guides de style de traduction d’entreprise peuvent être chargés vers AEM, ce qui permet d’extraire les règles de traduction pour assurer la cohérence de la marque et du style. Consultez [ Configuration de l’intégration de la traduction d’IA ](/help/sites-cloud/administering/translation/ai-translation-integration.md) pour plus d’informations.
+Les utilisateurs d’AEM peuvent désormais tirer parti des grands modèles de langue (LLM) pour la traduction de contenu, offrant ainsi une qualité de traduction humaine à la vitesse de la traduction automatique. Tout comme les services de traduction tiers traditionnels, Azure OpenAI peut être configuré en tant que fournisseur de traduction dans AEM, avec la prise en charge de LLM supplémentaires prévue pour les prochaines versions. Les clients utilisent leurs propres licences LLM pour cette fonctionnalité. En outre, les guides de style de traduction d’entreprise peuvent être chargés vers AEM, ce qui permet d’extraire les règles de traduction pour assurer la cohérence de la marque et du style. Consultez [&#x200B; Configuration de l’intégration de la traduction d’IA &#x200B;](/help/sites-cloud/administering/translation/ai-translation-integration.md) pour plus d’informations.
 
 ### Éditeur de fragment de contenu {#cf-editor}
 
@@ -216,7 +216,7 @@ Nous disposons d’un nombre limité d’opportunités pour la diffusion de l’
 
 Les fonctionnalités [dépannage de pipeline](/help/ai-in-aem/agents/brand-experience/development/development.md) de l’agent de développement aident les développeurs à diagnostiquer et à résoudre efficacement les problèmes dans les déploiements d’AEM as a Cloud Service. En plus de prendre en charge les pipelines Full Stack (déploiement et qualité du code), l’agent de développement prend désormais en charge le dépannage du **pipeline de configuration de niveau web** dans le cadre d’un programme bêta.
 
-Pour demander l’accès à la version bêta, envoyez un e-mail à l’adresse [](mailto:aem-devagent@adobe.com). Un accès préexistant aux agents dans AEM est requis.
+Pour demander l’accès à la version bêta, envoyez un e-mail à l’adresse [&#128279;](mailto:aem-devagent@adobe.com). Un accès préexistant aux agents dans AEM est requis.
 
 #### Dépannage de l’IA dédiée à la réplication (programme Alpha) {#replication-ai-troubleshooting-alpha}
 
@@ -226,7 +226,7 @@ Pour demander l’accès à la version bêta, envoyez un e-mail à l’adresse [
 
 Accélérez votre migration d’AEM 6.5 vers AEM as a Cloud Service (pile Java) en utilisant l’outil d’IA dédiée à l’environnement de développement intégré pour agir sur les recommandations du rapport [Analyseur des bonnes pratiques](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
 
-Envoyer un e-mail à [](mailto:aemcs-ai-ide-tools-feedback@adobe.com) pour obtenir plus d’informations et demander l’accès à la fonctionnalité.
+Envoyer un e-mail à [&#128279;](mailto:aemcs-ai-ide-tools-feedback@adobe.com) pour obtenir plus d’informations et demander l’accès à la fonctionnalité.
 
 #### Authentification Edge pour Edge Delivery Services (programme Beta) {#edge-authentication}
 
@@ -244,7 +244,7 @@ Envoyez un e-mail à [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-cana
 
 Dans la version bêta, les environnements de développement rapide (RDE) prennent désormais en charge une fonctionnalité [pour prendre un instantané](/help/implementing/developing/introduction/rapid-development-environments.md#snapshots) de l’état actuel du code et du contenu, qui peut être restaurée ultérieurement. Cela peut s’avérer utile lors de la synchronisation du code qui peut devoir être restauré à un état précédent ou, lorsqu’au cours du développement, il est nécessaire d’alterner entre plusieurs fonctionnalités différentes. Il est également possible de restaurer uniquement le contenu modifiable en tant que point de départ connu pour les tests.
 
-Veuillez envoyer un e-mail à [](mailto:aemcs-rde-support@adobe.com) si cette fonctionnalité vous intéresse et si vous souhaitez faire part de vos commentaires.
+Veuillez envoyer un e-mail à [&#128279;](mailto:aemcs-rde-support@adobe.com) si cette fonctionnalité vous intéresse et si vous souhaitez faire part de vos commentaires.
 
 #### Surveillance étendue des performances des applications (APM) (programme Alpha) {#apm-alpha}
 
