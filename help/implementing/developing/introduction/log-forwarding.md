@@ -4,9 +4,9 @@ description: Découvrez comment transférer des journaux à des fournisseurs de 
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Developer
-source-git-commit: 41605c0feb5b8cf651ecb2971a05fde12bcb86d8
+source-git-commit: ac4ce2421cdeb29aec7183f515ae32bfca37e82f
 workflow-type: tm+mt
-source-wordcount: '2482'
+source-wordcount: '2560'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Le transfert de journal est désormais configuré en libre-service, différent de la méthode héritée qui nécessitait l’envoi d’un ticket d’assistance pour Adobe. Pour plus d&#39;informations, consultez la section [&#x200B; Migration &#x200B;](#legacy-migration) si le transfert du journal a été configuré par Adobe.
+>Le transfert de journal est désormais configuré en libre-service, différent de la méthode héritée qui nécessitait l’envoi d’un ticket d’assistance pour Adobe. Pour plus d&#39;informations, consultez la section [ Migration ](#legacy-migration) si le transfert du journal a été configuré par Adobe.
 
 Les clients disposant d’une licence auprès d’un fournisseur de journalisation ou qui hébergent un produit de journalisation peuvent transférer les journaux AEM (y compris Apache/Dispatcher) et les journaux CDN vers la destination de journalisation associée. AEM as a Cloud Service prend en charge les destinations de journalisation suivantes :
 
@@ -52,7 +52,7 @@ Les clients disposant d’une licence auprès d’un fournisseur de journalisati
       <td style="background-color: #ffb3b3;">Futur</td>
     </tr>
     <tr>
-      <td>Elasticsearch<br>OpenSearch</td>
+      <td><br>OpenSearch</td>
       <td>Oui</td>
       <td>Oui</td>
       <td>Oui</td>
@@ -79,14 +79,14 @@ Les clients disposant d’une licence auprès d’un fournisseur de journalisati
       <td>Logique Sumo</td>
       <td>Oui</td>
       <td>Oui</td>
-      <td style="background-color: #ffb3b3;">Futur</td>
+      <td>Oui</td>
     </tr>
   </tbody>
 </table>
 
 >[!NOTE]
 >
-> Pour les prochaines technologies de journal CDN prévues pour l’avenir, veuillez envoyer un e-mail à [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour vous inscrire.
+> Pour les prochaines technologies de journal CDN prévues pour l’avenir, veuillez envoyer un e-mail à [](mailto:aemcs-logforwarding-beta@adobe.com) pour vous inscrire.
 
 Le transfert du journal est configuré en libre-service en déclarant une configuration dans Git et peut être déployé via les pipelines de configuration de Cloud Manager vers les types d’environnements de développement, d’évaluation et de production. Le fichier de configuration peut être déployé dans des environnements de développement rapide (RDE) à l’aide de l’outil de ligne de commande.
 
@@ -120,7 +120,7 @@ L’organisation de cet article est la suivante :
          index: "AEMaaCS"
    ```
 
-1. Placez le fichier quelque part sous un dossier de niveau supérieur nommé *config* ou similaire, comme décrit dans la section [&#x200B; Utilisation des pipelines de configuration](/help/operations/config-pipeline.md#folder-structure).
+1. Placez le fichier quelque part sous un dossier de niveau supérieur nommé *config* ou similaire, comme décrit dans la section [ Utilisation des pipelines de configuration](/help/operations/config-pipeline.md#folder-structure).
 
 1. Pour les types d’environnement autres que le RDE (qui utilise l’outil de ligne de commande), créez un pipeline de configuration de déploiement ciblé dans Cloud Manager, comme indiqué dans [cette section](/help/operations/config-pipeline.md#creating-and-managing) ; notez que les pipelines de pile complète et de niveau web ne déploient pas le fichier de configuration.
 
@@ -203,7 +203,7 @@ Utilisez le tableau ci-dessous pour connaître les exigences relatives à la con
 >[!NOTE]
 >Le fait que vos journaux s’affichent à partir d’une seule adresse IP dépend de la configuration de mise en réseau avancée que vous avez choisie.  Une sortie dédiée doit être utilisée pour faciliter cette opération.
 >
-> La configuration réseau avancée est un [&#x200B; processus en deux étapes](/help/security/configuring-advanced-networking.md#configuring-and-enabling-advanced-networking-configuring-enabling) qui nécessite une activation au niveau du programme et de l’environnement.
+> La configuration réseau avancée est un [ processus en deux étapes](/help/security/configuring-advanced-networking.md#configuring-and-enabling-advanced-networking-configuring-enabling) qui nécessite une activation au niveau du programme et de l’environnement.
 
 Pour les journaux AEM (y compris Apache/Dispatcher), si vous avez configuré [Mise en réseau avancée](/help/security/configuring-advanced-networking.md), vous pouvez utiliser la propriété `aem.advancedNetworking` pour les transférer à partir d’une adresse IP sortante dédiée ou via un VPN.
 
@@ -274,10 +274,10 @@ La politique IAM doit permettre à l’utilisateur d’utiliser `s3:putObject`. 
 }
 ```
 
-Consultez la [documentation de la politique de compartiment AWS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) pour plus d’informations sur la mise en œuvre.
+Consultez la [documentation de la politique de compartiment ](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) pour plus d’informations sur la mise en œuvre.
 
 >[!NOTE]
->La prise en charge du journal CDN pour AWS S3 est prévue pour les années à venir. Veuillez envoyer un e-mail à [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour enregistrer vos intérêts.
+>La prise en charge du journal CDN pour AWS S3 est prévue pour les années à venir. Veuillez envoyer un e-mail à [](mailto:aemcs-logforwarding-beta@adobe.com) pour enregistrer vos intérêts.
 
 ### Stockage d’objets blob Azure {#azureblob}
 
@@ -309,7 +309,7 @@ Si la diffusion des journaux a cessé après un fonctionnement correct, vérifie
 
 #### Journaux du réseau CDN de stockage Blob Azure {#azureblob-cdn}
 
-Chacun des serveurs de journalisation distribués globalement produira un nouveau fichier toutes les quelques secondes, sous le dossier `aemcdn`. Une fois créé, le fichier n’est plus ajouté à . Le format du nom de fichier est AAAA-MM-JJThh:mm:ss.sss-uniqueid.log. Par ex., 2024-03-04T10:00:00.000-WnFWYN9BpOUs2aOVn4ee.log.
+Chacun des serveurs de journalisation distribués globalement produira un nouveau fichier toutes les quelques secondes, sous le dossier `aemcdn`. Une fois créé, le fichier n’est plus ajouté à . Le format du nom de fichier est AAAA-MM-JJThh:mm:ss.sss-uniqueid.log. Par ex., 2024-03-:00:00.000-WnFWYN9BpOUs2aOVn4ee.log.
 
 Par exemple, à un moment donné :
 
@@ -345,7 +345,7 @@ Les journaux AEM (y compris Apache/Dispatcher) s’affichent sous un dossier ave
 
 Sous chaque dossier, un seul fichier est créé et ajouté. Les clients sont chargés de traiter et de gérer ce fichier afin qu’il ne s’étende pas trop.
 
-Consultez les formats d’entrée de journal sous [&#x200B; Journalisation pour AEM as a Cloud Service &#x200B;](/help/implementing/developing/introduction/logging.md). Les entrées de journal incluent également les propriétés supplémentaires mentionnées dans la section [Formats d’entrée de journal](#log-formats) ci-dessous.
+Consultez les formats d’entrée de journal sous [ Journalisation pour AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md). Les entrées de journal incluent également les propriétés supplémentaires mentionnées dans la section [Formats d’entrée de journal](#log-formats) ci-dessous.
 
 ### Datadog {#datadog}
 
@@ -421,7 +421,7 @@ data:
 
 #### Considérations
 
-* La chaîne d&#39;URL doit inclure **https://** sinon la validation échouera.
+* La chaîne d&#39;URL doit inclure **** sinon la validation échouera.
 * L’URL peut inclure un port. Par exemple, `https://example.com:8443/aem_logs/aem`. Si aucun port n’est inclus dans la chaîne d’URL, le port 443 (port HTTPS par défaut) est supposé.
 
 #### Journaux de réseau CDN HTTPS {#https-cdn}
@@ -466,9 +466,9 @@ Le transfert du journal vers New Relic utilise l’API HTTPS New Relic pour l’
 >
 >Le transfert du journal vers New Relic n’est disponible que pour les comptes New Relic détenus par le client.
 >
->La prise en charge du journal CDN pour l’API de journal New Relic est prévue pour l’avenir. Veuillez envoyer un e-mail à [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour enregistrer vos intérêts.
+>La prise en charge du journal CDN pour l’API de journal New Relic est prévue pour l’avenir. Veuillez envoyer un e-mail à [](mailto:aemcs-logforwarding-beta@adobe.com) pour enregistrer vos intérêts.
 >
->New Relic fournit des points d’entrée spécifiques à une région en fonction de l’emplacement où votre compte New Relic est configuré.  Pour plus d’informations, consultez la documentation de New Relic [&#128279;](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint).
+>New Relic fournit des points d’entrée spécifiques à une région en fonction de l’emplacement où votre compte New Relic est configuré.  Pour plus d’informations, consultez la documentation de New Relic [](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint).
 
 ### API du journal Dynatrace {#dynatrace-https}
 
@@ -488,7 +488,7 @@ L’attribut de portée « Ingérer des journaux » est obligatoire pour le jeto
 ```
 
 >[!NOTE]
->La prise en charge du journal CDN pour l’API de journal Dynatrace est prévue pour l’avenir. Veuillez envoyer un e-mail à [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour enregistrer vos intérêts.
+>La prise en charge du journal CDN pour l’API de journal Dynatrace est prévue pour l’avenir. Veuillez envoyer un e-mail à [](mailto:aemcs-logforwarding-beta@adobe.com) pour enregistrer vos intérêts.
 
 ### Splunk {#splunk}
 
@@ -509,15 +509,13 @@ data:
 * Par défaut, le port est 443. Il peut éventuellement être remplacé par une propriété nommée `port`.
 * Le champ sourcetype possède l’une des valeurs suivantes, en fonction du journal spécifique : *aemaccess*, *aemerror*,
   *aemrequest*, *aemdispatcher*, *aemhttpdaccess*, *aemhttpderror*, *aemcdn*
-* Placer sur la liste autorisée Si les adresses IP requises ont été réduites et que les journaux ne sont toujours pas diffusés, vérifiez qu’il n’existe aucune règle de pare-feu appliquant la validation du jeton Splunk. Fastly effectue une étape de validation initiale dans laquelle un jeton Splunk non valide est délibérément envoyé. Si votre pare-feu est défini pour arrêter les connexions avec des jetons Splunk non valides, le processus de validation échoue, empêchant Fastly de diffuser des journaux vers votre instance Splunk.
+* Si les adresses IP requises ont été réduites et que les journaux ne sont toujours pas diffusés, vérifiez qu’il n’existe aucune règle de pare-feu appliquant la validation du jeton Splunk. Fastly effectue une étape de validation initiale dans laquelle un jeton Splunk non valide est délibérément envoyé. Si votre pare-feu est défini pour arrêter les connexions avec des jetons Splunk non valides, le processus de validation échoue, empêchant Fastly de diffuser des journaux vers votre instance Splunk.
 
 >[!NOTE]
 >
 > [En cas de migration](#legacy-migration) du transfert de journal hérité vers ce modèle en libre-service, les valeurs du champ `sourcetype` envoyées à votre index Splunk peuvent avoir changé. Ajustez-les en conséquence.
 
 ### Logique Sumo {#sumologic}
-
-Le transfert de journal vers Sumo Logic prend en charge les journaux AEM et Dispatcher ; les journaux CDN ne sont pas encore pris en charge.
 
 Lors de la configuration de la logique Sumo pour l’ingestion de données, une « adresse HTTP Source » s’affiche, qui fournit l’hôte, l’URI du destinataire et la clé privée dans une seule chaîne.  Par exemple :
 
@@ -538,9 +536,12 @@ data:
 ```
 
 >[!NOTE]
->La prise en charge du journal CDN pour SumoLogic est prévue pour les années à venir. Veuillez envoyer un e-mail à [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour enregistrer vos intérêts.
+>Le comportement du champ `index` dépend du type de journal :
 >
-> Vous aurez besoin d&#39;un abonnement Sumo Logic Enterprise pour profiter de la fonctionnalité de champ « index ».  Les journaux des abonnements qui ne sont pas des abonnements d’entreprise seront acheminés vers la partition `sumologic_default` en standard.  Voir la [Documentation sur le partitionnement de la logique Sumo](https://help.sumologic.com/docs/search/optimize-search-partitions/) pour plus d’informations.
+>* **Journaux AEM (y compris Apache/Dispatcher)** : acheminés vers la partition spécifiée par `index`, à condition que vous ayez un abonnement Sumo Logic Enterprise. Les abonnements qui ne sont pas des abonnements aux entreprises redirigent plutôt vers la partition `sumologic_default`.
+>* **Journaux CDN** : le champ `index` est ignoré, car l’indexation n’est pas prise en charge techniquement pour les journaux CDN transférés à Sumo Logic. Les journaux CDN sont toujours acheminés vers la partition `sumologic_default`.
+>
+>Voir la [Documentation sur le partitionnement de la logique Sumo](https://help.sumologic.com/docs/search/optimize-search-partitions/) pour plus d’informations.
 
 ## Formats d&#39;entrée de journal {#log-formats}
 
