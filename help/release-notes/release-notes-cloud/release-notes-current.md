@@ -137,7 +137,7 @@ Apprenez-en davantage sur [le développement local avec les outils d’IA](/help
 
 Le serveur MCP d’Experience Governance est désormais disponible pour tous. Il s’intègre aux outils de développement et aux chatbots de l’IA qui prennent en charge le protocole MCP (Model Context Protocol), ce qui vous permet de protéger l’intégrité et la conformité de la marque à l’aide d’invites en langage naturel dans votre chatbot ou votre IDE. Vous pouvez évaluer le contenu (texte, images, pages) par rapport aux règles de gouvernance de marque, et récupérer les configurations de marque et les contrôles de gouvernance disponibles.
 
-En savoir plus sur les [serveurs AEM MCP](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) et l’[agent de gouvernance](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
+En savoir plus sur les [serveurs AEM MCP](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) et l’[agent de gouvernance](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3486258/?learn=on&enablevpops)
