@@ -4,7 +4,7 @@ description: Découvrez la tâche de création de formulaires de Brand Experienc
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
-source-git-commit: d9e892bd0f43fd32ef6c9e614273993baff2571e
+source-git-commit: b6f9448b0c7e22277b1efba79a10b22f1126392a
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 0%
@@ -108,4 +108,4 @@ The form creation skill combines form creation and site integration in a single 
 
 Les ressources suivantes peuvent s’avérer utiles lorsque vous continuez à explorer l’agent de production d’expérience :
 
-* Vous pouvez également utiliser le [classeur de l’agent de production Experience](https://main--summit-labs--aemsites.aem.page/brand-visibility/l339/) pour obtenir des instructions pratiques et guidées.
+* Vous pouvez également utiliser le [classeur de l’agent de production Experience](https://main--summit-labs--aemsites.aem.live/brand-visibility/l339/) pour obtenir des instructions pratiques et guidées.
