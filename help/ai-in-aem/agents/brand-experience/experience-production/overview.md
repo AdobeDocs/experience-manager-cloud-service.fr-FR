@@ -4,7 +4,7 @@ description: Découvrez comment l’agent de production Experience dans AEM vous
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 1dec50e6-d728-41d4-8868-5f9db568d15b
-source-git-commit: db46770763d070e7f9e0bf3df936402ad90f6800
+source-git-commit: d9e892bd0f43fd32ef6c9e614273993baff2571e
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 5%
@@ -14,7 +14,7 @@ ht-degree: 5%
 
 # Présentation de l’agent de production d’expérience {#experience-production-agent}
 
-Experience Production Agent automatise les tâches à fort effort et à volume élevé. Il donne aux équipes les moyens d’agir et transforme des processus manuels qui durent des semaines en workflows rapides, assistés par l’IA, qui maintiennent chaque expérience à jour et cohérente, aidant ainsi l’entreprise à atteindre ses objectifs.
+Experience Production Agent automatise les tâches à fort effort et à volume élevé. Il donne aux équipes les moyens d’agir et transforme les processus manuels qui durent des semaines en workflows rapides et assistés par l’IA qui maintiennent chaque expérience à jour et cohérente, aidant ainsi l’entreprise à atteindre ses objectifs.
 
 ## Jobs {#jobs}
 
@@ -28,11 +28,11 @@ L’agent effectue les tâches suivantes :
 >
 >Les réponses générées par l&#39;IA peuvent être inexactes ou trompeuses. Assurez-vous de vérifier les correctifs et les réponses suggérés.
 >
->Consultez également les [instructions d’utilisation de l’IA générative de &#x200B;](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
+>Consultez également les [instructions d’utilisation de l’IA générative de ](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 
 ### Tâche de mise à jour du contenu {#content-update}
 
-La tâche [&#x200B; Mise à jour de contenu &#x200B;](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) met à jour facilement le contenu existant, y compris les fragments de contenu, les pages, les formulaires et les ressources. L’agent peut effectuer des actions telles que la mise à jour, la suppression, le remplacement ou l’ajout d’éléments de contenu pour que les expériences restent exactes et à jour. Les entrées peuvent être des descriptions en langage naturel et, lorsqu’elles sont utilisées avec des PDF et des captures d’écran Jira, elles peuvent également fournir des entrées.
+La tâche [ Mise à jour de contenu ](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) met à jour facilement le contenu existant, y compris les fragments de contenu, les pages, les formulaires et les ressources. L’agent peut effectuer des actions telles que la mise à jour, la suppression, le remplacement ou l’ajout d’éléments de contenu pour que les expériences restent exactes et à jour. Les entrées peuvent être des descriptions en langage naturel et, lorsqu’elles sont utilisées avec des PDF et des captures d’écran Jira, elles peuvent également fournir des entrées.
 
 ### Tâche de création de formulaire {#form-creation}
 
