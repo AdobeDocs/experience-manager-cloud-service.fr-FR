@@ -4,9 +4,9 @@ description: Découvrez la tâche de création de formulaires de Brand Experienc
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: db46770763d070e7f9e0bf3df936402ad90f6800
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,6 @@ Voici quelques-uns des principaux avantages des tâches de création de formulai
 * **Importer un document PDF et le convertir en formulaire** : vous pouvez importer et transformer des documents PDF existants en formulaires. Les compétences analysent le contenu chargé afin de détecter les types de champs, de préserver les dispositions et d’améliorer les formulaires grâce à une conception réactive et à une logique de validation, tout en garantissant le respect des normes de marque et de conformité.
 
 Lorsque vous utilisez l’une de ces fonctionnalités, vous êtes invité à choisir le type de formulaire à créer. Spécifiez un modèle de formulaire adaptatif basé sur les composants principaux ou un modèle de formulaire adaptatif basé sur Edge Delivery Services et indiquez votre chemin préféré pour enregistrer le formulaire. Si vous créez un formulaire basé sur Edge Delivery Services, vous pouvez également spécifier l’URL GitHub de votre référentiel.
-
 
 ### Exemples d’invites {#sample-prompts}
 
@@ -104,3 +103,9 @@ The form creation skill combines form creation and site integration in a single 
 * *Create a simple survey form with 5 questions and embed it on the customer portal homepage*
 * *Build an event registration form with name, email, and date selection, then add it to /content/events/conference-2025*
 -->
+
+## Ressources supplémentaires {#additional-resources}
+
+Les ressources suivantes peuvent s’avérer utiles lorsque vous continuez à explorer l’agent de production d’expérience :
+
+* Vous pouvez également utiliser le [classeur de l’agent de production Experience](https://main--summit-labs--aemsites.aem.page/brand-visibility/l339/) pour obtenir des instructions pratiques et guidées.
