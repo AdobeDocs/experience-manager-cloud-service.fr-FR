@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 4a423ab3dcb176db5cd3f0d3b8d586a1afced535
 workflow-type: tm+mt
-source-wordcount: '2084'
+source-wordcount: '2276'
 ht-degree: 2%
 
 ---
@@ -78,7 +78,7 @@ Les tableaux suivants répertorient les types de demandes de contenu incluses et
 
 | Type de demande | Demande de contenu | Description |
 | --- | --- | --- |
-| Code HTTP 100-299 | Inclus | Inclut les requêtes réussies qui renvoient un contenu HTML ou JSON complet ou partiel.<br>Code HTTP 206 : ces requêtes ne diffusent qu’une partie du contenu complet. Les requêtes partielles sont incluses lorsqu’elles diffusent une partie d’une réponse HTML ou JSON utilisée dans le rendu du contenu de la page. |
+| Code HTTP 100-299 | Inclus | Inclut les requêtes réussies qui renvoient une partie ou l’intégralité du contenu HTML ou JSON.<br>Code HTTP 206 : ces requêtes ne diffusent qu’une partie du contenu complet. Les requêtes partielles sont incluses lorsqu’elles diffusent une partie d’une réponse HTML ou JSON utilisée dans le rendu du contenu de la page. |
 | Bibliothèques HTTP à automatiser | Inclus | Les requêtes effectuées par les outils ou les bibliothèques qui récupèrent le contenu des pages. Par exemple : <br>· Amazon CloudFront<br>· Client Apache Http<br>· Client HTTP asynchrone<br>· Axios<br>· Azureus<br>· Curl<br>· Récupération de nœud GitHub<br>· Guzzle<br>· Go-http-client<br>· Chrome découplé· Java™ Client<br>· Jersey<br>· Nœud Oembed<br>· okhttp<br>· Requêtes Python<br>· Reactor Netty<br>· Wget<br>· WinHTTP<br>· Fast HTTP<br>· Nœud GitHub Fetch<br>· Reactor Netty<br><br><br> It peut également inclure des agents personnalisés ou une automatisation pilotée par l’IA lorsque le trafic n’est pas classé comme un robot bien connu. |
 | Outils de surveillance et de contrôle de l’intégrité | Inclus | Demandes utilisées pour surveiller l’intégrité ou la disponibilité des pages.<br>Voir [Types de demandes de contenu exclues](#excluded-content-request).<br>Par exemple :<br>· `Amazon-Route53-Health-Check-Service`<br>· EyeMonIT_bot_version_0.1_[(https://eyemonit.com/)](https://eyemonit.com/)<br>· Investis-Site24x7<br>· Mozilla/5.0+(compatible ; UptimeRobot/2.0 ; [https://uptimerobot.com/](https://uptimerobot.com/))<br>· ThousandEyes-Dragonfly-x1<br>· OmtrBot/1.0<br>· WebMon/2.0.0 |
 | `<link rel="prefetch">` requêtes | Inclus | Lorsque les clients préchargent ou prérécupèrent du contenu (par exemple, avec `<link rel="prefetch">`), le système comptabilise ces requêtes côté serveur. Gardez à l’esprit que cette approche peut augmenter le trafic, selon le nombre de pages prérécupérées. |
@@ -103,11 +103,11 @@ Voir aussi [Tableau de bord des licences](/help/implementing/cloud-manager/licen
 | Exclure les appels Commerce integration framework | Exclu | Les demandes envoyées à AEM qui sont transférées vers Commerce integration framework (l’URL commence par `/api/graphql`) ne sont pas facturables pour Cloud Service afin d’éviter un double comptage. |
 | Bibliothèques Clientes (/etc.clientlibs/*) — Exclues | Exclu | Les requêtes sous /etc.clientlibs/* sont des ressources de bibliothèque cliente au niveau de la plateforme et des fichiers de configuration d’exécution utilisés par AEM. Ces requêtes ne diffusent pas de contenu créé par le client ou les données commerciales et ne sont donc pas comptabilisées comme des requêtes de contenu. |
 | Exclure le `favicon.ico` | Exclu | Bien que le contenu renvoyé ne doive pas être HTML ou JSON, il a été observé que certains scénarios tels que les flux d’authentification SAML renvoient des icônes en tant qu’HTML. Par conséquent, les favicons sont explicitement exclus du décompte. |
-| Fragment d’expérience (XF) - Réutilisation dans le même domaine | Exclu | Les requêtes envoyées aux chemins d’accès XF (tels que `/content/experience-fragments/...`) à partir de pages hébergées sur le même domaine (tel qu’identifié par l’en-tête référent correspondant à l’hôte de requête).<br><br> exemple : une page d’accueil sur `aem.customer.com` extrayant un fichier XF pour une bannière ou une carte du même domaine.<br><br>· L’URL correspond à /content/experience-fragments/...<br>· Les correspondances de domaine référent `request_x_forwarded_host`<br><br>**Remarque :** si le chemin d’accès au fragment d’expérience est personnalisé (par exemple à l’aide de `/XFrags/...` ou de tout chemin d’accès en dehors de `/content/experience-fragments/`), la requête n’est pas exclue et peut être comptabilisée, même si elle concerne le même domaine. Adobe recommande d’utiliser la structure de chemin XF standard d’Adobe pour s’assurer que la logique d’exclusion s’applique correctement. |
+| Fragment d’expérience (XF) - Réutilisation dans le même domaine | Exclu | Les requêtes envoyées aux chemins d’accès XF (tels que `/content/experience-fragments/...`) à partir de pages hébergées sur le même domaine (tel qu’identifié par l’en-tête référent correspondant à l’hôte de requête).<br><br> Exemple : une page d’accueil sur `aem.customer.com` extrayant un fichier XF pour une bannière ou une carte du même domaine.<br><br>· L’URL correspond à /content/experience-fragments/...<br>· Les correspondances de domaine référent `request_x_forwarded_host`<br><br>**Remarque :** si le chemin d’accès au fragment d’expérience est personnalisé (en utilisant par exemple `/XFrags/...` ou un chemin d’accès en dehors de `/content/experience-fragments/`), la requête n’est pas exclue et peut être comptabilisée, même si elle concerne le même domaine. Adobe recommande d’utiliser la structure de chemin XF standard d’Adobe pour s’assurer que la logique d’exclusion s’applique correctement. |
 
 ## Gestion des demandes de contenu {#managing-content-requests}
 
-Comme mentionné dans la section ci-dessus [Variances des requêtes de contenu Cloud Service](#content-requests-variances), les requêtes de contenu peuvent être plus élevées que prévu pour plusieurs raisons, un thread commun étant le trafic atteignant le réseau CDN.  En tant que client AEM, il est à votre avantage de surveiller et de gérer vos demandes de contenu pour respecter votre budget de licence.  La gestion des requêtes de contenu est généralement une combinaison de techniques d’implémentation et de [&#x200B; règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md).
+Comme mentionné dans la section ci-dessus [Variances des requêtes de contenu Cloud Service](#content-requests-variances), les requêtes de contenu peuvent être plus élevées que prévu pour plusieurs raisons, un thread commun étant le trafic atteignant le réseau CDN.  En tant que client AEM, il est à votre avantage de surveiller et de gérer vos demandes de contenu pour respecter votre budget de licence.  La gestion des requêtes de contenu est généralement une combinaison de techniques d’implémentation et de [ règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Techniques d’implémentation pour gérer les demandes de contenu {#implementation-techniques-to-manage-crs}
 
@@ -120,17 +120,47 @@ Comme mentionné dans la section ci-dessus [Variances des requêtes de contenu C
 
 ### Règles de filtrage du trafic pour la gestion des demandes de contenu {#traffic-filter-rules-to-manage-crs}
 
-* Un modèle de robot courant consiste à utiliser un agent utilisateur vide.  Vérifiez votre implémentation et les modèles de trafic pour voir si l’agent utilisateur vide est utile ou non.  Si vous souhaitez bloquer ce trafic, la [syntaxe](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) recommandée est la suivante :
+Pour mieux contrôler vos requêtes de contenu, analysez le trafic de votre réseau CDN avant de définir des règles de filtrage. Le [outil d’analyse des journaux CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/devops/cdn-log-analysis) vous permet d’obtenir des informations sur les performances du réseau CDN et les modèles de requête. Commencez par comprendre d’où vient votre trafic et s’il existe des modèles de signalisation inattendus (un modèle de robot courant consiste à utiliser un agent utilisateur vide).
 
+**Éléments à surveiller et à consigner :**
+
+* Pays clients
+* Réseaux clients (système autonome/AS)
+* Adresses IP du client
+* User-Agent et catégorie de robots
+
+Vous pouvez utiliser les transformations de requête pour ajouter des propriétés au journal des requêtes afin qu’elles apparaissent dans les journaux et tableaux de bord du réseau CDN. Par exemple, pour consigner le nom du robot et le réseau client (AS name) en vue de leur analyse :
+
+```yaml
+requestTransformations:
+  rules:
+    - name: log-on-request
+      when: "*"
+      actions:
+        - type: set
+          logProperty: bot_name
+          value: { reqProperty: botName }
+        - type: set
+          logProperty: cli_network
+          value: { reqProperty: clientAsName }
 ```
+
+Après avoir identifié le trafic indésirable (par pays, réseau, robot ou autre signal), vous pouvez le bloquer à l’aide de règles de filtrage du trafic. Exemple de règle qui bloque par pays client, réseau ou nom de robot :
+
+```yaml
 trafficFilters:
   rules:
-    - name: block-missing-user-agent
+    - name: block-bad-client-traffic
       when:
         anyOf:
+          - { reqProperty: clientCountry, equals: "XX" }
+          - { reqProperty: clientAsName, equals: "UnwantedClientNetwork" }
+          - { reqProperty: botName, equals: "UnwantedBot" }
           - { reqHeader: user-agent, exists: false }
           - { reqHeader: user-agent, equals: '' }
       action: block
 ```
 
-* Certains robots ont frappé un site très lourdement un jour et disparaissent le lendemain. Cette fonctionnalité peut empêcher toute tentative de blocage d’une adresse IP ou d’un agent utilisateur spécifique.  Une approche générique consiste à introduire une [&#x200B; règle de limitation des taux](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules).  Examinez les [exemples](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) et créez une règle qui correspond à votre tolérance pour un taux rapide de requêtes.  Consultez la syntaxe [Structure de condition](/help/security/traffic-filter-rules-including-waf.md#condition-structure) pour connaître les exceptions que vous souhaitez autoriser à une limite de taux générique.
+Remplacez les exemples de valeurs par le code de pays, le nom de réseau ou de robot que vous souhaitez bloquer. Voir [Syntaxe des règles de filtre de trafic](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) et [Structure de condition](/help/security/traffic-filter-rules-including-waf.md#condition-structure) pour plus d’options.
+
+* Certains robots ont frappé un site très lourdement un jour et disparaissent le lendemain. Cette fonctionnalité peut empêcher toute tentative de blocage d’une adresse IP ou d’un agent utilisateur spécifique.  Une approche générique consiste à introduire une [ règle de limitation des taux](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules).  Examinez les [exemples](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) et créez une règle qui correspond à votre tolérance pour un taux rapide de requêtes.  Consultez la syntaxe [Structure de condition](/help/security/traffic-filter-rules-including-waf.md#condition-structure) pour connaître les exceptions que vous souhaitez autoriser à une limite de taux générique.
