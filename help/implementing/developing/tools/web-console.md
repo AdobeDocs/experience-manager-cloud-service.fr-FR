@@ -66,7 +66,7 @@ Il existe deux types de configurations disponibles à partir des listes déroula
 
 En sélectionnant une entrée quelconque dans la liste, vous pourrez voir les paramètres associés à cette configuration :
 
-![ Paramètres de configuration ](assets/configuration-parameters.png)
+![&#x200B; Paramètres de configuration &#x200B;](assets/configuration-parameters.png)
 
 Vous pouvez mettre à jour les paramètres selon vos besoins et :
 

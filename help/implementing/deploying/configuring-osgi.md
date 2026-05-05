@@ -52,7 +52,7 @@ selon le format de configuration OSGi `cfg.json`.
 
 ## Résolution du mode d’exécution {#runmode-resolution}
 
-AEM as a Cloud Service prend en charge un ensemble [exact de modes d’exécution.](./overview.md#runmodes) Toute variation des configurations OSGi entre les environnements AEM as a Cloud Service doit être traitée à l’aide de [ variables d’environnement de configuration OSGi ](#environment-specific-configuration-values).
+AEM as a Cloud Service prend en charge un ensemble [exact de modes d’exécution.](./overview.md#runmodes) Toute variation des configurations OSGi entre les environnements AEM as a Cloud Service doit être traitée à l’aide de [&#x200B; variables d’environnement de configuration OSGi &#x200B;](#environment-specific-configuration-values).
 
 >[!NOTE]
 >
@@ -322,7 +322,7 @@ Si une propriété OSGI nécessite des valeurs différentes pour la création et
 * Des dossiers OSGi `config.author` et `config.publish` distincts sont nécessaires, comme décrit dans la section [Résolution du mode d’exécution](#runmode-resolution).
 * Deux options permettent de créer des noms de variable indépendants :
    * la première option, recommandée : dans tous les dossiers OSGI (comme `config.author` et `config.publish`) déclarés pour définir des valeurs différentes, utilisez le même nom de variable. Par exemple :
-     `$[env:ENV_VAR_NAME;default=<value>]`, où la valeur par défaut correspond à la valeur par défaut de ce niveau (auteur ou publication). Lors de la définition de la variable d’environnement par le biais de l’API [Cloud Manager ou d’un client](#cloud-manager-api-format-for-setting-properties) différenciez les niveaux à l’aide du paramètre « service », comme décrit dans la documentation de référence de l’API Cloud Manager [](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/). Le paramètre « service » lie la valeur de la variable au niveau OSGI approprié. Il peut s’agir de « création », « publication » ou « aperçu ».
+     `$[env:ENV_VAR_NAME;default=<value>]`, où la valeur par défaut correspond à la valeur par défaut de ce niveau (auteur ou publication). Lors de la définition de la variable d’environnement par le biais de l’API [Cloud Manager ou d’un client](#cloud-manager-api-format-for-setting-properties) différenciez les niveaux à l’aide du paramètre « service », comme décrit dans la documentation de référence de l’API Cloud Manager [&#128279;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/). Le paramètre « service » lie la valeur de la variable au niveau OSGI approprié. Il peut s’agir de « création », « publication » ou « aperçu ».
    * la deuxième option, qui consiste à déclarer des variables distinctes à l’aide d’un préfixe tel que `author_<samevariablename>` et `publish_<samevariablename>` ;
 
 ### Exemples de configurations {#configuration-examples}
@@ -348,11 +348,11 @@ config
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  « my_var1 »: « val »,
  « my_var2 » : « abc »,
  « my_var3 » : 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -362,11 +362,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  « my_var1 » : « $[env:my_var1] »
  « my_var2 » : « abc »,
  « my_var3 » : 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -391,11 +391,11 @@ config.stage
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  « my_var1 »: « val1 »,
  « my_var2 » : « abc »,
  « my_var3 » : 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -405,11 +405,11 @@ config.prod
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  « my_var1 »: « val2 »,
  « my_var2 » : « abc »,
  « my_var3 » : 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -419,11 +419,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  « my_var1 » : « $[env:my_var1] »
  « my_var2 » : « abc »,
  « my_var3 » : 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -448,11 +448,11 @@ config
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  « my_var1 »: « val1 »,
  « my_var2 » : « abc »,
  « my_var3 » : 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -462,11 +462,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  « my_var1 » : « $[env:my_var1] »
  « my_var2 » : « abc »,
  « my_var3 » : 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -489,11 +489,11 @@ config
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  « my_var1 »: « val1 »,
  « my_var2 » : « abc »,
  « my_var3 » : 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -503,11 +503,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  « my_var1 »: « $[env:my_var1;default=val1] »
  « my_var2 » : « abc »,
  « my_var3 » : 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -523,7 +523,7 @@ Voir [Adobe Cloud Manager sur le site web d’Adobe Developer](https://developer
 
 >[!TIP]
 >
->Vous pouvez également utiliser Cloud Manager pour configurer des variables d’environnement. Pour plus d’informations, consultez [Variables d’environnement ](/help/implementing/cloud-manager/environment-variables.md).
+>Vous pouvez également utiliser Cloud Manager pour configurer des variables d’environnement. Pour plus d’informations, consultez [Variables d’environnement &#x200B;](/help/implementing/cloud-manager/environment-variables.md).
 
 ### Définition de valeurs via l’API {#setting-values-via-api}
 
@@ -551,7 +551,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 >[!NOTE]
 >Les variables par défaut ne sont pas définies via l’API, mais dans la propriété OSGi elle-même.
 >
->Voir [API ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) pour plus d’informations.
+>Voir [API &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) pour plus d’informations.
 
 ### Obtention de valeurs via l’API {#getting-values-via-api}
 
@@ -559,7 +559,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 GET /program/{programId}/environment/{environmentId}/variables
 ```
 
-Voir [API ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) pour plus d’informations.
+Voir [API &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) pour plus d’informations.
 
 ### Suppression de valeurs via l’API {#deleting-values-via-api}
 
@@ -569,7 +569,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 
 Pour supprimer une variable, indiquez-la avec une valeur vide.
 
-Voir [API ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) pour plus d’informations.
+Voir [API &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) pour plus d’informations.
 
 ### Obtention de valeurs via la ligne de commande {#getting-values-via-cli}
 
