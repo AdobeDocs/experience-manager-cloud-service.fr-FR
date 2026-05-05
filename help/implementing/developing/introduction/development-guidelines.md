@@ -4,12 +4,13 @@ description: Découvrez les conseils de développement sur AEM as a Cloud Servi
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 925ed3687b17108b8d42a4a25d1f2b87edaaf76f
 workflow-type: tm+mt
-source-wordcount: '2767'
-ht-degree: 58%
+source-wordcount: '2890'
+ht-degree: 56%
 
 ---
+
 
 # Conseils de développement pour AEM as a Cloud Service {#aem-as-a-cloud-service-development-guidelines}
 
@@ -17,7 +18,7 @@ ht-degree: 58%
 >id="development_guidelines"
 >title="Conseils de développement sur AEM as a Cloud Service"
 >abstract="Découvrez les conseils de développement sur AEM as a Cloud Service et les différences importantes avec AEM On-premise et AEM dans AMS."
->additional-url="https://video.tv.adobe.com/v/345902?captions=fre_fr" text="Démonstration de la structure du package"
+>additional-url="https://video.tv.adobe.com/v/330555/" text="Démonstration de la structure du package"
 
 Ce document présente les conseils de développement sur AEM as a Cloud Service et les différences importantes avec AEM On-premise et AEM dans AMS.
 
@@ -57,7 +58,7 @@ De même, avec tout ce qui se produit de manière asynchrone, comme une action s
 
 Il est vivement recommandé que toutes les connexions HTTP sortantes définissent des délais de connexion et de lecture raisonnables ; les valeurs suggérées sont de 1 seconde pour le délai de connexion et de 5 secondes pour le délai de lecture. Les nombres exacts doivent être déterminés en fonction des performances du système principal qui gère ces requêtes.
 
-Pour le code qui n’applique pas ces délais d’expiration, les instances AEM s’exécutant sur AEM as a Cloud Service appliqueront un délai d’expiration global. Ces valeurs de délai sont de 10 secondes pour les appels de connexion et de 60 secondes pour les appels de lecture pour les connexions.
+Pour le code qui n’applique pas ces délais d’expiration, les instances AEM s’exécutant sur AEM as a Cloud Service appliqueront un délai d’expiration global. Ces valeurs de délai d’expiration sont de 10 secondes pour les appels de connexion et de 60 secondes pour les appels de lecture pour les connexions.
 
 Adobe recommande l’utilisation de la bibliothèque [Apache HttpComponents Client 4.x](https://hc.apache.org/httpcomponents-client-ga/) fournie pour établir les connexions HTTP.
 
@@ -67,7 +68,7 @@ Les alternatives connues et qui fonctionnent, mais qui peuvent nécessiter de fo
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (non recommandées, car obsolètes et remplacées par la version 4.x)
 * [OK Http](https://square.github.io/okhttp/) (non fourni par AEM)
 
-En plus de fournir des délais d’expiration, une gestion appropriée de ces délais et des codes de statut HTTP inattendus doivent être implémentés.
+En plus de fournir des délais d’expiration, une gestion appropriée de ces délais d’expiration et des codes de statut HTTP inattendus doivent être implémentés.
 
 ## Gérer les limites de taux de requête {#rate-limit-handling}
 
@@ -111,11 +112,11 @@ Par exemple, la modification d’une définition d’index sur un référentiel 
 
 Pour le développement en local, les entrées de journal sont écrites dans des fichiers locaux dans le dossier `/crx-quickstart/logs`.
 
-Dans les environnements cloud, les développeurs peuvent télécharger les journaux via Cloud Manager ou utiliser un outil de ligne de commande pour les consulter. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
+Dans les environnements cloud, les développeurs peuvent télécharger les journaux via Cloud Manager ou utiliser un outil de ligne de commande pour les consulter. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **Définition du niveau de journalisation**
 
-Pour modifier les niveaux de journal des environnements Cloud, il est nécessaire de modifier la configuration d’enregistreur OSGi Sling, suivi d’un redéploiement complet. Comme cette opération n’est pas instantanée, veillez à activer les journaux détaillés sur les environnements de production qui reçoivent beaucoup de trafic. Dans le futur, il est possible que des mécanismes soient ajoutés pour pouvoir modifier plus rapidement le niveau du journal.
+Pour modifier les niveaux de journal des environnements cloud, la configuration OSGi de journalisation Sling doit être modifiée, suivie d’un redéploiement complet. Comme cette opération n’est pas instantanée, veillez à activer les journaux détaillés sur les environnements de production qui reçoivent beaucoup de trafic. Dans le futur, il est possible que des mécanismes soient ajoutés pour pouvoir modifier plus rapidement le niveau du journal.
 
 >[!NOTE]
 >
@@ -172,24 +173,22 @@ Les images mémoire de threads dans les environnements Cloud sont collectés en 
 
 ### Développement local {#local-development}
 
-Pour le développement local, les développeurs ont un accès complet à CRXDE Lite (`/crx/de`) et à la console web AEM (`/system/console`).
+Pour le développement local, les développeurs disposent d’un accès complet à [](/help/implementing/developing/tools/crxde.md) (`/crx/de`) et à la [console web](/help/implementing/developing/tools/web-console.md) (`/system/console`).
 
-Lors du développement local (à l’aide du SDK), les `/apps` et les `/libs` peuvent être modifiés directement, ce qui diffère des environnements Cloud, où ces dossiers de niveau supérieur sont immuables.
+Pour le développement local (à l’aide du SDK), les `/apps` et les `/libs` peuvent être modifiés directement, ce qui diffère des environnements Cloud, où ces dossiers de niveau supérieur sont immuables.
 
 ### Outils de développement AEM as a Cloud Service {#aem-as-a-cloud-service-development-tools}
 
 >[!NOTE]
->Le Developer Console AEM as a Cloud Service ne doit pas être confondu avec le Adobe Developer Console [*&#128279;*](https://developer.adobe.com/developer-console/).
 >
-
->[!NOTE]
->Certains clients auront la possibilité de tester une expérience repensée pour le Developer Console AEM Cloud Service. Voir [cet article](/help/implementing/developing/introduction/aem-developer-console.md) pour plus d’informations.
+>* Certains clients auront la possibilité de tester une expérience repensée pour le Developer Console AEM Cloud Service. Voir [cet article](/help/implementing/developing/introduction/aem-developer-console.md) pour plus d’informations.
+>* Le Developer Console AEM as a Cloud Service ne doit pas être confondu avec le Adobe Developer Console [**](https://developer.adobe.com/developer-console/).
 
 Les clients peuvent accéder à CRXDE lite dans l’environnement de développement du niveau création, mais pas dans les environnements d’évaluation ni de production. Le référentiel immuable (`/libs`, `/apps`) ne peut pas être modifié au moment de l’exécution. Toute tentative de ce type entraînera des erreurs.
 
 Au lieu de cela, vous pouvez lancer l’explorateur de référentiels à partir d’AEM as a Cloud Service Developer Console, ce qui vous permet d’accéder au référentiel en lecture seule pour tous les environnements sur les niveaux de création, de publication et de prévisualisation. Pour plus d’informations, voir [Navigateur de référentiels](/help/implementing/developing/tools/repository-browser.md).
 
-Un ensemble d’outils pour le débogage des environnements de développement AEM as a Cloud Service est disponible dans AEM as a Cloud Service Developer Console pour les environnements de RDE, de développement, d’évaluation et de production. L’URL peut être déterminée en ajustant les URL du service de création ou de publication comme suit :
+Un ensemble d’outils pour le débogage des environnements de développement AEM as a Cloud Service est disponible dans [AEM as a Cloud Service Developer Console](/help/implementing/developing/introduction/aem-developer-console.md) pour les environnements de RDE, de développement, d’évaluation et de production. L’URL peut être déterminée en ajustant les URL du service de création ou de publication comme suit :
 
 `https://dev-console-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -201,7 +200,7 @@ Voir [Informations de mise à jour](/help/release-notes/home.md) pour plus d’i
 
 Les développeurs peuvent générer des informations de statut et résoudre diverses ressources.
 
-Comme illustré ci-dessous, les informations de statut disponibles incluent l’état des lots, des composants, des configurations OSGi, des index Oak, des services OSGi et des tâches Sling.
+Comme illustré ci-dessous, les informations de statut disponibles incluent l’état des lots, des composants, des configurations OSGi, des index oak, des services OSGi et des tâches Sling.
 
 ![Console de développement 1](/help/implementing/developing/introduction/assets/devconsole1.png)
 
@@ -243,9 +242,9 @@ Le service de messagerie [Day CQ OSGI](https://experienceleague.adobe.com/docs/e
 
 ### Configuration {#email-configuration}
 
-Dans AEM, les emails doivent être envoyés à l’aide du [service de messagerie Day CQ OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=fr#configuring-the-mail-service).
+Dans AEM, les e-mails doivent être envoyés à l’aide du service de messagerie [Day CQ OSGI](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=fr#configuring-the-mail-service).
 
-Voir la [documentation d’AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=fr) pour plus d’informations sur la configuration des paramètres des e-mails. Pour AEM as a Cloud Service, notez les modifications nécessaires suivantes pour le service `com.day.cq.mailer.DefaultMailService OSGI` :
+Voir la [documentation d’AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=fr) pour plus d’informations sur la configuration des paramètres des e-mails. Pour AEM as a Cloud Service, notez les modifications nécessaires suivantes pour le service OSGi `com.day.cq.mailer.DefaultMailService` :
 
 * Le nom d’hôte du serveur SMTP doit être défini sur $[env:AEM_PROXY_HOST;default=proxy.tunnel]
 * Le port du serveur SMTP doit être défini sur la valeur du port proxy d’origine défini dans le paramètre portForwards utilisé dans l’appel de l’API lors de la configuration de la mise en réseau avancée. Par exemple, 30465 (plutôt que 465).
@@ -269,7 +268,7 @@ Le service de messagerie peut également être configuré avec la prise en charg
 
 ### Configuration d’e-mail héritée {#legacy-email-configuration}
 
-Avant la version 2021.9.0, l’e-mail était configuré par le biais d’une demande du service clientèle. Notez les modifications nécessaires suivantes pour le service `com.day.cq.mailer.DefaultMailService OSGI` :
+Avant la version 2021.9.0, l’e-mail était configuré par le biais d’une demande du service clientèle. Notez les modifications nécessaires suivantes pour le service OSGi `com.day.cq.mailer.DefaultMailService` :
 
 AEM as a Cloud Service nécessite que l’e-mail soit envoyé via le port 465. Si un serveur de messagerie ne prend pas en charge le port 465, il est possible d’utiliser le port 587 tant que l’option TLS est activée.
 
@@ -283,7 +282,7 @@ Si le port 587 a été demandé :
 * Définissez `smtp.port` sur `587`.
 * Définissez `smtp.ssl` sur `false`.
 
-La propriété `smtp.starttls` sera automatiquement définie par AEM as a Cloud Service au moment de son exécution sur une valeur appropriée. Par conséquent, si `smtp.ssl` est défini sur true, `smtp.startls` est ignoré. Si `smtp.ssl` est défini sur false, `smtp.starttls` est défini sur true. Cette règle s’applique indépendamment des valeurs de `smtp.starttls` définies dans votre configuration OSGI.
+La propriété `smtp.starttls` sera automatiquement définie par AEM as a Cloud Service au moment de son exécution sur une valeur appropriée. Par conséquent, si `smtp.ssl` est défini sur true, `smtp.startls` est ignoré. Si `smtp.ssl` est défini sur false, `smtp.starttls` est défini sur true. Et ce, quelles que soient les valeurs `smtp.starttls` définies dans votre configuration OSGi.
 
 L’hôte du serveur SMTP doit être défini sur celui de votre serveur de messagerie.
 
