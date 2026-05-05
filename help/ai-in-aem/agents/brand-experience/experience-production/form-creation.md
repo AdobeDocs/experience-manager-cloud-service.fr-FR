@@ -4,9 +4,9 @@ description: Découvrez la tâche de création de formulaires de Brand Experienc
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
-source-git-commit: 83657ae78fb376f3f55b9f8922deac19b01329a7
+source-git-commit: 5745156078fe3e3e72e293938c065a1340228b9a
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
@@ -108,4 +108,4 @@ The form creation skill combines form creation and site integration in a single 
 
 Les ressources suivantes peuvent s’avérer utiles lorsque vous continuez à explorer l’agent de production d’expérience :
 
-* Vous pouvez également utiliser le [classeur de l’agent de production Experience](https://bit.ly/4ndjsJ0) pour obtenir des instructions pratiques et guidées.
+* Vous pouvez également utiliser le [classeur de l’agent de production Experience](https://www.adobe.com/go/aem-epa-workbook) pour obtenir des instructions pratiques et guidées.
