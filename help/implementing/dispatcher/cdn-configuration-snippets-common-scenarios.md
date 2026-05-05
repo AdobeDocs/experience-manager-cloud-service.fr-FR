@@ -96,7 +96,7 @@ data:
 
 ### Modification de la clé de cache {#cache-key}
 
-Le réseau CDN n’expose pas de champ « clé de cache » distinct. Comme l’URL participe à la mise en cache, vous pouvez fractionner les entrées de cache en modifiant l’URL, par exemple en ajoutant un paramètre de requête par le biais d’une [ transformation de requête](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations).
+Le réseau CDN n’expose pas de champ « clé de cache » distinct. Comme l’URL participe à la mise en cache, vous pouvez fractionner les entrées de cache en modifiant l’URL, par exemple en ajoutant un paramètre de requête par le biais d’une [&#x200B; transformation de requête](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations).
 
 ```yaml
 kind: "CDN"

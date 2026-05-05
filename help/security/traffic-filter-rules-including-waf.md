@@ -472,7 +472,7 @@ data:
         rateLimit: { limit: 100, window: 10, penalty: 60, count: fetches }
 ```
 
-Pour obtenir des fragments de code supplémentaires pour les scénarios avancés, consultez l’article [ Fragments de code de configuration du réseau CDN pour les scénarios courants ](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md).
+Pour obtenir des fragments de code supplémentaires pour les scénarios avancés, consultez l’article [&#x200B; Fragments de code de configuration du réseau CDN pour les scénarios courants &#x200B;](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md).
 
 ## Règles CVE {#cve-rules}
 
