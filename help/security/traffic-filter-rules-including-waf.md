@@ -4,10 +4,10 @@ description: Configurer des règles de filtre de trafic incluant des règles de 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: d967706a000edc8c06193d1a8a39a1931fffbb99
+source-git-commit: 13efa829fb1d1f6533645b9661063a38180db179
 workflow-type: tm+mt
-source-wordcount: '4610'
-ht-degree: 97%
+source-wordcount: '4819'
+ht-degree: 96%
 
 ---
 
@@ -178,7 +178,7 @@ Un groupe de conditions est composé de plusieurs conditions simples et/ou de gr
 
 | **Propriété** | **Type** | **Description** |
 |---|---|---|
-| reqProperty | `string` | Propriété de requête.<br><br>L’un de :<br><ul><li>`path` : renvoie le chemin d’accès complet d’une URL sans les paramètres de requête. (utilisez `pathRaw` pour la variante sans échappement)</li><li>`url` : renvoie l’URL complète, y compris les paramètres de requête. (utilisez `urlRaw` pour la variante sans échappement)</li><li>`queryString` : renvoie la partie requête d’une URL.</li><li>`method` : renvoie la méthode HTTP utilisée dans la requête.</li><li>`tier` : renvoie l’une des options entre `author`, `preview` ou `publish`.</li><li>`domain` : renvoie la propriété de domaine (telle que définie dans l’en-tête `Host`) en minuscules.</li><li>`clientIp` : renvoie l’adresse IP du client ou de la cliente.</li><li>`forwardedDomain` : renvoie le premier domaine défini dans l’en-tête `X-Forwarded-Host` en minuscules.</li><li>`forwardedIp` : renvoie la première adresse IP de l’en-tête `X-Forwarded-For`.</li><li>`clientRegion` : renvoie le code de subdivision du pays qui identifie la région dans laquelle se trouve le client ou la cliente, comme décrit dans la norme [ISO 3166-2](https://fr.wikipedia.org/wiki/ISO_3166-2).</li><li>`clientCountry` : renvoie un code à deux lettres ([Symbole d’indicateur régional](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) qui identifie le pays dans lequel se trouve le client.</li><li>`clientContinent` : renvoie un code à deux lettres (AF, AN, AS, EU, NA, OC, SA) qui identifie le continent sur lequel se trouve le client ou la cliente.</li><li>`clientAsNumber` : renvoie le numéro [Système autonome](https://fr.wikipedia.org/wiki/Autonomous_system_(Internet)) associé à l’adresse IP du client ou de la cliente.</li><li>`clientAsName` : renvoie le nom associé au numéro du système autonome.</li></ul> |
+| reqProperty | `string` | Propriété de requête.<br><br>L’un de :<br><ul><li>`path` : renvoie le chemin d’accès complet d’une URL sans les paramètres de requête. (utilisez `pathRaw` pour la variante sans échappement)</li><li>`originalPath` : renvoie le chemin d’accès d’origine non modifiable de la requête sans les paramètres de requête (chemin d’accès précédant toute transformation de requête CDN).</li><li>`url` : renvoie l’URL complète, y compris les paramètres de requête. (utilisez `urlRaw` pour la variante sans échappement)</li><li>`originalUrl` : renvoie l’URL complète d’origine non modifiable de la requête, y compris les paramètres de requête - l’URL avant toute transformation de requête CDN.</li><li>`queryString` : renvoie la partie requête d’une URL.</li><li>`method` : renvoie la méthode HTTP utilisée dans la requête.</li><li>`tier` : renvoie l’une des options entre `author`, `preview` ou `publish`.</li><li>`domain` : renvoie la propriété de domaine (telle que définie dans l’en-tête `Host`) en minuscules.</li><li>`clientIp` : renvoie l’adresse IP du client ou de la cliente.</li><li>`forwardedDomain` : renvoie le premier domaine défini dans l’en-tête `X-Forwarded-Host` en minuscules.</li><li>`forwardedIp` : renvoie la première adresse IP de l’en-tête `X-Forwarded-For`.</li><li>`clientRegion` : renvoie le code de subdivision du pays qui identifie la région dans laquelle se trouve le client ou la cliente, comme décrit dans la norme [ISO 3166-2](https://fr.wikipedia.org/wiki/ISO_3166-2).</li><li>`clientCountry` : renvoie un code à deux lettres ([Symbole d’indicateur régional](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) qui identifie le pays dans lequel se trouve le client.</li><li>`clientContinent` : renvoie un code à deux lettres (AF, AN, AS, EU, NA, OC, SA) qui identifie le continent sur lequel se trouve le client ou la cliente.</li><li>`clientAsNumber` : renvoie le numéro [Système autonome](https://fr.wikipedia.org/wiki/Autonomous_system_(Internet)) associé à l’adresse IP du client ou de la cliente.</li><li>`clientAsName` : renvoie le nom associé au numéro du système autonome.</li></ul> |
 | reqHeader | `string` | Renvoie l’en-tête de requête avec le nom spécifié. |
 | queryParam | `string` | Renvoie le paramètre de requête avec le nom spécifié. |
 | reqCookie | `string` | Renvoie le cookie avec le nom spécifié. |
@@ -472,6 +472,8 @@ data:
         rateLimit: { limit: 100, window: 10, penalty: 60, count: fetches }
 ```
 
+Pour obtenir des fragments de code supplémentaires pour les scénarios avancés, consultez l’article [ Fragments de code de configuration du réseau CDN pour les scénarios courants ](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md).
+
 ## Règles CVE {#cve-rules}
 
 Si WAF est sous licence, Adobe applique automatiquement des règles de blocage pour se protéger contre de nombreuses CVE (vulnérabilités et exposition courantes) connues. Les nouvelles CVE peuvent être ajoutées peu après avoir été découvertes. La clientèle ne doit pas configurer les règles CVE elle-même, cette action étant par ailleurs inutile.
@@ -545,7 +547,7 @@ Les règles se comportent comme suit :
 
 * Le nom de règle déclaré par le client ou la cliente de toutes les règles correspondantes est répertorié dans l’attribut `match`.
 * L’attribut `action` détermine si les règles bloquent, autorisent ou consignent.
-* Si le WAF est sous licence et activé, l’attribut `waf` répertorie tous les indicateurs WAF (par exemple, SQLI) détectés,  que les indicateurs WAF aient été répertoriés dans des règles ou non. Cela permet de fournir des informations sur les nouvelles règles potentielles à déclarer.
+* Si le WAF est sous licence et activé, l’attribut `waf` répertorie tous les indicateurs WAF (par exemple, SQLI) détectés, que les indicateurs WAF aient été répertoriés dans des règles ou non. Cela permet de fournir des informations sur les nouvelles règles potentielles à déclarer.
 * Si aucune règle déclarée par le client ou la cliente ni aucune règle WAF ne correspond, la propriété `rules` est vide.
 
 Comme nous l’avons vu plus haut, les correspondances de règles WAF apparaissent uniquement dans les journaux de réseau CDN pour les échecs et les réussites du réseau CDN, et non les accès.

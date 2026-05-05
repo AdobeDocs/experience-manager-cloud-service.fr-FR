@@ -4,9 +4,9 @@ description: Découvrez comment configurer le trafic CDN en déclarant des règl
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 15c49efa8ccb7d61fc506a0603b201c50a17edee
+source-git-commit: 13efa829fb1d1f6533645b9661063a38180db179
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '2051'
 ht-degree: 1%
 
 ---
@@ -26,6 +26,8 @@ Vous pouvez également configurer sur le réseau CDN les règles de filtrage du 
 De plus, si le réseau CDN ne peut pas contacter son origine, vous pouvez créer une règle qui fait référence à une page d’erreur personnalisée auto-hébergée (qui est ensuite rendue). Pour en savoir plus à ce sujet, consultez l’article [Configuration des pages d’erreur du réseau CDN](/help/implementing/dispatcher/cdn-error-pages.md).
 
 Toutes ces règles, déclarées dans un fichier de configuration dans le contrôle de code source, sont déployées à l’aide du pipeline Cloud Manager [config](/help/operations/config-pipeline.md). Notez que la taille cumulée du fichier de configuration, y compris les règles de filtrage du trafic, ne peut pas dépasser 100KB.
+
+Pour obtenir des fragments de code supplémentaires pour les scénarios courants, consultez l’article [ Fragments de code de configuration de réseau CDN pour les scénarios courants ](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md).
 
 ## Ordre d&#39;évaluation {#order-of-evaluation}
 
@@ -384,6 +386,8 @@ Les actions disponibles sont expliquées dans le tableau ci-dessous.
 
 Vous pouvez tirer parti du réseau CDN d’AEM pour acheminer le trafic vers différents serveurs principaux, y compris les applications non Adobe (par chemin d’accès ou sous-domaine, par exemple).
 
+Les propriétés de requête `originalPath` et `originalUrl` sont respectivement le chemin d’accès d’origine non modifiable (sans paramètres de requête) et l’URL complète (y compris les paramètres de requête), chacun utilisé avant toute transformation de requête [CDN](#request-transformations). Utilisez-les dans des conditions `when` lorsque vous devez ancrer des règles sur ce que le client a envoyé initialement, plutôt que sur des valeurs qui ont peut-être été réécrites plus tôt dans la séquence d’évaluation. Utilisez `originalPath` pour la correspondance de chemin d’accès uniquement. Utilisez `originalUrl` lorsque la chaîne de requête doit faire partie de la condition (par exemple, le routage ou le filtrage sur une URL de requête initiale spécifique).
+
 Exemple de configuration :
 
 ```
@@ -393,7 +397,7 @@ data:
   originSelectors:
     rules:
       - name: example-com
-        when: { reqProperty: path, like: /proxy* }
+        when: { reqProperty: originalPath, like: /proxy* }
         action:
           type: selectOrigin
           originName: example-com
@@ -497,7 +501,7 @@ data:
 
 >[!NOTE]
 >
->Étant donné que le réseau CDN géré par Adobe est utilisé, veillez à configurer l’invalidation des notifications push en mode **géré**, en suivant la documentation relative à l’[&#x200B; des notifications push de Edge Delivery Services &#x200B;](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+>Étant donné que le réseau CDN géré par Adobe est utilisé, veillez à configurer l’invalidation des notifications push en mode **géré**, en suivant la documentation relative à l’[ des notifications push de Edge Delivery Services ](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
 
 
 ### Proxy de l’environnement AEMaaCS {#proxying-to-aemaacs}
@@ -524,7 +528,7 @@ data:
           allOf:
             - reqProperty: domain
               equals: www.example.com
-            - reqProperty: path
+            - reqProperty: originalPath
               like: /graphql*
         action:
           type: selectOrigin
@@ -552,13 +556,13 @@ data:
   redirects:
     rules:
       - name: redirect-absolute
-        when: { reqProperty: path, equals: "/page.html" }
+        when: { reqProperty: originalPath, equals: "/page.html" }
         action:
           type: redirect
           status: 301
           location: https://example.com/page
       - name: redirect-relative
-        when: { reqProperty: path, equals: "/anotherpage.html" }
+        when: { reqProperty: originalPath, equals: "/anotherpage.html" }
         action:
           type: redirect
           location: /anotherpage
