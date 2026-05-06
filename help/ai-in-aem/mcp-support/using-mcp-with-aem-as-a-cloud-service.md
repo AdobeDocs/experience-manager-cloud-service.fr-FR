@@ -55,7 +55,7 @@ AEM expose les serveurs MCP en tant que points d’entrée HTTP. Les points d’
 | **Contenu** | `/content` | Opérations de contenu dont la création, la lecture, la mise à jour et la suppression (CRUD) de pages et de fragments de contenu, ainsi que l’importation et la recherche de ressources.                                                                          <br>Envoyez un e-mail à aemagentsteam@adobe.com pour activer la recherche **ressources**. Incluez le nom de l’organisation ainsi que le cas d’utilisation dans l’e-mail. |
 | **Contenu (lecture seule)** | `/content-readonly` | Opérations de contenu en lecture seule (Get, List/Search) pour des pages et des fragments de contenu, et recherche de ressources.                                                                             <br>Envoyez un e-mail à aemagentsteam@adobe.com pour activer la recherche **ressources**. Incluez le nom de l’organisation ainsi que le cas d’utilisation dans l’e-mail. |
 | **Cloud Manager** | `/cloudmanager` | Gérez les entités Cloud Manager, notamment les programmes, les environnements, les référentiels et les pipelines, qui peuvent également être déclenchés. |
-| **Gouvernance de l’expérience** | `/experience-governance` | Évaluez le contenu (texte, images, pages) par rapport aux règles de gouvernance de marque et répertoriez les configurations et les contrôles de marque.<br/>Les clients doivent s’inscrire à l’essai [&#x200B; agents ou disposer d’une licence payante](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en) afin d’accéder au MCP de gouvernance de l’expérience. |
+| **Gouvernance de l’expérience** | `/experience-governance` | Évaluez le contenu (texte, images, pages) par rapport aux règles de gouvernance de marque et répertoriez les configurations et les contrôles de marque.<br/>Les clients doivent s’inscrire à l’essai [&#x200B; agents ou disposer d’une licence payante](https://experienceleague.adobe.com/fr/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en) afin d’accéder au MCP de gouvernance de l’expérience. |
 
 Les outils spécifiques exposés par chaque serveur MCP peuvent évoluer au fil du temps. En pratique, vous pouvez demander à votre application compatible avec les MCP de découvrir les outils par le biais d’une invite telle que :
 
@@ -65,7 +65,7 @@ Les outils spécifiques exposés par chaque serveur MCP peuvent évoluer au fil 
 
 Le client MCP utilise le protocole MCP pour récupérer la liste d’outils et les schémas, que le LLM peut ensuite utiliser.
 
-Pour plus d’informations sur leurs fonctionnalités et sur leur utilisation[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) reportez-vous aux sections Tutoriel sur le serveur de MCP de contenu et [Vidéo sur le serveur de MCP de Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager).
+Pour plus d’informations sur leurs fonctionnalités et sur leur utilisation[&#128279;](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) reportez-vous aux sections Tutoriel sur le serveur de MCP de contenu et [Vidéo sur le serveur de MCP de Cloud Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager).
 
 ## Applications MCP prises en charge {#supported-mcp-applications}
 
