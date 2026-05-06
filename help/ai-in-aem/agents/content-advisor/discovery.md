@@ -4,7 +4,7 @@ description: Découvrez comment utiliser l’agent de découverte de contenu pou
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: d4b216294791958c29a4cca736bc041a7bf4ad0c
+source-git-commit: c5a3d3de3b99aea43169e7a503a4ea8ed5d480d8
 workflow-type: tm+mt
 source-wordcount: '2375'
 ht-degree: 1%
@@ -236,7 +236,7 @@ Remarque : la découverte de formulaires prend actuellement en charge les formul
 
 L’agent de découverte de contenu renvoie les meilleurs résultats pour chaque requête, triés par pertinence afin de s’assurer que les correspondances exactes apparaissent en premier. L’agent combine des requêtes basées sur les métadonnées avec une recherche sémantique pour assembler un ensemble ciblé de correspondances probables, puis utilise un LLM pour les classer en fonction de l’intention de l’utilisateur. Cette approche mixte fournit des résultats précis et contextuels sans dépendre entièrement d’une correspondance directe des mots-clés.
 
-Chaque résultat s’affiche sous la forme d’une carte de ressource, qui indique le nom, l’aperçu et les métadonnées clés de la ressource, telles que la description et le format. Vous pouvez cliquer sur l’icône Infos sur une carte pour afficher des propriétés de ressource supplémentaires.
+Chaque résultat s’affiche sous forme de carte de ressource, affichant le nom, l’aperçu et les métadonnées clés de la ressource, telles que la description et le format. Vous pouvez cliquer sur l’icône Infos sur une carte pour afficher des propriétés de ressource supplémentaires.
 
 Utilisez l’option **Afficher le tableau** pour afficher les résultats sous forme de tableau. Cliquez sur **Afficher tous les résultats** pour afficher l’ensemble complet des 20 ressources récupérées dans le volet de droite.
 
@@ -248,7 +248,7 @@ Vous pouvez utiliser ces détails de ressource pour évaluer rapidement si une r
 
 >[!NOTE]
 >
->Le champ [&#x200B; URL Dynamic Media &#x200B;](/help/assets/dynamic-media/dynamic-media.md) s’affiche dans les résultats de recherche uniquement si la ressource est publiée et que vous disposez d’une licence Dynamic Media valide. De même, le champ [Dynamic Media avec URL OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) s’affiche uniquement si vous disposez d’une licence Dynamic Media valide et que Dynamic Media avec OpenAPI est activé pour votre instance AEM as a Cloud Service.
+>Le champ [ URL Dynamic Media ](/help/assets/dynamic-media/dynamic-media.md) s’affiche dans les résultats de recherche uniquement si la ressource est publiée et que vous disposez d’une licence Dynamic Media valide. De même, le champ [Dynamic Media avec URL OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) s’affiche uniquement si vous disposez d’une licence Dynamic Media valide et que Dynamic Media avec OpenAPI est activé pour votre instance AEM as a Cloud Service.
 
 ### Fragments de contenu {#discovery-agent-search-results-content-fragments}
 
