@@ -23,7 +23,7 @@ Découvrez comment utiliser la console web Adobe Experience Manager (AEM) pour g
 
 AEM as a Cloud Service traite la [configuration et le code comme immuables au moment de l’exécution.](/help/release-notes/aem-cloud-changes.md#apps-libs-immutable) Cela signifie que toutes les configurations doivent être déployées comme vous le feriez pour le code dans un environnement de production. Pour les instances de production, cela garantit que les points de contrôle qualité sont franchis et offre un niveau de stabilité et de clarté de votre environnement actuel.
 
-Cependant, des mises à jour et des modifications de lots ad hoc [configuration OSGi](/help/implementing/deploying/configuring-osgi.md) sont souvent nécessaires pour tester les développements locaux. Dans le cadre d’AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) la console web permet ces mises à jour en temps réel.[
+Cependant, des mises à jour et des modifications de lots ad hoc [configuration OSGi](/help/implementing/deploying/configuring-osgi.md) sont souvent nécessaires pour tester les développements locaux. Dans le cadre d’AEM as a Cloud Service SDK[&#128279;](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) la console web permet ces mises à jour en temps réel.
 
 AEM as a Cloud Service s’exécutant localement, vous pouvez accéder à la console à partir de `http://<host>:<port>/system/console`.
 
@@ -68,7 +68,7 @@ Deux types de configurations sont disponibles à partir de la liste de cet écra
 
 En sélectionnant une entrée quelconque dans la liste, vous pourrez voir les paramètres associés à cette configuration :
 
-![ Paramètres de configuration ](assets/configuration-parameters.png)
+![&#x200B; Paramètres de configuration &#x200B;](assets/configuration-parameters.png)
 
 Vous pouvez mettre à jour les paramètres selon vos besoins et :
 
