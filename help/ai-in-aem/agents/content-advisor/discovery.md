@@ -4,10 +4,10 @@ description: Découvrez comment utiliser l’agent de découverte de contenu pou
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: d4b216294791958c29a4cca736bc041a7bf4ad0c
 workflow-type: tm+mt
-source-wordcount: '2073'
-ht-degree: 0%
+source-wordcount: '2375'
+ht-degree: 1%
 
 ---
 
@@ -99,11 +99,38 @@ Exemples d’invites :
 * **Recherche en fonction du format de fichier, du type de ressource, de l’état de la ressource et de l’ID de ressource créé par e-mail** : afficher les vidéos au format `.mp4` qui sont approuvées et `created by <user email ID>`.
 * **Recherche en fonction du format de fichier, du type de ressource, du statut de la ressource et de la date de création** : affiche les images au format `.PNG` créées après le 1er janvier 2025 et `published by <user email ID>`
 * **Recherche basée sur le type MIME, la date de création et l’ID de publication par e-mail** : affiche les `image/jpeg` créées après `January 1, 2025` et `published by <user email ID>`.
-* **Recherche en fonction du format de fichier et des propriétés de métadonnées personnalisées** : permet d’afficher les images au format `.JPEG` comportant des `Product SKU ID = <SKU value>` (doit être au format propriété de métadonnées = format de valeur).
 
 * **Rechercher des ressources présentant des métadonnées manquantes** : l’option Afficher les ressources créées au cours des 90 derniers jours avec des `<Name of metadata property including custom properties>` est vide.
 
 * **Rechercher des ressources en utilisant la taille de fichier, la largeur d’image et la hauteur d’image** : affichez les images de plus de 5 Mo avec une largeur supérieure à 2 000 pixels et une hauteur supérieure à 1 200 pixels.
+
+**Prise en charge du langage naturel pour les métadonnées personnalisées**
+
+L’agent de découverte de contenu prend en charge l’interrogation de propriétés de métadonnées personnalisées définies dans des schémas de métadonnées. Vous pouvez référencer des valeurs de métadonnées directement dans vos invites sans avoir à les spécifier à l’aide d’un format clé-valeur strict. L’agent interprète l’intention et associe automatiquement les champs de métadonnées pertinents.
+
+Exemples d’invites :
+
+* **La recherche de ressources avec une valeur de propriété n’est pas définie** : recherchez les ressources dont le nom de campagne n’est pas défini (la propriété doit être indexée pour obtenir les résultats appropriés).
+
+* **Recherche de ressources dont la valeur de propriété est définie** : recherchez les ressources dont le nom de campagne est défini (la propriété doit être indexée pour obtenir les résultats appropriés).
+
+* **Recherche de ressources dont la valeur de propriété est définie sur X** : recherchez-moi les ressources dont le nom de campagne est Jour de café.
+
+* **Recherche de ressources dont la valeur de propriété est définie sur un ensemble de valeurs X, Y** : recherchez les ressources dont le nom de campagne est Jour-café ainsi que celles dont le nom de campagne est Jour-thé.
+
+* **Affichage de la valeur d’un champ de propriété spécifique** : Obtenir des ressources Coffee m’affiche également le nom de campagne de ces ressources.
+
+* **Rechercher des ressources qui correspondent à une condition de propriété basée sur la date** : obtenez-moi les ressources dont la licence n’a pas expiré.
+
+
+
+
+
+
+
+
+
+
 
 
 **Découverte de contenu basé sur des dossiers :**\
@@ -161,6 +188,10 @@ Exemples d’invites :
 
 * Afficher les images de montagne triées par nom dans l’ordre croissant (affiche les noms d’image commençant par la lettre A suivie de B, etc.).
 
+**Détection d’environnement contextuelle**
+
+Dans la vue Administration, l’agent de découverte de contenu détecte automatiquement l’environnement de création et l’utilise pour résoudre les invites, sans que vous ayez à spécifier explicitement l’URL de création.
+
 ### Pages AEM Sites {#content-discovery-agent-aem-sites-pages}
 
 L’agent de découverte de contenu permet aux utilisateurs de localiser rapidement les pages AEM Sites appropriées en interprétant les invites en langage naturel qui font référence aux rubriques de la page, aux campagnes ou à d’autres mots-clés contextuels. L’agent effectue une recherche en texte intégral en fonction des mots-clés de l’invite pour identifier les pages correspondantes dans le référentiel AEM, ce qui élimine la nécessité de parcourir manuellement la structure Sites.
@@ -205,17 +236,19 @@ Remarque : la découverte de formulaires prend actuellement en charge les formul
 
 L’agent de découverte de contenu renvoie les meilleurs résultats pour chaque requête, triés par pertinence afin de s’assurer que les correspondances exactes apparaissent en premier. L’agent combine des requêtes basées sur les métadonnées avec une recherche sémantique pour assembler un ensemble ciblé de correspondances probables, puis utilise un LLM pour les classer en fonction de l’intention de l’utilisateur. Cette approche mixte fournit des résultats précis et contextuels sans dépendre entièrement d’une correspondance directe des mots-clés.
 
-Chaque résultat inclut le nom de la ressource ainsi que les métadonnées clés de la ressource telles que le chemin d’accès, le créateur, la date de création, le titre, la description, le format, le dernier modificateur, la date de dernière modification, la taille du fichier, les dimensions, l’[URL de Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) et les balises associées. Si une ressource est à l’état approuvé, les résultats incluent également [Dynamic Media avec l’URL OpenAPI](/help/assets/dynamic-media-open-apis-overview.md).
+Chaque résultat s’affiche sous la forme d’une carte de ressource, qui indique le nom, l’aperçu et les métadonnées clés de la ressource, telles que la description et le format. Vous pouvez cliquer sur l’icône Infos sur une carte pour afficher des propriétés de ressource supplémentaires.
 
-Vous pouvez cliquer sur le chemin d’accès à la ressource pour accéder facilement à son emplacement dans AEM.
+Utilisez l’option **Afficher le tableau** pour afficher les résultats sous forme de tableau. Cliquez sur **Afficher tous les résultats** pour afficher l’ensemble complet des 20 ressources récupérées dans le volet de droite.
 
-![Recherche de ressources à l’aide de l’agent de découverte de contenu](/help/ai-in-aem/agents/content-advisor/assets/search-results-discovery-agent.png)
+Chaque résultat inclut également des métadonnées clés sur la ressource telles que le chemin d’accès, la taille, la date de création et le créateur ou la créatrice, la date de modification, ainsi que l’utilisateur ou l’utilisatrice qui a modifié la ressource, le format et la description. Si une ressource est à l’état approuvé, les résultats incluent également [Dynamic Media avec l’URL OpenAPI](/help/assets/dynamic-media-open-apis-overview.md). Vous pouvez cliquer sur le chemin d’accès à la ressource pour accéder facilement à son emplacement dans AEM.
+
+![Recherche de ressources à l’aide de l’agent de découverte de contenu](/help/ai-in-aem/agents/content-advisor/assets/search-results-content-discovery-agent.png)
 
 Vous pouvez utiliser ces détails de ressource pour évaluer rapidement si une ressource répond aux exigences sans accéder à chaque ressource pour afficher ces détails.
 
 >[!NOTE]
 >
->Le champ [&#x200B; URL Dynamic Media &#x200B;](/help/assets/dynamic-media/dynamic-media.md) s’affiche dans les résultats de recherche uniquement si la ressource est publiée et que vous disposez d’une licence Dynamic Media valide. De même, le champ [Dynamic Media avec URL OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) s’affiche uniquement si vous disposez d’une licence Dynamic Media valide et que Dynamic Media avec OpenAPI est activé pour votre instance AEM as a Cloud Service.
+>Le champ [ URL Dynamic Media ](/help/assets/dynamic-media/dynamic-media.md) s’affiche dans les résultats de recherche uniquement si la ressource est publiée et que vous disposez d’une licence Dynamic Media valide. De même, le champ [Dynamic Media avec URL OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) s’affiche uniquement si vous disposez d’une licence Dynamic Media valide et que Dynamic Media avec OpenAPI est activé pour votre instance AEM as a Cloud Service.
 
 ### Fragments de contenu {#discovery-agent-search-results-content-fragments}
 
@@ -233,7 +266,7 @@ Spécifiez des détails concis dans vos invites en langage naturel afin que l&#3
 
 * Utilisez des métadonnées spécifiques à votre entreprise, telles que les catégories (chaussures de course, appareils électroniques), les saisons (automne, printemps), les événements (vendredi noir, lancement de produit) et les canaux (web, e-mail, impression) pour filtrer davantage le contenu.
 
-## Limites {#limitations-discovery-agent}
+## Restrictions {#limitations-discovery-agent}
 
 * Le Content Discovery Agent prend uniquement en charge les invites basées sur les dimensions pour les types de format image et SVG. Par exemple, `Find images wider than 1080px`.
 
