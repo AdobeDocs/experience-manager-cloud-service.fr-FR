@@ -4,9 +4,9 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 82b3b4bdcd09aa86974518f4f62e73c9f377c83f
+source-git-commit: d00af3aee8c2a42233bfc0f914a4e24abe921e08
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '783'
 ht-degree: 30%
 
 ---
@@ -16,13 +16,17 @@ ht-degree: 30%
 
 La section suivante décrit les notes de mise jour techniques de maintenance actuelle d’Experience Manager as a Cloud Service.
 
-## 25821 de publication {#release-25821}
+## 25892 de publication {#release-25892}
 
-Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 25821, rendue publique le 5 mai 2026. La version de maintenance précédente était la version 25520.
+Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 25892, rendue publique le 7 mai 2026. La version de maintenance précédente était la version 25520.
 
 L’activation de la fonctionnalité 2026.5.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
 
-### Améliorations {#enhancements-25821}
+>[!NOTE]
+>
+>La version 25821 a été rendue privée.
+
+### Améliorations {#enhancements-25892}
 
 * CQ-4362304 : Création de directives pour l’interface utilisateur frontale et mise à jour de la configuration LLM.
 * GRANITE-39546 : mise à niveau d’Apache Tika vers 3.x.
@@ -52,7 +56,7 @@ L’activation de la fonctionnalité 2026.5.0 fournit l’ensemble des fonctionn
 * SKYOPS-138356 : mise à jour de la `com.adobe.granite.oauth.server` vers la version 1.1.36.
 * SKYOPS-138739 : mise à jour de SnakeYAML vers la version 2.6.
 
-### Problèmes résolus {#fixed-issues-25821}
+### Problèmes résolus {#fixed-issues-25892}
 
 * ASSETS-59546 : suppression des dépendances sur la bibliothèque commons-lang obsolète.
 * ASSETS-64831 : la réinitialisation du nombre de tentatives de traitement par AssetProcessorProcess entraîne le blocage des ressources.
@@ -67,7 +71,7 @@ L’activation de la fonctionnalité 2026.5.0 fournit l’ensemble des fonctionn
 * SITES-39267 : restaurez pagePath dans les entrées de chaîne de relation.
 * SITES-43715 : la validation des autorisations échoue lors de la lecture du statut de la ressource.
 
-#### AEM Guides {#guides-25821}
+#### AEM Guides {#guides-25892}
 
 * GUIDES-45110 : lors de la sélection d’une image dans l’éditeur à l’aide de la boîte de dialogue **Sélectionner un fichier**, seuls les formats de trame (tels que JPG, PNG et GIF) s’affichent. Les fichiers vectoriels (tels que `.ai` et `.eps`) ne sont pas affichés et ne peuvent pas être sélectionnés.
 * GUIDES-41938 : La création d’une rubrique dans un dossier dont le nom contient des espaces crée un dossier en double dans lequel les espaces sont remplacés par des tirets et la rubrique y est enregistrée au lieu du dossier d’origine.
@@ -77,19 +81,19 @@ L’activation de la fonctionnalité 2026.5.0 fournit l’ensemble des fonctionn
 
 Pour plus d’informations sur les fonctionnalités nouvelles et améliorées, ainsi que sur les problèmes résolus dans la version, consultez la [Feuille de route de publication d’Experience Manager Guides](https://experienceleague.adobe.com/fr/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
-### Problèmes connus {#known-issues-25821}
+### Problèmes connus {#known-issues-25892}
 
 Aucun.
 
-### Fonctionnalités et API obsolètes {#deprecated-25821}
+### Fonctionnalités et API obsolètes {#deprecated-25892}
 
 Les fonctionnalités et API obsolètes et supprimées dans AEM as a Cloud Service sont présentées dans le document [Fonctionnalités et API obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md).
 
-### Correctifs de sécurité {#security-25821}
+### Correctifs de sécurité {#security-25892}
 
 AEM as a Cloud Service est dédié à l’optimisation de la sécurité et des performances de votre plateforme. Cette version de maintenance corrige 19 vulnérabilités identifiées, renforçant ainsi notre engagement en faveur d’une protection robuste des systèmes.
 
-### Technologies intégrées {#embedded-tech-25821}
+### Technologies intégrées {#embedded-tech-25892}
 
 | Technologie | Version | Lien |
 |---|---|---|
