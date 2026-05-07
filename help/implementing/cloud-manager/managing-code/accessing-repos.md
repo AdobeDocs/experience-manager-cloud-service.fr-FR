@@ -5,7 +5,7 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 0c156a295dc49d7e12f4e4f9ce1743d06c7fcdaf
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 96%
@@ -28,7 +28,7 @@ La boîte de dialogue **Informations sur le référentiel** vous permet d’affi
 * L’URL vers le référentiel Git de Cloud Manager.
 * Des commandes Git préconfigurées pour ajouter rapidement un référentiel distant à votre référentiel Git et pour transférer du code.
 
-![Fenêtre Informations sur le référentiel](assets/repository-info.png)
+  ![Fenêtre Informations sur le référentiel](assets/repository-info.png)
 
 Les informations d’accès relatives aux [référentiels privés](private-repositories.md) ne sont pas disponibles dans Cloud Manager.
 
@@ -66,4 +66,4 @@ La fonction **Accéder aux informations sur le référentiel** est également di
 
 Vous pouvez révoquer un mot de passe d’accès à tout moment.
 
-Pour ce faire, [créez un ticket d’assistance pour cette demande](https://experienceleague.adobe.com/fr?support-solution=Experience+Manager&support-tab=home#support). Le ticket est traité en priorité et la révocation est généralement effectuée dans la journée.
+Pour ce faire, [créez un ticket d’assistance pour cette demande](https://experienceleague.adobe.com/?support-solution=Experience+Manager&support-tab=home#support). Le ticket est traité en priorité et la révocation est généralement effectuée dans la journée.
