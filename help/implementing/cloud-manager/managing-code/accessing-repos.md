@@ -7,7 +7,7 @@ feature: Cloud Manager, Developing
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '406'
 ht-degree: 96%
 
 ---
@@ -66,4 +66,4 @@ La fonction **Accéder aux informations sur le référentiel** est également di
 
 Vous pouvez révoquer un mot de passe d’accès à tout moment.
 
-Pour ce faire, [créez un ticket d’assistance pour cette demande](https://experienceleague.adobe.com/fr?support-solution=Experience+Manager&support-tab=home#support). Le ticket est traité en priorité et la révocation est généralement effectuée dans la journée.
+Pour ce faire, [créez un ticket d’assistance pour cette demande](https://experienceleague.adobe.com/?support-solution=Experience+Manager&support-tab=home#support). Le ticket est traité en priorité et la révocation est généralement effectuée dans la journée.
