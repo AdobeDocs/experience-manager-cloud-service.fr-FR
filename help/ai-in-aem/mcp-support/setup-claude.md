@@ -1,27 +1,28 @@
 ---
 title: Configuration d’Anthropic Claude avec AEM MCP
-description: Découvrez comment configurer Anthropic Claude pour qu’il se connecte aux serveurs MCP AEM
+description: Découvrez comment configurer Anthropic Claude pour qu’il se connecte aux serveurs MCP d’AEM
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 2b90b2b2-cdd0-4f1e-890f-2f58f578face
-source-git-commit: fede808fcd8b082a71273bf9ffceb48b5332f45d
+source-git-commit: 07a7aa5f02d7bfa992df825f3b8a19e18d569d5b
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
 
 # Configuration d’Anthropic Claude avec AEM MCP {#setup-claude}
 
-Pour connecter Anthropic Claude aux serveurs MCP AEM, procédez comme suit.
+Cet article couvre deux manières distinctes d’utiliser Anthropic Claude avec AEM :
 
-* Dans la configuration MCP de Claude, enregistrez une ou plusieurs URL de serveur MCP AEM.
-* Terminez le flux de connexion à Adobe.
-* Vous pouvez éventuellement activer la confirmation automatique pour certains outils dans la zone de configuration. Cette option est recommandée pour les opérations de recherche ou de lecture seule.
-* Assurez-vous que le serveur MCP est sélectionné avant de commencer votre conversation.
-* Demandez à Claude d’effectuer des tâches liées à AEM. Claude sélectionne les outils AEM exposés par le serveur MCP en fonction de votre invite.
+- Configurez manuellement un ou plusieurs serveurs MCP d’AEM dans Claude (les serveurs décrits à la section [Utilisation de MCP avec AEM as a Cloud Service — Serveurs MCP](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#mcp-servers)).
+- Installez le connecteur Adobe Experience Manager à partir de la marketplace de connecteur d’Anthropic. Il dispose actuellement de la parité des fonctionnalités avec le serveur MCP de contenu et exposera un sous-ensemble croissant d’outils disponibles dans les serveurs MCP d’AEM.
 
-Pour configurer Claude pour AEM MCP, procédez comme suit :
+
+
+## Configuration manuelle des serveurs MCP d’AEM dans Claude {#manual-configure-aems-mcp-servers-in-claude}
+
+Cette section décrit l’approche **configuration manuelle**, qui consiste à ajouter un ou plusieurs serveurs MCP d’AEM à Claude en tant que connecteurs personnalisés.
 
 >[!NOTE]
 >
@@ -35,7 +36,7 @@ Pour configurer Claude pour AEM MCP, procédez comme suit :
 
    ![Page Connecteurs dans Paramètres avec Ajouter un connecteur personnalisé.](assets/claude-2.png)
 
-1. Dans la boîte de dialogue **Ajouter un connecteur personnalisé**, saisissez un nom d’affichage (par exemple, **Service AEM Content MCP**) et l’URL de votre serveur AEM MCP, puis choisissez **Ajouter**. Utilisez **Paramètres avancés** uniquement lorsque votre déploiement nécessite des options supplémentaires.
+1. Dans la boîte de dialogue **Ajouter un connecteur personnalisé**, saisissez un nom d’affichage (par exemple, **Service AEM Content MCP**) et l’URL de votre serveur MCP, puis choisissez **Ajouter**. Utilisez **Paramètres avancés** uniquement lorsque votre déploiement nécessite des options supplémentaires.
 
    ![Ajout d’une boîte de dialogue de connecteur personnalisé avec le nom et l’URL MCP.](assets/claude-3.png)
 
@@ -55,8 +56,10 @@ Pour configurer Claude pour AEM MCP, procédez comme suit :
 
    ![Compositeur de conversation avec le service AEM Content MCP activé dans le menu des outils.](assets/claude-7.png)
 
-## Connecteur Adobe Experience Manager Claude {#aem-claude-connector}
+## Installation du connecteur Adobe Experience Manager (Anthropic connector marketplace) {#install-adobe-experience-manager-connector}
 
-Pour installer le **connecteur Claude**, ouvrez **Paramètres** > **Connecteurs** dans Claude. Vous pouvez également ouvrir la page Connecteurs directement sur [&#128279;](https://claude.ai/settings/connectors). Le connecteur enregistre un serveur MCP qui expose un ensemble croissant d’outils pour les workflows AEM.
+Cette section décrit le **connecteur installable** de la marketplace de connecteur d’Anthropic (contrairement à l’ajout d’une URL de connecteur personnalisée). Il comprend un sous-ensemble des outils disponibles dans les serveurs MCP AEM.
+
+Pour installer le **connecteur**, ouvrez **Paramètres** > **Connecteurs** dans Claude. Vous pouvez également ouvrir la page Connecteurs directement sur [](https://claude.ai/settings/connectors). Le connecteur enregistre un serveur MCP qui expose un ensemble croissant d’outils pour les workflows AEM.
 
 ![Installation du connecteur Adobe Experience Manager Claude à partir du répertoire des connecteurs.](assets/claude-connector.png)
