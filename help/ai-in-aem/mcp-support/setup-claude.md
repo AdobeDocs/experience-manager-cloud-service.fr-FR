@@ -60,6 +60,6 @@ Cette section décrit l’approche **configuration manuelle**, qui consiste à a
 
 Cette section décrit le **connecteur installable** de la marketplace de connecteur d’Anthropic (contrairement à l’ajout d’une URL de connecteur personnalisée). Il comprend un sous-ensemble des outils disponibles dans les serveurs MCP AEM.
 
-Pour installer le **connecteur**, ouvrez **Paramètres** > **Connecteurs** dans Claude. Vous pouvez également ouvrir la page Connecteurs directement sur [](https://claude.ai/settings/connectors). Le connecteur enregistre un serveur MCP qui expose un ensemble croissant d’outils pour les workflows AEM.
+Pour installer le **connecteur**, ouvrez **Paramètres** > **Connecteurs** dans Claude. Vous pouvez également ouvrir la page Connecteurs directement sur [&#128279;](https://claude.ai/settings/connectors). Le connecteur enregistre un serveur MCP qui expose un ensemble croissant d’outils pour les workflows AEM.
 
 ![Installation du connecteur Adobe Experience Manager Claude à partir du répertoire des connecteurs.](assets/claude-connector.png)
