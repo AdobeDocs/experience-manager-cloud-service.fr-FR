@@ -28,7 +28,7 @@ Quatre composantes complémentaires abordent ce problème :
 | **Serveur MCP local Quickstart** | Expose les données d’exécution en direct d’une instance AEM SDK locale pour prendre en charge le dépannage |
 | **Serveur MCP local** | Permet la validation et le contrôle au moment de l’exécution d’une instance Dispatcher locale |
 
-Consultez les [tutoriels de développement assisté par l’IA](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview) pour obtenir des instructions pratiques supplémentaires.
+Consultez les [tutoriels de développement assisté par l’IA](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview) pour obtenir des instructions pratiques supplémentaires.
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Adobe publie les compétences AEM as a Cloud Service dans le référentiel **[ad
 
 ### Installation des compétences {#install-skills}
 
-Sélectionnez la méthode qui correspond à votre outil de codage d’IA. L’installation des compétences les rend disponibles pour tous les projets sur cette machine. Voir le [tutoriel Configuration des compétences de l’agent AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills) pour une présentation concrète.
+Sélectionnez la méthode qui correspond à votre outil de codage d’IA. L’installation des compétences les rend disponibles pour tous les projets sur cette machine. Voir le [tutoriel Configuration des compétences de l’agent AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills) pour une présentation concrète.
 
 #### Claude Code {#claude-code}
 
@@ -123,7 +123,7 @@ CTA Link (ctaLink) - Pathfield
 
 L’agent fait écho à la spécification du champ pour confirmation, puis génère tous les fichiers de composant. Les modèles pris en charge comprennent les champs multiples avec des éléments imbriqués composites, la logique d’affichage/masquage conditionnel, l’extension des composants principaux via Sling Resource Merger et les tests JUnit 5 à l’aide de simulations AEM. La conception peut provenir de diverses sources, y compris une description textuelle, une image ou une URL de conception Figma utilisant le serveur MCP de Figma.
 
-Pour en savoir plus, suivez le tutoriel [&#x200B; Développement de composants à l’aide des compétences de l’agent AEM &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development).
+Pour en savoir plus, suivez le tutoriel [&#x200B; Développement de composants à l’aide des compétences de l’agent AEM &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development).
 
 ### Utilisation des compétences Dispatcher {#use-the-dispatcher-skill}
 
