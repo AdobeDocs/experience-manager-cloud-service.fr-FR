@@ -124,7 +124,7 @@ CTA Link (ctaLink) - Pathfield
 
 L’agent fait écho à la spécification du champ pour confirmation, puis génère tous les fichiers de composant. Les modèles pris en charge comprennent les champs multiples avec des éléments imbriqués composites, la logique d’affichage/masquage conditionnel, l’extension des composants principaux via Sling Resource Merger et les tests JUnit 5 à l’aide de simulations AEM. La conception peut provenir de diverses sources, y compris une description textuelle, une image ou une URL de conception Figma utilisant le serveur MCP de Figma.
 
-Pour en savoir plus, suivez le tutoriel [ Développement de composants à l’aide des compétences de l’agent AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development).
+Pour en savoir plus, suivez le tutoriel [&#x200B; Développement de composants à l’aide des compétences de l’agent AEM &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development).
 
 ### Utilisation des compétences Dispatcher {#use-the-dispatcher-skill}
 
