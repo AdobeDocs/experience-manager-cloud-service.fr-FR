@@ -194,14 +194,14 @@ Le tableau suivant illustre la prise en charge des fonctionnalités de la foncti
 
 | Application | Prise en charge du chargement rapide pour la recherche dans Assets | Prise en charge du panneau de contenu suggéré lors de la recherche dans Assets | Prise en charge du panneau Dynamic Media lors de la recherche dans Assets | Prise en charge de la recherche de fragments de contenu |
 |--------------------------------------|----------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|------------------------------------------|
-| [](/help/assets/native-integration-adobe-express.md) | ✓ | ✓ | ✓ | − |
+| [&#128279;](/help/assets/native-integration-adobe-express.md) | ✓ | ✓ | ✓ | − |
 | [AEM Sites - Création de documents](https://www.aem.live/docs/authoring-guide#document-authoring) | ✓ | ✓ | ✓ | − |
 | [AEM Sites - Éditeur universel](https://www.aem.live/docs/authoring-guide#universal-editor-in-aem-sites) | ✓ | ✓ | ✓ | − |
 | AEM Sites - [Création GoogleDrive](https://www.aem.live/docs/authoring-guide#google-drive)/[SharePoint](https://www.aem.live/docs/authoring-guide#microsoft-sharepoint) | ✓ | − | ✓ | − |
 | AEM Sites - Éditeur de fragment de contenu (dans le champ Référence de contenu uniquement) | ✓ | ✓ | ✓ | − |
 | Workflow Adobe Workfront | ✓ | ✓ | − | ✓ |
 | Planification d’Adobe Workfront | ✓ | ✓ | − | ✓ |
-| [Vue ](/help/assets/assets-view-introduction.md) | ✓ | − | − | − |
+| [Vue &#x200B;](/help/assets/assets-view-introduction.md) | ✓ | − | − | − |
 | [AEM Content Hub](/help/assets/product-overview.md) | ✓ | ✓ | − | − |
 
 ## Prise en charge des fonctionnalités du gestionnaire de contenu dans les applications autres qu’Adobe {#content-advisor-feature-support-non-adobe-applications}
