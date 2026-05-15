@@ -28,7 +28,7 @@ Pour les sites s’exécutant sur Adobe Experience Manager, les développeurs on
 
 ## Rail d’expérimentation {#experimentation-rail}
 
-Le rail d’expérimentation est votre principale méthode de configuration des expériences. Il peut être utilisé avec votre projet dans un contexte [](/help/edge/overview.md) ou dans l’[éditeur universel](/help/implementing/universal-editor/introduction.md). Par conséquent, vous aurez besoin d’un compte Github, d’un référentiel de contenu tel que SharePoint ou Google Drive, ainsi que du plug-in [AEM Sidekick](https://www.aem.live/docs/sidekick). Si vous souhaitez utiliser l’éditeur universel, vous devez également accéder à un environnement AEM as a Cloud Service [](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Consultez également la page [Prise en main - Tutoriel de développement de l’éditeur universel](https://www.aem.live/developer/tutorial).
+Le rail d’expérimentation est votre principale méthode de configuration des expériences. Il peut être utilisé avec votre projet dans un contexte [&#128279;](/help/edge/overview.md) ou dans l’[éditeur universel](/help/implementing/universal-editor/introduction.md). Par conséquent, vous aurez besoin d’un compte Github, d’un référentiel de contenu tel que SharePoint ou Google Drive, ainsi que du plug-in [AEM Sidekick](https://www.aem.live/docs/sidekick). Si vous souhaitez utiliser l’éditeur universel, vous devez également accéder à un environnement AEM as a Cloud Service [&#128279;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Consultez également la page [Prise en main - Tutoriel de développement de l’éditeur universel](https://www.aem.live/developer/tutorial).
 
 >[!WARNING]
 >Le moteur d’expérimentation est requis pour utiliser la fonctionnalité d’expérimentation. Assurez-vous que le moteur est correctement installé et mis à jour avant d’implémenter les étapes ci-dessous. Voir la [page d’installation](https://github.com/adobe/aem-experimentation/tree/v2?tab=readme-ov-file#installation) pour plus d’informations.
@@ -75,7 +75,7 @@ Pour chaque expérience, le trafic est initialement réparti 50/50 entre le cont
 Le [service de télémétrie opérationnelle](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) rassemble des données, par exemple le nombre de visiteurs sur la page de contrôle par rapport à la page de défi. Vous utilisez ensuite ces données pour sélectionner les améliorations nécessaires pour votre site. Tant que vous respectez la langue de conception établie de votre site web et que vous utilisez les fonctionnalités existantes, vous devriez être en mesure de configurer une variante d’expérience et de l’envoyer en production en quelques minutes.
 
 >[!NOTE]
->Gardez à l’esprit que le plug-in n’utilise aucune donnée de l’utilisateur final susceptible de conduire à son identification, et n’en conserve aucune. Aucun accord préalable de l’utilisateur final ni consentement des cookies n’est requis lors de l’utilisation de la configuration par défaut qui utilise le [ service de télémétrie opérationnelle dans AEM as a Cloud Service ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md).
+>Gardez à l’esprit que le plug-in n’utilise aucune donnée de l’utilisateur final susceptible de conduire à son identification, et n’en conserve aucune. Aucun accord préalable de l’utilisateur final ni consentement des cookies n’est requis lors de l’utilisation de la configuration par défaut qui utilise le [&#x200B; service de télémétrie opérationnelle dans AEM as a Cloud Service &#x200B;](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md).
 
 <!--### Frequently used terms {#frequently-used-terms}
 
@@ -92,7 +92,7 @@ Pour utiliser les fonctionnalités d’expérimentation de l’éditeur universe
 
 ### Commencer à modifier le projet dans l’éditeur universel
 
-Ouvrez votre instance AEM et, si votre projet est prêt, ouvrez-le directement dans l’éditeur universel. Si aucun projet n’est prêt et que les sites AEM sont configurés en tant que source de contenu, créez un projet standard à partir du modèle fourni. Vous pouvez lier votre référentiel ou notre référentiel d’exemple pour le piloter [](https://github.com/sudo-buddy/ue-experimentation). Consultez également la page [Configurer AEM Sites as a Content Source](https://www.aem.live/developer/ue-tutorial). Une fois le projet configuré, ouvrez-le, puis ouvrez la page d’index dans laquelle vous souhaitez exécuter des expériences et cliquez sur **Modifier** dans la barre supérieure.
+Ouvrez votre instance AEM et, si votre projet est prêt, ouvrez-le directement dans l’éditeur universel. Si aucun projet n’est prêt et que les sites AEM sont configurés en tant que source de contenu, créez un projet standard à partir du modèle fourni. Vous pouvez lier votre référentiel ou notre référentiel d’exemple pour le piloter [&#128279;](https://github.com/sudo-buddy/ue-experimentation). Consultez également la page [Configurer AEM Sites as a Content Source](https://www.aem.live/developer/ue-tutorial). Une fois le projet configuré, ouvrez-le, puis ouvrez la page d’index dans laquelle vous souhaitez exécuter des expériences et cliquez sur **Modifier** dans la barre supérieure.
 
 ### Lancer l’extension A/B
 
