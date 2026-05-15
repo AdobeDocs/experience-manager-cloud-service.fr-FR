@@ -9,10 +9,10 @@ exl-id: 55835ffe-1b77-449b-b76d-16c0a343cf5c
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 100%
+source-wordcount: '329'
+ht-degree: 89%
 
 ---
 
@@ -61,11 +61,11 @@ Définissez les paramètres d’entrée de l’appel API et mappez les paramètr
 
 ## Créer un formulaire
 
-Créez un formulaire adaptatif simple à l’aide de l’éditeur universel pour capturer les détails de l’objet Lead comme illustré ci-dessous.
+Créez un formulaire adaptatif simple à l’aide de l’éditeur universel pour capturer les détails de l’objet Lead comme illustré ci-dessous
 ![lead-object-form](assets/create-lead.png)
 
-Gérez l’événement de clic sur la case à cocher Créer un lead à l’aide de l’éditeur de règles. Mappez les paramètres d’entrée aux valeurs des objets de formulaire appropriés, comme illustré ci-dessous. Affichez l’identifiant de l’objet Lead nouvellement créé dans l’objet TextField `leadid`.
-![rule-editor](assets/create-leade-rule-editor.png)
+Gérez l’événement de clic sur la case à cocher Créer un lead à l’aide de l’éditeur de règles. Mappez les paramètres d’entrée aux valeurs des objets de formulaire appropriés, comme illustré ci-dessous. Afficher l’identifiant de l’objet Lead nouvellement créé dans l’objet TextField `leadid`
+![éditeur de règles](assets/create-leade-rule-editor.png)
 
 ## Tester l’intégration
 

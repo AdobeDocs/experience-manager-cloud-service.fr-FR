@@ -2,13 +2,12 @@
 title: Configuration des règles de traduction
 description: Découvrez comment définir des règles de traduction pour identifier le contenu à traduire.
 index: true
-hide: false
 hidefromtoc: false
 exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 100%
@@ -23,7 +22,7 @@ Découvrez comment définir des règles de traduction pour identifier le contenu
 
 Dans le document précédent du parcours de traduction AEM Sites, intitulé [Configuration du connecteur de traduction](configure-connector.md), vous avez appris à installer et à configurer votre connecteur de traduction et vous devez maintenant :
 
-* connaître les paramètres importants de la structure d’intégration de traduction dans AEM ;
+* comprendre les paramètres importants de la structure d’intégration de traduction dans AEM ;
 * savoir configurer votre propre connexion à votre service de traduction.
 
 Maintenant que votre connecteur est configuré, cet article vous guide tout au long de l’étape suivante pour identifier le contenu à traduire.

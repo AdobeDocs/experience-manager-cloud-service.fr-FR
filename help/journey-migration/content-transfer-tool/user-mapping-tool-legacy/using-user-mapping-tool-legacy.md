@@ -6,9 +6,9 @@ hide: true
 hidefromtoc: true
 feature: Migration
 role: Admin
-source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '839'
 ht-degree: 97%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 97%
 
 >[!INFO]
 >
->Cette documentation fait référence à une version obsolète de l’outil. Pour plus d’informations sur la dernière version, voir [Migration de groupe](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md).
+>Cette documentation fait référence à une version obsolète de l’outil. Pour plus d’informations sur la dernière version, voir [ Migration de groupe ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md).
 
 L’outil de mappage des utilisateurs utilise une API pour rechercher les utilisateurs du système Adobe IMS (Identity Management System) par email et renvoyer leur ID IMS. Cette API nécessite que l’utilisateur crée un ID client pour son organisation, un secret client et un jeton d’accès ou de porteur.
 
@@ -42,7 +42,7 @@ Suivez les étapes ci-dessous pour configurer ces éléments :
 
 L’outil de mappage des utilisateurs est intégré à l’outil de transfert de contenu. Vous pouvez télécharger l’outil de transfert de contenu depuis le [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Pour plus d’informations sur la dernière version, consultez les [Notes de mise à jour de la version actuelle](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-1. Sélectionnez Adobe Experience Manager et accédez à Outils > **Opérations** > **Migration de contenu**.
+1. Sélectionnez le Adobe Experience Manager et accédez à Outils > **Opérations** > **Migration de contenu**.
 
    ![Image](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access1.png)
 
@@ -97,7 +97,7 @@ L’outil de mappage des utilisateurs est intégré à l’outil de transfert de
 
    >[!IMPORTANT]
    >
-   >* Une fois le mappage des utilisateurs et utilisatrices terminé, vous pouvez revenir à la page de Migration du contenu à l’aide du chemin de navigation. La carte Mappage des utilisateurs affiche le statut et l’horodatage. Cliquez sur **Transfert de contenu** afin de pouvoir créer un jeu de migration pour exécuter l’extraction. Pour plus d’informations, consultez [Exécution de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr#running-tool).
+   >* Une fois le mappage des utilisateurs et utilisatrices terminé, vous pouvez revenir à la page de Migration du contenu à l’aide du chemin de navigation. La carte Mappage des utilisateurs affiche le statut et l’horodatage. Cliquez sur **Transfert de contenu** afin de pouvoir créer un ensemble de migration pour exécuter l’extraction. Pour plus d’informations, consultez [Exécution de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr#running-tool).
 
 ### Reprise du processus de mappage des utilisateurs {#resume-user-mapping-process}
 
@@ -129,4 +129,4 @@ Pour reprendre le processus de mappage des utilisateurs, procédez comme suit :
 
    Une fois le processus de mappage des utilisateurs et utilisateurs terminé, vous pouvez voir le **Statut** comme étant **TERMINÉ** pour cette configuration spécifique.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping4.png)
+   ![Image](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping4.png)

@@ -11,10 +11,10 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 83%
+source-wordcount: '351'
+ht-degree: 79%
 
 ---
 
@@ -78,4 +78,4 @@ Pour activer les listes de formulaires du composant Brouillons et Envois, ajoute
  </tbody>
 </table>
 
-Par défaut, AEM Forms stocke les données d’utilisateur associées au brouillon et à l’envoi d’un formulaire dans le nœud /content/forms/fp de l’instance de publication. Vous pouvez ajouter votre fournisseur personnalisé de stockage. Pour plus de détails, consultez [Stockage personnalisé pour le composant Drafts and Submissions](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms).
+Par défaut, AEM Forms stocke les données d’utilisateur associées au brouillon et à l’envoi d’un formulaire dans le nœud /content/forms/fp de l’instance de publication. Vous pouvez ajouter votre fournisseur personnalisé de stockage. Pour plus de détails, consultez [Stockage personnalisé pour le composant Drafts and Submissions](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms).

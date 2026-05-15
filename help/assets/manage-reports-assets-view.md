@@ -7,10 +7,10 @@ feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 87%
+source-wordcount: '1530'
+ht-degree: 86%
 
 ---
 
@@ -143,7 +143,7 @@ Obtenez des informations de diffusion pour les ressources diffusées avec Dynami
 <!--
 >[!NOTE]
 > 
->To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 -->
 
 ### Conditions préalables {#prereqs-dynamic-media-delivery-reports}
@@ -153,7 +153,7 @@ Vous devez disposer d’une licence Dynamic Media pour créer et utiliser ce ra
 >[!IMPORTANT]
 > 
 >* Les rapports sont fournis pour les ressources diffusées par Dynamic Media.
->* Les rapports sont générés pour le premier million de lignes. Pour capturer tous les fichiers dans cette limite, pensez à inclure la colonne Référent pour les dossiers plus petits.
+>* Les rapports sont générés pour le premier million de lignes. Pour capturer tous les fichiers dans cette limite, pensez à inclure la colonne référent pour les dossiers plus petits.
 >* Les rapports peuvent uniquement être générés pour les 3 derniers mois.
 
 ### Créer un rapport de diffusion Dynamic Media{#create-dynamic-media-delivery-report}

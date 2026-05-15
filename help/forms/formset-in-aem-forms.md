@@ -12,10 +12,10 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2809'
-ht-degree: 98%
+source-wordcount: '2856'
+ht-degree: 97%
 
 ---
 
@@ -38,7 +38,7 @@ Les jeux de formulaires sont également pris en charge dans l’application AEM 
 
 Vous pouvez associer plusieurs XDP ou modèles de formulaires, créés via Designer, dans un jeu de formulaires. Des jeux de formulaires peuvent ensuite être utilisés pour rendre de manière sélective les XDP en fonction des valeurs saisies par les utilisateurs dans les formulaires initiaux et leurs profils.
 
-Utilisez [l’interface utilisateur d’AEM Forms](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/getting-started/introduction-managing-forms) pour gérer tous vos formulaires, vos jeux de formulaires et vos ressources associés.
+Utilisez [l’interface utilisateur d’AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-managing-forms) pour gérer tous vos formulaires, vos jeux de formulaires et vos ressources associés.
 
 ### Créer un jeu de formulaires {#create-a-form-set}
 
@@ -65,11 +65,11 @@ Pour créer un jeu de formulaire, procédez ainsi :
    >
    >Assurez-vous que les noms des champs dans les formulaires XDP ne contiennent pas de points. Dans le cas contraire, tous les scripts contenant des points essayant de résoudre les champs ne seront pas en mesure de le faire.
 
-1. Dans la page Configurer le(s) formulaire(s), vous pouvez effectuer les opérations suivantes : 
+1. Dans la page Configurer le(s) formulaire(s), vous pouvez effectuer les opérations suivantes :
 
    * Ordre des formulaires : faites glisser les formulaires pour les réorganiser. L’ordre des formulaires définit l’ordre dans lequel les formulaires se présentent à l’utilisateur final dans l’application AEM Forms et le rendu autonome.
    * Identifiant de formulaire : indique une identité unique pour les formulaires à utiliser dans les expressions d’éligibilité.
-   * Racine des données : pour chaque formulaire du jeu, l’auteur peut configurer XPATH où les données d’un formulaire donné sont situées dans les données XML envoyées. Par défaut, la valeur est /. Si tous les formulaires du jeu sont liés à un schéma et partagent le même schéma XML, vous pouvez modifier cette valeur. Il est recommandé que chaque champ du formulaire ait la liaison de données appropriée spécifiée dans XDP. Si deux champs de deux formulaires différents partagent la liaison de données commune, le champ du deuxième formulaire affiche les valeurs préremplies du premier formulaire. Ne liez pas deux sous-formulaires avec le même contenu interne au même nœud XML. Pour plus d’informations sur la structure XML du jeu de formulaires, voir [Préremplissage XML du jeu de formulaires](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/html5-forms/formset-in-aem-forms#prefill-xml-for-form-set).
+   * Racine des données : pour chaque formulaire du jeu, l’auteur peut configurer XPATH où les données d’un formulaire donné sont situées dans les données XML envoyées. Par défaut, la valeur est /. Si tous les formulaires du jeu sont liés à un schéma et partagent le même schéma XML, vous pouvez modifier cette valeur. Il est recommandé que chaque champ du formulaire ait la liaison de données appropriée spécifiée dans XDP. Si deux champs de deux formulaires différents partagent la liaison de données commune, le champ du deuxième formulaire affiche les valeurs préremplies du premier formulaire. Ne liez pas deux sous-formulaires avec le même contenu interne au même nœud XML. Pour plus d’informations sur la structure XML du jeu de formulaires, voir [Préremplissage XML du jeu de formulaires](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/html5-forms/formset-in-aem-forms#prefill-xml-for-form-set).
    * Expression d’éligibilité : spécifie une expression JavaScript qui évalue une valeur booléenne et indique si un formulaire du jeu est éligible au remplissage. Si la valeur est « false », il n’est pas demandé à l’utilisateur ou à l’utilisatrice de remplir le formulaire, qui n’est même pas affiché. En règle générale, l’expression est basée sur les valeurs des champs qui sont collectées avant ce formulaire. Les expressions contiennent également des appels à la valeur de fs.valueOf de l’API du jeu de formulaires pour extraire les valeurs renseignées par l’utilisateur dans un champ de formulaire du jeu de formulaires :
 
    *fs.valueOf(&lt;Form Identifier>, &lt;fieldSom expression>) > &lt;value>*
@@ -106,7 +106,7 @@ Pour modifier un jeu de formulaires, procédez comme suit :
 
 1. Sélectionnez Formulaires > Formulaires et documents.
 1. Localisez le jeu de formulaires que vous souhaitez modifier. Pointez le curseur dessus et sélectionnez Modifier (![icône Modifier](assets/editicon.png)).
-1. Dans la page Configurer le(s) formulaire(s), vous pouvez modifier les éléments suivants : 
+1. Dans la page Configurer le(s) formulaire(s), vous pouvez modifier les éléments suivants :
 
    * L’ordre des formulaires
    * Identifiant de formulaire
@@ -121,7 +121,7 @@ Une fois que vous avez créé un jeu de formulaires à l’aide de l’interface
 
 ### Utilisation du jeu de formulaires dans Tâche ou Point de départ {#using-form-set-in-task-or-start-point}
 
-1. Lors de la conception d’un processus, sous la section Présentation et Données d’Assigner Tâche/Point de départ, sélectionnez **Utilisation d’un actif CRX**. Le navigateur des ressources CRX s’affiche. 
+1. Lors de la conception d’un processus, sous la section Présentation et Données d’Assigner Tâche/Point de départ, sélectionnez **Utilisation d’un actif CRX**. Le navigateur des ressources CRX s’affiche.
 
    ![Création d’un processus : utiliser un actif CRX](assets/formsetinprocessmgmt1.png)
 
@@ -173,15 +173,18 @@ Par exemple, vous avez trois formulaires (formulaire 1, formulaire 2 et formul
 
 form1
 
-champ champformulaire1 
+field
+form1field
 
 formulaire2
 
-champ champformulaire2 
+field
+form2field
 
 formulaire3
 
-champ champformulaire3 
+field
+form3field
 
 Chaque formulaire présente un champ nommé communément « champ » et un champ nommé de manière unique « form&lt;i>Field ».
 
@@ -199,7 +202,7 @@ Vous pouvez préremplir ce jeu de formulaires à l’aide d’un XML dont la str
 
 >[!NOTE]
 >
->La balise racine XML peut porter un nom quelconque, mais les balises d’éléments correspondant aux champs doivent porter le même nom que le champ. La hiérarchie du XML doit imiter la hiérarchie du formulaire, ce qui signifie que le XML doit avoir des balises correspondantes pour envelopper des sous-formulaires. 
+>La balise racine XML peut porter un nom quelconque, mais les balises d’éléments correspondant aux champs doivent porter le même nom que le champ. La hiérarchie du XML doit imiter la hiérarchie du formulaire, ce qui signifie que le XML doit avoir des balises correspondantes pour envelopper des sous-formulaires.
 
 L’extrait de code XML ci-dessus indique que le code XML de préremplissage du jeu de formulaires est une union des extraits de code XML prérempli des formulaires individuels. Si certains champs dans les différents formulaires présentent une hiérarchie de données/un schéma similaires entre eux, les champs sont préremplis avec les mêmes valeurs. Dans cet exemple, chacun des trois formulaires est prérempli avec la même valeur pour le champ commun « champ ». Il s&#39;agit d’un moyen facile de transférer des données d’un formulaire à un autre. Cette opération peut également être réalisée en liant les champs à la même référence de schéma ou de données. Si vous souhaitez isoler les données du jeu de formulaires en fonction du schéma des formulaires. Cette opération peut être réalisée en spécifiant l’attribut « racine de données » du formulaire pendant la création du jeu de formulaires (la valeur par défaut est « / », qui mappe à la balise racine du jeu de formulaires).
 

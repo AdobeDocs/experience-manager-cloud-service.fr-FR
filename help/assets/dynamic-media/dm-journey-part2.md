@@ -8,14 +8,13 @@ content-type: reference
 feature: Image Profiles,Best Practices
 role: User, Admin
 mini-toc-levels: 4
-hide: false
 hidefromtoc: false
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2629'
-ht-degree: 95%
+source-wordcount: '2853'
+ht-degree: 88%
 
 ---
 
@@ -39,8 +38,8 @@ Consultez également le [Parcours Dynamic Media ; principes de base, première
 
 Une fois vos ressources Dynamic Media chargées et publiées, vous pouvez copier l’URL générée d’une ressource et la coller dans votre navigateur pour voir comment elle apparaîtra pour un client. L’URL copiée suivante d’une image de montre est découpée par couleur afin de faciliter la lecture et la compréhension.
 
-![Anatomie d’une URL Dynamic Media](/help/assets/dynamic-media/assets/dm-colored-url.png)
-_Anatomie d’une URL Dynamic Media_
+![Anatomie d’une URL Dynamic Media](/help/assets/dynamic-media/assets/dm-colored-url.png)
+_Anatomie d’une URL Dynamic Media._
 
 La première partie de l’URL, en rouge, fait référence au domaine du serveur lui-même. Dans ce cas, Dynamic Media s’exécute sur un domaine de serveur générique : `https://s7d1.scene7.com/is/image/`. Il est facile de regarder un ensemble d’images et de comprendre si elles sont diffusées par Dynamic Media uniquement en observant le domaine du serveur. L’URL devrait être assez constante. Certains clients Dynamic Media ont toutefois basculé vers un domaine de serveur dédié, auquel cas cela peut être `name-of-your-company.scene7.com`. Un domaine de serveur dédié est requis pour l’imagerie dynamique.
 
@@ -80,7 +79,7 @@ Bien qu’il soit possible de modifier les paramètres de traitement des images 
 Il existe plusieurs façons et de nombreux emplacements pour créer une image ou rendre disponible une image. Traditionnellement, un créatif accède à Adobe Photoshop et enregistre chacun de ces différents rendus sous forme d’images statiques.
 
 ![Images statiques](/help/assets/dynamic-media/assets/dm-static-images.png)
-_Méthode acceptable : images statiques créées chacune manuellement._
+_Méthode acceptable : images statiques créées chacune manuellement._
 
 Maintenant imaginez que le directeur artistique regarde les images et dise :
 
@@ -90,8 +89,8 @@ Le spécialiste de la création devra de nouveau filmer toutes les nouvelles ima
 
 Toutefois, avec Dynamic Media, si vous disposez de paramètres d’image prédéfinis différents, vous pouvez utiliser ces images où vous en avez besoin. Ce sont les paramètres d’image prédéfinis qui appliquent les normes.
 
-![Approche de fichiers principaux](/help/assets/dynamic-media/assets/dm-onefile.png)
-_Méthode recommandée : un fichier avec plusieurs rendus créés à la volée à l’aide de paramètres d’image prédéfinis, par exemple `Search_Grid` et `Thumbnail`._
+![Approche des fichiers de Principal](/help/assets/dynamic-media/assets/dm-onefile.png)
+_Idéal : un fichier avec plusieurs rendus créés à la volée à l’aide de paramètres d’image prédéfinis, tels que `Search_Grid` et `Thumbnail`._
 
 | **Pourquoi utiliser les paramètres d’image prédéfinis ?** | |
 |---|---|
@@ -111,7 +110,7 @@ Vous souhaitez que cette image soit diffusée avec les mêmes paramètres partou
 Penchons nous un instants sur la manière dont un paramètre d’image prédéfini est créé dans Dynamic Media.
 
 ![Création d’un paramètre d’image prédéfini à partir de l’onglet De base](/help/assets/dynamic-media/assets/dm-image-preset-basictab.png)
-_Création d’un paramètre d’image prédéfini à partir de l’onglet De base_
+_Création d’un paramètre d’image prédéfini à partir de l’onglet De base_.
 
 Dans l’exemple ci-dessus, vous pouvez constater qu’un nouveau paramètre d’image prédéfini a été créé avec le nom _Medium_. Dynamic Media utilise un exemple d’image d’usine, un sac à dos, pour vous aider à voir les caractéristiques du paramètre d’image prédéfini au fur et à mesure de sa création.
 
@@ -129,7 +128,7 @@ Vous pouvez considérer un paramètre d’image prédéfini comme une recette po
 Lorsque vous avez terminé, vous enregistrez le paramètre prédéfini, qui est désormais disponible pour toutes les images dont vous disposez. Dans ce cas, vous souhaitez appliquer le paramètre d’image prédéfini __ à l’image d’une casserole de chocolat fondu.
 
 ![Application du paramètre d’image prédéfini *Medium* pour générer un rendu d’image](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
-_Application du paramètre d’image prédéfini Medium pour générer un rendu d’image_
+_Application du paramètre d’image prédéfini Medium pour générer un rendu d’image._
 
 Vous copiez l’URL puis la collez dans votre navigateur pour vérifier l’aspect de l’image. [Faites un essai](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target="_blank"}.
 
@@ -142,7 +141,7 @@ Si tout vous paraît satisfaisant pour votre image de casserole de chocolat, vou
 Si vous regardez à nouveau l’image de la montre ci-dessous, vous pouvez voir qu’il existe un paramètre d’image prédéfini `Cart`, un préréglage `Grid`, un préréglage `Large`, un préréglage `PDP-page` (page Détails du produit), et plusieurs autres.
 
 ![Paramètres prédéfinis d’image statiques et dynamiques](/help/assets/dynamic-media/assets/dm-image-presets.png)
-_Paramètres d’image prédéfinis statiques et dynamiques L’image de la montre a été rendue à l’aide du paramètre d’image prédéfini `PDP-page`._
+_Paramètres prédéfinis d’image statiques et dynamiques. L’image de la montre a été rendue à l’aide du paramètre d’image prédéfini `PDP-page`._
 
 Mais qu’en est-il si vous devez changer une image sur votre site web ? Supposons, par exemple, que vous ayez effectué quelques tests et que vous ayez trouvé que l’image de 120 x 120 (le paramètre d’image prédéfini `Cart`) n’est pas reçue aussi bien que vous le pensiez. Vous devez agrandir l’image en augmentant la largeur à 175 pixels et la hauteur à 175 pixels. Traditionnellement, vous deviez aller dans Adobe Photoshop et recréer toutes ces images de panier. Toutefois, avec Dynamic Media, il vous suffit de modifier le paramètre d’image prédéfini en mettant à jour les valeurs Largeur et Hauteur sur 175 et d’enregistrer votre paramètre prédéfini, comme illustré dans l’exemple ci-dessous.
 
@@ -160,7 +159,7 @@ Les ensemble d’images sont généralement composés d’une série de ressourc
 Dans Dynamic Media, vous pouvez voir plusieurs images de chaussures de course. Il s’agit d’une gamme de produits que les ventes et le marketing souhaitent que les clients voient dans une seule présentation, c’est-à-dire une visionneuse d’images.
 
 ![Création d’une visionneuse d’images](/help/assets/dynamic-media/assets/dm-create-image-set.png)
-_Début de la création d’une visionneuse d’images_
+_Début de la création d’une visionneuse d’images._
 
 Pour créer l’ensemble d’images, choisissez **[!UICONTROL Ensemble d’images]** dans le menu déroulant **[!UICONTROL Créer]**. Notez que le menu contient également des options pour créer une **[!UICONTROL visionneuse de supports variés]**, une **[!UICONTROL visionneuse à 360°]** et un **[!UICONTROL ensemble de carrousel]**. Vous créez ces ensembles de la même manière qu’un ensemble d’images.
 
@@ -175,20 +174,20 @@ Vous devez donner un nom à la visionneuse. Choisissez le nom avec soin, car vou
 
 Et voici l’ensemble d’images `Running` dans Experience Manager Assets.
 
-![La visionneuse d’images Running dans Experience Manager Assets, en mode Carte](/help/assets/dynamic-media/assets/dm-image-set.png)
-_La visionneuse d’images `Running` dans Experience Manager Assets, en mode Carte._
+![La visionneuse d’images Running dans Experience Manager Assets, en mode Carte](/help/assets/dynamic-media/assets/dm-image-set.png)
+_La visionneuse d’images `Running` dans Experience Manager Assets, en mode Carte._
 
 Après avoir créé un ensemble d’images, une visionneuse de supports variés, une visionneuse à 360° ou tout autre média interactif, vous voudrez voir comment il s’affiche et se comporte pour les clientes et clients. Dynamic Media dispose de nombreuses visionneuses intégrées qui vous permettent de le faire.
 
 Vous commencez en sélectionnant l’ensemble d’images créé pour l’ouvrir dans un aperçu, comme illustré dans l’exemple suivant.
 
 ![La visionneuse d’images Running dans l’aperçu, avec l’option Visionneuses sélectionnée](/help/assets/dynamic-media/assets/dm-image-set-viewer.png)
-_La visionneuse d’images `Running` d’images dans l’aperçu, avec l’option Visionneuses sélectionnée._
+_L’option `Running` une visionneuse d’images dans l’aperçu avec des visionneuses est sélectionnée._
 
 Dans l’aperçu, vous pouvez sélectionner les échantillons de chaussures de course et effectuer un zoom avant ou arrière sur les chaussures. Pour appliquer une visionneuse, sélectionnez **[!UICONTROL Visionneuses]** dans le menu déroulant.
 
 ![La visionneuse d’images Running utilisant la visionneuse Fenêtre déroulante](/help/assets/dynamic-media/assets/dm-image-set-flyout-viewer.png)
-_La visionneuse d’images `Running` utilisant la visionneuse Fenêtre déroulante._
+_La visionneuse d’images `Running` à laquelle est appliquée la visionneuse Fenêtre déroulante._
 
 Dans ce cas, l’observateur `Flyout` a été sélectionné. À ce stade, vous pouvez prévisualiser l’ensemble d’images dans la visionneuse. Mais il est préférable de l’afficher dans votre navigateur, de la même manière que le verrait un client. Vous pouvez sélectionner **[!UICONTROL URL]** dans le coin inférieur gauche, puis copier l’URL et la coller dans votre navigateur. [Faites un essai](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&config=jpearldemo/Flyout){target="_blank"}.
 
@@ -217,7 +216,7 @@ Si vous souhaitez en savoir plus, lisez les documents ci-dessous pour explorer c
 _Dynamic Media Help topics_
 
 * [How to create image presets](/help/assets/dynamic-media/image-presets.md)
-* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=fr) that you can use in the Image Modifier field when you create an image preset
+* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) that you can use in the Image Modifier field when you create an image preset
 * [How to preview assets](/help/assets/dynamic-media/previewing-assets.md)
 * [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
 * [How to create Image sets](/help/assets/dynamic-media/image-sets.md)
@@ -227,8 +226,8 @@ _Dynamic Media Help topics_
 
 _Tutoriels Dynamic Media_
 
-* [Utilisation de Dynamic Media avec Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=fr)
-* [Bibliothèque de contenu Adobe Experience Manager](https://experienceleague.adobe.com/fr?lang=fr#recommended/solutions/experience-manager) (recherchez _Dynamic Media_)
+* [Utilisation de Dynamic Media avec Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=fr)
+* [Bibliothèque de contenu Adobe Experience Manager](https://experienceleague.adobe.com/?lang=fr#recommended/solutions/experience-manager) (recherchez _Dynamic Media_)
 
 _Visionneuses Dynamic Media_
 

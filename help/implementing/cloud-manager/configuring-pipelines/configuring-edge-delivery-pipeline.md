@@ -4,13 +4,12 @@ description: Découvrez comment ajouter un pipeline Edge Delivery pour créer et
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-hide: false
 index: false
 hidefromtoc: false
 exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '636'
 ht-degree: 10%
 
 ---
@@ -58,7 +57,7 @@ Avant de commencer à déployer votre code, configurez les paramètres de votre 
       1. Dans le rail de gauche, sous **Programme**, cliquez sur **![Icône Aperçu](/help/implementing/cloud-manager/configuring-pipelines/assets/overview.svg) [Aperçu](/help/implementing/cloud-manager/navigation.md#my-programs)**.
       1. Sur la page **Aperçu du programme**, sous la vignette **Pipelines**, cliquez sur **![Signe plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)Ajouter**, puis sélectionnez **Ajouter un pipeline Edge Delivery**.
 
-         ![Vignette Pipelines de la page Aperçu du programme &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/assets/pipelinescard-add-ed-pipeline.png)
+         ![Vignette Pipelines de la page Aperçu du programme ](/help/implementing/cloud-manager/configuring-pipelines/assets/pipelinescard-add-ed-pipeline.png)
 
          >[!TIP]
          >
@@ -71,7 +70,7 @@ Avant de commencer à déployer votre code, configurez les paramètres de votre 
       1. Dans le rail de gauche, sous **Programme**, cliquez sur **![Icône de workflow ou Icône de pipelines](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) Pipelines**.
       1. Sur la page Pipelines, près du coin supérieur droit, cliquez sur **Ajouter un pipeline** > **Ajouter un pipeline Edge Delivery**.
 
-         ![Page Pipelines avec le bouton Ajouter un pipeline &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/assets/pipelinespage-add-ed-pipeline.png)
+         ![Page Pipelines avec le bouton Ajouter un pipeline ](/help/implementing/cloud-manager/configuring-pipelines/assets/pipelinespage-add-ed-pipeline.png)
 
          >[!TIP]
          >

@@ -7,10 +7,10 @@ exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1075'
-ht-degree: 100%
+source-wordcount: '1129'
+ht-degree: 99%
 
 ---
 
@@ -110,6 +110,6 @@ Le tableau suivant présente une comparaison détaillée des fonctionnalités cl
 ## Article connexe
 
 - [Création basée sur des documents à l’aide de Microsoft Excel ou de Google Sheets](/help/edge/docs/forms/create-forms.md)
-- [Éditeur universel pour la création WYSIWYG](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)
+- [Éditeur universel pour la création dans WYSIWYG](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)
 - [Créer un formulaire adaptatif (composants de base)](/help/forms/creating-adaptive-form.md)
 - [Créer un formulaire adaptatif (composants principaux)](/help/forms/create-an-adaptive-form.md)

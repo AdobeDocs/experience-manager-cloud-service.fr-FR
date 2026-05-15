@@ -9,9 +9,9 @@ hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1109'
 ht-degree: 8%
 
 ---
@@ -24,11 +24,11 @@ L’utilitaire de conversion Forms, qui fait partie de la suite [Outil de modern
 
 ## En quoi consistent les outils de modernisation d’AEM ?
 
-[Outils de modernisation AEM](https://opensource.adobe.com/aem-modernize-tools/) fait référence à un ensemble d&#39;utilitaires ou d&#39;applications logicielles conçus pour faciliter le processus de modernisation ou de mise à jour des projets Adobe Experience Manager (AEM). Ces outils aident généralement à convertir les anciens composants ou fonctionnalités d’AEM en alternatives plus récentes, plus efficaces et prises en charge. L’utilitaire de conversion Forms est installé sous les Outils de modernisation AEM pour convertir les formulaires Forms adaptatifs basés sur les composants de base en formulaires basés sur les composants principaux.
+[Outils de modernisation ](https://opensource.adobe.com/aem-modernize-tools/) fait référence à un ensemble d&#39;utilitaires ou d&#39;applications logicielles conçus pour faciliter le processus de modernisation ou de mise à jour des projets Adobe Experience Manager (AEM). Ces outils aident généralement à convertir les anciens composants ou fonctionnalités d’AEM en alternatives plus récentes, plus efficaces et prises en charge. L’utilitaire de conversion Forms est installé sous les Outils de modernisation AEM pour convertir les formulaires Forms adaptatifs basés sur les composants de base en formulaires basés sur les composants principaux.
 
 L’utilitaire de conversion Forms convertit les Forms adaptatifs basés sur d’anciens composants de base en formulaires plus récents basés sur les composants principaux. Ce processus de conversion garantit que les formulaires s’alignent sur les normes et fonctionnalités modernes, ce qui peut améliorer les performances, la compatibilité et la facilité de maintenance dans l’environnement AEM.
 
-![Outils de modernisation AEM](/help/forms/assets/aem-modernize-tools.png)
+![Outils de modernisation ](/help/forms/assets/aem-modernize-tools.png)
 
 >[!NOTE]
 > 
@@ -80,7 +80,7 @@ Pour installer les outils de modernisation d’AEM dans votre environnement AEM 
 
    `java -jar aem-author-p4502.jar`
 
-1. Clonez le référentiel [Outil de modernisation d’AEM](https://github.com/adobe/forms-modernizer) dans votre système local.
+1. Clonez le référentiel [Outil de modernisation d’](https://github.com/adobe/forms-modernizer) dans votre système local.
 
    ```Shell
    git clone [Path of Git repository of AEM Modernize Tool]
@@ -112,7 +112,7 @@ Pour activer et utiliser les outils de modernisation AEM pour votre environnemen
 1. Ajoutez le `Component Rule Paths` en tant que `/apps/forms-modernizer/rules`.
 1. Cliquez sur **Enregistrer** pour enregistrer les modifications.
 
-![Règle Du Composant Modernisation D’AEM](/help/forms/assets/aem-modernize-tools-component-rule.png)
+![Règle Du Composant Modernisation D’](/help/forms/assets/aem-modernize-tools-component-rule.png)
 
 ## Exécutez l’utilitaire de conversion de formulaire pour convertir les formulaires basés sur les composants de base en formulaires basés sur les composants principaux
 
@@ -120,13 +120,13 @@ Pour activer et utiliser les outils de modernisation AEM pour votre environnemen
 
    ![Sélectionnez les outils de modernisation d’AEM](/help/forms/assets/aem-modernize-tools-select-form.png)
 
-1. Sélectionnez l’option **[!UICONTROL Conversion Forms]**.
+1. Sélectionnez l’option **[!UICONTROL Conversion]**.
 
-   ![Sélectionnez l’option Conversion Forms &#x200B;](/help/forms/assets/aem-modernize-forms-conversion.png)
+   ![Sélectionnez l’option Conversion Forms ](/help/forms/assets/aem-modernize-forms-conversion.png)
 
 1. Cliquez sur **Créer** pour créer une tâche.
 
-   ![Création d’une tâche à l’aide des outils de modernisation AEM](/help/forms/assets/aem-modernize-tools-create-job.png)
+   ![Création d’une tâche à l’aide des outils de modernisation ](/help/forms/assets/aem-modernize-tools-create-job.png)
 
 1. Spécifiez le **[!UICONTROL Nom de la tâche]**.
 1. Dans l’onglet **[!UICONTROL Formulaire]**, vous pouvez sélectionner l’une des options suivantes :
@@ -143,7 +143,7 @@ Pour activer et utiliser les outils de modernisation AEM pour votre environnemen
 1. Cliquez sur **[!UICONTROL Ajouter Forms]**. Tous les formulaires du `source folder` s’affichent à l’écran.
 1. Sélectionnez le Forms adaptatif basé sur les composants de base pour le convertir en formulaires basés sur les composants principaux. Vous pouvez également sélectionner plusieurs formulaires.
 
-   ![Formulaire de sélection des outils de modernisation d’AEM](/help/forms/assets/aem-modernize-tools-select-form.png)
+   ![Formulaire de sélection des outils de modernisation d’](/help/forms/assets/aem-modernize-tools-select-form.png)
 
 1. Cliquez sur **[!UICONTROL Sélectionner]**.
 1. Cliquez sur **[!UICONTROL Planifier la tâche]** pour lancer le processus de conversion.
@@ -153,11 +153,11 @@ Pour activer et utiliser les outils de modernisation AEM pour votre environnemen
 
    Lorsque le statut du processus est modifié en `success`. Accédez à la `target folder` pour afficher le formulaire converti.
 
-   ![Succès des outils de modernisation d&#39;AEM](/help/forms/assets/aem-modernize-tools-success.png)
+   ![Succès des outils de modernisation d&#39;](/help/forms/assets/aem-modernize-tools-success.png)
 
 1. Sélectionnez le formulaire adaptatif, puis sélectionnez > **[!UICONTROL Propriétés]**. La page Propriétés du formulaire s’ouvre.
 
-   ![Dossier de destination des outils de modernisation AEM](/help/forms/assets/aem-modernize-tools-destination-folder.png)
+   ![Dossier de destination des outils de modernisation ](/help/forms/assets/aem-modernize-tools-destination-folder.png)
 
 1. Sélectionnez **[!UICONTROL Enregistrer et fermer]** pour enregistrer à nouveau les propriétés du formulaire converti.
    ![Outils De Modernisation D’AEM Propriétés De Formulaire Adaptatif](/help/forms/assets/aem-modernize-tools-af-properties.png)
@@ -166,5 +166,5 @@ Vous pouvez maintenant voir que le formulaire adaptatif créé sur les composant
 
 ## Bonnes pratiques {#best-practices}
 
-* Assurez-vous que vos formulaires basés sur les composants de base utilisent uniquement les composants disposant d’un [Composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) équivalent. Si vous utilisez des composants de base qui n’ont pas de composant principal équivalent, le composant de base n’est pas converti. Par conséquent, il ne fonctionne pas correctement lors de la création d’un formulaire
+* Assurez-vous que vos formulaires basés sur les composants de base utilisent uniquement les composants disposant d’un [Composants principaux](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) équivalent. Si vous utilisez des composants de base qui n’ont pas de composant principal équivalent, le composant de base n’est pas converti. Par conséquent, il ne fonctionne pas correctement lors de la création d’un formulaire
 * Assurez-vous que les règles de conversion des composants de base en composants principaux sont au format XML.

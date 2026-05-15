@@ -10,9 +10,9 @@ hidefromtoc: true
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: e8c37209-4d8e-4eaf-9e29-ffe32b841eb1
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1938'
+source-wordcount: '1990'
 ht-degree: 2%
 
 ---
@@ -57,7 +57,7 @@ Créez des formulaires en utilisant l’approche de création qui correspond le 
 
 ### Forms des composants principaux {#core-components}
 
-| Forms des composants principaux **&#x200B;**&#x200B;|
+| Forms des composants principaux **** |
 |---|
 | Création de formulaires modernes et réactifs avec les dernières normes web. Créez des formulaires adaptatifs qui fonctionnent automatiquement sur plusieurs appareils et produisent des formulaires découplés pour une diffusion pilotée par API. |
 | **Fonctions :** Créateur de formulaires visuel par glisser-déposer avec des composants modernes, un responsive design automatique et des fonctionnalités d’accessibilité intégrées. |
@@ -67,7 +67,7 @@ Créez des formulaires en utilisant l’approche de création qui correspond le 
 
 ### Forms des composants de base {#foundation-components}
 
-| Forms des composants de base **&#x200B;**&#x200B;|
+| Forms des composants de base **** |
 |---|
 | Approche de création de formulaires établie pour les projets existants et les intégrations héritées. Composants éprouvés avec de nombreuses options de personnalisation. |
 | **Fonctionnement :** création traditionnelle de formulaires adaptatifs avec une bibliothèque de composants complète et des fonctionnalités de personnalisation étendues. |
@@ -339,7 +339,7 @@ Choisissez votre point de départ en fonction de vos besoins immédiats et de vo
 
 ### Démarrage rapide de la gestion {#management-start}
 
-**Pour la découverte de formulaires :** Commencer par le portail Forms [&#128279;](/help/forms/configure-forms-portal.md)
+**Pour la découverte de formulaires :** Commencer par le portail Forms [](/help/forms/configure-forms-portal.md)
 
 **Pour le contrôle d’accès :** commencez par [User Management](/help/forms/forms-groups-privileges-tasks.md)
 

@@ -4,9 +4,9 @@ description: Découvrez comment créer des fragments de formulaire dans l’édi
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '1693'
+source-wordcount: '1706'
 ht-degree: 100%
 
 ---
@@ -227,7 +227,7 @@ Vous pouvez effectuer plusieurs opérations sur des fragments de formulaire depu
    <td><p>Fournit des options de prévisualisation du fragment en HTML ou une prévisualisation personnalisée en fusionnant les données d’un fichier XML avec le fragment. <br /> </p> </td>
     </tr>
     <tr>
-   <td><p>Téléchargement</p> </td>
+   <td><p>Télécharger</p> </td>
    <td><p>Télécharge le fragment sélectionné.<br /> <br /> </p> </td>
     </tr>
     <tr>
@@ -236,8 +236,8 @@ Vous pouvez effectuer plusieurs opérations sur des fragments de formulaire depu
     </tr>
     <!--
     <tr>
-   <td><p>Add Dictionary</p> </td>
-   <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
+    <td><p>Add Dictionary</p> </td>
+    <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
     </tr>
     -->
     <tr>

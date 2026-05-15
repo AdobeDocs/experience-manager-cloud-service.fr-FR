@@ -1,5 +1,5 @@
 ---
-title: Comment appeler le service de modèle de données de formulaire (FDM) à partir de Forms adaptatif à l’aide d’API ?
+title: Comment appeler le service de modèle de données de formulaire (FDM) depuis le Forms adaptatif à l’aide d’API ?
 description: Décrit l’API invokeWebServices que vous pouvez utiliser pour appeler les services web écrits en WSDL depuis un champ de formulaire adaptatif.
 uuid: 40561086-e69d-4e6a-9543-1eb2f54cd836
 topic-tags: develop
@@ -8,19 +8,19 @@ feature: Adaptive Forms, Form Data Model
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: 56e5cabd-a509-4ef9-9fea-3cc610f8dee1
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
 source-wordcount: '488'
-ht-degree: 78%
+ht-degree: 81%
 
 ---
 
-
-# API pour appeler le service de modèle de données de formulaire (FDM) à partir d’Adaptive Forms {#api-to-invoke-form-data-model-service-from-adaptive-forms}
+# API pour appeler le service de modèle de données de formulaire à partir de formulaires adaptatifs {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
 ## Vue d’ensemble {#overview}
 
-[!DNL AEM Forms] permet aux auteurs de formulaires de simplifier et d’améliorer davantage l’expérience de remplissage de formulaire en appelant les services configurés dans un modèle de données de formulaire (FDM) depuis un champ de formulaire adaptatif. Pour appeler un service de modèle de données, vous pouvez créer une règle dans l’éditeur visuel ou spécifier un script JavaScript en utilisant l’API `guidelib.dataIntegrationUtils.executeOperation` dans l’éditeur de code de l’[éditeur de règles](rule-editor.md).
+[!DNL AEM Forms] permet aux auteurs de formulaires de simplifier et d’améliorer le remplissage de formulaire en appelant les services configurés dans un modèle de données de formulaire (FDM) depuis un champ de formulaire adaptatif. Pour appeler un service de modèle de données, vous pouvez créer une règle dans l’éditeur visuel ou spécifier un script JavaScript en utilisant l’API `guidelib.dataIntegrationUtils.executeOperation` dans l’éditeur de code de l’[éditeur de règles](rule-editor.md).
 
 Ce document se concentre sur l’écriture d’un script JavaScript en utilisant l’API `guidelib.dataIntegrationUtils.executeOperation` pour appeler un service.
 
@@ -64,7 +64,7 @@ La structure de l’API spécifie les détails suivants concernant l’opératio
   </tr>
   <tr>
    <td><code>formDataModelId</code></td>
-   <td>Spécifie le chemin du référentiel vers le modèle de données de formulaire (FDM), y compris son nom.</td>
+   <td>Indique le chemin d’accès au référentiel du modèle de données de formulaire (FDM), y compris son nom</td>
   </tr>
   <tr>
    <td><code>operationName</code></td>

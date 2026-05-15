@@ -6,10 +6,10 @@ hide: true
 hidefromtoc: true
 feature: Migration
 role: Admin
-source-git-commit: 13a2386c099624a46e84126a939a9470e9b3a5f2
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
 source-wordcount: '590'
-ht-degree: 98%
+ht-degree: 92%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 98%
 
 >[!INFO]
 >
->Cette documentation fait référence à une version obsolète de l’outil. Pour plus d’informations sur la dernière version, voir [Migration de groupe](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md).
+>Cette documentation fait référence à une version obsolète de l’outil. Pour plus d’informations sur la dernière version, voir [ Migration de groupe ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md).
 
 ## Cas exceptionnels {#exceptional-cases}
 
@@ -29,7 +29,7 @@ Les cas spécifiques suivants sont consignés :
 
 1. Si l’utilisateur ou l’utilisatrice est désactivé, le traitement est le même que s’il ou elle ne l’était pas. Il ou elle fera l’objet d’une migration et d’un mappage normaux et restera désactivé sur l’instance cloud.
 
-1. Si un utilisateur ou une utilisatrice existe sur l’instance d’AEM Cloud Service cible avec le même nom d’utilisateur (rep:principalName) que l’un des utilisateurs ou l’une des utilisatrices de l’instance d’AEM source, l’utilisateur, l’utilisatrice ou le groupe n’est pas migré.
+1. Si un utilisateur existe sur l’instance AEM Cloud Service cible avec le même nom d’utilisateur (rep:principalName) que l’un des utilisateurs de l’instance AEM source, l’utilisateur, l’utilisatrice ou le groupe n’est pas migré.
 
 1. Si un utilisateur ou une utilisatrice est migré sans avoir au préalable été mappé via le mappage utilisateur, sur le système cloud cible, il ou elle ne pourra pas se connecter à l’aide de son identifiant IMS. La connexion sera possible à l’aide de la méthode AEM traditionnelle, mais ce n’est pas ce workflow qui est normalement recherché ou attendu.
 

@@ -6,19 +6,19 @@ role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
 exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
-source-git-commit: 09d383638d6caba596d22a7c6b544768de5245a0
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 0%
+source-wordcount: '523'
+ht-degree: 3%
 
 ---
 
-# Présentation de votre tableau de bord de réalisation des valeurs
+# Comprendre votre tableau de bord de réalisation de valeurs
 
 ![Tableau de bord de réalisation de la valeur](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
 
 
-<span class="preview"> Cette fonctionnalité est disponible via le programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail à l’adresse aem-forms-ea@adobe.com. <span>
+<span class="preview"> Cette fonctionnalité est disponible par le biais du programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail à l’adresse aem-forms-ea@adobe.com. <span>
 
 
 Bienvenue dans votre guichet unique pour comprendre la valeur que vos formulaires apportent ! Ce tableau de bord vous fournit des informations précieuses qui vous permettent d’optimiser vos formulaires, de rationaliser les workflows et, au final, d’atteindre plus rapidement vos objectifs.
@@ -45,7 +45,7 @@ Ce tableau de bord est votre fenêtre sur l’univers de l’utilisation des for
 
 ## En quoi cela vous avantage-t-il ? {#benefits-to-you}
 
-Ce tableau de bord vous permet de prendre des décisions pilotées par les données concernant vos formulaires. Procédez comme suit :
+Ce tableau de bord vous permet de prendre des décisions pilotées par les données concernant vos formulaires. Procédez comme suit :
 
 * **Identification des Forms populaires** : des taux d’envoi élevés indiquent la valeur des formulaires. Analysez ces formulaires à la recherche de bonnes pratiques à répliquer dans d’autres.
 * **Optimiser la création de formulaire** : réduisez les temps de création en identifiant les goulets d’étranglement. Explorer des modèles préconfigurés ou rationaliser les workflows.

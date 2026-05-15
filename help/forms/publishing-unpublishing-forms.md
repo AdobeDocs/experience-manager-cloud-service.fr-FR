@@ -10,18 +10,18 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 9496e4f5-ed74-4b40-b8f9-17153170af66
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1334'
-ht-degree: 95%
+source-wordcount: '1341'
+ht-degree: 96%
 
 ---
 
 # Publication et dépublication de formulaires et documents{#publishing-and-unpublishing-forms-and-documents}
 
-[!DNL AEM Forms] vous permet de créer, de publier et de dépublier facilement des formulaires. Le serveur [!DNL AEM Forms] propose deux instances : auteur et publication. L’instance de création est destinée à la création et la gestion d’éléments et de ressources de formulaire. L’instance de publication permet de conserver les ressources et les ressources connexes disponibles pour les utilisateurs finaux.
+[!DNL AEM Forms] vous permet de créer, de publier et de dépublier facilement des formulaires. Le serveur [!DNL AEM Forms] propose deux instances : auteur et publication. L’instance de création est destinée à la création et la gestion d’éléments et de ressources de formulaire. L’instance de publication est destinée à conserver les éléments et les ressources connexes disponibles pour les utilisatrices et utilisateurs finaux.
 
-## Ressources prises en charge  {#supported-assets-nbsp}
+## Ressources prises en charge   {#supported-assets-nbsp}
 
 [!DNL AEM Forms] prend en charge les types d’éléments suivants :
 

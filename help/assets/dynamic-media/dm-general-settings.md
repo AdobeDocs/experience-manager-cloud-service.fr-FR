@@ -10,17 +10,17 @@ role: User, Admin
 mini-toc-levels: 4
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2512'
-ht-degree: 83%
+source-wordcount: '2567'
+ht-degree: 70%
 
 ---
 
 # Configurer les paramètres généraux de Dynamic Media
 
 <!--
- hide: yes
+ hide: true
 hidefromtoc: yes
 -->
 
@@ -57,8 +57,8 @@ Voir aussi [Facultatif - Installer et configurer des paramètres de Dynamic Medi
    * Onglet [PDF](#pdf-tab)
    * Onglet [Illustrator](#illustrator-tab)
 
-   ![Page des paramètres généraux de Dynamic Media](/help/assets/assets-dm/dm-general-settings.png)
-   *Page des paramètres généraux de Dynamic Media, avec l’onglet **[!UICONTROL Modification d’images]**&#x200B;sélectionné.*<br><br>
+   ![Page Paramètres généraux de Dynamic Media](/help/assets/assets-dm/dm-general-settings.png)
+   *Page des paramètres généraux de Dynamic Media, avec l’onglet **[!UICONTROL Modification d’images]**sélectionné.*<br><br>
 
 1. Lorsque vous avez terminé, près du coin supérieur droit de la page, cliquez sur **[!UICONTROL Enregistrer]**.
 
@@ -68,8 +68,8 @@ Lors de la création du compte, Adobe Dynamic Media fournit automatiquement les
 
 | Option | Description |
 | --- | --- |
-| **[!UICONTROL Nom du serveur publié]** | Requis.<br>Le nom doit utiliser `https://` dans le chemin.<br>Ce serveur est le serveur dynamique du réseau CDN (Content Delivery Network) utilisé pour tous les appels d’URL générés par le système et spécifiques à votre compte. Ne modifiez le nom de ce serveur que lorsque le support technique d’Adobe vous le demande. |
-| **[!UICONTROL Nom du serveur original]** | Requis.<br>Ce serveur n’est utilisé que pour les tests d’assurance qualité. Ne modifiez le nom de ce serveur que lorsque le support technique d’Adobe vous le demande. |
+| **[!UICONTROL Nom du serveur publié]** | Obligatoire.<br>Le nom doit utiliser `https://` dans le chemin d’accès.<br>Ce serveur est le serveur dynamique du réseau CDN (Content Delivery Network) utilisé pour tous les appels d’URL générés par le système et spécifiques à votre compte. Ne modifiez le nom de ce serveur que lorsque le support technique d’Adobe vous le demande. |
+| **[!UICONTROL Nom du serveur original]** | Obligatoire.<br>Ce serveur est utilisé uniquement pour les tests d’assurance qualité. Ne modifiez le nom de ce serveur que lorsque le support technique d’Adobe vous le demande. |
 
 ## Charger dans l’application {#upload-to-application}
 
@@ -92,7 +92,7 @@ Lors de la création du compte, Adobe Dynamic Media fournit automatiquement les
 
   Contrôle la conservation de toute définition de recadrage manuel existante.
 
-  Voir aussi `preserveCrop` dans [UploadPostJob](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job) et [ReprocessAssetsJob](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job), tous deux dans le Guide de référence des visionneuses Dynamic Media.
+  Voir aussi `preserveCrop` dans [UploadPostJob](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job) et [ReprocessAssetsJob](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job), tous deux dans le Guide de référence des visionneuses Dynamic Media.
 
 ## Options de chargement par défaut {#default-upload-options}
 
@@ -104,10 +104,10 @@ L’effet d’accentuation utilise les mêmes options que le filtre d’accentua
 
 | Options d’accentuation | Description |
 | --- | --- |
-| **[!UICONTROL Quantité]** | Requis.<br>Il contrôle l’intensité du contraste appliqué aux pixels de contour.<br>Considérez cela comme l’intensité de l’effet. Les valeurs de quantité pour l’accentuation diffèrent entre Adobe Dynamic Media et Adobe Photoshop. Photoshop propose une plage de montants comprise entre 1 % et 500 %. En revanche, dans Adobe Dynamic Media, la plage de valeurs est comprise entre `0.0` et `5.0`. Une valeur de 5,0 dans Adobe Dynamic Media équivaut environ à 500 % dans Photoshop ; une valeur de 0,9 équivaut à 90 %, et ainsi de suite. |
-| **[!UICONTROL Rayon]** | Requis.<br>Contrôle le rayon de l’effet.<br>La plage de valeurs est comprise entre `0` et `250`. L’effet est exécuté sur tous les pixels d’une image et s’étend de tous les pixels dans toutes les directions. Le rayon est mesuré en pixels. Par exemple, pour obtenir un effet d’accentuation similaire pour une image de 2 000 x 2 000 pixels et une image de 500 x 500 pixels, définissez un rayon de deux pixels sur l’image de 2 000 x 2 000 pixels. Définissez ensuite une valeur de rayon d’un pixel sur l’image de 500 x 500 pixels. Utilisez une valeur plus élevée pour une image avec plus de pixels. |
-| **[!UICONTROL Seuil]** | Requis.<br>Le seuil est une plage de contraste qui est ignorée lorsque le filtre d’accentuation est appliqué. Cet effet est important pour qu’aucun « bruit » ne soit introduit dans une image lorsque ce filtre est utilisé. La plage de valeurs est comprise entre `0` et `255`, ce qui correspond au nombre d’étapes de luminosité d’une image en niveaux de gris. `0`= noir, `128`= 50 % gris et `255`=blanc.<br>Une valeur de seuil de `12` ignore les légères variations de luminosité de la peau, afin de ne pas ajouter de bruit, mais ajoute un contraste sur les bords dans les zones contrastées, comme la zone où les cils rencontrent la peau.<br>Si vous disposez d’une photo du visage d’une personne, l’accentuation affecte les parties contrastées de l’image. Par exemple, où les cils et la peau se rencontrent pour créer une zone de contraste évidente, et la peau lisse elle-même. Même la peau la plus lisse présente des changements subtils dans les valeurs de luminosité. Si vous n’utilisez pas de valeur de seuil, le filtre accentue ces changements subtils en pixels de peau. En retour, un effet bruyant et indésirable est créé lorsque le contraste sur les cils est augmenté, ce qui améliore la netteté.<br>Pour éviter ce problème, utilisez une valeur de seuil qui indique au filtre d’ignorer les pixels qui ne modifient pas considérablement le contraste, comme la peau lisse.<br>Dans l’image de fermeture éclair présentée plus haut, remarquez la texture en regard des fermetures. Le bruit d’une image est exposé, car les valeurs de seuil étaient trop faibles pour supprimer le bruit. |
-| **[!UICONTROL Monochrome]** | Sélectionnez cette option pour appliquer l’accentuation sur la luminosité de l’image (intensité).<br>Désélectionnez-la pour appliquer l’accentuation sur chaque composante de couleur séparément. |
+| **[!UICONTROL Quantité]** | Obligatoire.<br>Il contrôle l’intensité du contraste appliqué aux pixels de contour.<br>Considérez cela comme l’intensité de l’effet. Les valeurs de quantité pour l’accentuation diffèrent entre Adobe Dynamic Media et Adobe Photoshop. Photoshop propose une plage de montants comprise entre 1 % et 500 %. En revanche, dans Adobe Dynamic Media, la plage de valeurs est comprise entre `0.0` et `5.0`. Une valeur de 5,0 dans Adobe Dynamic Media équivaut environ à 500 % dans Photoshop ; une valeur de 0,9 équivaut à 90 %, et ainsi de suite. |
+| **[!UICONTROL Rayon]** | Required.<br>Contrôle le rayon de l’effet.<br>La plage de valeurs est comprise entre `0` et `250`. L’effet est exécuté sur tous les pixels d’une image et s’étend de tous les pixels dans toutes les directions. Le rayon est mesuré en pixels. Par exemple, pour obtenir un effet d’accentuation similaire pour une image de 2 000 x 2 000 pixels et une image de 500 x 500 pixels, définissez un rayon de deux pixels sur l’image de 2 000 x 2 000 pixels. Définissez ensuite une valeur de rayon d’un pixel sur l’image de 500 x 500 pixels. Utilisez une valeur plus élevée pour une image avec plus de pixels. |
+| **[!UICONTROL Seuil]** | Required.<br>Threshold est une plage de contraste qui est ignorée lorsque le filtre d’accentuation est appliqué. Cet effet est important pour qu’aucun « bruit » ne soit introduit dans une image lorsque ce filtre est utilisé. La plage de valeurs est comprise entre `0` et `255`, ce qui correspond au nombre d’étapes de luminosité d’une image en niveaux de gris. `0` = noir, `128` = 50 % gris et `255` = blanc. <br>Une valeur seuil de `12` ignore les légères variations de luminosité de la peau pour éviter d’ajouter du bruit, mais ajoute un contraste sur les bords dans les zones contrastées, comme la zone où les cils rencontrent la peau.<br>Si vous disposez d’une photo du visage d’une personne, l’accentuation affecte les parties contrastées de l’image. Par exemple, où les cils et la peau se rencontrent pour créer une zone de contraste évidente, et la peau lisse elle-même. Même la peau la plus lisse présente des changements subtils dans les valeurs de luminosité. Si vous n’utilisez pas de valeur de seuil, le filtre accentue ces changements subtils en pixels de peau. En retour, un effet bruyant et indésirable est créé lorsque le contraste sur les cils est augmenté, ce qui améliore la netteté.<br>Pour éviter ce problème, utilisez une valeur de seuil qui indique au filtre d’ignorer les pixels qui ne modifient pas considérablement le contraste, comme la peau lisse.<br>Dans l’image de fermeture éclair présentée plus haut, remarquez la texture en regard des fermetures. Le bruit d’une image est exposé, car les valeurs de seuil étaient trop faibles pour supprimer le bruit. |
+| **[!UICONTROL Monochrome]** | Sélectionnez cette option pour appliquer l’accentuation à la luminosité de l’image (intensité).<br>Désélectionnez-la pour appliquer l’accentuation à chaque composante de couleur séparément. |
 
 Voir aussi [Accentuer les images dans Adobe Dynamic Media et sur le serveur d’images](https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=fr).
 
@@ -123,8 +123,8 @@ Lorsque vous chargez des fichiers image PostScript (EPS), vous pouvez les format
 | --- | --- |
 | **[!UICONTROL Traitement]** | Sélectionnez Pixelliser pour convertir les graphiques vectoriels du fichier au format bitmap. |
 | **[!UICONTROL Conserver un arrière-plan transparent dans le rendu des images]** | Il conserve la transparence de l’arrière-plan du fichier. |
-| **[!UICONTROL Résolution (pixel/pouce)]** | Détermine le paramètre de résolution. Ce paramètre détermine le nombre de pixels affichés par pouce dans le fichier. |
-| **[!UICONTROL Espace colorimétrique]** | • **[!UICONTROL Détection automatique]** - Conserve l’espace colorimétrique du fichier.<br>· **[!UICONTROL Forcer comme RGB]** - Convertit vers l’espace colorimétrique RGB.<br>• **[!UICONTROL Forcer comme CMJN]** - Convertit vers l’espace colorimétrique CMJN.<br>· **[!UICONTROL Forcer comme Niveaux de gris]** - Convertit vers l’espace colorimétrique Niveaux de gris. |
+| **[!UICONTROL Résolution (pixel/pouce)]** | Détermine le paramètre de résolution. Ce paramètre détermine le nombre de pixels affichés par pouce dans le fichier. |
+| **[!UICONTROL Espace colorimétrique]** | · **[!UICONTROL Détection automatique]** - Conserve l’espace colorimétrique du fichier.<br>· **[!UICONTROL Forcer comme RGB]** - Convertit dans l’espace colorimétrique RGB.<br>· **[!UICONTROL Forcer comme CMJN]** - Convertit dans l’espace colorimétrique CMJN.<br>· **[!UICONTROL Forcer comme Niveaux de gris]** - Convertit dans l’espace colorimétrique Niveaux de gris. |
 
 ### Onglet Photoshop {#photoshop-tab}
 
@@ -136,7 +136,7 @@ Vous pouvez créer des modèles à partir de fichiers Adobe® Photoshop®, cons
 | **[!UICONTROL Création d’un modèle]** | Crée un modèle à partir des calques du fichier PSD. |
 | **[!UICONTROL Extraire le texte]** | Extrait le texte pour permettre aux utilisateurs de rechercher une chaîne de caractères dans une visionneuse. |
 | **[!UICONTROL Étendre les calques à la taille de l’arrière-plan]** | Étend la taille des calques d’image pixellisés à celle du calque en arrière-plan. |
-| **[!UICONTROL Affectation d’un nom au calque]** | Étend la taille des calques d’image pixellisés à celle du calque en arrière-plan.<br>• **[!UICONTROL Nom de calque]** : les images adoptent le nom de leur calque dans le fichier PSD. Par exemple, un calque nommé Étiquette de prix dans le fichier PSD d’origine devient une image nommée Étiquette de prix. Cependant, si les calques du fichier PSD portent les noms de calques Photoshop par défaut (Arrière-plan, Calque 1, Calque 2, etc.), les images sont nommées d’après leur numéro de calque dans le fichier PSD. <br>• **[!UICONTROL Photoshop et numéro de calque]** : nomme les images d’après leur numéro de calque dans le fichier PSD, leur nom de calque d’origine étant ignoré. Le nom des images est composé du nom de fichier Photoshop et d’un numéro de calque. Par exemple, le deuxième calque d’un fichier appelé `Spring Ad.psd` est nommé `Spring Ad_2`, même s’il portait un nom personnalisé dans Photoshop.<br>• **[!UICONTROL Photoshop et nom de calque]** : nomme les images en reprenant le nom du fichier PSD, suivi du nom ou du numéro du calque. Le numéro de calque est utilisé si le nom du calque dans le fichier PSD est un nom de calque Photoshop par défaut. Par exemple, un calque nommé `Price Tag` dans un fichier PSD portant le nom `SpringAd` est nommé `Spring Ad_Price Tag`. Un calque portant le nom par défaut Calque 2 est nommé `Spring Ad_2`. |
+| **[!UICONTROL Affectation d’un nom au calque]** | Étend la taille des calques d’image pixellisés à celle du calque d’arrière-plan.<br>· **[!UICONTROL Nom du calque]** - Nomme les images en fonction de leur nom de calque dans le fichier PSD. Par exemple, un calque nommé Étiquette de prix dans le fichier PSD d’origine devient une image nommée Étiquette de prix. Cependant, si les calques du fichier PSD portent les noms de calques Photoshop par défaut (Arrière-plan, Calque 1, Calque 2, etc.), les images sont nommées d’après leur numéro de calque dans le fichier PSD. <br>• **[!UICONTROL Photoshop et numéro de calque]** : nomme les images d’après leur numéro de calque dans le fichier PSD, leur nom de calque d’origine étant ignoré. Le nom des images est composé du nom de fichier Photoshop et d’un numéro de calque. Par exemple, le deuxième calque d’un fichier appelé `Spring Ad.psd` est nommé `Spring Ad_2` même s’il portait un nom personnalisé dans Photoshop.<br>· **[!UICONTROL Photoshop et nom du calque]** - Nomme les images en fonction du fichier PSD suivi du nom du calque ou du numéro de calque. Le numéro de calque est utilisé si le nom du calque dans le fichier PSD est un nom de calque Photoshop par défaut. Par exemple, un calque nommé `Price Tag` dans un fichier PSD portant le nom `SpringAd` est nommé `Spring Ad_Price Tag`. Un calque portant le nom par défaut Calque 2 est nommé `Spring Ad_2`. |
 | **[!UICONTROL Ancre]** | Indiquez le mode d’ancrage des images dans les modèles générés à partir de la composition superposée produite à partir du fichier PSD. Par défaut, l’ancrage est central. Une ancre centrale permet aux images de remplacement de remplir au mieux le même espace, quels que soient les proportions de l’image de remplacement. Les images avec un aspect différent qui remplacent cette image, lors du référencement du modèle et de l’utilisation de la substitution des paramètres, occupent effectivement le même espace. Définissez un autre paramètre si votre application nécessite que les images de remplacement remplissent l’espace alloué dans le modèle. |
 
 ### Onglet PDF {#pdf-tab}
@@ -147,10 +147,10 @@ Vous pouvez pixelliser les fichiers, extraire des mots de recherche et des liens
 
 | Option PDF | Description |
 | --- | --- |
-| **[!UICONTROL Traitement]** | • **[!UICONTROL Aucun]** : le fichier PDF ne subit aucun traitement.<br>• **[!UICONTROL Miniature]** : pixellise chaque page du fichier PDF et la convertit en une image miniature.<br> • **[!UICONTROL Pixelliser]** : pixellise les pages du fichier PDF et convertit les graphiques vectoriels en images bitmap. Pour créer un catalogue électronique, sélectionnez cette option. |
-| **[!UICONTROL Extraire]** | • **[!UICONTROL Aucun]** : aucun mot de recherche ou lien n’est extrait du fichier PDF.<br>· **[!UICONTROL Mots de recherche]** - Le système extrait les mots de recherche du fichier PDF, ce qui permet d’effectuer des recherches par mots-clés dans une visionneuse de catalogue électronique.<br>• **[!UICONTROL Liens]** : extrait les liens des fichiers PDF et les convertit en zones cliquables utilisées dans une visionneuse de catalogue électronique.<br>• **[!UICONTROL Mots de recherche et liens]** : extrait les mots de recherche et les liens à utiliser dans une visionneuse de catalogue électronique. |
+| **[!UICONTROL Traitement]** | · **[!UICONTROL Aucun]** - Aucun traitement du PDF n’est effectué.<br>· **[!UICONTROL Miniature]** - Pixellise chaque page du fichier PDF et la convertit en une image miniature.<br> • **[!UICONTROL Pixelliser]** : pixellise les pages du fichier PDF et convertit les graphiques vectoriels en images bitmap. Pour créer un catalogue électronique, sélectionnez cette option. |
+| **[!UICONTROL Extraire]** | · **[!UICONTROL Aucun]** - Aucun mot de recherche ou lien n’est extrait du PDF.<br>· **[!UICONTROL Mots de recherche]** - Le système extrait les mots de recherche du fichier PDF, ce qui permet d’effectuer des recherches par mots-clés dans une visionneuse de catalogue électronique.<br>· **[!UICONTROL Liens]** - Extrait les liens des fichiers PDF et les convertit en zones cliquables utilisées dans une visionneuse de catalogue électronique.<br>· **[!UICONTROL Mots de recherche et liens]** - Extrait les mots de recherche et les liens à utiliser dans une visionneuse de catalogue électronique. |
 | **[!UICONTROL Résolution (pixel/pouce)]** | Détermine le paramètre de résolution. Ce paramètre détermine le nombre de pixels affichés par pouce dans le fichier PDF. La valeur par défaut est de 150. |
-| **[!UICONTROL Espace colorimétrique]** | • **[!UICONTROL Détection automatique]** - Conserve l’espace colorimétrique du fichier PDF.<br>· **[!UICONTROL Forcer comme RGB]** - Convertit vers l’espace colorimétrique RGB.<br>· **[!UICONTROL Forcer comme CMJN]** - Convertit vers l’espace colorimétrique CMJN.<br>• **[!UICONTROL Forcer comme Niveaux de gris]** - Convertit vers l’espace colorimétrique Niveaux de gris. |
+| **[!UICONTROL Espace colorimétrique]** | · **[!UICONTROL Détection automatique]** - Conserve l’espace colorimétrique du fichier PDF.<br>· **[!UICONTROL Forcer comme RGB]** - Convertit dans l’espace colorimétrique RGB.<br>· **[!UICONTROL Forcer comme CMJN]** - Convertit dans l’espace colorimétrique CMJN.<br>· **[!UICONTROL Forcer comme Niveaux de gris]** - Convertit dans l’espace colorimétrique Niveaux de gris. |
 
 ### Onglet Illustrator {#illustrator-tab}
 
@@ -165,5 +165,5 @@ Lorsque vous chargez des fichiers image Illustrator (AI), vous pouvez les format
 | --- | --- |
 | **[!UICONTROL Traitement]** | Sélectionnez Pixelliser pour convertir les graphiques vectoriels du fichier au format bitmap. |
 | **[!UICONTROL Conserver un arrière-plan transparent dans le rendu des images]** | Il conserve la transparence de l’arrière-plan du fichier. |
-| **[!UICONTROL Résolution (pixel/pouce)]** | Détermine le paramètre de résolution. Ce paramètre détermine le nombre de pixels affichés par pouce dans le fichier. |
-| **[!UICONTROL Espace colorimétrique]** | • **[!UICONTROL Détection automatique]** - Conserve l’espace colorimétrique du fichier.<br>· **[!UICONTROL Forcer comme RGB]** - Convertit vers l’espace colorimétrique RGB.<br>• **[!UICONTROL Forcer comme CMJN]** - Convertit vers l’espace colorimétrique CMJN.<br>• **[!UICONTROL Forcer comme Niveaux de gris]** - Convertit vers l’espace colorimétrique Niveaux de gris. |
+| **[!UICONTROL Résolution (pixel/pouce)]** | Détermine le paramètre de résolution. Ce paramètre détermine le nombre de pixels affichés par pouce dans le fichier. |
+| **[!UICONTROL Espace colorimétrique]** | · **[!UICONTROL Détection automatique]** - Conserve l’espace colorimétrique du fichier.<br>· **[!UICONTROL Forcer comme RGB]** - Convertit dans l’espace colorimétrique RGB.<br>· **[!UICONTROL Forcer comme CMJN]** - Convertit dans l’espace colorimétrique CMJN.<br>· **[!UICONTROL Forcer comme Niveaux de gris]** - Convertit dans l’espace colorimétrique Niveaux de gris. |

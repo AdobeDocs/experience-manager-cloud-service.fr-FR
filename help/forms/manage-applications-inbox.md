@@ -11,14 +11,14 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 92130660-9942-426f-ae2f-4f3300f9735c
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1187'
-ht-degree: 70%
+source-wordcount: '1303'
+ht-degree: 73%
 
 ---
 
-# Gestion des applications et des tâches Forms dans la boîte de réception AEM {#manage-forms-applications-and-tasks-in-aem-inbox}
+# Gestion des applications et des tâches Forms dans la boîte de réception AEM{#manage-forms-applications-and-tasks-in-aem-inbox}
 
 L’une des nombreuses façons de lancer ou de déclencher un processus orienté formulaire consiste à utiliser des applications dans la boîte de réception AEM. Vous devez créer une application de workflow pour rendre un Forms Workflow disponible en tant qu’application dans la boîte de réception. Pour plus d’informations sur l’application de processus et d’autres façons de lancer les processus de Forms, voir [Lancement d’un processus orienté formulaire sur OSGi](aem-forms-workflow.md#launch).
 
@@ -114,7 +114,7 @@ En outre, l’onglet affiche l’historique de la tâche pour chaque étape term
 
 #### Barre d’outils Actions {#actions-toolbar}
 
-La barre d’outils Actions affiche toutes les options disponibles pour la tâche. Les actions Enregistrer, Réinitialiser et Déléguer sont des actions par défaut, mais d’autres actions disponibles sont configurées à l’étape [&#x200B; Affecter une tâche &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=fr#extending-aem). Dans l’exemple ci-dessus, les options Approuver et Rejeter sont configurées dans le workflow.
+La barre d’outils Actions affiche toutes les options disponibles pour la tâche. Les actions Enregistrer, Réinitialiser et Déléguer sont des actions par défaut, mais d’autres actions disponibles sont configurées à l’étape [ Affecter une tâche ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=fr#extending-aem). Dans l’exemple ci-dessus, les options Approuver et Rejeter sont configurées dans le workflow.
 
 Lorsque vous agissez sur la tâche, elle se poursuit dans le workflow.
 

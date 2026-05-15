@@ -2,15 +2,14 @@
 title: Prise en main de la traduction dans AEM Sites
 description: Découvrez comment organiser votre contenu AEM Sites et comment fonctionnent les outils de traduction AEM.
 index: true
-hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1391'
+source-wordcount: '1398'
 ht-degree: 100%
 
 ---
@@ -24,13 +23,13 @@ Découvrez comment organiser votre contenu AEM Sites et comment fonctionnent les
 Dans le document précédent du parcours de traduction AEM Sites, [Découvrir le contenu AEM Sites et comment traduire dans AEM](learn-about.md), vous avez appris les bases de la théorie d’AEM Sites et vous devriez maintenant :
 
 * comprendre les concepts de base de la création de contenu AEM Sites ;
-* être familiarisé avec la façon dont AEM prend en charge la traduction.
+* vous être familiarisé avec la façon dont AEM prend en charge la traduction.
 
 Cet article s’appuie sur ces principes de base afin que vous compreniez comment AEM stocke et gère le contenu et comment vous pouvez utiliser les outils de traduction AEM pour traduire ce contenu.
 
 ## Objectif {#objective}
 
-Ce document vous aide à comprendre comment commencer à traduire le contenu d’un site dans AEM. Après l’avoir lu, vous devriez :
+Ce document vous aide à comprendre comment commencer à traduire le contenu d’un site dans AEM. Après avoir lu ce document, vous devriez :
 
 * comprendre l’importance de la structure de contenu pour la traduction ;
 * comprendre comment AEM stocke le contenu ;
@@ -196,7 +195,7 @@ Maintenant que vous comprenez comment fonctionnent la console et l’éditeur Si
 
 En règle générale, vous ne configurez votre connecteur qu’une seule fois pour votre instance, et les règles pour chaque projet. Ensuite, vous utilisez des projets de traduction pour traduire votre contenu et conserver ses traductions à jour en permanence.
 
-## Et après ? {#what-is-next}
+## Prochaines étapes {#what-is-next}
 
 Maintenant que vous avez terminé cette partie du parcours de traduction découplée AEM Sites vous devriez :
 

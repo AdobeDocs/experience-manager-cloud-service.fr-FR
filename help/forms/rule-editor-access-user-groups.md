@@ -1,18 +1,18 @@
 ---
-title: Comment donner accès à l’éditeur de règles de formulaires adaptatifs aem pour sélectionner des groupes d’utilisateurs ?
+title: Comment permettre l’accès à l’éditeur de règles de formulaires adaptatifs d’Aem pour sélectionner des groupes d’utilisateurs ?
 description: Plusieurs types d’utilisateurs dotés de différentes compétences peuvent utiliser les formulaires adaptatifs. Découvrez comment limiter l’accès à l’éditeur de règles des utilisateurs selon leur rôle ou fonction.
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: 2ef0e685-458b-4117-b02a-55dd3472577e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '330'
 ht-degree: 91%
 
 ---
-
 
 # Autorisation d’accès à l’éditeur de règles pour des groupes d’utilisateurs sélectionnés {#grant-rule-editor-access-to-select-user-groups}
 
@@ -20,12 +20,12 @@ ht-degree: 91%
 
 Plusieurs types d’utilisateurs dotés de différentes compétences peuvent utiliser les formulaires adaptatifs. Les utilisateurs expérimentés peuvent avoir les connaissances requises pour utiliser des scripts et des règles complexes. Toutefois, certains utilisateurs peu expérimentés doivent utiliser uniquement les propriétés de mise en page et de base des formulaires adaptatifs.
 
-[!DNL Experience Manager Forms] vous permet de limiter l’accès de l’éditeur de règles aux utilisateurs en fonction de leur rôle ou fonction. Dans les paramètres du service de configuration des formulaires adaptatifs, vous pouvez spécifier les [groupes d’utilisateurs](forms-groups-privileges-tasks.md) qui pourront afficher l’éditeur de règles et y accéder.
+[!DNL Experience Manager Forms] permet de limiter l’accès à l’éditeur de règles des utilisateurs selon leur rôle ou fonction. Dans les paramètres du service de configuration des formulaires adaptatifs, vous pouvez spécifier les [groupes d’utilisateurs](forms-groups-privileges-tasks.md) qui pourront afficher l’éditeur de règles et y accéder.
 
 ## Spécification des groupes d’utilisateurs qui peuvent accéder à l’éditeur de règles {#specify-user-groups-that-can-access-rule-editor}
 
 1. Connectez-vous à [!DNL Experience Manager Forms] en tant qu’administrateur.
-1. Dans l’instance d’auteur, cliquez sur ![Adobe Experience Manager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Outils ![hammer](assets/hammer-icon.svg) > **[!UICONTROL Opérations]** > **[!UICONTROL Console Web]**. La console web s’ouvre dans une nouvelle fenêtre.
+1. Dans l’instance de création, cliquez sur ![Adobe Experience Manager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Outils ![marteau](assets/hammer-icon.svg) > **[!UICONTROL Opérations]** > **[!UICONTROL Console Web]**. La console web s’ouvre dans une nouvelle fenêtre.
 
    ![1-2](assets/1-2.png)
 
@@ -55,4 +55,3 @@ Plusieurs types d’utilisateurs dotés de différentes compétences peuvent uti
    Barre d’outils de composants comme visible pour un utilisateur sans accès à l’éditeur de règles
 
    Pour obtenir des instructions sur l’ajout d’utilisateurs aux groupes, voir [Administration et sécurité des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=fr).
-

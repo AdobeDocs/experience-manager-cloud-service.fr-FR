@@ -8,10 +8,10 @@ exl-id: 24fa5751-c006-4c39-bdc3-b46a4974638e
 hide: true
 hidefromToC: true
 index: false
-source-git-commit: 44d7e7357c86183d1ddfa8dce9c26b48448554f6
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
 source-wordcount: '908'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -23,7 +23,7 @@ L’authentification de serveur à serveur OAuth permet un accès sécurisé par
 
 Avant de commencer, vérifiez que les conditions préalables suivantes sont remplies :
 
-* Assurez-vous d’avoir [accès au Adobe Developer Console](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/requirements/access-rights) spécifique à l’environnement que vous utilisez.
+* Assurez-vous d’avoir [accès au Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights) spécifique à l’environnement que vous utilisez.
 * [Attribuez le rôle d’administrateur système ou de développeur dans le Adobe Admin Console](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions) pour activer l’accès au Adobe Developer Console.
 
 ## Comment générer un jeton d’accès à l’aide de l’authentification de serveur à serveur OAuth ?
@@ -32,7 +32,7 @@ Suivez les étapes ci-dessous pour générer un jeton d’accès à partir de la
 
 ### &#x200B;1. Configuration du projet Adobe Developer Console
 
-1. Accéder à [Adobe Developer Console](https://developer.adobe.com/console)
+1. Accéder à [](https://developer.adobe.com/console)
 2. Connexion avec votre Adobe ID
 
 3. Créer un projet ou accéder à votre projet existant
@@ -82,7 +82,7 @@ Ajoutez des API Forms en fonction de vos besoins :
 
    ![Ajouter une api](/help/forms/assets/adc-add-api.png)
 
-2. Sélectionnez **API de communication Forms**
+2. Sélectionnez **API de communication**
    1. Dans la boîte de dialogue _Ajouter une API_, filtrez par **Experience Cloud**
    2. Sélectionnez **« API de communication Forms »**
 
@@ -173,7 +173,7 @@ Générez manuellement les jetons d’accès dans Adobe Developer Console :
    1. Cliquez sur le bouton **Générer un jeton d’accès »** dans la section API de votre projet
    2. Copier le jeton d’accès généré
 
-   ![&#x200B; Générer un jeton d’accès &#x200B;](/help/forms/assets/adc-access-token.png)
+   ![ Générer un jeton d’accès ](/help/forms/assets/adc-access-token.png)
 
    >[!NOTE]
    >
@@ -260,7 +260,7 @@ Découvrez comment définir un environnement pour les API de communication Forms
                     <p class="is-size-6">Découvrez comment configurer un environnement pour les API de communications Forms synchrones (à la demande) qui génèrent ou traitent des documents instantanément. </p>
                 </div>
                 <a href="/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> En savoir plus </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
                 </a>
             </div>
         </div>
@@ -284,7 +284,7 @@ Découvrez comment définir un environnement pour les API de communication Forms
                     <p class="is-size-6">Découvrez comment configurer un environnement pour les API de communications Forms asynchrones (par lots) qui génèrent ou traitent plusieurs documents de manière planifiée.</p>
                 </div>
                 <a href="/help/forms/aem-forms-cloud-service-communications-batch-processing.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> En savoir plus </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
                 </a>
             </div>
         </div>

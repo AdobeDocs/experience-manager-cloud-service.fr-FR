@@ -1,19 +1,19 @@
 ---
 title: Comment envoyer un formulaire adaptatif pour révision ? Comment gérer les révisions d’un formulaire adaptatif aem ?
-description: La révision est un mécanisme qui permet aux réviseurs d’effectuer différentes tâches pour les formulaires adaptatifs à l’aide de l’étape Affecter une tâche .
+description: La révision est un mécanisme qui permet aux réviseurs d’effectuer différentes tâches pour les formulaires adaptatifs à l’aide de l’étape Affecter une tâche.
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: e53535a8-cd6b-4f30-9523-773243098757
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 83%
+source-wordcount: '394'
+ht-degree: 87%
 
 ---
 
-
-# Création et gestion de révisions pour un formulaire adaptatif {#review-step-forms-aem-sites-page}
+# Créer et gérer des révisions pour un formulaire adaptatif {#review-step-forms-aem-sites-page}
 
 En suivant l’[Étape Attribuer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html#assign-task-step?lang=fr) dans le workflow AEM, le réviseur ou la réviseuse passe en revue le formulaire envoyé et effectue une action sur celui-ci. Pour passer en revue le formulaire envoyé à l’aide de l’étape Affecter une tâche, procédez comme suit :
 
@@ -46,7 +46,7 @@ Maintenant, configurez l’action Envoyer d’un composant Conteneur de formulai
 
 1. Accédez à la page Sites.
 1. Sélectionnez ![settings_icon](assets/settings_icon.png) d’un conteneur de formulaires adaptatifs. Le **[!UICONTROL conteneur de formulaires adaptatifs]** s’ouvre.
-1. Ouvrez l’onglet **[!UICONTROL Envoi]** et indiquez l’**[!UICONTROL Action Envoyer]** pour [Appeler un wokflow AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=fr#invoke-an-aem-workflow?lang=fr).
+1. Ouvrez l’onglet **[!UICONTROL Envoi]** et indiquez l’**[!UICONTROL Action Envoyer]** pour [Appeler un wokflow AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#invoke-an-aem-workflow?lang=fr).
 
 1. Pour enregistrer les paramètres, cliquez sur [Terminé].
 

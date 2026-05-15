@@ -8,10 +8,10 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 hide: true
 hidefromtoc: true
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 68%
+source-wordcount: '1083'
+ht-degree: 71%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 68%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html) |
 | AEM as a Cloud Service | Cet article |
 
 ![data-integeration](assets/data-integeration.png)
@@ -39,7 +39,7 @@ When the package is installed, the following entities and services are available
 -->
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
-&#x200B;<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  Le Cloud Service OData de MS Dynamics (service OData) est disponible avec tous les modes d’exécution. Pour plus d’informations sur la configuration des modes d’exécution pour une instance [!DNL Experience Manager], voir [Modes d’exécution](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr#runmodes).
+<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  Le Cloud Service OData de MS Dynamics (service OData) est disponible avec tous les modes d’exécution. Pour plus d’informations sur la configuration des modes d’exécution pour une instance [!DNL Experience Manager], voir [Modes d’exécution](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr#runmodes).
 
 AEM as a Cloud Service propose différentes actions d’envoi prêtes à l’emploi pour gérer les envois de formulaires. Pour en savoir plus sur ces options, consultez l’article [Action d’envoi de formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md).
 
@@ -134,7 +134,7 @@ Un service OData est identifié par son URL racine de service. Pour configurer u
 
    Pour plus d’informations sur la création et la configuration d’un dossier pour les configurations de service cloud, voir [Configurer le dossier pour les configurations de service cloud](#cloud-folder).
 
-1. Sélectionnez **[!UICONTROL Créer]** pour ouvrir **[!UICONTROL l’assistant Créer une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, sélectionnez **[!UICONTROL Service OData]** dans la liste déroulante **[!UICONTROL Type de service]**, recherchez et sélectionnez éventuellement une image miniature pour la configuration, puis sélectionnez **[!UICONTROL Suivant]**.
+1. Sélectionnez **[!UICONTROL Créer]** pour ouvrir **[!UICONTROL l’assistant Créer une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, sélectionnez **[!UICONTROL Service OData]** dans la liste déroulante **[!UICONTROL Type de service]**, recherchez et sélectionnez éventuellement une image miniature pour la configuration, puis appuyez sur **[!UICONTROL Suivant]**.
 Dans l’onglet **[!UICONTROL Paramètres d’authentification]** :
 
    1. Saisissez la valeur du champ **[!UICONTROL Racine du service]**. Accédez à l’instance Dynamics et à **[!UICONTROL Ressources de développement]** pour afficher la valeur du champ Racine du service. Par exemple, https://&lt;nom-client>/api/data/v9.1/

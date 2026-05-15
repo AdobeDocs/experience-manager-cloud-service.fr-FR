@@ -1,5 +1,5 @@
 ---
-title: 'Prise en charge de XFA dans les formulaires adaptatifs basés sur XDP '
+title: Prise en charge de XFA dans les formulaires adaptatifs basés sur XDP
 description: Répertorie les événements, les propriétés, les scripts et la validation XFA pris en charge dans les formulaires adaptatifs.
 uuid: 75d3c292-cfed-438f-afdb-4071d95a08b7
 topic-tags: develop
@@ -10,14 +10,14 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 59ae0eed-d832-4f46-9f99-7bcca9f82306
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '695'
 ht-degree: 99%
 
 ---
 
-# Prise en charge de XFA dans les formulaires adaptatifs basés sur XDP {#xfa-support-in-xdp-based-adaptive-forms}
+# Prise en charge de XFA dans les formulaires adaptatifs basés sur XDP{#xfa-support-in-xdp-based-adaptive-forms}
 
 ## Présentation {#introduction}
 
@@ -65,11 +65,11 @@ Lorsqu’un formulaire adaptatif est créé à l’aide d’un fichier XDP, vous
   </tr>
   <tr>
    <td><p>Champ numérique </p> </td>
-   <td><p>Zone numérique</p> </td>
+   <td><p>Champ numérique</p> </td>
   </tr>
   <tr>
    <td><p>Champ décimal</p> </td>
-   <td><p>Zone numérique</p> </td>
+   <td><p>Champ numérique</p> </td>
   </tr>
   <tr>
    <td><p>Champ de texte </p> </td>
@@ -206,7 +206,7 @@ Le tableau suivant capture la manière dont divers scripts XFA définis dans les
    <td><p>Ce script est implémenté lors de l’exécution et ne peut pas être remplacé dans les formulaires adaptatifs.<br /> </p> </td>
   </tr>
   <tr>
-   <td><p>exit </p> </td>
+   <td><p>quitter </p> </td>
    <td><p>Ce script est implémenté lors de l’exécution et ne peut pas être remplacé dans les formulaires adaptatifs.</p> </td>
   </tr>
   <tr>

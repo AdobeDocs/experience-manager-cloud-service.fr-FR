@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: f58aa2df-dfb6-4eb4-b20d-e81bb01be8a7
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '887'
 ht-degree: 6%
 
 ---
@@ -30,7 +30,7 @@ Cet article fournit des instructions d’utilisation détaillées et l’interpr
 
 Pour accéder au tableau de bord des informations d’utilisation de Forms :
 
-1. Accédez à **Forms** > **Forms et documents**
+1. Accédez à **** > **Forms et documents**
 1. Cliquez sur **Tableau de bord InProduct**. Le tableau de bord s’ouvre dans une nouvelle fenêtre.
 
    ![Tableau de bord de réalisation des valeurs](/help/forms/assets/forms-usage-insights.png)
@@ -58,7 +58,7 @@ Cette section contient quatre graphiques, chacun effectuant le suivi d’un aspe
 
 - **Objectif :** ce graphique affiche le nombre de fois où les formulaires ont été envoyés avec succès au cours de la période sélectionnée.
 
-  ![Graphique des envois Forms](/help/forms/assets/forms-submissions-vr-dashboard-form-insights.png)
+  ![Graphique des envois ](/help/forms/assets/forms-submissions-vr-dashboard-form-insights.png)
 - **Informations à extraire :**
    - **Analyse des tendances :** observez la tendance globale des envois de formulaires. Le nombre augmente-t-il, diminue-t-il ou reste-t-il relativement constant ?
    - **Périodes de pointe :** identifier les jours ou les périodes présentant des taux d’envoi anormalement élevés. Examinez les raisons possibles de ces pics (par exemple, campagnes marketing, événements spécifiques).
@@ -91,7 +91,7 @@ Cette section contient quatre graphiques, chacun effectuant le suivi d’un aspe
 
 - **Objectif :** ce graphique permet de suivre le nombre de formulaires qui ont été publiés (mis à disposition pour utilisation) au cours de la période sélectionnée.
 
-  ![Graphique Publié Forms](/help/forms/assets/forms-publish-vr-dashboard-form-insights.png)
+  ![Graphique Publié ](/help/forms/assets/forms-publish-vr-dashboard-form-insights.png)
 
 
 - **Informations à extraire :**
@@ -102,7 +102,7 @@ Cette section contient quatre graphiques, chacun effectuant le suivi d’un aspe
 
 Cette section fournit des informations sur l’utilisation des fragments de formulaire, qui sont des composants réutilisables pouvant être incorporés dans plusieurs formulaires.
 
-![Graphique Publié Forms](/help/forms/assets/fragment-usage-vr-dashboard-form-insights.png)
+![Graphique Publié ](/help/forms/assets/fragment-usage-vr-dashboard-form-insights.png)
 
 ### Nombre de fragments de formulaire actuellement utilisés
 

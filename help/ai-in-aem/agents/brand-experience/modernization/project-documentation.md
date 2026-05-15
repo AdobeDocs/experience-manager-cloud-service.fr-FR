@@ -2,14 +2,14 @@
 title: Compétence en documentation de projet
 description: Découvrez comment les compétences de documentation de l’agent de modernisation d’expérience peuvent vous aider à accélérer les transferts de projet.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
-source-git-commit: 90fb75c7febc8a8138e13a2f3ff872f38eeb3baa
+role: User, Admin, Developer
+exl-id: 111cc47d-085f-4cf4-81bc-332e6a31bbeb
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '477'
 ht-degree: 1%
 
 ---
-
 
 # Compétence en documentation de projet {#project-documentation}
 
@@ -51,11 +51,11 @@ Une fois les conditions préalables remplies, il vous suffit de demander à l’
 
 Vous pouvez enregistrer le PDF directement pour le fournir à vos équipes ou le charger dans le cadre du reste du contenu de la DA.
 
-![&#x200B; Guide de l’administrateur &#x200B;](assets/admin-guide.png)
+![ Guide de l’administrateur ](assets/admin-guide.png)
 
 >[!NOTE]
 >
->Si vous n’êtes pas autorisé à accéder à l’API d’administration Edge Delivery Services ou à l’option **Autoriser LLM à accéder à admin.hlx.page en mon nom** [&#x200B; dans les paramètres de la console.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-view) n’est pas activé, l’agent génère la documentation en fonction de la base de code qui lui est accessible.
+>Si vous n’êtes pas autorisé à accéder à l’API d’administration Edge Delivery Services ou à l’option **Autoriser LLM à accéder à admin.hlx.page en mon nom** [dans les paramètres de la console.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-view) n’est pas activé, l’agent génère la documentation en fonction de la base de code qui lui est accessible.
 
 ## Résolution des problèmes {#troubleshooting}
 

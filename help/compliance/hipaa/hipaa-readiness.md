@@ -2,11 +2,12 @@
 title: Préparation du HIPAA pour Adobe Experience Manager as a Cloud Service
 description: Découvrez la prise en charge d’Experience Manager as a Cloud Service des réglementations HIPAA et comment vous y conformer lors de la mise en œuvre d’un nouveau projet AEM as a Cloud Service.
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: 49721ac71bc2bde10eb5f25db58ee1b07c8a82e5
+role: Admin, Developer, Leader
+exl-id: 9928811e-3487-430a-9e2f-04959460c95f
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 6%
+source-wordcount: '1029'
+ht-degree: 8%
 
 ---
 
@@ -23,9 +24,9 @@ ht-degree: 6%
 >Pour plus d’informations sur la réponse d’Adobe aux problèmes de confidentialité et sur ce que cela signifie pour vous en tant que client Adobe, consultez :
 >
 >* [Produits et services HIPAA et Adobe](https://www.adobe.com/trust/compliance/hipaa-hds/hipaa-ready.html) dans le Centre de gestion de la confidentialité Adobe
->* [Centre de traitement des données personnelles &#x200B;](https://www.adobe.com/fr/privacy.html)
+>* [Centre de traitement des données personnelles ](https://www.adobe.com/fr/privacy.html)
 
-Pour Adobe Experience Manager (AEM) as a Cloud Service, Adobe fournit de la documentation pour vous aider à comprendre la préparation au HIPAA. Cela peut vous aider à vous conformer à ces règlements.
+Pour Adobe Experience Manager (AEM) as a Cloud Service, Adobe fournit de la documentation pour vous aider à comprendre la préparation au HIPAA. Celles-ci pourront vous aider à vous conformer à ces règlements.
 
 ## Health Insurance Portability and Accountability Act (HIPAA) {#health-insurance-portability-and-accountability-act-hipaa}
 
@@ -33,11 +34,11 @@ Pour Adobe Experience Manager (AEM) as a Cloud Service, Adobe fournit de la docu
 
 Les règles de confidentialité, de sécurité et de notification des violations de la loi HIPAA établissent des protections importantes pour les informations de santé identifiables appelées informations de santé protégées (ISP).
 
-En vertu de la loi HIPAA, une entité couverte est un prestataire de soins de santé, un régime d’assurance-maladie ou un centre d’information sur les soins de santé. Un associé d&#39;affaires est une entité qui fournit des services à une entité couverte qui implique l&#39;accès aux ISP. Les règles de confidentialité et de sécurité de la loi HIPAA exigent qu’une entité couverte obtienne des assurances écrites d’un associé commercial sous la forme d’un accord d’association (Business Associate Agreement, BAA) exigeant que l’associé commercial protège la confidentialité et la sécurité des ISP de l’entité couverte.
+En vertu de la loi HIPAA, une entité couverte est un prestataire de soins de santé, un régime d’assurance-maladie ou un centre d’information sur les soins de santé. Un associé d&#39;affaires est une entité qui fournit des services à une entité couverte qui implique l&#39;accès aux ISP. Les règles de confidentialité et de sécurité de la loi HIPAA exigent qu&#39;une entité couverte obtienne des assurances écrites d&#39;un associé commercial sous la forme d&#39;un accord d&#39;association (BAA) exigeant que l&#39;associé commercial protège la confidentialité et la sécurité des ISP de l&#39;entité couverte.
 
 ### Fournir des ISP à Adobe {#providing-phi-to-adobe}
 
-Adobe agit en tant qu’associé commercial pour ses services conformes à la loi HIPAA, répertoriés sous [&#x200B; Préparation des services conforme à la loi HIPAA dans AEM as a Cloud Service](#hipaa-readiness-of-services-in-aem-as-a-cloud-service).
+Adobe agit en tant qu’associé commercial pour ses services conformes à la loi HIPAA, répertoriés sous [ Préparation des services conforme à la loi HIPAA dans AEM as a Cloud Service](#hipaa-readiness-of-services-in-aem-as-a-cloud-service).
 
 Les clients qui disposent d’une licence pour un service conforme à la norme HIPAA d’Adobe pour traiter les ISP **doivent** disposer de la licence appropriée et d’un BAA signé avec Adobe.
 
@@ -93,7 +94,7 @@ Le tableau suivant décrit les services AEM compatibles avec la loi HIPAA et les
 | AEM Cloud Manager | AEM Cloud Manager, Release Orchestrator, Basculements de version, Programme de validation de version | Conformité à la norme HIPAA |
 | AEM Cloud Manager | Distribution logicielle | Non conforme à la norme HIPAA<br>[1] peut être ajouté à un programme de sécurité étendu en l’absence d’ISP. |
 |   |   |   |
-| AEM Guides  | AEM Guides  | Non conforme à la norme HIPAA |
+| AEM Guides  | AEM Guides  | Non conforme à la norme HIPAA |
 |   |   |   |
 | LLM Optimizer | LLM Optimizer | Non conforme à la norme HIPAA<br>[1] peut être ajouté à un programme de sécurité étendu en l’absence d’ISP. |
 
@@ -132,10 +133,10 @@ Cela signifie que vous devez :
 
 Le tableau suivant indique où les types d’environnement peuvent être pris en charge en tant que conformes à la loi HIPAA.
 
-| | RDE | Développement | Étape  | Prod |
+| | RDE | Dev | Évaluation  | Prod |
 | --- | --- | --- | --- | --- |
 | Type d’environnement  | Non  | Non  | Non  | Oui  |
 
 ## Configuration {#setup}
 
-Lorsque vous [Créer des programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md), l’onglet [&#x200B; Sécurité fournit les options permettant d’activer la protection HIPAA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security).
+Lorsque vous [Créer des programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md), l’onglet [ Sécurité fournit les options permettant d’activer la protection HIPAA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security).

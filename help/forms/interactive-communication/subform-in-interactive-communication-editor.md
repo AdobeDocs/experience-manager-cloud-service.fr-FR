@@ -7,10 +7,10 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 2%
+source-wordcount: '484'
+ht-degree: 4%
 
 ---
 
@@ -69,7 +69,7 @@ Les sous-formulaires sont couramment utilisés pour :
 
 Les auteurs peuvent faire glisser un sous-formulaire de la bibliothèque d’objets vers la zone de travail et ajuster sa disposition, son positionnement et sa liaison à partir du panneau Propriétés.
 
-## &#x200B;4. Bonnes Pratiques
+## &#x200B;4. Bonnes pratiques
 
 - **Choisissez judicieusement la disposition :** utilisez une disposition fixe pour les formulaires nécessitant un emplacement exact et une disposition fluide pour les communications dynamiques axées sur les données.
 

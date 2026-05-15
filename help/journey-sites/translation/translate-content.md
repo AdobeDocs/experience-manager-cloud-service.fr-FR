@@ -2,15 +2,14 @@
 title: Traduction du contenu
 description: Utilisez le connecteur et les règles de traduction pour traduire votre contenu.
 index: true
-hide: false
 hidefromtoc: false
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2526'
+source-wordcount: '2535'
 ht-degree: 100%
 
 ---
@@ -24,7 +23,7 @@ Utilisez le connecteur et les règles de traduction pour traduire votre contenu.
 Dans le document précédent du parcours de traduction AEM Sites, [Configuration des règles de traduction](translation-rules.md), vous avez appris à utiliser les règles de traduction AEM pour identifier votre contenu de traduction. Vous devriez maintenant comprendre les éléments suivants :
 
 * comprendre ce que font les règles de traduction ;
-* Comment définir vos propres règles de traduction
+* être capable de définir vos propres règles de traduction.
 
 Maintenant que votre connecteur et vos règles de traduction sont configurés, cet article vous guide tout au long de l’étape suivante de la traduction de votre contenu AEM Sites.
 

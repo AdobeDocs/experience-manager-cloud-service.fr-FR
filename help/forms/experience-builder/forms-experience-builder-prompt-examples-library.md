@@ -7,10 +7,10 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 48eb137c-fe12-4e4f-b845-3321ca8b6075
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2199'
-ht-degree: 98%
+source-wordcount: '2192'
+ht-degree: 97%
 
 ---
 
@@ -228,11 +228,11 @@ Ces exemples montrent comment créer des formulaires pas à pas, en commençant 
 
 **Classifications des entreprises :**
 
-    Ajoutez un champ pour la classification des industries avec les codes SCIAN
-    Créez une liste déroulante des types d’entités commerciales (SARL, société, partenariat, etc.)
-    Ajoutez un champ pour les catégories de taille d’entreprise (startup, PME, société)
-    Incluez la sélection de service pour les grandes organisations
-    Ajoutez un champ pour les types de services professionnels
+    Ajouter un champ pour la classification des industries avec les codes SCIAN
+    Créer une liste déroulante des types d&#39;entités commerciales (LLC, Corporation, Partenariat, etc.)
+    Ajouter un champ pour les catégories de taille d&#39;entreprise (démarrage, PME, entreprise)
+    Inclure la sélection de service pour les grandes organisations
+    Ajouter un champ pour les types de services professionnels
 
 **Classifications professionnelles :**
 

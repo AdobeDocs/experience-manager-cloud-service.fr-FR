@@ -2,15 +2,14 @@
 title: Parcours de traduction AEM Sites
 description: Faites vos premiers pas avec ce parcours guidé pour découvrir comment traduire votre contenu AEM Sites à l’aide des puissants outils de traduction d’AEM.
 index: true
-hide: false
 hidefromtoc: false
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '940'
 ht-degree: 100%
 
 ---
@@ -43,7 +42,7 @@ Ce parcours présuppose que le lecteur dispose d’une expérience en traduction
 
 Voici les personnes qui interagissent dans ce parcours.
 
-| Personne | Description | Rôle dans le parcours |
+| Personne | Description | Rôle dans le Parcours |
 |---|---|---|
 | Spécialiste de traduction | Définit le contenu à traduire et gère les workflows. | Audience ciblée de ce parcours |
 | Auteur de contenu | Crée et gère le contenu diffusé dans des sites. | Les auteurs de contenu créent du contenu que le spécialiste de traduction doit traduire. |
@@ -80,4 +79,4 @@ Consultez ces ressources supplémentaires pour plus d’informations sur la mani
 * [Parcours d’architecture découplée](/help/journey-headless/architect/overview.md) – Faites vos premiers pas avec cette introduction sur les fonctionnalités puissantes, flexibles et découplées d’Adobe Experience Manager as a Cloud Service et comment modéliser le contenu de votre projet.
 * [Parcours de développement AEM Headless](/help/journey-headless/developer/overview.md) : faites vos premiers pas avec cette visite guidée et découvrez les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement.
 * [Documentation technique d’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=fr) : si vous connaissez déjà bien les technologies AEM et découplées, vous pouvez consulter directement notre documentation technique détaillée.
-* [Tutoriels découplés AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) : si vous préférez apprendre par la pratique et préférez la technique à la théorie, suivez nos tutoriels pratiques organisés par API et par structure, qui explorent la création et l’utilisation d’applications reposant sur le découplage AEM.
+* [Tutoriels pour AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) : si vous préférez apprendre par la pratique et préférez la technique à la théorie, suivez nos tutoriels pratiques organisés par API et par structure, qui explorent la création et l’utilisation d’applications reposant sur le découplage AEM.

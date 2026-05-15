@@ -2,15 +2,14 @@
 title: Publication du contenu traduit
 description: Découvrez comment publier votre contenu traduit et mettre à jour les traductions au fur et à mesure que le contenu est mis à jour.
 index: true
-hide: false
 hidefromtoc: false
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1340'
 ht-degree: 100%
 
 ---

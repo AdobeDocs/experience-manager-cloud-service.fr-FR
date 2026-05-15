@@ -8,14 +8,13 @@ content-type: reference
 feature: Image Profiles,Best Practices
 role: User, Admin
 mini-toc-levels: 4
-hide: false
 hidefromtoc: false
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '3620'
-ht-degree: 89%
+source-wordcount: '3692'
+ht-degree: 84%
 
 ---
 
@@ -49,7 +48,7 @@ _Deuxième partie_
 * Les ensembles d’images, visionneuses à 360° et visionneuses de supports variés
 
 **_Audience_**
-Ce parcours est particulièrement adaptée pour les personnes suivantes si elles sont peu familières avec Dynamic Media dans Experience Manager :
+L’audience qui convient le mieux aux lecteurs de ce parcours est celle des personnes suivantes qui sont peu familières avec Dynamic Media sur Experience Manager :
 
 * Administrateur
 * Analyste métier
@@ -82,8 +81,8 @@ Cette méthode de diffusion unique garantit que des expériences de qualité coh
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![Adobe Dynamic Media diffuse la même image principale sur différents supports, dans des formats et des tailles différents.](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
-_Adobe Dynamic Media garantit la diffusion d’expériences cohérentes et de qualité sur n’importe quel écran, quelle que soit leur taille ou leur bande passante._
+![Adobe Dynamic Media diffuse la même image principale sur différents supports, dans des formats et des tailles différents](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+_Adobe Dynamic Media garantit la cohérence et la qualité des expériences diffusées sur n’importe quel écran, quelle que soit leur taille ou leur bande passante._
 
 Au fur et à mesure que vous lisez, vous allez en apprendre plus sur l’importance de ce concept de « Un fichier de ressource principal avec des possibilités infinies ».
 
@@ -144,13 +143,13 @@ L’un des cas d’utilisation les plus importants pour Dynamic Media est égal
 
 Vous trouverez ci-dessous un exemple type d’expérience ou de page web. Environ 90 % d’une page est constituée de médias riches, tels que des images et des vidéos, qui sont généralement des fichiers beaucoup plus lourds.
 
-![Poids de la page de contenu](/help/assets/dynamic-media/assets/dm-content-page-weight.png)
+![Épaisseur de la page de contenu](/help/assets/dynamic-media/assets/dm-content-page-weight.png)
 _Poids de la page de contenu d’une page web standard._
 
 Les 10 % restants sont constitués de code HTML et CSS et de balises spécifiques. Vous souhaitez optimiser ces 90 % du poids de cette page, et Dynamic Media peut vous y aider. Vous avez déjà lu un article sur le concept _Un fichier de ressource principal avec des possibilités infinies_. Cette approche est importante pour réduire le poids global de la page. La possibilité de prendre une ressource principale et de l’utiliser sur une page des détails du produit, une page de miniature, votre panier et votre grille de recherche représente un gain de temps considérable. Cela permet également d’assurer la cohérence entre les expériences.
 
-![Approche des fichiers principaux](/help/assets/dynamic-media/assets/dm-onefile.png)
-_Cette montre est un fichier de ressource principal unique mais avec plusieurs rendus (à ne pas confondre avec des copies) créés à la volée._
+![Approche des fichiers de Principal](/help/assets/dynamic-media/assets/dm-onefile.png)
+_La montre est un fichier de ressource principal unique, mais avec plusieurs rendus (à ne pas confondre avec des copies) créés à la volée._
 
 Penchons-nous de plus près sur les problèmes que Dynamic Media résout grâce à ce fichier unique et certaines des solutions offertes par cette approche.
 
@@ -217,8 +216,8 @@ Voici plusieurs autres cas d’utilisation à prendre en compte.
 
 Vous trouverez ci-dessous un workflow type pour Dynamic Media.
 
-![Workflow Dynamic Media](/help/assets/dynamic-media/assets/dm-workflow.png)
-_Circulation d’une ressource dans le système Dynamic Media._
+![Workflow Dynamic Media](/help/assets/dynamic-media/assets/dm-workflow.png)
+_Circulation d’une ressource dans le système Dynamic Media._
 
 Tout d’abord, la phase de création a pour objectif principal de créer une ressource principale. Ces ressources principales peuvent provenir de séances photo ou de fournisseurs de vidéos, ou encore de fichiers audio que vous avez créés. Vous pouvez utiliser les applications de Creative Suite d’Adobe telles qu’Adobe InDesign, Adobe Photoshop ou Adobe Illustrator pour vous aider à élaborer le contenu.
 
@@ -232,7 +231,7 @@ Une fois la création d’une ressource principale terminée, vous la chargez da
 
 Par exemple, l’image de montre ci-dessous fait 4 560 x 3 020 pixels. Même s’il se peut que vous n’utilisiez jamais une image de cette taille, vous pouvez toujours la télécharger. Plus l’image est grande, meilleure est la qualité délivrée par Dynamic Media, même pour un rendu de miniature. Souvenez-vous : vous pouvez facilement _diminuer_ la résolution d’une image existante. Mais si vous essayez d’_augmenter_ la résolution d’une image, le résultat risque d’être insatisfaisant.
 
-![Formats recommandés pour le chargement dans Dynamic Media](/help/assets/dynamic-media/assets/dm-upload-formats.png)
+![Formats recommandés pour le chargement dans Dynamic Media](/help/assets/dynamic-media/assets/dm-upload-formats.png)
 _Considérations relatives aux chargements de ressources._
 
 Adobe recommande de charger des ressources dans un format sans perte. En règle générale, il est préférable d’éviter le JPEG, car lorsque vous le diffusez ou que vous continuez à enregistrer en JPEG, vous perdez peu à peu en qualité d’image. Il est préférable de démarrer avec des images de la résolution la plus élevée possible dans un format sans perte qui pourra s’adapter sur le long terme. Ces formats comprennent par exemple les fichiers TIFF ou PNG.
@@ -254,14 +253,14 @@ Outre la publication manuelle de ressources, vous pouvez configurer Dynamic Med
 Après le chargement, il existe différentes manières de prévisualiser les rendus d’une ressource dans Dynamic Media. L’aperçu des rendus peut vous donner une idée de ce qu’un client voit. Une méthode d’aperçu courante consiste à sélectionner une ressource, puis à afficher ses rendus en sélectionnant un _paramètre d’image prédéfini_ comme illustré ci-dessous.
 
 ![Prévisualisation d’un rendu d’une ressource en fonction du paramètre d’image prédéfini Grande](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
-_Prévisualisation d’un rendu d’une ressource en fonction du paramètre d’image prédéfini « Grand » sélectionné. Cliquez sur le bouton URL. Le chemin d’URL qui en résulte contient le nom du paramètre d’image prédéfini « Grand » et peut être utilisé dans une page web._
+_Prévisualisation d’un rendu d’une ressource en fonction du paramètre d’image prédéfini « Grand » sélectionné. Cliquez sur le bouton URL. Le chemin d’URL qui en résulte contient le nom du paramètre d’image prédéfini « Grand » et peut être utilisé dans une page web._
 
 L’URL ci-dessus est en ligne ! [Faites un essai](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target="_blank"}.
 
 Pour prévisualiser une ressource, une autre méthode consiste à sélectionner la ressource image, puis à sélectionner un paramètre prédéfini de _Visionneuses_ comme illustré ci-dessous.
 
-![Prévisualisation d’une ressource en fonction du paramètre prédéfini « ZoomVertical_light » de la visionneuse](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
-_Prévisualisation d’une ressource en fonction du paramètre prédéfini de visionneuse « ZoomVertical_light » sélectionné. Le pointeur de la souris (`+`) a été déplacé sur la montre pour effectuer un zoom avant. Remarquez les boutons URL et Incorporer._
+![Prévisualisation d’une ressource en fonction du paramètre prédéfini Zoom de la visionneuse Lumière verticale](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
+_Prévisualisation d’une ressource en fonction du paramètre prédéfini de visionneuse « ZoomVertical_light » sélectionné. Le pointeur de la souris (`+`) a été déplacé sur la montre pour effectuer un zoom avant. Remarquez les boutons URL et Incorporer._
 
 Le rendu ci-dessus est en ligne ! [Faites un essai](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&config=jpearldemo/ZoomVertical_light){target="_blank"}.
 
@@ -286,8 +285,8 @@ _Dynamic Media Help topics_
 
 _Tutoriels Dynamic Media_
 
-* [Utilisation de Dynamic Media avec Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=fr)
-* [Bibliothèque de contenu Adobe Experience Manager](https://experienceleague.adobe.com/fr?lang=fr#recommended/solutions/experience-manager) (recherchez _Dynamic Media_)
+* [Utilisation de Dynamic Media avec Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=fr)
+* [Bibliothèque de contenu Adobe Experience Manager](https://experienceleague.adobe.com/?lang=fr#recommended/solutions/experience-manager) (recherchez _Dynamic Media_)
 
 _Visionneuses Dynamic Media_
 

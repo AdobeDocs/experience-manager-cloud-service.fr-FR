@@ -4,9 +4,9 @@ description: Dynamic Media avec les fonctionnalités OpenAPI permet de générer
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: video-smartcrop-dmwoapi
-source-git-commit: 8ddd2ade491069e4592becf3b77c04e6bbb2c06a
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '409'
 ht-degree: 4%
 
 ---
@@ -48,7 +48,10 @@ Pour activer le recadrage intelligent de vidéo, configurez le schéma de métad
 
 L’option **Créer des recadrages intelligents de vidéo** est désormais disponible dans le formulaire de métadonnées de ressource vidéo.
 
-![Créer un champ de recadrage intelligent de vidéo](/help/assets/assets/video-smartcrop-metadata-field.png)
+<!--
+broken link
+![Create Video Smartcrops field](/help/assets/assets/video-smartcrop-metadata-field.png)
+-->
 
 ## Application de recadrages intelligents vidéo aux vidéos approuvées {#apply-video-smart-crops}
 

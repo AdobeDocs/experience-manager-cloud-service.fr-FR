@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1991'
-ht-degree: 95%
+source-wordcount: '2069'
+ht-degree: 93%
 
 ---
 
@@ -53,7 +53,7 @@ HTML5 forms ne met pas en cache les modèles avec des références d’images ou
 Le service Forms OSGi traite une requête en deux étapes :
 
 * **Génération de mises en page et d’état de formulaire initial** : le service de rendu Forms OSGi appelle le composant Forms Cache pour déterminer si le formulaire a déjà été mis en cache et s’il n’a pas été invalidé. Si le formulaire est mis en cache et valide, il sert la sortie HTML du cache. Si le formulaire est invalidé, le service de rendu Forms OSGi génère la mise en page et l’état initiaux du formulaire au format XML. Ce fichier XML est transformé en mise en page HTML et en état de formulaire JSON initial par le service Forms OSGi, puis mis en mémoire cache pour les requêtes suivantes.
-* **Formulaires préremplis** : pendant le rendu, si un utilisateur demande des formulaires avec des données préremplies, le service de rendu Forms OSGi appelle le conteneur de services de formulaires et génère un nouvel état de formulaire avec des données fusionnées. Toutefois, dans la mesure où une mise en page est déjà créée à l’étape précédente, cet appel est plus rapide que le premier. Cet appel exécute uniquement la fusion des données et les scripts sur les données.
+* **Formulaires préremplis** : pendant le rendu, si une personne demande des formulaires avec des données préremplies, le service de rendu Forms OSGi appelle le conteneur de services de formulaires et génère un nouvel état de formulaire avec des données fusionnées. Toutefois, dans la mesure où une mise en page est déjà créée à l’étape précédente, cet appel est plus rapide que le premier. Cet appel exécute uniquement la fusion des données et les scripts sur les données.
 
 S’il existe des mises à jour dans un formulaire ou tout autre actif utilisé à l’intérieur d’un formulaire, le composant de mise en cache du formulaire les détecte et le cache de ce formulaire en particulier est invalidé. Une fois que le service Forms OSGi a terminé le traitement, le JSP du rendu du profil ajoute les références à la bibliothèque JavaScript et le style à ce formulaire et renvoie la réponse au client. Un serveur web standard tel qu’[Apache](https://httpd.apache.org/) peut être utilisé ici avec la compression HTML activée. Un serveur web réduirait considérablement le temps de réponse, le trafic réseau et la durée nécessaire au trafic des données entre le serveur et le client.
 
@@ -97,7 +97,7 @@ Les formulaires HTML5 utilisent la mise en mémoire cache pour optimiser le déb
   </tr>
   <tr>
    <td>Agressive</td>
-   <td>Contenu HTML rendu en mémoire cache.<br /> Met en mémoire cache tous les artefacts mis en cache dans le cadre d’une stratégie conservatrice.<br /><strong>Remarque</strong> : cette stratégie permet d’obtenir de meilleures performances, mais utilise davantage de mémoire pour la conservation des artefacts en mémoire cache.</td>
+   <td>Mettre en cache le contenu HTML rendu <br /> mettre en cache tous les artefacts au niveau conservateur.<br /> <strong>Remarque </strong> : cette stratégie permet d’obtenir de meilleures performances, mais utilise davantage de mémoire pour stocker les artefacts en mémoire cache.</td>
   </tr>
  </tbody>
 </table>
@@ -130,7 +130,7 @@ Le moteur de script des formulaires HTML est écrit en langage JavaScript pour p
 
 Lors du rendu, le script FormCalc est traduit (et mis en mémoire cache) en JavaScript sur le serveur de manière transparente pour l’utilisateur ou l’utilisatrice, ou le concepteur ou la conceptrice.
 
-Ce moteur de script utilise certaines fonctionnalités d’ECMAScript5 comme Object.defineProperty. Le moteur et/ou la bibliothèque sont délivrés en tant que bibliothèques client CQ avec pour nom de catégorie **xfaforms.profile**.  L’**API FormBridge** est également fournie pour permettre aux portails ou applications externes d’interagir avec le formulaire. À l’aide de FormBridge, une application externe peut masquer certains éléments, obtenir ou définir leurs valeurs, ou encore modifier leurs attributs par programmation.
+Ce moteur de script utilise certaines fonctionnalités d’ECMAScript5 comme Object.defineProperty. Le moteur et/ou la bibliothèque sont délivrés en tant que bibliothèques client CQ avec pour nom de catégorie **xfaforms.profile**. L’**API FormBridge** est également fournie pour permettre aux portails ou applications externes d’interagir avec le formulaire. À l’aide de FormBridge, une application externe peut masquer certains éléments, obtenir ou définir leurs valeurs, ou encore modifier leurs attributs par programmation.
 
 Pour plus d’informations, voir l’article sur [Form Bridge](/help/forms/integrate-form-bridge-forms-portal.md).
 
@@ -144,7 +144,7 @@ Pour plus d’informations sur les widgets et les contrats correspondants, voir 
 
 #### Style {#styling}
 
-Le style associé aux éléments HTML est ajouté soit en ligne, soit en fonction du bloc CSS intégré.  Certains styles courants et indépendants sur les formulaires font partie de la bibliothèque client CQ avec pour nom de catégorie xfaforms.profile.
+Le style associé aux éléments HTML est ajouté soit en ligne, soit en fonction du bloc CSS intégré. Certains styles courants et indépendants sur les formulaires font partie de la bibliothèque client CQ avec pour nom de catégorie xfaforms.profile.
 
 En plus des propriétés de style par défaut, chaque élément du formulaire contient également certaines classes CSS en fonction du type d’élément, du nom et d’autres propriétés. A l’aide de ces classes, vous pouvez redéfinir le style des éléments en spécifiant leur propre CSS.
 
@@ -177,7 +177,7 @@ Les profils sont les nœuds de ressources dans Sling qui représentent un formul
 
 Le nœud de profil possède une propriété **sling:resourceSuperType** avec la valeur **xfaforms/profile**. Cette propriété envoie en interne des demandes de transfert au script sling pour les nœuds de profil qui figurent dans le dossier **/libs/xfaforms/profile**. Ces scripts sont des pages JSP, qui sont des conteneurs permettant de rassembler des formulaires HTML et des artefacts JS/CSS obligatoires. Les pages comportent des références à :
 
-* **xfaforms.I18N.&lt;locale>** : cette bibliothèque contient des données localisées.
+* **xfaforms.I18N.&lt;locale>** : cette bibliothèque contient des données localisées.
 * **xfaforms.profile** : cette bibliothèque contient l’implémentation pour les moteurs de script XFA et de mise en page.
 
 Ces bibliothèques sont modélisées sous la forme de bibliothèques clientes CQ qui tirent profit des fonctions de concaténation, de réduction et de compression automatiques des bibliothèques JavaScript de la structure CQ.

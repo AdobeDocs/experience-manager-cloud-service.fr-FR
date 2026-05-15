@@ -6,10 +6,10 @@ hide: true
 hidefromtoc: true
 exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 100%
+source-wordcount: '625'
+ht-degree: 89%
 
 ---
 
@@ -43,7 +43,8 @@ Vous pouvez vous référer à la [feuille de calcul](/help/forms/assets/enquiryt
 
 ![Formulaire de demande traduit](/help/forms/assets/translate-form-french.png)
 
-Reportez-vous à l’URL ci-dessous pour consulter le formulaire ainsi que sa traduction en français : https://main--portal--wkndforms.hlx.live/enquirytranslate
+Reportez-vous à l’URL ci-dessous, où vous pouvez afficher le formulaire avec sa traduction en français :
+https://main--portal--wkndforms.hlx.live/enquirytranslate
 
 ## Traduire des formulaires dans un site SharePoint{#translate-form-sharepoint}
 
@@ -62,7 +63,8 @@ Vous pouvez vous référer à la [feuille de calcul](/help/forms/assets/enquiryt
 
 ![Formulaire de demande traduit](/help/forms/assets/translate-form-french.png)
 
-Reportez-vous à l’URL ci-dessous pour consulter le formulaire ainsi que sa traduction en français : https://main--wefinance--wkndforms.hlx.live/enquirytranslate
+Reportez-vous à l’URL ci-dessous, où vous pouvez afficher le formulaire avec sa traduction en français :
+https://main--wefinance--wkndforms.hlx.live/enquirytranslate
 
 ## Problèmes connus {#known-issues}
 
@@ -81,9 +83,9 @@ Reportez-vous à l’URL ci-dessous pour consulter le formulaire ainsi que sa tr
 
 **Réponse** : pour saisir du texte dans une langue localisée spécifique, ajustez les paramètres du clavier de votre appareil. Reportez-vous aux liens suivants pour obtenir des instructions sur la manière de procéder :
 
-- [Configurer votre appareil Mac pour saisir des données dans une autre langue](https://support.apple.com/fr-fr/guide/mac-help/mchlp1406/mac)
+- [Configurer votre Mac pour qu’il accepte les entrées dans une autre langue](https://support.apple.com/fr-fr/guide/mac-help/mchlp1406/mac)
 - [Configurer votre appareil Windows pour saisir des données dans une autre langue](https://support.microsoft.com/fr-fr/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:text=Select%20the%20Start%20%3E%20Settings%20%3E%20Time,you%20want%2C%20then%20select%20Options)
-- [Configurer votre appareil Android ou votre iPhone/iPad pour saisir des données dans une autre langue](https://support.google.com/gboard/answer/7068494?hl=fr&co=GENIE.Platform%3DAndroid)
+- [Configurez votre Android ou vos iPhone/iPad pour qu’ils soient saisis dans une autre langue](https://support.google.com/gboard/answer/7068494?hl=fr&co=GENIE.Platform%3DAndroid)
 
 
 **Question** : comment puis-je récupérer une liste de paramètres régionaux utilisés dans la fonction `GOOGLETRANSLATE` ?

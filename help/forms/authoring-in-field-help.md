@@ -9,10 +9,10 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 9abc6e42-3b53-4dca-bd6a-ced5cf6c6ac4
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 90%
+source-wordcount: '392'
+ht-degree: 85%
 
 ---
 
@@ -55,7 +55,7 @@ Vous pouvez utiliser le champ Description longue pour saisir un texte long ou in
 
 ![Ajout de contenu multimédia enrichi comme aide contextuelle pour les champs de formulaire](assets/long-descriptions.png)
 
-L’ajout d’une description longue affiche une icône **?** en regard du champ. Un clic sur l’icône affiche le contenu ajouté à la section Description longue.
+L&#39;ajout d&#39;une description longue affiche un **?** en regard du champ. Un clic sur l’icône affiche le contenu ajouté à la section Description longue.
 
 ![Exemple d’aide contextuelle sous forme de contenu multimédia enrichi](assets/photoshop.png)
 
@@ -65,6 +65,6 @@ Outre l’aide contextuelle pour les champs de formulaire, vous pouvez spécifie
 
 ![Ajout d’une aide contextuelle pour un panneau de formulaire](assets/panel-level-help.png)
 
-L’ajout d’une aide pour un panneau affiche une icône **?** en regard de la description du panneau. Un clic sur l’icône affiche le contenu ajouté dans la section Contenu de l’aide du panneau Modifier.
+Ajouter de l’aide pour le panneau affiche un **?** en regard de la description du panneau. Un clic sur l’icône affiche le contenu ajouté dans la section Contenu de l’aide du panneau Modifier.
 
 ![Exemple d’aide contextuelle au niveau d’un panneau](assets/photoshop-1.png)

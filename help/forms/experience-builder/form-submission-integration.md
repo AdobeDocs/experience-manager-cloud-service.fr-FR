@@ -8,10 +8,10 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: c772556b-dab6-4fa8-b728-1fe52c6596a4
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 1%
+source-wordcount: '912'
+ht-degree: 2%
 
 ---
 
@@ -148,7 +148,7 @@ Connecter des formulaires aux workflows de processus métier :
     - Conteneur : form-submission
     - Dossier : /{year}/{month}/{day}/
     - Format de fichier : JSON avec pièces jointes
-    - Niveau d’accès : privé
+    - Niveau d’accès : Privé
 
 ## Exemples d’intégration
 
@@ -164,7 +164,7 @@ Connecter des formulaires aux workflows de processus métier :
 **Implémentation :**
 Envoyez le formulaire de commentaires client à :
 1. <support@company.com> d’e-mail avec détails de formulaire
-2. Publier dans l’API CRM pour créer l’enregistrement du client
+2. POST à l’API CRM pour créer un enregistrement client
 3. Déclencher le workflow de création de ticket d’assistance
 4. Envoyer un e-mail de remerciement au client
 
@@ -179,7 +179,7 @@ Envoyez le formulaire de commentaires client à :
 
 **Implémentation :**
 Traiter l’intégration des employés :
-1. <hr@company.com> par e-mail avec les détails de l’employé
+1. <hr@company.com> d’e-mail avec les détails de l’employé
 2. Charger des documents dans le dossier des employés de SharePoint
 3. Démarrer le workflow d’intégration dans Power Automate
 4. Créer des comptes dans le système des ressources humaines, le courrier électronique et d’autres outils
@@ -197,7 +197,7 @@ Traiter l’intégration des employés :
 Génération de piste de processus :
 1. PUBLIER les données de prospect dans l’API Marketo
 2. Créer un enregistrement de prospect dans Salesforce
-3. Envoyer un courrier électronique à l’équipe de vente avec les détails du prospect
+3. Envoyer un courrier électronique à l’équipe de vente avec les détails du lead
 4. Démarrer la séquence de maturation automatisée des e-mails
 
 ## Scénarios d’intégration avancés
@@ -313,7 +313,7 @@ Génération de piste de processus :
 Pour les problèmes d’intégration :
 
 - Consultez la [FAQ sur Forms Experience Builder](forms-experience-builder-frequently-asked-questions.md)
-- Consultez le [&#x200B; Guide de prise en main &#x200B;](forms-experience-builder-getting-started.md)
+- Consultez le [ Guide de prise en main ](forms-experience-builder-getting-started.md)
 - Contactez votre administrateur système pour obtenir une assistance technique
 - Consultez la documentation de l’API pour les services externes.
 

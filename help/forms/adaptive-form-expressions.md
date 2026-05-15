@@ -7,10 +7,10 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: e5b77cc1-5fb1-4f73-afe6-64f1c407e42b
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2688'
-ht-degree: 95%
+source-wordcount: '2738'
+ht-degree: 93%
 
 ---
 
@@ -74,7 +74,7 @@ L’expression de calcul est utilisée pour calculer automatiquement la valeur d
 
 **Type de valeur renvoyée** : l’expression renvoie une valeur compatible avec le champ dans lequel le résultat de l’expression est affiché (par exemple, décimal).
 
-**Exemple** : l’expression de calcul pour afficher la somme de deux champs dans **field1** est
+**Exemple** : l’expression de calcul pour afficher la somme de deux champs dans **field1** est :
 `field2.value + field3.value`
 
 ### Expression de clic {#click-expression}
@@ -99,7 +99,7 @@ Le script d’initialisation est déclenché lorsqu’un formulaire adaptatif es
 
 **Type de valeur renvoyée** : l’expression du script d’initialisation ne renvoie aucune valeur. Si une expression renvoie une valeur, la valeur est ignorée.
 
-**Exemple :** dans un scénario où les données sont pré-renseignées, pour remplir les champs avec la valeur par défaut `'Adaptive Forms'` lorsque leur valeur enregistrée est nulle, l’expression du script d’initialisation est :
+**Exemple :** dans un scénario où les données sont pré-renseignées, pour remplir les champs avec la valeur par défaut `'Adaptive Forms'` lorsque leur valeur enregistrée est nulle, l’expression du script d’initialisation est :
 `if(this.value==null) this.value='Adaptive Forms';`
 
 ### Expression d’options {#options-expression}
@@ -156,7 +156,7 @@ Le script de validation de valeur est déclenché dans les cas suivants :
 
 **Type de renvoi** : l’expression du script de validation de valeur ne renvoie aucune valeur. Si une expression renvoie une valeur, la valeur est ignorée.
 
-**Exemple :** pour convertir la casse des caractères alphabétiques saisis dans le champ en majuscules pour la validation, l’expression de validation de valeur est :
+**Exemple :** pour convertir la casse des caractères alphabétiques saisis dans le champ en majuscules pour la validation, l’expression de validation de valeur est :
 `this.value=this.value.toUpperCase()`
 
 >[!NOTE]
@@ -181,7 +181,7 @@ L’expression d’achèvement de l’étape est utilisée pour empêcher un uti
 
 **Type de renvoi** : l’expression renvoie une valeur booléenne, qui indique si le panneau est valide ou non. **True** indique que le panneau actuel est valide et l’utilisateur peut accéder au prochain panneau.
 
-**Exemple** : dans un formulaire organisé en différents panneaux, avant d’accéder au panneau suivant, le panneau actif est validé. Dans ce cas, les expressions d’achèvement de l’étape sont utilisées. En règle générale, ces expressions utilisent l’API de validation GuideBridge. Un exemple d’expression d’achèvement de l’étape est :
+**Exemple** : dans un formulaire organisé en différents panneaux, avant d’accéder au panneau suivant, le panneau actif est validé. Dans ce cas, les expressions d’achèvement de l’étape sont utilisées. En règle générale, ces expressions utilisent l’API de validation GuideBridge. Voici un exemple d’expression d’achèvement de l’étape :
 `window.guideBridge.validate([],this.panel.navigationContext.currentItem.somExpression)`
 
 ## Validations dans un formulaire adaptatif {#validations-in-adaptive-form}
@@ -224,7 +224,7 @@ GuideBridge se compose d’un ensemble d’API qui peuvent être utilisées en i
 
 * Pour valider un formulaire adaptatif ou ses panneaux spécifiques, utilisez `guideBridge.validate(errorList, somExpression).`
 
-#### Utiliser GuideBridge en dehors des expressions {#using-guidebridge-outside-expressions-nbsp}
+#### Utiliser GuideBridge en dehors des expressions  {#using-guidebridge-outside-expressions-nbsp}
 
 Vous pouvez également utiliser les API GuideBridge en dehors des expressions. Par exemple, vous pouvez utiliser les API GuideBridge pour définir la communication entre la page HTML qui héberge le formulaire adaptatif et le modèle de formulaire. En outre, vous pouvez définir la valeur qui provient du parent d’Iframe qui héberge le formulaire.
 
@@ -279,7 +279,7 @@ Exécutez les étapes suivantes pour créer un modèle personnalisé destiné à
 1. Ouvrez l’onglet Propriétés du nœud créé. Par exemple, ouvrez l’onglet Propriétés de `textboxpatterns`. Ajoutez la propriété `guideComponentType` à ce nœud et définissez sa valeur sur *fd/af/components/formatter/guideTextBox*.
 
 1. La valeur de cette propriété dépend du champ pour lequel vous souhaitez définir les modèles. Pour un champ numérique, la valeur de la propriété `guideComponentType` est *fd/af/components/formatter/guideNumericBox*. La valeur du champ de sélecteur de date est *fd/af/components/formatter/guideDatepicker*.
-&grave;&grave;
+``
 1. Vous pouvez ajouter un modèle personnalisé en affectant une propriété au nœud `textboxpatterns`. Ajoutez une propriété qui dispose d’un nom (par exemple, `pattern1`) et définissez sa valeur sur le modèle que vous voulez ajouter. Par exemple, ajoutez une propriété `pattern1` avec une valeur Fax=text{99-999-9999999}. Le modèle est disponible pour toutes les zones de texte que vous utilisez dans les formulaires adaptatifs.
 
    ![Création de modèles personnalisés pour les champs dans CrxDe](assets/creating-custom-patterns.png)

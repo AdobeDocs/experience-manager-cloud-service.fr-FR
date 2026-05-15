@@ -9,15 +9,15 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: f19b7e4f-d4aa-45da-b0dd-7ae8d119da74
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1151'
 ht-degree: 93%
 
 ---
 
-
-# Synchronisation de formulaires adaptatifs avec des modèles de formulaire XFA{#synchronizing-adaptive-forms-with-xfa-form-templates}
+# Synchronisation de formulaires adaptatifs avec des modèles de formulaires XFA{#synchronizing-adaptive-forms-with-xfa-form-templates}
 
 ## Présentation {#introduction}
 
@@ -47,7 +47,7 @@ Cet article utilise un exemple pour montrer comment synchroniser le formulaire a
 
 Une fois le package chargé, vous pouvez afficher ces ressources dans l’interface utilisateur [!DNL AEM Forms].
 
-Installez le package à l’aide du gestionnaire de packages : `https://<server>:<port>/crx/packmgr/index.jsp`
+Installez le package à l’aide du gestionnaire de modules : `https://<server>:<port>/crx/packmgr/index.jsp`
 
 Le package contient les ressources suivantes :
 
@@ -108,7 +108,7 @@ Pour mettre à jour les propriétés dans l’exemple de formulaire adaptatif, c
 >
 >Le libellé AF Numeric Field n’a pas été modifié, car vous avez remplacé cette propriété dans la boîte de dialogue des propriétés du composant, comme décrit dans la section [Ajout de contenu aux formulaires adaptatifs](synchronizing-adaptive-forms-xfa.md#p-add-content-to-adaptive-form-br-p).
 
-### Ajout de nouveaux champs du fichier XDP au formulaire adaptatif {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
+### Ajout de nouveaux champs du fichier XDP au formulaire adaptatif   {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
 
 Les champs qui sont ultérieurement ajoutés au fichier XDP d’origine apparaissent dans l’onglet Hiérarchie du formulaire. Vous pouvez les faire glisser jusqu’au formulaire adaptatif.
 
