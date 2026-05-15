@@ -51,7 +51,7 @@ Une fois les conditions préalables remplies, il vous suffit de demander à l’
 
 Vous pouvez enregistrer le PDF directement pour le fournir à vos équipes ou le charger dans le cadre du reste du contenu de la DA.
 
-![ Guide de l’administrateur ](assets/admin-guide.png)
+![&#x200B; Guide de l’administrateur &#x200B;](assets/admin-guide.png)
 
 >[!NOTE]
 >

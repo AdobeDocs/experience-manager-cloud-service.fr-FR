@@ -32,7 +32,7 @@ Suivez les étapes ci-dessous pour générer un jeton d’accès à partir de la
 
 ### &#x200B;1. Configuration du projet Adobe Developer Console
 
-1. Accéder à [](https://developer.adobe.com/console)
+1. Accéder à [&#128279;](https://developer.adobe.com/console)
 2. Connexion avec votre Adobe ID
 
 3. Créer un projet ou accéder à votre projet existant
@@ -173,7 +173,7 @@ Générez manuellement les jetons d’accès dans Adobe Developer Console :
    1. Cliquez sur le bouton **Générer un jeton d’accès »** dans la section API de votre projet
    2. Copier le jeton d’accès généré
 
-   ![ Générer un jeton d’accès ](/help/forms/assets/adc-access-token.png)
+   ![&#x200B; Générer un jeton d’accès &#x200B;](/help/forms/assets/adc-access-token.png)
 
    >[!NOTE]
    >
