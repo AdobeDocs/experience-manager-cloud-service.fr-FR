@@ -46,7 +46,7 @@ Maintenant, configurez l’action Envoyer d’un composant Conteneur de formulai
 
 1. Accédez à la page Sites.
 1. Sélectionnez ![settings_icon](assets/settings_icon.png) d’un conteneur de formulaires adaptatifs. Le **[!UICONTROL conteneur de formulaires adaptatifs]** s’ouvre.
-1. Ouvrez l’onglet **[!UICONTROL Envoi]** et indiquez l’**[!UICONTROL Action Envoyer]** pour [Appeler un wokflow AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#invoke-an-aem-workflow?lang=fr).
+1. Ouvrez l’onglet **[!UICONTROL Envoi]** et indiquez l’**[!UICONTROL Action Envoyer]** pour [Appeler un wokflow AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=fr#invoke-an-aem-workflow?lang=fr).
 
 1. Pour enregistrer les paramètres, cliquez sur [Terminé].
 
