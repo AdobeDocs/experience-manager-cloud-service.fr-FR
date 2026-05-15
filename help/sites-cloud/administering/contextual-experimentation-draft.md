@@ -3,10 +3,9 @@ title: Expérimentation contextuelle dans AEM as a Cloud Service
 description: Découvrez comment utiliser le rail d’expérimentation pour ajouter des fonctionnalités d’expérimentation à votre site.
 feature: Administering
 role: Admin
-exl-id: 420f8d5e-27f9-4081-b174-b2d7752779f7
-source-git-commit: 4764d9b3343ca88e0de7506d955741e8cac2f2e1
+source-git-commit: c948abf5391e61f01912f769b17e1ac0bd81a745
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1949'
 ht-degree: 2%
 
 ---
@@ -55,7 +54,7 @@ Avant de configurer des expériences, gardez à l’esprit que vous devrez utili
 1. Cliquez sur l’icône A/B pour ouvrir l’extension d’expérimentation.
 
 >[!NOTE]
->Si vous rencontrez des problèmes pour configurer l’expérimentation de votre projet, contactez [](mailto:aem-contextual-experimentation@adobe.com).
+>Si vous rencontrez des problèmes lors de la configuration de l’expérimentation pour votre projet, contactez `aem-contextual-experimentation@adobe.com`.
 
 >[!NOTE]
 >Pour plus d’informations sur la configuration du moteur d’expérimentation, reportez-vous à la section de documentation du [référentiel](https://github.com/adobe/aem-experimentation/tree/v2-ui) suivant.
