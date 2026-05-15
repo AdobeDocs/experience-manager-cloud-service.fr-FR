@@ -4,10 +4,10 @@ description: Découvrez comment utiliser le réseau CDN géré par AEM et commen
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 355c0c9db126f17954e7f26953132b44b56bf653
+source-git-commit: 5f81fd54e28ce2636960ad66d1ae9317b9653e61
 workflow-type: tm+mt
-source-wordcount: '1786'
-ht-degree: 34%
+source-wordcount: '1907'
+ht-degree: 32%
 
 ---
 
@@ -23,7 +23,7 @@ AEM as a Cloud Service est fourni avec un réseau CDN intégré, conçu pour ré
 
 Le réseau CDN géré par AEM répond aux besoins de la plupart des clients en matière de performances et de sécurité. Pour le niveau de publication, les clients et clientes peuvent choisir d’acheminer le trafic via leur propre réseau CDN, qu’ils ou elles doivent gérer. Cette option est disponible au cas par cas, en particulier lorsque les clients disposent d’intégrations héritées existantes avec un fournisseur de réseau CDN, difficiles à remplacer.
 
-Les clients et clientes qui souhaitent effectuer une publication au niveau Edge Delivery Services peuvent tirer parti du réseau CDN géré par Adobe. Voir [Réseau CDN géré par &#x200B;](#aem-managed-cdn). <!-- CQDOC-21758, 5b -->
+Les clients et clientes qui souhaitent effectuer une publication au niveau Edge Delivery Services peuvent tirer parti du réseau CDN géré par Adobe. Voir [Réseau CDN géré par ](#aem-managed-cdn). <!-- CQDOC-21758, 5b -->
 
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
@@ -97,7 +97,7 @@ Instructions de configuration :
 1. Définissez l’en-tête `X-Forwarded-Host` avec le nom de domaine afin qu’AEM puisse déterminer l’en-tête hôte. Par exemple : `X-Forwarded-Host:example.com`.
 1. Définir `X-AEM-Edge-Key`. La valeur doit d’abord être configurée à l’aide d’un pipeline de configuration Cloud Manager, puis la même clé Edge doit être configurée dans le réseau CDN client, comme décrit dans [cet article](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
-   * Ce paramétrage est nécessaire afin que le réseau CDN d’Adobe puisse valider la source des requêtes et transmettre les en-têtes `X-Forwarded-*` à l’application AEM. Par exemple,`X-Forwarded-For` est utilisé pour déterminer l’adresse IP du client. Il incombe donc à l’appelant approuvé (c’est-à-dire au réseau CDN géré par le client ou la cliente) de s’assurer que les en-têtes `X-Forwarded-*` sont corrects (voir la note ci-dessous).
+   * Ce paramétrage est nécessaire afin que le réseau CDN d’Adobe puisse valider la source des requêtes et transmettre les en-têtes `X-Forwarded-*` à l’application AEM. Par exemple,`X-Forwarded-For` est utilisé pour déterminer l’adresse IP du client. Il incombe donc à l’appelant approuvé (c’est-à-dire au réseau CDN géré par le client ou la cliente) de s’assurer que les en-têtes `X-Forwarded-*` sont corrects (voir la note ci-dessous). Consultez également la section [Comment tester les en-têtes transférés avec `x-aem-debug`](#test-forwarded-headers).
    * L’accès à l’entrée du réseau CDN d’Adobe peut être aussi bloqué lorsqu’une balise `X-AEM-Edge-Key` n’est pas présente. Informez Adobe si vous avez besoin d’un accès direct à l’entrée du CDN d’Adobe (à bloquer).
 
 Voir [Exemples de configurations de fournisseur de réseau CDN](#sample-configurations) pour consulter des exemples de configuration provenant de principaux fournisseurs de réseau CDN.
@@ -117,6 +117,7 @@ Sous Windows :
 ```
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>"
 ```
+
 
 >[!NOTE]
 >
@@ -138,13 +139,6 @@ Cette configuration de réseau CDN client est prise en charge pour le niveau de 
 
 Pour déboguer une configuration BYOCDN, utilisez l’en-tête `x-aem-debug` avec une valeur de `edge=true`. Par exemple :
 
-Sous Linux :
-
-```
-curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" -H "x-aem-debug: edge=true"
-```
-
-Sous Windows :
 
 ```
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" --header "x-aem-debug: edge=true"
@@ -153,17 +147,37 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Fo
 Ce processus reflète certaines propriétés utilisées dans la requête dans l’en-tête de réponse `x-aem-debug`. Par exemple :
 
 ```
-x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-Edge-Key=set,host=publish-p87058-e257304-cmstg.adobeaemcloud.com,x-forwarded-host=wknd.site,adobe_unlocked_byocdn=true
+x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,x-aem-edge-Key=set,host=redactedaemdomain,x-forwarded-host=wknd.site
 ```
 
+
+
 Ce processus permet de vérifier des détails tels que les valeurs de l’hôte, la configuration de l’authentification Edge et la valeur de l’en-tête x-forwarded-host. Il identifie également si une clé Edge est définie et quelle clé est utilisée en cas de correspondance.
+
+#### Tester les en-têtes transférés avec x-aem-debug {#test-forwarded-headers}
+
+Pour tester qu’un visiteur ne peut pas contrôler les en-têtes transférés (`X-Forwarded-For`, `X-Forwarded-Host`, `Forwarded`), le réseau CDN géré par AEM efface les valeurs fournies par le visiteur et définit les valeurs approuvées. Appelez votre site avec des valeurs aléatoires et examinez l’en-tête de réponse `x-aem-debug` :
+
+```
+curl https://www.example.com -v --header "X-Forwarded-Host: bad.example.com" --header "x-aem-debug: edge=true"
+```
+
+```
+curl https://www.example.com -v --header "X-Forwarded-For: 1.2.3.4" --header "x-aem-debug: edge=true"
+```
+
+Remplacez `www.example.com` par le domaine de votre site. L’en-tête de réponse `x-aem-debug` doit refléter l’hôte de votre site et votre adresse IP client ; les valeurs que vous avez envoyées ne doivent pas apparaître. Par exemple :
+
+```
+x-aem-debug: edge=true,x-forwarded-host=www.example.com, x-forwarded-for=....
+```
 
 >[!NOTE]
 >
 >Vous pouvez utiliser un environnement de développement rapide (RDE) pour déployer et tester votre configuration :
 >
 >* [Environnements de développement rapide](/help/implementing/developing/introduction/rapid-development-environments.md)
->* [Utilisation d’un environnement de développement rapide](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+>* [Utilisation d’un environnement de développement rapide](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### Exemples de configurations de fournisseur de réseau CDN {#sample-configurations}
 
@@ -176,7 +190,7 @@ Vous trouverez ci-dessous plusieurs exemples de configuration de plusieurs grand
 
 #### Amazon CloudFront {#byocdn-cloudfront}
 
-![CloudFront1](assets/cloudfront1.png "Amazon CloudFront")
+![CloudFront1](assets/cloudfront1.png "Amazon CloudFront")
 ![CloudFront2](assets/cloudfront2.png "Amazon CloudFront")
 
 #### Cloudflare {#byocdn-cloudflare}
