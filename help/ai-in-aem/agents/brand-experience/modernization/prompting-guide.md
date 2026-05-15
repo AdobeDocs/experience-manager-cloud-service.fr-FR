@@ -4,9 +4,9 @@ description: Ce guide fournit des conseils pour une invite efficace de l’agent
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 4771606b-a327-48b3-b142-44e03e4dc41d
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 65a35ce2a47187f7939991a45b67692312331774
 workflow-type: tm+mt
-source-wordcount: '2696'
+source-wordcount: '3121'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Utilisez cette invite lors de la migration de contenu d’un site web existant v
 * L’en-tête, la navigation et le pied de page sont exclus de la migration. Ils sont gérés par des compétences dédiées.
 * Chaque migration crée une infrastructure d’importation (modèles de page, analyseurs de blocs, transformateurs) pour les futures importations en bloc.
 
-### Importation en bloc {#bulk-import}
+### Import en masse {#bulk-import}
 
 Utilisez cette invite pour importer de nombreuses pages du même modèle après avoir terminé une [migration initiale d’une seule page](#migrate-a-site).
 
@@ -104,12 +104,12 @@ Utilisez cette invite pour importer de nombreuses pages du même modèle après 
 
 Le workflow recommandé est itératif : validez d’abord un petit ensemble, puis augmentez-le.
 
-1. **Commencez par effectuer une migration sur une seule page.** - Migrez une page représentative pour le modèle que vous prévoyez d’importer en bloc.
+1. **Commencez par effectuer une migration sur une seule page.** - Migrez une page représentative pour le modèle que vous prévoyez d&#39;importer en bloc.
    * Cela crée l’infrastructure d’importation requise.
 1. **Exécutez l’importation en bloc sur un petit ensemble de pages.** - Demandez à l’agent d’exécuter l’import en bloc et de fournir une liste courte d’URL qui suivent le même modèle.
 1. **Examinez et affinez les résultats.** - Inspectez les pages importées.
    * Si quelque chose semble incorrect, demandez à l’agent d’ajuster les analyseurs, les transformateurs ou la logique d’importation.
-1. **Agrandir.** - Lorsque les résultats semblent corrects, fournissez la liste complète des URL.
+1. **Mise à l’échelle.** - Lorsque les résultats semblent corrects, fournissez la liste complète des URL.
    * L’agent réutilisera la même logique d’importation et exécutera l’importation en bloc à grande échelle.
 
 ### Grattage de pages web {#scraping-webpages}
@@ -166,7 +166,7 @@ Utilisez cette invite pour extraire et appliquer une conception visuelle d’un 
    1. La phase 2 migre les styles de blocs individuels et crée un CSS spécifique au bloc dans `/blocks/{name}/{name}.css`.
 * Le style de bloc (phase 2) nécessite que la conception à l’échelle du site (phase 1) soit terminée en premier.
    * Le système de conception global fournit des propriétés personnalisées CSS qui bloquent la référence.
-* Temps estimé :
+* Temps estimé :
    * Phase 1 : 5-10 minutes
    * Phase 2 : 10 à 15 minutes
 * Les requêtes ambiguës effectuent par défaut la migration complète (les deux phases).
@@ -219,7 +219,7 @@ Utilisez cette invite pour valider des pages entières migrées pour une fidéli
    1. Migrer une page.
    1. Appliquez une conception.
    1. Exécuter une critique de bloc sur les blocs de clés
-   1. Exécutez la critique de page pour une validation complète.
+   1. Exécutez une critique de page pour une validation complète.
 
 ### Migration en blocs Figma {#figma-block-migration}
 
@@ -245,14 +245,68 @@ Pour utiliser cette invite, vous devez configurer les détails de vos données F
    1. **Mappage à des blocs existants** — L&#39;agent identifie le bloc correspondant le plus proche dans la bibliothèque de blocs de votre projet et crée une variante personnalisée.
    1. **Génération CSS** — L’agent écrit des styles qui font référence aux propriétés personnalisées CSS extraites, assurant ainsi la cohérence de la conception.
    1. **Téléchargement des ressources** — L&#39;agent enregistre les images et les icônes de Figma dans l&#39;espace de travail de l&#39;environnement hébergé.
-   1. **Génération de contenu Edge Delivery Services** — L&#39;agent crée le fichier Markdown en suivant la structure du bloc EDS
+   1. **Génération de contenu Edge Delivery Services** — L&#39;agent crée le fichier markdown en suivant la structure du bloc Edge Delivery Services
    1. **Validation de la sortie** — L&#39;agent prévisualise le résultat et effectue une comparaison visuelle avec la conception Figma d&#39;origine.
 * La compétence lit d’abord les métadonnées (étape 1) pour comprendre la structure, puis extrait le contexte de conception détaillé (étapes 2 à 5).
    * Cette approche progressive permet d’éviter les problèmes liés aux fichiers Figma volumineux ou complexes.
 * Cette compétence adopte une approche qui privilégie les styles.
    * Tous les styles sont extraits en tant que propriétés personnalisées CSS (jetons de conception) avant l’écriture d’un CSS.
    * Cela garantit que le bloc migré reste cohérent avec votre système de conception.
-* L’invite nécessite l’URL Figma (avec les `fileKey` `node-id` et facultatifs) ou une clé de fichier Figma directement en entrée.
+* L’invite nécessite l’URL Figma (avec les `node-id` `fileKey` et facultatifs) ou une clé de fichier Figma directement en entrée.
+
+### Reconception De La Migration À L’Aide De Blocs Dérivés De Figma {#figma-redesign-migration}
+
+Utilisez cette invite lorsqu’un site web existant est en cours de migration vers une expérience repensée.
+
+Dans ce workflow, vous créez d’abord la collection de blocs cible à partir de Figma. La migration du site s’exécute ensuite sur le site web source actif et mappe le contenu source dans les blocs créés à partir de Figma.
+
+* **Figma** est la source de conception et de bibliothèque de blocs cible.
+* **Le site web en ligne** reste la source du contenu.
+
+#### Exemples d’invites {#example-figma-redesign}
+
+1. Créez la collection block à partir de Figma :
+
+   * « Création de la collection de blocs Edge Delivery Services à partir de ces composants Figma : `https://figma.com/design/{fileKey}?node-id={nodeId}` »
+
+1. Migrez le contenu source dans ces blocs :
+
+   * « Migrez ces pages et mappez le contenu à la collection de blocs dérivée de Figma : URL1, URL2, URL3 »
+
+#### Ce qu’il faut savoir {#wtk-figma-redesign}
+
+* Figma est d&#39;abord utilisé pour établir l&#39;ensemble de blocs redessinés.
+* La migration du site mappe ensuite le contenu réel du site web dans cet ensemble de blocs.
+* La **validation du contenu** est effectuée sur le site web source.
+* La **validation visuelle** est effectuée par rapport au système de collecte de blocs et de conception dérivé de Figma.
+* Les nouvelles variantes de bloc ne doivent être créées que lorsque les blocs dérivés de Figma existants ne peuvent pas représenter le contenu source.
+
+#### Processus recommandé {#figma-redesign-workflow}
+
+1. Identifiez les composants Figma nécessaires pour le site remanié.
+1. Migrez ces composants dans des blocs ou des variantes Edge Delivery Services.
+1. Examinez la collection de blocs et les jetons de conception générés.
+1. Exécutez la migration du site sur des pages source représentatives.
+1. Mappez le contenu source dans les blocs dérivés de Figma.
+1. Validez le contenu par rapport au site web source.
+1. Validez la sortie visuelle par rapport à la conception graphique cible.
+1. Affinez les blocs ou les mappages, puis mettez à l’échelle vers d’autres pages.
+
+### Créer une page à partir de Figma {#figma-new-page-from-figma}
+
+Utilisez cette invite lorsque la page n’existe pas déjà sur un site web source et qu’une page ou un cadre Figma doit piloter la création d’une page Edge Delivery Services.
+
+#### Exemples d’invites {#example-figma-new-page}
+
+* « Migrer cette page Figma vers Edge Delivery Services : `https://figma.com/design/{fileKey}?node-id={nodeId}` »
+
+#### Ce qu’il faut savoir {#wtk-figma-new-page}
+
+* Cette invite fonctionne mieux avec un **cadre ou une page Figma spécifique**, et non avec un fichier entier.
+* Le cadre doit être organisé en **sections de page claires**.
+* Les sections sont mappées à des blocs existants, au contenu par défaut ou à de nouvelles variantes.
+* Le texte et les ressources proviennent de Figma.
+* Les fonctionnalités dynamiques telles que les moteurs de recherche, les calculatrices, la personnalisation ou les localisateurs de magasin peuvent nécessiter **développement de blocs distincts** au-delà de ce que produit la migration de Figma.
 
 ### Configuration de la navigation {#navigation-setup}
 
@@ -413,3 +467,9 @@ Utilisez cette invite pour résoudre les problèmes liés aux blocs, aux images,
    1. Code du bloc
    1. Console du navigateur
 * L’agent a la possibilité de vérifier les aperçus locaux à l’`http://localhost:3000`.
+
+<!--
+## Additional Sections {#additional-sections}
+
+@gwalt, is the additional content in the prompting guide wiki ready to be added here?
+-->
