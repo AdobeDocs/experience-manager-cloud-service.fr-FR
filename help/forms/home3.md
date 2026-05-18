@@ -57,7 +57,7 @@ Créez des formulaires en utilisant l’approche de création qui correspond le 
 
 ### Forms des composants principaux {#core-components}
 
-| Forms des composants principaux **** |
+| Forms des composants principaux **&#x200B;**&#x200B;|
 |---|
 | Création de formulaires modernes et réactifs avec les dernières normes web. Créez des formulaires adaptatifs qui fonctionnent automatiquement sur plusieurs appareils et produisent des formulaires découplés pour une diffusion pilotée par API. |
 | **Fonctions :** Créateur de formulaires visuel par glisser-déposer avec des composants modernes, un responsive design automatique et des fonctionnalités d’accessibilité intégrées. |
@@ -67,7 +67,7 @@ Créez des formulaires en utilisant l’approche de création qui correspond le 
 
 ### Forms des composants de base {#foundation-components}
 
-| Forms des composants de base **** |
+| Forms des composants de base **&#x200B;**&#x200B;|
 |---|
 | Approche de création de formulaires établie pour les projets existants et les intégrations héritées. Composants éprouvés avec de nombreuses options de personnalisation. |
 | **Fonctionnement :** création traditionnelle de formulaires adaptatifs avec une bibliothèque de composants complète et des fonctionnalités de personnalisation étendues. |
@@ -339,7 +339,7 @@ Choisissez votre point de départ en fonction de vos besoins immédiats et de vo
 
 ### Démarrage rapide de la gestion {#management-start}
 
-**Pour la découverte de formulaires :** Commencer par le portail Forms [](/help/forms/configure-forms-portal.md)
+**Pour la découverte de formulaires :** Commencer par le portail Forms [&#128279;](/help/forms/configure-forms-portal.md)
 
 **Pour le contrôle d’accès :** commencez par [User Management](/help/forms/forms-groups-privileges-tasks.md)
 
