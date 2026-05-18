@@ -260,7 +260,7 @@ Ajoute automatiquement la validation appropriée :
 Pour les problèmes de conversion :
 
 - Consultez la [FAQ sur Forms Experience Builder](forms-experience-builder-frequently-asked-questions.md)
-- Consultez le [ Guide de prise en main ](forms-experience-builder-getting-started.md)
+- Consultez le [&#x200B; Guide de prise en main &#x200B;](forms-experience-builder-getting-started.md)
 - Contactez votre administrateur système pour obtenir une assistance technique
 
 ## Articles connexes

@@ -23,11 +23,11 @@ L’utilitaire de conversion Forms, qui fait partie de la suite [Outil de modern
 
 ## En quoi consistent les outils de modernisation d’AEM ?
 
-[Outils de modernisation ](https://opensource.adobe.com/aem-modernize-tools/) fait référence à un ensemble d&#39;utilitaires ou d&#39;applications logicielles conçus pour faciliter le processus de modernisation ou de mise à jour des projets Adobe Experience Manager (AEM). Ces outils aident généralement à convertir les anciens composants ou fonctionnalités d’AEM en alternatives plus récentes, plus efficaces et prises en charge. L’utilitaire de conversion Forms est installé sous les Outils de modernisation AEM pour convertir les formulaires Forms adaptatifs basés sur les composants de base en formulaires basés sur les composants principaux.
+[Outils de modernisation &#x200B;](https://opensource.adobe.com/aem-modernize-tools/) fait référence à un ensemble d&#39;utilitaires ou d&#39;applications logicielles conçus pour faciliter le processus de modernisation ou de mise à jour des projets Adobe Experience Manager (AEM). Ces outils aident généralement à convertir les anciens composants ou fonctionnalités d’AEM en alternatives plus récentes, plus efficaces et prises en charge. L’utilitaire de conversion Forms est installé sous les Outils de modernisation AEM pour convertir les formulaires Forms adaptatifs basés sur les composants de base en formulaires basés sur les composants principaux.
 
 L’utilitaire de conversion Forms convertit les Forms adaptatifs basés sur d’anciens composants de base en formulaires plus récents basés sur les composants principaux. Ce processus de conversion garantit que les formulaires s’alignent sur les normes et fonctionnalités modernes, ce qui peut améliorer les performances, la compatibilité et la facilité de maintenance dans l’environnement AEM.
 
-![Outils de modernisation ](/help/forms/assets/aem-modernize-tools.png)
+![Outils de modernisation &#x200B;](/help/forms/assets/aem-modernize-tools.png)
 
 >[!NOTE]
 > 
@@ -121,11 +121,11 @@ Pour activer et utiliser les outils de modernisation AEM pour votre environnemen
 
 1. Sélectionnez l’option **[!UICONTROL Conversion]**.
 
-   ![Sélectionnez l’option Conversion Forms ](/help/forms/assets/aem-modernize-forms-conversion.png)
+   ![Sélectionnez l’option Conversion Forms &#x200B;](/help/forms/assets/aem-modernize-forms-conversion.png)
 
 1. Cliquez sur **Créer** pour créer une tâche.
 
-   ![Création d’une tâche à l’aide des outils de modernisation ](/help/forms/assets/aem-modernize-tools-create-job.png)
+   ![Création d’une tâche à l’aide des outils de modernisation &#x200B;](/help/forms/assets/aem-modernize-tools-create-job.png)
 
 1. Spécifiez le **[!UICONTROL Nom de la tâche]**.
 1. Dans l’onglet **[!UICONTROL Formulaire]**, vous pouvez sélectionner l’une des options suivantes :
@@ -156,7 +156,7 @@ Pour activer et utiliser les outils de modernisation AEM pour votre environnemen
 
 1. Sélectionnez le formulaire adaptatif, puis sélectionnez > **[!UICONTROL Propriétés]**. La page Propriétés du formulaire s’ouvre.
 
-   ![Dossier de destination des outils de modernisation ](/help/forms/assets/aem-modernize-tools-destination-folder.png)
+   ![Dossier de destination des outils de modernisation &#x200B;](/help/forms/assets/aem-modernize-tools-destination-folder.png)
 
 1. Sélectionnez **[!UICONTROL Enregistrer et fermer]** pour enregistrer à nouveau les propriétés du formulaire converti.
    ![Outils De Modernisation D’AEM Propriétés De Formulaire Adaptatif](/help/forms/assets/aem-modernize-tools-af-properties.png)

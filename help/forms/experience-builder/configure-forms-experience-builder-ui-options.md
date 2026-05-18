@@ -100,7 +100,7 @@ Effacer la conversation en cours tout en conservant le thread de conversation :
 Pour une prise en charge supplémentaire de la configuration de l’interface utilisateur :
 
 - Consultez la [FAQ sur Forms Experience Builder](forms-experience-builder-frequently-asked-questions.md)
-- Consultez le [ Guide de prise en main ](forms-experience-builder-getting-started.md)
+- Consultez le [&#x200B; Guide de prise en main &#x200B;](forms-experience-builder-getting-started.md)
 - Contactez votre administrateur système pour obtenir une assistance technique
 
 ## Articles connexes
