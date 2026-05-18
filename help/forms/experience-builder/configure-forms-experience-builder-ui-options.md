@@ -3,11 +3,10 @@ title: Configurer les options de l’interface utilisateur de Forms Experience B
 description: Découvrez comment configurer et personnaliser les options et paramètres de l’interface Forms Experience Builder pour une expérience utilisateur optimale.
 hide: true
 index: false
-hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: d481e705-62bf-47f7-a832-1a005ec5ec59
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 1%
@@ -101,7 +100,7 @@ Effacer la conversation en cours tout en conservant le thread de conversation :
 Pour une prise en charge supplémentaire de la configuration de l’interface utilisateur :
 
 - Consultez la [FAQ sur Forms Experience Builder](forms-experience-builder-frequently-asked-questions.md)
-- Consultez le [&#x200B; Guide de prise en main &#x200B;](forms-experience-builder-getting-started.md)
+- Consultez le [ Guide de prise en main ](forms-experience-builder-getting-started.md)
 - Contactez votre administrateur système pour obtenir une assistance technique
 
 ## Articles connexes

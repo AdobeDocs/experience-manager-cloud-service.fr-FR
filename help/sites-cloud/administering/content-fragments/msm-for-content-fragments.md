@@ -6,10 +6,9 @@ feature: Content Fragments
 role: User
 solution: Experience Manager Sites
 hide: true
-hidefromtoc: true
 index: false
 exl-id: 5039cf92-21ff-4d6c-a684-72eab13b519d
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 5%
@@ -31,7 +30,7 @@ Multi Site Manager (MSM) et la fonctionnalité Live Copy vous permettent d’uti
 >
 >MSM à partir de la console Fragments de contenu est actuellement une fonctionnalité de Beta disponible uniquement pour des clients spécifiques.
 >
->MSM pour les fragments de contenu est également disponible lors de l’utilisation de fragments de contenu via la console **&#x200B;**.
+>MSM pour les fragments de contenu est également disponible lors de l’utilisation de fragments de contenu via la console ****.
 
 * Avec les Live Copies MSM, vous pouvez :
    * Créer du contenu une fois
@@ -74,7 +73,7 @@ MSM pour les fragments de contenu, associé à des fonctionnalités dans l’éd
 >
 >Cette page traite de la fonctionnalité MSM lors de l’utilisation de la console **Fragments de contenu**.
 >
->MSM pour les fragments de contenu est également disponible lors de l’utilisation de fragments de contenu via la console **&#x200B;**.
+>MSM pour les fragments de contenu est également disponible lors de l’utilisation de fragments de contenu via la console ****.
 
 <!--
 >[!NOTE]

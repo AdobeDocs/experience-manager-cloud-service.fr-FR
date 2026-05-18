@@ -3,11 +3,10 @@ title: Import et conversion intelligents
 description: Découvrez comment transformer des documents, PDF et images existants en formulaires numériques interactifs à l’aide des fonctionnalités intelligentes d’importation et de conversion de Forms Experience Builder.
 hide: true
 index: false
-hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 7268c4be-1e4a-4d31-aa76-9076d7ee83ce
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '846'
 ht-degree: 0%
@@ -261,7 +260,7 @@ Ajoute automatiquement la validation appropriée :
 Pour les problèmes de conversion :
 
 - Consultez la [FAQ sur Forms Experience Builder](forms-experience-builder-frequently-asked-questions.md)
-- Consultez le [&#x200B; Guide de prise en main &#x200B;](forms-experience-builder-getting-started.md)
+- Consultez le [ Guide de prise en main ](forms-experience-builder-getting-started.md)
 - Contactez votre administrateur système pour obtenir une assistance technique
 
 ## Articles connexes

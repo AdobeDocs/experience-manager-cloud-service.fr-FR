@@ -7,9 +7,8 @@ topic-tags: publish, document_services
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: f0fec4a9-b214-4931-bf09-5898b082481e
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '2589'
 ht-degree: 88%
@@ -32,7 +31,7 @@ Avec le processus basé sur l’utilisation de Forms on OSGi, vous pouvez rapide
 
 Une fois configurés, ces workflows peuvent être déclenchés manuellement pour terminer un processus ou exécutés par programmation lorsque les utilisateurs envoient un formulaire. <!-- or [correspondence management](cm-overview.md) letter With this enhanced AEM Workflow capabilities, [!DNL AEM Forms] offers two distinct, yet similar, capabilities. As part of your deployment strategy, you need to decide which one works for you. See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE. Moreover, for the deployment topology see, [Architecture and deployment topologies for [!DNL AEM Forms]]((aem-forms-architecture-deployment.md). -->
 
-Le processus basé sur l’utilisation de Forms sur OSGi étend la [boîte de réception AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=fr#authoring) et fournit des composants supplémentaires (étapes) pour que l’éditeur AEM Workflow ajoute la prise en charge des workflows basés sur l’utilisation d’[!DNL AEM Forms]. <!-- The extended AEM Inbox has functionalities similar to [[!DNL AEM Forms] Workspace](introduction-html-workspace.md). Along with managing human-centric workflows (Approval, Review, and so on), you can use AEM workflows to automate [document services](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=fr#extending-aem)-related operations (for example, Generate PDF) and electronically signing (Adobe Sign) documents. -->
+Le processus basé sur l’utilisation de Forms sur OSGi étend la [boîte de réception AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=fr#authoring) et fournit des composants supplémentaires (étapes) pour que l’éditeur AEM Workflow ajoute la prise en charge des workflows basés sur l’utilisation d’[!DNL AEM Forms]. <!-- The extended AEM Inbox has functionalities similar to [[!DNL AEM Forms] Workspace](introduction-html-workspace.md). Along with managing human-centric workflows (Approval, Review, and so on), you can use AEM workflows to automate [document services](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)-related operations (for example, Generate PDF) and electronically signing (Adobe Sign) documents. -->
 
 Toutes les étapes des workflows [!DNL AEM Forms] prennent en charge l’utilisation de variables. Les variables permettent aux étapes de processus de contenir et de transmettre des métadonnées entre les étapes au moment de l’exécution. Vous pouvez créer différents types de variables pour stocker différents types de données. Vous pouvez également créer des collections de variables pour stocker plusieurs instances de données associées et du même type. En règle générale, vous utilisez une variable ou une collection de variables lorsque vous devez prendre une décision en fonction de la valeur qu’elle contient ou pour stocker des informations dont vous aurez besoin ultérieurement dans un processus. Pour plus d’informations sur l’utilisation de variables dans ces composants (étapes) de processus basés sur Forms, voir [Processus basé sur l’utilisation de Forms sur OSGi - Guide de référence des étapes](aem-forms-workflow-step-reference.md). Pour plus d’informations sur la création et la gestion des variables, voir [Variables dans les processus AEM](variable-in-aem-workflows.md).
 
@@ -139,7 +138,7 @@ Cet exemple crée un modèle de workflow pour une demande de prêt immobilier à
 
    ![Exemple de division OU](assets/orsplit_branch2_active_new.png)
 
-   Pour plus d’informations sur la création d’expressions de routage à l’aide de variables, consultez [Variables dans les processus [!DNL AEM Forms] &#x200B;](variable-in-aem-workflows.md).
+   Pour plus d’informations sur la création d’expressions de routage à l’aide de variables, consultez [Variables dans les processus [!DNL AEM Forms] ](variable-in-aem-workflows.md).
 
 1. Ajoutez d’autres étapes de processus pour créer une logique d’entreprise.
 
@@ -216,7 +215,7 @@ La demande est le formulaire adaptatif associé au processus. Lorsqu’une deman
 Vous pouvez lancer ou de déclencher un processus basé sur l’utilisation de Forms en :
 
 * [Envoyer une demande depuis la boîte de réception AEM](#inbox)
-* [Envoi d’une demande depuis l’application [!DNL AEM Forms] &#x200B;](#afa)
+* [Envoi d’une demande depuis l’application [!DNL AEM Forms] ](#afa)
 
 * [Envoi d’un formulaire adaptatif](#af)
 * [Utilisant le dossier de contrôle](#watched)

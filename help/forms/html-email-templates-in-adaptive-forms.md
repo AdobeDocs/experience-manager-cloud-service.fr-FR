@@ -4,10 +4,9 @@ description: Découvrez comment utiliser des modèles d’e-mail avec des formul
 feature: Adaptive Forms, Core Components
 role: User, Developer
 hide: true
-hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 640130c0-e5d2-4af1-8ed9-c3bdde31d958
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 13%
@@ -30,7 +29,7 @@ Cet article vous aide à configurer et à utiliser des modèles d’e-mail dans 
 Voici un aperçu rapide des étapes impliquées :
 
 1. Ouvrez le formulaire adaptatif pour le modifier.
-1. Configurez l’action d’envoi [&#x200B; Envoyer un e-mail &#x200B;](/help/forms/configure-submit-action-send-email.md).
+1. Configurez l’action d’envoi [ Envoyer un e-mail ](/help/forms/configure-submit-action-send-email.md).
 1. Sélectionnez ou chargez un modèle HTML, ou saisissez manuellement le modèle d’e-mail.
 1. Testez la configuration de votre e-mail.
 
@@ -161,4 +160,4 @@ Voici un exemple de modèle d’e-mail en texte brut :
 * Utilisez des outils tels que Litmus ou Email on Acid pour prévisualiser votre e-mail sur différents clients de messagerie.
 * Assurez-vous que les noms des espaces réservés correspondent exactement aux noms des champs du formulaire.
 * Recherchez les balises manquantes ou incorrectes dans votre modèle HTML.
-* Vérifiez que l’action d’envoi [&#x200B; Envoyer un e-mail &#x200B;](/help/forms/configure-submit-action-send-email.md) est correctement configurée.
+* Vérifiez que l’action d’envoi [ Envoyer un e-mail ](/help/forms/configure-submit-action-send-email.md) est correctement configurée.

@@ -3,10 +3,9 @@ title: Comment envoyer un formulaire adaptatif pour révision ? Comment gérer l
 description: La révision est un mécanisme qui permet aux réviseurs d’effectuer différentes tâches pour les formulaires adaptatifs à l’aide de l’étape Affecter une tâche.
 feature: Adaptive Forms
 hide: true
-hidefromtoc: true
 role: User
 exl-id: e53535a8-cd6b-4f30-9523-773243098757
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 87%
@@ -46,7 +45,7 @@ Maintenant, configurez l’action Envoyer d’un composant Conteneur de formulai
 
 1. Accédez à la page Sites.
 1. Sélectionnez ![settings_icon](assets/settings_icon.png) d’un conteneur de formulaires adaptatifs. Le **[!UICONTROL conteneur de formulaires adaptatifs]** s’ouvre.
-1. Ouvrez l’onglet **[!UICONTROL Envoi]** et indiquez l’**[!UICONTROL Action Envoyer]** pour [Appeler un wokflow AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=fr#invoke-an-aem-workflow?lang=fr).
+1. Ouvrez l’onglet **[!UICONTROL Envoi]** et indiquez l’**[!UICONTROL Action Envoyer]** pour [Appeler un wokflow AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#invoke-an-aem-workflow?lang=fr).
 
 1. Pour enregistrer les paramètres, cliquez sur [Terminé].
 

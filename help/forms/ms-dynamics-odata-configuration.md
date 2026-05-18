@@ -7,8 +7,7 @@ level: Beginner
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 hide: true
-hidefromtoc: true
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 71%
@@ -19,7 +18,7 @@ ht-degree: 71%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html) |
 | AEM as a Cloud Service | Cet article |
 
 ![data-integeration](assets/data-integeration.png)
@@ -39,7 +38,7 @@ When the package is installed, the following entities and services are available
 -->
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
-&#x200B;<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  Le Cloud Service OData de MS Dynamics (service OData) est disponible avec tous les modes d’exécution. Pour plus d’informations sur la configuration des modes d’exécution pour une instance [!DNL Experience Manager], voir [Modes d’exécution](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr#runmodes).
+<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  Le Cloud Service OData de MS Dynamics (service OData) est disponible avec tous les modes d’exécution. Pour plus d’informations sur la configuration des modes d’exécution pour une instance [!DNL Experience Manager], voir [Modes d’exécution](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr#runmodes).
 
 AEM as a Cloud Service propose différentes actions d’envoi prêtes à l’emploi pour gérer les envois de formulaires. Pour en savoir plus sur ces options, consultez l’article [Action d’envoi de formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md).
 

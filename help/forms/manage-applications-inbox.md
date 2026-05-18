@@ -8,10 +8,9 @@ discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 feature: Adaptive Forms
 role: User
 hide: true
-hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 92130660-9942-426f-ae2f-4f3300f9735c
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '1303'
 ht-degree: 73%
@@ -114,7 +113,7 @@ En outre, l’onglet affiche l’historique de la tâche pour chaque étape term
 
 #### Barre d’outils Actions {#actions-toolbar}
 
-La barre d’outils Actions affiche toutes les options disponibles pour la tâche. Les actions Enregistrer, Réinitialiser et Déléguer sont des actions par défaut, mais d’autres actions disponibles sont configurées à l’étape [&#x200B; Affecter une tâche &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=fr#extending-aem). Dans l’exemple ci-dessus, les options Approuver et Rejeter sont configurées dans le workflow.
+La barre d’outils Actions affiche toutes les options disponibles pour la tâche. Les actions Enregistrer, Réinitialiser et Déléguer sont des actions par défaut, mais d’autres actions disponibles sont configurées à l’étape [ Affecter une tâche ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=fr#extending-aem). Dans l’exemple ci-dessus, les options Approuver et Rejeter sont configurées dans le workflow.
 
 Lorsque vous agissez sur la tâche, elle se poursuit dans le workflow.
 

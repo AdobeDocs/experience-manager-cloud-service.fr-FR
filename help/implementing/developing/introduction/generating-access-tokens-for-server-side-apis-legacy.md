@@ -1,11 +1,10 @@
 ---
 title: Générer des jetons d’accès pour les API côté serveur (hérité)
 description: Découvrez comment faciliter la communication entre un serveur tiers et AEM as a Cloud Service en générant un jeton JWT sécurisé
-hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
 feature: Developing
 role: Admin, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '1413'
 ht-degree: 94%
@@ -22,7 +21,7 @@ Le flux de serveur à serveur est décrit ci-dessous, ainsi qu’un flux simplif
  ERROR: Not Found (HTTP error 404)
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=fr#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html).
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html).
 -->
 
 ## Flux de serveur à serveur {#the-server-to-server-flow}
@@ -79,7 +78,7 @@ L’application non AEM qui appelle AEM doit pouvoir accéder aux informations d
 
 Utilisez les informations d’identification pour créer un jeton JWT lors d’un appel au service IMS d’Adobe afin de récupérer un jeton d’accès valide pendant 24 heures.
 
-Les informations d’identification de service AEM CS peuvent être échangées contre un jeton d’accès à l’aide d’exemples de code conçus à cet effet. L’exemple de code est disponible à partir du référentiel GitHub public d’Adobe [&#128279;](https://github.com/adobe/aemcs-api-client-lib), qui contient des exemples de code que vous pouvez copier et adapter à vos propres projets. Notez que ce référentiel contient un exemple de code à titre de référence et n’est pas conservé en tant que dépendance de bibliothèque prête pour la production.
+Les informations d’identification de service AEM CS peuvent être échangées contre un jeton d’accès à l’aide d’exemples de code conçus à cet effet. L’exemple de code est disponible à partir du référentiel GitHub public d’Adobe [](https://github.com/adobe/aemcs-api-client-lib), qui contient des exemples de code que vous pouvez copier et adapter à vos propres projets. Notez que ce référentiel contient un exemple de code à titre de référence et n’est pas conservé en tant que dépendance de bibliothèque prête pour la production.
 
 ```
 /*jshint node:true */

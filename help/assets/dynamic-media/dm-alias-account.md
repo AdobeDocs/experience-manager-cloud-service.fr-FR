@@ -9,7 +9,7 @@ role: User,Admin
 mini-toc-levels: 4
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 99%
@@ -20,13 +20,12 @@ ht-degree: 99%
 
 <!--
  hide: true
-hidefromtoc: yes 
 -->
 
 <!-- 
 >[!NOTE]
 >
->This feature to create a Dynamic Media company alias account is in the Prerelease Channel for January 2022. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#enable-prerelease) for information on how to enable the feature for your environment. The feature is generally available in the February 2022 release. 
+>This feature to create a Dynamic Media company alias account is in the Prerelease Channel for January 2022. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) for information on how to enable the feature for your environment. The feature is generally available in the February 2022 release. 
 -->
 
 Les URL Dynamic Media et le code intégré de la visionneuse contiennent le nom du compte de votre société. Ce nom de compte a été créé au moment de la mise en service de Dynamic Media. Il peut y avoir des scénarios où votre entreprise a fait l’objet d’une acquisition ou d’un changement de marque ou où vous souhaitez simplement utiliser un nom plus marquant. Dans ce cas de figure, il n’est pas facile de mettre à jour manuellement le nom de votre compte de société dans toutes les URL et dans le code intégré de la visionneuse prêt à l’emploi. En outre, il est possible que vous impactiez votre référentiel Dynamic Media existant ou que vous impactiez le contenu dynamique. Pour résoudre ce problème, vous pouvez configurer un compte d’alias de société Dynamic Media.

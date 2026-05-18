@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '3741'
 ht-degree: 82%
@@ -21,7 +21,6 @@ ht-degree: 82%
 
 <!--
  hide: true
-hidefromtoc: yes
 -->
 
 {{work-with-dynamic-media}}
@@ -61,7 +60,7 @@ Voir aussi [Facultatif - Installer et configurer des paramètres de Dynamic Medi
    * Onglet [Attributs de gestion des couleurs](#color-management-attributes-tab)
 
    ![Page de configuration de la publication Dynamic Media](/help/assets/assets-dm/dm-publish-setup.png)
-   *Page de configuration de la publication Dynamic Media, avec l’onglet **[!UICONTROL Attributs de requête]**&#x200B;sélectionné.*<br><br>
+   *Page de configuration de la publication Dynamic Media, avec l’onglet **[!UICONTROL Attributs de requête]**sélectionné.*<br><br>
 
 1. Lorsque vous avez terminé, près du coin supérieur droit de la page, sélectionnez **[!UICONTROL Enregistrer]**.
 

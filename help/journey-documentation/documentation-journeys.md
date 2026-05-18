@@ -2,10 +2,9 @@
 title: Parcours de documentation AEM
 description: Les parcours de documentation fournissent une structure narrative à la documentation AEM en synthétisant des fonctionnalités complexes et disparates pour que vous puissiez atteindre un objectif commercial en respectant les bonnes pratiques. Conçu pour les débutants dans AEM, les parcours présentent les concepts et les fonctionnalités permettant d’atteindre un objectif, étape par étape.
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
-hidefromtoc: true
 feature: Release Information
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '1370'
 ht-degree: 99%

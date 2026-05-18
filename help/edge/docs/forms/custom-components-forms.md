@@ -3,10 +3,9 @@ title: Créer des composants personnalisés pour un formulaire EDS
 description: Créer des composants personnalisés pour un formulaire EDS
 feature: Edge Delivery Services
 hide: true
-hidefromtoc: true
 role: Admin, Developer
 exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 100%
