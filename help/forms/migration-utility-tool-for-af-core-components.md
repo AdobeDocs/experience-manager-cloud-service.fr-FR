@@ -165,5 +165,5 @@ Vous pouvez maintenant voir que le formulaire adaptatif créé sur les composant
 
 ## Bonnes pratiques {#best-practices}
 
-* Assurez-vous que vos formulaires basés sur les composants de base utilisent uniquement les composants disposant d’un [Composants principaux](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) équivalent. Si vous utilisez des composants de base qui n’ont pas de composant principal équivalent, le composant de base n’est pas converti. Par conséquent, il ne fonctionne pas correctement lors de la création d’un formulaire
+* Assurez-vous que vos formulaires basés sur les composants de base utilisent uniquement les composants disposant d’un [Composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) équivalent. Si vous utilisez des composants de base qui n’ont pas de composant principal équivalent, le composant de base n’est pas converti. Par conséquent, il ne fonctionne pas correctement lors de la création d’un formulaire
 * Assurez-vous que les règles de conversion des composants de base en composants principaux sont au format XML.

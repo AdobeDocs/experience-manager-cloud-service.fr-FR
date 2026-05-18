@@ -22,7 +22,7 @@ L’authentification de serveur à serveur OAuth permet un accès sécurisé par
 
 Avant de commencer, vérifiez que les conditions préalables suivantes sont remplies :
 
-* Assurez-vous d’avoir [accès au Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights) spécifique à l’environnement que vous utilisez.
+* Assurez-vous d’avoir [accès au Adobe Developer Console](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/requirements/access-rights) spécifique à l’environnement que vous utilisez.
 * [Attribuez le rôle d’administrateur système ou de développeur dans le Adobe Admin Console](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions) pour activer l’accès au Adobe Developer Console.
 
 ## Comment générer un jeton d’accès à l’aide de l’authentification de serveur à serveur OAuth ?
