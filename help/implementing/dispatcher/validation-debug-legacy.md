@@ -7,8 +7,8 @@ exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
 role: Admin
 source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '2337'
-ht-degree: 100%
+source-wordcount: '2349'
+ht-degree: 92%
 
 ---
 
@@ -220,7 +220,7 @@ Le script effectue les opérations suivantes :
 
 1. Il exécute le programme de validation. Si la configuration n’est pas valide, le script échoue.
 2. Il exécute la commande `httpd -t` pour tester si la syntaxe est correcte, de sorte qu’Apache httpd puisse démarrer. En cas de réussite, la configuration doit être prête pour le déploiement.
-3. Vérifie que le sous-ensemble des fichiers de configuration du SDK du Dispatcher, qui sont censés être non modifiables (comme décrit dans la [section Structure de fichiers](##legacy-mode-file-structure)) n’a pas été modifié. Cette nouvelle vérification a été introduite avec le SDK AEM version v2021.1.4738 qui inclut également les outils Dispatcher version 2.0.36. Avant cette mise à jour, les clients et clientes auraient pu supposer à tort que toute modification locale du SDK de ces fichiers non modifiables était également appliquée à l’environnement cloud.
+3. Vérifie que le sous-ensemble des fichiers de configuration du SDK du Dispatcher, qui sont censés être non modifiables (comme décrit dans la [section Structure de fichiers](##legacy-mode-file-structure)) n’a pas été modifié. Il s’agit d’un nouveau contrôle qui a été introduit avec AEM SDK version v2021.1.4738 qui inclut également Dispatcher Tools version 2.0.36. Avant cette mise à jour, les clients et clientes pouvaient supposer à tort que toute modification locale de SDK de ces fichiers non modifiables était également appliquée à l’environnement cloud.
 
 Lors d’un déploiement de Cloud Manager, la vérification de la syntaxe `httpd -t` est également exécutée et toute erreur est incluse dans le journal `Build Images step failure` de Cloud Manager.
 
@@ -237,18 +237,18 @@ Les techniques de dépannage présentées ci-dessous permettent de déboguer les
 
 **Impossible de localiser un sous-dossier `conf.dispatcher.d` dans l’archive**
 
-Votre archive doit contenir les dossiers `conf.d` et `conf.dispatcher.d`. Notez que vous ne devez **pas**
-utiliser le préfixe `etc/httpd` dans votre archive.
+Votre archive doit contenir les dossiers `conf.d` et `conf.dispatcher.d`. Notez que vous ne devriez pas ****
+utilisez le préfixe `etc/httpd` dans votre archive.
 
 **Impossible de trouver une ferme dans`conf.dispatcher.d/enabled_farms`**
 
 Vos fermes activées doivent se trouver dans le sous-dossier mentionné.
 
-**Le fichier inclus (...) doit être nommé : ...**.
+**Fichier inclus (...) doit être nommé : ...**
 
-Deux sections de la configuration de votre ferme **doivent** inclure
-un fichier spécifique : `/renders` et `/allowedClients` dans la section `/cache`. Ces
-sections doivent se présenter comme suit :
+Votre configuration de batterie de serveurs comporte deux sections qui **doivent** inclure une
+fichier spécifique : `/renders` et `/allowedClients` dans la section `/cache` . Ceux-là
+les sections doivent se présenter comme suit :
 
 ```
 /renders {
@@ -264,7 +264,7 @@ Et :
 }
 ```
 
-**fichier inclus dans un emplacement inconnu : ...**
+**Fichier inclus dans le système à l’emplacement inconnu : ...**.
 
 Votre configuration de ferme comporte quatre sections où vous pouvez inclure votre propre fichier : `/clientheaders`, `filters`, `/rules` dans la section `/cache` et `/virtualhosts`. Les fichiers inclus doivent être nommés comme suit :
 
@@ -279,7 +279,8 @@ Vous pouvez également inclure la version **par défaut** de ces fichiers, dont 
 
 **Inclure l’instruction à (...), en dehors de tout emplacement connu : ...**.
 
-Outre les six sections mentionnées dans les paragraphes ci-dessus, vous n’avez pas l’autorisation d’utiliser l’instruction `$include`. Par exemple, les éléments suivants généreraient cette erreur :
+Outre les six sections mentionnées dans les paragraphes ci-dessus, vous n’êtes pas autorisé
+pour utiliser l’instruction `$include`, par exemple, les éléments suivants généreraient cette erreur :
 
 ```
 /invalidate {
@@ -289,7 +290,8 @@ Outre les six sections mentionnées dans les paragraphes ci-dessus, vous n’ave
 
 **Les clients/rendus ne sont pas inclus à partir de : ...**.
 
-Cette erreur est générée lorsque vous ne spécifiez pas d’inclusion pour `/renders` et `/allowedClients` dans la section `/cache`. Voir la section **le fichier inclus (...) doit être nommé : ...** pour plus d’informations.
+Cette erreur est générée lorsque vous ne spécifiez pas d’inclusion pour `/renders` et `/allowedClients` dans la section `/cache`. Voir la
+**fichier inclus (...) doit être nommé : ...** section pour plus d’informations.
 
 **Le filtre ne doit pas utiliser de modèle glob pour autoriser les requêtes**
 
@@ -303,7 +305,7 @@ Il n’est pas sécurisé d’autoriser des requêtes avec une règle de style `
 
 Cette instruction est destinée à autoriser les requêtes de fichiers `css`, mais elle permet également les requêtes de **n’importe quelle** ressource suivie de la chaîne de requête `?a=.css`. Il est donc interdit d’utiliser de tels filtres (voir aussi CVE-2016-0957).
 
-**Le fichier inclus (...) ne correspond à aucun fichier connu**
+**Fichier inclus (...) ne correspond à aucun fichier connu**
 
 Il existe deux types de fichiers dans la configuration de l’hôte virtuel Apache qui peuvent être spécifiés sous la forme d’inclusions : les réécritures et les variables.
 Les fichiers inclus doivent être nommés comme suit :
@@ -322,9 +324,9 @@ Notez qu’il n’existe pas de version par défaut des fichiers de variables.
 
 **Mise en page de configuration obsolète détectée, activation du mode de compatibilité**
 
-Ce message indique que votre configuration présente la disposition version 1 obsolète, contenant une
-configuration Apache complète et des fichiers avec des préfixes `ams_`. Bien que cette configuration soit toujours prise en charge
-en rétrocompatibilité, vous devriez passer à la nouvelle mise en page.
+Ce message indique que votre configuration comporte une disposition de version 1 obsolète, contenant un fichier complet
+Configuration Apache et fichiers avec préfixes `ams_`. Bien que cette configuration soit toujours prise en charge pour les versions antérieures
+compatibilité, vous devriez passer à la nouvelle mise en page.
 
 La première phase peut également être **exécutée séparément**, plutôt qu’à partir du script `validate.sh` de wrapper.
 

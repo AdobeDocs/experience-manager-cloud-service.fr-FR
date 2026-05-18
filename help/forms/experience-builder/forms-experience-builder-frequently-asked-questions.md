@@ -112,7 +112,6 @@ Ajoutez la validation à l’aide des commandes de langage naturel :
     Ajoutez la validation du format des numéros de téléphone aux États-Unis à @phoneNumber
     Définissez la validation de l’âge : doit être âgé de 18 ans ou plus pour la @dateOfBirth
     
-
 ## Fonctionnalités avancées
 
 ### Que sont les champs intelligents optimisés par LLM ?
@@ -127,7 +126,7 @@ Les champs intelligents optimisés pour LLM sont des champs de formulaire intell
 
 Vous pouvez importer différents types de documents :
 
-- **&#x200B;**&#x200B;: chargement de PDF statiques ou interactifs
+- **** : chargement de PDF statiques ou interactifs
 - **Images** : téléchargez des photos de formulaires papier ou des captures d’écran
 - **Fichiers de conception** : importez des conceptions Figma ou d’autres formats de conception.
 
@@ -233,7 +232,7 @@ Oui, vous pouvez configurer différents aspects :
 
 Pour une prise en charge supplémentaire :
 
-- Consultez le [&#x200B; Guide de prise en main &#x200B;](forms-experience-builder-getting-started.md)
+- Consultez le [ Guide de prise en main ](forms-experience-builder-getting-started.md)
 - Consultez le [guide de déploiement et de configuration](deploy-forms-experience-builder.md)
 - Contactez votre administrateur système
 - Contactez l’assistance Adobe pour les problèmes techniques

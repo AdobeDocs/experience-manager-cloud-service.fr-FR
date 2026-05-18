@@ -56,7 +56,7 @@ Transformer des documents existants en expériences digitales interactives. Form
 
 ## Intégration et conditions préalables
 
-Forms Experience Builder est actuellement disponible via un programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail à [&#128279;](mailto:aem-forms-ea@adobe.com) à partir de votre ID d’e-mail officiel.
+Forms Experience Builder est actuellement disponible via un programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail à [](mailto:aem-forms-ea@adobe.com) à partir de votre ID d’e-mail officiel.
 
 Experience Builder nécessite un environnement de création de production AEM Forms as a Cloud Service avec des [composants principaux de Forms adaptatif](/help/forms/enable-adaptive-forms-core-components.md).
 

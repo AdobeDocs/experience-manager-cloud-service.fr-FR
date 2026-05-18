@@ -23,7 +23,7 @@ L’authentification de serveur à serveur OAuth permet un accès sécurisé par
 
 Avant de commencer, vérifiez que les conditions préalables suivantes sont remplies :
 
-* Assurez-vous d’avoir [accès au Adobe Developer Console](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/requirements/access-rights) spécifique à l’environnement que vous utilisez.
+* Assurez-vous d’avoir [accès au Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights) spécifique à l’environnement que vous utilisez.
 * [Attribuez le rôle d’administrateur système ou de développeur dans le Adobe Admin Console](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions) pour activer l’accès au Adobe Developer Console.
 
 ## Comment générer un jeton d’accès à l’aide de l’authentification de serveur à serveur OAuth ?
@@ -32,7 +32,7 @@ Suivez les étapes ci-dessous pour générer un jeton d’accès à partir de la
 
 ### &#x200B;1. Configuration du projet Adobe Developer Console
 
-1. Accéder à [&#128279;](https://developer.adobe.com/console)
+1. Accéder à [](https://developer.adobe.com/console)
 2. Connexion avec votre Adobe ID
 
 3. Créer un projet ou accéder à votre projet existant
@@ -173,7 +173,7 @@ Générez manuellement les jetons d’accès dans Adobe Developer Console :
    1. Cliquez sur le bouton **Générer un jeton d’accès »** dans la section API de votre projet
    2. Copier le jeton d’accès généré
 
-   ![&#x200B; Générer un jeton d’accès &#x200B;](/help/forms/assets/adc-access-token.png)
+   ![ Générer un jeton d’accès ](/help/forms/assets/adc-access-token.png)
 
    >[!NOTE]
    >

@@ -8,8 +8,8 @@ feature: Headless
 role: Admin, User, Developer
 source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 100%
+source-wordcount: '1031'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"
->title="Dans ce module, vous avez appris à personnaliser un exemple d’application React.<br><br>Délai de mise sur le marché : accéléré !<br>Cycles de développement : réduits !<br><br>Vous comprenez maintenant à quel point la gestion du contenu découplé est facile pour les sites web et les applications gérés par les fonctionnalités découplées d’AEM."
+>title="Dans ce module, vous avez appris à personnaliser un exemple d’application React.<br><br>Mise sur le marché : accélérée.<br>Cycles de développement : réduits.<br><br>Vous comprenez maintenant à quel point il est facile de gérer du contenu découplé pour les sites web et les applications alimentés par les fonctionnalités découplées d’AEM."
 >abstract=""
 
 ## Aperçu de l’application {#preview}
@@ -123,7 +123,7 @@ Maintenant que vous avez mis à jour l’image du cycliste, nous allons découvr
 
 1. Attribuez un nom au moment d’achat dans le champ **Texte**, par exemple `Yellow shorts`.
 
-1. Définissez les valeurs de **X** et **Y**. C’est à ce moment que cet appel doit être superposé sur le panneau. L’éditeur enregistre automatiquement les modifications du fragment.
+1. Définissez des valeurs pour **X** et **Y**. C’est à cet endroit que cet appel doit être superposé sur le panneau. L’éditeur enregistre automatiquement les modifications du fragment.
 
    * **X** : `-5`
    * **Y** : `-10`

@@ -22,7 +22,7 @@ ht-degree: 74%
 
 >[!IMPORTANT]
 >
-> **Documentation sujette à modification** : cette documentation est en cours de test produit. Elle est sujette à des mises à jour et des révisions. Les fonctionnalités, commandes et exemples peuvent changer à mesure que Forms Experience Builder se développe dans le cadre du programme d’accès anticipé.
+> **Documentation susceptible de modification** : cette documentation est actuellement testée par rapport au produit et peut faire l’objet de mises à jour et de révisions. Les fonctionnalités, commandes et exemples peuvent changer à mesure que Forms Experience Builder se développe dans le cadre du programme d’accès anticipé.
 
 Ce guide complet aide à démarrer la création et la gestion de formulaires avec la technologie d’IA conversationnelle. Que vous débutiez et souhaitiez créer votre premier formulaire, ou que vous cherchiez à exploiter des fonctionnalités sophistiquées, vous trouverez des informations détaillées et des exemples pratiques pour vous guider dans les fonctionnalités de Forms Experience Builder.
 

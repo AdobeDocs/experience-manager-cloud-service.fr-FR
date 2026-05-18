@@ -116,10 +116,10 @@ Définissez des autorisations granulaires pour la création, la modification et 
 Déployez des formulaires sur plusieurs canaux et points de contact pour atteindre les utilisateurs où qu’ils se trouvent.
 
 **Publication omnicanale**
-Publiez des formulaires dans [&#128279;](/help/forms/embed-adaptive-form-aem-sites.md), des pages web autonomes, des applications mobiles ou [incorporés dans des systèmes tiers](/help/forms/embed-adaptive-form-core-components-external-web-page.md). La publication mono-source assure la cohérence tout en s’adaptant aux différentes exigences des canaux.
+Publiez des formulaires dans [](/help/forms/embed-adaptive-form-aem-sites.md), des pages web autonomes, des applications mobiles ou [incorporés dans des systèmes tiers](/help/forms/embed-adaptive-form-core-components-external-web-page.md). La publication mono-source assure la cohérence tout en s’adaptant aux différentes exigences des canaux.
 
 **Localisation et Personalization**
-Diffuser des formulaires dans plusieurs langues à l’aide de [workflows de traduction &#x200B;](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md) avec prise en charge des langues [de gauche à droite et de droite à gauche](/help/forms/right-left-languages.md). Intégrez-la à Adobe Target pour personnaliser les expériences de formulaire en fonction des segments d’utilisateurs, du comportement ou des données contextuelles.
+Diffuser des formulaires dans plusieurs langues à l’aide de [workflows de traduction ](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md) avec prise en charge des langues [de gauche à droite et de droite à gauche](/help/forms/right-left-languages.md). Intégrez-la à Adobe Target pour personnaliser les expériences de formulaire en fonction des segments d’utilisateurs, du comportement ou des données contextuelles.
 
 **Optimisation des performances**
 Tirez parti de Edge Delivery Services pour un chargement de formulaire ultra-rapide et des performances SEO optimales. Les réseaux de diffusion de contenu garantissent une accessibilité globale avec une latence minimale.
@@ -164,13 +164,13 @@ Des mécanismes de reprise intégrés et un traitement de secours garantissent q
 Connectez les formulaires aux systèmes d’entreprise et aux sources de données existants pour un flux d’informations transparent.
 
 **Connecteurs Préconfigurés**
-Intégration native aux solutions [&#128279;](/help/forms/configure-salesforce.md), [Microsoft Dynamics](/help/forms/configure-msdynamics.md), [SharePoint](/help/forms/connect-forms-to-sharepoint-document-library.md) et Adobe Experience Cloud. Les connecteurs préconfigurés réduisent le temps de développement tout en assurant une synchronisation fiable des données.
+Intégration native aux solutions [](/help/forms/configure-salesforce.md), [Microsoft Dynamics](/help/forms/configure-msdynamics.md), [SharePoint](/help/forms/connect-forms-to-sharepoint-document-library.md) et Adobe Experience Cloud. Les connecteurs préconfigurés réduisent le temps de développement tout en assurant une synchronisation fiable des données.
 
 Intégration de l’API **RESTful**
 Connectez-vous à un service accessible sur le web via des API RESTful via des [actions d’envoi](/help/forms/configure-submit-action-restpoint.md) ou [intégration de données](/help/forms/data-integration.md). Le modèle de données de formulaire abstrait la complexité de l’intégration, fournissant une interface cohérente quelle que soit l’architecture du système sous-jacent.
 
 **Échange De Données En Temps Réel**
-Activez le flux de données bidirectionnel entre les formulaires et les systèmes d’entreprise. Préremplissez des formulaires à partir d’enregistrements existants, validez les données actives et mettez à jour plusieurs systèmes simultanément lors de leur envoi grâce à une [&#x200B; intégration de données](/help/forms/data-integration.md) complète.
+Activez le flux de données bidirectionnel entre les formulaires et les systèmes d’entreprise. Préremplissez des formulaires à partir d’enregistrements existants, validez les données actives et mettez à jour plusieurs systèmes simultanément lors de leur envoi grâce à une [ intégration de données](/help/forms/data-integration.md) complète.
 
 ### Suivi : analyses et surveillance des performances {#track}
 
@@ -205,7 +205,7 @@ Appliquez le chiffrement, les signatures numériques et les [contrôles d’acc�
 
 Optimisez en permanence les performances des formulaires et l’expérience utilisateur par le biais d’informations et de tests pilotés par les données.
 
-Intégration des tests A/B **&#x200B;**
+Intégration des tests A/B ****
 Utilisez Adobe Target pour tester différentes dispositions de formulaires, dispositions de champs et flux d’utilisateurs. L’analyse statistique permet d’identifier les approches les plus efficaces pour différents segments d’utilisateurs et cas d’utilisation.
 
 **Optimisation pilotée par Analytics**
