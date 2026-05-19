@@ -4,12 +4,13 @@ description: Découvrez comment créer rapidement un site Edge Delivery dans Cl
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
-source-git-commit: d3d956e9342fe6bb507b0efd952dfbecdda269c2
+source-git-commit: 9cf3ab69adf8819d9f5496bf826c63f7cf01d554
 workflow-type: tm+mt
-source-wordcount: '1477'
-ht-degree: 55%
+source-wordcount: '1450'
+ht-degree: 56%
 
 ---
+
 
 # Créer votre premier site Edge Delivery en un seul clic{#about-one-click-edge-delivery-site}
 
@@ -51,7 +52,7 @@ Voir également [Présentation d’Edge Delivery Services dans Cloud Manager]
 1. Dans la boîte de dialogue **Créer un site Edge Delivery**, dans le champ de texte **Nom du projet**, saisissez le nom de votre site.
 1. Sous **Options de création**, sélectionnez l’une des options suivantes :
    * **Création de documents** — Créez du contenu dans Google Drive ou SharePoint. Il s’agit de l’option par défaut qui ne nécessite pas d’environnement AEM.
-   * **Création AEM (Beta)** — Créez du contenu dans AEM à l’aide de l’éditeur universel. Si vous choisissez cette option, sous **Sélectionner un modèle**, sélectionnez un modèle initial pour votre site Edge Delivery.
+   * **Création AEM** — Créez du contenu dans AEM à l’aide de l’éditeur universel. Si vous choisissez cette option, sous **Sélectionner un modèle**, sélectionnez un modèle initial pour votre site Edge Delivery.
 
    ![Boîte de dialogue Créer un site Edge Delivery avec l’option Création AEM sélectionnée.](/help/implementing/cloud-manager/edge-delivery/assets/eds-create-aem-authoring.png)
 
@@ -81,11 +82,7 @@ Voir aussi [Publication de contenu de l’auteur AEM vers Edge Delivery](#publis
    | Accorder aux utilisateurs et utilisatrices l’accès au référentiel de contenu sur Google Drive | <ul><li> Dans la zone de liste **Sites Edge Delivery**, à l’extrémité droite du nom de votre site, cliquez sur l’![icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) pour afficher le menu déroulant.</li><li>Cliquez sur ![icône Ajouter des utilisateurs et utilisatrices](https://spectrum.adobe.com/static/icons/workflow_18/Smock_UsersAdd_18_N.svg) **Accédez au référentiel de contenu** dans le menu déroulant.</li><li>Dans la boîte de dialogue **`Add collaborators to your site`**, saisissez l’adresse e-mail du contributeur, puis cliquez sur ![Icône de coche](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg).</li><li>Continuez à ajouter des e-mails de contributeurs et contributrices, si nécessaire.</li><li>Lorsque vous avez terminé, cliquez sur **Ajouter des collaborateurs et collaboratrices**.</li><li>Pour partager le lien avec vos collaborateurs et collaboratrices de contenu, dans la boîte de dialogue **Collaboration ajoutée**, cliquez sur **OK**.</li><li>Dans la boîte de dialogue Collaboration ajoutée, cliquez sur ![icône Copier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) pour copier le lien et le partager avec vos collaborateurs et collaboratrices.<br>Avant de partager le lien, vérifiez que les collaborateurs et collaboratrices sont connectés avec l’adresse e-mail associée à leur compte IMS. Si leur compte de messagerie IMS n’est pas disponible, les personnes doivent utiliser l’adresse e-mail ajoutée en tant que collaborateurs et collaboratrices. Cela permet de s’assurer que les collaborateurs et collaboratrices peuvent accéder au lien et voir le contenu à modifier ou à mettre à jour sur Google Drive.</li><li>Une fois la modification terminée, cliquez sur **Publier le site** dans Cloud Manager, comme décrit ci-dessus.<br>Ou prévisualisez les modifications apportées, comme décrit ci-dessus.</li></ul> |
    | Accorder aux utilisateurs et utilisatrices l’accès au référentiel de base sur GitHub | <ul><li> Dans la zone de liste **Sites Edge Delivery**, à l’extrémité droite du nom de votre site, cliquez sur l’![icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) pour afficher le menu déroulant.</li><li>Cliquez sur ![icône de code](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) **Accédez au référentiel de base** dans le menu déroulant.</li><li>Dans la boîte de dialogue **Accéder au référentiel de base de votre site**, saisissez le nom d’utilisateur GitHub d’un collaborateur ou d’une collaboratrice, puis cliquez sur ![icône de coche](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg).</li><li>Continuez à ajouter des noms d’utilisateur GitHub, si nécessaire.</li><li>Lorsque vous avez terminé, cliquez sur **Ajouter des collaborateurs et collaboratrices**.</li>Les utilisateurs et utilisatrices doivent accorder l’accès à leur propre nom d’utilisateur GitHub pour afficher le référentiel. |
 
-## Publication de contenu de l’auteur AEM vers Edge Delivery (Beta) {#publish-from-aem-author}
-
->[!NOTE]
->
->La fonction de publication décrite ici se trouve dans Beta. Pour rejoindre Beta, envoyez un e-mail à l’adresse [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-beta_xwalk-publish_config@adobe.com) avec votre ID d’organisation et votre ID de programme Adobe.
+## Publication de contenu de l’auteur AEM vers Edge Delivery {#publish-from-aem-author}
 
 Cette fonctionnalité est disponible uniquement pour les sites Edge Delivery créés avec l’option Création AEM .
 

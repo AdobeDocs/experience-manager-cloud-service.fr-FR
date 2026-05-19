@@ -3,19 +3,19 @@ title: Fonctions d’AEM Edge
 description: Découvrez comment exécuter JavaScript au niveau de la couche CDN avec les fonctions AEM Edge pour activer la personnalisation, la sécurité et les expériences dynamiques proches de l’utilisateur final.
 feature: Developing, Edge Delivery Services
 role: Developer
-source-git-commit: f8000bef01d6b72fb3ac2ae81be9fc19ed1a67d1
+exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
+source-git-commit: 1fdf9c61e611db978706a066194448ec3750024a
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 4%
+source-wordcount: '941'
+ht-degree: 3%
 
 ---
-
 
 # Fonctions d’AEM Edge {#aem-edge-functions}
 
 >[!IMPORTANT]
 >
->AEM Edge Functions est une fonctionnalité **bêta**. Les fonctionnalités et la documentation peuvent changer sans préavis. Pour rejoindre le programme d’accès anticipé et soumettre vos commentaires, envoyez un e-mail à l’adresse [&#128279;](mailto:aemcs-edge-functions-feedback@adobe.com).
+>AEM Edge Functions est une fonctionnalité **bêta**. Les fonctionnalités et la documentation peuvent changer sans préavis. Pour rejoindre le programme d’accès anticipé et soumettre vos commentaires, envoyez un e-mail à l’adresse [](mailto:aemcs-edgecompute-feedback@adobe.com).
 
 AEM Edge Functions vous permet d’exécuter JavaScript au niveau de la couche CDN, ce qui rapproche le traitement des données de l’utilisateur final. Cela réduit la latence et permet d’offrir des expériences réactives et dynamiques sans aller-retour vers votre origine.
 
@@ -41,7 +41,7 @@ Les fonctions AEM Edge sont compatibles avec la pile Java Edge Delivery Services
 
 - Un environnement AEM as a Cloud Service
 - Le profil de produit Administrateur AEM sur l’instance d’auteur de votre environnement Cloud Service, **ou** le rôle Responsable de déploiement Cloud Manager dans Admin Console pour les sites Edge Delivery Services
-- [Node.js et npm.](https://nodejs.org/)
+- [Node.js et npm](https://nodejs.org/)
 
 ## Configuration {#setup}
 
@@ -80,7 +80,7 @@ npm install
 
 Les services de fonction AEM Edge sont déclarés dans un fichier de configuration YAML et déployés via le pipeline de configuration Cloud Manager.
 
-### &#x200B;1. Configurer un pipeline de configuration {#configuration-pipeline}
+### &#x200B;1. Configuration d’un pipeline de configuration {#configuration-pipeline}
 
 Avant de créer une fonction Edge, assurez-vous qu’il existe un pipeline de configuration pour votre environnement dans Cloud Manager. Dans le cas contraire, commencez par [créer un pipeline de configuration](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
@@ -113,7 +113,7 @@ La configuration prend en charge jusqu’à trois services. Les clés de niveau 
 | `configs` | Paires clé/valeur exposées à tous les services de fonction Edge en tant que variables d’environnement. |
 | `secrets` | Paires clé/valeur faisant référence à des secrets Cloud Manager, exposées à tous les services de fonction Edge. |
 
-### &#x200B;3. Ajouter des règles de sélecteur d’origine CDN {#cdn-routing}
+### &#x200B;3. Ajout de règles au sélecteur d’origine du réseau CDN {#cdn-routing}
 
 Les fonctions Edge sont appelées en leur acheminant le trafic du réseau CDN via les règles du sélecteur d’origine. Ajoutez les éléments suivants à votre fichier de configuration `cdn.yaml` (ou créez-en un s’il n’existe pas) :
 
