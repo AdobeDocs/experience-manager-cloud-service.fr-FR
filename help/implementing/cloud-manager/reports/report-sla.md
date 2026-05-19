@@ -5,9 +5,9 @@ exl-id: 03932415-a029-4703-b44a-f86a87edb328
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 81b78ba9668d1c5530d2f6d6f443038549152aa3
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '478'
 ht-degree: 9%
 
 ---
@@ -38,9 +38,9 @@ Le graphique linéaire d’une année sélectionnée comprend des points de donn
 
 1. Sur la page **Aperçu du programme**, dans le menu de gauche, cliquez sur **Rapports**.
 
-1. Cliquez sur **Rapports SLA**.
+1. Cliquez sur **Rapports**.
 
-   ![Graphique linéaire du rapport SLA](/help/implementing/cloud-manager/reports/assets/cm-sla-report2.png)
+   ![Graphique linéaire du rapport ](/help/implementing/cloud-manager/reports/assets/cm-sla-report2.png)
 
 1. Cliquez sur l’année souhaitée pour afficher un graphique linéaire des données SLA.
 

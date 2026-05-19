@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 93d22e32dc2f21bddccf7ad1305aab7d22b8345a
+source-git-commit: 93e633b8c9ac2f0bc03df70d3419b70d7b2ea7ba
 workflow-type: tm+mt
-source-wordcount: '2303'
-ht-degree: 23%
+source-wordcount: '2421'
+ht-degree: 24%
 
 ---
 
@@ -19,7 +19,7 @@ Découvrez le service de surveillance des performances de l’application New R
 
 ## À propos de New Relic One {#introduction}
 
-Adobe accorde une importance considérable à la surveillance, la disponibilité et les performances de votre application. AEM as a Cloud Service permet d’accéder à la surveillance New Relic One, offrant ainsi aux équipes une visibilité complète sur les mesures de performances du système et de l’environnement dans le cadre de l’offre de produit standard.
+Adobe met l’accent sur la surveillance, la disponibilité et les performances de votre application. AEM as a Cloud Service permet d’accéder à la surveillance New Relic One, offrant ainsi aux équipes une visibilité complète sur les mesures de performances du système et de l’environnement dans le cadre de l’offre de produit standard.
 
 Cet article explique comment gérer l’accès aux fonctionnalités de surveillance des performances des applications (APM) New Relic One dans les environnements AEM as a Cloud Service. Une gestion efficace de ces fonctionnalités permet d’obtenir des performances optimales et d’optimiser les avantages d’AEM as a Cloud Service.
 
@@ -116,13 +116,13 @@ Une fois qu’un compte utilisateur New Relic One est créé, comme décrit dans
 
 1. New Relic vous envoie un e-mail contenant un lien pour confirmer le compte.
 
-Si vous ne recevez pas d’e-mail de confirmation de la part de New Relic, consultez la [section de dépannage](#troubshooting).
+Si vous ne recevez pas d’e-mail de confirmation de la part de New Relic, consultez la [section de dépannage](#troubleshooting).
 
 ## Ouvrir New Relic One {#accessing-new-relic}
 
-Une fois que vous avez [activé votre compte New Relic](#activate-account), vous pouvez ouvrir New Relic One par le biais de Cloud Manager ou directement.
+Une fois que vous avez [activé votre compte New Relic](#activate-account), vous pouvez ouvrir New Relic One à l’aide de Cloud Manager ou directement.
 
-**Pour ouvrir New Relic One au moyen de Cloud Manager :**
+**Pour ouvrir New Relic One à l’aide de Cloud Manager :**
 
 1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com).
    1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
@@ -138,7 +138,7 @@ Une fois que vous avez [activé votre compte New Relic](#activate-account), vous
 
 **Pour ouvrir New Relic One directement, procédez comme suit :**
 
-1. Accédez à la page de connexion de [&#128279;](https://login.newrelic.com/login).
+1. Accédez à la page de connexion de [](https://login.newrelic.com/login).
 
 1. Connectez-vous à New Relic One.
 
@@ -148,11 +148,11 @@ S’il vous est demandé de vérifier votre e-mail lors de la connexion à New R
 
 Si vous ne vérifiez pas votre adresse e-mail, New Relic tente de vous connecter avec l’enregistrement utilisateur le plus récemment créé associé à votre adresse e-mail. Pour éviter de vérifier votre e-mail à chaque connexion, cochez la case **Mémoriser mon adresse** dans l’écran de connexion.
 
-Pour obtenir de l’aide, ouvrez un ticket de support via le [Portail d’assistance AEM](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
+Pour obtenir de l’aide, ouvrez un ticket de support via le Portail d’assistance AEM [](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
 
 ## Utiliser le suivi des modifications {#change-tracker}
 
-Cloud Manager envoie automatiquement les dispositifs de suivi des modifications à New Relic One lorsque les exécutions de pipeline, les mises à niveau d’AEM et la restauration de code prises en charge sont terminées. Ces dispositifs de suivi apparaissent sous la forme d’événements de modification dans la vue **Suivi des modifications** de New Relic, ce qui permet à votre équipe d’établir des corrélations entre les déploiements et les changements dans les performances des applications, les taux d’erreur et le débit.
+Cloud Manager envoie automatiquement les dispositifs de suivi des modifications à New Relic One lorsque les exécutions de pipeline, les mises à niveau d’AEM et la restauration du code prises en charge sont terminées. Ces dispositifs de suivi apparaissent sous la forme d’événements de modification dans la vue **Suivi des modifications** de New Relic, ce qui permet à votre équipe d’établir des corrélations entre les déploiements et les changements dans les performances des applications, les taux d’erreur et le débit.
 
 <!-- See also [Introduction to change tracking](https://docs.newrelic.com/docs/change-tracking/overview/) and [Record and view deployments](https://docs.newrelic.com/docs/apm/apm-ui-pages/events/record-deployments/). -->
 
@@ -166,7 +166,7 @@ Les pipelines Cloud Manager ci-dessous et les deux derniers types de workflows g
 | **Configuration de niveau web** | Exécutions du pipeline de configuration de niveau web. La trace inclut le nom du pipeline et l’ID d’exécution. |
 | **Front-end** | Exécutions du pipeline front-end. La trace inclut le nom du pipeline et l’ID d’exécution. |
 | **Config** | Exécutions du pipeline de configuration. La trace inclut le nom du pipeline et l’ID d’exécution. |
-| **Mise à jour** | Mises à niveau de la version d’AEM. Par exemple, de version {} à version {}. Les dispositifs de suivi sont créés une fois l’événement de changement d’environnement terminé. |
+| **Mise à jour** | Mises à niveau de la version d’AEM. Par exemple, de la version {} à la version {}. Les dispositifs de suivi sont créés une fois l’événement de changement d’environnement terminé. |
 | **Restaurer le code** | Le code restaure les opérations à partir d’un référentiel et d’une branche spécifiques. |
 
 >[!NOTE]
@@ -179,7 +179,7 @@ Une fois l’exécution d’un pipeline prise en charge terminée, vous pouvez a
 
 **Pour afficher les dispositifs de suivi des modifications dans New Relic One :**
 
-1. [Accédez à New Relic One](#accessing-new-relic) par le biais de Cloud Manager ou directement.
+1. [Accédez à New Relic One](#accessing-new-relic) à l’aide de Cloud Manager ou directement.
 1. Accédez à **APM &amp; Services** et sélectionnez l’application pour l’environnement approprié.
 1. Sur la page de résumé de l’application, recherchez les indicateurs de suivi des modifications sur le graphique. Pointez sur un dispositif de suivi pour afficher les détails de déploiement.
 
@@ -204,7 +204,7 @@ Une fois l’exécution d’un pipeline prise en charge terminée, vous pouvez a
 
    Le tableau **Modifier les événements** affiche chaque déploiement avec sa date et son heure, ainsi que sa description de version.
 
-   ![Option de suivi des modifications avec le tableau Modifier les événements qui affiche &#x200B;](/help/implementing/cloud-manager/assets/new-relic/new-relic-change-tracking.png)
+   ![Option de suivi des modifications avec le tableau Modifier les événements qui affiche ](/help/implementing/cloud-manager/assets/new-relic/new-relic-change-tracking.png)
 
 >[!TIP]
 >
@@ -224,11 +224,11 @@ Si vous avez été ajouté en tant qu’utilisateur New Relic One, comme décrit
 
 1. Saisissez l’adresse e-mail utilisée pour créer votre compte, puis sélectionnez **Envoyer mon lien de réinitialisation**.
 
-   ![Saisir l’adresse e-mail](/help/implementing/cloud-manager/assets/new-relic/newrelic-2.png)
+   ![Entrer l’adresse e-mail](/help/implementing/cloud-manager/assets/new-relic/newrelic-2.png)
 
 1. New Relic vous envoie un e-mail contenant un lien pour confirmer le compte.
 
-Si vous avez terminé le processus d’inscription et que vous ne parvenez pas à vous connecter à votre compte en raison de messages d’erreur relatifs à votre e-mail ou à votre mot de passe, enregistrez un ticket d’assistance par le biais de [&#128279;](https://adminconsole.adobe.com/).
+Si vous avez terminé le processus d’inscription et que vous ne parvenez pas à vous connecter à votre compte en raison de messages d’erreur relatifs à votre e-mail ou à votre mot de passe, enregistrez un ticket d’assistance à l’aide de [](https://adminconsole.adobe.com/).
 
 Si vous ne recevez pas d’e-mail de New Relic, procédez comme suit :
 
@@ -246,9 +246,9 @@ Si vous ne recevez pas d’e-mail de New Relic, procédez comme suit :
 >
 >Si aucune activité **connexion utilisateur** n’est détectée dans votre sous-compte New Relic One pendant 30 jours ou plus, l’agent APM est arrêté. Les données ne sont pas envoyées d’AEM Cloud Service vers New Relic. *Les données ne sont pas envoyées à nouveau tant que votre sous-compte n’est pas réactivé.*
 >
->Suivez les mêmes étapes que celles de la section [&#x200B; Activer votre sous-compte New Relic One &#x200B;](#activate-sub-account) de ce document pour réactiver votre sous-compte New Relic One.
+>Suivez les mêmes étapes que celles de la section [ Activer votre sous-compte New Relic One ](#activate-sub-account) de ce document pour réactiver votre sous-compte New Relic One.
 
-Pour obtenir de l’aide ou des conseils supplémentaires sur les offres New Relic One pour votre programme AEM as a Cloud Service, ouvrez un ticket de support au moyen du Portail d’assistance AEM [&#128279;](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
+Pour obtenir de l’aide ou des conseils supplémentaires sur les offres de New Relic One pour votre programme AEM as a Cloud Service, ouvrez un ticket de support à l’aide du [Portail d’assistance AEM](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
 
 ## Questions fréquentes {#faqs}
 
@@ -270,9 +270,9 @@ Remarque :
 
 +++
 
-+++Adobe envoie-t-il des notifications d’alerte depuis New Relic One ?**&#x200B;**
++++Adobe envoie-t-il des notifications d’alerte depuis New Relic One ?****
 
-Adobe fournit un accès à New Relic One à des fins d’observabilité uniquement et ne l’utilise pas pour les alertes client ou opérationnelles internes. Les notifications relatives aux incidents sont envoyées à l’aide de [&#x200B; profils de notification utilisateur &#x200B;](/help/journey-onboarding/notification-profiles.md).
+Adobe fournit un accès à New Relic One à des fins d’observabilité uniquement et ne l’utilise pas pour les alertes client ou opérationnelles internes. Les notifications relatives aux incidents sont envoyées à l’aide de [ profils de notification utilisateur ](/help/journey-onboarding/notification-profiles.md).
 +++
 
 +++**Qui peut accéder aux données du service cloud New Relic One ?**
@@ -301,5 +301,5 @@ L’assistance Adobe surveille AEM as a Cloud Service avec New Relic One et d’
 
 +++**L&#39;agent APM pour mon compte New Relic One est arrêté. Que s&#39;est-il passé ?**
 
-[Les agents APM sont arrêtés](#limitations) si aucune activité n’est détectée pendant 30 jours ou plus. Suivez les mêmes étapes que celles de la section [&#x200B; Activer votre sous-compte New Relic One &#x200B;](#activate-sub-account) de ce document pour réactiver votre sous-compte New Relic One.
+[Les agents APM sont arrêtés](#limitations) si aucune activité n’est détectée pendant 30 jours ou plus. Suivez les mêmes étapes que celles de la section [ Activer votre sous-compte New Relic One ](#activate-sub-account) de ce document pour réactiver votre sous-compte New Relic One.
 +++
