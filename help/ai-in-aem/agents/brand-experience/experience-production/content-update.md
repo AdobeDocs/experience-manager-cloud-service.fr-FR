@@ -20,7 +20,7 @@ La tâche de mise à jour de contenu de l’[agent de production Experience](/he
 
 La tâche de mise à jour du contenu met à jour le contenu existant, y compris les fragments de contenu, les pages, les formulaires et les ressources. La tâche peut effectuer des actions telles que la mise à jour, la suppression, le remplacement ou l’ajout d’éléments de contenu pour que les expériences restent exactes et à jour. Les entrées peuvent être des descriptions en langage naturel et, lorsqu’elles sont utilisées avec des PDF et des captures d’écran Jira, elles peuvent également fournir des entrées.
 
-La tâche de mise à jour de contenu transforme les détails que vous fournissez, en langage naturel ou visuel, en mises à jour de contenu sur votre page. Vous fournissez l’URL d’une page à mettre à jour, ainsi que des détails sur les éléments à mettre à jour, et le traitement de l’agent termine votre tâche. Utilisée avec AEM as a Cloud Service, la tâche crée un [lancement](/help/sites-cloud/authoring/launches/overview.md) afin que vous puissiez consulter les mises à jour avant l’application. Lorsqu’elle est utilisée avec la création de documents, la tâche crée une [version](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#).
+La tâche de mise à jour de contenu transforme les détails que vous fournissez, en langage naturel ou visuel, en mises à jour de contenu sur votre page. Vous fournissez l’URL d’une page à mettre à jour, ainsi que des détails sur les éléments à mettre à jour, et le traitement de l’agent termine votre tâche. Utilisée avec AEM as a Cloud Service, la tâche crée un [lancement](/help/sites-cloud/authoring/launches/overview.md) afin que vous puissiez consulter les mises à jour avant l’application. Lorsqu’elle est utilisée avec la création de documents, la tâche crée une [version](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3486418?learn=on)
 
@@ -181,4 +181,4 @@ Vous pouvez explorer les agents AEM via l’[aire de jeu](https://www.aem.live/d
 
 Les ressources suivantes peuvent s’avérer utiles lorsque vous continuez à explorer l’agent de production d’expérience :
 
-* Vous pouvez également utiliser le [classeur de l’agent de production Experience](https://www.adobe.com/go/aem-epa-workbook) pour obtenir des instructions pratiques et guidées.
+* Vous pouvez également utiliser le [classeur de l’agent de production Experience](https://www.adobe.com/go/aem-epa-workbook_fr) pour obtenir des instructions pratiques et guidées.
