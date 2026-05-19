@@ -4,9 +4,9 @@ description: Découvrez la version 2026.5.0 de Cloud Manager dans Adobe Experien
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 1c42dff8efb505d050583c8af2f150a7f862d8c9
+source-git-commit: 93e633b8c9ac2f0bc03df70d3419b70d7b2ea7ba
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '496'
 ht-degree: 10%
 
 ---

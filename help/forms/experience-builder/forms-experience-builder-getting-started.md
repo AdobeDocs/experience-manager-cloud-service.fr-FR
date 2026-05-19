@@ -3,11 +3,10 @@ title: Prise en main de Forms Experience Builder
 description: Découvrez les bases de la création de votre premier formulaire optimisé par l’IA avec Forms Experience Builder. Tutoriel détaillé avec des exemples et des bonnes pratiques.
 hide: true
 index: false
-hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: c4f838bc-a001-48e7-afaa-c2ff9034f5d4
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '1090'
 ht-degree: 4%

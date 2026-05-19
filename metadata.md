@@ -13,21 +13,21 @@ cloud: Experience Cloud
 recommendations: noDisplay
 source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 51%
+source-wordcount: '95'
+ht-degree: 2%
 
 ---
 
 
-# Métadonnées pour utilisation interne
+# Métadonnées à usage interne
 
 Les métadonnées dans le système de création GitHub sont hiérarchiques et sont définies selon les niveaux de précédent croissants suivants.
 
 1. metadata.md
-1. Table des matières
+1. ToC
 1. Article
 
-Les métadonnées définies dans le fichier metadata.md s’appliquent à l’intégralité du référentiel, mais peuvent être remplacées aux niveaux de la table des matières et de l’article. Tout remplacement des métadonnées doit être effectué au niveau le plus bas possible.
+Les métadonnées définies dans le fichier metadata.md s’appliquent à l’ensemble du référentiel, mais elles peuvent être remplacées au niveau de la table des matières et de l’article. Tout remplacement des métadonnées doit être effectué au niveau le plus bas possible.
 
 Les métadonnées du référentiel experience-manager-cloud-service.en sont le minimum requis.
 
@@ -43,7 +43,7 @@ metadata.md
 * `tutorials-title`
 * `tutorials-url`
 
-Tables des matières
+ToCs
 
 * `sub-product`
 * `user-guide-title`

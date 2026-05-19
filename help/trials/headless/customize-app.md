@@ -1,15 +1,14 @@
 ---
 title: Personnaliser du contenu dans un exemple d’application React
 description: Utilisez un exemple d’application React pour découvrir comment personnaliser du contenu à l’aide de l’ensemble de fonctionnalités découplées dans AEM as a Cloud Service.
-hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 feature: Headless
 role: Admin, User, Developer
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 100%
+source-wordcount: '1031'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +27,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"
->title="Dans ce module, vous avez appris à personnaliser un exemple d’application React.<br><br>Délai de mise sur le marché : accéléré !<br>Cycles de développement : réduits !<br><br>Vous comprenez maintenant à quel point la gestion du contenu découplé est facile pour les sites web et les applications gérés par les fonctionnalités découplées d’AEM."
+>title="Dans ce module, vous avez appris à personnaliser un exemple d’application React.<br><br>Mise sur le marché : accélérée.<br>Cycles de développement : réduits.<br><br>Vous comprenez maintenant à quel point il est facile de gérer du contenu découplé pour les sites web et les applications alimentés par les fonctionnalités découplées d’AEM."
 >abstract=""
 
 ## Aperçu de l’application {#preview}
@@ -123,7 +122,7 @@ Maintenant que vous avez mis à jour l’image du cycliste, nous allons découvr
 
 1. Attribuez un nom au moment d’achat dans le champ **Texte**, par exemple `Yellow shorts`.
 
-1. Définissez les valeurs de **X** et **Y**. C’est à ce moment que cet appel doit être superposé sur le panneau. L’éditeur enregistre automatiquement les modifications du fragment.
+1. Définissez des valeurs pour **X** et **Y**. C’est à cet endroit que cet appel doit être superposé sur le panneau. L’éditeur enregistre automatiquement les modifications du fragment.
 
    * **X** : `-5`
    * **Y** : `-10`

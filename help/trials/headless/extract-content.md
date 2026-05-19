@@ -1,14 +1,13 @@
 ---
 title: Extraire du contenu grâce à l’API GraphQL
 description: Découvrez comment utiliser les fragments de contenu et l’API GraphQL en tant que système de gestion de contenu découplé.
-hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 feature: Headless
 role: Admin, User, Developer
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1079'
 ht-degree: 100%
 
 ---

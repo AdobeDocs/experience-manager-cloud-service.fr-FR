@@ -1,14 +1,13 @@
 ---
 title: Créer la structure de contenu pour votre application
 description: Découvrez comment utiliser les modèles de fragment de contenu d’AEM pour créer votre structure de contenu, qui sert de base à votre contenu découplé.
-hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 feature: Headless
 role: Admin, User, Developer
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '1022'
 ht-degree: 100%
 
 ---

@@ -1,11 +1,10 @@
 ---
 title: Dépannage dans AEM Assets et Forms
 description: Résolvez les problèmes courants d’AEM Assets et de Forms à l’aide des liens d’article pour des domaines clés tels que les chargements, les métadonnées, la recherche, la diffusion, la création de formulaires, l’envoi et l’intégration.
-hidefromtoc: true
 hide: true
 badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 73ff9249-6f5a-46c1-87fe-7cb50b000927
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: b96b2f202c80c4dc1886cb60fcf206dd6ffaf5f1
 workflow-type: tm+mt
 source-wordcount: '1245'
 ht-degree: 1%
@@ -229,3 +228,4 @@ AEM Forms as a Cloud Service offre de puissantes fonctionnalités de création e
   </tr>
   </tbody>
 </table>
+

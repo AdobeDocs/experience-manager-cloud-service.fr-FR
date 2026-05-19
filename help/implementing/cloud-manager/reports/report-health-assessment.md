@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 5467a311-727d-4f67-ba43-4b6548431061
-source-git-commit: 564e0cf551a52d0e54799a6e9578d916a98438af
+source-git-commit: 81b78ba9668d1c5530d2f6d6f443038549152aa3
 workflow-type: tm+mt
-source-wordcount: '1406'
-ht-degree: 8%
+source-wordcount: '1521'
+ht-degree: 12%
 
 ---
 
@@ -34,7 +34,7 @@ Consultez également la section [&#x200B; Modèles d’évaluation de l’intég
 1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com).
 1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
 1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
-1. Sélectionnez l’organisation de votre choix. L’image ci-dessous est fournie à titre d’illustration. Sélectionnez le nom de votre organisation.
+1. Sélectionnez une organisation que vous souhaitez utiliser. L’image ci-dessous est fournie à titre d’illustration. Sélectionnez le nom de votre organisation.
 
    ![Sélection d’une organisation dans Cloud Manager](/help/implementing/cloud-manager/reports/assets/ha-org.png)
 
@@ -115,7 +115,7 @@ Sur la page **Évaluation de l’intégrité**, consultez la section **Rapports 
 
 ![Consulter les rapports précédents](/help/implementing/cloud-manager/reports/assets/ha-past-reports.png)
 
-* À droite de l’en-tête **Rapports précédents**, cliquez sur ![Chevron du menu déroulant ou du menu déroulant pour sélectionner un autre environnement](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) afin de trier les rapports précédents par date.
+* À droite de l’en-tête **Rapports précédents**, cliquez sur ![Menu déroulant Chevron ou menu déroulant pour sélectionner un autre environnement](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) afin de trier les rapports précédents par date.
 * À l’extrémité droite d’un rapport, cliquez sur ![icône représentant des points de suspension ou icône plus](https://spectrum.adobe.com/static/icons/ui_18/More.svg), puis sur **Afficher les détails** ou **Télécharger**.
 
 

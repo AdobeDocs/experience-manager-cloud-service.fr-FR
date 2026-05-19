@@ -4,9 +4,9 @@ description: Découvrez comment diffuser vos projets Cloud Manager à l’aide 
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 71d514b2eaf83732cc0856f6b508ab814fe7f469
+source-git-commit: a7e3c154f36b194cde223c11e9e06ecbe3a872f5
 workflow-type: tm+mt
-source-wordcount: '1426'
+source-wordcount: '1488'
 ht-degree: 53%
 
 ---
@@ -56,11 +56,7 @@ Ces deux options disposent également de fonctionnalités différentes :
 Pour obtenir des instructions de configuration complètes, voir [Réseau CDN géré par &#x200B;](https://www.aem.live/docs/byo-cdn-adobe-managed)
 
 
-## À propos de Edge Delivery Services avec la création AEM (Beta) {#eds-aem-authoring}
-
->[!NOTE]
->
->Les fonctionnalités flexibles de niveau publication et de croisement de création AEM décrites ici se trouvent dans Beta. Pour rejoindre Beta, envoyez un e-mail à l’adresse [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-beta_xwalk-publish_config@adobe.com) avec votre ID d’organisation et votre ID de programme Adobe.
+## À propos de Edge Delivery Services avec la création dans AEM {#eds-aem-authoring}
 
 Les expériences web modernes nécessitent une diffusion hautement performante, mais de nombreuses entreprises s’appuient également sur des workflows de création AEM établis, la gouvernance et les modèles de réutilisation du contenu. Pour aider vos équipes à moderniser la diffusion sans interrompre la création, Cloud Manager propose des fonctionnalités qui vous permettent d’effectuer les opérations suivantes :
 
@@ -87,7 +83,7 @@ Cloud Manager vous permet de configurer si un niveau de publication est configur
 | --- | --- |
 | AEM Sites traditionnel | Requis |
 | Découplé / API-first | Requis |
-| Edge Delivery Services | Non nécessaires |
+| Edge Delivery Services | Non requis |
 
 En activant le niveau de publication uniquement lorsque cela est nécessaire, les équipes peuvent configurer des environnements plus rapidement, simplifier l’infrastructure et réduire les composants inutiles. Voir [Niveau de publication flexible (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
 
@@ -128,8 +124,6 @@ Vous pouvez ajouter Edge Delivery Services de différentes manières en fonction
 
 
 ## À propos de la liste des tâches Edge Delivery dans Cloud Manager {#ed-todo-list}
-
-<!-- &#x2460; for "1" inside circle -->
 
 La **liste de tâches Edge Delivery** est une liste de contrôle de tâches d’intégration destinée à vous guider tout au long de l’intégration et de la gestion de votre site Edge Delivery jusqu’à sa [mise en production](/help/journey-onboarding/go-live-checklist.md).
 

@@ -1,13 +1,12 @@
 ---
 title: Générer des jetons d’accès pour les API côté serveur (hérité)
 description: Découvrez comment faciliter la communication entre un serveur tiers et AEM as a Cloud Service en générant un jeton JWT sécurisé
-hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
 feature: Developing
 role: Admin, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1413'
 ht-degree: 94%
 
 ---
@@ -75,7 +74,7 @@ Une fois générées, les informations d’identification peuvent être récupé
 
 L’application non AEM qui appelle AEM doit pouvoir accéder aux informations d’identification d’AEM as a Cloud Service en les traitant comme un secret.
 
-### Génération d’un jeton JWT et échange contre un jeton d’accès  {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
+### Générer un jeton JWT et l’échanger contre un jeton d’accès {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
 Utilisez les informations d’identification pour créer un jeton JWT lors d’un appel au service IMS d’Adobe afin de récupérer un jeton d’accès valide pendant 24 heures.
 

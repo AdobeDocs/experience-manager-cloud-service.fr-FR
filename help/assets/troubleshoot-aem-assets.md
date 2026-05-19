@@ -1,11 +1,10 @@
 ---
 title: Dépannage dans AEM Assets
 description: Résolvez les problèmes courants d’AEM Assets à l’aide des liens d’article pour les domaines clés d’AEM Assets, tels que les chargements, les métadonnées, la recherche, la diffusion, etc.
-hidefromtoc: true
 hide: true
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: bcc0d481-4be4-4486-974b-89f89431c864
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 6%

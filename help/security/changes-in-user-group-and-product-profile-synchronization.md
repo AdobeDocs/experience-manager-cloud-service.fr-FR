@@ -4,9 +4,8 @@ description: Découvrez les modifications apportées à la synchronisation des g
 feature: Security
 role: Admin
 hide: true
-hidefromtoc: true
 exl-id: 0b097ab3-bf1d-4d43-9e19-d544594844ef
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 100%

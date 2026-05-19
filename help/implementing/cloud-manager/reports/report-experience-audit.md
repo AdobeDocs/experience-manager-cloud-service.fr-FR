@@ -5,9 +5,13 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+source-git-commit: 81b78ba9668d1c5530d2f6d6f443038549152aa3
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: 1570
 ht-degree: 8%
 
 ---
@@ -54,7 +58,7 @@ Le contrôle de l’expérience est disponible par défaut pour les pipelines de
    * [Ajoutez un pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md), si vous souhaitez activer l’audit sur un pipeline front-end ou de développement full-stack.
    * [Modifiez un pipeline existant](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) puis mettez à jour les options existantes.
 
-1. Pour utiliser le contrôle de l’expérience lors de l’ajout ou de la modification d’un pipeline hors production, cochez la case **Contrôle de l’expérience**. Cette option est disponible dans l&#39;onglet **Code Source**.
+1. Pour utiliser le contrôle de l’expérience lors de l’ajout ou de la modification d’un pipeline hors production, cochez la case **Contrôle de l’expérience**. Cette option est disponible dans l&#39;onglet **Code**.
 
    ![Activation du contrôle de l’expérience](/help/implementing/cloud-manager/reports/assets/experience-audit-enable.jpg)
 
@@ -64,7 +68,7 @@ Le contrôle de l’expérience est disponible par défaut pour les pipelines de
 1. Pour les pipelines de production et hors production, vous définissez les chemins d’accès à inclure dans le contrôle de l’expérience dans l’onglet **Contrôle de l’expérience**.
 
    * Les chemins d’accès doivent commencer par `/` et sont relatifs à votre site.
-   * Par exemple, si votre site est `wknd.site` et souhaite inclure des `https://wknd.site/us/en/about-us.html` dans le contrôle de l’expérience, saisissez le chemin d’accès `/us/en/about-us.html`.
+   * Par exemple, si votre site est `wknd.site` et que vous souhaitez inclure des `https://wknd.site/us/en/about-us.html` (exemple d’URL uniquement) dans le contrôle de l’expérience, saisissez le chemin d’accès `/us/en/about-us.html`.
 
    ![Définition d’un chemin pour l’audit d’expérience](/help/implementing/cloud-manager/reports/assets/experience-audit-add-page.png)
 
@@ -149,17 +153,17 @@ Lorsque vous déplacez le pointeur de la souris sur le graphique, une info-bulle
 
 ![Détails de la tendance](/help/implementing/cloud-manager/reports/assets/experience-audit-trend-details.png)
 
-Si vous cliquez sur le graphique à un moment donné, un pop-up s’ouvre avec les détails de cette analyse. Cliquez sur le **ouvrir l’analyse de contrôle de l’expérience** pour charger les résultats de cette analyse dans la section **[Résultats de l’analyse du contrôle de l’expérience](#scan-results)**.
+Si vous cliquez sur le graphique à un moment donné, un pop-up s’ouvre avec les détails de cette analyse. Cliquez sur le **ouvrir l’analyse de contrôle de l’expérience** pour charger ces résultats d’analyse dans la section **[Résultats de l’analyse du contrôle de l’expérience](#scan-results)**.
 
 ![Sélectionner une analyse différente](/help/implementing/cloud-manager/reports/assets/experience-audit-open-scan.png)
 
 #### Résultats de l’analyse de l’audit d’expérience {#scan-results}
 
-La section **Résultats de l’analyse du contrôle de l’expérience** donne des détails sur les scores de toutes les pages numérisées. Utilisez les boutons **Précédent** et **Suivant** pour parcourir les résultats et choisir le nombre d’affichages à paginer.
+La section **Résultats de l’analyse du contrôle de l’expérience** donne des détails sur les scores de toutes les pages numérisées. Utilisez les boutons **Précédent** et **Suivant** pour parcourir les résultats et choisir le nombre d’affichages à afficher.
 
 ![Pages numérisées](/help/implementing/cloud-manager/reports/assets/experience-audit-scanned-pages.png)
 
-Cliquez sur le lien d’une page particulière pour mettre à jour le filtre **Sélectionner** de la section [**Scores de la page — Tendance** &#x200B;](#trend) et afficher l’onglet **Rapports bruts** qui vous donne les scores de chaque audit de la page. Cliquez sur la date du rapport dans la colonne **Rapport Lighthouse** pour récupérer un fichier JSON des données brutes.
+Cliquer sur le lien d’une page particulière met à jour le filtre **Sélectionner** de la section [**Scores de page — tendance** &#x200B;](#trend) et affiche l’onglet **Rapports bruts** qui vous donne les scores de chaque audit de la page. Cliquez sur la date du rapport dans la colonne **Rapport Lighthouse** pour récupérer un fichier JSON des données brutes.
 
 ![Rapport brut](/help/implementing/cloud-manager/reports/assets/experience-audit-raw-reports.png)
 

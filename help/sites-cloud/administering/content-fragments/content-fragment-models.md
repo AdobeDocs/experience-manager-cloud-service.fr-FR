@@ -6,10 +6,10 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 24a995f6e487b7870ebc84e06107a26442d541c3
 workflow-type: tm+mt
-source-wordcount: '2223'
-ht-degree: 34%
+source-wordcount: '2232'
+ht-degree: 35%
 
 ---
 
@@ -52,7 +52,6 @@ Le modèle de fragment de contenu définit efficacement la structure des fragmen
    >Vous pouvez également ouvrir un modèle directement après [sa création](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model).
 
 1. Ouvrez le modèle requis pour **Modifier** ; utilisez l’un des liens d’action rapide ou sélectionnez le modèle, puis l’action dans la barre d’outils.
-
 
    ![Propriétés](assets/cf-cfmodels-empty-model.png)
 
@@ -162,10 +161,10 @@ Une sélection de types de données est disponible pour la définition de votre 
       * Création de nouvelles instances du champ
    * La référence spécifie le chemin d’accès à la ressource référencée ; par exemple, `/content/dam/path/to/resource`
 
-     <!--
+  <!--
     * Internally the reference is held as a universally unique ID (UUID) that references the resource
     * You do not need to know the UUID; in the fragment editor you can browse to the required fragment.
-    -->
+  -->
 
   <!--
   >[!NOTE]
@@ -179,10 +178,10 @@ Une sélection de types de données est disponible pour la définition de votre 
    * Le champ peut être configuré pour permettre aux auteurs de fragments de créer de nouvelles instances du champ
    * La référence spécifie le chemin d’accès à la ressource référencée ; par exemple, `/content/dam/path/to/resource`
 
-     <!--
+  <!--
     * Internally the reference is held as a universally unique ID (UUID) that references the resource
     * You do not need to know the UUID; in the fragment editor you can browse to the required asset resource
-    -->
+  -->
 
   <!--
   >[!NOTE]
@@ -227,7 +226,7 @@ De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propr
 La saisie d’un **Libellé du champ** génère automatiquement un **Nom de la propriété**, qui peut ensuite être mis à jour manuellement si nécessaire.
 
 * **Validation**
-La validation de base est disponible par le biais de mécanismes tels que la propriété **Requis**. Certains types de données comportent des champs de validation supplémentaires. Voir [Validation](#validation) pour plus de détails.
+La validation de base est disponible par des mécanismes tels que la propriété **Required**. Certains types de données comportent des champs de validation supplémentaires. Voir [Validation](#validation) pour plus de détails.
 
 * Pour le type données **texte multiligne**, il est possible de définir le **type par défaut** en tant que :
 
@@ -317,11 +316,9 @@ Les fragments de contenu peuvent former du contenu imbriqué à l’aide de l’
 >
 >AEM dispose d’une protection récurrente pour :
 >
->* Références du contenu
->  Cela empêche l’utilisateur d’ajouter une référence au fragment actif et peut conduire à une boîte de dialogue vide dans le sélecteur de référence du fragment.
+>* Références du contenu>  Cela empêche l’utilisateur d’ajouter une référence au fragment actif et peut conduire à une boîte de dialogue vide dans le sélecteur de référence du fragment.
 >
->* Références de fragment dans GraphQL
->  Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur null lors de la première occurrence.
+>* Références de fragment dans GraphQL>  Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur null lors de la première occurrence.
 
 >[!CAUTION]
 >
@@ -395,7 +392,7 @@ Outre les propriétés standard, vous pouvez définir les éléments suivants :
    * **fragmentreference** : permet à l’auteur du fragment de sélectionner une référence unique à un fragment.
 
 * **Type de modèle**
-Il est possible de sélectionner plusieurs modèles. Lors de l’ajout de références à un fragment de contenu, tous les fragments référencés doivent avoir été créés à l’aide de ces modèles.
+Plusieurs modèles peuvent être sélectionnés. Lors de l’ajout de références à un fragment de contenu, tous les fragments référencés doivent avoir été créés à l’aide de ces modèles.
 
 * **Chemin racine**
 Cette propriété spécifie ou représente un chemin racine pour tous les fragments référencés.
