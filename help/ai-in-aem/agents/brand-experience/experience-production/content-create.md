@@ -140,4 +140,4 @@ Gardez à l’esprit les limites suivantes :
 
 Les ressources suivantes peuvent s’avérer utiles lorsque vous continuez à explorer l’agent de production d’expérience :
 
-* Vous pouvez également utiliser le [classeur de l’agent de production Experience](https://www.adobe.com/go/aem-epa-workbook) pour obtenir des instructions pratiques et guidées.
+* Vous pouvez également utiliser le [classeur de l’agent de production Experience](https://www.adobe.com/go/aem-epa-workbook_fr) pour obtenir des instructions pratiques et guidées.
