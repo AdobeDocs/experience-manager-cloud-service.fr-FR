@@ -3,7 +3,7 @@ title: Création de tâche de contenu
 description: Découvrez ce qu’est la tâche de création de contenu Brand Experience Agent et ce qu’elle peut vous apporter.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
-source-git-commit: 2e3b10f7886f8bc5757d2144875ec0b441de7bb5
+source-git-commit: b92c13f690903074272e471c89bc0acc81627af1
 workflow-type: tm+mt
 source-wordcount: '788'
 ht-degree: 1%
