@@ -5,10 +5,10 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: b258bc6aaad29843b19eef244760c1e39f27dd09
 workflow-type: tm+mt
-source-wordcount: '1323'
-ht-degree: 7%
+source-wordcount: '1403'
+ht-degree: 9%
 
 ---
 
@@ -24,9 +24,9 @@ Découvrez les points de contrôle qualité disponibles dans le processus de dé
 
 ## À propos des tests fonctionnels
 
-Le diagramme suivant présente de manière générale les pipelines disponibles dans le cadre d’une stratégie de test globale et du processus de déploiement d’[&#128279;](/help/implementing/cloud-manager/deploy-code.md).
+Le diagramme suivant présente de manière générale les pipelines disponibles dans le cadre d’une stratégie de test globale et du processus de déploiement d’[](/help/implementing/cloud-manager/deploy-code.md).
 
-![Points de contrôle de qualité du déploiement d’AEM Cloud Service](assets/functional-testing/quality-gates-compact.svg)
+![Points de contrôle de qualité du déploiement d’AEM Cloud Service](assets/functional-testing/quality-gates-compact.png)
 
 ## Objectif des tests fonctionnels
 
@@ -40,9 +40,9 @@ Il est important de noter que ces points de contrôle qualité ne sont pas desti
 
 ## Points de contrôle qualité dans les tests
 
-Le diagramme suivant fournit une vue détaillée des points de contrôle qualité disponibles et de leur utilisation dans la stratégie de test globale et le processus de déploiement d’[&#128279;](/help/implementing/cloud-manager/deploy-code.md).
+Le diagramme suivant fournit une vue détaillée des points de contrôle qualité disponibles et de leur utilisation dans la stratégie de test globale et le processus de déploiement d’[](/help/implementing/cloud-manager/deploy-code.md).
 
-![Points de contrôle de qualité du déploiement d’AEM Cloud Service](assets/functional-testing/quality-gates-overview.svg)
+![Points de contrôle de qualité du déploiement d’AEM Cloud Service](assets/functional-testing/quality-gates-overview.png)
 
 ### Récapitulatif des points de contrôle qualité fournis par le client
 
@@ -58,7 +58,7 @@ Le diagramme suivant fournit une vue détaillée des points de contrôle qualit�
 
 Nous vous recommandons de fournir les tests unitaires pour votre application AEM, qui sont la base de chaque stratégie de test. Ils sont destinés à fonctionner rapidement et souvent et à donner des commentaires précoces et rapides. Ils sont étroitement intégrés aux workflows de développement, à votre propre CI/CD et aux pipelines de déploiement de Cloud Service AEM.
 
-Ils sont implémentés à l’aide de JUnit et exécutés avec Maven. Voir le [module principal de l’archétype de projet AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests) pour un exemple de test unitaire pour AEM et la prise en main.
+Ils sont implémentés à l’aide de JUnit et exécutés avec Maven. Voir le [module principal de l’archétype de projet AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests) pour un exemple de test unitaire pour AEM et la prise en main.
 
 ### Qualité du code
 
@@ -97,7 +97,7 @@ Les tests sont empaquetés dans une image Docker conçue pour être aussi volati
 >
 >Les tests d’interface utilisateur personnalisés sont exécutés dans les pipelines de production et hors production (opt-in) utilisés pour les déploiements de modifications d’applications AEM et les mises à jour des notifications push de produits AEM. Ils sont essentiels pour assurer le bon fonctionnement de votre application et améliorer la sécurité des rejets. Les tests de l’interface utilisateur client sont également exécutés dans les pipelines de validation de version préliminaire internes pour chaque client, ce qui permet de fournir des commentaires précoces.
 >
->Les conteneurs autres que Selenium doivent exécuter des tests à l’aide d’un proxy HTTP basé sur les variables d’environnement dans la section [&#x200B; Test de l’interface utilisateur &#x200B;](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing).
+>Les conteneurs autres que Selenium doivent exécuter des tests à l’aide d’un proxy HTTP basé sur les variables d’environnement dans la section [ Test de l’interface utilisateur ](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing).
 
 Pour que les exécutions de pipeline restent efficaces, Adobe recommande de se concentrer sur les fonctionnalités clés et les principaux flux d’interaction utilisateur. Les suites de tests complètes de l’interface utilisateur qui dépassent ce niveau de qualité doivent être exécutées dans le cadre des pipelines de validation généraux du client. Intégrez-les au processus de développement du client.
 
@@ -111,7 +111,7 @@ Le point de contrôle qualité de l’audit de l’expérience effectue des audi
 
 Ce point de contrôle qualité est fourni par AEM prêt à l’emploi, mais ne bloque pas les pipelines de déploiement. Par défaut, un audit est effectué sur la page racine (`/`) de l’instance de publication. Vous pouvez contribuer en configurant jusqu’à 25 chemins personnalisés pris en compte pour les audits.
 
-Voir [&#x200B; Tests de contrôle de l’expérience](/help/implementing/cloud-manager/reports/report-experience-audit.md) pour plus d’informations.
+Voir [ Tests de contrôle de l’expérience](/help/implementing/cloud-manager/reports/report-experience-audit.md) pour plus d’informations.
 
 ### Validations client
 
@@ -119,7 +119,7 @@ Le point de contrôle qualité des validations client est un espace réservé à
 
 Vous pouvez y choisir les outils et les structures de votre choix. Contrairement aux tests de fonction client et aux tests d’interface utilisateur personnalisés, il n’existe aucune limite liée à AEM as a Cloud Service. Par conséquent, Adobe vous recommande d’effectuer ici des tests fonctionnels et d’interface utilisateur à long terme.
 
-Vous pouvez choisir n’importe quel outil et framework, mais Adobe suggère d’aligner les tests d’intégration et d’interface utilisateur HTTP sur les outils et frameworks utilisés dans les points de contrôle de qualité de test fonctionnels et d’interface utilisateur personnalisés. En outre, Adobe recommande d’incorporer [&#x200B; Environnements de développement rapide (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) dans votre stratégie de test locale afin de refléter fidèlement les environnements cloud AEM.
+Vous pouvez choisir n’importe quel outil et framework, mais Adobe suggère d’aligner les tests d’intégration et d’interface utilisateur HTTP sur les outils et frameworks utilisés dans les points de contrôle de qualité de test fonctionnels et d’interface utilisateur personnalisés. En outre, Adobe recommande d’incorporer [ Environnements de développement rapide (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) dans votre stratégie de test locale afin de refléter fidèlement les environnements cloud AEM.
 
 ### Test manuel
 
