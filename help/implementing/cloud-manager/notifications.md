@@ -5,10 +5,10 @@ exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: b8faae6a4237bf7d564bf989b4e728342c7bd5fc
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 73%
+source-wordcount: '593'
+ht-degree: 53%
 
 ---
 
@@ -19,11 +19,11 @@ Découvrez comment Cloud Manager vous informe des événements importants.
 
 ## Notifications dans Cloud Manager {#cloud-manager-notifications}
 
-[!UICONTROL Cloud Manager] vous envoie des notifications lorsqu’un pipeline de production démarre et se termine (avec succès ou non) au début d’un déploiement en production.
+ vous envoie des notifications lorsqu’un pipeline de production démarre et se termine (avec succès ou non) au début d’un déploiement en production.
 
 Ces notifications sont envoyées via le système de notifications [!UICONTROL Experience Cloud] aux utilisateurs et utilisatrices disposant des rôles **Propriétaire de l’entreprise**, **Responsable de programme** et **Responsable de déploiement**.
 
-Les notifications s’affichent dans une barre latérale dans [!UICONTROL Cloud Manager] et dans [!UICONTROL Experience Cloud] d’Adobe. Les nouvelles notifications sont signalées sur l’icone en forme de cloche dans l’en-tête.
+Les notifications s’affichent dans une barre latérale dans [!UICONTROL Cloud Manager] et dans [!UICONTROL Experience Cloud] d’Adobe. Un badge est attribué à l’icône représentant une cloche dans l’en-tête lorsque vous recevez de nouvelles notifications.
 
 ![Icône de notifications](assets/notifications-bell-badged.png)
 
@@ -51,7 +51,7 @@ Cliquez sur l’icône d’engrenage en haut de la barre latérale de notificati
 
 ### Abonnements {#subscriptions}
 
-Les abonnements définissent les produits pour lesquels vous recevez des notifications et leur type.
+Les abonnements définissent les produits pour lesquels vous recevez des notifications et les types de notifications.
 
 ![Abonnements aux notifications](assets/notifications-subscriptions.png)
 
@@ -65,7 +65,7 @@ Les alertes de priorité sont marquées d’une balise **ÉLEVÉE**. Vous pouvez
 
 ![Priorité des notifications](assets/notifications-priority.png)
 
-Utilisez le menu déroulant pour ajouter à la liste des catégories qui remplissent les critères de priorité. Cliquez sur le X à côté des noms de catégorie pour les supprimer.
+Utilisez le menu déroulant pour ajouter à la liste des catégories qui remplissent les critères de priorité. Cliquez sur X à côté des noms de catégorie pour les supprimer.
 
 ### Alertes {#alerts}
 
@@ -85,10 +85,10 @@ Les notifications sont disponibles dans l’interface utilisateur web de toutes 
 
 ![E-mails de notification](assets/notifications-emails.png)
 
-Par défaut, aucun e-mail n‘est envoyé. Vous pouvez choisir de recevoir des e-mails :
+Par défaut, aucun e-mail n’est envoyé. Vous pouvez choisir de recevoir des e-mails :
 
 * Immédiatement
 * Chaque jour
 * Chaque semaine
 
-Lorsque vous choisissez **Notifications instantanées**, les e-mails sont envoyés immédiatement pour chaque notification. Pour **Résumé quotidien** et **Résumé hebdomadaire**, vous pouvez choisir le moment où votre résumé quotidien est envoyé, et le jour et le moment où votre résumé hebdomadaire est envoyé.
+Lorsque vous choisissez **Notifications instantanées**, les e-mails sont envoyés immédiatement pour chaque notification. Pour **Envoi quotidien** et **Envoi hebdomadaire**, vous pouvez choisir le moment où votre résumé quotidien est envoyé, ainsi que le jour et le moment où votre résumé hebdomadaire est envoyé.

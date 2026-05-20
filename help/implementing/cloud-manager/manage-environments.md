@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 7e9e6e98638b099c5d6f9820cb6f675afe44bfaf
+source-git-commit: b8faae6a4237bf7d564bf989b4e728342c7bd5fc
 workflow-type: tm+mt
-source-wordcount: '2464'
+source-wordcount: '2585'
 ht-degree: 35%
 
 ---
@@ -23,7 +23,7 @@ Un utilisateur disposant des autorisations requises peut créer les types d’en
 
 | Type d’environnement | Description |
 | --- | --- |
-| **Production + Évaluation** | Les environnements de production et d’évaluation sont disponibles par paire et sont utilisés respectivement à des fins de production et de test. Effectuez des tests de performance et de sécurité sur l’environnement d’évaluation. Celui-ci a la même taille que l’environnement de production. |
+| **Production + Évaluation** | Les environnements de production et d’évaluation sont disponibles par paire et sont utilisés respectivement à des fins de production et de test. Effectuez les tests de performance et de sécurité dans un environnement de test. Celui-ci a la même taille que l’environnement de production. |
 | **Développement** | Un environnement de développement peut être créé à des fins de développement et de test et sera associé uniquement aux pipelines qui ne sont pas en production. Les environnements de développement n’ont pas la même taille que les environnements de test et de production et ne doivent pas être utilisés pour effectuer des tests de performance et de sécurité. |
 | **Développement rapide** | Un environnement de développement rapide (RDE) permet aux développeurs de déployer et d’examiner rapidement les modifications. Cette fonctionnalité réduit le temps nécessaire pour tester les fonctionnalités qui ont déjà été validées dans un environnement de développement local. Pour plus d’informations sur l’utilisation d’un RDE, consultez la [documentation sur l’environnement de développement rapide](/help/implementing/developing/introduction/rapid-development-environments.md). |
 | **Environnement de test spécialisé** | Les environnements de test spécialisés offrent un espace dédié pour valider les fonctionnalités dans des conditions de quasi-production, idéal pour les tests de résistance et les contrôles avancés avant déploiement. Voir [Ajout d’un environnement de test spécialisé](/help/implementing/cloud-manager/specialized-test-environment.md) |
@@ -221,7 +221,7 @@ Vous pouvez également accéder aux mêmes informations à partir de l’onglet 
 
    ![Informations supplémentaires sur le statut des régions de publication dans l’onglet Environnements &#x200B;](assets/additional-publish-region-status-environments-tab.png)
 
-Si des problèmes sont signalés avec d’autres régions de publication, veuillez patienter. Cloud Manager tente continuellement de récupérer la région et elle peut être disponible à tout moment. Si le problème persiste au bout de plusieurs heures, vous pouvez supprimer la zone géographique de publication supplémentaire et la rajouter (dans la même zone géographique ou dans une autre) pour déclencher un déploiement complet.
+Si des problèmes sont signalés avec des régions de publication supplémentaires, patientez quelques instants. Cloud Manager tente en permanence de récupérer la région et elle peut être à nouveau disponible à tout moment. Si le problème persiste pendant plusieurs heures, supprimez et ajoutez à nouveau la région de publication supplémentaire (la même région ou une autre) pour déclencher un déploiement complet.
 
 La durée pendant laquelle vous attendez que le système se rétablisse de lui-même avant de prendre des mesures supplémentaires dépend de l’impact de la défaillance de cette région sur vos systèmes.
 
@@ -231,7 +231,7 @@ Quoi qu’il en soit, [le trafic est toujours acheminé vers la région en ligne
 
 En tant que service natif du cloud, Adobe gère automatiquement les mises à jour de vos environnements de développement, d’évaluation et de production dans les programmes de production.
 
-Toutefois, les mises à jour apportées aux environnements dans les programmes Sandbox sont gérées dans les programmes. Lorsqu’un tel environnement n’exécute pas la dernière version d’AEM disponible pour le public, le statut sur la carte **Environnements** sur l’écran **Vue d’ensemble** du programme affiche **Mise à jour disponible**.
+Cependant, les environnements de programme Sandbox sont mis à jour dans le programme lui-même. Si un environnement n’exécute pas la dernière version publique d’AEM, la carte **Environnements** du programme **Aperçu** s’affiche **Mise à jour disponible**.
 
 ![Statut de mise à jour des environnements](assets/environ-update.png)
 
@@ -338,7 +338,7 @@ Les noms de domaine personnalisés sont pris en charge dans Cloud Manager pour l
 
 Une Liste autorisée IP est prise en charge dans Cloud Manager pour les services de création, de publication et de prévisualisation des programmes Sites.
 
-Pour gérer les Listes autorisées IP, accédez à la page ![Icône Données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environnements** de la page **Aperçu** de votre programme. Cliquez sur un environnement pour en gérer les détails.
+Pour gérer les Listes autorisées IP, accédez à la page ![Icône Données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environnements** de la page **Aperçu** de votre programme. Sélectionnez un environnement individuel pour en gérer les détails.
 
 ### Application d’une Liste autorisée IP {#apply-ip-allow-list}
 

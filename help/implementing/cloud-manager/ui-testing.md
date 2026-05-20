@@ -5,10 +5,10 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
+source-git-commit: b8faae6a4237bf7d564bf989b4e728342c7bd5fc
 workflow-type: tm+mt
-source-wordcount: '2888'
-ht-degree: 55%
+source-wordcount: '2891'
+ht-degree: 47%
 
 ---
 
@@ -26,11 +26,11 @@ Le test d’interface utilisateur personnalisé est une fonctionnalité facultat
 
 AEM fournit une suite intégrée de [points de contrôle de qualité Cloud Manager](/help/implementing/cloud-manager/custom-code-quality-rules.md) pour garantir la fluidité de la mise à jour des applications personnalisées. En particulier, les points de contrôle informatiques prennent déjà en charge la création et l’automatisation des tests personnalisés à l’aide des API d’AEM.
 
-Les tests de l’interface utilisateur sont empaquetés dans une image Docker afin de permettre un large choix de langages et de structures (telles que Cypress, Selenium, Java et Maven, ou encore Javascript). En outre, un projet de tests d’interface utilisateur peut être facilement généré à l’aide de [l’archétype de projet AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/overview).
+Les tests de l’interface utilisateur sont empaquetés dans une image Docker afin de permettre un large choix de langages et de structures (telles que Cypress, Selenium, Java et Maven, ou encore Javascript). En outre, un projet de test de l’interface utilisateur peut être facilement généré à l’aide de [l’archétype de projet AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/overview).
 
 Adobe encourage l’utilisation de Cypress, car il propose un rechargement en temps réel et une attente automatique, ce qui permet de gagner du temps et d’améliorer la productivité pendant les tests. Cypress fournit également une syntaxe simple et intuitive, ce qui facilite l’apprentissage et l’utilisation, même pour les utilisateurs et utilisatrices qui ne connaissent pas les tests.
 
-Les tests de l’interface utilisateur s’exécutent en tant que point de contrôle qualité à l’étape [**Tests personnalisés de l’interface utilisateur**](/help/implementing/cloud-manager/deploy-code.md), obligatoire dans les [pipelines de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) et facultatif dans les [pipelines hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Tous les tests de l’interface utilisateur, y compris les régressions et les nouvelles fonctionnalités, permettent de détecter et de signaler des erreurs.
+Les tests de l’interface utilisateur s’exécutent en tant que point de contrôle qualité à l’étape [**Tests personnalisés de l’interface utilisateur**](/help/implementing/cloud-manager/deploy-code.md), obligatoire dans les [pipelines de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) et facultatif dans les [pipelines hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Tous les tests de l’interface utilisateur, y compris les tests de régression et de nouvelles fonctionnalités, permettent de détecter et de signaler les erreurs.
 
 Contrairement aux tests fonctionnels personnalisés qui sont des tests HTTP écrits en Java, les tests de l’interface utilisateur peuvent être une image Docker. Les tests peuvent être écrits dans n’importe quelle langue, à condition qu’ils respectent les conventions définies dans la section [&#x200B; Création de tests d’interface utilisateur](#building-ui-tests).
 
@@ -64,9 +64,9 @@ Cette section décrit les étapes requises pour configurer des tests d’interfa
 
 ## Création de tests d’interface utilisateur {#building-ui-tests}
 
-Un projet Maven génère un contexte de build Docker. Ce contexte de build Docker décrit comment créer une image Docker contenant les tests de l’interface utilisateur que les utilisateurs et utilisatrices de Cloud Manager utilisent pour générer une image Docker contenant les tests de l’interface utilisateur réels.
+Un projet Maven génère un contexte de build Docker. Ce contexte de build Docker décrit comment créer une image Docker. L’image contient les tests de l’interface utilisateur que Cloud Manager utilise pour générer une image Docker contenant les tests de l’interface utilisateur réels.
 
-Cette section décrit les étapes à suivre pour ajouter un projet de tests de l’interface utilisateur à votre référentiel.
+Cette section décrit les étapes à suivre pour ajouter un projet de test de l’interface utilisateur à votre référentiel.
 
 >[!TIP]
 >
@@ -118,7 +118,7 @@ Le fichier `pom.xml` prend en charge la création Maven. Ajoutez une exécution 
 </plugin>
 ```
 
-Cette exécution indique au module d’extension Maven Assembly de créer une archive basée sur les instructions contenues dans `assembly-ui-test-docker-context.xml`, nommée **descripteur d’assemblage** dans le jargon du plug-in. Le descripteur d’assemblage répertorie tous les fichiers qui doivent faire partie de l’archive.
+Cette exécution indique au plug-in Maven Assembly de créer une archive basée sur les instructions contenues dans `assembly-ui-test-docker-context.xml`, appelée descripteur d’assemblage **&#x200B;**&#x200B;dans le jargon du plug-in. Le descripteur d’assemblage répertorie tous les fichiers qui doivent faire partie de l’archive.
 
 ```xml
 <assembly>
@@ -153,7 +153,7 @@ Le descripteur d’assemblage demande au module d’extension de créer une arch
 * Le script `wait-for-grid.sh` dont les objectifs sont décrits ci-dessous
 * Des tests d’interface utilisateur, implémentés par un projet Node.js dans le dossier `test-module`
 
-Le descripteur d’assemblage exclut également certains fichiers qui pourraient être générés lors de l’exécution locale des tests de l’interface utilisateur. Cela garantit une archive plus petite et accélère la création.
+Le descripteur d’assemblage exclut également certains fichiers qui pourraient être générés lors de l’exécution locale des tests de l’interface utilisateur. Ce processus garantit une archive plus petite et des versions plus rapides.
 
 Cloud Manager récupère automatiquement l’archive de contexte de création Docker et crée l’image de test pendant les pipelines de déploiement. Cloud Manager exécute ensuite l’image Docker pour réaliser les tests de l’interface utilisateur sur votre application.
 
@@ -190,7 +190,7 @@ Pour inclure un fichier `testing.properties` dans l’artefact de build, ajoutez
 
 Si vous utilisez les exemples fournis par Adobe :
 
-* Pour le dossier `ui.tests` JavaScript généré à partir de l’[archétype de projet AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests), vous pouvez exécuter la commande ci-dessous pour ajouter la configuration requise.
+* Pour le dossier de `ui.tests` basé sur JavaScript généré à partir de l’[archétype de projet AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests), vous pouvez exécuter la commande suivante pour ajouter la configuration requise.
 
   ```shell
   echo "ui-tests.version=1" > testing.properties
@@ -234,7 +234,7 @@ Les variables d’environnement suivantes seront transmises à votre image Docke
 | `PROXY_RETRY_ATTEMPTS` | `12` | Nombre suggéré de tentatives de reprise en attendant la préparation du serveur proxy | Tous sauf Selenium |
 | `PROXY_RETRY_DELAY` | `5` | Délai suggéré entre les tentatives de reprise en attendant la préparation du serveur proxy | Tous sauf Selenium |
 
-`* these values will be empty if there is no publish instance`
+`* these values are empty if there is no publish instance`
 
 Les exemples de test d’Adobe fournissent des fonctions d’assistance pour accéder aux paramètres de configuration :
 
@@ -246,7 +246,7 @@ Cypress : utiliser la fonction standard `Cypress.env('VARIABLE_NAME')`
 
 ### Générer des rapports de test {#generate-test-reports}
 
-L’image Docker doit générer des rapports de test au format XML JUnit et les enregistrer dans le chemin spécifié par la variable d’environnement `REPORTS_PATH`. Le format XML JUnit est un format très répandu pour les rapports de résultats de tests. Si l’image Docker utilise Java et Maven, les modules de test standard tels que le [plug-in Maven Surefire](https://maven.apache.org/surefire/maven-surefire-plugin/) et le [plug-in Maven Failsafe](https://maven.apache.org/surefire/maven-failsafe-plugin/) peuvent générer ces rapports prêts à l’emploi.
+L’image Docker doit générer des rapports de test au format XML `JUnit` et les enregistrer dans le chemin spécifié par la variable d’environnement `REPORTS_PATH`. Le format XML `JUnit` est un format très répandu pour le compte rendu des résultats de tests. Si l’image Docker utilise Java et Maven, les modules de test standard tels que le [plug-in Maven Surefire](https://maven.apache.org/surefire/maven-surefire-plugin/) et le [plug-in Maven Failsafe](https://maven.apache.org/surefire/maven-failsafe-plugin/) peuvent générer ces rapports prêts à l’emploi.
 
 Si l’image Docker est implémentée avec d’autres langages de programmation ou des exécuteurs de tests, consultez la documentation des outils choisis pour savoir comment générer des rapports XML JUnit.
 
@@ -266,7 +266,7 @@ Si l’image Docker est implémentée avec d’autres langages de programmation 
 >
 >Pour exécuter les tests fonctionnels à partir de votre ordinateur local, créez un utilisateur ou une utilisatrice avec des autorisations de type administration afin d’obtenir le même comportement.
 
-* L’infrastructure en conteneur qui est prévue pour les tests fonctionnels est restreinte par les limites suivantes :
+* L’infrastructure en conteneur qui est prévue pour les tests fonctionnels est limitée par les éléments suivants :
 
 | Type | Valeur | Description |
 |----------------------|-------|-----------------------------------------------------------------------|
@@ -290,7 +290,7 @@ Consultez également la section [&#x200B; Échec du test de l’interface utilis
 
 ### Attendre que Selenium soit prêt {#waiting-for-selenium}
 
-Avant le début des tests, l’image Docker doit garantir que le serveur Selenium est opérationnel. L’attente du service de Selenium est un processus en deux étapes.
+Avant le début des tests, l’image Docker doit garantir que le serveur Selenium est opérationnel. L’attente du service Selenium est un processus en deux étapes.
 
 1. Lecture de l’URL du service Selenium à partir de la variable d’environnement `SELENIUM_BASE_URL`.
 1. Sondage à intervalles réguliers vers le point d’entrée [status](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready) exposé par l’API Selenium.
@@ -302,9 +302,9 @@ Les exemples de test de l’interface utilisateur d’Adobe utilisent `wait-for-
 
 ### Captures d’écran et vidéos {#capture-screenshots}
 
-L’image Docker peut générer une sortie de test supplémentaire (par exemple, des captures d’écran ou des vidéos) et les enregistrer dans le chemin spécifié par la variable d’environnement `REPORTS_PATH`. Tout fichier situé sous la variable d’environnement `REPORTS_PATH` est inclus dans l’archive des résultats du test.
+L’image Docker peut générer une sortie de test supplémentaire (par exemple, des captures d’écran ou des vidéos) et les enregistrer dans le chemin spécifié par la variable d’environnement `REPORTS_PATH`. Tout fichier situé sous le `REPORTS_PATH` est inclus dans l’archive des résultats du test.
 
-Les exemples de test fournis par Adobe créent par défaut des captures d’écran pour tout test ayant échoué.
+Par défaut, les exemples de test fournis par Adobe créent des captures d’écran pour tout test ayant échoué.
 
 Vous pouvez utiliser les fonctions d’assistance pour créer des captures d’écran durant vos tests.
 
@@ -515,15 +515,15 @@ Avant d’activer les tests de l’interface utilisateur dans un pipeline Cloud 
 
 ### Exemple de test Playwright {#playwright-sample}
 
-1. Ouvrez une interface shell et accédez au dossier `ui.tests` dans votre référentiel
+1. Ouvrez un conteneur et accédez au dossier `ui.tests` dans votre référentiel
 
-1. Exécutez la commande ci-dessous pour créer une image Docker à l’aide de Maven.
+1. Exécutez la commande suivante pour créer l’image Docker à l’aide de Maven :
 
    ```shell
    mvn clean package -Pui-tests-docker-build
    ```
 
-1. Exécutez la commande ci-dessous pour lancer les tests à l’aide de Maven.
+1. Exécutez la commande suivante pour démarrer les tests à l’aide de Maven :
 
    ```shell
    mvn verify -Pui-tests-docker-execution \
@@ -546,7 +546,7 @@ Avant d’activer les tests de l’interface utilisateur dans un pipeline Cloud 
 
 1. Ouvrez une interface shell et accédez au dossier `ui.tests/test-module` dans votre référentiel
 
-1. Exécutez les commandes ci-dessous pour lancer les tests à l’aide de Maven
+1. Exécutez les commandes suivantes pour démarrer les tests à l’aide de Maven :
 
    ```shell
    # Start selenium docker image
