@@ -89,7 +89,7 @@ La configuration cloud connecte votre instance Experience Manager à l’instanc
 1. Cliquez sur **Connecter**.  Lors d’une connexion réussie, le message `Authentication Successful` s’affiche.
 1. Cliquez sur **[!UICONTROL Créer]** pour enregistrer les paramètres de configuration du cloud.
 
-![Configuration du cloud ](/help/forms/assets/marketo-engage-cloud-configuration.png)
+![Configuration du cloud &#x200B;](/help/forms/assets/marketo-engage-cloud-configuration.png)
 
 Vous pouvez désormais utiliser la configuration de service cloud créée pour connecter la source de données Marketo Engage à un formulaire adaptatif.
 

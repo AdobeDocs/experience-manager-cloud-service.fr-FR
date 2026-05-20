@@ -58,7 +58,7 @@ Pour créer un scénario, procédez comme suit :
 1. Cliquez sur **[!UICONTROL Scénarios]** ![icône Partager](/help/forms/assets/Smock_ShareAndroid_18_N.svg) dans le panneau de gauche.
 1. Cliquez sur **[!UICONTROL Créer un nouveau scénario]** dans le coin supérieur droit de la page. Une page permettant de créer un nouveau scénario s’affiche à l’écran.
 1. Sélectionnez **[!UICONTROL Nouveau scénario]** dans le coin supérieur gauche de la page, puis saisissez le nom correct du scénario.
-1. Cliquez sur le point d’interrogation et veillez à ajouter le premier module en tant que ****.
+1. Cliquez sur le point d’interrogation et veillez à ajouter le premier module en tant que **&#x200B;**.
 
    ![Ajouter un module AEM Forms](/help/forms/assets/workfront-aemforms.png)
 
@@ -66,7 +66,7 @@ Pour créer un scénario, procédez comme suit :
 
    >[!NOTE]
    >
-   > Il est obligatoire d’ajouter le premier module en tant que ****.
+   > Il est obligatoire d’ajouter le premier module en tant que **&#x200B;**.
 
 1. Sélectionnez la boîte de dialogue **[!UICONTROL Observer les événements de formulaire]** et une fenêtre permettant d’ajouter un webhook s’affiche.
 
@@ -105,7 +105,7 @@ Pour ajouter une connexion :
    >
    > L’URL de l’instance est l’adresse web unique qui pointe vers une instance AEM Forms spécifique.
 
-   Vous pouvez récupérer les informations d’identification du service [ à partir de Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=fr) requises pour créer une connexion.
+   Vous pouvez récupérer les informations d’identification du service [&#x200B; à partir de Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=fr) requises pour créer une connexion.
 
 1. Remplacez `ims-na1.adobelogin.com` dans le point d’entrée **IMS** par la valeur de **imsEndpoint** à partir des informations d’identification de service dans la Developer Console.
 
