@@ -7,10 +7,10 @@ index: false
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 183e999c-9896-49a2-b29b-7c77da380df9
-source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
+source-git-commit: 95e2216ee79433783da384134243f3688ff7797d
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 32%
+source-wordcount: '581'
+ht-degree: 33%
 
 ---
 
@@ -54,8 +54,6 @@ Transformer des documents existants en expériences digitales interactives. Form
 >[!VIDEO](https://video.tv.adobe.com/v/3463164/)
 
 ## Intégration et conditions préalables
-
-Forms Experience Builder est actuellement disponible via un programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail à [&#128279;](mailto:aem-forms-ea@adobe.com) à partir de votre ID d’e-mail officiel.
 
 Experience Builder nécessite un environnement de création de production AEM Forms as a Cloud Service avec des [composants principaux de Forms adaptatif](/help/forms/enable-adaptive-forms-core-components.md).
 

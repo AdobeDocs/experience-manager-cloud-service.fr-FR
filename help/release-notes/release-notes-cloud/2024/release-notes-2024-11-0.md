@@ -4,10 +4,10 @@ description: Notes de mise à jour de la version 2024.11.0 d’ [!DNL Adobe Exp
 feature: Release Information
 role: Admin
 exl-id: 3fd6482e-66f0-48ee-983c-4cb6b7742dcd
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: b336b6e52bf6f3cba64ddd4b4580eabded86afdb
 workflow-type: tm+mt
-source-wordcount: '1810'
-ht-degree: 98%
+source-wordcount: '2217'
+ht-degree: 94%
 
 ---
 
@@ -87,6 +87,22 @@ La vue Assets vous permet désormais d’accéder à Dynamic Media et à des ren
 
 ### Nouvelles fonctionnalités d’AEM Forms {#forms-new-features}
 
+* **[Assistant AEM Forms AI &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/ai-in-aem/agents/brand-experience/experience-production/form-creation)** : L’IA générative pour Forms adaptatif apporte un tout nouveau niveau de puissance et de facilité à vos processus de développement de formulaires. Elle vous permet de créer de meilleurs formulaires plus rapidement que jamais auparavant.
+
+  ![Assistant IA générative, formulaires adaptatifs](/help/forms/assets/generative-ai-assistant.png)
+
+  Les fonctionnalités de l’IA générative proposées sont les suivantes :
+
+   * **Assistant IA pour les requêtes de produits** : obtenez des réponses instantanées à vos question sur les formulaires AEM. L’assistant IA sert de base de connaissances personnelle, fournissant des recommandations et des conseils pertinents directement au sein de la plateforme.
+
+   * **Génération de formulaires adaptatifs** : créez facilement des formulaires complets avec des prompts d’IA générative. L’IA générative d’Adobe génère automatiquement des formulaires conviviaux qui réduisent les abandons et personnalisent l’expérience.
+
+   * **Génération de panneau pour Forms** : générez des sections de formulaire adaptées à des besoins spécifiques de collecte de données. Par exemple, générez des sections pour collecter des informations sur le paiement, les préférences des clientes et clients ou les détails du voyage.
+
+   * **Modification des mises en page de formulaire** : testez différentes mises en page et conceptions à l’aide des prompts d’IA générative. Testez différentes mises en page, telles que l’assistant ou les onglets, afin de trouver ce qui convient le mieux pour votre formulaire. Utilisez les prompts d’IA générative afin d’optimiser vos formulaires pour la réactivité mobile et de créer des formulaires attrayants pour les utilisateurs et utilisatrices.
+
+   * **Configurer l’action d’envoi** : utilisez les prompts d’IA générative pour configurer facilement une action d’envoi pour votre formulaire. Faites votre choix parmi une bibliothèque d’actions d’envoi préconfigurées ou parmi une liste d’actions d’envoi personnalisées, créées et déployées par votre propre équipe de développement.
+
 * **[Mise à jour simplifiée des portées d’Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)** : vous pouvez modifier les portées d’une configuration Adobe Sign directement depuis la page Configurations d’AEM Cloud, simplifiant et accélérant ainsi la mise à jour des configurations existantes.
 
 * **[Prise en charge des fonctions asynchrones pour les formulaires adaptatifs](/help/forms/using-async-funct-in-rule-editor.md)** : lorsque votre formulaire adaptatif nécessite des opérations asynchrones, comme l’attente de processus externes ou la récupération de données, vous pouvez implémenter ces opérations avec des fonctions personnalisées et les configurer dans l’éditeur de règles.
@@ -151,7 +167,7 @@ intuitive and improving the mobile form-filling experience.
 
 >[!IMPORTANT]
 >
-> Vous souhaitez adhérer au Programme d’accès anticipé pour des formulaires innovants ? Envoyez un e-mail depuis votre adresse officielle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) avec la liste des fonctionnalités qui vous intéressent.## Module complémentaire CIF {#cloud-services-cif}
+> Vous souhaitez adhérer au Programme d’accès anticipé pour des formulaires innovants ? Envoyez un e-mail à partir de votre adresse officielle à [&#128279;](mailto:aem-forms-ea@adobe.com) avec la liste des fonctionnalités qui vous intéressent.## Module complémentaire CIF {#cloud-services-cif}
 
 ## Module complémentaire CIF {#cif}
 
@@ -174,8 +190,8 @@ Découvrez les [API OpenAPI AEM](/help/implementing/developing/open-api-based-ap
 
 Concrètement, les points d’entrée d’API répertoriés ci-dessous sont disponibles dans le cadre d’un programme d’adoption précoce. Si cela vous intéresse, envoyez un e-mail à l’adresse [aem-apis@adobe.com](mailto:aem-apis@adobe.com) décrivant comment vous prévoyez de les utiliser.
 
-* [API Sites Content Fragments](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
-* [API Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
+* [API de fragments de contenu de sites](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
+* [API ASSETS](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
 * API de dossiers Sites et Assets
 * [API Forms Communications](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 

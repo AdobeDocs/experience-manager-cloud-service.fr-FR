@@ -4,7 +4,7 @@ description: Découvrez comment l’agent de production Experience dans AEM vous
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 1dec50e6-d728-41d4-8868-5f9db568d15b
-source-git-commit: fe41f25ddc2b7ec20b74c72d4a8d19d936c22539
+source-git-commit: 5d1a560b4eb386d0c3795d6634742ffce8ef4c71
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 4%
@@ -33,7 +33,7 @@ L’agent effectue les tâches suivantes :
 
 ### Tâche de mise à jour du contenu {#content-update}
 
-La tâche [&#x200B; Mise à jour de contenu &#x200B;](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) met à jour facilement le contenu existant, y compris les fragments de contenu, les pages, les formulaires et les ressources. L’agent peut effectuer des actions telles que la mise à jour, la suppression, le remplacement ou l’ajout d’éléments de contenu pour que les expériences restent exactes et à jour. Les entrées peuvent être des descriptions en langage naturel et, lorsqu’elles sont utilisées avec des PDF et des captures d’écran Jira, elles peuvent également fournir des entrées.
+La tâche [&#x200B; Mise à jour de contenu &#x200B;](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) met à jour facilement le contenu existant, y compris les fragments de contenu, les pages, les formulaires et les ressources. L’agent peut effectuer des actions telles que la mise à jour, la suppression, le remplacement et l’ajout d’éléments de contenu pour que les expériences restent exactes et à jour. Les entrées peuvent être des descriptions en langage naturel et, lorsqu’elles sont utilisées avec Jira, les PDF et les captures d’écran peuvent également fournir des entrées.
 
 ### Création de tâche de contenu {#content-create}
 

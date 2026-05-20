@@ -7,10 +7,10 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 60fa6bd9f29e670acb2acf52a40266e699bb99d3
 workflow-type: tm+mt
-source-wordcount: '3235'
-ht-degree: 20%
+source-wordcount: '2666'
+ht-degree: 18%
 
 ---
 
@@ -24,38 +24,45 @@ Le programme d’accès anticipé d’AEM Forms vous offre une opportunité uniq
 
 ## Comment adhérer au programme Accès anticipé ?
 
-Si vous souhaitez rejoindre notre programme d&#39;accès anticipé pour toute innovation d&#39;accès anticipé, envoyez simplement un e-mail à partir de votre adresse officielle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) pour demander l&#39;accès. Vous pouvez demander l’accès à toutes les innovations ou à certaines d’entre elles.
+Si vous souhaitez rejoindre notre programme d&#39;accès anticipé pour toute innovation d&#39;accès anticipé, envoyez simplement un e-mail à partir de votre adresse officielle à [&#128279;](mailto:aem-forms-ea@adobe.com) pour demander l&#39;accès. Vous pouvez demander l’accès à toutes les innovations ou à certaines d’entre elles.
 
 ## Innovations en accès anticipé
 
-### Assistant d’IA d’AEM Forms (Gen AI)
+<!--
 
-L’IA générative pour les formulaires adaptatifs offre un nouveau niveau de puissance et de facilité à vos processus de développement de formulaires. Grâce aux fonctionnalités intelligentes de l’IA, vous pouvez créer de meilleurs formulaires plus rapidement que jamais auparavant.
+### AEM Forms AI Assistant (Gen AI)
+
+Generative AI for Adaptive Forms brings a whole new level of power and ease to your forms development processes. With the help of intelligent AI features, you can build better forms faster than ever before. 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3435527)
 
-Les fonctionnalités d’IA générative proposées par l’intermédiaire de l’assistant d’IA AEM Forms sont les suivantes :
+The Generative AI capabilities on offer via AEM Forms AI Assistant are: 
 
-* **Assistant IA pour les requêtes de produits** : obtenez des réponses instantanées à vos question sur les formulaires AEM. Notre assistant d’IA agit comme votre propre base de connaissances personnelle, fournissant des conseils éclairés et des recommandations directement au sein de la plateforme.
+* **AI Assistant for Product Queries**: Get instant answers to your AEM form-related questions. Our AI assistant acts as your own personal knowledge base, providing insightful guidance and recommendations directly within the platform.
 
-* **Génération de formulaires adaptatifs** : créez facilement des formulaires complets avec des prompts d’IA générative. Notre IA générative génère automatiquement des formulaires conviviaux qui réduisent les abandons et personnalisent l’expérience.
+* **Adaptive Form Generation**: Effortlessly create full-fledged forms with Generative AI Prompts. Our Generative AI automatically generates user-friendly forms that reduce drop-offs and personalize the experience.
 
-* **Génération de panneaux pour Forms** : laissez l’IA faire le gros du travail. Générez des panneaux de formulaires préconfigurés adaptés aux besoins spécifiques de collecte de données. Par exemple, générez des sections pour collecter des informations sur le paiement, les préférences des clients ou les détails de voyage. Gagnez du temps et assurez la cohérence avec les dispositions et fonctionnalités prédéfinies.
+* **Panel Generation for Forms**: Let AI do the heavy lifting. Generate pre-built form panels tailored to specific data collection needs. For example, generate sections for collecting payment information, customer preferences, or travel details. Save time and ensure consistency with pre-defined layouts and functionalities.
 
-* **Modification des mises en page de formulaire** : testez différentes mises en page et conceptions à l’aide des prompts d’IA générative. Testez différentes mises en page, telles que l’assistant ou les onglets, afin de trouver ce qui convient le mieux pour votre formulaire. Utilisez les prompts d’IA générative afin d’optimiser vos formulaires pour la réactivité mobile et de créer des formulaires attrayants pour les utilisateurs et utilisatrices.
+* **Changing Form Layouts**: Experiment with different layouts and designs using Generative AI Prompts. Try out different layouts like wizard or tabbed views to find the perfect fit for your form. Use Generative AI Prompts to optimize your forms for mobile responsiveness and create visually engaging forms that users love.
 
-* **Configurer l’action d’envoi** : utilisez les prompts d’IA générative pour configurer facilement une action d’envoi pour votre formulaire. Faites votre choix parmi une bibliothèque d’actions d’envoi préconfigurées ou parmi une liste d’actions d’envoi personnalisées, créées et déployées par votre propre équipe de développement.
+* **Configure Submit Action**: Use Generative AI prompts to effortlessly configure a submit action for your form. Choose from a library of pre-built submit actions or from a list of custom submit actions, created and deployed by your own development team.
 
+-->
 
-### Connecteur AEM Forms Workfront Fusion
+<!--
 
-Le connecteur Workfront Fusion d’AEM Forms permet une intégration transparente entre Adobe Experience Manager (AEM) Forms et Adobe Workfront Fusion. Adobe Workfront fait office d’application de gestion du travail, centralisant l’ensemble du cycle de vie du travail, tandis que Workfront Fusion agit comme une plateforme d’intégration facilitant la connectivité entre Workfront et diverses applications d’entreprise.
+### AEM Forms Workfront Fusion Connector
 
-Grâce au connecteur Workfront Fusion d’AEM Forms, vous pouvez concevoir des workflows qui se déclenchent automatiquement lors de l’envoi d’un formulaire adaptatif. Par exemple, envisagez un scénario où un workflow est lancé pour affecter à une personne spécifique la tâche de révision des données envoyées, ce qui permet d’approuver ou de rejeter une application en fonction des informations capturées par le biais du formulaire adaptatif. Cette intégration rationalisée améliore l’efficacité et apporte un nouveau niveau d’automatisation à vos processus de workflow.
+The AEM Forms Workfront Fusion Connector empowers seamless integration between Adobe Experience Manager (AEM) Forms and Adobe Workfront Fusion. Adobe Workfront serves as a work management application, centralizing the entire work lifecycle, while Workfront Fusion acts as the integration platform facilitating connectivity between Workfront and various business applications. 
 
-Prêt à démarrer ? La documentation [Envoyer un formulaire adaptatif à Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md) fournit un guide détaillé sur l’utilisation de l’innovation.
+Using the AEM Forms Workfront Fusion Connector, you can design workflows that are triggered automatically upon submission of an Adaptive Form. For instance, envision a scenario where a workflow is initiated to assign a specific individual the task of reviewing submitted data, allowing approval or rejection of an application based on the information captured through the adaptive form. This streamlined integration enhances efficiency and brings a new level of automation to your workflow processes.
 
-<!-- <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> -->
+Ready to start? The [submit an Adaptive Form to Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md) documentation provides a step-by-step guide to use the innovation.
+
+<br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/>
+
+-->
 
 ### Forms de conversation
 
@@ -63,7 +70,7 @@ L’innovation Conversational Forms vous permet d’interagir avec des formulair
 
 Vous pouvez simplement faire glisser et déposer le composant Forms de conversation sur votre page AEM Sites et commencer. Aucun codage n’est requis, de sorte que tout le monde peut créer rapidement des expériences de conversation Forms attrayantes et conviviales.
 
-![Forms de conversation, remplissage de formulaire de style bot conversationnel, Forms adaptatif](/help/forms/assets/conversational-forms.png)
+Forms de conversation, remplissage de formulaire de style bot conversationnel, Forms adaptatif![&#128279;](/help/forms/assets/conversational-forms.png)
 
 Voici ce que le Forms de conversation apporte de plus :
 
@@ -74,24 +81,28 @@ Voici ce que le Forms de conversation apporte de plus :
 
 Les Forms de conversation sont plus qu’une nouveauté : elles changent la donne en termes d’expérience utilisateur.  Stimulez l’engagement, réduisez l’abandon de formulaire et rendez l’interaction avec votre site web plus agréable pour tous.
 
-### Connecteur AEM Forms vers Marketo
+<!--
 
-Le connecteur [AEM Forms vers Marketo](/help/forms/integrate-form-to-marketo-engage.md) comble le fossé entre vos formulaires web (Forms adaptatif) créés avec Adobe Experience Manager (AEM) et votre plateforme d’automatisation du marketing, Marketo.
+### AEM Forms to Marketo Connector
 
-Lorsqu’une personne envoie un formulaire sur votre site web créé avec AEM Adaptive Forms, le connecteur garantit que les données envoyées sont automatiquement envoyées à Marketo. Vous n’avez ainsi plus besoin de saisir les données manuellement et le risque d’erreur est réduit.
+The [AEM Forms to Marketo Connector](/help/forms/integrate-form-to-marketo-engage.md) bridges the gap between your web forms (Adaptive Forms) built with Adobe Experience Manager (AEM) and your marketing automation platform, Marketo. 
 
-![Formulaire AEM - Connecteur Marketo](/help/forms/assets/aem-forms-marketo-connector.jpeg)
+When someone submits a form on your website created with AEM Adaptive Forms, the connector ensures that the submitted data is automatically sent to Marketo. This eliminates the need for manual data entry and reduces the risk of errors. 
 
-En rationalisant le processus de transfert de données, le connecteur peut vous aider à améliorer les taux de conversion de votre site web. En envoyant automatiquement les données de prospect à Marketo, vous pouvez vous assurer que les prospects qualifiés sont rapidement intégrés à vos programmes de formation.
+![AEM Form - Marketo Connector](/help/forms/assets/aem-forms-marketo-connector.jpeg)
 
-En substance, le connecteur AEM Forms vers Marketo vous permet d’exploiter les points forts des deux plateformes pour créer un funnel marketing plus efficace.
+By streamlining the data transfer process, the connector can help you improve your website's conversion rates. By automatically sending lead data to Marketo, you can ensure that qualified leads are quickly entered into your nurturing programs.
 
-Prêt à démarrer ? Les articles suivants fournissent des instructions détaillées sur l’utilisation de l’innovation.
+In essence, AEM Forms to Marketo Connector helps you leverage the strengths of both platforms to create a more efficient and effective marketing funnel.
 
-* [Intégrer Marketo Engage à AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
-* [Intégration d’un formulaire adaptatif à Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-* [Configuration de Marketo Engage et de la source de données pour le Forms adaptatif existant](/help/forms/use-marketo-engage-data-source-in-form.md)
-* [Envoyer un formulaire adaptatif existant à Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+Ready to start? The following articles provides detailed instructions to use the innovation.
+
+* [Integrate Marketo Engage with AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
+* [Integrate an Adaptive Form with Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md) 
+* [Configure Marketo Engage ad data source for existing Adaptive Forms](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [Submit an existing Adaptive Form to Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+
+-->
 
 ### Communications interactives sur le cloud
 
@@ -144,7 +155,7 @@ Affichez automatiquement la mention « N° de page # de ## » sur les gabarits p
 * Créer une correspondance de haute qualité, sécurisée et conforme à la loi
 * Gestion de la création, de l’assemblage et de la diffusion des correspondances interactives pilotées par les données
 
-Prêt à démarrer ? L’éditeur de communications interactives est disponible sous le programme d’accès anticipé pour les déploiements de Forms as a Cloud Service. Pour demander l’accès, envoyez l’ID d’organisation et les détails du programme par e-mail à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) à partir de votre adresse officielle.
+Prêt à démarrer ? L’éditeur de communications interactives est disponible sous le programme d’accès anticipé pour les déploiements de Forms as a Cloud Service. Pour demander l’accès, envoyez l’ID d’organisation et les détails du programme par e-mail à [&#128279;](mailto:aem-forms-ea@adobe.com) à partir de votre adresse officielle.
 
 ### Intégration d’AEM Forms à Adobe Experience Platform (AEP)
 
@@ -194,7 +205,7 @@ not sure what's going on with this video link. cleaned up version below
 * **Productivité des développeurs** : concentrez-vous sur la création d’une logique commerciale et d’une interface utilisateur, tandis que l’interface de ligne de commande gère des tâches de configuration répétitives.
 * **Intégration transparente** : les composants générés sont prêts à être utilisés et à s’intégrer à vos projets AEM Forms existants.
 
-Prêt à démarrer ? L’outil de ligne de commande AEM Forms est disponible dans le cadre du programme d’accès anticipé pour les déploiements de Forms as a Cloud Service. Pour demander l’accès, envoyez l’ID d’organisation et les détails du programme par e-mail à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) à partir de votre adresse officielle.
+Prêt à démarrer ? L’outil de ligne de commande AEM Forms est disponible dans le cadre du programme d’accès anticipé pour les déploiements de Forms as a Cloud Service. Pour demander l’accès, envoyez l’ID d’organisation et les détails du programme par e-mail à [&#128279;](mailto:aem-forms-ea@adobe.com) à partir de votre adresse officielle.
 
 ### Outil d’intégration d’API pour les données de formulaire dynamique
 
@@ -215,21 +226,27 @@ Cet outil est particulièrement utile pour les scénarios tels que la saisie aut
 
 ## Autres innovations en matière d&#39;accès précoce
 
-### Modèles d’e-mail HTML dans les formulaires adaptatifs
+<!--
 
+### HTML email Templates in Adaptive Forms
 
-Les formulaires adaptatifs vous permettent d’utiliser des [modèles d’e-mail HTML](/help/forms/html-email-templates-in-adaptive-forms.md). Les modèles d’e-mail HTML vous permettent d’envoyer des e-mails enrichis, personnalisés et visuellement attrayants lorsqu’un formulaire est envoyé. Ces e-mails peuvent être personnalisés avec des données de formulaire et améliorés à l’aide de différentes balises d’e-mail, telles que des images et des liens. Avec les formulaires adaptatifs, vous pouvez charger un fichier contenant un modèle HTML ou utiliser un éditeur de texte brut pour créer ces modèles.
+Adaptive Forms allows you use [HTML email templates](/help/forms/html-email-templates-in-adaptive-forms.md). HTML email templates enable you to send rich, personalized, and visually appealing emails when a form is submitted. These emails can be customized with form data and enhanced using various email tags, such as images and links. With Adaptive Forms, you can either upload a file containing an HTML template or use a plain-text editor to create these templates.
 
-![Modèle d’e-mail HTML](/help/forms/assets/html-email.png)
+![HTML email templates](/help/forms/assets/html-email.png)
 
-### Action d’envoi des services web RESTful
+-->
 
-Le Forms adaptatif peut désormais envoyer facilement des données capturées à des points d’entrée REST externes authentifiés avec la nouvelle action d’envoi des services web RESTful :
+<!--
 
-* Normes prises en charge : Swagger 2.0 et 3.0 pour une intégration facile des API
-* Authentification sécurisée : OAuth 2.0, authentification de base, clé API et authentification personnalisée
-* Formats de données flexibles : données de formulaire en plusieurs parties, JSON et encodées en URL (paires clé-valeur)
+### RESTful Web Services Submit Action
 
+Adaptive Forms can now seamlessly send captured data to authenticated external REST endpoints with the new RESTful Web Services Submit Action: 
+
+* Standards Supported: Swagger 2.0 & 3.0 for easy API integration
+* Secure Authentication: OAuth 2.0, Basic Auth, API Key, & Custom Authentication
+* Flexible Data Formats: Multi-Part Form Data, JSON, & URL-encoded (Key-Value Pairs)
+
+-->
 
 
 ### Prise en charge des langues écrites de droite à gauche (RTL)
@@ -318,9 +335,13 @@ Le stockage des PDF dans le stockage Blob d’Azure permet une gestion centralis
 
 * [Récupérer les valeurs de propriété d’un tableau JSON](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array) : appelez une API avec une fonction personnalisée pour extraire les valeurs d’un tableau JSON et les lier directement aux champs de formulaire.
 
-### Prise en charge des versions dans Forms Manager
+<!--
 
-Forms Manager prend désormais en charge le contrôle de version pour les Forms adaptatifs (composants principaux et composants de base), les fragments de formulaire, les thèmes, les modèles XDP et les ressources binaires. Vous pouvez créer des versions, afficher l’historique et restaurer des états antérieurs à partir de la console Forms et documents . Voir [Gestion des versions de formulaire dans Forms Manager](/help/forms/manage-form-versions-forms-manager.md).
+### Versioning support in Forms Manager
+
+Forms Manager now supports versioning for Adaptive Forms (Core Components and Foundation Components), form fragments, themes, XDP templates, and binary assets. You can create versions, view history, and restore earlier states from the Forms & Documents console. See [Manage form versions in Forms Manager](/help/forms/manage-form-versions-forms-manager.md).
+
+-->
 
 ### Amélioration de l’accessibilité des composants de formulaire
 

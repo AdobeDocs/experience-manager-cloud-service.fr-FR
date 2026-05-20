@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: eff4f08ec399314df49246eb7431f5b100493780
+source-git-commit: 95e2216ee79433783da384134243f3688ff7797d
 workflow-type: tm+mt
-source-wordcount: '2054'
+source-wordcount: '2111'
 ht-degree: 30%
 
 ---
@@ -134,6 +134,13 @@ Apprenez-en davantage sur [le développement local avec les outils d’IA](/help
 >[!VIDEO](https://video.tv.adobe.com/v/3484978/?learn=on&enablevpops)
 
 #### Serveur MCP de gouvernance d’expérience {#gov-mcp-server}
+
+### Nouvelles fonctionnalités d’AEM Forms {#forms-new-features}
+
+**Prise en charge du contrôle de version dans Forms Manager**
+Forms Manager [prend désormais en charge le contrôle de version pour les Forms adaptatifs (composants principaux et composants de base)](/help/forms/manage-form-versions-forms-manager.md), les fragments de formulaire, les thèmes, les modèles XDP et les ressources binaires. Créez des versions, affichez l’historique complet des versions et restaurez les états précédents de vos ressources de formulaire directement à partir de la console Forms et documents.
+
+### Fonctionnalités d’accès anticipé d’AEM Forms {#forms-early-access-features}
 
 Le serveur MCP d’Experience Governance est désormais disponible pour tous. Il s’intègre aux outils de développement et aux chatbots de l’IA qui prennent en charge le protocole MCP (Model Context Protocol), ce qui vous permet de protéger l’intégrité et la conformité de la marque à l’aide d’invites en langage naturel dans votre chatbot ou votre IDE. Vous pouvez évaluer le contenu (texte, images, pages) par rapport aux règles de gouvernance de marque, et récupérer les configurations de marque et les contrôles de gouvernance disponibles.
 

@@ -4,9 +4,9 @@ description: Notes de mise à jour de la version 2025.4.0 d’ [!DNL Adobe Expe
 feature: Release Information
 role: Admin
 exl-id: 48e09824-5c67-49d8-8896-358d679649fc
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: b336b6e52bf6f3cba64ddd4b4580eabded86afdb
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '2018'
 ht-degree: 97%
 
 ---
@@ -83,6 +83,14 @@ Vous pouvez désormais sélectionner et comparer rapidement n’importe quelle v
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+### Nouvelles fonctionnalités d’Experience Manager Forms {#new-features-forms}
+
+#### Modèles d’e-mail HTML dans les formulaires adaptatifs
+
+Les formulaires adaptatifs vous permettent d’utiliser des [modèles d’e-mail HTML](/help/forms/html-email-templates-in-adaptive-forms.md). Les modèles d’e-mail HTML vous permettent d’envoyer des e-mails enrichis, personnalisés et visuellement attrayants lorsqu’un formulaire est envoyé. Ces e-mails peuvent être personnalisés avec des données de formulaire et améliorés à l’aide de différentes balises d’e-mail, telles que des images et des liens. Avec les formulaires adaptatifs, vous pouvez charger un fichier contenant un modèle HTML ou utiliser un éditeur de texte brut pour créer ces modèles.
+
+![Modèle d’e-mail HTML](/help/forms/assets/html-email.png)
 
 ### Fonctionnalités de version préliminaire
 

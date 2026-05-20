@@ -6,9 +6,9 @@ index: false
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 48eb137c-fe12-4e4f-b845-3321ca8b6075
-source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
+source-git-commit: 95e2216ee79433783da384134243f3688ff7797d
 workflow-type: tm+mt
-source-wordcount: '2192'
+source-wordcount: '2170'
 ht-degree: 97%
 
 ---
@@ -16,10 +16,6 @@ ht-degree: 97%
 # Forms Experience Builder - Bibliothèque de prompts
 
 Collection de modèles et d’exemples de prompts réutilisables pour Forms Experience Builder. Cette bibliothèque rationalisée se concentre sur les deux méthodes de création principales (créer à partir de zéro ou importer et convertir) avec une prise en charge améliorée des champs intelligents optimisés par LLM et la cohérence de la marque.
-
->[!NOTE]
->
-> Forms Experience Builder est disponible dans le cadre du programme d’accès anticipé. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 >[!IMPORTANT]
 >

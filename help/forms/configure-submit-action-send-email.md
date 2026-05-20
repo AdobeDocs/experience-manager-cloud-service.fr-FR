@@ -6,10 +6,10 @@ feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery S
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 60fa6bd9f29e670acb2acf52a40266e699bb99d3
 workflow-type: tm+mt
-source-wordcount: '959'
-ht-degree: 20%
+source-wordcount: '936'
+ht-degree: 22%
 
 ---
 
@@ -60,7 +60,7 @@ Pour configurer une action Envoyer un e-mail pour le composant de base :
 
    >[!NOTE]
    >
-   > Vous pouvez également activer l’option **[!UICONTROL Utiliser le modèle HTML]** pour envoyer des e-mails à l’aide d’une disposition HTML personnalisée au lieu du modèle par défaut. Lorsque cette option est activée, spécifiez le fichier HTML dans le champ **Chemin d’accès au modèle externe**. Cette fonctionnalité est disponible via le programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail à partir de votre adresse officielle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
+   > Vous pouvez également activer l’option **[!UICONTROL Utiliser le modèle HTML]** pour envoyer des e-mails à l’aide d’une disposition HTML personnalisée au lieu du modèle par défaut. Lorsque cette option est activée, spécifiez le fichier HTML dans le champ **Chemin d’accès au modèle externe**.
 
 1. [Facultatif] L’action d’envoi **[!UICONTROL Envoyer un e-mail]** permet d’inclure des pièces jointes et un [document d’enregistrement)](generate-document-of-record-core-components.md) dans l’e-mail.
 1. Cliquez sur **[!UICONTROL Terminé]**.
@@ -70,7 +70,7 @@ Pour configurer une action Envoyer un e-mail pour le composant de base :
 Pour configurer l’action d’envoi Envoyer un e-mail pour le composant principal :
 
 1. Ouvrez l’explorateur de contenu, puis sélectionnez le composant **[!UICONTROL Conteneur de guide]** de votre formulaire adaptatif.
-1. Cliquez sur l’icône des propriétés du conteneur de guide ![Propriétés du guide](/help/forms/assets/configure-icon.svg). La fenêtre du conteneur de formulaires adaptatifs s’ouvre.
+1. Cliquez sur l’icône des propriétés du conteneur de guide ![Propriétés du guide](/help/forms/assets/configure-icon.svg). La boîte de dialogue du conteneur de formulaires adaptatifs s’ouvre.
 1. Cliquez sur l’onglet **[!UICONTROL Envoi]**.
 1. Dans la liste déroulante **[!UICONTROL Action Envoyer]**, sélectionnez **[!UICONTROL Envoyer un e-mail]**.
 
@@ -85,7 +85,7 @@ Pour configurer l’action d’envoi Envoyer un e-mail pour le composant princip
 
    >[!NOTE]
    >
-   > Vous pouvez également activer l’option **[!UICONTROL Utiliser le modèle HTML]** pour envoyer des e-mails à l’aide d’une disposition HTML personnalisée au lieu du modèle par défaut. Lorsque cette option est activée, spécifiez le fichier HTML dans le champ **Chemin d’accès au modèle externe**. Cette fonctionnalité est disponible via le programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail à partir de votre adresse officielle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
+   > Vous pouvez également activer l’option **[!UICONTROL Utiliser le modèle HTML]** pour envoyer des e-mails à l’aide d’une disposition HTML personnalisée au lieu du modèle par défaut. Lorsque cette option est activée, spécifiez le fichier HTML dans le champ **Chemin d’accès au modèle externe**.
 
 1. [Facultatif] L’action d’envoi **[!UICONTROL Envoyer un e-mail]** permet d’inclure des pièces jointes et un [document d’enregistrement)](generate-document-of-record-core-components.md) dans l’e-mail.
 1. Cliquez sur **[!UICONTROL Terminé]**.

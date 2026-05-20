@@ -3,7 +3,7 @@ title: Création de tâche de contenu
 description: Découvrez ce qu’est la tâche de création de contenu Brand Experience Agent et ce qu’elle peut vous apporter.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
-source-git-commit: 3a0e9b322aec8b06285a94b9e288580faaf87921
+source-git-commit: 5d1a560b4eb386d0c3795d6634742ffce8ef4c71
 workflow-type: tm+mt
 source-wordcount: '787'
 ht-degree: 1%
@@ -108,7 +108,7 @@ Une fois la génération terminée, l’agent fournit deux liens :
 
 ## Amélioration de la création {#further-refinement-in-authoring}
 
-Une fois que vous avez choisi de modifier la page dans AEM, elle s’ouvre dans votre environnement de création (par exemple, l’[éditeur universel](/help/sites-cloud/authoring/universal-editor/authoring.md) ou l’[éditeur de page](/help/sites-cloud/authoring/page-editor/introduction.md)).
+Une fois que vous avez choisi de modifier la page dans AEM, elle s’ouvre dans votre environnement de création ; par exemple, l’[éditeur universel](/help/sites-cloud/authoring/universal-editor/authoring.md) ou l’[éditeur de page](/help/sites-cloud/authoring/page-editor/introduction.md).
 
 Dans l’[éditeur universel](#universal-editor-edit-text-with-the-assistant), l’assistant d’IA est *contextuel* : vous pouvez sélectionner des éléments sur la zone de travail et les utiliser avec l’assistant.
 

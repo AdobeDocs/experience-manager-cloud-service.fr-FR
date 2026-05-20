@@ -5,20 +5,18 @@ feature: Adaptive Forms, Core Components, Foundation Components
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: cd2c6e15-99a6-4b4e-bfd1-8291a2001ebe
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 60fa6bd9f29e670acb2acf52a40266e699bb99d3
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 7%
+source-wordcount: '412'
+ht-degree: 6%
 
 ---
 
 # Gestion des versions d’Assets de formulaire dans l’interface utilisateur de Forms Manager
 
-<span class="preview"> Cette fonctionnalité est disponible via le programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail à partir de votre adresse officielle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com). </span>
-
 Forms Manager prend désormais en charge le contrôle de version pour les ressources de formulaire. Vous pouvez créer des versions, afficher l’historique des versions et restaurer des versions antérieures de vos ressources à partir de l’interface utilisateur de Forms Manager.
 
-## Types de ressource pris en charge {#supported-asset-types}
+## Types de ressources pris en charge {#supported-asset-types}
 
 Vous pouvez créer et gérer des versions pour les types de ressources suivants :
 
