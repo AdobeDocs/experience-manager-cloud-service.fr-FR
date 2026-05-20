@@ -4,9 +4,9 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: d00af3aee8c2a42233bfc0f914a4e24abe921e08
+source-git-commit: 478b77488f46ae2566ffe5276ad26834371612aa
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '661'
 ht-degree: 30%
 
 ---
@@ -16,84 +16,51 @@ ht-degree: 30%
 
 La section suivante décrit les notes de mise jour techniques de maintenance actuelle d’Experience Manager as a Cloud Service.
 
-## 25892 de publication {#release-25892}
+## 26125 de publication {#release-26125}
 
-Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 25892, rendue publique le 7 mai 2026. La version de maintenance précédente était la version 25520.
+Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 26125, rendue publique le 20 mai 2026. La version de maintenance précédente était la version 25892.
 
 L’activation de la fonctionnalité 2026.5.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
 
->[!NOTE]
->
->La version 25821 a été rendue privée.
+### Améliorations {#enhancements-26125}
 
-### Améliorations {#enhancements-25892}
+* ASSETS-56957 : ajout de la prise en charge du chargement multipiste audio et multilégende pour les vidéos dans Dynamic Media avec OpenAPI.
+* ASSETS-58563 : ajout de l’intégration d’Adobe Commerce à AEM Assets.
+* ASSETS-65603 : amélioration des performances de la liste des dossiers dans l’interface utilisateur tactile en permettant la configuration d’un nombre de ressources réduit.
+* ASSETS-66032 : ajout de la prise en charge avancée du proxy de réseau à l’importation en bloc Assets pour les environnements disposant d’un stockage dans le cloud limité par adresse IP.
+* CQ-4363346 : amélioration de l’interface utilisateur des directives de traduction avec la prise en charge du téléchargement d’exemples de directives, du chargement de fichiers de directives aux formats JSON, PDF et DOCX et de la suppression de directives existantes.
+* GRANITE-67514 : isolation d’un lot de bibliothèque de mise en cache interne pour empêcher les échecs des tâches de transformation et les conflits avec les lots déployés par le client.
+* SITES-42076 : expérimental : ajout d’opérations de recherche et de remplacement en masse pour les pages en tant que primitives MCP dans l’API de contenu.
+* SITES-42835 : expérimental : les pages AEM Forms créées en dehors de l’API de contenu sont désormais accessibles via l’API de contenu d’AEM Sites sans nécessiter de migration ou de modifications de schéma.
+* SITES-44265 : ajout d’un identifiant de page répliqué stable à l’API de contenu qui reste valide après les déplacements de page, ce qui empêche les erreurs 404 de référence obsolète.
 
-* CQ-4362304 : Création de directives pour l’interface utilisateur frontale et mise à jour de la configuration LLM.
-* GRANITE-39546 : mise à niveau d’Apache Tika vers 3.x.
-* GRANITE-53957 : mettre à niveau Azure SDK V8 vers V12 pour oak-blob-azure.
-* GRANITE-61245 : supprimer toute utilisation de commons-lang (remplacer par commons-lang3).
-* GRANITE-64748 : gestionnaire d’authentification OIDC en bloc.
-* GRANITE-64764 : mise à jour du texte Apache Commons vers la version 1.15.0.
-* GRANITE-64963 : mise à jour de Filevault vers la version 4.2.0.
-* GRANITE-66197 : ajout de la prise en charge de l’API Microsoft Graph pour les clients M365.
-* GRANITE-66449 : mise à jour des modules externes Maven pour la prise en charge de l’API Java 17.
-* GRANITE-66473 : ajout de la bibliothèque de cache de caféine à base-granite.
-* GRANITE-66836 : mise à jour de Quickstart vers Oak 2.0.0.
-* SKYOPS-129301 : définition du niveau de conformité Jar Javadoc des API sur Java 17.
-* SKYOPS-129351 : Mise à jour des flux réactifs et du cœur du réacteur pour la compatibilité avec MCP SDK.
-* SKYOPS-131412 : mettre à jour Apache Commons Exec vers la dernière version.
-* SKYOPS-131432 : mise à jour de Felix SCR vers la version 2.2.14.
-* SKYOPS-131907 : mise à jour des régions API Sling vers la version 1.1.10.
-* SKYOPS-131938 : mettre à jour GSON vers la dernière version.
-* SKYOPS-132173 : mise à jour du codec Apache Commons vers la dernière version.
-* SKYOPS-132182 : mise à jour du lot de client Sling.
-* SKYOPS-132267 : mise à jour de l’annotation `org.osgi.service.component`.
-* SKYOPS-132272 : mise à jour du lot de modèle de fonctionnalité Sling.
-* SKYOPS-132525 : ajout d’un analyseur de démarrage rapide pour empêcher les nouvelles suppressions d’API.
-* SKYOPS-134408 : mise à jour de la `com.adobe.granite.asset.core` vers la version 2.2.82.
-* SKYOPS-137750 : mise à jour de la `com.adobe.granite.comments` vers la version 1.0.40.
-* SKYOPS-137759 : mise à jour d’`com.adobe.granite.jobs.async.ui.commons` vers la version 3.2.4.
-* SKYOPS-138356 : mise à jour de la `com.adobe.granite.oauth.server` vers la version 1.1.36.
-* SKYOPS-138739 : mise à jour de SnakeYAML vers la version 2.6.
+### Problèmes résolus {#fixed-issues-26125}
 
-### Problèmes résolus {#fixed-issues-25892}
+* ASSETS-36208 : correction des profils d’image qui n’apparaissaient pas dans les propriétés de dossier lorsque Dynamic Media était désactivé.
+* ASSETS-63240 : correction des opérations Relier à sélection multiple en bloc en mode d’ajout, qui laissaient les utilisateurs sur une page vierge au lieu de revenir à la console Assets.
+* ASSETS-65076 : correction d’une valeur de protocole incorrecte transmise à l’API Externalizer, qui provoquait des échecs lors de l’utilisation des créateurs de requêtes Sling.
+* ASSETS-66102 : correction des événements de publication de ressources Adobe I/O Runtime signalant une valeur de `repo:version` incorrecte, ce qui provoquait des échecs dans les intégrations en aval.
+* ASSETS-66226 : les ressources fixes ne sont pas supprimées du niveau de diffusion lors de la suppression lorsque leur statut d’approbation est stocké avec des valeurs à casse mixte.
+* ASSETS-66669 : correction du bouton Accueil de la page Résultats de la recherche qui ne naviguait pas vers l’écran de démarrage de l’interface utilisateur tactile lorsque Unified Shell était activé.
+* ASSETS-66683 : correction d’une boucle d’approbation dans Dynamic Media avec OpenAPI déclenchée par des échecs de chargement, qui entraînait des retards et des perturbations des workflows d’approbation des ressources.
+* ASSETS-67113 : correction de l’importation en bloc en ignorant les ressources SVG lors du filtrage par `image/svg+xml` de type MIME.
+* CQ-4363355 : correction des demandes de traduction dans le connecteur de traduction GenAI en cours d’acheminement vers un point d’entrée régional incorrect en raison d’une URL statique codée en dur.
+* CQ-4363466 : correction d’échecs de résolution de chemin de configuration du cloud affectant les connecteurs de traduction tiers qui utilisent la résolution de configuration personnalisée.
+* SITES-44186 : correction d’une injection de balise meta sur l’auteur, interrompant la gestion des événements de l’éditeur de page pour certains clients.
 
-* ASSETS-59546 : suppression des dépendances sur la bibliothèque commons-lang obsolète.
-* ASSETS-64831 : la réinitialisation du nombre de tentatives de traitement par AssetProcessorProcess entraîne le blocage des ressources.
-* ASSETS-66683 : boucle d’approbation provoquée par l’échec de uploadBlob.
-* CNTBF-613 : correction de l’accès refusé (JCR-101) lors de l’enregistrement des types de nœuds.
-* GRANITE-44537 : chaîne dans « Country/Region » non localisée dans AEM.
-* GRANITE-61760 : correction de l’échec d’activation d’AdminUserInitializer.
-* GRANITE-64543 : la réponse des restrictions d’autorisation ne suit pas la structure de l’API.
-* GRANITE-66692 : chargeur de classe interne non sensible aux actualisations de package.
-* GRANITE-66732 : utilisez des activateurs au lieu des composants de service pour les lots de niveau 1 de départ.
-* GRANITE-66846 : l’API Autorisations AEM n’affiche pas la restriction `rep:ntNames`.
-* SITES-39267 : restaurez pagePath dans les entrées de chaîne de relation.
-* SITES-43715 : la validation des autorisations échoue lors de la lecture du statut de la ressource.
-
-#### AEM Guides {#guides-25892}
-
-* GUIDES-45110 : lors de la sélection d’une image dans l’éditeur à l’aide de la boîte de dialogue **Sélectionner un fichier**, seuls les formats de trame (tels que JPG, PNG et GIF) s’affichent. Les fichiers vectoriels (tels que `.ai` et `.eps`) ne sont pas affichés et ne peuvent pas être sélectionnés.
-* GUIDES-41938 : La création d’une rubrique dans un dossier dont le nom contient des espaces crée un dossier en double dans lequel les espaces sont remplacés par des tirets et la rubrique y est enregistrée au lieu du dossier d’origine.
-* GUIDES-38377 : lorsque des modifications apportées à un paramètre prédéfini de sortie dans un profil de dossier sont appliquées à des mappages existants, le **contexte de publication** enregistré pour le paramètre prédéfini AEM Sites est réinitialisé.
-* GUIDES-43547 : lorsque des rubriques ou des mappages volumineux sont ouverts, l’instance de création ne répond plus, ce qui nécessite un redémarrage dans certains cas.
-* GUIDES-32520 : lorsque la touche Retour arrière est utilisée sur des éléments, l’éditeur fait défiler l’écran jusqu’en haut de la rubrique, quelle que soit la position du curseur (Editor 2.0).
-
-Pour plus d’informations sur les fonctionnalités nouvelles et améliorées, ainsi que sur les problèmes résolus dans la version, consultez la [Feuille de route de publication d’Experience Manager Guides](https://experienceleague.adobe.com/fr/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
-
-### Problèmes connus {#known-issues-25892}
+### Problèmes connus {#known-issues-26125}
 
 Aucun.
 
-### Fonctionnalités et API obsolètes {#deprecated-25892}
+### Fonctionnalités et API obsolètes {#deprecated-26125}
 
 Les fonctionnalités et API obsolètes et supprimées dans AEM as a Cloud Service sont présentées dans le document [Fonctionnalités et API obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md).
 
-### Correctifs de sécurité {#security-25892}
+### Correctifs de sécurité {#security-26125}
 
-AEM as a Cloud Service est dédié à l’optimisation de la sécurité et des performances de votre plateforme. Cette version de maintenance corrige 19 vulnérabilités identifiées, renforçant ainsi notre engagement en faveur d’une protection robuste des systèmes.
+AEM as a Cloud Service est dédié à l’optimisation de la sécurité et des performances de votre plateforme. Cette version de maintenance corrige 19 vulnérabilités, renforçant ainsi notre engagement en faveur d’une protection robuste des systèmes.
 
-### Technologies intégrées {#embedded-tech-25892}
+### Technologies intégrées {#embedded-tech-26125}
 
 | Technologie | Version | Lien |
 |---|---|---|
