@@ -5,41 +5,41 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: f8c9a7549305e30418e672f8ca14fe95f2a3b333
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 29%
+source-wordcount: '1251'
+ht-degree: 23%
 
 ---
 
 
 # Variables d’environnement dans Cloud Manager {#environment-variables}
 
-Les variables d’environnement standard peuvent être configurées et gérées via Cloud Manager. Ils sont fournis à l’environnement d’exécution et peuvent être utilisés dans des configurations OSGi.
+Les variables d’environnement standard peuvent être configurées et gérées via Cloud Manager. Elles sont fournies à l’environnement d’exécution et peuvent être utilisés dans des configurations OSGi.
 
 Les variables d’environnement peuvent être des valeurs spécifiques à un environnement ou des secrets d’environnement, en fonction de ce qui est modifié.
 
 ## À propos des variables d’environnement {#overview}
 
-Les variables d’environnement offrent de nombreux avantages aux utilisateurs d’AEM as a Cloud Service, notamment :
+Les variables d’environnement offrent plusieurs avantages aux utilisateurs d’AEM as a Cloud Service, notamment :
 
 * Elles permettent au comportement de votre code et de votre application de varier en fonction du contexte et de l’environnement. Par exemple, elles peuvent être utilisées pour activer différentes configurations dans l’environnement de développement par rapport aux environnements de production ou d’évaluation, afin d’éviter des erreurs coûteuses.
-* Elles ne doivent être configurées et paramétrées qu’une seule fois, et peuvent être mises à jour et supprimées si nécessaire.
-* Leurs valeurs peuvent être mises à jour à tout moment et prennent effet immédiatement sans qu’il faille apporter de modifications au code ni procéder à des déploiements.
+* Ils ne doivent être configurés et configurés qu’une seule fois, et peuvent être mis à jour et supprimés si nécessaire.
+* Leurs valeurs peuvent être mises à jour à tout moment et prennent effet immédiatement sans nécessiter de modifications de code ni de déploiements.
 * Elles peuvent séparer le code de la configuration et supprimer la nécessité d’inclure des informations sensibles dans le contrôle de version.
-* Elles améliorent la sécurité de l’application AEM as a Cloud Service puisqu’elles se trouvent en dehors du code.
+* Ils améliorent la sécurité des applications AEM as a Cloud Service car ils existent en dehors de la base de code.
 
 Les cas d’utilisation standard des variables d’environnement incluent les suivants :
 
-* La connexion de votre application AEM avec différents points d’entrée externes.
-* L’utilisation d’une référence lors du stockage des mots de passe au lieu de le faire directement dans la base de code.
-* Lorsque plusieurs environnements de développement existent dans un programme et que certaines configurations diffèrent d’un environnement à l’autre.
+* la connexion de votre application AEM à différents points d’entrée externes ;
+* Utiliser une référence lors du stockage des mots de passe au lieu de les stocker directement dans la base de code.
+* Il existe plusieurs environnements de développement dans un programme et certaines configurations diffèrent d’un environnement à l’autre.
 
 ## Ajouter une variable d’environnement {#add-variables}
 
-Si vous souhaitez ajouter plusieurs variables, Adobe vous recommande d’ajouter la première variable, puis d’utiliser ![icône Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **Ajouter** dans la boîte de dialogue **Configuration de l’environnement** pour ajouter les variables supplémentaires. Cela signifie que vous pouvez les ajouter avec une seule mise à jour à l’environnement.
+Si vous souhaitez ajouter plusieurs variables, Adobe vous recommande d’ajouter la première variable, puis d’utiliser ![icône Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **Ajouter** dans la boîte de dialogue **Configuration de l’environnement** pour ajouter les variables supplémentaires. Cette méthode permet de les ajouter avec une seule mise à jour de l’environnement.
 
-Pour ajouter, mettre à jour ou supprimer des variables d’environnement, vous devez être membre du rôle [**Responsable de déploiement**](/help/onboarding/cloud-manager-introduction.md#role-based-premissions).
+Pour ajouter, mettre à jour ou supprimer des variables d’environnement, vous devez être membre du rôle [Responsable de déploiement](/help/onboarding/cloud-manager-introduction.md#role-based-premissions).
 
 **Pour ajouter une variable d’environnement, procédez comme suit**
 
@@ -78,7 +78,7 @@ Si vous ajoutez une variable d’environnement pour la première fois, cliquez s
 
 Après avoir créé des variables d’environnement, vous pouvez les mettre à jour à l’aide de l’icône ![Ajouter/mettre à jour - Ajouter un cercle](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Ajouter/mettre à jour** pour ouvrir la boîte de dialogue **Configuration de l’environnement**.
 
-Si vous souhaitez mettre à jour plusieurs variables, Adobe vous recommande d’utiliser la boîte de dialogue **Configuration de l’environnement** pour mettre à jour toutes les variables nécessaires en une seule fois avant de cliquer sur **Enregistrer**. De cette façon, vous pouvez les ajouter en une seule mise à jour de lʼenvironnement.
+Si vous souhaitez mettre à jour plusieurs variables, Adobe vous recommande d’utiliser la boîte de dialogue **Configuration de l’environnement** pour mettre à jour toutes les variables nécessaires en une seule fois avant de cliquer sur **Enregistrer**. Cette approche vous permet de les mettre à jour avec une seule mise à jour de l’environnement.
 
 **Pour mettre à jour une variable d’environnement, procédez comme suit**
 
@@ -121,9 +121,9 @@ Lors de la modification d’un secret, la valeur peut uniquement être mise à j
 
 ## Utilisation des variables d’environnement {#using}
 
-Les variables d’environnement peuvent rendre vos configurations `pom.xml` plus sécurisées et flexibles. Par exemple, les mots de passe n’ont pas besoin d’être codés en dur et votre configuration peut s’adapter en fonction des valeurs des variables d’environnement.
+Les variables d’environnement peuvent rendre vos configurations `pom.xml` plus sécurisées et flexibles. Par exemple, les mots de passe n’ont pas besoin de valeurs codées en dur et votre configuration peut s’adapter aux valeurs des variables d’environnement.
 
-Vous pouvez accéder aux variables d’environnement et aux secrets par le biais du code XML comme suit :
+Vous pouvez accéder aux variables d’environnement et aux secrets via XML comme suit :
 
 `${env.VARIABLE_NAME}`
 
@@ -133,12 +133,12 @@ Consultez également la [documentation officielle de Maven](https://maven.apache
 
 ## Disponibilité des variables d’environnement {#availability}
 
-Les variables d’environnement peuvent être utilisées à plusieurs endroits comme suit :
+Les variables d’environnement peuvent être utilisées à plusieurs endroits, comme suit :
 
 | Où les variables d’environnement peuvent être utilisées | Description |
 | --- | --- |
 | Créer, prévisualiser et publier | Les variables d’environnement standard et les secrets peuvent être utilisés dans les environnements de création, de prévisualisation et de publication. |
-| Dispatcher | Seules les variables d’environnement normales peuvent être utilisées avec [Dispatcher](https://experienceleague.adobe.com/fr/docs/experience-manager-dispatcher/using/dispatcher).<ul><li>Les secrets ne peuvent pas être utilisés.</li><li>Les variables d’environnement ne peuvent pas être utilisées dans les directives `IfDefine`.</li><li>Vous devez valider l’utilisation des variables d’environnement avec le [Dispatcher localement](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools) avant le déploiement.</li></ul> |
+| Dispatcher | Seules les variables d’environnement normales peuvent être utilisées avec le [Dispatcher](https://experienceleague.adobe.com/fr/docs/experience-manager-dispatcher/using/dispatcher).<ul><li>Les secrets ne peuvent pas être utilisés.</li><li>Les variables d’environnement ne peuvent pas être utilisées dans les directives `IfDefine`.</li><li>Vous devez valider l’utilisation des variables d’environnement avec le [Dispatcher localement](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools) avant le déploiement.</li></ul> |
 | Configurations OSGi | Les variables d’environnement normales et les secrets peuvent être utilisés dans les configurations [OSGi](/help/implementing/deploying/configuring-osgi.md). |
 | Variables de pipeline | Outre les variables d’environnement, il existe également des variables de pipeline, qui sont exposées pendant la phase de création. En savoir plus sur les variables de pipeline dans [Environnement de création](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables). |
 
