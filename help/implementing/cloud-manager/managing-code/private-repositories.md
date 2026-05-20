@@ -4,9 +4,9 @@ description: Découvrez comment configurer Cloud Manager pour utiliser vos prop
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1028'
 ht-degree: 35%
 
 ---
@@ -74,7 +74,7 @@ La configuration d’un référentiel cloud GitHub privé dans Cloud Manager se 
    | Champ | Description |
    | --- | --- |
    | Nom du référentiel | Nom expressif pour votre nouveau référentiel. |
-   | URL du référentiel | URL du référentiel privé, qui doit se terminer par `.git`.<br>Par exemple, *`https://github.com/org-name/repo-name.git`* (le chemin d’accès de l’URL est fourni à titre d’illustration uniquement). |
+   | URL du référentiel | URL du référentiel privé, qui doit se terminer par `.git`.<br>Par exemple, *`https://github.com/org-name/repo-name.git`* (le chemin de l’URL est fourni à titre d’illustration uniquement). |
    | Description (facultative) | Description détaillée du référentiel. |
 
 1. Sélectionnez **Enregistrer**.
@@ -97,8 +97,8 @@ Cloud Manager connaît désormais votre référentiel GitHub, mais il doit touj
 
    |  | Description |
    | --- | --- |
-   | **Étape 1 : application GitHub** | Cloud Manager utilise une application GitHub pour interagir en toute sécurité avec votre référentiel privé.<br>· Un propriétaire de votre organisation GitHub doit installer l’application située à l’adresse `https://github.com/apps/cloud-manager-for-aem` et accorder l’accès au référentiel.<br>· Pour plus d’informations sur l’installation et l’octroi de l’accès, consultez la documentation de GitHub . |
-   | **Étape 2 : Fichier Secret** | Pour améliorer la sécurité, vous devez créer un fichier secret dans la branche par défaut de votre référentiel.<br>· Cliquez sur **Générer**, puis sur **Confirmer**. Cloud Manager génère le contenu du fichier privé dans le champ de texte **Contenu du fichier secret**.<br>· Cliquez sur ![Icône Copier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) pour copier le contenu de ce champ. Le contenu du fichier secret ne s’affichera qu’une seule fois. Si vous ne copiez pas le contenu avant de fermer cette boîte de dialogue, régénérez le secret. |
+   | **Étape 1 : application GitHub** | Cloud Manager utilise une application GitHub pour interagir en toute sécurité avec votre référentiel privé.<br>· Un propriétaire de votre organisation GitHub doit installer l’application située à l’adresse `https://github.com/apps/cloud-manager-for-aem` et accorder l’accès au référentiel.<br>· Pour plus d’informations sur l’installation et l’octroi de l’accès est terminé, consultez la documentation de GitHub. |
+   | **Étape 2 : Fichier Secret** | Pour améliorer la sécurité, vous devez créer un fichier secret dans la branche par défaut de votre référentiel.<br>· Cliquez sur **Générer**, puis sur **Confirmer**. Cloud Manager génère le contenu du fichier privé dans le champ de texte **Contenu du fichier secret** <br>.· Cliquez sur ![Icône Copier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) pour copier le contenu de ce champ. Le contenu du fichier secret ne s’affichera qu’une seule fois. Si vous ne copiez pas le contenu avant de fermer cette boîte de dialogue, régénérez le secret. |
 
 1. Créez un fichier dans la branche par défaut de votre référentiel GitHub appelé :
 
@@ -142,7 +142,7 @@ Lorsque la demande d’extraction est fusionnée ou fermée, le pipeline de qual
 
 >[!TIP]
 >
->Consultez [Annotations de vérification GitHub](github-annotations.md) pour plus d’informations sur les informations fournies par le biais de GitHub lorsque les vérifications de requête d’extraction sont exécutées.
+>Consultez [Annotations de vérification GitHub](github-annotations.md) pour plus d’informations sur les informations fournies via GitHub lorsque les vérifications de demande d’extraction sont exécutées.
 
 >[!TIP]
 >

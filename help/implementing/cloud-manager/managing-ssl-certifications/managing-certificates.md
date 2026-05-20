@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
-source-wordcount: '1048'
-ht-degree: 13%
+source-wordcount: '1116'
+ht-degree: 16%
 
 ---
 
@@ -31,7 +31,7 @@ La page **Certificats SSL** fournit le statut de vos certificats SSL.
 | Statut du certificat SSL | Description |
 | --- | --- |
 | Vert | Le certificat est valide pendant au moins 14 jours à compter de la date actuelle. |
-| Orange | Le certificat va expirer dans moins de 14 jours.<br>· Assurez-vous d’avoir un plan de renouvellement de votre certificat et remplacez-le par le biais de l’interface utilisateur de Cloud Manager afin d’éviter d’éventuelles interruptions d’accès au site.<br>· Cloud Manager envoie régulièrement des notifications dans l’interface utilisateur pour vous avertir d’une expiration imminente du certificat. |
+| Orange | Le certificat va expirer dans moins de 14 jours.<br>· Assurez-vous d’avoir prévu de renouveler votre certificat et de le remplacer via l’interface utilisateur de Cloud Manager afin d’éviter d’éventuelles interruptions d’accès au site.<br>· Cloud Manager envoie régulièrement des notifications dans l’interface utilisateur pour vous avertir d’une expiration imminente du certificat. |
 | Rouge | Le certificat SSL a expiré.<br>Voir [Mettre à jour un certificat SSL géré par le client expiré](#update-ssl-certificate) ou [Supprimer un certificat SSL](#deleting-an-ssl-certificate). |
 
 ## Mettre à jour un certificat SSL expiré géré par le client {#update-ssl-certificate}
@@ -140,4 +140,4 @@ Le message disparaît une fois que toutes les configurations d’environnement p
 
 Voir [Ajouter un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) pour plus d’informations.
 
-Un message similaire est également fourni dans les pages **Liste autorisée IP** et **Environnements** pour les environnements qui disposent de configurations CDN préexistantes pour les Listes autorisées IP ou les noms de domaine personnalisés.
+Un message similaire est également fourni dans les pages Liste autorisée IP **et** Environnements **pour les environnements qui disposent de configurations CDN préexistantes pour les Listes autorisées IP ou les noms de domaine personnalisés.**

@@ -5,10 +5,10 @@ exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 31%
+source-wordcount: '744'
+ht-degree: 27%
 
 ---
 
@@ -18,7 +18,7 @@ Découvrez comment gérer plusieurs référentiels Git lorsque vous utilisez Clo
 
 ## Synchroniser les référentiels Git privés {#syncing-customer-managed-git-repositories}
 
-Au lieu d’utiliser directement le référentiel Git de Cloud Manager, les clients [&#x200B; peuvent utiliser leur propre référentiel Git privé](integrating-with-git.md) ou plusieurs de leurs propres référentiels Git. Dans ce cas, configurez un processus de synchronisation automatisée pour vous assurer que le référentiel Git de Cloud Manager est toujours tenu à jour.
+Au lieu d’utiliser directement le référentiel Git de Cloud Manager, les clients [ peuvent utiliser leur propre référentiel Git privé](integrating-with-git.md) ou plusieurs de leurs propres référentiels Git. Dans ce cas, configurez un processus de synchronisation automatisée pour vous assurer que le référentiel Git de Cloud Manager est toujours tenu à jour.
 
 Selon l’emplacement d’hébergement du référentiel Git du client ou de la cliente, il est possible d’utiliser une action GitHub ou une solution d’intégration continue telle que Jenkins pour configurer l’automatisation. Si une automatisation a été mise en place, chaque notification push vers un référentiel Git détenu par le client peut être automatiquement transférée vers le référentiel Git Cloud Manager.
 
@@ -58,7 +58,7 @@ Une solution possible serait la suivante.
 
 Par exemple, une modification apportée à la branche principale du projet A est automatiquement transférée vers la branche principale du référentiel Git de Cloud Manager. Il peut y avoir un mappage entre les branches, par exemple une transmission vers une branche nommée `dev` dans le projet A qui est transférée dans une branche nommée `development` dans le référentiel Git de Cloud Manager. Des étapes similaires sont requises pour le projet B.
 
-Selon les workflows et la stratégie d’embranchement, il est possible de configurer la synchronisation pour différentes branches. Si le référentiel Git utilisé ne propose pas de concept similaire aux actions GitHub, une intégration via Jenkins (ou un outil similaire) est également possible. Dans ce cas, un webhook déclenche un traitement Jenkins, qui effectue le travail.
+Selon les workflows et la stratégie d’embranchement, il est possible de configurer la synchronisation pour différentes branches. Si le référentiel Git utilisé ne propose pas un concept similaire aux actions GitHub, une intégration via Jenkins (ou un outil similaire) est également possible. Dans ce cas, un webhook déclenche un traitement Jenkins, qui effectue le travail.
 
 Pour ajouter une nouvelle source tierce ou un nouveau référentiel, procédez comme suit.
 
