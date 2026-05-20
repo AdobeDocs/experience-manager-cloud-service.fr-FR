@@ -35,7 +35,7 @@ Une fois que vous disposez du contenu du dossier `it.tests`, vous pouvez l’uti
 
 Les mêmes outils que ceux utilisés par Adobe pour rédiger des tests fonctionnels de produit peuvent être utilisés pour rédiger vos tests fonctionnels personnalisés. Utilisez les [tests fonctionnels du produit](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) dans GitHub comme exemple de la manière d’écrire vos tests.
 
-Le code des tests fonctionnels personnalisés est du code Java™ dans le dossier `it.tests` de votre projet. Il doit produire un seul fichier JAR avec tous les tests fonctionnels. Si le build génère plusieurs fichiers JAR de test, le fichier JAR sélectionné est non déterministe. S’il ne génère aucun fichier JAR de test, l’étape de test est effectuée par défaut. Voir [Archétype de projet ](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) pour obtenir des exemples de tests.
+Le code des tests fonctionnels personnalisés est du code Java™ dans le dossier `it.tests` de votre projet. Il doit produire un seul fichier JAR avec tous les tests fonctionnels. Si le build génère plusieurs fichiers JAR de test, le fichier JAR sélectionné est non déterministe. S’il ne génère aucun fichier JAR de test, l’étape de test est effectuée par défaut. Voir [Archétype de projet &#x200B;](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) pour obtenir des exemples de tests.
 
 Les tests sont exécutés sur l’infrastructure de test gérée par Adobe, comprenant au moins deux instances de création, deux instances de publication et une configuration de Dispatcher. Cette configuration signifie que vos tests fonctionnels personnalisés s’exécutent sur l’ensemble de la pile AEM.
 
@@ -87,7 +87,7 @@ De plus, pour exclure le code test de la vérification de la couverture de l’a
 
 Les classes de test doivent être des tests JUnit normaux. L’infrastructure de test est conçue et configurée pour être compatible avec les conventions utilisées par la bibliothèque de tests `aem-testing-clients`. Les développeurs et développeuses sont encouragés à utiliser cette bibliothèque et à suivre les bonnes pratiques en vigueur.
 
-Pour plus d’informations, voir le [`aem-testing-clients`référentiel GitHub ](https://github.com/adobe/aem-testing-clients).
+Pour plus d’informations, voir le [`aem-testing-clients`référentiel GitHub &#x200B;](https://github.com/adobe/aem-testing-clients).
 
 >[!TIP]
 >
