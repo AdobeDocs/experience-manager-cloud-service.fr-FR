@@ -7,7 +7,7 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 60fa6bd9f29e670acb2acf52a40266e699bb99d3
+source-git-commit: 08fe79147c81c0a5b319fef3ef7733b6053b399a
 workflow-type: tm+mt
 source-wordcount: '2666'
 ht-degree: 18%
@@ -24,7 +24,7 @@ Le programme d’accès anticipé d’AEM Forms vous offre une opportunité uniq
 
 ## Comment adhérer au programme Accès anticipé ?
 
-Si vous souhaitez rejoindre notre programme d&#39;accès anticipé pour toute innovation d&#39;accès anticipé, envoyez simplement un e-mail à partir de votre adresse officielle à [&#128279;](mailto:aem-forms-ea@adobe.com) pour demander l&#39;accès. Vous pouvez demander l’accès à toutes les innovations ou à certaines d’entre elles.
+Si vous souhaitez rejoindre notre programme d&#39;accès anticipé pour toute innovation d&#39;accès anticipé, envoyez simplement un e-mail à partir de votre adresse officielle à [](mailto:aem-forms-ea@adobe.com) pour demander l&#39;accès. Vous pouvez demander l’accès à toutes les innovations ou à certaines d’entre elles.
 
 ## Innovations en accès anticipé
 
@@ -49,7 +49,6 @@ The Generative AI capabilities on offer via AEM Forms AI Assistant are:
 * **Configure Submit Action**: Use Generative AI prompts to effortlessly configure a submit action for your form. Choose from a library of pre-built submit actions or from a list of custom submit actions, created and deployed by your own development team.
 
 -->
-
 <!--
 
 ### AEM Forms Workfront Fusion Connector
@@ -70,7 +69,7 @@ L’innovation Conversational Forms vous permet d’interagir avec des formulair
 
 Vous pouvez simplement faire glisser et déposer le composant Forms de conversation sur votre page AEM Sites et commencer. Aucun codage n’est requis, de sorte que tout le monde peut créer rapidement des expériences de conversation Forms attrayantes et conviviales.
 
-Forms de conversation, remplissage de formulaire de style bot conversationnel, Forms adaptatif![&#128279;](/help/forms/assets/conversational-forms.png)
+Forms de conversation, remplissage de formulaire de style bot conversationnel, Forms adaptatif](/help/forms/assets/conversational-forms.png)![
 
 Voici ce que le Forms de conversation apporte de plus :
 
@@ -155,7 +154,7 @@ Affichez automatiquement la mention « N° de page # de ## » sur les gabarits p
 * Créer une correspondance de haute qualité, sécurisée et conforme à la loi
 * Gestion de la création, de l’assemblage et de la diffusion des correspondances interactives pilotées par les données
 
-Prêt à démarrer ? L’éditeur de communications interactives est disponible sous le programme d’accès anticipé pour les déploiements de Forms as a Cloud Service. Pour demander l’accès, envoyez l’ID d’organisation et les détails du programme par e-mail à [&#128279;](mailto:aem-forms-ea@adobe.com) à partir de votre adresse officielle.
+Prêt à démarrer ? L’éditeur de communications interactives est disponible sous le programme d’accès anticipé pour les déploiements de Forms as a Cloud Service. Pour demander l’accès, envoyez l’ID d’organisation et les détails du programme par e-mail à [](mailto:aem-forms-ea@adobe.com) à partir de votre adresse officielle.
 
 ### Intégration d’AEM Forms à Adobe Experience Platform (AEP)
 
@@ -205,7 +204,7 @@ not sure what's going on with this video link. cleaned up version below
 * **Productivité des développeurs** : concentrez-vous sur la création d’une logique commerciale et d’une interface utilisateur, tandis que l’interface de ligne de commande gère des tâches de configuration répétitives.
 * **Intégration transparente** : les composants générés sont prêts à être utilisés et à s’intégrer à vos projets AEM Forms existants.
 
-Prêt à démarrer ? L’outil de ligne de commande AEM Forms est disponible dans le cadre du programme d’accès anticipé pour les déploiements de Forms as a Cloud Service. Pour demander l’accès, envoyez l’ID d’organisation et les détails du programme par e-mail à [&#128279;](mailto:aem-forms-ea@adobe.com) à partir de votre adresse officielle.
+Prêt à démarrer ? L’outil de ligne de commande AEM Forms est disponible dans le cadre du programme d’accès anticipé pour les déploiements de Forms as a Cloud Service. Pour demander l’accès, envoyez l’ID d’organisation et les détails du programme par e-mail à [](mailto:aem-forms-ea@adobe.com) à partir de votre adresse officielle.
 
 ### Outil d’intégration d’API pour les données de formulaire dynamique
 
@@ -345,7 +344,7 @@ Forms Manager now supports versioning for Adaptive Forms (Core Components and Fo
 
 ### Amélioration de l’accessibilité des composants de formulaire
 
-Les composants principaux de Forms adaptatifs introduisent un balisage sémantique compatible WCAG pour les groupes de cases à cocher, les groupes de boutons radio et les panneaux. Ces composants exploitent désormais les éléments `<fieldset>` et `<legend>` pour établir des relations significatives entre les libellés de groupe et leurs options pour les technologies d’assistance. Voir [&#x200B; Prise en charge des jeux de champs et des légendes dans le Forms adaptatif](/help/forms/creating-accessible-adaptive-forms.md#fieldset-legend-accessibility).
+Les composants principaux de Forms adaptatifs introduisent un balisage sémantique compatible WCAG pour les groupes de cases à cocher, les groupes de boutons radio et les panneaux. Ces composants exploitent désormais les éléments `<fieldset>` et `<legend>` pour établir des relations significatives entre les libellés de groupe et leurs options pour les technologies d’assistance. Voir [ Prise en charge des jeux de champs et des légendes dans le Forms adaptatif](/help/forms/creating-accessible-adaptive-forms.md#fieldset-legend-accessibility).
 
 ## Voir également
 

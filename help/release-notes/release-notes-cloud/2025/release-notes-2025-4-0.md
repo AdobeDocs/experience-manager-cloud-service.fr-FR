@@ -4,7 +4,7 @@ description: Notes de mise à jour de la version 2025.4.0 d’ [!DNL Adobe Expe
 feature: Release Information
 role: Admin
 exl-id: 48e09824-5c67-49d8-8896-358d679649fc
-source-git-commit: b336b6e52bf6f3cba64ddd4b4580eabded86afdb
+source-git-commit: 08fe79147c81c0a5b319fef3ef7733b6053b399a
 workflow-type: tm+mt
 source-wordcount: '2018'
 ht-degree: 97%
@@ -37,7 +37,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Consultez la vidéo de vue d’ensemble de la version d’avril 2025 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2025.4.0 :
 
->[!VIDEO](https://video.tv.adobe.com/v/3464004?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
