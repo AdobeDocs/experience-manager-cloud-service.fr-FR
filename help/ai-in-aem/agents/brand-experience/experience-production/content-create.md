@@ -3,9 +3,9 @@ title: Création de tâche de contenu
 description: Découvrez ce qu’est la tâche de création de contenu Brand Experience Agent et ce qu’elle peut vous apporter.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
-source-git-commit: 5d1a560b4eb386d0c3795d6634742ffce8ef4c71
+source-git-commit: 2e3b10f7886f8bc5757d2144875ec0b441de7bb5
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '788'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Création de tâche de contenu {#content-create}
 
-La tâche de création de contenu fait partie de l’[agent de production Experience](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) qui crée de nouvelles pages sur la marque à l’aide du langage naturel, d’un résumé marketing et d’un modèle AEM. Il accélère la production de pages pour Adobe Experience Manager (AEM) as a Cloud Service et Edge Delivery Services.
+La tâche de création de contenu fait partie de l’[agent de production Experience](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) qui crée de nouvelles pages sur la marque à l’aide du langage naturel, d’un résumé marketing et d’un modèle AEM. La tâche accélère la production de pages pour Adobe Experience Manager (AEM) as a Cloud Service et Edge Delivery Services.
 
 <!-- see Limitations too and update when appropriate -->
 

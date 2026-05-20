@@ -4,7 +4,7 @@ description: Découvrez comment l’agent de production Experience dans AEM vous
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 1dec50e6-d728-41d4-8868-5f9db568d15b
-source-git-commit: 5d1a560b4eb386d0c3795d6634742ffce8ef4c71
+source-git-commit: 2e3b10f7886f8bc5757d2144875ec0b441de7bb5
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 4%
@@ -41,7 +41,9 @@ La tâche [Créer du contenu](/help/ai-in-aem/agents/brand-experience/experience
 
 >[!NOTE]
 >
->La tâche de création de contenu est actuellement en disponibilité limitée. Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
+>La tâche de création de contenu est actuellement en disponibilité limitée.
+>
+>Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
 
 ### Tâche de création de formulaire {#form-creation}
 
