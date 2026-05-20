@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 1002d4d5df3cac2c81c46f3c8bc4efdb572cf5d8
+source-git-commit: 459858d160eaaeddc24321aea031e855911e735f
 workflow-type: tm+mt
-source-wordcount: '4130'
+source-wordcount: '4146'
 ht-degree: 71%
 
 ---
@@ -268,6 +268,12 @@ Les API du tableau ci-dessous (cliquez pour développer) ont été annoncées c
     <td>org.json</td>
     <td>L’implémentation Apache Johnzon de <a href="https://johnzon.apache.org/index.html">javax.json</a> est recommandée et devrait être utilisée. </td>
     <td>4/30/2021</td>
+    <td>3/31/2027 (Provisoire)</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.commons.predicate</td>
+    <td>Cette API est obsolète. Utilisez com.day.cq.commons.predicates à la place.</td>
+    <td>6/1/2024</td>
     <td>3/31/2027 (Provisoire)</td>
   </tr>
   <tr>
