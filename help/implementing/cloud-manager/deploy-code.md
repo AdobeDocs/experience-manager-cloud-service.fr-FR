@@ -5,10 +5,10 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: cca724e41edc333346dfead092048c7739a0ec95
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 38%
+source-wordcount: '1216'
+ht-degree: 36%
 
 ---
 
@@ -32,11 +32,11 @@ Tous les déploiements de Cloud Service suivent un processus continu pour garant
 
 >[!NOTE]
 >
->Le cache du Dispatcher est effacé à chaque déploiement. Il est ensuite « préchauffé » avant que les nouveaux nœuds de publication n’acceptent le trafic.
+>Le cache de Dispatcher est effacé à chaque déploiement, puis préchauffé avant que les nouveaux nœuds de publication ne commencent à accepter le trafic.
 
 ## Déploiement de votre code avec Cloud Manager dans AEM as a Cloud Service {#deploying-code-with-cloud-manager}
 
-Une fois que vous avez [configuré votre pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md), y compris le référentiel, l’environnement et l’environnement de test, vous êtes prêt à déployer votre code.
+Une fois que vous avez [configuré votre pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) y compris le référentiel, l’environnement et l’environnement de test, vous êtes prêt à déployer votre code.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
@@ -82,7 +82,7 @@ La phase de **test d’évaluation** comprend les étapes suivantes :
 | --- | --- |
 | Tests fonctionnels du produit | Le pipeline Cloud Manager exécute des tests qui s’exécutent sur l’environnement d’évaluation.<br>Voir aussi [Tests fonctionnels du produit](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing). |
 | Tests fonctionnels personnalisés | Cette étape du pipeline est toujours exécutée et ne peut pas être ignorée. Si le build ne génère pas de fichier JAR de test, le test réussit automatiquement.<br>Voir aussi [Tests fonctionnels personnalisés](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing). |
-| Test d’interface utilisateur personnalisé | Une fonctionnalité facultative qui exécute automatiquement les tests de l’interface utilisateur créés pour des applications personnalisées.Les tests de l’interface utilisateur <br> sont basés sur Selenium et conditionnés dans une image Docker afin d’offrir une flexibilité au niveau du langage et des structures. Cette approche vous permet d’utiliser Java et Maven, Node et WebDriver.io, ou tout framework ou technologie basé sur Selenium.<br>Voir aussi [Test d’interface utilisateur personnalisé](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing). |
+| Test d’interface utilisateur personnalisé | <br> Une fonctionnalité facultative qui exécute automatiquement les tests de l’interface utilisateur créés pour les applications personnalisées. Les tests de l’interface utilisateur sont basés sur Selenium et conditionnés dans une image Docker afin d’offrir une flexibilité au niveau de la langue et des structures. Cette approche vous permet d’utiliser Java et Maven, Node et WebDriver.io, ou tout framework ou technologie basé sur Selenium.<br>Voir aussi [Test d’interface utilisateur personnalisé](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing). |
 | Audit d’expérience | Cette étape du pipeline est toujours exécutée et ne peut pas être ignorée. Lorsqu’un pipeline de production est exécuté, une étape de contrôle de l’expérience est incluse après les tests fonctionnels personnalisés qui exécutent les contrôles.<ul><li>Les pages configurées sont envoyées au service et évaluées.</li><li>Les résultats sont informatifs et affichent les scores et le changement entre les scores actuels et précédents.</li><li>Ces informations sont utiles pour déterminer si une régression est introduite avec le déploiement actuel.</li></ul>Voir [Comprendre les résultats du contrôle de l’expérience](/help/implementing/cloud-manager/reports/report-experience-audit.md).</li></ul> |
 
 ![Test dans l’environnement d’évaluation](assets/stage-testing.png)
@@ -109,7 +109,7 @@ Ce processus se poursuit jusqu’à ce que le déploiement ait atteint tous les 
 
 Les étapes suivantes expirent s’ils sont en attente de commentaires de l’utilisateur lors d’un déploiement :
 
-| Étape | Délai dépassé |
+| Étape | Délai d’expiration |
 |--- |--- |
 | Test de qualité du code | 14 jours |
 | Test de sécurité | 14 jours |
@@ -146,7 +146,7 @@ En plus d’être disponible dans l’IU, l’[API Cloud Manager](https://devel
 
 #### Déclencher une nouvelle exécution {#reexecute-deployment-api}
 
-Pour déclencher une réexécution, envoyez une requête PUT au `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` HAL Link à l’état d’étape de déploiement en production.
+Pour déclencher une réexécution, envoyez une requête PUT au `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` de lien HAL à l’état d’étape de déploiement en production.
 
 * Si ce lien est présent, l’exécution peut être redémarrée à partir de cette étape.
 * En cas d’absence, l’exécution ne peut pas être redémarrée à partir de cette étape.
