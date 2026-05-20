@@ -120,7 +120,7 @@ Comme mentionné dans la section ci-dessus [Variances des requêtes de contenu C
 
 ### Règles de filtrage du trafic pour la gestion des demandes de contenu {#traffic-filter-rules-to-manage-crs}
 
-Pour mieux contrôler vos requêtes de contenu, analysez le trafic de votre réseau CDN avant de définir des règles de filtrage. Le [outil d’analyse des journaux CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/devops/cdn-log-analysis) vous permet d’obtenir des informations sur les performances du réseau CDN et les modèles de requête. Commencez par comprendre d’où vient votre trafic et s’il existe des modèles de signalisation inattendus (un modèle de robot courant consiste à utiliser un agent utilisateur vide).
+Pour mieux contrôler vos requêtes de contenu, analysez le trafic de votre réseau CDN avant de définir des règles de filtrage. Le [outil d’analyse des journaux CDN](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/cloud-manager/devops/cdn-log-analysis) vous permet d’obtenir des informations sur les performances du réseau CDN et les modèles de requête. Commencez par comprendre d’où vient votre trafic et s’il existe des modèles de signalisation inattendus (un modèle de robot courant consiste à utiliser un agent utilisateur vide).
 
 **Éléments à surveiller et à consigner :**
 
