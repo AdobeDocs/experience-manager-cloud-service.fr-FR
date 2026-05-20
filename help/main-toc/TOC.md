@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b96b2f202c80c4dc1886cb60fcf206dd6ffaf5f1
+source-git-commit: cc95dec08f8fecbd798ce0b19a8698bdf1bc6a51
 workflow-type: tm+mt
-source-wordcount: '7397'
-ht-degree: 86%
+source-wordcount: '7400'
+ht-degree: 85%
 
 ---
 
@@ -1134,6 +1134,7 @@ ht-degree: 86%
          + Agent de production d’expérience {#experience-production}
             + [Vue d’ensemble](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)
             + [Tâche de mise à jour du contenu](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md)
+            + [Création de tâche de contenu](/help/ai-in-aem/agents/brand-experience/experience-production/content-create.md)
             + [Tâche de création de communication](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md)
             + [Tâche de création de formulaire](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md)
          + Agent de modernisation de l’expérience {#modernization}
