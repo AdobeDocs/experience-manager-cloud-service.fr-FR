@@ -1,21 +1,19 @@
 ---
 title: Comment configurer les données de Marketo Engage pour les formulaires adaptatifs ?
 description: Découvrez comment utiliser le schéma Marketo Engage dans les formulaires adaptatifs.
-keywords: Utilisation de la source de données Marketo Engage dans les formulaires adaptatifs. Comment connecter une source de données d’instance Marketo à un formulaire ? , Connecter un formulaire à Marketo.
+keywords: Utilisation de la source de données Marketo Engage dans le Forms adaptatif. Comment connecter une source de données d’instance Marketo à un formulaire ? , Connecter un formulaire à Marketo.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 60fa6bd9f29e670acb2acf52a40266e699bb99d3
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 99%
+source-wordcount: '751'
+ht-degree: 96%
 
 ---
 
 # Configurer la source de données Marketo Engage pour les formulaires adaptatifs existants
-
-<span class="preview"> Cette fonctionnalité est disponible par le biais d’un programme d’adoption précoce. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
 
 ![Workflow](/help/forms/assets/workflow-marketo-2.png)
 

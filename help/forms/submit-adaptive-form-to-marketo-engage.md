@@ -6,20 +6,18 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 0683564b-1ac4-42b4-bc08-101c4fdef286
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 60fa6bd9f29e670acb2acf52a40266e699bb99d3
 workflow-type: tm+mt
-source-wordcount: '778'
-ht-degree: 20%
+source-wordcount: '779'
+ht-degree: 18%
 
 ---
 
 # Configurer l’action d’envoi vers Marketo Engage pour les formulaires existants
 
-<span class="preview"> Cette fonctionnalité est disponible par le biais d’un programme d’adoption précoce. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
-
 ![Workflow](/help/forms/assets/workflow-marketo-3.png)
 
-L’éditeur de Forms adaptatif fournit l’action d’envoi **Envoyer à Marketo Engage** pour envoyer des données de Forms adaptatif à Adobe Marketo Engage en vue de leur traitement. Vous pouvez configurer un formulaire adaptatif existant pour envoyer des données à [Adobe Marketo Engage](https://experienceleague.adobe.com/fr/docs/marketo/using/home) lors de l’envoi.
+L’éditeur de Forms adaptatif fournit l’action d’envoi **Envoyer à Marketo Engage** pour envoyer des données de Forms adaptatif à Adobe Marketo Engage en vue de leur traitement. Vous pouvez configurer un formulaire adaptatif existant pour envoyer des données à [](https://experienceleague.adobe.com/en/docs/marketo/using/home) lors de l’envoi.
 
 Diverses actions d’envoi prêtes à l’emploi sont disponibles pour gérer les envois de formulaire. Pour en savoir plus sur ces options, consultez l’article [Action d’envoi de formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md).
 
@@ -50,7 +48,7 @@ Vous pouvez configurer l’action d’envoi d’un formulaire adaptatif en fonct
 1. Ouvrez le formulaire adaptatif pour le modifier et accédez à la section **[!UICONTROL Envoi]** des propriétés du conteneur de formulaires adaptatifs et sélectionnez une action d’envoi comme **Envoyer à Marketo Engage**.
 1. Cliquez sur **[!UICONTROL Terminé]**.
 
-![Action Envoyer Marketo](/help/forms/assets/marketo-engage-submit-action-af.png){width=50%, height=50%}
+![Action Envoyer ](/help/forms/assets/marketo-engage-submit-action-af.png){width=50%, height=50%}
 
 Après avoir configuré l’action d’envoi pour le formulaire adaptatif en tant que **Envoyer à Marketo Engage**, vous pouvez envoyer des données à Adobe Marketo Engage pour traitement. Les données peuvent être utilisées pour analyser et optimiser les campagnes marketing, automatiser les e-mails de relance et déclencher des workflows en fonction des envois de formulaire.
 
@@ -64,7 +62,7 @@ Vous pouvez configurer l’action d’envoi d’un formulaire adaptatif en fonct
 1. Ouvrez l’onglet **[!UICONTROL Envoi]** et sélectionnez une action d’envoi comme **Envoyer à Marketo Engage**.
 1. Cliquez sur **[!UICONTROL Terminé]**.
 
-![Action Envoyer Marketo](/help/forms/assets/marketo-engage-submit-action.png){width=50%, height=50%}
+![Action Envoyer ](/help/forms/assets/marketo-engage-submit-action.png){width=50%, height=50%}
 
 Après avoir configuré l’action d’envoi pour le formulaire adaptatif en tant que **Envoyer à Marketo Engage**, vous pouvez envoyer des données à Adobe Marketo Engage pour traitement. Les données peuvent être utilisées pour analyser et optimiser les campagnes marketing, automatiser les e-mails de relance et déclencher des workflows en fonction des envois de formulaire.
 
@@ -83,7 +81,7 @@ La boîte de dialogue **Propriétés du formulaire** s’affiche.
 
 1. Cliquez sur l’onglet **Envoi** et sélectionnez **[!UICONTROL Envoyer à Marketo Engage]** action d’envoi.
 
-   ![Action Envoyer Marketo](/help/forms/assets/marketo-engage-submit-action-ue.png)
+   ![Action Envoyer ](/help/forms/assets/marketo-engage-submit-action-ue.png)
 
 1. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 
@@ -98,7 +96,7 @@ Après avoir configuré l’action d’envoi pour le formulaire adaptatif en tan
 
 ## Étape suivante
 
-Vous pouvez également connecter un formulaire adaptatif à la bibliothèque Munchkin [&#128279;](https://experienceleague.adobe.com/fr/docs/marketo/using/product-docs/administration/setup/munchkin) pour suivre le nombre de visites, de clics et d’envois de formulaire.
+Vous pouvez également connecter un formulaire adaptatif à la bibliothèque Munchkin [](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) pour suivre le nombre de visites, de clics et d’envois de formulaire.
 
 ## Articles connexes
 

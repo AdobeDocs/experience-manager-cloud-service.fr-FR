@@ -4,10 +4,10 @@ description: Notes de mise à jour de la version 2024.11.0 d’ [!DNL Adobe Exp
 feature: Release Information
 role: Admin
 exl-id: 3fd6482e-66f0-48ee-983c-4cb6b7742dcd
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: b336b6e52bf6f3cba64ddd4b4580eabded86afdb
 workflow-type: tm+mt
-source-wordcount: '1810'
-ht-degree: 98%
+source-wordcount: '2217'
+ht-degree: 94%
 
 ---
 
@@ -37,7 +37,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Consultez la vidéo Vue d’ensemble de la version de novembre 2024 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2024.11.0 :
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -57,7 +57,7 @@ Amélioration du [référencement de fragments de contenu avec des références 
 
 **API AEM REST OpenAPI pour la diffusion de fragments de contenu**
 
-L’[API AEM REST OpenAPI pour la diffusion de fragments de contenu &#x200B;](/help/headless/aem-content-fragment-delivery-with-openapi.md) est désormais disponible pour AEM as a Cloud Service.
+L’[API AEM REST OpenAPI pour la diffusion de fragments de contenu ](/help/headless/aem-content-fragment-delivery-with-openapi.md) est désormais disponible pour AEM as a Cloud Service.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -67,7 +67,7 @@ L’[API AEM REST OpenAPI pour la diffusion de fragments de contenu &#x200B;](/
 
 Adobe Dynamic Media utilise l’intelligence artificielle pour générer automatiquement des sous-titres pour le contenu vidéo. Cette fonctionnalité est conçue pour améliorer l’accessibilité et l’expérience d’utilisation en fournissant des sous-titres précis en temps réel. L’IA analyse la piste audio de la vidéo pour transcrire la parole et créer des sous-titres, qui peuvent être modifiés pour plus de précision ou de personnalisation. Ces sous-titres permettent de répondre aux exigences d’accessibilité et d’améliorer l’engagement vidéo pour les audiences qui dépendent d’une prise en charge vidéo basée sur le texte ou qui préfèrent ce système.
 
-Pour bénéficier d’un accès anticipé à la prise en charge des sous-titres générés par l’IA sur votre compte Dynamic Media, vous devez [créer et envoyer un cas d’assistance clientèle Adobe &#x200B;](/help/assets/dynamic-media/video.md##enable-dash).
+Pour bénéficier d’un accès anticipé à la prise en charge des sous-titres générés par l’IA sur votre compte Dynamic Media, vous devez [créer et envoyer un cas d’assistance clientèle Adobe ](/help/assets/dynamic-media/video.md##enable-dash).
 
 **Rapport de diffusion Dynamic Media**
 
@@ -86,6 +86,22 @@ La vue Assets vous permet désormais d’accéder à Dynamic Media et à des ren
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Nouvelles fonctionnalités d’AEM Forms {#forms-new-features}
+
+* **[Assistant AEM Forms AI ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/brand-experience/experience-production/form-creation)** : L’IA générative pour Forms adaptatif apporte un tout nouveau niveau de puissance et de facilité à vos processus de développement de formulaires. Elle vous permet de créer de meilleurs formulaires plus rapidement que jamais auparavant.
+
+  ![Assistant IA générative, formulaires adaptatifs](/help/forms/assets/generative-ai-assistant.png)
+
+  Les fonctionnalités de l’IA générative proposées sont les suivantes :
+
+   * **Assistant IA pour les requêtes de produits** : obtenez des réponses instantanées à vos question sur les formulaires AEM. L’assistant IA sert de base de connaissances personnelle, fournissant des recommandations et des conseils pertinents directement au sein de la plateforme.
+
+   * **Génération de formulaires adaptatifs** : créez facilement des formulaires complets avec des prompts d’IA générative. L’IA générative d’Adobe génère automatiquement des formulaires conviviaux qui réduisent les abandons et personnalisent l’expérience.
+
+   * **Génération de panneau pour Forms** : générez des sections de formulaire adaptées à des besoins spécifiques de collecte de données. Par exemple, générez des sections pour collecter des informations sur le paiement, les préférences des clientes et clients ou les détails du voyage.
+
+   * **Modification des mises en page de formulaire** : testez différentes mises en page et conceptions à l’aide des prompts d’IA générative. Testez différentes mises en page, telles que l’assistant ou les onglets, afin de trouver ce qui convient le mieux pour votre formulaire. Utilisez les prompts d’IA générative afin d’optimiser vos formulaires pour la réactivité mobile et de créer des formulaires attrayants pour les utilisateurs et utilisatrices.
+
+   * **Configurer l’action d’envoi** : utilisez les prompts d’IA générative pour configurer facilement une action d’envoi pour votre formulaire. Faites votre choix parmi une bibliothèque d’actions d’envoi préconfigurées ou parmi une liste d’actions d’envoi personnalisées, créées et déployées par votre propre équipe de développement.
 
 * **[Mise à jour simplifiée des portées d’Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)** : vous pouvez modifier les portées d’une configuration Adobe Sign directement depuis la page Configurations d’AEM Cloud, simplifiant et accélérant ainsi la mise à jour des configurations existantes.
 
@@ -151,7 +167,7 @@ intuitive and improving the mobile form-filling experience.
 
 >[!IMPORTANT]
 >
-> Vous souhaitez adhérer au Programme d’accès anticipé pour des formulaires innovants ? Envoyez un e-mail depuis votre adresse officielle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) avec la liste des fonctionnalités qui vous intéressent.## Module complémentaire CIF {#cloud-services-cif}
+> Vous souhaitez adhérer au Programme d’accès anticipé pour des formulaires innovants ? Envoyez un e-mail à partir de votre adresse officielle à [](mailto:aem-forms-ea@adobe.com) avec la liste des fonctionnalités qui vous intéressent.## Module complémentaire CIF {#cloud-services-cif}
 
 ## Module complémentaire CIF {#cif}
 
@@ -174,8 +190,8 @@ Découvrez les [API OpenAPI AEM](/help/implementing/developing/open-api-based-ap
 
 Concrètement, les points d’entrée d’API répertoriés ci-dessous sont disponibles dans le cadre d’un programme d’adoption précoce. Si cela vous intéresse, envoyez un e-mail à l’adresse [aem-apis@adobe.com](mailto:aem-apis@adobe.com) décrivant comment vous prévoyez de les utiliser.
 
-* [API Sites Content Fragments](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
-* [API Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
+* [API de fragments de contenu de sites](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
+* [API ASSETS](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
 * API de dossiers Sites et Assets
 * [API Forms Communications](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 

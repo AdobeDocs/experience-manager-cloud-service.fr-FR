@@ -4,10 +4,10 @@ description: Notes de mise à jour de la version 2024.6.0 d’ [!DNL Adobe Expe
 feature: Release Information
 role: Admin
 exl-id: 4033abf4-7094-4ce4-ba93-c936062667e3
-source-git-commit: 0f5fc5469034139a45ec0fe7e30319012af97301
+source-git-commit: b336b6e52bf6f3cba64ddd4b4580eabded86afdb
 workflow-type: tm+mt
-source-wordcount: '1967'
-ht-degree: 97%
+source-wordcount: '2181'
+ht-degree: 95%
 
 ---
 
@@ -69,7 +69,7 @@ Vous souhaitez tester la fonctionnalité et partager vos commentaires ? Envoyez
 
 **Hub de contenus**
 
-Le hub de contenus est disponible dans le cadre d’Experience Manager Assets as a Cloud Service pour démocratiser l’accès au contenu de marque pour les organisations et leurs partenaires commerciaux. Avec le hub de contenus, vous pouvez facilement rechercher et distribuer des ressources, les réutiliser et créer de nouvelles variations de marque et accélérer l’activation à grande échelle.
+Content Hub est disponible dans le cadre d’Experience Manager Assets as a Cloud Service pour démocratiser l’accès au contenu de marque pour les organisations et leurs partenaires commerciaux. Avec le hub de contenus, vous pouvez facilement rechercher et distribuer des ressources, les réutiliser et créer de nouvelles variations de marque et accélérer l’activation à grande échelle.
 
 ![Interface d’utilisation du hub de contenus](/help/release-notes/assets/content-hub-ui.png)
 
@@ -116,6 +116,10 @@ When looking at the asset details, any image with content credentials added, suc
 -->
 
 ### Nouvelles fonctionnalités d’AEM Forms {#forms-new-prerelease-features}
+
+#### Connexion d’un formulaire adaptatif à Adobe Workfront
+
+Forms as a Cloud Service offre une option prête à l’emploi pour connecter facilement [un formulaire adaptatif à Adobe Workfront](/help/forms/submit-adaptive-form-to-workfront-fusion.md). Cela simplifie le processus d’envoi d’un formulaire adaptatif à un scénario Adobe Workfront, ce qui permet de déclencher un scénario Workfront Fusion lors de l’envoi d’un formulaire adaptatif.
 
 #### Éditeur de règles visuel amélioré pour les formulaires adaptatifs basés sur les composants principaux
 
@@ -213,7 +217,7 @@ Auparavant, un ticket d’assistance était nécessaire pour générer la clé X
 
 #### Redirections Côté Serveur (Programme Des Utilisateurs Et Utilisatrices Précoces) {#server-side-redirects-early-adopter}
 
-Configurez les redirections côté serveur 301/302 dans le contrôle de code source et déployez-les sur le réseau CDN. [En savoir plus](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Notez qu’il existe déjà plusieurs autres fonctionnalités liées à la [configuration du réseau CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md), y compris les transformations de requêtes et de réponses, et le routage du trafic vers les sites hors AEM.
+Configurez les redirections côté serveur 301/302 dans le contrôle de code source et déployez-les sur le réseau CDN. [En savoir plus](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Notez que plusieurs autres fonctionnalités liées à la [configuration du réseau CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md) sont déjà disponibles, notamment les transformations de requête et de réponse, ainsi que le routage du trafic vers des sites hors AEM.
 
 #### Alertes relatives aux règles de filtrage du trafic (programme d’adoption précoce) {#traffic-filter-rules-alerts-early-adopter}
 

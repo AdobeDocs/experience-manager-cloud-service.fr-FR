@@ -4,10 +4,10 @@ description: Notes de mise à jour de la version 2025.1.0 d’ [!DNL Adobe Expe
 feature: Release Information
 role: Admin
 exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+source-git-commit: b336b6e52bf6f3cba64ddd4b4580eabded86afdb
 workflow-type: tm+mt
-source-wordcount: '1703'
-ht-degree: 92%
+source-wordcount: '1933'
+ht-degree: 88%
 
 ---
 
@@ -37,7 +37,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Consultez la vidéo Vue d’ensemble de la version de janvier 2025 pour un résumé des fonctionnalités ajoutées dans la version 2025.1.0 :
 
->[!VIDEO](https://video.tv.adobe.com/v/3456076?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3456072?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -48,7 +48,7 @@ Collaborez facilement avec vos collègues lors de la création de fragments de c
 
 **Interfaces utilisateur de l’édition et de l’administration des fragment de contenu, prise en charge des versions mises à jour d’AEM as a Cloud Service**
 
-La version AEM as a Cloud Service minimale prise en charge pour les nouvelles interfaces utilisateur d’administration et de l’éditions des fragments de contenu est désormais 2023.8.13099. Les versions antérieures à la version de disponibilité générale des nouvelles interfaces d’utilisation ne sont plus prises en charge.
+La version AEM as a Cloud Service minimale prise en charge pour les nouvelles interfaces utilisateur d’administration et d’éditeur de fragments de contenu est désormais 2023.8.13099. Les versions antérieures à la version de disponibilité générale des nouvelles interfaces utilisateur ne sont plus prises en charge
 
 ### Programme d’adoption précoce {#sites-early-adopter}
 
@@ -64,7 +64,7 @@ L’API [AEM REST OpenAPI pour la diffusion de fragments de contenu](/help/head
 
 #### Éditeur de SPA {#spa-editor}
 
-[L’éditeur de SPA](/help/implementing/developing/hybrid/introduction.md) a été abandonné pour les nouveaux projets à partir de la version 2025.1.0. L’éditeur de SPA reste pris en charge pour les projets existants, mais ne doit pas être utilisé pour de nouveaux projets.
+[L’éditeur de SPA](/help/implementing/developing/hybrid/introduction.md) a été abandonné pour les nouveaux projets à partir de la version 2025.1.0. L’éditeur de SPA reste pris en charge pour les projets existants, mais ne doit pas être utilisé pour de nouveaux projets.
 
 Les éditeurs privilégiés pour la gestion du contenu découplé dans AEM sont désormais les suivants :
 
@@ -112,6 +112,8 @@ Adobe Dynamic Media utilise l’intelligence artificielle pour générer autom
 
 ### Nouvelles fonctionnalités d’AEM Forms {#forms-new-features}
 
+* **[Intégrer les formulaires adaptatifs à Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)** : AEM Forms as a Cloud Service comprend désormais une option conviviale pour connecter les formulaires adaptatifs à Adobe Marketo Engage. Cette intégration vous permet de créer des formulaires adaptatifs directement avec la capture de prospect de Marketo Engage et les objets personnalisés associés. Vous pouvez désormais préremplir des champs de formulaire avec des données provenant de Marketo Engage et renvoyer les données pour automatiser les workflows tels que les campagnes intelligentes et l’automatisation des e-mails. Vous pouvez également connecter un formulaire adaptatif à la bibliothèque Munchkin pour effectuer le suivi du nombre de visites, de clics et d’envois de formulaire.
+
 * **Gérer la publication** : vous pouvez utiliser le workflow [Gérer la publication](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option)) pour publier ou dépublier des formulaires dans les environnements, généralement de l’instance d’auteur aux instances de publication et de prévisualisation. Cela permet aux utilisateurs et utilisatrices de publier, d’annuler la publication ou de planifier la publication du contenu de manière rationnalisée.
 
 * **[Enregistrement automatique d’un brouillon pour les formulaires adaptatifs basés sur les composants principaux](/help/forms/save-core-component-based-form-as-draft.md)** : les utilisateurs et les utilisatrices peuvent désormais bénéficier d’une fonction d’enregistrement automatique, qui sauvegarde automatiquement un formulaire partiellement complété en tant que brouillon. Ces personnes peuvent revenir ultérieurement pour finir de le remplir sur le même appareil ou sur un autre. Cette fonctionnalité améliore les taux de conversion pour les organisations en réduisant l’abandon de formulaire, car les utilisateurs et utilisatrices n’ont pas besoin de recommencer à remplir le formulaire depuis le début.
@@ -135,7 +137,7 @@ Le Forms adaptatif permet d’utiliser des modèles d’e-mail HTML. Les modèle
 
 #### Amélioration de la prise en charge de l’espace de stockage dans le cloud : chargement direct de PDF vers le stockage Blob Azure
 
-Les API de génération de documents d’AEM Forms prennent désormais en charge le chargement direct des documents de PDF générés vers Azure Blob Storage. Cette amélioration simplifie le stockage et la récupération, améliorant l’efficacité et l’intégration aux workflows cloud.
+Les API de génération de documents d’AEM Forms prennent désormais en charge le chargement direct des documents de PDF générés vers le stockage Blob d’Azure. Cette amélioration simplifie le stockage et la récupération, améliorant l’efficacité et l’intégration aux workflows cloud.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -163,8 +165,8 @@ Découvrez les [API OpenAPI AEM](/help/implementing/developing/open-api-based-ap
 
 Concrètement, les points d’entrée d’API répertoriés ci-dessous sont disponibles dans le cadre d’un programme d’adoption précoce. Si cela vous intéresse, envoyez un e-mail à l’adresse [aem-apis@adobe.com](mailto:aem-apis@adobe.com) décrivant comment vous prévoyez de les utiliser.
 
-* [API Sites Content Fragments](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
-* [API Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
+* [API de fragments de contenu de sites](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
+* [API ASSETS](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
 * API de dossiers Sites et Assets
 * [API Forms Communications](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 
@@ -172,7 +174,7 @@ Concrètement, les points d’entrée d’API répertoriés ci-dessous sont disp
 
 L’Edge Computing rapproche le traitement des données du navigateur, ce qui présente des avantages, notamment une latence réduite. Adobe aimerait savoir si cette technologie est utile pour la diffusion de publications AEM et les projets Edge Delivery Services. De plus, faites-nous part de l’utilisation que vous envisagez d’en faire afin de contribuer à la feuille de route du produit. Envoyez un e-mail à [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) contenant des questions et des commentaires.
 
-### Nouvelle AEM Developer Console (version bêta publique) {#aem-developer-console-beta}
+### Nouvelle AEM Developer Console (version Beta publique) {#aem-developer-console-beta}
 
 Testez une [AEM Developer Console](/help/implementing/developing/introduction/aem-developer-console.md) repensée qui offre une expérience plus interactive pour le débogage du code dans les environnements cloud.
 
@@ -180,7 +182,7 @@ Tout le monde peut accéder à la version Beta publique en cliquant sur le bouto
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-Vous trouverez une liste complète des nouvelles fonctionnalités améliorées de la dernière version d’Adobe Experience Manager Guides [ici](https://experienceleague.adobe.com/fr/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2412-release/fixed-issues-2024-12-0).
+Vous trouverez une liste complète des nouvelles fonctionnalités améliorées de la dernière version d’Adobe Experience Manager Guides [ici](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2412-release/fixed-issues-2024-12-0).
 
 ## Cloud Manager {#cloud-manager}
 

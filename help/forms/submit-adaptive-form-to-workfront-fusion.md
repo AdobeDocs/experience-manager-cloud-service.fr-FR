@@ -7,18 +7,16 @@ feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Com
 role: Admin, User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 60fa6bd9f29e670acb2acf52a40266e699bb99d3
 workflow-type: tm+mt
-source-wordcount: '1443'
+source-wordcount: '1503'
 ht-degree: 13%
 
 ---
 
 # Envoyer un formulaire adaptatif à Adobe Workfront Fusion
 
-<span class="preview"> Cette fonctionnalité est disponible par le biais d’un programme d’adoption précoce. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
-
-[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html?lang=fr) automatise la répétition des mêmes tâches, comme les workflows d’approbation de documents, le filtrage et le tri des e-mails, ce qui vous permet de vous concentrer sur de nouvelles tâches plutôt que sur des tâches récurrentes. Adobe Workfront Fusion comprend plusieurs scénarios. Un scénario se compose d’une série de modules qui exécutent le transfert de données entre les applications et les services web. Dans un scénario, vous ajoutez différentes étapes (modules) pour automatiser une tâche.
+[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) automatise la répétition des mêmes tâches, comme les workflows d’approbation de documents, le filtrage et le tri des e-mails, ce qui vous permet de vous concentrer sur de nouvelles tâches plutôt que sur des tâches récurrentes. Adobe Workfront Fusion comprend plusieurs scénarios. Un scénario se compose d’une série de modules qui exécutent le transfert de données entre les applications et les services web. Dans un scénario, vous ajoutez différentes étapes (modules) pour automatiser une tâche.
 
 Par exemple, à l’aide de Workfront Fusion, vous pouvez créer un scénario afin de collecter des données avec un formulaire adaptatif, de traiter les données et d’envoyer les données à un magasin de données pour archivage. Une fois qu’un scénario est configuré, Workfront Fusion exécute automatiquement les tâches chaque fois qu’un utilisateur remplit un formulaire, mettant ainsi à jour l’entrepôt de données de manière transparente.
 
@@ -39,7 +37,7 @@ AEM Forms as a Cloud Service fournit un connecteur prêt à l’emploi pour se c
 
 Pour établir une connexion entre Workfront Fusion et AEM Forms, les éléments suivants sont nécessaires :
 
-* Une licence [Workfront et Workfront Fusion valide](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html?lang=fr).
+* Une licence [Workfront et Workfront Fusion valide](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
 * Un utilisateur d’AEM disposant du droit d’accéder à [la console de développement](https://my.cloudmanager.adobe.com/) pour [récupérer les informations d’identification du service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=fr).
 
 ## Intégration d’AEM Forms à Adobe Workfront Fusion
@@ -60,7 +58,7 @@ Pour créer un scénario, procédez comme suit :
 1. Cliquez sur **[!UICONTROL Scénarios]** ![icône Partager](/help/forms/assets/Smock_ShareAndroid_18_N.svg) dans le panneau de gauche.
 1. Cliquez sur **[!UICONTROL Créer un nouveau scénario]** dans le coin supérieur droit de la page. Une page permettant de créer un nouveau scénario s’affiche à l’écran.
 1. Sélectionnez **[!UICONTROL Nouveau scénario]** dans le coin supérieur gauche de la page, puis saisissez le nom correct du scénario.
-1. Cliquez sur le point d’interrogation et veillez à ajouter le premier module en tant que **[!UICONTROL AEM Forms]**.
+1. Cliquez sur le point d’interrogation et veillez à ajouter le premier module en tant que ****.
 
    ![Ajouter un module AEM Forms](/help/forms/assets/workfront-aemforms.png)
 
@@ -68,7 +66,7 @@ Pour créer un scénario, procédez comme suit :
 
    >[!NOTE]
    >
-   > Il est obligatoire d’ajouter le premier module en tant que **[!UICONTROL AEM Forms]**.
+   > Il est obligatoire d’ajouter le premier module en tant que ****.
 
 1. Sélectionnez la boîte de dialogue **[!UICONTROL Observer les événements de formulaire]** et une fenêtre permettant d’ajouter un webhook s’affiche.
 
@@ -107,7 +105,7 @@ Pour ajouter une connexion :
    >
    > L’URL de l’instance est l’adresse web unique qui pointe vers une instance AEM Forms spécifique.
 
-   Vous pouvez récupérer les informations d’identification du service [&#x200B; à partir de Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=fr) requises pour créer une connexion.
+   Vous pouvez récupérer les informations d’identification du service [ à partir de Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=fr) requises pour créer une connexion.
 
 1. Remplacez `ims-na1.adobelogin.com` dans le point d’entrée **IMS** par la valeur de **imsEndpoint** à partir des informations d’identification de service dans la Developer Console.
 
@@ -120,7 +118,7 @@ Pour ajouter une connexion :
    * Spécifiez **Client Secret** avec la valeur **clientSecret** à partir des informations d’identification de service dans la Developer Console.
    * Spécifiez **ID de compte technique** avec la valeur **id** à partir des informations d’identification du service dans la Developer Console.
    * Spécifiez **ID d’organisation** avec la valeur **org** à partir des informations d’identification du service dans la Developer Console.
-   * **Étendues Meta** avec une valeur de **métascopes** à partir des informations d’identification du service dans la Developer Console.
+   * **Étendues** avec une valeur de **métascopes** à partir des informations d’identification du service dans la Developer Console.
    * **Clés privées** avec la valeur **privateKey** à partir des informations d’identification de service dans la Developer Console.
 
    >[!NOTE]
@@ -169,7 +167,7 @@ Pour configurer l’action d’envoi d’un formulaire adaptatif en fonction des
 Pour configurer l’action d’envoi d’un formulaire adaptatif en fonction des composants principaux pour Workfront Fusion :
 
 1. Ouvrez l’explorateur de contenu, puis sélectionnez le composant **[!UICONTROL Conteneur de guide]** de votre formulaire adaptatif.
-1. Cliquez sur l’icône des propriétés du conteneur de guide ![Propriétés du guide](/help/forms/assets/configure-icon.svg). La fenêtre du conteneur de formulaires adaptatifs s’ouvre.
+1. Cliquez sur l’icône des propriétés du conteneur de guide ![Propriétés du guide](/help/forms/assets/configure-icon.svg). La boîte de dialogue du conteneur de formulaires adaptatifs s’ouvre.
 1. Cliquez sur l’onglet **[!UICONTROL Envoi]**.
 1. Dans la liste déroulante **[!UICONTROL Action Envoyer]**, sélectionnez **[!UICONTROL Appeler un scénario Workfront Fusion]**.
 
