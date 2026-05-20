@@ -3,7 +3,7 @@ title: Création de tâche de contenu
 description: Découvrez ce qu’est la tâche de création de contenu Brand Experience Agent et ce qu’elle peut vous apporter.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
-source-git-commit: 3a0e9b322aec8b06285a94b9e288580faaf87921
+source-git-commit: 5d1a560b4eb386d0c3795d6634742ffce8ef4c71
 workflow-type: tm+mt
 source-wordcount: '787'
 ht-degree: 1%
@@ -19,7 +19,7 @@ La tâche de création de contenu fait partie de l’[agent de production Experi
 
 >[!NOTE]
 >
->La tâche de création de contenu est actuellement en disponibilité limitée. Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
+>La tâche de création de contenu est actuellement en disponibilité limitée. Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [](mailto:experience-production-agent@adobe.com).
 
 ## Vue d’ensemble {#overview}
 
@@ -42,7 +42,7 @@ Pour utiliser la tâche Créer du contenu :
       * La tâche de création de contenu utilise un résumé ou un document marketing qui décrit ce que l’agent doit générer. Le travail accepte un large éventail de formats pour le brief. Des notes efficaces spécifient souvent les objectifs, l’audience, les sujets, le nombre de mots cibles et les mots-clés.
 
 * Vous pouvez ensuite [Envoyer](#submit) l’invite et le résumé
-* Spécifiez ensuite un modèle [&#128279;](#select-a-template) : qui définit la disposition requise
+* Spécifiez ensuite un modèle [](#select-a-template) : qui définit la disposition requise
 * Le travail fournira un [plan que vous pourrez examiner](#review-the-plan)
 * Vous pouvez ensuite [poursuivre la génération](#proceed-with-generation) et [affiner davantage la création si nécessaire](#further-refinement-in-authoring)
 
@@ -108,7 +108,7 @@ Une fois la génération terminée, l’agent fournit deux liens :
 
 ## Amélioration de la création {#further-refinement-in-authoring}
 
-Une fois que vous avez choisi de modifier la page dans AEM, elle s’ouvre dans votre environnement de création (par exemple, l’[éditeur universel](/help/sites-cloud/authoring/universal-editor/authoring.md) ou l’[éditeur de page](/help/sites-cloud/authoring/page-editor/introduction.md)).
+Une fois que vous avez choisi de modifier la page dans AEM, elle s’ouvre dans votre environnement de création ; par exemple, l’[éditeur universel](/help/sites-cloud/authoring/universal-editor/authoring.md) ou l’[éditeur de page](/help/sites-cloud/authoring/page-editor/introduction.md).
 
 Dans l’[éditeur universel](#universal-editor-edit-text-with-the-assistant), l’assistant d’IA est *contextuel* : vous pouvez sélectionner des éléments sur la zone de travail et les utiliser avec l’assistant.
 
@@ -134,10 +134,10 @@ Vous pouvez explorer les agents AEM via l’[aire de jeu](https://www.aem.live/d
 
 Gardez à l’esprit les limites suivantes :
 
-* Cette fonctionnalité est en disponibilité limitée et nécessite une intégration manuelle pour la participation. Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
+* Cette fonctionnalité est en disponibilité limitée et nécessite une intégration manuelle pour la participation. Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [](mailto:experience-production-agent@adobe.com).
 
 ## Ressources supplémentaires {#additional-resources}
 
 Les ressources suivantes peuvent s’avérer utiles lorsque vous continuez à explorer l’agent de production d’expérience :
 
-* Vous pouvez également utiliser le [classeur de l’agent de production Experience](https://www.adobe.com/go/aem-epa-workbook_fr) pour obtenir des instructions pratiques et guidées.
+* Vous pouvez également utiliser le [classeur de l’agent de production Experience](https://www.adobe.com/go/aem-epa-workbook) pour obtenir des instructions pratiques et guidées.
