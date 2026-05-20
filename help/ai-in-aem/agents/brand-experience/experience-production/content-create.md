@@ -19,7 +19,7 @@ La tâche de création de contenu fait partie de l’[agent de production Experi
 
 >[!NOTE]
 >
->La tâche de création de contenu est actuellement en disponibilité limitée. Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [](mailto:experience-production-agent@adobe.com).
+>La tâche de création de contenu est actuellement en disponibilité limitée. Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
 
 ## Vue d’ensemble {#overview}
 
@@ -42,7 +42,7 @@ Pour utiliser la tâche Créer du contenu :
       * La tâche de création de contenu utilise un résumé ou un document marketing qui décrit ce que l’agent doit générer. Le travail accepte un large éventail de formats pour le brief. Des notes efficaces spécifient souvent les objectifs, l’audience, les sujets, le nombre de mots cibles et les mots-clés.
 
 * Vous pouvez ensuite [Envoyer](#submit) l’invite et le résumé
-* Spécifiez ensuite un modèle [](#select-a-template) : qui définit la disposition requise
+* Spécifiez ensuite un modèle [&#128279;](#select-a-template) : qui définit la disposition requise
 * Le travail fournira un [plan que vous pourrez examiner](#review-the-plan)
 * Vous pouvez ensuite [poursuivre la génération](#proceed-with-generation) et [affiner davantage la création si nécessaire](#further-refinement-in-authoring)
 
@@ -134,7 +134,7 @@ Vous pouvez explorer les agents AEM via l’[aire de jeu](https://www.aem.live/d
 
 Gardez à l’esprit les limites suivantes :
 
-* Cette fonctionnalité est en disponibilité limitée et nécessite une intégration manuelle pour la participation. Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [](mailto:experience-production-agent@adobe.com).
+* Cette fonctionnalité est en disponibilité limitée et nécessite une intégration manuelle pour la participation. Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
 
 ## Ressources supplémentaires {#additional-resources}
 
