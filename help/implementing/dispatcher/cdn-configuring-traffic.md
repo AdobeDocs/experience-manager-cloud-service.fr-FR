@@ -4,10 +4,10 @@ description: Découvrez comment configurer le trafic CDN en déclarant des règl
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 13efa829fb1d1f6533645b9661063a38180db179
+source-git-commit: 8371bceaf116cdcd4e0542dd1b8d772d2d12a05d
 workflow-type: tm+mt
-source-wordcount: '2051'
-ht-degree: 1%
+source-wordcount: '2637'
+ht-degree: 19%
 
 ---
 
@@ -27,7 +27,7 @@ De plus, si le réseau CDN ne peut pas contacter son origine, vous pouvez créer
 
 Toutes ces règles, déclarées dans un fichier de configuration dans le contrôle de code source, sont déployées à l’aide du pipeline Cloud Manager [config](/help/operations/config-pipeline.md). Notez que la taille cumulée du fichier de configuration, y compris les règles de filtrage du trafic, ne peut pas dépasser 100KB.
 
-Pour obtenir des fragments de code supplémentaires pour les scénarios courants, consultez l’article [&#x200B; Fragments de code de configuration de réseau CDN pour les scénarios courants &#x200B;](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md).
+Pour obtenir des fragments de code supplémentaires pour les scénarios courants, consultez l’article [ Fragments de code de configuration de réseau CDN pour les scénarios courants ](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md).
 
 ## Ordre d&#39;évaluation {#order-of-evaluation}
 
@@ -58,9 +58,82 @@ Avant de pouvoir configurer le trafic sur le réseau CDN, vous devez effectuer l
 
 Les types de règle des sections ci-dessous partagent une syntaxe commune.
 
-Une règle est référencée par un nom, une « clause de quand » conditionnelle et des actions.
+Une syntaxe de règle standard est une entrée de liste avec un nom, une condition de `when` et une ou plusieurs actions :
 
-La clause « quand » détermine si une règle sera évaluée en fonction des propriétés, notamment le domaine, le chemin, les chaînes de requête, les en-têtes et les cookies. La syntaxe est identique pour tous les types de règle ; pour plus d’informations, consultez la section [Structure de condition](/help/security/traffic-filter-rules-including-waf.md#condition-structure) de l’article Règles de filtrage du trafic .
+```
+- name: <name>
+  when: <condition>
+  action: <action>
+```
+
+Chaque section de niveau supérieur (`requestTransformations`, `responseTransformations`, `redirects`, `originSelectors` et `trafficFilters` dans [Règles de filtrage de trafic](/help/security/traffic-filter-rules-including-waf.md)) prend en charge son propre ensemble de types d’action et de propriétés. Les valeurs et champs de `type` autorisés sont définis dans les tableaux et exemples de cette section, et ne sont pas partagés sur tous les types de règle. Les sections telles que `requestTransformations` et `responseTransformations` prennent en charge plusieurs actions spécifiées sous la forme d’une liste yaml sous `actions` propriété .
+
+La clause « quand » détermine si une règle sera évaluée en fonction des propriétés, notamment le domaine, le chemin, les chaînes de requête, les en-têtes et les cookies. La syntaxe est la même pour tous les types de règle ; voir [Structure de condition](#condition-structure) ci-dessous. Les règles de filtrage du trafic (y compris WAF) utilisent la même syntaxe de condition. Pour les actions, les limites de débit et le comportement spécifique à WAF, voir [Règles de filtrage du trafic y compris les règles WAF](/help/security/traffic-filter-rules-including-waf.md).
+
+### Structure de condition {#condition-structure}
+
+Une condition peut être soit une simple condition, soit un groupe de conditions.
+
+**Condition simple**
+
+Une condition simple est composée d’un getter et d’un prédicat.
+
+```
+{ <getter>: <value>, <predicate>: <value> }
+```
+
+**Conditions de groupe**
+
+Un groupe de conditions est composé de plusieurs conditions simples et/ou de groupe.
+
+```
+<allOf|anyOf>:
+  - { <getter>: <value>, <predicate>: <value> }
+  - { <getter>: <value>, <predicate>: <value> }
+  - <allOf|anyOf>:
+    - { <getter>: <value>, <predicate>: <value> }
+```
+
+| **Propriété** | **Type** | **Signification** |
+|---|---|---|
+| **allOf** | `array[Condition]` | Opération **et**. true si toutes les conditions répertoriées renvoient true. |
+| **anyOf** | `array[Condition]` | Opération **ou**. true si l’une des conditions répertoriées renvoie true. |
+
+**Getter**
+
+| **Propriété** | **Type** | **Description** |
+|---|---|---|
+| reqProperty | `string` | Propriété de requête.<br><br>L’un de :<br><ul><li>`path` : renvoie le chemin d’accès complet d’une URL sans les paramètres de requête. (utilisez `pathRaw` pour la variante sans échappement)</li><li>`originalPath` : renvoie le chemin d’accès d’origine non modifiable de la requête sans les paramètres de requête (chemin d’accès précédant toute transformation de requête CDN).</li><li>`url` : renvoie l’URL complète, y compris les paramètres de requête. (utilisez `urlRaw` pour la variante sans échappement)</li><li>`originalUrl` : renvoie l’URL complète d’origine non modifiable de la requête, y compris les paramètres de requête - l’URL avant toute transformation de requête CDN.</li><li>`queryString` : renvoie la partie requête d’une URL.</li><li>`method` : renvoie la méthode HTTP utilisée dans la requête.</li><li>`tier` : renvoie l’une des options entre `author`, `preview` ou `publish`.</li><li>`domain` : renvoie la propriété de domaine (telle que définie dans l’en-tête `Host`) en minuscules.</li><li>`clientIp` : renvoie l’adresse IP du client ou de la cliente.</li><li>`forwardedDomain` : renvoie le premier domaine défini dans l’en-tête `X-Forwarded-Host` en minuscules.</li><li>`forwardedIp` : renvoie la première adresse IP de l’en-tête `X-Forwarded-For`.</li><li>`clientRegion` : renvoie le code de subdivision du pays qui identifie la région dans laquelle se trouve le client ou la cliente, comme décrit dans la norme [ISO 3166-2](https://fr.wikipedia.org/wiki/ISO_3166-2).</li><li>`clientCountry` : renvoie un code à deux lettres ([Symbole d’indicateur régional](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) qui identifie le pays dans lequel se trouve le client.</li><li>`clientContinent` : renvoie un code à deux lettres (AF, AN, AS, EU, NA, OC, SA) qui identifie le continent sur lequel se trouve le client ou la cliente.</li><li>`clientAsNumber` : renvoie le numéro [Système autonome](https://fr.wikipedia.org/wiki/Autonomous_system_(Internet)) associé à l’adresse IP du client ou de la cliente.</li><li>`clientAsName` : renvoie le nom associé au numéro du système autonome.</li></ul> |
+| reqHeader | `string` | Renvoie l’en-tête de requête avec le nom spécifié. |
+| queryParam | `string` | Renvoie le paramètre de requête avec le nom spécifié. |
+| reqCookie | `string` | Renvoie le cookie avec le nom spécifié. |
+| postParam | `string` | Renvoie le paramètre de publication avec le nom spécifié du corps de la requête. Fonctionne uniquement lorsque le corps est de type de contenu `application/x-www-form-urlencoded`. |
+
+**Prédicat**
+
+| **Propriété** | **Type** | **Signification** |
+|---|---|---|
+| **est égal à** | `string` | true si le résultat de getter est égal à la valeur fournie. |
+| **doesNotEqual** | `string` | true si le résultat de getter n’est pas égal à la valeur fournie. |
+| **like** | `string` | true si le résultat de getter correspond au modèle fourni. |
+| **notLike** | `string` | true si le résultat de getter ne correspond pas au modèle fourni. |
+| **matches** | `string` | true si le résultat de getter correspond à l’expression régulière fournie. |
+| **doesNotMatch** | `string` | true si le résultat de getter ne correspond pas à l’expression régulière fournie. |
+| **in** | `array[string]` | true si la liste fournie contient le résultat de getter. |
+| **notIn** | `array[string]` | true si la liste fournie ne contient pas le résultat de getter. |
+| **exists** | `boolean` | true lorsque la valeur est définie sur true et que la propriété existe ou lorsqu’elle est définie sur false et que la propriété n’existe pas. |
+
+**Remarques**
+
+* La propriété de requête `clientIp` ne peut être utilisée qu’avec les prédicats suivants : `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` peut également être comparé à des plages d’adresses IP lors de l’utilisation des prédicats `in` et `notIn`. L’exemple suivant implémente une condition pour évaluer si l’adresse IP d’un client ou d’une cliente se trouve dans la plage d’adresses IP 192.168.0.0/24 (de 192.168.0.0 à 192.168.0.255) :
+
+```
+when:
+  reqProperty: clientIp
+  in: [ "192.168.0.0/24" ]
+```
+
+* Adobe recommande d’utiliser [regex101](https://regex101.com/) et [Fastly Fiddle](https://fiddle.fastly.dev/) lorsque vous utilisez l’expression régulière. Vous pouvez également en savoir plus sur la façon dont Fastly traite les expressions régulières dans la [Documentation Fastly - Expressions régulières dans Fastly VCL](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
 
 Les détails du nœud d’actions diffèrent selon le type de règle et sont décrits dans les sections individuelles ci-dessous.
 
@@ -501,7 +574,7 @@ data:
 
 >[!NOTE]
 >
->Étant donné que le réseau CDN géré par Adobe est utilisé, veillez à configurer l’invalidation des notifications push en mode **géré**, en suivant la documentation relative à l’[&#x200B; des notifications push de Edge Delivery Services &#x200B;](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+>Étant donné que le réseau CDN géré par Adobe est utilisé, veillez à configurer l’invalidation des notifications push en mode **géré**, en suivant la documentation relative à l’[ des notifications push de Edge Delivery Services ](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
 
 
 ### Proxy de l’environnement AEMaaCS {#proxying-to-aemaacs}

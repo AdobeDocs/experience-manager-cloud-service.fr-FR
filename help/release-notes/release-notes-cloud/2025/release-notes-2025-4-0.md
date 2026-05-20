@@ -4,7 +4,7 @@ description: Notes de mise à jour de la version 2025.4.0 d’ [!DNL Adobe Expe
 feature: Release Information
 role: Admin
 exl-id: 48e09824-5c67-49d8-8896-358d679649fc
-source-git-commit: 08fe79147c81c0a5b319fef3ef7733b6053b399a
+source-git-commit: 5cca969e61196e93caf7813bda933b5b404c84cd
 workflow-type: tm+mt
 source-wordcount: '2018'
 ht-degree: 97%
@@ -37,7 +37,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Consultez la vidéo de vue d’ensemble de la version d’avril 2025 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2025.4.0 :
 
->[!VIDEO](https://video.tv.adobe.com/v/3464004?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -151,7 +151,7 @@ Utile pour les scénarios comprenant le débogage et l’analyse des données, v
 
 #### Propriétés de région, de continent et d’organisation en tant que conditions correspondantes {#matching-conditions}
 
-Les règles du réseau CDN peuvent désormais correspondre en fonction de la région, du continent et de l’organisation pour des cas d’utilisation, y compris le blocage du trafic et les redirections. `clientRegion` et `clientContinent` augmentent le `clientCountry` déjà pris en charge pour qu’il corresponde en fonction de la géographie, tandis que `clientAsName` et `clientAsNumber` correspondent aux systèmes autonomes pour identifier les grands FAI, les entreprises ou les fournisseurs de services cloud. En savoir plus sur ces [propriétés de requête nouvellement exposées](/help/security/traffic-filter-rules-including-waf.md#condition-structure).
+Les règles du réseau CDN peuvent désormais correspondre en fonction de la région, du continent et de l’organisation pour des cas d’utilisation, y compris le blocage du trafic et les redirections. `clientRegion` et `clientContinent` augmentent le `clientCountry` déjà pris en charge pour qu’il corresponde en fonction de la géographie, tandis que `clientAsName` et `clientAsNumber` correspondent aux systèmes autonomes pour identifier les grands FAI, les entreprises ou les fournisseurs de services cloud. En savoir plus sur ces [propriétés de requête nouvellement exposées](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure).
 
 #### Définir la valeur du cookie {#cookie-attributes}
 
