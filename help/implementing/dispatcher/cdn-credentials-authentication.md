@@ -4,9 +4,9 @@ description: Découvrez comment configurer les informations d’identification e
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 4ec024236cc1054206ea789d755dd4e76fb9cd79
+source-git-commit: 7fab8d47706274bf30716f0433757789ea1248c1
 workflow-type: tm+mt
-source-wordcount: '2282'
+source-wordcount: '2273'
 ht-degree: 4%
 
 ---
@@ -123,7 +123,7 @@ Les propriétés supplémentaires sont les suivantes :
 <!--   * OnFailure - defines the action, either `log` or `block`, when a request doesn't match either `edgeKey1` or `edgeKey2`. For `log`, request processing will continue, while `block` will serve a 403 error. The `log` value is useful when testing a new token on a live site since you can first confirm that the CDN is correctly accepting the new token before changing to `block` mode; it also reduces the chance of lost connectivity between the customer CDN and the Adobe CDN, as a result of an incorrect configuration. -->
 * Règles : vous permet de déclarer quels authentificateurs doivent être utilisés, et s’il s’agit du niveau de publication et/ou d’aperçu.  Il comprend :
    * name : chaîne descriptive.
-   * when : condition qui détermine le moment où la règle doit être évaluée, en fonction de la syntaxe contenue dans l’article [Règles de filtrage de trafic](/help/security/traffic-filter-rules-including-waf.md). En règle générale, il comprend une comparaison du niveau actuel (par exemple, publication) afin que tout le trafic en direct soit validé comme routage via le réseau CDN client.
+   * when : condition qui détermine le moment où la règle doit être évaluée, conformément à la syntaxe de la section [Structure de conditions](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure). En règle générale, il comprend une comparaison du niveau actuel (par exemple, publication) afin que tout le trafic en direct soit validé comme routage via le réseau CDN client.
    * action : vous devez spécifier « authentifier », avec l’authentificateur prévu référencé.
 
 >[!NOTE]
@@ -223,7 +223,7 @@ Les propriétés supplémentaires sont les suivantes :
    * purgeKey2 - utilisé pour la rotation des secrets, qui est décrite dans la section [rotation des secrets](#rotating-secrets) ci-dessous. Au moins un des `purgeKey1` et `purgeKey2` doit être déclaré.
 * Règles : vous permet de déclarer quels authentificateurs doivent être utilisés, et s’il s’agit du niveau de publication et/ou d’aperçu.  Il comprend :
    * name : chaîne descriptive.
-   * when : condition qui détermine le moment où la règle doit être évaluée, en fonction de la syntaxe contenue dans l’article [Règles de filtrage de trafic](/help/security/traffic-filter-rules-including-waf.md). En règle générale, il comprend une comparaison du niveau actuel (par exemple, publication).
+   * when : condition qui détermine le moment où la règle doit être évaluée, conformément à la syntaxe de la section [Structure de conditions](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure). En règle générale, il comprend une comparaison du niveau actuel (par exemple, publication).
    * action : vous devez spécifier « authentifier », avec l’authentificateur prévu référencé.
 
 >[!NOTE]
@@ -277,7 +277,7 @@ En outre, la syntaxe comprend :
       * password : sa valeur doit référencer une variable d’environnement de type secret Cloud Manager [&#128279;](/help/operations/config-pipeline.md#secret-env-vars), avec **All** sélectionné comme champ de service.
 * Règles : permet de déclarer quels authentificateurs doivent être utilisés et quelles ressources doivent être protégées. Chaque règle comprend :
    * name : chaîne descriptive.
-   * when : condition qui détermine le moment où la règle doit être évaluée, en fonction de la syntaxe contenue dans l’article [Règles de filtrage de trafic](/help/security/traffic-filter-rules-including-waf.md). En règle générale, il comprend une comparaison du niveau de publication ou de chemins d’accès spécifiques.
+   * when : condition qui détermine le moment où la règle doit être évaluée, conformément à la syntaxe de la section [Structure de conditions](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure). En règle générale, il comprend une comparaison du niveau de publication ou de chemins d’accès spécifiques.
    * action : vous devez spécifier « authenticate », avec l’authentificateur prévu référencé, qui est une authentification de base pour ce scénario.
 
 >[!NOTE]

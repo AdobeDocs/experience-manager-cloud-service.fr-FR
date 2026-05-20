@@ -5,7 +5,7 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 4a423ab3dcb176db5cd3f0d3b8d586a1afced535
+source-git-commit: 8371bceaf116cdcd4e0542dd1b8d772d2d12a05d
 workflow-type: tm+mt
 source-wordcount: '2276'
 ht-degree: 2%
@@ -112,7 +112,7 @@ Comme mentionné dans la section ci-dessus [Variances des requêtes de contenu C
 ### Techniques d’implémentation pour gérer les demandes de contenu {#implementation-techniques-to-manage-crs}
 
 * Assurez-vous que toutes les réponses Page introuvable sont diffusées avec un statut HTTP 404.  Si elles sont renvoyées avec un statut 200, elles sont prises en compte dans les demandes de contenu.
-* Acheminez les outils de contrôle ou de surveillance de l’intégrité vers l’URL /system/probes/health ou utilisez la méthode HEAD au lieu de GET pour éviter toute demande de contenu.
+* Acheminez les outils de contrôle ou de surveillance de l’intégrité vers l’URL /system/probes/health ou utilisez la méthode HEAD au lieu de GET pour éviter des demandes de contenu.
 * Trouvez l’équilibre entre vos besoins de fraîcheur de contenu et le coût de licence AEM pour tout robot d&#39;exploration de recherche personnalisé que vous avez intégré à votre site.  Un robot d&#39;exploration trop agressif peut consommer de nombreuses requêtes de contenu.
 * Gérez les redirections comme côté serveur (statut 301 ou 302) plutôt que côté client (statut 200 avec redirection JavaScript) pour éviter deux demandes de contenu distinctes.
 * Combiner ou réduire les appels d’API, qui sont des réponses JSON d’AEM pouvant être chargées pour effectuer le rendu de la page.
@@ -161,6 +161,6 @@ trafficFilters:
       action: block
 ```
 
-Remplacez les exemples de valeurs par le code de pays, le nom de réseau ou de robot que vous souhaitez bloquer. Voir [Syntaxe des règles de filtre de trafic](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) et [Structure de condition](/help/security/traffic-filter-rules-including-waf.md#condition-structure) pour plus d’options.
+Remplacez les exemples de valeurs par le code de pays, le nom de réseau ou de robot que vous souhaitez bloquer. Voir [Syntaxe des règles de filtre de trafic](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) et [Structure de condition](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure) pour plus d’options.
 
-* Certains robots ont frappé un site très lourdement un jour et disparaissent le lendemain. Cette fonctionnalité peut empêcher toute tentative de blocage d’une adresse IP ou d’un agent utilisateur spécifique.  Une approche générique consiste à introduire une [&#x200B; règle de limitation des taux](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules).  Examinez les [exemples](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) et créez une règle qui correspond à votre tolérance pour un taux rapide de requêtes.  Consultez la syntaxe [Structure de condition](/help/security/traffic-filter-rules-including-waf.md#condition-structure) pour connaître les exceptions que vous souhaitez autoriser à une limite de taux générique.
+* Certains robots ont frappé un site très lourdement un jour et disparaissent le lendemain. Cette fonctionnalité peut empêcher toute tentative de blocage d’une adresse IP ou d’un agent utilisateur spécifique.  Une approche générique consiste à introduire une [&#x200B; règle de limitation des taux](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules).  Examinez les [exemples](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) et créez une règle qui correspond à votre tolérance pour un taux rapide de requêtes.  Consultez la syntaxe [Structure de condition](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure) pour connaître les exceptions que vous souhaitez autoriser à une limite de taux générique.
