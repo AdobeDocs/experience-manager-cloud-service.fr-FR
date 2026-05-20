@@ -4,7 +4,7 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 478b77488f46ae2566ffe5276ad26834371612aa
+source-git-commit: c8303f6792f36e9d1942cf398909cbf0b3f3f90f
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 30%
@@ -44,8 +44,8 @@ L’activation de la fonctionnalité 2026.5.0 fournit l’ensemble des fonctionn
 * ASSETS-66669 : correction du bouton Accueil de la page Résultats de la recherche qui ne naviguait pas vers l’écran de démarrage de l’interface utilisateur tactile lorsque Unified Shell était activé.
 * ASSETS-66683 : correction d’une boucle d’approbation dans Dynamic Media avec OpenAPI déclenchée par des échecs de chargement, qui entraînait des retards et des perturbations des workflows d’approbation des ressources.
 * ASSETS-67113 : correction de l’importation en bloc en ignorant les ressources SVG lors du filtrage par `image/svg+xml` de type MIME.
-* CQ-4363355 : correction des demandes de traduction dans le connecteur de traduction GenAI en cours d’acheminement vers un point d’entrée régional incorrect en raison d’une URL statique codée en dur.
 * CQ-4363466 : correction d’échecs de résolution de chemin de configuration du cloud affectant les connecteurs de traduction tiers qui utilisent la résolution de configuration personnalisée.
+* CQ-4363355 : correction des demandes de traduction dans le connecteur de traduction GenAI en cours d’acheminement vers un point d’entrée régional incorrect en raison d’une URL statique codée en dur.
 * SITES-44186 : correction d’une injection de balise meta sur l’auteur, interrompant la gestion des événements de l’éditeur de page pour certains clients.
 
 ### Problèmes connus {#known-issues-26125}
