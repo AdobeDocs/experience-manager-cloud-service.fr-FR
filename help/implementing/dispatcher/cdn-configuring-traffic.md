@@ -27,7 +27,7 @@ De plus, si le réseau CDN ne peut pas contacter son origine, vous pouvez créer
 
 Toutes ces règles, déclarées dans un fichier de configuration dans le contrôle de code source, sont déployées à l’aide du pipeline Cloud Manager [config](/help/operations/config-pipeline.md). Notez que la taille cumulée du fichier de configuration, y compris les règles de filtrage du trafic, ne peut pas dépasser 100KB.
 
-Pour obtenir des fragments de code supplémentaires pour les scénarios courants, consultez l’article [ Fragments de code de configuration de réseau CDN pour les scénarios courants ](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md).
+Pour obtenir des fragments de code supplémentaires pour les scénarios courants, consultez l’article [&#x200B; Fragments de code de configuration de réseau CDN pour les scénarios courants &#x200B;](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md).
 
 ## Ordre d&#39;évaluation {#order-of-evaluation}
 
@@ -574,7 +574,7 @@ data:
 
 >[!NOTE]
 >
->Étant donné que le réseau CDN géré par Adobe est utilisé, veillez à configurer l’invalidation des notifications push en mode **géré**, en suivant la documentation relative à l’[ des notifications push de Edge Delivery Services ](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+>Étant donné que le réseau CDN géré par Adobe est utilisé, veillez à configurer l’invalidation des notifications push en mode **géré**, en suivant la documentation relative à l’[&#x200B; des notifications push de Edge Delivery Services &#x200B;](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
 
 
 ### Proxy de l’environnement AEMaaCS {#proxying-to-aemaacs}
