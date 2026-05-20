@@ -5,10 +5,10 @@ exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 31%
+source-wordcount: '744'
+ht-degree: 27%
 
 ---
 
@@ -58,7 +58,7 @@ Une solution possible serait la suivante.
 
 Par exemple, une modification apportée à la branche principale du projet A est automatiquement transférée vers la branche principale du référentiel Git de Cloud Manager. Il peut y avoir un mappage entre les branches, par exemple une transmission vers une branche nommée `dev` dans le projet A qui est transférée dans une branche nommée `development` dans le référentiel Git de Cloud Manager. Des étapes similaires sont requises pour le projet B.
 
-Selon les workflows et la stratégie d’embranchement, il est possible de configurer la synchronisation pour différentes branches. Si le référentiel Git utilisé ne propose pas de concept similaire aux actions GitHub, une intégration via Jenkins (ou un outil similaire) est également possible. Dans ce cas, un webhook déclenche un traitement Jenkins, qui effectue le travail.
+Selon les workflows et la stratégie d’embranchement, il est possible de configurer la synchronisation pour différentes branches. Si le référentiel Git utilisé ne propose pas un concept similaire aux actions GitHub, une intégration via Jenkins (ou un outil similaire) est également possible. Dans ce cas, un webhook déclenche un traitement Jenkins, qui effectue le travail.
 
 Pour ajouter une nouvelle source tierce ou un nouveau référentiel, procédez comme suit.
 

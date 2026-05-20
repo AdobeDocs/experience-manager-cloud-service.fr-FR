@@ -5,10 +5,10 @@ exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: b68b4bb81695822a8536b5b9ec0c83cc0d530acb
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 68%
+source-wordcount: '1015'
+ht-degree: 66%
 
 ---
 
@@ -116,7 +116,7 @@ Si l’[ajout d’une configuration OSGi RepositoryInitializer](#cloud-manager-d
 
 ## Je ne parviens pas à définir une variable à l’aide d’une commande aio. Que puis-je faire ? {#set-variable}
 
-Il se peut que vous receviez une erreur `403` de ce type lorsque vous tentez de répertorier ou de définir les variables de pipeline à l’aide de commandes `aio`.
+Il se peut que vous receviez une erreur `403` telle que celle qui suit lorsque vous tentez de répertorier ou de définir des variables de pipeline à l’aide de commandes `aio`.
 
 ```shell
 $ aio cloudmanager:list-pipeline-variables 222

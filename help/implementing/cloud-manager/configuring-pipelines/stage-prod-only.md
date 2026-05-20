@@ -7,9 +7,9 @@ role: Admin, Developer
 hidefromtoc: false
 index: true
 exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1118'
 ht-degree: 49%
 
 ---
@@ -79,7 +79,7 @@ Les pipelines dédiés à la production uniquement et à l’évaluation uniquem
 
 1. Dans l’onglet **Code**, sélectionnez **Code de pile complète**. Cette option crée et déploie l’ensemble de l’application AEM (back-end, configuration de niveau web Dispatcher et tout module front-end du référentiel).
 
-1. Dans la liste déroulante **Environnements de déploiement éligibles**, sélectionnez l’environnement **d’évaluation** comme environnement de déploiement pour votre pipeline. La sélection de l’étape crée un pipeline dédié à l’environnement intermédiaire (la promotion de la production se fait par le biais d’un pipeline distinct).
+1. Dans la liste déroulante **Environnements de déploiement éligibles**, sélectionnez l’environnement **d’évaluation** comme environnement de déploiement pour votre pipeline. La sélection de l’étape crée un pipeline dédié à l’environnement d’évaluation (la promotion de la production se fait par le biais d’un pipeline distinct).
 
 1. Sélectionnez vos **Référentiel** et **Branche Git** dans les listes déroulantes respectives, puis cliquez sur **Continuer**.
 

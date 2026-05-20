@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 15da86656733074afccef85910cc8ea0109933e6
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 35%
+source-wordcount: '798'
+ht-degree: 38%
 
 ---
 
@@ -32,7 +32,7 @@ Il est recommandé d’attribuer à votre site un nom de domaine qui soit mémor
 
 >[!IMPORTANT]
 >
-> Les domaines par défaut sous adobeaemcloud.com **ne doivent pas être utilisés** pour diffuser du contenu important à des fins d’optimisation pour les moteurs de recherche. Les domaines et sous-domaines adobeaemcloud.com ne sont pas indexables par les moteurs de recherche, car ils servent un [robots.txt par défaut](https://cdn.adobeaemcloud.com/robots.txt) qui empêche l’analyse et l’indexation. Utilisez plutôt votre propre domaine personnalisé pour servir un fichier robots.txt personnalisé.
+> Les domaines par défaut sous adobeaemcloud.com **ne doivent pas être utilisés** pour diffuser du contenu important à des fins d’optimisation pour les moteurs de recherche. Les domaines et sous-domaines adobeaemcloud.com ne sont pas indexables par les moteurs de recherche, car ils servent un [robots.txt par défaut](https://cdn.adobeaemcloud.com/robots.txt) qui empêche d’explorer et d’indexer. Utilisez plutôt votre propre domaine personnalisé pour servir un fichier robots.txt personnalisé.
 
 Vous pouvez acheter un nom de domaine auprès d’un service d’enregistrement de noms de domaine, d’une société ou d’une organisation qui gère et vend des noms de domaine. Les services d’enregistrement des noms de domaine gèrent les noms de domaine sur les serveurs DNS.
 
@@ -47,7 +47,7 @@ AEM as a Cloud Service offre un service CDN (réseau de diffusion de contenu) in
 * Cloud Manager gère les noms de domaine et certificats personnalisés installés dans le réseau CDN géré par AEM.
 * Les noms de domaine personnalisés et les certificats installés dans un réseau CDN BYO sont gérés directement dans ce réseau CDN.
 
-**Les domaines gérés dans votre propre réseau CDN ne nécessitent pas d’installation via Cloud Manager** - Ils sont mis à la disposition d’AEM par le biais de X-Forwarded-Host et correspondent aux hôtes virtuels définis dans le Dispatcher. Consultez la [documentation sur le réseau CDN](/help/implementing/dispatcher/cdn.md).
+**Les domaines gérés dans votre propre réseau CDN ne nécessitent pas d’installation via Cloud Manager** - Ils sont mis à la disposition d’AEM via X-Forwarded-Host et correspondent aux hôtes virtuels définis dans Dispatcher. Consultez la [documentation sur le réseau CDN](/help/implementing/dispatcher/cdn.md).
 
 Dans un seul environnement, les deux domaines peuvent être installés dans le réseau CDN géré par AEM et dans un réseau CDN BYO.
 

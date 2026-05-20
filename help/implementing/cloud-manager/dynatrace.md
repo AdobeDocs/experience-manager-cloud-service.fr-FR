@@ -1,14 +1,14 @@
 ---
 title: Dynatrace
-description: Découvrir comment utiliser Dynatrace avec AEM as a Cloud Service
+description: Découvrez comment utiliser Dynatrace avec AEM as a Cloud Service.
 exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 69%
+source-wordcount: '614'
+ht-degree: 57%
 
 ---
 
@@ -22,7 +22,7 @@ Pour en savoir plus sur Dynatrace, voir l’[intégration d’Adobe AEM Cloud 
 
 ![Mesures des performances de création et de publication d’AEM](/help/implementing/cloud-manager/assets/dynatrace-performance-metrics.png)
 
-## Intégrer Dynatrace à AEM as a Cloud Service {#integrating-dynatrace-with-aem-as-a-cloud-service}
+## Intégration de Dynatrace à AEM as a Cloud Service {#integrating-dynatrace-with-aem-as-a-cloud-service}
 
 Les clientes et clients de Dynatrace peuvent surveiller leurs environnements AEM en demandant une connectivité par le biais d’un ticket d’assistance clientèle.
 
@@ -30,12 +30,12 @@ Les détails à fournir pour les demandes de connectivité sont décrits ci-dess
 
 | **Champ** | **Description** |
 |---|---|
-| [!DNL Dynatrace Environment URL] | URL de votre environnement Dynatrace.<br><br>Pour les clientes et clients Dynatrace, le format est `https://<your-environment-id>.live.dynatrace.com`.<br><br>Pour les clientes et clients de Dynatrace Managed, le format est `https://<your-managed-url>/e/<environmentId>`. |
-| [!DNL Dynatrace Environment ID] | Identifiant de votre environnement Dynatrace. Consultez la section [Comment obtenir mes informations de connexion Dynatrace ?](#how-do-i-get-my-dynatrace-connection-details) pour savoir comment l&#39;obtenir. |
-| [!DNL Dynatrace Environment Token] | Jeton de votre environnement Dynatrace. Consultez la section [Comment obtenir mes informations de connexion Dynatrace ?](#how-do-i-get-my-dynatrace-connection-details) pour savoir comment l&#39;obtenir.<br><br>Ce jeton doit être considéré comme secret. Utilisez donc les pratiques de sécurité appropriées. Par exemple, protégez le système par un mot de passe dans un site web tel que **zerobin.net**, auquel le ticket d’assistance clientèle peut faire référence, mot de passe compris. |
+| [!DNL Dynatrace Environment URL] | Votre environnement Dynatrace URL.<br><br>Pour les clients SaaS Dynatrace, le format est `https://<your-environment-id>.live.dynatrace.com`.<br><br>Pour les clients gérés par Dynatrace, le format est `https://<your-managed-url>/e/<environmentId>` |
+| [!DNL Dynatrace Environment ID] | Identifiant de votre environnement Dynatrace. Voir [Comment puis-je obtenir mes détails de connexion Dynatrace ?](#how-do-i-get-my-dynatrace-connection-details) pour savoir comment l&#39;obtenir. |
+| [!DNL Dynatrace Environment Token] | Jeton de votre environnement Dynatrace. Voir [Comment puis-je obtenir mes détails de connexion Dynatrace ?](#how-do-i-get-my-dynatrace-connection-details) pour savoir comment l&#39;obtenir.<br><br>Ce jeton doit être considéré comme secret. Utilisez donc les pratiques de sécurité appropriées. Par exemple, protégez le système par un mot de passe dans un site web tel que **zerobin.net**, auquel le ticket d’assistance clientèle peut faire référence, mot de passe compris. |
 | [!DNL Dynatrace API access token] | Jeton d’accès à l’API de votre environnement Dynatrace. Voir [Création d’un jeton d’accès API Dynatrace](#create-dynatrace-access-token) pour savoir comment le créer.<br><br>Ce jeton doit être considéré comme secret. Utilisez donc les pratiques de sécurité appropriées. Par exemple, protégez-le par mot de passe sur un site web tel que **zerobin.net**, auquel le ticket de service clientèle peut faire référence, ainsi que le mot de passe <br>. |
 | [!DNL Dynatrace ActiveGate Port] | Votre port Dynamic ActiveGate auquel l’intégration d’AEM doit se connecter.<br><br>Ce port n’est nécessaire que pour la gestion par Dynatrace. |
-| [!DNL Dynatrace ActiveGate Network Zone] | Votre [zone de réseau Dynatrace ActiveGate](https://docs.dynatrace.com/docs/manage/network-zones) pour acheminer efficacement les données de surveillance AEM entre les centres de données et les régions de réseau.<br><br>Remarque : une zone de réseau Dynatrace ActiveGate est facultative. |
+| [!DNL Dynatrace ActiveGate Network Zone] | Votre [zone réseau ActiveGate de &#x200B;](https://docs.dynatrace.com/docs/manage/network-zones) pour acheminer efficacement les données de surveillance d&#39;AEM entre les centres de données et les régions du réseau.<br><br>Remarque : une zone réseau ActiveGate de Dynatrace est facultative. |
 | [!DNL AEM Environment IDs] | L’identifiant ou les identifiants d’environnement AEM à surveiller par Dynatrace. |
 
 >[!NOTE]
@@ -57,7 +57,7 @@ Pour en savoir plus sur les licences Dynatrace, consultez [Abonnement à la plat
 
 ### Comment obtenir mes informations de connexion Dynatrace ? {#how-do-i-get-my-dynatrace-connection-details}
 
-1. Exécutez la requête d’API suivante sur votre environnement Dynatrace :
+1. Exécutez la requête d’API suivante dans votre environnement Dynatrace :
 
    ```
    curl -X GET "<environmentUrl>/api/v1/deployment/installer/agent/connectioninfo" -H "accept: application/json" -H "Authorization: Api-Token <accessToken>"

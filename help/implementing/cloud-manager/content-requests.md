@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 8371bceaf116cdcd4e0542dd1b8d772d2d12a05d
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
-source-wordcount: '2276'
+source-wordcount: '2274'
 ht-degree: 2%
 
 ---
@@ -57,7 +57,7 @@ Les requêtes de contenu peuvent présenter des variations au sein des outils de
 | Robots | Les robots inconnus qu’AEM n’a pas pré-identifiés et supprimés peuvent entraîner des incohérences dans le suivi. |
 | Suites de rapports | Les pages d’une même instance AEM peuvent créer des rapports vers différentes suites de rapports d’analyse. Ce processus peut fractionner les données entre plusieurs suites, selon la configuration. |
 | Outils de surveillance et de sécurité tiers | Les outils de surveillance et d’analyse de sécurité (par exemple, les vérificateurs de disponibilité ou les analyseurs de vulnérabilité) peuvent demander des pages, générant des demandes de contenu côté serveur non visibles dans les rapports d’analyse. |
-| Accès à l’API | Les requêtes envoyées aux pages ou au contenu AEM par le biais des API (par exemple, via Adobe Experience Manager as a Headless CMS) sont toujours comptabilisées comme des requêtes de contenu, mais ne déclenchent pas de suivi Analytics. |
+| Accès à l’API | Les requêtes envoyées aux pages ou au contenu AEM par le biais des API (par exemple, via Adobe Experience Manager as a Headless CMS) sont toujours comptabilisées comme des requêtes de contenu, mais ne déclenchent pas le suivi Analytics. |
 | Pré-récupérer des demandes | La prérécupération (par exemple à l’aide d’un service worker ou d’une fonction Edge) peut augmenter les volumes de trafic en demandant des pages à l’avance. Ces requêtes sont comptabilisées côté serveur, mais n’exécutent pas le code d’analyse côté client. |
 | DDOS | Adobe utilise le filtrage pour détecter et bloquer de nombreuses attaques DDoS. Cependant, certaines requêtes d’attaque peuvent toujours être comptabilisées comme des requêtes de contenu avant l’application des filtres. |
 | Bloqueurs de trafic | Les fonctionnalités de confidentialité dans le navigateur ou les pare-feu d’entreprise peuvent bloquer le chargement des scripts d’analyse. Ces utilisateurs génèrent toujours des demandes de contenu côté serveur. |
