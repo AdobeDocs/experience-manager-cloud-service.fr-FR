@@ -5,9 +5,9 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: b8faae6a4237bf7d564bf989b4e728342c7bd5fc
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1040'
 ht-degree: 21%
 
 ---
@@ -19,13 +19,13 @@ Cloud Manager fournit un tableau de bord pour un affichage convivial des produit
 
 >[!IMPORTANT]
 >
->Le tableau de bord des licences s’applique uniquement aux programmes AEM as a Cloud Service. Les [programmes AMS](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/introduction) ne sont pas inclus dans le tableau de bord des licences.
+>Le tableau de bord des licences s’applique uniquement aux programmes AEM as a Cloud Service. Les [programmes AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) ne sont pas inclus dans le tableau de bord des licences.
 >
 >Pour déterminer le type de service de votre programme (AMS ou AEMaaCS), consultez [Navigation dans l’interface utilisateur de Cloud Manager](/help/implementing/cloud-manager/navigation.md#program-cards).
 
 ## Vue d’ensemble {#overview}
 
-Le tableau de bord des licences Cloud Manager permet d’accéder facilement aux droits sur les solutions disponibles pour l’ensemble de vos programmes, y compris la quantité utilisée et la quantité disponible. De plus, les mesures de consommation des demandes de contenu affichent les tendances par mois pour la solution Sites.
+Le tableau de bord des licences Cloud Manager permet d’accéder facilement aux droits sur les solutions disponibles pour l’ensemble de vos programmes, y compris la quantité utilisée et la quantité disponible. Les mesures de consommation des demandes de contenu présentent des tendances par mois pour la solution Sites.
 
 ## Accès au tableau de bord des licences {#using-dashboard}
 
@@ -41,18 +41,18 @@ Le tableau de bord des licences Cloud Manager permet d’accéder facilement aux
 
 Le tableau de bord se divise en trois sections, comme suit :
 
-* **Solutions** - Quelles solutions disposez-vous d’une licence ? Par exemple, Sites, Edge Delivery Services et Assets.
+* **Solutions** - Quelles solutions avez-vous mises sous licence ? Par exemple, Sites, Edge Delivery Services et Assets.
 
   ![Liste des solutions](assets/solutions.png)
 
 * **Modules complémentaires** - Quels modules complémentaires sont disponibles pour vos solutions sous licence ?
 * **Autres droits** - Quel sandbox et environnement de développement et autres droits peuvent être consommés au sein de votre client.
 
-Chaque section résume ce qui est disponible et son utilisation, le cas échéant. Actuellement, seules les solutions Sites et Assets s’affichent même si d’autres solutions existent dans le client.
+Chaque section résume ses fonctionnalités disponibles et leur utilisation, le cas échéant. Actuellement, seules les solutions Sites et Assets s’affichent même si d’autres solutions existent dans le client.
 
 * La colonne **Statut** indique le nombre de droits inutilisés par rapport au total disponible pour le client.
-* La colonne **Configuré sur** indique les programmes sur lesquels le droit de la solution a été appliqué.
-   * Un droit est considéré comme utilisé uniquement lorsqu’un environnement de production est créé. Ou, s’il en existe un, si un pipeline de mise à jour y a été exécuté.
+* La colonne **Configuré le** répertorie les programmes auxquels sont appliqués les droits de la solution.
+   * Un droit est considéré comme utilisé uniquement lorsqu’un environnement de production est créé ou s’il existe et qu’un pipeline de mise à jour y a été exécuté.
    * Seul un nombre limité de programmes sont répertoriés individuellement dans la colonne, le reste étant représenté par une entrée `+x`.
    * Pointez sur l’entrée `+x` pour afficher un pop-up avec les détails de tous les programmes.
 * La colonne **Utilisation** affiche un bouton **[Afficher les détails d’utilisation](#view-usage-details)** pour afficher les statistiques d’utilisation de la solution.
@@ -75,8 +75,6 @@ Le bouton **Afficher les détails d’utilisation** est *désactivé* (désactiv
 * Aucun programme Cloud Manager n’est configuré pour cette solution.
 * Un indicateur de fonctionnalité qui régit les détails d’utilisation est désactivé. Elle doit être *activée* (activée) pour votre organisation avant que le bouton ne soit disponible.
 * L’utilisation est explicitement désactivée pour la solution. Actuellement, cette situation s’applique uniquement à Edge Delivery Services.
-
-
 
 ### Détails d&#39;utilisation des sites {#sites-usage-details}
 
@@ -141,10 +139,11 @@ Les demandes de contenu peuvent présenter des variations avec les outils de cr�
 
 ### Comment en savoir plus sur le volume de ma requête de contenu ?{#current-request-volumes}
 
-Si vous souhaitez obtenir des informations supplémentaires sur le volume des requêtes de contenu affiché dans le tableau de bord des licences, votre équipe Adobe peut fournir un rapport qui indique les principaux facteurs de volume des requêtes de contenu. Contactez votre équipe Adobe ou le service clientèle Adobe pour demander un rapport sur l’utilisation optimale.
+Si vous souhaitez obtenir des informations supplémentaires sur le volume des requêtes de contenu affiché dans le tableau de bord des licences, votre équipe Adobe peut fournir un rapport qui indique les principaux facteurs de volume des requêtes de contenu. Contactez votre équipe Adobe ou l’assistance clientèle Adobe pour demander un rapport sur l’utilisation optimale.
 
 ### Que se passe-t-il si j’utilise mon propre réseau CDN ?{#using-own-cdn}
 
-Le tableau de bord des licences affiche uniquement les données suivies par le réseau CDN Cloud Service. Si vous choisissez d’importer votre propre réseau CDN (BYOCDN), vous signalez annuellement votre volume de requête de contenu à Adobe, comme indiqué dans votre contrat.
+Le tableau de bord des licences affiche uniquement les données suivies par le réseau CDN Cloud Service. Si vous utilisez l’option Apporter votre propre réseau CDN (BYOCDN), vous devez signaler annuellement à Adobe le volume de votre demande de contenu, comme indiqué dans votre contrat.
+
 
 

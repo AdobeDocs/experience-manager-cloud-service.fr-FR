@@ -5,10 +5,10 @@ exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Developer
-source-git-commit: 2c863e0cfad3211e811665a5169def7705e8b907
+source-git-commit: b8faae6a4237bf7d564bf989b4e728342c7bd5fc
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 68%
+source-wordcount: '402'
+ht-degree: 40%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 68%
 
 Découvrez comment accéder aux journaux et les gérer pour faciliter votre processus de développement dans AEM as a Cloud Service.
 
-Vous pouvez accéder à la liste des fichiers journaux disponibles pour l’environnement sélectionné à l’aide de la carte **Environnements** de la page **Vue d’ensemble** ou de la page Détails de l’environnement.
+Vous pouvez accéder à la liste des fichiers journaux disponibles pour l’environnement sélectionné à l’aide de la vignette **Environnements** de la page **Aperçu** ou de la page **Détails de l’environnement**.
 
 Les journaux sont conservés pendant sept jours.
 
@@ -33,7 +33,7 @@ Les journaux sont conservés pendant sept jours.
 
    ![Élément de menu Télécharger les journaux](assets/download-logs1.png)
 
-1. Dans la boîte de dialogue **Télécharger les journaux**, sélectionnez le **service** approprié dans le menu déroulant
+1. Dans la boîte de dialogue **Télécharger les journaux**, sélectionnez le **Service** approprié dans le menu déroulant.
 
    ![Boîte de dialogue Télécharger les journaux](assets/download-preview.png)
 
@@ -57,13 +57,13 @@ Pour télécharger les fichiers journaux d’un environnement spécifique, la co
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-En outre, vous pouvez suivre les journaux à l’aide de l’interface de ligne de commande.
+Vous pouvez également consulter les dernières lignes de journal à l’aide de l’interface de ligne de commande.
 
 ```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-Pour obtenir l’ID d’environnement (1884 dans ce cas) et les options de nom de service ou de journal disponibles, utilisez les commandes suivantes :
+Pour obtenir l’identifiant de l’environnement (1884 dans cet exemple) et les options de nom de service ou de journal disponibles, vous pouvez utiliser les commandes suivantes :
 
 ```shell
 $ aio cloudmanager:list-environments
@@ -90,14 +90,14 @@ Environment Id Service    Name
 
 >[!TIP]
 >
->Consultez [cette ressource vidéo](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) pour en savoir plus sur le débogage d’AEM as a Cloud Service.
+>Regardez [cette ressource vidéo](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) pour en savoir plus sur le débogage d’AEM as a Cloud Service.
 
 Reportez-vous aux ressources supplémentaires suivantes pour en savoir plus sur l’API Cloud Manager et l’interface de ligne de commande d’Adobe I/O :
 
-* [Documentation de l’API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/)
-* [Interface de ligne de commande d’Adobe I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+* [Documentation de l’API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/)
+* [ADOBE I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 
 Consultez les ressources supplémentaires suivantes pour en savoir plus sur les fichiers journaux dans AEM as a Cloud Service :
 
-* [Fichiers journaux AEM Cloud 5](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
-* [Déboguer AEM as a Cloud Service à l’aide de journaux](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
+* [Cloud 5 : fichiers journaux AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
+* [Déboguer AEM as a Cloud Service à l’aide de journaux](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
