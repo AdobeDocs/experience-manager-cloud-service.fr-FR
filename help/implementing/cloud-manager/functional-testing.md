@@ -5,10 +5,10 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: b258bc6aaad29843b19eef244760c1e39f27dd09
 workflow-type: tm+mt
-source-wordcount: '1323'
-ht-degree: 7%
+source-wordcount: '1403'
+ht-degree: 9%
 
 ---
 
@@ -26,7 +26,7 @@ Découvrez les points de contrôle qualité disponibles dans le processus de dé
 
 Le diagramme suivant présente de manière générale les pipelines disponibles dans le cadre d’une stratégie de test globale et du processus de déploiement d’[&#128279;](/help/implementing/cloud-manager/deploy-code.md).
 
-![Points de contrôle de qualité du déploiement d’AEM Cloud Service](assets/functional-testing/quality-gates-compact.svg)
+![Points de contrôle de qualité du déploiement d’AEM Cloud Service](assets/functional-testing/quality-gates-compact.png)
 
 ## Objectif des tests fonctionnels
 
@@ -42,7 +42,7 @@ Il est important de noter que ces points de contrôle qualité ne sont pas desti
 
 Le diagramme suivant fournit une vue détaillée des points de contrôle qualité disponibles et de leur utilisation dans la stratégie de test globale et le processus de déploiement d’[&#128279;](/help/implementing/cloud-manager/deploy-code.md).
 
-![Points de contrôle de qualité du déploiement d’AEM Cloud Service](assets/functional-testing/quality-gates-overview.svg)
+![Points de contrôle de qualité du déploiement d’AEM Cloud Service](assets/functional-testing/quality-gates-overview.png)
 
 ### Récapitulatif des points de contrôle qualité fournis par le client
 
