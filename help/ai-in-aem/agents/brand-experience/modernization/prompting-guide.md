@@ -4,9 +4,9 @@ description: Ce guide fournit des conseils pour une invite efficace de l’agent
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 4771606b-a327-48b3-b142-44e03e4dc41d
-source-git-commit: 65a35ce2a47187f7939991a45b67692312331774
+source-git-commit: 212c9c4db9904de0f9ec27cec9282df8d288a25a
 workflow-type: tm+mt
-source-wordcount: '3121'
+source-wordcount: '3163'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,7 @@ Utilisez cette invite lors de la migration de contenu d’un site web existant v
    * Lors de la migration de plusieurs pages, l’agent charge d’abord les variantes personnalisées existantes et les réutilise lors de la mise en forme des correspondances (seuil de similarité de 70 % en fonction de l’objectif, des couleurs, de la typographie, de l’espacement et de la disposition).
 * L’en-tête, la navigation et le pied de page sont exclus de la migration. Ils sont gérés par des compétences dédiées.
 * Chaque migration crée une infrastructure d’importation (modèles de page, analyseurs de blocs, transformateurs) pour les futures importations en bloc.
+* Les images Dynamic Media et Scene7 sont détectées dans la source et conservées en tant qu’URL DM plutôt qu’importées en tant que rendus statiques, de sorte que les transformations réactives et à la volée restent intactes. Cela s’applique à la fois aux migrations de création de documents et d’AEM Sites/Éditeur universel.
 
 ### Import en masse {#bulk-import}
 
