@@ -4,10 +4,10 @@ description: Découvrez les agents disponibles dans AEM pour accélérer la cré
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: f0b82ecf-0f5c-432f-9944-f99597aacd6a
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 9dcef6b9dc858509a3470d3567774cb38deb96b5
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 3%
+source-wordcount: '599'
+ht-degree: 2%
 
 ---
 
@@ -20,22 +20,22 @@ Ces agents sont disponibles dans Adobe Experience Manager (AEM) as a Cloud Servi
 >
 >Les agents ne sont disponibles que sur AEM as a Cloud Service et Edge Delivery Services.
 >
->* Ils ne sont actuellement pas disponibles pour AEM 6.5 ni pour AEM 6.5 LTS.
->* Ils ne sont pas disponibles sur AEM On-prem ni Managed Services.
+>* Ils seront progressivement disponibles pour AEM 6.5 LTS sur Managed Services. Les clients qui souhaitent participer à notre programme de co-innovation doivent contacter leur ingénieur du succès client Adobe, leur gestionnaire de compte technique ou leur responsable du service client pour vérifier la disponibilité.
+>*Ils ne seront pas disponibles sur AEM 6.5/AEM 6.5 LTS On-Prem.
 
 ## Accès aux agents {#accessing-agents}
 
 Vous disposez de trois options pour accéder aux agents.
 
-1. Vous avez peut-être la possibilité d’accéder aux agents AEM par le biais du programme [Essayer avant d’acheter](http://experienceleague.adobe.com/fr/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) qui est déployé par phases. Votre CSM ou votre TAM peut vous aider à confirmer la disponibilité de votre entreprise.
+1. Vous avez peut-être la possibilité d’accéder aux agents AEM par le biais du programme [Essayer avant d’acheter](http://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) qui est déployé par phases. Votre CSM ou votre TAM peut vous aider à confirmer la disponibilité de votre entreprise.
 1. Explorez les agents AEM [via une version d’évaluation](https://www.aem.live/developer/aem-playground).
 1. Contactez votre CSM ou votre TAM pour discuter de l’accès via le SKU de l’agence si cela correspond à votre feuille de route et à vos plans d’évaluation.
 
-À mesure que de nouvelles compétences seront disponibles dans le cadre de la version préliminaire, nous aurons d’autres occasions de participer et de partager nos commentaires. Nous vous encourageons à regarder [cette page](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) pour les mises à jour.
+À mesure que de nouvelles compétences seront disponibles dans le cadre de la version préliminaire, nous aurons d’autres occasions de participer et de partager nos commentaires. Nous vous encourageons à regarder [cette page](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) pour les mises à jour.
 
 ## Brand Experience Agent {#brand-experience-agent}
 
-[&#128279;](/help/ai-in-aem/agents/brand-experience/overview.md) automatise les tâches à fort effort et à volume élevé par le biais des agents suivants, chacun se spécialisant dans un ensemble spécifique de tâches.
+[](/help/ai-in-aem/agents/brand-experience/overview.md) automatise les tâches à fort effort et à volume élevé par le biais des agents suivants, chacun se spécialisant dans un ensemble spécifique de tâches.
 
 * **[Agent de modernisation Experience Cloud](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)** - Migre les sites web vers des formats prêts pour le cloud
 * **[Agent de production Experience](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)** - Réduit le délai de mise sur le marché avec les mises à jour de contenu, la création de formulaires et les communications
@@ -56,12 +56,12 @@ L’agent interprète les intentions de l’utilisateur et effectue automatiquem
 
 Le [Agent de gouvernance](/help/ai-in-aem/agents/governance/overview.md) protège l’intégrité et la conformité de la marque dans AEM. En appliquant des politiques de sécurité, de réglementation et de marque, l’agent effectue les tâches nécessaires pour s’assurer que chaque interaction et activation respecte les normes établies.
 
-## Limites {#limitations}
+## Restrictions {#limitations}
 
 Gardez à l’esprit les limites générales suivantes des agents AEM :
 
-* Les agents ne sont disponibles que pour AEM as a Cloud Service et Edge Delivery Services.
-* Ils ne sont actuellement pas disponibles pour AEM 6.5 ni pour AEM 6.5 LTS.
-* Ils ne sont actuellement pas disponibles sur AEM On-prem ni Managed Services.
+* Les agents sont disponibles sur AEM as a Cloud Service et Edge Delivery Services.
+* Ils seront progressivement disponibles pour AEM 6.5 LTS sur Managed Services. Les clients qui souhaitent participer à notre programme de co-innovation doivent contacter leur ingénieur du succès client Adobe, leur gestionnaire de compte technique ou leur responsable du service client pour vérifier la disponibilité.
+* Ils ne seront pas disponibles sur AEM 6.5/AEM 6.5 LTS On-Prem.
 
 Voir les pages individuelles pour connaître les limites spécifiques à un agent.
