@@ -4,10 +4,10 @@ description: Découvrez comment l’agent de modernisation de l’expérience in
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: 95e3046fca3cc2ede57d9e1e9a4ff01a0ba566c3
+source-git-commit: cc75cbb87c192ceeaa49e7ce860bf497743916bc
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 0%
+source-wordcount: '956'
+ht-degree: 1%
 
 ---
 
@@ -22,11 +22,11 @@ Découvrez comment l’agent de modernisation de l’expérience intègre des si
 
 Il associe [compétences en création de site et migration](#creation-migration) pour l’intégration initiale du site web et [fonctionnalités de développement par bloc](#block-development) pour prendre en charge les workflows de création et de migration de site. En outre, il propose la [console de modernisation de l’expérience](#console) en tant qu’environnement de développement web assisté par l’IA, directement accessible. Bien que les utilisateurs puissent utiliser l’agent directement via cette console, les développeurs conservent un contrôle total sur les éléments livrés.
 
-Pour les migrations complexes ou de haute priorité, Adobe propose le modèle de diffusion [&#x200B; Ingénieur de résultat agent (AOE) &#x200B;](#aoe-delivery) un service d’ingénierie conçu pour fournir des sites Edge Delivery prêts pour la production à l’aide de l’agent de modernisation de l’expérience.
+Pour les migrations complexes ou de haute priorité, Adobe propose le modèle de diffusion [ Ingénieur de résultat agent (AOE) ](#aoe-delivery) un service d’ingénierie conçu pour fournir des sites Edge Delivery prêts pour la production à l’aide de l’agent de modernisation de l’expérience.
 
 ## Avantages {#benefits}
 
-L’agent de modernisation de l’expérience accélère le délai d’évaluation pour l’adoption de [&#128279;](/help/edge/overview.md) et vous permet d’adapter l’expérience web de votre marque.
+L’agent de modernisation de l’expérience accélère le délai d’évaluation pour l’adoption de [](/help/edge/overview.md) et vous permet d’adapter l’expérience web de votre marque.
 
 * **Vitesse élevée** : l’automatisation de l’IA gère les travaux de migration répétitifs (importation de contenu, mappage de bloc, application du système de conception), en comprimant les délais de migration par rapport aux approches traditionnelles
 * **Axé sur l’efficacité** : l’automatisation réduit le travail répétitif, ce qui permet aux équipes de se concentrer sur des travaux d’implémentation à plus forte valeur ajoutée
@@ -89,6 +89,7 @@ Les cas d’utilisation suivants nécessitent un effort d’implémentation supp
 La compétence de grattage ne prend pas en charge les sources suivantes.
 
 * Sources intranet ou protégées telles que le contenu non accessible derrière une authentification, un VPN ou un pare-feu
+   * Vous pouvez également utiliser [SLICC](https://www.sliccy.com) qui peut utiliser le contexte d’authentification de votre navigateur pour accéder aux sources protégées.
 * Contenu dynamique complexe, tel qu’un contenu nécessitant une interaction utilisateur sophistiquée pour apparaître dans le DOM.
    * Le contenu rendu côté client est pris en charge si le contenu est accessible via une URL spécifique.
    * Les éléments masqués via CSS mais présents dans le DOM comme les onglets, les accordéons ou les carrousels sont également pris en charge.
