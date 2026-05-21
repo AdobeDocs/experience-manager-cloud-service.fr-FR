@@ -4,10 +4,10 @@ description: Découvrez les agents disponibles dans AEM pour accélérer la cré
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: f0b82ecf-0f5c-432f-9944-f99597aacd6a
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 9dcef6b9dc858509a3470d3567774cb38deb96b5
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 3%
+source-wordcount: '599'
+ht-degree: 2%
 
 ---
 
@@ -20,8 +20,8 @@ Ces agents sont disponibles dans Adobe Experience Manager (AEM) as a Cloud Servi
 >
 >Les agents ne sont disponibles que sur AEM as a Cloud Service et Edge Delivery Services.
 >
->* Ils ne sont actuellement pas disponibles pour AEM 6.5 ni pour AEM 6.5 LTS.
->* Ils ne sont pas disponibles sur AEM On-prem ni Managed Services.
+>* Ils seront progressivement disponibles pour AEM 6.5 LTS sur Managed Services. Les clients qui souhaitent participer à notre programme de co-innovation doivent contacter leur ingénieur du succès client Adobe, leur gestionnaire de compte technique ou leur responsable du service client pour vérifier la disponibilité.
+>*Ils ne seront pas disponibles sur AEM 6.5/AEM 6.5 LTS On-Prem.
 
 ## Accès aux agents {#accessing-agents}
 
@@ -56,12 +56,12 @@ L’agent interprète les intentions de l’utilisateur et effectue automatiquem
 
 Le [Agent de gouvernance](/help/ai-in-aem/agents/governance/overview.md) protège l’intégrité et la conformité de la marque dans AEM. En appliquant des politiques de sécurité, de réglementation et de marque, l’agent effectue les tâches nécessaires pour s’assurer que chaque interaction et activation respecte les normes établies.
 
-## Limites {#limitations}
+## Restrictions {#limitations}
 
 Gardez à l’esprit les limites générales suivantes des agents AEM :
 
-* Les agents ne sont disponibles que pour AEM as a Cloud Service et Edge Delivery Services.
-* Ils ne sont actuellement pas disponibles pour AEM 6.5 ni pour AEM 6.5 LTS.
-* Ils ne sont actuellement pas disponibles sur AEM On-prem ni Managed Services.
+* Les agents sont disponibles sur AEM as a Cloud Service et Edge Delivery Services.
+* Ils seront progressivement disponibles pour AEM 6.5 LTS sur Managed Services. Les clients qui souhaitent participer à notre programme de co-innovation doivent contacter leur ingénieur du succès client Adobe, leur gestionnaire de compte technique ou leur responsable du service client pour vérifier la disponibilité.
+* Ils ne seront pas disponibles sur AEM 6.5/AEM 6.5 LTS On-Prem.
 
 Voir les pages individuelles pour connaître les limites spécifiques à un agent.
