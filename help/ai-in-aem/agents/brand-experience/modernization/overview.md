@@ -4,10 +4,10 @@ description: Découvrez comment l’agent de modernisation de l’expérience in
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: 95e3046fca3cc2ede57d9e1e9a4ff01a0ba566c3
+source-git-commit: cc75cbb87c192ceeaa49e7ce860bf497743916bc
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 0%
+source-wordcount: '956'
+ht-degree: 1%
 
 ---
 
@@ -89,6 +89,7 @@ Les cas d’utilisation suivants nécessitent un effort d’implémentation supp
 La compétence de grattage ne prend pas en charge les sources suivantes.
 
 * Sources intranet ou protégées telles que le contenu non accessible derrière une authentification, un VPN ou un pare-feu
+   * Vous pouvez également utiliser [SLICC](https://www.sliccy.com) qui peut utiliser le contexte d’authentification de votre navigateur pour accéder aux sources protégées.
 * Contenu dynamique complexe, tel qu’un contenu nécessitant une interaction utilisateur sophistiquée pour apparaître dans le DOM.
    * Le contenu rendu côté client est pris en charge si le contenu est accessible via une URL spécifique.
    * Les éléments masqués via CSS mais présents dans le DOM comme les onglets, les accordéons ou les carrousels sont également pris en charge.
