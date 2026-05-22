@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1691'
-ht-degree: 100%
+source-wordcount: '1729'
+ht-degree: 97%
 
 ---
 
@@ -124,7 +124,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
    * **Amélioration de la transparence avec le journal d’audit pour les documents Adobe Sign** – Utilisez la fonction Journal d’audit pour obtenir des informations détaillées sur le cycle de vie de vos documents Adobe Sign. Grâce au journal d’audit, vous pouvez désormais conserver un enregistrement complet de toutes les actions et interactions liées à vos documents. Cela inclut des détails tels que les personnes qui ont consulté, modifié ou signé le document, ainsi que l’heure et la date de chaque événement. Cette amélioration est essentielle pour maintenir la conformité, résoudre les litiges et assurer l’intégrité de vos accords numériques.
 
-   * **Extension des rôles des personnes destinataires du contrat au-delà de la seule personne signataire :** Adobe Acrobat Sign a la possibilité d’étendre les rôles des personnes destinataires du contrat au-delà de la seule personne signataire afin de mieux répondre aux exigences de leur workflow.Lorsque cette option est activée, le rôle de chaque personne destinataire d’un contrat peut être configuré individuellement, la personne signataire étant la valeur par défaut.
+   * **Nouveaux rôles pour les destinataires du contrat au-delà du simple signataire** : Adobe Acrobat Sign a la possibilité d’étendre les rôles des destinataires du contrat au-delà du simple signataire afin de mieux répondre aux exigences de leur workflow. Lorsque cette option est activée, chaque destinataire d’un contrat peut configurer son rôle individuellement, avec le signataire comme valeur par défaut.
 
 * **[Protect de vos documents avec les API Document Assurance (partie des API de communication)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: les API Document Assurance vous permettent de protéger les informations sensibles en signant et en chiffrant les documents. Grâce au chiffrement, le contenu d’un document est transformé en un format illisible, ce qui garantit que seuls les utilisateurs autorisés peuvent y accéder. Cette couche renforcée de protection protège non seulement les données précieuses des yeux non autorisés, mais offre également une certaine tranquillité d’esprit. Les API Signature permettent à votre entreprise de garantir la sécurité et la confidentialité des documents Adobe PDF qu’elle diffuse et reçoit. Ce service utilise les signatures numériques et la certification pour s’assurer que seules les personnes destinataires prévues peuvent modifier les documents.
 

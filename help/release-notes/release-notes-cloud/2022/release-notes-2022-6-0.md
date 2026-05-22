@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 77%
+source-wordcount: '690'
+ht-degree: 84%
 
 ---
 
@@ -49,7 +49,7 @@ Consultez la vidéo Aperçu de la version de juin 2022 pour obtenir un résumé 
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#assets-features}
 
-Experience Manager Assets utilise désormais les fonctionnalités de l’IA d’Adobe pour [faire la distinction entre les couleurs d’une image et les appliquer automatiquement sous forme de balises lors de l’ingestion](/help/assets/color-tag-images.md). Ces balises permettent d’améliorer l’expérience de recherche en fonction de la composition des couleurs de l’image. Vous pouvez configurer le nombre de couleurs, comprises entre 1 et 40, qui sont balisées vers une image afin de pouvoir rechercher ultérieurement des images en fonction de ces couleurs.
+Experience Manager Assets utilise désormais les fonctionnalités d’Adobe AI pour [faire la distinction entre les couleurs d’une image et les appliquer automatiquement sous forme de balises lors de l’ingestion](/help/assets/color-tag-images.md). Ces balises permettent d’améliorer l’expérience de recherche en fonction de la composition des couleurs de l’image. Vous pouvez configurer le nombre de couleurs, comprises entre un et 40, qui sont balisées vers une image afin de pouvoir rechercher ultérieurement des images en fonction de ces couleurs.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

@@ -6,8 +6,8 @@ role: Admin
 exl-id: b9353092-88a0-477c-85f4-f916a4b8ba8f
 source-git-commit: 81e5cfd699fee811fc2b072e3b65e9d463a338b2
 workflow-type: tm+mt
-source-wordcount: '1122'
-ht-degree: 99%
+source-wordcount: '1250'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Regardez la vidéo de vue d’ensemble de la version de mars 2025 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2025.3.0 :
 
->[!VIDEO](https://video.tv.adobe.com/v/3463878?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3463860?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -93,9 +93,9 @@ L’**exécution** de Java 21 la plus performante est automatiquement déployé
 >
 > L’**exécution** Java 21 a été déployée dans vos environnements de développement/RDE en février. Elle sera appliquée à vos environnements d’évaluation/de production les **28 et 29 avril**. Notez que la **création de code** avec Java 21 (ou Java 17) est indépendante de l’exécution Java 21. Vous devez engager des mesures explicites pour créer du code avec Java 21 (ou Java 17).
 
-### Transfert de journal AEM vers d’autres destinations - Programme bêta {#log-forwarding-earlyadopter}
+### Transfert de journal AEM vers d’autres destinations - Programme Beta {#log-forwarding-earlyadopter}
 
-Avec la version bêta, vous pouvez désormais transférer les journaux AEM vers New Relic (à l’aide de HTTPS), Amazon S3 et Sumo Logic. Notez que les journaux AEM (y compris Apache/Dispatcher) sont pris en charge, contrairement aux journaux de réseau CDN. Envoyer un e-mail à l’adresse [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour obtenir l’accès.
+Avec la version Beta, vous pouvez désormais transférer les journaux AEM vers New Relic (à l’aide de HTTPS), Amazon S3 et Sumo Logic. Notez que les journaux AEM (y compris Apache/Dispatcher) sont pris en charge, contrairement aux journaux de réseau CDN. Envoyer un e-mail à l’adresse [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour obtenir l’accès.
 
 Bien que les journaux puissent être téléchargés depuis Cloud Manager, de nombreuses organisations préfèrent diffuser ces journaux vers une destination de journalisation spécifique. AEM prend déjà en charge le transfert de journaux AEM (disponibilité générale) et de réseau CDN vers Azure Blob Storage, Datadog, HTTPS, Elasticsearch (et OpenSearch) et Splunk. Cette fonctionnalité est configurée en libre-service et déployée à l’aide du pipeline de configuration.
 
@@ -124,12 +124,12 @@ Découvrez les [API OpenAPI AEM](/help/implementing/developing/open-api-based-ap
 
 Concrètement, les points d’entrée d’API répertoriés ci-dessous sont disponibles dans le cadre d’un programme d’adoption précoce. Si cela vous intéresse, envoyez un e-mail à l’adresse [aem-apis@adobe.com](mailto:aem-apis@adobe.com) décrivant comment vous prévoyez de les utiliser.
 
-* [API Sites Content Fragments](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
-* [API Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
+* [API de fragments de contenu de sites](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
+* [API ASSETS](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
 * API de dossiers Sites et Assets
 * [API Forms Communications](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 
-### Nouvelle AEM Developer Console (version bêta publique) {#aem-developer-console-beta}
+### Nouvelle AEM Developer Console (version Beta publique) {#aem-developer-console-beta}
 
 Testez une [AEM Developer Console](/help/implementing/developing/introduction/aem-developer-console.md) repensée qui offre une expérience plus interactive pour le débogage du code dans les environnements cloud.
 

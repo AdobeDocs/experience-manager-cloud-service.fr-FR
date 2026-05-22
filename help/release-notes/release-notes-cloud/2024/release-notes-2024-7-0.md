@@ -6,8 +6,8 @@ role: Admin
 exl-id: 6194df9d-8c3c-4c7f-be59-099b970a565a
 source-git-commit: 47b6d7871201cd7dbc1db77620879e69bce4ad3a
 workflow-type: tm+mt
-source-wordcount: '1626'
-ht-degree: 82%
+source-wordcount: '1709'
+ht-degree: 80%
 
 ---
 
@@ -69,7 +69,7 @@ Le sélecteur de ressources offre désormais aux auteurs de contenu la possibili
 
 Adobe Dynamic Media utilise l’intelligence artificielle pour générer automatiquement des sous-titres pour le contenu vidéo. Cette fonctionnalité est conçue pour améliorer l’accessibilité et l’expérience d’utilisation en fournissant des sous-titres précis en temps réel. L’IA analyse la piste audio de la vidéo pour transcrire la parole et créer des sous-titres, qui peuvent être modifiés pour plus de précision ou de personnalisation. Ces sous-titres permettent de répondre aux exigences d’accessibilité et d’améliorer l’engagement vidéo pour les audiences qui dépendent d’une prise en charge vidéo basée sur le texte ou qui préfèrent ce système.
 
-Pour bénéficier d’un accès anticipé à la prise en charge des sous-titres générés par l’IA sur votre compte Dynamic Media, vous devez [créer et envoyer un cas d’assistance clientèle Adobe &#x200B;](/help/assets/dynamic-media/video.md##enable-dash).
+Pour bénéficier d’un accès anticipé à la prise en charge des sous-titres générés par l’IA sur votre compte Dynamic Media, vous devez [créer et envoyer un cas d’assistance clientèle Adobe ](/help/assets/dynamic-media/video.md##enable-dash).
 
 ### Nouvelles fonctionnalités de la vue Assets {#assets-view-new-features}
 
@@ -124,7 +124,7 @@ Tirez parti de l’[éditeur universel](https://experienceleague.adobe.com/fr/do
 
 La définition de la durée de vie (TTL) à l’aide de l’en-tête de contrôle du cache HTTP est une approche efficace pour équilibrer les performances de diffusion du contenu et l’actualisation du contenu. Cependant, dans les cas où il est essentiel de diffuser immédiatement le contenu mis à jour, il peut être bénéfique de purger directement le cache du réseau CDN.
 
-[Découvrez comment &#x200B;](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) en libre-service la configuration d’un jeton d’API de purge à l’aide du pipeline de configuration Cloud Manager, afin que vous puissiez [appeler les API de purge](/help/implementing/dispatcher/cdn-cache-purge.md), avec l’une des variations suivantes :
+[Découvrez comment ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) en libre-service la configuration d’un jeton d’API de purge à l’aide du pipeline de configuration Cloud Manager, afin que vous puissiez [appeler les API de purge](/help/implementing/dispatcher/cdn-cache-purge.md), avec l’une des variations suivantes :
 
 * URL unique
 * Plusieurs URL à l’aide d’une balise
@@ -150,7 +150,7 @@ Protégez certaines ressources de contenu en affichant une boîte de dialogue d�
 
 #### Redirections Côté Serveur (Programme Des Utilisateurs Et Utilisatrices Précoces) {#server-side-redirects-early-adopter}
 
-Configurez les redirections côté serveur 301/302 dans le contrôle de code source et déployez-les sur le réseau CDN. [En savoir plus](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Notez qu’il existe déjà plusieurs autres fonctionnalités liées à la [configuration du réseau CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md), y compris les transformations de requêtes et de réponses, et le routage du trafic vers les sites hors AEM.
+Configurez les redirections côté serveur 301/302 dans le contrôle de code source et déployez-les sur le réseau CDN. [En savoir plus](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Notez que plusieurs autres fonctionnalités liées à la [configuration du réseau CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md) sont déjà disponibles, notamment les transformations de requête et de réponse, ainsi que le routage du trafic vers des sites hors AEM.
 
 #### Les utilisateurs et utilisatrices professionnels peuvent déclarer des redirections en dehors de Git (programme d’adoption précoce) {#apache-rewritemaps-early-adopter}
 

@@ -37,7 +37,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Consultez la vidéo Vue d’ensemble de la version de novembre 2024 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2024.11.0 :
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -57,7 +57,7 @@ Amélioration du [référencement de fragments de contenu avec des références 
 
 **API AEM REST OpenAPI pour la diffusion de fragments de contenu**
 
-L’[API AEM REST OpenAPI pour la diffusion de fragments de contenu &#x200B;](/help/headless/aem-content-fragment-delivery-with-openapi.md) est désormais disponible pour AEM as a Cloud Service.
+L’[API AEM REST OpenAPI pour la diffusion de fragments de contenu ](/help/headless/aem-content-fragment-delivery-with-openapi.md) est désormais disponible pour AEM as a Cloud Service.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -67,7 +67,7 @@ L’[API AEM REST OpenAPI pour la diffusion de fragments de contenu &#x200B;](/
 
 Adobe Dynamic Media utilise l’intelligence artificielle pour générer automatiquement des sous-titres pour le contenu vidéo. Cette fonctionnalité est conçue pour améliorer l’accessibilité et l’expérience d’utilisation en fournissant des sous-titres précis en temps réel. L’IA analyse la piste audio de la vidéo pour transcrire la parole et créer des sous-titres, qui peuvent être modifiés pour plus de précision ou de personnalisation. Ces sous-titres permettent de répondre aux exigences d’accessibilité et d’améliorer l’engagement vidéo pour les audiences qui dépendent d’une prise en charge vidéo basée sur le texte ou qui préfèrent ce système.
 
-Pour bénéficier d’un accès anticipé à la prise en charge des sous-titres générés par l’IA sur votre compte Dynamic Media, vous devez [créer et envoyer un cas d’assistance clientèle Adobe &#x200B;](/help/assets/dynamic-media/video.md##enable-dash).
+Pour bénéficier d’un accès anticipé à la prise en charge des sous-titres générés par l’IA sur votre compte Dynamic Media, vous devez [créer et envoyer un cas d’assistance clientèle Adobe ](/help/assets/dynamic-media/video.md##enable-dash).
 
 **Rapport de diffusion Dynamic Media**
 
@@ -87,7 +87,7 @@ La vue Assets vous permet désormais d’accéder à Dynamic Media et à des ren
 
 ### Nouvelles fonctionnalités d’AEM Forms {#forms-new-features}
 
-* **[Assistant AEM Forms AI &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/ai-in-aem/agents/brand-experience/experience-production/form-creation)** : L’IA générative pour Forms adaptatif apporte un tout nouveau niveau de puissance et de facilité à vos processus de développement de formulaires. Elle vous permet de créer de meilleurs formulaires plus rapidement que jamais auparavant.
+* **[Assistant AEM Forms AI ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/brand-experience/experience-production/form-creation)** : L’IA générative pour Forms adaptatif apporte un tout nouveau niveau de puissance et de facilité à vos processus de développement de formulaires. Elle vous permet de créer de meilleurs formulaires plus rapidement que jamais auparavant.
 
   ![Assistant IA générative, formulaires adaptatifs](/help/forms/assets/generative-ai-assistant.png)
 
@@ -167,7 +167,7 @@ intuitive and improving the mobile form-filling experience.
 
 >[!IMPORTANT]
 >
-> Vous souhaitez adhérer au Programme d’accès anticipé pour des formulaires innovants ? Envoyez un e-mail à partir de votre adresse officielle à [&#128279;](mailto:aem-forms-ea@adobe.com) avec la liste des fonctionnalités qui vous intéressent.## Module complémentaire CIF {#cloud-services-cif}
+> Vous souhaitez adhérer au Programme d’accès anticipé pour des formulaires innovants ? Envoyez un e-mail à partir de votre adresse officielle à [](mailto:aem-forms-ea@adobe.com) avec la liste des fonctionnalités qui vous intéressent.## Module complémentaire CIF {#cloud-services-cif}
 
 ## Module complémentaire CIF {#cif}
 

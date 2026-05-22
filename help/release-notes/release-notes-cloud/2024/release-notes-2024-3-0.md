@@ -6,7 +6,7 @@ feature: Release Information
 role: Admin
 source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2358'
 ht-degree: 93%
 
 ---
@@ -19,7 +19,7 @@ La section suivante concerne les notes de mise à jour de la version 2024.3.0 d
 >
 >À partir de là, vous pouvez accéder aux notes de mise à jour des versions précédentes, telles que 2021 ou 2022.
 >
->Consultez la section [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr) pour en savoir plus sur les activations de fonctionnalités à venir pour [!DNL Experience Manager] as a Cloud Service.
+>Consultez la section [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr) pour en savoir plus sur les activations de fonctionnalités à venir pour [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Regardez la vidéo de vue d’ensemble de la version de mars 2024 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2024.3.0 :
 
->[!VIDEO](https://video.tv.adobe.com/v/3450361?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3428342?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -49,7 +49,7 @@ AEM Sites peut désormais être utilisé comme source de contenu pour Edge Del
 
 ![Création AEM](/help/edge/assets/universal_editor_edge_delivery_services.png)
 
-Pour plus d’informations, consultez la [documentation](/help/edge/overview.md) et regardez [AEM Gems - Commencer avec la création AEM et Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694?profile.language=fr#M43905)
+Pour plus d’informations, consultez la [documentation](/help/edge/overview.md) et regardez [AEM Gems - Commencer avec la création AEM et Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)
 
 **Éditeur universel pour des implémentations découplées**
 

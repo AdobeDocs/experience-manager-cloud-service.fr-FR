@@ -6,8 +6,8 @@ role: Admin
 exl-id: 7b7a27f9-ba57-4eb2-9fcb-653b5213af04
 source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '1943'
-ht-degree: 98%
+source-wordcount: '2119'
+ht-degree: 94%
 
 ---
 
@@ -37,7 +37,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Consultez la vidéo Vue d’ensemble de la version de mai 2024 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2024.5.0 :
 
->[!VIDEO](https://video.tv.adobe.com/v/3448064?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3429503?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -167,7 +167,7 @@ Adobe Developer Console permet de générer des informations d’identificatio
 
 ### Nouvelles fonctionnalités pour les RDE {#RDE-new-features}
 
-Les [environnements de développement rapide (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) permettent à l’équipe de développement de déployer, réviser et tester rapidement les modifications en mode cloud. Plusieurs nouvelles fonctionnalités seront déployées au cours du mois de juin. Nous vous invitons également à contacter directement l’équipe d’ingénierie Adobe dans le [canal Discord des RDE](https://discord.com/channels/1131492224371277874/1245304281184079872).
+Les [environnements de développement rapide (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) permettent à l’équipe de développement de déployer, réviser et tester rapidement les modifications dans le cloud. Plusieurs nouvelles fonctionnalités seront déployées au cours du mois de juin. Nous vous invitons également à contacter directement l’équipe d’ingénierie Adobe dans le [canal Discord des RDE](https://discord.com/channels/1131492224371277874/1245304281184079872).
 
 
 #### Prise en charge de RDE pour le code en front-end à l’aide des thèmes et modèles de site {#rde-frontend}
@@ -216,7 +216,7 @@ Auparavant, un ticket d’assistance était nécessaire pour générer la clé X
 
 #### Redirections côté serveur (programme destiné aux utilisateurs et utilisatrices précoces) {#server-side-redirects-early-adopter}
 
-Configurez les redirections côté serveur 301/302 dans le contrôle de code source et déployez-les sur le réseau CDN. [En savoir plus](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Notez qu’il existe déjà plusieurs autres fonctionnalités liées à la [configuration du réseau CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md), y compris les transformations de requêtes et de réponses, et le routage du trafic vers les sites hors AEM.
+Configurez les redirections côté serveur 301/302 dans le contrôle de code source et déployez-les sur le réseau CDN. [En savoir plus](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Notez que plusieurs autres fonctionnalités liées à la [configuration du réseau CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md) sont déjà disponibles, notamment les transformations de requête et de réponse, ainsi que le routage du trafic vers des sites hors AEM.
 
 #### Alertes relatives aux règles de filtrage du trafic (programme d’adoption précoce) {#traffic-filter-rules-alerts-early-adopter}
 
@@ -234,10 +234,10 @@ Le réseau CDN géré par Adobe prend désormais en charge [Edge Side Includes
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-* **Publier une rubrique ou ses éléments sur un fragment d’expérience**
-Désormais, Experience Manager Guides vous permet de publier une rubrique ou ses éléments dans un fragment d’expérience. Un fragment d’expérience est une unité de contenu modulaire qui intègre à la fois le contenu et la mise en page.  Les fragments d’expérience sont essentiels, en ce qu’ils peuvent vous aider à créer des expériences cohérentes et attrayantes.
-* **Possibilité de transmettre les métadonnées de la ressource de rubrique à la sortie du PDF natif**
-Vous pouvez ajouter les métadonnées de la ressource de rubrique lors de la génération de la sortie du PDF natif. Cette fonctionnalité vous permet d’ajouter des métadonnées spécifiques pour différentes rubriques, telles que le titre et l’auteur ou l’autrice de la rubrique, dans les en-têtes et pieds de page de la page de la rubrique.
+* **Publier une rubrique ou ses éléments dans un fragment d’expérience**
+Désormais, Experience Manager Guides vous permet de publier une rubrique ou ses éléments dans un fragment d’expérience. Un fragment d’expérience est une unité de contenu modulaire qui intègre à la fois le contenu et la mise en page.  Les fragments d’expérience sont essentiels, en ce qu’ils peuvent vous aider à créer des expériences cohérentes et attrayantes.
+* **Possibilité de transmettre les métadonnées de la ressource de rubrique à la sortie native de PDF**
+Vous pouvez ajouter les métadonnées de la ressource de rubrique lors de la génération de la sortie Native PDF. Cette fonctionnalité vous permet d’ajouter des métadonnées spécifiques pour différentes rubriques, telles que le titre et l’auteur ou l’autrice de la rubrique, dans les en-têtes et pieds de page de la page de la rubrique.
 
 Pour plus d’informations sur les fonctionnalités nouvelles et améliorées, ainsi que sur les problèmes résolus dans la version, consultez la [Feuille de route de publication d’Experience Manager Guides](https://experienceleague.adobe.com/fr/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
@@ -249,7 +249,7 @@ Vous trouverez la liste complète des versions mensuelles de Cloud Manager [ici
 
 Vous trouverez une liste complète des versions des outils de migration [ici](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
 
-## Notes de mise à jour dʼExperience Cloud {#experience-cloud}
+## Notes de mise à jour dʼExperience Cloud {#experience-cloud}
 
 Vous trouverez des informations sur les versions d’autres applications Experience Cloud [ici](https://experienceleague.adobe.com/fr/docs/release-notes/experience-cloud/current).
 Pour recevoir chaque mois une notification par e-mail concernant des informations sur les notes de mise à jour d’Experience Cloud, abonnez-vous aux [Mises à jour de produits prioritaires d’Adobe](https://www.adobe.com/subscription/priority-product-update.html).

@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 75%
+source-wordcount: '866'
+ht-degree: 76%
 
 ---
 
@@ -19,7 +19,7 @@ La section suivante concerne les notes de mise à jour de la version 2023.12.0 
 >
 >À partir de là, vous pouvez accéder aux notes de mise à jour des versions précédentes, telles que 2021 ou 2022.
 >
->Consultez la section [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr) pour en savoir plus sur les activations de fonctionnalités à venir pour [!DNL Experience Manager] as a Cloud Service.
+>Consultez la section [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr) pour en savoir plus sur les activations de fonctionnalités à venir pour [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -107,7 +107,7 @@ Vous pouvez désormais facilement rechercher du contenu en sélectionnant une im
 
 ### Programme de mappage de domaines pour les utilisateurs et utilisatrices précoces {#cdn-config-early-adopter}
 
-Outre les [&#x200B; Règles de filtrage du trafic &#x200B;](/help/security/traffic-filter-rules-including-waf.md) récemment publiées, qui incluent les règles de pare-feu d’application web (WAF) sous licence facultative, vous pouvez utiliser le pipeline de configuration pour déclarer et déployer d’autres types de configuration de réseau CDN. Nous aimerions en savoir plus sur vos cas d’utilisation, notamment :
+Outre les [ Règles de filtrage du trafic ](/help/security/traffic-filter-rules-including-waf.md) récemment publiées, qui incluent les règles de pare-feu d’application web (WAF) sous licence facultative, vous pouvez utiliser le pipeline de configuration pour déclarer et déployer d’autres types de configuration de réseau CDN. Nous aimerions en savoir plus sur vos cas d’utilisation, notamment :
 
 * Redirections côté client 301/302
 * Établier un proxy des requêtes en périphérie vers des origines arbitraires
@@ -117,7 +117,7 @@ Outre les [&#x200B; Règles de filtrage du trafic &#x200B;](/help/security/traff
 * authentification par nom d’utilisateur/mot de passe
 * toute autre configuration CDN utile
 
-Envoyez un e-mail à **aemcs-cdn-config-adopter@adobe.com** à partir de votre ID d’e-mail officiel avec vos commentaires.
+Envoyez un e-mail à **** à partir de votre ID d’e-mail officiel avec vos commentaires.
 
 ## Cloud Manager {#cloud-manager}
 

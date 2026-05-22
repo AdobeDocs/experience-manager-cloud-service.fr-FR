@@ -6,8 +6,8 @@ role: Admin
 exl-id: 56bc4014-a3fc-46cf-88d9-dbecb1d4cc37
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '1461'
-ht-degree: 68%
+source-wordcount: '1577'
+ht-degree: 69%
 
 ---
 
@@ -39,7 +39,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -47,7 +47,7 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 AEM propose toute une gamme d’agents qui vous permettent d’accélérer la création de votre contenu et d’orchestrer automatiquement les modifications. Pour plus d&#39;informations, voir [Présentation des agents](/help/ai-in-aem/agents/overview.md).
 
-## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 <!--
  ### Pre-Release features in AEM Forms 
@@ -223,7 +223,7 @@ AI Answers offre une nouvelle manière à vos visiteurs d’interagir avec votre
 
 Nous nous préparons à lancer le programme Beta des réponses de l’IA et nous invitons désormais les clients à manifester leur intérêt. Étant donné que la version bêta disposera d’une capacité très limitée, les inscriptions précoces seront prises en compte en priorité. En participant à la version bêta, vous pourrez explorer les réponses de l’IA dans votre environnement AEM Cloud Service, valider les performances et la précision, et contribuer à façonner l’expérience future avant qu’elle ne soit disponible au public.
 
-Pour demander une participation ou recevoir des mises à jour, veuillez contacter [&#128279;](mailto:feedback-ai-answers@adobe.com).
+Pour demander une participation ou recevoir des mises à jour, veuillez contacter [](mailto:feedback-ai-answers@adobe.com).
 
 #### Accélérer le développement d’AEM avec l’IA (programme Alpha)  {#ai-dev-alpha}
 

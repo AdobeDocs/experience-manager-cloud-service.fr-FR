@@ -6,8 +6,8 @@ role: Admin
 exl-id: d5eb6d9e-308f-4a51-8bcf-b8077b5bec82
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '1894'
-ht-degree: 59%
+source-wordcount: '2008'
+ht-degree: 62%
 
 ---
 
@@ -39,7 +39,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -49,7 +49,7 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 * [Lancements pour les fragments de contenu](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md) : les auteurs de contenu peuvent désormais créer et planifier des variations futures de contenu structuré à l’aide de lancements pour les fragments de contenu. La nouvelle console Fragments de contenu permet de créer, de modifier, de gérer et de planifier les lancements de fragments de contenu sous la forme de branches pour le contenu futur qui peut être synchronisé avec la branche source. Une nouvelle vue Diff offre une vue d’ensemble claire de toutes les modifications de contenu avant de valider un lancement pour une publication ultérieure.
 
-* L’[&#x200B; Éditeur de modèle de contenu pour les fragments de contenu AEM](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) a été modernisé afin de s’aligner sur les autres interfaces basées sur React Spectrum dans AEM. L’implémentation de son interface d’utilisation et son modèle d’extensibilité sont désormais alignés sur l’éditeur de fragments de contenu et l’éditeur universel. Le nouvel éditeur de modèles s’ouvre désormais par défaut à partir de la nouvelle interface d’administration des modèles de contenu. L’ouverture d’un modèle de contenu dans l’interface d’utilisation tactile ouvre l’éditeur de l’interface d’utilisation tactile et propose de tester le nouvel éditeur.
+* L’[ Éditeur de modèle de contenu pour les fragments de contenu AEM](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) a été modernisé afin de s’aligner sur les autres interfaces basées sur React Spectrum dans AEM. L’implémentation de son interface d’utilisation et son modèle d’extensibilité sont désormais alignés sur l’éditeur de fragments de contenu et l’éditeur universel. Le nouvel éditeur de modèles s’ouvre désormais par défaut à partir de la nouvelle interface d’administration des modèles de contenu. L’ouverture d’un modèle de contenu dans l’interface d’utilisation tactile ouvre l’éditeur de l’interface d’utilisation tactile et propose de tester le nouvel éditeur.
 
 <!--
 
@@ -65,7 +65,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -87,7 +87,7 @@ L’éditeur universel offre désormais une expérience de création unifiée po
 
 L’éditeur universel prend en charge un large éventail de workflows d’envoi, notamment l’action d’envoi personnalisée, l’envoi à Microsoft SharePoint, l’envoi à Microsoft OneDrive, l’envoi au stockage d’objets blob Azure, l’envoi au point d’entrée REST, l’appel à un workflow AEM, l’appel à un flux Power Automate, l’envoi à Marketo Engage, l’envoi à Adobe Experience Platform (AEP), l’envoi à une feuille de calcul, l’envoi à l’aide du modèle de données de formulaire (FDM), l’envoi à Workfront Fusion et l’envoi d’e-mails.
 
-Pour plus d’informations, consultez la documentation [Éditeur universel pour Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md). Pour plus d’informations sur la configuration des actions d’envoi, voir [&#x200B; Action d’envoi de formulaire adaptatif](/help/edge/docs/forms/universal-editor/submit-action.md).
+Pour plus d’informations, consultez la documentation [Éditeur universel pour Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md). Pour plus d’informations sur la configuration des actions d’envoi, voir [ Action d’envoi de formulaire adaptatif](/help/edge/docs/forms/universal-editor/submit-action.md).
 
 <!--
  ### Pre-Release features in AEM Forms 
@@ -164,7 +164,7 @@ Journées de mise en production, événements en direct, pic de ventes : pas d�
 
 ### Transfert de journal AEM vers d’autres destinations {#log-forwarding}
 
-Il est désormais possible de transférer les journaux AEM vers Amazon S3, Sumo Logic, Dynatrace et votre propre compte New Relic (et non le compte fourni par Adobe). Notez que les journaux AEM (y compris Apache/Dispatcher) sont pris en charge pour ces destinations de journalisation, mais pas les journaux CDN.
+Il est désormais possible de transférer les journaux AEM vers Amazon S3, Sumo Logic, Dynatrace et votre propre compte New Relic (et non le compte fourni par Adobe). Notez que les journaux AEM (y compris Apache/Dispatcher) sont pris en charge pour ces destinations de journalisation, contrairement aux journaux de réseau CDN.
 
 Consultez l’ensemble complet des [destinations de transfert de journal prises en charge](/help/implementing/developing/introduction/log-forwarding.md).
 
@@ -274,7 +274,7 @@ AI Answers offre une nouvelle manière à vos visiteurs d’interagir avec votre
 
 Nous nous préparons à lancer le programme Beta des réponses de l’IA et nous invitons désormais les clients à manifester leur intérêt. Étant donné que la version bêta disposera d’une capacité très limitée, les inscriptions précoces seront prises en compte en priorité. En participant à la version bêta, vous pourrez explorer les réponses de l’IA dans votre environnement AEM Cloud Service, valider les performances et la précision, et contribuer à façonner l’expérience future avant qu’elle ne soit disponible au public.
 
-Pour demander une participation ou recevoir des mises à jour, veuillez contacter [&#128279;](mailto:feedback-ai-answers@adobe.com).
+Pour demander une participation ou recevoir des mises à jour, veuillez contacter [](mailto:feedback-ai-answers@adobe.com).
 
 
 ### Instantanés pour les environnements de développement rapide (programme alpha) {#rde-snapshot-program}
