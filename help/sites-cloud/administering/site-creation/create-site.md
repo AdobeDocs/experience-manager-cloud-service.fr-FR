@@ -8,7 +8,7 @@ exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
 solution: Experience Manager Sites
 source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '746'
 ht-degree: 56%
 
 ---
@@ -38,7 +38,7 @@ Les modèles de site contiennent généralement le contenu et la structure du si
 
 >[!NOTE]
 >
->Le modèle de site ne doit pas être confondu avec les modèles de [page).](/help/sites-cloud/authoring/page-editor/templates.md) Les modèles de site définissent la structure globale d’un site. Un modèle de page définit la structure et le contenu initial d’une page individuelle.
+>Le modèle de site ne doit pas être confondu avec les [modèles de page.](/help/sites-cloud/authoring/page-editor/templates.md) Les modèles de site définissent la structure globale d’un site. Un modèle de page définit la structure et le contenu initial d’une page individuelle.
 
 ### Modèles de site fournis par Adobe {#adobe-templates}
 
@@ -77,7 +77,7 @@ L’utilisation d’un modèle pour créer un site est simple.
 1. Fournissez des détails supplémentaires sur le site, comme l’exige le modèle de site.
 
    * Différents modèles peuvent nécessiter des détails supplémentaires.
-   * Par exemple, les modèles pour les [projets Edge Delivery Services](https://www.aem.live/developer/ue-tutorial) nécessitent le référentiel GitHub de votre projet.
+   * Par exemple, les modèles pour les [projets &#x200B;](https://www.aem.live/developer/ue-tutorial) nécessitent le référentiel GitHub de votre projet.
 
 1. Sélectionnez **Créer** pour que le site soit créé à partir du modèle de site.
 

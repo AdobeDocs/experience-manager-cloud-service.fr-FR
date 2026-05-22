@@ -8,8 +8,8 @@ exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 solution: Experience Manager Sites
 source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 66%
+source-wordcount: '415'
+ht-degree: 62%
 
 ---
 
@@ -60,4 +60,4 @@ Adobe fournit un thème de référence des bonnes pratiques que vous pouvez util
 
 Adobe fournit un Créateur de thèmes de site AEM sous la forme d’un ensemble de scripts permettant de créer des thèmes de site.
 
-[Le Créateur de thèmes de site AEM est disponible avec la documentation d’utilisation sur GitHub.](https://github.com/adobe/aem-site-theme-builder) Une expérience de développement front-end est requise pour personnaliser le thème.
+[Le Créateur de thèmes de site AEM est disponible ainsi que la documentation d’utilisation sur GitHub.](https://github.com/adobe/aem-site-theme-builder) Une expérience de développement front-end est requise pour personnaliser le thème.

@@ -9,8 +9,8 @@ solution: Experience Manager Sites
 recommendations: noDisplay, noCatalog
 source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 24%
+source-wordcount: '1011'
+ht-degree: 25%
 
 ---
 
@@ -31,7 +31,7 @@ Les sites basés sur des modèles de site peuvent utiliser le pipeline front-end
 
 >[!TIP]
 >
->Si vous ne connaissez pas le pipeline front-end et que vous ne savez pas comment l’utiliser pour déployer rapidement des sites et des modèles de site, consultez [Parcours de création rapide de site](/help/journey-sites/quick-site/overview.md) en guise d’introduction.
+>Si vous ne connaissez pas le pipeline front-end et que vous ne savez pas comment l’utiliser pour déployer rapidement des sites et des modèles de site, consultez Parcours de création rapide de site[&#128279;](/help/journey-sites/quick-site/overview.md) en guise d’introduction.
 
 AEM peut configurer votre site pour charger les thèmes déployés avec le pipeline front-end, même si votre site n’a pas été créé à l’aide de modèles et de thèmes de site, en les superposant à des bibliothèques clientes existantes.
 
@@ -74,13 +74,13 @@ Désormais, votre site est prêt à utiliser le pipeline front-end. Pour en savo
 
 ## Pipeline front-end et domaines personnalisés {#custom-domains}
 
-Le pipeline front-end peut être utilisé avec la fonctionnalité de domaines personnalisés [Cloud Manager](/help/implementing/cloud-manager/custom-domain-names/introduction.md) mais tenez compte des exigences suivantes lorsque vous utilisez les deux fonctionnalités ensemble.
+Le pipeline front-end peut être utilisé avec la fonctionnalité de domaines personnalisés [&#128279;](/help/implementing/cloud-manager/custom-domain-names/introduction.md) mais tenez compte des exigences suivantes lorsque vous utilisez les deux fonctionnalités ensemble.
 
 ### Fichiers front-end statiques {#static-files}
 
 Les ressources front-end statiques déployées via le pipeline front-end seront, par défaut, diffusées à partir du domaine statique prédéfini d’Adobe.
 
-Si vous avez besoin d’un domaine personnalisé pour les ressources front-end, vous pouvez installer un domaine personnalisé au niveau de publication et configurer le Dispatcher pour acheminer des chemins spécifiques (tels que `/static/`) vers l’emplacement d’hébergement statique d’Adobe. Cette méthode nécessite la mise à jour de vos [règles Dispatcher](https://experienceleague.adobe.com/fr/docs/experience-manager-dispatcher/using/dispatcher) pour transférer et mettre en cache correctement les requêtes pour les ressources statiques.
+Si vous avez besoin d’un domaine personnalisé pour les ressources front-end, vous pouvez installer un domaine personnalisé au niveau de publication et configurer le Dispatcher pour acheminer des chemins spécifiques (tels que `/static/`) vers l’emplacement d’hébergement statique d’Adobe. Cette méthode nécessite la mise à jour de vos [règles &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-dispatcher/using/dispatcher) pour transférer et mettre en cache correctement les requêtes pour les ressources statiques.
 
 Une fois que vous avez configuré votre domaine personnalisé et votre Dispatcher, vous pouvez configurer AEM pour diffuser vos ressources front-end à partir du domaine statique.
 

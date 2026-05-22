@@ -6,8 +6,8 @@ feature: Administering Screens
 role: Admin, Developer, User
 source-git-commit: bdb82da7463bc6b5265a7271072fe3a771fbb380
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 72%
+source-wordcount: '458'
+ht-degree: 64%
 
 ---
 
@@ -19,7 +19,7 @@ Le **fournisseur de contenu Screens** permet à l’auteur de contenu de créer 
 
 ## Objectif {#objective}
 
-La section suivante décrit comment créer des canaux dans le fournisseur de contenu Screens, une fois que vous avez configuré [Fournisseur de services Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=fr).
+La section suivante décrit la création de canaux dans le fournisseur de contenu Screens, une fois que vous avez configuré le [fournisseur de services Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=fr).
 
 ## Utilisation du fournisseur de contenu Screens {#screens-content-provider}
 
@@ -32,10 +32,10 @@ Pour vous connecter au fournisseur de contenu Screens, procédez comme suit :
 1. Accédez à la page d’accueil d’[Adobe Experience Cloud](https://experience.adobe.com).
 
 1. Sélectionnez **Experience Manager**.
-   ![Landing page pour un accès rapide aux zones d’Experience Manager.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+   ![Page de destination pour un accès rapide à certaines zones d’Experience Manager.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
 
 1. Cliquez sur **Démarrer** à partir de la vignette Cloud Manager. Une fois que vous êtes connecté à [!UICONTROL Cloud Manager], vous êtes prêt à utiliser l’interface utilisateur.
-   ![&#x200B; Quatre zones de Cloud Manager (Brand Portal, Cloud Manager, Cloud Acceleration Manager et Distribution logicielle) affichant chacune leur propre bouton Launch.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+   ![Quatre zones de Cloud Manager (Brand Portal, Cloud Manager, Cloud Acceleration Manager et Distribution logicielle) affichent chacune leur propre bouton Launch.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 1. Sélectionnez le programme pour Screens as a Cloud Service et cliquez sur l’icône, comme illustré ci-dessous, pour ouvrir la page **Vue d’ensemble** de Cloud Manager pour ce programme spécifique.
 

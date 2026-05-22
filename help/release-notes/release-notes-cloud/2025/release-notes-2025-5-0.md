@@ -6,7 +6,7 @@ role: Admin
 exl-id: b7a21533-9db1-4111-814c-cab917041be4
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '2162'
+source-wordcount: '2250'
 ht-degree: 100%
 
 ---
@@ -194,9 +194,9 @@ Passez en revue et mettez à jour tous les processus en aval qui reposent sur un
 * Si votre système de transfert de journal attend un format de journal personnalisé, vous devrez peut-être adapter vos règles d’ingestion.
 * Si vous avez précédemment réduit le niveau de détail du journal en modifiant les niveaux de journal, sachez que le retour aux niveaux par défaut peut augmenter le volume du journal.
 
-### Purge par défaut des anciennes versions et des journaux d’audit {#mt-defaults}
+### Purge par défaut des versions et journaux d’audit plus anciens {#mt-defaults}
 
-Actuellement, les *tâches de maintenance de purge* des versions de contenu et des journaux d’audit sont désactivées par défaut. Par conséquent, les données ne sont supprimées, sauf si elles sont configurées explicitement..
+Actuellement, les *tâches de maintenance de purge* des versions de contenu et des journaux d’audit sont désactivées par défaut. Par conséquent, les données ne sont supprimées que si cela est configuré explicitement.
 
 Toutefois, pour optimiser les performances du référentiel, à compter de **fin juin 2025**, la purge sera activée par défaut, en suivant ces directives :
 

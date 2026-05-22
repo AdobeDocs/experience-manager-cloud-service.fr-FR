@@ -8,7 +8,7 @@ exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
 source-git-commit: 633a89c533edfe7e932284b100aeac6f3d3708bc
 workflow-type: tm+mt
-source-wordcount: '2839'
+source-wordcount: '2908'
 ht-degree: 6%
 
 ---
@@ -544,7 +544,7 @@ Pour vous permettre de collaborer au sein du produit et dans le contexte, l’on
 
 ## Prévisualiser le fragment {#preview-content-fragment}
 
-L’éditeur de fragment de contenu permet aux auteurs de prévisualiser leurs modifications dans une application frontale externe. Pour activer le bouton **[Aperçu](/help/sites-cloud/administering/content-fragments/preview.md#preview-url-pattern)** dans la barre d’outils supérieure de l’éditeur, le **Modèle d’URL d’aperçu par défaut** doit être défini. Vous pouvez sélectionner ce bouton pour lancer l’application externe (dans un onglet distinct) afin d’effectuer le rendu du fragment de contenu.
+L’éditeur de fragment de contenu permet aux auteurs de prévisualiser leurs modifications dans une application frontale externe. Pour activer le bouton **Aperçu** dans la barre d’outils supérieure de l’éditeur, le **[Modèle d’URL d’aperçu par défaut](/help/sites-cloud/administering/content-fragments/preview.md#preview-url-pattern)** doit être défini. Vous pouvez sélectionner ce bouton pour lancer l’application externe (dans un onglet distinct) afin d’effectuer le rendu du fragment de contenu.
 
 ## Publier votre fragment {#publish-content-fragment}
 
@@ -571,11 +571,11 @@ Le panneau **Champs** répertorie tous les champs du fragment de contenu. L’ic
 <table style="table-layout:auto">
  <tbody>
   <tr>
-   <td><p><b>Une seule ligne de texte</b></p> </td>
+   <td><p><b>Texte sur une seule ligne</b></p> </td>
    <td><p> <img src="assets/cf-authoring-single-line-text-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>Plusieurs lignes de texte</b></p> </td>
+   <td><p><b>Texte sur plusieurs lignes</b></p> </td>
    <td><p> <img src="assets/cf-authoring-multi-line-text-icon.png"> </p></td>
   </tr>
   <tr>
@@ -603,7 +603,7 @@ Le panneau **Champs** répertorie tous les champs du fragment de contenu. L’ic
    <td><p> <img src="assets/cf-authoring-content-reference-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>Référence du fragment</b></p> </td>
+   <td><p><b>Référence de fragment</b></p> </td>
    <td><p> <img src="assets/cf-authoring-fragment-reference-icon.png"> </p></td>
   </tr>
   <tr>
