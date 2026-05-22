@@ -7,7 +7,7 @@ feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1626'
+source-wordcount: '1664'
 ht-degree: 100%
 
 ---
@@ -53,7 +53,7 @@ C’est particulièrement vrai pour le système de présentation, qui, dans les 
 
 Les limites de ce silo naturel peuvent apparaître lorsque vous intervenez davantage pour coordonner les modifications de tous les composants de la pile.
 
-Les utilisateurs attendent un engagement, quels que soient la plateforme ou le point de contact, ce qui nécessite une certaine agilité dans la diffusion de vos expériences. Cette approche multicanal est la référence des expériences digitales et une approche full stack peut, dans certaines circonstances, s’avérer rigide.
+Les utilisateurs attendent un engagement, quels que soient la plateforme ou le point de contact, ce qui nécessite une certaine agilité dans la diffusion de vos expériences.  Cette approche multicanal est la référence des expériences digitales et une approche full stack peut, dans certaines circonstances, s’avérer rigide.
 
 ## La tête d’un système découplé {#the-head}
 

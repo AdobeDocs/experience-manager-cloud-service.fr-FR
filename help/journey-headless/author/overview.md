@@ -7,8 +7,8 @@ feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 100%
+source-wordcount: '889'
+ht-degree: 99%
 
 ---
 
@@ -58,7 +58,7 @@ Bien que vous puissiez accéder directement à une partie spécifique du parcour
 |---|---|---|
 | 0 | Parcours de création de contenu découplé AEM | Ce document |
 | 1 | [Création pour AEM as a Cloud Service découplé – Introduction](introduction.md) | Cette section présente les fonctionnalités découplées d’Adobe Experience Manager as a Cloud Service et explique comment créer du contenu pour votre projet. |
-| 2 | [Principes de base de la création découplée avec AEM](basics.md) | Découvrez les concepts et les mécanismes de la création de contenu pour votre CMS Headless à l’aide de fragments de contenu. |
+| 2 | [Principes de base de la création découplée avec AEM](basics.md) | Découvrez les concepts et les mécanismes de la création de contenu pour votre CMS découplé à l’aide de fragments de contenu. |
 | 3 | [En savoir plus sur l’utilisation de références dans les fragments de contenu](references.md) | Découvrez comment utiliser les références dans les fragments de contenu. Ils vous permettent également de créer et de gérer plusieurs niveaux de structure pour votre CMS découplé à l’aide de fragments imbriqués. |
 | 4 | [En savoir plus sur la définition de métadonnées et sur le balisage pour les fragments de contenu](metadata-tagging.md) | Découvrez comment définir des métadonnées et des balises pour les fragments de contenu. |
 
@@ -68,7 +68,7 @@ Vous êtes maintenant prêt à prendre en main votre parcours découplé Adobe. 
 
 ## Ressources supplémentaires {#additional-resources}
 
-Les parcours de documentation vous montrent comment AEM permet de résoudre un problème d’activité en vous fournissant une narration qui vous guide tout au long de processus et de fonctionnalités complexes et interconnectés. Un parcours illustre la façon dont plusieurs fonctionnalités fonctionnent ensemble pour répondre à un unique besoin d’activité.
+Les parcours de documentation vous montrent comment AEM permet de résoudre un problème d’activité en vous fournissant une narration qui vous guide tout au long de processus et de fonctionnalités complexes et interconnectés. Un parcours illustre la manière dont différentes fonctionnalités s’associent pour répondre à un besoin unique.
 
 Ces parcours sont conçus pour être autonomes. Cependant, plusieurs d’entre eux sont connectés. Consultez ces parcours supplémentaires pour plus d’informations sur la manière dont les puissantes fonctionnalités d’AEM fonctionnent ensemble.
 
@@ -77,5 +77,5 @@ Ces parcours sont conçus pour être autonomes. Cependant, plusieurs d’entre e
 * [Parcours d’architecture découplée](/help/journey-headless/architect/overview.md) – Faites vos premiers pas avec cette introduction sur les fonctionnalités puissantes, flexibles et découplées d’Adobe Experience Manager as a Cloud Service et comment modéliser le contenu de votre projet.
 * [Documentation technique d’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=fr) : si vous connaissez déjà bien les technologies AEM et découplées, vous pouvez consulter directement notre documentation technique détaillée.
    * [Présentation d’AEM en tant que CMS découplé](/help/headless/introduction.md)
-* [Portail de développement d’AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
+* [Portail du développeur AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
 * [Tutoriels pour AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) : si vous préférez apprendre par la pratique et préférez la technique à la théorie, suivez nos tutoriels pratiques organisés par API et par structure, qui explorent la création et l’utilisation d’applications reposant sur le découplage AEM.

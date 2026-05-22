@@ -7,16 +7,16 @@ feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1830'
-ht-degree: 100%
+source-wordcount: '1865'
+ht-degree: 98%
 
 ---
 
 # Comment modéliser votre contenu {#model-your-content}
 
-Dans cette partie du [parcours de développement AEM Headless](overview.md), vous pouvez apprendre à modéliser votre structure de contenu. Créez ensuite cette structure pour Adobe Experience Manager (AEM) à l’aide des modèles de fragments de contenu et des fragments de contenu, en vue de la réutiliser sur plusieurs canaux.
+Dans cette partie du [parcours de développement AEM Headless](overview.md), vous pouvez apprendre à modéliser votre structure de contenu. Ensuite, réalisez cette structure pour Adobe Experience Manager (AEM) à l’aide des modèles de fragments de contenu et des fragments de contenu, afin de la réutiliser sur plusieurs canaux.
 
-## Un peu d’histoire...  {#story-so-far}
+## Un peu d’histoire... {#story-so-far}
 
 Pour commencer, la section [En savoir plus sur le développement CMS découplé](learn-about.md) a décrit la diffusion de contenu en mode découplé et les raisons justifiant son utilisation. Continuez avec la section [Prise en main d’AEM Headless as a Cloud Service](getting-started.md) qui décrit AEM Headless dans le contexte de votre propre projet.
 
@@ -197,7 +197,7 @@ Deux types de données fournissent des références au contenu en dehors d’un
 Il s’agit d’une référence simple à tout autre contenu de n’importe quel type.
 Par exemple, vous pouvez référencer une image à un emplacement spécifié.
 
-* **Référence du fragment**
+* **Référence de fragment**
 Cette section fournit des références à d’autres fragments de contenu.
 Ce type de référence est utilisé pour créer du contenu imbriqué, présentant les relations nécessaires au modèle de votre contenu.
 Le type de données peut être configuré pour permettre aux auteurs de fragments de procéder aux opérations suivantes :

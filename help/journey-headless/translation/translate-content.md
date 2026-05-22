@@ -7,7 +7,7 @@ feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '2120'
+source-wordcount: '2127'
 ht-degree: 100%
 
 ---
@@ -141,13 +141,13 @@ Pour afficher le détail du contenu découplé inclus dans ce projet :
 
 ![Options de tâche de traduction](assets/translation-job-options.png)
 
-En règle générale, le contenu de la tâche de traduction commence en statut **Version préliminaire** comme indiqué par la colonne **Statut** dans la fenêtre **Tâche de traduction**.
+En règle générale, le contenu de la tâche de traduction commence dans le statut **Brouillon** comme indiqué par la colonne **État** dans la fenêtre **Tâche de traduction**.
 
 Pour démarrer la tâche de traduction, revenez à la présentation du projet de traduction et appuyez ou cliquez sur le bouton chevron en haut de la carte **Tâche de traduction** et sélectionnez **Démarrer**.
 
 ![Démarrer la tâche de traduction](assets/start-translation-job.png)
 
-AEM communique maintenant avec votre configuration de traduction et votre connecteur pour envoyer le contenu au service de traduction. Vous pouvez afficher la progression de la traduction en revenant à la fenêtre **Tâche de traduction** et en affichant la colonne **Statut** des entrées.
+AEM communique maintenant avec votre configuration de traduction et votre connecteur pour envoyer le contenu au service de traduction. Vous pouvez afficher la progression de la traduction en revenant à la fenêtre **Tâche de traduction** et en affichant la colonne **État** des entrées.
 
 ![Tâche de traduction approuvée](assets/translation-job-approved.png)
 
@@ -191,13 +191,13 @@ Pour ajouter du contenu à une tâche de traduction :
 
 Vous pouvez utiliser les étapes précédentes pour ajouter le contenu nécessaire à toutes les langues (tâches) du projet. Une fois que vous avez sélectionné tout le contenu, vous pouvez commencer la traduction.
 
-En règle générale, le contenu de la tâche de traduction commence en statut **Version préliminaire** comme indiqué par la colonne **Statut** dans la fenêtre **Tâche de traduction**.
+En règle générale, le contenu de la tâche de traduction commence dans le statut **Brouillon** comme indiqué par la colonne **État** dans la fenêtre **Tâche de traduction**.
 
 Pour démarrer la tâche de traduction, revenez à la présentation du projet de traduction et appuyez ou cliquez sur le bouton chevron en haut de la carte **Tâche de traduction** et sélectionnez **Démarrer**.
 
 ![Démarrer la tâche de traduction](assets/start-translation-job.png)
 
-AEM communique maintenant avec votre configuration de traduction et votre connecteur pour envoyer le contenu au service de traduction. Vous pouvez afficher la progression de la traduction en revenant à la fenêtre **Tâche de traduction** et en affichant la colonne **Statut** des entrées.
+AEM communique maintenant avec votre configuration de traduction et votre connecteur pour envoyer le contenu au service de traduction. Vous pouvez afficher la progression de la traduction en revenant à la fenêtre **Tâche de traduction** et en affichant la colonne **État** des entrées.
 
 ![Tâche de traduction approuvée](assets/translation-job-approved.png)
 

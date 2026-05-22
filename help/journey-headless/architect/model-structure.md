@@ -7,7 +7,7 @@ feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '693'
 ht-degree: 83%
 
 ---
@@ -63,7 +63,7 @@ Après avoir ajouté un type de données, vous devrez définir les **Propriété
 
 ### Vos auteurs de contenu {#your-content-authors}
 
-Les auteurs et autrices de contenu ne voient pas les types de données et les propriétés que vous avez utilisés pour créer vos modèles. Cela signifie que vous devrez peut-être fournir de l’aide et des informations sur la façon dont ils doivent remplir des champs spécifiques. Pour fournir des informations de base, vous pouvez utiliser le libellé du champ et la valeur par défaut, mais il se peut qu’une documentation spécifique au projet plus complexe soit nécessaire.
+Les créateurs et créatrices de contenu ne voient pas les types de données et les propriétés que vous avez utilisés pour créer vos modèles. Cela signifie que vous devrez peut-être fournir de l’aide et des informations sur la façon dont ils doivent remplir des champs spécifiques. Pour fournir des informations de base, vous pouvez utiliser le libellé du champ et la valeur par défaut, mais il se peut qu’une documentation spécifique au projet plus complexe soit nécessaire.
 
 >[!NOTE]
 >

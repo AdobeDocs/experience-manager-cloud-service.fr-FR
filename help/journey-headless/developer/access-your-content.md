@@ -7,8 +7,8 @@ feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1320'
-ht-degree: 100%
+source-wordcount: '1379'
+ht-degree: 99%
 
 ---
 
@@ -39,7 +39,7 @@ Vous disposez donc de tout ce contenu soigneusement structuré (dans les fragmen
 
 Vous avez besoin d’un moyen de cibler un contenu spécifique, de sélectionner ce dont vous avez besoin et de le renvoyer à votre application pour un traitement ultérieur.
 
-Avec Adobe Experience Manager (AEM) as a Cloud Service, vous pouvez accéder de manière sélective à vos fragments de contenu, à l’aide de l’API AEM GraphQL, pour renvoyer uniquement le contenu dont vous avez besoin. Cela signifie que vous pouvez réaliser une diffusion découplée d’un contenu structuré pour l’utiliser dans vos applications.
+Avec Adobe Experience Manager (AEM) as a Cloud Service, vous pouvez accéder de manière sélective à vos fragments de contenu, à l’aide de l’API AEM GraphQL, pour ne renvoyer que le contenu dont vous avez besoin. Cela signifie que vous pouvez réaliser une diffusion découplée d’un contenu structuré pour l’utiliser dans vos applications.
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ GraphQL is used in various locations in AEM; for example:
 
 ## API AEM GraphQL {#aem-graphql-api}
 
-L’API AEM GraphQL est une version personnalisée de la spécification standard de l’API GraphQL, spécialement configurée pour vous permettre d’exécuter des requêtes (complexes) sur vos fragments de contenu.
+L’API AEM GraphQL est une version personnalisée basée sur la spécification de l’API GraphQL standard, spécialement configurée pour vous permettre d’exécuter des requêtes (complexes) sur vos fragments de contenu.
 
 Les fragments de contenu sont utilisés, car le contenu est structuré selon des modèles de ce type de fragment. Elle répond ainsi à une des exigences de base de GraphQL.
 
@@ -259,7 +259,7 @@ Maintenant que vous avez appris à accéder à votre contenu en mode découplé 
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [API Adobe Experience Manager as a Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
+* [API ADOBE EXPERIENCE MANAGER AS A CLOUD SERVICE](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
 * [GraphQL.org](https://graphql.org)
    * [Schémas](https://graphql.org/learn/schema/)
    * [Variables](https://graphql.org/learn/queries/#variables)

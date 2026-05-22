@@ -7,7 +7,7 @@ feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3068'
+source-wordcount: '3141'
 ht-degree: 100%
 
 ---
@@ -77,7 +77,7 @@ Les modèles de fragment de contenu définissent la structure des données et du
 
 ### Fragments de contenu {#content-fragments}
 
-Les fragments de contenu permettent de concevoir, créer, organiser et publier du contenu indépendant des pages. Ils permettent de préparer le contenu prêt à être utilisé dans des emplacements multiples et sur plusieurs canaux.
+Les fragments de contenu permettent de concevoir, de créer, d’organiser et de publier du contenu indépendant des pages. Ils permettent de préparer le contenu prêt à être utilisé dans des emplacements multiples et sur plusieurs canaux.
 
 Les fragments de contenu contiennent du contenu structuré et peuvent être diffusés au format JSON.
 
@@ -221,7 +221,7 @@ En règle générale, les références aux fragments de contenu ne doivent pas �
 
 #### Architecte de contenu {#content-architect}
 
-Les architectes de contenu analysent les exigences relatives aux données qui doivent être diffusées en mode découplé, et définissent la structure de ces données. Dans AEM, ces structures sont appelées [Modèles de fragment de contenu](#content-fragment-models). Les modèles de fragments de contenu servent de base pour les fragments de contenu créés par les auteurs.
+Les architectes de contenu analysent les exigences relatives aux données qui doivent être diffusées en mode découplé, et définissent la structure de ces données. Dans AEM, ces structures sont appelées [Modèles de fragment de contenu](#content-fragment-models). Les modèles de fragments de contenu servent de base pour les fragments de contenu créés.
 
 Lors de la définition de modèles de fragment de contenu, il peut être utile de créer des modèles associés aux composants d’expérience utilisateur des applications qui consomment les contenus.
 
@@ -287,7 +287,7 @@ Bien qu’il soit recommandé de passer à la partie suivante du parcours de dé
 * Un [Présentation d’AEM en tant que CMS sans affichage](/help/headless/introduction.md)
 * La variable [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
 * [Tutoriels sur AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) : ces tutoriels pratiques vous permettront de découvrir comment utiliser, avec AEM, les différentes options de diffusion de contenu vers des points d’entrée en mode découplé et choisir ce qui vous convient.
-* [Gestion de contenu en mode découplé à l’aide des API GraphQL](https://experienceleague.adobe.com/fr?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless#courses) : suivez ce cours pour bénéficier d’un aperçu de l’API GraphQL implémentée dans AEM. L’authentification à l’aide de l’Adobe ID est requise.
+* [Gestion de contenu en mode découplé à l’aide des API GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless#courses) : suivez ce cours pour bénéficier d’un aperçu de l’API GraphQL implémentée dans AEM. L’authentification à l’aide de l’Adobe ID est requise.
 * [AEM Guides WKND – GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) – Ce projet GitHub comprend des exemples d’applications qui mettent en évidence les API GraphQL d’AEM.
 * [Concepts de création](/help/sites-cloud/authoring/author-publish.md) – Documentation technique pour l’environnement de création d’AEM, avec notamment des détails sur la configuration auteur-publication.
 * [Publication de pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md) – Documentation technique pour la publication de contenu sur AEM

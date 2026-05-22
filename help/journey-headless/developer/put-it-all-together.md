@@ -7,8 +7,8 @@ feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 100%
+source-wordcount: '1124'
+ht-degree: 97%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Dans cette partie du [Parcours développeur découplé AEM](overview.md), vous vous familiariserez avec l’utilisation des outils de développement AEM et du SDK découplé pour assembler votre application.
 
-## Un peu d’histoire...  {#story-so-far}
+## Un peu d’histoire... {#story-so-far}
 
 Dans le document précédent du parcours découplé AEM, [Comment mettre à jour votre contenu grâce aux API d’AEM Assets](update-your-content.md) vous avez appris à mettre à jour votre contenu découplé dans AEM à l’aide de l’API et vous devriez maintenant :
 
@@ -113,10 +113,10 @@ Poursuivez votre parcours dans AEM découplé en consultant le document [Comment
 ## Ressources supplémentaires {#additional-resources}
 
 * [SDK d’AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-* [Configurer un environnement AEM local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=fr)
-* [SDK AEM découplé pour les navigateurs côté client (JavaScript)](https://github.com/adobe/aem-headless-client-js)
-* [SDK AEM découplé pour les Node.js côté serveur (JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
-* [SDK AEM découplé pour Java™](https://github.com/adobe/aem-headless-client-java)
+* [Configuration D’Un Environnement AEM Local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=fr)
+* [SDK découplé AEM pour les navigateurs côté client (JavaScript)](https://github.com/adobe/aem-headless-client-js)
+* [SDK découplé AEM pour server-side/Node.js (JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
+* [SDK découplé AEM pour Java™](https://github.com/adobe/aem-headless-client-java)
 * [Présentation d’AEM en tant que CMS découplé](/help/headless/introduction.md)
-* [Portail de développement d’AEM ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
+* [Portail du développeur AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
 * [Tutoriels pour le découplage dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)

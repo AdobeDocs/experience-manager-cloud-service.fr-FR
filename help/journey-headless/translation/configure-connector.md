@@ -7,7 +7,7 @@ feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1232'
 ht-degree: 100%
 
 ---

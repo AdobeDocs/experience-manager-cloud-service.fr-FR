@@ -7,7 +7,7 @@ feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1250'
+source-wordcount: '1283'
 ht-degree: 100%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Dans cette suite facultative du [Parcours de développement découplé AEM](overview.md), vous découvrirez comment AEM peut combiner une diffusion découplée avec des fonctionnalités CMS full stack traditionnelles. Vous découvrirez également comment créer des SPA modifiables à l’aide du cadre de l’éditeur de SPA d’AEM et intégrer des SPA externes, en activant les fonctionnalités d’édition selon les besoins.
 
-## Un peu d’histoire...  {#story-so-far}
+## Un peu d’histoire... {#story-so-far}
 
 À ce stade, vous devriez avoir terminé l’ensemble du [Parcours de développement découplé AEM](overview.md) et comprendre les principes de base de la diffusion découplée dans AEM, ainsi que les éléments suivants :
 
@@ -67,7 +67,7 @@ Cette fonctionnalité limite la nécessité d’actualiser la page et offre à l
 
 L’éditeur de SPA d’AEM permet aux développeurs et aux développeuses front-end de créer des SPA qui peuvent être intégrées à un site AEM, ce qui permet aux créateurs et créatrices de contenu de modifier le contenu de SPA aussi facilement qu’un autre contenu AEM.
 
-## Pourquoi une SPA ?  {#why-spa}
+## Pourquoi une SPA ? {#why-spa}
 
 En étant plus rapide, plus fluide et plus proche d’une application native, une SPA devient une expérience attrayante. C’est une bonne chose non seulement pour le visiteur de personne qui visite la page web, mais aussi pour les personnes spécialisées dans le marketing et le développement en raison de la nature du fonctionnement des SPA.
 
