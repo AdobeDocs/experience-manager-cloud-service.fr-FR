@@ -6,7 +6,7 @@ role: Admin
 exl-id: dc20f26c-59f0-4244-9797-926f25ed4da3
 source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '287'
 ht-degree: 100%
 
 ---
@@ -27,7 +27,7 @@ Pour permettre aux administrateurs et administratrices AEM de créer rapidement 
 La [création de sites](/help/sites-cloud/administering/site-creation/create-site.md) étant généralement du ressort de l’administrateur ou administratrice AEM, consultez la documentation d’administration pour plus de détails sur la personnalisation des modèles et des thèmes de sites.
 
 * [Modèles de site](/help/sites-cloud/administering/site-creation/site-templates.md) - Découvrez comment les modèles de site AEM peuvent être utilisés pour prédéfinir la structure du site et le contenu initial afin de vous permettre de créer rapidement de nouveaux sites.
-* [Thèmes de site](/help/sites-cloud/administering/site-creation/site-themes.md) - Découvrez comment les thèmes de site AEM peuvent être utilisés pour personnaliser le style et la conception de votre site.
+* [Thèmes de site](/help/sites-cloud/administering/site-creation/site-themes.md) : découvrez comment les thèmes de site AEM peuvent être utilisés pour personnaliser le style et la conception de votre site.
 
 >[!TIP]
 >

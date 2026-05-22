@@ -8,8 +8,8 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 87%
+source-wordcount: '1875'
+ht-degree: 90%
 
 ---
 
@@ -93,7 +93,7 @@ Créez des formulaires attrayants, réactifs et pilotés par les données à l�
 
 | Fonctionnalité | Description |
 |---|---|
-| Formulaires adaptatifs | Créez et gérez des formulaires interactifs, dynamiques, réactifs, compatibles avec les périphériques mobiles et pilotés par les données pour vos sites web, applications et autres canaux numériques et d’impression : <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=fr"> Créer un formulaire adaptatif </a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html?lang=fr">Appliquer un style à un formulaire adaptatif</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=fr"> Ajouter un formulaire adaptatif à une page AEM Sites</a></li></ul> |
+| Formulaires adaptatifs | Créez et gérez des formulaires interactifs, dynamiques, réactifs, compatibles avec les périphériques mobiles et pilotés par les données pour vos sites web, applications et autres canaux numériques et d’impression : <ul><li><a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form"> Créer un formulaire adaptatif </a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html?lang=fr">Appliquer un style à un formulaire adaptatif</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=fr"> Ajouter un formulaire adaptatif à une page AEM Sites</a></li></ul> |
 | Edge Delivery Services pour Forms | Créez et diffusez des formulaires hautes performances avec une expérience d’utilisation exceptionnelle : <ul><li><a href="/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md">Création WYSIWYG avec l’éditeur universel </a> : une interface visuelle puissante pour créer des formulaires</li><li><a href="/help/edge/docs/forms/create-forms.md">Création basée sur des documents</a> : permet de créer des formulaires à l’aide d’outils familiers tels que Microsoft Excel ou Google Sheets.</li><li>Éditeur de règles avancé permettant de créer une logique complexe</li><li>Scores Google Lighthouse presque parfaits avec un chargement de formulaire optimisé</li><li>Déploiement de formulaires rapide avec un temps de développement minimal</li></ul> |
 | Service de conversion automatisée de formulaires | Convertissez des formulaires basés sur des PDF hérités en formulaires adaptatifs faciles à gérer et à diffuser en ligne : <ul><li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=fr">Configurer le service de conversion automatisée de formulaires</a></li><li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=fr">Convertir des formulaires PDF en formulaires adaptatifs</a></li></ul> |
 
@@ -128,7 +128,7 @@ Connectez les formulaires aux sources de données et obtenez des informations su
 
 ## Assistant IA dans AEM
 
-Pour les clients et clientes qui ont [rempli les conditions préalables](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), l’assistant IA dans AEM est disponible pour les utilisateurs et utilisatrices de leur entreprise. Voir [Assistant IA dans AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
+Pour les clients et clientes qui ont [rempli les conditions préalables](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), l’assistant IA dans AEM est disponible pour les utilisateurs et utilisatrices de leur entreprise. Voir [Assistant IA dans AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
 
 >[!MORELIKETHIS]
 >

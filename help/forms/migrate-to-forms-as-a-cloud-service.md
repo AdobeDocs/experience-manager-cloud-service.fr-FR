@@ -12,8 +12,8 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '1386'
-ht-degree: 75%
+source-wordcount: '1687'
+ht-degree: 78%
 
 ---
 
@@ -161,9 +161,9 @@ Lorsque vous migrez des modèles de processus AEM d’AEM Forms 6.5 vers Cloud S
 
 ## Voir suivant
 
-* [Modifications notables pour les utilisateurs et utilisatrices d’Adobe Experience Manager Forms 6.5 existants](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/notable-changes.html?lang=fr)
-* [Intégration d’AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service.html?lang=fr)
-* [Créer votre premier formulaire adaptatif sur Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=fr)
+* [Modifications notables pour les utilisateurs Adobe Experience Manager 6.5 Forms existants](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/notable-changes.html?lang=fr)
+* [Intégration d’AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service.html?lang=fr)
+* [Création de votre premier formulaire adaptatif sur Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form)
 
 ## Informations supplémentaires
 

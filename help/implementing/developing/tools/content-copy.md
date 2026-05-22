@@ -6,8 +6,8 @@ feature: Developing
 role: Admin, Developer
 source-git-commit: bcd32fd359024abde5fb18ec4f3b8b3e2aa910cc
 workflow-type: tm+mt
-source-wordcount: '1574'
-ht-degree: 48%
+source-wordcount: '1592'
+ht-degree: 45%
 
 ---
 
@@ -46,7 +46,7 @@ Pour utiliser l’outil de copie de contenu, certaines autorisations sont requis
 | Créer et modifier des [jeux de contenu](#create-content-set) | Non requis | Nécessaires |
 | Démarrer ou annuler le [processus de copie de contenu](#copy-content) | Requis | Requis |
 
-Pour plus d&#39;informations sur les autorisations et leur définition, voir [Profils d&#39;équipe et de produit AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md).
+Pour plus d&#39;informations sur les autorisations et leur définition, voir [Profils d&#39;équipe et de produit &#x200B;](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ## Créer un ensemble de contenu {#create-content-set}
 
@@ -175,8 +175,8 @@ Une fois que vous avez commencé à copier du contenu, le processus peut avoir l
 | État | Description |
 | --- | --- |
 | En cours | L’opération de copie de contenu est en cours. |
-| Échec | L’opération de copie de contenu a échoué. |
-| Terminé | L’opération de copie de contenu a réussi. |
+| Échec | Échec de l’opération de copie de contenu. |
+| Terminé | L’opération de copie de contenu s’est terminée avec succès. |
 | Annulé | Un utilisateur annule une opération de copie de contenu après l’avoir démarrée. |
 
 ### Annuler un processus de copie {#canceling}

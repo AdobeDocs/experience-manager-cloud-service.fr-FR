@@ -7,7 +7,7 @@ role: Admin, Developer
 recommendations: noDisplay, noCatalog
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '339'
 ht-degree: 92%
 
 ---
@@ -25,7 +25,7 @@ L’outil de création rapide de site est un outil facile à utiliser qui permet
 
 Pour ce faire, l’outil de création rapide de site utilise plusieurs puissantes fonctionnalités d’AEM as a Cloud Service :
 
-1. Les **Modèles de site AEM** sont utilisés pour définir le contenu et la structure du site de base ainsi que le style du site. Ils sont sélectionnés par un administrateur lors de la création d’un site.
+1. Les **Modèles de site** sont utilisés pour définir le contenu et la structure du site de base ainsi que le style du site. Ils sont sélectionnés par un administrateur lors de la création d’un site.
 1. Un **Thème de site AEM** est inclus dans le modèle et contient les ressources CSS, JavaScript et statiques qui définissent le style du site.
 1. Le **Pipeline front-end** peut être utilisé pour déployer des personnalisations du thème du site indépendamment du développement back-end.
 

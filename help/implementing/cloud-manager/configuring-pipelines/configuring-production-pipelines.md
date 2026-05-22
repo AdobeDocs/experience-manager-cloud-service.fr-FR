@@ -8,7 +8,7 @@ feature: Cloud Manager, Developing
 role: Admin, Developer
 source-git-commit: aa8aba7f798e251c8a25ee247402e23517707e88
 workflow-type: tm+mt
-source-wordcount: '1903'
+source-wordcount: '1934'
 ht-degree: 26%
 
 ---
@@ -243,9 +243,9 @@ Si vous rencontrez un comportement de build inattendu, envisagez de désactiver 
 
 | Problème | Solutions suggérées |
 | --- | --- |
-| Les résultats de build sont incohérents | · Désactivez la mise en cache pour les modules concernés.<br>· Vérification du comportement des plug-ins (en particulier des plug-ins `exec`/`antrun`). |
+| Les résultats de build sont incohérents | · Désactivez la mise en cache pour les modules concernés.<br>· Vérifiez le comportement des plug-ins (en particulier des plug-ins `exec`/`antrun`). |
 | Aucune amélioration des performances | · Assurez-vous que plusieurs exécutions ont eu lieu (préchauffage du cache).<br>· Vérifiez si la plupart des modules changent fréquemment. |
-| Artefacts inattendus ou modifications manquantes | · Vérifier si les modifications se situent en dehors du suivi des dépendances Maven.<br>· Utilisez **Full Build** pour la vérification. |
+| Artefacts inattendus ou modifications manquantes | · Vérifiez si les modifications ne se trouvent pas en dehors du suivi des dépendances Maven.<br>· Utilisez **Version complète** pour la vérification. |
 
 Voir [Ajouter un pipeline de production](#adding-production-pipeline) pour activer la création intelligente.
 
