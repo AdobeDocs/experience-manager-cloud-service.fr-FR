@@ -4,7 +4,7 @@ description: Voici les notes de mise à jour de la version préliminaire de l’
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: 1da3f7ec7d56ec0463851aac8f6e14967f881c4f
+source-git-commit: a18a1d09003ef646356abcdd2f37b46616a708a1
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%
@@ -35,3 +35,4 @@ Ces notes de mise à jour **aperçu** sont fournies à titre indicatif pour que 
 ## Modifications à venir {#upcoming-improvements}
 
 * La couleur d’arrière-plan par défaut de la zone de travail de modification est désormais blanche (#FFFFFF) lorsque l’application ne définit aucune couleur d’arrière-plan.
+
