@@ -3,9 +3,9 @@ title: Mise en cache dans les fonctions AEM Edge
 description: Découvrez comment le cache de réseau CDN et le cache de récupération des fonctions Edge interagissent, comment configurer le comportement de mise en cache et comment purger le contenu mis en cache sur les deux couches.
 feature: Developing, Edge Delivery Services
 role: Developer
-source-git-commit: b33a565d9623ed44309e1d34377345dae86757cd
+source-git-commit: 4d3659aef1a180192a79b791f6ea840f576f5e63
 workflow-type: tm+mt
-source-wordcount: '1224'
+source-wordcount: '1226'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->AEM Edge Functions est une fonctionnalité **bêta**. Les fonctionnalités et la documentation peuvent changer sans préavis. Pour rejoindre le programme d’accès anticipé et soumettre vos commentaires, envoyez un e-mail à l’adresse [&#128279;](mailto:aemcs-edgecompute-feedback@adobe.com).
+>AEM Edge Functions est une fonctionnalité **bêta**. Les fonctionnalités et la documentation peuvent changer sans préavis. Pour rejoindre le programme d’accès anticipé et soumettre vos commentaires, envoyez un e-mail à l’adresse [](mailto:aemcs-edgecompute-feedback@adobe.com).
 
 Cette page fournit des conseils techniques détaillés sur le fonctionnement de la mise en cache dans les fonctions AEM Edge, y compris l’architecture à deux caches, sur la manière de contrôler le comportement de mise en cache dans votre code et sur la manière de purger les entrées de cache lorsque le contenu change.
 
@@ -48,11 +48,11 @@ return new Response(body, {
 });
 ```
 
-Plusieurs clés de substitution sont séparées par des espaces. Ces clés de substitution peuvent être utilisées pour purger le cache du réseau CDN à l’aide de l’[API de purge du cache CDN](/help/implementing/dispatcher/cdn-cache-purge.md). Le concept de purge de clé de substitution est identique à celui décrit dans [Purge du cache pour un groupe de ressources](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache#purge-the-cache-for-a-group-of-resources) — la différence essentielle est que les clés de substitution du réseau CDN sont ici définies par votre code de fonction Edge plutôt que par le serveur principal.
+Plusieurs clés de substitution sont séparées par des espaces. Ces clés de substitution peuvent être utilisées pour purger le cache du réseau CDN à l’aide de l’[API de purge du cache CDN](/help/implementing/dispatcher/cdn-cache-purge.md). Le concept de purge de clé de substitution est identique à celui décrit dans [Purge du cache pour un groupe de ressources](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache#purge-the-cache-for-a-group-of-resources) — la différence essentielle est que les clés de substitution du réseau CDN sont ici définies par votre code de fonction Edge plutôt que par le serveur principal.
 
 ## Cache de récupération des fonctions Edge (interne) {#fetch-cache}
 
-Le cache de récupération de la fonction Edge se trouve entre la fonction Edge et les serveurs principaux qu’elle appelle. Il met en cache la réponse **du serveur principal** aux appels `fetch()` effectués dans votre code de fonction Edge. Il contient également toutes les données stockées par votre code via l’[**API Core Cache**](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/CoreCache) ou l’[**API Simple Cache**](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/SimpleCache), des interfaces de mise en cache programmatiques qui vous permettent de contrôler précisément ce qui est mis en cache, pendant combien de temps et sous quelles clés de substitution.
+Le cache de récupération de la fonction Edge se trouve entre la fonction Edge et les serveurs principaux qu’elle appelle. Il met en cache la réponse **du serveur principal** aux appels `fetch()` effectués dans votre code de fonction Edge. Il contient également toutes les données stockées par votre code via l’[**API Core Cache**](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/CoreCache/insert) ou l’[**API Simple Cache**](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/SimpleCache), des interfaces de mise en cache programmatiques qui vous permettent de contrôler précisément ce qui est mis en cache, pendant combien de temps et sous quelles clés de substitution.
 
 Il n’est **pas** influencé par les en-têtes que vous définissez sur la réponse sortante de la fonction Edge, mais uniquement par les en-têtes de réponse du serveur principal, par [`CacheOverride`](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache-override/CacheOverride/) options sur vos appels de récupération ou par les clés de substitution que vous attribuez par programmation lors de l’écriture dans l’API Core Cache.
 
@@ -113,14 +113,14 @@ Le réseau CDN met en cache la réponse finale renvoyée par la fonction Edge. U
 
 ### Purge du cache de récupération des fonctions Edge {#purge-fetch-cache}
 
-La commande de l’interface de ligne de commande `purge-cache` purge le cache de récupération de la fonction Edge **&#x200B;**&#x200B;(les réponses du serveur principal mises en cache dans la fonction Edge). Il ne purge **pas** cache du réseau CDN externe. Pour connaître les options et les indicateurs de l’interface de ligne de commande complète, consultez la référence des commandes [&#128279;](https://github.com/adobe/aio-cli-plugin-aem-edge-functions/blob/main/README.md#purge-cache).`purge-cache`
+La commande de l’interface de ligne de commande `purge-cache` purge le cache de récupération de la fonction Edge **** (les réponses du serveur principal mises en cache dans la fonction Edge). Il ne purge **pas** cache du réseau CDN externe. Pour connaître les options et les indicateurs de l’interface de ligne de commande complète, consultez la référence des commandes ](https://github.com/adobe/aio-cli-plugin-aem-edge-functions/blob/main/README.md#purge-cache).[`purge-cache`
 
 #### D’Où Proviennent Les Clés De Substitution {#surrogate-key-origin}
 
 Les clés de substitution utilisées dans les commandes de purge doivent correspondre aux clés **balisées sur le contenu mis en cache au moment de son stockage**. Il s’agit du même concept que la [purge par clé de substitution](/help/implementing/dispatcher/cdn-cache-purge.md#surrogate-key-purge) utilisée dans le réseau CDN d’AEM, mais appliquée au cache interne de la fonction Edge. Ces clés proviennent de :
 
 - En-tête de réponse `Surrogate-Key` que le serveur principal renvoie lorsque la fonction Edge récupère à partir de celui-ci.
-- Les clés que vous attribuez par programmation lors de l’écriture dans l’[API Core Cache](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/CoreCache) (par exemple, via l’option `surrogateKeys` lors de l’insertion d’une entrée de cache).
+- Les clés que vous attribuez par programmation lors de l’écriture dans l’[API Core Cache](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/CoreCache/insert) (par exemple, via l’option `surrogateKeys` lors de l’insertion d’une entrée de cache).
 
 Par exemple, si votre serveur principal répond avec :
 
