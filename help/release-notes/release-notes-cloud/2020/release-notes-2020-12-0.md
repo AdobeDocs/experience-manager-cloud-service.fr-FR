@@ -32,7 +32,7 @@ La version suivante (2021.1.0) est le 28 janvier 2021.
 
 * [!DNL Dynamic Media] fonctionnalités sont désormais accessibles par le biais des composants principaux basés sur des images d’AEM [!DNL Sites]. Il est possible de configurer rapidement les composants de manière à utiliser les paramètres d’image prédéfinis, les options de recadrage dynamique et les modificateurs d’image lors de la création de pages web. Voir [Version 2.13.0 des composants principaux](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0).
 
-* L’application de bureau [!DNL Experience Manager] permet aux utilisateurs de télécharger des fichiers et des dossiers en faisant glisser les fichiers depuis l’Explorateur Windows ou le Finder Mac vers l’interface de l’application de bureau. Voir [ Ajout de ressources à l’aide de l’application de bureau ](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using#upload-and-add-new-assets-to-aem).
+* L’application de bureau [!DNL Experience Manager] permet aux utilisateurs de télécharger des fichiers et des dossiers en faisant glisser les fichiers depuis l’Explorateur Windows ou le Finder Mac vers l’interface de l’application de bureau. Voir [&#x200B; Ajout de ressources à l’aide de l’application de bureau &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using#upload-and-add-new-assets-to-aem).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -40,7 +40,7 @@ La version suivante (2021.1.0) est le 28 janvier 2021.
 
 * Publication du site de référence CIF Venia - 2020.12.01 qui comprend les derniers composants principaux de CIF version 1.6.0. Voir [Site de référence CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01) pour plus d’informations.
 
-* Publication des composants principaux de CIF version 1.6.0. Voir [Composants principaux ](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0) pour plus d’informations.
+* Publication des composants principaux de CIF version 1.6.0. Voir [Composants principaux &#x200B;](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0) pour plus d’informations.
 
 ## Cloud Manager {#cloud-manager}
 
