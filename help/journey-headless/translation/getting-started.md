@@ -7,7 +7,7 @@ feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1424'
 ht-degree: 95%
 
 ---
@@ -100,7 +100,7 @@ Comme les modèles de contenu définissent la structure de votre contenu, vous d
 
 ### Fragments de contenu {#content-fragments}
 
-Les modèles de contenu sont utilisés par les auteurs de contenu pour créer le véritable contenu découplé. Les auteurs de contenu sélectionnent le modèle sur lequel baser leur contenu, puis créent des fragments de contenu. Les fragments de contenu sont des instances de ces modèles et représentent le véritable contenu à diffuser en mode découplé.
+Les modèles de contenu sont utilisés par les auteurs de contenu pour créer le véritable contenu découplé. Les créateurs et créatrices de contenu sélectionnent le modèle sur lequel baser leur contenu, puis créent des fragments de contenu. Les fragments de contenu sont des instances de ces modèles et représentent le véritable contenu à diffuser en mode découplé.
 
 Si les modèles de contenu correspondent aux motifs de contenu, les fragments de contenu correspondent au véritable contenu basé sur ces modèles. Les fragments de contenu représentent le contenu qui doit être traduit.
 
@@ -182,7 +182,7 @@ Maintenant que vous avez terminé cette partie du parcours de traduction découp
 * savoir comment AEM stocke du contenu découplé ;
 * être familiarisé avec les outils de traduction AEM.
 
-Tirez parti de ces connaissances et continuez de progresser sur votre parcours de traduction découplée AEM en consultant le document, [Configuration du connecteur de traduction](configure-connector.md) dans lequel vous apprendrez à connecter AEM à un service de traduction. 
+Tirez parti de ces connaissances et continuez de progresser sur votre parcours de traduction découplée AEM en consultant le document, [Configuration du connecteur de traduction](configure-connector.md) dans lequel vous apprendrez à connecter AEM à un service de traduction.
 
 ## Ressources supplémentaires {#additional-resources}
 
@@ -193,4 +193,4 @@ Bien qu’il soit recommandé de passer à la partie suivante du parcours de tra
 * [Configuration du framework d’intégration de la traduction](/help/sites-cloud/administering/translation/integration-framework.md) : découvrez comment configurer le framework d’intégration de la traduction pour l’intégrer à des services de traduction tiers.
 * [Gestion de projets de traduction](/help/sites-cloud/administering/translation/managing-projects.md) : découvrez comment créer et gérer des projets de traduction automatique et humaine dans AEM.
 * [Présentation d’AEM en tant que CMS découplé](/help/headless/introduction.md)
-* [Tutoriels pour le découplage dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)
+* [Tutoriels pour Headless dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)

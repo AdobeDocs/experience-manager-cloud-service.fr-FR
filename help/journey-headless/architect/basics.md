@@ -7,8 +7,8 @@ feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 100%
+source-wordcount: '944'
+ht-degree: 94%
 
 ---
 
@@ -103,11 +103,11 @@ AEM fournit les types de données suivants pour que vous puissiez modéliser vot
 Deux types de données fournissent des références au contenu en dehors d’un fragment spécifique :
 
 * **Référence de contenu**/**Référence de contenu (UUID)**
-Référence simple à tout autre contenu de n’importe quel type.
+Il s’agit d’une référence simple à tout autre contenu de n’importe quel type.
 Par exemple, vous pouvez référencer une image à un emplacement spécifié.
 
-* **Référence de fragment**/**Référence de fragment (UUID)**
-Références à d’autres fragments de contenu.
+* **Référence du fragment**/**Référence du fragment (UUID)**
+Cette section fournit des références à d’autres fragments de contenu.
 Ce type de référence est utilisé pour créer du contenu imbriqué, présentant les relations nécessaires au modèle de votre contenu.
 Le type de données peut être configuré pour permettre aux auteurs de fragments de procéder aux opérations suivantes :
    * Modifier directement le fragment référencé.
@@ -140,7 +140,7 @@ Par exemple, les modèles de fragment de contenu suivants peuvent être définis
 * Personne
 * Distinctions
 
-Cela semble évident, mais une entreprise compte à la fois un ou une PDG et des employées et employés…Et chaque élément d’entre eux est défini en tant que personne.
+Cela semble assez simple, mais une entreprise compte à la fois un PDG et des employés.... et tous ces gens sont définis comme une personne.
 
 Et une personne peut recevoir une distinction (ou peut-être deux).
 

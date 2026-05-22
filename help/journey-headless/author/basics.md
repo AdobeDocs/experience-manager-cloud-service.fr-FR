@@ -1,14 +1,14 @@
 ---
 title: Découvrez les bases de la création
-description: Découvrez les concepts et les mécanismes de la création de contenu pour votre CMS Headless à l’aide de fragments de contenu.
+description: Découvrez les concepts et les mécanismes de la création de contenu pour votre CMS découplé à l’aide de fragments de contenu.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1733'
-ht-degree: 98%
+source-wordcount: '1737'
+ht-degree: 96%
 
 ---
 
@@ -29,7 +29,7 @@ Cet article s’appuie sur ces éléments afin que vous compreniez comment crée
 
 ## Manipulation de base {#basic-handling}
 
-Avant de vous familiariser avec les fragments de contenu, voici une introduction (très) rapide à l’utilisation d’AEM...mais rien ne remplace vraiment l’expérience de connexion et d’utilisation du système.
+Avant de vous familiariser avec les fragments de contenu, voici une introduction (très) rapide à l’utilisation d’....mais rien ne remplace vraiment l’expérience de connexion et d’utilisation du système.
 
 ### Création, prévisualisation et publication {#author-preview-publish}
 

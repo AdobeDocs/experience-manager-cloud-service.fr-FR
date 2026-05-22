@@ -7,7 +7,7 @@ feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3068'
+source-wordcount: '3141'
 ht-degree: 100%
 
 ---
@@ -77,7 +77,7 @@ Les modèles de fragment de contenu définissent la structure des données et du
 
 ### Fragments de contenu {#content-fragments}
 
-Les fragments de contenu permettent de concevoir, créer, organiser et publier du contenu indépendant des pages. Ils permettent de préparer le contenu prêt à être utilisé dans des emplacements multiples et sur plusieurs canaux.
+Les fragments de contenu permettent de concevoir, de créer, d’organiser et de publier du contenu indépendant des pages. Ils permettent de préparer le contenu prêt à être utilisé dans des emplacements multiples et sur plusieurs canaux.
 
 Les fragments de contenu contiennent du contenu structuré et peuvent être diffusés au format JSON.
 
@@ -221,7 +221,7 @@ En règle générale, les références aux fragments de contenu ne doivent pas �
 
 #### Architecte de contenu {#content-architect}
 
-Les architectes de contenu analysent les exigences relatives aux données qui doivent être diffusées en mode découplé, et définissent la structure de ces données. Dans AEM, ces structures sont appelées [Modèles de fragment de contenu](#content-fragment-models). Les modèles de fragments de contenu servent de base pour les fragments de contenu créés par les auteurs.
+Les architectes de contenu analysent les exigences relatives aux données qui doivent être diffusées en mode découplé, et définissent la structure de ces données. Dans AEM, ces structures sont appelées [Modèles de fragment de contenu](#content-fragment-models). Les modèles de fragments de contenu servent de base pour les fragments de contenu créés.
 
 Lors de la définition de modèles de fragment de contenu, il peut être utile de créer des modèles associés aux composants d’expérience utilisateur des applications qui consomment les contenus.
 

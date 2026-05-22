@@ -7,7 +7,7 @@ feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1372'
 ht-degree: 100%
 
 ---
@@ -126,9 +126,9 @@ Vous remarquerez peut-être que les statistiques répertoriées sur la nouvelle 
 Pour mettre à jour une traduction, vous pouvez ajouter à votre projet existant une nouvelle tâche chargée de traduire le contenu mis à jour.
 
 1. Accédez à **Navigation** -> **Projets**.
-1. Sélectionnez le projet que vous souhaitez supprimer.
+1. Sélectionnez le projet que vous souhaitez mettre à jour.
 1. Appuyez ou cliquez sur le bouton **Ajouter** en haut de la fenêtre.
-1. Dans la fenêtre **Ajouter une mosaïque**, appuyez ou cliquez sur **Tâche de traduction** puis sur **Envoyer**.
+1. Dans la fenêtre **Ajouter une vignette**, appuyez ou cliquez sur **Tâche de traduction**, puis sur **Envoyer**.
 
    ![Ajout d’une mosaïque.](assets/add-translation-job-tile.png)
 

@@ -7,8 +7,8 @@ feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 100%
+source-wordcount: '1143'
+ht-degree: 97%
 
 ---
 
@@ -106,7 +106,7 @@ Pour signaler un bug de manière efficace à l’assistance, si vous avez besoin
 * Documentez le contenu à l’origine du problème.
 * Consignez un problème à l’aide du portail d’assistance AEM avec la priorité appropriée.
 
-## Serait-ce la fin de notre voyage ?  {#journey-ends}
+## Serait-ce la fin de notre voyage ? {#journey-ends}
 
 Félicitations ! Vous avez terminé le parcours de développement découplé AEM. Vous devriez maintenant comprendre les éléments suivants :
 
@@ -129,8 +129,8 @@ Si ce type de flexibilité est nécessaire pour votre projet, passez à la secti
 ## Ressources supplémentaires {#additional-resources}
 
 * [Présentation d’AEM en tant que CMS découplé](/help/headless/introduction.md)
-* [Portail de développement d’AEM ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
+* [Portail du développeur AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
 * [Tutoriels pour le découplage dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)
 * [Présentation du déploiement sur AEM as a Cloud Service](/help/implementing/deploying/overview.md)
 * [Utilisation de Cloud Manager pour déployer votre code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=fr)
-* [Intégration du référentiel Git de Cloud Manager à un référentiel Git externe et déploiement d’un projet AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=fr)
+* [Intégration du référentiel Git de Cloud Manager à un référentiel Git externe et déploiement d’un projet AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=fr)

@@ -7,7 +7,7 @@ feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '759'
 ht-degree: 100%
 
 ---
@@ -82,4 +82,4 @@ Bien qu’il soit recommandé de passer à la partie suivante du parcours de tra
 
 * [MSM et traduction](/help/sites-cloud/administering/msm-and-translation.md) – Informations sur AEM Multi Site Manager et sur le fonctionnement de ses outils de traduction
 * [Présentation d’AEM en tant que CMS découplé](/help/headless/introduction.md)
-* [Tutoriels pour le découplage dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)
+* [Tutoriels pour Headless dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)
