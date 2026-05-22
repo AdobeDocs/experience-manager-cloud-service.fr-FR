@@ -8,8 +8,8 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 source-git-commit: d1e7f305c91f65ffe0bb043944310867e5947a02
 workflow-type: tm+mt
-source-wordcount: '3033'
-ht-degree: 28%
+source-wordcount: '3220'
+ht-degree: 30%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 28%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html) |
 | AEM as a Cloud Service | Cet article |
 
 Vous pouvez créer et appliquer des thèmes pour appliquer un style à un formulaire adaptatif. Un thème contient des détails de style pour les composants et les panneaux. Ces styles incluent des propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème, le style spécifié se reflète sur les composants correspondants. Un thème est géré indépendamment sans référence à un formulaire adaptatif et peut être réutilisé dans plusieurs formulaires adaptatifs.
@@ -28,7 +28,7 @@ Dans cet article, nous expliquons comment concevoir des styles personnalisés po
 
 Forms as a Cloud Service fournit les thèmes répertoriés ci-dessous pour le Forms adaptatif basé sur les composants principaux :
 
-* [Thème Canevas](https://github.com/adobe/aem-forms-theme-canvas)
+* [Thème de la zone de travail](https://github.com/adobe/aem-forms-theme-canvas)
 * [Thème WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Thème EASEL](https://github.com/adobe/aem-forms-theme-easel)
 
@@ -50,7 +50,7 @@ Un thème est un package qui inclut des composants de style tels que le fichier 
 
 Forms as a Cloud Service fournit, les thèmes de style de formulaire adaptatif répertoriés ci-dessous pour le Forms adaptatif basé sur les composants principaux.
 
-* [Thème Canevas](https://github.com/adobe/aem-forms-theme-canvas)
+* [Thème de la zone de travail](https://github.com/adobe/aem-forms-theme-canvas)
 * [Thème WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Thème EASEL](https://github.com/adobe/aem-forms-theme-easel)
 
@@ -70,12 +70,12 @@ La personnalisation d’un thème fait référence au processus de modification,
 
 * Familiarisez-vous avec [la configuration d’un pipeline dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#setup-pipeline) et des connaissances de base sur la configuration d’un pipeline vous permettent de gérer et de déployer efficacement vos personnalisations de thème.
 * Découvrez comment [configurer un utilisateur avec le rôle de contributeur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=fr). Comprendre comment configurer un utilisateur avec le rôle de contributeur vous permet d’accorder les autorisations nécessaires à la personnalisation du thème.
-* Installez la dernière version d’[Apache Maven](https://maven.apache.org/download.cgi). Apache Maven est un outil d’automatisation de création couramment utilisé dans les projets Java™. L’installation de la dernière version vous garantit les dépendances nécessaires à la personnalisation du thème.
+* Installez la dernière version d’[Apache Maven](https://maven.apache.org/download.cgi). Apache Maven est un outil d’automatisation de création couramment utilisé dans les projets Java™. L’installation de la dernière version vous garantit les dépendances nécessaires à la personnalisation du thème.
 * Installez un éditeur de texte brut. Par exemple, Microsoft® Visual Studio Code. L’utilisation d’un éditeur de texte brut tel que Microsoft® Visual Studio Code fournit un environnement convivial pour la création et la modification de fichiers de thème.
 
 ### Configuration de votre environnement
 
-* Configurez un [pipeline de déploiement front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=fr) pour votre environnement Cloud Service. Vous pouvez également configurer le pipeline ultérieurement, ce qui vous offre la possibilité de hiérarchiser les tests et d’affiner le thème avant de configurer le pipeline de déploiement.
+* Configurez un [pipeline de déploiement front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html) pour votre environnement Cloud Service. Vous pouvez également configurer le pipeline ultérieurement, ce qui vous offre la possibilité de hiérarchiser les tests et d’affiner le thème avant de configurer le pipeline de déploiement.
 
 <!-- 
 To deploy your themes to a Forms as a Cloud Service environment, first test theme on a local development environment to address any issues. Once the theme is tested, configure the front-end deployment pipeline, which is responsible for deploying the themes.
@@ -104,7 +104,7 @@ Commençons par un processus de création d’une expérience de marque pour vot
 
 Pour cloner un thème pour les formulaires adaptatifs basés sur les composants principaux, choisissez l’un des thèmes suivants :
 
-* [Thème Zone de travail](https://github.com/adobe/aem-forms-theme-canvas)
+* [Thème de la zone de travail](https://github.com/adobe/aem-forms-theme-canvas)
 * [Thème WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Thème EASEL](https://github.com/adobe/aem-forms-theme-easel)
 
@@ -219,7 +219,7 @@ Vous pouvez également modifier la police, la couleur, la taille et d’autres p
    >
    > Lorsqu’un style est défini au niveau du thème et du composant, le style défini au niveau du composant est prioritaire.
 
-#### &#x200B;4. Tester un thème personnalisé
+#### &#x200B;4. Test d’un thème personnalisé
 
 Pour prévisualiser et tester les modifications dans l’environnement local et personnaliser le thème en fonction des exigences des différents composants d’AEM, procédez comme suit :
 
@@ -310,7 +310,7 @@ Vous pouvez également tester le thème du formulaire adaptatif hébergé sur vo
    >
    > Pour créer un utilisateur local ou une utilisatrice locale :
    >
-   > * Accédez à **[!UICONTROL Accueil AEM]** > **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Utilisateurs]** .
+   > * Accédez à **[!UICONTROL Accueil]** > **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Utilisateurs]** .
    > * Assurez-vous que l’utilisateur ou l’utilisatrice est membre du groupe `forms-users`.
 
 1. Accédez à la racine du dossier du thème. Dans ce cas, le nom du dossier du thème est `aem-forms-theme-canvas`.
@@ -331,7 +331,7 @@ Pour déployer le thème dans votre environnement Cloud Service à l’aide du p
 
 ##### 5.1 Création d’un référentiel pour le thème
 
-Vous avez besoin d’un référentiel pour déployer le thème. Connectez-vous à votre référentiel [AEM Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git) et ajoutez un nouveau référentiel pour votre thème.
+Vous avez besoin d’un référentiel pour déployer le thème. Connectez-vous à votre référentiel [](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) et ajoutez un nouveau référentiel pour votre thème.
 
 1. Créez un référentiel pour un thème en cliquant sur le **[!UICONTROL Référentiels]** > **[!UICONTROL Ajouter un référentiel]**.
 
@@ -381,7 +381,7 @@ Désormais, envoyez les modifications au référentiel de thèmes de votre Cloud
 
 ##### 5.3 Ajout du pipeline front-end
 
-Le thème est déployé à l’aide du [pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=fr). Pour déployer le thème, effectuez les étapes suivantes :
+Le thème est déployé à l’aide du [pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html). Pour déployer le thème, effectuez les étapes suivantes :
 
 1. Connectez-vous à votre référentiel AEM Cloud Manager.
 1. Cliquez sur le bouton **[!UICONTROL Ajouter]** dans la section **[!UICONTROL Pipelines]**.
@@ -406,7 +406,7 @@ les étapes de **[!UICONTROL Source Code]**.
 Pour définir la version de Node.js sur 20 à l’aide de la configuration de pipeline :
 
 1. Accédez à la section **Pipelines** et localisez votre pipeline front-end.
-2. Sur le côté droit du pipeline, cliquez sur le menu à trois points **⋯** et dans la liste déroulante, sélectionnez **Afficher/Modifier les variables**.
+2. Sur le côté droit du pipeline, cliquez sur le menu à trois points ⋯**et dans la liste déroulante, sélectionnez** Afficher/Modifier les variables **.**
 3. Dans la boîte de dialogue **Configuration des variables**, renseignez les champs comme suit :
    * **NAME** - NODE_VERSION
    * **VALUE** - 20

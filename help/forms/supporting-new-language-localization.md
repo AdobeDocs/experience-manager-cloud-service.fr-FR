@@ -7,8 +7,8 @@ exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 role: User, Developer
 source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 78%
+source-wordcount: '1323'
+ht-degree: 75%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 78%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html) |
 | Composants principaux | [Cliquer ici](supporting-new-language-localization-core-components.md) |
 | Composants de base | Cet article |
 
@@ -29,7 +29,7 @@ AEM Forms fournit une prise en charge immédiate des paramètres régionaux en 
 
 ## Présentation des dictionnaires de paramètres régionaux {#about-locale-dictionaries}
 
-La localisation des formulaires adaptatifs repose sur deux types de dictionnaires de paramètres régionaux : 
+La localisation des formulaires adaptatifs repose sur deux types de dictionnaires de paramètres régionaux :
 
 * **Dictionnaire spécifique au formulaire** : il contient des chaînes utilisées dans des formulaires adaptatifs. Par exemple, les étiquettes, les noms de champ, les messages d’erreur et les descriptions d’aide. Il est géré sous forme de jeu de fichiers XLIFF pour chaque jeu de paramètres régionaux et accessible à l’adresse `[author-instance]/libs/cq/i18n/gui/translator.html`.
 
@@ -54,14 +54,14 @@ Pour ajouter la prise en charge d’un nouveau paramètre régional lors de l’
 1. [Ajoutez la prise en charge des paramètres régionaux pour le dictionnaire](#add-locale-support-for-the-dictionary)
 1. [Validez les modifications dans le référentiel et déployez le pipeline](#commit-changes-in-repo-deploy-pipeline)
 
-#### 1. Cloner le référentiel {#clone-the-repository}
+#### &#x200B;1. Clonez le référentiel {#clone-the-repository}
 
 1. Sur la ligne de commande, accédez à l’emplacement où vous souhaitez cloner le référentiel Forms Cloud Service.
-1. Exécutez la commande [récupérée à partir de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git). Elle est similaire à `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
+1. Exécutez la commande [récupérée à partir de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git). Elle est similaire à `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
 1. Utilisez le nom d’utilisateur et le mot de passe Git pour cloner le référentiel.
 1. Ouvrez le dossier de référentiel de Forms Cloud Service cloné dans l’éditeur de votre choix.
 
-#### 2. Ajouter des paramètres régionaux au Guide Localization Service {#add-a-locale-to-the-guide-localization-service}
+#### &#x200B;2. Ajouter des paramètres régionaux au Guide Localization Service {#add-a-locale-to-the-guide-localization-service}
 
 1. Recherchez le fichier `Guide Localization Service.cfg.json` et ajoutez le paramètre régional que vous souhaitez à la liste des paramètres régionaux pris en charge.
 
@@ -69,7 +69,7 @@ Pour ajouter la prise en charge d’un nouveau paramètre régional lors de l’
    >
    > Créez un fichier portant le nom `Guide Localization Service.cfg.json` s’il n’est pas déjà présent.
 
-#### 3. Ajouter la bibliothèque cliente de dossiers spécifiques au nom des paramètres régionaux {#add-locale-name-specific-folder}
+#### &#x200B;3. Ajouter la bibliothèque cliente de dossiers spécifiques au nom du paramètre régional {#add-locale-name-specific-folder}
 
 1. Dans le dossier UI.content, créez le dossier `etc/clientlibs`.
 1. Ensuite, créez un dossier appelé `locale-name` sous `etc/clientlibs` pour servir de conteneur pour les bibliothèques clientes xfa et af clientlibs.
@@ -81,10 +81,9 @@ Créez un nœud appelé `[locale-name]_xfa` et saisissez `cq:ClientLibraryFolder
 * **I18N.js** qui définit `xfalib.locale.Strings` pour `<locale>`, comme défini dans `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
 * **js.txt** qui contient les éléments suivants :
   */libs/fd/xfaforms/clientlibs/I18N/Namespace.js
-I18N.js
-/etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
+I18N.js*
 
-##### 3.2. Ajouter une bibliothèque cliente de formulaires adaptatifs pour un dossier locale-name de paramètres régionaux
+##### 3.2. Ajouter une bibliothèque cliente de formulaires adaptatifs pour un dossier locale-name de paramètre régional
 
 1. Créez un nœud appelé `[locale-name]_af` avec le type `cq:ClientLibraryFolder` sous `etc/clientlibs/locale_name`, avec la catégorie `guides.I18N.<locale>` et les dépendances `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` et `guide.common`.
 1. Créez un dossier appelé `javascript` et ajoutez les fichiers suivants :
@@ -99,7 +98,7 @@ I18N.js
      LogMessages.js
    ```
 
-#### 4. Ajouter la prise en charge des paramètres régionaux pour le dictionnaire {#add-locale-support-for-the-dictionary}
+#### &#x200B;4. Ajouter la prise en charge des paramètres régionaux pour la langue du dictionnaire {#add-locale-support-for-the-dictionary}
 
 Exécutez cette étape uniquement si l’élément `<locale>` que vous ajoutez ne se trouve pas parmi `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
 
@@ -118,7 +117,7 @@ Exécutez cette étape uniquement si l’élément `<locale>` que vous ajoutez n
 
 Avant de valider les modifications dans le référentiel Git d’AEM, vous devez accéder à vos [informations sur le référentiel Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git).
 
-#### 5. Valider les modifications dans le référentiel et déployer le pipeline {#commit-changes-in-repo-deploy-pipeline}
+#### &#x200B;5. Validez les modifications dans le référentiel et déployez le pipeline {#commit-changes-in-repo-deploy-pipeline}
 
 Validez les modifications dans le référentiel GIT après l’ajout d’une prise en charge de paramètres régionaux. Déployez votre code à l’aide du pipeline de pile pleine. Découvrez [comment configurer un pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#setup-pipeline) pour ajouter une nouvelle prise en charge de paramètres régionaux.
 Une fois le pipeline terminé, les nouveaux paramètres régionaux ajoutés apparaissent dans l’environnement AEM.
@@ -143,7 +142,7 @@ Deux méthodes permettent d’identifier les paramètres régionaux d’un formu
 * La récupération des paramètres suivants dans l’ordre indiqué :
 
    * Paramètre de requête `afAcceptLang`
-Pour remplacer la langue du navigateur des utilisateurs et des utilisatrices, vous pouvez transmettre le paramètre de requête `afAcceptLang` afin de forcer les paramètres régionaux. Par exemple, l’URL ci-dessous force le rendu du formulaire dans les paramètres régionaux pour le français canadien :
+Pour remplacer les paramètres régionaux du navigateur des utilisateurs, vous pouvez transmettre le paramètre de requête `afAcceptLang` pour forcer les paramètres régionaux. Par exemple, l’URL ci-dessous force le rendu du formulaire dans les paramètres régionaux pour le français canadien :
      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`
 
    * Les paramètres régionaux du navigateur définis pour l’utilisateur ou l’utilisatrice, qui sont spécifiés dans la demande à l’aide de l’en-tête `Accept-Language`.

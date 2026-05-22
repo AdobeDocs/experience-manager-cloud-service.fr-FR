@@ -6,8 +6,8 @@ feature: Developing
 role: Admin, Developer
 source-git-commit: bcd32fd359024abde5fb18ec4f3b8b3e2aa910cc
 workflow-type: tm+mt
-source-wordcount: '1574'
-ht-degree: 48%
+source-wordcount: '1592'
+ht-degree: 45%
 
 ---
 
@@ -46,7 +46,7 @@ Pour utiliser l’outil de copie de contenu, certaines autorisations sont requis
 | Créer et modifier des [jeux de contenu](#create-content-set) | Non requis | Nécessaires |
 | Démarrer ou annuler le [processus de copie de contenu](#copy-content) | Requis | Requis |
 
-Pour plus d&#39;informations sur les autorisations et leur définition, voir [Profils d&#39;équipe et de produit AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md).
+Pour plus d&#39;informations sur les autorisations et leur définition, voir [Profils d&#39;équipe et de produit ](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ## Créer un ensemble de contenu {#create-content-set}
 
@@ -175,8 +175,8 @@ Une fois que vous avez commencé à copier du contenu, le processus peut avoir l
 | État | Description |
 | --- | --- |
 | En cours | L’opération de copie de contenu est en cours. |
-| Échec | L’opération de copie de contenu a échoué. |
-| Terminé | L’opération de copie de contenu a réussi. |
+| Échec | Échec de l’opération de copie de contenu. |
+| Terminé | L’opération de copie de contenu s’est terminée avec succès. |
 | Annulé | Un utilisateur annule une opération de copie de contenu après l’avoir démarrée. |
 
 ### Annuler un processus de copie {#canceling}
@@ -221,4 +221,4 @@ L’outil de copie de contenu présente les limites suivantes.
 * L’outil de copie de contenu ne dispose d’aucune fonctionnalité de contrôle de version et ne peut pas détecter automatiquement le contenu modifié ou créé dans l’environnement source dans un jeu de contenu depuis la dernière opération de copie de contenu.
    * Si vous souhaitez mettre à jour votre environnement de destination avec des modifications de contenu depuis la dernière opération de copie de contenu uniquement, vous devez créer un jeu de contenu. Ensuite, spécifiez les chemins d’accès sur l’instance source où des modifications ont été apportées depuis la dernière opération de copie de contenu.
 * Les informations de version ne sont pas incluses dans une copie de contenu.
-* Les [&#x200B; Modèles de fragments de contenu &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) peuvent spécifier des champs de référence en fonction d’identifiants universels uniques (UUID). Ces UUID étant spécifiques au référentiel, l’outil de copie de contenu recalcule ces UUID dans l’environnement cible lors de la copie de fragments de contenu.
+* Les [ Modèles de fragments de contenu ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) peuvent spécifier des champs de référence en fonction d’identifiants universels uniques (UUID). Ces UUID étant spécifiques au référentiel, l’outil de copie de contenu recalcule ces UUID dans l’environnement cible lors de la copie de fragments de contenu.

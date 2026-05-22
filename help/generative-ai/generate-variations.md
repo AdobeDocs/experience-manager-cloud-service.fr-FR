@@ -6,8 +6,8 @@ feature: Generate Variations, AI Tools
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3295'
-ht-degree: 100%
+source-wordcount: '3392'
+ht-degree: 99%
 
 ---
 
@@ -116,7 +116,7 @@ Certains champs de saisie clés s’appliquent à plusieurs prompts (certains ch
 * **Contexte supplémentaire**
    * Insérez du contenu pour permettre à l’IA générative d’élaborer une meilleure réponse en fonction de l’entrée. Par exemple, si vous créez une bannière web pour une page ou un produit spécifique, vous souhaiterez peut-être inclure des informations sur la page ou le produit.
 * **Température**
-Sert à modifier la température de l’IA générative d’Adobe :
+Utilisez pour modifier la température de l’IA générative d’Adobe :
    * Une température plus élevée s’éloigne du prompt, et laisse davantage de place au hasard et à la créativité.
    * Une température plus basse est plus déterministe et reste plus proche du contenu du prompt.
    * Par défaut, la température est définie sur 1. Vous pouvez tester différentes températures si les résultats générés ne vous conviennent pas.
@@ -412,7 +412,7 @@ La gestion de l’utilisation dépend de l’action effectuée :
 
   >[!NOTE]
   >
-  >Consultez [Adobe Experience Manager : Cloud Service | Description du produit](https://helpx.adobe.com/fr/legal/product-descriptions/aem-cloud-service.html) pour plus d’informations sur les droits de base et contactez votre équipe en charge des comptes si vous souhaitez acheter des actions génératives supplémentaires.
+  >Consultez [Adobe Experience Manager : Cloud Service | Description du produit](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) pour plus d’informations sur les droits de base et contactez votre équipe en charge des comptes si vous souhaitez acheter des actions génératives supplémentaires.
 
 * Adobe Express
 
@@ -489,7 +489,7 @@ Une configuration est nécessaire pour pouvoir accéder à la fonction Générer
 Pour plus d’informations, vous pouvez également consulter :
 
 * [Générer des variations GenAI sur GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
-* [Expérimentation Edge Delivery Services](https://www.aem.live/docs/experimentation)
+* [Expérimentation Edge Delivery Services](https://www.aem.live/docs/experimentation)
 * [IA générative dans AEM as a Cloud Service](/help/ai-in-aem/overview.md#generative-ai-in-aem)
 
 ## FAQ {#faqs}

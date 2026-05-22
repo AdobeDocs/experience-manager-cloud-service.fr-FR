@@ -7,8 +7,8 @@ feature: Headless
 role: Admin, Developer
 source-git-commit: 920045ab4e79dc223706219bf64347649af14125
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 96%
+source-wordcount: '731'
+ht-degree: 94%
 
 ---
 
@@ -21,9 +21,9 @@ Vous pouvez lire la documentation détaillée des différentes fonctionnalités 
 
 >[!NOTE]
 >
->Voir aussi [Que désigne l’expression « Headless » ?](/help/headless/what-is-headless.md) pour une présentation des concepts et de la terminologie Headless.
+>Voir aussi [Qu’est-ce que le mode découplé ](/help/headless/what-is-headless.md) pour une présentation des concepts et de la terminologie Headless.
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 AEM découplé est une solution CMS d’Experience Manager qui permet l’utilisation de contenu structuré (fragments de contenu) dans AEM par n’importe quelle application via HTTP à l’aide de GraphQL. Les implémentations découplées permettent la diffusion d’expériences sur les plateformes et les canaux en fonction des besoins.
 
@@ -42,7 +42,7 @@ AEM as a Cloud Service est un outil souple pour le modèle d’implémentation d
 1. **Fragments de contenu**
    * Un fragment de contenu est créé à partir d’un modèle de fragment de contenu.
    * Il est créé par les créateurs et créatrices de contenu à l’aide de l’éditeur de fragments de contenu AEM.
-   * Les fragments de contenu sont stockés en tant qu’AEM Assets, mais peuvent être gérés via la console Ressources ou la [Console fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
+   * Les fragments de contenu sont stockés en tant qu’AEM Assets, mais peuvent être gérés via la console Ressources ou la [Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
 1. **API de contenu pour la diffusion**
    * Consultez [API AEM pour la diffusion et la gestion de contenu structuré](/help/headless/apis-headless-and-content-fragments.md) pour un aperçu des différentes API disponibles et une comparaison de certains des concepts impliqués.
 

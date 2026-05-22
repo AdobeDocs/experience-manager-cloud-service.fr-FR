@@ -44,7 +44,7 @@ Cloud Manager propose deux types de déploiement pour Edge Delivery Services dan
 
 Il existe deux types de déploiement pour Edge Delivery Services dans le réseau CDN géré par Adobe :
 
-1. **Avec un environnement AEMaaCS existant** — Configurez un proxy HTTP à partir d’un environnement AEM Sites as a Cloud Service existant. Cette approche est généralement utilisée lorsque vous disposez déjà d’un environnement et que vous souhaitez migrer une partie d’un site vers Edge Delivery Services. Voir [&#x200B; Configuration d’un proxy à partir d’un environnement existant](https://www.aem.live/docs/byo-cdn-adobe-managed#option-1-setup-a-proxy-from-an-existing-environment).
+1. **Avec un environnement AEMaaCS existant** — Configurez un proxy HTTP à partir d’un environnement AEM Sites as a Cloud Service existant. Cette approche est généralement utilisée lorsque vous disposez déjà d’un environnement et que vous souhaitez migrer une partie d’un site vers Edge Delivery Services. Voir [ Configuration d’un proxy à partir d’un environnement existant](https://www.aem.live/docs/byo-cdn-adobe-managed#option-1-setup-a-proxy-from-an-existing-environment).
 
 1. **Sans environnement AEMaaCS existant (environnement Edge)** — Configurez un nouveau site Edge Delivery indépendamment d’un environnement AEM Sites as a Cloud Service. Cette approche est utilisée lorsque vous ne disposez pas d’un environnement de création ou de publication AEM et que vous souhaitez utiliser Edge Delivery Services seul. Voir [Configuration d’un site Edge Delivery sans environnement existant](https://www.aem.live/docs/byo-cdn-adobe-managed#option-2-setup-an-edge-delivery-site-without-an-existing-environment).
 
@@ -53,7 +53,7 @@ Ces deux options disposent également de fonctionnalités différentes :
 * Le **Pipeline de configuration** est disponible pour les environnements AEM as a Cloud Service.
 * Le **Pipeline de configuration** est actuellement disponible pour les environnements Edge uniquement par le biais du programme Beta limité.
 
-Pour obtenir des instructions de configuration complètes, voir [Réseau CDN géré par &#x200B;](https://www.aem.live/docs/byo-cdn-adobe-managed)
+Pour obtenir des instructions de configuration complètes, voir [Réseau CDN géré par ](https://www.aem.live/docs/byo-cdn-adobe-managed)
 
 
 ## À propos de Edge Delivery Services avec la création dans AEM {#eds-aem-authoring}
@@ -73,7 +73,7 @@ Lorsque vous créez un site Edge Delivery dans Cloud Manager, vous pouvez choisi
 * Création basée sur des documents : créez du contenu dans Google Drive ou SharePoint. Aucun environnement AEM n’est requis.
 * Création AEM : créez du contenu dans AEM à l’aide de l’éditeur universel. Cette méthode nécessite un environnement de création AEM. Avec cette option, aucun niveau de publication n’est requis lorsqu’Edge Delivery gère la diffusion de contenu.
 
-Les entreprises peuvent choisir entre ces approches ou les utiliser de manière incrémentielle, en fonction de leurs préférences de workflow. Voir [&#x200B; Création de votre premier site Edge Delivery en un clic](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md).
+Les entreprises peuvent choisir entre ces approches ou les utiliser de manière incrémentielle, en fonction de leurs préférences de workflow. Voir [ Création de votre premier site Edge Delivery en un clic](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md).
 
 ### Niveau de publication flexible {#flexible-publish-tier}
 
@@ -141,7 +141,7 @@ La **liste de tâches Edge Delivery** est une liste de contrôle de tâches d’
 | 8 | Configuration de la validation push | Voir [Configuration de la validation push pour un site Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 9 | Mise en production | Voir [Liste de contrôle de mise en production](https://www.aem.live/docs/go-live-checklist). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441563?captions=fre_fr&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Soumettre un ticket d’assistance {#eds-support-ticket}
 

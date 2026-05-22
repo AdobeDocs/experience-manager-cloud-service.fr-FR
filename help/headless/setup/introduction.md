@@ -6,7 +6,7 @@ feature: Headless
 role: Admin, Developer
 source-git-commit: b25d47cca15ac1fe3f06c1ae99f15495ed5f4752
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '289'
 ht-degree: 77%
 
 ---
@@ -44,4 +44,4 @@ Cependant, dans une situation de production, les tâches seront exécutées par 
 
 ## Étape suivante {#next-step}
 
-Prêt à en apprendre plus ? Alors commencez par lire la première partie de la Configuration découplée : [&#x200B; Création d’une configuration &#x200B;](create-configuration.md).
+Prêt à en apprendre plus ? Alors commencez par lire la première partie de la Configuration découplée : [ Création d’une configuration ](create-configuration.md).

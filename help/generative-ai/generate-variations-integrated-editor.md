@@ -6,8 +6,8 @@ role: Admin, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1418'
-ht-degree: 100%
+source-wordcount: '1522'
+ht-degree: 97%
 
 ---
 
@@ -105,9 +105,9 @@ Pour générer des variations du contenu, vous devez décrire les modifications 
 Vous pouvez également spécifier des **modificateurs** pour fournir plus de contexte :
 
 * **Référencer une page web**
-Fournissez une URL pour apporter plus de contexte.
+Fournissez une URL pour plus de contexte.
 * **Charger le résumé du contenu**
-Mettez à jour un fichier `.docx` contenant les détails du résumé de contenu (10 Mo ou moins).
+Mettez à jour un fichier `.docx` contenant les détails du résumé de contenu (10 Mo ou moins).
 
 ### Générer la copie {#generate-copy}
 
@@ -172,7 +172,7 @@ La gestion de l’utilisation dépend de l’action effectuée :
 
   >[!NOTE]
   >
-  >Consultez [Adobe Experience Manager : Cloud Service | Description du produit](https://helpx.adobe.com/fr/legal/product-descriptions/aem-cloud-service.html) pour plus d’informations sur les droits de base et contactez votre équipe en charge des comptes si vous souhaitez acheter des actions génératives supplémentaires.
+  >Consultez [Adobe Experience Manager : Cloud Service | Description du produit](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) pour plus d’informations sur les droits de base et contactez votre équipe en charge des comptes si vous souhaitez acheter des actions génératives supplémentaires.
 
 ## Accès à Générer des variations {#access-generate-variations}
 
@@ -327,12 +327,12 @@ L’accès à partir de l’[éditeur de fragment de contenu AEM](/help/sites-c
 Pour plus d’informations, vous pouvez également consulter :
 
 * [Générer des variations GenAI sur GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
-* [Expérimentation Edge Delivery Services](https://www.aem.live/docs/experimentation)
+* [Expérimentation Edge Delivery Services](https://www.aem.live/docs/experimentation)
 * [IA générative dans les produits Experience Cloud](https://experienceleague.adobe.com/fr/docs/core-services/interface/features/generative-ai)
 
    * [IA générative dans les produits Experience Cloud - Adobe Experience Manager](https://experienceleague.adobe.com/fr/docs/core-services/interface/features/generative-ai#aem)
 
-* [Page de destination de la fonction Générer des variations dans Experience Cloud](https://experience.adobe.com/solutions/aem-sites-genai-aem-genai-variations-mfe/static-assets/resources/ga.html)
+* [Page de destination de génération de variations dans Experience Cloud](https://experience.adobe.com/solutions/aem-sites-genai-aem-genai-variations-mfe/static-assets/resources/ga.html)
 
 * [IA générative dans AEM as a Cloud Service](/help/ai-in-aem/overview.md#generative-ai-in-aem)
 

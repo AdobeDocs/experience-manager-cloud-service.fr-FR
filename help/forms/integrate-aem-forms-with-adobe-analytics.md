@@ -9,8 +9,8 @@ feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
 source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '7904'
-ht-degree: 15%
+source-wordcount: '8178'
+ht-degree: 16%
 
 ---
 
@@ -31,7 +31,7 @@ L’analyse des formulaires capture des informations détaillées sur la manièr
 **Analyse des modèles comportementaux**
 En analysant les modèles de comportement des utilisateurs sur plusieurs sessions de formulaires, les entreprises peuvent identifier les parcours d’utilisateurs courants, les points d’abandon typiques et les chemins d’achèvement réussis. Cette analyse permet des améliorations ciblées qui répondent aux besoins réels des utilisateurs.
 
-**Mesure du rendement**
+**Mesure de la performance**
 L’analyse des formulaires fournit des mesures quantitatives qui mesurent l’efficacité des formulaires, notamment les taux de conversion, les délais d’achèvement, la fréquence des erreurs et les indicateurs de satisfaction des utilisateurs. Ces mesures permettent une évaluation objective des performances du formulaire et de l’impact de l’optimisation.
 
 ### Importance des analyses de formulaires pour l’entreprise
@@ -85,7 +85,7 @@ Les analyses de formulaires efficaces se concentrent sur les mesures qui affecte
 
 La mise en œuvre d’analyses de formulaires offre une valeur commerciale mesurable sur plusieurs dimensions. Les entreprises qui utilisent Forms Analytics constatent généralement des améliorations significatives en termes de taux de conversion, de satisfaction des utilisateurs et d’efficacité opérationnelle.
 
-### &#x200B;1. Réduire les abandons de formulaire et augmenter les conversions
+### &#x200B;1. Réduire les abandons de formulaires et augmenter les conversions
 
 L’abandon de formulaire est un défi commercial majeur qui a un impact direct sur le chiffre d’affaires et la génération de pistes :
 
@@ -97,7 +97,7 @@ L’abandon de formulaire est un défi commercial majeur qui a un impact direct 
 
 **Impact commercial** : les entreprises constatent généralement une amélioration significative des taux de conversion de formulaire après l’implémentation d’optimisations basées sur les analyses.
 
-### &#x200B;2. Améliorer l&#39;expérience et la satisfaction des utilisateurs
+### &#x200B;2. Améliorer l’expérience utilisateur et la satisfaction des utilisateurs
 
 L’analyse des formulaires fournit des informations détaillées sur le comportement des utilisateurs et les problèmes :
 
@@ -109,7 +109,7 @@ L’analyse des formulaires fournit des informations détaillées sur le comport
 
 **Impact commercial** : l’amélioration de l’expérience client entraîne une augmentation des scores de satisfaction client et de la fidélité à la marque.
 
-### &#x200B;3. Apporter Des Améliorations Aux Formulaires Pilotés Par Les Données
+### &#x200B;3. Apporter des améliorations aux formulaires pilotés par les données
 
 Remplacez les conjectures par des données concrètes lors de l’optimisation des formulaires :
 
@@ -145,7 +145,7 @@ L’analyse des formulaires entraîne des améliorations opérationnelles dans l
 
 **Impact commercial** : les améliorations opérationnelles peuvent réduire considérablement les coûts d’assistance liés aux formulaires.
 
-### &#x200B;6. Avantage Concurrentiel Grâce À Une Forms Supérieure
+### &#x200B;6. Avantage Concurrentiel Grâce À La Technologie Supérieure Forms
 
 L’analyse de formulaire permet aux entreprises de créer des expériences de formulaire haut de gamme :
 
@@ -181,7 +181,7 @@ Comprendre comment l’analyse des formulaires s’applique aux scénarios réel
 
 ### Génération de leads et Forms B2B
 
-**Forms des demandes de contact et de démonstration**
+Forms des demandes de contact et de démonstration ****
 
 - **Défi** : trouver le juste équilibre entre la qualité des prospects et les taux de remplissage des formulaires et réduire l’abandon des formulaires
 - **Solution Form Analytics** : suivez la corrélation entre les performances du formulaire, la longueur du formulaire et la qualité de conversion des prospects
@@ -207,7 +207,7 @@ Comprendre comment l’analyse des formulaires s’applique aux scénarios réel
 - **Stratégie d’optimisation** : fournissez des indicateurs de progression clairs et une fonctionnalité d’enregistrement et de reprise.
 - **Considérations réglementaires** : Analytics doit respecter les exigences en matière de confidentialité des données financières.
 
-**Forms des devis et réclamations d’assurance**
+Forms des devis et réclamations d’assurance ****
 
 - **Défi** : collecter des informations détaillées tout en maintenant l’interaction client
 - **Solution Analytics** : surveillez le délai d’achèvement et l’engagement au niveau du terrain
@@ -224,7 +224,7 @@ Comprendre comment l’analyse des formulaires s’applique aux scénarios réel
 - **Priorité d’optimisation** : optimisation mobile essentielle pour la satisfaction des patients
 - **Exigences de conformité** : la conformité HIPAA est essentielle pour toutes les implémentations Analytics
 
-**Forms de planification des rendez-vous**
+Forms de planification des rendez-vous ****
 
 - **Défi** : réduire le nombre de non-présentation tout en simplifiant le processus de réservation
 - **Solution Analytics** : corrélez le comportement de remplissage du formulaire avec la présence au rendez-vous.
@@ -233,7 +233,7 @@ Comprendre comment l’analyse des formulaires s’applique aux scénarios réel
 
 ### Etablissement scolaire Forms
 
-**Forms de demande et d’inscription**
+Forms de demande et d’inscription ****
 
 - **Défi** : gérer des applications complexes à plusieurs étapes avec des exigences de document
 - **Solution Analytics** : suivez les taux d’achèvement à différentes étapes de l’application
@@ -241,7 +241,7 @@ Comprendre comment l’analyse des formulaires s’applique aux scénarios réel
 - **Objectif optimisation** : l’expérience mobile devient de plus en plus importante pour les applications étudiantes
 - **Considérations saisonnières** : Les performances varient considérablement au cours des périodes d’application
 
-**Forms d’enregistrement et de retour d’informations sur le cours**
+Forms d’enregistrement et de retour d’informations sur le cours ****
 
 - **Défi** : Maximiser l&#39;engagement des étudiants dans les processus administratifs
 - **Solution Analytics** : surveiller les taux d’achèvement et identifier les problèmes d’expérience utilisateur
@@ -446,7 +446,7 @@ Les formulaires mobiles présentent généralement des taux d’abandon 30 % plu
 - **Taux de conversion spécifiques à l’appareil** : comparaison des performances des formulaires pour tous les types d’appareils
 - **Responsive Design Impact** : mesurez l’impact de l’optimisation mobile sur les taux d’achèvement
 - **Utilisation de l’interface tactile** : analyse des modèles d’interaction spécifiques aux appareils mobiles
-- **Parcours sur plusieurs appareils** : suivez les utilisateurs qui démarrent des formulaires sur un appareil et les complètent sur un autre
+- Parcours sur plusieurs appareils **: suivez les utilisateurs qui démarrent des formulaires sur un appareil et les complètent sur un autre**
 
 **Chargement de page et mesures de performances**
 
@@ -470,7 +470,7 @@ Les Forms qui se chargent en moins de 3 secondes ont des taux de remplissage 70 
 
 - **Progression de formulaire à plusieurs étapes** : suivez l’avancement des utilisateurs via des formulaires complexes
 - **Conversion étape par étape** : mesurez les taux d’achèvement à chaque étape de formulaire
-- **Optimisation de Funnel** : identifier et résoudre les goulets d’étranglement dans la progression du formulaire
+- **Optimisation de** : identifier et résoudre les goulets d’étranglement dans la progression du formulaire
 - **Intégration du test A/B** : comparaison des performances de funnel entre les variations de formulaire
 
 **Mesures de l’impact commercial**
@@ -494,15 +494,15 @@ Avant de commencer l’implémentation de Forms Analytics, assurez-vous que votr
 
 >[!NOTE]
 >
->Si vous rencontrez des problèmes lors de l’installation, consultez notre [guide de dépannage d’AEM Forms](/help/forms/troubleshooting-installation-and-configuration.md) complet pour les problèmes d’installation et de configuration.
+>Si vous rencontrez des problèmes lors de l’installation, consultez notre [guide de dépannage d’](/help/forms/troubleshooting-installation-and-configuration.md) complet pour les problèmes d’installation et de configuration.
 
-**Accès Adobe Experience Cloud**
+**Accès**
 
 - Organisation Adobe Experience Cloud valide avec licence Adobe Analytics
 - Accès administratif aux environnements Adobe Analytics et AEM Forms
 - Accès à Adobe Launch (collecte de données) pour la gestion et la configuration des balises
 
-**Environnement AEM Forms**
+**Environnement**
 
 - [AEM Forms as a Cloud Service](/help/forms/setup-forms-cloud-service.md) ou AEM Forms 6.5+ (installations sur site/AMS)
 - Activation des fonctionnalités de création et de publication de Forms
@@ -675,7 +675,7 @@ Pour publier la configuration, procédez comme suit :
 
 ![Flux de publication](assets/publish-flow.png)
 
-## &#x200B;2. Configuration d’AEM Forms {#configure-aem-forms}
+## &#x200B;2. Configurer AEM Forms {#configure-aem-forms}
 
 Avant de créer une configuration Adobe Launch, créez une [configuration Adobe IMS à l’aide d’Adobe Launch en tant que solution cloud](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=fr).
 
@@ -829,14 +829,14 @@ Les événements personnalisés permettent de suivre les interactions spécifiqu
 
 ### Intégration à d’autres outils Adobe
 
-**Intégration Adobe Target**
+**Intégration**
 
 - **Test A/B de formulaire** : testez différentes variations de formulaire et mesurez l’impact sur les performances
-- **Personalization** : proposez des expériences de formulaire personnalisées en fonction du comportement des utilisateurs et des données d’analyse
+- **** : proposez des expériences de formulaire personnalisées en fonction du comportement des utilisateurs et des données d’analyse
 - **Optimisation** : utilisez les informations d’analyse pour éclairer les stratégies d’optimisation de Target
 - **Optimisation des conversions** : combinez l’analyse des formulaires avec des efforts d’optimisation des conversions plus larges
 
-**Intégration Adobe Campaign**
+**Intégration**
 
 - **Formation de prospect** : utilisez les données d’analyse de formulaire pour informer les campagnes de marketing par e-mail et de formation de prospect
 - **Segmentation** : créez des segments d’utilisateurs en fonction du comportement de remplissage de formulaire et des modèles d’engagement
@@ -851,7 +851,7 @@ Comprendre comment interpréter et agir sur les données d’analyse de formulai
 
 **Tableau de bord des indicateurs clés de performance (KPI)**
 
-- **Funnel de conversion de formulaire** : visualisez la progression de l’utilisateur tout au long du processus de remplissage du formulaire
+- Funnel de conversion de formulaire **: visualisez la progression de l’utilisateur tout au long du processus de remplissage du formulaire**
 - **Analyse des abandons** : identifier les points spécifiques où les utilisateurs laissent les formulaires incomplets
 - **Tendances des performances** : suivez les modifications des performances des formulaires au fil du temps et identifiez les modèles
 - **Analyse comparative** : comparez les performances sur différents formulaires, périodes et segments d’utilisateurs
@@ -917,7 +917,7 @@ Même avec une implémentation soigneuse, les configurations d’analyse de form
 
 >[!TIP]
 >
->Pour obtenir d’autres conseils de dépannage, consultez nos guides de dépannage de la collection [AEM Forms](/help/forms/troubleshooting-installation-and-configuration.md) et de dépannage de la création de formulaires [&#128279;](/help/forms/form-creation-failing.md).
+>Pour obtenir d’autres conseils de dépannage, consultez nos guides de dépannage de la collection [](/help/forms/troubleshooting-installation-and-configuration.md) et de dépannage de la création de formulaires [](/help/forms/form-creation-failing.md).
 
 **Problèmes de configuration**
 
@@ -964,7 +964,7 @@ La mise en œuvre réussie des analyses de formulaires nécessite de suivre les 
 
 >[!TIP]
 >
->Avant d’implémenter des analyses, assurez-vous que vos formulaires sont correctement configurés à l’aide des [bonnes pratiques d’AEM Forms](/help/forms/introduction-forms-authoring.md) et des [actions d’envoi](/help/forms/configuring-submit-actions.md) appropriées.
+>Avant d’implémenter des analyses, assurez-vous que vos formulaires sont correctement configurés à l’aide des [bonnes pratiques d’](/help/forms/introduction-forms-authoring.md) et des [actions d’envoi](/help/forms/configuring-submit-actions.md) appropriées.
 
 ### Instructions de mise en œuvre
 

@@ -8,8 +8,8 @@ exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 role: User, Developer
 source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2160'
-ht-degree: 9%
+source-wordcount: '2331'
+ht-degree: 11%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 9%
 
 <span class="preview"> La fonctionnalité de prise en charge linguistique de droite à gauche est disponible dans le cadre du programme des utilisateurs et utilisatrices précoces. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
 
-AEM Forms fournit une prise en charge immédiate des paramètres régionaux en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais du Brésil (pt-BR), chinois (zh-CN), chinois taïwanais (zh-TW) et coréen (ko-KR). Vous pouvez également ajouter la prise en charge d’autres paramètres régionaux, comme l’hindi (hi_IN). Vous pouvez également présenter le Forms adaptatif dans une langue de droite à gauche (RTL) comme l’arabe, le persan et l’ourdou en ajoutant ces paramètres régionaux.
+AEM Forms fournit une prise en charge immédiate des paramètres régionaux en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais du Brésil (pt-BR), chinois (zh-CN), chinois taïwanais (zh-TW) et coréen (ko-KR). Vous pouvez également ajouter la prise en charge d’autres paramètres régionaux comme l’hindi (hi_IN). Vous pouvez également présenter le Forms adaptatif dans une langue de droite à gauche (RTL) comme l’arabe, le persan et l’ourdou en ajoutant ces paramètres régionaux.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3433132/adaptive-forms-rtl--arabic-hebrew-farsi)
 
@@ -48,14 +48,14 @@ AEM Forms donne la priorité aux méthodes suivantes pour déterminer les param�
 
    Format : l’URL suit ce format : http:/[URL du serveur AEM Forms]/content/forms/af/[afName].[locale].html?wcmmode=disabled.
 
-   Exemple : https://[server]/content/forms/af/contact-us.hi.html effectue le rendu du formulaire en hindi.
+   Exemple : [server]/content/forms/af/contact-us.hi.html effectue le rendu du formulaire en hindi.
 
 
 1. **afAcceptLang, paramètre de requête** :
 
    Pour remplacer les paramètres régionaux du navigateur de l’utilisateur, vous pouvez utiliser le paramètre `afAcceptLang` dans l’URL.
 
-   Exemple : https://[server]/forms/af/survey.ca-fr.html?afAcceptLang=ca-fr force le rendu du formulaire en français canadien.
+   Exemple : [server]/forms/af/survey.ca-fr.html?afAcceptLang=ca-fr force le rendu du formulaire en français canadien.
 
 1. **Paramètres régionaux du navigateur de l’utilisateur (en-tête Accept-Language)** :
 
@@ -82,7 +82,7 @@ Avant de commencer à ajouter un nouveau paramètre régional pour votre Forms a
 
 * Éditeur de texte brut (IDE) : bien que tout éditeur de texte brut puisse fonctionner, un environnement de développement intégré (IDE) comme [Microsoft Visual Studio Code](https://code.visualstudio.com/download) offre des fonctionnalités avancées pour faciliter la modification.
 
-* Git : ce système de contrôle de version est nécessaire pour gérer les modifications de code. Si vous ne l’avez pas installé, téléchargez-le à partir de [https://git-scm.com](https://git-scm.com).
+* Git : ce système de contrôle de version est nécessaire pour gérer les modifications de code. Si vous ne l’avez pas installé, téléchargez-le à partir de [](https://git-scm.com).
 
 
 **Référentiel de code :**
@@ -126,7 +126,7 @@ Pour ajouter la prise en charge de nouveaux paramètres régionaux à un formula
 
    **Où trouver ces informations ?**
 
-   Pour obtenir des instructions détaillées sur la localisation de ces détails, reportez-vous à l’article Adobe Experience League « [Accès à Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git) ».
+   Pour obtenir des instructions détaillées sur la localisation de ces détails, reportez-vous à l’article Adobe Experience League « [Accès à Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) ».
 
    **Votre projet est prêt !**
 
@@ -403,12 +403,12 @@ Ces étapes vous guident tout au long de la prévisualisation d’un formulaire 
 ## Bonnes pratiques pour la prise en charge d’une nouvelle localisation {#best-practices}
 
 * Adobe recommande de créer un projet de traduction après la création d’un formulaire adaptatif. Cela simplifie le processus de localisation.
-* Lorsque les composants Zone numérique et Sélecteur de date sont traduits en paramètres régionaux spécifiques, des problèmes de mise en forme peuvent survenir. Pour atténuer ce problème, une option **Langue** a été intégrée dans la boîte de dialogue de configuration du composant [Sélecteur de date](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) et [Zone numérique](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
+* Lorsque les composants Zone numérique et Sélecteur de date sont traduits en paramètres régionaux spécifiques, des problèmes de mise en forme peuvent survenir. Pour atténuer ce problème, une option **Langue** a été intégrée dans la boîte de dialogue de configuration du composant [Sélecteur de date](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) et [Zone numérique](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
 
 
 * Gestion des nouveaux champs :
 
-   * **Traduction automatique** : si vous utilisez la traduction automatique, vous devez recréer le dictionnaire et [&#x200B; le projet de traduction](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md) après avoir ajouté de nouveaux champs à un formulaire adaptatif existant. Les nouveaux champs ajoutés après le projet de traduction initial ne sont toujours pas traduits.
+   * **Traduction automatique** : si vous utilisez la traduction automatique, vous devez recréer le dictionnaire et [ le projet de traduction](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md) après avoir ajouté de nouveaux champs à un formulaire adaptatif existant. Les nouveaux champs ajoutés après le projet de traduction initial ne sont toujours pas traduits.
 
    * **Traduction humaine** : pour les workflows de traduction humaine, exportez le dictionnaire à l’aide de l’interface utilisateur à l’adresse `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. Mettez à jour le dictionnaire pour les nouveaux champs et chargez la version révisée.
 
