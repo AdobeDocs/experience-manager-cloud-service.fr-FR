@@ -79,7 +79,7 @@ Pour utiliser la fonctionnalité de chargement de groupe en bloc d’Admin Conso
 
 ## Chargement et modification d’utilisateurs en bloc {#bulk-user}
 
-Admin Console comprend deux actions distinctes pour le chargement et la modification des détails de l’utilisateur. Les instructions ci-dessous concernent l’ajout de nouveaux utilisateurs à IMS. Les instructions de modification des utilisateurs IMS existants se trouvent dans la section suivante appelée [ Modification d’utilisateurs en bloc ](#user-edit).
+Admin Console comprend deux actions distinctes pour le chargement et la modification des détails de l’utilisateur. Les instructions ci-dessous concernent l’ajout de nouveaux utilisateurs à IMS. Les instructions de modification des utilisateurs IMS existants se trouvent dans la section suivante appelée [&#x200B; Modification d’utilisateurs en bloc &#x200B;](#user-edit).
 
 ### Chargement utilisateur en bloc {#user-upload}
 

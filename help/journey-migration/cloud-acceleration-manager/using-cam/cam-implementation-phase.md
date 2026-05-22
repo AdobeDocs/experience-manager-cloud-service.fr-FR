@@ -41,7 +41,7 @@ Consultez cette section pour découvrir la carte d’activité Développement lo
 
 1. Un carrousel de contenu affiche les informations pertinentes pour cette phase du parcours de migration.
 
-   ![ Carrousel de développement local ](/help/journey-migration/cloud-acceleration-manager/assets/implementation-3.png)
+   ![&#x200B; Carrousel de développement local &#x200B;](/help/journey-migration/cloud-acceleration-manager/assets/implementation-3.png)
 
 
 ## Utilisation de la carte de refactorisation du code {#code-refactoring}
@@ -52,7 +52,7 @@ Consultez cette section pour découvrir la carte d’activité Refactorisation d
 
 1. Cliquez sur le bouton **Réviser** de la carte d’activité **Refactorisation du code**.
 
-   ![ Carte de refactorisation du code ](/help/journey-migration/cloud-acceleration-manager/assets/implementation-4.png)
+   ![&#x200B; Carte de refactorisation du code &#x200B;](/help/journey-migration/cloud-acceleration-manager/assets/implementation-4.png)
 
 1. La page affiche la liste des activités de refactorisation du code organisées par niveau de gravité. Pour en savoir plus, cliquez sur les deux icônes en surbrillance.
 
@@ -67,7 +67,7 @@ Consultez cette section pour découvrir la carte d’activité Refactorisation d
 
 L’onglet **Dispatcher** fournit des informations sur la façon de structurer les configurations Apache et Dispatcher d’AEM as a Cloud Service. Il explique également comment valider et exécuter le service localement avant son déploiement dans les environnements cloud. Elle présente en outre le débogage dans les environnements cloud.
 
-![Onglet ](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
+![Onglet &#x200B;](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
 
 L’onglet **Tests** fournit des informations sur les tests fonctionnels, d’audit d’expérience et de l’interface d’utilisation.
 
@@ -113,7 +113,7 @@ Suivez cette section pour explorer la carte d’activité Transfert de contenu 
 
 1. Pour ingérer du contenu à partir de l’ensemble de migration dans un environnement sur AEM as a Cloud Service, vous devez démarrer une ingestion. Accédez à **Tâches d’ingestion** et cliquez sur **Nouvelle ingestion**. Lisez la section [Ingestion de contenu dans Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) pour savoir comment terminer la phase d’ingestion du transfert de contenu.
 
-   ![ Tâches d’ingestion ](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
+   ![&#x200B; Tâches d’ingestion &#x200B;](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 
 <!--
 ### Estimating Content Transfer Time {#calculating}

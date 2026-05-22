@@ -64,7 +64,7 @@ Suivez les étapes ci-dessous pour accéder à la phase de préparation :
 
 1. Une fois qu’un nouveau rapport a été chargé, le rapport Analyse des bonnes pratiques s’affiche dans CAM.
 
-   ![ Rapport d’analyse des bonnes pratiques ](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
+   ![&#x200B; Rapport d’analyse des bonnes pratiques &#x200B;](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
    >[!NOTE]
    >Si plusieurs rapports différents sont chargés, le rapport qui s’affiche en détail est toujours celui qui comporte la date de création la plus récente (et non la date de chargement).
@@ -131,7 +131,7 @@ Pour afficher les rapports à partir de l’option de tendance, procédez comme 
 
 Consultez les cartes suivantes disponibles sur la page Rapport d’analyse des bonnes pratiques :
 
-![ Rapport d’analyse des bonnes pratiques ](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
+![&#x200B; Rapport d’analyse des bonnes pratiques &#x200B;](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
 >[!NOTE]
 > Avec chaque carte, vous pouvez :
@@ -144,7 +144,7 @@ Consultez les cartes suivantes disponibles sur la page Rapport d’analyse des b
 
 La carte **Propriétés du rapport** donne des informations sur les propriétés du rapport, notamment la date du rapport, la durée, les filtres, la date de chargement et les détails d’Adobe Experience Manager (AEM).
 
-![ Propriétés du rapport ](/help/journey-migration/cloud-acceleration-manager/assets/report-properties.png)
+![&#x200B; Propriétés du rapport &#x200B;](/help/journey-migration/cloud-acceleration-manager/assets/report-properties.png)
 
 #### Aperçu du rapport {#report-overview}
 
@@ -206,7 +206,7 @@ Vous pouvez consulter les informations suivantes grâce à cet onglet :
 
 1. Cliquez sur **...**.
 
-   ![ Ellipse ](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
+   ![&#x200B; Ellipse &#x200B;](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
 1. Dans la liste déroulante, cliquez sur **Afficher la tendance**, comme illustré dans la figure ci-dessous.
 

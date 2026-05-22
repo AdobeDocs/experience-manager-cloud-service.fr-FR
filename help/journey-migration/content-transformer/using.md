@@ -59,7 +59,7 @@ Le Transformateur de contenu est fourni avec l’[Outil de transfert de contenu]
    >[!NOTE]
    > Lors de l’utilisation de l’opération de déplacement, il est recommandé de déplacer tous les chemins d’accès vers un seul dossier (par exemple, sous `/etc/packages/content-transformation/paths`). Ainsi, lorsque les packages de sauvegarde sont installés pour rétablir l’état d’origine de l’instance, le dossier (`/etc/packages/content-transformation/paths`) peut être supprimé à l’aide de l’opération de suppression afin de réduire la taille du référentiel.
 
-   ![ image](/help/journey-migration/content-transformer/assets/ct-5.png)
+   ![&#x200B; image](/help/journey-migration/content-transformer/assets/ct-5.png)
    ![image](/help/journey-migration/content-transformer/assets/ct-6.png)
 
    >[!NOTE]
@@ -70,5 +70,5 @@ Le Transformateur de contenu est fourni avec l’[Outil de transfert de contenu]
    >[!CAUTION]
    > Ne supprimez pas `/etc/packages/content-transformation`, car il s’agit de l’emplacement où se trouvent les packages de sauvegarde. Vous pourrez supprimer cet emplacement uniquement lorsque vous aurez la certitude de ne plus avoir besoin de ces packages. Cela vous permettra de réduire la taille du référentiel.
 
-   ![ image](/help/journey-migration/content-transformer/assets/ct-7.png)
+   ![&#x200B; image](/help/journey-migration/content-transformer/assets/ct-7.png)
    ![Image](/help/journey-migration/content-transformer/assets/ct-8.png)

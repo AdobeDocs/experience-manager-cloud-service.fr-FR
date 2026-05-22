@@ -20,7 +20,7 @@ Les utilisateurs peuvent déterminer de manière fiable si tout le contenu extra
 
 >[!INFO]
 >
->Cette fonctionnalité sera disponible à partir de la version 1.8.x de l’outil de transfert de contenu (CTT). L’environnement cible AEM Cloud Service doit au moins utiliser la version 6158 ou ultérieure. L’environnement source doit également être configuré pour fonctionner avec une [précopie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). La fonctionnalité de validation recherche le fichier azcopy.config sur la source. S’il ne trouve pas ce fichier, la validation ne s’exécute pas. Pour en savoir plus sur la configuration d’un fichier azcopy.config, voir [ Gestion des référentiels de contenu volumineux - Configurer un fichier azcopy.config ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
+>Cette fonctionnalité sera disponible à partir de la version 1.8.x de l’outil de transfert de contenu (CTT). L’environnement cible AEM Cloud Service doit au moins utiliser la version 6158 ou ultérieure. L’environnement source doit également être configuré pour fonctionner avec une [précopie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). La fonctionnalité de validation recherche le fichier azcopy.config sur la source. S’il ne trouve pas ce fichier, la validation ne s’exécute pas. Pour en savoir plus sur la configuration d’un fichier azcopy.config, voir [&#x200B; Gestion des référentiels de contenu volumineux - Configurer un fichier azcopy.config &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
 La validation d’un transfert de contenu est une fonctionnalité facultative. L’activation de cette fonctionnalité augmentera le temps nécessaire à l’exécution d’une extraction et d’une ingestion. Pour utiliser cette fonctionnalité, activez-la dans la console système de l’environnement d’AEM source en procédant comme suit :
 
@@ -137,7 +137,7 @@ En plus d’être inclus dans le journal d’ingestion, le rapport de validation
 
 ## Comment valider la migration des entités principales {#how-to-validate-group-migration}
 
-Consultez [ Migration de groupe ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) pour lire les détails de la migration principale et sa raison d’être.
+Consultez [&#x200B; Migration de groupe &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) pour lire les détails de la migration principale et sa raison d’être.
 
 Une fois l’extraction et l’ingestion terminées, un résumé et un rapport de la migration des entités principales sont disponibles. Ces informations peuvent être utilisées pour valider les groupes qui ont été migrés avec succès et, peut-être, pour déterminer pourquoi certains ne l’ont pas été.
 
@@ -175,4 +175,4 @@ Les chemins que nous excluons actuellement des résumés sont les suivants : le
 
 ### Groupes d’utilisateurs et d’utilisatrices fermés {#validating-cugs}
 
-Consultez [ Migration de groupes d’utilisateurs fermés ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) pour plus d’informations lors de l’utilisation d’une politique de groupe d’utilisateurs fermé (CUG).
+Consultez [&#x200B; Migration de groupes d’utilisateurs fermés &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) pour plus d’informations lors de l’utilisation d’une politique de groupe d’utilisateurs fermé (CUG).
