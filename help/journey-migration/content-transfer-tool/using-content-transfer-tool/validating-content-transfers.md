@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: 9b05ed38e8eb337b3a07ee2051c6a0d530088af2
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 71%
+source-wordcount: '1228'
+ht-degree: 69%
 
 ---
 
@@ -20,7 +20,7 @@ Les utilisateurs peuvent déterminer de manière fiable si tout le contenu extra
 
 >[!INFO]
 >
->Cette fonctionnalité sera disponible à partir de la version 1.8.x de l’outil de transfert de contenu (CTT). L’environnement cible AEM Cloud Service doit au moins utiliser la version 6158 ou ultérieure. L’environnement source doit également être configuré pour fonctionner avec une [précopie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). La fonctionnalité de validation recherche le fichier azcopy.config sur la source. S’il ne trouve pas ce fichier, la validation ne s’exécute pas. Pour en savoir plus sur la configuration d’un fichier azcopy.config, voir [&#x200B; Gestion des référentiels de contenu volumineux - Configurer un fichier azcopy.config &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
+>Cette fonctionnalité sera disponible à partir de la version 1.8.x de l’outil de transfert de contenu (CTT). L’environnement cible AEM Cloud Service doit au moins utiliser la version 6158 ou ultérieure. L’environnement source doit également être configuré pour fonctionner avec une [précopie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). La fonctionnalité de validation recherche le fichier azcopy.config sur la source. S’il ne trouve pas ce fichier, la validation ne s’exécute pas. Pour en savoir plus sur la configuration d’un fichier azcopy.config, voir [ Gestion des référentiels de contenu volumineux - Configurer un fichier azcopy.config ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
 La validation d’un transfert de contenu est une fonctionnalité facultative. L’activation de cette fonctionnalité augmentera le temps nécessaire à l’exécution d’une extraction et d’une ingestion. Pour utiliser cette fonctionnalité, activez-la dans la console système de l’environnement d’AEM source en procédant comme suit :
 
@@ -130,18 +130,18 @@ Migration validation took 0 minutes
 
 L’exemple d’échec ci-dessus a été réalisé en exécutant une ingestion, puis en exécutant à nouveau la même ingestion avec l’option Effacer désactivée, de sorte qu’aucun nœud n’était impliqué pendant l’ingestion – les éléments étaient déjà présents sur la cible.
 
-En plus d’être inclus dans le journal d’ingestion, le rapport de validation est également accessible à partir de l’interface utilisateur des **Tâches d’ingestion** de Cloud Acceleration Manager. Pour ce faire, cliquez sur les trois petits points (**...**), puis cliquez sur **Rapport de validation** dans la liste déroulante pour afficher le rapport de validation.
+En plus d’être inclus dans le journal d’ingestion, le rapport de validation est également accessible à partir de l’interface utilisateur des **Tâches d’ingestion** de Cloud Acceleration Manager. Pour ce faire, cliquez sur les trois petits points (**...**)  cliquez ensuite sur **Rapport de validation** dans la liste déroulante pour afficher le rapport de validation.
 
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
 
 ## Comment valider la migration des entités principales {#how-to-validate-group-migration}
 
-Consultez [&#x200B; Migration de groupe &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) pour lire les détails de la migration principale et sa raison d’être.
+Consultez [ Migration de groupe ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) pour lire les détails de la migration principale et sa raison d’être.
 
 Une fois l’extraction et l’ingestion terminées, un résumé et un rapport de la migration des entités principales sont disponibles. Ces informations peuvent être utilisées pour valider les groupes qui ont été migrés avec succès et, peut-être, pour déterminer pourquoi certains ne l’ont pas été.
 
-Pour afficher ces informations, accédez à Cloud Acceleration Manager. Cliquez sur votre carte de projet puis sur la carte de transfert de contenu. Accédez à **Tâches d’ingestion** et localisez l’ingestion que vous souhaitez vérifier. Cliquez sur les trois points (**...**) de cette ingestion, puis cliquez sur **Afficher le résumé principal** dans la liste déroulante.
+Pour afficher ces informations, accédez à Cloud Acceleration Manager. Cliquez sur votre carte de projet puis sur la carte de transfert de contenu. Accédez à **Tâches d’ingestion** et localisez l’ingestion que vous souhaitez vérifier. Cliquez sur les trois petits points (**...**) pour cette ingestion, puis cliquez sur **Afficher le résumé principal** dans la liste déroulante.
 
 ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
@@ -157,11 +157,11 @@ Le rapport de migration principale indique :
    * C&#39;est un groupe intégré
    * Il est déjà sur le système cible
    * Il ne se trouve pas dans une politique ACL ou CUG sur le contenu en cours de migration
-   * Il comporte un champ unique en double (l’un des champs rep:principalName, rep:authorizableId, jcr:uuid ou rep:externalId se trouve déjà sur la destination, mais tous doivent être uniques).
+   * Il comporte un champ unique en double (un de rep:principalName, rep:authorizableId :uuid, jcr ou rep:externalId est déjà sur la destination, mais tous doivent être uniques).
 
 ## Résolution des problèmes {#troubleshooting}
 
-### Échec de la validation. Et maintenant ?  {#validation-fail}
+### Échec de la validation. Et maintenant ? {#validation-fail}
 
 La première étape consiste à déterminer si l’ingestion a vraiment échoué ou si le contenu extrait est déjà présent dans l’environnement cible. Cela peut se produire si une ingestion est répétée avec l’option **Effacer le contenu existant sur l’instance Cloud avant l’ingestion** désactivée.
 
@@ -175,4 +175,4 @@ Les chemins que nous excluons actuellement des résumés sont les suivants : le
 
 ### Groupes d’utilisateurs et d’utilisatrices fermés {#validating-cugs}
 
-Consultez [&#x200B; Migration de groupes d’utilisateurs fermés &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) pour plus d’informations lors de l’utilisation d’une politique de groupe d’utilisateurs fermé (CUG).
+Consultez [ Migration de groupes d’utilisateurs fermés ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) pour plus d’informations lors de l’utilisation d’une politique de groupe d’utilisateurs fermé (CUG).

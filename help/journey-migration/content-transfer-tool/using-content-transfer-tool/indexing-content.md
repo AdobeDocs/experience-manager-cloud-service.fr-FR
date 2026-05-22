@@ -22,7 +22,7 @@ ht-degree: 9%
 
 Une fois que le Cloud Acceleration Manager a terminé l’ingestion de contenu dans votre instance Cloud Service, il est prêt à être utilisé. Au départ, le contenu n’est pas indexé, ce qui entraîne probablement un environnement instable où des problèmes tels que du contenu ne pouvant pas faire l’objet de recherches et une dégradation des performances sont attendus. Pour des performances optimales sur l’instance, le processus de migration démarrera automatiquement l’indexation du contenu. Il n’y a rien à faire, sauf surveiller la progression de l’indexation.
 
-> Pour plus d’informations sur le démarrage d’une ingestion, voir [&#x200B; Ingestion de contenu dans Cloud Service](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md).
+> Pour plus d’informations sur le démarrage d’une ingestion, voir [ Ingestion de contenu dans Cloud Service](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md).
 
 Les étapes suivantes indiquent le flux général attendu dans l’interface utilisateur lors de l’indexation. Certains libellés fournissent un contexte utile dans les infobulles. Veillez donc à pointer sur les éléments pour en savoir plus sur le statut d’indexation actuel.
 
@@ -55,7 +55,7 @@ L’indexation de l’instance Cloud Service de destination réussira probableme
 
 >[!TIP]
 >
-> Si la tâche d’indexation semble s’exécuter trop longtemps, assurez-vous qu’une Liste autorisée IP n’a pas été appliquée[&#128279;](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) via Cloud Manager car elle empêche Cloud Acceleration Manager d’accéder au service de migration.
+> Si la tâche d’indexation semble s’exécuter trop longtemps, assurez-vous qu’une Liste autorisée IP n’a pas été appliquée](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) via Cloud Manager car elle empêche Cloud Acceleration Manager d’accéder au service de migration.[
 
 ![image](/help/journey-migration/content-transfer-tool/assets-indexing/failed.png)
 

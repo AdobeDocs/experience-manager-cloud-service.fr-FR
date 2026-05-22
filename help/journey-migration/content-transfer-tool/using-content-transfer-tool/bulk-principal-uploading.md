@@ -79,7 +79,7 @@ Pour utiliser la fonctionnalité de chargement de groupe en bloc d’Admin Conso
 
 ## Chargement et modification d’utilisateurs en bloc {#bulk-user}
 
-Admin Console comprend deux actions distinctes pour le chargement et la modification des détails de l’utilisateur. Les instructions ci-dessous concernent l’ajout de nouveaux utilisateurs à IMS. Les instructions de modification des utilisateurs IMS existants se trouvent dans la section suivante appelée [&#x200B; Modification d’utilisateurs en bloc &#x200B;](#user-edit).
+Admin Console comprend deux actions distinctes pour le chargement et la modification des détails de l’utilisateur. Les instructions ci-dessous concernent l’ajout de nouveaux utilisateurs à IMS. Les instructions de modification des utilisateurs IMS existants se trouvent dans la section suivante appelée [ Modification d’utilisateurs en bloc ](#user-edit).
 
 ### Chargement utilisateur en bloc {#user-upload}
 
@@ -97,7 +97,7 @@ Pour utiliser la fonctionnalité de téléchargement massif d’utilisateurs d�
    1. Dans la boîte de dialogue qui s’affiche, sélectionnez **Fichier utilisateur en bloc** dans la liste déroulante sous **Télécharger un fichier...** et cliquez sur le bouton **Télécharger**.
    1. Enregistrer le fichier CSV obtenu
 1. Modifier le fichier d’utilisateur en bloc
-   * Chaque ligne représente un utilisateur à charger, et comporte quinze champs (les noms des champs constituent la première ligne du fichier). Certains champs sont facultatifs et ne sont pas décrits ici. Pour plus d&#39;informations, consultez la section [Format CSV utilisateur en bloc](https://helpx.adobe.com/fr/enterprise/using/bulk-upload-users.html#csv-format).  Les champs sont les suivants :
+   * Chaque ligne représente un utilisateur à charger, et comporte quinze champs (les noms des champs constituent la première ligne du fichier). Certains champs sont facultatifs et ne sont pas décrits ici. Pour plus d&#39;informations, consultez la section [Format CSV utilisateur en bloc](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format).  Les champs sont les suivants :
 
       * _Type d’identité_ - Facultatif.  Si elle n’est pas spécifiée, elle est créée en tant qu’Adobe ID
       * _Nom d’utilisateur_ - Facultatif et non utilisé pour les chargements Adobe ID
@@ -108,14 +108,14 @@ Pour utiliser la fonctionnalité de téléchargement massif d’utilisateurs d�
       * _Code pays_ - Facultatif et non utilisé pour les chargements Adobe ID
       * _ID_ - Facultatif et non utilisé pour les chargements Adobe ID
       * _Configurations du produit_ - Facultatif. Ce champ sera également hérité de tous les groupes dont l’utilisateur est membre
-      * _Rôles d’administration_ - Facultatif. Utilisez ce champ si l’utilisateur est administrateur. Voir [Format CSV d’utilisateur en bloc](https://helpx.adobe.com/fr/enterprise/using/bulk-upload-users.html#csv-format) pour plus d’informations
-      * _Configurations de produit administrées_ - Facultatif.  Voir [Format CSV d’utilisateur en bloc](https://helpx.adobe.com/fr/enterprise/using/bulk-upload-users.html#csv-format) pour plus d’informations. Ce champ sera également hérité de tous les groupes dont l’utilisateur est membre
+      * _Rôles d’administration_ - Facultatif. Utilisez ce champ si l’utilisateur est administrateur. Voir [Format CSV d’utilisateur en bloc](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) pour plus d’informations
+      * _Configurations de produit administrées_ - Facultatif.  Voir [Format CSV d’utilisateur en bloc](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) pour plus d’informations. Ce champ sera également hérité de tous les groupes dont l’utilisateur est membre
       * _User Groups_ - Facultatif. Liste des groupes auxquels l’utilisateur doit être affecté en tant que membre. Chaque groupe doit être un groupe IMS existant. Lorsque le fichier d’utilisateur en bloc est téléchargé à partir de CAM, ce champ est prérempli avec des noms de groupe activé pour IMS dont l’utilisateur était membre (directement ou indirectement) avant la migration
-      * _Groupes d’utilisateurs administrés_ - Facultatif.  Voir [Format CSV d’utilisateur en bloc](https://helpx.adobe.com/fr/enterprise/using/bulk-upload-users.html#csv-format) pour plus d’informations. Ce champ sera également hérité de tous les groupes dont l’utilisateur est membre
-      * _Produits administrés_ - facultatif.  Voir [Format CSV d’utilisateur en bloc](https://helpx.adobe.com/fr/enterprise/using/bulk-upload-users.html#csv-format) pour plus d’informations. Ce champ sera également hérité de tous les groupes dont l’utilisateur est membre
-      * _Contrats administrés_ - Facultatif.  Voir [Format CSV d’utilisateur en bloc](https://helpx.adobe.com/fr/enterprise/using/bulk-upload-users.html#csv-format) pour plus d’informations
-      * _Accès développeur_ - Facultatif.  Voir [Format CSV d’utilisateur en bloc](https://helpx.adobe.com/fr/enterprise/using/bulk-upload-users.html#csv-format) pour plus d’informations
-      * _Produits affectés automatiquement_ - Facultatif.  Voir [Format CSV d’utilisateur en bloc](https://helpx.adobe.com/fr/enterprise/using/bulk-upload-users.html#csv-format) pour plus d’informations
+      * _Groupes d’utilisateurs administrés_ - Facultatif.  Voir [Format CSV d’utilisateur en bloc](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) pour plus d’informations. Ce champ sera également hérité de tous les groupes dont l’utilisateur est membre
+      * _Produits administrés_ - facultatif.  Voir [Format CSV d’utilisateur en bloc](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) pour plus d’informations. Ce champ sera également hérité de tous les groupes dont l’utilisateur est membre
+      * _Contrats administrés_ - Facultatif.  Voir [Format CSV d’utilisateur en bloc](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) pour plus d’informations
+      * _Accès développeur_ - Facultatif.  Voir [Format CSV d’utilisateur en bloc](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) pour plus d’informations
+      * _Produits affectés automatiquement_ - Facultatif.  Voir [Format CSV d’utilisateur en bloc](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) pour plus d’informations
 
    * Lors de la modification du fichier CSV, certaines applications peuvent ajouter des guillemets supplémentaires lors de l’enregistrement, ce qui entraîne l’échec du traitement. Il est recommandé d’inspecter le fichier CSV brut dans un simple éditeur de texte pour s’assurer que chaque champ ne comporte qu’un guillemet ouvrant et un guillemet fermant (et il ne doit pas s’agir de « guillemets intelligents »)
 
