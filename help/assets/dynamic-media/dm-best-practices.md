@@ -12,8 +12,8 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Asse
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '4054'
-ht-degree: 0%
+source-wordcount: '4847'
+ht-degree: 2%
 
 ---
 
@@ -49,7 +49,7 @@ Voici quelques-uns des principes clés de Dynamic Media :
 * **Bibliothèque de visionneuses Experience Manager :** personnalisez et marquez les visionneuses d’expériences pour les images et les vidéos. Ces visionneuses s’intègrent de manière transparente à vos expériences digitales.
 * **Prise en charge des formats émergents :** Dynamic Media permet de diffuser des expériences 3D et panoramiques.
 
-À mesure que vous explorez le Parcours Dynamic Media[, une révision de la liste consolidée des bonnes pratiques ci-dessous peut vous aider à tirer le meilleur parti de ses fonctionnalités. &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1) Adaptez ces bonnes pratiques Dynamic Media à votre contexte et aux exigences de votre projet spécifiques afin d’optimiser vos expériences sur l’ensemble des canaux et appareils.
+À mesure que vous explorez le Parcours Dynamic Media](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1), une révision de la liste consolidée des bonnes pratiques ci-dessous peut vous aider à tirer le meilleur parti de ses fonctionnalités. [Adaptez ces bonnes pratiques Dynamic Media à votre contexte et aux exigences de votre projet spécifiques afin d’optimiser vos expériences sur l’ensemble des canaux et appareils.
 
 <!-- In Dynamic Media on AEM, there are sets of methods, techniques, and guidelines that can help you maximize the potential of your rich media content. These best practices can lead to optimal results and increase efficiency in your use of Dynamic Media. They represent the most efficient and effective courses of action in a particular situation. They also unlock high value for your audience and deliver high-quality, engaging content. -->
 
@@ -85,11 +85,11 @@ En suivant ces bonnes pratiques, vous pouvez obtenir une intégration transparen
 Assurez-vous que toutes les ressources de la visionneuse sont synchronisées avec Dynamic Media avant d’utiliser le lecteur.
 
    * Accédez à la page du gestionnaire d’échantillons à l’adresse `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`. Cette page vous permet de resynchroniser les ressources d’une visionneuse, y compris les icônes prêtes à l’emploi, les fichiers CSS et les paramètres prédéfinis.
-   * Si vous rencontrez des problèmes avec les visionneuses, consultez l’article [&#x200B; Dépannage des visionneuses Dynamic Media &#x200B;](/help/assets/dynamic-media/troubleshoot-dm.md#viewers).
+   * Si vous rencontrez des problèmes avec les visionneuses, consultez l’article [ Dépannage des visionneuses Dynamic Media ](/help/assets/dynamic-media/troubleshoot-dm.md#viewers).
 
 * **Publier Assets :**
 Assurez-vous que les ressources sont publiées avant de les afficher dans les visionneuses de diffusion.
-* **La Lecture Automatique Des Vidéos Est Désactivée :**
+* **La lecture automatique des vidéos est désactivée :**
 Pour la fonctionnalité de lecture automatique dans les vidéos, utilisez les paramètres vidéo en mode silencieux, car les navigateurs limitent la lecture des vidéos avec le volume.
 * **Recadrage intelligent :**
 Utilisez le composant Image v3 pour le recadrage intelligent afin d’améliorer la présentation des ressources d’image.
@@ -97,9 +97,9 @@ Utilisez le composant Image v3 pour le recadrage intelligent afin d’améliorer
 Incluez uniquement le fichier JavaScript de la visionneuse principale sur votre page. Évitez de référencer d’autres fichiers JavaScript que la logique d’exécution de la visionneuse peut télécharger. Plus précisément, ne liez pas directement à la bibliothèque de `Utils.js` SDK HTML5 à partir du chemin de contexte `/s7viewers` (connu sous le nom d’inclusion SDK consolidée). La logique de la visionneuse gère l’emplacement des bibliothèques de visionneuse d’exécution `Utils.js` ou similaires, qui peuvent changer entre les versions. Adobe ne conserve pas les anciennes versions des inclusions de visionneuse secondaire sur le serveur. Par conséquent, le fait de les référencer directement peut interrompre la fonctionnalité de la visionneuse dans les futures mises à jour.
 * **Instructions d’incorporation :**
 Utilisez la documentation pour obtenir des instructions d’intégration spécifiques à chaque visionneuse.
-Vous souhaitez en savoir plus ? Accédez à [Visionneuses pour AEM Assets](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers).
+Vous souhaitez en savoir plus ? Accédez à [Visionneuses pour AEM Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers).
 * **Tutoriel et exemples SDK :**
-Consultez le [Tutoriel sur la visionneuse SDK](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/library/c-tutorial) et [les exemples d’applications HTML5 SDK](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) pour une compréhension approfondie des API des composants SDK.
+Consultez le [Tutoriel sur la visionneuse SDK](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) et [les exemples d’applications HTML5 SDK](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) pour une compréhension approfondie des API des composants SDK.
 
 
 ## Préparation des ressources pour la diffusion
@@ -115,7 +115,7 @@ L’organisation efficace des ressources implique de les classer dans des dossie
 Vous souhaitez en savoir plus ? Accédez à [Organisation des ressources dans des dossiers](/help/assets/organize-assets.md#organize-using-folders).
 * **Organisation des ressources à l’aide de balises :**
 Le balisage des ressources améliore la recherche, la création de collections et le classement des recherches. Adobe AI utilise un algorithme d’auto-apprentissage pour le balisage précis, ce qui permet de récupérer rapidement les ressources. Adobe AI reconnaît également les ressources et leur attribue des balises pertinentes, y compris des balises personnalisées, ce qui simplifie la gestion des ressources à l’aide du balisage descriptif automatique.
-Vous souhaitez en savoir plus ? Accédez à [&#x200B; Organisation des ressources à l’aide de balises &#x200B;](/help/assets/organize-assets.md#use-tags-to-organize-assets).
+Vous souhaitez en savoir plus ? Accédez à [ Organisation des ressources à l’aide de balises ](/help/assets/organize-assets.md#use-tags-to-organize-assets).
 * **Organisation des ressources sous forme de collections :**
 Dynamic Media et Experience Manager Assets permettent la création, la modification et le partage efficaces de collections de ressources entre les utilisateurs. Vous pouvez établir différents types de collections, notamment des listes statiques et des compilations dynamiques basées sur des recherches. Ces types de collections peuvent être partagés à différents emplacements avec des droits d’accès et de modification personnalisables.
 Vous souhaitez en savoir plus ? Accédez à [Organisation des ressources sous forme de collections](/help/assets/manage-collections.md).
@@ -189,7 +189,7 @@ Vous souhaitez en savoir plus ? Accédez à [Imagerie dynamique](/help/assets/dy
 
 N’oubliez pas que ces bonnes pratiques s’alignent parfaitement sur les bonnes pratiques d’optimisation du moteur de recherche des images Google. Ces pratiques soulignent l’importance de fournir du contexte et de la clarté aux moteurs de recherche par le biais de conventions de nommage appropriées, de données structurées et d’une diffusion d’images optimisée.
 
-Vous souhaitez en savoir plus ? Accédez à [&#x200B; Bonnes pratiques relatives à la structure d’URL pour Google &#x200B;](https://developers.google.com/search/docs/crawling-indexing/url-structure) et [Bonnes pratiques d’optimisation du moteur de recherche d’image Google](https://developers.google.com/search/docs/appearance/google-images)
+Vous souhaitez en savoir plus ? Accédez à [ Bonnes pratiques relatives à la structure d’URL pour Google ](https://developers.google.com/search/docs/crawling-indexing/url-structure) et [Bonnes pratiques d’optimisation du moteur de recherche d’image Google](https://developers.google.com/search/docs/appearance/google-images)
 
 ### Amélioration dynamique des images et création d’effets visuels à l’aide de commandes
 
@@ -201,19 +201,19 @@ Dynamic Media propose une suite de commandes pour améliorer les images et crée
 
 | Tâche | Que faire |
 | --- | --- |
-| **Chargez et publiez votre image d’origine** | <ul><li> Commencez par charger l’image d’origine dans Dynamic Media.</li><li> Assurez-vous qu’il est publié et accessible par le biais d’une URL.</li><li> Dans cet exemple, une image animée d’une montre avec un arrière-plan blanc (appelons-la « Image X ») est chargée dans Dynamic Media.<br>[&#128279;](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer)</li></ul> |
-| **Créer un masque** | <ul><li> Développez un masque qui définit le sujet (la zone où vous souhaitez appliquer des effets) et l&#39;arrière-plan (la zone à modifier).<br>[&#128279;](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps)</li><li> Les masques sont généralement des images en niveaux de gris, où le blanc représente le sujet et le noir représente l’arrière-plan. Vous pouvez créer des masques à l’aide d’outils comme Adobe Photoshop.<br>Vous souhaitez en savoir plus ? Accédez à [&#x200B; Création et modification d’un masque rapide dans Photoshop &#x200B;](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html).</li><li> Pour « Image X », créez un masque qui décrit précisément le sujet que vous souhaitez améliorer. Par exemple, une personne, un objet, etc.</li></ul> |
-| **Application de commandes URL Dynamic Media pour les effets** | Une fois que vous disposez de votre masque, utilisez les commandes d’URL pour appliquer des effets tels qu’une lueur extérieure ou modifiez la couleur d’arrière-plan en « Image X ». Voici deux exemples :<ul><li> **Effet de lueur extérieure :**<br> pour ajouter un effet de lueur extérieure le long de la limite de l’objet, modifiez l’URL comme suit :<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25)<br>Dans cette URL, les paramètres `op_blur`, `op_grow` et `opac` créent l’effet de lueur extérieure.</li><li> **Modification de la couleur d’arrière-plan :**<br> Pour modifier la couleur d’arrière-plan, utilisez l’URL avec une valeur de couleur d’arrière-plan différente :<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&maskUse=invert&color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&maskUse=invert&color=255,255,0)<br> Dans cet exemple, `color=255,255,0` définit la couleur d’arrière-plan sur jaune. Modifiez l’arrière-plan avec une couleur spécifique pour l’impact visuel.</li></ul> |
+| **Chargez et publiez votre image d’origine** | <ul><li> Commencez par charger l’image d’origine dans Dynamic Media.</li><li> Assurez-vous qu’il est publié et accessible par le biais d’une URL.</li><li> Dans cet exemple, une image animée d’une montre avec un arrière-plan blanc (appelons-la « Image X ») est téléchargée sur Dynamic Media.<br>[](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer)</li></ul> |
+| **Créer un masque** | <ul><li> Développez un masque qui définit le sujet (la zone où vous souhaitez appliquer des effets) et l&#39;arrière-plan (la zone à modifier).<br>[](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps)</li><li> Les masques sont généralement des images en niveaux de gris, où le blanc représente le sujet et le noir représente l’arrière-plan. Vous pouvez créer des masques à l’aide d’outils tels qu’Adobe Photoshop.<br>Vous souhaitez en savoir plus ? Accédez à [ Création et modification d’un masque rapide dans Photoshop ](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html).</li><li> Pour « Image X », créez un masque qui décrit précisément le sujet que vous souhaitez améliorer. Par exemple, une personne, un objet, etc.</li></ul> |
+| **Application de commandes URL Dynamic Media pour les effets** | Une fois que vous disposez de votre masque, utilisez les commandes d’URL pour appliquer des effets tels qu’une lueur extérieure ou modifiez la couleur d’arrière-plan en « Image X ». Voici deux exemples :<ul><li> **Effet de lueur extérieure :**<br> pour ajouter un effet de lueur extérieure le long de la limite de l’objet, modifiez l’URL comme suit :<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25)<br>Dans cette URL, les paramètres `op_blur`, `op_grow` et `opac` créent l’effet de lueur extérieure.</li><li> **Modification de la couleur d’arrière-plan :**<br> Pour modifier la couleur d’arrière-plan, utilisez l’URL avec une valeur de couleur d’arrière-plan différente :<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&maskUse=invert&color=255,255,0)<br> Dans cet exemple, `color=255,255,0` définit la couleur d’arrière-plan sur jaune. Modifiez l’arrière-plan avec une couleur spécifique pour l’impact visuel.</li></ul> |
 
 #### Ajout d’une bordure d’image
 
-Dynamic Media vous permet de manipuler des images directement par le biais d’URL. Il s’agit ainsi d’un outil puissant pour créer des expériences digitales dynamiques. Voici quelques exemples. Commençons par l’URL de l’image d’origine suivante : [&#128279;](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel).
+Dynamic Media vous permet de manipuler des images directement par le biais d’URL. Il s’agit ainsi d’un outil puissant pour créer des expériences digitales dynamiques. Voici quelques exemples. Commençons par l’URL de l’image d’origine suivante : [](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel).
 
 | Tâche | Que faire |
 | --- | --- |
-| **Bordure blanche** | Pour ajouter une bordure blanche, utilisez l’URL suivante :<br>[&#128279;](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10)<br>Dans cette URL, le paramètre `extend=10,10,10,10` spécifie la taille de la bordure de dix pixels sur tous les côtés. |
-| **Flou le long de la bordure blanche** | Pour ajouter un effet de flou le long de la bordure blanche, vous pouvez modifier l’URL comme suit :<br>[&#128279;](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&op_blur=60&color=0,0,0)<br>Dans cette URL, le paramètre `effect=-1` applique l’effet de flou et contrôle `op_blur=60` l’intensité du flou. |
-| **Effet Ombre portée le long de la limite extérieure** | Pour ajouter un effet d&#39;ombre portée le long de la limite extérieure, utilisez cette URL :<br>[&#128279;](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&$shadow$&color=0,0,0)<br>Le paramètre `$shadow$` crée l&#39;effet d&#39;ombre et `color=0,0,0` définit la couleur d&#39;ombre sur le noir. |
+| **Bordure blanche** | Pour ajouter une bordure blanche, utilisez l’URL suivante :<br>[](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10)<br>Dans cette URL, le paramètre `extend=10,10,10,10` spécifie la taille de la bordure de dix pixels sur tous les côtés. |
+| **Flou le long de la bordure blanche** | Pour ajouter un effet de flou le long de la bordure blanche, vous pouvez modifier l’URL comme suit :<br>[](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&op_blur=60&color=0,0,0)<br>Dans cette URL, le paramètre `effect=-1` applique l’effet de flou et contrôle `op_blur=60` l’intensité du flou. |
+| **Effet Ombre portée le long de la limite extérieure** | Pour ajouter un effet d&#39;ombre portée le long de la limite extérieure, utilisez cette URL :<br>[](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&$shadow$&color=0,0,0)<br>Le paramètre `$shadow$` crée l&#39;effet d&#39;ombre et `color=0,0,0` définit la couleur d&#39;ombre sur le noir. |
 
 N’hésitez pas à tester ces URL pour obtenir les effets visuels souhaités.
 
@@ -225,9 +225,9 @@ Si vous souhaitez superposer un logo ou une icône sur une image existante, Dyna
 | --- | --- |
 | **Charger et publier l’image de base** | Tout d’abord, chargez et publiez l’image de base sur laquelle vous souhaitez superposer le logo ou l’icône. Vous pouvez utiliser n’importe quelle image comme base.<br>Par exemple, voici une image de base :<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa). |
 | **Charger et publier le logo ou l’image de l’icône** | Ensuite, chargez et publiez l’image à superposer sur l’image de base. Cette image doit être un fichier PNG transparent avec le logo ou l’icône à superposer.<br>Voici l’image PNG transparente d’un objet étoile avec des effets de transparence qui va être superposée :<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
-| **Application de l’URL Dynamic Media** | Créez à présent une URL Dynamic Media qui combine l’image de base et le logo ou l’image d’icône. Vous pouvez utiliser des commandes d’URL pour obtenir cet effet.<br>La structure de l’URL ressemble à ce qui suit :<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png)<br>où la ressource<ul><li> `hotspotRetailBaseImage` est l’image de base.</li><li> `starxp` est l’image du logo/de l’icône.</li><li> `layer=1` indique que le logo ou l’icône doit être superposé sur l’image de base.</li><li> `scale=1.25` ajuste la taille du logo/de l’icône.</li><li> `posN=0.33,-.25` détermine la position du logo/de l’icône par rapport à l’image de base.</li><li> `fmt=png` garantit que la sortie est au format PNG.</li></ul> |
+| **Application de l’URL Dynamic Media** | Créez à présent une URL Dynamic Media qui combine l’image de base et le logo ou l’image d’icône. Vous pouvez utiliser des commandes d’URL pour obtenir cet effet.<br>La structure de l’URL ressemble à ce qui suit :<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png)<br>où la ressource<ul><li> `hotspotRetailBaseImage` est l’image de base.</li><li> `starxp` est l’image du logo/de l’icône.</li><li> `layer=1` indique que le logo ou l’icône doit être superposé sur l’image de base.</li><li> `scale=1.25` ajuste la taille du logo/de l’icône.</li><li> `posN=0.33,-.25` détermine la position du logo/de l’icône par rapport à l’image de base.</li><li> `fmt=png` garantit que la sortie est au format PNG.</li></ul> |
 
-Que savoir de plus ? Accédez à [src](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) pour plus d’informations sur la commande `src` et d’autres commandes d’URL Dynamic Media.
+Que savoir de plus ? Accédez à [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) pour plus d’informations sur la commande `src` et d’autres commandes d’URL Dynamic Media.
 
 
 #### Recouvrement de texte promotionnel
@@ -236,8 +236,8 @@ Vous trouverez ci-dessous la procédure à suivre pour superposer un message tex
 
 | Étape | Que faire |
 | --- | --- |
-| **Charger et publier l’image de base** | Tout d’abord, chargez et publiez l’image de base sur laquelle vous souhaitez superposer le texte. Vous pouvez utiliser n’importe quelle image de votre choix. Par exemple, voici un exemple d’image de base :<br>[&#128279;](https://s7g2.scene7.com/is/image/genaibeta/leather-sofa)<br> |
-| **Application d’opérateurs de texte Dynamic Media** | Avec Dynamic Media, vous pouvez appliquer des opérateurs de texte pour superposer du texte dynamique directement sur l’image. L’exemple d’URL suivant illustre cette fonctionnalité :<br>[https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&posN=-0.3,-0.455&text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial;%7d%7d%7b\colortbl+\red255\green255\blue255;%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF3333&amp;wid=600&amp;hei=600](https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&posN=-0.3,-0.455&text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial;%7d%7d%7b\colortbl+\red255\green255\blue255;%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&size=370,70&textAttr=130&bgcolor=FF3333&wid=600&hei=600) |
+| **Charger et publier l’image de base** | Tout d’abord, chargez et publiez l’image de base sur laquelle vous souhaitez superposer le texte. Vous pouvez utiliser n’importe quelle image de votre choix. Par exemple, voici un exemple d’image de base :<br>[](https://s7g2.scene7.com/is/image/genaibeta/leather-sofa)<br> |
+| **Application d’opérateurs de texte Dynamic Media** | Avec Dynamic Media, vous pouvez appliquer des opérateurs de texte pour superposer du texte dynamique directement sur l’image. L’exemple d’URL suivant illustre cette fonctionnalité :<br>[https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&amp;posN=-0.3,-0.455&amp;text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial;%7d%7d%7b\colortbl+\red255\green255\blue255;%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF3333&amp;wid=600&amp;hei=600](https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&posN=-0.3,-0.455&text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial;%7d%7d%7b\colortbl+\red255\green255\blue255;%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&size=370,70&textAttr=130&bgcolor=FF3333&wid=600&hei=600) |
 
 #### Redimensionnement et recadrage pour divers cas d’utilisation
 
@@ -256,7 +256,7 @@ Le redimensionnement peut avoir un impact sur la qualité de l’image. Évitez 
 
 Le recadrage et le redimensionnement sont des techniques de Dynamic Media qui vous permettent de transformer des images en fonction de divers cas d’utilisation, que ce soit pour créer des miniatures, des images d’affichage de produit ou des bannières.
 
-* **Recadrage:**
+* **Recadrage :**
 Supprime une partie d’une image pour modifier sa composition et son encadrement. Il ne modifie pas les dimensions globales, mais se concentre sur un domaine spécifique.
 * **Redimensionnement :**
 Ajuste les dimensions, la résolution et la taille de fichier de l’image entière tout en conservant les proportions.
@@ -264,22 +264,22 @@ Ajuste les dimensions, la résolution et la taille de fichier de l’image enti�
 Explorons un cas d’utilisation qui implique l’image de salon suivante :
 
 * **Image originale du salon :**
-  [&#128279;](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa)
+  [](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa)
 * **Miniature (200 px x 200 px) :**
 Une version plus petite adaptée au chargement ou à l’affichage rapide.
-  [&#128279;](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&hei=200&fit=crop)
+  [](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&hei=200&fit=crop)
 * **Miniature avec recadrage (200 px x 200 px) :**
 Recadré pour se concentrer sur la zone du canapé.
-  [&#128279;](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&hei=200&cropN=.24,.24,.6,.72&fit=crop)
+  [](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&hei=200&cropN=.24,.24,.6,.72&fit=crop)
 * **Image d’affichage du produit (800 px x 600 px) :**
 Recadré et redimensionné pour mettre en valeur le canapé.
-  [&#128279;](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=800&hei=600&cropN=.24,.24,.6,.72&fit=crop)
+  [](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=800&hei=600&cropN=.24,.24,.6,.72&fit=crop)
 * **Bannière (1 720 px x 820 px) :**
 Dérivé de l&#39;image originale, soulignant la pièce.
-  [&#128279;](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&hei=820&cropN=0,.1,1,1&fit=crop)
+  [](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&hei=820&cropN=0,.1,1,1&fit=crop)
 
 N’hésitez pas à explorer ces variations en fonction de vos besoins spécifiques.
-Vous souhaitez en savoir plus sur les commandes disponibles dans une URL ? Accédez à [&#x200B; Référence des commandes &#x200B;](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference).
+Vous souhaitez en savoir plus sur les commandes disponibles dans une URL ? Accédez à [ Référence des commandes ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference).
 
 ### Diffusion d’images GIF
 
@@ -315,7 +315,7 @@ Attribuez le profil vidéo choisi aux dossiers dans lesquels votre vidéo va êt
 Chargez le fichier vidéo d’origine. Assurez-vous qu’il s’agit d’une vidéo haute résolution de bonne qualité. Plus la vidéo source est bonne, meilleur est le résultat final.
 * **Prévisualisation et publication :**
 Prévisualisez la vidéo pour vous assurer que tout se présente comme prévu. Une fois satisfait, procédez à la publication. Cette étape rend la vidéo accessible à votre audience.
-* **Lien ou incorporation :**
+* **Lier ou incorporer :**
 Après la publication, vous disposez de deux options.
 
    * **Lien direct :**
@@ -323,7 +323,7 @@ Utilisez l’URL fournie pour créer un lien direct vers la vidéo. Créez des l
    * **Incorporer la vidéo :**
 Copiez le code incorporé fourni et collez-le dans l’HTML de votre page web où vous souhaitez que la vidéo apparaisse. Cela permet à la vidéo d’être lue directement sur votre site.
 
-Vous souhaitez en savoir plus ? Accédez à [&#x200B; Vidéo &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video).
+Vous souhaitez en savoir plus ? Accédez à [ Vidéo ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video).
 
 ### Configurer des vidéos pour une qualité et un engagement optimaux
 
@@ -331,12 +331,12 @@ Vous souhaitez en savoir plus ? Accédez à [&#x200B; Vidéo &#x200B;](https://e
 
 Pour garantir une qualité optimale et un engagement optimal de vos vidéos, pensez à mettre en œuvre une combinaison des bonnes pratiques suivantes :
 
-* **Utilisation de la visionneuse de vidéos HTML5 intégrée :**
+* **Utilisez la visionneuse de vidéos HTML5 intégrée :**
 Les paramètres prédéfinis de la visionneuse de vidéos HTML5 Dynamic Media sont des lecteurs vidéo fiables. Utilisez-les pour éviter les problèmes courants associés à la lecture vidéo HTML5 et aux appareils mobiles.
 Ces paramètres prédéfinis relèvent des défis tels que la diffusion en continu à débit adaptatif et la portée limitée du navigateur de bureau.
 Vous souhaitez en savoir plus ? Accédez à [Bonne pratique : utilisation de la visionneuse de vidéos HTML 5](/help/assets/dynamic-media/video.md#best-practice-using-the-html-video-viewer).
 
-* **Utiliser des profils vidéo Dynamic Media :**
+* **Utilisation de profils vidéo Dynamic Media :**
 Les profils vidéo de Dynamic Media permettent une gestion vidéo efficace, une qualité cohérente et une diffusion en continu adaptative.
 Vous souhaitez en savoir plus ? Accédez à [Profils vidéo Dynamic Media](/help/assets/dynamic-media/video-profiles.md).
 
@@ -400,7 +400,7 @@ Pour garantir le meilleur format optimisé pour le web, vous pouvez faire confia
 
 Grâce à l’imagerie dynamique, vous pouvez vous assurer que vos images sont diffusées de la manière la plus efficace possible, en les adaptant à l’environnement de navigation de chaque utilisateur. Cette approche simplifie le processus et peut améliorer les performances en termes de temps de chargement des images et d’expérience utilisateur globale.
 
-Vous souhaitez en savoir plus ? Accédez à [&#x200B; Imagerie dynamique &#x200B;](/help/assets/dynamic-media/imaging-faq.md).
+Vous souhaitez en savoir plus ? Accédez à [ Imagerie dynamique ](/help/assets/dynamic-media/imaging-faq.md).
 
 ### Publier la diffusion des ressources auprès des clients
 

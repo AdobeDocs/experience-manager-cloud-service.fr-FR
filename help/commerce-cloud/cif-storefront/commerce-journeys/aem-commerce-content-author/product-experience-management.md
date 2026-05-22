@@ -7,8 +7,8 @@ role: Admin
 index: false
 source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
-source-wordcount: '1157'
-ht-degree: 58%
+source-wordcount: '1170'
+ht-degree: 57%
 
 ---
 
@@ -119,4 +119,4 @@ Vous êtes maintenant prêt à gérer les expériences de produits à l’aide d
 
 * [Création d’expériences commerciales](/help/commerce-cloud/cif-storefront/authoring/authoring-commerce-experiences.md)
 * [Console du produit](/help/commerce-cloud/cif-storefront/authoring/product-cockpit.md)
-* [Composant de fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component)
+* [Composant Fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component)

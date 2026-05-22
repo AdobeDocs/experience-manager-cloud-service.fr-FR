@@ -8,8 +8,8 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms
 exl-id: a369b585-d148-4b5a-8afe-d5673ea865d0
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 10%
+source-wordcount: '1202'
+ht-degree: 13%
 
 ---
 
@@ -49,7 +49,7 @@ Le diagramme ci-dessous décrit les étapes de création d’une action d’envo
 
    **Où trouver ces informations ?**
 
-   Pour obtenir des instructions détaillées sur la localisation de ces détails, reportez-vous à l’article Adobe Experience League « [Accès à Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git) ».
+   Pour obtenir des instructions détaillées sur la localisation de ces détails, reportez-vous à l’article Adobe Experience League « [Accès à Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) ».
 
    **Votre projet est prêt !**
 
@@ -88,7 +88,7 @@ Le diagramme ci-dessous décrit les étapes de création d’une action d’envo
 1. Créez un fichier de configuration.
 Dans le dossier `customsubmitaction`, créez un fichier nommé `.content.xml`.
 
-   ![&#x200B; Créer un fichier de configuration &#x200B;](/help/forms/assets/custom-submit-action-create-config-folder.png)
+   ![ Créer un fichier de configuration ](/help/forms/assets/custom-submit-action-create-config-folder.png)
 
 1. Ouvrez ce fichier et collez le contenu suivant, en remplaçant `[customsubmitaction]` par le nom de votre action d’envoi
 
@@ -244,7 +244,7 @@ Dans le dossier `customsubmitaction`, créez un fichier nommé `.content.xml`.
    ![Modifier le formulaire](/help/forms/assets/custom-submit-action-edit-af.png)
 
 1. Ouvrez l’explorateur de contenu, puis sélectionnez le composant **[!UICONTROL Conteneur de guide]** de votre formulaire adaptatif.
-1. Cliquez sur l’icône des propriétés du conteneur de guide ![Propriétés du guide](/help/forms/assets/configure-icon.svg). La fenêtre du conteneur de formulaires adaptatifs s’ouvre.
+1. Cliquez sur l’icône des propriétés du conteneur de guide ![Propriétés du guide](/help/forms/assets/configure-icon.svg). La boîte de dialogue du conteneur de formulaires adaptatifs s’ouvre.
 1. Cliquez sur l’onglet **[!UICONTROL Envoi]**.
 1. Dans la liste déroulante **[!UICONTROL Action d’envoi]**, sélectionnez l’action d’envoi. Par exemple, sélectionnez l’action d’envoi comme `Custom Submit Action`.
 
@@ -256,12 +256,12 @@ Dans le dossier `customsubmitaction`, créez un fichier nommé `.content.xml`.
 
    ![Message de remerciement](/help/forms/assets/custom-submit-action-thankyou-msg.png)
 
-   Une fois le formulaire envoyé, vous pouvez vérifier la configuration de la console web de Adobe Experience Manager **&#x200B;**&#x200B;afin de vérifier l’action de l’action d’envoi personnalisée dans l’environnement de développement local.
+   Une fois le formulaire envoyé, vous pouvez vérifier la configuration de la console web de Adobe Experience Manager **** afin de vérifier l’action de l’action d’envoi personnalisée dans l’environnement de développement local.
 1. Accédez à `http://<host>:<port>/system/console/configMgr`.
 
-1. Accédez à la page Prise en charge du journal de la console web de Adobe Experience Manager **&#x200B;**&#x200B;à l’adresse `http://<host>:<port>/system/console/slinglog`.
+1. Accédez à la page Prise en charge du journal de la console web de Adobe Experience Manager **** à l’adresse `http://<host>:<port>/system/console/slinglog`.
 
-   ![ConfigMgr &#x200B;](/help/forms/assets/custom-submit-action-sling-log.png)
+   ![ConfigMgr ](/help/forms/assets/custom-submit-action-sling-log.png)
 
 1. Cliquez sur l’option `logs/error.log` .
    ![Ouvrez le fichier error.log](/help/forms/assets/custom-submit-action-error-log.png)

@@ -8,8 +8,8 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms
 exl-id: 111accf7-bf34-499c-832e-c001ea68f6d3
 source-git-commit: e69201c40b72f4eaabe3da634ecf05bd04769f6b
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 4%
+source-wordcount: '718'
+ht-degree: 6%
 
 ---
 
@@ -34,7 +34,7 @@ L’intégration de Forms adaptatif à Azure SQL présente plusieurs avantages :
 
 ## Conditions préalables
 
-* Créez la [base de données SQL &#x200B;](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&tabs=azure-portal) et assurez-vous que la **connexion proxy** est activée.
+* Créez la [base de données SQL ](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&tabs=azure-portal) et assurez-vous que la **connexion proxy** est activée.
 
   >[!NOTE]
   >
@@ -42,7 +42,7 @@ L’intégration de Forms adaptatif à Azure SQL présente plusieurs avantages :
 
   ![Créer Une Base De Données Azure](/help/forms/assets/create-azure-db.png)
 
-* Activez la [mise en réseau avancée configurée à l’aide d’une adresse IP de sortie dédiée](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) pour la base de données Azure créée.
+* Activez la [mise en réseau avancée configurée à l’aide d’une adresse IP de sortie dédiée](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) pour la base de données Azure créée.
 
   >[!NOTE]
   >
@@ -53,7 +53,7 @@ L’intégration de Forms adaptatif à Azure SQL présente plusieurs avantages :
 * Définissez le transfert de port dans l’environnement cloud avec :
    * **portOrigin** : entre `30000–30999`
    * **portDest** : `1433` (port par défaut pour Azure SQL)
-Par exemple : `portOrigin: 30433 → portDest: 1433`
+Par exemple : `portOrigin: 30433 → portDest: 1433`
 
      >[!NOTE]
      > 
@@ -74,7 +74,7 @@ Par exemple : `portOrigin: 30433 → portDest: 1433`
 
    **Où trouver ces informations ?**
 
-   Pour obtenir des instructions détaillées sur la localisation de ces détails, reportez-vous à l’article Adobe Experience League « [Accès à Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git) ».
+   Pour obtenir des instructions détaillées sur la localisation de ces détails, reportez-vous à l’article Adobe Experience League « [Accès à Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) ».
 
    Une fois la commande terminée, un nouveau dossier est créé dans votre répertoire local. Ce dossier porte le nom de votre application.
 
@@ -86,7 +86,7 @@ Incluez la dépendance [pilote SQL](https://central.sonatype.com/artifact/com.mi
 
 >[!NOTE]
 >
-> Pour inclure la dépendance SQL dans votre projet, reportez-vous à la section [Dépendances des pilotes SQL](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies).
+> Pour inclure la dépendance SQL dans votre projet, reportez-vous à la section [Dépendances des pilotes SQL](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies).
 
 **Étape 3 : ajouter une configuration JDBC**
 
@@ -133,7 +133,7 @@ git push
 
 **Étape 6 : déployer les modifications via le pipeline Cloud Manager**
 
-1. Connectez-vous à **&#x200B;**.
+1. Connectez-vous à ****.
 1. Accédez à votre projet et exécutez le pipeline pour déployer les modifications.
 
 **Étape 7 : créer un modèle de données de formulaire (FDM)**
@@ -152,7 +152,7 @@ Une fois la configuration d’AEM et d’Azure terminée et les modifications de
 
 1. Ouvrez un formulaire adaptatif en mode d’édition.
 1. Sélectionnez le FDM créé à l’étape précédente comme modèle de données.
-1. Utilisez des liaisons de données [&#x200B; pour connecter les champs de formulaire à la source de données SQL Azure](/help/forms/work-with-form-data-model.md#add-data-model-objects-and-services) et configurez l’action d’envoi.
+1. Utilisez des liaisons de données [ pour connecter les champs de formulaire à la source de données SQL Azure](/help/forms/work-with-form-data-model.md#add-data-model-objects-and-services) et configurez l’action d’envoi.
 
 ## Bonnes pratiques
 

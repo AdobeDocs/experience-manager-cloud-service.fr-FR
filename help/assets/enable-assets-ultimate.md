@@ -7,7 +7,7 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Asse
 exl-id: 45cd8ccd-e5cf-42cd-aa7f-4ae59d0587f7
 source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1408'
+source-wordcount: '1423'
 ht-degree: 3%
 
 ---
@@ -50,11 +50,11 @@ Votre instance AEM as a Cloud Service sur Admin Console comprend les profils de 
 
 * [Utilisateurs et utilisatrices experts AEM Assets](#onboard-power-users)
 
-  ![Profils de produit AEM Assets](assets/aem-assets-product-profiles.png)
+  ![Profils de produit ](assets/aem-assets-product-profiles.png)
 
 Si vous avez activé Content Hub pour Assets as a Cloud Service, une nouvelle instance est créée dans AEM Assets as a Cloud Service sur Admin Console avec `delivery` comme suffixe :
 
-![Nouvelle instance pour Content Hub &#x200B;](assets/new-instance-content-hub.png)
+![Nouvelle instance pour Content Hub ](assets/new-instance-content-hub.png)
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ Notez qu’il n’y a aucun `author` ni `publish` dans le nom de l’instance po
 
 Cliquez sur le nom de l’instance pour afficher le profil de produit Content Hub `AEM Assets Limited Users`.
 
-![Profil de produit Content Hub](assets/content-hub-product-profile.png)
+![Profil de produit ](assets/content-hub-product-profile.png)
 
 Vous pouvez commencer à ajouter des utilisateurs ou des groupes d’utilisateurs à ce profil de produit pour leur fournir l’accès à Content Hub.
 
@@ -94,7 +94,7 @@ Procédez comme suit :
 
 1. Cliquez sur **[!UICONTROL Ajouter des profils de produit]**. Cloud Manager affiche des options permettant d’ajouter de nouveaux profils de produit à tous les environnements disponibles dans le programme ou dans des environnements individuels.
 
-   ![options de mise à niveau d’AEM Assets](assets/aem-assets-upgrade-options.png)
+   ![options de mise à niveau d’](assets/aem-assets-upgrade-options.png)
 
 1. Cliquez sur **[!UICONTROL Tous les environnements]** pour ajouter les nouveaux profils de produit à tous les environnements du programme ou **[!UICONTROL Environnements individuels]** pour ajouter les nouveaux profils de produit à des environnements sélectionnés.
 
@@ -128,11 +128,11 @@ Votre instance AEM as a Cloud Service sur Admin Console comprend maintenant les 
 
 * [Utilisateurs et utilisatrices experts AEM Assets](#onboard-power-users)
 
-![Profils de produit AEM Assets](assets/aem-assets-product-profiles.png)
+![Profils de produit ](assets/aem-assets-product-profiles.png)
 
-Si Content Hub doit être activé, cliquez sur l’icône Autres options (...) sur le nom du programme dans Cloud Manager et sélectionnez **[!UICONTROL Modifier le programme]**. Développez **[!UICONTROL Assets Ultimate]** puis cliquez sur **[!UICONTROL Content Hub]**. Cette étape active Content Hub pour Assets Ultimate. Une nouvelle instance a été créée dans AEM Assets as a Cloud Service sur Admin Console avec `delivery` comme suffixe :
+Si Content Hub doit être activé, cliquez sur Autres options (...) sur le nom du programme dans Cloud Manager et sélectionnez **[!UICONTROL Modifier le programme]**. Développez **[!UICONTROL Assets Ultimate]** puis cliquez sur **[!UICONTROL Content Hub]**. Cette étape active Content Hub pour Assets Ultimate. Une nouvelle instance a été créée dans AEM Assets as a Cloud Service sur Admin Console avec `delivery` comme suffixe :
 
-![Nouvelle instance pour Content Hub &#x200B;](assets/new-instance-content-hub.png)
+![Nouvelle instance pour Content Hub ](assets/new-instance-content-hub.png)
 
 >[!NOTE]
 >
@@ -142,7 +142,7 @@ Notez qu’il n’y a aucun `author` ni `publish` dans le nom de l’instance po
 
 Cliquez sur le nom de l’instance pour afficher le profil de produit Content Hub `AEM Assets Limited Users`.
 
-![Profil de produit Content Hub](assets/content-hub-product-profile.png)
+![Profil de produit ](assets/content-hub-product-profile.png)
 
 Vous pouvez commencer à ajouter des utilisateurs ou des groupes d’utilisateurs à ce profil de produit pour leur fournir l’accès à Content Hub.
 
@@ -179,7 +179,7 @@ Les services `Adobe Express` et `AEM Assets Collaborator Users` sont activés pa
 
 ## Intégration d’AEM Assets Power users {#onboard-power-users}
 
-Les utilisateurs expérimentés d’AEM Assets peuvent accéder à toutes les fonctionnalités d’AEM Assets, notamment la gestion des ressources, les autorisations, les métadonnées, la gouvernance globale et l’automatisation autour des ressources numériques, travailler avec des ressources d’Experience Manager par le biais d’intégrations d’Assets disponibles pour votre entreprise dans d’autres applications Adobe et non Adobe, créer et modifier des ressources à l’aide d’Adobe Express et de Firefly intégrés à l’aide de modèles conçus par des professionnels, de kits de marque, de ressources Adobe Stock, etc., et accéder aux ressources approuvées de votre entreprise et les exploiter à l’aide du portail AEM Assets Content Hub.
+Les utilisateurs expérimentés d’AEM Assets peuvent accéder à toutes les fonctionnalités d’AEM Assets, notamment la gestion des ressources, les autorisations, les métadonnées, la gouvernance globale et l’automatisation autour des ressources numériques, travailler avec des ressources d’Experience Manager par le biais d’intégrations d’Assets disponibles pour votre entreprise dans d’autres applications Adobe et non Adobe, créer et modifier des ressources à l’aide d’Adobe Express et de Firefly intégrés à l’aide de modèles conçus par des professionnels, de kits de marque, de ressources Adobe Stock, etc., et accéder aux ressources approuvées de votre entreprise et les exploiter à l’aide du portail AEM Assets.
 
 Pour intégrer des utilisateurs expérimentés :
 

@@ -6,15 +6,15 @@ role: User
 level: Intermediate
 exl-id: cacd7b0a-aad0-4b5d-a6a0-e4bac4cb196d
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
-source-wordcount: '1139'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1167'
+ht-degree: 95%
 
 ---
 
 # Configurer des messages de remerciement et des URL de redirection
 
-Les expériences post-envoi ont un impact significatif sur la satisfaction des utilisateurs et utilisatrices et les taux de remplissage des formulaires. L’éditeur universel d’Adobe fournit des options complètes pour configurer ce que les utilisateurs et utilisatrices voient après l’envoi des formulaires, que ce soit par le biais de messages de remerciement personnalisés ou de redirections stratégiques vers des pages spécifiques.
+Les expériences post-envoi ont un impact significatif sur la satisfaction des utilisateurs et utilisatrices et les taux d’achèvement des formulaires. L’éditeur universel d’Adobe fournit des options complètes pour configurer ce que les utilisateurs et utilisatrices voient après l’envoi des formulaires, que ce soit par le biais de messages de remerciement personnalisés ou de redirections stratégiques vers des pages spécifiques.
 
 Cet article fournit des instructions détaillées sur l’implémentation des messages de remerciement et des URL de redirection, y compris des considérations techniques, des bonnes pratiques et des directives d’expérience clientèle pour maximiser l’efficacité de vos envois de formulaire.
 
@@ -82,7 +82,7 @@ Dans le champ **Contenu du message**, rédigez votre message de remerciement à 
 
 - Les messages s’affichent dans un recouvrement modal immédiatement après l’envoi du formulaire.
 - Le contenu prend en charge la mise en forme HTML et conserve une conception réactive.
-- Les messages peuvent être ignorés par les utilisateurs et les utilisatrices ou configurés avec des minuteries de fermeture automatique.
+- Les messages peuvent être ignorés par les utilisateurs et les utilisatrices ou configurés avec des retardateurs de fermeture automatique.
 
 **Instructions sur le contenu :**
 
@@ -93,16 +93,16 @@ Dans le champ **Contenu du message**, rédigez votre message de remerciement à 
 
 ### Exemple de mise en œuvre
 
-    Merci pour votre envoi.
+    Merci pour votre demande !
     
-    Votre demande a été reçue et le numéro de référence qui vous a été attribué est #REF-2024-001234.
+    Votre demande a été reçue et le numéro de référence vous a été attribué #REF-2024-001234.
     
-    **Prochaines étapes :**
-    - Vous recevrez un e-mail de confirmation dans 15 minutes.
-    - Notre équipe examinera votre demande sous 2 jours ouvrables.
-    - Nous vous contacterons directement en cas de besoin d’informations supplémentaires.
+    **Que se passe-t-il ensuite :**
+    - Vous recevrez un e-mail de confirmation dans les 15 minutes
+    - Notre équipe examinera votre demande dans les 2 jours ouvrables
+    - Nous vous contacterons directement si des informations supplémentaires sont nécessaires
     
-    **Besoin d’aide ?** Contactez notre équipe d’assistance à l’adresse support@example.com.
+    **Besoin d’aide?** Contactez notre équipe de support à support@example.com
 
 ## Configurer des URL de redirection
 
@@ -252,7 +252,7 @@ Après avoir configuré votre expérience post-envoi :
 
 Après avoir configuré votre expérience post-envoi :
 
-- **Surveiller les performances** : consultez les analyses pour comprendre l’interaction des utilisateurs et utilisatrices avec les messages de remerciement ou les pages de redirection.
+- **Surveiller les performances** : consultez les analyses pour comprendre l’engagement client envers les messages de remerciement ou les pages de redirection.
 - **Itérer et améliorer** : utilisez les commentaires des utilisateurs et utilisatrices et les informations sur les données pour affiner votre stratégie post-envoi.
 - **Mettre à l’échelle l’implémentation** : appliquez des modèles éprouvés à d’autres formulaires de votre entreprise.
 

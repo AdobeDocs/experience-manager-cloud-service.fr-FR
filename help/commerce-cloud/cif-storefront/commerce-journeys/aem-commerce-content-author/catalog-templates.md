@@ -7,7 +7,7 @@ role: Admin
 index: false
 source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '723'
 ht-degree: 60%
 
 ---
@@ -95,7 +95,7 @@ Ajoutez une image en haut de la page.
 
 Vous pouvez prévisualiser le modèle avec n’importe quelle catégorie/produit. Ouvrez **Informations sur la page** puis sélectionnez **Afficher avec la catégorie/le produit**. Sélectionnez le produit/la catégorie dans le sélecteur pour obtenir un aperçu de ce produit/cette catégorie. Sélectionnez la catégorie **Shop The Look** pour obtenir un aperçu du modèle mis à jour.
 
-![créer un modèle &#x200B;](assets/create-template-picker.png)
+![créer un modèle ](assets/create-template-picker.png)
 
 Vous devez maintenant affecter ce modèle à la catégorie spécifique. Ouvrez les propriétés dans le menu **Informations sur la page** et passez à l’onglet commerce. Cliquez sur l’icône de dossier pour sélectionner la catégorie **Shop The Look** dans le sélecteur de catégorie. Il est possible d’affecter plusieurs catégories à un modèle et d’inclure également des sous-catégories en activant la case à cocher.
 

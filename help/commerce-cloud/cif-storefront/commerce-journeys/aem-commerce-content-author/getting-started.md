@@ -7,7 +7,7 @@ role: Admin
 index: false
 source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '791'
 ht-degree: 42%
 
 ---
@@ -121,6 +121,6 @@ Tirez parti de ces connaissances et poursuivez votre parcours en consultant le d
 
 ## Ressources supplémentaires {#additional-resources}
 
-Bien qu’il soit recommandé de passer à la partie suivante du parcours - [&#x200B; Gérer les pages et les modèles de catalogue de produits &#x200B;](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/catalog-templates.md) - vous trouverez ci-après quelques ressources facultatives pour approfondir un certain nombre de concepts mentionnés ici. Toutefois, ces ressources facultatives ne sont pas nécessaires pour continuer sur le parcours.
+Bien qu’il soit recommandé de passer à la partie suivante du parcours - [ Gérer les pages et les modèles de catalogue de produits ](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/catalog-templates.md) - vous trouverez ci-après quelques ressources facultatives pour approfondir un certain nombre de concepts mentionnés ici. Toutefois, ces ressources facultatives ne sont pas nécessaires pour continuer sur le parcours.
 
 * [Configuration des magasins et des catalogues](/help/commerce-cloud/cif-storefront/getting-started.md#catalog)
