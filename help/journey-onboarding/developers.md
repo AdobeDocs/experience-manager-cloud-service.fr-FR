@@ -5,8 +5,8 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1397'
+workflow-type: tm+mt
+source-wordcount: '1447'
 ht-degree: 100%
 
 ---
@@ -22,7 +22,7 @@ Vous avez déjà fait du chemin dans votre parcours d’intégration ! Félicit
 
 À ce stade, vos développeurs et responsables de déploiement peuvent commencer à créer vos propres applications, tandis que vos utilisateurs AEM peuvent commencer à créer du contenu. En ce sens, votre intégration est terminée et il est maintenant temps d’utiliser votre nouveau système AEM as a Cloud Service, comme le montre ce document.
 
-## Public {#audience}
+## Audience {#audience}
 
 Le présent document est donc rédigé du point de vue du **développeur** et du **responsable de déploiement**.
 
@@ -149,7 +149,7 @@ Vous trouverez ci-dessous des ressources facultatives supplémentaires si vous s
 * [Accéder aux référentiels](/help/implementing/cloud-manager/managing-code/accessing-repos.md) : découvrez comment accéder à votre référentiel Git et comment le gérer à l’aide de la gestion de compte Git en libre-service à partir de Cloud Manager.
 * [Utiliser Git avec Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) : découvrez comment utiliser les référentiels Git de Cloud Manager et comment intégrer votre propre référentiel Git On-premise géré par le client avec Cloud Manager.
 * [Configuration de l’environnement de développement local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=fr) : ce tutoriel vous guide tout au long de la configuration d’un environnement de développement local pour Adobe Experience Manager (AEM) à l’aide du SDK d’AEM as a Cloud Service.
-* [Prise en main d’AEM Sites - Tutoriel WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr) : ce tutoriel en plusieurs parties est conçu pour les développeurs qui découvrent Adobe Experience Manager (AEM). Ce tutoriel décrit l’implémentation d’un site AEM pour une marque de style de vie fictive, WKND. Le tutoriel aborde des sujets fondamentaux tels que la configuration de projet, les composants principaux, les modèles modifiables, les bibliothèques côté client et le développement de composants avec Adobe Experience Manager Sites.
+* [Prise en main d’AEM Sites - Tutoriel WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr) : ce tutoriel en plusieurs parties est conçu pour les développeurs qui découvrent Adobe Experience Manager (AEM). Ce tutoriel décrit l’implémentation d’un site AEM pour une marque de style de vie fictive, WKND. Le tutoriel aborde des sujets fondamentaux tels que la configuration de projet, les composants principaux, les modèles modifiables, les bibliothèques côté client et le développement de composants avec Adobe Experience Manager Sites.
 * [Prise en main des SPA dans AEM à l’aide de React](/help/implementing/developing/hybrid/getting-started-react.md) : cet article présente un exemple d’application SPA, en explique la structure et vous permet de prendre rapidement en main votre propre SPA à l’aide du framework React.
 * [Prise en main des SPA dans AEM à l’aide d’Angular](/help/implementing/developing/hybrid/getting-started-angular.md) : cet article présente un exemple d’application SPA, en explique la structure et vous permet de prendre rapidement en main votre propre SPA à l’aide du framework Angular.
 * [Parcours de développement découplé](/help/journey-headless/developer/overview.md) : démarrez ici un cours guidé sur le développement d’applications découplées avec AEM.

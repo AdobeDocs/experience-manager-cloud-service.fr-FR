@@ -7,7 +7,7 @@ feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 858a9c4b61fd3a80a257313e48816b067ca77175
 workflow-type: tm+mt
-source-wordcount: '1362'
+source-wordcount: '1411'
 ht-degree: 93%
 
 ---
@@ -21,7 +21,7 @@ Félicitations pour avoir choisi AEM as a Cloud Service. Ce document constitue l
 
 Adobe Experience Manager (AEM) offre une certaine flexibilité sur les approches de diffusion et de création de contenu, ce qui permet aux équipes de choisir le modèle le mieux adapté à leurs besoins.
 
-Utilisez [Edge Delivery Services](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/overview) pour une création rapide et itérative et une vitesse de contenu élevée, ou utilisez le service de diffusion de Publication traditionnel pour un modèle de publication d’entreprise robuste. Les deux approches permettent aux entreprises de fournir des expériences digitales exceptionnelles de la manière qui leur convient le mieux. Pour commencer à utiliser Edge Delivery Services, consultez la [Présentation de Edge Delivery Services](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/overview) et pour en savoir plus sur les options de création modernes, consultez le [Guide de création](https://www.aem.live/docs/authoring-guide).
+Utilisez [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/overview) pour une création rapide et itérative et une vitesse de contenu élevée, ou utilisez le service de diffusion de Publication traditionnel pour un modèle de publication d’entreprise robuste. Les deux approches permettent aux entreprises de fournir des expériences digitales exceptionnelles de la manière qui leur convient le mieux. Pour commencer à utiliser Edge Delivery Services, consultez la [Présentation de Edge Delivery Services](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/overview) et pour en savoir plus sur les options de création modernes, consultez le [Guide de création](https://www.aem.live/docs/authoring-guide).
 
 L’intégration est le processus au cours duquel un la personne chargée de l’administration système désignée configure AEM as a Cloud Service pour votre organisation. Ce processus inclut l’approvisionnement initial des ressources cloud et l’affectation des utilisateurs et utilisatrices à des rôles en fonction de leurs responsabilités professionnelles. Par conséquent, chaque membre peut se connecter et accéder à ses ressources sur AEM as a Cloud Service.
 

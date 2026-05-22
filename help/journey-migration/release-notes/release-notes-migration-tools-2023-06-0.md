@@ -6,8 +6,8 @@ exl-id: 021b7472-d1e4-4ef6-a040-c612fed8d3c3
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 84%
+source-wordcount: '251'
+ht-degree: 86%
 
 ---
 
@@ -27,4 +27,4 @@ La date de publication de l’outil de transfert de contenu version v2.0.20 est
 Les avantages du Transformateur de contenu sont les suivants :
    * Sûr : un package est créé par le Transformateur de contenu chaque fois qu’il apporte une modification au référentiel pour résoudre les problèmes. Si nécessaire, vous pouvez revenir à l’état précédent en installant le package.
    * Facile à utiliser : le Transformateur de contenu a été intégré à l’outil de transfert de contenu et s’accompagne d’une interface utilisateur simple et intuitive.
-   * Gagne du temps : lorsque vous rencontrez un grand nombre de problèmes de contenu qui relèvent d’une catégorie de modèle, vous pouvez tous les résoudre en plusieurs clics à l’aide du transformateur de contenu, ce qui réduit considérablement le temps et la complexité de la migration.
+   * Gain de temps : lorsqu’un grand nombre de problèmes de contenu relèvent d’une catégorie de modèle, vous pouvez les résoudre en plusieurs clics à l’aide du transformateur de contenu, ce qui réduit considérablement le temps et la complexité de la migration.

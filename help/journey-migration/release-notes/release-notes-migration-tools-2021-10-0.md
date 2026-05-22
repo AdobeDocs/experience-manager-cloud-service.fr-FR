@@ -6,8 +6,8 @@ exl-id: 6b1caa63-dcb0-4c48-ab2c-fd72617abf13
 role: Admin
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 94%
+source-wordcount: '455'
+ht-degree: 81%
 
 ---
 
@@ -27,7 +27,7 @@ La date de publication de Cloud Acceleration Manager est le 25 octobre 2021.
 
 ### Nouveautés {#what-is-new-cam}
 
-Cloud Acceleration Manager permet désormais aux utilisateurs de visualiser les rapports historiques BPA dans un rapport de tendance. Grâce à ce rapport, les utilisateurs peuvent visualiser les progrès quʼils réalisent sous la forme dʼune représentation graphique facile à utiliser. Consultez la section [Utilisation de lʼoption Afficher la courbe de tendance](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=fr#trendline-view-cam) pour plus d’informations.
+Cloud Acceleration Manager permet désormais aux utilisateurs et utilisatrices de visualiser les rapports BPA historiques dans un rapport de tendance. Grâce à ce rapport, les utilisateurs peuvent visualiser les progrès quʼils réalisent sous la forme dʼune représentation graphique facile à utiliser. Consultez la section [Utilisation de lʼoption Afficher la courbe de tendance](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=fr#trendline-view-cam) pour plus d’informations.
 
 ### Date de publication {#release-date-october-cam}
 
@@ -51,7 +51,7 @@ La date de publication de l’outil de transfert de contenu version v1.6.0 est 
    * Ignorer les erreurs de manière appropriée et poursuivre l’activité de mappage des utilisateurs
    * Le mappage des utilisateurs n’échoue plus si le **Jeton d’accès** expire après 24 heures. Le mappage des utilisateurs et des utilisatrices peut être exécuté à nouveau à partir de l’endroit où il s’est arrêté pour la dernière fois.
 
-* Pour plus de robustesse de l’outil de transfert de contenu, le contenu ne peut être ingéré que sur l’instance d’auteur ou sur l’instance de publication au même moment. Consultez [Prise en main de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr) pour plus d’informations.
+* Pour plus de robustesse de l’outil de transfert de contenu, le contenu ne peut être ingéré que sur l’instance de création ou sur l’instance de publication au même moment. Consultez [Prise en main de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr) pour plus d’informations.
 
 * Lorsque différentes versions sont incluses, le chemin d’accès `/var/audit` est automatiquement inclus pour migrer les événements de contrôle.
 

@@ -5,8 +5,8 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1130'
+workflow-type: tm+mt
+source-wordcount: '1136'
 ht-degree: 100%
 
 ---
@@ -20,7 +20,7 @@ Découvrez comment créer des profils d’utilisateurs dans l’Admin Console po
 
 De temps à autre, Adobe doit contacter les utilisateurs et utilisatrices au sujet des environnements AEM as a Cloud Service. En plus des notifications dans le produit, Adobe utilise parfois également les notifications par e-mail. Il existe deux types de notification par e-mail :
 
-* **Notification d’incident** : ces notifications sont envoyées lors d’un incident ou lorsqu’Adobe identifie un problème de disponibilité potentiel avec votre environnement AEM as a Cloud Service.
+* **Notification d’incident** : ces notifications sont envoyées lors d’un incident ou quand Adobe identifie un problème de disponibilité potentiel avec votre environnement AEM as a Cloud Service.
 * **Notification proactive** : ces notifications sont envoyées lorsqu’un membre de l’équipe d’assistance Adobe souhaite fournir des conseils sur une optimisation potentielle ou une recommandation susceptible de bénéficier à votre environnement AEM as a Cloud Service.
 
 Les utilisateurs et utilisatrices peuvent également recevoir ces notifications pour des programmes spécifiques en fonction de leurs [autorisations de groupe personnalisées](/help/implementing/cloud-manager/custom-permissions.md).
@@ -36,7 +36,7 @@ Pour que les utilisateurs ou les utilisatrices appropriés puissent recevoir ces
 
 Les profils d’utilisateurs sont créés et gérés dans l’Admin Console. Aussi, avant de créer des profils pour les notifications, vous devez :
 
-* Disposer des autorisations nécessaires pour ajouter et modifier les appartenances aux profils.
+* Disposer des autorisations nécessaires pour ajouter et modifier les abonnements à un profil.
 * Disposer d’un profil Adobe Admin Console valide.
 
 ## Créer des profils de produits Cloud Manager {#create-profiles}
@@ -63,7 +63,7 @@ Pour configurer correctement la réception des notifications, créez deux profil
 
    * **Nom du profil de produit** : `Incident Notification - Cloud Service`.
    * **Nom d’affichage** : `Incident Notification - Cloud Service`
-   * **Description** : profil Cloud Manager des utilisateurs et utilisatrices qui recevront des notifications lors d’un incident ou lorsqu’Adobe identifie un problème de disponibilité potentiel avec l’environnement AEM as a Cloud Service.
+   * **Description** : profil Cloud Manager des utilisateurs et utilisatrices qui recevront des notifications lors d’un incident ou quand Adobe identifie un problème de disponibilité potentiel avec l’environnement AEM as a Cloud Service.
       * Les utilisateurs et utilisatrices disposant d’autorisations en lecture personnalisées sur des programmes spécifiques recevront des notifications uniquement pour ces programmes si des autorisations personnalisées sont utilisées.
 
 1. Cliquez sur **Enregistrer**.

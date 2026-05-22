@@ -6,7 +6,7 @@ exl-id: 1aa49e85-1914-44d9-bcf7-0a1b03926df0
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '425'
 ht-degree: 100%
 
 ---
@@ -42,7 +42,7 @@ La date de publication de l’outil de transfert de contenu version v2.0.10 est
 ### Nouveautés {#what-is-new-ctt}
 
 * L’outil de transfert de contenu (CTT) a été développé pour travailler avec Cloud Acceleration Manager afin de rationaliser l’ensemble du processus de transfert de contenu. Le CTT se concentre désormais sur l’exécution d’extractions de contenu. Le service d’ingestion CTT est désormais intégré à Cloud Acceleration Manager. Les avantages offerts par cette évolution sont les suivants :
-   * Une méthode en libre-service pour extraire une fois un jeu de migration et l’ingérer dans plusieurs environnements en parallèle
+   * Une méthode en libre-service pour extraire une fois un ensemble de migration et l’ingérer dans plusieurs environnements en parallèle
    * L’amélioration de l’expérience utilisateur grâce à une meilleure gestion des statuts de chargement, des barrières de sécurité et des erreurs
    * La conservation des journaux d’ingestion et leur constante disponibilité à des fins de dépannage
 
