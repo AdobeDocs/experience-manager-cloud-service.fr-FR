@@ -19,7 +19,7 @@ AEM fournit un connecteur intégré pour [Microsoft Translator](https://www.mic
 
 >[!TIP]
 >
->Si vous êtes un débutant dans la traduction de contenu, consultez Parcours de traduction de sites](/help/journey-sites/translation/overview.md), qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide d’outils de traduction puissants d’AEM, idéaux pour ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.[
+>Si vous êtes un débutant dans la traduction de contenu, consultez Parcours de traduction de sites[&#128279;](/help/journey-sites/translation/overview.md), qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide d’outils de traduction puissants d’AEM, idéaux pour ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
 
 | Propriété | Description |
 |---|---|

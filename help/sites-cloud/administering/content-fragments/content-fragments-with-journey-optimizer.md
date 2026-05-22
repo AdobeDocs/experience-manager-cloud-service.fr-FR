@@ -15,11 +15,11 @@ ht-degree: 12%
 
 # Fragments de contenu avec Adobe Journey Optimizer {#content-fragments-with-journey-optimizer}
 
-[](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/get-started) vous aide à proposer des expériences connectées, contextuelles et personnalisées à vos clients. En intégrant Adobe Experience Manager (AEM) as a Cloud Service à Adobe Journey Optimizer (AJO), vous pouvez réutiliser du contenu AEM dans vos canaux entrants AJO et vos canaux sortants AJO, notamment le web, les SMS, les e-mails, etc.
+[&#128279;](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/get-started) vous aide à proposer des expériences connectées, contextuelles et personnalisées à vos clients. En intégrant Adobe Experience Manager (AEM) as a Cloud Service à Adobe Journey Optimizer (AJO), vous pouvez réutiliser du contenu AEM dans vos canaux entrants AJO et vos canaux sortants AJO, notamment le web, les SMS, les e-mails, etc.
 
 Par exemple, vous pouvez effectuer les actions suivantes :
 
-* incorporez facilement vos [fragments de contenu ](/help/sites-cloud/administering/content-fragments/overview.md) dans votre [e-mail Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/email-landing-page) contenu
+* incorporez facilement vos [fragments de contenu &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md) dans votre [e-mail Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/email-landing-page) contenu
 * prévisualisez l’expérience AJO directement depuis AEM
 
 La connexion entre les fragments de contenu et AJO simplifie le processus d’accès au contenu AEM et d’utilisation de celui-ci, ce qui permet la création de campagnes et de parcours personnalisés et dynamiques.
@@ -46,4 +46,4 @@ Pour permettre à AJO d’accéder aux fragments de contenu d’AEM par le biais
 
 Pour plus d’informations, consultez :
 
-* Extension [Références externes ](/help/sites-cloud/administering/content-fragments/extension-content-fragment-ajo-external-references.md)
+* Extension [Références externes &#x200B;](/help/sites-cloud/administering/content-fragments/extension-content-fragment-ajo-external-references.md)

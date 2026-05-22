@@ -40,7 +40,7 @@ Pour ajouter Screens en tant que module complémentaire à un programme existant
 
 1. L’onglet **Solutions et modules complémentaires** affiche des options, telles que Sites, Ressources et Screens. Sélectionnez l’option de module complémentaire **Screens**, comme illustré dans l’image ci-dessous.
 
-   ![Option de module complémentaire ](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
+   ![Option de module complémentaire &#x200B;](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
 
 1. Cliquez sur **Mettre à jour** une fois que vous avez sélectionné vos options.
 

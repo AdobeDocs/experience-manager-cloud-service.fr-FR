@@ -33,7 +33,7 @@ Par exemple, pour utiliser l’extension avec AJO :
 >
 >Voir aussi [Intégration d’](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/integrations/aem-fragments).
 
-1. Ouvrez la [ Console Fragments de contenu ](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
+1. Ouvrez la [&#x200B; Console Fragments de contenu &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
 
 1. Accédez à votre fragment de contenu : fragment qui a été créé et utilisé sur différents canaux AJO.
 
@@ -41,7 +41,7 @@ Par exemple, pour utiliser l’extension avec AJO :
 
 1. L’extension Références externes AJO est disponible sous la forme d’un onglet dans le panneau de droite. Sélectionnez l’onglet pour ouvrir l’extension :
 
-   ![Extension Références externes ](/help/sites-cloud/administering/content-fragments/assets/cf-ajo-fragment-external-references-extension.png)
+   ![Extension Références externes &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-ajo-fragment-external-references-extension.png)
 
    Une fois qu’un type de référence est sélectionné, l’extension affiche les références externes correspondantes sous la forme d’un tableau avec les colonnes :
 

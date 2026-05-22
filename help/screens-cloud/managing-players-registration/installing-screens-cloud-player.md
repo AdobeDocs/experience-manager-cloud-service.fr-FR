@@ -35,13 +35,13 @@ Pour mettre à jour votre lecteur, procédez comme suit :
 
 1. Cliquez sur l’onglet **Configuration**, puis sur le bouton **Aux paramètres d’usine** sous l’option **Réinitialiser**.
 
-   ![Bouton En usine sous l’option Réinitialiser ](/help/screens-cloud/assets/player/installplayer-2.png)
+   ![Bouton En usine sous l’option Réinitialiser &#x200B;](/help/screens-cloud/assets/player/installplayer-2.png)
 
 1. Cliquez sur **Confirmer** pour réinitialiser votre lecteur.
 
 1. Toujours à partir de l’onglet **Configuration**, cliquez sur le bouton **Passer en mode cloud** sous l’option **Activer le mode d’exécution**.
 
-   ![ Bouton Passer en mode cloud sous l’option Activer/désactiver le mode d’exécution ](/help/screens-cloud/assets/player/installplayer-1.png)
+   ![&#x200B; Bouton Passer en mode cloud sous l’option Activer/désactiver le mode d’exécution &#x200B;](/help/screens-cloud/assets/player/installplayer-1.png)
 
 1. Le fait de cliquer sur **Confirmer** qui s’affiche lorsque vous passez en mode cloud annule l’enregistrement du lecteur.
 

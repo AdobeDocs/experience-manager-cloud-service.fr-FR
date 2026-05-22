@@ -39,7 +39,7 @@ Pour ajouter Screens en tant que module complémentaire à un nouveau programme 
 
    ![Image](/help/screens-cloud/assets/onboarding/onboard-screens-addon2.png)
 
-1. Sélectionnez **** en tant que module complémentaire dans l’écran **Configurer pour production** à partir de cette étape de l’assistant, puis cliquez sur **Créer**.
+1. Sélectionnez **&#x200B;**&#x200B;en tant que module complémentaire dans l’écran **Configurer pour production** à partir de cette étape de l’assistant, puis cliquez sur **Créer**.
 
    ![Image](/help/screens-cloud/assets/onboarding/onboard-screens-addon3.png)
 
