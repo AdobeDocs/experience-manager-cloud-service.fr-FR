@@ -21,7 +21,7 @@ Vous pouvez lire la documentation détaillée des différentes fonctionnalités 
 
 >[!NOTE]
 >
->Voir aussi [Qu’est-ce que le mode découplé ](/help/headless/what-is-headless.md) pour une présentation des concepts et de la terminologie Headless.
+>Voir aussi [Qu’est-ce que le mode découplé &#x200B;](/help/headless/what-is-headless.md) pour une présentation des concepts et de la terminologie Headless.
 
 ## Vue d’ensemble {#overview}
 

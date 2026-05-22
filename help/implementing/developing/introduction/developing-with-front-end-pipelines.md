@@ -21,7 +21,7 @@ Le [pipeline front-end](/help/implementing/cloud-manager/configuring-pipelines/i
 
 >[!TIP]
 >
->Si vous ne connaissez pas encore l’utilisation du pipeline front-end et ses avantages, consultez le guide Parcours de création rapide de site](/help/journey-sites/quick-site/overview.md). [Il fournit un exemple de déploiement rapide d’un nouveau site et de personnalisation de son thème indépendamment du développement back-end.
+>Si vous ne connaissez pas encore l’utilisation du pipeline front-end et ses avantages, consultez le guide Parcours de création rapide de site[&#128279;](/help/journey-sites/quick-site/overview.md). Il fournit un exemple de déploiement rapide d’un nouveau site et de personnalisation de son thème indépendamment du développement back-end.
 
 ## Comprendre la configuration du pipeline front-end et le processus de création dans AEM Cloud Manager {#front-end-build-contract}
 
@@ -97,7 +97,7 @@ Les étapes suivantes sont généralement recommandées lorsque vous apportez de
 
 * Adobe fournit un Créateur de thèmes de site AEM sous la forme d’un ensemble de scripts permettant de créer des thèmes de site.
 
-  Voir [Créateur de thèmes de site ](https://github.com/adobe/aem-site-theme-builder)
+  Voir [Créateur de thèmes de site &#x200B;](https://github.com/adobe/aem-site-theme-builder)
 
 
 

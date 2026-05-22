@@ -331,7 +331,7 @@ Pour déployer le thème dans votre environnement Cloud Service à l’aide du p
 
 ##### 5.1 Création d’un référentiel pour le thème
 
-Vous avez besoin d’un référentiel pour déployer le thème. Connectez-vous à votre référentiel [](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) et ajoutez un nouveau référentiel pour votre thème.
+Vous avez besoin d’un référentiel pour déployer le thème. Connectez-vous à votre référentiel [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) et ajoutez un nouveau référentiel pour votre thème.
 
 1. Créez un référentiel pour un thème en cliquant sur le **[!UICONTROL Référentiels]** > **[!UICONTROL Ajouter un référentiel]**.
 

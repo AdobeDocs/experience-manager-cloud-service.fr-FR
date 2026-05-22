@@ -46,7 +46,7 @@ Pour utiliser l’outil de copie de contenu, certaines autorisations sont requis
 | Créer et modifier des [jeux de contenu](#create-content-set) | Non requis | Nécessaires |
 | Démarrer ou annuler le [processus de copie de contenu](#copy-content) | Requis | Requis |
 
-Pour plus d&#39;informations sur les autorisations et leur définition, voir [Profils d&#39;équipe et de produit ](/help/onboarding/aem-cs-team-product-profiles.md).
+Pour plus d&#39;informations sur les autorisations et leur définition, voir [Profils d&#39;équipe et de produit &#x200B;](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ## Créer un ensemble de contenu {#create-content-set}
 
@@ -221,4 +221,4 @@ L’outil de copie de contenu présente les limites suivantes.
 * L’outil de copie de contenu ne dispose d’aucune fonctionnalité de contrôle de version et ne peut pas détecter automatiquement le contenu modifié ou créé dans l’environnement source dans un jeu de contenu depuis la dernière opération de copie de contenu.
    * Si vous souhaitez mettre à jour votre environnement de destination avec des modifications de contenu depuis la dernière opération de copie de contenu uniquement, vous devez créer un jeu de contenu. Ensuite, spécifiez les chemins d’accès sur l’instance source où des modifications ont été apportées depuis la dernière opération de copie de contenu.
 * Les informations de version ne sont pas incluses dans une copie de contenu.
-* Les [ Modèles de fragments de contenu ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) peuvent spécifier des champs de référence en fonction d’identifiants universels uniques (UUID). Ces UUID étant spécifiques au référentiel, l’outil de copie de contenu recalcule ces UUID dans l’environnement cible lors de la copie de fragments de contenu.
+* Les [&#x200B; Modèles de fragments de contenu &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) peuvent spécifier des champs de référence en fonction d’identifiants universels uniques (UUID). Ces UUID étant spécifiques au référentiel, l’outil de copie de contenu recalcule ces UUID dans l’environnement cible lors de la copie de fragments de contenu.
