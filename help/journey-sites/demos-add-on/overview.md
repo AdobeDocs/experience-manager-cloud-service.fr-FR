@@ -6,7 +6,7 @@ feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '861'
 ht-degree: 100%
 
 ---
@@ -34,7 +34,7 @@ Les parcours de documentation sont conçus autour des principes de bonne pratiqu
 
 Si vous souhaitez savoir la manière dont Adobe recommande de résoudre des problèmes d’activité liés aux sites grâce à AEM, les parcours AEM Sites représentent un parfait point de départ.
 
-## Public {#audience}
+## Audience {#audience}
 
 Ce parcours décrit les exigences, les étapes et l’approche pour créer un programme et configurer une sandbox AEM avec le module complémentaire de démonstration de référence d’AEM, comprenant notamment le contenu de démonstration de Sites et/ou de Screens. Son audience principale est l’**administration système** qui se voit attribuer le rôle de **Propriétaire de l’entreprise** dans Cloud Manager. La personne propriétaire de l’entreprise est généralement la même personne qui est responsable de la gestion de l’environnement. Cependant, une fois le module complémentaire de démonstration de référence installé, l’administration peut accorder à d’autres personnes utilisatrices l’accès à l’environnement AEM afin de tester les fonctionnalités activées par le module complémentaire.
 

@@ -6,7 +6,7 @@ feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 9f237747f19ee537fbc51f39e935472c6a023328
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1201'
 ht-degree: 55%
 
 ---
@@ -40,9 +40,9 @@ Il existe trois types d’Adobe ID :
 
 * **Personal ID** : type par défaut d’Adobe ID, qui est créé sur adobe.com. Géré par Adobe et accessible à tous.
 
-* **&#x200B;**&#x200B;: les entreprises souhaitent généralement accroître le contrôle des comptes des utilisateurs. Seuls les administrateurs système peuvent créer des Enterprise ID. L’entreprise possède ces comptes, Adobe servant uniquement d’hôte.
+* **** : les entreprises souhaitent généralement accroître le contrôle des comptes des utilisateurs. Seuls les administrateurs système peuvent créer des Enterprise ID. L’entreprise possède ces comptes, Adobe servant uniquement d’hôte.
 
-* **&#x200B;**&#x200B;: avec les Federated ID, l’organisation prend pleinement possession et le contrôle des comptes. Votre entreprise doit intégrer Adobe Experience Cloud à votre système d’authentification unique (SSO) SAML2. Cela permet aux utilisateurs de s’authentifier sur le système d’authentification unique de leur entreprise plutôt que sur un compte hébergé par Adobe.
+* **** : avec les Federated ID, l’organisation prend pleinement possession et le contrôle des comptes. Votre entreprise doit intégrer Adobe Experience Cloud à votre système d’authentification unique (SSO) SAML2. Cela permet aux utilisateurs de s’authentifier sur le système d’authentification unique de leur entreprise plutôt que sur un compte hébergé par Adobe.
 
 En tant qu’administrateur système, vous pouvez intégrer votre équipe et vous-même à AEM as a Cloud Service avec des ID personnels. Effectuez cette tâche avant que les Enterprise ID ou les Federated ID ne soient en place. Une fois les Enterprise ID ou les Federated ID configurés, les membres peuvent être transférés à l’utilisation de ces ID.
 
@@ -80,13 +80,13 @@ Félicitations, vous êtes administrateur système !
 
 ## Accès à Admin Console via Experience Hub  {#access-admin-console-via-experience-hub}
 
-[&#128279;](/help/experience-hub.md) est la page d’accueil personnalisée et unifiée d’AEM. AEM Tools et Admin Console sont ainsi réunis en un seul endroit.
+[](/help/experience-hub.md) est la page d’accueil personnalisée et unifiée d’AEM. AEM Tools et Admin Console sont ainsi réunis en un seul endroit.
 
 ![Option Admin Console telle qu&#39;elle apparaît sur la page d&#39;accueil Experience Hub](/help/journey-onboarding/assets/experiencehub-adminconsole1.png)
 
 **Pour accéder à Admin Console via Experience Hub :**
 
-1. Cliquez sur [&#128279;](https://experience.adobe.com/#/@foundationinternal/home) pour ouvrir la page d’accueil d’Experience Hub.
+1. Cliquez sur [](https://experience.adobe.com/#/@foundationinternal/home) pour ouvrir la page d’accueil d’Experience Hub.
 
 1. Dans le regroupement **Accès rapide**, cliquez sur [**Admin Console**](https://experience.adobe.com).
 
@@ -123,6 +123,6 @@ Vous trouverez ci-dessous des ressources facultatives supplémentaires si vous s
 
 * [Présentation d’Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html) - Présentation complète d’Admin Console
 * [Créer ou mettre à jour votre Adobe ID](https://helpx.adobe.com/fr/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) - Découvrez comment créer un Adobe ID, le modifier et gérer plusieurs Adobe ID.
-* [Gestionnaire d’authentification SAML 2.0](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/security/saml-2-0-authenticationhandler#) - AEM est fourni avec un gestionnaire d’authentification SAML. Ce gestionnaire fournit la prise en charge du protocole de requête d’authentification SAML 2.0 (profil web-SSO) à l’aide de la liaison HTTP POST.
+* [Gestionnaire d’authentification SAML 2.0](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/saml-2-0-authenticationhandler#) - AEM est fourni avec un gestionnaire d’authentification SAML. Ce gestionnaire fournit la prise en charge du protocole de requête d’authentification SAML 2.0 (profil web-SSO) à l’aide de la liaison HTTP POST.
 * [Rôles administratifs](https://helpx.adobe.com/fr/enterprise/using/admin-roles.html) - Grâce à Adobe Admin Console, les entreprises peuvent définir une hiérarchie administrative flexible qui permet une gestion affinée de l’accès et de l’utilisation des produits Adobe.
-* [Sessions d’assistance et d’experts](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.html) - Découvrez comment accéder aux options d’assistance sur Admin Console, gérer vos cas d’assistance, planifier une session d’experts, etc.
+* [Sessions d’assistance et d’experts](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.html) - Découvrez comment accéder aux options d’assistance sur Admin Console, gérer vos cas d’assistance, planifier une session d’experts, etc.

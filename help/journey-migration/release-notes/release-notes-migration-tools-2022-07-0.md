@@ -6,7 +6,7 @@ exl-id: bc8f1a80-867e-423a-9c03-4a53b1ebc57c
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '443'
 ht-degree: 93%
 
 ---
@@ -47,9 +47,9 @@ La date de publication de l’outil de transfert de contenu v2.0.12 est le 19 
 
 ### Correctifs {#bug-fixes-ctt}
 
-* Les journaux d’extraction précédents s’affichaient après la suppression et la recréation d’un jeu de migration. Ce problème a été résolu.
-* Le bouton d’action Afficher la progression n’était pas disponible pour les jeux de migration au statut STOPPED. Ce problème a été résolu.
-* Le bouton Supprimer n’était pas disponible pour les jeux de migration avec une clé d’extraction expirée. Ce problème a été résolu.
+* Les journaux d’extraction précédents s’affichaient après la suppression et la recréation d’un ensemble de migration. Ce problème a été résolu.
+* Le bouton d’action Afficher la progression n’était pas disponible pour les ensembles de migration au statut STOPPED. Ce problème a été résolu.
+* Le bouton Supprimer n’était pas disponible pour les ensembles de migration avec une clé d’extraction expirée. Ce problème a été résolu.
 * Plusieurs bugs de l’interface utilisateur ont été corrigés.
 
 ## Cloud Acceleration Manager {#cam-release}

@@ -6,8 +6,8 @@ exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 94%
+source-wordcount: '827'
+ht-degree: 92%
 
 ---
 
@@ -58,7 +58,7 @@ Until you sign in to Cloud Manager as a system administrator with the **Business
 
 ## Accéder à Cloud Manager {#navigate-cloud-manager}
 
-1. Accédez à [&#128279;](https://experience.adobe.com/experiencemanager).
+1. Accédez à [](https://experience.adobe.com/experiencemanager).
 1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
 
 >[!NOTE]
@@ -152,6 +152,6 @@ Continuez votre parcours d’intégration en consultant le document [Créer un p
 Vous trouverez ci-dessous des ressources facultatives supplémentaires si vous souhaitez aller au delà du contenu du parcours d’intégration.
 
 * [Présentation de Cloud Manager](/help/onboarding/cloud-manager-introduction.md) -
-En savoir plus sur Cloud Manager, les programmes Cloud Manager et les environnements.
+Découvrez Cloud Manager, les programmes Cloud Manager et les environnements.
 * [Équipe et profils de produits AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md) - Découvrez comment l’équipe et les profils de produits AEM as a Cloud Service peuvent accorder et limiter l’accès à vos solutions Adobe sous licence.
 <!-- ERROR: Not Found (HTTP error 404) * [AEM Champion Tips and Tricks - Cloud Manager UI](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/cloud-manager-ui.md) - Watch this video for an overview of Cloud Manager's UI from an AEM champion. -->

@@ -5,8 +5,8 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '576'
+workflow-type: tm+mt
+source-wordcount: '579'
 ht-degree: 100%
 
 ---
@@ -22,7 +22,7 @@ Vous avez déjà fait du chemin dans votre parcours d’intégration ! Félicit
 
 À ce stade, vos utilisateurs AEM peuvent commencer à créer du contenu. En ce sens, votre intégration est terminée et il est maintenant temps d’utiliser votre nouveau système AEM as a Cloud Service, comme illustré dans ce document.
 
-## Public {#audience}
+## Audience {#audience}
 
 Ce document est rédigé du point de vue de l’**utilisateur AEM**.
 
@@ -62,7 +62,7 @@ Félicitations ! Vous êtes maintenant connecté à Auteur.
 
 >[!TIP]
 >
->Ajoutez un signet au lien vers l’instance d’auteur AEM et vous pourrez l’ouvrir directement au lieu de devoir parcourir Cloud Manager à chaque fois.
+>Ajoutez un signet au lien vers l’instance de création AEM et vous pourrez l’ouvrir directement au lieu de devoir parcourir Cloud Manager à chaque fois.
 
 ## Prochaines étapes {#whats-next}
 
