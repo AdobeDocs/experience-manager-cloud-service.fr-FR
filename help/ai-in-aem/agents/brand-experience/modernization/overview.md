@@ -4,10 +4,10 @@ description: Découvrez comment l’agent de modernisation de l’expérience in
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: cc75cbb87c192ceeaa49e7ce860bf497743916bc
+source-git-commit: 8f964484f944d49cdc6c456147f060f29a20778e
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 1%
+source-wordcount: '1145'
+ht-degree: 0%
 
 ---
 
@@ -22,11 +22,11 @@ Découvrez comment l’agent de modernisation de l’expérience intègre des si
 
 Il associe [compétences en création de site et migration](#creation-migration) pour l’intégration initiale du site web et [fonctionnalités de développement par bloc](#block-development) pour prendre en charge les workflows de création et de migration de site. En outre, il propose la [console de modernisation de l’expérience](#console) en tant qu’environnement de développement web assisté par l’IA, directement accessible. Bien que les utilisateurs puissent utiliser l’agent directement via cette console, les développeurs conservent un contrôle total sur les éléments livrés.
 
-Pour les migrations complexes ou de haute priorité, Adobe propose le modèle de diffusion [&#x200B; Ingénieur de résultat agent (AOE) &#x200B;](#aoe-delivery) un service d’ingénierie conçu pour fournir des sites Edge Delivery prêts pour la production à l’aide de l’agent de modernisation de l’expérience.
+Pour les migrations complexes ou de haute priorité, Adobe propose le modèle de diffusion [ Ingénieur de résultat agent (AOE) ](#aoe-delivery) un service d’ingénierie conçu pour fournir des sites Edge Delivery prêts pour la production à l’aide de l’agent de modernisation de l’expérience.
 
 ## Avantages {#benefits}
 
-L’agent de modernisation de l’expérience accélère le délai d’évaluation pour l’adoption de [&#128279;](/help/edge/overview.md) et vous permet d’adapter l’expérience web de votre marque.
+L’agent de modernisation de l’expérience accélère le délai d’évaluation pour l’adoption de [](/help/edge/overview.md) et vous permet d’adapter l’expérience web de votre marque.
 
 * **Vitesse élevée** : l’automatisation de l’IA gère les travaux de migration répétitifs (importation de contenu, mappage de bloc, application du système de conception), en comprimant les délais de migration par rapport aux approches traditionnelles
 * **Axé sur l’efficacité** : l’automatisation réduit le travail répétitif, ce qui permet aux équipes de se concentrer sur des travaux d’implémentation à plus forte valeur ajoutée
@@ -43,6 +43,24 @@ L’agent de modernisation d’expérience offre des compétences pour créer de
 * Prend en charge les bonnes pratiques en matière de performances, d’accessibilité et de conception réactive conformément aux conseils de Edge Delivery Services
 
 Les compétences détaillées incluent la migration de pages, l’importation en bloc, l’extraction de conception, la configuration de la navigation et le Web scraping.
+
+## Migrations basées sur des données et création de pages {#figma}
+
+Outre les migrations de sites en direct, l’agent de modernisation d’Experience peut utiliser Figma comme source de conception. Pour utiliser ces fonctionnalités, configurez les détails de votre Figma dans [la console de modernisation de l’expérience](/help/ai-in-aem/agents/brand-experience/modernization/console.md).
+
+### Reconception De La Migration À L’Aide De Blocs Dérivés De Figma {#figma-redesign}
+
+Lorsque vous migrez un site web existant vers une expérience repensée, l’agent [établit d’abord la collection de blocs repensée à partir des composants Figma](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-redesign-migration) puis exécute la migration du site par rapport au site web source actif et mappe le contenu source dans ces blocs dérivés de Figma.
+
+* **Figma** est la source de conception et de bibliothèque de blocs cible.
+* **Le site web en ligne** reste la source du contenu.
+* Le contenu est validé par rapport au site web source ; la sortie visuelle est validée par rapport au système de conception dérivé de Figma.
+
+### Créer une page à partir de Figma {#figma-new-page}
+
+Lorsqu’une page n’existe pas déjà sur un site web source, l’agent [génère une nouvelle page Edge Delivery Services directement à partir d’un cadre ou d’une page Figma](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-new-page-from-figma) en mappant les sections Figma à des blocs existants, au contenu par défaut ou à de nouvelles variantes. Le texte et les ressources proviennent de Figma.
+
+Pour plus d’informations sur ces workflows, la migration individuelle des blocs Figma et des conseils sur les invites, consultez le [Guide de l’invite de l’agent de modernisation de l’expérience.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md)
 
 ## Bloquer les fonctionnalités de développement {#block-development}
 

@@ -4,10 +4,10 @@ description: Découvrez comment Brand Experience Agent accélère la modernisati
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: e6cd421a-8791-4fe3-b284-9b3beae996fd
-source-git-commit: 2e3b10f7886f8bc5757d2144875ec0b441de7bb5
+source-git-commit: 8f964484f944d49cdc6c456147f060f29a20778e
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 2%
+source-wordcount: '624'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ Grâce à ces agents, le Brand Experience Agent absorbe le travail opérationnel
 >
 >Les réponses générées par l&#39;IA peuvent être inexactes ou trompeuses. Assurez-vous de vérifier les correctifs et les réponses suggérés.
 >
->Consultez également les [instructions d’utilisation de l’IA générative de &#x200B;](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
+>Consultez également les [instructions d’utilisation de l’IA générative de ](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 
 ## Agent de modernisation de l’expérience {#experience-modernization}
 
@@ -39,6 +39,8 @@ Grâce à ces agents, le Brand Experience Agent absorbe le travail opérationnel
 ### Tâche de modernisation de l’expérience {#modernization-job}
 
 La modernisation de l’expérience supprime les frictions liées aux migrations de sites à grande échelle en modernisant automatiquement les expériences existantes, ce qui permet aux équipes de passer plus rapidement à la migration tout en maintenant la continuité, la qualité et la confiance.
+
+Les migrations peuvent être pilotées à partir d’un site web source en direct, de conceptions Figma ou d’une combinaison des deux. L’agent prend en charge [les migrations de reconception qui mappent le contenu source dans des blocs dérivés de Figma](/help/ai-in-aem/agents/brand-experience/modernization/overview.md#figma-redesign) et [la génération de nouvelles pages directement à partir de cadres Figma](/help/ai-in-aem/agents/brand-experience/modernization/overview.md#figma-new-page).
 
 ## Agent de production d’expérience {#experience-production}
 
@@ -56,7 +58,7 @@ La tâche [Créer du contenu](/help/ai-in-aem/agents/brand-experience/experience
 >
 >La tâche de création de contenu est actuellement en disponibilité limitée.
 >
->Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
+>Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [](mailto:experience-production-agent@adobe.com).
 
 ### Tâche de création de Forms {#forms-creation}
 
