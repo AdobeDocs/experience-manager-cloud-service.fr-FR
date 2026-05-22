@@ -6,14 +6,14 @@ feature: Release Information
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 84%
+source-wordcount: '1203'
+ht-degree: 85%
 
 ---
 
 # Notes de mise à jour de la version 2022.3.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La section suivante décrit les notes de mise à jour des fonctionnalités de la version 2022.3.0 de [!DNL Experience Manager] as a Cloud Service.
+La section ci-dessous présente les notes de mise à jour des fonctionnalités de la version 2022.3.0 d’[!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -81,7 +81,7 @@ Consultez la vidéo [Aperçu de la version de mars 2022](https://video.tv.adobe
 ### Nouveautés {#what-is-new-cif}
 
 * Optimisation du référencement pour les scénarios multi-magasin : les formats d’URL pour les pages d’information ou de recensement produit peuvent désormais être configurés au niveau du magasin grâce aux propriétés de configuration cloud CIF.
-* Le sélecteur de produits prend en charge les produits intermédiaires par le biais d’une nouvelle option de filtre dans l’interface utilisateur.  Cela permet aux spécialistes du contenu de préparer la gestion de contenu de produit pour les lancements de produits à venir.
+* Le sélecteur de produits prend en charge les produits par étapes au moyen d’une nouvelle option de filtre dans l’interface utilisateur.  Cela permet aux spécialistes du contenu de préparer la gestion de contenu de produit pour les lancements de produits à venir.
 * Simplification de la gestion de la configuration et de la gestion des erreurs CIF à l’aide du nom de configuration cloud CIF au lieu de l’URL du proxy de configuration.
 * Sélection manuelle de catégories pour la liste de produits et les composants de carrousel. Elle permet aux spécialistes du contenu d’utiliser ces composants sur les pages de contenu, en dehors du catalogue..
 
@@ -93,11 +93,11 @@ Consultez la vidéo [Aperçu de la version de mars 2022](https://video.tv.adobe
 
 ### Nouveautés {#what-is-new-foundation}
 
-* Pour une résolution plus efficace et plus efficace des problèmes liés aux fonctionnalités personnalisées dans les environnements cloud, nous avons publié un nouvel outil de développement : [l’explorateur de référentiels](/help/implementing/developing/tools/repository-browser.md). Il s’agit d’un navigateur d’HTML léger, en lecture seule que vous pouvez lancer à partir de Developer Console. Visionnez le référentiel de contenu aux niveaux éditeur, auteur et aperçu, et dans tous les environnements, en production, en évaluation et en développement. Parcourez la structure de contenu, affichez les propriétés, prévisualisez et téléchargez des fichiers binaires.
+* Pour une résolution plus efficace et efficiente des problèmes liés aux fonctionnalités personnalisées dans les environnements cloud, nous avons publié un nouvel outil de développement : [le navigateur de référentiels](/help/implementing/developing/tools/repository-browser.md). Il s’agit d’un navigateur HTML léger, en lecture seule, que vous pouvez lancer à partir de Developer Console. Visionnez le référentiel de contenu aux niveaux éditeur, auteur et aperçu, et dans tous les environnements, en production, en évaluation et en développement. Parcourez la structure de contenu, affichez les propriétés, prévisualisez et téléchargez des fichiers binaires.
 
   ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
-* Les informations d’identification utilisées pour authentifier les appels API serveur à serveur (par exemple, pour les demandes d’API GraphQL) peuvent désormais être actualisées avant expiration en libre-service à partir de Developer Console. Pour plus d’informations, consultez la [documentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials).
+* Les informations d’identification utilisées pour authentifier les appels d’API serveur à serveur (par exemple, pour les requêtes d’API GraphQL) peuvent désormais être actualisées avant expiration en libre-service à partir de Developer Console. Pour plus d’informations, consultez la [documentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials).
 
 * Les tâches de maintenance de purge de version et de purge des journaux d’audit, qui n’avaient pas été activées auparavant, sont désormais activées pour les nouveaux environnements. Consultez les valeurs associées dans cet article [Tâche de maintenance](/help/operations/maintenance.md).
 
@@ -115,7 +115,7 @@ La date de publication de l’outil de transfert de contenu version v1.9.0 est 
 
 ### Nouveautés {#what-is-new-ctt}
 
-* Garde-fous de vérification de la taille : la fonctionnalité Vérification de la taille de l’outil de transfert de contenu permet de réduire le nombre de transferts de contenu ayant échoué. Grâce à la fonction Vérifier la taille , les utilisateurs peuvent 1) déterminer s’ils disposent d’un espace disque suffisant dans le sous-répertoire `crx-quickstart` avant l’extraction, et 2) estimer la taille du jeu de migration et vérifier si elle est prise en charge. Si l’une de ces vérifications est enfreinte, les utilisateurs voient des avertissements dans l’interface utilisateur de CTT. Grâce à ce mécanisme de sécurisation, vous pouvez éviter les échecs de transfert de contenu et discuter de manière proactive des options de migration avec l’assistance clientèle d’Adobe. Consultez [Détermination de la taille du jeu de migration et de l’espace disque](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr#migration-set-size) pour plus d’informations.
+* Garde-fous de vérification de la taille : la fonctionnalité Vérification de la taille de l’outil de transfert de contenu permet de réduire le nombre de transferts de contenu ayant échoué.  Grâce à la fonction de vérification de la taille, les utilisateurs peuvent 1) déterminer s’ils disposent d’un espace disque suffisant dans le sous-répertoire `crx-quickstart` avant extraction, et 2) estimer la taille du jeu de migration et vérifier s’il est pris en charge. Si l’une de ces vérifications est enfreinte, les utilisateurs voient des avertissements dans l’interface utilisateur de CTT. Grâce à ce mécanisme de sécurisation, vous pouvez éviter les échecs de transfert de contenu et discuter de manière proactive des options de migration avec l’assistance clientèle d’Adobe. Consultez [Détermination de la taille de l’ensemble de migration et de l’espace disque](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr#migration-set-size) pour plus d’informations.
 
 ## Analyseur des bonnes pratiques {#bpa-release}
 
@@ -125,7 +125,7 @@ La date de publication de l’analyseur de bonnes pratiques v2.1.26 est le 16 m
 
 ### Nouveautés {#what-is-new-bpa}
 
-* Capacité à détecter les ressources non traitées. Si des ressources non traitées sont détectées, ces ressources doivent être définies sur traitées ou doivent être supprimées du jeu de migration lors du transfert de contenu afin d’éviter des problèmes lors de l’ingestion de contenu.
+* Capacité à détecter les ressources non traitées. Si des ressources non traitées sont détectées, ces ressources doivent être définies sur Traité ou doivent être supprimées de l’ensemble de migration lors du transfert de contenu afin d’éviter des problèmes lors de l’ingestion de contenu.
 * Capacité à détecter si le contenu comporte plus de 1 000 URL de redirection vers un microsite. L’utilisation d’un nombre élevé d’URL de redirection vers un microsite n’est pas conforme avec les bonnes pratiques, car elle surcharge les serveurs de Dispatcher et de publication.
 * Capacité à identifier les problèmes liés aux définitions d’index Oak et de détecter les incompatibilités avec AEM as a Cloud Service.
 * Capacité à détecter et à générer des rapports sur l’utilisation des configurations de l’externaliseur. Dans AEM as a Cloud Service, les configurations de l’externaliseur sont définies par Cloud Manager, les configurations de l’externaliseur existantes doivent donc être restructurées pour garantir la compatibilité.

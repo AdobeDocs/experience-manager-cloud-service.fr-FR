@@ -14,8 +14,8 @@ exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
 index: false
 source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
-source-wordcount: '1866'
-ht-degree: 73%
+source-wordcount: '2112'
+ht-degree: 74%
 
 ---
 
@@ -156,7 +156,7 @@ Voir également la section [Implémentation de référence PWA Studio](https://g
 
 1. Accédez au module `ui.frontend` et enregistrez le fichier en tant que `./src/main/possibleTypes.js`.
 
-1. Mettez à jour la section `webpack.common.js` du fichier `DefinePlugin` afin de remplacer les variables statiques requises pendant la génération.
+1. Mettez à jour la section `DefinePlugin` du fichier `webpack.common.js` afin de remplacer les variables statiques requises pendant la génération.
 
    ```javascript
    const { DefinePlugin } = require('webpack');
@@ -493,7 +493,7 @@ __Événements XDM de profil :__
 
 Pour plus d’informations, consultez les ressources suivantes :
 
-- [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
-- [[!DNL Data Connection] présentation](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html?lang=fr)
-- [[!DNL Data Connection] Événements](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html?lang=fr)
-- [Vue d’ensemble d’Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=fr)
+- [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
+- [Présentation d’[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html?lang=fr)
+- [Événements [!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html?lang=fr)
+- [Présentation de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=fr)

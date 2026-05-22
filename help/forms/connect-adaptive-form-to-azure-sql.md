@@ -8,8 +8,8 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms
 exl-id: 111accf7-bf34-499c-832e-c001ea68f6d3
 source-git-commit: e69201c40b72f4eaabe3da634ecf05bd04769f6b
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 4%
+source-wordcount: '718'
+ht-degree: 6%
 
 ---
 
@@ -53,7 +53,7 @@ L’intégration de Forms adaptatif à Azure SQL présente plusieurs avantages :
 * Définissez le transfert de port dans l’environnement cloud avec :
    * **portOrigin** : entre `30000–30999`
    * **portDest** : `1433` (port par défaut pour Azure SQL)
-Par exemple : `portOrigin: 30433 → portDest: 1433`
+Par exemple : `portOrigin: 30433 → portDest: 1433`
 
      >[!NOTE]
      > 

@@ -6,7 +6,7 @@ feature: Operations
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '627'
 ht-degree: 95%
 
 ---
@@ -29,7 +29,7 @@ La disponibilité externe se compose de deux volets : le service Edge et la su
 
 ### Service Edge {#service-edge}
 
-Tous vos environnements AEM as a Cloud Service sont surveillés pour assurer leur disponibilité. Toutefois, la surveillance Service Edge se destine uniquement aux environnements de production et les mesures sont utilisées pour calculer le contrat SLA du client. Elle prend en compte l’exécution de l’environnement et le réseau CDN d’AEM as a Cloud Service. La surveillance Service Edge utilise cinq sites distincts proches de la région que vous avez choisie et vérifie régulièrement leur disponibilité. L’indisponibilité d’un site déclenche une alerte et l’intervention des équipes d’astreinte et des processus d’assistance d’Adobe.
+Tous vos environnements AEM as a Cloud Service sont surveillés pour assurer leur disponibilité. Toutefois, la surveillance Service Edge se destine uniquement aux environnements de production et les mesures sont utilisées pour calculer le contrat SLA du client ou de la cliente. Elle prend en compte l’exécution de l’environnement et le réseau CDN d’AEM as a Cloud Service. La surveillance Service Edge utilise cinq sites distincts proches de la région que vous avez choisie et vérifie régulièrement leur disponibilité. L’indisponibilité d’un site déclenche une alerte et l’intervention des équipes d’astreinte et des processus d’assistance d’Adobe.
 
 ### Surveillance personnalisée {#custom-monitoring}
 
@@ -37,7 +37,7 @@ Avec la surveillance personnalisée, la clientèle peut éventuellement fournir 
 
 >[!NOTE]
 >
-> Cette fonctionnalité est uniquement proposée aux environnements de production et aux clients et clientes qui bénéficient de la [assistance cloud avancée](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons?lang=fr). Pour toute question, contactez l’équipe chargée de votre compte d’Adobe.
+> Cette fonctionnalité est uniquement proposée aux environnements de production et aux clients et clientes qui bénéficient de la [assistance cloud avancée](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons?lang=fr). Si vous avez des questions, contactez votre équipe de compte Adobe.
 
 ## Surveillance des modules internes {#module-monitoring}
 
@@ -60,5 +60,5 @@ La clientèle peut utiliser la suite [Surveillance des performances des applicat
 ## Ressources supplémentaires {#resources}
 
 * [Surveillance des performances des applications New Relic](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html?lang=fr)
-* [Journalisation pour AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html?lang=fr)
+* [Connexion à AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html?lang=fr)
 * [Surveiller les environnements](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html?lang=fr)

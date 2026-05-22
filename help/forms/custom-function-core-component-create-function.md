@@ -8,8 +8,8 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms
 exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
 source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1366'
-ht-degree: 50%
+source-wordcount: '1430'
+ht-degree: 52%
 
 ---
 

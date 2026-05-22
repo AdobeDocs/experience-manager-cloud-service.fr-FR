@@ -8,8 +8,8 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '2390'
-ht-degree: 74%
+source-wordcount: '2611'
+ht-degree: 76%
 
 ---
 
@@ -29,7 +29,7 @@ L’intégration de données [!DNL Experience Manager Forms] vous permet de conf
 * Services web RESTful
 * Services web SOAP
 * Services OData (version 4.0)
-* Microsoft® Dynamics 
+* Microsoft® Dynamics
 * SalesForce
 * Stockage d’objets blob Microsoft® Azure.
 
@@ -263,7 +263,7 @@ Consultez [Spécification OpenAPI 3.0](https://swagger.io/specification/v3/) po
 
    Pour plus d’informations sur la création et la configuration d’un dossier pour les configurations de service cloud, voir [Configurer le dossier pour les configurations de service cloud](configure-data-sources.md#cloud-folder).
 
-1. Sélectionnez **[!UICONTROL Créer]** pour lancer l’assistant **[!UICONTROL Créer une configuration de Source de données]**.
+1. Sélectionnez **[!UICONTROL Créer]** pour ouvrir l’**[!UICONTROL Assistant de création d’une configuration de source de données]**.
 
 1. Indiquez un nom et éventuellement un titre pour la configuration, sélectionnez **[!UICONTROL Service RESTful]** dans la liste déroulante **[!UICONTROL Type de service]**, recherchez et sélectionnez éventuellement une image miniature pour la configuration, puis sélectionnez **[!UICONTROL Suivant]**.
 
@@ -375,7 +375,7 @@ Un service OData est identifié par son URL racine de service. Pour configurer u
 
    Pour plus d’informations sur la création et la configuration d’un dossier pour les configurations de service cloud, voir [Configurer le dossier pour les configurations de service cloud](#cloud-folder).
 
-1. Sélectionnez **[!UICONTROL Créer]** pour ouvrir l’**[!UICONTROL assistant Créer une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, sélectionnez **[!UICONTROL Service OData]** dans la liste déroulante **[!UICONTROL Type de service]**, recherchez et sélectionnez éventuellement une image miniature pour la configuration, puis appuyez sur **[!UICONTROL Suivant]**.
+1. Sélectionnez **[!UICONTROL Créer]** pour ouvrir **[!UICONTROL l’assistant Créer une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, sélectionnez **[!UICONTROL Service OData]** dans la liste déroulante **[!UICONTROL Type de service]**, recherchez et sélectionnez éventuellement une image miniature pour la configuration, puis appuyez sur **[!UICONTROL Suivant]**.
 1. Spécifiez les informations suivantes pour le service OData :
 
    * URL racine du service pour le service OData à configurer.

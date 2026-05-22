@@ -12,8 +12,8 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Asse
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '4054'
-ht-degree: 0%
+source-wordcount: '4847'
+ht-degree: 2%
 
 ---
 
@@ -49,7 +49,7 @@ Voici quelques-uns des principes clés de Dynamic Media :
 * **Bibliothèque de visionneuses Experience Manager :** personnalisez et marquez les visionneuses d’expériences pour les images et les vidéos. Ces visionneuses s’intègrent de manière transparente à vos expériences digitales.
 * **Prise en charge des formats émergents :** Dynamic Media permet de diffuser des expériences 3D et panoramiques.
 
-À mesure que vous explorez le Parcours Dynamic Media[, une révision de la liste consolidée des bonnes pratiques ci-dessous peut vous aider à tirer le meilleur parti de ses fonctionnalités. &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1) Adaptez ces bonnes pratiques Dynamic Media à votre contexte et aux exigences de votre projet spécifiques afin d’optimiser vos expériences sur l’ensemble des canaux et appareils.
+À mesure que vous explorez le Parcours Dynamic Media[&#128279;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1), une révision de la liste consolidée des bonnes pratiques ci-dessous peut vous aider à tirer le meilleur parti de ses fonctionnalités. Adaptez ces bonnes pratiques Dynamic Media à votre contexte et aux exigences de votre projet spécifiques afin d’optimiser vos expériences sur l’ensemble des canaux et appareils.
 
 <!-- In Dynamic Media on AEM, there are sets of methods, techniques, and guidelines that can help you maximize the potential of your rich media content. These best practices can lead to optimal results and increase efficiency in your use of Dynamic Media. They represent the most efficient and effective courses of action in a particular situation. They also unlock high value for your audience and deliver high-quality, engaging content. -->
 
@@ -89,7 +89,7 @@ Assurez-vous que toutes les ressources de la visionneuse sont synchronisées ave
 
 * **Publier Assets :**
 Assurez-vous que les ressources sont publiées avant de les afficher dans les visionneuses de diffusion.
-* **La Lecture Automatique Des Vidéos Est Désactivée :**
+* **La lecture automatique des vidéos est désactivée :**
 Pour la fonctionnalité de lecture automatique dans les vidéos, utilisez les paramètres vidéo en mode silencieux, car les navigateurs limitent la lecture des vidéos avec le volume.
 * **Recadrage intelligent :**
 Utilisez le composant Image v3 pour le recadrage intelligent afin d’améliorer la présentation des ressources d’image.
@@ -201,8 +201,8 @@ Dynamic Media propose une suite de commandes pour améliorer les images et crée
 
 | Tâche | Que faire |
 | --- | --- |
-| **Chargez et publiez votre image d’origine** | <ul><li> Commencez par charger l’image d’origine dans Dynamic Media.</li><li> Assurez-vous qu’il est publié et accessible par le biais d’une URL.</li><li> Dans cet exemple, une image animée d’une montre avec un arrière-plan blanc (appelons-la « Image X ») est chargée dans Dynamic Media.<br>[&#128279;](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer)</li></ul> |
-| **Créer un masque** | <ul><li> Développez un masque qui définit le sujet (la zone où vous souhaitez appliquer des effets) et l&#39;arrière-plan (la zone à modifier).<br>[&#128279;](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps)</li><li> Les masques sont généralement des images en niveaux de gris, où le blanc représente le sujet et le noir représente l’arrière-plan. Vous pouvez créer des masques à l’aide d’outils comme Adobe Photoshop.<br>Vous souhaitez en savoir plus ? Accédez à [&#x200B; Création et modification d’un masque rapide dans Photoshop &#x200B;](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html).</li><li> Pour « Image X », créez un masque qui décrit précisément le sujet que vous souhaitez améliorer. Par exemple, une personne, un objet, etc.</li></ul> |
+| **Chargez et publiez votre image d’origine** | <ul><li> Commencez par charger l’image d’origine dans Dynamic Media.</li><li> Assurez-vous qu’il est publié et accessible par le biais d’une URL.</li><li> Dans cet exemple, une image animée d’une montre avec un arrière-plan blanc (appelons-la « Image X ») est téléchargée sur Dynamic Media.<br>[&#128279;](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer)</li></ul> |
+| **Créer un masque** | <ul><li> Développez un masque qui définit le sujet (la zone où vous souhaitez appliquer des effets) et l&#39;arrière-plan (la zone à modifier).<br>[&#128279;](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps)</li><li> Les masques sont généralement des images en niveaux de gris, où le blanc représente le sujet et le noir représente l’arrière-plan. Vous pouvez créer des masques à l’aide d’outils tels qu’Adobe Photoshop.<br>Vous souhaitez en savoir plus ? Accédez à [&#x200B; Création et modification d’un masque rapide dans Photoshop &#x200B;](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html).</li><li> Pour « Image X », créez un masque qui décrit précisément le sujet que vous souhaitez améliorer. Par exemple, une personne, un objet, etc.</li></ul> |
 | **Application de commandes URL Dynamic Media pour les effets** | Une fois que vous disposez de votre masque, utilisez les commandes d’URL pour appliquer des effets tels qu’une lueur extérieure ou modifiez la couleur d’arrière-plan en « Image X ». Voici deux exemples :<ul><li> **Effet de lueur extérieure :**<br> pour ajouter un effet de lueur extérieure le long de la limite de l’objet, modifiez l’URL comme suit :<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25)<br>Dans cette URL, les paramètres `op_blur`, `op_grow` et `opac` créent l’effet de lueur extérieure.</li><li> **Modification de la couleur d’arrière-plan :**<br> Pour modifier la couleur d’arrière-plan, utilisez l’URL avec une valeur de couleur d’arrière-plan différente :<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&maskUse=invert&color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&maskUse=invert&color=255,255,0)<br> Dans cet exemple, `color=255,255,0` définit la couleur d’arrière-plan sur jaune. Modifiez l’arrière-plan avec une couleur spécifique pour l’impact visuel.</li></ul> |
 
 #### Ajout d’une bordure d’image
@@ -256,7 +256,7 @@ Le redimensionnement peut avoir un impact sur la qualité de l’image. Évitez 
 
 Le recadrage et le redimensionnement sont des techniques de Dynamic Media qui vous permettent de transformer des images en fonction de divers cas d’utilisation, que ce soit pour créer des miniatures, des images d’affichage de produit ou des bannières.
 
-* **Recadrage:**
+* **Recadrage :**
 Supprime une partie d’une image pour modifier sa composition et son encadrement. Il ne modifie pas les dimensions globales, mais se concentre sur un domaine spécifique.
 * **Redimensionnement :**
 Ajuste les dimensions, la résolution et la taille de fichier de l’image entière tout en conservant les proportions.
@@ -315,7 +315,7 @@ Attribuez le profil vidéo choisi aux dossiers dans lesquels votre vidéo va êt
 Chargez le fichier vidéo d’origine. Assurez-vous qu’il s’agit d’une vidéo haute résolution de bonne qualité. Plus la vidéo source est bonne, meilleur est le résultat final.
 * **Prévisualisation et publication :**
 Prévisualisez la vidéo pour vous assurer que tout se présente comme prévu. Une fois satisfait, procédez à la publication. Cette étape rend la vidéo accessible à votre audience.
-* **Lien ou incorporation :**
+* **Lier ou incorporer :**
 Après la publication, vous disposez de deux options.
 
    * **Lien direct :**
@@ -331,12 +331,12 @@ Vous souhaitez en savoir plus ? Accédez à [&#x200B; Vidéo &#x200B;](https://e
 
 Pour garantir une qualité optimale et un engagement optimal de vos vidéos, pensez à mettre en œuvre une combinaison des bonnes pratiques suivantes :
 
-* **Utilisation de la visionneuse de vidéos HTML5 intégrée :**
+* **Utilisez la visionneuse de vidéos HTML5 intégrée :**
 Les paramètres prédéfinis de la visionneuse de vidéos HTML5 Dynamic Media sont des lecteurs vidéo fiables. Utilisez-les pour éviter les problèmes courants associés à la lecture vidéo HTML5 et aux appareils mobiles.
 Ces paramètres prédéfinis relèvent des défis tels que la diffusion en continu à débit adaptatif et la portée limitée du navigateur de bureau.
 Vous souhaitez en savoir plus ? Accédez à [Bonne pratique : utilisation de la visionneuse de vidéos HTML 5](/help/assets/dynamic-media/video.md#best-practice-using-the-html-video-viewer).
 
-* **Utiliser des profils vidéo Dynamic Media :**
+* **Utilisation de profils vidéo Dynamic Media :**
 Les profils vidéo de Dynamic Media permettent une gestion vidéo efficace, une qualité cohérente et une diffusion en continu adaptative.
 Vous souhaitez en savoir plus ? Accédez à [Profils vidéo Dynamic Media](/help/assets/dynamic-media/video-profiles.md).
 

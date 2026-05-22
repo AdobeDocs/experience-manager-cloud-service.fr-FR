@@ -8,8 +8,8 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms
 exl-id: a369b585-d148-4b5a-8afe-d5673ea865d0
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 10%
+source-wordcount: '1202'
+ht-degree: 13%
 
 ---
 
@@ -244,7 +244,7 @@ Dans le dossier `customsubmitaction`, créez un fichier nommé `.content.xml`.
    ![Modifier le formulaire](/help/forms/assets/custom-submit-action-edit-af.png)
 
 1. Ouvrez l’explorateur de contenu, puis sélectionnez le composant **[!UICONTROL Conteneur de guide]** de votre formulaire adaptatif.
-1. Cliquez sur l’icône des propriétés du conteneur de guide ![Propriétés du guide](/help/forms/assets/configure-icon.svg). La fenêtre du conteneur de formulaires adaptatifs s’ouvre.
+1. Cliquez sur l’icône des propriétés du conteneur de guide ![Propriétés du guide](/help/forms/assets/configure-icon.svg). La boîte de dialogue du conteneur de formulaires adaptatifs s’ouvre.
 1. Cliquez sur l’onglet **[!UICONTROL Envoi]**.
 1. Dans la liste déroulante **[!UICONTROL Action d’envoi]**, sélectionnez l’action d’envoi. Par exemple, sélectionnez l’action d’envoi comme `Custom Submit Action`.
 

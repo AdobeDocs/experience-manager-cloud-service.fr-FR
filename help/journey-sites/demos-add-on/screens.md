@@ -5,8 +5,8 @@ exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '2666'
+workflow-type: tm+mt
+source-wordcount: '2701'
 ht-degree: 100%
 
 ---
@@ -43,7 +43,7 @@ Le module complémentaire de démonstration de référence d’AEM contient du c
 
 ## Comprendre Screens {#understand-screens}
 
-AEM Screens as a Cloud Service est une solution de signalétique numérique qui permet aux spécialistes marketing de créer et de gérer des expériences numériques dynamiques à grande échelle. Avec AEM Screens as a Cloud Service, vous pouvez créer des expériences de signalétique numérique attrayantes et dynamiques destinées aux espaces publics. 
+AEM Screens as a Cloud Service est une solution de signalétique numérique qui permet aux spécialistes marketing de créer et de gérer des expériences numériques dynamiques à grande échelle. Avec AEM Screens as a Cloud Service, vous pouvez créer des expériences de signalétique numérique attrayantes et dynamiques destinées aux espaces publics.
 
 >[!TIP]
 >

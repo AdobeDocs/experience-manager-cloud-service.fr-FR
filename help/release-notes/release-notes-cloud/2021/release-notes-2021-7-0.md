@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '1292'
-ht-degree: 58%
+source-wordcount: '1417'
+ht-degree: 57%
 
 ---
 
@@ -78,7 +78,7 @@ Regardez la vidéo [Aperçu de la version de juillet 2021](https://video.tv.ado
 
 * Lorsque vous partagez des ressources numériques sous la forme d’un lien, les utilisateurs peuvent copier l’URL dans le presse-papiers. Cette amélioration vous permet de partager des ressources plus rapidement et plus facilement.
 
-### Correctifs d’[!DNL Assets]  {#assets-bugs-fixed}
+### Correctifs d’[!DNL Assets] {#assets-bugs-fixed}
 
 L’API `com.day.cq.dam.api.collection.SmartCollection` n’est pas disponible dans [!DNL Experience Manager] as a [!DNL Cloud Service]. (CQ-4326322)
 

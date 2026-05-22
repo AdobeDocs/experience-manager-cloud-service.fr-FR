@@ -6,14 +6,14 @@ feature: Release Information
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1065'
-ht-degree: 88%
+source-wordcount: '1130'
+ht-degree: 86%
 
 ---
 
 # Notes de mise à jour de la version 2022.1.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La section suivante décrit les notes de mise à jour des fonctionnalités de la version 2022.1.0 de [!DNL Experience Manager] as a Cloud Service.
+La section ci-dessous présente les notes de mise à jour des fonctionnalités de la version 2022.1.0 d’[!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -90,9 +90,9 @@ Consultez la vidéo [Aperçu de la version de décembre 2022](https://video.tv.a
 * Amélioration des composants myAccount
 * Le composant de recommandation de produit prend en charge d’autres types de page (page d’accueil, panier, confirmation de commande).
 * **Liste de souhaits**
-   * Les visiteurs connectés peuvent ajouter des produits à une liste bloquée.
-   * La gestion de la liste de attente et de ses produits est possible via myAccount
-   * Le bouton &quot;Ajouter à la liste bloquée&quot; peut être activé/désactivé au niveau des composants via une stratégie (exemple de teaser de produit, détails du produit).
+   * Les visiteurs connectés peuvent ajouter des produits à une liste d’envies
+   * La gestion de la liste de souhaits et de ses produits est possible via myAccount
+   * Le bouton « Ajouter à la liste de souhaits » peut être activé/désactivé au niveau des composants par le biais d’une politique (par exemple, un teaser de produit et les détails du produit).
    * Disponible en tant que composant principal et dans AEM Venia Storefront
 
 <!-- Image was not found during PR validation despite correct path ![Wishlist](/help/assets/CIF/wantlist.png) -->
@@ -106,7 +106,7 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2022.0
 ### Nouveautés {#what-is-new-cm}
 
 * Cloud Manager [évitera de reconstruire la base de code lorsqu’il détecte que la même validation Git est utilisée](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) dans plusieurs exécutions de pipeline full stack.
-* L’accès au journal d’environnement AEM nécessite désormais le profil produit **Gestionnaire de déploiement**. Les utilisateurs ne disposant pas de ce profil voient apparaître un bouton désactivé dans l’interface utilisateur.
+* L’accès au journal d’environnement AEM nécessite désormais le profil produit **Gestionnaire de déploiement**. Un bouton désactivé s’affiche dans l’interface utilisateur pour les utilisateurs ne disposant pas de ce profil.
 * L’interface utilisateur n’autorise pas la configuration du pipeline front-end pour un programme où Sites n’est pas activé en tant que solution.
 * Lors de la génération d’un mot de passe Git, la date d’expiration s’affiche.
 
@@ -125,7 +125,7 @@ La date de publication de l’outil de transfert de contenu version v1.8.6 est 
 
 ### Nouveautés {#what-is-new-ctt}
 
-* Validation du contenu : les utilisateurs peuvent déterminer de manière fiable si tout le contenu extrait par l’outil de transfert de contenu a bien été ingéré dans l’instance cible. Pour utiliser cette fonctionnalité, activez-la dans l’ `System Console` de l’environnement d’AEM source. Consultez [Validation des transferts de contenu - Prise en main](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=fr#getting-started) pour plus d’informations.
+* Validation du contenu - Les utilisateurs peuvent déterminer de manière fiable si tout le contenu extrait par l’outil de transfert de contenu a bien été ingéré dans l’instance cible. Pour utiliser cette fonctionnalité, activez-la dans le `System Console` de l’environnement source AEM. Consultez [Validation des transferts de contenu - Prise en main](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=fr#getting-started) pour plus d’informations.
 
 ### Correctifs {#bug-fixes-ctt}
 

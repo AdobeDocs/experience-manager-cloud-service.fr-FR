@@ -10,8 +10,8 @@ exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
 role: User, Developer
 source-git-commit: adab3053853551b10a6f808782acf8f75ba7c1f7
 workflow-type: tm+mt
-source-wordcount: '2433'
-ht-degree: 85%
+source-wordcount: '2649'
+ht-degree: 82%
 
 ---
 
@@ -198,8 +198,8 @@ Pour comprendre comment créer et utiliser un gestionnaire d’erreurs par défa
 1. Ouvrez un formulaire adaptatif en mode création, sélectionnez un composant de formulaire et sélectionnez **[!UICONTROL Éditeur de règles]** pour ouvrir ce dernier.
 1. Sélectionnez **[!UICONTROL Créer]**.
 1. Définissez une condition dans la section **Lorsque** de la règle. Par exemple, **lorsque le [Nom du champ Identifiant de l&#39;animal domestique]** est modifié. L’option Sélectionner est modifiée à partir de la liste déroulante **Sélectionner un état**.
-1. Dans la section **Alors**, sélectionnez **[!UICONTROL Appeler un service]** dans la liste déroulante **Sélectionner une action**. 
-1. Sélectionnez un **service Post** et ses liaisons de données correspondantes dans la section **Entrée**. Par exemple, pour valider **Pet ID**, sélectionnez un **service Post** comme **GET /pet/{petId}** et sélectionnez **Pet ID** dans la section **Entrée**.
+1. Dans la section **Alors**, sélectionnez **[!UICONTROL Appeler un service]** dans la liste déroulante **Sélectionner une action**.
+1. Sélectionnez un **service Post** et ses liaisons de données correspondantes dans la section **Entrée**. Par exemple, pour valider **Pet ID**, sélectionnez un **service Post** comme **GET /pet/{petId}** et sélectionnez **Pet ID** dans la section **Input**.
 1. Cliquez sur **[!UICONTROL Ajouter un gestionnaire de succès]**. L’éditeur de règles **[!UICONTROL Invoke Service Success Handler]** s’ouvre.
 1. Dans la section **[!UICONTROL Then]**, ajoutez une règle pour définir la valeur de **[!UICONTROL Pet Name]** sur **`name`** à l’aide des données eventpayload.
 1. Cliquez sur **[!UICONTROL Terminé]** pour fermer l’éditeur **[!UICONTROL Invoquer le gestionnaire de succès du service]**.
@@ -224,7 +224,7 @@ Vous pouvez ajouter une fonction de gestionnaire d’erreurs personnalisé pour 
 
 Outre les actions mentionnées, les gestionnaires d’erreurs personnalisés peuvent être utilisés pour exécuter des fonctions personnalisées répondant à des besoins spécifiques de l’utilisateur ou de l’utilisatrice.
 
-Le gestionnaire d’erreurs personnalisé est une fonction (bibliothèque cliente) conçue pour répondre aux erreurs renvoyées par un service externe et fournir une réponse personnalisée aux utilisateurs finaux et utilisatrices finales. Toute bibliothèque cliente avec l’annotation `@errorHandler` est considérée comme une fonction de gestionnaire d’erreurs personnalisé. Cette annotation permet d’identifier la fonction de gestionnaire d’erreurs spécifiée dans le fichier `.js`.
+Le gestionnaire d’erreurs personnalisé est une fonction (bibliothèque cliente) conçue pour répondre aux erreurs renvoyées par un service externe et fournir une réponse personnalisée aux utilisateurs finaux et utilisatrices finales. Toute bibliothèque cliente avec annotation `@errorHandler` est considérée comme une fonction de gestionnaire d’erreurs personnalisé. Cette annotation permet d’identifier la fonction de gestionnaire d’erreurs spécifiée dans le fichier `.js`.
 Pour comprendre comment créer et utiliser un gestionnaire d’erreurs personnalisé à l’aide de l’action [Service Invoke de l’éditeur de règles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=fr#invoke), prenons un exemple de formulaire adaptatif avec deux champs, **Identifiant d’animal domestique** et **Nom de l’animal domestique** et utilisez un gestionnaire d’erreurs personnalisé sur le champ **Identifiant d’animal domestique** pour vérifier les différentes erreurs renvoyées par le point d’entrée REST configuré pour appeler un service externe, par exemple : `200 - OK`,`404 - Not Found`, `400 - Bad Request`.
 
 Pour ajouter et utiliser un gestionnaire d’erreurs personnalisé dans un formulaire adaptatif, procédez comme suit :
@@ -232,7 +232,7 @@ Pour ajouter et utiliser un gestionnaire d’erreurs personnalisé dans un formu
 1. [Créez un gestionnaire d’erreurs personnalisé](#create-custom-error-message).
 1. [Utilisez l’éditeur de règles pour configurer le gestionnaire d’erreurs personnalisé.](#use-custom-error-handler)
 
-#### 1. Créer un gestionnaire d’erreurs personnalisé {#create-custom-error-message}
+#### &#x200B;1. Créer un gestionnaire d’erreurs personnalisé {#create-custom-error-message}
 
 Pour créer une fonction d’erreur personnalisée, procédez comme suit :
 
@@ -301,7 +301,7 @@ Ajoutons le code suivant au fichier JavaScript pour afficher la réponse et les 
 
 Une fois le pipeline exécuté, le gestionnaire d’erreurs personnalisé devient disponible dans l’éditeur de règles de formulaire adaptatif. Maintenant, apprenons comment configurer et utiliser un gestionnaire d’erreurs personnalisé à l’aide du service Invoke de l’éditeur de règles dans AEM Forms.
 
-#### 2. Utiliser l’éditeur de règles pour configurer le gestionnaire d’erreurs personnalisé {#use-custom-error-handler}
+#### &#x200B;2. Utilisez l’éditeur de règles pour configurer le gestionnaire d’erreurs personnalisé. {#use-custom-error-handler}
 
 Avant d’implémenter le gestionnaire d’erreurs personnalisé dans un formulaire adaptatif, assurez-vous que le nom de la bibliothèque cliente de la **[!UICONTROL Catégorie de bibliothèque cliente]** s’aligne sur le nom spécifié dans l’option Catégories du fichier `.content.xml`.
 
@@ -313,7 +313,7 @@ Pour utiliser un gestionnaire d’erreurs personnalisé à l’aide de l’actio
 1. Sélectionnez **[!UICONTROL Créer]**.
 1. Définissez une condition dans la section **Lorsque** de la règle. Par exemple, lorsque **[Nom du champ Identifiant de l’animal]** est modifié, sélectionnez **est modifié** dans la liste déroulante **Sélectionner un état**.
 1. Dans la section **Alors**, sélectionnez **[!UICONTROL Service Invoke]** dans la liste déroulante **Sélectionner une action**.
-1. Sélectionnez un **service Post** et ses liaisons de données correspondantes dans la section **Entrée**. Par exemple, pour valider **Pet ID**, sélectionnez un **service Post** comme **GET /pet/{petId}** et sélectionnez **Pet ID** dans la section **Entrée**.
+1. Sélectionnez un **service Post** et ses liaisons de données correspondantes dans la section **Entrée**. Par exemple, pour valider **Pet ID**, sélectionnez un **service Post** comme **GET /pet/{petId}** et sélectionnez **Pet ID** dans la section **Input**.
 1. Cliquez sur **[!UICONTROL Ajouter un gestionnaire de succès]**. L’éditeur de règles **[!UICONTROL Invoke Service Success Handler]** s’ouvre.
 1. Dans la section **[!UICONTROL Then]**, ajoutez une règle pour définir la valeur de **[!UICONTROL Pet Name]** sur **`name`** à l’aide des données eventpayload.
 1. Cliquez sur **[!UICONTROL Terminé]** pour fermer l’éditeur **[!UICONTROL Invoquer le gestionnaire de succès du service]**.

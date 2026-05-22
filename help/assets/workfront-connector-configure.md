@@ -7,7 +7,7 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Asse
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
 source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1772'
+source-wordcount: '1807'
 ht-degree: 88%
 
 ---

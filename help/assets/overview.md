@@ -495,7 +495,7 @@ Vous pouvez intégrer le gestionnaire de contenu à une application Adobe ou aut
       </a>
    </div>
    <p>
-      <em> Configurez des rôles pour restreindre l’accès aux ressources approuvées.</em>
+      <em> Configurez des rôles pour limiter l’accès aux ressources approuvées.</em>
    </p>
 </td>
 <td>

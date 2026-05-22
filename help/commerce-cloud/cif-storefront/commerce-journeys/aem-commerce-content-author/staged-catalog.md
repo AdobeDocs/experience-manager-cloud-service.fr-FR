@@ -7,7 +7,7 @@ role: Admin
 index: false
 source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '486'
 ht-degree: 76%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 76%
 
 Découvrez comment gérer les expériences de catalogue de produits par étapes.
 
-## Un peu d’histoire…  {#story-so-far}
+## Un peu d’histoire… {#story-so-far}
 
 Dans le document précédent du parcours Content and Commerce d’AEM, [Gérer les pages et les modèles de catalogue de produits](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/catalog-templates.md) vous avez appris à gérer et à créer des expériences de catalogue de produits à partir de modèles.
 
@@ -53,7 +53,7 @@ Vous pouvez désormais parcourir le catalogue avec les données échelonnées. S
 
 ## AEM Launches {#launches}
 
-Les lancements d’AEM vous permettent de créer du contenu pour des données de produits structurées. Si vous ne connaissez pas les lancements, suivez le lien de la documentation sous la section [&#x200B; Ressources supplémentaires .](#additional-resources) La date de lancement est ensuite utilisée pour accéder aux données de produits échelonnées.
+Les lancements d’AEM vous permettent de créer du contenu pour des données de produits structurées. Si vous ne connaissez pas les lancements, suivez le lien de la documentation sous la section [Ressources supplémentaires](#additional-resources). La date de lancement est ensuite utilisée pour accéder aux données de produits échelonnées.
 
 ![lancement de l’étape](assets/staged-launch.png)
 
@@ -68,7 +68,7 @@ Maintenant que vous avez terminé cette partie du parcours, vous devriez :
 * comprendre les concepts de catalogue de produits structurés et de contenu avec des lancements
 * être en mesure d’accéder aux données du catalogue de produits structurés par le biais du cockpit du produit et l’éditeur
 
-Vous êtes maintenant prêt à gérer les expériences produit [.](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/product-experience-management.md) Cependant, AEM Content and Commerce disposent de nombreuses options supplémentaires. Consultez certaines des ressources supplémentaires disponibles dans la [Section Ressources supplémentaires](#additional-resources) pour en savoir plus sur les fonctionnalités rencontrées dans ce parcours.
+Vous êtes maintenant prêt à gérer les [expériences produit.](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/product-experience-management.md) Cependant, AEM Content and Commerce disposent de nombreuses options supplémentaires. Consultez certaines des ressources supplémentaires disponibles dans la [Section Ressources supplémentaires](#additional-resources) pour en savoir plus sur les fonctionnalités rencontrées dans ce parcours.
 
 ## Ressources supplémentaires {#additional-resources}
 

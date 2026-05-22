@@ -24,7 +24,7 @@ Dans le document précédent du parcours de traduction AEM Sites, intitulé [Pr
 
 * comprendre l’importance de la structure de contenu pour la traduction ;
 * comprendre comment AEM stocke le contenu ;
-* être familiarisé avec les outils de traduction AEM.
+* vous être familiarisé avec les outils de traduction AEM.
 
 Cet article s’appuie sur ces principes de base afin que vous puissiez effectuer la première étape de configuration et configurer un service de traduction, que vous utiliserez ultérieurement dans le parcours pour traduire votre contenu.
 

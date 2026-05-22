@@ -7,8 +7,8 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Asse
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
 source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 99%
+source-wordcount: '928'
+ht-degree: 98%
 
 ---
 
@@ -41,7 +41,7 @@ Avant d’installer le connecteur, procédez comme suit :
 
    * [IP de cluster Workfront](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/get-started-administration/configure-your-firewall.html?lang=fr#ip-addresses-to-allow-for-clusters-1-2-3-5-7-8-and-9). Pour connaître le cluster d’IP dans [!DNL Workfront], accédez à **[!UICONTROL Configuration]** > **[!UICONTROL Système]** > **[!UICONTROL Informations sur le client]**.
 
-   * [IP des API d’abonnement à un événement Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api.html?lang=fr)
+   * [Adresses IP de l’API d’abonnement aux événements Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api.html?lang=fr)
 
    >[!IMPORTANT]
    >

@@ -7,8 +7,8 @@ role: Admin
 exl-id: 3f18f976-ff8a-4726-b4c5-db4e19ae7cee
 source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 61%
+source-wordcount: '635'
+ht-degree: 63%
 
 ---
 
@@ -21,7 +21,7 @@ Une solution de commerce peut être n’importe quelle solution commerciale tell
 * L’entreprise doit gérer le contenu des produits avec son propre cycle de vie de manière efficace et omnicanale
 * Conception de parcours d’achats complexes et personnalisés pour divers intervenants
 * Possibilité d’adapter et d’innover rapidement en front-end comme en back-end
-* Exécution d’une infrastructure E2E évolutive et stable conçue pour des performances de pointe (vente flash, Black Friday, etc.), y compris la recherche unifiée et la gestion du cache
+* Exécution d’une infrastructure E2E évolutive et stable conçue pour des performances de pointe (vente flash, Black Friday, etc.) y compris la recherche unifiée et la gestion du cache
 
 Cette complexité ouvre la porte à de potentielles défaillances, à une augmentation du coût total de possession, à des retards et à une diminution de la valeur relative créée. Ces raisons ont conduit au développement de Commerce Integration Framework (CIF), un module complémentaire d’Experience Manager. Le CIF complémente Experience Manager en lui adjoignant des fonctionnalités commerciales et en normalisant son intégration à un moteur de commerce. Résultat : une solution évolutive, stable et à l’épreuve du temps, avec un coût total de possession (TCO) plus faible. Il libère de nouvelles possibilités d’innovations techniques et commerciales à l’aide d’outils agiles et de fonctionnalités parfaitement intégrées afin de créer des expériences commerciales attrayantes.
 

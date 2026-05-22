@@ -8,7 +8,7 @@ role: Admin, Developer
 recommendations: noDisplay, noCatalog
 source-git-commit: 8c4b34a77ef85869048fae254728c58cf0d99b66
 workflow-type: tm+mt
-source-wordcount: '1113'
+source-wordcount: '1176'
 ht-degree: 100%
 
 ---
@@ -64,7 +64,7 @@ Pour le développeur front-end, aucune connaissance AEM n’est nécessaire.
 | Outil | Rôle |
 |---|---|
 | Environnement de développement front-end préféré | Développeur front-end |
-| npm  | Développeur front-end |
+| npm | Développeur front-end |
 | webpack | Développeur front-end |
 | Accès à Cloud Manager | Administrateur Cloud Manager |
 | Être membre du rôle de **Propriétaire de l’entreprise** dans Cloud Manager | Administrateur Cloud Manager |

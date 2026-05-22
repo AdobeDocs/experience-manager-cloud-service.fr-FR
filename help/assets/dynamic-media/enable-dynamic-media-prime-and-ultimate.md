@@ -7,8 +7,8 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Asse
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
 source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 1%
+source-wordcount: '1208'
+ht-degree: 6%
 
 ---
 
@@ -103,7 +103,7 @@ Procédez comme suit :
 
 1. [Créez un programme](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/onboarding/journey/create-program) ou accédez à un programme existant et cliquez sur **[!UICONTROL Modifier]**. La page **[!UICONTROL Configurer pour la production]** affiche l’onglet **[!UICONTROL Solutions et modules complémentaires]**.
 
-1. Sélectionnez **[!UICONTROL Assets]**, **[!UICONTROL Assets Prime]**, **[!UICONTROL Assets Ultimate]** ou **[!UICONTROL Sites]** pour ajouter la solution **[!UICONTROL Dynamic Media]** à votre programme.
+1. Sélectionnez **&#x200B;**, **[!UICONTROL Assets Prime]**, **[!UICONTROL Assets Ultimate]** ou **[!UICONTROL Sites]** pour ajouter la solution **[!UICONTROL Dynamic Media]** à votre programme.
 
 1. Sélectionnez la solution **[!UICONTROL Dynamic Media]** et cliquez sur **[!UICONTROL Continuer]** pour ajouter la solution **[!UICONTROL Dynamic Media]** à votre programme. Cette action redémarre tous les environnements existants de votre programme et leur ajoute la solution [!DNL Dynamic Media]. En outre, tout nouvel environnement créé dans votre programme est automatiquement [!DNL Dynamic Media].
 
@@ -127,7 +127,7 @@ Pour afficher les sociétés (comptes) existantes ou ajouter une nouvelle socié
 
 Pour créer et répertorier une nouvelle société [!DNL Dynamic Media] (compte) configurable dans votre environnement de [!DNL AEM], procédez comme suit :
 
-1. Accédez à la page de licence [Cloud Manager](https://experience-stage.adobe.com/#/@ssahnichstage/cloud-manager/license).
+1. Accédez à la page de licence [&#128279;](https://experience-stage.adobe.com/#/@ssahnichstage/cloud-manager/license).
 
 1. Cliquez sur **[!UICONTROL Ajouter une entreprise]** et la boîte de dialogue **[!UICONTROL Créer une entreprise Dynamic Media]** s’affiche.
 
