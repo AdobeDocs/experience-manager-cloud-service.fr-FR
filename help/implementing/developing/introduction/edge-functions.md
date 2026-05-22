@@ -4,9 +4,9 @@ description: Découvrez comment exécuter JavaScript au niveau de la couche CDN 
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: ea43e2f4c7e52f98e8458e86bb48f124191dc03c
+source-git-commit: b33a565d9623ed44309e1d34377345dae86757cd
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1263'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ Cas d’utilisation courants :
 - Reformatage ou agrégation des réponses provenant d’API tierces avant qu’elles n’atteignent le navigateur
 - Composer et diffuser des HTML générées par serveur à la périphérie à l’aide de contenu groupé à partir de plusieurs serveurs principaux
 
-Les fonctions AEM Edge sont compatibles avec la pile Java Edge Delivery Services et AEM Cloud Service.
+Les fonctions AEM Edge sont compatibles avec Edge Delivery Services et la pile Java AEM as a Cloud Service.
 
 ## Principaux avantages {#key-benefits}
 
@@ -215,7 +215,7 @@ Pour obtenir des conseils techniques détaillés sur la configuration du comport
 
 Chaque appel de fonction Edge s’exécute dans un sandbox avec des limites de ressources appliquées par la plateforme de calcul sous-jacente.
 
-### Nombre Maximal D’Appels De Récupération Sortante Par Appel {#max-fetch-calls}
+### Nbre max. d&#39;appels de récupération sortante par appel {#max-fetch-calls}
 
 Les fonctions AEM Edge appliquent une limite stricte de **32 requêtes principales par exécution** (c’est-à-dire par requête entrante gérée par votre fonction). Une fois cette limite atteinte, tous les autres appels `fetch()` échouent avec l’erreur suivante :
 
