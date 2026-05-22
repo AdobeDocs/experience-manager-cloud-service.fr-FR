@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: 53086e2ec6d9d962a8f1cb1cc40f0601da74ac63
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 71%
+source-wordcount: '164'
+ht-degree: 64%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 71%
 
 La carte d’activation fournit tout le contenu pertinent qui met en évidence la préparation, les actions spécifiques à entreprendre et une prise en compte approfondie pour garantir une activation fluide et réussie d’AEM as a Cloud Service.
 
-Cliquez sur la carte de votre projet pour ouvrir la page d’entrée du projet et accédez à la section **Go Live**, comme illustré dans la figure ci-dessous.
+Cliquez sur la carte de votre projet pour ouvrir la page de destination du projet et accédez à la section **Activation**, comme illustré dans la figure ci-dessous.
 
 ![Activation](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
@@ -27,9 +27,9 @@ Cliquez sur la carte de votre projet pour ouvrir la page d’entrée du projet e
 
 Consultez cette section pour explorer la carte d’activité Go Live :
 
-1. Cliquez sur le bouton **Afficher** de la carte **Go Live** .
+1. Cliquez sur le bouton **Affichage** à partir de la carte **Activation**.
 
-   ![Go Live - View](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
+   ![Activation - Affichage](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
 1. Un carrousel de contenu affiche des informations pertinentes pour cette phase du parcours de migration.
 
