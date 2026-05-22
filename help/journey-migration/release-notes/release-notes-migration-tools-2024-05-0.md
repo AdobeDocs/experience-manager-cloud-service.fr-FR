@@ -23,7 +23,7 @@ La date de publication de l’analyseur de bonnes pratiques v2.1.50 est le mai 2
 
 ### Nouveautés {#what-is-new-bpa}
 
-* L’analyseur de bonnes pratiques (BPA) prend désormais en charge le chargement automatique des rapports générés par BPA directement vers Cloud Acceleration Manager (CAM). Les utilisateurs n’auront plus besoin de télécharger manuellement le rapport et de le charger dans CAM. Pour plus d’informations, voir [ Utilisation de l’analyseur des bonnes pratiques ](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
+* L’analyseur de bonnes pratiques (BPA) prend désormais en charge le chargement automatique des rapports générés par BPA directement vers Cloud Acceleration Manager (CAM). Les utilisateurs n’auront plus besoin de télécharger manuellement le rapport et de le charger dans CAM. Pour plus d’informations, voir [&#x200B; Utilisation de l’analyseur des bonnes pratiques &#x200B;](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
 
 ### Correctifs {#bug-fixes-bpa}
 

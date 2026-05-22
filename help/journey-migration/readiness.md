@@ -222,4 +222,4 @@ Une fois que vous avez compris la portée des modifications requises pour passer
 * [AEM as a Cloud Service : introduction, architecture et pensée différente](https://experienceleague.adobe.com/?launch=ExperienceManager-D-1-2021.1.migration&recommended=ExperienceManager-D-1-2021.1.migration&lang=fr#dashboard/learning)
 * [Accueil d’AEM a Cloud Service](/help/overview/introduction.md) - Pour une présentation de la documentation d’Experience Manager as a Cloud Service, commencez ici.
 * [Présentation d’AEM as a Cloud Service](/help/overview/introduction.md) - Ce guide présente Experience Manager as a Cloud Service, y compris une introduction, la terminologie et l’architecture.
-* Parcours d’intégration](/help/journey-onboarding/overview.md)- Ce guide résume la prise en main d’Experience Manager as a Cloud Service, y compris la manière d’y accéder et de configurer votre équipe.[
+* Parcours d’intégration[&#128279;](/help/journey-onboarding/overview.md)- Ce guide résume la prise en main d’Experience Manager as a Cloud Service, y compris la manière d’y accéder et de configurer votre équipe.

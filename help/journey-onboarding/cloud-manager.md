@@ -58,7 +58,7 @@ Until you sign in to Cloud Manager as a system administrator with the **Business
 
 ## Accéder à Cloud Manager {#navigate-cloud-manager}
 
-1. Accédez à [](https://experience.adobe.com/experiencemanager).
+1. Accédez à [&#128279;](https://experience.adobe.com/experiencemanager).
 1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
 
 >[!NOTE]
