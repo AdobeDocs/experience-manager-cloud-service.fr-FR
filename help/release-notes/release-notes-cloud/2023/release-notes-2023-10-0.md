@@ -6,7 +6,7 @@ feature: Release Information
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '918'
+source-wordcount: '967'
 ht-degree: 98%
 
 ---
@@ -19,7 +19,7 @@ La section suivante concerne les notes de mise à jour de la version 2023.10.0 
 >
 >À partir de là, vous pouvez accéder aux notes de mise à jour des versions précédentes, telles que 2021 ou 2022.
 >
->Consultez la section [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr) pour en savoir plus sur les activations de fonctionnalités à venir pour [!DNL Experience Manager] as a Cloud Service.
+>Consultez la section [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr) pour en savoir plus sur les activations de fonctionnalités à venir pour [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Regardez la vidéo de vue d’ensemble de la version d’octobre 2023 pour un r
 
 ### Nouvelles fonctionnalités {#assets-features}
 
-**Module complémentaire AEM Assets pour Adobe Express** : Experience Manager Assets fournit désormais un module complémentaire pour l’Adobe Express. Le module complémentaire vous permet d’accéder directement aux ressources stockées dans Experience Manager Assets à partir de l’interface utilisateur d’Adobe Express. Vous pouvez placer du contenu géré dans AEM Assets dans la zone de travail d’Express, puis enregistrer du contenu nouveau ou modifié dans un référentiel AEM Assets. Le module complémentaire offre les avantages clés suivants :
+**Module complémentaire AEM Assets pour Adobe Express** : Experience Manager Assets fournit désormais un module complémentaire pour Adobe Express. Le module complémentaire vous permet d’accéder directement aux ressources stockées dans Experience Manager Assets à partir de l’interface utilisateur d’Adobe Express. Vous pouvez placer du contenu géré dans AEM Assets dans la zone de travail d’Express, puis enregistrer du contenu nouveau ou modifié dans un référentiel AEM Assets. Le module complémentaire offre les avantages clés suivants :
 
 * Réutilisation accrue du contenu en modifiant et en enregistrant de nouvelles ressources dans AEM.
 
@@ -59,7 +59,7 @@ Regardez la vidéo de vue d’ensemble de la version d’octobre 2023 pour un r
 
 * **Prise en charge des droits inter-organisations pour les bibliothèques** : Experience Manager Assets vous permet désormais de configurer l’accès aux bibliothèques Creative Cloud dans une autre organisation IMS. Cela permet d’accéder plus facilement aux derniers workflows inter-produits entre Creative Cloud et Experience Manager et réduit le temps et les efforts pour les personnes responsables de la création.
 
-### Fonctionnalités de pré-version disponibles dans [!DNL Experience Manager Assets] {#prerelease-features-assets}
+### Fonctionnalités de version préliminaire disponibles dans [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
 * **Dynamic Media** : [prise en charge de plusieurs sous-titres et pistes audio pour les vidéos dans Dynamic Media](/help/assets/dynamic-media/video.md#about-msma). Vous pouvez désormais facilement ajouter plusieurs sous-titres et plusieurs pistes audio à une vidéo principale. Cette fonctionnalité signifie que vos vidéos sont accessibles à une audience mondiale. Vous pouvez personnaliser une seule vidéo principale publiée pour une audience mondiale dans plusieurs langues et respecter les directives d’accessibilité pour différentes régions géographiques. Les auteurs et autrices peuvent également gérer les sous-titres et les pistes audio à partir d’un seul onglet de l’interface d’utilisation.
 
@@ -71,7 +71,7 @@ Regardez la vidéo de vue d’ensemble de la version d’octobre 2023 pour un r
 
 * **[Propriétés personnalisées pour les formulaires adaptatifs](/help/forms/template-editor-core-components.md#add-a-custom-group-name-in-the-policy-of-template-editor)** : vous pouvez associer des attributs personnalisés (paires clé-valeur) à un modèle de formulaire ou à un composant de formulaires adaptatifs pour permettre aux personnes qui développent des formulaires de fournir des comportements de formulaire dynamiques qui s’adaptent en fonction des valeurs de ces attributs personnalisés. Par exemple, les développeurs et développeuses peuvent concevoir différents rendus d’un composant de formulaires découplés sur des plateformes mobiles, de bureau ou web, en fonction des valeurs des attributs personnalisés, améliorant ainsi considérablement l’expérience client sur un large éventail d’appareils.
 
-* **Thèmes et modèles** : lancez le processus de création de formulaires grâce à nos nouveaux thèmes et modèles, conçus pour permettre aux personnes chargées de la création de formulaires de s’épanouir, qu’elles soient novices ou expérimentées. Créés en toute simplicité à l’aide des composants principaux des formulaires adaptatifs, ces thèmes et modèles soigneusement choisis vous permettent de commencer rapidement à créer des formulaires pour des cas d’utilisation courants.
+* **Thèmes et modèles** : lancez le processus de création de formulaires grâce à nos nouveaux thèmes et modèles, conçus pour permettre aux personnes chargées de la création de formulaires de s’épanouir, qu’elles soient novices ou expérimentées. Créés en toute simplicité à l’aide des composants principaux de formulaires adaptatifs, ces thèmes et modèles soigneusement conçus vous permettent de commencer rapidement à créer des formulaires pour des cas d’utilisation courants.
 
   ![Modèles prêts à l’emploi.](/help/forms/assets/form-templates-ootb.png)
 

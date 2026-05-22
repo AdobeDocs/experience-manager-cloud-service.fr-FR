@@ -6,8 +6,8 @@ role: Admin
 exl-id: d5eb6d9e-308f-4a51-8bcf-b8077b5bec82
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '1894'
-ht-degree: 59%
+source-wordcount: '2008'
+ht-degree: 62%
 
 ---
 
@@ -164,7 +164,7 @@ Journées de mise en production, événements en direct, pic de ventes : pas d�
 
 ### Transfert de journal AEM vers d’autres destinations {#log-forwarding}
 
-Il est désormais possible de transférer les journaux AEM vers Amazon S3, Sumo Logic, Dynatrace et votre propre compte New Relic (et non le compte fourni par Adobe). Notez que les journaux AEM (y compris Apache/Dispatcher) sont pris en charge pour ces destinations de journalisation, mais pas les journaux CDN.
+Il est désormais possible de transférer les journaux AEM vers Amazon S3, Sumo Logic, Dynatrace et votre propre compte New Relic (et non le compte fourni par Adobe). Notez que les journaux AEM (y compris Apache/Dispatcher) sont pris en charge pour ces destinations de journalisation, contrairement aux journaux de réseau CDN.
 
 Consultez l’ensemble complet des [destinations de transfert de journal prises en charge](/help/implementing/developing/introduction/log-forwarding.md).
 

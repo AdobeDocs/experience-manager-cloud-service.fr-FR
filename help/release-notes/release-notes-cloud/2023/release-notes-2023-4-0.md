@@ -6,7 +6,7 @@ feature: Release Information
 role: Admin
 source-git-commit: b4ffcddddfcd990c359380071f19b5442dee9eb2
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1222'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,7 @@ La section suivante concerne les notes de mise à jour techniques de la version�
 >
 >À partir de là, vous pouvez accéder aux notes de mise à jour des versions précédentes, telles que 2021 ou 2022.
 >
->Consultez la section [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr) pour en savoir plus sur les activations de fonctionnalités à venir pour [!DNL Experience Manager] as a Cloud Service.
+>Consultez la section [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr) pour en savoir plus sur les activations de fonctionnalités à venir pour [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ Consultez la vidéo Aperçu de la version d’avril 2023 pour obtenir un résum�
 
 * _Instantané_ Dynamic Media : testez des images de test ou des URL Dynamic Media pour voir la sortie de différents modificateurs d’image et évaluez les optimisations de l’imagerie dynamique pour la taille de fichier (avec diffusion WebP et AVIF), la bande passante réseau et le rapport de pixels de l’appareil. Voir [Instantané Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html?lang=fr).
 
-### Fonctionnalité dans la pré-version d’[!DNL Assets] {#prerelease-feature-assets}
+### Fonctionnalité dans la version préliminaire d’[!DNL Assets] {#prerelease-feature-assets}
 
 * Dynamic Media : l’interface utilisateur de certains champs liés au recadrage intelligent dans un profil d’image est désormais mise à jour pour prendre en compte les instructions actuelles pour définir un recadrage intelligent. Voir [Options de recadrage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=fr#crop-options).
 

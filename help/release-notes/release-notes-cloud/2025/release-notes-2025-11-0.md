@@ -6,8 +6,8 @@ role: Admin
 exl-id: 56bc4014-a3fc-46cf-88d9-dbecb1d4cc37
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '1461'
-ht-degree: 68%
+source-wordcount: '1577'
+ht-degree: 69%
 
 ---
 
@@ -47,7 +47,7 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 AEM propose toute une gamme d’agents qui vous permettent d’accélérer la création de votre contenu et d’orchestrer automatiquement les modifications. Pour plus d&#39;informations, voir [Présentation des agents](/help/ai-in-aem/agents/overview.md).
 
-## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 <!--
  ### Pre-Release features in AEM Forms 

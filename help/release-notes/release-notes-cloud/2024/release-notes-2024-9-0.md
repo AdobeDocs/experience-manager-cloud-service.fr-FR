@@ -6,7 +6,7 @@ role: Admin
 exl-id: 75ecd154-112a-4468-9962-de50bb1f4cd0
 source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
 workflow-type: tm+mt
-source-wordcount: '1312'
+source-wordcount: '1368'
 ht-degree: 90%
 
 ---
@@ -100,13 +100,13 @@ Les fonctionnalités de l’IA générative proposées sont les suivantes :
 
 * **Assistant IA pour les requêtes de produits** : obtenez des réponses instantanées à vos question sur les formulaires AEM. L’assistant IA sert de base de connaissances personnelle, fournissant des recommandations et des conseils pertinents directement au sein de la plateforme.
 
-* **Génération de formulaires adaptatifs** : créez facilement des formulaires complets avec des invites d’IA générative. L’IA générative d’Adobe génère automatiquement des formulaires conviviaux qui réduisent les abandons et personnalisent l’expérience.
+* **Génération de formulaires adaptatifs** : créez facilement des formulaires complets avec des prompts d’IA générative. L’IA générative d’Adobe génère automatiquement des formulaires conviviaux qui réduisent les abandons et personnalisent l’expérience.
 
 * **Génération de panneau pour Forms** : générez des sections de formulaire adaptées à des besoins spécifiques de collecte de données. Par exemple, générez des sections pour collecter des informations sur le paiement, les préférences des clientes et clients ou les détails du voyage.
 
-* **Modification des mises en page de formulaire** : testez différentes mises en page et conceptions à l’aide des invites d’IA générative. Testez différentes mises en page, telles que l’assistant ou les onglets, afin de trouver ce qui convient le mieux pour votre formulaire. Utilisez les invites d’IA générative afin d’optimiser vos formulaires pour la réactivité mobile et de créer des formulaires attrayants pour les utilisateurs et utilisatrices.
+* **Modification des mises en page de formulaire** : testez différentes mises en page et conceptions à l’aide des prompts d’IA générative. Testez différentes mises en page, telles que l’assistant ou les onglets, afin de trouver ce qui convient le mieux pour votre formulaire. Utilisez les prompts d’IA générative afin d’optimiser vos formulaires pour la réactivité mobile et de créer des formulaires attrayants pour les utilisateurs et utilisatrices.
 
-* **Configurer l’action d’envoi** : utilisez les invites d’IA générative pour configurer facilement une action d’envoi pour votre formulaire. Faites votre choix parmi une bibliothèque d’actions d’envoi préconfigurées ou parmi une liste d’actions d’envoi personnalisées, créées et déployées par votre propre équipe de développement.
+* **Configurer l’action d’envoi** : utilisez les prompts d’IA générative pour configurer facilement une action d’envoi pour votre formulaire. Faites votre choix parmi une bibliothèque d’actions d’envoi préconfigurées ou parmi une liste d’actions d’envoi personnalisées, créées et déployées par votre propre équipe de développement.
 
 >[!IMPORTANT]
 >
@@ -140,7 +140,7 @@ Protégez certaines ressources de contenu en affichant une boîte de dialogue d�
 
 Déclarez [&#x200B; redirections de navigateur &#x200B;](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) dans un fichier de configuration Git qui sont déployées et évaluées sur le réseau CDN. Cela peut s’avérer utile dans certains cas, notamment pour supprimer des pages, modifier la structure du site et optimiser l’optimisation du référencement.
 
-### Nouvelle AEM Developer Console (version bêta publique) {#aem-developer-console-beta}
+### Nouvelle AEM Developer Console (version Beta publique) {#aem-developer-console-beta}
 
 Testez une [AEM Developer Console](/help/implementing/developing/introduction/aem-developer-console.md) repensée qui offre une expérience plus interactive pour le débogage du code dans les environnements cloud.
 
@@ -154,7 +154,7 @@ Comme pour AEM 6.5, Apache/le Dispatcher ingère des mappages de réécriture p
 
 ### Pipeline de configuration des RDE (programme d’adoption précoce) {#config-pipeline-rdes-early-adopter}
 
-Le [Pipeline de configuration](/help/operations/config-pipeline.md) est utilisé pour déployer les configurations de fichier yaml, y compris les options de réseau CDN (règles de filtrage du trafic, transformations de requête/réponse, etc.). Rejoignez le programme d’adoption précoce en envoyant un e-mail à **<aemcs-cdn-config-adopter@adobe.com>** pour déployer ces mêmes configurations dans des RDE (Rapid Development Environments) qui utilisent une interface de ligne de commande.
+Le [Pipeline de configuration](/help/operations/config-pipeline.md) est utilisé pour déployer les configurations de fichier yaml, y compris les options de réseau CDN (règles de filtrage du trafic, transformations de requête/réponse, etc.). Rejoignez le programme d’adoption précoce en envoyant un e-mail à **<aemcs-cdn-config-adopter@adobe.com>** pour déployer ces mêmes configurations dans des environnements de développement rapide (RDE) qui utilisent une interface de ligne de commande.
 
 ## [!DNL Experience Manager] Guides {#guides}
 

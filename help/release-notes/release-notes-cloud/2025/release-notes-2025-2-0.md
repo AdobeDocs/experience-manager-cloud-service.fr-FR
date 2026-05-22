@@ -6,7 +6,7 @@ role: Admin
 exl-id: b893663d-35f1-43ae-a029-4c249b117f2d
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1655'
 ht-degree: 96%
 
 ---
@@ -61,7 +61,7 @@ Nous continuerons à activer le nouvel [Éditeur de fragment de contenu](/help/s
 
 **API Translation HTTP**
 
-L’API REST AEM Translation HTTP, en mode d’adoption précoce depuis un certain temps, est désormais généralement disponible. La documentation se trouve [ici.](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/translation/) L’API permet d’automatiser les étapes requises dans le processus de gestion de traduction du contenu dans AEM.
+L’API REST AEM Translation HTTP, en mode d’adoption précoce depuis un certain temps, est désormais généralement disponible. La documentation se trouve [ici.](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/translation/). L’API permet d’automatiser les étapes requises dans le processus de gestion de traduction du contenu dans AEM.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -146,8 +146,8 @@ Découvrez les [API OpenAPI AEM](/help/implementing/developing/open-api-based-ap
 
 Concrètement, les points d’entrée d’API répertoriés ci-dessous sont disponibles dans le cadre d’un programme d’adoption précoce. Si cela vous intéresse, envoyez un e-mail à l’adresse [aem-apis@adobe.com](mailto:aem-apis@adobe.com) décrivant comment vous prévoyez de les utiliser.
 
-* [API Sites Content Fragments](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
-* [API Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
+* [API de fragments de contenu de sites](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
+* [API ASSETS](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
 * API de dossiers Sites et Assets
 * [API Forms Communications](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 

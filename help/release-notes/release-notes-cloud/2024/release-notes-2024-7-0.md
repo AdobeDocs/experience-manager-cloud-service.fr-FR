@@ -6,8 +6,8 @@ role: Admin
 exl-id: 6194df9d-8c3c-4c7f-be59-099b970a565a
 source-git-commit: 47b6d7871201cd7dbc1db77620879e69bce4ad3a
 workflow-type: tm+mt
-source-wordcount: '1626'
-ht-degree: 82%
+source-wordcount: '1709'
+ht-degree: 80%
 
 ---
 
@@ -150,7 +150,7 @@ Protégez certaines ressources de contenu en affichant une boîte de dialogue d�
 
 #### Redirections Côté Serveur (Programme Des Utilisateurs Et Utilisatrices Précoces) {#server-side-redirects-early-adopter}
 
-Configurez les redirections côté serveur 301/302 dans le contrôle de code source et déployez-les sur le réseau CDN. [En savoir plus](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Notez qu’il existe déjà plusieurs autres fonctionnalités liées à la [configuration du réseau CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md), y compris les transformations de requêtes et de réponses, et le routage du trafic vers les sites hors AEM.
+Configurez les redirections côté serveur 301/302 dans le contrôle de code source et déployez-les sur le réseau CDN. [En savoir plus](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Notez que plusieurs autres fonctionnalités liées à la [configuration du réseau CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md) sont déjà disponibles, notamment les transformations de requête et de réponse, ainsi que le routage du trafic vers des sites hors AEM.
 
 #### Les utilisateurs et utilisatrices professionnels peuvent déclarer des redirections en dehors de Git (programme d’adoption précoce) {#apache-rewritemaps-early-adopter}
 

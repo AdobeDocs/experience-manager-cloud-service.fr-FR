@@ -1,19 +1,19 @@
 ---
-title: Notes de mise à jour de la version 2025.12.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Notes de mise à jour de la version 2025.12.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Notes de mise à jour de la version 2025.12.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Notes de mise à jour de la version 2025.12.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 61f93179-ad43-40eb-88ef-86299a87b827
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '1832'
+source-wordcount: '1945'
 ht-degree: 51%
 
 ---
 
-# Notes de mise à jour de la version 2025.12.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour 2025.12.0 pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La section suivante concerne les notes de mise à jour de la version 2025.12.0 d’[!DNL Experience Manager] as a Cloud Service.
+La section ci-dessous présente les notes de mise à jour techniques de la version 2025.12.0 d’[!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
