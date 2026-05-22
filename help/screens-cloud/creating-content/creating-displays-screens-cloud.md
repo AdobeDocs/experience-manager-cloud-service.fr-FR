@@ -135,4 +135,4 @@ Toutes les opérations de dossier sont accessibles via la barre d’actions de s
 
 ## Et après ? {#whats-next}
 
-Maintenant que vous avez appris à créer et gérer des affichages pour votre projet, vous devez continuer votre parcours Screens as a Cloud Service en consultant le document [Attribution d’un canal à un affichage dans Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html).
+Maintenant que vous avez appris à créer et gérer des affichages pour votre projet, vous devez continuer votre parcours Screens as a Cloud Service en consultant le document [Attribution d’un canal à un affichage dans Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=fr).
