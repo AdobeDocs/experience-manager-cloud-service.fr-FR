@@ -177,7 +177,7 @@ x-aem-debug: edge=true,x-forwarded-host=www.example.com, x-forwarded-for=....
 >Vous pouvez utiliser un environnement de développement rapide (RDE) pour déployer et tester votre configuration :
 >
 >* [Environnements de développement rapide](/help/implementing/developing/introduction/rapid-development-environments.md)
->* [Utilisation d’un environnement de développement rapide](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+>* [Utilisation d’un environnement de développement rapide](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### Exemples de configurations de fournisseur de réseau CDN {#sample-configurations}
 
