@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: 7c0703d746601742a28c3c98f35e69de70f25e05
 workflow-type: tm+mt
-source-wordcount: '3647'
-ht-degree: 34%
+source-wordcount: '3846'
+ht-degree: 36%
 
 ---
 
@@ -62,7 +62,7 @@ Pour ingérer votre jeu de migration à l’aide de Cloud Acceleration Manager, 
 
    * **Pré-copie :** sélectionnez la valeur `Pre-copy`
       * Vous pouvez exécuter l’étape facultative de précopie pour accélérer considérablement l’ingestion. Pour plus d’informations, veuillez consulter la section [Ingestion avec AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy).
-      * Si l’ingestion avec une pré-copie est utilisée (pour S3 ou Azure Data Store), il est recommandé d’exécuter `Author`’ingestion seule en premier. Cela permet d’accélérer l’ingestion `Publish` lorsqu’elle est exécutée ultérieurement.
+      * Si l’ingestion avec une précopie est utilisée (pour S3 ou le magasin de données Azure), il est recommandé d’exécuter d’abord l’ingestion `Author` seule. Cela permet d’accélérer l’ingestion `Publish` lorsqu’elle est exécutée ultérieurement.
 
    >[!IMPORTANT]
    > Vous pouvez déclencher une ingestion vers un environnement de destination seulement si vous appartenez au groupe local **Administrateurs et administratrices d’AEM** sur le service de création Cloud Service de destination. Si vous ne parvenez pas à démarrer une ingestion, reportez-vous à la section [Impossible de démarrer l’ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) pour plus d’informations.
@@ -118,7 +118,7 @@ Commencez par créer une tâche d’ingestion et assurez-vous que l’option **E
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="Dépannage pour l’ingestion de contenu"
 >abstract="Reportez-vous aux journaux d’ingestion et à la documentation afin de trouver des solutions aux raisons courantes de l’échec d’une ingestion ainsi que le moyen de résoudre le problème. Une fois corrigée, l’ingestion peut être exécutée à nouveau."
->additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers" text="Validation des transferts de contenu "
+>additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers" text="Validation des transferts de contenu"
 
 ### Impossible pour CAM de récupérer le jeton de migration {#cam-unable-to-retrieve-the-migration-token}
 
@@ -151,13 +151,13 @@ Ce message indique que Cloud Acceleration Manager n’a pas pu atteindre le se
 > Le champ « Jeton de migration » s’affiche, car dans certains cas, la récupération de ce jeton est ce qui est en fait interdit. En autorisant sa mise à disposition manuelle, cela peut permettre à l’utilisateur ou l’utilisatrice de démarrer rapidement l’ingestion, sans aide supplémentaire. Si le jeton est fourni et que le message s’affiche toujours, ce n’est donc pas la récupération du jeton qui a posé problème.
 
 * AEM as a Cloud Service conserve l’état de l’environnement et peut parfois devoir redémarrer le service de migration pour plusieurs raisons normales. Si ce service redémarre, il ne peut pas être atteint, mais il finit par être disponible.
-* Il est possible qu’un autre processus soit en cours d’exécution sur l’instance. Par exemple, si [Mises à jour de la version d’AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) applique une mise à jour, le système peut être occupé et le service de migration régulièrement indisponible. Une fois ce processus terminé, le début de l’ingestion peut être réessayé.
+* Il est possible qu’un autre processus soit en cours d’exécution sur l’instance. Par exemple, si [Mises à jour de la version d’](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) applique une mise à jour, le système peut être occupé et le service de migration régulièrement indisponible. Une fois ce processus terminé, le début de l’ingestion peut être réessayé.
 * Si une [liste autorisée d’adresses IP a été appliquée](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) via Cloud Manager, cela empêche Cloud Acceleration Manager d’accéder au service de migration. Une adresse IP ne peut pas être ajoutée pour les ingestions, car leur adresse est dynamique. Actuellement, la seule solution consiste à désactiver le place sur la liste autorisée IP pendant le processus d’ingestion et d’indexation en ajoutant temporairement du 0.0.0.0/0 à la place sur la liste autorisée pendant l’exécution du processus d’ingestion et d’indexation.
 * D’autres raisons peuvent nécessiter un examen. Si l’ingestion ou l’indexation continue d’échouer, contactez l’Assistance clientèle d’Adobe.
 
 ### Mises à jour et assimilations de version AEM {#aem-version-updates-and-ingestions}
 
-Les [mises à jour de la version d’AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) sont automatiquement appliquées aux environnements pour les tenir à jour avec la version d’AEM as a Cloud Service la plus récente. Si la mise à jour est déclenchée lors d’une ingestion, elle peut entraîner des résultats imprévisibles, notamment la corruption de l’environnement.
+Les [mises à jour de la version d’](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) sont automatiquement appliquées aux environnements pour les tenir à jour avec la version d’AEM as a Cloud Service la plus récente. Si la mise à jour est déclenchée lors d’une ingestion, elle peut entraîner des résultats imprévisibles, notamment la corruption de l’environnement.
 
 Si la fonction « Mises à jour de la version d’AEM » est intégrée au programme de destination, le processus d’ingestion tente de désactiver sa file d’attente avant son démarrage. Une fois l’ingestion terminée, l’état de la mise à jour de version est rétabli à ce qu’il était avant le début des ingestions.
 

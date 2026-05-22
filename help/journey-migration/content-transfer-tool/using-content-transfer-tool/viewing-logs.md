@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: 91f9bcafc087b6f9329d7a47509cc659714705ff
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 83%
+source-wordcount: '255'
+ht-degree: 85%
 
 ---
 
@@ -40,6 +40,6 @@ Suivez ensuite les étapes ci-dessous :
 
 ### Journaux d’ingestion
 
-Pour afficher les journaux d’ingestion, accédez à la liste Tâches d’ingestion dans Cloud Acceleration Manager, puis recherchez la tâche de migration souhaitée et cliquez sur les trois points (**...**). Vous pouvez ensuite cliquer sur **Télécharger le journal** pour télécharger les journaux.
+Pour afficher les journaux d’ingestion, accédez à la liste Tâches d’ingestion dans Cloud Acceleration Manager, puis recherchez la tâche de migration souhaitée et cliquez sur les trois points (**...**) du boulot. Vous pouvez ensuite cliquer sur **Télécharger le journal** pour télécharger les journaux.
 
 ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam28.png)

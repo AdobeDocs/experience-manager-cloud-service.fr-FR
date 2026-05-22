@@ -6,7 +6,7 @@ feature: Operations
 role: Admin
 source-git-commit: d5addc40eb48000c515b670ef5f7c7a7e8b79928
 workflow-type: tm+mt
-source-wordcount: '2057'
+source-wordcount: '2098'
 ht-degree: 38%
 
 ---
@@ -273,7 +273,7 @@ Déclarez un fichier de configuration et déployez-le comme décrit dans les ét
    * toutes les propriétés doivent être définies. Il n’existe aucune valeur par défaut héritée.
    * les types (entiers, chaînes, booléens, etc.) dans les tableaux de propriétés ci-dessous doivent être respectés.
 
-1. Créez un pipeline de configuration dans Cloud Manager, comme décrit dans l’article [configuration du pipeline](/help/operations/config-pipeline.md#managing-in-cloud-manager).
+1. Créez un pipeline de configuration dans Cloud Manager, comme décrit dans l’[article sur le pipeline de configuration](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 ### Purge de version {#version-purge}
 

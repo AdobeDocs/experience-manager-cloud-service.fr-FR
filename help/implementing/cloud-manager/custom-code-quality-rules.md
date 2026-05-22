@@ -7,7 +7,7 @@ feature: Cloud Manager, Developing
 role: Admin, Developer
 source-git-commit: d9a6e7c56a786792599e91ca7a2734dcf15fcb23
 workflow-type: tm+mt
-source-wordcount: '4441'
+source-wordcount: '4500'
 ht-degree: 63%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 63%
 >title="Règles de qualité du code personnalisé"
 >abstract="Découvrez les règles de qualité du code personnalisé Cloud Manager, basées sur les bonnes pratiques en matière d’ingénierie d’Adobe Experience Manager, pour garantir un code de haute qualité grâce à des tests approfondis."
 
-Découvrez les règles de qualité du code personnalisé de Cloud Manager, basées sur les bonnes pratiques d’ingénierie de Adobe Experience Manager, pour garantir une qualité élevée du code grâce à des tests approfondis. Voir aussi [test de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md).
+Découvrez les règles de qualité du code personnalisé Cloud Manager, basées sur les bonnes pratiques en matière d’ingénierie d’Adobe Experience Manager, pour garantir un code de haute qualité grâce à des tests approfondis. Voir aussi [test de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md).
 
 Les règles SonarQube complètes ne peuvent pas être téléchargées en raison des informations propriétaires d’Adobe. Vous pouvez télécharger la liste complète des règles *actuelles* [via ce lien](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx). Poursuivez la lecture de ce document pour obtenir des descriptions et des exemples de règles.
 
@@ -235,7 +235,7 @@ public void orDoThis(Session session) throws Exception {
 * **Gravité** : majeure
 * **Depuis** : version 2018.4.0
 
-Comme décrit dans la documentation [`Sling`](https://sling.apache.org/documentation/the-sling-engine/servlets.html) les servlets de liaison par chemins d’accès sont découragés. Les servlets liés au chemin ne peuvent pas utiliser les contrôles d’accès JCR standard et, par conséquent, nécessitent une rigueur de sécurité supplémentaire. Plutôt que d’utiliser des servlets liés au chemin d’accès, il est recommandé de créer des nœuds dans le référentiel et d’enregistrer les servlets par type de ressource.
+Comme décrit dans la documentation [&#128279;](https://sling.apache.org/documentation/the-sling-engine/servlets.html) les servlets de liaison par chemins d’accès sont découragés. `Sling`Les servlets liés au chemin ne peuvent pas utiliser les contrôles d’accès JCR standard et, par conséquent, nécessitent une rigueur de sécurité supplémentaire. Plutôt que d’utiliser des servlets liés au chemin d’accès, il est recommandé de créer des nœuds dans le référentiel et d’enregistrer les servlets par type de ressource.
 
 #### Code non conforme {#non-compliant-code-5}
 
@@ -510,14 +510,14 @@ public void doThis(Resource resource) {
 
 N’utilisez pas le planificateur de `Sling` pour les tâches qui nécessitent une exécution garantie. Les tâches planifiées Sling garantissent l’exécution et conviennent mieux aux environnements organisés avec ou sans cluster.
 
-Voir Gestion des tâches et des événements [`Apache Sling`](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) pour en savoir plus sur la manière dont les tâches Sling sont gérées dans des environnements en cluster.
+Voir Gestion des tâches et des événements [&#128279;](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) pour en savoir plus sur la manière dont les tâches Sling sont gérées dans des environnements en cluster.`Apache Sling`
 
 ### N’utilisez pas d’API obsolètes d’Experience Manager. {#sonarqube-aem-api-deprecated}
 
 * **Clé** : java:S1874
 * **Type** : compatibilité `Vulnerability` ou `Bug`/Cloud Service
 * **Gravité** : Info, Mineur ou Majeur
-* **Depuis** : version 2026.1.0
+* **Depuis** : Version 2026.1.0
 
 La surface de l’API Experience Manager est en constante évolution afin d’identifier les API dont l’utilisation doit être arrêtée. Ces API sont obsolètes et sont marquées d’une date de suppression.
 
@@ -547,7 +547,7 @@ Cependant, il arrive qu’une API devienne obsolète dans le contexte d’Experi
 
 Le projet `Apache Sling` décourage l’utilisation de l’annotation `@Inject` dans le contexte des modèles Sling, car elle peut entraîner de mauvaises performances lorsqu’elle est combinée avec la `DefaultInjectionStrategy.OPTIONAL` (au niveau du champ ou de la classe). Des injections plus spécifiques (comme les annotations `@ValueMapValue` ou `@OsgiInjector`) doivent être utilisées à la place.
 
-Consultez la documentation [`Apache Sling`](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) pour plus d’informations sur les annotations recommandées et sur les raisons pour lesquelles cette recommandation a été formulée.
+Consultez la documentation [&#128279;](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) pour plus d’informations sur les annotations recommandées et sur les raisons pour lesquelles cette recommandation a été formulée.`Apache Sling`
 
 
 ### Réutilisation des instances d’un client HTTP {#sonarqube-reuse-httpclient}
@@ -661,7 +661,7 @@ Pour plus d’informations sur la personnalisation des définitions d’index, c
 * **Gravité** : bloqueur
 * **Depuis** : 2021.8.0
 
-Les index Oak de type `lucene` doivent toujours être indexés de manière asynchrone. Si vous ne le faites pas, cela peut entraîner une instabilité du système. Vous trouverez plus d’informations sur la structure des index Lucene dans la [documentation d’Oak](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition).
+Les index Oak de type `lucene` doivent toujours être indexés de manière asynchrone. Si vous ne le faites pas, cela peut entraîner une instabilité du système. Vous trouverez plus d’informations sur la structure des index Lucene dans la [documentation d’](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition).
 
 #### Code non conforme {#non-compliant-code-indexasync}
 
@@ -750,7 +750,7 @@ Le fait qu’un même composant OSGi soit configuré plusieurs fois est un probl
 >
 >Par exemple, si la création génère des packages nommés `com.myco:com.myco.ui.apps` et `com.myco:com.myco.all`, où `com.myco:com.myco.all` incorpore `com.myco:com.myco.ui.apps`, toutes les configurations dans `com.myco:com.myco.ui.apps` seront signalées comme doublons.
 >
->En règle générale, cette situation est un cas de non-respect des [&#x200B; directives relatives à la structure du package de contenu &#x200B;](/help/implementing/developing/introduction/aem-project-content-package-structure.md). Dans cet exemple, la propriété `com.myco:com.myco.ui.apps` est absente de la `<cloudManagerTarget>none</cloudManagerTarget>` du package .
+>En règle générale, cette situation est un cas de non-respect des [&#x200B; directives relatives à la structure du package de contenu &#x200B;](/help/implementing/developing/introduction/aem-project-content-package-structure.md). Dans cet exemple, la propriété `<cloudManagerTarget>none</cloudManagerTarget>` est absente de la `com.myco:com.myco.ui.apps` du package .
 
 #### Code non conforme {#non-compliant-code-osgi}
 
@@ -913,7 +913,7 @@ L’outil de migration dans le [référentiel GitHub de ressources d’Experienc
 
 Bien que l’utilisation des modèles statiques soit historiquement courante dans les projets Experience Manager, Adobe recommande les modèles modifiables, car ils offrent la plus grande flexibilité et prennent en charge des fonctionnalités supplémentaires qui ne sont pas présentes dans les modèles statiques. Vous trouverez plus d’informations à ce sujet dans le document [Modèles de page](/help/implementing/developing/components/templates.md).
 
-La migration de modèles statiques vers des modèles modifiables peut être largement automatisée à l’aide des [outils de modernisation d’Experience Manager](https://opensource.adobe.com/aem-modernize-tools/).
+La migration de modèles statiques vers des modèles modifiables peut être largement automatisée à l’aide des [outils de modernisation d’](https://opensource.adobe.com/aem-modernize-tools/).
 
 ### L’utilisation des composants de base hérités n’est pas encouragée. {#oakpal-usage-legacy}
 
@@ -924,7 +924,7 @@ La migration de modèles statiques vers des modèles modifiables peut être larg
 
 Les composants de base hérités (c’est-à-dire les composants situés dans `/libs/foundation`) ont été abandonnés depuis plusieurs versions d’Experience Manager au profit des composants principaux. L’utilisation des composants de base comme base pour les composants personnalisés, que ce soit par recouvrement ou par héritage, n’est pas encouragée et ces composants doivent être convertis en composants principaux correspondants.
 
-[Les outils de modernisation d’Experience Manager](https://opensource.adobe.com/aem-modernize-tools/) peuvent faciliter cette conversion.
+[Les outils de modernisation d’](https://opensource.adobe.com/aem-modernize-tools/) peuvent faciliter cette conversion.
 
 ### Utilisez uniquement les noms et l’ordre des modes d’exécution pris en charge {#oakpal-supported-runmodes}
 

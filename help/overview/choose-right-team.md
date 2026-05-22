@@ -5,9 +5,9 @@ exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 feature: Release Information
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '832'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '874'
+ht-degree: 98%
 
 ---
 
@@ -30,8 +30,8 @@ Votre tâche cette semaine consiste à passer en revue ces deux listes avec votr
 
 ## **Fonctions clés pour AEM Experience Manager Sites**
 
-Une équipe gagnante a besoin de neuf personnes aux bons postes – tout comme votre équipe chargée du déploiement. Votre réussite avec Adobe Experience Manager Sites dépend de la force des membres de votre équipe et de leur capacité à travailler ensemble. Assurez-vous que ces neuf fonctions sont attribuées
-aux personnes ayant les qualifications suggérées.
+Une équipe gagnante a besoin de neuf personnes aux bons postes – tout comme votre équipe chargée du déploiement. Votre réussite avec Adobe Experience Manager Sites dépend de la force des membres de votre équipe et de leur capacité à travailler ensemble. Assurez-vous que ces neuf rôles vous sont attribués
+aux personnes possédant les qualifications suggérées.
 
 | Rôle | Compétences | Niveau de capacité | Qualités |
 |--- |--- |--- |--- |
@@ -76,7 +76,7 @@ Maintenant que vous connaissez les fonctions requises, consultez le graphique ci
 
 <br>
 
-![Graphique à barres horizontales présentant les rôles fictifs et leur niveau d’implication dans l’équipe AEM Assets](/help/overview/assets/team_involvement2.png).
+![Graphique en barres horizontales présentant les rôles fictifs et leur niveau d’implication dans l’équipe AEM Assets](/help/overview/assets/team_involvement2.png).
 
 >[!TIP]
 >

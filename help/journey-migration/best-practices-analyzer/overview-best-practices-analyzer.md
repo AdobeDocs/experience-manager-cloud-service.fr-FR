@@ -1,12 +1,12 @@
 ---
 title: Présentation de l’analyseur de bonnes pratiques
-description: Découvrez comment utiliser l’analyseur des bonnes pratiques pour évaluer le respect de votre mise en oeuvre AEM des bonnes pratiques recommandées.
+description: Découvrez comment utiliser l’analyseur de bonnes pratiques pour évaluer le respect des bonnes pratiques recommandées par votre implémentation d’AEM
 exl-id: 46c567f8-91e2-4d85-98bd-61d183b887d5
 feature: Migration
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '368'
 ht-degree: 94%
 
 ---
@@ -26,7 +26,7 @@ L’outil génère un rapport destiné à identifier les domaines de reconfigura
 
 Le rapport de l’analyseur des bonnes pratiques permet de mieux comprendre le degré de préparation général à la mise à niveau. Ses résultats sont organisés par catégories de problèmes qui devront être résolus avant un déploiement réussi dans AEM as a Cloud Service.
 
-Le rapport de l’analyseur de bonnes pratiques comprend les catégories suivantes :
+Le rapport de l’analyseur des bonnes pratiques comprend les catégories suivantes :
 
 * Fonctionnalités de l’application qui doivent être reconfigurées
 * Éléments du référentiel qui doivent être déplacés vers un emplacement pris en charge
@@ -37,6 +37,6 @@ Le rapport de l’analyseur de bonnes pratiques comprend les catégories suivant
 Les liens contenus dans le rapport de l’analyseur de bonnes pratiques apportent des informations supplémentaires sur les catégories, les implications possibles et les solutions associées à ces catégories.
 
 >[!NOTE]
->Le rapport d’analyse des meilleures pratiques accélère le processus d’évaluation du délai et du coût de la transition vers AEM as a Cloud Service en apportant des informations qui, en son absence, auraient dû être collectées et évaluées manuellement.
+>Le rapport de l’analyseur des bonnes pratiques accélère le processus d’évaluation du délai et du coût de la transition vers AEM as a Cloud Service en apportant des informations qui, en son absence, auraient dû être collectées et évaluées manuellement.
 
-Vous pouvez également télécharger le rapport de l’analyseur de bonnes pratiques depuis votre instance AEM. Reportez-vous à la section [Affichage du rapport du Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) pour plus d’informations.
+Vous pouvez également télécharger le rapport de l’analyseur des bonnes pratiques depuis votre instance AEM. Reportez-vous à la section [Affichage du rapport du Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) pour plus d’informations.

@@ -5,8 +5,8 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '878'
+workflow-type: tm+mt
+source-wordcount: '892'
 ht-degree: 100%
 
 ---
@@ -115,5 +115,5 @@ Vous trouverez ci-dessous des ressources facultatives supplémentaires si vous s
 
 * [Équipe et profils de produits AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md) - Découvrez comment l’équipe et les profils de produits AEM as a Cloud Service peuvent accorder et limiter l’accès à vos solutions Adobe sous licence.
 * [Gestion des produits et accès utilisateur dans Admin Console](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) - Découvrez comment utiliser Admin Console pour gérer l’accès des utilisateurs et utilisatrices.
-* [Configuration de l’accès à la présentation d’AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=fr) - Consultez cette présentation abrégée pour en savoir plus sur la configuration des utilisateurs et utilisatrices, groupes d’utilisateurs et d’utilisatrices et profils de produits Adobe IMS dans Admin Console.
+* [Présentation de la configuration de l’accès à AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=fr) - Consultez cette présentation abrégée pour en savoir plus sur la configuration des utilisateurs et utilisatrices, groupes d’utilisateurs et d’utilisatrices et profils de produits Adobe IMS dans Admin Console.
 

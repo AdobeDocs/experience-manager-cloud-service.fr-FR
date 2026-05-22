@@ -7,8 +7,8 @@ feature: Cloud Manager, Developing
 role: Admin, Developer
 source-git-commit: b94debebf36f379fc2cb2f193a244fe154c77537
 workflow-type: tm+mt
-source-wordcount: '1260'
-ht-degree: 16%
+source-wordcount: '1337'
+ht-degree: 17%
 
 ---
 
@@ -117,7 +117,7 @@ Les clés RSA de plus de 2 048 bits (telles que les clés RSA de 3 072 bits ou d
   Bien que les certificats génériques (par exemple, `*.example.com`) soient pris en charge, ils ne doivent être utilisés que lorsque cela est nécessaire. En cas de chevauchement, le certificat le plus spécifique est prioritaire. Par exemple, le certificat spécifique sert `dev.example.com` au lieu du caractère générique (`*.example.com`).
 
 * **Validation et dépannage :**
-Avant de tenter d’installer un certificat avec Cloud Manager, Adobe vous recommande de valider l’intégrité de votre certificat localement à l’aide d’outils tels que `openssl`. Par exemple :
+Avant de tenter d’installer un certificat avec Cloud Manager, Adobe vous recommande de valider l’intégrité de votre certificat localement à l’aide d’outils tels que `openssl`. Par exemple,
 
   `openssl verify -untrusted intermediate.pem certificate.pem`
 

@@ -1,14 +1,14 @@
 ---
 title: Découvrez comment rechercher et trouver des ressources dans  [!DNL Assets view] ?
-description: Découvrez comment rechercher et trouver des ressources dans la vue AEM Assets. Les puissantes fonctionnalités de recherche de vous permettent de découvrir rapidement la ressource appropriée et d’améliorer la vitesse de votre contenu.
+description: Découvrez comment rechercher et trouver des ressources dans la vue AEM Assets. Ses puissantes fonctionnalités de recherche vous permettent de trouver rapidement la ressource appropriée et d’améliorer la vitesse de votre contenu.
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '1627'
-ht-degree: 75%
+source-wordcount: '1689'
+ht-degree: 76%
 
 ---
 
@@ -390,13 +390,13 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 
 ## Étapes suivantes {#next-steps}
 
-* [Regardez une vidéo pour rechercher des ressources dans la vue Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=fr)
+* [Regardez une vidéo pour rechercher des ressources dans la vue Assets .](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=fr)
 
 * Faites des commentaires sur le produit en utilisant l’option [!UICONTROL Commentaires] disponible dans l’interface utilisateur de la vue Assets
 
 * Faites des commentaires sur la documentation en utilisant les options [!UICONTROL Modifier cette page] ![Modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![Créer un problème GitHub](assets/do-not-localize/github-issue.png) disponibles dans la barre latérale de droite.
 
-* Contacter l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr#support)
+* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr#support).
 
 
 

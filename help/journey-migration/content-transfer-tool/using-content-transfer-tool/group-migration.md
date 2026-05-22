@@ -4,8 +4,8 @@ description: Présentation de la migration de groupe dans AEM as a Cloud Service
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1917'
-ht-degree: 6%
+source-wordcount: '1987'
+ht-degree: 8%
 
 ---
 
@@ -39,7 +39,7 @@ L’outil de transfert de contenu et Cloud Acceleration Manager migrent tous les
 
 * Si un groupe utilise une politique de liste de contrôle d’accès ou de groupe d’utilisateurs fermé pour le contenu migré, ce groupe est migré, avec quelques exceptions répertoriées ci-dessous.
 * Plusieurs groupes sont intégrés et déjà présents sur le système cloud cible ; ils ne sont jamais migrés.
-   * Certains groupes intégrés peuvent inclure des groupes de membres qui ne sont _pas_ intégrés ; tout groupe de membres de ce type (membres directs ou membres de membres, etc.) référencé dans une liste de contrôle d’accès ou une politique de groupe d’utilisateurs fermé du contenu migré sera migré, afin de s’assurer que les utilisateurs qui sont membres de ces groupes (directement ou indirectement) conservent leur accès au contenu migré.
+   * Certains groupes natifs peuvent inclure des groupes membres qui ne sont _pas_ natifs, tels que des groupes membres (membres directs ou membres de membres, etc.) Les référencés dans une politique ACL ou CUG du contenu migré seront migrés afin de s’assurer que les utilisateurs qui sont membres de ces groupes (directement ou indirectement) conservent leur accès au contenu migré.
 * D’autres groupes, tels que ceux introuvables sur une politique ACL ou CUG, ceux déjà sur le système de destination et ceux avec des données limitées par leur unicité déjà sur le système cible, ne seront pas migrés.
 
 Notez que le chemin d’accès consigné/signalé pour un groupe est uniquement le premier à avoir déclenché la migration de ce groupe. Ce groupe peut également se trouver sur d’autres chemins d’accès au contenu.

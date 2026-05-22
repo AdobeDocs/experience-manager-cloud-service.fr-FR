@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '1471'
-ht-degree: 79%
+source-wordcount: '2496'
+ht-degree: 74%
 
 ---
 
@@ -72,21 +72,21 @@ Cloud Manager, qui était un outil de diffusion de contenu facultatif pour Manag
 
 Consultez les ressources d’aide autonome sur la configuration et le déploiement d’environnements AEM as a Cloud Service.
 
-1. [Configurer les pipelines CM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=fr)
+1. [Configuration des pipelines CM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=fr)
 
    * Pipeline de production
    * Pipelines de la qualité du code et hors production uniquement
 
-1. [Déploiement du code](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=fr)
-1. [Présentation des résultats de test](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/overview-test-results.html?lang=fr)
+1. [Déployer le code](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=fr)
+1. [Présentation des résultats des tests](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/overview-test-results.html?lang=fr)
 1. **Accès aux journaux**
 
    * [via l’interface utilisateur de CM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=fr)
-   * [via l’interface de ligne de commande Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=fr#debugging)
+   * [via l’interface de ligne de commande Adobe i/o](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=fr#debugging)
 
 1. [Exploitation et maintenance](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/home.html?lang=fr)
 
-   * [Configuration d’OSGI](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=fr)
+   * [Configuration de la configuration OSGI](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=fr)
    * [Sauvegarde et restauration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/backup.html?lang=fr)
 
 >[!TIP]
@@ -94,8 +94,8 @@ Consultez les ressources d’aide autonome sur la configuration et le déploieme
 
 ### Aide et ressources
 
-1. [Conseils et astuces sur le débogage](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html?lang=fr#debugging-aem-as-a-cloud-service)
-1. [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=fr#debugging)
+1. [Conseils et astuces de débogage](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html?lang=fr#debugging-aem-as-a-cloud-service)
+1. [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=fr#debugging)
 1. [CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html?lang=fr) (disponible uniquement sur les environnements de développement Experience Manager Cloud et SDK local)
 1. [Journaux et journalisation](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=fr#debugging)
 
@@ -187,7 +187,7 @@ Cloud Manager permet aux entreprises de gérer elles-mêmes Experience Manager s
 
 1. [Déploiement sur le git Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html?lang=fr)
 2. Exécutez le code client via le [pipeline de qualité de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html?lang=fr).
-3. [Déploiement sur l’environnement de développement](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/build-and-deployment.html?lang=fr#debugging)
+3. [Déploiement dans l’environnement de développement](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/build-and-deployment.html?lang=fr#debugging)
 4. **Migration uniquement** Transfert de contenu à l’aide de packages ou de l’[outil de transfert de contenu &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)(CTT)
 5. Réalisez les cycles de test recommandés (détection de fumée, contrôle qualité et autres)
 6. Convertissez vers le pipeline de production de Cloud Manager

@@ -7,7 +7,7 @@ feature: Smart Tags
 role: User, Admin, Developer
 source-git-commit: 1f71c905fadd51d95fc5292ce95903c46895ec94
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1768'
 ht-degree: 98%
 
 ---

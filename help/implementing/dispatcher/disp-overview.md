@@ -1,12 +1,12 @@
 ---
 title: Dispatcher en mode cloud
-description: Découvrez les outils Dispatcher, les modules Apache pris en charge et les modes hérités et flexibles.
+description: Découvrez les outils Dispatcher, les modules Apache pris en charge, ainsi que les modes hérités et flexibles.
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 role: Admin
 source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '998'
 ht-degree: 98%
 
 ---

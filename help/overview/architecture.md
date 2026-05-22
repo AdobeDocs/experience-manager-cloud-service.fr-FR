@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '2710'
-ht-degree: 98%
+source-wordcount: '2750'
+ht-degree: 96%
 
 ---
 
@@ -80,12 +80,12 @@ La liste des services composables de haut niveau dans AEM as a Cloud Service peu
 
 Pour la gestion de contenu, il existe deux ensembles principaux de services pour la création de contenu, tous deux représentés par les *sources de contenu* :
 
-* Niveau de création AEM :
-fournit une interface web (avec les API associées) pour la gestion du contenu web. Cela fonctionne pour les deux approches :
+* Le niveau Auteur AEM :
+Fournit une interface web (avec les API associées) pour la gestion du contenu web. Cela fonctionne pour les deux approches :
    * Couplé – Via l’éditeur de page et l’éditeur universel
    * Découplé – Via l’éditeur de fragment de contenu
-* Niveau de création basé sur les documents :
-vous permet de créer du contenu à l’aide d’applications standard, telles que :
+* Le niveau Création basée sur document :
+Permet de créer du contenu à l’aide d’applications standard, telles que :
    * Microsoft Word et Excel – Via SharePoint
    * Google Docs et Sheets – Via Google Drive
 
@@ -141,7 +141,7 @@ Il existe d’autres services connexes :
 * Le service de télémétrie opérationnelle :
    * est chargé de collecter les mesures clés d’une expérience client (telles que les pages vues, les principaux éléments web vitaux, les événements de conversion) et de répondre aux requêtes associées (par exemple, les principales pages vues d’un domaine donné au cours des 7 derniers jours).
 * Le service Asset Compute :
-   * est responsable du traitement des images, vidéos et documents chargés. Par exemple, des fichiers PDF et Adobe Photoshop. Le traitement peut utiliser l’IA d’Adobe pour extraire des métadonnées d’image et de vidéo (telles que des balises descriptives ou des tons de couleurs primaires), puis générer des rendus (tels que différentes tailles ou formats), avec un accès aux API telles que les API Adobe Photoshop et Adobe Lightroom.
+   * est responsable du traitement des images, vidéos et documents chargés. Par exemple, des fichiers PDF et Adobe Photoshop. Le traitement peut utiliser Adobe AI pour extraire des métadonnées d’image et de vidéo (telles que des balises descriptives ou des tons de couleurs primaires), puis générer des rendus (tels que des tailles ou des formats différents) en accédant à des API telles que les API Adobe Photoshop et Adobe Lightroom.
 * Le service Identity Management (IMS) :
    * est l’emplacement central responsable de la gestion et de l’authentification des personnes et des groupes de personnes pour une application Adobe Experience Cloud donnée (par exemple, Cloud Manager ou le niveau de création AEM) ;
    * est accessible via l’Adobe Admin Console.
@@ -239,4 +239,4 @@ La nouvelle architecture d’AEM as a Cloud Service s’accompagne de quelques 
 * Edge Delivery Services :
    * [AEM Aperçu as a Cloud Service - avec les Edge Delivery Services](/help/edge/overview.md)
    * [Utiliser Edge Delivery Services](/help/edge/overview.md)
-   * [Explorez l’architecture sous-jacente et les éléments importants d’AEM as a Cloud Service avec Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=fr)
+   * [Explorez l’architecture sous-jacente et les éléments importants d’AEM as a Cloud Service avec Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=fr)

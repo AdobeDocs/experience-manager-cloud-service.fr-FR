@@ -7,8 +7,8 @@ exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 74%
+source-wordcount: '1251'
+ht-degree: 71%
 
 ---
 
@@ -69,7 +69,7 @@ La transformation d’une image en taille parfaite est facile à l’aide des ac
 1. Cliquez sur **[!UICONTROL Recadrer l’image]** dans le volet de gauche.
 2. Faites glisser les poignées sur les coins de l’image pour créer le recadrage souhaité.
 3. Cliquez sur **[!UICONTROL Appliquer]**.
-   ![Enregistrement d’image avec Adobe Express.](assets/adobe-express-crop-image.png)
+   ![Enregistrer l’image avec Adobe Express](assets/adobe-express-crop-image.png)
 L’image recadrée peut être téléchargée. Vous pouvez enregistrer la ressource modifiée en tant que nouvelle version de la même ressource ou l’enregistrer en tant que nouvelle ressource.
 
 #### Convertir le JPEG en PNG {#convert-image-types-using-express}
@@ -199,7 +199,7 @@ TBD: Insert a video of the available social media options.
 
 * Faites des commentaires sur la documentation en utilisant les options [!UICONTROL Modifier cette page] ![Modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![Créer un problème GitHub](assets/do-not-localize/github-issue.png) disponibles dans la barre latérale de droite.
 
-* Contacter l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General#support)
+* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General#support).
 
 >[!MORELIKETHIS]
 >

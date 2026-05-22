@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 68%
+source-wordcount: '233'
+ht-degree: 69%
 
 ---
 
@@ -24,7 +24,7 @@ Les ensembles de migration peuvent être supprimés de Cloud Acceleration Mana
 
 Pour supprimer un ensemble de migration, procédez comme suit :
 
-1. Accédez à la vue Liste des jeux de migration dans Cloud Acceleration Manager et cliquez sur les trois points (**...**) en regard du jeu de migration à supprimer. L’action **Supprimer** doit être visible, comme illustré ci-dessous.
+1. Accédez à la vue Liste des jeux de migration dans Cloud Acceleration Manager et cliquez sur les trois petits points (**...**) en regard du jeu de migration à supprimer. L’action **Supprimer** doit être visible, comme illustré ci-dessous.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete1.png)
 

@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: fdd86b966f0480c00b7cd975d63a48b82fb1d027
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 64%
+source-wordcount: '510'
+ht-degree: 67%
 
 ---
 
@@ -75,7 +75,7 @@ Une fois la migration terminée, documentez les connaissances acquises au cours 
 
 Partagez ces apprentissages post-migration avec les parties prenantes et les équipes de votre entreprise.
 
-## Serait-ce la fin de notre voyage ?  {#journey-ends}
+## Serait-ce la fin de notre voyage ? {#journey-ends}
 
 Félicitations ! Vous avez terminé le parcours de migration d’AEM as a Cloud Service ! Vous devez comprendre comment :
 

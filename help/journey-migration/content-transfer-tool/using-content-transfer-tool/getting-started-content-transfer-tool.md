@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '1653'
-ht-degree: 61%
+source-wordcount: '1740'
+ht-degree: 63%
 
 ---
 
@@ -98,13 +98,13 @@ La section suivante s’applique à la nouvelle version de l’outil de transfer
 
    Lors de la création du jeu de migration, vous pouvez sélectionner la région géographique dans laquelle les données de migration temporaires seront stockées.  Il est recommandé de choisir la région la plus proche de votre environnement cloud cible pour garantir des performances optimales lors des ingestions.  La région ne peut pas être modifiée après la création du jeu de migration ; pour utiliser une autre région, vous devez créer un nouveau jeu de migration.
 
-   ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
    >[!NOTE]
    >
    >Le nom doit respecter les mêmes conventions qu’un nœud AEM et ne peut donc contenir aucun des caractères suivants : `. / : [ ] | * < > ^ ? { } % # ` ni aucun symbole ou émoticône inhabituel.
 
-1. Votre liste de migration doit maintenant apparaître dans la vue Liste. Sélectionnez le symbole des trois petits points (**...**) pour ouvrir la liste déroulante, puis sélectionnez **Copier la clé d’extraction**. Vous avez besoin de cette clé pendant la phase d’extraction. Copiez cette clé d’extraction.
+1. Votre liste de migration doit maintenant apparaître dans la vue Liste. Sélectionnez le symbole des trois points (**...**) pour ouvrir la liste déroulante et sélectionner **Copier la clé d’extraction**. Vous avez besoin de cette clé pendant la phase d’extraction. Copiez cette clé d’extraction.
 
    >[!NOTE]
    >
@@ -160,7 +160,7 @@ Pour renseigner le jeu de migration que vous avez créé dans Cloud Acceleration
 
       ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/includeAndExcludePath.png)
 
-      1. Seule la sélection d’un chemin est autorisée, et au moins un chemin doit être présent. Si aucun chemin n’est sélectionné, une erreur de serveur se produit.
+      1. Seule la sélection d’un chemin est autorisée, et au moins un chemin doit être présent.Si aucun chemin n’est sélectionné, une erreur de serveur se produit.
 
          ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/ServerError.png)
 
