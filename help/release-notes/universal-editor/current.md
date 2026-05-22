@@ -4,7 +4,7 @@ description: Voici les notes de mise à jour de la version 2026.05.21 de l’éd
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 8ba59c47379e9d506813cec8e647b93679bf9815
+source-git-commit: a18a1d09003ef646356abcdd2f37b46616a708a1
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 28%
@@ -27,3 +27,4 @@ Voici les notes de mise à jour de la version du 21 mai 2026 de l’éditeur uni
 ## Nouveautés {#what-is-new}
 
 * Améliorations et correctifs mineurs
+

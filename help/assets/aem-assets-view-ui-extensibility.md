@@ -5,10 +5,10 @@ feature: App Builder
 role: User, Developer
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 49fa36acf11a22480af58aa701bdac676676aadd
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 0%
+source-wordcount: '916'
+ht-degree: 3%
 
 ---
 
@@ -61,9 +61,23 @@ La vue AEM Assets permet de personnaliser les actions suivantes dans la vue Parc
 
 * Personnalisez les actions qui s’affichent lorsque vous cliquez sur Autres options (...) dans la carte de la ressource.
 
-* Personnalisez les actions disponibles dans le menu En-tête .
-
 Pour plus d’informations, voir [Vue Parcourir](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/).
+
+## Personnaliser le menu d’en-tête dans la vue Assets {#customize-header-menu-assets-view}
+
+La vue AEM Assets permet de personnaliser le menu d’en-tête. Le menu d’en-tête fait référence aux boutons situés en haut à droite de l’écran de navigation et de détails. Vous pouvez :
+
+* Ajoutez des boutons personnalisés au menu d’en-tête avant les boutons de menu d’en-tête intégrés.
+
+* Masque les boutons de menu d’en-tête intégrés pour le contexte de navigation ou de détails actuel.
+
+* Remplacer les clics du bouton de menu d’en-tête intégré afin que votre extension gère l’action au lieu du gestionnaire par défaut.
+
+Dans la vue de navigation, la personnalisation du menu d’en-tête est contextuelle pour les ressources, la recherche, la corbeille, les éléments récemment consultés et les collections. Vous pouvez ajouter des boutons personnalisés dans l’un de ces contextes. Les boutons intégrés tels que **Créer un dossier** et **Ajouter des ressources** (dans le contexte des ressources) et **Créer une collection** (dans les collections) peuvent être masqués ou remplacés lorsqu’ils sont disponibles.
+
+Dans la vue des détails, vous pouvez ajouter des boutons personnalisés et personnaliser des actions intégrées telles que **Affecter des tâches** et **Télécharger**.
+
+Pour plus d’informations, notamment les références d’API et des exemples de code, consultez [Vue Parcourir](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/#custom-header-menu-buttons) et [Vue Détails](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/details-view/#custom-header-menu-buttons-in-details-view).
 
 ## Ouvrir les boîtes de dialogue personnalisées dans la vue Assets {#open-custom-dialogs-assets-view}
 
