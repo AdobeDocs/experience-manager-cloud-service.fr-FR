@@ -4,9 +4,9 @@ description: Découvrez comment exécuter JavaScript au niveau de la couche CDN 
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: 1fdf9c61e611db978706a066194448ec3750024a
+source-git-commit: ea43e2f4c7e52f98e8458e86bb48f124191dc03c
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '1261'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->AEM Edge Functions est une fonctionnalité **bêta**. Les fonctionnalités et la documentation peuvent changer sans préavis. Pour rejoindre le programme d’accès anticipé et soumettre vos commentaires, envoyez un e-mail à l’adresse [&#128279;](mailto:aemcs-edgecompute-feedback@adobe.com).
+>AEM Edge Functions est une fonctionnalité **bêta**. Les fonctionnalités et la documentation peuvent changer sans préavis. Pour rejoindre le programme d’accès anticipé et soumettre vos commentaires, envoyez un e-mail à l’adresse [](mailto:aemcs-edgecompute-feedback@adobe.com).
 
 AEM Edge Functions vous permet d’exécuter JavaScript au niveau de la couche CDN, ce qui rapproche le traitement des données de l’utilisateur final. Cela réduit la latence et permet d’offrir des expériences réactives et dynamiques sans aller-retour vers votre origine.
 
@@ -191,6 +191,39 @@ Le réseau CDN géré par Adobe n’expose pas de débogueur distant, mais expos
 ```bash
 aio aem edge-functions tail-logs <function-name>
 ```
+
+## Mise en cache et purge du cache {#caching}
+
+Les fonctions Edge peuvent réduire considérablement la charge d’origine et améliorer les temps de réponse en mettant en cache les données Edge. Cependant, la mise en cache nécessite une conception intentionnelle, en particulier dans les fonctions Edge où **deux couches de cache indépendantes** sont impliquées :
+
+```
+Browser → AEM CDN (CDN Cache) → AEM Edge Functions (Fetch Cache) → Backend (AEM, APIs, etc.)
+```
+
+Avant de configurer la mise en cache, examinez le comportement de votre contenu :
+
+- **Le contenu véritablement unique par demande** (jetons de session, tarification en temps réel pour un utilisateur spécifique) doit contourner la mise en cache pour éviter de fournir des résultats incorrects.
+- La **personnalisation basée sur les cohortes** (contenu adapté par région, type d’appareil ou segment d’audience) peut souvent être mise en cache avec des TTL plus courtes ou des en-têtes de `Vary`, car de nombreux utilisateurs partagent la même variante.
+- **Contenu stable et partagé** (catalogues de produits, pages CMS, réponses d’API qui changent selon un planning connu) bénéficie d’une mise en cache agressive avec invalidation explicite via des clés de substitution.
+- **Se tromper dans un sens ou dans l’autre a des conséquences.** Le surcaching entraîne des bugs de contenu obsolètes, difficiles à diagnostiquer sur deux couches de cache. Le sous-caching va à l’encontre des performances et de l’objectif de déchargement d’origine de l’utilisation des fonctions Edge.
+
+Comme le réseau CDN et le cache de récupération interne de la fonction Edge fonctionnent indépendamment, toute modification des données sous-jacentes nécessite l’invalidation délibérée des couches **des deux**. La compréhension de cette architecture est essentielle pour une gestion fiable du cache.
+
+Pour obtenir des conseils techniques détaillés sur la configuration du comportement de mise en cache, le contrôle des durées de vie du cache, l’utilisation de clés de substitution et la purge du contenu mis en cache, voir [ Mise en cache dans les fonctions AEM Edge ](/help/implementing/developing/introduction/edge-functions-caching.md).
+
+## Limites {#limitations}
+
+Chaque appel de fonction Edge s’exécute dans un sandbox avec des limites de ressources appliquées par la plateforme de calcul sous-jacente.
+
+### Nombre Maximal D’Appels De Récupération Sortante Par Appel {#max-fetch-calls}
+
+Les fonctions AEM Edge appliquent une limite stricte de **32 requêtes principales par exécution** (c’est-à-dire par requête entrante gérée par votre fonction). Une fois cette limite atteinte, tous les autres appels `fetch()` échouent avec l’erreur suivante :
+
+```
+Requested backend named '…' does not exist
+```
+
+Lorsque cette erreur s’affiche et que votre configuration d’origine est correcte, la cause la plus probable est que le quota de requêtes du serveur principal par appel a été épuisé. Consultez [Limites des ressources du calcul rapide](https://docs.fastly.com/products/compute-resource-limits#default-limits) pour obtenir la liste complète des limites de la plateforme.
 
 ## Référence de configuration {#configuration-reference}
 
