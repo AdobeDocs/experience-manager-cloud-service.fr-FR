@@ -8,7 +8,7 @@ exl-id: afc577a2-2791-481a-ac77-468011e4302e
 solution: Experience Manager Sites
 source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '768'
 ht-degree: 69%
 
 ---
@@ -19,7 +19,7 @@ Les sites web multilingues fournissent généralement une certaine quantité de 
 
 >[!TIP]
 >
->Si vous êtes un débutant dans la traduction de contenu, consultez [Parcours de traduction de sites](/help/journey-sites/translation/overview.md), qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide d’outils de traduction puissants d’AEM, idéaux pour ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
+>Si vous êtes un débutant dans la traduction de contenu, consultez Parcours de traduction de sites](/help/journey-sites/translation/overview.md), qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide d’outils de traduction puissants d’AEM, idéaux pour ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.[
 
 Le [site de démonstration WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) comprend plusieurs branches de langue et utilise la structure suivante :
 
@@ -62,7 +62,7 @@ Procédez comme suit pour préparer la traduction de votre site :
 1. Créez le contenu de votre gabarit de langue.
 1. Créez la racine de langue de chaque copie linguistique pour votre site. Par exemple, la copie linguistique française de l’exemple de site WKND est `/content/wknd/language-masters/fr`.
 
-Après avoir préparé le contenu à traduire, vous pouvez créer automatiquement les pages manquantes dans les copies de langue et les projets de traduction associés. (Voir [Création d’un projet de traduction](managing-projects.md).) Pour une présentation du processus de traduction de contenu dans AEM, voir [Traduction de contenu pour des sites web multilingues](overview.md).
+Après avoir préparé le contenu à traduire, vous pouvez créer automatiquement les pages manquantes dans les copies de langue et les projets de traduction associés. (Voir [Création d’un projet de traduction](managing-projects.md).) Pour obtenir une présentation du processus de traduction de contenu dans AEM, consultez [Traduction de contenu pour des sites multilingues](overview.md).
 
 ## Création d’une racine de langue {#creating-a-language-root}
 

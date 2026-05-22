@@ -8,8 +8,8 @@ exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 solution: Experience Manager Sites
 source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1453'
-ht-degree: 74%
+source-wordcount: '1479'
+ht-degree: 63%
 
 ---
 
@@ -25,7 +25,7 @@ Pour une présentation des fonctions de traduction de contenu d’AEM, voir [Tra
 
 >[!TIP]
 >
->Si vous êtes un débutant dans la traduction de contenu, consultez [Parcours de traduction de sites](/help/journey-sites/translation/overview.md), qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide d’outils de traduction puissants d’AEM, idéaux pour ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
+>Si vous êtes un débutant dans la traduction de contenu, consultez Parcours de traduction de sites](/help/journey-sites/translation/overview.md), qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide d’outils de traduction puissants d’AEM, idéaux pour ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.[
 
 ## Connexion à un fournisseur de services de traduction {#connecting-to-a-translation-service-provider}
 
@@ -33,7 +33,7 @@ Créez une configuration cloud qui connecte AEM à votre fournisseur de services
 
 AEM permet d’établir par défaut une [connexion à Microsoft® Translator](connect-ms-translator.md). D’autres fournisseurs de technologies de traduction disposant de connecteurs AEM et membres du programme de partenariat d’Adobe Exchange sont disponibles [ici](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=experience+manager+translation&sort=RELEVANCE).
 
-Une fois que vous avez installé un package de connecteur, vous pouvez créer une configuration de cloud pour le connecteur. En règle générale, vous devez fournir vos informations d’identification pour l’authentification auprès du service de traduction. Pour plus d’informations sur l’ajout d’une configuration cloud pour le connecteur Microsoft® Translator, voir [Intégration à Microsoft® Translator](connect-ms-translator.md).
+Une fois que vous avez installé un package de connecteur, vous pouvez créer une configuration de cloud pour le connecteur. En règle générale, vous devez fournir vos informations d’identification pour l’authentification auprès du service de traduction. Pour plus d’informations sur l’ajout d’une configuration cloud pour le connecteur ® Translator, voir [Intégration à Microsoft® Translator](connect-ms-translator.md).
 
 Vous pouvez créer plusieurs configurations de cloud pour le même connecteur, si nécessaire. Par exemple, créez une configuration pour chacun des comptes ou projets que vous avez avec le même fournisseur.
 
@@ -75,11 +75,11 @@ L’onglet **Sites** contrôle la façon dont le contenu des pages est traduit.
 
 | Propriété | Description |
 |---|---|
-| Méthode de traduction | Cette propriété définit la méthode de traduction que la structure effectue pour le contenu du site :<br>- Traduction automatique : le fournisseur de traduction effectue la traduction à l’aide de la traduction automatique en temps réel.<br>- Traduction humaine : le contenu est envoyé au fournisseur de services de traduction pour être traduit par des traducteurs.<br>- Ne pas traduire : le contenu n’est pas envoyé pour être traduit. Cela permet d’ignorer certaines parties du contenu qui n’ont pas besoin d’être traduites, mais dont le contenu pourrait devoir être mis à jour. |
+| Méthode de traduction | Cette propriété définit la méthode de traduction que la structure effectue pour le contenu du site :<br>- Traduction automatique : le fournisseur de traduction effectue la traduction à l’aide de la traduction automatique en temps réel.<br>- Traduction humaine : le contenu est envoyé au fournisseur de traduction pour être traduit par des traducteurs.<br>- Ne pas traduire : le contenu n’est pas envoyé pour traduction. Cela permet d’ignorer certaines parties du contenu qui n’ont pas besoin d’être traduites, mais dont le contenu pourrait devoir être mis à jour. |
 | Fournisseur de traduction | Cette propriété définit le fournisseur de traduction qui doit effectuer la traduction. Un fournisseur est répertorié dans la liste lorsque le connecteur correspondant est installé. |
 | Catégorie de contenu | (Traduction automatique uniquement) Cette propriété est une catégorie qui décrit le contenu que vous traduisez. Lors de la traduction du contenu, la catégorie peut affecter le choix de la terminologie et des expressions. |
 | Traduire les balises | Cette option permet de traduire les balises associées à la page. |
-| Traduire les ressources de page | Cette propriété définit comment traduire les ressources qui sont ajoutées aux composants à partir du système de fichiers ou référencés à partir des ressources :<br>- Ne pas traduire : les ressources de la page ne sont pas traduites.<br>- Utilisation du processus de traduction de sites : les ressources sont gérées en fonction des propriétés de configuration sur l’onglet **Sites**.<br>- Utilisation du processus de traduction des ressources : les ressources sont gérées en fonction des propriétés configurées sur l’onglet **Ressources**. |
+| Traduire les ressources de page | Cette propriété définit comment traduire les ressources qui sont ajoutées aux composants à partir du système de fichiers ou référencés à partir des ressources :<br>- Ne pas traduire : les ressources de page ne sont pas traduites.<br>- Utiliser le processus de traduction de sites : Assets est géré en fonction des propriétés de configuration sur l’onglet **Sites**.<br>- Utiliser le processus de traduction des ressources : Assets est géré en fonction des propriétés configurées sur l’onglet **Assets**. |
 | Exécuter automatiquement la traduction | Activez cette propriété pour exécuter automatiquement les tâches de traduction après la création des projets de traduction. Si vous sélectionnez cette option, vous n’avez pas la possibilité de vérifier et de définir la portée de la tâche de traduction. |
 | Désactiver Traduction uniquement des champs mis à jour | Lorsque cette option est cochée, la mise à jour du projet de traduction envoie tous les champs traduisibles pour traduction, et pas seulement ceux qui ont été modifiés depuis la dernière traduction. |
 
@@ -91,7 +91,7 @@ Les propriétés des ressources contrôlent la façon dont les ressources sont c
 
 | Propriété | Description |
 |---|---|
-| Méthode de traduction | Cette propriété sélectionne le type de traduction effectué par la structure pour les ressources :<br>- Traduction automatique : le fournisseur de traduction effectue la traduction immédiatement à l’aide de la traduction automatique.<br>- Traduction humaine : le contenu est envoyé automatiquement au fournisseur de services de traduction pour être traduit manuellement.<br>- Ne pas traduire : les ressources ne sont pas envoyées pour être traduites. |
+| Méthode de traduction | Cette propriété sélectionne le type de traduction effectué par la structure pour les ressources :<br>- Traduction automatique : le fournisseur de traduction effectue la traduction immédiatement à l’aide de la traduction automatique.<br>- Traduction humaine : le contenu est automatiquement envoyé au fournisseur de traduction pour être traduit manuellement.<br>-Ne pas traduire : Assets ne sont pas envoyés pour traduction. |
 | Fournisseur de traduction | Cette propriété définit le fournisseur de traduction qui doit effectuer la traduction. Un fournisseur est répertorié dans la liste lorsque le connecteur correspondant est installé. |
 | Catégorie de contenu | (Traduction automatique uniquement) Cette propriété décrit le contenu que vous êtes en train de traduire. Lors de la traduction du contenu, la catégorie peut affecter le choix de la terminologie et des expressions. |
 | Traduire les ressources | Activez cette propriété pour inclure des ressources dans le projet de traduction. |

@@ -8,7 +8,7 @@ exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
 solution: Experience Manager Sites
 source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1294'
+source-wordcount: '1297'
 ht-degree: 88%
 
 ---
@@ -19,7 +19,7 @@ Les règles de traduction identifient le contenu à traduire pour les pages, les
 
 >[!TIP]
 >
->Si vous êtes un débutant dans la traduction de contenu, consultez [Parcours de traduction de sites](/help/journey-sites/translation/overview.md), qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide d’outils de traduction puissants d’AEM, idéaux pour ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
+>Si vous êtes un débutant dans la traduction de contenu, consultez Parcours de traduction de sites](/help/journey-sites/translation/overview.md), qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide d’outils de traduction puissants d’AEM, idéaux pour ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.[
 
 ## Fragments de contenu et règles de traduction {#content-fragments}
 

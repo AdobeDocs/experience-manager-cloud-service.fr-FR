@@ -8,8 +8,8 @@ exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
 solution: Experience Manager Sites
 source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 86%
+source-wordcount: '782'
+ht-degree: 87%
 
 ---
 
