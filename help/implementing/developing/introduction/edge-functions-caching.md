@@ -3,9 +3,9 @@ title: Mise en cache dans les fonctions AEM Edge
 description: Découvrez comment le cache de réseau CDN et le cache de récupération des fonctions Edge interagissent, comment configurer le comportement de mise en cache et comment purger le contenu mis en cache sur les deux couches.
 feature: Developing, Edge Delivery Services
 role: Developer
-source-git-commit: b33a565d9623ed44309e1d34377345dae86757cd
+source-git-commit: 4d3659aef1a180192a79b791f6ea840f576f5e63
 workflow-type: tm+mt
-source-wordcount: '1224'
+source-wordcount: '1226'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ Plusieurs clés de substitution sont séparées par des espaces. Ces clés de su
 
 ## Cache de récupération des fonctions Edge (interne) {#fetch-cache}
 
-Le cache de récupération de la fonction Edge se trouve entre la fonction Edge et les serveurs principaux qu’elle appelle. Il met en cache la réponse **du serveur principal** aux appels `fetch()` effectués dans votre code de fonction Edge. Il contient également toutes les données stockées par votre code via l’[**API Core Cache**](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/CoreCache) ou l’[**API Simple Cache**](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/SimpleCache), des interfaces de mise en cache programmatiques qui vous permettent de contrôler précisément ce qui est mis en cache, pendant combien de temps et sous quelles clés de substitution.
+Le cache de récupération de la fonction Edge se trouve entre la fonction Edge et les serveurs principaux qu’elle appelle. Il met en cache la réponse **du serveur principal** aux appels `fetch()` effectués dans votre code de fonction Edge. Il contient également toutes les données stockées par votre code via l’[**API Core Cache**](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/CoreCache/insert) ou l’[**API Simple Cache**](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/SimpleCache), des interfaces de mise en cache programmatiques qui vous permettent de contrôler précisément ce qui est mis en cache, pendant combien de temps et sous quelles clés de substitution.
 
 Il n’est **pas** influencé par les en-têtes que vous définissez sur la réponse sortante de la fonction Edge, mais uniquement par les en-têtes de réponse du serveur principal, par [`CacheOverride`](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache-override/CacheOverride/) options sur vos appels de récupération ou par les clés de substitution que vous attribuez par programmation lors de l’écriture dans l’API Core Cache.
 
@@ -120,7 +120,7 @@ La commande de l’interface de ligne de commande `purge-cache` purge le cache d
 Les clés de substitution utilisées dans les commandes de purge doivent correspondre aux clés **balisées sur le contenu mis en cache au moment de son stockage**. Il s’agit du même concept que la [purge par clé de substitution](/help/implementing/dispatcher/cdn-cache-purge.md#surrogate-key-purge) utilisée dans le réseau CDN d’AEM, mais appliquée au cache interne de la fonction Edge. Ces clés proviennent de :
 
 - En-tête de réponse `Surrogate-Key` que le serveur principal renvoie lorsque la fonction Edge récupère à partir de celui-ci.
-- Les clés que vous attribuez par programmation lors de l’écriture dans l’[API Core Cache](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/CoreCache) (par exemple, via l’option `surrogateKeys` lors de l’insertion d’une entrée de cache).
+- Les clés que vous attribuez par programmation lors de l’écriture dans l’[API Core Cache](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/CoreCache/insert) (par exemple, via l’option `surrogateKeys` lors de l’insertion d’une entrée de cache).
 
 Par exemple, si votre serveur principal répond avec :
 
