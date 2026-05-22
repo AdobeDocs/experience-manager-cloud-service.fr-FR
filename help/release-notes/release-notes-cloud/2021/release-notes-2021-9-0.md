@@ -67,11 +67,11 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ### Nouveautés de [!DNL Forms] {#what-is-new-forms-sep-2021}
 
-* **Utilisation des rôles Adobe Sign dans un formulaire adaptatif** - Les niveaux de service professionnel et entreprise d’Adobe Sign vous permettent éventuellement d’étendre les rôles des destinataires du contrat au-delà du simple signataire, afin de mieux répondre aux exigences de leur workflow. Vous pouvez désormais [permettre à chaque destinataire du contrat de configurer son rôle dans un formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform), avec Signataire comme rôle par défaut.
+* **Utilisation des rôles Adobe Sign dans un formulaire adaptatif** - Les niveaux de service professionnel et entreprise d’Adobe Sign vous permettent éventuellement d’étendre les rôles des destinataires du contrat au-delà du simple signataire, afin de mieux répondre aux exigences de leur workflow. Vous pouvez désormais [permettre à chaque destinataire du contrat de configurer son rôle dans un formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html?lang=fr#addsignerstoanadaptiveform), avec Signataire comme rôle par défaut.
 
 * **Analytics pour Forms adaptative** - Vous pouvez désormais capturer et suivre le comportement de l’utilisateur final au moyen d’Adobe Analytics pour Forms adaptatif afin de rassembler les informations de l’utilisateur final. Il permet de prendre des décisions éclairées basées sur les données afin d’améliorer l’expérience de l’utilisateur final.
 
-* **Connectez facilement Adobe Experience Manager (AEM) Forms à Microsoft® Dynamics et Salesforce** - Le service fournit une configuration de source de données et des modèles de données prêts à l’emploi pour Microsoft® Dynamics et Salesforce. Cela permet [aux développeurs et développeuses de configurer plus rapidement et plus facilement Microsoft® Dynamics et Salesforce en tant que sources de données pour un formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html).
+* **Connectez facilement Adobe Experience Manager (AEM) Forms à Microsoft® Dynamics et Salesforce** - Le service fournit une configuration de source de données et des modèles de données prêts à l’emploi pour Microsoft® Dynamics et Salesforce. Cela permet [aux développeurs et développeuses de configurer plus rapidement et plus facilement Microsoft® Dynamics et Salesforce en tant que sources de données pour un formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=fr).
 
 * **Signature électronique d’un formulaire adaptatif à l’aide de DocuSign** - Vous pouvez utiliser DocuSign pour signer électroniquement un formulaire adaptatif. Le service fournit une action d’envoi personnalisée pour utiliser DocuSign avec un formulaire adaptatif. Vous pouvez installer le package disponible dans Distribution logicielle pour importer l’action d’envoi.
 
@@ -115,10 +115,10 @@ Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au progra
 ### Nouveautés {#what-is-new-screens}
 
 * Screens as a Cloud Service prend désormais en charge la surveillance de base de la lecture. Le lecteur signale désormais diverses mesures de lecture pour chaque ping (30 secondes par défaut). Selon les mesures, il peut détecter divers cas de périphérie (expérience bloquée, écran vide, problème de planification, etc.). Cette fonctionnalité permet à l’équipe de surveiller à distance si un lecteur lit correctement du contenu. Elle améliore la réactivité aux écrans vierges ou aux expériences rompues dans le champ et réduit le risque d’afficher une expérience rompue à l’utilisateur.
-Pour plus d’informations, voir [Suivi de base de la lecture](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html#playback-monitoring).
+Pour plus d’informations, voir [Suivi de base de la lecture](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=fr#playback-monitoring).
 
 * Les miniatures pour les vidéos sont désormais prises en charge dans Screens as a Cloud Service. Un auteur ou une autrice de contenu peut définir une miniature de vidéos afin de pouvoir utiliser l’image en tant qu’espace réservé et de pouvoir tester correctement la lecture et le ciblage du contenu, pendant que l’équipe concernée peut s’occuper de la finalisation de la vidéo elle-même. L’image peut également être utilisée au cas où la lecture de la vidéo échouerait.
-Pour plus d’informations, voir [Prise en charge des miniatures de vidéos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html).
+Pour plus d’informations, voir [Prise en charge des miniatures de vidéos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html?lang=fr).
 
 ### Correctifs {#bug-fixes-screens}
 
@@ -185,7 +185,7 @@ La date de publication de la mise à jour de Cloud Acceleration Manager est le 4
 
 ### Nouveautés {#what-is-new-cam}
 
-* Cloud Acceleration Manager permet désormais aux utilisateurs d’afficher les rapports BPA dans un aperçu imprimable, ce qui permet d’exécuter simplement une impression ou une exportation PDF pour les partager facilement. Reportez-vous aux étapes 6 et 7 de la section [&#x200B; Utilisation de la carte Analyse des bonnes pratiques &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#best-practices-analysis).
+* Cloud Acceleration Manager permet désormais aux utilisateurs d’afficher les rapports BPA dans un aperçu imprimable, ce qui permet d’exécuter simplement une impression ou une exportation PDF pour les partager facilement. Reportez-vous aux étapes 6 et 7 de la section [&#x200B; Utilisation de la carte Analyse des bonnes pratiques &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=fr#best-practices-analysis).
 
 ## Outil de transfert de contenu {#content-transfer-tool}
 
@@ -195,7 +195,7 @@ La date de publication de l’outil de transfert de contenu version v1.6.0 est 
 
 ### Nouveautés {#what-is-new-ctt}
 
-* Amélioration de l’outil de mappage des utilisateurs pour une expérience client simplifiée, notamment grâce aux fonctionnalités suivantes répertoriées ci-dessous. Pour plus d’informations, consultez la section [Utilisation de l’outil de mappage des utilisateurs et utilisatrices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html#using-user-mapping-tool).
+* Amélioration de l’outil de mappage des utilisateurs pour une expérience client simplifiée, notamment grâce aux fonctionnalités suivantes répertoriées ci-dessous. Pour plus d’informations, consultez la section [Utilisation de l’outil de mappage des utilisateurs et utilisatrices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=fr#using-user-mapping-tool).
    * Test de la connexion à l’API User Management avant d’exécuter le mappage des utilisateurs
    * Ignorer les erreurs de manière appropriée et poursuivre l’activité de mappage des utilisateurs
    * Le mappage des utilisateurs n’échoue plus si le jeton d’accès expire (après 24 heures). Le mappage des utilisateurs et des utilisatrices peut être exécuté à nouveau à partir de l’endroit où il s’est arrêté pour la dernière fois.
