@@ -6,8 +6,8 @@ feature: Authoring Screens
 role: Admin, Developer, User
 source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 89%
+source-wordcount: '667'
+ht-degree: 86%
 
 ---
 
@@ -29,7 +29,7 @@ Ce document vous aide à comprendre comment créer et gérer des affichages dans
 Pour créer l’affichage à partir du fournisseur de services Screens, procédez comme suit :
 
 1. Accédez au fournisseur de services Screens à partir de votre instance AEM Cloud Service.
-1. Sélectionnez **Affiche** dans le panneau de navigation de gauche et cliquez sur **Créer** dans le coin supérieur droit de l’écran.
+1. Sélectionnez **Affichages** dans le panneau de navigation de gauche, puis cliquez sur **Créer** dans le coin supérieur droit de l’écran.
 
    ![image](/help/screens-cloud/assets/display/disp-1.png)
 
@@ -49,7 +49,7 @@ Pour créer l’affichage à partir du fournisseur de services Screens, procéde
 
 Vous pouvez supprimer un affichage du fournisseur de services Screens.
 
-Sélectionnez l’affichage et cliquez sur **Supprimer** au bas du panneau, comme illustré dans la figure ci-dessous.
+Sélectionnez l’affichage et cliquez sur **Supprimer** dans la partie inférieure du panneau, comme illustré ci-dessous.
 
 ![Image](/help/screens-cloud/assets/display/disp-5.png)
 
@@ -120,7 +120,7 @@ Vous pouvez déplacer du contenu vers vos nouveaux dossiers pour mieux organiser
 
 ![image](/help/screens-cloud/assets/display/movetofolder.png)
 
-**Remarque** : Le dossier doit être sélectionné dans le rail latéral de dossiers. De plus, la navigation dans le chemin de navigation doit afficher le nom du dossier actif en regard de **Affichages**.
+**Remarque** : Le dossier doit être sélectionné dans le rail latéral de dossiers. En outre, la navigation dans le chemin de navigation doit afficher le nom du dossier actif en regard de **Affichages**.
 
 ## Comment supprimer du contenu d’un dossier {#delete-folder}
 
@@ -135,4 +135,4 @@ Toutes les opérations de dossier sont accessibles via la barre d’actions de s
 
 ## Et après ? {#whats-next}
 
-Maintenant que vous avez appris à créer et gérer des affichages pour votre projet, vous devez continuer votre parcours Screens as a Cloud Service en consultant le document [Attribution d’un canal à un affichage dans Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=fr).
+Maintenant que vous avez appris à créer et gérer des affichages pour votre projet, vous devez continuer votre parcours Screens as a Cloud Service en consultant le document [Attribution d’un canal à un affichage dans Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html).

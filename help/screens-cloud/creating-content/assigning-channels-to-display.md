@@ -6,8 +6,8 @@ feature: Authoring Screens
 role: Admin, Developer, User
 source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 100%
+source-wordcount: '445'
+ht-degree: 91%
 
 ---
 
@@ -44,7 +44,7 @@ Suivez les étapes ci-dessous pour attribuer un canal à un affichage :
    1. Choisissez la priorité.
 
       >[!NOTE]
-      >La priorité est utilisée pour contrôler les attributions au cas où plusieurs d’entre elles correspondent aux critères de lecture. Celle présentant la valeur la plus élevée est toujours prioritaire par rapport aux valeurs plus faibles. Par exemple, s’il existe deux canaux A et B et que A a une priorité de 1 et B une priorité de 2, alors le canal B s’affiche, car il a une priorité plus élevée que A.
+      >La priorité est utilisée pour contrôler les attributions au cas où plusieurs d’entre elles correspondent aux critères de lecture. Celle présentant la valeur la plus élevée est toujours prioritaire par rapport aux valeurs plus faibles. Par exemple, s’il y a deux canaux A et B. A a une priorité de 1 et B a une priorité de 2, puis le canal B est affiché, car il a une priorité plus élevée que A.
 
    1. Sélectionnez la date de début et la date de fin dans **Activation**.
 

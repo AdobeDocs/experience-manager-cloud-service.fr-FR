@@ -7,7 +7,7 @@ role: Admin, Developer, User
 source-git-commit: 53086e2ec6d9d962a8f1cb1cc40f0601da74ac63
 workflow-type: tm+mt
 source-wordcount: '595'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -35,13 +35,13 @@ Pour mettre à jour votre lecteur, procédez comme suit :
 
 1. Cliquez sur l’onglet **Configuration**, puis sur le bouton **Aux paramètres d’usine** sous l’option **Réinitialiser**.
 
-   ![Bouton À la fabrique sous Option de réinitialisation](/help/screens-cloud/assets/player/installplayer-2.png)
+   ![Bouton En usine sous l’option Réinitialiser ](/help/screens-cloud/assets/player/installplayer-2.png)
 
 1. Cliquez sur **Confirmer** pour réinitialiser votre lecteur.
 
 1. Toujours à partir de l’onglet **Configuration**, cliquez sur le bouton **Passer en mode cloud** sous l’option **Activer le mode d’exécution**.
 
-   ![Bouton Passer en mode cloud sous l’option Activer/désactiver le mode d’exécution](/help/screens-cloud/assets/player/installplayer-1.png)
+   ![ Bouton Passer en mode cloud sous l’option Activer/désactiver le mode d’exécution ](/help/screens-cloud/assets/player/installplayer-1.png)
 
 1. Le fait de cliquer sur **Confirmer** qui s’affiche lorsque vous passez en mode cloud annule l’enregistrement du lecteur.
 
@@ -64,8 +64,8 @@ Les propriétés suivantes sont incluses dans chaque `ping` :
 | Propriété | Description |
 |---|---|
 | id {string} | identifiant du lecteur |
-| activeChannel {string} | chemin du canal en cours de lecture ou valeur nulle si rien n’est planifié |
-| activeElements {string} | chaîne séparée par des virgules, éléments actuellement visibles dans tous les canaux de séquence de lecture (plusieurs dans le cas d’une disposition multizone) |
+| {string} activeChannel | chemin du canal en cours de lecture ou valeur nulle si rien n’est planifié |
+| {string} activeElements | chaîne séparée par des virgules, éléments actuellement visibles dans tous les canaux de séquence de lecture (plusieurs dans le cas d’une disposition multizone) |
 | isDefaultContent {boolean} | true si le canal de lecture est considéré comme un canal par défaut ou de secours (c’est-à-dire qu’il a la priorité 1 et aucune planification) |
 | hasContentChanged {boolean} | true si le contenu a changé au cours des 5 dernières minutes, false dans le cas contraire |
 | lastContentChange {string} | date et heure de la dernière modification du contenu |

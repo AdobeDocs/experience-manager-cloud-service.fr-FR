@@ -6,7 +6,7 @@ role: Admin
 exl-id: 0c8f7ece-7175-435b-8838-867983688fce
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '1919'
+source-wordcount: '2040'
 ht-degree: 86%
 
 ---
@@ -39,7 +39,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -82,7 +82,7 @@ Rendez Dynamic Media avec les URL OpenAPI plus lisibles en utilisant les URL Van
 
 * [Composant d’entrée de date et d’heure](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component) : un composant de date et d’heure est désormais disponible, ce qui permet aux utilisateurs et aux utilisatrices de sélectionner la date et l’heure à l’aide d’une interface de calendrier et d’horloge, ou en saisissant manuellement les valeurs dans un format pris en charge.
 * [Amélioration de la gestion des erreurs pour les chargements de fichiers](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab) : le composant Pièce jointe valide désormais automatiquement le type de fichier chargé par rapport à la liste autorisée. Si un utilisateur ou une utilisatrice charge un fichier dans un format non pris en charge, le formulaire affiche une erreur lors de l’envoi. Le composant vérifie également le contenu du fichier pour valider son type, ce qui améliore la sécurité globale du formulaire.
-* [Réponse d’erreur spécifiée pour l’action d’envoi personnalisée &#x200B;](/help/forms/custom-submit-action-troubleshooting.md) : lorsqu’une action d’envoi personnalisée rencontre une erreur non gérée, le code d’erreur 502 est renvoyé. Cela permet d’identifier que le problème est lié à l’action d’envoi personnalisée, ce qui facilite le débogage.
+* [Réponse d’erreur spécifiée pour l’action d’envoi personnalisée ](/help/forms/custom-submit-action-troubleshooting.md) : lorsqu’une action d’envoi personnalisée rencontre une erreur non gérée, le code d’erreur 502 est renvoyé. Cela permet d’identifier que le problème est lié à l’action d’envoi personnalisée, ce qui facilite le débogage.
 * [Exclusion des champs masqués du document d’enregistrement](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings) : une nouvelle propriété a été ajoutée pour permettre l’exclusion des champs masqués du document d’enregistrement. Par défaut, cette option n’est pas sélectionnée et s’applique à tous les champs de formulaire.
 
 ### Fonctionnalités de version préliminaire dans AEM Forms

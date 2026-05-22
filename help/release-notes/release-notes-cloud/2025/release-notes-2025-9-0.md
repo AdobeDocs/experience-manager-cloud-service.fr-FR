@@ -6,8 +6,8 @@ role: Admin
 exl-id: b39198d9-97ca-4cf9-acd5-ff8c778ab386
 source-git-commit: 2e7072043a6b8e5dbaa5f9b6a0579de3d6509c85
 workflow-type: tm+mt
-source-wordcount: '2082'
-ht-degree: 89%
+source-wordcount: '2214'
+ht-degree: 90%
 
 ---
 
@@ -39,7 +39,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -96,7 +96,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 

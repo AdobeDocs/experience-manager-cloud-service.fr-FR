@@ -8,8 +8,8 @@ badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites
 exl-id: 79c90e6b-91da-4f5a-ac96-a98ef7f8d4cd
 source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 1%
+source-wordcount: '310'
+ht-degree: 3%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Pour prévisualiser les expériences d’AEM sur un autre produit Adobe, vous pouvez activer l’extension d’interface utilisateur :
 
-* **Références externes AJO**
+* **Références externes**
 
 L’extension Références externes AJO fonctionne en récupérant des références à un fragment de contenu de toutes les organisations et de tous les sandbox associés à des balises prédéfinies. L’extension affiche ensuite les détails.
 
@@ -31,9 +31,9 @@ Par exemple, pour utiliser l’extension avec AJO :
 
 >[!NOTE]
 >
->Voir aussi [Intégration d’AJO](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/integrations/aem-fragments).
+>Voir aussi [Intégration d’](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/integrations/aem-fragments).
 
-1. Ouvrez la [&#x200B; Console Fragments de contenu &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
+1. Ouvrez la [ Console Fragments de contenu ](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
 
 1. Accédez à votre fragment de contenu : fragment qui a été créé et utilisé sur différents canaux AJO.
 
@@ -41,7 +41,7 @@ Par exemple, pour utiliser l’extension avec AJO :
 
 1. L’extension Références externes AJO est disponible sous la forme d’un onglet dans le panneau de droite. Sélectionnez l’onglet pour ouvrir l’extension :
 
-   ![Extension Références externes AJO](/help/sites-cloud/administering/content-fragments/assets/cf-ajo-fragment-external-references-extension.png)
+   ![Extension Références externes ](/help/sites-cloud/administering/content-fragments/assets/cf-ajo-fragment-external-references-extension.png)
 
    Une fois qu’un type de référence est sélectionné, l’extension affiche les références externes correspondantes sous la forme d’un tableau avec les colonnes :
 

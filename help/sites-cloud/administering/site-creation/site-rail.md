@@ -9,8 +9,8 @@ solution: Experience Manager Sites
 recommendations: noDisplay, noCatalog
 source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '613'
-ht-degree: 36%
+source-wordcount: '623'
+ht-degree: 32%
 
 ---
 
@@ -23,7 +23,7 @@ Découvrez les puissantes fonctionnalités du panneau Site pour vous aider à pe
 
 ## Vue d’ensemble {#overview}
 
-Le panneau Site vous permet de gérer le thème et les ressources de modèle de votre site pour les projets de création AEM traditionnels avec diffusion [publication).](/help/sites-cloud/authoring/author-publish.md) [Comme les autres panneaux](/help/sites-cloud/authoring/sites-console/console-side-panel.md) tels que les panneaux Arborescence de contenu, Références ou Chronologie, le panneau Site s’affiche en tant que panneau le plus à gauche de la console Sites et affiche des informations sur l’élément sélectionné. Contrairement aux autres panneaux, le panneau Site s’applique uniquement aux racines du site.
+Le panneau Site vous permet de gérer le thème et les ressources de modèle de votre site pour les projets de création AEM traditionnels avec [publication de diffusion](/help/sites-cloud/authoring/author-publish.md). [Comme les autres panneaux](/help/sites-cloud/authoring/sites-console/console-side-panel.md) tels que les panneaux Arborescence de contenu, Références ou Chronologie , le panneau Site s’affiche en tant que panneau le plus à gauche de la console Sites et affiche des informations sur l’élément sélectionné. Contrairement aux autres panneaux, le panneau Site s’applique uniquement aux racines du site.
 
 Le panneau Site permet de gérer les informations relatives au thème et au modèle pour votre site, notamment :
 
@@ -48,7 +48,7 @@ Sélectionnez **Télécharger des sources de thème** pour télécharger une cop
 
 ## Télécharger les ressources de modèle {#downloading-template-resources}
 
-Les [modèles de site](site-templates.md) peuvent contenir des informations en plus de la structure de contenu de votre site et du [thème du site.](site-themes.md) Les modèles de site peuvent contenir des designs de structure filaire ou d’autres fichiers liés au site, par exemple.
+[Modèles de site](site-templates.md) peuvent contenir des informations en plus de la structure de contenu de votre site et du [thème du site.](site-themes.md) Les modèles de site peuvent contenir des designs de structure filaire ou d’autres fichiers liés au site, par exemple.
 
 Si votre site est basé sur un modèle de site, avec le panneau Site affiché dans la console Sites, sélectionnez la racine de votre site pour afficher les informations sur le thème du site, y compris des ressources supplémentaires.
 

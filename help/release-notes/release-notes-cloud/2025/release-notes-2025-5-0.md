@@ -6,7 +6,7 @@ role: Admin
 exl-id: b7a21533-9db1-4111-814c-cab917041be4
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '2162'
+source-wordcount: '2250'
 ht-degree: 100%
 
 ---
@@ -37,7 +37,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Consultez la vidéo Vue d’ensemble de la version de mai 2025 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2025.5.0 :
 
->[!VIDEO](https://video.tv.adobe.com/v/3464352?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3464307?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -108,7 +108,7 @@ Accédez à tous vos [rendus prédéfinis et recadrages intelligents Dynamic Me
 
 [Intégration native d’Experience Manager (AEM) Dynamic Media à Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/content-management/combine/aem-dynamic), ce qui permet aux spécialistes du marketing d’incorporer facilement des ressources AEM Dynamic Media (rendu et modèle de gestion de contenu) dans le contenu AJO et de fournir des mises à jour en temps réel et des expériences hyper-personnalisées sur plusieurs canaux.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463784/?captions=fre_fr&learn=on&enablevpops=&autoplay=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -194,9 +194,9 @@ Passez en revue et mettez à jour tous les processus en aval qui reposent sur un
 * Si votre système de transfert de journal attend un format de journal personnalisé, vous devrez peut-être adapter vos règles d’ingestion.
 * Si vous avez précédemment réduit le niveau de détail du journal en modifiant les niveaux de journal, sachez que le retour aux niveaux par défaut peut augmenter le volume du journal.
 
-### Purge par défaut des anciennes versions et des journaux d’audit {#mt-defaults}
+### Purge par défaut des versions et journaux d’audit plus anciens {#mt-defaults}
 
-Actuellement, les *tâches de maintenance de purge* des versions de contenu et des journaux d’audit sont désactivées par défaut. Par conséquent, les données ne sont supprimées, sauf si elles sont configurées explicitement..
+Actuellement, les *tâches de maintenance de purge* des versions de contenu et des journaux d’audit sont désactivées par défaut. Par conséquent, les données ne sont supprimées que si cela est configuré explicitement.
 
 Toutefois, pour optimiser les performances du référentiel, à compter de **fin juin 2025**, la purge sera activée par défaut, en suivant ces directives :
 
