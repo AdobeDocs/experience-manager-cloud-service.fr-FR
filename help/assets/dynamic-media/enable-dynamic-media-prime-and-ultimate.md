@@ -61,16 +61,16 @@ Pour activer le [!DNL Dynamic Media with OpenAPI] pour votre environnement de se
 
 1. Cliquez sur **[!UICONTROL Activer]** dans la boîte de dialogue de confirmation pour lancer le processus d’activation du [!DNL Dynamic Media with OpenAPI]. Une fois l’activation réussie, le Cloud Manager affiche les mises à jour de statut suivantes :
    1. **[!UICONTROL Étape de l’environnement]** : **[!UICONTROL En cours d’exécution]**
-   1. ![DM activated](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**:**[!UICONTROL  les fonctionnalités OpenAPI sont activées ]**
+   1. ![DM activated](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media &#x200B;]**:**[!UICONTROL &#x200B; les fonctionnalités OpenAPI sont activées &#x200B;]**
 
-      ![ activation réussie ](/help/assets/assets/activation-successful.png){width="700" align="left"}
+      ![&#x200B; activation réussie &#x200B;](/help/assets/assets/activation-successful.png){width="700" align="left"}
 
 #### Réessayer l’activation {#retry-activation}
 
 Si l’activation échoue, le Cloud Manager affiche les mises à jour de statut suivantes :
 
 * **[!UICONTROL Étape de l’environnement]** : échec de **[!UICONTROL DM avec OpenAPI]**
-* ![DM activated](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**: échec de l’activation des fonctionnalités**[!UICONTROL  OpenAPI ]**
+* ![DM activated](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media &#x200B;]**: échec de l’activation des fonctionnalités&#x200B;**[!UICONTROL &#x200B; OpenAPI &#x200B;]**
 
   ![réessayer l’activation](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="left"}
 
@@ -103,7 +103,7 @@ Procédez comme suit :
 
 1. [Créez un programme](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-program) ou accédez à un programme existant et cliquez sur **[!UICONTROL Modifier]**. La page **[!UICONTROL Configurer pour la production]** affiche l’onglet **[!UICONTROL Solutions et modules complémentaires]**.
 
-1. Sélectionnez ****, **[!UICONTROL Assets Prime]**, **[!UICONTROL Assets Ultimate]** ou **[!UICONTROL Sites]** pour ajouter la solution **[!UICONTROL Dynamic Media]** à votre programme.
+1. Sélectionnez **&#x200B;**, **[!UICONTROL Assets Prime]**, **[!UICONTROL Assets Ultimate]** ou **[!UICONTROL Sites]** pour ajouter la solution **[!UICONTROL Dynamic Media]** à votre programme.
 
 1. Sélectionnez la solution **[!UICONTROL Dynamic Media]** et cliquez sur **[!UICONTROL Continuer]** pour ajouter la solution **[!UICONTROL Dynamic Media]** à votre programme. Cette action redémarre tous les environnements existants de votre programme et leur ajoute la solution [!DNL Dynamic Media]. En outre, tout nouvel environnement créé dans votre programme est automatiquement [!DNL Dynamic Media].
 
@@ -127,7 +127,7 @@ Pour afficher les sociétés (comptes) existantes ou ajouter une nouvelle socié
 
 Pour créer et répertorier une nouvelle société [!DNL Dynamic Media] (compte) configurable dans votre environnement de [!DNL AEM], procédez comme suit :
 
-1. Accédez à la page de licence [](https://experience-stage.adobe.com/#/@ssahnichstage/cloud-manager/license).
+1. Accédez à la page de licence [&#128279;](https://experience-stage.adobe.com/#/@ssahnichstage/cloud-manager/license).
 
 1. Cliquez sur **[!UICONTROL Ajouter une entreprise]** et la boîte de dialogue **[!UICONTROL Créer une entreprise Dynamic Media]** s’affiche.
 
