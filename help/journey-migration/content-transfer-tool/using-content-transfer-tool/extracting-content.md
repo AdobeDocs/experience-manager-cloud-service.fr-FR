@@ -32,7 +32,7 @@ Pour extraire votre ensemble de migration à partir de l’outil de transfert de
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam12.png)
 
    >[!TIP]
-   >Une ingestion peut désormais être planifiée pour démarrer automatiquement immédiatement après le succès d’une extraction. Voir [ Ingestion de contenu dans Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) pour plus d’informations.
+   >Une ingestion peut désormais être planifiée pour démarrer automatiquement immédiatement après le succès d’une extraction. Voir [&#x200B; Ingestion de contenu dans Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) pour plus d’informations.
 
    >[!IMPORTANT]
    >
@@ -58,7 +58,7 @@ Pour extraire votre ensemble de migration à partir de l’outil de transfert de
 
    ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam17.png)
 
-1. Une fois l’extraction terminée, passez en revue les autres colonnes telles que **** et **Chemins** pour plus d’informations sur le jeu de migration que vous avez renseigné. Cliquez sur **...** > **Afficher les détails** pour afficher les détails, y compris la durée de chaque étape de l’extraction. Affichez cette boîte de dialogue pendant l’extraction afin de voir comment les étapes progressent.
+1. Une fois l’extraction terminée, passez en revue les autres colonnes telles que **&#x200B;**&#x200B;et **Chemins** pour plus d’informations sur le jeu de migration que vous avez renseigné. Cliquez sur **...** > **Afficher les détails** pour afficher les détails, y compris la durée de chaque étape de l’extraction. Affichez cette boîte de dialogue pendant l’extraction afin de voir comment les étapes progressent.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18b.png)
 

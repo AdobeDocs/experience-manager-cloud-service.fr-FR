@@ -30,9 +30,9 @@ Pour améliorer davantage la recherche de ressources, Content Hub vous permet d�
 
 * Générez automatiquement d’autres propriétés pour chaque ressource lors d’un chargement réussi, telles que la taille du fichier, le format, la résolution et d’autres propriétés.
 
-* Utilisez l’intelligence artificielle fournie par [](https://business.adobe.com/ai/adobe-genai.html) pour appliquer automatiquement les balises pertinentes à toutes les ressources que vous avez chargées. Ces balises, judicieusement appelées balises intelligentes, augmentent la vitesse du contenu de vos projets en vous aidant à trouver rapidement les ressources appropriées.
+* Utilisez l’intelligence artificielle fournie par [&#128279;](https://business.adobe.com/ai/adobe-genai.html) pour appliquer automatiquement les balises pertinentes à toutes les ressources que vous avez chargées. Ces balises, judicieusement appelées balises intelligentes, augmentent la vitesse du contenu de vos projets en vous aidant à trouver rapidement les ressources appropriées.
 
-Veillez à ne charger que vos [ ressources approuvées par la marque dans Content Hub](/help/assets/approve-assets.md).
+Veillez à ne charger que vos [&#x200B; ressources approuvées par la marque dans Content Hub](/help/assets/approve-assets.md).
 
 ![Chargement de ressources approuvées par la marque](assets/upload-brand-approved-assets.png)
 
@@ -77,7 +77,7 @@ L’affichage des ressources chargées à l’aide de Content Hub dépend de l�
 
 * Si le bouton **[!UICONTROL Approbation automatique]** est désactivé, les ressources que vous chargez à l’aide de Content Hub ne s’affichent pas automatiquement. Les ressources sont disponibles dans le dossier `hydrated-assets` de votre environnement Assets as a Cloud Service. Accédez au dossier et [modifiez en masse](#bulk-approve-assets-content-hub) le statut de ces ressources sur `Approved` pour que ces ressources s’affichent dans Content Hub.
 
-![Processus d&#39;approbation ](/help/assets/assets/content-hub-approval.png)
+![Processus d&#39;approbation &#x200B;](/help/assets/assets/content-hub-approval.png)
 
 ## Questions fréquentes {#faqs-content-hub-upload-assets}
 

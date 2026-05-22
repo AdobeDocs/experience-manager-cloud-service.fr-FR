@@ -33,7 +33,7 @@ Utilisez l’outil de refactorisation pour migrer votre code à des fins de comp
 
    ![Image](/help/journey-migration/refactoring-tools/assets/rscam1.png)
 
-1. Lorsque vous accédez pour la première fois à la vue de code ****, un état vide s’affiche vous invitant à charger votre code source.
+1. Lorsque vous accédez pour la première fois à la vue de code **&#x200B;**, un état vide s’affiche vous invitant à charger votre code source.
 
    ![Image](/help/journey-migration/refactoring-tools/assets/rscam2.png)
 
@@ -55,7 +55,7 @@ Lorsque les clients accèdent pour la première fois aux **outils de refactorisa
 
 1. **Processus d&#39;inspection**
    - Après le chargement, le **Processus d&#39;inspection** commence automatiquement en arrière-plan.
-   - L’affichage du code **** affiche désormais votre projet chargé et son statut d’inspection.
+   - L’affichage du code **&#x200B;**&#x200B;affiche désormais votre projet chargé et son statut d’inspection.
 
 1. **Statut du contrôle** Le processus de contrôle est conçu pour simplifier l&#39;exécution des outils de refactorisation en réduisant la surcharge des configurations manuelles.
 
