@@ -4,9 +4,9 @@ description: Découvrez comment utiliser le protocole Model Context avec AEM as 
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: 0e011e464ba607edf1fce719263717cc8ce6ba61
+source-git-commit: 65d70f5cbd0eea618e5de13d8627a5ae87b0089d
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1896'
 ht-degree: 1%
 
 ---
@@ -47,8 +47,8 @@ AEM expose les serveurs MCP en tant que points d’entrée HTTP. Les points d’
 
 | Serveur MCP | Point d’entrée | Description |
 |---|---|---|
-| **Contenu** | `/content` | Opérations de contenu dont la création, la lecture, la mise à jour et la suppression (CRUD) de pages et de fragments de contenu, ainsi que l’importation et la recherche de ressources.<br>Si vous êtes intéressé, vous devez vous inscrire à l’essai [&#x200B; agents ou disposer d’une licence payante](https://experienceleague.adobe.com/fr/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) afin d’accéder au MCP de la gouvernance d’expérience. |
-| **Contenu (lecture seule)** | `/content-readonly` | Opérations de contenu en lecture seule (get, list/search) pour les pages et les fragments de contenu, ainsi que recherche de ressources.<br>Si vous êtes intéressé, vous devez vous inscrire à l’essai [&#x200B; agents ou disposer d’une licence payante](https://experienceleague.adobe.com/fr/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) afin d’accéder au MCP de la gouvernance d’expérience. |
+| **Contenu** | `/content` | Opérations de contenu dont la création, la lecture, la mise à jour et la suppression (CRUD) de pages et de fragments de contenu, ainsi que l’importation et la recherche de ressources.<br>Envoyez un e-mail à `aemcs-mcp-feedback@adobe.com` pour que la **recherche de ressources** soit activée pour vous. Incluez le nom de l’organisation ainsi que le cas d’utilisation dans l’e-mail. |
+| **Contenu (lecture seule)** | `/content-readonly` | Opérations de contenu en lecture seule (get, list/search) pour les pages et les fragments de contenu, ainsi que recherche de ressources.<br>Envoyez un e-mail à `aemcs-mcp-feedback@adobe.com` pour que la **recherche de ressources** soit activée pour vous. Incluez le nom de l’organisation ainsi que le cas d’utilisation dans l’e-mail. |
 | **Cloud Manager** | `/cloudmanager` | Gérez les entités Cloud Manager, notamment les programmes, les environnements, les référentiels et les pipelines, qui peuvent également être déclenchés. |
 | **Gouvernance de l’expérience** | `/experience-governance` | Évaluez le contenu (texte, images, pages) par rapport aux règles de gouvernance de marque et répertoriez les configurations et les contrôles de marque.<br/>Si vous êtes intéressé, vous devez vous inscrire à l’essai [&#x200B; agents ou disposer d’une licence payante](https://experienceleague.adobe.com/fr/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) afin d’accéder au MCP de la gouvernance d’expérience. |
 
@@ -177,7 +177,7 @@ Voici quelques scénarios représentatifs :
 
   >[!NOTE]
   >
-  >Envoyez un e-mail à `aemagentsteam@adobe.com` pour activer la recherche de ressources. Incluez le nom de l’organisation ainsi que le cas d’utilisation dans l’e-mail.
+  >Envoyez un e-mail à `aemcs-mcp-feedback@adobe.com` pour activer la recherche de ressources. Incluez le nom de l’organisation ainsi que le cas d’utilisation dans l’e-mail.
 
 ### Exemples de workflows {#example-workflows}
 
