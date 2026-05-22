@@ -105,7 +105,7 @@ Vous pouvez désormais affecter un formulaire de métadonnées à un dossier sp�
 
   Vous pouvez écrire à `aem-forms-ea@adobe.com` depuis votre adresse e-mail officielle pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité.
 
-* Forms adaptative découplée](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=fr)**: utilisez le Forms adaptatif découplé pour permettre à vos développeurs et développeuses de créer, publier et gérer des formulaires interactifs accessibles et interactifs via des API, plutôt que par le biais d’une interface utilisateur graphique classique.**[ Les formulaires adaptatifs découplés vous aident à :
+* Forms adaptative découplée[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=fr)**: utilisez le Forms adaptatif découplé pour permettre à vos développeurs et développeuses de créer, publier et gérer des formulaires interactifs accessibles et interactifs via des API, plutôt que par le biais d’une interface utilisateur graphique classique.** Les formulaires adaptatifs découplés vous aident à :
 
    * créer des formulaires multicanaux de haute qualité dans le langage de programmation de votre choix ;
    * intégrer nativement les formulaires à vos applications de bureau et mobiles, à vos sites web et à vos applications de chat ;

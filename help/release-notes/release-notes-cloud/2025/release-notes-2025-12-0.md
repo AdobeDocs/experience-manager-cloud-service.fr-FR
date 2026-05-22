@@ -63,7 +63,7 @@ Bénéficiez d’un accès anticipé aux nouvelles et puissantes fonctionnalité
 
 Ce programme dure généralement 4 à 6 semaines, mais peut être adapté pour être flexible quant à votre capacité à participer activement.
 
-Pour vous inscrire à ce programme, envoyez un e-mail à l’adresse [](mailto:aemagentsteam@adobe.com) et incluez les détails suivants dans la mesure du possible :
+Pour vous inscrire à ce programme, envoyez un e-mail à l’adresse [&#128279;](mailto:aemagentsteam@adobe.com) et incluez les détails suivants dans la mesure du possible :
 
 * Noms et Adobe ID des membres de l’équipe qui utiliseront activement des agents.
 * Liste des agents spécifiques que vous ou votre équipe souhaitez utiliser. Ou simplement dire « Tous les agents ».
@@ -74,7 +74,7 @@ Voir [Programmes bêta AEM Foundation](#foundation-early-adopter).
 
 ### Cloud Manager (programmes Beta) {#cloud-manager-beta-programs}
 
-Voir [Programmes bêta ](/help/implementing/cloud-manager/release-notes/current.md).
+Voir [Programmes bêta &#x200B;](/help/implementing/cloud-manager/release-notes/current.md).
 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
@@ -262,7 +262,7 @@ Envoyez un e-mail à [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-cana
 
 Dans la version bêta, les environnements de développement rapide (RDE) prennent désormais en charge une fonctionnalité permettant de prendre un instantané de l’état actuel du code et du contenu, qui peut être restauré ultérieurement. Cela peut s’avérer utile lors de la synchronisation du code qui peut devoir être restauré à un état précédent ou, lorsqu’au cours du développement, il est nécessaire d’alterner entre plusieurs fonctionnalités différentes. Il est également possible de restaurer uniquement le contenu modifiable en tant que point de départ connu pour les tests.
 
-Veuillez envoyer un e-mail à [](mailto:aemcs-rde-support@adobe.com) si cette fonctionnalité vous intéresse et si vous souhaitez faire part de vos commentaires.
+Veuillez envoyer un e-mail à [&#128279;](mailto:aemcs-rde-support@adobe.com) si cette fonctionnalité vous intéresse et si vous souhaitez faire part de vos commentaires.
 
 #### Accélérer le développement d’AEM avec l’IA (programme Alpha) {#ai-dev-alpha}
 

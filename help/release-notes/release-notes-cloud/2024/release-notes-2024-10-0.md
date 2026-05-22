@@ -57,7 +57,7 @@ Tirez profit de GenAI grâce à une nouvelle fonctionnalité d’AEM, [générer
 
 **API AEM REST OpenAPI pour la diffusion de fragments de contenu**
 
-L’[API AEM REST OpenAPI pour la diffusion de fragments de contenu ](/help/headless/aem-content-fragment-delivery-with-openapi.md) est désormais disponible pour AEM as a Cloud Service.
+L’[API AEM REST OpenAPI pour la diffusion de fragments de contenu &#x200B;](/help/headless/aem-content-fragment-delivery-with-openapi.md) est désormais disponible pour AEM as a Cloud Service.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -67,7 +67,7 @@ L’[API AEM REST OpenAPI pour la diffusion de fragments de contenu ](/help/hea
 
 Adobe Dynamic Media utilise l’intelligence artificielle pour générer automatiquement des sous-titres pour le contenu vidéo. Cette fonctionnalité est conçue pour améliorer l’accessibilité et l’expérience d’utilisation en fournissant des sous-titres précis en temps réel. L’IA analyse la piste audio de la vidéo pour transcrire la parole et créer des sous-titres, qui peuvent être modifiés pour plus de précision ou de personnalisation. Ces sous-titres permettent de répondre aux exigences d’accessibilité et d’améliorer l’engagement vidéo pour les audiences qui dépendent d’une prise en charge vidéo basée sur le texte ou qui préfèrent ce système.
 
-Pour bénéficier d’un accès anticipé à la prise en charge des sous-titres générés par l’IA sur votre compte Dynamic Media, vous devez [créer et envoyer un cas d’assistance clientèle Adobe ](/help/assets/dynamic-media/video.md##enable-dash).
+Pour bénéficier d’un accès anticipé à la prise en charge des sous-titres générés par l’IA sur votre compte Dynamic Media, vous devez [créer et envoyer un cas d’assistance clientèle Adobe &#x200B;](/help/assets/dynamic-media/video.md##enable-dash).
 
 ### Nouvelles fonctionnalités de la vue Assets {#assets-view-new-features}
 

@@ -223,7 +223,7 @@ AI Answers offre une nouvelle manière à vos visiteurs d’interagir avec votre
 
 Nous nous préparons à lancer le programme Beta des réponses de l’IA et nous invitons désormais les clients à manifester leur intérêt. Étant donné que la version bêta disposera d’une capacité très limitée, les inscriptions précoces seront prises en compte en priorité. En participant à la version bêta, vous pourrez explorer les réponses de l’IA dans votre environnement AEM Cloud Service, valider les performances et la précision, et contribuer à façonner l’expérience future avant qu’elle ne soit disponible au public.
 
-Pour demander une participation ou recevoir des mises à jour, veuillez contacter [](mailto:feedback-ai-answers@adobe.com).
+Pour demander une participation ou recevoir des mises à jour, veuillez contacter [&#128279;](mailto:feedback-ai-answers@adobe.com).
 
 #### Accélérer le développement d’AEM avec l’IA (programme Alpha)  {#ai-dev-alpha}
 

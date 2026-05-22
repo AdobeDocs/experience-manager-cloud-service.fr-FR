@@ -47,7 +47,7 @@ Consultez la vidéo Vue d’ensemble de la version d’août 2022 pour un résu
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Sites] {#prerelease-features-sites}
 
-* La [ Console de fragments de contenu ](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) permet aux utilisateurs d’afficher le nombre total de copies de langue associées à un fragment de contenu. En un seul clic, vous pouvez désormais afficher toutes les copies de langue. Les utilisateurs et utilisatrices peuvent également filtrer la vue du tableau en fonction des paramètres régionaux de leur choix.
+* La [&#x200B; Console de fragments de contenu &#x200B;](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) permet aux utilisateurs d’afficher le nombre total de copies de langue associées à un fragment de contenu. En un seul clic, vous pouvez désormais afficher toutes les copies de langue. Les utilisateurs et utilisatrices peuvent également filtrer la vue du tableau en fonction des paramètres régionaux de leur choix.
 
 ![Langues de fragments de contenu](/help/release-notes/assets/cfconsole-languages.png)
 
@@ -55,7 +55,7 @@ Consultez la vidéo Vue d’ensemble de la version d’août 2022 pour un résu
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#features-assets}
 
-* Vous pouvez désormais configurer Adobe Experience Manager Assets pour [ restreindre le type de ressources que les utilisateurs peuvent charger en fonction du type MIME ](/help/assets/configure-asset-upload-restrictions.md).
+* Vous pouvez désormais configurer Adobe Experience Manager Assets pour [&#x200B; restreindre le type de ressources que les utilisateurs peuvent charger en fonction du type MIME &#x200B;](/help/assets/configure-asset-upload-restrictions.md).
 
   ![Restrictions de téléchargement des ressources](/help/assets/assets/asset-upload-restrictions.png)
 

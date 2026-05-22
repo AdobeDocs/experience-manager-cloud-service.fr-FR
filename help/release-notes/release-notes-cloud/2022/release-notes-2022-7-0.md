@@ -39,7 +39,7 @@ Consultez la vidéo Vue d’ensemble de la version de juillet 2022 pour obtenir
 
 ### Nouvelles fonctionnalités de [!DNL Sites] {#sites-features}
 
-* La [ Console de fragments de contenu ](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) prend désormais en charge [raccourcis clavier](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
+* La [&#x200B; Console de fragments de contenu &#x200B;](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) prend désormais en charge [raccourcis clavier](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 
 * AEM as a Cloud Service [diffusion d’images optimisée pour le web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=fr) permet d’améliorer considérablement la vitesse de page en fournissant des formats tels que WebP. Ce nouveau service offre également des options de redimensionnement et de transformation d’image plus flexibles. Toutes les versions du [composant d’image principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=fr) vous permettent d’utiliser ce service et de diffuser des images au format WebP en cliquant sur une option de la politique du composant d’image.
 
@@ -56,7 +56,7 @@ Consultez la vidéo Vue d’ensemble de la version de juillet 2022 pour obtenir
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Assets] {#prerelease-features-assets}
 
-Vous pouvez désormais configurer Adobe Experience Manager Assets pour [ restreindre le type de ressources que les utilisateurs peuvent charger en fonction du type MIME ](/help/assets/configure-asset-upload-restrictions.md).
+Vous pouvez désormais configurer Adobe Experience Manager Assets pour [&#x200B; restreindre le type de ressources que les utilisateurs peuvent charger en fonction du type MIME &#x200B;](/help/assets/configure-asset-upload-restrictions.md).
 
 ![Restrictions de téléchargement des ressources](/help/assets/assets/asset-upload-restrictions.png)
 
@@ -104,12 +104,12 @@ Vous pouvez désormais configurer Adobe Experience Manager Assets pour [ restrei
 ### Nouveautés {#what-is-new-foundation}
 
 * Le [navigateur de référentiels](/help/implementing/developing/tools/repository-browser.md) dispose désormais d’un champ d’entrée de chemin d’accès, ce qui permet de passer directement à un dossier spécifique dans la hiérarchie du référentiel
-* Sling Content Distribution (SCD) prend désormais en charge une action d’« invalidation » explicite, ce qui permet d’invalider le contenu sans qu’il ne soit publié. Consultez la page [ Mise en cache dans AEM as a Cloud Service ](/help/implementing/dispatcher/caching.md#explicit-invalidation) pour plus d’informations.
+* Sling Content Distribution (SCD) prend désormais en charge une action d’« invalidation » explicite, ce qui permet d’invalider le contenu sans qu’il ne soit publié. Consultez la page [&#x200B; Mise en cache dans AEM as a Cloud Service &#x200B;](/help/implementing/dispatcher/caching.md#explicit-invalidation) pour plus d’informations.
 * mod_macro est désormais disponible dans AEM as a Cloud Service. Voir [ce tableau](/help/implementing/dispatcher/disp-overview.md) pour obtenir la liste des modules Apache pris en charge.
 
 ### Améliorations des outils AEM as a Cloud Service SDK Dispatcher {#dispatcher-tools-enhancements}
 
-* Vous pouvez démarrer Apache avec `docker_run_hot_reload.sh` script qui charge et valide automatiquement toutes les modifications ultérieures apportées à la configuration Apache et Dispatcher, améliorant ainsi la vitesse du développeur. Uniquement pris en charge pour les outils du Dispatcher en mode flexible. Pour plus d’informations sur le rechargement et la validation automatiques](/help/implementing/dispatcher/validation-debug.md#automatic-reloading) consultez la section [ Déboguer la configuration d’Apache et de Dispatcher .
+* Vous pouvez démarrer Apache avec `docker_run_hot_reload.sh` script qui charge et valide automatiquement toutes les modifications ultérieures apportées à la configuration Apache et Dispatcher, améliorant ainsi la vitesse du développeur. Uniquement pris en charge pour les outils du Dispatcher en mode flexible. Pour plus d’informations sur le rechargement et la validation automatiques[&#128279;](/help/implementing/dispatcher/validation-debug.md#automatic-reloading) consultez la section  Déboguer la configuration d’Apache et de Dispatcher .
 * La configuration locale d’Apache/du Dispatcher suit plus étroitement les modifications dans les environnements cloud, ce qui augmente la parité entre les deux environnements.
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Experience Manager] {#prerelease-features-foundation}
@@ -118,7 +118,7 @@ Vous pouvez désormais configurer Adobe Experience Manager Assets pour [ restrei
 
 ## Connecteurs Adobe Learning Manager {#learn-manage}
 
-* Le nouveau Adobe Learning Manager dispose de connecteurs vers Adobe Experience Manager Sites, Marketo Engage et Adobe Commerce. Pour en savoir plus, consultez : [Guide de l’utilisateur de ](https://helpx.adobe.com/learning-manager/user-guide.html).
+* Le nouveau Adobe Learning Manager dispose de connecteurs vers Adobe Experience Manager Sites, Marketo Engage et Adobe Commerce. Pour en savoir plus, consultez : [Guide de l’utilisateur de &#x200B;](https://helpx.adobe.com/learning-manager/user-guide.html).
 
 ## Cloud Manager {#cloud-manager}
 
