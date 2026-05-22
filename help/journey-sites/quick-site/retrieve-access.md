@@ -8,7 +8,7 @@ role: Admin, Developer
 recommendations: noDisplay, noCatalog
 source-git-commit: 8c4b34a77ef85869048fae254728c58cf0d99b66
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: '908'
 ht-degree: 100%
 
 ---
@@ -62,7 +62,7 @@ Si lʼun de ces éléments est manquant, contactez lʼadministration AEM ou Clou
 Il est présumé que le développeur ou la développeuse front-end possède une solide expérience des workflows de développement front-end et des outils courants installés, notamment :
 
 * Git
-* npm 
+* npm
 * webpack
 * Un éditeur préféré
 

@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: f4c89fc715b686aaabd0766a2e24219ab6811b0b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '654'
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ AEM atteint ces objectifs en adoptant les principales caractéristiques des serv
 * [Modifications notables apportées à AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
 * [Modifications notables apportées à AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 * [Présentation d’Assets as a Cloud Service](/help/assets/overview.md)
-* [Tutoriels sur Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=fr)
+* [Tutoriels d’Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=fr)
 
 >[!TIP]
 >

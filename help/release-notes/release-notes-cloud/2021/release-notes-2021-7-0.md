@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '1292'
-ht-degree: 58%
+source-wordcount: '1417'
+ht-degree: 57%
 
 ---
 
@@ -78,7 +78,7 @@ Regardez la vidéo [Aperçu de la version de juillet 2021](https://video.tv.ado
 
 * Lorsque vous partagez des ressources numériques sous la forme d’un lien, les utilisateurs peuvent copier l’URL dans le presse-papiers. Cette amélioration vous permet de partager des ressources plus rapidement et plus facilement.
 
-### Correctifs d’[!DNL Assets]  {#assets-bugs-fixed}
+### Correctifs d’[!DNL Assets] {#assets-bugs-fixed}
 
 L’API `com.day.cq.dam.api.collection.SmartCollection` n’est pas disponible dans [!DNL Experience Manager] as a [!DNL Cloud Service]. (CQ-4326322)
 
@@ -100,7 +100,7 @@ L’API `com.day.cq.dam.api.collection.SmartCollection` n’est pas disponible d
 
 * **Document d’enregistrement basé sur Acrobat** : vous pouvez également [utiliser Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms) comme modèle de document d’enregistrement en plus du modèle de formulaire basé sur XFA.
 
-* **® connecteur de magasin de données Azure** : vous pouvez désormais [connecter le modèle de données de formulaire au stockage Microsoft® Azure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=fr). Il vous permet de récupérer et de stocker des données de formulaire adaptatif dans le stockage Azure Microsoft® en tant qu’objet BLOB.
+* **® connecteur de magasin de données Azure** : vous pouvez désormais [connecter le modèle de données de formulaire au stockage Microsoft® Azure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html). Il vous permet de récupérer et de stocker des données de formulaire adaptatif dans le stockage Azure Microsoft® en tant qu’objet BLOB.
 
 ## Module complémentaire CIF {#cloud-services-cif}
 
@@ -196,4 +196,4 @@ Cloud Acceleration Manager est une application cloud conçue pour guider vos éq
 
 >[!NOTE]
 >
-> Regardez cette vidéo de démonstration de [&#128279;](https://video.tv.adobe.com/v/335547).
+> Regardez cette vidéo de démonstration de [](https://video.tv.adobe.com/v/335547).
