@@ -8,7 +8,7 @@ feature: Authoring, Content Fragments
 role: User
 source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1327'
 ht-degree: 84%
 
 ---
@@ -131,7 +131,7 @@ Vous pouvez ainsi ajouter du contenu supplémentaire [intermédiaire](/help/asse
 Pour le contenu intermédiaire, vous pouvez :
 
 * Ajouter des composants à partir de l’[explorateur de composants](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
-* Ajouter des ressources à partir du navigateur [Assets](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
+* Ajouter des ressources à partir du navigateur [&#128279;](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
 * Utiliser du [contenu associé](#using-associated-content) comme source de contenu intermédiaire.
 
 >[!CAUTION]

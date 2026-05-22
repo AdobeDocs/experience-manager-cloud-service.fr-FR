@@ -8,8 +8,8 @@ feature: Authoring
 role: User
 source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '834'
-ht-degree: 23%
+source-wordcount: '844'
+ht-degree: 20%
 
 ---
 
@@ -98,7 +98,7 @@ La vue **Références** affiche une liste des types de références vers ou depu
 
 ![Détails des références](assets/console-side-panel-references-detail.png)
 
-Sélectionnez le type de référence approprié pour en savoir plus. Dans certains cas, d’autres actions sont disponibles lorsque vous sélectionnez une référence particulière, notamment :
+Sélectionnez le type de référence approprié pour plus d’informations. Dans certains cas, d’autres actions sont disponibles lorsque vous sélectionnez une référence spécifique, notamment :
 
 * La section **Liens entrants** fournit une liste de pages qui font directement référence à la page sélectionnée, ainsi qu’un accès direct à l’une de ces pages **Modifier** lorsque vous sélectionnez un lien spécifique.
    * Cette option affiche uniquement les liens statiques, et non les liens générés dynamiquement, comme ceux du composant Liste .
