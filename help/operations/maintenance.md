@@ -6,7 +6,7 @@ feature: Operations
 role: Admin
 source-git-commit: d5addc40eb48000c515b670ef5f7c7a7e8b79928
 workflow-type: tm+mt
-source-wordcount: '2057'
+source-wordcount: '2098'
 ht-degree: 38%
 
 ---
@@ -49,14 +49,14 @@ Le tableau suivant illustre les tâches de maintenance disponibles.
   <tr>
     <td>Purge de version</td>
     <td>Client</td>
-    <td>La purge de version est actuellement désactivée par défaut, mais la politique peut être configurée, comme décrit dans la section <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks"> Tâches de maintenance de purge de version et de journal d’audit </a>.<br/><br/>La purge sera bientôt activée par défaut et ces valeurs pourront être remplacées.<br>
+    <td>La purge de version est actuellement désactivée par défaut, mais la politique peut être configurée, comme décrit dans la section <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks"> Tâches de maintenance de purge de version et de journal d’audit </a>.<br/><br/>La purge sera bientôt activée par défaut et ces valeurs pourront être remplacées.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>Purge du journal d’audit</td>
     <td>Client</td>
-    <td>La purge du journal d’audit est actuellement désactivée par défaut, mais la politique peut être configurée, comme décrit dans la section <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tâches de maintenance de purge de version et de purge du journal d’audit</a>.<br/><br/>La purge sera bientôt activée par défaut et ces valeurs pourront être remplacées.<br>
+    <td>La purge du journal d’audit est actuellement désactivée par défaut, mais la politique peut être configurée, comme décrit dans la section <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tâches de maintenance de purge de version et de purge du journal d’audit</a>.<br/><br/>La purge sera bientôt activée par défaut et ces valeurs pourront être remplacées.<br>
    </td>
    </td>
   </tr>
@@ -87,7 +87,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles.
     <td>Client</td>
     <td>
     <p>Doit s’effectuer dans git. Remplacez le nœud de configuration de fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/conf/global/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> ou <code>granite_monthly</code>. Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration.</p>
-    <p>Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus (nommez-le <code>granite_ProjectPurgeTask</code>) avec les propriétés adéquates. Consultez la liste des <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">propriétés OSGi</a> pour la configuration de purge des projets Adobe <b></b> .</p>
+    <p>Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus (nommez-le <code>granite_ProjectPurgeTask</code>) avec les propriétés adéquates. Consultez la liste des <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">propriétés OSGi</a> pour la configuration de purge des projets Adobe <b></b> .</p>
   </td>
   </tr>
   </tbody>
@@ -273,7 +273,7 @@ Déclarez un fichier de configuration et déployez-le comme décrit dans les ét
    * toutes les propriétés doivent être définies. Il n’existe aucune valeur par défaut héritée.
    * les types (entiers, chaînes, booléens, etc.) dans les tableaux de propriétés ci-dessous doivent être respectés.
 
-1. Créez un pipeline de configuration dans Cloud Manager, comme décrit dans l’article [configuration du pipeline](/help/operations/config-pipeline.md#managing-in-cloud-manager).
+1. Créez un pipeline de configuration dans Cloud Manager, comme décrit dans l’[article sur le pipeline de configuration](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 ### Purge de version {#version-purge}
 

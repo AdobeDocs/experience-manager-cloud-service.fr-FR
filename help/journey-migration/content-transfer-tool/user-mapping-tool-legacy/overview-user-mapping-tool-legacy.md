@@ -17,7 +17,7 @@ ht-degree: 96%
 
 >[!INFO]
 >
->Cette documentation fait référence à une version obsolète de l’outil. Pour plus d’informations sur la dernière version, voir [&#x200B; Migration de groupe &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md).
+>Cette documentation fait référence à une version obsolète de l’outil. Pour plus d’informations sur la dernière version, voir [ Migration de groupe ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md).
 
 <!--
  Alexandru: drafting this for now
@@ -28,8 +28,8 @@ NOTE: "LEGACY" for user mapping includes everything before (that is, not includi
 >id="aemcloud_ctt_usermapping"
 >title="User Mapping Tool"
 >abstract="The Content Transfer Tool helps you move users and groups from your existing AEM system to AEM as a Cloud Service. Existing users and groups need to be mapped to their IMS IDs to avoid duplicate users and groups on the Cloud Service author instance."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=fr#important-considerations" text="Important Considerations for using User Mapping Tool"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=fr#using-user-mapping-tool" text="Using User Mapping Tool"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html#important-considerations" text="Important Considerations for using User Mapping Tool"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html#using-user-mapping-tool" text="Using User Mapping Tool"
 
 -->
 

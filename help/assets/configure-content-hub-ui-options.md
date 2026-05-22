@@ -35,11 +35,11 @@ Experience Manager Assets permet à l’équipe d’aministration de configurer 
 
 * Tous les liens personnalisés que vous devez inclure sur Content Hub en plus des ressources, des collections et des informations.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472948/?captions=fre_fr&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
 
 ## Conditions préalables {#prerequisites-configuration-ui}
 
-Les [administrateurs &#x200B;](/help/assets/deploy-content-hub.md#step-3-onboard-content-hub-administrator) peuvent définir les options de configuration pour d&#39;autres utilisateurs de votre organisation.
+Les [administrateurs ](/help/assets/deploy-content-hub.md#step-3-onboard-content-hub-administrator) peuvent définir les options de configuration pour d&#39;autres utilisateurs de votre organisation.
 
 ## Accéder aux options de configuration sur Content Hub {#access-configuration-options-content-hub}
 
@@ -193,8 +193,8 @@ En tant qu’administrateur, personnalisez votre portail [!DNL Content Hub] pour
 ![réinitialiser par défaut](/help/assets/assets/reset-default-content-hub.png)
 Sur la page ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]**, utilisez les sections **[!UICONTROL Bannière]**, **[!UICONTROL Couleurs]** et **[!UICONTROL Image de bannière]** pour exécuter les personnalisations suivantes :
 
-1. [Modifiez l’image du logo à partir de la section [!UICONTROL &#x200B; Image du logo &#x200B;]](#Change-the-logo-image)
-1. [Modifiez l’image de bannière à partir de la section [!UICONTROL &#x200B; Image de bannière &#x200B;]](#Change-the-banner-image)
+1. [Modifiez l’image du logo à partir de la section [!UICONTROL  Image du logo ]](#Change-the-logo-image)
+1. [Modifiez l’image de bannière à partir de la section [!UICONTROL  Image de bannière ]](#Change-the-banner-image)
 1. [Mettez à jour le titre et le texte du corps de la bannière et modifiez la couleur du texte dans la section [!UICONTROL Bannière]](#Add-title-and-body-text-to-your-banner-and-change-the-text-color)
 1. [Modifiez la couleur principale et secondaire de la section [!UICONTROL Couleurs] pour appliquer un jeu de couleurs qui s’aligne sur le thème de votre marque](#Change-the-primary-and-secondary-color)
 
@@ -232,9 +232,9 @@ Cliquez sur la zone carrée en regard de la **[!UICONTROL Couleur du texte de ba
 
 Sur la page ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]**, utilisez la section **[!UICONTROL Couleurs]** pour définir les couleurs primaires et secondaires en les sélectionnant à l’aide du sélecteur de couleurs ou en définissant le code hexadécimal de la couleur. Ces couleurs définissent les couleurs d’arrière-plan, de texte et d’icône des éléments de l’interface utilisateur pour aligner votre interface utilisateur [!DNL Content Hub] avec le thème de votre marque.
 ![couleur primaire et secondaire](/help/assets/assets/primary-secondary-color-content-hub1.png)
-**[!UICONTROL Couleur du Principal &#x200B;] :** le jeu de couleurs principal s’applique aux actions de sélection, aux éléments interactifs tels que les cases à cocher, les barres de recherche et les commutateurs à travers les [!DNL Content Hub], y compris [!DNL Content Hub] page d’accueil et la page [!UICONTROL Configuration]. Elle s’applique également aux options d’action disponibles sur les interfaces de [!DNL Content Hub] principales, telles que les options disponibles sur les pages **[!UICONTROL Toutes les Assets]** et **[!UICONTROL Collections]**.
+**[!UICONTROL Couleur du Principal ] :** le jeu de couleurs principal s’applique aux actions de sélection, aux éléments interactifs tels que les cases à cocher, les barres de recherche et les commutateurs à travers les [!DNL Content Hub], y compris [!DNL Content Hub] page d’accueil et la page [!UICONTROL Configuration]. Elle s’applique également aux options d’action disponibles sur les interfaces de [!DNL Content Hub] principales, telles que les options disponibles sur les pages **[!UICONTROL Toutes les Assets]** et **[!UICONTROL Collections]**.
 
-**[!UICONTROL Couleur Secondaire &#x200B;]:** Sur la page d&#39;accueil [!DNL Content Hub], le jeu de couleurs secondaire s&#39;applique aux options de l&#39;interface utilisateur et aux champs de saisie disponibles dans les boîtes de dialogue. Elle s’applique à toutes les options de menu de configuration disponibles sur la page [!UICONTROL Configuration], à l’exception des actions de sélection, des cases à cocher, des barres de recherche et des commutateurs.
+**[!UICONTROL Couleur Secondaire ]:** Sur la page d&#39;accueil [!DNL Content Hub], le jeu de couleurs secondaire s&#39;applique aux options de l&#39;interface utilisateur et aux champs de saisie disponibles dans les boîtes de dialogue. Elle s’applique à toutes les options de menu de configuration disponibles sur la page [!UICONTROL Configuration], à l’exception des actions de sélection, des cases à cocher, des barres de recherche et des commutateurs.
 
 ### Visibilité des ressources{#asset-visibility-content-hub}
 
@@ -264,7 +264,7 @@ Si la visibilité des ressources arrivées à expiration est activée, Content H
 
 ### Rendus {#renditions-content-hub}
 
-Les rendus sont des versions personnalisées des ressources numériques, telles que les images, les documents, etc., conçues pour différents appareils et plateformes afin d’assurer des performances optimales. En savoir plus sur les [rendus dans Adobe Experience Manager Assets](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+Les rendus sont des versions personnalisées des ressources numériques, telles que les images, les documents, etc., conçues pour différents appareils et plateformes afin d’assurer des performances optimales. En savoir plus sur les [rendus dans Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Pour cela, procédez comme suit :
 

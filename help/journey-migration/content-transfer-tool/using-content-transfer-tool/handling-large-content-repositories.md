@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: b729c07c78519cd9b6536a0dd142aa8ed01d2a22
 workflow-type: tm+mt
-source-wordcount: '1842'
-ht-degree: 94%
+source-wordcount: '1968'
+ht-degree: 90%
 
 ---
 
@@ -97,7 +97,7 @@ En résumé, vous voulez télécharger le binaire Linux® x86-64 à partir de la
 >[!IMPORTANT]
 >Prenez note de l’emplacement où vous avez placé le fichier binaire, car vous aurez besoin de son chemin d’accès complet à une étape ultérieure.
 
-### &#x200B;2. Installez une version de l’outil de transfert de contenu (CTT) avec la prise en charge d’AzCopy. {#install-ctt-azcopy-support}
+### &#x200B;2. Installez la version de l’outil de transfert de contenu (CTT) avec la prise en charge d’AzCopy {#install-ctt-azcopy-support}
 
 >[!IMPORTANT]
 >La version la plus récente de CTT doit être utilisée.
@@ -106,7 +106,7 @@ La prise en charge d’AzCopy pour Amazon S3, le service Stockage Blob Azure e
 Vous pouvez télécharger la dernière version du CTT à partir du portail [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 Notez que seules les versions 2.0.0 et ultérieures seront prises en charge et il est conseillé d’utiliser la version la plus récente.
 
-### &#x200B;3. Configurer un fichier azcopy.config. {#configure-azcopy-config-file}
+### &#x200B;3. Configuration d’un fichier azcopy.config {#configure-azcopy-config-file}
 
 Sur l’instance AEM source, dans `crx-quickstart/cloud-migration`, créez un fichier appelé `azcopy.config`.
 
@@ -156,13 +156,12 @@ La propriété azCopyPath doit contenir le chemin d’accès complet de l’empl
 
 Si la propriété `repository.home` est manquante dans azcopy.config, alors l’emplacement par défaut du magasin de données `/mnt/crx/author/crx-quickstart/repository/datastore` est utilisé pour effectuer la précopie.
 
-### &#x200B;4. Extraire avec AzCopy {#extracting-azcopy}
+### &#x200B;4. Extraction avec AzCopy {#extracting-azcopy}
 
 Une fois le fichier de configuration ci-dessus en place, la phase de précopie AzCopy s’exécute dans le cadre de chaque extraction ultérieure. Pour l’empêcher d’exécuter, vous pouvez renommer ce fichier ou le supprimer.
 
 >[!NOTE]
->Si AzCopy n’est pas configuré correctement, le message suivant s’affiche dans les journaux :
->&#x200B;>`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
+>Si AzCopy n’est pas configuré correctement, le message suivant s’affiche dans les journaux :>`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
 
 1. Commencez une extraction à partir de l’interface utilisateur de CTT. Pour plus d’informations, consultez [Prise en main de l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) et [Processus d’extraction](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md).
 
@@ -194,24 +193,25 @@ En cas de problème avec AzCopy, l’extraction échoue immédiatement et les jo
 Les objets Blob qui ont été copiés avant l’erreur sont automatiquement ignorés par AzCopy lors des exécutions suivantes et n’ont pas besoin d’être copiés à nouveau.
 
 >[!TIP]
->Une ingestion peut désormais être planifiée pour démarrer automatiquement immédiatement après le succès d’une extraction. Voir [&#x200B; Ingestion de contenu dans Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) pour plus d’informations.
+>Une ingestion peut désormais être planifiée pour démarrer automatiquement immédiatement après le succès d’une extraction. Voir [ Ingestion de contenu dans Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) pour plus d’informations.
 
 >[!TIP]
 >Si le transfert d’objets Blob avec AzCopy a progressé pendant un certain temps, mais qu’il a ensuite échoué pour quelques objets Blob uniquement, réexécutez l’extraction avec les options PréCopy et Remplacer le conteneur d’évaluation décochées. Seuls les objets Blob restants qui n’ont pas été transférés précédemment seront migrés.
 
 #### Pour File Data Store {#file-data-store-extract}
 
-Lorsque AzCopy est en cours d’exécution pour le fichier source dataStore, vous devriez voir des messages comme ceux-ci dans les journaux indiquant que les dossiers sont en cours de traitement :
+Lorsque AzCopy est en cours d’exécution pour le fichier source dataStore, vous devriez voir des messages comme ceux-ci dans les journaux indiquant que les dossiers sont en cours de traitement :
 `c.a.g.s.m.c.a.AzCopyFileSourceBlobPreCopy - [AzCopy pre-copy] Processing folder (1/24) crx-quickstart/repository/datastore/5d`
 
 ### &#x200B;5. Ingestion avec AzCopy {#ingesting-azcopy}
 
-Consultez la section [&#x200B; Ingestion de contenu dans Target &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) pour obtenir des informations générales sur l’ingestion de contenu dans Target à partir de Cloud Acceleration Manager (CAM), y compris des instructions sur l’utilisation d’AzCopy (pré-copie), ou non, dans la boîte de dialogue « Nouvelle ingestion ».
+Consultez la section [ Ingestion de contenu dans Target ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) pour obtenir des informations générales sur l’ingestion de contenu dans Target à partir de Cloud Acceleration Manager (CAM), y compris des instructions sur l’utilisation d’AzCopy (pré-copie), ou non, dans la boîte de dialogue « Nouvelle ingestion ».
 
 Pour tirer parti d’AzCopy lors de l’ingestion, la version 2021.6.5561 d’AEM as a Cloud Service ou ultérieure est nécessaire.
 
-Consultez la liste « Tâches d’ingestion » dans Cloud Acceleration Manager et les journaux d’ingestion pour voir la progression. Les entrées de journal concernant les
-tâches AzCopy réussies s’affichent comme suit (sous réserve de quelques différences). La consultation périodique des journaux peut vous alerter d’un problème dès son apparition et vous permettre d’apporter une solution rapide.
+Consultez la liste « Tâches d’ingestion » dans Cloud Acceleration Manager et les journaux d’ingestion pour voir la progression. Entrées de journal liées au
+Les tâches AzCopy réussies se présentent comme suit (sous réserve de quelques différences). La consultation périodique des journaux peut vous alerter en cas de problème
+dès le début, et vous aider à trouver une solution rapide à tous les problèmes.
 
 ```
 *************** Beginning AzCopy pre-copy phase ***************

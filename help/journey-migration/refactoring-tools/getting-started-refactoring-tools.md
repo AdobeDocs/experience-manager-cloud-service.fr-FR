@@ -19,7 +19,7 @@ ht-degree: 4%
 >[!CONTEXTUALHELP]
 >id="aemcloud_rs_upload"
 >title="Download"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=fr" text="Release Notes"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="Release Notes"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
 
 -->
@@ -33,7 +33,7 @@ Utilisez l’outil de refactorisation pour migrer votre code à des fins de comp
 
    ![Image](/help/journey-migration/refactoring-tools/assets/rscam1.png)
 
-1. Lorsque vous accédez pour la première fois à la vue de code **&#x200B;**, un état vide s’affiche vous invitant à charger votre code source.
+1. Lorsque vous accédez pour la première fois à la vue de code ****, un état vide s’affiche vous invitant à charger votre code source.
 
    ![Image](/help/journey-migration/refactoring-tools/assets/rscam2.png)
 
@@ -55,7 +55,7 @@ Lorsque les clients accèdent pour la première fois aux **outils de refactorisa
 
 1. **Processus d&#39;inspection**
    - Après le chargement, le **Processus d&#39;inspection** commence automatiquement en arrière-plan.
-   - L’affichage du code **&#x200B;**&#x200B;affiche désormais votre projet chargé et son statut d’inspection.
+   - L’affichage du code **** affiche désormais votre projet chargé et son statut d’inspection.
 
 1. **Statut du contrôle** Le processus de contrôle est conçu pour simplifier l&#39;exécution des outils de refactorisation en réduisant la surcharge des configurations manuelles.
 
@@ -64,7 +64,7 @@ Lorsque les clients accèdent pour la première fois aux **outils de refactorisa
    - **Prêt** - L&#39;inspection est terminée ; vous pouvez maintenant exécuter les outils de refactorisation.
    - **Échec** - Une erreur s’est produite. Cliquez sur le projet pour examiner le rapport d&#39;inspection et résoudre les problèmes.
 
-   ![Image](/help/journey-migration/refactoring-tools/assets/rscam5.png)
+   ![image](/help/journey-migration/refactoring-tools/assets/rscam5.png)
 
 >[!NOTE]
 >
@@ -80,19 +80,19 @@ Lorsque vous cliquez sur l’onglet **Tâche de refactorisation**, une liste des
 
 ![Image](/help/journey-migration/refactoring-tools/assets/rscam6.png)
 
-### &#x200B;1. Créer une tâche de refactorisation
+### &#x200B;1. Création d’une tâche de refactorisation
 
 - Cliquez sur le bouton **Créer une tâche**.
 - Sélectionnez le ou les outils de refactorisation souhaités.
 - Cliquez sur **Démarrer** pour lancer le processus de refactorisation.
 
-![Image](/help/journey-migration/refactoring-tools/assets/rscam7.png)
+![image](/help/journey-migration/refactoring-tools/assets/rscam7.png)
 
 >[!NOTE]
 >
 >Vous pouvez déclencher des tâches de refactorisation individuelles ou exécuter tous les outils disponibles en une seule fois à l’aide de l’option **Tous les outils ensemble**.
 
-### &#x200B;2. Statut de la tâche
+### &#x200B;2. Statut du traitement
 
 - **En cours d’exécution** - Le traitement est en cours. Le statut est automatiquement mis à jour à la fin ou en cas d’échec.
 - **Terminé** - Le traitement est terminé. Vous pouvez maintenant consulter les résultats ou télécharger le code refactorisé.
@@ -106,7 +106,7 @@ Une fois la tâche terminée, le bouton **Télécharger** devient disponible et 
 - **Journaux d’activité** : pendant l’exécution du traitement, toutes les étapes effectuées par l’outil et les modifications apportées sont consignées dans le cadre de cette opération.
 - **Rapport des résultats** : ce rapport contient des éléments qui n’ont pas été entièrement exécutés par l’outil, mais qui doivent toujours être traités. Toutes ces modifications sont consignées ici.
 
-![Image](/help/journey-migration/refactoring-tools/assets/rscam9.png)
+![image](/help/journey-migration/refactoring-tools/assets/rscam9.png)
 
 >[!NOTE]
 >

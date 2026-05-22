@@ -4,8 +4,8 @@ description: Cette section présente les fichiers de chargement en masse pour le
 exl-id: 43ebd6f1-1492-461a-8d9b-2b55dcde9052
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '2384'
-ht-degree: 3%
+source-wordcount: '2499'
+ht-degree: 4%
 
 ---
 
@@ -54,7 +54,7 @@ Pour utiliser la fonctionnalité de chargement de groupe en bloc d’Admin Conso
 
       * _Nom du groupe d’utilisateurs_ - Le nom du groupe est obligatoire et peut contenir au maximum 255 caractères.  Le nom de ce groupe doit être identique dans IMS et AEM
       * _Description_ - Ce champ est facultatif et peut contenir un maximum de 255 caractères
-      * _Administrateurs du groupe d’utilisateurs_ - Au moins un administrateur de groupe doit être inclus dans ce champ. Plusieurs administrateurs peuvent être affectés en séparant chaque administrateur par une virgule et en plaçant la liste entre guillemets. L’entrée de chaque administrateur doit inclure le type d’identité de l’utilisateur, suivi d’un trait d’union, puis l’adresse électronique.  par exemple,
+      * _Administrateurs du groupe d’utilisateurs_ - Au moins un administrateur de groupe doit être inclus dans ce champ. Plusieurs administrateurs peuvent être affectés en séparant chaque administrateur par une virgule et en plaçant la liste entre guillemets. L’entrée de chaque administrateur doit inclure le type d’identité de l’utilisateur, suivi d’un trait d’union, puis l’adresse électronique.  Par exemple :
         `"Adobe ID-myAdmin@example.com,Adobe ID-myOtherAdmin@example.com"`. N’insérez pas d’espace après la virgule séparant les administrateurs. Vous ne pouvez pas inclure dans Admin Console des utilisateurs (en tant qu’administrateurs) qui ne font pas actuellement partie de l’organisation
       * _Profils de produit attribués_ - Ce champ est facultatif. Vous pouvez attribuer plusieurs profils de produit en séparant chaque profil par une virgule et en plaçant la liste entre guillemets. Toutefois, les profils de produit que vous incluez doivent déjà être configurés pour l’organisation. Veillez à spécifier le nom du profil de produit et non le nom du produit.  L’appartenance à des profils de produit affectés à un groupe sera héritée par tous les utilisateurs placés dans ce groupe.  Pour trouver un profil de produit :
 
@@ -68,9 +68,9 @@ Pour utiliser la fonctionnalité de chargement de groupe en bloc d’Admin Conso
 1. Chargez le fichier de groupe en bloc dans Admin Console.
 
    1. Dans Admin Console, accédez à **Utilisateurs**, puis **Groupes d’utilisateurs**
-   1. Sur le côté droit, cliquez sur le bouton « ... ». Sélectionnez **Ajouter des groupes d’utilisateurs par fichier CSV** dans le menu, puis choisissez le fichier CSV à charger. Cliquez sur **Télécharger**
+   1. Sur le côté droit, cliquez sur le signe « ... » button. Sélectionnez **Ajouter des groupes d’utilisateurs par fichier CSV** dans le menu, puis choisissez le fichier CSV à charger. Cliquez sur **Télécharger**
    1. Vous obtiendrez une réponse indiquant que le fichier CSV est chargé (dans Admin Console), mais il n’a pas encore été importé dans IMS
-   1. Accédez au même menu « ... » et choisissez **Résultats des opérations en bloc**. Elle vous affiche une liste des tentatives de chargement en bloc et vous indique (sous **Statut**) si le chargement en bloc est en cours de traitement, a réussi ou a échoué
+   1. Accéder au même « ... » et choisissez **Résultats des opérations en bloc**. Elle vous affiche une liste des tentatives de chargement en bloc et vous indique (sous **Statut**) si le chargement en bloc est en cours de traitement, a réussi ou a échoué
 
       * Au début, il affichera Traitement , ce qui indique qu’il n’est pas encore terminé
       * Une fois l’opération terminée, cliquez sur le lien **Ajouter des groupes d’utilisateurs** pour afficher un message de statut simple pour chaque ligne.
@@ -79,7 +79,7 @@ Pour utiliser la fonctionnalité de chargement de groupe en bloc d’Admin Conso
 
 ## Chargement et modification d’utilisateurs en bloc {#bulk-user}
 
-Admin Console comprend deux actions distinctes pour le chargement et la modification des détails de l’utilisateur. Les instructions ci-dessous concernent l’ajout de nouveaux utilisateurs à IMS. Les instructions de modification des utilisateurs IMS existants se trouvent dans la section suivante appelée [&#x200B; Modification d’utilisateurs en bloc &#x200B;](#user-edit).
+Admin Console comprend deux actions distinctes pour le chargement et la modification des détails de l’utilisateur. Les instructions ci-dessous concernent l’ajout de nouveaux utilisateurs à IMS. Les instructions de modification des utilisateurs IMS existants se trouvent dans la section suivante appelée [ Modification d’utilisateurs en bloc ](#user-edit).
 
 ### Chargement utilisateur en bloc {#user-upload}
 
@@ -97,7 +97,7 @@ Pour utiliser la fonctionnalité de téléchargement massif d’utilisateurs d�
    1. Dans la boîte de dialogue qui s’affiche, sélectionnez **Fichier utilisateur en bloc** dans la liste déroulante sous **Télécharger un fichier...** et cliquez sur le bouton **Télécharger**.
    1. Enregistrer le fichier CSV obtenu
 1. Modifier le fichier d’utilisateur en bloc
-   * Chaque ligne représente un utilisateur à charger, et comporte quinze champs (les noms des champs constituent la première ligne du fichier). Certains champs sont facultatifs et ne sont pas décrits ici. Pour plus d&#39;informations, consultez la section [Format CSV utilisateur en bloc](https://helpx.adobe.com/fr/enterprise/using/bulk-upload-users.html#csv-format).  Les champs sont les suivants :
+   * Chaque ligne représente un utilisateur à charger, et comporte quinze champs (les noms des champs constituent la première ligne du fichier). Certains champs sont facultatifs et ne sont pas décrits ici. Pour plus d&#39;informations, consultez la section [Format CSV utilisateur en bloc](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format).  Les champs sont les suivants :
 
       * _Type d’identité_ - Facultatif.  Si elle n’est pas spécifiée, elle est créée en tant qu’Adobe ID
       * _Nom d’utilisateur_ - Facultatif et non utilisé pour les chargements Adobe ID
@@ -108,14 +108,14 @@ Pour utiliser la fonctionnalité de téléchargement massif d’utilisateurs d�
       * _Code pays_ - Facultatif et non utilisé pour les chargements Adobe ID
       * _ID_ - Facultatif et non utilisé pour les chargements Adobe ID
       * _Configurations du produit_ - Facultatif. Ce champ sera également hérité de tous les groupes dont l’utilisateur est membre
-      * _Rôles d’administration_ - Facultatif. Utilisez ce champ si l’utilisateur est administrateur. Voir [Format CSV d’utilisateur en bloc](https://helpx.adobe.com/fr/enterprise/using/bulk-upload-users.html#csv-format) pour plus d’informations
-      * _Configurations de produit administrées_ - Facultatif.  Voir [Format CSV d’utilisateur en bloc](https://helpx.adobe.com/fr/enterprise/using/bulk-upload-users.html#csv-format) pour plus d’informations. Ce champ sera également hérité de tous les groupes dont l’utilisateur est membre
+      * _Rôles d’administration_ - Facultatif. Utilisez ce champ si l’utilisateur est administrateur. Voir [Format CSV d’utilisateur en bloc](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) pour plus d’informations
+      * _Configurations de produit administrées_ - Facultatif.  Voir [Format CSV d’utilisateur en bloc](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) pour plus d’informations. Ce champ sera également hérité de tous les groupes dont l’utilisateur est membre
       * _User Groups_ - Facultatif. Liste des groupes auxquels l’utilisateur doit être affecté en tant que membre. Chaque groupe doit être un groupe IMS existant. Lorsque le fichier d’utilisateur en bloc est téléchargé à partir de CAM, ce champ est prérempli avec des noms de groupe activé pour IMS dont l’utilisateur était membre (directement ou indirectement) avant la migration
-      * _Groupes d’utilisateurs administrés_ - Facultatif.  Voir [Format CSV d’utilisateur en bloc](https://helpx.adobe.com/fr/enterprise/using/bulk-upload-users.html#csv-format) pour plus d’informations. Ce champ sera également hérité de tous les groupes dont l’utilisateur est membre
-      * _Produits administrés_ - facultatif.  Voir [Format CSV d’utilisateur en bloc](https://helpx.adobe.com/fr/enterprise/using/bulk-upload-users.html#csv-format) pour plus d’informations. Ce champ sera également hérité de tous les groupes dont l’utilisateur est membre
-      * _Contrats administrés_ - Facultatif.  Voir [Format CSV d’utilisateur en bloc](https://helpx.adobe.com/fr/enterprise/using/bulk-upload-users.html#csv-format) pour plus d’informations
-      * _Accès développeur_ - Facultatif.  Voir [Format CSV d’utilisateur en bloc](https://helpx.adobe.com/fr/enterprise/using/bulk-upload-users.html#csv-format) pour plus d’informations
-      * _Produits affectés automatiquement_ - Facultatif.  Voir [Format CSV d’utilisateur en bloc](https://helpx.adobe.com/fr/enterprise/using/bulk-upload-users.html#csv-format) pour plus d’informations
+      * _Groupes d’utilisateurs administrés_ - Facultatif.  Voir [Format CSV d’utilisateur en bloc](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) pour plus d’informations. Ce champ sera également hérité de tous les groupes dont l’utilisateur est membre
+      * _Produits administrés_ - facultatif.  Voir [Format CSV d’utilisateur en bloc](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) pour plus d’informations. Ce champ sera également hérité de tous les groupes dont l’utilisateur est membre
+      * _Contrats administrés_ - Facultatif.  Voir [Format CSV d’utilisateur en bloc](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) pour plus d’informations
+      * _Accès développeur_ - Facultatif.  Voir [Format CSV d’utilisateur en bloc](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) pour plus d’informations
+      * _Produits affectés automatiquement_ - Facultatif.  Voir [Format CSV d’utilisateur en bloc](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) pour plus d’informations
 
    * Lors de la modification du fichier CSV, certaines applications peuvent ajouter des guillemets supplémentaires lors de l’enregistrement, ce qui entraîne l’échec du traitement. Il est recommandé d’inspecter le fichier CSV brut dans un simple éditeur de texte pour s’assurer que chaque champ ne comporte qu’un guillemet ouvrant et un guillemet fermant (et il ne doit pas s’agir de « guillemets intelligents »)
 
@@ -126,7 +126,7 @@ Pour utiliser la fonctionnalité de téléchargement massif d’utilisateurs d�
    1. Glisser-déposer ou sélectionner un fichier CSV d’utilisateur en bloc téléchargé à partir de CAM
    1. Cliquez sur le bouton **Télécharger**
    1. Vous obtiendrez une réponse indiquant que le fichier CSV est chargé (dans Admin Console), mais il n’a pas encore été importé dans IMS.
-   1. Accédez au menu « ... » à droite et choisissez **Résultats des opérations en bloc**.  Elle affiche une liste des tentatives de chargement en masse et indique (sous **Statut**) si le chargement en masse est en cours de traitement, a réussi ou a échoué.
+   1. Accéder à « ... » dans le menu de droite et choisissez **Résultats des opérations en bloc**.  Elle affiche une liste des tentatives de chargement en masse et indique (sous **Statut**) si le chargement en masse est en cours de traitement, a réussi ou a échoué.
 
       * Au début, il affichera Traitement , ce qui indique qu’il n’est pas encore terminé
       * Une fois l’opération terminée, cliquez sur le lien **Ajouter des utilisateurs** pour afficher un message de statut simple pour chaque ligne
@@ -147,7 +147,7 @@ Pour utiliser la fonctionnalité de modification d’utilisateurs en bloc d’Ad
 1. Télécharger le fichier d’utilisateur en bloc à partir d’Admin Console
 
    1. Dans Admin Console, accédez à Utilisateurs .
-   1. Sur le côté droit, cliquez sur le bouton « ... ».  Choisissez **Modifier les détails de l’utilisateur par CSV** dans le menu
+   1. Sur le côté droit, cliquez sur le signe « ... » button.  Choisissez **Modifier les détails de l’utilisateur par CSV** dans le menu
    1. Cliquez sur **Télécharger le modèle CSV** et choisissez **Utilisateurs actuels**.  Un fichier CSV doit apparaître dans votre dossier Téléchargements local.
 
 1. Modifier le fichier d’utilisateur en bloc
@@ -162,11 +162,11 @@ Pour utiliser la fonctionnalité de modification d’utilisateurs en bloc d’Ad
 1. Chargez le fichier d’utilisateur en bloc dans Admin Console
 
    1. Dans Admin Console, accédez à Utilisateurs .
-   1. Sur le côté droit, cliquez sur le bouton « ... ». Choisissez **Modifier les détails de l’utilisateur par CSV** dans le menu
+   1. Sur le côté droit, cliquez sur le signe « ... » button. Choisissez **Modifier les détails de l’utilisateur par CSV** dans le menu
    1. Effectuez un glisser-déposer ou sélectionnez le fichier CSV d’utilisateur en bloc modifié
    1. Cliquez sur le bouton Charger .
    1. Vous obtiendrez une réponse indiquant que le fichier CSV est chargé (dans Admin Console), mais il n’a pas encore été importé dans IMS
-   1. Accédez au menu « ... » à droite et choisissez **Résultats des opérations en bloc**. Elle vous montre une liste de tentatives de chargement en masse et vous indique (sous Statut) si le chargement en masse est en cours de traitement, réussi ou a échoué.
+   1. Accéder à « ... » dans le menu de droite et choisissez **Résultats des opérations en bloc**. Elle vous montre une liste de tentatives de chargement en masse et vous indique (sous Statut) si le chargement en masse est en cours de traitement, réussi ou a échoué.
 
       * Au début, il affichera Traitement , ce qui indique qu’il n’est pas encore terminé
       * Une fois l’opération terminée, cliquez sur le lien **Modifier les détails de l’utilisateur** pour afficher un message de statut simple pour chaque ligne

@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '2796'
-ht-degree: 78%
+source-wordcount: '2930'
+ht-degree: 77%
 
 ---
 
@@ -95,7 +95,7 @@ Consultez cette section pour savoir comment afficher le rapport de l’analyseur
 
       ![Image](/help/journey-migration/best-practices-analyzer/assets/invalid_url.png)
 
-1. Fournissez la clé de chargement BPA pour charger automatiquement le rapport BPA généré vers [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md). Pour obtenir la clé de chargement, accédez à l’[&#x200B; Analyse des bonnes pratiques dans CAM &#x200B;](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
+1. Fournissez la clé de chargement BPA pour charger automatiquement le rapport BPA généré vers [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md). Pour obtenir la clé de chargement, accédez à l’[ Analyse des bonnes pratiques dans CAM ](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
 
    ![Définir la clé de chargement BPA](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
 
@@ -131,7 +131,7 @@ Vous pouvez forcer l’analyseur des bonnes pratiques à effacer son cache et à
 ![Aucun rapport](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)
 
 
-#### Utilisation de filtres dans le rapport Analyseur des bonnes pratiques (BPA)  {#bpa-filters}
+#### Utilisation de filtres dans le rapport Analyseur des bonnes pratiques (BPA) {#bpa-filters}
 
 Pour filtrer les résultats liés à [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), procédez comme suit :
 
@@ -144,7 +144,7 @@ Pour filtrer les résultats liés à [ACS Commons](https://adobe-consulting-serv
 
 1. Désélectionnez la case pour filtrer tous les résultats liés à ACS Commons. Un **nombre de résultats filtrés** devrait s’afficher sur le rapport, comme illustré dans l’image ci-dessous. Le filtre est également appliqué au rapport lorsqu’il est exporté au format CSV (valeurs séparées par des virgules).
 
-   ![&#x200B; Nombre de résultats filtrés &#x200B;](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
+   ![ Nombre de résultats filtrés ](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
    >Les résultats d’ACS Commons ne doivent pas être ignorés. Consultez la [documentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) pour déterminer le niveau de compatibilité avec AEM as a Cloud Service.
@@ -235,7 +235,7 @@ Une méthode simple consiste à ouvrir un onglet dans le même navigateur que ce
 
 Vous pouvez également utiliser un outil de ligne de commande tel que `curl` ou `wget`, mais aussi toute autre application cliente HTTP. Si vous n’utilisez pas un onglet de navigateur avec une session authentifiée, vous devez fournir un nom d’utilisateur et un mot de passe d’administration en commentaire.
 
-À titre d’exemple, vous pouvez procéder comme suit :
+Voici un exemple de la manière dont cela peut être effectué :
 `curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.csv' > report.csv`.
 
 ### En-têtes et paramètres {#http-headers-and-parameters}
@@ -256,7 +256,7 @@ Les paramètres de requête HTTP suivants sont disponibles à titre de commodit�
 
 Si un en-tête HTTP et son paramètre de requête correspondant sont présents simultanément, le paramètre de requête est prioritaire.
 
-La commande suivante est une méthode simple pour lancer la génération du rapport via l’interface HTTP :
+Pour lancer simplement la génération du rapport via l&#39;interface HTTP, la commande est la suivante :
 `curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.json?max-age=0&respond-async=true'`.
 
 Lorsqu’une requête a été effectuée, le client n’a pas besoin de rester actif pour que le rapport soit généré. La génération du rapport peut être lancée avec un client à l’aide d’une requête GET HTTP. Une fois le rapport généré, il peut être affiché à l’aide du cache d’un autre client ou de l’outil BPA de l’interface utilisateur AEM.
@@ -278,7 +278,7 @@ Les valeurs de réponses possibles sont les suivantes :
 
 La durée de vie par défaut du cache l’analyseur des bonnes pratiques est de 24 heures. Avec l’option destinée à actualiser un rapport et à régénérer le cache, aussi bien dans l’instance AEM que dans l’interface HTTP, cette valeur par défaut sera probablement appropriée pour la plupart des utilisations du BPA. Si la génération du rapport dure trop longtemps pour votre instance AEM, vous pouvez ajuster la durée de vie du cache afin de minimiser la nouvelle génération du rapport.
 
-La durée de vie du cache est stockée dans la propriété `maxCacheAge` dans le nœud de référentiel suivant :
+La valeur de durée de vie du cache est stockée en tant que propriété `maxCacheAge` sur le nœud de référentiel suivant :
 `/apps/best-practices-analyzer/content/BestPracticesReport/jcr:content`
 
 La valeur de cette propriété est la durée de vie du cache en secondes. Un administrateur peut ajuster la durée de vie du cache à l’aide de CRX/DE Lite.

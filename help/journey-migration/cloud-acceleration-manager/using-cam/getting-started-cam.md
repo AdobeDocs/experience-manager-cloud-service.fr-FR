@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: d840e0beb8036ed8e543ac85850290e778371bbe
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 89%
+source-wordcount: '593'
+ht-degree: 90%
 
 ---
 
@@ -46,7 +46,7 @@ Suivez les étapes ci-dessous pour accéder à Cloud Acceleration Manager (CAM)�
 >abstract="Créez votre projet et lancez votre parcours pour AEM as a Cloud Service."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/introduction-cam/benefits-cam.html?lang=fr" text="Avantages de l’utilisation de Cloud Acceleration Manager"
 
-La landing page de Cloud Acceleration Manager (CAM) vous permet de créer et de modifier plusieurs projets.
+La page de destination du Cloud Acceleration Manager (CAM) vous permet de créer et de modifier plusieurs projets.
 
 Suivez les étapes ci-dessous pour créer un projet :
 
@@ -98,7 +98,7 @@ Pour supprimer votre projet, procédez comme suit :
 1. Cliquez sur **Supprimer** pour confirmer l’étape.
 
    >[!NOTE]
-   >Les projets expirent automatiquement et sont supprimés après un an d’inactivité de migration. Les projets restent actifs en modifiant le nom ou la description du projet, en chargeant un rapport BPA, en créant ou en modifiant un jeu de migration, en exécutant une extraction ou en exécutant une ingestion.
+   >Les projets expirent automatiquement et sont supprimés après 1 an d&#39;inactivité de la migration. Les projets resteront actifs en modifiant le nom ou la description du projet, en chargeant un rapport BPA, en créant ou en modifiant un jeu de migration, en exécutant une extraction ou une ingestion.
 
 
 ## Prochaines étapes {#whats-next}

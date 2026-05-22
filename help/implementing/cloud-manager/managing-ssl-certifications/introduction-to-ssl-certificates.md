@@ -7,8 +7,8 @@ feature: Cloud Manager, Developing
 role: Admin, Developer
 source-git-commit: b94debebf36f379fc2cb2f193a244fe154c77537
 workflow-type: tm+mt
-source-wordcount: '1260'
-ht-degree: 16%
+source-wordcount: '1337'
+ht-degree: 17%
 
 ---
 
@@ -55,7 +55,7 @@ Les deux modèles offrent les fonctionnalités générales suivantes pour gérer
 
 ### Certificats SSL gérés par Adobe (DV) {#adobe-managed}
 
-Les certificats DV constituent le niveau de certification SSL le plus élémentaire et sont souvent utilisés à des fins de test ou pour sécuriser des sites web avec un chiffrement de base. Les certificats DV sont disponibles dans les [&#x200B; programmes de production et les programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
+Les certificats DV constituent le niveau de certification SSL le plus élémentaire et sont souvent utilisés à des fins de test ou pour sécuriser des sites web avec un chiffrement de base. Les certificats DV sont disponibles dans les [ programmes de production et les programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 Une fois le certificat DV créé, Adobe le renouvelle automatiquement tous les trois mois, sauf s’il est supprimé.
 
@@ -117,7 +117,7 @@ Les clés RSA de plus de 2 048 bits (telles que les clés RSA de 3 072 bits ou d
   Bien que les certificats génériques (par exemple, `*.example.com`) soient pris en charge, ils ne doivent être utilisés que lorsque cela est nécessaire. En cas de chevauchement, le certificat le plus spécifique est prioritaire. Par exemple, le certificat spécifique sert `dev.example.com` au lieu du caractère générique (`*.example.com`).
 
 * **Validation et dépannage :**
-Avant de tenter d’installer un certificat avec Cloud Manager, Adobe vous recommande de valider l’intégrité de votre certificat localement à l’aide d’outils tels que `openssl`. Par exemple :
+Avant de tenter d’installer un certificat avec Cloud Manager, Adobe vous recommande de valider l’intégrité de votre certificat localement à l’aide d’outils tels que `openssl`. Par exemple,
 
   `openssl verify -untrusted intermediate.pem certificate.pem`
 
@@ -164,12 +164,12 @@ Si vous avez atteint la limite, vérifiez vos certificats et envisagez de suppri
 
 ### Chiffrement des limites de débit pour les certificats DV gérés par Adobe
 
-Les certificats DV gérés par Adobe reposent sur Let’s Encrypt. Outre la limite de Cloud Manager sur les certificats installés, Let’s Encrypt applique ses propres limites de débit. Une limite de clé est la suivante **Nouveaux certificats par ensemble exact d’identifiants** : jusqu’à 5 certificats peuvent être émis pour le même ensemble de noms d’hôtes au cours d’une période de 7 jours. Si cette limite est atteinte, Cloud Manager affiche une erreur et ne peut pas créer d’autres certificats pour ce nom d’hôte tant que la fenêtre de limite de taux n’est pas réinitialisée. Pour connaître les dernières valeurs et d’autres limites associées, consultez la documentation [&#x200B; Chiffrons les limites de taux &#x200B;](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers).
+Les certificats DV gérés par Adobe reposent sur Let’s Encrypt. Outre la limite de Cloud Manager sur les certificats installés, Let’s Encrypt applique ses propres limites de débit. Une limite de clé est la suivante **Nouveaux certificats par ensemble exact d’identifiants** : jusqu’à 5 certificats peuvent être émis pour le même ensemble de noms d’hôtes au cours d’une période de 7 jours. Si cette limite est atteinte, Cloud Manager affiche une erreur et ne peut pas créer d’autres certificats pour ce nom d’hôte tant que la fenêtre de limite de taux n’est pas réinitialisée. Pour connaître les dernières valeurs et d’autres limites associées, consultez la documentation [ Chiffrons les limites de taux ](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers).
 
 ## En savoir plus {#learn-more}
 
 Un utilisateur disposant des autorisations nécessaires peut utiliser Cloud Manager pour gérer les certificats SSL d’un programme. Pour plus d’informations sur l’utilisation de ces fonctionnalités, consultez les documents suivants.
 
 * [Ajouter un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) <!--CQDOC-21758, #4 -->
-* [Gestion des certificats SSL &#x200B;](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md) <!--CQDOC-21758, #4 -->
+* [Gestion des certificats SSL ](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md) <!--CQDOC-21758, #4 -->
 

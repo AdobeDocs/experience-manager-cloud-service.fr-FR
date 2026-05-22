@@ -7,8 +7,8 @@ feature: Cloud Manager, Developing
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 80%
+source-wordcount: '1192'
+ht-degree: 81%
 
 ---
 
@@ -29,7 +29,7 @@ Voir [Configuration de votre pipeline CI-CD](/help/implementing/cloud-manager/co
 
 ## Règles de qualité du code {#understanding-code-quality-rules}
 
-Les tests de qualité du code analysent le code source afin de s’assurer qu’il répond à certains critères de qualité. Cette étape est implémentée par une combinaison de SonarQube et d’examens au niveau du package de contenu à l’aide d’OakPAL. Il existe plus de 100 règles, combinant des règles Java génériques et des règles spécifiques à AEM. Certaines règles spécifiques à AEM sont basées sur les bonnes pratiques de l’ingénierie AEM et sont connues sous le nom de [&#x200B; Règles de qualité du code personnalisé &#x200B;](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+Les tests de qualité du code analysent le code source afin de s’assurer qu’il répond à certains critères de qualité. Cette étape est implémentée par une combinaison de SonarQube et d’examens au niveau du package de contenu à l’aide d’OakPAL. Il existe plus de 100 règles, combinant des règles Java génériques et des règles spécifiques à AEM. Certaines règles spécifiques à AEM sont basées sur les bonnes pratiques de l’ingénierie AEM et sont connues sous le nom de [ Règles de qualité du code personnalisé ](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 Vous pouvez télécharger la liste complète des règles [via ce lien](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
 
@@ -65,7 +65,7 @@ Le tableau suivant résume les notes et les seuils d’échec pour chacune des c
 | Couverture | Défini par un mélange de couverture de ligne de test unitaire et de couverture de condition à l’aide de la formule : <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <ul><li>`CT` = Conditions qui ont été évaluées comme `true` au moins une fois lors de l’exécution de tests unitaires</li><li>`CF` = Conditions qui ont été évaluées comme `false` au moins une fois lors de l’exécution de tests unitaires</li><li>`LC` = Lignes couvertes = lines_to_cover - uncover_lines</li><li>`B` = nombre total de conditions</li><li>`EL` = nombre total de lignes exécutables (lines_to_cover)</li></ul> | Important | &lt; 50 % |
 | Tests unitaires ignorés | Nombre de tests unitaires ignorés | Infos | > 1 |
 | Problèmes en cours | Types de problèmes généraux – Vulnérabilités, bogues et smells de code | Infos | > 0 |
-| Lignes dupliquées | Défini comme le nombre de lignes impliquées dans les blocs dupliqués. Un bloc de code est considéré comme dupliqué dans les conditions suivantes.<br>Projets non Java :<ul><li>Il doit y avoir au moins 100 jetons successifs et dupliqués.</li><li>Ces jetons doivent être répartis au moins sur : </li><li>30 lignes de code pour COBOL </li><li>20 lignes de code pour ABAP </li><li>10 lignes de code pour d’autres langages</li></ul>Projets Java :<ul></li><li> Il devrait y avoir au moins 10 déclarations successives et dupliquées, quel que soit le nombre de jetons et de lignes.</li></ul>Les différences dans la mise en retrait ainsi que dans les littéraux de chaîne sont ignorées lors de la détection des doublons. | Infos | > 1 % |
+| Lignes dupliquées | Défini comme le nombre de lignes impliquées dans les blocs dupliqués. Un bloc de code est considéré comme dupliqué dans les conditions suivantes.<br>Projets non Java :<ul><li>Il doit y avoir au moins 100 jetons successifs et dupliqués.</li><li>Ces jetons doivent être répartis au moins sur : </li><li>30 lignes de code pour COBOL </li><li>20 lignes de code pour ABAP </li><li>10 lignes de code pour d’autres langages</li></ul>Projets Java :<ul></li><li> Il devrait y avoir au moins 10 déclarations successives et dupliquées, quel que soit le nombre de jetons et de lignes.</li></ul>Les différences dans la mise en retrait ainsi que dans les littéraux de chaîne sont ignorées lors de la détection des doublons. | Infos | > 1 % |
 | Compatibilité Cloud Service | Nombre de problèmes de compatibilité Cloud Service identifiés | Infos | > 0 |
 
 >[!NOTE]
@@ -115,7 +115,7 @@ La bonne solution consiste alors à supprimer le mot de passe codé en dur.
 
 ## Optimisation de l’analyse des modules de contenu {#content-package-scanning-optimization}
 
-Dans le cadre du processus d’analyse de la qualité, Cloud Manager effectue une analyse des modules de contenu générés par la version Maven. Cloud Manager propose des optimisations pour accélérer ce processus, qui est efficace lorsque certaines contraintes de conditionnement sont observées. L’optimisation la plus importante cible les projets qui produisent un seul package « all », contenant plusieurs packages de contenu de la version, qui sont marqués comme ignorés. Lorsque Cloud Manager détecte ce scénario, plutôt que de décompresser le package « all », les modules de contenu individuels sont analysés directement et triés en fonction des dépendances. Par exemple, considérez la sortie de génération suivante.
+Dans le cadre du processus d’analyse de la qualité, Cloud Manager effectue une analyse des modules de contenu générés par la version Maven. Cloud Manager propose des optimisations pour accélérer ce processus, qui est efficace lorsque certaines contraintes de conditionnement sont observées. L’optimisation la plus importante cible les projets qui produisent un seul package « all », contenant plusieurs packages de contenu de la version, qui sont marqués comme ignorés. Lorsque Cloud Manager détecte ce scénario, plutôt que de décompresser le package « all », les modules de contenu individuels sont analysés directement et triés en fonction des dépendances. Par exemple, considérez la sortie de génération suivante.
 
 * `all/myco-all-1.0.0-SNAPSHOT.zip` (package de contenu)
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (package de contenu ignoré)

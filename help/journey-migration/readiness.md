@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '1915'
-ht-degree: 93%
+source-wordcount: '2177'
+ht-degree: 86%
 
 ---
 
@@ -51,7 +51,7 @@ La liste des éléments du tableau ci-dessous est le sous-ensemble des modificat
 <tbody>
   <tr>
     <td>Séparation des filtres modifiables et non modifiables en packages correspondants</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html?lang=fr">Modifications notables d’AEM as a Cloud Service</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=fr#mutable-vs-immutable">Structure de projet AEM pour AEM as a Cloud Service</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html">Modifications notables d’AEM as a Cloud Service</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=fr#mutable-vs-immutable">Structure de projet AEM pour AEM as a Cloud Service</a></td>
     <td>Un package unique pouvant être déployé dans AEM as a Cloud Service peut comporter des sous-packages, principalement pour contenir du contenu modifiable et non modifiable séparé dans leurs propres packages.</td>
   </tr>
   <tr>
@@ -75,14 +75,14 @@ La liste des éléments du tableau ci-dessous est le sous-ensemble des modificat
     <td>Le concept de l’agent de réplication est remplacé par la distribution de contenu Sling. Si des personnalisations utilisent des agents de réplication, elles doivent être repensées.<br>La réplication inverse n’est pas prise en charge.</td>
   </tr>
   <tr>
-    <td>CRX/DE et le Gestionnaire de package</td>
+    <td>CRX/DE et le gestionnaire de modules</td>
     <td></td>
-    <td>CRX/DE n’est autorisé que dans l’environnement de développement.<br>Le Gestionnaire de package est accessible sur toutes les instances de création, mais les packages qui vont être déployés ne doivent contenir que du contenu modifiable (par exemple : /content ou /conf).</td>
+    <td>CRX/DE n’est autorisé que dans l’environnement de développement.<br>Le gestionnaire de modules est accessible sur toutes les instances de création, mais les packages qui vont être déployés ne doivent contenir que du contenu modifiable (par exemple : /content ou /conf).</td>
   </tr>
   <tr>
     <td>Réseau de diffusion de contenu intégré et Obtention de votre propre réseau de diffusion de contenu</td>
     <td></td>
-    <td>AEM as a Cloud Service inclut le réseau de diffusion de contenu pour tous les environnements, optimisé pour la plupart des cas d’utilisation.<br>Si vous souhaitez configurer votre propre réseau CDN, vous devez soumettre une demande au support technique d’Adobe pour qu’il soit approuvé.<br>Si votre demande est approuvée, le réseau CDN pointe vers Fastly et non vers les instances AEM, quel que soit lʼenvironnement.</td>
+    <td>AEM as a Cloud Service inclut le réseau de diffusion de contenu pour tous les environnements, optimisé pour la plupart des cas d’utilisation.<br>Si vous souhaitez configurer votre propre réseau CDN, vous devez soumettre une demande à l’assistance Adobe pour qu’il soit approuvé.<br>Si votre demande est approuvée, le réseau CDN pointe vers Fastly et non vers les instances AEM, quel que soit lʼenvironnement.</td>
   </tr>
   <tr>
     <td>Tâches de longue durée</td>
@@ -91,13 +91,13 @@ La liste des éléments du tableau ci-dessous est le sous-ensemble des modificat
   </tr>
   <tr>
     <td>Passer aux opérations asynchrones</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/asynchronous-jobs.html?lang=fr#configuring-asynchronous-msm-operations">Configurer des opérations asynchrones</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/asynchronous-jobs.html#configuring-asynchronous-msm-operations">Configurer des opérations asynchrones</a></td>
     <td>Dans le but dʼaméliorer les performances globales de vos environnements, certaines opérations sont exécutées en mode asynchrone. Les tâches asynchrones seront mises en file d’attente et exécutées lorsque les ressources système seront disponibles.</td>
   </tr>
   <tr>
     <td>Stratégies d’authentification et d’intégration basées sur des jetons</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=fr#the-server-to-server-flow">Génération de jetons d’accès pour les API côté serveur</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=fr#authentication">Tutoriel sur l’authentification par jeton</a></td>
-    <td>Il est fréquent que des systèmes externes à AEM tentent d’effectuer des opérations HTTP dans AEM.<br>L’approche recommandée consiste à implémenter les stratégies décrites ici, plutôt que de sʼappuyer sur la création de noms dʼutilisateurs locaux avec des mots de passe dans AEM.</td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow">Génération de jetons d’accès pour les API côté serveur</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication">Tutoriel sur l’authentification par jeton</a></td>
+    <td>Il est fréquent que des systèmes externes à AEM tentent d’effectuer des opérations HTTP dans AEM.<br> L’approche recommandée consiste à mettre en œuvre les stratégies décrites ici plutôt que de s’appuyer sur la création de noms d’utilisateur locaux avec des mots de passe dans AEM.</td>
   </tr>
   <tr>
     <td>Fichier E/S / Espace disque</td>
@@ -111,17 +111,17 @@ La liste des éléments du tableau ci-dessous est le sous-ensemble des modificat
   </tr>
   <tr>
     <td>Méthodes de téléchargement des ressources et étapes du processus de workflow prises en charge dans AEM as a Cloud Service</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis.html?lang=fr#post-processing-workflows-steps">Comparaisons des API de téléchargement et étapes du processus de workflow prises en charge</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis.html#post-processing-workflows-steps">Comparaisons des API de téléchargement et étapes du processus de workflow prises en charge</a></td>
     <td>Dans AEM as a Cloud Service, lors du chargement ou téléchargement d’une ressource, celle-ci entre ou sort directement du stockage binaire. <br>Toutes les étapes de processus de workflow ne sont pas prises en charge dans AEMaaCS.</td>
   </tr>
   <tr>
-    <td>Lanceurs de workflow</td>
+    <td>Lanceurs de workflows</td>
     <td></td>
-    <td>Supprimez de votre code tous les lanceurs de workflow qui déclenchent un workflow Ressource de mise à jour de la gestion des ressources numériques prêt à lʼemploi ou personnalisé. <br>Toutes les ressources téléchargées vers AEM as a Cloud Service seront traitées par le service de traitement des ressources. Pour les étapes personnalisées, reportez-vous à la section <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=fr#post-processing-workflows">Workflows de post-traitement</a> sur la configuration des workflows de post-traitement.</td>
+    <td>Supprimez de votre code tous les lanceurs de workflows qui déclenchent un workflow Ressource de mise à jour de la gestion des ressources numériques prêt à lʼemploi ou personnalisé. <br>Toutes les ressources téléchargées vers AEM as a Cloud Service seront traitées par le service de traitement des ressources. Pour les étapes personnalisées, reportez-vous à la section <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows">Workflows de post-traitement</a> sur la configuration des workflows de post-traitement.</td>
   </tr>
   <tr>
     <td>Étapes de rendu personnalisé</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=fr">Profils de traitement</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html">Profils de traitement</a></td>
     <td>Toute opération de génération de rendus personnalisés, de conversion dʼimages ou dʼencodage vidéo doit être confiée au service de traitement des ressources en créant les profils de traitement correspondants.</td>
   </tr>
   <tr>
@@ -131,7 +131,7 @@ La liste des éléments du tableau ci-dessous est le sous-ensemble des modificat
   </tr>
   <tr>
     <td>Certaines tâches de maintenance ne sont pas configurables</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/maintenance.html?lang=fr">Tâches de maintenance AEM as a Cloud Service</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/maintenance.html">Tâches de maintenance AEM as a Cloud Service</a></td>
     <td>Vous ne pouvez configurer que certaines tâches de maintenance avec AEM as a Cloud Service.</td>
   </tr>
   <tr>
@@ -146,7 +146,7 @@ La liste des éléments du tableau ci-dessous est le sous-ensemble des modificat
   </tr>
   <tr>
     <td>Sauvegarder et restaurer</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/backup.html?lang=fr">Sauvegarde et restauration d’AEM as a Cloud Service</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/backup.html">Sauvegarde et restauration d’AEM as a Cloud Service</a></td>
     <td></td>
   </tr>
   <tr>
@@ -219,7 +219,7 @@ Une fois que vous avez compris la portée des modifications requises pour passer
 ## Ressources supplémentaires {#additional-resources}
 
 * [Prise en main de Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) - Un guide complet sur l’utilisation de Cloud Acceleration Manager pour accélérer votre déplacement vers le cloud.
-* [AEM as a Cloud Service : introduction, architecture et pensée différente](https://experienceleague.adobe.com/fr?launch=ExperienceManager-D-1-2021.1.migration&recommended=ExperienceManager-D-1-2021.1.migration&lang=fr#dashboard/learning)
+* [AEM as a Cloud Service : introduction, architecture et pensée différente](https://experienceleague.adobe.com/?launch=ExperienceManager-D-1-2021.1.migration&recommended=ExperienceManager-D-1-2021.1.migration&lang=fr#dashboard/learning)
 * [Accueil d’AEM a Cloud Service](/help/overview/introduction.md) - Pour une présentation de la documentation d’Experience Manager as a Cloud Service, commencez ici.
 * [Présentation d’AEM as a Cloud Service](/help/overview/introduction.md) - Ce guide présente Experience Manager as a Cloud Service, y compris une introduction, la terminologie et l’architecture.
-* [Parcours d’intégration](/help/journey-onboarding/overview.md)- Ce guide résume la prise en main d’Experience Manager as a Cloud Service, y compris la manière d’y accéder et de configurer votre équipe.
+* Parcours d’intégration](/help/journey-onboarding/overview.md)- Ce guide résume la prise en main d’Experience Manager as a Cloud Service, y compris la manière d’y accéder et de configurer votre équipe.[

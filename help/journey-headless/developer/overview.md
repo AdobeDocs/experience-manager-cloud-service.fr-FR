@@ -8,7 +8,7 @@ feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '965'
 ht-degree: 95%
 
 ---
@@ -76,7 +76,7 @@ Commencez par lire l’article suivant : [En savoir plus sur le développement 
 
 ## Ressources supplémentaires {#additional-resources}
 
-Les parcours de documentation vous montrent comment AEM permet de résoudre un problème professionnel en vous fournissant une narration qui vous guide tout au long des processus et des fonctionnalités. Un parcours illustre la façon dont plusieurs fonctionnalités fonctionnent ensemble pour répondre à un unique besoin professionnel.
+Les parcours de documentation vous montrent comment AEM permet de résoudre un problème professionnel en vous fournissant une narration qui vous guide tout au long des processus et des fonctionnalités. Un parcours illustre la manière dont différentes fonctionnalités s’associent pour répondre à un besoin unique.
 
 Si vous préférez apprendre par la pratique et disposez d’une connaissance préalable d’AEM, suivez nos tutoriels pratiques organisés par API et par structure, qui explorent la création et l’utilisation d’applications reposant sur le découplage AEM. Voir [Tutoriels pour le découplage dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr).
 

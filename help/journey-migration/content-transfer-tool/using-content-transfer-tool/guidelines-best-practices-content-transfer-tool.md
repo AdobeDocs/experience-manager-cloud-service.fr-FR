@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '1389'
-ht-degree: 51%
+source-wordcount: '1477'
+ht-degree: 52%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 51%
 >id="aemcloud_ctt_guidelines"
 >title="Guidelines and Best Practices"
 >abstract="Review guidelines and best practices to use the Content Transfer tool including revision cleanup tasks, Disk space considerations and more."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr" text="Important Considerations for using Content Transfer Tool"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html" text="Important Considerations for using Content Transfer Tool"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/group-migration.md#important-considerations" text="Important Considerations when Migrating Groups" 
 
 -->
@@ -39,7 +39,7 @@ Les versions antérieures à la version 2.0.0 ne sont pas prises en charge et il
 
 Les conseils et bonnes pratiques suivants s’appliquent à la nouvelle version de l’outil de transfert de contenu :
 
-* Exécutez [nettoyage de révision](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=fr) et [contrôles de cohérence de l’entrepôt de données](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=fr) sur le référentiel **source** afin d’identifier les problèmes potentiels et de réduire la taille du référentiel.
+* Exécutez [nettoyage de révision](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=fr) et [contrôles de cohérence de l’entrepôt de données](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html) sur le référentiel **source** afin d’identifier les problèmes potentiels et de réduire la taille du référentiel.
 
 * Au cours de la phase d’ingestion, Adobe vous recommande d’exécuter l’ingestion en activant le mode *effacer* où le référentiel existant (Auteur ou Publication) de l’environnement Adobe Experience Manager (AEM) Cloud Service cible est supprimé. Mettez ensuite à jour avec les données du jeu de migration. Ce mode est plus rapide que le mode sans effacement, où le jeu de migration est appliqué au-dessus du contenu actuel.
 
@@ -77,7 +77,7 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * L’outil de transfert de contenu (CTT) n’effectue aucune analyse avant de transférer le contenu de l’instance source vers l’instance cible. Par exemple, le CTT ne fait pas de distinction entre le contenu publié et le contenu dépublié lors de l’ingestion de contenu dans un environnement de publication. Quel que soit le contenu spécifié dans l’ensemble de migration, il sera ingéré dans l’instance cible choisie. Un utilisateur peut ingérer un jeu de migration dans une instance de création ou de publication, ou les deux. Adobe recommande, lors du déplacement du contenu vers une instance de production, d’installer le CTT sur l’instance d’auteur source afin de déplacer le contenu vers l’instance d’auteur cible. De même, installez le CTT sur l’instance de publication source pour déplacer le contenu vers l’instance de publication cible. Pour en savoir plus, consultez [Exécution de l’outil de transfert de contenu sur une instance de publication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr#running-tool).
 
-* Les groupes transférés par l’outil de transfert de contenu sont uniquement les groupes requis par le contenu pour respecter les autorisations. Le processus _Extraction_ copie l’intégralité du `/home/groups` dans le jeu de migration. Pour plus d’informations, voir [&#x200B; Migration de groupe &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md). Le processus _Ingestion_ copie tous les groupes référencés dans les listes de contrôle d’accès de contenu migrées. Consultez [&#x200B; Migration de groupes d’utilisateurs fermés &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) pour en savoir plus sur les groupes utilisés dans une politique de groupe d’utilisateurs fermé (CUG).
+* Les groupes transférés par l’outil de transfert de contenu sont uniquement les groupes requis par le contenu pour respecter les autorisations. Le processus _Extraction_ copie l’intégralité du `/home/groups` dans le jeu de migration. Pour plus d’informations, voir [ Migration de groupe ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md). Le processus _Ingestion_ copie tous les groupes référencés dans les listes de contrôle d’accès de contenu migrées. Consultez [ Migration de groupes d’utilisateurs fermés ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) pour en savoir plus sur les groupes utilisés dans une politique de groupe d’utilisateurs fermé (CUG).
 
 * Pendant la phase d’extraction, l’outil de transfert de contenu est exécuté sur une instance source AEM active.
 
@@ -85,7 +85,7 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * Si vous utilisez `Amazon S3` ou `Azure` comme entrepôt de données sur le système AEM source, cet entrepôt doit être configuré de sorte que les objets blob stockés ne puissent pas être supprimés (nettoyage de la mémoire). Cela garantit l’intégrité des données d’index et un échec de ce type de configuration peut entraîner des échecs d’extraction en raison d’un manque d’intégrité de ces données d’index.
 
-* Si vous utilisez des index personnalisés, vous devez veiller à les configurer avec le nœud `tika` avant d’exécuter l’outil de transfert de contenu. Pour plus d’informations, voir [Préparation de la nouvelle définition d’index](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=fr#preparing-the-new-index-definition).
+* Si vous utilisez des index personnalisés, vous devez veiller à les configurer avec le nœud `tika` avant d’exécuter l’outil de transfert de contenu. Pour plus d’informations, voir [Préparation de la nouvelle définition d’index](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#preparing-the-new-index-definition).
 
 * Si vous avez l’intention d’effectuer des compléments, la structure de contenu du contenu existant ne doit pas changer entre le moment de l’extraction initiale et l’exécution de l’extraction de complément. Les compléments peuvent pas être exécutés sur du contenu dont la structure a été modifiée depuis l’extraction initiale. Veillez à limiter cette opération pendant le processus de migration.
 

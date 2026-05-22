@@ -18,7 +18,7 @@ ht-degree: 56%
 >id="development_guidelines"
 >title="Conseils de développement sur AEM as a Cloud Service"
 >abstract="Découvrez les conseils de développement sur AEM as a Cloud Service et les différences importantes avec AEM On-premise et AEM dans AMS."
->additional-url="https://video.tv.adobe.com/v/345902?captions=fre_fr" text="Démonstration de la structure du package"
+>additional-url="https://video.tv.adobe.com/v/330555/" text="Démonstration de la structure du package"
 
 Ce document présente les conseils de développement sur AEM as a Cloud Service et les différences importantes avec AEM On-premise et AEM dans AMS.
 
@@ -112,7 +112,7 @@ Par exemple, la modification d’une définition d’index sur un référentiel 
 
 Pour le développement en local, les entrées de journal sont écrites dans des fichiers locaux dans le dossier `/crx-quickstart/logs`.
 
-Dans les environnements cloud, les développeurs peuvent télécharger les journaux via Cloud Manager ou utiliser un outil de ligne de commande pour les consulter. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
+Dans les environnements cloud, les développeurs peuvent télécharger les journaux via Cloud Manager ou utiliser un outil de ligne de commande pour les consulter. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **Définition du niveau de journalisation**
 
@@ -173,7 +173,7 @@ Les images mémoire de threads dans les environnements Cloud sont collectés en 
 
 ### Développement local {#local-development}
 
-Pour le développement local, les développeurs disposent d’un accès complet à [&#128279;](/help/implementing/developing/tools/crxde.md) (`/crx/de`) et à la [console web](/help/implementing/developing/tools/web-console.md) (`/system/console`).
+Pour le développement local, les développeurs disposent d’un accès complet à [](/help/implementing/developing/tools/crxde.md) (`/crx/de`) et à la [console web](/help/implementing/developing/tools/web-console.md) (`/system/console`).
 
 Pour le développement local (à l’aide du SDK), les `/apps` et les `/libs` peuvent être modifiés directement, ce qui diffère des environnements Cloud, où ces dossiers de niveau supérieur sont immuables.
 
@@ -182,7 +182,7 @@ Pour le développement local (à l’aide du SDK), les `/apps` et les `/libs` pe
 >[!NOTE]
 >
 >* Certains clients auront la possibilité de tester une expérience repensée pour le Developer Console AEM Cloud Service. Voir [cet article](/help/implementing/developing/introduction/aem-developer-console.md) pour plus d’informations.
->* Le Developer Console AEM as a Cloud Service ne doit pas être confondu avec le Adobe Developer Console [*&#128279;*](https://developer.adobe.com/developer-console/).
+>* Le Developer Console AEM as a Cloud Service ne doit pas être confondu avec le Adobe Developer Console [**](https://developer.adobe.com/developer-console/).
 
 Les clients peuvent accéder à CRXDE lite dans l’environnement de développement du niveau création, mais pas dans les environnements d’évaluation ni de production. Le référentiel immuable (`/libs`, `/apps`) ne peut pas être modifié au moment de l’exécution. Toute tentative de ce type entraînera des erreurs.
 

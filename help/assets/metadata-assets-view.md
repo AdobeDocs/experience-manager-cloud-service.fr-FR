@@ -8,7 +8,7 @@ exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '2274'
+source-wordcount: '2318'
 ht-degree: 83%
 
 ---
@@ -143,7 +143,7 @@ Vous trouverez ci-dessous un aperçu de chaque type de propriété et de leur mo
 | Balises | Ajoutez une balise à partir des valeurs stockées dans la gestion de la taxonomie (mappée sur xcm:tags). |
 | Mots-clés | Ajoutez des mots-clés de forme libre (mappés à dc:subject). |
 | Balises intelligentes | Ajoutez ce composant pour augmenter les capacités de recherche en ajoutant automatiquement des balises de métadonnées. |
-| Publication | Ajoute le statut de publication de la ressource. |
+| Publier | Ajoute le statut de publication de la ressource. |
 | Lien | Il stocke une adresse web qui pointe vers une ressource en ligne, telle qu’une page web, une image ou une référence externe. |
 | Évaluation | Il ajoute une valeur catégorielle qui indique la qualité d’une ressource. |
 
@@ -181,7 +181,7 @@ Vous pouvez également accéder à la page des détails du dossier et sélection
 
 ### Utiliser le composant Lien dans un formulaire de métadonnées {#link-component-metadata-form}
 
-Le composant Lien est utilisé pour activer les URL externes, y compris les liens de stockage, les informations de copyright, les formulaires de contact, etc. Pour utiliser le composant Lien sur le formulaire de métadonnées, vous devez [configurer le formulaire de métadonnées](#metadata-forms).
+Le composant Lien est utilisé pour activer les URL externes, y compris les liens de stockage, les informations de copyright, les formulaires de contact, etc. Pour utiliser le composant Lien sur un formulaire de métadonnées, vous devez [configurer le formulaire de métadonnées](#metadata-forms).
 
 Suivez les étapes ci-dessous pour utiliser le composant Lien sur le formulaire de métadonnées :
 
@@ -237,13 +237,13 @@ Pour modifier un formulaire de métadonnées, procédez comme suit :
 
 ## Étapes suivantes {#next-steps}
 
-* [Regardez une vidéo pour gérer les formulaires de métadonnées dans la vue Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=fr)
+* [Regardez une vidéo pour gérer les formulaires de métadonnées dans la vue Assets .](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=fr)
 
 * Faites des commentaires sur le produit en utilisant l’option [!UICONTROL Commentaires] disponible dans l’interface utilisateur de la vue Assets
 
 * Faites des commentaires sur la documentation en utilisant l’option [!UICONTROL Modifier cette page] ![modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![créer un problème GitHub](assets/do-not-localize/github-issue.png) disponible dans la barre latérale droite.
 
-* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr#support).
+* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&lang=fr#support).
 
 <!--
  TBD: Cannot create a form using the second option. Documenting only the first option for now.

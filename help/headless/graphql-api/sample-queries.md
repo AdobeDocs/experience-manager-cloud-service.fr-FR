@@ -6,8 +6,8 @@ exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
 source-git-commit: 6f90bfebf2c9898bf8c1ad2643f8edc4ff4dda53
 workflow-type: tm+mt
-source-wordcount: '1927'
-ht-degree: 90%
+source-wordcount: '1929'
+ht-degree: 89%
 
 ---
 
@@ -148,7 +148,7 @@ Renvoie tous les `types` pour tous les schémas disponibles.
 
 ### Exemple de requête - Toutes les informations sur toutes les villes {#sample-all-information-all-cities}
 
-Pour récupérer toutes les informations sur toutes les villes, vous pouvez utiliser la requête de base suivante :
+Pour récupérer toutes les informations sur toutes les villes, vous pouvez utiliser la requête de base suivante :
 **Exemple de requête**
 
 ```graphql
@@ -1897,9 +1897,9 @@ Les exemples de requêtes sont basés sur la structure suivante, qui utilise :
 
 Pour les exemples de requêtes, nous utiliserons les modèles de contenu suivants et leurs relations mutuelles (références ->) :
 
-* [Entreprise](#model-company)
+* [Société](#model-company)
 -> [Personne](#model-person)
--> [Distinction](#model-award)
+    -> [Récompense](#model-award)
 
 * [Ville](#model-city)
 

@@ -4,8 +4,8 @@ description: Présentation de la migration de groupe dans AEM as a Cloud Service
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1917'
-ht-degree: 6%
+source-wordcount: '1987'
+ht-degree: 8%
 
 ---
 
@@ -39,7 +39,7 @@ L’outil de transfert de contenu et Cloud Acceleration Manager migrent tous les
 
 * Si un groupe utilise une politique de liste de contrôle d’accès ou de groupe d’utilisateurs fermé pour le contenu migré, ce groupe est migré, avec quelques exceptions répertoriées ci-dessous.
 * Plusieurs groupes sont intégrés et déjà présents sur le système cloud cible ; ils ne sont jamais migrés.
-   * Certains groupes intégrés peuvent inclure des groupes de membres qui ne sont _pas_ intégrés ; tout groupe de membres de ce type (membres directs ou membres de membres, etc.) référencé dans une liste de contrôle d’accès ou une politique de groupe d’utilisateurs fermé du contenu migré sera migré, afin de s’assurer que les utilisateurs qui sont membres de ces groupes (directement ou indirectement) conservent leur accès au contenu migré.
+   * Certains groupes natifs peuvent inclure des groupes membres qui ne sont _pas_ natifs, tels que des groupes membres (membres directs ou membres de membres, etc.) Les référencés dans une politique ACL ou CUG du contenu migré seront migrés afin de s’assurer que les utilisateurs qui sont membres de ces groupes (directement ou indirectement) conservent leur accès au contenu migré.
 * D’autres groupes, tels que ceux introuvables sur une politique ACL ou CUG, ceux déjà sur le système de destination et ceux avec des données limitées par leur unicité déjà sur le système cible, ne seront pas migrés.
 
 Notez que le chemin d’accès consigné/signalé pour un groupe est uniquement le premier à avoir déclenché la migration de ce groupe. Ce groupe peut également se trouver sur d’autres chemins d’accès au contenu.
@@ -112,8 +112,8 @@ Voir également [Gérer les utilisateurs](https://helpx.adobe.com/ca/enterprise/
 * Si le paramètre **Effacer le contenu existant sur l’instance cloud avant l’ingestion** est défini, les groupes précédemment transférés à l’instance Cloud Service sont supprimés avec l’ensemble du référentiel existant ; un nouveau référentiel est créé dans lequel le contenu est ingéré. Ce processus réinitialise également tous les paramètres, y compris les autorisations sur l’instance Cloud Service cible, et est valable pour tout utilisateur ajouté au groupe **administrateurs**. L’utilisateur administrateur doit être réajouté au groupe **administrateurs** pour récupérer le jeton d’accès à l’ingestion CTT/CAM.
 * Lorsque des ingestions sans effacement sont effectuées (**Effacer le contenu existant** n’est pas défini), si le contenu n’est pas transféré parce qu’il n’a pas été modifié depuis le transfert précédent, les groupes associés à ce contenu ne sont pas transférés non plus. Cette règle est vraie même si les groupes ont changé sur le système source. En effet, les groupes ne sont migrés qu’avec le contenu auquel ils sont associés. Pour cette raison, dans ce cas, les groupes membres d’un groupe sur le système source ne seront pas migrés, à moins qu’ils ne fassent partie d’un autre groupe en cours de migration ou dans la liste de contrôle d’accès des différents contenus en cours de migration. Pour migrer ces groupes par la suite, pensez à utiliser des packages, à supprimer des groupes de la cible et à migrer à nouveau le contenu approprié, ou à effectuer une nouvelle migration à l’aide d’une ingestion par effacement.
 * Lors d’une ingestion sans effacement, si un groupe existe avec l’une des mêmes données limitées par l’unicité (rep:principalName, rep:authorizableId :uuid, jcr ou rep:externalId) à la fois sur l’instance AEM source et l’instance AEM Cloud Service cible, le groupe en question n’est _pas_ migré et le groupe existant sur le système cloud reste inchangé. Elles sont consignées dans le rapport de migration principal.
-* Consultez [&#x200B; Migration de groupes d’utilisateurs fermés &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) pour en savoir plus sur les groupes utilisés dans une politique de groupe d’utilisateurs fermé (CUG).
+* Consultez [ Migration de groupes d’utilisateurs fermés ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) pour en savoir plus sur les groupes utilisés dans une politique de groupe d’utilisateurs fermé (CUG).
 
 ## Résumé final et rapport
 
-Une fois l’extraction et l’ingestion terminées avec succès, un rapport est généré, présentant les détails de la migration du groupe. Pour plus d’informations, consultez [&#x200B; Validation de la migration de groupe &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md#how-to-validate-group-migration) .
+Une fois l’extraction et l’ingestion terminées avec succès, un rapport est généré, présentant les détails de la migration du groupe. Pour plus d’informations, consultez [ Validation de la migration de groupe ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md#how-to-validate-group-migration) .

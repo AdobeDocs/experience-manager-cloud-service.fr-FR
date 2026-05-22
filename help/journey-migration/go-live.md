@@ -6,7 +6,7 @@ feature: Migration
 role: Admin
 source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1247'
 ht-degree: 93%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 93%
 >title="Préparation de l’activation"
 >abstract="Pour garantir une activation fluide et réussie d’AEM as a Cloud Service, vous devez prévoir des périodes de gel du code et du contenu, des itérations de test, des compléments de contenu, des tests de performance, des tests de sécurité, etc."
 
-Dans cette partie du parcours, vous apprenez à planifier et à effectuer la migration une fois que le code et le contenu sont prêts à être déplacés vers AEM as a Cloud Service. En outre, vous découvrez les bonnes pratiques et les limites connues lors de la migration.
+Dans cette partie du parcours, vous apprendrez à planifier et à effectuer la migration une fois que le code et le contenu sont prêts à être déplacés vers AEM as a Cloud Service. En outre, vous découvrirez les bonnes pratiques et les limites connues lors de la migration.
 
-## Un peu d’histoire…  {#story-so-far}
+## Un peu d’histoire… {#story-so-far}
 
 Dans les phases précédentes du parcours :
 
@@ -34,7 +34,7 @@ Ce document vous aidera à comprendre comment effectuer la migration vers AEM as
 
 ## Migration de production initiale {#initial-migration}
 
-Avant d’effectuer la migration de production, suivez les étapes d’adaptation et de preuve de migration décrites dans la section [Stratégie et calendrier de la migration de contenu](/help/journey-migration/implementation.md##strategy-timeline) de la [phase d’implémentation](/help/journey-migration/implementation.md).
+Avant d’effectuer la migration de production, suivez les étapes d’adaptation et de preuve de migration décrites dans la section [Stratégie et chronologie de la migration de contenu](/help/journey-migration/implementation.md##strategy-timeline) de la [phase d’implémentation](/help/journey-migration/implementation.md).
 
 * Lancez la migration de production en vous appuyant sur l’expérience acquise lors de la migration d’évaluation AEM as a Cloud Service effectuée sur des clones :
    * Création-Création
@@ -61,9 +61,9 @@ Comme mentionné précédemment, vous devrez planifier une période de gel du co
 * Combien de temps dois-je geler les activités de création de contenu ?
 * Pendant combien de temps dois-je demander à mon équipe de diffusion de cesser d’ajouter de nouvelles fonctionnalités ?
 
-Pour répondre à la première question, prenez en compte le temps nécessaire pour effectuer des essais dans des environnements de non-production. Pour répondre à la seconde question, il faut une collaboration étroite entre l’équipe qui ajoute de nouvelles fonctionnalités et l’équipe qui remanie le code. L’objectif est de s’assurer que tout le code qui est ajouté au déploiement existant est également ajouté, testé et déployé dans la branche des services cloud. En général, cela signifie que la quantité de code gelé est inférieure.
+Pour répondre à la première question, prenez en compte le temps nécessaire pour effectuer des essais dans des environnements hors production. Pour répondre à la seconde question, il faut une collaboration étroite entre l’équipe qui ajoute de nouvelles fonctionnalités et l’équipe qui remanie le code. L’objectif est de s’assurer que tout le code qui est ajouté au déploiement existant est également ajouté, testé et déployé dans la branche des services cloud. En général, cela signifie que la quantité de code gelé est inférieure.
 
-En outre, vous devez prévoir un gel du contenu lorsque le complément final de contenu est planifié.
+En outre, vous devez prévoir un gel du contenu lorsque le dernier complément de contenu est programmé.
 
 ## Bonnes pratiques {#best-practices}
 
@@ -97,7 +97,7 @@ Souvenez-vous que la charge sur la source AEM est plus importante pendant la pha
 
 ## Limites connues {#known-limitations}
 
-Veuillez tenir compte du fait que l’ingestion entière échoue si l’une des limites suivantes fait partie du jeu de migration extrait :
+Veuillez tenir compte du fait que l’ingestion entière échoue si l’une des limites suivantes fait partie de l’ensemble de migration extrait :
 
 * Un nœud JCR dont le nom comporte plus de 150 caractères
 * Un nœud JCR dont la taille est supérieure à 16 Mo
@@ -108,13 +108,13 @@ Veuillez tenir compte du fait que l’ingestion entière échoue si l’une des 
 Comparé à la section ci-dessus, l’ingestion n’échoue **pas** en raison des problèmes de ressources suivants. Toutefois, il est vivement recommandé de prendre les mesures appropriées dans ces scénarios :
 
 * Toute ressource dont le rendu original est manquant.
-* Tout dossier qui comporte un noeud `jcr:content` manquant.
+* Tout dossier dont le nœud `jcr:content` est manquant.
 
 Les deux éléments ci-dessus sont identifiés et signalés dans le rapport de [Best Practice Analyzer](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
 
 ## Liste de contrôle de mise en production {#Go-Live-Checklist}
 
-Pour plus d’informations, consultez la documentation [Liste de contrôle d’activation](/help/journey-onboarding/go-live-checklist.md) .
+Pour plus d’informations, consultez la documentation relative à la [Liste de contrôle d’activation](/help/journey-onboarding/go-live-checklist.md).
 
 ## Prochaines étapes {#what-is-next}
 
