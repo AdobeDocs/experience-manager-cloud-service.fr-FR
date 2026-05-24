@@ -1,7 +1,7 @@
 ---
 product: adobe experience manager
 description: Documentation Adobe Experience Manager as a Cloud Service.
-git-repo: https://github.com/AdobeDocs/experience-manager-cloud-service.en
+git-repo: https://github.com/AdobeDocs/experience-manager-cloud-service.fr-FR
 index: true
 type: Documentation
 solution: Experience Manager, Experience Manager as a Cloud Service
