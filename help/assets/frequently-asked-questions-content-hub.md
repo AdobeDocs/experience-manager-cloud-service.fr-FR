@@ -3,10 +3,10 @@ title: Questions fréquentes sur Content Hub
 description: Obtenez des réponses à certaines des questions les plus fréquentes (FAQ) pour Content Hub.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: 65e10efffcc5430ab2f7cd08ba795dc9f96cd41a
 workflow-type: tm+mt
-source-wordcount: '1635'
-ht-degree: 67%
+source-wordcount: '1702'
+ht-degree: 66%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 67%
 
 AEM Assets Content Hub est une fonctionnalité d’Adobe Experience Manager Assets as a Cloud Service.
 
-Content Hub permet aux équipes plus larges de découvrir facilement des ressources pertinentes et approuvées grâce à un portail intuitif et de les adapter rapidement à leurs besoins. En outre, Content Hub fournit un mécanisme d’ingestion qui permet à ces utilisateurs et utilisatrices de se servir facilement lorsqu’ils chargent des ressources dans la gestion des ressources numériques. Cela permet de répondre directement aux besoins des entreprises en termes de vitesse de création de contenu, tout en préservant la cohérence de la marque et la conformité avec les garanties appropriées.
+Content Hub permet aux équipes plus larges de découvrir facilement des ressources pertinentes et approuvées grâce à un portail intuitif et de les adapter rapidement à leurs besoins.  En outre, Content Hub fournit un mécanisme d’ingestion qui permet à ces utilisateurs et utilisatrices de se servir facilement lorsqu’ils chargent des ressources dans la gestion des ressources numériques. Cela permet de répondre directement aux besoins des entreprises en termes de vitesse de création de contenu, tout en préservant la cohérence de la marque et la conformité avec les garanties appropriées.
 
 <!--
 
@@ -42,7 +42,7 @@ Il est possible d’évaluer Content Hub sans affecter le contenu des utilisateu
 
 * [Activez Content Hub](/help/assets/deploy-content-hub.md#enable-content-hub) dans l’environnement de production (programme Cloud Manager).
 * [Ajoutez un utilisateur administrateur ou une utilisatrice administratrice AEM](/help/assets/deploy-content-hub.md#onboard-content-hub-administrator) de l’instance de création de production au profil de produit Content Hub.
-* L’administrateur ou l’administratrice AEM [&#x200B; configure Content Hub](/help/assets/configure-content-hub-ui-options.md).
+* L’administrateur ou l’administratrice AEM [ configure Content Hub](/help/assets/configure-content-hub-ui-options.md).
 * L’administrateur ou l’administratrice AEM ou une personne utilisant AEM sur l’instance de création de production AEM [approuve un certain nombre de ressources pour Content Hub](/help/assets/approve-assets-content-hub.md) ; si vous ne souhaitez pas modifier le contenu de production dans la gestion des ressources numériques, vous pouvez créer un dossier d’évaluation distinct dans l’instance de création AEM, puis charger/baliser ou copier certaines ressources de la gestion des ressources numériques dans cette instance.
 * L’administrateur ou l’administratrice Admin Console ajoute [quelques utilisateurs et utilisatrices sélectionnés](/help/assets/deploy-content-hub.md#onboard-content-hub-users) au profil de produit Content Hub, afin qu’ils puissent commencer l’évaluation.
 * Une fois l’évaluation terminée, les utilisateurs et utilisatrices AEM de l’instance de création peuvent supprimer l’approbation des ressources de test et approuver les ressources de production pour Content Hub, puis l’administrateur ou l’administratrice Admin Console peut ajouter tous les utilisateurs et utilisatrices qui ont besoin d’accéder à Content Hub et au contenu approuvé. Félicitations, Content Hub est maintenant actif.
@@ -87,7 +87,7 @@ Il existe quelques configurations de la manière dont les utilisateurs et utilis
    >
    >La personne affectée aux profils de produits Express et Assets dans deux Admin Consoles doit avoir la même adresse e-mail et utiliser un compte professionnel **d’entreprise ou d’établissement scolaire**, et non **personnel**. La configuration idéale consiste à configurer les deux Admin Consoles en tant que **Federated ID** avec une relation de confiance entre elles, de sorte que l’utilisateur ou l’utilisatrice bénéficie d’une expérience d’authentification unique fluide. Certaines formules Express (par exemple, Express Équipe) ne prennent pas en charge Federated ID/l’authentification unique.
 
-Outre les droits appropriés sur les produits, l’intégration d’Adobe Express à Content Hub nécessite que la personne affectée dispose au moins des autorisations [!UICONTROL Peut modifier] sur l’environnement de création Assets qui alimente Content Hub, au moins sur la hiérarchie de dossiers **[!UICONTROL # /content/dam/hydrated-assets/]**, où les utilisateurs et utilisatrices Content Hub peuvent enregistrer le contenu créé à l’aide d’Express. Consultez [Gestion des autorisations](/help/security/touch-ui-principal-view.md) dans la vue Administration (interface d’utilisation tactile) ou [Gestion des autorisations dans la vue simplifiée Assets](https://experienceleague.adobe.com/fr/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+Outre les droits appropriés sur les produits, l’intégration d’Adobe Express à Content Hub nécessite que la personne affectée dispose au moins des autorisations [!UICONTROL Peut modifier] sur l’environnement de création Assets qui alimente Content Hub, au moins sur la hiérarchie de dossiers **[#UICONTROL /content/dam/hydrated-assets/]**, où les utilisateurs et utilisatrices Content Hub peuvent enregistrer le contenu créé à l’aide d’Express. Consultez [Gestion des autorisations](/help/security/touch-ui-principal-view.md) dans la vue Administration (interface d’utilisation tactile) ou [Gestion des autorisations dans la vue simplifiée Assets](https://experienceleague.adobe.com/fr/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## Puis-je configurer AEM Assets Content Hub afin que les directives de marque de mon entreprise s’affichent sous la forme d’un lien sur la page d’accueil ? {#content-hub-setup-brand-guidelines}
 
@@ -152,7 +152,9 @@ Lorsque vous avez configuré AEM Assets Content Hub pour la production et d’au
 
 ## Comment AEM Assets Content Hub peut-il afficher l’aperçu des miniatures pour le type de fichier .ZIP ? {#thumbnail-preview-zip-file}
 
-Pour fournir un aperçu des miniatures pour des types de fichiers tels que .ZIP dans AEM Assets Content Hub, vous pouvez ajouter un rendu nommé `cq5dam.preview.jpg` ou `cq5dam.preview.png` à la racine du chemin d’accès où le fichier .ZIP est disponible dans l’environnement de création AEM as a Cloud Service.
+Pour fournir un aperçu des miniatures pour des types de fichiers tels que .ZIP dans AEM Assets Content Hub, vous pouvez ajouter un rendu nommé `cq5dam.<label>.<width>.<height>.<ext>` à la racine du chemin d’accès où le fichier .ZIP est disponible dans l’environnement de création AEM as a Cloud Service. Par exemple, `cq5dam.preview.500.500.png`.
+
+Content Hub sélectionne le rendu ayant la largeur la plus élevée parmi tous les rendus `cq5dam.*` ; un rendu personnalisé ne gagne que si sa largeur codée dépasse les rendus existants générés automatiquement.
 
 Image ajoutée en tant que rendu :
 
@@ -161,5 +163,9 @@ Image ajoutée en tant que rendu :
 * Doit être inférieure à 50 Mo.
 
 Lorsqu’elle est disponible, le hub de contenus affiche l’image comme miniature d’aperçu pour le fichier .ZIP dans le hub de contenus.
+
+>[!NOTE]
+>
+>Un rendu nommé `cq5dam.preview.png` (sans dimensions) ne s’affiche pas en tant que miniature d’aperçu.
 
 
