@@ -3,10 +3,10 @@ title: Questions fréquentes sur Content Hub
 description: Obtenez des réponses à certaines des questions les plus fréquentes (FAQ) pour Content Hub.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: 65e10efffcc5430ab2f7cd08ba795dc9f96cd41a
 workflow-type: tm+mt
-source-wordcount: '1635'
-ht-degree: 67%
+source-wordcount: '1702'
+ht-degree: 66%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 67%
 
 AEM Assets Content Hub est une fonctionnalité d’Adobe Experience Manager Assets as a Cloud Service.
 
-Content Hub permet aux équipes plus larges de découvrir facilement des ressources pertinentes et approuvées grâce à un portail intuitif et de les adapter rapidement à leurs besoins. En outre, Content Hub fournit un mécanisme d’ingestion qui permet à ces utilisateurs et utilisatrices de se servir facilement lorsqu’ils chargent des ressources dans la gestion des ressources numériques. Cela permet de répondre directement aux besoins des entreprises en termes de vitesse de création de contenu, tout en préservant la cohérence de la marque et la conformité avec les garanties appropriées.
+Content Hub permet aux équipes plus larges de découvrir facilement des ressources pertinentes et approuvées grâce à un portail intuitif et de les adapter rapidement à leurs besoins.  En outre, Content Hub fournit un mécanisme d’ingestion qui permet à ces utilisateurs et utilisatrices de se servir facilement lorsqu’ils chargent des ressources dans la gestion des ressources numériques. Cela permet de répondre directement aux besoins des entreprises en termes de vitesse de création de contenu, tout en préservant la cohérence de la marque et la conformité avec les garanties appropriées.
 
 <!--
 
@@ -152,7 +152,9 @@ Lorsque vous avez configuré AEM Assets Content Hub pour la production et d’au
 
 ## Comment AEM Assets Content Hub peut-il afficher l’aperçu des miniatures pour le type de fichier .ZIP ? {#thumbnail-preview-zip-file}
 
-Pour fournir un aperçu des miniatures pour des types de fichiers tels que .ZIP dans AEM Assets Content Hub, vous pouvez ajouter un rendu nommé `cq5dam.preview.jpg` ou `cq5dam.preview.png` à la racine du chemin d’accès où le fichier .ZIP est disponible dans l’environnement de création AEM as a Cloud Service.
+Pour fournir un aperçu des miniatures pour des types de fichiers tels que .ZIP dans AEM Assets Content Hub, vous pouvez ajouter un rendu nommé `cq5dam.<label>.<width>.<height>.<ext>` à la racine du chemin d’accès où le fichier .ZIP est disponible dans l’environnement de création AEM as a Cloud Service. Par exemple, `cq5dam.preview.500.500.png`.
+
+Content Hub sélectionne le rendu ayant la largeur la plus élevée parmi tous les rendus `cq5dam.*` ; un rendu personnalisé ne gagne que si sa largeur codée dépasse les rendus existants générés automatiquement.
 
 Image ajoutée en tant que rendu :
 
@@ -161,5 +163,9 @@ Image ajoutée en tant que rendu :
 * Doit être inférieure à 50 Mo.
 
 Lorsqu’elle est disponible, le hub de contenus affiche l’image comme miniature d’aperçu pour le fichier .ZIP dans le hub de contenus.
+
+>[!NOTE]
+>
+>Un rendu nommé `cq5dam.preview.png` (sans dimensions) ne s’affiche pas en tant que miniature d’aperçu.
 
 
