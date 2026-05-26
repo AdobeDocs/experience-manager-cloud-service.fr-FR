@@ -3,7 +3,7 @@ title: Tâche de conversion de format en fragments de contenu visuels
 description: Découvrez ce qu’est la tâche Brand Experience Agent Figma en fragments de contenu visuels et ce qu’elle peut vous apporter.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
-source-git-commit: 5413e173ac159015f224845e238779c5dc997ee5
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
@@ -21,7 +21,7 @@ La tâche Figma vers les fragments de contenu visuel de l’[agent de production
 >
 >La tâche « Convertir en fragments de contenu visuels » est actuellement en disponibilité limitée.
 >
->Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
+>Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [](mailto:experience-production-agent@adobe.com).
 
 ## Vue d’ensemble {#overview}
 

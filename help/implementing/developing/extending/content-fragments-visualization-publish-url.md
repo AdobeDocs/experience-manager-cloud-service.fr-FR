@@ -3,16 +3,16 @@ title: Fragments de contenu visuels - à diffuser avec l’URL de publication
 description: Utilisez l’URL de publication pour diffuser des fragments de contenu visuel.
 feature: Developing, Content Fragments
 role: Admin, Developer
-source-git-commit: 5413e173ac159015f224845e238779c5dc997ee5
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
-source-wordcount: '1453'
+source-wordcount: '1456'
 ht-degree: 0%
 
 ---
 
 # Fragments de contenu visuels - Diffuser avec l’URL de publication {#visual-content-fragments-deliver-with-the-publish-url}
 
-Lorsqu’un fragment de contenu basé sur un modèle auquel est associé un ou plusieurs modèles HTML est publié, l’HTML rendue de ce fragment est disponible via le niveau de publication Adobe Experience Manager (AEM) as a Cloud Service à une URL avec cette structure :
+Lorsqu’un fragment de contenu basé sur un modèle auquel un ou plusieurs modèles HTML sont associés sont publiés, l’HTML rendue de ce fragment est disponible via le niveau de publication Adobe Experience Manager (AEM) as a Cloud Service à une URL avec cette structure :
 
 ```html
 https://publish-p<programId>-e<envId>.adobeaemcloud.com/adobe/stable/previewtemplates/contentFragments/<templateId>/<fragmentId>/<variation>.html
@@ -26,7 +26,7 @@ Cette URL renvoie un *document HTML autonome* (y compris une structure et un CSS
 >
 >Les fragments de contenu visuel sont actuellement en disponibilité limitée.
 >
->Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
+>Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [](mailto:experience-production-agent@adobe.com).
 
 ## Techniques d’intégration - Aperçu {#embedding-techniques-overview}
 

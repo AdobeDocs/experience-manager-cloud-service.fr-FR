@@ -3,7 +3,7 @@ title: Fragments de contenu visuels
 description: Découvrez comment visualiser et publier des fragments de contenu visuel à l’aide de modèles HTML.
 feature: Content Fragments
 role: User, Developer
-source-git-commit: a62769ad302c39a3c1ac7d99960afd2a377a1319
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 0%
@@ -26,11 +26,11 @@ La sortie rendue d’un fragment de contenu AEM qui utilise la disposition et la
 >
 >Les fragments de contenu visuel sont actuellement en disponibilité limitée.
 >
->Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
+>Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [](mailto:experience-production-agent@adobe.com).
 
 Les modèles HTML contiennent des informations de mise en page et de conception, ce qui permet de visualiser les fragments de contenu. La connexion entre un modèle et un fragment de contenu est établie à l’aide de la syntaxe Handlebars pour mapper les balises HTML aux types de données (champs) définis dans le modèle de fragment de contenu. Cette définition permet à du contenu créé dans les champs respectifs de l’éditeur de fragment de contenu d’être affiché aux emplacements appropriés dans le modèle.
 
-Vous (ou votre équipe de développement) pouvez [créer et personnaliser vos propres modèles HTML](/help/implementing/developing/extending/content-fragments-visualization-templates.md), puis [charger et joindre un ou plusieurs modèles aux modèles de fragment de contenu](#upload-and-assign-your-template) afin que les fragments correspondants puissent être rendus en expériences, [prévisualisés](#preview-your-fragment-with-a-template) et [diffusés selon les besoins](#deliver-your-visual-content-fragment).
+Vous ou votre équipe de développement pouvez [créer et personnaliser vos propres modèles HTML](/help/implementing/developing/extending/content-fragments-visualization-templates.md), puis [charger et joindre un ou plusieurs modèles aux modèles de fragment de contenu](#upload-and-assign-your-template) afin que les fragments correspondants puissent être rendus en expériences, [prévisualisés](#preview-your-fragment-with-a-template) et [diffusés selon les besoins](#deliver-your-visual-content-fragment).
 
 >[!NOTE]
 >
@@ -132,7 +132,7 @@ Vous pouvez diffuser votre fragment visuel dans une page Edge Delivery Service (
 
 Vous pouvez diffuser votre fragment de contenu visuel dans une page AEM à l’aide du composant principal : fragment de contenu.
 
-Lors de la configuration d’un composant **Fragment de contenu** [&#x200B; sur votre page](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page) :
+Lors de la configuration d’un composant **Fragment de contenu** [ sur votre page](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page) :
 
 1. Spécifiez le **fragment de contenu** requis.
 1. Sélectionnez **Visualisation de fragment de contenu**.

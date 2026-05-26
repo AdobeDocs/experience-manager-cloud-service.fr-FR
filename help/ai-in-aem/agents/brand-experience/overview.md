@@ -4,9 +4,9 @@ description: Découvrez comment Brand Experience Agent accélère la modernisati
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: e6cd421a-8791-4fe3-b284-9b3beae996fd
-source-git-commit: 68b7fa602a70e2bd9c4590f4acdf5a27f25db4ba
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '689'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Brand Experience Agent accélère la modernisation et l’évolution des expéri
 Le Brand Experience Agent produit ses résultats par le biais des agents suivants, chacun se spécialisant dans un ensemble spécifique de tâches :
 
 * [Agent de modernisation Experience Cloud](#experience-modernization) - Migre les sites web vers des formats prêts pour le cloud
-* [Agent de production Experience](#experience-production) - Réduit le délai de mise sur le marché avec les mises à jour de contenu, la création de formulaires et les communications
+* [Agent de production Experience](#experience-production) - Réduit le délai de mise sur le marché avec les mises à jour de contenu, la création de contenu, les importations de fragments de contenu Figma vers Visual, la création de formulaires et les communications
 * [Agent de développement](#development) - Dépannage assisté par IA et automatisation des builds
 
 Grâce à ces agents, le Brand Experience Agent absorbe le travail opérationnel lourd derrière les mises à jour et la modernisation, aidant les équipes à apporter des modifications plus rapidement et avec une plus grande confiance dans l&#39;ère de l&#39;IA d&#39;aujourd&#39;hui.
@@ -30,7 +30,7 @@ Grâce à ces agents, le Brand Experience Agent absorbe le travail opérationnel
 >
 >Les réponses générées par l&#39;IA peuvent être inexactes ou trompeuses. Assurez-vous de vérifier les correctifs et les réponses suggérés.
 >
->Consultez également les [instructions d’utilisation de l’IA générative de &#x200B;](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
+>Consultez également les [instructions d’utilisation de l’IA générative de ](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 
 ## Agent de modernisation de l’expérience {#experience-modernization}
 
@@ -58,7 +58,7 @@ La tâche [Créer du contenu](/help/ai-in-aem/agents/brand-experience/experience
 >
 >La tâche de création de contenu est actuellement en disponibilité limitée.
 >
->Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
+>Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [](mailto:experience-production-agent@adobe.com).
 
 ### Tâche de conversion de format en fragments de contenu visuels {#figma-to-visual-content-fragments}
 
@@ -70,7 +70,7 @@ La tâche [Figma vers Fragments de contenu visuels](/help/ai-in-aem/agents/brand
 >
 >La tâche « Convertir en fragments de contenu visuels » est actuellement en disponibilité limitée.
 >
->Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
+>Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [](mailto:experience-production-agent@adobe.com).
 
 ### Tâche de création de Forms {#forms-creation}
 

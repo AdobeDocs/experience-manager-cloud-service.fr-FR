@@ -6,7 +6,7 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 40c02806-76a2-43ed-982c-0410c2125a36
-source-git-commit: 5413e173ac159015f224845e238779c5dc997ee5
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Aperçu des fragments de contenu {#previewing-content-fragments}
 
-Les fragments de contenu peuvent être utilisés pour une diffusion découplée et la création de pages. Comme les fragments sont uniquement du contenu, sans formatage, leur révision peut s’avérer plus difficile. Ainsi, plusieurs méthodes de prévisualisation de vos fragments sont fournies, dans divers scénarios.
+Les fragments de contenu peuvent être utilisés pour la diffusion découplée et la création de pages. Comme les fragments sont uniquement du contenu, sans formatage, leur révision peut s’avérer plus difficile. Ainsi, plusieurs méthodes de prévisualisation de vos fragments sont fournies, dans divers scénarios.
 
 Plusieurs méthodes sont disponibles pour les fragments de contenu, accessibles à partir de la console Fragments de console et de l’éditeur. La console et l’éditeur décrits dans cette section ont été développés pour la diffusion de contenu en mode découplé (bien qu’ils puissent être utilisés dans tous les scénarios).
 
@@ -39,7 +39,7 @@ Bien sûr, vous pouvez également afficher votre fragment dans l’[éditeur de 
 >
 >Pour plus d’informations, consultez ce qui suit :
 >
->* utilisation de la console **&#x200B;**&#x200B;pour [gérer les fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md)
+>* utilisation de la console **** pour [gérer les fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md)
 >* l’utilisation de l’éditeur de fragment de contenu [*original*](/help/assets/content-fragments/content-fragments-variations.md),
 >* à l’aide de [Fragments de contenu pour la création de pages](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
@@ -51,7 +51,7 @@ Vous pouvez publier le fragment à partir de l’éditeur ou de la console.
 
 Voir :
 
-* [&#x200B; Publication et prévisualisation d’un fragment &#x200B;](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) pour plus d’informations.
+* [ Publication et prévisualisation d’un fragment ](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) pour plus d’informations.
 
 * [Dépublication d’un fragment](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) pour plus d’informations.
 
@@ -65,7 +65,7 @@ Pour utiliser cette fonctionnalité, vous devez d’abord :
 
 * Contactez votre équipe informatique pour configurer l’application frontale externe qui effectue le rendu du fragment de contenu en utilisant sa sortie JSON.
 
-* Lorsque l’application frontale externe est configurée, le **Modèle d’URL d’aperçu par défaut** doit être défini en tant que propriété [&#x200B; du modèle de fragment de contenu approprié](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties).
+* Lorsque l’application frontale externe est configurée, le **Modèle d’URL d’aperçu par défaut** doit être défini en tant que propriété [ du modèle de fragment de contenu approprié](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties).
 
 L’URL de prévisualisation doit suivre le modèle suivant :
 
@@ -102,7 +102,7 @@ Vous pouvez prévisualiser un fragment de contenu dans une application externe :
 >
 >Les fragments de contenu visuel sont actuellement en disponibilité limitée.
 >
->Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
+>Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [](mailto:experience-production-agent@adobe.com).
 
 AEM vous permet de prévisualiser votre fragment de contenu à l’aide d’une disposition visuelle basée sur un modèle HTML.
 
@@ -111,4 +111,3 @@ Voir [Fragments de contenu visuels](/help/sites-cloud/administering/content-frag
 >[!NOTE]
 >
 >Consultez [Fragments de contenu visuels - Modèles](/help/implementing/developing/extending/content-fragments-visualization-templates.md) pour plus d’informations sur la création, la personnalisation et le chargement de vos propres modèles HTML.
-
