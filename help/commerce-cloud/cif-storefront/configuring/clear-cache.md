@@ -5,9 +5,9 @@ feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
 index: false
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 5c8054e9a4f0bbcc2a6fce2fba70403c1f4268d8
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '1012'
 ht-degree: 3%
 
 ---
@@ -85,7 +85,7 @@ Type de demande : `POST`
 
 | Paramètre | Valeur | Obligatoire | Commentaire |
 |------------------------------|-------------------|---|---|
-| `Content-Type` | `application/json` | Nécessaires |  |
+| `Content-Type` | `application/json` | Obligatoire |  |
 | `Authorization` | Informations d’identification de l’utilisateur de l’auteur correspondant (type d’authentification : authentification de base) | Nécessaires | Ajoutez le nom d’utilisateur et le mot de passe correspondants. |
 
 
@@ -95,8 +95,8 @@ Le tableau suivant présente les attributs existants prêts à l’emploi fourni
 
 | `invalidateType` | Valeur | Type (Tableau/Chaîne/Booléen) | Cela effacera-t-il le cache du Dispatcher ? | Commentaire |
 |------------------------------|-------------------|---|---|---|
-| `productSkus` | SKU du produit, qui doit être invalidé à partir du cache. | Tableau | Oui | Effacez le cache de la mémoire interne à l&#39;aide du motif suivant :<br>```"\"sku\":\\s*\""```<br><br><ul><li>Effacez le cache de page PDP des SKU correspondants.</li><li>Effacer le cache de la page de catégories correspondante dans laquelle ils existent (en fonction de la réponse GraphQL de Commerce)</li><li>Effacez le cache en fonction de la requête suivante :</li></ul><br>```SELECT content.[jcr:path] FROM [nt:unstructured] AS content<br>WHERE ISDESCENDANTNODE(content, '{storePath}')<br>AND ( (content.[product] IN ('sku1','sku2') AND content.[productType] = 'combinedSku')<br> OR (content.[selection] IN ('sku1','sku2') AND content.[selectionType] IN ('combinedSku', 'sku')))``` |
-| `categoryUids` | UID de la catégorie - qui doit être invalidé à partir du cache. | Tableau | Oui | Effacez le cache de la mémoire interne à l&#39;aide du motif suivant :<br>```"\"uid\"\\s*:\\s*\\{\"id\"\\s*:\\s*\""```<br><br><ul><li>Effacez le cache des pages de catégorie pour les données correspondantes (y compris sa page de catégorie enfant).</li><li>Effacer toutes les pages du PDP qui ont les catégories correspondantes</li><li>Effacez le cache en fonction de la requête suivante :</li></ul><br>```SELECT content.[jcr:path] FROM [nt:unstructured] AS content<br>WHERE ISDESCENDANTNODE(content,'{storePath}')<br>AND ((content.[categoryId] in ('category1','category2')<br>AND content.[categoryIdType] in ('uid'))<br>OR (content.[category] in ('category1','category2') AND content.[categoryType] in ('uid')))``` |
+| `productSkus` | SKU du produit, qui doit être invalidé à partir du cache. | Tableau | Oui | Effacez le cache de la mémoire interne à l&#39;aide du motif suivant :<br>`"\"sku\":\\s*\""`<br><br><ul><li>Effacez le cache de page PDP des SKU correspondants.</li><li>Effacer le cache de la page de catégories correspondante dans laquelle ils existent (en fonction de la réponse GraphQL de Commerce)</li><li>Effacez le cache en fonction de la requête suivante :</li></ul><br>`SELECT content.[jcr:path] FROM [nt:unstructured] AS content<br>WHERE ISDESCENDANTNODE(content, '{storePath}')<br>AND ( (content.[product] IN ('sku1','sku2') AND content.[productType] = 'combinedSku')<br> OR (content.[selection] IN ('sku1','sku2') AND content.[selectionType] IN ('combinedSku', 'sku')))` |
+| `categoryUids` | UID de la catégorie - qui doit être invalidé à partir du cache. | Tableau | Oui | Effacez le cache de la mémoire interne à l&#39;aide du motif suivant :<br>`"\"uid\"\\s*:\\s*\\{\"id\"\\s*:\\s*\""`<br><br><ul><li>Effacez le cache des pages de catégorie pour les données correspondantes (y compris sa page de catégorie enfant).</li><li>Effacer toutes les pages du PDP qui ont les catégories correspondantes</li><li>Effacez le cache en fonction de la requête suivante :</li></ul><br>`SELECT content.[jcr:path] FROM [nt:unstructured] AS content<br>WHERE ISDESCENDANTNODE(content,'{storePath}')<br>AND ((content.[categoryId] in ('category1','category2')<br>AND content.[categoryIdType] in ('uid'))<br>OR (content.[category] in ('category1','category2') AND content.[categoryType] in ('uid')))` |
 | `regexPatterns` | Si vous devez effacer les données de réponse GraphQL en fonction du modèle RegEx, utilisez cette option. | Tableau | Non | |
 | `cacheNames` | Ces valeurs sont définies sous la configuration du client CIF GraphQL correspondante : fabrique >> Configuration du GraphQL StorePath correspondante >> Configurations du cache GraphQL | Tableau | Non | |
 | `invalidateAll` | Vrai ou faux | Booléen | Oui | |
