@@ -21,7 +21,7 @@ La tâche Figma vers les fragments de contenu visuel de l’[agent de production
 >
 >La tâche « Convertir en fragments de contenu visuels » est actuellement en disponibilité limitée.
 >
->Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [](mailto:experience-production-agent@adobe.com).
+>Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
 
 ## Vue d’ensemble {#overview}
 

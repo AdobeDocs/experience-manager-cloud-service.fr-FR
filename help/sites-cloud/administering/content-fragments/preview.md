@@ -39,7 +39,7 @@ Bien sûr, vous pouvez également afficher votre fragment dans l’[éditeur de 
 >
 >Pour plus d’informations, consultez ce qui suit :
 >
->* utilisation de la console **** pour [gérer les fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md)
+>* utilisation de la console **&#x200B;**&#x200B;pour [gérer les fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md)
 >* l’utilisation de l’éditeur de fragment de contenu [*original*](/help/assets/content-fragments/content-fragments-variations.md),
 >* à l’aide de [Fragments de contenu pour la création de pages](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
@@ -51,7 +51,7 @@ Vous pouvez publier le fragment à partir de l’éditeur ou de la console.
 
 Voir :
 
-* [ Publication et prévisualisation d’un fragment ](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) pour plus d’informations.
+* [&#x200B; Publication et prévisualisation d’un fragment &#x200B;](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) pour plus d’informations.
 
 * [Dépublication d’un fragment](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) pour plus d’informations.
 
@@ -65,7 +65,7 @@ Pour utiliser cette fonctionnalité, vous devez d’abord :
 
 * Contactez votre équipe informatique pour configurer l’application frontale externe qui effectue le rendu du fragment de contenu en utilisant sa sortie JSON.
 
-* Lorsque l’application frontale externe est configurée, le **Modèle d’URL d’aperçu par défaut** doit être défini en tant que propriété [ du modèle de fragment de contenu approprié](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties).
+* Lorsque l’application frontale externe est configurée, le **Modèle d’URL d’aperçu par défaut** doit être défini en tant que propriété [&#x200B; du modèle de fragment de contenu approprié](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties).
 
 L’URL de prévisualisation doit suivre le modèle suivant :
 
@@ -102,7 +102,7 @@ Vous pouvez prévisualiser un fragment de contenu dans une application externe :
 >
 >Les fragments de contenu visuel sont actuellement en disponibilité limitée.
 >
->Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [](mailto:experience-production-agent@adobe.com).
+>Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
 
 AEM vous permet de prévisualiser votre fragment de contenu à l’aide d’une disposition visuelle basée sur un modèle HTML.
 

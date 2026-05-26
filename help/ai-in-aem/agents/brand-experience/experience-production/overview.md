@@ -29,11 +29,11 @@ L’agent effectue les tâches suivantes :
 >
 >Les réponses générées par l&#39;IA peuvent être inexactes ou trompeuses. Assurez-vous de vérifier les correctifs et les réponses suggérés.
 >
->Consultez également les [instructions d’utilisation de l’IA générative de ](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
+>Consultez également les [instructions d’utilisation de l’IA générative de &#x200B;](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 
 ### Tâche de mise à jour du contenu {#content-update}
 
-La tâche [ Mise à jour de contenu ](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) met à jour facilement le contenu existant, y compris les fragments de contenu, les pages, les formulaires et les ressources. L’agent peut effectuer des actions telles que la mise à jour, la suppression, le remplacement et l’ajout d’éléments de contenu pour que les expériences restent exactes et à jour. Les entrées peuvent être des descriptions en langage naturel et, lorsqu’elles sont utilisées avec Jira, les PDF et les captures d’écran peuvent également fournir des entrées.
+La tâche [&#x200B; Mise à jour de contenu &#x200B;](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) met à jour facilement le contenu existant, y compris les fragments de contenu, les pages, les formulaires et les ressources. L’agent peut effectuer des actions telles que la mise à jour, la suppression, le remplacement et l’ajout d’éléments de contenu pour que les expériences restent exactes et à jour. Les entrées peuvent être des descriptions en langage naturel et, lorsqu’elles sont utilisées avec Jira, les PDF et les captures d’écran peuvent également fournir des entrées.
 
 ### Création de tâche de contenu {#content-create}
 
@@ -43,7 +43,7 @@ La tâche [Créer du contenu](/help/ai-in-aem/agents/brand-experience/experience
 >
 >La tâche de création de contenu est actuellement en disponibilité limitée.
 >
->Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [](mailto:experience-production-agent@adobe.com).
+>Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
 
 ### Tâche de conversion de format en fragments de contenu visuels {#figma-to-visual-content-fragments}
 
@@ -55,7 +55,7 @@ La tâche [Figma vers Fragments de contenu visuels](/help/ai-in-aem/agents/brand
 >
 >La tâche « Convertir en fragments de contenu visuels » est actuellement en disponibilité limitée.
 >
->Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [](mailto:experience-production-agent@adobe.com).
+>Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
 
 ### Tâche de création de formulaire {#form-creation}
 
