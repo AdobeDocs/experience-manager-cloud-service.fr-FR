@@ -5,7 +5,7 @@ feature: Developing, Content Fragments
 role: Admin, Developer
 source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1456'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Cette URL renvoie un *document HTML autonome* (y compris une structure et un CSS
 >
 >Les fragments de contenu visuel sont actuellement en disponibilité limitée.
 >
->Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
+>Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [](mailto:experience-production-agent@adobe.com).
 
 ## Techniques d’intégration - Aperçu {#embedding-techniques-overview}
 
