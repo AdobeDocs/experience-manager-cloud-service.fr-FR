@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Utilisation du MCP de migration vers le cloud d’AEM {#using-cloud-migration-mcp}
 
-Le **MCP de migration vers le cloud** est un serveur hébergé [Model Context Protocol (MCP)](https://modelcontextprotocol.io) qui connecte votre agent IDE à **Cloud Acceleration Manager (CAM)**. Une fois configurée, la [compétence de migration vers le cloud ](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md) peut récupérer les résultats de l’analyseur des bonnes pratiques directement à partir de votre projet CAM sans nécessiter d’exportation au format CSV.
+Le **MCP de migration vers le cloud** est un serveur hébergé [Model Context Protocol (MCP)](https://modelcontextprotocol.io) qui connecte votre agent IDE à **Cloud Acceleration Manager (CAM)**. Une fois configurée, la [compétence de migration vers le cloud &#x200B;](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md) peut récupérer les résultats de l’analyseur des bonnes pratiques directement à partir de votre projet CAM sans nécessiter d’exportation au format CSV.
 
 ## URL du serveur MCP {#server-url}
 
@@ -34,15 +34,15 @@ Le serveur MCP expose deux outils que la compétence de migration appelle automa
 
 ## Conditions préalables {#prerequisites}
 
-* Un projet **** avec un rapport BPA chargé. Voir [Phase de préparation de CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md).
-* Un **** ayant accès à ce projet CAM.
+* Un projet **&#x200B;**&#x200B;avec un rapport BPA chargé. Voir [Phase de préparation de CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md).
+* Un **&#x200B;**&#x200B;ayant accès à ce projet CAM.
 * Un IDE compatible avec l’IA qui prend en charge les serveurs MCP distants.
 
 ## Configuration {#setup}
 
 1. Dans la configuration MCP de votre IDE, ajoutez une nouvelle entrée de serveur MCP avec l’URL `https://mcp.adobeaemcloud.com/adobe/mcp/cloud-migration`.
 2. Enregistrez ou activez la configuration afin que votre IDE se connecte au serveur.
-3. Lorsque vous y êtes invité, connectez-vous avec votre **** pour terminer l’authentification.
+3. Lorsque vous y êtes invité, connectez-vous avec votre **&#x200B;**&#x200B;pour terminer l’authentification.
 4. Une fois authentifié, votre IDE découvre les outils de migration disponibles et les compétences de migration peuvent les utiliser dans les sessions.
 
 Pour connaître les étapes de configuration spécifiques à IDE, reportez-vous aux guides sous [Configuration de MCP avec AEM](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md).
@@ -89,9 +89,9 @@ Utilisez-la pour décider des modèles à prioriser dans vos sessions.
 
 **Aucun rapport BPA trouvé**
 
-* Vérifiez qu’un rapport BPA a été chargé dans le projet CAM sélectionné. Voir [ Utilisation de l’analyseur des bonnes pratiques ](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md).
+* Vérifiez qu’un rapport BPA a été chargé dans le projet CAM sélectionné. Voir [&#x200B; Utilisation de l’analyseur des bonnes pratiques &#x200B;](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md).
 
 ## Prochaines étapes {#whats-next}
 
-Une fois le MCP configuré, reportez-vous à la section [ Utilisation des compétences de migration vers le cloud ](/help/journey-migration/cloud-migration-skill/using-cloud-migration-skill.md) pour obtenir des informations complètes sur les modèles de migration et la gestion des sessions.
+Une fois le MCP configuré, reportez-vous à la section [&#x200B; Utilisation des compétences de migration vers le cloud &#x200B;](/help/journey-migration/cloud-migration-skill/using-cloud-migration-skill.md) pour obtenir des informations complètes sur les modèles de migration et la gestion des sessions.
 
