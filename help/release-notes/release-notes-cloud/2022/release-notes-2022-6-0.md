@@ -4,7 +4,7 @@ description: Notes de mise à jour de la version 2022.6.0 d’ [!DNL Adobe Expe
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
 feature: Release Information
 role: Admin
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: d6555eebfa13a400f084ef4edefb92b4471adcac
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 84%
@@ -96,7 +96,7 @@ Experience Manager Assets utilise désormais les fonctionnalités d’Adobe AI p
 
 ### Nouveautés {#what-is-new-foundation}
 
-* Comme indiqué dans les notes de mise à jour de mai (2022.5.0), l’option « Ajouter une arborescence » sous l’onglet **Distribuer** de l’écran d’administration de l’agent de réplication a été supprimée. Les packages avec une arborescence de contenu doivent plutôt être répliqués à l’aide de [Gérer la publication](/help/operations/replication.md#manage-publication) ou du workflow [Publier l’arborescence de contenu](/help/operations/replication.md#manage-publication#publish-content-tree-workflow).
+* Comme indiqué dans les notes de mise à jour de mai (2022.5.0), l’option « Ajouter une arborescence » sous l’onglet **Distribuer** de l’écran d’administration de l’agent de réplication a été supprimée. Les packages avec une arborescence de contenu doivent plutôt être répliqués à l’aide de [Gérer la publication](/help/operations/replication.md#manage-publication) ou du workflow [Publier l’arborescence de contenu](/help/operations/tree-replication-workflows.md#publish-content-tree-workflow).
 
 ## Cloud Manager {#cloud-manager}
 

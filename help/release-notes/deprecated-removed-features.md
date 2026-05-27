@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 459858d160eaaeddc24321aea031e855911e735f
+source-git-commit: d6555eebfa13a400f084ef4edefb92b4471adcac
 workflow-type: tm+mt
 source-wordcount: '4146'
 ht-degree: 71%
@@ -31,11 +31,11 @@ Pendant la période d’obsolescence, Adobe rappelle à ses clientes et clients 
 
 >[!IMPORTANT]
 >
->Plusieurs [&#x200B; API obsolètes &#x200B;](#aem-apis) seront supprimées le **11 juin 2026**. Veuillez consulter ces dates et impacts clés :
+>Plusieurs [ API obsolètes ](#aem-apis) seront supprimées le **11 juin 2026**. Veuillez consulter ces dates et impacts clés :
 >
 >* **À compter du 26 janvier 2026** : les e-mails de notification du Centre de maintenance sont envoyés comme rappel pour supprimer l’utilisation de ces API, si un pipeline a été récemment exécuté.
 >* **26 février 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API seront **mis en pause** pendant l’étape **Qualité du code**. Un responsable de déploiement, un chef de projet ou un propriétaire d’entreprise peut contourner le problème pour autoriser le pipeline à continuer. *Cela peut ralentir votre capacité à valider et à publier les modifications de code.*
->* **14 avril 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **&#x200B;**&#x200B;lors de l’étape **Qualité du code**. Les déploiements seront bloqués jusqu’à ce que l’utilisation obsolète de l’API soit supprimée. *Cela peut vous empêcher de publier des mises à jour urgentes et peut avoir un impact sur vos opérations commerciales.*
+>* **14 avril 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **** lors de l’étape **Qualité du code**. Les déploiements seront bloqués jusqu’à ce que l’utilisation obsolète de l’API soit supprimée. *Cela peut vous empêcher de publier des mises à jour urgentes et peut avoir un impact sur vos opérations commerciales.*
 >* **11 juin 2026** : les environnements qui utilisent toujours des API obsolètes **ne recevront pas de mises à jour de versions Adobe critiques** et ne seront pas soumis aux engagements standard d’Adobe en matière de performances et de disponibilité. Par conséquent, vous ne recevrez pas de nouvelles fonctionnalités ou de nouveaux correctifs, la stabilité et la disponibilité des applications peuvent être affectées négativement, et l&#39;exposition aux risques de sécurité peut encore augmenter. Pour recevoir à nouveau les mises à jour des versions d’Adobe, un pipeline full stack doit être exécuté avec succès ; la mise à jour sera ensuite appliquée dans les prochains jours.
 >
 
@@ -56,10 +56,10 @@ La fonctionnalité du tableau ci-dessous a été annoncée comme obsolète, mais
 | [!DNL Assets] | Chargez des ressources directement dans [!DNL Experience Manager]. Voir [API de chargement des ressources obsolètes](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Utilisez le [chargement de binaire direct](/help/assets/add-assets.md). Pour plus d’informations techniques, consultez [API de chargement direct](/help/assets/developer-reference-material-apis.md#upload-binary). |
 | [!DNL Assets] | [Certaines étapes](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) du workflow `DAM Asset Update` ne sont pas prises en charge, notamment l’appel d’outils de ligne de commande tels que [!DNL ImageMagick]. | [Les microservices de ressources](/help/assets/asset-microservices-overview.md) remplacent de nombreux workflows. Pour le traitement personnalisé, utilisez des [workflows de post-traitement](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets] | Transcodage FFmpeg des vidéos. | Pour la génération de miniatures FFmpeg, utilisez les [microservices de ressources](/help/assets/asset-microservices-overview.md). Pour le transcodage FFmpeg, utilisez [Dynamic Media](/help/assets/manage-video-assets.md). |
-| [!DNL Foundation] | Interface utilisateur de réplication de l’arborescence sous l’onglet Distribuer de l’agent de réplication (suppression après le 30 septembre 2021) | Approches [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Étape de workflow d’activation de l’arborescence](/help/operations/replication.md#tree-activation). |
-| [!DNL Foundation] | L’onglet Distribuer de l’écran d’administration de l’agent de réplication et l’API de réplication ne peuvent pas répliquer des modules de contenu de plus de 10 Mo. | [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Étape de workflow d’activation de l’arborescence](/help/operations/replication.md#tree-activation) |
+| [!DNL Foundation] | Interface utilisateur de réplication de l’arborescence sous l’onglet Distribuer de l’agent de réplication (suppression après le 30 septembre 2021) | Approches [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Étape de workflow d’activation de l’arborescence](/help/operations/tree-replication-workflows.md#tree-activation). |
+| [!DNL Foundation] | L’onglet Distribuer de l’écran d’administration de l’agent de réplication et l’API de réplication ne peuvent pas répliquer des modules de contenu de plus de 10 Mo. | [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Étape de workflow d’activation de l’arborescence](/help/operations/tree-replication-workflows.md#tree-activation) |
 | [!DNL Foundation] | Les intégrations qui utilisent des informations d’identification générées à partir des projets Adobe Developer Console perdent progressivement la prise en charge des informations d’identification du compte de service (JWT). Depuis le 1er mai 2024, les nouvelles informations d’identification du compte de service (JWT) ne peuvent plus être créées dans Adobe Developer Console. Les informations d’identification de compte de service (JWT) existantes restent utilisables pour les intégrations configurées jusqu’au 1er janvier 2025, après quoi elles cesseront de fonctionner, ce qui nécessitera que les clientes et clients et clientes migrent vers les informations d’identification OAuth de serveur à serveur. [En savoir plus](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migrez](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview) vers les informations d’identification OAuth serveur à serveur. |
-| [!DNL Foundation] | Workflow de publication d’arborescence de contenu et étape de workflow de publication d’arborescence de contenu associée, qui a été utilisée pour les réplications de hiérarchies de contenu. | Utilisez l’[étape de workflow d’activation d’arborescence](/help/operations/replication.md#tree-activation), qui est plus performante. |
+| [!DNL Foundation] | Workflow de publication d’arborescence de contenu et étape de workflow de publication d’arborescence de contenu associée, qui a été utilisée pour les réplications de hiérarchies de contenu. | Utilisez l’[étape de workflow d’activation d’arborescence](/help/operations/tree-replication-workflows.md#tree-activation), qui est plus performante. |
 | [!DNL Foundation] | Utilisation de YUI pour compresser/réduire les bibliothèques clientes JavaScript. Adobe ne prévoit pas de mettre à jour la bibliothèque YUI. | Adobe recommande aux clientes et clients de passer à Google Closure Compiler (GCC) pour leur implémentation. |
 | [!DNL Foundation] | Prise en charge de com.adobe.granite.oauth.server | Intégration Adobe IMS |
 
@@ -86,11 +86,11 @@ Les API du tableau ci-dessous (cliquez pour développer) ont été annoncées c
 
 >[!IMPORTANT]
 >
->Plusieurs [&#x200B; API obsolètes &#x200B;](#aem-apis) seront supprimées le **11 juin 2026**. Veuillez consulter ces dates et impacts clés :
+>Plusieurs [ API obsolètes ](#aem-apis) seront supprimées le **11 juin 2026**. Veuillez consulter ces dates et impacts clés :
 >
 >* **À compter du 26 janvier 2026** : les e-mails de notification du Centre de maintenance sont envoyés comme rappel pour supprimer l’utilisation de ces API.
 >* **26 février 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API seront **mis en pause** pendant l’étape **Qualité du code**. Un responsable de déploiement, un chef de projet ou un propriétaire d’entreprise peut contourner le problème pour autoriser le pipeline à continuer. *Cela peut ralentir votre capacité à valider et à publier les modifications de code.*
->* **14 avril 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **&#x200B;**&#x200B;lors de l’étape **Qualité du code**. Les déploiements seront bloqués jusqu’à ce que l’utilisation obsolète de l’API soit supprimée. *Cela peut vous empêcher de publier des mises à jour urgentes et peut avoir un impact sur vos opérations commerciales.*
+>* **14 avril 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **** lors de l’étape **Qualité du code**. Les déploiements seront bloqués jusqu’à ce que l’utilisation obsolète de l’API soit supprimée. *Cela peut vous empêcher de publier des mises à jour urgentes et peut avoir un impact sur vos opérations commerciales.*
 >* **11 juin 2026** : les environnements qui utilisent toujours des API obsolètes **ne recevront pas de mises à jour de versions Adobe critiques** et ne sont pas soumis aux engagements standard d’Adobe en matière de performances et de disponibilité. Par conséquent, vous ne recevrez pas de nouvelles fonctionnalités ou de nouveaux correctifs, la stabilité et la disponibilité des applications peuvent être affectées négativement, et l&#39;exposition aux risques de sécurité peut encore augmenter.
 >
 
@@ -384,7 +384,7 @@ Cette section répertorie les API obsolètes et supprimées. Certaines API fon
 
 Cette section contient des conseils de suppression pour diverses API dans les tableaux ci-dessus.
 
-Pour identifier les API Java obsolètes que votre code utilise, intégrez le plug-in Maven [AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) dans votre projet Maven et exécutez-le localement. Le rapport répertorie toutes les utilisations obsolètes détectées de l’API et indique quel lot OSGi fait référence à chaque API. Référencez [ce tutoriel](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) pour savoir comment utiliser le plug-in Maven.
+Pour identifier les API Java obsolètes que votre code utilise, intégrez le plug-in Maven [AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) dans votre projet Maven et exécutez-le localement. Le rapport répertorie toutes les utilisations obsolètes détectées de l’API et indique quel lot OSGi fait référence à chaque API. Référencez [ce tutoriel](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) pour savoir comment utiliser le plug-in Maven.
 
 Bien que vous deviez remédier à toutes les API obsolètes au fil du temps, donnez la priorité à toutes les API répertoriées dans le tableau API obsolètes avec une date de suppression cible fixée au 26 février 2026 (ou avant). Dans le rapport AEM Analyzer, ces API peuvent apparaître avec une date de suppression effective du 8/31/2025.
 
