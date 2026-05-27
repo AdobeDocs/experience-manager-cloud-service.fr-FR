@@ -196,4 +196,4 @@ Cloud Acceleration Manager est une application cloud conçue pour guider vos éq
 
 >[!NOTE]
 >
-> Regardez cette vidéo de démonstration de [](https://video.tv.adobe.com/v/335547).
+> Regardez cette vidéo de démonstration de [&#128279;](https://video.tv.adobe.com/v/335547).

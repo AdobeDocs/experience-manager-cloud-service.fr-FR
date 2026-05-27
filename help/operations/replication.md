@@ -23,7 +23,7 @@ Adobe Experience Manager as a Cloud Service utilise la fonctionnalité de 
 
 >[!NOTE]
 >
->Si vous souhaitez publier du contenu en masse, créez un workflow à l’aide de l’étape [ Workflow d’activation de l’arborescence ](/help/operations/tree-replication-workflows.md#tree-activation), qui peut gérer efficacement des payloads volumineux.
+>Si vous souhaitez publier du contenu en masse, créez un workflow à l’aide de l’étape [&#x200B; Workflow d’activation de l’arborescence &#x200B;](/help/operations/tree-replication-workflows.md#tree-activation), qui peut gérer efficacement des payloads volumineux.
 >Il n’est pas recommandé de créer votre propre code personnalisé de publication en masse.
 >Si, pour une raison quelconque, vous devez effectuer une personnalisation, vous pouvez déclencher un workflow avec cette étape à l’aide des API de workflow existantes.
 >Il est toujours recommandé de ne publier que le contenu qui doit être publié. Et soyez prudent en évitant de publier un grand nombre de contenus, si ce n’est pas nécessaire. Cependant, il n’existe aucune limite quant à la quantité de contenu que vous pouvez envoyer par le biais des workflows avec l’étape de workflow d’activation de l’arborescence.
@@ -90,7 +90,7 @@ AEM as a Cloud Service fournit deux agents de réplication prédéfinis qui ache
 
 Vous pouvez afficher et surveiller les deux agents à partir de **Outils** > **Déploiement** > **Distribution** :
 
-![Agents de distribution affichant les agents de publication et ](/help/operations/assets/replication-agents.png " prévisualisation")
+![Agents de distribution affichant les agents de publication et &#x200B;](/help/operations/assets/replication-agents.png " prévisualisation")
 
 La sélection d’une carte d’agent ouvre son statut, ses journaux et les [détails de la file d’attente](#replication-queues).
 
@@ -152,12 +152,12 @@ Chaque agent de réplication affiche deux files d’attente de réplication. AEM
 
 1. Dans l’onglet **Statut**, vérifiez que chaque file d’attente présente un statut intègre. Consultez **Éléments en attente** pour le travail en attente de traitement et **Dernier élément traité** pour l’activité récente.
 
-   ![Files d’attente de réplication affichant les files d’attente ](/help/operations/assets/replication-queues.png " réplication persistantes et entièrement publiées")
+   ![Files d’attente de réplication affichant les files d’attente &#x200B;](/help/operations/assets/replication-queues.png " réplication persistantes et entièrement publiées")
 
 1. Sélectionnez **Tester la connexion** pour vérifier que l’agent peut accéder au service de distribution.
 1. Sélectionnez l’onglet **Logs** pour afficher l’historique des publications de contenu.
 
-   ![Journaux ](/help/operations/assets/publish-logs.png " réplication")
+   ![Journaux &#x200B;](/help/operations/assets/publish-logs.png " réplication")
 
 ## Résolution des problèmes {#troubleshooting}
 
