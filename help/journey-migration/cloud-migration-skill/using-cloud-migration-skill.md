@@ -3,7 +3,7 @@ title: Utilisation des compétences de migration vers le cloud AEM
 description: Référence pour chaque modèle de migration pris en charge par les compétences de migration vers le cloud AEM, y compris la conversion de configuration OSGi, les options de source BPA et les conseils de gestion de session.
 feature: Migration
 role: Developer
-source-git-commit: f3f81e043b95576bbd1d236645a562668c355e76
+source-git-commit: 5cda629090d9a9d020deca5192b8a89659ec4749
 workflow-type: tm+mt
 source-wordcount: '887'
 ht-degree: 0%
@@ -142,3 +142,4 @@ Pour les rapports BPA comportant de nombreux résultats, l’approche lot par lo
 L’agent recherche et modifie uniquement les fichiers dans les dossiers de l’espace de travail IDE ouverts. Il n’analyse pas les répertoires parents, les dossiers frères ni d’autres emplacements sur le disque.
 
 Si un résultat de recherche BPA fait référence à un chemin d’accès au fichier qui n’existe pas dans l’espace de travail, l’agent s’arrête et vous indique quels chemins d’accès sont manquants. Ouvrez le dossier de projet approprié ou indiquez explicitement les chemins d’accès pour continuer.
+

@@ -3,7 +3,7 @@ title: Workflows de réplication d’arborescence dans AEM as a Cloud Service
 description: Découvrez comment répliquer des hiérarchies de contenu profondes à l’aide de l’étape de workflow Activation d’arborescence et des workflows associés dans AEM as a Cloud Service.
 feature: Operations
 role: Admin
-source-git-commit: d6555eebfa13a400f084ef4edefb92b4471adcac
+source-git-commit: 5cda629090d9a9d020deca5192b8a89659ec4749
 workflow-type: tm+mt
 source-wordcount: '1078'
 ht-degree: 49%
@@ -102,7 +102,7 @@ Vous pouvez déclencher une réplication d’arborescence en choisissant **Outil
 
 N’appelez pas le modèle d’origine. Veillez plutôt à copier le modèle et à appeler cette copie.
 
-Comme tous les workflows, il peut également être appelé via l’API. Pour plus d’informations, voir [Interaction avec les workflows par programmation](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=fr#extending-aem).
+Comme tous les workflows, il peut également être appelé via l’API. Pour plus d’informations, voir [Interaction avec les workflows par programmation](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
 
 Vous pouvez également créer un modèle de workflow qui utilise l’étape de processus `Publish Content Tree`.
 
@@ -162,3 +162,4 @@ Vous trouverez ci-dessous des exemples de journaux générés lors d’un exempl
 ```
 
 +++
+
