@@ -6,9 +6,9 @@ exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
 hide: true
-source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
+source-git-commit: 8088583ea5c970de4e71e771e34b9125fac3047e
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1507'
 ht-degree: 86%
 
 ---
@@ -42,8 +42,8 @@ L’environnement d’affichage AEM Assets offre des fonctionnalités de créati
 
 **Pour créer un rapport, procédez come suit :**
 
-1. Accédez à **Reports** et cliquez sur **Créer un rapport** (dans le coin supérieur droit). La boîte de dialogue **Créer un rapport** affiche les champs suivants :
-   ![create-report](/help/assets/assets/executed-reports1.svg)
+1. Accédez à **Reports** et cliquez sur **Créer un rapport** (dans le coin supérieur droit). La boîte de dialogue **créer un rapport** s’affiche.
+
 
    **Dans l’onglet Configuration :**
 
@@ -142,7 +142,7 @@ Obtenez des informations de diffusion pour les ressources diffusées avec Dynami
 <!--
 >[!NOTE]
 > 
->To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 -->
 
 ### Conditions préalables {#prereqs-dynamic-media-delivery-reports}
@@ -204,7 +204,6 @@ Pour planifier un rapport, procédez comme suit :
    1. **Description :** ajoutez une description facultative au rapport.
    1. **Sélectionner le chemin d’accès au dossier :** sélectionnez un chemin d’accès au dossier afin de générer un rapport pour les ressources qui seront chargées ou téléchargées à partir de ce dossier spécifique à l’avenir.
    1. Bouton **Planifier un rapport** : bouton (bascule) permettant de planifier le rapport à une date ultérieure ou de le rendre récurrent.
-      ![Planification d’un rapport](/help/assets/assets/schedule-reports1.svg)
 
    1. **Choisir la fréquence :** spécifiez l’intervalle de génération du rapport (par exemple, quotidien, hebdomadaire, mensuel, annuel ou ponctuel) et définissez la date et l’heure d’exécution du rapport ainsi que la date de fin de la périodicité. Pour un rapport ponctuel, sélectionnez la période du rapport sur le type d’activité sélectionné dans l’environnement AEM. Par exemple, si vous avez besoin d’un rapport sur les ressources téléchargées entre le 10 et le 29 (dates futures) d’un mois spécifique, sélectionnez ces dates dans le champ **Sélectionner l’intervalle de dates**.
 
@@ -243,10 +242,10 @@ La vue Assets vous permet d’afficher des données en temps réel pour votre en
 Cliquez sur les **[!UICONTROL Insights]** disponibles dans le volet de navigation de gauche pour afficher les graphiques générés automatiquement suivants :
 
 * **Téléchargements** : nombre de ressources téléchargées à partir de l’environnement d’affichage Assets au cours des 30 derniers jours ou 12 derniers mois, représentées à l’aide d’un graphique linéaire.
-  ![informations-téléchargements](/help/assets/assets/insights-downloads2341.svg)
+
 
 * **Chargements** : nombre de ressources chargées dans l’environnement d’affichage Assets au cours des 30 derniers jours ou 12 derniers mois, représentées à l’aide d’un graphique linéaire.
-  ![insights-uploads](/help/assets/assets/insights-uplods2.svg)
+
 
 <!--
 * **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.
@@ -259,12 +258,11 @@ Cliquez sur les **[!UICONTROL Insights]** disponibles dans le volet de navigatio
 <!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 
 * **Principales recherches** : affichez les termes recherchés les plus fréquemment, ainsi que le nombre de fois où ces termes ont été recherchés dans l’environnement de la vue Assets au cours des 30 derniers jours ou 12 derniers mois, représentés sous forme de tableau.
-  ![insights-uploads](/help/assets/assets/insights-top-search.svg)
+
   <!--
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)
    -->
 * **Nombre de ressources par taille :** segmente le nombre total de ressources dans votre environnement de la vue Assets en différentes plages de tailles, en soulignant le nombre et le pourcentage de ressources dans chaque plage de tailles, représentés par un graphique en anneau.
-  ![insights-assets-count-by-size](/help/assets/assets/insights-assets-count-by-size.svg)
+
 * **Nombre de ressources par type de ressource :** segmente le nombre total de ressources dans votre environnement d’affichage Assets en mettant en surbrillance le nombre et le pourcentage de ressources en fonction de leurs types de fichiers, représentés par un graphique en anneau.
-  ![insights-assets-count-by-size](/help/assets/assets/insights-assest-count-by-asset-type1.svg)

@@ -5,10 +5,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Asse
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing
 role: User
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 8088583ea5c970de4e71e771e34b9125fac3047e
 workflow-type: tm+mt
-source-wordcount: '1059'
-ht-degree: 0%
+source-wordcount: '1054'
+ht-degree: 1%
 
 ---
 
@@ -38,13 +38,13 @@ Vous pouvez publier des ressources dans [!DNL AEM and Dynamic Media] lors du cha
 * **[!UICONTROL Immédiat] :** lorsque des ressources sont chargées dans ce dossier, le système les ingère dans Experience Manager et fournit instantanément l’URL/le code intégré.
 * **[!UICONTROL Publication sélective] :** les Assets sont publiées selon votre choix [!DNL Experience Manager] ou à [!DNL Dynamic Media] pour diffusion dans le domaine public.
 
-### [!UICONTROL &#x200B; Mode de publication Dynamic Media &#x200B;] défini sur [!UICONTROL Lors de l’activation] {#dynamic-media-publish-mode-set-to-upon-activation}
+### [!UICONTROL  Mode de publication Dynamic Media ] défini sur [!UICONTROL Lors de l’activation] {#dynamic-media-publish-mode-set-to-upon-activation}
 
 Pour publier des ressources lors de leur chargement dans un dossier dont le [!DNL Dynamic Media Publish Mode] est défini sur **[!UICONTROL Lors de l’activation]** :
 
 1. Cliquez sur **[!UICONTROL Ajouter Assets]** > **[!UICONTROL Parcourir]** > **[!UICONTROL Parcourir les fichiers]** pour accéder au dossier approprié pour charger des ressources. La section **[!UICONTROL Options de publication]** affiche le **[!UICONTROL mode de publication DM]** sous la forme **[!UICONTROL Lors de l’activation]**.
 
-   ![Charger l’image lors de l’activation](/help/assets/assets/upload-uactivation.svg)
+   ![Charger l’image lors de l’activation](/help/assets/assets/upload-activation.png)
 
 1. Sélectionnez **[!UICONTROL Publier vers AEM et Dynamic Media]**, puis cliquez sur **[!UICONTROL Télécharger]**. Les ressources sont publiées en même temps sur [!DNL AEM and Dynamic Media]. Pour afficher le statut de publication mis à jour de ces ressources, voir [Vérification du statut de publication](#check-publish-status).
 
@@ -54,7 +54,7 @@ Pour publier des ressources lors de leur chargement dans un dossier dont le [!UI
 
 1. Cliquez sur **[!UICONTROL Ajouter Assets]** > **[!UICONTROL Parcourir]** > **[!UICONTROL Parcourir les fichiers]** pour accéder au dossier approprié pour charger des ressources. La section **[!UICONTROL Options de publication]** affiche le **[!UICONTROL mode de publication DM]** en tant que **[!UICONTROL Immédiat]**.
 
-   ![image de chargement de fichier - mode immédiat](/help/assets/assets/resized-image-pdf-svg-new.svg)
+   ![image de chargement de fichier - mode immédiat](/help/assets/assets/dynaimc-media-publish-upon-activation.png)
 
    Étant donné que le [!UICONTROL mode de publication Dynamic Media] est **[!UICONTROL immédiat]**, les ressources chargées sont automatiquement publiées sur [!DNL Dynamic Media] lorsque vous cliquez sur **[!UICONTROL Télécharger]**.
 
@@ -64,13 +64,13 @@ Pour publier des ressources lors de leur chargement dans un dossier dont le [!UI
 
    Pour afficher le statut de publication mis à jour de ces ressources, voir [Vérification du statut de publication](#check-publish-status).
 
-### [!UICONTROL &#x200B; Mode de publication Dynamic Media &#x200B;] défini sur [!UICONTROL &#x200B; Publication sélective &#x200B;] {#dynamic-media-publish-mode-set-to-selective-publish}
+### [!UICONTROL  Mode de publication Dynamic Media ] défini sur [!UICONTROL  Publication sélective ] {#dynamic-media-publish-mode-set-to-selective-publish}
 
 Pour publier des ressources lors du chargement dans un dossier avec le [!UICONTROL mode de publication Dynamic Media] défini sur **[!UICONTROL Publication sélective]** :
 
 1. Cliquez sur **[!UICONTROL Ajouter Assets]** > **[!UICONTROL Parcourir]** > **[!UICONTROL Parcourir les fichiers]** pour accéder au dossier approprié pour charger des ressources. La section **[!UICONTROL Options de publication]** affiche le **[!UICONTROL mode de publication DM]** en tant que **[!UICONTROL publication sélective]**.
 
-![mode de publication sélective des images de chargement](/help/assets/assets/upload-selective.svg)
+   ![mode de publication sélective des images de chargement](/help/assets/assets/upload-selective.png)
 
 1. Sélectionnez **[!UICONTROL Publier vers AEM]**, **[!UICONTROL Publier vers Dynamic Media]**, ou les deux selon vos besoins, puis cliquez sur **Télécharger**.
 
@@ -82,15 +82,11 @@ Pour publier des ressources lors du chargement dans un dossier avec le [!UICONTR
 
 Pour publier des ressources à l’aide de la page de navigation des ressources :
 
-1. Cliquez sur **[!UICONTROL Assets]** dans la section **[!UICONTROL Gestion d’Assets]** disponible dans le volet de gauche.
+1. Cliquez sur **** dans la section **[!UICONTROL Gestion d’Assets]** disponible dans le volet de gauche.
 1. Sélectionnez une ou plusieurs ressources ou un ou plusieurs dossiers à publier, puis cliquez sur **[!UICONTROL Publier]**.
-1. Sélectionnez **[!UICONTROL AEM]** puis cliquez sur **[!UICONTROL Publier]** pour publier des ressources dans [!DNL AEM and Dynamic Media].
-
-   ![navigation des ressources](/help/assets/assets/browse-uactivation-immediate.svg)
+1. Sélectionnez **** puis cliquez sur **[!UICONTROL Publier]** pour publier des ressources dans [!DNL AEM and Dynamic Media].
 
    Vous ne pouvez pas publier un dossier dont le mode de publication [!DNL Dynamic Media] est défini sur **[!UICONTROL Publication sélective]**. Tous les autres dossiers ou ressources sélectionnés sont publiés sur [!DNL AEM and Dynamic Media] après avoir sélectionné [!DNL AEM].
-
-   ![navigation des ressources](/help/assets/assets/browse-selective123.svg)
 
 ## Publication de ressources à l’aide de la page des résultats de recherche {#publish-assets-using-search-results-page}
 
@@ -99,8 +95,6 @@ Pour publier des ressources à l’aide de la page des résultats de recherche d
 1. Spécifiez les critères dans la barre de recherche et cliquez sur l’icône de recherche pour afficher les résultats.
 1. Sélectionnez les ressources à publier, puis cliquez sur **[!UICONTROL Publier].**
 1. Sélectionnez [!DNL AEM, Dynamic Media] ou les deux selon vos besoins et cliquez sur **[!UICONTROL Publier]**.
-
-   ![rechercher une image](/help/assets/assets/search-mode.svg)
 
    L’option de publication sur [!DNL Dynamic Media] dans la page des résultats de la recherche dépend du Mode de publication [!DNL Dynamic Media] défini sur le dossier dans lequel la ressource est disponible dans le référentiel.
 
@@ -112,10 +106,10 @@ Pour publier des ressources à l’aide de la page des résultats de recherche d
 
 Pour vérifier l’état de publication d’une ressource ou d’un dossier :
 
-1. Cliquez sur **[!UICONTROL Assets]** dans la section **[!UICONTROL Gestion d’Assets]** disponible dans le volet de gauche.
-1. Basculez vers la vue Liste à l’aide du sélecteur de vues. Vous pouvez afficher les propriétés de la ressource, telles que [!UICONTROL Publication AEM], [!UICONTROL Publication Dynamic Media], [!UICONTROL titre], [!UICONTROL taille], [!UICONTROL dimensions], etc.
+1. Cliquez sur **** dans la section **[!UICONTROL Gestion d’Assets]** disponible dans le volet de gauche.
+1. Basculez vers la vue Liste à l’aide du sélecteur de vues. Vous pouvez afficher les propriétés de la ressource, telles que [!UICONTROL Publication ], [!UICONTROL Publication Dynamic Media], [!UICONTROL titre], [!UICONTROL taille], [!UICONTROL dimensions], etc.
 
-   Si une ressource ou un dossier n’est pas publié, le statut des colonnes **[!UICONTROL Publication AEM]** et **[!UICONTROL Publication Dynamic Media]** s’affiche sous la forme **[!UICONTROL N/A]**.
+   Si une ressource ou un dossier n’est pas publié, le statut des colonnes **[!UICONTROL Publication]** et **[!UICONTROL Publication Dynamic Media]** s’affiche sous la forme **[!UICONTROL N/A]**.
 
    ![check publish status1](/help/assets/assets/check-publish-status1.png)
 
