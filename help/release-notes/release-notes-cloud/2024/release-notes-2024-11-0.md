@@ -87,7 +87,7 @@ La vue Assets vous permet désormais d’accéder à Dynamic Media et à des ren
 
 ### Nouvelles fonctionnalités d’AEM Forms {#forms-new-features}
 
-* **[Assistant AEM Forms AI &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/brand-experience/experience-production/form-creation)** : L’IA générative pour Forms adaptatif apporte un tout nouveau niveau de puissance et de facilité à vos processus de développement de formulaires. Elle vous permet de créer de meilleurs formulaires plus rapidement que jamais auparavant.
+* **[Assistant AEM Forms AI &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/ai-in-aem/agents/brand-experience/experience-production/form-creation)** : L’IA générative pour Forms adaptatif apporte un tout nouveau niveau de puissance et de facilité à vos processus de développement de formulaires. Elle vous permet de créer de meilleurs formulaires plus rapidement que jamais auparavant.
 
   ![Assistant IA générative, formulaires adaptatifs](/help/forms/assets/generative-ai-assistant.png)
 
