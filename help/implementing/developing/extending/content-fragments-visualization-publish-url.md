@@ -26,7 +26,7 @@ Cette URL renvoie un *document HTML autonome* (y compris une structure et un CSS
 >
 >Les fragments de contenu visuel sont actuellement en disponibilité limitée.
 >
->Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [](mailto:experience-production-agent@adobe.com).
+>Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
 
 ## Techniques d’intégration - Aperçu {#embedding-techniques-overview}
 
