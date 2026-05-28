@@ -14,7 +14,7 @@ ht-degree: 3%
 # Heures calmes et Mettre à jour les périodes libres {#quiet-hours-update-free-periods}
 
 >[!NOTE]
->Vous ne pouvez utiliser les fonctions Heures calmes et Mettre à jour les périodes libres qu’après avoir intégré les [ Mises à jour de maintenance automatiques ](/help/implementing/deploying/aem-version-updates.md).
+>Vous ne pouvez utiliser les fonctions Heures calmes et Mettre à jour les périodes libres qu’après avoir intégré les [&#x200B; Mises à jour de maintenance automatiques &#x200B;](/help/implementing/deploying/aem-version-updates.md).
 
 Les [mises à jour de maintenance automatique](/help/implementing/deploying/aem-version-updates.md) d’AEM as a Cloud Service garantissent la sécurité de vos instances et les mettent à jour avec les dernières versions de maintenance. Cela dit, dans certains cas (comme les événements de mise en production), vous devrez peut-être « protéger » ces heures de travail critiques contre d’éventuelles perturbations. AEM as a Cloud Service propose des options permettant de sélectionner des périodes qui interrompent les mises à jour de maintenance automatique de vos programmes. Cela n’empêche pas toutes les activités d’infrastructure. Des modifications de plateforme de niveau inférieur en dehors des mises à jour de maintenance peuvent toujours avoir lieu (par exemple, IMS).
 
