@@ -4,9 +4,9 @@ description: Découvrez les différentes options permettant d’étendre les fon
 feature: Developing
 role: Admin, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: abbc43adbe64149098c049810482d37f76034eab
+source-git-commit: b1de659aeb1e1d2d6d5428ec6434a2757dfe7d2d
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '688'
 ht-degree: 92%
 
 ---
@@ -24,7 +24,6 @@ Découvrez les différentes options permettant d’étendre les fonctionnalités
 En tant que service Adobe Experience Cloud, l’interface utilisateur de l’éditeur universel peut être étendue à l’aide de l’App Builder et d’Experience Manager. Adobe propose de nombreuses extensions prêtes à l’emploi disponibles via [Extension Manager](https://experience.adobe.com/aem/extension-manager) que vous pouvez utiliser pour votre projet.
 
 * **[Extension de la gestion multi-sites AEM (MSM)](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)** : interrompez ou rétablissez l’héritage au niveau du composant.
-* **[Extension des propriétés de page AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)** : accédez à la fenêtre des propriétés de page de la page dans l’éditeur universel.
 * **[Extension de l’administration de site AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console)** : ouvrez la console Sites à l’emplacement de la page dans l’éditeur universel.
 * **[Extension de verrouillage de page AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages)** : affichez et modifiez le statut de verrouillage de page à partir de l’éditeur universel.
 * **[Extension des workflows AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#workflows)** : lancez des workflows sur la page et son contenu depuis l’éditeur universel.
@@ -50,7 +49,7 @@ Pour explorer les possibilités de création de vos propres extensions, consulte
 
 >[!TIP]
 >
->Si vous préférez apprendre par l’exemple, consultez le tutoriel sur l’extensibilité de l’interface utilisateur d’AEM [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Bien qu’il se concentre sur l’extension de la console Fragments de contenu, les concepts d’implémentation d’une extension d’interface utilisateur dans l’éditeur universel restent les mêmes.
+>Si vous préférez apprendre par l’exemple, consultez le tutoriel sur l’extensibilité de l’interface utilisateur d’AEM [](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Bien qu’il se concentre sur l’extension de la console Fragments de contenu, les concepts d’implémentation d’une extension d’interface utilisateur dans l’éditeur universel restent les mêmes.
 
 [En utilisant Extension Manager dans AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/), vous pouvez activer ou désactiver vos extensions par instance, accéder aux extensions propriétaires d’Adobe, y compris celles de l’éditeur universel, et bien plus encore.
 
