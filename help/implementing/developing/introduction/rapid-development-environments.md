@@ -4,7 +4,7 @@ description: Découvrez comment utiliser les environnements de développement ra
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Developer
-source-git-commit: 099240530dd6cf80fc710fe83110f9876b6c1d49
+source-git-commit: b60f1a7416fda1844dc43e75fcd14bb90230cc51
 workflow-type: tm+mt
 source-wordcount: '5979'
 ht-degree: 22%
@@ -30,7 +30,7 @@ Une fois les modifications testées dans un RDE, elles peuvent être déployées
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-Vous pouvez visionner d’autres vidéos présentant [comment le configurer](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup), [comment l’utiliser](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use), et montrant [le cycle de vie du développement](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle) à l’aide du RDE.
+Vous pouvez visionner d’autres vidéos présentant [comment le configurer](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup), [comment l’utiliser](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use), et montrant [le cycle de vie du développement](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle) à l’aide du RDE.
 
 ## Présentation {#introduction}
 
@@ -117,6 +117,7 @@ Après avoir ajouté un RDE pour votre programme à l’aide de Cloud Manager, 
    ```
 
 >[!NOTE]
+>
 > La commande login avec l&#39;option `--no-open` génère une URL dans le terminal au lieu d&#39;ouvrir votre navigateur par défaut. Vous pouvez le copier et l’ouvrir dans la fenêtre **incognito** de votre navigateur. Cette fonctionnalité garantit que la session en cours dans la fenêtre principale du navigateur n’est pas affectée, ce qui vous permet de vous connecter avec le compte et l’organisation spécifiques requis pour votre tâche.
 
 La première commande crée une configuration de contexte de connexion, appelée `mycontext`, dans votre fichier de configuration de `.aio` local (le fichier est créé si nécessaire). La deuxième commande définit le `mycontext` de contexte sur le contexte « actif », c’est-à-dire la valeur par défaut.
@@ -184,7 +185,7 @@ Dans les environnements où aucun utilisateur ne peut exécuter de manière inte
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * Vous pouvez rechercher votre propre ID d’organisation à l’aide de la méthode décrite dans la section [Afficher votre ID d’organisation](https://experienceleague.adobe.com/fr/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
+   * Vous pouvez rechercher votre propre ID d’organisation à l’aide de la méthode décrite dans la section [Afficher votre ID d’organisation](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
 
 1. Configurez ensuite votre ID de programme :
 
@@ -198,9 +199,9 @@ Dans les environnements où aucun utilisateur ne peut exécuter de manière inte
 
    `aio login`
 
-   Ces étapes nécessitent que vous soyez membre du profil de produit Cloud Manager **Développeur - Cloud Service**. Voir [&#x200B; Affecter des membres de l’équipe à des profils de produit Cloud Manager - Attribuer le profil de produit Développeur &#x200B;](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) pour plus d’informations.
+   Ces étapes nécessitent que vous soyez membre du profil de produit Cloud Manager **Développeur - Cloud Service**. Voir [ Affecter des membres de l’équipe à des profils de produit Cloud Manager - Attribuer le profil de produit Développeur ](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) pour plus d’informations.
 
-Pour plus d’informations et des démonstrations, regardez le tutoriel vidéo [comment configurer un RDE (06:24)](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup).
+Pour plus d’informations et des démonstrations, regardez le tutoriel vidéo [comment configurer un RDE (06:24)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup).
 </details>
 
 ## Utilisation du RDE lors du développement d’une nouvelle fonctionnalité {#use-rde-while-developing-a-new-feature}
@@ -211,10 +212,9 @@ Pour développer une nouvelle fonctionnalité, Adobe recommande le workflow suiv
 
 * Réinitialisez le RDE s’il a été utilisé par une autre fonctionnalité et si vous souhaitez le [réinitialiser à un état par défaut](#reset-the-rde). <!-- Alexandru: hiding for now, do not delete This can be done by way of [Cloud Manager](#reset-the-rde-in-cloud-manager) or by way of the [command line](#reset-the-rde-using-the-command-line). -->La réinitialisation prend quelques minutes et supprime tout le contenu et le code existants. Vous pouvez utiliser la commande de statut RDE pour confirmer que le RDE est prêt. Le RDE revient avec la version la plus récente d’AEM.
 
-  >[!IMPORTANT]
-  >
-  >Si vos environnements d’évaluation et de production ne reçoivent pas les mises à jour de version automatique d’AEM et se trouvent derrière la dernière version, le RDE peut exécuter une autre version d’AEM. Par conséquent, le comportement du code dans le RDE peut ne pas correspondre à son fonctionnement dans l’évaluation et la production. Dans ce cas, il est important d’effectuer des tests approfondis du code lors de l’évaluation avant de le déployer en production.
-
+>[!IMPORTANT]
+>
+>Si vos environnements d’évaluation et de production ne reçoivent pas les mises à jour de version automatique d’AEM et se trouvent derrière la dernière version, le RDE peut exécuter une autre version d’AEM. Par conséquent, le comportement du code dans le RDE peut ne pas correspondre à son fonctionnement dans l’évaluation et la production. Dans ce cas, il est important d’effectuer des tests approfondis du code lors de l’évaluation avant de le déployer en production.
 
 * À l’aide de l’interface de ligne de commande RDE, synchronisez le code local avec le RDE. Vous pouvez installer différents types de fichiers, notamment :
 
@@ -224,7 +224,7 @@ Pour développer une nouvelle fonctionnalité, Adobe recommande le workflow suiv
    * Fichiers de contenu
    * Fichiers ZIP contenant des configurations Apache/Dispatcher
 
-  Il est également possible de référencer un module de contenu distant. Voir [&#x200B; Outils de ligne de commande RDE](/help/implementing/developing/introduction/rapid-development-environments.md#rde-command-line-tools-commands) pour plus d’informations. Vous pouvez utiliser la commande Statut pour vérifier que le déploiement a réussi. Vous pouvez éventuellement utiliser le gestionnaire de modules pour installer des modules de contenu.
+  Il est également possible de référencer un module de contenu distant. Voir [ Outils de ligne de commande RDE](/help/implementing/developing/introduction/rapid-development-environments.md#rde-command-line-tools-commands) pour plus d’informations. Vous pouvez utiliser la commande Statut pour vérifier que le déploiement a réussi. Vous pouvez éventuellement utiliser le gestionnaire de modules pour installer des modules de contenu.
 
 * Testez le code dans l’outil RDE. Les URL de création et de publication sont disponibles dans Cloud Manager.
 
@@ -278,7 +278,7 @@ Cependant, avec une coordination étroite, il est possible pour plusieurs dével
 
   `aio aem rde <command> --organizationId=<value> --programId=<value> --environmentId=<value>`
 
-  Nécessite l’exécution d’une ```aio login```.
+  Nécessite l’exécution d’une `aio login`.
 
 ### Déployer sur l’outil RDE {#deploy-to-rde}
 
@@ -376,7 +376,7 @@ Déployez ensuite la configuration à l’aide de la commande suivante :
 
 >[!NOTE]
 >
->Le RDE prend en charge la configuration Dispatcher en « mode flexible », mais pas en « mode hérité ». Consultez la [documentation de &#x200B;](/help/implementing/dispatcher/disp-overview.md#validation-debug) pour plus d’informations sur ces deux modes. Vous pouvez également consulter la documentation relative à la [migration vers le mode flexible](/help/implementing/dispatcher/validation-debug.md#migrating), si vous ne l’avez pas déjà fait.
+>Le RDE prend en charge la configuration Dispatcher en « mode flexible », mais pas en « mode hérité ». Consultez la [documentation de ](/help/implementing/dispatcher/disp-overview.md#validation-debug) pour plus d’informations sur ces deux modes. Vous pouvez également consulter la documentation relative à la [migration vers le mode flexible](/help/implementing/dispatcher/validation-debug.md#migrating), si vous ne l’avez pas déjà fait.
 
 Un déploiement réussi génère une réponse qui ressemble à ce qui suit :
 
@@ -529,14 +529,14 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
 
-Pour plus d’informations et des démonstrations, consultez le tutoriel vidéo [utilisation des commandes RDE (10:01)](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use).
+Pour plus d’informations et des démonstrations, consultez le tutoriel vidéo [utilisation des commandes RDE (10:01)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use).
 
 
 ## Déploiement sur un RDE à partir de fournisseurs Git externes {#deploy-to-an-rde-from-external-git-providers}
 
 >[!NOTE]
 >
->Cette fonctionnalité est disponible via le programme Beta. Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à [&#128279;](mailto:cloudmanager_byog@adobe.com) à partir de l’adresse e-mail associée à votre Adobe ID. Veillez à inclure la plateforme Git à utiliser et indiquez si vous utilisez une structure de référentiel privée/publique ou d’entreprise.
+>Cette fonctionnalité est disponible via le programme Beta. Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à [](mailto:cloudmanager_byog@adobe.com) à partir de l’adresse e-mail associée à votre Adobe ID. Veillez à inclure la plateforme Git à utiliser et indiquez si vous utilisez une structure de référentiel privée/publique ou d’entreprise.
 
 Cloud Manager prend en charge le déploiement de code vers un RDE directement à partir de fournisseurs Git externes lors de l’utilisation de la configuration [Bring Your Own Git (BYOG)](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
@@ -562,10 +562,10 @@ Le déploiement des RDE à partir d’un référentiel Git externe nécessite le
    ![Message de validation de la qualité du code sur GitHub Enterprise](/help/implementing/developing/introduction/assets/rde-gitlab-code-quality-validation-message.png)
 
    Aspect sur GitLab :
-   ![&#x200B; Message de validation de la qualité du code sur GitLab](/help/implementing/developing/introduction/assets/rde-gitlab-code-quality-validation-message.png)
+   ![ Message de validation de la qualité du code sur GitLab](/help/implementing/developing/introduction/assets/rde-gitlab-code-quality-validation-message.png)
 
    Comment cela se présente-t-il sur Bitbucket :
-   ![&#x200B; Message de validation de la qualité du code sur Bitbucket &#x200B;](/help/implementing/developing/introduction/assets/rde-bitbucket-code-quality-validation-message.png)
+   ![ Message de validation de la qualité du code sur Bitbucket ](/help/implementing/developing/introduction/assets/rde-bitbucket-code-quality-validation-message.png)
 
 1. **Déclencher le déploiement à l’aide d’un commentaire.**
 
@@ -609,7 +609,7 @@ Le déploiement des RDE à partir d’un référentiel Git externe nécessite le
 
    Comment cela se présente-t-il sur Bitbucket :
 
-   ![&#x200B; Statut de déploiement de l’environnement sur Bitbucket &#x200B;](/help/implementing/developing/introduction/assets/rde-bitbucket-deployment-2.png)
+   ![ Statut de déploiement de l’environnement sur Bitbucket ](/help/implementing/developing/introduction/assets/rde-bitbucket-deployment-2.png)
 
 
 
@@ -650,7 +650,7 @@ La réinitialisation du RDE supprime tout le code personnalisé, les configurati
 
 Une réinitialisation définit le RDE sur la dernière version d’AEM disponible.
 
-Vous pouvez réinitialiser le RDE à l’aide de [&#128279;](#reset-the-rde-in-cloud-manager) ou de la [ligne de commande](#reset-the-rde-using-the-command-line). La réinitialisation prend quelques minutes et tout le contenu et le code existants sont supprimés du RDE.
+Vous pouvez réinitialiser le RDE à l’aide de [](#reset-the-rde-in-cloud-manager) ou de la [ligne de commande](#reset-the-rde-using-the-command-line). La réinitialisation prend quelques minutes et tout le contenu et le code existants sont supprimés du RDE.
 
 >[!NOTE]
 >
@@ -662,7 +662,7 @@ Vous pouvez réinitialiser le RDE et le rétablir à son état par défaut en ex
 
 `aio aem:rde:reset`
 
-Ce processus prend généralement quelques minutes et signale les ```Environment reset.``` en cas de réussite ou de ```Failed to reset the environment.``` d’erreurs. Pour une sortie structurée, consultez le chapitre sur ```--json``` sortie ci-dessous.
+Ce processus prend généralement quelques minutes et signale les `Environment reset.` en cas de réussite ou de `Failed to reset the environment.` d’erreurs. Pour une sortie structurée, consultez le chapitre sur `--json` sortie ci-dessous.
 
 Utilisez la commande [status](#check-the-status-of-the-rde) pour vérifier quand l’environnement est à nouveau prêt.
 
@@ -712,7 +712,7 @@ Pour plus d’informations sur la gestion de vos environnements à l’aide de C
 
 >[!NOTE]
 >
->Cette fonctionnalité est disponible dans Beta. Si vous souhaitez utiliser cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à [&#128279;](mailto:aemcs-rde-support@adobe.com) pour décrire votre cas d’utilisation.
+>Cette fonctionnalité est disponible dans Beta. Si vous souhaitez utiliser cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à [](mailto:aemcs-rde-support@adobe.com) pour décrire votre cas d’utilisation.
 
 Les RDE prennent en charge la prise d’un instantané de l’état actuel du code et du contenu, qui peut être restauré ultérieurement. Les instantanés sont utiles lors de la synchronisation du code qui peut devoir être rétabli, ou lors du passage d’une fonctionnalité à l’autre. Il est également possible de restaurer uniquement le contenu modifiable à partir d’un instantané en tant que point de départ connu pour les tests.
 
@@ -780,7 +780,7 @@ Pour annuler une suppression en attente et conserver un instantané, exécutez :
 
 ## Commandes qui prennent en charge la sortie JSON {#commands-that-support-json-output}
 
-La plupart des commandes prennent en charge l’indicateur de ```--json``` global qui supprime la sortie de console et renvoie un fichier json valide à traiter dans les scripts. Vous trouverez ci-dessous quelques commandes prises en charge, avec des exemples de sortie json.
+La plupart des commandes prennent en charge l’indicateur de `--json` global qui supprime la sortie de console et renvoie un fichier json valide à traiter dans les scripts. Vous trouverez ci-dessous quelques commandes prises en charge, avec des exemples de sortie json.
 
 ### Statut {#status}
 
@@ -1240,7 +1240,7 @@ Lors de leur création, les RDE sont définis sur la dernière version de Adobe 
 
 #### Erreurs concernant des autorisations insuffisantes {#errors-regarding-insufficient-permissions}
 
-Pour utiliser le plug-in RDE, vous devez être membre du profil de produit Cloud Manager **Développeur - Cloud Service**. Voir [&#x200B; Affecter des membres de l’équipe à des profils de produit Cloud Manager - Attribuer le profil de produit Développeur &#x200B;](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) pour plus d’informations.
+Pour utiliser le plug-in RDE, vous devez être membre du profil de produit Cloud Manager **Développeur - Cloud Service**. Voir [ Affecter des membres de l’équipe à des profils de produit Cloud Manager - Attribuer le profil de produit Développeur ](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) pour plus d’informations.
 
 Vous pouvez également vérifier que vous disposez de ce rôle de développeur si vous vous connectez à Developer Console à l’aide de la commande suivante :
 
