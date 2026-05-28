@@ -21,7 +21,7 @@ Pour les fragments de contenu de Adobe Experience Manager (AEM) as a Cloud Servi
 >
 >Les fragments de contenu sont une fonctionnalité de sites, mais sont stockés sous la forme **Ressources**.
 >
->Il existe deux éditeurs pour créer des fragments de contenu ; bien que la fonctionnalité de base soit la même, il existe quelques différences. Cette section couvre l’éditeur d’origine, accessible principalement à partir de la console ****.
+>Il existe deux éditeurs pour créer des fragments de contenu ; bien que la fonctionnalité de base soit la même, il existe quelques différences. Cette section couvre l’éditeur d’origine, accessible principalement à partir de la console **&#x200B;**.
 
 ## Ajout de contenu associé {#adding-associated-content}
 
@@ -48,7 +48,7 @@ Pour établir l’association, vous devez d’abord [ajouter vos ressources mult
 
 1. Confirmez (avec **Sélectionner**). La collection est répertoriée comme associée.
 
-   ![Association confirmée ](assets/cfm-assoc-content-03.png)
+   ![Association confirmée &#x200B;](assets/cfm-assoc-content-03.png)
 
 ## Modification du contenu associé {#editing-associated-content}
 
