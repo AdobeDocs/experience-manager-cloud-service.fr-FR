@@ -17,7 +17,7 @@ La solution **Migration du cloud** est un ensemble d’outils basé sur des agen
 
 La vidéo de démonstration suivante fournit une présentation rapide de bout en bout de la solution de migration vers le cloud AEM et est incluse à titre de référence.
 
->[!VIDEO](https://video.tv.adobe.com/v/3491438?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3491440?captions=fre_fr&learn=on)
 
 La solution se compose de deux composants :
 
