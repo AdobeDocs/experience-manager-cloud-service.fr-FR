@@ -40,7 +40,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the May 2026 Release Overview video for a summary of the features added in the 2026.5.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3491490/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3491492/?captions=fre_fr&quality=12)
 
 -->
 
@@ -156,7 +156,7 @@ Accélérez votre migration d’AEM 6.5 (ou version antérieure) vers AEM as a C
 
 En savoir plus sur [l’outil d’IA dédiée à l’IDE pour la migration vers le cloud](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md) et sur d’autres [le développement local avec les outils d’IA](/help/ai-in-aem/local-development-with-ai-tools.md) (compétences des agents et serveurs MCP locaux).
 
->[!VIDEO](https://video.tv.adobe.com/v/3491438/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3491440/?captions=fre_fr&quality=12)
 
 #### Modifications de l’affichage du statut de la file d’attente de réplication {#replication-queue-status-display}
 
