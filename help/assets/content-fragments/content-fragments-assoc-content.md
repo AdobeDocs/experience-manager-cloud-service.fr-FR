@@ -6,10 +6,10 @@ exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 96c3ac3494fb726b36d413703ed010ec84a3b3dd
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 53%
+source-wordcount: '297'
+ht-degree: 39%
 
 ---
 
@@ -21,7 +21,7 @@ Pour les fragments de contenu de Adobe Experience Manager (AEM) as a Cloud Servi
 >
 >Les fragments de contenu sont une fonctionnalité de sites, mais sont stockés sous la forme **Ressources**.
 >
->Il existe deux éditeurs pour créer des fragments de contenu ; bien que la fonctionnalité de base soit la même, il existe quelques différences. Cette section couvre l’éditeur d’origine, accessible principalement à partir de la console **Assets**.
+>Il existe deux éditeurs pour créer des fragments de contenu ; bien que la fonctionnalité de base soit la même, il existe quelques différences. Cette section couvre l’éditeur d’origine, accessible principalement à partir de la console ****.
 
 ## Ajout de contenu associé {#adding-associated-content}
 
@@ -29,13 +29,13 @@ Pour les fragments de contenu de Adobe Experience Manager (AEM) as a Cloud Servi
 >
 >Vous pouvez ajouter des [ressources visuelles (des images, par exemple)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page de plusieurs manières différentes.
 
-Pour effectuer l’association, vous devez d’abord [ajouter les ressources multimédias à une collection](/help/assets/manage-collections.md). Une fois l’ajout effectué, vous pouvez réaliser les étapes suivantes :
+Pour établir l’association, vous devez d’abord [ajouter vos ressources multimédias à une collection](/help/assets/manage-collections.md). Une fois cette opération terminée, vous pouvez :
 
 1. Ouvrez votre fragment et sélectionnez ensuite **Contenu associé** dans le panneau latéral.
 
    ![Contenu associé](assets/cfm-assoc-content-01.png)
 
-1. Selon que des collections ont déjà été associées ou non, sélectionnez l’une des options suivantes :
+1. Selon qu’une collection a déjà été associée ou non, sélectionnez l’une des options suivantes :
 
    * **Associer le contenu** : il s’agit de la première collection associée
    * **Associer la collection** : les collections associées sont déjà configurées
@@ -48,11 +48,11 @@ Pour effectuer l’association, vous devez d’abord [ajouter les ressources mul
 
 1. Confirmez (avec **Sélectionner**). La collection est répertoriée comme associée.
 
-   ![Association confirmée &#x200B;](assets/cfm-assoc-content-03.png)
+   ![Association confirmée ](assets/cfm-assoc-content-03.png)
 
 ## Modification du contenu associé {#editing-associated-content}
 
-Une fois que vous avez associé une collection, vous pouvez :
+Une fois que vous avez associé une collection, vous pouvez :
 
 * **Supprimer** l’association.
 * **Ajouter des ressources** à la collection.

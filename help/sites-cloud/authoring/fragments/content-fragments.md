@@ -6,7 +6,7 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 96c3ac3494fb726b36d413703ed010ec84a3b3dd
 workflow-type: tm+mt
 source-wordcount: '1327'
 ht-degree: 84%
@@ -131,7 +131,7 @@ Vous pouvez ainsi ajouter du contenu supplémentaire [intermédiaire](/help/asse
 Pour le contenu intermédiaire, vous pouvez :
 
 * Ajouter des composants à partir de l’[explorateur de composants](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
-* Ajouter des ressources à partir du navigateur [&#128279;](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
+* Ajouter des ressources à partir du navigateur [](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
 * Utiliser du [contenu associé](#using-associated-content) comme source de contenu intermédiaire.
 
 >[!CAUTION]
@@ -180,7 +180,7 @@ Dans cet onglet, vous pouvez faire glisser les ressources vers l’emplacement s
 
 Si des ressources (des images, par exemple) ont été insérées dans le fragment proprement dit (en tant que [fragments de médias mixtes](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)), les options permettant de les modifier dans l’éditeur de page sont alors limitées.
 
-Dans le cas d’une image, par exemple, vous pouvez effectuer les opérations suivantes :
+Par exemple, pour une image, vous pouvez :
 
 * Recadrer, faire pivoter ou retourner l’image.
 * Ajouter un titre ou un texte secondaire.
