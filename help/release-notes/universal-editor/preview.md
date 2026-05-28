@@ -4,7 +4,7 @@ description: Voici les notes de mise à jour de la version préliminaire de l’
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: d6e62f6991eaf1f52ae6414a62af812d7965f25a
+source-git-commit: 4d759c3bde24d0dce13b36f645ab520ac2e3b993
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 0%
@@ -29,3 +29,4 @@ Ces notes de mise à jour **aperçu** sont fournies à titre indicatif pour que 
 ## Modifications à venir {#upcoming-improvements}
 
 * Correction d’un problème en raison duquel la modification du texte sélectionné de *En-tête* en *Code* dans l’éditeur de texte enrichi pouvait rétablir la mise en forme sur *Paragraphe* au lieu de conserver le style de code sélectionné.
+

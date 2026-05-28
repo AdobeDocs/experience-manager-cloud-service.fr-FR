@@ -4,7 +4,7 @@ description: Voici les notes de mise à jour de la version 2026.05.28 de l’éd
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 90bc340948b55150166d5a09b65c41425e5dbd01
+source-git-commit: ca7dd07b150114374f30318d22e141bb8d6a4c0e
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 14%
