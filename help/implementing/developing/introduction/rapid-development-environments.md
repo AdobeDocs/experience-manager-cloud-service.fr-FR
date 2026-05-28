@@ -4,7 +4,7 @@ description: Découvrez comment utiliser les environnements de développement ra
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Developer
-source-git-commit: 1a920bd30f80dd9831c96a4ec100e097ca0bfb7b
+source-git-commit: 099240530dd6cf80fc710fe83110f9876b6c1d49
 workflow-type: tm+mt
 source-wordcount: '5979'
 ht-degree: 22%
@@ -24,12 +24,13 @@ Une fois les modifications testées dans un RDE, elles peuvent être déployées
 > Les environnements de développement rapide doivent se limiter au développement, à l’analyse des erreurs et aux tests fonctionnels. Ils ne sont pas conçus pour traiter des charges de travail élevées ou de grandes quantités de contenu.
 
 >[!NOTE]
+>
 > Contactez les développeurs et développeuses du RDE sur Adobe [canal Discord](https://discord.com/channels/1131492224371277874/1245304281184079872). N’hésitez pas à poser des questions ou à donner votre avis sur les sujets liés au RDE.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-Vous pouvez visionner d’autres vidéos présentant [comment le configurer](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup), [comment l’utiliser](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use), et montrant [le cycle de vie du développement](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle) à l’aide du RDE.
+Vous pouvez visionner d’autres vidéos présentant [comment le configurer](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup), [comment l’utiliser](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use), et montrant [le cycle de vie du développement](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle) à l’aide du RDE.
 
 ## Présentation {#introduction}
 
@@ -85,7 +86,7 @@ Après avoir ajouté un RDE pour votre programme à l’aide de Cloud Manager, 
 
 >[!IMPORTANT]
 >
->Assurez-vous que vous avez installé la version 20 de [Node et NPM](https://nodejs.org/en/download/) pour que l’interface de ligne de commande d’Adobe I/O (AIO) et les modules externes connexes fonctionnent correctement.
+> Assurez-vous que vous avez installé la version 20 de [Node et NPM](https://nodejs.org/en/download/) pour que l’interface de ligne de commande d’Adobe I/O (AIO) et les modules externes connexes fonctionnent correctement.
 
 
 1. Installez les outils de l’interface de ligne de commande AIO conformément à cette [procédure](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/tools/cli-install).
@@ -115,15 +116,15 @@ Après avoir ajouté un RDE pour votre programme à l’aide de Cloud Manager, 
    aio login --no-open
    ```
 
-   >[!NOTE]
-   > La commande login avec l&#39;option `--no-open` génère une URL dans le terminal au lieu d&#39;ouvrir votre navigateur par défaut. Vous pouvez le copier et l’ouvrir dans la fenêtre **incognito** de votre navigateur. Cette fonctionnalité garantit que la session en cours dans la fenêtre principale du navigateur n’est pas affectée, ce qui vous permet de vous connecter avec le compte et l’organisation spécifiques requis pour votre tâche.
+>[!NOTE]
+> La commande login avec l&#39;option `--no-open` génère une URL dans le terminal au lieu d&#39;ouvrir votre navigateur par défaut. Vous pouvez le copier et l’ouvrir dans la fenêtre **incognito** de votre navigateur. Cette fonctionnalité garantit que la session en cours dans la fenêtre principale du navigateur n’est pas affectée, ce qui vous permet de vous connecter avec le compte et l’organisation spécifiques requis pour votre tâche.
 
-   La première commande crée une configuration de contexte de connexion, appelée `mycontext`, dans votre fichier de configuration de `.aio` local (le fichier est créé si nécessaire). La deuxième commande définit le `mycontext` de contexte sur le contexte « actif », c’est-à-dire la valeur par défaut.
+La première commande crée une configuration de contexte de connexion, appelée `mycontext`, dans votre fichier de configuration de `.aio` local (le fichier est créé si nécessaire). La deuxième commande définit le `mycontext` de contexte sur le contexte « actif », c’est-à-dire la valeur par défaut.
 
-   Une fois cette configuration en place, la commande login stocke automatiquement les jetons de connexion dans le `mycontext` contextuel, le maintenant ainsi en local.
+Une fois cette configuration en place, la commande login stocke automatiquement les jetons de connexion dans le `mycontext` contextuel, le maintenant ainsi en local.
 
-   Plusieurs contextes peuvent être gérés en conservant les configurations locales dans plusieurs dossiers. Il est également possible de configurer plusieurs contextes dans un seul fichier de configuration et de basculer entre eux en modifiant le contexte « actuel ».
-   </details>
+Plusieurs contextes peuvent être gérés en conservant les configurations locales dans plusieurs dossiers. Il est également possible de configurer plusieurs contextes dans un seul fichier de configuration et de basculer entre eux en modifiant le contexte « actuel ».
+</details>
 
 1. Configurez le plug-in RDE pour utiliser votre organisation, votre programme et votre environnement. La commande de configuration ci-dessous fournit de manière interactive à l’utilisateur une liste des programmes de son organisation et affiche les environnements RDE de ce programme parmi lesquels choisir.
 
@@ -183,7 +184,7 @@ Dans les environnements où aucun utilisateur ne peut exécuter de manière inte
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * Vous pouvez rechercher votre propre ID d’organisation à l’aide de la méthode décrite dans la section [Afficher votre ID d’organisation](https://experienceleague.adobe.com/fr/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
+   * Vous pouvez rechercher votre propre ID d’organisation à l’aide de la méthode décrite dans la section [Afficher votre ID d’organisation](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
 
 1. Configurez ensuite votre ID de programme :
 
@@ -197,9 +198,9 @@ Dans les environnements où aucun utilisateur ne peut exécuter de manière inte
 
    `aio login`
 
-   Ces étapes nécessitent que vous soyez membre du profil de produit Cloud Manager **Développeur - Cloud Service**. Voir [&#x200B; Affecter des membres de l’équipe à des profils de produit Cloud Manager - Attribuer le profil de produit Développeur &#x200B;](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) pour plus d’informations.
+   Ces étapes nécessitent que vous soyez membre du profil de produit Cloud Manager **Développeur - Cloud Service**. Voir [ Affecter des membres de l’équipe à des profils de produit Cloud Manager - Attribuer le profil de produit Développeur ](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) pour plus d’informations.
 
-Pour plus d’informations et des démonstrations, regardez le tutoriel vidéo [comment configurer un RDE (06:24)](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup).
+Pour plus d’informations et des démonstrations, regardez le tutoriel vidéo [comment configurer un RDE (06:24)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup).
 </details>
 
 ## Utilisation du RDE lors du développement d’une nouvelle fonctionnalité {#use-rde-while-developing-a-new-feature}
@@ -223,7 +224,7 @@ Pour développer une nouvelle fonctionnalité, Adobe recommande le workflow suiv
    * Fichiers de contenu
    * Fichiers ZIP contenant des configurations Apache/Dispatcher
 
-  Il est également possible de référencer un module de contenu distant. Voir [&#x200B; Outils de ligne de commande RDE](/help/implementing/developing/introduction/rapid-development-environments.md#rde-command-line-tools-commands) pour plus d’informations. Vous pouvez utiliser la commande Statut pour vérifier que le déploiement a réussi. Vous pouvez éventuellement utiliser le gestionnaire de modules pour installer des modules de contenu.
+  Il est également possible de référencer un module de contenu distant. Voir [ Outils de ligne de commande RDE](/help/implementing/developing/introduction/rapid-development-environments.md#rde-command-line-tools-commands) pour plus d’informations. Vous pouvez utiliser la commande Statut pour vérifier que le déploiement a réussi. Vous pouvez éventuellement utiliser le gestionnaire de modules pour installer des modules de contenu.
 
 * Testez le code dans l’outil RDE. Les URL de création et de publication sont disponibles dans Cloud Manager.
 
@@ -375,7 +376,7 @@ Déployez ensuite la configuration à l’aide de la commande suivante :
 
 >[!NOTE]
 >
->Le RDE prend en charge la configuration Dispatcher en « mode flexible », mais pas en « mode hérité ». Consultez la [documentation de &#x200B;](/help/implementing/dispatcher/disp-overview.md#validation-debug) pour plus d’informations sur ces deux modes. Vous pouvez également consulter la documentation relative à la [migration vers le mode flexible](/help/implementing/dispatcher/validation-debug.md#migrating), si vous ne l’avez pas déjà fait.
+>Le RDE prend en charge la configuration Dispatcher en « mode flexible », mais pas en « mode hérité ». Consultez la [documentation de ](/help/implementing/dispatcher/disp-overview.md#validation-debug) pour plus d’informations sur ces deux modes. Vous pouvez également consulter la documentation relative à la [migration vers le mode flexible](/help/implementing/dispatcher/validation-debug.md#migrating), si vous ne l’avez pas déjà fait.
 
 Un déploiement réussi génère une réponse qui ressemble à ce qui suit :
 
@@ -528,14 +529,14 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
 
-Pour plus d’informations et des démonstrations, consultez le tutoriel vidéo [utilisation des commandes RDE (10:01)](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use).
+Pour plus d’informations et des démonstrations, consultez le tutoriel vidéo [utilisation des commandes RDE (10:01)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use).
 
 
 ## Déploiement sur un RDE à partir de fournisseurs Git externes {#deploy-to-an-rde-from-external-git-providers}
 
 >[!NOTE]
 >
->Cette fonctionnalité est disponible via le programme Beta. Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à [&#128279;](mailto:cloudmanager_byog@adobe.com) à partir de l’adresse e-mail associée à votre Adobe ID. Veillez à inclure la plateforme Git à utiliser et indiquez si vous utilisez une structure de référentiel privée/publique ou d’entreprise.
+>Cette fonctionnalité est disponible via le programme Beta. Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à [](mailto:cloudmanager_byog@adobe.com) à partir de l’adresse e-mail associée à votre Adobe ID. Veillez à inclure la plateforme Git à utiliser et indiquez si vous utilisez une structure de référentiel privée/publique ou d’entreprise.
 
 Cloud Manager prend en charge le déploiement de code vers un RDE directement à partir de fournisseurs Git externes lors de l’utilisation de la configuration [Bring Your Own Git (BYOG)](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
@@ -561,10 +562,10 @@ Le déploiement des RDE à partir d’un référentiel Git externe nécessite le
    ![Message de validation de la qualité du code sur GitHub Enterprise](/help/implementing/developing/introduction/assets/rde-gitlab-code-quality-validation-message.png)
 
    Aspect sur GitLab :
-   ![&#x200B; Message de validation de la qualité du code sur GitLab](/help/implementing/developing/introduction/assets/rde-gitlab-code-quality-validation-message.png)
+   ![ Message de validation de la qualité du code sur GitLab](/help/implementing/developing/introduction/assets/rde-gitlab-code-quality-validation-message.png)
 
    Comment cela se présente-t-il sur Bitbucket :
-   ![&#x200B; Message de validation de la qualité du code sur Bitbucket &#x200B;](/help/implementing/developing/introduction/assets/rde-bitbucket-code-quality-validation-message.png)
+   ![ Message de validation de la qualité du code sur Bitbucket ](/help/implementing/developing/introduction/assets/rde-bitbucket-code-quality-validation-message.png)
 
 1. **Déclencher le déploiement à l’aide d’un commentaire.**
 
@@ -608,7 +609,7 @@ Le déploiement des RDE à partir d’un référentiel Git externe nécessite le
 
    Comment cela se présente-t-il sur Bitbucket :
 
-   ![&#x200B; Statut de déploiement de l’environnement sur Bitbucket &#x200B;](/help/implementing/developing/introduction/assets/rde-bitbucket-deployment-2.png)
+   ![ Statut de déploiement de l’environnement sur Bitbucket ](/help/implementing/developing/introduction/assets/rde-bitbucket-deployment-2.png)
 
 
 
@@ -626,10 +627,10 @@ L’exemple suivant illustre comment suivre le niveau de création, avec un pack
 >[!TIP]
 >
 >Si le `RDECLI:UNEXPECTED_API_ERROR` d’erreur s’affiche lors de la lecture des commandes de journaux pour le service de création, réinitialisez votre environnement et réessayez. Cette erreur est générée si votre dernière opération de réinitialisation a eu lieu avant la fin du mois de mai 2024.
->
->```
->aio aem:rde:reset
->```
+
+```
+aio aem:rde:reset
+```
 
 Voir `aio aem:rde:logs --help` pour l’ensemble des options de ligne de commande.
 
@@ -649,7 +650,7 @@ La réinitialisation du RDE supprime tout le code personnalisé, les configurati
 
 Une réinitialisation définit le RDE sur la dernière version d’AEM disponible.
 
-Vous pouvez réinitialiser le RDE à l’aide de [&#128279;](#reset-the-rde-in-cloud-manager) ou de la [ligne de commande](#reset-the-rde-using-the-command-line). La réinitialisation prend quelques minutes et tout le contenu et le code existants sont supprimés du RDE.
+Vous pouvez réinitialiser le RDE à l’aide de [](#reset-the-rde-in-cloud-manager) ou de la [ligne de commande](#reset-the-rde-using-the-command-line). La réinitialisation prend quelques minutes et tout le contenu et le code existants sont supprimés du RDE.
 
 >[!NOTE]
 >
@@ -711,7 +712,7 @@ Pour plus d’informations sur la gestion de vos environnements à l’aide de C
 
 >[!NOTE]
 >
->Cette fonctionnalité est disponible dans Beta. Si vous souhaitez utiliser cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à [&#128279;](mailto:aemcs-rde-support@adobe.com) pour décrire votre cas d’utilisation.
+>Cette fonctionnalité est disponible dans Beta. Si vous souhaitez utiliser cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à [](mailto:aemcs-rde-support@adobe.com) pour décrire votre cas d’utilisation.
 
 Les RDE prennent en charge la prise d’un instantané de l’état actuel du code et du contenu, qui peut être restauré ultérieurement. Les instantanés sont utiles lors de la synchronisation du code qui peut devoir être rétabli, ou lors du passage d’une fonctionnalité à l’autre. Il est également possible de restaurer uniquement le contenu modifiable à partir d’un instantané en tant que point de départ connu pour les tests.
 
@@ -1239,7 +1240,7 @@ Lors de leur création, les RDE sont définis sur la dernière version de Adobe 
 
 #### Erreurs concernant des autorisations insuffisantes {#errors-regarding-insufficient-permissions}
 
-Pour utiliser le plug-in RDE, vous devez être membre du profil de produit Cloud Manager **Développeur - Cloud Service**. Voir [&#x200B; Affecter des membres de l’équipe à des profils de produit Cloud Manager - Attribuer le profil de produit Développeur &#x200B;](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) pour plus d’informations.
+Pour utiliser le plug-in RDE, vous devez être membre du profil de produit Cloud Manager **Développeur - Cloud Service**. Voir [ Affecter des membres de l’équipe à des profils de produit Cloud Manager - Attribuer le profil de produit Développeur ](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) pour plus d’informations.
 
 Vous pouvez également vérifier que vous disposez de ce rôle de développeur si vous vous connectez à Developer Console à l’aide de la commande suivante :
 
@@ -1248,10 +1249,10 @@ Vous pouvez également vérifier que vous disposez de ce rôle de développeur s
 >[!TIP]
 >
 >Si l’erreur `Warning: cloudmanager:* is not a aio command.` s’affiche, vous devez installer le [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) en exécutant la commande suivante :
->
->```
->aio plugins:install @adobe/aio-cli-plugin-cloudmanager
->```
+
+```
+aio plugins:install @adobe/aio-cli-plugin-cloudmanager
+```
 
 Vérifiez que la connexion a bien été établie en exécutant les opérations suivantes :
 
