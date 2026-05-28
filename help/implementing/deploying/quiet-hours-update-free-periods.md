@@ -4,17 +4,17 @@ description: Découvrez comment minimiser l’impact opérationnel des mises à 
 feature: Deploying
 role: Admin
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: 2306be3f92a98560afa51fd67f83caa77c6f575c
+source-git-commit: 53900e778b64d1b818a9268bf9148db11414b7a8
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 0%
+source-wordcount: '931'
+ht-degree: 3%
 
 ---
 
 # Heures calmes et Mettre à jour les périodes libres {#quiet-hours-update-free-periods}
 
 >[!NOTE]
->Vous ne pouvez utiliser les fonctions Heures calmes et Mettre à jour les périodes libres qu’après avoir intégré les [&#x200B; Mises à jour de maintenance automatiques &#x200B;](/help/implementing/deploying/aem-version-updates.md).
+>Vous ne pouvez utiliser les fonctions Heures calmes et Mettre à jour les périodes libres qu’après avoir intégré les [ Mises à jour de maintenance automatiques ](/help/implementing/deploying/aem-version-updates.md).
 
 Les [mises à jour de maintenance automatique](/help/implementing/deploying/aem-version-updates.md) d’AEM as a Cloud Service garantissent la sécurité de vos instances et les mettent à jour avec les dernières versions de maintenance. Cela dit, dans certains cas (comme les événements de mise en production), vous devrez peut-être « protéger » ces heures de travail critiques contre d’éventuelles perturbations. AEM as a Cloud Service propose des options permettant de sélectionner des périodes qui interrompent les mises à jour de maintenance automatique de vos programmes. Cela n’empêche pas toutes les activités d’infrastructure. Des modifications de plateforme de niveau inférieur en dehors des mises à jour de maintenance peuvent toujours avoir lieu (par exemple, IMS).
 
@@ -26,6 +26,10 @@ Vous pouvez configurer ces périodes à l’aide de deux options de planificatio
 Les fonctionnalités de mise à jour des périodes libres et des heures creuses sont configurées « par programme ». Gardez à l’esprit que seuls les utilisateurs disposant du « rôle utilisateur » **Propriétaire de l’entreprise** et **Responsable de déploiement** peuvent afficher et utiliser ces fonctionnalités.
 
 De plus, pour plus d’informations sur les périodes de maintenance automatique d’AEM as a Cloud Service planifiées, reportez-vous à la page [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
+
+## Effectuer une gestion avec l’assistant AEM AI manage-ai-assistant (disponibilité limitée){#manage-ai-assistant}
+
+Outre l’interface de Cloud Manager, vous pouvez gérer les heures creuses et mettre à jour les périodes libres grâce à l’assistant AEM AI. L’assistant peut répertorier vos heures creuses actuelles et mettre à jour les périodes creuses, créer une période creuse ou un intervalle de temps creux, et modifier ou supprimer les heures creuses existantes, le tout à partir d’une requête en langage naturel. Comme l’assistant vous guide à travers les options disponibles et les règles qui s’appliquent au fur et à mesure, il vous permet d’éviter les configurations non valides avant qu’elles ne se produisent. Il fait apparaître les limites pertinentes dans la conversation, y compris le maximum de trois périodes sans mise à jour dans une fenêtre flottante de 365 jours, l’intervalle obligatoire d’une semaine entre les périodes, la limite de 8 heures sur les heures calmes et la restriction de la planification pendant les périodes d’exclusion de maintenance planifiée. Comme pour la configuration manuelle, ces actions s’appliquent par programme et ne sont disponibles que pour les utilisateurs dotés du rôle Propriétaire de l’entreprise ou Responsable de déploiement .
 
 ## Heures calmes {#quiet-hours}
 
