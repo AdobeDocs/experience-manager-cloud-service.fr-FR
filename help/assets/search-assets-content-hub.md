@@ -4,7 +4,7 @@ description: Découvrez comment rechercher des ressources dans  [!DNL Content Hu
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: 02f28aef708166b210d5508e714352a800114c14
+source-git-commit: 0ee0778243448e3ff9f6f5b8fb1097fc9b6bec27
 workflow-type: tm+mt
 source-wordcount: '1615'
 ht-degree: 1%
@@ -17,7 +17,7 @@ Lorsque vous disposez d’un grand nombre de ressources dans votre référentiel
 
 ## Conditions préalables {#prerequisites}
 
-[Les utilisateurs de &#x200B;](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
+[Les utilisateurs de ](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
 
 ## Ce que vous pouvez rechercher  {#what-you-can-search}
 
@@ -41,7 +41,7 @@ La recherche [!DNL Content Hub] fournit des résultats en fonction des élément
 
 Pour effectuer une recherche de base sur [!DNL the Content Hub], accédez à la barre de recherche et indiquez le mot-clé à rechercher. Accédez aux filtres disponibles dans le volet de gauche et appliquez-les pour affiner vos résultats de recherche.
 
-Par exemple, recherchez toutes les images **&#x200B;**&#x200B;contenant le mot-clé `architect`, qui a été modifié au cours de l’année dernière. Pour exécuter ce scénario, procédez comme suit :
+Par exemple, recherchez toutes les images **** contenant le mot-clé `architect`, qui a été modifié au cours de l’année dernière. Pour exécuter ce scénario, procédez comme suit :
 
 1. Spécifiez `architect` comme mot-clé de recherche.
 
@@ -158,7 +158,7 @@ Pour activer ou désactiver Recherche optimisée par l&#39;IA dans Content Hub, 
         </ul>
       </td>
      </tr>
-     <!--<tr>
+     <tr>
       <td>Subject</td>
       <td>Classification of assets based on their theme. For example, colorful, hiking, outdoors.</td>
       <td>NA</td>
@@ -173,7 +173,7 @@ Pour activer ou désactiver Recherche optimisée par l&#39;IA dans Content Hub, 
         </ul>
       </td>
      </tr>    
-     <!--<tr>
+     <tr>
       <td>Asset ID</td>
       <td>Unique number that identifies the asset.</td>
       <td>NA</td>
