@@ -4,9 +4,9 @@ description: Découvrez comment rechercher des ressources dans  [!DNL Content Hu
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: 02f28aef708166b210d5508e714352a800114c14
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '1615'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Lorsque vous disposez d’un grand nombre de ressources dans votre référentiel
 
 ## Conditions préalables {#prerequisites}
 
-[Les utilisateurs de Content Hub](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
+[Les utilisateurs de ](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
 
 ## Ce que vous pouvez rechercher  {#what-you-can-search}
 
@@ -41,7 +41,7 @@ La recherche [!DNL Content Hub] fournit des résultats en fonction des élément
 
 Pour effectuer une recherche de base sur [!DNL the Content Hub], accédez à la barre de recherche et indiquez le mot-clé à rechercher. Accédez aux filtres disponibles dans le volet de gauche et appliquez-les pour affiner vos résultats de recherche.
 
-Par exemple, recherchez toutes les images **[!UICONTROL JPEG]** contenant le mot-clé `architect`, qui a été modifié au cours de l’année dernière. Pour exécuter ce scénario, procédez comme suit :
+Par exemple, recherchez toutes les images **** contenant le mot-clé `architect`, qui a été modifié au cours de l’année dernière. Pour exécuter ce scénario, procédez comme suit :
 
 1. Spécifiez `architect` comme mot-clé de recherche.
 
@@ -56,6 +56,45 @@ Par exemple, recherchez toutes les images **[!UICONTROL JPEG]** contenant le mot
 Utilisez le panneau Filtres pour rechercher des ressources en fonction des métadonnées. Vous pouvez filtrer les résultats de la recherche en fonction de divers prédicats de recherche. Vous pouvez sélectionner tous les prédicats appropriés pour réduire ou affiner vos résultats de recherche. Vous pouvez choisir plus de 10 prédicats lors du filtrage des résultats de la recherche. Lorsque vous sélectionnez plusieurs options dans un filtre, Content Hub affiche les ressources qui correspondent à l’une des options sélectionnées dans un filtre. Cependant, lorsque vous sélectionnez plusieurs options dans les filtres, Content Hub affiche uniquement les ressources correspondant à toutes les options sélectionnées dans les filtres pour affiner les résultats de la recherche.
 
 Les filtres par défaut incluent le format de fichier, approuvé par, la date d’approbation, les ressources expirées et non expirées, ainsi que la date d’expiration. Les administrateurs peuvent également configurer les filtres qui s’affichent dans la liste des filtres. Pour plus d’informations, voir [Configuration de l’interface utilisateur de Content Hub](configure-content-hub-ui-options.md#configure-filters-content-hub).
+
+## Recherche optimisée par l&#39;IA dans Content Hub {#ai-search-aem-assets-content-hub}
+
+Recherche optimisée par l&#39;IA dans AEM Assets Content Hub est une fonctionnalité de recherche avancée qui comprend la signification et l’intention derrière la requête d’un utilisateur ou d’une utilisatrice plutôt que de s’appuyer sur des correspondances exactes de mots-clés. Il utilise l’intelligence artificielle (IA) et le machine learning pour fournir des résultats plus précis et plus pertinents selon le contexte.
+
+Contrairement à la recherche traditionnelle par mot-clé, qui recherche des termes exacts, Recherche optimisée par l&#39;IA interprète les relations entre les mots, les concepts et l’intention de l’utilisateur. Cela permet de s’assurer que les utilisateurs et les utilisatrices trouvent ce qu’ils recherchent, même si leur requête est formulée différemment, contient des fautes de frappe ou est dans une autre langue.
+
+Voici quelques-uns de ses principaux avantages :
+
+* **Prise en charge multilingue** : effectuez des recherches dans plusieurs langues sans nécessiter de traduction exacte. Les utilisateurs peuvent trouver du contenu pertinent quel que soit leur langage de requête.
+
+* **Gère les fautes d’orthographe** : interprète les fautes de frappe et d’orthographe pour garantir des résultats précis même avec une saisie imparfaite.
+
+* **Comprend les synonymes** : fournit des résultats pour les termes et expressions associés, de sorte que les utilisateurs n’ont pas besoin de deviner le bon mot-clé.
+
+* **Recherche pertinente du point de vue contextuel** : reconnaît l’intention derrière une requête, pas seulement les mots exacts.
+
+### Exemples de Recherche optimisée par l&#39;IA dans Content Hub {#examples-ai-search-aem-assets-content-hub}
+
+**Exemple d’invite** : *Femme buvant du café*
+
+La recherche traditionnelle par mot-clé recherche les correspondances exactes des métadonnées de ressource, telles que `Woman`, `drinking`, `Coffee`, et renvoie les ressources qui incluent tous ces termes dans les métadonnées.
+
+Cependant, Recherche optimisée par l&#39;IA correspond à des mots similaires tels que `Girl`, `Lady` dans le cas de `Woman` et `Cappuccino` et `Latte` dans le cas de `Coffee`.
+
+De même, vous pouvez spécifier cette invite en espagnol ou mal orthographier `Woman` comme `Wman` et obtenir toujours les mêmes résultats.
+
+
+### Activation ou désactivation de Recherche optimisée par l&#39;IA dans Content Hub {#enable-disable-ai-search-content-hub}
+
+Pour activer ou désactiver Recherche optimisée par l&#39;IA dans Content Hub, procédez comme suit :
+
+1. Accédez à l’icône de votre profil utilisateur et cliquez sur **[!UICONTROL Configurations]**.
+
+1. Dans l’onglet **[!UICONTROL Rechercher]**, sélectionnez **[!UICONTROL Recherche optimisée par l&#39;IA]** pour activer Recherche optimisée par l&#39;IA for Content Hub ou **[!UICONTROL Mot-clé]** pour le désactiver.
+
+   ![Recherche optimisée par l&#39;IA dans Content Hub](/help/assets/assets/ai-search-content-hub.png)
+
+1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
 <!--
 
@@ -162,6 +201,57 @@ Pour effectuer une recherche en bloc dans le [!DNL Content Hub], procédez comme
 1. Ajoutez une requête de recherche contenant les délimiteurs spécifiés dans la configuration . La requête de recherche doit contenir une chaîne accompagnée de plusieurs valeurs séparées par des virgules.
 
 ![Interface utilisateur de recherche en bloc](assets/bulk-search-ui.png)
+
+## Configuration du tri dans Content Hub {#configure-sorting-aem-assets-content-hub}
+
+Content Hub fournit des options de tri prêtes à l’emploi pour aider les utilisateurs à organiser les résultats de recherche de ressources. Les administrateurs peuvent également activer les champs de métadonnées personnalisés en tant qu’options de tri afin que les utilisateurs puissent trier les ressources en fonction de métadonnées spécifiques à l’entreprise, telles que le canal, la région, le SKU ou la campagne.
+
+### Options de tri par défaut {#default-sorting-options}
+
+Par défaut, Content Hub inclut les options de tri suivantes sur la page d’accueil de Content Hub :
+
+* Taille
+
+* Modifié
+
+* Nom
+
+* Pertinence
+
+### Ajout de champs de métadonnées personnalisés en tant qu’options de tri {#add-custom-metadata-fields-for-sorting}
+
+L’administration peut configurer des champs de métadonnées supplémentaires pour qu’ils apparaissent dans le menu de tri.
+
+Pour activer un champ de métadonnées pour le tri :
+
+1. Cliquez sur l’icône de profil utilisateur et sélectionnez **Configurations**.
+1. Accédez à l’onglet **Filtres**.
+1. Recherchez le champ de métadonnées que vous souhaitez activer pour le tri.
+1. Cliquez sur l’icône de modification disponible pour ce champ de métadonnées spécifique.
+1. Dans la boîte de dialogue Modifier le filtre , activez l’option **Tri**.
+1. Cliquez sur **Confirmer** et enregistrez la configuration. Les mises à jour prennent effet lorsque la valeur du champ de métadonnées **Status** s’affiche comme `Active`.
+
+Par exemple, l’activation du tri pour le champ de métadonnées de canal permet aux utilisateurs de trier les résultats des ressources à l’aide de la valeur de canal .
+
+![Recherche de base](assets/enable-filters-sorting.png)
+
+### Utilisation d’options de tri personnalisées sur la page d’accueil de Content Hub {#use-custom-sorting-options}
+
+Après avoir activé le tri pour un champ de métadonnées :
+
+* Le champ s’affiche dans le menu Tri de la page d’accueil de Content Hub.
+* Les champs de tri personnalisés s’affichent sous une ligne de séparation dans le menu de tri.
+* Le séparateur différencie visuellement les champs personnalisés configurés par l’administrateur des options de tri prêtes à l’emploi par défaut.
+
+Par exemple, si le champ Métadonnées de canal est activé pour le tri, le menu Tri affiche :
+
+* Champs par défaut tels que Taille, Modifié, Nom et Pertinence
+* Une ligne de séparation
+* Le canal du champ personnalisé
+
+Cette distinction permet aux utilisateurs et utilisatrices d’identifier rapidement les options de tri standard par rapport aux options de tri basées sur les métadonnées spécifiques à une organisation.
+
+![Recherche de base](assets/custom-sorting-options.png)
 
 ## En savoir plus avec la recherche {#do-more-with-search}
 
