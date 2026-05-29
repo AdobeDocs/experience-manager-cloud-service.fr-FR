@@ -4,7 +4,7 @@ description: Apprenez-en plus sur certaines des fonctionnalités de Content Hub
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: 02f28aef708166b210d5508e714352a800114c14
+source-git-commit: a7e847b70b02f8c7da880ac530792d56999035a6
 workflow-type: tm+mt
 source-wordcount: '1492'
 ht-degree: 58%
@@ -31,7 +31,7 @@ La date de publication de la version Content Hub (2026.05.0) est le 28 mai 2026 
 
 **Recherche optimisée par l&#39;IA**
 
-AEM Assets Content Hub comprend désormais Recherche optimisée par l&#39;IA, une fonctionnalité de recherche avancée qui permet de comprendre la signification et l’intention des requêtes des utilisateurs et utilisatrices au lieu de se fier uniquement à des correspondances exactes de mots-clés. Recherche optimisée par l&#39;IA offre des résultats plus précis et pertinents en reconnaissant les relations entre les mots, les concepts et l’intention de l’utilisateur. Il prend en charge les requêtes multilingues, gère les fautes d’orthographe et les fautes de frappe, comprend les synonymes et affiche les ressources pertinentes même lorsque les utilisateurs n’utilisent pas les termes exacts des métadonnées.
+AEM Assets Content Hub comprend désormais Recherche optimisée par l&#39;IA, une fonctionnalité de recherche avancée qui permet de comprendre la signification et l’intention des requêtes des utilisateurs et utilisatrices au lieu de se fier uniquement à des correspondances exactes de mots-clés. Recherche optimisée par l&#39;IA fournit des résultats plus précis et pertinents en reconnaissant les relations entre les mots, les concepts et l’intention de l’utilisateur. Il prend en charge les requêtes multilingues, gère les fautes d’orthographe et les fautes de frappe, comprend les synonymes et affiche les ressources pertinentes même lorsque les utilisateurs n’utilisent pas les termes exacts des métadonnées.
 
 Par exemple, une recherche de `Woman drinking coffee` peut également renvoyer des ressources balisées avec des termes associés, tels que `Lady`, `Girl`, `Latte` ou `Cappuccino`.
 
@@ -60,7 +60,7 @@ Dans Content Hub, l’agent de gouvernance AEM s’assure que seules les bonnes 
 
 ![Présentation de la gestion des autorisations](/help/ai-in-aem/agents/governance/assets/permission-management.png)
 
-[!BADGE Examiner en détail cette fonctionnalité]{type=Informative url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
+[!BADGE Examiner en détail cette fonctionnalité]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
 
 
 ## Fonctionnalités de la version d’octobre 2025 {#october-2025-release-features}
@@ -81,7 +81,7 @@ Vous pouvez désormais marquer les collections en tant que Favoris dans Content 
 
 Les administrateurs et administratrices de Content Hub peuvent désormais épingler des collections dans Content Hub pour un accès rapide. Les collections épinglées sont affichées dans une section **[!UICONTROL épinglées]** dédiée sur la page d’accueil Collections, ce qui facilite la conservation des collections importantes à portée de main.
 
-[!BADGE Examiner en détail cette fonctionnalité]{type=Informative url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
+[!BADGE Examiner en détail cette fonctionnalité]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
 ## Fonctionnalités de la version d’août 2025 {#august-release-features}
 
