@@ -35,7 +35,7 @@ Vous disposez de trois options pour accéder aux agents.
 
 ## Brand Experience Agent {#brand-experience-agent}
 
-[](/help/ai-in-aem/agents/brand-experience/overview.md) automatise les tâches à fort effort et à volume élevé par le biais des agents suivants, chacun se spécialisant dans un ensemble spécifique de tâches.
+[&#128279;](/help/ai-in-aem/agents/brand-experience/overview.md) automatise les tâches à fort effort et à volume élevé par le biais des agents suivants, chacun se spécialisant dans un ensemble spécifique de tâches.
 
 * **[Agent de modernisation Experience Cloud](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)** - Migre les sites web vers des formats prêts pour le cloud
 * **[Agent de production Experience](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)** - Réduit le délai de mise sur le marché avec les mises à jour de contenu, la création de formulaires et les communications
