@@ -4,9 +4,9 @@ description: Découvrez comment télécharger une ou plusieurs ressources et leu
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: bfef942f248d926d699ed489a5c117f89da76459
+source-git-commit: 46ca8082f85cdb957681aa9596b9312b35e4f6ec
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1471'
 ht-degree: 2%
 
 ---
@@ -32,7 +32,7 @@ Pour télécharger une ou plusieurs ressources et leurs rendus, procédez comme 
 
   ![télécharger une ressource](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
 
-  Vous pouvez également cliquer sur la miniature de la ressource, puis sur ![Télécharger](/help/assets/assets/download-icon.svg) pour sélectionner et afficher les rendus disponibles dans la boîte de dialogue avant de les télécharger.
+  Vous pouvez également cliquer sur la miniature de la ressource, puis sur ![Télécharger](/help/assets/assets/download-icon.svg) pour sélectionner et afficher les rendus disponibles dans la boîte de dialogue avant de les télécharger. Vous pouvez également copier l’URL de diffusion pour les rendus de ressources si vous accédez aux propriétés de la ressource et cliquez sur l’icône Télécharger . L’option de copie de l’URL de diffusion n’est disponible que si la cible de validation de la ressource est [définie sur Diffusion](/help/assets/approve-assets-content-hub.md#set-approval-target).
 
 * Pour télécharger plusieurs ressources et leurs rendus :
    1. Sélectionnez les ressources, cliquez sur ![Télécharger](/help/assets/assets/download-icon.svg) **[!UICONTROL Télécharger]** et consultez la liste des ressources sélectionnées dans la boîte de dialogue **[!UICONTROL Télécharger les ressources]**. Cliquez sur ![désélectionner](/help/assets/assets/Close.svg) en regard d’une ressource pour la désélectionner de la liste.
@@ -160,7 +160,7 @@ En savoir plus sur [affichage et gestion des rendus dans [!DNL Experience Manage
 
 * [Rendus statiques](/help/assets/renditions.md#static-renditions) : les rendus statiques sont des versions précréées des ressources numériques, généralement générées lors de l’ingestion ou de la modification des ressources. Ils sont optimisés pour des utilisations et des plateformes spécifiques, telles que les miniatures web, les formats compatibles avec les appareils mobiles pour les conceptions réactives ou les fichiers haute résolution pour l’impression, offrant ainsi une expérience rationalisée et cohérente.
 
-* [Rendus dynamiques](/help/assets/renditions.md#dynamic-renditions) : les rendus dynamiques sont des versions personnalisées en temps réel des ressources permettant d’effectuer diverses actions, telles que le redimensionnement des images pour différentes résolutions d’appareil ou le recadrage pour s’adapter à divers proportions. Ces rendus vous permettent d’offrir des expériences personnalisées et optimisées pour des besoins plus larges. Les rendus dynamiques des ressources sont créés dans [!DNL Adobe Experience Manager Assets] environnement de création. Pour plus d’informations sur les étapes requises pour activer les rendus dynamiques, voir [&#x200B; Activation des rendus dynamiques &#x200B;](#enable-dynamic-media-renditions).
+* [Rendus dynamiques](/help/assets/renditions.md#dynamic-renditions) : les rendus dynamiques sont des versions personnalisées en temps réel des ressources permettant d’effectuer diverses actions, telles que le redimensionnement des images pour différentes résolutions d’appareil ou le recadrage pour s’adapter à divers proportions. Ces rendus vous permettent d’offrir des expériences personnalisées et optimisées pour des besoins plus larges. Les rendus dynamiques des ressources sont créés dans [!DNL Adobe Experience Manager Assets] environnement de création. Pour plus d’informations sur les étapes requises pour activer les rendus dynamiques, voir [ Activation des rendus dynamiques ](#enable-dynamic-media-renditions).
 
 * [Recadrage intelligent](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles) : le recadrage intelligent se concentre uniquement sur la partie essentielle d’une ressource pendant le processus de recadrage. Le recadrage intelligent Dynamic Media tire parti de l’intelligence artificielle optimisée par Adobe AI pour effectuer le suivi du point ciblé, en s’assurant que nos ressources ont l’aspect le plus favorable quelle que soit la taille de l’écran. [!DNL Adobe Experience Manager] recadrage intelligent affiche la largeur et la hauteur des rendus d’une ressource avec le titre. Pour en savoir plus, consultez la section [Utilisation du recadrage intelligent avec AEM Assets Dynamic Media](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 
@@ -180,7 +180,7 @@ Pour activer les rendus dynamiques :
 
    Une fois que vous avez accès à Dynamic Media avec les fonctionnalités OpenAPI, toutes les ressources marquées comme `Approved` peuvent être diffusées au public à l’aide de Dynamic Media.
 
-1. Définissez la [&#x200B; cible d’approbation de la ressource &#x200B;](/help/assets/approve-assets-content-hub.md#set-approval-target) sur Content Hub afin d’approuver les ressources uniquement pour Content Hub.
+1. Définissez la [ cible d’approbation de la ressource ](/help/assets/approve-assets-content-hub.md#set-approval-target) sur Content Hub afin d’approuver les ressources uniquement pour Content Hub.
 
 1. Activez le bouton (bascule) **[!UICONTROL Activer la disponibilité des rendus]** disponible dans l’onglet **[!UICONTROL Rendus]** de l’interface utilisateur [Configuration](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub).
 
