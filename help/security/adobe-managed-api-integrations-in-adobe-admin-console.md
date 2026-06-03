@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Intégrations d’API gérées par Adobe dans Adobe Admin Console {#adobe-managed-api-integrations-in-adobe-admin-console}
 
-Adobe fournit un petit nombre d’intégrations de **services** dans votre organisation IMS dans le cadre d’AEM as a Cloud Service et des fonctionnalités Adobe Experience Cloud associées. Ces intégrations apparaissent dans [](https://adminconsole.adobe.com/) à côté des intégrations que vous créez vous-même. Les services Adobe les possèdent et les exploitent en votre nom.
+Adobe fournit un petit nombre d’intégrations de **services** dans votre organisation IMS dans le cadre d’AEM as a Cloud Service et des fonctionnalités Adobe Experience Cloud associées. Ces intégrations apparaissent dans [&#128279;](https://adminconsole.adobe.com/) à côté des intégrations que vous créez vous-même. Les services Adobe les possèdent et les exploitent en votre nom.
 
 En tant qu’administrateur système ou administrateur de produit de votre organisation IMS, vous pouvez examiner les fonctions de chaque intégration, déterminer la fonctionnalité Adobe qui en dépend et décider si elle reste activée. Vous pouvez désactiver à tout moment toute intégration de service gérée par Adobe et la restaurer ultérieurement si nécessaire.
 
@@ -34,7 +34,7 @@ Adobe applique les principes suivants pour chaque intégration de service réper
 
 ## Emplacement de ces intégrations {#where-to-find-these-integrations}
 
-1. Connectez-vous à [](https://adminconsole.adobe.com/) avec un compte d’administrateur système ou d’administrateur de produit pour votre organisation IMS.
+1. Connectez-vous à [&#128279;](https://adminconsole.adobe.com/) avec un compte d’administrateur système ou d’administrateur de produit pour votre organisation IMS.
 1. Pour afficher toutes les informations d’identification d’API, accédez à **Utilisateurs** > **Informations d’identification d’API**. Pour inspecter les intégrations disposant d’une autorisation spécifique, accédez à **Produits** > *le produit Adobe nommé dans le catalogue* > *le profil de produit approprié*.
 1. Recherchez les intégrations de services dont le nom commence par `Adobe` ou qui correspondent à un nom dans le catalogue ci-dessous.
 
@@ -50,7 +50,7 @@ Le tableau suivant répertorie les intégrations de services qu’Adobe met en s
 
 | Nom, comme indiqué dans Admin Console | Effets | Utilisé par | Autorisations accordées | Activé par défaut |
 |---|---|---|---|---|
-| **Intégration du réseau CDN géré par** | Permet au service LLM Optimizer de mettre à jour pour votre compte votre réseau CDN géré par AEM as a Cloud Service **règles de routage de trafic dynamique** afin que les robots d&#39;exploration d’IA et d’agent (tels que ChatGPT, Perplexity et Claude) puissent être acheminés vers des origines optimisées de LLM Optimizer sans modification manuelle du réseau CDN par votre équipe. | **** via la fonctionnalité [Optimiser sur Edge](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview) | Rôle Cloud Manager **Responsable de déploiement** | Oui |
+| **Intégration du réseau CDN géré par** | Permet au service LLM Optimizer de mettre à jour pour votre compte votre réseau CDN géré par AEM as a Cloud Service **règles de routage de trafic dynamique** afin que les robots d&#39;exploration d’IA et d’agent (tels que ChatGPT, Perplexity et Claude) puissent être acheminés vers des origines optimisées de LLM Optimizer sans modification manuelle du réseau CDN par votre équipe. | **&#x200B;**&#x200B;via la fonctionnalité [Optimiser sur Edge](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview) | Rôle Cloud Manager **Responsable de déploiement** | Oui |
 
 La capture d’écran suivante est un exemple de l’**intégration du réseau CDN géré par** mentionnée dans le tableau ci-dessus.
 
@@ -74,7 +74,7 @@ Vous pouvez désactiver une intégration de service gérée par Adobe à tout mo
 
 Dans cet article, les étapes sont les mêmes pour chaque intégration de service. Seul le chemin de navigation dans Admin Console change en fonction du profil de produit pour cette intégration.
 
-1. Connectez-vous à [](https://adminconsole.adobe.com/).
+1. Connectez-vous à [&#128279;](https://adminconsole.adobe.com/).
 1. Identifiez le produit **Adobe et le** profil de produit **rôle ou autorisation** pour l&#39;intégration de service. Les deux sont répertoriés dans la ligne du catalogue.
 1. Accédez à **Produits** > *le produit Adobe* > *le profil du produit*.
 1. Ouvrez l’onglet **Informations d’identification de l’API** ou **Utilisateurs** pour ce profil.
@@ -87,7 +87,7 @@ Dans cet article, les étapes sont les mêmes pour chaque intégration de servic
 
 Si vous avez précédemment désactivé une intégration et souhaitez la réactiver :
 
-1. Connectez-vous à [](https://adminconsole.adobe.com/) en tant qu&#39;administrateur système ou produit.
+1. Connectez-vous à [&#128279;](https://adminconsole.adobe.com/) en tant qu&#39;administrateur système ou produit.
 1. Accédez au **même produit et profil de produit** identifié pour l’intégration de service dans le catalogue ci-dessus. Il s’agit du profil duquel l’intégration de service a été supprimée lorsqu’elle a été désactivée.
 1. Sélectionnez **Ajouter un utilisateur** ou **Ajouter une API**, puis recherchez l’intégration de service par le nom exact répertorié dans le catalogue.
 1. Ajoutez à nouveau l’intégration de service au profil de produit. L’intégration reprend lors de sa prochaine exécution planifiée ou initiée par l’utilisateur.
