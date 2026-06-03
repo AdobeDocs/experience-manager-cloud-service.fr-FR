@@ -4,9 +4,9 @@ description: Découvrez comment configurer des outils de codage d’IA avec le c
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: 236c9edfdd2d540fd767dcc91058aab32eb035c8
+source-git-commit: 38e599d34e591d0d8c9f822c0296bef27d24a605
 workflow-type: tm+mt
-source-wordcount: '1648'
+source-wordcount: '1836'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,7 @@ Adobe publie les compétences AEM as a Cloud Service dans le référentiel **[ad
 | `ensure-agents-md` | Bootstraps `AGENTS.md` et `CLAUDE.md` adapté à la structure réelle du module du projet |
 | `create-component` | Génère un modèle automatique pour un composant AEM complet : définition de composant, code XML de boîte de dialogue, modèle HTL, modèle Sling, tests unitaires et bibliothèques clientes |
 | `dispatcher` | Assistant de configuration Dispatcher et Apache HTTPD optimisés par l’IA et couvrant la création de configuration, les conseils techniques, la réponse aux incidents, l’optimisation des performances et le renforcement de la sécurité |
+| `migration` | Effectue la migration du code Java et des configurations OSGi AEM 6.x, AMS ou on-premise vers AEM as a Cloud Service, en fonction des résultats de l’[analyseur de bonnes pratiques](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) issus d’une exportation CSV ou d’un [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) |
 | `workflow` | Il s’agit du point d’entrée unique pour toutes les compétences de workflow AEM as a Cloud Service. Il couvre la conception de modèles de workflow, le développement d’étapes de processus personnalisées et de programmes de sélection des participants, la configuration du lanceur, le déclenchement de workflow et la prise en charge de la production, y compris le débogage des workflows bloqués/en échec, le tri des incidents avec les journaux Cloud Manager, l’analyse du pool de threads et les diagnostics de tâche Sling pour le moteur de workflow Granite. |
 
 ### Installation des compétences {#install-skills}
@@ -125,6 +126,16 @@ CTA Link (ctaLink) - Pathfield
 L’agent fait écho à la spécification du champ pour confirmation, puis génère tous les fichiers de composant. Les modèles pris en charge comprennent les champs multiples avec des éléments imbriqués composites, la logique d’affichage/masquage conditionnel, l’extension des composants principaux via Sling Resource Merger et les tests JUnit 5 à l’aide de simulations AEM. La conception peut provenir de diverses sources, y compris une description textuelle, une image ou une URL de conception Figma utilisant le serveur MCP de Figma.
 
 Pour en savoir plus, suivez le tutoriel [&#x200B; Développement de composants à l’aide des compétences de l’agent AEM &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development).
+
+### Utilisation des compétences de migration {#use-the-migration-skill}
+
+Les compétences `migration` guident l’agent tout au long de la migration du code Java AEM et des configurations OSGi vers AEM as a Cloud Service. Il fonctionne un modèle à la fois : vous nommez le modèle (par exemple, `scheduler` ou `replication`), pointez l’agent vers les résultats de votre analyseur de bonnes pratiques, il localise les fichiers affectés dans votre projet et applique les transformations correctes dans les lots, en pause pour votre révision après chacun d’eux.
+
+Les modèles pris en charge comprennent le planificateur Sling, ResourceChangeListener, l’API de réplication, OSGi EventListener et EventHandler, l’API Assets, les correctifs de ligne HTL et la conversion de configuration OSGi avec des secrets Cloud Manager et l’extraction de variables d’environnement.
+
+Les compétences s’associent au [MCP de migration vers le cloud](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md) pour récupérer les résultats directement depuis [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md). Si le MCP n’est pas configuré, la compétence revient à une exportation CSV [BPA](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) locale, ou vous pouvez la pointer manuellement vers des fichiers spécifiques.
+
+Pour obtenir des instructions de configuration complètes et consulter la référence des modèles, consultez [&#x200B; Migration de code assistée par l’IA vers AEM as a Cloud Service &#x200B;](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md).
 
 ### Utilisation des compétences Dispatcher {#use-the-dispatcher-skill}
 

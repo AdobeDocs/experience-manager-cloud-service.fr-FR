@@ -5,10 +5,10 @@ feature: Smart Tags,Tagging
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: ed11b465dd7faff74fd1b740ffaef1edb7cb5a9d
 workflow-type: tm+mt
-source-wordcount: '2088'
-ht-degree: 28%
+source-wordcount: '2071'
+ht-degree: 27%
 
 ---
 
@@ -20,7 +20,7 @@ Les balises intelligentes sont des mots-clés qui non seulement apparaissent dan
 
 Par exemple, les mots disposés par ordre alphabétique dans un dictionnaire sont plus faciles à trouver que les mots dispersés de manière aléatoire. Le balisage a un objectif similaire. Il organise les ressources en fonction de la taxonomie métier, en veillant à ce que les plus pertinentes apparaissent dans les résultats de recherche. Par exemple, un constructeur de voitures peut baliser les images de voitures avec les noms de modèle, de sorte que seules les images appropriées soient affichées lors de la conception d’une campagne promotionnelle. Qu’il s’agisse de baliser « runners » ou « running chaussures », les utilisateurs n’ont pas à se soucier des fautes de frappe, des variations d’orthographe ou d’autres termes de recherche ; les balises intelligentes les reconnaissent toutes.
 
-En arrière-plan, la fonctionnalité utilise le framework d’intelligence artificielle d’[&#128279;](https://business.adobe.com/ai/adobe-genai.html) applique automatiquement les balises intelligentes aux ressources chargées, par défaut, avec le texte aligné sur la taxonomie métier.
+En arrière-plan, la fonctionnalité utilise le framework d’intelligence artificielle de [&#128279;](https://business.adobe.com/ai/adobe-genai.html), qui applique automatiquement les balises intelligentes aux ressources chargées (par défaut) avec le texte aligné sur la taxonomie métier.
 
 ## Conditions préalables et configuration {#smart-tags-prereqs-config}
 
@@ -28,7 +28,7 @@ Les balises intelligentes sont automatiquement configurées pour [!DNL Adobe Exp
 
 ## Workflow des balises intelligentes {#smart-tags-workflow}
 
-Le balisage intelligent optimisé par [!DNL Adobe AI] utilise des modèles d’intelligence artificielle pour analyser le contenu et ajouter des balises aux ressources. Cela permet aux utilisateurs de la gestion des ressources numériques de réduire le temps nécessaire pour fournir des expériences enrichies à leurs clients. Les balises intelligentes sont affichées dans l’ordre décroissant de leur [score de confiance](#confidence-score) dans les propriétés de la ressource.
+Le balisage intelligent optimisé par [!DNL Adobe AI] utilise des modèles d’intelligence artificielle pour analyser le contenu et ajouter des balises aux ressources, ce qui réduit le temps nécessaire aux utilisateurs de la gestion des ressources numériques pour fournir des expériences enrichies à leurs clients. Les balises intelligentes sont affichées dans l’ordre décroissant de leur [score de confiance](#confidence-score) dans les propriétés de la ressource.
 
 * **Ressources basées sur des images**
 Pour les images, les balises intelligentes sont basées sur certains aspects visuels. Dans de nombreux formats, les images sont balisées à l’aide des services de contenu dynamique. Les balises intelligentes sont appliquées aux [types de fichiers pris en charge](#supported-file-formats) qui génèrent des rendus au format JPG et PNG.
@@ -36,10 +36,10 @@ Pour les images, les balises intelligentes sont basées sur certains aspects vis
   <!-- ![Image Smart Tag](assets/image-smart-tag.png)-->
 
 * **Ressources vidéo**
-Pour les ressources vidéo, le balisage est activé par défaut dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. De même que les balises d’image et de texte, les vidéos sont également automatiquement balisées lorsque vous chargez de nouvelles vidéos ou que vous retraitez des vidéos existantes. [!DNL Adobe AI] génère deux ensembles de balises pour une vidéo : l’un correspond aux objets, aux scènes et aux attributs de cette vidéo, tandis que l’autre correspond à des actions telles que boire, courir et faire du jogging. Cochez également la case [exclure le balisage intelligent des vidéos](#opt-out-video-smart-tagging).
+Pour les ressources vidéo, le balisage est activé par défaut dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. Comme pour les balises d’image et de texte, les vidéos sont également automatiquement balisées lorsque vous chargez de nouvelles vidéos ou que vous retraitez des vidéos existantes. [!DNL Adobe AI] génère deux jeux de balises pour une vidéo : un jeu correspond aux objets, aux scènes et aux attributs de cette vidéo, et l’autre jeu concerne des actions telles que boire, courir et faire du jogging. Cochez également la case [exclure le balisage intelligent des vidéos](#opt-out-video-smart-tagging).
 
 * **Ressources textuelles**
-Pour les ressources prises en charge, [!DNL Experience Manager] extrait déjà le texte, qui est ensuite indexé et utilisé pour rechercher les ressources. Cependant, les balises intelligentes basées sur des mots-clés dans le texte fournissent une facette de recherche dédiée, structurée et de priorité supérieure. Cette dernière permet d’améliorer la découverte de ressources par rapport à un index de recherche.
+Pour les ressources prises en charge, [!DNL Experience Manager] extrait déjà le texte, qui est ensuite indexé et utilisé pour rechercher les ressources. Toutefois, les balises intelligentes basées sur des mots-clés dans le texte fournissent une facette de recherche dédiée, structurée et de priorité supérieure. Cette dernière permet d’améliorer la découverte de ressources par rapport à un index de recherche.
 Pour les ressources à base de texte, l’efficacité des balises intelligentes ne dépend pas de la quantité de texte contenu dans la ressource, mais des mots-clés ou entités pertinents présents dans le texte de la ressource.
 
   ![Smart-tag-types](assets/smart-tags-types.png)
@@ -89,7 +89,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## Assets non balisé dans la gestion des ressources numériques (DAM) {#smart-tag-existing-assets}
 
-Les ressources existantes ou plus anciennes de la gestion des ressources numériques ne sont pas automatiquement balisées intelligemment. Vous devez [Retraiter](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=fr#adjusting-load) Assets manuellement pour générer des balises intelligentes pour eux. Une fois le processus terminé, accédez à la page [!UICONTROL Propriétés] de n’importe quelle ressource du dossier. Les balises ajoutées automatiquement sont affichées dans la section [!UICONTROL Balises intelligentes] de l’onglet [!UICONTROL Simple]. Ces balises intelligentes appliquées sont triées par ordre décroissant de [score de confiance](#confidence-score).
+Les ressources existantes ou plus anciennes de la gestion des ressources numériques ne sont pas automatiquement balisées intelligemment. Vous devez [Retraiter](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=fr#adjusting-load) Assets manuellement pour générer des balises intelligentes pour eux. Une fois le processus terminé, accédez à la page [!UICONTROL Propriétés] de n’importe quelle ressource du dossier. Les balises ajoutées automatiquement sont affichées dans la section [!UICONTROL Balises intelligentes] de l’onglet [!UICONTROL De base]. Ces balises intelligentes appliquées sont triées par ordre décroissant de [score de confiance](#confidence-score).
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -107,7 +107,7 @@ To smart tag assets, or folders (including subfolders) of assets that exist in a
 
 ## Score de confiance {#confidence-score}
 
-Les résultats de la recherche de ressources sont classés en fonction des scores de confiance, ce qui améliore généralement ces résultats au-delà de ce qu’une inspection des balises affectées aux ressources suggère. Les balises inexactes présentent souvent des scores de confiance faibles, de sorte qu’elles apparaissent rarement en haut de la liste des balises intelligentes pour les ressources.
+Les résultats de la recherche de ressources sont classés en fonction des scores de confiance, ce qui améliore généralement ces résultats au-delà de ce qu’une inspection des balises affectées aux ressources suggère. Les balises inexactes ont souvent des scores de confiance faibles. Elles apparaissent donc rarement en haut de la liste des balises intelligentes pour les ressources.
 <!--
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] applies a minimum confidence threshold for object and action-smart tags to avoid having too many tags for each asset, which slows down indexing. 
 

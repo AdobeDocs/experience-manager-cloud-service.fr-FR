@@ -1,14 +1,13 @@
 ---
 title: Comment gérer  [!DNL Dynamic Media]  modèles ?
 description: Découvrez comment créer  [!DNL Dynamic Media]  modèles à l’aide d’un éditeur de modèles WYSIWYG et inclure plusieurs calques d’images, de textes et de formes pour créer rapidement des bannières et des prospectus et les utiliser dans des applications en aval.
-hide: true
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 46ca8082f85cdb957681aa9596b9312b35e4f6ec
 workflow-type: tm+mt
-source-wordcount: '3912'
-ht-degree: 0%
+source-wordcount: '3549'
+ht-degree: 37%
 
 ---
 
@@ -17,22 +16,22 @@ ht-degree: 0%
 
 Créez des modèles personnalisables en temps réel pour vos bannières et prospectus à l’aide de [!DNL Dynamic Media] templates, un éditeur de modèles WYSIWYG. Publiez votre modèle de [!DNL Dynamic Media] et utilisez-le dans les applications en aval. Un modèle de [!DNL Dynamic Media] comprend des calques d’image et de texte. Ajoutez des paramètres aux calques d’image et de texte du modèle et utilisez [[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/fr/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) pour repositionner et redimensionner le calque et mettre à jour son contenu en temps réel.
 
-Voici quelques-unes des principales fonctionnalités :
+Voici quelques-unes des fonctions principales :
 
 * **[!DNL Dynamic Media]WYSIWYG Template Editor** : créez des bannières personnalisables avec des calques d’image et de texte.
-* **Paramétrage des couches :** permet de définir des paires clé-valeur dynamiques pour les couches afin d’activer les mises à jour en temps réel.
+* **Paramétrage des calques :** permet de définir des paires clé-valeur dynamiques pour les calques afin d’activer les mises à jour en temps réel.
 * Prise en charge des URL **[!DNL Dynamic Media]:** utilisez des URL [!DNL Dynamic Media] pour les modèles, en intégrant des valeurs personnalisées provenant d’applications propriétaires ou tierces.
-* **Layer Visibility Control :** permet de masquer ou d’afficher les calques de manière dynamique selon les besoins.
-* **Redimensionnement intelligent du texte :** permet d’ajuster automatiquement la taille du texte aux zones désignées.
+* **Contrôle de la visibilité des calques :** permet de masquer ou d’afficher les calques de manière dynamique selon les besoins.
+* **Redimensionnement intelligent du texte :** permet d’ajuster automatiquement la taille du texte aux zones désignées.
 
 Voici quelques-uns des principaux avantages des modèles de [!DNL Dynamic Media] :
 
-* **Optimisez 1:1 Personalization :** personnalisez le contenu en fonction des signaux client en temps réel.
-* **Réduire les efforts manuels :** automatiser et accélérer la création et la gestion de contenu.
-* **Assurer des expériences omnicanal cohérentes :** maintenir la cohérence de la marque sur l’ensemble des canaux.
-* **Réutiliser efficacement le contenu :** évitez le contenu à usage unique et mettez à l’échelle avec des modèles dynamiques paramétrés.
-* **Réduire les risques :** mettez à jour les prix, les remises et les liens en temps réel.
-* **Améliorez l’engagement client :** générez des expériences interactives et pertinentes du point de vue contextuel.
+* **Optimisation 1:1 de la personnalisation :** personnalisez le contenu en fonction des signaux clientèle en temps réel.
+* **Réduction des efforts manuels :** automatisez et accélérez la création et la gestion de contenu.
+* **Garantir des expériences omnicanal cohérentes :** maintenez la cohérence de la marque sur l’ensemble des canaux.
+* **Réutilisation efficace du contenu :** évitez le contenu à usage unique et mettez à l’échelle avec des modèles dynamiques paramétrés.
+* **Atténuation des risques :** mettez à jour les prix, les remises et les liens en temps réel.
+* **Amélioration de l’engagement de la clientèle :** générez des expériences interactives et pertinentes.
 
 >[!NOTE]
 >
@@ -52,7 +51,7 @@ Remplissez les conditions suivantes pour créer un modèle de [!DNL Dynamic Medi
 1. Publiez les images à utiliser lors de la création du modèle pour générer l’URL de diffusion du modèle après sa création. L’URL de diffusion peut être utilisée dans les applications en aval.
 1. Pour utiliser une autre police que la police [!UICONTROL Adobe Sans F2] par défaut dans le calque de texte du modèle, [chargez et publiez le fichier de police simultanément dans AEM et Dynamic Media](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation). [Les formats de fichiers de polices pris en charge sont AEM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/fr/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Veillez également à [retraiter](/help/assets/reprocessing-assets-view.md) les polices existantes pour les utiliser. Voir [Polices](https://experienceleague.adobe.com/fr/docs/dynamic-media-classic/using/support-files/fonts) pour plus d’informations.<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
 1. vérifiez les points suivants dans l’interface utilisateur tactile :
-   * Sur la page **[!UICONTROL Modifier [!DNL Dynamic Media] configuration]**, **[!UICONTROL [!DNL Dynamic Media]mode de synchronisation]** défini sur **[!UICONTROL Désactivé par défaut]** n’est pas appliqué à tous les dossiers AEM (**[!UICONTROL Synchroniser tout le contenu]** est décoché). Voir [Configuration de Dynamic Media Cloud Service](/help/assets/dynamic-media/config-dm.md) pour plus d’informations.
+   * Sur la page **[!UICONTROL Modifier [!DNL Dynamic Media] configuration]**, **[!UICONTROL [!DNL Dynamic Media]mode de synchronisation]** défini sur **[!UICONTROL Désactivé par défaut]** n’est pas appliqué à tous les dossiers AEM (**[!UICONTROL Synchroniser tout le contenu]** est décoché). Consultez [Configuration de Dynamic Media Cloud Service](/help/assets/dynamic-media/config-dm.md) pour plus d’informations.
    * **[!UICONTROL [!DNL Dynamic Media]mode de synchronisation]** est défini sur **[!UICONTROL Activer pour les sous-dossiers]** pour le dossier ou sous-dossier de destination dans lequel vous enregistrerez le modèle après sa création. Voir [Configuration [!DNL Dynamic Media] Cloud Service](/help/assets/dynamic-media/config-dm.md) pour plus d&#39;informations.
 
 ## Créer [!DNL Dynamic Media] modèle{#how-to-create-dynamic-media-template}
@@ -74,7 +73,7 @@ Pour créer un modèle de [!DNL Dynamic Media], procédez comme suit :
 
 ### Créer une zone de travail vierge{#create-a-canvas}
 
-Pour créer une zone de travail vide, procédez comme suit :
+Pour créer une zone de travail vierge, procédez comme suit :
 
 1. Accédez à [!DNL Assets View], sélectionnez **[!UICONTROL Dynamic Media Assets]** disponible dans le panneau de gauche et accédez à votre dossier pour enregistrer votre modèle dans ce dossier.
 
@@ -89,17 +88,17 @@ Pour créer une zone de travail vide, procédez comme suit :
    >  Le modèle est enregistré à l’emplacement où vous l’avez créé. Sur la page d’accueil de [!DNL Assets View], sélectionnez **[!UICONTROL Dynamic Media Assets]** et cliquez sur **[!UICONTROL Créer un modèle]** pour enregistrer le modèle dans le dossier racine **[!UICONTROL Dynamic Media Assets]**.
 
 1. Indiquez un nom de modèle, définissez la largeur et la hauteur de la zone de travail, puis cliquez sur **[!UICONTROL Créer]**. Une zone de travail vierge s’affiche avec des options de menu des deux côtés à utiliser pour créer le modèle. Pointez sur les options de menu pour afficher leur info-bulle.
-   ![&#x200B; modèle personnalisable en temps réel &#x200B;](/help/assets/assets/blank-canvas-page.png)
+   ![modèle personnalisable en temps réel](/help/assets/assets/blank-canvas-page.png)
 
    >[!NOTE]
    >
-   > La plage de largeur et de hauteur autorisée va de 50 à 5 000.
+   > La plage de largeur et de hauteur autorisée va de 50 à 5 000.
 
-**Options de menu dans le volet de droite :** utilisez ces options pour ajouter les calques d’images et de texte nécessaires à la zone de travail.
+**Options de menu dans le volet de droite :** utilisez ces options pour ajouter les calques d’images et de texte nécessaires à la zone de travail.
 
-* ![Modèles DM](/help/assets/assets/add-image.svg) : cliquez pour ajouter des images à la zone de travail.
-* ![modèles personnalisables](/help/assets/assets/add-text.svg) : cliquez pour ajouter des textes à la zone de travail.
-* ![modèles personnalisables](/help/assets/assets/show-layers-list.svg) : cliquez pour afficher la liste de tous les calques (image et texte) sur la zone de travail. Chaque image et texte ajouté à la zone de travail est représenté sous la forme d’un calque distinct.
+* ![Modèles DM](/help/assets/assets/add-image.svg) : cliquez pour ajouter des images à la zone de travail.
+* ![Modèles personnalisables](/help/assets/assets/add-text.svg) : cliquez pour ajouter des textes à la zone de travail.
+* ![Modèles personnalisables](/help/assets/assets/show-layers-list.svg) : cliquez pour afficher la liste de tous les calques (image et texte) sur la zone de travail. Chaque image et texte ajouté à la zone de travail est représenté sous la forme d’un calque distinct.
 
 **Options de menu dans le volet de gauche :** utilisez ces options pour les actions suivantes de l’éditeur commun.
 
@@ -117,22 +116,22 @@ Cliquez sur ![modèle pour créer rapidement des prospectus](/help/assets/assets
 
 >[!NOTE]
 >
-> Les modèles autorisent un maximum de 20 calques, Zone de travail incluse.
+> Les modèles autorisent un maximum de 20 calques, zone de travail incluse.
 
 ### Ajouter des images à la zone de travail{#add-images-to-the-canvas}
 
-Pour ajouter des images à la zone de travail, procédez comme suit :
+Pour ajouter des images à la zone de travail, procédez comme suit :
 
 1. Cliquez sur ![créer une bannière en un rien de temps](/help/assets/assets/add-image.svg) pour ouvrir le panneau [Sélecteur de ressources](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector). Le panneau affiche les images de votre instance AEM Assets synchronisées avec [!DNL Dynamic Media].
 1. Parcourez le panneau ou utilisez des mots-clés dans la barre de recherche pour trouver une image spécifique.
 1. Faites glisser et déposez une image sur la zone de travail pour l’utiliser. Pour redimensionner ou repositionner un calque sur la zone de travail, reportez-vous au [**[!UICONTROL panneau Propriétés]**](#reposition-resize-delete-a-layer).
-   ![créez une bannière en quelques secondes](/help/assets/assets/add-image-to-canvas.png)
+   ![créer une bannière en un rien de temps](/help/assets/assets/add-image-to-canvas.png)
 1. Activez le bouton (bascule) **[!UICONTROL Rayon uniforme]** et utilisez le curseur **[!UICONTROL Rayon d’angle]** pour ajuster uniformément l’arrondi des quatre coins d’une image. Désactivez le bouton (bascule) pour personnaliser l&#39;arrondi des coins en attribuant des valeurs de rayon spécifiques à chaque coin.
    ![ajuster l’arrondi de l’image](/help/assets/assets/enable-uniform-radius-image.png)
 
 ### Ajouter des calques de texte à la zone de travail{#add-text-to-the-canvas}
 
-Pour ajouter des calques de texte à la zone de travail, procédez comme suit :
+Pour ajouter des calques de texte à la zone de travail, procédez comme suit :
 
 1. Cliquez sur ![création rapide de nouvelles bannières](/help/assets/assets/add-text.svg) pour ajouter un calque de texte à la zone de travail et ouvrir le panneau Propriétés.
 1. Sélectionnez le calque et cliquez sur le texte pour le mettre à jour.
@@ -172,7 +171,7 @@ Pour ajouter des formes à la zone de travail, procédez comme suit :
 
 ### Modifier ou supprimer un calque {#edit-or-delete-a-layer}
 
-Pour modifier ou supprimer un calque de zone de travail, procédez comme suit :
+Pour modifier ou supprimer un calque de zone de travail, procédez comme suit :
 
 1. Cliquez sur ![Modèles prenant en charge les mises à jour dynamiques](/help/assets/assets/show-layers-list.svg) et sélectionnez le calque dans la zone de travail ou dans la liste Calques.
 1. Cliquez sur **[!UICONTROL autres options]** (![modèles avec prise en charge des mises à jour en temps réel](/help/assets/assets/three-dots.svg)) pour modifier ou supprimer le calque.
@@ -182,7 +181,7 @@ Pour modifier ou supprimer un calque de zone de travail, procédez comme suit :
 
 ### Panneau Propriétés{#properties-panel}
 
-Le panneau [!UICONTROL Propriétés] comprend des sections pour [repositionner](#reposition-resize-delete-a-layer), [redimensionner](#reposition-resize-delete-a-layer) et [faire pivoter](#reposition-resize-delete-a-layer) un calque.  Il fournit également des options de remplissage couleur pour [calques de forme](#add-shapes-to-the-canvas), [options de mise en forme de texte](#text-formatting-options-on-properties-panel) pour [calques de texte](#add-text-to-the-canvas), ainsi qu’une option permettant d’[ajouter un lien [!UICONTROL CTA]](#add-CTA-in-dynamic-media-templates) à n’importe quel calque sélectionné.
+Le panneau [!UICONTROL Propriétés] comprend des sections pour [repositionner](#reposition-resize-delete-a-layer), [redimensionner](#reposition-resize-delete-a-layer) et [faire pivoter](#reposition-resize-delete-a-layer) un calque.  Elle fournit également des options de remplissage couleur pour les calques [de forme](#add-shapes-to-the-canvas), [options de mise en forme de texte](#text-formatting-options-on-properties-panel) pour les calques [de texte](#add-text-to-the-canvas), ainsi qu’une option permettant d’[ajouter un lien [!UICONTROL CTA]](#add-CTA-in-dynamic-media-templates) à n’importe quel calque sélectionné.
 Pour accéder au panneau des propriétés d’un calque, cliquez sur ![création rapide de contenu](/help/assets/assets/show-layers-list.svg) et sélectionnez le calque dans la liste pour afficher son panneau [!UICONTROL Propriétés].
 
 ![création rapide de contenu](/help/assets/assets/properties-panel.png)
@@ -191,32 +190,31 @@ Dans le panneau [!UICONTROL Propriétés] d’un calque, sélectionnez un autre 
 
 #### Repositionnement, redimensionnement, rotation ou suppression d’un calque{#reposition-resize-delete-a-layer}
 
-Pour modifier un calque de texte ou d’image, reportez-vous aux actions courantes de modification de calque suivantes :
+Pour modifier un calque de texte ou d’image, reportez-vous aux actions courantes de modification de calque suivantes :
 
-* **Repositionner le calque :** faites glisser le calque pour le déplacer n’importe où sur la zone de travail. Cette action met à jour les valeurs X et Y dans le panneau des propriétés. X et Y sont les coordonnées du centre du calque sur le plan de la zone de travail.
-* **Redimensionner le calque :** sélectionnez le calque et faites glisser ses poignées de bordure pour le redimensionner. Cette action met à jour les valeurs W (largeur) et H (hauteur) dans le panneau des propriétés.
-* **Faire pivoter le calque :** faites glisser la poignée carrée placée verticalement au-dessus du calque pour la faire pivoter autour de son centre. Cette action met à jour les valeurs d’angle dans le panneau Propriétés.
-* **Supprimer le calque :** appuyez sur **Retour arrière** ou **supprimer**, puis cliquez sur **[!UICONTROL Confirmer]** pour supprimer un calque sélectionné.
+* **Repositionner le calque :** faites glisser le calque pour le déplacer n’importe où sur la zone de travail. Cette action met à jour les valeurs X et Y dans le panneau des propriétés. X et Y sont les coordonnées du centre du calque sur le plan de la zone de travail.
+* **Redimensionner le calque :** sélectionnez le calque et faites glisser ses poignées de bordure pour le redimensionner. Cette action met à jour les valeurs W (largeur) et H (hauteur) dans le panneau des propriétés.
+* **Faire pivoter le calque :** faites glisser la poignée carrée placée verticalement au-dessus du calque pour la faire pivoter autour de son centre. Cette action met à jour les valeurs d’angle dans le panneau Propriétés.
+* **Supprimer le calque :** appuyez sur **Retour arrière** ou **Supprimer**, puis cliquez sur **[!UICONTROL Confirmer]** pour supprimer un calque sélectionné.
 
 #### Options de formatage du texte{#text-formatting-options-on-properties-panel}
 
 Mettez en forme votre texte selon la police, la taille, la couleur, le style et l’alignement requis (dans le calque) en modifiant leurs valeurs dans les champs respectifs sous la section **[!UICONTROL Texte]** du panneau.
-Veillez à inclure **[!UICONTROL Redimensionnement de texte intelligent]**. [!UICONTROL Redimensionnement intelligent de texte] fonctionne sur l’algorithme [Copyfit](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting) pour remplir de manière optimale le texte dans la zone de texte, empêcher le débordement du texte et réduire l’espace supplémentaire au bas du texte.
+Veillez à inclure l’algorithme **[!UICONTROL Redimensionnement de texte intelligent]**. [!UICONTROL Redimensionnement de texte intelligent] fonctionne sur l’algorithme [Copyfit](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting) pour remplir de manière optimale le texte dans la zone de texte et empêche le débordement du texte et réduit l’espace supplémentaire au bas du texte.
 
-![&#x200B; création de contenu en un rien de temps &#x200B;](/help/assets/assets/smart-text-resize.png)
+![création de contenu en un rien de temps &#x200B;](/help/assets/assets/smart-text-resize.png)
 
 ### Calques de paramètres {#parameterise-a-layer}
 
-Après avoir créé un modèle avec plusieurs calques d’images, de textes et de formes, paramétrez les calques sélectionnés. Lorsqu’un calque ou sa propriété est paramétré, il obtient une paire clé-valeur (également appelée paramètre ). Ce paramètre peut être inclus dans l’URL du modèle pour mettre à jour la position, la taille ou le contenu du calque en temps réel, ce qui se traduit par une personnalisation du modèle en un rien de temps.
+Après avoir créé un modèle avec plusieurs calques d’images, de textes et de formes, paramétrez les calques sélectionnés. Lorsqu’un calque ou sa propriété est paramétré, il obtient une paire clé-valeur (également appelée paramètre). Ce paramètre peut être inclus dans l’URL du modèle pour mettre à jour la position, la taille ou le contenu du calque en temps réel, ce qui se traduit par une personnalisation du modèle en un rien de temps.
 
-Pour paramétrer un calque :
+Pour paramétrer un calque :
 
 1. Cliquez sur ![création instantanée de contenu](/help/assets/assets/show-layers-list.svg), sélectionnez un calque et cliquez sur **[!UICONTROL Paramètres]**. Le panneau **[!UICONTROL Paramètres]** s’affiche.
 1. Activez le bouton (bascule) **[!UICONTROL Inclure le paramètre]** pour paramétrer une propriété. Pour connaître le comportement de la propriété après paramétrage[&#128279;](#parameterisation-options-or-allowed-parameters) consultez l’option du panneau Paramètres).
-1. **Facultatif :** renommez le nom du paramètre. Un nom de paramètre comporte un nom de calque suivi d’un suffixe. Pour un calque sélectionné, toutes ses propriétés paramétrées partagent le même nom de calque suivi d’un suffixe variable. Renommez le nom du calque en suivant la convention de nommage sémantique de sorte que, lorsque vous incluez le paramètre dans l’URL, le nom du paramètre explique lui-même le contenu du calque ou son objectif.
+1. **Facultatif :** renommez le paramètre. Un nom de paramètre comporte un nom de calque suivi d’un suffixe. Pour un calque sélectionné, toutes ses propriétés paramétrées partagent le même nom de calque suivi d’un suffixe variable. Renommez le calque en suivant la convention de nommage sémantique de sorte que, lorsque vous incluez le paramètre dans l’URL, le nom du paramètre explique lui-même le contenu du calque ou son objectif.
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
-   ![création instantanée de contenu](/help/assets/assets/parameterise-a-layer.png)
-Pour basculer entre le panneau Paramètres d’un calque d’image et de texte, sélectionnez le calque sur la zone de travail et cliquez sur **[!UICONTROL Paramètres]**.
+   ![création instantanée de contenu](/help/assets/assets/parameterise-a-layer.png)Pour basculer entre le panneau Paramètres d’un calque d’image et de texte, sélectionnez le calque sur la zone de travail et cliquez sur **[!UICONTROL Paramètres]**.
 
 #### Option du panneau Paramètres {#parameterisation-options-or-allowed-parameters}
 
@@ -276,33 +274,33 @@ Exécutez les étapes suivantes pour fusionner deux sous-chaînes adjacentes afi
    >
    >Seules les sous-chaînes au format identique peuvent être fusionnées.
 
-### Regroupez les calques pour contrôler leur visibilité simultanément{#group-layers}
+### Regrouper des calques pour contrôler leur visibilité simultanément{#group-layers}
 
-Pour conserver la flexibilité de vos modèles, vous pouvez également utiliser un nom de paramètre unique pour contrôler plusieurs calques. Cette stratégie est utile pour le paramètre de visibilité (masquer ou afficher les calques), afin de mettre à jour la conception ou les graphiques d’un seul modèle.
+Pour conserver la flexibilité de vos modèles, vous pouvez également utiliser un nom de paramètre unique pour contrôler plusieurs calques. Cette stratégie est utile pour le paramètre de visibilité (masquer ou afficher les calques), afin de mettre à jour la conception ou les images à partir d’un seul modèle.
 
 Pour attribuer le même nom aux paramètres [!UICONTROL Masquer] (![création rapide de contenu](/help/assets/assets/Visibility-icon.svg)) de plusieurs calques, procédez comme suit pour les masquer ou les afficher simultanément.
 
 1. Accédez au [**[!UICONTROL panneau Propriétés]**](#parameterise-a-layer) d’un calque.
-1. Activez/désactivez le paramètre **[!UICONTROL Masquer]** s’il n’est pas paramétré précédemment.
+1. Activez le paramètre **[!UICONTROL Masquer]** s’il n’a pas été paramétré précédemment.
 1. **Facultatif :** renommez le paramètre **[!UICONTROL Masquer]**.
 1. Copiez le nom du paramètre **[!UICONTROL Masquer]**.
-1. Accédez au panneau Paramètre des autres calques en les sélectionnant dans la zone de travail et en activant/désactivant leur paramètre **[!UICONTROL Masquer]** s’il n’est pas paramétré.
-1. Remplacez leur nom **[!UICONTROL Masquer le paramètre]** par le nom copié.
-1. Cliquez sur **[!UICONTROL Enregistrer]** pour regrouper les calques.
+1. Accédez au panneau Paramètres des autres calques en les sélectionnant dans la zone de travail et en activant leur paramètre **[!UICONTROL Masquer]** s’il n’est pas paramétré.
+1. Remplacez le nom de leur paramètre **[!UICONTROL Masquer]** par le nom copié.
+1. Cliquez sur **[!UICONTROL Enregistrer]** pour grouper les calques.
 1. Exécutez les étapes 3 et 4 de la section [**[!UICONTROL Prévisualisation et publication]**](#preview-and-publish-template-and-copy-template-deliver-url) pour afficher vos modifications.
 
 ## Prévisualiser et publier le modèle pour copier l’URL de diffusion{#preview-and-publish-template-and-copy-template-deliver-url}
 
-Procédez comme suit pour prévisualiser et publier le modèle et copier l’URL de diffusion :
+Procédez comme suit pour prévisualiser et publier le modèle et copier l’URL de diffusion :
 
-1. Sur la page Zone de travail, cliquez sur **[!UICONTROL Aperçu]**. Vous pouvez également accéder à **[!UICONTROL Vue]** **>** **[!UICONTROL Dynamic Media Assets]** **>** rechercher et sélectionner votre modèle **>** cliquer sur **[!UICONTROL Modifier le modèle]**>**>** cliquer sur **[!UICONTROL Preview]**. La page d’aperçu affiche le modèle, ses paramètres (calques et propriétés paramétrés), l’état de publication et l’option **[!UICONTROL Publier]**.
+1. Sur la page de la zone de travail, cliquez sur **[!UICONTROL Prévisualiser]**. Vous pouvez également accéder à **[!UICONTROL Vue]** **>** **[!UICONTROL Dynamic Media Assets]** **>** rechercher et sélectionner votre modèle **>** cliquer sur **[!UICONTROL Modifier le modèle]**>**>** cliquer sur **[!UICONTROL Preview]**. La page de prévisualisation affiche le modèle, ses paramètres (calques et propriétés paramétrés), le statut de publication et l’option **[!UICONTROL Publier]**.
 1. Sélectionnez des paramètres dans le panneau **[!UICONTROL Paramètres du modèle]** pour modifier leurs valeurs et mettre instantanément à jour le contenu, la taille, la position ou le formatage textuel du calque de modèle correspondant dans l’aperçu. Par exemple :
    1. Sélectionnez un calque de texte et modifiez son texte ou
-   1. Sélectionnez un calque d’image, cliquez sur ![création de contenu à la volée](/help/assets/assets/add-image.svg), sélectionnez une image dans le sélecteur de ressources, puis cliquez sur **[!UICONTROL Actualiser]**.
+   1. Sélectionnez un calque d’image, cliquez sur ![Création de contenu à la volée](/help/assets/assets/add-image.svg), sélectionnez une image dans le sélecteur de ressources, puis cliquez sur **[!UICONTROL Actualiser]**.
 
-   Le modèle est immédiatement mis à jour, affichant le texte modifié et remplaçant l’image précédente par la nouvelle. En outre, la valeur du paramètre d’image reflète le nouveau chemin d’accès à l’image. De même, vous pouvez redimensionner un calque en ajustant ses valeurs, et les modifications sont appliquées au modèle en temps réel.
+   Le modèle est immédiatement mis à jour, affichant le texte modifié et remplaçant l’image précédente par la nouvelle. En outre, la valeur du paramètre d’image reflète le nouveau chemin d’accès à l’image. De même, vous pouvez redimensionner un calque en ajustant ses valeurs. Les modifications sont appliquées au modèle en temps réel.
 1. Sélectionnez le paramètre **[!UICONTROL Masquer]** pour les calques [groupés](#group-layers) dans la liste pour les afficher ou les masquer ensemble dans le modèle.
-1. **Facultatif :** modifiez la valeur du paramètre **[!UICONTROL Masquer]** comprise entre 0 et 1 et cliquez sur **[!UICONTROL Actualiser]** pour afficher les modifications. Les calques ayant le même paramètre **[!UICONTROL Masquer]** masquent ou s’affichent ensemble. De même, vous pouvez contrôler la visibilité des calques à partir de l’URL.
+1. **Facultatif :** modifiez la valeur du paramètre **[!UICONTROL Masquer]** comprise entre 0 et 1 et cliquez sur **[!UICONTROL Actualiser]** pour afficher les modifications. Les calques ayant le même paramètre **[!UICONTROL Masquer]** masquent ou s’affichent ensemble. De même, vous pouvez contrôler la visibilité des calques à partir de l’URL.
 
    ![création de contenu à la volée](/help/assets/assets/dm-templates-publish-status.png)
 Vous pouvez également activer le bouton (bascule) **[!UICONTROL Inclure tous les paramètres]** pour modifier toutes les valeurs de paramètre affichées et voir les mises à jour dans l’aperçu du modèle.
@@ -319,14 +317,14 @@ Pour copier l&#39;URL de diffusion du modèle, procédez comme suit :
 
 1. Cliquez sur **[!UICONTROL Copier l’URL]**. La boîte de dialogue **[!UICONTROL Copier l’URL]** s’affiche. Sélectionnez et copiez l’URL affichée. Le premier paramètre de l’URL commence après un point d’interrogation **([!UICONTROL ?])** et une paire clé-valeur commence par **[!UICONTROL $]** et se termine par **[!UICONTROL &amp;]**. La clé et la valeur sont séparées par un signe égal **([!UICONTROL =])**, avec la clé à gauche et la valeur à droite.
 1. Collez cette URL dans l’onglet de votre navigateur et affichez votre modèle dynamique. Personnalisez le modèle en temps réel en mettant à jour la valeur du paramètre requis (valeur de la clé) dans l’URL directement, comme illustré à l’[étape 2](#preview-and-publish-template-and-copy-template-deliver-url) de la section **Prévisualisation et publication**.
-1. Utilisez cette URL pour un merchandising rapide de vos produits ou services. Vous pouvez partager cette URL avec vos clients ou l’intégrer à votre site web ou à toute application tierce en aval pour afficher la bannière et y apporter des mises à jour en temps réel afin de refléter les offres en cours.
+1. Utilisez cette URL pour un merchandising rapide de vos produits ou services. Vous pouvez partager cette URL avec votre clientèle ou l’intégrer à votre site web ou à toute application tierce en aval pour afficher la bannière et y apporter des mises à jour en temps réel afin de refléter les offres en cours.
 
 ## Effectuer des mises à jour en temps réel sur le modèle à partir de l’URL{#update-the-template-from-the-url}
 
-Modifier des paramètres directement dans l’URL peut s’avérer fastidieux. Pour simplifier :
+Modifier des paramètres directement dans l’URL peut s’avérer fastidieux. Pour simplifier :
 
 1. Copiez l’URL et collez-la dans un bloc-notes.
-1. Utilisez Cmd+F (Mac) ou Ctrl+F (Windows) pour rechercher et modifier les valeurs de paramètre. Par exemple :
+1. Utilisez Cmd+F (Mac) ou Ctrl+F (Windows) pour rechercher et modifier les valeurs de paramètre. Par exemple :
    * Recherchez et remplacez les chemins d’accès des calques d’image.
    * Recherchez les coordonnées [paramétrées](#parameterise-a-layer), la largeur et la hauteur du calque pour ajuster leurs valeurs.
    * Modifiez le texte, la police, la couleur, la taille ou l’alignement des calques de texte.
@@ -334,9 +332,9 @@ Modifier des paramètres directement dans l’URL peut s’avérer fastidieux. P
 
 Collez cette URL mise à jour dans votre navigateur pour afficher les modifications.
 
-## Modification du modèle{#edit-the-template}
+## Éditer le modèle{#edit-the-template}
 
-Modifiez le modèle en procédant comme suit :
+Modifiez le modèle en procédant comme suit :
 
 1. Sur la [!DNL Assets view], cliquez sur **[!UICONTROL Dynamic Media Assets]**.
 2. Accédez à l’emplacement du modèle.
@@ -383,8 +381,8 @@ Regardez cette vidéo détaillée pour découvrir comment ajouter un lien CTA à
 
 ## Points importants à noter {#important-points-to-note}
 
-* Après avoir créé un modèle avec des calques d’image paramétrés pour les mises à jour dynamiques, assurez-vous que les images destinées aux futures mises à jour partagent les mêmes dimensions que les images paramétrées. Cela permet de s’assurer que les images s’intègrent parfaitement aux calques sans déborder ou laisser d’espaces vides. Actuellement, le modèle ne prend pas en charge les ajustements de dimension automatiques pour ajuster les images dans les calques.
-* Il n’existe aucune prise en charge de sous-chaînes dans un calque de texte. L’utilisateur ne peut pas appliquer différentes propriétés de police à la sous-chaîne d’un calque de texte.
+* Après avoir créé un modèle avec des calques d’image paramétrés pour des mises à jour dynamiques, assurez-vous que les images destinées aux futures mises à jour partagent les mêmes dimensions que les images paramétrées. Cela permet de s’assurer que les images s’intègrent parfaitement aux calques sans déborder ou laisser d’espaces vides. Actuellement, le modèle ne prend pas en charge l’ajustement automatique des dimensions pour ajuster les images dans les calques.
+* Les sous-chaînes ne sont pas prises en charge dans les calques de texte. L’utilisateur ne peut pas appliquer différentes propriétés de police à la sous-chaîne d’un calque de texte.
 * La prise en charge de plusieurs entreprises [!DNL Dynamic Media] n’est actuellement pas disponible avec les modèles [!DNL Dynamic Media].
 * En cas de copie ou de déplacement, le sélecteur de destination affiche tous les dossiers (y compris les dossiers synchronisés non [!DNL Dynamic Media]). En outre, à l’heure actuelle, elle n’affiche pas les ressources du modèle de [!DNL Dynamic Media] (il s’agit dans les deux cas de limitations du sélecteur de destination).
 * Toute opération de mise à jour sur un dossier (par exemple, Publication ou Suppression) à partir de la section Assets a un impact sur les modèles de [!DNL Dynamic Media] disponibles dans ce dossier.

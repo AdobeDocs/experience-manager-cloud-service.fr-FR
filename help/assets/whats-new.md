@@ -4,10 +4,10 @@ description: Apprenez-en plus sur certaines des fonctionnalités de Content Hub
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: 6aeab06b4dc48249e69dd265eefb99db9d45d6c3
+source-git-commit: 46ca8082f85cdb957681aa9596b9312b35e4f6ec
 workflow-type: tm+mt
-source-wordcount: '964'
-ht-degree: 74%
+source-wordcount: '1603'
+ht-degree: 55%
 
 ---
 
@@ -25,9 +25,43 @@ La vidéo suivante présente les principales fonctionnalités de Content Hub :
 
 ## Date de publication {#release-date}
 
-La date de publication de la version Content Hub (2026.02.0) est le vendredi 26 février 2026 (la même que celle de la version AEM as a Cloud Service). La prochaine disponibilité des fonctionnalités (2026.03.0) est prévue pour le vendredi 26 mars 2026.
+La date de publication de la version Content Hub (2026.05.0) est le 28 mai 2026 (la même que celle de la version AEM as a Cloud Service). La prochaine version des fonctionnalités (2026.06.0) est prévue pour le 25 juin 2026.
 
-## Fonctionnalités de la version de février 2026 {#february-release-features}
+## Fonctionnalités de la version de mai 2026 {#may-2026-release-features}
+
+**Recherche optimisée par l&#39;IA**
+
+AEM Assets Content Hub comprend désormais Recherche optimisée par l&#39;IA, une fonctionnalité de recherche avancée qui permet de comprendre la signification et l’intention des requêtes des utilisateurs et utilisatrices au lieu de se fier uniquement à des correspondances exactes de mots-clés. Recherche optimisée par l&#39;IA fournit des résultats plus précis et pertinents en reconnaissant les relations entre les mots, les concepts et l’intention de l’utilisateur. Il prend en charge les requêtes multilingues, gère les fautes d’orthographe et les fautes de frappe, comprend les synonymes et affiche les ressources pertinentes même lorsque les utilisateurs n’utilisent pas les termes exacts des métadonnées.
+
+Par exemple, une recherche de `Woman drinking coffee` peut également renvoyer des ressources balisées avec des termes associés, tels que `Lady`, `Girl`, `Latte` ou `Cappuccino`.
+
+Les administrateurs peuvent activer ou désactiver Recherche optimisée par l&#39;IA dans Content Hub à l’aide du menu Configurations en sélectionnant Recherche optimisée par l&#39;IA ou la recherche traditionnelle par mot-clé.
+
+[!BADGE Examiner en détail cette fonctionnalité]{type=Informative url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#ai-search-aem-assets-content-hub"}
+
+
+**Options de tri personnalisé**
+
+Content Hub permet désormais aux administrateurs d’activer les champs de métadonnées personnalisés en tant qu’options de tri sur la page d’accueil de Content Hub. Outre les options de tri par défaut, Taille, Modifié, Nom et Pertinence, les administrateurs peuvent configurer des champs de métadonnées spécifiques à l’entreprise tels que le canal, la région, le SKU ou la campagne pour aider les utilisateurs à organiser plus efficacement les résultats de la recherche.
+
+[!BADGE Examiner en détail cette fonctionnalité]{type=Informative url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#configure-sorting-aem-assets-content-hub"}
+
+**Prise en charge des événements de recherche et de téléchargement de ressources pour les API de diffusion**
+
+Les API de diffusion AEM Assets prennent désormais en charge la recherche de ressources et les événements de téléchargement de ressources, ce qui permet aux entreprises de suivre et de répondre à la manière dont les ressources sont découvertes et utilisées dans les applications et expériences connectées. Ces événements permettent d’améliorer la visibilité sur les modèles d’utilisation des ressources, de prendre en charge les workflows d’analyse et de création de rapports et de simplifier les intégrations aux systèmes externes et les processus d’automatisation.
+
+Grâce aux informations basées sur les événements, les équipes peuvent mieux comprendre l’engagement du contenu et créer des workflows de ressources numériques plus connectés. Pour plus d’informations, consultez la [documentation de l’API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/asset_downloaded).
+
+**URL de diffusion des ressources**
+
+Content Hub permet désormais aux utilisateurs de copier l’URL de diffusion d’une ressource directement à partir des propriétés de la ressource. Cette amélioration facilite le partage et l’intégration de ressources approuvées sur des sites web, des applications et des systèmes externes. En fournissant un accès rapide aux liens prêts pour la diffusion, les équipes peuvent rationaliser les workflows de distribution de contenu et accélérer la réutilisation des ressources dans les expériences digitales.
+
+>[!IMPORTANT]
+>
+>Ces fonctionnalités sont disponibles en tant que fonctionnalités à disponibilité limitée. Vous pouvez [créer et envoyer un dossier d’assistance client Adobe](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html) pour l’activer pour votre déploiement.
+
+
+## Fonctionnalités de la version de février 2026 {#february-2026-release-features}
 
 **Gestion des autorisations dans Content Hub à l’aide de l’agent de gouvernance AEM**
 
@@ -38,7 +72,7 @@ Dans Content Hub, l’agent de gouvernance AEM s’assure que seules les bonnes 
 [!BADGE Examiner en détail cette fonctionnalité]{type=Informative url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
 
 
-## Fonctionnalités de la version d’octobre {#october-release-features}
+## Fonctionnalités de la version d’octobre 2025 {#october-2025-release-features}
 
 **Améliorations apportées à l’expérience de téléchargement Content Hub**
 
@@ -46,7 +80,7 @@ Content Hub prend désormais en charge le téléchargement de plusieurs rendus d
 
 [!BADGE Examiner en détail cette fonctionnalité]{type=Informative url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
 
-## Fonctionnalités de la version de septembre {#september-release-features}
+## Fonctionnalités de la version de septembre 2025 {#september-2025-release-features}
 
 **Marquer les collections comme favoris**
 
@@ -58,7 +92,7 @@ Les administrateurs et administratrices de Content Hub peuvent désormais éping
 
 [!BADGE Examiner en détail cette fonctionnalité]{type=Informative url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
-## Fonctionnalités de la version d’août {#august-release-features}
+## Fonctionnalités de la version d’août 2025 {#august-release-features}
 
 **Recherche en masse via les propriétés de filtre**
 
@@ -66,7 +100,7 @@ Content Hub permet désormais de découvrir plus rapidement les ressources dont
 
 [!BADGE Examiner en détail cette fonctionnalité]{type=Informative url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#bulk-search"}
 
-## Fonctionnalités de la version de juillet {#july-release-features}
+## Fonctionnalités de la version de juillet 2025 {#july-2025-release-features}
 
 **Amélioration de la flexibilité du branding dans le hub de contenus**
 
@@ -86,7 +120,7 @@ Vous pouvez désormais ajouter un titre lorsque vous générez un lien partagé,
 
 Le hub de contenus comprend désormais une option **Tout afficher** dans les filtres, ce qui permet d’afficher toutes les facettes disponibles ainsi que le nombre de ressources, en partant de la limite actuelle de dix facettes maximum. L’amélioration des fonctionnalités de recherche et de tri au sein de chaque filtre facilite la découverte et la gestion plus efficaces des ressources.
 
-## Fonctionnalités de la version de juin {#june-release-features}
+## Fonctionnalités de la version de juin 2025 {#june-2025-release-features}
 
 ### Gouvernance des collections {#collections-governance}
 
@@ -96,7 +130,7 @@ Content Hub permet désormais de contrôler l’accès aux collections lors de 
 
 [!BADGE Examiner en détail cette fonctionnalité]{type=Informative url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#create-collections"}
 
-## Fonctionnalités de la version de mai {#may-release-features}
+## Fonctionnalités de la version de mai 2025 {#may-2025-release-features}
 
 La version de mai de Content Hub comprend les fonctionnalités suivantes :
 

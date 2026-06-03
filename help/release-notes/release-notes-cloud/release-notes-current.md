@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 08fe79147c81c0a5b319fef3ef7733b6053b399a
+source-git-commit: 46ca8082f85cdb957681aa9596b9312b35e4f6ec
 workflow-type: tm+mt
-source-wordcount: '2157'
-ht-degree: 29%
+source-wordcount: '2282'
+ht-degree: 28%
 
 ---
 
@@ -18,7 +18,7 @@ La section suivante concerne les notes de mise à jour techniques de la version 
 
 >[!NOTE]
 >
->À partir de là, vous pouvez accéder aux notes de mise à jour des versions précédentes, telles que 2023 ou 2024.
+>À partir de là, vous pouvez accéder aux notes de mise à jour des versions précédentes telles que 2024 ou 2025.
 >
 >Consultez la section [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour en savoir plus sur les activations de fonctionnalités à venir pour [!DNL Experience Manager] as a Cloud Service.
 
@@ -28,18 +28,20 @@ La section suivante concerne les notes de mise à jour techniques de la version 
 
 ## Date de publication {#release-date}
 
-La date de publication de la version actuelle (2026.4.0) de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le 30 avril 2026. La prochaine version des fonctionnalités (2026.5.0) est prévue pour le 28 mai 2026.
+La date de publication de la version actuelle (2026.5.0) de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le 28 mai 2026. La prochaine version des fonctionnalités (2026.6.0) est prévue pour le 25 juin 2026.
 
 ## Notes de mise à jour de la maintenance {#maintenance}
 
 Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/release-notes/maintenance/latest.md).
 
 <!-- 
+
 ## Release Video {#release-video}
 
-Have a look at the April 2026 Release Overview video for a summary of the features added in the 2026.4.0 release:
+Have a look at the May 2026 Release Overview video for a summary of the features added in the 2026.5.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483062/?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3491492/?captions=fre_fr&quality=12)
+
 -->
 
 ## Programmes AEM Beta {#aem-beta-programs}
@@ -85,23 +87,51 @@ Voir [Programmes bêta AEM Foundation](#foundation-early-adopter).
 
 Voir [Programmes bêta &#x200B;](/help/implementing/cloud-manager/release-notes/current.md).
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Intégration de la traduction dans l’IA {#ai-translation-integration}
+### Nouvelles fonctionnalités dans Content Hub {#new-features-content-hub}
 
-Les utilisateurs d’AEM peuvent désormais tirer parti des grands modèles de langue (LLM) pour la traduction de contenu, offrant ainsi une qualité de traduction humaine à la vitesse de la traduction automatique. Tout comme les services de traduction tiers traditionnels, Azure OpenAI peut être configuré en tant que fournisseur de traduction dans AEM, avec la prise en charge de LLM supplémentaires prévue pour les prochaines versions. Les clients utilisent leurs propres licences LLM pour cette fonctionnalité. En outre, les guides de style de traduction d’entreprise peuvent être chargés vers AEM, ce qui permet d’extraire les règles de traduction pour assurer la cohérence de la marque et du style. Consultez [&#x200B; Configuration de l’intégration de la traduction d’IA &#x200B;](/help/sites-cloud/administering/translation/ai-translation-integration.md) pour plus d’informations.
+**Recherche optimisée par l&#39;IA**
 
-### Éditeur de fragment de contenu {#cf-editor}
+AEM Assets Content Hub comprend désormais Recherche optimisée par l&#39;IA, une fonctionnalité de recherche avancée qui permet de comprendre la signification et l’intention des requêtes des utilisateurs et utilisatrices au lieu de se fier uniquement à des correspondances exactes de mots-clés. Recherche optimisée par l&#39;IA fournit des résultats plus précis et contextuels en reconnaissant les relations entre les mots, les concepts et l’intention de l’utilisateur. Il prend en charge les requêtes multilingues, gère les fautes d’orthographe et les fautes de frappe, comprend les synonymes et affiche les ressources pertinentes même lorsque les utilisateurs n’utilisent pas les termes exacts des métadonnées.
 
-Le nouvel éditeur de fragment de contenu vous permet désormais de prévisualiser la représentation JSON d’un fragment de contenu. Cela permet de valider la structure de contenu indépendamment du rendu et de restaurer la parité avec l’éditeur de fragment de contenu précédent dans l’interface utilisateur tactile d’AEM pour cette fonctionnalité.
+Par exemple, une recherche de `Woman drinking coffee` peut également renvoyer des ressources balisées avec des termes associés, tels que `Lady`, `Girl`, `Latte` ou `Cappuccino`.
 
-## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+Les administrateurs peuvent activer ou désactiver Recherche optimisée par l&#39;IA dans Content Hub à l’aide du menu Configurations en sélectionnant Recherche optimisée par l&#39;IA ou la recherche traditionnelle par mot-clé.
 
-**Le gestionnaire d’accès est désormais disponible pour les applications Adobe Workfront et non Adobe**
 
-Le gestionnaire de contenu est désormais disponible pour les applications Adobe Workfront et non Adobe (tierces), ce qui permet d’étendre la découverte intelligente des ressources et la réutilisation du contenu au-delà d’Adobe Express et d’AEM Sites. Cette version apporte aux workflows Adobe Workfront et aux applications externes l’expérience complète du gestionnaire de contenu, notamment la recherche optimisée par l’IA, les recommandations contextuelles, la découverte basée sur des résumés de campagne, l’accès aux rendus Dynamic Media, la découverte de fragments de contenu, les filtres et les métadonnées de ressources.
+**Options de tri personnalisé**
 
-Vous pouvez désormais découvrir, évaluer et réutiliser des ressources approuvées par AEM Assets directement dans vos applications préférées, ce qui permet une utilisation cohérente des ressources, une efficacité améliorée et une création de contenu rationalisée à la fois dans les applications Adobe et non Adobe.
+Content Hub permet désormais aux administrateurs d’activer les champs de métadonnées personnalisés en tant qu’options de tri sur la page d’accueil de Content Hub. Outre les options de tri par défaut, Taille, Modifié, Nom et Pertinence, les administrateurs peuvent configurer des champs de métadonnées spécifiques à l’entreprise tels que le canal, la région, le SKU ou la campagne pour aider les utilisateurs à organiser plus efficacement les résultats de la recherche.
+
+**Prise en charge des événements de recherche et de téléchargement de ressources pour les API de diffusion**
+
+Les API de diffusion AEM Assets prennent désormais en charge la recherche de ressources et les événements de téléchargement de ressources, ce qui permet aux entreprises de suivre et de répondre à la manière dont les ressources sont découvertes et utilisées dans les applications et expériences connectées. Ces événements permettent d’améliorer la visibilité sur les modèles d’utilisation des ressources, de prendre en charge les workflows d’analyse et de création de rapports et de simplifier les intégrations aux systèmes externes et les processus d’automatisation.
+
+Grâce aux informations basées sur les événements, les équipes peuvent mieux comprendre l’engagement du contenu et créer des workflows de ressources numériques plus connectés. Pour plus d’informations, consultez la [documentation de l’API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/asset_downloaded).
+
+**URL de diffusion des ressources**
+
+Content Hub permet désormais aux utilisateurs de copier l’URL de diffusion d’une ressource directement à partir des propriétés de la ressource. Cette amélioration facilite le partage et l’intégration de ressources approuvées sur des sites web, des applications et des systèmes externes. En fournissant un accès rapide aux liens prêts pour la diffusion, les équipes peuvent rationaliser les workflows de distribution de contenu et accélérer la réutilisation des ressources dans les expériences digitales.
+
+>[!IMPORTANT]
+>
+>Ces fonctionnalités sont disponibles en tant que fonctionnalités à disponibilité limitée. Vous pouvez [créer et envoyer un dossier d’assistance client Adobe](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html) pour l’activer pour votre déploiement.
+
+
+### Nouvelles fonctionnalités de Dynamic Media avec OpenAPI {#new-features-dynamic-media-openapi}
+
+**Recadrage intelligent de vidéo**
+
+Dynamic Media avec les fonctionnalités OpenAPI prennent désormais en charge les recadrages intelligents de vidéos pour les ressources vidéo dans AEM Assets. Les recadrages intelligents vidéo utilisent une analyse optimisée par l’IA pour garder automatiquement le sujet principal ciblé sur différents proportions et appareils, ce qui permet d’offrir des expériences de visionnage optimisées sur le web et les appareils mobiles. Une fois qu’elles sont activées et configurées par les administrateurs, les entreprises peuvent générer des sorties vidéo recadrées intelligentes pour les ressources approuvées et fournir de manière dynamique les images les plus appropriées pendant la lecture.
+
+**Prise en charge des légendes et des pistes audio multiples pour les vidéos**
+
+Dynamic Media avec les fonctionnalités OpenAPI prennent désormais en charge plusieurs légendes et plusieurs pistes audio pour les ressources vidéo. Il permet aux entreprises de diffuser des expériences vidéo localisées et accessibles à un public international en associant plusieurs sous-titres et pistes audio spécifiques à la langue à une seule vidéo principale. Les auteurs peuvent gérer efficacement ces suivis à partir d’une interface unifiée, ce qui simplifie la diffusion de contenu multilingue et prend en charge les exigences d’accessibilité régionales.
+
+>[!IMPORTANT]
+>
+>Ces fonctionnalités sont disponibles en tant que fonctionnalités à disponibilité limitée. Vous pouvez [créer et envoyer un dossier d’assistance client Adobe](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html) pour l’activer pour votre déploiement.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -125,49 +155,21 @@ Les Forms adaptatives qui envoient une liste Microsoft SharePoint prennent déso
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Nouvelles fonctionnalités {#foundation-new}
 
-#### Outils d’IA dédiée aux IDE pour le développement Java et Dispatcher d’AEM {#ai-dev}
+#### Migration de code assisté par l’IA vers AEM as a Cloud Service {#aem-ide-cs-migration}
 
-Les équipes Java-stack utilisent de plus en plus le développement assisté par IA dans des outils tels que Cursor, Claude Code, Visual Studio et IntelliJ pour accélérer la diffusion des fonctionnalités et améliorer la qualité du code.
+Accélérez votre migration d’AEM 6.5 (ou version antérieure) vers AEM as a Cloud Service (Java-stack) en utilisant l’outil IDE AI pour agir sur les recommandations du rapport de l’analyseur de bonnes pratiques.
 
-Les agents de codage peuvent utiliser l’outil IDE pour générer et déboguer le code AEM et la configuration du Dispatcher. À titre d’exemple, la présentation vidéo ci-dessous montre comment créer un composant AEM à l’aide des compétences de l’agent.
+En savoir plus sur [l’outil d’IA dédiée à l’IDE pour la migration vers le cloud](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md) et sur d’autres [le développement local avec les outils d’IA](/help/ai-in-aem/local-development-with-ai-tools.md) (compétences des agents et serveurs MCP locaux).
 
-Apprenez-en davantage sur [le développement local avec les outils d’IA](/help/ai-in-aem/local-development-with-ai-tools.md) et n’hésitez pas à envoyer des questions ou des commentaires par e-mail à [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com).
+>[!VIDEO](https://video.tv.adobe.com/v/3491440/?captions=fre_fr&quality=12)
 
+#### Modifications de l’affichage du statut de la file d’attente de réplication {#replication-queue-status-display}
 
->[!VIDEO](https://video.tv.adobe.com/v/3484978/?learn=on&enablevpops)
+Dans l’interface utilisateur de création, les agents de réplication affichent désormais deux files d’attente consolidées (**persistantes** et **entièrement publiées**) au lieu de files d’attente distinctes par capsule de publication, ce qui réduit la complexité tout en reflétant la mise à l’échelle automatique du niveau de publication.
 
-#### Serveur MCP de gouvernance d’expérience {#gov-mcp-server}
+En savoir plus sur les [&#x200B; Files d’attente de réplication &#x200B;](/help/operations/replication.md#replication-queues).
 
-### Nouvelles fonctionnalités d’AEM Forms {#forms-new-features}
-
-**Prise en charge du contrôle de version dans Forms Manager**
-Forms Manager [prend désormais en charge le contrôle de version pour les Forms adaptatifs (composants principaux et composants de base)](/help/forms/manage-form-versions-forms-manager.md), les fragments de formulaire, les thèmes, les modèles XDP et les ressources binaires. Créez des versions, affichez l’historique complet des versions et restaurez les états précédents de vos ressources de formulaire directement à partir de la console Forms et documents.
-
-### Fonctionnalités d’accès anticipé d’AEM Forms {#forms-early-access-features}
-
-Le serveur MCP d’Experience Governance est désormais disponible pour tous. Il s’intègre aux outils de développement et aux chatbots de l’IA qui prennent en charge le protocole MCP (Model Context Protocol), ce qui vous permet de protéger l’intégrité et la conformité de la marque à l’aide d’invites en langage naturel dans votre chatbot ou votre IDE. Vous pouvez évaluer le contenu (texte, images, pages) par rapport aux règles de gouvernance de marque, et récupérer les configurations de marque et les contrôles de gouvernance disponibles.
-
-En savoir plus sur les [serveurs AEM MCP](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) et l’[agent de gouvernance](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
-
-
->[!VIDEO](https://video.tv.adobe.com/v/3486258/?learn=on&enablevpops)
-
-#### Claude Connector {#aem-claude-connector}
-
-Les utilisateurs Claude peuvent parcourir la [marketplace du connecteur](https://claude.ai/settings/connectors) d&#39;Anthropic pour installer en 1 clic le [connecteur Adobe Experience Manager](/help/ai-in-aem/mcp-support/setup-claude.md#aem-claude-connector). Ce serveur MCP expose un ensemble croissant d’outils permettant d’interagir avec AEM, notamment pour modifier le contenu à l’aide d’invites.
-
-#### OIDC AEM sur la publication de nouvelles fonctionnalités {#aem-oidc-on-publish-new-features}
-
-* Correction : les paramètres de requête de la requête originale sont perdus après l’authentification
-* Redirection personnalisée après l’authentification dans l’authentification OIDC [documentation](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md#custom-redirect-after-authentication)
-
-#### Prise en charge du service de messagerie pour l’API Microsoft Graph {#mail-service-graph-api}
-
-Le service de messagerie AEM prend désormais en charge Microsoft® Outlook (via Microsoft 365) à l’aide de l’API Microsoft Graph. Cela s’avère particulièrement utile pour les organisations qui n’autorisent pas le protocole SMTP, qui est déjà pris en charge par le service de messagerie. Authentification via OAuth 2.0. [Découvrez comment configurer](/help/security/oauth2-support-for-mail-service.md#microsoft-graph-api).
-
-#### Les journaux CDN peuvent être transférés à la logique Sumo {#sumo-cdn-logforwarding}
-
-La fonctionnalité [Transfert de journal](/help/implementing/developing/introduction/log-forwarding.md#sumologic) prend désormais en charge l’envoi de journaux CDN à Sumo Logic. Auparavant, le transfert des journaux vers Sumo Logic se limitait aux journaux AEM.
+![Files d’attente de réplication affichant les files d’attente &#x200B;](/help/operations/assets/replication-queues.png " réplication persistantes et entièrement publiées")
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Avis importants {#foundation-notices}
 
@@ -208,6 +210,20 @@ Pour plus d’informations, consultez l’[article sur l’obsolescence](/help/r
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Early Adopter Caractéristiques {#foundation-early-adopter}
 
+#### Gestion des heures creuses et mise à jour des périodes de disponibilité avec l’assistant AEM AI (disponibilité limitée) {#quiet-hours-ai}
+
+Vous pouvez désormais afficher, créer et modifier des heures creuses et mettre à jour des périodes libres directement via l’assistant AEM AI.
+L’avantage clé est la réduction des erreurs de planification. Lorsque vous effectuez une demande, l’assistant vous guide tout au long des étapes possibles et signale les limites qui s’appliquent, telles que la limite de trois périodes, l’intervalle obligatoire d’une semaine entre les périodes et les fenêtres d’exclusion de la maintenance planifiée que vous ne pouvez pas planifier. Ainsi, au lieu de découvrir une contrainte après une configuration ayant échoué, les propriétaires d’entreprise et les responsables de déploiement sont dirigés vers un planning valide dans la même conversation. Cela permet de protéger les fenêtres d’activité critiques contre les mises à jour de maintenance automatique tout en réduisant les allers-retours et les erreurs de configuration.
+
+#### Instantanés pour les RDE (programme *Public Beta*) {#rde-snapshot-program}
+
+Dans la version bêta publique (début juin), les environnements de développement rapide (RDE) prennent désormais en charge une fonctionnalité [pour prendre un instantané](/help/implementing/developing/introduction/rapid-development-environments.md#snapshots) de l’état actuel du code et du contenu, qui peut être restaurée ultérieurement. Cela peut s’avérer utile lors de la synchronisation du code qui peut devoir être restauré à un état précédent ou, lorsqu’au cours du développement, il est nécessaire d’alterner entre plusieurs fonctionnalités différentes. Il est également possible de restaurer uniquement le contenu modifiable en tant que point de départ connu pour les tests.
+
+Début juin, la mise à jour vers les derniers plug-ins aio activera cette fonctionnalité.
+
+*En utilisant le Beta d’instantanés du RDE, vous reconnaissez qu’il est toujours en cours de développement et que vous ne devez pas vous fier au bon fonctionnement de la technologie ou à la disponibilité des données. Bien que nous ayons largement testé cette fonctionnalité, il existe une petite possibilité que votre RDE devienne instable. Si cela se produit, une réinitialisation la restaurera à un état de fonctionnement.*
+
+
 #### Fonctions D’AEM Edge (Programme Beta) {#edge-functions}
 
 [Fonctions AEM Edge](/help/implementing/developing/introduction/edge-functions.md) vous permet d’exécuter JavaScript au niveau de la couche CDN, ce qui rapproche le traitement des données de l’utilisateur final. Cela réduit la latence et permet d’obtenir des expériences réactives et dynamiques en périphérie.
@@ -218,9 +234,8 @@ Cas d’utilisation courants :
 * Fonctionnement en tant que middleware entre le réseau CDN et votre origine
 * Remise en forme des réponses d’API tierces (et éventuellement agrégation de plusieurs réponses d’API) avant de les diffuser au navigateur
 * Composition et diffusion de HTML rendu sur le serveur Edge à l’aide de contenu assemblé à partir de divers serveurs principaux
-* Exposer un serveur MCP pour les assistants d’IA tels que ChatGPT et Claude pour accéder aux outils personnalisés
 
-Nous disposons d’un nombre limité d’opportunités pour la diffusion de l’instance de publication AEM ou les projets Edge Delivery Services pour les sites de production en direct. Si vous souhaitez participer ou en savoir plus, adressez un e-mail à [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) avec une brève description de votre cas d’utilisation.
+Rejoignez la version bêta pour la diffusion de publication AEM ou les projets Edge Delivery Services pour les sites de production en direct. Si vous souhaitez participer ou en savoir plus, adressez un e-mail à [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) avec une brève description de votre cas d’utilisation.
 
 #### Dépannage du pipeline de configuration de niveau web (programme Beta) {#devagent-webtier}
 
@@ -228,15 +243,9 @@ Les fonctionnalités [dépannage de pipeline](/help/ai-in-aem/agents/brand-exper
 
 Pour demander l’accès à la version bêta, envoyez un e-mail à l’adresse [&#128279;](mailto:aem-devagent@adobe.com). Un accès préexistant aux agents dans AEM est requis.
 
-#### Dépannage de l’IA dédiée à la réplication (programme Alpha) {#replication-ai-troubleshooting-alpha}
+#### Dépannage de l’IA dédiée à la réplication (programme Beta) {#replication-ai-troubleshooting-alpha}
 
-À l’aide de l’assistant AI dans l’instance de création AEM et d’autres interfaces, vous pouvez résoudre les problèmes liés à la réplication, tels que les files d’attente bloquées. Pour rejoindre le programme Alpha, envoyez un e-mail à l’adresse [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com) pour décrire votre intérêt.
-
-#### Outils d’IA dédiée à l’IDE pour la migration d’AEM 6.5 vers AEM Cloud Service (programme Beta) {#cm-ide-migration}
-
-Accélérez votre migration d’AEM 6.5 vers AEM as a Cloud Service (pile Java) en utilisant l’outil d’IA dédiée à l’environnement de développement intégré pour agir sur les recommandations du rapport [Analyseur des bonnes pratiques](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
-
-Envoyer un e-mail à [&#128279;](mailto:aemcs-ai-ide-tools-feedback@adobe.com) pour obtenir plus d’informations et demander l’accès à la fonctionnalité.
+À l’aide de l’assistant AI dans l’instance de création AEM et d’autres interfaces, vous pouvez résoudre les problèmes liés à la réplication, tels que les files d’attente bloquées. Pour rejoindre le programme Beta, envoyez un e-mail à l’adresse [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com) pour décrire votre intérêt.
 
 #### Authentification Edge pour Edge Delivery Services (programme Beta) {#edge-authentication}
 
@@ -250,11 +259,11 @@ Validez une build de production avec du trafic de test interne uniquement avant 
 
 Envoyez un e-mail à [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) pour demander l’accès et partager vos commentaires.
 
-#### Instantanés pour les RDE (programme Beta) {#rde-snapshot-program}
+#### Détection des problèmes de code dans AEM et correction automatique via l’agent IDE AI (programme Alpha) {#ide-ai-aemcode-issues}
 
-Dans la version bêta, les environnements de développement rapide (RDE) prennent désormais en charge une fonctionnalité [pour prendre un instantané](/help/implementing/developing/introduction/rapid-development-environments.md#snapshots) de l’état actuel du code et du contenu, qui peut être restaurée ultérieurement. Cela peut s’avérer utile lors de la synchronisation du code qui peut devoir être restauré à un état précédent ou, lorsqu’au cours du développement, il est nécessaire d’alterner entre plusieurs fonctionnalités différentes. Il est également possible de restaurer uniquement le contenu modifiable en tant que point de départ connu pour les tests.
+Les équipes Java-stack utilisant le développement assisté par [IA](/help/ai-in-aem/local-development-with-ai-tools.md) dans des outils tels que Cursor, Claude Code, Visual Studio et IntelliJ peuvent désormais aller plus loin : une nouvelle compétence d’agent IDE détecte et corrige automatiquement les problèmes directement dans votre base de code AEM, réduisant ainsi les cycles de révision et détectant les problèmes plus tôt dans le développement.
 
-Veuillez envoyer un e-mail à [&#128279;](mailto:aemcs-rde-support@adobe.com) si cette fonctionnalité vous intéresse et si vous souhaitez faire part de vos commentaires.
+Cette fonctionnalité est en version Alpha. Rejoignez le programme pour l’essayer et partager vos commentaires avec l’équipe sur [&#128279;](mailto:aemcs-ai-ide-tools-feedback@adobe.com).
 
 #### Surveillance étendue des performances des applications (APM) (programme Alpha) {#apm-alpha}
 

@@ -2,9 +2,9 @@
 title: Configurer l’interface d’utilisation du hub de contenus
 description: Configurer l’interface d’utilisation du hub de contenus
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 7e0c34627aa3ac873aa94f836fe1c30d70389e19
+source-git-commit: 46ca8082f85cdb957681aa9596b9312b35e4f6ec
 workflow-type: tm+mt
-source-wordcount: '3050'
+source-wordcount: '2850'
 ht-degree: 9%
 
 ---
@@ -160,7 +160,7 @@ Les propriétés activées dans l’interface utilisateur de configuration s’a
 ### Carte de ressources {#asset-card}
 
 Vous pouvez également configurer les propriétés de métadonnées clés que vous devez afficher sur la **Carte de ressource** jusqu’à 6 champs maximum.
-![métadonnées de clé sur la carte de la ressource](/help/assets/assets/asset-card-metadata.png)
+![métadonnées clés sur la carte de la ressource](/help/assets/assets/asset-card-metadata.png)
 Pour configurer les propriétés de métadonnées afin de les afficher sur la carte **[!UICONTROL Ressource]**, procédez comme suit :
 
 1. Dans l’interface utilisateur [Configurations](#access-configuration-options-content-hub), cliquez sur **Carte des ressources**.
@@ -177,6 +177,8 @@ L’administration peut définir les champs de métadonnées qui font l’objet 
 >[!CAUTION]
 >
 >Il est recommandé de sélectionner soigneusement les champs que vous marquez comme pouvant faire l’objet d’une recherche. N’incluez que les champs que les utilisateurs sont susceptibles de rechercher et qui permettent de renvoyer des résultats significatifs. Les champs tels que les dates et les nombres conviennent mieux au filtrage et au tri qu’au contenu consultable. Le marquage d’un trop grand nombre de champs comme pouvant faire l’objet de recherches peut affecter la qualité et les performances des résultats de recherche.
+>
+>Les propriétés de balise ne sont activées que pour le filtrage et ne peuvent pas faire l’objet de recherches.
 
 1. Dans l’interface utilisateur [Configurations](#access-configuration-options-content-hub), cliquez sur **[!UICONTROL Ajouter des métadonnées]**.
 
@@ -190,7 +192,7 @@ De même, vous pouvez cliquer sur ![icône Modifier](assets/do-not-localize/edit
 ### Branding {#configure-branding-content-hub}
 
 En tant qu’administrateur, personnalisez votre portail [!DNL Content Hub] pour répondre à vos exigences en matière de marque.
-![réinitialiser par défaut](/help/assets/assets/reset-default-content-hub.png)
+![réinitialiser la valeur par défaut](/help/assets/assets/reset-default-content-hub.png)
 Sur la page ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]**, utilisez les sections **[!UICONTROL Bannière]**, **[!UICONTROL Couleurs]** et **[!UICONTROL Image de bannière]** pour exécuter les personnalisations suivantes :
 
 1. [Modifiez l’image du logo à partir de la section [!UICONTROL &#x200B; Image du logo &#x200B;]](#Change-the-logo-image)
@@ -232,7 +234,7 @@ Cliquez sur la zone carrée en regard de la **[!UICONTROL Couleur du texte de ba
 
 Sur la page ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]**, utilisez la section **[!UICONTROL Couleurs]** pour définir les couleurs primaires et secondaires en les sélectionnant à l’aide du sélecteur de couleurs ou en définissant le code hexadécimal de la couleur. Ces couleurs définissent les couleurs d’arrière-plan, de texte et d’icône des éléments de l’interface utilisateur pour aligner votre interface utilisateur [!DNL Content Hub] avec le thème de votre marque.
 ![couleur primaire et secondaire](/help/assets/assets/primary-secondary-color-content-hub1.png)
-**[!UICONTROL Couleur du Principal &#x200B;] :** le jeu de couleurs principal s’applique aux actions de sélection, aux éléments interactifs tels que les cases à cocher, les barres de recherche et les commutateurs à travers les [!DNL Content Hub], y compris [!DNL Content Hub] page d’accueil et la page [!UICONTROL Configuration]. Elle s’applique également aux options d’action disponibles sur les interfaces de [!DNL Content Hub] principales, telles que les options disponibles sur les pages **[!UICONTROL Toutes les Assets]** et **[!UICONTROL Collections]**.
+**[!UICONTROL Couleur du Principal &#x200B;]:** Le jeu de couleurs principal s’applique aux actions de sélection, aux éléments interactifs tels que les cases à cocher, les barres de recherche et les commutateurs à travers les [!DNL Content Hub], y compris [!DNL Content Hub] page d’accueil et la page [!UICONTROL Configuration]. Elle s’applique également aux options d’action disponibles sur les interfaces de [!DNL Content Hub] principales, telles que les options disponibles sur les pages **[!UICONTROL Toutes les Assets]** et **[!UICONTROL Collections]**.
 
 **[!UICONTROL Couleur Secondaire &#x200B;]:** Sur la page d&#39;accueil [!DNL Content Hub], le jeu de couleurs secondaire s&#39;applique aux options de l&#39;interface utilisateur et aux champs de saisie disponibles dans les boîtes de dialogue. Elle s’applique à toutes les options de menu de configuration disponibles sur la page [!UICONTROL Configuration], à l’exception des actions de sélection, des cases à cocher, des barres de recherche et des commutateurs.
 

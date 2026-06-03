@@ -6,9 +6,9 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 633a89c533edfe7e932284b100aeac6f3d3708bc
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
-source-wordcount: '2908'
+source-wordcount: '2932'
 ht-degree: 6%
 
 ---
@@ -544,7 +544,25 @@ Pour vous permettre de collaborer au sein du produit et dans le contexte, l’on
 
 ## Prévisualiser le fragment {#preview-content-fragment}
 
-L’éditeur de fragment de contenu permet aux auteurs de prévisualiser leurs modifications dans une application frontale externe. Pour activer le bouton **Aperçu** dans la barre d’outils supérieure de l’éditeur, le **[Modèle d’URL d’aperçu par défaut](/help/sites-cloud/administering/content-fragments/preview.md#preview-url-pattern)** doit être défini. Vous pouvez sélectionner ce bouton pour lancer l’application externe (dans un onglet distinct) afin d’effectuer le rendu du fragment de contenu.
+L’éditeur de fragment de contenu fournit aux créateurs et créatrices deux options pour prévisualiser leurs fragments.
+
+Les deux options sont disponibles à l’aide de **Aperçu** dans la barre d’outils supérieure :
+
+* **Application**
+
+   * Sélectionnez cette option pour lancer l’[application externe (dans un onglet distinct) pour effectuer le rendu du fragment de contenu](/help/sites-cloud/administering/content-fragments/preview.md#preview-in-an-application).
+
+* **Modèle**
+
+   * Cette option vous permet de prévisualiser votre fragment de contenu à l’aide de **[Modèles de visualisation (HTML)](#preview-with-visualization-html-templates)**.
+
+     <!-- CQDOC-23232 - remove when GA -->
+
+     >[!NOTE]
+     >
+     >Les fragments de contenu visuel sont actuellement en disponibilité limitée.
+     >
+     >Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
 
 ## Publier votre fragment {#publish-content-fragment}
 

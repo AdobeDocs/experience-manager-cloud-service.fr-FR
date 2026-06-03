@@ -4,10 +4,10 @@ description: Découvrez comment l’agent de production Experience dans AEM vous
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 1dec50e6-d728-41d4-8868-5f9db568d15b
-source-git-commit: 2e3b10f7886f8bc5757d2144875ec0b441de7bb5
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 4%
+source-wordcount: '459'
+ht-degree: 3%
 
 ---
 
@@ -22,6 +22,7 @@ L’agent effectue les tâches suivantes :
 
 * [Mise à jour du contenu](#content-update)
 * [Création de contenu](#content-create)
+* [Tâche de conversion de format en fragments de contenu visuels](#figma-to-visual-content-fragments)
 * [Création du formulaire](#form-creation)
 * [Création de communications](#communications-creation)
 
@@ -42,6 +43,18 @@ La tâche [Créer du contenu](/help/ai-in-aem/agents/brand-experience/experience
 >[!NOTE]
 >
 >La tâche de création de contenu est actuellement en disponibilité limitée.
+>
+>Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
+
+### Tâche de conversion de format en fragments de contenu visuels {#figma-to-visual-content-fragments}
+
+La tâche [Figma vers Fragments de contenu visuels](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md) importe les conceptions Figma vers les modèles de contenu, les fragments de contenu et les modèles HTML d’AEM.
+
+<!-- CQDOC-23232 - remove when GA -->
+
+>[!NOTE]
+>
+>La tâche « Convertir en fragments de contenu visuels » est actuellement en disponibilité limitée.
 >
 >Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
 

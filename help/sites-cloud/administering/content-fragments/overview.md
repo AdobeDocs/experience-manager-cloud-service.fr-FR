@@ -6,16 +6,16 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
-source-wordcount: '2475'
-ht-degree: 30%
+source-wordcount: '2553'
+ht-degree: 29%
 
 ---
 
 # Utilisation de fragments de contenu - Concepts et bonnes pratiques {#working-with-content-fragments-concepts-and-best-practices}
 
-Avec Adobe Experience Manager (AEM) as a Cloud Service, les fragments de contenu vous permettent de concevoir, créer, organiser et publier du contenu indépendant des pages. Ils vous permettent de préparer du contenu prêt à être utilisé à plusieurs emplacements et sur plusieurs canaux, idéal pour la [diffusion découplée](/help/headless/what-is-headless.md) et la [création de pages](/help/sites-cloud/authoring/fragments/content-fragments.md).
+Avec Adobe Experience Manager (AEM) as a Cloud Service, les fragments de contenu vous permettent de concevoir, créer, organiser et publier du contenu indépendant des pages. Ils vous permettent de préparer du contenu, prêt à être utilisé à plusieurs emplacements et sur plusieurs canaux, idéal pour la [diffusion découplée](/help/headless/what-is-headless.md) et la [création de pages](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!TIP]
 >
@@ -39,7 +39,6 @@ Avec Adobe Experience Manager (AEM) as a Cloud Service, les fragments de contenu
 >* l’utilisation de l’éditeur de fragment de contenu [*original*](/help/assets/content-fragments/content-fragments-variations.md),
 >* à l’aide de [Fragments de contenu pour la création de pages](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
-
 Les fragments de contenu contiennent du contenu structuré :
 
 * Chaque fragment est basé sur un [&#x200B; modèle de fragment de contenu &#x200B;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md).
@@ -59,10 +58,26 @@ Les fragments de contenu contiennent du contenu structuré :
       * Les types de données de référence disponibles vous permettent d’imbriquer votre contenu.
       * A tendance à être utilisé pour une diffusion découplée vers votre application.
 
-Les fragments de contenu peuvent également être diffusés au format JSON, à l’aide des fonctionnalités d’exportation du modèle Sling (JSON) des composants principaux d’AEM. Cette forme de diffusion :
+Les fragments de contenu peuvent également être diffusés dans :
 
-* permet d’utiliser le composant pour gérer les éléments d’un fragment à diffuser
-* permet la diffusion en masse ; en ajoutant plusieurs [composants principaux de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=fr) sur la page utilisée pour la diffusion de l’API.
+* Format JSON, utilisant les fonctionnalités d’exportation du modèle Sling (JSON) des composants principaux d’AEM. Cette forme de diffusion :
+
+   * permet d’utiliser le composant pour gérer les éléments d’un fragment à diffuser
+   * permet la diffusion en masse ; en ajoutant plusieurs [composants principaux de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=fr) sur la page utilisée pour la diffusion de l’API.
+
+* Format HTML, à l’aide de [Fragments de contenu visuel](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md) rendu avec [des modèles HTML, développés avec Handlebars](/help/implementing/developing/extending/content-fragments-visualization-templates.md). Cette forme de diffusion :
+
+   * fournit une représentation visuelle pour faciliter la prévisualisation et la révision du contenu
+   * fournit une représentation visuelle pour une utilisation directe et immédiate par des canaux et des applications externes
+
+  <!-- CQDOC-23232 - remove when GA -->
+
+  >[!NOTE]
+  >
+  >Les fragments de contenu visuel sont actuellement en disponibilité limitée.
+  >
+  >Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
+
 
 Le nombre de canaux de communication augmente tous les ans. En règle générale, les canaux font référence au mécanisme de diffusion :
 
@@ -111,6 +126,7 @@ Une fois les fragments créés, vous pouvez :
 * [Intégrer et utiliser vos fragments de contenu dans Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
 * Créer et gérer des [lancements pour les fragments de contenu](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 * [Ou utilisez vos fragments pour la création de pages](/help/sites-cloud/authoring/fragments/content-fragments.md)
+* Diffusez une représentation [visuelle (HTML)](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md) de votre fragment
 
 >[!NOTE]
 >

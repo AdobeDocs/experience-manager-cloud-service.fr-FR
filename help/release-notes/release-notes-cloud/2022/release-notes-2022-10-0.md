@@ -4,7 +4,7 @@ description: Notes de mise à jour de la version 2022.10.0 d’ [!DNL Adobe Exp
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: d6555eebfa13a400f084ef4edefb92b4471adcac
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 77%
@@ -89,7 +89,7 @@ Regardez la vidéo de présentation de la version d’octobre 2022 pour un rés
 
 * AEM as a Cloud Service (service de création) est désormais intégré à Unified Shell pour améliorer l’expérience utilisateur et l’unifier avec toutes les autres applications Experience Cloud. Voir AEM as a [Cloud Service sur Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) pour plus d’informations.
 
-* Comme mentionné précédemment dans les notes de mise à jour, l’utilisation de l’écran d’administration de l’agent de réplication ou de l’API de réplication pour distribuer des packages de contenu de plus de 10 Mo (nœuds avec des propriétés, sans inclure les fichiers binaires) est désormais obsolète et mise en œuvre. Voir [Gérer la publication](/help/operations/replication.md#manage-publication) ou le workflow [Publier l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) pour obtenir des suggestions d’approches afin de répliquer ces packages de contenu volumineux.
+* Comme mentionné précédemment dans les notes de mise à jour, l’utilisation de l’écran d’administration de l’agent de réplication ou de l’API de réplication pour distribuer des packages de contenu de plus de 10 Mo (nœuds avec des propriétés, sans inclure les fichiers binaires) est désormais obsolète et mise en œuvre. Voir [Gérer la publication](/help/operations/replication.md#manage-publication) ou le workflow [Publier l’arborescence de contenu](/help/operations/tree-replication-workflows.md#publish-content-tree-workflow) pour obtenir des suggestions d’approches afin de répliquer ces packages de contenu volumineux.
 
 * La configuration de Dispatcher référence désormais un fichier qui répertorie les paramètres de requête de campagne marketing courants. Les clients peuvent choisir de supprimer les commentaires des paramètres souhaités afin d’améliorer la mise en cache. Voir [Paramètres de campagne marketing](/help/implementing/dispatcher/caching.md#marketing-parameters) pour plus d’informations.
 

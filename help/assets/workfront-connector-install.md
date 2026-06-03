@@ -5,7 +5,7 @@ role: Admin
 feature: Workfront Integrations and Apps
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 7f10146a18627e1d18747c1675b730c281cf7425
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 98%
@@ -51,10 +51,7 @@ Avant d’installer le connecteur, procédez comme suit :
    >
    >* Pour trouver l’adresse IP de votre programme, ouvrez une fenêtre de terminal et exécutez une commande, telle que :
    >
-   >    ```
-   >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
-   >    
-   >    ```
+   >  `>dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com`
 
 1. Assurez-vous que les recouvrements suivants n’existent pas dans le référentiel [!DNL Experience Manager] : Si ces chemins contiennent des recouvrements préexistants, vous devez supprimer les recouvrements ou fusionner les différences de modifications entre les deux :
 

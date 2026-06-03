@@ -6,10 +6,10 @@ exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 5c8054e9a4f0bbcc2a6fce2fba70403c1f4268d8
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 90%
+source-wordcount: '389'
+ht-degree: 89%
 
 ---
 
@@ -29,7 +29,7 @@ Les raccourcis suivants sont disponibles pour les consoles Sites, Ressources, Ut
 | Consoles | `?` | Aide des raccourcis clavier |
 |  | `/` | Appeler la [recherche](/help/sites-cloud/authoring/search.md) |
 |  | `Alt+`&lt;`Number`> | Choisir l’option de [sélecteur de rail](/help/sites-cloud/authoring/basic-handling.md#rail-selector) à afficher |
-|  | ``` ` ``` | Masquer le rail |
+|  | &grave; | Masquer le rail |
 |  | `e` | Modifier |
 |  | `p` | Propriétés |
 |  | `m` | Déplacer |

@@ -6,9 +6,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 4f66cd6048d7a78bea33c0f9c21017983b9032d5
+source-git-commit: b1de659aeb1e1d2d6d5428ec6434a2757dfe7d2d
 workflow-type: tm+mt
-source-wordcount: '3159'
+source-wordcount: '3149'
 ht-degree: 12%
 
 ---
@@ -385,17 +385,16 @@ Pour plus d’informations sur la manière d’activer cette extension, [consult
 
 ### Accès aux propriétés de page {#page-properties}
 
-L’extension **Propriétés de page** permet un accès rapide à la fenêtre [Propriétés de page](/help/sites-cloud/authoring/sites-console/page-properties.md) de la page en cours de modification.
+Le bouton **Propriétés de la page** permet d’accéder rapidement à la fenêtre [Propriétés de la page AEM](/help/sites-cloud/authoring/sites-console/page-properties.md) pour la page en cours de modification.
 
 ![Icône Propriétés de la page](assets/page-properties-icon.png)
 
 Appuyez ou cliquez sur l’icône **Propriétés de page** dans la barre d’outils de l’éditeur universel pour ouvrir les propriétés de page de la page dans un nouvel onglet du navigateur.
 
-Pour plus d’informations sur la manière d’activer cette extension, [consultez la documentation d’Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
-
 >[!NOTE]
 >
->L’extension **Propriétés de page** fonctionne uniquement pour les pages, et non pour les fragments de contenu.
+>* L’extension **Propriétés de page** fonctionne uniquement pour les pages, et non pour les fragments de contenu.
+>* Le bouton s’affiche uniquement lorsque la page distante possède une [connexion avec le protocole](/help/implementing/universal-editor/component-definition.md#plugins) le `aem` ou le `xwalk` et qu’un chemin de page unique peut être résolu à partir de l’élément modifiable actuel.
 
 ### Accès à la console Sites {#sites-console}
 
@@ -446,7 +445,7 @@ Appuyez ou cliquez sur l’icône **Workflows** dans la barre d’outils de l’
 
 Pour plus d’informations sur la manière d’activer cette extension, [consultez la documentation d’Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
-### Connexion du développeur {#developer-login}
+### Connexion du développeur ou de la développeuse {#developer-login}
 
 L’extension de connexion au développement **AEM Universal Editor** est utile pour les développeurs et développeuses qui développent localement, ce qui permet de s’authentifier de manière pratique auprès d’un SDK AEM local à des fins de test.
 

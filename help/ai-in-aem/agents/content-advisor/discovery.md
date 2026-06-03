@@ -4,9 +4,9 @@ description: Découvrez comment utiliser l’agent de découverte de contenu pou
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: c5a3d3de3b99aea43169e7a503a4ea8ed5d480d8
+source-git-commit: b47fa12a5301c97688e09d285b66241a2745e085
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2402'
 ht-degree: 1%
 
 ---
@@ -238,9 +238,9 @@ L’agent de découverte de contenu renvoie les meilleurs résultats pour chaque
 
 Chaque résultat s’affiche sous forme de carte de ressource, affichant le nom, l’aperçu et les métadonnées clés de la ressource, telles que la description et le format. Vous pouvez cliquer sur l’icône Infos sur une carte pour afficher des propriétés de ressource supplémentaires.
 
-Utilisez l’option **Afficher le tableau** pour afficher les résultats sous forme de tableau. Cliquez sur **Afficher tous les résultats** pour afficher l’ensemble complet des 20 ressources récupérées dans le volet de droite.
+Utilisez l’option **Afficher le tableau** pour afficher les résultats sous forme de tableau. Cliquez sur **Afficher tous les résultats** pour afficher l’ensemble complet des 20 ressources récupérées dans le volet de droite. Vous pouvez également cliquer sur l’icône Télécharger pour télécharger la liste de 20 ressources sous la forme d’un fichier .ZIP d’une taille maximale de 1,5 Go.
 
-Chaque résultat inclut également des métadonnées clés sur la ressource telles que le chemin d’accès, la taille, la date de création et le créateur ou la créatrice, la date de modification, ainsi que l’utilisateur ou l’utilisatrice qui a modifié la ressource, le format et la description. Si une ressource est à l’état approuvé, les résultats incluent également [Dynamic Media avec l’URL OpenAPI](/help/assets/dynamic-media-open-apis-overview.md). Vous pouvez cliquer sur le chemin d’accès à la ressource pour accéder facilement à son emplacement dans AEM.
+Chaque résultat inclut également des métadonnées clés sur la ressource telles que le chemin d’accès, la taille, la date de création et le créateur de la ressource, la date de modification ainsi que l’utilisateur ou l’utilisatrice qui a modifié la ressource, le format, le lien de téléchargement et la description. Si une ressource est à l’état approuvé, les résultats incluent également [Dynamic Media avec l’URL OpenAPI](/help/assets/dynamic-media-open-apis-overview.md). Vous pouvez cliquer sur le chemin d’accès à la ressource pour accéder facilement à son emplacement dans AEM.
 
 ![Recherche de ressources à l’aide de l’agent de découverte de contenu](/help/ai-in-aem/agents/content-advisor/assets/search-results-content-discovery-agent.png)
 

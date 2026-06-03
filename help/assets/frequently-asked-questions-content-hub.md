@@ -3,9 +3,9 @@ title: Questions fréquentes sur Content Hub
 description: Obtenez des réponses à certaines des questions les plus fréquentes (FAQ) pour Content Hub.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 65e10efffcc5430ab2f7cd08ba795dc9f96cd41a
+source-git-commit: 72c26630e23af16ad5ece3ab1d07f7f31bf67270
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1706'
 ht-degree: 66%
 
 ---
@@ -154,7 +154,7 @@ Lorsque vous avez configuré AEM Assets Content Hub pour la production et d’au
 
 Pour fournir un aperçu des miniatures pour des types de fichiers tels que .ZIP dans AEM Assets Content Hub, vous pouvez ajouter un rendu nommé `cq5dam.<label>.<width>.<height>.<ext>` à la racine du chemin d’accès où le fichier .ZIP est disponible dans l’environnement de création AEM as a Cloud Service. Par exemple, `cq5dam.preview.500.500.png`.
 
-Content Hub sélectionne le rendu ayant la largeur la plus élevée parmi tous les rendus `cq5dam.*` ; un rendu personnalisé ne gagne que si sa largeur codée dépasse les rendus existants générés automatiquement.
+Content Hub sélectionne le rendu le plus large parmi tous les rendus `cq5dam.*` ; un rendu personnalisé s’affiche en tant qu’aperçu miniature uniquement si sa largeur codée dépasse les rendus existants générés automatiquement.
 
 Image ajoutée en tant que rendu :
 

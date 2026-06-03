@@ -3,7 +3,7 @@ title: Présentation d’Assets as a Cloud Service pour la gestion des ressou
 description: Présentation d’Assets as a Cloud Service pour la gestion des ressources numériques dans AEM
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
+source-git-commit: 8088583ea5c970de4e71e771e34b9125fac3047e
 workflow-type: tm+mt
 source-wordcount: '6014'
 ht-degree: 81%
@@ -1018,7 +1018,7 @@ Adobe propose des solutions de gestion des ressources numériques (DAM) robustes
 
 * **Vue Assets** : expérience allégée de gestion des ressources numériques d’Adobe permettant de stocker, gérer, découvrir et utiliser des ressources numériques. Interface d’utilisation rationalisée contenant les fonctionnalités essentielles de gestion des ressources numériques. Conçue pour les personnes utilisant la gestion des ressources numériques allégée et qui se concentrent sur le chargement, la gestion des métadonnées, la recherche, le téléchargement et le partage.
 
-![add-tags](assets/newui-overview.svg)
+![add-tags](assets/newui-overview.png)
 
 Les personnes ayant accès à la vue Admin peuvent également accéder à la vue Assets. La vue Ressources propose une interface d’utilisation simplifiée, qui facilite la gestion, la découverte et la distribution des ressources numériques. Un vaste ensemble de personnes provenant de différentes fonctions, y compris les équipes créatives, marketing et métier, peuvent collaborer et accéder aux ressources appropriées et approuvées, n’importe où et à tout moment. De nombreuses personnes dédiées à la gestion des actifs numériques préfèrent la vue Assets, car elle ne contient qu’un sous-ensemble de fonctionnalités. L’expérience est destinée aux créateurs et créatrices, aux consommateurs et consommatrices de ressources en lecture seule et aux utilisateurs et utilisatrices de DAM plus légers.
 

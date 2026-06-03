@@ -4,9 +4,9 @@ description: Notes de mise à jour de la version 2021.4.0 d’ [!DNL Adobe Expe
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: d6555eebfa13a400f084ef4edefb92b4471adcac
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1583'
 ht-degree: 93%
 
 ---
@@ -31,11 +31,11 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 ### Nouveautés {#what-is-new-foundation}
 
-* [Processus Publier l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) – Une nouvelle étape et un nouveau modèle de processus offrent des performances accrues lors de la publication de hiérarchies de contenu profondes.
+* [Processus Publier l’arborescence de contenu](/help/operations/tree-replication-workflows.md#publish-content-tree-workflow) – Une nouvelle étape et un nouveau modèle de processus offrent des performances accrues lors de la publication de hiérarchies de contenu profondes.
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Nouveautés d’[!DNL Sites]  {#what-is-new-sites}
+### Nouveautés d’[!DNL Sites] {#what-is-new-sites}
 
 * Points d’entrée GraphQL – Il est désormais possible d’activer l’API AEM GraphQL pour les configurations d’AEM Sites individuelles et de créer des points d’entrée GraphQL personnalisés pour ces configurations à l’aide d’une nouvelle interface utilisateur de la console GraphQL. L’interface utilisateur permet également de gérer les points d’entrée GraphQL.
 
@@ -43,7 +43,7 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 * Modèles de contenu, type de données Balises amélioré – Il est désormais possible de configurer le type de données Balises pour permettre la création de balises uniques ou multiples.
 
-* Modèles de contenu, nouveau type de données Espace réservé d’onglet : le nouveau type de données Espace réservé d’onglet permet de regrouper les types de données dans des sections rendues sous des onglets dans l’éditeur de fragment de contenu.
+* Modèles de contenu, nouveau type de données Onglet d’espace réservé - Le nouveau type de données Onglet d’espace réservé permet de regrouper les types de données dans des sections affichées sous des onglets dans l’éditeur de fragment de contenu.
 
 ### Bogues corrigés dans [!DNL Sites] {#bug-fixes-sites}
 
@@ -53,7 +53,7 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Nouveautés d’[!DNL Assets]  {#what-is-new-assets}
+### Nouveautés d’[!DNL Assets] {#what-is-new-assets}
 
 * [!DNL Experience Manager] n’archive pas les téléchargements de ressources uniques où le fichier d’origine est téléchargé. Cette amélioration permet des téléchargements plus rapides.
 
@@ -93,7 +93,7 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Nouveautés d’[!DNL Forms]  {#what-is-new-forms}
+### Nouveautés d’[!DNL Forms] {#what-is-new-forms}
 
 * **Utiliser la méthode d’authentification par pièce d’identité officielle dans les formulaires adaptatifs prenant en charge Adobe Sign**
 
@@ -167,7 +167,7 @@ La prochaine version est prévue pour le 6 mai 2021.
 
 * Il n’est plus possible de modifier ni de supprimer involontairement les projets créés par Cloud Manager dans Adobe I/O Developer Console.
 
-* Lorsqu’un utilisateur ajoute un nouvel environnement, il est informé qu’une fois un environnement créé, il ne peut pas être déplacé vers une autre région.
+* Lorsque l’utilisateur ajoute un nouvel environnement, il est informé qu’une fois un environnement créé, il ne peut pas être déplacé vers une autre région.
 
 * Les variables d’environnement peuvent désormais être incluses dans un service spécifique, qu’il s’agisse de création ou de publication. Nécessite AEM version 2021.03.5104.20210328T185548Z, ou ultérieure.
 
@@ -177,7 +177,7 @@ La prochaine version est prévue pour le 6 mai 2021.
 
 ### Correctifs {#bug-fixes-cm-april}
 
-* Lors de la modification de la page de contrôle de l’expérience d’un pipeline, un chemin d’entrée commençant par une barre oblique `( / )` n’entraîne plus le blocage de l’étape à l’état En attente.
+* Lors de la modification de la page d’audit d’expérience d’un pipeline, un chemin d’entrée commençant par une barre oblique `( / )` n’entraîne plus le blocage de l’étape à l’état En attente.
 
 * Lorsqu’un pipeline de production est créé, si aucun remplacement d’audit de contenu n’est ajouté par l’utilisateur, la page d’accueil par défaut n’a pas été contrôlée.
 

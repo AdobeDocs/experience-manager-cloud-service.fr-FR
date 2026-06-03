@@ -7,10 +7,10 @@ level: Beginner
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 hide: true
-source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
+source-git-commit: df57b10ad1ed7eb8fe92f6f5f4e45ed282afff8d
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 71%
+source-wordcount: '1033'
+ht-degree: 68%
 
 ---
 
@@ -106,7 +106,7 @@ Pour enregistrer un client OAuth sur l’ordinateur Active Directory Federatio
    Où :
 
    * `Client-ID` est un ID client que vous pouvez générer à l’aide d’un générateur de GUID.
-   * `redirect-uri` est l’URL du service cloud OData de [!DNL Microsoft Dynamics] dans [!DNL Experience Manager Forms]. Le service cloud par défaut installé avec [!DNL Experience Manager Forms] est déployé à l’adresse URL suivante :
+   * `redirect-uri` est l’URL du service cloud OData [!DNL Microsoft Dynamics] sur [!DNL Experience Manager Forms]. Le service cloud par défaut installé avec le [!DNL Experience Manager Forms] est déployé à l’adresse URL suivante :
      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. Exécutez la commande ci-dessous pour octroyer l’accès sur l’ordinateur AD FS :
@@ -133,8 +133,8 @@ Un service OData est identifié par son URL racine de service. Pour configurer u
 
    Pour plus d’informations sur la création et la configuration d’un dossier pour les configurations de service cloud, voir [Configurer le dossier pour les configurations de service cloud](#cloud-folder).
 
-1. Sélectionnez **[!UICONTROL Créer]** pour ouvrir **[!UICONTROL l’assistant Créer une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, sélectionnez **[!UICONTROL Service OData]** dans la liste déroulante **[!UICONTROL Type de service]**, recherchez et sélectionnez éventuellement une image miniature pour la configuration, puis appuyez sur **[!UICONTROL Suivant]**.
-Dans l’onglet **[!UICONTROL Paramètres d’authentification]** :
+1. Sélectionnez **[!UICONTROL Créer]** pour lancer l’assistant **[!UICONTROL Créer une configuration de Source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, sélectionnez **[!UICONTROL Service OData]** dans la liste déroulante **[!UICONTROL Type de service]**, recherchez et sélectionnez éventuellement une image miniature pour la configuration, puis sélectionnez **[!UICONTROL Suivant]**.
+Dans l’onglet **[!UICONTROL Paramètres d’authentification]** :
 
    1. Saisissez la valeur du champ **[!UICONTROL Racine du service]**. Accédez à l’instance Dynamics et à **[!UICONTROL Ressources de développement]** pour afficher la valeur du champ Racine du service. Par exemple, https://&lt;nom-client>/api/data/v9.1/
 
@@ -184,3 +184,4 @@ Pour plus d’informations sur la création et l’utilisation d’un modèle de
 ## Articles connexes
 
 {{af-submit-action}}
+

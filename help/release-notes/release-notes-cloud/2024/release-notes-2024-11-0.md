@@ -4,7 +4,7 @@ description: Notes de mise à jour de la version 2024.11.0 d’ [!DNL Adobe Exp
 feature: Release Information
 role: Admin
 exl-id: 3fd6482e-66f0-48ee-983c-4cb6b7742dcd
-source-git-commit: b336b6e52bf6f3cba64ddd4b4580eabded86afdb
+source-git-commit: d6555eebfa13a400f084ef4edefb92b4471adcac
 workflow-type: tm+mt
 source-wordcount: '2217'
 ht-degree: 94%
@@ -180,7 +180,7 @@ intuitive and improving the mobile form-filling experience.
 
 ### Amélioration des performances de réplication d’arborescence (et obsolescence du workflow de publication d’arborescence de contenu) {#tree-replication-performance}
 
-L’[étape de workflow d’activation de l’arborescence](/help/operations/replication.md#tree-activation) est une nouvelle étape de modèle de workflow recommandée pour répliquer des hiérarchies de contenu profondes. Elle permet aux réplications indépendantes (par exemple, par le biais d’une publication rapide ou d’une gestion de la publication) de se poursuivre en parallèle du workflow de réplication de l’arborescence en cours. Cela s’avère particulièrement utile si vous devez publier du contenu urgent alors qu’une réplication en masse est toujours en cours. L’étape de réplication de l’arborescence remplace le workflow de publication de l’arborescence de contenu et son étape de workflow associée, qui sont désormais obsolètes.
+L’[étape de workflow d’activation de l’arborescence](/help/operations/tree-replication-workflows.md#tree-activation) est une nouvelle étape de modèle de workflow recommandée pour répliquer des hiérarchies de contenu profondes. Elle permet aux réplications indépendantes (par exemple, par le biais d’une publication rapide ou d’une gestion de la publication) de se poursuivre en parallèle du workflow de réplication de l’arborescence en cours. Cela s’avère particulièrement utile si vous devez publier du contenu urgent alors qu’une réplication en masse est toujours en cours. L’étape de réplication de l’arborescence remplace le workflow de publication de l’arborescence de contenu et son étape de workflow associée, qui sont désormais obsolètes.
 
 ### API OpenAPI - Programme d’adoption anticipée {#open-apis-earlyadopter}
 

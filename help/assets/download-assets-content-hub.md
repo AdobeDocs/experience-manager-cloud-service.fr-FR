@@ -4,10 +4,10 @@ description: Découvrez comment télécharger une ou plusieurs ressources et leu
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 46ca8082f85cdb957681aa9596b9312b35e4f6ec
 workflow-type: tm+mt
-source-wordcount: '1400'
-ht-degree: 1%
+source-wordcount: '1471'
+ht-degree: 2%
 
 ---
 
@@ -26,10 +26,13 @@ Consultez les [types de rendus disponibles dans Content Hub](#types-of-rendition
 Pour télécharger une ou plusieurs ressources et leurs rendus, procédez comme suit :
 
 * Pour télécharger une seule ressource et ses rendus :
+
    1. Sélectionnez ![Télécharger](/help/assets/assets/download-icon.svg) disponible sur la carte de la ressource pour prévisualiser la ressource et ses rendus disponibles.
    1. Sélectionnez les rendus disponibles et cliquez sur l’option **[!UICONTROL Télécharger]** dans la boîte de dialogue pour télécharger les rendus sélectionnés sous la forme d’un fichier ZIP. Si la boîte de dialogue affiche une licence de ressource (pour une ressource sous licence), acceptez les termes et conditions de la licence et cliquez sur **[!UICONTROL Télécharger]**.
-      ![télécharger une ressource](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
-Vous pouvez également cliquer sur la miniature de la ressource, puis sur ![Télécharger](/help/assets/assets/download-icon.svg) pour sélectionner et afficher les rendus disponibles dans la boîte de dialogue avant de les télécharger.
+
+  ![télécharger une ressource](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
+
+  Vous pouvez également cliquer sur la miniature de la ressource, puis sur ![Télécharger](/help/assets/assets/download-icon.svg) pour sélectionner et afficher les rendus disponibles dans la boîte de dialogue avant de les télécharger. Vous pouvez également copier l’URL de diffusion pour les rendus de ressources si vous accédez aux propriétés de la ressource et cliquez sur l’icône Télécharger . L’option de copie de l’URL de diffusion n’est disponible que si la cible de validation de la ressource est [définie sur Diffusion](/help/assets/approve-assets-content-hub.md#set-approval-target).
 
 * Pour télécharger plusieurs ressources et leurs rendus :
    1. Sélectionnez les ressources, cliquez sur ![Télécharger](/help/assets/assets/download-icon.svg) **[!UICONTROL Télécharger]** et consultez la liste des ressources sélectionnées dans la boîte de dialogue **[!UICONTROL Télécharger les ressources]**. Cliquez sur ![désélectionner](/help/assets/assets/Close.svg) en regard d’une ressource pour la désélectionner de la liste.
@@ -42,11 +45,15 @@ Vous pouvez également cliquer sur la miniature de la ressource, puis sur ![Tél
       > * L’option **[!UICONTROL Créer un dossier distinct pour chaque ressource]** n’est disponible que pour les utilisateurs [!DNL Content Hub] authentifiés. [!DNL Content Hub] permet aux utilisateurs publics de télécharger des ressources sous la forme de ressources individuelles.
 
    1. Cliquez sur **[!UICONTROL Télécharger]** pour télécharger les ressources sélectionnées et leurs rendus.
-      ![téléchargement de plusieurs ressources](/help/assets/assets/bulk-asset-download-content-hub.png)
+
+![téléchargement de plusieurs ressources](/help/assets/assets/bulk-asset-download-content-hub.png)
 
 Vous pouvez continuer à utiliser [!DNL Content Hub] pendant le téléchargement est en cours. Content Hub n’interrompt pas votre workflow pendant le processus de téléchargement.
+
 ![téléchargement de plusieurs ressources](/help/assets/assets/download-assets-notification-ch.png)
+
 Si la boîte de dialogue **[!UICONTROL Télécharger des ressources]** affiche les licences des ressources, sélectionnez chaque licence dans le volet de gauche (section [!UICONTROL Documents T&amp;C]) pour prévisualiser la licence et afficher les ressources sélectionnées associées à la licence dans le volet central de la boîte de dialogue. Après avoir examiné chaque licence, sélectionnez les rendus, cliquez sur **[!UICONTROL J’ai lu et accepté les conditions générales mentionnées ci-dessus]** puis sélectionnez **[!UICONTROL Télécharger]** pour les télécharger.
+
 ![téléchargement de plusieurs ressources](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
 >[!NOTE]

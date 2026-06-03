@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
+source-git-commit: f625c95a067b2a16f3a237b80005c4ea4cc6cd4d
 workflow-type: tm+mt
-source-wordcount: '2274'
+source-wordcount: '2288'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 Les demandes de contenu incluent les demandes envoyées à AEM Sites. Ces requêtes peuvent être acheminées via Edge Delivery Services ou des systèmes de mise en cache fournis par le client, tels qu’un réseau de diffusion de contenu (CDN). Ces requêtes diffusent des données structurées au format HTML ou JSON et prennent en charge les pages vues (par exemple, les pages et les fragments d’expérience) ou les retours JSON par le biais d’API de manière découplée.
 
-Le système comptabilise les demandes de contenu lorsqu’un utilisateur ou une utilisatrice consulte une page à l’aide d’HTML ou de JSON. Il mesure la requête au moment où le premier système de mise en cache la reçoit. Certaines requêtes HTTP sont incluses ou exclues à des fins de comptage des requêtes de contenu. Consultez la liste complète des [demandes de contenu incluses](#included-content-requests) et [demandes de contenu exclues](#excluded-content-request) HTTP.
+Le système comptabilise les demandes de contenu lorsqu’un utilisateur ou une utilisatrice consulte une page à l’aide d’HTML ou de JSON. Il mesure la requête au moment où le premier système de mise en cache la reçoit. Certaines requêtes HTTP sont incluses ou exclues à des fins de comptage des requêtes de contenu. Consultez la liste complète des [demandes de contenu incluses](#included-content-requests) et [demandes de contenu exclues](#excluded-content-requests) HTTP.
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ Le système comptabilise les demandes de contenu lorsqu’un utilisateur ou une 
 
 Une *requête de page* fait référence à une requête HTTP qui récupère le contenu structuré de base (par exemple, HTML ou JSON) nécessaire pour effectuer le rendu de l’expérience de la page principale. Elle n’inclut pas les demandes de ressources, telles que des images ou des scripts.
 
-Pour les clients qui utilisent le réseau de diffusion de contenu prêt à l’emploi, AEM as a Cloud Service comptabilise les demandes de contenu au niveau du serveur. Cette mesure se produit automatiquement et ne dépend pas du suivi de l’analyse côté client.
+Pour les clients qui utilisent le réseau de diffusion de contenu par défaut, AEM as a Cloud Service comptabilise les demandes de contenu au niveau du serveur. Cette mesure se produit automatiquement et ne dépend pas du suivi de l’analyse côté client.
 
 AEM (Adobe Experience Manager) as a Cloud Service identifie les demandes de contenu en fonction des types de réponse générés par l’instance AEM et reçus sur le réseau CDN. Plus précisément, les requêtes qui renvoient HTML (`text/html`) ou JSON (`application/json`) sont comptabilisées. Ces formats diffusent généralement le contenu de la page principale pour un rendu de site classique ou une diffusion découplée.
 
@@ -49,7 +49,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 
 Les requêtes de contenu peuvent présenter des variations au sein des outils de création de rapports d’analyse d’une organisation, comme résumé dans le tableau suivant. En règle générale, évitez d’utiliser des outils d’analyse qui reposent sur une instrumentation côté client pour signaler le nombre de demandes de contenu pour un site. Ces outils manquent souvent une grande partie du trafic, car leur activation dépend du consentement de l’utilisateur. Les outils Analytics qui collectent des données côté serveur dans les fichiers journaux, ou les rapports de réseau CDN pour les clients qui ajoutent leur propre réseau CDN en plus d’AEM as a Cloud Service, fournissent de meilleurs chiffres.
 
-| Raison de l’écart | Explication |
+| Raison de l&#39;écart | Explication |
 |---|---|
 | Consentement de l’utilisateur final | Le déclenchement des outils Analytics qui reposent sur une instrumentation côté client dépend souvent du consentement de l’utilisateur. Ce workflow peut représenter la majorité du trafic non suivi. Pour les clients qui souhaitent mesurer eux-mêmes les demandes de contenu, Adobe vous recommande de vous fier aux outils d’analyse pour collecter les données à partir de rapports côté serveur ou CDN. |
 | Balisage | Toutes les pages ou appels d’API qui font l’objet d’un suivi sous forme de demandes de contenu Adobe Experience Manager peuvent ne pas être balisés avec le suivi Analytics. |
@@ -67,7 +67,7 @@ Consultez le [Tableau de bord des licences](/help/implementing/cloud-manager/lic
 
 ## Règles de collecte côté serveur {#serverside-collection}
 
-AEM as a Cloud Service applique des règles de collecte côté serveur pour comptabiliser les requêtes de contenu. Ces règles excluent les robots connus (tels que les robots d&#39;exploration de moteur de recherche), y compris les robots d&#39;exploration AI/LLM reconnus, ainsi qu’un ensemble de services de surveillance qui effectuent régulièrement des requêtes ping sur le site. Tout autre trafic de type synthétique, automatisé ou surveillance qui ne figure pas sur cette liste d’exclusion est comptabilisé comme des demandes de contenu facturables.
+AEM as a Cloud Service applique des règles de collecte côté serveur pour comptabiliser les requêtes de contenu. Ces règles excluent les robots connus (tels que les robots d&#39;exploration de moteur de recherche), y compris les robots d&#39;exploration AI/LLM reconnus, ainsi qu’un ensemble de services de surveillance qui effectuent régulièrement des requêtes ping sur le site. Les autres trafics synthétiques, automatisés ou de surveillance qui ne figurent pas sur cette liste d’exclusion sont comptabilisés comme des demandes de contenu facturables.
 
 Les tableaux suivants répertorient les types de demandes de contenu incluses et exclues, avec de brèves descriptions de chacune d’elles.
 
@@ -76,7 +76,7 @@ Les tableaux suivants répertorient les types de demandes de contenu incluses et
 >[!NOTE]
 >Si une requête API renvoie une réponse HTML, elle peut être classée comme une requête de contenu, selon son contexte d’utilisation. Les requêtes d’API renvoyant des données hors interface utilisateur sont généralement exclues.
 
-| Type de demande | Demande de contenu | Description |
+| Type de demande | Requête de contenu | Description |
 | --- | --- | --- |
 | Code HTTP 100-299 | Inclus | Inclut les requêtes réussies qui renvoient une partie ou l’intégralité du contenu HTML ou JSON.<br>Code HTTP 206 : ces requêtes ne diffusent qu’une partie du contenu complet. Les requêtes partielles sont incluses lorsqu’elles diffusent une partie d’une réponse HTML ou JSON utilisée dans le rendu du contenu de la page. |
 | Bibliothèques HTTP à automatiser | Inclus | Les requêtes effectuées par les outils ou les bibliothèques qui récupèrent le contenu des pages. Par exemple : <br>· Amazon CloudFront<br>· Client Apache Http<br>· Client HTTP asynchrone<br>· Axios<br>· Azureus<br>· Curl<br>· Récupération de nœud GitHub<br>· Guzzle<br>· Go-http-client<br>· Chrome découplé· Java™ Client<br>· Jersey<br>· Nœud Oembed<br>· okhttp<br>· Requêtes Python<br>· Reactor Netty<br>· Wget<br>· WinHTTP<br>· Fast HTTP<br>· Nœud GitHub Fetch<br>· Reactor Netty<br><br><br> It peut également inclure des agents personnalisés ou une automatisation pilotée par l’IA lorsque le trafic n’est pas classé comme un robot bien connu. |
@@ -88,7 +88,7 @@ Voir aussi [Tableau de bord des licences](/help/implementing/cloud-manager/licen
 
 ### Types de demandes de contenu exclues {#excluded-content-request}
 
-| Type de demande | Demande de contenu | Description |
+| Type de demande | Requête de contenu | Description |
 | --- | --- | --- |
 | Code HTTP 500+ | Exclu | Erreurs renvoyées au visiteur lorsqu’un problème se produit sur AEM as a Cloud Service ou dans le code personnalisé du client. |
 | Code HTTP 400-499 | Exclu | Erreurs renvoyées au visiteur lorsque le contenu n’existe pas (404) ou qu’il existe d’autres problèmes liés au contenu ou aux requêtes. |
@@ -96,7 +96,7 @@ Voir aussi [Tableau de bord des licences](/help/implementing/cloud-manager/licen
 | Demandes allant dans `/libs/`* | Exclu | Requêtes JSON internes AEM, telles que le jeton CSRF qui n’est pas facturable. |
 | Trafic provenant d’attaques DDOS | Exclu | Protection DDOS. AEM détecte automatiquement certaines des attaques DDOS et les bloque. Les attaques DDOS détectées ne sont pas facturables. |
 | Surveillance d’AEM as a Cloud Service New Relic | Exclu | Surveillance globale d’AEM as a Cloud Service. |
-| URL permettant aux clients de surveiller leur programme Cloud Service | Exclu | Adobe vous recommande d’utiliser l’URL pour surveiller la disponibilité ou le contrôle d’intégrité en externe.<br><br>`/system/probes/health` |
+| URL permettant aux clients de surveiller leur programme Cloud Service | Exclu | Adobe vous recommande d’utiliser l’URL pour surveiller la disponibilité ou le contrôle d’intégrité en externe.<br><br>`/system/probes/health`<br><br>Pour surveiller les sites Edge Delivery, Adobe recommande d’utiliser des requêtes `HEAD` au lieu de `GET` des requêtes sur n’importe quelle page. Le chemin `/system/probes/health` n’existe pas dans Edge Delivery. |
 | Service de préchauffage de capsule AEM as a Cloud Service | Exclu | Agent : skyline-service-préchauffage/1.* |
 | Moteurs de recherche connus, réseaux sociaux et bibliothèques HTTP (avec le tag Fastly) | Exclu | Services connus visitant régulièrement le site pour actualiser leur index ou service de recherche :<br><br>Exemples :<br>· AddSearchBot<br>· AhrefsBot<br>· Applebot<br>· Ask Jeeves Corporate Spider<br>· Bingbot<br>· BingPreview<br>· BLEXBot<br>· BuiltWith<br>· Bytespider<br>· CrawlerKengo<br>· Facebookexternalhit<br>· Google AdsBot<br>· Google AdsBot Mobile<br>· Googlebot<br>· Googlebot Mobile<br> lmspider<br>· LucidWorks<br>· Pinterest`MJ12bot`<br>· SemrushBot<br>· SiteImprov<br>· StashBot<br>· StatusCake<br>· YandexBot<br>· ContentKing<br> <br>· Claudebot |
 | Robots d&#39;exploration AI/LLM bien connus (identifiés par Fastly) | Exclu | Demandes de robots d&#39;exploration AI/LLM reconnus qui sont identifiés comme des robots bien connus (par exemple, par des signaux de classification de `User-Agent` ou d’autres robots). Ces demandes ne sont pas facturables.<br><br>Parmi les exemples de ces robots exclus, citons : ChatGPT, Gmail Image Proxy, Baidu Spider, Outbrain, Yahoo ! Mail Proxy, aiHitBot, Mail.Ru Bot, DomainStatsBot, Rainmeter, MetaInspector et Yahoo Gemini.<br><br>Si un agent d’IA n’est pas identifié comme un robot bien connu (par exemple, il utilise un `User-Agent` de navigateur générique), ses requêtes peuvent être comptabilisées comme des requêtes de contenu facturables. |
@@ -107,16 +107,16 @@ Voir aussi [Tableau de bord des licences](/help/implementing/cloud-manager/licen
 
 ## Gestion des demandes de contenu {#managing-content-requests}
 
-Comme mentionné dans la section ci-dessus [Variances des requêtes de contenu Cloud Service](#content-requests-variances), les requêtes de contenu peuvent être plus élevées que prévu pour plusieurs raisons, un thread commun étant le trafic atteignant le réseau CDN.  En tant que client AEM, il est à votre avantage de surveiller et de gérer vos demandes de contenu pour respecter votre budget de licence.  La gestion des requêtes de contenu est généralement une combinaison de techniques d’implémentation et de [&#x200B; règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md).
+Comme indiqué dans la section [Variances des requêtes de contenu Cloud Service](#content-requests-variances), les requêtes de contenu peuvent être plus élevées que prévu pour plusieurs raisons, telles que le trafic atteignant le réseau CDN. En tant que client AEM, il vous est utile de surveiller et de gérer vos requêtes de contenu afin de respecter votre budget de licence. La gestion des requêtes de contenu est généralement une combinaison de techniques d’implémentation et de [&#x200B; règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Techniques d’implémentation pour gérer les demandes de contenu {#implementation-techniques-to-manage-crs}
 
-* Assurez-vous que toutes les réponses Page introuvable sont diffusées avec un statut HTTP 404.  Si elles sont renvoyées avec un statut 200, elles sont prises en compte dans les demandes de contenu.
+* Assurez-vous que toutes les réponses Page introuvable sont diffusées avec un statut HTTP 404. Si elles sont renvoyées avec un statut 200, elles sont prises en compte dans les demandes de contenu.
 * Acheminez les outils de contrôle ou de surveillance de l’intégrité vers l’URL /system/probes/health ou utilisez la méthode HEAD au lieu de GET pour éviter des demandes de contenu.
-* Trouvez l’équilibre entre vos besoins de fraîcheur de contenu et le coût de licence AEM pour tout robot d&#39;exploration de recherche personnalisé que vous avez intégré à votre site.  Un robot d&#39;exploration trop agressif peut consommer de nombreuses requêtes de contenu.
+* Trouvez l’équilibre entre vos besoins de fraîcheur de contenu et le coût de licence AEM pour tout robot d&#39;exploration de recherche personnalisé que vous avez intégré à votre site. Un robot d&#39;exploration trop actif peut consommer de nombreuses requêtes de contenu.
 * Gérez les redirections comme côté serveur (statut 301 ou 302) plutôt que côté client (statut 200 avec redirection JavaScript) pour éviter deux demandes de contenu distinctes.
 * Combiner ou réduire les appels d’API, qui sont des réponses JSON d’AEM pouvant être chargées pour effectuer le rendu de la page.
-* Vérifiez que l’agent utilisateur du navigateur est correctement transmis à AEM. Ce faisant, vous utilisez la règle d’exclusion de demande de contenu « moteur de recherche bien connu » décrite ci-dessus.  Parfois, l’agent utilisateur d’origine est perdu avec certaines implémentations découplées ou configurations de réseau CDN. Si cela se produit, cela peut empêcher l’exclusion et conduire à des demandes de contenu plus élevées que si l’agent utilisateur était transmis.
+* Vérifiez que l’agent utilisateur du navigateur est correctement transmis à AEM. Ce faisant, vous utilisez la règle d’exclusion de demande de contenu « moteur de recherche bien connu » décrite ci-dessus. Parfois, l’agent utilisateur d’origine est perdu avec certaines implémentations découplées ou configurations de réseau CDN. Si cela se produit, cela peut empêcher l’exclusion et conduire à des demandes de contenu plus élevées que si l’agent utilisateur était transmis.
 
 ### Règles de filtrage du trafic pour la gestion des demandes de contenu {#traffic-filter-rules-to-manage-crs}
 
@@ -163,4 +163,4 @@ trafficFilters:
 
 Remplacez les exemples de valeurs par le code de pays, le nom de réseau ou de robot que vous souhaitez bloquer. Voir [Syntaxe des règles de filtre de trafic](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) et [Structure de condition](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure) pour plus d’options.
 
-* Certains robots ont frappé un site très lourdement un jour et disparaissent le lendemain. Cette fonctionnalité peut empêcher toute tentative de blocage d’une adresse IP ou d’un agent utilisateur spécifique.  Une approche générique consiste à introduire une [&#x200B; règle de limitation des taux](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules).  Examinez les [exemples](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) et créez une règle qui correspond à votre tolérance pour un taux rapide de requêtes.  Consultez la syntaxe [Structure de condition](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure) pour connaître les exceptions que vous souhaitez autoriser à une limite de taux générique.
+Certains robots peuvent surcharger un site avec du trafic un jour, puis disparaître le lendemain. Cette fonctionnalité peut empêcher toute tentative de blocage d’une adresse IP ou d’un agent utilisateur spécifique. Une approche générique consiste à introduire une [&#x200B; règle de limitation des taux](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules). Examinez les [exemples](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) et créez une règle qui correspond à votre tolérance pour un taux rapide de requêtes. Consultez la syntaxe [Structure de condition](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure) pour connaître les exceptions que vous souhaitez autoriser à une limite de taux générique.
