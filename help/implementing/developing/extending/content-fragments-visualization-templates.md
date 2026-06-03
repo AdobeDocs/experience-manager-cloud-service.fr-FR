@@ -20,7 +20,7 @@ Dans Adobe Experience Manager (AEM) as a Cloud Service, les modèles HTML peuven
 >
 >Les fragments de contenu visuel et la tâche Comparaison avec les fragments de contenu visuel sont actuellement en disponibilité limitée.
 >
->Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [](mailto:experience-production-agent@adobe.com).
+>Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
 
 Les modèles HTML vous permettent de contrôler l’affichage de vos fragments de contenu. Vous pouvez créer des modèles HTML dans l’éditeur de code de votre choix, puis les charger et les affecter aux modèles de fragment de contenu dans AEM.  Les espaces réservés de contenu utilisant Handlebars.js permettent de mapper le modèle aux types de données dans le modèle de fragment de contenu. Une fois affecté à un modèle, un modèle peut être utilisé avec n’importe quel fragment de contenu basé sur le modèle. Il permet de visualiser le fragment ou de le diffuser sous forme d’expérience modulaire au format HTML sur n’importe quel canal (web, e-mail, application mobile, etc.).
 
@@ -76,7 +76,7 @@ Pour plus d’informations sur l’utilisation de votre modèle dans AEM, voir :
 
 ### Utilisation de l’URL de publication de fragment de contenu visuel {#using-the-visual-content-fragment-publish-url}
 
-Une fois que vous avez créé des fragments de contenu visuel à l’aide du modèle, vous pouvez utiliser l’URL [ Publication de vos fragments de contenu visuel](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md).
+Une fois que vous avez créé des fragments de contenu visuel à l’aide du modèle, vous pouvez utiliser l’URL [&#x200B; Publication de vos fragments de contenu visuel](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md).
 
 ## Handlebars : principes de base (très) {#handlebars-the-very-basics}
 
