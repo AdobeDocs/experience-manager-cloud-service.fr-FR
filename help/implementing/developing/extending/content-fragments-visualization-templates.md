@@ -3,9 +3,9 @@ title: Création de modèles de visualisation pour les fragments de contenu
 description: Prévisualiser et publier des fragments de contenu avec des modèles de visualisation. Découvrez comment créer et personnaliser des modèles.
 feature: Developing, Content Fragments
 role: Admin, Developer
-source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
+source-git-commit: c2f78402233872c0b9b8c12e767130f461366b24
 workflow-type: tm+mt
-source-wordcount: '2142'
+source-wordcount: '2119'
 ht-degree: 3%
 
 ---
@@ -20,7 +20,7 @@ Dans Adobe Experience Manager (AEM) as a Cloud Service, les modèles HTML peuven
 >
 >Les fragments de contenu visuel et la tâche Comparaison avec les fragments de contenu visuel sont actuellement en disponibilité limitée.
 >
->Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
+>Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [](mailto:experience-production-agent@adobe.com).
 
 Les modèles HTML vous permettent de contrôler l’affichage de vos fragments de contenu. Vous pouvez créer des modèles HTML dans l’éditeur de code de votre choix, puis les charger et les affecter aux modèles de fragment de contenu dans AEM.  Les espaces réservés de contenu utilisant Handlebars.js permettent de mapper le modèle aux types de données dans le modèle de fragment de contenu. Une fois affecté à un modèle, un modèle peut être utilisé avec n’importe quel fragment de contenu basé sur le modèle. Il permet de visualiser le fragment ou de le diffuser sous forme d’expérience modulaire au format HTML sur n’importe quel canal (web, e-mail, application mobile, etc.).
 
@@ -76,7 +76,7 @@ Pour plus d’informations sur l’utilisation de votre modèle dans AEM, voir :
 
 ### Utilisation de l’URL de publication de fragment de contenu visuel {#using-the-visual-content-fragment-publish-url}
 
-Une fois que vous avez créé des fragments de contenu visuel à l’aide du modèle, vous pouvez utiliser l’URL [&#x200B; Publication de vos fragments de contenu visuel](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md).
+Une fois que vous avez créé des fragments de contenu visuel à l’aide du modèle, vous pouvez utiliser l’URL [ Publication de vos fragments de contenu visuel](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md).
 
 ## Handlebars : principes de base (très) {#handlebars-the-very-basics}
 
@@ -956,7 +956,7 @@ Voici quelques conseils de dépannage :
 | Le champ à valeurs multiples affiche uniquement le premier élément | Un tableau comportant cinq éléments n’en affiche qu’un seul | Utiliser `{{#each fields.tags}}` pour itérer tous les éléments |
 | L’accès à l’index de tableau ne fonctionne pas. | `{{{fields.tags[0]}}}` rend vide | Utilisez une syntaxe entre points : `{{{fields.tags.[0]}}}` |
 | Les fragments référencés n’apparaissent pas | `hasReferencedFragments` est toujours faux | Activer l&#39;hydratation : `?hydration=%7B%22enabled%22%3Atrue%7D;` également vérifier `{{#if referencesError}}` |
-| Le modèle ne renvoie rien. | Page vide ou sortie vide | Rechercher les blocs `{{#if}}` ou `{{#each}}` non fermés ; ajouter la sortie de diagnostic : `<pre>hasFields: {{hasFields}}`|`title: {{properties.title}}</pre>` |
+| Le modèle ne renvoie rien. | Page vide ou sortie vide | Rechercher les blocs `{{#if}}` ou `{{#each}}` non fermés ; ajouter une sortie de diagnostic : `<pre>hasFields: {{hasFields}} \| title: {{properties.title}}</pre>` |
 | Les commentaires s’affichent dans la page rendue | Texte de commentaire HTML visible par les utilisateurs finaux | Utiliser des commentaires Handlebars `{{! comment }}` lieu de `<!-- comment -->` HTML |
 | Conditionnel est toujours évalué sur vrai | `{{#if fields.enabled}}` est toujours vrai | Remarque : la chaîne `"false"` est vraie dans Handlebars. Seuls les `false`, `null`, `undefined`, `0`, `""` et `[]` réels sont faux. |
 | Caractères spéciaux rendus en tant qu’entités | `&lt;`, `&amp;` affiché au lieu de `<`, `&` | Utilisez des accolades triples pour le contenu HTML prérendu : `{{{fields.content}}}` |
