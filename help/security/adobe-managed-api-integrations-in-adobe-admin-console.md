@@ -50,7 +50,7 @@ Le tableau suivant répertorie les intégrations de services qu’Adobe met en s
 
 | Nom, comme indiqué dans Admin Console | Effets | Utilisé par | Autorisations accordées | Activé par défaut |
 |---|---|---|---|---|
-| **Intégration du réseau CDN géré par** | Permet au service LLM Optimizer de mettre à jour pour votre compte votre réseau CDN géré par AEM as a Cloud Service **règles de routage de trafic dynamique** afin que les robots d&#39;exploration d’IA et d’agent (tels que ChatGPT, Perplexity et Claude) puissent être acheminés vers des origines optimisées de LLM Optimizer sans modification manuelle du réseau CDN par votre équipe. | **&#x200B;**&#x200B;via la fonctionnalité [Optimiser sur Edge](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview) | Rôle Cloud Manager **Responsable de déploiement** | Oui |
+| **Intégration du réseau CDN géré par** | Permet au service LLM Optimizer de mettre à jour pour votre compte votre réseau CDN géré par AEM as a Cloud Service **règles de routage de trafic dynamique** afin que les robots d&#39;exploration d’IA et d’agent (tels que ChatGPT, Perplexity et Claude) puissent être acheminés vers des origines optimisées de LLM Optimizer sans modification manuelle du réseau CDN par votre équipe. | **&#x200B;**&#x200B;via la fonctionnalité [Optimiser sur Edge](https://experienceleague.adobe.com/fr/docs/llm-optimizer/using/resources/optimize-at-edge/overview) | Rôle Cloud Manager **Responsable de déploiement** | Oui |
 
 La capture d’écran suivante est un exemple de l’**intégration du réseau CDN géré par** mentionnée dans le tableau ci-dessus.
 
