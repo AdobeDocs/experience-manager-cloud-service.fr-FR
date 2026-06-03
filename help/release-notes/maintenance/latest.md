@@ -4,10 +4,10 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 6087c41fda8f00d3606059484b0452ef5187f6ef
+source-git-commit: 86a25919bd35d0213c8626517411f186e5c7d8f3
 workflow-type: tm+mt
-source-wordcount: '667'
-ht-degree: 30%
+source-wordcount: '1550'
+ht-degree: 13%
 
 ---
 
@@ -16,55 +16,113 @@ ht-degree: 30%
 
 La section suivante décrit les notes de mise jour techniques de maintenance actuelle d’Experience Manager as a Cloud Service.
 
-## 26309 de publication {#release-26309}
+## 26353 de publication {#release-26353}
 
-Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 26309, rendue publique le 26 mai 2026. La version de maintenance précédente était la version 25892.
+Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 26353, rendue publique le 3 juin 2026. La version de maintenance précédente était la version 26309.
 
-L’activation de la fonctionnalité 2026.5.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
+L’activation de la fonctionnalité 2026.6.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
 
->[!NOTE]
->
->La version 26125 a été rendue privée.
+### Améliorations {#enhancements-26353}
 
-### Améliorations {#enhancements-26309}
+* CQ-4360727 : ajout de balises et de métadonnées de ressource, ainsi que de la prise en charge de la collecte de dictionnaire i18n pour les workflows de traduction agentique dans la traduction AEM.
+* CQ-4363507 : Amélioration de la gestion du Dispatcher à exécution longue pour accroître la stabilité des workflows de traduction.
+* FORMS-24887 : la génération du document d’enregistrement (DoR) prend désormais en charge l’exclusion des pièces jointes du format de document portable (PDF) DoR. Les entreprises peuvent réduire la taille du fichier de document d’enregistrement lorsque les pièces jointes sont diffusées séparément à la destination.
+* FORMS-21919 : la génération d’un document d’enregistrement (DoR) est désormais prise en charge pour les composants principaux de Forms adaptatif incorporés dans Sites. Les auteurs peuvent générer une sortie de document d’enregistrement directement à partir de formulaires incorporés sans déplacer les formulaires en dehors du contexte Sites.
+* FORMS-24318 : les auteurs peuvent désormais définir l’expiration du document (`daysUntilSigningDeadline`) lors de la configuration de l’action Envoyer le PDF par e-mail dans le Forms adaptatif. Les contrats soumis à Adobe Sign respectent la valeur configurée au lieu de ne pas avoir d’expiration par défaut.
+* SITES-32578 : MSM OpenAPI - Définissez l’appel d’héritage de réinitialisation.
+* SITES-32580 : MSM OpenAPI - Implémentez Désolidariser.
+* SITES-32581 : MSM OpenAPI - Implémentation de la réinitialisation.
+* SITES-32582 : MSM OpenAPI - Implémentation - Suspendre.
+* SITES-41333 : MSM OpenAPI - Implémentation de la reprise.
+* SITES-35050 : version 2.31.0 des composants principaux.
+* SITES-43855 : création/modification de lancement/amélioration des performances pour un nombre de fragments de contenu inférieur à la taille du lot.
+* SITES-44267 : correction de l’incohérence du schéma OpenAPI MSM.
+* SITES-44323 : supprimez le point d’entrée Live Copy du schéma OpenAPI de MSM.
+* SITES-44430 : MSM OpenAPI - Correction de la validation de l’identifiant de Live Copy Get Inheritance Details.
+* SITES-45016 : version 2.18.4 des composants CIF.
+* SITES-11784 : éditeur de fragment de contenu : amélioration significative des performances de chargement des fragments contenant de nombreux champs d’éditeur de texte enrichi (RTE).
+* SITES-42675 : introduction d’un nouveau point d’entrée pour la recherche de variations d’un fragment de contenu fourni.
+* SITES-32196 : obtenir le prénom et le nom de l’utilisateur séparément - les réponses de l’API exposent séparément le prénom et le nom du créateur/modificateur/éditeur, ainsi que le nom complet.
+* SITES-34223 : la suppression de page s’exécute de manière asynchrone.
+* SITES-42899 : reprises lors de la suppression de pages asynchrones pour améliorer la fiabilité.
+* SITES-42912 : améliorations des performances pour l’ajustement des références lors du déplacement du dossier.
+* SITES-43942 : Edge Delivery avec l’éditeur universel - rejetez la publication des images dépassant la largeur et la hauteur maximales de l’image.
+* SITES-42979 : Edge Delivery avec éditeur universel - rejetez la publication des ressources sans extension.
+* SITES-42730 : Edge Delivery avec éditeur universel - supprimez l’instrumentation de l’éditeur pour les pages verrouillées.
+* SITES-42706 : Edge Delivery avec éditeur universel - Prise en charge de la liaison intersite sur des configurations multisites.
+* SITES-30753 : Edge Delivery avec éditeur universel - Remplacez la configuration de l’hôte Edge par une ttl de cache configurable pour la création.
 
-* ASSETS-56957 : ajout de la prise en charge du chargement multipiste audio et multilégende pour les vidéos dans Dynamic Media avec OpenAPI.
-* ASSETS-58563 : ajout de l’intégration d’Adobe Commerce à AEM Assets.
-* ASSETS-65603 : amélioration des performances de la liste des dossiers dans l’interface utilisateur tactile en permettant la configuration d’un nombre de ressources réduit.
-* ASSETS-66032 : ajout de la prise en charge avancée du proxy de réseau à l’importation en bloc Assets pour les environnements disposant d’un stockage dans le cloud limité par adresse IP.
-* CQ-4363346 : amélioration de l’interface utilisateur des directives de traduction avec la prise en charge du téléchargement d’exemples de directives, du chargement de fichiers de directives aux formats JSON, PDF et DOCX et de la suppression de directives existantes.
-* GRANITE-67514 : isolation d’un lot de bibliothèque de mise en cache interne pour empêcher les échecs des tâches de transformation et les conflits avec les lots déployés par le client.
-* SITES-42076 : expérimental : ajout d’opérations de recherche et de remplacement en masse pour les pages en tant que primitives MCP dans l’API de contenu.
-* SITES-42835 : expérimental : les pages AEM Forms créées en dehors de l’API de contenu sont désormais accessibles via l’API de contenu d’AEM Sites sans nécessiter de migration ou de modifications de schéma.
-* SITES-44265 : ajout d’un identifiant de page répliqué stable à l’API de contenu qui reste valide après les déplacements de page, ce qui empêche les erreurs 404 de référence obsolète.
+### Problèmes résolus {#fixed-issues-26353}
 
-### Problèmes résolus {#fixed-issues-26309}
+* CQ-4361979 : correction du retour à l’anglais des sous-pages traduites après la traduction de fragments d’expérience dans la traduction AEM.
+* CQ-4362438 : la copie de langue fixe ne réécrivait pas les liens internes dans les fragments d’expérience lors de la traduction dans la traduction AEM.
+* CQ-4363421 : correctif ajouté pour le workflow de traduction Microsoft renvoyant une erreur de code de langue cible non valide pour le chinois simplifié (zh-CN) pour le contenu de grande taille dans la traduction AEM.
+* FORMS-24826 : échec de l’envoi du formulaire dans le client de production MiniMed EForm Sandbox. Les clients externes qui valident des formulaires avant l’utilisation en production ne peuvent pas terminer leurs workflows.
+* FORMS-25126 : l’éditeur de règles de Forms adaptatif n’autorise pas la modification des règles créées précédemment, ce qui empêche les mises à jour de la logique commerciale et ralentit la maintenance des formulaires.
+* FORMS-25129 : le changement de nom d’un champ pour inclure des espaces rompt le comportement de l’éditeur de règles. Le script généré ne s’exécute plus comme prévu et la logique de formulaire associée cesse de fonctionner.
+* FORMS-25480 : la sortie de document d’enregistrement (DoR) à partir de modèles avec des panneaux configurés avec wrapData défini sur true (par exemple, wrapInData.xdp) peut omettre les données du panneau, ce qui réduit la précision des documents générés.
+* FORMS-25501 : les workflows Adobe Sign restent en attente lorsque le statut de signature n’est pas renvoyé après l’étape Adobe Sign, ce qui bloque le traitement en aval.
+* SITES-24497 : les repères du même type ne sont pas étiquetés.
+* SITES-24525 : un rôle d’en-tête incorrect est utilisé pour les boutons modaux.
+* SITES-24703 : l’indicateur de focus du bouton contextuel de la zone de liste est tronqué.
+* SITES-25217 : l’icône d’informations est trop petite.
+* SITES-25263 : le champ de date de la fenêtre modale Timewarp est `aria-haspopup=dialog`.
+* SITES-25308 : l’indicateur de focus des boutons de la barre d’outils démographique ne répond pas aux exigences de contraste minimales.
+* SITES-25364 : les instructions d’entrée ne sont pas liées à la case à cocher dans le code.
+* SITES-25377 : le contenu du rail latéral qu’Assets recharge lorsque le champ Filtre reçoit le focus.
+* SITES-28592 : chaînes non localisées dans l’éditeur de modèles de fragments de contenu > Boîte de dialogue « Le modèle est verrouillé ».
+* SITES-31978 : l’aperçu de la colonne de page Sites mène à l’OOM lorsque la file d’attente de réplication est volumineuse — L’aperçu de la colonne de page ne charge plus la file d’attente de réplication complète en mémoire, évitant ainsi l’OOM lorsque la file d’attente est très volumineuse.
+* SITES-37955 : Edge Delivery avec éditeur universel : correction des contrôles de réplication ignorés pour les ressources référencées.
+* SITES-39242 : miniature de modèle manquante dans la configuration avec des caractères localisés dans le nom dans les modèles de fragment de contenu.
+* SITES-40216 : Edge Delivery avec éditeur universel : correction de la dépublication de la page source d’une Live Copy avec des URL localisées activées.
+* SITES-40639 : le rétablissement de l’héritage et la sélection pour synchroniser l’élément CF dans le dossier LC ne fonctionne PAS.
+* SITES-40752 : la liste des composants du panneau latéral est accessible à l’aide du clavier.
+* SITES-41121 : le lecteur d’écran annonce le nom du composant et un nom de groupe invisible.
+* SITES-41163 : la boîte de dialogue Déplacement/republication de page ne présélectionne plus Republier pour les pages modifiées depuis la dernière publication sans avertissement, ce qui empêche la publication accidentelle du contenu de travail en cours.
+* SITES-41397 : l’ETag pour le résumé de projection de liste/recherche correspond désormais à GET-by-UUID lorsque les valeurs d’énumération de case à cocher sont corrigées dans un ordre différent de celui défini par le modèle.
+* SITES-41785 : chemin d’accès racine et nom incorrects ajoutés pour créer le résultat de la tâche de Live Copy pour les pages.
+* SITES-41928 : le chevauchement Contexthub + Unified Shell rend le menu de composant inaccessible dans l’éditeur.
+* SITES-42086 : le nœud de page orphelin reste en aperçu après le déplacement de la page — Le déplacement de page en aperçu supprime entièrement l’ancien nœud de page au lieu de laisser un `cq:Page` orphelin sans `jcr:content`.
+* SITES-42700 : MSM OpenAPI r- Le point d’entrée de synchronisation renvoie une réponse 500 si la Live Copy est introuvable.
+* SITES-42705 : la rupture de l’héritage pour la miniature dans les propriétés de page ne protège pas `/jcr:content/image` nœud du déploiement.
+* SITES-42735 : enquête sur les échecs de création de Live Copy lorsque FT_SITES-32861 est activé.
+* SITES-42736 : le déploiement MSM ne met à jour que le premier lien hypertexte dans l’éditeur de texte enrichi.
+* SITES-42889 : propriété sourceRootResource du lancement de la page définie comme uuid si le mixin mix:referenceable est appliqué à la page source.
+* SITES-42953 : le déploiement réécrit les liens de gestion des ressources numériques avec des extensions de fichier en majuscules vers des chemins inexistants.
+* SITES-42986 : chaînes non localisées dans Skyline > Commerce.
+* SITES-43034 : lancements - La colonne « Date de mise en production » trie par ordre alphanumérique au lieu de chronologique.
+* SITES-43047 : déploiement manuel ignoré pour les Live Copies superficielles après la version 2026.2.
+* SITES-43116 : la boîte de dialogue Déploiement MSM est bloquée (le spinner ne se termine jamais) - NPE dans `<code>AsyncOperationServlet.doGet</code>`.
+* SITES-43180 : GraphQL : correction d’un problème en raison duquel les requêtes utilisant des alias de champ en double renvoyaient des résultats incomplets (les sous-champs présents uniquement dans le deuxième alias étaient silencieusement supprimés de la réponse).
+* SITES-43196 : MSM OpenAPI - L’appel « Get a Live Copy Source Details » doit renvoyer la valeur 400 lorsque le CF n’est pas une source.
+* SITES-43197 : MSM OpenAPI - `PUT /{liveCopyId}/brokenInheritanceElements` renvoie 204 en cas de réussite, bien que le renvoi de 200 soit documenté.
+* SITES-43198 : MSM OpenAPI - Ajout d’une requête incorrecte 400 au schéma d’appel « Obtenir les détails de la Live Copy » et « Obtenir les sources de la Live Copy ».
+* SITES-43413 : l’action « Rollout » au niveau du composant renvoie une erreur JS « doRollout undefined » - Échec.
+* SITES-43498 : éditeur de fragment de contenu : correction d’un échec d’enregistrement pour les fragments contenant des champs de `DateTime` dont la valeur en millisecondes se termine par un zéro de fin (par exemple 14:12:16.610Z).
+* SITES-43516 : correction d’un échec intermittent des événements de page
+* SITES-43543 : GraphQL : correction d’un échec de génération de schéma lorsque les modèles de fragment de contenu référencent d’autres modèles par le biais de recherches basées sur les balises dans les hiérarchies de configuration.
+* SITES-43668 : réécriture de référence d’URL incorrecte lors du déploiement du plan directeur avec des Live Copies imbriquées.
+* SITES-43802 : chaîne « false » affichée dans la fenêtre modale Insérer un composant sur AEM Sites.
+* SITES-44145 : la promotion de lancement imbriquée ignore la version d’exploitation et empêche la restauration.
+* SITES-44204 : MSM OpenAPI r- Réinitialiser r- Réinitialiser le chemin Etag, prendre en charge le corps vide.
+* SITES-44433 : Edge Delivery avec éditeur universel : correction de l’assainissement des `og:image`, des `twitter:image` et des `og:image_secure` lors de la publication.
+* SITES-44682 : la désactivation par lots des pages de plan directeur déclenche des événements de déploiement en double pour les pages enfants.
 
-* ASSETS-36208 : correction des profils d’image qui n’apparaissaient pas dans les propriétés de dossier lorsque Dynamic Media était désactivé.
-* ASSETS-63240 : correction des opérations Relier à sélection multiple en bloc en mode d’ajout, qui laissaient les utilisateurs sur une page vierge au lieu de revenir à la console Assets.
-* ASSETS-65076 : correction d’une valeur de protocole incorrecte transmise à l’API Externalizer, qui provoquait des échecs lors de l’utilisation des créateurs de requêtes Sling.
-* ASSETS-66102 : correction des événements de publication de ressources Adobe I/O Runtime signalant une valeur de `repo:version` incorrecte, ce qui provoquait des échecs dans les intégrations en aval.
-* ASSETS-66226 : les ressources fixes ne sont pas supprimées du niveau de diffusion lors de la suppression lorsque leur statut d’approbation est stocké avec des valeurs à casse mixte.
-* ASSETS-66669 : correction du bouton Accueil de la page Résultats de la recherche qui ne naviguait pas vers l’écran de démarrage de l’interface utilisateur tactile lorsque Unified Shell était activé.
-* ASSETS-66683 : correction d’une boucle d’approbation dans Dynamic Media avec OpenAPI déclenchée par des échecs de chargement, qui entraînait des retards et des perturbations des workflows d’approbation des ressources.
-* ASSETS-67113 : correction de l’importation en bloc en ignorant les ressources SVG lors du filtrage par `image/svg+xml` de type MIME.
-* CQ-4363466 : correction d’échecs de résolution de chemin de configuration du cloud affectant les connecteurs de traduction tiers qui utilisent la résolution de configuration personnalisée.
-* CQ-4363355 : correction des demandes de traduction dans le connecteur de traduction GenAI en cours d’acheminement vers un point d’entrée régional incorrect en raison d’une URL statique codée en dur.
-* SITES-44186 : correction d’une injection de balise meta sur l’auteur, interrompant la gestion des événements de l’éditeur de page pour certains clients.
-
-### Problèmes connus {#known-issues-26309}
+### Problèmes connus {#known-issues-26353}
 
 Aucun.
 
-### Fonctionnalités et API obsolètes {#deprecated-26309}
+### Fonctionnalités et API obsolètes {#deprecated-26353}
+
+* La synthèse du texte du fragment de contenu sera abandonnée dans la prochaine version majeure d’AEM as a Cloud Service 2026.7. Il est recommandé d’utiliser plutôt les variations de génération d’AEM.
 
 Les fonctionnalités et API obsolètes et supprimées dans AEM as a Cloud Service sont présentées dans le document [Fonctionnalités et API obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md).
 
-### Correctifs de sécurité {#security-26309}
+### Correctifs de sécurité {#security-26353}
 
-AEM as a Cloud Service est dédié à l’optimisation de la sécurité et des performances de votre plateforme. Cette version de maintenance corrige 19 vulnérabilités, renforçant ainsi notre engagement en faveur d’une protection robuste des systèmes.
+AEM as a Cloud Service est dédié à l’optimisation de la sécurité et des performances de votre plateforme. Cette version de maintenance corrige 34 vulnérabilités identifiées, renforçant ainsi notre engagement envers une protection robuste des systèmes.
 
-### Technologies intégrées {#embedded-tech-26125}
+### Technologies intégrées {#embedded-tech-26353}
 
 | Technologie | Version | Lien |
 |---|---|---|
@@ -72,5 +130,5 @@ AEM as a Cloud Service est dédié à l’optimisation de la sécurité et de
 | API SLING AEM | 2.27.6 | [API Apache Sling 2.27.6](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.28-1.4.0 | [Spécification du modèle de langage HTML](https://github.com/adobe/htl-spec) |
 | Serveur HTTP Apache | 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
-| Composants principaux d’AEM | 2.30.4 | [Composants principaux de la gestion de contenu web d’AEM](https://github.com/adobe/aem-core-wcm-components) |
+| Composants principaux d’AEM | 2.31.0 | [Composants principaux de la gestion de contenu web d’AEM](https://github.com/adobe/aem-core-wcm-components) |
 | Node.js | 14 (par défaut) | [Versions de Node.js prises en charge](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
