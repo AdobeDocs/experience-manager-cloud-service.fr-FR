@@ -4,9 +4,9 @@ description: Découvrez comment l’agent de modernisation de l’expérience in
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: 8f964484f944d49cdc6c456147f060f29a20778e
+source-git-commit: f2ab0a3d604ed4cd07ec8922ed331dfc37b45e5f
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1269'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,16 @@ Commencez avec la console de modernisation de l’expérience !
 ## Compétence en documentation de projet {#project-documentation}
 
 Reconnaissant la nature fastidieuse des transferts de projet, [les compétences en documentation de projet](/help/ai-in-aem/agents/brand-experience/modernization/project-documentation.md) peuvent générer automatiquement une documentation complète une fois les travaux de création et de développement terminés.
+
+## Compétence du catalogue de sites {#site-catalog}
+
+La compétence de catalogue de sites permet d’explorer à un site web existant, de cataloguer tous les modèles de page et les variantes de bloc, de capturer des captures d’écran de chaque modèle et bloc et de générer un lot de rapports HTML interactifs à réviser. Cette compétence est précieuse pour :
+
+* **Toute personne commençant un projet de migration** afin d’obtenir un inventaire complet des mises en page, des variantes de bloc, des paramètres régionaux et des pages par modèle avant d’écrire du code, afin que les équipes puissent planifier avec précision et faire apparaître la complexité au plus tôt
+* **Les équipes qui effectuent des imports en bloc** pour identifier les pages partageant la même disposition, importez et perfectionnez manuellement les pages représentatives en premier, puis importez en bloc toutes les pages restantes pour ce modèle
+* **Chefs de projet et parties prenantes** pour comprendre l’ampleur de l’effort
+
+Consultez le document [Compétences en catalogue de sites](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md) pour plus d’informations.
 
 ## Diffusion de l’ingénieur chargé des résultats (AOE) {#aoe-delivery}
 

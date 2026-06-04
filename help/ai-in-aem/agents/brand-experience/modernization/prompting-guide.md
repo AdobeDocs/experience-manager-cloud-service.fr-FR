@@ -4,9 +4,9 @@ description: Ce guide fournit des conseils pour une invite efficace de l’agent
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 4771606b-a327-48b3-b142-44e03e4dc41d
-source-git-commit: 212c9c4db9904de0f9ec27cec9282df8d288a25a
+source-git-commit: 628d1db0be64205eab9b9992020c1b27e233b9b6
 workflow-type: tm+mt
-source-wordcount: '3163'
+source-wordcount: '3240'
 ht-degree: 0%
 
 ---
@@ -78,6 +78,20 @@ Utilisez cette invite lors de la migration de contenu d’un site web existant v
 * L’en-tête, la navigation et le pied de page sont exclus de la migration. Ils sont gérés par des compétences dédiées.
 * Chaque migration crée une infrastructure d’importation (modèles de page, analyseurs de blocs, transformateurs) pour les futures importations en bloc.
 * Les images Dynamic Media et Scene7 sont détectées dans la source et conservées en tant qu’URL DM plutôt qu’importées en tant que rendus statiques, de sorte que les transformations réactives et à la volée restent intactes. Cela s’applique à la fois aux migrations de création de documents et d’AEM Sites/Éditeur universel.
+
+### Catalogue de sites {#site-catalog}
+
+Utilisez cette invite pour analyser un site web existant afin de comprendre son échelle, ses modèles et ses variantes de bloc avant de démarrer une migration. Les résultats peuvent être utilisés pour les [imports en bloc](#bulk-import).
+
+#### Exemples d’invites {#example-prompts-site-catalog}
+
+* « Portée du site https://example.com »
+* « Rechercher des modèles sur https://example.com »
+* « Site de catalogue https://example.com »
+* « Combien y a-t-il de types de page sur https://example.com »
+* « Quelles sont les dispositions sur https://example.com ? »
+
+Pour plus d’informations sur les compétences de catalogue de sites, consultez le document [Compétences de catalogue de sites.](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)
 
 ### Import en masse {#bulk-import}
 

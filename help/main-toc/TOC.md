@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 7b7e4bc576d13b39f7d8a8d8f942e9a16a8ada9a
+source-git-commit: 44aacc1578fc1288d1d07e06ac2307dea31ec90a
 workflow-type: tm+mt
-source-wordcount: '7474'
-ht-degree: 85%
+source-wordcount: '7480'
+ht-degree: 84%
 
 ---
 
@@ -762,6 +762,7 @@ ht-degree: 85%
          + [Optimiser les images](/help/assets/optimize-images-using-dynamic-media-with-openapi-capabilities.md)
          + [Création d’URL de redirection vers un microsite](/help/assets/vanity-urls.md)
          + [Gestion du cache](/help/assets/cache-management-dynamic-media-open-api.md)
+         + [Recadrage intelligent de vidéo](/help/assets/video-smart-crops.md)
          + [Audio multiple et sous-titres multiples](/help/assets/multi-audio-multi-caption.md)
          + [Questions fréquentes](/help/assets/dynamic-media-open-apis-faqs.md)
    + Utilisation de la vue Ressources {#assets-view}
@@ -1157,6 +1158,7 @@ ht-degree: 85%
             + [Console de modernisation](/help/ai-in-aem/agents/brand-experience/modernization/console.md)
             + [Guide de l’invite](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md)
             + [Compétence en documentation de projet](/help/ai-in-aem/agents/brand-experience/modernization/project-documentation.md)
+            + [Compétence du catalogue de sites](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)
             + [Diffusion AOE](/help/ai-in-aem/agents/brand-experience/modernization/aoe-delivery.md)
          + [Agent de développement](/help/ai-in-aem/agents/brand-experience/development/development.md)
       + Agent du gestionnaire de contenu {#content-advisor}

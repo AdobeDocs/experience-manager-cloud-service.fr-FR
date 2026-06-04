@@ -1,93 +1,92 @@
 ---
 title: Application de recadrages intelligents vidéo aux vidéos approuvées
-description: Dynamic Media avec les fonctionnalités OpenAPI permet de générer automatiquement des sorties vidéo recadrées intelligentes pour les ressources vidéo approuvées dans Adobe Experience Manager (AEM).
+description: Dynamic Media avec des fonctionnalités OpenAPI permet de générer des sorties vidéo recadrées intelligemment pour des ressources vidéo dans Adobe Experience Manager (AEM).
 role: Admin, User
-badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
-exl-id: video-smartcrop-dmwoapi
-source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Application pour AEM Assets."
+source-git-commit: 200d311ff279b6db8826a8c0cecd5b60d62f0585
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 4%
+source-wordcount: '424'
+ht-degree: 5%
 
 ---
 
 
-# Application de recadrages intelligents vidéo aux vidéos approuvées {#apply-video-smart-crops-dmwoapi}
+Appliquez des recadrages intelligents vidéo aux vidéos approuvées {#apply-video-smart-crops-dmwoapi}
+================================================
 
-[!DNL Dynamic Media with OpenAPI capabilities] vous permet de générer automatiquement des sorties vidéo recadrées intelligemment pour les ressources vidéo dans [!DNL Adobe Experience Manager (AEM)]. Les recadrages intelligents vidéo analysent le contenu vidéo et ajustent dynamiquement le cadrage afin de garder le sujet clé en évidence sur différents proportions et appareils.
+[!DNL Dynamic Media with OpenAPI capabilities] vous permet de générer des sorties vidéo recadrées intelligemment pour les ressources vidéo dans [!DNL Adobe Experience Manager (AEM)].
 
-Les recadrages intelligents vidéo sont générés automatiquement lorsque la fonction est activée et que la ressource vidéo est approuvée
+Les recadrages intelligents vidéo analysent le contenu vidéo et ajustent dynamiquement le cadrage afin de garder le sujet clé en évidence sur différents proportions et appareils.
 
-## Avant de commencer {#prerequisites-for-video-smart-crops}
+Pour utiliser cette fonctionnalité, configurez le schéma de métadonnées des ressources vidéo. Une fois activé, les utilisateurs peuvent appliquer des recadrages intelligents de vidéo en mettant à jour les métadonnées de la ressource et en approuvant la ressource.
+
+Avant de commencer {#prerequisites-for-video-smart-crops}
+--------------------------------------------------------
 
 Vérifiez que vous disposez des éléments suivants :
 
 * Accès à [!DNL AEM Assets as a Cloud Service].
 * Autorisation de modifier les schémas de métadonnées.
 * Dynamic Media avec les fonctionnalités OpenAPI activées pour votre environnement.
-* Ressources vidéo pouvant être marquées comme **[!UICONTROL approuvées]**.
+* Ressources vidéo disponibles dans AEM Assets.
 
-## Activation du recadrage intelligent de vidéo pour les vidéos {#enable-video-smart-crops}
+Activer le recadrage intelligent de vidéo pour les vidéos (administration) {#enable-video-smart-crops}
+------------------------------------------------------------------------
 
-Pour activer le recadrage intelligent de vidéo, configurez le schéma de métadonnées utilisé pour les ressources vidéo :
+Pour activer le recadrage intelligent de vidéo, configurez le schéma de métadonnées utilisé pour les ressources vidéo.
+
+Procédez comme suit :
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées]**.
-2. Ouvrez le schéma de métadonnées applicable (par exemple, **par défaut**).
-3. Sélectionnez le formulaire **Vidéo** et cliquez sur **[!UICONTROL Modifier]**.
-4. Ajoutez un nouveau **[!UICONTROL champ déroulant]** et configurez les éléments suivants :
 
-   * **Libellé Du Champ** : Créer Des Smartcrops Vidéo
+2. Ouvrez le schéma de métadonnées appliqué à vos ressources vidéo, puis cliquez sur **[!UICONTROL Modifier]**.
+
+3. Dans l’éditeur de schéma de métadonnées, sélectionnez l’onglet **[!UICONTROL Vidéo]**.
+
+4. Dans la section **[!UICONTROL Créer un formulaire]**, faites glisser le composant **[!UICONTROL Liste déroulante]** vers le formulaire.
+
+   ![Créer un champ de recadrage intelligent de vidéo ajouté au schéma de métadonnées](/help/assets/assets/metadata-schema-form.png)
+
+5. Sélectionnez le champ nouvellement ajouté et configurez les éléments suivants dans le panneau **[!UICONTROL Paramètres]** :
+
+   * **Libellé du champ** : indiquez un libellé de champ de votre choix.
    * **Associer à la propriété** : `./jcr:content/dam:applyVideoSmartCrop`
 
-5. Ajoutez manuellement les valeurs suivantes :
+6. Dans la section **[!UICONTROL Choix]**, ajoutez les valeurs suivantes :
 
    * Oui → vrai
    * Aucun → faux
 
-6. Enregistrez le schéma.
+   ![Configurer le champ Créer un recadrage intelligent de vidéo](/help/assets/assets/edit-setting1.png)
 
-L’option **Créer des recadrages intelligents de vidéo** est désormais disponible dans le formulaire de métadonnées de ressource vidéo.
+7. Cliquez sur **[!UICONTROL Enregistrer]**.
 
-<!--
-broken link
-![Create Video Smartcrops field](/help/assets/assets/video-smartcrop-metadata-field.png)
--->
+> **REMARQUE :** si le schéma de métadonnées `dm_video` est utilisé dans votre environnement, assurez-vous que la même configuration est également appliquée au schéma de `dm_video`. Cela garantit un comportement cohérent des recadrages intelligents vidéo pour tous les types de schéma vidéo.
 
-## Application de recadrages intelligents vidéo aux vidéos approuvées {#apply-video-smart-crops}
+Appliquez des recadrages intelligents vidéo aux vidéos approuvées {#apply-video-smart-crops}
+----------------------------------------------------------------------
 
 Vous pouvez appliquer des recadrages intelligents de vidéo aux ressources vidéo en activant le champ de métadonnées et en approuvant la ressource.
 
 Procédez comme suit :
 
 1. Dans [!DNL Assets View], sélectionnez **[!UICONTROL Assets]** et accédez à votre dossier.
+
 2. Sélectionnez la ressource vidéo.
-3. Cliquez sur **[!UICONTROL Détails]**.
-4. Dans le panneau des métadonnées, recherchez **[!UICONTROL Créer un recadrage intelligent de vidéo]**.
-5. Définissez la valeur sur **Oui**, puis cliquez sur **[!UICONTROL Enregistrer]**.
-6. Définissez le statut de la ressource sur **[!UICONTROL Approuvé]**.
 
-Une fois la ressource approuvée, les sorties recadrées intelligentes de la vidéo sont générées automatiquement.
+3. Cliquez sur **[!UICONTROL Propriétés]**.
 
-## Affichage des sorties vidéo recadrées intelligemment {#view-video-smart-crops}
+4. Dans le panneau des métadonnées, définissez **[!UICONTROL Créer un recadrage intelligent de vidéo]** sur **Oui**, mettez à jour le statut de la ressource sur **[!UICONTROL Approuvé]**, puis cliquez sur **[!UICONTROL Enregistrer]**.
 
-Une fois les recadrages intelligents vidéo générés :
+   ![Ressource vidéo approuvée avec recadrage intelligent de vidéo activé](/help/assets/assets/assets-create-video-smartcrops1.png)
 
-* Les sorties sont disponibles pendant la lecture vidéo.
+Un message de confirmation s’affiche une fois les propriétés mises à jour.
+
+Affichez les sorties vidéo recadrées intelligemment {#view-video-smart-crops}
+----------------------------------------------------------
+
+Une fois que les recadrages intelligents de vidéo sont générés, incluez le paramètre `mode=smartcrop` dans la requête de diffusion vidéo du point d’entrée `/play` pour en effectuer le rendu.
+
+* Les recadrages intelligents de vidéo sont appliqués dynamiquement lors de la lecture lorsque le paramètre `mode=smartcrop` est utilisé.
 * La visionneuse Dynamic Media sélectionne automatiquement le recadrage le plus approprié en fonction de l’appareil et des proportions.
-* La lecture vidéo s’ajuste dynamiquement pour garder le sujet principal actif.
-
-## Utilisation de vidéos avec recadrage intelligent {#use-video-smart-crops}
-
-Vous pouvez utiliser des sorties recadrées intelligentes vidéo où la ressource vidéo est diffusée, par exemple :
-
-* Pages web
-* Applications
-* Lecteurs vidéo intégrés
-
-La visionneuse applique automatiquement le recadrage intelligent approprié pendant la lecture.
-
->[!NOTE]
->
->* Les recadrages intelligents vidéo sont générés uniquement pour les ressources vidéo **approuvées**.
->* Assurez-vous que le champ **Créer un recadrage intelligent de vidéo** est défini sur **Oui** avant d’approuver la ressource.
->* Le recadrage intelligent de vidéo ne modifie pas la ressource d’origine. Le recadrage est appliqué dynamiquement pendant la lecture.
+* La lecture vidéo s’ajuste dynamiquement pour garder le sujet principal au centre de l’attention.
