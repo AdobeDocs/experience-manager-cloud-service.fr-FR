@@ -4,7 +4,7 @@ description: Découvrez comment l’agent de modernisation de l’expérience in
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: f2ab0a3d604ed4cd07ec8922ed331dfc37b45e5f
+source-git-commit: 30037f08d5caeab878b6cf89b936308d16ae3e8d
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 0%
@@ -143,3 +143,4 @@ Les exigences suivantes ne sont pas couvertes par des compétences d’automatis
 ## Étapes suivantes {#next-steps}
 
 Commencez par migrer un site à l’aide du document [Prise en main de l’agent de modernisation d’Experience Platform](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md).
+

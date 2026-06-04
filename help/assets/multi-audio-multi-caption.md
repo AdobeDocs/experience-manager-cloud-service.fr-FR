@@ -3,7 +3,7 @@ title: Vidéos sur les fonctionnalités Multi Audio et Multi Captions dans Dynam
 description: Découvrez comment ajouter et gérer plusieurs pistes audio et sous-titres pour les ressources vidéo dans Dynamic Media avec les fonctionnalités OpenAPI d’Adobe Experience Manager Assets.
 role: User
 badgeSaas: label="AEM Assets" type="Positive"
-source-git-commit: 111fa1857261c71999088b2c061ae778115e5ef4
+source-git-commit: 30037f08d5caeab878b6cf89b936308d16ae3e8d
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 7%
@@ -42,11 +42,11 @@ Vérifiez les éléments suivants :
 Pour ajouter des pistes audio à une vidéo :
 
 1. Accédez à la ressource vidéo chargée.
-2. Sélectionnez la ressource et cliquez sur **Propriétés**.
-3. Ouvrez l’onglet **Légendes et pistes audio**.
-4. Cliquez sur **Charger des pistes audio**.
-5. Sélectionnez un ou plusieurs fichiers `.mp3`.
-6. Cliquez sur l’icône **Dessin** en regard du nom du fichier de piste audio.
+1. Sélectionnez la ressource et cliquez sur **Propriétés**.
+1. Ouvrez l’onglet **Légendes et pistes audio**.
+1. Cliquez sur **Charger des pistes audio**.
+1. Sélectionnez un ou plusieurs fichiers `.mp3`.
+1. Cliquez sur l’icône **Dessin** en regard du nom du fichier de piste audio.
 
 Dans la boîte de dialogue **Modifier la piste audio** :
 
@@ -58,8 +58,8 @@ Dans la boîte de dialogue **Modifier la piste audio** :
 ![Boîte de dialogue Piste audio](/help/assets/assets/edit-audio1.png)
 
 1. Cliquez sur **Enregistrer**.
-2. Répétez l’opération pour obtenir d’autres pistes audio si nécessaire.
-3. Cliquez sur **Enregistrer et fermer**.
+1. Répétez l’opération pour obtenir d’autres pistes audio si nécessaire.
+1. Cliquez sur **Enregistrer et fermer**.
 
 >[!NOTE]
 >
@@ -72,10 +72,10 @@ Dans la boîte de dialogue **Modifier la piste audio** :
 Pour ajouter des légendes :
 
 1. Ouvrez la page vidéo **Propriétés**.
-2. Ouvrez l’onglet **Légendes et pistes audio**.
-3. Cliquez sur **Créer une légende** > **Télécharger des fichiers**.
-4. Sélectionnez un ou plusieurs fichiers `.vtt`.
-5. Cliquez sur l’icône **Dessin** en regard du fichier de légendes.
+1. Ouvrez l’onglet **Légendes et pistes audio**.
+1. Cliquez sur **Créer une légende** > **Télécharger des fichiers**.
+1. Sélectionnez un ou plusieurs fichiers `.vtt`.
+1. Cliquez sur l’icône **Dessin** en regard du fichier de légendes.
 
 ![&#x200B; Boîte de dialogue Charger la légende &#x200B;](/help/assets/assets/upload-caption.png)
 
@@ -112,16 +112,13 @@ L’approbation dépend de la ressource vidéo parent :
 Par défaut, l’audio original est utilisé.
 
 1. Ouvrez **Légendes et pistes audio**.
-
-2. Sélectionnez la piste audio.
-
-3. Cliquez sur **Définir par défaut**.
+1. Sélectionnez la piste audio.
+1. Cliquez sur **Définir par défaut**.
 
    ![Définir comme action par défaut](/help/assets/assets/set-default.png)
 
-4. Cliquez sur **OK**.
-
-5. Cliquez sur **Enregistrer et fermer**.
+1. Cliquez sur **OK**.
+1. Cliquez sur **Enregistrer et fermer**.
 
 ## Prévisualiser l’audio et les sous-titres {#preview-audio-captions}
 
@@ -131,7 +128,7 @@ Après le traitement :
 
    ![Lecteur de prévisualisation vidéo](/help/assets/assets/preview-caption-audio.png)
 
-2. Utilisez les commandes du lecteur :
+1. Utilisez les commandes du lecteur :
 
    * Changement de pistes audio
    * Activer les légendes
@@ -139,23 +136,21 @@ Après le traitement :
 ## Télécharger des sous-titres ou des fichiers audio {#download-tracks}
 
 1. Sélectionnez une légende ou un fichier audio.
-
-2. Cliquez sur **Télécharger**.
+1. Cliquez sur **Télécharger**.
 
    ![Action de suivi du téléchargement](/help/assets/assets/download-caption.png)
 
-3. Cliquez sur **Télécharger**.
+1. Cliquez sur **Télécharger**.
 
 Le fichier sélectionné est téléchargé sur votre système local.
 
 ## Supprimer les sous-titres ou les fichiers audio {#delete-tracks}
 
 1. Sélectionnez une légende ou un fichier audio.
-
-2. Cliquez sur **Supprimer**.
+1. Cliquez sur **Supprimer**.
 
    ![Supprimer l’action de suivi](/help/assets/assets/delete-caption.png)
 
-3. Cliquez sur **OK**.
+1. Cliquez sur **OK**.
 
 L’audio original extrait de la vidéo ne peut pas être supprimé.
