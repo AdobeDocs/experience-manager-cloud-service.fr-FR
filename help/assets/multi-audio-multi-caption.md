@@ -19,7 +19,7 @@ Ces fonctionnalités sont gérées directement à partir de l’onglet **Légend
 
 >[!NOTE]
 >
->La prise en charge multi-audio et multi-légendes dans Dynamic Media avec les fonctionnalités OpenAPI est une fonctionnalité à disponibilité limitée. Vous pouvez l’activer en créant un [ ticket d’assistance ](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
+>La prise en charge multi-audio et multi-légendes dans Dynamic Media avec les fonctionnalités OpenAPI est une fonctionnalité à disponibilité limitée. Vous pouvez l’activer en créant un [&#x200B; ticket d’assistance &#x200B;](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
 
 Tous les formats vidéo Dynamic Media avec fonctionnalités OpenAPI prises en charge prennent en charge plusieurs légendes et pistes audio.
 
@@ -77,7 +77,7 @@ Pour ajouter des légendes :
 4. Sélectionnez un ou plusieurs fichiers `.vtt`.
 5. Cliquez sur l’icône **Dessin** en regard du fichier de légendes.
 
-![ Boîte de dialogue Charger la légende ](/help/assets/assets/upload-caption.png)
+![&#x200B; Boîte de dialogue Charger la légende &#x200B;](/help/assets/assets/upload-caption.png)
 
 Dans la boîte de dialogue **Modifier la légende** :
 
@@ -86,7 +86,7 @@ Dans la boîte de dialogue **Modifier la légende** :
 * **Type** - Sous-titre ou légende.
 * **Libellé** - Nom d’affichage affiché dans le sélecteur de légendes du lecteur.
 
-![ Boîte de dialogue Modifier la légende ](/help/assets/assets/edit-captions.png)
+![&#x200B; Boîte de dialogue Modifier la légende &#x200B;](/help/assets/assets/edit-captions.png)
 
 1. Cliquez sur **Enregistrer**.
 2. Cliquez sur **Enregistrer et fermer**.
