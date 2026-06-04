@@ -3,7 +3,7 @@ title: Compétence du catalogue de sites
 description: Découvrez comment la compétence de catalogue de sites de l’agent de modernisation d’expérience effectue une analyse automatisée d’un site web existant afin de prendre en charge la planification de la migration vers Edge Delivery Services.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
-source-git-commit: f035a0fdbc4fe275e2af4665ba6f25292924af0f
+source-git-commit: 30037f08d5caeab878b6cf89b936308d16ae3e8d
 workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 0%
@@ -136,3 +136,4 @@ La compétence de catalogue de sites présente les limites suivantes.
 * **Sites publics uniquement** — La cible doit être accessible au public (pas d&#39;authentification, de VPN ou de pare-feu).
 * **Le contenu dynamique n’est pas pris en charge** — Le contenu nécessitant l’interaction de l’utilisateur pour apparaître dans le DOM peut ne pas être capturé.
 * **Limite de 1 000 URL par défaut** - La phase d’analyse approfondie est par défaut limitée à 1 000 URL, [qui peuvent être remplacées](#sampling) et à un maximum de 4 000 URL.
+
