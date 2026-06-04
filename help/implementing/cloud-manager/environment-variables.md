@@ -5,9 +5,9 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: f8c9a7549305e30418e672f8ca14fe95f2a3b333
+source-git-commit: a4915aa53902b70b0a09b53381386023638b4072
 workflow-type: tm+mt
-source-wordcount: '1251'
+source-wordcount: '1219'
 ht-degree: 23%
 
 ---
@@ -57,7 +57,7 @@ Si vous ajoutez une variable d’environnement pour la première fois, cliquez s
 
    | Champ | Description |
    | --- | --- |
-   | Nom | Nom unique de la variable de configuration. Il identifie la variable spécifique utilisée dans l’environnement. Il doit respecter les conventions de dénomination suivantes :<ul><li>Les variables ne peuvent contenir que des caractères alphanumériques et le trait de soulignement (`_`).</li><li>Il existe une limite de 200 variables par environnement.</li><li>Chaque nom doit comporter 100 caractères ou moins.</li></ul> |
+   | Nom | Nom unique de la variable de configuration. Il identifie la variable spécifique utilisée dans l’environnement. Il doit respecter les conventions de dénomination suivantes :<ul><li>Les variables ne peuvent contenir que des caractères alphanumériques et le trait de soulignement (`_`).</li><li>Il existe une limite de 400 variables par environnement.</li><li>Chaque nom doit comporter 100 caractères ou moins.</li></ul> |
    | Valeur | Valeur de la variable. |
    | Étape appliquée | Sélectionnez le service auquel la variable s’applique. Sélectionnez **Tous** pour appliquer la variable à tous les services.<ul><li>**Tous**</li><li>**Auteur**</li><li>**Publication**</li><li>**Prévisualisation**</li></ul> |
    | Type | Sélectionnez cette option si la variable est normale ou secrète. |

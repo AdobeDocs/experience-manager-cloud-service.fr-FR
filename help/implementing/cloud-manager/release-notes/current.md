@@ -1,46 +1,67 @@
 ---
-title: Notes de mise à jour de la version 2026.5.0 de Cloud Manager
-description: Découvrez la version 2026.5.0 de Cloud Manager dans Adobe Experience Manager as a Cloud Service.
+title: Notes de mise à jour de la version 2026.6.0 de Cloud Manager
+description: Découvrez la version 2026.6.0 de Cloud Manager dans Adobe Experience Manager as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
+source-git-commit: 61101046e4383acb534b04f467bef1b0313c4ef5
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 10%
+source-wordcount: '726'
+ht-degree: 4%
 
 ---
 
-# Notes de mise à jour de Cloud Manager 2026.5.0 dans Adobe Experience Manager as a Cloud Service {#release-notes}
+# Notes de mise à jour de Cloud Manager 2026.6.0 dans Adobe Experience Manager as a Cloud Service {#release-notes}
 
-<!-- https://wiki.corp.adobe.com/display/DMSArchitecture/%5BKT%5D+Cloud+Manager+2025.08.0+Release -->
+<!-- 
+https://wiki.corp.adobe.com/display/DMSArchitecture/%5BKT%5D+Cloud+Manager+2025.08.0+Release 
+-->
 
-Découvrez la version 2026.5.0 de Cloud Manager dans AEM (Adobe Experience Manager) as a Cloud Service.
+Découvrez la version 2026.6.0 de Cloud Manager dans AEM (Adobe Experience Manager) as a Cloud Service.
 
 Consultez également les [notes de mise à jour actuelles d’Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Dates de publication {#release-date}
 
-La date de publication de Cloud Manager 2026.5.0 dans AEM as a Cloud Service est le jeudi 7 mai 2026.
+La date de publication de Cloud Manager 2026.6.0 dans AEM as a Cloud Service est le jeudi 4 juin 2026.
 
-La prochaine version prévue est le jeudi 4 juin 2026.
+La prochaine version prévue est le jeudi 9 juillet 2026.
 
 
 ## Nouveautés - Cloud Manager {#cloud-manager-whats-new}
 
-* **Suppression réversible pour un programme de production**
+* **Clés gérées par le client ou la cliente (CMK) en libre-service**
+Les clients peuvent désormais configurer les clés gérées par le client directement à partir de Cloud Manager, sans nécessiter l’intervention de l’assistance Adobe. Une nouvelle option CMK est disponible lors de la création du programme, dans les paramètres de modification du programme et dans la page Détails de l’environnement .
 
-  Cloud Manager permet désormais aux clients de supprimer des programmes de production à l’aide d’un workflow de suppression réversible. Vous pouvez restaurer les programmes supprimés dans les 30 jours, vous offrant ainsi un intervalle de sécurité supplémentaire avant la suppression définitive. Cette fonctionnalité sera déployée progressivement tout au long du mois de mai.
+  Le statut CMK s’affiche sur les cartes Mes programmes et dans le tableau de bord des licences, ce qui permet aux administrateurs d’avoir une visibilité claire sur la configuration du chiffrement dans tous les environnements. Cette approche simplifie les workflows de conformité pour les organisations qui ont besoin de contrôler leurs propres clés de chiffrement.
 
-  Voir [Marquer un programme de production pour suppression](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-production-program).
+  ![Carte Mes programmes présentant une icône Clé gérée par le client](/help/implementing/cloud-manager/release-notes/assets/cmk-status-on-program-card.png)
+  *Carte Mes programmes*
+
+
+  ![Boîte de dialogue Configurer pour la production affichant l’onglet Sécurité avec l’option Clés gérées par le client sélectionnée](/help/implementing/cloud-manager/release-notes/assets/cmk-security-tab-in-set-up-for-production-dlg.png)
+  *Clés gérées par le client sélectionnées dans l’onglet Sécurité de la boîte de dialogue Configurer pour la production*
+
+  ![Affichage du nombre de clés gérées par le client disponibles dans le tableau de bord des licences](/help/implementing/cloud-manager/release-notes/assets/cmk-license-dashboard.png)
+  *Affichage du nombre de clés gérées par le client disponibles dans le tableau de bord des licences*
+
+* **Limite de variable d’environnement augmentée à 400**
+Cloud Manager prend désormais en charge jusqu’à 400 variables d’environnement par environnement, soit le double de la limite précédente de 200.
+
+  Les variables de pipeline restent limitées à 200. L’interface utilisateur applique la limite correcte par contexte et empêche les ajouts au-delà du seuil autorisé.
+
+  Cette modification prend en charge les clients avec des configurations de déploiement plus complexes nécessitant un plus grand nombre de paramètres spécifiques à l’environnement.
+
+<!--CMGR-76755 · CMGR-76753 -->
+
 
 ## Programmes bêta {#private-beta-program}
 
-Participez au programme bêta de Cloud Manager pour obtenir un accès exclusif aux fonctionnalités à venir avant leur disponibilité générale.
+Pour obtenir un accès exclusif aux fonctionnalités à venir avant leur publication, vous pouvez participer aux programmes bêta de Cloud Manager.
 
 >[!IMPORTANT]
 >
->Les versions de Beta peuvent contenir des défauts et sont fournies « EN L’ÉTAT » sans garantie d’aucune sorte. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, remplacer ou prendre en charge d’une autre manière (par le biais des services d’assistance Adobe ou d’une autre manière) les versions bêta. Adobe conseille aux clients d’être prudent et de ne pas se fier au bon fonctionnement ou aux performances des versions bêta, ni à la documentation ou aux documents d’accompagnement. Les fonctionnalités et API de la version bêta peuvent être modifiées sans préavis. Par conséquent, toute utilisation des versions bêta s’effectue entièrement aux risques et périls du client.
+>Les versions de Beta contiennent des défauts et sont fournies « EN L’ÉTAT » sans garantie d’aucune sorte. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, remplacer ou prendre en charge les versions bêta. Les clients utilisent les versions bêta à leurs propres risques et périls et ne doivent pas se fier au bon fonctionnement ou aux performances des versions bêta, ni à la documentation ou aux documents qui les accompagnent. Les fonctionnalités et API de la version bêta peuvent être modifiées sans préavis. Toute utilisation des versions Beta s’effectue entièrement aux risques et périls du client.
 
 Voir aussi [Programmes AEM Beta](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)
 
@@ -51,10 +72,10 @@ Les opportunités de programme Beta suivantes sont actuellement disponibles :
 Cloud Manager propose deux nouvelles fonctionnalités conçues pour prendre en charge les architectures de diffusion modernes.
 
 * **Edge Delivery Services avec création AEM**
-Vous pouvez désormais diffuser des sites à l’aide de Edge Delivery Services tout en continuant à créer du contenu en mode de création AEM. Selon les préférences de votre workflow, vous pouvez choisir entre les approches de création suivantes :
+Vous pouvez désormais diffuser des sites à l’aide de Edge Delivery Services tout en continuant à créer du contenu en mode de création AEM. Selon les préférences de votre workflow, vous pouvez choisir parmi les approches de création suivantes :
 
    * Création basée sur des documents
-   * Création basée sur l’auteur AEM
+   * Création basée sur AEM
 
 Pour plus d’informations, voir [Création d’un site Edge Delivery dans Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md#one-click-edge-delivery-site).
 
@@ -101,7 +122,12 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 ## Correctifs {#bug-fixes}
 
-Il n’existe aucun correctif de bugs significatif dans la version Cloud Manager de mai 2026.
+* **Environnement bloqué dans la mise à jour sans opération active**
+Un problème est désormais résolu lorsque les environnements sont bloqués de manière permanente dans un état de mise à jour même lorsqu’aucune exécution de pipeline ou modification de configuration n’est en cours. Les environnements affectés peuvent désormais être gérés normalement sans nécessiter d’intervention manuelle de la part de l’assistance Adobe. (CMGR-77133)
+* **Mise en réseau avancée - règle de transfert de port incorrecte supprimée sur les ports sources en double**
+Lorsque deux règles de transfert de port dans Advanced Networking partagent le même port source (portOrig), la suppression d&#39;une règle supprime incorrectement l&#39;autre. Cloud Manager identifie et supprime désormais correctement uniquement la règle prévue. (CMGR-77019)
+
+<!-- There are no significant bug fixes in the June 2026 Cloud Manager release. -->
 
 <!-- ## Known issues {#known-issues} -->
 
