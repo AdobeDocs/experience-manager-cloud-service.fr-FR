@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 657d097b36ffe361655999d51b0a95ec497ddc48
+source-git-commit: 4b0145191ec0e31e227b59b99d7dff098f57d9a2
 workflow-type: tm+mt
 source-wordcount: '2332'
 ht-degree: 27%
@@ -278,7 +278,7 @@ Pour des raisons d’observabilité, AEM Cloud Service prend actuellement en cha
 #### Extensibilité de l’interface utilisateur pour la vue Assets {#ui-extensibility-assets-view}
 
 La vue Assets prend en charge l’extensibilité de l’interface utilisateur, une fonctionnalité réservée aux développeurs qui permet aux clients de personnaliser l’expérience prête à l’emploi pour répondre à leurs besoins spécifiques.
-Les clients peuvent tirer parti des points d’extension stables existants en suivant la documentation destinée aux développeurs d’Adobe pour créer et déployer des extensions avec un effort minimal. Pour les cas d’utilisation où un point d’extension requis n’est pas encore disponible, Adobe travaille directement avec les clients pour explorer les exigences et évaluer la faisabilité technique de la diffusion de nouvelles API d’extensibilité personnalisées selon leurs besoins. Il peut également fournir de nouvelles API telles que les versions **bêta**.
+Les clients peuvent tirer parti des points d’extension stables existants en suivant la documentation destinée aux développeurs d’Adobe pour créer et déployer des extensions avec un effort minimal. Pour les cas d’utilisation où un point d’extension requis n’est pas encore disponible, Adobe travaille directement avec les clients pour explorer les exigences et évaluer la faisabilité technique de la diffusion de nouvelles API d’extensibilité adaptées à leurs besoins, et peut fournir de nouvelles API telles que les **versions de Beta**.
 En outre, Adobe a développé un outil de génération d’extensions optimisé par **GenAI** actuellement disponible dans une phase d’adoption précoce interne. Cet outil peut accélérer considérablement le temps de développement d’extensions. Les clients participant à ce programme bêta auront accès à l’outil et sont encouragés à partager leurs commentaires pour aider à façonner son évolution.
 Pour participer ou en savoir plus, envoyez un e-mail à `GRP-ASSETSVIEWUIEXTENSIBILITY@adobe.com`.
 
