@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 662715341c35fab62ac0c882a03cba8f41748dbf
+source-git-commit: 4942d2acaa59ec0a5b8c4e7b8a0ea5d29995cea6
 workflow-type: tm+mt
-source-wordcount: '4154'
+source-wordcount: '4171'
 ht-degree: 71%
 
 ---
@@ -251,6 +251,12 @@ Les API du tableau ci-dessous (cliquez pour développer) ont été annoncées c
     <td>org.apache.tika<br>org.apache.tika.concurrent<br>org.apache.tika.config<br>org.apache.tika.detection<br>org.apache.tika.embrocher<br>org.apache.tika.exception<br>org.apache.tika.extractor<br>org.apache.tika.fork<br>org.apache.tika.io<br>org.apache.tika.language<br>org.apache.tika.language.detection<br>org apache.tika.language.translate<br>org.apache.tika.metadata<br>org.apache.tika.mimeorg.apache.tika.parser<br>org.apache.tika.parser.apple<br>org.apache.tika.parser.asm<br>org.apache.tika.parser.audio<br>org.apache.tika.parser.captioning<br>org.apache.tika.parser.captioning.tf<br>org.apache.tika.tika ser.chm<br>org.apache.tika.parser.chm.accessor<br>org.apache.tika.parser.chm.assertion<br>org.apache.tika.parser.chm.core<br>org.apache.tika.parser.chm.exception<br>org.apache.tika.parser.chm.lzx<br>org.apache.tika.parser.codeorg.apache.tika.parser.crypto<br>org.apache.tika.parser .cakes<br>org.apache.tika.parser.dbf<br>org.apache.tika.parser.dif<br>org.apache.tika.parser.digest<br>org.apache.tika.parser.dwg<br>org.apache.tika.parser.envi<br>org.apache.tika.parser.epub<br>org.apache.tika.parser.exécutableorg.apache.tika.parser.externalacheorg.apache tika.parser.feed<br>org.apache.tika.parser.font<br>org.apache.tika.parser.gdal<br>org.apache.tika.parser.geo.topic<br>org.apache.tika.parser.geo.topic.gazetter<br>org.apache.tika.parser.geoinfo<br>org.apache.tika.parser.grib<br>org.apache.tika.parser.hdf<br>org.apache.tika.parser.org ml<br>org.apache.tika.parser.image<br>org.apache.tika.parser.image.xmp<br>org.apache.tika.parser.iptc<br>org.apache.tika.parser.isatab<br>org.apache.tika.parser.iwork<br>org.apache.tika.parser.iwork.iwana<br>org.apache.tika.parser.jdbc<br>org.apache.tika.parser.journalorg apache.tika.parser.jpeg<br>org.apache.tika.parser.mail<br>org.apache.tika.parser.mat<br>org.apache.tika.parser.mbox<br>org.apache.tika.parser.microsoft<br>org.apache.tika.parser.microsoft.ooxml.parser.microsoft.ooxml.xslf<br>org.apache.tika.parser.microsoft.ooxml.xwwml f<br>org.apache.tika.parser.microsoft.ooxml.xwpf.ml2006<br>org.apache.tika.parser.microsoft.xml<br>org.apache.tika.parser.mp3<br>org.apache.tika.parser.mp4<br>org.apache.tika.parser.ner<br>org.apache.tika.parser.ner.corenlp<br>org.apache.tika.parser.grobidorg org.apache.tika.parser.ner.mitie<br>org.apache.tika.parser.ner.nltk<br>org.apache.tika.parser.ner.opennlp<br>org.apache.tika.parser.ner.regex<br>org.apache.tika.parser.netcdf<br>org.apache.tika.parser.ocr<br>org.apache.tika.parser.odf<br>org.apache.tika.parser.opument org.apache.tika.parser.pdf<br>org.apache.tika.parser.pkg<br>org.apache.tika.parser.pot<br>org.apache.tika.parser.prt<br>org.apache.tika.parser.reconnaissanceorg.apache.tika.parser.reconnaissance.tf<br>org.apache.tika.parser.rtf<br>org.apache.tika.parser.sentiment <br>org.apache.tika.parser.strings<br>org.apache.tika.parser.txt<br>org.apache.tika.parser.utils<br>org.apache.tika.parser.video<br>org.apache.tika.parser.wordperfect<br>org.apache.tika.parser.xml<br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> org.apache.tika.sax.tika.sax.pathpathorg.apache.tika.tika oxml.xps</td>
     <td>Cette version d’Apache Tika est obsolète et sera donc supprimée de Cloud Service. Basculez vers une version plus récente d’Apache Tika.</td>
     <td>4/30/2026</td>
+    <td>9/30/2026</td>
+  </tr>
+  <tr>
+    <td>org.apache.commons.fileupload<br>org.apache.commons.fileupload.disk<br>org.apache.commons.fileupload.portlet<br>org.apache.commons.fileupload.servlet<br>org.apache.commons.fileupload.util</td>
+    <td>Utilisez plutôt l’API servlet officielle pour gérer les chargements de fichiers.</td>
+    <td>2/6/2026</td>
     <td>9/30/2026</td>
   </tr>
   <tr>
