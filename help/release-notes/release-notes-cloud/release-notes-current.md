@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3443e9d000cf9ddc4f4f2ac18bcdf614688f5242
+source-git-commit: 657d097b36ffe361655999d51b0a95ec497ddc48
 workflow-type: tm+mt
-source-wordcount: '2287'
-ht-degree: 28%
+source-wordcount: '2332'
+ht-degree: 27%
 
 ---
 
@@ -40,7 +40,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the May 2026 Release Overview video for a summary of the features added in the 2026.5.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3491492/?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3491490/?quality=12)
 
 -->
 
@@ -85,7 +85,11 @@ Voir [Programmes bêta AEM Foundation](#foundation-early-adopter).
 
 ### Cloud Manager (programmes Beta) {#cloud-manager-beta-programs}
 
-Voir [Programmes bêta &#x200B;](/help/implementing/cloud-manager/release-notes/current.md).
+Voir [Programmes bêta ](/help/implementing/cloud-manager/release-notes/current.md).
+
+### AEM Assets (programmes Beta) {#aem-assets-beta-programs}
+
+Voir [Programmes bêta ](#assets-beta-program-features).
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -161,15 +165,15 @@ Accélérez votre migration d’AEM 6.5 (ou version antérieure) vers AEM as a C
 
 En savoir plus sur [l’outil d’IA dédiée à l’IDE pour la migration vers le cloud](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md) et sur d’autres [le développement local avec les outils d’IA](/help/ai-in-aem/local-development-with-ai-tools.md) (compétences des agents et serveurs MCP locaux).
 
->[!VIDEO](https://video.tv.adobe.com/v/3491440/?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3491438/?quality=12)
 
 #### Modifications de l’affichage du statut de la file d’attente de réplication {#replication-queue-status-display}
 
 Dans l’interface utilisateur de création, les agents de réplication affichent désormais deux files d’attente consolidées (**persistantes** et **entièrement publiées**) au lieu de files d’attente distinctes par capsule de publication, ce qui réduit la complexité tout en reflétant la mise à l’échelle automatique du niveau de publication.
 
-En savoir plus sur les [&#x200B; Files d’attente de réplication &#x200B;](/help/operations/replication.md#replication-queues).
+En savoir plus sur les [ Files d’attente de réplication ](/help/operations/replication.md#replication-queues).
 
-![Files d’attente de réplication affichant les files d’attente &#x200B;](/help/operations/assets/replication-queues.png " réplication persistantes et entièrement publiées")
+![Files d’attente de réplication affichant les files d’attente ](/help/operations/assets/replication-queues.png " réplication persistantes et entièrement publiées")
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Avis importants {#foundation-notices}
 
@@ -241,7 +245,7 @@ Rejoignez la version bêta pour la diffusion de publication AEM ou les projets E
 
 Les fonctionnalités [dépannage de pipeline](/help/ai-in-aem/agents/brand-experience/development/development.md) de l’agent de développement aident les développeurs à diagnostiquer et à résoudre efficacement les problèmes dans les déploiements d’AEM as a Cloud Service. En plus de prendre en charge les pipelines Full Stack (déploiement et qualité du code), l’agent de développement prend désormais en charge le dépannage du **pipeline de configuration de niveau web** dans le cadre d’un programme bêta.
 
-Pour demander l’accès à la version bêta, envoyez un e-mail à l’adresse [&#128279;](mailto:aem-devagent@adobe.com). Un accès préexistant aux agents dans AEM est requis.
+Pour demander l’accès à la version bêta, envoyez un e-mail à l’adresse [](mailto:aem-devagent@adobe.com). Un accès préexistant aux agents dans AEM est requis.
 
 #### Dépannage de l’IA dédiée à la réplication (programme Beta) {#replication-ai-troubleshooting-alpha}
 
@@ -263,11 +267,20 @@ Envoyez un e-mail à [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-cana
 
 Les équipes Java-stack utilisant le développement assisté par [IA](/help/ai-in-aem/local-development-with-ai-tools.md) dans des outils tels que Cursor, Claude Code, Visual Studio et IntelliJ peuvent désormais aller plus loin : une nouvelle compétence d’agent IDE détecte et corrige automatiquement les problèmes directement dans votre base de code AEM, réduisant ainsi les cycles de révision et détectant les problèmes plus tôt dans le développement.
 
-Cette fonctionnalité est en version Alpha. Rejoignez le programme pour l’essayer et partager vos commentaires avec l’équipe sur [&#128279;](mailto:aemcs-ai-ide-tools-feedback@adobe.com).
+Cette fonctionnalité est en version Alpha. Rejoignez le programme pour l’essayer et partager vos commentaires avec l’équipe sur [](mailto:aemcs-ai-ide-tools-feedback@adobe.com).
 
 #### Surveillance étendue des performances des applications (APM) (programme Alpha) {#apm-alpha}
 
 Pour des raisons d’observabilité, AEM Cloud Service prend actuellement en charge [New Relic One](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fourni par Adobe et [Dynatrace](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) géré par le client. Pendant que nous étudions la prise en charge d’options APM supplémentaires, veuillez nous envoyer un e-mail à l’adresse [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) en indiquant votre fournisseur ou technologie préféré, ainsi que les cas d’utilisation.
+
+### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Beta Fonctionnalités {#assets-beta-program-features}
+
+#### Extensibilité de l’interface utilisateur pour la vue Assets {#ui-extensibility-assets-view}
+
+La vue Assets prend en charge l’extensibilité de l’interface utilisateur, une fonctionnalité réservée aux développeurs qui permet aux clients de personnaliser l’expérience prête à l’emploi pour répondre à leurs besoins spécifiques.
+Les clients peuvent tirer parti des points d’extension stables existants en suivant la documentation destinée aux développeurs d’Adobe pour créer et déployer des extensions avec un effort minimal. Pour les cas d’utilisation où un point d’extension requis n’est pas encore disponible, Adobe travaille directement avec les clients pour explorer les exigences et évaluer la faisabilité technique de la diffusion de nouvelles API d’extensibilité personnalisées selon leurs besoins. Il peut également fournir de nouvelles API telles que les versions **bêta**.
+En outre, Adobe a développé un outil de génération d’extensions optimisé par **GenAI** actuellement disponible dans une phase d’adoption précoce interne. Cet outil peut accélérer considérablement le temps de développement d’extensions. Les clients participant à ce programme bêta auront accès à l’outil et sont encouragés à partager leurs commentaires pour aider à façonner son évolution.
+Pour participer ou en savoir plus, envoyez un e-mail à `GRP-ASSETSVIEWUIEXTENSIBILITY@adobe.com`.
 
 ## [!DNL Experience Manager] Guides {#guides}
 
