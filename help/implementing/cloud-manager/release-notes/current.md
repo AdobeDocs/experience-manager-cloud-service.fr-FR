@@ -4,7 +4,7 @@ description: Découvrez la version 2026.6.0 de Cloud Manager dans Adobe Experien
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 61101046e4383acb534b04f467bef1b0313c4ef5
+source-git-commit: 3c78dbcbc453eaaaab3904b83f22744eef60080c
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 4%
@@ -12,10 +12,6 @@ ht-degree: 4%
 ---
 
 # Notes de mise à jour de Cloud Manager 2026.6.0 dans Adobe Experience Manager as a Cloud Service {#release-notes}
-
-<!-- 
-https://wiki.corp.adobe.com/display/DMSArchitecture/%5BKT%5D+Cloud+Manager+2025.08.0+Release 
--->
 
 Découvrez la version 2026.6.0 de Cloud Manager dans AEM (Adobe Experience Manager) as a Cloud Service.
 
@@ -37,7 +33,6 @@ Les clients peuvent désormais configurer les clés gérées par le client direc
 
   ![Carte Mes programmes présentant une icône Clé gérée par le client](/help/implementing/cloud-manager/release-notes/assets/cmk-status-on-program-card.png)
   *Carte Mes programmes*
-
 
   ![Boîte de dialogue Configurer pour la production affichant l’onglet Sécurité avec l’option Clés gérées par le client sélectionnée](/help/implementing/cloud-manager/release-notes/assets/cmk-security-tab-in-set-up-for-production-dlg.png)
   *Clés gérées par le client sélectionnées dans l’onglet Sécurité de la boîte de dialogue Configurer pour la production*
@@ -89,7 +84,7 @@ Pour rejoindre Beta, envoyez un e-mail à l’adresse [grp-beta_xwalk-publish_co
 
 ### Versions plus rapides avec mise en cache du module {#quick-build-cm-pipelines}
 
-Un nouveau modèle de version compile uniquement les modules modifiés (plutôt que le référentiel entier) à l’aide de la mise en cache au niveau du module pour réduire les temps de création. Elle s’applique aux pipelines de production. Vous contrôlez les pipelines de production qui utilisent **Smart Build**.
+Un nouveau modèle de version compile uniquement les modules modifiés (plutôt que le référentiel entier) à l’aide de la mise en cache au niveau du module pour améliorer les performances de la version. Elle s’applique aux pipelines de production. Vous contrôlez les pipelines de production qui utilisent **Smart Build**.
 
 Pour plus d’informations, consultez les sections suivantes :
 
