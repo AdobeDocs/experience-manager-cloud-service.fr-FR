@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3443e9d000cf9ddc4f4f2ac18bcdf614688f5242
+source-git-commit: 657d097b36ffe361655999d51b0a95ec497ddc48
 workflow-type: tm+mt
-source-wordcount: '2287'
-ht-degree: 28%
+source-wordcount: '2332'
+ht-degree: 27%
 
 ---
 
@@ -86,6 +86,10 @@ Voir [Programmes bêta AEM Foundation](#foundation-early-adopter).
 ### Cloud Manager (programmes Beta) {#cloud-manager-beta-programs}
 
 Voir [Programmes bêta &#x200B;](/help/implementing/cloud-manager/release-notes/current.md).
+
+### AEM Assets (programmes Beta) {#aem-assets-beta-programs}
+
+Voir [Programmes bêta &#x200B;](#assets-beta-program-features).
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -268,6 +272,15 @@ Cette fonctionnalité est en version Alpha. Rejoignez le programme pour l’essa
 #### Surveillance étendue des performances des applications (APM) (programme Alpha) {#apm-alpha}
 
 Pour des raisons d’observabilité, AEM Cloud Service prend actuellement en charge [New Relic One](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fourni par Adobe et [Dynatrace](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) géré par le client. Pendant que nous étudions la prise en charge d’options APM supplémentaires, veuillez nous envoyer un e-mail à l’adresse [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) en indiquant votre fournisseur ou technologie préféré, ainsi que les cas d’utilisation.
+
+### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Beta Fonctionnalités {#assets-beta-program-features}
+
+#### Extensibilité de l’interface utilisateur pour la vue Assets {#ui-extensibility-assets-view}
+
+La vue Assets prend en charge l’extensibilité de l’interface utilisateur, une fonctionnalité réservée aux développeurs qui permet aux clients de personnaliser l’expérience prête à l’emploi pour répondre à leurs besoins spécifiques.
+Les clients peuvent tirer parti des points d’extension stables existants en suivant la documentation destinée aux développeurs d’Adobe pour créer et déployer des extensions avec un effort minimal. Pour les cas d’utilisation où un point d’extension requis n’est pas encore disponible, Adobe travaille directement avec les clients pour explorer les exigences et évaluer la faisabilité technique de la diffusion de nouvelles API d’extensibilité personnalisées selon leurs besoins. Il peut également fournir de nouvelles API telles que les versions **bêta**.
+En outre, Adobe a développé un outil de génération d’extensions optimisé par **GenAI** actuellement disponible dans une phase d’adoption précoce interne. Cet outil peut accélérer considérablement le temps de développement d’extensions. Les clients participant à ce programme bêta auront accès à l’outil et sont encouragés à partager leurs commentaires pour aider à façonner son évolution.
+Pour participer ou en savoir plus, envoyez un e-mail à `GRP-ASSETSVIEWUIEXTENSIBILITY@adobe.com`.
 
 ## [!DNL Experience Manager] Guides {#guides}
 
