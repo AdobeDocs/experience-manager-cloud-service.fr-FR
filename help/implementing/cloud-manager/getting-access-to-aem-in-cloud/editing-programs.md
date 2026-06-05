@@ -54,7 +54,7 @@ Chaque fois qu’un programme est modifié, y compris par l’ajout ou la suppre
    * [D’autres options](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) sont disponibles pour votre programme de production en fonction des droits de votre entreprise.
    * Dans l’onglet **Sécurité**, vous pouvez également activer **Clés gérées par le client** pour un programme existant.
 
-   ![ Boîte de dialogue Modifier le programme affichant les clés gérées par le client sélectionnées](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cmk-edit-programs.png)
+   ![&#x200B; Boîte de dialogue Modifier le programme affichant les clés gérées par le client sélectionnées](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cmk-edit-programs.png)
 
    La fonction CMK ne peut pas être désactivée après l’activation. Après avoir activé la fonction CMK, configurez vos clés de chiffrement dans Experience Hub. Voir [Configuration de la fonction CMK dans Experience Hub](#configure-cmk-experience-hub).
 
@@ -101,11 +101,11 @@ Avant que la notation pour suppression ne soit lancée, le système valide si le
 1. Sélectionnez l’organisation appropriée.
 1. Sur la page **Mes programmes**, pour le programme de production que vous souhaitez marquer comme devant être supprimé, cliquez sur ![icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), puis sur **Supprimer le programme**.
 
-   ![Sélectionner Supprimer le programme dans la liste déroulante d’un programme de production ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*L’exemple de programme de production ci-dessus est fourni à titre d’illustration uniquement.*
+   ![Sélectionner Supprimer le programme dans la liste déroulante d’un programme de production &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*L’exemple de programme de production ci-dessus est fourni à titre d’illustration uniquement.*
 
 1. Dans la boîte de dialogue **Marquer le programme de production pour suppression**, passez en revue l’avertissement qui répertorie les ressources connectées à votre programme, y compris les environnements de production, d’évaluation et de développement.
 
-   ![Boîte de dialogue Supprimer le programme de production ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete2.png)
+   ![Boîte de dialogue Supprimer le programme de production &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete2.png)
 
 
    >[!NOTE]

@@ -25,7 +25,7 @@ Votre accord contractuel avec Adobe définit le nombre et les types de solutions
 
 >[!NOTE]
 >
->>Selon les droits de votre entreprise, vous pouvez également activer les clés gérées par le client (CMK) pour un programme de production. La fonction CMK vous permet de fournir vos propres clés de chiffrement pour les données inactives. Voir [Création de programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
+>&#x200B;>Selon les droits de votre entreprise, vous pouvez également activer les clés gérées par le client (CMK) pour un programme de production. La fonction CMK vous permet de fournir vos propres clés de chiffrement pour les données inactives. Voir [Création de programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
 Le tableau suivant décrit les scénarios courants des solutions disponibles et les programmes de production typiques créés à partir de ces solutions.
 
