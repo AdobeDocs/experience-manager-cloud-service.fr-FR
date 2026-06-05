@@ -4,9 +4,9 @@ description: L’outil de copie de contenu permet aux utilisateurs de copier du 
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Developer
-source-git-commit: bcd32fd359024abde5fb18ec4f3b8b3e2aa910cc
+source-git-commit: e0b07719cbafdd0b19d597db83d319c50fb993cd
 workflow-type: tm+mt
-source-wordcount: '1592'
+source-wordcount: '1610'
 ht-degree: 45%
 
 ---
@@ -46,7 +46,7 @@ Pour utiliser l’outil de copie de contenu, certaines autorisations sont requis
 | Créer et modifier des [jeux de contenu](#create-content-set) | Non requis | Nécessaires |
 | Démarrer ou annuler le [processus de copie de contenu](#copy-content) | Requis | Requis |
 
-Pour plus d&#39;informations sur les autorisations et leur définition, voir [Profils d&#39;équipe et de produit &#x200B;](/help/onboarding/aem-cs-team-product-profiles.md).
+Pour plus d&#39;informations sur les autorisations et leur définition, voir [Profils d&#39;équipe et de produit ](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ## Créer un ensemble de contenu {#create-content-set}
 
@@ -152,6 +152,11 @@ Une fois qu’un ensemble de contenu a été créé, vous pouvez l’utiliser po
 
       * Si vous ne choisissez pas **Effacer la destination avant l’importation** le flux **Copier le contenu** fonctionnera comme auparavant.
 
+   * **Stratégie en cas d’échec de l’importation de package** sélectionnez la stratégie à utiliser lors de l’importation de packages :
+     ![Copie de contenu](assets/content-copy-import-policy.png)
+      * **Arrêter en cas de premier échec** : le mode par défaut s’arrête après le premier échec
+      * **Continuer avec les packages restants** : continuera le processus d’importation, même après un échec. Les packages (et leur contenu) qui n’ont pas réussi sont disponibles dans les journaux d’importation
+
 1. Cliquez sur **Copier**.
 
 Le processus de copie démarre. Le statut du processus de copie est répercuté dans la console pour le jeu de contenu sélectionné.
@@ -221,4 +226,4 @@ L’outil de copie de contenu présente les limites suivantes.
 * L’outil de copie de contenu ne dispose d’aucune fonctionnalité de contrôle de version et ne peut pas détecter automatiquement le contenu modifié ou créé dans l’environnement source dans un jeu de contenu depuis la dernière opération de copie de contenu.
    * Si vous souhaitez mettre à jour votre environnement de destination avec des modifications de contenu depuis la dernière opération de copie de contenu uniquement, vous devez créer un jeu de contenu. Ensuite, spécifiez les chemins d’accès sur l’instance source où des modifications ont été apportées depuis la dernière opération de copie de contenu.
 * Les informations de version ne sont pas incluses dans une copie de contenu.
-* Les [&#x200B; Modèles de fragments de contenu &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) peuvent spécifier des champs de référence en fonction d’identifiants universels uniques (UUID). Ces UUID étant spécifiques au référentiel, l’outil de copie de contenu recalcule ces UUID dans l’environnement cible lors de la copie de fragments de contenu.
+* Les [ Modèles de fragments de contenu ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) peuvent spécifier des champs de référence en fonction d’identifiants universels uniques (UUID). Ces UUID étant spécifiques au référentiel, l’outil de copie de contenu recalcule ces UUID dans l’environnement cible lors de la copie de fragments de contenu.
