@@ -4,9 +4,9 @@ description: L’outil de copie de contenu permet aux utilisateurs de copier du 
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Developer
-source-git-commit: bcd32fd359024abde5fb18ec4f3b8b3e2aa910cc
+source-git-commit: e0b07719cbafdd0b19d597db83d319c50fb993cd
 workflow-type: tm+mt
-source-wordcount: '1592'
+source-wordcount: '1610'
 ht-degree: 45%
 
 ---
@@ -151,6 +151,11 @@ Une fois qu’un ensemble de contenu a été créé, vous pouvez l’utiliser po
            ![Copie de contenu](assets/content-copy-wipe-destination-warning.png)
 
       * Si vous ne choisissez pas **Effacer la destination avant l’importation** le flux **Copier le contenu** fonctionnera comme auparavant.
+
+   * **Stratégie en cas d’échec de l’importation de package** sélectionnez la stratégie à utiliser lors de l’importation de packages :
+     ![Copie de contenu](assets/content-copy-import-policy.png)
+      * **Arrêter en cas de premier échec** : le mode par défaut s’arrête après le premier échec
+      * **Continuer avec les packages restants** : continuera le processus d’importation, même après un échec. Les packages (et leur contenu) qui n’ont pas réussi sont disponibles dans les journaux d’importation
 
 1. Cliquez sur **Copier**.
 
