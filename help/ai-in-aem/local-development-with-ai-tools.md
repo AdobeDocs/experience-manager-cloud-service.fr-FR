@@ -4,7 +4,7 @@ description: Découvrez comment configurer des outils de codage d’IA avec le c
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: 38e599d34e591d0d8c9f822c0296bef27d24a605
+source-git-commit: 293b9136ee5249ee435b089b49dcaab2ca45fea8
 workflow-type: tm+mt
 source-wordcount: '1836'
 ht-degree: 0%
@@ -222,6 +222,8 @@ Tout client MCP peut se connecter en pointant vers `http://localhost:4502/bin/mc
 Le serveur Dispatcher MCP est fourni avec AEM Dispatcher SDK. Il permet aux outils d’IA de valider la configuration Dispatcher et Apache HTTPD, de suivre la gestion des requêtes et d’inspecter le comportement du cache par rapport à une instance Dispatcher s’exécutant localement dans Docker.
 
 Contrairement aux compétences du Dispatcher, le serveur MCP Dispatcher n’expose que les outils suivants : sept outils MCP et aucune invite ni ressource.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3491963?captions=fre_fr&quality=12&learn=on)
 
 ### Conditions préalables {#prerequisites}
 
