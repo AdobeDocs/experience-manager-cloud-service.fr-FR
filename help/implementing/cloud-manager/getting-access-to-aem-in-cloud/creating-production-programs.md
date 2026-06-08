@@ -5,9 +5,9 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 4ae77b2c9cff253749578127827a12e8483aaf7f
+source-git-commit: 2503863e0c146f86bb158c411ea5b7bb47033a3e
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1723'
 ht-degree: 6%
 
 ---
@@ -118,11 +118,7 @@ Compatible avec la norme HIPAA d’Adobe et WAF-DDOS (Web Application Firewall -
 * **Protection WAF-DDOS** - Cette option active le pare-feu d&#39;application web à travers des règles pour protéger votre application.
    * Une fois activée, la protection WAF-DDOS peut être configurée en configurant un [pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
    * Consultez la section [Règles de filtrage du trafic, y compris les règles WAF](/help/security/traffic-filter-rules-including-waf.md) pour savoir comment gérer les règles de filtrage du trafic dans votre référentiel afin qu’elles soient correctement déployées.
-* **Clés gérées par le client** - Cette option active la fonction CMK (Clés gérées par le client) pour le programme, ce qui vous permet de fournir vos propres clés de chiffrement pour les données inactives dans le stockage Blob Azure et MongoDB.
-
-  >[!IMPORTANT]
-  >
-  >La fonction CMK ne peut pas être activée ou désactivée après la création du programme.
+* **Clés gérées par le client** - Cette option active la fonction CMK (Clés gérées par le client) pour le programme, ce qui vous permet de fournir vos propres clés de chiffrement pour les données inactives dans le stockage Blob Azure et MongoDB. Si vous le souhaitez, vous pouvez activer la fonction CMK ultérieurement en [modifiant un programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing).
 
    * La fonction CMK est disponible uniquement pour les programmes Cloud Service. Elle ne peut pas être activée sur les programmes Sandbox.
    * Dans un programme, la fonction CMK couvre uniquement les environnements d’évaluation et de production.
