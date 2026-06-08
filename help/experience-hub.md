@@ -8,7 +8,7 @@ feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Developer, User
 badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: 4ae77b2c9cff253749578127827a12e8483aaf7f
+source-git-commit: e31b3f6a249d6b0a5836f42b5cf8725e1339b117
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 65%
@@ -89,9 +89,7 @@ S’il n’existe aucun environnement de production AEM Cloud Service ou Managed
 
 +++**Comment configurer les clés gérées par le client à partir d’Experience Hub ?**
 
-Si la fonction CMK est activée pour votre programme, Experience Hub fournit un lien direct vers la page de configuration de la fonction CMK. Sélectionnez **Configurer CMK** dans la carte de votre programme ou
-à partir de Raccourcis rapides. Pour les étapes de configuration complètes, voir
-[Configuration des clés gérées par le client pour AEM as a Cloud Service](/help/security/customer-managed-keys.md).
+Si la fonction CMK est activée pour votre programme, Experience Hub fournit un lien direct vers la page de configuration de la fonction CMK. Sélectionnez **Configurer CMK** dans la carte de votre programme ou dans les raccourcis rapides. Pour connaître les étapes de configuration complètes, voir [Configuration des clés gérées par le client pour AEM as a Cloud Service](/help/security/customer-managed-keys.md).
 
 +++
 
