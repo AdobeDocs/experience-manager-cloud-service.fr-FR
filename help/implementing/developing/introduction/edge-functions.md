@@ -4,10 +4,10 @@ description: Découvrez comment exécuter JavaScript au niveau de la couche CDN 
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: b33a565d9623ed44309e1d34377345dae86757cd
+source-git-commit: 757b64c4b3340f56cc8a5e5a7c1200fcd8d0c1be
 workflow-type: tm+mt
-source-wordcount: '1263'
-ht-degree: 3%
+source-wordcount: '1417'
+ht-degree: 2%
 
 ---
 
@@ -112,6 +112,7 @@ La configuration prend en charge jusqu’à trois services. Les clés de niveau 
 | `services` | Liste des services de fonction Edge, chacun identifié par un `name`. |
 | `configs` | Paires clé/valeur exposées à tous les services de fonction Edge en tant que variables d’environnement. |
 | `secrets` | Paires clé/valeur faisant référence à des secrets Cloud Manager, exposées à tous les services de fonction Edge. |
+| `kvs` | Bouton bascule booléen pour configurer un magasin KV pour les données de valeur-clé de lecture/écriture d’exécution partagées sur tous les services de fonction Edge. |
 
 ### &#x200B;3. Ajout de règles au sélecteur d’origine du réseau CDN {#cdn-routing}
 
@@ -244,6 +245,10 @@ const request = new Request("https://example.com/test");
 const response = await fetch(request, { backend: "my-origin-name" });
 ```
 
+>[!NOTE]
+>
+>Les magasins de services (`configs`, `secrets` et `kvs`) ne sont pas disponibles dans les [programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Les services de fonction Edge eux-mêmes s’exécutent normalement sur des environnements sandbox - seuls les magasins ne sont pas approvisionnés.
+
 ### Configuration du service {#service-configuration}
 
 Exposez les variables d’environnement à vos fonctions à l’aide de la clé `configs` dans `edgeFunctions.yaml`. Les valeurs sont stockées dans un magasin de configurations nommé `config_default` :
@@ -293,6 +298,35 @@ const apiToken = await SecretStoreManager.getSecret('API_TOKEN');
 >- Les noms clés respectent la casse.
 >- Les secrets sont immuables une fois créés.
 >- La banque de secrets est partagée sur tous les services de fonction Edge dans le même environnement.
+
+### Service KV Store {#service-kv-store}
+
+Les fonctions Edge peuvent lire et écrire des données de valeur-clé arbitraires au moment de l’exécution via un magasin KV. Pour l’activer, définissez `kvs: true` dans `edgeFunctions.yaml` :
+
+```yaml
+kvs: true
+```
+
+Cela fournit un magasin KV vide nommé `kv_default`. Renseignez-le au moment de l’exécution à partir du code de votre fonction Edge à l’aide de l’[API Fastly KV Store](https://js-compute-reference-docs.edgecompute.app/docs/fastly:kv-store/KVStore) :
+
+```js
+import { KVStore } from "fastly:kv-store";
+
+const kv = new KVStore('kv_default');
+
+// Read a value
+const entry = await kv.get('visit-count');
+const count = entry ? Number(await entry.text()) : 0;
+
+// Write a value
+await kv.put('visit-count', String(count + 1));
+```
+
+>[!NOTE]
+>
+>- Le magasin KV est toujours nommé `kv_default`.
+>- Le magasin KV est vide au moment de la mise en service ; renseignez-le au moment de l’exécution via l’[API Fastly KV Store](https://js-compute-reference-docs.edgecompute.app/docs/fastly:kv-store/KVStore). Les entrées de clé/valeur déclaratives dans `edgeFunctions.yaml` ne sont pas prises en charge.
+>- Le magasin KV est partagé par tous les services de fonction Edge dans le même environnement.
 
 ### Journalisation {#logging}
 
