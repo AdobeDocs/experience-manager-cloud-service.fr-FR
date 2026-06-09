@@ -5,17 +5,17 @@ feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 2c4a963786db1b5dabf16c5d96be950bb7ad7807
 workflow-type: tm+mt
-source-wordcount: '1357'
-ht-degree: 7%
+source-wordcount: '1341'
+ht-degree: 8%
 
 ---
 
 
 # Enregistrer des formulaires en tant que brouillons et les répertorier sur la page Sites
 
-<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
+<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
 
 Prenons le cas d’un utilisateur qui commence à remplir un formulaire, mais qui doit se suspendre et revenir ultérieurement. AEM propose une option `save-as-draft`, qui permet à l’utilisateur ou à l’utilisatrice d’enregistrer le formulaire en tant que brouillon en vue d’un remplissage ultérieur. Pour faciliter la tâche, AEM fournit le composant du portail Forms **Brouillons et envois** prêt à l’emploi, qui affiche les brouillons et les envois sur les pages AEM Sites. Le composant répertorie les formulaires qui ont été enregistrés en tant que brouillons en vue d’une finalisation ultérieure, ainsi que ceux qui ont été envoyés. Seuls les utilisateurs connectés peuvent modifier leurs brouillons ou afficher les formulaires qu’ils ont envoyés. Cependant, si un utilisateur anonyme parcourt la liste des formulaires à l’aide du composant **Search &amp; Lister** et enregistre un formulaire en tant que brouillon, ce dernier n’est pas répertorié par le composant **Drafts &amp; Submissions**. Pour afficher les brouillons et les envois, les utilisateurs doivent être connectés au moment de l’envoi du formulaire.
 
@@ -31,7 +31,7 @@ Le composant **Brouillons et envois** a besoin d’une configuration de stockage
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Stockage Azure]**.
 
-   ![Sélection de la carte de stockage Azure](/help/forms/assets/save-form-as-draft-azure-card.png)
+   ![Sélection de la carte de stockage ](/help/forms/assets/save-form-as-draft-azure-card.png)
 
 1. Sélectionnez un dossier de configuration pour créer la configuration, puis sélectionnez **[!UICONTROL Créer]**.
 
@@ -48,7 +48,7 @@ Le composant **Brouillons et envois** a besoin d’une configuration de stockage
 
    >[!NOTE]
    >
-   > Vous pouvez récupérer le **[!UICONTROL compte de stockage Azure]** et la **[!UICONTROL clé d’accès Azure]** à partir du [portail Microsoft Azure](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
+   > Vous pouvez récupérer le **[!UICONTROL compte de stockage]** et la **[!UICONTROL clé d’accès Azure]** à partir du [portail Microsoft Azure](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
 
    Une fois la configuration de stockage Azure créée, configurez le connecteur de stockage unifié pour le portail Forms en procédant comme suit :
 
@@ -107,7 +107,7 @@ Vous pouvez configurer les propriétés du **Brouillons et envois** :
 1. Dans la boîte de dialogue **[!UICONTROL Brouillons et envois]**, spécifiez ce qui suit :
 
    * **Titre** pour identifier un composant dans une page Sites et, par défaut, le titre s’affiche au-dessus du composant.
-   * **Sélectionner un type** : pour indiquer la liste des formulaires en tant que brouillons ou formulaires envoyés. Si vous choisissez **Brouillon de Forms**, les formulaires enregistrés en tant que brouillons s’affichent. Vous pouvez également sélectionner **Forms envoyé** pour afficher les formulaires envoyés par les utilisateurs connectés.
+   * **Sélectionner un type** : pour indiquer la liste des formulaires en tant que brouillons ou formulaires envoyés. Si vous choisissez **Brouillon de Forms**, les formulaires enregistrés en tant que brouillons s’affichent. Vous pouvez également sélectionner Forms envoyé&#x200B;**pour afficher les formulaires envoyés par les utilisateurs connectés.**
    * **Disposition** : affichage de listes de brouillons de formulaires ou de formulaires envoyés au format vignette ou liste.
 
    ![Propriétés des composants Brouillon et Envoi](/help/forms/assets/save-form-as-draft-dns-properties.png)
@@ -149,7 +149,7 @@ Vous pouvez également configurer un formulaire adaptatif pour qu’il soit enre
 1. Ouvrez l’explorateur de contenu, puis sélectionnez le composant **[!UICONTROL Conteneur de guide]** de votre formulaire adaptatif.
 1. Cliquez sur l’icône Propriétés du conteneur de guide ![Propriétés du guide](/help/forms/assets/configure-icon.svg) et ouvrez l’onglet **[!UICONTROL Brouillons]**.
 
-   ![&#x200B; Enregistrement automatique &#x200B;](/help/forms/assets/auto-save.png)
+   ![ Enregistrement automatique ](/help/forms/assets/auto-save.png)
 
 1. Cochez la case **[!UICONTROL Enregistrer automatiquement les brouillons]** pour activer l’enregistrement automatique du formulaire en tant que brouillons.
 1. Configurez **[!UICONTROL Enregistrer la préférence]** comme **Enregistrer les brouillons à intervalles réguliers** pour enregistrer automatiquement le <!--based on the occurrence of an event or--> de formulaire après un intervalle de temps spécifique.
@@ -167,15 +167,11 @@ Lorsque l’option **[!UICONTROL Sélectionner le type]** est sélectionnée en 
 
 ![Icône Envois](assets/submission-listing.png)
 
-Vous pouvez également ignorer les formulaires en cliquant sur les points de suspension (...) qui s’affichent dans le coin inférieur droit du formulaire.
-
->[!NOTE]
->
-> Sur le portail Forms, le composant Drafts &amp; Submissions ne prend en charge que les envois de formulaires Foundation.
+Vous pouvez également ignorer les formulaires en cliquant sur les points de suspension (...) qui s’affiche dans le coin inférieur droit du formulaire.
 
 ## Étapes suivantes
 
-Dans l’article suivant, découvrez [&#x200B; comment ajouter des références à des formulaires sur la page Sites à l’aide du composant Lien du portail Forms &#x200B;](/help/forms/add-form-link-to-aem-sites-page.md).
+Dans l’article suivant, découvrez [ comment ajouter des références à des formulaires sur la page Sites à l’aide du composant Lien du portail Forms ](/help/forms/add-form-link-to-aem-sites-page.md).
 
 ## Articles connexes
 
