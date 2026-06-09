@@ -4,9 +4,9 @@ description: Découvrez la version 2026.6.0 de Cloud Manager dans Adobe Experien
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 3c78dbcbc453eaaaab3904b83f22744eef60080c
+source-git-commit: ab2b623cd8c0605a41b96401762baf254dc8b339
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '733'
 ht-degree: 4%
 
 ---
@@ -40,14 +40,14 @@ Les clients peuvent désormais configurer les clés gérées par le client direc
   ![Affichage du nombre de clés gérées par le client disponibles dans le tableau de bord des licences](/help/implementing/cloud-manager/release-notes/assets/cmk-license-dashboard.png)
   *Affichage du nombre de clés gérées par le client disponibles dans le tableau de bord des licences*
 
+  Voir [Création de programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#create) et [Modification de programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing).
+
 * **Limite de variable d’environnement augmentée à 400**
 Cloud Manager prend désormais en charge jusqu’à 400 variables d’environnement par environnement, soit le double de la limite précédente de 200.
 
   Les variables de pipeline restent limitées à 200. L’interface utilisateur applique la limite correcte par contexte et empêche les ajouts au-delà du seuil autorisé.
 
-  Cette modification prend en charge les clients avec des configurations de déploiement plus complexes nécessitant un plus grand nombre de paramètres spécifiques à l’environnement.
-
-<!--CMGR-76755 · CMGR-76753 -->
+  Cette modification prend en charge les clients avec des configurations de déploiement plus complexes nécessitant un plus grand nombre de paramètres spécifiques à l’environnement. <!--CMGR-76755 · CMGR-76753 -->
 
 
 ## Programmes bêta {#private-beta-program}
