@@ -173,7 +173,7 @@ Les images mémoire de threads dans les environnements Cloud sont collectés en 
 
 ### Développement local {#local-development}
 
-Pour le développement local, les développeurs disposent d’un accès complet à [](/help/implementing/developing/tools/crxde.md) (`/crx/de`) et à la [console web](/help/implementing/developing/tools/web-console.md) (`/system/console`).
+Pour le développement local, les développeurs disposent d’un accès complet à [&#128279;](/help/implementing/developing/tools/crxde.md) (`/crx/de`) et à la [console web](/help/implementing/developing/tools/web-console.md) (`/system/console`).
 
 Pour le développement local (à l’aide du SDK), les `/apps` et les `/libs` peuvent être modifiés directement, ce qui diffère des environnements Cloud, où ces dossiers de niveau supérieur sont immuables.
 
@@ -182,7 +182,7 @@ Pour le développement local (à l’aide du SDK), les `/apps` et les `/libs` pe
 >[!NOTE]
 >
 >* Certains clients auront la possibilité de tester une expérience repensée pour le Developer Console AEM Cloud Service. Voir [cet article](/help/implementing/developing/introduction/aem-developer-console.md) pour plus d’informations.
->* Le Developer Console AEM as a Cloud Service ne doit pas être confondu avec le Adobe Developer Console [**](https://developer.adobe.com/developer-console/).
+>* Le Developer Console AEM as a Cloud Service ne doit pas être confondu avec le Adobe Developer Console [*&#128279;*](https://developer.adobe.com/developer-console/).
 
 Les clients peuvent accéder à CRXDE lite dans l’environnement de développement du niveau création, mais pas dans les environnements d’évaluation ni de production. Le référentiel immuable (`/libs`, `/apps`) ne peut pas être modifié au moment de l’exécution et toute tentative de ce type entraînera des erreurs.
 
