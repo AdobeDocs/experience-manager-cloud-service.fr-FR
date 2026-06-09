@@ -4,10 +4,10 @@ description: Adobe Experience Manager optimise les performances en exécutant de
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 222d644d9989591baf449131e6a3718f15fcc7a0
 workflow-type: tm+mt
-source-wordcount: '854'
-ht-degree: 90%
+source-wordcount: '865'
+ht-degree: 84%
 
 ---
 
@@ -37,7 +37,7 @@ Chaque fois qu’AEM traite une opération de manière asynchrone, vous recevez 
 
 Pour afficher le statut des opérations asynchrones en détail, accédez à la page **[!UICONTROL Opérations en arrière-plan]**.
 
-1. Dans l’interface de l’Experience Manager, sélectionnez **Navigation globale** > **Outils** > **Général** > **Tâches**.
+1. Dans l’interface d’Experience Manager, sélectionnez **Navigation globale** > **Outils** > **Général** > **Tâches**.
 
 1. Sur la page **[!UICONTROL Opérations en arrière-plan]**, passez en revue les détails des opérations.
 
@@ -51,7 +51,7 @@ Pour afficher le statut des opérations asynchrones en détail, accédez à la p
 
    * **[!UICONTROL Échec]** ou **[!UICONTROL Erreur]** : l’opération n’a pas pu être traitée.
 
-   * **[!UICONTROL Planifié]** : l’opération est planifiée à une date ultérieure.
+   * **[!UICONTROL Planifié]** : le traitement de l’opération est planifié à une date ultérieure
 
 1. Pour arrêter une opération active, sélectionnez-la dans la liste, puis cliquez sur l’icône **[!UICONTROL Arrêter]** de la barre d’outils.
 
@@ -77,11 +77,11 @@ Plusieurs options relatives aux tâches asynchrones peuvent être configurées. 
 
 >[!NOTE]
 >
->Les [configurations OSGi](/help/implementing/deploying/configuring-osgi.md#creating-osgi-configurations) sont considérées comme du contenu modifiable et toute configuration de ce type doit être déployée en tant que package de contenu pour un environnement de production.
+>Les [configurations OSGi](/help/implementing/deploying/configuring-osgi.md#creating-osgi-configurations) sont considérées comme du contenu modifiable et toute configuration de ce type doit être déployée en tant que module de contenu pour un environnement de production.
 
 ### Purger les tâches terminées {#purging-completed-jobs}
 
-AEM exécute une tâche de purge quotidienne à 1 h du matin afin de supprimer les tâches asynchrones terminées depuis plus d’un jour.
+AEM exécute une tâche de purge quotidienne à 01:00 afin de supprimer les tâches asynchrones terminées depuis plus d’un jour.
 
 Vous pouvez modifier la planification de la tâche de purge et la durée pendant laquelle les détails des tâches terminées sont conservés avant d’être supprimées. Vous pouvez également configurer le nombre maximal de tâches terminées pour lesquelles des détails sont conservés à tout moment.
 
@@ -108,7 +108,7 @@ Si le nombre de ressources ou de dossiers à supprimer dépasse le nombre seuil,
 
    ![Seuil de suppression des ressources](assets/async-delete-threshold.png)
 
-1. Cochez l’option **Activer les notifications électroniques** pour recevoir des notifications par email concernant l’état de cette tâche, par exemple, succès ou échec.
+1. Cochez l’option **Activer les notifications par e-mail** pour recevoir des notifications par e-mail concernant le statut de cette tâche,
 1. Enregistrez les modifications.
 
 ### Configuration des opérations de déplacement de ressources asynchrones {#configuring-asynchronous-move-operations}
@@ -122,7 +122,7 @@ Si le nombre de ressources/dossiers ou de références à déplacer dépasse le 
 
    ![Seuil de déplacement des ressources](assets/async-move-threshold.png)
 
-1. Cochez l’option **Activer les notifications électroniques** pour recevoir des notifications par email concernant l’état de cette tâche, Par exemple, succès ou échec.
+1. Cochez l’option **Activer les notifications par e-mail** pour recevoir des notifications par e-mail concernant le statut de cette tâche, Par exemple, succès ou échec.
 1. Enregistrez les modifications.
 
 ### Configuration des opérations de MSM asynchrones {#configuring-asynchronous-msm-operations}
@@ -130,7 +130,7 @@ Si le nombre de ressources/dossiers ou de références à déplacer dépasse le 
 1. Connectez-vous en tant qu’administrateur ou administratrice à la console Web de Quickstart Jar du SDK AEM à l’adresse `https://<host>:<port>/system/console`.
 1. Accédez à **OSGi** > **Configuration**.
 1. Dans la console web, ouvrez la **[!UICONTROL Configuration du traitement des tâches de l’opération de déplacement de page asynchrone]**.
-1. Cochez l’option **Activer les notifications électroniques** pour recevoir des notifications par email concernant l’état de cette tâche, Par exemple, succès ou échec.
+1. Cochez l’option **Activer les notifications par e-mail** pour recevoir des notifications par e-mail concernant le statut de cette tâche, Par exemple, succès ou échec.
 
    ![Configuration MSM](assets/async-msm.png)
 

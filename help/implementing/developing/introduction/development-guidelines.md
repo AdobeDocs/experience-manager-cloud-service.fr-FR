@@ -4,10 +4,10 @@ description: Découvrez les conseils de développement sur AEM as a Cloud Servi
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Developer
-source-git-commit: 925ed3687b17108b8d42a4a25d1f2b87edaaf76f
+source-git-commit: bfacb1fd76bda46999d6331c1605583e072beedd
 workflow-type: tm+mt
 source-wordcount: '2890'
-ht-degree: 56%
+ht-degree: 51%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 56%
 >id="development_guidelines"
 >title="Conseils de développement sur AEM as a Cloud Service"
 >abstract="Découvrez les conseils de développement sur AEM as a Cloud Service et les différences importantes avec AEM On-premise et AEM dans AMS."
->additional-url="https://video.tv.adobe.com/v/345902?captions=fre_fr" text="Démonstration de la structure du package"
+>additional-url="https://video.tv.adobe.com/v/330555/" text="Démonstration de la structure du package"
 
-Ce document présente les conseils de développement sur AEM as a Cloud Service et les différences importantes avec AEM On-premise et AEM dans AMS.
+Ce document présente les instructions de développement sur AEM as a Cloud Service et les différences importantes avec AEM on-premise et AEM dans AMS.
 
 ## Le code doit être adapté aux clusters {#cluster-aware}
 
@@ -48,11 +48,11 @@ De même, avec tout ce qui se produit de manière asynchrone, comme une action s
 
 Le code exécuté en tant que tâche en arrière-plan doit supposer que l’instance dans laquelle il est exécuté peut être supprimée à tout moment. Par conséquent, le code doit être résilient et, surtout, peut être repris. Cela signifie que si le code est réexécuté, il ne doit pas repartir du début, mais plutôt proche de l’endroit où il s’est arrêté. Bien qu’il ne s’agisse pas d’une nouvelle exigence pour ce type de code, dans AEM as a Cloud Service, il est plus probable qu’une suppression d’instance se produise.
 
-Pour minimiser les problèmes, les tâches de longue durée doivent être évitées si possible, et elles doivent pouvoir être reprises au minimum. Pour exécuter de telles tâches, utilisez les tâches Sling qui offrent la garantie qu’elles redémarreront au moins une fois si elles sont interrompues, et qu’elles seront donc réexécutées dès que possible. Elles ne doivent cependant probablement pas recommencer depuis le début. Pour planifier de telles tâches, il est préférable d’utiliser le planificateur de [tâches Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing), car il permet également l’exécution au moins une fois.
+Pour minimiser les problèmes, les tâches de longue durée doivent être évitées si possible, et elles doivent pouvoir être reprises au minimum. Pour exécuter de telles tâches, utilisez les tâches Sling, qui disposent d’une garantie au moins une fois et qui, par conséquent, seront réexécutées dès que possible si elles sont interrompues. Mais elles ne devraient probablement pas redémarrer depuis le début. Pour planifier de telles tâches, il est préférable d’utiliser le planificateur [Tâches Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing), car il permet également l’exécution au moins une fois.
 
 N’utilisez pas le planificateur Sling Commons pour la planification, car l’exécution ne peut pas être garantie. Il permet simplement d’augmenter la probabilité de la programmation.
 
-De même, avec tout ce qui se produit de manière asynchrone, comme une action sur des événements d’observation (qu’il s’agisse d’événements JCR ou d’événements de ressource Sling), l’exécution ne peut pas être garantie et doit donc être utilisée avec précaution. C’est déjà le cas actuellement pour les déploiements d’AEM.
+De même, avec tout ce qui se produit de manière asynchrone, comme une action sur des événements d’observation (qu’il s’agisse d’événements JCR ou d’événements de ressource Sling), l’exécution des tâches ne peut pas être garantie et doit donc être utilisée avec précaution. C’est déjà le cas pour les déploiements d’AEM à l’heure actuelle.
 
 ## Connexions HTTP sortantes {#outgoing-http-connections}
 
@@ -62,13 +62,13 @@ Pour le code qui n’applique pas ces délais d’expiration, les instances AEM 
 
 Adobe recommande l’utilisation de la bibliothèque [Apache HttpComponents Client 4.x](https://hc.apache.org/httpcomponents-client-ga/) fournie pour établir les connexions HTTP.
 
-Les alternatives connues et qui fonctionnent, mais qui peuvent nécessiter de fournir la dépendance vous-même, sont les suivantes :
+Les alternatives dont le fonctionnement est connu (mais qui peuvent nécessiter de fournir vous-même la dépendance) sont les suivantes :
 
 * [java.net.URL](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html) ou [java.net.URLConnection](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html) (fournies par AEM)
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (non recommandées, car obsolètes et remplacées par la version 4.x)
 * [OK Http](https://square.github.io/okhttp/) (non fourni par AEM)
 
-En plus de fournir des délais d’expiration, une gestion appropriée de ces délais d’expiration et des codes de statut HTTP inattendus doivent être implémentés.
+Outre la fourniture de délais d’expiration, une gestion appropriée de ces délais et des codes d’état HTTP inattendus doit également être implémentée.
 
 ## Gérer les limites de taux de requête {#rate-limit-handling}
 
@@ -102,7 +102,7 @@ Le contenu est répliqué de l’instance d’auteur vers l’instance de public
 
 Les environnements de production sont dimensionnés de manière à garantir un fonctionnement stable, tandis que les environnements intermédiaires sont dimensionnés de la même manière que les environnements de production afin de garantir des tests réalistes dans des conditions de production.
 
-Les environnements de développement et de développement rapide doivent se limiter au développement, à l’analyse des erreurs et aux tests fonctionnels. Ils ne sont pas conçus pour traiter des charges de travail élevées ou de grandes quantités de contenu.
+Les environnements de développement et de développement rapide doivent se limiter au développement, à l’analyse des erreurs et aux tests fonctionnels et ne sont pas conçus pour traiter des charges de travail élevées ou de grandes quantités de contenu.
 
 Par exemple, la modification d’une définition d’index sur un référentiel de contenu volumineux dans un environnement de développement peut entraîner une réindexation et un traitement excessif. Les tests qui nécessitent du contenu important doivent être exécutés sur des environnements intermédiaires.
 
@@ -112,7 +112,7 @@ Par exemple, la modification d’une définition d’index sur un référentiel 
 
 Pour le développement en local, les entrées de journal sont écrites dans des fichiers locaux dans le dossier `/crx-quickstart/logs`.
 
-Dans les environnements cloud, les développeurs peuvent télécharger les journaux via Cloud Manager ou utiliser un outil de ligne de commande pour les consulter. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
+Dans les environnements cloud, les développeurs peuvent télécharger les journaux via Cloud Manager ou utiliser un outil de ligne de commande pour les consulter. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **Définition du niveau de journalisation**
 
@@ -173,7 +173,7 @@ Les images mémoire de threads dans les environnements Cloud sont collectés en 
 
 ### Développement local {#local-development}
 
-Pour le développement local, les développeurs disposent d’un accès complet à [&#128279;](/help/implementing/developing/tools/crxde.md) (`/crx/de`) et à la [console web](/help/implementing/developing/tools/web-console.md) (`/system/console`).
+Pour le développement local, les développeurs disposent d’un accès complet à [](/help/implementing/developing/tools/crxde.md) (`/crx/de`) et à la [console web](/help/implementing/developing/tools/web-console.md) (`/system/console`).
 
 Pour le développement local (à l’aide du SDK), les `/apps` et les `/libs` peuvent être modifiés directement, ce qui diffère des environnements Cloud, où ces dossiers de niveau supérieur sont immuables.
 
@@ -182,9 +182,9 @@ Pour le développement local (à l’aide du SDK), les `/apps` et les `/libs` pe
 >[!NOTE]
 >
 >* Certains clients auront la possibilité de tester une expérience repensée pour le Developer Console AEM Cloud Service. Voir [cet article](/help/implementing/developing/introduction/aem-developer-console.md) pour plus d’informations.
->* Le Developer Console AEM as a Cloud Service ne doit pas être confondu avec le Adobe Developer Console [*&#128279;*](https://developer.adobe.com/developer-console/).
+>* Le Developer Console AEM as a Cloud Service ne doit pas être confondu avec le Adobe Developer Console [**](https://developer.adobe.com/developer-console/).
 
-Les clients peuvent accéder à CRXDE lite dans l’environnement de développement du niveau création, mais pas dans les environnements d’évaluation ni de production. Le référentiel immuable (`/libs`, `/apps`) ne peut pas être modifié au moment de l’exécution. Toute tentative de ce type entraînera des erreurs.
+Les clients peuvent accéder à CRXDE lite dans l’environnement de développement du niveau création, mais pas dans les environnements d’évaluation ni de production. Le référentiel immuable (`/libs`, `/apps`) ne peut pas être modifié au moment de l’exécution et toute tentative de ce type entraînera des erreurs.
 
 Au lieu de cela, vous pouvez lancer l’explorateur de référentiels à partir d’AEM as a Cloud Service Developer Console, ce qui vous permet d’accéder au référentiel en lecture seule pour tous les environnements sur les niveaux de création, de publication et de prévisualisation. Pour plus d’informations, voir [Navigateur de référentiels](/help/implementing/developing/tools/repository-browser.md).
 

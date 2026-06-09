@@ -6,10 +6,10 @@ badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 5d1a5007a4089628fb72ec6a4ae5c576497a6c3a
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 99%
+source-wordcount: '575'
+ht-degree: 93%
 
 ---
 
@@ -55,11 +55,11 @@ Vous pouvez afficher le statut des traitements asynchrones à partir du [tableau
 
 [WKND](https://wknd.site/), le nouveau site de référence d’AEM, a été mis à jour et publié afin de présenter les bonnes pratiques pour créer un site web avec AEM, ainsi que pour l’ensemble complet des fonctionnalités, composants et modèles de déploiement disponibles dans AEM. Le nouveau site de référence et son [tutoriel d’accompagnement](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr) abordent des sujets fondamentaux tels que la configuration de projet, les composants principaux, les modèles modifiables, les bibliothèques côté client et le développement de composants avec Adobe Experience Manager Sites.
 
-Auparavant, We.Retail était installé par défaut avec AEM (sauf lorsqu’il était démarré en mode de production). Dans AEM as a Cloud Service, un site de référence n’est pas installé par défaut. Au lieu de cela, vous trouverez le [référentiel git](https://github.com/adobe/aem-guides-wknd/) et [le tutoriel associé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr) avec le code du site de référence WKND mis à jour.
+Auparavant, We.Retail était installé par défaut avec AEM (sauf lorsqu’il était démarré en mode de production). Dans AEM as a Cloud Service, un site de référence n’est pas installé par défaut. Au lieu de cela, vous trouverez le [référentiel git](https://github.com/adobe/aem-guides-wknd/) et le [tutoriel associé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr) avec le code du site de référence WKND mis à jour.
 
 ## Fonctionnalités non disponibles lors de l’exécution {#capabilities-not-available-at-runtime}
 
-AEM as a Cloud Service est toujours activé et toujours à jour. Il est nécessaire pour cela de séparer le référentiel AEM du contenu immuable et mutable et d’interdire l’accès au contenu immuable au moment de l’exécution. Pour plus d’informations sur le contenu mutable ou immuable, reportez-vous à la section Zones [mutables ou immuables du référentiel](/help/implementing/developing/introduction/aem-project-content-package-structure.md#mutable-vs-immutable).
+AEM as a Cloud Service est toujours activé et toujours à jour. Il est nécessaire pour cela de séparer le référentiel AEM du contenu immuable et mutable et d’interdire l’accès au contenu immuable au moment de l’exécution. Pour plus d’informations sur le contenu modifiable ou non, consultez la section [Zones modifiables ou non modifiables du référentiel](/help/implementing/developing/introduction/aem-project-content-package-structure.md#mutable-vs-immutable).
 
 Du fait que le contenu immuable est inaccessible au moment de l’exécution, les opérations d’AEM Sites suivantes ne sont pas disponibles au moment de l’exécution :
 
