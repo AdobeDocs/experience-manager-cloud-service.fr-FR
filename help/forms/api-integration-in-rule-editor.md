@@ -57,7 +57,7 @@ La capture d’écran ci-dessous affiche la fenêtre de configuration de l’int
 
 >[!NOTE]
 >
-> Pour connaître les étapes et les exemples de fonctions **chiffrer** et **déchiffrer**, voir [ Chiffrement et déchiffrement](#encryption-and-decryption).
+> Pour connaître les étapes et les exemples de fonctions **chiffrer** et **déchiffrer**, voir [&#x200B; Chiffrement et déchiffrement](#encryption-and-decryption).
 
 **Type d’authentification**
 
@@ -108,7 +108,7 @@ Vous pouvez intégrer une API sans créer de modèle de données de formulaire e
 
 Un service d’API nommé **getcontendname** est configuré sous **Configuration de l’intégration de l’API** dans l’éditeur de règles :
 
-![ Configuration du point d’entrée REST de l’API ](/help/forms/assets/api-restendpoint.png)
+![&#x200B; Configuration du point d’entrée REST de l’API &#x200B;](/help/forms/assets/api-restendpoint.png)
 
 * **URL du point d’entrée de l’API** → `https://secure.geonames.org/countryInfoJSON?username=aemforms`
 * **Méthode HTTP** → GET
@@ -176,7 +176,7 @@ function encrypt(payload) {
 **chiffrer (hook de payload de pré-requête)**
 
 La fonction **encrypt** reçoit un objet de payload avec **body**, **headers**, **cryptoMetadata** et **options** facultatifs. Elle renvoie une version modifiée de la même forme. Le champ **options** transfère les paramètres de l’API de récupération (par exemple, `credentials: 'include'`) via le pipeline de requêtes. Les valeurs de **options** sont appliquées à l’appel `fetch()` sous-jacent. Le champ **cryptoMetadata** stocke les données à utiliser lors du déchiffrement. Tout ce que vous définissez dans **cryptoMetadata** pendant le chiffrement est conservé dans **originalRequest.cryptoMetadata** et mis à la disposition de la fonction **decrypt** ultérieurement. Malgré son nom, **encrypt** est un transformateur de pré-requête général. Vous pouvez l’utiliser pour modifier les en-têtes ou le corps de la requête, pas seulement pour le chiffrement cryptographique. L’implémentation par défaut renvoie la payload inchangée.
->>
+&#x200B;>>
 
 L’exemple de code suivant illustre une fonction **decrypt** :
 
