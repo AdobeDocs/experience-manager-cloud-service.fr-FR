@@ -7,10 +7,10 @@ level: Beginner, Intermediate
 keywords: intégration d’API dans l’éditeur de règles, améliorations du service d’appel
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
+source-git-commit: 2c4a963786db1b5dabf16c5d96be950bb7ad7807
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 4%
+source-wordcount: '1554'
+ht-degree: 2%
 
 ---
 
@@ -52,12 +52,16 @@ La capture d’écran ci-dessous affiche la fenêtre de configuration de l’int
 * **URL de l’API** : point d’entrée du service d’API.
 * **Sélectionner la méthode HTTP** : méthode de requête HTTP utilisée pour appeler l’API.
 * **Type de contenu** : définit le format de requête et de réponse.
-* **Chiffrement requis** : (facultatif) garantit le chiffrement des données sensibles pendant la transmission.
+* **Chiffrement requis** : (facultatif) lorsque cette option est sélectionnée, les payloads de requête et de réponse peuvent être chiffrées à l’aide de fonctions personnalisées dans **function.js**. Un champ **Clé publique** s’affiche. Collez votre clé publique dans ce champ avant d’enregistrer la configuration de l’intégration de l’API.
 * **Exécuter sur le client** : lorsqu’il est activé, l’appel API est effectué à partir du client (navigateur) plutôt que du serveur.
+
+>[!NOTE]
+>
+> Pour connaître les étapes et les exemples de fonctions **chiffrer** et **déchiffrer**, voir [&#x200B; Chiffrement et déchiffrement](#encryption-and-decryption).
 
 **Type d’authentification**
 
-* **Options** : aucune, de base, clé API, OAuth 2.0.
+* **Options** : aucune, de base, clé API.
 
 **Paramètres d’entrée**
 
@@ -90,7 +94,7 @@ La capture d’écran ci-dessous affiche la fenêtre de configuration de l’int
 6. Pays de destination (liste déroulante)
 7. Date prévue d’arrivée (date)
 
-Au lieu de conserver une liste statique de pays, le formulaire récupère dynamiquement les informations de pays (continent, capitale, codes ISO Alpha, etc.) à l’aide de l’API **getcountryname** :
+Au lieu de conserver une liste statique de pays, le formulaire récupère dynamiquement les informations de pays (continent, capitale, codes ISO Alpha, etc.) à l’aide de l’API **getcounname** :
 
 `https://secure.geonames.org/countryInfoJSON?username=aemforms`
 
@@ -127,6 +131,69 @@ De même, les **Pays d’émission du passeport** et **Pays de destination** uti
 >[!NOTE]
 >
 > Vous pouvez [récupérer les valeurs de propriété d’un tableau JSON en appelant une API et en utilisant une fonction personnalisée](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array). Cette approche vous permet d’extraire des valeurs et de les lier directement aux champs du formulaire.
+
+## Modifier une intégration d’API existante
+
+Après avoir créé une intégration d’API, vous pouvez la mettre à jour à partir de l’éditeur de règles sans créer de nouvelle intégration. Lorsqu’une instruction **Invoke Service** fait référence à une intégration d’API, une option **Modifier** est disponible pour cette intégration.
+
+Pour modifier une intégration d’API existante :
+
+1. Ouvrez la règle dans l’éditeur de règles qui contient une instruction **Invoke Service**.
+2. Dans l’instruction **Invoke Service**, sélectionnez l’intégration d’API à mettre à jour.
+3. Cliquez sur l’icône **Modifier** pour ouvrir la fenêtre **Configuration de l’intégration de l’API**.
+4. Mettez à jour l’URL d’API, les paramètres d’authentification, d’entrée et de sortie, ou d’autres paramètres, et enregistrez vos modifications.
+
+![Modifier l’intégration d’API](/help/forms/assets/edit-api-rule-editor.png)
+
+## Chiffrement et déchiffrement
+
+Lorsque **Chiffrement requis** est sélectionné pour une intégration d’API, collez votre clé publique dans le champ **Clé publique** de la fenêtre de configuration de l’intégration d’API. L’éditeur de règles appelle **chiffrer** avant chaque requête sortante et **déchiffrer** après une réponse réussie. Si vous n’ajoutez pas de logique personnalisée dans **function.js**, les deux fonctions renvoient la payload inchangée.
+
+Pour chiffrer et déchiffrer les données de requête et de réponse, ajoutez les fonctions **chiffrer** et **déchiffrer** à **function.js** :
+
+1. Ouvrez le fichier **function.js** pour votre formulaire adaptatif.
+2. Ajoutez une fonction **encrypt** pour transformer la requête (corps, en-têtes et options associées) avant l&#39;appel API.
+3. Ajoutez une fonction **decrypt** pour transformer la réponse après un appel API réussi. La fonction **decrypt** reçoit la réponse chiffrée et **originalRequest**, qui inclut toutes les **cryptoMetadata** définies pendant le chiffrement.
+4. Enregistrez **function.js**, puis testez l’intégration à l’aide de **Invoke Service** dans l’éditeur de règles.
+
+L’exemple de code suivant montre comment ajouter la fonction **encrypt** dans **function.js** :
+
+```javascript
+function encrypt(payload) {
+    const { body, headers, options } = payload;
+    const { encryptedBody, encryptedKey } = await myRsaEncrypt(body);
+    return {
+        body: encryptedBody,
+        headers: { ...headers, 'X-Encrypted-Key': encryptedKey },
+        cryptoMetadata: { keyId: 'rsa-2048-v1' },
+        options
+    };
+}
+```
+
+
+
+**chiffrer (hook de payload de pré-requête)**
+
+La fonction **encrypt** reçoit un objet de payload avec **body**, **headers**, **cryptoMetadata** et **options** facultatifs. Elle renvoie une version modifiée de la même forme. Le champ **options** transfère les paramètres de l’API de récupération (par exemple, `credentials: 'include'`) via le pipeline de requêtes. Les valeurs de **options** sont appliquées à l’appel `fetch()` sous-jacent. Le champ **cryptoMetadata** stocke les données à utiliser lors du déchiffrement. Tout ce que vous définissez dans **cryptoMetadata** pendant le chiffrement est conservé dans **originalRequest.cryptoMetadata** et mis à la disposition de la fonction **decrypt** ultérieurement. Malgré son nom, **encrypt** est un transformateur de pré-requête général. Vous pouvez l’utiliser pour modifier les en-têtes ou le corps de la requête, pas seulement pour le chiffrement cryptographique. L’implémentation par défaut renvoie la payload inchangée.
+&#x200B;>>
+
+L’exemple de code suivant illustre une fonction **decrypt** :
+
+```javascript
+function decrypt(encryptedData, originalRequest) {
+    const { keyId } = originalRequest?.cryptoMetadata || {};
+    return await myRsaDecrypt(encryptedData, keyId);
+}
+```
+
+**déchiffrer (hook de réponse de post-requête)**
+
+La fonction **decrypt** s’exécute après une réponse réussie. Il reçoit le corps de la réponse et **originalRequest**. L’objet **originalRequest** comprend **cryptoMetadata** provenant de votre fonction **encrypt**, ainsi que **url**, **method** et d’autres métadonnées de requête. Il doit renvoyer le corps déchiffré de manière synchrone ou asynchrone. L’implémentation par défaut renvoie les données inchangées. La fonction **decrypt** s’exécute uniquement en cas de réponses réussies. Les réponses d’erreur n’appellent pas **déchiffrer**.
+
+>[!NOTE]
+>
+> Dans les exemples ci-dessus, remplacez `myRsaEncrypt` et `myRsaDecrypt` par vos fonctions de chiffrement.
 
 ## Mise en œuvre du mécanisme de reprise en cas d’échec de l’API
 
@@ -207,4 +274,4 @@ Dans le code ci-dessus, la fonction **retryHandler** gère les requêtes d’API
   Non. Avec l’éditeur visuel de règles, vous pouvez directement intégrer des API à l’aide de l’option **Créer une intégration d’API** sans créer de modèle de données de formulaire. Cette approche est idéale pour les cas d’utilisation légers ou spécifiques aux formulaires.
 
 * **Puis-je sécuriser les appels API effectués à partir de l’éditeur de règles ?**\
-  Oui. La configuration de l’intégration d’API fournit des options d’authentification telles que **De base, Clé API et OAuth 2.0**. Vous pouvez également activer **Chiffrement requis** pour vous assurer que les données sensibles sont transmises en toute sécurité.
+  Oui. La configuration de l’intégration d’API fournit des options d’authentification telles que **De base** et **Clé API**. Vous pouvez également sélectionner **Chiffrement requis** et ajouter une logique **chiffrer** et **déchiffrer** personnalisée dans **function.js**. Pour obtenir des étapes de configuration et des exemples, voir [Chiffrement et déchiffrement](#encryption-and-decryption).
