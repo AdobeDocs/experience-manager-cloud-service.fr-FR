@@ -4,12 +4,13 @@ description: Découvrez les étapes de configuration spécifiques requises pour 
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 94a5e40b-af4a-42ed-922b-b1ec9bb82e24
-source-git-commit: 7b880e6d776e2eb9c53cef4552b876b051bdc7ba
+source-git-commit: c80a2ad29839eaf4d8ad940f9a90d8575e5230f1
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
+
 
 # Prise en main de l’agent de modernisation de l’expérience pour les projets de création AEM {#getting-started-aem-authoring}
 
@@ -51,13 +52,13 @@ Suivez ces étapes à partir du guide standard.
 1. [Connexion de votre référentiel GitHub](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md#connect-repo)
 1. [Démarrer l&#39;invite](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md#start-prompting)
 
-![&#x200B; Contenu importé &#x200B;](assets/content-imported-aem-authoring.png)
+![ Contenu importé ](assets/content-imported-aem-authoring.png)
 
 Une fois ces étapes effectuées pour migrer le contenu, procédez comme suit.
 
 ## Valider le contenu {#validate-content}
 
-Validez le contenu de la page sélectionnée dans le panneau d’aperçu. Toutes les erreurs s’affichent en cliquant sur le bouton **Erreurs**.
+Validez le contenu de la page sélectionnée dans l’aperçu du panneau de contenu. Toutes les erreurs s’affichent en cliquant sur le bouton **Erreurs**.
 Poursuivez votre conversation avec l’agent pour corriger les erreurs. Utilisez la fonction **Ajouter à la conversation** pour cibler des correctifs sur des éléments spécifiques de la page, des fichiers d’analyse ou des fichiers de transformateur.
 
 ![Discussion contextuelle](assets/contextual-chat.png)
@@ -66,7 +67,7 @@ Poursuivez votre conversation avec l’agent pour corriger les erreurs. Utilisez
 
 Pour charger votre contenu vers AEM :
 
-1. Assurez-vous que vous êtes dans la vue **Contenu** et cliquez sur le bouton **Charger le contenu** en haut à droite.
+1. Assurez-vous que vous êtes dans une vue **Contenu** et cliquez sur le bouton **Charger le contenu** en haut à droite.
 1. Dans la boîte de dialogue **Créer un package de contenu**, choisissez les pages à inclure dans le package.
    * Vous pouvez éventuellement saisir un **Nom du package** (par défaut, le nom du site s’il est vide).
    * Utilisez **Tout sélectionner** **Effacer la sélection**, **Tout développer** ou **Tout réduire** pour gérer la liste.
