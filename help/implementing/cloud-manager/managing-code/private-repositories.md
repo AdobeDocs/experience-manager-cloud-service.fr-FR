@@ -4,10 +4,10 @@ description: Découvrez comment configurer Cloud Manager pour utiliser vos prop
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
+source-git-commit: d36142c0569da782e12adbea9f36a44734a93aaf
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 35%
+source-wordcount: '1104'
+ht-degree: 32%
 
 ---
 
@@ -15,16 +15,35 @@ ht-degree: 35%
 
 En configurant Cloud Manager pour l’intégration à votre cloud GitHub privé (référentiels hébergés sur `github.com`), vous pouvez valider votre code directement dans GitHub à l’aide de Cloud Manager. Cette configuration supprime l’exigence de synchroniser régulièrement votre code avec le référentiel Adobe.
 
+Cloud Manager valide la propriété du référentiel GitHub de l’une des deux façons suivantes, selon l’emplacement d’hébergement du référentiel :
+
+* Les référentiels sur `github.com`, y compris les déploiements GitHub Enterprise Cloud hébergés sur `github.com`, utilisent l’application GitHub d’Adobe. Cette page décrit cette méthode.
+* Les référentiels GitHub Enterprise Server (auto-hébergés) utilisent un PAT (jeton d’accès personnel) et un webhook. Voir [Ajouter des référentiels externes dans Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+
+
 >[!NOTE]
 >
->Vous pouvez également ajouter les types de référentiel suivants avec des Webhooks :
+>Cette page s’applique aux référentiels hébergés sur `github.com`, y compris les déploiements GitHub Enterprise Cloud hébergés sur `github.com`. Ces référentiels utilisent l’application GitHub d’Adobe pour valider la propriété. Aucune configuration webhook n’est requise, car Cloud Manager s’intègre directement via l’application.
 >
->* Référentiels GitHub Enterprise Server (version auto-hébergée de GitHub) .
->* Référentiels GitLab (versions `gitlab.com` et auto-hébergées de GitLab).
->* Référentiels Bitbucket (`bitbucket.org` et Bitbucket Server, la version auto-hébergée de BitBucket).
->* Référentiels DevOps d’Azure ([dev.azure.com](https://azure.microsoft.com/en-us/products/devops/?nav=min) et versions auto-hébergées d’Azure DevOps).
+>Pour ajouter l’un des types de référentiel suivants, voir [Ajouter des référentiels externes dans Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md). Ces référentiels utilisent un PAT (Personal Access Token) et un webhook configuré manuellement pour valider la propriété.
 >
->Voir [Ajouter des référentiels externes dans Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+>* GitHub Enterprise Server (la version auto-hébergée de GitHub)
+>* GitLab (`gitlab.com` et la version auto-hébergée de GitLab)
+>* Bitbucket (`bitbucket.org` uniquement, la version cloud)
+>* Opérations de développement Azure (`dev.azure.com`)
+
+<!--
+>[!NOTE]
+>
+>You can also add the following repository types with webhooks:
+>
+>* GitHub Enterprise Server (self-hosted version of GitHub) repositories .
+>* GitLab (both `gitlab.com` and self-hosted versions of GitLab) repositories.
+>* Bitbucket (both `bitbucket.org` and Bitbucket Server, the self-hosted version of BitBucket) repositories. 
+>* Azure DevOps (both [dev.azure.com](https://azure.microsoft.com/en-us/products/devops/?nav=min) and self-hosted versions of Azure DevOps) repositories.
+>
+>See [Add External Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+-->
 
 <!--
  CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:

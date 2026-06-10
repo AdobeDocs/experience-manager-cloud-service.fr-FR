@@ -1,13 +1,13 @@
 ---
 title: Ajouter des référentiels externes dans Cloud Manager
-description: Découvrez comment ajouter un référentiel externe dans Cloud Manager. Cloud Manager prend en charge l’intégration aux référentiels GitHub Enterprise, GitLab, Bitbucket et Azure DevOps.
+description: Découvrez comment ajouter un référentiel externe dans Cloud Manager. Cloud Manager prend en charge l’intégration aux référentiels GitHub Enterprise Server, GitLab, Bitbucket et Azure DevOps.
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: b267227fd855e0959aaad6c2fe74540d020f4233
+source-git-commit: d36142c0569da782e12adbea9f36a44734a93aaf
 workflow-type: tm+mt
-source-wordcount: '2442'
-ht-degree: 26%
+source-wordcount: '2610'
+ht-degree: 25%
 
 ---
 
@@ -15,12 +15,17 @@ ht-degree: 26%
 
 <!-- badge: label="Beta - Azure DevOps only" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket" -->
 
-Découvrez comment ajouter un référentiel externe dans Cloud Manager. Cloud Manager prend en charge l’intégration aux référentiels GitHub Enterprise, GitLab et Bitbucket.
+Découvrez comment ajouter un référentiel externe dans Cloud Manager. Cloud Manager prend en charge l’intégration aux référentiels GitHub Enterprise Server, GitLab, Bitbucket et Azure DevOps.
 
 Les clients peuvent désormais également intégrer leurs référentiels Git DevOps Azure dans Cloud Manager, avec la prise en charge des référentiels DevOps Azure modernes et VSTS hérités (Visual Studio Team Services).
 
 * Pour les utilisateurs et utilisatrices d’Edge Delivery Services, le référentiel intégré peut être utilisé pour synchroniser et déployer le code du site.
 * Pour les utilisateurs et utilisatrices d’AEM as a Cloud Service et d’Adobe Managed Services (AMS), le référentiel peut être lié aux pipelines full stack et front-end.
+
+Cloud Manager valide la propriété du référentiel GitHub de l’une des deux façons suivantes, selon l’emplacement d’hébergement du référentiel :
+
+* Les référentiels GitHub Enterprise Server (auto-hébergés) utilisent un jeton d’accès personnel et un webhook. Cette page décrit cette méthode.
+* Les référentiels sur `github.com`, y compris les déploiements GitHub Enterprise Cloud hébergés sur `github.com`, utilisent l’application GitHub d’Adobe. Voir [Ajout d’un référentiel cloud GitHub privé dans Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md).
 
 ## Configuration d’un référentiel externe
 
@@ -62,8 +67,8 @@ La configuration d’un référentiel externe dans Cloud Manager comprend les é
    | Champ | Description |
    | --- | --- |
    | **Nom du référentiel** | Obligatoire. Nom expressif pour votre nouveau référentiel. |
-   | **URL du référentiel** | Obligatoire. URL du référentiel.<br><br>Si vous utilisez un référentiel hébergé sur GitHub, le chemin d’accès doit se terminer par `.git`.<br>Par exemple, *`https://github.com/org-name/repo-name.git`* (le chemin d’accès de l’URL est fourni à titre d’illustration uniquement).<br><br>Si vous utilisez un référentiel externe, il doit utiliser le format de chemin d’accès d’URL suivant :<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> ou <br>`https://self-hosted-domain/org-name/repo-name.git`<br> et correspondre à votre fournisseur Git. |
-   | **Sélection du type de référentiel** | Obligatoire. Sélectionnez le type de référentiel que vous utilisez. Si le chemin d’URL du référentiel inclut le nom du fournisseur Git, tel que GitLab ou Bitbucket, le type de référentiel est déjà présélectionné pour vous.:<ul><li>**GitHub** (GitHub Enterprise et la version auto-hébergée de GitHub)</li><li>**GitLab** (`gitlab.com` et la version auto-hébergée de GitLab) </li><li>**Bitbucket** (uniquement `bitbucket.org` - version cloud) est pris en charge. La version auto-hébergée de Bitbucket a été abandonnée à partir du 15 février 2024.</li><li>**Opérations de développement** (`dev.azure.com`) </ul> |
+   | **URL du référentiel** | Obligatoire. URL du référentiel.<br><br>Si vous utilisez un référentiel hébergé sur GitHub, le chemin doit se terminer par `.git`.<br>Par exemple, *`https://github.com/org-name/repo-name.git`* (le chemin de l’URL est fourni à titre d’illustration uniquement).<br><br>Si vous utilisez un référentiel externe, il doit utiliser le format de chemin d’URL suivant :<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> ou<br>`https://self-hosted-domain/org-name/repo-name.git`<br>Et correspondre à votre fournisseur Git. |
+   | **Sélection du type de référentiel** | Obligatoire. Sélectionnez le type de référentiel que vous utilisez. Si le chemin d’URL du référentiel inclut le nom du fournisseur Git, tel que GitLab ou Bitbucket, le type de référentiel est présélectionné pour vous :<br><br>* **GitHub** (GitHub Enterprise Server, la version auto-hébergée de GitHub). Pour les référentiels sur `github.com`, y compris les déploiements GitHub Enterprise Cloud hébergés sur `github.com`, voir [Ajouter un référentiel GitHub Cloud privé dans Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) à la place.<br>* **GitLab** (`gitlab.com` et la version auto-hébergée de GitLab)<br>* **Bitbucket** (uniquement `bitbucket.org`, la version cloud). La version auto-hébergée de Bitbucket a été abandonnée le 15 février 2024.<br>* **Azure DevOps** (`dev.azure.com`) |
    | **Description** | Facultatif. Description détaillée du référentiel. |
 
 1. Sélectionnez **Enregistrer** pour ajouter le référentiel.
@@ -77,14 +82,14 @@ La configuration d’un référentiel externe dans Cloud Manager comprend les é
 
 >[!BEGINTABS]
 
->[!TAB GitHub Enterprise]
+>[!TAB GitHub Enterprise Server]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
 | Option de jeton d’accès | Description |
 | --- | --- |
 | **Utilisation d’un jeton d’accès existant** | Si vous avez déjà fourni un jeton d’accès au référentiel pour votre organisation et que vous avez accès à plusieurs référentiels, vous pouvez sélectionner un jeton existant. Utilisez la liste déroulante **Nom du jeton** pour choisir le jeton que vous souhaitez appliquer au référentiel. Sinon, ajoutez un nouveau jeton d’accès. |
-| **Ajout d’un nouveau jeton d’accès** | <ul><li> Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous êtes en train de créer.<li>Créez un jeton d’accès personnel en suivant les instructions de la [documentation GitHub](https://docs.github.com/fr/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<li>Autorisations requises pour le jeton d’accès personnel (PAT) d’entreprise GitHub <br>ces autorisations permettent à Cloud Manager de valider les demandes d’extraction, de gérer les vérifications de statut de validation et d’accéder aux détails de référentiel nécessaires.<br>Lorsque vous générez le PAT dans GitHub Enterprise, assurez-vous qu’il inclut les autorisations de référentiel suivantes :<ul><li>Demande d’extraction (lecture et écriture)<li>Commit status (lecture et écriture).<li>Métadonnées du référentiel (lecture seule)</li></li></ul></li></ul></ul></ul><ul><li>Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
+| **Ajout d’un nouveau jeton d’accès** | <ul><li> Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous êtes en train de créer.<li>Créez un jeton d’accès personnel en suivant les instructions de la [documentation GitHub](https://docs.github.com/fr/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<li>Autorisations requises pour le jeton PAT (Personal Access Token) GitHub Enterprise Server<br>ces autorisations permettent à Cloud Manager de valider les demandes d’extraction, de gérer les vérifications de statut de validation et d’accéder aux détails du référentiel nécessaires.<br>Lorsque vous générez le PAT dans GitHub Enterprise Server, assurez-vous qu’il inclut les autorisations de référentiel suivantes :<ul><li>Demande d’extraction (lecture et écriture)<li>Commit status (lecture et écriture).<li>Métadonnées du référentiel (lecture seule)</li></li></ul></li></ul></ul></ul><ul><li>Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
 
 Après validation, le référentiel externe est prêt à l’emploi et peut être connecté à un pipeline.
 
@@ -110,7 +115,7 @@ Voir aussi [Gérer les jetons d’accès](/help/implementing/cloud-manager/manag
 | Option de jeton d’accès | Description |
 | --- | --- |
 | **Utilisation d’un jeton d’accès existant** | Si vous avez déjà fourni un jeton d’accès au référentiel pour votre organisation et que vous avez accès à plusieurs référentiels, vous pouvez sélectionner un jeton existant. Utilisez la liste déroulante **Nom du jeton** pour choisir le jeton que vous souhaitez appliquer au référentiel. Sinon, ajoutez un nouveau jeton d’accès. |
-| **Ajout d’un nouveau jeton d’accès** | <ul><li>Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous êtes en train de créer.<li>Créez un jeton d’accès au référentiel à l’aide de la [documentation Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Autorisations requises pour le jeton d’accès au référentiel Bitbucket.<br>Ces autorisations permettent à Cloud Manager d’accéder au contenu du référentiel, de gérer les demandes d’extraction et de configurer des événements webhook ou d’y réagir.<br>Lorsque vous créez le jeton d’accès au référentiel dans Bitbucket, assurez-vous qu’il inclut les autorisations requises suivantes :<ul><li>Référentiel (lecture seule)<li>Requêtes d’extraction (lecture et écriture)<li>Webhooks (lecture et écriture)</li></li></ul></li></li></ul></ul></ul><ul><li>Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
+| **Ajout d’un nouveau jeton d’accès** | <ul><li>Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous êtes en train de créer.<li>Créez un jeton d’accès au référentiel à l’aide de la [documentation Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Autorisations requises pour le jeton d’accès au référentiel Bitbucket. <br>Ces autorisations permettent à Cloud Manager d’accéder au contenu du référentiel, de gérer les demandes d’extraction et de configurer des événements webhook ou d’y réagir.<br>Lorsque vous créez le jeton d’accès au référentiel dans Bitbucket, assurez-vous qu’il inclut les autorisations requises suivantes :<ul><li>Référentiel (lecture seule)<li>Requêtes d’extraction (lecture et écriture)<li>Webhooks (lecture et écriture)</li></li></ul></li></li></ul></ul></ul><ul><li>Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
 
 Après validation, le référentiel externe est prêt à l’emploi et peut être connecté à un pipeline.
 
@@ -123,7 +128,7 @@ Voir aussi [Gérer les jetons d’accès](/help/implementing/cloud-manager/manag
 | Option de jeton d’accès | Description |
 | --- | --- |
 | **Utilisation d’un jeton d’accès existant** | Si vous avez déjà fourni un jeton d’accès au référentiel pour votre organisation et que vous avez accès à plusieurs référentiels, vous pouvez sélectionner un jeton existant. Utilisez la liste déroulante **Nom du jeton** pour choisir le jeton que vous souhaitez appliquer au référentiel. Sinon, ajoutez un nouveau jeton d’accès. |
-| **Ajout d’un nouveau jeton d’accès** | <ul><li>Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous êtes en train de créer.<li>Créez un jeton d’accès au référentiel à l’aide de la documentation [Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows).<li>Autorisations requises pour le jeton d’accès personnel (PAT) des opérations de développement Azure.<br>Ces autorisations permettent à Cloud Manager d’accéder au contenu du référentiel, de gérer les demandes d’extraction et de configurer des événements webhook ou d’y réagir.<br>Lorsque vous créez le mot de passe de l’application dans les opérations de développement Azure, assurez-vous qu’il inclut les autorisations de mot de passe d’application requises suivantes :<ul><li>Code (lecture)</li><li>Code (Statut)</li><li>Pull Request Threads (lecture/écriture)</li></ul></li></li></ul></ul></ul><ul><li>Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
+| **Ajout d’un nouveau jeton d’accès** | <ul><li>Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous êtes en train de créer.<li>Créez un jeton d’accès au référentiel à l’aide de la documentation [Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows).<li>Autorisations requises pour le jeton d’accès personnel (PAT) Azure DevOps. <br>Ces autorisations permettent à Cloud Manager d’accéder au contenu du référentiel, de gérer les demandes d’extraction et de configurer des événements webhook ou d’y réagir.<br>Lorsque vous créez le mot de passe de l’application dans les opérations de développement Azure, assurez-vous qu’il inclut les autorisations de mot de passe d’application requises suivantes :<ul><li>Code (lecture)</li><li>Code (Statut)</li><li>Pull Request Threads (lecture/écriture)</li></ul></li></li></ul></ul></ul><ul><li>Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
 
 Après validation, le référentiel externe est prêt à l’emploi et peut être connecté à un pipeline.
 
@@ -158,7 +163,7 @@ Voir aussi [Gérer les jetons d’accès](/help/implementing/cloud-manager/manag
 
 ## Configuration d’un webhook pour un référentiel externe {#configure-webhook}
 
-Cloud Manager vous permet de configurer des webhooks pour les référentiels Git externes que vous avez ajoutés. Voir [&#x200B; Ajouter un référentiel externe &#x200B;](#add-ext-repo). Ces webhooks permettent à Cloud Manager de recevoir des événements liés à différentes actions dans votre solution de fournisseur Git.
+Cloud Manager vous permet de configurer des webhooks pour les référentiels Git externes que vous avez ajoutés. Voir [ Ajouter un référentiel externe ](#add-ext-repo). Ces webhooks permettent à Cloud Manager de recevoir des événements liés à différentes actions dans votre solution de fournisseur Git.
 
 Par exemple, les webhooks permettent à Cloud Manager de déclencher des actions en fonction d’événements tels que :
 
@@ -166,9 +171,9 @@ Par exemple, les webhooks permettent à Cloud Manager de déclencher des actions
 * Événements push : démarre les pipelines lorsque le déclencheur « En cas de validation Git » est activé.
 * Futures actions basées sur des commentaires : permettent des workflows, tels que le déploiement direct d’une requête de tirage vers un environnement de développement rapide (RDE).
 
-La configuration Webhook n’est pas requise pour les référentiels hébergés sur `GitHub.com`, car Cloud Manager s’intègre directement via l’application GitHub.
+La configuration Webhook n’est pas requise pour les référentiels hébergés sur `gitub.com`, car Cloud Manager s’intègre directement via l’application GitHub.
 
-Pour tous les autres référentiels externes intégrés avec un jeton d’accès, tels que GitHub Enterprise, GitLab, Bitbucket et Azure DevOps, la configuration webhook est disponible et doit être configurée manuellement.
+Pour tous les autres référentiels externes intégrés avec un jeton d’accès, tels que GitHub Enterprise Server, GitLab, Bitbucket et Azure DevOps, la configuration webhook est disponible et doit être configurée manuellement.
 
 **Pour configurer un webhook pour un référentiel externe, procédez comme suit**
 
@@ -195,7 +200,7 @@ Collez l’URL dans un fichier texte brut. L’URL copiée est requise pour les 
    1. En regard du champ **Secret Webhook** jeton/clé, cliquez sur **Générer**, puis sur ![Icône Copier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).
 Collez le secret dans un fichier texte brut. Le secret copié est requis pour les paramètres du Webhook de votre fournisseur Git.
 1. Cliquez sur **Fermer**.
-1. Accédez à votre solution de fournisseur Git (GitHub Enterprise, GitLab, Bitbucket ou Azure DevOps).
+1. Accédez à votre solution de fournisseur Git (GitHub Enterprise Server, GitLab, Bitbucket ou Azure DevOps).
 
    Tous les détails sur la configuration webhook et les événements requis pour chaque fournisseur sont disponibles dans [Ajouter un référentiel externe](#add-ext-repo). Sous l’étape 8, consultez le tableau à onglets.
 
@@ -210,7 +215,7 @@ Collez le secret dans un fichier texte brut. Le secret copié est requis pour le
 
 >[!BEGINTABS]
 
->[!TAB GitHub Enterprise]
+>[!TAB GitHub Enterprise Server]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
@@ -254,11 +259,11 @@ Le comportement varie en fonction du fournisseur Git que vous utilisez, comme in
 >[!BEGINTABS]
 
 
->[!TAB GitHub Enterprise]
+>[!TAB GitHub Enterprise Server]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
-Lorsque la vérification est créée, elle ressemble à la capture d’écran ci-dessous. La principale différence avec `GitHub.com` est que `GitHub.com` utilise une exécution de vérification, tandis que GitHub Enterprise (à l’aide de jetons d’accès personnel) génère un statut de validation :
+Lorsque la vérification est créée, elle ressemble à la capture d’écran ci-dessous. La principale différence avec `GitHub.com` est que `GitHub.com` utilise une exécution de vérification, tandis que GitHub Enterprise Server (à l’aide de jetons d’accès personnel) génère un statut de validation :
 
 ![Statut d’engagement pour indiquer le processus de validation PR sur GitHub Enterprise](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
 
