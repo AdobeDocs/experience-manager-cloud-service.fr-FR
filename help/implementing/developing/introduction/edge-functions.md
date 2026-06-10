@@ -4,9 +4,9 @@ description: Découvrez comment exécuter JavaScript au niveau de la couche CDN 
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: 757b64c4b3340f56cc8a5e5a7c1200fcd8d0c1be
+source-git-commit: 3d12f495e0f1a07c81033b93fd607fd260023c48
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1441'
 ht-degree: 2%
 
 ---
@@ -97,15 +97,14 @@ kind: "EdgeFunctions"
 version: "1"
 data:
   services:
-    - name: first-function
-    - name: second-function
+    - name: my-edge-function
     # Uncomment to enable secrets
     # secrets:
     #   - key: API_TOKEN
     #     value: ${{ API_TOKEN_SECRET }}
 ```
 
-La configuration prend en charge jusqu’à trois services. Les clés de niveau supérieur sont les suivantes :
+La limite par défaut est de 1 fonction pour les environnements AEM as a Cloud Service et de 3 pour les sites Edge Delivery Services. Les clés de niveau supérieur sont les suivantes :
 
 | Clé | Description |
 |---|---|
@@ -124,19 +123,19 @@ version: '1'
 data:
   originSelectors:
     rules:
-      - name: route-to-first-function
+      - name: route-weather-to-edge-function
         when: { reqProperty: path, equals: "/weather" }
         action:
           type: selectAemOrigin
-          originName: edgefunction-first-function
-      - name: route-to-second-function
+          originName: edgefunction-my-edge-function
+      - name: route-hello-world-to-edge-function
         when: { reqProperty: path, equals: "/hello-world" }
         action:
           type: selectAemOrigin
-          originName: edgefunction-second-function
+          originName: edgefunction-my-edge-function
 ```
 
-Les règles du sélecteur d’origine vous permettent d’acheminer le trafic vers vos fonctions Edge en fonction de toute condition disponible dans le moteur de règles du réseau CDN, telle qu’un chemin, un domaine ou un en-tête de requête spécifique. Voir [Sélecteurs d’origine](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) pour connaître la syntaxe complète des règles.
+Les règles du sélecteur d’origine vous permettent d’acheminer le trafic vers vos fonctions Edge en fonction de toute condition disponible dans le moteur de règles du réseau CDN, telle qu’un chemin, un domaine ou un en-tête de requête spécifique. Plusieurs règles peuvent acheminer différents chemins vers la même fonction Edge. Voir [Sélecteurs d’origine](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) pour connaître la syntaxe complète des règles.
 
 ### &#x200B;4. Déploiement de la configuration {#deploy-configuration}
 
