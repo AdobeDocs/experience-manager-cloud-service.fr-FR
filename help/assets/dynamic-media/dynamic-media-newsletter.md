@@ -6,10 +6,10 @@ feature: Asset Management
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 90dcda6778ef3d3aca3163f649505902efeb2fd7
 workflow-type: tm+mt
 source-wordcount: '1040'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -70,7 +70,7 @@ Dans cette newsletter unique archivée, vous trouverez des ressources précieuse
    * Explorez les puissantes fonctions de recadrage de Dynamic Media.
    * Profitez d’un audit gratuit d’Adobe pour vous aider à exploiter tout le potentiel de Dynamic Media Classic.
    * Découvrez la nouvelle interface utilisateur Dynamic Media Classic.
-   * Faites la connaissance de `Georgia Myers`, responsable du succès client pour Adobe Experience Cloud.
+   * Faites la connaissance de `Georgia Myers`, responsable de la réussite client pour Adobe CX Enterprise.
 
 * **[Janvier 2020, numéro 1](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_01_2020_Jan.html?lang=fr)**
 

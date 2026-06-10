@@ -4,7 +4,7 @@ description: Découvrez comment accéder à Cloud Manager afin de pouvoir confi
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 90dcda6778ef3d3aca3163f649505902efeb2fd7
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 92%
@@ -58,7 +58,7 @@ Until you sign in to Cloud Manager as a system administrator with the **Business
 
 ## Accéder à Cloud Manager {#navigate-cloud-manager}
 
-1. Accédez à [&#128279;](https://experience.adobe.com/experiencemanager).
+1. Accédez à [](https://experience.adobe.com/experiencemanager).
 1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
 
 >[!NOTE]
@@ -82,13 +82,13 @@ Users with the **Business Owner** role receive a welcome email with a link to ge
 
 <!--
  OLD
-Alternatively, you can navigate to Cloud Manager's **Programs and Products** page from the Adobe Experience Cloud home page using these steps.
+Alternatively, you can navigate to Cloud Manager's **Programs and Products** page from the Adobe CX Enterprise home page using these steps.
 
-1. Navigate directly to [Adobe Experience Cloud](https://experience.adobe.com) and login using your Adobe ID.
+1. Navigate directly to [Adobe CX Enterprise](https://experience.adobe.com) and login using your Adobe ID.
 
-1. From the Adobe Experience Cloud home page, select **Experience Manager** to open the AEM home page.
+1. From the Adobe CX Enterprise home page, select **Experience Manager** to open the AEM home page.
 
-   ![Experience Cloud homepage](/help/journey-onboarding/assets/setup-resources2.png)
+   ![CX Enterprise homepage](/help/journey-onboarding/assets/setup-resources2.png)
 
 1. On the **Cloud Manager** tile, select **Launch**.
 
