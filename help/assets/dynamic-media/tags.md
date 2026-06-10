@@ -155,7 +155,7 @@ Une fois la configuration appropriée effectuée, vous pouvez ajouter la prise e
 
 Consultez [Ajout du code intégré Experience Platform Tags](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-in-websites/configure-tags/add-embed-code) pour en savoir plus sur l’utilisation du code intégré de la bibliothèque Experience Platform Tags.
 
-Pour en savoir plus sur l’utilisation de la fonction de code incorporé d’Experience Manager Dynamic Media, voir [ Incorporation de la visionneuse de vidéos ou d’images dans une page web ](/help/assets/dynamic-media/embed-code.md).
+Pour en savoir plus sur l’utilisation de la fonction de code incorporé d’Experience Manager Dynamic Media, voir [&#x200B; Incorporation de la visionneuse de vidéos ou d’images dans une page web &#x200B;](/help/assets/dynamic-media/embed-code.md).
 
 **Suivi des visionneuses Dynamic Media à l’aide du code incorporé :**
 
@@ -502,7 +502,7 @@ Une fois Experience Platform Tags configuré, les éléments suivants sont confi
 
 **Pour configurer Experience Platform Tags en vue de l’intégration :**
 
-1. Commencez par accéder à Experience Platform Tags à partir de la page d’accueil de l’entreprise CX [](https://experience.adobe.com/#/home). Dans la barre de menus, cliquez sur ![Icône Applications, solutions](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) **Solutions** dans le coin supérieur droit de la page, puis cliquez sur **[!UICONTROL Balises]**.
+1. Commencez par accéder à Experience Platform Tags à partir de la page d’accueil de l’entreprise CX [&#128279;](https://experience.adobe.com/#/home). Dans la barre de menus, cliquez sur ![Icône Applications, solutions](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) **Solutions** dans le coin supérieur droit de la page, puis cliquez sur **[!UICONTROL Balises]**.
 
    ![image2019-7-8_15-38-44](assets/image2019-7-8_15-38-44.png)
 
