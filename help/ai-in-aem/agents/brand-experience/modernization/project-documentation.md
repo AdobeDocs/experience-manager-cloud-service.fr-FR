@@ -4,9 +4,9 @@ description: Découvrez comment les compétences de documentation de l’agent d
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 111cc47d-085f-4cf4-81bc-332e6a31bbeb
-source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
+source-git-commit: c4f6edf58710aa03410e1828a2d8b61db0052255
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '472'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ Assurez-vous des points suivants avant d’utiliser cette compétence.
 
 Une fois les conditions préalables remplies, il vous suffit de demander à l’agent de créer la documentation de votre projet.
 
-1. Dans la conversation, demandez « Créer la documentation de ce projet ».
+1. Dans la conversation, demandez `Create documentation for this project`.
 1. Indiquez le nom de l’organisation du projet si l’agent le demande.
 1. L’agent vous demandera quelle documentation vous souhaitez créer. En règle générale, vous devez sélectionner **Tous**.
 

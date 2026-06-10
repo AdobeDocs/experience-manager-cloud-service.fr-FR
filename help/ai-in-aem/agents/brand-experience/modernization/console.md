@@ -4,9 +4,9 @@ description: Guide de référence de l’interface et des fonctionnalités de la
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
-source-git-commit: 95e3046fca3cc2ede57d9e1e9a4ff01a0ba566c3
+source-git-commit: c80a2ad29839eaf4d8ad940f9a90d8575e5230f1
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1332'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Guide de référence de l’interface et des fonctionnalités de la console de m
 
 ## Vue d’ensemble {#overview}
 
-La console de modernisation de l’expérience est un environnement de développement hébergé et assisté par l’IA pour Edge Delivery Services, exposé sous forme d’interface web à l’adresse [`aemcoder.adobe.io`.](https://aemcoder.adobe.io) Une fois connecté à son projet GitHub, vous pouvez commencer immédiatement à demander des modifications en langage naturel sans configuration supplémentaire ni configuration de l’environnement local.
+La console de modernisation de l’expérience est un environnement de développement hébergé et assisté par l’IA pour Edge Delivery Services, exposé sous la forme d’une interface web sur [`aemcoder.adobe.io`.](https://aemcoder.adobe.io) Une fois connecté à son projet GitHub, vous pouvez commencer immédiatement à demander des modifications en langage naturel sans configuration supplémentaire ni configuration de l’environnement local.
 
 >[!TIP]
 >
@@ -43,7 +43,7 @@ Les développeurs gardent le contrôle total sur les navires. Toutes les modific
 
 ## Navigation {#navigation}
 
-Après vous être connecté à la console à l’adresse [`aemcoder.adobe.io`,](https://aemcoder.adobe.io) vous accédez à l’écran d’accueil de la console.
+Après vous être connecté à la console à l’adresse [aemcoder.adobe.io](https://aemcoder.adobe.io) vous accédez à la [page d’accueil](#home-page) de la console. Une fois que vous avez commencé à discuter, vous accédez directement à la [page de conversation](#chat-page) lors des visites ultérieures de l’agent de modernisation de l’expérience.
 
 ![Écran d’accueil de la console &#x200B;](assets/console-home.png)
 
@@ -51,26 +51,20 @@ Après vous être connecté à la console à l’adresse [`aemcoder.adobe.io`,](
 
 La barre de menus supérieure affiche les éléments suivants :
 
-* Bouton **Ouvrir le menu** sur la gauche pour développer et réduire le détail du panneau latéral gauche
+* Titre **&#x200B;**&#x200B;sur la gauche qui renvoie à la page d&#39;accueil lorsque l&#39;utilisateur clique dessus
+* Un bouton **Demander l’assistance** où vous pouvez envoyer des détails sur les problèmes rencontrés
 * Un bouton **Compte** à droite pour passer en mode sombre et vous déconnecter de la console
 
-### Barre latérale gauche {#sidebar}
+## Page d’accueil {#home-page}
 
-La barre latérale gauche permet d’accéder rapidement aux vues importantes de la console.
-
-* **[Vue d’accueil](#home-view)** (icône maison) - Votre point de départ pour utiliser la console
-* **[Affichage du contenu](#content-view)** (icône de fichier) - Contenu que vous avez importé
-* **[Affichage du code](#code-view)** (icône `</>`) - Code du site sur lequel vous travaillez
-* **[Vue Paramètres](#settings-view)** (icône d’engrenage) - Paramètres de la console
-
-## Affichage de l’accueil {#home-view}
-
-La vue **Accueil** est le point de départ pour utiliser la console.
+La page **Accueil** est le point de départ pour utiliser la console.
 
 * En haut se trouve une [entrée d’invite](#prompt-input) pour envoyer des requêtes à la console.
 * Sous le panneau d’invite se trouvent des invites pour commencer votre projet.
+* Un bouton **Commencer à discuter** qui vous mène à la [page de conversation](#chat-page).
+* Un bouton **Paramètres** pour accéder à la page [paramètres du projet](#settings-page)
 
-### Invite de saisie {#prompt-input}
+### Invite d&#39;entrée {#prompt-input}
 
 L’entrée rapide fournit des commandes pour interagir avec l’IA.
 
@@ -78,92 +72,92 @@ L’entrée rapide fournit des commandes pour interagir avec l’IA.
    * **Mode Plan** : l’IA analyse les requêtes et décrit une approche sans apporter de modifications, ce qui est utile pour comprendre la stratégie avant la validation.
    * **Mode d’exécution** : l’IA exécute le plan et apporte des modifications réelles au fichier.
 * **Joindre les fichiers** (icône de trombone) : chargez et joignez des fichiers à l’invite pour obtenir un contexte supplémentaire (par exemple, conceptions de référence, captures d’écran, spécifications).
+* **File d’attente des invites** (icône d’horloge) : d’autres invites peuvent être mises en file d’attente pour être automatiquement exécutées une fois l’invite en cours terminée.
 
-## Mode Contenu {#content-view}
+## Page de conversation {#chat-page}
 
-La **vue Contenu** fournit des outils pour parcourir et prévisualiser le contenu. Par défaut, la vue est divisée en trois panneaux, de gauche à droite :
+La page [**Chat**](https://aemcoder.adobe.io/chat) est la principale interface permettant d’interagir avec l’agent de modernisation de l’expérience. Cette page est divisée en un panneau redimensionnable [panneau de conversation](#chat-panel) et [panneau d’espace de travail.](#workspace-panel)
 
-* Panneau d’invite pour interagir avec la console et le projet
-* Explorateur de fichiers pour un aperçu de vos fichiers de contenu (basculement affichant ce panneau avec l’icône en forme de chevron)
-* Panneau d’aperçu pour visualiser le contenu sélectionné dans l’explorateur de fichiers
-
-![Vue Contenu](assets/content-imported.png)
-
-### Panneau de conversation {#chat-panel}
+## Panneau de conversation {#chat-panel}
 
 Le panneau de conversation vous permet d’afficher et de poursuivre votre conversation avec l’agent de modernisation de l’expérience. Le panneau de conversation comprend l’historique des messages de conversation et une [entrée d’invite](#prompt-input) pour envoyer des requêtes supplémentaires à la console.
+
+L’en-tête du panneau de conversation comprend des liens permettant d’accéder aux vues [Accueil](#home-page) et [Paramètres](#settings-page) et aux actions de conversation.
 
 * **Actions de conversation**
    * **Effacer la conversation** : permet de réinitialiser la conversation et d’effacer la fenêtre contextuelle de l’IA. Utilisez cette option pour démarrer une nouvelle tâche sans rapport avec la conversation précédente.
    * **Télécharger le chat** : télécharge l’historique des conversations sous forme de fichier Markdown.
 
-### Panneau Aperçu {#preview-panel}
+## Panneau Workspace {#workspace-panel}
 
-Le panneau d’aperçu propose jusqu’à quatre modes :
+Le panneau Espace de travail affiche tout le contenu et le code de votre site. L’en-tête situé en haut du panneau comprend un sélecteur permettant de sélectionner l’affichage sur lequel vous souhaitez placer le focus. Les actions disponibles dans l’en-tête de l’espace de travail changeront en fonction de la vue actuellement sélectionnée.
+
+### Vues du contenu {#content-view}
+
+Les **vues de contenu** contiennent plusieurs modes d’affichage du contenu de page sélectionné. Un navigateur de fichiers réductible affiche tout le contenu de page disponible pour votre site.
 
 * **Aperçu** (document avec icône de loupe) pour visualiser le contenu HTML rendu
-   * **Vue réactive** pour afficher le contenu HTML rendu dans une vue de bureau, tablette ou mobile
-   * **Mode de conception** (icône de pinceau) pour ajouter des éléments de la page à votre invite pour un contexte supplémentaire
 * **Vue Document** (icône de document) pour afficher la structure de contenu de création de documents sous-jacente, respectivement
-* **Vue Markdown (création AEM)** (icône de code) pour afficher la structure de contenu Markdown sous-jacente
+* **vue** (icône de code) pour afficher le html brut brut
+* **Mode Markdown (création AEM)** (icône de paragraphe) pour afficher la structure de contenu Markdown sous-jacente
 * **Vue XML JCR (création AEM)** (icône de données) pour afficher la structure de contenu XML JCR résultante
 
-Vous pouvez toujours cliquer sur l’icône **Actualiser l’aperçu** pour mettre à jour le panneau d’aperçu.
+![Vue Contenu](assets/content-imported.png)
 
-Le bouton **Supprimer** supprime la page sélectionnée de l’espace de travail. Le contenu prévisualisé ou publié ne sera pas supprimé.
+Les actions suivantes sont disponibles dans les vues de contenu :
 
-Le bouton **Erreurs** (création dans AEM) ouvre une fenêtre modale pour afficher les erreurs sur la page sélectionnée.
+* Icône **Actualiser** pour mettre à jour le rendu du panneau d’aperçu.
+* **Mode réactif** pour afficher le contenu HTML rendu en mode bureau, tablette ou mobile
+* **Mode Inspecteur** (icône sélectionner) pour ajouter des éléments de la page à votre invite de contexte supplémentaire
+* **Nouvelle fenêtre** (icône Ouvrir dans) pour ouvrir l’URL d’aperçu dans un nouvel onglet (pour un aperçu complet sur le bureau)
+* **Supprimer** supprime la page sélectionnée de l’espace de travail. Le contenu prévisualisé ou publié ne sera pas supprimé.
+* Le bouton **Erreurs** (création dans AEM) ouvre une fenêtre modale pour afficher les erreurs sur la page sélectionnée.
+* Le bouton **Charger le contenu** ouvre une fenêtre modale pour charger des fichiers vers AEM.
 
-Le bouton **Télécharger le contenu** ouvre une fenêtre modale pour télécharger des fichiers vers AEM.
+![Charger le contenu](assets/upload-content.png)
 
-* Les champs **Organisation** et **Référentiel** sont préremplis si votre projet comporte un fichier `fstab.yaml`
-* La sélection de fichiers fournit des chemins d’accès cibles modifiables
-* Le chargement vers JCR (pour l’éditeur universel) n’est pas pris en charge
+### Vues du code {#code-view}
 
-![Chargement du contenu](assets/upload-content.png)
+Les **vues de code** fournissent des outils permettant de parcourir vos fichiers de projet et de gérer les modifications de code. La vue comprend un explorateur de fichiers pour obtenir un aperçu de vos fichiers de code ou de vos modifications en tant que diffs, ainsi qu’une zone d’aperçu pour afficher le ou les fichiers sélectionnés.
 
-## Affichage du code {#code-view}
-
-L’**affichage du code** fournit des outils pour parcourir le code et gérer les modifications de code. La vue est divisée en trois panneaux, de gauche à droite :
-
-* Panneau de conversation pour interagir avec la console et le projet
-* Explorateur de fichiers pour un aperçu de vos fichiers de code ou de vos modifications en tant que diffs
-* Panneau d’aperçu pour afficher un fichier de code ou les modifications sélectionnées dans l’explorateur de fichiers
+* **Fichiers** pour parcourir les fichiers de code dans l’espace de travail actuel.
+* **Modifications** pour afficher les différences des modifications de fichiers créées par votre travail sur le projet
 
 ![Affichage du code](assets/code-view.png)
 
-Le panneau d’aperçu propose deux modes différents :
+#### Actions sur le fichier {#file-actions}
 
-* **Fichiers** pour parcourir les fichiers de code dans l&#39;espace de travail actuel
-   * Utilisez le bouton **Ajouter au chat** pour ajouter le fichier au panneau de chat pour le contexte.
-* **Modifications Git** pour afficher les différences entre les modifications de fichiers créées par votre travail sur le projet
-   * Cliquez sur l’icône `+` pour préparer le fichier modifié
-   * Cliquez sur l’icône de flèche pour ignorer le fichier modifié
+* **Ajouter au chat** ajoute le fichier sélectionné (ou les lignes sélectionnées du fichier) au panneau de chat pour le contexte.
+* **Télécharger** téléchargez le fichier sélectionné vers votre système de fichiers local
 
-L’icône **Informations** répertorie le compte et le projet GitHub actuellement connectés.
+#### Actions sur les modifications {#changes-actions}
 
-Le menu **Actions GitHub** (en haut à droite) fournit des opérations sur le référentiel.
-
-* **Connexion/Reconnexion** : lance GitHub OAuth.
-* **Changer de référentiel** : remplace l’espace de travail par un autre référentiel. Tout travail non engagé sera perdu.
+* **Ajouter** (icône +) pour préparer le fichier modifié
+* **Ignorer** (icône de flèche) pour ignorer le fichier modifié
+* **Supprimer** (icône de corbeille) pour supprimer le fichier non intermédiaire
+* **Actualiser** (icône actualiser) pour actualiser la liste des modifications
 * **Changer de branche** : change de branche dans le même référentiel
 * **Sync** : extrait les dernières modifications de l’origine distante.
 * **Push** : ouvre une boîte de dialogue modale pour pousser les modifications de l’espace de travail vers GitHub
-* **Déconnexion** : se déconnecte de GitHub
 
 Lors de l’envoi des modifications, vous devez d’abord disposer de modifications intermédiaires à inclure dans l’envoi. Lors du transfert, vous pouvez choisir de créer une requête de tirage ou de transférer directement vers la branche actuelle
 
 ![Intégrer les modifications](assets/push-changes.png)
 
-## Mode Paramètres {#settings-view}
+D’autres actions de projet GitHub peuvent être effectuées sur la page [paramètres](#settings-page).
 
-La vue Paramètres permet de gérer les paramètres de base de la console. Elle est divisée en plusieurs sections.
+## Page des paramètres {#settings-page}
+
+La page [**Paramètres** &#x200B;](https://aemcoder.adobe.io/settings) vous permet de gérer les paramètres de base de la console. Elle est divisée en plusieurs sections, comme suit :
 
 ![Vue Paramètres](assets/settings-view.png)
 
-Si vous apportez une modification à une valeur d’une section, cliquez sur **Enregistrer** pour enregistrer ces modifications dans la section concernée.
+Si vous apportez une modification à une valeur d’une section, cliquez sur **Enregistrer** pour enregistrer ces modifications dans la section concernée. Cliquez sur l’icône Précédent pour revenir à la vue précédente.
 
-* **Projet** vous permet d’afficher et de modifier les paramètres du projet, tels que la personnalisation de l’URL de la bibliothèque.
+* **Projet** vous permet d’afficher et de modifier les paramètres du projet, tels que la gestion de votre connexion GitHub et la personnalisation de l’URL de la bibliothèque.
+   * **Connexion/Reconnexion** : lance l’authentification GitHub.
+   * **Changer de référentiel** : remplace l’espace de travail par un autre référentiel. Tout travail non engagé sera perdu.
+   * **Déconnexion** : se déconnecte de GitHub
    * **URL de bibliothèque** - Cette URL pointe vers un fichier library.json qui définit les blocs disponibles, leurs variantes et un exemple de contenu.
    * **URL de base du site** - URL d’origine du site web en cours de migration
 * **Autorisations de l’agent** - Autoriser l’agent à accéder aux options de configuration
