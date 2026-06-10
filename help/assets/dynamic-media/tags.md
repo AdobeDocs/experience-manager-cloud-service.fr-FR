@@ -1,15 +1,15 @@
 ---
-title: Intégration de visionneuses Dynamic Media à Adobe Analytics et Experience Platform Tags
-description: En savoir plus sur l’extension Visionneuses Dynamic Media pour Experience Platform Tags et les visionneuses Dynamic Media 5.13. Elle permet aux clients Adobe Analytics et utilisateurs de balises Platform d’utiliser des événements et des données spécifiques aux visionneuses dans leur configuration Experience Platform Tags.
+title: Intégration de visionneuses Dynamic Media à Adobe Analytics et Experience Platform Tags
+description: Découvrez l’extension Visionneuses Dynamic Media pour les balises Experience Platform et les visionneuses Dynamic Media 5.13. Elle permet aux clients Adobe Analytics et Platform Tags d’utiliser des événements et des données spécifiques aux visionneuses Dynamic Media dans leur configuration Experience Platform Tags.
 contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 90dcda6778ef3d3aca3163f649505902efeb2fd7
 workflow-type: tm+mt
-source-wordcount: '6673'
-ht-degree: 83%
+source-wordcount: '6962'
+ht-degree: 80%
 
 ---
 
@@ -36,7 +36,7 @@ Pour en savoir plus sur les extensions d’Adobe ou les extensions tierces, voir
 * L’intégration Experience Platform Tags pour les visionneuses Dynamic Media ne fonctionne pas dans le nœud d’auteur d’Experience Manager. Vous ne pouvez pas afficher de suivi à partir d’une page WCM tant qu’elle n’est pas publiée.
 * L’intégration des balises Experience Platform pour les visionneuses Dynamic Media n’est pas prise en charge en mode d’exploitation « pop-up », lorsque l’URL de la visionneuse est obtenue à l’aide du bouton « URL » depuis la page Détails de la ressource.
 * L’intégration Experience Platform Tags ne peut pas être utilisée simultanément avec l’intégration des visionneuses Analytics héritées (via le paramètre `config2=`).
-* La prise en charge du suivi vidéo se limite au suivi de la lecture principale uniquement, comme décrit dans [Présentation du suivi](https://experienceleague.adobe.com/fr/docs/media-analytics/using/tracking/track-core-overview#player-events). En particulier, le suivi de la qualité de service, des publicités, des chapitres/segments ou des erreurs n’est pas pris en charge.
+* La prise en charge du suivi vidéo se limite au suivi de la lecture principale uniquement, comme décrit dans [Présentation du suivi](https://experienceleague.adobe.com/en/docs/media-analytics/using/tracking/track-core-overview#player-events). En particulier, le suivi de la qualité de service, des publicités, des chapitres/segments ou des erreurs n’est pas pris en charge.
 * La configuration de la durée de stockage n’est pas prise en charge pour les éléments de données à l’aide de l’extension *Visionneuses Dynamic Media*. La durée de stockage doit être définie sur **[!UICONTROL Aucune]**.
 
 ### Cas d’utilisation de l’intégration {#use-cases-for-the-integration}
@@ -53,7 +53,7 @@ Voir [Suivi des visionneuses Dynamic Media à l’aide du code incorporé](#trac
 
 L’intégration tire parti de deux types distincts et indépendants de suivi des visionneuses Dynamic Media : *Adobe Analytics* et *Adobe Analytics for Audio and Video*.
 
-### À propos du suivi à l’aide d’Adobe Analytics  {#about-tracking-using-adobe-analytics}
+### À propos du suivi à l’aide d’Adobe Analytics {#about-tracking-using-adobe-analytics}
 
 Adobe Analytics vous permet d’effectuer le suivi des actions qu’un utilisateur effectue lorsqu’il interagit avec les visionneuses Dynamic Media de votre site web. Adobe Analytics vous permet également d’effectuer le suivi des données propres à la visionneuse. Vous pouvez, par exemple, effectuer le suivi et enregistrer les événements de chargement des vues avec le nom de la ressource, les actions de zoom survenues et les actions de lecture vidéo.
 
@@ -127,11 +127,11 @@ L’exemple de configuration suivant dans Experience Platform Tags montre comm
 
 ### À propos d’Adobe Analytics for Audio and Video {#about-adobe-analytics-for-audio-and-video}
 
-Lorsqu’un compte Experience Cloud est abonné pour utiliser Adobe Analytics for Audio and Video, il suffit d’activer le suivi vidéo dans les paramètres d’extension *Visionneuses Dynamic Media*. Les mesures vidéo sont alors disponibles dans Adobe Analytics. Le suivi vidéo dépend de la présence de l’extension Adobe Media Analytics for Audio and Video.
+Lorsqu’un compte d’entreprise CX est abonné à Adobe Analytics for Audio and Video, il suffit d’activer le suivi vidéo dans les paramètres de l’extension *Visionneuses Dynamic Media*. Les mesures vidéo sont alors disponibles dans Adobe Analytics. Le suivi vidéo dépend de la présence de l’extension Adobe Media Analytics for Audio and Video.
 
 Voir [Installation et configuration des extensions](#installing-and-setup-of-extensions).
 
-À l’heure actuelle, la prise en charge du suivi vidéo se limite au suivi de la lecture principale uniquement, comme décrit dans [Présentation du suivi](https://experienceleague.adobe.com/fr/docs/media-analytics/using/tracking/track-core-overview#player-events). En particulier, le suivi de la qualité de service, des publicités, des chapitres/segments ou des erreurs n’est pas pris en charge.
+À l’heure actuelle, la prise en charge du suivi vidéo se limite au suivi de la lecture principale uniquement, comme décrit dans [Présentation du suivi](https://experienceleague.adobe.com/en/docs/media-analytics/using/tracking/track-core-overview#player-events). En particulier, le suivi de la qualité de service, des publicités, des chapitres/segments ou des erreurs n’est pas pris en charge.
 
 ## Utilisation de l’extension Visionneuses Dynamic Media {#using-the-dynamic-media-viewers-extension}
 
@@ -421,7 +421,7 @@ En outre, si cette solution d’intégration est utilisée avec Experience Mana
 * [Adobe Developer Console](https://developer.adobe.com/console/home) : l’intégration est créée pour les balises Experience Platform.
 * Nœud d’auteur Experience Manager - Configuration IMS et Configuration du cloud Experience Platform Tags.
 
-Pour la configuration, assurez-vous d’avoir accès à une société dans Adobe Experience Cloud pour laquelle Adobe Analytics et Experience Platform Tags déjà activés.
+Pour la configuration, assurez-vous d’avoir accès à une société dans Adobe CX Enterprise pour laquelle Adobe Analytics et Experience Platform Tags sont déjà activés.
 
 ## Configuration d’Adobe Analytics pour l’intégration {#configuring-adobe-analytics-for-the-integration}
 
@@ -435,7 +435,7 @@ Consultez également le [Guide de mise en œuvre d’Analytics](https://experien
 
 **Pour configurer Adobe Analytics en vue de l’intégration** :
 
-1. Commencez par accéder à Adobe Analytics à partir de la [page d’accueil](https://experience.adobe.com/#/home) d’Experience Cloud. Dans la barre de menus, cliquez sur ![Icône Applications, solutions](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) **Solutions** dans le coin supérieur droit de la page, puis sélectionnez **[!UICONTROL Analytics]**.
+1. Commencez par accéder à Adobe Analytics à partir de la page d’accueil CX Enterprise [home page](https://experience.adobe.com/#/home). Dans la barre de menus, cliquez sur ![Icône Applications, solutions](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) **Solutions** dans le coin supérieur droit de la page, puis sélectionnez **[!UICONTROL Analytics]**.
 
    ![2019-07-22_18-08-47](assets/2019-07-22_18-08-47.png)
 
@@ -502,7 +502,7 @@ Une fois Experience Platform Tags configuré, les éléments suivants sont confi
 
 **Pour configurer Experience Platform Tags en vue de l’intégration :**
 
-1. Commencez par accéder à Experience Platform Tags à partir de la [page d’accueil](https://experience.adobe.com/#/home) d’Experience Cloud. Dans la barre de menus, cliquez sur ![Icône Applications, solutions](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) **Solutions** dans le coin supérieur droit de la page, puis cliquez sur **[!UICONTROL Balises]**.
+1. Commencez par accéder à Experience Platform Tags à partir de la page d’accueil de l’entreprise CX [&#128279;](https://experience.adobe.com/#/home). Dans la barre de menus, cliquez sur ![Icône Applications, solutions](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) **Solutions** dans le coin supérieur droit de la page, puis cliquez sur **[!UICONTROL Balises]**.
 
    ![image2019-7-8_15-38-44](assets/image2019-7-8_15-38-44.png)
 
@@ -533,11 +533,11 @@ Pour installer une extension, cliquez sur **[!UICONTROL Installer]**. Si nécess
 
 Le cas échéant, les extensions suivantes doivent être installées et configurées :
 
-* (Obligatoire) Extension *Experience Cloud ID Service*
+* (Obligatoire) Extension *Service CX Enterprise ID*
 
 Aucune configuration supplémentaire n’est nécessaire, à l’exception des valeurs proposées. Lorsque vous avez terminé, veillez à cliquer sur **[!UICONTROL Enregistrer]**.
 
-Voir [Extension du service d’identités Experience Cloud](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/id-service/overview).
+Voir Extension [CX Enterprise Identity Service](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/id-service/overview).
 
 * (Obligatoire) Extension *Adobe Analytics*
 
@@ -806,7 +806,7 @@ Par exemple, `https://ims-na1.adobelogin.com/`
 
    * **[!UICONTROL Configuration de l’IMS Adobe associée]** : sélectionnez la configuration IMS que vous avez créée précédemment dans [Configurer l’IMS Experience Manager](#configuring-aem-ims).
 
-   * **[!UICONTROL Société]** : dans la liste déroulante **[!UICONTROL Société]**, sélectionnez votre société Experience Cloud. La liste est renseignée automatiquement.
+   * **[!UICONTROL Société]** - Dans la liste déroulante **[!UICONTROL Société]**, sélectionnez votre société CX Enterprise. La liste est renseignée automatiquement.
 
    * **[!UICONTROL Propriété]** : dans la liste déroulante Propriété, sélectionnez la propriété Experience Platform Tags que vous avez créée précédemment. La liste est renseignée automatiquement.
 
