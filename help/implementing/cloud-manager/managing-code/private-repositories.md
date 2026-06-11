@@ -4,9 +4,9 @@ description: Découvrez comment configurer Cloud Manager pour utiliser vos prop
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 18511b9e809cb4aa372fd04213d555dc669bbb0d
+source-git-commit: 01bd83a9285158ba2d3ce840bccf8bef1b1f37a8
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1082'
 ht-degree: 28%
 
 ---
@@ -18,44 +18,13 @@ En configurant Cloud Manager pour l’intégration à votre cloud GitHub privé 
 >[!IMPORTANT]
 >Cloud Manager valide la propriété du référentiel GitHub de l’une des deux façons suivantes, selon l’emplacement d’hébergement du référentiel :
 >
->* Cette page d’instructions s’applique aux référentiels hébergés sur `github.com`, y compris les déploiements GitHub Enterprise Cloud hébergés sur `github.com`. Ces référentiels utilisent l’application GitHub d’Adobe pour valider la propriété. Aucune configuration webhook n’est requise, car Cloud Manager s’intègre directement via l’application.
+>* Cette page s’applique aux référentiels hébergés sur `github.com`, y compris les déploiements GitHub Enterprise Cloud hébergés sur `github.com`. Ces référentiels utilisent l’application GitHub d’Adobe pour valider la propriété. Aucune configuration webhook n’est requise, car Cloud Manager s’intègre directement via l’application.
 >* Si vous souhaitez ajouter l’un des types de référentiels suivants, voir [Ajouter des référentiels externes dans Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md). Ces référentiels utilisent un PAT (Personal Access Token) et un webhook configuré manuellement pour valider la propriété.
 >
 >   * Référentiels GitHub Enterprise Server (version auto-hébergée de GitHub).
 >   * Référentiels GitLab (`gitlab.com` et la version auto-hébergée de GitLab).
 >   * Référentiels Bitbucket (uniquement `bitbucket.org`, version cloud). La version auto-hébergée de Bitbucket a été abandonnée le 15 février 2024.
 >   * Référentiels DevOps (`dev.azure.com`) d’Azure.
-
-<!--
->[!NOTE]
->
->You can also add the following repository types with webhooks:
->
->* GitHub Enterprise Server (self-hosted version of GitHub) repositories .
->* GitLab (both `gitlab.com` and self-hosted versions of GitLab) repositories.
->* Bitbucket (both `bitbucket.org` and Bitbucket Server, the self-hosted version of BitBucket) repositories. 
->* Azure DevOps (both [dev.azure.com](https://azure.microsoft.com/en-us/products/devops/?nav=min) and self-hosted versions of Azure DevOps) repositories.
->
->See [Add External Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
--->
-
-<!--
- CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
-
-* **Direct Integration**: With this setup, you can directly link your private GitHub repositories to Cloud Manager, allowing for seamless code validation, deployment, and CI/CD (Continuous Integration/Continuous Deployment) pipelines without needing to maintain a separate sync process with Adobe's default Git repository.
-
-* **Customization and Autonomy**: Companies often prefer managing their own source code repositories for security, control, and integration purposes. "Build your own GitHub" allows organizations to maintain their internal development processes while leveraging the full functionality of Cloud Manager for building, testing, and deploying AEM (Adobe Experience Manager) applications.
-
-* **Simplified Workflow**: It reduces the overhead of synchronizing code between multiple repositories by allowing Cloud Manager to access the organization's private repository directly, making the development cycle faster and more efficient.
-
-* **CI/CD Pipelines**: Teams can still benefit from Adobe Cloud Manager's automated build, test, and deployment processes, as the integration allows the CI/CD pipelines to pull code from the organization's own GitHub repository.
-
-In essence, a "Build your own GitHub" in Adobe Cloud Manager empowers teams to manage their own GitHub repositories while still using the robust deployment and validation capabilities of Cloud Manager.
-
->[!NOTE]
->
->This feature is exclusive to public GitHub. Support for self-hosted GitHub is not available.
--->
 
 ## Configuration {#configuration}
 
