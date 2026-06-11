@@ -4,10 +4,10 @@ description: Découvrez comment ajouter, afficher et supprimer vos référentiel
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2089473457cc2f8e4dc935dde40d075ec5b62011
+source-git-commit: fcdb7bb423500a5c17149ccb5913a2bb3330b073
 workflow-type: tm+mt
 source-wordcount: '891'
-ht-degree: 63%
+ht-degree: 62%
 
 ---
 
@@ -83,7 +83,7 @@ Lorsque vous consultez vos référentiels dans la fenêtre **Référentiels**, v
 
 La fenêtre **Informations sur le référentiel** s’ouvre et affiche les détails. Pour plus d’informations sur l’accès aux informations du référentiel, voir la section [Accéder aux informations du référentiel](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
-## Vérifier les branches / Créer un projet {#check-branches}
+## Vérifier les branches / Créer un projet {#check-branches}
 
 Dans **AEM Cloud Manager**, l’action **Vérifier les branches / Créer un projet** a deux objectifs, selon l’état actuel du référentiel.
 
@@ -96,7 +96,7 @@ Dans **AEM Cloud Manager**, l’action **Vérifier les branches / Créer un 
 
 L’action **Copier l’URL du référentiel** copie l’URL du référentiel sélectionné à la page **Référentiels** vers le Presse-papiers afin d’utiliser cette URL ailleurs.
 
-## Afficher et mettre à jour un référentiel {#view-update}
+## Affichage et mise à jour d’un référentiel {#view-update}
 
 L’action **Afficher et mettre à jour** ouvre la boîte de dialogue **Mettre à jour le référentiel**, dans laquelle vous pouvez afficher le **Nom** et l’**aperçu de l’URL du référentiel**. En outre, elle permet de mettre à jour la **description** du référentiel.
 
