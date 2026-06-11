@@ -4,9 +4,9 @@ description: Découvrez comment ajouter un référentiel externe dans Cloud Man
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: d36142c0569da782e12adbea9f36a44734a93aaf
+source-git-commit: 20e86bf332ee7a753287ac738dc090c771f444ea
 workflow-type: tm+mt
-source-wordcount: '2610'
+source-wordcount: '2612'
 ht-degree: 25%
 
 ---
