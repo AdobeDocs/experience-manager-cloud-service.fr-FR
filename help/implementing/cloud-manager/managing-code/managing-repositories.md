@@ -4,10 +4,10 @@ description: Découvrez comment ajouter, afficher et supprimer vos référentiel
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2089473457cc2f8e4dc935dde40d075ec5b62011
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 86%
+source-wordcount: '891'
+ht-degree: 63%
 
 ---
 
@@ -20,11 +20,12 @@ Découvrez comment afficher, ajouter et supprimer vos référentiels Git dans Cl
 
 Les référentiels de Cloud Manager servent à stocker et gérer le code de votre projet à l’aide de Git. Pour chaque *programme* que vous ajoutez, un référentiel géré par Adobe est automatiquement créé.
 
-En outre, vous avez la possibilité de créer d’autres référentiels gérés par Adobe ou d’ajouter vos propres référentiels privés. Tous les référentiels associés à votre programme peuvent être consultés sur la page **Référentiels**.
+En outre, vous avez la possibilité de créer d’autres référentiels gérés par Adobe ou vos propres référentiels autogérés hébergés chez un fournisseur Git externe. Pour les référentiels auto-gérés, les étapes d’intégration varient en fonction de l’emplacement d’hébergement de votre code. Les référentiels sur `github.com` utilisent l’application GitHub d’Adobe, tandis que les référentiels auto-hébergés et les autres référentiels externes utilisent un jeton d’accès personnel et un webhook. Tous les référentiels associés à votre programme peuvent être consultés sur la page **Référentiels**.
 
 Les référentiels créés dans Cloud Manager peuvent également être sélectionnés lors de l’ajout ou de la modification de pipelines. Pour plus d’informations sur la configuration des pipelines, voir [Pipelines CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
 Chaque pipeline est lié à un référentiel ou à une branche principale. Toutefois, grâce à la [prise en charge des sous-modules Git](git-submodules.md), de nombreuses branches secondaires peuvent être incluses au moment de la création.
+
 
 ## Afficher la page Référentiels {#repositories-window}
 
@@ -33,7 +34,7 @@ Dans la page **Référentiels**, vous pouvez afficher des détails sur le réfé
 Pour agir sur un référentiel sélectionné, vous pouvez cliquer sur le référentiel et utiliser l’![Icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) pour ouvrir un menu déroulant. Pour les référentiels gérés par Adobe, vous pouvez **[Vérifier les branches / Créer un projet](#check-branches)**.
 
 ![Actions du référentiel](assets/repository-actions.png)
-*Menu déroulant sur la page Référentiels.*
+*Menu déroulant de la page Référentiels.*
 
 Parmi les autres actions disponibles dans le menu déroulant, citons notamment **[Copier l’URL du référentiel](#copy-url)**, **[Afficher et mettre à jour](#view-update)** et **[Supprimer](#delete)** le référentiel.
 
@@ -48,21 +49,31 @@ Parmi les autres actions disponibles dans le menu déroulant, citons notamment *
    ![Page Référentiels](assets/repositories.png)
    *Page Référentiels dans Cloud Manager.*
 
-## Ajouter un référentiel {#adding-repositories}
+## Ajout d’un référentiel Adobe {#adding-repositories}
 
 Un utilisateur ou une utilisatrice doit disposer du rôle **Responsable de déploiement** ou **Propriétaire de l’entreprise** pour ajouter un référentiel.
 
-Sur la page **Référentiels**, près du coin supérieur droit, cliquez sur **Ajouter un référentiel**.
+Pour plus d’informations sur le choix entre les méthodes de référentiel privé et externe, voir [Ajouter un référentiel non Adobe](#add-non-adobe-repositories).
 
-![&#x200B; Boîte de dialogue Ajouter un référentiel &#x200B;](assets/repository-add.png)
-*Boîte de dialogue Ajouter un référentiel.*
+1. Sur la page **Référentiels**, près du coin supérieur droit, cliquez sur **Ajouter un référentiel**.
 
-Cloud Manager prend en charge deux types de référentiels : les référentiels gérés par Adobe (**Référentiel Adobe**) et les référentiels auto-gérés (**Référentiel privé**). Les champs requis pour le paramétrage varient en fonction du type de référentiel que vous choisissez d’ajouter. Pour plus d’informations, consultez les sections suivantes :
+   ![&#x200B; Boîte de dialogue Ajouter un référentiel &#x200B;](assets/repository-add.png)
+   *Boîte de dialogue Ajouter un référentiel.*
 
-* [Ajouter des référentiels Adobe dans Cloud Manager](adobe-repositories.md)
-* [Ajouter des référentiels privés dans Cloud Manager](private-repositories.md)
+1. Cliquez sur **Référentiel**. Voir [Ajout de référentiels Adobe dans Cloud Manager](adobe-repositories.md).
 
-Les référentiels sont limités à 300 pour tous les programmes d’une société ou d’une organisation IMS donnée.
+   Les référentiels sont limités à 300 pour tous les programmes d’une société ou d’une organisation IMS donnée.
+
+### Ajout d’un référentiel non Adobe {#add-non-adobe-repositories}
+
+Si vous hébergez votre code en dehors d’Adobe, la page d’instructions que vous utilisez et la méthode de validation de la propriété dépendent toutes deux de l’emplacement d’hébergement du référentiel. Utilisez le tableau suivant pour choisir le chemin d’accès correct.
+
+| Emplacement d’hébergement de votre référentiel | Méthode de validation | Page des instructions d’utilisation |
+| --- | --- | --- |
+| `github.com`, y compris les déploiements GitHub Enterprise Cloud hébergés sur `github.com` | Application GitHub Adobe et fichier secret. Aucun webhook requis. | [Ajouter un référentiel cloud GitHub privé dans Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) |
+| GitHub Enterprise Server (auto-hébergé) | Jeton d’accès personnel et webhook | [Ajouter des référentiels externes dans Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) |
+| DevOps GitLab, Bitbucket ou Azure | Jeton d’accès personnel et webhook | [Ajouter des référentiels externes dans Cloud Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/external-repositories) |
+
 
 ## Accéder aux informations du référentiel {#repo-info}
 
@@ -97,7 +108,7 @@ L’action **Supprimer** supprime le référentiel de votre projet. Un référen
 
 ![Supprimer](assets/repository-delete.png)
 
-La suppression d’un référentiel rend son nom inutilisable pour tout nouveau référentiel créé à l’avenir. Si vous tentez d’ajouter un référentiel en utilisant le même nom qu’un référentiel supprimé, vous rencontrez le message d’erreur suivant :
+La suppression d’un référentiel empêche son nom d’être utilisé pour tout nouveau référentiel créé à l’avenir. Si vous tentez d’ajouter un référentiel en utilisant le même nom qu’un référentiel supprimé, vous rencontrez le message d’erreur suivant :
 
 `Repository name should be unique within organization.`
 

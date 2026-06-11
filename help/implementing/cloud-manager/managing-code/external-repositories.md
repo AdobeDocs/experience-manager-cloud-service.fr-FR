@@ -4,10 +4,10 @@ description: Découvrez comment ajouter un référentiel externe dans Cloud Man
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 20e86bf332ee7a753287ac738dc090c771f444ea
+source-git-commit: 2089473457cc2f8e4dc935dde40d075ec5b62011
 workflow-type: tm+mt
-source-wordcount: '2612'
-ht-degree: 25%
+source-wordcount: '2683'
+ht-degree: 24%
 
 ---
 
@@ -22,10 +22,18 @@ Les clients peuvent désormais également intégrer leurs référentiels Git Dev
 * Pour les utilisateurs et utilisatrices d’Edge Delivery Services, le référentiel intégré peut être utilisé pour synchroniser et déployer le code du site.
 * Pour les utilisateurs et utilisatrices d’AEM as a Cloud Service et d’Adobe Managed Services (AMS), le référentiel peut être lié aux pipelines full stack et front-end.
 
-Cloud Manager valide la propriété du référentiel GitHub de l’une des deux façons suivantes, selon l’emplacement d’hébergement du référentiel :
-
-* Les référentiels GitHub Enterprise Server (auto-hébergés) utilisent un jeton d’accès personnel et un webhook. Cette page décrit cette méthode.
-* Les référentiels sur `github.com`, y compris les déploiements GitHub Enterprise Cloud hébergés sur `github.com`, utilisent l’application GitHub d’Adobe. Voir [Ajout d’un référentiel cloud GitHub privé dans Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md).
+>[!IMPORTANT]
+>
+>Cloud Manager valide la propriété du référentiel GitHub de l’une des deux façons suivantes, selon l’emplacement d’hébergement du référentiel :
+>
+>* Cette page d’instructions s’applique à l’ajout de l’un des types de référentiel suivants. Ces types de référentiel utilisent un PAT (Personal Access Token) et un webhook configuré manuellement pour valider la propriété.
+>
+>   * Référentiels GitHub Enterprise Server (version auto-hébergée de GitHub).
+>   * Référentiels GitLab (`gitlab.com` et la version auto-hébergée de GitLab).
+>   * Référentiels Bitbucket (uniquement `bitbucket.org`, version cloud). La version auto-hébergée de Bitbucket a été abandonnée le 15 février 2024.
+>   * Référentiels DevOps (`dev.azure.com`) d’Azure.
+>* Les référentiels hébergés sur `github.com`, y compris les déploiements GitHub Enterprise Cloud hébergés sur `github.com`, utilisent l’application GitHub d’Adobe pour valider la propriété. Aucune configuration webhook n’est requise, car Cloud Manager s’intègre directement via l’application. Voir [Ajouter un référentiel GitHub Enterprise Cloud privé dans Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md).
+>
 
 ## Configuration d’un référentiel externe
 
@@ -73,9 +81,9 @@ La configuration d’un référentiel externe dans Cloud Manager comprend les é
 
 1. Sélectionnez **Enregistrer** pour ajouter le référentiel.
 
-   Fournissez maintenant un jeton d’accès pour valider la propriété du référentiel externe.
+   Pour valider la propriété du référentiel externe, fournissez un jeton d’accès.
 
-1. Dans la boîte de dialogue **Validation de la propriété du référentiel privé**, fournissez un jeton d’accès pour valider la propriété du référentiel externe afin que vous puissiez y accéder, puis cliquez sur **Validation**.
+1. Dans la boîte de dialogue **Validation de la propriété du référentiel privé**, pour valider la propriété du référentiel externe afin de pouvoir y accéder, fournissez un jeton d’accès, puis cliquez sur **Validation**.
 
    ![Sélection d’un jeton d’accès existant pour un référentiel](/help/implementing/cloud-manager/managing-code/assets/repositories-exisiting-access-token.png)
    *Sélection d’un jeton d’accès existant pour un référentiel Bitbucket (à titre d’illustration uniquement).*
@@ -171,7 +179,7 @@ Par exemple, les webhooks permettent à Cloud Manager de déclencher des actions
 * Événements push : démarre les pipelines lorsque le déclencheur « En cas de validation Git » est activé.
 * Futures actions basées sur des commentaires : permettent des workflows, tels que le déploiement direct d’une requête de tirage vers un environnement de développement rapide (RDE).
 
-La configuration Webhook n’est pas requise pour les référentiels hébergés sur `gitub.com`, car Cloud Manager s’intègre directement via l’application GitHub.
+La configuration Webhook n’est pas requise pour les référentiels hébergés sur `github.com`, car Cloud Manager s’intègre directement via l’application GitHub.
 
 Pour tous les autres référentiels externes intégrés avec un jeton d’accès, tels que GitHub Enterprise Server, GitLab, Bitbucket et Azure DevOps, la configuration webhook est disponible et doit être configurée manuellement.
 
@@ -181,11 +189,11 @@ Pour tous les autres référentiels externes intégrés avec un jeton d’accès
 
 1. Dans la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme pour lequel vous souhaitez configurer un webhook pour un référentiel Git externe.
 
-1. Dans le coin supérieur gauche de la page, cliquez sur ![Icône Afficher le menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) pour afficher le menu de gauche.
+1. Dans le coin supérieur gauche de la page, cliquez sur ![Afficher l’icône de menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) pour afficher le menu latéral gauche.
 
 1. Dans le menu de gauche, sous l’en-tête **Programme**, cliquez sur ![Icône Composition du dossier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **Référentiels**.
 
-1. Sur la page **Référentiels**, à l’aide de la colonne **Type** pour vous guider dans votre sélection, localisez le référentiel souhaité, puis cliquez sur l’icône ![Points de suspension - Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en regard de celui-ci.
+1. Sur la page **Référentiels**, à l’aide de la colonne **Type** pour vous aider dans la sélection, localisez le référentiel de votre choix, puis cliquez sur l’icône ![Points de suspension - Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en regard de celui-ci.
 
    ![Configuration de l’option Webhook dans le menu déroulant d’un référentiel sélectionné](/help/implementing/cloud-manager/managing-code/assets/repository-config-webhook.png)
 
@@ -208,10 +216,10 @@ Collez le secret dans un fichier texte brut. Le secret copié est requis pour le
 1. Collez l’URL du Webhook que vous avez copiée précédemment dans le champ de texte de l’URL.
    1. Remplacez le paramètre de requête `api_key` dans l’URL du Webhook par votre propre clé API réelle.
 
-      Pour générer une clé API, vous devez créer un projet d’intégration dans Adobe Developer Console. Voir [Création d’un projet d’intégration d’API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) pour plus d’informations.
+      Pour générer une clé API, vous devez créer un projet d’intégration dans Adobe Developer Console. Voir [Création d’un projet d’intégration d’API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration) pour plus d’informations.
 
 1. Collez le secret Webhook que vous avez copié précédemment dans le champ de texte **Secret** (ou **Clé secrète** ou **Jeton secret**).
-1. Configurez le webhook pour envoyer les événements requis par Cloud Manager. Utilisez le tableau suivant pour déterminer les événements corrects pour votre fournisseur Git.
+1. Pour envoyer les événements requis par Cloud Manager, configurez le webhook. Utilisez le tableau suivant pour déterminer les événements corrects pour votre fournisseur Git.
 
 >[!BEGINTABS]
 
@@ -263,22 +271,22 @@ Le comportement varie en fonction du fournisseur Git que vous utilisez, comme in
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
-Lorsque la vérification est créée, elle ressemble à la capture d’écran ci-dessous. La principale différence avec `GitHub.com` est que `GitHub.com` utilise une exécution de vérification, tandis que GitHub Enterprise Server (à l’aide de jetons d’accès personnel) génère un statut de validation :
+Une fois la vérification créée, elle s’affiche comme dans la capture d’écran suivante. La principale différence avec `GitHub.com` est que `GitHub.com` utilise une exécution de vérification, tandis que GitHub Enterprise Server (à l’aide de jetons d’accès personnel) génère le statut de validation suivant :
 
-![Statut d’engagement pour indiquer le processus de validation PR sur GitHub Enterprise](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
+![Statut de validation pour indiquer le processus de validation PR sur GitHub Enterprise Server](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
 
 
 >[!TAB  GitLab ]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
-Les interactions GitLab reposent uniquement sur des commentaires. Lorsque la validation commence, un commentaire est ajouté. Une fois la validation terminée (qu’elle ait réussi ou échoué), le commentaire initial est supprimé et remplacé par un nouveau commentaire contenant les résultats de la validation ou les détails de l’erreur.
+Les interactions GitLab ne reposent que sur des commentaires. Lorsque la validation commence, un commentaire est ajouté. Une fois la validation terminée (qu’elle ait réussi ou échoué), le commentaire initial est supprimé et remplacé par un nouveau commentaire contenant les résultats de la validation ou les détails de l’erreur.
 
 Lorsque la validation de la qualité du code est en cours d’exécution :
 
 ![Lorsque la validation de la qualité du code est en cours d’exécution](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab1.png)
 
-Lorsque la validation de la qualité à froid est terminée :
+Lorsque la validation de la qualité du code est terminée :
 
 ![Lorsque la validation de la qualité à froid est terminée](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab2.png)
 

@@ -4,33 +4,27 @@ description: Découvrez comment configurer Cloud Manager pour utiliser vos prop
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 20e86bf332ee7a753287ac738dc090c771f444ea
+source-git-commit: 2089473457cc2f8e4dc935dde40d075ec5b62011
 workflow-type: tm+mt
-source-wordcount: '1106'
-ht-degree: 32%
+source-wordcount: '1083'
+ht-degree: 29%
 
 ---
 
-# Ajout d’un référentiel cloud GitHub privé dans Cloud Manager {#private-repositories}
+# Ajout d’un référentiel GitHub Enterprise Cloud privé dans Cloud Manager {#private-repositories}
 
 En configurant Cloud Manager pour l’intégration à votre cloud GitHub privé (référentiels hébergés sur `github.com`), vous pouvez valider votre code directement dans GitHub à l’aide de Cloud Manager. Cette configuration supprime l’exigence de synchroniser régulièrement votre code avec le référentiel Adobe.
 
-Cloud Manager valide la propriété du référentiel GitHub de l’une des deux façons suivantes, selon l’emplacement d’hébergement du référentiel :
-
-* Les référentiels sur `github.com`, y compris les déploiements GitHub Enterprise Cloud hébergés sur `github.com`, utilisent l’application GitHub d’Adobe. Cette page décrit cette méthode.
-* Les référentiels GitHub Enterprise Server (auto-hébergés) utilisent un PAT (jeton d’accès personnel) et un webhook. Voir [Ajouter des référentiels externes dans Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
-
-
->[!NOTE]
+>[!IMPORTANT]
+>Cloud Manager valide la propriété du référentiel GitHub de l’une des deux façons suivantes, selon l’emplacement d’hébergement du référentiel :
 >
->Cette page s’applique aux référentiels hébergés sur `github.com`, y compris les déploiements GitHub Enterprise Cloud hébergés sur `github.com`. Ces référentiels utilisent l’application GitHub d’Adobe pour valider la propriété. Aucune configuration webhook n’est requise, car Cloud Manager s’intègre directement via l’application.
+>* Cette page d’instructions s’applique aux référentiels hébergés sur `github.com`, y compris les déploiements GitHub Enterprise Cloud hébergés sur `github.com`. Ces référentiels utilisent l’application GitHub d’Adobe pour valider la propriété. Aucune configuration webhook n’est requise, car Cloud Manager s’intègre directement via l’application.
+>* Si vous souhaitez ajouter l’un des types de référentiels suivants, voir [Ajouter des référentiels externes dans Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md). Ces référentiels utilisent un PAT (Personal Access Token) et un webhook configuré manuellement pour valider la propriété.
 >
->Pour ajouter l’un des types de référentiel suivants, voir [Ajouter des référentiels externes dans Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md). Ces référentiels utilisent un PAT (Personal Access Token) et un webhook configuré manuellement pour valider la propriété.
->
->* GitHub Enterprise Server (la version auto-hébergée de GitHub)
->* GitLab (`gitlab.com` et la version auto-hébergée de GitLab)
->* Bitbucket (`bitbucket.org` uniquement, la version cloud)
->* Opérations de développement Azure (`dev.azure.com`)
+>   * Référentiels GitHub Enterprise Server (version auto-hébergée de GitHub).
+>   * Référentiels GitLab (`gitlab.com` et la version auto-hébergée de GitLab).
+>   * Référentiels Bitbucket (uniquement `bitbucket.org`, version cloud). La version auto-hébergée de Bitbucket a été abandonnée le 15 février 2024.
+>   * Référentiels DevOps (`dev.azure.com`) d’Azure.
 
 <!--
 >[!NOTE]
@@ -106,11 +100,11 @@ Vous pouvez désormais [valider la propriété du référentiel privé](#validat
 
 ### Validation de la propriété d’un référentiel GitHub privé {#validate-ownership}
 
-Cloud Manager connaît désormais votre référentiel GitHub, mais il doit toujours y accéder. Pour accorder l’accès, vous devez installer l’application GitHub d’Adobe et vérifier que vous êtes propriétaire du référentiel spécifié.
+Cloud Manager est désormais configuré avec votre référentiel GitHub, mais il nécessite toujours une autorisation d’accès au référentiel. Pour accorder l’accès, vous devez installer l’application GitHub d’Adobe et vérifier que vous êtes propriétaire du référentiel spécifié.
 
 **Pour valider la propriété d’un référentiel GitHub privé, procédez comme suit**
 
-1. Après avoir ajouté votre propre référentiel, suivez les étapes restantes de la boîte de dialogue **Validation de la propriété du référentiel privé**.
+1. Après avoir ajouté votre référentiel, suivez les étapes restantes de la boîte de dialogue **Validation de la propriété du référentiel privé**.
 
    ![Validation de la propriété du référentiel privé.](/help/implementing/cloud-manager/assets/repos/private-repo-validate.png)
 
@@ -119,25 +113,25 @@ Cloud Manager connaît désormais votre référentiel GitHub, mais il doit touj
    | **Étape 1 : application GitHub** | Cloud Manager utilise une application GitHub pour interagir en toute sécurité avec votre référentiel privé.<br>· Un propriétaire de votre organisation GitHub doit installer l’application située à l’adresse `https://github.com/apps/cloud-manager-for-aem` et accorder l’accès au référentiel.<br>· Pour plus d’informations sur l’installation et l’octroi de l’accès est terminé, consultez la documentation de GitHub. |
    | **Étape 2 : Fichier Secret** | Pour améliorer la sécurité, vous devez créer un fichier secret dans la branche par défaut de votre référentiel.<br>· Cliquez sur **Générer**, puis sur **Confirmer**. Cloud Manager génère le contenu du fichier privé dans le champ de texte **Contenu du fichier secret** <br>.· Cliquez sur ![Icône Copier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) pour copier le contenu de ce champ. Le contenu du fichier secret ne s’affichera qu’une seule fois. Si vous ne copiez pas le contenu avant de fermer cette boîte de dialogue, régénérez le secret. |
 
-1. Créez un fichier dans la branche par défaut de votre référentiel GitHub appelé :
+1. Créez un nouveau fichier nommé dans la branche par défaut de votre référentiel GitHub
 
    `.well-known/adobe/cloud-manager-challenge`
 
-1. Collez le contenu du fichier secret dans le nouveau fichier que vous venez de créer, puis enregistrez-le.
+1. Collez le contenu du fichier secret dans le nouveau fichier et enregistrez-le.
 
-   Une fois l’application installée et le fichier secret existant dans le référentiel, poursuivez l’étape.
+   Une fois l’application installée et le fichier secret existant dans le référentiel, poursuivez les étapes.
 
 1. Dans la boîte de dialogue **Validation de la propriété du référentiel privé**, cliquez sur **Valider**.
 
-L’application peut être installée et un fichier secret peut être créé dans n’importe quel ordre. Toutefois, vous devez effectuer les deux étapes avant de pouvoir valider.
+L’application peut être installée et un fichier secret peut être créé dans l’un ou l’autre ordre. Toutefois, vous devez effectuer les deux étapes avant de pouvoir valider.
 
-Jusqu’à la validation, le référentiel est répertorié avec une icône rouge indiquant qu’il n’est pas encore validé et qu’il ne peut pas encore être utilisé.
+Jusqu’à la validation, le référentiel est répertorié avec une icône rouge, indiquant qu’il n’est pas encore validé et n’est pas disponible pour être utilisé.
 
 ![Référentiel non validé.](/help/implementing/cloud-manager/assets/repos/unvalidated-repo.png)
 
 La colonne **Type** du tableau de la page **Référentiels** identifie les référentiels fournis par Adobe (**Adobe**) et vos propres référentiels privés (**GitHub**).
 
-Si vous devez revenir au référentiel ultérieurement pour terminer la validation, sur la page **Référentiels**, cliquez sur ![icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) dans la ligne représentant le référentiel GitHub que vous venez d’ajouter. Dans la liste déroulante, sélectionnez **Validation de la propriété**.
+Pour accéder au référentiel ultérieurement afin de terminer la validation, sur la page **Référentiels**, cliquez sur ![icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) dans la ligne représentant le référentiel GitHub que vous avez ajouté. Dans la liste déroulante, sélectionnez **Validation de la propriété**.
 
 
 
