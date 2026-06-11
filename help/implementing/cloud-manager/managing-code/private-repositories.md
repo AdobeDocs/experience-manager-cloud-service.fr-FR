@@ -4,9 +4,9 @@ description: Découvrez comment configurer Cloud Manager pour utiliser vos prop
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: d36142c0569da782e12adbea9f36a44734a93aaf
+source-git-commit: 20e86bf332ee7a753287ac738dc090c771f444ea
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1106'
 ht-degree: 32%
 
 ---
