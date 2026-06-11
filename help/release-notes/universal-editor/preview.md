@@ -4,9 +4,9 @@ description: Voici les notes de mise à jour de la version préliminaire de l’
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: ca134ec3e691e9e8a3f5609c786720c91780ceeb
+source-git-commit: be63e86bb0d677e03deded6d42af5020fee509de
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '193'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Notes de mise à jour de l’aperçu de l’éditeur universel {#preview}
 
-Voici les notes de mise à jour de la **version d’aperçu** de l’éditeur universel. Ces fonctionnalités sont actuellement disponibles dans l’environnement d’aperçu **de votre éditeur universel**. La mise à disposition de ces fonctionnalités est prévue pour le 11 juin 2026.
+Voici les notes de mise à jour de la **version d’aperçu** de l’éditeur universel. Ces fonctionnalités sont actuellement disponibles dans l’environnement d’aperçu **de votre éditeur universel**. La mise à disposition de ces fonctionnalités est prévue pour le 18 juin 2026.
 
 Ces notes de mise à jour **aperçu** sont fournies à titre indicatif pour que vous sachiez quelles modifications seront apportées à l’éditeur universel et que vous puissiez les tester en [passant à votre version d’aperçu.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -28,5 +28,8 @@ Ces notes de mise à jour **aperçu** sont fournies à titre indicatif pour que 
 
 ## Modifications à venir {#upcoming-improvements}
 
-* Correction d’un problème en raison duquel les nœuds vides n’étaient pas correctement supprimés du JCR lors de certaines opérations.
-* Les images décoratives sont désormais correctement masquées pour les technologies d’assistance.
+* Le bouton Rotation communique désormais correctement son état actuel aux technologies d’assistance.
+* Un état de chargement infini a été corrigé dans les situations où les fragments de contenu contiennent des onglets sans contenu.
+* Correction d’un bug en raison duquel un moteur de rendu se bloque dans certaines situations lors du rechargement de certains modèles.
+* Correction d’un bug en raison duquel certaines balises ne pouvaient pas être supprimées.
+* Le nom accessible du bouton Image en vedette ne contient plus d’informations en double.
