@@ -57,7 +57,7 @@ Pour plus d’informations sur le choix entre les méthodes de référentiel pri
 
 1. Sur la page **Référentiels**, près du coin supérieur droit, cliquez sur **Ajouter un référentiel**.
 
-   ![ Boîte de dialogue Ajouter un référentiel ](assets/repository-add.png)
+   ![&#x200B; Boîte de dialogue Ajouter un référentiel &#x200B;](assets/repository-add.png)
    *Boîte de dialogue Ajouter un référentiel.*
 
 1. Cliquez sur **Référentiel**. Voir [Ajout de référentiels Adobe dans Cloud Manager](adobe-repositories.md).
