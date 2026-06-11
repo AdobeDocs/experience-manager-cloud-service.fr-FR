@@ -4,10 +4,10 @@ description: Découvrez comment configurer Cloud Manager pour utiliser vos prop
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2089473457cc2f8e4dc935dde40d075ec5b62011
+source-git-commit: 18511b9e809cb4aa372fd04213d555dc669bbb0d
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 29%
+source-wordcount: '1084'
+ht-degree: 28%
 
 ---
 
@@ -134,7 +134,6 @@ La colonne **Type** du tableau de la page **Référentiels** identifie les réf�
 Pour accéder au référentiel ultérieurement afin de terminer la validation, sur la page **Référentiels**, cliquez sur ![icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) dans la ligne représentant le référentiel GitHub que vous avez ajouté. Dans la liste déroulante, sélectionnez **Validation de la propriété**.
 
 
-
 ## Utiliser des référentiels cloud GitHub privés avec Cloud Manager {#using}
 
 Une fois le référentiel GitHub validé dans Cloud Manager, l’intégration est terminée. Vous pouvez utiliser le référentiel avec Cloud Manager.
@@ -171,7 +170,7 @@ Les référentiels privés validés peuvent être associés à des [pipelines fu
 
 ## Limites {#limitations}
 
-Certaines limites s’appliquent lors de l’utilisation de référentiels privés avec Cloud Manager.
+Les restrictions suivantes s’appliquent lors de l’utilisation de référentiels privés avec Cloud Manager.
 
 * Aucune balise Git ne sera créée et transmise lors de l’utilisation de référentiels privés sur des pipelines de pile pleine de production.
 * Si l’application Adobe GitHub est supprimée de votre organisation GitHub, la fonction de validation des demandes d’extraction est supprimée pour tous les référentiels.
