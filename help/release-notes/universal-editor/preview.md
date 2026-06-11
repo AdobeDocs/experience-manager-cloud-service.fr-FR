@@ -4,7 +4,7 @@ description: Voici les notes de mise à jour de la version préliminaire de l’
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: be63e86bb0d677e03deded6d42af5020fee509de
+source-git-commit: fd128d2aa5bbd4c84b5ab438542ec696768b06a1
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 0%
@@ -33,3 +33,4 @@ Ces notes de mise à jour **aperçu** sont fournies à titre indicatif pour que 
 * Correction d’un bug en raison duquel un moteur de rendu se bloque dans certaines situations lors du rechargement de certains modèles.
 * Correction d’un bug en raison duquel certaines balises ne pouvaient pas être supprimées.
 * Le nom accessible du bouton Image en vedette ne contient plus d’informations en double.
+
