@@ -4,9 +4,9 @@ description: Découvrez comment ajouter un référentiel externe dans Cloud Man
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 2089473457cc2f8e4dc935dde40d075ec5b62011
+source-git-commit: 18511b9e809cb4aa372fd04213d555dc669bbb0d
 workflow-type: tm+mt
-source-wordcount: '2683'
+source-wordcount: '2682'
 ht-degree: 24%
 
 ---
@@ -26,7 +26,7 @@ Les clients peuvent désormais également intégrer leurs référentiels Git Dev
 >
 >Cloud Manager valide la propriété du référentiel GitHub de l’une des deux façons suivantes, selon l’emplacement d’hébergement du référentiel :
 >
->* Cette page d’instructions s’applique à l’ajout de l’un des types de référentiel suivants. Ces types de référentiel utilisent un PAT (Personal Access Token) et un webhook configuré manuellement pour valider la propriété.
+>* Cette page d’instructions s’applique à l’ajout de l’un des types de référentiel suivants. Ces types utilisent un PAT (Personal Access Token) et un webhook configuré manuellement pour valider la propriété.
 >
 >   * Référentiels GitHub Enterprise Server (version auto-hébergée de GitHub).
 >   * Référentiels GitLab (`gitlab.com` et la version auto-hébergée de GitLab).
@@ -171,7 +171,7 @@ Voir aussi [Gérer les jetons d’accès](/help/implementing/cloud-manager/manag
 
 ## Configuration d’un webhook pour un référentiel externe {#configure-webhook}
 
-Cloud Manager vous permet de configurer des webhooks pour les référentiels Git externes que vous avez ajoutés. Voir [&#x200B; Ajouter un référentiel externe &#x200B;](#add-ext-repo). Ces webhooks permettent à Cloud Manager de recevoir des événements liés à différentes actions dans votre solution de fournisseur Git.
+Cloud Manager vous permet de configurer des webhooks pour les référentiels Git externes que vous avez ajoutés. Voir [ Ajouter un référentiel externe ](#add-ext-repo). Ces webhooks permettent à Cloud Manager de recevoir des événements liés à différentes actions dans votre solution de fournisseur Git.
 
 Par exemple, les webhooks permettent à Cloud Manager de déclencher des actions en fonction d’événements tels que :
 
