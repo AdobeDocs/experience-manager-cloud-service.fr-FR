@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 4b0145191ec0e31e227b59b99d7dff098f57d9a2
+source-git-commit: 0bc06c164838c75f185363a2bf05512171c9bd41
 workflow-type: tm+mt
 source-wordcount: '2332'
 ht-degree: 27%
@@ -40,7 +40,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the May 2026 Release Overview video for a summary of the features added in the 2026.5.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3491492/?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3491490/?quality=12)
 
 -->
 
@@ -85,11 +85,11 @@ Voir [Programmes bêta AEM Foundation](#foundation-early-adopter).
 
 ### Cloud Manager (programmes Beta) {#cloud-manager-beta-programs}
 
-Voir [Programmes bêta &#x200B;](/help/implementing/cloud-manager/release-notes/current.md).
+Voir [Programmes bêta ](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### AEM Assets (programmes Beta) {#aem-assets-beta-programs}
 
-Voir [Programmes bêta &#x200B;](#assets-beta-program-features).
+Voir [Programmes bêta ](#assets-beta-program-features).
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -165,15 +165,15 @@ Accélérez votre migration d’AEM 6.5 (ou version antérieure) vers AEM as a C
 
 En savoir plus sur [l’outil d’IA dédiée à l’IDE pour la migration vers le cloud](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md) et sur d’autres [le développement local avec les outils d’IA](/help/ai-in-aem/local-development-with-ai-tools.md) (compétences des agents et serveurs MCP locaux).
 
->[!VIDEO](https://video.tv.adobe.com/v/3491440/?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3491438/?quality=12)
 
 #### Modifications de l’affichage du statut de la file d’attente de réplication {#replication-queue-status-display}
 
 Dans l’interface utilisateur de création, les agents de réplication affichent désormais deux files d’attente consolidées (**persistantes** et **entièrement publiées**) au lieu de files d’attente distinctes par capsule de publication, ce qui réduit la complexité tout en reflétant la mise à l’échelle automatique du niveau de publication.
 
-En savoir plus sur les [&#x200B; Files d’attente de réplication &#x200B;](/help/operations/replication.md#replication-queues).
+En savoir plus sur les [ Files d’attente de réplication ](/help/operations/replication.md#replication-queues).
 
-![Files d’attente de réplication affichant les files d’attente &#x200B;](/help/operations/assets/replication-queues.png " réplication persistantes et entièrement publiées")
+![Files d’attente de réplication affichant les files d’attente ](/help/operations/assets/replication-queues.png " réplication persistantes et entièrement publiées")
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Avis importants {#foundation-notices}
 
@@ -189,7 +189,7 @@ Il est essentiel de supprimer l’utilisation des API obsolètes.
 
 Depuis le **14 avril**, les pipelines Cloud Manager qui contiennent du code à l’aide d’API ciblant la suppression du 2/26/2026 **échouent lors de l’étape Qualité du code**. Les déploiements seront bloqués jusqu’à ce que l’utilisation obsolète de l’API soit supprimée. *Cela peut vous empêcher de publier des mises à jour urgentes et peut avoir un impact sur vos opérations commerciales.*
 
-À compter du **11 juin 2026**, les environnements qui utilisent toujours ces API obsolètes **ne recevront pas de mises à jour de versions Adobe critiques** et ne seront pas soumis aux engagements standard d’Adobe en matière de performances et de disponibilité. Par conséquent, vous ne recevrez pas de nouvelles fonctionnalités ou de nouveaux correctifs, la stabilité et la disponibilité des applications peuvent être affectées négativement, et l&#39;exposition aux risques de sécurité peut encore augmenter.
+À compter du **23 juillet 2026**, les environnements qui utilisent toujours ces API obsolètes **ne recevront pas de mises à jour de versions Adobe critiques** et ne seront pas soumis aux engagements standard d’Adobe en matière de performances et de disponibilité. Par conséquent, vous ne recevrez pas de nouvelles fonctionnalités ou de nouveaux correctifs, la stabilité et la disponibilité des applications peuvent être affectées négativement, et l&#39;exposition aux risques de sécurité peut encore augmenter.
 
 Pour plus d’informations, consultez l’[article sur l’obsolescence](/help/release-notes/deprecated-removed-features.md#aem-apis), mais pour plus de commodité, ces API sont répertoriées ci-dessous :
 
@@ -245,7 +245,7 @@ Rejoignez la version bêta pour la diffusion de publication AEM ou les projets E
 
 Les fonctionnalités [dépannage de pipeline](/help/ai-in-aem/agents/brand-experience/development/development.md) de l’agent de développement aident les développeurs à diagnostiquer et à résoudre efficacement les problèmes dans les déploiements d’AEM as a Cloud Service. En plus de prendre en charge les pipelines Full Stack (déploiement et qualité du code), l’agent de développement prend désormais en charge le dépannage du **pipeline de configuration de niveau web** dans le cadre d’un programme bêta.
 
-Pour demander l’accès à la version bêta, envoyez un e-mail à l’adresse [&#128279;](mailto:aem-devagent@adobe.com). Un accès préexistant aux agents dans AEM est requis.
+Pour demander l’accès à la version bêta, envoyez un e-mail à l’adresse [](mailto:aem-devagent@adobe.com). Un accès préexistant aux agents dans AEM est requis.
 
 #### Dépannage de l’IA dédiée à la réplication (programme Beta) {#replication-ai-troubleshooting-alpha}
 
@@ -267,7 +267,7 @@ Envoyez un e-mail à [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-cana
 
 Les équipes Java-stack utilisant le développement assisté par [IA](/help/ai-in-aem/local-development-with-ai-tools.md) dans des outils tels que Cursor, Claude Code, Visual Studio et IntelliJ peuvent désormais aller plus loin : une nouvelle compétence d’agent IDE détecte et corrige automatiquement les problèmes directement dans votre base de code AEM, réduisant ainsi les cycles de révision et détectant les problèmes plus tôt dans le développement.
 
-Cette fonctionnalité est en version Alpha. Rejoignez le programme pour l’essayer et partager vos commentaires avec l’équipe sur [&#128279;](mailto:aemcs-ai-ide-tools-feedback@adobe.com).
+Cette fonctionnalité est en version Alpha. Rejoignez le programme pour l’essayer et partager vos commentaires avec l’équipe sur [](mailto:aemcs-ai-ide-tools-feedback@adobe.com).
 
 #### Surveillance étendue des performances des applications (APM) (programme Alpha) {#apm-alpha}
 
