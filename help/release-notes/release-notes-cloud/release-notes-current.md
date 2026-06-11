@@ -85,11 +85,11 @@ Voir [Programmes bêta AEM Foundation](#foundation-early-adopter).
 
 ### Cloud Manager (programmes Beta) {#cloud-manager-beta-programs}
 
-Voir [Programmes bêta ](/help/implementing/cloud-manager/release-notes/current.md).
+Voir [Programmes bêta &#x200B;](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### AEM Assets (programmes Beta) {#aem-assets-beta-programs}
 
-Voir [Programmes bêta ](#assets-beta-program-features).
+Voir [Programmes bêta &#x200B;](#assets-beta-program-features).
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -171,9 +171,9 @@ En savoir plus sur [l’outil d’IA dédiée à l’IDE pour la migration vers 
 
 Dans l’interface utilisateur de création, les agents de réplication affichent désormais deux files d’attente consolidées (**persistantes** et **entièrement publiées**) au lieu de files d’attente distinctes par capsule de publication, ce qui réduit la complexité tout en reflétant la mise à l’échelle automatique du niveau de publication.
 
-En savoir plus sur les [ Files d’attente de réplication ](/help/operations/replication.md#replication-queues).
+En savoir plus sur les [&#x200B; Files d’attente de réplication &#x200B;](/help/operations/replication.md#replication-queues).
 
-![Files d’attente de réplication affichant les files d’attente ](/help/operations/assets/replication-queues.png " réplication persistantes et entièrement publiées")
+![Files d’attente de réplication affichant les files d’attente &#x200B;](/help/operations/assets/replication-queues.png " réplication persistantes et entièrement publiées")
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Avis importants {#foundation-notices}
 
@@ -245,7 +245,7 @@ Rejoignez la version bêta pour la diffusion de publication AEM ou les projets E
 
 Les fonctionnalités [dépannage de pipeline](/help/ai-in-aem/agents/brand-experience/development/development.md) de l’agent de développement aident les développeurs à diagnostiquer et à résoudre efficacement les problèmes dans les déploiements d’AEM as a Cloud Service. En plus de prendre en charge les pipelines Full Stack (déploiement et qualité du code), l’agent de développement prend désormais en charge le dépannage du **pipeline de configuration de niveau web** dans le cadre d’un programme bêta.
 
-Pour demander l’accès à la version bêta, envoyez un e-mail à l’adresse [](mailto:aem-devagent@adobe.com). Un accès préexistant aux agents dans AEM est requis.
+Pour demander l’accès à la version bêta, envoyez un e-mail à l’adresse [&#128279;](mailto:aem-devagent@adobe.com). Un accès préexistant aux agents dans AEM est requis.
 
 #### Dépannage de l’IA dédiée à la réplication (programme Beta) {#replication-ai-troubleshooting-alpha}
 
@@ -267,7 +267,7 @@ Envoyez un e-mail à [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-cana
 
 Les équipes Java-stack utilisant le développement assisté par [IA](/help/ai-in-aem/local-development-with-ai-tools.md) dans des outils tels que Cursor, Claude Code, Visual Studio et IntelliJ peuvent désormais aller plus loin : une nouvelle compétence d’agent IDE détecte et corrige automatiquement les problèmes directement dans votre base de code AEM, réduisant ainsi les cycles de révision et détectant les problèmes plus tôt dans le développement.
 
-Cette fonctionnalité est en version Alpha. Rejoignez le programme pour l’essayer et partager vos commentaires avec l’équipe sur [](mailto:aemcs-ai-ide-tools-feedback@adobe.com).
+Cette fonctionnalité est en version Alpha. Rejoignez le programme pour l’essayer et partager vos commentaires avec l’équipe sur [&#128279;](mailto:aemcs-ai-ide-tools-feedback@adobe.com).
 
 #### Surveillance étendue des performances des applications (APM) (programme Alpha) {#apm-alpha}
 
