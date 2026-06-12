@@ -4,9 +4,9 @@ description: Découvrez comment ajouter un référentiel externe dans Cloud Man
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 18511b9e809cb4aa372fd04213d555dc669bbb0d
+source-git-commit: ccad3e1f46865bce575e14a04a9992efa38edb87
 workflow-type: tm+mt
-source-wordcount: '2682'
+source-wordcount: '2667'
 ht-degree: 24%
 
 ---
@@ -32,15 +32,15 @@ Les clients peuvent désormais également intégrer leurs référentiels Git Dev
 >   * Référentiels GitLab (`gitlab.com` et la version auto-hébergée de GitLab).
 >   * Référentiels Bitbucket (uniquement `bitbucket.org`, version cloud). La version auto-hébergée de Bitbucket a été abandonnée le 15 février 2024.
 >   * Référentiels DevOps (`dev.azure.com`) d’Azure.
->* Les référentiels hébergés sur `github.com`, y compris les déploiements GitHub Enterprise Cloud hébergés sur `github.com`, utilisent l’application GitHub d’Adobe pour valider la propriété. Aucune configuration webhook n’est requise, car Cloud Manager s’intègre directement via l’application. Voir [Ajouter un référentiel GitHub Enterprise Cloud privé dans Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md).
+>* Les référentiels hébergés sur `github.com` utilisent l’application GitHub d’Adobe pour valider la propriété. Aucune configuration webhook n’est requise, car Cloud Manager s’intègre directement via l’application. Voir [Ajouter un référentiel GitHub privé dans Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md).
 >
 
 ## Configuration d’un référentiel externe
 
 La configuration d’un référentiel externe dans Cloud Manager comprend les étapes suivantes :
 
-1. [Ajouter un référentiel externe](#add-external-repo) à un programme sélectionné
-1. [Liaison d’un référentiel externe validé à un pipeline](#validate-ext-repo)
+1. [Ajoutez un référentiel externe](#add-external-repo) à un programme sélectionné.
+1. [Lier un référentiel externe validé à un pipeline](#validate-ext-repo).
    <!--
      1. Provide an access token to the external repository.
     1. Validate ownership of the private GitHub repository.
@@ -76,7 +76,7 @@ La configuration d’un référentiel externe dans Cloud Manager comprend les é
    | --- | --- |
    | **Nom du référentiel** | Obligatoire. Nom expressif pour votre nouveau référentiel. |
    | **URL du référentiel** | Obligatoire. URL du référentiel.<br><br>Si vous utilisez un référentiel hébergé sur GitHub, le chemin doit se terminer par `.git`.<br>Par exemple, *`https://github.com/org-name/repo-name.git`* (le chemin de l’URL est fourni à titre d’illustration uniquement).<br><br>Si vous utilisez un référentiel externe, il doit utiliser le format de chemin d’URL suivant :<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> ou<br>`https://self-hosted-domain/org-name/repo-name.git`<br>Et correspondre à votre fournisseur Git. |
-   | **Sélection du type de référentiel** | Obligatoire. Sélectionnez le type de référentiel que vous utilisez. Si le chemin d’URL du référentiel inclut le nom du fournisseur Git, tel que GitLab ou Bitbucket, le type de référentiel est présélectionné pour vous :<br><br>* **GitHub** (GitHub Enterprise Server, la version auto-hébergée de GitHub). Pour les référentiels sur `github.com`, y compris les déploiements GitHub Enterprise Cloud hébergés sur `github.com`, voir [Ajouter un référentiel GitHub Cloud privé dans Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) à la place.<br>* **GitLab** (`gitlab.com` et la version auto-hébergée de GitLab)<br>* **Bitbucket** (uniquement `bitbucket.org`, la version cloud). La version auto-hébergée de Bitbucket a été abandonnée le 15 février 2024.<br>* **Azure DevOps** (`dev.azure.com`) |
+   | **Sélection du type de référentiel** | Obligatoire. Sélectionnez le type de référentiel que vous utilisez. Si le chemin d’URL du référentiel inclut le nom du fournisseur Git, tel que GitLab ou Bitbucket, le type de référentiel est présélectionné pour vous :<br><br>* **GitHub** Pour les référentiels sur `github.com`. En d’autres termes, pour tout plan GitHub (cloud gratuit, professionnel, d’équipe ou d’entreprise), consultez [Ajout d’un référentiel GitHub privé dans Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) à la place.<br>* **GitLab** à la fois `gitlab.com` et la version auto-hébergée de GitLab.<br>* **Bitbucket** uniquement `bitbucket.org`, la version cloud. La version auto-hébergée de Bitbucket a été abandonnée le 15 février 2024.<br>* **Azure DevOps** (`dev.azure.com`) |
    | **Description** | Facultatif. Description détaillée du référentiel. |
 
 1. Sélectionnez **Enregistrer** pour ajouter le référentiel.
@@ -171,7 +171,7 @@ Voir aussi [Gérer les jetons d’accès](/help/implementing/cloud-manager/manag
 
 ## Configuration d’un webhook pour un référentiel externe {#configure-webhook}
 
-Cloud Manager vous permet de configurer des webhooks pour les référentiels Git externes que vous avez ajoutés. Voir [&#x200B; Ajouter un référentiel externe &#x200B;](#add-ext-repo). Ces webhooks permettent à Cloud Manager de recevoir des événements liés à différentes actions dans votre solution de fournisseur Git.
+Cloud Manager vous permet de configurer des webhooks pour les référentiels Git externes que vous avez ajoutés. Voir [ Ajouter un référentiel externe ](#add-ext-repo). Ces webhooks permettent à Cloud Manager de recevoir des événements liés à différentes actions dans votre solution de fournisseur Git.
 
 Par exemple, les webhooks permettent à Cloud Manager de déclencher des actions en fonction d’événements tels que :
 
