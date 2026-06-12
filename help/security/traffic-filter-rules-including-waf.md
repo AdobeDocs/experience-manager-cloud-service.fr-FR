@@ -4,10 +4,10 @@ description: Configurer des règles de filtre de trafic incluant des règles de 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 199c11b6f6655f9a0c790501b0aa554119ea0998
+source-git-commit: 629ac4c2da92997ab01a91fe3f4f1d93fd6d7c30
 workflow-type: tm+mt
 source-wordcount: '4257'
-ht-degree: 69%
+ht-degree: 68%
 
 ---
 
@@ -728,9 +728,9 @@ Pour acquérir des connaissances et une expérience pratiques sur les règles de
 
 En voici un aperçu :
 
-* Vue d’ensemble des règles de filtrage de trafic standard et WAF
+* Présentation des règles de filtrage du trafic standard et WAF.
 * Pour bloquer les attaques, y compris les attaques par déni de service (DoS), configurez les règles de filtrage du trafic standard et WAF recommandées.
-* Déploiement de règles à l’aide du pipeline de configuration Cloud Manager
-* Test de vos règles à l’aide d’outils de simulation de trafic malveillant
-* Analyse des résultats à l’aide de l’outil d’analyse du journal
-* Bonnes pratiques
+* Déploiement de règles à l’aide du pipeline de configuration Cloud Manager.
+* Test de vos règles à l’aide d’outils de simulation de trafic malveillant.
+* Analyse des résultats à l’aide de l’outil d’analyse du journal.
+* Bonnes pratiques.
