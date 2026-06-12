@@ -8,8 +8,8 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '2148'
-ht-degree: 18%
+source-wordcount: '2276'
+ht-degree: 22%
 
 ---
 
@@ -137,7 +137,7 @@ Tenez compte du **Formulaire de demande informatique** illustré dans la section
 
 Examinons le processus détaillé d’insertion d’une disposition et d’ajout de composants à celle-ci. Dans cet exemple, une disposition à onglets horizontaux est insérée dans un formulaire.
 
-### &#x200B;1. Insérer un composant de disposition dans un formulaire
+### &#x200B;1. Insertion d’un composant de disposition dans un formulaire
 
 1. Connectez-vous à l’instance [!DNL Experience Manager Forms].
 1. Dans le coin supérieur gauche, sélectionnez **&#x200B;**&#x200B;> **[!UICONTROL Forms]** > **[!UICONTROL Forms et documents]**.
@@ -179,7 +179,7 @@ Par exemple, dans ce cas, nous ajoutons le nom du composant Onglets horizontaux 
 
 Une fois le composant de mise en page ajouté au formulaire, modifiez le nombre de panneaux en fonction des besoins.
 
-### &#x200B;2. Ajouter des panneaux à la disposition
+### &#x200B;2. Ajout de panneaux à la disposition
 
 Ajoutez un nouveau panneau au composant Onglets horizontaux :
 

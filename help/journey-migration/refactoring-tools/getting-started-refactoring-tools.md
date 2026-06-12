@@ -64,7 +64,7 @@ Lorsque les clients accèdent pour la première fois aux **outils de refactorisa
    - **Prêt** - L&#39;inspection est terminée ; vous pouvez maintenant exécuter les outils de refactorisation.
    - **Échec** - Une erreur s’est produite. Cliquez sur le projet pour examiner le rapport d&#39;inspection et résoudre les problèmes.
 
-   ![image](/help/journey-migration/refactoring-tools/assets/rscam5.png)
+   ![Image](/help/journey-migration/refactoring-tools/assets/rscam5.png)
 
 >[!NOTE]
 >
@@ -86,7 +86,7 @@ Lorsque vous cliquez sur l’onglet **Tâche de refactorisation**, une liste des
 - Sélectionnez le ou les outils de refactorisation souhaités.
 - Cliquez sur **Démarrer** pour lancer le processus de refactorisation.
 
-![image](/help/journey-migration/refactoring-tools/assets/rscam7.png)
+![Image](/help/journey-migration/refactoring-tools/assets/rscam7.png)
 
 >[!NOTE]
 >
@@ -106,7 +106,7 @@ Une fois la tâche terminée, le bouton **Télécharger** devient disponible et 
 - **Journaux d’activité** : pendant l’exécution du traitement, toutes les étapes effectuées par l’outil et les modifications apportées sont consignées dans le cadre de cette opération.
 - **Rapport des résultats** : ce rapport contient des éléments qui n’ont pas été entièrement exécutés par l’outil, mais qui doivent toujours être traités. Toutes ces modifications sont consignées ici.
 
-![image](/help/journey-migration/refactoring-tools/assets/rscam9.png)
+![Image](/help/journey-migration/refactoring-tools/assets/rscam9.png)
 
 >[!NOTE]
 >
