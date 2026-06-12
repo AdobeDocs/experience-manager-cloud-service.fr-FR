@@ -4,7 +4,7 @@ description: Configurer des règles de filtre de trafic incluant des règles de 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 416723b6688fffa02287e314535fef519207cf9c
+source-git-commit: 10a8e73223d52f5caf092a707cf7b541f09d9802
 workflow-type: tm+mt
 source-wordcount: '4257'
 ht-degree: 68%
@@ -16,10 +16,10 @@ ht-degree: 68%
 
 Les règles de filtrage du trafic bloquent ou autorisent les requêtes au niveau de la couche CDN, ce qui s’avère utile dans les scénarios tels que les suivants :
 
-
 * Limiter l’accès à des domaines spécifiques au trafic interne de l’entreprise avant la mise en ligne d’un nouveau site.
 * Pour être moins sensible aux attaques par déni de service volumétriques, fixez des limites de débit.
 * Empêcher les adresses IP connues pour être malveillantes de cibler vos pages.
+
 
 La plupart de ces règles de filtrage de trafic sont disponibles pour l’ensemble des clientes et clients d’AEM as a Cloud Service Sites et Forms. En tant que *règles de filtrage du trafic standard*, elles fonctionnent sur les propriétés de la requête : adresse IP, nom d’hôte, chemin d’accès et agent utilisateur. Les règles de filtrage de trafic standard incluent des règles de limite de débit, permettant de se prémunir contre les pics de trafic.
 
