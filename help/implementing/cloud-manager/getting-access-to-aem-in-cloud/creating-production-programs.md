@@ -5,9 +5,9 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2503863e0c146f86bb158c411ea5b7bb47033a3e
+source-git-commit: d1f3c63c50368dffb2ff5c41c401a5b050495cdd
 workflow-type: tm+mt
-source-wordcount: '1723'
+source-wordcount: '1792'
 ht-degree: 6%
 
 ---
@@ -55,13 +55,13 @@ Voir [Options de programme de production supplémentaires](#options).
 1. Dans la zone de liste **Solutions et modules complémentaires**, sélectionnez une ou plusieurs solutions à inclure dans le programme.
 
    * Si vous ne savez pas si vous avez besoin d&#39;un ou de plusieurs programmes pour les différentes solutions disponibles, sélectionnez celle qui vous intéresse le plus. Vous pouvez activer des solutions supplémentaires en [modifiant le programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) plus tard. Consultez le [document Présentation des programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) pour plus de recommandations sur la configuration des programmes.
-   * Vous devez sélectionner au moins une solution pour la création du programme. Par exemple, vous pouvez choisir de sélectionner **&#x200B;**&#x200B;pour une solution de réseau CDN entièrement gérée qui optimise les expériences digitales. Voir [&#x200B; À propos de l’utilisation de Edge Delivery Services pour diffuser votre projet Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md).
+   * Vous devez sélectionner au moins une solution pour la création du programme. Par exemple, vous pouvez choisir de sélectionner **** pour une solution de réseau CDN entièrement gérée qui optimise les expériences digitales. Voir [ À propos de l’utilisation de Edge Delivery Services pour diffuser votre projet Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md).
 
    * Cliquez sur ![icône Chevron Size 300](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) à gauche du nom d’une solution pour afficher les modules complémentaires facultatifs. <!-- such as the **Commerce** add-on option under **Sites**. -->
 
 <!--   ![Select add-ons](assets/setup-prod-commerce.png) -->
 
-    >[ !REMARQUE]
+    >[!REMARQUE]
     >
     >Si votre programme utilise Edge Delivery Services pour la diffusion, un niveau de publication peut ne pas être requis. Grâce à la fonction de publication flexible (Beta), vous pouvez configurer s’il faut configurer un niveau de publication sur l’onglet Solutions et modules complémentaires . Voir [Niveau de publication flexible (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
     
@@ -78,9 +78,9 @@ Voir [Options de programme de production supplémentaires](#options).
 
 1. Cliquez sur **Continuer**.
 
-1. Si vous disposez des droits nécessaires, l&#39;onglet **&#x200B;**&#x200B;s&#39;affiche en tant que deuxième ou troisième onglet dans la boîte de dialogue **`Set up for production`**. Voir [&#128279;](#sla).
+1. Si vous disposez des droits nécessaires, l&#39;onglet **** s&#39;affiche en tant que deuxième ou troisième onglet dans la boîte de dialogue **`Set up for production`**. Voir [](#sla).
 
-   ![Options &#x200B;](assets/create-production-program-sla.png)
+   ![Options ](assets/create-production-program-sla.png)
 
    Sites et Forms offrent un service level agreement standard à 99,9 % (SLA).
 
@@ -106,9 +106,9 @@ Selon les droits disponibles pour votre organisation, les options supplémentair
 
 Si vous disposez des droits nécessaires, l’onglet **Sécurité** s’affiche comme le premier onglet de la boîte de dialogue **`Set up for production`**.
 
-![&#x200B; Options de sécurité &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-security-tab.png)
+![ Options de sécurité ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-security-tab.png)
 
-L’onglet **Sécurité** fournit les options d’activation de la **HIPAA** ou de la **protection WAF-DDOS**, ou les deux, pour votre programme de production.
+L’onglet **Sécurité** fournit les options permettant d’activer la **protection HIPAA** ou **WAF-DDOS**, ou les deux, pour votre programme de production, ainsi que la **Clés gérées par le client**.
 
 Compatible avec la norme HIPAA d’Adobe et WAF-DDOS (Web Application Firewall - Distributed Denial of Service), il offre une sécurité cloud intégrée à une approche sur plusieurs couches de la protection contre les vulnérabilités.
 
@@ -117,16 +117,26 @@ Compatible avec la norme HIPAA d’Adobe et WAF-DDOS (Web Application Firewall -
    * HIPAA ne peut pas être activé ou désactivé après la création du programme.
 * **Protection WAF-DDOS** - Cette option active le pare-feu d&#39;application web à travers des règles pour protéger votre application.
    * Une fois activée, la protection WAF-DDOS peut être configurée en configurant un [pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
-   * Consultez la section [Règles de filtrage du trafic, y compris les règles WAF](/help/security/traffic-filter-rules-including-waf.md) pour savoir comment gérer les règles de filtrage du trafic dans votre référentiel afin qu’elles soient correctement déployées.
+
+     >[!NOTE]
+     >
+     >Cocher la case **Protection WAF-DDOS** active la fonctionnalité, mais les règles WAF sous licence fournissent une protection uniquement après que la case est cochée. Consultez la section [Règles de filtrage du trafic, y compris les règles WAF](/help/security/traffic-filter-rules-including-waf.md) pour en savoir plus sur la gestion des règles de filtrage du trafic dans votre référentiel afin qu’elles soient correctement déployées.
+     >
+     >Pour confirmer que la fonctionnalité est active, examinez les [journaux du réseau CDN](//help/security/traffic-filter-rules-including-waf.md#cdn-logs) une fois que le trafic atteint le site. Recherchez les entrées de journal qui incluent une propriété `rules` contenant un attribut `waf`. Par exemple :
+     >
+     >`"rules": "waf=SQLI"`
+     >
+     >Cet attribut apparaît une fois que WAF est actif, avant même le déploiement des règles WAF.
+
 * **Clés gérées par le client** - Cette option active la fonction CMK (Clés gérées par le client) pour le programme, ce qui vous permet de fournir vos propres clés de chiffrement pour les données inactives dans le stockage Blob Azure et MongoDB. Si vous le souhaitez, vous pouvez activer la fonction CMK ultérieurement en [modifiant un programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing).
 
    * La fonction CMK est disponible uniquement pour les programmes Cloud Service. Elle ne peut pas être activée sur les programmes Sandbox.
    * Dans un programme, la fonction CMK couvre uniquement les environnements d’évaluation et de production.
    * La fonction CMK ne peut pas être désactivée une fois qu’elle est activée sur un programme.
    * Après avoir activé la fonction CMK, configurez vos clés de chiffrement dans Experience Hub.
-Voir [&#x200B; Configuration des clés gérées par le client pour AEM as a Cloud Service](/help/security/customer-managed-keys.md).
+Voir [ Configuration des clés gérées par le client pour AEM as a Cloud Service](/help/security/customer-managed-keys.md).
    * Si la fonction CMK est activée, la page de présentation du programme affiche une icône de verrou pour indiquer que la fonction CMK est active sur le programme. L’icône ne reflète pas le statut d’activation de la fonction CMK pour les environnements individuels au sein du programme.
-     ![&#x200B; Icône de verrouillage indiquant que la fonction CMK est active sur le programme](/help/implementing/cloud-manager/release-notes/assets/cmk-status-on-program-card.png)
+     ![ Icône de verrouillage indiquant que la fonction CMK est active sur le programme](/help/implementing/cloud-manager/release-notes/assets/cmk-status-on-program-card.png)
 La consommation de la licence CMK est visible dans le tableau de bord des licences. Pour afficher le nombre de crédits CMK achetés par votre entreprise et le nombre de programmes qui les consomment, consultez [Tableau de bord des licences](/help/implementing/cloud-manager/license-dashboard.md).
      ![Affichage du nombre de clés gérées par le client disponibles dans le tableau de bord des licences](/help/implementing/cloud-manager/release-notes/assets/cmk-license-dashboard.png)
 
@@ -171,9 +181,9 @@ Lorsque la fonctionnalité de niveau de publication flexible est activée pour v
 
 ### SLA {#sla}
 
-Si vous disposez des droits nécessaires, l&#39;onglet **&#x200B;**&#x200B;s&#39;affiche en tant que deuxième ou troisième onglet dans la boîte de dialogue **`Set up for production`**.
+Si vous disposez des droits nécessaires, l&#39;onglet **** s&#39;affiche en tant que deuxième ou troisième onglet dans la boîte de dialogue **`Set up for production`**.
 
-![Options &#x200B;](assets/create-production-program-sla.png)
+![Options ](assets/create-production-program-sla.png)
 
 Sites et Forms offrent un service level agreement standard à 99,9 % (SLA). L’option **99,99 % Service level agreement** garantit une disponibilité minimale de 99,99 % pour vos environnements de production, que ce soit pour Sites, Forms, Edge Delivery Services ou les trois.
 
@@ -190,7 +200,7 @@ Outre les droits requis, l’utilisation de la version 99,99 % de SLA pour les p
 * L’organisation doit disposer de 99,99 % de SLA et de droits de région de publication supplémentaires disponibles lors de l’application de 99,99 % de SLA au programme.
 * Cloud Manager vérifie qu’un droit inutilisé [région de publication supplémentaire](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) est disponible avant d’appliquer 99,99 % de SLA au programme.
 * Lors de la modification d’un programme, s’il contient déjà un environnement de production avec au moins une région de publication supplémentaire, Cloud Manager vérifie uniquement la disponibilité d’un droit SLA de 99,99 %.
-* Pour l’activation de SLA à 99,99 % et la création de rapports, l’[&#x200B; environnement de production/d’évaluation &#x200B;](/help/implementing/cloud-manager/manage-environments.md#adding-environments) doit avoir été créé et au moins une région de publication supplémentaire doit avoir été appliquée à l’environnement de production/d’évaluation.
+* Pour l’activation de SLA à 99,99 % et la création de rapports, l’[ environnement de production/d’évaluation ](/help/implementing/cloud-manager/manage-environments.md#adding-environments) doit avoir été créé et au moins une région de publication supplémentaire doit avoir été appliquée à l’environnement de production/d’évaluation.
    * Si vous utilisez la [mise en réseau avancée](/help/security/configuring-advanced-networking.md), veillez à consulter le document [Ajout de plusieurs régions de publication à un nouvel environnement](/help/implementing/cloud-manager/manage-environments.md#adding-regions) pour obtenir des recommandations afin que la connectivité soit maintenue en cas d’échec régional.
 * Votre programme SLA à 99,99 % doit toujours inclure au moins une région de publication supplémentaire. Les utilisateurs ne sont pas autorisés à supprimer la dernière région de publication supplémentaire restante du programme.
 * Votre SLA à 99,99 % est pris en charge pour les programmes de production pour lesquels la solution Sites ou Forms est activée.
