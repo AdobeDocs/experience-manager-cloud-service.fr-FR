@@ -4,15 +4,15 @@ description: Configurer des règles de filtre de trafic incluant des règles de 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: d1f3c63c50368dffb2ff5c41c401a5b050495cdd
+source-git-commit: 199c11b6f6655f9a0c790501b0aa554119ea0998
 workflow-type: tm+mt
 source-wordcount: '4257'
-ht-degree: 70%
+ht-degree: 69%
 
 ---
 
 
-# Règles de filtre de trafic incluant des règles WAF {#traffic-filter-rules-including-waf-rules}
+# Règles de filtrage de trafic incluant des règles WAF {#traffic-filter-rules-including-waf-rules}
 
 Les règles de filtrage du trafic bloquent ou autorisent les requêtes au niveau de la couche CDN, ce qui s’avère utile dans les scénarios tels que les suivants :
 
@@ -49,7 +49,7 @@ Cet article comprend les sections suivantes :
 * **Règles de démarrage recommandées :** ensemble de règles avec lesquelles commencer.
 * **Tutoriel :** informations sur la fonctionnalité, y compris sur l’utilisation des outils de tableau de bord pour déclarer les règles appropriées.
 
-## Vue d’ensemble de la protection du trafic {#traffic-protection-overview}
+## Présentation de la protection du trafic {#traffic-protection-overview}
 
 Dans le paysage numérique actuel, le trafic malveillant est une menace omniprésente. Adobe reconnaît la gravité du risque et propose plusieurs approches pour protéger les applications clientes et atténuer les attaques lorsqu’elles se produisent.
 
@@ -59,7 +59,7 @@ Par défaut, Adobe prend des mesures pour empêcher la dégradation des performa
 
 Les clients prennent des mesures proactives pour atténuer les attaques de couche d’application (couche 7) en configurant des règles à différents niveaux du flux de diffusion de contenu.
 
-Par exemple, au niveau de la couche Apache, les clients configurent le module [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) ou [ModSecurity](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) pour limiter l’accès à certains contenus.
+Par exemple, au niveau de la couche Apache, les clients configurent le module [](https://experienceleague.adobe.com/fr/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) ou [ModSecurity](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) pour limiter l’accès à certains contenus.
 
 Comme cet article le décrit, les règles de filtrage du trafic sont déployées sur le réseau CDN géré par Adobe à l’aide de Cloud Manager [pipelines de configuration](/help/operations/config-pipeline.md). Au-delà des *règles standard de filtrage du trafic* (adresse IP, chemin, en-têtes, limites de débit), les licences client *règles WAF*.
 
@@ -118,7 +118,7 @@ Voici un processus de bout en bout recommandé et détaillé pour déterminer le
 
 1. Créez un pipeline de configuration dans Cloud Manager, comme décrit dans l’[article sur le pipeline de configuration](/help/operations/config-pipeline.md#managing-in-cloud-manager). Le pipeline fait référence à un dossier de `config` de niveau supérieur avec le fichier `cdn.yaml` placé quelque part en dessous, voir [Utilisation des pipelines de configuration](/help/operations/config-pipeline.md#folder-structure).
 
-## Syntaxe des règles de filtrage de trafic {#rules-syntax}
+## Syntaxe des règles de filtrage du trafic {#rules-syntax}
 
 Pour faire correspondre des modèles tels que l’adresse IP, l’agent utilisateur, les en-têtes, le nom d’hôte, la zone géographique ou l’URL, vous pouvez configurer des *règles de filtrage du trafic*.
 
@@ -156,7 +156,7 @@ Format des règles de filtrage du trafic dans le fichier `cdn.yaml` décrit ci-d
 | action | X | X | `Action` | journal | Objet journal, autoriser, bloquer ou action. Par défaut, il s’agit de journal. |
 | rateLimit | X |   | `RateLimit` | non défini | Configuration de limite de débit. La limite de débit est désactivée si elle n’est pas définie.<br><br>Vous trouverez ci-dessous une section distincte décrivant la syntaxe rateLimit, ainsi que des exemples. |
 
-### Structure d’action {#action-structure}
+### Structure de l&#39;action {#action-structure}
 
 Une `action` peut être soit une chaîne spécifiant l’action (autoriser, bloquer ou consigner), soit un objet composé à la fois du type d’action (autoriser, bloquer ou consigner) et d’options telles que wafFlags et/ou le statut.
 
@@ -351,7 +351,7 @@ data:
         action: block
 ```
 
-## Règles de limite de débit
+## Règles de limite de taux
 
 Il est parfois souhaitable de bloquer le trafic s’il dépasse un certain débit de requêtes entrantes, selon une condition spécifique. Définir une valeur pour la propriété `rateLimit` limite le débit des requêtes correspondant à la condition de la règle.
 
@@ -417,9 +417,9 @@ data:
         rateLimit: { limit: 100, window: 10, penalty: 60, count: fetches }
 ```
 
-Pour obtenir des fragments de code supplémentaires pour les scénarios avancés, consultez l’article [&#x200B; Fragments de code de configuration du réseau CDN pour les scénarios courants &#x200B;](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md).
+Pour obtenir des fragments de code supplémentaires pour les scénarios avancés, consultez l’article [ Fragments de code de configuration du réseau CDN pour les scénarios courants ](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md).
 
-## Règles CVE {#cve-rules}
+## Règles CVE {#cve-rules}
 
 Si WAF est sous licence, Adobe applique automatiquement des règles de blocage pour se protéger contre de nombreux CVE connus (Vulnérabilités et expositions courantes) et de nouveaux CVE sont ajoutés peu de temps après leur découverte. Les clients ne configurent pas eux-mêmes les règles CVE.
 
@@ -427,7 +427,7 @@ Si une requête de trafic correspond à un fichier CVE, elle apparaît dans l’
 
 Contactez l’assistance Adobe si vous avez des questions sur un CVE spécifique ou si votre entreprise souhaite désactiver une règle CVE spécifique.
 
-## Alertes sur les règles de filtrage du trafic {#traffic-filter-rules-alerts}
+## Alertes relatives aux règles de filtrage du trafic {#traffic-filter-rules-alerts}
 
 Une règle peut être configurée pour envoyer une notification du Centre d’actions si elle est déclenchée dix fois pendant une fenêtre de 5 minutes. Une telle règle vous avertit lorsque certains schémas de trafic se produisent afin que vous puissiez prendre les mesures nécessaires. Une fois qu’une alerte est déclenchée pour une règle spécifique, elle ne se déclenche pas de nouveau avant le lendemain (UTC).
 
@@ -454,11 +454,11 @@ data:
           alert: true
 ```
 
-## Alerte de pic de trafic par défaut à l’origine {#traffic-spike-at-origin-alert}
+## Pic de trafic par défaut à l’alerte d’origine {#traffic-spike-at-origin-alert}
 
 Une notification par e-mail du [Centre d’actions](/help/operations/actions-center.md) vous avertit lorsqu’un trafic élevé provenant de la même adresse IP atteint son origine, ce qui suggère une attaque DDoS.
 
-Si ce seuil est atteint, Adobe bloque le trafic provenant de cette adresse IP. Prenez des mesures supplémentaires pour protéger votre origine, telles que la configuration des règles de filtrage du trafic avec limite de débit. Consultez le tutoriel [&#x200B; Blocage des attaques par déni de service et par déni de service à l’aide des règles de trafic &#x200B;](#tutorial-blocking-DDoS-with-rules) pour une présentation guidée.
+Si ce seuil est atteint, Adobe bloque le trafic provenant de cette adresse IP. Prenez des mesures supplémentaires pour protéger votre origine, telles que la configuration des règles de filtrage du trafic avec limite de débit. Consultez le tutoriel [ Blocage des attaques par déni de service et par déni de service à l’aide des règles de trafic ](#tutorial-blocking-DDoS-with-rules) pour une présentation guidée.
 
 Le système active cette alerte par défaut, mais vous pouvez la désactiver à l’aide de la propriété *defaultTrafficAlerts*, définie sur false. Une fois l’alerte déclenchée, elle ne se déclenche plus avant le lendemain (UTC).
 
@@ -470,7 +470,7 @@ data:
    defaultTrafficAlerts: false
 ```
 
-## Journaux de réseau CDN {#cdn-logs}
+## Journaux CDN {#cdn-logs}
 
 AEM as a Cloud Service permet d’accéder aux journaux de réseau CDN qui sont utiles pour les cas d’utilisation, notamment l’optimisation du rapport d’accès au cache et la configuration des règles de filtre de trafic. Les journaux de réseau CDN s’affichent dans la boîte de dialogue **Journaux de téléchargement** de Cloud Manager, lors de la sélection du service de création ou de publication.
 
@@ -556,7 +556,7 @@ data:
 }
 ```
 
-### Format du journal {#cdn-log-format}
+### Format du log {#cdn-log-format}
 
 Vous trouverez ci-dessous une liste des noms de champ utilisés dans les journaux CDN, ainsi qu’une brève description.
 
@@ -724,7 +724,7 @@ Avant juillet 2025, Adobe recommandait les règles WAF répertoriées ci-desso
 
 ## Tutoriel {#tutorial}
 
-Pour acquérir des connaissances et une expérience pratiques sur les règles de filtrage du trafic, y compris les règles de WAF, suivez une série [&#x200B; tutoriels &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview).
+Pour acquérir des connaissances et une expérience pratiques sur les règles de filtrage du trafic, y compris les règles de WAF, suivez une série [ tutoriels ](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview).
 
 En voici un aperçu :
 
