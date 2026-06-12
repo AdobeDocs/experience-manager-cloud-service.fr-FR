@@ -2,38 +2,39 @@
 title: Configuration d’un domaine personnalisé pour le niveau de diffusion
 description: Découvrez comment configurer un domaine personnalisé pour le niveau de diffusion dans Adobe Cloud Manager.
 exl-id: cc71c8c5-cf42-4092-b0e0-646a2ed0ee54
-source-git-commit: d2859c547c87bd1856ba0e05fac835db434d824c
+source-git-commit: b24faf23435948a8f122223bf38227a0936bbeb5
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 6%
+source-wordcount: '293'
+ht-degree: 3%
 
 ---
+
 
 # Configuration d’un domaine personnalisé pour le niveau de diffusion{#configure-custom-domain}
 
 Dans Adobe Cloud Manager, vous pouvez faire en sorte que votre site web se démarque en ajoutant un domaine personnalisé. Bien qu’AEM as a Cloud Service soit fourni avec un domaine par défaut, vous pouvez le personnaliser en fonction de vos besoins.
 
-## Avant de commencer
-
-* Vous devez disposer d&#39;un certificat TLS ou SSL multi-SAN (Subject Alternative Name).
-* Le certificat SSL doit comporter des SAN distincts par rapport au certificat mappé pour le niveau de diffusion dans le même domaine.
-* La politique de certificat doit respecter la politique Validation étendue (EV) ou Validation de l’organisation (OV), et non la politique Validation de domaine (DV).
-
-
-## Configuration d’un domaine personnalisé pour le niveau de diffusion
-
-1. Accédez à **[!UICONTROL Adobe Cloud Manager]** > **[!UICONTROL Présentation du programme]** > **[!UICONTROL Certificats SSL]** et ajoutez votre certificat SSL.
-   ![image](/help/assets/assets/ssl-certificate.png)
-Découvrez comment ajouter un [certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) dans Adobe Cloud Manager.
-
-1. Après avoir ajouté le certificat SSL, ajoutez un domaine personnalisé. Cliquez sur **[!UICONTROL Paramètres du domaine]** et spécifiez le domaine personnalisé par rapport à l’option **[!UICONTROL Service de publication]**.
-En savoir plus sur le [domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
-
-1. Ajoutez deux [enregistrements CNAME](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) dans votre enregistrement DNS correspondant aux domaines de publication.
-La vérification DNS peut prendre quelques heures en raison des délais de propagation du DNS.
-
-1. Enregistrez un dossier d’assistance pour faciliter la configuration du domaine personnalisé, en veillant à ce qu’il soit dirigé vers le niveau de diffusion.
-
 >[!NOTE]
 >
->Ajoutez le domaine personnalisé à la liste des URL de redirection autorisées . La liste se trouve dans le client IMS pour le sélecteur de ressources.<br>Contactez l’équipe Adobe correspondante pour exécuter cette tâche en fournissant la chaîne de domaine personnalisée.
+>Les clients disposant de licences Dynamic Media Prime ou Dynamic Media Ultimate doivent utiliser la configuration de domaine personnalisé en libre-service disponible dans Cloud Manager.
+>Pour plus d’informations, consultez la [documentation de Dynamic Media Prime et d’Ultimate](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md#configure-custom-domain-in-delivery-tier).
+>
+>Les clients qui utilisent d’anciennes configurations de Dynamic Media dans lesquelles Dynamic Media avec OpenAPI est activé manuellement doivent suivre cette documentation. Pour ces configurations, le mappage de domaine personnalisé est effectué par le biais d’une demande d’assistance Adobe.
+
+## Préparez-vous à démarrer
+
+Assurez-vous de répondre aux exigences suivantes avant de démarrer le processus de configuration :
+
+* Accès à Cloud Manager
+* Déjà activé Dynamic Media avec OpenAPI dans votre environnement via un ticket d’assistance
+* Certificat SSL de type EV ou OV pour le domaine utilisé dans le niveau de diffusion. Voir [ Présentation des certificats SSL ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates) pour plus d’informations
+
+## Configuration d’un domaine personnalisé dans le niveau de diffusion à l’aide de Cloud Manager
+
+Exécutez les étapes suivantes dans Cloud Manager :
+
+1. [Ajouter un certificat SSL géré par le client](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate#add-customer-managed-ssl-cert)
+
+2. [Ajouter un nom de domaine personnalisé](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings)
+
+Après avoir suivi les étapes ci-dessus, ouvrez un ticket d’assistance Adobe pour le mappage de domaine personnalisé. Adobe effectue le mappage de domaine dans le cadre du processus de prise en charge.
