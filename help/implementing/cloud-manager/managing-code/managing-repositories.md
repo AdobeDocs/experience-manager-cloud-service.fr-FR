@@ -72,7 +72,7 @@ Si vous hébergez votre code en dehors d’Adobe, la page d’instructions que v
 | --- | --- | --- |
 | `github.com` (tout forfait GitHub tel que Free, Pro, Team ou Enterprise Cloud) | Application GitHub Adobe et fichier secret. Aucun webhook requis. | [Ajouter un référentiel GitHub privé dans Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) |
 | GitHub Enterprise Server (auto-hébergé) | Jeton d’accès personnel et webhook | [Ajouter des référentiels externes dans Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) |
-| DevOps GitLab, Bitbucket ou Azure | Jeton d’accès personnel et webhook | [Ajouter des référentiels externes dans Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/external-repositories) |
+| DevOps GitLab, Bitbucket ou Azure | Jeton d’accès personnel et webhook | [Ajouter des référentiels externes dans Cloud Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/external-repositories) |
 
 
 ## Accéder aux informations du référentiel {#repo-info}
