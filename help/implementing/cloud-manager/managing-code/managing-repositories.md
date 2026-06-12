@@ -4,9 +4,9 @@ description: Découvrez comment ajouter, afficher et supprimer vos référentiel
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fcdb7bb423500a5c17149ccb5913a2bb3330b073
+source-git-commit: 188201dfaececb21d373450711eb206b8e2323e2
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '894'
 ht-degree: 62%
 
 ---
@@ -70,7 +70,7 @@ Si vous hébergez votre code en dehors d’Adobe, la page d’instructions que v
 
 | Emplacement d’hébergement de votre référentiel | Méthode de validation | Page des instructions d’utilisation |
 | --- | --- | --- |
-| `github.com`, y compris les déploiements GitHub Enterprise Cloud hébergés sur `github.com` | Application GitHub Adobe et fichier secret. Aucun webhook requis. | [Ajouter un référentiel cloud GitHub privé dans Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) |
+| `github.com` (tout forfait GitHub tel que Free, Pro, Team ou Enterprise Cloud) | Application GitHub Adobe et fichier secret. Aucun webhook requis. | [Ajouter un référentiel GitHub privé dans Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) |
 | GitHub Enterprise Server (auto-hébergé) | Jeton d’accès personnel et webhook | [Ajouter des référentiels externes dans Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) |
 | DevOps GitLab, Bitbucket ou Azure | Jeton d’accès personnel et webhook | [Ajouter des référentiels externes dans Cloud Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/external-repositories) |
 
@@ -108,7 +108,7 @@ L’action **Supprimer** supprime le référentiel de votre projet. Un référen
 
 ![Supprimer](assets/repository-delete.png)
 
-La suppression d’un référentiel empêche son nom d’être utilisé pour tout nouveau référentiel créé à l’avenir. Si vous tentez d’ajouter un référentiel en utilisant le même nom qu’un référentiel supprimé, vous rencontrez le message d’erreur suivant :
+La suppression d’un référentiel empêche son nom d’être utilisé pour tout nouveau référentiel créé à l’avenir. Si vous tentez d’ajouter un référentiel portant le même nom qu’un référentiel supprimé, le message d’erreur suivant s’affiche :
 
 `Repository name should be unique within organization.`
 
