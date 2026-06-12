@@ -45,13 +45,13 @@ Les développeurs gardent le contrôle total sur les navires. Toutes les modific
 
 Après vous être connecté à la console à l’adresse [aemcoder.adobe.io](https://aemcoder.adobe.io) vous accédez à la [page d’accueil](#home-page) de la console. Une fois que vous avez commencé à discuter, vous accédez directement à la [page de conversation](#chat-page) lors des visites ultérieures de l’agent de modernisation de l’expérience.
 
-![Écran d’accueil de la console ](assets/console-home.png)
+![Écran d’accueil de la console &#x200B;](assets/console-home.png)
 
 ### Barre de menus {#menu-bar}
 
 La barre de menus supérieure affiche les éléments suivants :
 
-* Titre **** sur la gauche qui renvoie à la page d&#39;accueil lorsque l&#39;utilisateur clique dessus
+* Titre **&#x200B;**&#x200B;sur la gauche qui renvoie à la page d&#39;accueil lorsque l&#39;utilisateur clique dessus
 * Un bouton **Demander l’assistance** où vous pouvez envoyer des détails sur les problèmes rencontrés
 * Un bouton **Compte** à droite pour passer en mode sombre et vous déconnecter de la console
 
@@ -148,7 +148,7 @@ D’autres actions de projet GitHub peuvent être effectuées sur la page [param
 
 ## Page des paramètres {#settings-page}
 
-La page [**Paramètres** ](https://aemcoder.adobe.io/settings) vous permet de gérer les paramètres de base de la console. Elle est divisée en plusieurs sections, comme suit :
+La page [**Paramètres** &#x200B;](https://aemcoder.adobe.io/settings) vous permet de gérer les paramètres de base de la console. Elle est divisée en plusieurs sections, comme suit :
 
 ![Vue Paramètres](assets/settings-view.png)
 
@@ -163,7 +163,7 @@ Si vous apportez une modification à une valeur d’une section, cliquez sur **E
 * **Autorisations de l’agent** - Autoriser l’agent à accéder aux options de configuration
    * **Autoriser LLM à accéder à admin.hlx.page en mon nom** - Lorsqu&#39;il est activé, l&#39;assistant d&#39;IA peut récupérer les configurations et les métadonnées du site à partir de Adobe Experience Manager à l&#39;aide de vos informations d&#39;identification IMS.
    * **Jeton IMS personnalisé** - Vous pouvez fournir un jeton IMS personnalisé à utiliser à la place de votre jeton de session par défaut.
-* **Informations d’identification** vous permet de spécifier un jeton d’accès personnel pour Figma afin que la console [ puisse accéder aux blocs de conception de votre projet](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration).
+* **Informations d’identification** vous permet de spécifier un jeton d’accès personnel pour Figma afin que la console [&#x200B; puisse accéder aux blocs de conception de votre projet](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration).
    * Le jeton nécessite les portées en lecture seule suivantes :
       * `file_content:read`
       * `file_metadata:read`
