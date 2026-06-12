@@ -26,11 +26,11 @@ Découvrez les premières étapes pour commencer à utiliser l’agent de modern
 >
 >Vous utilisez un projet AEM Sites et l’éditeur universel ? Suivez [Prise en main d’AEM Sites/de l’éditeur universel](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md) étapes de configuration.
 
-1. Sélectionnez un référentiel [&#128279;](/help/edge/overview.md) à utiliser avec la console de modernisation de l’expérience.
+1. Sélectionnez un référentiel [](/help/edge/overview.md) à utiliser avec la console de modernisation de l’expérience.
    * Il peut s’agir d’un projet Edge Delivery Services existant ou vous pouvez en créer un en suivant le tutoriel de développement [developer tutorial](https://www.aem.live/developer/tutorial) à l’aide du [boilerplate repository.](https://github.com/adobe/aem-boilerplate)
 1. Assurez-vous que le [AEM Code Connector](https://github.com/apps/aem-code-connector) est installé dans le référentiel.
    * Cela permet à la console d’inspecter votre code.
-1. Assurez-vous que l’application [GitHub de synchronisation du code &#x200B;](https://github.com/apps/aem-code-sync) est installée dans le référentiel.
+1. Assurez-vous que l’application [GitHub de synchronisation du code ](https://github.com/apps/aem-code-sync) est installée dans le référentiel.
    * Cela permet à Edge Delivery Services de synchroniser votre code.
    * Si votre référentiel est basé sur le tutoriel, cette étape est déjà terminée.
 
@@ -61,7 +61,7 @@ Votre projet et votre site GitHub sont maintenant connectés à la console.
 
 Si le mode de démonstration a été quitté mais qu’un nouveau projet n’a pas été connecté, les visites ultérieures de l’agent de modernisation de l’expérience forceront un site à être connecté en premier.
 
-![&#x200B; Connexion au site &#x200B;](assets/first-sign-on.png)
+![ Connexion au site ](assets/first-sign-on.png)
 
 ## Page de départ Console {#console-home}
 
@@ -80,12 +80,12 @@ Maintenant que votre console peut accéder à votre code, vous êtes prêt à d�
    * L’importation initiale du contenu d’un site peut prendre plusieurs minutes.
    * La console vous présente des commentaires au fur et à mesure qu’elle commence son travail, y compris un aperçu de ses étapes planifiées.
      ![Import de contenu](assets/content-import.png)
-1. Une fois le site importé, le panneau **&#x200B;**&#x200B;affiche les pages. Sélectionnez une page pour la prévisualiser dans le panneau de droite.
-   ![&#x200B; Contenu importé &#x200B;](assets/content-imported.png)
+1. Une fois le site importé, le panneau **** affiche les pages. Sélectionnez une page pour la prévisualiser dans le panneau de droite.
+   ![ Contenu importé ](assets/content-imported.png)
 1. Maintenant que vous disposez de contenu, vous pouvez demander à importer les styles à partir de la même source.
    * « Importez les styles généraux à partir de `https://wknd-trendsetters.site`. »
 1. Comme pour l’importation de contenu initiale, l’importation peut prendre plusieurs minutes et la console fournit des commentaires pendant le traitement de votre demande et l’importation des styles. Une fois la tâche terminée, cliquez sur **Actualiser l’aperçu** dans le panneau de droite pour afficher le contenu stylisé.
-   ![&#x200B; Styles importés &#x200B;](assets/styles-imported.png)
+   ![ Styles importés ](assets/styles-imported.png)
 
 Le contenu et les styles sont maintenant importés dans la console.
 
@@ -171,5 +171,5 @@ Les documents suivants peuvent s’avérer utiles lorsque vous continuez à expl
 
 * [Console de modernisation de l’expérience](/help/ai-in-aem/agents/brand-experience/modernization/console.md) - Détails sur la console, ses vues, options et fonctionnalités
 * [Guide d’invite pour l’agent de modernisation de l’expérience](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md) - Idées sur la manière d’inviter l’agent et sur ce que ses compétences peuvent faire
-* [Tutoriel de développement Edge Delivery Services &#x200B;](https://www.aem.live/developer/tutorial) - Utile si vous êtes un débutant dans les projets AEM et Edge Delivery Services
+* [Tutoriel de développement Edge Delivery Services ](https://www.aem.live/developer/tutorial) - Utile si vous êtes un débutant dans les projets AEM et Edge Delivery Services
 * [Création de documents](https://da.live) - Utile si vous êtes un débutant dans la création de documents pour la gestion de contenu
