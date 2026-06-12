@@ -5,7 +5,7 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 629ac4c2da92997ab01a91fe3f4f1d93fd6d7c30
+source-git-commit: 416723b6688fffa02287e314535fef519207cf9c
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 9%
@@ -16,6 +16,7 @@ ht-degree: 9%
 # Modifier des programmes {#editing-programs}
 
 Pour gérer et modifier des programmes, commencez par la console [**Mes programmes**](/help/implementing/cloud-manager/navigation.md). La page **Mes programmes** donne un aperçu de tous les programmes auxquels vous avez accès. Lors de la sélection d’un programme individuel, la page **Aperçu du programme** donne un aperçu des détails du programme.
+
 
 Dans l’**Aperçu du programme**, les utilisateurs disposant des autorisations requises peuvent modifier les [programmes de production créés dans votre organisation](creating-production-programs.md) et les [programmes Sandbox créés dans votre organisation](creating-sandbox-programs.md). En modifiant un programme, vous pouvez effectuer les opérations suivantes :
 

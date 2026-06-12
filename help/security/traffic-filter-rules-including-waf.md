@@ -4,7 +4,7 @@ description: Configurer des règles de filtre de trafic incluant des règles de 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 629ac4c2da92997ab01a91fe3f4f1d93fd6d7c30
+source-git-commit: 416723b6688fffa02287e314535fef519207cf9c
 workflow-type: tm+mt
 source-wordcount: '4257'
 ht-degree: 68%
@@ -15,6 +15,7 @@ ht-degree: 68%
 # Règles de filtrage de trafic incluant des règles WAF {#traffic-filter-rules-including-waf-rules}
 
 Les règles de filtrage du trafic bloquent ou autorisent les requêtes au niveau de la couche CDN, ce qui s’avère utile dans les scénarios tels que les suivants :
+
 
 * Limiter l’accès à des domaines spécifiques au trafic interne de l’entreprise avant la mise en ligne d’un nouveau site.
 * Pour être moins sensible aux attaques par déni de service volumétriques, fixez des limites de débit.
