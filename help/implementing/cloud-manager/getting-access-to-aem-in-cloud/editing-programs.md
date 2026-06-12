@@ -5,9 +5,9 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 4ae77b2c9cff253749578127827a12e8483aaf7f
+source-git-commit: d1f3c63c50368dffb2ff5c41c401a5b050495cdd
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1324'
 ht-degree: 9%
 
 ---
@@ -19,6 +19,7 @@ Pour gérer et modifier des programmes, commencez par la console [**Mes programm
 
 Dans l’**Aperçu du programme**, les utilisateurs disposant des autorisations requises peuvent modifier les [programmes de production créés dans votre organisation](creating-production-programs.md) et les [programmes Sandbox créés dans votre organisation](creating-sandbox-programs.md). En modifiant un programme, vous pouvez effectuer les opérations suivantes :
 
+* Activez ou désactivez la protection **WAF-DDOS** dans l&#39;onglet **Sécurité**.
 * Ajoutez la solution Sites à un programme existant avec Assets et ajoutez Assets à un programme existant avec Sites.
 * Supprimez Sites ou Assets d’un programme existant qui comporte à la fois Sites et Assets.
 * Ajoutez un droit de solution inutilisé à un programme existant ou créez un programme.
@@ -49,10 +50,23 @@ Chaque fois qu’un programme est modifié, y compris par l’ajout ou la suppre
    ![Onglet Général](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/edit-program-dialog-box.png)
 
    Les options disponibles pour la modification du programme sont les mêmes que pour la création du programme.
+
+   * Dans l’onglet **Sécurité**, vous pouvez activer **Clés gérées par le client** pour un programme existant.
+
+     >[!NOTE]
+     >
+     >Pour activer ou désactiver le pare-feu d&#39;application web (WAF) à tout moment, dans le même onglet Sécurité, activez ou désactivez la case à cocher **Protection WAF-DDOS**. Si les règles WAF sont sous licence mais que cette case n&#39;est pas cochée, la fonction n&#39;est pas active et ses protections ne s&#39;appliquent pas. Pour plus d’informations, voir [Règles de filtrage du trafic, y compris les règles WAF](/help/security/traffic-filter-rules-including-waf.md).
+     >
+     >Pour confirmer que la fonctionnalité est active, examinez les [journaux du réseau CDN](//help/security/traffic-filter-rules-including-waf.md#cdn-logs) une fois que le trafic atteint le site. Recherchez les entrées de journal qui incluent une propriété `rules` contenant un attribut `waf`. Par exemple :
+     >
+     >`"rules": "waf=SQLI"`
+     >
+     >Cet attribut apparaît une fois que WAF est actif, avant même le déploiement des règles WAF.
+
    * Vous pouvez configurer si un niveau de publication est configuré pour de nouveaux environnements (Beta). Voir [Niveau de publication flexible (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
    * Voir [Créer des programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) et [Créer des programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) pour plus d’informations sur les différentes options.
    * [D’autres options](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) sont disponibles pour votre programme de production en fonction des droits de votre entreprise.
-   * Dans l’onglet **Sécurité**, vous pouvez également activer **Clés gérées par le client** pour un programme existant.
+
 
    ![&#x200B; Boîte de dialogue Modifier le programme affichant les clés gérées par le client sélectionnées](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cmk-edit-programs.png)
 
