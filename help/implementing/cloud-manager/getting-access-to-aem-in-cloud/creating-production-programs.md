@@ -5,7 +5,7 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 10a8e73223d52f5caf092a707cf7b541f09d9802
+source-git-commit: c5949b2d49cb8d405da7a34cb7e69da62ec28247
 workflow-type: tm+mt
 source-wordcount: '1792'
 ht-degree: 6%
@@ -127,7 +127,7 @@ Compatible avec la norme HIPAA d’Adobe et WAF-DDOS (Web Application Firewall -
      >
      >`"rules": "waf=SQLI"`
      >
-     >Cet attribut apparaît une fois que WAF est actif, avant même le déploiement des règles WAF.
+     >Cet attribut s’affiche lorsque WAF est actif, avant même le déploiement des règles WAF.
 
 * **Clés gérées par le client** - Cette option active la fonction CMK (Clés gérées par le client) pour le programme, ce qui vous permet de fournir vos propres clés de chiffrement pour les données inactives dans le stockage Blob Azure et MongoDB. Si vous le souhaitez, vous pouvez activer la fonction CMK ultérieurement en [modifiant un programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing).
 

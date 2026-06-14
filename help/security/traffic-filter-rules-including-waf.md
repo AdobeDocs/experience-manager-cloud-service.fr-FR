@@ -4,9 +4,9 @@ description: Configurer des règles de filtre de trafic incluant des règles de 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 10a8e73223d52f5caf092a707cf7b541f09d9802
+source-git-commit: 3c140f8cdf3bd03c4b4be101d2d1fb6d8cff84ea
 workflow-type: tm+mt
-source-wordcount: '4257'
+source-wordcount: '4268'
 ht-degree: 68%
 
 ---
@@ -73,7 +73,7 @@ Voici un processus de bout en bout recommandé et détaillé pour déterminer le
 
    >[!IMPORTANT]
    >
-   >Les règles de licence WAF ne les activent pas. La fonctionnalité reste inactive jusqu&#39;à ce que la protection **WAF-DDOS** soit cochée dans l&#39;onglet **Sécurité** de Cloud Manager.
+   >Les règles de licence WAF *ne les activent pas* La fonctionnalité reste inactive jusqu&#39;à ce que la protection **WAF-DDOS** soit cochée dans l&#39;onglet **Sécurité** de Cloud Manager. Voir [Créer des programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) ou [Modifier des programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) pour activer la fonctionnalité.
 
 1. Lisez et terminez le tutoriel pour savoir comment utiliser les règles de filtrage du trafic, y compris les règles WAF si elles ont fait l’objet d’une licence. Ce tutoriel vous guide tout au long des étapes du déploiement de règles dans un environnement de développement, de la simulation du trafic malveillant et du téléchargement des [journaux du réseau CDN](#cdn-logs) à leur analyse dans les [outils du tableau de bord](#dashboard-tooling).
 1. Copiez les règles de démarrage recommandées dans `cdn.yaml` et déployez la configuration dans l’environnement de production, en plaçant certaines règles en mode journal.
