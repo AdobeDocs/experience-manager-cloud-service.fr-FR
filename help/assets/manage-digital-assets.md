@@ -7,10 +7,10 @@ feature: Asset Management, Publishing,Collaboration, Asset Processing
 role: User, Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: ed11b465dd7faff74fd1b740ffaef1edb7cb5a9d
+source-git-commit: f06e04efec715413306b41be82328fba24c31404
 workflow-type: tm+mt
-source-wordcount: '4336'
-ht-degree: 81%
+source-wordcount: '4541'
+ht-degree: 77%
 
 ---
 
@@ -279,6 +279,25 @@ De plus, désactivez l’option Forcer la suppression à l’aide d’un recouvr
    >[!NOTE]
    >
    >Pour résoudre ou supprimer les références entrantes provenant d’autres pages, mettez à jour les références appropriées avant de supprimer une ressource. Vous pouvez interdire la suppression des ressources référencées, car elle entraîne des ruptures de liens. Désactivez le bouton Forcer la suppression à l’aide d’une superposition.
+
+## Tâches en arrière-plan asynchrones {#asynchronous-background-jobs}
+
+Pour améliorer les performances et la fiabilité lors du traitement d’un grand nombre de ressources, AEM utilise des tâches asynchrones en arrière-plan pour certaines opérations de gestion des ressources. Au lieu d’effectuer ces opérations immédiatement, AEM les traite en arrière-plan et permet aux utilisateurs de continuer à travailler pendant que le suivi de la progression est effectué séparément.
+
+
+Les opérations telles que le déplacement, la copie ou la suppression de dossiers contenant plus de 150 ressources sont automatiquement exécutées en tant que tâches asynchrones. Lors du démarrage de l’une de ces opérations, les utilisateurs et utilisatrices peuvent choisir d’exécuter le traitement immédiatement ou de le planifier à une date ultérieure.
+
+![Sélecteur de date](assets/schedule-asnyc-job.png)
+
+Pendant l’exécution de l’opération, AEM traite les ressources par lots et enregistre régulièrement la progression. L’interface utilisateur d’AEM affiche également les mises à jour de progression afin que les utilisateurs puissent surveiller le statut de l’opération.
+
+![Sélecteur de date](assets/move-progress-folder-indicator.png)
+
+Pour les opérations de déplacement et de suppression, l’accès aux dossiers affectés est limité lorsque la tâche est en cours d’exécution, afin d’éviter les actions en conflit.
+
+Pour suivre la progression des tâches, ouvrez la console Tâches Assets (**Assets** > **Tâches** dans la vue Administration). La console affiche des détails tels que le statut actuel, le pourcentage achevé et d’autres informations sur la tâche. Sélectionnez une tâche, puis cliquez sur Ouvrir pour afficher des détails supplémentaires, notamment des informations de progression et le temps restant estimé pour terminer. Les utilisateurs sont également avertis lorsque l’opération se termine.
+
+![Sélecteur de date](assets/async-jobs-status.png)
 
 ## Télécharger des ressources {#download-assets}
 
