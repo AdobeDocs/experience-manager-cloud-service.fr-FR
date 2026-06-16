@@ -22,8 +22,8 @@ Cet article décrit comment conserver un seul formulaire adaptatif portable et f
 ## Conditions préalables {#prerequisites}
 
 * Formulaire adaptatif basé sur les composants principaux.
-* Un [ Conteneur de configurations ](/help/implementing/developing/introduction/configurations.md) créé via l’explorateur de configurations (**Outils** > **Général** > **Explorateur de configurations**) avec l’**Configurations cloud** activé.
-* Autorisation d’accès à **Outils** > **Services cloud** et, pour la promotion, [Gestionnaire de packages](/help/implementing/developing/tools/package-manager.md) sur chaque environnement (ou un pipeline de déploiement Cloud Manager [](/help/implementing/deploying/overview.md#deploying-content-packages-via-cloud-manager-and-package-manager)).
+* Un [&#x200B; Conteneur de configurations &#x200B;](/help/implementing/developing/introduction/configurations.md) créé via l’explorateur de configurations (**Outils** > **Général** > **Explorateur de configurations**) avec l’**Configurations cloud** activé.
+* Autorisation d’accès à **Outils** > **Services cloud** et, pour la promotion, [Gestionnaire de packages](/help/implementing/developing/tools/package-manager.md) sur chaque environnement (ou un pipeline de déploiement Cloud Manager [&#128279;](/help/implementing/deploying/overview.md#deploying-content-packages-via-cloud-manager-and-package-manager)).
 
 ## Créer la configuration de service RESTful lors de l’évaluation {#create-rest-configuration}
 
