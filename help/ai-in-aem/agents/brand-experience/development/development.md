@@ -36,7 +36,7 @@ Il prend en charge les tâches suivantes, accessibles par le biais de l’interf
 >
 >Consultez également la section [Directives d’utilisation d’Adobe Experience Cloud Generative AI](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
 
-Vous pouvez envoyer par e-mail les commentaires spécifiques à l’agent de développement à [](mailto:aem-devagent@adobe.com).
+Vous pouvez envoyer par e-mail les commentaires spécifiques à l’agent de développement à [&#128279;](mailto:aem-devagent@adobe.com).
 
 ## Tâche Cloud Manager {#cloud-manager-job}
 
@@ -121,7 +121,7 @@ Vous accédez à l’agent de développement par le biais de l’assistant d’I
 
 1. Sur la page **Aperçu du programme**, dans la vignette **Pipelines**, cliquez sur un pipeline.
 
-   ![ Pipeline sélectionné ](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-pipeline-select.png)
+   ![&#x200B; Pipeline sélectionné &#x200B;](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-pipeline-select.png)
 
 1. Sur la page **Génération et analyse du code**, notez l’échec du pipeline.
 
@@ -167,4 +167,4 @@ Pour les autres types de pipeline et étapes, déboguez les échecs en télécha
 
 Déboguer les problèmes liés à la réplication, tels que les files d’attente bloquées.
 
-Veuillez envoyer un e-mail à [](mailto:aem-devagent@adobe.com) pour accéder au programme bêta.
+Veuillez envoyer un e-mail à [&#128279;](mailto:aem-devagent@adobe.com) pour accéder au programme bêta.
