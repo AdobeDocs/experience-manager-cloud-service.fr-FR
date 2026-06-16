@@ -4,9 +4,9 @@ description: Découvrez comment exécuter JavaScript au niveau de la couche CDN 
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: fc46155da4012672ad07b320b046179d93671441
+source-git-commit: 33998fa44df1ad26d127bdc27b6903e9c56b7fc3
 workflow-type: tm+mt
-source-wordcount: '1697'
+source-wordcount: '1709'
 ht-degree: 2%
 
 ---
@@ -97,7 +97,7 @@ Créez un fichier nommé `edgeFunctions.yaml` dans votre répertoire de configur
 kind: "EdgeFunctions"
 version: "1"
 data:
-  services:
+  functions:
     - name: my-edge-function
     # add advanced configuration under here
 ```
@@ -106,7 +106,7 @@ Les environnements Java-stack possèdent 1 fonction Edge et les implémentations
 
 | Clé | Description |
 |---|---|
-| `services` | Liste des services de fonction Edge, chacun identifié par un `name`. Remarque : ce sera bientôt renommé `functions`. |
+| `functions` | Liste des fonctions Edge, chacune identifiée par un `name`. Pour une rétrocompatibilité, `services` est également acceptée, mais `functions` est la clé préférée. L’utilisation des deux dans le même fichier n’est pas autorisée. |
 | `configs` | Paires clé/valeur exposées aux fonctions Edge d’un environnement en tant que variables d’environnement. |
 | `secrets` | Paires clé/valeur faisant référence à des secrets Cloud Manager pour les fonctions Edge d’un environnement |
 | `kvs` | Bouton bascule booléen pour configurer un magasin KV pour les données de valeur-clé de lecture/écriture d’exécution partagées entre toutes les fonctions Edge dans un environnement. |
