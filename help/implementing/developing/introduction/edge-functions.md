@@ -4,7 +4,7 @@ description: Découvrez comment exécuter JavaScript au niveau de la couche CDN 
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: 33998fa44df1ad26d127bdc27b6903e9c56b7fc3
+source-git-commit: 21f4115d09e6dc804a69ecc012a2c654794f39ad
 workflow-type: tm+mt
 source-wordcount: '1709'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->AEM Edge Functions est une fonctionnalité **bêta**. Les fonctionnalités et la documentation peuvent changer sans préavis. Pour rejoindre le programme d’accès anticipé et soumettre vos commentaires, envoyez un e-mail à l’adresse [&#128279;](mailto:aemcs-edgecompute-feedback@adobe.com).
+>AEM Edge Functions est une fonctionnalité **bêta**. Les fonctionnalités et la documentation peuvent changer sans préavis. Pour rejoindre le programme d’accès anticipé et soumettre vos commentaires, envoyez un e-mail à l’adresse [](mailto:aemcs-edgecompute-feedback@adobe.com).
 
 AEM Edge Functions vous permet d’exécuter JavaScript au niveau de la couche CDN, ce qui rapproche le traitement des données de l’utilisateur final. Cela réduit la latence et permet d’offrir des expériences réactives et dynamiques sans aller-retour vers votre origine.
 
@@ -236,7 +236,7 @@ Avant de configurer la mise en cache, examinez le comportement de votre contenu 
 
 Comme le réseau CDN et le cache de récupération interne de la fonction Edge fonctionnent indépendamment, toute modification des données sous-jacentes nécessite l’invalidation délibérée des couches **des deux**. La compréhension de cette architecture est essentielle pour une gestion fiable du cache.
 
-Pour obtenir des conseils techniques détaillés sur la configuration du comportement de mise en cache, le contrôle des durées de vie du cache, l’utilisation de clés de substitution et la purge du contenu mis en cache, voir [&#x200B; Mise en cache dans les fonctions AEM Edge &#x200B;](/help/implementing/developing/introduction/edge-functions-caching.md).
+Pour obtenir des conseils techniques détaillés sur la configuration du comportement de mise en cache, le contrôle des durées de vie du cache, l’utilisation de clés de substitution et la purge du contenu mis en cache, voir [ Mise en cache dans les fonctions AEM Edge ](/help/implementing/developing/introduction/edge-functions-caching.md).
 
 ## Limites {#limitations}
 
@@ -283,7 +283,7 @@ Exposez les variables d’environnement à vos fonctions à l’aide de la clé 
 kind: "EdgeFunctions"
 version: "1"
 data:
-  services:
+  functions:
     - name: my-edge-function
   configs:
     - key: LOG_LEVEL
@@ -315,7 +315,7 @@ Les secrets sont référencés, et non stockés, dans `edgeFunctions.yaml`. Le c
 kind: "EdgeFunctions"
 version: "1"
 data:
-  services:
+  functions:
     - name: my-edge-function
   secrets:
     - key: API_TOKEN
@@ -346,7 +346,7 @@ Les fonctions Edge peuvent lire et écrire des données de valeur-clé arbitrair
 kind: "EdgeFunctions"
 version: "1"
 data:
-  services:
+  functions:
     - name: my-edge-function
   kvs: true
 ```
