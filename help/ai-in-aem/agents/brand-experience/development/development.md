@@ -1,50 +1,113 @@
 ---
 title: Présentation de l’agent de développement
-description: Découvrez comment l’agent de développement dans AEM analyse les pipelines ayant échoué dans Cloud Manager et crée des journaux pour suggérer des correctifs de code et accélérer le débogage.
+description: Découvrez comment l’agent de développement dans AEM analyse les pipelines en échec dans Cloud Manager et crée des journaux pour suggérer des correctifs de code et accélérer le débogage. Apprenez également comment récupérer les informations de Cloud Manager et l’aide en cas d’échec de réplication, et comment définir des heures de silence et mettre à jour les périodes d’accès gratuit pour les mises à jour d’AEM.
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Developer
 exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 0b050b161b11b9b4cd58e575d69472d3173dfe94
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 0%
+source-wordcount: '1184'
+ht-degree: 10%
 
 ---
 
 
 # Présentation de l’agent de développement {#development-agent-overview}
 
-[Dans le cadre du Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) l’agent de développement aide les développeurs et les administrateurs d’AEM à créer, déboguer, déployer et optimiser le code plus efficacement.
+[Dans le cadre du Brand Experience Agent,](/help/ai-in-aem/agents/brand-experience/overview.md) l’agent de développement aide les développeurs et les administrateurs de la pile Java AEM traditionnelle à créer, déboguer, déployer et optimiser le code plus efficacement.
 
-L’agent peut récupérer les statuts de pipeline et vous aider à résoudre les problèmes liés aux étapes de création échouées en suggérant des correctifs, ce qui vous permet de gagner du temps lors du débogage des déploiements d’AEM as a Cloud Service dans les environnements de développement, d’évaluation et de production. Il examine les journaux de génération et le code associé pour vous recommander un correctif que vous pouvez appliquer manuellement.
+Il prend en charge les tâches suivantes, accessibles par le biais de l’interface conversationnelle de l’assistant d’IA.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478009?captions=fre_fr&quality=12&learn=on)
+* Tâche Cloud Manager : opérations en lecture seule, y compris la liste des programmes et des environnements, ainsi que l’état du pipeline
+* Tâche de dépannage du pipeline : débogage des pipelines ayant échoué
+* Tâche de gestion des heures creuses et des périodes creuses (disponibilité limitée) : affichage, création et modification des heures creuses et mise à jour des périodes creuses
+* Tâche de dépannage de la réplication (Beta) : débogage des problèmes liés à la réplication, tels que les files d’attente bloquées.
+
+>[!NOTE]
+>
+> Les développeurs trouveront également utiles ces fonctionnalités optimisées par l’IA :
+> * [Compétences de l’agent IDE](/help/ai-in-aem/local-development-with-ai-tools.md#agent-skills) pour les scénarios de développement local, tels que la génération de composants AEM.
+> * [Serveurs MCP locaux](/help/ai-in-aem/local-development-with-ai-tools.md#aem-quickstart-mcp-server) pour le développement local, en particulier pour le débogage des problèmes d’AEM et de Dispatcher.
+> * [Serveurs MCP distants](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) pour accéder aux API et aux agents AEM.
 
 >[!IMPORTANT]
 >
 >Les réponses générées par l&#39;IA peuvent être inexactes ou trompeuses. Assurez-vous de vérifier les correctifs et les réponses suggérés.
 >
->Consultez également les [Directives d’utilisation de l’IA générative de &#x200B;](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+>Consultez également la section [Directives d’utilisation d’Adobe Experience Cloud Generative AI](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+
+Vous pouvez envoyer par e-mail les commentaires spécifiques à l’agent de développement à [](mailto:aem-devagent@adobe.com).
+
+## Tâche Cloud Manager {#cloud-manager-job}
+
+Obtenez des informations sur vos programmes et environnements AEM, notamment :
+* liste des programmes et environnements
+* liste des variables d’environnement
+* recherche des noms des pipelines et du statut d’exécution actuel et des détails des étapes
+* récupération des liens vers les journaux téléchargeables
+
+### Exemples d’invites {#sample-cm-job-prompts}
+
+
+| Prompt | Résultat |
+| --- | --- |
+| *Liste de tous mes programmes AEM Cloud Service* | Liste les programmes auxquels vous avez accès. |
+| *Obtenir des détails sur les 12345* du programme | Récupérez les détails du programme. |
+| *Liste des environnements dans les 12345* de programme | Répertorie les environnements du programme. |
+| *Obtention des journaux pour l’environnement de production* | Récupère des liens vers divers fichiers journaux d’AEM, du Dispatcher et du réseau CDN afin qu’ils puissent être téléchargés à des fins de débogage ou autres. |
+| *liste des pipelines pour les 12345* de programme | Répertorier les pipelines dans le programme. |
+| *Quel est le statut de l’exécution actuelle du pipeline ?* | Répond avec le statut du pipeline. |
+| *Obtenez-moi les liens du journal de génération pour les 12345* d’exécution du pipeline | Récupère les liens vers les journaux de génération de pipeline pour une exécution de pipeline spécifique. |
+
+
+## Tâche de gestion des heures creuses et des périodes libres de mise à jour {#control-updates-job}
+
+>[!AVAILABILITY]
+>
+>Cette fonctionnalité est en phase de disponibilité limitée et sera déployée au cours des prochaines semaines. E-Mail [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com) pour un accès immédiat.
+
+Affichez, créez et modifiez les heures creuses et mettez à jour les périodes libres directement via l’assistant AEM AI.
+
+L’avantage clé est la réduction des erreurs de planification. Lorsque vous effectuez une demande, l’assistant vous guide tout au long des étapes possibles et signale les limites qui s’appliquent, telles que la limite de trois périodes, l’intervalle obligatoire d’une semaine entre les périodes et les fenêtres d’exclusion de la maintenance planifiée que vous ne pouvez pas planifier.
+
+Ainsi, au lieu de découvrir une contrainte après une configuration ayant échoué, les propriétaires d’entreprise et les responsables de déploiement sont dirigés vers un planning valide dans la même conversation. Cela permet de protéger les fenêtres d’activité critiques contre les mises à jour de maintenance automatique tout en réduisant les allers-retours et les erreurs de configuration.
+
+### Exemples d’invites {#sample-updates-prompts}
+
+| Prompt | Résultat |
+| --- | --- |
+| *Quel est le planning actuel de mise à jour des 12345 du programme ?* | Permet d’obtenir la liste des règles de mise à jour AEM actuelles. |
+| *Bloquez les mises à jour d’AEM de 9 h à 17 h EST pour les 12345* du programme. | Configurez une règle pour que les mises à jour d’AEM ne soient pas appliquées pendant les heures de travail standard. |
+| *Supprimer le bloc de mise à jour quotidienne pour les 12345* du programme | Supprime les règles qui empêchent les mises à jour AEM. |
+| *Mise à jour d’AEM en pause dans deux semaines pour les 12345* du programme | Crée une règle pour empêcher les mises à jour d&#39;AEM. |
+| *Mon programme est constamment mis à jour à des moments inopportuns. Quelles sont mes options ?* | Répond avec des informations sur la façon de définir des règles pour contrôler le planning de mise à jour d’AEM. |
+
+
+
+## Tâche de dépannage du pipeline  {#cloud-manager-pipeline-troubleshooting}
+
+Cette tâche peut récupérer les statuts du pipeline et vous aider à résoudre les problèmes liés aux étapes de création échouées en suggérant des correctifs, ce qui vous permet de gagner du temps lors du débogage des déploiements d’AEM as a Cloud Service dans les environnements de développement, d’évaluation et de production. Il examine les journaux de génération et le code associé pour vous recommander un correctif que vous pouvez appliquer manuellement.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!NOTE]
 >
->Le dépannage des pipelines se limite aux pipelines de pile complète (déploiement et qualité du code), mais la prise en charge du **Pipeline de configuration de niveau web** est désormais disponible en version bêta. Pour demander l’accès, envoyez un e-mail à [&#128279;](mailto:aem-devagent@adobe.com). Un accès préexistant aux agents dans AEM est requis.
+>Le dépannage des pipelines se limite aux pipelines de pile complète (déploiement et qualité du code) et Pipeline de configuration de niveau web.
 
-<!-- 
-## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
+<!--
+To access this agent, please refer to the [release notes](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) for instructions on how to enroll in the beta program, being sure to indicate your interest in the  Development Agent. You can also email development agent–specific feedback to [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com)
+
 -->
 
-Pour accéder à cet agent, reportez-vous aux [notes de mise à jour](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) pour obtenir des instructions sur la façon de s’inscrire au programme bêta, en veillant à indiquer votre intérêt pour l’agent de développement. Vous pouvez également envoyer par e-mail les commentaires spécifiques à l’agent de développement à [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com)
+[Suivez un tutoriel](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/agents/development-agent-troubleshoot-ci-cd-pipeline) pour savoir comment utiliser l’agent de développement afin de résoudre les problèmes liés aux pipelines.
 
-[Suivez un tutoriel](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/ai/agents/development-agent-troubleshoot-ci-cd-pipeline) pour savoir comment utiliser l’agent de développement afin de résoudre les problèmes liés aux pipelines.
-
-## Accès à l’agent de développement via Cloud Manager {#how-to-access-the-agent}
+### Accès à l’agent de développement via Cloud Manager {#how-to-access-the-agent}
 
 Vous accédez à l’agent de développement par le biais de l’assistant d’IA présent dans les interfaces utilisateur, notamment Cloud Manager ou Experience Hub.
 
-1. Pour commencer, cliquez sur [&#128279;](https://experience.adobe.com/#/@foundationinternal/home) pour ouvrir sa page d&#39;accueil.
+1. Pour commencer, cliquez sur [Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home) pour ouvrir sa page d’accueil.
 
-   ![Page d&#39;accueil de &#x200B;](/help/implementing/cloud-manager/assets/experience-cloud-experiencemanager.png)
+   ![Page d’accueil d’Adobe Experience Cloud](/help/implementing/cloud-manager/assets/experience-cloud-experiencemanager.png)
 
 1. Dans le rail de gauche, sous l’en-tête **Services**, cliquez sur **Cloud Manager**.
 
@@ -52,25 +115,25 @@ Vous accédez à l’agent de développement par le biais de l’assistant d’I
 
    >[!IMPORTANT]
    >
-   >Les widgets, outils et artefacts affichés dépendent du personnage de l’utilisateur, des droits et du type de déploiement d’AEM (AEM as a Cloud Service ou Managed Services 6.5/6.5 LTS).
+   >Les widgets, outils et artefacts affichés dépendent du persona de l’utilisateur ou de l’utilisatrice, des droits et du type de déploiement d’AEM (AEM as a Cloud Service ou Managed Services 6.5/6.5 LTS).
 
 1. Dans le rail de gauche, sous **Programme**, cliquez sur **![Icône Aperçu](/help/implementing/cloud-manager/configuring-pipelines/assets/overview.svg) Aperçu**.
 
 1. Sur la page **Aperçu du programme**, dans la vignette **Pipelines**, cliquez sur un pipeline.
 
-   ![&#x200B; Pipeline sélectionné &#x200B;](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-pipeline-select.png)
+   ![ Pipeline sélectionné ](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-pipeline-select.png)
 
 1. Sur la page **Génération et analyse du code**, notez l’échec du pipeline.
 
    ![Échec du pipeline affiché sur la page Génération et analyse du code](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-pipeline-failure.png)
 
-1. Dans le coin supérieur droit de l’interface utilisateur d’AEM (à partir des pages Cloud Manager ou de l’instance d’auteur des environnements AEM), cliquez sur l’icône **Assistant IA**.
+1. Dans le coin supérieur droit de l’interface d’utilisation d’AEM (à partir des pages Cloud Manager ou de l’instance de création des environnements AEM), cliquez sur l’icône **Assistant IA**.
 
-   ![Icône Assistant IA de la barre d’outils](/help/implementing/cloud-manager/assets/ai-assistant-icon.png)
+   ![Icône Assistant IA de la barre d’outils](/help/implementing/cloud-manager/assets/ai-assistant-icon.png)
 
    Consultez également la section [Assistant AI dans AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
 
-1. Dans la zone de texte du panneau **Assistant AI** située en bas, saisissez votre question ou votre invite, puis appuyez sur `Enter` ou cliquez sur ![Icône Envoyer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg).
+1. Dans la zone de texte du panneau **Assistant IA** située en bas, saisissez votre question ou votre prompt, puis appuyez sur `Enter` ou cliquez sur ![icône Envoyer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg).
 
    Par exemple :
    *Dans le programme « eda-org-01-no-access », analysez l’échec du pipeline « no-access » et résolvez les problèmes.*
@@ -79,11 +142,11 @@ Vous accédez à l’agent de développement par le biais de l’assistant d’I
 
    ![invite de l’assistant AI et réponse qui en résulte](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-prompt-response.png)
 
-## Autorisations {#permissions}
+### Autorisations {#permissions}
 
-L’agent de développement requiert le rôle Cloud Manager - Développeur ou Cloud Manager - Gestionnaire de programme .
+La tâche de dépannage du pipeline nécessite le rôle Cloud Manager - Développeur ou Cloud Manager - Gestionnaire de programme.
 
-## Exemples d’invites {#sample-prompts}
+### Exemples d’invites {#sample-pipeline-prompts}
 
 | Prompt | Résultat |
 | --- | --- |
@@ -92,8 +155,16 @@ L’agent de développement requiert le rôle Cloud Manager - Développeur ou Cl
 | *Analysez mon pipeline en échec appelé « Pipeline de développement ».* | Cette invite génère une analyse du pipeline ayant échoué avec des suggestions pour corriger le problème. S’il y a plusieurs échecs, des questions supplémentaires seront posées à l’utilisateur. |
 | *Résolution des problèmes liés aux 1234567* d’exécution du pipeline | En fournissant un identifiant d’exécution de pipeline exact, une analyse du pipeline est effectuée. |
 
-## Fonctionnalités hors de portée {#out-of-scope-features}
+### Fonctionnalités hors de portée {#out-of-scope-features}
 
-Le dépannage du pipeline fonctionne sur les étapes de test unitaire et de création et d’analyse de code dans les pipelines Déploiement de pile complète et Qualité du code . Pour les autres types de pipeline et étapes, déboguez les échecs en téléchargeant et en examinant les journaux.
+Le dépannage du pipeline fonctionne sur les étapes de test unitaire et de création et d’analyse de code dans les pipelines Déploiement de pile complète et Qualité du code . Il prend également en charge les [pipelines de configuration de niveau web](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines).
 
-Voir [Journaux d’accès et de téléchargement](/help/implementing/cloud-manager/manage-logs.md) pour plus d’informations.
+Pour les autres types de pipeline et étapes, déboguez les échecs en téléchargeant et en examinant les journaux. Voir [Journaux d’accès et de téléchargement](/help/implementing/cloud-manager/manage-logs.md) pour plus d’informations.
+
+
+
+## Tâche de dépannage de la réplication (Beta) {#replication-troubleshooting-job}
+
+Déboguer les problèmes liés à la réplication, tels que les files d’attente bloquées.
+
+Veuillez envoyer un e-mail à [](mailto:aem-devagent@adobe.com) pour accéder au programme bêta.
