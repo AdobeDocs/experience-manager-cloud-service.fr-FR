@@ -6,7 +6,7 @@ feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery S
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-source-git-commit: 4a080bfb281ba9b61bf9b8ebd090f7e98ddaf2d0
+source-git-commit: ee79ef0d9b1101a245ea918c8ce46d502e98fdb3
 workflow-type: tm+mt
 source-wordcount: '1352'
 ht-degree: 57%
@@ -118,7 +118,7 @@ Pour publier des données sur un serveur externe, fournissez une URL. Le format 
 
    +++Configuration
 
-   Cette option vous permet d’ajouter une configuration HTTP prédéfinie gérée via l’explorateur de configurations d’AEM. Vous pouvez sélectionner la configuration créée pour votre type d’authentification de point d’entrée Rest de service et les types de contenu. Pour en savoir plus sur le type d’authentification et les types de contenu, consultez [configuration des sources de données](/help/forms/configure-data-sources.md#configure-restful-services-service-endpoint). Pour acheminer le même formulaire vers un point d’entrée différent dans chaque environnement, voir [&#x200B; Configuration de points d’entrée REST spécifiques à un environnement pour le même formulaire adaptatif &#x200B;](/help/forms/configure-environment-specific-rest-endpoints.md).
+   Cette option vous permet d’ajouter une configuration HTTP prédéfinie gérée via l’explorateur de configurations d’AEM. Vous pouvez sélectionner la configuration créée pour votre type d’authentification de point d’entrée Rest de service et les types de contenu. Pour en savoir plus sur le type d’authentification et les types de contenu, consultez [configuration des sources de données](/help/forms/configure-data-sources.md#configure-restful-services-service-endpoint). Pour acheminer le même formulaire vers un point d’entrée différent dans chaque environnement, voir [ Configuration de points d’entrée REST spécifiques à un environnement pour le même formulaire adaptatif ](/help/forms/configure-environment-specific-rest-endpoints.md).
 
    +++
 
@@ -178,7 +178,7 @@ Pour publier des données sur un serveur externe, fournissez une URL. Le format 
 
    +++Configuration
 
-   Cette option vous permet d’ajouter une configuration HTTP prédéfinie gérée via l’explorateur de configurations d’AEM. Vous pouvez sélectionner la configuration créée pour votre type d’authentification de point d’entrée Rest de service et les types de contenu. Pour en savoir plus sur le type d’authentification et les types de contenu, consultez [configuration des sources de données](/help/forms/configure-data-sources.md#configure-restful-services-service-endpoint). Pour acheminer le même formulaire vers un point d’entrée différent dans chaque environnement, voir [&#x200B; Configuration de points d’entrée REST spécifiques à un environnement pour le même formulaire adaptatif &#x200B;](/help/forms/configure-environment-specific-rest-endpoints.md).
+   Cette option vous permet d’ajouter une configuration HTTP prédéfinie gérée via l’explorateur de configurations d’AEM. Vous pouvez sélectionner la configuration créée pour votre type d’authentification de point d’entrée Rest de service et les types de contenu. Pour en savoir plus sur le type d’authentification et les types de contenu, consultez [configuration des sources de données](/help/forms/configure-data-sources.md#configure-restful-services-service-endpoint). Pour acheminer le même formulaire vers un point d’entrée différent dans chaque environnement, voir [ Configuration de points d’entrée REST spécifiques à un environnement pour le même formulaire adaptatif ](/help/forms/configure-environment-specific-rest-endpoints.md).
 
    +++
 
@@ -202,13 +202,11 @@ Pour publier des données sur un serveur externe, fournissez une URL. Le format 
 8. Click Done.
 -->
 
-
-
 ## Bonnes pratiques
 
 * Lors de la publication de données sur un serveur externe, assurez-vous que l’URL est sécurisée et configurez le chemin d’accès pour gérer la requête POST de manière anonyme afin de protéger les informations sensibles.
 * Pour transmettre les champs en tant que paramètres dans une URL REST, tous les champs doivent avoir des noms d’éléments différents, même s’ils sont placés sur différents panneaux.
-* Pour utiliser une autre URL de point d’entrée REST dans les environnements d’évaluation et de production sans modifier le formulaire, consultez [&#x200B; Configuration de points d’entrée REST spécifiques à un environnement pour le même formulaire adaptatif &#x200B;](/help/forms/configure-environment-specific-rest-endpoints.md).
+* Pour utiliser une autre URL de point d’entrée REST dans les environnements d’évaluation et de production sans modifier le formulaire, consultez [ Configuration de points d’entrée REST spécifiques à un environnement pour le même formulaire adaptatif ](/help/forms/configure-environment-specific-rest-endpoints.md).
 
 ## Articles connexes
 
