@@ -4,10 +4,10 @@ description: Configurer des règles de filtre de trafic incluant des règles de 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 2976da7d7032a40912d9822816788fcdc95d828d
+source-git-commit: c3f3693793922f965a59dd693b69a7df9ea96cda
 workflow-type: tm+mt
-source-wordcount: '4268'
-ht-degree: 68%
+source-wordcount: '4278'
+ht-degree: 66%
 
 ---
 
@@ -60,7 +60,7 @@ Par défaut, Adobe prend des mesures pour empêcher la dégradation des performa
 
 Les clients prennent des mesures proactives pour atténuer les attaques de couche d’application (couche 7) en configurant des règles à différents niveaux du flux de diffusion de contenu.
 
-Par exemple, au niveau de la couche Apache, les clients configurent le module [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) ou [ModSecurity](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) pour limiter l’accès à certains contenus.
+Par exemple, au niveau de la couche Apache, les clients configurent le module [](https://experienceleague.adobe.com/fr/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) ou [ModSecurity](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) pour limiter l’accès à certains contenus.
 
 Comme cet article le décrit, les règles de filtrage du trafic sont déployées sur le réseau CDN géré par Adobe à l’aide de Cloud Manager [pipelines de configuration](/help/operations/config-pipeline.md). Au-delà des *règles standard de filtrage du trafic* (adresse IP, chemin, en-têtes, limites de débit), les licences client *règles WAF*.
 
@@ -105,7 +105,9 @@ Voici un processus de bout en bout recommandé et détaillé pour déterminer le
    Voir la section [Utiliser les pipelines de configuration](/help/operations/config-pipeline.md#common-syntax) pour obtenir une description des propriétés situées au-dessus du nœud `data`. La valeur de la propriété `kind` doit être définie sur *CDN* et la version doit être définie sur `1`.
 
 
-1. Si des règles WAF sont sous licence, vous *devez* activer la fonction dans Cloud Manager. Les règles de WAF sous licence ne sont pas actives et ne fournissent aucune protection tant que la protection **WAF-DDOS** n&#39;est pas cochée. Activez la fonctionnalité pour les scénarios de programme nouveaux et existants, comme décrit ci-dessous :
+1. Si des règles WAF sont sous licence, vous *devez* activer la fonction dans Cloud Manager. Les règles de licence WAF ne les activent pas. La fonctionnalité reste inactive jusqu&#39;à ce que la protection **WAF-DDOS** soit cochée dans l&#39;onglet Sécurité de Cloud Manager.
+
+   Activez la fonctionnalité pour les scénarios de programme nouveaux et existants, comme décrit ci-dessous :
 
    1. Pour configurer WAF sur un nouveau programme, cochez la case **Protection WAF-DDOS** dans l&#39;onglet **Sécurité** lorsque vous [créez un programme de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
@@ -167,9 +169,9 @@ Les actions sont classées par ordre de priorité en fonction de leurs types dan
 
 | **Nom** | **Propriétés autorisées** | **Signification** |
 |---|---|---|
-| **autoriser** | `wafFlags` (facultatif), `alert` (facultatif) | Si wafFlags n’est pas présent, arrête le traitement des règles et passe à la diffusion de la réponse. Si wafFlags est présent, désactive les protections WAF spécifiées et poursuit le traitement des règles. <br>Si une alerte est spécifiée, une notification du Centre d’actions est envoyée si la règle est déclenchée 10 fois dans un intervalle de 5 minutes. Une fois qu’une alerte est déclenchée pour une règle spécifique, elle ne se redéclenche pas avant le lendemain (UTC). |
-| **bloquer** | `status, wafFlags` (facultatif et mutuellement exclusif), `alert` (facultatif) | Si wafFlags n’est pas présent, renvoie une erreur HTTP en contournant toutes les autres propriétés, le code d’erreur est défini par la propriété de statut ou sur la valeur par défaut 406. Si wafFlags est présent, active les protections WAF spécifiées et poursuit le traitement des règles. <br>Si une alerte est spécifiée, une notification du Centre d’actions est envoyée si la règle est déclenchée 10 fois dans un intervalle de 5 minutes. Une fois qu’une alerte est déclenchée pour une règle spécifique, elle ne se redéclenche pas avant le lendemain (UTC). |
-| **consigner** | `wafFlags` (facultatif), `alert` (facultatif) | Consigne le fait que la règle a été déclenchée, sinon n’affecte pas le traitement. wafFlags n’a aucun effet. <br>Si une alerte est spécifiée, une notification du Centre d’actions est envoyée si la règle est déclenchée 10 fois dans un intervalle de 5 minutes. Une fois qu’une alerte est déclenchée pour une règle spécifique, elle ne se redéclenche pas avant le lendemain (UTC). |
+| **autoriser** | `wafFlags` (facultatif), `alert` (facultatif) | Si wafFlags n’est pas présent, arrête le traitement des règles et passe à la diffusion de la réponse. Si wafFlags est présent, désactive les protections WAF spécifiées et poursuit le traitement des règles. <br>Si une alerte est spécifiée, une notification du Centre d’actions est envoyée si la règle est déclenchée 10 fois dans un intervalle de 5 minutes. Une fois qu’une alerte est déclenchée pour une règle spécifique, elle ne se déclenche pas à nouveau avant le lendemain (UTC). |
+| **bloquer** | `status, wafFlags` (facultatif et mutuellement exclusif), `alert` (facultatif) | Si wafFlags n’est pas présent, renvoie une erreur HTTP en contournant toutes les autres propriétés, le code d’erreur est défini par la propriété de statut ou sur la valeur par défaut 406. Si wafFlags est présent, active les protections WAF spécifiées et poursuit le traitement des règles. <br>Si une alerte est spécifiée, une notification du Centre d’actions est envoyée si la règle est déclenchée 10 fois dans un intervalle de 5 minutes. Une fois qu’une alerte est déclenchée pour une règle spécifique, elle ne se déclenche pas à nouveau avant le lendemain (UTC). |
+| **consigner** | `wafFlags` (facultatif), `alert` (facultatif) | Consigne le fait que la règle a été déclenchée, sinon n’affecte pas le traitement. wafFlags n’a aucun effet. <br>Si une alerte est spécifiée, une notification du Centre d’actions est envoyée si la règle est déclenchée 10 fois dans un intervalle de 5 minutes. Une fois qu’une alerte est déclenchée pour une règle spécifique, elle ne se déclenche pas à nouveau avant le lendemain (UTC). |
 
 ### Liste des indicateurs WAF {#waf-flags-list}
 
@@ -189,7 +191,7 @@ La propriété `wafFlags` , utilisée dans les règles de filtrage du trafic WAF
 | TRAVERSÉE | Traversée de répertoire | La traversée de répertoire est une tentative de navigation dans des dossiers privilégiés à travers un système dans l’espoir d’obtenir des informations sensibles. |
 | USERAGENT | Outils d’attaque | Les outils d’attaque consistent à utiliser des logiciels automatisés pour identifier des vulnérabilités de sécurité ou pour tenter d’exploiter une vulnérabilité découverte. |
 | LOG4J-JNDI | Log4J JNDI | Les attaques Log4J JNDI tentent d’exploiter la [Vulnérabilité Log4Shell](https://fr.wikipedia.org/wiki/Log4Shell) présente dans les versions de Log4J antérieures à la version 2.16.0 |
-| CVE | CVE | Indicateur utilisé pour identifier un CVE. Est toujours associé à un indicateur `CVE-<CVE Number>`. Contactez Adobe pour en savoir plus sur les CVE contre lesquels Adobe vous protégera. |
+| CVE | CVE | Indicateur pour identifier CVE (Vulnérabilités et expositions courantes). Est toujours associé à un indicateur `CVE-<CVE Number>`. Contactez Adobe pour en savoir plus sur les fichiers CVE contre lesquels Adobe vous protège. |
 
 #### Trafic suspect
 
@@ -370,7 +372,7 @@ Les limites de débit sont évaluées en fonction du trafic Edge, du trafic d’
 | fenêtre | nombre entier : 1, 10 ou 60 | 10 | Fenêtre d’échantillonnage en secondes pour laquelle le débit de requête est calculé. La précision des compteurs dépend de la taille de la fenêtre (plus la fenêtre est grande, plus la précision est élevée). Par exemple, on peut s’attendre à une précision de 50 % pour la fenêtre d’1 seconde et de 90 % pour la fenêtre de 60 secondes. |
 | pénalité | entier compris entre 60 et 3 600 | 300 (5 minutes) | Période en secondes pendant laquelle les requêtes correspondantes sont bloquées (arrondie à la minute la plus proche). |
 | nombre | tout, récupérations, erreurs | tout | Évaluer en fonction du trafic Edge (tout), du trafic d’origine (récupérations) ou du nombre d’erreurs (erreurs). |
-| groupBy | tableau [Getter] | aucun | Le compteur de limiteur de taux sera agrégé par un ensemble de propriétés de requête (par exemple, clientIp). |
+| groupBy | tableau [Getter] | aucun | Le compteur du limiteur de débit est agrégé par un ensemble de propriétés de requête (par exemple, clientIp). |
 
 ### Exemples {#ratelimiting-examples}
 
@@ -418,7 +420,7 @@ data:
         rateLimit: { limit: 100, window: 10, penalty: 60, count: fetches }
 ```
 
-Pour obtenir des fragments de code supplémentaires pour les scénarios avancés, consultez l’article [&#x200B; Fragments de code de configuration du réseau CDN pour les scénarios courants &#x200B;](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md).
+Pour obtenir des fragments de code supplémentaires pour les scénarios avancés, consultez l’article [ Fragments de code de configuration du réseau CDN pour les scénarios courants ](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md).
 
 ## Règles CVE {#cve-rules}
 
@@ -459,7 +461,7 @@ data:
 
 Une notification par e-mail du [Centre d’actions](/help/operations/actions-center.md) vous avertit lorsqu’un trafic élevé provenant de la même adresse IP atteint son origine, ce qui suggère une attaque DDoS.
 
-Si ce seuil est atteint, Adobe bloque le trafic provenant de cette adresse IP. Prenez des mesures supplémentaires pour protéger votre origine, telles que la configuration des règles de filtrage du trafic avec limite de débit. Consultez le tutoriel [&#x200B; Blocage des attaques par déni de service et par déni de service à l’aide des règles de trafic &#x200B;](#tutorial-blocking-DDoS-with-rules) pour une présentation guidée.
+Si ce seuil est atteint, Adobe bloque le trafic provenant de cette adresse IP. Prenez des mesures supplémentaires pour protéger votre origine, telles que la configuration des règles de filtrage du trafic avec limite de débit. Consultez le tutoriel [ Blocage des attaques par déni de service et par déni de service à l’aide des règles de trafic ](#tutorial-blocking-DDoS-with-rules) pour une présentation guidée.
 
 Le système active cette alerte par défaut, mais vous pouvez la désactiver à l’aide de la propriété *defaultTrafficAlerts*, définie sur false. Une fois l’alerte déclenchée, elle ne se déclenche plus avant le lendemain (UTC).
 
@@ -725,7 +727,7 @@ Avant juillet 2025, Adobe recommandait les règles WAF répertoriées ci-desso
 
 ## Tutoriel {#tutorial}
 
-Pour acquérir des connaissances et une expérience pratiques sur les règles de filtrage du trafic, y compris les règles de WAF, suivez une série [&#x200B; tutoriels &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview).
+Pour acquérir des connaissances et une expérience pratiques sur les règles de filtrage du trafic, y compris les règles de WAF, suivez une série [ tutoriels ](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview).
 
 En voici un aperçu :
 

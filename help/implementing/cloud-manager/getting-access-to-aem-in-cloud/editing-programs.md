@@ -5,9 +5,9 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: d5c87853bcc10587c97710e69b350bb9ebe509ae
+source-git-commit: c3f3693793922f965a59dd693b69a7df9ea96cda
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: '1346'
 ht-degree: 9%
 
 ---
@@ -54,7 +54,7 @@ Chaque fois qu’un programme est modifié, y compris par l’ajout ou la suppre
 
    * Vous pouvez configurer si un niveau de publication est configuré pour de nouveaux environnements (Beta). Voir [Niveau de publication flexible (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
    * Voir [Créer des programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) et [Créer des programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) pour plus d’informations sur les différentes options.
-   * Pour activer ou désactiver le pare-feu d&#39;application web (WAF) à tout moment, sélectionnez l&#39;onglet **Sécurité**, puis cochez ou décochez la case **Protection WAF-DDOS**. Si les règles WAF sont sous licence mais que cette case n&#39;est pas cochée, la fonction n&#39;est pas active et ses protections ne s&#39;appliquent pas. Pour plus d’informations, voir [Règles de filtrage du trafic, y compris les règles WAF](/help/security/traffic-filter-rules-including-waf.md).
+   * Pour activer ou désactiver le pare-feu d&#39;application web (WAF) à tout moment, sélectionnez l&#39;onglet **Sécurité**, puis cochez ou décochez la case **Protection WAF-DDOS**. Cocher cette case active la fonction, mais au-delà de la protection CVE (Common Vulnerabilities and Expositions) automatique, vous devez déployer les règles WAF via Cloud Manager pour une protection complète. Si les règles WAF sont sous licence mais que cette case n&#39;est pas cochée, la fonction n&#39;est pas active. Pour plus d’informations, voir [Règles de filtrage du trafic, y compris les règles WAF](/help/security/traffic-filter-rules-including-waf.md).
 
      >[!NOTE]
      >Pour confirmer que la fonctionnalité est active, examinez les [journaux du réseau CDN](//help/security/traffic-filter-rules-including-waf.md#cdn-logs) une fois que le trafic atteint le site. Recherchez les entrées de journal qui incluent une propriété `rules` contenant un attribut `waf`. Par exemple :
@@ -114,11 +114,11 @@ Avant que la notation pour suppression ne soit lancée, le système valide si le
 1. Sélectionnez l’organisation appropriée.
 1. Sur la page **Mes programmes**, pour le programme de production que vous souhaitez marquer comme devant être supprimé, cliquez sur ![icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), puis sur **Supprimer le programme**.
 
-   ![Sélectionner Supprimer le programme dans la liste déroulante d’un programme de production &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*L’exemple de programme de production ci-dessus est fourni à titre d’illustration uniquement.*
+   ![Sélectionner Supprimer le programme dans la liste déroulante d’un programme de production ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*L’exemple de programme de production ci-dessus est fourni à titre d’illustration uniquement.*
 
 1. Dans la boîte de dialogue **Marquer le programme de production pour suppression**, passez en revue l’avertissement qui répertorie les ressources connectées à votre programme, y compris les environnements de production, d’évaluation et de développement.
 
-   ![Boîte de dialogue Supprimer le programme de production &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete2.png)
+   ![Boîte de dialogue Supprimer le programme de production ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete2.png)
 
 
    >[!NOTE]
