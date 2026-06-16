@@ -4,7 +4,7 @@ description: Découvrez comment exécuter JavaScript au niveau de la couche CDN 
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: 33998fa44df1ad26d127bdc27b6903e9c56b7fc3
+source-git-commit: 21f4115d09e6dc804a69ecc012a2c654794f39ad
 workflow-type: tm+mt
 source-wordcount: '1709'
 ht-degree: 2%
@@ -283,7 +283,7 @@ Exposez les variables d’environnement à vos fonctions à l’aide de la clé 
 kind: "EdgeFunctions"
 version: "1"
 data:
-  services:
+  functions:
     - name: my-edge-function
   configs:
     - key: LOG_LEVEL
@@ -315,7 +315,7 @@ Les secrets sont référencés, et non stockés, dans `edgeFunctions.yaml`. Le c
 kind: "EdgeFunctions"
 version: "1"
 data:
-  services:
+  functions:
     - name: my-edge-function
   secrets:
     - key: API_TOKEN
@@ -346,7 +346,7 @@ Les fonctions Edge peuvent lire et écrire des données de valeur-clé arbitrair
 kind: "EdgeFunctions"
 version: "1"
 data:
-  services:
+  functions:
     - name: my-edge-function
   kvs: true
 ```
