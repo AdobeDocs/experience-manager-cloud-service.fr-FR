@@ -5,7 +5,7 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: c3f3693793922f965a59dd693b69a7df9ea96cda
+source-git-commit: fd729f12b4d6ff94ba4f3c86b8b8c1a0d3627c16
 workflow-type: tm+mt
 source-wordcount: '1346'
 ht-degree: 9%
@@ -59,7 +59,7 @@ Chaque fois qu’un programme est modifié, y compris par l’ajout ou la suppre
      >[!NOTE]
      >Pour confirmer que la fonctionnalité est active, examinez les [journaux du réseau CDN](//help/security/traffic-filter-rules-including-waf.md#cdn-logs) une fois que le trafic atteint le site. Recherchez les entrées de journal qui incluent une propriété `rules` contenant un attribut `waf`. Par exemple :
      >
-     >`"rules": "waf=SQLI"`
+     >`"rules": "*waf=*"`
      >
      >Cet attribut apparaît une fois que WAF est actif, avant même le déploiement des règles WAF.
 
@@ -114,11 +114,11 @@ Avant que la notation pour suppression ne soit lancée, le système valide si le
 1. Sélectionnez l’organisation appropriée.
 1. Sur la page **Mes programmes**, pour le programme de production que vous souhaitez marquer comme devant être supprimé, cliquez sur ![icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), puis sur **Supprimer le programme**.
 
-   ![Sélectionner Supprimer le programme dans la liste déroulante d’un programme de production &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*L’exemple de programme de production ci-dessus est fourni à titre d’illustration uniquement.*
+   ![Sélectionner Supprimer le programme dans la liste déroulante d’un programme de production ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*L’exemple de programme de production ci-dessus est fourni à titre d’illustration uniquement.*
 
 1. Dans la boîte de dialogue **Marquer le programme de production pour suppression**, passez en revue l’avertissement qui répertorie les ressources connectées à votre programme, y compris les environnements de production, d’évaluation et de développement.
 
-   ![Boîte de dialogue Supprimer le programme de production &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete2.png)
+   ![Boîte de dialogue Supprimer le programme de production ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete2.png)
 
 
    >[!NOTE]
