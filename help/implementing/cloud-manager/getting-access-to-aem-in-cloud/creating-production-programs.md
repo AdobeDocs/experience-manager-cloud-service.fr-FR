@@ -5,7 +5,7 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: c3f3693793922f965a59dd693b69a7df9ea96cda
+source-git-commit: fd729f12b4d6ff94ba4f3c86b8b8c1a0d3627c16
 workflow-type: tm+mt
 source-wordcount: '1801'
 ht-degree: 6%
@@ -125,7 +125,7 @@ Compatible avec la norme HIPAA d’Adobe et WAF-DDOS (Web Application Firewall -
      >
      >Pour confirmer que la fonctionnalité est active, examinez les [journaux du réseau CDN](//help/security/traffic-filter-rules-including-waf.md#cdn-logs) une fois que le trafic atteint le site. Recherchez les entrées de journal qui incluent une propriété `rules` contenant un attribut `waf`. Par exemple :
      >
-     >`"rules": "waf=SQLI"`
+     >`"rules": "*waf=*"`
      >
      >Cet attribut s’affiche lorsque WAF est actif, avant même le déploiement des règles WAF.
 

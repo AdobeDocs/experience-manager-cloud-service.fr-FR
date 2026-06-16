@@ -4,7 +4,7 @@ description: Configurer des règles de filtre de trafic incluant des règles de 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: c3f3693793922f965a59dd693b69a7df9ea96cda
+source-git-commit: fd729f12b4d6ff94ba4f3c86b8b8c1a0d3627c16
 workflow-type: tm+mt
 source-wordcount: '4278'
 ht-degree: 66%
@@ -115,7 +115,7 @@ Voici un processus de bout en bout recommandé et détaillé pour déterminer le
 
       Pour confirmer que la fonctionnalité est *active* après son activation, examinez les [journaux du réseau CDN](#cdn-logs) une fois que le trafic circule sur le site. Recherchez les entrées de journal qui incluent une propriété `rules` contenant un attribut `waf`. Par exemple :
 
-      `"rules": "waf=SQLI" `
+      `"rules": "*waf=*" `
 
       Cet attribut apparaît une fois que WAF est actif, avant même le déploiement des règles WAF.
 
