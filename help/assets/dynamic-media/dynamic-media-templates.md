@@ -4,15 +4,15 @@ description: Découvrez comment créer  [!DNL Dynamic Media]  modèles à l’ai
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 46ca8082f85cdb957681aa9596b9312b35e4f6ec
+source-git-commit: a9ce385329244aa4f79f3119506acf72ca6f4d6c
 workflow-type: tm+mt
-source-wordcount: '3549'
-ht-degree: 37%
+source-wordcount: '3558'
+ht-degree: 36%
 
 ---
 
 
-# [!DNL Dynamic Media] modèles{#dynamic-media-templates}
+# Gestion des modèles de [!DNL Dynamic Media]{#dynamic-media-templates}
 
 Créez des modèles personnalisables en temps réel pour vos bannières et prospectus à l’aide de [!DNL Dynamic Media] templates, un éditeur de modèles WYSIWYG. Publiez votre modèle de [!DNL Dynamic Media] et utilisez-le dans les applications en aval. Un modèle de [!DNL Dynamic Media] comprend des calques d’image et de texte. Ajoutez des paramètres aux calques d’image et de texte du modèle et utilisez [[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/fr/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) pour repositionner et redimensionner le calque et mettre à jour son contenu en temps réel.
 
@@ -289,7 +289,7 @@ Pour attribuer le même nom aux paramètres [!UICONTROL Masquer] (![création ra
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour grouper les calques.
 1. Exécutez les étapes 3 et 4 de la section [**[!UICONTROL Prévisualisation et publication]**](#preview-and-publish-template-and-copy-template-deliver-url) pour afficher vos modifications.
 
-## Prévisualiser et publier le modèle pour copier l’URL de diffusion{#preview-and-publish-template-and-copy-template-deliver-url}
+## Prévisualiser et publier le modèle Dynamic Media pour copier l’URL de diffusion{#preview-and-publish-dynamic-media-template-and-copy-template-deliver-url}
 
 Procédez comme suit pour prévisualiser et publier le modèle et copier l’URL de diffusion :
 
@@ -319,7 +319,7 @@ Pour copier l&#39;URL de diffusion du modèle, procédez comme suit :
 1. Collez cette URL dans l’onglet de votre navigateur et affichez votre modèle dynamique. Personnalisez le modèle en temps réel en mettant à jour la valeur du paramètre requis (valeur de la clé) dans l’URL directement, comme illustré à l’[étape 2](#preview-and-publish-template-and-copy-template-deliver-url) de la section **Prévisualisation et publication**.
 1. Utilisez cette URL pour un merchandising rapide de vos produits ou services. Vous pouvez partager cette URL avec votre clientèle ou l’intégrer à votre site web ou à toute application tierce en aval pour afficher la bannière et y apporter des mises à jour en temps réel afin de refléter les offres en cours.
 
-## Effectuer des mises à jour en temps réel sur le modèle à partir de l’URL{#update-the-template-from-the-url}
+## Effectuer des mises à jour en temps réel sur le modèle Dynamic Media à partir de l’URL{#update-the-template-from-the-url}
 
 Modifier des paramètres directement dans l’URL peut s’avérer fastidieux. Pour simplifier :
 
@@ -332,7 +332,7 @@ Modifier des paramètres directement dans l’URL peut s’avérer fastidieux. P
 
 Collez cette URL mise à jour dans votre navigateur pour afficher les modifications.
 
-## Éditer le modèle{#edit-the-template}
+## Modification du modèle Dynamic Media{#edit-the-template}
 
 Modifiez le modèle en procédant comme suit :
 
@@ -341,7 +341,7 @@ Modifiez le modèle en procédant comme suit :
 3. Sélectionnez le modèle.
 4. Cliquez sur **[!UICONTROL Modifier le modèle]**. La zone de travail de modèle affiche le modèle et la liste de tous ses calques dans le panneau Calques. Commencez à modifier le modèle en fonction de vos besoins.
 
-## Ajouter un lien Call to action (CTA) à votre calque de modèle{#add-CTA-in-dynamic-media-templates}
+## Ajouter un lien Call to action (CTA) à votre calque de modèle Dynamic Media{#add-CTA-in-dynamic-media-templates}
 
 Transformez n’importe quel calque d’image, de texte ou de forme de votre modèle de [!DNL Dynamic Media] en lien hypertexte en y ajoutant un lien CTA qui dirige les utilisateurs vers une page cible.
 
