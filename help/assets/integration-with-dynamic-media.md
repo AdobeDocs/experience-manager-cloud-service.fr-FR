@@ -3,7 +3,7 @@ title: Intégration du gestionnaire de contenu à Dynamic Media
 description: Découvrez comment intégrer le gestionnaire d’accès à Dynamic Media pour permettre aux utilisateurs de parcourir, de prévisualiser et de sélectionner des rendus Dynamic Media à utiliser dans leurs applications et workflows.
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
-source-git-commit: c54f9da5aea9111a8f162688676d5c3c7e7518bc
+source-git-commit: 95209a154a0d3208c5fcda8d4117f80d1015d2fe
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 1%
@@ -338,5 +338,4 @@ rotate=90&width=1200
 ```
 
 La chaîne générée est ajoutée à l’URL Dynamic Media finale et applique les transformations sélectionnées lors de la diffusion de la ressource.
-
 
