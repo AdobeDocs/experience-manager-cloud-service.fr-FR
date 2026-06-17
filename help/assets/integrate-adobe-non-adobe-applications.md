@@ -5,9 +5,9 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Asse
 feature: Collaboration
 role: User
 exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
-source-git-commit: bfef942f248d926d699ed489a5c117f89da76459
+source-git-commit: c54f9da5aea9111a8f162688676d5c3c7e7518bc
 workflow-type: tm+mt
-source-wordcount: '2186'
+source-wordcount: '2203'
 ht-degree: 0%
 
 ---
@@ -127,6 +127,8 @@ Cliquez sur l’icône ![icône d’aperçu](assets/do-not-localize/preview-icon
 ![Prévisualisation des rendus Dynamic Media](assets/content-advisor-dm-preview.png)
 
 Cliquez sur **[!UICONTROL Ajouter des modificateurs]**, spécifiez un modificateur dans la zone de texte, puis appuyez sur Entrée pour appliquer la transformation à tous les rendus de ressources en temps réel. De même, vous pouvez ajouter plusieurs modificateurs aux rendus et prévisualiser ces transformations. Cliquez sur le nom du rendu, puis sur **[!UICONTROL Sélectionner]** pour rendre le rendu disponible dans votre application hôte. Le rendu après l’application de ces modificateurs n’est pas enregistré. Consultez la liste des modificateurs pris en charge pour [Dynamic Media Scene7](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) et [Dynamic Media avec OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
+
+Pour plus d’informations sur l’intégration du panneau Dynamic Media à la fonction de conseil sur le contenu, voir [&#x200B; Intégration à Dynamic Media &#x200B;](/help/assets/integration-with-dynamic-media.md).
 
 ### Découverte de fragments de contenu {#content-fragments-discovery-content-advisor}
 

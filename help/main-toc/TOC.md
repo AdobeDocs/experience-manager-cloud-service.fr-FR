@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: cf36954ea4d8374213f4f78ab7ab8f65f34badfe
+source-git-commit: d7993198005126c42ccbe4a434cf73cf1bd1f713
 workflow-type: tm+mt
-source-wordcount: '7501'
+source-wordcount: '7505'
 ht-degree: 84%
 
 ---
@@ -678,6 +678,7 @@ ht-degree: 84%
       + [le gestionnaire de contenu pour accéder au contenu d’AEM dans les applications Adobe et non Adobe.](/help/assets/integrate-adobe-non-adobe-applications.md)
       + [Propriétés du gestionnaire de contenu](/help/assets/content-advisor-properties.md)
       + [Personnalisations du gestionnaire d’accès](/help/assets/content-advisor-customization.md)
+      + [Intégration à Dynamic Media](/help/assets/integration-with-dynamic-media.md)
       + [Intégration de Dynamic Media aux fonctionnalités OpenAPI](/help/assets/integrate-dynamic-media-openapi.md)
    + Fragments de contenu {#content-fragments}
       + [Utilisation de fragments de contenu](/help/assets/content-fragments/content-fragments.md)
