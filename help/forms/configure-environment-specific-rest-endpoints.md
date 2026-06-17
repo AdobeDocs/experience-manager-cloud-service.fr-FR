@@ -107,7 +107,7 @@ Utilisez cette option lorsque vous souhaitez une configuration empaquetée dont 
 
 Pour les configurations REST, vous créez généralement des variables d’environnement pour les propriétés `serviceEndPoint`, `userName` et `password`, puis vous les référencez à partir d’un fichier de configuration `OsgiConfigurationOverrideProvider` dans votre projet.
 
-Pour la procédure complète, voir [Configurations cloud contextuelles](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/context-aware-fdm).
+Pour la procédure complète, voir [Configurations cloud contextuelles](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/context-aware-fdm).
 
 ## Mettre à jour l’URL du point d’entrée en production {#configure-endpoint-on-production}
 
@@ -148,6 +148,6 @@ Envoyez le même formulaire d’évaluation et de production et confirmez chaque
 
 * [Configuration d’un formulaire adaptatif pour l’action d’envoi de point d’entrée REST](/help/forms/configure-submit-action-restpoint.md)
 * [Configuration des sources de données](/help/forms/configure-data-sources.md)
-* [Configurations cloud basées sur le contexte](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/context-aware-fdm)
+* [Configurations cloud basées sur le contexte](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/context-aware-fdm)
 * [Action Envoyer pour formulaire adaptatif](/help/forms/aem-forms-submit-action.md)
 
