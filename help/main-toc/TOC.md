@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ee44611ddea115fffd9800a54728d747d4360a6b
+source-git-commit: cf36954ea4d8374213f4f78ab7ab8f65f34badfe
 workflow-type: tm+mt
-source-wordcount: '7496'
+source-wordcount: '7501'
 ht-degree: 84%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 84%
    + [Évaluer les KPI](/help/overview/assessing-kpis.md)
    + [Aligner des KPI](/help/overview/aligning-kpis.md)
    + [Choix de la bonne équipe](/help/overview/choose-right-team.md)
-   + {hide-from-toc}[&#x200B; Parcours de documentation &#x200B;](/help/journey-documentation/documentation-journeys.md)
+   + {hide-from-toc}[ Parcours de documentation ](/help/journey-documentation/documentation-journeys.md)
 + Notes de mise à jour {#release-notes}
    + [Informations sur la version](/help/release-notes/home.md)
    + Notes de mise à jour des fonctionnalités d’AEMaaCS {#release-notes}
@@ -108,6 +108,7 @@ ht-degree: 84%
    + Notes de mise à jour de la maintenance d’AEMaaCS {#maintenance}
       + [Notes de mise à jour de la maintenance actuelle](/help/release-notes/maintenance/latest.md)
       + 2026 {#2026}
+         + [Notes de mise à jour de maintenance de la version 2026.6.0](/help/release-notes/maintenance/2026/2026-6-0.md)
          + [Notes de mise à jour de maintenance de la version 2026.5.0](/help/release-notes/maintenance/2026/2026-5-0.md)
          + [Notes de mise à jour de la maintenance 2026.4.0](/help/release-notes/maintenance/2026/2026-4-0.md)
          + [Notes de mise à jour de la maintenance 2026.3.0](/help/release-notes/maintenance/2026/2026-3-0.md)
@@ -630,7 +631,7 @@ ht-degree: 84%
       + [Améliorer la découverte de contenu avec des métadonnées générées par l’IA](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md)
       + [Balises intelligentes pour les vidéos](/help/assets/smart-tags-for-videos.md)
       + [Comment organiser des ressources](/help/assets/organize-assets.md)
-      + [Utilisation des ressources [!DNL Adobe Stock] &#x200B;](/help/assets/aem-assets-adobe-stock.md)
+      + [Utilisation des ressources [!DNL Adobe Stock] ](/help/assets/aem-assets-adobe-stock.md)
       + [Gérer les collections](/help/assets/manage-collections.md)
       + [Présentation des métadonnées](/help/assets/manage-metadata.md)
       + [Intégration avec [!DNL Adobe Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md)
@@ -646,7 +647,7 @@ ht-degree: 84%
       + [Création et partage de dossiers privés](/help/assets/private-folder.md)
       + [Gestion des droits numériques des ressources](/help/assets/drm.md)
       + [Mise en filigrane de ressources](/help/assets/watermark-assets.md)
-      + [Traitement des ressources à l’aide des API [!DNL Creative Cloud] &#x200B;](/help/assets/cc-api-integration.md)
+      + [Traitement des ressources à l’aide des API [!DNL Creative Cloud] ](/help/assets/cc-api-integration.md)
       + [Balises de couleurs pour les images](/help/assets/color-tag-images.md)
       + [Gestion des documents PDF](/help/assets/manage-pdf-documents.md)
       + [Sélecteur de destinations micro front-end](/help/assets/destination-selector.md)
@@ -871,8 +872,8 @@ ht-degree: 84%
          + [Configuration des sources de données](/help/forms/configure-data-sources.md)
          + {hide-from-toc}[Configure [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Connexion d’un formulaire adaptatif à l’application Salesforce à l’aide du flux d’informations d’identification client OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configuration du stockage  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configuration des services cloud [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configuration du stockage  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configuration des services cloud [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Connecter un formulaire adaptatif à la base de données SQL Azure](/help/forms/connect-adaptive-form-to-azure-sql.md)
          + [Configuration des services cloud Salesforce](/help/forms/configure-salesforce.md)
          + [Création d’un modèle de données de formulaire](/help/forms/create-form-data-models.md)
@@ -996,7 +997,7 @@ ht-degree: 84%
             + [Ajouter un gestionnaire d’erreurs personnalisé à l’aide du service Invoke de l’éditeur de règles](/help/forms/add-custom-error-handler-adaptive-forms.md)
             + {hide-from-toc}[Octroi de l’accès à l’éditeur de règles à des groupes d’utilisateurs sélectionnés](/help/forms/rule-editor-access-user-groups.md)
             + [Utiliser des expressions SOM dans des formulaires adaptatifs](/help/forms/using-som-expressions-adaptive-forms.md)
-            + {hide-from-toc}[&#x200B; Expressions de formulaire adaptatif &#x200B;](/help/forms/adaptive-form-expressions.md)
+            + {hide-from-toc}[ Expressions de formulaire adaptatif ](/help/forms/adaptive-form-expressions.md)
          + Utiliser [!DNL Adobe Sign] {#use-adobe-sign}
             + [Utiliser Adobe Sign pour signer électroniquement un formulaire adaptatif](/help/forms/working-with-adobe-sign.md)
          + Configuration des actions Envoyer et de l’envoi de métadonnées {#configure-submit-actions-and-metadata-submission}
@@ -1341,7 +1342,7 @@ ht-degree: 84%
       + Création{#authoring}
          + [Création](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=fr)
          + [Éditeur Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=fr)
-      + [Aperçu des fragments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=fr)
+      + [Aperçu des fragments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Arborescence de la structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=fr)
    + Sélecteur de fragment de contenu {#content-fragment-selector}
       + [Sélecteur de fragment de contenu micro front-end - Vue d’ensemble](/help/headless/content-fragment-selector/overview.md)
@@ -1510,7 +1511,7 @@ ht-degree: 84%
       + [Documents de référence sur les API](/help/implementing/developing/reference-materials.md)
       + [API OpenAPI](/help/implementing/developing/open-api-based-apis.md)
       + [Générer des jetons d’accès pour les API côté serveur](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
-      + {hide-from-toc}[Génération de jetons d’accès pour les API côté serveur (hérités) &#x200B;](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
+      + {hide-from-toc}[Génération de jetons d’accès pour les API côté serveur (hérités) ](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
       + [Création rapide et personnalisation front-end d’un site](/help/implementing/developing/introduction/quick-site-creation.md)
       + [Développer des sites avec le pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
       + [Personnalisation des modèles et thèmes de site](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
@@ -1569,7 +1570,7 @@ ht-degree: 84%
          + [Prise en main](/help/implementing/universal-editor/getting-started.md)
          + [Vue d’ensemble destinée à l’équipe de développement](/help/implementing/universal-editor/developer-overview.md)
          + [Développement AEM local](/help/implementing/universal-editor/local-dev.md)
-         + [&#x200B; Exemple d’application SecurBank &#x200B;](/help/implementing/universal-editor/securbank.md)
+         + [ Exemple d’application SecurBank ](/help/implementing/universal-editor/securbank.md)
       + [Gestion de l’expérience découplée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=fr)
       + Développement hybride et SPA {#hybrid}
          + [Hybride et SPA avec AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
