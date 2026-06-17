@@ -4,10 +4,10 @@ description: Découvrez Dynamic Media Prime et Ultimate, leurs avantages et les 
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 4184506d5b0e3413c410aec704127694c9e11196
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 18%
+source-wordcount: '472'
+ht-degree: 16%
 
 ---
 
@@ -54,8 +54,8 @@ Outre les fonctionnalités de Dynamic Media Prime, telles que l’intégration d
 
 * [Solution Dynamic Media dans AEM as a Cloud Service](/help/assets/dynamic-media/dynamic-media.md), qui comprend également les fonctionnalités clés suivantes :
 
-   * [Modèles Dynamic Media](/help/assets/dynamic-media/dynamic-media-templates.md)
-   * [Principes de base des modèles](https://experienceleague.adobe.com/fr/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
+   * [Modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+   * [Concepts de base des modèles](https://experienceleague.adobe.com/fr/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
    * [Configuration visuelle](https://experienceleague.adobe.com/fr/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
 
 ### Conditions préalables {#pre-requisites-dm-ultimate}

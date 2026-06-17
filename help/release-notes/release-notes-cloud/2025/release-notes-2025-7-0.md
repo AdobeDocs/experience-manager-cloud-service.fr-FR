@@ -4,7 +4,7 @@ description: Notes de mise à jour de la version 2025.7.0 d’ [!DNL Adobe Expe
 feature: Release Information
 role: Admin
 exl-id: b1d25db0-d4a8-4663-b7fe-2d7381e12567
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 4184506d5b0e3413c410aec704127694c9e11196
 workflow-type: tm+mt
 source-wordcount: '2376'
 ht-degree: 96%
@@ -55,7 +55,7 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 **Ajouter des formes aux modèles Dynamic Media**
 
-Vous pouvez désormais [ajouter des calques de forme aux modèles Dynamic Media](/help/assets/dynamic-media/dynamic-media-templates.md#add-shapes-to-the-canvas) dans Experience Manager Assets. Tout comme les calques d’image et de texte, les calques de forme prennent en charge les paramètres des mises à jour en temps réel via l’URL du modèle. Vous pouvez également inclure des liens d’appel à l’action (CTA) vers des formes dans vos modèles.
+Vous pouvez désormais [ajouter des calques de forme aux modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md#add-shapes-to-the-canvas) dans Experience Manager Assets. Tout comme les calques d’image et de texte, les calques de forme prennent en charge les paramètres des mises à jour en temps réel via l’URL du modèle. Vous pouvez également inclure des liens d’appel à l’action (CTA) vers des formes dans vos modèles.
 
 ![Ajouter des formes aux modèles Dynamic Media](/help/assets/assets/enable-uniform-radius-shape.png)
 
