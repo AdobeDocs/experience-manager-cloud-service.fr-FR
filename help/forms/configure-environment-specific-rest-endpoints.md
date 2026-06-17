@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 40410875-96d0-4728-8cbd-b1e1dfa438c4
-source-git-commit: ee79ef0d9b1101a245ea918c8ce46d502e98fdb3
+source-git-commit: 8d60f09ffd3912f4a14df01baccf1c368a518a91
 workflow-type: tm+mt
 source-wordcount: '1098'
 ht-degree: 3%
@@ -22,8 +22,8 @@ Cet article décrit comment conserver un seul formulaire adaptatif portable et f
 ## Conditions préalables {#prerequisites}
 
 * Formulaire adaptatif basé sur les composants principaux.
-* Un [&#x200B; Conteneur de configurations &#x200B;](/help/implementing/developing/introduction/configurations.md) créé via l’explorateur de configurations (**Outils** > **Général** > **Explorateur de configurations**) avec l’**Configurations cloud** activé.
-* Autorisation d’accès à **Outils** > **Services cloud** et, pour la promotion, [Gestionnaire de packages](/help/implementing/developing/tools/package-manager.md) sur chaque environnement (ou un pipeline de déploiement Cloud Manager [&#128279;](/help/implementing/deploying/overview.md#deploying-content-packages-via-cloud-manager-and-package-manager)).
+* Un [ Conteneur de configurations ](/help/implementing/developing/introduction/configurations.md) créé via l’explorateur de configurations (**Outils** > **Général** > **Explorateur de configurations**) avec l’**Configurations cloud** activé.
+* Autorisation d’accès à **Outils** > **Services cloud** et, pour la promotion, [Gestionnaire de packages](/help/implementing/developing/tools/package-manager.md) sur chaque environnement (ou un pipeline de déploiement Cloud Manager [](/help/implementing/deploying/overview.md#deploying-content-packages-via-cloud-manager-and-package-manager)).
 
 ## Créer la configuration de service RESTful lors de l’évaluation {#create-rest-configuration}
 
@@ -107,7 +107,7 @@ Utilisez cette option lorsque vous souhaitez une configuration empaquetée dont 
 
 Pour les configurations REST, vous créez généralement des variables d’environnement pour les propriétés `serviceEndPoint`, `userName` et `password`, puis vous les référencez à partir d’un fichier de configuration `OsgiConfigurationOverrideProvider` dans votre projet.
 
-Pour la procédure complète, voir [Configurations cloud contextuelles](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/context-aware-fdm).
+Pour la procédure complète, voir [Configurations cloud contextuelles](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/context-aware-fdm).
 
 ## Mettre à jour l’URL du point d’entrée en production {#configure-endpoint-on-production}
 
@@ -148,5 +148,6 @@ Envoyez le même formulaire d’évaluation et de production et confirmez chaque
 
 * [Configuration d’un formulaire adaptatif pour l’action d’envoi de point d’entrée REST](/help/forms/configure-submit-action-restpoint.md)
 * [Configuration des sources de données](/help/forms/configure-data-sources.md)
-* [Configurations cloud basées sur le contexte](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/context-aware-fdm)
+* [Configurations cloud basées sur le contexte](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/context-aware-fdm)
 * [Action Envoyer pour formulaire adaptatif](/help/forms/aem-forms-submit-action.md)
+
