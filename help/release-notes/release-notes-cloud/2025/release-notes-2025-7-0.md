@@ -4,7 +4,7 @@ description: Notes de mise à jour de la version 2025.7.0 d’ [!DNL Adobe Expe
 feature: Release Information
 role: Admin
 exl-id: b1d25db0-d4a8-4663-b7fe-2d7381e12567
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 4184506d5b0e3413c410aec704127694c9e11196
 workflow-type: tm+mt
 source-wordcount: '2376'
 ht-degree: 96%
@@ -39,7 +39,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -55,7 +55,7 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 **Ajouter des formes aux modèles Dynamic Media**
 
-Vous pouvez désormais [ajouter des calques de forme aux modèles Dynamic Media](/help/assets/dynamic-media/dynamic-media-templates.md#add-shapes-to-the-canvas) dans Experience Manager Assets. Tout comme les calques d’image et de texte, les calques de forme prennent en charge les paramètres des mises à jour en temps réel via l’URL du modèle. Vous pouvez également inclure des liens d’appel à l’action (CTA) vers des formes dans vos modèles.
+Vous pouvez désormais [ajouter des calques de forme aux modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md#add-shapes-to-the-canvas) dans Experience Manager Assets. Tout comme les calques d’image et de texte, les calques de forme prennent en charge les paramètres des mises à jour en temps réel via l’URL du modèle. Vous pouvez également inclure des liens d’appel à l’action (CTA) vers des formes dans vos modèles.
 
 ![Ajouter des formes aux modèles Dynamic Media](/help/assets/assets/enable-uniform-radius-shape.png)
 
@@ -226,7 +226,7 @@ Propriétés OSGi :
 
 ### Obsolescence de l’exécution Java 11 {#java11-runtime-deprecation}
 
-L’*exécution Java 11 **&#x200B; est désormais obsolète et la plupart des environnements ont déjà été mis à niveau vers l’**&#x200B;exécution Java 21** plus performante.
+L’*exécution Java 11** est désormais obsolète et la plupart des environnements ont déjà été mis à niveau vers l’**exécution Java 21** plus performante.
 
 Si votre environnement n’a pas pu être mis à niveau en raison de dépendances non prises en charge (voir les [Exigences d’exécution Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), vous avez dû recevoir un e-mail d’Adobe contenant les étapes spécifiques à réaliser. Veillez à ce que toutes les mises à jour requises soient terminées d’ici le **28 août 2025**, afin que votre environnement puisse être mis à niveau sans interruption.
 
