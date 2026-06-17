@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 4e896f6bbea276c061e086c80d5dabed30421970
+source-git-commit: 5fcbb483fc6a298b2dccfcf79467ecd39562cb66
 workflow-type: tm+mt
-source-wordcount: '4207'
+source-wordcount: '4206'
 ht-degree: 70%
 
 ---
@@ -31,11 +31,11 @@ Pendant la période d’obsolescence, Adobe rappelle à ses clientes et clients 
 
 >[!IMPORTANT]
 >
->Plusieurs [&#x200B; API obsolètes &#x200B;](#aem-apis) seront supprimées le **23 juillet 2026**. Veuillez consulter ces dates et impacts clés :
+>Plusieurs [ API obsolètes ](#aem-apis) seront supprimées le **23 juillet 2026**. Veuillez consulter ces dates et impacts clés :
 >
 >* **À compter du 26 janvier 2026** : les e-mails de notification du Centre de maintenance sont envoyés comme rappel pour supprimer l’utilisation de ces API, si un pipeline a été récemment exécuté.
 >* **26 février 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API seront **mis en pause** pendant l’étape **Qualité du code**. Un responsable de déploiement, un chef de projet ou un propriétaire d’entreprise peut contourner le problème pour autoriser le pipeline à continuer. *Cela peut ralentir votre capacité à valider et à publier les modifications de code.*
->* **14 avril 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **&#x200B;**&#x200B;lors de l’étape **Qualité du code**. Les déploiements seront bloqués jusqu’à ce que l’utilisation obsolète de l’API soit supprimée. *Cela peut vous empêcher de publier des mises à jour urgentes et peut avoir un impact sur vos opérations commerciales.*
+>* **14 avril 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **** lors de l’étape **Qualité du code**. Les déploiements seront bloqués jusqu’à ce que l’utilisation obsolète de l’API soit supprimée. *Cela peut vous empêcher de publier des mises à jour urgentes et peut avoir un impact sur vos opérations commerciales.*
 >* **23 juillet 2026** : les environnements qui utilisent toujours des API obsolètes **ne recevront pas de mises à jour de versions Adobe critiques** et ne seront pas soumis aux engagements standard d’Adobe en matière de performances et de disponibilité. Par conséquent, vous ne recevrez pas de nouvelles fonctionnalités ou de nouveaux correctifs, la stabilité et la disponibilité des applications peuvent être affectées négativement, et l&#39;exposition aux risques de sécurité peut encore augmenter. Pour recevoir à nouveau les mises à jour des versions d’Adobe, un pipeline full stack doit être exécuté avec succès ; la mise à jour sera ensuite appliquée dans les prochains jours.
 >
 
@@ -87,11 +87,11 @@ Les API du tableau ci-dessous (cliquez pour développer) ont été annoncées c
 
 >[!IMPORTANT]
 >
->Plusieurs [&#x200B; API obsolètes &#x200B;](#aem-apis) seront supprimées le **23 juillet 2026**. Veuillez consulter ces dates et impacts clés :
+>Plusieurs [ API obsolètes ](#aem-apis) seront supprimées le **23 juillet 2026**. Veuillez consulter ces dates et impacts clés :
 >
 >* **À compter du 26 janvier 2026** : les e-mails de notification du Centre de maintenance sont envoyés comme rappel pour supprimer l’utilisation de ces API.
 >* **26 février 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API seront **mis en pause** pendant l’étape **Qualité du code**. Un responsable de déploiement, un chef de projet ou un propriétaire d’entreprise peut contourner le problème pour autoriser le pipeline à continuer. *Cela peut ralentir votre capacité à valider et à publier les modifications de code.*
->* **14 avril 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **&#x200B;**&#x200B;lors de l’étape **Qualité du code**. Les déploiements seront bloqués jusqu’à ce que l’utilisation obsolète de l’API soit supprimée. *Cela peut vous empêcher de publier des mises à jour urgentes et peut avoir un impact sur vos opérations commerciales.*
+>* **14 avril 2026** : les pipelines Cloud Manager qui contiennent du code à l’aide de ces API échoueront **** lors de l’étape **Qualité du code**. Les déploiements seront bloqués jusqu’à ce que l’utilisation obsolète de l’API soit supprimée. *Cela peut vous empêcher de publier des mises à jour urgentes et peut avoir un impact sur vos opérations commerciales.*
 >* **23 juillet 2026** : les environnements qui utilisent toujours des API obsolètes **ne recevront pas de mises à jour de versions Adobe critiques** et ne sont pas soumis aux engagements standard d’Adobe en matière de performances et de disponibilité. Par conséquent, vous ne recevrez pas de nouvelles fonctionnalités ou de nouveaux correctifs, la stabilité et la disponibilité des applications peuvent être affectées négativement, et l&#39;exposition aux risques de sécurité peut encore augmenter.
 >
 
@@ -197,103 +197,103 @@ Les API du tableau ci-dessous (cliquez pour développer) ont été annoncées c
     <td>org.apache.jackrabbit.oak.plugins.blob<br>org.apache.jackrabbit.oak.plugins.blob.datastore</td>
     <td>Cette API est réservée à un usage interne.</td>
     <td>23/09/2024</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
     <td>L’utilisation de cette API n’est pas prise en charge dans AEM as a Cloud Service.</td>
     <td>31/10/2022</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.day.cq.contentsync.handler.util</td>
     <td>Cette API est obsolète. Utilisez les créateurs de ressources d’Apache Sling à la place.</td>
     <td>31/10/2022</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.adobe.granite.xss</td>
     <td>Utilisez org.apache.sling.xss à la place.</td>
     <td>12/12/2023</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.github.jknack.handlebars<br>com.github.jknack.handlebars.cache<br>com.github.jknack.handlebars.context<br>com.github.jknack.handlebars.helper<br>com.github.jknack.handlebars.io</td>
     <td>Cette API est obsolète.</td>
     <td>07/10/2024</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.day.cq.mailer.commons</td>
     <td>Cette API est obsolète, car elle dépend de commons-lang (obsolète depuis 2021).</td>
     <td>11/30/2025</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.adobe.granite.httpcache.api</td>
     <td>Cette API n’est plus prise en charge.</td>
     <td>01/01/2026</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.webdav.client.methods</td>
     <td>L’utilisation de cette API n’est pas prise en charge dans AEM as a Cloud Service.</td>
     <td>2/13/2026</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
     <td>Utilisez org.apache.sling.xss à la place.</td>
     <td>12/12/2023</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>org.apache.tika<br>org.apache.tika.concurrent<br>org.apache.tika.config<br>org.apache.tika.detection<br>org.apache.tika.embrocher<br>org.apache.tika.exception<br>org.apache.tika.extractor<br>org.apache.tika.fork<br>org.apache.tika.io<br>org.apache.tika.language<br>org.apache.tika.language.detection<br>org apache.tika.language.translate<br>org.apache.tika.metadata<br>org.apache.tika.mimeorg.apache.tika.parser<br>org.apache.tika.parser.apple<br>org.apache.tika.parser.asm<br>org.apache.tika.parser.audio<br>org.apache.tika.parser.captioning<br>org.apache.tika.parser.captioning.tf<br>org.apache.tika.tika ser.chm<br>org.apache.tika.parser.chm.accessor<br>org.apache.tika.parser.chm.assertion<br>org.apache.tika.parser.chm.core<br>org.apache.tika.parser.chm.exception<br>org.apache.tika.parser.chm.lzx<br>org.apache.tika.parser.codeorg.apache.tika.parser.crypto<br>org.apache.tika.parser .cakes<br>org.apache.tika.parser.dbf<br>org.apache.tika.parser.dif<br>org.apache.tika.parser.digest<br>org.apache.tika.parser.dwg<br>org.apache.tika.parser.envi<br>org.apache.tika.parser.epub<br>org.apache.tika.parser.exécutableorg.apache.tika.parser.externalacheorg.apache tika.parser.feed<br>org.apache.tika.parser.font<br>org.apache.tika.parser.gdal<br>org.apache.tika.parser.geo.topic<br>org.apache.tika.parser.geo.topic.gazetter<br>org.apache.tika.parser.geoinfo<br>org.apache.tika.parser.grib<br>org.apache.tika.parser.hdf<br>org.apache.tika.parser.org ml<br>org.apache.tika.parser.image<br>org.apache.tika.parser.image.xmp<br>org.apache.tika.parser.iptc<br>org.apache.tika.parser.isatab<br>org.apache.tika.parser.iwork<br>org.apache.tika.parser.iwork.iwana<br>org.apache.tika.parser.jdbc<br>org.apache.tika.parser.journalorg apache.tika.parser.jpeg<br>org.apache.tika.parser.mail<br>org.apache.tika.parser.mat<br>org.apache.tika.parser.mbox<br>org.apache.tika.parser.microsoft<br>org.apache.tika.parser.microsoft.ooxml.parser.microsoft.ooxml.xslf<br>org.apache.tika.parser.microsoft.ooxml.xwwml f<br>org.apache.tika.parser.microsoft.ooxml.xwpf.ml2006<br>org.apache.tika.parser.microsoft.xml<br>org.apache.tika.parser.mp3<br>org.apache.tika.parser.mp4<br>org.apache.tika.parser.ner<br>org.apache.tika.parser.ner.corenlp<br>org.apache.tika.parser.grobidorg org.apache.tika.parser.ner.mitie<br>org.apache.tika.parser.ner.nltk<br>org.apache.tika.parser.ner.opennlp<br>org.apache.tika.parser.ner.regex<br>org.apache.tika.parser.netcdf<br>org.apache.tika.parser.ocr<br>org.apache.tika.parser.odf<br>org.apache.tika.parser.opument org.apache.tika.parser.pdf<br>org.apache.tika.parser.pkg<br>org.apache.tika.parser.pot<br>org.apache.tika.parser.prt<br>org.apache.tika.parser.reconnaissanceorg.apache.tika.parser.reconnaissance.tf<br>org.apache.tika.parser.rtf<br>org.apache.tika.parser.sentiment <br>org.apache.tika.parser.strings<br>org.apache.tika.parser.txt<br>org.apache.tika.parser.utils<br>org.apache.tika.parser.video<br>org.apache.tika.parser.wordperfect<br>org.apache.tika.parser.xml<br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> org.apache.tika.sax.tika.sax.pathpathorg.apache.tika.tika oxml.xps</td>
     <td>Cette version d’Apache Tika est obsolète et sera donc supprimée de Cloud Service. Basculez vers une version plus récente d’Apache Tika.</td>
     <td>4/30/2026</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>org.apache.commons.fileupload<br>org.apache.commons.fileupload.disk<br>org.apache.commons.fileupload.portlet<br>org.apache.commons.fileupload.servlet<br>org.apache.commons.fileupload.util</td>
     <td>Utilisez plutôt l’API servlet officielle pour gérer les chargements de fichiers.</td>
     <td>2/6/2026</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.adobe.cq.smartcontent</td>
     <td>Cette API est obsolète et sa suppression est planifiée.</td>
     <td>6/30/2026</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>opennlp.tools.chunker<br>opennlp.tools.dictionary<br>opennlp.tools.dictionary.serializer<br>opennlp.tools.ml<br>opennlp.tools.ml.maxent<br>opennlp.tools.ml.maxent.io<br>opennlp.tools.ml.maxent.quasinewton<br>opennlp.tools.ml.model<br>opennlp.tools.ml.perceptron<br>opennlp.tools.namefind<br>opennlp.tools.ngram<br>opennlp.tools.postag<br>opennlp.tools.tokenize<br>opennlp.tools.tokenize.lang<br>opennlp.tools.util<br>opennlp.tools.util.eval<br>opennlp.tools.util.ext<br>opennlp.tools.util.featuregen<br>opennlp.tools.util.model</td>
     <td>Cette version de la bibliothèque OpenNLP est obsolète. Utilisez votre propre version d’OpenNLP.</td>
     <td>6/30/2026</td>
-    <td>9/30/2026</td>
-  </tr>
-  <tr>
-<td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
-    <td>Commons Lang 2 est en mode de maintenance. Commons Lang 3 devrait être utilisé à la place. <a href="#apache.commons">Consultez les notes de suppression ci-dessous.</a></td>
-    <td>30/04/2021</td>
-    <td>3/31/2027 (Provisoire)</td>
-  </tr>
-  <tr>
-    <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
-    <td>Commons Collections 3 est en mode de maintenance. Commons Collections 4 devrait être utilisé à la place. <a href="#apache.commons">Consultez les notes de suppression ci-dessous.</a></td>
-    <td>30/04/2021</td>
-    <td>3/31/2027 (Provisoire)</td>
-  </tr>
-  <tr>
-    <td>org.json</td>
-    <td>L’implémentation Apache Johnzon de <a href="https://johnzon.apache.org/index.html">javax.json</a> est recommandée et devrait être utilisée. </td>
-    <td>4/30/2021</td>
-    <td>3/31/2027 (Provisoire)</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.day.cq.commons.predicate</td>
     <td>Cette API est obsolète. Utilisez com.day.cq.commons.predicates à la place.</td>
     <td>6/1/2024</td>
-    <td>3/31/2027 (Provisoire)</td>
+    <td>3/31/2027</td>
+  </tr>
+  <tr>
+<td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
+    <td>Commons Lang 2 est en mode de maintenance. Commons Lang 3 devrait être utilisé à la place. <a href="#apache.commons">Consultez les notes de suppression ci-dessous.</a></td>
+    <td>30/04/2021</td>
+    <td>12/31/2027 (Provisoire)</td>
+  </tr>
+  <tr>
+    <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
+    <td>Commons Collections 3 est en mode de maintenance. Commons Collections 4 devrait être utilisé à la place. <a href="#apache.commons">Consultez les notes de suppression ci-dessous.</a></td>
+    <td>30/04/2021</td>
+    <td>12/31/2027 (Provisoire)</td>
+  </tr>
+  <tr>
+    <td>org.json</td>
+    <td>L’implémentation Apache Johnzon de <a href="https://johnzon.apache.org/index.html">javax.json</a> est recommandée et devrait être utilisée. </td>
+    <td>4/30/2021</td>
+    <td>12/31/2027 (Provisoire)</td>
   </tr>
   <tr>
     <td>org.apache.sling.runmode</td>
@@ -403,7 +403,7 @@ Cette section répertorie les API obsolètes et supprimées. Certaines API fon
 
 Cette section contient des conseils de suppression pour diverses API dans les tableaux ci-dessus.
 
-Pour identifier les API Java obsolètes que votre code utilise, intégrez le plug-in Maven [AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) dans votre projet Maven et exécutez-le localement. Le rapport répertorie toutes les utilisations obsolètes détectées de l’API et indique quel lot OSGi fait référence à chaque API. Référencez [ce tutoriel](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) pour savoir comment utiliser le plug-in Maven.
+Pour identifier les API Java obsolètes que votre code utilise, intégrez le plug-in Maven [AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) dans votre projet Maven et exécutez-le localement. Le rapport répertorie toutes les utilisations obsolètes détectées de l’API et indique quel lot OSGi fait référence à chaque API. Référencez [ce tutoriel](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) pour savoir comment utiliser le plug-in Maven.
 
 Bien que vous deviez remédier à toutes les API obsolètes au fil du temps, donnez la priorité à toutes les API répertoriées dans le tableau API obsolètes avec une date de suppression cible fixée au 26 février 2026 (ou avant). Dans le rapport AEM Analyzer, ces API peuvent apparaître avec une date de suppression effective du 8/31/2025.
 
