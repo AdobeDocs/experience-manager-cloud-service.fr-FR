@@ -6,7 +6,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: b1de659aeb1e1d2d6d5428ec6434a2757dfe7d2d
+source-git-commit: 803ea9a7f1581589c6ac7402b268875923f00584
 workflow-type: tm+mt
 source-wordcount: '3149'
 ht-degree: 12%
@@ -393,7 +393,7 @@ Appuyez ou cliquez sur l’icône **Propriétés de page** dans la barre d’out
 
 >[!NOTE]
 >
->* L’extension **Propriétés de page** fonctionne uniquement pour les pages, et non pour les fragments de contenu.
+>* Le bouton **Propriétés de page** fonctionne uniquement pour les pages, et non pour les fragments de contenu.
 >* Le bouton s’affiche uniquement lorsque la page distante possède une [connexion avec le protocole](/help/implementing/universal-editor/component-definition.md#plugins) le `aem` ou le `xwalk` et qu’un chemin de page unique peut être résolu à partir de l’élément modifiable actuel.
 
 ### Accès à la console Sites {#sites-console}
