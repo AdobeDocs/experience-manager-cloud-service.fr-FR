@@ -1,20 +1,20 @@
 ---
-title: Notes De Mise À Jour De L’Éditeur Universel 2026.06.11
-description: Voici les notes de mise à jour de la version 2026.06.11 de l’éditeur universel.
+title: Notes De Mise À Jour De L’Éditeur Universel 2026.06.18
+description: Voici les notes de mise à jour de la version 2026.06.18 de l’éditeur universel.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: fd128d2aa5bbd4c84b5ab438542ec696768b06a1
+source-git-commit: 8658d6c71927cbd610e42b618705509b51a2d672
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 18%
+source-wordcount: '155'
+ht-degree: 16%
 
 ---
 
 
-# Notes De Mise À Jour De L’Éditeur Universel 2026.06.11 {#release-notes}
+# Notes De Mise À Jour De L’Éditeur Universel 2026.06.18 {#release-notes}
 
-Voici les notes de mise à jour de la version du 11 juin 2026 de l’éditeur universel.
+Voici les notes de mise à jour de la version du 18 juin 2026 de l’éditeur universel.
 
 >[!TIP]
 >
@@ -24,9 +24,14 @@ Voici les notes de mise à jour de la version du 11 juin 2026 de l’éditeur un
 >
 >Pour consulter les notes de mise à jour actuelles d’Adobe Experience Manager as a Cloud Service, voir [cette page.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
+## Nouveautés {#what-is-new}
+
+* La possibilité de décocher toutes les cases sélectionnées a été ajoutée.
+
 ## Autres améliorations {#other-improvements}
 
-* Correction d’un problème en raison duquel les nœuds vides n’étaient pas correctement supprimés du JCR lors de certaines opérations.
-* Les images décoratives sont désormais correctement masquées pour les technologies d’assistance.
-* Certains messages d’erreur ont été rendus plus lisibles en supprimant l’intégralité de la trace de la pile et en affichant uniquement le message d’erreur d’origine.
-
+* Le bouton Rotation communique désormais correctement son état actuel aux technologies d’assistance.
+* Un état de chargement infini a été corrigé dans les situations où les fragments de contenu contiennent des onglets sans contenu.
+* Correction d’un bug en raison duquel un moteur de rendu se bloque dans certaines situations lors du rechargement de certains modèles.
+* Correction d’un bug en raison duquel certaines balises ne pouvaient pas être supprimées.
+* Le nom accessible du bouton Image en vedette ne contient plus d’informations en double.
