@@ -7,9 +7,9 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Utiliser des workflows AEM, à l’aide des étapes d’affectation de tâche, convertir en étape PDF/A, générer un document de l’étape enregistrée, utiliser des workflows, signer une étape de document, générer une étape de sortie imprimée, générer une sortie PDF non interactive
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
-source-wordcount: '7415'
+source-wordcount: '7593'
 ht-degree: 76%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 76%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | Cet article |
 
 Vous utilisez des modèles de workflow . Un modèle permet de définir et d’exécuter une série d’étapes. Vous pouvez également définir des propriétés de modèle pour déterminer, par exemple, si le processus est transitoire ou s’il utilise plusieurs ressources. Vous pouvez [inclure diverses étapes d’un processus AEM dans un modèle pour appliquer la logique métier](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=fr#extending-aem).
@@ -250,7 +250,7 @@ Si vous spécifiez le chemin d’accès d’un dossier (des pièces jointes, par
 
 **[!UICONTROL Paramètres régionaux]** : spécifiez la langue du document d’enregistrement. Sélectionnez **[!UICONTROL Littéral]** pour sélectionner les paramètres régionaux dans une liste déroulante ou **[!UICONTROL Variable]** pour récupérer les paramètres régionaux à partir de la valeur stockée dans une variable de type de données Chaîne. Vous devez définir le code des paramètres régionaux lors du stockage de la valeur du paramètre régional dans une variable. Par exemple, spécifiez **en_US** pour l’anglais et **fr_FR** pour le français.
 
-## Étape Invoquer DDX {#invokeddx}
+## Étape Invoquer DDX
 
 DDX (Document Description XML) est un langage de marquage déclaratif dont les éléments représentent des blocs de création de documents. Ces blocs de création comportent des documents PDF et XDP, ainsi que d’autres éléments tels que des commentaires, des signets et du texte avec style. DDX définit un ensemble d’opérations qui peut être appliqué à un ou plusieurs documents d’entrée pour générer un ou plusieurs documents de sortie. Un DDX unique peut être utilisé avec un éventail de documents source. Vous pouvez suivre l’étape ***Appeler DDX*** dans un workflow AEM pour effectuer différentes opérations, telles que l’assemblage ou le désassemblage de documents, la création et la modification de Forms Acrobat et XFA, etc., décrites dans la documentation de référence [DDX](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).
 
@@ -280,7 +280,7 @@ L’étape Invoquer DDX présente les propriétés suivantes :
 
 ## Étape Invoquer le service de modèle de données de formulaire (FDM) {#invoke-form-data-model-service-step}
 
-Vous pouvez utiliser l’[[!DNL AEM Forms] intégration de données](data-integration.md) pour configurer des sources de données disparates et vous y connecter. Ces sources de données peuvent être un service web, un service REST, un service OData et une solution CRM. L’intégration de données [!DNL AEM Forms] vous permet de créer un modèle de données de formulaire (FDM) regroupant divers services afin d’effectuer des opérations de récupération, d’ajout et de mise à jour de données sur la base de données configurée. Vous pouvez utiliser **[!UICONTROL l’étape Invoquer le service de modèle de données de formulaire]** pour sélectionner un modèle de données de formulaire (FDM) et utiliser les services du FDM pour récupérer, mettre à jour ou ajouter des données aux sources de données disparates.
+Vous pouvez utiliser l’[[!DNL AEM Forms] intégration de données](data-integration.md) pour configurer des sources de données disparates et vous y connecter. Ces sources de données peuvent être un service web, un service REST, un service OData et une solution CRM. [!DNL AEM Forms] L’intégration de données vous permet de créer un modèle de données de formulaire (FDM) regroupant divers services afin d’effectuer des opérations de récupération, d’ajout et de mise à jour de données sur la base de données configurée. Vous pouvez utiliser **[!UICONTROL l’étape Invoquer le service de modèle de données de formulaire]** pour sélectionner un modèle de données de formulaire (FDM) et utiliser les services du FDM pour récupérer, mettre à jour ou ajouter des données aux sources de données disparates.
 
 Pour expliquer les entrées des champs de l’étape, le tableau de base de données et le fichier JSON suivants servent d’exemple :
 
@@ -478,7 +478,7 @@ Generate a Non-Interactive PDF. It provides various customization options.
 
 Merges form data into a PDF form. You can import form data into a PDF form.
 
-### Invoke DDX step {#invokeddx}
+### Invoke DDX step
 
 Executes the DDX file on the specified map of input documents and returns the manipulated PDF documents.
 
@@ -563,11 +563,11 @@ L’opération Générer une sortie imprimée présente les propriétés suivant
 * **[!UICONTROL Sélectionner un fichier XCI à l’aide de]** : les fichiers XCI sont utilisés pour décrire les polices et les autres propriétés utilisées pour les éléments de conception de formulaire. Vous pouvez conserver un fichier XCI relatif à la payload, à un chemin d’accès absolu ou à l’aide d’une variable de type de données Document.
 
 * **[!UICONTROL Paramètres régionaux]** : définit la langue utilisée pour générer le document PDF. Si vous fournissez une valeur littérale, sélectionnez une langue dans la liste ou l’une de ces valeurs :
-   * **[!UICONTROL Utiliser le serveur par défaut]** :
-(par défaut) utilisez les paramètres régionaux qui sont configurés sur le serveur [!DNL AEM Forms]. Le paramètre Paramètre régional est configuré à l’aide de la console d’administration. (Voir l’[aide de Designer](https://helpx.adobe.com/content/dam/help/fr/experience-manager/6-5/forms/pdf/using-designer.pdf).)
+   * **[!UICONTROL Pour utiliser le serveur par défaut]** :
+(Par défaut) Utilisez le paramètre Paramètre régional configuré sur le serveur [!DNL AEM Forms]. Le paramètre Paramètre régional est configuré à l’aide de la console d’administration. (Voir l’[aide de Designer](https://helpx.adobe.com/content/dam/help/fr/experience-manager/6-5/forms/pdf/using-designer.pdf).)
 
-   * **[!UICONTROL Pour utiliser une valeur personnalisée]** : 
-saisissez le code des paramètres régionaux dans la zone littérale ou sélectionnez une variable de chaîne contenant le code des paramètres régionaux. Pour obtenir une liste complète des codes des paramètres régionaux pris en charge, voir https://docs.oracle.com/javase/1.5.0/docs/guide/intl/locale.doc.html.
+   * **[!UICONTROL Pour utiliser une valeur personnalisée]** :
+Saisissez le code de paramètre régional dans la zone littérale ou sélectionnez une variable de chaîne contenant le code de paramètre régional. Pour obtenir une liste complète des codes des paramètres régionaux pris en charge, voir https://docs.oracle.com/javase/1.5.0/docs/guide/intl/locale.doc.html.
 
 * **[!UICONTROL Copies]** : une valeur entière qui spécifie le nombre de copies à générer pour la sortie. La valeur par défaut est 1.
 

@@ -6,9 +6,9 @@ feature: Asset Management, Best Practices
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '953'
 ht-degree: 87%
 
 ---
@@ -48,7 +48,7 @@ You can limit who can access certain folders in Assets by making the folder part
 1. Select the **Enabled** check box to make the folder and its assets available only to a closed user group.  
 1. Browse to the login page, if there is one, to add that information. Add admitted groups by clicking **Add item**. If necessary, add the realm. Click **OK** to save your changes.
 
-## Use tags to organize assets {#use-tags-to-organize-assets}
+## Use tags to organize assets
 
 You can use folders or tags or both to organize assets. Adding tags to assets makes them easier to retrieve during a search. To add tags to an asset, follow these steps:
 
@@ -79,7 +79,7 @@ La méthode la plus simple pour organiser les ressources consiste à les enregis
 * Créez un répertoire de dossiers qui n’est pas susceptible de changer afin que les processus de personnalisation ou d’autonomisation puissent continuer à fonctionner. Par exemple, les profils de traitement affectés continuent à fonctionner.
 * Si une ressource a déjà été publiée, utilisez [!DNL Experience Manager] pour déplacer cette ressource vers un autre dossier et la republier depuis son nouvel emplacement. L’emplacement d’origine de la ressource publiée est toujours disponible ainsi que la ressource récemment republiée. Toutefois, la version d’origine de la ressource publiée est *« perdue »* pour [!DNL Experience Manager] et elle ne peut pas être dépubliée. Il est donc recommandé de dépublier une ressource avant de la déplacer vers un autre dossier.
 
-## Organisation de ressources à l’aide de balises {#use-tags-to-organize-assets}
+## Organisation de ressources à l’aide de balises
 
 L’ajout de balises à des ressources facilite leur récupération au cours d’une recherche, la création de collections à l’aide des résultats de recherche, l’amélioration du classement de certaines ressources et l’application d’algorithmes d’IA d’Adobe AI pour la découverte de ressources.
 

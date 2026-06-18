@@ -5,10 +5,10 @@ feature: Asset Management, Collaboration, Asset Distribution
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
-source-wordcount: '1835'
-ht-degree: 80%
+source-wordcount: '1944'
+ht-degree: 81%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 80%
 
 * [Partager des ressources en tant que lien](#sharelink).
 * [Télécharger des ressources et les partager séparément.](/help/assets/download-assets-from-aem.md)
-* Partagez à l’aide de l’appli de bureau [[!DNL Experience Manager]  &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=fr).
+* Partagez à l’aide de l’appli de bureau [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=fr).
 * Partagez à l’aide d’[[!DNL Adobe Asset Link]](https://www.adobe.com/fr/creativecloud/business/enterprise/adobe-asset-link.html).
 * Partagez à l’aide de [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=fr).
 
@@ -55,7 +55,7 @@ Pour connaître les paramètres associés à la configuration du canal e-mail, v
 
 ![Configurer le service de messagerie](/help/assets/assets/config-email-service.png)
 
-## Partager des ressources en tant que lien {#sharelink}
+## Partager des ressources en tant que lien
 
 Le partage de ressources par le biais d’un lien est un moyen pratique de mettre les ressources à la disposition de tiers, de spécialistes marketing et d’autres utilisateurs [!DNL Experience Manager]. Cette fonctionnalité permet aux utilisateurs anonymes d’accéder aux ressources partagées avec eux et de les télécharger. Lors du téléchargement des ressources à partir d’un lien partagé, [!DNL Experience Manager Assets] utilise un service asynchrone qui permet d’effectuer des téléchargements plus rapides et ininterrompus. Les ressources à télécharger sont placées en file d’attente en arrière-plan dans les archives ZIP de taille de fichier gérable. Pour les téléchargements volumineux, le téléchargement est regroupé en plusieurs fichiers de 100 Go par taille de fichier.
 
@@ -174,7 +174,7 @@ You can also copy the auto-generated link and share it with the users. The defau
 
 
 <!--
-## Share assets as a link {#sharelink}
+## Share assets as a link
 
 To generate the URL for assets you want to share with users, use the Link Sharing dialog. Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. Sharing assets through a link is a convenient way of making resources available to external parties without them having to first log in to Experience Manager Assets.
 
@@ -298,7 +298,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Activation des actions de bureau à utiliser avec l’application de bureau {#desktop-actions}
 
-À partir de l’interface utilisateur d’[!DNL Assets] ouverte dans un navigateur, vous pouvez explorer l’emplacement des ressources ou extraire et ouvrir une ressource pour la modifier dans votre appli de bureau. Ces options sont appelées actions de bureau ; pour les activer, voir [Activation des actions de bureau dans l’interface web [!DNL Assets] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#desktopactions-v2).
+À partir de l’interface utilisateur d’[!DNL Assets] ouverte dans un navigateur, vous pouvez explorer l’emplacement des ressources ou extraire et ouvrir une ressource pour la modifier dans votre appli de bureau. Ces options sont appelées actions de bureau ; pour les activer, voir [Activation des actions de bureau dans l’interface web [!DNL Assets] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#desktopactions-v2).
 
 ![Activation des actions de bureau à utiliser comme raccourci dans une application de bureau](assets/enable_desktop_actions.png)
 

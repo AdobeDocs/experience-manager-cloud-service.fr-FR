@@ -6,10 +6,10 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 564e0cf551a52d0e54799a6e9578d916a98438af
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
-source-wordcount: '1727'
-ht-degree: 20%
+source-wordcount: '1759'
+ht-degree: 21%
 
 ---
 
@@ -24,7 +24,7 @@ Un utilisateur doit disposer du rôle **[Responsable de déploiement](/help/onbo
 >
 >Vous pouvez [modifier les paramètres du pipeline](managing-pipelines.md) après la configuration initiale.
 
-## Ajout d’un nouveau pipeline hors production {#adding-non-production-pipeline}
+## Ajout d’un nouveau pipeline hors production
 
 Après avoir configuré un programme et créé au moins un environnement dans l’interface utilisateur de Cloud Manager, vous pouvez ajouter des pipelines hors production. Utilisez ces pipelines pour tester la qualité du code avant de le déployer dans des environnements de production.
 
@@ -70,7 +70,7 @@ Sous l’onglet **Code** de la boîte de dialogue **Ajouter un pipeline hors pro
    Voir [Pipelines CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) pour plus d’informations sur les types de pipelines.
 
 
-### J’utilise le code de pile complète. {#full-stack-code}
+### J’utilise le code de pile complète.
 
 Un pipeline de code full stack déploie simultanément des versions de code front-end et back-end contenant une ou plusieurs applications de serveur AEM avec une configuration HTTPD/Dispatcher.
 
@@ -161,7 +161,7 @@ The steps to complete the creation of your non-production, targeted deployment p
      > 
      >Consultez [Ajout et gestion de référentiels](/help/implementing/cloud-manager/managing-code/managing-repositories.md) pour découvrir comment ajouter et gérer des référentiels dans Cloud Manager.
 
-   * **Branche Git** - cette option définit à partir de quelle branche du pipeline sélectionné doit récupérer le code. Saisissez les premiers caractères du nom de la branche et la fonction de saisie automatique de ce champ. Elle trouve les branches correspondantes que vous pouvez sélectionner.
+   * **Branche Git** – Cette option définit à partir de quelle branche le pipeline sélectionné doit récupérer le code. Saisissez les premiers caractères du nom de la branche et la fonction de saisie automatique de ce champ. Elle trouve les branches correspondantes que vous pouvez sélectionner.
    * **Emplacement du code** - Cette option définit le chemin d’accès dans la branche du référentiel sélectionné à partir duquel le pipeline doit récupérer le code.
 
 <!--
@@ -249,9 +249,9 @@ Si vous rencontrez un comportement de build inattendu, envisagez de désactiver 
 
 | Problème | Solutions suggérées |
 | --- | --- |
-| Les résultats de build sont incohérents | · Désactivez la mise en cache pour les modules concernés.<br>· Vérification du comportement des plug-ins (en particulier des plug-ins `exec`/`antrun`). |
+| Les résultats de build sont incohérents | · Désactivez la mise en cache pour les modules concernés.<br>· Vérifiez le comportement des plug-ins (en particulier des plug-ins `exec`/`antrun`). |
 | Aucune amélioration des performances | · Assurez-vous que plusieurs exécutions ont eu lieu (préchauffage du cache).<br>· Vérifiez si la plupart des modules changent fréquemment. |
-| Artefacts inattendus ou modifications manquantes | · Vérifier si les modifications se situent en dehors du suivi des dépendances Maven.<br>· Utilisez **Full Build** pour la vérification. |
+| Artefacts inattendus ou modifications manquantes | · Vérifiez si les modifications ne se trouvent pas en dehors du suivi des dépendances Maven.<br>· Utilisez **Version complète** pour la vérification. |
 
 Voir [Ajouter un pipeline hors production](#adding-non-production-pipeline) pour activer la création intelligente.
 
@@ -266,7 +266,7 @@ Voir [Ajouter un pipeline hors production](#adding-non-production-pipeline) pour
 
 
 <!--
-## Add a non-production pipeline {#adding-non-production-pipeline}
+## Add a non-production pipeline
 
 Once you have set up your program and have at least one environment using the Cloud Manager UI, you are ready to add a non-production pipeline by following these steps.
 
@@ -311,7 +311,7 @@ See [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/int
 
 The steps to complete the creation of your non-production pipeline vary depending on the type of source code you selected. Follow the links above to jump to the next section of this document so you can complete the configuration of your pipeline.
 
-### Full Stack Code {#full-stack-code}
+### Full Stack Code
 
 A full-stack code pipeline simultaneously deploys back-end and front-end code builds containing one or more AEM server applications along with HTTPD/Dispatcher configuration.
 
