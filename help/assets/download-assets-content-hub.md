@@ -4,7 +4,7 @@ description: Découvrez comment télécharger une ou plusieurs ressources et leu
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 46ca8082f85cdb957681aa9596b9312b35e4f6ec
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
 source-wordcount: '1471'
 ht-degree: 2%
@@ -21,7 +21,7 @@ Vous pouvez télécharger une ou plusieurs ressources et leurs rendus disponible
 
 Consultez les [types de rendus disponibles dans Content Hub](#types-of-renditions).
 
-## Téléchargement d’une ou de plusieurs ressources et de leurs rendus {#download-asset-renditions}
+## Téléchargement d’une ou de plusieurs ressources et de leurs rendus
 
 Pour télécharger une ou plusieurs ressources et leurs rendus, procédez comme suit :
 
@@ -64,7 +64,7 @@ Si la boîte de dialogue **[!UICONTROL Télécharger des ressources]** affiche l
 
 <!--
 
-## Download an asset and its renditions {#download-asset-renditions} 
+## Download an asset and its renditions
 
 To download an asset and its renditions, execute the following steps: 
 

@@ -6,10 +6,10 @@ feature: Video Profiles,Best Practices
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: a6dc575aa1e7770f2a93901e7d3dcb5c25437163
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
-source-wordcount: '10069'
-ht-degree: 64%
+source-wordcount: '10235'
+ht-degree: 61%
 
 ---
 
@@ -292,8 +292,8 @@ Le tableau ci-dessous décrit la taille recommandée, le format et le débit min
 | Taille | Format | Débit minimal |
 |--- |--- |--- |
 | 1 024 × 768 | 4:3 | 4 500 Kbit/s pour la plupart des vidéos. |
-| 1 280 × 720 | 16 :9 | 3 000 à 6 000 Kbit/s, selon la quantité de mouvement dans la vidéo. |
-| 1 920 × 1 080 | 16 :9 | 6 000 à 8 000 kbit/s, selon la quantité de mouvement dans la vidéo. |
+| 1 280 × 720 | 16:9 | 3 000 à 6 000 Kbit/s, selon la quantité de mouvement dans la vidéo. |
+| 1 920 × 1 080 | 16:9 | 6 000 à 8 000 kbit/s, selon la quantité de mouvement dans la vidéo. |
 
 ### Obtention des métadonnées d’un fichier {#obtaining-a-file-s-metadata}
 
@@ -301,7 +301,7 @@ Vous pouvez obtenir les métadonnées d’un fichier en les affichant à l’aid
 
 1. Accédez à [Téléchargement MediaInfo](https://mediaarea.net/fr/MediaInfo/Download).
 1. Sélectionnez et téléchargez le programme d’installation pour la version avec l’interface graphique utilisateur, puis suivez les instructions d’installation.
-1. Après l’installation, cliquez avec le bouton droit sur le fichier vidéo (Windows® uniquement) et sélectionnez MediaInfo, ou bien ouvrez MediaInfo et faites glisser votre fichier vidéo dans l’application. Toutes les métadonnées de votre fichier vidéo, telles que sa largeur, sa hauteur et le nombre d’images par seconde, sont alors visibles à l’écran.
+1. Après l’installation, cliquez avec le bouton droit sur le fichier vidéo (Windows® uniquement) et sélectionnez MediaInfo, ou ouvrez MediaInfo et faites glisser votre fichier vidéo dans l’application. Toutes les métadonnées associées à votre fichier vidéo s’affichent, notamment la largeur, la hauteur et le nombre d’images par seconde.
 
 ### Format {#aspect-ratio}
 
@@ -317,7 +317,7 @@ Le tableau suivant décrit comment les résultats de la formule se traduisent pa
 |--- |--- |
 | 1,33 | 4:3 |
 | 0,75 | 3:4 |
-| 1,78 | 16 :9 |
+| 1,78 | 16:9 |
 | 0,56 | 9:16 |
 
 Par exemple, une vidéo d’une largeur de 1 440 × d’une hauteur de 1 080 a un format de 1 440/1 080, soit 1,33. Dans ce cas, vous choisissez un paramètre prédéfini de codage vidéo avec un format de 4:3 pour coder le fichier vidéo.
@@ -332,14 +332,14 @@ Le débit est la quantité de données codées pour constituer une seule seconde
 
 Lors de la sélection d’une vitesse de transmission, vous pouvez choisir deux types :
 
-* **[!UICONTROL Encodage à débit constant]** (CBR) : pendant l’encodage CBR, le débit ou le nombre de bits par seconde est conservé pendant tout le processus d’encodage. L’encodage CBR maintient le débit défini selon votre configuration sur l’intégralité de la vidéo. En outre, le codage CBR n’optimise pas la qualité des fichiers multimédias, mais économise de l’espace de stockage.
-Utilisez le codage CBR si votre vidéo présente globalement un niveau de mouvement similaire. Le codage CBR est le plus souvent utilisé pour diffuser le contenu vidéo en continu. Voir également [Utilisation de paramètres de codage vidéo personnalisés](/help/assets/dynamic-media/video-profiles.md#using-custom-added-video-encoding-parameters).
+* **[!UICONTROL Encodage à débit constant]** (CBR) : pendant l’encodage CBR, le débit, ou le nombre de bits par seconde, est conservé pendant tout le processus d’encodage. Le codage CBR conserve le débit de données défini à votre paramètre sur l’ensemble de la vidéo. En outre, le codage CBR n’optimise pas la qualité des fichiers multimédias, mais économise de l’espace de stockage.
+Utilisez CBR si votre vidéo contient un niveau de mouvement similaire tout au long de la vidéo. CBR est le plus souvent utilisé pour le contenu vidéo en flux continu. Voir aussi [Utilisation de paramètres de codage vidéo personnalisés](/help/assets/dynamic-media/video-profiles.md#using-custom-added-video-encoding-parameters).
 
-* **[!UICONTROL Codage à débit variable]** (VBR) - le codage VBR règle le débit en le diminuant et en l’augmentant selon la limite supérieure que vous avez définie, en fonction des données demandées par le compresseur. Cette fonctionnalité implique que lors d’un processus de codage VBR, le débit du fichier multimédia augmente ou diminue de manière dynamique en fonction des besoins du débit de fichiers multimédias.
-Le VBR prend plus de temps au codage, mais garantit de meilleurs résultats, avec une qualité de fichier multimédia supérieure. Le codage VBR est couramment utilisé pour la diffusion http progressive de contenu vidéo.
+* **[!UICONTROL Codage de débit variable]** (VBR) : le codage VBR ajuste le débit en le diminuant et selon la limite supérieure que vous avez définie, en fonction des données demandées par le compresseur. Cette fonctionnalité signifie que lors d’un processus de codage VBR, le débit du fichier multimédia augmente ou diminue de manière dynamique en fonction des besoins en débit du fichier multimédia.
+Le VBR prend plus de temps pour coder, mais produit les résultats les plus favorables ; la qualité du fichier multimédia est supérieure. Le VBR est le plus souvent utilisé pour la diffusion progressive http de contenu vidéo.
 
-Dans quels cas utilisez-vous le VBR ou le CBR ?
-Lorsque vous devez choisir entre VBR et CBR, il est presque toujours recommandé d’utiliser le VBR pour vos fichiers multimédias. Le VBR vous garantit des fichiers de meilleure qualité à des débits compétitifs. Lorsque vous utilisez le VBR, assurez-vous d’utiliser le codage à deux passages, et définissez le débit maximal afin qu’il soit 1,5 fois supérieur au débit vidéo cible.
+Quand utilisez-vous le VBR ou le CBR ?
+Lors de la sélection de VBR ou de CBR, il est presque toujours recommandé d’utiliser le VBR pour vos fichiers multimédias. Le VBR fournit des fichiers de meilleure qualité à des débits compétitifs. Lorsque vous utilisez le VBR, veillez à utiliser le codage à deux passages et à définir le débit maximal pour qu’il soit 1,5 fois supérieur au débit vidéo cible.
 
 Lorsque vous choisissez un paramètre prédéfini de codage vidéo, veillez à tenir compte de la vitesse de connexion de l’utilisateur cible. Choisissez un paramètre prédéfini avec un débit de données correspondant à 80 % de cette vitesse. Par exemple, si la vitesse de connexion de l’utilisateur ou de l’utilisatrice cible est de 1 000 Kbit/s, le meilleur paramètre prédéfini est celui qui comprend un débit vidéo de 800 Kbit/s.
 
@@ -349,7 +349,7 @@ Ce tableau décrit le débit de données associé à des vitesses de connexion c
 |--- |--- |
 | 256 | Connexion d’accès à distance. |
 | 800 | Connexion mobile standard. Pour cette connexion, visez un débit de données de 400 à 800 kbit/s pour les expériences 3G. |
-| 2000 | Connexion haut débit standard de bureau. Pour cette connexion, visez un débit de données de 800 à 2 000 kbit/s, bien qu’un débit de 1 200 à 1 500 kbit/s convienne à la plupart des cibles. |
+| 2000 | Connexion de bureau haut débit standard. Pour cette connexion, ciblez un débit de données compris entre 800 et 2 000 Kbit/s, la plupart des cibles atteignant en moyenne 1 200 à 1 500 Kbit/s. |
 | 5000 | Connexion haut débit standard. Il est déconseillé de coder dans la plage supérieure, car la diffusion vidéo à cette vitesse n’est pas disponible pour la plupart des consommateurs et des consommatrices. |
 
 ### Résolution {#resolution}
@@ -520,7 +520,7 @@ See [Adobe Developer Connection](https://help.adobe.com/fr_FR/scene7/using/WSef8
    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/fr_FR/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
  -->
 
-## À propos de la prise en charge de plusieurs sous-titres et pistes audio pour les vidéos dans Dynamic Media{#about-msma}
+## À propos de la prise en charge de plusieurs sous-titres et pistes audio pour les vidéos dans Dynamic Media
 
 Grâce aux fonctionnalités de sous-titres et de pistes audio multiples de Dynamic Media, vous pouvez facilement ajouter plusieurs pistes audio. Vous pouvez également ajouter plusieurs fichiers de sous-titres à l’aide de vos propres fichiers de `.vtt` (suivi de texte vidéo) ou de fichiers de sous-titres générés par l’IA. Les sous-titres générés par l’IA dans Dynamic Media sont conçus pour améliorer l’accessibilité et l’engagement de la vidéo en générant automatiquement des sous-titres précis et synchronisés. Cette technologie utilise des algorithmes d’IA avancés pour transcrire du contenu parlé dans du texte, qui est ensuite affiché sous forme de légendes sur la vidéo. Les principales fonctionnalités de cette technologie sont les suivantes :
 
@@ -545,7 +545,7 @@ Voici quelques cas d’utilisation à prendre en compte pour ajouter plusieurs l
 
 Tous les formats vidéo [pris en charge dans Dynamic Media](/help/assets/file-format-support.md) et toutes les visionneuses de vidéos Dynamic Media, à l’exception de la visionneuse Dynamic Media *Video_360*, sont pris en charge pour une utilisation avec plusieurs légendes et pistes audio.
 
-### Ajout de plusieurs légendes et pistes audio à votre vidéo {#add-msma}
+### Ajout de plusieurs légendes et pistes audio à votre vidéo
 
 Avant d’ajouter plusieurs sous-titres et plusieurs pistes audio à votre vidéo, assurez-vous que vous disposez déjà des éléments suivants :
 
@@ -585,7 +585,7 @@ Les sous-titres ajoutés sont pris en charge avec les formats WebVTT et Adobe VT
 
       | Métadonnées de piste audio | Description |
       |--- |--- |
-      | Nom de fichier | Le nom de fichier par défaut est dérivé du nom de fichier d’origine. Le nom du fichier ne peut être modifié que lors du chargement et ne peut pas l’être plus tard. Les exigences relatives aux caractères de nom de fichier sont les mêmes que pour AEM Assets.<br>Le même nom de fichier ne peut pas être utilisé pour des fichiers de piste audio ou de sous-titres supplémentaires. |
+      | Nom de fichier | Le nom de fichier par défaut est dérivé du nom de fichier d’origine. Le nom du fichier ne peut être modifié que lors du chargement et ne peut pas l’être plus tard. Les exigences relatives aux caractères des noms de fichier sont les mêmes que pour AEM Assets.<br>Le même nom de fichier ne peut pas être utilisé pour des fichiers de piste audio ou des fichiers de sous-titres supplémentaires. |
       | Langue | Sélectionnez la langue correcte de la piste audio. |
       | Type | Sélectionnez le type de piste audio que vous utilisez.<br>**Original** - La piste audio initialement associée à la vidéo et représentée sous forme de `[Original]` dans le libellé avec `English` langue sélectionnée par défaut. Bien que **[!UICONTROL Libellé]** et **[!UICONTROL Langue]** peuvent être modifiés dans la boîte de dialogue **[!UICONTROL Modifier la piste audio]**, les valeurs d’origine sont utilisées par défaut si la vidéo principale est retraitée.<br>**Standard** - Piste audio supplémentaire pour une langue autre que l’originale.<br>**Audio-description** - Une piste audio qui comprend également une narration descriptive des actions et des gestes non verbaux dans la vidéo, rendant le contenu plus accessible aux personnes malvoyantes. |
       | Libellé | Texte affiché comme nom de la piste audio dans la liste déroulante **[!UICONTROL Sélectionner l’audio ou la légende]** du lecteur multimédia. Le libellé correspond à ce qu’un client ou une cliente voit et à une piste audio. Par exemple, `English [Original]`. Le libellé de l’audio associé à une vidéo est défini sur `[Original]` par défaut. |
@@ -616,8 +616,8 @@ Les sous-titres ajoutés sont pris en charge avec les formats WebVTT et Adobe VT
 
       | Métadonnées de sous-titres | Description |
       |--- |--- |
-      | Nom de fichier | Le nom de fichier par défaut est dérivé du nom de fichier d’origine. Le nom du fichier ne peut être modifié que lors du chargement et ne peut pas l’être plus tard. Les exigences relatives aux caractères de nom de fichier sont les mêmes que pour AEM Assets.<br>Le même nom de fichier ne peut pas être utilisé pour des fichiers de sous-titres et de pistes audio supplémentaires. |
-      | Langue | Sélectionnez la langue de la légende. Une fois le fichier de sous-titres traité, ce champ de langue devient non modifiable (grisé) |
+      | Nom de fichier | Le nom de fichier par défaut est dérivé du nom de fichier d’origine. Le nom du fichier ne peut être modifié que lors du chargement et ne peut pas l’être plus tard. Les exigences relatives aux caractères des noms de fichier sont les mêmes que pour AEM Assets.<br>Le même nom de fichier ne peut pas être utilisé pour des fichiers de sous-titres et des fichiers de piste audio supplémentaires. |
+      | Langue | Sélectionnez la langue des sous-titres. Une fois le fichier de sous-titres traité, ce champ de langue devient non modifiable (grisé) |
       | Type | Sélectionnez le type de sous-titres que vous utilisez.<br>**Sous-titre** - Texte de légende affiché dans la vidéo pour traduire ou transcrire la boîte de dialogue.<br>**Légende** - Le texte de la légende comprend des bruits de fond, la différenciation des locuteurs et d’autres détails pertinents, ainsi que la traduction ou la transcription des dialogues, ce qui améliore l’accessibilité pour les personnes sourdes ou malentendantes. |
       | Libellé | Texte affiché pour le nom du sous-titre dans la liste de fenêtres contextuelles **[!UICONTROL Sélectionner l’audio ou les sous-titres]** du lecteur multimédia. Le libellé correspond à ce qu’un client ou une cliente voit et à une piste de sous-titre ou de légende. Par exemple, `English (CC)`. |
 
@@ -732,7 +732,7 @@ Plusieurs modifications de légende ont la priorité sur une légende ajoutée p
 
 1. Chargez le fichier de légende déjà ajouté comme modificateur à la vidéo afin de pouvoir le gérer explicitement.
 1. Chargez d’autres fichiers de sous-titres, si nécessaire.
-1. Publiez la vidéo comme vous le faites habituellement.
+1. Publiez la vidéo comme d’habitude.
 L’URL existante avec le modificateur de légende peut désormais charger plusieurs légendes.
 
 
@@ -819,9 +819,9 @@ Une fois les fichiers de sous-titres et de pistes audio chargés dans une vidéo
 
 Lorsque la vidéo vous satisfait, vous pouvez [la publier](publishing-dynamicmedia-assets.md) en utilisant l’une des méthodes suivantes.
 
-Consultez [Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/dynamic-media/embed-code.md).
-Consultez [Liaison d’URL à une application web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
-Voir [Ajout de ressources Dynamic Media aux pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+Voir [Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/dynamic-media/embed-code.md).
+Voir [Liaison d’URL à une application web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
+Voir [Ajout de Dynamic Media Assets aux pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 >[!NOTE]
 >
@@ -976,7 +976,7 @@ Vous pouvez faciliter la lecture et la consultation de vos vidéos les plus long
 
 <!-- OBSOLETE CONTENT OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading "Customizing Behavior Using Modifiers" under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/fr_FR/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
-Vous créez une liste de chapitres pour votre vidéo un peu de la même façon que vous créez des sous-titres. Autrement dit, vous créez un fichier WebVTT. Notez toutefois que ce fichier doit être distinct de tout fichier de sous-titrage WebVTT. Vous ne pouvez pas combiner les sous-titres et les chapitres dans un fichier WebVTT.
+Vous créez une liste de chapitres pour votre vidéo un peu de la même façon que vous créez des sous-titres. Autrement dit, vous créez un fichier WebVTT. Notez toutefois que ce fichier doit être distinct de tout fichier de sous-titrage WebVTT. Vous ne pouvez pas combiner des légendes et des chapitres dans un fichier WebVTT.
 
 Vous pouvez utiliser l’exemple suivant comme un exemple du format que vous pouvez utiliser pour créer un fichier WebVTT avec une navigation par chapitre :
 
@@ -1546,7 +1546,7 @@ Enabling any of the above three capabilities, enables all of them. So, if you on
 
 **To enable DASH, multi-captions and multi-audio tracks, and AI-generated captions support on your Dynamic Media account:** 
 
-1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
+1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.
@@ -1567,7 +1567,7 @@ Enabling any of the above three capabilities, enables all of them. So, if you on
 
 
 <!-- 
-## About multiple caption and audio track support for videos in Dynamic Media{#about-msma}
+## About multiple caption and audio track support for videos in Dynamic Media
 
 With multiple caption and audio track capability in Dynamic Media, you can easily add multiple captions and audio tracks to a primary video. This capability means that your videos are accessible to a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the captions and audio tracks from a single tab in the user interface.
 
@@ -1586,7 +1586,7 @@ All [video formats supported in Dynamic Media](/help/assets/file-format-support.
 
 Multi-caption and multi-audio track capability is available for your Dynamic Media account by way of a feature toggle that must be enabled (turned on) by Adobe Customer Support.
 
-### Add multiple captions and audio tracks to your video {#add-msma}
+### Add multiple captions and audio tracks to your video
 
 Before you add multiple caption and audio tracks to your video, be sure you already have the following in-place:
 

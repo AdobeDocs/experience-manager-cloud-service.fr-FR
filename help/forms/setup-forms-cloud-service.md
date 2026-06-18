@@ -5,7 +5,7 @@ role: Admin, Developer, User
 feature: Adaptive Forms
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 50%
@@ -91,7 +91,7 @@ Pour plus d’informations sur les groupes AEM spécifiques à Forms et les auto
 
 <!-- You can also create  [user groups](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=fr#accessing) specific  to your organization, assign policies, and [users](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=fr#accessing) to the groups. The policies help control permissions of the users that are part of the group. For information a -->
 
-## Étape suivante {#next-steps}
+## Étape suivante
 
 [Configuration d’un environnement de développement local](setup-local-development-environment.md). Vous pouvez utiliser un environnement de développement local pour créer un formulaire adaptatif et des ressources connexes (thèmes, modèles, actions Envoyer personnalisées, service de préremplissage, etc.). De plus, [convertissez PDF forms en Forms adaptatif](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=fr) sans vous connecter à un environnement de développement cloud.
 
@@ -128,7 +128,7 @@ After you onboard the service, configure a [local development environment](setup
 
 Administrators are responsible for managing Adobe software and services for their organization. Administrators grant access to developers in their organization to connect and use your [!DNL AEM Forms] as a Cloud Service program. When an administrator is provisioned for an organization, the administrator receives an email with title 'You now have administrator rights to manage Adobe software and services for your organization'. If you are an administrator, check your mailbox for email with previously mentioned title and proceed to [add users](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=fr#onboarding-users-in-admin-console) by way of IMS and assign [form-specific groups](forms-groups-privileges-tasks.md) to users based on their role.
 
-## Next step {#next-steps}
+## Next step
 -->
 
 <!--

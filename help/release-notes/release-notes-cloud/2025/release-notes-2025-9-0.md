@@ -4,10 +4,10 @@ description: Notes de mise à jour de la version 2025.9.0 d’ [!DNL Adobe Expe
 feature: Release Information
 role: Admin
 exl-id: b39198d9-97ca-4cf9-acd5-ff8c778ab386
-source-git-commit: 2e7072043a6b8e5dbaa5f9b6a0579de3d6509c85
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
-source-wordcount: '2214'
-ht-degree: 90%
+source-wordcount: '2202'
+ht-degree: 89%
 
 ---
 
@@ -67,7 +67,7 @@ Rendez Dynamic Media avec les URL OpenAPI plus lisibles en utilisant les URL Van
 >
 >Cette fonctionnalité est en disponibilité limitée. Pour commencer, consultez cet [article](/help/assets/vanity-urls.md).
 
-### Nouvelles fonctionnalités dans Content Hub {#new-features-content-hub}
+### Nouvelles fonctionnalités dans Content Hub
 
 **Marquer les collections comme favoris**
 
@@ -84,7 +84,7 @@ Les administrateurs et administratrices de Content Hub peuvent désormais éping
 
 <!--
 
-### New Features in Content Hub {#new-features-content-hub}
+### New Features in Content Hub
 
 **Mark Collections as Favourites**
 
@@ -96,7 +96,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -167,7 +167,7 @@ Journées de mise en production, événements en direct, pic de ventes : pas d�
 >[!NOTE]
 >
 >Disponible en tant que fonctionnalité de responsabilité le 25 septembre.
->Envoyez un e-mail à [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) pour l’activer dans vos programmes.
+>Envoyez [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) pour l’activer dans vos programmes.
 
 ### Nouvelle version des outils de développement AEM pour Eclipse {#aem-develeper-tools-for-eclipse}
 

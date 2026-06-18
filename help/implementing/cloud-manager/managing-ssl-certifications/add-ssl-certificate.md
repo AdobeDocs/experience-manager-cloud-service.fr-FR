@@ -5,15 +5,15 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
-source-wordcount: '1021'
-ht-degree: 6%
+source-wordcount: '1013'
+ht-degree: 7%
 
 ---
 
 
-# Ajouter un certificat SSL {#add-ssl-cert}
+# Ajouter un certificat SSL
 
 Découvrez comment ajouter votre propre certificat SSL ou un certificat DV (validation de domaine) géré par Adobe à l’aide de Cloud
 
@@ -157,7 +157,7 @@ Vous êtes maintenant prêt à ajouter une [configuration CDN](/help/implementin
 
 
 <!--
-## Add an SSL certificate {#add-ssl-cert}
+## Add an SSL certificate
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate program.
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
