@@ -62,16 +62,16 @@ Pour activer le [!DNL Dynamic Media with OpenAPI] pour votre environnement de se
 
 1. Cliquez sur **[!UICONTROL Activer]** dans la boîte de dialogue de confirmation pour lancer le processus d’activation du [!DNL Dynamic Media with OpenAPI]. Une fois l’activation réussie, le Cloud Manager affiche les mises à jour de statut suivantes :
    1. **[!UICONTROL Étape de l’environnement]** : **[!UICONTROL En cours d’exécution]**
-   1. ![DM activated](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**:**[!UICONTROL  les fonctionnalités OpenAPI sont activées ]**
+   1. ![DM activated](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media &#x200B;]**:**[!UICONTROL &#x200B; les fonctionnalités OpenAPI sont activées &#x200B;]**
 
-      ![ activation réussie ](/help/assets/assets/activation-successful.png){width="700"}
+      ![&#x200B; activation réussie &#x200B;](/help/assets/assets/activation-successful.png){width="700"}
 
 #### Réessayer l’activation {#retry-activation}
 
 Si l’activation échoue, le Cloud Manager affiche les mises à jour de statut suivantes :
 
 * **[!UICONTROL Étape de l’environnement]** : échec de **[!UICONTROL DM avec OpenAPI]**
-* ![DM activated](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**: échec de l’activation des fonctionnalités**[!UICONTROL  OpenAPI ]**
+* ![DM activated](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media &#x200B;]**: échec de l’activation des fonctionnalités&#x200B;**[!UICONTROL &#x200B; OpenAPI &#x200B;]**
 
   ![réessayer l’activation](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700"}
 
@@ -104,7 +104,7 @@ Procédez comme suit :
 
 1. [Créez un programme](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-program) ou accédez à un programme existant et cliquez sur **[!UICONTROL Modifier]**. La page **[!UICONTROL Configurer pour la production]** affiche l’onglet **[!UICONTROL Solutions et modules complémentaires]**.
 
-1. Sélectionnez ****, **[!UICONTROL Assets Prime]**, **[!UICONTROL Assets Ultimate]** ou **[!UICONTROL Sites]** pour ajouter la solution **[!UICONTROL Dynamic Media]** à votre programme.
+1. Sélectionnez **&#x200B;**, **[!UICONTROL Assets Prime]**, **[!UICONTROL Assets Ultimate]** ou **[!UICONTROL Sites]** pour ajouter la solution **[!UICONTROL Dynamic Media]** à votre programme.
 
 1. Sélectionnez la solution **[!UICONTROL Dynamic Media]** et cliquez sur **[!UICONTROL Continuer]** pour ajouter la solution **[!UICONTROL Dynamic Media]** à votre programme. Cette action redémarre tous les environnements existants de votre programme et leur ajoute la solution [!DNL Dynamic Media]. En outre, tout nouvel environnement créé dans votre programme est automatiquement [!DNL Dynamic Media].
 
@@ -118,9 +118,9 @@ Après l’[activation de Dynamic Media avec OpenAPI](#activate-dynamic-media-wi
 
 ![Services API Dynamic Media](/help/assets/assets/dynamic-media-api-services.png)
 
-Créez un projet dans [](https://developer.adobe.com/console) et utilisez la carte API Dynamic Media AEM pour accéder à Dynamic Media avec les fonctionnalités OpenAPI.
+Créez un projet dans [&#128279;](https://developer.adobe.com/console) et utilisez la carte API Dynamic Media AEM pour accéder à Dynamic Media avec les fonctionnalités OpenAPI.
 
-![ API Dynamic Media ](/help/assets/assets/dynamic-media-apis.png)
+![&#x200B; API Dynamic Media &#x200B;](/help/assets/assets/dynamic-media-apis.png)
 
 Vous pouvez utiliser l’[authentification de serveur à serveur](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) ou l’authentification de l’utilisateur à l’aide des [informations d’identification de l’application web](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-web-app) ou [informations d’identification SPA](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-single-page-app).
 
@@ -144,7 +144,7 @@ Pour afficher les sociétés (comptes) existantes ou ajouter une nouvelle socié
 
 Pour créer et répertorier une nouvelle société [!DNL Dynamic Media] (compte) configurable dans votre environnement de [!DNL AEM], procédez comme suit :
 
-1. Accédez à la page de licence [](https://experience-stage.adobe.com/#/@ssahnichstage/cloud-manager/license).
+1. Accédez à la page de licence [&#128279;](https://experience-stage.adobe.com/#/@ssahnichstage/cloud-manager/license).
 
 1. Cliquez sur **[!UICONTROL Ajouter une entreprise]** et la boîte de dialogue **[!UICONTROL Créer une entreprise Dynamic Media]** s’affiche.
 
