@@ -4,10 +4,10 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 8e557ae876a591b03294ecf938f1017eee34dd5e
+source-git-commit: e643c01f59df53cf57b287e05b2b5495f459b43e
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 41%
+source-wordcount: '575'
+ht-degree: 40%
 
 ---
 
@@ -67,4 +67,5 @@ AEM as a Cloud Service est dédié à l’optimisation de la sécurité et de
 | Dispatcher | 2.0.274 |  |
 | Composants principaux AEM | 2.31.0 | [Composants principaux de la gestion de contenu web d’AEM](https://github.com/adobe/aem-core-wcm-components) |
 | Node.js | 14 (par défaut) | [Versions de Node.js prises en charge](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+| Java 21 | 21.0.11 | [JDK 21.0.11](https://www.oracle.com/java/technologies/javase/21-0-11-relnotes.html) |
 
