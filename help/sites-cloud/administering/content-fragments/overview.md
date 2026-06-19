@@ -6,7 +6,7 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
+source-git-commit: 2919670732d924cb1d473be59513044239a780e6
 workflow-type: tm+mt
 source-wordcount: '2553'
 ht-degree: 29%
@@ -302,7 +302,7 @@ La console Fragments de contenu est dédiée à la gestion, à la recherche et �
 
 La console est directement accessible à partir du niveau supérieur de la navigation globale.
 
-![Navigation globale - Console Fragments de contenu](assets/cf-managing-global-navigation.png)
+![Navigation globale - Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/assets/cf-managing-global-navigation.png)
 
 Vous pouvez utiliser le panneau tout à gauche pour sélectionner le type de ressource à afficher, parcourir et gérer :
 

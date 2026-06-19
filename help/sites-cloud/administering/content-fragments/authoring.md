@@ -6,9 +6,9 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
+source-git-commit: 2919670732d924cb1d473be59513044239a780e6
 workflow-type: tm+mt
-source-wordcount: '2932'
+source-wordcount: '2938'
 ht-degree: 6%
 
 ---
@@ -58,7 +58,7 @@ Lorsque vous ouvrez l’éditeur de fragment de contenu pour la première fois, 
    * [Publication](#publish-content-fragment) et [Dépublication](#unpublish-content-fragment)
    * une option pour afficher tout **Références parentes** (icône de lien)
    * le fragment **[État](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**, et les dernières informations enregistrées ;
-   * bascule pour passer à l’éditeur d’origine (basé sur les ressources)
+   * bouton bascule pour passer à l’éditeur d’origine (/help/sites-cloud/administrators/content-fragments/assets-based)
 
      >[!WARNING]
      >
@@ -589,11 +589,11 @@ Le panneau **Champs** répertorie tous les champs du fragment de contenu. L’ic
 <table style="table-layout:auto">
  <tbody>
   <tr>
-   <td><p><b>Texte sur une seule ligne</b></p> </td>
+   <td><p><b>Une seule ligne de texte</b></p> </td>
    <td><p> <img src="assets/cf-authoring-single-line-text-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>Texte sur plusieurs lignes</b></p> </td>
+   <td><p><b>Plusieurs lignes de texte</b></p> </td>
    <td><p> <img src="assets/cf-authoring-multi-line-text-icon.png"> </p></td>
   </tr>
   <tr>
@@ -621,7 +621,7 @@ Le panneau **Champs** répertorie tous les champs du fragment de contenu. L’ic
    <td><p> <img src="assets/cf-authoring-content-reference-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>Référence de fragment</b></p> </td>
+   <td><p><b>Référence du fragment</b></p> </td>
    <td><p> <img src="assets/cf-authoring-fragment-reference-icon.png"> </p></td>
   </tr>
   <tr>

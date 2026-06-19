@@ -6,10 +6,10 @@ role: Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 3aa7073a-6c6b-47b7-99d8-bba2d9a00af5
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 2919670732d924cb1d473be59513044239a780e6
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 90%
+source-wordcount: '767'
+ht-degree: 89%
 
 ---
 
@@ -23,7 +23,7 @@ Les fragments de contenu d’AEM peuvent être utilisées conjointement avec l�
 >
 >Voir également :
 >
->* [Que désigne l’expression « Headless » ?](/help/headless/what-is-headless.md) pour une présentation des concepts et de la terminologie Headless.
+>* [Qu’est-ce que le mode découplé &#x200B;](/help/headless/what-is-headless.md) pour une présentation des concepts et de la terminologie Headless.
 >
 >* [Headless et AEM](/help/headless/introduction.md) pour une présentation du Headless Development d’AEM Sites as a Cloud Service.
 
@@ -68,7 +68,7 @@ L’implémentation de l’API AEM GraphQL repose sur les [bibliothèques Java G
 * Les [modèles de fragments de contenu](#content-fragments-models) fournissent la structure requise au moyen de types de données définis.
 * La [Référence du fragment](#fragment-references), disponible lors de la définition d’un modèle, peut être utilisée pour définir des couches supplémentaires de structure.
 
-![Fragments de contenu à utiliser avec GraphQL](assets/cf-contentdelivery-cf-use-with-graphql.png "Fragments de contenu à utiliser avec GraphQL")
+![Fragments de contenu à utiliser avec GraphQL](/help/sites-cloud/administering/content-fragments/assets/cf-contentdelivery-cf-use-with-graphql.png "Fragments de contenu à utiliser avec GraphQL")
 
 ### Fragments de contenu {#content-fragments}
 

@@ -6,9 +6,9 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: d9268c1a-bfe6-4df7-bad9-6007dd79e0aa
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 2919670732d924cb1d473be59513044239a780e6
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '136'
 ht-degree: 5%
 
 ---
@@ -34,4 +34,4 @@ Ouvrez l’onglet **Arborescence de structure** de la barre d’outils de l’é
 
 Par exemple :
 
-![Éditeur de fragment de contenu - Arborescence de structure](assets/cf-authoring-structure-tree.png)
+![Éditeur de fragment de contenu - Arborescence de structure](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-structure-tree.png)
