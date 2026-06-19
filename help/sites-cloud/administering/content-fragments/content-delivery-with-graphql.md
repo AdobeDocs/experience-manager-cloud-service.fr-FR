@@ -23,7 +23,7 @@ Les fragments de contenu d’AEM peuvent être utilisées conjointement avec l�
 >
 >Voir également :
 >
->* [Qu’est-ce que le mode découplé ](/help/headless/what-is-headless.md) pour une présentation des concepts et de la terminologie Headless.
+>* [Qu’est-ce que le mode découplé &#x200B;](/help/headless/what-is-headless.md) pour une présentation des concepts et de la terminologie Headless.
 >
 >* [Headless et AEM](/help/headless/introduction.md) pour une présentation du Headless Development d’AEM Sites as a Cloud Service.
 
