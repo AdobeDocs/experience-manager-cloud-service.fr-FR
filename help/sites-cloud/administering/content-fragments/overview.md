@@ -6,7 +6,7 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
+source-git-commit: 2919670732d924cb1d473be59513044239a780e6
 workflow-type: tm+mt
 source-wordcount: '2553'
 ht-degree: 29%
@@ -23,7 +23,7 @@ Avec Adobe Experience Manager (AEM) as a Cloud Service, les fragments de contenu
 
 >[!IMPORTANT]
 >
->De nombreuses fonctionnalités décrites dans cette section sont *uniquement* disponibles dans l’as a Cloud Service [&#x200B; Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) ; *en ligne* Adobe Experience Manager (AEM), et non dans une instance locale.
+>De nombreuses fonctionnalités décrites dans cette section sont *uniquement* disponibles dans l’as a Cloud Service [ Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) ; *en ligne* Adobe Experience Manager (AEM), et non dans une instance locale.
 
 >[!IMPORTANT]
 >
@@ -35,14 +35,14 @@ Avec Adobe Experience Manager (AEM) as a Cloud Service, les fragments de contenu
 >
 >Pour plus d’informations, consultez ce qui suit :
 >
->* utilisation de la console **&#x200B;**&#x200B;pour [gérer les fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md)
+>* utilisation de la console **** pour [gérer les fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md)
 >* l’utilisation de l’éditeur de fragment de contenu [*original*](/help/assets/content-fragments/content-fragments-variations.md),
 >* à l’aide de [Fragments de contenu pour la création de pages](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 Les fragments de contenu contiennent du contenu structuré :
 
-* Chaque fragment est basé sur un [&#x200B; modèle de fragment de contenu &#x200B;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md).
-   * Le [&#x200B; modèle de fragment de contenu définit la structure &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) fragment obtenu.
+* Chaque fragment est basé sur un [ modèle de fragment de contenu ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md).
+   * Le [ modèle de fragment de contenu définit la structure ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) fragment obtenu.
 * Chaque fragment comprend :
    * **[Principal](#main-and-variations)** - Partie intégrante du fragment qui contient le contenu principal ; existe toujours et ne peut pas être supprimé
    * **[Variations](#main-and-variations)** - une ou plusieurs permutations du contenu, créées par l’auteur ou l’autrice
@@ -76,7 +76,7 @@ Les fragments de contenu peuvent également être diffusés dans :
   >
   >Les fragments de contenu visuel sont actuellement en disponibilité limitée.
   >
-  >Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
+  >Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [](mailto:experience-production-agent@adobe.com).
 
 
 Le nombre de canaux de communication augmente tous les ans. En règle générale, les canaux font référence au mécanisme de diffusion :
@@ -155,7 +155,7 @@ Les variations sont une fonction importante des fragments de contenu AEM. Ils vo
 
   >[!NOTE]
   >
-  >Dans l’éditeur disponible à partir de la console **&#x200B;**, **Principal** est étiqueté comme **Principal**.
+  >Dans l’éditeur disponible à partir de la console ****, **Principal** est étiqueté comme **Principal**.
 
 * **Variations**
 
@@ -201,9 +201,9 @@ Les fragments de contenu sont :
 * Stockés en tant que **ressources** :
 
    * Les fragments de contenu (et leurs variantes) peuvent être créés et conservés à partir de la [console Fragments de contenu](#content-fragments-console).
-   * Créés et modifiés dans l’[&#x200B; Éditeur de fragment de contenu &#x200B;](/help/sites-cloud/administering/content-fragments/authoring.md).
+   * Créés et modifiés dans l’[ Éditeur de fragment de contenu ](/help/sites-cloud/administering/content-fragments/authoring.md).
 
-* Accessible pour la diffusion de contenu à l’aide de l’API AEM GraphQL [&#128279;](/help/headless/graphql-api/content-fragments.md).
+* Accessible pour la diffusion de contenu à l’aide de l’API AEM GraphQL [](/help/headless/graphql-api/content-fragments.md).
 
 * Disponible dans l’[éditeur de page à l’aide du composant Fragment de contenu](/help/sites-cloud/authoring/fragments/content-fragments.md) (composant référençant) :
 
@@ -278,7 +278,7 @@ Pour créer des fragments de contenu, vous avez besoin des éléments suivants :
 
 Pour utiliser vos fragments de contenu pour une diffusion de contenu découplé, vous avez également besoin des éléments suivants :
 
-* une requête [&#128279;](/help/headless/graphql-api/content-fragments.md) pour demander le contenu requis
+* une requête [](/help/headless/graphql-api/content-fragments.md) pour demander le contenu requis
 * ce contenu peut ensuite être utilisé pour développer vos propres SPA pour AEM. Pour plus d’informations, consultez les documents suivants :
 
    * [Tutoriel sur SPA WKND](/help/implementing/developing/hybrid/wknd-tutorial.md)
@@ -302,7 +302,7 @@ La console Fragments de contenu est dédiée à la gestion, à la recherche et �
 
 La console est directement accessible à partir du niveau supérieur de la navigation globale.
 
-![Navigation globale - Console Fragments de contenu](assets/cf-managing-global-navigation.png)
+![Navigation globale - Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/assets/cf-managing-global-navigation.png)
 
 Vous pouvez utiliser le panneau tout à gauche pour sélectionner le type de ressource à afficher, parcourir et gérer :
 

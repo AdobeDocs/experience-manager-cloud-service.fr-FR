@@ -6,9 +6,9 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 24a995f6e487b7870ebc84e06107a26442d541c3
+source-git-commit: 2919670732d924cb1d473be59513044239a780e6
 workflow-type: tm+mt
-source-wordcount: '2232'
+source-wordcount: '2188'
 ht-degree: 35%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 35%
 
 Les modèles de fragment de contenu dans Adobe Experience Manager (AEM) as a Cloud Service définissent la structure du contenu de vos [fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md). Ces fragments peuvent ensuite être utilisés pour la création de pages ou comme base pour votre contenu découplé.
 
-Cette page explique comment définir votre modèle de fragment de contenu à l’aide de l’éditeur dédié. Voir [&#x200B; Gestion de vos modèles de fragment de contenu &#x200B;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) pour accéder à d’autres tâches et options disponibles une fois vos fragments créés, y compris [les actions disponibles à partir de la console Fragments de contenu](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#actions), [l’autorisation du modèle sur votre dossier](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder) et [la publication de votre modèle](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model).
+Cette page explique comment définir votre modèle de fragment de contenu à l’aide de l’éditeur dédié. Voir [ Gestion de vos modèles de fragment de contenu ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) pour accéder à d’autres tâches et options disponibles une fois vos fragments créés, y compris [les actions disponibles à partir de la console Fragments de contenu](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#actions), [l’autorisation du modèle sur votre dossier](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder) et [la publication de votre modèle](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model).
 
 >[!NOTE]
 >
->Tenez compte des [&#x200B; Bonnes pratiques &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md#best-practices) lorsque vous utilisez vos modèles de fragment de contenu et vos fragments de contenu.
+>Tenez compte des [ Bonnes pratiques ](/help/sites-cloud/administering/content-fragments/overview.md#best-practices) lorsque vous utilisez vos modèles de fragment de contenu et vos fragments de contenu.
 
 >[!CAUTION]
 >
@@ -53,7 +53,7 @@ Le modèle de fragment de contenu définit efficacement la structure des fragmen
 
 1. Ouvrez le modèle requis pour **Modifier** ; utilisez l’un des liens d’action rapide ou sélectionnez le modèle, puis l’action dans la barre d’outils.
 
-   ![Propriétés](assets/cf-cfmodels-empty-model.png)
+   ![Propriétés](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-empty-model.png)
 
    Une fois ouvert, l’éditeur de modèles affiche :
 
@@ -86,7 +86,7 @@ Le modèle de fragment de contenu définit efficacement la structure des fragmen
 
    * Vous pouvez repositionner un champ en formant des points à gauche de la zone de champ :
 
-     ![&#x200B; Déplacer le champ &#x200B;](assets/cf-cfmodels-move-field-icon.png)
+     ![ Déplacer le champ ](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-move-field-icon.png)
 
    * Une fois qu’un champ a été ajouté au modèle (et est sélectionné), le panneau de droite affiche les **Propriétés** qui peuvent être définies pour ce type de données particulier. Vous pouvez définir ici ce qui est requis pour le spécifique
 champ .
@@ -102,7 +102,7 @@ champ .
 
      Par exemple :
 
-     ![Propriétés du champ](assets/cf-cfmodels-field-properties.png)
+     ![Propriétés du champ](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
 
      >[!NOTE]
      >
@@ -112,7 +112,7 @@ champ .
 
    Sélectionnez l’icône de corbeille pour le champ approprié dans le panneau du milieu.
 
-   ![Supprimer](assets/cf-cfmodels-remove-icon.png)
+   ![Supprimer](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-remove-icon.png)
 
 1. Ajoutez tous les champs obligatoires et définissez les propriétés connexes, le cas échéant.
 
@@ -316,9 +316,9 @@ Les fragments de contenu peuvent former du contenu imbriqué à l’aide de l’
 >
 >AEM dispose d’une protection récurrente pour :
 >
->* Références du contenu>  Cela empêche l’utilisateur d’ajouter une référence au fragment actif et peut conduire à une boîte de dialogue vide dans le sélecteur de référence du fragment.
+>* Références de contenu>  cela empêche l’utilisateur d’ajouter une référence au fragment actif et peut conduire à une boîte de dialogue vide dans le sélecteur de référence du fragment.
 >
->* Références de fragment dans GraphQL>  Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur null lors de la première occurrence.
+>* Références de fragments dans >  Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur null lors de la première occurrence.
 
 >[!CAUTION]
 >
@@ -354,7 +354,7 @@ Outre les propriétés standard, vous pouvez spécifier les éléments suivants�
    * Afficher la miniature
    * Limites de hauteur et de largeur pour l’image
 
-![Référence de contenu](assets/cf-cfmodels-content-reference.png)
+![Référence de contenu](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-content-reference.png)
 
 ### Référence du fragment (fragments imbriqués) {#fragment-reference-nested-fragments}
 
@@ -403,7 +403,7 @@ Cette propriété spécifie ou représente un chemin racine pour tous les fragme
 
    * **fragmentreferencecomposite** : permet à l’auteur du fragment de créer un composite en sélectionnant plusieurs fragments.
 
-  ![Référence du fragment](assets/cf-cfmodels-fragment-reference.png)
+  ![Référence du fragment](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-fragment-reference.png)
 
 >[!NOTE]
 >
