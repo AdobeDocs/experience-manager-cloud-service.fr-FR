@@ -6,10 +6,10 @@ feature: Assets HTTP API
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 17203fffbea1fcb7e4712041623275affab68f3c
+source-git-commit: a927c0556f47056fc4e6b0f812703baa34e53903
 workflow-type: tm+mt
-source-wordcount: '1916'
-ht-degree: 95%
+source-wordcount: '2155'
+ht-degree: 92%
 
 ---
 
@@ -68,6 +68,12 @@ L’article contient des recommandations, des documents de référence et des re
 >[!NOTE]
 >
 > Adobe déconseille de charger des packages de ressources, car cela enfreint nos bonnes pratiques relatives à l’évitement de la gestion des fichiers binaires dans AEM. Le chargement de ressources via des packages JCR n’entraîne pas le déclenchement du traitement sur ces ressources dans AEM as a Cloud Service.
+
+## Configurer les API AEM Assets basées sur OpenAPI {#setup-openapi-aem-assets}
+
+Si `AEM Assets API Users` service Profil de produit ne s’affiche pas dans les environnements de production, de développement ou inférieurs créés avant novembre 2024, vous devez configurer des API AEM Assets basées sur OpenAPI.
+
+La configuration des API AEM Assets basées sur OpenAPI implique la modernisation de l’environnement AEM as a Cloud Service et l’activation de l’accès aux API AEM Assets. La modernisation doit être exécutée par environnement (production, développement et évaluation). Pour plus d’informations, voir [Configuration des API AEM basées sur OpenAPI](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup).
 
 ## Chargement de ressources {#asset-upload}
 
