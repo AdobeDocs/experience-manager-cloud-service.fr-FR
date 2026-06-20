@@ -42,7 +42,7 @@ Vous pouvez mettre en veille manuellement votre programme Sandbox à partir de l
 
    ![Option du menu Developer Console](/help/implementing/cloud-manager/assets/developer-console-menu-option.png)
 
-1. Sur la page ****, cliquez sur **Mise en veille**.
+1. Sur la page **&#x200B;**, cliquez sur **Mise en veille**.
 
 <!-- UPDATE THESE SCREENSHOTS WHEN NEW AEM DEVELOPER CONSOLE UI IS RELEASED. AS OF OCTOBER 14, 2024, NEW UI IS STILL IN PRIVATE BETA -->
 
@@ -52,7 +52,7 @@ Vous pouvez mettre en veille manuellement votre programme Sandbox à partir de l
 
    ![Confirmation de la mise en veille](assets/hibernate-2.png)
 
-Une fois la mise en veille réussie, la notification de fin du processus de mise en veille de votre environnement s’affiche à l’écran ****.
+Une fois la mise en veille réussie, la notification de fin du processus de mise en veille de votre environnement s’affiche à l’écran **&#x200B;**.
 
 ![Confirmation de veille](assets/hibernate-4.png)
 
