@@ -5,15 +5,15 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 4dd6a9576092c2389f1416377b8e936360a7c7f8
 workflow-type: tm+mt
-source-wordcount: '1544'
-ht-degree: 29%
+source-wordcount: '1522'
+ht-degree: 20%
 
 ---
 
 
-# Environnement de création {#build-environment}
+# Environnement de création de Cloud Manager {#build-environment}
 
 Découvrez l’environnement de création de Cloud Manager et comment il génère et teste votre code.
 
@@ -32,15 +32,15 @@ Cloud Manager crée et teste votre code à l’aide d’un environnement de gén
 * Les versions de Java installées sont les suivantes : Oracle JDK 11.0.22, Oracle JDK 17.0.10 et Oracle JDK 21.0.4.
 
 <!-- OLD Removed 1/16/25 * **IMPORTANT:** By default, the JAVA_HOME environment variable is set to `/usr/lib/jvm/jdk1.8.0_401`, which contains Oracle JDK 8u401. This default should be overridden for AEM Cloud Projects to use JDK 11. See the Setting the Maven JDK Version section for more details. -->
-* **IMPORTANT :** par défaut, la variable d’environnement `JAVA_HOME` est définie sur `/usr/lib/jvm/jdk1.8.0_401`, qui contient le JDK Oracle 8u401. ***Cette valeur par défaut doit être remplacée pour que les projets cloud AEM utilisent le JDK 21 (recommandé), 17 ou 11***. Consultez la section [Définition de la version du JDK Maven](#alternate-maven-jdk-version) pour plus d’informations.
+* **IMPORTANT :** par défaut, la variable d’environnement `JAVA_HOME` est définie sur `/usr/lib/jvm/jdk1.8.0_401`, qui contient le JDK Oracle 8u401. ***Remplacez cette valeur par défaut pour que les projets cloud AEM utilisent le JDK 21 (recommandé), 17 ou 11***. Consultez la section [Définition de la version du JDK Maven](#alternate-maven-jdk-version) pour plus d’informations.
 * D’autres packages système nécessaires sont installés.
    * `bzip2`
    * `unzip`
    * `libpng`
    * `imagemagick`
    * `graphicsmagick`
-* D’autres packages peuvent être installés au moment de la création, comme décrit dans la section [Installer des packages système supplémentaires](#installing-additional-system-packages).
-* Chaque version s’exécute dans un environnement propre, le conteneur de version ne conservant aucun état entre les exécutions.
+* D’autres packages sont installés au moment de la génération, comme décrit dans la section [Installation de packages système supplémentaires](#installing-additional-system-packages).
+* Chaque version s’exécute dans un nouvel environnement ; le conteneur de version ne conserve pas les données entre les exécutions.
 * Maven est toujours exécuté avec les trois commandes suivantes.
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
@@ -49,15 +49,15 @@ Cloud Manager crée et teste votre code à l’aide d’un environnement de gén
 
 >[!NOTE]
 >
->Cloud Manager ne spécifie pas de version spécifique du `jacoco-maven-plugin`, mais la version requise dépend de la version Java du projet. Pour Java 8, la version du plug-in doit être au moins `0.7.5.201505241946`, tandis que les versions Java plus récentes peuvent nécessiter une version plus récente.
+>Cloud Manager ne spécifie pas de version spécifique du `jacoco-maven-plugin`, mais la version requise dépend de la version Java du projet. Pour Java 8, la version du plug-in doit être au moins `0.7.5.201505241946`, tandis que les versions Java plus récentes nécessitent une version plus récente.
 
 ## Référentiels Maven HTTPS {#https-maven}
 
-Cloud Manager [version 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) a commencé une mise à jour continue de l’environnement de création (achevée avec la version 2023.12.0), qui incluait une mise à jour de Maven 3.8.8. L’amélioration de la sécurité visant à atténuer les vulnérabilités potentielles a constitué un changement significatif introduit dans Maven 3.8.1. Plus précisément, Maven désactive désormais par défaut tous les miroirs `http://*` non sécurisés, comme indiqué dans les [Notes de mise à jour de Maven](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291).
+Cloud Manager [version 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) a commencé une mise à jour progressive de l’environnement de création (se terminant par la version 2023.12.0), qui incluait une mise à jour de Maven 3.8.8. Un changement significatif introduit dans Maven 3.8.1 a été une amélioration de la sécurité visant à atténuer les vulnérabilités potentielles. Plus précisément, Maven désactive désormais par défaut tous les miroirs `http://*` non sécurisés, comme indiqué dans les [Notes de mise à jour de Maven](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291).
 
-Suite à cette amélioration de la sécurité, certaines personnes peuvent rencontrer des problèmes lors de l’étape de création, en particulier lors du téléchargement d’artefacts à partir de référentiels Maven qui utilisent des connexions HTTP non sécurisées.
+Certains utilisateurs rencontrent des problèmes lors de l’étape de création lors du téléchargement d’artefacts à partir de référentiels Maven qui utilisent des connexions HTTP non sécurisées.
 
-Pour garantir une expérience fluide avec la version mise à jour, Adobe recommande aux utilisateurs et utilisatrices de mettre à jour leurs référentiels Maven de sorte à utiliser HTTPS au lieu de HTTP. Cet ajustement s’aligne sur la transition croissante du secteur vers des protocoles de communication sécurisés et contribue à maintenir un processus de création sécurisé et fiable.
+Pour garantir une expérience fluide avec la version mise à jour, Adobe recommande aux utilisateurs et utilisatrices de mettre à jour leurs référentiels Maven de sorte à utiliser HTTPS au lieu de HTTP. Cet ajustement s&#39;aligne sur la transition de l&#39;industrie vers des protocoles de communication sécurisés et aide à maintenir un processus de création sécurisé et fiable.
 
 <!--
  OLD below Removed 1/16/25
@@ -79,7 +79,7 @@ To do so, create a file named `.cloudmanager/java-version` in the git repository
 
 ### Utiliser une version Java spécifique {#using-java-support}
 
-Le processus de création Cloud Manager utilise le JDK Oracle 8 pour créer des projets par défaut, mais les clients AEM Cloud Service doivent définir la version du JDK d’exécution Maven sur 21 (recommandé), 17 ou 11.
+Le processus de création Cloud Manager utilise le JDK Oracle 8 pour créer des projets par défaut, mais les clients AEM Cloud Service ont défini la version du JDK d’exécution Maven sur 21 (recommandé), 17 ou 11.
 
 #### Définition de la version du JDK Maven {#alternate-maven-jdk-version}
 
@@ -94,42 +94,42 @@ Lors de la migration de votre application vers une nouvelle version de build Jav
 
 Adobe recommande la stratégie de déploiement suivante :
 
-1. Exécutez votre SDK locale avec Java 21, que vous pouvez télécharger à partir de https://experience.adobe.com/#/downloads, et déployez votre application sur celle-ci et validez ses fonctionnalités. Vérifiez dans les journaux qu&#39;il n&#39;y a pas d&#39;erreurs, ce qui indique des problèmes de chargement de classe ou de tissage de code octet.
-1. Configurez une branche dans votre référentiel Cloud Manager pour utiliser Java 21 comme version Java au moment de la création, configurez un pipeline de développement pour utiliser cette branche et exécutez le pipeline. Exécutez vos tests de validation.
-1. Si tout semble correct, configurez votre pipeline d’évaluation/de production pour utiliser Java 21 comme version Java au moment de la création et exécutez le pipeline.
+1. Exécutez votre SDK locale avec Java 21, que vous pouvez télécharger à partir de https://experience.adobe.com/#/downloads, déployez votre application sur celle-ci et validez ses fonctionnalités. Pour vous assurer qu’il n’y a aucune erreur indiquant des problèmes de chargement de classe ou de tissage par code de trame, vérifiez les journaux.
+1. Pour utiliser Java 21 en tant que version Java au moment de la création, configurez une branche dans votre référentiel Cloud Manager, configurez un pipeline de développement pour utiliser cette branche, puis exécutez le pipeline. Exécutez vos tests de validation.
+1. Si les résultats sont satisfaisants lors de l’utilisation de Java 21 comme version Java au moment de la création, configurez votre pipeline d’évaluation/de production et exécutez le pipeline.
 
-##### À propos de certaines fonctionnalités de traduction {#translation-features}
+##### Fonctionnalités de traduction {#translation-features}
 
-Les fonctionnalités suivantes peuvent ne pas fonctionner correctement lorsqu’elles sont déployées sur l’exécution Java 21 et Adobe prévoit de les résoudre d’ici le début de l’année 2025 :
+Les fonctionnalités suivantes ne fonctionnent pas correctement lorsqu’elles sont déployées sur l’exécution Java 21 et Adobe prévoit de les résoudre d’ici le début de l’année 2025 :
 
 * Le format `XLIFF` (XML Localization Interchange File Format) échoue lors de l’utilisation de la traduction humaine.
-* `I18n` (Internationalisation) ne gère pas correctement les paramètres régionaux hébreu (`he`), indonésien (`in`) et yiddish (`yi`) en raison de modifications apportées au constructeur de paramètres régionaux dans les versions Java les plus récentes.
+* `I18n` (Internationalisation) ne gère pas correctement les paramètres régionaux hébreu (`he`), indonésien (`in`) et yiddish (`yi`), car le constructeur de paramètres régionaux a été modifié dans des versions Java plus récentes.
 
 #### Exigences d’exécution {#runtime-requirements}
 
 L’exécution Java 21 a été appliquée à tous les environnements éligibles, qui sont des environnements de la version AEM 17098 ou ultérieure qui répondent aux critères ci-dessous. Si un environnement ne répond pas aux critères, il est important d’effectuer des ajustements pour garantir les performances, la disponibilité et la sécurité.
 
-* **Version minimale d’ASM:**
+* **Version minimale d’ASM :**
 Mettez à jour l’utilisation du package Java`org.objectweb.asm` souvent regroupé dans des artefacts `org.ow2.asm.*`, vers la version 9.5 ou ultérieure pour garantir la prise en charge des exécutions JVM plus récentes.
 
-* **Version minimale de Groovy:**
+* **Version minimale de Groovy :**
 Mettez à jour l’utilisation des packages Java `org.apache.groovy` ou `org.codehaus.groovy` vers la version 4.0.22 ou ultérieure pour garantir la prise en charge des exécutions JVM plus récentes.
 
   Ce lot peut être inclus indirectement en ajoutant des dépendances tierces telles que la console AEM Groovy.
 
-* **Version minimale de Aries SPIFly:**
+* **Version minimale de Aries SPIFly :**
 Mettez à jour l’utilisation du package Java `org.apache.aries.spifly.dynamic.bundle` vers la version 1.3.6 ou ultérieure pour garantir la prise en charge des exécutions JVM plus récentes.
 
 Le SDK AEM Cloud Service prend en charge Java 21 et vous permet de vérifier la compatibilité de votre projet avec Java 21 avant d’exécuter un pipeline Cloud Manager.
 
 * **Modifier un paramètre d’exécution :**
-Lors de l’exécution locale d’AEM avec Java 21, les scripts de démarrage (`crx-quickstart/bin/start` ou `crx-quickstart/bin/start.bat`) échouent en raison du paramètre `MaxPermSize` . Pour remédier à ce problème, supprimez `-XX:MaxPermSize=256M` du script ou définissez la variable d’environnement `CQ_JVM_OPTS`, en la définissant sur `-Xmx1024m -Djava.awt.headless=true`.
+Lors de l’exécution locale d’AEM avec Java 21, les scripts de démarrage (`crx-quickstart/bin/start` ou `crx-quickstart/bin/start.bat`) échouent en raison du paramètre `MaxPermSize` . Vous pouvez également supprimer le `-XX:MaxPermSize=256M` du script ou définir la variable d’environnement `CQ_JVM_OPTS`, en la définissant sur `-Xmx1024m -Djava.awt.headless=true`.
 
   Ce problème est résolu dans la version 19149 et ultérieure du SDK AEM Cloud Service.
 
 >[!IMPORTANT]
 >
->Si un environnement n’a pas encore été automatiquement mis à jour vers l’exécution Java 21, vous pouvez le déclencher en créant avec Java 17 ou 21. Pour ce faire, définissez `.cloudmanager/java-version` sur `21` ou `17`. Pour toute question, contactez Adobe à l’adresse [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
+>Si un environnement n’a pas encore été automatiquement mis à jour vers l’exécution Java 21, vous pouvez le déclencher en créant avec Java 17 ou 21. Pour configurer ce paramètre, définissez `.cloudmanager/java-version` sur `21` ou `17`. Pour toute question, contactez Adobe à l’adresse [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
 
 #### Exigences de temps de création {#build-time-reqs}
 
@@ -137,20 +137,20 @@ Les ajustements suivants sont nécessaires pour permettre la création du projet
 
 Il est recommandé aux clients AEM Cloud Service de créer leurs projets avec Java 21 dès que possible afin de tirer parti des nouvelles fonctionnalités de langue.
 
-* **Version minimale de `bnd-maven-plugin`:**
+* **Version minimale de `bnd-maven-plugin` :**
 Mettez à jour l’utilisation de `bnd-maven-plugin` vers la version 6.4.0 pour garantir la prise en charge des exécutions JVM plus récentes.
 
   Les versions 7 ou ultérieures ne sont pas compatibles avec Java 11 ou version antérieure, une mise à niveau vers cette version n’est donc pas recommandée.
 
-* **Version minimale de `aemanalyser-maven-plugin`:**
+* **Version minimale de `aemanalyser-maven-plugin` :**
 Mettez à jour l’utilisation de `aemanalyser-maven-plugin` vers la version 1.6.16 ou ultérieure pour garantir la prise en charge des exécutions JVM plus récentes.
 
-* **Version minimale de `maven-bundle-plugin`:**
+* **Version minimale de `maven-bundle-plugin` :**
 Mettez à jour l’utilisation de `maven-bundle-plugin` vers la version 5.1.5 ou une version ultérieure pour garantir la prise en charge des exécutions JVM plus récentes.
 
   Les versions 6 ou ultérieures ne sont pas compatibles avec Java 11 ou version antérieure, une mise à niveau vers cette version n’est donc pas recommandée.
 
-* **Mise à jour des dépendances dans `maven-scr-plugin`:**
+* **Mettez à jour les dépendances dans `maven-scr-plugin` :**
 Le `maven-scr-plugin` n’est pas directement compatible avec Java 21 ou Java 17. Cependant, les fichiers descripteurs peuvent être générés en mettant à jour la version des dépendances AEM dans la configuration du plug-in, comme illustré dans l’exemple suivant :
 
 ```XML
@@ -191,9 +191,9 @@ Le `maven-scr-plugin` n’est pas directement compatible avec Java 21 ou Java 17
 
 ## Variables d’environnement - standard {#environment-variables}
 
-Vous pouvez juger nécessaire de modifier le processus de génération en fonction des informations sur le programme ou le pipeline.
+Configurez le processus de création en fonction des informations sur le programme ou le pipeline.
 
-Par exemple, si la minimisation de JavaScript se produit au moment de la création à l’aide d’un outil tel que gulp, différents niveaux de minimisation peuvent être préférés pour divers environnements. Une version de développement peut utiliser un niveau de minimisation plus léger par rapport à l’évaluation et à la production.
+Par exemple, si la minimisation de JavaScript se produit au moment de la création à l’aide d’un outil tel que gulp, différents niveaux de minimisation sont recommandés pour différents environnements. Une version de développement utilise un niveau de minimisation plus léger par rapport à l’évaluation et à la production.
 
 Pour la prise en charge, Cloud Manager ajoute ces variables d’environnement standard au conteneur de build pour chaque exécution.
 
@@ -210,13 +210,13 @@ Pour la prise en charge, Cloud Manager ajoute ces variables d’environnement s
 
 ## Variables d’environnement - pipeline {#pipeline-variables}
 
-Votre processus de génération peut nécessiter des variables de configuration spécifiques qui ne doivent pas être stockées dans le référentiel Git. En outre, vous devrez peut-être ajuster ces variables entre les exécutions de pipeline à l’aide de la même branche.
+Votre processus de création nécessite des variables de configuration spécifiques qui ne sont pas stockées dans le référentiel Git. En outre, vous devez ajuster ces variables entre les exécutions de pipeline à l’aide de la même branche.
 
 Voir aussi [Configurer des variables de pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) pour plus d’informations.
 
 ## Installation de packages système supplémentaires {#installing-additional-system-packages}
 
-Certaines versions nécessitent des packages système supplémentaires pour fonctionner entièrement. Par exemple, une version peut appeler un script Python ou Ruby et doit disposer d’un interprète de langue approprié installé. Ce processus d’installation peut être géré en appelant la [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) de votre `pom.xml` pour appeler APT. Cette exécution doit généralement être encapsulée dans un profil Maven spécifique à Cloud Manager. Cet exemple installe Python.
+Certaines versions nécessitent des packages système supplémentaires pour fonctionner entièrement. Par exemple, une version appelle un script Python ou Ruby et doit disposer d’un interprète de langue approprié installé. Ce processus d’installation peut être géré en appelant la [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) de votre `pom.xml` pour appeler APT. Cette exécution est encapsulée dans un profil Maven spécifique à Cloud Manager. Cet exemple installe Python.
 
 ```xml
         <profile>

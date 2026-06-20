@@ -5,10 +5,10 @@ exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 0376fa4df5966807a11a64f304c8da2112e62bfd
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 15%
+source-wordcount: '482'
+ht-degree: 16%
 
 ---
 
@@ -43,7 +43,7 @@ Pour en savoir plus sur les types de programme, consultez le document [Présenta
 1. Dans la zone de liste **Solutions et modules complémentaires**, sélectionnez une ou plusieurs solutions à inclure dans le programme.
 
    * Cliquez sur le chevron situé à gauche du nom d’une solution pour afficher tous les modules complémentaires facultatifs disponibles que vous souhaitez inclure avec une solution sélectionnée.
-   * Les solutions **Sites**, **Assets** et **Edge Delivery Services** sont toujours sélectionnées par défaut lorsque vous créez un programme Sandbox. Vous ne pouvez pas les désélectionner.
+   * Cloud Manager sélectionne toujours les solutions **Sites**, **Assets** et **Edge Delivery Services** par défaut lorsque vous créez un programme Sandbox. Vous ne pouvez pas les désélectionner.
 
    ![Sélection de solutions et de modules complémentaires pour une sandbox](assets/sandbox-solutions-add-ons.png)
 
@@ -55,11 +55,11 @@ Pour en savoir plus sur les types de programme, consultez le document [Présenta
 
 Une fois qu’un nouveau programme Sandbox est créé, vous pouvez afficher les détails de la configuration de votre sandbox et accéder à l’environnement en consultant la page de présentation du programme.
 
-1. Sur la page de destination de Cloud Manager, dans le programme Sandbox, cliquez sur ![icône de liste plus petite](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) sur le programme Sandbox que vous avez créé.
+1. Dans la page de destination de Cloud Manager, pour le programme Sandbox, cliquez sur ![icône de liste plus petite](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) sur le programme Sandbox que vous avez créé.
 
    ![Accès à l’aperçu du programme](assets/program-overview-sandbox.png)
 
-1. Une fois l’étape de création du projet terminée, vous pouvez cliquer sur le lien **Accéder aux informations sur le référentiel** pour pouvoir utiliser votre référentiel Git.
+1. Une fois l’étape de création du projet terminée, vous pouvez cliquer sur le lien **Accéder aux informations sur le référentiel** pour utiliser votre référentiel Git.
 
    ![Configuration du programme](assets/create-program4.png)
 
@@ -71,10 +71,10 @@ Une fois qu’un nouveau programme Sandbox est créé, vous pouvez afficher les 
 
    ![Lien Accès à AEM](assets/create-program5.png)
 
-1. Une fois terminé le déploiement du pipeline hors production vers le développement, l’assistant de call-to-action vous permet d’accéder à l’environnement de développement AEM ou de déployer du code dans l’environnement de développement.
+1. Une fois terminé le déploiement du pipeline hors production vers le développement, l’assistant de call-to-action vous aide à accéder à l’environnement de développement AEM ou à y déployer du code.
 
    ![Déploiement d’une Sandbox](assets/create-program-setup-deploy.png)
 
 >[!TIP]
 >
->Consultez [Navigation dans l’interface utilisateur de Cloud Manager](/help/implementing/cloud-manager/navigation.md) pour plus d’informations sur la navigation dans Cloud Manager et sur la console **Mes programmes**.
+>Voir [Navigation dans l’interface utilisateur de Cloud Manager](/help/implementing/cloud-manager/navigation.md) pour plus d’informations sur la navigation dans Cloud Manager et sur la console **Mes programmes**.
