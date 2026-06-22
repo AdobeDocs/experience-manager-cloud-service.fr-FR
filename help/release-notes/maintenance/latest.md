@@ -4,9 +4,9 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: e643c01f59df53cf57b287e05b2b5495f459b43e
+source-git-commit: 056af9d44bcc00e5f73828cd20f8d0eb19b57aa8
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '581'
 ht-degree: 40%
 
 ---
@@ -16,23 +16,27 @@ ht-degree: 40%
 
 La section suivante décrit les notes de mise jour techniques de maintenance actuelle d’Experience Manager as a Cloud Service.
 
-## 26635 de publication {#release-26635}
+## 26773 de publication {#release-26773}
 
-Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 26635, rendue publique le 17 juin 2026. La version de maintenance précédente était la version 26353.
+Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 26773, rendue publique le 17 juin 2026. La version de maintenance précédente était la version 26353.
 
 L’activation de la fonctionnalité 2026.6.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
 
-### Améliorations {#enhancements-26635}
+>[!NOTE]
+>
+>La version 26773 a été rendue privée.
+
+### Améliorations {#enhancements-26773}
 
 * GRANITE-67251 : présentation de `cqSiteSearch`, un nouvel index prêt à l’emploi défini sur le type de mixin `cq:Searchable`. Cela permet un contrôle précis du contenu qui entre dans l’index du site et fournit une recherche de site complète pour les sites web AEM, y compris une recherche sémantique.
 * GRANITE-68099 : mise à jour d’Apache Jackrabbit Oak incorporé vers la dernière version publique (2.2.0).
 * SKYOPS-135241 : introduisez un préfixe aem pour les filtres de batterie non modifiables afin d’éviter les conflits de noms avec les configurations définies par le client ou la cliente.
 
-### Problèmes résolus {#fixed-issues-26635}
+### Problèmes résolus {#fixed-issues-26773}
 
 Aucun.
 
-#### AEM Guides {#guides-26635}
+#### AEM Guides {#guides-26773}
 
 * GUIDES-46275 : les dimensions d’image spécifiées avec des unités telles que `mm` ne sont pas rendues correctement, ce qui entraîne l’affichage des images à leur taille d’origine au lieu des dimensions spécifiées.
 * GUIDES-45800 : si vous copiez et collez des `<keywords>` à l’intérieur de `<topicmeta>` dans un `<keydef>` ou un `<topicref>`, les mots-clés sont insérés dans des balises étrangères indésirables.
@@ -44,19 +48,19 @@ Aucun.
 
 Pour plus d’informations sur les fonctionnalités nouvelles et améliorées, ainsi que sur les problèmes résolus dans la version, consultez la [Feuille de route de publication d’Experience Manager Guides](https://experienceleague.adobe.com/fr/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
-### Problèmes connus {#known-issues-26635}
+### Problèmes connus {#known-issues-26773}
 
 Aucun.
 
-### Fonctionnalités et API obsolètes {#deprecated-26635}
+### Fonctionnalités et API obsolètes {#deprecated-26773}
 
 Les fonctionnalités et API obsolètes et supprimées dans AEM as a Cloud Service sont présentées dans le document [Fonctionnalités et API obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md).
 
-### Correctifs de sécurité {#security-26635}
+### Correctifs de sécurité {#security-26773}
 
 AEM as a Cloud Service est dédié à l’optimisation de la sécurité et des performances de votre plateforme. Cette version de maintenance corrige 10 vulnérabilités identifiées, renforçant ainsi notre engagement en faveur d’une protection robuste des systèmes.
 
-### Technologies intégrées {#embedded-tech-26635}
+### Technologies intégrées {#embedded-tech-26773}
 
 | Technologie | Version | Lien |
 |---|---|---|
@@ -68,4 +72,3 @@ AEM as a Cloud Service est dédié à l’optimisation de la sécurité et de
 | Composants principaux AEM | 2.31.0 | [Composants principaux de la gestion de contenu web d’AEM](https://github.com/adobe/aem-core-wcm-components) |
 | Node.js | 14 (par défaut) | [Versions de Node.js prises en charge](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
 | Java 21 | 21.0.11 | [JDK 21.0.11](https://www.oracle.com/java/technologies/javase/21-0-11-relnotes.html) |
-
