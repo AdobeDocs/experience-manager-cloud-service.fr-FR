@@ -5,9 +5,9 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fd729f12b4d6ff94ba4f3c86b8b8c1a0d3627c16
+source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
 workflow-type: tm+mt
-source-wordcount: '1346'
+source-wordcount: '1349'
 ht-degree: 9%
 
 ---
@@ -40,7 +40,7 @@ Chaque fois qu’un programme est modifié, y compris par l’ajout ou la suppre
 1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com).
 1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
 1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
-1. Sélectionnez l’organisation appropriée.
+1. Dans Cloud Manager, sélectionnez l’organisation appropriée.
 1. Sur la page **Mes programmes**, cliquez sur le programme que vous souhaitez modifier.
 1. Dans le coin supérieur gauche de la page, cliquez sur le nom du programme, puis sélectionnez **Modifier le programme**.
 
@@ -176,7 +176,6 @@ La suppression d’un programme Sandbox supprime tous les environnements et les 
 1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
 1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
 1. Sélectionnez l’organisation appropriée.
-
 1. Sur la page **[Mes programmes](#my-programs)**, cliquez sur le programme Sandbox que vous souhaitez modifier pour en afficher les détails.
 
 1. Cliquez sur le nom de votre programme Sandbox dans le coin supérieur gauche de la page, puis sélectionnez **Supprimer le programme**.

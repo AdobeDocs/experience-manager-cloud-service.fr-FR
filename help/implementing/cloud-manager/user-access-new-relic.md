@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 93e633b8c9ac2f0bc03df70d3419b70d7b2ea7ba
+source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
 workflow-type: tm+mt
-source-wordcount: '2421'
-ht-degree: 24%
+source-wordcount: '2331'
+ht-degree: 23%
 
 ---
 
@@ -47,10 +47,8 @@ Pour un programme nouvellement créé, un sous-compte New Relic One est créé p
 
 **Pour activer votre sous-compte New Relic One :**
 
-1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com).
-   1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
-   1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
-1. Sélectionnez l’organisation de votre choix.
+{{sign-in-to-cloud-manager}}
+
 1. Sur la console **Mes programmes**, cliquez sur un programme pour lequel vous souhaitez gérer vos utilisateurs New Relic One.
 1. Dans le menu de gauche, sous **Services**, cliquez sur ![icône Données ou icône Environnements](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environnements**.
 1. Sur la page Environnements , près du coin supérieur droit, cliquez sur ![Icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), puis sur **Activer New Relic**.
@@ -71,10 +69,8 @@ Vous pouvez définir les utilisateurs de votre sous-compte New Relic One associ�
 
 **Pour gérer les utilisateurs de New Relic One, procédez comme suit**
 
-1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com).
-   1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
-   1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
-1. Sélectionnez l’organisation de votre choix.
+{{sign-in-to-cloud-manager}}
+
 1. Sur la console **Mes programmes**, cliquez sur un programme pour lequel vous souhaitez gérer vos utilisateurs New Relic One.
 1. Dans le menu de gauche, sous **Services**, cliquez sur ![icône Données ou icône Environnements](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environnements**.
 1. Sur la page Environnements , près du coin supérieur droit, cliquez sur ![Icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), puis sur **Gérer les utilisateurs**.
@@ -124,10 +120,8 @@ Une fois que vous avez [activé votre compte New Relic](#activate-account), vous
 
 **Pour ouvrir New Relic One à l’aide de Cloud Manager :**
 
-1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com).
-   1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
-   1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
-1. Sélectionnez l’organisation de votre choix.
+{{sign-in-to-cloud-manager}}
+
 1. Sur la console **Mes programmes**, cliquez sur un programme pour lequel vous souhaitez ouvrir New Relic One.
 1. Dans le menu de gauche, sous **Services**, cliquez sur ![icône Données ou icône Environnements](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environnements**.
 1. Sur la page Environnements , près du coin supérieur droit, cliquez sur ![Icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), puis sur **Ouvrir New Relic**.

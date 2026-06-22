@@ -7,10 +7,10 @@ role: Admin, Developer
 index: false
 hidefromtoc: false
 exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 10%
+source-wordcount: '606'
+ht-degree: 9%
 
 ---
 
@@ -42,10 +42,8 @@ Avant de commencer à déployer votre code, configurez les paramètres de votre 
 
 **Pour ajouter un pipeline Edge Delivery, procédez comme suit**
 
-1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com).
-1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
-1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
-1. Sélectionnez l’organisation de votre choix.
+{{sign-in-to-cloud-manager}}
+
 1. Sur la console **Mes programmes**, cliquez sur un programme.
 
    ![Page Mes programmes dans Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/assets/my-programs.png)

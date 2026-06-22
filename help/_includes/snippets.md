@@ -1,8 +1,8 @@
 ---
-source-git-commit: 43535e52fd749cc599a4e30be25bcc0dbf20eaef
+source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
 workflow-type: tm+mt
-source-wordcount: '1625'
-ht-degree: 99%
+source-wordcount: '1719'
+ht-degree: 93%
 
 ---
 # Fragments de code {#snippets}
@@ -51,7 +51,7 @@ ht-degree: 99%
 * [Envoyer à Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Envoyer vers Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Connecter un formulaire adaptatif à l’application Salesforce](/help/forms/aem-forms-salesforce-integration.md)
-* [Connexion d’un formulaire adaptatif à Microsoft](/help/forms/configure-msdynamics.md)
+* [Connexion d’un formulaire adaptatif à ® Dynamics](/help/forms/configure-msdynamics.md)
 * [Connecter un formulaire adaptatif à Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [Créer une action d’envoi personnalisée](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
@@ -166,20 +166,20 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 
 >[!IMPORTANT]
 >
->Le pipeline front-end requiert que la liste autorisée des adresses IP suivante soit ajoutée au préalable à Cloud Manager.
->Si nécessaire, [ajoutez la liste autorisée des adresses IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) en copiant le bloc d’adresses ci-dessous. Chaque adresse est séparée par une virgule. Collez le bloc dans le champ **Adresse IP/CIDR** de la boîte de dialogue **Ajouter une liste autorisée des adresses IP**. Placez le curseur juste après la première virgule dans la liste des adresses et appuyez sur **Entrée**. Enregistrez la liste.
->Pour éviter toute interruption de l’exécution du pipeline front-end, assurez-vous que cette liste autorisée des adresses IP est ajoutée à Cloud Manager *avant* d’activer le pipeline.
+>Le pipeline front-end requiert que la Liste autorisée IP suivante soit ajoutée au préalable à Cloud Manager.
+>Si nécessaire, [ajoutez la Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) en copiant le bloc d’adresses ci-dessous. Chaque adresse est séparée par une virgule. Collez le bloc dans le champ **Adresse IP/CIDR** de la boîte de dialogue **Ajouter une Liste autorisée IP**. Placez le curseur juste après la première virgule dans la liste d’adresses et appuyez sur **Entrée**. Enregistrez la liste.
+>Pour éviter toute interruption de l’exécution du pipeline front-end, assurez-vous que cette Liste autorisée IP est ajoutée à Cloud Manager *avant* d’activer le pipeline.
 >
->**Liste autorisée des adresses IP de Cloud Manager**
->52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>**Liste autorisée IP Cloud Manager**
+>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251,,
 >   
 
 ## Ajouter une liste des adresses IP autorisées de Cloud Manager et des pipelines front-end {#add-cm-allowlist-frontend-pipeline}
 
 >[!IMPORTANT]
 >
->Si vous utilisez (ou envisagez d’utiliser) le pipeline front-end pour développer des sites, la liste des adresses IP autorisées de Cloud Manager doit être ajoutée au préalable.
->Voir la section [Utiliser la liste des adresses IP autorisées de Cloud Manager avec le pipeline front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
+>Si vous utilisez ou avez l’intention d’utiliser le pipeline front-end pour développer des sites, la Liste autorisée IP de Cloud Manager doit être ajoutée au préalable.
+>Voir [&#x200B; Utilisation de la Liste autorisée IP Cloud Manager avec le pipeline front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
 
 ## Listes d’adresses IP autorisées et éditeur universel {#ip-allow-lists-ue}
 
@@ -287,3 +287,12 @@ Pour accélérer la création des sites, Adobe fournit un certain nombre de mod�
 * [Site AEM avec Edge Delivery Services](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) - Pour la création de pages AEM avec l’éditeur universel et une [diffusion Edge](/help/edge/overview.md)
 * [Edge Delivery Services avec création AEM pour Commerce](https://github.com/adobe-rnd/aem-boilerplate-xcom/releases) - Pour la création de pages AEM avec l’éditeur universel pour les projets Commerce et une [diffusion Edge](/help/edge/overview.md)
 * [Modèle de site AEM standard](https://github.com/adobe/aem-site-template-standard/releases) - Pour la création de pages AEM traditionnelles et une [diffusion via l’instance de publication](/help/sites-cloud/authoring/author-publish.md)
+
+
+## Connexion à Cloud Manager {#sign-in-to-cloud-manager}
+
+1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com).
+   1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
+   1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
+1. Dans Cloud Manager, en haut à droite de la page, sélectionnez l’organisation de votre choix.
+

@@ -6,9 +6,9 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: aa8aba7f798e251c8a25ee247402e23517707e88
+source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
 workflow-type: tm+mt
-source-wordcount: '1934'
+source-wordcount: '1904'
 ht-degree: 26%
 
 ---
@@ -42,10 +42,8 @@ Une fois que vous avez configuré votre programme et que vous disposez au moins 
 >
 >Avant de configurer un pipeline front-end, consultez le [Parcours de création rapide de site d’AEM](/help/journey-sites/quick-site/overview.md) pour obtenir un guide complet à travers l’outil de création rapide de site d’AEM, facile à utiliser. Ce parcours peut vous aider à rationaliser le développement front-end de votre site AEM, ce qui vous permet de personnaliser rapidement votre site sans aucune connaissance du serveur principal AEM.
 
-1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com).
-1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
-1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
-1. Sélectionnez l’organisation de votre choix.
+{{sign-in-to-cloud-manager}}
+
 1. Sur la console **Mes programmes**, cliquez sur un programme.
 
 1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme.
