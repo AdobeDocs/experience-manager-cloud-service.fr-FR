@@ -6,9 +6,9 @@ mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2ec74b76306fb1321f270ece0bd2a79dc33e8277
 workflow-type: tm+mt
-source-wordcount: '4302'
+source-wordcount: '4380'
 ht-degree: 92%
 
 ---
@@ -85,7 +85,7 @@ Lorsqu’ils utilisent l’éditeur de texte enrichi, les créateurs et créatri
 
 * **Mode MS Word** : collage du texte, y compris des tableaux, avec la mise en forme lors de la copie à partir de MS Word. La copie et le collage de texte depuis une autre source, telle qu’une page web ou MS Excel ne sont pas pris en charge et conservent uniquement une mise en forme partielle.
 
-### Configuration des options de collage disponibles sur la barre d’outils de l’éditeur de texte enrichi   {#configure-paste-options-available-on-the-rte-toolbar}
+### Configuration des options de collage disponibles sur la barre d’outils de l’éditeur de texte enrichi  {#configure-paste-options-available-on-the-rte-toolbar}
 
 Les trois icônes ci-dessous peuvent être mises à la disposition des auteurs dans la barre d’outils de l’éditeur de texte enrichi :
 
@@ -276,7 +276,7 @@ L’éditeur de texte enrichi utilise un élément DOM de conteneur doté d’un
 
    * **Nom** `cssName`
    * **Type** `String`
-   * **Valeur** Nom de la classe CSS (non précédé d’un point « . » ; par exemple, `cssClass` au lieu de `.cssClass`)
+   * **Valeur** Nom de la classe CSS (sans « . » devant ; par exemple, `cssClass` au lieu de `.cssClass`)
 
 1. Ajoutez la propriété `text` au même nœud. Elle définit le texte affiché dans la boîte de dialogue de sélection :
 
@@ -305,7 +305,7 @@ Pour créer le style que les auteurs peuvent appliquer au texte japonais, procé
 
 1. Ajoutez la propriété text au même nœud. La valeur est le nom du style que les auteurs voient en sélectionnant le style.
    * Nom : `text`
-*Type : `String`
+*Type : `String`
    * Valeur : `Japanese word-wrap`
 
 1. Créez une feuille de style et spécifiez son chemin d’accès. Consultez [spécification de l’emplacement de la feuille de style](#locationofstylesheet). Ajoutez le contenu suivant à la feuille de style. Modifiez la couleur d’arrière-plan selon vos besoins.
@@ -357,7 +357,7 @@ Pour activer le module externe `paraformat`, procédez comme suit :
 
 >[!CAUTION]
 >
->Lors de la configuration des formats de paragraphe de l’éditeur de texte enrichi, ne supprimez pas la balise de paragraphe &lt;p> comme option de mise en forme. Si la balise `<p>` est supprimée, l’auteur du contenu ne peut pas sélectionner l’option [!UICONTROL &#x200B; Formats de paragraphe &#x200B;], même si d’autres formats sont configurés.
+>Lors de la configuration des formats de paragraphe de l’éditeur de texte enrichi, ne supprimez pas la balise de paragraphe &lt;p> comme option de mise en forme. Si vous supprimez la balise `<p>`, l’auteur ou l’autrice du contenu ne peut pas sélectionner l’option [!UICONTROL Formats des paragraphes], même si d’autres formats sont configurés.
 
 ### Spécification des formats de paragraphe disponibles {#paraformatsindropdown}
 
@@ -586,7 +586,7 @@ Pour ajouter d’autres dictionnaires, si nécessaire, procédez comme suit.
 
 >[!NOTE]
 >
->Le vérificateur orthographique de l’éditeur de texte enrichi est disponible sur demande. Il ne s’exécute pas automatiquement lorsque vous commencez à saisir du texte.
+>Le vérificateur orthographique de l’éditeur de texte enrichi est disponible sur demande. Il n’est pas exécuté automatiquement lorsque vous commencez à saisir du texte.
 >
 >Pour exécuter le vérificateur orthographique, sélectionnez le bouton Vérificateur orthographique dans la barre d’outils. L’éditeur de texte enrichi vérifie l’orthographe des mots et souligne les mots mal orthographiés.
 >
@@ -678,13 +678,13 @@ Lors de l’ajout de liens dans [!DNL Experience Manager], vous pouvez définir 
 
       * **Nom** `cssInternal`
       * **Type** `String`
-      * **Valeur** Nom de la classe CSS (non précédé d’un point « . » ; par exemple, `cssClass` au lieu de `.cssClass`)
+      * **Valeur** nom de la classe CSS (sans « . » devant ; par exemple, `cssClass` au lieu de `.cssClass`)
 
    * Style CSS pour les liens externes
 
       * **Nom** `cssExternal`
       * **Type** `String`
-      * **Valeur** Nom de la classe CSS (non précédé d’un point « . » ; par exemple, `cssClass` au lieu de `.cssClass`)
+      * **Valeur** nom de la classe CSS (sans « . » devant ; par exemple, `cssClass` au lieu de `.cssClass`)
 
    * Tableau de **[!UICONTROL protocoles]** valides, dont les protocoles `https://`, `https://`, `file://`, `mailto:` et autres,
 

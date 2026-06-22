@@ -4,10 +4,10 @@ description: Découvrez les principes de base et les bonnes pratiques de déploi
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 2ec74b76306fb1321f270ece0bd2a79dc33e8277
 workflow-type: tm+mt
-source-wordcount: '3538'
-ht-degree: 92%
+source-wordcount: '3539'
+ht-degree: 91%
 
 ---
 
@@ -41,7 +41,7 @@ Pour développer du code personnalisé pour une version interne, vous devez tél
 
 La vidéo suivante présente un aperçu général du déploiement du code vers AEM as a Cloud Service :
 
->[!VIDEO](https://video.tv.adobe.com/v/32993?captions=fre_fr&quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 <!--
 >[!NOTE]
@@ -74,7 +74,7 @@ Les modifications d’application dues au modèle de déploiement étant activé
 
 Pour les clients et clientes qui disposent de bases de code, il est essentiel de passer par l’exercice de restructuration du référentiel décrit dans la documentation d’AEM en vue de s’assurer que le contenu qui se trouvait auparavant sous /etc est déplacé vers le bon emplacement.
 
-Certaines restrictions supplémentaires s’appliquent à ces packages de code, par exemple, les [&#x200B; hooks d’installation &#x200B;](https://jackrabbit.apache.org/filevault/installhooks.html) ne sont pas pris en charge.
+Certaines restrictions supplémentaires s’appliquent à ces packages de code, par exemple, les [ hooks d’installation ](https://jackrabbit.apache.org/filevault/installhooks.html) ne sont pas pris en charge.
 
 ## Configuration OSGI {#osgi-configuration}
 
@@ -113,14 +113,14 @@ Après le basculement vers la nouvelle version de l’application :
    * Configuration tenant compte du contexte (tout sous `/conf`) (ajout, modification, suppression)
    * Scripts (les packages peuvent déclencher des hooks d’installation à différentes étapes du processus d’installation de l’installation de package. Consultez la [documentation Jackrabbit filevault](https://jackrabbit.apache.org/filevault/installhooks.html) sur les hooks d’installation. AEM CS utilise actuellement la version 3.4.0 de Filevault, qui limite les hooks d’installation aux administrateurs et administratrices, aux utilisateurs et utilisatrices système et aux membres du groupe administrateurs).
 
-Il est possible de limiter l’installation de contenu modifiable à la création ou à la publication en incorporant des packages dans un dossier install.author ou install.publish sous `/apps`. Une restructuration pour refléter cette séparation a été effectuée dans AEM 6.5 et les détails relatifs à la restructuration de projet recommandée sont disponibles dans la documentation d’[AEM 6.5 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=fr).
+Il est possible de limiter l’installation de contenu modifiable à la création ou à la publication en incorporant des packages dans un dossier install.author ou install.publish sous `/apps`. Une restructuration pour refléter cette séparation a été effectuée dans AEM 6.5 et les détails relatifs à la restructuration de projet recommandée sont disponibles dans la documentation d’[AEM 6.5 ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=fr).
 
 >[!NOTE]
 >Les modules de contenu sont déployés sur tous les types d’environnement (développement, évaluation et production). Il n’est pas possible de limiter le déploiement à un environnement spécifique. Cette limitation est en place pour garantir l’option d’une série de tests d’exécution automatisée. Le contenu spécifique à un environnement nécessite une installation manuelle via le [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md).
 
-En outre, il n’existe aucun mécanisme permettant d’annuler les modifications du module de contenu modifiable après leur application. Si les clients et clientes détectent un problème, ils peuvent choisir de le résoudre dans la prochaine version de leur code ou, en dernier recours, restaurer l’ensemble du système à un moment donné avant le déploiement.
+En outre, il n’existe aucun mécanisme pour annuler les modifications de package de contenu modifiable après les avoir appliquées. Si les clients et clientes détectent un problème, ils peuvent choisir de le résoudre dans la prochaine version de leur code ou, en dernier recours, restaurer l’ensemble du système à un moment donné avant le déploiement.
 
-Les packages tiers inclus doivent être validés comme compatibles avec AEM as a Cloud Service, sans quoi leur inclusion entraîne un échec du déploiement.
+Tous les packages tiers inclus doivent être validés comme étant compatibles avec AEM as a Cloud Service. Dans le cas contraire, leur inclusion entraîne un échec du déploiement.
 
 Comme mentionné ci-dessus, les clients disposant de bases de code doivent se conformer à l’exercice de restructuration du référentiel requis par les modifications du référentiel dans la version 6.5, comme décrit dans la documentation d’[AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=fr).
 
@@ -339,4 +339,4 @@ Developers want to ensure that their custom code is performing well. For Cloud e
 
 ## Configuration des tâches de maintenance dans le contrôle de code source {#maintenance-tasks-configuration-in-source-control}
 
-Les configurations de tâches de maintenance doivent être conservées dans le contrôle de la source, car l’écran **Outils > Opérations** n’est plus disponible dans les environnements cloud. Cet avantage permet de s’assurer que les modifications sont intentionnellement conservées, plutôt qu’appliquées de manière réactive et oubliées. Voir [&#x200B; Tâches de maintenance dans AEM as a Cloud Service](/help/operations/maintenance.md) pour plus d’informations.
+Les configurations de tâches de maintenance doivent être conservées dans le contrôle de la source, car l’écran **Outils > Opérations** n’est plus disponible dans les environnements cloud. Cet avantage permet de s’assurer que les modifications sont intentionnellement conservées, plutôt qu’appliquées de manière réactive et oubliées. Voir [ Tâches de maintenance dans AEM as a Cloud Service](/help/operations/maintenance.md) pour plus d’informations.
