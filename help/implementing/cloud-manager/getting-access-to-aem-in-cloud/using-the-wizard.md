@@ -5,18 +5,18 @@ exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 9a30310615956afab762d11c2bc95b2ae70de4dc
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 96%
+source-wordcount: '317'
+ht-degree: 69%
 
 ---
 
-# Assistant de création du projet {#project-creation-wizard}
+# Assistant de création de projet {#project-creation-wizard}
 
-Une fois votre programme de production créé, Cloud Manager propose un assistant pour créer un projet AEM minimal basé sur l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) pour vous permettre de commencer rapidement.
+Après la création de votre programme de production, Cloud Manager propose un assistant pour créer un projet AEM minimal basé sur l’[archétype de projet AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/overview) afin de vous aider à commencer.
 
-Suivez ces étapes pour créer un projet d’application AEM dans Cloud Manager à l’aide de l’assistant.
+Pour créer un projet d’application AEM dans Cloud Manager à l’aide de l’assistant, procédez comme suit.
 
 1. Créez un programme de production en suivant les étapes du document [Création de programmes de production](creating-production-programs.md)
 
@@ -28,14 +28,14 @@ Suivez ces étapes pour créer un projet d’application AEM dans Cloud Manager
 
    ![Créer une branche et un projet](assets/create-wizard2.png)
 
-1. Cliquez éventuellement sur le séparateur pour afficher les paramètres supplémentaires de votre projet. Les valeurs par défaut sont fournies par l’archétype de projet AEM et n’ont généralement pas besoin d’être modifiées.
+1. Cliquez éventuellement sur le séparateur pour afficher les paramètres supplémentaires de votre projet. L’archétype de projet AEM fournit les valeurs par défaut, qui n’ont pas besoin d’être modifiées.
 
    ![Paramètres de projet supplémentaires](assets/create-wizard5.png)
 
 1. Cliquez sur **Créer** pour lancer le processus de création du projet.
 
 
-Une carte **Création du projet en cours** remplace maintenant la carte d’appel à l’action **Créer une branche et un projet** en haut de l’écran **Présentation du programme**.
+Une vignette **Création du projet en cours** remplace désormais la vignette **Créer une branche et un projet** call-to-action en haut de l’écran **Aperçu du programme**.
 
 ![Création du projet en cours](assets/create-wizard3.png)
 

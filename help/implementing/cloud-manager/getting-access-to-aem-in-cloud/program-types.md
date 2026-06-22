@@ -5,17 +5,17 @@ exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 01db3bdabcbdcc8256b80841cf6fa84e4726c0a2
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 42%
+source-wordcount: '503'
+ht-degree: 30%
 
 ---
 
 
 # Programmes et types de programmes {#understanding-programs}
 
-Cloud Manager repose sur une hiérarchie d’entités. Les détails ne sont pas essentiels à votre travail au quotidien dans Cloud Manager, mais un aperçu peut vous aider à comprendre les programmes et à configurer les vôtres.
+Cloud Manager est organisé sous la forme d’une hiérarchie d’entités. Les détails ne sont pas essentiels à votre travail au quotidien dans Cloud Manager, mais un aperçu peut vous aider à comprendre les programmes et à configurer les vôtres.
 
 ![Hiérarchie de Cloud Manager](assets/program-types1.png)
 
@@ -28,9 +28,9 @@ Cloud Manager repose sur une hiérarchie d’entités. Les détails ne sont pas 
 
 Un exemple est souvent utile pour contextualiser cette hiérarchie.
 
-* Disons que WKND Travel and Adventure Enterprises est un **client** qui se concentre sur les médias liés aux voyages.
-* Disons que le client WKND Travel and Adventure Enterprises peut avoir deux **programmes** : un programme Sites pour WKND Magazine et un programme Assets pour WKND Media.
-* Les programmes de WKND Magazine et de WKND Media auraient chacun des **environnements** de développement, d’évaluation et de production.
+* Entreprises de voyage et d’aventure WKND est un **client** qui se concentre sur les médias liés aux voyages.
+* Le client Entreprises de voyage et d’aventure WKND dispose de deux **programmes** : un programme Sites pour le magazine WKND et un programme Assets pour les médias WKND.
+* Les programmes pour le magazine WKND et les médias WKND ont tous deux des **environnements** de développement, d’évaluation et de production.
 
 ## Référentiel de code source {#source-code-repository}
 
@@ -38,7 +38,7 @@ Un programme Cloud Manager est automatiquement configuré avec son propre réfé
 
 Les utilisateurs peuvent accéder au référentiel Git de Cloud Manager à l’aide d’un client Git avec un outil de ligne de commande ou un client Git visuel autonome. Ils peuvent également utiliser leur environnement de développement intégré (IDE) préféré, tel qu’Eclipse, IntelliJ ou NetBeans.
 
-Une fois le client Git configuré, vous pouvez gérer votre référentiel Git à partir de l’interface utilisateur de Cloud Manager. Pour en savoir plus sur la gestion de Git à l’aide de l’interface utilisateur de Cloud Manager, voir [Accès à Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
+Une fois le client Git configuré, vous pouvez gérer votre référentiel Git à partir de l’interface utilisateur de Cloud Manager. Pour savoir comment gérer Git à l’aide de l’interface utilisateur de Cloud Manager, voir [Accès à Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 Pour commencer à développer l’application AEM Cloud, extrayez le code de l’application du référentiel Cloud Manager sur votre ordinateur local.
 
@@ -52,7 +52,7 @@ Le workflow suit un processus Git standard :
 1. L’utilisateur apporte des modifications à son référentiel local.
 1. Une fois prêt, l’utilisateur valide les modifications dans le référentiel Git distant.
 
-La seule différence est que le référentiel Git distant fait partie de Cloud Manager, qui est transparent pour le développeur.
+La seule différence est que le référentiel Git distant fait partie de Cloud Manager, qui n’est pas visible par le développeur.
 
 ## Types de programme {#program-types}
 
