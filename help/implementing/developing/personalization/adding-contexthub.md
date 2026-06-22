@@ -4,9 +4,9 @@ description: Ajoutez ContextHub à vos pages pour activer les fonctionnalités C
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
 feature: Developing, Personalization
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2ec74b76306fb1321f270ece0bd2a79dc33e8277
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '925'
 ht-degree: 93%
 
 ---

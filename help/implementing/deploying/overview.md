@@ -4,10 +4,10 @@ description: Découvrez les principes de base et les bonnes pratiques de déploi
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 2ec74b76306fb1321f270ece0bd2a79dc33e8277
 workflow-type: tm+mt
-source-wordcount: '3538'
-ht-degree: 92%
+source-wordcount: '3539'
+ht-degree: 91%
 
 ---
 
@@ -118,9 +118,9 @@ Il est possible de limiter l’installation de contenu modifiable à la créatio
 >[!NOTE]
 >Les modules de contenu sont déployés sur tous les types d’environnement (développement, évaluation et production). Il n’est pas possible de limiter le déploiement à un environnement spécifique. Cette limitation est en place pour garantir l’option d’une série de tests d’exécution automatisée. Le contenu spécifique à un environnement nécessite une installation manuelle via le [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md).
 
-En outre, il n’existe aucun mécanisme permettant d’annuler les modifications du module de contenu modifiable après leur application. Si les clients et clientes détectent un problème, ils peuvent choisir de le résoudre dans la prochaine version de leur code ou, en dernier recours, restaurer l’ensemble du système à un moment donné avant le déploiement.
+En outre, il n’existe aucun mécanisme pour annuler les modifications de package de contenu modifiable après les avoir appliquées. Si les clients et clientes détectent un problème, ils peuvent choisir de le résoudre dans la prochaine version de leur code ou, en dernier recours, restaurer l’ensemble du système à un moment donné avant le déploiement.
 
-Les packages tiers inclus doivent être validés comme compatibles avec AEM as a Cloud Service, sans quoi leur inclusion entraîne un échec du déploiement.
+Tous les packages tiers inclus doivent être validés comme étant compatibles avec AEM as a Cloud Service. Dans le cas contraire, leur inclusion entraîne un échec du déploiement.
 
 Comme mentionné ci-dessus, les clients disposant de bases de code doivent se conformer à l’exercice de restructuration du référentiel requis par les modifications du référentiel dans la version 6.5, comme décrit dans la documentation d’[AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=fr).
 

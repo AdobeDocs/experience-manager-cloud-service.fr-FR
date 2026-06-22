@@ -6,9 +6,9 @@ exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 2ec74b76306fb1321f270ece0bd2a79dc33e8277
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1592'
 ht-degree: 58%
 
 ---
@@ -110,12 +110,11 @@ Il existe différentes approches pour conserver les données, selon la nature de
 Les informations de profil utilisateur peuvent être écrites et lues de deux manières :
 
 * Utilisation côté serveur avec l’interface `com.adobe.granite.security.user` UserPropertiesManager, qui place les données sous le nœud de l’utilisateur dans `/home/users`. Assurez-vous que les pages uniques par utilisateur ne soient pas mises en cache.
-* Utilisation côté client avec ContextHub, comme décrit dans [la documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html?lang=fr#personalization).
+* Utilisation côté client avec ContextHub, comme décrit dans [la documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html#personalization).
 
 **Condition préalable requise :**
 
-Pour que la logique de persistance du profil utilisateur côté serveur fonctionne correctement, activez la [synchronisation des données](#data-synchronization-data-synchronization) en effectuant l’envoi
-une demande au service clientèle indiquant le programme et les environnements appropriés.
+Pour que la logique de persistance du profil utilisateur côté serveur fonctionne correctement, activez la [synchronisation des données](#data-synchronization-data-synchronization) en envoyant une demande au service clientèle indiquant le programme et les environnements appropriés.
 
 ### Magasins de données tiers {#third-party-data-stores}
 
@@ -125,12 +124,11 @@ Il est possible d’accéder en temps réel à des services tiers pour récupér
 
 **Condition préalable requise :**
 
-Pour que la logique décrite ci-dessus fonctionne correctement, activez la [synchronisation des données](#data-synchronization-data-synchronization) en envoyant des
-une demande au service clientèle indiquant le programme et les environnements appropriés.
+Pour que la logique décrite ci-dessus fonctionne correctement, activez la [synchronisation des données](#data-synchronization-data-synchronization) en envoyant une demande au service clientèle indiquant le programme et les environnements appropriés.
 
 ## Autorisations (groupes d’utilisateurs fermés) {#permissions-closed-user-groups}
 
-Les politiques d’accès de niveau publication, également appelées groupes d’utilisateurs fermés, sont définies dans l’auteur AEM. Voir [Création d’un groupe d’utilisateurs fermé](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=fr#applying-your-closed-user-group-to-content-pages). Pour limiter certaines sections ou pages d’un site web à certains utilisateurs ou certaines utilisatrices, appliquez les CUG selon les besoins à l’aide de l’instance de création AEM, comme décrit ici, et dupliquez-les au niveau Publication.
+Les politiques d’accès de niveau publication, également appelées groupes d’utilisateurs fermés, sont définies dans l’auteur AEM. Voir [Création d’un groupe d’utilisateurs fermé](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html#applying-your-closed-user-group-to-content-pages). Pour limiter certaines sections ou pages d’un site web à certains utilisateurs ou certaines utilisatrices, appliquez les CUG selon les besoins à l’aide de l’instance de création AEM, comme décrit ici, et dupliquez-les au niveau Publication.
 
 * Si les utilisateurs se connectent en s’authentifiant auprès d’un fournisseur d’identités (IdP) à l’aide de SAML, le gestionnaire d’authentification identifie les appartenances aux groupes (qui doivent correspondre aux CUG pour le niveau Publication) et maintient l’association entre l’utilisateur et le groupe par le biais d’un enregistrement de référentiel.
 * Si la connexion est établie sans intégration IdP, le code personnalisé peut appliquer les mêmes relations de structure de référentiel.
