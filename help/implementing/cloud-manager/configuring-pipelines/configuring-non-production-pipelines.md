@@ -6,9 +6,9 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
+source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
 workflow-type: tm+mt
-source-wordcount: '1759'
+source-wordcount: '1729'
 ht-degree: 21%
 
 ---
@@ -30,10 +30,8 @@ Après avoir configuré un programme et créé au moins un environnement dans l�
 
 **Pour ajouter un nouveau pipeline hors production, procédez comme suit**
 
-1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com).
-1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
-1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
-1. Sélectionnez l’organisation de votre choix.
+{{sign-in-to-cloud-manager}}
+
 1. Sur la console **Mes programmes**, cliquez sur un programme.
 1. Dans le panneau de gauche, cliquez sur **Pipelines**.
 1. Sur la page **Pipelines**, près du coin supérieur droit, cliquez sur **Ajouter un pipeline** > **Ajouter un pipeline hors production**.
@@ -270,10 +268,8 @@ Voir [Ajouter un pipeline hors production](#adding-non-production-pipeline) pour
 
 Once you have set up your program and have at least one environment using the Cloud Manager UI, you are ready to add a non-production pipeline by following these steps.
 
-1. Sign into Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
-1. In the **Quick access** section, click **Experience Manager**.
-1. In the left side panel, click **Cloud Manager**.
-1. Select an organization that you want.
+{{sign-in-to-cloud-manager}}
+
 1. On the **My Programs** console, click a program. 
 
 1. Access the **Pipelines** card from the Cloud Manager home screen. Click **+Add** and select **Add Non-Production Pipeline**. 

@@ -5,9 +5,9 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fd729f12b4d6ff94ba4f3c86b8b8c1a0d3627c16
+source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
 workflow-type: tm+mt
-source-wordcount: '1346'
+source-wordcount: '1349'
 ht-degree: 9%
 
 ---
@@ -40,7 +40,7 @@ Chaque fois qu’un programme est modifié, y compris par l’ajout ou la suppre
 1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com).
 1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
 1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
-1. Sélectionnez l’organisation appropriée.
+1. Dans Cloud Manager, sélectionnez l’organisation appropriée.
 1. Sur la page **Mes programmes**, cliquez sur le programme que vous souhaitez modifier.
 1. Dans le coin supérieur gauche de la page, cliquez sur le nom du programme, puis sélectionnez **Modifier le programme**.
 
@@ -114,11 +114,11 @@ Avant que la notation pour suppression ne soit lancée, le système valide si le
 1. Sélectionnez l’organisation appropriée.
 1. Sur la page **Mes programmes**, pour le programme de production que vous souhaitez marquer comme devant être supprimé, cliquez sur ![icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), puis sur **Supprimer le programme**.
 
-   ![Sélectionner Supprimer le programme dans la liste déroulante d’un programme de production &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*L’exemple de programme de production ci-dessus est fourni à titre d’illustration uniquement.*
+   ![Sélectionner Supprimer le programme dans la liste déroulante d’un programme de production ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*L’exemple de programme de production ci-dessus est fourni à titre d’illustration uniquement.*
 
 1. Dans la boîte de dialogue **Marquer le programme de production pour suppression**, passez en revue l’avertissement qui répertorie les ressources connectées à votre programme, y compris les environnements de production, d’évaluation et de développement.
 
-   ![Boîte de dialogue Supprimer le programme de production &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete2.png)
+   ![Boîte de dialogue Supprimer le programme de production ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete2.png)
 
 
    >[!NOTE]
@@ -176,7 +176,6 @@ La suppression d’un programme Sandbox supprime tous les environnements et les 
 1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
 1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
 1. Sélectionnez l’organisation appropriée.
-
 1. Sur la page **[Mes programmes](#my-programs)**, cliquez sur le programme Sandbox que vous souhaitez modifier pour en afficher les détails.
 
 1. Cliquez sur le nom de votre programme Sandbox dans le coin supérieur gauche de la page, puis sélectionnez **Supprimer le programme**.
