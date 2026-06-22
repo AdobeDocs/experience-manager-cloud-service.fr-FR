@@ -21,7 +21,7 @@ Découvrez ce que sont les programmes Sandbox et en quoi ils diffèrent des prog
 
 Un programme Sandbox est généralement créé pour les besoins de formation, à des fins de démonstration, d’activation ou de preuve de concept (POC), il n’est donc pas destiné à transporter du trafic en direct.
 
-Un programme Sandbox est l’un des deux types de programmes disponibles dans AEM Cloud Service, l’autre étant un [ programme de production ](introduction-production-programs.md). Pour en savoir plus sur les types de programmes, voir [Présentation des programmes et des types de programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
+Un programme Sandbox est l’un des deux types de programmes disponibles dans AEM Cloud Service, l’autre étant un [&#x200B; programme de production &#x200B;](introduction-production-programs.md). Pour en savoir plus sur les types de programmes, voir [Présentation des programmes et des types de programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 ## Création automatique {#auto-creation}
 
@@ -31,7 +31,7 @@ Les programmes Sandbox proposent la création automatique. Chaque fois que vous 
 
   ![Sélection de solutions et de modules complémentaires pour une sandbox](assets/sandbox-solutions-add-ons.png)
 
-* Initialise un référentiel Git de projet avec un exemple de projet basé sur l’[archétype de projet ](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/overview).
+* Initialise un référentiel Git de projet avec un exemple de projet basé sur l’[archétype de projet &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/overview).
 * Création d’un environnement de développement.
 * Création d’un pipeline hors production qui se déploie vers l’environnement de développement.
 
@@ -43,7 +43,7 @@ Comme ils ne sont pas destinés au trafic en direct, les programmes Sandbox pré
 
 | Limitation/condition | Description |
 | --- | --- |
-| Aucun trafic en direct | Les programmes Sandbox ne sont pas destinés à transporter du trafic en direct et ne sont donc pas soumis aux [Engagements ](https://www.adobe.com/fr/legal/service-commitments.html). |
+| Aucun trafic en direct | Les programmes Sandbox ne sont pas destinés à transporter du trafic en direct et ne sont donc pas soumis aux [Engagements &#x200B;](https://www.adobe.com/fr/legal/service-commitments.html). |
 | Aucune mise à l’échelle automatique | Les environnements créés dans un programme Sandbox ne sont pas configurés pour la mise à l’échelle automatique. Par conséquent, ils ne conviennent pas aux tests de performances ou de charge. |
 | Aucun domaine personnalisé ni Liste autorisée IP | Les [domaines personnalisés](/help/implementing/cloud-manager/custom-domain-names/introduction.md) et les [Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) ne sont pas disponibles dans les programmes Sandbox. |
 | Aucune région de publication supplémentaire | [Les régions de publication supplémentaires](/help/operations/additional-publish-regions.md) ne sont pas disponibles dans les programmes Sandbox. |
