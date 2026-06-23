@@ -5,10 +5,10 @@ exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 7%
+source-wordcount: '297'
+ht-degree: 6%
 
 ---
 
@@ -17,20 +17,18 @@ ht-degree: 7%
 
 Découvrez comment ajouter votre propre Liste autorisée IP à l’aide de Cloud Manager.
 
-Un utilisateur doté du rôle **Propriétaire de l’entreprise** ou **Responsable de déploiement** peut suivre les étapes suivantes pour ajouter une Liste autorisée IP.
+Pour ajouter une Liste autorisée IP, un utilisateur doté du rôle **Propriétaire de l’entreprise** ou **Responsable de déploiement** peut suivre les étapes suivantes.
 
 {{add-cm-allowlist-frontend-pipeline}}
 {{ip-allow-lists-ue}}
 
 **Pour ajouter une Liste autorisée IP, procédez comme suit**
 
-1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com/experiencemanager/).
+{{sign-in-to-cloud-manager}}
 
-1. Dans le menu de gauche, cliquez sur Cloud Manager, puis sélectionnez l’organisation appropriée.
+1. Dans la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez un programme.
 
-1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme.
-
-1. Sur la page **Aperçu du programme**, dans le menu de gauche (il se peut que vous deviez cliquer sur ![Afficher l’icône du menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) dans le coin supérieur gauche pour afficher le menu), cliquez sur ![Icône de la liste des tâches](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **Listes autorisées IP**.
+1. Sur la page **Aperçu du programme**, dans le menu de gauche (si nécessaire, cliquez sur ![Icône Afficher le menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) dans le coin supérieur gauche pour afficher le menu), cliquez sur ![Icône de la liste des tâches](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **Listes autorisées IP**.
 
    ![Option Listes autorisées IP dans le menu de gauche](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 
@@ -43,11 +41,11 @@ Un utilisateur doté du rôle **Propriétaire de l’entreprise** ou **Responsab
 1. Dans le champ **Adresse IP / CIDR** , saisissez jusqu’à 50 adresses IP ou blocs CIDR. Vous pouvez les ajouter de l’une des façons suivantes :
 
    * Une par une : saisissez une adresse, puis appuyez sur `Enter`. Répétez l’opération pour chaque adresse supplémentaire.
-   * Multiple à la fois : saisissez des adresses séparées par des virgules (,) ou des tabulations, puis appuyez sur `Enter` pour que chaque adresse soit reconnue individuellement.
+   * Multiple à la fois : saisissez des adresses séparées par des virgules (,) ou des tabulations, puis appuyez sur `Enter` pour que chaque adresse soit traitée individuellement.
 
 1. Une fois que vous avez terminé de saisir la dernière adresse IP ou le dernier bloc CIDR, appuyez sur `Enter` pour confirmer l’entrée. L’entrée n’est validée qu’après avoir appuyé sur `Enter` et le bouton **Enregistrer** devient actif.
 
 1. Cliquez sur **Enregistrer**.
 
-Après l’enregistrement, la nouvelle Liste autorisée IP s’affiche sur une ligne du tableau de la page **Listes autorisées IP**.
+Après l’enregistrement, la nouvelle Liste autorisée IP s’affiche sur une ligne du tableau de page **Listes autorisées IP**.
 

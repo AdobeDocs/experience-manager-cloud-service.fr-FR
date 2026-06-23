@@ -5,10 +5,10 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 4%
+source-wordcount: '363'
+ht-degree: 1%
 
 ---
 
@@ -20,13 +20,13 @@ Découvrez comment Cloud Manager évalue les performances du réseau de diffusio
 
 Chaque programme Cloud Manager comporte un tableau de bord des performances du réseau CDN. Ce tableau de bord présente le score global des performances du réseau CDN, ainsi que les tendances, les alertes et des suggestions d’amélioration, si nécessaire.
 
-![&#x200B; Tableau de bord des performances du réseau CDN &#x200B;](assets/cdn-performance-dashboard.png)
+![ Tableau de bord des performances du réseau CDN ](assets/cdn-performance-dashboard.png)
 
 ## Accès au tableau de bord {#accessing}
 
 Le tableau de bord du réseau CDN est disponible sur la page d’aperçu de chaque programme.
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
+{{sign-in-to-cloud-manager}}
 
 1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, cliquez sur le programme dont vous souhaitez afficher le tableau de bord CDN.
 
@@ -40,7 +40,7 @@ Le tableau de bord du réseau CDN est disponible sur la page d’aperçu de chaq
 
 Le tableau de bord présente un score global des performances du réseau CDN, ainsi que des tendances, des alertes et des suggestions d’amélioration, si nécessaire.
 
-![&#x200B; Tableau de bord des performances du réseau CDN &#x200B;](assets/cdn-performance-dashboard.png)
+![ Tableau de bord des performances du réseau CDN ](assets/cdn-performance-dashboard.png)
 
 Pour plus d’informations sur les performances de votre réseau CDN et pour obtenir des suggestions sur la manière de les améliorer, cliquez sur **Afficher la tendance**.
 
@@ -75,4 +75,4 @@ Les mesures de cache sont mises à jour toutes les 24 heures.
 
 >[!TIP]
 >
->Pour plus d’informations sur la façon dont Cloud Manager et le réseau CDN interagissent avec le Dispatcher, consultez [&#x200B; Mise en cache dans AEM as a Cloud Service](/help/implementing/dispatcher/caching.md).
+>Pour plus d’informations sur la façon dont Cloud Manager et le réseau CDN interagissent avec le Dispatcher, consultez [ Mise en cache dans AEM as a Cloud Service](/help/implementing/dispatcher/caching.md).

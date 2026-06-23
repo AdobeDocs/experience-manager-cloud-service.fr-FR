@@ -4,9 +4,9 @@ description: Découvrez comment créer rapidement un site Edge Delivery dans Cl
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
-source-git-commit: 069e94e230b856fba15c3f465c966a5bf6b0ac46
+source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
 workflow-type: tm+mt
-source-wordcount: '1446'
+source-wordcount: '1419'
 ht-degree: 53%
 
 ---
@@ -40,10 +40,8 @@ Voir également [Présentation d’Edge Delivery Services dans Cloud Manager]
 
 **Pour créer un site Edge Delivery dans Cloud Manager en un clic :**
 
-1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com).
-   1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
-   1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
-   1. Sélectionnez une organisation.
+{{sign-in-to-cloud-manager}}
+
 1. Sur la console **Mes programmes**, cliquez sur un programme.
 1. Dans le coin supérieur gauche de la page, cliquez sur ![Icône Afficher le menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) pour afficher le menu de gauche.
 1. Dans le menu de gauche, sous l’en-tête **Programme**, cliquez sur **Vue d’ensemble**.

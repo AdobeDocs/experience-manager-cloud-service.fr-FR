@@ -5,9 +5,9 @@ exl-id: 167da985-7f19-45b3-90a3-884817907da2
 solution: Experience Manager
 feature: Security, Developing
 role: Admin, Developer
-source-git-commit: 3d2b4b7aad0c7d15d14b7f9328945303ed31d71b
+source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1265'
 ht-degree: 28%
 
 ---
@@ -29,7 +29,7 @@ Cloud Manager dispose d’un ensemble de rôles prédéfinis qui régissent l�
 Les autorisations personnalisées permettent aux utilisateurs de créer des profils d’autorisation personnalisés avec des autorisations configurables pour restreindre l’accès des utilisateurs de Cloud Manager aux programmes, pipelines et environnements.
 
 >[!TIP]
->Pour plus d’informations sur les rôles prédéfinis, voir [Profils d’équipe et de produit &#x200B;](/help/onboarding/aem-cs-team-product-profiles.md).
+>Pour plus d’informations sur les rôles prédéfinis, voir [Profils d’équipe et de produit ](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ## Utiliser les autorisations personnalisées {#using}
 
@@ -47,7 +47,7 @@ La création et l’utilisation de vos autorisations personnalisées nécessiten
 
 ### Création d’un profil de produit {#create}
 
-1. Connectez-vous à Cloud Manager sur [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+{{sign-in-to-cloud-manager}}
 
 1. Sur la page de destination de Cloud Manager, cliquez sur **Gérer l’accès**.
 
@@ -149,7 +149,7 @@ Les termes suivants sont utilisés pour créer et gérer des autorisations perso
 
 | Terme | Description |
 | --- | --- |
-| Autorisations prédéfinies | Rôles prédéfinis tels que **Propriétaire de l’entreprise** et **Responsable de déploiement** pour gérer les différentes fonctionnalités de Cloud Manager. Pour plus d’informations sur les rôles prédéfinis, voir [Profils d’équipe et de produit &#x200B;](/help/onboarding/aem-cs-team-product-profiles.md). |
+| Autorisations prédéfinies | Rôles prédéfinis tels que **Propriétaire de l’entreprise** et **Responsable de déploiement** pour gérer les différentes fonctionnalités de Cloud Manager. Pour plus d’informations sur les rôles prédéfinis, voir [Profils d’équipe et de produit ](/help/onboarding/aem-cs-team-product-profiles.md). |
 | Autorisations personnalisées | Les fonctionnalités de Cloud Manager permettent aux utilisateurs de créer des profils d’autorisation pour définir des rôles afin de gérer les fonctionnalités prises en charge de Cloud Manager. |
 | Profil de produit | Créé dans Admin Console pour gérer les autorisations configurables qui s’appliquent aux utilisateurs qui font partie du profil d’autorisation. |
 | Autorisation configurable | autorisations Cloud Manager que vous pouvez configurer dans le profil d’autorisations. |
@@ -179,7 +179,7 @@ Les éléments d’autorisation se rapportent à la portée dans laquelle les au
 * Responsable de déploiement
 * Développeur ou développeuse
 
-Pour plus d’informations sur les rôles prédéfinis, voir [Profils d’équipe et de produit &#x200B;](/help/onboarding/aem-cs-team-product-profiles.md).
+Pour plus d’informations sur les rôles prédéfinis, voir [Profils d’équipe et de produit ](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ### Qu’advient-il des profils d’autorisation prédéfinis avec l’introduction des profils personnalisés ?
 

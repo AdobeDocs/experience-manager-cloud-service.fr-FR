@@ -1,8 +1,8 @@
 ---
-source-git-commit: 73befe46aa362b0d6ef8530fbf3bb222c262d626
+source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
 workflow-type: tm+mt
-source-wordcount: '1719'
-ht-degree: 93%
+source-wordcount: '1721'
+ht-degree: 92%
 
 ---
 # Fragments de code {#snippets}
@@ -179,7 +179,7 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 >[!IMPORTANT]
 >
 >Si vous utilisez ou avez l’intention d’utiliser le pipeline front-end pour développer des sites, la Liste autorisée IP de Cloud Manager doit être ajoutée au préalable.
->Voir [&#x200B; Utilisation de la Liste autorisée IP Cloud Manager avec le pipeline front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
+>Voir [ Utilisation de la Liste autorisée IP Cloud Manager avec le pipeline front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
 
 ## Listes d’adresses IP autorisées et éditeur universel {#ip-allow-lists-ue}
 
@@ -220,7 +220,7 @@ Pour enregistrer un ticket d’assistance, vous devez d’abord enregistrer votr
 
 **Pour enregistrer un ticket d’assistance, procédez comme suit :**
 
-1. [Suivez le processus de prise en charge standard](https://experienceleague.adobe.com/fr?support-tab=home#support) et créez un ticket.
+1. [Suivez le processus de prise en charge standard](https://experienceleague.adobe.com/?support-tab=home#support) et créez un ticket.
 1. Ajoutez **Edge Delivery** dans le titre du ticket.
 1. Dans la description, fournissez les détails suivants en plus de la description du problème :
 
@@ -231,8 +231,8 @@ Pour enregistrer un ticket d’assistance, vous devez d’abord enregistrer votr
 
 1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com).
    1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
-   1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
-1. Dans Cloud Manager, en haut à droite de la page, sélectionnez l’organisation de votre choix.
+   1. Dans le panneau de gauche, cliquez sur ****.
+1. Dans Cloud Manager, en haut à droite de la page, sélectionnez l’organisation que vous souhaitez utiliser.
 
 
 ## L’éditeur universel est préférable à l’éditeur SPA {#ue-over-spa}
