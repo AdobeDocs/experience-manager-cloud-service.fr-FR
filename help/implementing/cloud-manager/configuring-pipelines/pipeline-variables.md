@@ -5,16 +5,16 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 7a229f94996802ba1df6ac188c41572a9a76145a
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 14%
+source-wordcount: '675'
+ht-degree: 12%
 
 ---
 
 # Variables de pipeline dans Cloud Manager {#configuring-pipeline-variables}
 
-Votre processus de création peut dépendre de variables de configuration spécifiques qui ne doivent pas être stockées dans le référentiel Git. Vous pouvez également les ajuster entre les exécutions de pipeline sur la même branche. Cloud Manager vous permet de gérer ces paramètres en tant que variables de pipeline.
+Votre processus de génération utilise des variables de configuration spécifiques qui ne sont pas stockées dans le référentiel Git. Vous pouvez également les ajuster entre les exécutions de pipeline sur la même branche. Cloud Manager vous permet de gérer ces paramètres en tant que variables de pipeline.
 
 ## À propos des variables de pipeline {#pipeline-variables}
 
@@ -22,13 +22,13 @@ Avec Cloud Manager, vous pouvez configurer les variables de pipeline de plusieur
 
 * [Utilisation de l’interface utilisateur de Cloud Manager](#ui)
 * [Utilisation de l’interface de ligne de commande Cloud Manager](#cli)
-* [Utilisation de l’API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Variables/operation/getPipelineVariables)
+* [Utilisation de l’API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#tag/Variables/operation/getPipelineVariables)
 
-Les variables peuvent être stockées en texte brut ou chiffrées au repos. Dans les deux cas, les variables sont disponibles dans l’environnement de création en tant que variable d’environnement qui peut ensuite être référencée depuis le fichier `pom.xml` ou d’autres scripts de création.
+Les variables sont stockées en tant que texte brut ou chiffrées au repos. Les variables sont disponibles dans l’environnement de création sous la forme d’une variable d’environnement, qui peut ensuite être référencée à partir du fichier `pom.xml` ou d’autres scripts de création.
 
 ## Ajouter une variable de pipeline via Cloud Manager {#ui}
 
-Les variables de pipeline peuvent être configurées et gérées via l’interface utilisateur de Cloud Manager. Ils permettent de rationaliser la gestion des pipelines, en particulier lorsque différentes configurations sont requises selon différentes étapes.
+Les variables de pipeline peuvent être configurées et gérées via l’interface utilisateur de Cloud Manager. Ils simplifient la gestion des pipelines, en particulier lorsque différentes configurations sont requises à différentes étapes.
 
 Vous devez disposer des autorisations de modification du pipeline pour ajouter, modifier et supprimer des variables de pipeline.
 
@@ -97,7 +97,7 @@ Si un pipeline est actif, la gestion des variables est bloquée.
 
 ## Définir des variables de pipeline à l’aide de l’interface de ligne de commande Cloud Manager {#cli}
 
-Cette commande de l’interface de ligne de commande (CLI) définit une variable.
+Cette commande d’interface de ligne de commande (CLI) configure les variables.
 
 ```shell
 $ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test
