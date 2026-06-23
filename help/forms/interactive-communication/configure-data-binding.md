@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 81779df9-c101-4c39-a779-651cafc70eb9
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 3%
+source-wordcount: '490'
+ht-degree: 2%
 
 ---
 
 # Liaison de données dans l’éditeur de communication interactive
 
->[!NOTE]
->
-> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 ## &#x200B;1. Présentation
 
@@ -61,7 +58,7 @@ La liaison de données est généralement utilisée lorsque les communications d
 
 Les auteurs sélectionnent généralement le FDM au début du projet, mappent visuellement les champs pendant la conception et testent avec des exemples de données avant de le publier.
 
-## &#x200B;4. Bonnes Pratiques
+## &#x200B;4. Bonnes pratiques
 
 - **Définir le schéma au plus tôt :** finalisez le FDM avant la liaison pour éviter tout remappage ultérieur.
 

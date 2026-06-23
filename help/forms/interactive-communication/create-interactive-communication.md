@@ -6,19 +6,16 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: c23145c9-078d-4b03-a8f4-2d835cdd1592
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 5%
+source-wordcount: '562'
+ht-degree: 3%
 
 ---
 
 
 # Créer une communication interactive
 
->[!NOTE]
->
-> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 La communication interactive vous permet de créer, de gérer et de diffuser des communications personnalisées et interactives, notamment le service client, la facturation, les documents d’intégration, les lettres d’offre, les mises à jour de compte, etc. Il est conçu pour prendre en charge tout scénario où un contenu dynamique et spécifique à l’utilisateur améliore l’expérience de communication entre les secteurs d’activité.
 
@@ -80,7 +77,7 @@ Idéal pour les relevés, factures ou avis dont la structure reste constante, ma
 1. Renseignez d’autres détails tels que le titre, le nom, l’auteur, etc.
 1. Utilisez le **modèle de données** à l’intérieur de l’éditeur pour lier les champs aux données dynamiques (par exemple, nom du client, solde, numéro de compte).
 1. Utilisez les **zones de contenu** sous-formulaires et **fragments** pour structurer et répéter les données si nécessaire.
-1. Prévisualisez à l’aide de la prévisualisation **PDF** et finalisez la communication pour la diffusion.
+1. Prévisualisez à l’aide de la prévisualisation **&#x200B;**&#x200B;et finalisez la communication pour la diffusion.
 1. Cela ouvre l’éditeur d’IC, où vous pouvez commencer à concevoir votre communication.
 
 ![Rechercher un document IC](/help/forms/interactive-communication/assets/ic-ui.png)
@@ -92,3 +89,10 @@ Commencez à créer des communications interactives pour rationaliser vos workfl
 
 [Créer un modèle de communication interactive](/help/forms/interactive-communication/create-interactive-communication-template.md)
 [Créer un fragment de communication interactive](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+
+## Voir également
+
+* [Vérifier et annoter une communication interactive](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md) — Collaborez avec les réviseurs en utilisant des épingles d’annotation positionnées sur la zone de travail IC.
+* [Comparer les versions de la communication interactive](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md) — Examiner les différences de disposition et de contenu entre deux versions côte à côte.
+* [Fusionner et fractionner des cellules de tableau](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md) — Créez des dispositions de tableau flexibles en fusionnant ou en fractionnant des cellules.
+* [Déplacer un composant vers la page de Principal &#x200B;](/help/forms/interactive-communication/howto/move-component-to-master-page.md) — Assurer un placement cohérent des composants sur plusieurs pages.

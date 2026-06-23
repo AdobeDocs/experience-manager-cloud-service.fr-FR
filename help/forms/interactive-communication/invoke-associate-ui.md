@@ -6,16 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: f946ccea-86d0-4086-8208-9583b8206244
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 2%
+source-wordcount: '1142'
+ht-degree: 1%
 
 ---
 
 # Intégrer l’interface utilisateur associée à votre application
 
-<span> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à partir de votre adresse professionnelle à `aem-forms-ea@adobe.com` pour demander l’accès.</span>
 
 Cet article explique comment intégrer l’interface utilisateur Associer à votre application, ce qui permet aux professionnels en contact avec les clients, tels que les associés de terrain et les agents de service, de générer des communications interactives personnalisées en temps réel sur les instances de publication.
 
@@ -483,7 +482,7 @@ Saisissez les données pour que l’interface utilisateur associée apparaisse c
 
 **Solution** :
 - Vérifiez que l&#39;ID IC est correct et que l&#39;IC est publié
-- Vérifiez la console du navigateur afin d’identifier les erreurs JavaScript.
+- Rechercher les erreurs JavaScript dans la console du navigateur
 - Assurez-vous que la structure `postMessage` correspond exactement à la spécification
 - Vérifiez que le service de modèle de données de formulaire est correctement configuré.
 
@@ -523,5 +522,3 @@ When implementing the Associate UI integration, follow these best practices:
 - [Associer l’interface utilisateur dans l’éditeur de communication interactive](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
 - [Activer et configurer l’interface utilisateur associée pour les communications interactives](/help/forms/interactive-communication/enable-configure-associate-ui.md)
 - [Workflow de soumission pour Associate UI — IC Generate PDF Output](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
-- [Communications interactives sur le cloud](/help/forms/early-access-ea-features.md#interactive-communications-on-cloud)
-- [Fonctionnalités d’accès anticipé](/help/forms/early-access-ea-features.md)

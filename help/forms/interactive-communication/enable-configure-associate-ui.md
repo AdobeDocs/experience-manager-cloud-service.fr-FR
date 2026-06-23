@@ -4,19 +4,16 @@ description: Découvrez comment activer la vue Associé et configurer un workflo
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-exl-id: 7c3e8a2b-5f21-4a1e-9e2d-8a4b6c7d8e9f
-source-git-commit: a41459520feb03594212b91e68cfd8e2b1e610c4
+exl-id: 5f8371f9-b4a6-4cae-a9d3-cfd744b66702
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 1%
+source-wordcount: '762'
+ht-degree: 0%
 
 ---
 
 # Activer et configurer l’interface utilisateur associée pour les communications interactives
 
->[!NOTE]
->
-> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 Cet article décrit comment activer l’interface utilisateur associée pour une communication interactive (IC) et éventuellement configurer un workflow AEM pour les envois. Les auteurs effectuent ces étapes dans **Paramètres de communication interactive**.
 

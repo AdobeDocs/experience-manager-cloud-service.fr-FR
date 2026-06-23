@@ -6,24 +6,21 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 0af73ae2-fe1d-4763-ad4d-2934691cb9e1
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 3%
+source-wordcount: '566'
+ht-degree: 5%
 
 ---
 
 # Composant Champ d’image dans l’éditeur de communication interactive
 
->[!NOTE]
->
-> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 ## &#x200B;1. Présentation
 
 Le composant Champ d’image de l’éditeur de communication interactive permet aux auteurs d’insérer des images dans une disposition de communication. Elle est idéale pour les cas d’utilisation tels que l’identification par photo, la vérification de documents ou la validation visuelle, où l’affichage d’une image est essentiel pour l’utilisateur final.
 
-Prenant en charge des formats courants tels que **JPEG** et **PNG**, ce composant offre des options de configuration flexibles pour définir l’affichage, le stockage et le style de l’image. Les auteurs peuvent également **attribuer un nom ou un libellé** au champ d’image, ce qui améliore la clarté et l’organisation de la disposition.
+Prenant en charge des formats courants tels que **&#x200B;**&#x200B;et **PNG**, ce composant offre des options de configuration flexibles pour définir l’affichage, le stockage et le style de l’image. Les auteurs peuvent également **attribuer un nom ou un libellé** au champ d’image, ce qui améliore la clarté et l’organisation de la disposition.
 
 ![Rechercher un document IC](/help/forms/interactive-communication/assets/imagefield.png)
 
@@ -31,7 +28,7 @@ Prenant en charge des formats courants tels que **JPEG** et **PNG**, ce composan
 
 Le composant Champ d’image comprend plusieurs propriétés configurables :
 
-2.1. Champ De Base
+2.1. Champ de base
 
 - **Nom :** permet de définir un identifiant unique pour le champ, utilisé pour référencer les modèles de données et les règles.
 
@@ -61,7 +58,7 @@ Définissez l’espacement autour de la zone de texte :
 
 - Droite
 
-2.4. Apparence
+2.4. Aspect
 
 Aspect : définit le style visuel du champ d’image, choisit des paramètres prédéfinis tels que bordé, aplati ou élevé et personnalise avec la couleur de remplissage, la largeur de trait et le style d’angle (arrondi ou aigu).
 
@@ -73,7 +70,7 @@ Détermine la visibilité du composant image au moment de l’exécution.
 
 - Caché (conserve l’espace)
 
-2.6. Liaison De Données
+2.6. Liaison de données
 
 Liez le champ d’image à une source de données pour récupérer et afficher le contenu de l’image dynamique dans la communication.
 
@@ -97,7 +94,7 @@ Le champ d’image est utile dans les contextes où l’envoi d’un contenu vis
 
 Les auteurs peuvent placer le champ dans des sous-formulaires ou des conteneurs de mises en page pour l’alignement et utiliser des règles de validation personnalisées pour contrôler les types et tailles de fichiers acceptés.
 
-## &#x200B;4. Bonnes Pratiques
+## &#x200B;4. Bonnes pratiques
 
 - Utilisez des libellés ou des instructions clairs lorsque vous demandez des chargements d’images.
 
@@ -108,3 +105,9 @@ Les auteurs peuvent placer le champ dans des sous-formulaires ou des conteneurs 
 - Lier le champ à un chemin d’accès au schéma significatif en cas d’intégration au serveur principal
 
 Le composant Champ d’image de l’éditeur de communication interactive est un composant polyvalent qui améliore l’interactivité du formulaire en activant les chargements de contenu visuel. Lorsqu’elle est conçue avec un style, une validation et une liaison de données, elle prend en charge une expérience utilisateur transparente et une capture de données efficace pour les envois d’images.
+
+## Voir également
+
+- [Composant d’image](/help/forms/interactive-communication/image.md)
+- [Configurer la liaison de données dans l’éditeur de communication interactive](/help/forms/interactive-communication/configure-data-binding.md)
+- [Utiliser l’éditeur de règles dans l’éditeur de communication interactive](/help/forms/interactive-communication/use-the-rule-editor.md)

@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: d2af7706-2b2a-4a40-a4a4-375b5f2b08fb
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 4%
+source-wordcount: '415'
+ht-degree: 7%
 
 ---
 
 # Composant Rectangle dans l’éditeur de communication interactive
 
->[!NOTE]
->
-> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 ## &#x200B;1. Présentation
 
@@ -56,7 +53,7 @@ Définit l’espacement autour du composant de rectangle pour le séparer des au
 
 - Droite
 
-2.4. Apparence
+2.4. Aspect
 
 - **Description :** régit le style visuel du rectangle.
 
@@ -96,7 +93,7 @@ Le composant Rectangle est généralement utilisé à des fins de mise en page e
 
 Les rectangles peuvent être combinés à d’autres éléments de disposition tels que des sous-formulaires ou des conteneurs pour des structures de conception visuelle complexes.
 
-## &#x200B;4. Bonnes Pratiques
+## &#x200B;4. Bonnes pratiques
 
 - Utilisez un style cohérent pour les rectangles de votre disposition afin d’assurer une harmonie visuelle.
 
@@ -109,3 +106,9 @@ Les rectangles peuvent être combinés à d’autres éléments de disposition t
 - Masquez les rectangles s’ils ne sont nécessaires qu’à des fins de conception lors de la modification et non dans la sortie finale.
 
 Le composant Rectangle est un outil non interactif, mais puissant dans l’éditeur IC. Lorsqu’elles sont stylisées et positionnées efficacement, elles améliorent la précision de la mise en page, le flux visuel et l’expérience utilisateur sans ajouter de complexité à la liaison ou à l’interactivité des données.
+
+## Voir également
+
+- [Composant Line](/help/forms/interactive-communication/line.md)
+- [Composant d’image](/help/forms/interactive-communication/image.md)
+- [Gérer le débordement de contenu dans l’éditeur de communication interactive](/help/forms/interactive-communication/handle-content-overflow.md)

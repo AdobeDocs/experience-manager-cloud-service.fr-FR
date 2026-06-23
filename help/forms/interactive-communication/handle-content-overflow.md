@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: f19abed5-34a1-4c26-9e92-e219da798dab
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 3%
+source-wordcount: '433'
+ht-degree: 1%
 
 ---
 
 # Gestion du dépassement de contenu dans l’éditeur de communication interactive
 
->[!NOTE]
->
-> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 ## Présentation
 
@@ -59,7 +56,7 @@ Utilisez l’option Aperçu de PDF pour vérifier comment le contenu s’écoule
 - **Nouvelle option :**
 Ajoute une propriété **autoriser les sauts de page** dans le contenu pour contrôler le comportement de débordement. Cette option est visible uniquement lorsque le sous-formulaire parent est défini sur Distribué et que sa propriété **Autoriser les sauts de page** est activée.
 
-- **Poursuite automatique de page :**
+- **Continuation automatique de page :**
 Lorsque le contenu dépasse l’espace disponible, une nouvelle page est automatiquement créée et la modification se poursuit de manière transparente.
 
 - **Prise en charge du copier-coller :**

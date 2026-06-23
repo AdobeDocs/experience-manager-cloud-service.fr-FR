@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 1f6bda20-7bce-4cfd-9985-f8b49d6e50e0
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 2%
+source-wordcount: '892'
+ht-degree: 3%
 
 ---
 
 # Composant de champ numérique dans l’éditeur de communication interactive
 
->[!NOTE]
->
-> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 ## &#x200B;1. Présentation
 
@@ -25,7 +22,39 @@ Le composant Champ numérique de l’éditeur de communication interactive (IC) 
 
 ![Rechercher document IC](/help/forms/interactive-communication/assets/numericfield.png)
 
-## &#x200B;2. Propriétés
+## &#x200B;2. Afficher le modèle
+
+Vous pouvez affecter un **modèle d’affichage** à un champ numérique à partir du panneau **Propriétés**, par exemple en effectuant le rendu d’une valeur en tant que devise : **$1 234.21**.
+
+Le modèle configuré est immédiatement répercuté dans l’aperçu de la zone de travail et est conservé pendant les cycles d’enregistrement et de rechargement. Pour les cas d’utilisation avancés, vous pouvez définir une **clause d’image XFA personnalisée** afin d’obtenir le format de sortie souhaité.
+
+### Configuration d’un modèle d’affichage
+
+1. Sélectionnez le composant Champ numérique dans la zone de travail de conception.
+2. Ouvrez le panneau **Propriétés**.
+3. Dans la section **Motif d’affichage**, choisissez un motif prédéfini ou saisissez une clause d’image personnalisée.
+4. Prévisualisez la valeur formatée sur la zone de travail.
+
+### Exemple de modèle personnalisé (numérique)
+
+| Modèle | Exemple de sortie | Description |
+|---------|----------------|-------------|
+| `num{$z,zzz,zz9.99}` | $1,234.21 | Devise avec séparateur de milliers |
+
+**Symboles de clause d’image (numériques) :**
+
+| Symbole | Signification |
+|--------|---------|
+| 9 | Chiffre obligatoire |
+| z | Supprime les zéros de début |
+
+### Bonnes pratiques
+
+- Choisissez un modèle qui représente clairement l’unité de la valeur (symbole monétaire, pourcentage, etc.).
+- Validez les exemples de données dans l’aperçu de la zone de travail avant la publication.
+- Utilisez des clauses d’image personnalisées uniquement lorsque les modèles prédéfinis ne répondent pas à vos besoins de mise en forme.
+
+## &#x200B;3. Propriétés
 
 2.1 Champ de base
 
@@ -101,7 +130,7 @@ Contrôle la visibilité du champ numérique pendant l’exécution.
 
 **Aucune liaison de données :** maintient le champ statique pour une utilisation visuelle uniquement ou une entrée temporaire.
 
-## &#x200B;3. Utilisation
+## &#x200B;4. Utilisation
 
 Les champs numériques sont idéaux dans les scénarios où seuls les chiffres sont des entrées valides. Cas d’utilisation courants :
 
@@ -115,7 +144,7 @@ Les champs numériques sont idéaux dans les scénarios où seuls les chiffres s
 
 Les auteurs peuvent placer des champs numériques dans des conteneurs de disposition ou des sous-formulaires et appliquer une validation (comme des contraintes de longueur, de valeur minimale ou maximale) pour améliorer la qualité des données.
 
-## &#x200B;4. Bonnes Pratiques
+## &#x200B;5. Bonnes pratiques
 
 - Étiqueter clairement les champs numériques avec des unités si nécessaire (par exemple, « Montant en ₹ »).
 
@@ -128,3 +157,12 @@ Les auteurs peuvent placer des champs numériques dans des conteneurs de disposi
 - Conservez une apparence et une typographie cohérentes pour correspondre aux directives de la marque.
 
 Le composant **Champ numérique** de l’éditeur de communication interactive est un outil précis et fiable pour la collecte de données numériques. Grâce à une mise en forme robuste, des contrôles de visibilité et des options de liaison de données, il garantit que les entrées numériques sont capturées de manière claire et intégrées de manière transparente dans les formulaires numériques. Lorsqu’elle est stylisée et configurée correctement, elle améliore considérablement la convivialité des formulaires et la précision globale des données.
+
+## Voir également
+
+- [Composant de zone de texte](/help/forms/interactive-communication/text-box.md)
+- [Composant de champ de date](/help/forms/interactive-communication/date-field.md)
+- [Composant De Champ Date/Heure](/help/forms/interactive-communication/date-time-field.md)
+- [Composant de variable non lié](/help/forms/interactive-communication/unbound-variable.md)
+- [Configurer la liaison de données dans l’éditeur de communication interactive](/help/forms/interactive-communication/configure-data-binding.md)
+- [Utiliser l’éditeur de règles dans l’éditeur de communication interactive](/help/forms/interactive-communication/use-the-rule-editor.md)

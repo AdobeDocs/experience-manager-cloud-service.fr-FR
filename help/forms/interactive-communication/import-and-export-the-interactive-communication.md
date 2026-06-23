@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 7e328932-070d-4eb3-8176-500ef31581be
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 4%
+source-wordcount: '252'
+ht-degree: 3%
 
 ---
 
 # Importer et exporter une communication interactive
 
->[!NOTE]
->
-> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 La fonctionnalité d’importation et d’exportation de la communication interactive permet aux utilisateurs de migrer, de réutiliser et de gérer facilement les communications entre les environnements. Il vous permet d’exporter une communication interactive (IC) ainsi que ses fragments et modèles de données associés d’un environnement et de l’importer dans un autre, ce qui garantit la cohérence et réduit la duplication des efforts pendant le déploiement.
 
@@ -57,7 +54,7 @@ Créez une communication interactive (CI) dans un environnement et réutilisez-l
 
 3.1. Pour exporter, sélectionnez le fragment requis dans **Forms > Forms et documents**, puis cliquez sur **Télécharger** pour l’exporter sous la forme d’un fichier ZIP.
 
-3.2. Pour importer, accédez à l’environnement cible, puis à Forms > Forms et Documents > Créer > **Chargement de fichier** et chargez le fichier ZIP exporté.
+3.2. Pour importer, accédez à l’environnement cible, accédez à Forms > Forms et Documents > Créer > **Chargement de fichier**, puis chargez le fichier ZIP exporté.
 
 Cela permet une réutilisation facile des fragments dans différents environnements, assurant ainsi la cohérence de la conception et réduisant la duplication des efforts.
 +++

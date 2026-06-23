@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 9d906be2812090ed7f6439b0ffafc481d29b13e1
+source-git-commit: e4a81d514422497ec3f41537e3a2e57677730af5
 workflow-type: tm+mt
-source-wordcount: '7502'
+source-wordcount: '7545'
 ht-degree: 84%
 
 ---
@@ -1058,6 +1058,10 @@ ht-degree: 84%
       + [Créer un fragment de communication interactive](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
       + {hide-from-toc}[Présentation de la communication interactive](/help/forms/introduction-to-interactive-communication.md)
       + {hide-from-toc}[Créer votre première communication interactive](/help/forms/create-your-first-communication.md)
+   + Révision et collaboration {#review-collaborate}
+      + {hide-from-toc}[Contrôle de version et commentaires dans l’éditeur de communication interactive](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
+      + {hide-from-toc}[Vérifier et annoter une communication interactive](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md)
+      + {hide-from-toc}[Comparer les versions de la communication interactive](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md)
    + Composant {#component}
       + [Zone de texte](/help/forms/interactive-communication/text-box.md)
       + [Image](/help/forms/interactive-communication/image.md)
@@ -1073,6 +1077,7 @@ ht-degree: 84%
       + [Tableau](/help/forms/interactive-communication//table.md)
       + [Ligne](/help/forms/interactive-communication/line.md)
       + [Code-barres](/help/forms/interactive-communication/barcode.md)
+      + [Variable non liée](/help/forms/interactive-communication/unbound-variable.md)
    + Procédures {#howto}
       + [Configurer la liaison de données](/help/forms/interactive-communication/configure-data-binding.md)
       + [Utilisation de l’éditeur de règles](/help/forms/interactive-communication/use-the-rule-editor.md)
@@ -1083,16 +1088,19 @@ ht-degree: 84%
       + [Implémentation de la numérotation dynamique de page](/help/forms/interactive-communication/implement-dynamic-page-numbering.md)
       + [Gérer le dépassement de contenu](/help/forms/interactive-communication/handle-content-overflow.md)
       + [Prise en charge de l’édition XDP](/help/forms/interactive-communication/support-xdp-editing.md)
-      + {hide-from-toc}[Création de versions et ajout de commentaires](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
       + {hide-from-toc}[Copier et coller une communication interactive](/help/forms/interactive-communication/copy-and-paste-interactive-communication.md)
       + [Démarrer le workflow dans la communication interactive](/help/forms/interactive-communication/start-workflow-in-interactive-communication-editor.md)
       + [Créer un tableau dynamique](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)
+      + {hide-from-toc}[Fusionner et fractionner des cellules de tableau](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md)
+      + {hide-from-toc}[Déplacer un composant vers la page de Principal &#x200B;](/help/forms/interactive-communication/howto/move-component-to-master-page.md)
    + Associer l’interface utilisateur {#associateui}
       + [Associer l’interface utilisateur dans l’éditeur de communication interactive](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
       + [Activer et configurer l’interface utilisateur associée pour les communications interactives](/help/forms/interactive-communication/enable-configure-associate-ui.md)
       + [Intégrer l’interface utilisateur associée à votre application](/help/forms/interactive-communication/invoke-associate-ui.md)
       + [Workflow de soumission pour Associate UI — IC Generate PDF Output](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
-   + {hide-from-toc}[Questions fréquentes](/help/forms/interactive-communications-faq.md)
+      + {hide-from-toc}[Configurer les options de liste déroulante pour l’interface utilisateur associée](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md)
+      + {hide-from-toc}[Configurer des variables liées et non liées pour l’interface utilisateur associée](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md)
+   + [Questions fréquentes](/help/forms/interactive-communications-faq.md)
 + Workflows basés sur Forms {#create-form-centric-workflows}
    + {hide-from-toc}[Présentation du workflow centré sur Forms](/help/forms/aem-forms-workflow.md)
    + [Utilisation d’étapes basées sur l’utilisation de Forms dans un workflow et référence des étapes](/help/forms/aem-forms-workflow-step-reference.md)

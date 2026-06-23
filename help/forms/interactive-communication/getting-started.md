@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: b30b3634-0457-4c29-84d3-78f1429b98d1
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 7%
+source-wordcount: '712'
+ht-degree: 4%
 
 ---
 
 # Prise en main de l’éditeur de communication interactive (IC)
 
->[!NOTE]
->
-> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 L’**éditeur de communication interactive (IC)** de Adobe Experience Manager (AEM) Forms permet aux entreprises de concevoir et de diffuser des communications personnalisées basées sur les données, telles que des relevés, des factures et des courriers sur les canaux numériques et d’impression. Ce guide présente un aperçu de la prise en main, de l’intégration à la navigation dans l’interface d’IC Editor.
 
@@ -34,8 +31,8 @@ Pour connaître les navigateurs et les plateformes clientes pris en charge, cons
 
 >[!NOTE]
 >
-> **Prise en charge des navigateurs avec des cycles de version rapides :**
-> Firefox, Chrome et Edge publient régulièrement des mises à jour. Adobe s’engage à maintenir le niveau de prise en charge comme indiqué ci-dessus pour les versions ultérieures de ces navigateurs.
+> **Prise en charge des navigateurs avec des cycles de version rapides :**
+> Firefox, Chrome et Edge publient régulièrement des mises à jour. Adobe s’engage à maintenir le niveau de prise en charge comme indiqué ci-dessus pour les versions à venir de ces navigateurs.
 
 ### Configuration des rôles utilisateur et des autorisations
 
@@ -77,9 +74,9 @@ L’interface **Éditeur de communication interactive** est conçue pour donner 
 
 **Inclut :**
 
-Affiche l’environnement **Adobe Experience Cloud** (par exemple, Évaluation), ainsi que le **titre du projet**, les **commentaires Beta**, les **notifications** et les **contrôles de profil** pour gérer les paramètres utilisateur et l’accès à l’environnement.
+Affiche l’**environnement Adobe Experience Cloud** (par exemple, Évaluation), ainsi que le **titre du projet**, les **commentaires Beta**, les **notifications** et les **contrôles de profil** pour gérer les paramètres utilisateur et l’accès à l’environnement.
 
-### &#x200B;2. Barre d&#39;onglets (onglets Conception/Principal et commandes de fichier)
+### &#x200B;2. Barre d’onglets (onglets Conception/Principal et commandes de fichier)
 
 ![Rechercher un document IC](/help/forms/interactive-communication/assets/tab-bar.png)
 
@@ -117,7 +114,7 @@ Affiche l’environnement **Adobe Experience Cloud** (par exemple, Évaluation),
 
 * **Modèle de données :** connecte la communication aux modèles de données de formulaire (FDM) sous-jacents pour lier les données dynamiques.
 
-### &#x200B;4. Central Workspace (Zone De Travail De Conception)
+### &#x200B;4. Workspace centrale (zone de travail de conception)
 
 ![Rechercher un document IC](/help/forms/interactive-communication/assets/canvas.png)
 
@@ -137,7 +134,7 @@ Affiche l’environnement **Adobe Experience Cloud** (par exemple, Évaluation),
 
 * Prévisualiser la mise en page finale avant publication
 
-### &#x200B;5. Panneau de droite (panneau Propriétés)
+### &#x200B;5. Panneau De Droite (Panneau Propriétés)
 
 ![Rechercher un document IC](/help/forms/interactive-communication/assets/right-panel.png)
 

@@ -6,19 +6,16 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 50709c68-8666-47da-8788-fad793d870e6
-source-git-commit: 682b5dbf587b6b06f35f29bfb74a96b2c40fb3d7
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 5%
+source-wordcount: '392'
+ht-degree: 3%
 
 ---
 
 
 # Présentation de l’éditeur de communication interactive
 
->[!NOTE]
->
-> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 ## Qu’est-ce que l’éditeur de communication interactive ?
 
@@ -55,7 +52,7 @@ L’éditeur de communication interactive (IC) est conçu pour être efficace, c
 
 ## Intégration
 
-La capacité de communication interactive (IC) est disponible dans le cadre du programme d&#39;accès anticipé (EA). Pour demander l’accès, envoyez un e-mail à [&#128279;](mailto:aem-forms-ea@adobe.com) à partir de votre ID d’e-mail officiel avec votre ID d’environnement et votre ID d’organisation. Une fois que Adobe a confirmé votre inscription, consultez la documentation [Intégration au service](/help/forms/setup-forms-cloud-service.md) pour activer la communication interactive dans votre environnement AEM Forms.
+Pour commencer à utiliser la communication interactive, consultez la documentation [Intégration du service](/help/forms/setup-forms-cloud-service.md) afin d’activer la communication interactive dans votre environnement AEM Forms.
 
 https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/interactive-communication/overview/create-interactive-communication-template
 

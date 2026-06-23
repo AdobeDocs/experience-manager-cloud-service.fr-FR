@@ -5,18 +5,15 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: 9d8a33e4-e206-48e6-9daf-b15feb9c67a3
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 4%
+source-wordcount: '440'
+ht-degree: 1%
 
 ---
 
 # Workflow d’envoi pour l’interface utilisateur associée
 
->[!NOTE]
->
-> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 Cet article explique comment fonctionnent l’envoi et le workflow lorsque vous activez un workflow pour l’interface utilisateur associée. Il explique ensuite comment configurer un workflow d’envoi. La présentation utilise la génération d’un PDF à partir de la payload de communication interactive (IC) comme exemple ; vous pouvez adapter les étapes à d’autres types de workflow.
 

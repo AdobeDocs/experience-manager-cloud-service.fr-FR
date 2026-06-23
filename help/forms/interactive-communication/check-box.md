@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 636e9699-a8db-4cb0-aa9f-0602939006df
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 2%
+source-wordcount: '622'
+ht-degree: 0%
 
 ---
 
 # Composant de case à cocher dans l’éditeur de communication interactive
 
->[!NOTE]
->
-> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 ## &#x200B;1. Introduction
 
@@ -120,3 +117,9 @@ Les cases à cocher peuvent être placées dans des grilles ou des panneaux de d
 - Utilisez des règles de visibilité lorsque les cases à cocher dépendent d’entrées ou de conditions antérieures.
 
 Le composant Case à cocher dans l’éditeur de communication interactive est un composant simple mais essentiel pour les entrées binaires. Avec la prise en charge du style, de la présence conditionnelle et de la liaison de données flexible, il joue un rôle clé dans l’amélioration de l’interactivité et du contrôle utilisateur dans les formulaires numériques intelligents. Lorsqu’elles sont mises en œuvre avec des libellés réfléchis, un style cohérent et une intégration significative des données, les cases à cocher contribuent de manière significative à une expérience de formulaire fluide et intuitive.
+
+## Voir également
+
+- [Composant Bouton Radio](/help/forms/interactive-communication/radio-button.md)
+- [Configurer la liaison de données dans l’éditeur de communication interactive](/help/forms/interactive-communication/configure-data-binding.md)
+- [Utiliser l’éditeur de règles dans l’éditeur de communication interactive](/help/forms/interactive-communication/use-the-rule-editor.md)

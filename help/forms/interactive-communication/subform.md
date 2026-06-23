@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 60809974-1a39-4e69-9aa5-df9936a26362
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 3%
+source-wordcount: '499'
+ht-degree: 2%
 
 ---
 
 # Composant Sous-formulaire dans l’éditeur de communication interactive
 
->[!NOTE]
->
-> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 ## &#x200B;1. Présentation
 
@@ -94,7 +91,7 @@ Les sous-formulaires sont essentiels dans les scénarios nécessitant le regroup
 - Structurer la logique de formulaire conditionnel à l’aide de la visibilité et des règles
 Les sous-formulaires peuvent également être utilisés comme conteneurs pour l’alignement de la conception par glisser-déposer dans des dispositions statiques et dynamiques.
 
-## &#x200B;4. Bonnes Pratiques
+## &#x200B;4. Bonnes pratiques
 
 - Choisissez la disposition appropriée (fluide ou positionné) en fonction de la conception et des besoins en matière de données.
 
@@ -107,3 +104,9 @@ Les sous-formulaires peuvent également être utilisés comme conteneurs pour l�
 - Appliquez des règles de visibilité conditionnelle pour optimiser l’expérience utilisateur dans les formulaires complexes.
 
 Le composant **Sous-formulaire** de l’éditeur de communication interactive offre un moyen puissant de structurer et de contrôler des dispositions de formulaires complexes. Qu’il s’agisse d’organiser des champs de saisie, de gérer du contenu dynamique ou d’activer la conception modulaire, les sous-formulaires améliorent la convivialité et la maintenance des modèles de document.
+
+## Voir également
+
+- [Gérer le débordement de contenu dans l’éditeur de communication interactive](/help/forms/interactive-communication/handle-content-overflow.md)
+- [Configurer la liaison de données dans l’éditeur de communication interactive](/help/forms/interactive-communication/configure-data-binding.md)
+- [Utiliser l’éditeur de règles dans l’éditeur de communication interactive](/help/forms/interactive-communication/use-the-rule-editor.md)

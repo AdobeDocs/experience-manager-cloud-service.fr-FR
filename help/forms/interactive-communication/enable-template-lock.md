@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 7c7461fe-a5d7-481e-b5f5-27fd5bcde2d0
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 3%
+source-wordcount: '533'
+ht-degree: 2%
 
 ---
 
 # Verrouillage de modèle dans l’éditeur de communication interactive
 
->[!NOTE]
->
-> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 ## &#x200B;1. Présentation
 
@@ -55,7 +52,7 @@ Lorsqu’elles sont appliquées, les auteurs ne peuvent pas :
 
 - Redimensionner la largeur ou la hauteur de l’élément
 
-## &#x200B;3. Utilisation du verrouillage de modèle dans l’éditeur de communication interactive
+## &#x200B;3. Comment utiliser le verrouillage de modèle dans l’éditeur de communication interactive
 
 Pour appliquer des verrous de contenu ou de disposition à votre modèle de communication interactive (IC), procédez comme suit :
 
@@ -79,7 +76,7 @@ Dans le panneau Propriétés, accédez à la section Verrouillage .
 1. Enregistrer et vérifier
 Enregistrez le modèle et créez un code interactif basé sur celui-ci pour confirmer que les éléments verrouillés ne peuvent pas être modifiés.
 
-## &#x200B;4. Bonnes Pratiques
+## &#x200B;4. Bonnes pratiques
 
 - **Verrouiller rapidement les composants critiques :** verrouiller les en-têtes, les pieds de page, les clauses de non-responsabilité et les logos pour garantir la conformité et l’identité de la marque.
 
@@ -88,3 +85,11 @@ Enregistrez le modèle et créez un code interactif basé sur celui-ci pour conf
 - **Utilisez des verrous de mise en page par souci de cohérence :** prévenez les désalignements ou les distorsions visuelles dans les modèles fréquemment réutilisés.
 
 - **Communication de l’utilisation du verrou :** assurez-vous que les utilisateurs en aval savent quelles sections sont intentionnellement restreintes afin d’éviter toute confusion.
+
+- **Les verrous empêchent le déplacement vers le gabarit de page :** si vous appliquez un verrou de contenu ou de mise en page à un composant, vous ne pouvez pas utiliser l’option **Déplacer vers la page de Principal** sur celle-ci. Supprimez d’abord le verrouillage ou planifiez le placement du composant sur le gabarit de page lors de la conception du modèle.
+
+## Voir également
+
+- [Déplacer un composant vers la page de Principal](/help/forms/interactive-communication/howto/move-component-to-master-page.md)
+- [Implémentation de la numérotation dynamique de page dans l’éditeur de communication interactive](/help/forms/interactive-communication/implement-dynamic-page-numbering.md)
+- [Créer un modèle de communication interactive](/help/forms/interactive-communication/create-interactive-communication-template.md)
