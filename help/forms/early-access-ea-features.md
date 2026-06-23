@@ -7,7 +7,7 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '2223'
 ht-degree: 21%
@@ -24,7 +24,7 @@ Le programme d’accès anticipé d’AEM Forms vous offre une opportunité uniq
 
 ## Comment adhérer au programme Accès anticipé ?
 
-Si vous souhaitez rejoindre notre programme d&#39;accès anticipé pour toute innovation d&#39;accès anticipé, envoyez simplement un e-mail à partir de votre adresse officielle à [&#128279;](mailto:aem-forms-ea@adobe.com) pour demander l&#39;accès. Vous pouvez demander l’accès à toutes les innovations ou à certaines d’entre elles.
+Si vous souhaitez rejoindre notre programme d&#39;accès anticipé pour toute innovation d&#39;accès anticipé, envoyez simplement un e-mail à partir de votre adresse officielle à [](mailto:aem-forms-ea@adobe.com) pour demander l&#39;accès. Vous pouvez demander l’accès à toutes les innovations ou à certaines d’entre elles.
 
 ## Innovations en accès anticipé
 
@@ -69,7 +69,7 @@ L’innovation Conversational Forms vous permet d’interagir avec des formulair
 
 Vous pouvez simplement faire glisser et déposer le composant Forms de conversation sur votre page AEM Sites et commencer. Aucun codage n’est requis, de sorte que tout le monde peut créer rapidement des expériences de conversation Forms attrayantes et conviviales.
 
-Forms de conversation, remplissage de formulaire de style bot conversationnel, Forms adaptatif![&#128279;](/help/forms/assets/conversational-forms.png)
+Forms de conversation, remplissage de formulaire de style bot conversationnel, Forms adaptatif](/help/forms/assets/conversational-forms.png)![
 
 Voici ce que le Forms de conversation apporte de plus :
 
@@ -208,7 +208,7 @@ not sure what's going on with this video link. cleaned up version below
 * **Productivité des développeurs** : concentrez-vous sur la création d’une logique commerciale et d’une interface utilisateur, tandis que l’interface de ligne de commande gère des tâches de configuration répétitives.
 * **Intégration transparente** : les composants générés sont prêts à être utilisés et à s’intégrer à vos projets AEM Forms existants.
 
-Prêt à démarrer ? L’outil de ligne de commande AEM Forms est disponible dans le cadre du programme d’accès anticipé pour les déploiements de Forms as a Cloud Service. Pour demander l’accès, envoyez l’ID d’organisation et les détails du programme par e-mail à [&#128279;](mailto:aem-forms-ea@adobe.com) à partir de votre adresse officielle.
+Prêt à démarrer ? L’outil de ligne de commande AEM Forms est disponible dans le cadre du programme d’accès anticipé pour les déploiements de Forms as a Cloud Service. Pour demander l’accès, envoyez l’ID d’organisation et les détails du programme par e-mail à [](mailto:aem-forms-ea@adobe.com) à partir de votre adresse officielle.
 
 ### Outil d’intégration d’API pour les données de formulaire dynamique
 
@@ -348,7 +348,7 @@ Forms Manager now supports versioning for Adaptive Forms (Core Components and Fo
 
 ### Amélioration de l’accessibilité des composants de formulaire
 
-Les composants principaux de Forms adaptatifs introduisent un balisage sémantique compatible WCAG pour les groupes de cases à cocher, les groupes de boutons radio et les panneaux. Ces composants exploitent désormais les éléments `<fieldset>` et `<legend>` pour établir des relations significatives entre les libellés de groupe et leurs options pour les technologies d’assistance. Voir [&#x200B; Prise en charge des jeux de champs et des légendes dans le Forms adaptatif](/help/forms/creating-accessible-adaptive-forms.md#fieldset-legend-accessibility).
+Les composants principaux de Forms adaptatifs introduisent un balisage sémantique compatible WCAG pour les groupes de cases à cocher, les groupes de boutons radio et les panneaux. Ces composants exploitent désormais les éléments `<fieldset>` et `<legend>` pour établir des relations significatives entre les libellés de groupe et leurs options pour les technologies d’assistance. Voir [ Prise en charge des jeux de champs et des légendes dans le Forms adaptatif](/help/forms/creating-accessible-adaptive-forms.md#fieldset-legend-accessibility).
 
 ## Voir également
 
@@ -357,4 +357,5 @@ Les composants principaux de Forms adaptatifs introduisent un balisage sémantiq
 * [Fonctionnalités d’AEM Forms as a Cloud Services](/help/forms/home.md)
 
 * [Différence entre AEM 6.5 Forms (AMS et On-Prem) et AEM Forms as a Cloud Services (AEM CS Forms)](/help/forms/notable-changes.md)
+
 

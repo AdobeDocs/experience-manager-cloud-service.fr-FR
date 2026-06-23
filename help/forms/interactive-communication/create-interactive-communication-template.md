@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 926fd6af-aea1-40be-9d38-8f1ea0900132
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 5%
@@ -23,7 +23,7 @@ Les modèles de communication interactive d’AEM permettent aux utilisateurs de
 
 * [Assurez-vous que l’auteur est membre des groupes forms-users et template-authors .](/help/forms/setup-forms-cloud-service.md#configure-users)
 
-* Assurez-vous que la version 55[&#128279;](https://github.com/adobe/aem-project-archetype) ou ultérieure de l’archétype AEM  est installée.
+* Assurez-vous que la version 55](https://github.com/adobe/aem-project-archetype) ou ultérieure de l’archétype AEM [ est installée.
 
 ## Créer un modèle de communication interactive
 
@@ -73,3 +73,4 @@ En suivant les étapes ci-dessus, vous pouvez créer un modèle de communication
 
 [Créer une communication interactive](/help/forms/interactive-communication/create-interactive-communication.md)
 [Créer un fragment de communication interactive](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+

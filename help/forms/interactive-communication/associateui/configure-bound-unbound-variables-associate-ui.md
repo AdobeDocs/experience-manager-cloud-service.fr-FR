@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: configure-bound-unbound-variables-associate-ui
-source-git-commit: 7619c18a771191a1491447484195bc480b1d2708
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '1405'
 ht-degree: 1%
@@ -213,3 +213,4 @@ Une seule instance apparaît dans le panneau de saisie de données de gauche. L�
 - [Configurer les options de liste déroulante pour l’interface utilisateur associée](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md)
 - [Activer et configurer l’interface utilisateur associée pour les communications interactives](/help/forms/interactive-communication/enable-configure-associate-ui.md)
 - [Composant de variable non lié dans l’éditeur de communication interactive](/help/forms/interactive-communication/unbound-variable.md)
+

@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 7db24153-549a-4c36-8cb5-ab33fda8072a
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 2%
@@ -118,3 +118,4 @@ Le composant Tableau de l’éditeur IC est un composant flexible et convivial c
 - [Fusionner et fractionner des cellules de tableau dans l’éditeur de communication interactive](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md) — Découvrez comment combiner des cellules adjacentes en une seule cellule ou fractionner une cellule fusionnée pour créer des dispositions de tableau flexibles.
 - [Créer un tableau dynamique dans l’éditeur de communication interactive](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)
 - [Configurer la liaison de données dans l’éditeur de communication interactive](/help/forms/interactive-communication/configure-data-binding.md)
+

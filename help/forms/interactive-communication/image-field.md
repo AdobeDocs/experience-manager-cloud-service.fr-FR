@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 0af73ae2-fe1d-4763-ad4d-2934691cb9e1
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '566'
 ht-degree: 5%
@@ -20,7 +20,7 @@ ht-degree: 5%
 
 Le composant Champ d’image de l’éditeur de communication interactive permet aux auteurs d’insérer des images dans une disposition de communication. Elle est idéale pour les cas d’utilisation tels que l’identification par photo, la vérification de documents ou la validation visuelle, où l’affichage d’une image est essentiel pour l’utilisateur final.
 
-Prenant en charge des formats courants tels que **&#x200B;**&#x200B;et **PNG**, ce composant offre des options de configuration flexibles pour définir l’affichage, le stockage et le style de l’image. Les auteurs peuvent également **attribuer un nom ou un libellé** au champ d’image, ce qui améliore la clarté et l’organisation de la disposition.
+Prenant en charge des formats courants tels que **** et **PNG**, ce composant offre des options de configuration flexibles pour définir l’affichage, le stockage et le style de l’image. Les auteurs peuvent également **attribuer un nom ou un libellé** au champ d’image, ce qui améliore la clarté et l’organisation de la disposition.
 
 ![Rechercher un document IC](/help/forms/interactive-communication/assets/imagefield.png)
 
@@ -111,3 +111,4 @@ Le composant Champ d’image de l’éditeur de communication interactive est un
 - [Composant d’image](/help/forms/interactive-communication/image.md)
 - [Configurer la liaison de données dans l’éditeur de communication interactive](/help/forms/interactive-communication/configure-data-binding.md)
 - [Utiliser l’éditeur de règles dans l’éditeur de communication interactive](/help/forms/interactive-communication/use-the-rule-editor.md)
+

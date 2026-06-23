@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 1ff5ac22-d8c8-4109-8334-217dbc239f1f
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 6%
@@ -112,3 +112,4 @@ Le composant Line de l’éditeur de communication interactive est un élément 
 
 - [Composant Rectangle](/help/forms/interactive-communication/rectangle.md)
 - [Composant de l’image](/help/forms/interactive-communication/image.md)
+

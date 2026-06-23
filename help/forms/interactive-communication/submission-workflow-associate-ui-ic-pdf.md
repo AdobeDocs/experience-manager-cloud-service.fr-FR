@@ -5,7 +5,7 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: 9d8a33e4-e206-48e6-9daf-b15feb9c67a3
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 1%
@@ -82,11 +82,12 @@ Dans [Activer et configurer l’interface utilisateur associée](/help/forms/int
 
 ![Paramètres de communication interactive - Configuration du workflow pour l’interface utilisateur associée](/help/forms/assets/associate-ui-configure-workflow.png)
 
-Lorsque l’option **Externaliser le stockage des données de workflow** est activée, configurez l’externaliseur afin que les données de workflow soient stockées dans votre stockage externe (par exemple, Azure). Voir [Externalisation des données de workflow](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html?lang=fr).
+Lorsque l’option **Externaliser le stockage des données de workflow** est activée, configurez l’externaliseur afin que les données de workflow soient stockées dans votre stockage externe (par exemple, Azure). Voir [Externalisation des données de workflow](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html).
 
 ## Voir également
 
 - [Associer l’interface utilisateur dans l’éditeur de communication interactive](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
 - [Activer et configurer l’interface utilisateur associée pour les communications interactives](/help/forms/interactive-communication/enable-configure-associate-ui.md)
 - [Intégrer l’interface utilisateur associée à votre application](/help/forms/interactive-communication/invoke-associate-ui.md)
-- [Externaliser les données de workflow](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html?lang=fr)
+- [Externaliser les données de workflow](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html)
+

@@ -5,7 +5,7 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: 5f8371f9-b4a6-4cae-a9d3-cfd744b66702
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 0%
@@ -83,10 +83,11 @@ Après avoir activé la vue Associé et éventuellement configuré le workflow :
 
 1. **Activer les champs modifiables :** dans les sections requises de la carte d’interface utilisateur, activez les champs que les associés sont autorisés à modifier. Définissez les validations et le comportement obligatoire/en lecture seule selon les besoins.
 1. **Publiez l’IC** afin qu’il soit disponible sur l’instance de publication pour les associés.
-1. Partagez le lien IC publié avec les associés. Ils s’authentifient (par exemple, via l’ID d’entrée Microsoft [&#128279;](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id)) et ouvrent l’interface utilisateur associée, saisissent ou confirment les données client et génèrent la communication finale. Si vous avez configuré un workflow, il s’exécute lors de l’envoi. Pour connaître le fonctionnement de l’envoi et du workflow, voir [&#x200B; Workflow d’envoi pour l’interface utilisateur associée &#x200B;](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md#submission-and-workflow-behavior).
+1. Partagez le lien IC publié avec les associés. Ils s’authentifient (par exemple, via l’ID d’entrée Microsoft [](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id)) et ouvrent l’interface utilisateur associée, saisissent ou confirment les données client et génèrent la communication finale. Si vous avez configuré un workflow, il s’exécute lors de l’envoi. Pour connaître le fonctionnement de l’envoi et du workflow, voir [ Workflow d’envoi pour l’interface utilisateur associée ](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md#submission-and-workflow-behavior).
 
 ## Voir également
 
 - [Associer l’interface utilisateur dans l’éditeur de communication interactive](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
 - [Intégrer l’interface utilisateur associée à votre application](/help/forms/interactive-communication/invoke-associate-ui.md)
 - [Workflow d’envoi pour l’interface utilisateur associée - Sortie IC Generate PDF](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md) - Fonctionnement de l’envoi et du workflow, ainsi qu’un exemple de workflow qui génère du PDF à partir des envois IC.
+

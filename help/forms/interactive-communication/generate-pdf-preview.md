@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 17b3fe2b-6a1d-4fe2-9a92-a55a50400824
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 3%
@@ -44,7 +44,7 @@ Prévisualisez les communications interactives en n’utilisant aucune donnée, 
 
 +++&#x200B;2. Aperçu avec des données JSON locales
 
-2.1. Préparez un fichier JSON structuré. À titre de référence, vous pouvez copier les données d’exemple du [&#x200B; de schéma JSON (FDM)](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) utilisé pour la communication.
+2.1. Préparez un fichier JSON structuré. À titre de référence, vous pouvez copier les données d’exemple du [ de schéma JSON (FDM)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) utilisé pour la communication.
 
 2.2. Dans l’éditeur IC, accédez à **Aperçu** > Utilisation des données locales.
 
@@ -63,3 +63,4 @@ Prévisualisez les communications interactives en n’utilisant aucune donnée, 
 ![Rechercher un document IC](/help/forms/interactive-communication/assets/datamodel.png)
 
 +++
+

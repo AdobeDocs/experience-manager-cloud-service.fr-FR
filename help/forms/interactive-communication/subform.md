@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 60809974-1a39-4e69-9aa5-df9936a26362
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '499'
 ht-degree: 2%
@@ -110,3 +110,4 @@ Le composant **Sous-formulaire** de l’éditeur de communication interactive of
 - [Gérer le débordement de contenu dans l’éditeur de communication interactive](/help/forms/interactive-communication/handle-content-overflow.md)
 - [Configurer la liaison de données dans l’éditeur de communication interactive](/help/forms/interactive-communication/configure-data-binding.md)
 - [Utiliser l’éditeur de règles dans l’éditeur de communication interactive](/help/forms/interactive-communication/use-the-rule-editor.md)
+
