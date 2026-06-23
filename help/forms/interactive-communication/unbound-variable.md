@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: unbound-variable-ic-editor
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: b817bcb02c4ff6ac369973ef658d9fcbdce95c51
 workflow-type: tm+mt
 source-wordcount: '1110'
 ht-degree: 3%
@@ -155,3 +155,4 @@ Vous pouvez placer une variable non liée dans des sous-formulaires, des contene
 - [Composant de champ date/heure](/help/forms/interactive-communication/date-time-field.md) : syntaxe de modèle d’affichage pour les valeurs de date et d’heure combinées
 - [Utiliser l’éditeur de règles dans l’éditeur de communication interactive](/help/forms/interactive-communication/use-the-rule-editor.md) — écrivez des expressions pour calculer et affecter des valeurs aux variables non liées
 - [Configurer la liaison de données dans l’éditeur de communication interactive](/help/forms/interactive-communication/configure-data-binding.md)
+

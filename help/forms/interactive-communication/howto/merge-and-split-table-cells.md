@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: merge-split-table-cells-ic-editor
-source-git-commit: 45b33b8a5afe8ff329f76b65d7e5bd7dea0dcc17
+source-git-commit: b817bcb02c4ff6ac369973ef658d9fcbdce95c51
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 3%
@@ -84,3 +84,4 @@ La boîte de dialogue de division affiche la valeur **Colonnes max**, qui est é
 - [Composant Tableau dans l’éditeur de communication interactive](/help/forms/interactive-communication/table.md)
 - [Créer un tableau dynamique dans l’éditeur de communication interactive](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)
 - [Créer une communication interactive](/help/forms/interactive-communication/create-interactive-communication.md)
+

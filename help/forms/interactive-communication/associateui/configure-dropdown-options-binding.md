@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: configure-dropdown-options-associate-ui
-source-git-commit: 7619c18a771191a1491447484195bc480b1d2708
+source-git-commit: b817bcb02c4ff6ac369973ef658d9fcbdce95c51
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 2%
@@ -108,3 +108,4 @@ Publiez la communication interactive et ouvrez l’aperçu de l’interface util
 - [Associer l’interface utilisateur dans l’éditeur de communication interactive](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
 - [Configuration des variables liées et non liées pour l’interface utilisateur associée](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md)
 - [Créer une communication interactive](/help/forms/interactive-communication/create-interactive-communication.md)
+
