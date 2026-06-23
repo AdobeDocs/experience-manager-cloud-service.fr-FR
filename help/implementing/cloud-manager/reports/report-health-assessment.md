@@ -27,13 +27,13 @@ Le service d’évaluation de l’intégrité effectue les opérations suivantes
 
 Chaque exécution répertorie les problèmes par gravité, fournit des liens vers des conseils et des correctifs recommandés et prend en charge une exportation PDF du rapport. Vous pouvez utiliser la vue **Dernier rapport** pour l’état actuel et **Rapports précédents** pour comparer les exécutions.
 
-Consultez également la section [ Modèles d’évaluation de l’intégrité ](#ha-patterns) pour obtenir des détails sur les définitions de règle et les mesures correctives.
+Consultez également la section [&#x200B; Modèles d’évaluation de l’intégrité &#x200B;](#ha-patterns) pour obtenir des détails sur les définitions de règle et les mesures correctives.
 
 ## Accéder à la page Évaluation de l’intégrité {#access-health-assessment}
 
 1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com).
 1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
-1. Dans le panneau de gauche, cliquez sur ****.
+1. Dans le panneau de gauche, cliquez sur **&#x200B;**.
 1. Dans Cloud Manager, en haut à droite de la page, sélectionnez l’organisation que vous souhaitez utiliser. L’image ci-dessous est fournie à titre de référence uniquement. Sélectionnez votre organisation.
 
    ![Sélection d’une organisation dans Cloud Manager](/help/implementing/cloud-manager/reports/assets/ha-org.png)
