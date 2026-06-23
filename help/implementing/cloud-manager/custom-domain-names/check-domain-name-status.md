@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 1b7357b7f3fb99937857e5a7716baedd8124b549
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 17%
+source-wordcount: '885'
+ht-degree: 14%
 
 ---
 
@@ -19,7 +19,7 @@ Découvrez comment vérifier que Cloud Manager a confirmé votre nom de domaine 
 
 ## Vérification de l’état d’un nom de domaine personnalisé {#how-to}
 
-Avant de vérifier le statut de votre nom de domaine dans Cloud Manager, assurez-vous d’avoir déjà ajouté un certificat SSL géré par le client (OV/EV) pour votre domaine personnalisé, comme décrit dans la section [Ajouter un certificat SSL géré par le client](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md##add-customer-managed-ssl-cert).
+Avant de vérifier le statut de votre nom de domaine dans Cloud Manager, assurez-vous d’avoir déjà ajouté un certificat SSL géré par le client (OV/EV) pour votre domaine personnalisé, comme décrit dans la section [Ajouter un certificat SSL géré par le client](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-customer-managed-ssl-cert).
 
 **Pour vérifier l’état d’un nom de domaine personnalisé :**
 
@@ -64,14 +64,14 @@ Voici une erreur courante de vérification des noms de domaine et sa résolution
 
 <!-- This error may occur during domain validation of the EV/OV certificate even after you have checked that the certificate has been updated appropriately. -->
 
-Lorsque vous tentez d’ajouter un mappage de domaine dans Cloud Manager, le message d’erreur suivant peut s’afficher :
+Lorsque vous tentez d’ajouter un mappage de domaine dans Cloud Manager, le message d’erreur suivant s’affiche :
 
-*Le domaine est déjà installé dans un compte Fastly. Supprimez-le d’abord de cet emplacement avant de l’ajouter à Cloud Service.*
+*Le domaine est déjà installé dans un compte Fastly. Supprimez-le avant de l’ajouter à Cloud Service.*
 
 <!-- This message indicates that the domain is currently associated with a different Fastly account—typically outside of Adobe's control. To proceed, the domain must be disassociated from the other account before it can be added to the Adobe-managed Cloud Service. This issue usually occurs when the same domain is already mapped to a different origin in a non-Adobe Fastly configuration. -->
 
 **Cause de l’erreur**
-Fastly verrouille un domaine sur le compte qui l’enregistre en premier, tandis que les autres comptes doivent demander l’autorisation d’enregistrer un sous-domaine. En outre, Fastly ne vous permet d’affecter qu’un seul domaine apex et ses sous-domaines associés à un seul service et compte Fastly. Cette erreur s’affiche si vous disposez d’un compte Fastly qui lie les mêmes apex et sous-domaines utilisés pour vos domaines AEM Cloud Service.
+Fastly verrouille un domaine sur le compte qui l’enregistre en premier, tandis que les autres comptes doivent demander l’autorisation d’enregistrer un sous-domaine. En outre, Fastly vous permet d’affecter un domaine apex et des sous-domaines associés à un seul service et compte Fastly. Si vous disposez d’un compte Fastly qui lie les mêmes apex et sous-domaines utilisés pour vos domaines AEM Cloud Service, il est possible de voir l’erreur suivante.
 
 **Résolution d’erreurs**
 L’erreur est corrigée comme suit :
@@ -84,7 +84,7 @@ L’erreur est corrigée comme suit :
 
 >[!TIP]
 >
->La résolution des problèmes de délégation de domaine avec Fastly prend généralement 1 à 2 jours ouvrés. Pour cette raison, il est recommandé d’installer les domaines bien avant leur date d’activation.
+>La résolution des problèmes de délégation de domaine avec Fastly prend entre 1 et 2 jours ouvrables en moyenne. C’est pourquoi Adobe vous recommande d’installer les domaines bien avant leur date de mise en production.
 
 >[!NOTE]
 >
@@ -94,7 +94,7 @@ L’erreur est corrigée comme suit :
 
 Si vous disposez déjà d’une configuration CDN (réseau de diffusion de contenu) pour vos noms de domaine personnalisés, un message d’information s’affiche sur les pages **Noms de domaine personnalisés** et **Environnement**. Cela vous incite à ajouter ces configurations par le biais de l’interface utilisateur afin qu’elles puissent être gérées et affichées dans Cloud Manager.
 
-Le message disparaît une fois que toutes les configurations d’environnement préexistantes ont été migrées à l’aide de l’interface utilisateur. Il peut s’écouler entre 1 et 2 jours ouvrés avant que le message ne disparaisse.
+Le message disparaît une fois que toutes les configurations d’environnement préexistantes ont été migrées à l’aide de l’interface utilisateur. Il faut 1 à 2 jours ouvrables pour que le message disparaisse.
 
 Voir [Ajouter un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) pour plus d’informations.
 

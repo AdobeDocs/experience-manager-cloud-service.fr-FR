@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
+source-git-commit: 1b7357b7f3fb99937857e5a7716baedd8124b549
 workflow-type: tm+mt
 source-wordcount: '798'
-ht-degree: 38%
+ht-degree: 36%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 38%
 >additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name" text="Ajout d’un nom de domaine personnalisé"
 >additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/managing-custom-domain-names" text="Afficher et mettre à jour le nom de domaine personnalisé"
 
-Adobe Experience Manager as a Cloud Service est configuré avec un nom de domaine par défaut, se terminant par `*.adobeaemcloud.com`. À l’aide de l’interface utilisateur de Cloud Manager, vous pouvez ajouter un domaine personnalisé pour identifier votre site par un nom de marque unique en libre-service. Le nom de domaine `*.adobeaemcloud.com` par défaut est conservé, même après l’association de noms de domaine personnalisés à votre site web.
+Adobe Experience Manager as a Cloud Service est configuré avec un nom de domaine par défaut, se terminant par `*.adobeaemcloud.com`. Pour identifier votre site avec un nom de marque unique en libre-service, vous pouvez ajouter un domaine personnalisé à l’aide de l’interface utilisateur de Cloud Manager. Le nom de domaine `*.adobeaemcloud.com` par défaut est conservé, même après l’association de noms de domaine personnalisés à votre site web.
 
 ## Que sont les noms de domaine personnalisés ? {#what-are-custom-domain-names}
 
@@ -47,7 +47,7 @@ AEM as a Cloud Service offre un service CDN (réseau de diffusion de contenu) in
 * Cloud Manager gère les noms de domaine et certificats personnalisés installés dans le réseau CDN géré par AEM.
 * Les noms de domaine personnalisés et les certificats installés dans un réseau CDN BYO sont gérés directement dans ce réseau CDN.
 
-**Les domaines gérés dans votre propre réseau CDN ne nécessitent pas d’installation via Cloud Manager** - Ils sont mis à la disposition d’AEM via X-Forwarded-Host et correspondent aux hôtes virtuels définis dans Dispatcher. Consultez la [documentation sur le réseau CDN](/help/implementing/dispatcher/cdn.md).
+**Les domaines gérés dans votre propre réseau CDN ne nécessitent pas d’installation via Cloud Manager** — ils sont mis à la disposition d’AEM via X-Forwarded-Host et correspondent aux hôtes virtuels définis dans Dispatcher. Consultez la [documentation sur le réseau CDN](/help/implementing/dispatcher/cdn.md).
 
 Dans un seul environnement, les deux domaines peuvent être installés dans le réseau CDN géré par AEM et dans un réseau CDN BYO.
 
@@ -69,7 +69,7 @@ L’ajout d’un nom de domaine personnalisé nécessite une interaction entre l
 
 >[!TIP]
 >
->Le processus de configuration de noms de domaine personnalisés avec AEM as a Cloud Service s’avère généralement simple. Cependant, il peut arriver que des problèmes de délégation de domaine se produisent, ce qui peut prendre entre 1 et 2 jours ouvrables. Pour cette raison, il est recommandé d’installer les domaines bien avant leur date d’activation. Consultez le document [Vérification du statut du nom de domaine](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour plus d’informations.
+>La configuration de noms de domaine personnalisés avec AEM as a Cloud Service est généralement un processus simple. Cependant, il peut arriver que des problèmes de délégation de domaine se produisent, ce qui peut prendre entre 1 et 2 jours ouvrables. C’est pourquoi Adobe vous recommande d’installer les domaines bien avant leur date de mise en production. Consultez le document [Vérification du statut du nom de domaine](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour plus d’informations.
 
 ## Remarques sur l’utilisation {#usage-notes}
 
