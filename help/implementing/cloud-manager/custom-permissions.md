@@ -5,9 +5,9 @@ exl-id: 167da985-7f19-45b3-90a3-884817907da2
 solution: Experience Manager
 feature: Security, Developing
 role: Admin, Developer
-source-git-commit: 3d2b4b7aad0c7d15d14b7f9328945303ed31d71b
+source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1265'
 ht-degree: 28%
 
 ---
@@ -47,7 +47,7 @@ La création et l’utilisation de vos autorisations personnalisées nécessiten
 
 ### Création d’un profil de produit {#create}
 
-1. Connectez-vous à Cloud Manager sur [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+{{sign-in-to-cloud-manager}}
 
 1. Sur la page de destination de Cloud Manager, cliquez sur **Gérer l’accès**.
 

@@ -5,23 +5,23 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
+source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
 workflow-type: tm+mt
-source-wordcount: '1349'
-ht-degree: 9%
+source-wordcount: '1261'
+ht-degree: 5%
 
 ---
 
 
 # Modifier des programmes {#editing-programs}
 
-Pour gérer et modifier des programmes, commencez par la console [**Mes programmes**](/help/implementing/cloud-manager/navigation.md). La page **Mes programmes** donne un aperçu de tous les programmes auxquels vous avez accès. Lors de la sélection d’un programme individuel, la page **Aperçu du programme** donne un aperçu des détails du programme.
+Pour gérer et modifier des programmes, commencez par la console [**Mes programmes**](/help/implementing/cloud-manager/navigation.md). La page **Mes programmes** donne un aperçu de tous les programmes auxquels vous avez accès. Lors de la sélection d’un programme individuel, la page **Aperçu du programme** fournit un aperçu des détails du programme.
 
 Dans l’**Aperçu du programme**, les utilisateurs disposant des autorisations requises peuvent modifier les [programmes de production créés dans votre organisation](creating-production-programs.md) et les [programmes Sandbox créés dans votre organisation](creating-sandbox-programs.md). En modifiant un programme, vous pouvez effectuer les opérations suivantes :
 
 
 * Activez ou désactivez la protection **WAF-DDOS** dans l&#39;onglet **Sécurité**.
-* Ajoutez la solution Sites à un programme existant avec Assets et ajoutez Assets à un programme existant avec Sites.
+* Ajoutez la solution Sites à un programme existant qui comprend Assets et ajoutez Assets à un programme existant qui comprend Sites.
 * Supprimez Sites ou Assets d’un programme existant qui comporte à la fois Sites et Assets.
 * Ajoutez un droit de solution inutilisé à un programme existant ou créez un programme.
 * Marquez les programmes de production pour suppression.
@@ -33,14 +33,12 @@ Vous devez disposer du rôle **Propriétaire de l’entreprise** pour modifier d
 
 ## Modifier un programme {#editing}
 
-Chaque fois qu’un programme est modifié, y compris par l’ajout ou la suppression d’une solution ou d’un module complémentaire, ces modifications prennent effet après le prochain déploiement.
+Lorsqu’un programme est modifié, y compris par l’ajout ou la suppression d’une solution ou d’un module complémentaire, ces modifications prennent effet après le prochain déploiement.
 
 **Pour modifier un programme, procédez comme suit**
 
-1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com).
-1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
-1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
-1. Dans Cloud Manager, sélectionnez l’organisation appropriée.
+{{sign-in-to-cloud-manager}}
+
 1. Sur la page **Mes programmes**, cliquez sur le programme que vous souhaitez modifier.
 1. Dans le coin supérieur gauche de la page, cliquez sur le nom du programme, puis sélectionnez **Modifier le programme**.
 
@@ -50,7 +48,7 @@ Chaque fois qu’un programme est modifié, y compris par l’ajout ou la suppre
 
    ![Onglet Général](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/edit-program-dialog-box.png)
 
-   Les options disponibles pour la modification du programme sont les mêmes que pour la création du programme.
+   Les options disponibles pour la modification du programme sont les mêmes que les options de création de programme.
 
    * Vous pouvez configurer si un niveau de publication est configuré pour de nouveaux environnements (Beta). Voir [Niveau de publication flexible (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
    * Voir [Créer des programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) et [Créer des programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) pour plus d’informations sur les différentes options.
@@ -76,7 +74,7 @@ Chaque fois qu’un programme est modifié, y compris par l’ajout ou la suppre
 ## Configuration de la fonction CMK dans Experience Hub {#configure-cmk-experience-hub}
 
 Une fois que la fonction CMK est activée pour un programme, Cloud Manager fournit un lien direct vers la page de configuration de la fonction CMK dans Experience Hub afin que vous puissiez configurer votre
-clés de chiffrement sans quitter votre programme.
+clés de chiffrement tout en restant dans votre programme.
 
 Une fois la fonction CMK configurée pour un environnement, la page Détails de l’environnement affiche un badge d’état **configuration de la fonction CMK**. Si la fonction CMK est activée pour le programme, mais n’a pas encore été configurée pour un environnement spécifique, le badge n’apparaît pas sur la page des détails de cet environnement.
 
@@ -108,10 +106,8 @@ Avant que la notation pour suppression ne soit lancée, le système valide si le
 
 **Pour marquer un programme de production pour suppression, procédez comme suit**
 
-1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com).
-1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
-1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
-1. Sélectionnez l’organisation appropriée.
+{{sign-in-to-cloud-manager}}
+
 1. Sur la page **Mes programmes**, pour le programme de production que vous souhaitez marquer comme devant être supprimé, cliquez sur ![icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), puis sur **Supprimer le programme**.
 
    ![Sélectionner Supprimer le programme dans la liste déroulante d’un programme de production &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*L’exemple de programme de production ci-dessus est fourni à titre d’illustration uniquement.*
@@ -144,7 +140,7 @@ Avant que la notation pour suppression ne soit lancée, le système valide si le
 
    Une fois la période de suppression terminée, le programme est définitivement supprimé et ne peut pas être restauré.
 
-### Annuler le marquage d’un programme de production pour suppression {#unmark-from-deletion}
+### Annuler la suppression d’un programme de production {#unmark-from-deletion}
 
 Vous pouvez restaurer un programme de production qui a été *marqué* pour suppression tant que la suppression définitive n’a pas encore eu lieu.
 
@@ -152,7 +148,7 @@ Vous pouvez restaurer un programme de production qui a été *marqué* pour supp
 >
 >La restauration d’un programme de production marqué pour suppression nécessite que le client dispose de crédits disponibles.
 
-**Pour annuler la suppression du marquage d’un programme de production, procédez comme suit**
+**Pour annuler la suppression d’un programme de production, procédez comme suit**
 
 1. Sur la page **Mes programmes**, recherchez la carte du programme de production qui affiche **Marqué pour suppression**.
 
@@ -160,7 +156,7 @@ Vous pouvez restaurer un programme de production qui a été *marqué* pour supp
 
    ![Annulation du marquage de la date de suppression définitive planifiée du programme de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-unmarkfordelete6.png)
 
-   Le programme de production n’est pas marqué pour suppression.
+   La suppression du programme de production est annulée.
 
 ## Suppression d’un programme Sandbox {#delete-sandbox-program}
 
@@ -168,15 +164,13 @@ La suppression d’un programme Sandbox supprime tous les environnements et les 
 
 >[!TIP]
 >
->Les utilisateurs avec des rôles de **Propriétaire de l’entreprise** ou **Responsable du déploiement** peuvent également supprimer leurs environnements de production et d’évaluation plutôt que l’ensemble du programme Sandbox.
+>Les utilisateurs avec des rôles **Propriétaire de l’entreprise** ou **Responsable du déploiement** peuvent supprimer leurs environnements de production et d’évaluation plutôt que l’ensemble du programme Sandbox.
 
 **Pour supprimer un programme Sandbox, procédez comme suit**
 
-1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com).
-1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
-1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
-1. Sélectionnez l’organisation appropriée.
-1. Sur la page **[Mes programmes](#my-programs)**, cliquez sur le programme Sandbox que vous souhaitez modifier pour en afficher les détails.
+{{sign-in-to-cloud-manager}}
+
+1. Sur la page **[Mes programmes](#my-programs)**, cliquez sur le programme Sandbox à supprimer pour en afficher les détails.
 
 1. Cliquez sur le nom de votre programme Sandbox dans le coin supérieur gauche de la page, puis sélectionnez **Supprimer le programme**.
 

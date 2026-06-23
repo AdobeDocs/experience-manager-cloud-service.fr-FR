@@ -5,16 +5,16 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 5467a311-727d-4f67-ba43-4b6548431061
-source-git-commit: 81b78ba9668d1c5530d2f6d6f443038549152aa3
+source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
 workflow-type: tm+mt
-source-wordcount: '1521'
-ht-degree: 12%
+source-wordcount: '1526'
+ht-degree: 11%
 
 ---
 
 # Évaluation de l’intégrité {#about-health-assessment}
 
-L’évaluation de l’intégrité est une analyse automatisée et non intrusive des environnements de production et d’évaluation dans Cloud Manager, au sein d’AEM as a Cloud Service. Il évalue le contenu, le code et les configurations afin de détecter les antimodèles et les écarts par rapport aux bonnes pratiques, ce qui améliore la sécurité et les performances.
+L’évaluation de l’intégrité est une analyse automatisée et non intrusive des environnements de production et d’évaluation dans Cloud Manager, au sein d’AEM as a Cloud Service. Il évalue le contenu, le code et les configurations afin d’identifier les antimodèles et les écarts par rapport aux bonnes pratiques, ce qui améliore la sécurité et les performances.
 
 Le service d’évaluation de l’intégrité effectue les opérations suivantes :
 
@@ -33,14 +33,14 @@ Consultez également la section [&#x200B; Modèles d’évaluation de l’intég
 
 1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com).
 1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
-1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
-1. Sélectionnez une organisation que vous souhaitez utiliser. L’image ci-dessous est fournie à titre d’illustration. Sélectionnez le nom de votre organisation.
+1. Dans le panneau de gauche, cliquez sur **&#x200B;**.
+1. Dans Cloud Manager, en haut à droite de la page, sélectionnez l’organisation que vous souhaitez utiliser. L’image ci-dessous est fournie à titre de référence uniquement. Sélectionnez votre organisation.
 
    ![Sélection d’une organisation dans Cloud Manager](/help/implementing/cloud-manager/reports/assets/ha-org.png)
 
-1. Sur la console **Mes programmes**, cliquez sur le programme pour lequel vous souhaitez afficher son rapport.
+1. Sur la console **Mes programmes**, cliquez sur le programme pour lequel vous souhaitez afficher le rapport.
 
-1. Effectuez l’une des opérations suivantes :
+1. Utilisez l’une des méthodes suivantes :
    * Dans la vignette **Environnements**, à droite du nom d’un environnement, cliquez sur ![icône représentant des points de suspension ou icône plus](https://spectrum.adobe.com/static/icons/ui_18/More.svg), puis choisissez **Évaluation de l’intégrité** dans le menu.
 
      ![Sélection de l’évaluation de l’intégrité dans le menu représentant des points de suspension de la carte Environnements](/help/implementing/cloud-manager/reports/assets/ha-myprograms-environments-card.png)
@@ -60,11 +60,11 @@ Consultez également la section [&#x200B; Modèles d’évaluation de l’intég
 
    ![Cliquez sur le bouton Générer un nouveau rapport sur la page Évaluation de l’intégrité](/help/implementing/cloud-manager/reports/assets/ha-run-report.png)
 
-   Tandis qu’un rapport s’exécute pour l’environnement sélectionné, la fonction **Exécuter le rapport** reste désactivée jusqu’à ce qu’elle se termine.
+   Tandis qu’un rapport s’exécute pour l’environnement sélectionné, l’option **Exécuter le rapport** reste désactivée jusqu’à ce qu’elle se termine.
 
    ![Rapport en cours d’exécution](/help/implementing/cloud-manager/reports/assets/ha-running-report.png)
 
-   Une fois le rapport terminé, il apparaît sur la page **Évaluation de l’intégrité**, dans la section **Dernier rapport**.
+   Une fois le rapport terminé, il apparaît dans la section **Dernier rapport** de la page **Évaluation de l’intégrité**.
 
 ## Afficher le dernier rapport {#view-latest-report}
 
@@ -90,7 +90,7 @@ Consultez également la section [&#x200B; Modèles d’évaluation de l’intég
 
      ![Description des événements et recherche](/help/implementing/cloud-manager/reports/assets/ha-issue-descriptions-and-findings.png)
 
-   * L’option **Télécharger** vous permet de télécharger des rapports d’événement individuels dans PDF.
+   * L’option **Télécharger** permet de télécharger des rapports d’événement individuels dans PDF.
 
      ![Télécharger le PDF des rapports d’événements individuels](/help/implementing/cloud-manager/reports/assets/ha-details-page-doc-links.png)
 
@@ -121,7 +121,7 @@ Sur la page **Évaluation de l’intégrité**, consultez la section **Rapports 
 
 ## Modèles d’évaluation de l’intégrité {#ha-patterns}
 
-Vous trouverez ci-dessous la liste complète des antimodèles et des problèmes détectés par l’évaluation de l’intégrité dans AEM as a Cloud Service. Le tableau regroupe les éléments en trois types : Analyse de contenu, Analyse de code et anti-modèles de l’optimiseur de Cloud Service, avec une explication pour chacun d’eux.
+Vous trouverez ci-dessous une liste complète des antimodèles et des problèmes détectés par l’évaluation de l’intégrité dans AEM as a Cloud Service. Le tableau regroupe les éléments en trois types : Analyse de contenu, Analyse de code et anti-modèles de l’optimiseur de Cloud Service, avec une explication pour chacun d’eux.
 
 | Nom du motif | Catégorie | Type | Description | Impact | Correction automatique ? |
 | --- | --- | --- | --- | --- | --- |

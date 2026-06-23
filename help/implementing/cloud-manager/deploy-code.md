@@ -5,9 +5,9 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: cca724e41edc333346dfead092048c7739a0ec95
+source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1203'
 ht-degree: 36%
 
 ---
@@ -38,7 +38,7 @@ Tous les déploiements de Cloud Service suivent un processus continu pour garant
 
 Une fois que vous avez [configuré votre pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) y compris le référentiel, l’environnement et l’environnement de test, vous êtes prêt à déployer votre code.
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
+{{sign-in-to-cloud-manager}}
 
 1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, cliquez sur le programme pour lequel vous souhaitez déployer du code.
 

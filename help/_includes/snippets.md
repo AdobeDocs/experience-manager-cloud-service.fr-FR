@@ -1,8 +1,8 @@
 ---
-source-git-commit: 73befe46aa362b0d6ef8530fbf3bb222c262d626
+source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
 workflow-type: tm+mt
-source-wordcount: '1719'
-ht-degree: 93%
+source-wordcount: '1721'
+ht-degree: 92%
 
 ---
 # Fragments de code {#snippets}
@@ -231,8 +231,8 @@ Pour enregistrer un ticket d’assistance, vous devez d’abord enregistrer votr
 
 1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com).
    1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
-   1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
-1. Dans Cloud Manager, en haut à droite de la page, sélectionnez l’organisation de votre choix.
+   1. Dans le panneau de gauche, cliquez sur **&#x200B;**.
+1. Dans Cloud Manager, en haut à droite de la page, sélectionnez l’organisation que vous souhaitez utiliser.
 
 
 ## L’éditeur universel est préférable à l’éditeur SPA {#ue-over-spa}
