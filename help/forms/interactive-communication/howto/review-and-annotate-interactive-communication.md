@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: review-annotate-interactive-communication
-source-git-commit: efdfec8f3ce63a2931a78eeb4be3820e22b13a8d
+source-git-commit: b817bcb02c4ff6ac369973ef658d9fcbdce95c51
 workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 2%
@@ -126,3 +126,4 @@ Une annotation est une épingle positionnée liée à un composant spécifique s
 - [Créer une communication interactive](/help/forms/interactive-communication/create-interactive-communication.md)
 - [Verrouillage de modèle dans l’éditeur de communication interactive](/help/forms/interactive-communication/enable-template-lock.md)
 - [Contrôle de version et commentaires dans l’éditeur de communication interactive](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
+
