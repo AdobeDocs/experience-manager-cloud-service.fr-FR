@@ -4,7 +4,7 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 056af9d44bcc00e5f73828cd20f8d0eb19b57aa8
+source-git-commit: a876efeed0e078fa0f8f8718484bd3f069a71cb5
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 40%
@@ -24,7 +24,7 @@ L’activation de la fonctionnalité 2026.6.0 fournit l’ensemble des fonctionn
 
 >[!NOTE]
 >
->La version 26773 a été rendue privée.
+>La version 26635 a été rendue privée.
 
 ### Améliorations {#enhancements-26773}
 
