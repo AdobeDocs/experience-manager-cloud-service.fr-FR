@@ -77,7 +77,7 @@ Idéal pour les relevés, factures ou avis dont la structure reste constante, ma
 1. Renseignez d’autres détails tels que le titre, le nom, l’auteur, etc.
 1. Utilisez le **modèle de données** à l’intérieur de l’éditeur pour lier les champs aux données dynamiques (par exemple, nom du client, solde, numéro de compte).
 1. Utilisez les **zones de contenu** sous-formulaires et **fragments** pour structurer et répéter les données si nécessaire.
-1. Prévisualisez à l’aide de la prévisualisation **** et finalisez la communication pour la diffusion.
+1. Prévisualisez à l’aide de la prévisualisation **&#x200B;**&#x200B;et finalisez la communication pour la diffusion.
 1. Cela ouvre l’éditeur d’IC, où vous pouvez commencer à concevoir votre communication.
 
 ![Rechercher un document IC](/help/forms/interactive-communication/assets/ic-ui.png)
@@ -95,4 +95,4 @@ Commencez à créer des communications interactives pour rationaliser vos workfl
 * [Vérifier et annoter une communication interactive](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md) — Collaborez avec les réviseurs en utilisant des épingles d’annotation positionnées sur la zone de travail IC.
 * [Comparer les versions de la communication interactive](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md) — Examiner les différences de disposition et de contenu entre deux versions côte à côte.
 * [Fusionner et fractionner des cellules de tableau](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md) — Créez des dispositions de tableau flexibles en fusionnant ou en fractionnant des cellules.
-* [Déplacer un composant vers la page de Principal ](/help/forms/interactive-communication/howto/move-component-to-master-page.md) — Assurer un placement cohérent des composants sur plusieurs pages.
+* [Déplacer un composant vers la page de Principal &#x200B;](/help/forms/interactive-communication/howto/move-component-to-master-page.md) — Assurer un placement cohérent des composants sur plusieurs pages.

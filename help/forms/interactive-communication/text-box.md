@@ -20,7 +20,7 @@ ht-degree: 4%
 
 Le composant **Zone de texte** de l’éditeur de communication interactive permet aux auteurs de saisir et d’afficher du contenu textuel dans une communication. Il s’agit de l’un des composants les plus fondamentaux et les plus utilisés, généralement utilisé pour collecter des noms, des commentaires, des commentaires ou des données personnalisées lors de la conception de communications interactives ou de fragments de communication.
 
-La zone de texte prend en charge la **liaison de données**, ce qui permet aux auteurs de combiner facilement du contenu statique et dynamique, par exemple : ***« Nom de l’utilisateur : @name« ***, où @name est un champ de données lié qui est renseigné dynamiquement lorsque le document est enregistré en tant que PDF. En outre, il prend en charge la mise en forme de texte enrichi et un positionnement flexible pour un contrôle de disposition précis.
+La zone de texte prend en charge la **liaison de données**, ce qui permet aux auteurs de combiner facilement du contenu statique et dynamique, par exemple : ***« Nom de l’utilisateur : @name« &#x200B;***, où @name est un champ de données lié qui est renseigné dynamiquement lorsque le document est enregistré en tant que PDF. En outre, il prend en charge la mise en forme de texte enrichi et un positionnement flexible pour un contrôle de disposition précis.
 
 ![Rechercher document IC](/help/forms/interactive-communication/assets/textbox.png)
 

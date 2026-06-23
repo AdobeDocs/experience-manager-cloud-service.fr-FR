@@ -37,9 +37,9 @@ Un cas d’utilisation courant consiste à déplacer des éléments d’en-tête
 
    Par exemple, cliquez avec le bouton droit de la souris sur le bloc de texte adresse de la banque.
 
-1. Dans le menu contextuel, sélectionnez **Déplacer vers**, puis choisissez la page de Principal ****.
+1. Dans le menu contextuel, sélectionnez **Déplacer vers**, puis choisissez la page de Principal **&#x200B;**.
 
-   ![Déplacer vers le gabarit de page ](/help/forms/interactive-communication/assets/move-to-master-page.png)
+   ![Déplacer vers le gabarit de page &#x200B;](/help/forms/interactive-communication/assets/move-to-master-page.png)
 
    Le composant est supprimé de la page de conception et ajouté au gabarit de page à la même position visuelle. Il apparaît désormais sur chaque page qui utilise ce gabarit.
 
@@ -49,7 +49,7 @@ Un cas d’utilisation courant consiste à déplacer des éléments d’en-tête
 
 1. Sélectionnez l&#39;onglet **Principal** pour vérifier que le logo et l&#39;adresse de la banque apparaissent dans les positions prévues.
 
-   ![Déplacer vers le gabarit de page ](/help/forms/interactive-communication/assets/move-to-master-page2.png)
+   ![Déplacer vers le gabarit de page &#x200B;](/help/forms/interactive-communication/assets/move-to-master-page2.png)
 
 ## Composants éligibles
 

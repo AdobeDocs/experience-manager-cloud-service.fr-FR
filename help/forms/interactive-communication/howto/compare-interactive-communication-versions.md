@@ -31,7 +31,7 @@ Lorsqu’une communication interactive subit plusieurs cycles de modification, i
 
 Assurez-vous d’avoir enregistré au moins une version de la communication interactive que vous souhaitez comparer à la conception actuelle.
 
-Pour créer une version, ouvrez **Forms et documents**, sélectionnez la communication interactive, ouvrez le panneau **Chronologie** dans le rail gauche, puis cliquez sur **Enregistrer comme version**. Consultez [ Contrôle de version et commentaires dans l’éditeur de communication interactive ](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md) pour obtenir des instructions détaillées.
+Pour créer une version, ouvrez **Forms et documents**, sélectionnez la communication interactive, ouvrez le panneau **Chronologie** dans le rail gauche, puis cliquez sur **Enregistrer comme version**. Consultez [&#x200B; Contrôle de version et commentaires dans l’éditeur de communication interactive &#x200B;](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md) pour obtenir des instructions détaillées.
 
 Après avoir enregistré la version, mettez à jour la communication interactive dans l’éditeur afin que la conception actuelle diffère de la version enregistrée. Vous avez besoin d’une version enregistrée et d’un état actuel modifié avant de pouvoir les comparer.
 
@@ -45,7 +45,7 @@ Par exemple, après avoir enregistré la **communication interactive bancaire ve
 - Mettez à jour les détails du prêt, tels que le numéro de référence de la demande, le montant du prêt approuvé, la durée du prêt et la date de début des mensualités
 - Mettez à jour la valeur **Marque et modèle** et le nom du concessionnaire dans le tableau Détails du véhicule
 
-![ Communication interactive mise à jour ](/help/forms/interactive-communication/assets/compare-ic1.png)
+![&#x200B; Communication interactive mise à jour &#x200B;](/help/forms/interactive-communication/assets/compare-ic1.png)
 
 Cliquez sur **Enregistrer** lorsque vous avez terminé la modification. La conception actuelle est maintenant prête à être comparée à la version enregistrée.
 
