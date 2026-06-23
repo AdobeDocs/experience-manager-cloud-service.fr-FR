@@ -1,5 +1,5 @@
 ---
-source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
+source-git-commit: 73befe46aa362b0d6ef8530fbf3bb222c262d626
 workflow-type: tm+mt
 source-wordcount: '1719'
 ht-degree: 93%
@@ -227,6 +227,14 @@ Pour enregistrer un ticket d’assistance, vous devez d’abord enregistrer votr
    * URL du site web actif. Par exemple : `www.mydomain.com`.
    * URL du site web d’origine (URL `.hlx`).
 
+## Connexion à Cloud Manager {#sign-in-to-cloud-manager}
+
+1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com).
+   1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
+   1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
+1. Dans Cloud Manager, en haut à droite de la page, sélectionnez l’organisation de votre choix.
+
+
 ## L’éditeur universel est préférable à l’éditeur SPA {#ue-over-spa}
 
 >[!IMPORTANT]
@@ -287,12 +295,4 @@ Pour accélérer la création des sites, Adobe fournit un certain nombre de mod�
 * [Site AEM avec Edge Delivery Services](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) - Pour la création de pages AEM avec l’éditeur universel et une [diffusion Edge](/help/edge/overview.md)
 * [Edge Delivery Services avec création AEM pour Commerce](https://github.com/adobe-rnd/aem-boilerplate-xcom/releases) - Pour la création de pages AEM avec l’éditeur universel pour les projets Commerce et une [diffusion Edge](/help/edge/overview.md)
 * [Modèle de site AEM standard](https://github.com/adobe/aem-site-template-standard/releases) - Pour la création de pages AEM traditionnelles et une [diffusion via l’instance de publication](/help/sites-cloud/authoring/author-publish.md)
-
-
-## Connexion à Cloud Manager {#sign-in-to-cloud-manager}
-
-1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com).
-   1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
-   1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
-1. Dans Cloud Manager, en haut à droite de la page, sélectionnez l’organisation de votre choix.
 
