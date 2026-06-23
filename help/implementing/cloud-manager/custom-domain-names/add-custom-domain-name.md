@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
+source-git-commit: 1b7357b7f3fb99937857e5a7716baedd8124b549
 workflow-type: tm+mt
-source-wordcount: '1142'
-ht-degree: 16%
+source-wordcount: '1130'
+ht-degree: 15%
 
 ---
 
@@ -23,7 +23,7 @@ Remplissez ces conditions avant d’ajouter un nom de domaine personnalisé dans
 
 * Vous devez avoir ajouté un certificat de domaine SSL pour le domaine que vous souhaitez ajouter *avant* d’ajouter un nom de domaine personnalisé, comme décrit dans le document [Ajouter un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 * Vous devez disposer du rôle **Propriétaire de l’entreprise** ou **Responsable de déploiement** pour ajouter un nom de domaine personnalisé dans Cloud Manager.
-* Utilisez Fastly ou un autre réseau de diffusion de contenu (CDN).
+* Utilisez Fastly ou un autre réseau CDN (réseau de diffusion de contenu).
 
 >[!IMPORTANT]
 >
@@ -39,7 +39,7 @@ Les étapes de chacune des méthodes décrites dans cet article sont basées sur
 
 ## Ajouter un nom de domaine personnalisé {#adding-custom-domain-name-settings}
 
-Voir aussi [Réseau CDN géré par &#x200B;](https://www.aem.live/docs/byo-cdn-adobe-managed) pour *Edge Delivery Services*.
+Voir aussi [Réseau CDN géré par ](https://www.aem.live/docs/byo-cdn-adobe-managed) pour *Edge Delivery Services*.
 
 **Pour ajouter un nom de domaine personnalisé, procédez comme suit**
 
@@ -75,8 +75,8 @@ Lors de la saisie du nom de domaine, n’incluez pas de `http://`, de `https://`
 1. Dans la boîte de dialogue **Vérifier le domaine**, en fonction du type de certificat que vous avez sélectionné, effectuez l’une des opérations suivantes :
 
    | Si vous avez sélectionné le type de certificat | Description |
-   | --- | ---  |
-   | Certificat géré par Adobe | a. Suivez les [étapes de certificat géré par &#x200B;](#adobe-managed-cert-steps) ci-dessous. Une fois les étapes terminées, dans la boîte de dialogue **Vérifier le domaine**, cliquez sur **Vérifier**.<ul><li>La vérification DNS peut prendre quelques heures en raison des délais de propagation du DNS.</li><li>Cloud Manager vérifie finalement la propriété du nom de domaine et met à jour le statut dans le tableau **Paramètres du domaine**. Voir [Vérification du statut du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour plus d’informations.</li>![Vérification du statut du domaine](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>b. Vous êtes maintenant prêt à [ajouter un certificat SSL géré par Adobe (DV)](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-adobe-managed-ssl-cert).</li></ul> |
+   | --- | --- |
+   | Certificat géré par Adobe | a. Suivez les [étapes de certificat géré par ](#adobe-managed-cert-steps) ci-dessous. Une fois les étapes terminées, dans la boîte de dialogue **Vérifier le domaine**, cliquez sur **Vérifier**.<ul><li>La vérification DNS peut prendre quelques heures en raison des délais de propagation du DNS.</li><li>Cloud Manager vérifie finalement la propriété du nom de domaine et met à jour le statut dans le tableau **Paramètres du domaine**. Voir [Vérification du statut du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour plus d’informations.</li>![Vérification du statut du domaine](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>b. Vous êtes maintenant prêt à [ajouter un certificat SSL géré par Adobe (DV)](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-adobe-managed-ssl-cert).</li></ul> |
    | Certificat géré par le client ou la cliente | a. Cliquez sur **OK**.<br>b. Vous êtes maintenant prêt à [ajouter un certificat SSL géré par le client (OV/EV)](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-customer-managed-ssl-cert).<br>Après avoir ajouté le certificat, votre nom de domaine est marqué comme vérifié dans le tableau **Paramètres du domaine**. Voir [Vérification du statut du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour plus d’informations.</li></ul><br>![Vérification du domaine pour un certificat EV/OV géré par un client ou une cliente](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png) |
 
    >[!NOTE]
@@ -88,11 +88,11 @@ Lors de la saisie du nom de domaine, n’incluez pas de `http://`, de `https://`
 
 Si vous avez sélectionné le type de certificat *certificat géré par*, effectuez l’étape suivante dans la boîte de dialogue **Vérifier le domaine**.
 
-![étapes de certificat géré par &#x200B;](/help/implementing/cloud-manager/assets/cdn/cdn-create-adobe-dv-cert.png)
+![étapes de certificat géré par ](/help/implementing/cloud-manager/assets/cdn/cdn-create-adobe-dv-cert.png)
 
 Pour vérifier le domaine utilisé, vous devez ajouter et vérifier un CNAME.
 
-Un type d’enregistrement `CNAME` ou `A`, une fois configuré, achemine tout le trafic Internet pour le domaine vers l’endroit où il pointe. Si cet emplacement n’est pas configuré pour desservir le trafic, il y a une panne. S’il n’a pas été testé, il se peut que le contenu présente des erreurs. C’est pourquoi cette étape est toujours effectuée une fois le test terminé et que vous êtes prêt à passer en ligne.
+Un type d’enregistrement `CNAME` ou `A`, une fois configuré, achemine tout le trafic Internet pour le domaine vers l’endroit où il pointe. Si cet emplacement n’est pas configuré pour desservir le trafic, il y a une panne. S’il n’a pas été testé, des erreurs dans le contenu peuvent se produire. C’est pourquoi cette étape est toujours effectuée une fois le test terminé et que vous êtes prêt à passer en ligne.
 
 Pour configurer ces paramètres, déterminez si un enregistrement `CNAME` ou apex doit être configuré pour pointer votre nom de domaine personnalisé vers le nom de domaine Cloud Manager. Les sections suivantes de ce document peuvent vous aider à déterminer le type d’enregistrement approprié à votre configuration DNS.
 
@@ -119,7 +119,7 @@ Un enregistrement de nom canonique ou CNAME est un type d’enregistrement DNS q
 
 Connectez-vous à votre fournisseur de services DNS et créez un enregistrement `CNAME` pour pointer votre nom de domaine personnalisé vers la cible, comme dans le tableau suivant.
 
-| CNAME | Point d’entrée du domaine personnalisé vers la cible |
+| CNAME | Le nom de domaine personnalisé pointe vers la cible |
 | --- | --- |
 | `www.customdomain.com` | `cdn.adobeaemcloud.com` |
 

@@ -5,10 +5,10 @@ exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 1b7357b7f3fb99937857e5a7716baedd8124b549
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 25%
+ht-degree: 21%
 
 ---
 
@@ -37,9 +37,9 @@ Vous devez avoir déjà configuré les paramètres DNS de votre nom de domaine p
 
 1. Cliquez sur le bouton **Statut** pour le nom de domaine.
 
-Cloud Manager effectue une recherche DNS pour votre nom de domaine et l’affiche [statut actuel](#statuses).
+Cloud Manager effectue une recherche DNS pour votre nom de domaine et affiche son [statut actuel](#statuses).
 
-Cloud Manager déclenche automatiquement une recherche DNS lorsque votre nom de domaine personnalisé est vérifié et déployé avec succès pour la première fois. Pour les tentatives suivantes, vous devez sélectionner vous-même l’icône **Résoudre à nouveau** en face du statut.
+Cloud Manager déclenche automatiquement une recherche DNS lorsque votre nom de domaine personnalisé est vérifié et déployé avec succès pour la première fois. Pour les tentatives suivantes, vous devez sélectionner l’icône **Résoudre à nouveau** en regard du statut.
 
 ## Statuts DNS dans Cloud Manager {#statuses}
 

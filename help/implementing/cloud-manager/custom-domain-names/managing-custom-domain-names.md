@@ -5,10 +5,10 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 1b7357b7f3fb99937857e5a7716baedd8124b549
 workflow-type: tm+mt
-source-wordcount: '833'
-ht-degree: 21%
+source-wordcount: '867'
+ht-degree: 23%
 
 ---
 
@@ -19,7 +19,7 @@ Cloud Manager vous permet de modifier, mettre à jour, remplacer, vérifier et s
 
 ## Modification d’une configuration de nom de domaine personnalisé {#view-and-update}
 
-Dans Adobe Cloud Manager, vous pouvez modifier une configuration de nom de domaine personnalisé pour les raisons suivantes :
+Dans Adobe Cloud Manager, vous pouvez modifier une configuration de nom de domaine personnalisée pour les raisons suivantes :
 
 * **Changement d’environnements** : pour appliquer la configuration appropriée selon que vous diffusez du contenu aux utilisateurs finaux (publication) ou aux utilisateurs internes (création).
 * **Mises à jour de sécurité** : mise à niveau vers un certificat SSL plus récent à des fins de sécurité renforcée ou de conformité.
@@ -31,7 +31,7 @@ Dans Adobe Cloud Manager, vous pouvez modifier une configuration de nom de domai
 
 1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme.
 
-1. Dans le coin supérieur gauche de la page, cliquez sur ![Icône Afficher le menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) pour afficher le menu de gauche.
+1. Dans le coin supérieur gauche de la page, cliquez sur ![Icône Afficher le menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) pour ouvrir le menu de gauche.
 
 1. Sous l’en-tête **Services**, cliquez sur ![Icône de réseau social](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Mappages de domaine**.
 
@@ -49,7 +49,7 @@ Dans Adobe Cloud Manager, vous pouvez modifier une configuration de nom de domai
 
 ## Mettre à jour le certificat SSL d’un nom de domaine personnalisé {#update-cert}
 
-Suivez les mêmes étapes ci-dessus pour mettre à jour le certificat SSL d’un nom de domaine personnalisé.
+Pour mettre à jour le certificat SSL d’un nom de domaine personnalisé, procédez comme suit.
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ Voir aussi [Ajouter un nom de domaine personnalisé](/help/implementing/cloud-ma
 
 1. Dans le menu déroulant, cliquez sur **Vérifier**.
 
-1. Dans la boîte de dialogue **Vérifier le domaine**, dans la zone **Quel type de certificat prévoyez-vous d’utiliser avec ce domaine ?** la liste déroulante, sélectionnez l’une des options suivantes :
+1. Dans la boîte de dialogue **Vérifier le domaine**, dans la **Quel type de certificat prévoyez-vous d’utiliser avec ce domaine ?** dans la liste déroulante, sélectionnez l’une des options suivantes :
 
    | Option de type de certificat | Description |
    | --- | --- |
@@ -81,7 +81,7 @@ Voir aussi [Ajouter un nom de domaine personnalisé](/help/implementing/cloud-ma
 
    | Si vous avez sélectionné le type de certificat | Description |
    | --- | ---  |
-   | Certificat géré par Adobe | a. Effectuez les [étapes de certificat géré par Adobe](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-steps). Lorsque vous avez terminé les étapes de la boîte de dialogue **Vérifier le domaine**, cliquez sur **Vérifier**.<ul><li>La vérification DNS peut prendre quelques heures en raison des délais de propagation du DNS.</li><li>Cloud Manager vérifie finalement la propriété du nom de domaine et met à jour le statut dans le tableau **Paramètres du domaine**. Voir [Vérification du statut du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour plus d’informations.</li>![Vérification du statut du domaine](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>b. Vous êtes maintenant prêt à [ajouter un certificat SSL géré par Adobe (DV)](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-adobe-managed-ssl-cert).</li></ul> |
+   | Certificat géré par Adobe | a. Effectuez les [étapes de certificat géré par ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-steps). Lorsque vous avez terminé les étapes de la boîte de dialogue **Vérifier le domaine**, cliquez sur **Vérifier**.<ul><li>La vérification DNS peut prendre quelques heures en raison des délais de propagation du DNS.</li><li>Cloud Manager vérifie finalement la propriété du nom de domaine et met à jour le statut dans le tableau **Paramètres du domaine**. Voir [Vérification du statut du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour plus d’informations.</li>![Vérification du statut du domaine](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>b. Vous êtes maintenant prêt à [ajouter un certificat SSL géré par Adobe (DV)](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-adobe-managed-ssl-cert).</li></ul> |
    | Certificat géré par le client ou la cliente | a. Cliquez sur **OK**.<br>b. Vous êtes maintenant prêt à [ajouter un certificat SSL géré par le client (OV/EV)](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-customer-managed-ssl-cert).<br>Après avoir ajouté le certificat, votre nom de domaine est marqué comme vérifié dans le tableau **Paramètres du domaine**. Voir [Vérification du statut du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour plus d’informations.</li></ul><br>![Vérification du domaine pour un certificat EV/OV géré par un client ou une cliente](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png) |
 
 
@@ -108,15 +108,15 @@ Un utilisateur avec le rôle **Propriétaire de l’entreprise** ou **Responsabl
 
 >[!WARNING]
 >
->Supprimez les enregistrements DNS du domaine auprès de votre fournisseur DNS *avant* de supprimer le domaine dans Cloud Manager. Les entrées DNS abandonnées (non exploitées) peuvent être piratées et poser un risque pour la sécurité.
+>Supprimez les enregistrements DNS du domaine auprès de votre fournisseur DNS *avant* de supprimer le domaine dans Cloud Manager. Les entrées DNS inutilisées peuvent être compromises et poser un risque de sécurité.
 
 **Pour supprimer un nom de domaine personnalisé d’un environnement spécifique, procédez comme suit**
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
-1. Accédez à l’écran **Environnements** à partir de la page **Aperçu**.
+1. Accédez à l’écran **Environnements** à partir de la page **Vue d’ensemble**.
 
-1. Sur la page **Environnements**, accédez à l’écran des détails de l’environnement qui vous intéresse.
+1. Sur la page **Environnements**, accédez à l’écran des détails de l’environnement sélectionné.
 
 1. Dans le tableau Mappages de domaine , identifiez la ligne du nom de domaine personnalisé que vous souhaitez supprimer.
 
