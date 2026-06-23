@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 247dcd95-9429-4fe9-88fc-c02b93b2f7e0
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 5%
+source-wordcount: '368'
+ht-degree: 4%
 
 ---
 
 # Composant Image dans l’éditeur de communication interactive
 
->[!NOTE]
->
-> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 ## &#x200B;1. Présentation
 
@@ -31,7 +28,7 @@ Le composant d’image fournit plusieurs propriétés pour aider à configurer s
 
 2.1. Description de l’image
 
-Nom :
+Nom :
 Agit comme un identifiant unique pour le composant d’image, ce qui permet une référence facile dans la hiérarchie de composant ou l’éditeur de règles.
 
 Sélectionner une image : permet à l’auteur de charger ou de référencer une image, telle qu’un logo, une icône ou tout autre élément visuel statique provenant de plusieurs sources.
@@ -59,7 +56,7 @@ Définissez l’espacement autour de la zone de texte :
 
 - Droite
 
-2.4. Apparence
+2.4. Aspect
 
 Aspect : définit le style visuel du champ d’image, choisit des paramètres prédéfinis tels que bordé, aplati ou élevé et personnalise avec la couleur de remplissage, la largeur de trait et le style d’angle (arrondi ou aigu).
 
@@ -94,3 +91,9 @@ Le composant Image est idéal pour les éléments suivants :
 - Définissez l’image à afficher ou à masquer de manière conditionnelle si elle n’est pas toujours nécessaire.
 
 Le composant Image de la communication interactive d’AEM joue un rôle essentiel dans la création de communications de marque, personnalisées et visuellement efficaces. Grâce à ses propriétés configurables, il améliore l’expérience utilisateur tout en maintenant la cohérence de la conception sur différents formats.
+
+## Voir également
+
+- [Composant de champ d’image](/help/forms/interactive-communication/image-field.md)
+- [Composant Rectangle](/help/forms/interactive-communication/rectangle.md)
+- [Composant Line](/help/forms/interactive-communication/line.md)

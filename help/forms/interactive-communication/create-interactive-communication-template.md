@@ -6,19 +6,16 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 926fd6af-aea1-40be-9d38-8f1ea0900132
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 7%
+source-wordcount: '270'
+ht-degree: 5%
 
 ---
 
 
 # Créer un modèle de communication interactive
 
->[!NOTE]
->
-> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 Les modèles de communication interactive d’AEM permettent aux utilisateurs de définir des structures de disposition réutilisables telles que les en-têtes, les pieds de page, les logos et le style par défaut. Ces modèles servent de base pour créer des communications cohérentes, de marque et efficaces.
 
@@ -26,7 +23,7 @@ Les modèles de communication interactive d’AEM permettent aux utilisateurs de
 
 * [Assurez-vous que l’auteur est membre des groupes forms-users et template-authors .](/help/forms/setup-forms-cloud-service.md#configure-users)
 
-* Assurez-vous que la version 55[&#x200B; ou ultérieure de l’archétype AEM &#x200B;](https://github.com/adobe/aem-project-archetype) est installée.
+* Assurez-vous que la version 55](https://github.com/adobe/aem-project-archetype) ou ultérieure de l’archétype AEM [ est installée.
 
 ## Créer un modèle de communication interactive
 

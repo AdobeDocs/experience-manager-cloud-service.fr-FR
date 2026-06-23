@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 7ac93d8c-5454-4789-a7cd-438571a9ff28
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 3%
+source-wordcount: '865'
+ht-degree: 5%
 
 ---
 
 # Composant de champ Date/heure dans l’éditeur de communication interactive
 
->[!NOTE]
->
-> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 ## &#x200B;1. Présentation
 
@@ -27,11 +24,43 @@ Le champ prend en charge diverses options de formatage (par exemple, JJ/MM/AAAA,
 
 ![Rechercher un document IC](/help/forms/interactive-communication/assets/datetime.png)
 
-## &#x200B;2. Propriétés
+## &#x200B;2. Afficher le modèle
+
+Vous pouvez affecter un **modèle d’affichage** à un champ Date/Heure à partir du panneau **Propriétés** par exemple : **04/01/2007 2:30 PM**.
+
+Le modèle configuré est immédiatement répercuté dans l’aperçu de la zone de travail et est conservé pendant les cycles d’enregistrement et de rechargement. Pour les cas d’utilisation avancés, vous pouvez définir une **clause d’image XFA personnalisée** afin d’obtenir le format de sortie souhaité.
+
+### Configuration d’un modèle d’affichage
+
+1. Sélectionnez le composant Champ de date et d’heure sur la zone de travail de conception.
+2. Ouvrez le panneau **Propriétés**.
+3. Dans la section **Motif d’affichage**, choisissez un motif prédéfini ou saisissez une clause d’image personnalisée.
+4. Prévisualisez la valeur formatée sur la zone de travail.
+
+### Exemple de modèle personnalisé (date/heure)
+
+| Modèle | Exemple de sortie | Description |
+|---------|----------------|-------------|
+| `date{MM/DD/YYYY} time{HH:MM}` | 04/01/2007 14:30 | Date et heure combinées |
+
+**Jetons d’heure courants :**
+
+| Jeton | Signification |
+|-------|---------|
+| HH | 24 heures |
+| h | 12 heures |
+| MM | Minutes |
+| A | AM/PM |
+
+>[!NOTE]
+>
+> Les valeurs de date et d’heure sous-jacentes doivent être conformes à la norme **ISO 8601** au format **AAAA-MM-JJTHH:MM** (par exemple, `2007-04-01T14:30`). Les valeurs qui ne respectent pas ce format sont affichées en l’état, sans formatage de modèle appliqué.
+
+## &#x200B;3. Propriétés
 
 Le composant Champ de date et d’heure comprend plusieurs propriétés configurables :
 
-2.1. Champ De Base
+2.1. Champ de base
 
 - **Nom :** identifiant unique du champ. Utilisé pour le référencement dans les règles, expressions et liaisons de données.
 
@@ -75,7 +104,7 @@ Définit l’espacement autour du champ pour un alignement épuré et une meille
 
 - Droite
 
-2.5. Apparence
+2.5. Aspect
 
 Définit le style du conteneur pour maintenir la cohérence et la clarté visuelles :
 
@@ -97,7 +126,7 @@ Détermine le comportement du champ au moment de l’exécution :
 
 - **Caché (laisse de l’espace) :** le champ n’est pas visible, mais de l’espace lui est toujours réservé dans la mise en page.
 
-2.7. Liaison De Données
+2.7. Liaison de données
 
 Associe le champ à une source de données pour stocker ou récupérer des valeurs.
 
@@ -109,7 +138,7 @@ Associe le champ à une source de données pour stocker ou récupérer des valeu
 
 - **Aucune liaison de données :** champ n’est connecté à aucune donnée d’arrière-plan (utilisé pour les valeurs visuelles uniquement ou calculées).
 
-## &#x200B;3. Utilisation
+## &#x200B;4. Utilisation
 
 Le champ Date/Heure est idéal dans les scénarios où des données temporelles cohérentes sont requises. Cas d’utilisation courants :
 
@@ -123,7 +152,7 @@ Le champ Date/Heure est idéal dans les scénarios où des données temporelles 
 
 Les auteurs peuvent combiner le champ avec des conteneurs de disposition, des validations ou des règles conditionnelles pour contrôler le format, les champs obligatoires et la visibilité contextuelle.
 
-## &#x200B;4. Bonnes Pratiques
+## &#x200B;5. Bonnes pratiques
 
 - Utilisez des légendes claires telles que « Sélectionner une date » ou « Heure du rendez-vous » pour guider les utilisateurs.
 
@@ -138,3 +167,12 @@ Les auteurs peuvent combiner le champ avec des conteneurs de disposition, des va
 - Liez le champ à un chemin de schéma valide pour garantir une capture et un traitement corrects des données.
 
 Le composant Champ de date et d’heure de l’éditeur de communication interactive est un composant puissant et convivial qui simplifie les entrées temporelles. Avec la configuration appropriée de style, de gestion des données et de contrôles de mise en page, il offre des expériences de formulaire claires, fiables et intuitives pour les utilisateurs et les systèmes principaux.
+
+## Voir également
+
+- [Composant de zone de texte](/help/forms/interactive-communication/text-box.md)
+- [Composant de champ numérique](/help/forms/interactive-communication/numeric-field.md)
+- [Composant de champ de date](/help/forms/interactive-communication/date-field.md)
+- [Composant de variable non lié](/help/forms/interactive-communication/unbound-variable.md)
+- [Configurer la liaison de données dans l’éditeur de communication interactive](/help/forms/interactive-communication/configure-data-binding.md)
+- [Utiliser l’éditeur de règles dans l’éditeur de communication interactive](/help/forms/interactive-communication/use-the-rule-editor.md)

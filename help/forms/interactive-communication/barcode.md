@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: b44cc569-00a1-4a66-ae25-3d672cf5fc12
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '706'
 ht-degree: 2%
 
 ---
 
 # Composant Code à barres dans l’éditeur de communication interactive
 
->[!NOTE]
->
-> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 ## &#x200B;1. Présentation
 
@@ -141,7 +138,7 @@ Le composant Code à barres est particulièrement utile pour automatiser les pro
 
 Les auteurs peuvent incorporer le code à barres dans des conteneurs de mises en page et le mettre en forme en fonction de la marque ou du thème du document.
 
-## &#x200B;4. Bonnes Pratiques
+## &#x200B;4. Bonnes pratiques
 
 - Utilisez un type de code-barres approprié au cas d’utilisation, par exemple, Code QR pour les URL, Code 128 pour les identifiants alphanumériques.
 
@@ -154,3 +151,8 @@ Les auteurs peuvent incorporer le code à barres dans des conteneurs de mises en
 - Conservez des marges adéquates pour empêcher l&#39;écrêtage lors de l&#39;impression.
 
 Le composant Code à barres de l’éditeur de communication interactive permet aux créateurs et aux créatrices de documents de combler le fossé entre les systèmes numériques et physiques. Lorsqu’elle est mise en œuvre efficacement, elle améliore l’automatisation, la commodité pour les utilisateurs et prend en charge une intégration transparente avec les appareils et les workflows d’analyse.
+
+## Voir également
+
+- [Configurer la liaison de données dans l’éditeur de communication interactive](/help/forms/interactive-communication/configure-data-binding.md)
+- [Générer un aperçu PDF dans l’éditeur de communication interactive](/help/forms/interactive-communication/generate-pdf-preview.md)

@@ -8,18 +8,15 @@ hide: true
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 127abe2a-d8cf-4488-959f-f7316a8ddc3e
-source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 3%
+source-wordcount: '372'
+ht-degree: 1%
 
 ---
 
 # Copier et coller dans l’éditeur de communication interactive
 
->[!NOTE]
->
-> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 La fonctionnalité Copier et coller de l’éditeur de communication interactive (IC) permet aux auteurs de dupliquer une communication interactive existante et de la réutiliser dans un autre dossier ou emplacement. Cette fonctionnalité permet aux équipes de travailler efficacement en activant plusieurs variantes d’un CI sans modifier la version d’origine.
 

@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 9f29da7d-72ad-4737-9ae3-d5cdc4f5ed25
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 4%
+source-wordcount: '350'
+ht-degree: 1%
 
 ---
 
 # Numérotation dynamique de page dans l’éditeur de communication interactive
 
->[!NOTE]
->
-> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 ## Présentation
 
@@ -44,7 +41,7 @@ Les numéros de page s’affichent uniquement lors de l’aperçu PDF et affiche
 
 ## Fonctionnalités essentielles
 
-- Configuration De La Page De Principal **&#x200B;**
+- Configuration de la page de Principal **:**
 La numérotation de page peut être activée au niveau du gabarit de page. Le composant peut être placé n’importe où sur la zone de travail après avoir été déposé et personnalisé librement, car il prend en charge toutes les propriétés disponibles dans le composant de texte.
 
 - **Emplacement automatique :**
@@ -55,7 +52,7 @@ Un composant de numérotation de page s’affiche au centre inférieur de chaque
 
    - Le deuxième **##** représente le nombre total de pages dans la communication.
 
-- **Affichage dynamique dans l’aperçu PDF :**
+- **Affichage dynamique sur l’aperçu PDF :**
 Les numéros de page s’affichent de manière dynamique lors de l’aperçu PDF, affichant une numérotation de page précise dans la sortie finale.
 
 ### Exemple

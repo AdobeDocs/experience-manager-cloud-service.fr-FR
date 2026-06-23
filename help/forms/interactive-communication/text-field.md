@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 6bb41cf2-8a9d-499c-979b-b0ee7d092e11
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 2%
+source-wordcount: '683'
+ht-degree: 1%
 
 ---
 
 # Composant Champ de texte dans l’éditeur de communication interactive
 
->[!NOTE]
->
-> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 ## &#x200B;1. Introduction
 
@@ -130,3 +127,11 @@ Les auteurs peuvent placer le champ dans des sous-formulaires ou des grilles de 
 - Liez directement au modèle de données chaque fois que cela est possible pour une maintenance plus simple.
 
 Le composant Champ de texte de l’éditeur IC est un bloc de création polyvalent qui simplifie la capture de données. Lorsqu’elle est configurée de manière réfléchie, avec une typographie bien choisie, des libellés clairs, une validation appropriée et une liaison de données solide, elle offre une expérience transparente et conviviale, ainsi que des données fiables pour le traitement en aval.
+
+## Voir également
+
+- [Composant de zone de texte](/help/forms/interactive-communication/text-box.md)
+- [Composant de champ numérique](/help/forms/interactive-communication/numeric-field.md)
+- [Composant de variable non lié](/help/forms/interactive-communication/unbound-variable.md)
+- [Configurer la liaison de données dans l’éditeur de communication interactive](/help/forms/interactive-communication/configure-data-binding.md)
+- [Utiliser l’éditeur de règles dans l’éditeur de communication interactive](/help/forms/interactive-communication/use-the-rule-editor.md)

@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 7db24153-549a-4c36-8cb5-ab33fda8072a
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '640'
 ht-degree: 2%
 
 ---
 
 # Composant Tableau dans l’éditeur de communication interactive
 
->[!NOTE]
->
-> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 ## &#x200B;1. Présentation
 
@@ -100,7 +97,7 @@ Le composant Tableau est idéal pour afficher des informations structurées ou r
 
 Les auteurs peuvent configurer le nombre de lignes et de colonnes, appliquer une visibilité conditionnelle ou lier les données pour afficher des informations dynamiques.
 
-## &#x200B;4. Bonnes Pratiques
+## &#x200B;4. Bonnes pratiques
 
 - Utilisez les lignes d’en-tête pour étiqueter clairement chaque colonne afin d’en améliorer la lisibilité.
 
@@ -115,3 +112,9 @@ Les auteurs peuvent configurer le nombre de lignes et de colonnes, appliquer une
 - Utilisez des modèles par défaut pour normaliser le contenu tabulaire dans les documents.
 
 Le composant Tableau de l’éditeur IC est un composant flexible et convivial conçu pour prendre en charge le contenu structuré dans vos communications . Grâce aux options de disposition personnalisables, aux fonctionnalités de style et à la puissante liaison de données, il permet aux auteurs de présenter les informations de manière claire et efficace.
+
+## Voir également
+
+- [Fusionner et fractionner des cellules de tableau dans l’éditeur de communication interactive](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md) — Découvrez comment combiner des cellules adjacentes en une seule cellule ou fractionner une cellule fusionnée pour créer des dispositions de tableau flexibles.
+- [Créer un tableau dynamique dans l’éditeur de communication interactive](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)
+- [Configurer la liaison de données dans l’éditeur de communication interactive](/help/forms/interactive-communication/configure-data-binding.md)

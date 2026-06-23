@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 17b3fe2b-6a1d-4fe2-9a92-a55a50400824
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '336'
 ht-degree: 3%
 
 ---
 
 # Aperçu de PDF dans l’éditeur de communication interactive
 
->[!NOTE]
->
-> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 La fonction d’aperçu PDF permet aux utilisateurs de prévisualiser les communications interactives de trois manières différentes : sans données, avec des données locales basées sur JSON ou avec des exemples de données provenant du modèle de données configuré.
 
@@ -37,7 +34,7 @@ Prévisualisez les communications interactives en n’utilisant aucune donnée, 
 
 +++&#x200B;1. Aperçu sans données.
 
-1.1. Ouvrez votre communication interactive dans l’éditeur IC.
+1.1. Ouvrez votre communication interactive dans l’éditeur d’IC.
 
 1.2. Utilisez l’option Aperçu PDF et sélectionnez l’option **Aucune donnée** pour afficher une communication sans données.
 
@@ -47,9 +44,9 @@ Prévisualisez les communications interactives en n’utilisant aucune donnée, 
 
 +++&#x200B;2. Aperçu avec des données JSON locales
 
-2.1. Préparez un fichier JSON structuré. À titre de référence, vous pouvez copier les données d’exemple du [&#x200B; de schéma JSON (FDM)](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) utilisé pour la communication.
+2.1. Préparez un fichier JSON structuré. À titre de référence, vous pouvez copier les données d’exemple du [ de schéma JSON (FDM)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) utilisé pour la communication.
 
-2.2. Dans l’éditeur IC, accédez à **Aperçu PDF** > Utilisation des données locales.
+2.2. Dans l’éditeur IC, accédez à **Aperçu** > Utilisation des données locales.
 
 2.3. Sélectionnez et chargez votre fichier JSON pour effectuer le rendu d’un aperçu PDF avec les données fournies.
 

@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 1ff5ac22-d8c8-4109-8334-217dbc239f1f
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 4%
+source-wordcount: '450'
+ht-degree: 6%
 
 ---
 
 # Composant Line dans l’éditeur de communication interactive
 
->[!NOTE]
->
-> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 ## &#x200B;1. Présentation
 
@@ -29,7 +26,7 @@ Le composant Ligne de l’éditeur de communication interactive (IC) permet aux 
 
 Le composant de ligne est fourni avec une plage de propriétés configurables pour définir son identité, son apparence, son emplacement et sa visibilité dans le document.
 
-2.1. Champ De Base
+2.1. Champ de base
 
 - **Name :** identifiant unique utilisé en interne pour référencer le composant de ligne dans les modèles de données, les règles ou les scripts.
 
@@ -65,7 +62,7 @@ Le composant de ligne est fourni avec une plage de propriétés configurables po
 
    - Droite
 
-2.4. Apparence
+2.4. Aspect
 
 - **Description :** permet que le style de la ligne corresponde à la conception du document.
 
@@ -99,7 +96,7 @@ Le composant Ligne est souvent utilisé pour :
 
 - Améliorer la hiérarchie visuelle de la mise en page des communications
 
-## &#x200B;4. Bonnes Pratiques
+## &#x200B;4. Bonnes pratiques
 
 - Utilisez des styles de ligne cohérents dans l’ensemble du formulaire pour conserver un aspect professionnel.
 
@@ -110,3 +107,8 @@ Le composant Ligne est souvent utilisé pour :
 - Masquez les lignes inutiles pour éviter les distractions tout en préservant l’espacement des mises en page.
 
 Le composant Line de l’éditeur de communication interactive est un élément de conception simple mais puissant. Utilisé stratégiquement, il améliore la structure visuelle des documents de communication, aidant ainsi les utilisateurs à mieux naviguer dans le contenu et assurant une mise en page plus épurée et plus soignée.
+
+## Voir également
+
+- [Composant Rectangle](/help/forms/interactive-communication/rectangle.md)
+- [Composant de l’image](/help/forms/interactive-communication/image.md)

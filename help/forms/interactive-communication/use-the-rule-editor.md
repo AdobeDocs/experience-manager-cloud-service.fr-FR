@@ -6,19 +6,16 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 9538ae2e-e0f5-4e85-943e-00fe99a64725
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 3%
+source-wordcount: '441'
+ht-degree: 2%
 
 ---
 
 # Éditeur de règles dans l’éditeur de communication interactive
 
 
->[!NOTE]
->
-> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 
 ## &#x200B;1. Présentation
@@ -84,7 +81,7 @@ L’éditeur de règles est largement utilisé pour s’assurer que les formulai
 - **Personalization :** adaptez la communication au profil, aux préférences ou aux critères d’éligibilité du destinataire.
 
 
-## &#x200B;4. Bonnes Pratiques
+## &#x200B;4. Bonnes pratiques
 
 
 - **Gardez les règles simples :** divisez les logiques complexes en règles plus petites et modulaires pour une maintenance plus facile.

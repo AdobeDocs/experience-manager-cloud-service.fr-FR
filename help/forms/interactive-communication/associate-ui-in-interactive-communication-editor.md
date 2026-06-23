@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 9ba58659-b14c-4ebc-a6d9-e56a4b6aa48b
-source-git-commit: f889498f9ee5e71a4d3695dbfbe194d1bbb11488
+source-git-commit: 45b33b8a5afe8ff329f76b65d7e5bd7dea0dcc17
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 4%
+source-wordcount: '652'
+ht-degree: 3%
 
 ---
 
 # Associer l’interface utilisateur dans l’éditeur de communication interactive
 
->[!NOTE]
->
-> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 L’**interface utilisateur associée** est une interface simplifiée spécialisée reposant sur l’éditeur de communications interactives (IC). Il est conçu pour les professionnels en contact avec les clients, tels que les associés de terrain et les agents de service, afin de générer des communications personnalisées, conformes et précises en temps réel lors des interactions en direct.
 
@@ -55,7 +52,7 @@ Responsable de la configuration du système, de la gouvernance, des intégration
 | Gouvernance et sécurité | Gère les autorisations utilisateur et assure la conformité du système. |
 | Gestion de l’intégration | Conserve les intégrations du serveur principal et les connexions actives aux données client. |
 
-### &#x200B;2. Auteur
+### &#x200B;2. Création
 
 Conçoit et gère la communication interactive et la configure pour l’interface utilisateur associée (y compris l’activation de la vue associée et d’un workflow facultatif).
 
@@ -101,7 +98,7 @@ Les auteurs activent l’interface utilisateur associée et configurent éventue
 3. **Configurer les champs modifiables** — Activez les champs que les associés peuvent modifier et définir les validations.
 4. **Publier et partager** — Publiez l&#39;IC et partagez le lien avec les associés.
 
-Pour obtenir des instructions détaillées sur les captures d’écran et le comportement de l’envoi/du workflow (auteur dans l’instance de création et associé dans l’instance de publication), consultez [&#x200B; Activer et configurer l’interface utilisateur associée pour les communications interactives](/help/forms/interactive-communication/enable-configure-associate-ui.md). Pour créer un workflow qui génère PDF à partir des envois IC, voir [Workflow d’envoi pour l’interface utilisateur associée - Sortie IC Generate PDF](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md).
+Pour obtenir des instructions détaillées sur les captures d’écran et le comportement de l’envoi/du workflow (auteur dans l’instance de création et associé dans l’instance de publication), consultez [ Activer et configurer l’interface utilisateur associée pour les communications interactives](/help/forms/interactive-communication/enable-configure-associate-ui.md). Pour créer un workflow qui génère PDF à partir des envois IC, voir [Workflow d’envoi pour l’interface utilisateur associée - Sortie IC Generate PDF](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md).
 
 L’**interface utilisateur associée** comble le fossé entre la création de contenu structuré et l’engagement client en temps réel.\
 En associant une conception intuitive, une configuration d’arrière-plan robuste et des contrôles de conformité stricts, les entreprises peuvent fournir des communications **rapides, précises et personnalisées** à grande échelle.
@@ -109,5 +106,7 @@ En associant une conception intuitive, une configuration d’arrière-plan robus
 ## Voir également
 
 - [Activer et configurer l’interface utilisateur associée pour les communications interactives](/help/forms/interactive-communication/enable-configure-associate-ui.md)
+- [Configurer les options de liste déroulante pour l’interface utilisateur associée](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md)
+- [Configuration des variables liées et non liées pour l’interface utilisateur associée](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md)
 - [Intégrer l’interface utilisateur associée à votre application](/help/forms/interactive-communication/invoke-associate-ui.md)
 - [Workflow de soumission pour Associate UI — IC Generate PDF Output](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)

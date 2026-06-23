@@ -4,19 +4,16 @@ description: Découvrez comment activer la vue Associé et configurer un workflo
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-exl-id: 7c3e8a2b-5f21-4a1e-9e2d-8a4b6c7d8e9f
-source-git-commit: a41459520feb03594212b91e68cfd8e2b1e610c4
+exl-id: 5f8371f9-b4a6-4cae-a9d3-cfd744b66702
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 1%
+source-wordcount: '762'
+ht-degree: 0%
 
 ---
 
 # Activer et configurer l’interface utilisateur associée pour les communications interactives
 
->[!NOTE]
->
-> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 Cet article décrit comment activer l’interface utilisateur associée pour une communication interactive (IC) et éventuellement configurer un workflow AEM pour les envois. Les auteurs effectuent ces étapes dans **Paramètres de communication interactive**.
 
@@ -86,7 +83,7 @@ Après avoir activé la vue Associé et éventuellement configuré le workflow :
 
 1. **Activer les champs modifiables :** dans les sections requises de la carte d’interface utilisateur, activez les champs que les associés sont autorisés à modifier. Définissez les validations et le comportement obligatoire/en lecture seule selon les besoins.
 1. **Publiez l’IC** afin qu’il soit disponible sur l’instance de publication pour les associés.
-1. Partagez le lien IC publié avec les associés. Ils s’authentifient (par exemple, via l’ID d’entrée Microsoft [&#128279;](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id)) et ouvrent l’interface utilisateur associée, saisissent ou confirment les données client et génèrent la communication finale. Si vous avez configuré un workflow, il s’exécute lors de l’envoi. Pour connaître le fonctionnement de l’envoi et du workflow, voir [&#x200B; Workflow d’envoi pour l’interface utilisateur associée &#x200B;](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md#submission-and-workflow-behavior).
+1. Partagez le lien IC publié avec les associés. Ils s’authentifient (par exemple, via l’ID d’entrée Microsoft [](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id)) et ouvrent l’interface utilisateur associée, saisissent ou confirment les données client et génèrent la communication finale. Si vous avez configuré un workflow, il s’exécute lors de l’envoi. Pour connaître le fonctionnement de l’envoi et du workflow, voir [ Workflow d’envoi pour l’interface utilisateur associée ](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md#submission-and-workflow-behavior).
 
 ## Voir également
 

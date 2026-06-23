@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: fe1608f0-8d93-4b89-9dd9-849339b0a175
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 2%
+source-wordcount: '543'
+ht-degree: 4%
 
 ---
 
 # Composant Bouton radio dans l’éditeur de communication interactive
 
->[!NOTE]
->
-> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 ## &#x200B;1. Présentation
 
@@ -30,7 +27,7 @@ Les boutons radio sont intuitifs, faciles à configurer et peuvent être liés �
 
 Le composant Bouton radio comprend plusieurs propriétés configurables :
 
-2.1. Champ De Base
+2.1. Champ de base
 
 - **Nom :** identifiant unique du champ. Il est utilisé pour le référencement dans les modèles de données, les règles et la logique commerciale.
 
@@ -74,7 +71,7 @@ Définissez l’espacement autour de la zone de texte :
 
 
 
-2.5. Liaison De Données
+2.5. Liaison de données
 
 - **Description :** connecte le groupe de boutons radio à un modèle de données pour capturer l’option sélectionnée.
 
@@ -100,7 +97,7 @@ Le composant Bouton radio est adapté aux scénarios où les utilisateurs et uti
 
 Les créateurs et créatrices peuvent regrouper les boutons radio associés et les positionner dans des conteneurs de disposition pour un alignement cohérent. Les libellés peuvent être placés sur la ligne ou au-dessus des boutons, selon les exigences de conception visuelle.
 
-## &#x200B;4. Bonnes Pratiques
+## &#x200B;4. Bonnes pratiques
 
 - Limitez le nombre d’options à 5 ou moins pour éviter de surcharger l’utilisateur ou l’utilisatrice.
 
@@ -115,3 +112,9 @@ Les créateurs et créatrices peuvent regrouper les boutons radio associés et l
 - Appliquez un espacement et un alignement cohérents pour une meilleure clarté visuelle, en particulier dans les dispositions compatibles avec les appareils mobiles.
 
 Le composant Bouton radio de l’éditeur de communication interactive est un composant d’entrée fondamental qui permet aux utilisateurs finaux de prendre des décisions propres et structurées. Lorsqu’elle est configurée avec des libellés clairs, un espacement réfléchi et une liaison de données, elle garantit une collecte de données fiable et une expérience utilisateur fluide pour les formulaires, les questionnaires et les workflows d’intégration.
+
+## Voir également
+
+- [Composant de case à cocher](/help/forms/interactive-communication/check-box.md)
+- [Configurer la liaison de données dans l’éditeur de communication interactive](/help/forms/interactive-communication/configure-data-binding.md)
+- [Utiliser l’éditeur de règles dans l’éditeur de communication interactive](/help/forms/interactive-communication/use-the-rule-editor.md)

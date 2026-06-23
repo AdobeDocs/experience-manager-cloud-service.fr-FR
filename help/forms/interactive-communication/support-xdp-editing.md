@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 8dd024aa-d0c1-4e8b-b9f2-ad67c20cdd88
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 4%
+source-wordcount: '301'
+ht-degree: 2%
 
 ---
 
 # Prise en charge de l’édition XDP dans l’éditeur de communication interactive
 
->[!NOTE]
->
-> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 ## Présentation
 
@@ -39,7 +36,7 @@ L’éditeur de communication interactive (IC) offre désormais une prise en cha
 
 ## Fonctionnalités essentielles
 
-- **Télécharger et gérer des fichiers XDP :**
+- **Charger et gérer des fichiers XDP :**
 Chargez des modèles XDP via **Forms Manager**. Une fois chargés, ils peuvent être modifiés directement dans l’éditeur de communication interactive.
 
 - **Modifier à l’aide de l’éditeur IC :**
