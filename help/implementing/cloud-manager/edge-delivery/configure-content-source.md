@@ -1,13 +1,13 @@
 ---
-title: Configurer votre source de contenu
+title: Configuration de Content Source for Edge Delivery Services
 description: Découvrez comment configurer la source de contenu de votre site Edge Delivery. Utilisez le fichier « fstab.yaml » avec l’architecture Helix 4 ou utilisez l’assistant guidé dans Cloud Manager (ou l’API du service de configuration) avec l’architecture Helix 5.
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: f82eafc0-03d0-4c69-9b28-e769a012531b
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 069e94e230b856fba15c3f465c966a5bf6b0ac46
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 100%
+source-wordcount: '581'
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 >
 >*Helix* est le nom interne de l’architecture sous-jacente qui alimente AEM Sites avec la création basée sur des documents. Il ne s’agit pas d’un nom de fonctionnalité ou de produit. Dans cet article, *Helix* fait référence à la version de l’architecture utilisée par vos sites Edge Delivery. Helix 5 est la version actuelle de l’architecture sous-jacente. Helix 4 est la version précédente.
 
-Adobe Experience Manager (AEM) Edge Delivery Services permet la diffusion de contenu à partir de plusieurs sources telles que Google Drive, SharePoint ou AEM lui-même, à l’aide d’un réseau Edge Network rapide distribué dans le monde entier.
+Adobe Experience Manager (AEM) Edge Delivery Services diffuse du contenu à partir de Google Drive, SharePoint ou AEM à l’aide d’un réseau Edge rapidement distribué dans le monde entier.
 
 La configuration de la source de contenu est différente entre les deux versions de l’architecture sur les points suivants :
 
@@ -48,7 +48,7 @@ mountpoints:
   /: https://drive.google.com/drive/folders/your-folder-id
 ```
 
-L’exemple ci-dessus est fourni à titre illustratif uniquement. L’URL réelle doit pointer vers votre source de contenu, par exemple un dossier Google Drive, un répertoire SharePoint ou un chemin d’accès AEM.
+L’exemple ci-dessus est fourni à titre illustratif uniquement. L’URL réelle pointe vers votre source de contenu, telle qu’un dossier de lecteur Google, un répertoire SharePoint ou un chemin d’accès AEM.
 
 **Pour configurer la source de contenu pour Helix 4, procédez comme suit :**
 
@@ -101,7 +101,7 @@ Les étapes varient en fonction du système source que vous utilisez.
 
 ## Configurer la source de contenu pour Helix 5 {#config-helix5}
 
-Helix 5 n’utilise pas de référentiels ni le fichier `fstab.yaml` et prend en charge plusieurs sites partageant le même répertoire. La configuration est gérée via l’API Configuration Service ou l’interface d’utilisation des sites Edge Delivery. La configuration s’effectue au niveau du site (et non du référentiel).
+Helix 5 est sans référentiel, n’utilise pas `fstab.yaml` et prend en charge plusieurs sites partageant le même répertoire. La configuration est gérée via l’API Configuration Service ou l’interface d’utilisation des sites Edge Delivery. La configuration s’effectue au niveau du site (et non du référentiel).
 
 Les différences conceptuelles sont les suivantes :
 

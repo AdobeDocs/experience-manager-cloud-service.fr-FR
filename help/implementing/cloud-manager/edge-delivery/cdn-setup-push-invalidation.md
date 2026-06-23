@@ -5,16 +5,16 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 7cded93c-325c-4a4b-8644-e6a2379d5179
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 069e94e230b856fba15c3f465c966a5bf6b0ac46
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 100%
+source-wordcount: '182'
+ht-degree: 84%
 
 ---
 
-# Configuration de l’invalidation push
+# Configuration de l’invalidation des notifications push pour un site Edge Delivery
 
-L’invalidation push garantit que les mises à jour de contenu effectuées par les personnes chargées de la création sont automatiquement supprimées du réseau de diffusion de contenu (CDN) géré lors de la publication. Cela garantit que seul le contenu le plus récent est diffusé.
+L’invalidation des notifications push garantit que les mises à jour de contenu effectuées par les auteurs sont automatiquement supprimées du réseau de diffusion de contenu géré lorsqu’elles sont publiées. Cela garantit que seul le contenu le plus récent est diffusé.
 
 Le système efface le contenu en fonction d’URL spécifiques et de balises ou clés de cache, ce qui garantit que les versions obsolètes sont purgées.
 

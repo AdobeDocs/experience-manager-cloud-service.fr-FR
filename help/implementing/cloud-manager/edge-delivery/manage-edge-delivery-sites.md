@@ -4,10 +4,10 @@ description: Découvrez comment ajouter une configuration de réseau CDN à un s
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
-source-git-commit: fc9f7f10d1797bda5f31d82005b0afbb6ea1e644
+source-git-commit: 069e94e230b856fba15c3f465c966a5bf6b0ac46
 workflow-type: tm+mt
-source-wordcount: '1103'
-ht-degree: 64%
+source-wordcount: '1006'
+ht-degree: 43%
 
 ---
 
@@ -21,22 +21,22 @@ Consultez [Ajouter un mappage de domaine](/help/implementing/cloud-manager/domai
 
 ## Attribution d’un nouveau nom à un site Edge Delivery (#rename-edge-delivery-site)
 
-Dans Adobe Cloud Manager, vous pouvez renommer un site Edge Delivery pour plusieurs raisons :
+Dans Adobe Cloud Manager, vous renommez un site Edge Delivery pour plusieurs raisons :
 
 * **Clarté et organisation** : pour mieux décrire l’objectif du site ou son environnement associé (par exemple, production, évaluation).
-* **Éviter toute confusion** : si plusieurs sites sont utilisés, le fait de les renommer permet de les différencier facilement, ce qui réduit le risque d’appliquer des configurations ou des mises à jour au mauvais site.
+* **Pour éviter toute confusion** : si plusieurs sites sont en cours d’utilisation, renommer peut permettre de les différencier, ce qui réduit le risque d’appliquer des configurations ou des mises à jour à un site incorrect.
 * **Normalisation** : pour respecter une convention de nommage cohérente qui s’aligne sur les directives de votre entreprise pour une gestion et un audit plus simples.
 
 **Pour renommer un site Edge Delivery, procédez comme suit :**
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez le programme approprié.
 1. Dans la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme avec Edge Delivery Services configuré, là où vous souhaitez ajouter un site Edge Delivery.
-1. Effectuez l’une des opérations suivantes :
+1. Utilisez l’une des méthodes suivantes :
 
-   * Dans la page **Vue d’ensemble du programme**, cliquez sur l’onglet **Edge Delivery**. Dans le tableau du site Edge Delivery, cliquez sur les points de suspension en fin de ligne du site que vous souhaitez renommer.
+   * Sur la page **Aperçu du programme**, cliquez sur l’onglet **Edge Delivery**. Dans le tableau des sites d’Edge Delivery, cliquez sur les points de suspension à la fin d’une ligne dont vous souhaitez renommer le site.
 Cliquez sur **Renommer**.
-   * Dans le coin supérieur gauche de la page, cliquez sur ![Icône Afficher le menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) pour afficher le menu de gauche. Sous l’en-tête **Services**, cliquez sur ![Icône Pages web](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Sites Edge Delivery**.
-Dans le tableau du site Edge Delivery, cliquez sur ![icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) à la fin d’une ligne dont vous souhaitez renommer le site. Cliquez sur **Renommer**.
+   * Dans le coin supérieur gauche de la page, cliquez sur ![Icône Afficher le menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) pour afficher le menu latéral gauche. Sous l’en-tête **Services**, cliquez sur ![Icône Pages web](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**.
+Dans le tableau des sites d’Edge Delivery, cliquez sur ![icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) à la fin d’une ligne dont vous souhaitez renommer le site. Cliquez sur **Renommer**.
 
 1. Dans la boîte de dialogue **Modifier le site Edge Delivery**, dans le champ de texte **Nom du site**, saisissez le nouveau nom du site.
 1. Cliquez sur **Modifier**.
@@ -50,7 +50,7 @@ Dans le tableau du site Edge Delivery, cliquez sur ![icône Plus](https://spectr
 
 Cette fonctionnalité s’applique uniquement aux sites Edge Delivery créés avec l’option **Création AEM** dans les programmes où la fonctionnalité de niveau publication flexible est activée.
 
-Si votre site Edge Delivery utilise la création AEM, le niveau de publication n’est pas configuré par défaut, car Edge Delivery gère la diffusion de contenu. Cependant, vous pouvez activer le niveau de publication à tout moment si votre site le requiert. Par exemple, si vous devez prendre en charge la publication AEM traditionnelle avec Edge Delivery.
+Si votre site Edge Delivery utilise la création AEM, Adobe ne met pas en service le niveau de publication par défaut, car Edge Delivery gère la diffusion de contenu. Cependant, vous pouvez activer le niveau de publication à tout moment si votre site le requiert. Par exemple, si vous devez prendre en charge la publication AEM traditionnelle avec Edge Delivery.
 
 Une fois votre site Edge Delivery créé et son statut affiché dans Cloud Manager, la mention **Vérifié** vous permet de créer et de publier du contenu à l’aide de l’éditeur universel d’AEM.
 
@@ -76,7 +76,7 @@ Une fois votre site Edge Delivery créé et son statut affiché dans Cloud Manag
 
    Une fois activé, le niveau de publication est automatiquement configuré. Vous pouvez également configurer le niveau de publication automatiquement si l’auteur tente de publier directement du contenu à partir de l’interface utilisateur d’AEM.
 
-   Une fois le niveau de publication activé et configuré, le lien **Cliquez pour activer** devient grisé/indisponible.
+   Une fois le niveau de publication activé et configuré, le lien **Cliquez pour activer** devient désactivé/indisponible.
 
 * **À partir de l’instance de création AEM** — Dans l’interface de création AEM, cliquez sur **Publication rapide** pour publier du contenu directement sur votre site Edge Delivery. Le niveau de publication n’est pas requis pour cette opération lorsque Edge Delivery gère la diffusion.
 
@@ -84,7 +84,7 @@ Après la publication, prévisualisez le contenu dans l’URL `.page` de votre s
 
 >[!NOTE]
 >
->L’activation du niveau de publication ajoute l’infrastructure de publication à votre environnement. Cette fonctionnalité peut affecter la consommation de ressources de votre programme. Pour configurer si le niveau de publication est requis au niveau du programme, consultez [Niveau de publication flexible (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
+>L’activation du niveau de publication ajoute l’infrastructure de publication à votre environnement. Cette fonctionnalité affecte la consommation des ressources de votre programme. Pour configurer si le niveau de publication est requis au niveau du programme, consultez [Niveau de publication flexible (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
 
 
 ## Suppression d’un site Edge Delivery {#delete-edge-delivery-site}
@@ -95,15 +95,15 @@ Si vous supprimez un site Edge Delivery Services, toutes les configurations de r
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez le programme approprié.
 1. Dans la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme avec Edge Delivery Services configuré, là où vous souhaitez ajouter un site Edge Delivery.
-1. Effectuez l’une des opérations suivantes :
+1. Utilisez l’une des méthodes suivantes :
 
-   * Sur la page **Vue d’ensemble du programme**, cliquez sur l’onglet **Edge Delivery**. Dans le tableau du site Edge Delivery, cliquez sur ![Icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) à la fin d’une ligne dont vous souhaitez supprimer le site.
+   * Sur la page **Aperçu du programme**, cliquez sur l’onglet **Edge Delivery**. Dans le tableau des sites d’Edge Delivery, cliquez sur ![icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) à la fin d’une ligne dont vous souhaitez supprimer le site.
 Cliquez sur ![Icône Supprimer le site Edge Delivery](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **Supprimer**, puis cliquez de nouveau sur **Supprimer** pour confirmer la suppression du site.
 
      ![Ajout d’un site Edge Delivery depuis l’onglet Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-delete1.png)
 
-   * Dans le coin supérieur gauche de la page, cliquez sur l’![icône Afficher le menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) pour afficher le menu de gauche. Sous l’en-tête **Services**, cliquez sur ![Icône Page web pour les sites Edge Delivery](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Sites Edge Delivery**.
-Dans le tableau du site Edge Delivery, cliquez sur ![Icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) à la fin d’une ligne dont vous souhaitez supprimer le site. Cliquez sur ![Icône Supprimer le site Edge Delivery](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **Supprimer**, puis cliquez de nouveau sur **Supprimer** pour confirmer la suppression du site.
+   * Dans le coin supérieur gauche de la page, cliquez sur ![Icône Afficher le menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) pour afficher le menu latéral gauche. Sous l’en-tête **Services**, cliquez sur ![Icône Page web pour les sites Edge Delivery](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**.
+Dans le tableau des sites d’Edge Delivery, cliquez sur ![icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) à la fin d’une ligne dont vous souhaitez supprimer le site. Cliquez sur ![Icône Supprimer le site Edge Delivery](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **Supprimer**, puis cliquez de nouveau sur **Supprimer** pour confirmer la suppression du site.
 
      ![Ajout d’un site Edge Delivery à partir du bouton Sites Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
 
@@ -113,7 +113,7 @@ Utilisez le point d’entrée de l’API `/program/{programId}/site/{siteId}` po
 
 >[!IMPORTANT]
 >
->Les configurations de réseau CDN pour les sites web Helix 4 ne peuvent pas être migrées automatiquement vers Helix 5. Cette limitation existe, car les sites de production clients peuvent toujours s’exécuter sur Helix 4, tandis que leurs versions Helix 5 sont toujours en cours de développement.
+>Les configurations de réseau CDN pour les sites web Helix 4 ne peuvent pas être migrées automatiquement vers Helix 5. Cette limitation existe car les sites de production clients s’exécutent toujours sur Helix 4, tandis que leurs versions Helix 5 sont toujours en cours de développement.
 
 **Conditions préalables**
 
@@ -159,7 +159,7 @@ PUT /api/program/{programId}/site/{siteId}
 ```
 
 **Résultat de l’URL d’origine**
-Renvoie un site Edge Delivery avec l’URL d’origine suivante :
+Retourne un site Edge Delivery avec l&#39;URL d&#39;origine suivante :
 
 `"origin": "branch--my-website–Teo48.aem.live"`
 
@@ -184,7 +184,7 @@ PUT /api/program/{programId}/site/{siteId}
 ```
 
 **Résultat de l’URL d’origine**
-Renvoie un site Edge Delivery avec l’URL d’origine suivante :
+Renvoie un site Edge Delivery avec l’URL d’origine suivante :
 
 `"origin": "branch--my-website--Teo48.hlx.live"`
 
@@ -208,7 +208,7 @@ PUT /api/program/{programId}/site/{siteId}
 ```
 
 **Résultat de l’URL d’origine**
-Renvoie un site Edge Delivery avec l’URL d’origine suivante :
+Retourne un site Edge Delivery avec l&#39;URL d&#39;origine suivante :
 
 `"origin": "main--my-repoless-website--Teo48.aem.live"`
 
