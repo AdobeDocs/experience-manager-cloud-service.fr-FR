@@ -7,10 +7,10 @@ role: Admin, Developer
 hidefromtoc: false
 index: true
 exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
-source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
+source-git-commit: 1eb2a3fede53e01f07f511ae24de5ac1f11b8821
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 49%
+source-wordcount: '1109'
+ht-degree: 24%
 
 ---
 
@@ -25,34 +25,34 @@ Vous pouvez diviser les déploiements d’évaluation et de production à l’ai
 
 ## Vue d’ensemble {#overview}
 
-Les environnements d’évaluation et de production sont étroitement liés. Par défaut, les déploiements qui leur sont associés sont liés à un pipeline unique. Il s’agit d’un pipeline de déploiement qui effectue le déploiement pour les environnements d’évaluation et de production de ce programme. Bien que cette liaison soit habituellement adaptée, certains cas d’utilisation présentent des inconvénients :
+Les environnements d’évaluation et de production sont étroitement liés. Par défaut, les déploiements qui leur sont associés sont liés à un pipeline unique. Un pipeline de déploiement se déploie à la fois dans les environnements d’évaluation et de production de ce programme. Bien que ce raccord convienne normalement, il existe certains cas d&#39;utilisation où des inconvénients se présentent:
 
-* Si vous souhaitez effectuer un déploiement vers l’environnement d’évaluation uniquement, vous rejetez l’étape **Promouvoir en production** dans le pipeline. Cependant, l’exécution est marquée comme annulée.
+* Si vous souhaitez effectuer un déploiement dans l’évaluation, vous rejetez l’étape **Convertir en production** du pipeline. Cependant, l’exécution est marquée comme annulée.
 * Si vous souhaitez déployer le code le plus récent d’un environnement d’évaluation vers la production, vous devez redéployer l’ensemble du pipeline, y compris le déploiement de l’évaluation, même s’il n’y a eu aucune modification du code dans ce dernier.
-* Les environnements ne peuvent pas être mis à jour pendant les déploiements. Si vous souhaitez mettre en pause pour effectuer des tests sur plusieurs jours dans l’environnement d’évaluation avant de procéder à la promotion en production, l’environnement de production reste bloqué et ne peut pas être mis à jour. Ce scénario rend les tâches non dépendantes, telles que la mise à jour des [variables d’environnement](/help/implementing/cloud-manager/environment-variables.md), impossibles à effectuer.
+* Les environnements ne peuvent pas être mis à jour pendant les déploiements. Si vous attendez plusieurs jours dans l’environnement d’évaluation avant de passer en production, l’environnement de production reste indisponible et ne peut pas être mis à jour. Ce scénario empêche les tâches non dépendantes telles que la mise à jour des [variables d’environnement](/help/implementing/cloud-manager/environment-variables.md).
 
-Les pipelines dédiés à l’évaluation uniquement et à la production uniquement offrent des solutions à ces cas d’utilisation en fournissant des options de déploiement dédiées.
+Les pipelines d’évaluation uniquement et de production uniquement offrent des solutions à ces cas d’utilisation en fournissant des options de déploiement dédiées.
 
 * Les **pipelines de déploiement en environnement d’évaluation uniquement** déploient uniquement vers un environnement d’évaluation, l’exécution se terminant une fois le déploiement et les tests terminés. Un pipeline dédié à l’évaluation uniquement se comporte de la même manière que le pipeline de pile pleine de production couplé standard, mais sans les étapes de déploiement de production (approbation, planification, déploiement).
-* **Pipelines de déploiement en production uniquement :** se déploie uniquement en production en sélectionnant la dernière exécution d’étape réussie. Ils déploient ensuite ses artefacts en production. Les pipelines dédiés à la production uniquement réutilisent les artefacts de déploiement en évaluation, en contournant la phase de création.
+* **Pipelines de déploiement en production uniquement :** se déploie uniquement en production en sélectionnant la dernière exécution d’étape réussie. Il déploie ensuite ses artefacts en production. Les pipelines de production uniquement réutilisent des artefacts de déploiement d’étape, en omettant la phase de création.
 
-Les pipelines dédiés uniquement à l’évaluation et à la production ne sont pas exécutés lorsqu’un pipeline de production de pile pleine est en cours, et vice versa. Si le pipeline dédié uniquement à l’évaluation et à la production de pile complète dispose du déclencheur **Lors des modifications Git** configuré et pointent vers la même branche et le même référentiel, seul le pipeline dédié uniquement à l’évaluation est lancé automatiquement. Les pipelines dédiés à la production uniquement ne démarrent pas **`On Git Changes`**, car ils ne sont pas directement liés à un référentiel.
+Les pipelines dédiés uniquement à l’évaluation et à la production ne sont pas exécutés lorsqu’un pipeline de production de pile pleine est en cours, et vice versa. Si le pipeline dédié uniquement à l’évaluation et à la production de pile complète dispose du déclencheur **Lors des modifications Git** configuré et pointent vers la même branche et le même référentiel, seul le pipeline dédié uniquement à l’évaluation est lancé automatiquement. Les pipelines de production uniquement ne déclenchent pas de **`On Git Changes`**, car ils ne sont pas directement liés à un référentiel.
 
-Les pipelines dédiés à la production uniquement sont déclenchés manuellement, car ils ne sont pas directement liés à un référentiel pour **Lors des modifications Git**.
+Les pipelines en production seule sont déclenchés manuellement, car ils ne sont pas directement liés à un référentiel pour les déclencheurs **Lors des modifications Git**.
 
-Ces pipelines dédiés offrent plus de flexibilité, mais tenez compte des informations ci-après concernant leur fonctionnement et les recommandations associées.
+Ces pipelines dédiés offrent plus de flexibilité, mais notez les détails suivants sur le fonctionnement et les recommandations.
 
 >[!NOTE]
 >
->Les pipelines dédiés à la production uniquement utilisent toujours des artefacts du pipeline d’évaluation uniquement. Ce processus reste vrai même si le pipeline dédié à la production couplé standard a déployé quelque chose d’autre sur l’environnement d’évaluation entre-temps.
+>Les pipelines dédiés à la production uniquement utilisent toujours des artefacts du pipeline d’évaluation uniquement. Ce processus reste vrai même si le pipeline de production couplé standard a déployé une version différente vers l’évaluation entre-temps.
 >
->* Un tel scénario peut entraîner des restaurations de code indésirables.
->* Adobe vous recommande d’arrêter d’utiliser le pipeline de production couplé standard une fois que vous commencez à utiliser les pipelines dédiés à la production uniquement et à l’évaluation uniquement.
+>* Ce scénario entraîne des restaurations de code inattendues.
+>* Adobe recommande d’arrêter l’utilisation du pipeline de production couplé standard une fois que vous avez commencé à utiliser les pipelines de production uniquement prod et intermédiaire uniquement.
 >* Si vous décidez malgré tout d’exécuter les pipelines couplés standard et les pipelines dédiés à l’évaluation/la production uniquement, tenez compte de la réutilisation des artefacts pour éviter les restaurations de code.
 
 ## Création de pipeline {#pipeline-creation}
 
-Les pipelines dédiés à la production uniquement et à l’évaluation uniquement sont créés de la même manière que les [pipelines de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) et les [pipelines hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) couplés standard. Consultez ces documents pour plus de détails.
+Les pipelines de production uniquement et intermédiaires uniquement sont créés de la même manière que les pipelines couplés standard [pipelines de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) et [pipelines hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Consultez ces documents pour plus de détails.
 
 1. Dans la fenêtre **Pipelines**, cliquez sur **Ajouter un pipeline**.
 
@@ -63,11 +63,11 @@ Les pipelines dédiés à la production uniquement et à l’évaluation uniquem
 
 >[!NOTE]
 >
->Certaines options peuvent être grisées si les pipelines correspondants existent déjà.
+>Certaines options sont grisées si les pipelines correspondants existent déjà.
 >
 >* L’option **Ajouter un pipeline de production uniquement** n’est pas disponible si le pipeline dédié uniquement à l’évaluation n’existe pas encore.
 >* L’option **Ajouter un pipeline de production** n’est pas disponible s’il n’existe pas encore de pipeline couplé standard.
->* Un seul pipeline dédié uniquement à la production et un seul pipeline dédié uniquement à l’évaluation sont autorisés par programme.
+>* Un seul pipeline en production seule et un seul pipeline intermédiaire sont autorisés par programme.
 
 ### Création d’un pipeline d’étape seule {#stage-only}
 
@@ -75,7 +75,7 @@ Les pipelines dédiés à la production uniquement et à l’évaluation uniquem
 1. Dans le champ Nom du pipeline hors production , saisissez un nom en texte libre.
 1. Sélectionnez les options de déploiement souhaitées, puis cliquez sur **Continuer**.
 
-   ![Onglet Configuration de la boîte de dialogue Ajouter un pipeline hors production &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-1.png)
+   ![Onglet Configuration de la boîte de dialogue Ajouter un pipeline hors production ](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-1.png)
 
 1. Dans l’onglet **Code**, sélectionnez **Code de pile complète**. Cette option crée et déploie l’ensemble de l’application AEM (back-end, configuration de niveau web Dispatcher et tout module front-end du référentiel).
 
@@ -91,7 +91,7 @@ Les pipelines dédiés à la production uniquement et à l’évaluation uniquem
 
    Le contrôle de l’expérience analyse chaque chemin que vous ajoutez en termes de performances, d’accessibilité, d’applications web progressives, de bonnes pratiques, d’optimisation pour les moteurs de recherche et d’autres contrôles qualité. Vous pouvez ajouter plusieurs chemins d’accès et en supprimer en cliquant sur ![icône taille croisée 400](https://spectrum.adobe.com/static/icons/ui_18/CrossSize400.svg).
 
-   ![Onglet Contrôle de l’expérience dans la boîte de dialogue Ajouter un pipeline hors production &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-3.png)
+   ![Onglet Contrôle de l’expérience dans la boîte de dialogue Ajouter un pipeline hors production ](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-3.png)
 
 1. Cliquez sur **Enregistrer**.
 
@@ -135,7 +135,7 @@ Dans les détails d’exécution, un bouton **Promouvoir la version** s’affich
 
 ![Exécution d’un pipeline dédié uniquement à l’évaluation](/help/implementing/cloud-manager/configuring-pipelines/assets/stage-only-pipelines-run.png)
 
-Lorsque vous cliquez sur **Promouvoir la création**, une boîte de dialogue s’ouvre pour vous permettre de confirmer l’exécution du pipeline de production associé. Cliquez sur **Exécuter** pour le démarrer.
+Lorsque vous cliquez sur **Promouvoir la création**, une boîte de dialogue s’ouvre pour vous permettre de confirmer l’exécution du pipeline de production associé. Pour le démarrer, cliquez sur **Exécuter**.
 
 ![Convertir la version - Exécuter le pipeline, boîte de dialogue](/help/implementing/cloud-manager/configuring-pipelines/assets/promote-build-run.png)
 

@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: c4c142a00601c37bb30e1d8774cb25927e5f9838
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 28%
+source-wordcount: '1572'
+ht-degree: 30%
 
 ---
 
@@ -35,7 +35,7 @@ En cliquant sur l’icône ![Points de suspension - Plus](https://spectrum.adobe
 Au bas de la liste des pipelines, vous disposez des options générales suivantes :
 
 * **Ajouter** - Pour [ajouter un nouveau pipeline de production](configuring-production-pipelines.md) ou [ajouter un nouveau pipeline hors production](configuring-non-production-pipelines.md)
-* **Tout afficher** : dirige l’utilisateur vers l’écran Pipelines pour afficher tous les pipelines dans un tableau plus détaillé.
+* **Tout afficher** - Pour afficher tous les pipelines dans un tableau plus détaillé, accédez à l’écran Pipelines.
 * **Accéder aux informations sur le référentiel** : affiche les informations nécessaires pour accéder au référentiel Git de Cloud Manager.
 * **En savoir plus** : permet d’accéder aux ressources de documentation du pipeline CI/CD.
 
@@ -49,7 +49,7 @@ La page **Pipelines** affiche la liste complète de tous les pipelines du progra
 
 1. Sur la page **Aperçu du programme**, cliquez sur ![Onglet Pipeline - Icône de workflow](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Onglet Pipelines**.
 
-1. Sur la page **Pipelines**, vous pouvez voir une liste de tous les pipelines pour le programme et démarrer et arrêter l’exécution du pipeline comme vous le feriez dans la **carte Pipelines**.
+1. Sur la page **Pipelines**, affichez la liste de tous les pipelines du programme et démarrez et arrêtez l’exécution du pipeline comme vous le faites dans la **Carte Pipelines**.
 
 Si un pipeline est en cours d’exécution, cliquez sur ![icône Informations - moyenne](https://spectrum.adobe.com/static/icons/ui_18/InfoMedium.svg) dans la colonne **Statut** pour afficher un pop-up contenant des détails sur l’exécution. Dans le pop-up, cliquez sur **Afficher les détails** pour afficher les [détails de l’exécution du pipeline](#view-details).
 
@@ -75,7 +75,7 @@ Vous pouvez également cliquer sur ![icône Étoile d’un pipeline favori](http
 
 ## Page Activité {#activity}
 
-La page **Activité** affiche une liste complète de toutes les exécutions de pipelines pour le programme sélectionné et d’autres événements de programme importants.
+La page **Activité** affiche une liste complète de toutes les exécutions de pipeline pour le programme sélectionné et d’autres événements de programme importants.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
@@ -99,7 +99,7 @@ Vous pouvez également cliquer sur l’icône ![Points de suspension - Plus](htt
 
 1. Accédez à la carte **Pipelines** à partir de la page **Vue d’ensemble du programme**.
 
-1. Cliquez sur ![icône représentant des points de suspension - Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en regard du pipeline que vous exécutez.
+1. Cliquez sur ![icône représentant des points de suspension - Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en regard du pipeline que vous souhaitez exécuter.
 
 1. Dans le menu déroulant, cliquez sur ![Exécuter - Icône Lecture](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PlayCircle_18_N.svg) **Exécuter**.
 
@@ -107,22 +107,22 @@ Vous pouvez également cliquer sur l’icône ![Points de suspension - Plus](htt
 
 Pour afficher les détails de l’exécution, cliquez de nouveau sur ![icône représentant des points de suspension](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) puis sur **[Afficher les détails](#view-details)**.
 
-Selon le type de pipeline, vous pouvez être en mesure d’annuler l’exécution en cliquant de nouveau sur ![icône représentant des points de suspension &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) plus puis sur **Annuler**.
+Selon le type de pipeline, annulez l’exécution en cliquant de nouveau sur ![icône Points de suspension - Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) puis sur **Annuler**.
 
 ## Exécution de plusieurs pipelines {#run-multiple-pipelines}
 
-Avec Cloud Manager, vous pouvez exécuter plusieurs pipelines simultanément, ce qui améliore l’efficacité du déploiement pour les clients AEM as a Cloud Service. La fonction **Exécuter sélectionné** vous permet de sélectionner plusieurs pipelines et de les déclencher pour qu’ils s’exécutent en même temps. Cela réduit l’effort manuel d’exécution des pipelines individuellement et optimise les workflows de création et de déploiement.
+Avec Cloud Manager, vous pouvez exécuter plusieurs pipelines simultanément, ce qui améliore l’efficacité du déploiement pour les clients AEM as a Cloud Service. La fonction **Exécuter sélectionné** vous permet de sélectionner plusieurs pipelines et de les déclencher pour qu’ils s’exécutent en même temps. Il réduit l’effort manuel d’exécution des pipelines individuellement et optimise les workflows de création et de déploiement.
 
 **Pour exécuter plusieurs pipelines :**
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
-1. Dans le menu de gauche, cliquez sur ![Icône de workflow &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Pipelines**.
+1. Dans le menu de gauche, cliquez sur ![Icône de workflow ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Pipelines**.
 1. Dans le tableau de la page **Pipeline**, cochez les cases en regard des pipelines à exécuter.
-Si nécessaire, cliquez sur ![Icône Filtrer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) funnel **Filtres** pour trier les pipelines par nom ou environnement, ou type de code déployé, ou une combinaison des trois.
+Si nécessaire, cliquez sur ![Icône Filtrer, funnel](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **Filtres** pour trier les pipelines par nom, environnement ou type de code déployé, ou une combinaison des trois.
 1. Dans le coin supérieur droit de la page, cliquez sur **Exécuter la sélection (x)**.
 1. Dans la boîte de dialogue **Exécuter les pipelines sélectionnés (x)**, cliquez sur **Exécuter (x)**.
 
-   Le bouton **Exécuter** indique le nombre de pipelines qui peuvent continuer. Par exemple, vous avez peut-être sélectionné quatre pipelines, mais un est déjà en cours d’exécution. Ou bien, un environnement lié à un pipeline sélectionné n’existe plus. Dans ce cas, le système s’ajuste en conséquence. Le bouton se met à jour sur « Exécuter (3) » pour indiquer que trois pipelines peuvent continuer.
+   Le bouton **Exécuter** indique le nombre de pipelines qui peuvent continuer. Par exemple, vous avez sélectionné quatre pipelines, mais un est déjà en cours d’exécution. Ou bien, un environnement lié à un pipeline sélectionné n’existe plus. Dans ce cas, le système s’ajuste en conséquence. Le bouton se met à jour sur « Exécuter (3) » pour indiquer que trois pipelines peuvent continuer.
 
 1. Les pipelines commencent à s’exécuter et leur statut est mis à jour dans la liste **Pipelines**.
 
@@ -158,20 +158,20 @@ Vous pouvez supprimer un pipeline s’il n’est pas en cours d’exécution.
 
 1. Accédez à la carte **Pipelines** à partir de la page **Vue d’ensemble du programme**.
 
-1. Cliquez sur ![icône représentant des points de suspension - Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en regard du pipeline que vous exécutez.
+1. Cliquez sur ![icône représentant des points de suspension - Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en regard du pipeline que vous souhaitez exécuter.
 
 1. Dans le menu déroulant, cliquez sur **Supprimer**.
 
 
 ## Affichage des détails de la dernière exécution d’un pipeline {#view-details}
 
-Vous pouvez vérifier les détails d’un pipeline pour afficher le statut et les journaux de son exécution la plus récente. Cependant, vous ne pouvez accéder aux détails que si le pipeline est en cours d’exécution ou s’il a été exécuté au moins une fois.
+Pour afficher le statut et les journaux de son exécution la plus récente, vérifiez les détails d’un pipeline. Cependant, vous ne pouvez accéder aux détails que si le pipeline est en cours d’exécution ou s’il a été exécuté au moins une fois.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
 1. Accédez à la carte **Pipelines** à partir de la page **Vue d’ensemble du programme**.
 
-1. Dans le menu déroulant, cliquez sur ![icône représentant des points de suspension - Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en regard du pipeline que vous exécutez.
+1. Dans le menu déroulant, cliquez sur ![icône représentant des points de suspension - Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en regard du pipeline que vous souhaitez exécuter.
 
 1. Dans le menu déroulant, cliquez sur **Afficher la dernière exécution**.
 
@@ -195,7 +195,7 @@ Vous pouvez vérifier les détails d’un pipeline pour afficher le statut et le
 
    ![Problèmes de qualité du code](assets/managing-pipelines-code-quality-issues.png)
 
-   Le fichier CSV comprend une colonne **Emplacement du fichier du projet**, qui indique le chemin d’accès au code problématique relatif au projet. En revanche, la colonne **Emplacement du fichier** reflète le chemin d’accès généré par Maven.
+   Le fichier CSV comprend une colonne **Emplacement du fichier du projet**, qui indique le chemin d’accès au code présentant des problèmes relatifs au projet. La colonne **Emplacement du fichier** reflète le chemin d’accès généré par Maven.
 
    ![Détails des problèmes de l’analyse du code du projet](assets/managing-pipelines-code-quality-details.png)
 
@@ -207,7 +207,7 @@ Vous pouvez annuler en toute sécurité l’exécution du pipeline s’il est en
 
 1. Dans la page d’aperçu du programme, cliquez sur ![icône représentant des points de suspension - Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) du pipeline que vous souhaitez annuler sur la vignette **Pipelines**.
 
-   ![Annulation d’un pipeline &#x200B;](/help/implementing/cloud-manager/assets/cancel-pipeline.png)
+   ![Annulation d’un pipeline ](/help/implementing/cloud-manager/assets/cancel-pipeline.png)
 
 1. Cliquez sur **Annuler**.
 

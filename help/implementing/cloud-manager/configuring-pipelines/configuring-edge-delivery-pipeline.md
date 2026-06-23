@@ -7,7 +7,7 @@ role: Admin, Developer
 index: false
 hidefromtoc: false
 exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
-source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
+source-git-commit: 4f9c0d41fce9ee16aae19077759cea312487513f
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 9%
@@ -26,7 +26,7 @@ Un utilisateur doit disposer du rôle **[Responsable de déploiement](/help/onbo
 
 >[!IMPORTANT]
 >
->Un pipeline Edge Delivery ne peut pas être configuré tant que les actions suivantes n’ont pas été effectuées :
+>Un pipeline Edge Delivery ne peut pas être configuré tant que les conditions suivantes ne sont pas réunies :
 >
 >* Un programme contenant un site Edge Delivery Services et un domaine mappé est créé. Sinon, l’option **Ajouter un pipeline Edge Delivery** apparaît désactivée dans l’interface utilisateur et une info-bulle explique les exigences manquantes. Voir [Création d’un site Edge Delivery dans Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
 >* Le référentiel Git comporte au moins une branche. Voir [Gestion des référentiels dans Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
@@ -55,7 +55,7 @@ Avant de commencer à déployer votre code, configurez les paramètres de votre 
       1. Dans le rail de gauche, sous **Programme**, cliquez sur **![Icône Aperçu](/help/implementing/cloud-manager/configuring-pipelines/assets/overview.svg) [Aperçu](/help/implementing/cloud-manager/navigation.md#my-programs)**.
       1. Sur la page **Aperçu du programme**, sous la vignette **Pipelines**, cliquez sur **![Signe plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)Ajouter**, puis sélectionnez **Ajouter un pipeline Edge Delivery**.
 
-         ![Vignette Pipelines de la page Aperçu du programme &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/assets/pipelinescard-add-ed-pipeline.png)
+         ![Vignette Pipelines de la page Aperçu du programme ](/help/implementing/cloud-manager/configuring-pipelines/assets/pipelinescard-add-ed-pipeline.png)
 
          >[!TIP]
          >
@@ -68,7 +68,7 @@ Avant de commencer à déployer votre code, configurez les paramètres de votre 
       1. Dans le rail de gauche, sous **Programme**, cliquez sur **![Icône de workflow ou Icône de pipelines](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) Pipelines**.
       1. Sur la page Pipelines, près du coin supérieur droit, cliquez sur **Ajouter un pipeline** > **Ajouter un pipeline Edge Delivery**.
 
-         ![Page Pipelines avec le bouton Ajouter un pipeline &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/assets/pipelinespage-add-ed-pipeline.png)
+         ![Page Pipelines avec le bouton Ajouter un pipeline ](/help/implementing/cloud-manager/configuring-pipelines/assets/pipelinespage-add-ed-pipeline.png)
 
          >[!TIP]
          >
@@ -91,12 +91,12 @@ Avant de commencer à déployer votre code, configurez les paramètres de votre 
 
    * **Environnement de déploiement** - Affiche le champ de l’environnement cible ; reste en lecture seule.
 
-   * **Référentiel** - Utilisez la liste déroulante pour pointer le pipeline vers le référentiel Git exact qui stocke la configuration Edge Delivery.
+   * **Référentiel** - Utilisez la liste déroulante pour pointer le pipeline vers le référentiel Git qui stocke la configuration Edge Delivery.
 
      Voir aussi [Ajouter et gérer des référentiels](/help/implementing/cloud-manager/managing-code/managing-repositories.md) pour savoir comment ajouter et gérer des référentiels dans Cloud Manager.
 
-   * **Branche Git** - Utilisez la liste déroulante pour sélectionner une branche spécifique dans le référentiel sélectionné. Si nécessaire, cliquez sur ![icône de recyclage ou icône d’actualisation](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) pour recharger la liste déroulante Branche Git après les notifications push récentes.
-   * **Emplacement du code** - Définit le chemin du dossier à l’intérieur du référentiel où commence le code prêt pour le pipeline ( `/` est égal à la racine du référentiel).
+   * **Branche Git** - Utilisez la liste déroulante pour sélectionner une branche spécifique dans le référentiel sélectionné. Si nécessaire, cliquez sur ![icône de recyclage ou icône d’actualisation](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) pour mettre à jour la liste déroulante Branche Git après les validations récentes.
+   * **Emplacement du code** - Définit le chemin d’accès au dossier à l’intérieur du référentiel où commence le code prêt pour le pipeline ( `/` est égal à la racine du référentiel).
 
    ![Configurer le pipeline](/help/implementing/cloud-manager/configuring-pipelines/assets/add-edge-delivery-pipeline-sourcecode.png)
 

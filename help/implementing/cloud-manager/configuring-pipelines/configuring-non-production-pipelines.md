@@ -6,10 +6,10 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
+source-git-commit: 0171e2e6a27a8b60bcd94792e616961598f580fb
 workflow-type: tm+mt
-source-wordcount: '1729'
-ht-degree: 21%
+source-wordcount: '1712'
+ht-degree: 18%
 
 ---
 
@@ -54,13 +54,13 @@ Après avoir configuré un programme et créé au moins un environnement dans l�
 1. Sélectionnez le **Comportement en cas d’échecs de mesure importants** à utiliser.
 
    * **Demander à chaque fois** – Ce comportement est le paramètre par défaut qui nécessite une intervention manuelle lors de tout échec important.
-   * **Défaillance immédiate** – Si cette option est sélectionnée, le pipeline sera interrompu dès qu’une défaillance importante aura lieu. Il émule essentiellement un utilisateur rejetant manuellement chaque échec.
-   * **Continuer immédiatement** – Si cette option est sélectionnée, le pipeline se poursuivra automatiquement chaque fois qu’une défaillance importante se produira. Il émule essentiellement la validation manuelle de chaque échec par un utilisateur.
+   * **Défaillance immédiate** – Si cette option est sélectionnée, le pipeline sera interrompu dès qu’une défaillance importante aura lieu. Il émule un utilisateur rejetant manuellement chaque échec.
+   * **Continuer immédiatement** - si cette option est sélectionnée, le pipeline se poursuit automatiquement chaque fois qu’un échec important se produit. Il émule un utilisateur approuvant manuellement chaque échec.
 
 1. Cliquez sur **Continuer**.
 
 1. Les étapes restantes que vous utilisez pour terminer la configuration de votre pipeline hors production dépendent du type de code source que vous choisissez d’utiliser.
-Sous l’onglet **Code** de la boîte de dialogue **Ajouter un pipeline hors production**, sélectionnez le type de code que le pipeline hors production doit traiter.
+Sous l’onglet **Code** de la boîte de dialogue **Ajouter un pipeline hors production**, sélectionnez le type de code que le pipeline hors production traite.
 
    * **[J’utilise le code de pile complète](#full-stack-code)**
    * **[J’utilise le déploiement ciblé](#targeted-deployment)**
@@ -80,14 +80,14 @@ Pour terminer la configuration du pipeline hors production de code full stack, p
 
 1. Dans la section **Code**, définissez les options suivantes.
 
-   * **Environnements de déploiement éligibles** - Disponible uniquement lorsque vous modifiez un pipeline hors production. Si votre pipeline est un pipeline de déploiement, vous devez sélectionner les environnements à déployer.
+   * **Environnements de déploiement éligibles** - Disponible uniquement lorsque vous modifiez un pipeline hors production. Si votre pipeline est un pipeline de déploiement, sélectionnez les environnements vers lesquels il déploie.
    * **Référentiel** - Dans la liste déroulante, sélectionnez le référentiel Git que le pipeline utilise comme source. Cloud Manager crée le code à partir du référentiel que vous choisissez ici.
 
      >[!TIP]
      > 
      >Consultez [Ajout et gestion de référentiels](/help/implementing/cloud-manager/managing-code/managing-repositories.md) pour découvrir comment ajouter et gérer des référentiels dans Cloud Manager.
 
-   * **Branche Git** - Dans la liste déroulante, choisissez la branche du référentiel sélectionné à partir de laquelle le pipeline doit être créé. La valeur par défaut est `main`. Le pipeline utilise la branche choisie comme source pour la création et le déploiement. Si nécessaire, cliquez sur **Actualiser** pour mettre à jour la liste des branches disponibles pour le référentiel sélectionné. Utilisez cette option si une branche créée récemment n’apparaît pas dans la liste.
+   * **Branche Git** - Dans la liste déroulante, choisissez la branche du référentiel sélectionné à partir duquel le pipeline se construit. La valeur par défaut est `main`. Le pipeline utilise la branche choisie comme source pour la création et le déploiement. Si nécessaire, cliquez sur **Actualiser** pour mettre à jour la liste des branches disponibles pour le référentiel sélectionné. Utilisez cette option si une branche créée récemment n’apparaît pas dans la liste.
    * **Créer une stratégie**
       * **Version complète** - Génère tous les modules du référentiel à chaque fois
       * BETA **Smart Build** - crée uniquement les modules qui ont été modifiés depuis la dernière validation.<br>En savoir plus sur [l’utilisation de la création intelligente dans un pipeline hors production](#about-smart-build-non-production-pipeline).
@@ -109,8 +109,7 @@ Pour terminer la configuration du pipeline hors production de code full stack, p
 
 1. Cliquez sur **Enregistrer**.
 
-Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines]&#x200B;(managing-pipe
-lines.md) sur la carte **Pipelines** sur la page **Présentation du programme**.
+Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](managing-pipelines.md) sur la carte **Pipelines** sur la page **Aperçu du programme**.
 
 ### J’utilise le déploiement ciblé {#targeted-deployment}
 
@@ -153,14 +152,14 @@ The steps to complete the creation of your non-production, targeted deployment p
 
 1. Dans la section **Code**, définissez les options suivantes :
 
-   * **Référentiel** - cette option définit à partir de quel référentiel GIT le pipeline hors production doit récupérer le code.
+   * **Référentiel** - cette option définit le référentiel GIT à partir duquel le pipeline hors production récupère le code.
 
      >[!TIP]
      > 
      >Consultez [Ajout et gestion de référentiels](/help/implementing/cloud-manager/managing-code/managing-repositories.md) pour découvrir comment ajouter et gérer des référentiels dans Cloud Manager.
 
-   * **Branche Git** – Cette option définit à partir de quelle branche le pipeline sélectionné doit récupérer le code. Saisissez les premiers caractères du nom de la branche et la fonction de saisie automatique de ce champ. Elle trouve les branches correspondantes que vous pouvez sélectionner.
-   * **Emplacement du code** - Cette option définit le chemin d’accès dans la branche du référentiel sélectionné à partir duquel le pipeline doit récupérer le code.
+   * **Branche Git** - cette option définit la branche à partir de laquelle le pipeline sélectionné récupère le code. Saisissez les premiers caractères du nom de la branche et utilisez la fonction de saisie automatique de ce champ. Elle trouve les branches correspondantes que vous pouvez sélectionner.
+   * **Emplacement du code** - Cette option définit le chemin d’accès dans la branche du référentiel sélectionné à partir duquel le pipeline récupère le code.
 
 <!--
    * **Pipeline** - For front-end non-production pipelines, you have the option to enable **[Experience Audit](/help/implementing/cloud-manager/reports/report-experience-audit.md)**.
@@ -168,7 +167,7 @@ The steps to complete the creation of your non-production, targeted deployment p
    ![Config pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 -->
 
-1. Si vous avez activé le contrôle de l’expérience, cliquez sur **Continuer** pour accéder à l’onglet **Contrôle de l’expérience** où vous pouvez définir les chemins qui doivent toujours être inclus dans le contrôle de l’expérience.
+1. Si vous avez activé le contrôle de l’expérience, cliquez sur **Continuer** pour accéder à l’onglet **Contrôle de l’expérience**. Définissez les chemins qui sont toujours inclus dans le contrôle de l’expérience.
 
    * Si vous avez activé **contrôle de l’expérience**, consultez le document [contrôle de l’expérience](/help/implementing/cloud-manager/reports/report-experience-audit.md) pour plus d’informations sur la configuration.
    * Si ce n’est pas le cas, ignorez cette étape.
@@ -210,7 +209,7 @@ Le gain de performances de l’utilisation de la création dynamique dépend de 
 * La fréquence et l’étendue des modifications de code.
 * La distribution des dépendances entre les modules.
 
-En règle générale, les projets comportant de nombreux modules indépendants peuvent bénéficier de la plus grande amélioration.
+Les projets comportant de nombreux modules indépendants présentent la plus grande amélioration.
 
 ### Désinscription du cache par module{#smart-build-cache-optout}
 
@@ -230,15 +229,15 @@ Vous pouvez ajouter la propriété suivante au `pom.xml` du module concerné :
 </properties>
 ```
 
-Cette syntaxe force le module à se recréer à chaque exécution de pipeline tandis que les autres modules continuent à bénéficier de la mise en cache.
+Cette configuration nécessite que le module soit recréé à chaque exécution de pipeline, tandis que les autres modules continuent à bénéficier de la mise en cache.
 
 ### Restrictions et considérations lors de l’utilisation de la création dynamique{#smart-build-limitations}
 
 Gardez les points suivants à l’esprit lorsque vous utilisez la création dynamique :
 
 * Smart Build repose sur l’analyse des dépendances Maven.
-* Les modifications en dehors du graphique de dépendance peuvent ne pas déclencher de reconstructions.
-* Certains plug-ins peuvent ne pas être entièrement compatibles avec la mise en cache.
+* Les modifications en dehors du graphique de dépendance ne déclenchent pas de reconstructions.
+* Certains plug-ins ne sont pas entièrement compatibles avec la mise en cache.
 * Vous pouvez revenir à la **version complète** à tout moment en modifiant le pipeline hors production.
 
 Si vous rencontrez un comportement de build inattendu, envisagez de désactiver la mise en cache de modules spécifiques ou de changer temporairement votre stratégie de build en **Version complète**.
@@ -251,7 +250,7 @@ Si vous rencontrez un comportement de build inattendu, envisagez de désactiver 
 | Aucune amélioration des performances | · Assurez-vous que plusieurs exécutions ont eu lieu (préchauffage du cache).<br>· Vérifiez si la plupart des modules changent fréquemment. |
 | Artefacts inattendus ou modifications manquantes | · Vérifiez si les modifications ne se trouvent pas en dehors du suivi des dépendances Maven.<br>· Utilisez **Version complète** pour la vérification. |
 
-Voir [Ajouter un pipeline hors production](#adding-non-production-pipeline) pour activer la création intelligente.
+Voir [Ajouter un pipeline hors production](#add-non-production-pipeline) pour activer la création intelligente.
 
 
 
@@ -348,9 +347,9 @@ The pipeline is saved and you can now [manage your pipelines](managing-pipelines
 
 ## Exclure les packages Dispatcher {#exclude-dispatcher-packages}
 
-Si vous souhaitez que les packages Dispatcher soient créés dans votre pipeline mais ne soient pas chargés pour créer du stockage, désactivez la publication. Cela peut raccourcir le temps d’exécution du pipeline.
+Si vous souhaitez que les packages Dispatcher soient créés dans votre pipeline mais ne soient pas chargés pour créer du stockage, désactivez la publication. Cette configuration peut réduire le temps d’exécution du pipeline.
 
-Ajoutez la configuration suivante à votre fichier de `pom.xml` de projet pour désactiver la publication des packages Dispatcher. Définissez une variable d’environnement dans le conteneur de création Cloud Manager pour indiquer quand ignorer les packages Dispatcher. Le pipeline lit cet indicateur et l’ignore en conséquence.
+Pour désactiver la publication des packages Dispatcher, ajoutez la configuration suivante à votre fichier de `pom.xml` de projet. Définissez une variable d’environnement dans le conteneur de création Cloud Manager pour indiquer quand ignorer les packages Dispatcher. Le pipeline lit cet indicateur et l’ignore en conséquence.
 
 ```xml
 <profile>
