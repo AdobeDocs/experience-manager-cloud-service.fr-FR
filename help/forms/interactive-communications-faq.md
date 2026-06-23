@@ -75,7 +75,7 @@ Oui. Cliquez avec le bouton droit sur la cellule fusionnée, sélectionnez **Fra
 ## Page Principal
 
 **Q : Comment puis-je faire apparaître un composant sur chaque page d’une communication interactive ?**
-Déplacez le composant vers le gabarit de page. Cliquez avec le bouton droit de la souris sur un composant éligible d’une page de conception et sélectionnez **Déplacer vers > Page de Principal**. Le composant est supprimé de la page de conception et placé sur le gabarit de page à la même position visuelle, afin qu’il apparaisse de manière cohérente sur toutes les pages qui partagent ce gabarit de page. Voir [Déplacer un composant vers la page de Principal ](/help/forms/interactive-communication/howto/move-component-to-master-page.md).
+Déplacez le composant vers le gabarit de page. Cliquez avec le bouton droit de la souris sur un composant éligible d’une page de conception et sélectionnez **Déplacer vers > Page de Principal**. Le composant est supprimé de la page de conception et placé sur le gabarit de page à la même position visuelle, afin qu’il apparaisse de manière cohérente sur toutes les pages qui partagent ce gabarit de page. Voir [Déplacer un composant vers la page de Principal &#x200B;](/help/forms/interactive-communication/howto/move-component-to-master-page.md).
 
 **Q : Quels types de composants ne peuvent pas être déplacés vers le gabarit de page ?**
 Les types suivants ne sont pas éligibles à l’action Déplacer vers la page de Principal : zones de contenu, zones de page, ensembles de pages, fragments, sous-formulaire, lignes de tableau, cellules de tableau et boutons radio. Les composants dotés d’un verrouillage de contenu ou de disposition ne sont pas éligibles non plus.

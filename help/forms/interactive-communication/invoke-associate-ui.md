@@ -30,7 +30,7 @@ Avant d’intégrer l’interface utilisateur associée à votre application, v�
 >[!NOTE]
 >
 >- Cet article illustre la configuration de l’authentification à l’aide de SAML 2.0 avec [Microsoft Entra ID (Azure AD) comme fournisseur d’identité](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings).
->- Pour l’interface utilisateur associée, des configurations SAML supplémentaires sont requises en plus de la configuration standard expliquée dans l’article [ Authentification SAML 2.0 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0). Consultez la section [Configurations SAML supplémentaires pour l’interface utilisateur associée](#additional-saml-configurations-for-associate-ui) pour plus d’informations.
+>- Pour l’interface utilisateur associée, des configurations SAML supplémentaires sont requises en plus de la configuration standard expliquée dans l’article [&#x200B; Authentification SAML 2.0 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0). Consultez la section [Configurations SAML supplémentaires pour l’interface utilisateur associée](#additional-saml-configurations-for-associate-ui) pour plus d’informations.
 
 ### Configurations SAML supplémentaires pour l’interface utilisateur associée
 

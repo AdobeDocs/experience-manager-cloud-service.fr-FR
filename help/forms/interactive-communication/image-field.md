@@ -20,7 +20,7 @@ ht-degree: 5%
 
 Le composant Champ d’image de l’éditeur de communication interactive permet aux auteurs d’insérer des images dans une disposition de communication. Elle est idéale pour les cas d’utilisation tels que l’identification par photo, la vérification de documents ou la validation visuelle, où l’affichage d’une image est essentiel pour l’utilisateur final.
 
-Prenant en charge des formats courants tels que **** et **PNG**, ce composant offre des options de configuration flexibles pour définir l’affichage, le stockage et le style de l’image. Les auteurs peuvent également **attribuer un nom ou un libellé** au champ d’image, ce qui améliore la clarté et l’organisation de la disposition.
+Prenant en charge des formats courants tels que **&#x200B;**&#x200B;et **PNG**, ce composant offre des options de configuration flexibles pour définir l’affichage, le stockage et le style de l’image. Les auteurs peuvent également **attribuer un nom ou un libellé** au champ d’image, ce qui améliore la clarté et l’organisation de la disposition.
 
 ![Rechercher un document IC](/help/forms/interactive-communication/assets/imagefield.png)
 
