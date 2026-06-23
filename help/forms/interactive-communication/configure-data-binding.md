@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 81779df9-c101-4c39-a779-651cafc70eb9
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 2%
@@ -77,3 +77,4 @@ Les auteurs sélectionnent généralement le FDM au début du projet, mappent vi
 - **Sécuriser les données sensibles :** appliquer le masquage, le chiffrement et l’accès avec les privilèges les plus faibles aux informations d’identification personnelles ou aux détails de paiement.
 
 En configurant soigneusement la liaison de données, les auteurs créent un lien fiable entre la conception et les données, ce qui accélère la création de communications, garantit la précision et fournit des expériences hautement personnalisées à grande échelle.
+

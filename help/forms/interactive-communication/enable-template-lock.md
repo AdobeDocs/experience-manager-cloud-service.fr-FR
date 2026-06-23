@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 7c7461fe-a5d7-481e-b5f5-27fd5bcde2d0
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 2%
@@ -93,3 +93,4 @@ Enregistrez le modèle et créez un code interactif basé sur celui-ci pour conf
 - [Déplacer un composant vers la page de Principal](/help/forms/interactive-communication/howto/move-component-to-master-page.md)
 - [Implémentation de la numérotation dynamique de page dans l’éditeur de communication interactive](/help/forms/interactive-communication/implement-dynamic-page-numbering.md)
 - [Créer un modèle de communication interactive](/help/forms/interactive-communication/create-interactive-communication-template.md)
+

@@ -8,7 +8,7 @@ hide: true
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 127abe2a-d8cf-4488-959f-f7316a8ddc3e
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 1%
@@ -81,3 +81,4 @@ Après avoir collé la communication interactive :
 - Vérifiez les liaisons de données et les canaux de sortie après les avoir copiés pour vous assurer qu’ils sont corrects.
 
 La fonctionnalité Copier et coller de la communication interactive simplifie la réutilisation et la personnalisation en permettant aux auteurs de dupliquer les IC existants et de les modifier indépendamment. Il permet un développement plus rapide, une expérimentation plus sûre et une diffusion de communication cohérente, sans risquer de modifier la communication interactive d’origine.
+

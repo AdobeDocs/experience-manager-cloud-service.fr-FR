@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 7ac93d8c-5454-4789-a7cd-438571a9ff28
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '865'
 ht-degree: 5%
@@ -176,3 +176,4 @@ Le composant Champ de date et d’heure de l’éditeur de communication interac
 - [Composant de variable non lié](/help/forms/interactive-communication/unbound-variable.md)
 - [Configurer la liaison de données dans l’éditeur de communication interactive](/help/forms/interactive-communication/configure-data-binding.md)
 - [Utiliser l’éditeur de règles dans l’éditeur de communication interactive](/help/forms/interactive-communication/use-the-rule-editor.md)
+

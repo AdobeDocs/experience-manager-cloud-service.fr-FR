@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e4a81d514422497ec3f41537e3a2e57677730af5
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '7545'
 ht-degree: 84%
@@ -1716,3 +1716,4 @@ ht-degree: 84%
       + [Guide rapide relatif à WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
 + Résolution des problèmes {#troubleshooting}
    + {hide-from-toc}[Résolution des problèmes AEM Assets et Forms](/help/troubleshooting/home.md)
+

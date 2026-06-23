@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 9ba58659-b14c-4ebc-a6d9-e56a4b6aa48b
-source-git-commit: 45b33b8a5afe8ff329f76b65d7e5bd7dea0dcc17
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 3%
@@ -110,3 +110,4 @@ En associant une conception intuitive, une configuration d’arrière-plan robus
 - [Configuration des variables liées et non liées pour l’interface utilisateur associée](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md)
 - [Intégrer l’interface utilisateur associée à votre application](/help/forms/interactive-communication/invoke-associate-ui.md)
 - [Workflow de soumission pour Associate UI — IC Generate PDF Output](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
+

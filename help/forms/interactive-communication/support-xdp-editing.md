@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 8dd024aa-d0c1-4e8b-b9f2-ad67c20cdd88
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 2%
@@ -70,3 +70,4 @@ Les auteurs peuvent **glisser-déposer** ces fragments directement sur la zone d
 - Utilisez le contrôle de version pour gérer les mises à jour dans les dépendances XDP et des fragments.
 
 - Validez les liaisons de données après modification pour confirmer un rendu correct.
+

@@ -4,7 +4,7 @@ description: Questions fréquentes sur les communications interactives dans AEM 
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: 4cc1bff3-edfb-4826-b914-2a2231b703f9
-source-git-commit: 8043d0bd709962023f4828a6fffa2939788538b2
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 5%
@@ -79,3 +79,4 @@ Déplacez le composant vers le gabarit de page. Cliquez avec le bouton droit de 
 
 **Q : Quels types de composants ne peuvent pas être déplacés vers le gabarit de page ?**
 Les types suivants ne sont pas éligibles à l’action Déplacer vers la page de Principal : zones de contenu, zones de page, ensembles de pages, fragments, sous-formulaire, lignes de tableau, cellules de tableau et boutons radio. Les composants dotés d’un verrouillage de contenu ou de disposition ne sont pas éligibles non plus.
+

@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 9538ae2e-e0f5-4e85-943e-00fe99a64725
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 2%
@@ -103,3 +103,4 @@ L’éditeur de règles est largement utilisé pour s’assurer que les formulai
 
 
 En configurant les règles de manière réfléchie, les auteurs peuvent créer des communications qui répondent intelligemment aux données et aux actions des utilisateurs, en rationalisant les processus, en réduisant les erreurs et en offrant une expérience personnalisée et transparente.
+
