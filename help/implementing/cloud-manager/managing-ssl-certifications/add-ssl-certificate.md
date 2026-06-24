@@ -19,7 +19,7 @@ Découvrez comment ajouter votre propre certificat SSL ou un certificat DV (Vali
 
 >[!NOTE]
 >
->Si vous utilisez un certificat SSL géré par le client (OV/EV) et un fournisseur de réseau CDN géré par le client, vous pouvez ignorer l’ajout d’un certificat SSL et accéder directement à [ Ajouter un mappage de domaine ](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md) lorsque vous êtes prêt.
+>Si vous utilisez un certificat SSL géré par le client (OV/EV) et un fournisseur de réseau CDN géré par le client, vous pouvez ignorer l’ajout d’un certificat SSL et accéder directement à [&#x200B; Ajouter un mappage de domaine &#x200B;](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md) lorsque vous êtes prêt.
 
 L’approvisionnement d’un certificat peut prendre plusieurs jours. Par conséquent, Adobe conseille de configurer votre propre certificat bien avant l’échéance ou la date de mise en production afin d’éviter tout retard.
 
@@ -55,7 +55,7 @@ Voir aussi [Présentation des certificats SSL](/help/implementing/cloud-manager/
 
 ## Ajout d’un certificat SSL géré par Adobe (DV) {#add-adobe-managed-ssl-cert}
 
-Vous avez besoin d’aide pour choisir d’utiliser un certificat SSL géré par Adobe (recommandé) ou un certificat SSL géré par le client avec votre domaine ? Voir [ Choix du certificat SSL à ajouter](#which-ssl-to-add)
+Vous avez besoin d’aide pour choisir d’utiliser un certificat SSL géré par Adobe (recommandé) ou un certificat SSL géré par le client avec votre domaine ? Voir [&#x200B; Choix du certificat SSL à ajouter](#which-ssl-to-add)
 
 **Pour ajouter un certificat SSL géré par Adobe (DV), procédez comme suit**
 
@@ -91,7 +91,7 @@ Vous êtes maintenant prêt à ajouter une [configuration CDN](/help/implementin
 
 <!-- IF THIS TOPIC GET UPDATED, REMEMBER TO UPDATE THE STEPS ALSO IN THE "MANAGE SSL CERTIFICATES TOPIC TOO -->
 
-Vous avez besoin d’aide pour choisir d’utiliser un certificat SSL géré par Adobe (recommandé) ou un certificat SSL géré par le client avec votre domaine ? Voir [ Choix du certificat SSL à ajouter](#which-ssl-to-add)
+Vous avez besoin d’aide pour choisir d’utiliser un certificat SSL géré par Adobe (recommandé) ou un certificat SSL géré par le client avec votre domaine ? Voir [&#x200B; Choix du certificat SSL à ajouter](#which-ssl-to-add)
 
 >[!IMPORTANT]
 >
@@ -120,7 +120,7 @@ Ce champ est fourni uniquement à titre d’information. Il peut s’agir de n�
 
    Toutes les erreurs détectées dans les valeurs s’affichent. Avant de pouvoir enregistrer votre certificat, vous devez corriger toutes les erreurs. Pour en savoir plus sur la résolution des erreurs courantes, voir [Erreurs de certificat](#certificate-errors).
 
-   ![ Boîte de dialogue Ajouter un certificat SSL ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)|
+   ![&#x200B; Boîte de dialogue Ajouter un certificat SSL &#x200B;](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)|
 
 1. Dans l’angle inférieur droit de la boîte de dialogue, cliquez sur **Enregistrer**.
 
