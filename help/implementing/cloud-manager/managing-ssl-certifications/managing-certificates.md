@@ -5,9 +5,9 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
+source-git-commit: 51b9e7fd6fd51ee3565ff2c563e6d0c8a6283389
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1103'
 ht-degree: 16%
 
 ---
@@ -21,9 +21,9 @@ Découvrez comment utiliser Cloud Manager pour vérifier le statut de vos certi
 
 Cloud Manager donne un aperçu du statut de tous les certificats de votre programme.
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez le programme approprié.
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme.
-1. Dans le coin supérieur gauche de la page, cliquez sur ![Afficher l’icône de menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) pour afficher le menu latéral.
+1. Dans le coin supérieur gauche de la page, cliquez sur ![Afficher l’icône de menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) pour ouvrir le menu latéral.
 1. Sous l’en-tête **Services**, cliquez sur ![Icône Verrouiller fermé](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **Certificats SSL**.
 
 La page **Certificats SSL** fournit le statut de vos certificats SSL.
@@ -36,13 +36,13 @@ La page **Certificats SSL** fournit le statut de vos certificats SSL.
 
 ## Mettre à jour un certificat SSL expiré géré par le client {#update-ssl-certificate}
 
-Lorsqu’un certificat géré par le client expire, les domaines utilisés avec le certificat expiré ne fonctionnent plus. La mise à jour de vos certificats garantit que votre domaine continue à fonctionner comme vous le souhaitez.
+Lorsqu’un certificat géré par le client expire, les domaines utilisés avec le certificat expiré ne fonctionnent plus. La mise à jour de vos certificats garantit le bon fonctionnement de votre domaine.
 
 Un utilisateur doit disposer du rôle **Propriétaire de l’entreprise** ou **Responsable de déploiement** pour terminer cette tâche.
 
 >[!IMPORTANT]
 >
->Lors de l’ajout ou de la mise à jour d’un certificat SSL, n’incluez pas le nouveau certificat dans la chaîne de certificats. Son inclusion empêche le chargement de s’effectuer correctement.
+>Lors de l’ajout ou de la mise à jour d’un certificat SSL, n’incluez pas le nouveau certificat dans la chaîne de certificats. Son inclusion empêche le chargement de se terminer.
 
 **Pour mettre à jour un certificat SSL expiré géré par le client :**
 
@@ -57,7 +57,7 @@ Un utilisateur doit disposer du rôle **Propriétaire de l’entreprise** ou **R
 1. Dans la boîte de dialogue **Afficher et mettre à jour le certificat SSL**, procédez comme suit :
 
    * (Facultatif) Dans le champ **Nom du certificat**, saisissez un nouveau nom.
-   * Dans le champ **Certificat**, collez la nouvelle clé de contenu du certificat.
+   * Dans le champ **Certificat**, collez le nouveau contenu du certificat.
    * Dans le champ **Clé privée**, mettez à jour ce champ uniquement si vous avez apporté des modifications au certificat.
    * Dans le champ **Chaîne de certificats** (ou chaîne de confiance), collez la chaîne de certificats.
 
@@ -80,7 +80,7 @@ Voici quelques raisons de renommer un certificat SSL :
 
 * **Amélioration de l’organisation** : la modification du nom du certificat peut aider à clarifier son objectif, comme l’identification de l’environnement (par exemple, d’évaluation, de production) ou du domaine auquel il correspond.
 * **Pour éviter toute confusion** : si vous gérez plusieurs certificats, un nom clair et descriptif peut vous aider à éviter les erreurs, comme l’application du mauvais certificat au mauvais domaine.
-* **Conformité et audit** : le suivi de certificats correctement nommés peut être plus facile à effectuer à des fins de sécurité et d’audit.
+* **Conformité et audit** : les certificats correctement nommés sont plus faciles à suivre à des fins de sécurité et d’audit.
 
 **Pour renommer un certificat SSL géré par Adobe, procédez comme suit**
 
@@ -107,7 +107,7 @@ La suppression des certificats SSL gérés par Adobe ou gérés par le client de
 
 >[!NOTE]
 >
->Vous ne pouvez pas supprimer un certificat SSL géré par Adobe associé à un ou plusieurs domaines actifs. Tous les domaines actifs associés doivent être supprimés avant de supprimer le certificat SSL. Voir [Gérer les noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) pour en savoir plus.
+>Vous ne pouvez pas supprimer un certificat SSL géré par Adobe associé à un ou plusieurs domaines actifs. Tous les domaines actifs associés doivent être supprimés avant de supprimer le certificat SSL. Pour en savoir plus, voir [Gestion des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md).
 
 Un utilisateur doit disposer du rôle **Propriétaire de l’entreprise** ou **Responsable de déploiement** pour terminer cette tâche.
 
@@ -129,14 +129,14 @@ Un utilisateur doit disposer du rôle **Propriétaire de l’entreprise** ou **R
 
 1. Dans la boîte de dialogue **Supprimer le certificat SSL**, cliquez sur **Supprimer** pour confirmer la suppression.
 
-1. Exécutez le pipeline pour annuler le déploiement du certificat supprimé.
+1. Pour annuler le déploiement du certificat supprimé, exécutez le pipeline.
 
 
 ## Configurations de réseau CDN préexistantes {#pre-existing-cdn}
 
 Si vous disposez déjà d’une configuration de réseau CDN pour votre certificat SSL, la page **Certificats SSL** affiche un message d’information. Cela vous incite à ajouter ces configurations par le biais de l’interface utilisateur afin qu’elles soient visibles et gérables dans Cloud Manager.
 
-Le message disparaît une fois que toutes les configurations d’environnement préexistantes ont été migrées à l’aide de l’interface utilisateur. La disparition du message peut prendre un à deux jours ouvrables.
+Le message disparaît une fois que toutes les configurations d’environnement préexistantes ont été migrées à l’aide de l’interface utilisateur. Le message est supprimé dans un délai d’un à deux jours ouvrables.
 
 Voir [Ajouter un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) pour plus d’informations.
 
