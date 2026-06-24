@@ -5,9 +5,9 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
+source-git-commit: b0f6e6920c66d7972ccf3da35818636b1ee304cf
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1015'
 ht-degree: 7%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 7%
 
 # Ajouter un certificat SSL
 
-Découvrez comment ajouter votre propre certificat SSL ou un certificat DV (validation de domaine) géré par Adobe à l’aide de Cloud
+Découvrez comment ajouter votre propre certificat SSL ou un certificat DV (Validation de domaine) géré par Adobe à l’aide de Cloud
 
 >[!NOTE]
 >
->Si vous utilisez un certificat SSL géré par le client (OV/EV) et un fournisseur de réseau CDN géré par le client, vous pouvez ignorer l’ajout d’un certificat SSL et accéder directement à [&#x200B; Ajouter un mappage de domaine &#x200B;](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md) lorsque vous êtes prêt.
+>Si vous utilisez un certificat SSL géré par le client (OV/EV) et un fournisseur de réseau CDN géré par le client, vous pouvez ignorer l’ajout d’un certificat SSL et accéder directement à [ Ajouter un mappage de domaine ](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md) lorsque vous êtes prêt.
 
 L’approvisionnement d’un certificat peut prendre plusieurs jours. Par conséquent, Adobe conseille de configurer votre propre certificat bien avant l’échéance ou la date de mise en production afin d’éviter tout retard.
 
@@ -49,13 +49,13 @@ Une fois ajouté à Cloud Manager, attendez qu’Adobe émette et installe le ce
    * Après l’acquisition du certificat, [ajoutez les détails de votre certificat SSL géré par le client (OV/EV)](#add-customer-managed-ssl-cert) dans Cloud Manager.
    * Une fois ajouté, le nom de domaine personnalisé est marqué comme vérifié et le certificat SSL est appliqué.
 
-Dans les deux cas, une fois le certificat vérifié et installé, le domaine personnalisé peut être utilisé en toute sécurité dans votre environnement. Veillez à [vérifier régulièrement le statut du domaine](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) dans l’interface de Cloud Manager pour confirmer que tout fonctionne comme prévu.
+Dans les deux cas, une fois le certificat vérifié et installé, le domaine personnalisé peut être utilisé en toute sécurité dans votre environnement. Veillez à [vérifier régulièrement le statut du domaine](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) dans l’interface de Cloud Manager. Cela confirme que la configuration fonctionne comme prévu.
 
 Voir aussi [Présentation des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md).
 
 ## Ajout d’un certificat SSL géré par Adobe (DV) {#add-adobe-managed-ssl-cert}
 
-Vous avez besoin d’aide pour choisir d’utiliser un certificat SSL géré par Adobe (recommandé) ou un certificat SSL géré par le client avec votre domaine ? Voir [&#x200B; Choix du certificat SSL à ajouter](#which-ssl-to-add)
+Vous avez besoin d’aide pour choisir d’utiliser un certificat SSL géré par Adobe (recommandé) ou un certificat SSL géré par le client avec votre domaine ? Voir [ Choix du certificat SSL à ajouter](#which-ssl-to-add)
 
 **Pour ajouter un certificat SSL géré par Adobe (DV), procédez comme suit**
 
@@ -83,15 +83,15 @@ Vous avez besoin d’aide pour choisir d’utiliser un certificat SSL géré par
 
    Une fois le certificat SSL émis avec succès, il s’affiche avec une coche verte Valide dans le tableau **Certificats SSL**.
 
-Vous avez maintenant ajouté un certificat SSL géré par Adobe pour votre projet. Cette étape est souvent la première à configurer un nom de domaine personnalisé.
+Vous avez ajouté un certificat SSL géré par Adobe pour votre projet. Cette étape est souvent la première étape pour configurer un nom de domaine personnalisé.
 
 Vous êtes maintenant prêt à ajouter une [configuration CDN](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md).
 
-## Ajout d’un certificat SSL géré par le client (OV/ED) {#add-customer-managed-ssl-cert}
+## Ajouter un certificat SSL géré par le client (OV/EV) {#add-customer-managed-ssl-cert}
 
 <!-- IF THIS TOPIC GET UPDATED, REMEMBER TO UPDATE THE STEPS ALSO IN THE "MANAGE SSL CERTIFICATES TOPIC TOO -->
 
-Vous avez besoin d’aide pour choisir d’utiliser un certificat SSL géré par Adobe (recommandé) ou un certificat SSL géré par le client avec votre domaine ? Voir [&#x200B; Choix du certificat SSL à ajouter](#which-ssl-to-add)
+Vous avez besoin d’aide pour choisir d’utiliser un certificat SSL géré par Adobe (recommandé) ou un certificat SSL géré par le client avec votre domaine ? Voir [ Choix du certificat SSL à ajouter](#which-ssl-to-add)
 
 >[!IMPORTANT]
 >
@@ -118,9 +118,9 @@ Ce champ est fourni uniquement à titre d’information. Il peut s’agir de n�
 
 1. Dans les champs **Certificat**, **Clé privée** et **Chaîne de certificat**, copiez les valeurs requises à partir de votre certificat SSL OV ou EV et collez-les dans leurs champs respectifs dans la boîte de dialogue.
 
-   Toutes les erreurs détectées dans les valeurs s’affichent. Avant de pouvoir enregistrer votre certificat, vous devez corriger toutes les erreurs. Voir [Erreurs de certificat](#certificate-errors) pour en savoir plus sur la résolution des erreurs courantes.
+   Toutes les erreurs détectées dans les valeurs s’affichent. Avant de pouvoir enregistrer votre certificat, vous devez corriger toutes les erreurs. Pour en savoir plus sur la résolution des erreurs courantes, voir [Erreurs de certificat](#certificate-errors).
 
-   ![&#x200B; Boîte de dialogue Ajouter un certificat SSL &#x200B;](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)|
+   ![ Boîte de dialogue Ajouter un certificat SSL ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)|
 
 1. Dans l’angle inférieur droit de la boîte de dialogue, cliquez sur **Enregistrer**.
 
@@ -130,7 +130,7 @@ Ce champ est fourni uniquement à titre d’information. Il peut s’agir de n�
 
    Une fois le certificat SSL émis avec succès, il s’affiche avec une coche verte vérifiée dans le tableau **Certificats SSL**.
 
-Vous avez maintenant ajouté un certificat SSL opérationnel pour votre projet. Cette étape est souvent la première à configurer un nom de domaine personnalisé.
+Vous avez ajouté un certificat SSL fonctionnel pour votre projet. Cette étape est souvent la première étape pour configurer un nom de domaine personnalisé.
 
 Vous êtes maintenant prêt à ajouter une [configuration CDN](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md).
 

@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: b94debebf36f379fc2cb2f193a244fe154c77537
+source-git-commit: b4b5fb587f2b93019e7a0a273bd106d9ab1de54c
 workflow-type: tm+mt
-source-wordcount: '1337'
-ht-degree: 17%
+source-wordcount: '1302'
+ht-degree: 12%
 
 ---
 
@@ -20,7 +20,7 @@ Découvrez les outils en libre-service fournis par Cloud Manager pour installer 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
 >title="Gérer des certificats SSL"
->abstract="Découvrez comment Cloud Manager propose des outils en libre-service pour installer et gérer des certificats SSL afin de sécuriser votre site pour les utilisateurs et utilisatrices. Cloud Manager utilise un service de plateforme TLS pour gérer les certificats SSL et les clés privées détenus par la clientèle et obtenus auprès d’autorités de certification tierces."
+>abstract="Cloud Manager fournit des outils en libre-service pour installer et gérer les certificats SSL. Il utilise un service Platform TLS pour gérer les certificats détenus par le client et les clés privées provenant d’autorités de certification tierces."
 >additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Affichage, mise à jour et remplacement d’un certificat SSL"
 >additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Vérification du statut d’un certificat SSL"
 
@@ -28,7 +28,7 @@ Découvrez les outils en libre-service fournis par Cloud Manager pour installer 
 
 Les entreprises et les organisations utilisent des certificats SSL (Secure Socket Layer) pour sécuriser leurs sites web et permettre à leurs clients de leur faire confiance. Pour utiliser le protocole SSL, un serveur web requiert un certificat SSL.
 
-Lorsqu’une entité, telle qu’une organisation ou une entreprise, demande un certificat à une autorité de certification (AC), celle-ci effectue un processus de vérification. Ce processus peut aller de la vérification du contrôle des noms de domaine à la collecte de documents d&#39;enregistrement des sociétés et de contrats d&#39;abonnés. Une fois les renseignements d&#39;une entité vérifiés, l&#39;AC signe sa clé publique à l&#39;aide de la clé privée de l&#39;AC. Comme toutes les principales autorités de certification possèdent des certificats racine dans les navigateurs web, le certificat de l’entité est lié par une *chaîne de confiance* et le navigateur web le reconnaît comme un certificat approuvé.
+Lorsqu&#39;une entité demande un certificat à une autorité de certification (AC), l&#39;AC effectue un processus de vérification. Ce processus peut aller de la vérification du contrôle des noms de domaine à la collecte de documents d&#39;enregistrement des sociétés et de contrats d&#39;abonnés. Une fois les renseignements d&#39;une entité vérifiés, l&#39;AC signe sa clé publique à l&#39;aide de la clé privée de l&#39;AC. Comme toutes les principales autorités de certification possèdent des certificats racine dans les navigateurs web, le certificat de l’entité est lié par une *chaîne de confiance* et le navigateur web le reconnaît comme un certificat approuvé.
 
 >[!IMPORTANT]
 >
@@ -46,8 +46,8 @@ Cloud Manager propose des outils en libre-service pour installer et gérer les c
 Les deux modèles offrent les fonctionnalités générales suivantes pour gérer vos certificats :
 
 * Chaque environnement Cloud Manager peut utiliser plusieurs certificats.
-* Une clé privée peut émettre plusieurs certificats SSL.
-* Le service Platform TLS achemine les requêtes vers le service CDN du client en fonction du certificat SSL utilisé pour s’arrêter et du service CDN qui héberge ce domaine.
+* Une clé privée est utilisée pour émettre plusieurs certificats SSL.
+* Le service Platform TLS achemine les requêtes vers le service CDN du client. Ce routage est basé sur le certificat SSL utilisé pour terminer la connexion. Il est également basé sur le service CDN qui héberge ce domaine.
 
 >[!IMPORTANT]
 >
@@ -55,7 +55,7 @@ Les deux modèles offrent les fonctionnalités générales suivantes pour gérer
 
 ### Certificats SSL gérés par Adobe (DV) {#adobe-managed}
 
-Les certificats DV constituent le niveau de certification SSL le plus élémentaire et sont souvent utilisés à des fins de test ou pour sécuriser des sites web avec un chiffrement de base. Les certificats DV sont disponibles dans les [&#x200B; programmes de production et les programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
+Les certificats DV constituent le niveau de certification SSL le plus élémentaire et sont souvent utilisés à des fins de test ou pour sécuriser des sites web avec un chiffrement de base. Les certificats DV sont disponibles dans les [ programmes de production et les programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 Une fois le certificat DV créé, Adobe le renouvelle automatiquement tous les trois mois, sauf s’il est supprimé.
 
@@ -75,7 +75,7 @@ OV et EV offrent en outre ces fonctionnalités par rapport aux certificats DV da
 
 >[!TIP]
 >
->Si vous disposez de plusieurs domaines personnalisés, il se peut que vous ne souhaitiez pas charger un certificat à chaque fois que vous ajoutez un nouveau domaine. Dans ce cas, il est préférable d’obtenir un seul certificat couvrant plusieurs domaines.
+>Si vous disposez de plusieurs domaines personnalisés, il se peut que vous ne souhaitiez pas charger un certificat à chaque fois que vous ajoutez un nouveau domaine. Dans ce cas, vous bénéficiez de l’obtention d’un certificat unique qui couvre plusieurs domaines.
 
 #### Conditions requises pour les certificats SSL OV/EV gérés par le client {#requirements}
 
@@ -101,7 +101,7 @@ Les clés RSA de plus de 2 048 bits (telles que les clés RSA de 3 072 bits ou d
 
 * **Éviter les certificats qui se chevauchent :**
 
-   * Pour garantir une gestion fluide des certificats, évitez de déployer des certificats qui se chevauchent et qui correspondent au même domaine. Par exemple, la présence d’un certificat avec caractère générique (*.example.com) à côté d’un certificat spécifique (dev.example.com) peut prêter à confusion.
+   * Pour garantir une gestion fluide des certificats, évitez de déployer des certificats qui se chevauchent et qui correspondent au même domaine. Par exemple, disposer d’un certificat avec caractère générique (*.example.com) en plus d’un certificat spécifique (dev.example.com) prête à confusion.
    * La couche TLS donne la priorité au certificat le plus spécifique et récemment déployé.
 
   Exemples de scénarios :
@@ -132,7 +132,7 @@ Avant de tenter d’installer un certificat avec Cloud Manager, Adobe vous recom
 
 #### Format des certificats gérés par le client {#certificate-format}
 
-Les fichiers des certificats SSL doivent être au format PEM pour être installés avec Cloud Manager. Les extensions de fichier courantes du format PEM incluent `.pem,`. `crt`, `.cer` et `.cert`.
+Les fichiers des certificats SSL doivent être au format PEM pour être installés avec Cloud Manager. Les extensions de fichier courantes du format PEM incluent `.pem`, `.crt`, `.cer` et `.cert`.
 
 Les commandes suivantes `openssl` peuvent être utilisées pour convertir des certificats non-PEM.
 
@@ -164,12 +164,12 @@ Si vous avez atteint la limite, vérifiez vos certificats et envisagez de suppri
 
 ### Chiffrement des limites de débit pour les certificats DV gérés par Adobe
 
-Les certificats DV gérés par Adobe reposent sur Let’s Encrypt. Outre la limite de Cloud Manager sur les certificats installés, Let’s Encrypt applique ses propres limites de débit. Une limite de clé est la suivante **Nouveaux certificats par ensemble exact d’identifiants** : jusqu’à 5 certificats peuvent être émis pour le même ensemble de noms d’hôtes au cours d’une période de 7 jours. Si cette limite est atteinte, Cloud Manager affiche une erreur et ne peut pas créer d’autres certificats pour ce nom d’hôte tant que la fenêtre de limite de taux n’est pas réinitialisée. Pour connaître les dernières valeurs et d’autres limites associées, consultez la documentation [&#x200B; Chiffrons les limites de taux &#x200B;](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers).
+Les certificats DV gérés par Adobe reposent sur Let’s Encrypt. Outre la limite de Cloud Manager sur les certificats installés, Let’s Encrypt applique ses propres limites de débit. Une limite de clé est la suivante **Nouveaux certificats par ensemble exact d’identifiants** : jusqu’à 5 certificats sont émis pour l’ensemble des noms d’hôtes au cours d’une période de 7 jours. Si cette limite est atteinte, Cloud Manager affiche une erreur et ne peut pas créer d’autres certificats pour ce nom d’hôte tant que la fenêtre de limite de taux n’est pas réinitialisée. Pour connaître les dernières valeurs et d’autres limites associées, consultez la documentation [ Chiffrons les limites de taux ](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers).
 
 ## En savoir plus {#learn-more}
 
 Un utilisateur disposant des autorisations nécessaires peut utiliser Cloud Manager pour gérer les certificats SSL d’un programme. Pour plus d’informations sur l’utilisation de ces fonctionnalités, consultez les documents suivants.
 
 * [Ajouter un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) <!--CQDOC-21758, #4 -->
-* [Gestion des certificats SSL &#x200B;](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md) <!--CQDOC-21758, #4 -->
+* [Gestion des certificats SSL ](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md) <!--CQDOC-21758, #4 -->
 
