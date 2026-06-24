@@ -81,7 +81,7 @@ Cloud Manager vous permet désormais de configurer si un niveau de publication e
 
 Pour plus d’informations, voir [Niveau de publication flexible (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
 
-Pour rejoindre la version bêta, envoyez un courrier électronique à l’adresse [](mailto:grp-beta_xwalk-publish_config@adobe.com) avec votre ID d’organisation et votre ID de programme Adobe.
+Pour rejoindre la version bêta, envoyez un courrier électronique à l’adresse [&#128279;](mailto:grp-beta_xwalk-publish_config@adobe.com) avec votre ID d’organisation et votre ID de programme Adobe.
 
 ### Amélioration des performances de build avec la mise en cache des modules {#quick-build-cm-pipelines}
 
