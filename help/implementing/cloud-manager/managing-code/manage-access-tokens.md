@@ -4,20 +4,20 @@ description: Découvrez comment afficher, modifier et supprimer les jetons d’a
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
-source-git-commit: 2ea076c42a6406548bf48cd246227fc8ddb3a080
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 3%
+source-wordcount: '390'
+ht-degree: 6%
 
 ---
 
-# Gestion des jetons d’accès pour les référentiels externes {#manage-access-tokens}
+# Gestion des jetons d’accès pour les référentiels externes dans Cloud Manager {#manage-access-tokens}
 
 <!-- badge: label="Private beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens" -->
 
 Cloud Manager utilise des jetons d’accès pour gérer les référentiels hébergés sur des plateformes Git externes. Auparavant, si un jeton expirait, le référentiel associé devait être réintégré pour rester opérationnel.
 
-Désormais, la fonctionnalité **`Manage Access Tokens`** vous permet de gérer les jetons plus efficacement. Vous pouvez afficher, renommer ou supprimer des jetons connectés aux fournisseurs Git externes pris en charge, notamment GitHub Enterprise, GitLab, Bitbucket et Azure DevOps.
+Désormais, la fonctionnalité **`Manage Access Tokens`** vous permet de gérer les jetons plus efficacement. Vous pouvez afficher, renommer ou supprimer des jetons pour les fournisseurs Git externes pris en charge, notamment GitHub Enterprise, GitLab, Bitbucket et Azure DevOps.
 
 Voir aussi [Ajouter des référentiels externes dans Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
