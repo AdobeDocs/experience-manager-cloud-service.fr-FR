@@ -4,10 +4,10 @@ description: Découvrez la version 2026.6.0 de Cloud Manager dans Adobe Experien
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 012a31a9b1ffe3d7228d714049295536f2deeaac
+source-git-commit: 60e6140c4902e515d740a38bde066d8cef859674
 workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 4%
+source-wordcount: '733'
+ht-degree: 3%
 
 ---
 
@@ -81,9 +81,9 @@ Cloud Manager vous permet désormais de configurer si un niveau de publication e
 
 Pour plus d’informations, voir [Niveau de publication flexible (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
 
-Pour rejoindre Beta, envoyez un e-mail à l’adresse [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-beta_xwalk-publish_config@adobe.com) avec votre ID d’organisation et votre ID de programme Adobe.
+Pour rejoindre la version bêta, envoyez un courrier électronique à l’adresse [&#128279;](mailto:grp-beta_xwalk-publish_config@adobe.com) avec votre ID d’organisation et votre ID de programme Adobe.
 
-### Versions plus rapides avec mise en cache du module {#quick-build-cm-pipelines}
+### Amélioration des performances de build avec la mise en cache des modules {#quick-build-cm-pipelines}
 
 Un nouveau modèle de version compile uniquement les modules modifiés (plutôt que le référentiel entier) à l’aide de la mise en cache au niveau du module pour améliorer les performances de la version. Elle s’applique aux pipelines de production. Vous contrôlez les pipelines de production qui utilisent **Smart Build**.
 
