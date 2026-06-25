@@ -5,10 +5,10 @@ exl-id: 167da985-7f19-45b3-90a3-884817907da2
 solution: Experience Manager
 feature: Security, Developing
 role: Admin, Developer
-source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
+source-git-commit: ff567c4f328bf0ab10ee9e93ad850a597536cdbf
 workflow-type: tm+mt
-source-wordcount: '1265'
-ht-degree: 28%
+source-wordcount: '1258'
+ht-degree: 22%
 
 ---
 
@@ -40,10 +40,10 @@ La création et l’utilisation de vos autorisations personnalisées nécessiten
 1. [Affecter des utilisateurs au profil de produit](#assign-users).
 
 >[!TIP]
->Il peut s’avérer utile de consulter les sections [Conditions](#terms) et [Autorisations configurables](#configurable-permissions) lorsque vous créez vos propres autorisations personnalisées.
+>Consultez les sections [Conditions](#terms) et [Autorisations configurables](#configurable-permissions) lorsque vous créez vos propres autorisations personnalisées.
 
 >[!IMPORTANT]
->Vous devez disposer des droits d’administrateur de produit dans Admin Console pour Adobe Experience Manager as a Cloud Service afin de créer des profils de produit et de gérer les autorisations pour Cloud Manager.
+>Pour créer des profils de produit et gérer les autorisations pour Cloud Manager, vous devez disposer des droits d’administrateur de produit dans Admin Console pour Adobe Experience Manager as a Cloud Service.
 
 ### Création d’un profil de produit {#create}
 
@@ -80,7 +80,7 @@ Le nouveau profil de produit est enregistré et visible dans la liste des profil
 
 1. Dans la boîte de dialogue **Modifier les autorisations pour le profil personnalisé**, effectuez l’une des opérations suivantes :
 
-   * En haut de la colonne **Éléments d’autorisations disponibles**, cliquez sur ![Icône Ajouter ou icône de signe plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Ajouter tout** pour ajouter toutes les autorisations.
+   * En haut de la colonne **Éléments d’autorisations disponibles**, cliquez sur ![Icône Ajouter ou icône de signe plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Ajouter tout** pour inclure toutes les autorisations.
    * Pour ajouter une seule autorisation à la colonne **Éléments d’autorisation inclus**, cliquez sur son icône associée ![icône Ajouter ou icône de signe plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg).
 
      ![Modification des éléments d’autorisation](assets/edit-permission-items.png)
@@ -167,12 +167,12 @@ Les éléments d’autorisation se rapportent à la portée dans laquelle les au
 ## Remarques sur l’utilisation {#usage-notes}
 
 * Un profil d’autorisations personnalisé répertorie également les programmes, environnements et pipelines AMS lors de la configuration des autorisations.
-* Les ressources telles que le programme, l’environnement et le pipeline qui ont été créées dans Cloud Manager peuvent prendre plusieurs minutes pour s’afficher dans Admin Console pour la configuration des autorisations.
-* Dans de rares cas où le service d’autorisations personnalisées ne répond pas, les profils prédéfinis sont toujours disponibles et les utilisateurs et utilisatrices des profils prédéfinis disposent toujours d’un accès approprié.
+* Les ressources telles que les programmes, les environnements et les pipelines qui ont été créées dans Cloud Manager nécessitent plusieurs minutes pour s’afficher dans Admin Console pour la configuration des autorisations.
+* Dans les cas où un service d’autorisations personnalisées ne répond pas, les profils prédéfinis sont toujours disponibles et les utilisateurs disposant de profils prédéfinis disposent toujours d’un accès approprié.
 
 ## Questions fréquentes {#faq}
 
-### Quels profils d’autorisation sont des profils d’autorisation prédéfinis ?
+### Quels profils d’autorisation sont prédéfinis ?
 
 * Propriétaire de l’entreprise
 * Responsable de programme
@@ -183,7 +183,7 @@ Pour plus d’informations sur les rôles prédéfinis, voir [Profils d’équip
 
 ### Qu’advient-il des profils d’autorisation prédéfinis avec l’introduction des profils personnalisés ?
 
-Les profils de produits et les rôles de Cloud Manager par défaut continuent de fonctionner comme auparavant.
+Les profils de produit par défaut et les rôles Cloud Manager continuent de fonctionner comme précédemment.
 
 ### Puis-je modifier des profils d’autorisation prédéfinis ?
 
@@ -195,8 +195,8 @@ Ne supprimez pas les profils d’autorisation prédéfinis d’Admin Console.
 
 ### Puis-je ajouter des utilisateurs et utilisatrices à plusieurs profils d’autorisation ?
 
-Oui. Un utilisateur peut faire partie de plusieurs profils, y compris des profils d’autorisation prédéfinis et personnalisés. Lorsqu’une personne est affectée à plusieurs profils, les autorisations combinées de tous les profils d’autorisation affectés lui seront disponibles.
+Oui. Un utilisateur peut être affecté à plusieurs profils, y compris des profils d’autorisation prédéfinis et personnalisés. Lorsqu’une personne est affectée à plusieurs profils, les autorisations combinées de tous les profils d’autorisation affectés lui seront disponibles.
 
-### Que se passe-t-il si une personne est autorisée à modifier un environnement/pipeline mais n’a pas accès à un programme contenant l’environnement/le pipeline ?
+### Que se passe-t-il si un utilisateur est autorisé à modifier un environnement/pipeline mais n’a pas accès à un programme contenant l’environnement/le pipeline ?
 
-L’utilisateur ne peut pas accéder à l’environnement ou au pipeline s’il ne dispose pas des autorisations **accès au programme** contenant l’environnement ou le pipeline.
+L’utilisateur ne peut pas accéder à l’environnement ou au pipeline s’il ne dispose pas des autorisations **accès au programme** associées à l’environnement ou au pipeline.
