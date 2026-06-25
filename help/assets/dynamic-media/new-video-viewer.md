@@ -29,7 +29,7 @@ La nouvelle visionneuse de vidéos est destinée aux entreprises qui ont besoin 
 
 > **REMARQUE**
 >
-> La nouvelle visionneuse de vidéos est une fonctionnalité à disponibilité limitée. Vous pouvez l’activer en créant un [ ticket d’assistance ](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
+> La nouvelle visionneuse de vidéos est une fonctionnalité à disponibilité limitée. Vous pouvez l’activer en créant un [&#x200B; ticket d’assistance &#x200B;](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
 
 
 ## Fonctionnement de la nouvelle visionneuse de vidéos {#how-it-works}
@@ -61,7 +61,7 @@ Avant d’utiliser la nouvelle visionneuse de vidéos, assurez-vous que les cond
 | Profil vidéo | Un profil vidéo doit être appliqué au dossier. |
 | Contenu vidéo | Une vidéo doit être ingérée dans le dossier . |
 
-La nouvelle visionneuse de vidéos est disponible à partir de la version 2025.7.0 d’AEM as a Cloud Service ****.
+La nouvelle visionneuse de vidéos est disponible à partir de la version 2025.7.0 d’AEM as a Cloud Service **&#x200B;**.
 
 Pour activer ou désactiver la nouvelle visionneuse de vidéos, contactez l’assistance clientèle d’Adobe.
 
@@ -69,7 +69,7 @@ Pour activer ou désactiver la nouvelle visionneuse de vidéos, contactez l’as
 
 Pour prévisualiser la nouvelle visionneuse de vidéos à partir de la page des détails de la ressource, procédez comme suit :
 
-1. Accédez à **** > **Fichiers**, puis ouvrez le dossier contenant la ressource vidéo.
+1. Accédez à **&#x200B;**&#x200B;> **Fichiers**, puis ouvrez le dossier contenant la ressource vidéo.
 2. Cliquez sur la ressource vidéo pour ouvrir la page des détails de la ressource.
 3. Dans le panneau de gauche, cliquez sur **Visionneuses**.
 4. Dans le panneau **Visionneuses**, sélectionnez **Vidéo (nouvelle)**.
