@@ -3,7 +3,7 @@ title: Migration de code assisté par l’IA vers AEM as a Cloud Service
 description: Présentation de la compétence de migration vers le cloud AEM et de MCP, une solution d’agent d’IA qui lit les résultats BPA et migre le code AEM 6.x vers AEM as a Cloud Service, motif par motif.
 feature: Migration
 role: Developer
-source-git-commit: 98298a088aa7c65826f6dbad2f4d16095e074524
+source-git-commit: 087017a7c0528f0806dfa8e8bd18a057a1763b14
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 1%
@@ -17,7 +17,7 @@ La solution **Migration du cloud** est un ensemble d’outils basé sur des agen
 
 La vidéo de démonstration suivante fournit une présentation rapide de bout en bout de la solution de migration vers le cloud AEM et est incluse à titre de référence.
 
->[!VIDEO](https://video.tv.adobe.com/v/3491440?captions=fre_fr&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3491438?learn=on)
 
 La solution se compose de deux composants :
 
@@ -31,7 +31,7 @@ La solution se compose de deux composants :
 - Un projet AEM (Maven ou Gradle) s’ouvre dans votre IDE
 - L’une des sources de recherche BPA suivantes (fortement recommandée, non requise pour les flux manuels) :
    - Une **exportation CSV BPA** à partir de votre instance AEM
-   - Un projet **&#x200B;**&#x200B;avec un rapport BPA chargé et le MCP de migration vers le cloud configuré
+   - Un projet **** avec un rapport BPA chargé et le MCP de migration vers le cloud configuré
 
 ## La Compétence De Migration {#migration-skill}
 
@@ -50,7 +50,7 @@ La compétence de migration est une compétence d’agent pour les IDE compatibl
 | `htlLint` | `data-sly-test` des avertissements de comparaison constante redondants dans les modèles HTL |
 | Configurations OSGi | conversion `.cfg.json`, définition de la portée du mode d’exécution et extraction des secrets Cloud Manager/env-var |
 
-La compétence délègue toutes les étapes de transformation du code à la compétence `best-practices` associée. Les deux sont distribués ensemble sous la forme du package de compétences `aem-cloud-service` ; installez le package une fois pour obtenir les deux.
+La compétence délègue toutes les étapes de transformation du code à la compétence `code-assessment` associée. Les deux sont distribués ensemble sous la forme du package de compétences `aem-cloud-service` ; installez le package une fois pour obtenir les deux.
 
 ### Prise en main {#getting-started-skill}
 
@@ -92,7 +92,7 @@ La compétence délègue toutes les étapes de transformation du code à la comp
 >[!NOTE]
 >La compétence traite un modèle par session. Si votre rapport BPA contient plusieurs modèles, l’agent vous demande d’en choisir un avant de commencer.
 
-Pour obtenir une référence complète aux modèles et des conseils sur la gestion des sessions, voir [&#x200B; Utilisation des compétences de migration vers le cloud &#x200B;](/help/journey-migration/cloud-migration-skill/using-cloud-migration-skill.md).
+Pour obtenir une référence complète aux modèles et des conseils sur la gestion des sessions, voir [ Utilisation des compétences de migration vers le cloud ](/help/journey-migration/cloud-migration-skill/using-cloud-migration-skill.md).
 
 ## MCP de migration vers le cloud {#cloud-migration-mcp}
 
@@ -119,10 +119,10 @@ Pour obtenir une configuration et un dépannage détaillés, voir [Utilisation d
 
 Les compétences et le MCP complètent les autres outils de la **phase de mise en œuvre** :
 
-- **Best Practices Analyzer** : produit les résultats qui pilotent la compétence. Voir [&#x200B; Utilisation de l’analyseur des bonnes pratiques &#x200B;](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md).
-- **&#x200B;**&#x200B;: héberge les rapports BPA et suit la progression globale de la migration. Voir [Prise en main de CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md).
+- **Best Practices Analyzer** : produit les résultats qui pilotent la compétence. Voir [ Utilisation de l’analyseur des bonnes pratiques ](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md).
+- **** : héberge les rapports BPA et suit la progression globale de la migration. Voir [Prise en main de CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md).
 - **Outils de refactorisation** : gère la structure du référentiel et la modernisation de la configuration du Dispatcher. Voir [Présentation des outils de refactorisation](/help/journey-migration/refactoring-tools/overview-refactoring-tools.md).
 - **Outil de transfert de contenu** : migre le contenu du référentiel d’AEM 6.x vers AEMaaCS.
 
-Pour une vue d’ensemble, consultez la [&#x200B; Présentation de la phase d’implémentation &#x200B;](/help/journey-migration/implementation.md).
+Pour une vue d’ensemble, consultez la [ Présentation de la phase d’implémentation ](/help/journey-migration/implementation.md).
 

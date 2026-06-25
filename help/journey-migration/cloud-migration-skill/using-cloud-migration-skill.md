@@ -3,9 +3,9 @@ title: Utilisation des compétences de migration vers le cloud AEM
 description: Référence pour chaque modèle de migration pris en charge par les compétences de migration vers le cloud AEM, y compris la conversion de configuration OSGi, les options de source BPA et les conseils de gestion de session.
 feature: Migration
 role: Developer
-source-git-commit: 5cda629090d9a9d020deca5192b8a89659ec4749
+source-git-commit: 7ea634871fc1655e5f0ec5b3fb88edbb0f317249
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Chaque session de migration suit cette séquence :
 
 1. **Nommez le modèle** : spécifiez un modèle (par exemple, `scheduler`)
 2. **Fournir des résultats** : à partir d’un fichier CSV BPA, CAM via MCP ou de chemins d’accès à des fichiers spécifiques
-3. **L’agent lit les règles de transformation** : la compétence lit le module des bonnes pratiques approprié avant d’apporter des modifications au code
+3. **L’agent lit les règles de transformation** : la compétence lit les règles de transformation appropriées de la compétence `code-assessment` compagnon avant d’apporter des modifications au code
 4. **Premier lot de cinq** : l’agent transforme jusqu’à cinq résultats et signale ce qu’il a modifié
 5. **Vous vérifiez et continuez** : après avoir vérifié chaque lot, répondez `continue` pour passer au suivant
 
