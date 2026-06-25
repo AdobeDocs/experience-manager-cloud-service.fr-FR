@@ -1,20 +1,20 @@
 ---
-title: Notes De Mise À Jour De L’Éditeur Universel 2026.06.18
-description: Voici les notes de mise à jour de la version 2026.06.18 de l’éditeur universel.
+title: Notes De Mise À Jour De L’Éditeur Universel 2026.06.25
+description: Voici les notes de mise à jour de la version 2026.06.25 de l’éditeur universel.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 8658d6c71927cbd610e42b618705509b51a2d672
+source-git-commit: c5aec0d045162327bad3d0d03b22386bf2effe6e
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 16%
+source-wordcount: '186'
+ht-degree: 13%
 
 ---
 
 
-# Notes De Mise À Jour De L’Éditeur Universel 2026.06.18 {#release-notes}
+# Notes De Mise À Jour De L’Éditeur Universel 2026.06.25 {#release-notes}
 
-Voici les notes de mise à jour de la version du 18 juin 2026 de l’éditeur universel.
+Voici les notes de mise à jour de la version du 25 juin 2026 de l’éditeur universel.
 
 >[!TIP]
 >
@@ -26,12 +26,13 @@ Voici les notes de mise à jour de la version du 18 juin 2026 de l’éditeur un
 
 ## Nouveautés {#what-is-new}
 
-* La possibilité de décocher toutes les cases sélectionnées a été ajoutée.
+* Un nouveau bouton **Ouvrir dans l’administrateur du site** a été ajouté à la barre d’outils pour accéder à la console AEM Sites.
+   * Cela apporte les fonctionnalités de l’ancienne extension **AEM Site Admin Extension** [extension](/help/implementing/universal-editor/extending.md) de manière native à l’éditeur universel.
+   * Le bouton permet d’ouvrir la page AEM active dans la console [Sites](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console) ou dans la console [Fragments d’expérience](/help/sites-cloud/authoring/fragments/experience-fragments.md) pour les chemins d’accès `/content/experience-fragments`.
+   * Le bouton est masqué pour les chemins d’accès DAM (`/content/dam`) et lorsqu’aucune page AEM unique ne peut être déterminée à partir des éléments modifiables actuels.
+* Les raccourcis clavier à un seul caractère fonctionnent désormais mieux avec les technologies d’accessibilité.
 
 ## Autres améliorations {#other-improvements}
 
-* Le bouton Rotation communique désormais correctement son état actuel aux technologies d’assistance.
-* Un état de chargement infini a été corrigé dans les situations où les fragments de contenu contiennent des onglets sans contenu.
-* Correction d’un bug en raison duquel un moteur de rendu se bloque dans certaines situations lors du rechargement de certains modèles.
-* Correction d’un bug en raison duquel certaines balises ne pouvaient pas être supprimées.
-* Le nom accessible du bouton Image en vedette ne contient plus d’informations en double.
+* De nombreux boutons portent désormais correctement des noms accessibles.
+* Correction d’un problème lié à la conservation de certains fragments de contenu après les avoir sélectionnés à l’aide d’un sélecteur.
