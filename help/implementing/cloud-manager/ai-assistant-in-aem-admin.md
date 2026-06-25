@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Authoring, AI Assistant, AI Tools
 role: Admin, Developer, User
 exl-id: cc80a36b-2fd2-41cc-8cb7-6c25e8e89a4e
-source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
+source-git-commit: c75fb9425b72dea9130ed24cc2a098b56f23d13d
 workflow-type: tm+mt
-source-wordcount: '1204'
-ht-degree: 96%
+source-wordcount: '1197'
+ht-degree: 83%
 
 ---
 
@@ -18,15 +18,15 @@ ht-degree: 96%
 
 <!-- badge: label="Beta" type="Positive" -->
 
-Pour utiliser l’assistant IA d’AEM (Adobe Experience Manager), l’autorisation d’accéder à la base de connaissance des produits par l’intermédiaire de l’assistant IA est obligatoire. Cette autorisation est activée par défaut.
+Pour utiliser l’assistant IA d’AEM (Adobe Experience Manager), l’autorisation d’accéder à la base de connaissance des produits par l’intermédiaire de l’assistant IA est obligatoire. Adobe active cette autorisation par défaut.
 
 Si vous souhaitez contrôler qui peut accéder à la base de connaissance des produits, envoyez un e-mail à [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com) à partir de l’adresse e-mail associée à votre Adobe ID. Adobe peut activer le contrôle d’accès au niveau de l’utilisateur ou de l’utilisatrice. Lorsqu’il est activé, votre administrateur ou administratrice peut accorder l’accès au niveau de l’utilisateur ou de l’utilisatrice en suivant les étapes décrites ci-dessous.
 
-Si vous avez demandé un contrôle d’accès au niveau de l’utilisateur, votre organisation doit s’inscrire via Adobe Admin Console. Un administrateur ou une administratrice de produit crée (ou choisit) un groupe d’utilisateurs et d’utilisatrices et lui accorde la nouvelle autorisation « Assistant IA ». Toute personne ajoutée à ce groupe accède instantanément à l’assistant IA d’AEM. Si l’objectif est la disponibilité à l’échelle de l’entreprise, l’administrateur ou l’administratrice affecte simplement l’ensemble des utilisateurs et des utilisatrices à ce groupe.
+Si vous avez demandé un contrôle d’accès au niveau de l’utilisateur, votre organisation doit s’inscrire via Adobe Admin Console. Un administrateur ou une administratrice de produit crée (ou choisit) un groupe d’utilisateurs et d’utilisatrices et lui accorde la nouvelle autorisation « Assistant IA ». Toute personne ajoutée à ce groupe accède instantanément à l’assistant IA d’AEM. Si l’objectif est la disponibilité à l’échelle de l’entreprise, l’administrateur affecte tous les utilisateurs à ce groupe.
 
-Du point de vue des membres du personnel, le processus est simple : identifiez l’administrateur ou l’administratrice de produit Adobe Experience Manager dans votre entreprise et demandez votre ajout au groupe d’utilisateurs et d’utilisatrices de l’IA. Une fois que vous apparaissez dans ce groupe, l’icône Assistant s’affiche automatiquement la prochaine fois que vous vous connectez.
+Pour les utilisateurs, le processus est simple : identifiez l’administrateur ou l’administratrice de produit pour Adobe Experience Manager au sein de votre organisation et demandez à être ajouté(e) au groupe d’utilisateurs compatible avec l’IA. Une fois que vous êtes ajouté à ce groupe, l&#39;icône Assistant s&#39;affiche automatiquement la prochaine fois que vous vous connectez.
 
-Les administrateurs et administratrices doivent garder à l’esprit une gouvernance Cloud Manager normale. Détenez des droits d’administration de produit dans Admin Console pour créer des profils, gérer des groupes d’utilisateurs et d’utilisatrices ou modifier des autorisations. Si les utilisateurs et utilisatrices ont également besoin de la fonctionnalité intégrée **Créer un ticket d’assistance** de l’assistant, ajoutez le rôle standard **Administration de l’assistance** (rôle Admin Console standard) aux mêmes personnes ou groupes.
+Les administrateurs doivent suivre la gouvernance normale de Cloud Manager. Pour créer des profils, gérer des groupes d’utilisateurs ou modifier des autorisations, détenez des droits d’administrateur de produit dans Admin Console. Si les utilisateurs et utilisatrices ont également besoin de la fonctionnalité intégrée **Créer un ticket d’assistance** de l’assistant, ajoutez le rôle standard **Administration de l’assistance** (rôle Admin Console standard) aux mêmes personnes ou groupes.
 
 Le processus de configuration de l’assistant IA d’AEM comprend les étapes suivantes :
 
@@ -45,9 +45,9 @@ Avant de commencer, assurez-vous de remplir les conditions préalables suivantes
 
 **Considérations relatives à la configuration**
 
-* Délai de traitement : les ressources créées dans Cloud Manager peuvent mettre jusqu’à deux minutes pour s’afficher dans Admin Console pour la configuration des autorisations.
+* Temps de traitement : l’affichage des ressources créées dans Cloud Manager peut prendre jusqu’à 2 minutes dans Admin Console pour la configuration des autorisations.
 * Profils multiples : les utilisateurs et utilisatrices peuvent faire partie de plusieurs profils et les autorisations sont combinées à partir de tous les profils attribués.
-* Portée de l’organisation : certaines autorisations peuvent s’appliquer au niveau de l’organisation dans tous les programmes.
+* Portée de l’organisation : certaines autorisations s’appliquent au niveau de l’organisation dans tous les programmes.
 * Profils prédéfinis : ne supprimez pas les profils d’autorisation prédéfinis d’Admin Console.
 
 
@@ -133,7 +133,7 @@ Vous pouvez utiliser un groupe existant d’utilisateurs d’utilisatrices AEM s
 
 >[!TAB Ajouter des utilisateurs et des utilisatrices individuellement]
 
-1. Sur la page **Groupes d’utilisateurs et d’utilisatrices**, dans le tableau **Nom du groupe**, cliquez sur le nom du groupe d’utilisateurs et d’utilisatrices que vous venez de créer ou sur un nom de groupe existant.
+1. Sur la page **Groupes d’utilisateurs**, dans le tableau **Nom du groupe**, cliquez sur le nom du groupe d’utilisateurs que vous venez de créer ou sur un nom de groupe d’utilisateurs existant.
 
    ![Page Groupes d’utilisateurs et d’utilisatrices affichant le nom du groupe d’utilisateurs et d’utilisatrices de l’assistant IA d’AEM dans le tableau](/help/implementing/cloud-manager/assets/ai-assistant-user-group-name-in-table.png)
 
@@ -193,7 +193,7 @@ Demandez à une personne du groupe affecté d’effectuer les opérations suivan
 
 1. Connectez-vous à AEM.
 2. Vérifiez que les fonctionnalités de l’assistant IA sont accessibles.
-3. Testez la fonctionnalité de l’assistant IA pour vous assurer de son activation correcte.
+3. Pour garantir une activation correcte, testez la fonctionnalité de l’assistant AI.
 
 ## Voir également
 
