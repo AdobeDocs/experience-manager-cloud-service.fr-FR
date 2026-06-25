@@ -4,7 +4,7 @@ description: Découvrez comment exécuter JavaScript au niveau de la couche CDN 
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: e0a62aa70aa24c4aa85c65a3dc1dfa0432f189eb
+source-git-commit: a42d2318380061c0ce9f894145e1812d0ec1fe1f
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 1%
@@ -238,7 +238,7 @@ Avant de configurer la mise en cache, examinez le comportement de votre contenu 
 
 Comme le réseau CDN et le cache de récupération interne de la fonction Edge fonctionnent indépendamment, toute modification des données sous-jacentes nécessite l’invalidation délibérée des couches **des deux**. La compréhension de cette architecture est essentielle pour une gestion fiable du cache.
 
-Pour obtenir des conseils techniques détaillés sur la configuration du comportement de mise en cache, le contrôle des durées de vie du cache, l’utilisation de clés de substitution et la purge du contenu mis en cache, voir [&#x200B; Mise en cache dans les fonctions AEM Edge &#x200B;](/help/implementing/developing/introduction/edge-functions-caching.md).
+Pour obtenir des conseils techniques détaillés sur la configuration du comportement de mise en cache, le contrôle des durées de vie du cache, l’utilisation de clés de substitution et la purge du contenu mis en cache, voir [ Mise en cache dans les fonctions AEM Edge ](/help/implementing/developing/introduction/edge-functions-caching.md).
 
 ## Limites {#limitations}
 
@@ -253,7 +253,7 @@ Pour obtenir des conseils techniques détaillés sur la configuration du comport
    - Les exécutions seront interrompues à 1s du calcul (pas en temps réel)
    - Le temps moyen d’exécution de la fonction Edge doit être inférieur à 100 ms.
 
-- Voir les limites liées aux [Variables de configuration de la fonction &#x200B;](#function-configuration), aux [Variables secrètes de la fonction Edge](#function-secrets) et aux [magasins KV de fonction Edge](#function-kv-store).
+- Voir les limites liées aux [Variables de configuration de la fonction ](#function-configuration), aux [Variables secrètes de la fonction Edge](#function-secrets) et aux [magasins KV de fonction Edge](#function-kv-store).
 
 ### Nbre max. d&#39;appels de récupération sortante par appel {#max-fetch-calls}
 

@@ -5,7 +5,8 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 06fa3a08c34299df3c5de78b8b7740cfc0200ed1
+nudge: please
+source-git-commit: 494148e276bec785513ba9528e70cb0d706bcc45
 workflow-type: tm+mt
 source-wordcount: '3035'
 ht-degree: 21%
@@ -40,7 +41,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the May 2026 Release Overview video for a summary of the features added in the 2026.5.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3491492/?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3491490/?quality=12)
 
 -->
 
@@ -85,11 +86,11 @@ Voir [Programmes bêta AEM Foundation](#foundation-early-adopter).
 
 ### Cloud Manager (programmes Beta) {#cloud-manager-beta-programs}
 
-Voir [Programmes bêta &#x200B;](/help/implementing/cloud-manager/release-notes/current.md).
+Voir [Programmes bêta ](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### AEM Assets (programmes Beta) {#aem-assets-beta-programs}
 
-Voir [Programmes bêta &#x200B;](#assets-beta-program-features).
+Voir [Programmes bêta ](#assets-beta-program-features).
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -182,7 +183,7 @@ L’agent de développement se développe pour gérer les questions liées à Cl
 
 #### Améliorations apportées au travail de l’agent de dépannage du pipeline {#devagent-pipeline-troubleshooting}
 
-La [&#x200B; tâche de dépannage du pipeline de l’agent de développement](/help/ai-in-aem/agents/brand-experience/development/development.md#cloud-manager-pipeline-troubleshooting) aide les développeurs à diagnostiquer et à résoudre les problèmes liés aux déploiements d’AEM as a Cloud Service. Les nouvelles fonctionnalités incluent :
+La [ tâche de dépannage du pipeline de l’agent de développement](/help/ai-in-aem/agents/brand-experience/development/development.md#cloud-manager-pipeline-troubleshooting) aide les développeurs à diagnostiquer et à résoudre les problèmes liés aux déploiements d’AEM as a Cloud Service. Les nouvelles fonctionnalités incluent :
 
 * Prise en charge du pipeline de configuration de niveau web - En plus de la prise en charge des pipelines de pile complète (déploiement et qualité du code), l’agent de développement prend désormais en charge la résolution des problèmes liés au **pipeline de configuration de niveau web**
 
@@ -240,9 +241,9 @@ Le serveur MCP local Dispatcher permet aux outils d’IA de valider la configura
 
 Java 25 est la prochaine version d’assistance à long terme (LTS) après Java 21, offrant des améliorations en termes de performances, de productivité des développeurs et de sécurité :
 
-&#x200B;- **Performances** : la réduction de l’encombrement de la mémoire, une récupération de l’espace mémoire plus efficace et un préchauffage JVM plus rapide bénéficient aux déploiements natifs dans le cloud.
-&#x200B;- **Productivité du développeur** — Une initialisation plus épurée de l’objet, une correspondance plus expressive des modèles et une gestion simplifiée des tâches simultanées réduisent la complexité et améliorent la clarté du code.
-&#x200B;- **Sécurité** — API de dérivation de clé cryptographique modernisée pour simplifier les workflows de sécurité courants.
+- **Performances** : la réduction de l’encombrement de la mémoire, une récupération de l’espace mémoire plus efficace et un préchauffage JVM plus rapide bénéficient aux déploiements natifs dans le cloud.
+- **Productivité du développeur** — Une initialisation plus épurée de l’objet, une correspondance plus expressive des modèles et une gestion simplifiée des tâches simultanées réduisent la complexité et améliorent la clarté du code.
+- **Sécurité** — API de dérivation de clé cryptographique modernisée pour simplifier les workflows de sécurité courants.
 
 Pour aider les entreprises à planifier les tests et la validation avant la mise à niveau de l’exécution Java 25 nécessaire, Adobe fournit les dates cibles suivantes. Toutes les mises à jour de cette chronologie seront communiquées via les notes de mise à jour.
 
@@ -305,7 +306,7 @@ Les contrôles pris en charge sont les suivants :
 * les écouteurs de modification de ressource de la réplication.
 * Gestion des événements JCR ou OSGi
 
-Cette fonctionnalité est en version bêta. Faites un essai et partagez vos commentaires avec l’équipe sur [&#128279;](mailto:aemcs-ai-ide-tools-feedback@adobe.com).
+Cette fonctionnalité est en version bêta. Faites un essai et partagez vos commentaires avec l’équipe sur [](mailto:aemcs-ai-ide-tools-feedback@adobe.com).
 
 #### Authentification Edge pour Edge Delivery Services (programme Beta) {#edge-authentication}
 
@@ -319,12 +320,12 @@ AEM as a Cloud Service prend désormais en charge l’exportation de télémétr
 
 Utilisez cette intégration pour :
 
-&#x200B;- Enquête sur les requêtes lentes ou en échec
-&#x200B;- Suivre l’intégrité de la JVM et l’utilisation des ressources au fil du temps
-&#x200B;- Créer des tableaux de bord et des alertes pour votre niveau AEM
-&#x200B;- Mise en relation du comportement d’AEM avec d’autres services lors d’incidents
+- Enquête sur les requêtes lentes ou en échec
+- Suivre l’intégrité de la JVM et l’utilisation des ressources au fil du temps
+- Créer des tableaux de bord et des alertes pour votre niveau AEM
+- Mise en relation du comportement d’AEM avec d’autres services lors d’incidents
 
-Pour rejoindre la version alpha, envoyez un e-mail à l’adresse [&#128279;](mailto:aemcs-apm-beta@adobe.com) pour décrire votre cas d’utilisation.
+Pour rejoindre la version alpha, envoyez un e-mail à l’adresse [](mailto:aemcs-apm-beta@adobe.com) pour décrire votre cas d’utilisation.
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Beta Fonctionnalités {#assets-beta-program-features}
 
