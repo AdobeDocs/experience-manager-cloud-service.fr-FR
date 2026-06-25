@@ -4,9 +4,9 @@ description: Découvrez comment configurer des outils de codage d’IA avec le c
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: 293b9136ee5249ee435b089b49dcaab2ca45fea8
+source-git-commit: 32461fe79a72c2a5d83fd3518d84807427112763
 workflow-type: tm+mt
-source-wordcount: '1836'
+source-wordcount: '2100'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,11 @@ Quatre composantes complémentaires abordent ce problème :
 | **Serveur MCP local Quickstart** | Expose les données d’exécution en direct d’une instance AEM SDK locale pour prendre en charge le dépannage |
 | **Serveur MCP local** | Permet la validation et le contrôle au moment de l’exécution d’une instance Dispatcher locale |
 
-Consultez les [tutoriels de développement assisté par l’IA](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview) pour obtenir des instructions pratiques supplémentaires.
+Consultez les [tutoriels de développement assisté par l’IA](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview) pour obtenir des instructions pratiques supplémentaires.
 
 >[!TIP]
 >
->Les serveurs MCP distants d’AEM Cloud Service sont également utiles pour le développement local. Pour en savoir plus à ce sujet, consultez l’article [ Utilisation de MCP avec Cloud Service ].(/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
+>Les serveurs MCP distants d’AEM Cloud Service sont également utiles pour le développement local. Pour en savoir plus à ce sujet, consultez l’article [ Utilisation de MCP avec Cloud Service ](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
 
 ## AGENTS.md {#agentsmd}
 
@@ -57,11 +57,12 @@ Adobe publie les compétences AEM as a Cloud Service dans le référentiel **[ad
 | `create-component` | Génère un modèle automatique pour un composant AEM complet : définition de composant, code XML de boîte de dialogue, modèle HTL, modèle Sling, tests unitaires et bibliothèques clientes |
 | `dispatcher` | Assistant de configuration Dispatcher et Apache HTTPD optimisés par l’IA et couvrant la création de configuration, les conseils techniques, la réponse aux incidents, l’optimisation des performances et le renforcement de la sécurité |
 | `migration` | Effectue la migration du code Java et des configurations OSGi AEM 6.x, AMS ou on-premise vers AEM as a Cloud Service, en fonction des résultats de l’[analyseur de bonnes pratiques](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) issus d’une exportation CSV ou d’un [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) |
-| `workflow` | Il s’agit du point d’entrée unique pour toutes les compétences de workflow AEM as a Cloud Service. Il couvre la conception de modèles de workflow, le développement d’étapes de processus personnalisées et de programmes de sélection des participants, la configuration du lanceur, le déclenchement de workflow et la prise en charge de la production, y compris le débogage des workflows bloqués/en échec, le tri des incidents avec les journaux Cloud Manager, l’analyse du pool de threads et les diagnostics de tâche Sling pour le moteur de workflow Granite. |
+| `workflow` | Il s’agit du point d’entrée unique pour toutes les compétences de workflow AEM as a Cloud Service. Elle couvre la conception de modèles de workflow, le développement d’étapes de processus personnalisées et de programmes de sélection des participants, la configuration du lanceur, le déclenchement de workflow et la prise en charge de la production, notamment le débogage des workflows bloqués/en échec, le tri des incidents avec les journaux Cloud Manager, l’analyse du pool de threads et les diagnostics de tâche Sling pour le moteur de workflow Granite. |
+| `code-assessment` | **(Beta)** détecte et corrige les violations des bonnes pratiques d’AEM, les problèmes de qualité du code et d’exactitude dans votre projet local, en signalant les résultats et en appliquant des correctifs chirurgicaux |
 
 ### Installation des compétences {#install-skills}
 
-Sélectionnez la méthode qui correspond à votre outil de codage d’IA. L’installation des compétences les rend disponibles pour tous les projets sur cette machine. Voir le [tutoriel Configuration des compétences de l’agent AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills) pour une présentation concrète.
+Sélectionnez la méthode qui correspond à votre outil de codage d’IA. L’installation des compétences les rend disponibles pour tous les projets sur cette machine. Voir le [tutoriel Configuration des compétences de l’agent AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills) pour une présentation concrète.
 
 #### Claude Code {#claude-code}
 
@@ -73,7 +74,7 @@ Sélectionnez la méthode qui correspond à votre outil de codage d’IA. L’in
 /plugin install aem-cloud-service@adobe-skills
 ```
 
-#### Compétences Npx {#npx-skills}
+#### Compétences NPX {#npx-skills}
 
 ```bash
 # Install all available skills
@@ -90,11 +91,11 @@ gh extension install ai-ecoverse/gh-upskill
 gh upskill adobe/skills --path plugins/aem/cloud-service --all
 ```
 
-### Utiliser la compétence ensure-agents-md {#use-the-ensure-agents-md-skill}
+### Utilisation de la compétence Ensure-agents-md {#use-the-ensure-agents-md-skill}
 
 Après avoir installé la compétence, ouvrez votre assistant d’IA dans tout projet AEM as a Cloud Service qui n’a pas encore de `AGENTS.md`. La compétence s’exécute automatiquement avant le traitement de votre première requête, créant les deux fichiers à la racine du projet sans nécessiter d’appel explicite.
 
-### Utilisation de la compétence create-component {#use-the-create-component-skill}
+### Utilisation de la compétence Create-component {#use-the-create-component-skill}
 
 Lors de la première utilisation, la compétence détecte automatiquement les `project`, les `package` et les `group` des composants `pom.xml` et existants et vous demande de confirmer les valeurs détectées. Il crée ensuite des `.aem-skills-config.yaml` à la racine du projet. Aucune configuration manuelle n’est nécessaire avant la première utilisation.
 
@@ -125,7 +126,7 @@ CTA Link (ctaLink) - Pathfield
 
 L’agent fait écho à la spécification du champ pour confirmation, puis génère tous les fichiers de composant. Les modèles pris en charge comprennent les champs multiples avec des éléments imbriqués composites, la logique d’affichage/masquage conditionnel, l’extension des composants principaux via Sling Resource Merger et les tests JUnit 5 à l’aide de simulations AEM. La conception peut provenir de diverses sources, y compris une description textuelle, une image ou une URL de conception Figma utilisant le serveur MCP de Figma.
 
-Pour en savoir plus, suivez le tutoriel [&#x200B; Développement de composants à l’aide des compétences de l’agent AEM &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development).
+Pour en savoir plus, suivez le tutoriel [ Développement de composants à l’aide des compétences de l’agent AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development).
 
 ### Utilisation des compétences de migration {#use-the-migration-skill}
 
@@ -135,7 +136,7 @@ Les modèles pris en charge comprennent le planificateur Sling, ResourceChangeLi
 
 Les compétences s’associent au [MCP de migration vers le cloud](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md) pour récupérer les résultats directement depuis [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md). Si le MCP n’est pas configuré, la compétence revient à une exportation CSV [BPA](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) locale, ou vous pouvez la pointer manuellement vers des fichiers spécifiques.
 
-Pour obtenir des instructions de configuration complètes et consulter la référence des modèles, consultez [&#x200B; Migration de code assistée par l’IA vers AEM as a Cloud Service &#x200B;](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md).
+Pour obtenir des instructions de configuration complètes et consulter la référence des modèles, consultez [ Migration de code assistée par l’IA vers AEM as a Cloud Service ](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md).
 
 ### Utilisation des compétences Dispatcher {#use-the-dispatcher-skill}
 
@@ -153,6 +154,36 @@ Appelez les compétences du Dispatcher pour toute tâche de configuration Dispat
 Pour les requêtes générales ou de première utilisation, commencez par la sous-compétence `workflow-orchestrator`. Pour un travail ciblé, décrivez le problème spécifique et les parcours d’acquisition des compétences au spécialiste approprié.
 
 Les compétences du Dispatcher permettent de gérer l’orchestration et les conseils. Le serveur Dispatcher MCP, décrit dans la section suivante, fournit les sept outils de validation et d’exécution que la compétence utilise lorsqu’elle a besoin de preuves locales.
+
+### Utilisation de la compétence d’évaluation du code {#use-the-code-assessment-skill}
+
+**(Beta)** La compétence `code-assessment` détecte, révise et corrige les problèmes de qualité du code et d’exactitude dans un projet AEM as a Cloud Service entièrement dans votre espace de travail local. Décrivez le problème et les compétences nécessaires pour acheminer la demande vers le workflow de résolution approprié.
+
+Les vérifications prises en charge incluent la modernisation de l’injection de dépendance du modèle Sling, la mise à jour des dépendances Maven obsolètes, l’ajout de délais d’expiration manquants aux appels HTTP sortants, la liaison de requêtes illimitées, les planificateurs Sling, les écouteurs de changement de ressource, les API de réplication et Assets, ainsi que la gestion des événements JCR ou OSGi, avec davantage d’ajouts au fil du temps. Selon le problème, la compétence applique directement un correctif mécanique ou vous guide tout au long d’un correctif qui nécessite une évaluation.
+
+Pour une révision large ou une première révision, demandez à la compétence d’évaluer l’ensemble du projet : il exécute chaque détecteur, signale tous les résultats et applique les correctifs de code un motif à la fois.
+
+Pour commencer, ouvrez une nouvelle conversation d’agent dans votre projet AEM as a Cloud Service.
+
+**1. Examinez votre projet.** Demandez un rapport. La compétence exécute son analyseur et renvoie les résultats en ligne, regroupés par motif et gravité, avec un plan de mesures correctives suggéré. Aucun code n’est modifié à ce stade.
+
+```
+scan my AEM project and report any code-quality issues
+```
+
+Pour un appel plus explicite, nommez directement la compétence :
+
+```
+/code-assessment review my code for AEM as a Cloud Service issues
+```
+
+**2. Appliquez des correctifs, un motif à la fois.** Demandez à la compétence de corriger un modèle spécifique. Il effectue des modifications chirurgicales et vérifie leur compilation. Les correctifs mécaniques s&#39;appliquent directement ; ceux qui vous guident vous guident à travers chaque décision.
+
+```
+apply unbounded-query
+```
+
+Il ne valide ni ne transmet : vous passez en revue la comparaison et la validation. Les correctifs volumineux s’exécutent par lots pouvant être repris ; répondez `apply <pattern>` pour continuer.
 
 ## Serveur MCP Quickstart AEM {#aem-quickstart-mcp-server}
 
@@ -223,7 +254,7 @@ Le serveur Dispatcher MCP est fourni avec AEM Dispatcher SDK. Il permet aux outi
 
 Contrairement aux compétences du Dispatcher, le serveur MCP Dispatcher n’expose que les outils suivants : sept outils MCP et aucune invite ni ressource.
 
->[!VIDEO](https://video.tv.adobe.com/v/3491963?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3491951?quality=12&learn=on)
 
 ### Conditions préalables {#prerequisites}
 
