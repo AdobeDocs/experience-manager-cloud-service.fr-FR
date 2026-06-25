@@ -18,7 +18,7 @@ Découvrez comment gérer plusieurs référentiels Git lorsque vous utilisez Clo
 
 ## Synchroniser les référentiels Git privés {#syncing-customer-managed-git-repositories}
 
-Au lieu d’utiliser directement le référentiel Git de Cloud Manager, les clients [ peuvent utiliser leur propre référentiel Git privé](integrating-with-git.md) ou plusieurs référentiels Git privés. Pour vous assurer que le référentiel Git de Cloud Manager est toujours à jour, configurez un processus de synchronisation automatisé.
+Au lieu d’utiliser directement le référentiel Git de Cloud Manager, les clients [&#x200B; peuvent utiliser leur propre référentiel Git privé](integrating-with-git.md) ou plusieurs référentiels Git privés. Pour vous assurer que le référentiel Git de Cloud Manager est toujours à jour, configurez un processus de synchronisation automatisé.
 
 Selon l’emplacement d’hébergement du référentiel Git du client ou de la cliente, une action GitHub ou une solution d’intégration continue telle que Jenkins configure l’automatisation. Si l’automatisation a été mise en place, chaque notification push vers un référentiel Git détenu par le client peut être automatiquement transférée vers le référentiel Git Cloud Manager.
 

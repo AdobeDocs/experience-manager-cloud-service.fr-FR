@@ -44,7 +44,7 @@ Cloud Manager prend en charge des configurations multi-équipes flexibles, ajust
 
 Chaque entreprise a des exigences différentes, notamment la configuration de l’équipe, les processus et les processus de développement. Adobe utilise la configuration décrite ci-dessous pour plusieurs projets qui fournissent des expériences en plus d’AEM as a Cloud Service.
 
-Par exemple, les applications Adobe Creative Cloud, telles qu’Adobe Photoshop ou Adobe Illustrator, incluent des ressources de contenu telles que des tutoriels, des exemples et des guides. Les applications clientes utilisent le contenu d’AEM as a Cloud Service de manière découplée. Ils effectuent des appels d’API vers le niveau de publication d’AEM Cloud pour récupérer le contenu structuré en tant que flux JSON. En outre, le [ réseau de diffusion de contenu (CDN) d’AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#content-delivery) est utilisé pour diffuser des contenus structurés et non structurés avec des performances optimales.
+Par exemple, les applications Adobe Creative Cloud, telles qu’Adobe Photoshop ou Adobe Illustrator, incluent des ressources de contenu telles que des tutoriels, des exemples et des guides. Les applications clientes utilisent le contenu d’AEM as a Cloud Service de manière découplée. Ils effectuent des appels d’API vers le niveau de publication d’AEM Cloud pour récupérer le contenu structuré en tant que flux JSON. En outre, le [&#x200B; réseau de diffusion de contenu (CDN) d’AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#content-delivery) est utilisé pour diffuser des contenus structurés et non structurés avec des performances optimales.
 
 Les équipes qui contribuent à ce projet suivent le processus suivant.
 
@@ -54,7 +54,7 @@ L’intégration d’un nouveau projet nécessite une liste dans le fichier de p
 
 ![Diagramme de workflow](/help/implementing/cloud-manager/assets/team-setup1.png)
 
-Le référentiel Git de chaque équipe est configuré à l’aide de l’[archétype de projet ](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/overview) et suit donc les bonnes pratiques pour configurer les projets AEM. La seule exception est la configuration Dispatcher, qui est effectuée dans le référentiel Git partagé comme indiqué ci-dessus.
+Le référentiel Git de chaque équipe est configuré à l’aide de l’[archétype de projet &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/overview) et suit donc les bonnes pratiques pour configurer les projets AEM. La seule exception est la configuration Dispatcher, qui est effectuée dans le référentiel Git partagé comme indiqué ci-dessus.
 
 Chaque équipe utilise un workflow Git simplifié avec deux + N branches, suivant le modèle de flux Git :
 
