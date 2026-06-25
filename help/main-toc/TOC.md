@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
+source-git-commit: 784061cac8964a4f86690c84d106396994f987b7
 workflow-type: tm+mt
 source-wordcount: '7545'
 ht-degree: 84%
@@ -1117,9 +1117,9 @@ ht-degree: 84%
    + [Générer une sortie AFP à l’aide de l’API AEM Forms](/help/forms/document-generation-afp-api.md)
    + {hide-from-toc}[Authentification de serveur à serveur OAuth](/help/forms/oauth-api-authetication.md)
    + {hide-from-toc}[Authentification serveur à serveur JWT(JSON Web Token)](/help/forms/jwt-api-authentication.md)
-   + [Installer et configurer Forms Designer](/help/forms/installing-configuring-designer.md)
-   + [Utiliser Forms Designer pour créer des modèles](/help/forms/use-forms-designer.md)
-   + [Modifier le contenu de la page zéro avec Designer](/help/forms/changing-page-zero-content-designer.md)
+   + {hide-from-toc}[Installation et configuration de Forms Designer](/help/forms/installing-configuring-designer.md)
+   + {hide-from-toc}[Utiliser Forms Designer pour créer des modèles](/help/forms/use-forms-designer.md)
+   + {hide-from-toc}[Modification du contenu de la page zéro dans Designer](/help/forms/changing-page-zero-content-designer.md)
    + [Utiliser des polices personnalisées dans les documents PDF](/help/forms/use-custom-fonts.md)
    + [Liste des polices prises en charge dans les documents PDF](/help/forms/supported-out-of-the-box-fonts.md)
    + [Problèmes connus, bonnes pratiques et questions fréquentes](/help/forms/communications-known-issues-limitations.md)
