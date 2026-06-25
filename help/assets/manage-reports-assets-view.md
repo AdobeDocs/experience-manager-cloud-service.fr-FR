@@ -5,11 +5,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Asse
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
-hide: true
-source-git-commit: 8088583ea5c970de4e71e771e34b9125fac3047e
+source-git-commit: 8f04036493722f73fb29416b51dae6d64633249c
 workflow-type: tm+mt
-source-wordcount: '1507'
-ht-degree: 86%
+source-wordcount: '1429'
+ht-degree: 82%
 
 ---
 
@@ -142,7 +141,7 @@ Obtenez des informations de diffusion pour les ressources diffusées avec Dynami
 <!--
 >[!NOTE]
 > 
->To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 -->
 
 ### Conditions préalables {#prereqs-dynamic-media-delivery-reports}
@@ -187,8 +186,8 @@ Pour supprimer ou télécharger le rapport Diffusion Dynamic Media au format C
 
 ## Afficher et télécharger un rapport existant {#View-and-download-existing-report}
 
-Les rapports existants s’affichent dans l’onglet **Rapports exécutés**. Cliquez sur **Rapports** et sélectionnez **Rapports exécutés** pour afficher tous les rapports créés dont le statut est **Terminé**, indiquant qu’ils peuvent être téléchargés. Pour télécharger le rapport au format CSV ou le supprimer, sélectionnez la ligne du rapport. Sélectionnez ensuite **Télécharger le fichier CSV** ou **Supprimer**.
-![Affichage et téléchargement de rapports existants](/help/assets/assets/view-download-existing-report.png)
+Les rapports existants s’affichent sous l’onglet **Rapports exécutés**. Cliquez sur **Rapports** et sélectionnez **Rapports exécutés** pour afficher tous les rapports créés avec le statut **terminé**, indiquant qu’ils sont prêts à être téléchargés. Pour télécharger le rapport au format CSV ou le supprimer, sélectionnez la ligne du rapport. Sélectionnez ensuite **Télécharger CSV** ou **Supprimer**.
+![affichage et téléchargement des rapports existants](/help/assets/assets/view-download-existing-report.png)
 
 
 ## Planifier un rapport {#schedule-report}
@@ -221,13 +220,13 @@ Les rapports planifiés s’affichent dans l’onglet **Rapports planifiés** et
 1. Accédez à l’onglet **Rapports planifiés**.
 1. Sélectionnez la ligne du rapport.
 1. Cliquez sur **Modifier**.
-1. Cliquez sur **Annuler la planification**, puis sur **Confirmer** pour annuler le rapport planifié. Pour les rapports annulés, la prochaine exécution devient vide et le statut est Annulé.
+1. Cliquez sur **Annuler le planning** puis sur **Confirmer** pour annuler le rapport planifié. Pour les rapports annulés, l’heure d’exécution suivante devient vide et le statut indique annulé.
    ![Modification et annulation d’un rapport planifié](/help/assets/assets/cancel-edit-scheduled-reports.png)
 
 ### Reprendre le planning {#resume-schedule}
 
-Pour reprendre le planning annulé, sélectionnez la ligne du rapport et cliquez sur **Reprendre le planning**. Lors de la reprise, les entrées d’exécution suivantes s’affichent à nouveau et le statut est En cours.
-![Reprise du planning](/help/assets/assets/resume-schedule.png)
+Pour reprendre la planification annulée, sélectionnez la ligne du rapport et cliquez sur **Reprendre la planification**. Lors de la reprise, les entrées d’exécution suivantes s’affichent à nouveau et le statut indique en cours.
+![reprendre le planning](/help/assets/assets/resume-schedule.png)
 
 >[!NOTE]
 >
