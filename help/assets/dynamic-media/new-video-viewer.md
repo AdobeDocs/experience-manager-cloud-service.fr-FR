@@ -1,11 +1,12 @@
 ---
 title: Nouvelle visionneuse de vidéos
-description: La nouvelle visionneuse de vidéos de Dynamic Media offre une expérience de lecture vidéo améliorée
+description: La nouvelle visionneuse de vidéos de Dynamic Media offre une expérience de lecture vidéo améliorée avec des performances, une accessibilité et une configurabilité améliorées.
 role: User
-source-git-commit: 1ee4f1352a0fe1e8d1f2fd7b79555ad4144bb02c
+exl-id: c819c6b3-bb7c-4d0e-b745-62b42f4ecd5f
+source-git-commit: 92b48e3413b27b664ee38ec43b28d5d881f0bf40
 workflow-type: tm+mt
-source-wordcount: '1443'
-ht-degree: 2%
+source-wordcount: '1477'
+ht-degree: 3%
 
 ---
 
@@ -50,7 +51,7 @@ Le fonctionnement de la nouvelle visionneuse de vidéos est le suivant :
 | Extensibilité | Émet des événements de lecture structurés |
 | Intégration | Continue de travailler avec les workflows Dynamic Media existants |
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Avant d’utiliser la nouvelle visionneuse de vidéos, assurez-vous que les conditions préalables suivantes sont remplies :
 
@@ -68,7 +69,7 @@ Pour activer ou désactiver la nouvelle visionneuse de vidéos, contactez l’as
 
 Pour prévisualiser la nouvelle visionneuse de vidéos à partir de la page des détails de la ressource, procédez comme suit :
 
-1. Accédez à **Assets** > **Fichiers**, puis ouvrez le dossier contenant la ressource vidéo.
+1. Accédez à **&#x200B;**&#x200B;> **Fichiers**, puis ouvrez le dossier contenant la ressource vidéo.
 2. Cliquez sur la ressource vidéo pour ouvrir la page des détails de la ressource.
 3. Dans le panneau de gauche, cliquez sur **Visionneuses**.
 4. Dans le panneau **Visionneuses**, sélectionnez **Vidéo (nouvelle)**.
@@ -139,6 +140,7 @@ Les modificateurs de visionneuse vous permettent de contrôler le chargement des
 | `isletterboxed=true/false` | Contrôle si la vidéo est en boîte aux lettres ou étirée. |
 | `customcss` | Spécifie un fichier CSS personnalisé pour le style de la visionneuse. |
 | `transition` | Spécifie le comportement d&#39;affichage ou de masquage de la transition pour les contrôles de visionneuse. |
+| `mode=smartcrop` | Affiche la sortie recadrée intelligente de la vidéo. |
 
 Les modificateurs sont spécifiés en tant que paramètres de requête dans le champ **Modificateurs de visionneuse**.
 
@@ -194,18 +196,18 @@ Le rapport d’engagement vidéo comprend les champs suivants :
 
 | Champ | Description | Calcul |
 |-------|------------|-------------|
-| `video_id` | Identifiant vidéo unique. | N/A |
-| `video_name` | Nom de la ressource vidéo. | N/A |
-| `video_created_date` | Date de création de la vidéo. | N/A |
-| `duration_in_seconds` | Durée de la vidéo en secondes. | N/A |
-| `video_views` | Nombre total d’événements de lecture vidéo au cours de la période de création de rapports sélectionnée. | N/A |
-| `video_impressions` | Nombre total de fois où la vidéo a été chargée. | N/A |
+| `video_id` | Identifiant vidéo unique. | S/O |
+| `video_name` | Nom de la ressource vidéo. | S/O |
+| `video_created_date` | Date de création de la vidéo. | S/O |
+| `duration_in_seconds` | Durée de la vidéo en secondes. | S/O |
+| `video_views` | Nombre total d’événements de lecture vidéo au cours de la période de création de rapports sélectionnée. | S/O |
+| `video_impressions` | Nombre total de fois où la vidéo a été chargée. | S/O |
 | `video_watched_seconds` | Nombre total de secondes regardées pour tous les événements de lecture. | Somme des secondes regardées pour tous les événements de lecture |
 | `play_rate` | Pourcentage de lectures vidéo par rapport au chargement vidéo. | (`video_views` ÷ `video_impressions`) × 100 |
 | `avg_time_watched_in_seconds` | Durée moyenne de visionnage en secondes par vue. | `video_watched_seconds` ÷ `video_views` |
 | `avg_completion_rate` | Pourcentage de vues ayant atteint l’achèvement de la vidéo complète. | (Vues terminées ÷ `video_views`) × 100 |
 | `engagement_score` | Pourcentage de surveillance moyen sur tous les événements de lecture. | (Pourcentage total de la chronologie vidéo visionnée dans toutes les sessions ÷ `video_views`) |
-| `tenant_name` | Identifiant de la société ou du client associé aux données. | N/A |
+| `tenant_name` | Identifiant de la société ou du client associé aux données. | S/O |
 
 ## Questions fréquentes {#faq-video-engagement}
 
