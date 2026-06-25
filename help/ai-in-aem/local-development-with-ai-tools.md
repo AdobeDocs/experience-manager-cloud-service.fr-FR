@@ -4,13 +4,12 @@ description: Découvrez comment configurer des outils de codage d’IA avec le c
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: 89b0405ff170b17d8d6e26d035ebeed3ab361f4c
+source-git-commit: eac2d89b3cebc134b40fc0e537cf66c78fa1db50
 workflow-type: tm+mt
 source-wordcount: '2118'
 ht-degree: 0%
 
 ---
-
 
 # Développement local avec les outils d’IA {#local-development-with-ai-tools}
 
