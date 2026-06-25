@@ -4,10 +4,10 @@ description: Découvrez comment l’agent de développement dans AEM analyse les
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Developer
 exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
-source-git-commit: 0b050b161b11b9b4cd58e575d69472d3173dfe94
+source-git-commit: fb0eaf8173b0cb5c81062424dbdfa723319df539
 workflow-type: tm+mt
-source-wordcount: '1184'
-ht-degree: 10%
+source-wordcount: '1574'
+ht-degree: 8%
 
 ---
 
@@ -84,7 +84,7 @@ Ainsi, au lieu de découvrir une contrainte après une configuration ayant écho
 
 
 
-## Tâche de dépannage du pipeline  {#cloud-manager-pipeline-troubleshooting}
+## Tâche de dépannage du pipeline {#cloud-manager-pipeline-troubleshooting}
 
 Cette tâche peut récupérer les statuts du pipeline et vous aider à résoudre les problèmes liés aux étapes de création échouées en suggérant des correctifs, ce qui vous permet de gagner du temps lors du débogage des déploiements d’AEM as a Cloud Service dans les environnements de développement, d’évaluation et de production. Il examine les journaux de génération et le code associé pour vous recommander un correctif que vous pouvez appliquer manuellement.
 
@@ -105,13 +105,13 @@ To access this agent, please refer to the [release notes](/help/release-notes/re
 
 Vous accédez à l’agent de développement par le biais de l’assistant d’IA présent dans les interfaces utilisateur, notamment Cloud Manager ou Experience Hub.
 
-1. Pour commencer, cliquez sur [Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home) pour ouvrir sa page d’accueil.
+1. Pour commencer, cliquez sur [Adobe Experience Cloud](https://experience.adobe.com) pour ouvrir sa page d’accueil.
 
    ![Page d’accueil d’Adobe Experience Cloud](/help/implementing/cloud-manager/assets/experience-cloud-experiencemanager.png)
 
 1. Dans le rail de gauche, sous l’en-tête **Services**, cliquez sur **Cloud Manager**.
 
-   ![La liste déroulante affichant le paramètre prédéfini de création de contenu est sélectionnée](/help/implementing/cloud-manager/assets/experience-hub-role-selection.png)
+   ![Rail de gauche d’Experience Hub affichant Cloud Manager répertorié sous l’en-tête Services](/help/implementing/cloud-manager/assets/experience-hub-role-selection.png)
 
    >[!IMPORTANT]
    >
@@ -142,6 +142,38 @@ Vous accédez à l’agent de développement par le biais de l’assistant d’I
 
    ![invite de l’assistant AI et réponse qui en résulte](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-prompt-response.png)
 
+#### Dépannage direct à partir de l’échec de l’exécution du pipeline {#troubleshoot-with-ai-button}
+
+Lorsque l’exécution d’un pipeline échoue, Cloud Manager affiche également un bouton **Dépanner par l’IA** directement sur la page d’exécution du pipeline. Il s’agit du moyen le plus rapide de démarrer une session de dépannage, car l’exécution ayant échoué est automatiquement transmise en tant que contexte à l’assistant d’IA, aucune entrée d’invite manuelle n’étant nécessaire.
+
+1. Dans Cloud Manager, ouvrez l’échec de l’exécution du pipeline. La bannière d’état s’affiche **Échec** et le bouton **Résolution des problèmes avec l’IA** s’affiche dans le coin supérieur droit de la page.
+
+   ![Page d’exécution du pipeline ayant échoué affichant le bouton Dépannage avec l’IA et le panneau de l’assistant d’IA avec une analyse préchargée](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-troubleshoot-button.png)
+
+1. Cliquez sur **Résolution des problèmes liés à l’IA**.
+
+   Le panneau Assistant d’IA s’ouvre dans la partie droite de l’écran. L’assistant référence automatiquement l’échec de l’exécution du pipeline et commence son analyse, en identifiant l’étape qui a échoué et en suggérant un correctif que vous pouvez appliquer manuellement.
+
+1. Passez en revue la réponse et, si nécessaire, poursuivez la conversation dans la zone de texte **Assistant IA** pour poser des questions de suivi ou demander plus de détails.
+
+#### Dépannage à partir du widget Pipelines ayant échoué dans l’Experience Home {#troubleshoot-from-experience-home-widget}
+
+Experience Home comprend un widget **Pipelines en échec** qui vous donne une vue d’ensemble des échecs de pipeline entre vos programmes sans que vous ayez à accéder à Cloud Manager au préalable. Chaque ligne du widget représente un pipeline en échec et affiche le nom du pipeline, la date et l’heure de la dernière exécution, la durée et l’étape qui a échoué. Un bouton **Résolution des problèmes avec l’IA** est disponible en ligne pour chaque entrée.
+
+>[!NOTE]
+>
+>Le widget **Pipelines en échec** est visible uniquement lorsque le rôle **Admin &amp; IT** est sélectionné dans Experience Home. Si le widget n’apparaît pas, vérifiez que votre rôle est défini sur **Admin &amp; IT** à l’aide du sélecteur de rôle dans le coin supérieur droit de la page.
+
+![&#x200B; Le widget Pipelines en échec sur la page d’accueil d’Experience Platform, affichant une entrée de pipeline en échec avec un bouton Dépannage avec l’IA &#x200B;](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-failed-pipelines-widget.png)
+
+1. Ouvrez [Accueil Experience](https://experience.adobe.com), cliquez sur **Experience Manager** et faites défiler l’écran jusqu’au widget **Pipelines en échec**.
+
+1. Recherchez le pipeline que vous souhaitez étudier, puis cliquez sur **Dépannage avec l’IA** dans cette ligne.
+
+   Le panneau de l’assistant d’IA s’ouvre avec l’échec d’exécution du pipeline préchargé en tant que contexte. L’assistant commence son analyse automatiquement, en identifiant la cause première et en suggérant un correctif.
+
+1. Passez en revue la réponse et, si nécessaire, poursuivez la conversation dans la zone de texte **Assistant IA** pour poser des questions de suivi ou demander plus de détails.
+
 ### Autorisations {#permissions}
 
 La tâche de dépannage du pipeline nécessite le rôle Cloud Manager - Développeur ou Cloud Manager - Gestionnaire de programme.
@@ -160,8 +192,6 @@ La tâche de dépannage du pipeline nécessite le rôle Cloud Manager - Dévelop
 Le dépannage du pipeline fonctionne sur les étapes de test unitaire et de création et d’analyse de code dans les pipelines Déploiement de pile complète et Qualité du code . Il prend également en charge les [pipelines de configuration de niveau web](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines).
 
 Pour les autres types de pipeline et étapes, déboguez les échecs en téléchargeant et en examinant les journaux. Voir [Journaux d’accès et de téléchargement](/help/implementing/cloud-manager/manage-logs.md) pour plus d’informations.
-
-
 
 ## Tâche de dépannage de la réplication (Beta) {#replication-troubleshooting-job}
 
