@@ -5,36 +5,36 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 5467a311-727d-4f67-ba43-4b6548431061
-source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
+source-git-commit: 8c5c34018aee84a1ec54d3f1d0bc77b8c660869c
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1534'
 ht-degree: 11%
 
 ---
 
 # Évaluation de l’intégrité {#about-health-assessment}
 
-L’évaluation de l’intégrité est une analyse automatisée et non intrusive des environnements de production et d’évaluation dans Cloud Manager, au sein d’AEM as a Cloud Service. Il évalue le contenu, le code et les configurations afin d’identifier les antimodèles et les écarts par rapport aux bonnes pratiques, ce qui améliore la sécurité et les performances.
+L’évaluation de l’intégrité est une analyse automatisée et non intrusive des environnements de production et d’évaluation dans Cloud Manager, au sein d’AEM as a Cloud Service. Il évalue le contenu, le code et les configurations afin d’identifier les modèles qui s’écartent des bonnes pratiques, améliorant ainsi la sécurité et les performances.
 
 Le service d’évaluation de l’intégrité effectue les opérations suivantes :
 
-* Analyse les environnements et met en évidence les goulots d’étranglement, les inefficacités et les risques.
+* Analyse les environnements et identifie les goulots d’étranglement, les inefficacités et les risques en matière de performances.
 * Analyse les structures de contenu, telles que les plans directeurs, les Live Copies et les configurations client.
 * Détecte les dépendances obsolètes, y compris AEM SDK et les bibliothèques tierces.
 * Signale les problèmes de qualité du code, tels que des annotations incorrectes et des modèles inefficaces.
 * fournit des conseils pratiques dans les tableaux de bord (par exemple, le Centre de maintenance) ;
-* Prend des mesures correctives proactives pour améliorer les performances du système.
+* Permet une correction proactive pour améliorer les performances du système.
 
 Chaque exécution répertorie les problèmes par gravité, fournit des liens vers des conseils et des correctifs recommandés et prend en charge une exportation PDF du rapport. Vous pouvez utiliser la vue **Dernier rapport** pour l’état actuel et **Rapports précédents** pour comparer les exécutions.
 
-Consultez également la section [&#x200B; Modèles d’évaluation de l’intégrité &#x200B;](#ha-patterns) pour obtenir des détails sur les définitions de règle et les mesures correctives.
+Consultez également la section [ Modèles d’évaluation de l’intégrité ](#ha-patterns) pour obtenir des détails sur les définitions de règle et les mesures correctives.
 
 ## Accéder à la page Évaluation de l’intégrité {#access-health-assessment}
 
 1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com).
 1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
-1. Dans le panneau de gauche, cliquez sur **&#x200B;**.
-1. Dans Cloud Manager, en haut à droite de la page, sélectionnez l’organisation que vous souhaitez utiliser. L’image ci-dessous est fournie à titre de référence uniquement. Sélectionnez votre organisation.
+1. Dans le panneau de gauche, cliquez sur ****.
+1. Dans Cloud Manager, en haut à droite de la page, sélectionnez l’organisation à laquelle vous souhaitez accéder. L’image ci-dessous est fournie à titre de référence. Sélectionnez votre organisation.
 
    ![Sélection d’une organisation dans Cloud Manager](/help/implementing/cloud-manager/reports/assets/ha-org.png)
 
@@ -60,7 +60,7 @@ Consultez également la section [&#x200B; Modèles d’évaluation de l’intég
 
    ![Cliquez sur le bouton Générer un nouveau rapport sur la page Évaluation de l’intégrité](/help/implementing/cloud-manager/reports/assets/ha-run-report.png)
 
-   Tandis qu’un rapport s’exécute pour l’environnement sélectionné, l’option **Exécuter le rapport** reste désactivée jusqu’à ce qu’elle se termine.
+   Pendant l’exécution d’un rapport pour l’environnement sélectionné, l’option **Exécuter le rapport** reste désactivée jusqu’à la fin du processus.
 
    ![Rapport en cours d’exécution](/help/implementing/cloud-manager/reports/assets/ha-running-report.png)
 
@@ -99,7 +99,7 @@ Consultez également la section [&#x200B; Modèles d’évaluation de l’intég
 
 * Dans le coin supérieur droit de la page du rapport, cliquez sur **Télécharger**.
 
-  Un fichier ZIP contenant des fichiers PDF pour tous les problèmes détectés dans ce rapport est généré.
+  Un fichier ZIP contenant des fichiers PDF pour tous les problèmes détectés dans le rapport est généré.
 
   ![Télécharger le PDF de tous les problèmes rencontrés dans un rapport](/help/implementing/cloud-manager/reports/assets/ha-download-pdf.png)
 
@@ -121,14 +121,14 @@ Sur la page **Évaluation de l’intégrité**, consultez la section **Rapports 
 
 ## Modèles d’évaluation de l’intégrité {#ha-patterns}
 
-Vous trouverez ci-dessous une liste complète des antimodèles et des problèmes détectés par l’évaluation de l’intégrité dans AEM as a Cloud Service. Le tableau regroupe les éléments en trois types : Analyse de contenu, Analyse de code et anti-modèles de l’optimiseur de Cloud Service, avec une explication pour chacun d’eux.
+Vous trouverez ci-dessous une liste complète des modèles qui s’écartent des bonnes pratiques et des problèmes détectés par l’évaluation de l’intégrité dans AEM as a Cloud Service. Le tableau regroupe les éléments en trois types : analyse de contenu, analyse du code et modèles de l’optimiseur de Cloud Service qui s’écartent des bonnes pratiques, avec une explication pour chacun d’eux.
 
 | Nom du motif | Catégorie | Type | Description | Impact | Correction automatique ? |
 | --- | --- | --- | --- | --- | --- |
 | Groupes AEM personnalisés avec ajouts directs d’utilisateurs | Sécurité | Analyse de contenu | Les utilisateurs sont ajoutés directement aux groupes AEM au lieu d’ajouter des groupes IMS en tant que membres. | La gestion des autorisations et la gouvernance de la sécurité peuvent devenir complexes. [Prise en charge IMS](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/ims-support) | Non |
-| Nœud de contenu JCR manquant dans les pages | Structure du référentiel | Analyse de contenu | Nœud `jcr:content` manquant dans la page. | Limites fonctionnelles dans Experience Manager as a Cloud Service. [Détection de motifs - ACV](https://experienceleague.adobe.com/fr/docs/experience-manager-pattern-detection/table-of-contents/acv) | Non |
-| Type de ressource Sling manquant dans les pages | Structure du référentiel | Analyse de contenu | `sling:resourceType` manquant dans la page. | Limites fonctionnelles dans Experience Manager as a Cloud Service. [Détection de motifs - ACV](https://experienceleague.adobe.com/fr/docs/experience-manager-pattern-detection/table-of-contents/acv) | Non |
-| Pages avec nombre de nœuds excessif | Performance | Analyse de contenu | Les pages contiennent un grand nombre de nœuds dans leur structure. | Temps de chargement de page lent et mauvaise expérience utilisateur. [Détection de motifs - PCX](https://experienceleague.adobe.com/fr/docs/experience-manager-pattern-detection/table-of-contents/pcx) | Non |
+| Nœud de contenu JCR manquant dans les pages | Structure du référentiel | Analyse de contenu | Nœud `jcr:content` manquant dans la page. | Limites fonctionnelles dans Experience Manager as a Cloud Service. [Détection de motifs - ACV](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | Non |
+| Type de ressource Sling manquant dans les pages | Structure du référentiel | Analyse de contenu | `sling:resourceType` manquant dans la page. | Limites fonctionnelles dans Experience Manager as a Cloud Service. [Détection de motifs - ACV](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | Non |
+| Pages avec nombre de nœuds excessif | Performance | Analyse de contenu | Les pages contiennent un grand nombre de nœuds dans leur structure. | Temps de chargement de page lent et mauvaise expérience utilisateur. [Détection de motifs - PCX](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx) | Non |
 | Instances de workflow en cours d’exécution excessive | Performance | Analyse de contenu | Trop d’instances de workflows en cours d’exécution. | Dégradation des performances globales du système. [Tâches de maintenance](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/maintenance) | Non |
 | Instances de workflow terminées et non purgées | Performance | Analyse de contenu | Les anciennes instances de workflow terminées ne sont pas purgées. | Réduction de l&#39;efficacité du système et augmentation des coûts de stockage. [Tâches de maintenance](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/maintenance) | Non |
 | Statistiques d’utilisation des fragments de contenu | Statistiques | Analyse de contenu | Effectue le suivi du nombre de fragments de contenu utilisés. | S/O | S/O |
