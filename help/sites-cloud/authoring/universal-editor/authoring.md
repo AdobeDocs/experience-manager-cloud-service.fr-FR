@@ -6,10 +6,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 803ea9a7f1581589c6ac7402b268875923f00584
+source-git-commit: b2c13eead3670f0d708fa2c9adf9ac120d0470b9
 workflow-type: tm+mt
-source-wordcount: '3149'
-ht-degree: 12%
+source-wordcount: '3165'
+ht-degree: 11%
 
 ---
 
@@ -396,15 +396,15 @@ Appuyez ou cliquez sur l’icône **Propriétés de page** dans la barre d’out
 >* Le bouton **Propriétés de page** fonctionne uniquement pour les pages, et non pour les fragments de contenu.
 >* Le bouton s’affiche uniquement lorsque la page distante possède une [connexion avec le protocole](/help/implementing/universal-editor/component-definition.md#plugins) le `aem` ou le `xwalk` et qu’un chemin de page unique peut être résolu à partir de l’élément modifiable actuel.
 
-### Accès à la console Sites {#sites-console}
+### Ouvrir dans l’administration du site {#sites-console}
 
-L’extension **AEM Site Admin Extension** permet un accès rapide à la page en cours de modification dans la console [Sites d’AEM](/help/sites-cloud/authoring/sites-console/introduction.md), ce qui vous permet de parcourir l’arborescence du site ou d’effectuer des actions au niveau de la page dans la console.
+Le bouton **Ouvrir dans l’administrateur de site** permet d’accéder rapidement à la [console Sites d’AEM](/help/sites-cloud/authoring/sites-console/introduction.md) (ou à la [console Fragments d’expérience](/help/sites-cloud/authoring/fragments/experience-fragments.md) pour les chemins d’accès `/content/experience-fragments`) afin de savoir où se trouve la page en cours de modification dans votre structure de contenu. Vous pouvez ainsi parcourir l’arborescence du site ou effectuer des actions au niveau de la page dans la console.
 
 ![Icône Ouvrir dans l’administration de sites](assets/open-in-site-admin-icon.png)
 
 Appuyez ou cliquez sur l’icône pour ouvrir la console Sites dans un nouvel onglet du navigateur, et accédez à la page qui se trouve actuellement dans l’éditeur.
 
-Pour plus d’informations sur la manière d’activer cette extension, [consultez la documentation d’Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+Le bouton est masqué pour les chemins d’accès DAM (`/content/dam`) et lorsqu’aucune page AEM unique ne peut être déterminée à partir des éléments modifiables actuels.
 
 ### Verrouillage et déverrouillage de pages {#locking-pages}
 

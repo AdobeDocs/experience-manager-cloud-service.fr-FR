@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 784061cac8964a4f86690c84d106396994f987b7
+source-git-commit: 248e3db5298e96f01a683d8a69ea91ada701eef7
 workflow-type: tm+mt
-source-wordcount: '7545'
-ht-degree: 84%
+source-wordcount: '7552'
+ht-degree: 83%
 
 ---
 
@@ -33,6 +33,7 @@ ht-degree: 84%
    + Notes de mise à jour des fonctionnalités d’AEMaaCS {#release-notes}
       + [Notes de mise à jour de la version actuelle](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2026 {#2026}
+         + [Notes de mise à jour de la version 2026.5.0](/help/release-notes/release-notes-cloud/2026/2026-5-0.md)
          + [Notes de mise à jour de la version 2026.4.0](/help/release-notes/release-notes-cloud/2026/2026-4-0.md)
          + [Notes de mise à jour de la version 2026.3.0](/help/release-notes/release-notes-cloud/2026/2026-3-0.md)
          + [Notes de mise à jour de la version 2026.2.0](/help/release-notes/release-notes-cloud/2026/2026-2-0.md)
@@ -266,6 +267,7 @@ ht-degree: 84%
       + [Notes de mise à jour actuelles de l’éditeur universel](/help/release-notes/universal-editor/current.md)
       + [Aperçu des notes de mise à jour de l’éditeur universel](/help/release-notes/universal-editor/preview.md)
       + 2026 {#2026}
+         + [Notes De Mise À Jour 2026.06.18](/help/release-notes/universal-editor/2026/2026-06-18.md)
          + [Notes De Mise À Jour 2026.06.11](/help/release-notes/universal-editor/2026/2026-06-11.md)
          + [Notes De Mise À Jour 2026.06.05](/help/release-notes/universal-editor/2026/2026-06-05.md)
          + [Notes De Mise À Jour 2026.05.28](/help/release-notes/universal-editor/2026/2026-05-28.md)

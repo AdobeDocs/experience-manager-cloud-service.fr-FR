@@ -4,9 +4,9 @@ description: Découvrez comment l’agent de développement dans AEM analyse les
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Developer
 exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
-source-git-commit: fb0eaf8173b0cb5c81062424dbdfa723319df539
+source-git-commit: 8495dd5cc4629dd960f6c5c31d9d50c126d6d750
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1547'
 ht-degree: 8%
 
 ---
@@ -20,7 +20,7 @@ Il prend en charge les tâches suivantes, accessibles par le biais de l’interf
 
 * Tâche Cloud Manager : opérations en lecture seule, y compris la liste des programmes et des environnements, ainsi que l’état du pipeline
 * Tâche de dépannage du pipeline : débogage des pipelines ayant échoué
-* Tâche de gestion des heures creuses et des périodes creuses (disponibilité limitée) : affichage, création et modification des heures creuses et mise à jour des périodes creuses
+* Tâche de gestion des heures creuses et des périodes creuses : afficher, créer et modifier les heures creuses et mettre à jour les périodes creuses
 * Tâche de dépannage de la réplication (Beta) : débogage des problèmes liés à la réplication, tels que les files d’attente bloquées.
 
 >[!NOTE]
@@ -61,10 +61,6 @@ Obtenez des informations sur vos programmes et environnements AEM, notamment :
 
 
 ## Tâche de gestion des heures creuses et des périodes libres de mise à jour {#control-updates-job}
-
->[!AVAILABILITY]
->
->Cette fonctionnalité est en phase de disponibilité limitée et sera déployée au cours des prochaines semaines. E-Mail [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com) pour un accès immédiat.
 
 Affichez, créez et modifiez les heures creuses et mettez à jour les périodes libres directement via l’assistant AEM AI.
 

@@ -4,9 +4,9 @@ description: Découvrez les différentes options permettant d’étendre les fon
 feature: Developing
 role: Admin, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: b1de659aeb1e1d2d6d5428ec6434a2757dfe7d2d
+source-git-commit: b2c13eead3670f0d708fa2c9adf9ac120d0470b9
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '670'
 ht-degree: 92%
 
 ---
@@ -24,7 +24,6 @@ Découvrez les différentes options permettant d’étendre les fonctionnalités
 En tant que service Adobe Experience Cloud, l’interface utilisateur de l’éditeur universel peut être étendue à l’aide de l’App Builder et d’Experience Manager. Adobe propose de nombreuses extensions prêtes à l’emploi disponibles via [Extension Manager](https://experience.adobe.com/aem/extension-manager) que vous pouvez utiliser pour votre projet.
 
 * **[Extension de la gestion multi-sites AEM (MSM)](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)** : interrompez ou rétablissez l’héritage au niveau du composant.
-* **[Extension de l’administration de site AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console)** : ouvrez la console Sites à l’emplacement de la page dans l’éditeur universel.
 * **[Extension de verrouillage de page AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages)** : affichez et modifiez le statut de verrouillage de page à partir de l’éditeur universel.
 * **[Extension des workflows AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#workflows)** : lancez des workflows sur la page et son contenu depuis l’éditeur universel.
 * **[Générer des variations](/help/generative-ai/generate-variations-integrated-editor.md)** : utilisez l’intelligence artificielle (IA) générative pour créer des variations pour votre contenu directement dans le panneau des propriétés.

@@ -4,9 +4,9 @@ description: Découvrez comment configurer des outils de codage d’IA avec le c
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: 32461fe79a72c2a5d83fd3518d84807427112763
+source-git-commit: 89b0405ff170b17d8d6e26d035ebeed3ab361f4c
 workflow-type: tm+mt
-source-wordcount: '2100'
+source-wordcount: '2118'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,9 @@ Quatre composantes complémentaires abordent ce problème :
 | **Serveur MCP local** | Permet la validation et le contrôle au moment de l’exécution d’une instance Dispatcher locale |
 
 Consultez les [tutoriels de développement assisté par l’IA](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview) pour obtenir des instructions pratiques supplémentaires.
+
+N’hésitez pas à envoyer des commentaires par e-mail à [&#128279;](mailto:aemcs-ai-ide-tools-feedback@adobe.com) pour aider à façonner le développement de produits.
+
 
 >[!TIP]
 >
@@ -155,11 +158,15 @@ Pour les requêtes générales ou de première utilisation, commencez par la sou
 
 Les compétences du Dispatcher permettent de gérer l’orchestration et les conseils. Le serveur Dispatcher MCP, décrit dans la section suivante, fournit les sept outils de validation et d’exécution que la compétence utilise lorsqu’elle a besoin de preuves locales.
 
-### Utilisation de la compétence d’évaluation du code {#use-the-code-assessment-skill}
+### Utilisation de la compétence d’évaluation du code (Beta) {#use-the-code-assessment-skill}
 
-**(Beta)** La compétence `code-assessment` détecte, révise et corrige les problèmes de qualité du code et d’exactitude dans un projet AEM as a Cloud Service entièrement dans votre espace de travail local. Décrivez le problème et les compétences nécessaires pour acheminer la demande vers le workflow de résolution approprié.
+>Cette fonctionnalité est **version bêta**. Adobe vous incite à fournir vos commentaires par e-mail à l’adresse [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) afin de façonner le développement du produit.
+>
+>Les versions de Beta peuvent contenir des défauts et sont fournies « EN L’ÉTAT » sans garantie d’aucune sorte. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, remplacer ou prendre en charge (par le biais des services d’assistance Adobe ou d’une autre manière) les versions bêta. Adobe conseille aux clients d’être prudent et de ne pas se fier au bon fonctionnement ou aux performances des versions bêta, ni à la documentation ou aux documents d’accompagnement. Les fonctionnalités et API de la version bêta peuvent être modifiées sans préavis. Par conséquent, toute utilisation des versions bêta s’effectue entièrement aux risques et périls du client.
 
-Les vérifications prises en charge incluent la modernisation de l’injection de dépendance du modèle Sling, la mise à jour des dépendances Maven obsolètes, l’ajout de délais d’expiration manquants aux appels HTTP sortants, la liaison de requêtes illimitées, les planificateurs Sling, les écouteurs de changement de ressource, les API de réplication et Assets, ainsi que la gestion des événements JCR ou OSGi, avec davantage d’ajouts au fil du temps. Selon le problème, la compétence applique directement un correctif mécanique ou vous guide tout au long d’un correctif qui nécessite une évaluation.
+Les compétences `code-assessment` détectent, examinent et corrigent les problèmes de qualité du code et d’exactitude dans un projet AEM as a Cloud Service entièrement dans votre espace de travail local. Décrivez le problème et les compétences nécessaires pour acheminer la demande vers le workflow de résolution approprié.
+
+Les vérifications prises en charge incluent la modernisation de l’injection de dépendance du modèle Sling, la mise à jour des dépendances Maven obsolètes, l’ajout de délais d’expiration manquants aux appels HTTP sortants, la liaison de requêtes illimitées, les planificateurs Sling, les écouteurs de changement de ressource, les API de réplication et Assets et la gestion des événements JCR ou OSGi, ainsi que l’analyse et la correction de l’utilisation des [API AEM obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md), avec d’autres ajouts au fil du temps. Selon le problème, la compétence applique directement un correctif mécanique ou vous guide tout au long d’un correctif qui nécessite une évaluation.
 
 Pour une révision large ou une première révision, demandez à la compétence d’évaluer l’ensemble du projet : il exécute chaque détecteur, signale tous les résultats et applique les correctifs de code un motif à la fois.
 
@@ -175,6 +182,12 @@ Pour un appel plus explicite, nommez directement la compétence :
 
 ```
 /code-assessment review my code for AEM as a Cloud Service issues
+```
+
+Pour vous concentrer sur un seul modèle, nommez-le à l’invite :
+
+```
+scan my project for unbounded queries
 ```
 
 **2. Appliquez des correctifs, un motif à la fois.** Demandez à la compétence de corriger un modèle spécifique. Il effectue des modifications chirurgicales et vérifie leur compilation. Les correctifs mécaniques s&#39;appliquent directement ; ceux qui vous guident vous guident à travers chaque décision.
@@ -243,12 +256,6 @@ Tout client MCP peut se connecter en pointant vers `http://localhost:4502/bin/mc
 >La valeur `Basic YWRtaW46YWRtaW4=` est le codage Base64 de `admin:admin`, les informations d’identification par défaut pour un démarrage rapide local. Ne l’utilisez pas avec des environnements non locaux.
 
 ## Serveur MCP Dispatcher {#dispatcher-mcp-server}
-
->[!IMPORTANT]
->
->Cette fonctionnalité est **version bêta**. L’accès anticipé aux fonctionnalités développées par Adobe permet aux clients et aux partenaires de faire part de leurs commentaires (par e-mail [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)) et de façonner le développement des produits. Cela les aide également à se préparer à adopter de nouvelles fonctionnalités avant leur disponibilité générale.
->
->Les versions de Beta peuvent contenir des défauts et sont fournies « EN L’ÉTAT » sans garantie d’aucune sorte. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, remplacer ou prendre en charge (par le biais des services d’assistance Adobe ou d’une autre manière) les versions bêta. Adobe conseille aux clients d’être prudent et de ne pas se fier au bon fonctionnement ou aux performances des versions bêta, ni à la documentation ou aux documents d’accompagnement. Les fonctionnalités et API de la version bêta peuvent être modifiées sans préavis. Par conséquent, toute utilisation des versions bêta s’effectue entièrement aux risques et périls du client.
 
 Le serveur Dispatcher MCP est fourni avec AEM Dispatcher SDK. Il permet aux outils d’IA de valider la configuration Dispatcher et Apache HTTPD, de suivre la gestion des requêtes et d’inspecter le comportement du cache par rapport à une instance Dispatcher s’exécutant localement dans Docker.
 

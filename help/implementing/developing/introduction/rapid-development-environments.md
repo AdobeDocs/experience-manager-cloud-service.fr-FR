@@ -4,9 +4,9 @@ description: Découvrez comment utiliser les environnements de développement ra
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Developer
-source-git-commit: b50c28965c2f98dee126b183055499a4de8e6a06
+source-git-commit: d4fc40740fe21296d82afb875f41c577c87a02c6
 workflow-type: tm+mt
-source-wordcount: '6004'
+source-wordcount: '6002'
 ht-degree: 22%
 
 ---
@@ -711,7 +711,7 @@ Pour plus d’informations sur la gestion de vos environnements à l’aide de C
 ## Instantanés {#snapshots}
 
 >[!NOTE]
->Les instantanés du RDE seront en version bêta publique début juin. Il sera alors possible de les activer en mettant à jour vers le dernier plug-in aio.
+>Les instantanés RDE sont en version bêta publique et peuvent donc être activés en mettant à jour vers le dernier plug-in AIO, sans contacter Adobe.
 >
 >En utilisant le Beta d’instantanés RDE, vous reconnaissez qu’il est toujours en cours de développement et que vous ne devez pas vous fier au bon fonctionnement de la technologie ou à la disponibilité des données. Bien que nous ayons largement testé cette fonctionnalité, il existe une petite possibilité que votre RDE devienne instable. Si cela se produit, une réinitialisation la rétablira à son état de fonctionnement.
 >Nous acceptons les commentaires à l’adresse [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com).
