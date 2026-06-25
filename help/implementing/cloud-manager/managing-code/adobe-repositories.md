@@ -4,10 +4,10 @@ description: Découvrez comment ajouter un référentiel géré par Adobe dans C
 exl-id: 6c32c4ae-f48d-4440-bfc2-cdc1a3d59599
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: db5d8007420692b2e4818a55f8209373a28eb3c0
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 100%
+source-wordcount: '226'
+ht-degree: 73%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 100%
 
 Découvrez comment ajouter un référentiel géré par Adobe dans Cloud Manager.
 
-La page **Référentiels** facilite l’ajout de référentiels supplémentaires gérés par Adobe à un programme sélectionné.
+La page **Référentiels** vous permet d’ajouter des référentiels gérés par Adobe supplémentaires à un programme sélectionné.
 
 **Pour ajouter un référentiel Adobe dans Cloud Manager :**
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée et le programme auquel ajouter un référentiel géré par Adobe.
 
-1. Sur la page **Aperçu du programme**, dans le menu latéral, cliquez sur l’![Icône Dossier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg), onglet **Référentiels**.
+1. Sur la page **Aperçu du programme**, dans le menu latéral, cliquez sur l’onglet ![Icône de dossier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **Référentiels**.
 
 1. Sur la page **Référentiels**, près du coin supérieur droit, cliquez sur **Ajouter un référentiel**.
 
@@ -32,13 +32,13 @@ La page **Référentiels** facilite l’ajout de référentiels supplémentaires
 1. Dans les champs de texte respectifs, saisissez ce qui suit :
 
    * **Nom du référentiel** : nom expressif de votre nouveau référentiel.
-   * **Aperçu de l’URL du référentiel** : vous n’avez pas besoin de saisir un chemin d’URL ni de modifier le chemin existant, car l’infrastructure du référentiel est déjà en place et entièrement intégrée et gérée par Adobe.
+   * **Aperçu de l’URL du référentiel** - Vous n’avez pas besoin de saisir un chemin d’URL ni de modifier le chemin existant, car l’infrastructure du référentiel est déjà configurée, intégrée et gérée par Adobe.
    * **Description (facultatif)** : description détaillée du référentiel.
 
    ![Boîte de dialogue Ajouter un référentiel](assets/add-adobe-repository.png)
 
 1. Cliquez sur **Enregistrer**.
-Votre nouveau référentiel est affiché dans le tableau de la page **Référentiels**.
+Votre nouveau référentiel s’affiche dans le tableau de la page **Référentiels**.
 
 Vous pouvez désormais associer un [Pipeline CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) à celui-ci, ou le gérer dans la fenêtre [**Référentiels**](managing-repositories.md).
 

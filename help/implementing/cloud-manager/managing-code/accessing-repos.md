@@ -5,10 +5,10 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 0c156a295dc49d7e12f4e4f9ce1743d06c7fcdaf
+source-git-commit: acc4f8187a8bf87168dc568df4470ae460af9016
 workflow-type: tm+mt
-source-wordcount: '406'
-ht-degree: 96%
+source-wordcount: '399'
+ht-degree: 67%
 
 ---
 
@@ -19,14 +19,14 @@ Découvrez comment accéder à votre référentiel Git géré par Adobe et comme
 
 ## Accédez aux informations sur le référentiel à partir de la page Aperçu . {#overview-page}
 
-Cloud Manager facilite la récupération des informations d’accès aux référentiels gérés par Adobe à l’aide du bouton **Accéder aux informations sur le référentiel** de la carte **Pipelines**.
+Cloud Manager vous permet de récupérer les informations d’accès à votre référentiel pour les référentiels gérés par Adobe à l’aide de la vignette **Accéder aux informations sur le référentiel** à partir de la carte **Pipelines**.
 
 La boîte de dialogue **Informations sur le référentiel** vous permet d’afficher les informations d’accès suivantes pour les référentiels gérés par Adobe :
 
 * Le nom d’utilisateur ou d’utilisatrice Git.
 * Le mot de passe Git.
 * L’URL vers le référentiel Git de Cloud Manager.
-* Des commandes Git préconfigurées pour ajouter rapidement un référentiel distant à votre référentiel Git et pour transférer du code.
+* Commandes Git préconfigurées pour ajouter un élément distant à votre référentiel Git et à votre code push.
 
   ![Fenêtre Informations sur le référentiel](assets/repository-info.png)
 
@@ -42,7 +42,7 @@ L’option **Accéder aux informations sur le référentiel** est visible par le
 
    ![Bouton Accéder aux informations sur le référentiel de la carte Pipelines](assets/pipelines-card.png)
 
-1. Pour accéder au mot de passe, un nouveau mot de passe doit être généré. Dans la boîte de dialogue **Informations sur le référentiel**, sélectionnez **Générer un mot de passe**.
+1. Pour accéder au mot de passe, vous devez en générer un nouveau. Dans la boîte de dialogue **Informations sur le référentiel**, sélectionnez **Générer un mot de passe**.
 
 1. Dans la boîte de dialogue de confirmation, sélectionnez **Générer un mot de passe**.
 
@@ -51,12 +51,12 @@ L’option **Accéder aux informations sur le référentiel** est visible par le
 1. À droite du champ **Mot de passe**, cliquez sur l’![Icône Copier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) pour copier le mot de passe dans le Presse-papiers.
 
    * La génération d’un mot de passe invalide le mot de passe précédent.
-   * Cloud Manager n’enregistre pas le mot de passe. Il vous appartient d’enregistrer ce mot de passe en toute sécurité.
-   * Étant donné que Cloud Manager n’enregistre pas le mot de passe, si vous le perdez, vous devez en régénérer un nouveau.
+   * Cloud Manager n’enregistre pas le mot de passe. Enregistrez le mot de passe en toute sécurité.
+   * Comme Cloud Manager n’enregistre pas le mot de passe, si vous le perdez, vous devez en générer un nouveau.
 
    ![Copier le mot de passe dans la boîte de dialogue Informations sur le référentiel](/help/implementing/cloud-manager/managing-code/assets/repository-copy-password.png)
 
-À l’aide de ces informations d’identification, vous pouvez cloner une copie locale du référentiel et apporter des modifications à ce référentiel local. Lorsque vous avez terminé, vous pouvez ensuite valider toutes les modifications du code vers le référentiel de code distant dans Cloud Manager.
+À l’aide de ces informations d’identification, vous pouvez cloner une copie locale du référentiel, apporter des modifications à ce référentiel local et, une fois l’opération terminée, valider toutes les modifications de code vers le référentiel de code distant de Cloud Manager.
 
 ## Accédez aux informations sur le référentiel à partir de la page Référentiels . {#repositories-window}
 
@@ -66,4 +66,4 @@ La fonction **Accéder aux informations sur le référentiel** est également di
 
 Vous pouvez révoquer un mot de passe d’accès à tout moment.
 
-Pour ce faire, [créez un ticket d’assistance pour cette demande](https://experienceleague.adobe.com/fr?support-solution=Experience+Manager&support-tab=home#support). Le ticket est traité en priorité et la révocation est généralement effectuée dans la journée.
+Pour ce faire, [créez un ticket d’assistance pour cette demande](https://experienceleague.adobe.com/fr?support-solution=Experience+Manager&support-tab=home#support). Le ticket est traité avec une priorité élevée et le mot de passe est généralement révoqué dans les 24 heures.

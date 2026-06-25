@@ -4,7 +4,7 @@ description: Découvrez comment les vérifications GitHub annotent les requêtes
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 'null'
+source-git-commit: 552f782815892fb4204e18093e4f106b99db616d
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 52%
