@@ -5,10 +5,10 @@ feature: Asset Management
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 3ae96cd2-e0ac-43a5-a0bf-bebb1a028b10
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 17d8d0774461a893d9decc7f184cba084570a737
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 99%
+source-wordcount: '2062'
+ht-degree: 41%
 
 ---
 
@@ -108,3 +108,61 @@ Le tableau suivant récapitule les types d’utilisateurs et d’utilisatrices A
 Pour plus d’informations sur la prise en main d’Assets Ultimate, consultez [Activation d’AEM Assets Ultimate](/help/assets/enable-assets-ultimate.md). Si des utilisateurs et utilisatrices d’AEM Assets existants ont des questions sur le moment où effectuer la mise à niveau vers Assets Ultimate, contactez votre représentant ou représentante de compte Adobe. Vous pouvez également consulter [Activer Assets Ultimate pour les clientes et clients existants](/help/assets/enable-assets-ultimate.md#enable-assets-ultimate-existing-customers) pour plus d’informations.
 
 AEM Assets fournit également une gestion des ressources numériques plus légère pour les clientes et clients qui ne disposent pas d’exigences avancées telles que l’extensibilité de l’interface d’utilisation, l’automatisation axée sur les API et le déploiement de code personnalisé. Pour plus d’informations, voir [AEM Assets Prime](/help/assets/assets-prime.md).
+
+## Questions fréquentes {#frequently-asked-questions-assets-ultimate}
+
+### Qu’est-ce qu’AEM Assets Ultimate et en quoi est-il différent des autres offres AEM Assets ? {#what-is-assets-ultimate}
+
+AEM Assets Ultimate l’offre de gestion avancée des ressources numériques d’Adobe dans Adobe Experience Manager as a Cloud Service, conçue pour gérer des chaînes d’approvisionnement de contenu complexes et pour s’assurer que le contenu fonctionne bien sur tous les canaux. Il propose quatre types d’utilisateurs distincts : Utilisateurs limités, Utilisateurs collaborateurs, Utilisateurs avancés et Administrateurs, chacun disposant d’un ensemble défini de fonctionnalités et d’affectations de profil de produit. AEM Assets Ultimate comprend également une distribution Content Hub transparente, une création de contenu optimisée par l’IA via Adobe Express et Firefly, ainsi que des intégrations à des applications Adobe et non Adobe.
+
+### Que peut faire un utilisateur limité dans AEM Assets Ultimate ? {#limited-user-capabilities}
+
+Un utilisateur limité dans AEM Assets Ultimate peut accéder aux ressources approuvées par la marque et les utiliser à partir de l’entreprise via le portail AEM Assets Content Hub. Les utilisateurs limités ne peuvent pas créer ni modifier des ressources, gérer des métadonnées, accéder à l’environnement de création AEM Assets ou intégrer des ressources à d’autres applications. Leur accès est limité exclusivement à la découverte et à l’exploitation de ressources approuvées via Content Hub, ce qui rend ce type d’utilisateur adapté aux parties prenantes étendues qui ont besoin d’un accès régi aux ressources de marque finalisées.
+
+### À quel profil de produit un utilisateur limité doit-il être ajouté dans AEM Assets Ultimate ? {#limited-user-product-profile}
+
+Un Utilisateur limité dans AEM Assets Ultimate doit être ajouté au profil de produit suivant dans Adobe Admin Console : AEM > Instance de diffusion > Utilisateurs limités AEM Assets. Il s’agit du seul profil de produit requis pour les utilisateurs limités. Il permet d’accéder au portail AEM Assets Content Hub pour la découverte et l’utilisation approuvées des ressources. Aucun profil d’instance d’auteur de production n’est requis pour ce type d’utilisateur.
+
+### Que peut faire un utilisateur collaborateur dans AEM Assets Ultimate ? {#collaborator-user-capabilities}
+
+Un utilisateur collaborateur dans AEM Assets Ultimate peut accéder aux ressources approuvées par la marque via le portail AEM Assets Content Hub, créer et modifier des ressources à l’aide d’Adobe Express et de Firefly avec des modèles et des kits de marque conçus par des professionnels, et utiliser des ressources de Adobe Experience Manager via des intégrations disponibles sur d’autres produits Adobe et applications non Adobe. Les utilisateurs collaborateurs ne peuvent pas gérer de ressources au niveau de la gestion des ressources numériques, configurer la gouvernance des métadonnées ni gérer les autorisations dans l’environnement de création AEM Assets. Ces fonctionnalités sont réservées aux utilisateurs expérimentés et aux administrateurs.
+
+### À quels profils de produit un utilisateur collaborateur doit-il être ajouté dans AEM Assets Ultimate ? {#collaborator-user-product-profiles}
+
+Un utilisateur collaborateur dans AEM Assets Ultimate doit être ajouté à deux profils de produit dans Adobe Admin Console : AEM > Instance de diffusion > Utilisateurs limités AEM Assets et AEM > Instance de création de production > Utilisateurs collaborateurs AEM Assets. Le profil d’instance de diffusion accorde l’accès à Content Hub. Le profil d’instance d’auteur de production permet les intégrations de ressources et la création de contenu optimisée par Adobe Express et Firefly. Les deux profils sont requis pour une expérience utilisateur de collaborateur complète.
+
+### Que peut faire un utilisateur expérimenté dans AEM Assets Ultimate ? {#power-user-capabilities}
+
+Un utilisateur expérimenté dans AEM Assets Ultimate a accès à l’ensemble des fonctionnalités d’AEM Assets, notamment l’ingestion de ressources, le stockage, le catalogage, la gestion des métadonnées, la gouvernance et l’automatisation autour des ressources numériques. Les utilisateurs expérimentés peuvent également créer et modifier des ressources à l’aide d’Adobe Express et de Firefly, utiliser des ressources au moyen d’intégrations à des applications Adobe et non Adobe et accéder à des ressources approuvées par la marque via le portail AEM Assets Content Hub. Les utilisateurs expérimentés ne peuvent pas gérer les autorisations dans l’environnement de création AEM Assets, cette fonctionnalité étant réservée aux administrateurs.
+
+### À quels profils de produit un utilisateur expérimenté doit-il être ajouté dans AEM Assets Ultimate ? {#power-user-product-profiles}
+
+Un utilisateur expérimenté dans AEM Assets Ultimate doit être ajouté à deux profils de produit dans Adobe Admin Console : AEM > Instance de diffusion > Utilisateurs limités AEM Assets et AEM > Instance de création de production > Utilisateurs expérimentés AEM Assets. Le profil d’instance de diffusion accorde l’accès à Content Hub. Le profil d’instance d’auteur de production déverrouille l’ensemble des fonctionnalités de gestion des ressources numériques AEM Assets, notamment la gestion des ressources, la gouvernance des métadonnées et les workflows d’automatisation. Les deux profils sont requis pour une expérience utilisateur avec pouvoir complète.
+
+### Que peut faire un administrateur dans AEM Assets Ultimate ? {#administrator-capabilities}
+
+Un administrateur dans AEM Assets Ultimate dispose de toutes les fonctionnalités d’un utilisateur expérimenté et gère en outre les autorisations sur le contenu dans l’environnement de création AEM Assets. Les administrateurs sont chargés de configurer les trois autres types d’utilisateurs au sein de l’organisation : utilisateurs limités, utilisateurs collaborateurs et utilisateurs avec pouvoir. Il s’agit notamment d’attribuer des profils de produit dans Adobe Admin Console, de gérer les droits d’accès et de s’assurer que la structure de privilèges appropriée est en place pour chaque type d’utilisateur dans l’ensemble de l’organisation.
+
+### À quel profil de produit un administrateur doit-il être ajouté dans AEM Assets Ultimate ? {#administrator-product-profiles}
+
+Un administrateur dans AEM Assets Ultimate doit être ajouté à deux profils de produit dans Adobe Admin Console : AEM > Instance de diffusion > Utilisateurs limités AEM Assets et AEM > Instance de création de production > Administrateurs AEM. Le profil d’instance de diffusion accorde l’accès à Content Hub. Le profil d’instance d’auteur de production accorde un contrôle administratif complet, notamment la gestion des autorisations dans l’environnement de création AEM Assets et la possibilité de configurer tous les autres types d’utilisateurs au sein de l’organisation.
+
+### Quels types d’utilisateurs dans AEM Assets Ultimate peuvent accéder au portail Content Hub ? {#content-hub-access-user-types}
+
+Les quatre types d’utilisateurs d’AEM Assets Ultimate (Utilisateurs limités, Utilisateurs collaborateurs, Utilisateurs avancés et Administrateurs) peuvent accéder au portail AEM Assets Content Hub pour découvrir et utiliser des ressources approuvées par la marque. L’accès à Content Hub est accordé via le profil de produit AEM > Instance de diffusion > Utilisateurs limités AEM Assets dans Adobe Admin Console, qui est un profil obligatoire pour chaque type d’utilisateur dans AEM Assets Ultimate, quelles que soient leurs fonctionnalités supplémentaires.
+
+### Quels types d’utilisateurs dans AEM Assets Ultimate peuvent créer et modifier des ressources à l’aide d’Adobe Express et de Firefly ? {#express-firefly-access-user-types}
+
+Les utilisateurs collaborateurs, les utilisateurs expérimentés et les administrateurs d’AEM Assets Ultimate peuvent créer et modifier des ressources à l’aide des fonctionnalités intégrées d’Adobe Express et de Firefly, notamment des modèles, des kits de marque et des ressources Adobe Stock conçus par des professionnels. Les utilisateurs limités n’ont pas accès aux fonctionnalités de création ou de modification de ressources. Leur accès est limité à la découverte et à l’utilisation de ressources approuvées par la marque via le portail AEM Assets Content Hub uniquement.
+
+### Quels types d’utilisateurs dans AEM Assets Ultimate peuvent intégrer des ressources à des applications Adobe et non Adobe ? {#integration-access-user-types}
+
+Les utilisateurs collaborateurs, les utilisateurs expérimentés et les administrateurs d’AEM Assets Ultimate peuvent utiliser des ressources de Adobe Experience Manager au moyen d’intégrations disponibles dans d’autres produits Adobe et applications non Adobe. Les utilisateurs limités ne peuvent pas accéder aux intégrations de ressources : leurs fonctionnalités se limitent à l’accès au portail Content Hub pour la découverte et l’utilisation de ressources approuvées. L’accès à l’intégration est activé via les profils de produit AEM > Instance d’auteur de production affectés à chacun de ces types d’utilisateurs.
+
+### Quel type d’utilisateur dans AEM Assets Ultimate dispose de fonctionnalités complètes de gestion de la gestion des ressources numériques, notamment la gouvernance des métadonnées ? {#dam-management-user-types}
+
+Les utilisateurs expérimentés et les administrateurs d’AEM Assets Ultimate ont accès à l’ensemble des fonctionnalités de gestion des ressources numériques d’AEM Assets, notamment l’ingestion des ressources, le stockage, le catalogage, la gestion des métadonnées, la gouvernance et l’automatisation des ressources numériques. Les utilisateurs collaborateurs et les utilisateurs limités n’ont pas accès à la gestion au niveau de la gestion des ressources numériques ni à la gouvernance des métadonnées. L’accès complet à la gestion des ressources numériques est activé via le profil de produit AEM > Instance de création de production > Utilisateurs avancés d’AEM Assets ou Administrateurs AEM dans Adobe Admin Console.
+
+### Quel type d’utilisateur dans AEM Assets Ultimate peut gérer les autorisations dans l’environnement de création AEM Assets ? {#permission-management-user-type}
+
+Seuls les administrateurs dans AEM Assets Ultimate peuvent gérer les autorisations sur le contenu dans l’environnement de création AEM Assets. Les utilisateurs expérimentés, les utilisateurs collaborateurs et les utilisateurs limités ne disposent pas de fonctionnalités de gestion des autorisations. Cette fonctionnalité exclusive est activée via le profil de produit AEM > Instance de création de production > Administrateurs AEM dans Adobe Admin Console. Les administrateurs sont également chargés de configurer et d’affecter les profils de produit appropriés à tous les autres types d’utilisateurs au sein de l’organisation.

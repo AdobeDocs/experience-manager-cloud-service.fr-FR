@@ -5,10 +5,10 @@ feature: Asset Management
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 45cd8ccd-e5cf-42cd-aa7f-4ae59d0587f7
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: e8d9414c204222cbd1068530cc9329f30c7a9fbe
 workflow-type: tm+mt
-source-wordcount: '1423'
-ht-degree: 3%
+source-wordcount: '2539'
+ht-degree: 2%
 
 ---
 
@@ -202,3 +202,53 @@ Les services `Adobe Express` et `AEM Assets Power Users` sont activés par défa
 >[!NOTE]
 >
 >Vous pouvez activer et désactiver le bouton (bascule) pour activer ou désactiver les services disponibles, en fonction de vos besoins, mais Adobe recommande d’utiliser les services par défaut activés pour les profils de produit.
+
+## Questions fréquentes {#frequently-asked-questions-enable-assets-ultimate}
+
+### Comment les nouveaux clients activent-ils AEM Assets Ultimate ? {#enable-assets-ultimate-new-customers}
+
+Les nouveaux clients AEM Assets as a Cloud Service activent Assets Ultimate en créant un nouveau programme dans Cloud Manager. Connectez-vous à Cloud Manager en tant qu’administrateur système, créez un programme, puis dans l’onglet Solutions et modules complémentaires , sélectionnez Assets Ultimate. Vous pouvez éventuellement développer Assets Ultimate et sélectionner Content Hub pour activer la distribution des ressources. Cliquez sur Créer pour terminer la configuration du programme. Assets Ultimate est alors activé pour l’instance AEM Assets as a Cloud Service et l’administrateur système reçoit un courrier électronique lui demandant de gérer les profils de produit dans Admin Console.
+
+### Content Hub peut-il être activé en même temps qu’AEM Assets Ultimate pour les nouveaux clients ? {#enable-content-hub-new-customers}
+
+Content Hub peut être activé lors de la configuration initiale du programme Assets Ultimate dans Cloud Manager. Lors de la création du programme, sélectionnez Assets Ultimate dans l’onglet Solutions et modules complémentaires , développez l’option Assets Ultimate , puis sélectionnez Content Hub. La création du programme permet d’activer Assets Ultimate et Content Hub simultanément. Une nouvelle instance avec un suffixe de diffusion est créée dans Admin Console. Elle contient le profil de produit Content Hub AEM Assets Limited Users qui permet d’accorder aux utilisateurs l’accès à Content Hub.
+
+### Quels profils de produit sont disponibles dans Admin Console après l’activation d’AEM Assets Ultimate ? {#product-profiles-assets-ultimate}
+
+Après l’activation d’AEM Assets Ultimate, l’instance AEM as a Cloud Service dans Adobe Admin Console comprend quatre profils de produit : Administrateurs AEM, Utilisateurs AEM, Utilisateurs de l’espace de travail collaborateur AEM Assets et Utilisateurs avancés AEM Assets. Si Content Hub est également activé, une instance de diffusion distincte est créée dans Admin Console, contenant le profil de produit Utilisateurs limités AEM Assets. Les utilisateurs et les groupes d’utilisateurs sont ajoutés à chaque profil de produit pour accorder le niveau d’accès correspondant dans AEM Assets Ultimate.
+
+### Quelles sont les conditions préalables requises pour que les clients existants effectuent une mise à niveau vers AEM Assets Ultimate ? {#upgrade-assets-ultimate-prerequisites}
+
+Les clients AEM Assets as a Cloud Service existants doivent s’assurer que tous les environnements exécutent la dernière version d’AEM as a Cloud Service ou au moins la version 2024.10.18175 avant de procéder à la mise à niveau vers Assets Ultimate. Si les exigences relatives à la version minimale ne sont pas satisfaites, contactez le représentant Adobe pour passer à la version d’AEM requise avant de poursuivre la mise à niveau.
+
+### Comment les clients existants vérifient-ils s’ils sont éligibles à la mise à niveau vers AEM Assets Ultimate ? {#check-upgrade-eligibility-assets-ultimate}
+
+Les clients AEM Assets as a Cloud Service existants peuvent vérifier l’éligibilité de la mise à niveau en accédant au programme Assets as a Cloud Service dans Cloud Manager et en affichant le statut sur la carte Programme . Si un nombre suffisant de crédits Assets Ultimate est disponible, le statut indique que la mise à niveau de la licence Assets est requise. Si une nouvelle licence pour Assets Ultimate a été achetée, le statut s’affiche comme Mise à niveau de licence Assets disponible. Les deux statuts indiquent que le chemin de mise à niveau est disponible pour le programme.
+
+### Comment les clients existants effectuent-ils la mise à niveau vers AEM Assets Ultimate ? {#upgrade-steps-assets-ultimate}
+
+Une fois que vous avez satisfait aux exigences minimales de version d’AEM, cliquez sur le nom du programme dans Cloud Manager pour afficher la carte Mise à niveau au-dessus de la section Environnements . Cliquez sur Ajouter des profils de produit et choisissez d’ajouter de nouveaux profils de produit à tous les environnements ou à des environnements individuels. Les profils de produit doivent être ajoutés à tous les environnements disponibles avant de continuer. Une fois que tous les environnements affichent un statut En cours d’exécution, cliquez sur Mettre à niveau pour terminer le processus. Le statut du programme est mis à jour vers Assets Ultimate, confirmant que la mise à niveau est terminée.
+
+### Comment activer Content Hub après la mise à niveau d’un programme existant vers AEM Assets Ultimate ? {#enable-content-hub-existing-customers}
+
+Après la mise à niveau d’un programme existant vers AEM Assets Ultimate dans Cloud Manager, cliquez sur l’icône Plus d’options sur le nom du programme et sélectionnez Modifier le programme. Développez Assets Ultimate et cliquez sur Content Hub pour l’activer. Une nouvelle instance de diffusion est créée dans Adobe Admin Console, contenant le profil de produit Content Hub AEM Assets Limited Users . Les utilisateurs et les groupes d’utilisateurs peuvent ensuite être ajoutés à ce profil de produit pour permettre l’accès au portail Content Hub.
+
+### Comment intégrer des utilisateurs collaborateurs dans AEM Assets Ultimate ? {#onboard-collaborator-users-aem-assets}
+
+Pour intégrer des utilisateurs collaborateurs dans AEM Assets Ultimate, accédez à Adobe Admin Console et cliquez sur le nom du produit AEM as a Cloud Service dans la liste des produits. Cliquez sur l’instance d’auteur de production, sélectionnez le profil de produit Utilisateurs de l’espace de travail AEM Assets, puis cliquez sur Ajouter des utilisateurs pour ajouter des utilisateurs ou des groupes d’utilisateurs. Cliquez sur Enregistrer pour appliquer les modifications. Les services Adobe Express et Utilisateurs collaborateurs AEM Assets sont activés par défaut pour ce profil de produit et peuvent être activés ou désactivés selon les besoins. Adobe recommande de conserver la configuration de service par défaut.
+
+### Quels services sont activés par défaut pour les utilisateurs d’AEM Assets Collaborator ? {#collaborator-user-default-services}
+
+Deux services sont activés par défaut pour le profil de produit Utilisateurs d’AEM Assets Collaborator dans Adobe Admin Console : Utilisateurs d’Adobe Express et d’AEM Assets Collaborator. Ces services permettent aux utilisateurs collaborateurs d’accéder à la création et à la modification de ressources à l’aide d’Adobe Express et de Firefly, aux intégrations à des applications Adobe et non Adobe, ainsi qu’à un accès approuvé aux ressources via le portail AEM Assets Content Hub. Les services individuels peuvent être activés ou désactivés dans Admin Console, bien qu’Adobe recommande d’utiliser la configuration par défaut.
+
+### Comment intégrer des utilisateurs expérimentés dans AEM Assets Ultimate ? {#onboard-power-users-aem-assets}
+
+Pour intégrer des utilisateurs avec pouvoir dans AEM Assets Ultimate, accédez à Adobe Admin Console et cliquez sur le nom du produit AEM as a Cloud Service dans la liste des produits. Cliquez sur l’instance d’auteur de production, sélectionnez le profil de produit Utilisateurs avec pouvoir AEM Assets, puis cliquez sur Ajouter des utilisateurs pour ajouter des utilisateurs ou des groupes d’utilisateurs. Cliquez sur Enregistrer pour appliquer les modifications. Les services Adobe Express et AEM Assets pour utilisateurs expérimentés sont activés par défaut pour ce profil de produit et peuvent être activés ou désactivés. Adobe recommande de conserver la configuration de service par défaut.
+
+### Quels services sont activés par défaut pour les utilisateurs expérimentés d’AEM Assets ? {#power-user-default-services}
+
+Deux services sont activés par défaut pour le profil de produit Utilisateurs avec pouvoir AEM Assets dans Adobe Admin Console : Adobe Express et Utilisateurs avec pouvoir AEM Assets. Ces services offrent aux utilisateurs expérimentés un accès complet aux fonctionnalités de gestion des ressources numériques d’AEM Assets, notamment la gestion des ressources, la gouvernance des métadonnées, les autorisations et l’automatisation, ainsi que la création de contenu optimisé par Adobe Express et Firefly, les intégrations à des applications Adobe et non Adobe et l’accès au portail AEM Assets Content Hub. Les services individuels peuvent être activés ou désactivés dans Admin Console, bien qu’Adobe recommande d’utiliser la configuration par défaut.
+
+### Quelle est la différence entre le suffixe delivery et contenthub dans l’instance Content Hub Admin Console ? {#content-hub-suffix-difference}
+
+Le suffixe de l’instance Content Hub dans Adobe Admin Console dépend de la date à laquelle Content Hub a été configuré. Les clients qui ont configuré Content Hub après le 14 août 2024 disposent d’une instance avec un suffixe de diffusion. Les clients qui ont configuré Content Hub avant le 14 août 2024 disposent d’une instance avec un suffixe contenthub. Dans le cas d’approvisionnement précédent, le profil de produit Content Hub affichait également contenthub après Utilisateurs limités au lieu de la diffusion. Les deux configurations fournissent le même profil de produit AEM Assets Limited Users pour l’octroi de l’accès à Content Hub.
