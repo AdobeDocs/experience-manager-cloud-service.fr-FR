@@ -4,11 +4,13 @@ description: Utilisez  [!DNL AEM Forms]  designer pour créer des modèles de do
 feature: Adaptive Forms, Forms Designer
 role: Admin, Developer, User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
+hide: true
+index: false
 exl-id: 88a95374-620c-45a9-ae94-2043b542fd62
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 784061cac8964a4f86690c84d106396994f987b7
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 48%
+source-wordcount: '195'
+ht-degree: 58%
 
 ---
 
@@ -19,8 +21,8 @@ Designer offre une interface graphique de conception de formulaires conviviale, 
 Les documents suivants fournissent des instructions d’utilisation de Designer pour créer des modèles XDP et PDF forms :
 
 + [Utilisation de Designer](assets/using-designer-cs.pdf)
-+ [Didacticiels de mise en route de Designer](https://helpx.adobe.com/content/dam/help/fr/experience-manager/6-5/forms/pdf/designer-quickstart.pdf)
-+ [Designer – Exemples](https://helpx.adobe.com/content/dam/help/fr/experience-manager/6-5/forms/pdf/designer-samples.pdf)
-+ [Concepts de base des scripts de Designer](https://helpx.adobe.com/content/dam/help/fr/experience-manager/6-5/forms/pdf/scripting-basics.pdf)
-+ [Designer – Guide de référence pour les scripts](https://helpx.adobe.com/content/dam/help/fr/experience-manager/6-5/forms/pdf/scripting-reference.pdf)
-+ [Designer – Guide de référence FormCalc](https://helpx.adobe.com/content/dam/help/fr/experience-manager/6-5/forms/pdf/formcalc-reference.pdf)
++ [Tutoriels de démarrage rapide de Designer](https://helpx.adobe.com/content/dam/help/fr/experience-manager/6-5/forms/pdf/designer-quickstart.pdf)
++ [Exemples Designer](https://helpx.adobe.com/content/dam/help/fr/experience-manager/6-5/forms/pdf/designer-samples.pdf)
++ [Principes de base des scripts de Designer](https://helpx.adobe.com/content/dam/help/fr/experience-manager/6-5/forms/pdf/scripting-basics.pdf)
++ [Référence des scripts Designer](https://helpx.adobe.com/content/dam/help/fr/experience-manager/6-5/forms/pdf/scripting-reference.pdf)
++ [Référence de Designer FormCalc](https://helpx.adobe.com/content/dam/help/fr/experience-manager/6-5/forms/pdf/formcalc-reference.pdf)

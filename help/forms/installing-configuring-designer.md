@@ -5,11 +5,13 @@ keywords: Installation de Designer, Installation de Forms Designer, Conditions r
 feature: Adaptive Forms, Forms Designer
 role: Admin, Developer, User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
+hide: true
+index: false
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 784061cac8964a4f86690c84d106396994f987b7
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 67%
+source-wordcount: '461'
+ht-degree: 63%
 
 ---
 
@@ -18,7 +20,7 @@ ht-degree: 67%
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | Cet article |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/installing-configuring-designer.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/installing-configuring-designer.html) |
 
 Designer est un outil de conception de formulaires graphiques de type pointer-cliquer qui simplifie la création de modèles de formulaires XDP et PDF. Vous pouvez concevoir un modèle de formulaire, définir sa logique et respecter des exigences légales strictes. Un formulaire XDP et PDF servent de modèle de document d’enregistrement dans un formulaire adaptatif. Ils diffèrent des [modèles de formulaires adaptatifs](template-editor.md).
 
