@@ -4,9 +4,9 @@ description: Découvrez comment l’agent de développement dans AEM analyse les
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Developer
 exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
-source-git-commit: fb0eaf8173b0cb5c81062424dbdfa723319df539
+source-git-commit: 8495dd5cc4629dd960f6c5c31d9d50c126d6d750
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1547'
 ht-degree: 8%
 
 ---
@@ -20,7 +20,7 @@ Il prend en charge les tâches suivantes, accessibles par le biais de l’interf
 
 * Tâche Cloud Manager : opérations en lecture seule, y compris la liste des programmes et des environnements, ainsi que l’état du pipeline
 * Tâche de dépannage du pipeline : débogage des pipelines ayant échoué
-* Tâche de gestion des heures creuses et des périodes creuses (disponibilité limitée) : affichage, création et modification des heures creuses et mise à jour des périodes creuses
+* Tâche de gestion des heures creuses et des périodes creuses : afficher, créer et modifier les heures creuses et mettre à jour les périodes creuses
 * Tâche de dépannage de la réplication (Beta) : débogage des problèmes liés à la réplication, tels que les files d’attente bloquées.
 
 >[!NOTE]
@@ -36,7 +36,7 @@ Il prend en charge les tâches suivantes, accessibles par le biais de l’interf
 >
 >Consultez également la section [Directives d’utilisation d’Adobe Experience Cloud Generative AI](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
 
-Vous pouvez envoyer par e-mail les commentaires spécifiques à l’agent de développement à [&#128279;](mailto:aem-devagent@adobe.com).
+Vous pouvez envoyer par e-mail les commentaires spécifiques à l’agent de développement à [](mailto:aem-devagent@adobe.com).
 
 ## Tâche Cloud Manager {#cloud-manager-job}
 
@@ -62,10 +62,6 @@ Obtenez des informations sur vos programmes et environnements AEM, notamment :
 
 ## Tâche de gestion des heures creuses et des périodes libres de mise à jour {#control-updates-job}
 
->[!AVAILABILITY]
->
->Cette fonctionnalité est en phase de disponibilité limitée et sera déployée au cours des prochaines semaines. E-Mail [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com) pour un accès immédiat.
-
 Affichez, créez et modifiez les heures creuses et mettez à jour les périodes libres directement via l’assistant AEM AI.
 
 L’avantage clé est la réduction des erreurs de planification. Lorsque vous effectuez une demande, l’assistant vous guide tout au long des étapes possibles et signale les limites qui s’appliquent, telles que la limite de trois périodes, l’intervalle obligatoire d’une semaine entre les périodes et les fenêtres d’exclusion de la maintenance planifiée que vous ne pouvez pas planifier.
@@ -88,7 +84,7 @@ Ainsi, au lieu de découvrir une contrainte après une configuration ayant écho
 
 Cette tâche peut récupérer les statuts du pipeline et vous aider à résoudre les problèmes liés aux étapes de création échouées en suggérant des correctifs, ce qui vous permet de gagner du temps lors du débogage des déploiements d’AEM as a Cloud Service dans les environnements de développement, d’évaluation et de production. Il examine les journaux de génération et le code associé pour vous recommander un correctif que vous pouvez appliquer manuellement.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478009?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -99,7 +95,7 @@ To access this agent, please refer to the [release notes](/help/release-notes/re
 
 -->
 
-[Suivez un tutoriel](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/ai/agents/development-agent-troubleshoot-ci-cd-pipeline) pour savoir comment utiliser l’agent de développement afin de résoudre les problèmes liés aux pipelines.
+[Suivez un tutoriel](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/agents/development-agent-troubleshoot-ci-cd-pipeline) pour savoir comment utiliser l’agent de développement afin de résoudre les problèmes liés aux pipelines.
 
 ### Accès à l’agent de développement via Cloud Manager {#how-to-access-the-agent}
 
@@ -121,7 +117,7 @@ Vous accédez à l’agent de développement par le biais de l’assistant d’I
 
 1. Sur la page **Aperçu du programme**, dans la vignette **Pipelines**, cliquez sur un pipeline.
 
-   ![&#x200B; Pipeline sélectionné &#x200B;](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-pipeline-select.png)
+   ![ Pipeline sélectionné ](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-pipeline-select.png)
 
 1. Sur la page **Génération et analyse du code**, notez l’échec du pipeline.
 
@@ -164,7 +160,7 @@ Experience Home comprend un widget **Pipelines en échec** qui vous donne une vu
 >
 >Le widget **Pipelines en échec** est visible uniquement lorsque le rôle **Admin &amp; IT** est sélectionné dans Experience Home. Si le widget n’apparaît pas, vérifiez que votre rôle est défini sur **Admin &amp; IT** à l’aide du sélecteur de rôle dans le coin supérieur droit de la page.
 
-![&#x200B; Le widget Pipelines en échec sur la page d’accueil d’Experience Platform, affichant une entrée de pipeline en échec avec un bouton Dépannage avec l’IA &#x200B;](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-failed-pipelines-widget.png)
+![ Le widget Pipelines en échec sur la page d’accueil d’Experience Platform, affichant une entrée de pipeline en échec avec un bouton Dépannage avec l’IA ](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-failed-pipelines-widget.png)
 
 1. Ouvrez [Accueil Experience](https://experience.adobe.com), cliquez sur **Experience Manager** et faites défiler l’écran jusqu’au widget **Pipelines en échec**.
 
@@ -197,4 +193,4 @@ Pour les autres types de pipeline et étapes, déboguez les échecs en télécha
 
 Déboguer les problèmes liés à la réplication, tels que les files d’attente bloquées.
 
-Veuillez envoyer un e-mail à [&#128279;](mailto:aem-devagent@adobe.com) pour accéder au programme bêta.
+Veuillez envoyer un e-mail à [](mailto:aem-devagent@adobe.com) pour accéder au programme bêta.
