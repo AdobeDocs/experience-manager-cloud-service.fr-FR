@@ -5,9 +5,9 @@ exl-id: 03932415-a029-4703-b44a-f86a87edb328
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 81b78ba9668d1c5530d2f6d6f443038549152aa3
+source-git-commit: 884f991bbc067b8c2d628600c18a89e5950df17c
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '473'
 ht-degree: 9%
 
 ---
@@ -40,15 +40,15 @@ Le graphique linéaire d’une année sélectionnée comprend des points de donn
 
 1. Cliquez sur **Rapports**.
 
-   ![Graphique linéaire du rapport &#x200B;](/help/implementing/cloud-manager/reports/assets/cm-sla-report2.png)
+   ![Graphique linéaire du rapport ](/help/implementing/cloud-manager/reports/assets/cm-sla-report2.png)
 
 1. Cliquez sur l’année souhaitée pour afficher un graphique linéaire des données SLA.
 
 1. (En option) Effectuez l’une des actions suivantes :
 
-   * Placez le curseur sur un point de données du graphique linéaire pour afficher les valeurs spécifiques de ce point.
+   * Pour afficher les valeurs spécifiques d’un point de données, placez le curseur sur celui-ci dans le graphique linéaire.
    * Sous l’année du graphique linéaire, cliquez sur l’icône **Télécharger** pour enregistrer un fichier image PNG du graphique linéaire.
-   * Cliquez sur le nom d’une mesure pour afficher uniquement ses données. Vous pouvez également appuyer sur la touche `Shift` du clavier lors de la sélection ou de la désélection d’un ou de plusieurs noms de mesure.
+   * Cliquez sur le nom d’une mesure pour afficher ses données. `Shift` Vous pouvez également appuyer sur le clavier et le maintenir enfoncé tout en sélectionnant ou en désactivant un ou plusieurs noms de mesures.
 
 ## Analyse des événements {#event-analysis}
 
@@ -60,12 +60,12 @@ Chacun des incidents comporte une période, une cause et un ensemble de commenta
 
 ## Intervalle d’actualisation des rapports SLA {#refresh}
 
-Les rapports SLA vous donnent accès à insight dans les performances de votre environnement de production AEM. Ils sont à jour, mais pas instantanés. La génération du rapport SLA a lieu tous les mois et est générée pour les nouveaux programmes marqués comme `Production previous month`. Ce n&#39;est pas instantané. En raison de ce retard, gardez à l’esprit les points suivants lorsque vous examinerez votre rapport SLA :
+Les rapports SLA fournissent des informations sur les performances de votre environnement de production AEM. Ils sont à jour, mais pas instantanés. La génération du rapport SLA a lieu tous les mois et est générée pour les nouveaux programmes marqués comme `Production previous month`. Ce n&#39;est pas instantané. En raison de ce retard, gardez à l’esprit les points suivants lorsque vous examinerez votre rapport SLA :
 
 * Le SLA signalé est celui qui existait au début du mois, même si SLA a changé pendant ce mois.
 * S’il n’y avait pas de SLA au début du mois parce que le programme n’existait pas, le SLA qui existait à la date de création du programme s’applique.
 
 ## Environnements de prévisualisation {#preview}
 
-L’environnement de prévisualisation est conçu comme un outil permettant aux personnes en charge de la création de contenu de vérifier l’expérience finale du contenu avant sa publication. En raison de cette fonctionnalité, les environnements de prévisualisation ne sont pas conçus avec une haute disponibilité et ne disposent pas d’un SLA associé.
+L’environnement de prévisualisation est conçu comme un outil permettant aux personnes en charge de la création de contenu de réviser le contenu avant sa publication. En raison de cette fonctionnalité, les environnements de prévisualisation ne sont pas conçus avec une haute disponibilité et ne disposent pas d’un SLA associé.
 
