@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: d9a6e7c56a786792599e91ca7a2734dcf15fcb23
+source-git-commit: ea84bbdf5492bec7f35952c964be54b784091ead
 workflow-type: tm+mt
-source-wordcount: '4500'
-ht-degree: 63%
+source-wordcount: '4362'
+ht-degree: 57%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 63%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_customcodequalityrules"
 >title="Règles de qualité du code personnalisé"
->abstract="Découvrez les règles de qualité du code personnalisé Cloud Manager, basées sur les bonnes pratiques en matière d’ingénierie d’Adobe Experience Manager, pour garantir un code de haute qualité grâce à des tests approfondis."
+>abstract="Pour garantir un code de haute qualité par le biais de tests approfondis, découvrez les règles de qualité du code personnalisé de Cloud Manager, basées sur les bonnes pratiques en matière d’ingénierie Adobe Experience Manager."
 
-Découvrez les règles de qualité du code personnalisé Cloud Manager, basées sur les bonnes pratiques en matière d’ingénierie d’Adobe Experience Manager, pour garantir un code de haute qualité grâce à des tests approfondis. Voir aussi [test de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md).
+Pour garantir un code de haute qualité par le biais de tests approfondis, découvrez les règles de qualité du code personnalisé de Cloud Manager, basées sur les bonnes pratiques en matière d’ingénierie Adobe Experience Manager. Voir aussi [test de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md).
 
 Les règles SonarQube complètes ne peuvent pas être téléchargées en raison des informations propriétaires d’Adobe. Vous pouvez télécharger la liste complète des règles *actuelles* [via ce lien](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx). Poursuivez la lecture de ce document pour obtenir des descriptions et des exemples de règles.
 
@@ -29,7 +29,7 @@ Les règles SonarQube complètes ne peuvent pas être téléchargées en raison 
 
 >[!NOTE]
 >
->Les exemples de code utilisés ici ne sont fournis qu’à titre d’illustration. Consultez la [Documentation sur les concepts](https://docs.sonarsource.com/sonarqube/latest/) SonarQube pour en savoir plus sur les concepts et les règles de qualité de SonarQube.
+>Les exemples de code utilisés ici ne sont fournis qu’à titre d’illustration. Pour en savoir plus sur les concepts et les règles de qualité de SonarQube, consultez la [documentation relative aux concepts](https://docs.sonarsource.com/sonarqube/latest) de SonarQube.
 
 ## Règles SonarQube {#sonarqube-rules}
 
@@ -91,14 +91,14 @@ public class DoThis implements Runnable {
 }
 ```
 
-### N’utilisez pas de chaînes de format pouvant être contrôlées en externe. {#do-not-use-format-strings-which-may-be-externally-controlled}
+### N’utilisez pas de chaînes de format contrôlées en externe {#do-not-use-format-strings-which-may-be-externally-controlled}
 
 * **Clé** : CQRules:CWE-134
 * **Type** : vulnérabilité
 * **Gravité** : majeure
 * **Depuis** : version 2018.4.0
 
-L’utilisation d’une chaîne de format provenant d’une source externe (telle qu’un paramètre de requête ou un contenu créé par l’utilisateur ou l’utilisatrice) peut exposer une application aux attaques par déni de service. Dans certains cas, une chaîne de format peut être contrôlée en externe, mais elle n’est autorisée que si elle provient de sources approuvées.
+L’utilisation d’une chaîne de format provenant d’une source externe (telle qu’un paramètre de requête ou un contenu créé par l’utilisateur ou l’utilisatrice) peut exposer une application aux attaques par déni de service. Dans certains cas, une chaîne de format est contrôlée en externe, mais elle n’est autorisée que si elle provient de sources approuvées.
 
 #### Code non conforme {#non-compliant-code-1}
 
@@ -235,7 +235,7 @@ public void orDoThis(Session session) throws Exception {
 * **Gravité** : majeure
 * **Depuis** : version 2018.4.0
 
-Comme décrit dans la documentation [&#128279;](https://sling.apache.org/documentation/the-sling-engine/servlets.html) les servlets de liaison par chemins d’accès sont découragés. `Sling`Les servlets liés au chemin ne peuvent pas utiliser les contrôles d’accès JCR standard et, par conséquent, nécessitent une rigueur de sécurité supplémentaire. Plutôt que d’utiliser des servlets liés au chemin d’accès, il est recommandé de créer des nœuds dans le référentiel et d’enregistrer les servlets par type de ressource.
+Comme décrit dans la documentation ](https://sling.apache.org/documentation/the-sling-engine/servlets.html) la liaison de servlets par chemins d’accès est découragée. [`Sling`Les servlets liés au chemin ne peuvent pas utiliser les contrôles d’accès JCR standard et, par conséquent, nécessitent une rigueur de sécurité supplémentaire. Plutôt que d’utiliser des servlets liés au chemin d’accès, il est recommandé de créer des nœuds dans le référentiel et d’enregistrer les servlets par type de ressource.
 
 #### Code non conforme {#non-compliant-code-5}
 
@@ -255,7 +255,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 * **Gravité** : mineure
 * **Depuis** : version 2018.4.0
 
-En règle générale, une exception doit être consignée une seule fois. La journalisation des exceptions plusieurs fois peut prêter à confusion. La raison en est que le nombre de fois où une exception s’est produite n’est pas clair. Le modèle le plus courant qui entraîne cet effet est la journalisation et le renvoi d’une exception capturée.
+En règle générale, une exception doit être consignée une seule fois. La journalisation des exceptions plusieurs fois peut prêter à confusion. La raison en est que le nombre de fois où une exception s’est produite n’est pas clair. Le modèle le plus courant qui aboutit à ce résultat est la journalisation et le renvoi d’une exception capturée.
 
 #### Code non conforme {#non-compliant-code-6}
 
@@ -297,7 +297,7 @@ public void orDoThis() throws MyCustomException {
 * **Gravité** : mineure
 * **Depuis** : version 2018.4.0
 
-Un autre schéma courant à éviter consiste à consigner un message, puis à émettre immédiatement une exception. Cette pratique indique généralement que le message d’exception sera dupliqué dans les fichiers journaux.
+Un autre modèle courant à éviter est de consigner un message, puis de lancer immédiatement une exception. Cette pratique indique que le message d’exception est dupliqué dans les fichiers journaux.
 
 #### Code non conforme {#non-compliant-code-7}
 
@@ -322,7 +322,7 @@ public void doThis() throws Exception {
 * **Type** : `Code Smell`
 * **Gravité** : mineure
 
-En règle générale, le niveau de journalisation INFO doit être utilisé pour délimiter les actions importantes et, par défaut, Experience Manager est configuré pour le journal au niveau INFO ou au-dessus. Les méthodes GET et HEAD ne doivent jamais être en lecture seule et ne constituent donc pas des actions importantes. La journalisation au niveau INFO en réponse aux demandes GET ou HEAD est susceptible de créer un bruit journal significatif, rendant ainsi plus difficile l’identification des informations utiles dans les fichiers journaux. Lors de la gestion des requêtes GET ou HEAD, consignez-vous aux niveaux AVERTISSEMENT ou ERREUR si un problème s’est produit. Utilisez les niveaux DEBUG ou TRACE si des informations de dépannage détaillées sont nécessaires.
+En règle générale, le niveau de journalisation INFO doit être utilisé pour délimiter les actions importantes et, par défaut, Experience Manager est configuré pour le journal au niveau INFO ou au-dessus. Les méthodes GET et HEAD ne doivent jamais être en lecture seule et ne constituent donc pas des actions importantes. La journalisation au niveau INFO en réponse aux requêtes GET ou HEAD crée un bruit journal significatif, ce qui rend plus difficile l’identification des informations utiles dans les fichiers journaux. Lors de la gestion des requêtes GET ou HEAD, consignez-vous aux niveaux WARN ou ERROR si un problème s’est produit. Utilisez les niveaux DEBUG ou TRACE si des informations de dépannage détaillées sont nécessaires.
 
 >[!NOTE]
 >
@@ -351,7 +351,7 @@ public void doGet() throws Exception {
 * **Gravité** : mineure
 * **Depuis** : version 2018.4.0
 
-Il est recommandé que les messages de journal fournissent des informations contextuelles sur l’emplacement d’une exception dans l’application. Bien que le contexte puisse également être déterminé par l’utilisation des arborescences des appels de procédure, il est généralement plus facile de lire et de comprendre le message du journal. Par conséquent, lors de la journalisation d’une exception, il est déconseillé d’utiliser le message de l’exception comme message du journal. Le message d’exception explique l’erreur, tandis que le message du journal doit informer le lecteur de ce que faisait l’application lorsque l’exception s’est produite. Le message d’exception est toujours journalisé. En spécifiant votre propre message, les journaux sont plus faciles à comprendre.
+Il est recommandé que les messages de journal fournissent des informations contextuelles sur l’emplacement d’une exception dans l’application. Bien que le contexte soit également déterminé par l’utilisation des arborescences des appels de procédure, le message du journal est généralement plus facile à lire et à comprendre. Par conséquent, lors de la journalisation d’une exception, il est déconseillé d’utiliser le message de l’exception comme message du journal. Le message d’exception explique l’erreur, tandis que le message du journal informe le lecteur de ce que faisait l’application lorsque l’exception s’est produite. Le message d’exception est toujours journalisé. En spécifiant votre propre message, les journaux sont plus faciles à comprendre.
 
 #### Code non conforme {#non-compliant-code-9}
 
@@ -417,7 +417,7 @@ public void doThis() {
 * **Gravité** : mineure
 * **Depuis** : version 2018.4.0
 
-Comme nous l’avons mentionné, le contexte est essentiel lors de la compréhension des messages du journal. L’utilisation d’`Exception.printStackTrace()` entraîne seulement la sortie de l’arborescence des appels de procédure dans le flux d’erreurs standard, ce qui provoque la perte de tout le contexte. De plus, dans une application multi-thread telle qu’Experience Manager, si plusieurs exceptions sont imprimées à l’aide de cette méthode en parallèle, leurs arborescences des appels de procédure peuvent se chevaucher, ce qui prête à confusion. Les exceptions ne doivent être consignées que dans la structure de journalisation.
+Comme nous l’avons mentionné, le contexte est essentiel lors de la compréhension des messages du journal. L’utilisation d’`Exception.printStackTrace()` entraîne seulement la sortie de l’arborescence des appels de procédure dans le flux d’erreurs standard, ce qui provoque la perte de tout le contexte. En outre, dans une application multithread telle qu’Experience Manager, les exceptions parallèles imprimées à l’aide de cette méthode entraînent le chevauchement des arborescences des appels de procédure et une certaine confusion. Les exceptions ne doivent être consignées que dans la structure de journalisation.
 
 #### Code non conforme {#non-compliant-code-11}
 
@@ -450,7 +450,7 @@ public void doThis() {
 * **Gravité** : mineure
 * **Depuis** : version 2018.4.0
 
-La journalisation sur Experience Manager doit toujours être effectuée via le cadre de journalisation (SLF4J). La génération directe de la sortie standard ou des flux d’erreur standard perd les informations structurelles et contextuelles fournies par le cadre de journalisation. Parfois, cela peut entraîner des problèmes de performances.
+La journalisation sur Experience Manager doit toujours être effectuée via le cadre de journalisation (SLF4J). La génération directe de la sortie standard ou des flux d’erreur standard perd les informations structurelles et contextuelles fournies par le cadre de journalisation. Parfois, cela entraîne des problèmes de performances.
 
 #### Code non conforme {#non-compliant-code-12}
 
@@ -483,7 +483,7 @@ public void doThis() {
 * **Gravité** : mineure
 * **Depuis** : version 2018.4.0
 
-Les chemins commençant par `/libs` et `/apps` ne doivent généralement pas être codés en dur. Ces chemins sont généralement stockés par rapport au chemin de recherche `Sling`, qui est défini par défaut sur `/libs,/apps`. L’utilisation du chemin absolu peut introduire des défauts discrets qui n’apparaîtront que plus tard dans le cycle de vie du projet.
+Les chemins commençant par `/libs` et `/apps` ne sont pas codés en dur. Ces chemins sont généralement stockés par rapport au chemin de recherche `Sling`, qui est défini par défaut sur `/libs,/apps`. L’utilisation du chemin absolu introduit des défauts subtils qui n’apparaissent que plus tard dans le cycle de vie du projet.
 
 #### Code non conforme {#non-compliant-code-13}
 
@@ -508,9 +508,9 @@ public void doThis(Resource resource) {
 * **Gravité** : mineure
 * **Depuis** : version 2020.5.0
 
-N’utilisez pas le planificateur de `Sling` pour les tâches qui nécessitent une exécution garantie. Les tâches planifiées Sling garantissent l’exécution et conviennent mieux aux environnements organisés avec ou sans cluster.
+N’utilisez pas le planificateur de `Sling` pour les tâches qui nécessitent une exécution garantie. Les tâches planifiées Sling garantissent l’exécution et conviennent mieux aux environnements organisés avec ou sans grappes.
 
-Voir Gestion des tâches et des événements [&#128279;](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) pour en savoir plus sur la manière dont les tâches Sling sont gérées dans des environnements en cluster.`Apache Sling`
+Pour en savoir plus sur la façon dont les tâches Sling sont gérées dans des environnements en cluster, voir Gestion des événements et des tâches ](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html).[`Apache Sling`
 
 ### N’utilisez pas d’API obsolètes d’Experience Manager. {#sonarqube-aem-api-deprecated}
 
@@ -534,9 +534,9 @@ Consultez [cet article](/help/release-notes/deprecated-removed-features.md#aem-a
 
 La surface de l’API Experience Manager fait l’objet d’une révision continue afin d’identifier les API dont l’utilisation est déconseillée et qui sont donc considérées comme obsolètes.
 
-Dans de nombreux cas, ces API sont abandonnées en y associant l’annotation standard Java™ `@Deprecated`. Elles sont à ce titre identifiées par la mention `squid:CallToDeprecatedMethod`.
+Dans de nombreux cas, ces API sont abandonnées en y associant l’annotation standard Java™ `@Deprecated` et, à ce titre, `squid:CallToDeprecatedMethod` les identifie.
 
-Cependant, il arrive qu’une API devienne obsolète dans le contexte d’Experience Manager, mais pas dans d’autres contextes. Cette règle identifie cette deuxième classe.
+Cependant, il existe des cas où une API est abandonnée dans le cadre d’Experience Manager, mais pas dans d’autres contextes. Cette règle identifie cette deuxième classe.
 
 ### N’utilisez pas d’annotation @Inject avec @Optional dans les modèles Sling. {#sonarqube-slingmodels-inject-optional}
 
@@ -547,7 +547,7 @@ Cependant, il arrive qu’une API devienne obsolète dans le contexte d’Experi
 
 Le projet `Apache Sling` décourage l’utilisation de l’annotation `@Inject` dans le contexte des modèles Sling, car elle peut entraîner de mauvaises performances lorsqu’elle est combinée avec la `DefaultInjectionStrategy.OPTIONAL` (au niveau du champ ou de la classe). Des injections plus spécifiques (comme les annotations `@ValueMapValue` ou `@OsgiInjector`) doivent être utilisées à la place.
 
-Consultez la documentation [&#128279;](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) pour plus d’informations sur les annotations recommandées et sur les raisons pour lesquelles cette recommandation a été formulée.`Apache Sling`
+Consultez la documentation ](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) pour plus d’informations sur les annotations recommandées et sur les raisons pour lesquelles cette recommandation a été formulée.[`Apache Sling`
 
 
 ### Réutilisation des instances d’un client HTTP {#sonarqube-reuse-httpclient}
@@ -557,11 +557,11 @@ Consultez la documentation [&#128279;](https://sling.apache.org/documentation/bu
 * **Gravité** : mineure
 * **Depuis** : Version 2023.11
 
-Les applications AEM atteignent souvent d’autres applications à l’aide du protocole HTTP. Apache HttpClient est une bibliothèque souvent utilisée à cet effet. Cependant, la création d’un tel objet HttpClient s’accompagne d’une surcharge. Ces objets doivent donc être réutilisés autant que possible.
+Les applications AEM se connectent souvent à d’autres applications à l’aide du protocole HTTP. Apache HttpClient est une bibliothèque souvent utilisée pour atteindre cet objectif. Cependant, la création d’un tel objet HttpClient s’accompagne d’une surcharge. Ces objets doivent donc être réutilisés autant que possible.
 
 Cette règle vérifie qu’un tel objet HttpClient n’est pas privé dans une méthode, mais global au niveau de la classe, afin qu’il puisse être réutilisé. Dans ce cas, le champ HttpClient doit être défini dans le constructeur de la classe ou de la méthode `activate()` (si cette classe est un composant/service OSGi).
 
-Consultez le [&#x200B; Guide d’optimisation &#x200B;](https://hc.apache.org/httpclient-legacy/performance.html) du HttpClient pour connaître quelques bonnes pratiques concernant l’utilisation du HttpClient.
+Consultez le [ Guide d’optimisation ](https://hc.apache.org/httpclient-legacy/performance.html) du HttpClient pour connaître quelques bonnes pratiques concernant l’utilisation du HttpClient.
 
 #### Code non conforme {#non-compliant-code-14}
 
@@ -624,7 +624,7 @@ public class DontDoThis implements Page {
 * **Gravité** : bloqueur
 * **Depuis** : 2021.8.0
 
-Plusieurs index prêts à l’emploi Experience Manager Oak incluent une configuration Tika et les personnalisations de ces index doivent contenir une configuration Tika. Cette règle recherche les personnalisations des index `damAssetLucene`, `lucene` et `graphqlConfig`, et soulève un problème si le nœud `tika` est manquant ou si un nœud enfant nommé `config.xml` est manquant dans le nœud `tika`.
+Plusieurs index Experience Manager Oak standard incluent une configuration Tika et les personnalisations de ces index doivent inclure une configuration Tika. Cette règle recherche les personnalisations des index `damAssetLucene`, `lucene` et `graphqlConfig`, et soulève un problème si le nœud `tika` est manquant ou si un nœud enfant nommé `config.xml` est manquant dans le nœud `tika`.
 
 Pour plus d’informations sur la personnalisation des définitions d’index, consultez la [documentation sur l’indexation](/help/operations/indexing.md#preparing-the-new-index-definition).
 
@@ -661,7 +661,7 @@ Pour plus d’informations sur la personnalisation des définitions d’index, c
 * **Gravité** : bloqueur
 * **Depuis** : 2021.8.0
 
-Les index Oak de type `lucene` doivent toujours être indexés de manière asynchrone. Si vous ne le faites pas, cela peut entraîner une instabilité du système. Vous trouverez plus d’informations sur la structure des index Lucene dans la [documentation d’](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition).
+Les index Oak de type `lucene` doivent toujours être indexés de manière asynchrone. Si vous ne le faites pas, le système sera instable. Vous trouverez plus d’informations sur la structure des index Lucene dans la [documentation d’](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition).
 
 #### Code non conforme {#non-compliant-code-indexasync}
 
@@ -726,7 +726,7 @@ Pour que la recherche de ressources fonctionne correctement dans Experience Mana
         + config.xml
 ```
 
-### Les packages des clients ne doivent ni créer ni modifier les nœuds sous libs {#oakpal-customer-package}
+### Ne créez ou ne modifiez pas de nœuds sous les bibliothèques dans les packages clients {#oakpal-customer-package}
 
 * **Clé** : BannedPath
 * **Type** : bogue
@@ -750,7 +750,7 @@ Le fait qu’un même composant OSGi soit configuré plusieurs fois est un probl
 >
 >Par exemple, si la création génère des packages nommés `com.myco:com.myco.ui.apps` et `com.myco:com.myco.all`, où `com.myco:com.myco.all` incorpore `com.myco:com.myco.ui.apps`, toutes les configurations dans `com.myco:com.myco.ui.apps` seront signalées comme doublons.
 >
->En règle générale, cette situation est un cas de non-respect des [&#x200B; directives relatives à la structure du package de contenu &#x200B;](/help/implementing/developing/introduction/aem-project-content-package-structure.md). Dans cet exemple, la propriété `<cloudManagerTarget>none</cloudManagerTarget>` est absente de la `com.myco:com.myco.ui.apps` du package .
+>Cette situation est un cas de non-respect des [ directives relatives à la structure du package de contenu ](/help/implementing/developing/introduction/aem-project-content-package-structure.md). Dans cet exemple, la propriété `<cloudManagerTarget>none</cloudManagerTarget>` est absente de la `com.myco:com.myco.ui.apps` du package .
 
 #### Code non conforme {#non-compliant-code-osgi}
 
@@ -810,7 +810,7 @@ Un problème courant est l’utilisation de nœuds nommés `config` dans les bo�
 * **Gravité** : majeure
 * **Depuis** : version 2019.6.0
 
-Tout comme la règle [&#x200B; Les packages ne doivent pas contenir de configurations OSGi en double &#x200B;](#oakpal-package-osgi), cette situation est un problème courant sur les projets complexes où le même chemin de nœud est écrit par plusieurs packages de contenu distincts. Bien que l’utilisation des dépendances des modules de contenu puisse servir à garantir un résultat cohérent, il est préférable d’éviter tout chevauchement.
+Tout comme la règle [Les packages ne doivent pas contenir de configurations OSGi en double](#oakpal-package-osgi), cette situation est un problème courant sur les projets complexes où plusieurs packages de contenu distincts écrivent sur le même chemin de nœud. Bien que l’utilisation des dépendances des modules de contenu puisse servir à garantir un résultat cohérent, il est préférable d’éviter tout chevauchement.
 
 ### Le mode de création par défaut ne doit pas être défini sur l’interface utilisateur classique {#oakpal-default-authoring}
 
@@ -843,7 +843,7 @@ La documentation sur les outils de modernisation d’Experience Manager contient
 * **Gravité** : mineure
 * **Depuis** : version 2020.5.0
 
-Pour être compatible avec le modèle de déploiement Cloud Service, les modules de contenu individuels doivent contenir du contenu pour les zones non modifiables du référentiel (c’est-à-dire, `/apps` et `/libs`) ou la zone modifiable (c’est-à-dire, tout ce qui ne se trouve pas dans `/apps` ou `/libs`), mais pas les deux. Par exemple, un package contenant à la fois `/apps/myco/components/text` et `/etc/clientlibs/myco` n’est pas compatible avec Cloud Service et provoque la notification d’un problème.
+Pour être compatible avec le modèle de déploiement Cloud Service, les packages de contenu individuels doivent contenir du contenu de référentiel non modifiable (`/apps` et `/libs`) ou du contenu modifiable, mais pas les deux. Par exemple, un package contenant à la fois `/apps/myco/components/text` et `/etc/clientlibs/myco` n’est pas compatible avec Cloud Service et provoque la notification d’un problème.
 
 >[!NOTE]
 >
@@ -869,7 +869,7 @@ Les client(e)s qui utilisent la réplication inverse doivent contacter Adobe pou
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
-Les bibliothèques clientes d’Experience Manager peuvent contenir des ressources statiques telles que des images et des polices. Comme décrit dans le document [Utilisation de préprocesseurs](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors), lorsque vous utilisez des bibliothèques clientes activées par proxy, ces ressources statiques doivent être contenues dans un dossier enfant nommé `resources` pour être référencées efficacement sur les instances de publication.
+Les bibliothèques clientes Experience Manager contiennent des ressources statiques telles que des images et des polices. Comme décrit dans le document [Utilisation de préprocesseurs](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors), lorsque vous utilisez des bibliothèques clientes activées par proxy, ces ressources statiques doivent être contenues dans un dossier enfant nommé `resources` pour être référencées efficacement sur les instances de publication.
 
 #### Code non conforme {#non-compliant-proxy-enabled}
 
@@ -1113,7 +1113,7 @@ Le type de nœud `nt:base` peut être considéré comme « générique », car t
 * **Gravité** : mineure
 * **Depuis** : version 2023.1.0
 
-Le remplacement de la valeur par défaut peut ralentir les lectures de page, en particulier lorsque davantage de contenu est ajouté.
+Le remplacement de la valeur par défaut ralentit les lectures de page lorsque davantage de contenu est ajouté.
 
 ### Plusieurs versions actives du même index {#oakpal-multiple-active-versions}
 
@@ -1223,7 +1223,7 @@ AEM Cloud Service interdit le déploiement de définitions d’index de recherch
 
 >[!WARNING]
 >
->Vous devez résoudre ce problème dès que possible, car il peut entraîner des échecs de pipeline à partir de la version [Cloud Manager d’août 2024](/help/implementing/cloud-manager/release-notes/current.md).
+>Résolvez ce problème dès que possible, car il entraîne des échecs de pipeline à partir de la version [Cloud Manager d’août 2024](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### La définition d’index de texte intégral personnalisée de type damAssetLucene doit comporter correctement le préfixe « damAssetLucene » {#oakpal-dam-asset-lucene}
 
@@ -1236,7 +1236,7 @@ AEM Cloud Service interdit que les définitions d’index en texte intégral per
 
 >[!WARNING]
 >
->Résolvez ce problème dès que possible, car il peut entraîner des échecs de pipeline à partir de la version [Cloud Manager d’août 2024](/help/implementing/cloud-manager/release-notes/current.md).
+>Résolvez ce problème dès que possible, car il entraîne des échecs de pipeline à partir de la version [Cloud Manager d’août 2024](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### Les nœuds de définition d’index ne doivent pas contenir de propriétés portant le même nom. {#oakpal-index-property-name}
 
@@ -1249,16 +1249,16 @@ AEM Cloud Service interdit que les définitions d’index de recherche personnal
 
 >[!WARNING]
 >
->Résolvez ce problème dès que possible, car il peut entraîner des échecs de pipeline à partir de la version [Cloud Manager d’août 2024](/help/implementing/cloud-manager/release-notes/current.md).
+>Résolvez ce problème dès que possible, car il entraîne des échecs de pipeline à partir de la version [Cloud Manager d’août 2024](/help/implementing/cloud-manager/release-notes/current.md).
 
-### La personnalisation de certaines définitions d’index intégrées est interdite. {#oakpal-customizing-ootb-index}
+### La personnalisation de certaines définitions d’index standard est interdite {#oakpal-customizing-ootb-index}
 
 * **Clé** : RestrictIndexCustomization
 * **Type** : amélioration
 * **Gravité** : mineure
 * **Depuis** : version 2024.6.0
 
-AEM Cloud Service interdit toute modification non autorisée des index intégrés suivants :
+AEM Cloud Service interdit les modifications non autorisées des index standard suivants :
 
 * `nodetypeLucene`
 * `slingResourceResolver`
@@ -1269,7 +1269,7 @@ AEM Cloud Service interdit toute modification non autorisée des index intégré
 
 >[!WARNING]
 >
->Résolvez ce problème dès que possible, car il peut entraîner des échecs de pipeline à partir de la version [Cloud Manager d’août 2024](/help/implementing/cloud-manager/release-notes/current.md).
+>Résolvez ce problème dès que possible, car il entraîne des échecs de pipeline à partir de la version [Cloud Manager d’août 2024](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### La configuration des jetons dans les analyseurs doit être créée avec le nom « tokenizer » {#oakpal-tokenizer}
 
@@ -1282,7 +1282,7 @@ AEM Cloud Service interdit la création de jetons dont le nom est incorrect dans
 
 >[!WARNING]
 >
->Résolvez ce problème dès que possible, car il peut entraîner des échecs de pipeline à partir de la version [Cloud Manager d’août 2024](/help/implementing/cloud-manager/release-notes/current.md).
+>Résolvez ce problème dès que possible, car il entraîne des échecs de pipeline à partir de la version [Cloud Manager d’août 2024](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### La configuration des définitions d’indexation ne doit pas contenir d’espaces. {#oakpal-indexing-definitions-spaces}
 
