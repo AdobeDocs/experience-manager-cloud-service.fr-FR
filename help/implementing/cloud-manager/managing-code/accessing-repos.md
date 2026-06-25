@@ -66,4 +66,4 @@ La fonction **Accéder aux informations sur le référentiel** est également di
 
 Vous pouvez révoquer un mot de passe d’accès à tout moment.
 
-Pour ce faire, [créez un ticket d’assistance pour cette demande](https://experienceleague.adobe.com/?support-solution=Experience+Manager&support-tab=home#support). Le ticket est traité avec une priorité élevée et le mot de passe est généralement révoqué dans les 24 heures.
+Pour ce faire, [créez un ticket d’assistance pour cette demande](https://experienceleague.adobe.com/fr?support-solution=Experience+Manager&support-tab=home#support). Le ticket est traité avec une priorité élevée et le mot de passe est généralement révoqué dans les 24 heures.
