@@ -4,7 +4,7 @@ description: Découvrez comment vous pouvez utiliser des sous-modules Git pour f
 exl-id: fa5b0f49-4b87-4f39-ad50-7e62094d85f4
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 'null'
+source-git-commit: 85ad7a7de35033b4b975c51c5f2f228cfdfa0152
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 22%

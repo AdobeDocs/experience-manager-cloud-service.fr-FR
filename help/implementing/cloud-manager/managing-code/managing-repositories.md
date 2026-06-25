@@ -4,10 +4,10 @@ description: Découvrez comment ajouter, afficher et supprimer vos référentiel
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 188201dfaececb21d373450711eb206b8e2323e2
+source-git-commit: c1e63069e215e275ee6048d50496f4e0010d2da1
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 62%
+source-wordcount: '892'
+ht-degree: 60%
 
 ---
 
@@ -31,7 +31,7 @@ Chaque pipeline est lié à un référentiel ou à une branche principale. Toute
 
 Dans la page **Référentiels**, vous pouvez afficher des détails sur le référentiel sélectionné. Ces informations incluent le type de référentiel en cours d’utilisation. Si le référentiel est marqué comme **Adobe**, il s’agit d’un référentiel géré par Adobe. S’il est étiqueté **GitHub**, il s’agit d’un référentiel GitHub privé que vous gérez. En outre, la page fournit des détails tels que le moment où le référentiel a été créé et les pipelines qui lui sont associés.
 
-Pour agir sur un référentiel sélectionné, vous pouvez cliquer sur le référentiel et utiliser l’![Icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) pour ouvrir un menu déroulant. Pour les référentiels gérés par Adobe, vous pouvez **[Vérifier les branches / Créer un projet](#check-branches)**.
+Pour gérer un référentiel sélectionné, vous pouvez cliquer sur le référentiel et utiliser ![icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) pour ouvrir un menu déroulant. Pour les référentiels gérés par Adobe, vous pouvez **[Vérifier les branches / Créer un projet](#check-branches)**.
 
 ![Actions du référentiel](assets/repository-actions.png)
 *Menu déroulant de la page Référentiels.*
@@ -57,7 +57,7 @@ Pour plus d’informations sur le choix entre les méthodes de référentiel pri
 
 1. Sur la page **Référentiels**, près du coin supérieur droit, cliquez sur **Ajouter un référentiel**.
 
-   ![&#x200B; Boîte de dialogue Ajouter un référentiel &#x200B;](assets/repository-add.png)
+   ![ Boîte de dialogue Ajouter un référentiel ](assets/repository-add.png)
    *Boîte de dialogue Ajouter un référentiel.*
 
 1. Cliquez sur **Référentiel**. Voir [Ajout de référentiels Adobe dans Cloud Manager](adobe-repositories.md).
@@ -66,13 +66,13 @@ Pour plus d’informations sur le choix entre les méthodes de référentiel pri
 
 ### Ajout d’un référentiel non Adobe {#add-non-adobe-repositories}
 
-Si vous hébergez votre code en dehors d’Adobe, la page d’instructions que vous utilisez et la méthode de validation de la propriété dépendent toutes deux de l’emplacement d’hébergement du référentiel. Utilisez le tableau suivant pour choisir le chemin d’accès correct.
+Si vous hébergez votre code en dehors d’Adobe, la page d’instructions que vous utilisez et la méthode de validation de la propriété dépendent toutes deux de l’emplacement d’hébergement du référentiel. Utilisez le tableau suivant pour choisir l’option appropriée.
 
 | Emplacement d’hébergement de votre référentiel | Méthode de validation | Page des instructions d’utilisation |
 | --- | --- | --- |
 | `github.com` (tout forfait GitHub tel que Free, Pro, Team ou Enterprise Cloud) | Application GitHub Adobe et fichier secret. Aucun webhook requis. | [Ajouter un référentiel GitHub privé dans Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) |
 | GitHub Enterprise Server (auto-hébergé) | Jeton d’accès personnel et webhook | [Ajouter des référentiels externes dans Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) |
-| DevOps GitLab, Bitbucket ou Azure | Jeton d’accès personnel et webhook | [Ajouter des référentiels externes dans Cloud Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/external-repositories) |
+| DevOps GitLab, Bitbucket ou Azure | Jeton d’accès personnel et webhook | [Ajouter des référentiels externes dans Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/external-repositories) |
 
 
 ## Accéder aux informations du référentiel {#repo-info}
