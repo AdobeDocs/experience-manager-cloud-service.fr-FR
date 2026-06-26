@@ -4,9 +4,9 @@ description: Découvrez comment déplacer un composant d’une page de conceptio
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Application pour AEM Forms."
 exl-id: move-component-to-master-page-ic-editor
-source-git-commit: 38a10bc5caaa1615188d2e6623b9d432bd4c3d69
+source-git-commit: 6c8d7cdd025e547631687d491dd8af125555c3c9
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 2%
@@ -37,9 +37,9 @@ Un cas d’utilisation courant consiste à déplacer des éléments d’en-tête
 
    Par exemple, cliquez avec le bouton droit de la souris sur le bloc de texte adresse de la banque.
 
-1. Dans le menu contextuel, sélectionnez **Déplacer vers**, puis choisissez la page de Principal **&#x200B;**.
+1. Dans le menu contextuel, sélectionnez **Déplacer vers**, puis choisissez la page de Principal ****.
 
-   ![Déplacer vers le gabarit de page &#x200B;](/help/forms/interactive-communication/assets/move-to-master-page.png)
+   ![Déplacer vers le gabarit de page ](/help/forms/interactive-communication/assets/move-to-master-page.png)
 
    Le composant est supprimé de la page de conception et ajouté au gabarit de page à la même position visuelle. Il apparaît désormais sur chaque page qui utilise ce gabarit.
 
@@ -49,7 +49,7 @@ Un cas d’utilisation courant consiste à déplacer des éléments d’en-tête
 
 1. Sélectionnez l&#39;onglet **Principal** pour vérifier que le logo et l&#39;adresse de la banque apparaissent dans les positions prévues.
 
-   ![Déplacer vers le gabarit de page &#x200B;](/help/forms/interactive-communication/assets/move-to-master-page2.png)
+   ![Déplacer vers le gabarit de page ](/help/forms/interactive-communication/assets/move-to-master-page2.png)
 
 ## Composants éligibles
 
