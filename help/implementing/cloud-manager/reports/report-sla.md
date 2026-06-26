@@ -40,7 +40,7 @@ Le graphique linéaire d’une année sélectionnée comprend des points de donn
 
 1. Cliquez sur **Rapports**.
 
-   ![Graphique linéaire du rapport ](/help/implementing/cloud-manager/reports/assets/cm-sla-report2.png)
+   ![Graphique linéaire du rapport &#x200B;](/help/implementing/cloud-manager/reports/assets/cm-sla-report2.png)
 
 1. Cliquez sur l’année souhaitée pour afficher un graphique linéaire des données SLA.
 
