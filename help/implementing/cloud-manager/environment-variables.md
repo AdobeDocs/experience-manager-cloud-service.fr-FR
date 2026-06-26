@@ -63,7 +63,7 @@ Pour ajouter, mettre à jour ou supprimer des variables d’environnement, vous 
 
    ![Ajouter une variable](assets/add-variable.png)
 
-1. Cliquez sur ![ Ajouter une icône ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)**Ajouter**.
+1. Cliquez sur ![&#x200B; Ajouter une icône &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)**Ajouter**.
 
    Ajoutez des variables supplémentaires si nécessaire.
 
