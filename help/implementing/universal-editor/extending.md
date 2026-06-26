@@ -4,7 +4,7 @@ description: Découvrez les différentes options permettant d’étendre les fon
 feature: Developing
 role: Admin, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: b2c13eead3670f0d708fa2c9adf9ac120d0470b9
+source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 92%
@@ -48,7 +48,7 @@ Pour explorer les possibilités de création de vos propres extensions, consulte
 
 >[!TIP]
 >
->Si vous préférez apprendre par l’exemple, consultez le tutoriel sur l’extensibilité de l’interface utilisateur d’AEM [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Bien qu’il se concentre sur l’extension de la console Fragments de contenu, les concepts d’implémentation d’une extension d’interface utilisateur dans l’éditeur universel restent les mêmes.
+>Si vous préférez apprendre par l’exemple, consultez le tutoriel sur l’extensibilité de l’interface utilisateur d’AEM [](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Bien qu’il se concentre sur l’extension de la console Fragments de contenu, les concepts d’implémentation d’une extension d’interface utilisateur dans l’éditeur universel restent les mêmes.
 
 [En utilisant Extension Manager dans AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/), vous pouvez activer ou désactiver vos extensions par instance, accéder aux extensions propriétaires d’Adobe, y compris celles de l’éditeur universel, et bien plus encore.
 
@@ -62,3 +62,4 @@ Outre l’extensibilité de l’interface utilisateur, l’éditeur universel of
 
 * **[Blocs](https://www.aem.live/developer/block-collection)** : au format JSON simple, les projets peuvent ajuster les blocs et les fonctionnalités d’interface utilisateur disponibles pour la création de contenu.
 * **[Événements](/help/implementing/universal-editor/events-universal-editor.md)** : les extensions reçoivent des événements sur les actions et les sélections réalisées dans l’environnement auteur sur la page afin d’y répondre de manière appropriée.
+

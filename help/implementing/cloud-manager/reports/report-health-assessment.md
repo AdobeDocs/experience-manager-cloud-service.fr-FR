@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 5467a311-727d-4f67-ba43-4b6548431061
-source-git-commit: 8c5c34018aee84a1ec54d3f1d0bc77b8c660869c
+source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 11%
@@ -27,13 +27,13 @@ Le service d’évaluation de l’intégrité effectue les opérations suivantes
 
 Chaque exécution répertorie les problèmes par gravité, fournit des liens vers des conseils et des correctifs recommandés et prend en charge une exportation PDF du rapport. Vous pouvez utiliser la vue **Dernier rapport** pour l’état actuel et **Rapports précédents** pour comparer les exécutions.
 
-Consultez également la section [&#x200B; Modèles d’évaluation de l’intégrité &#x200B;](#ha-patterns) pour obtenir des détails sur les définitions de règle et les mesures correctives.
+Consultez également la section [ Modèles d’évaluation de l’intégrité ](#ha-patterns) pour obtenir des détails sur les définitions de règle et les mesures correctives.
 
 ## Accéder à la page Évaluation de l’intégrité {#access-health-assessment}
 
 1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com).
 1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
-1. Dans le panneau de gauche, cliquez sur **&#x200B;**.
+1. Dans le panneau de gauche, cliquez sur ****.
 1. Dans Cloud Manager, en haut à droite de la page, sélectionnez l’organisation à laquelle vous souhaitez accéder. L’image ci-dessous est fournie à titre de référence. Sélectionnez votre organisation.
 
    ![Sélection d’une organisation dans Cloud Manager](/help/implementing/cloud-manager/reports/assets/ha-org.png)
@@ -126,9 +126,9 @@ Vous trouverez ci-dessous une liste complète des modèles qui s’écartent des
 | Nom du motif | Catégorie | Type | Description | Impact | Correction automatique ? |
 | --- | --- | --- | --- | --- | --- |
 | Groupes AEM personnalisés avec ajouts directs d’utilisateurs | Sécurité | Analyse de contenu | Les utilisateurs sont ajoutés directement aux groupes AEM au lieu d’ajouter des groupes IMS en tant que membres. | La gestion des autorisations et la gouvernance de la sécurité peuvent devenir complexes. [Prise en charge IMS](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/ims-support) | Non |
-| Nœud de contenu JCR manquant dans les pages | Structure du référentiel | Analyse de contenu | Nœud `jcr:content` manquant dans la page. | Limites fonctionnelles dans Experience Manager as a Cloud Service. [Détection de motifs - ACV](https://experienceleague.adobe.com/fr/docs/experience-manager-pattern-detection/table-of-contents/acv) | Non |
-| Type de ressource Sling manquant dans les pages | Structure du référentiel | Analyse de contenu | `sling:resourceType` manquant dans la page. | Limites fonctionnelles dans Experience Manager as a Cloud Service. [Détection de motifs - ACV](https://experienceleague.adobe.com/fr/docs/experience-manager-pattern-detection/table-of-contents/acv) | Non |
-| Pages avec nombre de nœuds excessif | Performance | Analyse de contenu | Les pages contiennent un grand nombre de nœuds dans leur structure. | Temps de chargement de page lent et mauvaise expérience utilisateur. [Détection de motifs - PCX](https://experienceleague.adobe.com/fr/docs/experience-manager-pattern-detection/table-of-contents/pcx) | Non |
+| Nœud de contenu JCR manquant dans les pages | Structure du référentiel | Analyse de contenu | Nœud `jcr:content` manquant dans la page. | Limites fonctionnelles dans Experience Manager as a Cloud Service. [Détection de motifs - ACV](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | Non |
+| Type de ressource Sling manquant dans les pages | Structure du référentiel | Analyse de contenu | `sling:resourceType` manquant dans la page. | Limites fonctionnelles dans Experience Manager as a Cloud Service. [Détection de motifs - ACV](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | Non |
+| Pages avec nombre de nœuds excessif | Performance | Analyse de contenu | Les pages contiennent un grand nombre de nœuds dans leur structure. | Temps de chargement de page lent et mauvaise expérience utilisateur. [Détection de motifs - PCX](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx) | Non |
 | Instances de workflow en cours d’exécution excessive | Performance | Analyse de contenu | Trop d’instances de workflows en cours d’exécution. | Dégradation des performances globales du système. [Tâches de maintenance](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/maintenance) | Non |
 | Instances de workflow terminées et non purgées | Performance | Analyse de contenu | Les anciennes instances de workflow terminées ne sont pas purgées. | Réduction de l&#39;efficacité du système et augmentation des coûts de stockage. [Tâches de maintenance](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/maintenance) | Non |
 | Statistiques d’utilisation des fragments de contenu | Statistiques | Analyse de contenu | Effectue le suivi du nombre de fragments de contenu utilisés. | S/O | S/O |
@@ -160,3 +160,4 @@ Vous trouverez ci-dessous une liste complète des modèles qui s’écartent des
 | Structure du référentiel | Modèles liés à l’organisation et à la structure du référentiel JCR. |
 | Dépendances | Modèles liés aux dépendances de code et à la gestion des versions. |
 | Statistiques | Modèles qui représentent des statistiques et des mesures d’utilisation. |
+

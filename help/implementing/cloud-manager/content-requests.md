@@ -5,7 +5,7 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 45fb44079ec9b999cc2cd82b8011b14eff3bcfe1
+source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
 source-wordcount: '2276'
 ht-degree: 2%
@@ -107,7 +107,7 @@ Voir aussi [Tableau de bord des licences](/help/implementing/cloud-manager/licen
 
 ## Gestion des demandes de contenu {#managing-content-requests}
 
-Comme indiqué dans la section [Variances des requêtes de contenu Cloud Service](#content-requests-variances), les requêtes de contenu peuvent être plus élevées que prévu pour plusieurs raisons, telles que le trafic atteignant le réseau CDN. En tant que client AEM, il vous est utile de surveiller et de gérer vos requêtes de contenu afin de respecter votre budget de licence. La gestion des requêtes de contenu est une combinaison de techniques d’implémentation et de [&#x200B; règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md).
+Comme indiqué dans la section [Variances des requêtes de contenu Cloud Service](#content-requests-variances), les requêtes de contenu peuvent être plus élevées que prévu pour plusieurs raisons, telles que le trafic atteignant le réseau CDN. En tant que client AEM, il vous est utile de surveiller et de gérer vos requêtes de contenu afin de respecter votre budget de licence. La gestion des requêtes de contenu est une combinaison de techniques d’implémentation et de [ règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Techniques d’implémentation pour gérer les demandes de contenu {#implementation-techniques-to-manage-crs}
 
@@ -120,7 +120,7 @@ Comme indiqué dans la section [Variances des requêtes de contenu Cloud Service
 
 ### Règles de filtrage du trafic pour la gestion des demandes de contenu {#traffic-filter-rules-to-manage-crs}
 
-Pour mieux contrôler vos requêtes de contenu, analysez le trafic de votre réseau CDN avant de définir des règles de filtrage. Le [outil d’analyse des journaux CDN](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/cloud-manager/devops/cdn-log-analysis) vous permet d’obtenir des informations sur les performances du réseau CDN et les modèles de requête. Commencez par comprendre d’où vient votre trafic et s’il existe des modèles de signalisation inattendus (un modèle de robot courant consiste à utiliser un agent utilisateur vide).
+Pour mieux contrôler vos requêtes de contenu, analysez le trafic de votre réseau CDN avant de définir des règles de filtrage. Le [outil d’analyse des journaux CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/devops/cdn-log-analysis) vous permet d’obtenir des informations sur les performances du réseau CDN et les modèles de requête. Commencez par comprendre d’où vient votre trafic et s’il existe des modèles de signalisation inattendus (un modèle de robot courant consiste à utiliser un agent utilisateur vide).
 
 **Éléments à surveiller et à consigner :**
 
@@ -163,4 +163,5 @@ trafficFilters:
 
 Remplacez les exemples de valeurs par le code de pays, le nom de réseau ou de robot que vous souhaitez bloquer. Voir [Syntaxe des règles de filtre de trafic](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) et [Structure de condition](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure) pour plus d’options.
 
-Certains robots peuvent surcharger un site avec du trafic un jour, puis disparaître le lendemain. Cette fonctionnalité peut compliquer toute tentative de blocage d’une adresse IP ou d’un agent utilisateur spécifique. Une approche générique consiste à introduire une [&#x200B; règle de limitation des taux](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules). Examinez les [exemples](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) et créez une règle qui correspond à votre tolérance pour un taux rapide de requêtes. Consultez la syntaxe [Structure de conditions](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure) pour toutes les exceptions que vous autorisez à une limite de taux générique.
+Certains robots peuvent surcharger un site avec du trafic un jour, puis disparaître le lendemain. Cette fonctionnalité peut compliquer toute tentative de blocage d’une adresse IP ou d’un agent utilisateur spécifique. Une approche générique consiste à introduire une [ règle de limitation des taux](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules). Examinez les [exemples](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) et créez une règle qui correspond à votre tolérance pour un taux rapide de requêtes. Consultez la syntaxe [Structure de conditions](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure) pour toutes les exceptions que vous autorisez à une limite de taux générique.
+

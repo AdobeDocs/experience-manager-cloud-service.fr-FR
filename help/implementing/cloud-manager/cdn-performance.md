@@ -5,7 +5,7 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 91b880dcff55531c49229eb034348ad9cf91dca2
+source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 1%
@@ -20,7 +20,7 @@ Découvrez comment Cloud Manager évalue les performances du réseau de diffusio
 
 Chaque programme Cloud Manager comporte un tableau de bord des performances du réseau CDN. Ce tableau de bord présente le score global des performances du réseau CDN, ainsi que les tendances, les alertes et des suggestions d’amélioration, si nécessaire.
 
-![&#x200B; Tableau de bord des performances du réseau CDN &#x200B;](assets/cdn-performance-dashboard.png)
+![ Tableau de bord des performances du réseau CDN ](assets/cdn-performance-dashboard.png)
 
 ## Accès au tableau de bord {#accessing}
 
@@ -40,7 +40,7 @@ Le tableau de bord du réseau CDN est disponible sur la page d’aperçu de chaq
 
 Le tableau de bord présente un score global des performances du réseau CDN, ainsi que des tendances, des alertes et des suggestions d’amélioration, si nécessaire.
 
-![&#x200B; Tableau de bord des performances du réseau CDN &#x200B;](assets/cdn-performance-dashboard.png)
+![ Tableau de bord des performances du réseau CDN ](assets/cdn-performance-dashboard.png)
 
 Pour plus d’informations sur les performances de votre réseau CDN et pour obtenir des suggestions sur la manière de les améliorer, cliquez sur **Afficher la tendance**.
 
@@ -75,4 +75,5 @@ Les mesures du cache sont actualisées toutes les 24 heures.
 
 >[!TIP]
 >
->Pour plus d’informations sur la façon dont Cloud Manager et le réseau CDN interagissent avec le Dispatcher, consultez [&#x200B; Mise en cache dans AEM as a Cloud Service](/help/implementing/dispatcher/caching.md).
+>Pour plus d’informations sur la façon dont Cloud Manager et le réseau CDN interagissent avec le Dispatcher, consultez [ Mise en cache dans AEM as a Cloud Service](/help/implementing/dispatcher/caching.md).
+
