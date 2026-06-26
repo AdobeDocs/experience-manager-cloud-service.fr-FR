@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: e4bb698c4673df61f47bfc12827facf8fc3caccd
 workflow-type: tm+mt
-source-wordcount: '3320'
-ht-degree: 38%
+source-wordcount: '3984'
+ht-degree: 33%
 
 ---
 
@@ -37,8 +37,10 @@ Pour créer un PDF d’envoi, un modèle basé sur XFA ou Acrobat est fusionné 
 Vous pouvez :
 
 * [Générer une PDF d’envoi basée sur XFA](#generate-an-XFA-based-document-of-record)
+* [Utiliser des modèles XDP personnalisés spécifiques aux paramètres régionaux pour Submission PDF](#locale-specific-custom-xdp-templates-for-document-of-record)
 * [Générer un PDF d’envoi basé sur Acroform (Acrobat Form PDF)](#generate-an-Acroform-based-document-of-record)
 * [Générer automatiquement un PDF d’envoi](#auto-generate-a-document-of-record)
+* [Configurer le PDF d’envoi pour les formulaires incorporés dans des pages AEM Sites](#configure-document-of-record-for-forms-embedded-in-aem-sites)
 
 ## Avant de commencer {#components-to-automatically-generate-a-document-of-record}
 
@@ -60,6 +62,33 @@ Chargez votre modèle XFA (fichier XDP) vers votre instance AEM Forms. Pour conf
 1. Cliquez sur **[!UICONTROL Terminé]**
 
 Votre formulaire adaptatif est maintenant configuré pour utiliser un fichier XDP comme modèle de PDF d’envoi. L’étape suivante consiste à [lier les composants de formulaire adaptatif aux champs de modèle correspondants](#bind-adaptive-form-components-with-template-fields).
+
+## Utiliser des modèles XDP personnalisés spécifiques aux paramètres régionaux pour Submission PDF {#locale-specific-custom-xdp-templates-for-document-of-record}
+
+Lorsque vous associez un modèle XFA personnalisé (fichier XDP) en tant que modèle de PDF d’envoi, vous pouvez fournir des versions du modèle spécifiques aux paramètres régionaux. AEM Forms sélectionne automatiquement le fichier XDP approprié en fonction des paramètres régionaux du formulaire lors de la génération du PDF d’envoi.
+
+### Fonctionnement de la sélection de modèles spécifiques aux paramètres régionaux
+
+1. Chargez un modèle XDP par défaut sur votre instance AEM Forms. Par exemple, `a.xdp`.
+1. Pour fournir des modèles localisés, créez et chargez des fichiers XDP spécifiques aux paramètres régionaux dans le même dossier à l’aide de la convention d’affectation des noms `basename.<locale>.xdp`. Par exemple :
+
+   * `a.xdp` — modèle par défaut
+   * `a.fr.xdp` — Modèle de paramètres régionaux français
+   * `a.de.xdp` — Modèle de paramètres régionaux allemands
+
+1. Configurez le formulaire adaptatif pour **Associer le modèle de formulaire en tant que modèle de document d’enregistrement** et sélectionnez le fichier XDP par défaut (par exemple, `a.xdp`).
+1. Lorsqu’une PDF d’envoi est générée, AEM Forms utilise les paramètres régionaux du formulaire pour résoudre le modèle. Pour un formulaire avec paramètres régionaux français, le système utilise `a.fr.xdp` s’il existe ; dans le cas contraire, il retourne au `a.xdp` par défaut.
+
+### Exemple de workflow
+
+1. Dans **&#x200B;**&#x200B;> **[!UICONTROL Forms et Documents]**, chargez `a.xdp` et `a.fr.xdp` dans le même dossier (par exemple, `/content/dam/formsanddocuments/testlang/`).
+1. Configurez les paramètres **[!UICONTROL Document d’enregistrement]** du formulaire pour associer `a.xdp` comme modèle.
+1. Lorsqu’un utilisateur remplit la version française du formulaire et génère ou télécharge le PDF d’envoi, le PDF utilise le contenu du modèle XDP français (par exemple, le texte de l’en-tête localisé et les libellés du champ définis dans le modèle).
+1. Les actions Envoyer qui incluent une pièce jointe de PDF de soumission (telles que **[!UICONTROL Envoyer un e-mail]**) incluent également le PDF approprié aux paramètres régionaux.
+
+>[!NOTE]
+>
+> La prise en charge des modèles XDP personnalisés spécifiques aux paramètres régionaux s’applique lorsque vous associez un modèle de formulaire en tant que modèle de document d’enregistrement. Pour la localisation des PDF d’envoi générées automatiquement, consultez [Utilisation de la traduction automatique ou de la traduction humaine pour traduire un formulaire adaptatif basé sur des composants principaux](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md).
 
 ## Générer un PDF d’envoi basé sur Acroform {#generate-an-Acroform-based-document-of-record}
 
@@ -119,6 +148,47 @@ Vous pouvez utiliser des actions d’envoi telles que « Envoyer par e-mail », 
 >[!NOTE]
 >
 > Vous pouvez enregistrer la PDF d’envoi pour n’importe quel modèle de données de formulaire à l’aide de la propriété **[!UICONTROL Champ de référence de liaison de document d’enregistrement]**.
+
+## Configurer le PDF d’envoi pour les formulaires incorporés dans des pages AEM Sites {#configure-document-of-record-for-forms-embedded-in-aem-sites}
+
+Vous pouvez configurer et générer une PDF d’envoi (document d’enregistrement) pour les Forms adaptatifs incorporées dans des pages AEM Sites à l’aide du composant **[!UICONTROL Conteneur de formulaires adaptatifs]**. Les auteurs peuvent configurer les paramètres de document d’enregistrement directement sur la page Sites sans ouvrir le formulaire dans l’éditeur Forms.
+
+### Avant de commencer
+
+* Un formulaire adaptatif est créé à l’aide du composant **[!UICONTROL Conteneur de formulaires adaptatifs]** sur une page ou un fragment d’expérience AEM Sites. Pour plus d’informations, voir [Ajouter un formulaire adaptatif à une page ou un fragment d’expérience AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
+* Les bibliothèques clientes Forms adaptatives sont ajoutées au modèle de page Sites.
+
+### Configuration de Submission PDF sur une page Sites
+
+1. Ouvrez la page AEM Sites ou le fragment d’expérience contenant le formulaire incorporé en mode d’édition.
+1. Sélectionnez le composant **[!UICONTROL Conteneur de formulaires adaptatifs]** sur la page et cliquez sur l’icône configurer ![Configurer](assets/configure-icon.svg).
+1. Ouvrez l’onglet **[!UICONTROL Document d’enregistrement]**.
+1. Sélectionnez l’une des options suivantes :
+
+   * **Aucune** — Ne générez pas de PDF d’envoi.
+   * **Générer un document d’enregistrement** — Génère automatiquement un PDF d’envoi.
+   * **Associer le modèle de formulaire comme modèle de document d’enregistrement** — Utiliser un modèle XDP ou AcroForm personnalisé. Recherchez et sélectionnez le modèle à partir de votre instance AEM Forms.
+
+1. (Facultatif) Sélectionnez **Exclure les pièces jointes du document d’enregistrement** pour omettre les pièces jointes chargées du PDF d’envoi.
+1. Cliquez sur **[!UICONTROL Terminé]**.
+
+### Personnaliser les propriétés du document d’enregistrement
+
+Après avoir activé la génération du PDF d’envoi, vous pouvez personnaliser la marque et la mise en page sur la page Sites :
+
+1. Sélectionnez le panneau racine du formulaire incorporé dans le **[!UICONTROL Conteneur de formulaires adaptatifs]**.
+1. Dans la barre latérale des propriétés, ouvrez l’onglet **[!UICONTROL Document d’enregistrement]**.
+1. Configurez les options sur les onglets **[!UICONTROL De base]**, **[!UICONTROL Propriétés du champ de formulaire]** et **[!UICONTROL Propriétés de page de Principal]**. Pour plus d’informations sur chaque propriété, voir [Personnaliser les informations d’identité graphique dans Submission PDF](#customize-the-branding-information-in-document-of-record).
+1. Cliquez sur **[!UICONTROL Terminé]**.
+
+### Prévisualiser et télécharger le PDF d’envoi
+
+* Prévisualisez le formulaire sur la page Sites et envoyez-le, ou ajoutez un bouton **Télécharger le document d’enregistrement** à l’aide de l’[éditeur de règles](/help/forms/rule-editor-enhancements-use-cases.md#download-document-of-record) pour générer le PDF d’envoi à la demande.
+* Les actions d’envoi configurées sur le formulaire incorporé (telles que **[!UICONTROL Envoyer un e-mail]** ou **[!UICONTROL Appeler un processus AEM]**) peuvent inclure la PDF d’envoi générée.
+
+>[!NOTE]
+>
+> La génération de PDF d’envoi pour les formulaires incorporés dans des pages Sites est prise en charge pour les Forms adaptatives créées avec les composants principaux dans le composant **[!UICONTROL Conteneur de formulaires adaptatifs]**. Pour les formulaires ajoutés à l’aide du composant Forms adaptative - Incorporer (v2)**, configurez le document d’enregistrement dans l’éditeur de Forms.**
 
 ## Mises à jour incrémentielles du modèle de PDF d’envoi {#document-of-record-template-incremental-updates}
 
@@ -364,9 +434,9 @@ Pour localiser les informations de branding que vous saisissez dans l’onglet D
 
       **Afficher les libellés pour la liste déroulante à sélection multiple**
 
-      <span class="preview"> Cette fonctionnalité est disponible via le programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail à partir de votre adresse officielle à [&#128279;](mailto:aem-forms-ea@adobe.com). </span>
+      <span class="preview"> Cette fonctionnalité est disponible par le biais du programme d’accès anticipé. Pour en demander l’accès, envopyez un e-mail à partir de votre adresse officielle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com). </span>
 
-      Le PDF Envoi affiche désormais les libellés d’affichage sélectionnés pour les composants déroulants à sélection multiple au lieu des valeurs stockées internes. Par exemple, si un utilisateur sélectionne « California » et « New York » dans une liste déroulante, le PDF d’envoi affiche les libellés sélectionnés au lieu des valeurs internes telles que `CA` et `NY`. Chaque option sélectionnée s’affiche sur une ligne distincte au lieu de prendre la forme de valeurs séparées par des virgules, ce qui est cohérent avec le comportement dans Forms adaptative basée sur les composants de base[.](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+      Le PDF Envoi affiche désormais les libellés d’affichage sélectionnés pour les composants déroulants à sélection multiple au lieu des valeurs stockées internes. Par exemple, si un utilisateur sélectionne « California » et « New York » dans une liste déroulante, le PDF d’envoi affiche les libellés sélectionnés au lieu des valeurs internes telles que `CA` et `NY`. Chaque option sélectionnée s’affiche sur une ligne distincte au lieu de prendre la forme de valeurs séparées par des virgules, ce qui est cohérent avec le comportement dans Forms adaptative basée sur les composants de base[&#128279;](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
 
    1. **Propriétés du gabarit de page** :
 
