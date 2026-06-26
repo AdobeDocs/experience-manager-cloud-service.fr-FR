@@ -191,7 +191,7 @@ Cette propriété vous permet de saisir une URL Vanity pour cette page, ce qui p
 
 * **Générer un plan de site** : lorsque cette option est sélectionnée, un fichier `sitemap.xml` est généré pour cette page et ses descendants.
 
-* **Données structurées (JSON-LD)** - Le contenu défini ici est émis dans une balise `<script type="application/ld+json">` dans l’en-tête de la page par le [composant de page.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page#structured-data)
+* **Données structurées (JSON-LD)** - Le contenu défini ici est émis dans une balise `<script type="application/ld+json">` dans l’en-tête de la page par le [composant de page.](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/wcm-components/page#structured-data)
    * Cliquez sur **Ajouter** pour ajouter des données structurées.
    * Chaque entrée doit être un objet JSON-LD complet d’un type [schema.org](https://schema.org) (par exemple, FAQPage, HowTo ou Product).
 
