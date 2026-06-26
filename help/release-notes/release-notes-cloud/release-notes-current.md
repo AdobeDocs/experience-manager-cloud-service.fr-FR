@@ -6,10 +6,10 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 nudge: please
-source-git-commit: 1bb231d04e0b418a3b56de34c70424d06f94a4e1
+source-git-commit: 72bacdb87edd7dd6f73a7966b01665b52cea57eb
 workflow-type: tm+mt
-source-wordcount: '3862'
-ht-degree: 17%
+source-wordcount: '4226'
+ht-degree: 16%
 
 ---
 
@@ -41,7 +41,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the May 2026 Release Overview video for a summary of the features added in the 2026.5.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3491492/?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3491490/?quality=12)
 
 -->
 
@@ -86,11 +86,11 @@ Voir [Programmes bêta AEM Foundation](#foundation-early-adopter).
 
 ### Cloud Manager (programmes Beta) {#cloud-manager-beta-programs}
 
-Voir [Programmes bêta &#x200B;](/help/implementing/cloud-manager/release-notes/current.md).
+Voir [Programmes bêta ](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### AEM Assets (programmes Beta) {#aem-assets-beta-programs}
 
-Voir [Programmes bêta &#x200B;](#assets-beta-program-features).
+Voir [Programmes bêta ](#assets-beta-program-features).
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -100,18 +100,21 @@ AEM prend désormais en charge les [fragments de contenu visuels](/help/sites-cl
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Modifier des fichiers PSD dans l’éditeur Adobe Express intégré**
+**Ouverture de ressources Photoshop dans l’éditeur Adobe Express intégré**
 
-Vous pouvez désormais modifier des fichiers PSD en plus des formats JPEG et PNG dans l’éditeur incorporé d’Adobe Express à partir de la vue Assets. Cette amélioration permet aux équipes créatives et marketing de travailler avec des fichiers de conception superposés sans quitter AEM Assets, en rationalisant les mises à jour de contenu et en réduisant la nécessité de basculer entre les applications. La prise en charge de PSD permet d’accélérer les workflows de création de contenu tout en préservant la flexibilité des ressources de conception source.
+Vous pouvez désormais ouvrir des fichiers Adobe Photoshop (.psd) en plus des formats JPEG et PNG dans l’éditeur incorporé d’Adobe Express à partir de la vue Assets et de Content Hub. Cette amélioration permet aux équipes créatives et marketing de travailler avec des fichiers de conception superposés sans quitter AEM Assets, en rationalisant les mises à jour de contenu et en réduisant la nécessité de basculer entre les applications. La prise en charge de PSD permet d’accélérer les workflows de création de contenu tout en préservant la flexibilité des ressources de conception source. Les utilisateurs peuvent enregistrer les créations remixées obtenues en tant que ressources prêtes pour le canal dans AEM.
 
 **Importation de ressources Adobe Illustrator et Adobe InDesign d’AEM Assets dans Adobe Express**
 
-Adobe Express prend désormais en charge l’importation de fichiers Adobe Illustrator (.ai) et Adobe InDesign (.indd) à partir d’AEM Assets. Cette fonctionnalité permet aux équipes créatives et marketing d’accéder aux ressources de conception approuvées et de les réutiliser plus facilement, ce qui accélère la création de contenu et permet d’assurer des expériences de marque cohérentes sur l’ensemble des canaux.
+Adobe Express prend désormais en charge l’importation de fichiers Adobe Illustrator (.ai) et Adobe InDesign (.indd) depuis AEM Assets à l’aide du plug-in Assets. Les fichiers Adobe Illustrator peuvent être importés dans le document actif ou dans un nouveau document Express. Les fichiers Adobe InDesign peuvent être importés dans un nouveau document Express. Cette fonctionnalité permet aux équipes créatives et marketing d’accéder aux ressources de conception approuvées et de les réutiliser plus facilement, ce qui accélère la création de contenu et permet d’assurer des expériences de marque cohérentes sur l’ensemble des canaux.
 
+>[!IMPORTANT]
+>
+>Cette fonctionnalité est disponible en tant que fonctionnalité à disponibilité limitée. Vous pouvez [créer et envoyer un dossier d’assistance client Adobe](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html) pour l’activer pour votre déploiement.
 
 **Conserver la parenté des ressources entre Adobe Express et AEM Assets**
 
-AEM Assets conserve désormais les informations de parenté pour les ressources créées dans Adobe Express à l’aide de ressources provenant d’AEM. Cette fonctionnalité enregistre les relations entre les ressources sources et le contenu résultant, ce qui permet aux entreprises de suivre la manière dont les ressources approuvées sont réutilisées dans les workflows de création.
+AEM Assets conserve désormais les informations de parenté pour les ressources créées dans Adobe Express à l’aide de ressources provenant d’AEM. Cette fonctionnalité enregistre les relations entre les ressources sources et le contenu résultant et les stocke en tant que métadonnées de ressource dans AEM, ce qui permet aux entreprises de suivre la manière dont les ressources approuvées sont réutilisées dans les workflows de création.
 
 En conservant les métadonnées de lignage des ressources, les équipes peuvent améliorer la gouvernance, la conformité et la transparence du supply chain de contenu. Il permet également aux spécialistes marketing et aux administrateurs de contenu de mieux comprendre la réutilisation des ressources, de prendre en charge les initiatives de gestion des droits et de suivre l’origine des ressources utilisées dans le contenu publié.
 
@@ -119,15 +122,15 @@ En conservant les métadonnées de lignage des ressources, les équipes peuvent 
 >
 >Cette fonctionnalité est disponible en tant que fonctionnalité à disponibilité limitée. Vous pouvez [créer et envoyer un dossier d’assistance client Adobe](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html) pour l’activer pour votre déploiement.
 
-**Intégration d’AEM avec les métadonnées de campagne Workfront planning standard**
+**Intégration d’AEM à Workfront Planning et GenStudio for Performance Marketing pour les métadonnées de campagne standard**
 
-Lorsqu’AEM Assets est intégré à Workfront Planning, les champs de métadonnées de campagne, notamment Campagne, Région, Canal, Persona et Produit, sont désormais disponibles dans les propriétés de la ressource sous un onglet Campagne en lecture seule dédié.
+Lorsqu’AEM Assets est intégré à [Workfront Planning and GenStudio for Performance Marketing](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-planning/planning-and-genstudio-integration/planning-and-genstudio-integration-article-index), les champs de métadonnées de campagne, notamment le nom de la campagne, la région, le canal, le persona et le produit, sont désormais disponibles dans le rail des propriétés de l’affichage des ressources sous un onglet Campagne dédié en lecture seule. Lorsque les utilisateurs dans Workfront Planning connectent des ressources d’AEM à GenStudio aux objets respectifs dans l’espace de travail Adobe GenStudio, des valeurs spécifiques (par exemple, un nom de campagne spécifique) sont automatiquement ajoutées aux métadonnées des ressources AEM.
 
 L’intégration permet aux utilisateurs de découvrir et de rechercher rapidement des ressources en fonction des attributs de campagne. Cette amélioration améliore la recherche des ressources, rationalise les workflows de gestion de contenu et aide les équipes à localiser plus efficacement les ressources appropriées pour des initiatives marketing spécifiques.
 
 >[!IMPORTANT]
 >
->Cette fonctionnalité est disponible en tant que fonctionnalité à disponibilité limitée. Vous pouvez [créer et envoyer un dossier d’assistance client Adobe](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html) pour l’activer pour votre déploiement.
+>Cette fonctionnalité est disponible en tant que fonctionnalité à disponibilité limitée et nécessite des licences pour Workfront Planning et GenStudio for Performance Marketing. Vous pouvez [créer et envoyer un dossier d’assistance client Adobe](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html) pour l’activer pour votre déploiement.
 
 
 ### Nouvelles fonctionnalités de Dynamic Media avec OpenAPI {#new-features-dynamic-media-openapi}
@@ -172,9 +175,9 @@ Dynamic Media avec des fonctionnalités OpenAPI permet désormais de charger des
 
 * **Modèles et fragments de document** : créez des modèles réutilisables et des blocs de contenu modulaires (en-têtes, pieds de page, clauses de non-responsabilité) pour une cohérence et une efficacité optimales dans plusieurs communications. Pour plus d’informations, voir [Créer un modèle](/help/forms/interactive-communication/create-interactive-communication-template.md) et [Créer un fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md).
 
-* **Verrouillage de modèle** : verrouillez le contenu et les éléments de disposition dans les modèles pour maintenir l’intégrité de la marque et empêcher toute modification non autorisée. Pour plus d’informations, voir [&#x200B; Verrouillage de modèle &#x200B;](/help/forms/interactive-communication/enable-template-lock.md).
+* **Verrouillage de modèle** : verrouillez le contenu et les éléments de disposition dans les modèles pour maintenir l’intégrité de la marque et empêcher toute modification non autorisée. Pour plus d’informations, voir [ Verrouillage de modèle ](/help/forms/interactive-communication/enable-template-lock.md).
 
-* **Aperçu PDF** : prévisualisez une communication interactive sans données, sans fichiers JSON locaux ou sans modèles de données pour des tests flexibles pilotés par les données. Pour plus d&#39;informations, voir Aperçu de [&#128279;](/help/forms/interactive-communication/generate-pdf-preview.md).
+* **Aperçu PDF** : prévisualisez une communication interactive sans données, sans fichiers JSON locaux ou sans modèles de données pour des tests flexibles pilotés par les données. Pour plus d&#39;informations, voir Aperçu de [](/help/forms/interactive-communication/generate-pdf-preview.md).
 
 * **Polices personnalisées** : incorporez des polices personnalisées ou approuvées par l’organisation pour garantir un rendu PDF cohérent de la marque sur tous les appareils. Pour plus d’informations, voir [Ajouter des polices personnalisées](/help/forms/interactive-communication/add-custom-fonts.md).
 
@@ -196,7 +199,7 @@ Dynamic Media avec des fonctionnalités OpenAPI permet désormais de charger des
 
 * **Fusion et division des cellules de tableau** : l’éditeur de communication interactive prend désormais en charge la fusion de cellules de tableau adjacentes et le fractionnement des cellules fusionnées en colonnes individuelles, ce qui permet d’étendre les en-têtes, les lignes de résumé et des dispositions de tableau plus flexibles. Pour plus d&#39;informations, voir [Fusionner et fractionner des cellules de tableau](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md).
 
-* **Déplacer un composant vers la page de Principal** : vous pouvez désormais déplacer un composant d’une page de conception vers le gabarit de page en une seule action afin qu’il apparaisse de manière cohérente sur chaque page d’une communication interactive sans le recréer. Pour plus d’informations, voir [Déplacer un composant vers la page de Principal &#x200B;](/help/forms/interactive-communication/howto/move-component-to-master-page.md).
+* **Déplacer un composant vers la page de Principal** : vous pouvez désormais déplacer un composant d’une page de conception vers le gabarit de page en une seule action afin qu’il apparaisse de manière cohérente sur chaque page d’une communication interactive sans le recréer. Pour plus d’informations, voir [Déplacer un composant vers la page de Principal ](/help/forms/interactive-communication/howto/move-component-to-master-page.md).
 
 * **Configurer les options de liste déroulante pour l’IU associée** : les champs de liste déroulante de l’IU associée utilisent désormais un modèle **Liaison d’options**. Les auteurs configurent **Liaison à partir des données** pour les listes d’options dynamiques ou les options statiques manuelles afin que les associés voient les choix corrects et la valeur présélectionnée. La **liaison de données** n’est pas prise en charge pour les champs de liste déroulante. Pour plus d’informations, voir [Configurer les options de liste déroulante pour l’interface utilisateur associée](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md).
 
@@ -226,7 +229,7 @@ L’agent de développement se développe pour gérer les questions liées à Cl
 
 #### Améliorations apportées au travail de l’agent de dépannage du pipeline {#devagent-pipeline-troubleshooting}
 
-La [&#x200B; tâche de dépannage du pipeline de l’agent de développement](/help/ai-in-aem/agents/brand-experience/development/development.md#cloud-manager-pipeline-troubleshooting) aide les développeurs à diagnostiquer et à résoudre les problèmes liés aux déploiements d’AEM as a Cloud Service. Les nouvelles fonctionnalités incluent :
+La [ tâche de dépannage du pipeline de l’agent de développement](/help/ai-in-aem/agents/brand-experience/development/development.md#cloud-manager-pipeline-troubleshooting) aide les développeurs à diagnostiquer et à résoudre les problèmes liés aux déploiements d’AEM as a Cloud Service. Les nouvelles fonctionnalités incluent :
 
 * Prise en charge du pipeline de configuration de niveau web - En plus de la prise en charge des pipelines de pile complète (déploiement et qualité du code), l’agent de développement prend désormais en charge la résolution des problèmes liés au **pipeline de configuration de niveau web**
 
@@ -234,8 +237,7 @@ La [&#x200B; tâche de dépannage du pipeline de l’agent de développement](/h
 
 #### Gérer les heures calmes et mettre à jour les périodes libres avec l’assistant AI {#quiet-hours-ai}
 
-Vous pouvez désormais afficher, créer et modifier des [heures creuses et mettre à jour les périodes libres](/help/ai-in-aem/agents/brand-experience/development/development.md#control-updates-job) directement via l’assistant AEM AI.
-L’avantage clé est la réduction des erreurs de planification. Lorsque vous effectuez une demande, l’assistant vous guide tout au long des étapes possibles et signale les limites qui s’appliquent, telles que la limite de trois périodes, l’intervalle obligatoire d’une semaine entre les périodes et les fenêtres d’exclusion de la maintenance planifiée que vous ne pouvez pas planifier. Ainsi, au lieu de découvrir une contrainte après une configuration ayant échoué, les propriétaires d’entreprise et les responsables de déploiement sont dirigés vers un planning valide dans la même conversation. Cela permet de protéger les fenêtres d’activité critiques contre les mises à jour de maintenance automatique tout en réduisant les allers-retours et les erreurs de configuration.
+Vous pouvez désormais afficher, créer et modifier des [heures creuses et mettre à jour les périodes libres](/help/ai-in-aem/agents/brand-experience/development/development.md#control-updates-job) directement via l’assistant AEM AI.L’avantage clé est la réduction des erreurs de planification. Lorsque vous effectuez une demande, l’assistant vous guide tout au long des étapes possibles et signale les limites qui s’appliquent, telles que la limite de trois périodes, l’intervalle obligatoire d’une semaine entre les périodes et les fenêtres d’exclusion de la maintenance planifiée que vous ne pouvez pas planifier. Ainsi, au lieu de découvrir une contrainte après une configuration ayant échoué, les propriétaires d’entreprise et les responsables de déploiement sont dirigés vers un planning valide dans la même conversation. Cela permet de protéger les fenêtres d’activité critiques contre les mises à jour de maintenance automatique tout en réduisant les allers-retours et les erreurs de configuration.
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Avis importants {#foundation-notices}
 
@@ -284,9 +286,9 @@ Le serveur MCP local Dispatcher permet aux outils d’IA de valider la configura
 
 Java 25 est la prochaine version d’assistance à long terme (LTS) après Java 21, offrant des améliorations en termes de performances, de productivité des développeurs et de sécurité :
 
-&#x200B;- **Performances** : la réduction de l’encombrement de la mémoire, une récupération de l’espace mémoire plus efficace et un préchauffage JVM plus rapide bénéficient aux déploiements natifs dans le cloud.
-&#x200B;- **Productivité du développeur** — Une initialisation plus épurée de l’objet, une correspondance plus expressive des modèles et une gestion simplifiée des tâches simultanées réduisent la complexité et améliorent la clarté du code.
-&#x200B;- **Sécurité** — API de dérivation de clé cryptographique modernisée pour simplifier les workflows de sécurité courants.
+- **Performances** : la réduction de l’encombrement de la mémoire, une récupération de l’espace mémoire plus efficace et un préchauffage JVM plus rapide bénéficient aux déploiements natifs dans le cloud.
+- **Productivité du développeur** — Une initialisation plus épurée de l’objet, une correspondance plus expressive des modèles et une gestion simplifiée des tâches simultanées réduisent la complexité et améliorent la clarté du code.
+- **Sécurité** — API de dérivation de clé cryptographique modernisée pour simplifier les workflows de sécurité courants.
 
 Pour aider les entreprises à planifier les tests et la validation avant la mise à niveau de l’exécution Java 25 nécessaire, Adobe fournit les dates cibles suivantes. Toutes les mises à jour de cette chronologie seront communiquées via les notes de mise à jour.
 
@@ -351,7 +353,7 @@ Les contrôles pris en charge sont les suivants :
 * les écouteurs de modification de ressource de la réplication.
 * Gestion des événements JCR ou OSGi
 
-Cette fonctionnalité est en version bêta. Faites un essai et partagez vos commentaires avec l’équipe sur [&#128279;](mailto:aemcs-ai-ide-tools-feedback@adobe.com).
+Cette fonctionnalité est en version bêta. Faites un essai et partagez vos commentaires avec l’équipe sur [](mailto:aemcs-ai-ide-tools-feedback@adobe.com).
 
 #### Authentification Edge pour Edge Delivery Services (programme Beta) {#edge-authentication}
 
@@ -365,21 +367,18 @@ AEM as a Cloud Service prend désormais en charge l’exportation de télémétr
 
 Utilisez cette intégration pour :
 
-&#x200B;- Enquête sur les requêtes lentes ou en échec
-&#x200B;- Suivre l’intégrité de la JVM et l’utilisation des ressources au fil du temps
-&#x200B;- Créer des tableaux de bord et des alertes pour votre niveau AEM
-&#x200B;- Mise en relation du comportement d’AEM avec d’autres services lors d’incidents
+- Enquête sur les requêtes lentes ou en échec
+- Suivre l’intégrité de la JVM et l’utilisation des ressources au fil du temps
+- Créer des tableaux de bord et des alertes pour votre niveau AEM
+- Mise en relation du comportement d’AEM avec d’autres services lors d’incidents
 
-Pour rejoindre la version alpha, envoyez un e-mail à l’adresse [&#128279;](mailto:aemcs-apm-beta@adobe.com) pour décrire votre cas d’utilisation.
+Pour rejoindre la version alpha, envoyez un e-mail à l’adresse [](mailto:aemcs-apm-beta@adobe.com) pour décrire votre cas d’utilisation.
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Beta Fonctionnalités {#assets-beta-program-features}
 
 #### Extensibilité de l’interface utilisateur pour la vue Assets {#ui-extensibility-assets-view}
 
-La vue Assets prend en charge l’extensibilité de l’interface utilisateur, une fonctionnalité réservée aux développeurs qui permet aux clients de personnaliser l’expérience prête à l’emploi pour répondre à leurs besoins spécifiques.
-Les clients peuvent tirer parti des points d’extension stables existants en suivant la documentation destinée aux développeurs d’Adobe pour créer et déployer des extensions avec un effort minimal. Pour les cas d’utilisation où un point d’extension requis n’est pas encore disponible, Adobe travaille directement avec les clients pour explorer les exigences et évaluer la faisabilité technique de la diffusion de nouvelles API d’extensibilité adaptées à leurs besoins, et peut fournir de nouvelles API telles que les **versions de Beta**.
-En outre, Adobe a développé un outil de génération d’extensions optimisé par **GenAI** actuellement disponible dans une phase d’adoption précoce interne. Cet outil peut accélérer considérablement le temps de développement d’extensions. Les clients participant à ce programme bêta auront accès à l’outil et sont encouragés à partager leurs commentaires pour aider à façonner son évolution.
-Pour participer ou en savoir plus, envoyez un e-mail à `GRP-ASSETSVIEWUIEXTENSIBILITY@adobe.com`.
+La vue Assets prend en charge l’extensibilité de l’interface utilisateur, une fonctionnalité réservée aux développeurs qui permet aux clients de personnaliser l’expérience prête à l’emploi pour répondre à leurs besoins spécifiques.Les clients peuvent tirer parti des points d’extension stables existants en suivant la documentation destinée aux développeurs d’Adobe pour créer et déployer des extensions avec un effort minimal. Pour les cas d’utilisation où un point d’extension requis n’est pas encore disponible, Adobe travaille directement avec les clients pour explorer les exigences et évaluer la faisabilité technique de la diffusion de nouvelles API d’extensibilité adaptées à leurs besoins, et peut fournir de nouvelles API telles que les **versions de Beta**.En outre, Adobe a développé un outil de génération d’extensions optimisé par **GenAI** actuellement disponible dans une phase d’adoption précoce interne. Cet outil peut accélérer considérablement le temps de développement d’extensions. Les clients participant à ce programme bêta auront accès à l’outil et sont encouragés à partager leurs commentaires pour aider à façonner son évolution.Pour participer ou en savoir plus, envoyez un e-mail à `GRP-ASSETSVIEWUIEXTENSIBILITY@adobe.com`.
 
 #### Métadonnées basées sur la marque (BAM) {#brand-aware-metadata}
 
