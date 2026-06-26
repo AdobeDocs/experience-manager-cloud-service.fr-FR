@@ -86,11 +86,11 @@ Voir [Programmes bêta AEM Foundation](#foundation-early-adopter).
 
 ### Cloud Manager (programmes Beta) {#cloud-manager-beta-programs}
 
-Voir [Programmes bêta ](/help/implementing/cloud-manager/release-notes/current.md).
+Voir [Programmes bêta &#x200B;](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### AEM Assets (programmes Beta) {#aem-assets-beta-programs}
 
-Voir [Programmes bêta ](#assets-beta-program-features).
+Voir [Programmes bêta &#x200B;](#assets-beta-program-features).
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -175,9 +175,9 @@ Dynamic Media avec des fonctionnalités OpenAPI permet désormais de charger des
 
 * **Modèles et fragments de document** : créez des modèles réutilisables et des blocs de contenu modulaires (en-têtes, pieds de page, clauses de non-responsabilité) pour une cohérence et une efficacité optimales dans plusieurs communications. Pour plus d’informations, voir [Créer un modèle](/help/forms/interactive-communication/create-interactive-communication-template.md) et [Créer un fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md).
 
-* **Verrouillage de modèle** : verrouillez le contenu et les éléments de disposition dans les modèles pour maintenir l’intégrité de la marque et empêcher toute modification non autorisée. Pour plus d’informations, voir [ Verrouillage de modèle ](/help/forms/interactive-communication/enable-template-lock.md).
+* **Verrouillage de modèle** : verrouillez le contenu et les éléments de disposition dans les modèles pour maintenir l’intégrité de la marque et empêcher toute modification non autorisée. Pour plus d’informations, voir [&#x200B; Verrouillage de modèle &#x200B;](/help/forms/interactive-communication/enable-template-lock.md).
 
-* **Aperçu PDF** : prévisualisez une communication interactive sans données, sans fichiers JSON locaux ou sans modèles de données pour des tests flexibles pilotés par les données. Pour plus d&#39;informations, voir Aperçu de [](/help/forms/interactive-communication/generate-pdf-preview.md).
+* **Aperçu PDF** : prévisualisez une communication interactive sans données, sans fichiers JSON locaux ou sans modèles de données pour des tests flexibles pilotés par les données. Pour plus d&#39;informations, voir Aperçu de [&#128279;](/help/forms/interactive-communication/generate-pdf-preview.md).
 
 * **Polices personnalisées** : incorporez des polices personnalisées ou approuvées par l’organisation pour garantir un rendu PDF cohérent de la marque sur tous les appareils. Pour plus d’informations, voir [Ajouter des polices personnalisées](/help/forms/interactive-communication/add-custom-fonts.md).
 
@@ -199,7 +199,7 @@ Dynamic Media avec des fonctionnalités OpenAPI permet désormais de charger des
 
 * **Fusion et division des cellules de tableau** : l’éditeur de communication interactive prend désormais en charge la fusion de cellules de tableau adjacentes et le fractionnement des cellules fusionnées en colonnes individuelles, ce qui permet d’étendre les en-têtes, les lignes de résumé et des dispositions de tableau plus flexibles. Pour plus d&#39;informations, voir [Fusionner et fractionner des cellules de tableau](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md).
 
-* **Déplacer un composant vers la page de Principal** : vous pouvez désormais déplacer un composant d’une page de conception vers le gabarit de page en une seule action afin qu’il apparaisse de manière cohérente sur chaque page d’une communication interactive sans le recréer. Pour plus d’informations, voir [Déplacer un composant vers la page de Principal ](/help/forms/interactive-communication/howto/move-component-to-master-page.md).
+* **Déplacer un composant vers la page de Principal** : vous pouvez désormais déplacer un composant d’une page de conception vers le gabarit de page en une seule action afin qu’il apparaisse de manière cohérente sur chaque page d’une communication interactive sans le recréer. Pour plus d’informations, voir [Déplacer un composant vers la page de Principal &#x200B;](/help/forms/interactive-communication/howto/move-component-to-master-page.md).
 
 * **Configurer les options de liste déroulante pour l’IU associée** : les champs de liste déroulante de l’IU associée utilisent désormais un modèle **Liaison d’options**. Les auteurs configurent **Liaison à partir des données** pour les listes d’options dynamiques ou les options statiques manuelles afin que les associés voient les choix corrects et la valeur présélectionnée. La **liaison de données** n’est pas prise en charge pour les champs de liste déroulante. Pour plus d’informations, voir [Configurer les options de liste déroulante pour l’interface utilisateur associée](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md).
 
@@ -229,7 +229,7 @@ L’agent de développement se développe pour gérer les questions liées à Cl
 
 #### Améliorations apportées au travail de l’agent de dépannage du pipeline {#devagent-pipeline-troubleshooting}
 
-La [ tâche de dépannage du pipeline de l’agent de développement](/help/ai-in-aem/agents/brand-experience/development/development.md#cloud-manager-pipeline-troubleshooting) aide les développeurs à diagnostiquer et à résoudre les problèmes liés aux déploiements d’AEM as a Cloud Service. Les nouvelles fonctionnalités incluent :
+La [&#x200B; tâche de dépannage du pipeline de l’agent de développement](/help/ai-in-aem/agents/brand-experience/development/development.md#cloud-manager-pipeline-troubleshooting) aide les développeurs à diagnostiquer et à résoudre les problèmes liés aux déploiements d’AEM as a Cloud Service. Les nouvelles fonctionnalités incluent :
 
 * Prise en charge du pipeline de configuration de niveau web - En plus de la prise en charge des pipelines de pile complète (déploiement et qualité du code), l’agent de développement prend désormais en charge la résolution des problèmes liés au **pipeline de configuration de niveau web**
 
@@ -286,9 +286,9 @@ Le serveur MCP local Dispatcher permet aux outils d’IA de valider la configura
 
 Java 25 est la prochaine version d’assistance à long terme (LTS) après Java 21, offrant des améliorations en termes de performances, de productivité des développeurs et de sécurité :
 
-- **Performances** : la réduction de l’encombrement de la mémoire, une récupération de l’espace mémoire plus efficace et un préchauffage JVM plus rapide bénéficient aux déploiements natifs dans le cloud.
-- **Productivité du développeur** — Une initialisation plus épurée de l’objet, une correspondance plus expressive des modèles et une gestion simplifiée des tâches simultanées réduisent la complexité et améliorent la clarté du code.
-- **Sécurité** — API de dérivation de clé cryptographique modernisée pour simplifier les workflows de sécurité courants.
+&#x200B;- **Performances** : la réduction de l’encombrement de la mémoire, une récupération de l’espace mémoire plus efficace et un préchauffage JVM plus rapide bénéficient aux déploiements natifs dans le cloud.
+&#x200B;- **Productivité du développeur** — Une initialisation plus épurée de l’objet, une correspondance plus expressive des modèles et une gestion simplifiée des tâches simultanées réduisent la complexité et améliorent la clarté du code.
+&#x200B;- **Sécurité** — API de dérivation de clé cryptographique modernisée pour simplifier les workflows de sécurité courants.
 
 Pour aider les entreprises à planifier les tests et la validation avant la mise à niveau de l’exécution Java 25 nécessaire, Adobe fournit les dates cibles suivantes. Toutes les mises à jour de cette chronologie seront communiquées via les notes de mise à jour.
 
@@ -353,7 +353,7 @@ Les contrôles pris en charge sont les suivants :
 * les écouteurs de modification de ressource de la réplication.
 * Gestion des événements JCR ou OSGi
 
-Cette fonctionnalité est en version bêta. Faites un essai et partagez vos commentaires avec l’équipe sur [](mailto:aemcs-ai-ide-tools-feedback@adobe.com).
+Cette fonctionnalité est en version bêta. Faites un essai et partagez vos commentaires avec l’équipe sur [&#128279;](mailto:aemcs-ai-ide-tools-feedback@adobe.com).
 
 #### Authentification Edge pour Edge Delivery Services (programme Beta) {#edge-authentication}
 
@@ -367,12 +367,12 @@ AEM as a Cloud Service prend désormais en charge l’exportation de télémétr
 
 Utilisez cette intégration pour :
 
-- Enquête sur les requêtes lentes ou en échec
-- Suivre l’intégrité de la JVM et l’utilisation des ressources au fil du temps
-- Créer des tableaux de bord et des alertes pour votre niveau AEM
-- Mise en relation du comportement d’AEM avec d’autres services lors d’incidents
+&#x200B;- Enquête sur les requêtes lentes ou en échec
+&#x200B;- Suivre l’intégrité de la JVM et l’utilisation des ressources au fil du temps
+&#x200B;- Créer des tableaux de bord et des alertes pour votre niveau AEM
+&#x200B;- Mise en relation du comportement d’AEM avec d’autres services lors d’incidents
 
-Pour rejoindre la version alpha, envoyez un e-mail à l’adresse [](mailto:aemcs-apm-beta@adobe.com) pour décrire votre cas d’utilisation.
+Pour rejoindre la version alpha, envoyez un e-mail à l’adresse [&#128279;](mailto:aemcs-apm-beta@adobe.com) pour décrire votre cas d’utilisation.
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Beta Fonctionnalités {#assets-beta-program-features}
 
