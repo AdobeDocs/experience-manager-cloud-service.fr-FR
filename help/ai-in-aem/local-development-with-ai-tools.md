@@ -4,7 +4,7 @@ description: Découvrez comment configurer des outils de codage d’IA avec le c
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: eac2d89b3cebc134b40fc0e537cf66c78fa1db50
+source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
 workflow-type: tm+mt
 source-wordcount: '2118'
 ht-degree: 0%
@@ -329,3 +329,4 @@ D’autres IDE peuvent être configurés de la même manière. Le `docs/Dispatch
 | `tail_logs` | Consigne en détail les journaux d’exécution Dispatcher et HTTPD pertinents |
 
 La surface MCP n’expose intentionnellement que ces sept outils ; les invites et les ressources restent dans la couche de compétences. La documentation de référence complète est disponible en `docs/DispatcherMCP.md` dans le SDK Dispatcher extrait.
+

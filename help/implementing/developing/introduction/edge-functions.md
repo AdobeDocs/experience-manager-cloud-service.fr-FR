@@ -4,7 +4,7 @@ description: Découvrez comment exécuter JavaScript au niveau de la couche CDN 
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: a42d2318380061c0ce9f894145e1812d0ec1fe1f
+source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 1%
@@ -432,3 +432,4 @@ logger.log(JSON.stringify({
 >
 >Les journaux CDN, qui incluent les entrées du journal des fonctions AEM Edge, peuvent être téléchargés à partir de Cloud Manager pour les environnements Java-stack, mais pas pour les sites Edge Delivery.
 >
+

@@ -5,7 +5,7 @@ exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 3261003447e54a2af4304d61c56068b7cab5986c
+source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 67%
@@ -131,3 +131,4 @@ Un cas particulier peut se produire lorsque le module de contenu « all » con
 >
 >* Cette optimisation n’a aucune incidence sur les packages déployés dans AEM.
 >* La correspondance entre les packages de contenu incorporés et les packages de contenu ignorés repose sur les noms de fichier. Cette optimisation ne peut pas se produire si plusieurs packages ignorés partagent le même nom de fichier ou si le nom du fichier change lors de l’incorporation.
+

@@ -5,9 +5,9 @@ exl-id: 167da985-7f19-45b3-90a3-884817907da2
 solution: Experience Manager
 feature: Security, Developing
 role: Admin, Developer
-source-git-commit: ff567c4f328bf0ab10ee9e93ad850a597536cdbf
+source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
-source-wordcount: '1258'
+source-wordcount: '1257'
 ht-degree: 22%
 
 ---
@@ -199,4 +199,5 @@ Oui. Un utilisateur peut être affecté à plusieurs profils, y compris des prof
 
 ### Que se passe-t-il si un utilisateur est autorisé à modifier un environnement/pipeline mais n’a pas accès à un programme contenant l’environnement/le pipeline ?
 
-L’utilisateur ne peut pas accéder à l’environnement ou au pipeline s’il ne dispose pas des autorisations **accès au programme** associées à l’environnement ou au pipeline.
+L’utilisateur ne peut pas accéder à l’environnement ou au pipeline s’il ne dispose pas des autorisations **accès au programme** contenant l’environnement ou le pipeline.
+

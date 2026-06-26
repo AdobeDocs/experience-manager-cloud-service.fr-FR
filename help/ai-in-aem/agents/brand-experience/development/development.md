@@ -5,7 +5,7 @@ feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Developer
 exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
 nudge: please
-source-git-commit: 4b652e866e4b009e186f1379f2ae451061182df8
+source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
 workflow-type: tm+mt
 source-wordcount: '1547'
 ht-degree: 8%
@@ -195,3 +195,4 @@ Pour les autres types de pipeline et étapes, déboguez les échecs en télécha
 Déboguer les problèmes liés à la réplication, tels que les files d’attente bloquées.
 
 Veuillez envoyer un e-mail à [&#128279;](mailto:aem-devagent@adobe.com) pour accéder au programme bêta.
+

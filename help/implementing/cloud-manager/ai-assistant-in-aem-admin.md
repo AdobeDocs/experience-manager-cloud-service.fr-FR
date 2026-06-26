@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Authoring, AI Assistant, AI Tools
 role: Admin, Developer, User
 exl-id: cc80a36b-2fd2-41cc-8cb7-6c25e8e89a4e
-source-git-commit: c75fb9425b72dea9130ed24cc2a098b56f23d13d
+source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
 source-wordcount: '1197'
 ht-degree: 83%
@@ -200,3 +200,4 @@ Demandez à une personne du groupe affecté d’effectuer les opérations suivan
 * [Assistant IA dans AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
 * [Contrôle d’accès dans Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/ui/overview)
 * [Autorisations personnalisées de Cloud Manager](/help/implementing/cloud-manager/custom-permissions.md)
+

@@ -4,7 +4,7 @@ description: Voici les notes de mise à jour de la version 2026.06.25 de l’éd
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: c5aec0d045162327bad3d0d03b22386bf2effe6e
+source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 13%
@@ -36,3 +36,4 @@ Voici les notes de mise à jour de la version du 25 juin 2026 de l’éditeur un
 
 * De nombreux boutons portent désormais correctement des noms accessibles.
 * Correction d’un problème lié à la conservation de certains fragments de contenu après les avoir sélectionnés à l’aide d’un sélecteur.
+

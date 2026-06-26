@@ -5,7 +5,7 @@ exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Developer
 nudge: please
-source-git-commit: 4ba5d595f4043cb559343efded11907ce55971c1
+source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
 workflow-type: tm+mt
 source-wordcount: '6002'
 ht-degree: 22%
@@ -1276,3 +1276,4 @@ Le contexte peut toujours être utilisé. Un avertissement d’obsolescence s’
 ##### Utilisez également un autre nom de contexte pour le module externe Cloud Manager {#use-any-other-context-name-also-for-the-cloud-manager-plug-in}
 
 Les plug-ins Cloud Manager proposent un paramètre permettant de définir un contexte à utiliser. Il ne prend pas encore en charge la configuration du contexte par défaut IMS. Pour ce faire, configurez le plug-in RDE à l’aide de [l’exemple pour configurer un contexte local](/help/implementing/developing/introduction/rapid-development-environments.md#install-the-rde-command-line-tools) et indiquez au plug-in Cloud Manager d’utiliser des `myContext` comme `--imsContextName=myContext` dans chaque appel à celui-ci.
+

@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 5467a311-727d-4f67-ba43-4b6548431061
-source-git-commit: 8c5c34018aee84a1ec54d3f1d0bc77b8c660869c
+source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 11%
@@ -160,3 +160,4 @@ Vous trouverez ci-dessous une liste complète des modèles qui s’écartent des
 | Structure du référentiel | Modèles liés à l’organisation et à la structure du référentiel JCR. |
 | Dépendances | Modèles liés aux dépendances de code et à la gestion des versions. |
 | Statistiques | Modèles qui représentent des statistiques et des mesures d’utilisation. |
+

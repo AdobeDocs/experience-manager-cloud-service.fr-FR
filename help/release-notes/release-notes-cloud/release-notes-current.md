@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 nudge: please
-source-git-commit: 494148e276bec785513ba9528e70cb0d706bcc45
+source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
 workflow-type: tm+mt
 source-wordcount: '3035'
 ht-degree: 21%
@@ -367,3 +367,4 @@ Vous trouverez une liste complète des versions de la génération de variations
 ## Notes de mise à jour dʼExperience Cloud {#experience-cloud}
 
 Vous trouverez des informations sur les versions d’autres applications Experience Cloud [ici](https://experienceleague.adobe.com/fr/docs/release-notes/experience-cloud/current).
+

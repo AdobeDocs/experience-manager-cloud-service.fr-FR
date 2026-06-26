@@ -4,7 +4,7 @@ description: Notes de mise à jour d’Adobe Experience Manager (AEM) as a Clo
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
-source-git-commit: 38073a8649930e679bf44c02b7efa0f3bcfd6b8a
+source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
 workflow-type: tm+mt
 source-wordcount: '678'
 ht-degree: 99%
@@ -91,3 +91,4 @@ Adobe Experience League propose de nombreuses ressources pour apprendre à uti
 * [Nouveautés](what-is-new.md)
 * [Modifications notables](aem-cloud-changes.md)
 * [Fonctionnalités obsolètes et supprimées](deprecated-removed-features.md)
+

@@ -5,7 +5,7 @@ exl-id: 03932415-a029-4703-b44a-f86a87edb328
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 884f991bbc067b8c2d628600c18a89e5950df17c
+source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 9%
@@ -68,4 +68,5 @@ Les rapports SLA fournissent des informations sur les performances de votre envi
 ## Environnements de prévisualisation {#preview}
 
 L’environnement de prévisualisation est conçu comme un outil permettant aux personnes en charge de la création de contenu de réviser le contenu avant sa publication. En raison de cette fonctionnalité, les environnements de prévisualisation ne sont pas conçus avec une haute disponibilité et ne disposent pas d’un SLA associé.
+
 
