@@ -41,7 +41,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the May 2026 Release Overview video for a summary of the features added in the 2026.5.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3491490/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3491492/?captions=fre_fr&quality=12)
 
 -->
 
