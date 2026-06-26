@@ -6,10 +6,10 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 nudge: please
-source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
+source-git-commit: 50a64c8968182ac1fb5a57082da991c9efd4dc46
 workflow-type: tm+mt
-source-wordcount: '3035'
-ht-degree: 21%
+source-wordcount: '3855'
+ht-degree: 17%
 
 ---
 
@@ -158,20 +158,67 @@ Dynamic Media avec des fonctionnalités OpenAPI permet désormais de charger des
 
 ### Nouvelles fonctionnalités d’AEM Forms
 
-* **Prise en charge du contrôle de version dans Forms Manager**
-Forms Manager [prend désormais en charge le contrôle de version pour les Forms adaptatifs (composants principaux et composants de base)](/help/forms/manage-form-versions-forms-manager.md), les fragments de formulaire, les thèmes, les modèles XDP et les ressources binaires. Créez des versions, affichez l’historique complet des versions et restaurez les états précédents de vos ressources de formulaire directement à partir de la console Forms et documents.
+#### Éditeur de communication interactive
 
-* **Remplacer la configuration cloud reCAPTCHA avec OSGi** 
-Les identifiants de projet d’entreprise reCAPTCHA, les clés de site et les secrets que vous conservez avec vos fichiers sources peuvent être résolus sur différentes valeurs dans chaque environnement Cloud Service après [ajout du remplacement de la configuration tenant compte du contexte et déploiement via Cloud Manager](/help/forms/captcha-adaptive-forms.md#override-recaptcha-osgi).
+L’éditeur de communication interactive et l’interface utilisateur associée incluent de nouvelles fonctionnalités de collaboration, de mise en page et de modification des associés pour aider les auteurs à concevoir plus rapidement et permettre aux associés d’établir des communications client avec plus de précision.
 
-* **Authentification basée sur les certificats** 
-Les Forms adaptatives qui envoient une liste Microsoft SharePoint prennent désormais en charge l’[authentification par certificat](/help/forms/connect-forms-to-sharepoint-list.md#certificate-based-authentication) ainsi que l’authentification par URL OAuth. Pour la connexion avec certificat, enregistrez un alias de certificat et les détails du client dans AEM et Microsoft Azure.
+L’éditeur de communication interactive (IC) est désormais disponible dans AEM Forms as a Cloud Service. Il s’agit d’une solution de navigateur permettant la création, la gestion et la diffusion de correspondances interactives pilotées par les données, telles que la correspondance commerciale, les documents, les déclarations, les avis de prestations, les e-mails marketing, les factures et les kits de bienvenue.
 
-* **Améliorations de l’éditeur de règles**
+![Éditeur de communication interactive](/help/forms/assets/ic-editor.png)
 
-   * L’éditeur de règles de Forms adaptatif prend désormais en charge la grammaire simplifiée pour les règles [Distribuer l’événement et Activer l’événement déclencheur) pour les déclencheurs prêts à l’emploi et pour les événements personnalisés](/help/forms/rule-editor-enhancements-use-cases.md#simplified-grammar-for-ootb-and-custom-events) afin que les auteurs ne soient pas limités à la grammaire sur les déclencheurs personnalisés uniquement.
-   * Lorsque les règles sur les Forms adaptatives basées sur les composants principaux incluent désormais le composant [Pièce jointe avec d’autres conditions à l’aide de la logique AND ou OR](/help/forms/rule-editor-enhancements-use-cases.md#combined-when-conditions-with-the-file-attachment-component), la règle exécute ses actions uniquement lorsque l’état de la pièce jointe et les autres vérifications sont tous évalués comme prévu.
+* **Éditeur basé sur le cloud** : contrairement à AEM Forms Desktop Designer qui ne peut être installé que sur des machines Windows, l’éditeur de communications interactives s’exécute dans n’importe quel navigateur moderne sans qu’une installation ne soit nécessaire. Cette approche basée sur le cloud élimine les problèmes d’installation, offre une accessibilité sur plusieurs plateformes et permet la collaboration depuis n’importe quel emplacement avec un accès Internet. Pour plus d’informations, voir [Prise en main de l’éditeur IC](/help/forms/interactive-communication/getting-started.md).
 
+* **Composants et propriétés** : créez des communications à l’aide d’une bibliothèque de composants par glisser-déposer — champs de texte, tableaux, images, codes à barres, sous-formulaires, etc. Configurez la disposition, la typographie, les marges et l’apparence via le panneau Propriétés. Pour plus d’informations, voir [Présentation de l’éditeur de communication interactive](/help/forms/interactive-communication/introduction.md).
+
+* **Liaison de données** : connectez les composants aux modèles de données de formulaire (FDM) à l’aide du mappage visuel pour générer une sortie personnalisée basée sur les données. Pour plus d’informations, voir [Liaison de données dans l’éditeur de communication interactive](/help/forms/interactive-communication/configure-data-binding.md).
+
+* **Éditeur de règles** : créez des actions dynamiques basées sur les données directement dans vos documents à l’aide d’une interface intuitive de type pointer-cliquer. Définissez facilement une logique conditionnelle, automatisez les workflows et personnalisez le contenu sans écrire de code. Pour plus d’informations, voir [Création de règles dans l’éditeur de communication interactive](/help/forms/interactive-communication/use-the-rule-editor.md).
+
+* **Modèles et fragments de document** : créez des modèles réutilisables et des blocs de contenu modulaires (en-têtes, pieds de page, clauses de non-responsabilité) pour une cohérence et une efficacité optimales dans plusieurs communications. Pour plus d’informations, voir [Créer un modèle](/help/forms/interactive-communication/create-interactive-communication-template.md) et [Créer un fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md).
+
+* **Verrouillage de modèle** : verrouillez le contenu et les éléments de disposition dans les modèles pour maintenir l’intégrité de la marque et empêcher toute modification non autorisée. Pour plus d’informations, voir [&#x200B; Verrouillage de modèle &#x200B;](/help/forms/interactive-communication/enable-template-lock.md).
+
+* **Aperçu PDF** : prévisualisez une communication interactive sans données, sans fichiers JSON locaux ou sans modèles de données pour des tests flexibles pilotés par les données. Pour plus d&#39;informations, voir Aperçu de [&#128279;](/help/forms/interactive-communication/generate-pdf-preview.md).
+
+* **Polices personnalisées** : incorporez des polices personnalisées ou approuvées par l’organisation pour garantir un rendu PDF cohérent de la marque sur tous les appareils. Pour plus d’informations, voir [Ajouter des polices personnalisées](/help/forms/interactive-communication/add-custom-fonts.md).
+
+* **Importer et exporter** : migrez et réutilisez facilement la communication interactive avec ses fragments et modèles de données dans les environnements. Pour plus d’informations, voir [Importer et exporter](/help/forms/interactive-communication/import-and-export-the-interactive-communication.md).
+
+* **Débordement de contenu** : l’option « Autoriser les sauts de page dans le contenu » pour les dispositions fluides permet une modification fluide de plusieurs pages et une meilleure gestion du texte pour les documents complexes. Pour plus d’informations, voir [Gestion des débordements de contenu](/help/forms/interactive-communication/handle-content-overflow.md).
+
+* **Modification de fichiers XDP** : modifiez les fichiers XDP dans un navigateur au lieu de Forms Designer qui s’exécute uniquement sur l’ordinateur de bureau Microsoft Windows. Pour plus d’informations, voir [Prise en charge de l’édition XDP](/help/forms/interactive-communication/support-xdp-editing.md).
+
+* **Interface utilisateur d’association** : interface d’exécution simplifiée permettant aux collaborateurs en contact avec la clientèle de saisir des données et de générer des communications personnalisées en temps réel. Appelez l’interface utilisateur associée directement sur les instances de publication pour simplifier l’intégration et accélérer le déploiement dans les environnements. Pour plus d’informations, consultez [Présentation de l’interface utilisateur associée](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md), [Activation et configuration de l’interface utilisateur associée](/help/forms/interactive-communication/enable-configure-associate-ui.md) et [Intégration de l’interface utilisateur associée](/help/forms/interactive-communication/invoke-associate-ui.md).
+
+* **Numérotation dynamique de page** : affichez automatiquement la mention « Numéro de page de ## » sur les gabarits de page pour une pagination claire et cohérente dans les documents de plusieurs pages. Pour plus d’informations, voir [Numérotation dynamique de page](/help/forms/interactive-communication/implement-dynamic-page-numbering.md).
+
+* **Contrôle de version et commentaires dans l’éditeur de communication interactive** : l’éditeur de communication interactive prend désormais en charge le contrôle de version et les commentaires afin que les auteurs puissent enregistrer des versions étiquetées, capturer les commentaires des réviseurs, revenir à des états antérieurs et gérer un journal d’audit tout au long du cycle de vie du contenu. Pour plus d’informations, voir [Contrôle de version et commentaires dans l’éditeur de communication interactive](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md).
+
+* **Réviser et annoter une communication interactive** : les réviseurs et réviseuses peuvent désormais annoter des communications interactives dans une vue dédiée en lecture seule, épingler des commentaires à des composants spécifiques sur la zone de travail et partager leurs commentaires à un seul endroit sans modifier la conception. Les auteurs peuvent suivre et résoudre les annotations directement dans l’éditeur. Pour plus d’informations, voir [Vérifier et annoter une communication interactive](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md).
+
+* **Comparer les versions de la communication interactive** : vous pouvez désormais comparer côte à côte deux versions enregistrées d’une communication interactive en tant qu’aperçus PDF pour passer en revue les modifications de disposition et de contenu statique avant la publication. Pour plus d’informations, voir [Comparer les versions de la communication interactive](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md).
+
+* **Fusion et division des cellules de tableau** : l’éditeur de communication interactive prend désormais en charge la fusion de cellules de tableau adjacentes et le fractionnement des cellules fusionnées en colonnes individuelles, ce qui permet d’étendre les en-têtes, les lignes de résumé et des dispositions de tableau plus flexibles. Pour plus d&#39;informations, voir [Fusionner et fractionner des cellules de tableau](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md).
+
+* **Déplacer un composant vers la page de Principal** : vous pouvez désormais déplacer un composant d’une page de conception vers le gabarit de page en une seule action afin qu’il apparaisse de manière cohérente sur chaque page d’une communication interactive sans le recréer. Pour plus d’informations, voir [Déplacer un composant vers la page de Principal &#x200B;](/help/forms/interactive-communication/howto/move-component-to-master-page.md).
+
+* **Configurer les options de liste déroulante pour l’IU associée** : les champs de liste déroulante de l’IU associée utilisent désormais un modèle **Liaison d’options**. Les auteurs configurent **Liaison à partir des données** pour les listes d’options dynamiques ou les options statiques manuelles afin que les associés voient les choix corrects et la valeur présélectionnée. La **liaison de données** n’est pas prise en charge pour les champs de liste déroulante. Pour plus d’informations, voir [Configurer les options de liste déroulante pour l’interface utilisateur associée](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md).
+
+* **Configurer les variables liées et non liées pour l’interface utilisateur associée** : les variables liées et non liées dans les composants **Texte** peuvent désormais être configurées pour l’interface utilisateur associée. Les auteurs choisissent si les associés modifient le bloc de texte entier en ligne dans l’aperçu du document ou saisissent des valeurs pour des variables individuelles dans le panneau de saisie de données. Les noms de variables en double propagent les valeurs sur toutes les occurrences correspondantes dans l’aperçu. Pour plus d’informations, voir [Configurer des variables liées et non liées pour l’interface utilisateur associée](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md).
+
+## Fonctionnalités des premiers utilisateurs
+
+### Document d’enregistrement pour les formulaires incorporés dans AEM Sites
+
+Les auteurs peuvent désormais configurer et générer un document d’enregistrement (PDF d’envoi) pour les composants principaux de Forms adaptatif incorporés dans des pages AEM Sites. Les paramètres de document d’enregistrement, notamment la génération automatique, les modèles XDP personnalisés et le branding, sont disponibles directement à partir du **conteneur de formulaires adaptatifs** dans l’éditeur de page Sites. [En savoir plus](/help/forms/generate-document-of-record-core-components.md#configure-document-of-record-for-forms-embedded-in-aem-sites).
+
+### Modèles XDP personnalisés spécifiques aux paramètres régionaux pour les documents d’enregistrement
+
+Lorsque vous associez un modèle XDP personnalisé pour le document d’enregistrement, vous pouvez fournir des versions spécifiques aux paramètres régionaux dans le même dossier à l’aide de la convention de `basename.<locale>.xdp` (par exemple, `a.xdp` et `a.fr.xdp`). AEM Forms sélectionne automatiquement le modèle correspondant aux paramètres régionaux du formulaire lors de la génération de la PDF d’envoi, avec solution de secours au modèle par défaut. [En savoir plus](/help/forms/generate-document-of-record-core-components.md#locale-specific-custom-xdp-templates-for-document-of-record).
+
+### Expiration du contrat Adobe Sign
+
+Vous pouvez définir la durée pendant laquelle les destinataires doivent terminer la signature en indiquant **Expiration du document (jours)** dans la section **Signature électronique** d’un formulaire adaptatif. La valeur est envoyée à Adobe Sign en tant que `daysUntilSigningDeadline`. Si rien n’est indiqué, l’accord n’expire pas. [En savoir plus](/help/forms/working-with-adobe-sign.md#set-document-expiration-for-an-adobe-sign-agreement).
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
