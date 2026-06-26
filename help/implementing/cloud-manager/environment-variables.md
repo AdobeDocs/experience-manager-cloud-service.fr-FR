@@ -5,9 +5,9 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: a4915aa53902b70b0a09b53381386023638b4072
+source-git-commit: 6869505004f6736f14d840168c29c785542bac28
 workflow-type: tm+mt
-source-wordcount: '1219'
+source-wordcount: '1248'
 ht-degree: 23%
 
 ---
@@ -27,19 +27,19 @@ Les variables d’environnement offrent plusieurs avantages aux utilisateurs d�
 * Ils ne doivent être configurés et configurés qu’une seule fois, et peuvent être mis à jour et supprimés si nécessaire.
 * Leurs valeurs peuvent être mises à jour à tout moment et prennent effet immédiatement sans nécessiter de modifications de code ni de déploiements.
 * Elles peuvent séparer le code de la configuration et supprimer la nécessité d’inclure des informations sensibles dans le contrôle de version.
-* Ils améliorent la sécurité des applications AEM as a Cloud Service car ils existent en dehors de la base de code.
+* Elles améliorent la sécurité des applications AEM as a Cloud Service car elles sont stockées en dehors de la base de code.
 
 Les cas d’utilisation standard des variables d’environnement incluent les suivants :
 
 * la connexion de votre application AEM à différents points d’entrée externes ;
 * Utiliser une référence lors du stockage des mots de passe au lieu de les stocker directement dans la base de code.
-* Il existe plusieurs environnements de développement dans un programme et certaines configurations diffèrent d’un environnement à l’autre.
+* Il existe plusieurs environnements de développement dans un programme et certaines configurations varient d’un environnement à l’autre.
 
 ## Ajouter une variable d’environnement {#add-variables}
 
 Si vous souhaitez ajouter plusieurs variables, Adobe vous recommande d’ajouter la première variable, puis d’utiliser ![icône Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **Ajouter** dans la boîte de dialogue **Configuration de l’environnement** pour ajouter les variables supplémentaires. Cette méthode permet de les ajouter avec une seule mise à jour de l’environnement.
 
-Pour ajouter, mettre à jour ou supprimer des variables d’environnement, vous devez être membre du rôle [Responsable de déploiement](/help/onboarding/cloud-manager-introduction.md#role-based-premissions).
+Pour ajouter, mettre à jour ou supprimer des variables d’environnement, vous devez être membre du rôle [Responsable de déploiement](/help/onboarding/cloud-manager-introduction.md#role-based-permissions).
 
 **Pour ajouter une variable d’environnement, procédez comme suit**
 
@@ -48,8 +48,7 @@ Pour ajouter, mettre à jour ou supprimer des variables d’environnement, vous 
 1. Dans le menu latéral, cliquez sur **Environnements**.
 1. Sur la page **Environnements**, sélectionnez une ligne du tableau contenant l’environnement pour lequel vous souhaitez ajouter une variable d’environnement.
 1. Sur la page de détails de l’environnement, cliquez sur l’onglet **Configuration**.
-1. Cliquez sur ![Ajouter/Mettre à jour - Icône Ajouter un cercle](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Ajouter/Mettre à jour**.
-Si vous ajoutez une variable d’environnement pour la première fois, cliquez sur **Ajouter une configuration** au centre de la page.
+1. Cliquez sur ![Ajouter/Mettre à jour - Icône Ajouter un cercle](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Ajouter/Mettre à jour**.Si vous ajoutez une variable d’environnement pour la première fois, cliquez sur **Ajouter une configuration** au centre de la page.
 
    ![Onglet Configuration](assets/configuration-tab.png)
 
@@ -70,7 +69,7 @@ Si vous ajoutez une variable d’environnement pour la première fois, cliquez s
 
 1. Cliquez sur **Enregistrer**.
 
-   Une double flèche avec le statut **Mise à jour en cours** s’affiche dans le coin supérieur droit du tableau. Une double flèche s’affiche également à gauche de toutes les variables nouvellement ajoutées. Ces statuts indiquent que l’environnement est en cours de mise à jour avec la configuration. Une fois cette opération terminée, la nouvelle variable d’environnement est visible dans le tableau.
+   Un indicateur avec le statut **Mise à jour en cours** s’affiche dans le coin supérieur droit du tableau. Un indicateur s’affiche également à gauche de toutes les variables nouvellement ajoutées. Ces statuts indiquent que l’environnement est en cours de mise à jour avec la configuration. Une fois cette opération terminée, la nouvelle variable d’environnement est visible dans le tableau.
 
 ![Mettre à jour les variables](assets/updating-variables.png)
 
@@ -93,8 +92,7 @@ Si vous souhaitez mettre à jour plusieurs variables, Adobe vous recommande d’
 
    ![Modifier ou supprimer une variable](assets/edit-delete-variable.png)
 
-1. Mettez à jour la valeur de la variable d’environnement selon les besoins.
-Lors de la modification d’un secret, la valeur peut uniquement être mise à jour, mais pas affichée.
+1. Mettez à jour la valeur de la variable d’environnement selon les besoins.Lors de la modification d’un secret, la valeur peut uniquement être mise à jour, mais pas affichée.
 
    ![Modifier la variable](assets/edit-variable.png)
 
@@ -105,7 +103,7 @@ Lors de la modification d’un secret, la valeur peut uniquement être mise à j
 
 1. Cliquez sur **Enregistrer**.
 
-   Une double flèche avec le statut **Mise à jour en cours** s’affiche dans le coin supérieur droit du tableau. Une double flèche s’affiche également à gauche de toutes les variables mises à jour. Ces statuts indiquent que l’environnement est en cours de mise à jour avec la configuration. Une fois l’opération terminée, la variable d’environnement mise à jour est visible dans le tableau.
+   Une double flèche avec le statut **Mise à jour en cours** s’affiche dans le coin supérieur droit du tableau. Un indicateur s’affiche également à gauche de toutes les variables mises à jour. Ces statuts indiquent que l’environnement est en cours de mise à jour avec la configuration. Une fois l’opération terminée, la variable d’environnement mise à jour est visible dans le tableau.
 
 ## Suppression d’une variable d’environnement {#delete-env-variable}
 
