@@ -124,7 +124,7 @@ Vous pouvez diffuser votre fragment visuel dans une page Edge Delivery Service (
 
 Vous pouvez diffuser votre fragment de contenu visuel dans une page AEM à l’aide du composant principal : fragment de contenu.
 
-Lors de la configuration d’un composant **Fragment de contenu** [ sur votre page](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page) :
+Lors de la configuration d’un composant **Fragment de contenu** [&#x200B; sur votre page](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page) :
 
 1. Spécifiez le **fragment de contenu** requis.
 1. Sélectionnez **Visualisation de fragment de contenu**.
