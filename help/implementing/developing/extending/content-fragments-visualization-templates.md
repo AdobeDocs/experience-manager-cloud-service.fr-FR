@@ -3,9 +3,9 @@ title: Création de modèles de visualisation pour les fragments de contenu
 description: Prévisualiser et publier des fragments de contenu avec des modèles de visualisation. Découvrez comment créer et personnaliser des modèles.
 feature: Developing, Content Fragments
 role: Admin, Developer
-source-git-commit: 0fe5e82962b7407d879f937d859d54aa6cb739f3
+source-git-commit: 733e7a8c497fcffdfadd22c2abd3323d35d54e3e
 workflow-type: tm+mt
-source-wordcount: '2083'
+source-wordcount: '2082'
 ht-degree: 3%
 
 ---

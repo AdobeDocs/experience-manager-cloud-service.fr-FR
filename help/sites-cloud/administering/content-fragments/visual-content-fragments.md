@@ -3,9 +3,9 @@ title: Fragments de contenu visuels
 description: Découvrez comment visualiser et publier des fragments de contenu visuel à l’aide de modèles HTML.
 feature: Content Fragments
 role: User, Developer
-source-git-commit: 19931f7cc911376f5096903a2d99d6ff11f928ac
+source-git-commit: e5ba7a502a7633b6616880bcdcc65e99c22de561
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Vous ou votre équipe de développement pouvez [créer et personnaliser vos prop
 
 >[!NOTE]
 >
->Un **modèle générique** est toujours disponible par défaut dans AEM et associé à chaque modèle. Ce modèle permet d’afficher les paires clé/valeur dans du contenu structuré dans un format propre de style tableau afin de prendre en charge les cas d’utilisation d’Assurance de qualité du contenu (AQ).
+>Un **modèle générique** est toujours disponible par défaut dans AEM et est associé à chaque modèle. Ce modèle permet d’afficher les paires clé/valeur dans du contenu structuré dans un format propre de style tableau afin de prendre en charge les cas d’utilisation d’Assurance de qualité du contenu (AQ).
 
 ## Création d’un modèle {#create-a-template}
 
