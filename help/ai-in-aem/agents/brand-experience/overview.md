@@ -58,7 +58,7 @@ La tâche [Créer du contenu](/help/ai-in-aem/agents/brand-experience/experience
 >
 >La tâche de création de contenu est actuellement en disponibilité limitée.
 >
->Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [](mailto:experience-production-agent@adobe.com).
+>Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
 
 ### Tâche de conversion de format en fragments de contenu visuels {#figma-to-visual-content-fragments}
 
