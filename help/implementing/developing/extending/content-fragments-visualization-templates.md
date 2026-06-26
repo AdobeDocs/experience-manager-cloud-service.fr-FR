@@ -3,9 +3,9 @@ title: Création de modèles de visualisation pour les fragments de contenu
 description: Prévisualiser et publier des fragments de contenu avec des modèles de visualisation. Découvrez comment créer et personnaliser des modèles.
 feature: Developing, Content Fragments
 role: Admin, Developer
-source-git-commit: 0fe5e82962b7407d879f937d859d54aa6cb739f3
+source-git-commit: 733e7a8c497fcffdfadd22c2abd3323d35d54e3e
 workflow-type: tm+mt
-source-wordcount: '2083'
+source-wordcount: '2082'
 ht-degree: 3%
 
 ---
@@ -68,7 +68,7 @@ Pour plus d’informations sur l’utilisation de votre modèle dans AEM, voir :
 
 ### Utilisation de l’URL de publication de fragment de contenu visuel {#using-the-visual-content-fragment-publish-url}
 
-Une fois que vous avez créé des fragments de contenu visuel à l’aide du modèle, vous pouvez utiliser l’URL [&#x200B; Publication de vos fragments de contenu visuel](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md).
+Une fois que vous avez créé des fragments de contenu visuel à l’aide du modèle, vous pouvez utiliser l’URL [ Publication de vos fragments de contenu visuel](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md).
 
 ## Handlebars : principes de base (très) {#handlebars-the-very-basics}
 

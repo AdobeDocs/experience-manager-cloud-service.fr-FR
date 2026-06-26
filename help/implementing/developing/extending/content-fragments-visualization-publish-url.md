@@ -3,16 +3,17 @@ title: Fragments de contenu visuels - à diffuser avec l’URL de publication
 description: Utilisez l’URL de publication pour diffuser des fragments de contenu visuel.
 feature: Developing, Content Fragments
 role: Admin, Developer
-source-git-commit: 65d8d29ba13b0c5d8360aad4bc0742bd7f625922
+source-git-commit: 733e7a8c497fcffdfadd22c2abd3323d35d54e3e
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1435'
 ht-degree: 0%
 
 ---
 
+
 # Fragments de contenu visuels - Diffuser avec l’URL de publication {#visual-content-fragments-deliver-with-the-publish-url}
 
-Lorsqu’un fragment de contenu basé sur un modèle auquel un ou plusieurs modèles HTML sont associés sont publiés, l’HTML rendue de ce fragment est disponible via le niveau de publication Adobe Experience Manager (AEM) as a Cloud Service à une URL avec cette structure :
+Lorsqu’un fragment de contenu basé sur un modèle auquel sont associés des modèles HTML est publié, l’HTML rendue de ce fragment est disponible via le niveau de publication Adobe Experience Manager (AEM) as a Cloud Service à une URL avec cette structure :
 
 ```html
 https://publish-p<programId>-e<envId>.adobeaemcloud.com/adobe/stable/previewtemplates/contentFragments/<templateId>/<fragmentId>/<variation>.html
