@@ -7,10 +7,10 @@ role: User, Developer
 level: Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: e4bb698c4673df61f47bfc12827facf8fc3caccd
+source-git-commit: 0383afd23b330ccb958914444c9100cd97f03c7c
 workflow-type: tm+mt
-source-wordcount: '3341'
-ht-degree: 80%
+source-wordcount: '3379'
+ht-degree: 79%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 80%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) |
 | AEM as a Cloud Service | Cet article |
 
 
@@ -71,7 +71,7 @@ Pour configurer [!DNL Adobe Sign] pour un formulaire adaptatif, vous devez effec
 
 Vous pouvez activer [!DNL Adobe Sign] pour un formulaire adaptatif existant ou créer un formulaire adaptatif prenant en charge [!DNL Adobe Sign]. Choisissez l’une des méthodes suivantes :
 
-* [Création d’un formulaire adaptatif prenant en charge [!DNL Adobe Sign] &#x200B;](#create-an-adaptive-form-for-adobe-sign)
+* [Création d’un formulaire adaptatif prenant en charge [!DNL Adobe Sign] ](#create-an-adaptive-form-for-adobe-sign)
 * [Activation d’ [!DNL Adobe Sign]  pour un formulaire adaptatif existant](#editafsign)
 
 #### Création d’un formulaire adaptatif pour Adobe Sign {#create-an-adaptive-form-for-adobe-sign}
@@ -84,7 +84,7 @@ Pour créer un formulaire adaptatif prenant en charge les signatures :
 
    1. Précisez les **[!UICONTROL Nom]** et **[!UICONTROL Titre]** pour le formulaire adaptatif.
 
-   1. Sélectionnez le [conteneur de configurations](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) créé lors de l’ [!DNL Adobe Sign] intégration d’[&#x200B; à [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
+   1. Sélectionnez le [conteneur de configurations](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) créé lors de l’ [!DNL Adobe Sign] intégration d’[ à [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
 
    Le conteneur de configurations contient les services [!DNL Adobe Sign] Cloud Services configurés pour votre environnement. Ces services peuvent être sélectionnés dans le créateur de formulaires adaptatifs.
 
@@ -194,6 +194,8 @@ Pour sélectionner un Cloud Service et l’ordre de signature :
 ### Définition de l’expiration du document pour un contrat Adobe Sign {#set-document-expiration-for-an-adobe-sign-agreement}
 
 Vous pouvez définir une date limite d’expiration pour les contrats Adobe Sign afin que les destinataires puissent terminer la signature dans un nombre de jours spécifié. Lorsqu’un formulaire est envoyé, AEM Forms transmet la valeur configurée à Adobe Sign en tant que `daysUntilSigningDeadline`.
+
+<span class="preview"> La définition de l’expiration des documents pour les contrats Adobe Sign se fait dans le cadre du programme des utilisateurs précoces. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre ID d’e-mail officiel pour rejoindre le programme des utilisateurs et utilisatrices précoces et demander l’accès à cette fonctionnalité. </span>
 
 Pour définir l’expiration du document :
 
