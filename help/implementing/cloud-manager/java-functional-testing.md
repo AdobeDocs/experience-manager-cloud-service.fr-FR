@@ -5,10 +5,10 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 32e19eea5a7cf90f9de57b7d71d776b4452e70ee
+source-git-commit: fe1c1efaa00fc117ae0dc35879662dfd5ed4ecc2
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 64%
+source-wordcount: '876'
+ht-degree: 51%
 
 ---
 
@@ -23,7 +23,7 @@ Lors de la création d’un référentiel de code dans Cloud Manager, un dossie
 
 >[!NOTE]
 >
->Si votre référentiel a été créé avant la création automatique des dossiers `it.tests` par Cloud Manager, vous pouvez également générer la dernière version en date à l’aide de l’[archétype de projet AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
+>Si votre référentiel a été créé avant la création automatique des dossiers `it.tests` par Cloud Manager, générez la dernière version à l’aide de l’[archétype de projet AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
 
 Une fois que vous disposez du contenu du dossier `it.tests`, vous pouvez l’utiliser comme base pour vos propres tests, puis effectuer les étapes suivantes :
 
@@ -35,13 +35,13 @@ Une fois que vous disposez du contenu du dossier `it.tests`, vous pouvez l’uti
 
 Les mêmes outils que ceux utilisés par Adobe pour rédiger des tests fonctionnels de produit peuvent être utilisés pour rédiger vos tests fonctionnels personnalisés. Utilisez les [tests fonctionnels du produit](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) dans GitHub comme exemple de la manière d’écrire vos tests.
 
-Le code des tests fonctionnels personnalisés est du code Java™ dans le dossier `it.tests` de votre projet. Il doit produire un seul fichier JAR avec tous les tests fonctionnels. Si le build génère plusieurs fichiers JAR de test, le fichier JAR sélectionné est non déterministe. S’il ne génère aucun fichier JAR de test, l’étape de test est effectuée par défaut. Voir [Archétype de projet &#x200B;](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) pour obtenir des exemples de tests.
+Le code des tests fonctionnels personnalisés est du code Java™ dans le dossier `it.tests` de votre projet. Il génère un seul fichier JAR avec tous les tests fonctionnels. Si le build génère plusieurs fichiers JAR de test, le fichier JAR sélectionné est non déterministe. S’il ne génère aucun fichier JAR de test, l’étape de test est effectuée par défaut. Voir [Archétype de projet ](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) pour obtenir des exemples de tests.
 
-Les tests sont exécutés sur l’infrastructure de test gérée par Adobe, comprenant au moins deux instances de création, deux instances de publication et une configuration de Dispatcher. Cette configuration signifie que vos tests fonctionnels personnalisés s’exécutent sur l’ensemble de la pile AEM.
+Les tests sont exécutés sur l’infrastructure de test gérée par Adobe, comprenant au moins deux instances de création, deux instances de publication et une configuration de Dispatcher. Cela signifie que vos tests fonctionnels personnalisés s’exécutent sur l’ensemble de l’environnement AEM.
 
 ### Structure des tests fonctionnels {#functional-tests-structure}
 
-Les tests fonctionnels personnalisés par le client doivent être placés dans un fichier JAR distinct produit par la même version de Maven que les artefacts à déployer dans AEM. En règle générale, cette version est un module Maven distinct. Le fichier JAR obtenu doit contenir toutes les dépendances requises. Il est généralement créé avec le `maven-assembly-plugin` à l’aide du descripteur `jar-with-dependencies`.
+Les tests fonctionnels personnalisés par le client doivent être placés dans un fichier JAR distinct produit par la même version de Maven que les artefacts à déployer dans AEM. Cette version est un module Maven distinct. Le fichier JAR obtenu doit contenir toutes les dépendances requises. Il est créé à l’aide du `maven-assembly-plugin` à l’aide du descripteur `jar-with-dependencies`.
 
 En outre, l’en-tête de manifeste `Cloud-Manager-TestType` du fichier JAR doit être défini sur `integration-test`.
 
@@ -81,25 +81,25 @@ Ce qui suit est un exemple de configuration pour le `maven-assembly-plugin`.
 
 Dans ce fichier JAR, les noms de classe des tests à exécuter doivent se terminer par `IT`.
 
-Par exemple, une classe nommée `com.myco.tests.aem.it.ExampleIT` sera exécutée, mais pas une classe nommée `com.myco.tests.aem.it.ExampleTest`.
+Par exemple, une classe nommée `com.myco.tests.aem.it.ExampleIT` s’exécute, mais pas une classe nommée `com.myco.tests.aem.it.ExampleTest`.
 
 De plus, pour exclure le code test de la vérification de la couverture de l’analyse du code, le code test doit se trouver sous un package nommé `it` (le filtre d’exclusion de la couverture est `**/it/**/*.java`).
 
 Les classes de test doivent être des tests JUnit normaux. L’infrastructure de test est conçue et configurée pour être compatible avec les conventions utilisées par la bibliothèque de tests `aem-testing-clients`. Les développeurs et développeuses sont encouragés à utiliser cette bibliothèque et à suivre les bonnes pratiques en vigueur.
 
-Pour plus d’informations, voir le [`aem-testing-clients`référentiel GitHub &#x200B;](https://github.com/adobe/aem-testing-clients).
+Pour plus d’informations, voir le [`aem-testing-clients`référentiel GitHub ](https://github.com/adobe/aem-testing-clients).
 
 >[!TIP]
 >
->[Regardez cette vidéo](https://www.youtube.com/watch?v=yJX6r3xRLHU) sur la manière dont vous pouvez utiliser des tests fonctionnels personnalisés pour améliorer votre confiance dans vos pipelines CI/CD.
+>[Regardez cette vidéo](https://www.youtube.com/watch?v=yJX6r3xRLHU) sur la manière dont vous pouvez utiliser des tests fonctionnels personnalisés pour améliorer vos pipelines CI/CD.
 
-### Prérequis {#prerequisites}
+### Conditions préalables {#prerequisites}
 
-1. Les tests dans Cloud Manager sont exécutés par une personne administratrice technique.
+1. Dans Cloud Manager, les tests sont exécutés par un utilisateur administrateur technique.
 
 >[!NOTE]
 >
->Pour exécuter des tests fonctionnels sur votre ordinateur local, créez un utilisateur ou une utilisatrice disposant d’autorisations d’administration afin de garantir le même comportement.
+>Pour garantir le même comportement lors de l’exécution de tests fonctionnels sur votre ordinateur local, créez un utilisateur ou une utilisatrice disposant des autorisations d’administration.
 
 1. Les limites suivantes limitent l’infrastructure en conteneur pour les tests fonctionnels :
 
@@ -126,8 +126,7 @@ Les modifications à venir de l’infrastructure en conteneur pour l’exécutio
 
 >[!NOTE]
 >
->Cette modification doit être effectuée avant le 6 avril 2024.
->Si la bibliothèque de dépendances n’est pas mise à jour, des échecs de pipeline peuvent se produire à l’étape « Tests fonctionnels personnalisés ».
+>Cette modification doit être effectuée avant le 6 avril 2024.Si la bibliothèque de dépendances n’est pas mise à jour, des échecs de pipeline peuvent se produire à l’étape « Tests fonctionnels personnalisés ».
 
 ### Exécuter des tests locaux {#local-test-execution}
 
