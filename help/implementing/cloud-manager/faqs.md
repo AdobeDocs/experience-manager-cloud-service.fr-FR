@@ -5,10 +5,10 @@ exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
+source-git-commit: c0323e54ce74f0b56c9a60f3bdca1ab4a7426116
 workflow-type: tm+mt
-source-wordcount: '1015'
-ht-degree: 66%
+source-wordcount: '1010'
+ht-degree: 56%
 
 ---
 
@@ -67,17 +67,17 @@ Pour plus d’informations sur la gestion des versions, voir [&#x200B; Gestion d
 
 Dans les déploiements d’évaluation et de production, une version automatique est générée. Voir [&#x200B; Gestion des versions du projet Maven &#x200B;](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
-Pour le contrôle de version personnalisé dans les déploiements d’évaluation et de production, définissez une version maven en trois parties, telle que `1.0.0`. Passez à la version supérieure à chaque déploiement en production.
+Pour le contrôle de version personnalisé dans les déploiements d’évaluation et de production, définissez une version Maven appropriée en trois parties, telle que `1.0.0`. Passez à la version supérieure à chaque déploiement en production.
 
 Cloud Manager ajoute automatiquement sa version aux builds d’évaluation et de production et crée même une branche Git. Aucune configuration spécifique n’est nécessaire. Si vous ne définissez pas de version Maven, le déploiement réussit toujours et une version est automatiquement définie.
 
-## Ma build Maven échoue lors des déploiements de Cloud Manager, mais elle est pourtant créée localement sans la moindre erreur. Qu’est-ce qui ne va pas ? {#maven-build-fail}
+## Ma build Maven échoue lors des déploiements de Cloud Manager, mais elle est pourtant créée localement sans la moindre erreur. Quelle en est la cause ? {#maven-build-fail}
 
 Consultez cette [ressource git](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md) pour plus d’informations.
 
 ## Que faire si le déploiement de Cloud Manager échoue lors de l’étape de déploiement dans AEM as a Cloud Service ? {#cloud-manager-deployment-cloud-service}
 
-La raison la plus courante de l’échec des déploiements résulte d’autorisations insuffisantes pour l’utilisateur `sling-distribution-importer`. Dans ce cas, l’étape de déploiement échoue lors d’un déploiement de Cloud Manager et des erreurs telles que les suivantes sont générées.
+La raison la plus courante de l’échec des déploiements est l’absence d’autorisations suffisantes pour l’utilisateur `sling-distribution-importer`. Dans ce cas, l’étape de déploiement échoue lors d’un déploiement de Cloud Manager et des erreurs telles que les suivantes sont générées.
 
 ```text
 [Queue Processor for Subscriber agent forwardPublisherSubscriber] org.apache.jackrabbit.vault.fs.io.Importer Error while committing changes. Retrying import from checkpoint at /. Retries 4/10
@@ -88,7 +88,7 @@ Caused by: org.apache.sling.api.resource.PersistenceException: Unable to commit 
 Caused by: javax.jcr.AccessDeniedException: OakAccess0000: Access denied [EventAdminAsyncThread #7] org.apache.sling.distribution.journal.impl.publisher.DistributionPublisher [null] Error processing distribution package` `dstrpck-1583514457813-c81e7751-2da6-4d00-9814-434187f08d32. Retry attempts 344/infinite. Message: Error trying to extract package at path /etc/packages/com.myapp/myapp-base.ui.content-5.1.0-SNAPSHOT.
 ```
 
-L’utilisateur ou l’utilisatrice `sling-distribution-importer` a besoin d’autorisations supplémentaires pour les chemins de contenu définis dans `ui.content package`. Cette règle nécessite généralement l’ajout d’autorisations pour `/conf` et `/var`.
+L’utilisateur ou l’utilisatrice `sling-distribution-importer` a besoin d’autorisations supplémentaires pour les chemins de contenu définis dans `ui.content package`. Cette configuration nécessite généralement l’ajout d’autorisations pour `/conf` et `/var`.
 
 La solution consiste à ajouter un script de [configuration RepositoryInitializer OSGi](/help/implementing/deploying/overview.md#repoint) à votre package de déploiement d’applications afin d’ajouter des listes de contrôle d’accès pour l’utilisateur `sling-distribution-importer`.
 
@@ -98,16 +98,16 @@ Voici un exemple [`org.apache.sling.jcr.repoinit.RepositoryInitializer-Distribut
 
 ## Mon déploiement de Cloud Manager échoue à l’étape de déploiement dans AEM as a Cloud Service et j’ai déjà ajouté une configuration OSGi RepositoryInitializer. Que puis-je faire d’autre ? {#build-failures}
 
-Si l’[ajout d’une configuration OSGi RepositoryInitializer](#cloud-manager-deployment-cloud-service) n’a pas résolu l’erreur, elle peut être due à l’un des autres problèmes suivants.
+Si [l’ajout d’une configuration OSGi RepositoryInitializer](#cloud-manager-deployment-cloud-service) n’a pas résolu l’erreur, elle peut être due à l’un des problèmes suivants :
 
-* Le déploiement peut échouer en raison d’une configuration OSGi non valide qui interrompt un service par défaut.
+* Le déploiement échoue en raison d’une configuration OSGi non valide qui interrompt un service par défaut.
    * Vérifiez les journaux pendant le déploiement pour voir s’il existe des erreurs évidentes.
 
-* Le déploiement peut échouer en raison de configurations Dispatcher ou Apache non valides.
+* Le déploiement échoue en raison de configurations Dispatcher ou Apache non valides.
    * Veillez à tester Apache et le Dispatcher localement à l’aide de l’image Docker incluse dans le SDK.
-   * Voir la section [Dispatcher en mode cloud](/help/implementing/dispatcher/disp-overview.md#content-delivery) pour savoir comment configurer le conteneur Docker du Dispatcher pour des tests locaux faciles.
+   * Consultez [Dispatcher en mode cloud](/help/implementing/dispatcher/disp-overview.md#content-delivery) pour savoir comment configurer le conteneur Docker Dispatcher pour des tests locaux faciles.
 
-* Le déploiement peut échouer en raison d’une autre défaillance lors de la réplication des modules de contenu (distribution Sling) entre les instances d’auteur et de publication.
+* Le déploiement échoue en raison d’une autre défaillance lors de la réplication des packages de contenu (distribution Sling) entre les instances d’auteur et de publication.
    * Suivez ces étapes pour simuler le problème sur une configuration locale.
       1. Installez localement une instance de création et une instance de publication à l’aide des derniers fichiers jar AEM SDK.
       1. Connectez-vous à l’instance de création.
@@ -116,7 +116,7 @@ Si l’[ajout d’une configuration OSGi RepositoryInitializer](#cloud-manager-d
 
 ## Je ne parviens pas à définir une variable à l’aide d’une commande aio. Que puis-je faire ? {#set-variable}
 
-Il se peut que vous receviez une erreur `403` telle que celle qui suit lorsque vous tentez de répertorier ou de définir des variables de pipeline à l’aide de commandes `aio`.
+Vous recevez une erreur `403` telle que la suivante lorsque vous tentez de répertorier ou de définir des variables de pipeline à l’aide de commandes `aio`.
 
 ```shell
 $ aio cloudmanager:list-pipeline-variables 222
@@ -136,4 +136,4 @@ Cannot set variables: https://cloudmanager.adobe.io/api/program/111/environment/
 
 Dans ce cas, la personne exécutant ces commandes doit être ajoutée au rôle **Responsable de déploiement** dans Admin Console.
 
-Consultez [Autorisations d’API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/) pour plus d’informations.
+Consultez [Autorisations d’API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions) pour plus d’informations.
