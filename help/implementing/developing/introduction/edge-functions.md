@@ -4,9 +4,9 @@ description: Découvrez comment exécuter JavaScript au niveau de la couche CDN 
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
+source-git-commit: 1bb231d04e0b418a3b56de34c70424d06f94a4e1
 workflow-type: tm+mt
-source-wordcount: '1975'
+source-wordcount: '2023'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,9 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->AEM Edge Functions est une fonctionnalité **bêta publique** qui vous permet de l’essayer en libre-service sans contacter Adobe pour l’activer. Adobe vous encourage à envoyer un e-mail à l’adresse [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) pour décrire votre cas d’utilisation afin qu’Adobe puisse vous assurer qu’il est pris en charge et vous fournir tous les conseils nécessaires. En utilisant le Beta Fonctions d’AEM Edge, vous reconnaissez qu’il est toujours en développement et que vous ne devriez pas vous fier au bon fonctionnement de la technologie ou à la disponibilité des données. Cette fonctionnalité est fournie en l’état, peut changer sans préavis et n’est pas couverte par la production.
+>AEM Edge Functions est une fonctionnalité **bêta publique** qui vous permet de l’essayer en libre-service sans contacter Adobe pour l’activer. Adobe vous encourage à envoyer un e-mail à l’adresse [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) pour décrire votre cas d’utilisation afin qu’Adobe puisse vous assurer qu’il est pris en charge et vous fournir tous les conseils nécessaires. Il est particulièrement important de contacter Adobe avant de déployer la fonctionnalité pour le trafic d’exploitation.
+>
+>En utilisant le Beta Fonctions d’AEM Edge, vous reconnaissez qu’il est toujours en développement et que vous ne devriez pas vous fier au bon fonctionnement de la technologie ou à la disponibilité des données. Cette fonctionnalité est fournie en l’état, peut changer sans préavis et n’est pas couverte par la production.
 
 AEM Edge Functions vous permet d’exécuter JavaScript au niveau de la couche CDN, ce qui rapproche le traitement des données de l’utilisateur final. Cela réduit la latence et permet d’offrir des expériences réactives et dynamiques sans aller-retour vers votre origine.
 
@@ -28,7 +30,7 @@ Cas d’utilisation courants :
 
 AEM Edge Functions est compatible avec la pile Java Edge Delivery Services et AEM as a Cloud Service, pour les clients AEM Sites.
 
-<!-- Follow this tutorial for a concrete walk-through for both Edge Delivery Services and AEM as a Cloud Service Java-stack variations. -->
+Suivez [ce tutoriel](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview) pour une présentation concrète des variations de la pile Java Edge Delivery Services et AEM as a Cloud Service.
 
 ## Principaux avantages {#key-benefits}
 
