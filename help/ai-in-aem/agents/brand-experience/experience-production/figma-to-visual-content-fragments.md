@@ -3,9 +3,9 @@ title: Tâche de conversion de format en fragments de contenu visuels
 description: Découvrez ce qu’est la tâche Brand Experience Agent Figma en fragments de contenu visuels et ce qu’elle peut vous apporter.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
-source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
+source-git-commit: 19931f7cc911376f5096903a2d99d6ff11f928ac
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -14,14 +14,6 @@ ht-degree: 0%
 # Tâche de conversion de format en fragments de contenu visuels {#figma-to-visual-content-fragments-job}
 
 La tâche Figma vers les fragments de contenu visuel de l’[agent de production Experience](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) automatise le processus de recréation des conceptions Figma dans Adobe Experience Manager (AEM) as a Cloud Service.
-
-<!-- CQDOC-23232 - remove when GA -->
-
->[!NOTE]
->
->La tâche « Convertir en fragments de contenu visuels » est actuellement en disponibilité limitée.
->
->Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
 
 ## Vue d’ensemble {#overview}
 
@@ -40,7 +32,7 @@ Avant de commencer :
   Pour ce faire, il faut :
 
    * génération d&#39;un jeton personnel à Figma
-   * connexion à Adobe Experience Cloud sur `https://experience.adobe.com`
+   * connexion à Adobe Experience Cloud à l’adresse `https://experience.adobe.com`
    * conserver le jeton à l’emplacement `https://experience.adobe.com/#/aem/figmatocontentfragment`
 
 ## Pour charger une conception {#to-upload-a-design}
