@@ -5,9 +5,9 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 1b7357b7f3fb99937857e5a7716baedd8124b549
+source-git-commit: 350d8a1524e3c0f3b91537988f140555cb1b65bc
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '886'
 ht-degree: 14%
 
 ---
@@ -39,12 +39,12 @@ Les détails du statut s’affichent. Votre domaine personnalisé est prêt à �
 >
 >Si vous utilisez un certificat SSL *géré par Adobe (DV)* avec le domaine, Cloud Manager déclenche automatiquement la vérification lorsque vous cliquez sur **Vérifier** dans la boîte de dialogue Vérifier le domaine lorsque [vous ajoutez un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 >
->Si vous envisagez d’utiliser un **certificat SSL géré par le client (OV/EV)**, votre domaine est vérifié *après* vous [&#x200B; ajouter le certificat SSL OV/EV](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
+>Si vous envisagez d’utiliser un **certificat SSL géré par le client (OV/EV)**, votre domaine est vérifié *après* vous [ ajouter le certificat SSL OV/EV](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 
 
 ## Statuts de vérification {#statuses}
 
-Cloud Manager vérifie la propriété du domaine via le certificat SSL géré par le client (OV/EV). Lorsque vous avez terminé, l’un des messages de statut suivants s’affiche :
+Cloud Manager vérifie la propriété du domaine par le biais du certificat SSL géré par le client (OV/EV). Lorsque vous avez terminé, l’un des messages de statut suivants s’affiche :
 
 | État | Description |
 | --- | --- |
@@ -71,10 +71,10 @@ Lorsque vous tentez d’ajouter un mappage de domaine dans Cloud Manager, le mes
 <!-- This message indicates that the domain is currently associated with a different Fastly account—typically outside of Adobe's control. To proceed, the domain must be disassociated from the other account before it can be added to the Adobe-managed Cloud Service. This issue usually occurs when the same domain is already mapped to a different origin in a non-Adobe Fastly configuration. -->
 
 **Cause de l’erreur**
-Fastly verrouille un domaine sur le compte qui l’enregistre en premier, tandis que les autres comptes doivent demander l’autorisation d’enregistrer un sous-domaine. En outre, Fastly vous permet d’affecter un domaine apex et des sous-domaines associés à un seul service et compte Fastly. Si vous disposez d’un compte Fastly qui lie les mêmes apex et sous-domaines utilisés pour vos domaines AEM Cloud Service, il est possible de voir l’erreur suivante.
+Fastly limite un domaine au compte qui l’enregistre en premier, et les autres comptes doivent demander l’autorisation d’enregistrer un sous-domaine. En outre, Fastly vous permet d’affecter un domaine apex et des sous-domaines associés à un seul service et compte Fastly. Si vous disposez d’un compte Fastly qui lie les mêmes apex et sous-domaines utilisés pour vos domaines AEM as a Cloud Service, il est possible de voir l’erreur suivante.
 
 **Résolution d’erreurs**
-L’erreur est corrigée comme suit :
+L’erreur est résolue comme suit :
 
 * Supprimez les apex et les sous-domaines du compte existant avant d’installer le domaine dans Cloud Manager.
 
