@@ -5,9 +5,9 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 4851afdacb54e4c9bffc3df707afb057cb361675
+source-git-commit: 6b9a7d90bbf6ae5afa823616b88bdd44cfdddca7
 workflow-type: tm+mt
-source-wordcount: '1383'
+source-wordcount: '1377'
 ht-degree: 10%
 
 ---
@@ -36,7 +36,7 @@ Adobe fournit plusieurs points de contrôle qualité intégrés, tandis que d’
 
 Les points de contrôle qualité intégrés valident principalement les fonctionnalités du produit AEM dans le cadre de votre application AEM. En revanche, les points de contrôle qualité personnalisés que vous configurez sont conçus pour vérifier que les fonctionnalités critiques de votre application et les interactions utilisateur s’exécutent comme prévu. Ensemble, ces deux ensembles de points de contrôle qualité fonctionnent pour garantir des déploiements automatisés robustes et sécurisés pour vos modifications de code et mises à jour de produits AEM.
 
-Il est important de noter que ces points de contrôle qualité ne sont pas destinés à être un cadre de test complet pour l’ensemble de votre stratégie de test. Le produit AEM est soumis à des tests approfondis avant d’entrer dans le processus de déploiement du Cloud Service AEM. De même, votre application doit déjà être de haute qualité avant d’atteindre la phase de déploiement. Cette approche permet de s’assurer que les points de contrôle qualité se concentrent sur leur objectif principal, à savoir la sauvegarde du processus de déploiement, plutôt que de se substituer à un régime de test complet.
+Il est important de noter que ces points de contrôle qualité ne sont pas destinés à être un cadre de test complet pour l’ensemble de votre stratégie de test. Le produit AEM est soumis à des tests approfondis avant d’entrer dans le processus de déploiement du Cloud Service AEM. De même, votre application est déjà de haute qualité avant d’atteindre la phase de déploiement. Cette approche garantit que les points de contrôle qualité se concentrent sur leur objectif principal, à savoir protéger le processus de déploiement, plutôt que de remplacer un plan de test complet.
 
 ## Points de contrôle qualité dans les tests
 
@@ -68,7 +68,7 @@ Voir [Test de qualité du code](/help/implementing/cloud-manager/code-quality-te
 
 ### Tests de produits
 
-Les tests fonctionnels du produit sont des tests d’intégration HTTP (IT) stables pour les fonctionnalités de base d’AEM, y compris les tâches de création et de réplication. Adobe les fournit et les conserve par défaut. Ils sont destinés à empêcher le déploiement des modifications apportées au code d’application personnalisé s’il interrompt les fonctionnalités de base du produit AEM.
+Les tests fonctionnels du produit sont des tests d’intégration HTTP (IT) stables pour les fonctionnalités de base d’AEM, y compris les tâches de création et de réplication. Adobe les fournit et les conserve par défaut. Ils sont destinés à empêcher le déploiement des modifications apportées au code d’application personnalisé si elles interrompent les fonctionnalités de base du produit AEM.
 
 Ils utilisent JUnit pour l’implémentation, s’exécutent avec Maven et s’appuient sur les [clients de test AEM officiels](https://github.com/adobe/aem-testing-clients). La suite de tests de produit est conservée en tant que
 un [projet open source](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) suit les bonnes pratiques et peut être considéré comme un bon point de départ pour la mise en œuvre de vos tests.
@@ -79,7 +79,7 @@ Tout comme les tests de produit, les tests fonctionnels du client sont des tests
 
 >[!NOTE]
 >
->Les tests fonctionnels personnalisés s’exécutent dans les pipelines de production et hors production (opt-in) utilisés pour les déploiements de modifications d’applications AEM et les mises à jour des notifications push de produits AEM. Ils jouent un rôle essentiel pour assurer le bon fonctionnement de votre application et améliorer la sécurité des rejets. Les tests fonctionnels du client sont également exécutés dans les pipelines de validation de version préliminaire internes pour chaque client, ce qui permet de fournir un retour d’informations précoce.
+>Les tests fonctionnels personnalisés s’exécutent dans les pipelines de production et hors production (opt-in) utilisés pour les déploiements de modifications d’applications AEM et les mises à jour de produits AEM. Ils jouent un rôle essentiel pour assurer le bon fonctionnement de votre application et améliorer la sécurité des rejets. Les tests fonctionnels du client sont également exécutés dans les pipelines de validation de version préliminaire internes pour chaque client, ce qui permet de fournir un retour d’informations précoce.
 
 Pour maintenir l’efficacité des exécutions de pipeline, Adobe conseille de se concentrer sur les fonctionnalités clés et les flux d’interaction des utilisateurs principaux, en visant une exécution de test fonctionnel d’environ 15 minutes ou moins. Les suites de tests fonctionnelles complètes qui dépassent ce temps doivent être exécutées dans le cadre des pipelines de validation client généraux pendant le processus de développement.
 
@@ -91,13 +91,13 @@ Pour plus d’informations, consultez [Tests fonctionnels Java](/help/implementi
 
 Afin d’optimiser le contrôle des risques pour le développement spécifique au client, Adobe vous encourage à inclure des tests d’interface utilisateur critiques dans AEM as a Cloud Service. Limitez les tests et concentrez-vous sur l’impact sur l’expérience client.
 
-Les tests sont conditionnés dans une image Docker conçue pour une volatilité maximale, avec la prise en charge de Cypress, Playwright, Selenium, Java et JavaScript. Ils suivent les mêmes caractéristiques et objectifs que les tests fonctionnels personnalisés.
+Les tests sont conditionnés dans une image Docker conçue pour une flexibilité maximale, prenant en charge Cypress, Playwright, Selenium, Java et JavaScript. Ils suivent les mêmes caractéristiques et objectifs que les tests fonctionnels personnalisés.
 
 >[!NOTE]
 >
->Les tests d’interface utilisateur personnalisés sont exécutés dans les pipelines de production et hors production (opt-in) utilisés pour les déploiements de modifications d’applications AEM et les mises à jour des notifications push de produits AEM. Ils sont essentiels pour assurer le bon fonctionnement de votre application et améliorer la sécurité des rejets. Les tests de l’interface utilisateur client sont également exécutés dans les pipelines de validation de version préliminaire internes pour chaque client, ce qui permet de fournir des commentaires précoces.
+>Les tests d’interface utilisateur personnalisés sont exécutés dans les pipelines de production et hors production (opt-in) utilisés pour les déploiements de changement d’application AEM et les mises à jour de produits AEM. Ils sont essentiels pour assurer le bon fonctionnement de votre application et améliorer la sécurité des rejets. Les tests de l’interface utilisateur client sont également exécutés dans les pipelines de validation de version préliminaire internes pour chaque client, ce qui permet de fournir des commentaires précoces.
 >
->Les conteneurs autres que Selenium doivent exécuter des tests à l’aide d’un proxy HTTP basé sur les variables d’environnement dans la section [&#x200B; Test de l’interface utilisateur &#x200B;](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing).
+>Les conteneurs autres que Selenium exécutent des tests à l’aide d’un proxy HTTP basé sur les variables d’environnement dans la section [Test de l’interface utilisateur](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing).
 
 Pour que les exécutions de pipeline restent efficaces, Adobe recommande de se concentrer sur les fonctionnalités clés et les principaux flux d’interaction utilisateur. Les suites de tests complètes de l’interface utilisateur qui dépassent ce niveau de qualité doivent être exécutées dans le cadre des pipelines de validation généraux du client. Intégrez-les au processus de développement du client.
 
@@ -117,7 +117,7 @@ Voir [&#x200B; Tests de contrôle de l’expérience](/help/implementing/cloud-m
 
 Le point de contrôle qualité des validations client est un espace réservé à la stratégie et aux efforts de test propres au client, exécutés avant que les modifications de l’application du client n’atteignent les pipelines de déploiement dans le cloud d’AEM.
 
-Vous pouvez y choisir les outils et les structures de votre choix. Contrairement aux tests de fonction client et aux tests d’interface utilisateur personnalisés, il n’existe aucune limite liée à AEM as a Cloud Service. Par conséquent, Adobe vous recommande d’effectuer ici des tests fonctionnels et d’interface utilisateur à long terme.
+Vous pouvez y choisir les outils et les structures de votre choix. Contrairement aux tests fonctionnels du client et aux tests d’interface utilisateur personnalisés, il n’existe aucune limite liée à AEM as a Cloud Service. Par conséquent, Adobe vous recommande d’effectuer ici des tests fonctionnels et d’interface utilisateur à long terme.
 
 Vous pouvez choisir n’importe quel outil et framework, mais Adobe suggère d’aligner les tests d’intégration et d’interface utilisateur HTTP sur les outils et frameworks utilisés dans les points de contrôle de qualité de test fonctionnels et d’interface utilisateur personnalisés. En outre, Adobe recommande d’incorporer [&#x200B; Environnements de développement rapide (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) dans votre stratégie de test locale afin de refléter fidèlement les environnements cloud AEM.
 
@@ -125,4 +125,4 @@ Vous pouvez choisir n’importe quel outil et framework, mais Adobe suggère d�
 
 Le point de contrôle qualité des tests manuels est un espace réservé pour les clients qui effectuent des tests manuels. Étant donné que les pipelines cloud d’AEM ne prennent pas en charge les tests manuels, ils doivent être inclus dans votre stratégie de test locale.
 
-Pour les tests manuels, il peut s’avérer utile de l’intégrer à un environnement de développement AEM Cloud Service supplémentaire.
+Pour les tests manuels, il peut s’avérer utile d’utiliser un environnement de développement AEM Cloud Service supplémentaire.
