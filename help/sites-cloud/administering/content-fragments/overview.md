@@ -6,10 +6,10 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 2919670732d924cb1d473be59513044239a780e6
+source-git-commit: 65cac96f2d99100ffd50679c0c2b19da232efa70
 workflow-type: tm+mt
-source-wordcount: '2553'
-ht-degree: 29%
+source-wordcount: '2525'
+ht-degree: 30%
 
 ---
 
@@ -69,15 +69,6 @@ Les fragments de contenu peuvent également être diffusés dans :
 
    * fournit une représentation visuelle pour faciliter la prévisualisation et la révision du contenu
    * fournit une représentation visuelle pour une utilisation directe et immédiate par des canaux et des applications externes
-
-  <!-- CQDOC-23232 - remove when GA -->
-
-  >[!NOTE]
-  >
-  >Les fragments de contenu visuel sont actuellement en disponibilité limitée.
-  >
-  >Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
-
 
 Le nombre de canaux de communication augmente tous les ans. En règle générale, les canaux font référence au mécanisme de diffusion :
 

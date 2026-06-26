@@ -3,9 +3,9 @@ title: Fragments de contenu visuels - à diffuser avec l’URL de publication
 description: Utilisez l’URL de publication pour diffuser des fragments de contenu visuel.
 feature: Developing, Content Fragments
 role: Admin, Developer
-source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
+source-git-commit: 65d8d29ba13b0c5d8360aad4bc0742bd7f625922
 workflow-type: tm+mt
-source-wordcount: '1456'
+source-wordcount: '1438'
 ht-degree: 0%
 
 ---
@@ -19,14 +19,6 @@ https://publish-p<programId>-e<envId>.adobeaemcloud.com/adobe/stable/previewtemp
 ```
 
 Cette URL renvoie un *document HTML autonome* (y compris une structure et un CSS intégrés) qui peut être incorporé dans n’importe quel contexte web.
-
-<!-- CQDOC-23232 - remove when GA -->
-
->[!NOTE]
->
->Les fragments de contenu visuel sont actuellement en disponibilité limitée.
->
->Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
 
 ## Techniques d’intégration - Aperçu {#embedding-techniques-overview}
 
@@ -341,3 +333,16 @@ Utilisez les éléments suivants comme guide de décision pour choisir la techni
 | Besoin que les conflits de prototype, de même origine et CSS les plus rapides soient acceptables ? | Élément intégré |
 | Intégration dans Edge Delivery Services ? | Bloc intégré (iframe sous le capot) |
 | Incorporation dans des pages AEM Sites ? | Composant principal (Shadow DOM, intégré) |
+
+
+## Ressources supplémentaires {#additional-resources}
+
+Des ressources supplémentaires sont disponibles :
+
+* [Documentation sur les fragments de contenu AEM](/help/sites-cloud/administering/content-fragments/overview.md)
+
+<!-- CQDOC-23650 - add link when docs are stable; not experimental -->
+
+<!--
+* [Content Fragment Visualization Templates APIs (experimental)](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/cvt/#)
+-->

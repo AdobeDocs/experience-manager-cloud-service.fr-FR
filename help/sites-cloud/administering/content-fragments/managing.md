@@ -6,9 +6,9 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 2919670732d924cb1d473be59513044239a780e6
+source-git-commit: 7e93b570e6b249432680308bee4de789e358f26c
 workflow-type: tm+mt
-source-wordcount: '3402'
+source-wordcount: '3451'
 ht-degree: 29%
 
 ---
@@ -405,14 +405,6 @@ Vous pouvez :
 
    * Avec [&#x200B; Modèles De Visualisation &#x200B;](/help/sites-cloud/administering/content-fragments/preview.md#preview-with-visualization-html-templates)
 
-     <!-- CQDOC-23232 - remove when GA -->
-
-     >[!NOTE]
-     >
-     >Les fragments de contenu visuel sont actuellement en disponibilité limitée.
-     >
-     >Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
-
    * Sur l’instance [preview](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance)
 
 * Publiez vos fragments de contenu sur :
@@ -654,14 +646,37 @@ Une fois cette option sélectionnée, elle s’affiche sous forme de prédicat d
 
 ## Rechercher des fragments {#searching-fragments}
 
-La zone de recherche prend en charge la recherche de texte intégral. Saisissez vos termes de recherche dans la zone de recherche :
+La console Fragments de contenu prend en charge les éléments suivants :
 
-![Console Fragments de contenu - recherche](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-search-specification.png)
+* [Recherche du texte intégral](#full-text-search)
+* [Recherche sémantique](#semantic-search)
 
-Fournit les résultats sélectionnés :
+<!-- CQDOC-23674 - activate when toggle visible -->
+<!--
 
-![Console Fragments de contenu - résultats de la recherche](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-search-results.png)
+Use the toggle option to select your search method:
+
+![Content Fragments console - select search method](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-select-search.png)
+-->
 
 La zone de recherche permet également d’accéder rapidement aux **Fragments de contenu récents** et aux **Recherches enregistrées** :
 
 ![Console Fragments de contenu - récents et enregistrés](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-search-saved.png)
+
+### Recherche du texte intégral {#full-text-search}
+
+La recherche en texte intégral vous permet de rechercher un mot ou une expression spécifique dans le contenu du fragment de contenu. Saisissez vos termes de recherche dans la zone de recherche :
+
+![Console Fragments de contenu - recherche en texte intégral](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-full-text-search-specification.png)
+
+Fournit les résultats sélectionnés :
+
+![Console Fragments de contenu - résultats de la recherche](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-full-text-search-results.png)
+
+### Recherche sémantique {#semantic-search}
+
+La recherche sémantique de fragments de contenu améliore la découverte de contenu en activant les requêtes en langage naturel. Il vous permet de trouver des fragments en fonction de la signification et de l’intention, au lieu de vous fier uniquement à des mots-clés exacts ou à des correspondances en texte intégral.
+
+Saisissez votre requête de recherche dans la zone de recherche ; par exemple, `fruity and light roast` :
+
+![Console Fragments de contenu - recherche sémantique](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-semantic-search.png)

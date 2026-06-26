@@ -4,9 +4,9 @@ description: Découvrez comment Brand Experience Agent accélère la modernisati
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: e6cd421a-8791-4fe3-b284-9b3beae996fd
-source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
+source-git-commit: 19931f7cc911376f5096903a2d99d6ff11f928ac
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '657'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Grâce à ces agents, le Brand Experience Agent absorbe le travail opérationnel
 >
 >Les réponses générées par l&#39;IA peuvent être inexactes ou trompeuses. Assurez-vous de vérifier les correctifs et les réponses suggérés.
 >
->Consultez également les [instructions d’utilisation de l’IA générative de &#x200B;](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
+>Consultez également la section [Directives d’utilisation d’Adobe Experience Cloud Generative AI](https://www.adobe.com/fr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 
 ## Agent de modernisation de l’expérience {#experience-modernization}
 
@@ -63,14 +63,6 @@ La tâche [Créer du contenu](/help/ai-in-aem/agents/brand-experience/experience
 ### Tâche de conversion de format en fragments de contenu visuels {#figma-to-visual-content-fragments}
 
 La tâche [Figma vers Fragments de contenu visuels](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md) importe les conceptions Figma vers les modèles de contenu, les fragments de contenu et les modèles HTML d’AEM.
-
-<!-- CQDOC-23232 - remove when GA -->
-
->[!NOTE]
->
->La tâche « Convertir en fragments de contenu visuels » est actuellement en disponibilité limitée.
->
->Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
 
 ### Tâche de création de Forms {#forms-creation}
 

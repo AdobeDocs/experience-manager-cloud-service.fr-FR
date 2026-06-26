@@ -3,9 +3,9 @@ title: Fragments de contenu visuels
 description: Découvrez comment visualiser et publier des fragments de contenu visuel à l’aide de modèles HTML.
 feature: Content Fragments
 role: User, Developer
-source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
+source-git-commit: 19931f7cc911376f5096903a2d99d6ff11f928ac
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
@@ -19,14 +19,6 @@ Les fragments de contenu contiennent du contenu structuré destiné à la sortie
 * La diffusion d’un fragment visuel facilite la diffusion omnicanale, pour la réutilisation d’expériences modulaires sur plusieurs canaux tels que le web, les e-mails ou les applications mobiles.
 
 La sortie rendue d’un fragment de contenu AEM qui utilise la disposition et la conception d’un modèle HTML joint est appelée *fragment de contenu visuel*.
-
-<!-- CQDOC-23232 - remove when GA -->
-
->[!NOTE]
->
->Les fragments de contenu visuel sont actuellement en disponibilité limitée.
->
->Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [&#128279;](mailto:experience-production-agent@adobe.com).
 
 Les modèles HTML contiennent des informations de mise en page et de conception, ce qui permet de visualiser les fragments de contenu. La connexion entre un modèle et un fragment de contenu est établie à l’aide de la syntaxe Handlebars pour mapper les balises HTML aux types de données (champs) définis dans le modèle de fragment de contenu. Cette définition permet à du contenu créé dans les champs respectifs de l’éditeur de fragment de contenu d’être affiché aux emplacements appropriés dans le modèle.
 
