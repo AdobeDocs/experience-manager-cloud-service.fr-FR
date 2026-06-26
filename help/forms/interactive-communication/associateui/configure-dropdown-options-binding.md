@@ -4,11 +4,11 @@ description: Découvrez comment configurer les options de liaison ou les options
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Application pour AEM Forms."
 exl-id: configure-dropdown-options-associate-ui
-source-git-commit: b817bcb02c4ff6ac369973ef658d9fcbdce95c51
+source-git-commit: b11e1b28aabba9e03553dc9e9394bff111facfee
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '670'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ Les champs déroulants de l’éditeur de communication interactive utilisent un
 | Qui | Avantage |
 |-----|---------|
 | **Auteur (concepteur de communication interactive)** | Proposez des choix de liste déroulante précis et pilotés par les données aux associés sans configurations de liaison de données non prises en charge. |
-| **Associé (agent/représentant de service)** | Afficher la liste d’options correcte et la valeur présélectionnée lors de l’exécution des communications client dans l’interface utilisateur d’Associate. |
+| **Associé (représentant de service)** | Afficher la liste d’options correcte et la valeur présélectionnée lors de l’exécution des communications client dans l’interface utilisateur d’Associate. |
 
 ## Avant de commencer
 
@@ -43,6 +43,7 @@ Lorsque **Options Source** n’est pas défini sur **Liaison à partir des donn�
 
 - Les auteurs ajoutent manuellement des options via le panneau **Propriétés**.
 - **Valeur par défaut** reste disponible — le concepteur du formulaire peut sélectionner explicitement l’option qui apparaît comme valeur présélectionnée dans l’interface utilisateur d’Associate.
+
 
 ## Configurer les options de liste déroulante
 
@@ -69,6 +70,7 @@ Lorsque **Options Source** n’est pas défini sur **Liaison à partir des donn�
 1. Si vous utilisez des options manuelles, définissez **Valeur par défaut** selon les besoins.
 
 1. Cliquez sur **Enregistrer** et publiez la communication interactive.
+
 
 ## Vérifier dans l’interface utilisateur associée
 

@@ -4,11 +4,11 @@ description: 'Découvrez comment configurer des variables liées et non liées d
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Application pour AEM Forms."
 exl-id: configure-bound-unbound-variables-associate-ui
-source-git-commit: b817bcb02c4ff6ac369973ef658d9fcbdce95c51
+source-git-commit: b11e1b28aabba9e03553dc9e9394bff111facfee
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1404'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Les auteurs activent la modification associée avec **Autoriser la modification 
 | Qui | Avantage |
 |-----|---------|
 | **Auteur (concepteur de communication interactive)** | Choisissez si associe la modification en ligne dans l’aperçu ou champ par champ dans le panneau de saisie de données. |
-| **Associé (agent/représentant de service)** | Saisissez dans le workflow les données qui correspondent le mieux à la communication : modification en ligne ou entrée de panneau structuré. |
+| **Associé (représentant de service)** | Saisissez dans le workflow les données qui correspondent le mieux à la communication : modification en ligne ou entrée de panneau structuré. |
 
 ## Avant de commencer
 
@@ -44,6 +44,7 @@ Une variable non liée est créée directement dans un composant **Texte** et n�
 
 - Le panneau **Champ** propriétés affiche **Nom**, **Valeur**, **Type d’affichage** et **Liaison**.
 - Sous **Associer les propriétés**, vous pouvez configurer **Info-bulle** et **Validations**.
+
 
 ## Modifier l’ensemble du composant Texte dans l’aperçu du document
 
@@ -79,6 +80,7 @@ Activez **Autoriser la modification par associé** sur le composant **Texte** et
    ![Modification du composant Texte entier en ligne dans l’interface utilisateur associée](/help/forms/interactive-communication/assets/bound-unbound-variable2.png)
 
 1. Sélectionnez éventuellement **Aperçu de l’impression** pour confirmer que la sortie générée correspond à l’aperçu.
+
 
 ## Modifier des variables individuelles dans le panneau de saisie de données
 
@@ -131,6 +133,7 @@ Désactivez **Autoriser la modification par associé** sur le composant **Texte*
 
 1. Sélectionnez éventuellement **Aperçu de l’impression** pour confirmer que la sortie générée correspond à l’aperçu.
 
+
 ## Noms de variables en double (liés et non liés)
 
 Lorsque des variables liées et non liées portant le même nom apparaissent à plusieurs emplacements sur la zone de travail de conception, une seule instance de chaque nom de variable apparaît dans le panneau de saisie de données de gauche. L’associé saisit chaque valeur une fois ; il se propage automatiquement à toutes les occurrences correspondantes dans l’aperçu du document.
@@ -163,6 +166,7 @@ Lorsque des variables liées et non liées portant le même nom apparaissent à 
    ![Vérification de la propagation des variables en double dans l’interface utilisateur associée](/help/forms/interactive-communication/assets/bound-unbound-variable8.png)
 
 1. Sélectionnez éventuellement **Aperçu de l’impression** pour confirmer que la sortie générée correspond à l’aperçu.
+
 
 ## Considérations
 

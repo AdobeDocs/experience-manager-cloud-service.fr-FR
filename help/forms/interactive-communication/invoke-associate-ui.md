@@ -4,9 +4,9 @@ description: Découvrez comment intégrer l’interface utilisateur d’AEM Form
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Application pour AEM Forms."
 exl-id: f946ccea-86d0-4086-8208-9583b8206244
-source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
+source-git-commit: b11e1b28aabba9e03553dc9e9394bff111facfee
 workflow-type: tm+mt
 source-wordcount: '1142'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 # Intégrer l’interface utilisateur associée à votre application
 
 
-Cet article explique comment intégrer l’interface utilisateur Associer à votre application, ce qui permet aux professionnels en contact avec les clients, tels que les associés de terrain et les agents de service, de générer des communications interactives personnalisées en temps réel sur les instances de publication.
+Cet article explique comment intégrer l’interface utilisateur Associer à votre application, ce qui permet aux professionnels en contact avec les clients, tels que les associés de terrain et les représentants de service, de générer des communications interactives personnalisées en temps réel sur les instances de publication.
 
 ## Conditions préalables
 

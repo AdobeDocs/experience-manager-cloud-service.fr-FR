@@ -1,12 +1,12 @@
 ---
 title: Associer l’interface utilisateur dans l’éditeur de communication interactive
-description: Découvrez l’interface utilisateur associée dans l’éditeur de communication interactive en permettant à l’agent face au client de générer des communications personnalisées et conformes.
+description: Découvrez l’interface utilisateur d’Associate dans l’éditeur de communication interactive en permettant aux associés avec des clients de générer des communications personnalisées et conformes.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Application pour AEM Forms."
 exl-id: 9ba58659-b14c-4ebc-a6d9-e56a4b6aa48b
-source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
+source-git-commit: b11e1b28aabba9e03553dc9e9394bff111facfee
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 3%
@@ -16,7 +16,7 @@ ht-degree: 3%
 # Associer l’interface utilisateur dans l’éditeur de communication interactive
 
 
-L’**interface utilisateur associée** est une interface simplifiée spécialisée reposant sur l’éditeur de communications interactives (IC). Il est conçu pour les professionnels en contact avec les clients, tels que les associés de terrain et les agents de service, afin de générer des communications personnalisées, conformes et précises en temps réel lors des interactions en direct.
+L’**interface utilisateur associée** est une interface simplifiée spécialisée reposant sur l’éditeur de communications interactives (IC). Il est conçu pour les professionnels en contact avec les clients, tels que les associés de terrain et les représentants de service, afin de générer des communications personnalisées, conformes et précises en temps réel lors des interactions en direct.
 
 ![Rechercher document IC](/help/forms/interactive-communication/assets/associate-ui-preview.png)
 
