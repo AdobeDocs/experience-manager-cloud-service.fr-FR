@@ -7,10 +7,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 mini-toc-levels: 2
-source-git-commit: 0c99c27e22fd14485b367fdda8dc76c03aff65dc
+source-git-commit: fb677fc41d66133313c8cf9f4e198aa70a7891b1
 workflow-type: tm+mt
-source-wordcount: '2211'
-ht-degree: 59%
+source-wordcount: '2318'
+ht-degree: 57%
 
 ---
 
@@ -44,7 +44,7 @@ Les propriétés de page peuvent contrôler de nombreux aspects d’une page, de
 
    * Vous pouvez ajouter ou supprimer des balises de la page en mettant à jour la liste dans la zone de sélection.
    * Utilisez la liste déroulante pour effectuer une sélection parmi des balises existantes.
-   * La balise sélectionnée est alors répertoriée sous la zone de sélection. Vous pouvez supprimer une balise de cette liste à l’aide du symbole x.
+   * Après avoir sélectionné une balise, celle-ci est-elle répertoriée sous la zone de sélection ? Vous pouvez supprimer une balise de cette liste à l’aide du x.
    * Vous pouvez saisir une nouvelle balise en saisissant son nom dans une zone de sélection vide.
 
       * La nouvelle balise est créée lorsque vous appuyez sur Entrée.
@@ -93,7 +93,7 @@ L’heure d’activation/désactivation d’une page est un moyen pratique de ma
 
 * **Heure d’activation** – Date et heure auxquelles la page publiée sera rendue visible (rendue) dans l’environnement de publication. La page doit être publiée, soit manuellement, soit par réplication automatique préconfigurée.
 
-   * Si la page est déjà [publiée,](/help/sites-cloud/authoring/sites-console/publishing-pages.md) elle est disponible sur l’instance de publication, mais à l’état inactif (masquée) jusqu’au rendu à l’heure spécifiée. 
+   * Si la page est déjà [publiée,](/help/sites-cloud/authoring/sites-console/publishing-pages.md) elle est disponible sur l’instance de publication, mais à l’état inactif (masquée) jusqu’au rendu à l’heure spécifiée.
    * Si elle n’est pas publiée et [configurée pour la réplication automatique,](/help/operations/replication.md#on-and-off-times-trigger-configuratio) la page est automatiquement publiée, puis rendue au moment spécifié.
    * Si elle n’est pas publiée et n’est pas configurée pour la réplication automatique, la page n’est pas publiée automatiquement. Un message 404 s’affiche lors d’une tentative d’accès à la page.
 
@@ -149,6 +149,10 @@ Cette propriété vous permet de saisir une URL Vanity pour cette page, ce qui p
 
 * **Configuration du cloud** – Chemin d’accès à la configuration sélectionnée
 
+### Configuration de SPA {#spa-configuration}
+
+* **URL de l’application distante** - URL de l’application distante lors de l’implémentation d’une [application monopage](/help/implementing/developing/hybrid/introduction.md)
+
 ### Paramètres de modèles {#template-settings}
 
 * **Modèles autorisés** : [définit la liste des modèles qui seront disponibles](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author) dans cette sous-branche.
@@ -186,6 +190,10 @@ Cette propriété vous permet de saisir une URL Vanity pour cette page, ce qui p
    * Certaines options entrent en conflit avec d&#39;autres. Dans ce cas, l’option la plus permissive prévaut.
 
 * **Générer un plan de site** : lorsque cette option est sélectionnée, un fichier `sitemap.xml` est généré pour cette page et ses descendants.
+
+* **Données structurées (JSON-LD)** - Le contenu défini ici est émis dans une balise `<script type="application/ld+json">` dans l’en-tête de la page par le [composant de page.](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/wcm-components/page#structured-data)
+   * Cliquez sur **Ajouter** pour ajouter des données structurées.
+   * Chaque entrée doit être un objet JSON-LD complet d’un type [schema.org](https://schema.org) (par exemple, FAQPage, HowTo ou Product).
 
 ## Images {#images}
 

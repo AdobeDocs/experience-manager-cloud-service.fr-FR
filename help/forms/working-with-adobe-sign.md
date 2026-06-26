@@ -7,10 +7,10 @@ role: User, Developer
 level: Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: e4bb698c4673df61f47bfc12827facf8fc3caccd
+source-git-commit: 0383afd23b330ccb958914444c9100cd97f03c7c
 workflow-type: tm+mt
-source-wordcount: '3341'
-ht-degree: 80%
+source-wordcount: '3379'
+ht-degree: 79%
 
 ---
 
@@ -194,6 +194,8 @@ Pour sélectionner un Cloud Service et l’ordre de signature :
 ### Définition de l’expiration du document pour un contrat Adobe Sign {#set-document-expiration-for-an-adobe-sign-agreement}
 
 Vous pouvez définir une date limite d’expiration pour les contrats Adobe Sign afin que les destinataires puissent terminer la signature dans un nombre de jours spécifié. Lorsqu’un formulaire est envoyé, AEM Forms transmet la valeur configurée à Adobe Sign en tant que `daysUntilSigningDeadline`.
+
+<span class="preview"> La définition de l’expiration des documents pour les contrats Adobe Sign se fait dans le cadre du programme des utilisateurs précoces. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre ID d’e-mail officiel pour rejoindre le programme des utilisateurs et utilisatrices précoces et demander l’accès à cette fonctionnalité. </span>
 
 Pour définir l’expiration du document :
 

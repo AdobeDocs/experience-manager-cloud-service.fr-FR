@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: e4bb698c4673df61f47bfc12827facf8fc3caccd
+source-git-commit: 0383afd23b330ccb958914444c9100cd97f03c7c
 workflow-type: tm+mt
-source-wordcount: '3984'
+source-wordcount: '4035'
 ht-degree: 33%
 
 ---
@@ -64,6 +64,8 @@ Chargez votre modèle XFA (fichier XDP) vers votre instance AEM Forms. Pour conf
 Votre formulaire adaptatif est maintenant configuré pour utiliser un fichier XDP comme modèle de PDF d’envoi. L’étape suivante consiste à [lier les composants de formulaire adaptatif aux champs de modèle correspondants](#bind-adaptive-form-components-with-template-fields).
 
 ## Utiliser des modèles XDP personnalisés spécifiques aux paramètres régionaux pour Submission PDF {#locale-specific-custom-xdp-templates-for-document-of-record}
+
+<span class="preview"> configuration de PDF d’envoi pour les formulaires incorporés dans des pages AEM Sites et les modèles XDP personnalisés spécifiques aux paramètres régionaux pour les documents d’enregistrement se trouvent sous le Programme des utilisateurs et utilisatrices précoces . Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre ID d’e-mail officiel pour rejoindre le programme des utilisateurs et utilisatrices précoces et demander l’accès à ces fonctionnalités. </span>
 
 Lorsque vous associez un modèle XFA personnalisé (fichier XDP) en tant que modèle de PDF d’envoi, vous pouvez fournir des versions du modèle spécifiques aux paramètres régionaux. AEM Forms sélectionne automatiquement le fichier XDP approprié en fonction des paramètres régionaux du formulaire lors de la génération du PDF d’envoi.
 
