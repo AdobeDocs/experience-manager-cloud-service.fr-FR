@@ -7,10 +7,10 @@ role: User, Developer
 level: Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: e4bb698c4673df61f47bfc12827facf8fc3caccd
 workflow-type: tm+mt
-source-wordcount: '3249'
-ht-degree: 88%
+source-wordcount: '3341'
+ht-degree: 80%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 88%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) |
 | AEM as a Cloud Service | Cet article |
 
 
@@ -61,17 +61,17 @@ Pour configurer [!DNL Adobe Sign] pour un formulaire adaptatif, vous devez effec
 1. [Activation d’ [!DNL Adobe Sign]  pour un formulaire adaptatif](#enableadobsignforanadaptiveform)
 1. [Ajout de champs [!DNL Adobe Sign] à un formulaire adaptatif](#addadobesignfieldstoanadaptiveform)
 1. [Sélection d’un service cloud  [!DNL Adobe Sign]  pour un formulaire adaptatif](#select-adobe-sign-cloud-service-and-signing-order)
-
+1. [Définition de l’expiration du document pour un contrat Adobe Sign](#set-document-expiration-for-an-adobe-sign-agreement)
 1. [Ajout d’un destinataire  [!DNL Adobe Sign]  à un formulaire adaptatif](#addsignerstoanadaptiveform)
 1. [Sélection d’une action d’envoi pour un formulaire adaptatif](#selectsubmitactionforanadaptiveform)
 
-![Détails du destinataire](assets/signer_details_new.png)
+![Configuration de la signature électronique, y compris l’expiration du document (jours) et paramètres du destinataire](assets/signer_details_new.png)
 
 ### Activation d’[!DNL Adobe Sign] pour un formulaire adaptatif  {#enableadobesign}
 
 Vous pouvez activer [!DNL Adobe Sign] pour un formulaire adaptatif existant ou créer un formulaire adaptatif prenant en charge [!DNL Adobe Sign]. Choisissez l’une des méthodes suivantes :
 
-* [Création d’un formulaire adaptatif prenant en charge [!DNL Adobe Sign] &#x200B;](#create-an-adaptive-form-for-adobe-sign)
+* [Création d’un formulaire adaptatif prenant en charge [!DNL Adobe Sign] ](#create-an-adaptive-form-for-adobe-sign)
 * [Activation d’ [!DNL Adobe Sign]  pour un formulaire adaptatif existant](#editafsign)
 
 #### Création d’un formulaire adaptatif pour Adobe Sign {#create-an-adaptive-form-for-adobe-sign}
@@ -84,7 +84,7 @@ Pour créer un formulaire adaptatif prenant en charge les signatures :
 
    1. Précisez les **[!UICONTROL Nom]** et **[!UICONTROL Titre]** pour le formulaire adaptatif.
 
-   1. Sélectionnez le [conteneur de configurations](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) créé lors de l’ [!DNL Adobe Sign] intégration d’[&#x200B; à [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
+   1. Sélectionnez le [conteneur de configurations](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) créé lors de l’ [!DNL Adobe Sign] intégration d’[ à [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
 
    Le conteneur de configurations contient les services [!DNL Adobe Sign] Cloud Services configurés pour votre environnement. Ces services peuvent être sélectionnés dans le créateur de formulaires adaptatifs.
 
@@ -191,6 +191,22 @@ Pour sélectionner un Cloud Service et l’ordre de signature :
 
 1. [Ajouter des destinataires à un formulaire adaptatif](working-with-adobe-sign.md#addsignerstoanadaptiveform) et sélectionnez l’icône Terminé ![Enregistrer](assets/save_icon.svg) pour enregistrer les modifications.
 
+### Définition de l’expiration du document pour un contrat Adobe Sign {#set-document-expiration-for-an-adobe-sign-agreement}
+
+Vous pouvez définir une date limite d’expiration pour les contrats Adobe Sign afin que les destinataires puissent terminer la signature dans un nombre de jours spécifié. Lorsqu’un formulaire est envoyé, AEM Forms transmet la valeur configurée à Adobe Sign en tant que `daysUntilSigningDeadline`.
+
+Pour définir l’expiration du document :
+
+1. Dans le navigateur de contenu, sélectionnez **[!UICONTROL Conteneur de formulaire]**, puis sélectionnez l’icône **[!UICONTROL Configurer]** ![configurer](assets/Smock_Wrench_18_N.svg).
+1. Dans l’explorateur de propriétés, développez l’accordéon **[!UICONTROL Signature électronique]** et sélectionnez l’option **[!UICONTROL Activer Adobe Sign]**.
+1. Dans le champ **[!UICONTROL Expiration du document (jours)]** indiquez le nombre de jours pendant lesquels les destinataires doivent terminer la signature.
+
+1. Sélectionnez l’icône Terminé ![Enregistrer](assets/save_icon.svg) pour enregistrer les modifications.
+
+>[!NOTE]
+>
+> Le champ **[!UICONTROL Expiration du document (jours)]** est facultatif. Si vous le laissez vide, l’accord n’expire pas.
+
 ### Ajout de destinataires à un formulaire adaptatif {#addsignerstoanadaptiveform}
 
 Vous pouvez avoir un ou plusieurs destinataires pour un contrat Adobe Sign. Lorsque vous ajoutez un destinataire, vous pouvez également configurer les informations d’authentification du destinataire et choisir si l’utilisateur et le destinataire du formulaire sont la même personne. Suivez les étapes suivantes pour ajouter et fournir diverses informations sur un destinataire :
@@ -204,7 +220,7 @@ Vous pouvez avoir un ou plusieurs destinataires pour un contrat Adobe Sign. Lors
 
    * **[!UICONTROL Titre] :** spécifiez un titre pour identifier de manière unique un destinataire.
 
-   * **[!UICONTROL Le destinataire et la personne remplissant le formulaire ne sont-ils qu’une seule et même personne ?] :** sélectionnez **[!UICONTROL Oui]** si l’utilisateur et le premier destinataire du formulaire sont la même personne. <!-- If the option is set to **No,** then do not use the signature step component in the Adaptive Form. If the form contains a Signature Step component, then the field is automatically set to Yes. -->
+   * **[!UICONTROL Le destinataire et la personne remplissant le formulaire sont-ils la même personne ?]:** Sélectionnez **[!UICONTROL Oui]** si le remplisseur du formulaire et le premier destinataire sont la même personne. <!-- If the option is set to **No,** then do not use the signature step component in the Adaptive Form. If the form contains a Signature Step component, then the field is automatically set to Yes. -->
 
    * **[!UICONTROL Rôle du destinataire] :** sélectionnez le rôle d’un destinataire. Les niveaux de service professionnel et entreprise d’Adobe Sign offrent la possibilité d’étendre les rôles [aux destinataires du contrat](https://helpx.adobe.com/fr/sign/using/set-up-signer-approver-roles.html) en plus du **Signataire**, afin de mieux répondre aux exigences de leurs workflows.
 
@@ -301,7 +317,7 @@ Vous pouvez également associer un bindref à l’ID de contrat (agreementId). I
 >Data of the Adaptive Form is stored temporarily on Forms Portal. Adobe recommends using [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
 -->
 
-Votre expérience de signature de formulaire est prête. Vous pouvez prévisualiser le formulaire pour vérifier l’expérience de signature. Sur le formulaire publié, les champs de bloc [!DNL Adobe Sign] sont affichés lorsqu’un destinataire reçoit le formulaire à signer dans un e-mail. Lorsque l’option **[!UICONTROL Le destinataire et la personne remplissant le formulaire ne sont-ils qu’une seule et même personne ?]** si Oui est sélectionné et que la condition est remplie, l’utilisateur est redirigé vers le contrat Adobe Sign après les envois. Il peut signer le document immédiatement, au lieu d’attendre que le contrat apparaisse dans l’e-mail.
+Votre expérience de signature de formulaire est prête. Vous pouvez prévisualiser le formulaire pour vérifier l’expérience de signature. Sur le formulaire publié, les champs de bloc [!DNL Adobe Sign] sont affichés lorsqu’un destinataire reçoit le formulaire à signer dans un e-mail. Lorsque le **[!UICONTROL Quand le destinataire et la personne remplissant le formulaire ne sont-ils qu’une seule et même personne ?]** est cochée oui et que la condition est remplie, l’utilisateur est redirigé vers le contrat Adobe Sign après les envois. Il peut signer le document immédiatement, au lieu d’attendre que le contrat apparaisse dans l’e-mail.
 
 ## Configuration des signatures cloud pour un formulaire adaptatif {#configure-cloud-signatures-for-an-adaptive-form}
 
@@ -349,21 +365,21 @@ Le composant **[!UICONTROL Étape de résumé]** envoie automatiquement le formu
 
 ## Questions fréquemment posées {#frequently-asked-questions}
 
-**Question :** Vous pouvez incorporer un formulaire adaptatif dans un autre formulaire adaptatif. Le formulaire adaptatif intégré peut-il être activé pour [!DNL Adobe Sign] ?
-**Réponse :** Non, Experience Manager Forms ne prend pas en charge l’utilisation d’un formulaire adaptatif incorporant un formulaire adaptatif activé pour [!DNL Adobe Sign] à des fins de signature.
+**Q:** Vous pouvez incorporer un formulaire adaptatif dans un autre formulaire adaptatif. Le formulaire adaptatif incorporé peut-il être activé pour [!DNL Adobe Sign] ?
+**Réponse :** Non, Experience Manager Forms ne prend pas en charge l’utilisation d’un formulaire adaptatif incorporant un formulaire adaptatif prenant en charge les [!DNL Adobe Sign] pour signature
 
-**Question :** Lorsque je crée un formulaire adaptatif à l’aide du modèle avancé et que je l’ouvre pour le modifier, le message d’erreur « La signature électronique ou les destinataires ne sont pas configurés correctement » s’affiche. Comment résoudre le message d’erreur ?
-**Réponse :** Le formulaire adaptatif créé à l’aide du modèle avancé est configuré pour utiliser [!DNL Adobe Sign]. Pour résoudre l’erreur, créez et sélectionnez une configuration cloud [!DNL Adobe Sign] et configurez un destinataire [!DNL Adobe Sign] pour le formulaire adaptatif.
+**Q:** Lorsque je crée un formulaire adaptatif à l’aide du modèle avancé et que je l’ouvre pour le modifier, un message d’erreur « La signature électronique ou les destinataires ne sont pas configurés correctement » s’affiche. Comment résoudre le message d’erreur ?
+**Réponse :** le formulaire adaptatif créé à l’aide du modèle avancé est configuré pour utiliser [!DNL Adobe Sign]. Pour résoudre l’erreur, créez et sélectionnez une configuration cloud [!DNL Adobe Sign] et configurez un destinataire [!DNL Adobe Sign] pour le formulaire adaptatif.
 
-**Question :** Puis-je utiliser des balises de texte [!DNL Adobe Sign] dans un composant de texte statique d’un formulaire adaptatif ?
-**Réponse :** Oui, vous pouvez utiliser des balises de texte dans un composant de texte pour ajouter des champs [!DNL Adobe Sign] à un formulaire adaptatif doté de l’option Document d’enregistrement (option de document d’enregistrement généré automatiquement uniquement). Pour en savoir plus sur la procédure et les règles de création d’une balise de texte, voir la [documentation d’Adobe Sign](https://helpx.adobe.com/fr/sign/using/text-tag.html). Notez également que les formulaires adaptatifs offrent une prise en charge limitée des balises de texte. Vous pouvez utiliser les balises de texte pour créer uniquement les champs pris en charge par le [bloc Adobe Sign](working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form).
+**Q:** Puis-je utiliser des balises de texte [!DNL Adobe Sign] dans un composant de texte statique d’un formulaire adaptatif ?
+**Réponse :** Oui, vous pouvez utiliser des balises de texte dans un composant de texte pour ajouter des champs de [!DNL Adobe Sign] à un formulaire adaptatif doté de l’option Document d’enregistrement (option de document d’enregistrement généré automatiquement uniquement). Pour en savoir plus sur la procédure et les règles de création d’une balise de texte, voir [Documentation Adobe Sign](https://helpx.adobe.com/fr/sign/using/text-tag.html). Notez également que les Forms adaptatives prennent peu en charge les balises de texte. Vous pouvez utiliser les balises de texte pour créer uniquement les champs pris en charge par [le bloc Adobe Sign](working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form).
 
 ## Résolution des problèmes {#troubleshoot}
 
 ### Échecs des accords [!DNL Adobe Sign] {#adobe-sign-agreement-failures}
 
 **Problème**
-Lorsque le service [!DNL Adobe Sign] est configuré pour un formulaire adaptatif, il ne parvient pas à créer un accord [!DNL Adobe Sign] pour le formulaire adaptatif sous-jacent.
+Lorsque [!DNL Adobe Sign] service est configuré pour un formulaire adaptatif, il ne parvient pas à créer un accord de [!DNL Adobe Sign] pour le formulaire adaptatif sous-jacent.
 
 **Résolution**
 
