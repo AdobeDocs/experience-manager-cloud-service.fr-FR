@@ -5,10 +5,10 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
+source-git-commit: 18d47f745ba1332ccafc7e092d710a70710f1033
 workflow-type: tm+mt
-source-wordcount: '1203'
-ht-degree: 36%
+source-wordcount: '1200'
+ht-degree: 33%
 
 ---
 
@@ -24,7 +24,7 @@ Le déploiement transparent du code vers les environnements d’évaluation, pui
 1. **Déploiement dans l’environnement d’évaluation** - Le code est créé et déployé dans l’environnement d’évaluation pour les tests fonctionnels automatisés, les tests de l’interface utilisateur, le contrôle de l’expérience et les tests d’acceptation utilisateur (UAT).
 1. **Déploiement dans l’environnement de production** - Une fois la version validée à l’étape d’évaluation et approuvée pour le passage en production, le même artefact de build est déployé dans l’environnement de production.
 
-_Seul le type de pipeline Code full stack prend en charge l’analyse de code, les tests de fonction, les tests d’interface d’utilisation et l’audit d’expérience._
+_Seul le type de pipeline Code de pile complète prend en charge l’analyse du code, les tests fonctionnels, les tests de l’interface utilisateur et le contrôle de l’expérience._
 
 ## Processus de déploiement {#deployment-process}
 
@@ -32,7 +32,7 @@ Tous les déploiements de Cloud Service suivent un processus continu pour garant
 
 >[!NOTE]
 >
->Le cache de Dispatcher est effacé à chaque déploiement, puis préchauffé avant que les nouveaux nœuds de publication ne commencent à accepter le trafic.
+>Le cache de Dispatcher est effacé à chaque déploiement, puis actualisé avant que les nouveaux nœuds de publication ne commencent à accepter le trafic.
 
 ## Déploiement de votre code avec Cloud Manager dans AEM as a Cloud Service {#deploying-code-with-cloud-manager}
 
@@ -89,19 +89,19 @@ La phase de **test d’évaluation** comprend les étapes suivantes :
 
 ### Phase de déploiement en production {#production-deployment}
 
-Le processus de déploiement des topologies de production diffère légèrement afin de minimiser l’impact sur les visiteurs d’un site AEM.
+Le processus de déploiement des topologies de production diffère légèrement afin de minimiser l’impact sur les utilisateurs d’un site [!DNL AEM].
 
-Les déploiements en production suivent généralement les mêmes étapes décrites précédemment, mais par roulements. Ces étapes sont les suivantes :
+Les déploiements en production suivent les mêmes étapes que celles décrites précédemment, mais par roulements. Ces étapes sont les suivantes :
 
 1. Déploiement des packages AEM sur l’instance de création.
 1. Désolidarisez le `dispatcher1` de l’équilibreur de charge.
 1. Déployez les packages AEM sur `publish1` et le package Dispatcher sur `dispatcher1`, videz le cache de Dispatcher.
-1. Replacez-`dispatcher1` dans l’équilibreur de charge.
+1. Ajoutez à nouveau des `dispatcher1` dans la répartition de charge.
 1. Lorsque `dispatcher1` est de nouveau en service, désolidarisez le `dispatcher2` de la répartition de charge.
 1. Déployez les packages AEM sur `publish2` et le package Dispatcher sur `dispatcher2`, videz le cache de Dispatcher.
-1. Replacez-`dispatcher2` dans l’équilibreur de charge.
+1. Ajoutez à nouveau des `dispatcher2` dans la répartition de charge.
 
-Ce processus se poursuit jusqu’à ce que le déploiement ait atteint tous les éditeurs et Dispatchers dans la topologie.
+Ce processus se répète jusqu’à ce que le déploiement soit appliqué à tous les éditeurs et Dispatchers dans la topologie.
 
 ![Phase de déploiement en production](assets/production-deployment.png)
 
@@ -123,7 +123,7 @@ Les étapes suivantes expirent s’ils sont en attente de commentaires de l’ut
 Dans de rares cas, les étapes de déploiement en production peuvent échouer pour des raisons transitoires. Dans ce cas, la réexécution de l’étape de déploiement en production est prise en charge tant que l’étape de déploiement en production est terminée, quel que soit le type d’achèvement (par exemple, annulée ou infructueuse). La réexécution crée une nouvelle exécution à l’aide du même pipeline, composée des trois étapes suivantes :
 
 1. **Validation** - La même validation qui se produit lors de l’exécution normale d’un pipeline.
-1. **Version** - Dans le contexte d’une réexécution, l’étape de création consiste à copier des artefacts, sans réellement exécuter un nouveau processus de création.
+1. **Build** - Dans le contexte d’une réexécution, l’étape de build copie les artefacts et n’exécute pas de nouveau processus de build.
 1. **Déploiement en production** - Utilise la même configuration et les mêmes options que l’étape de déploiement en production dans une exécution normale de pipeline.
 
 Dans de telles circonstances, si une réexécution est possible, la page de statut du pipeline de production fournit l’option **Réexécuter** en regard de l’option habituelle **Télécharger le journal de création**.
@@ -142,7 +142,7 @@ Dans de telles circonstances, si une réexécution est possible, la page de stat
 
 ### Exécuter à nouveau l’API {#reexecute-API}
 
-En plus d’être disponible dans l’IU, l’[API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/?lang=fr#tag/Pipeline-Execution) peut servir à déclencher de nouvelles exécutions et à identifier les exécutions déclenchées comme nouvelles exécutions.
+En plus d’être disponible dans l’IU, l’[API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#tag/Pipeline-Execution) peut servir à déclencher de nouvelles exécutions et à identifier les exécutions déclenchées comme nouvelles exécutions.
 
 #### Déclencher une nouvelle exécution {#reexecute-deployment-api}
 
@@ -192,6 +192,6 @@ La syntaxe de la valeur href du lien HAL n’est qu’un exemple. La valeur rée
 
 L’envoi d’une requête PUT vers ce point d’entrée entraîne la génération d’une réponse 201 en cas de réussite, le corps de la réponse étant la représentation de la nouvelle exécution. Ce workflow est similaire au démarrage d’une exécution régulière via l’API.
 
-#### Identifier une exécution de réexécution {#identify-reexecution}
+#### Identifier une réexécution {#identify-reexecution}
 
 Le système identifie les réexécutions en définissant le champ `trigger` sur la valeur `RE_EXECUTE`.
