@@ -5,9 +5,9 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Asse
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 0026550effc426691a4d63faf169ecd7b9228a57
 workflow-type: tm+mt
-source-wordcount: '2587'
+source-wordcount: '4335'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Pour commencer à utiliser AEM Assets dans l’éditeur Adobe Express, procédez
 
 2. Ouvrez une nouvelle zone de travail vierge en chargeant un nouveau modèle ou un nouveau projet, ou en créant une ressource.
 
-3. Cliquez sur **[!UICONTROL Assets]** disponible dans le volet de navigation de gauche. Adobe Express affiche le [gestionnaire d’accès](#intelligent-asset-discovery-content-advisor), qui répertorie les référentiels auxquels vous avez accès, ainsi que la liste des ressources et des dossiers disponibles au niveau racine.
+3. Cliquez sur **** disponible dans le volet de navigation de gauche. Adobe Express affiche le [gestionnaire d’accès](#intelligent-asset-discovery-content-advisor), qui répertorie les référentiels auxquels vous avez accès, ainsi que la liste des ressources et des dossiers disponibles au niveau racine.
 
 4. Recherchez ou recherchez des ressources dans le référentiel à l’aide du [gestionnaire d’accès](#intelligent-asset-discovery-content-advisor), puis faites-les glisser et déposez-les sur la zone de travail. Vous pouvez également cliquer sur les ressources pour les placer sur la zone de travail. Vous pouvez également filtrer les ressources ![filtrer](assets/do-not-localize/filter.svg) selon différents critères, tels que le statut d’approbation, le type de fichier, le type MIME et les dimensions.
 
@@ -155,7 +155,7 @@ Cliquez sur l’icône ![icône d’aperçu](assets/do-not-localize/preview-icon
 
 ![Prévisualisation des rendus Dynamic Media](assets/native-express-dynamic-media-preview.png)
 
-Cliquez sur **[!UICONTROL Ajouter des modificateurs]**, spécifiez un modificateur dans la zone de texte, puis appuyez sur Entrée pour appliquer la transformation aux rendus en temps réel. De même, vous pouvez ajouter plusieurs modificateurs à un rendu et prévisualiser ces transformations. Effectuez un glisser-déposer de la ressource de l’aperçu dans la zone de travail. Le rendu après l’application de ces modificateurs n’est pas enregistré. Consultez la liste des modificateurs pris en charge pour [Dynamic Media Scene7](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) et [Dynamic Media avec OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
+Cliquez sur **[!UICONTROL Ajouter des modificateurs]**, spécifiez un modificateur dans la zone de texte, puis appuyez sur Entrée pour appliquer la transformation aux rendus en temps réel. De même, vous pouvez ajouter plusieurs modificateurs à un rendu et prévisualiser ces transformations. Effectuez un glisser-déposer de la ressource de l’aperçu dans la zone de travail. Le rendu après l’application de ces modificateurs n’est pas enregistré. Consultez la liste des modificateurs pris en charge pour [Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) et [Dynamic Media avec OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
 >[!IMPORTANT]
 > 
@@ -229,17 +229,15 @@ Après avoir incorporé les modifications appropriées dans la zone de travail E
 
    ![Enregistrement de ressources dans AEM](assets/adobe-express-share.png)
 
-2. Sélectionnez **AEM Assets**. Adobe Express affiche la boîte de dialogue de chargement.
+2. Sélectionnez ****. Adobe Express affiche la boîte de dialogue de chargement.
 
-3. Sélectionnez **Page actuelle** ou **Toutes les pages**. Spécifiez un nom et un format pour la ou les ressources à exporter. Vous pouvez exporter le contenu de la zone de travail aux formats PNG, JPEG, PDF, MP4, MP4+PNG ou MP4+JPEG. Le format s’ajuste automatiquement en fonction des ressources sur la ou les pages de la zone de travail.
-Sélectionner **Page active** enregistre la ressource sur la page active dans le dossier de destination. Si vous sélectionnez **Toutes les pages** et que le format d’exportation n’est pas PDF, toutes les pages de la zone de travail sont enregistrées en tant que fichiers distincts dans un nouveau dossier de votre dossier de destination. Si le format d’exportation est PDF, toutes les pages de la zone de travail sont enregistrées en tant que fichier PDF unique dans le dossier de destination.
+3. Sélectionnez **Page actuelle** ou **Toutes les pages**. Spécifiez un nom et un format pour la ou les ressources à exporter. Vous pouvez exporter le contenu de la zone de travail aux formats PNG, JPEG, PDF, MP4, MP4+PNG ou MP4+JPEG. Le format s’ajuste automatiquement en fonction des ressources sur la ou les pages de la zone de travail.Sélectionner **Page active** enregistre la ressource sur la page active dans le dossier de destination. Si vous sélectionnez **Toutes les pages** et que le format d’exportation n’est pas PDF, toutes les pages de la zone de travail sont enregistrées en tant que fichiers distincts dans un nouveau dossier de votre dossier de destination. Si le format d’exportation est PDF, toutes les pages de la zone de travail sont enregistrées en tant que fichier PDF unique dans le dossier de destination.
 
 4. Cliquez sur l’icône de dossier sous **Dossier de destination** pour sélectionner un emplacement et enregistrer la ou les ressources.
 
    ![Enregistrement de ressources dans AEM](/help/assets/assets/page-selection-and-destination-folder.png)
 
-5. Facultatif : vous pouvez ajouter des métadonnées de campagne pour votre chargement à l’aide du champ **Nom du projet ou de la campagne**. Vous pouvez utiliser un nom existant ou en créer un nouveau. Vous pouvez définir plusieurs noms de projet ou de campagne pour votre chargement. Pour enregistrer le nom, saisissez simplement le nom et appuyez sur Entrée.
-Adobe recommande, en règle générale, de spécifier des valeurs dans le reste des champs et de créer une expérience de recherche améliorée pour les ressources que vous avez chargées.
+5. Facultatif : vous pouvez ajouter des métadonnées de campagne pour votre chargement à l’aide du champ **Nom du projet ou de la campagne**. Vous pouvez utiliser un nom existant ou en créer un nouveau. Vous pouvez définir plusieurs noms de projet ou de campagne pour votre chargement. Pour enregistrer le nom, saisissez simplement le nom et appuyez sur Entrée.Adobe recommande, en règle générale, de spécifier des valeurs dans le reste des champs et de créer une expérience de recherche améliorée pour les ressources que vous avez chargées.
 
 6. De même, définissez des valeurs pour les champs **[!UICONTROL Mots-clés]** et **[!UICONTROL Canaux]**.
 
@@ -251,7 +249,7 @@ Adobe recommande, en règle générale, de spécifier des valeurs dans le reste 
 
 ## Formats de fichiers pris en charge {#supported-file-formats-import-assets}
 
-Adobe Express prend en charge de manière native les formats disponibles à l’adresse [Consultez les exigences minimales en matière d’image](https://helpx.adobe.com/fr/express/web/image-creation-and-editing/change-file-formats/image-requirements.html). Toutefois, AEM Assets prend en charge les types de formats suivants :
+Adobe Express prend en charge de manière native les formats disponibles à l’adresse [Consultez les exigences minimales en matière d’image](https://helpx.adobe.com/express/web/image-creation-and-editing/change-file-formats/image-requirements.html). Toutefois, AEM Assets prend en charge les types de formats suivants :
 
 | Format pris en charge | Dimensions/résolution max. | Taille de fichier max |
 |------------------|---------------------------------------------|---------------|
@@ -323,4 +321,77 @@ The [Content Fragments](/help/assets/content-fragments/content-fragments.md) tab
 ![Browse assets using Content Fragments](assets/browse-assets-content-fragment.png)
 -->
 
+## Questions fréquentes {#frequently-asked-questions-content-advisor}
+
+### Qu’est-ce que le gestionnaire de contenu dans l’intégration AEM Assets et Adobe Express ? {#content-advisor-overview}
+
+Content Advisor est une fonctionnalité de découverte de ressources intelligente et contextuelle, intégrée à l’intégration native d’AEM Assets dans Adobe Express. Il permet d’afficher les ressources appropriées et approuvées en fonction du contenu de la zone de travail Express, du résumé de campagne et de l’intention créative, sans nécessiter de recherches manuelles par mot-clé. Le gestionnaire d’accès permet également d’accéder aux rendus Dynamic Media, aux métadonnées des ressources, aux filtres, aux recherches enregistrées et aux collections, ce qui permet aux concepteurs et conceptrices de localiser, d’évaluer et d’utiliser AEM Assets directement dans l’interface d’Adobe Express sans changer d’outil.
+
+### Quelles sont les conditions préalables à l&#39;utilisation d&#39;AEM Assets dans Adobe Express ? {#aem-assets-express-prerequisites}
+
+L’utilisation d’AEM Assets dans Adobe Express nécessite des droits d’accès à Adobe Express et à au moins un environnement AEM Assets. L’environnement peut être n’importe quel référentiel Adobe Experience Manager Assets as a Cloud Service. Aucune installation de connecteur ou de plug-in supplémentaire n’est requise ; l’intégration est native d’Adobe Express.
+
+### Comment puis-je commencer à utiliser AEM Assets dans l’éditeur Adobe Express ? {#access-aem-assets-in-express}
+
+Pour commencer à utiliser AEM Assets dans Adobe Express, ouvrez l’application web Adobe Express, puis ouvrez une nouvelle zone de travail, un nouveau modèle ou un nouveau projet vierge. Cliquez sur Assets dans le volet de navigation de gauche pour ouvrir le gestionnaire d’accès, qui affiche les référentiels disponibles ainsi que les ressources et les dossiers au niveau racine. Recherchez ou recherchez des ressources, puis faites-les glisser et déposez-les sur la zone de travail ou cliquez sur une ressource pour la placer automatiquement. Assets peut également être filtré par statut d’approbation, type de fichier, type MIME et dimensions. Notez que le filtrage par dimension ne s’applique pas aux ressources vidéo.
+
+### Quel type de référentiel dois-je sélectionner dans le gestionnaire de contenu pour accéder à toutes les fonctionnalités ? {#content-advisor-repository-selection}
+
+Un référentiel d’auteur doit être sélectionné dans la liste déroulante Référentiel de la fonction de conseil Content Advisor pour accéder à toutes les fonctionnalités de cette dernière, notamment Recherche optimisée par l&#39;IA, les suggestions intelligentes, les résumés de campagne et les rendus Dynamic Media. Un référentiel de diffusion n’affiche aucune fonctionnalité de grille de contenu. Les Assets d’un référentiel de diffusion s’affichent au niveau racine uniquement dans une structure plate ; elles ne sont pas organisées dans des dossiers ou des collections.
+
+### Quels formats de fichiers peuvent être ajoutés à la zone de travail d’Adobe Express à l’aide de la fonction de conseil ? {#content-advisor-supported-formats}
+
+Content Advisor prend en charge l’ajout de ressources aux formats PNG, JPEG, PSD, MP4, SVG et PDF à la zone de travail Adobe Express. Vous pouvez prévisualiser les fichiers PDF en tant que documents défilables en cliquant sur l’icône Infos sur la carte de la ressource avant de les placer sur la zone de travail. Les métadonnées des ressources et les rendus Dynamic Media sont également accessibles via l’icône Infos pour chaque ressource en vue Liste et Grille.
+
+### Comment Recherche optimisée par l&#39;IA fonctionne-t-il dans le gestionnaire de contenu ? {#content-advisor-ai-search-faq}
+
+Recherche optimisée par l&#39;IA dans Content Advisor utilise l’intelligence artificielle et le machine learning pour interpréter la signification et l’intention derrière une requête de recherche plutôt que de correspondre aux mots-clés exacts. Il prend en charge les requêtes multilingues, gère les fautes d’orthographe et les fautes de frappe, comprend les synonymes et les termes associés, et fournit des résultats contextuels basés sur l’intention de l’utilisateur, ce qui permet aux utilisateurs de trouver les ressources appropriées même lorsque les requêtes sont formulées différemment ou saisies dans une autre langue. La version AEM minimale requise pour accéder à Recherche optimisée par l&#39;IA dans le gestionnaire d’accès est 21994.
+
+### Que sont les suggestions intelligentes dans le gestionnaire de contenu et quel contenu analysent-elles ? {#content-advisor-smart-suggestions-overview}
+
+Les suggestions intelligentes dans le gestionnaire d’accès font automatiquement apparaître les ressources pertinentes en fonction du contexte et de l’intention des calques de texte ou du titre présent dans la zone de travail d’Adobe Express. Les suggestions intelligentes analysent uniquement le contenu textuel de la zone de travail ; elles n’analysent pas les images disponibles dans la zone de travail. Les suggestions intelligentes ne se mettent pas automatiquement à jour à mesure que la zone de travail change. Cliquez sur l’icône d’actualisation dans le panneau Contenu suggéré pour afficher une liste mise à jour de suggestions. La version minimale requise d’AEM pour accéder aux suggestions intelligentes est 21994.
+
+### Les suggestions intelligentes dans le gestionnaire d&#39;accès nécessitent-elles un accord supplémentaire pour y accéder ? {#content-advisor-smart-suggestions-genai-rider}
+
+Pour accéder aux suggestions intelligentes dans le gestionnaire d’accès, vous devez signer un Cavalier GenAI. Contactez votre représentant ou représentante Adobe pour signer l’avenant GenAI et activer les suggestions intelligentes pour votre organisation. Une fois l’avenant GenAI signé, les suggestions intelligentes sont disponibles dans le gestionnaire de contenu d’Adobe Express pour tous les utilisateurs de l’entreprise qui répondent aux exigences de version minimale d’AEM de 21994.
+
+### Comment utiliser un résumé de campagne pour découvrir des ressources dans le gestionnaire de contenu ? {#content-advisor-campaign-briefs}
+
+Le gestionnaire d’accès prend en charge le téléchargement d’un document de résumé de campagne pour découvrir les ressources pertinentes sans saisir manuellement les mots-clés de recherche. Chargez un résumé de campagne au format PDF, DOCX ou TXT. Le gestionnaire de contenu analyse le contenu textuel pour comprendre l’intention de la campagne et recommande les ressources appropriées à partir d’AEM Assets. Les résumés de campagne sont analysés en fonction du contenu textuel uniquement ; les images du document de résumé ne sont pas analysées. Pour accéder aux résumés de campagne, vous devez signer un avenant GenAI — contactez votre représentant Adobe pour activer cette fonction. La version minimale requise d’AEM est 21994.
+
+### Comment accéder aux rendus Dynamic Media d’une ressource dans le gestionnaire d’accès ? {#content-advisor-dynamic-media-renditions}
+
+Pour accéder aux rendus Dynamic Media dans le gestionnaire d’accès, cliquez sur l’icône Infos sur une carte de ressource et sélectionnez l’onglet Dynamic Media . Les rendus disponibles comprennent les paramètres d’image prédéfinis, les recadrages intelligents, les types de format et les profils de couleurs optimisés pour des canaux spécifiques. Sélectionnez Dynamic Media en mode Scene7 ou Dynamic Media avec des rendus OpenAPI. Pour les rendus OpenAPI, les rendus disponibles s’affichent uniquement lorsque la ressource est approuvée et disponible dans Dynamic Media avec OpenAPI. Une licence Dynamic Media AEM valide est requise pour afficher l’onglet Dynamic Media .
+
+### Puis-je prévisualiser et appliquer des modificateurs aux rendus Dynamic Media avant de les placer sur la zone de travail ? {#content-advisor-dynamic-media-modifiers}
+
+Les rendus Dynamic Media dans le gestionnaire de contenu peuvent être prévisualisés et modifiés avant d’être placés sur la zone de travail Adobe Express. Cliquez sur l’icône d’aperçu d’un rendu pour le prévisualiser ou cliquez sur le nom du rendu pour le placer directement sur la zone de travail. Cliquez sur Ajouter des modificateurs, spécifiez un modificateur dans la zone de texte, puis appuyez sur Entrée pour appliquer des transformations en temps réel. Plusieurs modificateurs peuvent être appliqués et prévisualisés simultanément. Faites glisser et déposez le rendu prévisualisé sur la zone de travail pour le placer ; les modificateurs appliqués lors de la prévisualisation ne sont pas enregistrés dans la ressource dans AEM Assets.
+
+### Comment Dynamic Media aide-t-il à respecter la limite de taille de fichier dans Adobe Express ? {#content-advisor-dynamic-media-file-size}
+
+Dynamic Media dans le gestionnaire d’accès dépasse la taille limite de 80 Mo fixée pour le fichier de chargement dans Adobe Express en fournissant des rendus optimisés de ressources volumineuses directement depuis AEM Assets. Une ressource TIFF de 300 Mo, par exemple, peut être diffusée sous la forme d’un rendu de 2,5 Mo sans compromettre la qualité visuelle. Cela permet une utilisation efficace des ressources haute résolution dans Adobe Express sans nécessiter de réduction manuelle de la taille des fichiers ou de duplication avant l’importation.
+
+### Comment fonctionnent les recherches enregistrées dans le gestionnaire d’accès et sont-elles partagées avec la vue Assets ? {#content-advisor-saved-searches}
+
+Les recherches enregistrées créées dans la vue Assets sont disponibles dans le gestionnaire de contenu et fonctionnent de manière cohérente sur les navigateurs, ce qui permet la réutilisation de critères de recherche prédéfinis dans les deux interfaces. Pour enregistrer une recherche dans le gestionnaire d&#39;accès, appliquez les filtres souhaités, cliquez sur l&#39;icône Filtres, sélectionnez Gérer les recherches enregistrées, cliquez sur Créer une nouvelle recherche enregistrée et spécifiez un nom. Toutefois, les recherches récentes ne sont pas cohérentes entre la vue Assets et le gestionnaire de contenu ; un même utilisateur peut avoir des recherches récentes différentes dans chaque interface. Les recherches récentes ne sont pas partagées entre les différents navigateurs, ne sont pas disponibles en mode Incognito et sont spécifiques à un environnement AEM. La fonction Recherche enregistrée par défaut disponible dans la vue Assets n’est pas disponible dans le gestionnaire d’accès.
+
+### Puis-je rechercher des ressources d’une collection spécifique à l’aide de la fonction de conseil ? {#content-advisor-collection-search}
+
+Le gestionnaire d’accès prend en charge la recherche de ressources dans toutes les collections ou la limitation de la recherche à une collection spécifique. Cela permet d’accéder rapidement aux ressources des collections traitées tout en préservant le contexte organisationnel prévu. Les mêmes fonctionnalités de filtrage disponibles dans la vue Assets s’appliquent aux recherches dans les collections de la fonction de conseil en contenu, ce qui garantit une expérience de découverte de ressources cohérente dans AEM Assets et Adobe Express.
+
+### Comment remplacer une image sur la zone de travail Express par une ressource d’AEM Assets ? {#replace-image-aem-assets-express}
+
+Pour remplacer une image sur la zone de travail d’Adobe Express par une ressource d’AEM Assets, sélectionnez l’image sur la zone de travail, cliquez sur Remplacer, puis sélectionnez AEM Assets dans les options disponibles. Le gestionnaire d’accès s’ouvre dans le volet de navigation de gauche et affiche les référentiels et les ressources disponibles. Sélectionnez la ressource de remplacement pour la prévisualiser sur la zone de travail, puis cliquez sur Remplacer pour confirmer. Les types de fichiers SVG ne sont pas pris en charge pour le remplacement d’images avec ce workflow.
+
+### Comment puis-je réenregistrer un projet Adobe Express dans le référentiel AEM Assets ? {#save-express-project-aem-assets}
+
+Pour enregistrer un projet Adobe Express dans AEM Assets, cliquez sur Partager sur la zone de travail Express afin d’afficher la boîte de dialogue Partager, puis sélectionnez AEM Assets. Dans la boîte de dialogue de chargement, sélectionnez Page actuelle ou Toutes les pages, spécifiez un nom et un format d’exportation, puis cliquez sur l’icône de dossier sous Dossier de destination pour sélectionner un emplacement d’enregistrement. Les formats d’exportation pris en charge sont les suivants : PNG, JPEG, PDF, MP4, MP4+PNG et MP4+JPEG. Vous pouvez éventuellement ajouter des métadonnées de campagne à l’aide des champs Nom du projet ou de la campagne, Mots-clés et Canaux avant de cliquer sur Charger. Si vous enregistrez dans un référentiel de diffusion Content Hub, le champ Nom du projet ou de la campagne est obligatoire et le dossier de destination est automatiquement dérivé des métadonnées.
+
+### Quelles sont la taille de fichier et les limites de dimension des ressources importées depuis AEM Assets dans Adobe Express ? {#aem-assets-express-file-size-limits}
+
+Adobe Express via AEM Assets prend en charge les limites de taille et de dimension de fichier suivantes : les ressources JPEG et PNG prennent en charge jusqu’à 65 mégapixels (par exemple 8 Ko × 8 Ko ou 16 Ko × 4 Ko) avec une taille de fichier maximale de 80 Mo sur les ordinateurs de bureau et de 40 Mo sur les appareils mobiles. Les fichiers SVG prennent en charge une taille de fichier maximale de 250 Ko. Les vidéos MP4 prennent en charge jusqu’à 3 840 × 3 840 pixels avec une taille de fichier maximale de 200 Mo. Les fichiers PSD prennent en charge jusqu’à 65 mégapixels avec une taille de fichier maximale de 80 Mo sur les ordinateurs de bureau et de 40 Mo sur les appareils mobiles. Les fichiers PDF n’ont aucune limite de dimension ou de taille de fichier maximale définie.
+
+### Quelles sont les limites vidéo de l’intégration d’AEM Assets et d’Adobe Express ? {#aem-assets-express-video-limitations}
+
+L’intégration d’AEM Assets et d’Adobe Express prend en charge MP4 comme seul type de fichier vidéo pour l’importation et l’exportation. Pour l’importation de vidéos MP4, les vidéos avec arrière-plans transparents (couche alpha) ne sont pas prises en charge. Pour l’exportation de vidéo MP4, la taille de fichier maximale prise en charge est de 200 Mo. Si la taille du fichier d’exportation dépasse 200 Mo, une alerte recommande de réduire la vidéo à 200 Mo ou moins, ou de la charger manuellement dans le dossier de destination AEM Assets après l’avoir téléchargée localement.
 
