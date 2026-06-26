@@ -24,7 +24,7 @@ Découvrez les points de contrôle qualité disponibles dans le processus de dé
 
 ## À propos des tests fonctionnels
 
-Le diagramme suivant présente de manière générale les pipelines disponibles dans le cadre d’une stratégie de test globale et du processus de déploiement d’[](/help/implementing/cloud-manager/deploy-code.md).
+Le diagramme suivant présente de manière générale les pipelines disponibles dans le cadre d’une stratégie de test globale et du processus de déploiement d’[&#128279;](/help/implementing/cloud-manager/deploy-code.md).
 
 ![Points de contrôle de qualité du déploiement d’AEM Cloud Service](assets/functional-testing/quality-gates-compact.png)
 
@@ -40,7 +40,7 @@ Il est important de noter que ces points de contrôle qualité ne sont pas desti
 
 ## Points de contrôle qualité dans les tests
 
-Le diagramme suivant fournit une vue détaillée des points de contrôle qualité disponibles et de leur utilisation dans la stratégie de test globale et le processus de déploiement d’[](/help/implementing/cloud-manager/deploy-code.md).
+Le diagramme suivant fournit une vue détaillée des points de contrôle qualité disponibles et de leur utilisation dans la stratégie de test globale et le processus de déploiement d’[&#128279;](/help/implementing/cloud-manager/deploy-code.md).
 
 ![Points de contrôle de qualité du déploiement d’AEM Cloud Service](assets/functional-testing/quality-gates-overview.png)
 
@@ -111,7 +111,7 @@ Le point de contrôle qualité de l’audit de l’expérience effectue des audi
 
 AEM fournit ce point de contrôle qualité par défaut, mais il ne bloque pas les pipelines de déploiement. Par défaut, un audit est effectué sur la page racine (`/`) de l’instance de publication. Vous pouvez contribuer en configurant jusqu’à 25 chemins personnalisés pris en compte pour les audits.
 
-Voir [ Tests de contrôle de l’expérience](/help/implementing/cloud-manager/reports/report-experience-audit.md) pour plus d’informations.
+Voir [&#x200B; Tests de contrôle de l’expérience](/help/implementing/cloud-manager/reports/report-experience-audit.md) pour plus d’informations.
 
 ### Validations client
 
@@ -119,7 +119,7 @@ Le point de contrôle qualité des validations client est un espace réservé à
 
 Vous pouvez y choisir les outils et les structures de votre choix. Contrairement aux tests fonctionnels du client et aux tests d’interface utilisateur personnalisés, il n’existe aucune limite liée à AEM as a Cloud Service. Par conséquent, Adobe vous recommande d’effectuer ici des tests fonctionnels et d’interface utilisateur à long terme.
 
-Vous pouvez choisir n’importe quel outil et framework, mais Adobe suggère d’aligner les tests d’intégration et d’interface utilisateur HTTP sur les outils et frameworks utilisés dans les points de contrôle de qualité de test fonctionnels et d’interface utilisateur personnalisés. En outre, Adobe recommande d’incorporer [ Environnements de développement rapide (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) dans votre stratégie de test locale afin de refléter fidèlement les environnements cloud AEM.
+Vous pouvez choisir n’importe quel outil et framework, mais Adobe suggère d’aligner les tests d’intégration et d’interface utilisateur HTTP sur les outils et frameworks utilisés dans les points de contrôle de qualité de test fonctionnels et d’interface utilisateur personnalisés. En outre, Adobe recommande d’incorporer [&#x200B; Environnements de développement rapide (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) dans votre stratégie de test locale afin de refléter fidèlement les environnements cloud AEM.
 
 ### Test manuel
 
