@@ -99,5 +99,5 @@ Pour en savoir plus sur l’API Cloud Manager et l’interface de ligne de comma
 
 Pour en savoir plus sur les fichiers journaux dans AEM as a Cloud Service, consultez les ressources supplémentaires suivantes :
 
-* [Cloud 5 : fichiers journaux AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
-* [Déboguer AEM as a Cloud Service à l’aide de journaux](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
+* [Cloud 5 : fichiers journaux AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
+* [Déboguer AEM as a Cloud Service à l’aide de journaux](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
