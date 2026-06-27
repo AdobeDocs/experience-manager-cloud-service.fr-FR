@@ -5,10 +5,10 @@ exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 90dcda6778ef3d3aca3163f649505902efeb2fd7
+source-git-commit: 5b3e3ddfea1584072276108767fa42175465188b
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 44%
+source-wordcount: '581'
+ht-degree: 28%
 
 ---
 
@@ -19,11 +19,11 @@ Découvrez comment Cloud Manager vous informe des événements importants.
 
 ## Notifications dans Cloud Manager {#cloud-manager-notifications}
 
- vous envoie des notifications lorsqu’un pipeline de production démarre et se termine (avec succès ou non) au début d’un déploiement en production.
+ Fournit des notifications lorsqu’un pipeline de production démarre et se termine (avec succès ou non) au cours d’un déploiement en production.
 
 Ces notifications sont envoyées via le système de notification [!UICONTROL CX Enterprise] aux utilisateurs possédant les rôles **Propriétaire de l’entreprise**, **Responsable de programme** et **Responsable de déploiement**.
 
-Les notifications s’affichent dans une barre latérale dans  et dans Adobe [!UICONTROL CX Enterprise]. Un badge est attribué à l’icône représentant une cloche dans l’en-tête lorsque vous recevez de nouvelles notifications.
+Les notifications s’affichent dans une barre latérale dans  et dans Adobe [!UICONTROL CX Enterprise]. L’icône représentant une cloche dans l’en-tête affiche un badge lorsque vous recevez de nouvelles notifications.
 
 ![Icône de notifications](assets/notifications-bell-badged.png)
 
@@ -35,7 +35,7 @@ L’onglet **Annonces** comprend les annonces de produits Adobe. Les annonces co
 
 ![Barre latérale de notifications](assets/notificaitons-announcements.png)
 
-Cliquez sur une notification ou une annonce pour en afficher les détails. Les notifications liées à des activités telles que les déploiements de pipeline vous permettent d’accéder aux informations de cette activité, telles que la fenêtre d’exécution du pipeline.
+Cliquez sur une notification ou une annonce pour en afficher les détails. Les notifications liées à des activités telles que les déploiements de pipeline vous permettent d’accéder aux détails de cette activité, tels que la fenêtre d’exécution du pipeline.
 
 Cliquez sur l’option **Afficher tout** au bas du panneau pour afficher toutes les annonces dans votre boîte de réception.
 
@@ -45,13 +45,13 @@ Cliquez sur l’option **Tout marquer comme lu** au bas du panneau pour marquer 
 
 Vous pouvez personnaliser le mode de réception des notifications et les notifications que vous recevez.
 
-Cliquez sur l’icône d’engrenage en haut de la barre latérale de notifications pour ouvrir la fenêtre **Préférences CX Enterprise**. À partir de là, vous pouvez définir vos abonnements aux notifications et la manière dont vous recevez les notifications.
+Cliquez sur l’icône des paramètres située en haut de la barre latérale de notifications pour ouvrir la fenêtre **Préférences CX Enterprise**. À partir de là, vous pouvez définir vos abonnements aux notifications et la manière dont vous recevez les notifications.
 
 ![Icône Paramètres de notification](assets/notifications-configuration.png)
 
 ### Abonnements {#subscriptions}
 
-Les abonnements définissent les produits pour lesquels vous recevez des notifications et les types de notifications.
+Les abonnements définissent les produits pour lesquels vous recevez des notifications et les types de notifications que vous recevez.
 
 ![Abonnements aux notifications](assets/notifications-subscriptions.png)
 
@@ -61,11 +61,11 @@ Par défaut, vous recevez toutes les notifications pour tous les produits dans l
 
 ### Priorité {#priority}
 
-Les alertes de priorité sont marquées d’une balise **ÉLEVÉE**. Vous pouvez les configurer pour qu’ils soient reçus exclusivement en tant qu’alertes. Dans la section **Priorité**, vous pouvez définir les catégories qui remplissent les critères de notification de priorité.
+Les alertes de priorité sont marquées d’un libellé **ÉLEVÉ**. Vous pouvez configurer leur réception en tant qu’alertes. Dans la section **Priorité**, vous pouvez définir les catégories qui remplissent les critères de notification de priorité.
 
 ![Priorité des notifications](assets/notifications-priority.png)
 
-Utilisez le menu déroulant pour ajouter à la liste des catégories qui remplissent les critères de priorité. Cliquez sur X à côté des noms de catégorie pour les supprimer.
+Utilisez le menu déroulant pour ajouter à la liste des catégories qui remplissent les critères de priorité. Cliquez sur l’icône de suppression en regard des noms de catégorie pour les supprimer.
 
 ### Alertes {#alerts}
 
@@ -75,13 +75,13 @@ Les alertes s’affichent dans le coin supérieur droit de la fenêtre pendant q
 
 Vous pouvez définir le comportement des alertes.
 
-* **Afficher les alertes pour** - définit les types de notifications qui déclenchent des alertes
-* **Les alertes doivent rester à l’écran jusqu’à ce que vous les supprimiez** : contrôle si les alertes doivent persister, sauf si vous les ignorez activement.
-* **Durée** - définit la durée pendant laquelle l’alerte doit rester à l’écran si vous n’avez pas choisi de la conserver.
+* **Afficher les alertes pour** - Définit les types de notifications qui déclenchent des alertes.
+* **Les alertes restent à l’écran jusqu’à ce que vous les supprimiez** - Contrôle si les alertes persistent, sauf si vous les ignorez activement.
+* **Durée** - Définit la durée pendant laquelle l’alerte reste à l’écran si vous ne les avez pas configurées pour persister.
 
 ### E-mails {#emails}
 
-Les notifications sont disponibles dans l’interface utilisateur web de toutes les solutions Adobe [!UICONTROL CX Enterprise]. Vous pouvez également choisir d’envoyer ces notifications par e-mail dans la section **E-mails**.
+Les notifications sont disponibles dans l’interface utilisateur web de toutes les solutions Adobe [!UICONTROL CX Enterprise]. Pour que ces notifications soient envoyées par e-mail, utilisez la section **E-mails**.
 
 ![E-mails de notification](assets/notifications-emails.png)
 
