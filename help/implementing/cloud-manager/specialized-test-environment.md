@@ -4,10 +4,10 @@ description: Découvrez comment les environnements de test spécialisés dans Cl
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 399fddc57489577d0cfeb79f63199451e0fe1ed4
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 13%
+source-wordcount: '539'
+ht-degree: 12%
 
 ---
 
@@ -19,12 +19,12 @@ ht-degree: 13%
 
 >[!NOTE]
 >
->Des environnements de test spécialisés sont désormais disponibles à l’achat. Contactez votre représentant Adobe pour passer une commande.
+>Des environnements de test spécialisés sont désormais disponibles à l’achat. Pour passer une commande, contactez votre représentant Adobe.
 
 
 L’environnement de test spécialisé est un nouveau type d’environnement Cloud Manager que vous pouvez créer. Il est conçu pour prendre en charge des cas d’utilisation avancés tels que les tests d’acceptation utilisateur (UAT) et la validation des performances. Contrairement aux environnements de développement, de développement rapide ou d’évaluation traditionnels, les environnements de test spécialisé fonctionnent en dehors du pipeline de déploiement en production. Ils vous offrent donc une plus grande flexibilité tout en maintenant une isolation stricte afin d’éviter toute interférence avec les workflows de production.
 
-Un environnement de test spécialisé est conçu pour refléter la taille, l’évolutivité et les configurations d’un environnement d’évaluation standard. Cette approche garantit que les tests effectués dans l’environnement de test spécialisé peuvent fournir des informations réalistes sur les performances du code et du contenu dans des conditions de production. L’environnement prend également en charge la copie directe de contenu depuis la production ou l’évaluation. Il conserve également la parité avec les environnements de développement en termes de workflows de déploiement, de contrôles d’accès et de configurations réseau.
+Un environnement de test spécialisé est conçu pour refléter la taille, l’évolutivité et les configurations d’un environnement d’évaluation standard. Cette approche garantit que les tests effectués dans l’environnement de test spécialisé peuvent fournir des informations précises sur la façon dont le code et le contenu se comportent dans des conditions de type production. L’environnement prend également en charge la copie directe de contenu depuis la production ou l’évaluation. Il maintient également la cohérence avec les environnements de développement en termes de workflows de déploiement, de contrôles d’accès et de configurations réseau.
 
 ## Fonctionnalités et configurations clés d’un environnement de test spécialisé {#key-features}
 
@@ -56,8 +56,7 @@ Pour ajouter ou modifier un environnement, un utilisateur doit disposer du rôle
 
 1. Utilisez l’une des méthodes suivantes :
 
-   * Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sur la carte **Environnements**, cliquez sur **Ajouter un environnement**.
-Si l’option **Ajouter un environnement** est grisée (désactivée), cela peut être dû à un manque d’autorisations ou à une dépendance aux ressources sous licence.
+   * Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sur la carte **Environnements**, cliquez sur **Ajouter un environnement**.Si l’option **Ajouter un environnement** est grisée (désactivée), cela est dû à un manque d’autorisations ou dépend des ressources sous licence.
 
      ![Carte Environnements](assets/no-environments.png)
 
@@ -70,7 +69,7 @@ Si l’option **Ajouter un environnement** est grisée (désactivée), cela peut
    * Cliquez sur **Environnement de test spécialisé**.
    * Fournissez un environnement **Nom**. Le nom de l’environnement ne peut pas être modifié une fois l’environnement créé.
    * (Facultatif) Fournissez une **Description** pour l’environnement.
-   * Sélectionnez une région de Principal **&#x200B;**&#x200B;dans la liste déroulante. Une fois créée, la région principale de l’environnement de test spécialisé (par exemple, *Royaume-Uni (Sud)*) est verrouillée et ne peut pas être modifiée.
+   * Sélectionnez une région de Principal **** dans la liste déroulante. Une fois créée, la région principale de l’environnement de test spécialisé (par exemple, *Royaume-Uni (Sud)*) est verrouillée et ne peut pas être modifiée.
 
      ![Boîte de dialogue Ajouter un environnement avec le bouton radio Environnement de test spécialisé sélectionné](assets/specialized-test-environment.png)
 
@@ -80,6 +79,6 @@ Si l’option **Ajouter un environnement** est grisée (désactivée), cela peut
 
 ## Ressources supplémentaires {#additional-resources}
 
-* Vidéo : [Présentation des types d’environnements dans AEM Cloud Manager](https://experienceleague.adobe.com/fr/perspectives/cloud-manager-environment-types)
+* Vidéo : [Présentation des types d’environnements dans AEM Cloud Manager](https://experienceleague.adobe.com/en/perspectives/cloud-manager-environment-types)
 * [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md)
 
