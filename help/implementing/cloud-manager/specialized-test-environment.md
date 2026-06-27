@@ -69,7 +69,7 @@ Pour ajouter ou modifier un environnement, un utilisateur doit disposer du rôle
    * Cliquez sur **Environnement de test spécialisé**.
    * Fournissez un environnement **Nom**. Le nom de l’environnement ne peut pas être modifié une fois l’environnement créé.
    * (Facultatif) Fournissez une **Description** pour l’environnement.
-   * Sélectionnez une région de Principal **** dans la liste déroulante. Une fois créée, la région principale de l’environnement de test spécialisé (par exemple, *Royaume-Uni (Sud)*) est verrouillée et ne peut pas être modifiée.
+   * Sélectionnez une région de Principal **&#x200B;**&#x200B;dans la liste déroulante. Une fois créée, la région principale de l’environnement de test spécialisé (par exemple, *Royaume-Uni (Sud)*) est verrouillée et ne peut pas être modifiée.
 
      ![Boîte de dialogue Ajouter un environnement avec le bouton radio Environnement de test spécialisé sélectionné](assets/specialized-test-environment.png)
 
