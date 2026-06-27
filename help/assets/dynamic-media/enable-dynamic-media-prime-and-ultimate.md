@@ -5,10 +5,10 @@ feature: Asset Management
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
+source-git-commit: 6861ae63c85ca2e10638a7f2128783eae02cc2b6
 workflow-type: tm+mt
-source-wordcount: '1407'
-ht-degree: 7%
+source-wordcount: '2380'
+ht-degree: 4%
 
 ---
 
@@ -112,7 +112,7 @@ Procédez comme suit :
 
 Voir [Activer [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi) pour commencer à utiliser les fonctionnalités de [!DNL Dynamic Media] avec les fonctionnalités OpenAPI dans votre environnement.
 
-### Accès aux API Dynamic Media
+### Accès aux API Dynamic Media {#access-dynamic-media-apis}
 
 Après l’[activation de Dynamic Media avec OpenAPI](#activate-dynamic-media-with-openapi), une instance `delivery` est créée. Cliquez sur l’instance de diffusion pour afficher le profil de produit `AEM Assets DM OpenAPI Users - delivery  - Program xxxx - Environment yyyy`. Le profil de produit dispose déjà de **Services d’API AEM Dynamic Media activés** activés par défaut.
 
@@ -298,3 +298,49 @@ Pour activer [!DNL Dynamic Media] Prime :
 <!--
 1. [Onboard API keys using the AEM Dynamic Media API card](#onboarding-api-keys)
 -->
+
+## Questions fréquentes {#frequently-asked-questions-dynamic-media-prime-ultimate}
+
+### Quelles sont les conditions préalables à l’activation de Dynamic Media avec OpenAPI ? {#dynamic-media-openapi-prerequisites}
+
+L’activation de Dynamic Media avec OpenAPI requiert trois conditions préalables : l’accès à Cloud Manager, un programme incluant les solutions Dynamic Media et une licence Dynamic Media Prime ou Ultimate valide. Si aucun environnement existant n’est disponible dans Cloud Manager, vous devez en créer un pour que l’activation puisse commencer. La solution Dynamic Media doit être ajoutée au programme avant que l’étape d’activation ne soit exécutée sur la page des détails de l’environnement.
+
+### Comment activer Dynamic Media avec OpenAPI dans mon environnement Cloud Service ? {#activate-dynamic-media-openapi}
+
+Pour activer Dynamic Media avec OpenAPI, accédez à l’interface utilisateur de Cloud Manager et ouvrez la page des détails de l’environnement. Dans la section Informations sur l’environnement , localisez la ligne Dynamic Media et cliquez sur Cliquer pour activer. Cliquez sur Activer dans la boîte de dialogue de confirmation pour lancer le processus d’activation. Une fois l’activation réussie, Cloud Manager affiche l’étape d’environnement comme étant En cours d’exécution et le statut Dynamic Media en tant que fonctionnalités OpenAPI est activé.
+
+### Que dois-je faire si Dynamic Media avec l’activation OpenAPI échoue ? {#dynamic-media-openapi-activation-failure}
+
+Si Dynamic Media avec activation OpenAPI échoue, Cloud Manager affiche l’étape d’environnement en tant que DM avec échec OpenAPI et le statut Dynamic Media en tant que fonctionnalités OpenAPI ne s’active pas. Pour réessayer, cliquez sur Cliquer pour réessayer sur la page des détails de l’environnement. Vous pouvez également accéder à la page répertoriant tous les environnements, cliquer sur l’icône Plus d’options à la fin de la ligne de l’environnement, puis sélectionner Réessayer DM avec activation OpenAPI pour redémarrer le processus.
+
+### Quelles sont les conditions préalables à la configuration des solutions Dynamic Media ? {#configure-dynamic-media-solutions-prerequisites}
+
+La configuration des solutions Dynamic Media nécessite l’accès à Cloud Manager et une licence Dynamic Media Ultimate valide. Dynamic Media Prime ne nécessite pas cette étape — elle s’applique uniquement aux clients Dynamic Media Ultimate qui doivent ajouter la solution Dynamic Media à un programme existant ou nouveau dans Cloud Manager.
+
+### Comment ajouter la solution Dynamic Media à un programme AEM Cloud Service ? {#add-dynamic-media-solution-program}
+
+Pour ajouter la solution Dynamic Media à un programme, créez un programme ou accédez à un programme existant dans Cloud Manager, puis cliquez sur Modifier. Sur la page Configurer pour la production , sélectionnez l’onglet Solutions et modules complémentaires , puis sélectionnez Assets, Assets Prime, Assets Ultimate ou Sites pour rendre la solution Dynamic Media disponible. Sélectionnez Dynamic Media et cliquez sur Continuer pour l’ajouter au programme. Cette action redémarre tous les environnements existants dans le programme et ajoute la solution Dynamic Media. Tous les nouveaux environnements créés sous le programme reçoivent automatiquement Dynamic Media.
+
+### Comment puis-je accéder aux API Dynamic Media après l’activation de Dynamic Media avec OpenAPI ? {#dynamic-media-apis-faqs}
+
+Après l’activation de Dynamic Media avec OpenAPI, une instance de diffusion est créée dans Adobe Admin Console. Cliquez sur l’instance de diffusion pour afficher le profil de produit Utilisateurs OpenAPI AEM Assets DM pour lequel les services d’API AEM Dynamic Media sont activés par défaut. Pour accéder aux API, créez un projet dans Adobe Developer Console et utilisez la carte API Dynamic Media AEM . Les options d’authentification incluent l’authentification de serveur à serveur, les informations d’identification d’application web ou les informations d’identification SPA. Avant d’accéder à l’API, l’utilisateur doit être ajouté au profil de produit de diffusion Utilisateurs OpenAPI d’AEM Assets DM pour le programme et l’environnement appropriés.
+
+### Quelles sont les conditions préalables à la création d’une société Dynamic Media ? {#create-dynamic-media-company-prerequisites}
+
+La création d’une société Dynamic Media nécessite l’accès à Cloud Manager et une licence Dynamic Media Ultimate valide. La société est créée à partir de la page de licence Cloud Manager et représente un compte qui peut être configuré dans l’environnement AEM Cloud Service. La création d’une société Dynamic Media est une étape spécifique à Dynamic Media Ultimate. Elle n’est pas obligatoire pour Dynamic Media Prime.
+
+### Comment créer une nouvelle société Dynamic Media dans mon organisation IMS ? {#create-dynamic-media-company}
+
+Pour créer une nouvelle société Dynamic Media, accédez à la page Licence Cloud Manager et cliquez sur Ajouter une société. Dans la boîte de dialogue Créer une société Dynamic Media , spécifiez un nom de société unique, sélectionnez une zone géographique de société et ajoutez des ID de messagerie d’administration de société séparés par des virgules. Cliquez sur Créer pour lancer la création d’entreprise : une nouvelle ligne est ajoutée à la section Entreprises Dynamic Media avec le statut Configuration . Une fois la création terminée, le statut est mis à jour vers Prêt. L’administrateur Dynamic Media reçoit un e-mail de bienvenue contenant les étapes de configuration de Dynamic Media dans l’environnement AEM Cloud Service.
+
+### Que dois-je faire si la création d’entreprise Dynamic Media échoue ? {#dynamic-media-company-creation-failure}
+
+Si la création d’une société Dynamic Media échoue, l’action à entreprendre dépend du statut affiché. Si le statut est En attente, signalez le problème à l’équipe du service clientèle d’Adobe pour résolution. Si le statut est En échec, relancez la création en fonction du motif de l’échec affiché. L’échec de création d’entreprise est distinct de l’échec d’activation : les deux disposent de leurs propres mécanismes de reprise dans Cloud Manager.
+
+### Quelles sont les conditions préalables à la configuration d’un domaine personnalisé dans le niveau de diffusion Dynamic Media ? {#custom-domain-delivery-tier-prerequisites}
+
+La configuration d’un domaine personnalisé dans le niveau de diffusion Dynamic Media requiert quatre conditions préalables : l’accès à Cloud Manager, Dynamic Media avec OpenAPI déjà activé et prêt dans l’environnement et un certificat SSL de type EV ou OV pour le domaine à utiliser dans le niveau de diffusion. La configuration de domaine personnalisé est facultative pour Dynamic Media Prime et Dynamic Media Ultimate.
+
+### Comment configurer un domaine personnalisé pour la diffusion Dynamic Media à l’aide de Cloud Manager ? {#configure-custom-domain-delivery-tier}
+
+Pour configurer un domaine personnalisé pour la diffusion Dynamic Media, effectuez trois étapes dans Cloud Manager : ajoutez un certificat SSL géré par le client, ajoutez un nom de domaine personnalisé, puis ajoutez une configuration de réseau CDN à partir de la page Détails de l’environnement — en sélectionnant Diffusion dans le champ Niveau de la boîte de dialogue Configurer le réseau CDN . Après avoir ajouté la configuration de réseau CDN, le statut est mis à jour sur Appliqué. Cliquez sur d’autres options et sélectionnez Préparation à la mise en production , puis suivez les étapes de configuration CNAME pour mapper cdn.adobeaemcloud.com en tant qu’enregistrement CNAME dans le fournisseur de services DNS. Une fois le mappage DNS confirmé, cliquez sur OK et le statut du domaine passe à Vérifié, ce qui rend le domaine personnalisé prêt à être utilisé dans les URL de diffusion.
