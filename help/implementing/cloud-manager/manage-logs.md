@@ -90,7 +90,7 @@ Environment Id Service    Name
 
 >[!TIP]
 >
->Pour en savoir plus sur le débogage d’AEM as a Cloud Service, regardez [ cette ressource vidéo ](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab).
+>Pour en savoir plus sur le débogage d’AEM as a Cloud Service, regardez [&#x200B; cette ressource vidéo &#x200B;](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab).
 
 Pour en savoir plus sur l’API Cloud Manager et l’interface de ligne de commande Adobe I/O, consultez les ressources supplémentaires suivantes :
 
