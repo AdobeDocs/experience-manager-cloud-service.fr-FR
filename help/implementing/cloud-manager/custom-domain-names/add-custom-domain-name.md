@@ -5,9 +5,9 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 1b7357b7f3fb99937857e5a7716baedd8124b549
+source-git-commit: 9f6c56b099268b9d13e060a5920ca3b6021169f1
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1142'
 ht-degree: 15%
 
 ---
@@ -53,8 +53,7 @@ Voir aussi [Réseau CDN géré par &#x200B;](https://www.aem.live/docs/byo-cdn-a
 
 1. Dans le coin supérieur droit de la page **Paramètres du domaine**, cliquez sur **Ajouter un domaine**.
 
-1. Dans la boîte de dialogue **Ajouter un domaine**, dans le champ **Nom de domaine**, saisissez le nom de domaine personnalisé que vous utilisez.
-Lors de la saisie du nom de domaine, n’incluez pas de `http://`, de `https://` ou d’espaces.
+1. Dans la boîte de dialogue **Ajouter un domaine**, dans le champ **Nom de domaine**, saisissez le nom de domaine personnalisé que vous utilisez.Lors de la saisie du nom de domaine, n’incluez pas de `http://`, de `https://` ou d’espaces.
 
    >[!NOTE]
    >
