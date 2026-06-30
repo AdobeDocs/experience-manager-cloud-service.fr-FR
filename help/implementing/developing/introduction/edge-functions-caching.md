@@ -115,7 +115,7 @@ Le réseau CDN met en cache la réponse finale renvoyée par la fonction Edge. U
 
 ### Purge du cache de récupération des fonctions Edge {#purge-fetch-cache}
 
-La commande de l’interface de ligne de commande `purge-cache` purge le cache de récupération de la fonction Edge **** (les réponses du serveur principal mises en cache dans la fonction Edge). Il ne purge **pas** cache du réseau CDN externe. Pour connaître les options et les indicateurs de l’interface de ligne de commande complète, consultez la référence des commandes ](https://github.com/adobe/aio-cli-plugin-aem-edge-functions/blob/main/README.md#purge-cache).[`purge-cache`
+La commande de l’interface de ligne de commande `purge-cache` purge le cache de récupération de la fonction Edge **&#x200B;**&#x200B;(les réponses du serveur principal mises en cache dans la fonction Edge). Il ne purge **pas** cache du réseau CDN externe. Pour connaître les options et les indicateurs de l’interface de ligne de commande complète, consultez la référence des commandes [&#128279;](https://github.com/adobe/aio-cli-plugin-aem-edge-functions/blob/main/README.md#purge-cache).`purge-cache`
 
 #### D’Où Proviennent Les Clés De Substitution {#surrogate-key-origin}
 
