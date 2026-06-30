@@ -50,7 +50,7 @@ return new Response(body, {
 });
 ```
 
-Plusieurs clés de substitution sont séparées par des espaces. Ces clés de substitution peuvent être utilisées pour purger le cache du réseau CDN à l’aide de l’[API de purge du cache CDN](/help/implementing/dispatcher/cdn-cache-purge.md). Le concept de purge de clé de substitution est identique à celui décrit dans [Purge du cache pour un groupe de ressources](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache#purge-the-cache-for-a-group-of-resources) — la différence essentielle est que les clés de substitution du réseau CDN sont ici définies par votre code de fonction Edge plutôt que par le serveur principal.
+Plusieurs clés de substitution sont séparées par des espaces. Ces clés de substitution peuvent être utilisées pour purger le cache du réseau CDN à l’aide de l’[API de purge du cache CDN](/help/implementing/dispatcher/cdn-cache-purge.md). Le concept de purge de clé de substitution est identique à celui décrit dans [Purge du cache pour un groupe de ressources](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache#purge-the-cache-for-a-group-of-resources) — la différence essentielle est que les clés de substitution du réseau CDN sont ici définies par votre code de fonction Edge plutôt que par le serveur principal.
 
 ## Cache de récupération des fonctions Edge (interne) {#fetch-cache}
 
