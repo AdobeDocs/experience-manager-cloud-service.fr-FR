@@ -3,9 +3,9 @@ title: Mise en cache dans les fonctions AEM Edge
 description: Découvrez comment le cache de réseau CDN et le cache de récupération des fonctions Edge interagissent, comment configurer le comportement de mise en cache et comment purger le contenu mis en cache sur les deux couches.
 feature: Developing, Edge Delivery Services
 role: Developer
-source-git-commit: 4d3659aef1a180192a79b791f6ea840f576f5e63
+source-git-commit: eec07e98d235e80c423bea0d51f75e170c34d1e5
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1310'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,9 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->AEM Edge Functions est une fonctionnalité **bêta**. Les fonctionnalités et la documentation peuvent changer sans préavis. Pour rejoindre le programme d’accès anticipé et soumettre vos commentaires, envoyez un e-mail à l’adresse [&#128279;](mailto:aemcs-edgecompute-feedback@adobe.com).
+>AEM Edge Functions est une fonctionnalité **bêta publique** qui vous permet de l’essayer en libre-service sans contacter Adobe pour l’activer. Adobe vous encourage à envoyer un e-mail à l’adresse [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) pour décrire votre cas d’utilisation afin qu’Adobe puisse vous assurer qu’il est pris en charge et vous fournir tous les conseils nécessaires. Il est particulièrement important de contacter Adobe avant de déployer la fonctionnalité pour le trafic d’exploitation.
+>
+>En utilisant le Beta Fonctions d’AEM Edge, vous reconnaissez qu’il est toujours en développement et que vous ne devriez pas vous fier au bon fonctionnement de la technologie ou à la disponibilité des données. Cette fonctionnalité est fournie en l’état, peut changer sans préavis et n’est pas couverte par la production.
 
 Cette page fournit des conseils techniques détaillés sur le fonctionnement de la mise en cache dans les fonctions AEM Edge, y compris l’architecture à deux caches, sur la manière de contrôler le comportement de mise en cache dans votre code et sur la manière de purger les entrées de cache lorsque le contenu change.
 
@@ -48,7 +50,7 @@ return new Response(body, {
 });
 ```
 
-Plusieurs clés de substitution sont séparées par des espaces. Ces clés de substitution peuvent être utilisées pour purger le cache du réseau CDN à l’aide de l’[API de purge du cache CDN](/help/implementing/dispatcher/cdn-cache-purge.md). Le concept de purge de clé de substitution est identique à celui décrit dans [Purge du cache pour un groupe de ressources](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache#purge-the-cache-for-a-group-of-resources) — la différence essentielle est que les clés de substitution du réseau CDN sont ici définies par votre code de fonction Edge plutôt que par le serveur principal.
+Plusieurs clés de substitution sont séparées par des espaces. Ces clés de substitution peuvent être utilisées pour purger le cache du réseau CDN à l’aide de l’[API de purge du cache CDN](/help/implementing/dispatcher/cdn-cache-purge.md). Le concept de purge de clé de substitution est identique à celui décrit dans [Purge du cache pour un groupe de ressources](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache#purge-the-cache-for-a-group-of-resources) — la différence essentielle est que les clés de substitution du réseau CDN sont ici définies par votre code de fonction Edge plutôt que par le serveur principal.
 
 ## Cache de récupération des fonctions Edge (interne) {#fetch-cache}
 
@@ -113,7 +115,7 @@ Le réseau CDN met en cache la réponse finale renvoyée par la fonction Edge. U
 
 ### Purge du cache de récupération des fonctions Edge {#purge-fetch-cache}
 
-La commande de l’interface de ligne de commande `purge-cache` purge le cache de récupération de la fonction Edge **&#x200B;**&#x200B;(les réponses du serveur principal mises en cache dans la fonction Edge). Il ne purge **pas** cache du réseau CDN externe. Pour connaître les options et les indicateurs de l’interface de ligne de commande complète, consultez la référence des commandes [&#128279;](https://github.com/adobe/aio-cli-plugin-aem-edge-functions/blob/main/README.md#purge-cache).`purge-cache`
+La commande de l’interface de ligne de commande `purge-cache` purge le cache de récupération de la fonction Edge **** (les réponses du serveur principal mises en cache dans la fonction Edge). Il ne purge **pas** cache du réseau CDN externe. Pour connaître les options et les indicateurs de l’interface de ligne de commande complète, consultez la référence des commandes ](https://github.com/adobe/aio-cli-plugin-aem-edge-functions/blob/main/README.md#purge-cache).[`purge-cache`
 
 #### D’Où Proviennent Les Clés De Substitution {#surrogate-key-origin}
 
