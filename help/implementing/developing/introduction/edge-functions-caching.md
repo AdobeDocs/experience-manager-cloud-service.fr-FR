@@ -3,9 +3,9 @@ title: Mise en cache dans les fonctions AEM Edge
 description: Découvrez comment le cache de réseau CDN et le cache de récupération des fonctions Edge interagissent, comment configurer le comportement de mise en cache et comment purger le contenu mis en cache sur les deux couches.
 feature: Developing, Edge Delivery Services
 role: Developer
-source-git-commit: 4d3659aef1a180192a79b791f6ea840f576f5e63
+source-git-commit: eec07e98d235e80c423bea0d51f75e170c34d1e5
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1310'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,9 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->AEM Edge Functions est une fonctionnalité **bêta**. Les fonctionnalités et la documentation peuvent changer sans préavis. Pour rejoindre le programme d’accès anticipé et soumettre vos commentaires, envoyez un e-mail à l’adresse [&#128279;](mailto:aemcs-edgecompute-feedback@adobe.com).
+>AEM Edge Functions est une fonctionnalité **bêta publique** qui vous permet de l’essayer en libre-service sans contacter Adobe pour l’activer. Adobe vous encourage à envoyer un e-mail à l’adresse [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) pour décrire votre cas d’utilisation afin qu’Adobe puisse vous assurer qu’il est pris en charge et vous fournir tous les conseils nécessaires. Il est particulièrement important de contacter Adobe avant de déployer la fonctionnalité pour le trafic d’exploitation.
+>
+>En utilisant le Beta Fonctions d’AEM Edge, vous reconnaissez qu’il est toujours en développement et que vous ne devriez pas vous fier au bon fonctionnement de la technologie ou à la disponibilité des données. Cette fonctionnalité est fournie en l’état, peut changer sans préavis et n’est pas couverte par la production.
 
 Cette page fournit des conseils techniques détaillés sur le fonctionnement de la mise en cache dans les fonctions AEM Edge, y compris l’architecture à deux caches, sur la manière de contrôler le comportement de mise en cache dans votre code et sur la manière de purger les entrées de cache lorsque le contenu change.
 
