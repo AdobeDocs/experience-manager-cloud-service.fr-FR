@@ -6,8 +6,8 @@ feature: Developing
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '948'
-ht-degree: 100%
+source-wordcount: '1030'
+ht-degree: 97%
 
 ---
 
@@ -77,7 +77,7 @@ L’éditeur universel n’est pas uniquement très performant et prêt à l’e
 
 * Les **extensions** sont nombreuses et prêtes à l’emploi pour répondre à divers besoins, tels que la prise en charge de workflows, la génération de variantes et l’activation d’expérimentations, pour n’en citer que quelques-unes.
 * **Une interface d’utilisation extensible** permet de créer vos propres extensions en utilisant les mêmes cadres sous-jacents que ceux exploités par les extensions prêtes à l’emploi, offrant une flexibilité optimale pour s’adapter aux besoins de votre projet.
-* **Les points d’extension**, tels que les blocs, les types de données personnalisés et les événements, permettent une intégration transparente des besoins métier personnalisés au-delà de l’interface utilisateur.
+* **Les points d’extension**, tels que les blocs, les types de données personnalisés et les événements, permettent une intégration transparente des besoins métier personnalisés au-delà de l’interface d’utilisation.
 
 >[!TIP]
 >
@@ -85,25 +85,25 @@ L’éditeur universel n’est pas uniquement très performant et prêt à l’e
 
 ## Éditeur universel et éditeur de fragments de contenu {#universal-editor-content-fragment-editor}
 
-À première vue, on peut croire que l’éditeur universel et l’éditeur de fragments de contenu proposent des fonctionnalités de modification similaires. Toutefois, ces éditeurs proposent des fonctionnalités très différentes et effectuent différents travaux d’un professionnel ou d’une professionnelle du marketing.
+À première vue, on peut croire que l’éditeur universel et l’éditeur de fragments de contenu proposent des fonctionnalités de modification similaires. Toutefois, ces éditeurs proposent des fonctionnalités très différentes et effectuent différentes tâches d’un professionnel ou d’une professionnelle du marketing.
 
 ### Éditeur de fragment de contenu {#content-fragment-editor}
 
 Un professionnel ou une professionnelle du marketing souhaite créer du contenu sans avoir à se soucier de sa mise en page, de sorte qu’il puisse être réutilisé dans de nombreux contextes d’expérience.
 
-* La tâche sous-jacente à accomplir est de mettre à l’échelle la stratégie de contenu.
+* La tâche sous-jacente à accomplir consiste à mettre à l’échelle la stratégie de contenu.
 
 ### Éditeur universel {#universal-editor}
 
 Un professionnel ou une professionnelle du marketing souhaite créer du contenu adapté à la mise en page d’un contexte donné pour proposer une expérience exceptionnelle.
 
-* La tâche sous-jacente à accomplir est de communiquer de manière convaincante avec les lecteurs.
+* La tâche sous-jacente à accomplir consiste à communiquer de manière convaincante avec les lecteurs et lectrices.
 
 ## Limites {#limitations}
 
 Lorsque vous explorez l’éditeur universel et commencez à l’implémenter dans vos propres projets, veuillez garder à l’esprit les limitations suivantes.
 
-* Pas plus de 25 ressources AEM (fragments de contenu, pages, fragments d’expérience, ressources, etc.) ne doivent être référencées comme instrumentation sur une seule page.
+* 25 ressources AEM maximum (fragments de contenu, pages, fragments d’expérience, Assets, etc.) doit être référencé en tant qu’instrumentation sur une seule page.
 * AEM as a Cloud Service, [ AEM 6.5 LTS](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction) et [ AEM 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) sont les seuls environnements AEM pris en charge côté back-end.
 * Une version `2023.8.13099` ou supérieure est requise pour AEM as a Cloud Service.
 * Les responsables du contenu doivent disposer de leurs propres comptes individuels Experience Cloud.
