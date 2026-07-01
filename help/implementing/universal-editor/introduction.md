@@ -104,7 +104,7 @@ Un professionnel ou une professionnelle du marketing souhaite créer du contenu 
 Lorsque vous explorez l’éditeur universel et commencez à l’implémenter dans vos propres projets, veuillez garder à l’esprit les limitations suivantes.
 
 * 25 ressources AEM maximum (fragments de contenu, pages, fragments d’expérience, Assets, etc.) doit être référencé en tant qu’instrumentation sur une seule page.
-* AEM as a Cloud Service, [ AEM 6.5 LTS](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction) et [ AEM 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) sont les seuls environnements AEM pris en charge côté back-end.
+* AEM as a Cloud Service, [&#x200B; AEM 6.5 LTS](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction) et [&#x200B; AEM 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) sont les seuls environnements AEM pris en charge côté back-end.
 * Une version `2023.8.13099` ou supérieure est requise pour AEM as a Cloud Service.
 * Les responsables du contenu doivent disposer de leurs propres comptes individuels Experience Cloud.
 * Dans le cadre d’AEM, l’éditeur universel [prend en charge les mêmes navigateurs de bureau qu’AEM.](/help/overview/supported-platforms.md)
