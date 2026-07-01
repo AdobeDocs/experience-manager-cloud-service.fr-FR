@@ -6,8 +6,8 @@ feature: Developing Screens
 role: Admin, Developer
 source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 90%
+source-wordcount: '295'
+ht-degree: 83%
 
 ---
 
@@ -17,7 +17,7 @@ Les composants AEM servent à stocker, mettre en forme et générer le rendu du 
 
 ## Création de canaux {#authoring-channels}
 
-Le canal est l’objet central du contenu diffusé à un ensemble d’affichages. Par conséquent, un auteur ou une autrice de contenu ouvre généralement un canal dans l’éditeur pour ajouter ou modifier du contenu. Étant donné que le canal est un nœud ***cq:Page***, il applique le même schéma UX traditionnel pour ajouter et modifier des composants dans le canal.
+Le canal est l’objet central du contenu diffusé à un ensemble d’affichages. Par conséquent, un auteur ou une autrice de contenu ouvre généralement un canal dans l’éditeur pour ajouter ou modifier du contenu. Puisque le canal est un ***cq:Page***, il suit le même modèle UX traditionnel pour ajouter et modifier des composants sur le canal.
 
 Cependant, dans la mesure où les composants d’un canal sont généralement rendus en mode Plein écran, l’expérience de création est dégradée lorsque vous essayez de modifier des composants uniques ou de composer de nouvelles séquences. Par conséquent, le canal dépend des sélecteurs pour effectuer le rendu des différentes vues des composants. L’environnement de création utilise le sélecteur de modification pour activer le rendu de canal personnalisé.
 
