@@ -4,10 +4,10 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: a876efeed0e078fa0f8f8718484bd3f069a71cb5
+source-git-commit: e1e7fb3d25781a9ecd431b5d0213558876f3ec6a
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 40%
+source-wordcount: '943'
+ht-degree: 24%
 
 ---
 
@@ -16,51 +16,91 @@ ht-degree: 40%
 
 La section suivante décrit les notes de mise jour techniques de maintenance actuelle d’Experience Manager as a Cloud Service.
 
-## 26773 de publication {#release-26773}
+## 26908 de publication {#release-26908}
 
-Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 26773, rendue publique le 17 juin 2026. La version de maintenance précédente était la version 26353.
+Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 26908, rendue publique le 2 juillet 2026. La version de maintenance précédente était la version 26773.
 
-L’activation de la fonctionnalité 2026.6.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
+L’activation de la fonctionnalité 2026.7.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
 
->[!NOTE]
->
->La version 26635 a été rendue privée.
+### Améliorations {#enhancements-26908}
 
-### Améliorations {#enhancements-26773}
+* ASSETS-52412 : possibilité supplémentaire de réexécuter ou de dupliquer des rapports de ressources existants.
+* ASSETS-62263 : introduction de légendes générées par l’IA dans Dynamic Media avec OpenAPI.
+* ASSETS-62482 : mise à jour de l’intégration d’Adobe Stock avec les dernières améliorations.
+* ASSETS-63388 : ajout de la prise en charge des opérations HEAD à l’OpenAPI Tags.
+* ASSETS-63652 : recherche de ressources mise à jour pour exclure les fragments de contenu.
+* ASSETS-63743 : ajout du service de migration des ID de balise pour les identifiants basés sur l’UUID.
+* ASSETS-64240 : ajout de la prise en charge de la signature et du filigrane via l’API CAFE v2.
+* ASSETS-64282 : ajout de champs projetés pour les métadonnées sélectives dans les réponses de l’API.
+* ASSETS-64979 : mise à jour de TagManager pour renseigner automatiquement l’UUID sur les nouvelles balises.
+* ASSETS-65069 : API de prétraitement des ressources étendue pour les actions de tâche Sling asynchrones.
+* ASSETS-65492 : ajout d’améliorations de l’API de dossier avec une meilleure prise en charge des métadonnées et des requêtes.
+* ASSETS-65525 : amélioration de l’API d’informations de chargement pour les corps de requête supérieurs à 1 Mo.
+* ASSETS-65603 : amélioration des performances des listes de dossiers via des requêtes de nombre de ressources optimisées.
+* ASSETS-65678 : ajout des origines CORS Frame.io à la configuration de création AEM.
+* ASSETS-65746 : ajout de la prise en charge des paramètres de remplacement à l’API Assets Move.
+* ASSETS-65889 : ajout de l’API Assets Rename PATCH pour le changement de nom par programmation.
+* ASSETS-66032 : ajout de la prise en charge avancée du proxy de réseau dans l’importation en bloc Assets.
+* ASSETS-66196 : mise à jour de l’interrogation des tâches de l’API de publication et des réponses de statut.
+* ASSETS-66643 : amélioration des performances de recherche de balises via une priorité basée sur l’UUID.
+* ASSETS-67109 : ajout de la prise en charge des groupes d’invites pour les invites de génération d’IA.
+* ASSETS-67517 : ajout de la synchronisation des métadonnées AEM vers CAI via l’API PATCH.
+* ASSETS-67525 : ajout d’une nouvelle implémentation de l’API de métadonnées basée sur OpenAPI.
+* ASSETS-67667 : ajout d’une nouvelle implémentation de l’API de schéma de métadonnées de ressource basée sur OpenAPI.
+* ASSETS-68173 : API Feature Check renommée API en API Operations.
+* ASSETS-68261 : amélioration de la page de destination de la recherche Adobe Stock.
+* ASSETS-68446 : ajout de l’API du service de transcription vidéo pour Dynamic Media.
+* ASSETS-68981 : mise à jour du comportement de PATCH de ressource partielle dans l’API Assets de gestion des ressources numériques.
+* ASSETS-69129 : ajout de configurations client IMS pour l’intégration native de Frame.io.
+* ASSETS-69156 : ajout de la prise en charge des métadonnées d’optimisation pour les moteurs de recherche au composant Dynamic Media.
+* ASSETS-69214 : introduction de la prise en charge des miniatures personnalisées dans la visionneuse de ressources Polaris.
+* ASSETS-70416 : ajout d’un en-tête Origin à la liste autorisée d’événements.
+* CQ-4363466 : ajout de la résolution de chemin de configuration contextuelle pour les connecteurs GenAI.
+* SITES-42076 : ajout de la prise en charge des opérations en bloc pour les pages AEM Sites.
+* SITES-42835 : ajout de la prise en charge de l’API de contenu pour AEM Forms en dehors du bouton (bascule) des fonctionnalités.
 
-* GRANITE-67251 : présentation de `cqSiteSearch`, un nouvel index prêt à l’emploi défini sur le type de mixin `cq:Searchable`. Cela permet un contrôle précis du contenu qui entre dans l’index du site et fournit une recherche de site complète pour les sites web AEM, y compris une recherche sémantique.
-* GRANITE-68099 : mise à jour d’Apache Jackrabbit Oak incorporé vers la dernière version publique (2.2.0).
-* SKYOPS-135241 : introduisez un préfixe aem pour les filtres de batterie non modifiables afin d’éviter les conflits de noms avec les configurations définies par le client ou la cliente.
+### Problèmes résolus {#fixed-issues-26908}
 
-### Problèmes résolus {#fixed-issues-26773}
+* ASSETS-36208 : correction d’un profil d’image manquant dans les propriétés du dossier lorsque DM est désactivé.
+* ASSETS-61087 : correction d’une incohérence du nombre de recadrages intelligents et de rendus incorrects lors du téléchargement.
+* ASSETS-63240 : correction d’une sélection multiple mise en relation qui laissait les utilisateurs sur un éditeur de métadonnées vide.
+* ASSETS-65076 : correction d’un schéma d’URL incorrect, entraînant l’apparition d’URL externes incorrectes.
+* ASSETS-65670 : préfixe d’ID de ressource fixe dans le manifeste des informations d’identification de contenu C2PA.
+* ASSETS-65932 : correction d’un en-tête CSV manquant dans le téléchargement d’audit des opérations en bloc.
+* ASSETS-66149 : correction de la gestion des barres obliques de fin dans l’API Folder.
+* ASSETS-66226 : correction d’une vérification de statut sensible à la casse qui entraînait l’échec de la suppression des ressources approuvées/prévisualisées.
+* ASSETS-66669 : correction du bouton Accueil qui ne revenait pas à l’écran de démarrage dans la recherche.
+* ASSETS-66711 : correction de bodyIncluded/contentLength pour les méthodes HTTP autres que le corps.
+* ASSETS-67113 : correction de l’importation en bloc des fichiers SVG ignorés (0 ressource importée).
+* ASSETS-67836 : correction des liens de référence bidirectionnels manquants pour les ressources d’ingrédient.
+* ASSETS-68098 : correction de la perte de métadonnées lors de l’enregistrement et de la fermeture avec Unified Shell activé.
+* ASSETS-68240 : correction d’un rendu de manifeste C2PA qui ne s’affichait pas en mode Ressource.
+* ASSETS-68283 : correction d’une info-bulle de lecture/pause manquante dans la visionneuse vidéo DM (WCAG 2.1.1).
+* ASSETS-69186 : correction des résultats vides de recherche Adobe Stock pour les mots-clés à volume élevé.
+* ASSETS-69662 : les modifications de ressources suivantes fixes ne s’appliquent pas après la première modification.
+* ASSETS-69920 : suppression de l’avertissement de limite de dossiers obsolète de l’exécution d’essai d’importation en bloc.
+* SITES-44265 : ajout d’un content-page-id stable pour résoudre les 404 de l’optimiseur de recherche.
 
-Aucun.
+#### AEM Guides {#guides-26908}
 
-#### AEM Guides {#guides-26773}
-
-* GUIDES-46275 : les dimensions d’image spécifiées avec des unités telles que `mm` ne sont pas rendues correctement, ce qui entraîne l’affichage des images à leur taille d’origine au lieu des dimensions spécifiées.
-* GUIDES-45800 : si vous copiez et collez des `<keywords>` à l’intérieur de `<topicmeta>` dans un `<keydef>` ou un `<topicref>`, les mots-clés sont insérés dans des balises étrangères indésirables.
-* GUIDES-45409 : lorsqu&#39;un mappage contient un `topicref` externe pointant vers une ressource non-DITA (telle que `.html`), son aperçu ne s&#39;affiche pas dans l&#39;interface utilisateur d&#39;Assets.
-* GUIDES-45254 : lorsque vous utilisez des fichiers `.plt` et `.css` dans des modèles PDF, l’option **Générer des identifiants** est disponible dans le menu contextuel accessible par un clic droit, bien qu’elle ne s’applique pas à ces types de fichiers.
-* GUIDES-45508 : l’application d’une ligne de base à une carte avec de nombreuses ressources retarde le chargement du rapport de traduction pour la langue sélectionnée, ce qui entraîne parfois un délai d’expiration de la demande avant le rendu du rapport.
-* GUIDES-45511 : l’info-bulle de l’icône **Historique des versions** est manquante dans le panneau de gauche de l’interface utilisateur de révision à côté du nom de la rubrique.
-* GUIDES-44942 : Lors de l&#39;ajout de questions à un quiz à l&#39;aide de l&#39;option Insérer à partir de la banque de questions, les questions à réponse courte ne sont pas répertoriées malgré un ID de question valide.
+* GUIDES-47432 : le passage entre les modes Source et Auteur entraîne des incohérences de contenu, certaines parties de la rubrique disparaissant ou n’étant pas reflétées entre les modes.
+* GUIDES-48319 : lorsque vous utilisez le suivi des modifications, le rejet d’une insertion de texte importé supprime tout le contenu de la balise au lieu de rejeter uniquement le contenu inséré spécifique.
 
 Pour plus d’informations sur les fonctionnalités nouvelles et améliorées, ainsi que sur les problèmes résolus dans la version, consultez la [Feuille de route de publication d’Experience Manager Guides](https://experienceleague.adobe.com/fr/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
-### Problèmes connus {#known-issues-26773}
+### Problèmes connus {#known-issues-26908}
 
 Aucun.
 
-### Fonctionnalités et API obsolètes {#deprecated-26773}
+### Fonctionnalités et API obsolètes {#deprecated-26908}
 
 Les fonctionnalités et API obsolètes et supprimées dans AEM as a Cloud Service sont présentées dans le document [Fonctionnalités et API obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md).
 
-### Correctifs de sécurité {#security-26773}
+### Correctifs de sécurité {#security-26908}
 
-AEM as a Cloud Service est dédié à l’optimisation de la sécurité et des performances de votre plateforme. Cette version de maintenance corrige 10 vulnérabilités identifiées, renforçant ainsi notre engagement en faveur d’une protection robuste des systèmes.
+AEM as a Cloud Service est dédié à l’optimisation de la sécurité et des performances de votre plateforme. Cette version de maintenance corrige 22 vulnérabilités identifiées, renforçant ainsi notre engagement en faveur d’une protection robuste des systèmes.
 
-### Technologies intégrées {#embedded-tech-26773}
+### Technologies intégrées {#embedded-tech-26908}
 
 | Technologie | Version | Lien |
 |---|---|---|
@@ -69,6 +109,6 @@ AEM as a Cloud Service est dédié à l’optimisation de la sécurité et de
 | AEM HTL | 1.4.28-1.4.0 | [Spécification du modèle de langage HTML](https://github.com/adobe/htl-spec) |
 | Serveur HTTP Apache | 2.4.67 | [Apache Httpd 2.4.67](https://apache.googlesource.com/httpd/+/refs/tags/2.4.67/CHANGES) |
 | Dispatcher | 2.0.274 |  |
-| Composants principaux AEM | 2.31.0 | [Composants principaux de la gestion de contenu web d’AEM](https://github.com/adobe/aem-core-wcm-components) |
+| Composants principaux AEM | 2.31.2 | [Composants principaux de la gestion de contenu web d’AEM](https://github.com/adobe/aem-core-wcm-components) |
 | Node.js | 14 (par défaut) | [Versions de Node.js prises en charge](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
 | Java 21 | 21.0.11 | [JDK 21.0.11](https://www.oracle.com/java/technologies/javase/21-0-11-relnotes.html) |
