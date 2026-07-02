@@ -6,7 +6,7 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: f6624c3c2244fd38f0df794e3aa05680c437a806
+source-git-commit: 0c868761c03936b501988ec27c51577426f30bda
 workflow-type: tm+mt
 source-wordcount: '3487'
 ht-degree: 29%
@@ -672,6 +672,6 @@ Fournit les résultats sélectionnés :
 
 La recherche de fragments de contenu par l’IA (sémantique) améliore la découverte de contenu en activant les requêtes en langage naturel. Il vous permet de trouver des fragments en fonction de la signification et de l’intention, au lieu de vous fier uniquement à des mots-clés exacts ou à des correspondances en texte intégral.
 
-Saisissez votre requête de recherche dans la zone de recherche ; par exemple, `fruity and light roast` :
+Saisissez votre requête de recherche dans la zone de recherche. Par exemple, `fruity and light roast` :
 
 ![Console Fragments de contenu - recherche sémantique](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-semantic-search.png)
