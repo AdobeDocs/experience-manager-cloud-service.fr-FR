@@ -6,7 +6,7 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: f6624c3c2244fd38f0df794e3aa05680c437a806
+source-git-commit: 0c868761c03936b501988ec27c51577426f30bda
 workflow-type: tm+mt
 source-wordcount: '3487'
 ht-degree: 29%
@@ -147,7 +147,7 @@ Le panneau principal/droit (vue du tableau) de la console fournit diverses infor
 
    * Sélectionnez l’icône d’un fragment spécifique :
 
-     ![&#x200B; Console Fragments de contenu - Icône Workflows &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-workflows-icon.png)
+     ![ Console Fragments de contenu - Icône Workflows ](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-workflows-icon.png)
 
      Pour ouvrir une boîte de dialogue contenant des informations détaillées sur les workflows (passés et actuels) du fragment :
 
@@ -172,7 +172,7 @@ Certaines actions sont disponibles à partir de la console, sans sélectionner d
 
   >[!NOTE]
   >
-  >La console **&#x200B;**&#x200B;permet d’accéder aux ressources, telles que les images, les vidéos, etc.  Il est possible d’accéder à cette console :
+  >La console **** permet d’accéder aux ressources, telles que les images, les vidéos, etc.  Il est possible d’accéder à cette console :
   >
   >* en utilisant le lien **Ouvrir dans Assets** (dans la console Fragments de contenu) ;
   >* directement à partir du volet **Navigation** global
@@ -281,7 +281,7 @@ Pour ouvrir votre fragment à des fins de modification :
    * Crée une copie du fragment de contenu sélectionné à son emplacement.
    * Crée des copies de tous les fragments référencés par le fragment sélectionné.
 
-     Les [&#x200B; emplacements vers lesquels les fragments référencés sont copiés](#locations-that-the-referenced-fragments-are-copied-to) dépendent de l’option sélectionnée :
+     Les [ emplacements vers lesquels les fragments référencés sont copiés](#locations-that-the-referenced-fragments-are-copied-to) dépendent de l’option sélectionnée :
 
       * **Copier dans le dossier sélectionné**
 Lorsque cette option est sélectionnée, les fragments référencés sont copiés au même emplacement que le fragment sélectionné d’origine.
@@ -402,7 +402,7 @@ Vous pouvez :
 
 * Prévisualisez vos fragments de contenu :
 
-   * Avec [&#x200B; Modèles De Visualisation &#x200B;](/help/sites-cloud/administering/content-fragments/preview.md#preview-with-visualization-html-templates)
+   * Avec [ Modèles De Visualisation ](/help/sites-cloud/administering/content-fragments/preview.md#preview-with-visualization-html-templates)
 
    * Sur l’instance [preview](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance)
 
@@ -434,7 +434,7 @@ Vous pouvez :
 
 Vous pouvez publier vos fragments de contenu à l’aide de l’option **Publier** à partir de :
 
-* la barre d’outils de la console [&#x200B; Fragments de contenu &#x200B;](#actions-selected-content-fragment)
+* la barre d’outils de la console [ Fragments de contenu ](#actions-selected-content-fragment)
 
    * Sélectionnez un ou plusieurs fragments dans la liste.
 
@@ -467,7 +467,7 @@ Après publication, le statut du fragment est mis à jour et visible dans l’é
 
 Vous pouvez dépublier des fragments de contenu :
 
-* la barre d’outils de la console [&#x200B; Fragments de contenu &#x200B;](#actions-selected-content-fragment)
+* la barre d’outils de la console [ Fragments de contenu ](#actions-selected-content-fragment)
 
    * Sélectionnez un ou plusieurs fragments dans la liste.
 
@@ -592,7 +592,7 @@ Par exemple :
 Les détails des copies de langue sont accessibles à partir de :
 
 * la colonne **Langue** de la [Console Fragments de contenu](#information-content-fragments)
-* l’onglet [&#x200B; Copies de langue de l’éditeur de fragments de contenu](/help/sites-cloud/administering/content-fragments/authoring.md#view-language-copies)
+* l’onglet [ Copies de langue de l’éditeur de fragments de contenu](/help/sites-cloud/administering/content-fragments/authoring.md#view-language-copies)
 
 L’icône indique les paramètres régionaux du fragment de contenu, ainsi que le nombre total de copies de langue/paramètres régionaux associées au fragment de contenu. Par exemple, à partir de la console :
 
@@ -648,7 +648,7 @@ Une fois cette option sélectionnée, elle s’affiche sous forme de prédicat d
 La console Fragments de contenu prend en charge les éléments suivants :
 
 * [Recherche du texte intégral](#full-text-search)
-* [Recherche optimisée par l&#39;IA &#x200B;](#ai-search) (recherche sémantique)
+* [Recherche optimisée par l&#39;IA ](#ai-search) (recherche sémantique)
 
 Utilisez l’option de basculement **Recherche optimisée par l&#39;IA** pour sélectionner la méthode de recherche à utiliser :
 
@@ -672,6 +672,6 @@ Fournit les résultats sélectionnés :
 
 La recherche de fragments de contenu par l’IA (sémantique) améliore la découverte de contenu en activant les requêtes en langage naturel. Il vous permet de trouver des fragments en fonction de la signification et de l’intention, au lieu de vous fier uniquement à des mots-clés exacts ou à des correspondances en texte intégral.
 
-Saisissez votre requête de recherche dans la zone de recherche ; par exemple, `fruity and light roast` :
+Saisissez votre requête de recherche dans la zone de recherche. Par exemple, `fruity and light roast` :
 
 ![Console Fragments de contenu - recherche sémantique](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-semantic-search.png)
