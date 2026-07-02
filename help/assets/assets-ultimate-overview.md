@@ -5,10 +5,10 @@ feature: Asset Management
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 3ae96cd2-e0ac-43a5-a0bf-bebb1a028b10
-source-git-commit: 17d8d0774461a893d9decc7f184cba084570a737
+source-git-commit: f26e6633bf20d49433a40e94bb03350bcb67c4d5
 workflow-type: tm+mt
-source-wordcount: '2062'
-ht-degree: 41%
+source-wordcount: '2055'
+ht-degree: 40%
 
 ---
 
@@ -32,7 +32,7 @@ Assets as a Cloud Service Ultimate offre divers avantages clés qui permett
 
 ## Fonctionnalités clés d’Assets Ultimate {#capabilities-assets-ultimate}
 
-Assets as a Cloud Service Ultimate vous permet d’effectuer diverses opérations clés de gestion des ressources numériques, telles que les suivantes :
+Assets as a Cloud Service Ultimate comprend les fonctionnalités clés suivantes :
 
 * **Gestion des ressources et services de bibliothèque** : outils qui permettent aux utilisateurs et utilisatrices d’ingérer, de stocker, de cataloguer, de contrôler, de gérer et de gouverner les ressources numériques d’une marque dans un référentiel centralisé.
 
