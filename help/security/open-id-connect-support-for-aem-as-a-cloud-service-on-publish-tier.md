@@ -692,7 +692,7 @@ Si une URL de redirection non valide est fournie, l’authentification échoue a
 
 Par défaut, la déconnexion d’AEM efface uniquement la session AEM locale (cookie de connexion). La session de l’utilisateur sur le fournisseur d’identité (IdP) reste active. Revenir à un chemin protégé peut donc réauthentifier l’utilisateur en silence sans demander à nouveau ses informations d’identification.
 
-Pour mettre également fin à la session au niveau de l’IdP, AEM prend en charge la **Déconnexion unique initiée par SP** (également appelée Déconnexion initiée par RP *RP*, comme défini par la [ Spécification de connexion initiée par RP OpenID Connect ](https://openid.net/specs/openid-connect-rpinitiated-1_0.html)). Lorsqu’il est activé, AEM redirige le navigateur vers la `end_session_endpoint` de l’IdP afin que ce dernier puisse mettre fin à sa propre session avant de renvoyer l’utilisateur vers une page configurée.
+Pour mettre également fin à la session au niveau de l’IdP, AEM prend en charge la **Déconnexion unique initiée par SP** (également appelée Déconnexion initiée par RP *RP*, comme défini par la [&#x200B; Spécification de connexion initiée par RP OpenID Connect &#x200B;](https://openid.net/specs/openid-connect-rpinitiated-1_0.html)). Lorsqu’il est activé, AEM redirige le navigateur vers la `end_session_endpoint` de l’IdP afin que ce dernier puisse mettre fin à sa propre session avant de renvoyer l’utilisateur vers une page configurée.
 
 ### Fonctionnement de la déconnexion unique {#how-single-logout-works}
 
