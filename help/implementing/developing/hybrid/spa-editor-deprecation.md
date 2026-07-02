@@ -49,7 +49,7 @@ L’abandon signifie qu’aucune nouvelle fonctionnalité ne sera ajoutée aux S
 
 L’option de remplacement la plus appropriée pour l’éditeur de SPA dépend de vos besoins pour vos projets.
 
-* **[L’éditeur universel ](https://www.aem.live/docs/aem-authoring)** est le meilleur remplacement direct de l’éditeur de SPA.
+* **[L’éditeur universel &#x200B;](https://www.aem.live/docs/aem-authoring)** est le meilleur remplacement direct de l’éditeur de SPA.
    * L’éditeur universel est également un éditeur visuel et a été conçu spécifiquement pour les implémentations découplées, incorporant toute l’expérience d’Adobe à partir de l’éditeur de SPA.
    * L’éditeur universel a également été [publié pour AEM 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) (avec la version 2024.11.05 d’AEM 6.5) et prend donc en charge les cas d’utilisation AMS et On-Prem en plus des Cloud Services.
 * **[L’éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md)** constitue une alternative pour celles et ceux qui préfèrent un éditeur basé sur des formulaires.
