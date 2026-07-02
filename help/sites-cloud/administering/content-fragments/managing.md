@@ -6,9 +6,9 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="S’applique à AEM Sites)."
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 7e93b570e6b249432680308bee4de789e358f26c
+source-git-commit: f6624c3c2244fd38f0df794e3aa05680c437a806
 workflow-type: tm+mt
-source-wordcount: '3451'
+source-wordcount: '3487'
 ht-degree: 29%
 
 ---
@@ -103,8 +103,7 @@ Le panneau principal/droit (vue du tableau) de la console fournit diverses infor
    * Informations uniquement.
    * Peut être utilisé pour le [filtrage rapide](#fast-filtering).
 * **Dossier**
-   * Fournit un lien pour ouvrir le dossier dans la console.
-Placez le pointeur de la souris sur le nom du dossier pour afficher le chemin JCR.
+   * Fournit un lien pour ouvrir le dossier dans la console.Placez le pointeur de la souris sur le nom du dossier pour afficher le chemin d’accès JCR.
 * **Statut**
    * Informations uniquement.
    * Peut être utilisé pour le [filtrage rapide](#fast-filtering).
@@ -649,15 +648,11 @@ Une fois cette option sélectionnée, elle s’affiche sous forme de prédicat d
 La console Fragments de contenu prend en charge les éléments suivants :
 
 * [Recherche du texte intégral](#full-text-search)
-* [Recherche sémantique](#semantic-search)
+* [Recherche optimisée par l&#39;IA &#x200B;](#ai-search) (recherche sémantique)
 
-<!-- CQDOC-23674 - activate when toggle visible -->
-<!--
+Utilisez l’option de basculement **Recherche optimisée par l&#39;IA** pour sélectionner la méthode de recherche à utiliser :
 
-Use the toggle option to select your search method:
-
-![Content Fragments console - select search method](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-select-search.png)
--->
+![Console Fragments de contenu - sélectionnez la méthode de recherche](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-select-search.png)
 
 La zone de recherche permet également d’accéder rapidement aux **Fragments de contenu récents** et aux **Recherches enregistrées** :
 
@@ -673,9 +668,9 @@ Fournit les résultats sélectionnés :
 
 ![Console Fragments de contenu - résultats de la recherche](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-full-text-search-results.png)
 
-### Recherche sémantique {#semantic-search}
+### Recherche optimisée par l&#39;IA (recherche sémantique) {#ai-search}
 
-La recherche sémantique de fragments de contenu améliore la découverte de contenu en activant les requêtes en langage naturel. Il vous permet de trouver des fragments en fonction de la signification et de l’intention, au lieu de vous fier uniquement à des mots-clés exacts ou à des correspondances en texte intégral.
+La recherche de fragments de contenu par l’IA (sémantique) améliore la découverte de contenu en activant les requêtes en langage naturel. Il vous permet de trouver des fragments en fonction de la signification et de l’intention, au lieu de vous fier uniquement à des mots-clés exacts ou à des correspondances en texte intégral.
 
 Saisissez votre requête de recherche dans la zone de recherche ; par exemple, `fruity and light roast` :
 
