@@ -4,9 +4,9 @@ description: Voici les notes de mise à jour de la version préliminaire de l’
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
+source-git-commit: 3da0b684974f92ae078fbefb8adeaf1554291d8c
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '155'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,8 @@ Ces notes de mise à jour **aperçu** sont fournies à titre indicatif pour que 
 >
 >Le contenu de la version actuelle ainsi que la date de publication peuvent changer.
 
-## Fonctionnalités à venir {#upcoming-features}
-
-* L’éditeur prend désormais en charge une `preview` [balise meta](/help/implementing/universal-editor/customizing.md#meta-tags) pour forcer le chargement de l’éditeur en [mode aperçu](/help/sites-cloud/authoring/sites-console/previewing-content.md).
-* L’éditeur prend désormais en charge une `readonly` [balise meta](/help/implementing/universal-editor/customizing.md#meta-tags) pour désactiver la modification, de sorte que l’utilisateur peut toujours sélectionner n’importe quel composant, mais ne peut pas modifier le contenu.
-
 ## Modifications à venir {#upcoming-improvements}
 
-* Des améliorations d’accessibilité ont été apportées aux hiérarchies d’en-têtes.
-* Des améliorations d’accessibilité ont été apportées pour maintenir correctement le focus dans la barre d’emplacement afin de faciliter la navigation au clavier de l’éditeur.
-
+* Les actions Annuler/Rétablir ont été améliorées.
+* Les listes ordonnées s’affichent désormais correctement lors de la modification en ligne avec l’éditeur de texte enrichi.
+* La réorganisation par glisser-déposer des sections fonctionne désormais correctement.
