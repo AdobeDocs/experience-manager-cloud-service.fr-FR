@@ -6,8 +6,8 @@ role: Admin, Developer
 exl-id: 58b1bb4a-33df-46df-8743-a56cefc5a60a
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 90%
+source-wordcount: '1045'
+ht-degree: 81%
 
 ---
 
@@ -22,7 +22,7 @@ Adobe a abandonné l’éditeur de SPA avec la version [2025.01 d’AEM as a Clo
 
 ## Détails de l’abandon {#details}
 
-L’abandon de l’éditeur de SPA **ne signifie pas qu’il va être immédiatement supprimé**. Si vous possédez des implémentations existantes de celui-ci, **vous pouvez continuer à l’utiliser tant que vous en avez besoin.** Toutefois, gardez à l’esprit les implications suivantes de son abandon.
+L’obsolescence de l’éditeur de SPA **ne signifie pas sa suppression immédiate** et si vous disposez déjà d’implémentations, **vous pouvez continuer à l’utiliser tant qu’il répond à vos besoins.** Toutefois, gardez à l’esprit les implications suivantes de son abandon.
 
 * À l’avenir, Adobe ne traitera que les problèmes de types P1 et P2 et les vulnérabilités de sécurité.
 * Aucun autre développement, amélioration ou mise à jour ne seront apportés à ses SDK.
@@ -30,26 +30,26 @@ L’abandon de l’éditeur de SPA **ne signifie pas qu’il va être immédiate
 L’abandon signifie qu’aucune nouvelle fonctionnalité ne sera ajoutée aux SDK suivants.
 
 * [Archétype de projet AEM](https://github.com/adobe/aem-project-archetype/)
-* [AEM SPA Project Core](https://github.com/adobe/aem-spa-project-core)
-* [AEM SPA Page Model Manager](https://github.com/adobe/aem-spa-page-model-manager)
-* [AEM SPA Component Mapping](https://github.com/adobe/aem-spa-component-mapping)
-* [Composants React modifiables de SPA d’AEM](https://github.com/adobe/aem-react-editable-components)
+* [Code de projet SPA AEM](https://github.com/adobe/aem-spa-project-core)
+* [Gestionnaire de modèles de page SPA AEM](https://github.com/adobe/aem-spa-page-model-manager)
+* [Mappage du composant SPA AEM](https://github.com/adobe/aem-spa-component-mapping)
+* [Composants React modifiables de SPA d’AEM.](https://github.com/adobe/aem-react-editable-components)
    * [Composants principaux AEM React](https://github.com/adobe/aem-react-core-wcm-components)
-   * [Base des composants principaux AEM React](https://github.com/adobe/aem-react-core-wcm-components-base)
+   * [Base des composants principaux React d’AEM](https://github.com/adobe/aem-react-core-wcm-components-base)
    * [SPA des composants principaux AEM React](https://github.com/adobe/aem-react-core-wcm-components-spa)
-   * [Exemples de composants principaux AEM React](https://github.com/adobe/aem-react-core-wcm-components-examples)
-* [AEM SPA Angular Editable Components](https://github.com/adobe/aem-angular-editable-components)
-   * [Composants principaux AEM Angular](https://github.com/adobe/aem-angular-core-wcm-components)
-   * [Base des composants principaux AEM Angular](https://github.com/adobe/aem-angular-core-wcm-components-base)
-   * [SPA des composants principaux AEM Angular](https://github.com/adobe/aem-angular-core-wcm-components-spa)
+   * [Exemples de composants principaux React d’AEM](https://github.com/adobe/aem-react-core-wcm-components-examples)
+* [Composants modifiables d’Angular de SPA AEM](https://github.com/adobe/aem-angular-editable-components)
+   * [Composants principaux d’AEM Angular](https://github.com/adobe/aem-angular-core-wcm-components)
+   * [Base des composants principaux d’AEM Angular](https://github.com/adobe/aem-angular-core-wcm-components-base)
+   * [SPA des composants principaux d’AEM Angular](https://github.com/adobe/aem-angular-core-wcm-components-spa)
    * [Exemples de composants principaux AEM Angular](https://github.com/adobe/aem-angular-core-wcm-components-examples)
-* [AEM SPA Vue Editable Components](https://github.com/mavicellc/aem-vue-editable-components)
+* [Composants modifiables Vue SPA AEM](https://github.com/mavicellc/aem-vue-editable-components)
 
 ## Options de remplacement de l’éditeur de SPA {#alternatives}
 
 L’option de remplacement la plus appropriée pour l’éditeur de SPA dépend de vos besoins pour vos projets.
 
-* **[L’éditeur universel &#x200B;](https://www.aem.live/docs/aem-authoring)** est le meilleur remplacement direct de l’éditeur de SPA.
+* **[L’éditeur universel ](https://www.aem.live/docs/aem-authoring)** est le meilleur remplacement direct de l’éditeur de SPA.
    * L’éditeur universel est également un éditeur visuel et a été conçu spécifiquement pour les implémentations découplées, incorporant toute l’expérience d’Adobe à partir de l’éditeur de SPA.
    * L’éditeur universel a également été [publié pour AEM 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) (avec la version 2024.11.05 d’AEM 6.5) et prend donc en charge les cas d’utilisation AMS et On-Prem en plus des Cloud Services.
 * **[L’éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md)** constitue une alternative pour celles et ceux qui préfèrent un éditeur basé sur des formulaires.
