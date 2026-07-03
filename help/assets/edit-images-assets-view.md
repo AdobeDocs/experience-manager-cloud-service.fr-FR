@@ -5,10 +5,10 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: aa18d6572f3ba8a6f8bb61d96d3004a6db46d925
 workflow-type: tm+mt
-source-wordcount: '1251'
-ht-degree: 71%
+source-wordcount: '1256'
+ht-degree: 70%
 
 ---
 
@@ -26,8 +26,7 @@ Après avoir modifié une image, vous pouvez enregistrer la nouvelle image en ta
 
 ## Modifier l’image {#edit-image}
 
-Accédez à l’interface utilisateur de la vue Assets, en utilisant le lien [Vue Assets](https://experience.adobe.com/#/assets) et en sélectionnant le référentiel approprié. Pour recevoir un accès, contactez l’équipe d’administration de votre entreprise.
-Pour toute information de référence supplémentaire, reportez-vous aux sections [Prise en main de la vue Adobe Experience Manager Assets](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Comprendre l’interface utilisateur de la vue Assets](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) et [Cas d’utilisation de la vue Assets](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
+Accédez à l’interface utilisateur de la vue Assets, en utilisant le lien [Vue Assets](https://experience.adobe.com/#/assets) et en sélectionnant le référentiel approprié. Pour recevoir un accès, contactez l’équipe d’administration de votre entreprise.Pour toute information de référence supplémentaire, reportez-vous aux sections [Prise en main de la vue Adobe Experience Manager Assets](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Comprendre l’interface utilisateur de la vue Assets](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) et [Cas d’utilisation de la vue Assets](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
 <!--
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
@@ -49,8 +48,7 @@ Le redimensionnement d’une image à une taille spécifique est un cas d’util
 1. Cliquez sur **[!UICONTROL Appliquer]** pour appliquer vos modifications.
    ![Modification d’images avec Adobe Express.](assets/adobe-express-resize-image.png)
 
-   Votre image modifiée peut être téléchargée. Vous pouvez enregistrer la ressource modifiée en tant que nouvelle version de la même ressource ou l’enregistrer en tant que nouvelle ressource.
-   ![Enregistrement d’image avec Adobe Express.](assets/adobe-express-resize-save.png)
+   Votre image modifiée peut être téléchargée. Vous pouvez enregistrer la ressource modifiée en tant que nouvelle version de la même ressource ou l’enregistrer en tant que nouvelle ressource.   ![Enregistrement d’image avec Adobe Express.](assets/adobe-express-resize-save.png)
 
 #### Supprimer l’arrière-plan {#remove-background-using-express}
 
@@ -69,8 +67,7 @@ La transformation d’une image en taille parfaite est facile à l’aide des ac
 1. Cliquez sur **[!UICONTROL Recadrer l’image]** dans le volet de gauche.
 2. Faites glisser les poignées sur les coins de l’image pour créer le recadrage souhaité.
 3. Cliquez sur **[!UICONTROL Appliquer]**.
-   ![Enregistrer l’image avec Adobe Express](assets/adobe-express-crop-image.png)
-L’image recadrée peut être téléchargée. Vous pouvez enregistrer la ressource modifiée en tant que nouvelle version de la même ressource ou l’enregistrer en tant que nouvelle ressource.
+   ![Enregistrer une image avec Adobe Express](assets/adobe-express-crop-image.png)L’image recadrée peut être téléchargée. Vous pouvez enregistrer la ressource modifiée en tant que nouvelle version de la même ressource ou l’enregistrer en tant que nouvelle ressource.
 
 #### Convertir le JPEG en PNG {#convert-image-types-using-express}
 
@@ -89,7 +86,7 @@ Vous pouvez rapidement convertir les formats d’image JPEG et PNG à l’aide d
 
 Les utilisateurs disposant de droits Express peuvent utiliser l’éditeur Express intégré à partir de la vue Assets pour modifier facilement le contenu et en créer de nouveaux à l’aide de GenAI à partir d’Adobe Firefly. Cette fonctionnalité améliore la réutilisation du contenu et accélère la vitesse du contenu. Vous pouvez également utiliser des éléments prédéfinis pour optimiser l’aspect de vos ressources ou exécuter des actions rapides pour modifier vos images en quelques clics seulement.
 
-![express dans l’interface utilisateur d’essentials](/help/assets/assets/express-in-essentials-ui.jpg)
+![express dans l’interface d’utilisation d’essentials](/help/assets/assets/express-in-essentials-ui.jpg)
 Pour modifier des images à l’aide de [!DNL Adobe Express]’éditeur incorporé, procédez comme suit :
 
 1. Accédez à la vue AEM Assets à l’aide du lien [Vue AEM Assets](https://experience.adobe.com/#/assets) et sélectionnez le référentiel approprié.
@@ -112,10 +109,15 @@ Pour modifier des images à l’aide de [!DNL Adobe Express]’éditeur incorpor
    1. Facultatif : fournissez des détails tels que le nom du projet ou de la campagne, les mots-clés, les canaux, la période et la région.
 1. Cliquez sur **Enregistrer en tant que version** ou **Enregistrer en tant que nouvelle ressource** pour enregistrer les ressources.
 
+>[!NOTE]
+>
+>L’enregistrement d’un fichier PSD en tant que document Adobe Express conserve les calques du fichier PSD d’origine.
+
+
 #### Limites de la modification des images dans l’éditeur Express {#limitations-of-editing-images-in-the-express-editor}
 
-* Type de fichier pris en charge : JPEG ou PNG.
-* Taille de fichier maximale prise en charge : 40 Mo.
+* Type de fichier pris en charge : JPEG, PSD ou PNG.
+* La taille de la ressource doit être inférieure à 80 Mo pour les ordinateurs de bureau et à 40 Mo pour les appareils mobiles.
 * Plage de largeur et de hauteur prise en charge : 65 Mpx (par exemple, 8 Ko x 8 Ko ou 16 Ko x 4 Ko).
 * Rechargez la page pour afficher la dernière ressource enregistrée dans le dossier source.
 
@@ -130,9 +132,7 @@ Pour modifier des images à l’aide de [!DNL Adobe Express]’éditeur incorpor
 
 #### Limites {#limitations}
 
-* Vous ne pouvez modifier que les images dont les types de format sont `JPEG` et `PNG`.
-* La taille de la ressource doit être inférieure à 80 Mo pour les ordinateurs de bureau et à 40 Mo pour les appareils mobiles.
-* La plage de largeur et de hauteur prise en charge est de 65 Mpx (par exemple, 8 Ko x 8 Ko ou 16 Ko x 4 Ko).
+* Compter jusqu’à 8 000 pixels par dimension pour la zone de travail du nouveau document Express
 * Vous pouvez enregistrer une image aux formats `PDF`, `JPEG` ou `PNG`.
 
 <!--
@@ -199,7 +199,7 @@ TBD: Insert a video of the available social media options.
 
 * Faites des commentaires sur la documentation en utilisant les options [!UICONTROL Modifier cette page] ![Modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![Créer un problème GitHub](assets/do-not-localize/github-issue.png) disponibles dans la barre latérale de droite.
 
-* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General#support).
+* Contacter l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General#support)
 
 >[!MORELIKETHIS]
 >
