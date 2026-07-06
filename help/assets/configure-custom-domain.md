@@ -26,7 +26,7 @@ Assurez-vous de répondre aux exigences suivantes avant de démarrer le processu
 
 * Accès à Cloud Manager
 * Déjà activé Dynamic Media avec OpenAPI dans votre environnement via un ticket d’assistance
-* Certificat SSL de type EV ou OV pour le domaine utilisé dans le niveau de diffusion. Voir [ Présentation des certificats SSL ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates) pour plus d’informations
+* Certificat SSL de type EV ou OV pour le domaine utilisé dans le niveau de diffusion. Voir [&#x200B; Présentation des certificats SSL &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates) pour plus d’informations
 
 ## Configuration d’un domaine personnalisé dans le niveau de diffusion à l’aide de Cloud Manager
 

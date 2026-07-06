@@ -19,7 +19,7 @@ Créez un lien vers les ressources sélectionnées pour les partager facilement 
 
 ## Conditions préalables {#prerequisites}
 
-[Les utilisateurs de ](deploy-content-hub.md#onboard-content-hub-users) peuvent créer un lien vers les ressources sélectionnées et le partager avec d’autres utilisateurs.
+[Les utilisateurs de &#x200B;](deploy-content-hub.md#onboard-content-hub-users) peuvent créer un lien vers les ressources sélectionnées et le partager avec d’autres utilisateurs.
 
 ## Partager des ressources {#share-assets}
 

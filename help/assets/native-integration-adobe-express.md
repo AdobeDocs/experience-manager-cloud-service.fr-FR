@@ -44,7 +44,7 @@ Pour commencer à utiliser AEM Assets dans l’éditeur Adobe Express, procédez
 
 2. Ouvrez une nouvelle zone de travail vierge en chargeant un nouveau modèle ou un nouveau projet, ou en créant une ressource.
 
-3. Cliquez sur **** disponible dans le volet de navigation de gauche. Adobe Express affiche le [gestionnaire d’accès](#intelligent-asset-discovery-content-advisor), qui répertorie les référentiels auxquels vous avez accès, ainsi que la liste des ressources et des dossiers disponibles au niveau racine.
+3. Cliquez sur **&#x200B;**&#x200B;disponible dans le volet de navigation de gauche. Adobe Express affiche le [gestionnaire d’accès](#intelligent-asset-discovery-content-advisor), qui répertorie les référentiels auxquels vous avez accès, ainsi que la liste des ressources et des dossiers disponibles au niveau racine.
 
 4. Recherchez ou recherchez des ressources dans le référentiel à l’aide du [gestionnaire d’accès](#intelligent-asset-discovery-content-advisor), puis faites-les glisser et déposez-les sur la zone de travail. Vous pouvez également cliquer sur les ressources pour les placer sur la zone de travail. Vous pouvez également filtrer les ressources ![filtrer](assets/do-not-localize/filter.svg) selon différents critères, tels que le statut d’approbation, le type de fichier, le type MIME et les dimensions.
 
@@ -229,7 +229,7 @@ Après avoir incorporé les modifications appropriées dans la zone de travail E
 
    ![Enregistrement de ressources dans AEM](assets/adobe-express-share.png)
 
-2. Sélectionnez ****. Adobe Express affiche la boîte de dialogue de chargement.
+2. Sélectionnez **&#x200B;**. Adobe Express affiche la boîte de dialogue de chargement.
 
 3. Sélectionnez **Page actuelle** ou **Toutes les pages**. Spécifiez un nom et un format pour la ou les ressources à exporter. Vous pouvez exporter le contenu de la zone de travail aux formats PNG, JPEG, PDF, MP4, MP4+PNG ou MP4+JPEG. Le format s’ajuste automatiquement en fonction des ressources sur la ou les pages de la zone de travail.Sélectionner **Page active** enregistre la ressource sur la page active dans le dossier de destination. Si vous sélectionnez **Toutes les pages** et que le format d’exportation n’est pas PDF, toutes les pages de la zone de travail sont enregistrées en tant que fichiers distincts dans un nouveau dossier de votre dossier de destination. Si le format d’exportation est PDF, toutes les pages de la zone de travail sont enregistrées en tant que fichier PDF unique dans le dossier de destination.
 

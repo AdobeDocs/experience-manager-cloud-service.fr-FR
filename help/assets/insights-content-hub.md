@@ -19,7 +19,7 @@ ht-degree: 17%
 
 ## Conditions préalables {#prerequisites}
 
-[Les utilisateurs de ](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
+[Les utilisateurs de &#x200B;](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
 
 ## Affichage des statistiques sur les ressources chargées{#view-statistics-for-uploaded-assets}
 

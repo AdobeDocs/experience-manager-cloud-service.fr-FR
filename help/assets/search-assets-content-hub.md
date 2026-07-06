@@ -17,7 +17,7 @@ Lorsque vous disposez d’un grand nombre de ressources dans votre référentiel
 
 ## Conditions préalables {#prerequisites}
 
-[Les utilisateurs de ](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
+[Les utilisateurs de &#x200B;](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
 
 ## Ce que vous pouvez rechercher  {#what-you-can-search}
 
@@ -41,7 +41,7 @@ La recherche [!DNL Content Hub] fournit des résultats en fonction des élément
 
 Pour effectuer une recherche de base sur [!DNL the Content Hub], accédez à la barre de recherche et indiquez le mot-clé à rechercher. Accédez aux filtres disponibles dans le volet de gauche et appliquez-les pour affiner vos résultats de recherche.
 
-Par exemple, recherchez toutes les images **** contenant le mot-clé `architect`, qui a été modifié au cours de l’année dernière. Pour exécuter ce scénario, procédez comme suit :
+Par exemple, recherchez toutes les images **&#x200B;**&#x200B;contenant le mot-clé `architect`, qui a été modifié au cours de l’année dernière. Pour exécuter ce scénario, procédez comme suit :
 
 1. Spécifiez `architect` comme mot-clé de recherche.
 

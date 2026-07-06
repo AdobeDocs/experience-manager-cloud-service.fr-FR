@@ -50,11 +50,11 @@ Votre instance AEM as a Cloud Service sur Admin Console comprend les profils de 
 
 * [Utilisateurs et utilisatrices experts AEM Assets](#onboard-power-users)
 
-  ![Profils de produit ](assets/aem-assets-product-profiles.png)
+  ![Profils de produit &#x200B;](assets/aem-assets-product-profiles.png)
 
 Si vous avez activé Content Hub pour Assets as a Cloud Service, une nouvelle instance est créée dans AEM Assets as a Cloud Service sur Admin Console avec `delivery` comme suffixe :
 
-![Nouvelle instance pour Content Hub ](assets/new-instance-content-hub.png)
+![Nouvelle instance pour Content Hub &#x200B;](assets/new-instance-content-hub.png)
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ Notez qu’il n’y a aucun `author` ni `publish` dans le nom de l’instance po
 
 Cliquez sur le nom de l’instance pour afficher le profil de produit Content Hub `AEM Assets Limited Users`.
 
-![Profil de produit ](assets/content-hub-product-profile.png)
+![Profil de produit &#x200B;](assets/content-hub-product-profile.png)
 
 Vous pouvez commencer à ajouter des utilisateurs ou des groupes d’utilisateurs à ce profil de produit pour leur fournir l’accès à Content Hub.
 
@@ -128,11 +128,11 @@ Votre instance AEM as a Cloud Service sur Admin Console comprend maintenant les 
 
 * [Utilisateurs et utilisatrices experts AEM Assets](#onboard-power-users)
 
-![Profils de produit ](assets/aem-assets-product-profiles.png)
+![Profils de produit &#x200B;](assets/aem-assets-product-profiles.png)
 
 Si Content Hub doit être activé, cliquez sur Autres options (...) sur le nom du programme dans Cloud Manager et sélectionnez **[!UICONTROL Modifier le programme]**. Développez **[!UICONTROL Assets Ultimate]** puis cliquez sur **[!UICONTROL Content Hub]**. Cette étape active Content Hub pour Assets Ultimate. Une nouvelle instance a été créée dans AEM Assets as a Cloud Service sur Admin Console avec `delivery` comme suffixe :
 
-![Nouvelle instance pour Content Hub ](assets/new-instance-content-hub.png)
+![Nouvelle instance pour Content Hub &#x200B;](assets/new-instance-content-hub.png)
 
 >[!NOTE]
 >
@@ -142,7 +142,7 @@ Notez qu’il n’y a aucun `author` ni `publish` dans le nom de l’instance po
 
 Cliquez sur le nom de l’instance pour afficher le profil de produit Content Hub `AEM Assets Limited Users`.
 
-![Profil de produit ](assets/content-hub-product-profile.png)
+![Profil de produit &#x200B;](assets/content-hub-product-profile.png)
 
 Vous pouvez commencer à ajouter des utilisateurs ou des groupes d’utilisateurs à ce profil de produit pour leur fournir l’accès à Content Hub.
 

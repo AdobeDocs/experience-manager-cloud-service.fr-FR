@@ -25,7 +25,7 @@ L’affichage de l’aperçu des ressources et de ses propriétés vous permet d
 
 ## Conditions préalables {#prerequisites}
 
-[Les utilisateurs de ](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
+[Les utilisateurs de &#x200B;](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
 
 ## Aperçu de la ressource et de ses propriétés {#properties-ui}
 

@@ -31,19 +31,19 @@ En tant qu’administrateur, procédez comme suit pour importer les formulaires 
 
 1. Sélectionnez **[!UICONTROL Importer]**, un message relatif au traitement s’affiche (par exemple, *Traitement de 2 formulaires de métadonnées ... Veuillez patienter.*) pendant l’importation. Une fois le traitement terminé, le tableau **[!UICONTROL Importer des formulaires de métadonnées]** s’affiche, avec la liste des formulaires de métadonnées disponibles dans [!DNL Admin View]. La ligne du tableau comprend le nom du formulaire de métadonnées (sous **[!UICONTROL Nom]**), les dossiers associés à ce formulaire (sous **[!UICONTROL Association de dossiers]**) et une option permettant de prévisualiser ![prévisualiser](/help/assets/assets/Preview.svg) le formulaire avant de l’importer.
 
-   ![Page Importer un Forms de métadonnées ](/help/assets/assets/import-metadata-forms-page.png)
+   ![Page Importer un Forms de métadonnées &#x200B;](/help/assets/assets/import-metadata-forms-page.png)
 
    >[!NOTE]
    > 
-   > Dans le Forms d’importation des métadonnées ]**, le tableau d’un libellé**[!UICONTROL  Dupliquer ]**à côté d’un nom de formulaire indique que le formulaire est déjà appliqué à un dossier dans [!DNL Assets View].**[!UICONTROL  L’importation de ce formulaire en double remplace celui appliqué au dossier. Pour éviter ce remplacement, renommez le formulaire avant de l’importer. Cliquez sur le nom du formulaire pour le renommer.
+   > Dans le Forms d’importation des métadonnées **, le tableau d’un libellé**&#x200B;[!UICONTROL &#x200B; Dupliquer &#x200B;]&#x200B;**à côté d’un nom de formulaire indique que le formulaire est déjà appliqué à un dossier dans [!DNL Assets View].** L’importation de ce formulaire en double remplace celui appliqué au dossier. Pour éviter ce remplacement, renommez le formulaire avant de l’importer. Cliquez sur le nom du formulaire pour le renommer.
 
 1. Cliquez sur ![Sélectionner un dossier](/help/assets/assets/x.svg) en regard d’un nom de dossier (sous [!UICONTROL Association de dossiers]) pour supprimer l’association de dossier au formulaire.
 1. Cliquez sur ![Sélectionner un dossier](/help/assets/assets/add-to-folder.svg) pour sélectionner un dossier auquel affecter le formulaire de métadonnées correspondant.
 1. Cliquez sur le cercle rouge pour afficher les détails sur les composants de métadonnées ou les mappages non pris en charge dans le formulaire qui sont exclus de l’importation.
 
-   ![Page Importer un Forms de métadonnées ](/help/assets/assets/unsupported-import-elements.png)
+   ![Page Importer un Forms de métadonnées &#x200B;](/help/assets/assets/unsupported-import-elements.png)
 
-1. Sélectionnez un ou plusieurs formulaires dans le tableau, puis cliquez sur **[!UICONTROL Démarrer l’importation]** pour importer les formulaires de métadonnées et leurs dossiers associés dans [!DNL Assets View]. Un message de traitement s’affiche (par exemple, *Importation de 3 formulaires de métadonnées. Veuillez patienter !*). Une fois l’importation terminée, un message de réussite confirme que les formulaires ont bien été importés et la page Forms de métadonnées ]**(sur [!DNL Assets View]) affiche les formulaires récemment importés et les formulaires existants disponibles dans [!DNL Assets View].**[!UICONTROL  Vous pouvez effectuer les opérations suivantes sur cette page :
+1. Sélectionnez un ou plusieurs formulaires dans le tableau, puis cliquez sur **[!UICONTROL Démarrer l’importation]** pour importer les formulaires de métadonnées et leurs dossiers associés dans [!DNL Assets View]. Un message de traitement s’affiche (par exemple, *Importation de 3 formulaires de métadonnées. Veuillez patienter !*). Une fois l’importation terminée, un message de réussite confirme que les formulaires ont bien été importés et la page Forms de métadonnées **(sur [!DNL Assets View]) affiche les formulaires récemment importés et les formulaires existants disponibles dans [!DNL Assets View].** Vous pouvez effectuer les opérations suivantes sur cette page :
 
    * Cliquez sur l’en-tête de colonne pour trier le tableau par [!UICONTROL Nom], [!UICONTROL Modifié] ou [!UICONTROL Auteur].
    * Sélectionnez le formulaire importé et cliquez sur **[!UICONTROL Supprimer du ou des dossiers)]** puis vérifiez le nom du dossier dans le chemin d’accès au dossier pour vous assurer que le dossier est correctement transféré.
@@ -57,7 +57,7 @@ En tant qu’administrateur, procédez comme suit pour importer les formulaires 
 Après avoir importé les formulaires de métadonnées de [!DNL Admin View] vers [!DNL Assets View], procédez comme suit pour vérifier l’importation :
 
 1. Accédez à l’un des dossiers associés au formulaire de métadonnées importé.
-1. Accédez à la page des détails d’une [ ressource](/help/assets/navigate-assets-view.md#preview-assets) et vérifiez que les composants de métadonnées, les champs de composant et les valeurs de champ pris en charge sont synchronisés à partir de [!DNL Admin View]. Consultez l’article [Métadonnées dans Assets Essentials](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata) pour plus d’informations sur les composants de métadonnées, les champs de composant et les valeurs de champ.
+1. Accédez à la page des détails d’une [&#x200B; ressource](/help/assets/navigate-assets-view.md#preview-assets) et vérifiez que les composants de métadonnées, les champs de composant et les valeurs de champ pris en charge sont synchronisés à partir de [!DNL Admin View]. Consultez l’article [Métadonnées dans Assets Essentials](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata) pour plus d’informations sur les composants de métadonnées, les champs de composant et les valeurs de champ.
 
    >[!NOTE]
    >

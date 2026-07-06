@@ -35,8 +35,8 @@ Pour modifier des images à l’aide de Content Hub :
 1. Effectuez vos modifications et cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer la ressource modifiée dans l’un des formats suivants :
 
    * **[!UICONTROL PNG]** (utilisé comme format d’image de bonne qualité)
-   * **** (adapté aux petits fichiers)
-   * **** (adapté aux documents)
+   * **&#x200B;**&#x200B;(adapté aux petits fichiers)
+   * **&#x200B;**&#x200B;(adapté aux documents)
 
    ![Enregistrement d’image avec Adobe Express.](assets/adobe-express-save-as.png)
 

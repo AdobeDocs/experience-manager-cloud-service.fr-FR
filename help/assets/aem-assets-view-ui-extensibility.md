@@ -36,7 +36,7 @@ Dans [!DNL Assets View], accédez à la page **[!UICONTROL Détails]** d’une r
 
 Remplissez les conditions requises suivantes pour commencer à ajouter le composant d’extensibilité à votre [!DNL Assets View UI] :
 
-* [ Accès à  [!DNL Assets View]](#1).
+* [&#x200B; Accès à  [!DNL Assets View]](#1).
 * Accès à la [[!DNL Adobe app builder]](https://developer.adobe.com/app-builder/docs/overview/).
 * Autorisation de développer le rôle d’administrateur système au sein de l’organisation. Voir [cette documentation](https://developer.adobe.com/uix/docs/guides/get-access/) pour plus d’informations.
 * [!DNL Adobe IO command line tool (AIO CLI)] est installé sur vos ordinateurs locaux. Cet outil est essentiel pour la création et le déploiement de projets d’extension. Voir [Création de votre première application App Builder](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app#local-environment-set-up) (nécessite une authentification pour l’accès) pour plus d’informations.

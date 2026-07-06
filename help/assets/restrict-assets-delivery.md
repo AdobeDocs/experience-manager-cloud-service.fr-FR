@@ -60,7 +60,7 @@ Le champ est disponible dans le formulaire de métadonnées par défaut. Si votr
 
 De même, pour la vue Assets, si votre ressource n’est pas basée sur le schéma de métadonnées par défaut et que les champs Heure d’activation et Heure de désactivation ne sont pas disponibles dans les propriétés de la ressource, procédez comme suit :
 
-1. Cliquez sur Forms de métadonnées ]**dans la section**[!UICONTROL  Paramètres ]**.**[!UICONTROL 
+1. Cliquez sur Forms de métadonnées **dans la section**&#x200B;[!UICONTROL &#x200B; Paramètres &#x200B;]&#x200B;**.**
 1. Sélectionnez le formulaire de métadonnées et cliquez sur **[!UICONTROL Modifier]**.
 1. Ajoutez au formulaire un champ **[!UICONTROL Date]** de la section **[!UICONTROL Composants]** dans le volet de gauche.
 1. Cliquez sur le champ nouvellement ajouté et remplacez le **[!UICONTROL Libellé]** par **Heure d’activation** ou **Heure de désactivation**.

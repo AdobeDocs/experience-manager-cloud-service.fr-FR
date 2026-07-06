@@ -235,7 +235,7 @@ Procédez comme suit dans la séquence spécifiée pour configurer Experience M
 
 1. [Configurer les informations d’identification OAuth dans Adobe Developer Console](#config-oauth)
 1. [Créer une intégration Adobe IMS à l’aide d’OAuth](#create-ims-account-configuration)
-1. [Configuration du service cloud
+1. &lbrack;Configuration du service cloud
    <!--1. [Obtain public certificate](#public-certificate)-->
 <!--
 1. [Create service account (JWT) connection](#createnewintegration) 

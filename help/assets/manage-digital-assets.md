@@ -311,7 +311,7 @@ Consultez [Téléchargement des ressources à partir de [!DNL Experience Manager
 
 1. Sélectionnez l’option **[!UICONTROL Modifier]** ou **[!UICONTROL Dépublier]** selon vos besoins.
 
-   ![Action Dépublier
+   !&lbrack;Action Dépublier
    *Figure : options Publier et Dépublier, et option de planification.*
 
 1. Sélectionnez **[!UICONTROL Maintenant]** pour agir immédiatement sur la ressource ou sélectionnez **[!UICONTROL Plus tard]** pour planifier l’action. Sélectionnez une date et une heure si vous choisissez l’option **[!UICONTROL Plus tard]**. Cliquez sur **[!UICONTROL Suivant]**.
