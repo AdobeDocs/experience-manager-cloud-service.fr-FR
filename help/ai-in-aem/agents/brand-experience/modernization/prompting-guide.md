@@ -4,9 +4,9 @@ description: Ce guide fournit des conseils pour une invite efficace de l’agent
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 4771606b-a327-48b3-b142-44e03e4dc41d
-source-git-commit: 30037f08d5caeab878b6cf89b936308d16ae3e8d
+source-git-commit: 2b3471df0910f08878df7fbce6431be349a2c954
 workflow-type: tm+mt
-source-wordcount: '3240'
+source-wordcount: '3312'
 ht-degree: 0%
 
 ---
@@ -167,20 +167,18 @@ Utilisez cette invite pour extraire et appliquer une conception visuelle d’un 
 * « Migrer la conception depuis `https://example.com` »
 * « Extraction de jetons de conception »
 * « Donner un style au bloc des héros »
+* « Appliquer un style à tous les blocs »
 
 #### Ce qu’il faut savoir {#wtk-design}
 
 * La migration de conception comporte deux phases :
-   1. La phase 1 (à l’échelle du site) extrait les éléments suivants pour les `styles/styles.css` :
-      * Palette de couleurs globale et couleurs d’accentuation
-      * Système de typographie (polices, tailles, poids)
-      * Système d&#39;espacement (marge intérieure, marges, espaces)
-      * Arrière-plans de section (clair, sombre, coloré)
-      * Styles des composants de base (boutons, liens, images)
-      * Sorties vers
-   1. La phase 2 migre les styles de blocs individuels et crée un CSS spécifique au bloc dans `/blocks/{name}/{name}.css`.
+   1. La phase 1 (à l’échelle du site) génère des `styles/brand.css` et des `styles/styles.css` :
+      * `brand.css` contient des jetons de conception en tant que propriétés personnalisées CSS (polices, couleurs, espacements, tailles des titres).
+      * `styles.css` importe les `brand.css` et applique les jetons au contenu par défaut (en-têtes, paragraphes, boutons, liens, arrière-plans de section).
+      * Si votre projet comporte déjà un `brand.css`, demandez à l’agent de l’utiliser au lieu de l’extraire de la source.
+   1. La phase 2 met en forme des blocs individuels en parallèle et crée un CSS spécifique au bloc dans `/blocks/{name}/{name}.css`, en référençant les jetons de `brand.css`.
 * Le style de bloc (phase 2) nécessite que la conception à l’échelle du site (phase 1) soit terminée en premier.
-   * Le système de conception global fournit des propriétés personnalisées CSS qui bloquent la référence.
+* La phase 2 permet d’obtenir 80 à 90 % de fidélité au niveau du bloc en une seule passe.
 * Temps estimé :
    * Phase 1 : 5-10 minutes
    * Phase 2 : 10 à 15 minutes
@@ -197,21 +195,38 @@ Utilisez cette invite pour valider et affiner les blocs migrés individuels et g
 
 #### Ce qu’il faut savoir {#wtk-block-critique}
 
-* La critique de bloc compare un bloc migré à sa source d’origine et applique de manière itérative des correctifs CSS jusqu’à ce qu’une similarité visuelle de 85 % soit atteinte ou que trois itérations soient terminées.
+* La critique de bloc compare un bloc migré à sa source d’origine et applique des correctifs jusqu’à ce qu’une similarité de 85 % soit atteinte ou que trois itérations soient terminées.
 * La compétence nécessite que le bloc ait d’abord été créé par la migration de la page.
-* Une critique de bloc suit un workflow en six étapes :
-   1. Il capture le bloc d’origine de la page source à l’aide d’un sélecteur XPath.
-   1. Il initialise la session critique.
-   1. Il inspecte le bloc d’origine (captures d’écran, styles, HTML).
-   1. Il inspecte le bloc migré.
-   1. Il compare les éléments et génère un score de similarité avec les correctifs CSS.
-   1. Il applique des correctifs et procède à de nouvelles inspections jusqu’à ce que l’objectif de 85 % soit atteint.
-* Chaque itération affiche un rapport critique complet avec toutes les différences, applique tous les correctifs CSS (hiérarchisés par impact visuel), vérifie dans l’aperçu, inspecte à nouveau et affiche les mesures d’amélioration.
+* Critique détecte et corrige les **problèmes de contenu/structure** et **problèmes de style** :
+   * Contenu/structure : en-têtes, paragraphes, liens manquants, nombre de lignes/cellules de tableau incorrect — corrigé en mettant à jour les analyseurs et en réimportant.
+   * Style : différences CSS en termes de couleurs, d’espacement, de typographie et de disposition, corrigées par la mise à jour du bloc CSS.
+* La cascade de correctifs s’exécute dans l’ordre : styles globaux → transformateurs de section → analyseurs de contenu/structure → bloc CSS. Chaque calque est réimporté et réévalué avant de passer au suivant.
 * Utilisez la critique de bloc une fois la [migration de conception](#design-migration) terminée.
+
+### Critique de site {#site-critique}
+
+Utilisez cette invite pour valider tous les blocs migrés sur votre site en une seule passe, ce qui est idéal pour les migrations de plusieurs pages.
+
+#### Exemples d’invites {#example-site-critique}
+
+* « Site critique »
+* « Valider tous les blocs sur le site migré »
+
+#### Ce qu’il faut savoir {#wtk-site-critique}
+
+* La critique de site valide tous les blocs sur tous les modèles migrés à l’aide de sous-agents parallèles, un par modèle.
+* Elle applique la même cascade de correctifs que la critique de bloc (styles globaux → transformateurs de section → analyseurs de contenu/structure → bloc CSS), mais sur toutes les pages simultanément.
+* Les correctifs sont dédupliqués : si le même problème apparaît sur plusieurs pages à l’aide du même bloc, le correctif est appliqué une seule fois.
+* Si `brand.css` n’existe pas encore, la critique s’exécute en mode contenu-structure uniquement (correction des analyseurs et des transformateurs sans style).
+* La critique de site est l’approche recommandée après la migration de la conception pour les projets de plusieurs pages.
+* Le workflow suivant est recommandé :
+   1. Migrer des pages (individuelles ou en bloc).
+   1. Exécutez la migration de la conception.
+   1. Exécutez `critique site` pour valider et corriger automatiquement les écarts restants dans tous les modèles.
 
 ### Critique de page {#page-critique}
 
-Utilisez cette invite pour valider des pages entières migrées pour une fidélité visuelle pleine page par rapport au site web d’origine.
+Utilisez cette invite pour valider une seule page migrée pour la fidélité visuelle par rapport au site web d’origine.
 
 #### Exemples d’invites {#example-page-critique}
 
@@ -220,21 +235,10 @@ Utilisez cette invite pour valider des pages entières migrées pour une fidéli
 
 #### Ce qu’il faut savoir {#wtk-page-critique}
 
-* La critique de page effectue une comparaison visuelle sur toute la page entre la page d’origine et la page migrée, en itérant jusqu’à ce qu’une cible de similarité de 85 % ou trois itérations soient atteintes.
-* Une critique de page comporte un workflow en cinq étapes :
-   1. Il initialise une session critique.
-   1. Il inspecte tous les éléments de la page d’origine.
-   1. Il inspecte tous les éléments de la page migrée.
-   1. Il compare et génère un score de similarité avec les correctifs CSS prioritaires.
-   1. Il applique des correctifs et procède à de nouvelles inspections jusqu’à ce que l’objectif de 85 % soit atteint.
-* Une critique de page nécessite l’URL de la page source et le chemin migré (par exemple, « /about ») comme entrée.
-* Utilisez la critique de page lors de la validation de la fidélité globale de la page ou de la validation de plusieurs blocs simultanément.
-* [Utilisez la critique de bloc](#block-critique) pour une validation ciblée sur des composants spécifiques.
-* Le workflow suivant est recommandé :
-   1. Migrer une page.
-   1. Appliquez une conception.
-   1. Exécuter une critique de bloc sur les blocs de clés
-   1. Exécutez une critique de page pour une validation complète.
+* La critique de page valide une seule page, en appliquant la même cascade de correctifs (sections de → globales → style de → de contenu) jusqu’à 85 % de similarité ou trois itérations.
+* Nécessite l’URL de la page source et le chemin migré (par exemple, « /about ») comme entrée.
+* Utilisez la critique de page pour affiner une seule page après la critique du site ou pour une validation ciblée.
+* Pour les projets de plusieurs pages, [utilisez plutôt la critique de site](#site-critique) : elle gère automatiquement toutes les pages et déduplique les correctifs.
 
 ### Migration en blocs Figma {#figma-block-migration}
 
