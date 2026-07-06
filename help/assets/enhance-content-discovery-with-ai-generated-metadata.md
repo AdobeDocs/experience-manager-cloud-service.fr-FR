@@ -5,10 +5,10 @@ feature: Smart Tags,Tagging
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: c76379e3-6bdf-4dba-9d2b-f2120f85052f
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 10%
+source-wordcount: '748'
+ht-degree: 18%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 10%
 | Vue Assets | [Cliquer ici](/help/assets/ai-generated-metadata-assets-view.md) |
 | Vue Admin | Cet article |
 
-Au lieu de recourir à une entrée manuelle, l’IA attribue automatiquement des balises descriptives aux ressources numériques. Ces balises générées par l’IA améliorent la qualité des métadonnées, ce qui facilite la recherche, la classification et la recommandation des ressources. Cette approche améliore non seulement l’efficacité en éliminant le balisage manuel, mais garantit également la cohérence et l’évolutivité sur de grands volumes de contenu numérique. Par exemple, si la ressource est une image, l’IA peut identifier des objets, des scènes, des émotions ou même des logos de marque et générer des balises pertinentes telles que « coucher de soleil », « plage », « vacances » ou « sourire ». Le contenu généré par l’IA peut améliorer la recherche de ressources à l’aide de techniques de recherche sémantique et lexicale. En savoir plus [Rechercher dans Assets](search-assets.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
+Au lieu de recourir à une entrée manuelle, l’IA attribue automatiquement des balises descriptives aux ressources numériques. Ces balises générées par l’IA améliorent la qualité des métadonnées, ce qui facilite la recherche, la classification et la recommandation des ressources. Non seulement cette approche améliore l’efficacité en éliminant le balisage manuel, mais elle garantit également la cohérence et l’évolutivité sur de gros volumes de contenu numérique. Par exemple, si la ressource est une image, l’IA peut identifier des objets, des scènes, des émotions ou même des logos de marque et générer des balises pertinentes telles que « coucher de soleil », « plage », « vacances » ou « sourire ». Le contenu généré par l’IA peut améliorer la recherche de ressources à l’aide de techniques de recherche sémantique et lexicale. En savoir plus [Rechercher dans Assets](search-assets.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
 ![Balises intelligentes améliorées](assets/enhanced-smart-tags1.png)
 
@@ -57,7 +57,7 @@ Pour configurer les titres générés par l’IA :
 
 Pour utiliser la fonctionnalité de balises intelligentes améliorée, procédez comme suit :
 
-1. Dans l’interface [!DNL Experience Manager], accédez au dossier souhaité, puis cliquez sur **[!UICONTROL Ajouter Assets]**. <!--Alternatively, to update enhanced smart tags in an existing content, click **[!UICONTROL reprocess]**.--> Les formats de fichiers image compatibles sont `png`, `jpg`, `jpeg`, `psd`, `tiff`, `gif`, `webp`, `crw`, `cr2`, `3fr`, `nef`, `arw` et `bmp`.
+1. Dans l&#39;interface [!DNL Experience Manager], positionnez-vous dans le dossier de votre choix et cliquez sur **[!UICONTROL Ajouter Assets]**. <!--Alternatively, to update enhanced smart tags in an existing content, click **[!UICONTROL reprocess]**.--> Les formats de fichiers image compatibles sont `png`, `jpg`, `jpeg`, `psd`, `tiff`, `gif`, `webp`, `crw`, `cr2`, `3fr`, `nef` et `arw` `bmp`.
 
 1. Patientez jusqu’à ce que la ressource nouvellement chargée soit traitée. Une fois que vous avez terminé, accédez aux propriétés de la ressource.
 
@@ -94,3 +94,22 @@ Pour désactiver les métadonnées générées par l’IA au niveau du dossier :
 1. Dans la section **[!UICONTROL Améliorations apportées aux balises intelligentes pour les images]**, sélectionnez **[!UICONTROL Désactiver]** dans le menu déroulant.
 
 1. Cliquez sur **[!UICONTROL Enregistrer et fermer]** pour désactiver les métadonnées générées par l’IA pour le dossier sélectionné.
+
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

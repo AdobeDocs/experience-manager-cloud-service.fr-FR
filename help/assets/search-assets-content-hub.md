@@ -4,10 +4,10 @@ description: Découvrez comment rechercher des ressources dans  [!DNL Content Hu
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: 0ee0778243448e3ff9f6f5b8fb1097fc9b6bec27
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1615'
-ht-degree: 1%
+source-wordcount: '1658'
+ht-degree: 3%
 
 ---
 
@@ -275,3 +275,20 @@ Oui, vous pouvez effectuer une recherche en bloc dans AEM Assets Content Hub en 
 Oui, les administrateurs peuvent utiliser l’interface utilisateur de configuration d’AEM Assets Content Hub pour configurer les filtres disponibles dans l’interface de recherche. Bien que les filtres par défaut incluent le format de fichier, le statut d’approbation, la date d’expiration, etc., les administrateurs et administratrices peuvent adapter ces options aux besoins de l’entreprise.
 
 
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

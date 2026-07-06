@@ -5,10 +5,10 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 77%
+source-wordcount: '1066'
+ht-degree: 79%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 77%
 
 <!-- TBD: The options in left sidebar may change. Shared with me and Shared by me are missing for now. Update this section as UI is updated. -->
 
-## Comprendre l’interface utilisateur d’[!DNL Assets view]  {#understand-interface-navigation}
+## Comprendre l’interface utilisateur d’[!DNL Assets view] {#understand-interface-navigation}
 
 [!DNL Assets view] offre une interface utilisateur intuitive et conviviale. La clarté de son interface vous aide à rechercher et à mémoriser les ressources et les informations qui les concernent.
 
@@ -32,8 +32,7 @@ Lorsque vous vous connectez à [!DNL Assets view], l’interface suivante s’af
 
 ## Parcourir et afficher les ressources et les dossiers {#browse-repository}
 
-Vous pouvez accéder aux dossiers requis à partir de l’interface utilisateur principale ou de la barre latérale gauche. Experience Manager Assets affiche des aperçus visuels du contenu du dossier sur la miniature du dossier lors de la navigation ou de la recherche de contenu. Cela améliore la capacité de découverte des ressources disponibles dans le référentiel AEM Assets. Cette miniature de dossier vous permet de gagner du temps lors de la recherche de ressources spécifiques dans un dossier du référentiel AEM Assets.
-Quand vous naviguez dans le dossier des ressources, vous pouvez utiliser l’interface pour afficher les miniatures et parcourir visuellement le référentiel ou bien afficher les détails pour trouver rapidement la ressource souhaitée. Les options disponibles dans la barre latérale gauche sont les suivantes :
+Vous pouvez accéder aux dossiers requis à partir de l’interface utilisateur principale ou de la barre latérale gauche. Experience Manager Assets affiche des aperçus visuels du contenu du dossier sur la miniature du dossier lors de la navigation ou de la recherche de contenu. Cela améliore la capacité de découverte des ressources disponibles dans le référentiel AEM Assets. Cette miniature de dossier vous permet de gagner du temps lors de la recherche de ressources spécifiques dans un dossier du référentiel AEM Assets.Quand vous naviguez dans le dossier des ressources, vous pouvez utiliser l’interface pour afficher les miniatures et parcourir visuellement le référentiel ou bien afficher les détails pour trouver rapidement la ressource souhaitée. Les options disponibles dans la barre latérale gauche sont les suivantes :
 
 * [Mon espace de travail](/help/assets/my-workspace-assets-view.md) : Assets comprend désormais un espace de travail personnalisable, composé de widgets permettant d’accéder facilement aux éléments clés de l’interface utilisateur d’Assets et aux informations qui vous intéressent le plus. Sur une page unique, bénéficiez d’un aperçu de vos tâches et d’un accès rapide aux principaux workflows. Grâce à un accès rapide et convivial aux menus pertinents, vous gagnez en efficacité et en vitesse de contenu.
 * [Tâches](/help/assets/my-workspace-assets-view.md) : vous pouvez afficher les tâches qui vous sont affectées sous l’onglet **Mes tâches**. En revanche, les tâches que vous créez peuvent être affichées sous l’onglet **Tâches affectées**. En outre, les tâches que vous avez terminées se trouvent sous l’onglet **Tâches terminées**.
@@ -106,3 +105,22 @@ Other use cases after previewing.
 >[!MORELIKETHIS]
 >
 >* [Afficher les versions d’une ressource](/help/assets/manage-organize-assets-view.md#view-versions).
+
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

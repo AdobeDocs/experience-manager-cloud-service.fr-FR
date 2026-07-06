@@ -5,10 +5,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Asse
 feature: Collaboration
 role: User
 exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
-source-git-commit: c54f9da5aea9111a8f162688676d5c3c7e7518bc
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '2203'
-ht-degree: 0%
+source-wordcount: '2246'
+ht-degree: 2%
 
 ---
 
@@ -221,3 +221,21 @@ Pour plus d’informations sur les intégrations, les propriétés et les person
 
 * [Personnalisations du gestionnaire d’accès](/help/assets/content-advisor-customization.md)
 
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

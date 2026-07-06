@@ -4,10 +4,10 @@ description: Découvrez les concepts clés, tels que les raisons d’utiliser Dy
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1127'
-ht-degree: 91%
+source-wordcount: '1259'
+ht-degree: 85%
 
 ---
 
@@ -92,7 +92,7 @@ Une fois que vous avez envoyé le ticket d’assistance, Adobe active Dynamic Me
    <div>
       <a href="/help/assets/approve-assets.md">
       <strong>Approbation de ressources dans Experience Manager Assets</strong>
-      </a>
+      
    </div>
    <p>
       <em>Approuvez des ressources dans AEM Assets pour optimiser la gestion des ressources, en garantissant un processus contrôlé et efficace pour gérer les ressources.</em>
@@ -105,7 +105,7 @@ Une fois que vous avez envoyé le ticket d’assistance, Adobe active Dynamic Me
    <div>
       <a href="/help/assets/integrate-dynamic-media-open-apis.md">
       <strong>Intégration d’AEM Assets aux applications en aval</strong>
-      </a>
+      
    </div>
    <p>
       <em>Intégrez votre propre interface utilisateur personnalisée au référentiel Experience Manager Assets à l’aide des API Search and Delivery ou utilisez le gestionnaire d’accès Adobe.</em>
@@ -118,7 +118,7 @@ Une fois que vous avez envoyé le ticket d’assistance, Adobe active Dynamic Me
    <div>
       <a href="/help/assets/integrate-adobe-non-adobe-applications.md">
       <strong>Adobe Content Advisor</strong>
-      </a>
+      
    </div>
    <p>
       <em>Interface d’utilisation qui interagit avec le référentiel AEM Assets pour rechercher des ressources, puis les utiliser dans votre expérience de création d’applications.</em>
@@ -137,7 +137,7 @@ Une fois que vous avez envoyé le ticket d’assistance, Adobe active Dynamic Me
    <div>
       <a href="/help/assets/search-assets-api.md">
       <strong>Recherche de ressources dans le référentiel Experience Manager Assets</strong>
-      </a>
+      
    </div>
    <p>
       <em>Recherchez des ressources dans le référentiel AEM Assets afin de les diffuser aux applications en aval.</em>
@@ -150,7 +150,7 @@ Une fois que vous avez envoyé le ticket d’assistance, Adobe active Dynamic Me
    <div>
       <a href="/help/assets/deliver-assets-apis.md">
       <strong>Diffusion de ressources vers des applications en aval</strong>
-      </a>
+      
    </div>
    <p>
       <em>Diffusez des ressources aux applications en aval intégrées à l’aide d’une URL de diffusion.</em>
@@ -163,7 +163,7 @@ Une fois que vous avez envoyé le ticket d’assistance, Adobe active Dynamic Me
    <div>
       <a href="/help/assets/restrict-assets-delivery.md">
       <strong>Restreindre l’accès aux ressources dans Experience Manager</strong>
-      </a>
+      
    </div>
    <p>
       <em>La personne chargée de l’administration de DAM ou les responsable de marques limitent l’accès en configurant des rôles pour les ressources approuvées sur l’instance de création AEM as a Cloud Service.</em>
@@ -179,7 +179,7 @@ Une fois que vous avez envoyé le ticket d’assistance, Adobe active Dynamic Me
    <div>
       <a href="/help/assets/integrate-remote-approved-assets-with-sites.md">
       <strong>Intégration d’AEM Assets distant à AEM Sites</strong>
-      </a>
+      
    </div>
    <p>
       <em>Découvrez comment intégrer AEM Assets distant à l’environnement AEM Sites. </em>
@@ -192,7 +192,7 @@ Une fois que vous avez envoyé le ticket d’assistance, Adobe active Dynamic Me
    <div>
       <a href="/help/assets/dynamic-media-open-apis-faqs.md">
       <strong>Questions fréquentes sur Dynamic Media avec les fonctionnalités OpenAPI </strong>
-      </a>
+      
    </div>
    <p>
       <em>Découvrez les réponses aux questions fréquentes sur Dynamic Media avec fonctionnalités OpenAPI.</em>
@@ -205,7 +205,7 @@ Une fois que vous avez envoyé le ticket d’assistance, Adobe active Dynamic Me
    <div>
       <a href="/help/assets/configure-custom-domain.md">
       <strong>Configurer un domaine personnalisé</strong>
-      </a>
+      
    </div>
    <p>
       <em>AEM as a Cloud Service est fourni avec un domaine par défaut, mais vous pouvez le personnaliser selon vos besoins.</em>
@@ -213,3 +213,22 @@ Une fois que vous avez envoyé le ticket d’assistance, Adobe active Dynamic Me
 </td>
 
 </table>
+
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

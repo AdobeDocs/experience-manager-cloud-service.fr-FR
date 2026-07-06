@@ -6,10 +6,10 @@ feature: Asset Management
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: d2f264ed2c7cb701a66e6d4e226cd697a586c2d5
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1285'
-ht-degree: 77%
+source-wordcount: '1338'
+ht-degree: 78%
 
 ---
 
@@ -122,8 +122,7 @@ Pour activer le service `OnOffTimeAssetAccessFilter`, vous devez créer une conf
 
 1. Dans le code de votre projet dans Git, créez un fichier de configuration à l’adresse `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. Le fichier doit contenir `{}` comme contenu, ce qui signifie une configuration OSGi vide pour le composant OSGi correspondant. Cette action active le service.
 1. Déployez votre code, y compris cette nouvelle configuration, via [!DNL Cloud Manager].
-1. Une fois déployés, les rendus et les métadonnées sont accessibles en fonction des paramètres d’heure d’activation/de désactivation des ressources. Si la date ou l’heure actuelle est antérieure à l’heure d’activation ou postérieure à l’heure de désactivation, un message d’erreur s’affiche.
-Pour plus d’informations sur l’ajout d’une configuration OSGi vide, consultez ce [guide](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=fr).
+1. Une fois déployés, les rendus et les métadonnées sont accessibles en fonction des paramètres d’heure d’activation/de désactivation des ressources. Si la date ou l’heure actuelle est antérieure à l’heure d’activation ou postérieure à l’heure de désactivation, un message d’erreur s’affiche.Pour plus d’informations sur l’ajout d’une configuration OSGi vide, consultez ce [guide](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=fr).
 
 ## Conseils et restrictions {#tips-limitations}
 
@@ -131,17 +130,20 @@ Pour plus d’informations sur l’ajout d’une configuration OSGi vide, consul
 
 **Voir également**
 
-* [Traduire les ressources](translate-assets.md)
-* [API HTTP Assets](mac-api-assets.md)
-* [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Rechercher des ressources](search-assets.md)
-* [Ressources connectées](use-assets-across-connected-assets-instances.md)
-* [Rapports de ressources](asset-reports.md)
-* [Schémas de métadonnées](metadata-schemas.md)
-* [Gestion des métadonnées](manage-metadata.md)
-* [Facettes de recherche](search-facets.md)
-* [Gérer les collections](manage-collections.md)
-* [Import des métadonnées en bloc](metadata-import-export.md)
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]

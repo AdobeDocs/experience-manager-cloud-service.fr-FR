@@ -6,9 +6,9 @@ feature: Metadata
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: ed11b465dd7faff74fd1b740ffaef1edb7cb5a9d
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '2670'
+source-wordcount: '2678'
 ht-degree: 94%
 
 ---
@@ -263,15 +263,19 @@ Vous pouvez définir des champs obligatoires au niveau d’un dossier, qui s’a
 
 **Voir également**
 
-* [Traduire les ressources](translate-assets.md)
-* [API HTTP Assets](mac-api-assets.md)
-* [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Rechercher des ressources](search-assets.md)
-* [Ressources connectées](use-assets-across-connected-assets-instances.md)
-* [Rapports de ressources](asset-reports.md)
-* [Télécharger des ressources](download-assets-from-aem.md)
-* [Gestion des métadonnées](manage-metadata.md)
-* [Facettes de recherche](search-facets.md)
-* [Gérer les collections](manage-collections.md)
-* [Import des métadonnées en bloc](metadata-import-export.md)
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

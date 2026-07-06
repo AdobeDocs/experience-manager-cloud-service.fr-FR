@@ -6,10 +6,10 @@ feature: Metadata
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1409'
-ht-degree: 92%
+source-wordcount: '1429'
+ht-degree: 85%
 
 ---
 
@@ -20,17 +20,15 @@ ht-degree: 92%
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-config.html?lang=fr) |
 | AEM as a Cloud Service | Cet article |
 
-Un profil de métadonnées vous permet d’appliquer des métadonnées par défaut aux ressources d’un dossier. Créez un profil de métadonnées et appliquez-le à un dossier. Toute ressource chargée par la suite dans le dossier héritera des métadonnées par défaut que vous avez configurées dans le profil de métadonnées.
+Un profil de métadonnées vous permet d’appliquer des métadonnées par défaut aux ressources d’un dossier. Créer un profil de métadonnées et l’appliquer à un dossier Toute ressource chargée ultérieurement dans le dossier hérite des métadonnées par défaut que vous avez configurées dans le profil de métadonnées.
 
-Un élément à connaître lorsque l’on utilise les profils dans Experience Manager Assets est qu’ils sont attribués aux dossiers. Un profil contient des paramètres sous la forme de profils de métadonnées, avec des profils vidéo ou des profils d’image. Ces paramètres traitent le contenu d’un dossier et de tous ses sous-dossiers. Aussi, la façon dont vous nommez les fichiers ou les dossiers, organisez les sous-dossiers ou gérez les fichiers au sein des dossiers a un impact significatif sur le traitement des ressources par les profils.
-Grâce à des stratégies d’attribution de nom aux fichiers et dossiers cohérentes et adéquates et à une bonne pratique en matière de métadonnées, vous tirez pleinement parti de votre collection de ressources numériques et vous vous assurez que les bons fichiers sont traités par le profil adéquat.
+Un élément à connaître lorsque l’on utilise les profils dans Experience Manager Assets est qu’ils sont attribués aux dossiers. Un profil contient des paramètres sous la forme de profils de métadonnées, avec des profils vidéo ou des profils d’image. Ces paramètres traitent le contenu d’un dossier et de tous ses sous-dossiers. Aussi, la façon dont vous nommez les fichiers ou les dossiers, organisez les sous-dossiers ou gérez les fichiers au sein des dossiers a un impact significatif sur le traitement des ressources par les profils.Grâce à des stratégies d’attribution de nom aux fichiers et dossiers cohérentes et adéquates et à une bonne pratique en matière de métadonnées, vous tirez pleinement parti de votre collection de ressources numériques et vous vous assurez que les bons fichiers sont traités par le profil adéquat.
 
 ## Ajout d’un profil de métadonnées {#adding-a-metadata-profile}
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de métadonnées]**, puis cliquez sur **[!UICONTROL Créer]**.
 1. Saisissez un titre pour le profil de métadonnées, par exemple Exemple, Métadonnées, puis sélectionnez **[!UICONTROL Envoyer]**. La page Modifier le formulaire pour le profil de métadonnées s’affiche.
-1. Cliquez sur un composant et configurez ses propriétés dans l’onglet **[!UICONTROL Paramètres]**. Par exemple, cliquez sur le composant **[!UICONTROL Description]** et modifiez ses propriétés.
-Modifiez les propriétés suivantes pour le composant **[!UICONTROL Description]** :
+1. Cliquez sur un composant et configurez ses propriétés dans l’onglet **[!UICONTROL Paramètres]**. Par exemple, cliquez sur le composant **[!UICONTROL Description]** et modifiez ses propriétés.Modifiez les propriétés suivantes pour le composant **[!UICONTROL Description]** :
 
    * **[!UICONTROL Libellé du champ]** : nom sous lequel s’affiche la propriété des métadonnées. Il est uniquement disponible à titre de référence.
    * **[!UICONTROL Associer à la propriété]** - La valeur de cette propriété fournit le chemin/nom relatif du nœud de la ressource où elle est enregistrée dans le référentiel. La valeur doit toujours commencer par `./` car cela indique que le chemin d’accès se trouve sous le nœud de la ressource.
@@ -113,7 +111,7 @@ Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comport
 
 ## Suppression d’un profil de métadonnées d’un dossier {#removing-a-metadata-profile-from-folders}
 
-Lorsque vous supprimez un profil de métadonnées d’un dossier, tout sous-dossier hérite automatiquement de la suppression du profil de son dossier parent. Cependant, le traitement des fichiers qui s’est produit dans les dossiers reste intact.
+Lorsque vous supprimez un profil de métadonnées d’un dossier, tous les sous-dossiers héritent automatiquement de la suppression du profil de son dossier parent. Cependant, tout traitement de fichiers effectué dans les dossiers reste intact.
 
 Vous pouvez supprimer un profil de métadonnées d’un dossier à partir du menu **Outils** ou, si vous êtes dans le dossier, à partir de **Propriétés**. Cette section décrit comment supprimer des profils de métadonnées des dossiers des deux manières.
 
@@ -133,16 +131,20 @@ Vous pouvez supprimer un profil de métadonnées d’un dossier à partir du men
 
 **Voir également**
 
-* [Traduire les ressources](translate-assets.md)
-* [API HTTP Assets](mac-api-assets.md)
-* [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Rechercher des ressources](search-assets.md)
-* [Ressources connectées](use-assets-across-connected-assets-instances.md)
-* [Rapports de ressources](asset-reports.md)
-* [Schémas de métadonnées](metadata-schemas.md)
-* [Télécharger des ressources](download-assets-from-aem.md)
-* [Gestion des métadonnées](manage-metadata.md)
-* [Facettes de recherche](search-facets.md)
-* [Gérer les collections](manage-collections.md)
-* [Import des métadonnées en bloc](metadata-import-export.md)
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
+

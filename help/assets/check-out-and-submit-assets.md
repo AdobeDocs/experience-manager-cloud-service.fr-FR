@@ -6,9 +6,9 @@ feature: Asset Management
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: adb94a31-d949-4f4a-89bc-44f1b4f67e14
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '525'
 ht-degree: 99%
 
 ---
@@ -30,8 +30,7 @@ Cette caractéristique permet d’empêcher les autres utilisateurs d’écraser
 
 1. Dans l’interface utilisateur d’[!DNL Assets], sélectionnez la ressource que vous souhaitez extraire. Vous pouvez également sélectionner plusieurs ressources à extraire.
 
-1. Dans la barre d’outils, cliquez sur **[!UICONTROL Extraction]**. L’option **[!UICONTROL Extraction]** passe en **[!UICONTROL Archivage]**.
-Pour vérifier si d’autres utilisateurs peuvent modifier la ressource que vous avez extraite, connectez-vous comme un utilisateur différent. L’icône ![icône en forme de verrou pour l’extraction](assets/do-not-localize/checkout_lock.png) s’affiche sur la miniature de la ressource que vous avez extraite.
+1. Dans la barre d’outils, cliquez sur **[!UICONTROL Extraction]**. L’option **[!UICONTROL Extraction]** passe en **[!UICONTROL Archivage]**.Pour vérifier si d’autres utilisateurs peuvent modifier la ressource que vous avez extraite, connectez-vous comme un utilisateur différent. L’icône ![icône en forme de verrou pour l’extraction](assets/do-not-localize/checkout_lock.png) s’affiche sur la miniature de la ressource que vous avez extraite.
 
    ![icône d’extraction en mode Carte](assets/checkout-icon-card-view.png)
 
@@ -64,18 +63,20 @@ Les administrateurs peuvent archiver les ressources extraites par d’autres uti
 
 **Voir également**
 
-* [Traduire les ressources](translate-assets.md)
-* [API HTTP Assets](mac-api-assets.md)
-* [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Rechercher des ressources](search-assets.md)
-* [Ressources connectées](use-assets-across-connected-assets-instances.md)
-* [Rapports de ressources](asset-reports.md)
-* [Schémas de métadonnées](metadata-schemas.md)
-* [Télécharger des ressources](download-assets-from-aem.md)
-* [Gestion des métadonnées](manage-metadata.md)
-* [Facettes de recherche](search-facets.md)
-* [Gérer les collections](manage-collections.md)
-* [Import des métadonnées en bloc](metadata-import-export.md)
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]

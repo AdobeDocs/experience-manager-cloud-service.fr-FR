@@ -6,10 +6,10 @@ feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1542'
-ht-degree: 92%
+source-wordcount: '1758'
+ht-degree: 93%
 
 ---
 
@@ -164,8 +164,8 @@ Seules les ressources sont publiées vers [!DNL Dynamic Media]. Cependant, le co
 
 Le processus de publication en mode **[!UICONTROL Immédiat]** et **[!UICONTROL Lors de l’activation]** est cohérent mais différent de la **[!UICONTROL Publication sélective]**. Consultez la [Configuration de la publication sélective au niveau des dossiers dans Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=fr). Après avoir configuré la publication sélective dans un dossier, vous pouvez effectuer l’une des opérations suivantes :
 
-* [Publier sélectivement des ressources dans Dynamic Media ou Experience Manager à l’aide de la fonction Gérer la publication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=fr#selective-publish-manage-publication)
-* [Dépublier sélectivement des ressources dans Dynamic Media ou Experience Manager à l’aide de la fonction Gérer la publication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=fr#selective-unpublish-manage-publication)
+* [Publication sélective de ressources dans Dynamic Media ou Experience Manager à l’aide de la fonction Gérer la publication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=fr#selective-publish-manage-publication)
+* [Dépublier des ressources de manière sélective dans Dynamic Media ou Experience Manager à l’aide de la fonction Gérer la publication.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=fr#selective-unpublish-manage-publication)
 * [Publication de ressources dans Dynamic Media ou Experience Manager à l’aide de la publication rapide](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=fr#quick-publish-aem-dm)
 * [Publier ou dépublier des ressources de manière sélective au moyen des résultats de recherche](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=fr#selective-publish-unpublish-search-results)
 
@@ -203,3 +203,22 @@ L’option Demander la publication est disponible pour les personnes suivantes 
 * Les dossiers vides ne sont pas publiés.
 * Si vous publiez une ressource en cours de traitement, seul le contenu original est publié. Les rendus sont absents. Vous pouvez attendre la fin du traitement avant de publier ou republier la ressource une fois le traitement terminé.
 * Lors de la dépublication d’une ressource complexe, dépubliez uniquement la ressource. Évitez de dépublier des références, car elles peuvent être référencées par d’autres ressources publiées.
+
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

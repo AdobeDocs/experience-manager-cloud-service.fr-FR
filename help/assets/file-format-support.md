@@ -6,14 +6,14 @@ feature: Asset Management, Renditions
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1088'
-ht-degree: 93%
+source-wordcount: '1117'
+ht-degree: 91%
 
 ---
 
-# Formats de fichiers pris en charge [!DNL Assets]  {#supported-file-formats}
+# Formats de fichiers pris en charge [!DNL Assets] {#supported-file-formats}
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] prend en charge les fonctionnalités de base de gestion de contenu (stockage, gestion des métadonnées en ligne, contrôle de version, chargement et téléchargement, etc.) pour tout fichier binaire, quel que soit son format. [!DNL Adobe Experience Manager Assets] prend en charge un large éventail de formats de fichiers et chaque fonctionnalité de produit prend en charge différents formats.
 
@@ -37,9 +37,7 @@ Le tableau suivant décrit le niveau de prise en charge pour chaque format.
 
 >[!IMPORTANT]
 >
->[!DNL Adobe Experience Manager Assets] ne prend en charge que les formats de fichiers répertoriés dans cet article.
->Certaines fonctionnalités peuvent sembler fonctionner avec d’autres formats, mais ces derniers ne sont pas officiellement pris en charge. Les résultats peuvent être incohérents et les fonctionnalités peuvent ne pas fonctionner comme prévu.
->Pour garantir des résultats cohérents et fiables, utilisez uniquement les formats pris en charge.
+>[!DNL Adobe Experience Manager Assets] ne prend en charge que les formats de fichiers répertoriés dans cet article.Certaines fonctionnalités peuvent sembler fonctionner avec d’autres formats, mais ces derniers ne sont pas officiellement pris en charge. Les résultats peuvent être incohérents et les fonctionnalités peuvent ne pas fonctionner comme prévu.Pour garantir des résultats cohérents et fiables, utilisez uniquement les formats pris en charge.
 
 ## Formats Adobe {#adobe-formats}
 
@@ -94,7 +92,7 @@ Cnsultez également la section [Utilisation de ressources 3D dans Dynamic Medi
 | USDz | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
 | SBSAR | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
 
-## Formats [!DNL Camera Raw]  {#camera-raw-formats}
+## Formats [!DNL Camera Raw] {#camera-raw-formats}
 
 | Format de fichier | Génération de miniatures | Extraction de métadonnées | Largeur/Hauteur |
 | ----------- | -------------------- | ------------------- | ------------ |
@@ -271,21 +269,24 @@ Voir aussi [Formats 3D pris en charge](/help/assets/file-format-support.md#supp
 | GLB | Transmission GL binaire | model/gltf-binary | Inclut les matières et les textures dans une seule ressource. |
 | OBJ | Fichier d’objet 3D WaveFront | application/x-tgif | |
 | STL | Stéréolithographie | application/vnd.ms-pki.stl | |
-| USDZ | Fichier zip de description de scène universelle | model/vnd.usdz+zip | *Prise en charge de l’ingestion et de la génération de miniatures, les aperçus 3D ne pas encore pris en charge.* USDZ est un format 3D qui peut être visualisé en mode natif à l’aide de Safari ou iOS. |
+| USDZ | Fichier zip de description de scène universelle | model/vnd.usdz+zip | *Prise en charge de l’ingestion et de la génération de miniatures ; les aperçus 3D ne sont pas encore pris en charge.* USDZ est un format 3D qui peut être visualisé en mode natif par Safari ou iOS. |
 
 **Voir également**
 
-* [Traduire les ressources](translate-assets.md)
-* [API HTTP Assets](mac-api-assets.md)
-* [Rechercher des ressources](search-assets.md)
-* [Ressources connectées](use-assets-across-connected-assets-instances.md)
-* [Rapports de ressources](asset-reports.md)
-* [Schémas de métadonnées](metadata-schemas.md)
-* [Télécharger des ressources](download-assets-from-aem.md)
-* [Gestion des métadonnées](manage-metadata.md)
-* [Facettes de recherche](search-facets.md)
-* [Gérer les collections](manage-collections.md)
-* [Import des métadonnées en bloc](metadata-import-export.md)
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]

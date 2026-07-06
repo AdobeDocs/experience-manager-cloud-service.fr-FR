@@ -6,10 +6,10 @@ feature: Assets HTTP API
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1697'
-ht-degree: 76%
+source-wordcount: '1731'
+ht-degree: 77%
 
 ---
 
@@ -170,7 +170,7 @@ Un appel d’API échoue avec un code de réponse `500` si le nœud parent du ch
 * 412 – ÉCHEC DE LA PRÉCONDITION – si la collection racine est introuvable ou inaccessible.
 * 500 – ERREUR INTERNE DU SERVEUR – si une autre erreur s’est produite.
 
-## Créer une ressource  {#create-an-asset}
+## Créer une ressource {#create-an-asset}
 
 La création de ressources n’est pas prise en charge via cette API HTTP. Pour la création de ressources, utilisez l’API [chargement de ressources](developer-reference-material-apis.md).
 
@@ -197,8 +197,7 @@ Créer un rendu pour une ressource. Si le nom de paramètre de requête n’est 
 
 **Paramètres** : les paramètres sont les suivants :
 
-`name` : pour le nom du rendu.
-`file` : fichier binaire pour le rendu comme référence.
+`name` : pour le nom du rendu.`file` : fichier binaire pour le rendu comme référence.
 
 **Requête**
 
@@ -302,17 +301,19 @@ Supprime une ressource (arborescence) pour le chemin indiqué.
 
 **Explorer les ressources associées**
 
-* [Traduire les ressources](translate-assets.md)
-* [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Rechercher des ressources](search-assets.md)
-* [Ressources connectées](use-assets-across-connected-assets-instances.md)
-* [Rapports de ressources](asset-reports.md)
-* [Schémas de métadonnées](metadata-schemas.md)
-* [Télécharger des ressources](download-assets-from-aem.md)
-* [Gestion des métadonnées](manage-metadata.md)
-* [Facettes de recherche](search-facets.md)
-* [Gérer les collections](manage-collections.md)
-* [Import des métadonnées en bloc](metadata-import-export.md)
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]

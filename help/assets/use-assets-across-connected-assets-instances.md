@@ -7,9 +7,9 @@ feature: Asset Management, Connected Assets, Asset Distribution
 role: Admin, User, Developer
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '3875'
+source-wordcount: '3984'
 ht-degree: 98%
 
 ---
@@ -38,14 +38,14 @@ La fonctionnalité Ressources connectées prend en charge le cas d’utilisation
 
 Lors de la modification de pages dans [!UICONTROL l’éditeur de page] en tant que destination de la cible, les auteurs peuvent rechercher, parcourir et incorporer facilement des ressources à partir d’un déploiement [!DNL Assets] différent qui agit comme source de ressources. Les administrateurs créent une intégration unique d’un déploiement de [!DNL Experience Manager] avec la fonctionnalité [!DNL Sites] avec un autre déploiement de [!DNL Experience Manager] avec la fonctionnalité [!DNL Assets]. Vous pouvez également utiliser des images Dynamic Media dans les pages web de votre site par le biais de ressources connectées et utiliser les fonctionnalités de Dynamic Media, telles que le recadrage intelligent et les paramètres d’image prédéfinis.
 
-Pour les auteurs [!DNL Sites], les ressources distantes sont disponibles en tant que ressources locales, en lecture seule. Cette fonctionnalité permet une recherche transparente et un accès aux ressources distantes dans l’éditeur de site. Pour tout autre cas d’utilisation qui peut nécessiter la disponibilité de l’ensemble des ressources sur Sites, envisagez de migrer les ressources en bloc au lieu d’utiliser Connected Assets.
+Pour les auteurs [!DNL Sites], les ressources distantes sont disponibles en tant que ressources locales, en lecture seule. Cette fonctionnalité permet une recherche transparente et un accès aux ressources distantes dans l’éditeur de site. Pour tout autre cas d’utilisation qui peut nécessiter la disponibilité de l’ensemble des ressources sur Sites, envisagez de migrer les ressources en bloc au lieu d’utiliser les ressources connectées.
 
 ### Conditions préalables et déploiements pris en charge {#prerequisites}
 
 Avant d’utiliser ou de configurer cette fonctionnalité, vérifiez les points suivants :
 
 * Les utilisateurs font partie de groupes d’utilisateurs appropriés sur chaque déploiement.
-* Pour les types de déploiements [!DNL Adobe Experience Manager], l’un des critères pris en charge est satisfait. [!DNL Experience Manager] as a Cloud Service [!DNL Assets] fonctionne avec [!DNL Experience Manager] 6.5. Pour plus d’informations sur les opérations de cette fonctionnalité dans [!DNL Experience Manager] 6.5, voir [Ressources connectées dans [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html?lang=fr).
+* Pour les types de déploiements [!DNL Adobe Experience Manager], l’un des critères pris en charge est satisfait. [!DNL Experience Manager] as a Cloud Service [!DNL Assets] fonctionne avec [!DNL Experience Manager] 6.5. Pour plus d’informations sur le fonctionnement de cette fonctionnalité dans [!DNL Experience Manager] 6.5, consultez la section [Assets connecté dans [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html?lang=fr).
 
   | | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] sur AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] on-premise |
   |---|---|---|---|
@@ -88,7 +88,7 @@ Le diagramme suivant illustre un scénario non pris en charge :
 
 ![Architecture des ressources connectées](assets/connected-assets-architecture-unsupported.png)
 
-## Configurez une connexion entre les déploiements [!DNL Sites] et [!DNL Assets]  {#configure-a-connection-between-sites-and-assets-deployments}
+## Configurez une connexion entre les déploiements [!DNL Sites] et [!DNL Assets] {#configure-a-connection-between-sites-and-assets-deployments}
 
 Un administrateur [!DNL Experience Manager] peut créer cette intégration. Une fois créées, les autorisations requises pour l’utiliser sont établies par le biais de groupes d’utilisateurs. Les groupes d’utilisateurs sont définis sur les déploiements [!DNL Sites] et DAM.
 
@@ -141,8 +141,8 @@ Pour configurer les ressources connectées et la connectivité des [!DNL Sites] 
 
 Vous pouvez vérifier la connectivité entre les déploiements [!DNL Sites] et le déploiement [!DNL Assets] configurés.
 
-![Test de connexion des ressources connectées configurées [!DNL Sites]](assets/connected-assets-multiple-config.png)
-*Figure : Test de connexion des ressources connectées configurées [!DNL Sites].*
+![Test de connexion d’Assets connecté configuré [!DNL Sites]](assets/connected-assets-multiple-config.png)
+*Figure : test de connexion de l’[!DNL Sites] configuré d’Assets connecté.*
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
@@ -371,15 +371,18 @@ Pour résoudre les erreurs courantes, procédez comme suit :
 
 **Voir également**
 
-* [Traduire les ressources](translate-assets.md)
-* [API HTTP Assets](mac-api-assets.md)
-* [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Rechercher des ressources](search-assets.md)
-* [Rapports de ressources](asset-reports.md)
-* [Schémas de métadonnées](metadata-schemas.md)
-* [Télécharger des ressources](download-assets-from-aem.md)
-* [Gestion des métadonnées](manage-metadata.md)
-* [Facettes de recherche](search-facets.md)
-* [Gérer les collections](manage-collections.md)
-* [Import des métadonnées en bloc](metadata-import-export.md)
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

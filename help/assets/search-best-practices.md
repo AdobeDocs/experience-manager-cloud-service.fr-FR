@@ -6,10 +6,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Asse
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
 feature: Best Practices
 role: User
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '2533'
-ht-degree: 8%
+source-wordcount: '2628'
+ht-degree: 11%
 
 ---
 
@@ -23,8 +23,7 @@ Ce document d’aide contient les bonnes pratiques de recherche d’AEM à l’a
 
 Voici les étapes de base à effectuer dans Experience Manager avant de commencer votre recherche :
 
-* Dans la **vue Administration**, accédez à Assets > Fichiers dans Experience Manager et cliquez sur l’icône de recherche dans la barre supérieure. Vous pouvez également utiliser une barre oblique (/) pour ouvrir le champ Omni Recherche .
-Dans la vue **&#x200B;**, la barre de recherche est visible en haut et est directement accessible.
+* Dans la **vue Administration**, accédez à Assets > Fichiers dans Experience Manager et cliquez sur l’icône de recherche dans la barre supérieure. Vous pouvez également utiliser une barre oblique (/) pour ouvrir le champ Omni Recherche .Dans la vue **&#x200B;**, la barre de recherche est visible en haut et est directement accessible.
 * `Location:Assets` et `Path:/content/dam` sont présélectionnés afin de limiter la portée de la recherche à votre référentiel Experience Manager Assets. Si vous accédez à un autre dossier, `Path:/content/dam/<folder name>` s’affiche dans le champ Recherche omni pour limiter l’étendue de la recherche au dossier actif.
 
 ## Recherche simple {#basic-search}
@@ -64,7 +63,7 @@ Le filtre Fichiers et dossiers permet d’affiner la recherche. Utilisez les opt
 Pour réaliser ce scénario, procédez comme suit :
 
 1. Indiquez `classic car` comme mot-clé de recherche, puis cliquez sur Rechercher.
-2. Cliquez sur Filtres et définissez le chemin d’accès au dossier `automobile`. Par exemple, `/content/dam/multiple-assets/automobile`
+2. Cliquez sur Filtres et définissez le chemin d’accès au dossier `automobile`. Par exemple : `/content/dam/multiple-assets/automobile`
 Sélectionnez le dossier dans le chemin d’accès et accédez au dossier requis si vous souhaitez effectuer une recherche dans le dossier spécifique.
 3. Sélectionnez Fichiers dans la liste déroulante pour afficher tous les fichiers contenant le mot-clé `classic car`.
 
@@ -72,7 +71,7 @@ Sélectionnez le dossier dans le chemin d’accès et accédez au dossier requis
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425487)
 
-## Opérateurs  {#operators}
+## Opérateurs {#operators}
 
 **Scénario 3 : recherchez des mots-clés `Classic Car` ou `Car` à l’aide de diverses combinaisons d’opérateurs pour affiner votre recherche.**
 
@@ -255,8 +254,7 @@ La recherche affiche également des résultats similaires si vous travaillez dan
 Lors de l’exécution de la recherche sur AEM, vous pouvez filtrer les résultats en affichant des ressources similaires à celles sélectionnées. Vous pouvez utiliser l’option **Rechercher des éléments similaires** pour affiner votre recherche vers la correspondance exacte ou similaire de la ressource recherchée. Cela permet de rechercher des ressources présentant des balises intelligentes similaires à la ressource sélectionnée. Par exemple, lorsque vous souhaitez rechercher des ressources similaires, procédez comme suit :
 
 1. Recherchez la ressource en fonction de vos besoins.
-1. Pointez sur la ressource > cliquez sur les points de suspension > sélectionnez [!UICONTROL Rechercher des éléments similaires].
-ou
+1. Pointez sur la ressource > cliquez sur les points de suspension > sélectionnez [!UICONTROL Rechercher des éléments similaires].ou
 Sélectionnez la ressource > accédez aux points de suspension en haut à droite > sélectionnez [!UICONTROL Rechercher des éléments similaires].
 
    ![Rechercher similaire](assets/find-similar.png)
@@ -266,8 +264,7 @@ Sélectionnez la ressource > accédez aux points de suspension en haut à droite
 Exécutez les étapes suivantes dans la vue Assets **&#x200B;**&#x200B;:
 
 1. Recherchez la ressource en fonction de vos besoins.
-1. Sélectionnez l’option image > accéder à [!UICONTROL Rechercher une image similaire] dans la barre de navigation supérieure.
-Vous accédez ainsi à la collection de ressources avec des métadonnées et une couleur similaires.
+1. Sélectionnez l’option image > accéder à [!UICONTROL Rechercher une image similaire] dans la barre de navigation supérieure.Vous accédez ainsi à la collection de ressources avec des métadonnées et une couleur similaires.
 
 ## Facettes de recherche personnalisées {#custom-search-facets}
 
@@ -321,8 +318,7 @@ The newly added assets are not indexed.
     <tr>
         <td> Facettes personnalisées </td>
         <td> Vous pouvez ajouter des facettes de recherche <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=fr"> personnalisées selon vos besoins.</td>
-        <td> Les facettes personnalisées sont partiellement prises en charge dans la vue Assets. Les facettes prises en charge sont les suivantes :
-            <ul>
+        <td> Les facettes personnalisées sont partiellement prises en charge dans la vue Assets. Les facettes prises en charge sont les suivantes :<ul>
             <li> Balises prédites
             <li> Nom
             <li> Degré de confiance prévu des balises
@@ -332,9 +328,9 @@ The newly added assets are not indexed.
         </td>
     </tr>
     <tr>
-        <td> Opérateurs  </td>
+        <td> Opérateurs </td>
         <td> Prend en charge AND, OR et NOT </td>
-        <td> Pas de prise en charge </td>
+        <td> Non pris en charge. </td>
     </tr>
     <tr>
         <td> Caractères génériques </td>
@@ -344,11 +340,11 @@ The newly added assets are not indexed.
     <tr>
         <td> Amélioration des résultats de recherche </td>
         <td> Pris en charge </td>
-        <td> Pas de prise en charge </td>
+        <td> Non pris en charge. </td>
     </tr>
      <tr>
         <td> Effacer tous les filtres à la fois </td>
-        <td> Pas de prise en charge </td>
+        <td> Non pris en charge. </td>
         <td> Pris en charge</td>
     </tr>
      <tr>
@@ -412,14 +408,14 @@ The newly added assets are not indexed.
             <li> Taille (octets, Ko, Mo, Go)
             </ul> 
         </td>
-        <td> Pas de prise en charge </td>
+        <td> Non pris en charge. </td>
     </tr>
      <tr>
         <td> Autres filtres </td>
         <td>
             <ul>
             <li> Langue
-            <li> Statut
+            <li> État
             <li> Orientation
             <li> Style 
             <li> Insights
@@ -436,3 +432,22 @@ The newly added assets are not indexed.
 >
 >* [Recherche de ressources](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=fr)
 >* [Facettes de recherche](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=fr)
+
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

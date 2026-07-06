@@ -5,10 +5,10 @@ feature: Metadata
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: e7c80792-f4db-4604-a51f-b20f066b2c1b
-source-git-commit: a34dfbaafce0b43c9e48400175e28ae43153ab83
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 29%
+source-wordcount: '1235'
+ht-degree: 33%
 
 ---
 
@@ -40,7 +40,7 @@ Nous utilisons un champ déroulant nommé `Image` à titre d’exemple pour clas
 >
 >Vous pouvez créer des règles basées sur des champs de liste déroulante uniquement.
 
-Quel que soit le type de ressource choisi, affichez les informations de copyright sous la forme d’un champ obligatoire. Vous pouvez utiliser les [composants de métadonnées prédéfinis](metadata-assets-view.md#property-components) et [affecter des métadonnées à un dossier](metadata-assets-view.md#assign-metadata-form-folder).
+Sans tenir compte du type de ressource choisi, affichez les informations de copyright comme étant un champ requis. Vous pouvez utiliser les [composants de métadonnées prédéfinis](metadata-assets-view.md#property-components) et [affecter des métadonnées à un dossier](metadata-assets-view.md#assign-metadata-form-folder).
 
 ### Création d’un Forms de métadonnées {#build-metadata-schema-forms}
 
@@ -113,7 +113,7 @@ Pour modifier un formulaire de métadonnées existant, procédez comme suit :
 
    ![règle](assets/image-required-rule2.png)
 
-1. Sous **[!UICONTROL Visibilité]**, sélectionnez l’option **[!UICONTROL Visible, en fonction d’une nouvelle règle]**. Cliquez sur ![icône plus](assets/do-not-localize/aem_assets_add_icon.png) pour ajouter une nouvelle règle.
+1. Sous **[!UICONTROL Visibilité]**, sélectionnez l’option **[!UICONTROL Visible, d’après la nouvelle règle]**. Cliquez sur ![icône plus](assets/do-not-localize/aem_assets_add_icon.png) pour ajouter une nouvelle règle.
 
    >[!NOTE]
    >
@@ -144,10 +144,29 @@ Pour modifier un formulaire de métadonnées existant, procédez comme suit :
 
 ## Étapes suivantes {#next-steps}
 
-* [Regardez une vidéo pour gérer les formulaires de métadonnées dans la vue Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=fr)
+* [Regardez une vidéo pour gérer les formulaires de métadonnées dans la vue Assets .](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=fr)
 
 * Faites des commentaires sur le produit en utilisant l’option [!UICONTROL Commentaires] disponible dans l’interface utilisateur de la vue Assets
 
 * Faites des commentaires sur la documentation en utilisant l’option [!UICONTROL Modifier cette page] ![modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![créer un problème GitHub](assets/do-not-localize/github-issue.png) disponible dans la barre latérale droite.
 
-* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr#support).
+* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General#support).
+
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

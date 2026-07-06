@@ -5,10 +5,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Asse
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing
 role: User
-source-git-commit: 8088583ea5c970de4e71e771e34b9125fac3047e
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 1%
+source-wordcount: '1097'
+ht-degree: 5%
 
 ---
 
@@ -137,3 +137,22 @@ Les fonctionnalités suivantes ne sont pas prises en compte pour l’instant lor
 * Possibilité de remplacer [!DNL Dynamic Media] statut de synchronisation au niveau du dossier.
 * Possibilité de remplacer [!DNL Dynamic Media] mode de publication au niveau du dossier
 * Gérer la publication n’est pas encore pris en charge.
+
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

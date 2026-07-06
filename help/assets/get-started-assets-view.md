@@ -5,10 +5,10 @@ role: User, Leader
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 51ae6657-f6b5-44b0-a47f-451735ab0d01
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 88%
+source-wordcount: '430'
+ht-degree: 87%
 
 ---
 
@@ -46,23 +46,23 @@ Pour modifier vos [!UICONTROL préférences Experience Cloud], cliquez sur [!UI
 >
 >Si vous accédez à la vue Assets et que un message `Network Error` s’affiche, veillez à exécuter les instructions mentionnées dans l’article [Configuration du partage de ressources entre origines multiples (CORS)](/help/headless/deployment/cross-origin-resource-sharing.md).
 
-## Scénarios d’utilisation d’[!DNL Assets View]  {#use-cases}
+## Scénarios d’utilisation d’[!DNL Assets View] {#use-cases}
 
 Vous trouverez ci-dessous les différentes tâches de gestion des actifs numériques (DAM) que vous pouvez réaliser en utilisant [!DNL Assets View].
 
 | Tâches utilisateur | Fonctionnalités et informations pratiques |
 |-----|------|
-| Recherche et affichage des ressources | <ul> <li>[Parcourir le référentiel](/help/assets/navigate-assets-view.md#view-assets-and-details) </li> <li> [Aperçu d’une ressource](/help/assets/navigate-assets-view.md#preview-assets) <li> [Affichage des rendus d’une ressource](/help/assets/add-delete-assets-view.md#renditions) </li> <li>[Affichage des versions d’une ressource](/help/assets/manage-organize-assets-view.md#view-versions)</li></ul> |
+| Recherche et affichage des ressources | <ul> <li>[Parcourir le référentiel](/help/assets/navigate-assets-view.md#view-assets-and-details) </li> <li> [Prévisualiser une ressource](/help/assets/navigate-assets-view.md#preview-assets) <li> [Affichage des rendus d’une ressource](/help/assets/add-delete-assets-view.md#renditions) </li> <li>[Affichage des versions d’une ressource](/help/assets/manage-organize-assets-view.md#view-versions)</li></ul> |
 | Ajout de nouvelles ressources | <ul> <li>[Chargement de nouvelles ressources et de nouveaux dossiers](/help/assets/add-delete-assets-view.md)</li> <li>[Surveillance de la progression du chargement et gestion des chargements](/help/assets/add-delete-assets-view.md#upload-progress)</li> <li>[Résoudre les problèmes de doublons](/help/assets/add-delete-assets-view.md)</li> </ul> |
 | Mise à jour de ressources ou d’informations connexes | <ul> <li>[Modification des images](/help/assets/edit-images-assets-view.md)</li> <li>[Création de versions](/help/assets/manage-organize-assets-view.md#create-versions) et [affichage de versions](/help/assets/manage-organize-assets-view.md#view-versions)</li> <li>[Modification des images](/help/assets/edit-images-assets-view.md)</li> </ul> |
 | Modification de ressources | <ul> <li>[Modifications dans le navigateur à l’aide d’Adobe Photoshop Express](/help/assets/edit-images-assets-view.md)</li> <li>[Recadrage d’un profil de réseaux sociaux](/help/assets/edit-images-assets-view.md#crop-straighten-images)</li> <li>[Affichage et gestion des versions](/help/assets/manage-organize-assets-view.md#view-versions)</li></ul></ul> |
 | Recherche de ressources dans le référentiel | <ul> <li>[Recherche dans un dossier spécifique](/help/assets/search-assets-view.md#refine-search-results)</li> <li>[Recherches enregistrées](/help/assets/search-assets-view.md#saved-search)</li> <li>[Recherche de ressources récemment consultées](/help/assets/search-assets-view.md)</li> <li>[Recherche du texte intégral](/help/assets/search-assets-view.md) |
-| Téléchargement de ressources | <ul> <li> [Aperçu de la ressource](/help/assets/navigate-assets-view.md#preview-assets) </li> <li> [Téléchargement de ressources](/help/assets/manage-organize-assets-view.md#download) <li> [Téléchargement de rendus](/help/assets/add-delete-assets-view.md#renditions) </li></ul> |
-| Opérations de métadonnées | <ul> <li>[Affichage des métadonnées détaillées](/help/assets/metadata-assets-view.md) </li> <li> [Mise à jour les métadonnées](/help/assets/metadata-assets-view.md#update-metadata)</li> <li> [Création d’un formulaire de métadonnées](/help/assets/metadata-assets-view.md#metadata-forms) </li> </ul> |
+| Téléchargement de ressources | <ul> <li> [Aperçu de la ressource](/help/assets/navigate-assets-view.md#preview-assets) </li> <li> [Télécharger des ressources](/help/assets/manage-organize-assets-view.md#download) <li> [Téléchargement de rendus](/help/assets/add-delete-assets-view.md#renditions) </li></ul> |
+| Opérations de métadonnées | <ul> <li>[Affichage des métadonnées détaillées](/help/assets/metadata-assets-view.md) </li> <li> [Mettre à jour des métadonnées](/help/assets/metadata-assets-view.md#update-metadata)</li> <li> [Création d’un formulaire de métadonnées](/help/assets/metadata-assets-view.md#metadata-forms) </li> </ul> |
 
 ## Étapes suivantes {#next-steps}
 
-* [Regarder une vidéo pour commencer à utiliser la vue Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html?lang=fr)
+* [Regardez une vidéo pour commencer à utiliser la vue Assets .](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html?lang=fr)
 
 * Faites des commentaires sur le produit en utilisant l’option [!UICONTROL Commentaires] disponible dans l’interface utilisateur de la vue Assets
 
@@ -101,3 +101,22 @@ To provide feedback for documentation, click [!UICONTROL Edit this page] ![edit 
 >* [Release notes and known issues](/help/assets/release-notes.md).
 >* [Supported file types](/help/assets/supported-file-formats.md).
 -->
+
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

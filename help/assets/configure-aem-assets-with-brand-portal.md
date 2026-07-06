@@ -6,9 +6,9 @@ feature: Brand Portal, Asset Distribution, Configuration
 role: Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '781'
 ht-degree: 70%
 
 ---
@@ -201,8 +201,7 @@ Along with the automation workflow to activate Brand Portal on Experience Manage
 
 >[!NOTE]
 >
-> Vous ne pourrez plus créer de nouvelles informations d’identification JWT à partir de juin 2024. Dorénavant, seules les informations d’identification OAuth seront créées.
-> En savoir plus [création d’une configuration OAuth](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a).
+> Vous ne pourrez plus créer de nouvelles informations d’identification JWT à partir de juin 2024. Dorénavant, seules les informations d’identification OAuth seront créées.En savoir plus [création d’une configuration OAuth](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a).
 
 La section suivante décrit comment configurer manuellement Experience Manager Assets as a [!DNL Cloud Service] avec Brand Portal à l’aide d’Adobe Developer Console.
 
@@ -236,7 +235,7 @@ Procédez comme suit dans la séquence spécifiée pour configurer Experience M
 
 1. [Configurer les informations d’identification OAuth dans Adobe Developer Console](#config-oauth)
 1. [Créer une intégration Adobe IMS à l’aide d’OAuth](#create-ims-account-configuration)
-1. [Configuration du service cloud](#configure-cloud-service)
+1. &lbrack;Configuration du service cloud
    <!--1. [Obtain public certificate](#public-certificate)-->
 <!--
 1. [Create service account (JWT) connection](#createnewintegration) 
@@ -437,8 +436,7 @@ Pour configurer le service cloud Brand Portal, procédez comme suit :
 Vous pouvez maintenant tester la configuration en vérifiant l’agent de distribution et en publiant les ressources sur Brand Portal.
 
 **Placer sur la liste autorisée les adresses IP sortantes dans SPS si l&#39;aperçu sécurisé est activé**
-Si vous utilisez Dynamic Media en mode Scene7 avec l’option [aperçu sécurisé activé](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=fr) pour une entreprise, il est conseillé à l’administrateur de l’entreprise Scene7 [de placer sur la liste autorisée les adresses IP sortantes publiques](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=fr#testing-the-secure-testing-service) pour les régions respectives à l’aide de l’interface utilisateur Flash de SPS (Scene7 Publishing System).
-Les adresses IP sortantes sont les suivantes :
+Si vous utilisez Dynamic Media en mode Scene7 avec l’option [aperçu sécurisé activé](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=fr) pour une entreprise, il est conseillé à l’administrateur de l’entreprise Scene7 [de placer sur la liste autorisée les adresses IP sortantes publiques](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=fr#testing-the-secure-testing-service) pour les régions respectives à l’aide de l’interface utilisateur Flash de SPS (Scene7 Publishing System).Les adresses IP sortantes sont les suivantes :
 
 | **Zone géographique** | **Adresse IP de sortie** |
 |--- |--- |
@@ -565,16 +563,18 @@ Go to `/system/console/slingmetrics` for statistics related to the distributed c
 
 **Voir également**
 
-* [Traduire les ressources](translate-assets.md)
-* [API HTTP Assets](mac-api-assets.md)
-* [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Rechercher des ressources](search-assets.md)
-* [Ressources connectées](use-assets-across-connected-assets-instances.md)
-* [Rapports de ressources](asset-reports.md)
-* [Schémas de métadonnées](metadata-schemas.md)
-* [Télécharger des ressources](download-assets-from-aem.md)
-* [Gestion des métadonnées](manage-metadata.md)
-* [Facettes de recherche](search-facets.md)
-* [Gérer les collections](manage-collections.md)
-* [Import des métadonnées en bloc](metadata-import-export.md)
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

@@ -4,16 +4,16 @@ description: Découvrez comment déployer et activer Content Hub et accorder l�
 role: Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '2603'
-ht-degree: 6%
+source-wordcount: '2663'
+ht-degree: 8%
 
 ---
 
 # Déployer Content Hub {#deploy-content-hub}
 
-Content Hub est disponible dans le cadre de Experience Manager Assets as a Cloud Service pour démocratiser l’accès au contenu de marque pour les organisations et leurs partenaires commerciaux.
+Content Hub est disponible dans le cadre d’Experience Manager Assets as a Cloud Service pour démocratiser l’accès au contenu de marque pour les organisations et leurs partenaires commerciaux.
 
 Les ressources marquées comme Approuvées sur Experience Manager Assets as a Cloud Service sont disponibles pour la distribution de ressources sur Content Hub.
 
@@ -53,11 +53,11 @@ Le tableau suivant résume les types d’utilisateurs Content Hub disponibles, l
 | AEM > Instance de création de production > Utilisateurs AEM | − | ✓ | ✓ | − |
 | AEM > Instance de création de production > Administration AEM | − | − | − | ✓ |
 | Adobe Express | − | − | ✓ | − |
-| **Informations supplémentaires** | Voir [Utilisateurs de Content Hub](#onboard-content-hub-users) | Voir [Utilisateurs de Content Hub avec des droits d’ajout de ressources](#onboard-content-hub-users-add-assets) | Voir [Utilisateurs de Content Hub avec des droits pour remixer les ressources vers de nouvelles variations](#onboard-content-hub-users-remix-assets) | Voir [Administrateurs Content Hub](#onboard-content-hub-administrator) |
+| **Informations supplémentaires** | Voir [Utilisateurs de &#x200B;](#onboard-content-hub-users) | Voir [Utilisateurs de Content Hub avec des droits d’ajout de ressources](#onboard-content-hub-users-add-assets) | Voir [Utilisateurs de Content Hub avec des droits pour remixer les ressources vers de nouvelles variations](#onboard-content-hub-users-remix-assets) | Voir [Administrateurs &#x200B;](#onboard-content-hub-administrator) |
 
 >[!NOTE]
 >
->Les utilisateurs de [Experience Manager Assets](#experience-manager-assets-users) peuvent approuver des ressources dans un environnement Experience Manager Assets as a Cloud Service afin de les rendre disponibles sur Content Hub. Ces utilisateurs doivent être ajoutés au profil de produit AEM > Instance de création de production > Utilisateurs AEM à l’aide d’Admin Console.
+>Les utilisateurs de [&#128279;](#experience-manager-assets-users) peuvent approuver des ressources dans un environnement Experience Manager Assets as a Cloud Service afin de les rendre disponibles sur Content Hub. Ces utilisateurs doivent être ajoutés au profil de produit AEM > Instance de création de production > Utilisateurs AEM à l’aide d’Admin Console.
 
 ## Étape 1 : activer Content Hub pour Experience Manager Assets à l’aide de Cloud Manager {#enable-content-hub}
 
@@ -72,13 +72,13 @@ Pour activer Content Hub pour Experience Manager Assets :
 
 1. Connectez-vous à Cloud Manager. Veillez à sélectionner la bonne organisation lors de la connexion. Le Cloud Manager répertorie tous vos programmes.
 
-1. Accédez au programme Experience Manager Assets as a Cloud Service, cliquez sur l’icône Plus d’options (...) et sélectionnez **[!UICONTROL Modifier le programme]**.
+1. Accédez au programme Experience Manager Assets as a Cloud Service, cliquez sur l’icône Plus d’options (...). et sélectionnez **[!UICONTROL Modifier le programme]**.
 
    ![Modifier le programme dans Cloud Manager](assets/edit-program-cloud-manager.png)
 
 1. Dans la boîte de dialogue [!UICONTROL Modifier le programme], sélectionnez l’onglet **[!UICONTROL Solutions et modules complémentaires]**.
 
-1. Développez **[!UICONTROL Assets]** puis sélectionnez **[!UICONTROL Content Hub]**.
+1. Développez **&#x200B;**&#x200B;puis sélectionnez **[!UICONTROL Content Hub]**.
    ![Sélectionnez Content Hub dans Cloud Manager](assets/edit-program-cloud-manager-content-hub.png)
 
    >[!NOTE]
@@ -89,7 +89,7 @@ Pour activer Content Hub pour Experience Manager Assets :
 
 Content Hub est désormais activé pour Experience Manager Assets as a Cloud Service. Après l’activation de Content Hub dans un environnement de production, vous ne pouvez pas le désactiver en libre-service.
 
-Si vous découvrez Experience Manager Assets, cliquez sur **[!UICONTROL Ajouter un programme]** puis fournissez les détails du programme (Nom du programme, Configuration pour la production) et cliquez sur **[!UICONTROL Continuer]**. Vous pouvez ensuite sélectionner **[!UICONTROL Assets]** et **[!UICONTROL Content Hub]** dans l’onglet **[!UICONTROL Solutions et modules complémentaires]**.
+Si vous découvrez Experience Manager Assets, cliquez sur **[!UICONTROL Ajouter un programme]** puis fournissez les détails du programme (Nom du programme, Configuration pour la production) et cliquez sur **[!UICONTROL Continuer]**. Vous pouvez ensuite sélectionner **&#x200B;**&#x200B;et **[!UICONTROL Content Hub]** dans l’onglet **[!UICONTROL Solutions et modules complémentaires]**.
 
 ### Activation de Content Hub pour les environnements inférieurs {#enable-content-hub-lower-environments}
 
@@ -109,7 +109,7 @@ Pour activer Content Hub pour les environnements inférieurs :
 
 1. Cliquez sur la carte du programme pour afficher la liste des environnements disponibles (Production, Développement ou Évaluation).
 
-1. Cliquez sur l’environnement à activer. La section **[!UICONTROL Content Hub]** affiche `Content Hub is available for activation`.
+1. Cliquez sur l’environnement à activer. La section **&#x200B;**&#x200B;affiche `Content Hub is available for activation`.
 
    ![Activation de Content Hub pour les environnements inférieurs](assets/enable-content-hub-lower-environments.png)
 
@@ -133,7 +133,7 @@ Notez qu’il n’y a aucun `author` ni `publish` dans le nom de l’instance po
 
 Cliquez sur le nom de l’instance pour afficher le profil de produit Content Hub.
 
-![Profil de produit Content Hub](assets/content-hub-product-profile.png)
+![Profil de produit &#x200B;](assets/content-hub-product-profile.png)
 
 >[!NOTE]
 >
@@ -256,7 +256,7 @@ Pour configurer les utilisateurs de Experience Manager Assets :
 
    >[!NOTE]
    >
-   > Vous n&#39;avez pas besoin d&#39;être ajouté au profil de produit [Content Hub](#onboard-content-hub-users) pour les utilisateurs de Experience Manager Assets.
+   > Vous n&#39;avez pas besoin d&#39;être ajouté au profil de produit [&#128279;](#onboard-content-hub-users) pour les utilisateurs de Experience Manager Assets.
 
 ## Activer Content Hub pour les clients Assets as a Cloud Service existants {#enable-content-hub-exisitng-cs-customers}
 
@@ -272,7 +272,7 @@ Les clients Assets as a Cloud Service existants ont 250 utilisateurs Content Hub
 
 Si les utilisateurs n’obtiennent pas les privilèges appropriés même après les avoir ajoutés aux profils de produit appropriés, contactez votre représentant Adobe.
 
-## Questions fréquemment posées {#faqs-deploy-content-hub}
+## Questions fréquentes {#faqs-deploy-content-hub}
 
 ### Comment les utilisateurs accèdent-ils à AEM Assets Content Hub et quels privilèges peuvent être attribués ?
 
@@ -344,5 +344,20 @@ Les utilisateurs d’AEM Assets Content Hub autorisés à remixer des ressources
 
 
 
+**Voir également**
 
-
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

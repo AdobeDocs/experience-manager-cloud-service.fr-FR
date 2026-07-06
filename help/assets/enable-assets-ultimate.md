@@ -5,10 +5,10 @@ feature: Asset Management
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 45cd8ccd-e5cf-42cd-aa7f-4ae59d0587f7
-source-git-commit: e8d9414c204222cbd1068530cc9329f30c7a9fbe
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '2539'
-ht-degree: 2%
+source-wordcount: '2582'
+ht-degree: 3%
 
 ---
 
@@ -252,3 +252,22 @@ Deux services sont activés par défaut pour le profil de produit Utilisateurs a
 ### Quelle est la différence entre le suffixe delivery et contenthub dans l’instance Content Hub Admin Console ? {#content-hub-suffix-difference}
 
 Le suffixe de l’instance Content Hub dans Adobe Admin Console dépend de la date à laquelle Content Hub a été configuré. Les clients qui ont configuré Content Hub après le 14 août 2024 disposent d’une instance avec un suffixe de diffusion. Les clients qui ont configuré Content Hub avant le 14 août 2024 disposent d’une instance avec un suffixe contenthub. Dans le cas d’approvisionnement précédent, le profil de produit Content Hub affichait également contenthub après Utilisateurs limités au lieu de la diffusion. Les deux configurations fournissent le même profil de produit AEM Assets Limited Users pour l’octroi de l’accès à Content Hub.
+
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

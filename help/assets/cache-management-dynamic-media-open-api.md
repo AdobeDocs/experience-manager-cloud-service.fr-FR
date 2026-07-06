@@ -4,10 +4,10 @@ description: Gestion du cache dans Dynamic Media avec les API ouvertes
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 203a5291-edb5-4900-8b0a-32e1ebae5395
-source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '660'
-ht-degree: 0%
+source-wordcount: '703'
+ht-degree: 6%
 
 ---
 
@@ -108,3 +108,22 @@ La mise en cache prolongée avec invalidation de cache active pilotée par les �
 Pour vous exclure de la mise en cache prolongée, contactez l’assistance technique d’Adobe [&#128279;](https://helpx.adobe.com/in/contact.html) et justifiez votre demande.
 
 +++
+
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

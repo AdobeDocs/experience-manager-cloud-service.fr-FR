@@ -4,10 +4,10 @@ description: Découvrez comment intégrer  [!DNL AEM Assets]  avec pour accéder
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 530561ca-497b-4331-a014-72c561e1ca84
-source-git-commit: f0fa0203e3265ba6afffcabe1154d6679b92e46b
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1403'
-ht-degree: 1%
+source-wordcount: '1520'
+ht-degree: 4%
 
 ---
 
@@ -33,10 +33,8 @@ ht-degree: 1%
 Exécutez les étapes suivantes pour accéder au connecteur Assets [!UICONTROL Adobe Experience Manager (AEM)] :
 
 1. Sur votre page d’accueil [!DNL Figma], cliquez sur **[!UICONTROL Actions]** dans la barre d’outils située au bas de la zone de travail et recherchez [!DNL Adobe Experience Manager (AEM) Assets Connector] dans la barre de recherche disponible dans la boîte de dialogue.
-1. Sélectionnez [!DNL Adobe Experience Manager (AEM) Assets Connector] pour afficher le panneau [!DNL Adobe Experience Manager (AEM) Assets Connector]. [Importez  [!DNL AEM]  ressources dans la zone  [!DNL Figma]  travail](#import-aem-assets-into-figma-workflow) à l’aide de ce panneau.
-   ![actions &#x200B;](/help/assets/assets/actions-on-figma.png)
-Vous pouvez également accéder aux [[!DNL Adobe Experience Manager (AEM) Assets Connector]](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector) disponibles sur [!DNL Figma] communauté, cliquer sur **[!UICONTROL Ouvrir dans...]**, sélectionner un fichier récent ou créer un fichier et cliquer sur **[!UICONTROL Exécuter]** pour accéder au panneau [!DNL Adobe Experience Manager (AEM) Assets Connector].
-   ![plugin-page-on-figma-community](/help/assets/assets/plugin-page-on-figma-community.png)
+1. Sélectionnez [!DNL Adobe Experience Manager (AEM) Assets Connector] pour afficher le panneau [!DNL Adobe Experience Manager (AEM) Assets Connector]. [Importez  [!DNL AEM]  ressources dans la zone  [!DNL Figma]  travail](#import-aem-assets-into-figma-workflow) à l’aide de ce panneau.   ![actions](/help/assets/assets/actions-on-figma.png)
+Vous pouvez également accéder aux [[!DNL Adobe Experience Manager (AEM) Assets Connector]](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector) disponibles sur [!DNL Figma] communauté, cliquer sur **[!UICONTROL Ouvrir dans...]**, sélectionner un fichier récent ou créer un fichier et cliquer sur **[!UICONTROL Exécuter]** pour accéder au panneau [!DNL Adobe Experience Manager (AEM) Assets Connector].   ![plugin-page-on-figma-community](/help/assets/assets/plugin-page-on-figma-community.png)
 
 >[!NOTE]
 >
@@ -50,8 +48,7 @@ Vous pouvez également accéder aux [[!DNL Adobe Experience Manager (AEM) Assets
 
 1. Faites glisser et déposez la ressource sur la zone de travail ou sélectionnez la ressource et cliquez sur **[!UICONTROL Sélectionner]** pour apporter la ressource sur la zone de travail.
 
-1. Cliquez sur ![trois points](/help/assets/assets/three-dots.svg) dans le chemin du dossier pour afficher tous les dossiers parents et enfants dans la hiérarchie actuelle. Sélectionnez un dossier pour accéder à cet emplacement.
-   ![trois points](/help/assets/assets/figma-v2-plugin.png)
+1. Cliquez sur ![trois points](/help/assets/assets/three-dots.svg) dans le chemin du dossier pour afficher tous les dossiers parents et enfants dans la hiérarchie actuelle. Sélectionnez un dossier pour accéder à cet emplacement.   ![trois points](/help/assets/assets/figma-v2-plugin.png)
 
 1. [Facultatif] Cliquez sur **[!UICONTROL Rechercher les mises à jour]**. Les ressources utilisées dans le document Figma actuel sont comparées aux ressources qui existent dans AEM. Toutes les mises à jour sont répertoriées dans une fenêtre distincte. Cliquez sur **[!UICONTROL Mettre à jour]** pour obtenir la ressource mise à jour d’AEM dans votre document Figma.
 
@@ -66,8 +63,7 @@ Une fois votre conception Figma prête, vous pouvez [exporter la ressource vers 
 1. Cliquez sur ![Chargement de fichier](/help/assets/assets/upload-icon.svg) **[!UICONTROL Charger]** pour afficher la boîte de dialogue **[!UICONTROL Charger une ressource]**.
 1. Dans la boîte de dialogue, sélectionnez **[!UICONTROL Élément sélectionné]** ou **[!UICONTROL Page]**, spécifiez un nom de fichier ou de page, définissez une configuration d’exportation et cliquez sur **[!UICONTROL Télécharger]** pour charger la ressource sélectionnée ou la conception entière dans le dossier de destination.
 
-   La configuration de l’exportation comprend le format, l’échelle et la qualité du fichier. Par exemple, si vous sélectionnez JPG comme format de fichier, vous pouvez également définir l’échelle et la qualité de l’image. De même, si vous sélectionnez le format PNG comme format de fichier, vous pouvez également définir l’échelle de l’image.
-   ![charger la conception figma](/help/assets/assets/upload-figma-design.png)
+   La configuration de l’exportation comprend le format, l’échelle et la qualité du fichier. Par exemple, si vous sélectionnez JPG comme format de fichier, vous pouvez également définir l’échelle et la qualité de l’image. De même, si vous sélectionnez le format PNG comme format de fichier, vous pouvez également définir l’échelle de l’image.   ![charger la conception figma](/help/assets/assets/upload-figma-design.png)
 
 
 ## Questions fréquentes {#frequently-asked-questions-aem-assets-figma-integration}
@@ -111,3 +107,22 @@ Les conceptions Figma peuvent être regroupées sur la zone de travail avant d�
 ### Comment naviguer dans les dossiers du référentiel AEM Assets depuis Figma ? {#navigate-aem-folders-figma}
 
 La navigation entre les dossiers du référentiel AEM Assets est disponible directement dans le panneau du connecteur AEM Assets de Adobe Experience Manager dans Figma. Cliquez sur l’icône en forme de trois points dans le chemin du dossier pour afficher tous les dossiers parents et enfants dans la hiérarchie actuelle. Sélectionnez un dossier dans la liste pour accéder à cet emplacement. Lors de l’exportation d’une conception dans un autre dossier de destination, cliquez sur Autres options dans le chemin du dossier pour sélectionner un autre dossier dans le référentiel AEM Assets.
+
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

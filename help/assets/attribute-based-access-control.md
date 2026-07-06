@@ -4,10 +4,10 @@ description: Découvrez comment activer le contrôle d’accès basé sur les at
 role: Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: b736af556c8580d005097c27cceba050b21a57c9
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '2139'
-ht-degree: 2%
+source-wordcount: '2182'
+ht-degree: 4%
 
 ---
 
@@ -237,3 +237,21 @@ ABAC est utile pour les organisations disposant de grandes équipes, car il perm
 ### Comment les administrateurs doivent-ils préparer la feuille de calcul ABAC pour AEM Assets Content Hub avant de l’envoyer à l’assistance Adobe ?
 
 Les administrateurs doivent créer des groupes d’utilisateurs dans le Adobe Admin Console, noter leurs ID de groupe, définir clairement les autorisations et conditions de chaque groupe dans la feuille de calcul, s’assurer que toutes les propriétés de métadonnées sont correctement mappées aux schémas appropriés et utiliser la colonne de commentaires pour clarifier l’intention commerciale de chaque règle.
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

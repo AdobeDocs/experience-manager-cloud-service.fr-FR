@@ -3,10 +3,10 @@ title: Intégrer AEM Assets distant à AEM Sites
 description: Découvrez comment configurer et connecter des sites AEM à des AEM Assets approuvées.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1011'
-ht-degree: 13%
+source-wordcount: '1151'
+ht-degree: 19%
 
 ---
 
@@ -34,8 +34,8 @@ La prise en charge des ressources distantes à l’aide de Dynamic Media avec de
 
 * Configurez les [variables d’environnement](/help/implementing/cloud-manager/environment-variables.md#add-variables) suivantes pour AEM as a Cloud Service :
 
-   * ASSET_DELIVERY_REPOSITORY_ID= « delivery-pxxxxx-eyyyyyy.adobeaemcloud.com » <br>
-     `pXXXX` fait référence à l’ID de programme <br>
+   * ASSET_DELIVERY_REPOSITORY_ID= « delivery-pxxxxx-eyyyyyy.adobeaemcloud.com » 
+     `pXXXX` fait référence à l’ID de programme 
      `eYYYY` fait référence à l’identifiant d’environnement
 
   Ces variables sont définies à l’aide de l’interface utilisateur Cloud Manager de l’environnement AEM as a Cloud Service qui agit comme votre instance Sites locale.
@@ -58,8 +58,7 @@ Utilisez l’URL directe, par exemple : `https://localhost:4502/system/console/c
 
       `imsOrg` n’est pas une entrée obligatoire.
       `repositoryId` = « delivery-pxxxxx-eyyyyy.adobeaemcloud.com »
-où `pXXXX` fait référence à l’ID de programme
-      `eYYYY` fait référence à l’identifiant d’environnement
+où `pXXXX` fait référence à l’ID de programme      `eYYYY` fait référence à l’identifiant d’environnement
 
       ![Fenêtre de configuration OSGi de la configuration Dynamic Media de nouvelle génération](/help/assets/assets/remote-assets-osgi.png)
 
@@ -113,7 +112,7 @@ Vous pouvez accéder aux ressources distantes dans l’éditeur de page d’AEM 
 
 Suivez les étapes ci-dessous pour utiliser des ressources distantes dans un fragment de contenu AEM sur votre instance AEM Sites. Vous pouvez effectuer cette intégration dans AEM 6.5 et non dans AEM as a Cloud Service.
 
-1. Accédez à **[!UICONTROL Assets]** > **[!UICONTROL Fichiers]**.
+1. Accédez à **&#x200B;**&#x200B;> **[!UICONTROL Fichiers]**.
 1. Sélectionnez le dossier de ressources où se trouve le fragment de contenu.
 1. Sélectionnez le fragment de contenu et cliquez sur **[!UICONTROL Modifier (_par ex_)]**.
 
@@ -125,7 +124,7 @@ Suivez les étapes ci-dessous pour utiliser des ressources distantes dans un fra
 1. Sélectionnez **[!UICONTROL Distant]** pour récupérer la ressource à partir du DAM distant. <br>
 Vous pouvez choisir le référentiel de gestion des ressources numériques **[!UICONTROL local]** ou **[!UICONTROL distant]** en fonction de vos besoins.
 
-   ![image](/help/assets/assets/cf-pick.jpg)
+   ![&#x200B; image](/help/assets/assets/cf-pick.jpg)
 Vous êtes invité à vous connecter.
 1. Sélectionnez la ressource et cliquez sur **[!UICONTROL Sélectionner]**.
    <br> L’URL de la ressource distante s’affiche dans le composant de texte.
@@ -137,3 +136,22 @@ Vous êtes invité à vous connecter.
 ### Accès aux ressources distantes dans Edge Delivery Services {#access-assets-eds}
 
 Vous pouvez accéder aux ressources distantes lors de la création de contenu dans Microsoft Word, Google Docs ou l’éditeur universel, puis publier le contenu dans Edge Delivery Services. Vous pouvez également utiliser Dynamic Media avec OpenAPI pour diffuser des ressources approuvées par la marque et tirer parti de nombreux autres avantages qu’il offre. Pour plus d’informations, voir [Intégration d’AEM Assets lors de la création de contenu pour Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md).
+
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

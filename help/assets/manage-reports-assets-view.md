@@ -5,10 +5,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Asse
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
-source-git-commit: 8f04036493722f73fb29416b51dae6d64633249c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1429'
-ht-degree: 82%
+source-wordcount: '1562'
+ht-degree: 86%
 
 ---
 
@@ -186,8 +186,7 @@ Pour supprimer ou télécharger le rapport Diffusion Dynamic Media au format C
 
 ## Afficher et télécharger un rapport existant {#View-and-download-existing-report}
 
-Les rapports existants s’affichent sous l’onglet **Rapports exécutés**. Cliquez sur **Rapports** et sélectionnez **Rapports exécutés** pour afficher tous les rapports créés avec le statut **terminé**, indiquant qu’ils sont prêts à être téléchargés. Pour télécharger le rapport au format CSV ou le supprimer, sélectionnez la ligne du rapport. Sélectionnez ensuite **Télécharger CSV** ou **Supprimer**.
-![affichage et téléchargement des rapports existants](/help/assets/assets/view-download-existing-report.png)
+Les rapports existants s’affichent dans l’onglet **Rapports exécutés**. Cliquez sur **Rapports** et sélectionnez **Rapports exécutés** pour afficher tous les rapports créés dont le statut est **Terminé**, indiquant qu’ils peuvent être téléchargés. Pour télécharger le rapport au format CSV ou le supprimer, sélectionnez la ligne du rapport. Sélectionnez ensuite **Télécharger le fichier CSV** ou **Supprimer**.![Affichage et téléchargement de rapports existants](/help/assets/assets/view-download-existing-report.png)
 
 
 ## Planifier un rapport {#schedule-report}
@@ -220,13 +219,11 @@ Les rapports planifiés s’affichent dans l’onglet **Rapports planifiés** et
 1. Accédez à l’onglet **Rapports planifiés**.
 1. Sélectionnez la ligne du rapport.
 1. Cliquez sur **Modifier**.
-1. Cliquez sur **Annuler le planning** puis sur **Confirmer** pour annuler le rapport planifié. Pour les rapports annulés, l’heure d’exécution suivante devient vide et le statut indique annulé.
-   ![Modification et annulation d’un rapport planifié](/help/assets/assets/cancel-edit-scheduled-reports.png)
+1. Cliquez sur **Annuler la planification**, puis sur **Confirmer** pour annuler le rapport planifié. Pour les rapports annulés, la prochaine exécution devient vide et le statut est Annulé.   ![Modification et annulation d’un rapport planifié](/help/assets/assets/cancel-edit-scheduled-reports.png)
 
 ### Reprendre le planning {#resume-schedule}
 
-Pour reprendre la planification annulée, sélectionnez la ligne du rapport et cliquez sur **Reprendre la planification**. Lors de la reprise, les entrées d’exécution suivantes s’affichent à nouveau et le statut indique en cours.
-![reprendre le planning](/help/assets/assets/resume-schedule.png)
+Pour reprendre le planning annulé, sélectionnez la ligne du rapport et cliquez sur **Reprendre le planning**. Lors de la reprise, les entrées d’exécution suivantes s’affichent à nouveau et le statut est En cours.![Reprise du planning](/help/assets/assets/resume-schedule.png)
 
 >[!NOTE]
 >
@@ -265,3 +262,22 @@ Cliquez sur les **[!UICONTROL Insights]** disponibles dans le volet de navigatio
 * **Nombre de ressources par taille :** segmente le nombre total de ressources dans votre environnement de la vue Assets en différentes plages de tailles, en soulignant le nombre et le pourcentage de ressources dans chaque plage de tailles, représentés par un graphique en anneau.
 
 * **Nombre de ressources par type de ressource :** segmente le nombre total de ressources dans votre environnement d’affichage Assets en mettant en surbrillance le nombre et le pourcentage de ressources en fonction de leurs types de fichiers, représentés par un graphique en anneau.
+
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

@@ -3,10 +3,10 @@ title: Gestion des ressources sous licence sur Content Hub
 description: Découvrez comment ajouter un champ de licence au formulaire de métadonnées de ressource, appliquer la propriété de métadonnées Licence aux dossiers de ressources et approuver les ressources avec des licences pour les utiliser.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: ac3aad9f-c7b3-47a7-9314-a2f8277f0d3e
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 3%
+source-wordcount: '683'
+ht-degree: 9%
 
 ---
 
@@ -16,15 +16,13 @@ En tant qu’administrateur, modifiez le formulaire de métadonnées pour inclur
 
 Procédez comme suit :
 
-1. Modifiez le formulaire de métadonnées afin d’inclure un nouveau champ de texte pour inclure les détails de licence. Mappez le champ de texte à `dc:license` propriété . Pour plus d’informations sur l’ajout de champs à un formulaire de métadonnées et la définition de propriétés, consultez [Configuration du Forms de métadonnées](/help/assets/metadata-assets-view.md#metadata-forms).
-   ![extraction zip](/help/assets/assets/metadata-form-edit.png)
+1. Modifiez le formulaire de métadonnées afin d’inclure un nouveau champ de texte pour inclure les détails de licence. Mappez le champ de texte à `dc:license` propriété . Pour plus d’informations sur l’ajout de champs à un formulaire de métadonnées et la définition de propriétés, consultez [Configuration du Forms de métadonnées](/help/assets/metadata-assets-view.md#metadata-forms).   ![extraction zip](/help/assets/assets/metadata-form-edit.png)
 1. Appliquez le formulaire de métadonnées au dossier de ressources pour appliquer les paramètres intégrés à l’étape 1. Pour plus d’informations sur l’attribution d’un formulaire de métadonnées au dossier de ressources, consultez [Attribuer un formulaire de métadonnées à un dossier](/help/assets/metadata-assets-view.md#metadata-forms).
 1. [Approuver le PDF sous licence](/help/assets/manage-organize-assets-view.md#set-asset-status)
-1. Sélectionnez la ressource et cliquez sur **Détails** pour afficher ses propriétés. Dans le champ licence ajouté à l’étape 1, définissez le chemin d’accès absolu pour la licence de ressource qui a été approuvée à l’étape 3 ou qui a déjà été approuvée précédemment. Le chemin d’accès absolu Content Hub suit le modèle standard suivant : `/content/dam/(The asset's folder hierarchy within the DAM repository)/(asset_name).(file_extension)`. Par exemple, /content/dam/teamA/projects/documents/file1.pdf
-   ![chemin absolu](/help/assets/assets/absolute-path.png)
+1. Sélectionnez la ressource et cliquez sur **Détails** pour afficher ses propriétés. Dans le champ licence ajouté à l’étape 1, définissez le chemin d’accès absolu pour la licence de ressource qui a été approuvée à l’étape 3 ou qui a déjà été approuvée précédemment. Le chemin d’accès absolu Content Hub suit le modèle standard suivant : `/content/dam/(The asset's folder hierarchy within the DAM repository)/(asset_name).(file_extension)`. Par exemple, /content/dam/teamA/projects/documents/file1.pdf   ![chemin absolu](/help/assets/assets/absolute-path.png)
 1. Approuvez la ressource pour la rendre disponible dans Content Hub et cliquez sur **Enregistrer**. Pour plus d’informations sur l’approbation d’une ressource, voir [Définition du statut de la ressource](/help/assets/manage-organize-assets-view.md#set-asset-status).
 
-## Questions fréquemment posées {#faqs-manage-licensed-assets-content-hub}
+## Questions fréquentes {#faqs-manage-licensed-assets-content-hub}
 
 ### Quel est l’objectif de la gestion des ressources sous licence sur AEM Assets Content Hub ?
 
@@ -44,7 +42,7 @@ Pour spécifier les détails de licence, sélectionnez la ressource, cliquez sur
 
 ### Quel est le format requis pour le chemin d’accès absolu AEM Assets Content Hub pour une licence de ressource ?
 
-Le chemin d’accès absolu au Content Hub doit suivre le modèle suivant : /content/dam/(La hiérarchie de dossiers de la ressource dans le référentiel DAM)/(asset_name).(extension_fichier). Par exemple, `/content/dam/teamA/projects/documents/file1.pdf`.
+Le chemin d’accès absolu au Content Hub doit suivre le modèle suivant : /content/dam/(La hiérarchie de dossiers de la ressource dans le référentiel DAM)/(nom_ressource).(extension_fichier). Par exemple, `/content/dam/teamA/projects/documents/file1.pdf`.
 
 ### Pourquoi est-il important d’approuver la ressource et sa licence pour les rendre disponibles sur AEM Assets Content Hub ?
 
@@ -57,3 +55,22 @@ Après avoir défini le chemin d’accès de licence dans les propriétés de la
 ### Qui est responsable de la gestion des ressources sous licence dans AEM Assets Content Hub ?
 
 Les administrateurs sont chargés de modifier les formulaires de métadonnées, de les affecter à des dossiers de ressources et d’approuver les ressources et leurs licences dans AEM Assets Content Hub.
+
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

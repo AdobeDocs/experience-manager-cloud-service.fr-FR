@@ -5,9 +5,9 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Asse
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1880'
+source-wordcount: '1934'
 ht-degree: 88%
 
 ---
@@ -136,8 +136,7 @@ Pour créer une configuration d’import en bloc dans [!DNL Experience Manager A
    >* Le dossier source doit se trouver à la racine du répertoire. Les chemins de dossier ne sont pas pris en charge.
 
 1. (Facultatif) Sélectionnez lʼoption **[!UICONTROL Supprimer le fichier source après lʼimport]** afin de supprimer les fichiers originaux du magasin de données source après lʼimport des fichiers dans Experience Manager Assets.
-1. Sélectionnez le **[!UICONTROL Mode d’importation]**. Les modes suivants sont disponibles : **[!UICONTROL Ignorer]**, **[!UICONTROL Remplacer]** ou **[!UICONTROL Créer une version]**. Le mode par défaut est Ignorer. Dans ce mode, l’outil d’ingestion ignore l’import d’une ressource si elle existe déjà.
-   ![Import des détails de la source.](/help/assets/assets/bulk-import-source-details.png)
+1. Sélectionnez le **[!UICONTROL Mode d’importation]**. Les modes suivants sont disponibles : **[!UICONTROL Ignorer]**, **[!UICONTROL Remplacer]** ou **[!UICONTROL Créer une version]**. Le mode par défaut est Ignorer. Dans ce mode, l’outil d’ingestion ignore l’import d’une ressource si elle existe déjà.   ![Import des détails de la source.](/help/assets/assets/bulk-import-source-details.png)
 
 1. (Facultatif) Spécifiez le fichier de métadonnées à importer, fourni au format CSV, dans le champ **[!UICONTROL Fichier de métadonnées]**. Le fichier source des métadonnées doit se trouver dans le dossier source. Cliquez sur **[!UICONTROL Suivant]** pour accéder à **[!UICONTROL Emplacement et filtres]**.
 
@@ -228,3 +227,22 @@ Cliquez sur l’![icône Plus](assets/do-not-localize/more-icon.svg) corresponda
 ## Accéder aux ressources après l’exécution de l’import en bloc {#view-assets-after-bulk-import}
 
 Pour afficher l’emplacement cible des ressources où les ressources sont importées après l’exécution de la tâche d’import en bloc, cliquez sur l’![icône Plus](assets/do-not-localize/more-icon.svg) correspondant au nom de la configuration, puis sur **[!UICONTROL Afficher les ressources]**.
+
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

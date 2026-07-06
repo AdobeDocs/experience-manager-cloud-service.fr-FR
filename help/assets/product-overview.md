@@ -3,10 +3,10 @@ title: Vue d’ensemble de Content Hub
 description: En savoir plus sur Content Hub, ses principaux avantages, comment y accéder et comment fournir des commentaires sur les options disponibles dans Content Hub.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 64%
+source-wordcount: '1490'
+ht-degree: 70%
 
 ---
 
@@ -84,7 +84,7 @@ Procédez comme suit pour configurer Content Hub pour votre équipe :
 
 1. [Fournissez des commentaires Content Hub](#provide-content-hub-feedback).
 
-## Questions fréquemment posées {#faqs-content-hub-overview}
+## Questions fréquentes {#faqs-content-hub-overview}
 
 ### Qu’est-ce qu’AEM Assets Content Hub ? {#what-is-content-hub}
 
@@ -124,8 +124,8 @@ Les utilisateurs peuvent accéder à AEM Assets Content Hub par le biais de lien
    </a>
    <div>
       <a href="/help/assets/configure-content-hub-ui-options.md">
-<strong>Configurer l’interface d’utilisation de Content Hub</strong>
-</a>
+      <strong>Configuration de l’interface utilisateur de Content Hub</strong>
+      
    </div>
    <p>
       <em>Découvrez comment les administrateurs et administratrices peuvent configurer l’interface d’utilisation de Content Hub. </em>
@@ -139,8 +139,8 @@ Les utilisateurs peuvent accéder à AEM Assets Content Hub par le biais de lien
    </a>
    <div>
       <a href="/help/assets/search-assets-content-hub.md">
-      <strong>Rechercher des ressources disponibles dans Content Hub</strong>
-      </a>
+      <strong>Recherche de ressources disponibles dans Content Hub</strong>
+      
    </div>
    <p>
       <em>Découvrez comment utiliser différentes fonctionnalités pour affiner vos résultats de recherche.</em>
@@ -152,8 +152,8 @@ Les utilisateurs peuvent accéder à AEM Assets Content Hub par le biais de lien
    </a>
    <div>
       <a href="/help/assets/edit-images-content-hub.md">
-      <strong>Modifier des images à l’aide d’Adobe Express</strong>
-      </a>
+      <strong>Modification d’images à l’aide d’Adobe Express</strong>
+      
    </div>
    <p>
       <em>Découvrez comment créer des variantes d’images dans Content Hub à l’aide d’Adobe Express.</em>
@@ -167,8 +167,8 @@ Les utilisateurs peuvent accéder à AEM Assets Content Hub par le biais de lien
    </a>
    <div>
       <a href="/help/assets/share-assets-content-hub.md">
-      <strong>Partager les ressources disponibles dans Content Hub</strong>
-      </a>
+      <strong>Partage de ressources disponibles dans Content Hub</strong>
+      
    </div>
    <p>
       <em>Découvrez comment partager une ou plusieurs ressources en tant que lien, puis y accéder.</em>
@@ -180,8 +180,8 @@ Les utilisateurs peuvent accéder à AEM Assets Content Hub par le biais de lien
    </a>
    <div>
       <a href="/help/assets/collections-content-hub.md">
-      <strong>Gérer des collections dans Content Hub</strong>
-      </a>
+      <strong>Gestion des collections dans Content Hub</strong>
+      
    </div>
    <p>
       <em>Découvrez comment créer des collections à l’aide de ressources, puis les gérer.</em>
@@ -193,11 +193,30 @@ Les utilisateurs peuvent accéder à AEM Assets Content Hub par le biais de lien
    </a>
    <div>
       <a href="/help/assets/insights-content-hub.md">
-      <strong>Afficher les informations sur les ressources dans Content Hub</strong>
-      </a>
+      <strong>Affichage des statistiques sur les ressources dans Content Hub</strong>
+      
    </div>
    <p>
       <em> Le module de contenu fournit des informations importantes sur les ressources et permet ainsi de surmonter une difficulté que les équipes de marketing rencontrent souvent.</em>
    </p>
 </td>
 </table>
+
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

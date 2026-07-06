@@ -3,10 +3,10 @@ title: Intégration du gestionnaire de contenu à Dynamic Media
 description: Découvrez comment intégrer le gestionnaire d’accès à Dynamic Media pour permettre aux utilisateurs de parcourir, de prévisualiser et de sélectionner des rendus Dynamic Media à utiliser dans leurs applications et workflows.
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
-source-git-commit: 95209a154a0d3208c5fcda8d4117f80d1015d2fe
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 1%
+source-wordcount: '618'
+ht-degree: 8%
 
 ---
 
@@ -339,3 +339,20 @@ rotate=90&width=1200
 
 La chaîne générée est ajoutée à l’URL Dynamic Media finale et applique les transformations sélectionnées lors de la diffusion de la ressource.
 
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

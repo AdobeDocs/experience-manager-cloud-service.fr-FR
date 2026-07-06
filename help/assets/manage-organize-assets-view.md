@@ -6,14 +6,14 @@ contentOwner: AG
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1730'
 ht-degree: 66%
 
 ---
 
-# Gestion des actifs {#manage-assets}
+# Gestion des ressources {#manage-assets}
 
 Vous pouvez effectuer facilement de nombreuses tâches de gestion des actifs numériques (DAM) grâce à l’interface conviviale d’[!DNL Assets view]. Une fois les ressources ajoutées, vous pouvez les rechercher, les télécharger, les déplacer, les copier, les renommer, les supprimer, les mettre à jour et les modifier.
 
@@ -47,8 +47,7 @@ Utilisez [!DNL Assets view] pour accomplir les tâches de gestion des actifs sui
 
 * ![Icône Déplacer](assets/do-not-localize/move-icon.png) Déplacez la ressource ou le dossier sélectionné vers un autre emplacement de la hiérarchie du référentiel.
 
-* ![Icône renommer](assets/do-not-localize/rename-icon.png) Renommez la ressource ou le dossier sélectionné. Utilisez un nom unique sans quoi le renommage pourrait échouer avec un avertissement. Vous pouvez réessayer avec un nouveau nom.
-Vous pouvez également cliquer sur le titre d’une ressource ou d’un dossier pour renommer. Mentionnez le nouveau texte dans la zone de texte **Renommer la ressource** et cliquez sur **Enregistrer**. Cette fonctionnalité est disponible dans les vues Grille, Galerie, Cascade et Liste.
+* ![Icône renommer](assets/do-not-localize/rename-icon.png) Renommez la ressource ou le dossier sélectionné. Utilisez un nom unique sans quoi le renommage pourrait échouer avec un avertissement. Vous pouvez réessayer avec un nouveau nom.Vous pouvez également cliquer sur le titre d’une ressource ou d’un dossier pour renommer. Mentionnez le nouveau texte dans la zone de texte **Renommer la ressource** et cliquez sur **Enregistrer**. Cette fonctionnalité est disponible dans les vues Grille, Galerie, Cascade et Liste.
 
 * ![Icône de vue cascade](assets/do-not-localize/waterfall-view.png) [!UICONTROL Vue Cascade]
 
@@ -154,8 +153,7 @@ Pour définir le statut de la ressource :
 
 1. Sélectionnez la ressource, puis cliquez sur **[!UICONTROL Détails]** dans la barre d’outils.
 
-1. Dans l’onglet **[!UICONTROL De base]**, sélectionnez le statut de la ressource dans la liste déroulante **[!UICONTROL Statut]**. Les valeurs possibles sont Approuvé, Refusé et Aucun statut (par défaut).
-Si des fonctionnalités OpenAPI de Dynamic Media sont fournies pour votre environnement, Experience Manager Assets génère une URL publique dès que vous marquez la ressource comme `Approved`.
+1. Dans l’onglet **[!UICONTROL De base]**, sélectionnez le statut de la ressource dans la liste déroulante **[!UICONTROL Statut]**. Les valeurs possibles sont Approuvé, Refusé et Aucun statut (par défaut).Si des fonctionnalités OpenAPI de Dynamic Media sont fournies pour votre environnement, Experience Manager Assets génère une URL publique dès que vous marquez la ressource comme `Approved`.
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 
@@ -235,7 +233,7 @@ Pour ajouter un champ de métadonnées Date d’expiration au formulaire, faites
 
 ## Étapes suivantes {#next-steps}
 
-* [Regardez une vidéo pour gérer les ressources dans la vue Assets](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets-essentials/basics/managing)
+* [Regardez une vidéo pour gérer les ressources dans la vue Assets .](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets-essentials/basics/managing)
 
 * Faites des commentaires sur le produit en utilisant l’option [!UICONTROL Commentaires] disponible dans l’interface utilisateur de la vue Assets
 
@@ -243,3 +241,20 @@ Pour ajouter un champ de métadonnées Date d’expiration au formulaire, faites
 
 * Contactez l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General#support).
 
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

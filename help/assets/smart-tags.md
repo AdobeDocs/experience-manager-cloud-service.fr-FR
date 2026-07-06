@@ -5,10 +5,10 @@ feature: Smart Tags,Tagging
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: ed11b465dd7faff74fd1b740ffaef1edb7cb5a9d
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '2071'
-ht-degree: 27%
+source-wordcount: '2197'
+ht-degree: 28%
 
 ---
 
@@ -39,8 +39,7 @@ Pour les images, les balises intelligentes sont basées sur certains aspects vis
 Pour les ressources vidéo, le balisage est activé par défaut dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. Comme pour les balises d’image et de texte, les vidéos sont également automatiquement balisées lorsque vous chargez de nouvelles vidéos ou que vous retraitez des vidéos existantes. [!DNL Adobe AI] génère deux jeux de balises pour une vidéo : un jeu correspond aux objets, aux scènes et aux attributs de cette vidéo, et l’autre jeu concerne des actions telles que boire, courir et faire du jogging. Cochez également la case [exclure le balisage intelligent des vidéos](#opt-out-video-smart-tagging).
 
 * **Ressources textuelles**
-Pour les ressources prises en charge, [!DNL Experience Manager] extrait déjà le texte, qui est ensuite indexé et utilisé pour rechercher les ressources. Toutefois, les balises intelligentes basées sur des mots-clés dans le texte fournissent une facette de recherche dédiée, structurée et de priorité supérieure. Cette dernière permet d’améliorer la découverte de ressources par rapport à un index de recherche.
-Pour les ressources à base de texte, l’efficacité des balises intelligentes ne dépend pas de la quantité de texte contenu dans la ressource, mais des mots-clés ou entités pertinents présents dans le texte de la ressource.
+Pour les ressources prises en charge, [!DNL Experience Manager] extrait déjà le texte, qui est ensuite indexé et utilisé pour rechercher les ressources. Cependant, les balises intelligentes basées sur des mots-clés dans le texte fournissent une facette de recherche dédiée, structurée et de priorité supérieure. Cette dernière permet d’améliorer la découverte de ressources par rapport à un index de recherche.Pour les ressources à base de texte, l’efficacité des balises intelligentes ne dépend pas de la quantité de texte contenu dans la ressource, mais des mots-clés ou entités pertinents présents dans le texte de la ressource.
 
   ![Smart-tag-types](assets/smart-tags-types.png)
 
@@ -279,3 +278,22 @@ Les balises intelligentes sont générées uniquement en anglais. Ils peuvent ê
 Vous pouvez [exclure le balisage intelligent](#opt-out-smart-tagging) à tout moment si vous souhaitez arrêter.
 
 +++
+
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

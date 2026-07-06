@@ -3,10 +3,10 @@ title: Approuver des ressources pour le hub de contenus
 description: Découvrez comment approuver des ressources dans Assets as a Cloud Service pour les rendre disponibles dans Content Hub.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1741'
-ht-degree: 11%
+source-wordcount: '1807'
+ht-degree: 14%
 
 ---
 
@@ -77,7 +77,7 @@ Pour définir la cible de validation :
 
    * **Diffusion** est l’option par défaut sélectionnée dans le menu déroulant et elle publie la ressource dans [Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) et [Content Hub](/help/assets/product-overview.md), si les deux sont activés pour Experience Manager Assets.
 
-   * La sélection de **Content Hub** publie la ressource uniquement dans Content Hub. Content Hub s’affiche en tant qu’option uniquement s’il est activé pour Experience Manager Assets.
+   * La sélection de **&#x200B;**&#x200B;publie la ressource uniquement dans Content Hub. Content Hub s’affiche en tant qu’option uniquement s’il est activé pour Experience Manager Assets.
 
    * Si vous ne sélectionnez pas d’option dans la liste déroulante, l’option par défaut activée pour votre environnement AEM as a Cloud Service est automatiquement appliquée à la ressource.
 
@@ -110,7 +110,7 @@ Le tableau suivant illustre les conditions préalables à l’affichage de `Appr
 Après avoir basculé de la vue Assets vers la vue Administrateur, vous pouvez configurer les paramètres du dossier afin que toutes les nouvelles ressources ajoutées au dossier soient automatiquement approuvées.
 
 Vous pouvez basculer entre les vues Admin et Assets des manières suivantes :
-![Présentation de My Workspace](assets/assets-view.png)
+![Vue d’ensemble de Mon espace de travail](assets/assets-view.png)
 
 Pour automatiser l’approbation des ressources nouvellement ingérées dans [!DNL Experience Manager Admin view], procédez comme suit :
 
@@ -153,9 +153,9 @@ L’affichage des ressources chargées à l’aide de Content Hub dépend de l�
 
 * Si le bouton **[!UICONTROL Approbation automatique]** est désactivé, les ressources que vous chargez à l’aide de Content Hub ne s’affichent pas automatiquement. Les ressources sont disponibles dans le dossier `hydrated-assets` de votre environnement Assets as a Cloud Service. Accédez au dossier et [modifiez en masse](#bulk-approve-assets-content-hub) le statut de ces ressources sur `Approved` pour que ces ressources s’affichent dans Content Hub.
 
-![Processus d&#39;approbation Content Hub](/help/assets/assets/content-hub-approval.png)
+![Processus d&#39;approbation &#x200B;](/help/assets/assets/content-hub-approval.png)
 
-## Questions fréquemment posées {#faqs-content-hub-approved-assets}
+## Questions fréquentes {#faqs-content-hub-approved-assets}
 
 ### Quel est l’objectif de l’approbation de ressources pour AEM Assets Content Hub dans Experience Manager as a Cloud Service ? {#approving-assets-content-hub}
 
@@ -179,7 +179,7 @@ Si le bouton d’approbation automatique est activé, les ressources chargées �
 
 ### Qu’est-ce que le champ Cible d’approbation dans la vue AEM Assets et comment affecte-t-il la publication des ressources ?
 
-Le champ **Cible d’approbation** de la page Détails de la ressource vous permet de choisir l’emplacement de publication des ressources approuvées. Les options incluent **Delivery** (publication sur Dynamic Media avec OpenAPI et Content Hub) ou **Content Hub** uniquement. Si aucune option n’est sélectionnée, la valeur par défaut de votre environnement Assets as a Cloud Service est appliquée. Pour plus d’informations[&#x200B; voir &#x200B;](#default-approval-target-options-publish-destinations) Cible d’approbation par défaut et destinations de publication pour les ressources approuvées.
+Le champ **Cible d’approbation** de la page Détails de la ressource vous permet de choisir l’emplacement de publication des ressources approuvées. Les options incluent **Delivery** (publication sur Dynamic Media avec OpenAPI et Content Hub) ou **Content Hub** uniquement. Si aucune option n’est sélectionnée, la valeur par défaut de votre environnement Assets as a Cloud Service est appliquée. Pour plus d’informations[&#128279;](#default-approval-target-options-publish-destinations) voir  Cible d’approbation par défaut et destinations de publication pour les ressources approuvées.
 
 
 ### Que se passe-t-il si le champ Cible de validation n’apparaît pas sur la page AEM Assets Afficher les détails de la ressource ?
@@ -188,8 +188,26 @@ Si le champ **Cible d’approbation** est manquant sur la page Assets Afficher l
 
 ### Comment pouvez-vous automatiser l’approbation des ressources nouvellement ingérées dans la vue d’administration AEM Assets ?
 
-Créez un dossier dans l’environnement de création, accédez à **Outils** > **Assets** > **Profils de métadonnées**, puis créez et modifiez un profil de métadonnées. Ajoutez un champ de texte monoligne, libellez-le **Assets approuvé**, mappez-le à &#39;./jcr:content/metadata/dam:status&#39; et définissez sa valeur par défaut sur `approved`. Appliquez le profil de métadonnées au dossier . Les nouvelles ressources ajoutées au dossier sont automatiquement approuvées.
+Créez un dossier dans l’environnement de création, accédez à **Outils** > **Assets** > **Profils de métadonnées**, puis créez et modifiez un profil de métadonnées. Ajoutez un champ de texte monoligne, libellez-le Assets approuvé&#x200B;**, mappez-le à &#39;./jcr:content/metadata/dam:status&#39; et définissez sa valeur par défaut sur `approved`.** Appliquez le profil de métadonnées au dossier . Les nouvelles ressources ajoutées au dossier sont automatiquement approuvées.
 
 ### Qui peut accéder aux ressources approuvées dans AEM Assets Content Hub et quels contrôles sont en place ?
 
 Les ressources approuvées sont disponibles pour les utilisateurs qui font partie de la même organisation dans AEM Assets Content Hub. Des contrôles stricts garantissent que seules les dernières versions approuvées sont accessibles, ce qui contribue à maintenir la cohérence et la sécurité de la marque.
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

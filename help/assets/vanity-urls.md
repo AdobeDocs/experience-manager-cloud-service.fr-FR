@@ -5,10 +5,10 @@ role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 596136e9-7c2a-43a1-8091-2d8b6226b695
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1386'
-ht-degree: 0%
+source-wordcount: '1510'
+ht-degree: 4%
 
 ---
 
@@ -71,8 +71,7 @@ L’utilisation d’identifiants Vanity significatifs pour personnaliser les URL
 
 * **Optimisation du référencement :** URL qui incluent des mots-clés pertinents améliorent les classements des moteurs de recherche et la capacité de découverte.
 
-* **visibilité des marques améliorée :** les URL spécifiques à une marque renforcent la présence des marques sur tous les canaux marketing, y compris les e-mails, les médias sociaux et les campagnes publicitaires.
-En outre, l’utilisation cohérente des URL de marque dans toutes les communications renforce l’identité et la reconnaissance de la marque.
+* visibilité des marques améliorée :**les URL spécifiques à une marque renforcent la présence des marques sur tous les canaux marketing, y compris les e-mails, les médias sociaux et les campagnes publicitaires.** En outre, l’utilisation cohérente des URL de marque dans toutes les communications renforce l’identité et la reconnaissance de la marque.
 
 * **Suivi et analyse des campagnes :** utilisez des URL de redirection uniques pour différentes campagnes et différents canaux afin d’obtenir des informations détaillées sur les sources de trafic et les performances de conversion.
 
@@ -117,8 +116,7 @@ Exécutez les étapes suivantes pour créer une variable d’environnement et la
 
 1. [Accédez à la page des configurations de votre environnement Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) puis procédez comme suit :
    1. Ajoutez la variable `ASSET_DELIVERY_VANITY_ID` . C&#39;est la clé.
-   1. Utilisez le champ de valeur pour mapper la propriété de métadonnées de ressource qui contient l’ID de redirection. Le mappage suit le format `dc:<your-metadata-property>`, où le préfixe de mappage des métadonnées (tel que dc:) varie en fonction de la propriété de configuration des métadonnées de la ressource.
-      ![Variable ASSET_DELIVERY_VANITY_ID](/help/assets/assets/environment-config.png)
+   1. Utilisez le champ de valeur pour mapper la propriété de métadonnées de ressource qui contient l’ID de redirection. Le mappage suit le format `dc:<your-metadata-property>`, où le préfixe de mappage des métadonnées (tel que dc:) varie en fonction de la propriété de configuration des métadonnées de la ressource.      ![Variable ASSET_DELIVERY_VANITY_ID](/help/assets/assets/environment-config.png)
 1. Enregistrez vos modifications pour redémarrer les capsules dans votre environnement.
 
 ### Valider les ressources à diffuser{#approve-assets-for-delivery}
@@ -132,8 +130,7 @@ Effectuez les remplacements suivants dans votre URL de diffusion standard pour l
 * Remplacez **UUID** par votre **ID Vanity**.
 * Remplacez `aaid` par `avid`.
 
-Consultez la section [Transformation d’une URL standard en URL Vanity](#standard-urls) ci-dessus.
-Découvrez comment [copier Dynamic Media avec des URL de diffusion OpenAPI](/help/assets/approve-assets.md#copy-delivery-url-for-approved-assets) pour vos ressources.
+Consultez la section [Transformation d’une URL standard en URL Vanity](#standard-urls) ci-dessus.Découvrez comment [copier Dynamic Media avec des URL de diffusion OpenAPI](/help/assets/approve-assets.md#copy-delivery-url-for-approved-assets) pour vos ressources.
 
 Lorsque l’utilisateur clique sur l’URL de redirection, [!DNL Dynamic Media with OpenAPI] mappe automatiquement l’ID de redirection vers l’UUID de ressource d’origine au moment de l’ingestion et le résout correctement au moment de la diffusion afin de diffuser la ressource à l’utilisateur sans délai. Vous pouvez personnaliser l’URL Vanity en temps réel sans affecter les performances de diffusion des ressources.
 
@@ -191,9 +188,7 @@ Consultez l’URL Vanity suivante et ses composants personnalisables :
 Exécutez les étapes suivantes pour réécrire les règles de réseau CDN pour la diffusion :
 
 1. Accédez à votre référentiel AEM pour créer un fichier de configuration YAML.
-2. Exécutez les étapes de la section [configuration](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) pour configurer les règles du réseau CDN et déployer la configuration via votre pipeline de configuration Cloud Manager.
-Suivez ces [bonnes pratiques](#best-practices) pour créer le chemin d’accès au domaine.
-   [En savoir plus sur les règles de réécriture CDN](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
+2. Exécutez les étapes de la section [configuration](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) pour configurer les règles du réseau CDN et déployer la configuration via votre pipeline de configuration Cloud Manager.Suivez ces [bonnes pratiques](#best-practices) pour créer le chemin d’accès au domaine.   [En savoir plus sur les règles de réécriture CDN](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
 
 Vous trouverez ci-dessous des exemples de règles de réécriture pour ajouter des noms de fichiers avec des extensions dans les URL Vanity. Personnalisez ces règles de réécriture en fonction de vos besoins. [Contactez l’assistance Adobe](https://helpx.adobe.com/in/contact.html) pour obtenir de l’aide :
 
@@ -246,3 +241,22 @@ Suivez ces bonnes pratiques pour créer des [identifiants de redirection](#creat
 1. Utilisez votre nom de marque, vos noms de produit et les mots-clés pertinents dans vos [identifiants de redirection](#create-vanity-urls), [noms DNS personnalisés](#customize-dns) et [noms de réseau CDN](#rewrite-cdn-rules) pour améliorer votre visibilité des marques et l’engagement des utilisateurs.
 1. Utilisez des mots ou des chaînes courts et descriptifs qui véhiculent du sens.
 1. Utilisez des textes qui invitent les utilisateurs à cliquer.
+
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

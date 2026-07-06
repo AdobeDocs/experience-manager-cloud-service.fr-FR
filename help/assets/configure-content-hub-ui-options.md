@@ -2,10 +2,10 @@
 title: Configurer l’interface d’utilisation du hub de contenus
 description: Configurer l’interface d’utilisation du hub de contenus
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 46ca8082f85cdb957681aa9596b9312b35e4f6ec
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '2850'
-ht-degree: 9%
+source-wordcount: '3115'
+ht-degree: 10%
 
 ---
 
@@ -117,8 +117,7 @@ Content Hub permet aux administrateurs de configurer des filtres qui s’affiche
    >
    >Le nouveau filtre ne s’affiche sur la page Rechercher que s’il existe au moins une ressource dans le référentiel correspondant aux critères de filtre.
 
-De même, vous pouvez cliquer sur ![icône Modifier](assets/do-not-localize/edit_icon.svg), disponible en regard de chaque filtre disponible, pour modifier les libellés ou cliquer sur l’icône de suppression pour supprimer un filtre existant. Cliquez sur **[!UICONTROL Enregistrer]** après avoir effectué toutes les modifications pour appliquer les modifications.
-![Filtres de l’interface utilisateur de configuration sur Content Hub](assets/add-filters.png)
+De même, vous pouvez cliquer sur ![icône Modifier](assets/do-not-localize/edit_icon.svg), disponible en regard de chaque filtre disponible, pour modifier les libellés ou cliquer sur l’icône de suppression pour supprimer un filtre existant. Cliquez sur **[!UICONTROL Enregistrer]** après avoir effectué toutes les modifications pour appliquer les modifications.![Filtres de l’interface utilisateur de configuration sur Content Hub](assets/add-filters.png)
 
 Les filtres activés dans l’interface utilisateur de configuration s’affichent dans la page Rechercher :
 ![Recherche sur Content Hub](assets/content-hub-filters1.png)
@@ -159,8 +158,7 @@ Les propriétés activées dans l’interface utilisateur de configuration s’a
 
 ### Carte de ressources {#asset-card}
 
-Vous pouvez également configurer les propriétés de métadonnées clés que vous devez afficher sur la **Carte de ressource** jusqu’à 6 champs maximum.
-![métadonnées clés sur la carte de la ressource](/help/assets/assets/asset-card-metadata.png)
+Vous pouvez également configurer les propriétés de métadonnées clés que vous devez afficher sur la **Carte de ressource** jusqu’à 6 champs maximum.![métadonnées de clé sur la carte de la ressource](/help/assets/assets/asset-card-metadata.png)
 Pour configurer les propriétés de métadonnées afin de les afficher sur la carte **[!UICONTROL Ressource]**, procédez comme suit :
 
 1. Dans l’interface utilisateur [Configurations](#access-configuration-options-content-hub), cliquez sur **Carte des ressources**.
@@ -186,13 +184,11 @@ L’administration peut définir les champs de métadonnées qui font l’objet 
 
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour appliquer les modifications de sorte que la nouvelle propriété de métadonnées s’affiche dans la liste des champs de métadonnées.
 
-De même, vous pouvez cliquer sur ![icône Modifier](assets/do-not-localize/edit_icon.svg), disponible en regard de chaque propriété de métadonnées disponible, pour modifier la propriété ou cliquer sur l’icône de suppression pour supprimer une propriété existante. Cliquez sur **[!UICONTROL Enregistrer]** après avoir effectué toutes les modifications pour appliquer les modifications.
-![Recherche dans l’interface utilisateur de configuration de Content Hub](assets/configuration-search.png)
+De même, vous pouvez cliquer sur ![icône Modifier](assets/do-not-localize/edit_icon.svg), disponible en regard de chaque propriété de métadonnées disponible, pour modifier la propriété ou cliquer sur l’icône de suppression pour supprimer une propriété existante. Cliquez sur **[!UICONTROL Enregistrer]** après avoir effectué toutes les modifications pour appliquer les modifications.![Recherche dans l’interface utilisateur de configuration de Content Hub](assets/configuration-search.png)
 
 ### Branding {#configure-branding-content-hub}
 
-En tant qu’administrateur, personnalisez votre portail [!DNL Content Hub] pour répondre à vos exigences en matière de marque.
-![réinitialiser la valeur par défaut](/help/assets/assets/reset-default-content-hub.png)
+En tant qu’administrateur, personnalisez votre portail [!DNL Content Hub] pour répondre à vos exigences en matière de marque.![réinitialiser par défaut](/help/assets/assets/reset-default-content-hub.png)
 Sur la page ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]**, utilisez les sections **[!UICONTROL Bannière]**, **[!UICONTROL Couleurs]** et **[!UICONTROL Image de bannière]** pour exécuter les personnalisations suivantes :
 
 1. [Modifiez l’image du logo à partir de la section [!UICONTROL &#x200B; Image du logo &#x200B;]](#Change-the-logo-image)
@@ -226,15 +222,12 @@ Sur la page ![Image de marque](/help/assets/assets/ColorPalette.svg) **[!UICONTR
 
 #### Ajoutez le titre et le corps du texte à votre bannière et modifiez la couleur du texte{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
 
-Sur la page ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]**, utilisez les champs respectifs de la section **[!UICONTROL Bannière]** pour ajouter le titre et le corps du texte à votre bannière.
-Cliquez sur la zone carrée en regard de la **[!UICONTROL Couleur du texte de bannière]** pour sélectionner une couleur de texte dans le sélecteur de couleurs pour votre texte de bannière ou spécifiez le code hexadécimal de la couleur dans le champ en regard de la zone carrée du sélecteur de couleurs.
-![centre de contenu de texte de bannière](/help/assets/assets/banner-text-content-hub.png)
+Sur la page ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]**, utilisez les champs respectifs de la section **[!UICONTROL Bannière]** pour ajouter le titre et le corps du texte à votre bannière.Cliquez sur la zone carrée en regard de la **[!UICONTROL Couleur du texte de bannière]** pour sélectionner une couleur de texte dans le sélecteur de couleurs pour votre texte de bannière ou spécifiez le code hexadécimal de la couleur dans le champ en regard de la zone carrée du sélecteur de couleurs.![centre de contenu de texte de bannière](/help/assets/assets/banner-text-content-hub.png)
 
 #### Modification de la couleur principale et de la couleur secondaire{#Change-the-primary-and-secondary-color}
 
-Sur la page ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]**, utilisez la section **[!UICONTROL Couleurs]** pour définir les couleurs primaires et secondaires en les sélectionnant à l’aide du sélecteur de couleurs ou en définissant le code hexadécimal de la couleur. Ces couleurs définissent les couleurs d’arrière-plan, de texte et d’icône des éléments de l’interface utilisateur pour aligner votre interface utilisateur [!DNL Content Hub] avec le thème de votre marque.
-![couleur primaire et secondaire](/help/assets/assets/primary-secondary-color-content-hub1.png)
-**[!UICONTROL Couleur du Principal &#x200B;]:** Le jeu de couleurs principal s’applique aux actions de sélection, aux éléments interactifs tels que les cases à cocher, les barres de recherche et les commutateurs à travers les [!DNL Content Hub], y compris [!DNL Content Hub] page d’accueil et la page [!UICONTROL Configuration]. Elle s’applique également aux options d’action disponibles sur les interfaces de [!DNL Content Hub] principales, telles que les options disponibles sur les pages **[!UICONTROL Toutes les Assets]** et **[!UICONTROL Collections]**.
+Sur la page ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]**, utilisez la section **[!UICONTROL Couleurs]** pour définir les couleurs primaires et secondaires en les sélectionnant à l’aide du sélecteur de couleurs ou en définissant le code hexadécimal de la couleur. Ces couleurs définissent les couleurs d’arrière-plan, de texte et d’icône des éléments de l’interface utilisateur pour aligner votre interface utilisateur [!DNL Content Hub] avec le thème de votre marque.![couleur primaire et secondaire](/help/assets/assets/primary-secondary-color-content-hub1.png)
+**[!UICONTROL Couleur du Principal &#x200B;] :** le jeu de couleurs principal s’applique aux actions de sélection, aux éléments interactifs tels que les cases à cocher, les barres de recherche et les commutateurs à travers les [!DNL Content Hub], y compris [!DNL Content Hub] page d’accueil et la page [!UICONTROL Configuration]. Elle s’applique également aux options d’action disponibles sur les interfaces de [!DNL Content Hub] principales, telles que les options disponibles sur les pages **[!UICONTROL Toutes les Assets]** et **[!UICONTROL Collections]**.
 
 **[!UICONTROL Couleur Secondaire &#x200B;]:** Sur la page d&#39;accueil [!DNL Content Hub], le jeu de couleurs secondaire s&#39;applique aux options de l&#39;interface utilisateur et aux champs de saisie disponibles dans les boîtes de dialogue. Elle s’applique à toutes les options de menu de configuration disponibles sur la page [!UICONTROL Configuration], à l’exception des actions de sélection, des cases à cocher, des barres de recherche et des commutateurs.
 
@@ -294,11 +287,9 @@ Vous pouvez également ajouter des onglets personnalisés en plus des onglets st
 
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour appliquer les modifications.
 
-De même, vous pouvez cliquer sur ![icône Modifier](assets/do-not-localize/edit_icon.svg), disponible en regard de chaque URL, pour modifier les liens ou cliquer sur l’icône de suppression pour supprimer une URL existante. Cliquez sur **[!UICONTROL Enregistrer]** après avoir effectué toutes les modifications pour appliquer les modifications.
-![Liens personnalisés de l’interface utilisateur de configuration de Content Hub](assets/configuration-custom-links1.png)
+De même, vous pouvez cliquer sur ![icône Modifier](assets/do-not-localize/edit_icon.svg), disponible en regard de chaque URL, pour modifier les liens ou cliquer sur l’icône de suppression pour supprimer une URL existante. Cliquez sur **[!UICONTROL Enregistrer]** après avoir effectué toutes les modifications pour appliquer les modifications.![Liens personnalisés de l’interface utilisateur de configuration de Content Hub](assets/configuration-custom-links1.png)
 
-Le lien personnalisé s’affiche sous la forme d’un nouvel onglet en regard de l’onglet Insights sur la page d’accueil de Content Hub.
-![Onglets de liens personnalisés de l’interface utilisateur de configuration de Content Hub](assets/configuration-ui-custom-link-tab.png)
+Le lien personnalisé s’affiche sous la forme d’un nouvel onglet en regard de l’onglet Insights sur la page d’accueil de Content Hub.![Onglets de liens personnalisés de l’interface utilisateur de configuration de Content Hub](assets/configuration-ui-custom-link-tab.png)
 
 ### Collections et partage {#configure-collections-content-hub}
 
@@ -387,3 +378,21 @@ L’administration peut personnaliser les détails des métadonnées affichés s
 ### Les administrateurs peuvent-ils personnaliser le portail AEM Assets Content Hub pour répondre aux exigences de marque de votre entreprise ?
 
 Oui. L’administration peut personnaliser l’aspect d’AEM Assets Content Hub en modifiant le titre et le corps du texte de la bannière principale, en sélectionnant les couleurs de texte à l’aide d’un sélecteur de couleurs ou d’un code hexadécimal et en définissant les couleurs secondaires et principales de l’arrière-plan, du texte et des icônes.
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

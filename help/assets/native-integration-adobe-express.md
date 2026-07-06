@@ -5,10 +5,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Asse
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 0026550effc426691a4d63faf169ecd7b9228a57
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '4335'
-ht-degree: 0%
+source-wordcount: '4378'
+ht-degree: 1%
 
 ---
 
@@ -395,3 +395,21 @@ Adobe Express via AEM Assets prend en charge les limites de taille et de dimensi
 
 L’intégration d’AEM Assets et d’Adobe Express prend en charge MP4 comme seul type de fichier vidéo pour l’importation et l’exportation. Pour l’importation de vidéos MP4, les vidéos avec arrière-plans transparents (couche alpha) ne sont pas prises en charge. Pour l’exportation de vidéo MP4, la taille de fichier maximale prise en charge est de 200 Mo. Si la taille du fichier d’exportation dépasse 200 Mo, une alerte recommande de réduire la vidéo à 200 Mo ou moins, ou de la charger manuellement dans le dossier de destination AEM Assets après l’avoir téléchargée localement.
 
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

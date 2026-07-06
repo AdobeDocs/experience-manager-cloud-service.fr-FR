@@ -5,9 +5,9 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Asse
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
 feature: Metadata, Workfront Integrations and Apps
 role: User, Admin
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1018'
+source-wordcount: '1055'
 ht-degree: 93%
 
 ---
@@ -91,8 +91,7 @@ Pour configurer le mappage des métadonnées à l’aide d’un nouveau formulai
 
    1. Spécifiez `Project Name` dans le champ **[!UICONTROL Libellé du champ]**.
 
-   1. Spécifiez `./jcr:content/metadata/wm:projectName` dans le champ **[!UICONTROL Mapper à la propriété]**. Pour vous guider, utilisez le modèle suivant pour définir les mappages de champs dans Experience Manager Assets :
-      `./jcr:content/metadata/<mapping defined for the field in workfront>`.
+   1. Spécifiez `./jcr:content/metadata/wm:projectName` dans le champ **[!UICONTROL Mapper à la propriété]**. Pour vous guider, utilisez le modèle suivant pour définir les mappages de champs dans Experience Manager Assets :      `./jcr:content/metadata/<mapping defined for the field in workfront>`.
 
       Lors de la configuration des mappages dans Workfront, vous avez mappé le champ Experience Manager Assets `wm:projectName` au champ Workfront Projet > Nom.
 
@@ -104,15 +103,13 @@ Pour configurer le mappage des métadonnées à l’aide d’un nouveau formulai
 
    1. Spécifiez `Document Name` dans le champ **[!UICONTROL Libellé du champ]**.
 
-   1. Spécifiez `./jcr:content/metadata/wm:documentName` dans le champ **[!UICONTROL Mapper sur la propriété]**.
-Lors de la configuration des mappages dans Workfront, vous avez mappé le champ Experience Manager Assets `wm:documentName` au champ Worfront Document > Nom.
+   1. Spécifiez `./jcr:content/metadata/wm:documentName` dans le champ **[!UICONTROL Mapper sur la propriété]**.Lors de la configuration des mappages dans Workfront, vous avez mappé le champ Experience Manager Assets `wm:documentName` au champ Worfront Document > Nom.
 
 1. Cliquez sur l’onglet **[!UICONTROL Générer un formulaire]** et faites glisser le composant **[!UICONTROL Texte multiligne]** vers le formulaire. Cliquez sur le composant dans le formulaire. Sous l’onglet **[!UICONTROL Générer un formulaire]** :
 
    1. Spécifiez `Document Description` dans le champ **[!UICONTROL Libellé du champ]**.
 
-   1. Spécifiez `./jcr:content/metadata/dc:description` dans le champ **[!UICONTROL Mapper sur la propriété]**.
-Lors de la configuration des mappages dans Workfront, vous avez mappé le champ Experience Manager Assets `dc:description` au champ Workfront Document > Description.
+   1. Spécifiez `./jcr:content/metadata/dc:description` dans le champ **[!UICONTROL Mapper sur la propriété]**.Lors de la configuration des mappages dans Workfront, vous avez mappé le champ Experience Manager Assets `dc:description` au champ Workfront Document > Description.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer les modifications.
 
@@ -134,16 +131,18 @@ Vous pouvez accéder à l’image dans Experience Manager Assets et afficher les
 
 **Voir également**
 
-* [Traduire les ressources](translate-assets.md)
-* [API HTTP Assets](mac-api-assets.md)
-* [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Rechercher des ressources](search-assets.md)
-* [Ressources connectées](use-assets-across-connected-assets-instances.md)
-* [Rapports de ressources](asset-reports.md)
-* [Schémas de métadonnées](metadata-schemas.md)
-* [Télécharger des ressources](download-assets-from-aem.md)
-* [Gestion des métadonnées](manage-metadata.md)
-* [Facettes de recherche](search-facets.md)
-* [Gérer les collections](manage-collections.md)
-* [Import des métadonnées en bloc](metadata-import-export.md)
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

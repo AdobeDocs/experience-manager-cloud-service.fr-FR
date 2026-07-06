@@ -4,10 +4,10 @@ description: Partagez Assets dans  [!DNL the Content Hub]
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 2%
+source-wordcount: '976'
+ht-degree: 6%
 
 ---
 
@@ -19,7 +19,7 @@ Créez un lien vers les ressources sélectionnées pour les partager facilement 
 
 ## Conditions préalables {#prerequisites}
 
-[Les utilisateurs de Content Hub](deploy-content-hub.md#onboard-content-hub-users) peuvent créer un lien vers les ressources sélectionnées et le partager avec d’autres utilisateurs.
+[Les utilisateurs de &#x200B;](deploy-content-hub.md#onboard-content-hub-users) peuvent créer un lien vers les ressources sélectionnées et le partager avec d’autres utilisateurs.
 
 ## Partager des ressources {#share-assets}
 
@@ -66,7 +66,7 @@ Accédez à la page des ressources partagées via le lien et procédez comme sui
 * Sur la page des ressources partagées ([accessible par le biais d’un lien privé](#share-assets)), cliquez sur la miniature d’une ressource et sélectionnez ![télécharger](/help/assets/assets/download-icon.svg) pour sélectionner et afficher les rendus dynamiques disponibles de la ressource dans le panneau **[!UICONTROL Télécharger]** avant de les sélectionner et de les télécharger.
   ![](/help/assets/assets/download-renditions-shared-assets-page.png)
 
-## Questions fréquemment posées {#faqs-share-assets-content-hub}
+## Questions fréquentes {#faqs-share-assets-content-hub}
 
 ### Que signifie le partage de ressources dans AEM Assets Content Hub ?
 
@@ -93,5 +93,20 @@ Oui, vous pouvez définir des dates d’expiration pour les liens partagés priv
 Les destinataires qui reçoivent un lien de ressource partagé peuvent l’ouvrir dans leur navigateur pour prévisualiser, sélectionner et télécharger les ressources fournies. Si les rendus de ressources sont activés dans AEM Assets Content Hub, les destinataires peuvent choisir les rendus (tels que Original ou Statique) qu’ils souhaitent télécharger. Les ressources et les rendus sont téléchargés sous la forme d’un fichier zip et les métadonnées peuvent être affichées en cliquant sur la miniature de la ressource. Le lien reste fonctionnel jusqu’à sa date d’expiration définie.
 
 
+**Voir également**
 
-
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
