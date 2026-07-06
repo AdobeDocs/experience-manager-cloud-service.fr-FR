@@ -6,10 +6,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Asse
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '972'
-ht-degree: 79%
+source-wordcount: '1046'
+ht-degree: 77%
 
 ---
 
@@ -23,7 +23,7 @@ Pour en savoir plus sur les expériences personnalisées disponibles pour Assets
 
 ## Comment accéder à la vue Assets ? {#access-assets-view}
 
-Vous pouvez accéder à la vue Assets de la manière suivante :
+La vue Assets est accessible des manières suivantes :
 ![Vue d’ensemble de Mon espace de travail](assets/assets-view.png)
 
 <!--
@@ -88,7 +88,7 @@ Regardez cette vidéo pour comprendre la puissance de l’intégration de la vue
 
 [![Voir le Guide](assets/see-the-guide-sm.png)](edit-images-assets-view.md)
 
-Les prochaines versions d’Assets as a Cloud Service comprennent également l’[Intégration d’Adobe Firefly via Adobe Express](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&sdid=JM4FW6VL&mv=search&mv2=paidsearch&ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838).
+Les prochaines versions d’Assets as a Cloud Service comprennent également l’[Intégration d’Adobe Firefly via Adobe Express](:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838).
 
 ### Chargements de dossiers pour la configuration de la structure hiérarchique de votre organisation {#folder-uploads}
 
@@ -133,3 +133,22 @@ Utilisez ces liens pour commencer rapidement à utiliser la vue Assets :
 
 * [Mon espace de travail](/help/assets/my-workspace-assets-view.md)
 * [Prise en main de la vue Ressources](/help/assets/get-started-assets-view.md)
+
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

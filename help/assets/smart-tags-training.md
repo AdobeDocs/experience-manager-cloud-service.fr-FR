@@ -5,16 +5,16 @@ feature: Smart Tags,Tagging
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 05304c5e-f620-4cca-8cfe-76a6fa2e3f4a
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1516'
-ht-degree: 66%
+source-wordcount: '1572'
+ht-degree: 67%
 
 ---
 
 # Entraînement des balises intelligentes
 
-L’entraînement des balises intelligentes vous permet d’entraîner vos balises afin que vous puissiez spécifier les informations si les balises appropriées ne sont pas présentes. Il utilise un cadre d’intelligence artificielle de [Adobe AI](https://business.adobe.com/ai/adobe-genai.html) pour entraîner son algorithme de reconnaissance d’images par rapport à votre structure de balises et de votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes. [!DNL Experience Manager Assets] applique automatiquement les balises intelligentes aux ressources chargées, par défaut.
+L’entraînement des balises intelligentes vous permet d’entraîner vos balises afin que vous puissiez spécifier les informations si les balises appropriées ne sont pas présentes. Il utilise un cadre d’intelligence artificielle de [](https://business.adobe.com/ai/adobe-genai.html) pour entraîner son algorithme de reconnaissance d’images par rapport à votre structure de balises et de votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes. [!DNL Experience Manager Assets] applique automatiquement les balises intelligentes aux ressources chargées, par défaut.
 
 ## Détermination des exigences de l’entraînement sur les balises intelligentes {#smart-tag-training-requirement}
 
@@ -118,8 +118,7 @@ Vérifiez que les images figurant dans la série de formation sont conformes aux
 
 >[!NOTE]
 >
->Vous pouvez utiliser les mêmes images pour entraîner différents modèles de balises. Cependant, ces modèles n’associent pas une image à plus d’une balise dans un modèle donné. Il est donc possible de baliser la même image avec des balises différentes appartenant à différents modèles.
->Vous ne pouvez pas annuler l’entraînement. Les instructions ci-dessus doivent vous aider à choisir les bonnes images pour l’entraînement.
+>Vous pouvez utiliser les mêmes images pour entraîner différents modèles de balises. Cependant, ces modèles n’associent pas une image à plus d’une balise dans un modèle donné. Il est donc possible de baliser la même image avec des balises différentes appartenant à différents modèles.Vous ne pouvez pas annuler l’entraînement. Les instructions ci-dessus doivent vous aider à choisir les bonnes images pour l’entraînement.
 
 ## Entraînement du modèle pour vos balises personnalisées {#train-model}
 
@@ -161,8 +160,7 @@ Pour vérifier que le service de balises intelligentes est entraîné sur vos ba
 
 >[!NOTE]
 >
->Que se passe-t-il si je souhaite transférer l’entraînement aux balises intelligentes d’une instance à une autre via une exportation ?
->Vous n’avez pas besoin d’exporter l’entraînement aux balises intelligentes si l’environnement appartient à la même organisation IMS. Il est automatiquement partagé. Si l’environnement se trouve dans plusieurs organisations IMS, il n’est alors pas possible de partager ou d’exporter l’entraînement sur les balises intelligentes.
+>Que se passe-t-il si je souhaite transférer l’entraînement aux balises intelligentes d’une instance à une autre via une exportation ?Vous n’avez pas besoin d’exporter l’entraînement aux balises intelligentes si l’environnement appartient à la même organisation IMS. Il est automatiquement partagé. Si l’environnement se trouve dans plusieurs organisations IMS, il n’est alors pas possible de partager ou d’exporter l’entraînement sur les balises intelligentes.
 
 ## Restrictions et bonnes pratiques relatives aux balises intelligentes {#limitations-smart-tags-training}
 
@@ -172,5 +170,23 @@ Pour vérifier que le service de balises intelligentes est entraîné sur vos ba
 
 >[!NOTE]
 >
->La capacité des balises intelligentes à s’entraîner à partir de vos balises et à les appliquer à d’autres images dépend de la qualité des images que vous utilisez pour l’entraînement.
->Pour obtenir des résultats optimaux, Adobe recommande d’utiliser des images visuellement similaires afin d’entraîner le service pour chaque balise.
+>La capacité des balises intelligentes à s’entraîner à partir de vos balises et à les appliquer à d’autres images dépend de la qualité des images que vous utilisez pour l’entraînement.Pour obtenir des résultats optimaux, Adobe recommande d’utiliser des images visuellement similaires afin d’entraîner le service pour chaque balise.
+
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

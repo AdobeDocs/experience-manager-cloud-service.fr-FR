@@ -4,10 +4,10 @@ description: Dynamic Media avec des fonctionnalités OpenAPI vous permet de pré
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 6f071ca9-0f84-45fc-a6b3-047cca9d5e65
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '737'
-ht-degree: 0%
+source-wordcount: '882'
+ht-degree: 5%
 
 ---
 
@@ -52,13 +52,13 @@ Exécutez les étapes suivantes pour définir le statut de la ressource à prév
    >
    > Le sélecteur de ressources affiche les ressources dont la mise à jour de statut la plus récente est définie sur Approuvé ou Aperçu.
 
-1. Publiez votre page dans le niveau d’aperçu à l’aide de l’option **[!UICONTROL Gérer la publication]**. Exécutez les étapes de la section [Publication de contenu en vue de la prévisualisation](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/previewing-content) pour publier votre page au niveau d’aperçu. Après publication, générez une URL d’aperçu de votre page. La page Aperçu affiche les ressources (avec les mises à jour de statut les plus récentes) dans votre page Sites.
+1. Publiez votre page dans le niveau d’aperçu à l’aide de l’option **[!UICONTROL Gérer la publication]**. Exécutez les étapes de la section [Publication de contenu en vue de la prévisualisation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/previewing-content) pour publier votre page au niveau d’aperçu. Après publication, générez une URL d’aperçu de votre page. La page Aperçu affiche les ressources (avec les mises à jour de statut les plus récentes) dans votre page Sites.
 
-Partagez cette URL d’aperçu avec les parties prenantes pour examen et commentaires. Assurez-vous que vos parties prenantes ont accès à la page d’aperçu. Voir [Accès au service d’aperçu](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments#access-preview-service) pour plus d’informations sur la fourniture d’accès aux pages d’aperçu.
+Partagez cette URL d’aperçu avec les parties prenantes pour examen et commentaires. Assurez-vous que vos parties prenantes ont accès à la page d’aperçu. Voir [Accès au service d’aperçu](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments#access-preview-service) pour plus d’informations sur la fourniture d’accès aux pages d’aperçu.
 
 >[!NOTE]
 >
->Le composant principal [Image V3](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/wcm-components/image#version-and-compatibility) prend en charge la version d’aperçu des ressources par défaut. Lorsque vous sélectionnez une version d’aperçu d’une ressource (ressource avec statut d’aperçu) à l’aide du panneau [Sélecteur de ressources](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/asset-selector-upload), le composant Image V3 la rend automatiquement dans le niveau Aperçu (une version d’aperçu sur votre page de création Sites).
+>Le composant principal [Image V3](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/image#version-and-compatibility) prend en charge la version d’aperçu des ressources par défaut. Lorsque vous sélectionnez une version d’aperçu d’une ressource (ressource avec statut d’aperçu) à l’aide du panneau [Sélecteur de ressources](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/asset-selector-upload), le composant Image V3 la rend automatiquement dans le niveau Aperçu (une version d’aperçu sur votre page de création Sites).
 
 Une fois la version de la ressource finalisée, [publiez vos pages au niveau de publication](#publish-your-pages-to-publish-tier) pour la consommation publique.
 
@@ -67,8 +67,7 @@ Une fois la version de la ressource finalisée, [publiez vos pages au niveau de 
 Après avoir finalisé la version de la ressource pour une utilisation publique, définissez le statut de la ressource sur **[!UICONTROL Approuvé]**. Publiez ensuite vos pages dans le niveau de publication. Pour publier vos pages, procédez comme suit :
 
 1. Suivez l’étape 1 de la section [Aperçu des ressources dans la page d’aperçu de vos sites](#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPI-capabilities) ci-dessus pour modifier le statut de la ressource en **[!UICONTROL Approuvé]**.
-1. Accédez à la page de création de Sites et publiez-la sur le [!DNL Publish tier]. Publiez les pages en suivant les étapes décrites dans la section [Publication à partir de l’éditeur de page](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/publishing#publishing-from-the-page-editor).
-Vous pouvez également suivre les étapes de la section [Publication de pages à partir de la console Sites](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/publishing-pages#publishing-from-the-sites-console) pour publier votre page à partir de la console de votre site.
+1. Accédez à la page de création de Sites et publiez-la sur le [!DNL Publish tier]. Publiez les pages en suivant les étapes décrites dans la section [Publication à partir de l’éditeur de page](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/publishing#publishing-from-the-page-editor).Vous pouvez également suivre les étapes de la section [Publication de pages à partir de la console Sites](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/publishing-pages#publishing-from-the-sites-console) pour publier votre page à partir de la console de votre site.
 
    >[!NOTE]
    >
@@ -76,3 +75,21 @@ Vous pouvez également suivre les étapes de la section [Publication de pages à
 
    ![La page a été publiée](/help/assets/assets/the-page-has-been-publushed.png)
 Un message de confirmation **[!UICONTROL La page a été publiée]** s’affiche après la publication réussie. Accédez à la page publiée au niveau de publication pour confirmer que les mises à jour sont en ligne et que le contenu s’affiche comme prévu.
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

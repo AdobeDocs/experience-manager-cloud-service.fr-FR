@@ -3,10 +3,10 @@ title: Vidéos sur les fonctionnalités Multi Audio et Multi Captions dans Dynam
 description: Découvrez comment ajouter et gérer plusieurs pistes audio et sous-titres pour les ressources vidéo dans Dynamic Media avec les fonctionnalités OpenAPI d’Adobe Experience Manager Assets.
 role: User
 badgeSaas: label="AEM Assets" type="Positive"
-source-git-commit: 30037f08d5caeab878b6cf89b936308d16ae3e8d
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 7%
+source-wordcount: '567'
+ht-degree: 14%
 
 ---
 
@@ -19,7 +19,7 @@ Ces fonctionnalités sont gérées directement à partir de l’onglet **Légend
 
 >[!NOTE]
 >
->La prise en charge multi-audio et multi-légendes dans Dynamic Media avec les fonctionnalités OpenAPI est une fonctionnalité à disponibilité limitée. Vous pouvez l’activer en créant un [&#x200B; ticket d’assistance &#x200B;](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
+>La prise en charge multi-audio et multi-légendes dans Dynamic Media avec les fonctionnalités OpenAPI est une fonctionnalité à disponibilité limitée. Vous pouvez l’activer en créant un [ ticket d’assistance ](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
 
 Tous les formats vidéo Dynamic Media avec fonctionnalités OpenAPI prises en charge prennent en charge plusieurs légendes et pistes audio.
 
@@ -77,7 +77,7 @@ Pour ajouter des légendes :
 1. Sélectionnez un ou plusieurs fichiers `.vtt`.
 1. Cliquez sur l’icône **Dessin** en regard du fichier de légendes.
 
-![&#x200B; Boîte de dialogue Charger la légende &#x200B;](/help/assets/assets/upload-caption.png)
+![ Boîte de dialogue Charger la légende ](/help/assets/assets/upload-caption.png)
 
 Dans la boîte de dialogue **Modifier la légende** :
 
@@ -86,7 +86,7 @@ Dans la boîte de dialogue **Modifier la légende** :
 * **Type** - Sous-titre ou légende.
 * **Libellé** - Nom d’affichage affiché dans le sélecteur de légendes du lecteur.
 
-![&#x200B; Boîte de dialogue Modifier la légende &#x200B;](/help/assets/assets/edit-captions.png)
+![ Boîte de dialogue Modifier la légende ](/help/assets/assets/edit-captions.png)
 
 1. Cliquez sur **Enregistrer**.
 2. Cliquez sur **Enregistrer et fermer**.
@@ -154,3 +154,22 @@ Le fichier sélectionné est téléchargé sur votre système local.
 1. Cliquez sur **OK**.
 
 L’audio original extrait de la vidéo ne peut pas être supprimé.
+
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

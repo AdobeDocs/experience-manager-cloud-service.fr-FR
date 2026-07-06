@@ -4,10 +4,10 @@ description: Découvrez comment restreindre la diffusion des ressources à l’a
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1100'
-ht-degree: 1%
+source-wordcount: '1286'
+ht-degree: 5%
 
 ---
 
@@ -55,16 +55,16 @@ Le champ est disponible dans le formulaire de métadonnées par défaut. Si votr
 1. Ajoutez un champ **[!UICONTROL Date]** de la section **[!UICONTROL Créer le formulaire]** sur le côté droit à la section Métadonnées du formulaire.
 1. Cliquez sur le champ nouvellement ajouté, puis effectuez les mises à jour suivantes dans le panneau **[!UICONTROL Paramètres]** :
    1. Remplacez **[!UICONTROL Libellé du champ]** par **Heure d’activation** ou **Heure de désactivation**.
-   1. Mettez à jour **[!UICONTROL Mappez à la propriété]** sur _./jcr:content/onTime_ pour le champ **On Time** et _.Champ /jcr:content/offTime_ pour **Off Time**.
+   1. Mettez à jour la **[!UICONTROL Associer à la propriété]** sur _./jcr:content/onTime_ pour le champ **Heure d’activation** et _./jcr:content/offTime_ pour le champ **Heure d’inactivation**.
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
 De même, pour la vue Assets, si votre ressource n’est pas basée sur le schéma de métadonnées par défaut et que les champs Heure d’activation et Heure de désactivation ne sont pas disponibles dans les propriétés de la ressource, procédez comme suit :
 
-1. Cliquez sur **[!UICONTROL Forms de métadonnées]** dans la section **[!UICONTROL Paramètres]**.
+1. Cliquez sur Forms de métadonnées ]**dans la section**[!UICONTROL  Paramètres ]**.**[!UICONTROL 
 1. Sélectionnez le formulaire de métadonnées et cliquez sur **[!UICONTROL Modifier]**.
 1. Ajoutez au formulaire un champ **[!UICONTROL Date]** de la section **[!UICONTROL Composants]** dans le volet de gauche.
 1. Cliquez sur le champ nouvellement ajouté et remplacez le **[!UICONTROL Libellé]** par **Heure d’activation** ou **Heure de désactivation**.
-1. Mettez à jour la **[!UICONTROL propriété de métadonnées]** en _./jcr:content/onTime_ pour le champ **On Time** et _.Champ /jcr:content/offTime_ pour **Off Time**.
+1. Mettez à jour la **[!UICONTROL propriété de métadonnées]** sur _./jcr:content/onTime_ pour le champ **Heure d’activation** et _./jcr:content/offTime_ pour le champ **Heure d’inactivation**.
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
 
@@ -83,8 +83,8 @@ Sur les services de création AEM Cloud Service, ainsi que sur le sélecteur de 
 >Pour plus d’informations sur la manière d’activer l’authentification IMS sur les intégrations basées sur le sélecteur de ressources AEM, contactez l’assistance aux entreprises
 
 1. Pour les expériences non basées sur le sélecteur de ressources, AEM as a Cloud Service et Dynamic Media avec les fonctionnalités OpenAPI prennent actuellement en charge les intégrations d’api côté serveur et peuvent générer des jetons porteur IMS.
-   * Suivez les instructions [ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow) pour effectuer des intégrations d’API service à serveur qui peuvent récupérer les jetons du porteur IMS via [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)
-   * Pour une durée limitée, l’accès développeur local (non destiné aux cas d’utilisation de production) et les jetons porteur IMS de courte durée pour l’utilisateur authentifié sur [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) peuvent être générés en suivant les instructions [ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#developer-flow)
+   * Suivez les instructions [ici](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow) pour effectuer des intégrations d’API service à serveur qui peuvent récupérer les jetons du porteur IMS via [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)
+   * Pour une durée limitée, l’accès développeur local (non destiné aux cas d’utilisation de production) et les jetons porteur IMS de courte durée pour l’utilisateur authentifié sur [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) peuvent être générés en suivant les instructions [ici](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#developer-flow)
 
 1. Lors de l’exécution des requêtes d’API [Search](search-assets-api.md) et [Delivery](deliver-assets-apis.md), ajoutez le jeton du porteur IMS obtenu à l’en-tête **[!UICONTROL Authorization]** de la requête HTTP (assurez-vous que sa valeur comporte le préfixe **[!UICONTROL Bearer]**).
 
@@ -94,4 +94,23 @@ Sur les services de création AEM Cloud Service, ainsi que sur le sélecteur de 
 
 ### Diffusion pour les fournisseurs d’identité personnalisés sur le service de publication {#delivery-custom-identity-provider}
 
-AEM Sites, AEM Assets et Dynamic Media avec des licences OpenAPI peuvent être utilisés conjointement, ce qui permet de configurer une diffusion restreinte des ressources sur les sites web hébergés sur le service de publication ou d’aperçu AEM. Le flux de diffusion sécurisé utilise des cookies de navigateur pour établir l’accès de l’utilisateur. Pour mettre en œuvre ce cas d’utilisation, vous devez disposer d’un domaine personnalisé pour le niveau de diffusion qui est un sous-domaine du domaine de publication. Si les services de publication et de prévisualisation d’AEM Sites sont configurés pour utiliser un [fournisseur d’identité personnalisé (IdP)](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), un nouveau cookie appelé `delivery-token` encapsulant l’appartenance à un groupe de l’utilisateur doit être défini sur le domaine de publication après l’authentification de l’utilisateur. Le niveau de diffusion extrait le matériel d’autorisation du cookie sécurisé et valide l’accès. Enregistrez un [ticket d’assistance pour les entreprises](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities) pour plus d’informations.
+AEM Sites, AEM Assets et Dynamic Media avec des licences OpenAPI peuvent être utilisés conjointement, ce qui permet de configurer une diffusion restreinte des ressources sur les sites web hébergés sur le service de publication ou d’aperçu AEM. Le flux de diffusion sécurisé utilise des cookies de navigateur pour établir l’accès de l’utilisateur. Pour mettre en œuvre ce cas d’utilisation, vous devez disposer d’un domaine personnalisé pour le niveau de diffusion qui est un sous-domaine du domaine de publication. Si les services de publication et de prévisualisation d’AEM Sites sont configurés pour utiliser un [fournisseur d’identité personnalisé (IdP)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), un nouveau cookie appelé `delivery-token` encapsulant l’appartenance à un groupe de l’utilisateur doit être défini sur le domaine de publication après l’authentification de l’utilisateur. Le niveau de diffusion extrait le matériel d’autorisation du cookie sécurisé et valide l’accès. Enregistrez un [ticket d’assistance pour les entreprises](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities) pour plus d’informations.
+
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

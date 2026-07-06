@@ -6,10 +6,10 @@ feature: Metadata
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 77%
+source-wordcount: '1080'
+ht-degree: 72%
 
 ---
 
@@ -75,7 +75,7 @@ L’onglet **[!UICONTROL Créer le formulaire]** répertorie les éléments de f
   </tr>
   <tr>
    <td><p>Texte à plusieurs valeurs</p> </td>
-   <td><p> Permet d’ajouter une propriété de texte à plusieurs valeurs. Il est stocké sous forme de tableau de chaînes.</p> </td>
+   <td><p> Permet d’ajouter une propriété de texte à plusieurs valeurs. Il est stocké sous la forme d’une table de chaînes.</p> </td>
   </tr>
   <tr>
    <td><p>Nombre</p> </td>
@@ -95,7 +95,7 @@ L’onglet **[!UICONTROL Créer le formulaire]** répertorie les éléments de f
   </tr>
   <tr>
    <td><p>Champ masqué</p> </td>
-   <td><p> Permet d’ajouter un champ masqué. Il est envoyé en tant que paramètre POST lorsque la ressource est enregistrée.</p> </td>
+   <td><p> Ajoutez un champ masqué. Elle est envoyée en tant que paramètre POST lorsque la ressource est enregistrée.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -106,7 +106,7 @@ Pour modifier les propriétés d’éléments de formulaire, sélectionnez le co
 
 **[!UICONTROL Libellé du champ]** : nom de la propriété de métadonnées qui s’affiche sur la page des propriétés du dossier.
 
-**[!UICONTROL Associer à la propriété]** : cette propriété spécifie le chemin d’accès relatif du nœud de dossier dans le référentiel CRX où il est enregistré. Elle commence par « **./** », qui indique que le chemin d’accès se trouve sous le nœud du dossier.
+**[!UICONTROL Associer à la propriété]** : cette propriété spécifie le chemin d’accès relatif du nœud de dossier dans le référentiel CRX où il est enregistré. Elle commence par « **./** », qui indique que le chemin d’accès se trouve sous le nœud du dossier.
 
 Voici des exemples de valeurs valides pour une propriété :
 
@@ -136,7 +136,7 @@ Vous pouvez supprimer des formulaires de schéma de métadonnées de dossier sur
 
 Vous pouvez affecter un schéma de métadonnées de dossier à un dossier à partir de la page Formulaires de schéma de métadonnées de dossier ou lors de la création d’un dossier.
 
-Si vous configurez un schéma de métadonnées pour un dossier, le chemin d’accès au formulaire est stocké dans la propriété `folderMetadataSchema` du nœud de dossier sous.*/jcr:content*.
+Si vous configurez un schéma de métadonnées pour un dossier, le chemin d’accès au formulaire est stocké dans la propriété `folderMetadataSchema` du nœud de dossier sous .*/jcr:content*.
 
 ### Affectation d’un schéma à partir de la page Schéma de métadonnées de dossier {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
@@ -176,16 +176,19 @@ Saisissez les valeurs de métadonnées dans les différents champs, puis sélect
 
 **Voir également**
 
-* [Traduire les ressources](translate-assets.md)
-* [API HTTP Assets](mac-api-assets.md)
-* [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Rechercher des ressources](search-assets.md)
-* [Ressources connectées](use-assets-across-connected-assets-instances.md)
-* [Rapports de ressources](asset-reports.md)
-* [Schémas de métadonnées](metadata-schemas.md)
-* [Télécharger des ressources](download-assets-from-aem.md)
-* [Gestion des métadonnées](manage-metadata.md)
-* [Facettes de recherche](search-facets.md)
-* [Gérer les collections](manage-collections.md)
-* [Import des métadonnées en bloc](metadata-import-export.md)
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

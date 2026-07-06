@@ -5,10 +5,10 @@ feature: Asset Management
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 3ae96cd2-e0ac-43a5-a0bf-bebb1a028b10
-source-git-commit: f26e6633bf20d49433a40e94bb03350bcb67c4d5
+source-git-commit: 14730c3aa6830d8954e2a4f84a1fd7750a656d03
 workflow-type: tm+mt
-source-wordcount: '2055'
-ht-degree: 40%
+source-wordcount: '2098'
+ht-degree: 41%
 
 ---
 
@@ -166,3 +166,22 @@ Les utilisateurs expérimentés et les administrateurs d’AEM Assets Ultimate o
 ### Quel type d’utilisateur dans AEM Assets Ultimate peut gérer les autorisations dans l’environnement de création AEM Assets ? {#permission-management-user-type}
 
 Seuls les administrateurs dans AEM Assets Ultimate peuvent gérer les autorisations sur le contenu dans l’environnement de création AEM Assets. Les utilisateurs expérimentés, les utilisateurs collaborateurs et les utilisateurs limités ne disposent pas de fonctionnalités de gestion des autorisations. Cette fonctionnalité exclusive est activée via le profil de produit AEM > Instance de création de production > Administrateurs AEM dans Adobe Admin Console. Les administrateurs sont également chargés de configurer et d’affecter les profils de produit appropriés à tous les autres types d’utilisateurs au sein de l’organisation.
+
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

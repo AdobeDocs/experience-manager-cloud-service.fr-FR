@@ -4,10 +4,10 @@ description: Intégrez le gestionnaire de contenu à diverses applications Adobe
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: d5d3ff8d2bbeea8a10f950f533e4b104907ab387
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '850'
-ht-degree: 1%
+source-wordcount: '897'
+ht-degree: 6%
 
 ---
 
@@ -23,7 +23,7 @@ Utilisez les conditions préalables suivantes si vous intégrez Content Advisor 
 * Pour accéder à Dynamic Media avec des fonctionnalités OpenAPI, vous devez disposer de licences pour :
    * Référentiel Assets (par exemple, Experience Manager Assets as a Cloud Service).
    * AEM Dynamic Media.
-* Seules les ressources [&#x200B; approuvées &#x200B;](/help/assets/approve-assets.md) peuvent être utilisées pour garantir la cohérence de la marque.
+* Seules les ressources [ approuvées ](/help/assets/approve-assets.md) peuvent être utilisées pour garantir la cohérence de la marque.
 
 ## Intégration de Dynamic Media aux fonctionnalités OpenAPI {#adobe-app-integration-polaris}
 
@@ -42,8 +42,7 @@ Cette configuration vous permet d’afficher toutes les ressources approuvées s
 
 ### Création d’une URL de diffusion dynamique à partir de ressources approuvées {#create-dynamic-media-url}
 
-Une fois que vous avez configuré le gestionnaire d’accès, un schéma d’objets est utilisé pour créer une URL de diffusion dynamique à partir des ressources sélectionnées.
-Par exemple, le schéma d’un objet d’un tableau d’objets reçu lors de la sélection d’une ressource :
+Une fois que vous avez configuré le gestionnaire d’accès, un schéma d’objets est utilisé pour créer une URL de diffusion dynamique à partir des ressources sélectionnées.Par exemple, le schéma d’un objet d’un tableau d’objets reçu lors de la sélection d’une ressource :
 
 ```
 {
@@ -68,7 +67,7 @@ Toutes les ressources sélectionnées sont transportées par `handleSelection` f
 #### Spécification de l’API de diffusion des ressources approuvées {#approved-assets-delivery-api-specification}
 
 Format de l&#39;URL :
-`https://<delivery-api-host>/adobe/assets/<asset-id>/as/<seo-name>.<format>?<image-modification-query-parameters>`
+
 
 Où,
 
@@ -106,8 +105,7 @@ Vous trouverez ci-dessous les deux façons de parcourir l’objet JSON :
 
 ![URL de diffusion dynamique](assets/dynamic-delivery-url.png)
 
-* **Miniature :** les miniatures peuvent être des images et les ressources sont des PDF, des vidéos, des images, etc. Vous pouvez toutefois utiliser les attributs de hauteur et de largeur de la miniature d’une ressource comme rendu de diffusion dynamique.
-L’ensemble de rendus suivant peut être utilisé pour les ressources de type PDF :
+* **Miniature :** les miniatures peuvent être des images et les ressources sont des PDF, des vidéos, des images, etc. Vous pouvez toutefois utiliser les attributs de hauteur et de largeur de la miniature d’une ressource comme rendu de diffusion dynamique.L’ensemble de rendus suivant peut être utilisé pour les ressources de type PDF :
 Une fois qu’un PDF est sélectionné dans le sidekick, le contexte de sélection propose les informations ci-dessous. Vous trouverez ci-dessous la manière de parcourir l’objet JSON :
 
   <!--![Thumbnail dynamic delivery url](image-1.png)-->
@@ -125,8 +123,7 @@ Une fois qu’un PDF est sélectionné dans le sidekick, le contexte de sélecti
 
 Dans la capture d’écran ci-dessus, l’URL de diffusion du rendu original PDF doit être incorporée dans l’expérience cible si PDF est requis, et non sa miniature. Par exemple, `https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf`.
 
-* **Vidéo :** vous pouvez utiliser l’URL du lecteur vidéo pour les ressources de type vidéo qui utilisent un iFrame incorporé. Vous pouvez utiliser les rendus de tableau suivants dans l’expérience cible :
-  <!--![Video dynamic delivery url](image.png)-->
+* **Vidéo :** vous pouvez utiliser l’URL du lecteur vidéo pour les ressources de type vidéo qui utilisent un iFrame incorporé. Vous pouvez utiliser les rendus de tableau suivants dans l’expérience cible :  <!--![Video dynamic delivery url](image.png)-->
 
   ```
   { 
@@ -157,3 +154,21 @@ Par exemple, dans le gestionnaire d’accès Dynamic Media avec fonctionnalités
 
 Pour obtenir le nom, une activité unique doit être effectuée. Effectuez un appel API de recherche pour la ressource et obtenez le nom de la propriété (le compartiment, essentiellement).
 
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

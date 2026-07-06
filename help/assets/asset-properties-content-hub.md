@@ -4,10 +4,10 @@ description: Découvrez comment prévisualiser des ressources et des propriété
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '997'
-ht-degree: 7%
+source-wordcount: '1041'
+ht-degree: 11%
 
 ---
 
@@ -25,7 +25,7 @@ L’affichage de l’aperçu des ressources et de ses propriétés vous permet d
 
 ## Conditions préalables {#prerequisites}
 
-[Les utilisateurs de Content Hub](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
+[Les utilisateurs de ](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
 
 ## Aperçu de la ressource et de ses propriétés {#properties-ui}
 
@@ -112,7 +112,7 @@ Certaines propriétés des ressources affichées dans [!DNL Content Hub] sont d�
 
 * **Balises intelligentes :** [!DNL The Content Hub] utilise les services de contenu dynamique d’Adobe AI pour entraîner des ressources à l’aide de l’algorithme de reconnaissance sur la structure basée sur les balises. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes. Les balises intelligentes augmentent la vitesse du contenu de vos projets en vous permettant de trouver rapidement les ressources appropriées. Les balises intelligentes sont un exemple d’informations de ressource qui ne sont pas contenues dans l’image. [!DNL Experience Manager Assets] applique automatiquement les balises intelligentes aux ressources, par défaut.
 
-* **Balises de couleurs :** [Balises de couleurs](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=fr) permet de reconnaître une ressource à l’aide de couleurs automatiquement identifiées dans une ressource à l’aide des fonctionnalités de l’IA d’Adobe.
+* **Balises de couleurs :** [Balises de couleurs](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) permet de reconnaître une ressource à l’aide de couleurs automatiquement identifiées dans une ressource à l’aide des fonctionnalités de l’IA d’Adobe.
 
 * Date du chargement
 
@@ -137,7 +137,7 @@ The date range allows you to select dates you want to see the assets. You can cu
 
 -->
 
-## Questions fréquemment posées {#faqs-asset-properties-content-hub}
+## Questions fréquentes {#faqs-asset-properties-content-hub}
 
 ### Pourquoi prévisualiser des ressources et leurs propriétés dans AEM Assets Content Hub ?
 
@@ -160,3 +160,20 @@ Oui, les administrateurs ont la possibilité de configurer les propriétés affi
 Les formats de fichiers pris en charge dans AEM Assets Content Hub sont JPEG et PNG pour les images, Quicktime, MP4 et MPEG pour les vidéos, TXT, DOC/DOCX et XML pour les documents et PDF pour les médias imprimés.
 
 
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

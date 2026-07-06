@@ -6,9 +6,9 @@ feature: Brand Portal, Asset Distribution, Configuration
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1293'
+source-wordcount: '1338'
 ht-degree: 92%
 
 ---
@@ -32,9 +32,7 @@ Si vous apportez des modifications ultérieures à la ressource, au dossier ou �
 
 >[!NOTE]
 >
->Adobe recommande la publication décalée, de préférence en dehors des heures de pointe, de sorte que l’auteur AEM n’utilise pas une quantité excessive de ressources.
->Assets doit être publié par lots. La recommandation pour la taille de lot est de 15 000.
-> Pour [!DNL Experience Manager Assets] en [!DNL Cloud Service], le taux de transfert observé dans les conditions du laboratoire est de 1 000 ressources par heure. Le taux est observé avec une taille moyenne de 10 Mo de ressources.
+>Adobe recommande la publication décalée, de préférence en dehors des heures de pointe, de sorte que l’auteur AEM n’utilise pas une quantité excessive de ressources.Assets doit être publié par lots. La recommandation pour la taille de lot est de 15 000.Pour [!DNL Experience Manager Assets] en [!DNL Cloud Service], le taux de transfert observé dans les conditions du laboratoire est de 1 000 ressources par heure. Le taux est observé avec une taille moyenne de 10 Mo de ressources.
 
 ## Publication de ressources sur Brand Portal {#publish-assets-to-bp}
 
@@ -93,13 +91,7 @@ Pour planifier la publication des ressources sur Brand Portal à une date ou un
 >[!NOTE]
 >
 > * Les utilisateurs existants appartenant au groupe DAM-Users ont un accès en lecture sur le chemin d’accès « /conf/global/settings/cloudconfigs/mediaportal »
-> * Les nouveaux utilisateurs (ou utilisateurs non-administrateurs) ont besoin des droits suivants pour publier sur Brand Portal.
-> Chemins d’accès :
-> `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
->`/libs : jcr:read`
->`/conf : jcr:read`
->`/content : jcr:read, crx:replicate`
->`/content/dam/ : jcr:read,modify, crx:replicate`
+> * Les nouveaux utilisateurs (ou utilisateurs non-administrateurs) ont besoin des droits suivants pour publier sur Brand Portal.Chemins d’accès :
 
 ## Publication de dossiers sur Brand Portal {#publish-folders-to-brand-portal}
 
@@ -161,7 +153,7 @@ Pour planifier la publication des dossiers de ressources à une date ou une heur
 
 1. Passez en mode Liste ![Mode Liste](assets/list-view.svg) pour afficher le statut de publication actuel de la ressource.
 
-<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
 ![Statut du rapport généré](assets/report-status.JPG)
 
@@ -259,7 +251,7 @@ Vous trouverez ci-dessous les étapes de dépublication d’une collection :
 
 Outre ce qui précède, vous pouvez publier des schémas de métadonnées, des paramètres d’image prédéfinis, des facettes de recherche et des balises d’AEM Assets sur Brand Portal.
 
-* [Publication de paramètres prédéfinis, de schémas et de facettes sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html?lang=fr)
+* [Publication de paramètres prédéfinis, de schémas et de facettes sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html?lang=fr)
 * [Publication de balises sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html?lang=fr)
 
 
@@ -280,16 +272,18 @@ Pour plus d’informations, voir [Publication de balises sur Brand Portal](http
 
 **Voir également**
 
-* [Traduire les ressources](translate-assets.md)
-* [API HTTP Assets](mac-api-assets.md)
-* [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Rechercher des ressources](search-assets.md)
-* [Ressources connectées](use-assets-across-connected-assets-instances.md)
-* [Rapports de ressources](asset-reports.md)
-* [Schémas de métadonnées](metadata-schemas.md)
-* [Télécharger des ressources](download-assets-from-aem.md)
-* [Gestion des métadonnées](manage-metadata.md)
-* [Facettes de recherche](search-facets.md)
-* [Gérer les collections](manage-collections.md)
-* [Import des métadonnées en bloc](metadata-import-export.md)
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

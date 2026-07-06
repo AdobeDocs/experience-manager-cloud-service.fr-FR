@@ -5,10 +5,10 @@ role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1426'
-ht-degree: 2%
+source-wordcount: '1469'
+ht-degree: 5%
 
 ---
 
@@ -31,8 +31,7 @@ En fonction des différents aspects des données, les métadonnées sont classé
 
 ### Métadonnées techniques
 
-Les métadonnées techniques comprennent les aspects techniques d’une ressource. Ce type de métadonnées est essentiel pour que les utilisateurs comprennent les caractéristiques inhérentes aux ressources numériques, ce qui facilite leur traitement et leur utilisation efficaces.
-Il comprend des détails tels que :
+Les métadonnées techniques comprennent les aspects techniques d’une ressource. Ce type de métadonnées est essentiel pour que les utilisateurs comprennent les caractéristiques inhérentes aux ressources numériques, ce qui facilite leur traitement et leur utilisation efficaces.Il comprend des détails tels que :
 
 * Taille du fichier
 * Format
@@ -89,8 +88,7 @@ Pour garantir des résultats cohérents dans l’ensemble du référentiel, plan
 
 ### Création d’un plan de gouvernance des métadonnées
 
-La gouvernance des données garantit que les efforts de gestion des métadonnées de l’entreprise sont alignés sur les objectifs commerciaux globaux.
-La stratégie de gouvernance peut comprendre les éléments suivants :
+La gouvernance des données garantit que les efforts de gestion des métadonnées de l’entreprise sont alignés sur les objectifs commerciaux globaux.La stratégie de gouvernance peut comprendre les éléments suivants :
 
 * Établissement de politiques et de procédures pour la gestion des données et des métadonnées.
 * Définir des normes pour la qualité et l&#39;intégrité des données.
@@ -100,7 +98,7 @@ Déterminez d’où proviennent les informations et examinez les détails de la 
 
 >[!NOTE]
 >
->Découvrez comment [gérer les métadonnées de vos ressources numériques](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=fr).
+>Découvrez comment [gérer les métadonnées de vos ressources numériques](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html).
 
 ### Cohérence avec la stratégie de métadonnées
 
@@ -114,12 +112,11 @@ Voici quelques-unes des bonnes pratiques à suivre :
 
   Par exemple, au lieu d’utiliser des noms en double tels que *campaign_image_001* et *campaign_image_002*, implémentez une convention de nommage systématique telle que *event_promotion* et *product_launch*, pour garantir une identification claire et ordonnée.
 
-* **Utiliser efficacement des vocabulaires contrôlés :** implémentez des vocabulaires contrôlés en utilisant des termes normalisés pour les balises. Découvrez comment implémenter le [framework de balisage &#x200B;](/help/implementing/developing/introduction/tagging-framework.md) efficacement.
+* **Utiliser efficacement des vocabulaires contrôlés :** implémentez des vocabulaires contrôlés en utilisant des termes normalisés pour les balises. Découvrez comment implémenter le [framework de balisage ](/help/implementing/developing/introduction/tagging-framework.md) efficacement.
 
   Par exemple, utilisez de manière cohérente des termes tels que *product_launch* ou *event_promotion* lors du balisage des images avec des thèmes afin de maintenir une séquence systématique.
 
-* **Préserver la précision et l’exhaustivité :** pour garantir la cohérence, la précision, l’exhaustivité et l’alignement des métadonnées sur différentes sources sont essentiels.
-Par exemple, lors de l’ajout de métadonnées à un document PDF, vérifiez que les détails tels que les noms de l’auteur et les mots-clés sont exacts et complets.
+* **Préserver la précision et l’exhaustivité :** pour garantir la cohérence, la précision, l’exhaustivité et l’alignement des métadonnées sur différentes sources sont essentiels.Par exemple, lors de l’ajout de métadonnées à un document PDF, vérifiez que les détails tels que les noms de l’auteur et les mots-clés sont exacts et complets.
 
 #### Vidéo : ajout de métadonnées en bloc aux ressources
 
@@ -133,17 +130,15 @@ Vous pouvez tenir compte des bonnes pratiques suivantes pour optimiser la recher
 
 * **Optimisation des mots-clés :** améliorez la recherche de métadonnées en optimisant les mots-clés associés aux ressources. Vous pouvez améliorer la pertinence des mots-clés pour des ressources spécifiques dans [!UICONTROL Assets Manager] en procédant comme suit :
 
-   1. Accédez à **&#x200B;**&#x200B;> **[!UICONTROL Fichier]** > **[!UICONTROL [Dossier de ressources]]**.
+   1. Accédez à **** > **[!UICONTROL Fichier]** > **[!UICONTROL [Dossier de ressources]]**.
    1. Sélectionnez la ressource pour laquelle vous souhaitez mettre à jour les métadonnées, puis cliquez sur **[!UICONTROL Propriétés]**.
    1. Accédez à l’onglet **[!UICONTROL Avancé]**, puis cliquez sur **[!UICONTROL Ajouter]** sous l’onglet **[!UICONTROL Élever pour rechercher des mots-clés]**. <br>Vous devez utiliser le schéma de métadonnées par défaut pour élever les mots-clés de recherche.
-   1. Saisissez le mot-clé pour lequel vous souhaitez améliorer la recherche, puis cliquez sur **[!UICONTROL Ajouter]**.<br>
-Vous pouvez ajouter plusieurs mots-clés et les classer en fonction de votre priorité.
-   1. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
-Recherchez la ressource à l’aide des mots-clés que vous avez ajoutés. La ressource s’affiche parmi les principaux résultats de recherche.
+   1. Saisissez le mot-clé pour lequel vous souhaitez améliorer la recherche, puis cliquez sur **[!UICONTROL Ajouter]**.Vous pouvez ajouter plusieurs mots-clés et les classer en fonction de votre priorité.
+   1. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.Recherchez la ressource à l’aide des mots-clés que vous avez ajoutés. La ressource s’affiche parmi les principaux résultats de recherche.
 
   Découvrez comment [booster la recherche dans Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=fr).
 
-* **Champs de métadonnées personnalisés :** personnalisez vos champs de métadonnées pour capturer des informations supplémentaires sur les ressources. Par exemple, ajoutez des champs spécifiques pour les détails du projet, des informations de copyright ou toute autre donnée pertinente qui améliore les fonctionnalités de recherche. Découvrez [&#x200B; modifier ou ajouter des métadonnées personnalisées &#x200B;](meta-edit.md) dans Experience Manager Assets.
+* **Champs de métadonnées personnalisés :** personnalisez vos champs de métadonnées pour capturer des informations supplémentaires sur les ressources. Par exemple, ajoutez des champs spécifiques pour les détails du projet, des informations de copyright ou toute autre donnée pertinente qui améliore les fonctionnalités de recherche. Découvrez [ modifier ou ajouter des métadonnées personnalisées ](meta-edit.md) dans Experience Manager Assets.
 
 
 * **Validation des métadonnées :** implémentez des contrôles de validation pour les entrées de métadonnées afin d’assurer la cohérence et la précision. L’utilisation de vocabulaires contrôlés rend le processus de validation plus fluide et réduit les risques d’entrées peu claires ou incohérentes. Cela peut impliquer de définir des instructions pour certaines propriétés de métadonnées afin d’éviter toute information ambiguë ou incohérente.
@@ -156,8 +151,7 @@ Recherchez la ressource à l’aide des mots-clés que vous avez ajoutés. La re
 
 ### Simplifier et comprendre les métadonnées
 
-Simplifiez les métadonnées pour une meilleure gouvernance et une meilleure adoption par les utilisateurs. Soyez simple et facile à comprendre, en encourageant les utilisateurs à ajouter des informations essentielles.
-Essayez les bonnes pratiques suivantes pour simplifier les métadonnées :
+Simplifiez les métadonnées pour une meilleure gouvernance et une meilleure adoption par les utilisateurs. Soyez simple et facile à comprendre, en encourageant les utilisateurs à ajouter des informations essentielles.Essayez les bonnes pratiques suivantes pour simplifier les métadonnées :
 
 * **Optimiser les options de propriété** Concentrez-vous sur la mise en évidence des propriétés essentielles sans surcharger les utilisateurs avec trop de champs de métadonnées à remplir. Par exemple, lors de l’ajout de métadonnées pour une image, incluez uniquement les champs clés tels que le titre, la description et les balises pour une catégorisation efficace.
 
@@ -171,4 +165,23 @@ Examinez le supply chain de contenu pour trouver les sources de métadonnées et
 
 Communiquez rapidement les objectifs, les progrès, les jalons et les défis afin de recevoir les commentaires et la coopération de toutes les parties prenantes. Encouragez la collaboration à l’échelle de l’organisation pour créer des processus efficaces et des métadonnées précieuses.
 
-En savoir plus sur [les métadonnées et les concepts associés](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html?lang=fr) pour gérer efficacement les métadonnées Experience Manager.
+En savoir plus sur [les métadonnées et les concepts associés](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html) pour gérer efficacement les métadonnées Experience Manager.
+
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

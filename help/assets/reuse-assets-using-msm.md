@@ -7,9 +7,9 @@ role: User, Admin, Developer
 feature: Asset Management
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '3413'
+source-wordcount: '3442'
 ht-degree: 99%
 
 ---
@@ -121,7 +121,7 @@ Les deux méthodes suivantes fonctionnent pour les ressources et les dossiers :
 >
 >Conseil : Pour vérifier l’état de quelques copies en direct distinctes, utilisez la première méthode de la page **[!UICONTROL Propriétés]**. Pour vérifier les états de plusieurs copies dynamiques, utilisez la deuxième méthode pour vérifier l’**[!UICONTROL État de la relation]** de la page.
 
-### Informations et état d’une Live Copy   {#status-lc-asset}
+### Informations et état d’une Live Copy {#status-lc-asset}
 
 Pour vérifier les informations et les statuts d’une ressource ou d’un dossier de Live Copy, procédez comme suit.
 
@@ -167,7 +167,7 @@ Pour une ressource ou un dossier de Live Copy, vous pouvez afficher les informat
 * Suspendre la relation ou modifier la configuration du déploiement d’une Live Copy spécifique.
 * Accéder à la console de présentation de la Live Copy.
 
-Sélectionnez la ressource ou le dossier source, ouvrez le rail gauche, puis cliquez sur **[!UICONTROL Références]**. Vous pouvez également sélectionner une ressource ou un dossier et utiliser le raccourci clavier `Alt + 4`. 
+Sélectionnez la ressource ou le dossier source, ouvrez le rail gauche, puis cliquez sur **[!UICONTROL Références]**. Vous pouvez également sélectionner une ressource ou un dossier et utiliser le raccourci clavier `Alt + 4`.
 
 ![Actions et informations disponibles dans le rail Références pour la source sélectionnée](assets/referencerail_source.png)
 
@@ -179,7 +179,7 @@ Pour une Live Copy spécifique, cliquez sur **[!UICONTROL Modifier la Live Copy]
 
 *Image : suspension de la relation ou modification de la configuration du déploiement d’une Live Copy spécifique.*
 
-### Actions rapides pour une Live Copy depuis le rail Références   {#ref-rail-lc}
+### Actions rapides pour une Live Copy depuis le rail Références {#ref-rail-lc}
 
 Pour une ressource ou un dossier de Live Copy, vous pouvez afficher les informations et effectuer les actions suivantes directement depuis le rail Références :
 
@@ -187,13 +187,13 @@ Pour une ressource ou un dossier de Live Copy, vous pouvez afficher les informat
 * Ouvrir ou afficher une Live Copy spécifique dans l’interface utilisateur d’[!DNL Experience Manager].
 * Déployer les mises à jour.
 
-Sélectionnez une ressource ou un dossier de Live Copy, ouvrez le rail gauche, puis cliquez sur **[!UICONTROL Références]**. Vous pouvez également sélectionner une ressource ou un dossier et utiliser le raccourci clavier `Alt + 4`. 
+Sélectionnez une ressource ou un dossier de Live Copy, ouvrez le rail gauche, puis cliquez sur **[!UICONTROL Références]**. Vous pouvez également sélectionner une ressource ou un dossier et utiliser le raccourci clavier `Alt + 4`.
 
 ![Actions disponibles dans le rail Références pour la Live Copy sélectionnée](assets/referencerail_livecopy.png)
 
 *Image : actions disponibles dans le rail des Références pour la Live Copy sélectionnée.*
 
-## Propagation des modifications de la source vers les Live Copies   {#rollout-sync}
+## Propagation des modifications de la source vers les Live Copies {#rollout-sync}
 
 Une fois une source modifiée, les modifications peuvent être propagées aux Live Copies à l’aide d’une action de synchronisation ou de déploiement. Pour comprendre la différence entre les deux actions, voir le [glossaire](#glossary).
 
@@ -230,7 +230,7 @@ Une action de synchronisation extrait les modifications d’une source uniquemen
 | Barre d’outils dans la page [!UICONTROL Propriétés] | Lancez une synchronisation lorsque les propriétés de la Live Copy sont déjà ouvertes. | Voir [Synchronisation d’une Live Copy](#sync-lc) |
 | [!UICONTROL Console Aperçu de la Live Copy] | Synchronisez rapidement plusieurs ressources (pas nécessairement toutes) lorsque le dossier source est sélectionné ou que la console [!UICONTROL Aperçu de la Live Copy] est déjà ouverte. L’action de synchronisation est lancée pour une ressource à la fois. Il s’agit toutefois d’une méthode plus rapide pour synchroniser plusieurs ressources simultanément. | Voir [Actions sur plusieurs ressources dans un dossier de Live Copy](#bulk-actions). |
 
-### Synchronisation d’une Live Copy   {#sync-lc}
+### Synchronisation d’une Live Copy {#sync-lc}
 
 Pour démarrer une action de synchronisation, ouvrez la page **[!UICONTROL Propriétés]** d’une Live Copy, cliquez sur **[!UICONTROL Live Copy]**, puis sur l’action souhaitée dans la barre d’outils.
 
@@ -296,7 +296,7 @@ Vous pouvez annuler toutes les modifications locales et rétablir l’état de l
 
 *Image : l’action de réinitialisation remplace les modifications locales et apporte une partie de la Live Copy avec sa source.*
 
-## Suppression d’une relation dynamique   {#detach}
+## Suppression d’une relation dynamique {#detach}
 
 Vous pouvez supprimer complètement la relation entre une source et une Live Copy à l’aide de l’action Désolidariser. La Live Copy devient une ressource ou un dossier autonome après sa désolidarisation. Elle s’affiche en tant que nouvelle ressource dans l’interface [!DNL Experience Manager], immédiatement après la désolidarisation. Pour désolidariser une Live Copy de sa source, procédez comme suit.
 
@@ -375,17 +375,18 @@ Voici les restrictions de MSM pour [!DNL Assets].
 
 **Voir également**
 
-* [Traduire les ressources](translate-assets.md)
-* [API HTTP Assets](mac-api-assets.md)
-* [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Rechercher des ressources](search-assets.md)
-* [Ressources connectées](use-assets-across-connected-assets-instances.md)
-* [Rapports de ressources](asset-reports.md)
-* [Schémas de métadonnées](metadata-schemas.md)
-* [Télécharger des ressources](download-assets-from-aem.md)
-* [Gestion des métadonnées](manage-metadata.md)
-* [Facettes de recherche](search-facets.md)
-* [Gérer les collections](manage-collections.md)
-* [Import des métadonnées en bloc](metadata-import-export.md)
-* [Utilisation de fragments de contenu](/help/assets/content-fragments/content-fragments.md)
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

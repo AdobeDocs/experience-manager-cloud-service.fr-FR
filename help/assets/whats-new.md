@@ -4,10 +4,10 @@ description: Apprenez-en plus sur certaines des fonctionnalités de Content Hub
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: 46ca8082f85cdb957681aa9596b9312b35e4f6ec
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1603'
-ht-degree: 55%
+source-wordcount: '1646'
+ht-degree: 56%
 
 ---
 
@@ -37,14 +37,14 @@ Par exemple, une recherche de `Woman drinking coffee` peut également renvoyer d
 
 Les administrateurs peuvent activer ou désactiver Recherche optimisée par l&#39;IA dans Content Hub à l’aide du menu Configurations en sélectionnant Recherche optimisée par l&#39;IA ou la recherche traditionnelle par mot-clé.
 
-[!BADGE Examiner en détail cette fonctionnalité]{type=Informative url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#ai-search-aem-assets-content-hub"}
+[!BADGE Examiner en détail cette fonctionnalité]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#ai-search-aem-assets-content-hub"}
 
 
 **Options de tri personnalisé**
 
 Content Hub permet désormais aux administrateurs d’activer les champs de métadonnées personnalisés en tant qu’options de tri sur la page d’accueil de Content Hub. Outre les options de tri par défaut, Taille, Modifié, Nom et Pertinence, les administrateurs peuvent configurer des champs de métadonnées spécifiques à l’entreprise tels que le canal, la région, le SKU ou la campagne pour aider les utilisateurs à organiser plus efficacement les résultats de la recherche.
 
-[!BADGE Examiner en détail cette fonctionnalité]{type=Informative url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#configure-sorting-aem-assets-content-hub"}
+[!BADGE Examiner en détail cette fonctionnalité]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#configure-sorting-aem-assets-content-hub"}
 
 **Prise en charge des événements de recherche et de téléchargement de ressources pour les API de diffusion**
 
@@ -69,7 +69,7 @@ Dans Content Hub, l’agent de gouvernance AEM s’assure que seules les bonnes 
 
 ![Présentation de la gestion des autorisations](/help/ai-in-aem/agents/governance/assets/permission-management.png)
 
-[!BADGE Examiner en détail cette fonctionnalité]{type=Informative url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
+[!BADGE Examiner en détail cette fonctionnalité]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
 
 
 ## Fonctionnalités de la version d’octobre 2025 {#october-2025-release-features}
@@ -90,7 +90,7 @@ Vous pouvez désormais marquer les collections en tant que Favoris dans Content 
 
 Les administrateurs et administratrices de Content Hub peuvent désormais épingler des collections dans Content Hub pour un accès rapide. Les collections épinglées sont affichées dans une section **[!UICONTROL épinglées]** dédiée sur la page d’accueil Collections, ce qui facilite la conservation des collections importantes à portée de main.
 
-[!BADGE Examiner en détail cette fonctionnalité]{type=Informative url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
+[!BADGE Examiner en détail cette fonctionnalité]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
 ## Fonctionnalités de la version d’août 2025 {#august-release-features}
 
@@ -189,3 +189,22 @@ Accédez à tous vos rendus prédéfinis et recadrages intelligents Dynamic Med
 ![Rendus Dynamic Media](/help/assets/assets/dm-renditions-content-hub.png)
 
 [!BADGE Examiner en détail cette fonctionnalité]{type=Informative url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
+
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

@@ -4,10 +4,10 @@ description: Utilisez les propriétés pour personnaliser le rendu du gestionnai
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
-source-git-commit: c92611e4b815e49887e175943b81177e60623067
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '2506'
-ht-degree: 25%
+source-wordcount: '2549'
+ht-degree: 26%
 
 ---
 
@@ -102,9 +102,9 @@ Vous pouvez utiliser les propriétés de la fonction de conseil pour personnalis
 | *dialogSize* | S, M, L, fullscreen, fullscreenTakeover | Chaîne | Facultatif | Vous pouvez contrôler la disposition en spécifiant sa taille à l’aide des options données. |
 | *colorScheme* | Chaîne (claire, foncée) | Non | | Cette propriété est utilisée pour définir le thème d&#39;une application de la fonction de conseil en contenu. Vous pouvez choisir entre le thème clair ou sombre. |
 | *filterRepoList* | Fonction | Non | | Une fonction qui reçoit la liste des référentiels et renvoie une liste filtrée. |
-| *expiryOptions* | Fonction | | | Vous pouvez utiliser entre les deux propriétés suivantes : **getExpiryStatus** qui fournit le statut d’une ressource arrivée à expiration. La fonction renvoie des `EXPIRED`, des `EXPIRING_SOON` ou des `NOT_EXPIRED` en fonction de la date d’expiration d’une ressource que vous fournissez. Voir [&#x200B; Personnalisation des ressources expirées &#x200B;](/help/assets/content-advisor-customization.md#customize-expired-assets). De plus, vous pouvez utiliser **allowSelectionAndDrag** dans lequel la valeur de la fonction peut être `true` ou `false`. Lorsque la valeur est définie sur `false`, la ressource expirée ne peut pas être sélectionnée ni glissée-déplacée sur la zone de travail. |
+| *expiryOptions* | Fonction | | | Vous pouvez utiliser entre les deux propriétés suivantes : **getExpiryStatus** qui fournit le statut d’une ressource arrivée à expiration. La fonction renvoie des `EXPIRED`, des `EXPIRING_SOON` ou des `NOT_EXPIRED` en fonction de la date d’expiration d’une ressource que vous fournissez. Voir [ Personnalisation des ressources expirées ](/help/assets/content-advisor-customization.md#customize-expired-assets). De plus, vous pouvez utiliser **allowSelectionAndDrag** dans lequel la valeur de la fonction peut être `true` ou `false`. Lorsque la valeur est définie sur `false`, la ressource expirée ne peut pas être sélectionnée ni glissée-déplacée sur la zone de travail. |
 | *showToast* | | Non | | Il permet au gestionnaire de contenu d’afficher un message toast personnalisé pour la ressource expirée. |
-| *uploadConfig* | Objet | | | Il s’agit d’un objet qui contient la configuration personnalisée pour le chargement. Pour plus d’informations[&#128279;](#content-advisor-customization.md#upload-config) consultez la section configuration de chargement . |
+| *uploadConfig* | Objet | | | Il s’agit d’un objet qui contient la configuration personnalisée pour le chargement. Pour plus d’informations](#content-advisor-customization.md#upload-config) consultez la section [configuration de chargement . |
 | *uploadConfig* > *metadataSchema* | Tableau | Non | | Cette propriété est imbriquée sous `uploadConfig` propriété . Ajoutez un tableau de champs que vous fournissez pour collecter les métadonnées de l’utilisateur. Cette propriété vous permet également d’utiliser des métadonnées masquées qui sont automatiquement affectées à une ressource, mais ne sont pas visibles par l’utilisateur. |
 | *uploadConfig* > *onMetadataFormChange* | Fonction de rappel | Non | | Cette propriété est imbriquée sous `uploadConfig` propriété . Il se compose de `property` et de `value`. `Property` est égal à *mapToProperty* du champ transmis à partir du *metadataSchema* dont la valeur est mise à jour. Tandis que `value` est égal à , la nouvelle valeur est fournie en tant qu’entrée. |
 | *uploadConfig* > *targetUploadPath* | Chaîne |  | `"/content/dam"` | Cette propriété est imbriquée sous `uploadConfig` propriété . Le chemin de chargement cible pour les fichiers qui sont par défaut la racine du référentiel de ressources. |
@@ -176,3 +176,20 @@ Dans `contentFragmentSelectorProps`, vous pouvez mentionner l’une des proprié
 Pour plus d’informations sur l’intégration de la fonction de conseil sur les contenus avec les applications Angular, React et JavaScript, consultez les exemples d’intégration de la fonction de conseil sur les contenus [Content Advisor](https://github.com/adobe/aem-assets-selectors-mfe-examples/tree/consolidate-docs-to-experience-league/examples).
 
 
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

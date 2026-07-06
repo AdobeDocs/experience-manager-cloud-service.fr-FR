@@ -3,10 +3,10 @@ title: Modification d’images dans Content Hub à l’aide d’Adobe Express
 description: Modification d’images dans Content Hub à l’aide d’Adobe Express
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '744'
-ht-degree: 5%
+source-wordcount: '806'
+ht-degree: 10%
 
 ---
 
@@ -30,13 +30,13 @@ Pour modifier des images à l’aide de Content Hub :
 
 1. Cliquez sur **[!DNL Open in Adobe Express]** disponible sur la carte de l’image à modifier. Vous pouvez également cliquer sur l’image pour en afficher les détails, puis cliquer sur le logo [!DNL Adobe Express]. L’éditeur incorporé pour Adobe Express se charge ensuite sans jamais quitter Content Hub.
 
-   Vous pouvez tirer parti de la fonctionnalité [!DNL Adobe Express] pour effectuer toutes les actions liées à la modification d’images, telles que [redimensionner l’image](https://helpx.adobe.com/fr/express/using/resize-image.html), [supprimer ou modifier la couleur d’arrière-plan](https://helpx.adobe.com/fr/express/using/remove-background.html), [recadrer l’image](https://helpx.adobe.com/fr/express/using/crop-image.html), combiner l’image à une image ou un texte généré par l’IA, etc.
+   Vous pouvez tirer parti de la fonctionnalité [!DNL Adobe Express] pour effectuer toutes les actions liées à la modification d’images, telles que [redimensionner l’image](https://helpx.adobe.com/express/using/resize-image.html), [supprimer ou modifier la couleur d’arrière-plan](https://helpx.adobe.com/express/using/remove-background.html), [recadrer l’image](https://helpx.adobe.com/express/using/crop-image.html), combiner l’image à une image ou un texte généré par l’IA, etc.
 
 1. Effectuez vos modifications et cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer la ressource modifiée dans l’un des formats suivants :
 
    * **[!UICONTROL PNG]** (utilisé comme format d’image de bonne qualité)
-   * **[!UICONTROL JPG]** (adapté aux petits fichiers)
-   * **[!UICONTROL PDF]** (adapté aux documents)
+   * **** (adapté aux petits fichiers)
+   * **** (adapté aux documents)
 
    ![Enregistrement d’image avec Adobe Express.](assets/adobe-express-save-as.png)
 
@@ -52,7 +52,7 @@ Pour modifier des images à l’aide de Content Hub :
 
 Les administrateurs peuvent également configurer les champs obligatoires et facultatifs qui s’affichent lors de l’ajout de ressources à Content Hub, tels que le nom de la campagne, les mots-clés, les canaux, etc. Pour plus d’informations, voir [Configuration de l’interface utilisateur de Content Hub](configure-content-hub-ui-options.md#configure-upload-options-content-hub).
 
-## Questions fréquemment posées {#faqs-edit-images-content-hub}
+## Questions fréquentes {#faqs-edit-images-content-hub}
 
 ### Qui peut modifier les images dans AEM Assets Content Hub ?
 
@@ -84,4 +84,21 @@ Oui, les administrateurs peuvent configurer les champs obligatoires ou facultati
 
 
 
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 

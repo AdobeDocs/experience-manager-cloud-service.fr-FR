@@ -5,10 +5,10 @@ feature: Metadata
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '974'
-ht-degree: 86%
+source-wordcount: '987'
+ht-degree: 85%
 
 ---
 
@@ -37,7 +37,7 @@ Supposons que vous souhaitiez afficher des métadonnées en cascade en fonction 
 Sans tenir compte du type de ressource choisi, affichez les informations de copyright comme étant un champ requis.
 
 1. Sélectionnez le logo [!DNL Experience Manager] et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Assets]** > **[!UICONTROL Schémas de métadonnées]**.
-1. Sur la page **[!UICONTROL Forms de schéma]**, sélectionnez un formulaire de schéma, puis sélectionnez **[!UICONTROL Modifier]** dans la barre d’outils pour modifier le schéma.
+1. Sur la page Forms de schéma ]**, sélectionnez un formulaire de schéma, puis sélectionnez**[!UICONTROL  Modifier ]**dans la barre d’outils pour modifier le schéma.**[!UICONTROL 
 
    ![select_form](assets/select_form.png)
 
@@ -108,24 +108,27 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 
 1. Accédez au dossier auquel vous avez appliqué le schéma de métadonnées et ouvrez la page des propriétés d’une ressource. Selon votre choix dans le champ Type de ressource, les champs de métadonnées en cascade pertinents s’affichent.
 
-   ![Métadonnées en cascade pour une ressource vidéo](assets/video_asset.png)
+   ![Métadonnées en cascade pour une ressource vidéo
    *Figure : Métadonnées en cascade pour une ressource vidéo*
 
-   ![Métadonnées en cascade pour une ressource de document](assets/doc_type_fields.png)
+   ![Métadonnées en cascade pour une ressource de document
    *Figure : Métadonnées en cascade pour une ressource de document*
 
 **Voir également**
 
-* [Traduire les ressources](translate-assets.md)
-* [API HTTP Assets](mac-api-assets.md)
-* [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Rechercher des ressources](search-assets.md)
-* [Ressources connectées](use-assets-across-connected-assets-instances.md)
-* [Rapports de ressources](asset-reports.md)
-* [Schémas de métadonnées](metadata-schemas.md)
-* [Télécharger des ressources](download-assets-from-aem.md)
-* [Gestion des métadonnées](manage-metadata.md)
-* [Facettes de recherche](search-facets.md)
-* [Gérer les collections](manage-collections.md)
-* [Import des métadonnées en bloc](metadata-import-export.md)
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

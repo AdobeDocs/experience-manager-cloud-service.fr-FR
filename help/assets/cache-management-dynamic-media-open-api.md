@@ -4,10 +4,10 @@ description: Gestion du cache dans Dynamic Media avec les API ouvertes
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 203a5291-edb5-4900-8b0a-32e1ebae5395
-source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '660'
-ht-degree: 0%
+source-wordcount: '703'
+ht-degree: 6%
 
 ---
 
@@ -19,7 +19,7 @@ La mise en cache prolongée dans Dynamic Media avec les API ouvertes se compose 
 
 ## Mise en cache de la couche CDN {#cdn-layer-caching}
 
-Les réponses de diffusion des ressources sont mises en cache sur le [réseau CDN géré par &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn#aem-managed-cdn) pendant une période prolongée afin d’optimiser les performances et de minimiser la charge sur l’origine. Cette mise en cache est entièrement gérée par Adobe afin d’assurer une expérience de haute qualité cohérente pour les utilisateurs finaux et utilisatrices finales. La durée de mise en cache est intentionnellement optimisée pour les performances et ne peut pas être personnalisée par les utilisateurs pour maintenir la fiabilité et l’efficacité de la diffusion du contenu à tous les clients.
+Les réponses de diffusion des ressources sont mises en cache sur le [réseau CDN géré par ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn#aem-managed-cdn) pendant une période prolongée afin d’optimiser les performances et de minimiser la charge sur l’origine. Cette mise en cache est entièrement gérée par Adobe afin d’assurer une expérience de haute qualité cohérente pour les utilisateurs finaux et utilisatrices finales. La durée de mise en cache est intentionnellement optimisée pour les performances et ne peut pas être personnalisée par les utilisateurs pour maintenir la fiabilité et l’efficacité de la diffusion du contenu à tous les clients.
 
 Toutes les URL de diffusion sont mises en cache à la périphérie (rapidement) pendant une durée prolongée afin d’assurer des performances optimales. Les objets de diffusion mis en cache comprennent les rendus statiques, les vidéos, les fichiers binaires d’image d’origine et les images transformées dynamiquement, telles que les ressources redimensionnées ou reformatées générées par le biais de paramètres d’URL. <!--The CDN is designed to serve these assets directly from the cache without revalidating them, unless an explicit purge is performed.-->
 
@@ -29,7 +29,7 @@ Les réponses de diffusion des ressources incluent un en-tête `Cache-Control` a
 
 ### Personnalisation des en-têtes de contrôle du cache {#customizing-cache-control-headers}
 
-L’augmentation du temps d’expiration du cache au-delà de la configuration par défaut augmente la probabilité de diffuser du contenu obsolète, ce qui peut retarder la visibilité des mises à jour de contenu dans l’expérience de l’utilisateur final. Si vous devez modifier le comportement du contrôle du cache pour votre cas d’utilisation spécifique, vous pouvez configurer des règles CDN personnalisées pour ajuster les en-têtes de réponse. Vous pouvez ainsi définir différentes durées de mise en cache en fonction de vos besoins. Reportez-vous à [Règles de réseau CDN personnalisé AEM pour les en-têtes de réponse](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic).
+L’augmentation du temps d’expiration du cache au-delà de la configuration par défaut augmente la probabilité de diffuser du contenu obsolète, ce qui peut retarder la visibilité des mises à jour de contenu dans l’expérience de l’utilisateur final. Si vous devez modifier le comportement du contrôle du cache pour votre cas d’utilisation spécifique, vous pouvez configurer des règles CDN personnalisées pour ajuster les en-têtes de réponse. Vous pouvez ainsi définir différentes durées de mise en cache en fonction de vos besoins. Reportez-vous à [Règles de réseau CDN personnalisé AEM pour les en-têtes de réponse](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic).
 
 ```
 responseTransformations:
@@ -47,7 +47,7 @@ responseTransformations:
             value: max-age=300
 ```
 
-Pour toute assistance supplémentaire ou toute question sur la gestion du cache, contactez [l’assistance &#x200B;](https://helpx.adobe.com/in/contact.html).
+Pour toute assistance supplémentaire ou toute question sur la gestion du cache, contactez [l’assistance ](https://helpx.adobe.com/in/contact.html).
 
 ## Invalidation du cache actif {#active-cache-invalidation}
 
@@ -55,7 +55,7 @@ Chaque fois qu’une ressource est mise à jour, supprimée ou modifiée (tout c
 
 ### Purge manuelle du cache {#manual-cache-purging}
 
-Lorsqu’il est nécessaire de purger manuellement le contenu mis en cache, vous pouvez utiliser les fonctionnalités d’invalidation du cache d’AEM. Pour obtenir des instructions détaillées sur la purge d’URL de cache spécifiques, consultez la section [Invalidation du cache du réseau CDN &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-cache-purge#single-purge).
+Lorsqu’il est nécessaire de purger manuellement le contenu mis en cache, vous pouvez utiliser les fonctionnalités d’invalidation du cache d’AEM. Pour obtenir des instructions détaillées sur la purge d’URL de cache spécifiques, consultez la section [Invalidation du cache du réseau CDN ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-cache-purge#single-purge).
 
 ## Questions fréquemment posées{#faq-cache-management}
 
@@ -105,6 +105,25 @@ La mise en cache prolongée avec invalidation de cache active pilotée par les �
 
 +++ **Puis-je me désinscrire de la mise en cache de longue durée pour mon référentiel ?**
 
-Pour vous exclure de la mise en cache prolongée, contactez l’assistance technique d’Adobe [&#128279;](https://helpx.adobe.com/in/contact.html) et justifiez votre demande.
+Pour vous exclure de la mise en cache prolongée, contactez l’assistance technique d’Adobe [](https://helpx.adobe.com/in/contact.html) et justifiez votre demande.
 
 +++
+
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

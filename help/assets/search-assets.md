@@ -7,9 +7,9 @@ feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Pro
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '6103'
+source-wordcount: '6119'
 ht-degree: 81%
 
 ---
@@ -54,20 +54,9 @@ Familiarisez-vous avec l’interface de recherche des ressources et les actions 
 ![Présentation de l’interface des résultats de recherche de Experience Manager Assets](assets/aem-search-interface.png)
 *Image : présentation de [!DNL Experience Manager Assets]’interface des résultats de recherche.*
 
-**A.** Enregistrer la recherche en tant que collection dynamique.
-**B.** Filtres ou prédicats pour limiter les résultats de recherche.
-**C.** Afficher les fichiers, les dossiers ou les deux.
-**D.** L’emplacement de la recherche est DAM.
-**Par Exemple** Accéder Aux Recherches Enregistrées.
-**F.** Cliquez sur Filtres pour ouvrir ou fermer le rail de gauche.
-**Par exemple** affiche Assets comme recherche par défaut.
-**H.** L’emplacement de la recherche est DAM.
-**I.** Champ Omnisearch avec mot-clé de recherche fourni par l’utilisateur.
-**J.** Sélectionnez les résultats de recherche chargés.
-**K.** Trier par Créé, Modifié, Nom, Aucun.
-**L.** Triez par ordre croissant ou décroissant.
-**M.** Nombre de résultats de recherche affichés sur le total des résultats de recherche. **N.** Fermer la recherche.
-**O.** Basculer entre les vues Carte et Liste.
+**A.** Enregistrer la recherche en tant que collection dynamique.**B.** Filtres ou prédicats pour limiter les résultats de recherche.**C.** Afficher les fichiers, les dossiers ou les deux.**D.** L’emplacement de la recherche est DAM.
+**Par Exemple** Accéder Aux Recherches Enregistrées.**F.** Cliquez sur Filtres pour ouvrir ou fermer le rail de gauche.**Par exemple** affiche Assets comme recherche par défaut.**H.** L’emplacement de la recherche est DAM.
+**I.** Champ Omnisearch avec mot-clé de recherche fourni par l’utilisateur.**J.** Sélectionnez les résultats de recherche chargés.**K.** Trier par Créé, Modifié, Nom, Aucun.**L.** Triez par ordre croissant ou décroissant.**M.** Nombre de résultats de recherche affichés sur le total des résultats de recherche. **N.** Fermer la recherche.**O.** Basculer entre les vues Carte et Liste.
 
 ### Facettes de recherche dynamique {#dynamicfacets}
 
@@ -150,7 +139,7 @@ Vous pouvez améliorer la pertinence des mots-clés pour des ressources particul
 
 Vous pouvez l’utiliser à votre avantage en améliorant le classement de certaines ressources dans les résultats de recherche du mot-clé ciblé. Voir la vidéo d’exemple ci-dessous. Pour plus d’informations, voir [Recherche dans [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/3410336/?captions=fre_fr&quality=6)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *Vidéo : Découvrez comment les résultats de recherche sont classés et comment le classement peut être influencé.*
 
@@ -404,7 +393,7 @@ Exécutez les étapes suivantes pour activer ou désactiver Recherche optimisée
 
 1. Dans la section **[!UICONTROL Rechercher]**, sélectionnez **[!UICONTROL Recherche optimisée par l&#39;IA]** pour activer Recherche optimisée par l&#39;IA ou **[!UICONTROL Mot-clé]** pour le désactiver.
 
-   ![Activer ou désactiver Recherche optimisée par l&#39;IA &#x200B;](/help/assets/assets/enable-ai-search-admin-view.png)
+   ![Activer ou désactiver Recherche optimisée par l&#39;IA ](/help/assets/assets/enable-ai-search-admin-view.png)
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
@@ -538,20 +527,23 @@ Accédez à l’emplacement du dossier pour les ressources affichées dans les r
 
 **Voir également**
 
-* [Bonnes pratiques de recherche](search-best-practices.md)
-* [Traduire les ressources](translate-assets.md)
-* [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Ressources connectées](use-assets-across-connected-assets-instances.md)
-* [Rapports de ressources](asset-reports.md)
-* [Schémas de métadonnées](metadata-schemas.md)
-* [Télécharger des ressources](download-assets-from-aem.md)
-* [Gestion des métadonnées](manage-metadata.md)
-* [Facettes de recherche](search-facets.md)
-* [Gérer les collections](manage-collections.md)
-* [Import des métadonnées en bloc](metadata-import-export.md)
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
->* Guide de mise en œuvre des recherches[[!DNL Experience Manager] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=fr)
+>* Guide de mise en œuvre des recherches[[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=fr)
 >* [Configuration avancée pour améliorer les résultats de recherche](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=fr)

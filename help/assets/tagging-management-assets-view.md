@@ -5,9 +5,9 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Asse
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
 feature: Smart Tags
 role: User, Admin, Developer
-source-git-commit: 1f71c905fadd51d95fc5292ce95903c46895ec94
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1768'
+source-wordcount: '1811'
 ht-degree: 98%
 
 ---
@@ -66,8 +66,7 @@ Pour créer un espace de noms, procédez comme suit :
 Pour ajouter des balises à un espace de noms, procédez comme suit :
 
 1. Accédez à **[!UICONTROL Gestion de la taxonomie]**.
-1. Sélectionnez l’espace de noms et cliquez sur `Create` pour créer la balise au niveau supérieur sous l’espace de noms. Si vous devez créer une sous-balise sous une balise qui existe dans un espace de noms, sélectionnez la balise, puis cliquez sur `Create`.
-   ![Hiérarchie des balises](assets/hierarchy-of-tags.png)
+1. Sélectionnez l’espace de noms et cliquez sur `Create` pour créer la balise au niveau supérieur sous l’espace de noms. Si vous devez créer une sous-balise sous une balise qui existe dans un espace de noms, sélectionnez la balise, puis cliquez sur `Create`.   ![Hiérarchie des balises](assets/hierarchy-of-tags.png)
 
    Dans cet exemple, l’image à gauche représente la balise directement sous l’espace de noms `automobile-four-wheeler` affiché dans le champ `Path`. L’image à droite est un exemple de sous-balises ajoutées dans une balise. En effet, il y a plus de noms de balise, `jeep` et `jeep-meridian`, affichés dans le champ `Path` en plus de l’espace de noms.
 1. Indiquez le titre, le nom et la description de la balise, puis cliquez sur `Save`.
@@ -145,8 +144,7 @@ Regardez cette vidéo rapide pour découvrir comment ajouter le composant Balise
 
    ![Balisage des ressources](assets/adding-tags-to-assets.png)
 
-1. Sélectionnez une ou plusieurs balises. La sous-balise est sélectionnée automatiquement avec la balise ou l’espace de noms parent.
-Les balises modifiées dans Assets Essentials sont également appliquées dans Assets as a Cloud Service.
+1. Sélectionnez une ou plusieurs balises. La sous-balise est sélectionnée automatiquement avec la balise ou l’espace de noms parent.Les balises modifiées dans Assets Essentials sont également appliquées dans Assets as a Cloud Service.
 
 ## Ajouter des balises à la liste bloquée {#blocklist-essentials}
 
@@ -206,3 +204,22 @@ Si vous souhaitez télécharger un modèle de balises bloquées, procédez comme
 1. Cliquez sur **[!UICONTROL Télécharger le modèle]**.
 1. Sélectionnez l’emplacement approprié pour enregistrer le fichier CSV. Vous pouvez également renommer le fichier selon vos besoins.
 1. Cliquez sur **[!UICONTROL Enregistrer]**. Le modèle de balises bloquées au format CSV est téléchargé à l’emplacement sélectionné.
+
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

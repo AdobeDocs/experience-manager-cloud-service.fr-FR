@@ -5,10 +5,10 @@ feature: Asset Management
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1119'
-ht-degree: 15%
+source-wordcount: '1162'
+ht-degree: 18%
 
 ---
 
@@ -89,13 +89,13 @@ Votre instance AEM as a Cloud Service sur Admin Console comprend les profils de 
 * [Utilisateurs et utilisatrices experts AEM Assets](#onboard-power-users)
 
 
-![Profils de produit &#x200B;](assets/aem-assets-product-profiles.png)
+![Profils de produit ](assets/aem-assets-product-profiles.png)
 
 Vous pouvez commencer à ajouter des utilisateurs ou des groupes d’utilisateurs aux profils de produits AEM Assets Collaborator Users et AEM Assets Power Users. Pour plus d’informations, consultez [Intégration d’utilisateurs AEM Assets Collaborator](#onboard-collaborator-users) et [Intégration d’utilisateurs avancés d’AEM Assets](#onboard-power-users).
 
 Si vous avez activé Content Hub pour Assets as a Cloud Service, une nouvelle instance est créée dans AEM Assets as a Cloud Service sur Admin Console avec `delivery` comme suffixe :
 
-![Nouvelle instance pour Content Hub &#x200B;](assets/new-instance-content-hub.png)
+![Nouvelle instance pour Content Hub ](assets/new-instance-content-hub.png)
 
 >[!NOTE]
 >
@@ -105,7 +105,7 @@ Notez qu’il n’y a aucun `author` ni `publish` dans le nom de l’instance po
 
 Cliquez sur le nom de l’instance pour afficher le profil de produit Content Hub `AEM Assets Limited Users`.
 
-![Profil de produit &#x200B;](assets/content-hub-product-profile.png)
+![Profil de produit ](assets/content-hub-product-profile.png)
 
 Vous pouvez commencer à ajouter des utilisateurs ou des groupes d’utilisateurs à ce profil de produit pour leur fournir l’accès à Content Hub.
 
@@ -156,3 +156,22 @@ Vous pouvez également accéder aux services affectés aux utilisateurs expérim
 ![Services pour les utilisateurs expérimentés](assets/aem-assets-power-users.png)
 
 Les services `Adobe Express` et `AEM Assets Power Users` sont activés par défaut. Vous pouvez activer et désactiver le bouton (bascule) selon vos besoins. Toutefois, Adobe recommande d’utiliser les services par défaut activés pour les profils de produit.
+
+
+**Voir également**
+
+* [Traduire les ressources](/help/assets/translate-assets.md)
+* [API HTTP Assets](/help/assets/mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
+* [Rechercher des ressources](/help/assets/search-assets.md)
+* [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](/help/assets/asset-reports.md)
+* [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+* [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
+* [Gestion des métadonnées](/help/assets/manage-metadata.md)
+* [Gérer les modèles Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+* [Facettes de recherche](/help/assets/search-facets.md)
+* [Gérer les collections](/help/assets/manage-collections.md)
+* [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
+* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
