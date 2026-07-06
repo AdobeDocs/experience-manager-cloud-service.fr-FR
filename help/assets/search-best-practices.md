@@ -268,7 +268,7 @@ Exécutez les étapes suivantes dans la vue Assets **&#x200B;**&#x200B;:
 
 ## Facettes de recherche personnalisées {#custom-search-facets}
 
-Les facettes de recherche dans Adobe Experience Manager vous permettent de rechercher des ressources de plusieurs manières plutôt que dans un seul ordre taxonomique, prédéfini ou . Vous pouvez personnaliser les facettes de recherche et ajouter des prédicats en fonction de vos besoins. Lisez [Facettes de recherche](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en#) pour obtenir un guide détaillé sur l’ajout d’un prédicat personnalisé.
+Les facettes de recherche dans Adobe Experience Manager vous permettent de rechercher des ressources de plusieurs manières plutôt que dans un seul ordre taxonomique, prédéfini ou . Vous pouvez personnaliser les facettes de recherche et ajouter des prédicats en fonction de vos besoins. Lisez [Facettes de recherche](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=fr#) pour obtenir un guide détaillé sur l’ajout d’un prédicat personnalisé.
 
 <!--
 **Scenario 10: Search assets based on Sku ID**

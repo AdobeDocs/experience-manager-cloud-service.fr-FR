@@ -49,7 +49,7 @@ Par défaut, [!DNL Experience Manager] déclenche une notification dans la [[!DN
 
 Lorsqu’un utilisateur demande un téléchargement contenant des dossiers ou des collections, AEM effectue une estimation rapide du nombre d’éléments (Assets, dossiers ou rendus) sous le ou les dossiers ou collections téléchargés, afin de s’assurer que le téléchargement demandé se situe dans les limites prises en charge. Par défaut, les téléchargements contenant plus de 50 000 éléments sont bloqués et AEM affiche le message `The selected items are larger than the configured maximum download limit` .
 
-Il est possible d’augmenter la limite de taille de téléchargement en ajoutant une configuration OSGI affichée ci-dessous au code de votre application et [déploiement via un pipeline Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi) :
+Il est possible d’augmenter la limite de taille de téléchargement en ajoutant une configuration OSGI affichée ci-dessous au code de votre application et [déploiement via un pipeline Cloud Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi) :
 
 ```
 com.adobe.cq.dam.download.impl.DownloadConfiguration   
