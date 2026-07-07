@@ -3,7 +3,7 @@ title: Modification d’images dans Content Hub à l’aide d’Adobe Express
 description: Modification d’images dans Content Hub à l’aide d’Adobe Express
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 10%
@@ -30,13 +30,13 @@ Pour modifier des images à l’aide de Content Hub :
 
 1. Cliquez sur **[!DNL Open in Adobe Express]** disponible sur la carte de l’image à modifier. Vous pouvez également cliquer sur l’image pour en afficher les détails, puis cliquer sur le logo [!DNL Adobe Express]. L’éditeur incorporé pour Adobe Express se charge ensuite sans jamais quitter Content Hub.
 
-   Vous pouvez tirer parti de la fonctionnalité [!DNL Adobe Express] pour effectuer toutes les actions liées à la modification d’images, telles que [redimensionner l’image](https://helpx.adobe.com/fr/express/using/resize-image.html), [supprimer ou modifier la couleur d’arrière-plan](https://helpx.adobe.com/fr/express/using/remove-background.html), [recadrer l’image](https://helpx.adobe.com/fr/express/using/crop-image.html), combiner l’image à une image ou un texte généré par l’IA, etc.
+   Vous pouvez tirer parti de la fonctionnalité [!DNL Adobe Express] pour effectuer toutes les actions liées à la modification d’images, telles que [redimensionner l’image](https://helpx.adobe.com/express/using/resize-image.html), [supprimer ou modifier la couleur d’arrière-plan](https://helpx.adobe.com/express/using/remove-background.html), [recadrer l’image](https://helpx.adobe.com/express/using/crop-image.html), combiner l’image à une image ou un texte généré par l’IA, etc.
 
 1. Effectuez vos modifications et cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer la ressource modifiée dans l’un des formats suivants :
 
    * **[!UICONTROL PNG]** (utilisé comme format d’image de bonne qualité)
-   * **&#x200B;**&#x200B;(adapté aux petits fichiers)
-   * **&#x200B;**&#x200B;(adapté aux documents)
+   * **** (adapté aux petits fichiers)
+   * **** (adapté aux documents)
 
    ![Enregistrement d’image avec Adobe Express.](assets/adobe-express-save-as.png)
 
@@ -101,4 +101,5 @@ Oui, les administrateurs peuvent configurer les champs obligatoires ou facultati
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
 

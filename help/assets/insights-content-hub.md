@@ -4,7 +4,7 @@ description: Découvrez comment afficher les statistiques sur les ressources dan
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 17%
@@ -19,7 +19,7 @@ ht-degree: 17%
 
 ## Conditions préalables {#prerequisites}
 
-[Les utilisateurs de &#x200B;](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
+[Les utilisateurs de ](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
 
 ## Affichage des statistiques sur les ressources chargées{#view-statistics-for-uploaded-assets}
 
@@ -94,3 +94,4 @@ Vous pouvez analyser le nombre d’utilisateurs et d’utilisatrices actifs par 
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

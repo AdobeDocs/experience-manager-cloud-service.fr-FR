@@ -7,7 +7,7 @@ feature: Collections, Asset Management
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
 workflow-type: tm+mt
 source-wordcount: '2432'
 ht-degree: 80%
@@ -281,4 +281,5 @@ Vous pouvez exécuter un workflow pour les ressources d’une collection. Si la 
 >[!MORELIKETHIS]
 >
 >* [Créer une tâche de révision pour les collections](/help/assets/bulk-approval.md)
+
 
