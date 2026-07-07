@@ -2,7 +2,7 @@
 title: Configuration d’un domaine personnalisé pour le niveau de diffusion
 description: Découvrez comment configurer un domaine personnalisé pour le niveau de diffusion dans Adobe Cloud Manager.
 exl-id: cc71c8c5-cf42-4092-b0e0-646a2ed0ee54
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 14%
@@ -55,3 +55,4 @@ Après avoir suivi les étapes ci-dessus, ouvrez un ticket d’assistance Adobe 
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

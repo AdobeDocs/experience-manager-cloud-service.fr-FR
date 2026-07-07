@@ -3,7 +3,7 @@ title: Présentation d’Assets as a Cloud Service pour la gestion des ressou
 description: Présentation d’Assets as a Cloud Service pour la gestion des ressources numériques dans AEM
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '6486'
 ht-degree: 76%
@@ -1046,3 +1046,4 @@ Pour les clients et clientes qui ont [rempli les conditions préalables](/help/i
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

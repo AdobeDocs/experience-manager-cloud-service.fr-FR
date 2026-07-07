@@ -4,7 +4,7 @@ description: Découvrez comment utiliser les API de diffusion.
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 77b334434251a98d9c4f44cede9275d839f6ac40
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 18%
@@ -95,3 +95,4 @@ Pour afficher des exemples de requêtes, des exemples de réponses et des codes 
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
