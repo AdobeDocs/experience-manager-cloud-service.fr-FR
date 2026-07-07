@@ -25,15 +25,15 @@ Regardez cette vidéo pour savoir comment activer Content Hub pour Experience Ma
 
 Les variantes des privilèges sur Content Hub incluent :
 
-* [Utilisateurs de Content Hub ](#onboard-content-hub-users) : accédez aux ressources approuvées par la marque sur le portail Content Hub.
+* [Utilisateurs de Content Hub &#x200B;](#onboard-content-hub-users) : accédez aux ressources approuvées par la marque sur le portail Content Hub.
 
-* [Administrateurs Content Hub ](#onboard-content-hub-administrator) : accès à l’[interface utilisateur de configuration](/help/assets/configure-content-hub-ui-options.md) sur Content Hub, en plus d’accéder aux ressources approuvées par la marque, de charger des ressources vers Content Hub et d’intégrer Adobe Express pour modifier les images (si vous disposez de droits Adobe Express).
+* [Administrateurs Content Hub &#x200B;](#onboard-content-hub-administrator) : accès à l’[interface utilisateur de configuration](/help/assets/configure-content-hub-ui-options.md) sur Content Hub, en plus d’accéder aux ressources approuvées par la marque, de charger des ressources vers Content Hub et d’intégrer Adobe Express pour modifier les images (si vous disposez de droits Adobe Express).
 
-* [Utilisateurs de Content Hub avec des droits d’ajout de ressources ](#onboard-content-hub-users-add-assets) : possibilité de [charger des ressources vers Content Hub](/help/assets/upload-brand-approved-assets.md) en plus d’accéder aux ressources approuvées par la marque sur le portail Content Hub.
+* [Utilisateurs de Content Hub avec des droits d’ajout de ressources &#x200B;](#onboard-content-hub-users-add-assets) : possibilité de [charger des ressources vers Content Hub](/help/assets/upload-brand-approved-assets.md) en plus d’accéder aux ressources approuvées par la marque sur le portail Content Hub.
 
-* [Les utilisateurs de Content Hub disposant de droits pour remixer les ressources dans de nouvelles variantes ](#onboard-content-hub-users-remix-assets) : [Intégration d’Adobe Express](/help/assets/edit-images-content-hub.md) (si vous disposez de droits Adobe Express) en plus d’accéder aux ressources approuvées par la marque sur le portail Content Hub.
+* [Les utilisateurs de Content Hub disposant de droits pour remixer les ressources dans de nouvelles variantes &#x200B;](#onboard-content-hub-users-remix-assets) : [Intégration d’Adobe Express](/help/assets/edit-images-content-hub.md) (si vous disposez de droits Adobe Express) en plus d’accéder aux ressources approuvées par la marque sur le portail Content Hub.
 
-* [Utilisateurs Experience Manager Assets ](#experience-manager-assets-users) : possibilité d’approuver des ressources sur Experience Manager Assets as a Cloud Service pour les rendre disponibles sur Content Hub.
+* [Utilisateurs Experience Manager Assets &#x200B;](#experience-manager-assets-users) : possibilité d’approuver des ressources sur Experience Manager Assets as a Cloud Service pour les rendre disponibles sur Content Hub.
 
 >[!NOTE]
 >
@@ -53,11 +53,11 @@ Le tableau suivant résume les types d’utilisateurs Content Hub disponibles, l
 | AEM > Instance de création de production > Utilisateurs AEM | − | ✓ | ✓ | − |
 | AEM > Instance de création de production > Administration AEM | − | − | − | ✓ |
 | Adobe Express | − | − | ✓ | − |
-| **Informations supplémentaires** | Voir [Utilisateurs de ](#onboard-content-hub-users) | Voir [Utilisateurs de Content Hub avec des droits d’ajout de ressources](#onboard-content-hub-users-add-assets) | Voir [Utilisateurs de Content Hub avec des droits pour remixer les ressources vers de nouvelles variations](#onboard-content-hub-users-remix-assets) | Voir [Administrateurs ](#onboard-content-hub-administrator) |
+| **Informations supplémentaires** | Voir [Utilisateurs de &#x200B;](#onboard-content-hub-users) | Voir [Utilisateurs de Content Hub avec des droits d’ajout de ressources](#onboard-content-hub-users-add-assets) | Voir [Utilisateurs de Content Hub avec des droits pour remixer les ressources vers de nouvelles variations](#onboard-content-hub-users-remix-assets) | Voir [Administrateurs &#x200B;](#onboard-content-hub-administrator) |
 
 >[!NOTE]
 >
->Les utilisateurs de [](#experience-manager-assets-users) peuvent approuver des ressources dans un environnement Experience Manager Assets as a Cloud Service afin de les rendre disponibles sur Content Hub. Ces utilisateurs doivent être ajoutés au profil de produit AEM > Instance de création de production > Utilisateurs AEM à l’aide d’Admin Console.
+>Les utilisateurs de [&#128279;](#experience-manager-assets-users) peuvent approuver des ressources dans un environnement Experience Manager Assets as a Cloud Service afin de les rendre disponibles sur Content Hub. Ces utilisateurs doivent être ajoutés au profil de produit AEM > Instance de création de production > Utilisateurs AEM à l’aide d’Admin Console.
 
 ## Étape 1 : activer Content Hub pour Experience Manager Assets à l’aide de Cloud Manager {#enable-content-hub}
 
@@ -78,7 +78,7 @@ Pour activer Content Hub pour Experience Manager Assets :
 
 1. Dans la boîte de dialogue [!UICONTROL Modifier le programme], sélectionnez l’onglet **[!UICONTROL Solutions et modules complémentaires]**.
 
-1. Développez **** puis sélectionnez **[!UICONTROL Content Hub]**.
+1. Développez **&#x200B;**&#x200B;puis sélectionnez **[!UICONTROL Content Hub]**.
    ![Sélectionnez Content Hub dans Cloud Manager](assets/edit-program-cloud-manager-content-hub.png)
 
    >[!NOTE]
@@ -89,7 +89,7 @@ Pour activer Content Hub pour Experience Manager Assets :
 
 Content Hub est désormais activé pour Experience Manager Assets as a Cloud Service. Après l’activation de Content Hub dans un environnement de production, vous ne pouvez pas le désactiver en libre-service.
 
-Si vous découvrez Experience Manager Assets, cliquez sur **[!UICONTROL Ajouter un programme]** puis fournissez les détails du programme (Nom du programme, Configuration pour la production) et cliquez sur **[!UICONTROL Continuer]**. Vous pouvez ensuite sélectionner **** et **[!UICONTROL Content Hub]** dans l’onglet **[!UICONTROL Solutions et modules complémentaires]**.
+Si vous découvrez Experience Manager Assets, cliquez sur **[!UICONTROL Ajouter un programme]** puis fournissez les détails du programme (Nom du programme, Configuration pour la production) et cliquez sur **[!UICONTROL Continuer]**. Vous pouvez ensuite sélectionner **&#x200B;**&#x200B;et **[!UICONTROL Content Hub]** dans l’onglet **[!UICONTROL Solutions et modules complémentaires]**.
 
 ### Activation de Content Hub pour les environnements inférieurs {#enable-content-hub-lower-environments}
 
@@ -109,7 +109,7 @@ Pour activer Content Hub pour les environnements inférieurs :
 
 1. Cliquez sur la carte du programme pour afficher la liste des environnements disponibles (Production, Développement ou Évaluation).
 
-1. Cliquez sur l’environnement à activer. La section **** affiche `Content Hub is available for activation`.
+1. Cliquez sur l’environnement à activer. La section **&#x200B;**&#x200B;affiche `Content Hub is available for activation`.
 
    ![Activation de Content Hub pour les environnements inférieurs](assets/enable-content-hub-lower-environments.png)
 
@@ -123,7 +123,7 @@ Pour activer Content Hub pour les environnements inférieurs :
 
 Après [activation de Content Hub pour Assets as a Cloud Service à l’aide de Cloud Manager](#enable-content-hub), une nouvelle instance est créée dans AEM Assets as a Cloud Service sur Admin Console avec `delivery` comme suffixe :
 
-![Nouvelle instance pour Content Hub ](assets/new-instance-content-hub.png)
+![Nouvelle instance pour Content Hub &#x200B;](assets/new-instance-content-hub.png)
 
 >[!NOTE]
 >
@@ -133,7 +133,7 @@ Notez qu’il n’y a aucun `author` ni `publish` dans le nom de l’instance po
 
 Cliquez sur le nom de l’instance pour afficher le profil de produit Content Hub.
 
-![Profil de produit ](assets/content-hub-product-profile.png)
+![Profil de produit &#x200B;](assets/content-hub-product-profile.png)
 
 >[!NOTE]
 >
@@ -256,7 +256,7 @@ Pour configurer les utilisateurs de Experience Manager Assets :
 
    >[!NOTE]
    >
-   > Vous n&#39;avez pas besoin d&#39;être ajouté au profil de produit [](#onboard-content-hub-users) pour les utilisateurs de Experience Manager Assets.
+   > Vous n&#39;avez pas besoin d&#39;être ajouté au profil de produit [&#128279;](#onboard-content-hub-users) pour les utilisateurs de Experience Manager Assets.
 
 ## Activer Content Hub pour les clients Assets as a Cloud Service existants {#enable-content-hub-exisitng-cs-customers}
 

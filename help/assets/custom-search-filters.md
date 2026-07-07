@@ -42,7 +42,7 @@ Les filtres de recherche AEM Assets personnalisés ne peuvent être mappés qu�
 
 Vous pouvez utiliser les actions suivantes sur un formulaire de filtres configuré :
 
-* **[!UICONTROL Personnaliser] :** cliquez sur cette option pour ajouter ou modifier le formulaire. Vous pouvez déposer des éléments de filtre depuis les [ filtres personnalisés ](#available-custom-filters) sur la zone de travail ou les réorganiser si nécessaire.
+* **[!UICONTROL Personnaliser] :** cliquez sur cette option pour ajouter ou modifier le formulaire. Vous pouvez déposer des éléments de filtre depuis les [&#x200B; filtres personnalisés &#x200B;](#available-custom-filters) sur la zone de travail ou les réorganiser si nécessaire.
 
 * **[!UICONTROL Aperçu] :** cliquez pour passer en revue les modifications.
 

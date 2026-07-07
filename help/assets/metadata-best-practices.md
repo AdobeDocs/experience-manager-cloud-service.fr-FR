@@ -112,7 +112,7 @@ Voici quelques-unes des bonnes pratiques à suivre :
 
   Par exemple, au lieu d’utiliser des noms en double tels que *campaign_image_001* et *campaign_image_002*, implémentez une convention de nommage systématique telle que *event_promotion* et *product_launch*, pour garantir une identification claire et ordonnée.
 
-* **Utiliser efficacement des vocabulaires contrôlés :** implémentez des vocabulaires contrôlés en utilisant des termes normalisés pour les balises. Découvrez comment implémenter le [framework de balisage ](/help/implementing/developing/introduction/tagging-framework.md) efficacement.
+* **Utiliser efficacement des vocabulaires contrôlés :** implémentez des vocabulaires contrôlés en utilisant des termes normalisés pour les balises. Découvrez comment implémenter le [framework de balisage &#x200B;](/help/implementing/developing/introduction/tagging-framework.md) efficacement.
 
   Par exemple, utilisez de manière cohérente des termes tels que *product_launch* ou *event_promotion* lors du balisage des images avec des thèmes afin de maintenir une séquence systématique.
 
@@ -130,7 +130,7 @@ Vous pouvez tenir compte des bonnes pratiques suivantes pour optimiser la recher
 
 * **Optimisation des mots-clés :** améliorez la recherche de métadonnées en optimisant les mots-clés associés aux ressources. Vous pouvez améliorer la pertinence des mots-clés pour des ressources spécifiques dans [!UICONTROL Assets Manager] en procédant comme suit :
 
-   1. Accédez à **** > **[!UICONTROL Fichier]** > **[!UICONTROL [Dossier de ressources]]**.
+   1. Accédez à **&#x200B;**&#x200B;> **[!UICONTROL Fichier]** > **[!UICONTROL [Dossier de ressources]]**.
    1. Sélectionnez la ressource pour laquelle vous souhaitez mettre à jour les métadonnées, puis cliquez sur **[!UICONTROL Propriétés]**.
    1. Accédez à l’onglet **[!UICONTROL Avancé]**, puis cliquez sur **[!UICONTROL Ajouter]** sous l’onglet **[!UICONTROL Élever pour rechercher des mots-clés]**. <br>Vous devez utiliser le schéma de métadonnées par défaut pour élever les mots-clés de recherche.
    1. Saisissez le mot-clé pour lequel vous souhaitez améliorer la recherche, puis cliquez sur **[!UICONTROL Ajouter]**.Vous pouvez ajouter plusieurs mots-clés et les classer en fonction de votre priorité.
@@ -138,7 +138,7 @@ Vous pouvez tenir compte des bonnes pratiques suivantes pour optimiser la recher
 
   Découvrez comment [booster la recherche dans Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=fr).
 
-* **Champs de métadonnées personnalisés :** personnalisez vos champs de métadonnées pour capturer des informations supplémentaires sur les ressources. Par exemple, ajoutez des champs spécifiques pour les détails du projet, des informations de copyright ou toute autre donnée pertinente qui améliore les fonctionnalités de recherche. Découvrez [ modifier ou ajouter des métadonnées personnalisées ](meta-edit.md) dans Experience Manager Assets.
+* **Champs de métadonnées personnalisés :** personnalisez vos champs de métadonnées pour capturer des informations supplémentaires sur les ressources. Par exemple, ajoutez des champs spécifiques pour les détails du projet, des informations de copyright ou toute autre donnée pertinente qui améliore les fonctionnalités de recherche. Découvrez [&#x200B; modifier ou ajouter des métadonnées personnalisées &#x200B;](meta-edit.md) dans Experience Manager Assets.
 
 
 * **Validation des métadonnées :** implémentez des contrôles de validation pour les entrées de métadonnées afin d’assurer la cohérence et la précision. L’utilisation de vocabulaires contrôlés rend le processus de validation plus fluide et réduit les risques d’entrées peu claires ou incohérentes. Cela peut impliquer de définir des instructions pour certaines propriétés de métadonnées afin d’éviter toute information ambiguë ou incohérente.
