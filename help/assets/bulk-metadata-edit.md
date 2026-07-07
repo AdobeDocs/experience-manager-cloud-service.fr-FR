@@ -1,6 +1,6 @@
 ---
 title: Modification des métadonnées en bloc dans  [!DNL Assets View]
-description: Découvrez comment mettre à jour un ensemble prédéfini de champs de métadonnées standard pour plusieurs ressources disponibles sur la [DNL! Vue Assets] simultanément.
+description: Découvrez comment mettre à jour un ensemble prédéfini de champs de métadonnées standard pour plusieurs ressources disponibles sur la [!DNL ! Vue Assets] simultanément.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
 source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
@@ -22,7 +22,7 @@ Procédez comme suit pour modifier en masse les métadonnées de plusieurs resso
 1. Explorez manuellement pour rechercher des ressources spécifiques ou recherchez-les à l’aide de mots-clés dans la barre de recherche.
 1. Sélectionnez les ressources, puis cliquez sur **[!UICONTROL Modifier les métadonnées en masse]** dans le menu supérieur.
    ![Modification de métadonnées en masse](/help/assets/assets/bulk-metadata-edit1.png)
-1. Sur la page [!UICONTROL  Modifier les métadonnées ], modifiez les champs suivants dans le panneau **[!UICONTROL Propriétés]** :
+1. Sur la page [!UICONTROL &#x200B; Modifier les métadonnées &#x200B;], modifiez les champs suivants dans le panneau **[!UICONTROL Propriétés]** :
    * **[!UICONTROL Statut] :** sélectionnez un statut pour les ressources sélectionnées.
    * **[!UICONTROL Date d’expiration] :** définissez une date après laquelle les ressources ne sont plus valides ou nécessaires.
    * **[!UICONTROL Auteur] :** spécifiez le nom de l’auteur.

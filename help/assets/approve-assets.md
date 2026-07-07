@@ -58,7 +58,7 @@ Pour approuver des ressources dans [!DNL Experience Manager Admin view], procéd
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427430)
 
-   De même, vous pouvez approuver des ressources à l’aide de la [ nouvelle vue Assets ](/help/assets/manage-organize-assets-view.md).
+   De même, vous pouvez approuver des ressources à l’aide de la [&#x200B; nouvelle vue Assets &#x200B;](/help/assets/manage-organize-assets-view.md).
 
 ## Approbation en bloc de ressources {#bulk-approve-assets}
 
@@ -68,7 +68,7 @@ Simplifiez votre workflow en approuvant rapidement plusieurs ressources à la fo
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Assets]** > **[!UICONTROL Profils de métadonnées]**.
 1. Cliquez sur **[!UICONTROL Créer]** en haut à droite de la page.
 1. Ajoutez un titre de profil et cliquez sur **[!UICONTROL Créer]**. Le profil de métadonnées a été créé.
-1. Sélectionnez le profil de métadonnées que vous venez de créer et cliquez sur **[!UICONTROL Modifier le(s) _(s)_]**. <br>Le formulaire **[!UICONTROL Modifier le profil de métadonnées]**s’ouvre avec l’onglet **[!UICONTROL De base]**en surbrillance.
+1. Sélectionnez le profil de métadonnées que vous venez de créer et cliquez sur **[!UICONTROL Modifier le(s) _(s)_]**. <br>Le formulaire **[!UICONTROL Modifier le profil de métadonnées]**&#x200B;s’ouvre avec l’onglet **[!UICONTROL De base]**&#x200B;en surbrillance.
 1. Effectuez un glisser-déposer d’un **[!UICONTROL champ de texte monoligne]** de la section **[!UICONTROL Créer un formulaire]** sur le côté droit de la section Métadonnées du formulaire.
 1. Cliquez sur le champ nouvellement ajouté, puis effectuez les mises à jour suivantes dans le panneau **[!UICONTROL Paramètres]** :
    1. Remplacez **[!UICONTROL Libellé du champ]** par _Assets approuvé_.
@@ -105,7 +105,7 @@ De même, pour approuver en bloc des ressources dans un dossier dans la vue Asse
    Si vous sélectionnez le statut comme `Approved` et si [Dynamic Media avec des fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) ou [Content Hub](/help/assets/product-overview.md), ou les deux sont activés pour votre Experience Manager Assets, vous pouvez afficher les options `Delivery` et `Content Hub` disponibles dans le champ **[!UICONTROL Cible d’approbation]**.
 
    * Sélectionnez **[!UICONTROL Diffusion]** pour rendre les ressources disponibles pour Dynamic Media avec les fonctionnalités OpenAPI et Content Hub. Si Content Hub n’est pas activé, la sélection de cette option rend les ressources disponibles uniquement pour Dynamic Media avec les fonctionnalités OpenAPI.
-   * Sélectionnez **** pour rendre les ressources disponibles pour Content Hub.
+   * Sélectionnez **&#x200B;**&#x200B;pour rendre les ressources disponibles pour Content Hub.
 
    ![Statut d&#39;approbation](/help/assets/assets/approval-status-delivery.png)
 

@@ -88,7 +88,7 @@ Regardez cette vidéo pour comprendre la puissance de l’intégration de la vue
 
 [![Voir le Guide](assets/see-the-guide-sm.png)](edit-images-assets-view.md)
 
-Les prochaines versions d’Assets as a Cloud Service comprennent également l’[Intégration d’Adobe Firefly via Adobe Express](:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838).
+Les prochaines versions d’Assets as a Cloud Service comprennent également l’[Intégration d’Adobe Firefly via Adobe Express] (:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838).
 
 ### Chargements de dossiers pour la configuration de la structure hiérarchique de votre organisation {#folder-uploads}
 
