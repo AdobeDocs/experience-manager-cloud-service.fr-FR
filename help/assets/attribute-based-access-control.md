@@ -38,7 +38,7 @@ Voici quelques-uns des principaux avantages du contrôle d’accès basé sur le
 * Prend en charge la gouvernance évolutive entre les marques et les régions
 * Améliore la gestion des ressources
 
->[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3475416/?captions=fre_fr&learn=on&enablevpops){transcript=true}
 
 ## Activation du contrôle d’accès basé sur les attributs {#enable-attribute-based-access-control}
 
