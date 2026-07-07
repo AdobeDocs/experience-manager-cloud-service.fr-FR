@@ -8,7 +8,7 @@ role: Admin, Developer
 source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
 source-wordcount: '1160'
-ht-degree: 67%
+ht-degree: 69%
 
 ---
 
@@ -19,7 +19,7 @@ Découvrez comment fonctionne le test de qualité du code des pipelines et comme
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_codequalitytests"
 >title="Test de qualité du code"
->abstract="Le test de qualité du code évalue le code de votre application par rapport aux règles de qualité. Il s’agit de l’objectif principal d’un pipeline dédié uniquement à la qualité du code, exécuté après l’étape de création dans tous les pipelines."
+>abstract="Le test de qualité du code évalue le code de votre application par rapport à des règles de qualité. Il s’agit de l’objectif principal d’un pipeline dédié uniquement à la qualité du code. Cette étape est exécutée après l’étape de création dans tous les pipelines."
 
 ## Présentation {#introduction}
 

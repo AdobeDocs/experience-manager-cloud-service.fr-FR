@@ -7,8 +7,8 @@ feature: Cloud Manager, Developing
 role: Admin, Developer
 source-git-commit: b4b5fb587f2b93019e7a0a273bd106d9ab1de54c
 workflow-type: tm+mt
-source-wordcount: '1302'
-ht-degree: 12%
+source-wordcount: '1323'
+ht-degree: 14%
 
 ---
 
@@ -20,7 +20,7 @@ Découvrez les outils en libre-service fournis par Cloud Manager pour installer 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
 >title="Gérer des certificats SSL"
->abstract="Cloud Manager fournit des outils en libre-service pour installer et gérer les certificats SSL. Il utilise un service Platform TLS pour gérer les certificats détenus par le client et les clés privées provenant d’autorités de certification tierces."
+>abstract="Cloud Manager fournit des outils en libre-service pour installer et gérer les certificats SSL. Il utilise un service Platform TLS pour gérer les certificats détenus par le client et les clés privées provenant d’autorités de certification tierces."
 >additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Affichage, mise à jour et remplacement d’un certificat SSL"
 >additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Vérification du statut d’un certificat SSL"
 
@@ -86,8 +86,7 @@ Si vous choisissez d’ajouter votre propre certificat SSL géré par le client,
 * Le certificat doit être un certificat TLS X.509 émis par une autorité de certification approuvée (CA).
 * Les types de clés cryptographiques pris en charge sont les suivants :
 
-   * RSA 2048 bits, prise en charge standard.
-Les clés RSA de plus de 2 048 bits (telles que les clés RSA de 3 072 bits ou de 4 096 bits) ne sont pas prises en charge pour le moment.
+   * RSA 2048 bits, prise en charge standard.Les clés RSA de plus de 2 048 bits (telles que les clés RSA de 3 072 bits ou de 4 096 bits) ne sont pas prises en charge pour le moment.
    * Clés de courbe elliptique (EC) `prime256v1` (`secp256r1`) et `secp384r1`
    * Certificats ECDSA (Elliptic Curve Digital Signature Algorithm). Ces certificats sont recommandés par Adobe plutôt que par RSA pour améliorer les performances, la sécurité et l’efficacité.
 

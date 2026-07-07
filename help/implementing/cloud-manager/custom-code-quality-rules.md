@@ -7,8 +7,8 @@ feature: Cloud Manager, Developing
 role: Admin, Developer
 source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
-source-wordcount: '4362'
-ht-degree: 57%
+source-wordcount: '4455'
+ht-degree: 56%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 57%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_customcodequalityrules"
 >title="Règles de qualité du code personnalisé"
->abstract="Pour garantir un code de haute qualité par le biais de tests approfondis, découvrez les règles de qualité du code personnalisé de Cloud Manager, basées sur les bonnes pratiques en matière d’ingénierie Adobe Experience Manager."
+>abstract="Pour garantir un code de haute qualité grâce à des tests approfondis, découvrez les règles de qualité du code personnalisé Cloud Manager, basées sur les bonnes pratiques en matière d’ingénierie d’Adobe Experience Manager."
 
-Pour garantir un code de haute qualité par le biais de tests approfondis, découvrez les règles de qualité du code personnalisé de Cloud Manager, basées sur les bonnes pratiques en matière d’ingénierie Adobe Experience Manager. Voir aussi [test de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md).
+Pour garantir un code de haute qualité grâce à des tests approfondis, découvrez les règles de qualité du code personnalisé Cloud Manager, basées sur les bonnes pratiques en matière d’ingénierie d’Adobe Experience Manager. Voir aussi [test de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md).
 
 Les règles SonarQube complètes ne peuvent pas être téléchargées en raison des informations propriétaires d’Adobe. Vous pouvez télécharger la liste complète des règles *actuelles* [via ce lien](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx). Poursuivez la lecture de ce document pour obtenir des descriptions et des exemples de règles.
 
@@ -117,8 +117,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **Gravité** : critique
 * **Depuis** : version 2018.6.0
 
-Lors de l’exécution de requêtes HTTP dans une application Experience Manager, il est essentiel de configurer les délais appropriés pour éviter toute consommation inutile de threads.
-Par défaut, le client HTTP Java™ (java.net.HttpUrlConnection) et le client de composants HTTP Apache largement utilisé n’imposent pas de délais d’expiration ; ils doivent donc être configurés manuellement. En règle générale, les délais d’expiration doivent être définis sur 60 secondes ou moins.
+Lors de l’exécution de requêtes HTTP dans une application Experience Manager, il est essentiel de configurer les délais appropriés pour éviter toute consommation inutile de threads.Par défaut, le client HTTP Java™ (java.net.HttpUrlConnection) et le client de composants HTTP Apache largement utilisé n’imposent pas de délais d’expiration ; ils doivent donc être configurés manuellement. En règle générale, les délais d’expiration doivent être définis sur 60 secondes ou moins.
 
 #### Code non conforme {#non-compliant-code-2}
 
@@ -1067,8 +1066,7 @@ Pour les index personnalisés, configurez `includedPaths` et `queryPaths` avec d
 * **Gravité** : mineure
 * **Depuis** : version 2023.1.0
 
-Lors de la définition de la propriété `nodeScopeIndex` sur un type de nœud « générique » tel que `nt:unstructured` ou `nt:base`, vous devez également spécifier les propriétés `includedPaths` et `queryPaths`.
-Le type de nœud `nt:base` peut être considéré comme « générique », car tous les types de nœud en héritent. Ainsi, la définition d’un `nodeScopeIndex` sur `nt:base` le fait indexer tous les nœuds du référentiel. De même, `nt:unstructured` est également considéré comme « générique », car de nombreux nœuds dans les référentiels sont de ce type.
+Lors de la définition de la propriété `nodeScopeIndex` sur un type de nœud « générique » tel que `nt:unstructured` ou `nt:base`, vous devez également spécifier les propriétés `includedPaths` et `queryPaths`.Le type de nœud `nt:base` peut être considéré comme « générique », car tous les types de nœud en héritent. Ainsi, la définition d’un `nodeScopeIndex` sur `nt:base` le fait indexer tous les nœuds du référentiel. De même, `nt:unstructured` est également considéré comme « générique », car de nombreux nœuds dans les référentiels sont de ce type.
 
 #### Code non conforme {#non-compliant-code-full-text-on-generic-node-type}
 

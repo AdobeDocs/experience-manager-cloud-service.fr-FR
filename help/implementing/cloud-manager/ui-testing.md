@@ -8,7 +8,7 @@ role: Admin, Developer
 source-git-commit: c17bbdac3738ab99be6d58da26825640eedbbdc4
 workflow-type: tm+mt
 source-wordcount: '2839'
-ht-degree: 38%
+ht-degree: 39%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 38%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
 >title="Tests de l’interface utilisateur"
->abstract="Les tests personnalisés de l’interface utilisateur sont une fonctionnalité facultative permettant de créer et d’exécuter automatiquement des tests de l’interface utilisateur de vos applications à l’aide d’images Docker basées sur Selenium."
+>abstract="Les tests personnalisés de l’interface d’utilisation sont une fonctionnalité facultative permettant de créer et d’exécuter automatiquement des tests de l’interface d’utilisation de vos applications à l’aide d’images Docker basées sur Selenium."
 
 Le test d’interface utilisateur personnalisé est une fonctionnalité facultative qui vous permet de créer et d’exécuter automatiquement des tests d’interface utilisateur pour vos applications.
 
