@@ -6,7 +6,7 @@ feature: Asset Management, Publishing, Collaboration, Video
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '5117'
 ht-degree: 93%
@@ -45,7 +45,7 @@ Pour charger une ressource vidéo, procédez comme suit :
 
 Vous pouvez prévisualiser les vidéos dans les rendus pris en charge dans l’interface utilisateur d’[!DNL Assets]. Pour prévisualiser une ressource vidéo, procédez comme suit :
 
-1. Chargez une ressource vidéo d’un format pris en charge dans [!DNL Experience Manager Assets]. En savoir plus sur les [&#x200B; formats vidéo pris en charge &#x200B;](file-format-support.md#video-formats). <br>Une fois le chargement effectué, la ressource vidéo est traitée et un rendu d’aperçu est généré.
+1. Chargez une ressource vidéo d’un format pris en charge dans [!DNL Experience Manager Assets]. En savoir plus sur les [ formats vidéo pris en charge ](file-format-support.md#video-formats). <br>Une fois le chargement effectué, la ressource vidéo est traitée et un rendu d’aperçu est généré.
 1. Cliquez sur la ressource, puis sélectionnez ![l’option Détails](assets/do-not-localize/details_icon.svg) **[!UICONTROL Détails]** dans la barre d’outils supérieure. La ressource vidéo s’ouvre dans la visionneuse de vidéos.
 1. Cliquez sur l’icône ![option de lecture](assets/do-not-localize/play.png) sur la miniature de la vidéo. <br>Vous pouvez lire, mettre en pause, contrôler le volume et zoomer sur la vidéo en plein écran.
 
@@ -654,3 +654,4 @@ Vous pouvez ajouter des annotations aux ressources vidéo. Lorsque vous annotez 
 >
 >* [Documentation vidéo de Dynamic Media](/help/assets/dynamic-media/video.md).
 >* [En savoir plus sur l’utilisation, les types et la configuration des profils de traitement](/help/assets/asset-microservices-configure-and-use.md).
+

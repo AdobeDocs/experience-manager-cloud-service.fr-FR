@@ -6,7 +6,7 @@ feature: Assets HTTP API
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '2161'
 ht-degree: 92%
@@ -73,7 +73,7 @@ L’article contient des recommandations, des documents de référence et des re
 
 Si `AEM Assets API Users` service Profil de produit ne s’affiche pas dans les environnements de production, de développement ou inférieurs créés avant novembre 2024, vous devez configurer des API AEM Assets basées sur OpenAPI.
 
-La configuration des API AEM Assets basées sur OpenAPI implique la modernisation de l’environnement AEM as a Cloud Service et l’activation de l’accès aux API AEM Assets. La modernisation doit être exécutée par environnement (production, développement et évaluation). Pour plus d’informations, voir [Configuration des API AEM basées sur OpenAPI](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup).
+La configuration des API AEM Assets basées sur OpenAPI implique la modernisation de l’environnement AEM as a Cloud Service et l’activation de l’accès aux API AEM Assets. La modernisation doit être exécutée par environnement (production, développement et évaluation). Pour plus d’informations, voir [Configuration des API AEM basées sur OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup).
 
 ## Chargement de ressources {#asset-upload}
 

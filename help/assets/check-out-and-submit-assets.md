@@ -6,7 +6,7 @@ feature: Asset Management
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: adb94a31-d949-4f4a-89bc-44f1b4f67e14
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 99%
@@ -81,5 +81,6 @@ Les administrateurs peuvent archiver les ressources extraites par d’autres uti
 
 >[!MORELIKETHIS]
 >
->* [Présentation de l’archivage et de l’extraction dans l’appli de bureau [!DNL Experience Manager] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#how-app-works2)
+>* [Présentation de l’archivage et de l’extraction dans l’appli de bureau [!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#how-app-works2)
 >* [Tutoriel vidéo pour comprendre l’archivage et l’extraction [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html?lang=fr)
+

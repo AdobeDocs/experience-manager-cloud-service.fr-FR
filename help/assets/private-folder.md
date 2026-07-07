@@ -6,7 +6,7 @@ role: User
 feature: Collaboration
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: d48f6daf-af81-4024-bff2-e8bf6d683b0c
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 96%
@@ -99,3 +99,4 @@ Vous pouvez supprimer un dossier en le sélectionnant et en sélectionnant [!UIC
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

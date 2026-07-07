@@ -5,7 +5,7 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Asse
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 9%
@@ -22,7 +22,7 @@ Les rendus sont classés comme statiques et dynamiques, chaque type présentant 
 
 ## Rendus statiques {#static-renditions}
 
-Les rendus statiques sont des versions prégénérées de ressources numériques, généralement créées lors de l’ingestion ou de la modification de ressources. Ces rendus sont optimisés pour des objectifs et des plateformes spécifiques, tels que des miniatures web, des formats compatibles avec les appareils mobiles pour le responsive design ou des versions haute résolution pour l’impression, afin d’assurer une expérience efficace et cohérente.Découvrez comment [&#x200B; afficher et télécharger des rendus statiques &#x200B;](#view-and-download-static-renditions) dans Experience Manager Assets.
+Les rendus statiques sont des versions prégénérées de ressources numériques, généralement créées lors de l’ingestion ou de la modification de ressources. Ces rendus sont optimisés pour des objectifs et des plateformes spécifiques, tels que des miniatures web, des formats compatibles avec les appareils mobiles pour le responsive design ou des versions haute résolution pour l’impression, afin d’assurer une expérience efficace et cohérente.Découvrez comment [ afficher et télécharger des rendus statiques ](#view-and-download-static-renditions) dans Experience Manager Assets.
 
 ### Affichage et téléchargement des rendus statiques{#view-and-download-static-renditions}
 
@@ -48,7 +48,7 @@ Les rendus dynamiques sont des versions personnalisées des ressources créées 
    * [Paramètres d’image prédéfinis](/help/assets/dynamic-media/managing-image-presets.md)
 
   Vous pouvez [changer de vue](/help/assets/assets-view-introduction.md#how-to-access-assets-view) ultérieurement pour prévisualiser les rendus dynamiques dans la vue Assets.
-* Publiez des ressources dans Dynamic Media pour rendre les rendus Dynamic Media disponibles dans la vue Assets. Pour plus d’informations, voir [Publication d’Assets dans AEM et Dynamic Media](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm).
+* Publiez des ressources dans Dynamic Media pour rendre les rendus Dynamic Media disponibles dans la vue Assets. Pour plus d’informations, voir [Publication d’Assets dans AEM et Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm).
 
 
 ### Affichage et téléchargement des rendus Dynamic Media {#view-download-dm-renditions}
@@ -110,3 +110,4 @@ Si les fonctionnalités Scene7 (Dynamic Media) et Dynamic Media avec OpenAPI son
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

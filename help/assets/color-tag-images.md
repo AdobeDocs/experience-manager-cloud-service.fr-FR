@@ -5,7 +5,7 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Asse
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
 feature: Smart Imaging, Interactive Images, Asset Management
 role: User, Admin
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 73%
@@ -113,7 +113,7 @@ Pour appliquer des balises de couleurs aux images ou aux dossiers (y compris les
 
 1. Sélectionnez le logo [!DNL Adobe Experience Manager], puis les ressources dans la page [!UICONTROL Navigation].
 
-1. Sélectionnez [!UICONTROL &#x200B; Fichiers &#x200B;].
+1. Sélectionnez [!UICONTROL  Fichiers ].
 
 1. Dans l’interface d’Assets, accédez au dossier auquel vous souhaitez appliquer des balises de couleurs.
 
@@ -121,7 +121,7 @@ Pour appliquer des balises de couleurs aux images ou aux dossiers (y compris les
 
 1. Sélectionnez l’icône [!UICONTROL Retraiter les ressources] ![icône Retraiter les ressources](assets/do-not-localize/reprocess-assets-icon.png) et sélectionnez l’option [!UICONTROL Processus complet].
 
-Une fois le processus terminé, accédez à la page [!UICONTROL Propriétés] de n’importe quelle image dans le dossier. Les balises ajoutées automatiquement sont affichées dans la section [!UICONTROL &#x200B; Balises de couleurs intelligentes &#x200B;] de l’onglet [!UICONTROL De base].
+Une fois le processus terminé, accédez à la page [!UICONTROL Propriétés] de n’importe quelle image dans le dossier. Les balises ajoutées automatiquement sont affichées dans la section [!UICONTROL  Balises de couleurs intelligentes ] de l’onglet [!UICONTROL De base].
 
 
 ## Afficher les balises de couleurs intelligentes des images {#view-color-tags}
@@ -202,3 +202,4 @@ Pour rechercher des images en fonction des couleurs :
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

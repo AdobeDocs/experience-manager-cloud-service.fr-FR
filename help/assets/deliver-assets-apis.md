@@ -4,7 +4,7 @@ description: Découvrez comment utiliser les API de diffusion.
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 77b334434251a98d9c4f44cede9275d839f6ac40
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 18%
@@ -19,7 +19,7 @@ Toute modification apportée aux ressources approuvées dans la gestion des ress
 
 L’image suivante illustre les URL de diffusion disponibles :
 
-![&#x200B; API de diffusion &#x200B;](assets/delivery-url.png)
+![ API de diffusion ](assets/delivery-url.png)
 
 Le tableau suivant illustre l’utilisation des différentes API de diffusion disponibles :
 
@@ -35,7 +35,7 @@ Le tableau suivant illustre l’utilisation des différentes API de diffusion di
 
 >[!IMPORTANT]
 >
->Vous pouvez tester n’importe quel modificateur, qui n’est généralement pas disponible via les API expérimentales. Par exemple : Cliquez ici pour en savoir plus sur l’utilisation des [API expérimentales](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) et la [&#x200B; liste complète des modificateurs](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+>Vous pouvez tester n’importe quel modificateur, qui n’est généralement pas disponible via les API expérimentales. Par exemple : Cliquez ici pour en savoir plus sur l’utilisation des [API expérimentales](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) et la [ liste complète des modificateurs](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 Dynamic Media avec les fonctionnalités OpenAPI prend également en charge les vidéos de forme longue. Les vidéos de forme longue peuvent prendre en charge jusqu’à 50 Go et 2 heures.
 
@@ -72,7 +72,7 @@ headers: {
     }
 ```
 
-Pour appeler les API de diffusion, un jeton IMS est requis dans les détails de la `Authorization` pour diffuser une ressource restreinte. Le jeton IMS est récupéré à partir d’un compte technique. Voir [Récupérer les informations d’identification AEM as a Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) pour créer un compte technique. Voir [Génération du jeton d’accès](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) pour générer le jeton IMS et l’utiliser de manière appropriée dans l’en-tête de la requête des API de diffusion.
+Pour appeler les API de diffusion, un jeton IMS est requis dans les détails de la `Authorization` pour diffuser une ressource restreinte. Le jeton IMS est récupéré à partir d’un compte technique. Voir [Récupérer les informations d’identification AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) pour créer un compte technique. Voir [Génération du jeton d’accès](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) pour générer le jeton IMS et l’utiliser de manière appropriée dans l’en-tête de la requête des API de diffusion.
 
 
 Pour afficher des exemples de requêtes, des exemples de réponses et des codes de réponse, voir [API de diffusion](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
@@ -95,3 +95,4 @@ Pour afficher des exemples de requêtes, des exemples de réponses et des codes 
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

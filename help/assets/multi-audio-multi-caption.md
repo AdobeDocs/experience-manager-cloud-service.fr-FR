@@ -3,7 +3,7 @@ title: Vidéos sur les fonctionnalités Multi Audio et Multi Captions dans Dynam
 description: Découvrez comment ajouter et gérer plusieurs pistes audio et sous-titres pour les ressources vidéo dans Dynamic Media avec les fonctionnalités OpenAPI d’Adobe Experience Manager Assets.
 role: User
 badgeSaas: label="AEM Assets" type="Positive"
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 14%
@@ -19,7 +19,7 @@ Ces fonctionnalités sont gérées directement à partir de l’onglet **Légend
 
 >[!NOTE]
 >
->La prise en charge multi-audio et multi-légendes dans Dynamic Media avec les fonctionnalités OpenAPI est une fonctionnalité à disponibilité limitée. Vous pouvez l’activer en créant un [&#x200B; ticket d’assistance &#x200B;](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
+>La prise en charge multi-audio et multi-légendes dans Dynamic Media avec les fonctionnalités OpenAPI est une fonctionnalité à disponibilité limitée. Vous pouvez l’activer en créant un [ ticket d’assistance ](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
 
 Tous les formats vidéo Dynamic Media avec fonctionnalités OpenAPI prises en charge prennent en charge plusieurs légendes et pistes audio.
 
@@ -77,7 +77,7 @@ Pour ajouter des légendes :
 1. Sélectionnez un ou plusieurs fichiers `.vtt`.
 1. Cliquez sur l’icône **Dessin** en regard du fichier de légendes.
 
-![&#x200B; Boîte de dialogue Charger la légende &#x200B;](/help/assets/assets/upload-caption.png)
+![ Boîte de dialogue Charger la légende ](/help/assets/assets/upload-caption.png)
 
 Dans la boîte de dialogue **Modifier la légende** :
 
@@ -86,7 +86,7 @@ Dans la boîte de dialogue **Modifier la légende** :
 * **Type** - Sous-titre ou légende.
 * **Libellé** - Nom d’affichage affiché dans le sélecteur de légendes du lecteur.
 
-![&#x200B; Boîte de dialogue Modifier la légende &#x200B;](/help/assets/assets/edit-captions.png)
+![ Boîte de dialogue Modifier la légende ](/help/assets/assets/edit-captions.png)
 
 1. Cliquez sur **Enregistrer**.
 2. Cliquez sur **Enregistrer et fermer**.

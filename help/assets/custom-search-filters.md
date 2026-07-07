@@ -4,7 +4,7 @@ description: En savoir plus sur la personnalisation du formulaire des filtres de
 role: User, Leader, Developer
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 383e8165-439e-447b-a19d-d5446238a13f
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '1477'
 ht-degree: 81%
@@ -42,7 +42,7 @@ Les filtres de recherche AEM Assets personnalisés ne peuvent être mappés qu�
 
 Vous pouvez utiliser les actions suivantes sur un formulaire de filtres configuré :
 
-* **[!UICONTROL Personnaliser] :** cliquez sur cette option pour ajouter ou modifier le formulaire. Vous pouvez déposer des éléments de filtre depuis les [&#x200B; filtres personnalisés &#x200B;](#available-custom-filters) sur la zone de travail ou les réorganiser si nécessaire.
+* **[!UICONTROL Personnaliser] :** cliquez sur cette option pour ajouter ou modifier le formulaire. Vous pouvez déposer des éléments de filtre depuis les [ filtres personnalisés ](#available-custom-filters) sur la zone de travail ou les réorganiser si nécessaire.
 
 * **[!UICONTROL Aperçu] :** cliquez pour passer en revue les modifications.
 
@@ -468,3 +468,4 @@ Une fois les filtres de recherche configurés, vous pouvez les utiliser pour rec
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

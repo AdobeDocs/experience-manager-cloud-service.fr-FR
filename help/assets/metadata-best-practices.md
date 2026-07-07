@@ -5,7 +5,7 @@ role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 5%
@@ -98,7 +98,7 @@ Déterminez d’où proviennent les informations et examinez les détails de la 
 
 >[!NOTE]
 >
->Découvrez comment [gérer les métadonnées de vos ressources numériques](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=fr).
+>Découvrez comment [gérer les métadonnées de vos ressources numériques](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html).
 
 ### Cohérence avec la stratégie de métadonnées
 
@@ -112,7 +112,7 @@ Voici quelques-unes des bonnes pratiques à suivre :
 
   Par exemple, au lieu d’utiliser des noms en double tels que *campaign_image_001* et *campaign_image_002*, implémentez une convention de nommage systématique telle que *event_promotion* et *product_launch*, pour garantir une identification claire et ordonnée.
 
-* **Utiliser efficacement des vocabulaires contrôlés :** implémentez des vocabulaires contrôlés en utilisant des termes normalisés pour les balises. Découvrez comment implémenter le [framework de balisage &#x200B;](/help/implementing/developing/introduction/tagging-framework.md) efficacement.
+* **Utiliser efficacement des vocabulaires contrôlés :** implémentez des vocabulaires contrôlés en utilisant des termes normalisés pour les balises. Découvrez comment implémenter le [framework de balisage ](/help/implementing/developing/introduction/tagging-framework.md) efficacement.
 
   Par exemple, utilisez de manière cohérente des termes tels que *product_launch* ou *event_promotion* lors du balisage des images avec des thèmes afin de maintenir une séquence systématique.
 
@@ -130,7 +130,7 @@ Vous pouvez tenir compte des bonnes pratiques suivantes pour optimiser la recher
 
 * **Optimisation des mots-clés :** améliorez la recherche de métadonnées en optimisant les mots-clés associés aux ressources. Vous pouvez améliorer la pertinence des mots-clés pour des ressources spécifiques dans [!UICONTROL Assets Manager] en procédant comme suit :
 
-   1. Accédez à **&#x200B;**&#x200B;> **[!UICONTROL Fichier]** > **[!UICONTROL [Dossier de ressources]]**.
+   1. Accédez à **** > **[!UICONTROL Fichier]** > **[!UICONTROL [Dossier de ressources]]**.
    1. Sélectionnez la ressource pour laquelle vous souhaitez mettre à jour les métadonnées, puis cliquez sur **[!UICONTROL Propriétés]**.
    1. Accédez à l’onglet **[!UICONTROL Avancé]**, puis cliquez sur **[!UICONTROL Ajouter]** sous l’onglet **[!UICONTROL Élever pour rechercher des mots-clés]**. <br>Vous devez utiliser le schéma de métadonnées par défaut pour élever les mots-clés de recherche.
    1. Saisissez le mot-clé pour lequel vous souhaitez améliorer la recherche, puis cliquez sur **[!UICONTROL Ajouter]**.Vous pouvez ajouter plusieurs mots-clés et les classer en fonction de votre priorité.
@@ -138,7 +138,7 @@ Vous pouvez tenir compte des bonnes pratiques suivantes pour optimiser la recher
 
   Découvrez comment [booster la recherche dans Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=fr).
 
-* **Champs de métadonnées personnalisés :** personnalisez vos champs de métadonnées pour capturer des informations supplémentaires sur les ressources. Par exemple, ajoutez des champs spécifiques pour les détails du projet, des informations de copyright ou toute autre donnée pertinente qui améliore les fonctionnalités de recherche. Découvrez [&#x200B; modifier ou ajouter des métadonnées personnalisées &#x200B;](meta-edit.md) dans Experience Manager Assets.
+* **Champs de métadonnées personnalisés :** personnalisez vos champs de métadonnées pour capturer des informations supplémentaires sur les ressources. Par exemple, ajoutez des champs spécifiques pour les détails du projet, des informations de copyright ou toute autre donnée pertinente qui améliore les fonctionnalités de recherche. Découvrez [ modifier ou ajouter des métadonnées personnalisées ](meta-edit.md) dans Experience Manager Assets.
 
 
 * **Validation des métadonnées :** implémentez des contrôles de validation pour les entrées de métadonnées afin d’assurer la cohérence et la précision. L’utilisation de vocabulaires contrôlés rend le processus de validation plus fluide et réduit les risques d’entrées peu claires ou incohérentes. Cela peut impliquer de définir des instructions pour certaines propriétés de métadonnées afin d’éviter toute information ambiguë ou incohérente.
@@ -165,7 +165,7 @@ Examinez le supply chain de contenu pour trouver les sources de métadonnées et
 
 Communiquez rapidement les objectifs, les progrès, les jalons et les défis afin de recevoir les commentaires et la coopération de toutes les parties prenantes. Encouragez la collaboration à l’échelle de l’organisation pour créer des processus efficaces et des métadonnées précieuses.
 
-En savoir plus sur [les métadonnées et les concepts associés](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html?lang=fr) pour gérer efficacement les métadonnées Experience Manager.
+En savoir plus sur [les métadonnées et les concepts associés](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html) pour gérer efficacement les métadonnées Experience Manager.
 
 
 **Voir également**
@@ -185,3 +185,4 @@ En savoir plus sur [les métadonnées et les concepts associés](https://experie
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

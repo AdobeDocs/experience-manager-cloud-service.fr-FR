@@ -6,7 +6,7 @@ feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '1758'
 ht-degree: 93%
@@ -127,7 +127,7 @@ Changeons maintenant la **[!UICONTROL Destination]** dans le cas d’utilisation
 >
 >Si [!DNL Dynamic Media] n’est pas configuré sur votre instance [!DNL Experience Manager Assets] et si la **[!UICONTROL Destination]** est sur **[!UICONTROL Publier]**, les ressources et les dossiers sont toujours publiés vers `AEM`.
 >
->La publication vers [!DNL Brand Portal] est indépendante des propriétés d’un dossier. Toutes les ressources, tous les dossiers et toutes les collections peuvent être publiés sur Brand Portal. Consultez [Publication de ressources sur Brand Portal. &#x200B;](#publish-assets-to-brand-portal)
+>La publication vers [!DNL Brand Portal] est indépendante des propriétés d’un dossier. Toutes les ressources, tous les dossiers et toutes les collections peuvent être publiés sur Brand Portal. Consultez [Publication de ressources sur Brand Portal. ](#publish-assets-to-brand-portal)
 
 >[!NOTE]
 >

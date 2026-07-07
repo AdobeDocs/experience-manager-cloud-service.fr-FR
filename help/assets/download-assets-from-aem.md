@@ -6,7 +6,7 @@ feature: Asset Management
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '1338'
 ht-degree: 78%
@@ -49,7 +49,7 @@ Par défaut, [!DNL Experience Manager] déclenche une notification dans la [[!DN
 
 Lorsqu’un utilisateur demande un téléchargement contenant des dossiers ou des collections, AEM effectue une estimation rapide du nombre d’éléments (Assets, dossiers ou rendus) sous le ou les dossiers ou collections téléchargés, afin de s’assurer que le téléchargement demandé se situe dans les limites prises en charge. Par défaut, les téléchargements contenant plus de 50 000 éléments sont bloqués et AEM affiche le message `The selected items are larger than the configured maximum download limit` .
 
-Il est possible d’augmenter la limite de taille de téléchargement en ajoutant une configuration OSGI affichée ci-dessous au code de votre application et [déploiement via un pipeline Cloud Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi) :
+Il est possible d’augmenter la limite de taille de téléchargement en ajoutant une configuration OSGI affichée ci-dessous au code de votre application et [déploiement via un pipeline Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi) :
 
 ```
 com.adobe.cq.dam.download.impl.DownloadConfiguration   
@@ -151,3 +151,4 @@ Pour activer le service `OnOffTimeAssetAccessFilter`, vous devez créer une conf
 >* [Téléchargement de ressources protégées par DRM](drm.md)
 >* [Télécharger des ressources à l’aide de l’appli de bureau Experience Manager sur un poste de travail Windows ou Mac](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr)
 >* [Télécharger des ressources à l’aide d’Adobe Assets Link depuis les applications Adobe Creative Cloud prises en charge](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html)
+

@@ -2,7 +2,7 @@
 title: Configuration d’un domaine personnalisé pour le niveau de diffusion
 description: Découvrez comment configurer un domaine personnalisé pour le niveau de diffusion dans Adobe Cloud Manager.
 exl-id: cc71c8c5-cf42-4092-b0e0-646a2ed0ee54
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 14%
@@ -26,15 +26,15 @@ Assurez-vous de répondre aux exigences suivantes avant de démarrer le processu
 
 * Accès à Cloud Manager
 * Déjà activé Dynamic Media avec OpenAPI dans votre environnement via un ticket d’assistance
-* Certificat SSL de type EV ou OV pour le domaine utilisé dans le niveau de diffusion. Voir [&#x200B; Présentation des certificats SSL &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates) pour plus d’informations
+* Certificat SSL de type EV ou OV pour le domaine utilisé dans le niveau de diffusion. Voir [ Présentation des certificats SSL ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates) pour plus d’informations
 
 ## Configuration d’un domaine personnalisé dans le niveau de diffusion à l’aide de Cloud Manager
 
 Exécutez les étapes suivantes dans Cloud Manager :
 
-1. [Ajouter un certificat SSL géré par le client](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate#add-customer-managed-ssl-cert)
+1. [Ajouter un certificat SSL géré par le client](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate#add-customer-managed-ssl-cert)
 
-2. [Ajouter un nom de domaine personnalisé](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings)
+2. [Ajouter un nom de domaine personnalisé](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings)
 
 Après avoir suivi les étapes ci-dessus, ouvrez un ticket d’assistance Adobe pour le mappage de domaine personnalisé. Adobe effectue le mappage de domaine dans le cadre du processus de prise en charge.
 
@@ -55,3 +55,4 @@ Après avoir suivi les étapes ci-dessus, ouvrez un ticket d’assistance Adobe 
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

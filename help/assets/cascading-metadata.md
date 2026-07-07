@@ -5,7 +5,7 @@ feature: Metadata
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 85%
@@ -37,7 +37,7 @@ Supposons que vous souhaitiez afficher des métadonnées en cascade en fonction 
 Sans tenir compte du type de ressource choisi, affichez les informations de copyright comme étant un champ requis.
 
 1. Sélectionnez le logo [!DNL Experience Manager] et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Assets]** > **[!UICONTROL Schémas de métadonnées]**.
-1. Sur la page Forms de schéma **, sélectionnez un formulaire de schéma, puis sélectionnez**&#x200B;[!UICONTROL &#x200B; Modifier &#x200B;]&#x200B;**dans la barre d’outils pour modifier le schéma.**
+1. Sur la page Forms de schéma ]**, sélectionnez un formulaire de schéma, puis sélectionnez**[!UICONTROL  Modifier ]**dans la barre d’outils pour modifier le schéma.**[!UICONTROL 
 
    ![select_form](assets/select_form.png)
 
@@ -108,10 +108,10 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 
 1. Accédez au dossier auquel vous avez appliqué le schéma de métadonnées et ouvrez la page des propriétés d’une ressource. Selon votre choix dans le champ Type de ressource, les champs de métadonnées en cascade pertinents s’affichent.
 
-   !&lbrack;Métadonnées en cascade pour une ressource vidéo
+   ![Métadonnées en cascade pour une ressource vidéo
    *Figure : Métadonnées en cascade pour une ressource vidéo*
 
-   !&lbrack;Métadonnées en cascade pour une ressource de document
+   ![Métadonnées en cascade pour une ressource de document
    *Figure : Métadonnées en cascade pour une ressource de document*
 
 **Voir également**
@@ -131,4 +131,5 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
 
