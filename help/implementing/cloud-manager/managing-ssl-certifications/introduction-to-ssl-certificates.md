@@ -7,8 +7,8 @@ feature: Cloud Manager, Developing
 role: Admin, Developer
 source-git-commit: b4b5fb587f2b93019e7a0a273bd106d9ab1de54c
 workflow-type: tm+mt
-source-wordcount: '1302'
-ht-degree: 12%
+source-wordcount: '1323'
+ht-degree: 14%
 
 ---
 
@@ -20,7 +20,7 @@ Découvrez les outils en libre-service fournis par Cloud Manager pour installer 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
 >title="Gérer des certificats SSL"
->abstract="Cloud Manager fournit des outils en libre-service pour installer et gérer les certificats SSL. Il utilise un service Platform TLS pour gérer les certificats détenus par le client et les clés privées provenant d’autorités de certification tierces."
+>abstract="Cloud Manager fournit des outils en libre-service pour installer et gérer les certificats SSL. Il utilise un service Platform TLS pour gérer les certificats détenus par le client et les clés privées provenant d’autorités de certification tierces."
 >additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Affichage, mise à jour et remplacement d’un certificat SSL"
 >additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Vérification du statut d’un certificat SSL"
 
@@ -55,7 +55,7 @@ Les deux modèles offrent les fonctionnalités générales suivantes pour gérer
 
 ### Certificats SSL gérés par Adobe (DV) {#adobe-managed}
 
-Les certificats DV constituent le niveau de certification SSL le plus élémentaire et sont souvent utilisés à des fins de test ou pour sécuriser des sites web avec un chiffrement de base. Les certificats DV sont disponibles dans les [&#x200B; programmes de production et les programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
+Les certificats DV constituent le niveau de certification SSL le plus élémentaire et sont souvent utilisés à des fins de test ou pour sécuriser des sites web avec un chiffrement de base. Les certificats DV sont disponibles dans les [ programmes de production et les programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 Une fois le certificat DV créé, Adobe le renouvelle automatiquement tous les trois mois, sauf s’il est supprimé.
 
@@ -86,8 +86,7 @@ Si vous choisissez d’ajouter votre propre certificat SSL géré par le client,
 * Le certificat doit être un certificat TLS X.509 émis par une autorité de certification approuvée (CA).
 * Les types de clés cryptographiques pris en charge sont les suivants :
 
-   * RSA 2048 bits, prise en charge standard.
-Les clés RSA de plus de 2 048 bits (telles que les clés RSA de 3 072 bits ou de 4 096 bits) ne sont pas prises en charge pour le moment.
+   * RSA 2048 bits, prise en charge standard.Les clés RSA de plus de 2 048 bits (telles que les clés RSA de 3 072 bits ou de 4 096 bits) ne sont pas prises en charge pour le moment.
    * Clés de courbe elliptique (EC) `prime256v1` (`secp256r1`) et `secp384r1`
    * Certificats ECDSA (Elliptic Curve Digital Signature Algorithm). Ces certificats sont recommandés par Adobe plutôt que par RSA pour améliorer les performances, la sécurité et l’efficacité.
 
@@ -164,12 +163,12 @@ Si vous avez atteint la limite, vérifiez vos certificats et envisagez de suppri
 
 ### Chiffrement des limites de débit pour les certificats DV gérés par Adobe
 
-Les certificats DV gérés par Adobe reposent sur Let’s Encrypt. Outre la limite de Cloud Manager sur les certificats installés, Let’s Encrypt applique ses propres limites de débit. Une limite de clé est la suivante **Nouveaux certificats par ensemble exact d’identifiants** : jusqu’à 5 certificats sont émis pour l’ensemble des noms d’hôtes au cours d’une période de 7 jours. Si cette limite est atteinte, Cloud Manager affiche une erreur et ne peut pas créer d’autres certificats pour ce nom d’hôte tant que la fenêtre de limite de taux n’est pas réinitialisée. Pour connaître les dernières valeurs et d’autres limites associées, consultez la documentation [&#x200B; Chiffrons les limites de taux &#x200B;](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers).
+Les certificats DV gérés par Adobe reposent sur Let’s Encrypt. Outre la limite de Cloud Manager sur les certificats installés, Let’s Encrypt applique ses propres limites de débit. Une limite de clé est la suivante **Nouveaux certificats par ensemble exact d’identifiants** : jusqu’à 5 certificats sont émis pour l’ensemble des noms d’hôtes au cours d’une période de 7 jours. Si cette limite est atteinte, Cloud Manager affiche une erreur et ne peut pas créer d’autres certificats pour ce nom d’hôte tant que la fenêtre de limite de taux n’est pas réinitialisée. Pour connaître les dernières valeurs et d’autres limites associées, consultez la documentation [ Chiffrons les limites de taux ](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers).
 
 ## En savoir plus {#learn-more}
 
 Un utilisateur disposant des autorisations nécessaires peut utiliser Cloud Manager pour gérer les certificats SSL d’un programme. Pour plus d’informations sur l’utilisation de ces fonctionnalités, consultez les documents suivants.
 
 * [Ajouter un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) <!--CQDOC-21758, #4 -->
-* [Gestion des certificats SSL &#x200B;](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md) <!--CQDOC-21758, #4 -->
+* [Gestion des certificats SSL ](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md) <!--CQDOC-21758, #4 -->
 

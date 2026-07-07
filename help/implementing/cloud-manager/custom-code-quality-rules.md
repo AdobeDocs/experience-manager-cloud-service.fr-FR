@@ -7,8 +7,8 @@ feature: Cloud Manager, Developing
 role: Admin, Developer
 source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
-source-wordcount: '4362'
-ht-degree: 57%
+source-wordcount: '4455'
+ht-degree: 56%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 57%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_customcodequalityrules"
 >title="Règles de qualité du code personnalisé"
->abstract="Pour garantir un code de haute qualité par le biais de tests approfondis, découvrez les règles de qualité du code personnalisé de Cloud Manager, basées sur les bonnes pratiques en matière d’ingénierie Adobe Experience Manager."
+>abstract="Pour garantir un code de haute qualité grâce à des tests approfondis, découvrez les règles de qualité du code personnalisé Cloud Manager, basées sur les bonnes pratiques en matière d’ingénierie d’Adobe Experience Manager."
 
-Pour garantir un code de haute qualité par le biais de tests approfondis, découvrez les règles de qualité du code personnalisé de Cloud Manager, basées sur les bonnes pratiques en matière d’ingénierie Adobe Experience Manager. Voir aussi [test de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md).
+Pour garantir un code de haute qualité grâce à des tests approfondis, découvrez les règles de qualité du code personnalisé Cloud Manager, basées sur les bonnes pratiques en matière d’ingénierie d’Adobe Experience Manager. Voir aussi [test de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md).
 
 Les règles SonarQube complètes ne peuvent pas être téléchargées en raison des informations propriétaires d’Adobe. Vous pouvez télécharger la liste complète des règles *actuelles* [via ce lien](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx). Poursuivez la lecture de ce document pour obtenir des descriptions et des exemples de règles.
 
@@ -117,8 +117,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **Gravité** : critique
 * **Depuis** : version 2018.6.0
 
-Lors de l’exécution de requêtes HTTP dans une application Experience Manager, il est essentiel de configurer les délais appropriés pour éviter toute consommation inutile de threads.
-Par défaut, le client HTTP Java™ (java.net.HttpUrlConnection) et le client de composants HTTP Apache largement utilisé n’imposent pas de délais d’expiration ; ils doivent donc être configurés manuellement. En règle générale, les délais d’expiration doivent être définis sur 60 secondes ou moins.
+Lors de l’exécution de requêtes HTTP dans une application Experience Manager, il est essentiel de configurer les délais appropriés pour éviter toute consommation inutile de threads.Par défaut, le client HTTP Java™ (java.net.HttpUrlConnection) et le client de composants HTTP Apache largement utilisé n’imposent pas de délais d’expiration ; ils doivent donc être configurés manuellement. En règle générale, les délais d’expiration doivent être définis sur 60 secondes ou moins.
 
 #### Code non conforme {#non-compliant-code-2}
 
@@ -235,7 +234,7 @@ public void orDoThis(Session session) throws Exception {
 * **Gravité** : majeure
 * **Depuis** : version 2018.4.0
 
-Comme décrit dans la documentation [&#128279;](https://sling.apache.org/documentation/the-sling-engine/servlets.html) la liaison de servlets par chemins d’accès est découragée. `Sling`Les servlets liés au chemin ne peuvent pas utiliser les contrôles d’accès JCR standard et, par conséquent, nécessitent une rigueur de sécurité supplémentaire. Plutôt que d’utiliser des servlets liés au chemin d’accès, il est recommandé de créer des nœuds dans le référentiel et d’enregistrer les servlets par type de ressource.
+Comme décrit dans la documentation ](https://sling.apache.org/documentation/the-sling-engine/servlets.html) la liaison de servlets par chemins d’accès est découragée. [`Sling`Les servlets liés au chemin ne peuvent pas utiliser les contrôles d’accès JCR standard et, par conséquent, nécessitent une rigueur de sécurité supplémentaire. Plutôt que d’utiliser des servlets liés au chemin d’accès, il est recommandé de créer des nœuds dans le référentiel et d’enregistrer les servlets par type de ressource.
 
 #### Code non conforme {#non-compliant-code-5}
 
@@ -510,7 +509,7 @@ public void doThis(Resource resource) {
 
 N’utilisez pas le planificateur de `Sling` pour les tâches qui nécessitent une exécution garantie. Les tâches planifiées Sling garantissent l’exécution et conviennent mieux aux environnements organisés avec ou sans grappes.
 
-Pour en savoir plus sur la façon dont les tâches Sling sont gérées dans des environnements en cluster, voir Gestion des événements et des tâches [&#128279;](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html).`Apache Sling`
+Pour en savoir plus sur la façon dont les tâches Sling sont gérées dans des environnements en cluster, voir Gestion des événements et des tâches ](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html).[`Apache Sling`
 
 ### N’utilisez pas d’API obsolètes d’Experience Manager. {#sonarqube-aem-api-deprecated}
 
@@ -547,7 +546,7 @@ Cependant, il existe des cas où une API est abandonnée dans le cadre d’Exper
 
 Le projet `Apache Sling` décourage l’utilisation de l’annotation `@Inject` dans le contexte des modèles Sling, car elle peut entraîner de mauvaises performances lorsqu’elle est combinée avec la `DefaultInjectionStrategy.OPTIONAL` (au niveau du champ ou de la classe). Des injections plus spécifiques (comme les annotations `@ValueMapValue` ou `@OsgiInjector`) doivent être utilisées à la place.
 
-Consultez la documentation [&#128279;](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) pour plus d’informations sur les annotations recommandées et sur les raisons pour lesquelles cette recommandation a été formulée.`Apache Sling`
+Consultez la documentation ](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) pour plus d’informations sur les annotations recommandées et sur les raisons pour lesquelles cette recommandation a été formulée.[`Apache Sling`
 
 
 ### Réutilisation des instances d’un client HTTP {#sonarqube-reuse-httpclient}
@@ -561,7 +560,7 @@ Les applications AEM se connectent souvent à d’autres applications à l’aid
 
 Cette règle vérifie qu’un tel objet HttpClient n’est pas privé dans une méthode, mais global au niveau de la classe, afin qu’il puisse être réutilisé. Dans ce cas, le champ HttpClient doit être défini dans le constructeur de la classe ou de la méthode `activate()` (si cette classe est un composant/service OSGi).
 
-Consultez le [&#x200B; Guide d’optimisation &#x200B;](https://hc.apache.org/httpclient-legacy/performance.html) du HttpClient pour connaître quelques bonnes pratiques concernant l’utilisation du HttpClient.
+Consultez le [ Guide d’optimisation ](https://hc.apache.org/httpclient-legacy/performance.html) du HttpClient pour connaître quelques bonnes pratiques concernant l’utilisation du HttpClient.
 
 #### Code non conforme {#non-compliant-code-14}
 
@@ -750,7 +749,7 @@ Le fait qu’un même composant OSGi soit configuré plusieurs fois est un probl
 >
 >Par exemple, si la création génère des packages nommés `com.myco:com.myco.ui.apps` et `com.myco:com.myco.all`, où `com.myco:com.myco.all` incorpore `com.myco:com.myco.ui.apps`, toutes les configurations dans `com.myco:com.myco.ui.apps` seront signalées comme doublons.
 >
->Cette situation est un cas de non-respect des [&#x200B; directives relatives à la structure du package de contenu &#x200B;](/help/implementing/developing/introduction/aem-project-content-package-structure.md). Dans cet exemple, la propriété `<cloudManagerTarget>none</cloudManagerTarget>` est absente de la `com.myco:com.myco.ui.apps` du package .
+>Cette situation est un cas de non-respect des [ directives relatives à la structure du package de contenu ](/help/implementing/developing/introduction/aem-project-content-package-structure.md). Dans cet exemple, la propriété `<cloudManagerTarget>none</cloudManagerTarget>` est absente de la `com.myco:com.myco.ui.apps` du package .
 
 #### Code non conforme {#non-compliant-code-osgi}
 
@@ -1067,8 +1066,7 @@ Pour les index personnalisés, configurez `includedPaths` et `queryPaths` avec d
 * **Gravité** : mineure
 * **Depuis** : version 2023.1.0
 
-Lors de la définition de la propriété `nodeScopeIndex` sur un type de nœud « générique » tel que `nt:unstructured` ou `nt:base`, vous devez également spécifier les propriétés `includedPaths` et `queryPaths`.
-Le type de nœud `nt:base` peut être considéré comme « générique », car tous les types de nœud en héritent. Ainsi, la définition d’un `nodeScopeIndex` sur `nt:base` le fait indexer tous les nœuds du référentiel. De même, `nt:unstructured` est également considéré comme « générique », car de nombreux nœuds dans les référentiels sont de ce type.
+Lors de la définition de la propriété `nodeScopeIndex` sur un type de nœud « générique » tel que `nt:unstructured` ou `nt:base`, vous devez également spécifier les propriétés `includedPaths` et `queryPaths`.Le type de nœud `nt:base` peut être considéré comme « générique », car tous les types de nœud en héritent. Ainsi, la définition d’un `nodeScopeIndex` sur `nt:base` le fait indexer tous les nœuds du référentiel. De même, `nt:unstructured` est également considéré comme « générique », car de nombreux nœuds dans les référentiels sont de ce type.
 
 #### Code non conforme {#non-compliant-code-full-text-on-generic-node-type}
 

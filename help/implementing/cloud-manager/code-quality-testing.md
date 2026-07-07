@@ -8,7 +8,7 @@ role: Admin, Developer
 source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
 source-wordcount: '1160'
-ht-degree: 67%
+ht-degree: 69%
 
 ---
 
@@ -19,7 +19,7 @@ Découvrez comment fonctionne le test de qualité du code des pipelines et comme
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_codequalitytests"
 >title="Test de qualité du code"
->abstract="Le test de qualité du code évalue le code de votre application par rapport aux règles de qualité. Il s’agit de l’objectif principal d’un pipeline dédié uniquement à la qualité du code, exécuté après l’étape de création dans tous les pipelines."
+>abstract="Le test de qualité du code évalue le code de votre application par rapport à des règles de qualité. Il s’agit de l’objectif principal d’un pipeline dédié uniquement à la qualité du code. Cette étape est exécutée après l’étape de création dans tous les pipelines."
 
 ## Présentation {#introduction}
 
@@ -29,7 +29,7 @@ Pour en savoir plus sur les différents types de pipelines, voir [Configuration 
 
 ## Règles de qualité du code {#understanding-code-quality-rules}
 
-Les tests de qualité du code analysent le code source afin de s’assurer qu’il répond à certains critères de qualité. Cette étape est implémentée par une combinaison de SonarQube et d’examens au niveau du package de contenu à l’aide d’OakPAL. Il existe plus de 100 règles, combinant des règles Java génériques et des règles spécifiques à AEM. Certaines règles spécifiques à AEM sont basées sur les bonnes pratiques de l’ingénierie AEM et sont connues sous le nom de [&#x200B; Règles de qualité du code personnalisé &#x200B;](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+Les tests de qualité du code analysent le code source afin de s’assurer qu’il répond à certains critères de qualité. Cette étape est implémentée par une combinaison de SonarQube et d’examens au niveau du package de contenu à l’aide d’OakPAL. Il existe plus de 100 règles, combinant des règles Java génériques et des règles spécifiques à AEM. Certaines règles spécifiques à AEM sont basées sur les bonnes pratiques de l’ingénierie AEM et sont connues sous le nom de [ Règles de qualité du code personnalisé ](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 Vous pouvez télécharger la liste complète des règles [via ce lien](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
 
