@@ -3,7 +3,7 @@ title: Questions fréquentes sur Content Hub
 description: Obtenez des réponses à certaines des questions les plus fréquentes (FAQ) pour Content Hub.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
 workflow-type: tm+mt
 source-wordcount: '1749'
 ht-degree: 67%
@@ -186,3 +186,4 @@ Lorsqu’elle est disponible, le hub de contenus affiche l’image comme miniatu
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

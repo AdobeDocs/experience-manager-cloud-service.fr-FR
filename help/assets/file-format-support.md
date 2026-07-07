@@ -6,7 +6,7 @@ feature: Asset Management, Renditions
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
 workflow-type: tm+mt
 source-wordcount: '1117'
 ht-degree: 91%
@@ -293,3 +293,4 @@ Voir aussi [Formats 3D pris en charge](/help/assets/file-format-support.md#supp
 >
 >* [Traitement des ressources à l’aide des microservices de ressources](asset-microservices-overview.md).
 >* [Formats de fichiers pris en charge pour le balisage intelligent des ressources textuelles](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
+

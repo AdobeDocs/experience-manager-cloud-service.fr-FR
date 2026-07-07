@@ -3,7 +3,7 @@ title: Modification d’images dans Content Hub à l’aide d’Adobe Express
 description: Modification d’images dans Content Hub à l’aide d’Adobe Express
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 10%
@@ -101,4 +101,5 @@ Oui, les administrateurs peuvent configurer les champs obligatoires ou facultati
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
 

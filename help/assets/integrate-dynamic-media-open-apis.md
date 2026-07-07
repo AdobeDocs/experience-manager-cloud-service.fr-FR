@@ -4,7 +4,7 @@ description: Intégrer AEM Assets à des applications en aval
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: abd48b5d-2b43-453c-8eb6-31ff509245ca
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 33%
@@ -41,3 +41,4 @@ Le gestionnaire d’accès fournit une interface utilisateur qui s’intègre fa
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

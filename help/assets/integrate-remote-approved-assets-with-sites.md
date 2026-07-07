@@ -3,7 +3,7 @@ title: Intégrer AEM Assets distant à AEM Sites
 description: Découvrez comment configurer et connecter des sites AEM à des AEM Assets approuvées.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 19%
@@ -155,3 +155,4 @@ Vous pouvez accéder aux ressources distantes lors de la création de contenu da
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

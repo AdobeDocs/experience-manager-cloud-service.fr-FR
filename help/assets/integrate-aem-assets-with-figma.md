@@ -4,7 +4,7 @@ description: Découvrez comment intégrer  [!DNL AEM Assets]  avec pour accéder
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 530561ca-497b-4331-a014-72c561e1ca84
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
 workflow-type: tm+mt
 source-wordcount: '1520'
 ht-degree: 4%
@@ -126,3 +126,4 @@ La navigation entre les dossiers du référentiel AEM Assets est disponible dire
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
