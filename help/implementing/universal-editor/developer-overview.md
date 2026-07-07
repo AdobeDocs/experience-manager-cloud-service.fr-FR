@@ -6,8 +6,8 @@ feature: Developing
 role: Admin, Developer
 source-git-commit: 392fdb0a0c1982f9be59cb530e86f13aeea3316b
 workflow-type: tm+mt
-source-wordcount: '3179'
-ht-degree: 100%
+source-wordcount: '3229'
+ht-degree: 99%
 
 ---
 
@@ -32,7 +32,7 @@ Pour ce faire, il prend un exemple standard que la plupart des développeurs et 
 
 Pour suivre cette vue d’ensemble, vous avez besoin des éléments suivants.
 
-* [Une instance de développement local d’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr).
+* [Une instance de développement local d’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr)
    * Votre instance de développement locale doit être [configurée avec HTTPS à des fins de développement sur `localhost`](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=fr).
    * [Le site de démonstration WKND doit être installé](https://github.com/adobe/aem-guides-wknd).
 * [Accès à l’éditeur universel](/help/implementing/universal-editor/getting-started.md#onboarding).

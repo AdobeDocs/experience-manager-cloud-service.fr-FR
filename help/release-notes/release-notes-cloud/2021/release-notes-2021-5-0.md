@@ -6,7 +6,7 @@ feature: Release Information
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1355'
+source-wordcount: '1404'
 ht-degree: 92%
 
 ---
@@ -24,8 +24,7 @@ La section suivante concerne les notes de mise à jour générales de la version
 
 ## Date de publication {#release-date}
 
-La date de publication d’[!DNL Adobe Experience Manager] as a Cloud Service version 2021.5.0 est le 27 mai 2021.
-La version suivante (2021.6.0) sera publiée le 28 juin 2021.
+La date de publication d’[!DNL Adobe Experience Manager] as a Cloud Service version 2021.5.0 est le 27 mai 2021.La version suivante (2021.6.0) sera publiée le 28 juin 2021.
 
 ## AEM as a Cloud Service Foundation {#foundation}
 
@@ -39,13 +38,13 @@ La version suivante (2021.6.0) sera publiée le 28 juin 2021.
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Nouveautés d’[!DNL Sites]  {#what-is-new-sites}
+### Nouveautés d’[!DNL Sites] {#what-is-new-sites}
 
-* Vous pourrez bientôt vérifier le contenu sur un nouveau [niveau Aperçu](/help/sites-cloud/authoring/sites-console/previewing-content.md) pour simuler l’aspect final de l’expérience comme vous le feriez sur le niveau Publication. Cette fonctionnalité est activée par l’assistant de publication gérée d’AEM Sites qui vous permet désormais de choisir une destination de publication entre Publication ou Aperçu. Les expériences sur la prévisualisation sont ensuite accessibles via une URL dédiée. Après la validation sur Aperçu, le contenu peut être publié d’Auteur vers Publication, comme d’habitude. L’activation du service d’aperçu dans des environnements AEM as a Clou Service sera progressivement déployée au cours des prochaines semaines.
+* Vous pourrez bientôt vérifier le contenu sur un nouveau [niveau Aperçu](/help/sites-cloud/authoring/sites-console/previewing-content.md) pour simuler l’aspect final de l’expérience comme vous le feriez sur le niveau Publication. Cette fonctionnalité est activée par l’assistant de publication gérée d’AEM Sites qui vous permet désormais de choisir une destination de publication entre Publication ou Aperçu. Les expériences sur la prévisualisation sont ensuite accessibles via une URL dédiée. Après la validation sur Aperçu, le contenu peut être publié d’Auteur vers Publication, comme d’habitude. L’activation du service d’aperçu dans des environnements AEM as a Cloud Service sera progressivement déployée au cours des prochaines semaines.
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Nouveautés d’[!DNL Assets]  {#what-is-new-assets}
+### Nouveautés d’[!DNL Assets] {#what-is-new-assets}
 
 * Vous pouvez télécharger les ressources partagées à l’aide de la fonctionnalité Partage de liens. Ce téléchargement utilise désormais un service asynchrone qui offre des téléchargements plus rapides et ininterrompus, même pour les téléchargements très volumineux. Voir la section [Téléchargement de ressources](/help/assets/download-assets-from-aem.md#link-share-download).
 
@@ -63,7 +62,7 @@ La version suivante (2021.6.0) sera publiée le 28 juin 2021.
 
   ![Nombre de ressources dans un dossier affichées dans l’interface](/help/assets/assets/browse-folder-number-of-assets.png)
 
-### Correctifs d’[!DNL Assets]  {#assets-bugs-fixed}
+### Correctifs d’[!DNL Assets] {#assets-bugs-fixed}
 
 * Le téléchargement de fichiers très volumineux bloque le [!DNL Experience Manager desktop app]. (CQ-4320942)
 * Les options de la barre d’outils sont différentes lorsque la même collection est sélectionnée à partir d’un dossier et lorsqu’elle est sélectionnée à partir d’un résultat de recherche. (CQ-4321406)
@@ -80,7 +79,7 @@ La version suivante (2021.6.0) sera publiée le 28 juin 2021.
 * **Aide contextuelle** : ajout d’une aide contextuelle pour l’éditeur de formulaires adaptatifs, l’éditeur de modèles et l’éditeur de thèmes afin d’aider les auteurs à mieux comprendre les différentes fonctionnalités des éditeurs.
 * **Messages d’erreur dans le navigateur Propriétés** : ajout de messages d’erreur pour chaque propriété dans le navigateur Propriétés des formulaires adaptatifs. Ces messages aident à comprendre les valeurs autorisées pour un champ.
 
-### Fonctionnalité bêta à venir de [!DNL Forms] {#what-is-new-forms-prerelease}
+### Fonctionnalité Beta à venir de [!DNL Forms] {#what-is-new-forms-prerelease}
 
 Output as a Cloud service : le service Output vous permet de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode par lots synchrones et asynchrones. Le service de sortie permet de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
 
@@ -103,8 +102,7 @@ Cette section présente les notes de mise à jour de Cloud Manager dans AEM as a
 
 ### Date de publication {#release-date-cm-may}
 
-La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.5.0 est le 6 mai 2021.
-La prochaine version est prévue pour le 3 juin 2021.
+La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.5.0 est le 6 mai 2021.La prochaine version est prévue pour le 3 juin 2021.
 
 ### Nouveautés {#what-is-new-may}
 
@@ -124,7 +122,7 @@ La prochaine version est prévue pour le 3 juin 2021.
 
 * L’onglet Solutions des processus Ajouter un programme et Modifier le programme affiche la solution, même si une seule solution est disponible pour le programme.
 
-* Le message d’erreur dans le journal de l’étape de génération lorsque la version ne produisait aucun package de contenu déployé n’était pas clair.
+* Le message d’erreur dans le journal de l’étape de génération lorsque la version ne produisait aucun module de contenu déployé n’était pas clair.
 
 ### Correctifs {#bug-fixes-cm-may}
 
@@ -154,7 +152,7 @@ La date de publication de l’outil de transfert de contenu version v1.4.6 est 
 
 ### Correctifs {#bug-fixes-ctt-latest}
 
-* Lors de la suppression d’un jeu de migration, un message d’erreur peut parfois s’afficher dans l’interface utilisateur de CTT. Ce problème a été résolu.
+* Lors de la suppression d’un ensemble de migration, un message d’erreur peut parfois s’afficher dans l’interface d’utilisation de CTT. Ce problème a été résolu.
 
 * Lors de l’exécution du mappage des utilisateurs, si les utilisateurs avaient la même adresse électronique sur la cible et l’hôte, mais des noms d’utilisateur différents, l’ingestion entière échouait. Ce problème a été résolu. Dans un scénario de conflit de ce type, l’utilisateur/le groupe est ignoré et consigné comme conflit dans le fichier journal.
 
@@ -165,7 +163,7 @@ La date de publication de l’outil de transfert de contenu version v1.4.0 est 
 ### Nouveautés {#what-is-new-ctt-may}
 
 * Cette version de l’outil de transfert de contenu crée des rendus de texte pour les ressources qui ont bénéficié d’une migration vers Cloud Service. Les rendus de texte sont nécessaires pour prendre en charge la recherche de texte intégral sur les ressources ingérées.
-* Le nombre maximal de jeux de migration de l’outil de transfert de contenu qu’un utilisateur peut créer a été augmenté de 4 à 10.
+* Le nombre maximal d’ensembles de migration de l’outil de transfert de contenu qu’il est possible de créer a été augmenté de 4 à 10.
 
 ### Correctifs {#bug-fixes-ctt-may}
 
