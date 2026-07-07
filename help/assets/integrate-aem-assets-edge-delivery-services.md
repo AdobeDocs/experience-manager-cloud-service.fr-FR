@@ -4,9 +4,9 @@ description: Découvrez comment intégrer le [!DNL AEM Assets] avec [!DNL Edge D
 tags: AEM Assets, Edge Delivery Services, Dynamic Media, Dynamic Media with OpenAPI capabilities, Universal Editor, Edge Delivery Services with Universal Editor
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 37652ec153be900e9b99222f7a7d257c6febacc0
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: '875'
 ht-degree: 28%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 28%
 
 ![Intégration d’AEM Assets à l’éditeur universel](/help/assets/assets/EDS2.png)
 
-[[!DNL Edge Delivery Services]](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/overview) est un ensemble composable de services qui permet un haut degré de flexibilité dans la manière dont vous créez et diffusez du contenu sur votre site web. Vous pouvez utiliser à la fois la [gestion de contenu &#x200B;](/help/sites-cloud/authoring/author-publish.md) et la [création WYSIWYG à l’aide de l [!DNL Universal Editor] outil , ainsi que la création basée sur des documents](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring).
+[[!DNL Edge Delivery Services]](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/overview) est un ensemble composable de services qui permet un haut degré de flexibilité dans la manière dont vous créez et diffusez du contenu sur votre site web. Vous pouvez utiliser à la fois la [gestion de contenu ](/help/sites-cloud/authoring/author-publish.md) et la [création WYSIWYG à l’aide de l [!DNL Universal Editor] outil , ainsi que la création basée sur des documents](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring).
 
 Vous pouvez modifier le contenu dans :
 
@@ -76,13 +76,13 @@ Sélectionnez les liens suivants pour savoir comment utiliser [!DNL Dynamic Medi
 * [Ajout de vidéos à votre contenu](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-video-references-when-authoring-content)
 * [Ajoutez à votre contenu des ressources vidéo et autres que des images, telles que des fichiers PDF et Zip, etc](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-asset-references-for-pdf-zip-etc-when-authoring-content)
 
-Regardez cette vidéo pour découvrir comment diffuser des ressources dans votre contenu à l’aide de Dynamic Media avec les fonctionnalités OpenAPI.
+Regardez la vidéo suivante pour découvrir comment diffuser des ressources dans votre contenu à l’aide de Dynamic Media avec les fonctionnalités OpenAPI.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441155)
 
 ## Exemple de site [!DNL Edge Delivery Services]{#dynamic-media-with-google-docs-and-ms-word}
 
-Consultez la section [Voyage WKND](https://aem-dynamicmedia-demo--dm--hlxsites.aem.live/travel-hospitality/wknd-trvl-home), un site créé à l’aide des fonctionnalités de création de documents d’[!DNL Edge Delivery Services]. Le contenu du site est créé dans [&#128279;](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT) et [!DNL Dynamic Media with OpenAPI capabilities] est utilisé pour diffuser des ressources dans le contenu. Après la création, le contenu est directement publié à partir du document. Explorez ce [référentiel Git](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks) pour en savoir plus sur tous les fichiers, dossiers, configurations, codes de style et de fonctionnalité essentiels utilisés pour créer la configuration de création basée sur des documents pour ce site [!DNL Edge Delivery Services (EDS)].
+Consultez la section [Voyage WKND](https://aem-dynamicmedia-demo--dm--hlxsites.aem.live/travel-hospitality/wknd-trvl-home), un site créé à l’aide des fonctionnalités de création de documents d’[!DNL Edge Delivery Services]. Le contenu du site est créé dans [](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT) et [!DNL Dynamic Media with OpenAPI capabilities] est utilisé pour diffuser des ressources dans le contenu. Après la création, le contenu est directement publié à partir du document. Explorez ce [référentiel Git](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks) pour en savoir plus sur tous les fichiers, dossiers, configurations, codes de style et de fonctionnalité essentiels utilisés pour créer la configuration de création basée sur des documents pour ce site [!DNL Edge Delivery Services (EDS)].
 
 ## Intégration de [!DNL AEM Assets] aux flux de création basés sur [!DNL Universal Editor] pour [!DNL Edge Delivery Services] {#integrate-aem-assets-with-universal-editor-UE}
 
