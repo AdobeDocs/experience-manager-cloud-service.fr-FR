@@ -3,10 +3,10 @@ title: Création de modèles de visualisation pour les fragments de contenu
 description: Prévisualiser et publier des fragments de contenu avec des modèles de visualisation. Découvrez comment créer et personnaliser des modèles.
 feature: Developing, Content Fragments
 role: Admin, Developer
-source-git-commit: 733e7a8c497fcffdfadd22c2abd3323d35d54e3e
+source-git-commit: b0a32380b028ff230ec4904a86b55b8ba0f4558f
 workflow-type: tm+mt
-source-wordcount: '2082'
-ht-degree: 3%
+source-wordcount: '2134'
+ht-degree: 4%
 
 ---
 
@@ -967,8 +967,7 @@ Assets référencé à partir des fragments de contenu est prérendu en tant qu�
 
 Souvenez-vous :
 
-* Utilisez toujours des accolades triples pour les champs de ressource.
-L’utilisation de doubles accolades permet d’échapper la balise HTML générée et de l’afficher en tant que texte brut plutôt que d’effectuer le rendu de l’image, de la vidéo ou du lien.
+* Utilisez toujours des accolades triples pour les champs de ressource.L’utilisation de doubles accolades permet d’échapper la balise HTML générée et de l’afficher en tant que texte brut plutôt que d’effectuer le rendu de l’image, de la vidéo ou du lien.
 
 ### Utilisation des champs des ressources {#asset-field-usage}
 
@@ -1272,9 +1271,5 @@ Des ressources supplémentaires sont disponibles :
 * [Documentation Handlebars](https://handlebarsjs.com/)
 * [Assistants intégrés Handlebars](https://handlebarsjs.com/guide/builtin-helpers.html)
 * [Documentation sur les fragments de contenu AEM](/help/sites-cloud/administering/content-fragments/overview.md)
+* [API de modèles de visualisation de fragments de contenu](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/cvt/)
 
-<!-- CQDOC-23650 - add link when docs are stable; not experimental -->
-
-<!--
-* [Content Fragment Visualization Templates APIs (experimental)](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/cvt/#)
--->
