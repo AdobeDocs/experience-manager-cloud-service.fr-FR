@@ -6,7 +6,7 @@ feature: Asset Reports, Asset Management
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 86%
@@ -68,7 +68,7 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
 
    >[!NOTE]
    >
-   >Accédez à un **profil de produit Administrateur** pour créer un rapport **Télécharger**. Voir [Attribuer des profils de produit AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) pour vous donner le droit d’accéder à un profil de produit Administrateur AEM.
+   >Accédez à un **profil de produit Administrateur** pour créer un rapport **Télécharger**. Voir [Attribuer des profils de produit AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) pour vous donner le droit d’accéder à un profil de produit Administrateur AEM.
 
    ![Sélectionner le type de rapport](assets/choose_report.png)
 
@@ -219,4 +219,5 @@ TBD: How do enable this in CS now? Is it done using some OSGi config now?
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
 

@@ -5,7 +5,7 @@ feature: App Builder
 role: User, Developer
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 7%
@@ -36,7 +36,7 @@ Dans [!DNL Assets View], accédez à la page **[!UICONTROL Détails]** d’une r
 
 Remplissez les conditions requises suivantes pour commencer à ajouter le composant d’extensibilité à votre [!DNL Assets View UI] :
 
-* [&#x200B; Accès à  [!DNL Assets View]](#1).
+* [ Accès à  [!DNL Assets View]](#1).
 * Accès à la [[!DNL Adobe app builder]](https://developer.adobe.com/app-builder/docs/overview/).
 * Autorisation de développer le rôle d’administrateur système au sein de l’organisation. Voir [cette documentation](https://developer.adobe.com/uix/docs/guides/get-access/) pour plus d’informations.
 * [!DNL Adobe IO command line tool (AIO CLI)] est installé sur vos ordinateurs locaux. Cet outil est essentiel pour la création et le déploiement de projets d’extension. Voir [Création de votre première application App Builder](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app#local-environment-set-up) (nécessite une authentification pour l’accès) pour plus d’informations.
@@ -100,3 +100,4 @@ La vue Assets permet également d’ouvrir des boîtes de dialogue personnalisé
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

@@ -4,7 +4,7 @@ description: Découvrez comment activer le contrôle d’accès basé sur les at
 role: Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '2182'
 ht-degree: 4%
@@ -38,7 +38,7 @@ Voici quelques-uns des principaux avantages du contrôle d’accès basé sur le
 * Prend en charge la gouvernance évolutive entre les marques et les régions
 * Améliore la gestion des ressources
 
->[!VIDEO](https://video.tv.adobe.com/v/3475416/?captions=fre_fr&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
 
 ## Activation du contrôle d’accès basé sur les attributs {#enable-attribute-based-access-control}
 
@@ -177,7 +177,7 @@ L’ABAC peut également vous aider à résoudre les scénarios suivants :
 
 >[!IMPORTANT]
 >
->Par défaut, tous les autres groupes d’utilisateurs qui ne sont pas spécifiés avec des règles dans la [&#x200B; feuille de calcul](#configure-abac-spreadsheet) se voient refuser l’accès. Si un utilisateur ou une utilisatrice ne fait partie d’aucun groupe pour lequel des règles ABAC sont définies, il ou elle ne peut accéder à aucune ressource. Si certains utilisateurs doivent avoir accès à toutes les ressources (les administrateurs, par exemple), incluez un groupe avec un ID de groupe dans la feuille de calcul et indiquez que ce groupe doit avoir accès à toutes les ressources afin qu’Adobe puisse le configurer en conséquence.
+>Par défaut, tous les autres groupes d’utilisateurs qui ne sont pas spécifiés avec des règles dans la [ feuille de calcul](#configure-abac-spreadsheet) se voient refuser l’accès. Si un utilisateur ou une utilisatrice ne fait partie d’aucun groupe pour lequel des règles ABAC sont définies, il ou elle ne peut accéder à aucune ressource. Si certains utilisateurs doivent avoir accès à toutes les ressources (les administrateurs, par exemple), incluez un groupe avec un ID de groupe dans la feuille de calcul et indiquez que ce groupe doit avoir accès à toutes les ressources afin qu’Adobe puisse le configurer en conséquence.
 
 ## Éléments de règle pris en charge {#supported-rule-constructs}
 
@@ -197,7 +197,7 @@ Cela vous permet d’écrire des règles simples et expressives, telles que ALLO
 
 Les instructions suivantes s’appliquent à la fois à la configuration basée sur un assistant d’IA et à la configuration basée sur une feuille de calcul :
 
-* Les règles ABAC s’appliquent uniquement aux ressources approuvées pour Content Hub. Pour plus d’informations, voir [&#x200B; Approuver Assets pour Content Hub &#x200B;](/help/assets/approve-assets-content-hub.md).
+* Les règles ABAC s’appliquent uniquement aux ressources approuvées pour Content Hub. Pour plus d’informations, voir [ Approuver Assets pour Content Hub ](/help/assets/approve-assets-content-hub.md).
 * Ne définissez pas de règles DENY. Convertissez toujours les règles DENY en règles ALLOW. Par exemple, AUTORISER si région = user-region DENY si assetType = prototype ET confidentiel = oui peut être converti en AUTORISER si région = user-region ET (assetType != prototype OU confidentiel != oui).
 * Les règles ABAC sont appliquées aux groupes d’utilisateurs à l’aide de l’identifiant de groupe IMS, disponible dans Admin Console.
 * Vous pouvez définir la [cible d’approbation](/help/assets/approve-assets-content-hub.md#set-approval-target) pour les ressources à l’aide de l’environnement de création AEM as a Cloud Service. Les règles ABAC sont appliquées aux ressources approuvées avec Cible de validation = Content Hub, car Cible de validation = Diffusion concerne les ressources disponibles pour la diffusion + Content Hub. Assets marqué comme Cible de validation = Diffusion est visible par tous dans Content Hub.
@@ -255,3 +255,4 @@ Les administrateurs doivent créer des groupes d’utilisateurs dans le Adobe Ad
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

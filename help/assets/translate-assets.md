@@ -6,7 +6,7 @@ feature: Asset Management, Translation
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '2645'
 ht-degree: 84%
@@ -31,11 +31,11 @@ Traduction automatique des ressources dans AEM : le service de traduction autom
 <!--
 We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only ONE UBER article.
 
-https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/translation-projects.html?lang=fr
-https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/preparing-assets-for-translation.html?lang=fr
-[Apply translation cloud services to folders](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/transition-cloud-services.html?lang=fr)
+https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/translation-projects.html
+https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/preparing-assets-for-translation.html
+[Apply translation cloud services to folders](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/transition-cloud-services.html)
 
-One of these articles is a copy of [Preparing Content for Translation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-prep.html?lang=fr
+One of these articles is a copy of [Preparing Content for Translation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-prep.html
 
 -->
 
@@ -302,3 +302,4 @@ Si vous souhaitez appliquer un connecteur personnalisé pour les services de tra
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

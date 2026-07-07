@@ -4,7 +4,7 @@ description: Découvrez comment utiliser l’API Search Assets.
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 0c52e793-4c33-4230-b4f2-27296dd9e4b3
-source-git-commit: 77b334434251a98d9c4f44cede9275d839f6ac40
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '566'
 ht-degree: 9%
@@ -57,7 +57,7 @@ headers: {
     },
 ```
 
-Pour appeler l’API Search, un jeton IMS est nécessaire pour définir dans les détails de la `Authorization`. Le jeton IMS est récupéré à partir d’un compte technique. Voir [Récupérer les informations d’identification AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=fr#fetch-the-aem-as-a-cloud-service-credentials) pour créer un compte technique. Voir [Génération du jeton d’accès](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=fr#generating-the-access-token) pour générer le jeton IMS et l’utiliser correctement dans l’en-tête de la requête de l’API Search Assets.
+Pour appeler l’API Search, un jeton IMS est nécessaire pour définir dans les détails de la `Authorization`. Le jeton IMS est récupéré à partir d’un compte technique. Voir [Récupérer les informations d’identification AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#fetch-the-aem-as-a-cloud-service-credentials) pour créer un compte technique. Voir [Génération du jeton d’accès](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token) pour générer le jeton IMS et l’utiliser correctement dans l’en-tête de la requête de l’API Search Assets.
 
 Pour afficher des exemples de requête, des exemples de réponse et des codes de réponse, voir [Rechercher l’API Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search).
 
@@ -79,3 +79,4 @@ Pour afficher des exemples de requête, des exemples de réponse et des codes de
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

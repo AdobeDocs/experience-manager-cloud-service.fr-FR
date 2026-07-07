@@ -7,7 +7,7 @@ feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Pro
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '6119'
 ht-degree: 81%
@@ -139,7 +139,7 @@ Vous pouvez améliorer la pertinence des mots-clés pour des ressources particul
 
 Vous pouvez l’utiliser à votre avantage en améliorant le classement de certaines ressources dans les résultats de recherche du mot-clé ciblé. Voir la vidéo d’exemple ci-dessous. Pour plus d’informations, voir [Recherche dans [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/3410336/?captions=fre_fr&quality=6)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *Vidéo : Découvrez comment les résultats de recherche sont classés et comment le classement peut être influencé.*
 
@@ -393,7 +393,7 @@ Exécutez les étapes suivantes pour activer ou désactiver Recherche optimisée
 
 1. Dans la section **[!UICONTROL Rechercher]**, sélectionnez **[!UICONTROL Recherche optimisée par l&#39;IA]** pour activer Recherche optimisée par l&#39;IA ou **[!UICONTROL Mot-clé]** pour le désactiver.
 
-   ![Activer ou désactiver Recherche optimisée par l&#39;IA &#x200B;](/help/assets/assets/enable-ai-search-admin-view.png)
+   ![Activer ou désactiver Recherche optimisée par l&#39;IA ](/help/assets/assets/enable-ai-search-admin-view.png)
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
@@ -545,5 +545,6 @@ Accédez à l’emplacement du dossier pour les ressources affichées dans les r
 
 >[!MORELIKETHIS]
 >
->* Guide de mise en œuvre des recherches[[!DNL Experience Manager] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=fr)
+>* Guide de mise en œuvre des recherches[[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=fr)
 >* [Configuration avancée pour améliorer les résultats de recherche](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=fr)
+

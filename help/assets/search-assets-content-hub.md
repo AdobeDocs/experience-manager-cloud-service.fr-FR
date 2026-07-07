@@ -4,7 +4,7 @@ description: Découvrez comment rechercher des ressources dans  [!DNL Content Hu
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '1658'
 ht-degree: 3%
@@ -17,7 +17,7 @@ Lorsque vous disposez d’un grand nombre de ressources dans votre référentiel
 
 ## Conditions préalables {#prerequisites}
 
-[Les utilisateurs de &#x200B;](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
+[Les utilisateurs de ](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
 
 ## Ce que vous pouvez rechercher  {#what-you-can-search}
 
@@ -41,7 +41,7 @@ La recherche [!DNL Content Hub] fournit des résultats en fonction des élément
 
 Pour effectuer une recherche de base sur [!DNL the Content Hub], accédez à la barre de recherche et indiquez le mot-clé à rechercher. Accédez aux filtres disponibles dans le volet de gauche et appliquez-les pour affiner vos résultats de recherche.
 
-Par exemple, recherchez toutes les images **&#x200B;**&#x200B;contenant le mot-clé `architect`, qui a été modifié au cours de l’année dernière. Pour exécuter ce scénario, procédez comme suit :
+Par exemple, recherchez toutes les images **** contenant le mot-clé `architect`, qui a été modifié au cours de l’année dernière. Pour exécuter ce scénario, procédez comme suit :
 
 1. Spécifiez `architect` comme mot-clé de recherche.
 
@@ -292,3 +292,4 @@ Oui, les administrateurs peuvent utiliser l’interface utilisateur de configura
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

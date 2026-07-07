@@ -4,7 +4,7 @@ description: Découvrez les différentes méthodes de retraitement des ressource
 role: User, Leader, Developer
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 19ca5278-929e-438b-9436-928f6c9f87d5
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '823'
 ht-degree: 98%
@@ -108,3 +108,4 @@ En savoir plus sur les [profils de traitement et les workflows de post-traitemen
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

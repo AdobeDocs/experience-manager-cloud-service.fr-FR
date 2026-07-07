@@ -5,7 +5,7 @@ role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 596136e9-7c2a-43a1-8091-2d8b6226b695
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 4%
@@ -138,7 +138,7 @@ Lorsque l’utilisateur clique sur l’URL de redirection, [!DNL Dynamic Media w
 
 ## Mise à l’échelle à l’aide d’URL de redirection vers un microsite{#scale-using-vanity-url}
 
-AEM as a Cloud Service vous permet de [personnaliser les noms DNS et de réseau CDN](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) au sein de vos adresses web. Utilisez ces fonctionnalités AEMCS avec vos URL de redirection pour les transformer en adresses web uniques, propres, descriptives, de marque, intuitives et offrant les [avantages mentionnés ci-dessus](#key-benefits).
+AEM as a Cloud Service vous permet de [personnaliser les noms DNS et de réseau CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) au sein de vos adresses web. Utilisez ces fonctionnalités AEMCS avec vos URL de redirection pour les transformer en adresses web uniques, propres, descriptives, de marque, intuitives et offrant les [avantages mentionnés ci-dessus](#key-benefits).
 
 Consultez l’URL Vanity suivante et ses composants personnalisables :
 
@@ -188,7 +188,7 @@ Consultez l’URL Vanity suivante et ses composants personnalisables :
 Exécutez les étapes suivantes pour réécrire les règles de réseau CDN pour la diffusion :
 
 1. Accédez à votre référentiel AEM pour créer un fichier de configuration YAML.
-2. Exécutez les étapes de la section [configuration](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) pour configurer les règles du réseau CDN et déployer la configuration via votre pipeline de configuration Cloud Manager.Suivez ces [bonnes pratiques](#best-practices) pour créer le chemin d’accès au domaine.   [En savoir plus sur les règles de réécriture CDN](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
+2. Exécutez les étapes de la section [configuration](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) pour configurer les règles du réseau CDN et déployer la configuration via votre pipeline de configuration Cloud Manager.Suivez ces [bonnes pratiques](#best-practices) pour créer le chemin d’accès au domaine.   [En savoir plus sur les règles de réécriture CDN](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
 
 Vous trouverez ci-dessous des exemples de règles de réécriture pour ajouter des noms de fichiers avec des extensions dans les URL Vanity. Personnalisez ces règles de réécriture en fonction de vos besoins. [Contactez l’assistance Adobe](https://helpx.adobe.com/in/contact.html) pour obtenir de l’aide :
 
@@ -260,3 +260,4 @@ Suivez ces bonnes pratiques pour créer des [identifiants de redirection](#creat
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

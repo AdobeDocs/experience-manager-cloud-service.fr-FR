@@ -5,7 +5,7 @@ feature: Asset Management, Collaboration, Asset Distribution
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '1950'
 ht-degree: 82%
@@ -23,7 +23,7 @@ ht-degree: 82%
 
 * [Partager des ressources en tant que lien](#sharelink).
 * [Télécharger des ressources et les partager séparément.](/help/assets/download-assets-from-aem.md)
-* Partagez à l’aide de l’appli de bureau [[!DNL Experience Manager]  &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=fr).
+* Partagez à l’aide de l’appli de bureau [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=fr).
 * Partagez à l’aide d’[[!DNL Adobe Asset Link]](https://www.adobe.com/fr/creativecloud/business/enterprise/adobe-asset-link.html).
 * Partagez à l’aide de [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=fr).
 
@@ -298,7 +298,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Activation des actions de bureau à utiliser avec l’application de bureau {#desktop-actions}
 
-À partir de l’interface utilisateur d’[!DNL Assets] ouverte dans un navigateur, vous pouvez explorer l’emplacement des ressources ou extraire et ouvrir une ressource pour la modifier dans votre appli de bureau. Ces options sont appelées actions de bureau ; pour les activer, voir [Activation des actions de bureau dans l’interface web [!DNL Assets] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#desktopactions-v2).
+À partir de l’interface utilisateur d’[!DNL Assets] ouverte dans un navigateur, vous pouvez explorer l’emplacement des ressources ou extraire et ouvrir une ressource pour la modifier dans votre appli de bureau. Ces options sont appelées actions de bureau ; pour les activer, voir [Activation des actions de bureau dans l’interface web [!DNL Assets] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#desktopactions-v2).
 
 ![Activation des actions de bureau à utiliser comme raccourci dans une application de bureau](assets/enable_desktop_actions.png)
 
@@ -341,4 +341,5 @@ Voir [comment configurer [!DNL Assets] pour l’utiliser avec [!DNL Adobe Asset 
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
 

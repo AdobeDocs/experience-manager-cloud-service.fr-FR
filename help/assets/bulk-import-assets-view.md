@@ -5,7 +5,7 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Asse
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '1934'
 ht-degree: 88%
@@ -28,7 +28,7 @@ Vous pouvez importer des ressources à partir des sources de données suivantes�
 * Dropbox
 * OneDrive
 
->[!VIDEO](https://video.tv.adobe.com/v/3451958/?captions=fre_fr&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on){transcript=true}
 
 ## Conditions préalables requises {#prerequisites}
 
@@ -246,3 +246,4 @@ Pour afficher l’emplacement cible des ressources où les ressources sont impor
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

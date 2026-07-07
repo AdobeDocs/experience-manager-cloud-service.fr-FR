@@ -3,7 +3,7 @@ title: Application de recadrages intelligents vidéo aux vidéos approuvées
 description: Dynamic Media avec des fonctionnalités OpenAPI permet de générer des sorties vidéo recadrées intelligemment pour des ressources vidéo dans Adobe Experience Manager (AEM).
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Application pour AEM Assets."
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 14%
@@ -99,3 +99,4 @@ Une fois que les recadrages intelligents de vidéo sont générés, incluez le p
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

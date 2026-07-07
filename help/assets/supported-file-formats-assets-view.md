@@ -6,7 +6,7 @@ contentOwner: AG
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 5936ace2-318e-4888-9ad4-23e6f6bfb857
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 99%
@@ -153,3 +153,4 @@ Les utilisateurs de [!DNL Adobe Asset Link] peuvent charger et enregistrer (char
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
