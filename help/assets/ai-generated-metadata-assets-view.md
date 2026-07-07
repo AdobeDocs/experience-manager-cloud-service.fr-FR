@@ -3,7 +3,7 @@ title: Améliorez la découverte de contenu avec les métadonnées générées p
 description: Découvrez comment améliorer la découverte de contenu avec les métadonnées générées par l’IA
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 51d8500e-8a19-40b3-a222-4c7e27eeb667
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 19%
@@ -65,3 +65,4 @@ Pour plus d’informations sur la désactivation des métadonnées générées p
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

@@ -3,7 +3,7 @@ title: Modification des métadonnées en bloc dans  [!DNL Assets View]
 description: Découvrez comment mettre à jour un ensemble prédéfini de champs de métadonnées standard pour plusieurs ressources disponibles sur la [!DNL ! Vue Assets] simultanément.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 34%
@@ -58,3 +58,4 @@ Pour afficher les mises à jour des métadonnées appliquées à une ressource, 
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

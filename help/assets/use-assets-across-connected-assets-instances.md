@@ -7,7 +7,7 @@ feature: Asset Management, Connected Assets, Asset Distribution
 role: Admin, User, Developer
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '3984'
 ht-degree: 98%
@@ -386,3 +386,4 @@ Pour résoudre les erreurs courantes, procédez comme suit :
 * [Gérer les collections](/help/assets/manage-collections.md)
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

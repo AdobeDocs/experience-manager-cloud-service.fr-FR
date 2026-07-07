@@ -6,7 +6,7 @@ feature: Asset Management,Publishing
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 90%
@@ -79,3 +79,4 @@ Pour configurer [!DNL Experience Manager] de façon à appliquer un filigrane à
 >
 >* [Aperçu sur les microservices de ressources](/help/assets/asset-microservices-overview.md).
 >* [Utilisation des microservices de ressources avec des profils de traitement](/help/assets/asset-microservices-configure-and-use.md).
+
