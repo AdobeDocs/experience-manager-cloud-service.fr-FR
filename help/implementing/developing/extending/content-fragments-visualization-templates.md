@@ -68,7 +68,7 @@ Pour plus d’informations sur l’utilisation de votre modèle dans AEM, voir :
 
 ### Utilisation de l’URL de publication de fragment de contenu visuel {#using-the-visual-content-fragment-publish-url}
 
-Une fois que vous avez créé des fragments de contenu visuel à l’aide du modèle, vous pouvez utiliser l’URL [ Publication de vos fragments de contenu visuel](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md).
+Une fois que vous avez créé des fragments de contenu visuel à l’aide du modèle, vous pouvez utiliser l’URL [&#x200B; Publication de vos fragments de contenu visuel](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md).
 
 ## Handlebars : principes de base (très) {#handlebars-the-very-basics}
 
