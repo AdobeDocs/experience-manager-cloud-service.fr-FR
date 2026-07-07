@@ -260,7 +260,7 @@ Le serveur Dispatcher MCP est fourni avec AEM Dispatcher SDK. Il permet aux outi
 
 Contrairement aux compétences du Dispatcher, le serveur MCP Dispatcher n’expose que les outils suivants : sept outils MCP et aucune invite ni ressource.
 
->[!VIDEO](https://video.tv.adobe.com/v/3491951?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3491963?captions=fre_fr&quality=12&learn=on)
 
 ### Conditions préalables {#prerequisites}
 
