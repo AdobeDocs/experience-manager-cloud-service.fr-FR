@@ -42,7 +42,7 @@ La prise en charge des ressources distantes à l’aide de Dynamic Media avec de
 
    * ASSET_DELIVERY_IMS_CLIENT= [IMSClientId] : vous devez envoyer un ticket d’assistance Adobe pour obtenir l’identifiant du client IMS.
 
-     ou configurez les [ paramètres OSGi ](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html) pour AEM 6.5 dans l’instance AEM Sites en procédant comme suit :
+     ou configurez les [&#x200B; paramètres OSGi &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html) pour AEM 6.5 dans l’instance AEM Sites en procédant comme suit :
 
    1. Connectez-vous à la console et cliquez sur **[!UICONTROL OSGi] >** ou
 Utilisez l’URL directe, par exemple : `https://localhost:4502/system/console/configMgr`.
@@ -112,7 +112,7 @@ Vous pouvez accéder aux ressources distantes dans l’éditeur de page d’AEM 
 
 Suivez les étapes ci-dessous pour utiliser des ressources distantes dans un fragment de contenu AEM sur votre instance AEM Sites. Vous pouvez effectuer cette intégration dans AEM 6.5 et non dans AEM as a Cloud Service.
 
-1. Accédez à **** > **[!UICONTROL Fichiers]**.
+1. Accédez à **&#x200B;**&#x200B;> **[!UICONTROL Fichiers]**.
 1. Sélectionnez le dossier de ressources où se trouve le fragment de contenu.
 1. Sélectionnez le fragment de contenu et cliquez sur **[!UICONTROL Modifier (_par ex_)]**.
 
@@ -124,7 +124,7 @@ Suivez les étapes ci-dessous pour utiliser des ressources distantes dans un fra
 1. Sélectionnez **[!UICONTROL Distant]** pour récupérer la ressource à partir du DAM distant. <br>
 Vous pouvez choisir le référentiel de gestion des ressources numériques **[!UICONTROL local]** ou **[!UICONTROL distant]** en fonction de vos besoins.
 
-   ![ image](/help/assets/assets/cf-pick.jpg)
+   ![&#x200B; image](/help/assets/assets/cf-pick.jpg)
 Vous êtes invité à vous connecter.
 1. Sélectionnez la ressource et cliquez sur **[!UICONTROL Sélectionner]**.
    <br> L’URL de la ressource distante s’affiche dans le composant de texte.
