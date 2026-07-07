@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '3539'
-ht-degree: 100%
+source-wordcount: '3840'
+ht-degree: 98%
 
 ---
 
@@ -192,7 +192,7 @@ Vous pouvez afficher les noms de pages localisés pour les utilisateurs de conte
 * il serait préférable que l’URL soit :
   `www.mydomain.com/es/casa.html`.
 
-La difficulté en matière de localisation du nom d’une page réside dans le fait que plusieurs outils de localisation disponibles sur la plateforme AEM nécessitent que les noms de cette page correspondent dans toutes les langues pour que le contenu reste synchronisé.
+La difficulté en matière de localisation du nom d’une page réside dans le fait que plusieurs outils de localisation disponibles sur la plateforme AEM nécessitent que les noms de cette page correspondent dans tous les paramètres régionaux pour que le contenu reste synchronisé.
 
 La propriété `sling:alias` permet de pallier cette difficulté. `sling:alias` peut être ajouté comme propriété à n’importe quelle ressource pour donner un nom d’alias à la ressource. Dans l’exemple précédent, vous auriez :
 
@@ -202,7 +202,7 @@ La propriété `sling:alias` permet de pallier cette difficulté. `sling:alias` 
 * à laquelle vous ajoutez ensuite une propriété :
   `sling:alias` = `casa`
 
-Les outils de traduction d’AEM tels que le gestionnaire multisite peuvent ainsi conserver des relations entre :
+Les outils de traduction d’AEM tels que Multi-Site Manager peuvent ainsi conserver des relations entre :
 
 * `/en/home`
 
@@ -219,8 +219,8 @@ Tout en permettant aux utilisateurs finaux d’interagir avec le nom de la page 
 Dans une installation AEM standard :
 
 * pour la configuration OSGi
-  **Apache Sling Resource Resolver Factory**
-(`org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
+  **Fabrique de résolveur de ressource Apache Sling**
+( `org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
 
 * la propriété
   **Emplacement de mappage** (`resource.resolver.map.location`)
@@ -241,7 +241,7 @@ Voici un exemple de la manière dont ce problème se produit :
 
 1. Le Dispatcher met la réponse en cache à l’adresse `/my-page.html` et renvoie la réponse à l’utilisateur.
 1. Un créateur/une créatrice de contenu modifie cette page et l’active.
-1. L’agent de vidage du Dispatcher envoie une demande d’invalidation pour `/content/my-brand/my-page`**.** Étant donné que le Dispatcher ne possède pas de page mise en cache dans ce chemin, l’ancien contenu reste en cache et est périmé.
+1. L’agent de vidage Dispatcher envoie une demande d’invalidation pour `/content/my-brand/my-page`**.** Étant donné que le Dispatcher ne dispose pas d’une page mise en cache dans ce chemin, l’ancien contenu reste en cache et est périmé.
 
 Il existe plusieurs façons de configurer des règles de vidage du Dispatcher personnalisées qui mappent les URL plus courtes aux URL plus longues à des fins d’invalidation du cache.
 
@@ -249,9 +249,9 @@ Cependant, il existe également un moyen plus simple de gérer cela :
 
 1. **Règles SlingResourceResolver**
 
-   À l’aide de la console web (par exemple, localhost:4502/system/console/configMgr), vous pouvez configurer le résolveur de ressources Sling :
+   À l’aide de la console web (par exemple, localhost:4502/system/console/configMgr), vous pouvez configurer le résolveur de ressource Sling :
 
-   * **Apache Sling Resource Resolver Factory**
+   * **Fabrique de résolveur de ressource Apache Sling
      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
    Il est conseillé d’établir les mappages requis pour raccourcir les URL sous la forme d’expressions régulières, puis de définir ces configurations sous un nœud OsgiConfignode, `config.publish`, qui est inclus dans votre version.
