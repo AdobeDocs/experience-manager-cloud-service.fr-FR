@@ -26,15 +26,15 @@ Assurez-vous de répondre aux exigences suivantes avant de démarrer le processu
 
 * Accès à Cloud Manager
 * Déjà activé Dynamic Media avec OpenAPI dans votre environnement via un ticket d’assistance
-* Certificat SSL de type EV ou OV pour le domaine utilisé dans le niveau de diffusion. Voir [&#x200B; Présentation des certificats SSL &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates) pour plus d’informations
+* Certificat SSL de type EV ou OV pour le domaine utilisé dans le niveau de diffusion. Voir [&#x200B; Présentation des certificats SSL &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates) pour plus d’informations
 
 ## Configuration d’un domaine personnalisé dans le niveau de diffusion à l’aide de Cloud Manager
 
 Exécutez les étapes suivantes dans Cloud Manager :
 
-1. [Ajouter un certificat SSL géré par le client](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate#add-customer-managed-ssl-cert)
+1. [Ajouter un certificat SSL géré par le client](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate#add-customer-managed-ssl-cert)
 
-2. [Ajouter un nom de domaine personnalisé](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings)
+2. [Ajouter un nom de domaine personnalisé](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings)
 
 Après avoir suivi les étapes ci-dessus, ouvrez un ticket d’assistance Adobe pour le mappage de domaine personnalisé. Adobe effectue le mappage de domaine dans le cadre du processus de prise en charge.
 
