@@ -5,9 +5,9 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Asse
 feature: Collaboration
 role: User
 exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
-source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
+source-git-commit: 002fdc34a8429345fe11ce0f0bda320e2fcb68d0
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2241'
 ht-degree: 2%
 
 ---
@@ -215,7 +215,7 @@ Vous pouvez ainsi découvrir, évaluer et utiliser des ressources approuvées d�
 
 Pour plus d’informations sur les intégrations, les propriétés et les personnalisations, consultez les articles suivants :
 
-* [Exemples d’intégration du gestionnaire de contenu](https://github.com/adobe/aem-assets-selectors-mfe-examples/tree/consolidate-docs-to-experience-league/examples)
+* [Exemples d’intégration du gestionnaire de contenu](https://github.com/adobe/aem-assets-selectors-mfe-examples/tree/main)
 
 * [Propriétés du gestionnaire de contenu](/help/assets/content-advisor-properties.md)
 
