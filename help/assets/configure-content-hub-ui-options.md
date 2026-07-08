@@ -2,9 +2,9 @@
 title: Configurer l’interface d’utilisation du hub de contenus
 description: Configurer l’interface d’utilisation du hub de contenus
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
+source-git-commit: 078adecd9639945076f503cd255403a8d9ad4c0f
 workflow-type: tm+mt
-source-wordcount: '3115'
+source-wordcount: '3205'
 ht-degree: 10%
 
 ---
@@ -105,7 +105,9 @@ Les métadonnées activées dans l’interface utilisateur de configuration s’
 
 ### Filtres {#configure-filters-content-hub}
 
-Content Hub permet aux administrateurs de configurer des filtres qui s’affichent lors de la recherche de ressources. Pour ajouter un nouveau filtre, procédez comme suit :
+Content Hub permet aux administrateurs de configurer des filtres qui s’affichent lors de la recherche de ressources. Vous pouvez configurer un maximum de 40 filtres à l’aide de l’interface utilisateur de configuration.
+
+Pour ajouter un nouveau filtre, procédez comme suit :
 
 1. Dans l’interface utilisateur [Configurations](#access-configuration-options-content-hub), cliquez sur **[!UICONTROL Filtres]**.
 1. Cliquez sur **[!UICONTROL Ajouter des filtres]**.
@@ -174,7 +176,9 @@ L’administration peut définir les champs de métadonnées qui font l’objet 
 
 >[!CAUTION]
 >
->Il est recommandé de sélectionner soigneusement les champs que vous marquez comme pouvant faire l’objet d’une recherche. N’incluez que les champs que les utilisateurs sont susceptibles de rechercher et qui permettent de renvoyer des résultats significatifs. Les champs tels que les dates et les nombres conviennent mieux au filtrage et au tri qu’au contenu consultable. Le marquage d’un trop grand nombre de champs comme pouvant faire l’objet de recherches peut affecter la qualité et les performances des résultats de recherche.
+>Il est recommandé de sélectionner soigneusement les champs que vous marquez comme pouvant faire l’objet d’une recherche. N’incluez que les champs que les utilisateurs sont susceptibles de rechercher et qui permettent de renvoyer des résultats significatifs. Les champs tels que les dates et les nombres conviennent mieux au filtrage et au tri qu’au contenu consultable. Le marquage d’un trop grand nombre de champs comme pouvant faire l’objet de recherches ou être filtrés peut affecter la qualité et les performances des résultats de recherche.
+> 
+> Vous pouvez configurer un maximum de 30 champs de recherche à l’aide de l’interface utilisateur de configuration.
 >
 >Les propriétés de balise ne sont activées que pour le filtrage et ne peuvent pas faire l’objet de recherches.
 
@@ -185,6 +189,12 @@ L’administration peut définir les champs de métadonnées qui font l’objet 
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour appliquer les modifications de sorte que la nouvelle propriété de métadonnées s’affiche dans la liste des champs de métadonnées.
 
 De même, vous pouvez cliquer sur ![icône Modifier](assets/do-not-localize/edit_icon.svg), disponible en regard de chaque propriété de métadonnées disponible, pour modifier la propriété ou cliquer sur l’icône de suppression pour supprimer une propriété existante. Cliquez sur **[!UICONTROL Enregistrer]** après avoir effectué toutes les modifications pour appliquer les modifications.![Recherche dans l’interface utilisateur de configuration de Content Hub](assets/configuration-search.png)
+
+La liste des champs de recherche que vous ajoutez doit être dans l’ordre de pertinence, car l’ordre a un impact sur les résultats de la recherche.
+
+>[!NOTE]
+>
+>Vous devez conserver la synchronisation de la page de configuration de Content Hub avec les champs que vous avez l’intention d’utiliser. Ne supprimez pas de champs à l’aide de l’interface utilisateur, en particulier si ces champs sont utilisés dans des règles ABAC ou une utilisation directe de l’API de recherche.
 
 ### Branding {#configure-branding-content-hub}
 
