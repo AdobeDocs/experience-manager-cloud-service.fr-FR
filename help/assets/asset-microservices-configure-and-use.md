@@ -6,9 +6,9 @@ feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
+source-git-commit: 07d02342ecdbb1497010baf2c4f3ab55fbfc1500
 workflow-type: tm+mt
-source-wordcount: '3139'
+source-wordcount: '3102'
 ht-degree: 62%
 
 ---
@@ -269,36 +269,6 @@ Suivez les étapes décrites dans la section [appliquer un modèle de workflow �
 
 **Voir également**
 
-* [Traduire les ressources](translate-assets.md)
-* [API HTTP Assets](mac-api-assets.md)
-* [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Rechercher des ressources](search-assets.md)
-* [Ressources connectées](use-assets-across-connected-assets-instances.md)
-* [Rapports de ressources](asset-reports.md)
-* [Schémas de métadonnées](metadata-schemas.md)
-* [Télécharger des ressources](download-assets-from-aem.md)
-* [Gestion des métadonnées](manage-metadata.md)
-* [Facettes de recherche](search-facets.md)
-* [Gérer les collections](manage-collections.md)
-* [Import des métadonnées en bloc](metadata-import-export.md)
-* [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
-
->[!MORELIKETHIS]
->
->* [Présentation d’Asset Compute Service](https://experienceleague.adobe.com/fr/docs/asset-compute/using/introduction).
->* [Découvrez l’extensibilité et quand l’utiliser](https://experienceleague.adobe.com/fr/docs/asset-compute/using/extend/understand-extensibility).
->* [Comment créer des applications personnalisées](https://experienceleague.adobe.com/fr/docs/asset-compute/using/extend/develop-custom-application).
->* [Types MIME pris en charge pour divers cas d’utilisation](/help/assets/file-format-support.md).
-
-<!--
- TBD: 
-* How/where can admins check what's already configured and provisioned.
-* How/where to request for new provisioning/purchase.
--->
-
-
-**Voir également**
-
 * [Traduire les ressources](/help/assets/translate-assets.md)
 * [API HTTP Assets](/help/assets/mac-api-assets.md)
 * [Formats de fichiers pris en charge par Assets](/help/assets/file-format-support.md)
@@ -315,3 +285,15 @@ Suivez les étapes décrites dans la section [appliquer un modèle de workflow �
 * [Import des métadonnées en bloc](/help/assets/metadata-import-export.md)
 * [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
+>[!MORELIKETHIS]
+>
+>* [Présentation d’Asset Compute Service](https://experienceleague.adobe.com/fr/docs/asset-compute/using/introduction).
+>* [Découvrez l’extensibilité et quand l’utiliser](https://experienceleague.adobe.com/fr/docs/asset-compute/using/extend/understand-extensibility).
+>* [Comment créer des applications personnalisées](https://experienceleague.adobe.com/fr/docs/asset-compute/using/extend/develop-custom-application).
+>* [Types MIME pris en charge pour divers cas d’utilisation](/help/assets/file-format-support.md).
+
+<!--
+ TBD: 
+* How/where can admins check what's already configured and provisioned.
+* How/where to request for new provisioning/purchase.
+-->
