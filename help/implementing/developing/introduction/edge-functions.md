@@ -4,9 +4,9 @@ description: Découvrez comment exécuter JavaScript au niveau de la couche CDN 
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: 1bb231d04e0b418a3b56de34c70424d06f94a4e1
+source-git-commit: 6b281173b952318e5bd29644faf5c2679ec9e611
 workflow-type: tm+mt
-source-wordcount: '2023'
+source-wordcount: '2053'
 ht-degree: 1%
 
 ---
@@ -31,6 +31,8 @@ Cas d’utilisation courants :
 AEM Edge Functions est compatible avec la pile Java Edge Delivery Services et AEM as a Cloud Service, pour les clients AEM Sites.
 
 Suivez [ce tutoriel](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview) pour une présentation concrète des variations de la pile Java Edge Delivery Services et AEM as a Cloud Service.
+
+Consultez également [ce référentiel](https://github.com/adobe/aem-edge-functions-examples) d’exemples de code, y compris l’assemblage de contenu sur le réseau CDN et la récupération correcte du contenu à partir de l’origine de niveau publication AEM.
 
 ## Principaux avantages {#key-benefits}
 
@@ -149,11 +151,11 @@ Assurez-vous que la fonction Edge fonctionne comme prévu. Vous pouvez le tester
 
 `edgefunction-pXXXXX-eYYYYY-<function name>.adobeaemcloud.com/<path>`
 
-Par exemple, pour la Java-stack AEM : <br/>
-`edgefunction-pXXXXX-eYYYYY-my-edge-function.adobeaemcloud.com/weather`
+Par exemple, pour la Java-stack AEM :
 
-ou pour Edge Delivery Services:<br/>
-`edgefunction-pXXXXX-dYYYYY-my-edge-function.adobeaemcloud.com/weather`
+
+ou pour Edge Delivery Services :
+
 
 Ce domaine avec le préfixe *edgefunction* est uniquement destiné au débogage, mais *ne doit pas être référencé pour le trafic en direct* car il ne s’agit pas d’un nom stable. Pour déterminer la valeur de AAAA, consultez la sortie de la commande de déploiement .
 
@@ -240,7 +242,7 @@ Avant de configurer la mise en cache, examinez le comportement de votre contenu 
 
 Comme le réseau CDN et le cache de récupération interne de la fonction Edge fonctionnent indépendamment, toute modification des données sous-jacentes nécessite l’invalidation délibérée des couches **des deux**. La compréhension de cette architecture est essentielle pour une gestion fiable du cache.
 
-Pour obtenir des conseils techniques détaillés sur la configuration du comportement de mise en cache, le contrôle des durées de vie du cache, l’utilisation de clés de substitution et la purge du contenu mis en cache, voir [&#x200B; Mise en cache dans les fonctions AEM Edge &#x200B;](/help/implementing/developing/introduction/edge-functions-caching.md).
+Pour obtenir des conseils techniques détaillés sur la configuration du comportement de mise en cache, le contrôle des durées de vie du cache, l’utilisation de clés de substitution et la purge du contenu mis en cache, voir [ Mise en cache dans les fonctions AEM Edge ](/help/implementing/developing/introduction/edge-functions-caching.md).
 
 ## Limites {#limitations}
 
@@ -255,7 +257,7 @@ Pour obtenir des conseils techniques détaillés sur la configuration du comport
    - Les exécutions seront interrompues à 1s du calcul (pas en temps réel)
    - Le temps moyen d’exécution de la fonction Edge doit être inférieur à 100 ms.
 
-- Voir les limites liées aux [Variables de configuration de la fonction &#x200B;](#function-configuration), aux [Variables secrètes de la fonction Edge](#function-secrets) et aux [magasins KV de fonction Edge](#function-kv-store).
+- Voir les limites liées aux [Variables de configuration de la fonction ](#function-configuration), aux [Variables secrètes de la fonction Edge](#function-secrets) et aux [magasins KV de fonction Edge](#function-kv-store).
 
 ### Nbre max. d&#39;appels de récupération sortante par appel {#max-fetch-calls}
 
