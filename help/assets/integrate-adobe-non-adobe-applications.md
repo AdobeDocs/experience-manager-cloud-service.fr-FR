@@ -5,9 +5,9 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Asse
 feature: Collaboration
 role: User
 exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
-source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
+source-git-commit: 002fdc34a8429345fe11ce0f0bda320e2fcb68d0
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2241'
 ht-degree: 2%
 
 ---
@@ -126,9 +126,9 @@ Cliquez sur l’icône ![icône d’aperçu](assets/do-not-localize/preview-icon
 
 ![Prévisualisation des rendus Dynamic Media](assets/content-advisor-dm-preview.png)
 
-Cliquez sur **[!UICONTROL Ajouter des modificateurs]**, spécifiez un modificateur dans la zone de texte, puis appuyez sur Entrée pour appliquer la transformation à tous les rendus de ressources en temps réel. De même, vous pouvez ajouter plusieurs modificateurs aux rendus et prévisualiser ces transformations. Cliquez sur le nom du rendu, puis sur **[!UICONTROL Sélectionner]** pour rendre le rendu disponible dans votre application hôte. Le rendu après l’application de ces modificateurs n’est pas enregistré. Consultez la liste des modificateurs pris en charge pour [Dynamic Media Scene7](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) et [Dynamic Media avec OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
+Cliquez sur **[!UICONTROL Ajouter des modificateurs]**, spécifiez un modificateur dans la zone de texte, puis appuyez sur Entrée pour appliquer la transformation à tous les rendus de ressources en temps réel. De même, vous pouvez ajouter plusieurs modificateurs aux rendus et prévisualiser ces transformations. Cliquez sur le nom du rendu, puis sur **[!UICONTROL Sélectionner]** pour rendre le rendu disponible dans votre application hôte. Le rendu après l’application de ces modificateurs n’est pas enregistré. Consultez la liste des modificateurs pris en charge pour [Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) et [Dynamic Media avec OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
-Pour plus d’informations sur l’intégration du panneau Dynamic Media à la fonction de conseil sur le contenu, voir [&#x200B; Intégration à Dynamic Media &#x200B;](/help/assets/integration-with-dynamic-media.md).
+Pour plus d’informations sur l’intégration du panneau Dynamic Media à la fonction de conseil sur le contenu, voir [ Intégration à Dynamic Media ](/help/assets/integration-with-dynamic-media.md).
 
 ### Découverte de fragments de contenu {#content-fragments-discovery-content-advisor}
 
@@ -196,16 +196,16 @@ Le tableau suivant illustre la prise en charge des fonctionnalités de la foncti
 
 | Application | Prise en charge du chargement rapide pour la recherche dans Assets | Prise en charge du panneau de contenu suggéré lors de la recherche dans Assets | Prise en charge du panneau Dynamic Media lors de la recherche dans Assets | Prise en charge de la recherche de fragments de contenu |
 |--------------------------------------|----------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|------------------------------------------|
-| [&#128279;](/help/assets/native-integration-adobe-express.md) | ✓ | ✓ | ✓ | − |
+| [](/help/assets/native-integration-adobe-express.md) | ✓ | ✓ | ✓ | − |
 | [AEM Sites - Création de documents](https://www.aem.live/docs/authoring-guide#document-authoring) | ✓ | ✓ | ✓ | − |
 | [AEM Sites - Éditeur universel](https://www.aem.live/docs/authoring-guide#universal-editor-in-aem-sites) | ✓ | ✓ | ✓ | − |
 | AEM Sites - [Création GoogleDrive](https://www.aem.live/docs/authoring-guide#google-drive)/[SharePoint](https://www.aem.live/docs/authoring-guide#microsoft-sharepoint) | ✓ | − | ✓ | − |
 | AEM Sites - Éditeur de fragment de contenu (dans le champ Référence de contenu uniquement) | ✓ | ✓ | ✓ | − |
 | Workflow Adobe Workfront | ✓ | ✓ | − | ✓ |
 | Planification d’Adobe Workfront | ✓ | ✓ | − | ✓ |
-| [Vue &#x200B;](/help/assets/assets-view-introduction.md) | ✓ | − | − | − |
+| [Vue ](/help/assets/assets-view-introduction.md) | ✓ | − | − | − |
 | [AEM Content Hub](/help/assets/product-overview.md) | ✓ | ✓ | − | − |
-| [Adobe Journey Optimizer (AJO) pour B2C](http://experienceleague.adobe.com/fr/docs/journey-optimizer/using/ajo-home) | ✓ | ✓ | ✓ | ✓ |
+| [Adobe Journey Optimizer (AJO) pour B2C](http://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home) | ✓ | ✓ | ✓ | ✓ |
 
 ## Prise en charge des fonctionnalités du gestionnaire de contenu dans les applications autres qu’Adobe {#content-advisor-feature-support-non-adobe-applications}
 
@@ -215,7 +215,7 @@ Vous pouvez ainsi découvrir, évaluer et utiliser des ressources approuvées d�
 
 Pour plus d’informations sur les intégrations, les propriétés et les personnalisations, consultez les articles suivants :
 
-* [Exemples d’intégration du gestionnaire de contenu](https://github.com/adobe/aem-assets-selectors-mfe-examples/tree/consolidate-docs-to-experience-league/examples)
+* [Exemples d’intégration du gestionnaire de contenu](https://github.com/adobe/aem-assets-selectors-mfe-examples/tree/main)
 
 * [Propriétés du gestionnaire de contenu](/help/assets/content-advisor-properties.md)
 
