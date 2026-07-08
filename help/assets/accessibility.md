@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Accessibility, Asset Management
 role: User, Developer, Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d1c9d822325b15ba89ca528d2eb7bb83c742b01d
 workflow-type: tm+mt
 source-wordcount: '1988'
 ht-degree: 99%
@@ -253,3 +253,4 @@ Pour rédiger des commentaires, poser des questions et demander des amélioratio
 >* [Notes de mise à jour des améliorations apportées à chaque version](/help/release-notes/release-notes-cloud/release-notes-current.md).
 >* Conseils en matière d’accessibilité d’[[!DNL Adobe Experience Manager] &#x200B;](/help/compliance/accessibility/web-accessibility.md)
 >* [Rapports de conformité (ACR) et liste VPAT (Modèle volontaire d’accessibilité des produits) pour les solutions d’Adobe](https://www.adobe.com/accessibility/compliance.html).
+
