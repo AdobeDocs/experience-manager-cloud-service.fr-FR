@@ -6,9 +6,9 @@ feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 07d02342ecdbb1497010baf2c4f3ab55fbfc1500
+source-git-commit: 4edee72db5a1514e6d2f0e25bc4bdf1d0f42b265
 workflow-type: tm+mt
-source-wordcount: '3102'
+source-wordcount: '3103'
 ht-degree: 62%
 
 ---
@@ -218,7 +218,7 @@ Une fois que les microservices de ressources ont terminé le traitement des ress
 
 #### Application d’un modèle de workflow à un dossier {#apply-workflow-model-to-folder}
 
-Pour les cas d’utilisation standard de post-traitement, pensez à utiliser la méthode pour appliquer un workflow à un dossier. Pour appliquer un modèle de workflow dans le dossier [!UICONTROL Propriétés], procédez comme suit :
+Pour les cas d’utilisation standard de post-traitement, pensez à utiliser la méthode pour appliquer un workflow à un dossier. Pour appliquer un modèle de workflow dans le dossier [!UICONTROL Propriétés], procédez comme suit :
 
 1. Créer un modèle de processus.
 1. Sélectionnez un dossier, cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils, puis cliquez sur l’onglet **[!UICONTROL Traitement Assets]**.
