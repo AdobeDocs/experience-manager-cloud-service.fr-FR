@@ -5,7 +5,7 @@ role: Admin
 feature: Workfront Integrations and Apps
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 6a87df3fb470097432cec3b1ba762faa302e2dfc
 workflow-type: tm+mt
 source-wordcount: '1850'
 ht-degree: 88%
@@ -210,7 +210,6 @@ Dans l’éditeur de workflow d’Experience Manager, modifiez les propriétés
 Pour vous abonner aux modifications des formulaires personnalisés du document [!DNL Workfront], sélectionnez l’option correspondante dans l’onglet **[!UICONTROL Avancé]**. Lorsque vous vous abonnez à ces mises à jour, les champs de métadonnées [!DNL Experience Manager] mappés sont mis à jour lorsque le champ correspondant dans le formulaire personnalisé du document [!DNL Workfront] est modifié.
 
 ![Configuration des mises à jour des formulaires personnalisés du document Workfront dans [!DNL Experience Manager]](/help/assets/assets/wf-custom-form-update.png)
-
 
 **Voir également**
 
