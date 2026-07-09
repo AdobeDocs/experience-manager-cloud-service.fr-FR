@@ -6,8 +6,8 @@ feature: Developing
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '2129'
-ht-degree: 97%
+source-wordcount: '2189'
+ht-degree: 96%
 
 ---
 
@@ -60,7 +60,7 @@ Les avantages liés à cette flexibilité sont évidents dans les applications c
 
 Voir [Découvrir Sling en 15 minutes](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html) pour connaître les premières étapes de développement avec Sling.
 
-Le schéma suivant explique la résolution du script Sling : il montre comment passer de la requête HTTP au nœud de contenu, du nœud de contenu au type de ressource, du type de ressource au script, ainsi que les variables de script disponibles.
+Le diagramme ci-après explique la résolution du script Sling. Il indique comment passer de la requête HTTP au nœud de contenu, du nœud de contenu au type de ressource, du type de ressource au script et les variables de script disponibles.
 
 ![Présentation de la résolution du script Apache Sling](assets/sling-cheatsheet-01.png)
 
@@ -180,7 +180,6 @@ En reprenant l’exemple ci-dessus, si le `sling:resourceType` est `hr/jobs` alo
 Si plusieurs scripts s’appliquent pour une requête donnée, celui avec la meilleure correspondance est sélectionné. Plus une correspondance est précise, mieux c’est. En d’autres termes, plus il y a de correspondances avec les sélecteurs, mieux c’est, indépendamment de toute correspondance entre l’extension de la requête ou le nom de la méthode.
 
 Par exemple, envisagez une demande d’accès à la ressource
-
 
 * `/content/corporate/jobs/developer.print.a4.html`
 
