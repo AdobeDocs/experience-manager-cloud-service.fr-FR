@@ -30,7 +30,7 @@ Cas d’utilisation courants :
 
 AEM Edge Functions est compatible avec la pile Java Edge Delivery Services et AEM as a Cloud Service, pour les clients AEM Sites.
 
-Suivez [ce tutoriel](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview) pour une présentation concrète des variations de la pile Java Edge Delivery Services et AEM as a Cloud Service.
+Suivez [ce tutoriel](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/edge-functions/overview) pour une présentation concrète des variations de la pile Java Edge Delivery Services et AEM as a Cloud Service.
 
 Consultez également [ce référentiel](https://github.com/adobe/aem-edge-functions-examples) d’exemples de code, y compris l’assemblage de contenu sur le réseau CDN et la récupération correcte du contenu à partir de l’origine de niveau publication AEM.
 
