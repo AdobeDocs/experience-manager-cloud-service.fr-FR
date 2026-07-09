@@ -1,13 +1,13 @@
 ---
 title: Requêtes persistantes GraphQL - Activation de la mise en cache dans Dispatcher
-description: Dispatcher est une couche de mise en cache et de sécurité pour les environnements de publication Adobe Experience Manager. Vous pouvez activer la mise en cache des requêtes persistantes dans AEM sans affichage.
+description: Le Dispatcher est une couche de mise en cache et de filtrage des accès pour les environnements de publication Adobe Experience Manager. Vous pouvez activer la mise en cache pour les requêtes persistantes dans AEM Headless.
 feature: Headless, Dispatcher, GraphQL API
 exl-id: 30a97e56-6699-41c4-a4eb-fc6236667f8f
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 41008065730eebd472fcce19b514d30807256a7d
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 86%
+source-wordcount: '366'
+ht-degree: 83%
 
 ---
 
@@ -41,7 +41,7 @@ Pour activer la mise en cache des requêtes persistantes, définissez la variabl
 
 >[!NOTE]
 >
->Pour obtenir un calcul d’en-tête `ETag` individuel sur les requêtes persistantes masquées (pour *chaque réponse* unique), le paramètre `FileETag Digest` doit être utilisé dans la configuration de l’hôte virtuel de la configuration du Dispatcher (s’il n’existe pas déjà) :
+>Pour réaliser le calcul de l’en-tête `ETag` individuel sur les requêtes persistantes mises en cache (pour *chaque* réponse unique), le paramètre `FileETag Digest` doit être utilisé dans la configuration de l’hôte virtuel du Dispatcher (s’il n’existe pas déjà) :
 >
 >```xml
 ><Directory />    
