@@ -4,9 +4,9 @@ description: Voici les notes de mise à jour de la version préliminaire de l’
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: 3da0b684974f92ae078fbefb8adeaf1554291d8c
+source-git-commit: 5dd5d30668878da0f178ed1cac03a7454d382688
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Notes de mise à jour de l’aperçu de l’éditeur universel {#preview}
 
-Voici les notes de mise à jour de la **version d’aperçu** de l’éditeur universel. Ces fonctionnalités sont actuellement disponibles dans l’environnement d’aperçu **de votre éditeur universel**. La mise à disposition de ces fonctionnalités est prévue pour le 2 juillet 2026.
+Voici les notes de mise à jour de la **version d’aperçu** de l’éditeur universel. Ces fonctionnalités sont actuellement disponibles dans l’environnement d’aperçu **de votre éditeur universel**. La mise à disposition de ces fonctionnalités est prévue pour le 16 juillet 2026.
 
 Ces notes de mise à jour **aperçu** sont fournies à titre indicatif pour que vous sachiez quelles modifications seront apportées à l’éditeur universel et que vous puissiez les tester en [passant à votre version d’aperçu.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -28,6 +28,5 @@ Ces notes de mise à jour **aperçu** sont fournies à titre indicatif pour que 
 
 ## Modifications à venir {#upcoming-improvements}
 
-* Les actions Annuler/Rétablir ont été améliorées.
-* Les listes ordonnées s’affichent désormais correctement lors de la modification en ligne avec l’éditeur de texte enrichi.
-* La réorganisation par glisser-déposer des sections fonctionne désormais correctement.
+* Les boutons radio permettant de sélectionner le [mode réactif](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator) de l’éditeur sont désormais dotés de libellés accessibles.
+* L’option Effacer tout pour les cases à cocher efface désormais correctement tous les champs, même lorsqu’une valeur par défaut est définie.
