@@ -1,12 +1,12 @@
 ---
-title: Comment gérer  [!DNL Dynamic Media]  modèles ?
-description: Découvrez comment créer  [!DNL Dynamic Media]  modèles à l’aide d’un éditeur de modèles WYSIWYG et inclure plusieurs calques d’images, de textes et de formes pour créer rapidement des bannières et des prospectus et les utiliser dans des applications en aval.
+title: Modèles Dynamic Media
+description: Découvrez comment créer des modèles Dynamic Media à l’aide d’un éditeur de modèles WYSIWYG et inclure plusieurs calques d’images, de textes et de formes pour créer rapidement des bannières et des prospectus et les utiliser dans des applications en aval.
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: e567a059fe4a41c2b33d769d267fabdc610b113f
+source-git-commit: 48109a25fc5ad825887fc461be38652b8ab80149
 workflow-type: tm+mt
-source-wordcount: '3928'
+source-wordcount: '3931'
 ht-degree: 35%
 
 ---
