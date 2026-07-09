@@ -4,10 +4,10 @@ description: Découvrez comment créer  [!DNL Dynamic Media]  modèles à l’ai
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 99bef94bd8a51953424d7a3b0f4908180708fc05
+source-git-commit: e567a059fe4a41c2b33d769d267fabdc610b113f
 workflow-type: tm+mt
-source-wordcount: '3558'
-ht-degree: 36%
+source-wordcount: '3928'
+ht-degree: 35%
 
 ---
 
@@ -15,6 +15,8 @@ ht-degree: 36%
 # Gestion des modèles de [!DNL Dynamic Media]{#dynamic-media-templates}
 
 Créez des modèles personnalisables en temps réel pour vos bannières et prospectus à l’aide de [!DNL Dynamic Media] templates, un éditeur de modèles WYSIWYG. Publiez votre modèle de [!DNL Dynamic Media] et utilisez-le dans les applications en aval. Un modèle de [!DNL Dynamic Media] comprend des calques d’image et de texte. Ajoutez des paramètres aux calques d’image et de texte du modèle et utilisez [[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/fr/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) pour repositionner et redimensionner le calque et mettre à jour son contenu en temps réel.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3451729/?captions=fre_fr&learn=on&enablevpops)
 
 Voici quelques-unes des fonctions principales :
 
@@ -87,8 +89,7 @@ Pour créer une zone de travail vierge, procédez comme suit :
    >
    >  Le modèle est enregistré à l’emplacement où vous l’avez créé. Sur la page d’accueil de [!DNL Assets View], sélectionnez **[!UICONTROL Dynamic Media Assets]** et cliquez sur **[!UICONTROL Créer un modèle]** pour enregistrer le modèle dans le dossier racine **[!UICONTROL Dynamic Media Assets]**.
 
-1. Indiquez un nom de modèle, définissez la largeur et la hauteur de la zone de travail, puis cliquez sur **[!UICONTROL Créer]**. Une zone de travail vierge s’affiche avec des options de menu des deux côtés à utiliser pour créer le modèle. Pointez sur les options de menu pour afficher leur info-bulle.
-   ![modèle personnalisable en temps réel](/help/assets/assets/blank-canvas-page.png)
+1. Indiquez un nom de modèle, définissez la largeur et la hauteur de la zone de travail, puis cliquez sur **[!UICONTROL Créer]**. Une zone de travail vierge s’affiche avec des options de menu des deux côtés à utiliser pour créer le modèle. Pointez sur les options de menu pour afficher leur infobulle.   ![modèle personnalisable en temps réel](/help/assets/assets/blank-canvas-page.png)
 
    >[!NOTE]
    >
@@ -112,7 +113,7 @@ Pour créer une zone de travail vierge, procédez comme suit :
 * Appuyez sur **retour arrière** ou **suppression** pour supprimer le calque sélectionné si aucun texte ou propriété n’est modifié.
 
 Cliquez sur ![modèle pour créer rapidement des prospectus](/help/assets/assets/show-layers-list.svg) et sélectionnez d’autres options (![](/help/assets/assets/three-dots.svg)) sur le calque Zone de travail pour modifier les dimensions de la zone de travail à tout moment lors de la création du modèle.
-![](/help/assets/assets/edit-canvas1.png)
+
 
 >[!NOTE]
 >
@@ -124,10 +125,8 @@ Pour ajouter des images à la zone de travail, procédez comme suit :
 
 1. Cliquez sur ![créer une bannière en un rien de temps](/help/assets/assets/add-image.svg) pour ouvrir le panneau [Sélecteur de ressources](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector). Le panneau affiche les images de votre instance AEM Assets synchronisées avec [!DNL Dynamic Media].
 1. Parcourez le panneau ou utilisez des mots-clés dans la barre de recherche pour trouver une image spécifique.
-1. Faites glisser et déposez une image sur la zone de travail pour l’utiliser. Pour redimensionner ou repositionner un calque sur la zone de travail, reportez-vous au [**[!UICONTROL panneau Propriétés]**](#reposition-resize-delete-a-layer).
-   ![créer une bannière en un rien de temps](/help/assets/assets/add-image-to-canvas.png)
-1. Activez le bouton (bascule) **[!UICONTROL Rayon uniforme]** et utilisez le curseur **[!UICONTROL Rayon d’angle]** pour ajuster uniformément l’arrondi des quatre coins d’une image. Désactivez le bouton (bascule) pour personnaliser l&#39;arrondi des coins en attribuant des valeurs de rayon spécifiques à chaque coin.
-   ![ajuster l’arrondi de l’image](/help/assets/assets/enable-uniform-radius-image.png)
+1. Faites glisser et déposez une image sur la zone de travail pour l’utiliser. Pour redimensionner ou repositionner un calque sur la zone de travail, reportez-vous au [**[!UICONTROL panneau Propriétés]**](#reposition-resize-delete-a-layer).   ![créer une bannière en un rien de temps](/help/assets/assets/add-image-to-canvas.png)
+1. Activez le bouton (bascule) **[!UICONTROL Rayon uniforme]** et utilisez le curseur **[!UICONTROL Rayon d’angle]** pour ajuster uniformément l’arrondi des quatre coins d’une image. Désactivez le bouton (bascule) pour personnaliser l&#39;arrondi des coins en attribuant des valeurs de rayon spécifiques à chaque coin.   ![ajuster l’arrondi de l’image](/help/assets/assets/enable-uniform-radius-image.png)
 
 ### Ajouter des calques de texte à la zone de travail{#add-text-to-the-canvas}
 
@@ -164,8 +163,7 @@ Pour ajouter des formes à la zone de travail, procédez comme suit :
 
 1. Cliquez sur ![création de formes](/help/assets/assets/Shapes.svg), sélectionnez une forme (rectangle ou cercle) pour l&#39;ajouter à la zone de travail. Utilisez le [[!UICONTROL panneau Propriétés]](#reposition-resize-delete-a-layer) de la forme pour repositionner, redimensionner, faire pivoter ou supprimer le calque.
 1. Faites défiler jusqu’à la section **[!UICONTROL Style]** du panneau, définissez un code hexadécimal dans le champ **[!UICONTROL Couleur de la forme]** ou utilisez le sélecteur de couleurs pour remplir la couleur de la forme sélectionnée.
-1. Activez le bouton (bascule) **[!UICONTROL Rayon uniforme]** et utilisez le curseur **[!UICONTROL Rayon d’angle]** pour ajuster uniformément l’arrondi des quatre coins du rectangle. Désactivez le bouton (bascule) pour personnaliser l&#39;arrondi des coins en attribuant des valeurs de rayon spécifiques à chaque coin.
-   ![ajuster l&#39;arrondi des angles des formes](/help/assets/assets/enable-uniform-radius-shape.png)
+1. Activez le bouton (bascule) **[!UICONTROL Rayon uniforme]** et utilisez le curseur **[!UICONTROL Rayon d’angle]** pour ajuster uniformément l’arrondi des quatre coins du rectangle. Désactivez le bouton (bascule) pour personnaliser l&#39;arrondi des coins en attribuant des valeurs de rayon spécifiques à chaque coin.   ![ajuster l&#39;arrondi des angles des formes](/help/assets/assets/enable-uniform-radius-shape.png)
 1. [Ajoutez le paramètre **[!UICONTROL Masquer]** au calque sélectionné](#parameterise-a-layer) pour afficher ou masquer le calque dans le modèle en temps réel à l’aide de l’URL du modèle.
 1. Sélectionnez le calque auquel [ajouter un lien [!UICONTROL CTA]](#add-CTA-in-dynamic-media-templates) permet aux utilisateurs de cliquer sur la forme sous forme de lien hypertexte dans le modèle dynamique.
 
@@ -181,8 +179,7 @@ Pour modifier ou supprimer un calque de zone de travail, procédez comme suit :
 
 ### Panneau Propriétés{#properties-panel}
 
-Le panneau [!UICONTROL Propriétés] comprend des sections pour [repositionner](#reposition-resize-delete-a-layer), [redimensionner](#reposition-resize-delete-a-layer) et [faire pivoter](#reposition-resize-delete-a-layer) un calque.  Elle fournit également des options de remplissage couleur pour les calques [de forme](#add-shapes-to-the-canvas), [options de mise en forme de texte](#text-formatting-options-on-properties-panel) pour les calques [de texte](#add-text-to-the-canvas), ainsi qu’une option permettant d’[ajouter un lien [!UICONTROL CTA]](#add-CTA-in-dynamic-media-templates) à n’importe quel calque sélectionné.
-Pour accéder au panneau des propriétés d’un calque, cliquez sur ![création rapide de contenu](/help/assets/assets/show-layers-list.svg) et sélectionnez le calque dans la liste pour afficher son panneau [!UICONTROL Propriétés].
+Le panneau [!UICONTROL Propriétés] comprend des sections pour [repositionner](#reposition-resize-delete-a-layer), [redimensionner](#reposition-resize-delete-a-layer) et [faire pivoter](#reposition-resize-delete-a-layer) un calque.  Il fournit également des options de remplissage couleur pour [calques de forme](#add-shapes-to-the-canvas), [options de mise en forme de texte](#text-formatting-options-on-properties-panel) pour [calques de texte](#add-text-to-the-canvas), ainsi qu’une option permettant d’[ajouter un lien [!UICONTROL CTA]](#add-CTA-in-dynamic-media-templates) à n’importe quel calque sélectionné.Pour accéder au panneau des propriétés d’un calque, cliquez sur ![création rapide de contenu](/help/assets/assets/show-layers-list.svg) et sélectionnez le calque dans la liste pour afficher son panneau [!UICONTROL Propriétés].
 
 ![création rapide de contenu](/help/assets/assets/properties-panel.png)
 
@@ -199,8 +196,7 @@ Pour modifier un calque de texte ou d’image, reportez-vous aux actions courant
 
 #### Options de formatage du texte{#text-formatting-options-on-properties-panel}
 
-Mettez en forme votre texte selon la police, la taille, la couleur, le style et l’alignement requis (dans le calque) en modifiant leurs valeurs dans les champs respectifs sous la section **[!UICONTROL Texte]** du panneau.
-Veillez à inclure l’algorithme **[!UICONTROL Redimensionnement de texte intelligent]**. [!UICONTROL Redimensionnement de texte intelligent] fonctionne sur l’algorithme [Copyfit](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting) pour remplir de manière optimale le texte dans la zone de texte et empêche le débordement du texte et réduit l’espace supplémentaire au bas du texte.
+Mettez en forme votre texte selon la police, la taille, la couleur, le style et l’alignement requis (dans le calque) en modifiant leurs valeurs dans les champs respectifs sous la section **[!UICONTROL Texte]** du panneau.Veillez à inclure **[!UICONTROL Redimensionnement de texte intelligent]**. [!UICONTROL Redimensionnement intelligent de texte] fonctionne sur l’algorithme [Copyfit](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting) pour remplir de manière optimale le texte dans la zone de texte, empêcher le débordement du texte et réduire l’espace supplémentaire au bas du texte.
 
 ![création de contenu en un rien de temps &#x200B;](/help/assets/assets/smart-text-resize.png)
 
@@ -224,30 +220,21 @@ Les propriétés paramétrées peuvent être incluses en tant que paramètres d�
 
 Vous trouverez ci-dessous des paramètres de calque qui s’appliquent à la fois aux calques d’image et de texte.
 
-**[!UICONTROL X]:** Inclure pour déplacer le calque horizontalement le long de son axe central, parallèlement à l’axe X du plan du modèle, en modifiant la valeur du paramètre dans l’URL.
-**[!UICONTROL Y]:** Inclure pour déplacer le calque verticalement le long de son axe central, parallèlement à l’axe Y du plan du modèle, en modifiant la valeur du paramètre dans l’URL.
-**[!UICONTROL Largeur] :** permet d’ajuster la largeur du calque en modifiant la valeur du paramètre dans l’URL.
-**[!UICONTROL Hauteur] :** permet d’ajuster la hauteur du calque en modifiant la valeur du paramètre dans l’URL.
-**[!UICONTROL Masquer] :** permet d’inclure pour masquer ou afficher le calque dans le modèle à l’aide des options 0 (afficher) et 1 (masquer).
+**[!UICONTROL X]:** Inclure pour déplacer le calque horizontalement le long de son axe central, parallèlement à l’axe X du plan du modèle, en modifiant la valeur du paramètre dans l’URL.**[!UICONTROL Y]:** Inclure pour déplacer le calque verticalement le long de son axe central, parallèlement à l’axe Y du plan du modèle, en modifiant la valeur du paramètre dans l’URL.**[!UICONTROL Largeur] :** permet d’ajuster la largeur du calque en modifiant la valeur du paramètre dans l’URL.**[!UICONTROL Hauteur] :** permet d’ajuster la hauteur du calque en modifiant la valeur du paramètre dans l’URL.**[!UICONTROL Masquer] :** permet d’inclure pour masquer ou afficher le calque dans le modèle à l’aide des options 0 (afficher) et 1 (masquer).
 
 ##### Paramètre de l&#39;image{#image-parameter}
 
-Incluez le paramètre **&#x200B;**&#x200B;pour remplacer l&#39;image du calque par une nouvelle image en modifiant le chemin d&#39;accès à l&#39;image dans la valeur du paramètre dans l&#39;URL.
-![paramètre source image](/help/assets/assets/image-parameter.png)
+Incluez le paramètre **&#x200B;**&#x200B;pour remplacer l&#39;image du calque par une nouvelle image en modifiant le chemin d&#39;accès à l&#39;image dans la valeur du paramètre dans l&#39;URL.![paramètre source image](/help/assets/assets/image-parameter.png)
 
 ##### Paramètres de formatage du texte{#text-formatting-parameters}
 
 Insérez les paramètres suivants pour modifier le texte, sa police, sa couleur et sa taille à partir de l’URL de diffusion en mettant à jour les valeurs de paramètre dans l’URL :
 
-**[!UICONTROL Texte]:** Inclure pour mettre à jour le texte de l’URL.
-**[!UICONTROL Famille de polices] :** permet d’inclure pour mettre à jour la police du texte à partir de l’URL.
-**[!UICONTROL Taille de police] :** permet d’inclure pour mettre à jour la taille de police du texte à partir de l’URL.
-**[!UICONTROL Couleur du texte] :** incluez pour mettre à jour la couleur de police du texte à partir de l’URL.
+**[!UICONTROL Texte]:** Inclure pour mettre à jour le texte de l’URL.**[!UICONTROL Famille de polices] :** permet d’inclure pour mettre à jour la police du texte à partir de l’URL.**[!UICONTROL Taille de police] :** permet d’inclure pour mettre à jour la taille de police du texte à partir de l’URL.**[!UICONTROL Couleur du texte] :** incluez pour mettre à jour la couleur de police du texte à partir de l’URL.
 
 ##### Paramétrer les sous-chaînes{#substring-parameterisation}
 
-Dans le panneau **[!UICONTROL Paramètres]**, faites défiler l’écran jusqu’à la section **[!UICONTROL Paramètres de sous-chaîne]**. Cette section comprend un **sélecteur de sous-chaîne** qui affiche la chaîne complète (calque de texte sélectionné) avec une mise en forme cohérente ou ses parties mises en forme sous la forme de sous-chaînes distinctes. Sélectionnez une sous-chaîne pour [paramétrer le texte, la famille, la taille et la couleur de la police](#text-formatting-parameters).
-Utilisez le sélecteur sous-chaîne pour [fractionner les sous-chaînes](#split-substring) paramétrer ses différentes parties ou [fusionner les sous-chaînes](#merge-substring) pour appliquer des paramètres uniformes.
+Dans le panneau **[!UICONTROL Paramètres]**, faites défiler l’écran jusqu’à la section **[!UICONTROL Paramètres de sous-chaîne]**. Cette section comprend un **sélecteur de sous-chaîne** qui affiche la chaîne complète (calque de texte sélectionné) avec une mise en forme cohérente ou ses parties mises en forme sous la forme de sous-chaînes distinctes. Sélectionnez une sous-chaîne pour [paramétrer le texte, la famille, la taille et la couleur de la police](#text-formatting-parameters).Utilisez le sélecteur sous-chaîne pour [fractionner les sous-chaînes](#split-substring) paramétrer ses différentes parties ou [fusionner les sous-chaînes](#merge-substring) pour appliquer des paramètres uniformes.
 
 ###### Fractionner la sous-chaîne{#split-substring}
 
@@ -260,8 +247,7 @@ Vous pouvez sélectionner la sous-chaîne requise pour [paramétrer le texte, la
 
 ###### Fusionner la sous-chaîne{#merge-substring}
 
-La fusion de sous-chaînes supprime leurs paramètres individuels existants et vous permet d’appliquer des paramètres cohérents sur la sous-chaîne nouvellement formée.
-Exécutez les étapes suivantes pour fusionner deux sous-chaînes adjacentes afin d’appliquer des paramètres uniformes à la sous-chaîne résultante :
+La fusion de sous-chaînes supprime leurs paramètres individuels existants et vous permet d’appliquer des paramètres cohérents sur la sous-chaîne nouvellement formée.Exécutez les étapes suivantes pour fusionner deux sous-chaînes adjacentes afin d’appliquer des paramètres uniformes à la sous-chaîne résultante :
 
 1. Dans le sélecteur de sous-chaînes, sélectionnez les caractères de deux sous-chaînes adjacentes avec la même mise en forme.
 1. Cliquez sur ![fusionner la sous-chaîne](/help/assets/assets/merge.svg) pour fusionner les sous-chaînes.
@@ -303,8 +289,7 @@ Procédez comme suit pour prévisualiser et publier le modèle et copier l’URL
 1. **Facultatif :** modifiez la valeur du paramètre **[!UICONTROL Masquer]** comprise entre 0 et 1 et cliquez sur **[!UICONTROL Actualiser]** pour afficher les modifications. Les calques ayant le même paramètre **[!UICONTROL Masquer]** masquent ou s’affichent ensemble. De même, vous pouvez contrôler la visibilité des calques à partir de l’URL.
 
    ![création de contenu à la volée](/help/assets/assets/dm-templates-publish-status.png)
-Vous pouvez également activer le bouton (bascule) **[!UICONTROL Inclure tous les paramètres]** pour modifier toutes les valeurs de paramètre affichées et voir les mises à jour dans l’aperçu du modèle.
-   <br>
+Vous pouvez également activer le bouton (bascule) **[!UICONTROL Inclure tous les paramètres]** pour modifier toutes les valeurs de paramètre affichées et voir les mises à jour dans l’aperçu du modèle.   <br>
 1. Pour publier le modèle à partir de la page d’aperçu, cliquez sur **[!UICONTROL Publier]** et confirmez la publication. Un message **[!UICONTROL Publication terminée]** s’affiche et le statut de publication est mis à jour sur **[!UICONTROL Publié]**.
 
 ### Copier l’URL de diffusion

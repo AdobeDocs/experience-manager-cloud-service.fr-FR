@@ -316,7 +316,7 @@ Cas d’utilisation courants :
 * Remise en forme des réponses d’API tierces (et éventuellement agrégation de plusieurs réponses d’API) avant de les diffuser au navigateur
 * Composition et diffusion de HTML rendu sur le serveur Edge à l’aide de contenu assemblé à partir de divers serveurs principaux
 
-Suivez [ce tutoriel](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview) pour une présentation concrète des variations de la pile Java Edge Delivery Services et AEM as a Cloud Service.
+Suivez [ce tutoriel](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/edge-functions/overview) pour une présentation concrète des variations de la pile Java Edge Delivery Services et AEM as a Cloud Service.
 
 *En utilisant le Beta Fonctions d’AEM Edge, vous reconnaissez qu’il est toujours en développement et que vous ne devriez pas vous fier au bon fonctionnement de la technologie ou à la disponibilité des données. Cette fonctionnalité est fournie en l’état,
 peut changer sans préavis et n’est pas couvert par les contrats de niveau de service de production.*
