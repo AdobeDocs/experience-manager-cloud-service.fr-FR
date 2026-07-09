@@ -14,7 +14,7 @@ ht-degree: 61%
 
 # Dispatcher - Configuration des points d’entrée avec AEM Headless
 
-Le [](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) est une couche de mise en cache et de filtrage des accès pour les environnements de publication Adobe Experience Manager. Plusieurs configurations sont incluses par défaut pour ouvrir les points d’entrée GraphQL aux applications découplées.
+Le [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) est une couche de mise en cache et de filtrage des accès pour les environnements de publication Adobe Experience Manager. Plusieurs configurations sont incluses par défaut pour ouvrir les points d’entrée GraphQL aux applications découplées.
 
 >[!IMPORTANT]
 >
