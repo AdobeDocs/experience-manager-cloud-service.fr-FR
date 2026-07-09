@@ -1,20 +1,24 @@
 ---
-title: Configuration du point de terminaison Dispatcher avec AEM sans affichage
-description: Dispatcher est une couche de mise en cache et de sécurité pour les environnements de publication Adobe Experience Manager. Plusieurs configurations sont utilisées pour ouvrir les points d’entrée GraphQL aux applications découplées.
+title: Configuration des points d’entrée Dispatcher avec AEM Headless
+description: Le Dispatcher est une couche de mise en cache et de filtrage des accès pour les environnements de publication Adobe Experience Manager. Plusieurs configurations sont utilisées pour ouvrir les points d’entrée GraphQL aux applications découplées.
 feature: Headless, Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
 role: Admin, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: ecf3f0ac54acf4ac772d2906fa0b26d283549929
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 85%
+source-wordcount: '306'
+ht-degree: 61%
 
 ---
 
 
-# Dispatcher - Configuration de point de terminaison avec AEM sans affichage
+# Dispatcher - Configuration des points d’entrée avec AEM Headless
 
-[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) est une couche de mise en cache et de sécurité pour les environnements de publication Adobe Experience Manager. Plusieurs configurations sont incluses par défaut pour ouvrir les points d’entrée GraphQL aux applications découplées.
+Le [](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) est une couche de mise en cache et de filtrage des accès pour les environnements de publication Adobe Experience Manager. Plusieurs configurations sont incluses par défaut pour ouvrir les points d’entrée GraphQL aux applications découplées.
+
+>[!IMPORTANT]
+>
+>Les règles de filtrage Dispatcher sont des contrôles de filtrage d’accès qui ne remplacent pas le contrôle d’accès basé sur une liste de contrôle d’accès JCR sur l’instance de publication. L’instance de publication doit être sécurisée indépendamment de la configuration Dispatcher. Assurez-vous que les ressources sensibles sont protégées en refusant l’`jcr:read` pour les principaux de `everyone` et de `anonymous` au niveau du référentiel, quelle que soit la configuration du filtre Dispatcher.
 
 >[!NOTE]
 >
@@ -40,4 +44,4 @@ La demande de requêtes persistantes s’effectue sur un autre point d’entrée
 /0061 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
 ```
 
-Les requêtes persistantes peuvent être demandées à l’aide de `GET`, mettant ainsi en cache la réponse au niveau du Dispatcher et du réseau CDN. Vous trouverez plus d’informations sur la mise en cache et l’invalidation du cache sous [l’ Introduction à la mise en cache dans AEM as a Cloud Service](/help/implementing/dispatcher/caching.md).
+Les requêtes persistantes peuvent être demandées à l’aide de `GET`, mettant ainsi en cache la réponse au niveau du Dispatcher et du réseau CDN. Vous trouverez plus d’informations sur la mise en cache et l’invalidation du cache sous [Introduction à la mise en cache dans AEM as a Cloud Service](/help/implementing/dispatcher/caching.md).
