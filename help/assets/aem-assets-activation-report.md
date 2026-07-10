@@ -5,9 +5,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
-source-git-commit: 07e4c47ac1f0dc531ebc3fb61219a8dcac0318b0
+source-git-commit: 8b95cf0f3e83e469c8698e5b6e7ddd01a365130b
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Ensemble, ces mesures relient l’activité des ressources internes à la porté
 
 Ce n’est que le début de votre parcours avec AEM Assets, et ces mesures continueront à évoluer à ses côtés. Nous serions ravis de connaître vos commentaires au fur et à mesure que vous les utiliserez, afin que nous puissions continuer à rendre ces rapports plus utiles.
 
-**Remarque** : si vous souhaitez les consulter avec le service Produit/Ingénierie d’Adobe ou avoir des commentaires, envoyez un e-mail à l’`GRP-AEM-DAM-METRICS-BETA@ADOBE.COM`.
+**Remarque** : si vous souhaitez les consulter avec le service Produit/Ingénierie d’Adobe ou obtenir des commentaires, envoyez un e-mail à `GRP-AEM-DAM-METRICS-BETA@ADOBE.COM`.
 
 | | Mesure | Définition |
 |---|---|---|
@@ -39,7 +39,7 @@ Ce n’est que le début de votre parcours avec AEM Assets, et ces mesures conti
 | | **Activer dans Content Hub** | Action d’approbation/de publication d’une ressource à partir d’AEM Assets afin qu’elle soit disponible pour les utilisateurs finaux dans Content Hub. Seules les ressources approuvées apparaissent dans Content Hub. |
 | | **Activer vers Dynamic Media** | Action de publier une ressource à partir d’AEM Assets dans le service Dynamic Media, ce qui permet de la traiter en rendus et de la diffuser en temps réel via le pipeline d’imagerie/vidéo et le réseau CDN de Dynamic Media. |
 | **Répartitions** | **Demandes De Diffusion Dynamic Media** | Nombre total de fois où une ressource a été demandée et diffusée sur tous les canaux via Dynamic Media. |
-| | Assets unique Dynamic Media diffusée **&#x200B;**&#x200B;| Nombre de ressources distinctes diffusées au moins une fois par le biais de Dynamic Media au cours d’une période donnée, comptabilisées une fois par ressource, quel que soit le nombre de fois où elles ont été demandées ou le nombre de rendus différents qui ont été diffusés. |
+| | Assets unique Dynamic Media diffusée **** | Nombre de ressources distinctes diffusées au moins une fois par le biais de Dynamic Media au cours d’une période donnée, comptabilisées une fois par ressource, quel que soit le nombre de fois où elles ont été demandées ou le nombre de rendus différents qui ont été diffusés. |
 | | **Transformations uniques Dynamic Media** | Nombre de variations distinctes de vos ressources diffusées via Dynamic Media au cours d’une période donnée. Cela indique comment votre contenu s’adapte sur les différents appareils, tailles d’écran et cas d’utilisation. |
 | | **Publier sur Sites** | Action de publication d’une ressource à partir d’AEM Assets afin qu’elle puisse être utilisée sur des pages AEM Sites actives. |
 
