@@ -4,7 +4,7 @@ description: Découvrez comment créer des modèles Dynamic Media à l’aide d�
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 48109a25fc5ad825887fc461be38652b8ab80149
+source-git-commit: 625eb59b08391a0a67f2cffb4e026418c49bc2f2
 workflow-type: tm+mt
 source-wordcount: '3931'
 ht-degree: 35%
@@ -16,7 +16,7 @@ ht-degree: 35%
 
 Créez des modèles personnalisables en temps réel pour vos bannières et prospectus à l’aide de [!DNL Dynamic Media] templates, un éditeur de modèles WYSIWYG. Publiez votre modèle de [!DNL Dynamic Media] et utilisez-le dans les applications en aval. Un modèle de [!DNL Dynamic Media] comprend des calques d’image et de texte. Ajoutez des paramètres aux calques d’image et de texte du modèle et utilisez [[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/fr/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) pour repositionner et redimensionner le calque et mettre à jour son contenu en temps réel.
 
->[!VIDEO](https://video.tv.adobe.com/v/3451729/?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451727/?learn=on&enablevpops){transcript=true}
 
 Voici quelques-unes des fonctions principales :
 
@@ -48,10 +48,10 @@ Découvrez comment créer un modèle de [!DNL Dynamic Media] étape par étape d
 Remplissez les conditions suivantes pour créer un modèle de [!DNL Dynamic Media] et générer son URL de diffusion :
 
 1. Accès à [!DNL Dynamic Media].
-1. Sur la page d’accueil [!DNL Assets View], vous disposez d’un dossier dans **[!UICONTROL Dynamic Media Assets]** pour enregistrer votre modèle. [Créez un dossier](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) dans ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets &#x200B;]**&#x200B;pour répliquer ce dossier dans&#x200B;**[!UICONTROL &#x200B; Dynamic Media Assets &#x200B;]**.
+1. Sur la page d’accueil [!DNL Assets View], vous disposez d’un dossier dans **[!UICONTROL Dynamic Media Assets]** pour enregistrer votre modèle. [Créez un dossier](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) dans ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**pour répliquer ce dossier dans**[!UICONTROL  Dynamic Media Assets ]**.
 1. [Synchronisez les images disponibles dans votre [!DNL AEM Assets] instance avec  [!DNL Dynamic Media]  pour les utiliser afin de créer le modèle](/help/assets/dynamic-media/config-dm.md).
 1. Publiez les images à utiliser lors de la création du modèle pour générer l’URL de diffusion du modèle après sa création. L’URL de diffusion peut être utilisée dans les applications en aval.
-1. Pour utiliser une autre police que la police [!UICONTROL Adobe Sans F2] par défaut dans le calque de texte du modèle, [chargez et publiez le fichier de police simultanément dans AEM et Dynamic Media](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation). [Les formats de fichiers de polices pris en charge sont AEM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/fr/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Veillez également à [retraiter](/help/assets/reprocessing-assets-view.md) les polices existantes pour les utiliser. Voir [Polices](https://experienceleague.adobe.com/fr/docs/dynamic-media-classic/using/support-files/fonts) pour plus d’informations.<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
+1. Pour utiliser une autre police que la police [!UICONTROL Adobe Sans F2] par défaut dans le calque de texte du modèle, [chargez et publiez le fichier de police simultanément dans AEM et Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation). [Les formats de fichiers de polices pris en charge sont AEM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Veillez également à [retraiter](/help/assets/reprocessing-assets-view.md) les polices existantes pour les utiliser. Voir [Polices](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) pour plus d’informations.<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
 1. vérifiez les points suivants dans l’interface utilisateur tactile :
    * Sur la page **[!UICONTROL Modifier [!DNL Dynamic Media] configuration]**, **[!UICONTROL [!DNL Dynamic Media]mode de synchronisation]** défini sur **[!UICONTROL Désactivé par défaut]** n’est pas appliqué à tous les dossiers AEM (**[!UICONTROL Synchroniser tout le contenu]** est décoché). Consultez [Configuration de Dynamic Media Cloud Service](/help/assets/dynamic-media/config-dm.md) pour plus d’informations.
    * **[!UICONTROL [!DNL Dynamic Media]mode de synchronisation]** est défini sur **[!UICONTROL Activer pour les sous-dossiers]** pour le dossier ou sous-dossier de destination dans lequel vous enregistrerez le modèle après sa création. Voir [Configuration [!DNL Dynamic Media] Cloud Service](/help/assets/dynamic-media/config-dm.md) pour plus d&#39;informations.
@@ -61,9 +61,9 @@ Remplissez les conditions suivantes pour créer un modèle de [!DNL Dynamic Medi
 Pour créer un modèle de [!DNL Dynamic Media], procédez comme suit :
 
 <!--
-1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
-1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them in creating the template. Publishing images is required to generate the template's delivery URL, after creating the template. The delivery URL can be used in downstream applications.
-1. [Execute these asset uploading and publishing steps](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) to upload and publish a font file to AEM and Dynamic Media simultaneously to use it in creating the template. [!UICONTROL Adobe Sans F2] is the only default font available in the text layer. [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/fr/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them in creating the template (On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). See [Fonts](https://experienceleague.adobe.com/fr/docs/dynamic-media-classic/using/support-files/fonts) to know more about fonts.
+1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
+1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them in creating the template. Publishing images is required to generate the template's delivery URL, after creating the template. The delivery URL can be used in downstream applications.
+1. [Execute these asset uploading and publishing steps](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) to upload and publish a font file to AEM and Dynamic Media simultaneously to use it in creating the template. [!UICONTROL Adobe Sans F2] is the only default font available in the text layer. [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them in creating the template (On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). See [Fonts](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) to know more about fonts.
 -->
 
 1. [Créer une zone de travail vierge](#create-a-canvas)
@@ -83,7 +83,7 @@ Pour créer une zone de travail vierge, procédez comme suit :
 
 1. Sélectionnez **[!UICONTROL Créer un modèle]**. La boîte de dialogue **[!UICONTROL Nouveau modèle]** s’affiche.
 
-   ![comment créer des modèles dynamiques qui peuvent être personnalisés en temps réel &#x200B;](/help/assets/assets/new-template.png)
+   ![comment créer des modèles dynamiques qui peuvent être personnalisés en temps réel ](/help/assets/assets/new-template.png)
 
    >[!NOTE]
    >
@@ -105,7 +105,7 @@ Pour créer une zone de travail vierge, procédez comme suit :
 
 * ![Modèles DM](/help/assets/assets/layer-selector.svg) : sélectionnez ![Modèles DM](/help/assets/assets/layer-selector.svg) et cliquez sur un calque sur la zone de travail pour le sélectionner.
 * ![modèles prenant en charge la personnalisation](/help/assets/assets/bring-forward.svg) : cliquez sur ![modèles prenant en charge la personnalisation](/help/assets/assets/bring-forward.svg) ou utilisez le raccourci clavier **Ctrl** + **`]`** (Windows) ou **Cmd** + **`]`** (Mac) pour avancer un calque sélectionné.
-* ![comment créer un modèle qui peut être personnalisé facilement &#x200B;](/help/assets/assets/send-backward.svg) : cliquez sur ![comment créer un modèle qui peut être personnalisé facilement](/help/assets/assets/send-backward.svg) ou utilisez le raccourci clavier **Ctrl** + **`[`** (Windows) ou **Cmd** + **`[`** (Mac) pour renvoyer un calque sélectionné vers l’arrière.
+* ![comment créer un modèle qui peut être personnalisé facilement ](/help/assets/assets/send-backward.svg) : cliquez sur ![comment créer un modèle qui peut être personnalisé facilement](/help/assets/assets/send-backward.svg) ou utilisez le raccourci clavier **Ctrl** + **`[`** (Windows) ou **Cmd** + **`[`** (Mac) pour renvoyer un calque sélectionné vers l’arrière.
 * ![créez un modèle qui peut être personnalisé instantanément](/help/assets/assets/undo.svg) : cliquez sur ![créer un modèle qui peut être personnalisé instantanément](/help/assets/assets/undo.svg) ou utilisez un raccourci clavier, **Ctrl** + **Z** (Windows) ou **Cmd** + **Z** (Mac) pour annuler la dernière action.
 * ![modèle pour créer rapidement des bannières](/help/assets/assets/redo.svg) : cliquez sur ![modèle pour créer rapidement des bannières](/help/assets/assets/redo.svg) ou utilisez le raccourci clavier **Ctrl** + **Y** (Windows) ou **Cmd** + **Y** (Mac) pour rétablir la dernière action.
 * ![modèle pour créer rapidement des prospectus](/help/assets/assets/zoom-in.svg) : cliquez sur ![modèle pour créer rapidement des prospectus](/help/assets/assets/zoom-in.svg) ou utilisez le raccourci clavier **Ctrl** + **+** (Windows) ou **Cmd** + **+** (Mac) pour effectuer un zoom sur la zone de travail.
@@ -198,7 +198,7 @@ Pour modifier un calque de texte ou d’image, reportez-vous aux actions courant
 
 Mettez en forme votre texte selon la police, la taille, la couleur, le style et l’alignement requis (dans le calque) en modifiant leurs valeurs dans les champs respectifs sous la section **[!UICONTROL Texte]** du panneau.Veillez à inclure **[!UICONTROL Redimensionnement de texte intelligent]**. [!UICONTROL Redimensionnement intelligent de texte] fonctionne sur l’algorithme [Copyfit](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting) pour remplir de manière optimale le texte dans la zone de texte, empêcher le débordement du texte et réduire l’espace supplémentaire au bas du texte.
 
-![création de contenu en un rien de temps &#x200B;](/help/assets/assets/smart-text-resize.png)
+![création de contenu en un rien de temps ](/help/assets/assets/smart-text-resize.png)
 
 ### Calques de paramètres {#parameterise-a-layer}
 
@@ -207,7 +207,7 @@ Après avoir créé un modèle avec plusieurs calques d’images, de textes et d
 Pour paramétrer un calque :
 
 1. Cliquez sur ![création instantanée de contenu](/help/assets/assets/show-layers-list.svg), sélectionnez un calque et cliquez sur **[!UICONTROL Paramètres]**. Le panneau **[!UICONTROL Paramètres]** s’affiche.
-1. Activez le bouton (bascule) **[!UICONTROL Inclure le paramètre]** pour paramétrer une propriété. Pour connaître le comportement de la propriété après paramétrage[&#128279;](#parameterisation-options-or-allowed-parameters) consultez l’option du panneau Paramètres).
+1. Activez le bouton (bascule) **[!UICONTROL Inclure le paramètre]** pour paramétrer une propriété. Pour connaître le comportement de la propriété après paramétrage](#parameterisation-options-or-allowed-parameters) consultez l’option du panneau [Paramètres).
 1. **Facultatif :** renommez le paramètre. Un nom de paramètre comporte un nom de calque suivi d’un suffixe. Pour un calque sélectionné, toutes ses propriétés paramétrées partagent le même nom de calque suivi d’un suffixe variable. Renommez le calque en suivant la convention de nommage sémantique de sorte que, lorsque vous incluez le paramètre dans l’URL, le nom du paramètre explique lui-même le contenu du calque ou son objectif.
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
    ![création instantanée de contenu](/help/assets/assets/parameterise-a-layer.png)Pour basculer entre le panneau Paramètres d’un calque d’image et de texte, sélectionnez le calque sur la zone de travail et cliquez sur **[!UICONTROL Paramètres]**.
@@ -224,7 +224,7 @@ Vous trouverez ci-dessous des paramètres de calque qui s’appliquent à la foi
 
 ##### Paramètre de l&#39;image{#image-parameter}
 
-Incluez le paramètre **&#x200B;**&#x200B;pour remplacer l&#39;image du calque par une nouvelle image en modifiant le chemin d&#39;accès à l&#39;image dans la valeur du paramètre dans l&#39;URL.![paramètre source image](/help/assets/assets/image-parameter.png)
+Incluez le paramètre **** pour remplacer l&#39;image du calque par une nouvelle image en modifiant le chemin d&#39;accès à l&#39;image dans la valeur du paramètre dans l&#39;URL.![paramètre source image](/help/assets/assets/image-parameter.png)
 
 ##### Paramètres de formatage du texte{#text-formatting-parameters}
 
@@ -350,8 +350,8 @@ Pour ajouter un lien CTA à une couche, procédez comme suit :
     <div class="adobe-dynamicmedia-template-embed-container">
     <img id="<Image ID>>" src="<Image Source>>" alt="adobe dynamicmedia template" usemap="#adobe-dynamicmedia-template-map" width="800" height="300">
     <map name="adobe-dynamicmedia-template-map">
-    <area shape="rect" coords="417,-60,817,340" href="https://business.adobe.com/fr/products.html" alt="Layer with CTA" title="https://business.adobe.com/fr/products.html" target="_blank">
-    <area shape="rect" coords="6,206.57,129,231.43" href="https://business.adobe.com/fr/products.html" alt="Layer with CTA" title="https://business.adobe.com/fr/products.html" target="_blank">
+    <area shape="rect" coords="417,-60,817,340" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
+    <area shape="rect" coords="6,206.57,129,231.43" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
     </map>
     </div>
    ```
