@@ -6,9 +6,9 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: dea8a3df29876df1c97454a97602045eb50121ad
+source-git-commit: d1b28c7cfb323042f038a070bf0cb4ccfa27d9a1
 workflow-type: tm+mt
-source-wordcount: '1857'
+source-wordcount: '1856'
 ht-degree: 22%
 
 ---
@@ -34,7 +34,7 @@ Avant de commencer à déployer votre code, configurez les paramètres de votre 
 >
 >Vous pouvez [modifier les paramètres du pipeline](managing-pipelines.md) après la configuration initiale.
 
-## Ajouter un nouveau pipeline de production {#adding-production-pipeline}
+## Ajout d’un pipeline de production {#adding-production-pipeline}
 
 Une fois que vous avez configuré votre programme et que vous disposez au moins d’un environnement basé sur l’interface utilisateur de , vous êtes prêt à ajouter un pipeline de production en suivant ces étapes.
 
@@ -110,11 +110,11 @@ Un pipeline de code full stack déploie simultanément des versions de code fron
 
 1. Indiquez les chemins à inclure dans le contrôle de l’expérience.
 
-   * Voir [&#x200B; Tests de contrôle de l’expérience](/help/implementing/cloud-manager/reports/report-experience-audit.md#configuration) pour plus d’informations.
+   * Voir [ Tests de contrôle de l’expérience](/help/implementing/cloud-manager/reports/report-experience-audit.md#configuration) pour plus d’informations.
 
 1. Cliquez sur **Enregistrer** pour enregistrer votre pipeline.
 
-Lorsque le pipeline s’exécute, les chemins configurés pour le contrôle de l’expérience sont envoyés et évalués en fonction des tests de performance, d’accessibilité, d’optimisation du moteur de recherche, des bonnes pratiques et de PWA. Pour plus d’informations, voir [&#x200B; Comprendre les résultats du contrôle de l’expérience &#x200B;](/help/implementing/cloud-manager/reports/report-experience-audit.md).
+Lorsque le pipeline s’exécute, les chemins configurés pour le contrôle de l’expérience sont envoyés et évalués en fonction des tests de performance, d’accessibilité, d’optimisation du moteur de recherche, des bonnes pratiques et de PWA. Pour plus d’informations, voir [ Comprendre les résultats du contrôle de l’expérience ](/help/implementing/cloud-manager/reports/report-experience-audit.md).
 
 Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](managing-pipelines.md) dans le carte **Pipelines** dans la page **Aperçu du programme**.
 

@@ -6,9 +6,9 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: dea8a3df29876df1c97454a97602045eb50121ad
+source-git-commit: d1b28c7cfb323042f038a070bf0cb4ccfa27d9a1
 workflow-type: tm+mt
-source-wordcount: '1740'
+source-wordcount: '1739'
 ht-degree: 18%
 
 ---
@@ -24,7 +24,7 @@ Un utilisateur doit disposer du rôle **[Responsable de déploiement](/help/onbo
 >
 >Vous pouvez [modifier les paramètres du pipeline](managing-pipelines.md) après la configuration initiale.
 
-## Ajout d’un nouveau pipeline hors production
+## Ajout d’un pipeline hors production
 
 Après avoir configuré un programme et créé au moins un environnement dans l’interface utilisateur de Cloud Manager, vous pouvez ajouter des pipelines hors production. Utilisez ces pipelines pour tester la qualité du code avant de le déployer dans des environnements de production.
 
