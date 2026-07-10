@@ -4,7 +4,7 @@ description: Découvrez comment créer des modèles Dynamic Media à l’aide d�
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 48109a25fc5ad825887fc461be38652b8ab80149
+source-git-commit: 625eb59b08391a0a67f2cffb4e026418c49bc2f2
 workflow-type: tm+mt
 source-wordcount: '3931'
 ht-degree: 35%
@@ -16,7 +16,7 @@ ht-degree: 35%
 
 Créez des modèles personnalisables en temps réel pour vos bannières et prospectus à l’aide de [!DNL Dynamic Media] templates, un éditeur de modèles WYSIWYG. Publiez votre modèle de [!DNL Dynamic Media] et utilisez-le dans les applications en aval. Un modèle de [!DNL Dynamic Media] comprend des calques d’image et de texte. Ajoutez des paramètres aux calques d’image et de texte du modèle et utilisez [[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/fr/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) pour repositionner et redimensionner le calque et mettre à jour son contenu en temps réel.
 
->[!VIDEO](https://video.tv.adobe.com/v/3451729/?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451729/?captions=fre_fr&learn=on&enablevpops){transcript=true}
 
 Voici quelques-unes des fonctions principales :
 
