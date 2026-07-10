@@ -6,10 +6,10 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 883e35047917de29fb71331fe2f28243e66a16b7
+source-git-commit: dea8a3df29876df1c97454a97602045eb50121ad
 workflow-type: tm+mt
-source-wordcount: '1889'
-ht-degree: 23%
+source-wordcount: '1857'
+ht-degree: 22%
 
 ---
 
@@ -61,7 +61,7 @@ Une fois que vous avez configuré votre programme et que vous disposez au moins 
 
    **Comportement en cas d’échecs de mesure importants** - lors de la configuration ou de la modification du pipeline, le **responsable de déploiement** peut définir le comportement du pipeline lorsqu’un échec important est rencontré à l’un des points de contrôle qualité. Les options disponibles sont les suivantes :
 
-   * **Demander à chaque fois** - Paramètre par défaut. Il nécessite une intervention manuelle lors de toute défaillance importante.
+   * **Demander à chaque fois** - Paramètre par défaut. Il nécessite une intervention manuelle pour toute défaillance importante.
    * **Défaillance immédiate** – Si cette option est sélectionnée, le pipeline sera interrompu dès qu’une défaillance importante aura lieu. Ce processus émule un utilisateur rejetant manuellement chaque échec.
    * **Continuer immédiatement** - si cette option est sélectionnée, le pipeline se poursuit automatiquement chaque fois qu’un échec important se produit. Ce processus émule un utilisateur approuvant manuellement chaque échec.
 
@@ -97,11 +97,7 @@ Un pipeline de code full stack déploie simultanément des versions de code fron
    * **Branche Git** - Dans la liste déroulante, choisissez la branche du référentiel sélectionné à partir duquel le pipeline se construit. La valeur par défaut est `main`. Le pipeline utilise la branche choisie comme source pour la création et le déploiement. Si nécessaire, cliquez sur **Actualiser** pour mettre à jour la liste des branches disponibles pour le référentiel sélectionné. Utilisez cette option si une branche créée récemment n’apparaît pas dans la liste.
    * **Créer une stratégie**
       * **Version complète** - Génère tous les modules du référentiel à chaque fois
-      * BETA **Smart Build** - crée uniquement les modules qui ont été modifiés depuis la dernière validation.<br>En savoir plus sur [l’utilisation de la création intelligente dans un pipeline hors production](#about-smart-build-non-production-pipeline).
-
-        >[!IMPORTANT]
-        >
-        >Le build intelligent est disponible uniquement pour les pipelines de qualité du code et de déploiement de code de pile complète de développement.
+      * **Version intelligente** - Crée uniquement les modules qui ont été modifiés depuis la dernière validation.<br>En savoir plus sur [l’utilisation de la création intelligente dans un pipeline hors production](#about-smart-build-non-production-pipeline).
    * **Ignorer la configuration de niveau Web** – Lorsque cette case est cochée, le pipeline ne déploie pas votre configuration de niveau web.
    * **Mettre en pause avant le déploiement en production** - Met le pipeline en pause avant son déploiement en production.
    * **Planifié** - Permet à l’utilisateur d’activer le déploiement en production planifié.
@@ -114,11 +110,11 @@ Un pipeline de code full stack déploie simultanément des versions de code fron
 
 1. Indiquez les chemins à inclure dans le contrôle de l’expérience.
 
-   * Voir [&#x200B; Tests de contrôle de l’expérience](/help/implementing/cloud-manager/reports/report-experience-audit.md#configuration) pour plus d’informations.
+   * Voir [ Tests de contrôle de l’expérience](/help/implementing/cloud-manager/reports/report-experience-audit.md#configuration) pour plus d’informations.
 
 1. Cliquez sur **Enregistrer** pour enregistrer votre pipeline.
 
-Lorsque le pipeline s’exécute, les chemins configurés pour le contrôle de l’expérience sont envoyés et évalués en fonction des tests de performance, d’accessibilité, d’optimisation du moteur de recherche, des bonnes pratiques et de PWA. Pour plus d’informations, voir [&#x200B; Comprendre les résultats du contrôle de l’expérience &#x200B;](/help/implementing/cloud-manager/reports/report-experience-audit.md).
+Lorsque le pipeline s’exécute, les chemins configurés pour le contrôle de l’expérience sont envoyés et évalués en fonction des tests de performance, d’accessibilité, d’optimisation du moteur de recherche, des bonnes pratiques et de PWA. Pour plus d’informations, voir [ Comprendre les résultats du contrôle de l’expérience ](/help/implementing/cloud-manager/reports/report-experience-audit.md).
 
 Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](managing-pipelines.md) dans le carte **Pipelines** dans la page **Aperçu du programme**.
 
@@ -173,13 +169,9 @@ Un déploiement ciblé déploie le code uniquement pour les parties sélectionn�
 
 Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](managing-pipelines.md) sur la carte **Pipelines** sur la page **Aperçu du programme**.
 
-## BETA : à propos de l’utilisation de la création intelligente dans un pipeline de production{#about-smart-build-production-pipeline}
+## À propos de l’utilisation de la création dynamique dans un pipeline de production{#about-smart-build-production-pipeline}
 
 La **version intelligente** dans Cloud Manager est une stratégie de création optimisée pour les pipelines de production. La génération intelligente réduit les temps de génération en mettant en cache les modules et en ne reconstruisant que les modules qui ont été modifiés depuis la dernière exécution réussie. Les modules inchangés sont réutilisés à partir du cache, tandis que seuls les modules modifiés et leurs dépendances sont reconstruits, ce qui améliore l’efficacité des workflows de développement itératifs.
-
->[!NOTE]
->
->Cette version bêta vous intéresse ? Envoyez un e-mail à l’adresse [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) avec votre ID d’organisation et votre ID de programme Adobe.
 
 >[!IMPORTANT]
 >

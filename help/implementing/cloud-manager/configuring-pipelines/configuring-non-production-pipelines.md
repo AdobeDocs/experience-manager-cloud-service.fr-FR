@@ -6,9 +6,9 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 0171e2e6a27a8b60bcd94792e616961598f580fb
+source-git-commit: dea8a3df29876df1c97454a97602045eb50121ad
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1740'
 ht-degree: 18%
 
 ---
@@ -59,8 +59,7 @@ Après avoir configuré un programme et créé au moins un environnement dans l�
 
 1. Cliquez sur **Continuer**.
 
-1. Les étapes restantes que vous utilisez pour terminer la configuration de votre pipeline hors production dépendent du type de code source que vous choisissez d’utiliser.
-Sous l’onglet **Code** de la boîte de dialogue **Ajouter un pipeline hors production**, sélectionnez le type de code que le pipeline hors production traite.
+1. Les étapes restantes que vous utilisez pour terminer la configuration de votre pipeline hors production dépendent du type de code source que vous choisissez d’utiliser.Sous l’onglet **Code** de la boîte de dialogue **Ajouter un pipeline hors production**, sélectionnez le type de code que le pipeline hors production traite.
 
    * **[J’utilise le code de pile complète](#full-stack-code)**
    * **[J’utilise le déploiement ciblé](#targeted-deployment)**
@@ -90,11 +89,11 @@ Pour terminer la configuration du pipeline hors production de code full stack, p
    * **Branche Git** - Dans la liste déroulante, choisissez la branche du référentiel sélectionné à partir duquel le pipeline se construit. La valeur par défaut est `main`. Le pipeline utilise la branche choisie comme source pour la création et le déploiement. Si nécessaire, cliquez sur **Actualiser** pour mettre à jour la liste des branches disponibles pour le référentiel sélectionné. Utilisez cette option si une branche créée récemment n’apparaît pas dans la liste.
    * **Créer une stratégie**
       * **Version complète** - Génère tous les modules du référentiel à chaque fois
-      * BETA **Smart Build** - crée uniquement les modules qui ont été modifiés depuis la dernière validation.<br>En savoir plus sur [l’utilisation de la création intelligente dans un pipeline hors production](#about-smart-build-non-production-pipeline).
+      * **Version intelligente** - Crée uniquement les modules qui ont été modifiés depuis la dernière validation.<br>En savoir plus sur [l’utilisation de la création intelligente dans un pipeline hors production](#about-smart-build-non-production-pipeline).
 
-        >[!IMPORTANT]
+        >[!NOTE]
         >
-        >Le build intelligent est disponible uniquement pour les pipelines de qualité du code et de déploiement de code de pile complète de développement.
+        >Le build intelligent est disponible pour les pipelines de qualité du code et tous les pipelines de déploiement de pile complète (développement, évaluation, production).
 
    * Case à cocher **Ignorer la configuration de niveau web** - Lorsque cette case est cochée, le pipeline ne déploie pas votre configuration de niveau web.
 
@@ -177,7 +176,7 @@ The steps to complete the creation of your non-production, targeted deployment p
 Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](managing-pipelines.md) dans le carte **Pipelines** dans la page **Aperçu du programme**.
 
 
-## À propos de l’utilisation de la création dynamique dans un pipeline hors production{#about-smart-build-non-production-pipeline}
+## À propos de l’utilisation de la création dynamique dans votre pipeline{#about-smart-build-non-production-pipeline}
 
 La **version intelligente** dans Cloud Manager est une stratégie de création optimisée pour les pipelines hors production. La génération intelligente réduit les temps de génération en mettant en cache les modules et en ne reconstruisant que les modules qui ont été modifiés depuis la dernière exécution réussie. Les modules inchangés sont réutilisés à partir du cache, tandis que seuls les modules modifiés et leurs dépendances sont reconstruits, ce qui améliore l’efficacité des workflows de développement itératifs.
 
@@ -185,6 +184,7 @@ La génération intelligente n&#39;est actuellement disponible que pour les él�
 
 * Pipelines de la qualité du code.
 * Développez des pipelines de déploiement full stack.
+* Pipelines de déploiement full stack d’évaluation et de production
 
 >[!NOTE]
 >
