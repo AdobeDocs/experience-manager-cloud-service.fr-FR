@@ -315,7 +315,7 @@ Les techniques de dépannage présentées ci-dessous permettent de déboguer les
 
 **Impossible de localiser un sous-dossier `conf.dispatcher.d` dans l’archive**
 
-Votre archive doit contenir les dossiers `conf.d` et `conf.dispatcher.d`. Notez que vous ne devriez pas ****
+Votre archive doit contenir les dossiers `conf.d` et `conf.dispatcher.d`. Notez que vous ne devriez pas **&#x200B;**
 utilisez le préfixe `etc/httpd` dans votre archive.
 
 **Impossible de trouver une ferme dans`conf.dispatcher.d/enabled_farms`**
