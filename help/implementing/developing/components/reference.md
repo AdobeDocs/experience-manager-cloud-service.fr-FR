@@ -6,8 +6,8 @@ feature: Developing
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3476'
-ht-degree: 89%
+source-wordcount: '3713'
+ht-degree: 90%
 
 ---
 
@@ -55,7 +55,7 @@ Il est également possible de remplacer une boîte de dialogue de composant en u
 
 Ainsi, vous avez seulement besoin de redéfinir les modifications à apporter et non pas toute la boîte de dialogue.
 
-### Logique de contenu et balisage de rendu   {#content-logic-and-rendering-markup}
+### Logique de contenu et balisage de rendu  {#content-logic-and-rendering-markup}
 
 Votre composant est rendu en [HTML](https://www.w3schools.com/htmL/html_intro.asp). Votre composant doit définir l’HTML nécessaire pour effectuer le rendu du contenu selon les besoins, dans les environnements de création et de publication.
 
@@ -323,8 +323,7 @@ Il existe de nombreuses configurations dans AEM. Vous pouvez facilement recherch
 
 Les composants doivent toujours générer du code HTML visible par l’auteur ou l’autrice, même si le composant ne comporte aucun contenu, sans quoi il pourrait disparaître visuellement de l’interface de l’éditeur, ce qui le rend techniquement présent, mais invisible sur la page et dans l’éditeur. Dans ce cas, les auteurs ne pourraient pas sélectionner ce composant vide ni interagir avec lui.
 
-Pour cette raison, les composants doivent générer un espace réservé tant qu’ils n’affichent pas de sortie visible lorsque la page est rendue dans l’éditeur de page (lorsque le WCM est en mode `edit` ou `preview`).
-L’annotation HTML type d’un espace réservé est la suivante :
+Pour cette raison, les composants doivent générer un espace réservé tant qu’ils n’affichent pas de sortie visible lorsque la page est rendue dans l’éditeur de page (lorsque le WCM est en mode `edit` ou `preview`).L’annotation HTML type d’un espace réservé est la suivante :
 
 ```HTML
 <div class="cq-placeholder" data-emptytext="Component Name"></div>
@@ -451,7 +450,7 @@ Ce événement est déclenché chaque fois que la boîte de dialogue se charge (
 
 ## Comportement de la prévisualisation {#preview-behavior}
 
-Le cookie [WCM Mode &#x200B;](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/WCMMode.html)est défini lors du passage en mode Aperçu même lorsque la page n’est pas rafraîchie.
+Le cookie [WCM Mode ](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/WCMMode.html)est défini lors du passage en mode Aperçu même lorsque la page n’est pas rafraîchie.
 
 Pour les composants dont le rendu est sensible au mode WCM, ils doivent être définis de manière à s’actualiser eux-mêmes, puis s’appuyer sur la valeur du cookie.
 
