@@ -6,8 +6,8 @@ exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
 role: Admin
 source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '3028'
-ht-degree: 93%
+source-wordcount: '3077'
+ht-degree: 87%
 
 ---
 
@@ -110,9 +110,9 @@ Si vous souhaitez faire correspondre l’hôte exact car vous disposez de plusie
 
 * `conf.d/enabled_vhosts/<CUSTOMER_CHOICE>.vhost`
 
-Ce dossier contient des liens symboliques relatifs vers des fichiers sous conf.dispatcher.d/available_vhosts.
+Ce dossier contient des liens symboliques relatifs aux fichiers sous conf.dispatcher.d/available_vhosts.
 
-Exemples de commandes nécessaires à la création de liens symboliques :
+Exemples de commandes requises pour créer ces liens symboliques :
 
 Apple macOS, Linux et WSL
 
@@ -128,7 +128,7 @@ mklink wknd.vhost ..\available_vhosts\wknd.vhost
 
 >[!NOTE]
 >
-> Lorsque vous utilisez des liens symboliques sous Windows, vous devez être exécuté dans une invite de commande avec élévation de privilèges, dans le sous-système Windows pour Linux ou avoir le privilège [Créer des liens symboliques](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) attribué.
+> Lorsque vous travaillez avec des liens symboliques sous Windows, vous devez exécuter une invite de commande avec élévation de privilèges, dans le sous-système Windows pour Linux ou le privilège [Créer des liens symboliques](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) doit vous être attribué.
 
 * `conf.d/rewrites/rewrite.rules`
 
@@ -148,9 +148,9 @@ Vous pouvez avoir un ou plusieurs de ces fichiers. Ils contiennent des fermes co
 
 * `conf.dispatcher.d/enabled_farms/<CUSTOMER_CHOICE>.farm`
 
-Ce dossier contient des liens symboliques relatifs vers des fichiers sous conf.dispatcher.d/available_farms.
+Ce dossier contient des liens symboliques relatifs aux fichiers sous conf.dispatcher.d/available_farms.
 
-Exemples de commandes nécessaires à la création de liens symboliques :
+Exemples de commandes requises pour créer ces liens symboliques :
 
 Apple macOS, Linux et WSL
 
@@ -166,7 +166,7 @@ mklink wknd.farm ..\available_farms\wknd.farm
 
 >[!NOTE]
 >
-> Lorsque vous utilisez des liens symboliques sous Windows, vous devez être exécuté dans une invite de commande avec élévation de privilèges, dans le sous-système Windows pour Linux ou avoir le privilège [Créer des liens symboliques](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) attribué.
+> Lorsque vous travaillez avec des liens symboliques sous Windows, vous devez exécuter une invite de commande avec élévation de privilèges, dans le sous-système Windows pour Linux ou le privilège [Créer des liens symboliques](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) doit vous être attribué.
 
 * `conf.dispatcher.d/cache/rules.any`
 
@@ -198,8 +198,7 @@ Il est recommandé que les fichiers ci-dessus fassent référence aux fichiers n
 
 * `conf.d/available_vhosts/default.vhost`
 
-Contient un exemple d’hôte virtuel. Pour votre propre hôte virtuel, créez une copie de ce fichier, personnalisez-la, accédez à `conf.d/enabled_vhosts` et créez un lien symbolique vers votre copie personnalisée.
-Ne copiez pas directement le fichier default.vhost dans `conf.d/enabled_vhosts`.
+Contient un exemple d’hôte virtuel. Pour votre propre hôte virtuel, créez une copie de ce fichier, personnalisez-la, accédez à `conf.d/enabled_vhosts` et créez un lien symbolique vers votre copie personnalisée.Ne copiez pas directement le fichier default.vhost dans `conf.d/enabled_vhosts`.
 
 Assurez-vous qu’un hôte virtuel correspondant aux ServerAlias `\*.local`, `localhost` et `127.0.0.1`, nécessaires pour l’invalidation du Dispatcher, est toujours disponible. Les alias de serveur `*.adobeaemcloud.net` et `*.adobeaemcloud.com` sont nécessaires pour les processus internes d’Adobe.
 
@@ -316,18 +315,18 @@ Les techniques de dépannage présentées ci-dessous permettent de déboguer les
 
 **Impossible de localiser un sous-dossier `conf.dispatcher.d` dans l’archive**
 
-Votre archive doit contenir les dossiers `conf.d` et `conf.dispatcher.d`. Notez que vous ne devez **pas**
-utiliser le préfixe `etc/httpd` dans votre archive.
+Votre archive doit contenir les dossiers `conf.d` et `conf.dispatcher.d`. Notez que vous ne devriez pas **&#x200B;**
+utilisez le préfixe `etc/httpd` dans votre archive.
 
 **Impossible de trouver une ferme dans`conf.dispatcher.d/enabled_farms`**
 
 Vos fermes activées doivent se trouver dans le sous-dossier mentionné.
 
-**Le fichier inclus (...) doit être nommé : ...**.
+**Fichier inclus (...) doit être nommé : ...**
 
-Deux sections de la configuration de votre ferme **doivent** inclure
-un fichier spécifique : `/renders` et `/allowedClients` dans la section `/cache`. Ces
-sections doivent se présenter comme suit :
+Votre configuration de batterie de serveurs comporte deux sections qui **doivent** inclure une
+fichier spécifique : `/renders` et `/allowedClients` dans la section `/cache` . Ceux-là
+les sections doivent se présenter comme suit :
 
 ```
 /renders {
@@ -358,7 +357,8 @@ Vous pouvez également inclure la version **par défaut** de ces fichiers, dont 
 
 **Inclure l’instruction à (...), en dehors de tout emplacement connu : ...**.
 
-Outre les six sections mentionnées dans les paragraphes ci-dessus, vous n’avez pas l’autorisation d’utiliser l’instruction `$include`. Par exemple, les éléments suivants généreraient cette erreur :
+Outre les six sections mentionnées dans les paragraphes ci-dessus, vous n’êtes pas autorisé
+pour utiliser l’instruction `$include`, par exemple, les éléments suivants généreraient cette erreur :
 
 ```
 /invalidate {
@@ -368,7 +368,8 @@ Outre les six sections mentionnées dans les paragraphes ci-dessus, vous n’ave
 
 **Les clients/rendus ne sont pas inclus à partir de : ...**.
 
-Cette erreur est générée lorsque vous ne spécifiez pas d’inclusion pour `/renders` et `/allowedClients` dans la section `/cache`. Voir la section **le fichier inclus (...) doit être nommé : ...** pour plus d’informations.
+Cette erreur est générée lorsque vous ne spécifiez pas d’inclusion pour `/renders` et `/allowedClients` dans la section `/cache`. Voir la
+**fichier inclus (...) doit être nommé : ...** section pour plus d’informations.
 
 **Le filtre ne doit pas utiliser de modèle glob pour autoriser les requêtes**
 
@@ -382,7 +383,7 @@ Il n’est pas sécurisé d’autoriser des requêtes avec une règle de style `
 
 Cette instruction est destinée à autoriser les requêtes de fichiers `css`, mais elle permet également les requêtes de **n’importe quelle** ressource suivie de la chaîne de requête `?a=.css`. Il est donc interdit d’utiliser de tels filtres (voir aussi CVE-2016-0957).
 
-**Le fichier inclus (...) ne correspond à aucun fichier connu.**
+**Fichier inclus (...) ne correspond à aucun fichier connu**
 
 Par défaut, il existe deux types de fichiers dans la configuration de l’hôte virtuel Apache qui peuvent être spécifiés comme inclus : les réécritures et les variables.
 
@@ -399,20 +400,19 @@ En mode flexible, d’autres fichiers peuvent également être inclus, à condit
 | `conf.d/modsec` |
 | `conf.d/rewrites` |
 
-Par exemple, vous pouvez inclure un fichier dans un répertoire créé sous le répertoire `conf.d/includes` comme suit :
+Par exemple, vous pouvez inclure un fichier dans un répertoire créé sous `conf.d/includes` répertoire comme suit :
 
 ```
 Include conf.d/includes/mynewdirectory/myincludefile.conf
 ```
 
-Vous pouvez également inclure la version **par défaut** des règles de réécriture, dont le nom est `conf.d/rewrites/default_rewrite.rules`.
-Notez qu’il n’existe pas de version par défaut des fichiers de variables.
+Vous pouvez également inclure la version **par défaut** des règles de réécriture, dont le nom est `conf.d/rewrites/default_rewrite.rules`.Notez qu’il n’existe pas de version par défaut des fichiers de variables.
 
 **Mise en page de configuration obsolète détectée, activation du mode de compatibilité**
 
-Ce message indique que votre configuration présente la disposition version 1 obsolète, contenant une
-configuration Apache complète et des fichiers avec des préfixes `ams_`. Bien que cette configuration soit toujours prise en charge
-en rétrocompatibilité, vous devriez passer à la nouvelle mise en page.
+Ce message indique que votre configuration comporte une disposition de version 1 obsolète, contenant un fichier complet
+Configuration Apache et fichiers avec préfixes `ams_`. Bien que cette configuration soit toujours prise en charge pour les versions antérieures
+compatibilité, vous devriez passer à la nouvelle mise en page.
 
 La première phase peut également être **exécutée séparément**, plutôt qu’à partir du script `validate.sh` de wrapper.
 
@@ -444,8 +444,7 @@ Cette phase vérifie la syntaxe Apache en démarrant Apache HTTPD dans un conten
 
 >[!NOTE]
 >
->Les utilisateurs et utilisatrices de Windows doivent utiliser Windows 10 Professionnel ou d’autres distributions prenant en charge Docker. Cette exigence est un prérequis pour l’exécution et le débogage du Dispatcher sur un ordinateur local.
->Pour Windows et macOS, Adobe vous recommande d’utiliser Docker Desktop.
+>Les utilisateurs et utilisatrices de Windows doivent utiliser Windows 10 Professionnel ou d’autres distributions prenant en charge Docker. Cette exigence est un prérequis pour l’exécution et le débogage du Dispatcher sur un ordinateur local.Pour Windows et macOS, Adobe vous recommande d’utiliser Docker Desktop.
 
 Cette phase peut également être exécutée indépendamment via `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080`.
 
@@ -554,9 +553,9 @@ INFO Mon Jul  4 09:53:55 UTC 2022: Apache httpd informationServer version: Apach
 
 ### Injection de variables d’environnement personnalisées {#environment-variables}
 
-Les variables d’environnement personnalisées peuvent être utilisées avec le SDK du Dispatcher en les définissant dans un fichier distinct et en le référençant dans la variable d’environnement `ENV_FILE` avant de démarrer le Dispatcher local.
+Les variables d’environnement personnalisées peuvent être utilisées avec le SDK du Dispatcher en les définissant dans un fichier séparé et en le référençant dans la variable d’environnement `ENV_FILE` avant de démarrer le Dispatcher local.
 
-Un fichier contenant des variables d’environnement personnalisées ressemblerait à ceci :
+Voici à quoi devrait ressembler un fichier contenant des variables d’environnement personnalisées :
 
 ```
 COMMERCE_ENDPOINT=commerce-host
@@ -564,7 +563,7 @@ AEM_HTTP_PROXY_HOST=host.docker.internal
 AEM_HTTP_PROXY_PORT=8000
 ```
 
-Et il peut être utilisé dans le SDK du Dispatcher local avec les commandes suivantes :
+Il peut également être utilisé dans le SDK du Dispatcher local avec les commandes suivantes :
 
 ```
 export ENV_FILE=custom.env
@@ -606,8 +605,7 @@ Lors du test local de votre configuration, vous pouvez simuler différents types
 $ DISP_RUN_MODE=stage docker_run.sh src docker.for.mac.localhost:4503 8080
 ```
 
-Le mode d’exécution par défaut lorsque vous ne transmettez pas de valeur pour DISP_RUN_MODE est « dev ».
-Pour obtenir la liste complète des options et variables disponibles, exécutez le script `docker_run.sh` sans argument.
+Le mode d’exécution par défaut lorsque vous ne transmettez pas de valeur pour DISP_RUN_MODE est « dev ».Pour obtenir la liste complète des options et variables disponibles, exécutez le script `docker_run.sh` sans argument.
 
 ## Affichage de la configuration Dispatcher utilisée par votre conteneur Docker {#viewing-dispatcher-configuration-in-use-by-docker-container}
 
@@ -636,7 +634,7 @@ $ docker exec d75fbd23b29 httpd-test
 
 Avec la version 2021.7.0 de Cloud Manager, les nouveaux programmes génèrent des structures de projet Maven avec [l’archétype 28 d’AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) ou version ultérieure, qui inclut le fichier **opt-in/USE_SOURCES_DIRECTLY**. Cela supprime les limites précédentes du [mode hérité](/help/implementing/dispatcher/validation-debug-legacy.md) concernant le nombre et la taille des fichiers, ce qui entraîne également la validation et le déploiement améliorés de la configuration par le SDK et l’exécution. Si votre configuration du Dispatcher ne comporte pas ce fichier, il est vivement recommandé de migrer. Pour garantir une transition sécurisée, procédez comme suit :
 
-1. **Test local.**&#x200B;À l’aide du dernier SDK des outils du Dispatcher, ajoutez le dossier et le fichier `opt-in/USE_SOURCES_DIRECTLY`. Suivez les instructions de « validation locale » de cet article pour tester le fonctionnement local du Dispatcher.
+1. **Test local.** À l’aide des outils Dispatcher les plus récents de SDK, ajoutez les `opt-in/USE_SOURCES_DIRECTLY` de dossiers et de fichiers. Suivez les instructions de « validation locale » de cet article pour tester le fonctionnement local du Dispatcher.
 1. **Test de développement dans le cloud :**
    * Validez le fichier `opt-in/USE_SOURCES_DIRECTLY` dans une branche git déployée par le pipeline hors production vers un environnement de développement cloud.
    * Utilisez Cloud Manager pour déployer un environnement de développement cloud.
@@ -646,7 +644,7 @@ Avec la version 2021.7.0 de Cloud Manager, les nouveaux programmes génèrent 
    >
    >En mode flexible, vous devez utiliser des chemins d’accès relatifs plutôt que des chemins absolus.
 1. **Déploiement en production :**
-   * Validez le fichier `opt-in/USE_SOURCES_DIRECTLY` dans une branche git déployée par le pipeline de production vers les environnements d’évaluation et de production Cloud.
+   * Validez le fichier `opt-in/USE_SOURCES_DIRECTLY` dans une branche Git déployée par le pipeline de production vers les environnements d’évaluation et de production Cloud.
    * Utilisez Cloud Manager pour effectuer le déploiement vers l’évaluation.
    * Testez minutieusement. Il est essentiel de vérifier que votre configuration Apache et Dispatcher se comporte comme prévu avant de déployer les modifications dans des environnements supérieurs. Vérifiez tous les comportements liés à votre configuration personnalisée. Soumettez un ticket au service clientèle si vous pensez que la configuration du Dispatcher déployée ne reflète pas votre configuration personnalisée.
    * Utilisez Cloud Manager pour poursuivre le déploiement en production.

@@ -3,11 +3,10 @@ title: Rapport d’activation d’AEM Assets (Beta)
 description: Définitions des mesures du rapport d’activation d’AEM Assets (Beta), couvrant les activations (téléchargements, partages) et les distributions (Dynamic Media, Sites). »
 role: Admin
 hide: true
-hidefromtoc: true
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
-source-git-commit: 8b95cf0f3e83e469c8698e5b6e7ddd01a365130b
+source-git-commit: 0b5e61f75a97bd31da034ebf282779a634217366
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -33,7 +32,7 @@ Ce n’est que le début de votre parcours avec AEM Assets, et ces mesures conti
 | | Mesure | Définition |
 |---|---|---|
 | **Activations** | **Téléchargements (vue Assets)** | Le nombre de fois où les ressources sont téléchargées directement à partir de l’environnement AEM Assets principal, par exemple, par des utilisateurs internes qui parcourent et téléchargent des fichiers via l’interface d’affichage d’Assets. |
-| | **Partage de liens (vue Assets)** | Le nombre de partages (via des liens partageables générés) depuis la vue AEM Assets afin de donner aux utilisateurs et utilisatrices externes ou non authentifiés un accès direct à des ressources, dossiers ou collections spécifiques sans avoir à se connecter. |
+| | **Partages (vue Assets)** | Le nombre de partages (via des liens partageables générés) depuis la vue AEM Assets afin de donner aux utilisateurs et utilisatrices externes ou non authentifiés un accès direct à des ressources, dossiers ou collections spécifiques sans avoir à se connecter. |
 | | **Téléchargements (Content Hub)** | Le nombre de fois où les ressources sont téléchargées par les utilisateurs via Content Hub, l’interface utilisateur en libre-service qui permet aux équipes élargies de parcourir et de télécharger des ressources approuvées et prêtes pour la marque. |
 | | **Partages (Content Hub)** | Le nombre de partages (via des liens partageables générés) depuis Content Hub afin de permettre à d’autres utilisateurs et utilisatrices d’accéder directement à des ressources ou collections sélectionnées. |
 | | **Activer dans Content Hub** | Action d’approbation/de publication d’une ressource à partir d’AEM Assets afin qu’elle soit disponible pour les utilisateurs finaux dans Content Hub. Seules les ressources approuvées apparaissent dans Content Hub. |

@@ -6,7 +6,7 @@ feature: Developing
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3442'
+source-wordcount: '3503'
 ht-degree: 81%
 
 ---
@@ -380,7 +380,7 @@ Code sur Github
 
 Vous pouvez trouver le code de cette page sur GitHub.
 
-* [Ouvrez le projet aem-sites-example-custom-template-type sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type).
+* [Ouvrez le projet aem-sites-example-custom-template-type sur GitHub .](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type)
 * Téléchargez le projet sous la forme d’[un fichier ZIP](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type/archive/master.zip).
 
 ## Définitions de modèle {#template-definitions}
