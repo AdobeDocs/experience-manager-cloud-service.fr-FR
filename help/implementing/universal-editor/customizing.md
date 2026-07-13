@@ -4,10 +4,10 @@ description: Découvrez les différentes options de personnalisation de l’édi
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Developer
-source-git-commit: c20290b92f6abdd602986ddca6e305dabdc13cfc
+source-git-commit: 349ac17aeb6c66e691596f5656e93a2cdb8472e5
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 53%
+source-wordcount: '631'
+ht-degree: 44%
 
 ---
 
@@ -122,3 +122,9 @@ Les conditions peuvent être définies à l’aide du [schéma JsonLogic](https:
 ![Champ de texte affiché](assets/shown.png)
 
 >[!ENDTABS]
+
+### Limitation : Conditions Dans Les Conteneurs À Champs Multiples {#conditions-multi-field-limitation}
+
+La condition `var` la résolution est absolue et non relative à la ligne active. Un `var` doit être un `fieldName` de niveau racine ou, pour les champs à l’intérieur d’un conteneur, un préfixe avec le nom du conteneur tel que `containerName|fieldName`.
+
+La même approche ne fonctionne pas pour les conteneurs multiples (lignes répétables). Le contenu des lignes est indexé au moment de l’exécution comme `containerName/0|fieldName`, `containerName/1|fieldName`, etc., mais cet index n’est pas connu lors de la création de la condition et il se déplace à mesure que des lignes sont ajoutées, supprimées ou réorganisées. Par conséquent, il n’existe aucun moyen pour un auteur de cibler un champ spécifique dans la même ligne. Par conséquent, les conditions à l’intérieur de plusieurs conteneurs ne sont pas prises en charge.
