@@ -6,16 +6,14 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: e9c13228-0857-4936-9c39-12ed2bddf429
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: f5d4707fdc5a920f11edbd1f1784f1f7cc6d082a
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 42%
+source-wordcount: '914'
+ht-degree: 44%
 
 ---
 
 # Connecter votre environnement AEM Forms à Turnstile {#connect-your-forms-environment-with-turnstile-service}
-
-<span class="preview"> Cette fonctionnalité s’inscrit dans le cadre du programme d’adoption précoce. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre adresse e-mail officielle pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart, Test public de Turing complètement automatisé ayant pour but de différencier les personnes humaines des ordinateurs) est un programme couramment utilisé dans les transactions en ligne pour différencier les personnes humaines des programmes automatisés ou des robots. Il présente un test et évalue la réponse de l’utilisateur ou de l’utilisatrice pour déterminer s’il s’agit d’une personne humaine ou d’un robot qui interagit avec le site. Cela empêche l’utilisateur ou l’utilisatrice de continuer si le test échoue et permet de sécuriser les transactions en ligne en empêchant les robots d’envoyer du spam ou des éléments malveillants.
 
@@ -30,7 +28,7 @@ AEM Forms as a Cloud Service prend en charge les solutions CAPTCHA suivantes :
 
 ## Intégrer le Captcha Turnstile à un environnement AEM Forms
 
-Le Captcha Cloudflare Turnstile est une mesure de sécurité visant à protéger les formulaires et les sites contre les robots automatisés, les attaques malveillantes, les spams et le trafic automatisé indésirable. Elle présente une case à cocher lors de l’envoi du formulaire pour vérifier qu’ils sont humains, avant de leur permettre d’envoyer le formulaire. AEM Forms as a Cloud Service prend en charge le captcha de tuile dans les composants principaux de Forms adaptatif.
+Le Captcha Cloudflare Turnstile est une mesure de sécurité visant à protéger les formulaires et les sites contre les robots automatisés, les attaques malveillantes, les spams et le trafic automatisé indésirable. Il affiche une case à cocher lors de l’envoi de formulaires, ce qui permet de vérifier que l’action est effectuée par de vraies personnes, avant l’envoi effectif. AEM Forms as a Cloud Service prend en charge le captcha de tuile dans les composants principaux de Forms adaptatif.
 
 ### Conditions préalables à l’intégration du Captcha Turnstile à un environnement AEM Forms {#prerequisite}
 
@@ -57,9 +55,8 @@ Pour intégrer le service Turnstile à AEM Forms, procédez comme suit :
 1. Configurez le Cloud Service :
    1. Sur votre instance d’auteur AEM, accédez à ![tools-1](assets/tools-1.png) > **[!UICONTROL Services cloud]** et cliquez sur **[!UICONTROL Tourniquet]**.
       ![Tourniquet dans l’interface utilisateur](assets/turnstile-in-ui.png)
-   1. Sélectionnez un conteneur de configuration, créé ou mis à jour, comme décrit dans la section précédente. Sélectionnez **[!UICONTROL Créer]**.
-      ![Configuration de Turnstile](assets/config-hcaptcha.png)
-   1. Spécifiez **[!UICONTROL Type de widget]** comme géré, non interactif ou invisible. Pour en savoir plus sur le type de widget, consultez [Widget tourniquet](https://developers.cloudflare.com/turnstile/concepts/widget/).
+   1. Sélectionnez un conteneur de configuration, créé ou mis à jour, comme décrit dans la section précédente. Sélectionnez **[!UICONTROL Créer]**.      ![Configuration de Turnstile](assets/config-hcaptcha.png)
+   1. Spécifiez le **[!UICONTROL Type de widget]** comme managé, non interactif ou invisible. Pour en savoir plus sur le type de widget, consultez [Widget tourniquet](https://developers.cloudflare.com/turnstile/concepts/widget/).
    1. Spécifiez **[!UICONTROL Titre]**, **[!UICONTROL Nom]**, **[!UICONTROL Clé du site]** et **[!UICONTROL Clé secrète]** pour le service Turnstile [obtenu dans les conditions préalables](#prerequisite).
    1. Cliquez sur **[!UICONTROL Créer]**.
 
