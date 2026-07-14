@@ -7,10 +7,10 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 8364530ae83289156c1dfec2f9b1cb5aa445521d
 workflow-type: tm+mt
-source-wordcount: '8178'
-ht-degree: 16%
+source-wordcount: '8255'
+ht-degree: 15%
 
 ---
 
@@ -181,7 +181,7 @@ Comprendre comment l’analyse des formulaires s’applique aux scénarios réel
 
 ### Génération de leads et Forms B2B
 
-Forms des demandes de contact et de démonstration **&#x200B;**
+Forms des demandes de contact et de démonstration ****
 
 - **Défi** : trouver le juste équilibre entre la qualité des prospects et les taux de remplissage des formulaires et réduire l’abandon des formulaires
 - **Solution Form Analytics** : suivez la corrélation entre les performances du formulaire, la longueur du formulaire et la qualité de conversion des prospects
@@ -207,7 +207,7 @@ Forms des demandes de contact et de démonstration **&#x200B;**
 - **Stratégie d’optimisation** : fournissez des indicateurs de progression clairs et une fonctionnalité d’enregistrement et de reprise.
 - **Considérations réglementaires** : Analytics doit respecter les exigences en matière de confidentialité des données financières.
 
-Forms des devis et réclamations d’assurance **&#x200B;**
+Forms des devis et réclamations d’assurance ****
 
 - **Défi** : collecter des informations détaillées tout en maintenant l’interaction client
 - **Solution Analytics** : surveillez le délai d’achèvement et l’engagement au niveau du terrain
@@ -224,7 +224,7 @@ Forms des devis et réclamations d’assurance **&#x200B;**
 - **Priorité d’optimisation** : optimisation mobile essentielle pour la satisfaction des patients
 - **Exigences de conformité** : la conformité HIPAA est essentielle pour toutes les implémentations Analytics
 
-Forms de planification des rendez-vous **&#x200B;**
+Forms de planification des rendez-vous ****
 
 - **Défi** : réduire le nombre de non-présentation tout en simplifiant le processus de réservation
 - **Solution Analytics** : corrélez le comportement de remplissage du formulaire avec la présence au rendez-vous.
@@ -233,7 +233,7 @@ Forms de planification des rendez-vous **&#x200B;**
 
 ### Etablissement scolaire Forms
 
-Forms de demande et d’inscription **&#x200B;**
+Forms de demande et d’inscription ****
 
 - **Défi** : gérer des applications complexes à plusieurs étapes avec des exigences de document
 - **Solution Analytics** : suivez les taux d’achèvement à différentes étapes de l’application
@@ -241,7 +241,7 @@ Forms de demande et d’inscription **&#x200B;**
 - **Objectif optimisation** : l’expérience mobile devient de plus en plus importante pour les applications étudiantes
 - **Considérations saisonnières** : Les performances varient considérablement au cours des périodes d’application
 
-Forms d’enregistrement et de retour d’informations sur le cours **&#x200B;**
+Forms d’enregistrement et de retour d’informations sur le cours ****
 
 - **Défi** : Maximiser l&#39;engagement des étudiants dans les processus administratifs
 - **Solution Analytics** : surveiller les taux d’achèvement et identifier les problèmes d’expérience utilisateur
@@ -372,7 +372,7 @@ Adobe Analytics fournit des fonctionnalités de création de rapports de niveau 
 L’intégration d’Adobe Analytics et d’AEM Forms offre des avantages uniques :
 
 - **Plateforme de données unifiées** : combiner l’analyse des formulaires à des analyses marketing et des sites web plus larges
-- **Intégration de Adobe Experience Cloud** : utilisez les connexions à Adobe Target, Campaign et d’autres solutions Experience Cloud
+- **Intégration d’Adobe Experience Cloud** : utilisez les connexions à Adobe Target, Campaign et d’autres solutions Experience Cloud
 - **Sécurité d’entreprise** : conformité intégrée aux réglementations sur la confidentialité des données et aux exigences de sécurité de l’entreprise
 - **Architecture évolutive** : gestion des interactions de formulaires à volume élevé sans impact sur les performances
 - **Assistance professionnelle** : accès aux services d’assistance et d’optimisation pour les entreprises d’Adobe
@@ -496,7 +496,7 @@ Avant de commencer l’implémentation de Forms Analytics, assurez-vous que votr
 >
 >Si vous rencontrez des problèmes lors de l’installation, consultez notre [guide de dépannage d’](/help/forms/troubleshooting-installation-and-configuration.md) complet pour les problèmes d’installation et de configuration.
 
-**Accès**
+**Accès à Adobe Experience Cloud**
 
 - Organisation Adobe Experience Cloud valide avec licence Adobe Analytics
 - Accès administratif aux environnements Adobe Analytics et AEM Forms
@@ -561,22 +561,23 @@ Après avoir installé l’extension **[!UICONTROL Adobe Experience Manager Form
 <table>
  <tbody>
   <tr>
-   <td>FieldName</th>
-   <td>FieldTitle</th>
-   <td>FormInstance</th>
-  </tr>
-  <tr>
-   <td>FormName<br /> </td>
-   <td>FormTitle<br /> </td>
+   <td>PageTitle</td>
+   <td>PageURL</td>
    <td>PageName</td>
   </tr>
   <tr>
-   <td>PageURL<br /> </td>
-   <td>PanelTitle<br /> </td>
-   <td>TimeSpent</td>
+   <td>FieldTitle</td>
+   <td>PanelTitle</td>
+   <td></td>
   </tr>
  </tbody>
 </table>
+
+Les éléments de données **PageTitle**, **PageURL**, **PageName**, **FieldTitle** et **PanelTitle** capturent le contexte au niveau de la page et du champ pour les formulaires adaptatifs à plusieurs pages. Utilisez **PageTitle** et **PageName** pour identifier la page ou le panneau du formulaire en cours, **PageURL** pour enregistrer l’URL dans laquelle le formulaire est rendu, **FieldTitle** et **PanelTitle** pour signaler le libellé du champ actif et du panneau qui le contient.
+
+>[!NOTE]
+>
+> En outre, pour les formulaires adaptatifs créés avec des [composants de base](/help/forms/creating-adaptive-form.md), si un utilisateur souhaite afficher les données dans la console du navigateur, utilisez l’objet `window.formAnalytics` .
 
 Procédez comme suit pour configurer les élément de données :
 
@@ -584,7 +585,7 @@ Procédez comme suit pour configurer les élément de données :
 
 1. Sélectionnez **[!UICONTROL Créer un élément de données]**.
 
-1. Spécifiez un nom pour l’élément de données. Par exemple, « Titre du formulaire » pour le type d’élément de données FormTitle.
+1. Spécifiez un nom pour l’élément de données. Par exemple, Titre de page pour le type d’élément de données PageTitle.
 
 1. Spécifiez **[!UICONTROL Adobe Experience Manager Forms]** comme nom d’extension.
 
@@ -643,8 +644,7 @@ Suivez les étapes suivantes pour créer des règles basées sur l’extension *
 
 1. Dans la section **[!UICONTROL Actions]**, sélectionnez + et indiquez **[!UICONTROL Adobe Analytics]** comme nom d’extension.
 
-1. Sélectionnez **[!UICONTROL Effacer les variables]** comme type d’action. Sélectionnez **[!UICONTROL Conserver les modifications]**. Après avoir effectué ces étapes, la section **[!UICONTROL Actions]** s’affiche comme suit :
-   ![Configuration des actions](assets/actions-config.png)
+1. Sélectionnez **[!UICONTROL Effacer les variables]** comme type d’action. Sélectionnez **[!UICONTROL Conserver les modifications]**. Après avoir effectué ces étapes, la section **[!UICONTROL Actions]** s’affiche comme suit :   ![Configuration des actions](assets/actions-config.png)
 
    Personnalisez la section **[!UICONTROL Actions]** en fonction de vos besoins. Par exemple, vous pouvez définir deux étapes **Envoyer la balise** dans un flux Action pour envoyer des données à [!DNL Adobe Analytics] et les traiter comme une page vue en une seule étape et envoyer des données à [!DNL Adobe Analytics] sans les traiter comme une page vue lors de la seconde étape.
 
@@ -832,7 +832,7 @@ Les événements personnalisés permettent de suivre les interactions spécifiqu
 **Intégration**
 
 - **Test A/B de formulaire** : testez différentes variations de formulaire et mesurez l’impact sur les performances
-- **&#x200B;**&#x200B;: proposez des expériences de formulaire personnalisées en fonction du comportement des utilisateurs et des données d’analyse
+- **** : proposez des expériences de formulaire personnalisées en fonction du comportement des utilisateurs et des données d’analyse
 - **Optimisation** : utilisez les informations d’analyse pour éclairer les stratégies d’optimisation de Target
 - **Optimisation des conversions** : combinez l’analyse des formulaires avec des efforts d’optimisation des conversions plus larges
 
@@ -917,7 +917,7 @@ Même avec une implémentation soigneuse, les configurations d’analyse de form
 
 >[!TIP]
 >
->Pour obtenir d’autres conseils de dépannage, consultez nos guides de dépannage de la collection [&#128279;](/help/forms/troubleshooting-installation-and-configuration.md) et de dépannage de la création de formulaires [&#128279;](/help/forms/form-creation-failing.md).
+>Pour obtenir d’autres conseils de dépannage, consultez nos guides de dépannage de la collection [](/help/forms/troubleshooting-installation-and-configuration.md) et de dépannage de la création de formulaires [](/help/forms/form-creation-failing.md).
 
 **Problèmes de configuration**
 
@@ -1026,7 +1026,7 @@ R : L’analyse des formulaires se concentre spécifiquement sur les interaction
 
 **Q : Ai-je besoin d’une expertise technique pour implémenter l’analyse de formulaires avec Adobe Analytics ?**
 
-R : Une implémentation de base peut être réalisée avec des connaissances techniques modérées, mais les configurations avancées bénéficient d’une expertise technique. Adobe fournit des options de configuration automatisées via l’automatisation de la configuration Experience Cloud pour des mises en œuvre plus simples. Pour les déploiements d’entreprise complexes avec des événements personnalisés et des rapports avancés, il est recommandé de collaborer avec les développeurs ou les consultants Adobe.
+R : Une implémentation de base peut être réalisée avec des connaissances techniques modérées, mais les configurations avancées bénéficient d’une expertise technique. Adobe fournit des options de configuration automatisées via l’automatisation de la configuration Experience Cloud pour des implémentations plus simples. Pour les déploiements d’entreprise complexes avec des événements personnalisés et des rapports avancés, il est recommandé de collaborer avec les développeurs ou les consultants Adobe.
 
 **Q : Combien de temps faut-il pour voir des données significatives à partir d’analyses de formulaires ?**
 
