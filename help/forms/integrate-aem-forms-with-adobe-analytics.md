@@ -7,10 +7,10 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 8364530ae83289156c1dfec2f9b1cb5aa445521d
 workflow-type: tm+mt
-source-wordcount: '8178'
-ht-degree: 16%
+source-wordcount: '8255'
+ht-degree: 15%
 
 ---
 
@@ -372,7 +372,7 @@ Adobe Analytics fournit des fonctionnalités de création de rapports de niveau 
 L’intégration d’Adobe Analytics et d’AEM Forms offre des avantages uniques :
 
 - **Plateforme de données unifiées** : combiner l’analyse des formulaires à des analyses marketing et des sites web plus larges
-- **Intégration de Adobe Experience Cloud** : utilisez les connexions à Adobe Target, Campaign et d’autres solutions Experience Cloud
+- **Intégration d’Adobe Experience Cloud** : utilisez les connexions à Adobe Target, Campaign et d’autres solutions Experience Cloud
 - **Sécurité d’entreprise** : conformité intégrée aux réglementations sur la confidentialité des données et aux exigences de sécurité de l’entreprise
 - **Architecture évolutive** : gestion des interactions de formulaires à volume élevé sans impact sur les performances
 - **Assistance professionnelle** : accès aux services d’assistance et d’optimisation pour les entreprises d’Adobe
@@ -496,7 +496,7 @@ Avant de commencer l’implémentation de Forms Analytics, assurez-vous que votr
 >
 >Si vous rencontrez des problèmes lors de l’installation, consultez notre [guide de dépannage d’](/help/forms/troubleshooting-installation-and-configuration.md) complet pour les problèmes d’installation et de configuration.
 
-**Accès**
+**Accès à Adobe Experience Cloud**
 
 - Organisation Adobe Experience Cloud valide avec licence Adobe Analytics
 - Accès administratif aux environnements Adobe Analytics et AEM Forms
@@ -561,22 +561,23 @@ Après avoir installé l’extension **[!UICONTROL Adobe Experience Manager Form
 <table>
  <tbody>
   <tr>
-   <td>FieldName</th>
-   <td>FieldTitle</th>
-   <td>FormInstance</th>
-  </tr>
-  <tr>
-   <td>FormName<br /> </td>
-   <td>FormTitle<br /> </td>
+   <td>PageTitle</td>
+   <td>PageURL</td>
    <td>PageName</td>
   </tr>
   <tr>
-   <td>PageURL<br /> </td>
-   <td>PanelTitle<br /> </td>
-   <td>TimeSpent</td>
+   <td>FieldTitle</td>
+   <td>PanelTitle</td>
+   <td></td>
   </tr>
  </tbody>
 </table>
+
+Les éléments de données **PageTitle**, **PageURL**, **PageName**, **FieldTitle** et **PanelTitle** capturent le contexte au niveau de la page et du champ pour les formulaires adaptatifs à plusieurs pages. Utilisez **PageTitle** et **PageName** pour identifier la page ou le panneau du formulaire en cours, **PageURL** pour enregistrer l’URL dans laquelle le formulaire est rendu, **FieldTitle** et **PanelTitle** pour signaler le libellé du champ actif et du panneau qui le contient.
+
+>[!NOTE]
+>
+> En outre, pour les formulaires adaptatifs créés avec des [composants de base](/help/forms/creating-adaptive-form.md), si un utilisateur souhaite afficher les données dans la console du navigateur, utilisez l’objet `window.formAnalytics` .
 
 Procédez comme suit pour configurer les élément de données :
 
@@ -584,7 +585,7 @@ Procédez comme suit pour configurer les élément de données :
 
 1. Sélectionnez **[!UICONTROL Créer un élément de données]**.
 
-1. Spécifiez un nom pour l’élément de données. Par exemple, « Titre du formulaire » pour le type d’élément de données FormTitle.
+1. Spécifiez un nom pour l’élément de données. Par exemple, Titre de page pour le type d’élément de données PageTitle.
 
 1. Spécifiez **[!UICONTROL Adobe Experience Manager Forms]** comme nom d’extension.
 
@@ -643,8 +644,7 @@ Suivez les étapes suivantes pour créer des règles basées sur l’extension *
 
 1. Dans la section **[!UICONTROL Actions]**, sélectionnez + et indiquez **[!UICONTROL Adobe Analytics]** comme nom d’extension.
 
-1. Sélectionnez **[!UICONTROL Effacer les variables]** comme type d’action. Sélectionnez **[!UICONTROL Conserver les modifications]**. Après avoir effectué ces étapes, la section **[!UICONTROL Actions]** s’affiche comme suit :
-   ![Configuration des actions](assets/actions-config.png)
+1. Sélectionnez **[!UICONTROL Effacer les variables]** comme type d’action. Sélectionnez **[!UICONTROL Conserver les modifications]**. Après avoir effectué ces étapes, la section **[!UICONTROL Actions]** s’affiche comme suit :   ![Configuration des actions](assets/actions-config.png)
 
    Personnalisez la section **[!UICONTROL Actions]** en fonction de vos besoins. Par exemple, vous pouvez définir deux étapes **Envoyer la balise** dans un flux Action pour envoyer des données à [!DNL Adobe Analytics] et les traiter comme une page vue en une seule étape et envoyer des données à [!DNL Adobe Analytics] sans les traiter comme une page vue lors de la seconde étape.
 
@@ -1026,7 +1026,7 @@ R : L’analyse des formulaires se concentre spécifiquement sur les interaction
 
 **Q : Ai-je besoin d’une expertise technique pour implémenter l’analyse de formulaires avec Adobe Analytics ?**
 
-R : Une implémentation de base peut être réalisée avec des connaissances techniques modérées, mais les configurations avancées bénéficient d’une expertise technique. Adobe fournit des options de configuration automatisées via l’automatisation de la configuration Experience Cloud pour des mises en œuvre plus simples. Pour les déploiements d’entreprise complexes avec des événements personnalisés et des rapports avancés, il est recommandé de collaborer avec les développeurs ou les consultants Adobe.
+R : Une implémentation de base peut être réalisée avec des connaissances techniques modérées, mais les configurations avancées bénéficient d’une expertise technique. Adobe fournit des options de configuration automatisées via l’automatisation de la configuration Experience Cloud pour des implémentations plus simples. Pour les déploiements d’entreprise complexes avec des événements personnalisés et des rapports avancés, il est recommandé de collaborer avec les développeurs ou les consultants Adobe.
 
 **Q : Combien de temps faut-il pour voir des données significatives à partir d’analyses de formulaires ?**
 

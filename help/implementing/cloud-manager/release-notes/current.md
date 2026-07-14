@@ -4,9 +4,9 @@ description: Découvrez la version 2026.7.0 de Cloud Manager dans Adobe Experien
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: d1b28c7cfb323042f038a070bf0cb4ccfa27d9a1
+source-git-commit: c8eb49a463fffa144e2c91e4b82ea219ade7feb6
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '939'
 ht-degree: 3%
 
 ---
@@ -46,7 +46,9 @@ Un nouveau modèle de version compile uniquement les modules modifiés (plutôt 
    * [Ajouter un pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md##adding-production-pipeline) et [Ajouter un pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#configuring-non-production-pipelines).
 
 * **Copie de contenu : programme croisé et flux de transfert**\
-  Cloud Manager **Content Copy**, qui permet aux équipes de copier du contenu entre des environnements AEM sans déploiement, comprend deux fonctionnalités disponibles pour tous les programmes. La prise en charge inter-programmes permet de copier du contenu dans différents programmes Cloud Manager, et pas seulement dans le même programme. Le flux direct supprime la restriction directionnelle, ce qui permet de copier du contenu de n’importe quel environnement vers n’importe quel autre, y compris depuis les environnements inférieurs vers le haut.
+  Cloud Manager **Content Copy**, qui permet aux équipes de copier du contenu entre des environnements AEM sans déploiement, comprend deux fonctionnalités disponibles pour tous les programmes. La prise en charge inter-programmes permet de copier du contenu dans différents programmes Cloud Manager, et pas seulement dans le même. Le flux direct supprime la restriction directionnelle, ce qui permet de copier du contenu de n’importe quel environnement vers n’importe quel autre, y compris depuis les environnements inférieurs vers le haut.
+
+  Pour plus d’informations, voir [Outil de copie de contenu](/help/implementing/developing/tools/content-copy.md).
 
 
 ## Programmes bêta {#private-beta-program}
