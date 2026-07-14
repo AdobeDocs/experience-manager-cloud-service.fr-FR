@@ -181,7 +181,7 @@ Comprendre comment l’analyse des formulaires s’applique aux scénarios réel
 
 ### Génération de leads et Forms B2B
 
-Forms des demandes de contact et de démonstration ****
+Forms des demandes de contact et de démonstration **&#x200B;**
 
 - **Défi** : trouver le juste équilibre entre la qualité des prospects et les taux de remplissage des formulaires et réduire l’abandon des formulaires
 - **Solution Form Analytics** : suivez la corrélation entre les performances du formulaire, la longueur du formulaire et la qualité de conversion des prospects
@@ -207,7 +207,7 @@ Forms des demandes de contact et de démonstration ****
 - **Stratégie d’optimisation** : fournissez des indicateurs de progression clairs et une fonctionnalité d’enregistrement et de reprise.
 - **Considérations réglementaires** : Analytics doit respecter les exigences en matière de confidentialité des données financières.
 
-Forms des devis et réclamations d’assurance ****
+Forms des devis et réclamations d’assurance **&#x200B;**
 
 - **Défi** : collecter des informations détaillées tout en maintenant l’interaction client
 - **Solution Analytics** : surveillez le délai d’achèvement et l’engagement au niveau du terrain
@@ -224,7 +224,7 @@ Forms des devis et réclamations d’assurance ****
 - **Priorité d’optimisation** : optimisation mobile essentielle pour la satisfaction des patients
 - **Exigences de conformité** : la conformité HIPAA est essentielle pour toutes les implémentations Analytics
 
-Forms de planification des rendez-vous ****
+Forms de planification des rendez-vous **&#x200B;**
 
 - **Défi** : réduire le nombre de non-présentation tout en simplifiant le processus de réservation
 - **Solution Analytics** : corrélez le comportement de remplissage du formulaire avec la présence au rendez-vous.
@@ -233,7 +233,7 @@ Forms de planification des rendez-vous ****
 
 ### Etablissement scolaire Forms
 
-Forms de demande et d’inscription ****
+Forms de demande et d’inscription **&#x200B;**
 
 - **Défi** : gérer des applications complexes à plusieurs étapes avec des exigences de document
 - **Solution Analytics** : suivez les taux d’achèvement à différentes étapes de l’application
@@ -241,7 +241,7 @@ Forms de demande et d’inscription ****
 - **Objectif optimisation** : l’expérience mobile devient de plus en plus importante pour les applications étudiantes
 - **Considérations saisonnières** : Les performances varient considérablement au cours des périodes d’application
 
-Forms d’enregistrement et de retour d’informations sur le cours ****
+Forms d’enregistrement et de retour d’informations sur le cours **&#x200B;**
 
 - **Défi** : Maximiser l&#39;engagement des étudiants dans les processus administratifs
 - **Solution Analytics** : surveiller les taux d’achèvement et identifier les problèmes d’expérience utilisateur
@@ -832,7 +832,7 @@ Les événements personnalisés permettent de suivre les interactions spécifiqu
 **Intégration**
 
 - **Test A/B de formulaire** : testez différentes variations de formulaire et mesurez l’impact sur les performances
-- **** : proposez des expériences de formulaire personnalisées en fonction du comportement des utilisateurs et des données d’analyse
+- **&#x200B;**&#x200B;: proposez des expériences de formulaire personnalisées en fonction du comportement des utilisateurs et des données d’analyse
 - **Optimisation** : utilisez les informations d’analyse pour éclairer les stratégies d’optimisation de Target
 - **Optimisation des conversions** : combinez l’analyse des formulaires avec des efforts d’optimisation des conversions plus larges
 
@@ -917,7 +917,7 @@ Même avec une implémentation soigneuse, les configurations d’analyse de form
 
 >[!TIP]
 >
->Pour obtenir d’autres conseils de dépannage, consultez nos guides de dépannage de la collection [](/help/forms/troubleshooting-installation-and-configuration.md) et de dépannage de la création de formulaires [](/help/forms/form-creation-failing.md).
+>Pour obtenir d’autres conseils de dépannage, consultez nos guides de dépannage de la collection [&#128279;](/help/forms/troubleshooting-installation-and-configuration.md) et de dépannage de la création de formulaires [&#128279;](/help/forms/form-creation-failing.md).
 
 **Problèmes de configuration**
 
