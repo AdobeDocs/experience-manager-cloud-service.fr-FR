@@ -30,7 +30,7 @@ La prochaine version prévue est le jeudi 6 août 2026.
 
   Vous pouvez désormais authentifier les requêtes de clone Git sur votre référentiel [!DNL Bring Your Own Git] à l’aide du secret byogit généré par Cloud Manager, en plus d’un jeton IMS. Cette fonctionnalité permet [!DNL Edge Delivery Services] clients d’utiliser les mêmes informations d’identification que celles déjà stockées par helix-admin pour la synchronisation du code. Les workflows de clone authentifiés par IMS existants ne sont pas affectés.
 
-  Voir [ Authentification des requêtes de clone Git](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md#authenticate-git-clone-requests).
+  Voir [&#x200B; Authentification des requêtes de clone Git](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md#authenticate-git-clone-requests).
 
 * **Infrastructure réseau VPN — Routage BGP et connexions multiples**\
   L&#39;API d&#39;infrastructure réseau VPN de mise en réseau avancée prend désormais en charge le routage dynamique BGP (Border Gateway Protocol) avec le routage statique existant. Les équipes peuvent configurer BGP par connexion en fournissant le numéro de système autonome BGP côté client et l&#39;adresse d&#39;homologue ; Cloud Manager gère dynamiquement l&#39;apprentissage des itinéraires — aucun préfixe statique requis.
@@ -81,7 +81,7 @@ Cloud Manager vous permet désormais de configurer si un niveau de publication e
 
 Pour plus d’informations, voir [Niveau de publication flexible (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
 
-Pour rejoindre la version bêta, envoyez un courrier électronique à l’adresse [](mailto:grp-beta_xwalk-publish_config@adobe.com) avec votre ID d’organisation et votre ID de programme Adobe.
+Pour rejoindre la version bêta, envoyez un courrier électronique à l’adresse [&#128279;](mailto:grp-beta_xwalk-publish_config@adobe.com) avec votre ID d’organisation et votre ID de programme Adobe.
 
 <!-- 
 OLD
