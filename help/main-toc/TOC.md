@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: dea8a3df29876df1c97454a97602045eb50121ad
+source-git-commit: 8ff6fbf02654325933844d43563bf69521bebbdc
 workflow-type: tm+mt
-source-wordcount: '7565'
+source-wordcount: '7580'
 ht-degree: 83%
 
 ---
@@ -676,6 +676,7 @@ ht-degree: 83%
       + [Fonctionnalités de MediaLibrary](/help/assets/medialibrary.md)
       + [Importation et exportation des métadonnées des ressources](/help/assets/metadata-import-export.md)
       + [Configuration des restrictions de téléchargement des ressources](/help/assets/configure-asset-upload-restrictions.md)
+      + [Intégration de contenu optimisé par l’IA et automatisation de Content supply chain](/help/assets/ai-powered-content-onboarding-content-supply-chain-automation.md)
    + Partage et distribution de ressources {#brand-portal}
       + [Configuration d’ [!DNL Assets] avec [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [Publication de ressources sur [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
@@ -936,8 +937,8 @@ ht-degree: 83%
             + [Configurer une page de redirection ou un message de remerciement](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Créer des formulaires avec des sections répétables](/help/forms/create-forms-repeatable-sections.md)
             + [Utiliser Google reCAPTCHA dans un formulaire adaptatif](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [Utiliser hCAPTCHA dans les composants principaux d’un formulaire adaptatif](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
-            + [Utiliser Turnstile Captcha dans les composants principaux d’un formulaire adaptatif](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
+            + [Utiliser hCaptcha dans un formulaire adaptatif pour les composants principaux](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [Utilisation d’un tourniquet dans un formulaire adaptatif pour les composants principaux](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [Ajout d’un gestionnaire d’erreurs personnalisé dans un formulaire adaptatif](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Ajout des paramètres régionaux pour les formulaires adaptatifs sur la base des composants principaux](/help/forms/supporting-new-language-localization-core-components.md)
             + [Créer un schéma JSON pour un formulaire adaptatif (composants principaux)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
@@ -987,8 +988,8 @@ ht-degree: 83%
             + {hide-from-toc}[Publication et dépublication de formulaires et documents](/help/forms/publishing-unpublishing-forms.md)
          + Ajout de composants à un formulaire adaptatif {#add-components-to-an-adaptive-form}
             + [Utilisation de CAPTCHA dans un formulaire adaptatif](/help/forms/captcha-adaptive-forms.md)
-            + [Utiliser hCaptcha dans un formulaire adaptatif](/help/forms/integrate-adaptive-forms-hcaptcha.md)
-            + [Utiliser CAPTCHA Turnstile dans un formulaire adaptatif](/help/forms/integrate-adaptive-forms-turnstile.md)
+            + [Utiliser hCaptcha dans un formulaire adaptatif pour les composants de base](/help/forms/integrate-adaptive-forms-hcaptcha.md)
+            + [Utilisation d’un tourniquet dans un formulaire adaptatif pour les composants de base](/help/forms/integrate-adaptive-forms-turnstile.md)
             + [Utilisez les composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
             + [Appliquer la signature tactile](/help/forms/signing-forms-using-scribble.md)
             + [Ajouter un tableau à un formulaire adaptatif](/help/forms/adaptive-forms-tables.md)

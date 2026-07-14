@@ -1,22 +1,20 @@
 ---
 title: Comment utiliser hCaptcha&reg; dans les composants principaux d’un formulaire adaptatif AEM ?
-description: Améliorez sans effort la sécurité des formulaires grâce au service hCaptcha®. Guide détaillé inclus.
+description: Améliorez sans effort la sécurité des formulaires grâce au service hCaptcha&reg;. Guide détaillé inclus.
 topic-tags: Adaptive Forms, author
-keywords: hCaptcha&reg; service, Forms adaptatif, défi CAPTCHA, prévention des robots, composants principaux, sécurité de l’envoi des formulaires, prévention des spams des formulaires
+keywords: hCaptcha&reg ; service, Forms adaptatif, défi CAPTCHA, prévention des robots, composants principaux, sécurité de l’envoi de formulaires, prévention des spams de formulaires
 feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 6c559df2-7b6a-42fe-b44c-29a782570a0c
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: f5d4707fdc5a920f11edbd1f1784f1f7cc6d082a
 workflow-type: tm+mt
-source-wordcount: '967'
-ht-degree: 53%
+source-wordcount: '979'
+ht-degree: 57%
 
 ---
 
 # Connecter votre environnement AEM Forms à hCaptcha® {#connect-your-forms-environment-with-hcaptcha-service}
-
-<span class="preview"> Cette fonctionnalité se trouve dans le programme des utilisateurs et utilisatrices précoces. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart, Test public de Turing complètement automatisé ayant pour but de différencier les personnes humaines des ordinateurs) est un programme couramment utilisé dans les transactions en ligne pour différencier les personnes humaines des programmes automatisés ou des robots. Il présente un test et évalue la réponse de l’utilisateur ou de l’utilisatrice pour déterminer s’il s’agit d’une personne humaine ou d’un robot qui interagit avec le site. Cela empêche l’utilisateur ou l’utilisatrice de continuer si le test échoue et permet de sécuriser les transactions en ligne en empêchant les robots d’envoyer du spam ou des éléments malveillants.
 
@@ -60,8 +58,7 @@ Pour intégrer le service hCaptcha® à AEM Forms, procédez comme suit :
 1. Configurez le Cloud Service :
    1. Sur votre instance d’auteur AEM, accédez à ![tools-1](assets/tools-1.png) > **[!UICONTROL Services cloud]** et sélectionnez **[!UICONTROL hCaptcha®]**.
       ![hCaptcha® dans l’interface d’utilisation](assets/hcaptcha-in-ui.png)
-   1. Sélectionnez un conteneur de configuration, créé ou mis à jour, comme décrit dans la section précédente. Sélectionnez **[!UICONTROL Créer]**.
-      ![Configuration de hCaptcha®](assets/config-hcaptcha.png)
+   1. Sélectionnez un conteneur de configuration, créé ou mis à jour, comme décrit dans la section précédente. Sélectionnez **[!UICONTROL Créer]**.      ![Configuration de hCaptcha®](assets/config-hcaptcha.png)
    1. Spécifiez **[!UICONTROL Titre]**, **[!UICONTROL Nom]**, **[!UICONTROL Clé du site]** et **[!UICONTROL Clé secrète]** pour le service hCaptcha® [obtenu dans la section Prérequis](#prerequisite). Sélectionnez **[!UICONTROL Créer]**.
 
       ![Configurer le service cloud pour connecter votre environnement AEM Forms à hCaptcha®](assets/create-hcaptcha-config.png)
@@ -102,7 +99,7 @@ Pour intégrer le service hCaptcha® à AEM Forms, procédez comme suit :
 1. Sélectionnez **[!UICONTROL Terminé]**.
 
 
-Désormais, seuls les formulaires légitimes, dans lesquels le remplisseur de formulaire résout avec succès le problème posé par le service hCaptcha®, sont autorisés pour l’envoi du formulaire. hCaptcha®
+Désormais, seuls les formulaires légitimes, pour lesquels la personne qui remplit le formulaire résout avec succès le problème présenté par le service hCaptcha®, sont autorisés pour l’envoi de formulaires. hCaptcha®
 
 **hCaptcha® est une marque déposée d’Intuition Machines, Inc.**
 

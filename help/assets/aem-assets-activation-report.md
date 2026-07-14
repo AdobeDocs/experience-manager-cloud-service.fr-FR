@@ -4,9 +4,9 @@ description: Définitions des mesures du rapport d’activation d’AEM Assets (
 role: Admin
 hide: true
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
-source-git-commit: 0b5e61f75a97bd31da034ebf282779a634217366
+source-git-commit: 49f94bdbd1c0fdd96e6d42c534900334af5c946d
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Cet article répartit les mesures sous-jacentes à ce parcours et regroupe la ma
 
 Ensemble, ces mesures relient l’activité des ressources internes à la portée et à l’engagement externes, ce qui vous permet de voir comment vos opérations de contenu se traduisent par des résultats commerciaux réels.
 
-Ce n’est que le début de votre parcours avec AEM Assets, et ces mesures continueront à évoluer à ses côtés. Nous serions ravis de connaître vos commentaires au fur et à mesure que vous les utiliserez, afin que nous puissions continuer à rendre ces rapports plus utiles.
+Ce n’est que le début de votre parcours avec AEM Assets, et ces mesures continueront à évoluer à ses côtés. Nous aurons besoin de vos commentaires au fur et à mesure que vous les utiliserez, afin que nous puissions continuer à rendre ces rapports plus utiles.
 
 **Remarque** : si vous souhaitez les consulter avec le service Produit/Ingénierie d’Adobe ou obtenir des commentaires, envoyez un e-mail à `GRP-AEM-DAM-METRICS-BETA@ADOBE.COM`.
 

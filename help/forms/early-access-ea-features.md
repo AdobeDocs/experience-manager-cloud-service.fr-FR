@@ -7,10 +7,10 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
+source-git-commit: f5d4707fdc5a920f11edbd1f1784f1f7cc6d082a
 workflow-type: tm+mt
-source-wordcount: '2223'
-ht-degree: 21%
+source-wordcount: '1965'
+ht-degree: 11%
 
 ---
 
@@ -272,17 +272,21 @@ Dans l’ensemble, la prise en charge du langage RTL dans le Forms adaptatif per
 
 Prêt à démarrer ? La [documentation sur les RTL de Forms adaptatif](/help/forms/supporting-new-language-localization-core-components.md) fournit un guide détaillé sur l’utilisation de l’innovation des RTL.
 
-### Amélioration des méthodes de protection des robots
+<!--
 
-AEM Forms a amélioré ses fonctionnalités de sécurité en ajoutant la prise en charge de deux solutions Captcha populaires : Cloudflare Turnstile et hCaptcha. Cela vient s’ajouter au reCAPTCHA de Google déjà disponible, offrant ainsi aux utilisateurs et utilisatrices plus de choix et de flexibilité pour protéger leurs formulaires contre les robots et les spams envoyés.
+### Enhanced bot protection methods
 
-* **Cloudflare Turnstile** : ce Captcha sans friction vérifie les utilisateurs et utilisatrices par le biais d’un simple défi qui ne nécessite pas d’interaction explicite. Il s’intègre de manière transparente à vos formulaires, améliorant ainsi l’expérience client.
-* **hCaptcha** : ce Captcha axé sur la confidentialité offre une alternative conviviale qui met l’accent sur la confidentialité des données. Il vise à trouver un équilibre entre la sécurité et l’expérience client.
-* **Google reCAPTCHA** : AEM Forms continue à prendre en charge reCAPTCHA v2 et reCAPTCHA Enterprise, offrant ainsi une solution fiable et bien établie.
+AEM Forms has enhanced its security features by adding support for two popular CAPTCHA solutions: Cloudflare Turnstile and hCaptcha. This adds to the already available Google reCAPTCHA, providing users with more choice and flexibility in protecting their forms from bots and spam submissions.
 
-En proposant plusieurs options de Captcha, AEM Forms vous permet de sélectionner la solution qui correspond le mieux à vos besoins.
+* **Cloudflare Turnstile**: This frictionless CAPTCHA verifies users through a simple challenge that doesn't require explicit interaction. It seamlessly integrates into your forms, improving the user experience.
+* **hCaptcha**: This privacy-focused CAPTCHA offers a user-friendly alternative with a focus on data privacy. It aims to strike a balance between security and user experience.
+* **Google reCAPTCHA**: AEM Forms continue to support both reCAPTCHA v2 and reCAPTCHA Enterprise, offering a reliable and well-established solution.
 
-Vous souhaitez intégrer l’une de ces solutions Captcha à vos formulaires adaptatifs ? Notre documentation fournit des instructions détaillées pour [Cloudflare Turnstile](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), et [Google reCAPTCHA](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+By offering multiple CAPTCHA options, AEM Forms have empowered you to select the solution that best aligns with your specific needs. 
+
+Ready to integrate any of these CAPTCHA solution with your Adaptive Forms? Our documentation provides detailed instructions for each: [Cloudflare Turnstile](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), and [Google reCAPTCHA](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+
+-->
 
 ### API Doc Assurance
 

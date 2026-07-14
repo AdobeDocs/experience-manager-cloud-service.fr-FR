@@ -1,21 +1,19 @@
 ---
-title: Comment utiliser Turnstile dans un formulaire adaptatif AEM ?
+title: Comment utiliser Turnstile dans les composants de base de formulaire adaptatif AEM ?
 description: Améliorez sans effort la sécurité des formulaires grâce au service Turnstile. Guide détaillé inclus.
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="S’applique à AEM Forms)."
 exl-id: 644c351b-a167-4d18-8b99-b7cae6be48d5
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: f5d4707fdc5a920f11edbd1f1784f1f7cc6d082a
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 44%
+source-wordcount: '942'
+ht-degree: 46%
 
 ---
 
 # Intégrer le CAPTCHA Turnstile au Forms adaptatif
-
-<span class="preview"> Cette fonctionnalité se trouve dans le programme des utilisateurs et utilisatrices précoces. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart, Test public de Turing complètement automatisé ayant pour but de différencier les personnes humaines des ordinateurs) est un programme couramment utilisé dans les transactions en ligne pour différencier les personnes humaines des programmes automatisés ou des robots. Il présente un test et évalue la réponse de l’utilisateur ou de l’utilisatrice pour déterminer s’il s’agit d’une personne humaine ou d’un robot qui interagit avec le site. Cela empêche l’utilisateur ou l’utilisatrice de continuer si le test échoue et permet de sécuriser les transactions en ligne en empêchant les robots d’envoyer du spam ou des éléments malveillants.
 
@@ -27,7 +25,7 @@ AEM Forms as a Cloud Service prend en charge les solutions CAPTCHA suivantes :
 
 ## Intégrer le Captcha Turnstile à un environnement AEM Forms
 
-Le Captcha Cloudflare Turnstile est une mesure de sécurité visant à protéger les formulaires et les sites contre les robots automatisés, les attaques malveillantes, les spams et le trafic automatisé indésirable. Elle présente une case à cocher lors de l’envoi du formulaire pour vérifier qu’ils sont humains, avant de leur permettre d’envoyer le formulaire. AEM Forms as a Cloud Service prend en charge le captcha de tourniquet dans le Forms adaptatif.
+Le Captcha Cloudflare Turnstile est une mesure de sécurité visant à protéger les formulaires et les sites contre les robots automatisés, les attaques malveillantes, les spams et le trafic automatisé indésirable. Il affiche une case à cocher lors de l’envoi de formulaires, ce qui permet de vérifier que l’action est effectuée par de vraies personnes, avant l’envoi effectif. AEM Forms as a Cloud Service prend en charge le captcha de tourniquet dans le Forms adaptatif.
 
 <!-- ![Turnstile](assets/Turnstile-challenge.png)-->
 
@@ -54,8 +52,7 @@ Pour configurer Turnstile pour AEM Forms, vous devez obtenir la [clé de site Tu
 1. Configurez le Cloud Service :
    1. Sur votre instance d’auteur AEM, accédez à ![tools-1](assets/tools-1.png) > **[!UICONTROL Services cloud]** et sélectionnez **[!UICONTROL Tourniquet]**.
       ![Tourniquet dans l’interface utilisateur](assets/turnstile-in-ui.png)
-   1. Sélectionnez un conteneur de configuration, créé ou mis à jour, comme décrit dans la section précédente. Sélectionnez **[!UICONTROL Créer]**.
-      ![Configuration de Turnstile](assets/config-hcaptcha.png)
+   1. Sélectionnez un conteneur de configuration, créé ou mis à jour, comme décrit dans la section précédente. Sélectionnez **[!UICONTROL Créer]**.      ![Configuration de Turnstile](assets/config-hcaptcha.png)
    1. Spécifiez **[!UICONTROL Type de widget]** comme géré. Le type de widget peut changer en fonction de la clé obtenue dans la condition préalable **[!UICONTROL Titre]**, **[!UICONTROL Nom]**, **[!UICONTROL Clé du site]** et **[!UICONTROL Clé secrète]** pour le service Tourniquet [&#x200B; obtenu dans la condition préalable &#x200B;](#prerequisite). Sélectionnez **[!UICONTROL Créer]**.
 
       ![Configurer le service cloud pour connecter votre environnement AEM Forms à Turnstile](assets/config-turntstile.png)
@@ -77,7 +74,7 @@ Une fois le service Captcha de tourniquet configuré, il peut être utilisé dan
 
 1. Sélectionnez un formulaire adaptatif, puis sélectionnez **[!UICONTROL Modifier]**. Le formulaire adaptatif s’ouvre dans l’éditeur de Forms adaptatif.
 1. À partir du navigateur de composant, faites glisser et déposez le composant **[!UICONTROL Captcha]** sur le formulaire adaptatif.
-1. Sélectionnez le composant **[!UICONTROL Captcha]** et cliquez sur l’icône Propriétés ![Icône Propriétés](assets/configure-icon.svg). Cela ouvre la boîte de dialogue des propriétés.
+1. Sélectionnez le composant **[!UICONTROL Captcha]** et cliquez sur l’icône Propriétés ![Icône Propriétés](assets/configure-icon.svg). Cette action ouvre la boîte de dialogue des propriétés.
 
    ![Paramètres](assets/turnstile-setting-v1.png)
 

@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 nudge: please
-source-git-commit: 72bacdb87edd7dd6f73a7966b01665b52cea57eb
+source-git-commit: 8ff6fbf02654325933844d43563bf69521bebbdc
 workflow-type: tm+mt
-source-wordcount: '4226'
+source-wordcount: '4455'
 ht-degree: 16%
 
 ---
@@ -132,6 +132,14 @@ L’intégration permet aux utilisateurs de découvrir et de rechercher rapideme
 >
 >Cette fonctionnalité est disponible en tant que fonctionnalité à disponibilité limitée et nécessite des licences pour Workfront Planning et GenStudio for Performance Marketing. Vous pouvez [créer et envoyer un dossier d’assistance client Adobe](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html) pour l’activer pour votre déploiement.
 
+**Intégration de contenu optimisée par l’IA et automatisation de Content supply chain**
+
+Utilisez un agent optimisé par IA pour configurer et automatiser les migrations de contenu et la synchronisation récurrente entre les référentiels de contenu pris en charge. L’agent vous guide tout au long de la configuration de la connexion, du mappage et de la validation des métadonnées avec les exécutions d’essai avant de transférer le contenu. En éliminant les processus manuels et les intégrations personnalisées, cette fonctionnalité accélère l’intégration, simplifie la synchronisation continue et contribue à assurer la cohérence des ressources et des métadonnées entre les systèmes.
+
+>[!IMPORTANT]
+>
+>Cette fonctionnalité est disponible en tant que fonctionnalité à disponibilité limitée. Vous pouvez [créer et envoyer un dossier d’assistance client Adobe](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html) pour l’activer pour votre déploiement.
+
 
 ### Nouvelles fonctionnalités de Dynamic Media avec OpenAPI {#new-features-dynamic-media-openapi}
 
@@ -204,6 +212,13 @@ Dynamic Media avec des fonctionnalités OpenAPI permet désormais de charger des
 * **Configurer les options de liste déroulante pour l’IU associée** : les champs de liste déroulante de l’IU associée utilisent désormais un modèle **Liaison d’options**. Les auteurs configurent **Liaison à partir des données** pour les listes d’options dynamiques ou les options statiques manuelles afin que les associés voient les choix corrects et la valeur présélectionnée. La **liaison de données** n’est pas prise en charge pour les champs de liste déroulante. Pour plus d’informations, voir [Configurer les options de liste déroulante pour l’interface utilisateur associée](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md).
 
 * **Configurer les variables liées et non liées pour l’interface utilisateur associée** : les variables liées et non liées dans les composants **Texte** peuvent désormais être configurées pour l’interface utilisateur associée. Les auteurs choisissent si les associés modifient le bloc de texte entier en ligne dans l’aperçu du document ou saisissent des valeurs pour des variables individuelles dans le panneau de saisie de données. Les noms de variables en double propagent les valeurs sur toutes les occurrences correspondantes dans l’aperçu. Pour plus d’informations, voir [Configurer des variables liées et non liées pour l’interface utilisateur associée](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md).
+
+#### Options CAPTCHA supplémentaires pour la protection des robots
+
+AEM Forms prend désormais en charge deux solutions CAPTCHA supplémentaires pour protéger Adaptive Forms des robots et des envois de spam, en plus du reCAPTCHA Google déjà disponible. Vous bénéficiez ainsi d’un plus grand choix et d’une plus grande flexibilité pour sécuriser vos formulaires.
+
+* **Cloudflare Turnstile** : un CAPTCHA fluide qui vérifie les utilisateurs à travers un défi simple sans nécessiter d’interaction explicite, améliorant ainsi l’expérience utilisateur. Pour plus d’informations, voir [Utilisation d’un tourniquet dans un formulaire adaptatif pour les composants principaux](/help/forms/integrate-adaptive-forms-turnstile-core-components.md) et [Utilisation d’un tourniquet dans un formulaire adaptatif pour les composants de base](/help/forms/integrate-adaptive-forms-turnstile.md).
+* **hCaptcha** : un CAPTCHA axé sur la confidentialité qui offre une alternative conviviale avec un accent sur la confidentialité des données, l’équilibre entre la sécurité et l’expérience utilisateur. Pour plus d’informations, voir [Utilisation de hCaptcha dans un formulaire adaptatif pour les composants principaux](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md) et [Utilisation de hCaptcha dans un formulaire adaptatif pour les composants de base](/help/forms/integrate-adaptive-forms-hcaptcha.md).
 
 ### Fonctionnalités des premiers utilisateurs
 
