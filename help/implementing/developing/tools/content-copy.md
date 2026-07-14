@@ -4,10 +4,10 @@ description: L’outil de copie de contenu permet aux utilisateurs de copier du 
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Developer
-source-git-commit: e0b07719cbafdd0b19d597db83d319c50fb993cd
+source-git-commit: c8eb49a463fffa144e2c91e4b82ea219ade7feb6
 workflow-type: tm+mt
-source-wordcount: '1610'
-ht-degree: 45%
+source-wordcount: '1628'
+ht-degree: 37%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 45%
 L’outil de copie de contenu permet aux utilisateurs de copier du contenu modifiable à la demande à partir de leurs environnements de production sur AEM as a Cloud Service vers des environnements inférieurs, et ce à des fins de test.
 
 >[!NOTE]
->Bien que le flux de copie de contenu principal aille d’environnements supérieurs à des environnements inférieurs, une fonctionnalité supplémentaire, **Flux de transfert**, permet de copier des environnements inférieurs hors production vers des environnements supérieurs hors production (par exemple, développement → évaluation, RDE → évaluation). Voir [Limites](#limitations) pour plus d’informations, y compris les exigences de disponibilité.
+>Le flux de copie de contenu principal s’étend des environnements supérieurs aux environnements inférieurs. Le **flux de transfert** permet également de copier des environnements hors production inférieurs vers des environnements hors production supérieurs (par exemple, du développement vers l’évaluation ou du RDE vers l’évaluation). Voir [Limites](#limitations) pour plus d’informations.
 
 ## Présentation {#introduction}
 
@@ -32,7 +32,7 @@ Un ensemble de contenu définit le contenu à copier. Un jeu de contenu se compo
 /etc/clientlibs/fd/themes
 ```
 
-Lors de la copie de contenu, l’environnement source est la source de vérité.
+Lors de la copie de contenu, l’environnement source est la source de données principale.
 
 * Si les chemins d’accès source et de destination correspondent, le contenu de la source remplace le contenu modifié dans l’environnement de destination.
 * Si les chemins d’accès sont différents, le contenu de la source est fusionné avec le contenu de la destination.
@@ -46,13 +46,13 @@ Pour utiliser l’outil de copie de contenu, certaines autorisations sont requis
 | Créer et modifier des [jeux de contenu](#create-content-set) | Non requis | Nécessaires |
 | Démarrer ou annuler le [processus de copie de contenu](#copy-content) | Requis | Requis |
 
-Pour plus d&#39;informations sur les autorisations et leur définition, voir [Profils d&#39;équipe et de produit &#x200B;](/help/onboarding/aem-cs-team-product-profiles.md).
+Pour plus d&#39;informations sur les autorisations et leur définition, voir [Profils d&#39;équipe et de produit ](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ## Créer un ensemble de contenu {#create-content-set}
 
-Pour qu’un contenu puisse être copié, un jeu de contenu doit être défini. Une fois définis, les jeux de contenu peuvent être réutilisés pour copier du contenu. Pour créer un jeu de contenu, suivez la procédure décrite ci-après.
+Pour qu’un contenu puisse être copié, un jeu de contenu doit être défini. Une fois définis, les jeux de contenu peuvent être réutilisés pour copier du contenu. Pour créer un jeu de contenu, procédez comme suit.
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
 1. À l’aide du panneau de navigation latéral, accédez à l’onglet **Jeux de contenu** de la page **Aperçu**.
 
@@ -87,7 +87,7 @@ Pour qu’un contenu puisse être copié, un jeu de contenu doit être défini. 
 1. Si nécessaire, vous pouvez modifier les chemins spécifiés.
 
    1. Cliquez sur le X à côté des sous-chemins exclus pour les supprimer.
-   1. Cliquez sur le bouton représentant des points de suspension en regard des chemins d’accès afin d’afficher les options **Modifier** et **Supprimer**.
+   1. Cliquez sur le bouton représentant des points de suspension en regard des chemins pour afficher les options **Modifier** et **Supprimer**.
 
    ![Modifier la liste de chemins](assets/add-content-set-excluded-paths.png)
 
@@ -97,11 +97,11 @@ Le jeu de contenu peut désormais être utilisé pour copier du contenu entre de
 
 ## Modification d’un jeu de contenu {#edit-content-set}
 
-1. Procédez de la même façon que lors de la création d’une étape de contenu. Au lieu de cliquer sur **Ajouter un jeu de contenu**, sélectionnez un jeu existant dans la console, puis sélectionnez **Modifier** dans le menu représentant des points de suspension.
+1. Suivez des étapes similaires à celles de la création d’un jeu de contenu. Au lieu de cliquer sur **Ajouter un jeu de contenu**, sélectionnez un jeu existant dans la console, puis sélectionnez **Modifier** dans le menu représentant des points de suspension.
 
 ![Modifier le jeu de contenu](assets/edit-content-set.png)
 
-1. Lors de la modification de votre jeu de contenu, vous pouvez développer les chemins configurés pour que s’affichent les sous-chemins exclus.
+1. Pour afficher les sous-chemins exclus, vous pouvez développer les chemins configurés lors de la modification de votre jeu de contenu.
 
 ## Copier le contenu {#copy-content}
 
@@ -112,7 +112,7 @@ Une fois qu’un ensemble de contenu a été créé, vous pouvez l’utiliser po
 
 **Pour copier du contenu :**
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
 1. Sur la page **Aperçu**, accédez à **Environnements** > **Jeux de contenu**.
 
@@ -132,19 +132,18 @@ Une fois qu’un ensemble de contenu a été créé, vous pouvez l’utiliser po
 
 1. Dans la boîte de dialogue **Copier le contenu**, spécifiez la source et la destination de votre action de copie de contenu.
 
-   ![Copie de contenu](assets/copying-content.png)
+   ![Copie de contenu](/help/implementing/developing/tools/assets/copy-content2.png)
 
-   * Le contenu ne peut être copié que d’un environnement supérieur vers un environnement inférieur ou entre des environnements de développement/RDE où la hiérarchie des environnements est la suivante (du plus haut au plus bas) :
+   * Le contenu peut être copié d’un environnement supérieur vers un environnement inférieur, entre des environnements de développement et de RDE ou d’un environnement hors production inférieur vers un environnement hors production supérieur (flux de transfert). La hiérarchie de l’environnement est la suivante, du plus haut au plus bas :
       * Production
       * Évaluation
       * Développement/RDE
-   * Par défaut, la copie de contenu sur l’ensemble des programmes est désactivée. Cependant, à la demande du client, elle peut être activée, ce qui rend disponible un champ d’entrée **Programme de destination** supplémentaire.
+   * Une copie de contenu programme croisé est disponible par défaut. Dans la section **Destination**, sélectionnez un **Programme**, puis l’environnement de destination.
 
 1. (Facultatif) Si vous le souhaitez, définissez les éléments suivants :
 
    * **Inclure les listes de contrôle d’accès** - Sélectionnez cette option si vous souhaitez copier les autorisations de contrôle d’accès du contenu avec le contenu.
-   * **Effacer** - Sélectionnez cette option pour supprimer le contenu existant à la destination avant de commencer l’importation, afin de pouvoir repartir de zéro et d’éviter les conflits avec le contenu préexistant. Si vous laissez la case **Effacer** désélectionnée, Cloud Manager importe le nouveau contenu en plus du contenu de destination existant. Une invite de confirmation s’affiche avant le début de l’effacement. Cloud Manager consigne l’action d’effacement et importe les détails pour en assurer la traçabilité.
-     ![Copie de contenu](assets/content_copy_wipe-destination.png)
+   * **Effacer** - Sélectionnez cette option pour supprimer le contenu existant à la destination avant de commencer l’importation, afin de pouvoir commencer avec un état vide et d’éviter les conflits avec le contenu existant. Si vous laissez la case **Effacer** désélectionnée, Cloud Manager importe le nouveau contenu en plus du contenu de destination existant. Une invite de confirmation s’affiche avant le début de l’effacement. Cloud Manager consigne l’action d’effacement et importe les détails pour en assurer la traçabilité.     ![Copie de contenu](assets/content_copy_wipe-destination.png)
       * Lorsque vous sélectionnez l’option **Effacer la destination avant l’importation** et que vous cliquez sur **Copier** une fenêtre contextuelle s’affiche avec un avertissement dans lequel vous avez les options suivantes :
          * **Annuler** (dans ce cas, le flux **Copier le contenu** ne démarrera pas)
          * **Confirmer** (le flux **Copier le contenu** démarre et le contenu de la destination est effacé)
@@ -154,8 +153,8 @@ Une fois qu’un ensemble de contenu a été créé, vous pouvez l’utiliser po
 
    * **Stratégie en cas d’échec de l’importation de package** sélectionnez la stratégie à utiliser lors de l’importation de packages :
      ![Copie de contenu](assets/content-copy-import-policy.png)
-      * **Arrêter en cas de premier échec** : le mode par défaut s’arrête après le premier échec
-      * **Continuer avec les packages restants** : continuera le processus d’importation, même après un échec. Les packages (et leur contenu) qui n’ont pas réussi sont disponibles dans les journaux d’importation
+      * **Arrêter en cas de premier échec** : mode par défaut, s’arrête après le premier échec rencontré.
+      * **Continuer avec les packages restants** : continue le processus d&#39;import, même après un échec. Les packages (et leur contenu) qui n’ont pas réussi sont disponibles dans les journaux d’importation
 
 1. Cliquez sur **Copier**.
 
@@ -218,12 +217,12 @@ L’outil de copie de contenu présente les limites suivantes.
 
 * L’outil de copie de contenu prend en charge deux modes de flux :
    1. Flux descendant : le contenu peut être copié depuis des environnements supérieurs vers des environnements inférieurs (par exemple, Production → Évaluation, Évaluation → Développement/RDE).
-   2. Flux de transfert (nouvelle fonctionnalité) : le contenu peut également être copié d’un environnement hors production inférieur vers un environnement hors production supérieur (par exemple, Développement → évaluation, RDE → évaluation). Cette fonctionnalité est disponible uniquement sur demande explicite et reste activée jusqu’à ce qu’il soit explicitement demandé de la désactiver. Les environnements de production ne sont jamais des destinations valides pour le flux de transfert.
+   2. Flux de transfert : le contenu peut également être copié d’un environnement hors production inférieur vers un environnement hors production supérieur (par exemple, du développement vers l’évaluation ou du RDE vers l’évaluation). Les environnements de production ne sont jamais des destinations valides pour le flux de transfert.
 * Il ne peut être copié que depuis et vers les services de création.
 * L’exécution simultanée d’opérations de copie de contenu sur le même environnement n’est pas possible.
 * Vous pouvez spécifier jusqu’à cinquante chemins par jeu de contenu. Il n’existe aucune limitation sur les chemins exclus.
 * N’utilisez pas l’outil de copie de contenu comme outil de clonage ou de mise en miroir, car il ne peut pas effectuer le suivi du contenu déplacé ou supprimé sur la source.
 * L’outil de copie de contenu ne dispose d’aucune fonctionnalité de contrôle de version et ne peut pas détecter automatiquement le contenu modifié ou créé dans l’environnement source dans un jeu de contenu depuis la dernière opération de copie de contenu.
-   * Si vous souhaitez mettre à jour votre environnement de destination avec des modifications de contenu depuis la dernière opération de copie de contenu uniquement, vous devez créer un jeu de contenu. Ensuite, spécifiez les chemins d’accès sur l’instance source où des modifications ont été apportées depuis la dernière opération de copie de contenu.
+   * Si vous souhaitez mettre à jour votre environnement de destination avec des modifications de contenu depuis la dernière opération de copie de contenu, vous devez utiliser un jeu de contenu existant. Ensuite, spécifiez les chemins d’accès sur l’instance source où des modifications ont été apportées depuis la dernière opération de copie de contenu.
 * Les informations de version ne sont pas incluses dans une copie de contenu.
-* Les [&#x200B; Modèles de fragments de contenu &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) peuvent spécifier des champs de référence en fonction d’identifiants universels uniques (UUID). Ces UUID étant spécifiques au référentiel, l’outil de copie de contenu recalcule ces UUID dans l’environnement cible lors de la copie de fragments de contenu.
+* Les [ Modèles de fragments de contenu ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) peuvent spécifier des champs de référence en fonction d’identifiants universels uniques (UUID). Ces UUID étant spécifiques au référentiel, l’outil de copie de contenu recalcule ces UUID dans l’environnement cible lors de la copie de fragments de contenu.

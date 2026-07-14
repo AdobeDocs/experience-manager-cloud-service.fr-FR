@@ -4,9 +4,9 @@ description: Découvrez la version 2026.7.0 de Cloud Manager dans Adobe Experien
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: d1b28c7cfb323042f038a070bf0cb4ccfa27d9a1
+source-git-commit: c8eb49a463fffa144e2c91e4b82ea219ade7feb6
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '939'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ La prochaine version prévue est le jeudi 6 août 2026.
 
   Vous pouvez désormais authentifier les requêtes de clone Git sur votre référentiel [!DNL Bring Your Own Git] à l’aide du secret byogit généré par Cloud Manager, en plus d’un jeton IMS. Cette fonctionnalité permet [!DNL Edge Delivery Services] clients d’utiliser les mêmes informations d’identification que celles déjà stockées par helix-admin pour la synchronisation du code. Les workflows de clone authentifiés par IMS existants ne sont pas affectés.
 
-  Voir [&#x200B; Authentification des requêtes de clone Git](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md#authenticate-git-clone-requests).
+  Voir [ Authentification des requêtes de clone Git](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md#authenticate-git-clone-requests).
 
 * **Infrastructure réseau VPN — Routage BGP et connexions multiples**\
   L&#39;API d&#39;infrastructure réseau VPN de mise en réseau avancée prend désormais en charge le routage dynamique BGP (Border Gateway Protocol) avec le routage statique existant. Les équipes peuvent configurer BGP par connexion en fournissant le numéro de système autonome BGP côté client et l&#39;adresse d&#39;homologue ; Cloud Manager gère dynamiquement l&#39;apprentissage des itinéraires — aucun préfixe statique requis.
@@ -46,7 +46,9 @@ Un nouveau modèle de version compile uniquement les modules modifiés (plutôt 
    * [Ajouter un pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md##adding-production-pipeline) et [Ajouter un pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#configuring-non-production-pipelines).
 
 * **Copie de contenu : programme croisé et flux de transfert**\
-  Cloud Manager **Content Copy**, qui permet aux équipes de copier du contenu entre des environnements AEM sans déploiement, comprend deux fonctionnalités disponibles pour tous les programmes. La prise en charge inter-programmes permet de copier du contenu dans différents programmes Cloud Manager, et pas seulement dans le même programme. Le flux direct supprime la restriction directionnelle, ce qui permet de copier du contenu de n’importe quel environnement vers n’importe quel autre, y compris depuis les environnements inférieurs vers le haut.
+  Cloud Manager **Content Copy**, qui permet aux équipes de copier du contenu entre des environnements AEM sans déploiement, comprend deux fonctionnalités disponibles pour tous les programmes. La prise en charge inter-programmes permet de copier du contenu dans différents programmes Cloud Manager, et pas seulement dans le même. Le flux direct supprime la restriction directionnelle, ce qui permet de copier du contenu de n’importe quel environnement vers n’importe quel autre, y compris depuis les environnements inférieurs vers le haut.
+
+  Pour plus d’informations, voir [Outil de copie de contenu](/help/implementing/developing/tools/content-copy.md).
 
 
 ## Programmes bêta {#private-beta-program}
@@ -79,7 +81,7 @@ Cloud Manager vous permet désormais de configurer si un niveau de publication e
 
 Pour plus d’informations, voir [Niveau de publication flexible (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
 
-Pour rejoindre la version bêta, envoyez un courrier électronique à l’adresse [&#128279;](mailto:grp-beta_xwalk-publish_config@adobe.com) avec votre ID d’organisation et votre ID de programme Adobe.
+Pour rejoindre la version bêta, envoyez un courrier électronique à l’adresse [](mailto:grp-beta_xwalk-publish_config@adobe.com) avec votre ID d’organisation et votre ID de programme Adobe.
 
 <!-- 
 OLD
