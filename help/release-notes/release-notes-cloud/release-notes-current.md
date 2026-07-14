@@ -124,7 +124,7 @@ En conservant les métadonnées de lignage des ressources, les équipes peuvent 
 
 **Intégration d’AEM à Workfront Planning et GenStudio for Performance Marketing pour les métadonnées de campagne standard**
 
-Lorsqu’AEM Assets est intégré à [Workfront Planning and GenStudio for Performance Marketing](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-planning/planning-and-genstudio-integration/planning-and-genstudio-integration-article-index), les champs de métadonnées de campagne, notamment le nom de la campagne, la région, le canal, le persona et le produit, sont désormais disponibles dans le rail des propriétés de l’affichage des ressources sous un onglet Campagne dédié en lecture seule. Lorsque les utilisateurs dans Workfront Planning connectent des ressources d’AEM à GenStudio aux objets respectifs dans l’espace de travail Adobe GenStudio, des valeurs spécifiques (par exemple, un nom de campagne spécifique) sont automatiquement ajoutées aux métadonnées des ressources AEM.
+Lorsqu’AEM Assets est intégré à [Workfront Planning and GenStudio for Performance Marketing](https://experienceleague.adobe.com/fr/docs/workfront/using/adobe-workfront-planning/planning-and-genstudio-integration/planning-and-genstudio-integration-article-index), les champs de métadonnées de campagne, notamment le nom de la campagne, la région, le canal, le persona et le produit, sont désormais disponibles dans le rail des propriétés de l’affichage des ressources sous un onglet Campagne dédié en lecture seule. Lorsque les utilisateurs dans Workfront Planning connectent des ressources d’AEM à GenStudio aux objets respectifs dans l’espace de travail Adobe GenStudio, des valeurs spécifiques (par exemple, un nom de campagne spécifique) sont automatiquement ajoutées aux métadonnées des ressources AEM.
 
 L’intégration permet aux utilisateurs de découvrir et de rechercher rapidement des ressources en fonction des attributs de campagne. Cette amélioration améliore la recherche des ressources, rationalise les workflows de gestion de contenu et aide les équipes à localiser plus efficacement les ressources appropriées pour des initiatives marketing spécifiques.
 
@@ -323,7 +323,7 @@ Cas d’utilisation courants :
 * Remise en forme des réponses d’API tierces (et éventuellement agrégation de plusieurs réponses d’API) avant de les diffuser au navigateur
 * Composition et diffusion de HTML rendu sur le serveur Edge à l’aide de contenu assemblé à partir de divers serveurs principaux
 
-Suivez [ce tutoriel](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview) pour une présentation concrète des variations de la pile Java Edge Delivery Services et AEM as a Cloud Service.
+Suivez [ce tutoriel](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/edge-functions/overview) pour une présentation concrète des variations de la pile Java Edge Delivery Services et AEM as a Cloud Service.
 
 *En utilisant le Beta Fonctions d’AEM Edge, vous reconnaissez qu’il est toujours en développement et que vous ne devriez pas vous fier au bon fonctionnement de la technologie ou à la disponibilité des données. Cette fonctionnalité est fournie en l’état,
 peut changer sans préavis et n’est pas couvert par les contrats de niveau de service de production.*
