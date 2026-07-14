@@ -422,7 +422,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ### Considérations relatives au débogage {#debugging-considerations}
 
-Pour contrôler que le trafic est effectivement sortant sur l’adresse IP dédiée attendue, vérifiez les journaux dans le service de destination, si disponible. Sinon, appelez un service de débogage tel que [](https://ifconfig.me/ip), qui renvoie l’adresse IP d’appel.
+Pour contrôler que le trafic est effectivement sortant sur l’adresse IP dédiée attendue, vérifiez les journaux dans le service de destination, si disponible. Sinon, appelez un service de débogage tel que [&#128279;](https://ifconfig.me/ip), qui renvoie l’adresse IP d’appel.
 
 ## Réseau privé virtuel (VPN) {#vpn}
 
