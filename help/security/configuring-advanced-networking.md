@@ -4,15 +4,15 @@ description: Découvrez comment configurer des fonctionnalités de mise en rése
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 71cf6c00d91ce0e63a68c1b4d4e9a884feee1a33
+source-git-commit: 126ba1233a2533aa4b47288509da76ba6d784698
 workflow-type: tm+mt
 source-wordcount: '5799'
-ht-degree: 76%
+ht-degree: 75%
 
 ---
 
 
-# Configurer la mise en réseau avancée pour AEM as a Cloud Service {#configuring-advanced-networking}
+# Configuration de la mise en réseau avancée pour AEM as a Cloud Service {#configuring-advanced-networking}
 
 Cet article présente les fonctionnalités de mise en réseau avancées disponibles dans AEM as a Cloud Service. Ces fonctionnalités comprennent l’approvisionnement en libre-service et par API des VPN, des ports non standard et des adresses IP de sortie dédiées.
 
@@ -24,7 +24,8 @@ Outre cette documentation, vous trouverez également une série de tutoriels con
 >
 >Cet article porte sur l’utilisation suivant la méthode d’interface d’utilisation. Si vous préférez automatiser la configuration par le biais de l’API, consultez le tutoriel [Réseau privé virtuel (VPN)](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/networking/vpn).
 >
->**Automatisation de la mise en réseau avancée à l’aide de l’APIPour automatiser la configuration avancée de la mise en réseau (telle que la création de VPN), vous pouvez utiliser l’API Cloud Manager :
+>**Automatisation de la mise en réseau avancée à l’aide de l’API**
+>Pour automatiser la configuration avancée de la mise en réseau (telle que la création de VPN), vous pouvez utiliser l’API Cloud Manager :
 >
 >```bash
 >curl -X POST https://cloudmanager.adobe.io/api/program/{PROGRAM_ID}/environment/{ENV_ID}/vpn \
@@ -58,11 +59,11 @@ Cet article décrit en détail chacune de ces options et les raisons de leur uti
 
 >[!CAUTION]
 >
->Si vous disposez déjà d’une technologie de sortie dédiée héritée et que vous souhaitez configurer l’une de ces options de mise en réseau avancée, [contactez le service clientèle d’Adobe](https://experienceleague.adobe.com/fr?support-solution=Experience+Manager&lang=fr#home).
+>Si vous disposez déjà d’une technologie de sortie dédiée héritée et que vous souhaitez configurer l’une de ces options de mise en réseau avancée, [contactez le service clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=fr#home).
 >
 >Toute tentative de configuration d’une mise en réseau avancée à l’aide de la technologie héritée peut avoir un impact sur la connectivité du site.
 
-### Exigences et restrictions {#requirements}
+### Exigences et limites {#requirements}
 
 Lors de la configuration de fonctionnalités de mise en réseau avancée, les restrictions suivantes s’appliquent.
 
@@ -76,7 +77,7 @@ Lors de la configuration de fonctionnalités de mise en réseau avancée, les re
    * Vous pouvez définir autant d’infrastructures réseau que de régions disponibles dans votre environnement de production, mais la nouvelle infrastructure doit être du même type que celle créée précédemment.
    * Lors de la création de plusieurs infrastructures, vous avez l’autorisation de choisir uniquement parmi les régions dans lesquelles aucune infrastructure réseau avancée n’a été créée.
 
-### Configurer et activer la mise en réseau avancée {#configuring-enabling}
+### Configuration et activation de la mise en réseau avancée {#configuring-enabling}
 
 L’utilisation de fonctionnalités de mise en réseau avancée nécessite deux étapes :
 
@@ -380,7 +381,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 </tbody>
 </table>
 
-### Utilisation de la fonctionnalité {#feature-usage}
+### Utilisation des fonctionnalités {#feature-usage}
 
 Cette fonctionnalité est compatible avec les bibliothèques ou le code Java™ générant du trafic sortant, à condition que les propriétés système Java™ standard soient utilisées pour les configurations de proxy. Dans la pratique, cette approche devrait inclure la plupart des bibliothèques courantes.
 
@@ -422,7 +423,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ### Considérations relatives au débogage {#debugging-considerations}
 
-Pour contrôler que le trafic est effectivement sortant sur l’adresse IP dédiée attendue, vérifiez les journaux dans le service de destination, si disponible. Sinon, appelez un service de débogage tel que [&#128279;](https://ifconfig.me/ip), qui renvoie l’adresse IP d’appel.
+Pour contrôler que le trafic est effectivement sortant sur l’adresse IP dédiée attendue, vérifiez les journaux dans le service de destination, si disponible. Sinon, appelez un service de débogage tel que [](https://ifconfig.me/ip), qui renvoie l’adresse IP d’appel.
 
 ## Réseau privé virtuel (VPN) {#vpn}
 
@@ -608,7 +609,7 @@ Le diagramme ci-dessous offre une représentation visuelle d’un ensemble de do
 </tbody>
 </table>
 
-## Activation des configurations de mise en réseau avancée dans les environnements {#enabling}
+## Activation des configurations réseau avancées dans les environnements {#enabling}
 
 Une fois que vous avez configuré une option de mise en réseau avancée pour un programme afin de l’utiliser, qu’il s’agisse de la [sortie de port flexible](#flexible-port-egress), de l’[adresse IP de sortie dédiée](#dedicated-egress-ip-address) ou du [VPN](#vpn), vous devez l’activer au niveau de l’environnement.
 
@@ -679,7 +680,7 @@ Même en l’absence de règles de routage du trafic de l’environnement (hôte
 >
 >[Il est possible de consulter dans la documentation de l’API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#operation/createNetworkInfrastructure) le jeu complet de paramètre, la syntaxe exacte et des informations importantes comme les paramètres qui ne peuvent pas être modifiés plus tard.
 
-## Modifier et supprimer des configurations de mise en réseau avancée dans des environnements {#editing-deleting-environments}
+## Modifier et supprimer des configurations réseau avancées dans des environnements {#editing-deleting-environments}
 
 Après l’[activation de configurations de mise en réseau avancée pour les environnements](#enabling), vous pouvez mettre à jour les détails de ces configurations ou les supprimer.
 
@@ -710,7 +711,7 @@ Pour désactiver la mise en réseau avancée pour un environnement en particulie
 
 >[!TIP]
 >
->[Il est possible de consulter dans la documentation de l’API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#operation/createNetworkInfrastructure) le jeu complet de paramètre, la syntaxe exacte et des informations importantes comme les paramètres qui ne peuvent pas être modifiés plus tard.
+>Le jeu complet de paramètres et la syntaxe exacte, ainsi que des informations importantes comme les paramètres qui ne peuvent pas être modifiés plus tard, [peuvent être consultés dans la documentation de l’API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#operation/createNetworkInfrastructure).
 
 ## Modification et suppression de l’infrastructure réseau d’un programme {#editing-deleting-program}
 
@@ -768,7 +769,8 @@ Si vous décidez que vous avez besoin d’un type d’infrastructure réseau ava
 
 >[!WARNING]
 >
-> Cette procédure entraîne une interruption des services de mise en réseau avancée entre la suppression et la recréation.Si l’interruption entraîne un impact important sur l’entreprise, contactez le service clientèle pour obtenir de l’aide, en décrivant ce qui a déjà été créé et la raison du changement.
+> Cette procédure entraîne une interruption des services de mise en réseau avancée entre la suppression et la recréation.
+> Si l’interruption entraîne un impact important sur l’entreprise, contactez le service clientèle pour obtenir de l’aide, en décrivant ce qui a déjà été créé et la raison du changement.
 
 ## Configuration avancée de la mise en réseau pour d’autres régions de publication {#advanced-networking-configuration-for-additional-publish-regions}
 
