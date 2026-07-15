@@ -256,7 +256,7 @@ Choisissez le type de règle qui correspond le mieux à votre intention.
 
 Cet exemple illustre la visibilité conditionnelle et les calculs automatiques.
 
-![ Copie d’écran de l’interface de l’éditeur de règles présentant la création d’une règle conditionnelle avec la logique de date et heure pour la visibilité des champs de formulaire](/help/edge/docs/forms/assets/rule-editor-1.png)
+![&#x200B; Copie d’écran de l’interface de l’éditeur de règles présentant la création d’une règle conditionnelle avec la logique de date et heure pour la visibilité des champs de formulaire](/help/edge/docs/forms/assets/rule-editor-1.png)
 Image : formulaire de calcul des taxes avec des champs conditionnels intelligents
 
 Vous allez créer un formulaire qui :
