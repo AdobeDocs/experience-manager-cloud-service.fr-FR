@@ -6,10 +6,10 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 nudge: please
-source-git-commit: 8ff6fbf02654325933844d43563bf69521bebbdc
+source-git-commit: b1490f7cf89e2e1dc05411e1fe2bb121f851a368
 workflow-type: tm+mt
-source-wordcount: '4455'
-ht-degree: 16%
+source-wordcount: '4609'
+ht-degree: 15%
 
 ---
 
@@ -391,17 +391,35 @@ Pour rejoindre la version alpha, envoyez un e-mail à l’adresse [&#128279;](ma
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Beta Fonctionnalités {#assets-beta-program-features}
 
-#### Extensibilité de l’interface utilisateur pour la vue Assets {#ui-extensibility-assets-view}
+#### Extensibilité de l’interface utilisateur pour la vue Assets {#ui-extensibility-assets-view-beta}
 
 La vue Assets prend en charge l’extensibilité de l’interface utilisateur, une fonctionnalité réservée aux développeurs qui permet aux clients de personnaliser l’expérience prête à l’emploi pour répondre à leurs besoins spécifiques.Les clients peuvent tirer parti des points d’extension stables existants en suivant la documentation destinée aux développeurs d’Adobe pour créer et déployer des extensions avec un effort minimal. Pour les cas d’utilisation où un point d’extension requis n’est pas encore disponible, Adobe travaille directement avec les clients pour explorer les exigences et évaluer la faisabilité technique de la diffusion de nouvelles API d’extensibilité adaptées à leurs besoins, et peut fournir de nouvelles API telles que les **versions de Beta**.En outre, Adobe a développé un outil de génération d’extensions optimisé par **GenAI** actuellement disponible dans une phase d’adoption précoce interne. Cet outil peut accélérer considérablement le temps de développement d’extensions. Les clients participant à ce programme bêta auront accès à l’outil et sont encouragés à partager leurs commentaires pour aider à façonner son évolution.Pour participer ou en savoir plus, envoyez un e-mail à `GRP-ASSETSVIEWUIEXTENSIBILITY@adobe.com`.
 
-#### Métadonnées basées sur la marque (BAM) {#brand-aware-metadata}
+#### Métadonnées basées sur la marque (BAM) {#brand-aware-metadata-beta}
 
 AEM Assets prend désormais en charge les métadonnées basées sur la marque, une fonctionnalité optimisée par l’IA qui génère automatiquement des métadonnées personnalisées pour les ressources lorsqu’elles sont chargées ou retraitées. Cela réduit le besoin de saisie manuelle par ordre d’importance, ce qui permet aux équipes de trouver des ressources et de diffuser de nouvelles expériences beaucoup plus rapidement. Les clients gèrent une bibliothèque d’invites qui définissent la manière dont l’IA doit renseigner un champ de métadonnées donné, adapté au vocabulaire et à la taxonomie de leur propre marque. Cette bibliothèque d&#39;invites comprend un terrain de jeu pour prévisualiser les résultats et un optimiseur d&#39;invites qui dessine automatiquement les améliorations suggérées.
 
 Adobe développe activement les capacités de BAM par le biais d’une co-innovation directe avec les clients. Lorsqu’un cas d’utilisation spécifique n’est pas encore pris en charge, Adobe travaille avec les clients participants pour comprendre leurs besoins et peut fournir des fonctionnalités étendues au fur et à mesure de la progression de la version bêta. Les clients participant à ce programme bénéficient d’un accès anticipé aux nouvelles fonctionnalités lors de leur livraison et sont encouragés à partager leurs commentaires qui façonnent directement la feuille de route.
 
 Pour participer ou en savoir plus, envoyez un e-mail à `GRP-AEM-ASSETS-BRANDAWAREMETADATA@adobe.com`.
+
+#### Agent d’intégration Assets {#assets-onboarding-agent-beta}
+
+Si votre organisation débute avec Experience Manager Assets, vous pouvez vous inscrire au programme Beta **Agent d’intégration d’Assets**, qui vous donne accès aux compétences suivantes d’IA dédiée à l’expérience de marque AEM pour l’intégration :
+
+* Guide les utilisateurs à travers la configuration de la gestion des ressources numériques et la planification de la migration en utilisant un workflow conversationnel pour capturer les besoins de l’entreprise et recommander la structure d’un déploiement AEM Assets.
+
+* Crée des artefacts de configuration AEM Assets de base tels que des hiérarchies de dossiers, des taxonomies de balises, des formulaires de métadonnées, et peut aider à exécuter des tâches d’importation en bloc pour accélérer l’intégration.
+
+**Pourquoi participer ?**
+
+* Effectuez une mise en production plus rapide avec un environnement de gestion des ressources numériques prêt à l’emploi en éliminant les étapes manuelles répétitives avec l’aide de l’IA.
+
+* Réduisez les frais d’exploitation grâce à la configuration et à la préparation automatisées des dossiers, des balises, des métadonnées et des importations de ressources.
+
+* Améliorez la cohérence et la gouvernance et assurez le respect des bonnes pratiques grâce à une expérience de configuration organisée, avec des recommandations intelligentes et personnalisées pour votre entreprise.
+
+Pour participer ou en savoir plus, envoyez un e-mail à `GRP-AEM-ONBOARDING-AGENT@adobe.com`.
 
 ## [!DNL Experience Manager] Guides {#guides}
 

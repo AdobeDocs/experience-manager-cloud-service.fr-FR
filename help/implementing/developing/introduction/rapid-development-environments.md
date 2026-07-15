@@ -5,14 +5,21 @@ exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Developer
 nudge: please
-source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
+source-git-commit: d39e6d7256caa721561a6b29d0fb1061572ec9d6
 workflow-type: tm+mt
-source-wordcount: '6002'
+source-wordcount: '6065'
 ht-degree: 22%
 
 ---
 
 # Environnements de développement rapide {#rapid-development-environments}
+
+>[!NOTE]
+>
+>**Nouvelle amélioration : instantanés RDE**
+>
+>Désormais en version bêta publique, prenez un instantané RDE pour restaurer ultérieurement le code et le contenu. [En savoir plus](#snapshots) ci-dessous.
+>
 
 Pour déployer des modifications, les environnements de développement cloud actuels nécessitent l’utilisation d’un processus qui utilise des règles de sécurité et de qualité de code étendues appelées pipeline CI/CD. Dans les cas où des modifications rapides et itératives sont nécessaires, Adobe a introduit des environnements de développement rapide (RDE).
 
@@ -714,8 +721,7 @@ Pour plus d’informations sur la gestion de vos environnements à l’aide de C
 >[!NOTE]
 >Les instantanés RDE sont en version bêta publique et peuvent donc être activés en mettant à jour vers le dernier plug-in AIO, sans contacter Adobe.
 >
->En utilisant le Beta d’instantanés RDE, vous reconnaissez qu’il est toujours en cours de développement et que vous ne devez pas vous fier au bon fonctionnement de la technologie ou à la disponibilité des données. Bien que nous ayons largement testé cette fonctionnalité, il existe une petite possibilité que votre RDE devienne instable. Si cela se produit, une réinitialisation la rétablira à son état de fonctionnement.
->Nous acceptons les commentaires à l’adresse [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com).
+>En utilisant le Beta d’instantanés RDE, vous reconnaissez qu’il est toujours en cours de développement et que vous ne devez pas vous fier au bon fonctionnement de la technologie ou à la disponibilité des données. Bien que nous ayons largement testé cette fonctionnalité, il existe une petite possibilité que votre RDE devienne instable. Si cela se produit, une réinitialisation la rétablira à son état de fonctionnement.Nous acceptons les commentaires à l’adresse [&#128279;](mailto:aemcs-rde-support@adobe.com).
 
 Les RDE prennent en charge la prise d’un instantané de l’état actuel du code et du contenu, qui peut être restauré ultérieurement. Les instantanés sont utiles lors de la synchronisation du code qui peut devoir être rétabli, ou lors du passage d’une fonctionnalité à l’autre. Il est également possible de restaurer uniquement le contenu modifiable à partir d’un instantané en tant que point de départ connu pour les tests.
 

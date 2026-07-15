@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8ff6fbf02654325933844d43563bf69521bebbdc
+source-git-commit: 1f653d5bdd38dbfd73e95721927d50364a23488a
 workflow-type: tm+mt
-source-wordcount: '7580'
+source-wordcount: '7591'
 ht-degree: 83%
 
 ---
@@ -109,6 +109,7 @@ ht-degree: 83%
    + Notes de mise à jour de la maintenance d’AEMaaCS {#maintenance}
       + [Notes de mise à jour de la maintenance actuelle](/help/release-notes/maintenance/latest.md)
       + 2026 {#2026}
+         + [Notes de mise à jour de maintenance de la version 2026.7.0](/help/release-notes/maintenance/2026/2026-7-0.md)
          + [Notes de mise à jour de maintenance de la version 2026.6.0](/help/release-notes/maintenance/2026/2026-6-0.md)
          + [Notes de mise à jour de maintenance de la version 2026.5.0](/help/release-notes/maintenance/2026/2026-5-0.md)
          + [Notes de mise à jour de la maintenance 2026.4.0](/help/release-notes/maintenance/2026/2026-4-0.md)
@@ -677,6 +678,7 @@ ht-degree: 83%
       + [Importation et exportation des métadonnées des ressources](/help/assets/metadata-import-export.md)
       + [Configuration des restrictions de téléchargement des ressources](/help/assets/configure-asset-upload-restrictions.md)
       + [Intégration de contenu optimisé par l’IA et automatisation de Content supply chain](/help/assets/ai-powered-content-onboarding-content-supply-chain-automation.md)
+      + [Portail d’approvisionnement des ressources pour AEM Assets](/help/assets/asset-sourcing-portal-for-aem-assets.md)
    + Partage et distribution de ressources {#brand-portal}
       + [Configuration d’ [!DNL Assets] avec [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [Publication de ressources sur [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)

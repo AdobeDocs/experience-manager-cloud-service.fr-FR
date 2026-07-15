@@ -4,10 +4,10 @@ description: Découvrez comment automatiser les migrations de contenu ponctuelle
 role: Admin
 hide: true
 badgeSaas: label="AEM Assets" type="Positive" tooltip="S’applique à AEM Assets)."
-source-git-commit: 3985d61b59b610c63f94407a9fdc4860390d7e42
+source-git-commit: c2a7e7ab0b3c8c336343036af105a827cd77f3c2
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 2%
+source-wordcount: '676'
+ht-degree: 5%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 2%
 Les entreprises stockent souvent des ressources numériques et des métadonnées dans plusieurs référentiels, tels que des systèmes de gestion des ressources numériques (DAM), des services de stockage dans le cloud et des plateformes de contenu. La migration de contenu vers un nouveau système ou la synchronisation de plusieurs référentiels nécessite généralement un effort manuel ou des intégrations personnalisées qui peuvent être difficiles à créer et à gérer.
 
 Cette fonctionnalité vous permet d’automatiser les migrations de contenu uniques et la synchronisation récurrente entre les référentiels pris en charge. Un agent optimisé par l’IA vous guide tout au long de la configuration des transferts de contenu en vous proposant des connexions de référentiel, des mappages de métadonnées et des paramètres de transfert, ce qui réduit l’effort requis pour déplacer et synchroniser le contenu entre les systèmes.
+
+>[!IMPORTANT]
+>
+>Cette fonctionnalité est disponible en tant que fonctionnalité à disponibilité limitée. Vous pouvez [créer et envoyer un dossier d’assistance client Adobe](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html) pour l’activer pour votre déploiement.
 
 ## Avantages {#benefits-ai-powered-content-onboarding-content-supply-chain-automation}
 

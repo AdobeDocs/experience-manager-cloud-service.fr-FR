@@ -4,9 +4,9 @@ description: Découvrez comment utiliser le protocole Model Context avec AEM as 
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: 46ca8082f85cdb957681aa9596b9312b35e4f6ec
+source-git-commit: c47ffb63648e5eaa55bff1d993f6550d7c2a6bf1
 workflow-type: tm+mt
-source-wordcount: '1891'
+source-wordcount: '1938'
 ht-degree: 1%
 
 ---
@@ -47,8 +47,8 @@ AEM expose les serveurs MCP en tant que points d’entrée HTTP. Les points d’
 
 | Serveur MCP | Point d’entrée | Description |
 |---|---|---|
-| **Contenu** | `/content` | Opérations de contenu dont la création, la lecture, la mise à jour et la suppression (CRUD) de pages et de fragments de contenu, ainsi que l’importation et la recherche de ressources (la version AEM minimale requise est `26309`). |
-| **Contenu (lecture seule)** | `/content-readonly` | Opérations de contenu en lecture seule (get, list/search) pour les pages et les fragments de contenu, plus recherche de ressources (la version minimale requise d’AEM est `26309`). |
+| **Contenu** | `/content` | Opérations de contenu dont la création, la lecture, la mise à jour et la suppression (CRUD) de pages et de fragments de contenu, ainsi que l’importation et la recherche de ressources (la version AEM minimale requise est `26309`). Le connecteur [Claude](/help/ai-in-aem/mcp-support/setup-claude.md) prend également en charge le chargement, le téléchargement, le déplacement, la copie et la suppression de ressources, ainsi que la publication et la dépublication de ressources, ainsi que la modification des métadonnées, l’inspection des références et l’identification des ressources inutilisées. |
+| **Contenu (lecture seule)** | `/content-readonly` | Opérations de contenu en lecture seule (get, list/search) pour les pages et les fragments de contenu, plus recherche de ressources (la version minimale requise d’AEM est `26309`). Le [connecteur Claude](/help/ai-in-aem/mcp-support/setup-claude.md) prend également en charge le téléchargement des ressources, l’inspection des références et l’identification des ressources inutilisées. |
 | **Cloud Manager** | `/cloudmanager` | Gérez les entités Cloud Manager, notamment les programmes, les environnements, les référentiels et les pipelines, qui peuvent également être déclenchés. |
 | **Gouvernance de l’expérience** | `/experience-governance` | Évaluez le contenu (texte, images, pages) par rapport aux règles de gouvernance de marque et répertoriez les configurations et les contrôles de marque.<br/>Si vous êtes intéressé, vous devez vous inscrire à l’essai [&#x200B; agents ou disposer d’une licence payante](https://experienceleague.adobe.com/fr/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) afin d’accéder au MCP de la gouvernance d’expérience. |
 | **Migration cloud** | `/cloud-migration` | Récupérez les résultats de l’analyseur de bonnes pratiques (BPA) depuis Cloud Acceleration Manager (CAM) par modèle de migration ou niveau de gravité, ce qui permet aux agents d’IA d’orienter la migration du code d’AEM 6.x vers AEM as a Cloud Service. Voir [Utilisation du MCP de migration vers le cloud](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md). |
