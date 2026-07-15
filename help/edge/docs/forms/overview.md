@@ -6,8 +6,8 @@ exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 100%
+source-wordcount: '911'
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,8 @@ Ces services permettent d’effectuer les opérations suivantes :
 
 - **Offrir des expériences d’inscription numérique exceptionnelles :** proposez des expériences d’inscription numérique qui se chargent et génèrent leur rendu rapidement, et surveillez en permanence les performances de vos formulaires grâce à la télémétrie opérationnelle. Des temps de chargement plus rapides et une expérience client optimisée contribuent à des taux d’achèvement de formulaire et de conversion plus élevés.
 
-- **Utiliser l’ensemble d’outils destiné à l’équipe de développement :** Edge Delivery Services pour AEM Forms utilise du HTML brut, du code CSS moderne et du code Vanilla JavaScript pour créer des expériences exceptionnelles, en évitant la courbe abrupte d’apprentissage d’un framework spécifique. Une personne chargée du développement disposant de compétences de développement web de base peut personnaliser et créer facilement des composants de formulaire et des expériences. Il n’est pas nécessaire d’attendre l’exécution d’un pipeline. Il vous suffit d’enregistrer votre code dans GitHub pour que vos modifications soient appliquées.
+- **Utilisation d’un ensemble d’outils conviviaux pour les développeurs :** Edge Delivery Services pour AEM Forms
+utilise des HTML simples, des CSS modernes et des JavaScript classiques pour créer des expériences exceptionnelles, en évitant la courbe d’apprentissage raide d’un framework spécifique. Une personne chargée du développement disposant de compétences de développement web de base peut personnaliser et créer facilement des composants de formulaire et des expériences. Il n’est pas nécessaire d’attendre l’exécution d’un pipeline. Il vous suffit d’enregistrer votre code dans GitHub pour que vos modifications soient appliquées.
 
 ## Choix d’une méthode de création
 
@@ -49,7 +50,7 @@ Après avoir lu le guide, vous pourrez choisir la bonne méthode de création, c
 ### Éditeur universel
 
 <!--
-<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features">pre-release channel</a>. </span>
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
 -->
 
 L’[Éditeur universel](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) est un outil visuel de création par glisser-déposer destiné aux personnes spécialistes du marketing et de la conception, qui associe vitesse et puissance de niveau professionnel :
@@ -116,7 +117,7 @@ Le diagramme suivant illustre comment modifier des formulaires dans Microsoft E
 - [Fonctionnalités de l’éditeur universel d’Edge Delivery Services pour les formulaires](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
 - [Créer votre premier formulaire à l’aide de l’éditeur universel](/help/edge/docs/forms/universal-editor/create-forms.md)
 - [Créez votre premier formulaire à l’aide de Google Sheets ou de Microsoft Excel](/help/edge/docs/forms/tutorial.md).
-- [Incorporer des formulaires dans la création de documents (DA)](https://www.aem.live/developer/da-tutorial?lang=fr)
+- [Incorporation de Forms dans la création de documents (DA)](https://www.aem.live/developer/da-tutorial?lang=fr)
 
 
 Tout est maintenant prêt pour que vous puissiez créer votre premier formulaire performant avec AEM Edge Delivery Services.

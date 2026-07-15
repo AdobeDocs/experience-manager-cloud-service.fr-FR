@@ -7,8 +7,8 @@ level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '2824'
-ht-degree: 100%
+source-wordcount: '2893'
+ht-degree: 94%
 
 ---
 
@@ -144,8 +144,8 @@ Une règle définit ce qui doit se produire lorsqu’une condition est remplie. 
 
 - Après l’activation, l’icône Éditeur de règles s’affiche lorsque vous sélectionnez un composant de formulaire : ![edit-rules](/help/forms/assets/edit-rules-icon.svg).
 
-![Éditeur de règles de l’éditeur universel](/help/edge/docs/forms/assets/universal-editor-rule-editor.png)
-Image : l’icône Éditeur de règles s’affiche lorsque vous sélectionnez des composants de formulaire.
+![Éditeur universel de règles](/help/edge/docs/forms/assets/universal-editor-rule-editor.png)
+Image : l’icône Éditeur de règles s’affiche lorsque vous sélectionnez des composants de formulaire
 
 Pour ouvrir l’éditeur de règles :
 
@@ -153,8 +153,8 @@ Pour ouvrir l’éditeur de règles :
 2. Cliquez sur l’icône Éditeur de règles.
 3. L’éditeur de règles s’ouvre dans un panneau latéral.
 
-![Interface d’utilisation de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor-for-field.png)
-Image : interface de l’éditeur de règles pour la modification des règles de composant.
+![Interface utilisateur de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor-for-field.png)
+Image : interface de l’éditeur de règles pour la modification des règles de composant
 
 >[!NOTE]
 >
@@ -162,8 +162,8 @@ Image : interface de l’éditeur de règles pour la modification des règles d
 
 ## Vue d’ensemble de l’interface de l’éditeur de règles
 
-![Interface d’utilisation de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor-interface.png)
-Image : interface complète de l’éditeur de règles avec des composants numérotés.
+![Interface utilisateur de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor-interface.png)
+Image : interface complète de l’éditeur de règles avec des composants numérotés
 
 1. **Titre du composant et type de règle** : confirme le composant sélectionné et le type de règle actif.
 2. **Panneau Objets de formulaire et Fonctions** :
@@ -256,8 +256,8 @@ Choisissez le type de règle qui correspond le mieux à votre intention.
 
 Cet exemple illustre la visibilité conditionnelle et les calculs automatiques.
 
-![Capture d’écran de l’interface de l’éditeur de règles présentant la création d’une règle conditionnelle avec la logique WHEN-THEN (LORSQUE-ALORS) pour la visibilité des champs de formulaire](/help/edge/docs/forms/assets/rule-editor-1.png)
-Figure : formulaire de calcul de taxes avec des champs conditionnels intelligents
+![ Copie d’écran de l’interface de l’éditeur de règles présentant la création d’une règle conditionnelle avec la logique de date et heure pour la visibilité des champs de formulaire](/help/edge/docs/forms/assets/rule-editor-1.png)
+Image : formulaire de calcul des taxes avec des champs conditionnels intelligents
 
 Vous allez créer un formulaire qui :
 
@@ -324,8 +324,8 @@ Vous allez créer un formulaire qui :
    - Masquez « Déduction supplémentaire » (définissez la valeur Visible : non dans le panneau Propriétés)
    - Définissez « Revenu imposable » et « Taxes à payer » sur Lecture seule : oui
 
-![Capture d’écran d’un formulaire de calcul des impôts avec des champs de saisie pour le salaire brut, la situation de famille et les enfants à charge, présentant la structure du formulaire avant l’application des règles](/help/edge/docs/forms/assets/rule-editor2.png)
-Image : structure initiale du formulaire avec configuration des composants de base
+![Capture d’écran d’un formulaire de calcul des impôts avec des champs d’entrée pour le salaire brut, la situation de famille et les enfants à charge, présentant la structure du formulaire avant l’application des règles](/help/edge/docs/forms/assets/rule-editor2.png)
+Image : structure de formulaire initiale avec composants de base configurés
 
 **Point de contrôle** : tous les champs obligatoires de votre formulaire devraient être remplis, le champ « Déduction supplémentaire » devrait être masqué et les champs calculés devraient être en lecture seule.
 
@@ -402,7 +402,7 @@ Image : structure initiale du formulaire avec configuration des composants de b
    - Vérifiez que Taxe à payer = `5500` (55000 × 10 %).
 
 ![Prévisualiser un formulaire](/help/edge/docs/forms/assets/rule-editor-form.png)
-Image : calculateur de taxe terminé avec champs conditionnels et calculs automatiques.
+Image : calculateur de taxe terminé avec champs conditionnels et calculs automatiques
 
 **Critères de réussite** : le formulaire doit afficher/masquer les champs de manière dynamique et calculer les valeurs en temps réel au fur et à mesure que les utilisateurs et utilisatrices saisissent des informations.
 
@@ -504,7 +504,7 @@ export { getFullName, days };
 ```
 
 ![Ajout d’une fonction personnalisée](/help/edge/docs/forms/assets/create-custom-function.png)
-Image : ajout de fonctions personnalisées au fichier functions.js.
+Image : ajout de fonctions personnalisées au fichier functions.js
 
 +++
 
@@ -519,7 +519,7 @@ Image : ajout de fonctions personnalisées au fichier functions.js.
 2. **Déployer et créer**
    - Validez les modifications dans votre référentiel.
    - Vérifiez que le processus de création s’exécute correctement.
-   - Attendez l’actualisation du cache CDN.
+   - Attendez la mise à jour du cache CDN.
 
 3. **Accéder à l’éditeur de règles**
    - Ouvrez l’éditeur de règles pour n’importe quel composant de formulaire.
@@ -533,7 +533,7 @@ Image : ajout de fonctions personnalisées au fichier functions.js.
    - Vérifiez l’impact des performances sur le chargement et l’interaction du formulaire.
 
 ![Fonction personnalisée dans l’éditeur de règles](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
-Image : sélection et configuration de fonctions personnalisées dans l’interface de l’éditeur de règles.
+Figure : Sélection et configuration de fonctions personnalisées dans l’interface de l’éditeur de règles
 
 >[!NOTE]
 >
@@ -552,8 +552,8 @@ Image : sélection et configuration de fonctions personnalisées dans l’inter
 ### Imports statiques pour les fonctions personnalisées
 
 L’éditeur de règles de l’éditeur universel prend en charge les imports statiques, ce qui vous permet d’organiser une logique réutilisable dans plusieurs fichiers et formulaires. Au lieu de conserver toutes les fonctions personnalisées dans un seul fichier (/blocks/form/functions.js), vous pouvez importer des fonctions d’autres modules.
-Par exemple : import de fonctions à partir d’un fichier externe
-Tenez compte de la structure de dossiers suivante :
+Par exemple : Importation de fonctions à partir d’un fichier externe
+Tenez compte de la structure de dossiers suivante :
 
 ```
       form
@@ -716,7 +716,7 @@ L’éditeur de règles de l’éditeur universel transforme les formulaires sta
 
 **Impact commercial** :
 
-Les formulaires deviennent des outils puissants pour la collecte de données, la qualification des prospects et l’interaction client. L’éditeur de règles permet aux créateurs et créatrices non spécialistes d’implémenter une logique métier sophistiquée, réduisant les coûts de développement tout en améliorant les taux d’achèvement des formulaires et la qualité des données.
+Les formulaires deviennent des outils puissants pour la collecte de données, la qualification des prospects et l’engagement client. L’éditeur de règles permet aux créateurs et créatrices non spécialistes d’implémenter une logique métier sophistiquée, réduisant les coûts de développement tout en améliorant les taux d’achèvement des formulaires et la qualité des données.
 
 +++
 
