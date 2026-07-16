@@ -4,9 +4,9 @@ description: Découvrez comment utiliser le protocole Model Context avec AEM as 
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: c47ffb63648e5eaa55bff1d993f6550d7c2a6bf1
+source-git-commit: 7584dd3cce074746d9595939605b1b76b73adb93
 workflow-type: tm+mt
-source-wordcount: '1938'
+source-wordcount: '1959'
 ht-degree: 1%
 
 ---
@@ -47,8 +47,8 @@ AEM expose les serveurs MCP en tant que points d’entrée HTTP. Les points d’
 
 | Serveur MCP | Point d’entrée | Description |
 |---|---|---|
-| **Contenu** | `/content` | Opérations de contenu dont la création, la lecture, la mise à jour et la suppression (CRUD) de pages et de fragments de contenu, ainsi que l’importation et la recherche de ressources (la version AEM minimale requise est `26309`). Le connecteur [Claude](/help/ai-in-aem/mcp-support/setup-claude.md) prend également en charge le chargement, le téléchargement, le déplacement, la copie et la suppression de ressources, ainsi que la publication et la dépublication de ressources, ainsi que la modification des métadonnées, l’inspection des références et l’identification des ressources inutilisées. |
-| **Contenu (lecture seule)** | `/content-readonly` | Opérations de contenu en lecture seule (get, list/search) pour les pages et les fragments de contenu, plus recherche de ressources (la version minimale requise d’AEM est `26309`). Le [connecteur Claude](/help/ai-in-aem/mcp-support/setup-claude.md) prend également en charge le téléchargement des ressources, l’inspection des références et l’identification des ressources inutilisées. |
+| **Contenu** | `/content` | Opérations de contenu dont la création, la lecture, la mise à jour et la suppression (CRUD) de pages et de fragments de contenu, ainsi que l’importation et la recherche de ressources (la version AEM minimale requise est `26309`). Avec le [Connecteur Claude](/help/ai-in-aem/mcp-support/setup-claude.md) et le [Plug-in ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md), il existe également une prise en charge du chargement, du téléchargement, du déplacement, de la copie et de la suppression des ressources, ainsi que de la publication et de la dépublication des ressources, avec la modification des métadonnées, l’inspection des références et l’identification des ressources inutilisées. |
+| **Contenu (lecture seule)** | `/content-readonly` | Opérations de contenu en lecture seule (get, list/search) pour les pages et les fragments de contenu, plus recherche de ressources (la version minimale requise d’AEM est `26309`). Avec le [Connecteur Claude](/help/ai-in-aem/mcp-support/setup-claude.md) et le [Plug-in ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md), il existe également une prise en charge du téléchargement des ressources, de l’inspection des références et de l’identification des ressources inutilisées. |
 | **Cloud Manager** | `/cloudmanager` | Gérez les entités Cloud Manager, notamment les programmes, les environnements, les référentiels et les pipelines, qui peuvent également être déclenchés. |
 | **Gouvernance de l’expérience** | `/experience-governance` | Évaluez le contenu (texte, images, pages) par rapport aux règles de gouvernance de marque et répertoriez les configurations et les contrôles de marque.<br/>Si vous êtes intéressé, vous devez vous inscrire à l’essai [&#x200B; agents ou disposer d’une licence payante](https://experienceleague.adobe.com/fr/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) afin d’accéder au MCP de la gouvernance d’expérience. |
 | **Migration cloud** | `/cloud-migration` | Récupérez les résultats de l’analyseur de bonnes pratiques (BPA) depuis Cloud Acceleration Manager (CAM) par modèle de migration ou niveau de gravité, ce qui permet aux agents d’IA d’orienter la migration du code d’AEM 6.x vers AEM as a Cloud Service. Voir [Utilisation du MCP de migration vers le cloud](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md). |
@@ -99,7 +99,7 @@ La configuration de MCP pour AEM comprend deux parties principales :
 Des guides détaillés couvrant les deux étapes sont disponibles pour :
 
 * [Anthropic Claude (à la fois pour la configuration manuelle des serveurs MCP et l’installation du connecteur AEM Claude)](/help/ai-in-aem/mcp-support/setup-claude.md)
-* [OpenAI ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
+* [OpenAI ChatGPT (pour la configuration manuelle des serveurs MCP et l’installation du plug-in AEM ChatGPT)](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
 * [Curseur](/help/ai-in-aem/mcp-support/setup-cursor.md)
 * [JetBrains avec Copilote GitHub](/help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
 * [Microsoft Copilot Studio](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
