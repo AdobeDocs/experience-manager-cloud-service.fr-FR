@@ -22,9 +22,9 @@ Cet article couvre deux manières distinctes d’utiliser le ChatGPT OpenAI avec
 
 Cette section décrit l’approche **configuration manuelle**, qui consiste à ajouter un ou plusieurs serveurs MCP d’AEM au module ChatGPT en tant qu’applications ou connecteurs personnalisés.
 
-* Ajoutez une ou plusieurs URL de serveur MCP AEM dans la zone où les connexions ou outils MCP sont configurés.
-* Déclenchez la connexion et connectez-vous avec votre Adobe ID en cas de redirection.
-* Dans une conversation, référencez les outils AEM configurés dans vos invites, par exemple :
+&#x200B;* Ajoutez une ou plusieurs URL de serveur MCP AEM dans la zone où les connexions ou outils MCP sont configurés.
+&#x200B;* Déclenchez la connexion et connectez-vous avec votre Adobe ID en cas de redirection.
+&#x200B;* Dans une conversation, référencez les outils AEM configurés dans vos invites, par exemple :
 
   ```
   "Using the configured AEM MCP tools, list all sites in the author environment."
@@ -74,7 +74,7 @@ Vous pouvez accéder au plug-in Adobe Experience Manager de deux façons. Utilis
 
 **Option 1 : ouvrir directement la page du plug-in**
 
-Accédez à [](https://chatgpt.com/plugins/plugin_asdk_app_6a35d3c1258081919c084a1fd22cd02d) puis choisissez **Installer le plug-in**.
+Accédez à [&#128279;](https://chatgpt.com/plugins/plugin_asdk_app_6a35d3c1258081919c084a1fd22cd02d) puis choisissez **Installer le plug-in**.
 
 ![Page du plug-in Adobe Experience Manager avec le bouton Installer le plug-in.](assets/chatgpt-plugin-install.png)
 
@@ -84,7 +84,7 @@ Accédez à [](https://chatgpt.com/plugins/plugin_asdk_app_6a35d3c1258081919c084
 
    ![Page de plug-ins dans les paramètres ChatGPT avec les plug-ins de navigation.](assets/chatgpt-plugin-1.png)
 
-1. Recherchez ****, puis sélectionnez-le.
+1. Recherchez **&#x200B;**, puis sélectionnez-le.
 
    ![Recherche du plug-in Adobe Experience Manager dans le marketplace du plug-in.](assets/chatgpt-plugin-2.png)
 

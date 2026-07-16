@@ -50,7 +50,7 @@ AEM expose les serveurs MCP en tant que points d’entrée HTTP. Les points d’
 | **Contenu** | `/content` | Opérations de contenu dont la création, la lecture, la mise à jour et la suppression (CRUD) de pages et de fragments de contenu, ainsi que l’importation et la recherche de ressources (la version AEM minimale requise est `26309`). Avec le [Connecteur Claude](/help/ai-in-aem/mcp-support/setup-claude.md) et le [Plug-in ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md), il existe également une prise en charge du chargement, du téléchargement, du déplacement, de la copie et de la suppression des ressources, ainsi que de la publication et de la dépublication des ressources, avec la modification des métadonnées, l’inspection des références et l’identification des ressources inutilisées. |
 | **Contenu (lecture seule)** | `/content-readonly` | Opérations de contenu en lecture seule (get, list/search) pour les pages et les fragments de contenu, plus recherche de ressources (la version minimale requise d’AEM est `26309`). Avec le [Connecteur Claude](/help/ai-in-aem/mcp-support/setup-claude.md) et le [Plug-in ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md), il existe également une prise en charge du téléchargement des ressources, de l’inspection des références et de l’identification des ressources inutilisées. |
 | **Cloud Manager** | `/cloudmanager` | Gérez les entités Cloud Manager, notamment les programmes, les environnements, les référentiels et les pipelines, qui peuvent également être déclenchés. |
-| **Gouvernance de l’expérience** | `/experience-governance` | Évaluez le contenu (texte, images, pages) par rapport aux règles de gouvernance de marque et répertoriez les configurations et les contrôles de marque.<br/>Si vous êtes intéressé, vous devez vous inscrire à l’essai [ agents ou disposer d’une licence payante](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) afin d’accéder au MCP de la gouvernance d’expérience. |
+| **Gouvernance de l’expérience** | `/experience-governance` | Évaluez le contenu (texte, images, pages) par rapport aux règles de gouvernance de marque et répertoriez les configurations et les contrôles de marque.<br/>Si vous êtes intéressé, vous devez vous inscrire à l’essai [&#x200B; agents ou disposer d’une licence payante](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) afin d’accéder au MCP de la gouvernance d’expérience. |
 | **Migration cloud** | `/cloud-migration` | Récupérez les résultats de l’analyseur de bonnes pratiques (BPA) depuis Cloud Acceleration Manager (CAM) par modèle de migration ou niveau de gravité, ce qui permet aux agents d’IA d’orienter la migration du code d’AEM 6.x vers AEM as a Cloud Service. Voir [Utilisation du MCP de migration vers le cloud](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md). |
 | **Serveur AEM MCP** | `/aem` | Nouveau depuis juin 2026, il s’agit d’un point d’entrée unique qui agrège les outils des serveurs MCP AEM répertoriés ci-dessus (à l’exclusion de la migration vers le cloud), les exposant par le biais d’une seule connexion. Il s’agit de la méthode recommandée pour vous connecter à AEM. Notez que les restrictions d’accès que vous pouvez demander à Adobe pour ce serveur agrégé sont différentes et actuellement plus limitées que pour les serveurs individuels. Assurez-vous donc qu’elles répondent à vos besoins. Voir [Restriction des serveurs MCP](#restricting-mcp-servers). |
 
@@ -62,7 +62,7 @@ Les outils spécifiques exposés par chaque serveur MCP peuvent évoluer au fil 
 
 Le client MCP utilise le protocole MCP pour récupérer la liste d’outils et les schémas, que le LLM peut ensuite utiliser.
 
-Pour plus d’informations sur leurs fonctionnalités et sur leur utilisation](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) reportez-vous aux sections [Tutoriel sur le serveur de MCP de contenu et [Vidéo sur le serveur de MCP de Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager).
+Pour plus d’informations sur leurs fonctionnalités et sur leur utilisation[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) reportez-vous aux sections Tutoriel sur le serveur de MCP de contenu et [Vidéo sur le serveur de MCP de Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager).
 
 ## Applications MCP prises en charge {#supported-mcp-applications}
 
@@ -111,7 +111,7 @@ Par défaut, les autorisations dont disposent les utilisateurs individuels dans 
 
 #### Applications clientes MCP autorisées {#permitted-mcp-client-applications}
 
-Toutes les applications répertoriées sous [ Applications MCP prises en charge ](#supported-mcp-applications) sont autorisées par défaut.
+Toutes les applications répertoriées sous [&#x200B; Applications MCP prises en charge &#x200B;](#supported-mcp-applications) sont autorisées par défaut.
 
 #### Restreindre les serveurs MCP {#restricting-mcp-servers}
 
@@ -140,7 +140,7 @@ Chaque utilisateur effectue cette étape ou un administrateur de l’application
 1. Vérification des outils découverts.
    * Une fois authentifiée, l’application détecte les outils MCP à partir du serveur. Vous pouvez ensuite commencer à demander au LLM d’effectuer des opérations AEM.
 
-Pour obtenir la liste complète des applications prises en charge](#supported-mcp-applications) voir [Applications MCP prises en charge.
+Pour obtenir la liste complète des applications prises en charge[&#128279;](#supported-mcp-applications) voir Applications MCP prises en charge.
 
 ## Authentification {#authentication}
 
@@ -149,7 +149,7 @@ Les serveurs MCP hébergés par Adobe mettent en œuvre OAuth et sont intégrés
 * Lorsqu’une application cliente MCP se connecte à un serveur MCP, les utilisateurs voient une boîte de dialogue de connexion Adobe et s’authentifient avec leur **Adobe ID**
 * Une fois la connexion établie, le système vérifie que l’application cliente MCP est autorisée dans votre organisation et que le serveur MCP demandé est autorisé. Si l’une de ces vérifications échoue, un message d’erreur s’affiche.
 
-![Erreur Client MCP non autorisé ](assets/MCP-Client-not-permitted.png)
+![Erreur Client MCP non autorisé &#x200B;](assets/MCP-Client-not-permitted.png)
 
 * Une fois la vérification effectuée, le serveur MCP émet des jetons que l’application utilise pour les appels d’outil suivants.
 * Les outils MCP respectent les autorisations AEM de l’utilisateur. Seuls les utilisateurs autorisés à modifier un fragment de contenu dans AEM peuvent le modifier via MCP.
